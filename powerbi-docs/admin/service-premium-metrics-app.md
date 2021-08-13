@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Metrics app
@@ -28,6 +28,8 @@ The following sections describe the landing page, and the three metrics report p
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
+> [!NOTE]
+> The metrics app cannot be used to monitor Premium Per User (PPU) activities or capacity.
 
 ## Premium capacity health center
 
@@ -341,7 +343,7 @@ To diagnose scenario two, first determine whether throttling is due to running i
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
-* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
+* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 06/15/2021
+ms.custom: contperf-fy21q4
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
@@ -63,11 +64,26 @@ To format cell background or font color by rules, in the **Format by** field of 
 
 Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Cell backgrounds or fonts in each value range are colored with the given color. The following example has three rules:
 
-![Color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+![Screenshot of Color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
 
-An example table with rules-based background color formatting on the **Affordability** column looks like this:
+When you select **Percent** in this dropdown, you’re setting the rule boundaries as a percent of the overall range of values from minimum to maximum. So, for example, if the lowest data point was 100 and the highest was 400, the above rules would color any point less than 200 as green, anything from 200 to 300 as yellow, and anything above 300 as red. 
 
-![Example table with color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+An example table with rules-based background color formatting based on **Percent** in the **Affordability** column looks like this:
+
+![Screenshot of Example table with color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+
+### Color by rules for percentages
+
+If the field the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values; for example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%. 
+
+![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
+
+In this example table with rules-based background color on the **% revenue region** column, 0 to 25% is red, 26% to 41% is yellow, and 42% and more is blue:
+
+![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-table.png)
+
+> [!NOTE]
+> If you use **Percent** instead of **Number** for fields containing percentages, you may get unexpected results. In the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. So use **Number** instead.
 
 ## Color by color values
 
@@ -155,13 +171,13 @@ If you have a column or measure that contains website URLs, you can use conditio
 
 To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL**. In the **Web URL** dialog box, under **Based on field**, select **Website**, and then select **OK**. 
 
-With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
+With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** applied to the **Overall rank** column. 
 
-![Table with web URL, data bars, and background color](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+![Table with web URL and data bars for Overall rank column.](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
 ## Totals and subtotals
 
-Beginning with the April 2020 release, you can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
+You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
 
 You apply the conditional formatting rules by using the **Apply to** drop-down in conditional formatting, as shown in the following image.
 
@@ -169,6 +185,19 @@ You apply the conditional formatting rules by using the **Apply to** drop-down i
 
 You must manually set the thresholds and ranges for conditional formatting rules. For matrices, **Values** will refer to the lowest visible level of the matrix hierarchy.
 
+## Color-code based on text
+
+Unlike in Excel, you can't color-code text values to display as a particular color, such as "Accepted"=blue, "Declined"=red, "None"=grey. You create measures related to these values and apply formatting based on those instead.
+
+For example, StatusColor = SWITCH('Table'[Status], "Accepted", "blue", "Declined", "red", "None", "grey")
+
+Then in the **Background color** dialog box, you format the **Status** field based on the values in the **StatusColor** field. 
+
+![Set Status field color based on values in the StatusColor field.](media/desktop-conditional-table-formatting/power-bi-conditional-based-on-field.png)
+
+In the resulting table, the formatting is based on the value in the **StatusColor** field, which in turn is based on the text in the **Status** field.
+
+![In the table, the Status field color is based on values in the StatusColor field.](media/desktop-conditional-table-formatting/power-bi-conditional-based-on-field-table.png)
 
 ## Considerations and limitations
 There are a few considerations to keep in mind when working with conditional table formatting:

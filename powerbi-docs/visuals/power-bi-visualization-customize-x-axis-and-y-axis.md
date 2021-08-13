@@ -4,24 +4,21 @@ description: 'Customize X-axis and Y-axis properties'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: 9DeAKM4SNJM
-ms.custom: 9DeAKM4SNJM
+ms.custom: video-9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 05/06/2020
+ms.date: 04/12/2021
 LocalizationGroup: Visualizations
 ---
 
 # Customize x-axis and y-axis properties
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In this tutorial, you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so we'll take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.  
 
-Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill down and drill up.
+Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill-down and drill-up options.
 
 > [!NOTE]
 > This video uses an older version of Power BI.
@@ -219,7 +216,14 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
      ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
     For more information, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). 
-    
+
+## Invert the y-axis
+
+For line, bar, column, area, and combo charts, you can invert the y-axis, putting positive values going down and negative values going up. 
+
+- Select the visual. In the **Format** pane, expand the **Y axis** section. Slide **Invert axis** to **On**.
+
+    ![Screenshot of the column chart with values on the y axis inverted.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png)
 
 ## Next steps
 

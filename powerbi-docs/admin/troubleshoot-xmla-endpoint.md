@@ -2,13 +2,13 @@
 title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint.
 author: Minewiskan
-ms.author: owend
-ms.reviewer: owend
+ms.author: davidi
+ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 03/24/2021
-ms.custom: seodec18, css_fy20Q4
+ms.date: 07/16/2021
+ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
 
@@ -128,7 +128,7 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 ### Overrides in Refresh TMSL command
 
-Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported**. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
+Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
 ## Errors in SSMS - Premium Gen 2
 
@@ -159,6 +159,7 @@ Run complete
 ```
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
 
 ## Editing role memberships in SSMS
 
@@ -208,13 +209,39 @@ As stated in the error message, to resolve this issue, either delete or rename t
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
 
-## Dataset refresh through the XMLA endpoint
-
-Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
-
 ## DISCOVER_M_EXPRESSIONS 
 
 The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not supported in Power BI using the XMLA Endpoint. Applications can use the Tabular object model (TOM) to obtain M expressions used by the data model.
+
+## Resource governing command memory limit in Premium Gen 2
+
+Premium Gen2 capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per artifact of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+The effective memory limit for a command is based on the lesser of the capacity's memory limit (determined by SKU) or the value of the [DbpropMsmdRequestMemoryLimit](/analysis-services/xmla/xml-elements-properties/dbpropmsmdrequestmemorylimit-element-xmla?view=asallproducts-allversions&preserve-view=true) XMLA property.
+
+For example, for a P1 capacity, if:
+
+- DbpropMsmdRequestMemoryLimit = 0 (or unspecified), the effective memory limit for the command is 25 GB.
+
+- DbpropMsmdRequestMemoryLimit = 5 GB, the effective memory limit for the command is 5 GB.
+
+- DbpropMsmdRequestMemoryLimit = 50 GB, the effective memory limit for the command is 25 GB.
+
+Typically, the effective memory limit for a command is calculated on the memory allowed for the dataset by the capacity (25 GB, 50 GB, 100 GB) and how much memory the dataset is already consuming when the command starts executing. For example, a dataset using 12 GB on a P1 capacity allows an effective memory limit for a new command of 13 GB. However, the effective memory limit can be further constrained by the DbPropMsmdRequestMemoryLimit XMLA property when optionally specified by an application. Using the previous example, if 10 GB is specified in the DbPropMsmdRequestMemoryLimit property, then the command’s effective limit is further reduced to 10 GB.
+
+If the command operation attempts to consume more memory than allowed by the limit, the operation can fail, and an error is returned. For example, the following error describes an effective memory limit of 25 GB (P1 capacity) has been exceeded because the dataset already consumed 12 GB (12288 MB) when the command started execution, and an effective limit of 13 GB (13312 MB) was applied for the command operation:
+
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+
+In some cases, as shown in the following error, "consumed memory" is 0 but the amount shown for "database size before command execution" is already greater than the effective memory limit. This means the operation failed to begin execution because the amount of memory already used by the dataset is greater than the memory limit for the SKU.
+
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+
+To potentially reduce exceeding the effective memory limit:
+
+- Upgrade to a larger Premium capacity (SKU) size for the dataset.
+- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh. For example, if using incremental refresh, specify a shorter range of dates between the RangeStart and RangeEnd parameters.
+- For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
 ## See also
 

@@ -38,7 +38,7 @@ The following table provides a collection of links to articles that describe bes
 |Using data profiling     |Understand column quality, distribution, and profile         |[Data profiling tools](/power-query/data-profiling-tools)         |
 |Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |[Patterns for common errors](/power-query/dealing-with-errors)  </br> [Complex error handling](/power-query/error-handling)      |
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](/power-query/schema-view)         |
-|Linked tables      |Reusing and referencing transformations         |[Linked Tables](/power-query/dataflows/linked-tables)         |
+|Linked tables      |Reusing and referencing transformations         |[Linked Tables](./dataflows-create.md#create-a-dataflow-using-linked-tables)         |
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Incremental refresh](/power-query/dataflows/incremental-refresh)         |
 |||
 

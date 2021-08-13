@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 05/06/2021
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
@@ -377,9 +377,18 @@ In the Power BI service, administrators can turn off ArcGIS for Power BI for all
 
 Power BI Desktop supports using **Group Policy** to disable ArcGIS for Power BI across an organization's deployed computers.
 
+For Power BI Desktop
+
 | **Attribute** | **Value** |
 | --- | --- |
 | Key | Software\Policies\Microsoft\Power BI Desktop |
+| valueName | EnableArcGISMaps |
+
+For Power BI Desktop (Optimized for Power BI Report Server)
+
+| **Attribute** | **Value** |
+| --- | --- |
+| Key | Software\Policies\Microsoft\Microsoft Power BI Desktop SSRS |
 | valueName | EnableArcGISMaps |
 
 A value of 1 (decimal) enables ArcGIS for Power BI.

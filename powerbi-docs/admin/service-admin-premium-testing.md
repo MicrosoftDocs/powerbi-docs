@@ -24,7 +24,7 @@ For more information about Power BI Premium, see [What is Power BI Premium?](ser
 
 A SKUs are made available through the Azure Power BI Embedded service. You can use A SKUs in the following ways:
 
-- Enable embedding of Power BI in third party applications. For more information, see [Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
+- Enable embedding of Power BI in third party applications. For more information, see [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md#embedding-with-power-bi).
 
 - Test Premium functionality before you buy a P SKU.
 
@@ -63,7 +63,7 @@ Follow these steps to purchase A SKUs in the Azure portal:
 
     ![Change capacity size](media/service-admin-premium-purchase/change-capacity-size.png)
 
-1. Select a capacity size of A4, A5, or A6, which correspond to P1, P2, and P3.
+1. Select a capacity size of A4, A5, or A6, which correspond to P1, P2, and P3. Prices in the following image are examples only.
 
     ![Select A3 capacity](media/service-admin-premium-purchase/select-a3-capacity.png)
 
@@ -87,7 +87,7 @@ After you purchase capacity, learn how to [manage capacities](service-admin-prem
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)
 [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium FAQ](service-premium-faq.md)\
+[Power BI Premium FAQ](service-premium-faq.yml)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 06/21/2021
 ms.custom: licensing support
 LocalizationGroup: Share your work
 ---
@@ -29,15 +29,15 @@ With Power BI mobile, you can only install an app from a direct link. If the app
 ## Apps and licenses
 Not all Power BI users can view and interact with apps. 
 - If you have a free license, you can open apps that are stored in Premium capacity and have then been shared with you.  
-- If you have a Pro license, you can open apps that have been shared with you.
+- If you have a Pro license or a Premium Per User license, you can open apps that have been shared with you.
 
 So, if you cannot open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
 
 ## Get the app from the Power BI apps marketplace
 
-You can find and install apps from the Power BI apps marketplace. In the apps marketplace you can get both organizational apps and template apps.
+You can find and install apps from the Power BI apps marketplace. In the apps marketplace you'll find both organizational apps and template apps.
 
-- An *organizational app* is available to Power BI users in your organization. These apps also include pre-built dashboards and reports that you can use as-is or customize and share. Your organization may have apps for tracking sales, measuring performance, or analyzing hiring success.
+- An *organizational app* is available to Power BI users in your organization. These apps also include pre-built dashboards and reports that you can use as-is or customize and share. Your organization may have apps for things like tracking sales, measuring performance, or analyzing hiring success.
 - A *template app* comes with pre-built dashboards and reports that you can use to connect to many of the services you use to run your business, such as SalesForce, Microsoft Dynamics, and Google Analytics.
 
 1. [Sign in to the Power BI service](./end-user-sign-in.md) if you aren't already signed in. 
@@ -59,7 +59,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 
    The search box is sensitive to the tab you have open - only apps of the selected type will be returned. If the **All apps** tab is open, both organizational and template apps are returned. This can be confusing when an organizational app and a template app have the same name. Just remember that the template app tiles have a a shopping bag icon in the top right corner.
 
-4. When you find the app you want, select **Get it now** to install it.
+4. When you find the app that you want, select **Get it now** to install it.
 
    ![screenshot showing the Get it now button](./media/end-user-app-view/power-bi-get-now.png)
 
@@ -67,7 +67,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 * If you're installing a template app, you will be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.md) of how to download and install a sample template app from the Power BI apps marketplace. The app is installed, along with a workspace of the same name.
 
    > [!NOTE]
-   > If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro account or unless the app is stored in a Premium shared capacity. For more information, see [licenses for business users](end-user-license.md).
+   > If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [licenses for business users](end-user-license.md).
 
 ## Install an app from a direct link
 You can also install an organizational app from a direct link.    
@@ -91,7 +91,7 @@ You've installed an app, or have received an app from a colleague. To view that 
 
 ![Screenshot of the Apps content list](./media/end-user-app-view/power-bi-apps-card.png)
 
-Hover and select the app to open. Depending on the app, you may receive a prompt that looks similar to this:
+Hover and select the app to open. Depending on the app, you may receive a prompt that looks similar to the one below. Some apps ask you for contact information (e.g., name and email) or for product details (e.g., customer ID, subscription number, parameters). Many apps load with sample data and provide a link for you to connect your own data. 
 
 ![Screenshot of three choices, explore, connect, and customize](./media/end-user-app-view/power-bi-customize.png)
 
@@ -132,7 +132,7 @@ From time to time, app designers may release new versions of their apps. How you
 
         ![Install update](./media/end-user-app-view/power-bi-installs.png) 
 
-    3. Since you already have a version of this app, decide whether to replace the existing version or whether to install the updated app in a new workspace.   
+    3. Since you already have a version of this app, decide whether you want to replace the existing version, update only the workspace content _without_ updating the app,  or install the updated app in a new workspace.
 
         ![Overwrite old app version](./media/end-user-app-view/power-bi-already-installed.png) 
 
@@ -144,7 +144,7 @@ From time to time, app designers may release new versions of their apps. How you
 ## Considerations and troubleshooting
 
 - The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.    
-- The use of apps requires either a Pro license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](end-user-license.md).
+- The use of apps requires either a Pro or Premium Per User license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](end-user-license.md).
 
 
 ## Next steps

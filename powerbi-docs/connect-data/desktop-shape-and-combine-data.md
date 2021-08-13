@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 04/26/2021
 LocalizationGroup: Transform and shape data
 #Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports..
 ---
@@ -17,18 +17,18 @@ With Power BI Desktop, you can connect to many different types of data sources, 
 
 In this tutorial, you'll learn how to:
 
-* Shape data by using Query Editor.
+* Shape data by using Power Query Editor.
 * Connect to different data sources.
 * Combine those data sources, and create a data model to use in reports.
 
 This tutorial demonstrates how to shape a query by using Power BI Desktop, highlighting the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
-Query Editor in Power BI Desktop makes ample use of right-click menus, as well as the **Transform** ribbon. Most of what you can select in the ribbon is also available by right-clicking an item, such as a column, and choosing from the menu that appears.
+Power Query Editor in Power BI Desktop makes ample use of right-click menus, as well as the **Transform** ribbon. Most of what you can select in the ribbon is also available by right-clicking an item, such as a column, and choosing from the menu that appears.
 
 ## Shape data
-When you shape data in Query Editor, you provide step-by-step instructions for Query Editor to carry out for you to adjust the data as it loads and presents it. The original data source isn't affected; only this particular view of the data is adjusted, or *shaped*.
+When you shape data in Power Query Editor, you provide step-by-step instructions for Power Query Editor to carry out for you to adjust the data as it loads and presents it. The original data source isn't affected; only this particular view of the data is adjusted, or *shaped*.
 
-The steps you specify (such as rename a table, transform a data type, or delete a column) are recorded by Query Editor. Each time this query connects to the data source, Query Editor carries out those steps so that the data is always shaped the way you specify. This process occurs whenever you use Query Editor, or for anyone who uses your shared query, such as on the Power BI service. Those steps are captured, sequentially, in the **Query Settings** pane, under **Applied Steps**. We’ll go through each of those steps in the next few paragraphs.
+The steps you specify (such as rename a table, transform a data type, or delete a column) are recorded by Power Query Editor. Each time this query connects to the data source, Power Query Editor carries out those steps so that the data is always shaped the way you specify. This process occurs whenever you use Power Query Editor, or for anyone who uses your shared query, such as on the Power BI service. Those steps are captured, sequentially, in the **Query Settings** pane, under **Applied Steps**. We’ll go through each of those steps in the next few paragraphs.
 
 ![Applied steps in Query Settings](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
@@ -62,7 +62,7 @@ From [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-sta
 
     In the following image, the **Applied Steps** list reflects the added steps so far: 
      - **Source**: Connecting to the website.
-     - **Navigation**: Selecting the table. 
+     - **Extracted Table from Html**: Selecting the table. 
      - **Changed Type**: Changing text-based number columns from *Text* to *Whole Number*. 
      - **Added Custom**: Adding a custom column.
      - **Changed Type1**: The last applied step.
@@ -97,14 +97,14 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
     ![Select Remove Columns](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-   Notice the **New Rank** values haven't changed, due to the ordering of the steps. Because Query Editor records the steps sequentially, yet independently, of each other, you can move each **Applied Step** up or down in the sequence. 
+   Notice the **New Rank** values haven't changed, due to the ordering of the steps. Because Power Query Editor records the steps sequentially, yet independently, of each other, you can move each **Applied Step** up or down in the sequence. 
 
-1. Right-click a step. Query Editor provides a menu that lets you do the following tasks: 
+1. Right-click a step. Power Query Editor provides a menu that lets you do the following tasks: 
    - **Rename**; Rename the step.
    - **Delete**: Delete the step.
    - **Delete** **Until End**: Remove the current step, and all subsequent steps.
-   - **Move Up**: Move the step up in the list.
-   - **Move Down**: Move the step down in the list.
+   - **Move before**: Move the step up in the list.
+   - **Move after**: Move the step down in the list.
 
 1. Move up the last step, **Removed Columns**, to just above the **Added Custom** step.
 
@@ -116,11 +116,11 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
    ![Error result in column data](media/desktop-shape-and-combine-data/shapecombine_error2.png)
 
-   There are a few ways to get more information about each error. If you select the cell without clicking on the word *Error*, Query Editor displays the error information on the bottom of the window.
+   There are a few ways to get more information about each error. If you select the cell without clicking on the word *Error*, Power Query Editor displays the error information.
 
-   ![Error information in Query Editor](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+   ![Error information in Power Query Editor](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
 
-   If you select the word *Error* directly, Query Editor creates an **Applied Step** in the **Query Settings** pane and displays information about the error. 
+   If you select the word *Error* directly, Power Query Editor creates an **Applied Step** in the **Query Settings** pane and displays information about the error. 
 
 1. Because we don't need to display information about the errors, select **Cancel**.
 
@@ -135,7 +135,7 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
 1. Select the green checkmark to the left of the formula box or press **Enter**.
 
-  Query Editor replaces the data with the revised values and the **Added Custom** step completes with no errors.
+  Power Query Editor replaces the data with the revised values and the **Added Custom** step completes with no errors.
 
    > [!NOTE]
    > You can also select **Remove Errors**, by using the ribbon or the right-click menu, which removes any rows that have errors. However, we didn't want to do so in this tutorial because we wanted to preserve the data in the table.
@@ -154,7 +154,7 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
 1. Select the green checkmark to the left of the formula box or press **Enter**. 
 
-   The rows are now ordered in accordance with both **New Rank** and **Rank**. In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Query Editor automatically inserts a new step directly after the currently selected **Applied Step**. 
+   The rows are now ordered in accordance with both **New Rank** and **Rank**. In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Power Query Editor automatically inserts a new step directly after the currently selected **Applied Step**. 
 
 1. In **Applied Step**, select the step preceding the custom column, which is the **Removed Columns** step. Here we'll replace the value of the **Weather** ranking in Arizona. Right-click the appropriate cell that contains Arizona's **Weather** ranking, and then select **Replace Values**. Note which **Applied Step** is currently selected.
 
@@ -162,13 +162,13 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
 1. Select **Insert**.
 
-    Because we're inserting a step, Query Editor warns us about the danger of doing so; subsequent steps could cause the query to break. 
+    Because we're inserting a step, Power Query Editor warns us about the danger of doing so; subsequent steps could cause the query to break. 
 
     ![Insert Step verification](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
 1. Change the data value to _51_. 
 
-   Query Editor replaces the data for Arizona. When you create a new **Applied Step**, Query Editor names it based on the action; in this case, **Replaced Value**. If you have more than one step with the same name in your query, Query Editor adds a number (in sequence) to each subsequent **Applied Step** to differentiate between them.
+   Power Query Editor replaces the data for Arizona. When you create a new **Applied Step**, Power Query Editor names it based on the action; in this case, **Replaced Value**. If you have more than one step with the same name in your query, Power Query Editor adds a number (in sequence) to each subsequent **Applied Step** to differentiate between them.
 
 1. Select the last **Applied Step**, **Sorted Rows**. 
 
@@ -187,7 +187,7 @@ The data about various states is interesting, and will be useful for building ad
 
 We’re in luck; there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. TO shape the data, follow these steps:
 
-1. From the **Home** ribbon in Query Editor, select **New Source \> Web**. 
+1. From the **Home** ribbon in Power Query Editor, select **New Source \> Web**. 
 
 2. Enter the address of the website for state abbreviations, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*, and then select **Connect**.
 
@@ -204,7 +204,7 @@ We’re in luck; there’s another public data source that does just that, but i
 
 To get the data into shape, follow these steps:
 
-1. Remove the top row. Because it's a result of the way that the web page’s table was created, we don’t need it. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
+1. Remove the top row. Because it's a result of the way that the web page’s table was created, we don’t need it. From the **Home** ribbon, select **Remove Rows \> Remove Top Rows**.
 
     ![Select Remove Top Rows](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
@@ -213,7 +213,7 @@ To get the data into shape, follow these steps:
     > [!NOTE]
     > If Power BI accidentally imports the table headers as a row in your data table, you can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon, to fix your table.
 
-1. Remove the bottom 26 rows. These rows are U.S. territories, which we don’t need to include. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Bottom Rows**.
+1. Remove the bottom 26 rows. These rows are U.S. territories, which we don’t need to include. From the **Home** ribbon, select **Remove Rows \> Remove Bottom Rows**.
 
     ![Select Remove Bottom Rows](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
@@ -221,19 +221,19 @@ To get the data into shape, follow these steps:
 
     ![Clear Federal district check box](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-1. Remove a few unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation, we can remove the following columns: **Column1**, **Column3**, **Column4**, and **Column6** through **Column11**. First select **Column1**, then hold down the **CTRL** key and select each of the other columns to be removed. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Columns**.
+1. Remove a few unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation, we can remove several columns. First select a column, then hold down the **CTRL** key and select each of the other columns to be removed. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
    ![Remove column](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
    > [!NOTE]
-   > This is a good time to point out that the *sequence* of applied steps in Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+   > This is a good time to point out that the *sequence* of applied steps in Power Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
 
    > [!NOTE]
-   > When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
+   > When you resize the Power Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Power Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
 
 1. Rename the columns and the table. There are a few ways to rename a column: First, select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename**. The following image has arrows pointing to both options; you only need to choose one.
 
-   ![Rename column in Query Editor](media/desktop-shape-and-combine-data/shapecombine_rename.png)
+   ![Rename column in Power Query Editor](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
 1. Rename the columns to *State Name* and *State Code*. To rename the table, enter the **Name** in the **Query Settings** pane. Name this table *StateCodes*.
 
@@ -248,9 +248,9 @@ There are two primary ways of combining queries: *merging* and *appending*.
 
 In this case, we want to merge the queries. To do so, follow these steps:
  
-1. From the left pane of Query Editor, select the query *into which* you want the other query to merge. In this case, it's **RetirementStats**. 
+1. From the left pane of Power Query Editor, select the query *into which* you want the other query to merge. In this case, it's **RetirementStats**. 
 
-1. Select **Combine \> Merge Queries** from the **Home** tab on the ribbon.
+1. Select **Merge Queries \> Merge Queries** from the **Home** tab on the ribbon.
 
    ![Select Merge Queries](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
@@ -266,7 +266,7 @@ In this case, we want to merge the queries. To do so, follow these steps:
 
 1. Select **OK**.
 
-   Query Editor creates a **NewColumn** column at the end of the query, which contains the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the **NewColumn** column, but you can **Expand** the table and include whichever columns you want.
+   Power Query Editor creates a new column at the end of the query, which contains the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the column, but you can **Expand** the table and include whichever columns you want.
 
    ![NewColumn column](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
@@ -285,7 +285,7 @@ In this case, we want to merge the queries. To do so, follow these steps:
 
    We now have a single query (table) that combines two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for many additional and interesting data connections, such as housing cost statistics, demographics, or job opportunities in any state.
 
-1. To apply your changes and close Query Editor, select **Close & Apply** from the **Home** ribbon tab. 
+1. To apply your changes and close Power Query Editor, select **Close & Apply** from the **Home** ribbon tab. 
 
    The transformed dataset appears in Power BI Desktop, ready to be used for creating reports.
 

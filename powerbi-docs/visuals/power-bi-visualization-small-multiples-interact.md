@@ -1,5 +1,5 @@
 ---
-title: Interact with small multiples in Power BI (preview)
+title: Interact with small multiples in Power BI
 description: This article explains how to interact with small multiples, or trellising.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,18 +7,18 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/05/2021
+ms.date: 08/06/2021
 LocalizationGroup: Visualizations
 ---
-# Interact with small multiples in Power BI (preview)
+# Interact with small multiples in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
+Small multiples, or trellising, split a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region.":::
 
-Want to create small multiples? See [Create small multiples in Power BI (preview)](power-bi-visualization-small-multiples.md).
+Want to create small multiples? See [Create small multiples in Power BI](power-bi-visualization-small-multiples.md).
 
 ## Scroll in a small multiple
 
@@ -57,10 +57,10 @@ Select a legend category to cross-highlight other visuals and cross-highlight ot
 
 ## Sort
 
-With the new sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
+With the sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
 ## Next steps
 
-[Create small multiples in Power BI (preview)](power-bi-visualization-small-multiples.md)
+[Create small multiples in Power BI](power-bi-visualization-small-multiples.md)

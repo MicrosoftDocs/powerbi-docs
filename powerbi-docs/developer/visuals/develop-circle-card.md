@@ -1,13 +1,13 @@
 ---
-title: Learn how to develop your own Power BI visual using the circle card visual as an example in Power BI embedded analytics for better embedded BI insights
-description: This tutorial explains how you can develop a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Learn how to develop your own Power BI visual using the circle card visual as an example
+description: This tutorial explains how you can develop a Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 09/02/2020
+ms.date: 06/03/2021
 ---
 
 # Tutorial: Develop a Power BI circle card visual
@@ -18,6 +18,7 @@ In this tutorial, you'll develop a Power BI visual named circle card that displa
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Create a development project for your visual.
 > * Develop your visual with D3 visual elements.
 > * Configure your visual to process data.
@@ -35,7 +36,7 @@ In this tutorial, you learn how to:
 
 In this section you'll create a project for the circle card visual.
 
-1. Open PowerShell and navigate to the folder you want to create your project in.
+1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
 2. Enter the following command:
 
@@ -54,10 +55,11 @@ In this section you'll create a project for the circle card visual.
     ```powershell
     pbiviz start
     ```
-    >[!IMPORTANT]
-    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-## View the circle card in Power BI service
+    >[!IMPORTANT]
+    >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
+
+## View the visual in Power BI service
 
 [!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
 
@@ -85,6 +87,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 3. Remove the following code lines from the *visual.ts* file.
 
     * The *VisualSettings* import:
+
         ```typescript
         import { VisualSettings } from "./settings";
         ```
@@ -111,7 +114,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         import * as d3 from "d3";
         type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
         ```
-    
+
         >[!NOTE]
         >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library).
 
@@ -322,9 +325,9 @@ Delete unneeded lines of code from the capabilities file.
 
 Stop the visual from running and restart it.
 
-1. In the PowerShell window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-2. In PowerShell, start the visual.
+2. In **PowerShell**, start the visual.
 
     ```powershell
     pbiviz start
@@ -391,7 +394,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 * **Defining the data view mapping**
 
-    Define a filed called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
+    Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
@@ -426,7 +429,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
     > [!Note]
     > The visual project does not yet include data binding logic.
 
-3. In the floating toolbar, select **Show Dataview**. 
+3. In the floating toolbar, select **Show Dataview**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the show dataview button, located in the circle card floating toolbar.](media/develop-circle-card/show-dataview.png)
@@ -443,13 +446,13 @@ Verify that the circle card visual displays the *measure* field, and review the 
 
 6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
 
-### Configure the visual to consume data
+## Configure the visual to consume data
 
 Make changes to the **visual.ts** file, so that the circle card visual will be able to consume data.
 
 1. Open the **visual.ts** file in VS Code.
 
-2. Add the following line to import the `DataView` interface from the `powerbi` module.
+2. Make sure the following line appears in the file to import the `DataView` interface from the `powerbi` module. If it is not in the file, then add it.
 
     ```typescript
     import DataView = powerbi.DataView;
@@ -477,7 +480,11 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 
 4. Save the **visual.ts** file.
 
-5. Review the visual in Power BI service. The visual now displays the value and the display name.
+5. Review the visual in Power BI service.
+
+The visual now displays the name and value of the selected data field.
+
+You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/08/2021
+ms.date: 04/02/2021
 LocalizationGroup: Dashboards
 ---
 # Introduction to dashboards for Power BI designers
@@ -35,7 +35,7 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 The ability to create a dashboard is considered a *creator* feature and requires edit permissions on the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspace ABC and adds you as a member of that workspace, you and David both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](../collaborate-share/service-create-distribute-apps.md), you're *consuming* the report. You may not be able to pin tiles to a dashboard. 
 
 > [!IMPORTANT]
-> You need a [Power BI Pro](../fundamentals/service-features-license-type.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
+> You need a [Power BI Pro](../fundamentals/service-features-license-type.md) or Premium Per User (PPU) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro or Premium Per User (PPU) license.
 
 
 ## Dashboards versus reports
@@ -44,15 +44,16 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | Pages |One page |One or more pages |
-| Data sources |One or more reports and one or more datasets per dashboard |A single dataset per report |
-| Available in Power BI Desktop |No | Yes. Can build and view reports in Power BI Desktop |
-| Subscribe |Yes. Can subscribe to a dashboard |Yes. Can subscribe to a report page |
-| Filtering |No. Can't filter or slice a dashboard. *Can* filter a [dashboard tile in focus mode](../consumer/end-user-focus.md#working-in-focus-mode), but can't save the filter. |Yes. Many different ways to filter, highlight, and slice |
-| Featured |Yes. Can set one dashboard as your *featured* dashboard |No |
-| Favorite | Yes. Can set multiple dashboards as *favorites* | Yes. Can set multiple reports as *favorites* |
-| Set alerts |Yes. Available for dashboard tiles in certain circumstances |No |
-| Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset |
-| Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself |Yes |
+| Data sources |One or more reports and one or more datasets per dashboard. |A single dataset per report |
+| Drilling down in visuals | Only if you [pin an entire report page](service-dashboard-pin-live-tile-from-report.md) to a dashboard. | Yes |
+| Available in Power BI Desktop |No | Yes. Can build and view reports in Power BI Desktop. |
+| Filtering |No. Can't filter or slice a dashboard. *Can* filter a [dashboard tile in focus mode](../consumer/end-user-focus.md#working-in-focus-mode), but can't save the filter. |Yes. Many different ways to filter, highlight, and slice. |
+| Featured |Yes. Can set one dashboard as your *featured* dashboard. |No |
+| Favorite | Yes. Can set multiple dashboards as *favorites*. | Yes. Can set multiple reports as *favorites*. |
+| Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset. |
+| Set alerts |Yes. Available for dashboard tiles in certain circumstances. |No |
+| Subscribe |Yes. Can subscribe to a dashboard. |Yes. Can subscribe to a report page. |
+| Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes |
 
 
 ## Next steps

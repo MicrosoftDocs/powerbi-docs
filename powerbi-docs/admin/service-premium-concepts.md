@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 07/21/2021
 LocalizationGroup: Premium
 ---
 # Understanding Power BI Premium Gen2 (preview)
@@ -20,7 +20,7 @@ This article describes important concepts and implications for Power BI Premium 
 
 ## Premium Gen2 architecture improvements
 
-Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.md). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
+Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
 
 The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
 
@@ -49,9 +49,15 @@ There are several positive results from distributing backend processing of conte
 
 ## Premium Gen2 capacity load evaluation
 
-To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis. Power BI evaluates throughput every 30 seconds. It allows operations to complete, collects execution time on the shared pool physical node’s CPUs, and then for all operations on your capacity, aggregates them into 30-second intervals and compares the results to what your purchased capacity is able to support. 
+To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis. 
 
-Let's look at an example: a P1 with four backend v-cores can support (4 x 30 seconds = 120) seconds of v-core execution time, also known as *CPU time*. 
+Power BI evaluates throughput every **30 seconds**. It allows operations to complete, collects execution time on the shared pool physical node’s CPUs, and then for all operations on your capacity, aggregates them into **30-second CPU intervals** and compares the results to what your purchased capacity is able to support. 
+
+The following image illustrates how Premium Gen2 evaluates and completes queries.
+
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries."lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
+
+Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*. 
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
@@ -66,7 +72,7 @@ Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or 
 
 While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no artifact can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
 	
-## How autoscale works in Premium Gen2
+## How capacity size limits are enforced when viewing reports
 
 Premium Gen2 evaluates utilization by aggregating utilization records every 30 seconds. Each evaluation consists of 2 different aggregations: 
 * Interactive utilization
@@ -78,14 +84,22 @@ Premium Gen2 evaluates utilization by aggregating utilization records every 30 s
 
 Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflect the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
 
-If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to ( 4*30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations exceeds the total backend v-core quota in your capacity, your capacity will autoscale in one v-core for the next 24 hours.
+If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds ( 4*30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
+
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
+
+In contrast, if autoscale is optionally enabled, if the sum of both interactive and background utilizations exceeds the total backend v-core quota in your capacity, your capacity is automatically autoscales (raised) by one v-core for the next 24 hours.
+
+The following image shows how autoscale works.
+
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
 
 Autoscale always considers your current capacity size to evaluate how much you use, so if you already autoscaled into one v-core, that v-core is spread evenly at 50% for frontend utilization and 50% for backend utilization. This means your maximum capacity is now at (120 + 0.5 * 30 = 135 seconds) of CPU time in an evaluation cycle.
 
 Autoscale always ensures that no single interactive operation can account for all of your capacity, and you must have two or more operations occurring in a single evaluation cycle to initiate autoscale.
 
 
-## Implications for not using autoscale in Premium Gen2
+## Using Premium Gen2 without autoscale
 
 If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution. 
 
@@ -95,13 +109,12 @@ The amount of delay is proportionate to the amount of overload detected, as foll
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 
-
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
+* [Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
+* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

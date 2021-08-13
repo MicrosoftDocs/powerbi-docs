@@ -4,12 +4,11 @@ description: Learn how to get insights about your datasets and dashboard tiles.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: et_MLSL2sA8
-ms.custom: seodec18
+ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 06/08/2021
 LocalizationGroup: Dashboards
 ---
 # Generate data insights on your dataset automatically with Power BI
@@ -18,8 +17,10 @@ Do you have a new dataset and aren't sure where to start?  Need to build a dashb
 Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
-> Insights doesn't work with DirectQuery; it only works with data uploaded to Power BI.
+> Insights doesn't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
 > 
+> Row-level security (RLS) isn't supported by quick insights, even in import mode.
+>
 
 We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 

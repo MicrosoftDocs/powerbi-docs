@@ -5,7 +5,7 @@ metadata:
   author: davidiseminger
   ms.author: davidi
   ms.reviewer: ''
-  ms.custom: seodec18
+  ms.custom: ''
   ms.service: powerbi
   ms.subservice: powerbi-admin
   ms.topic: conceptual
@@ -65,7 +65,9 @@ sections:
              * Publish to Web
              * ArcGIS maps by Esri
              * Power BI Embedded
+             * Data Protection (MIP labels)
              * Activity logging
+             * Tenant metadata scanning flow (comprised of the following Power BI REST APIs: [getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces), [getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult), [getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus), and [postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo). These APIs are not supported in sovereign clouds.)
           
       - question: |
          Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?

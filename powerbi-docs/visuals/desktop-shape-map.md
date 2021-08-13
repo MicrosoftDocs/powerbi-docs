@@ -13,13 +13,11 @@ LocalizationGroup: Transform and shape data
 
 # Create Shape Map visualizations in Power BI Desktop (preview)
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-**Shape Map** visuals are based on TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
+**Shape Map** visuals are based on TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. 
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
@@ -44,7 +42,7 @@ Take the following steps to create a **Shape Map**:
 1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket (you won't see a map yet).
 
    > [!NOTE]
-   > See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
+   > To get sample map data you can use to test the **Shape Map** visual, see the section titled **Getting Map Data** below.
    > 
    > 
 

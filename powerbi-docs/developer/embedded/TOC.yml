@@ -4,11 +4,9 @@
   items:
   - name: Overview
     expanded: true
-    items: 
-    - name: "What is embedding with Power BI"
-      href: embedding.md
-    - name: "What is Power BI Embedded in Azure"
-      href: azure-pbie-what-is-power-bi-embedded.md
+    items:
+    - name: "What is Power BI embedded analytics?"
+      href: embedded-analytics-power-bi.md
     - name: "What is Power BI Embedded Generation 2"
       href: "power-bi-embedded-generation-2.md"      
   - name: Tutorials
@@ -18,12 +16,12 @@
       href: embed-sample-for-customers.md
     - name: "Embed content for your organization"
       href: embed-sample-for-your-organization.md
-    - name: "Embed paginated reports for customers"
-      href: embed-paginated-reports-customers.md
-    - name: "Embed paginated reports for your organization"
-      href: embed-paginated-reports-organization.md      
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
+    - name: "Embed a report in an app for your customers"
+      href: embed-customer-app.md     
+    - name: "Embed a report in an app for your organization"
+      href: embed-organization-app.md      
   - name: Concepts
     items:
     - name: "Capacity and SKUs in Power BI embedded analytics"
@@ -40,26 +38,30 @@
       href: embedded-row-level-security.md
     - name: "Paginated reports Row-level security"
       href: paginated-reports-row-level-security.md
-    - name: "Manage multi-tenants"
+    - name: "Multi-tenancy solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
       href: ./monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
-      href: embedded-faq.md
+      href: embedded-faq.yml
   - name: How to
     items:        
     - name: "Embed using service principal"
       href: embed-service-principal.md
     - name: "Embed using service principal and a certificate"
       href: embed-service-principal-certificate.md
+    - name: "Embed a paginated report"
+      href: embed-paginated-reports.md        
     - name: "Move an embedded app to production"
       href: move-to-production.md          
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Embed in Salesforce"
+      href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Create an Azure Active Directory tenant"
@@ -68,8 +70,6 @@
       href: register-app.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md      
-    - name: "Get an Azure AD access token"
-      href: get-azuread-access-token.md
     - name: "Embedding Q&A"
       href: qanda.md
     - name: "Troubleshoot your embedded application"
@@ -84,14 +84,6 @@
         href: azure-pbie-scale-capacity.md
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
-    - name: Migrate from Workspace Collections
-      items:
-      - name: "How to migrate from Power BI Workspace Collections"
-        href: migrate-from-powerbi-embedded.md  
-      - name: Migration tool
-        href: migrate-tool.md
-      - name: "Migration code snippets"
-        href: migrate-code-snippets.md
   - name: Reference
     items:
     - name: APIs
@@ -107,9 +99,11 @@
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
-      href: /cli/azure/ext/powerbidedicated/powerbi
+      href: /cli/azure/powerbi
   - name: Resources
     items:
+    - name: "Power BI Dev Camp"
+      href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"

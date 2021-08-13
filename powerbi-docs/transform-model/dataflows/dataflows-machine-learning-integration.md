@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-dataflows
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -26,7 +26,7 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 ### **Enabling AI features**
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run cognitive services. During public preview (prior to June 2019), this workload was disabled by default. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ![Cognitive services in Power BI](media/service-cognitive-services/cognitive-services-01.png)
 
@@ -298,7 +298,7 @@ The model report includes a chart that includes the breakdown of the correctly a
 
 ![Model report](media/service-machine-learning-automated/automated-machine-learning-power-bi-17.png)
 
-A further class-specific drilldown enables an analysis of how the predictions for a known class are distributed. This shows the other classes in which rows of that known class are likely to be misclassified.
+A further class-specific drill-down action enables an analysis of how the predictions for a known class are distributed. This shows the other classes in which rows of that known class are likely to be misclassified.
 
 The model explanation in the report also includes the top predictors for each class.
 
@@ -371,8 +371,6 @@ To learn more about Azure Machine Learning, please see:
 - Overview:  [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
 - Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](/azure/machine-learning/)
 
-> [!NOTE]
-> A Power BI Premium subscription is required to use Azure Machine learning integration.
 
 ### Granting access to the Azure ML model to a Power BI user
 
@@ -443,6 +441,11 @@ If the model returns multiple output parameters, they are grouped together as a 
 [ ![expand the column](media/service-machine-learning-integration/machine-learning-integration-09.png) ](media/service-machine-learning-integration/machine-learning-integration-09.png#lightbox)
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table table.
+
+##Limitations
+
+- AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
+- AzureML models are not supported for Guest users.
 
 ## Next steps
 

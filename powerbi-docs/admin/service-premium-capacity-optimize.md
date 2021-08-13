@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -27,6 +27,10 @@ Finally, testing approaches and Premium capacity sizing conclude this article.
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
+> [!NOTE]
+> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+
 
 The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
 
@@ -155,7 +159,7 @@ Incremental refresh can significantly reduce data refresh duration, especially f
 - **Refreshes are more reliable** - Shorter running connections to volatile datasource systems are less susceptible to disconnection.
 - **Models remain trim** - Incremental refresh policies can be configured to automatically remove history beyond a sliding window of time.
 
-To learn more, see [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ### Why are data refreshes not completing?
 

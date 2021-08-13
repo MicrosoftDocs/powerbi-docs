@@ -3,29 +3,29 @@ title: "Create a paginated report with a Power BI shared dataset - Power BI Repo
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/18/2020
+ms.date: 04/02/2021
 ms.service: powerbi
 ms.subservice: report-builder
+ms.custom: video-NfoOK4QRkhI
 ms.topic: how-to
 ---
 # Create a paginated report based on a Power BI shared dataset
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
 
 You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix. A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, no discrepancies, so you use the same dataset.
 
 ![Power BI Desktop to Report Builder paginated report](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
-
-The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. You just need to have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. To publish your paginated report, you do need a Power BI Pro license. You also need at least a Contributor role for a workspace in a Premium capacity.
 
 ## What you need
 
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
 - Power BI Report Builder. [Download and install Power BI Report Builder](https://aka.ms/pbireportbuilder).
+- The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. 
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
-- You don't need a Power BI Pro license to create a paginated report in Report Builder. 
-- You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
+- You don't need a Power BI Pro or Premium Per User (PPU) license to create a paginated report in Report Builder. 
+- You do need a Power BI Pro or Premium Per User (PPU) license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
 - Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. In the **Format** pane, turn off **Totals**. Then publish it to a workspace in the Power BI service.
 
     ![Totals off](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)

@@ -86,8 +86,6 @@
           href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
-      - name: "What can I do with visualizations?"
-        href: end-user-visualizations.md
       - name: "Types of visualizations"
         href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
@@ -130,6 +128,8 @@
         href: end-user-apps.md
       - name: "Install and use apps"
         href: end-user-app-view.md
+      - name: "Datasets hub"
+        href: end-user-datasets-hub.md
       - name: "Connect to services"
         href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"
@@ -145,7 +145,7 @@
     - name: "Glossary and terminology"
       href: end-user-glossary.md
     - name: "Frequently asked questions"
-      href: end-user-faq.md
+      href: end-user-faq.yml
     - name: "Supported browsers"
       href: ../fundamentals/power-bi-browsers.md
     - name: "Types of Quick Insights"

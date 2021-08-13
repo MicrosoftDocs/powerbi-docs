@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 06/18/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -22,7 +22,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
 * *Breadth* equates to entities within a dataflow.
     * There is no guidance or limits for the optimal number of entities is in a dataflow, however, shared dataflows have a refresh limit of two hours per entity, and three per dataflow. So if you have two entities, and each takes two hours, you shouldn't put them in the same dataflow.
-    * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only for Power BI Premium is a 24-hour refresh per dataflow.
+    * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only limit for Power BI Premium is a 24-hour refresh per dataflow.
 * A Power BI Premium subscription is required in order to refresh more than ten dataflows cross workspace
 * PowerQuery limitations are found in the PowerQuery Online usage limits article.
 * Power BI dataflows do not support use of global variables in a URL argument.
@@ -56,7 +56,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
 
-## Dataflows in shared
+## Dataflows in shared capacities
 
 There are limitations for Dataflows in shared capacities:
 
@@ -77,6 +77,10 @@ Dataflows that exist in Premium have the following limitations and consideration
 * Changing a dataflow from an incremental refresh policy to a normal refresh, or vice versa, will drop all data
 
 * Modifying a dataflow's schema will drop all data
+
+* When using a Premium Per User (PPU) license with dataflows, data is cleared when moving data out of a PPU environment
+
+* When a dataflow is refreshed in a Premium Per User (PPU) context, the data is not visible to non-PPU users
 
 **Linked and Computed tables:**
 
@@ -123,7 +127,42 @@ Dataflows that exist in Premium have the following limitations and consideration
     * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 * ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
     * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
-* Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (AAD).
+* Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (Azure AD).
+
+## Dataflow data types
+
+The data types supported in dataflows are the following:
+
+|Mashup data type	|Dataflow data type |
+|---------|---------|
+|Time|Time|
+|Date|Date|
+|DateTime|DateTime|
+|DateTimeZone|DateTimeOffset|
+|Logical|Boolean|
+|Text|String|
+|Any|String|
+|Currency|Decimal|
+|Int8	|Int64|
+|Int16	|Int64|
+|Int32	|Int64|
+|Int64	|Int64|
+|Double	|Double|
+|Percentage	|Double|
+|Single	|Double|
+|Decimal	|Double|
+|Number	|Double|
+|Duration	|Not Supported|
+|Binary	|Not Supported|
+|Function	|Not Supported|
+|Table	|Not Supported|
+|List	|Not Supported|
+|Record	|Not Supported|
+|Type	|Not Supported|
+|Action	|Not Supported|
+|None	|Not Supported|
+|Null	|Not Supported|
+
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:

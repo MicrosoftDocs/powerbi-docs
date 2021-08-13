@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 04/26/2021
 LocalizationGroup: Create reports
 ---
 # Multi-select data elements, data points, and visuals in Power BI Desktop
@@ -26,7 +26,7 @@ With multi-select, you can now select more than one data point in your **Power B
 
 This sounds like a simple capability, but it opens all sorts of opportunities when creating, sharing, and interacting with reports. 
 
-## Select multiple elements using rectangle select (preview)
+## <a name="select-multiple-elements-using-rectangle-select-preview"></a>Select multiple elements using rectangle select
 
 You can select multiple data elements in a visual, or multiple visuals in a report, using rectangular select, often also referred to as *lasso select*. 
 

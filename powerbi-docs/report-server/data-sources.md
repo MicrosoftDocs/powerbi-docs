@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 06/16/2021
 ---
 # Power BI report data sources in Power BI Report Server
 Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services. Some data sources are available in Power BI Desktop for Power BI Report Server, but aren't supported when published to Power BI Report Server.
@@ -25,7 +25,7 @@ These data sources are specific to Power BI reports used within Power BI Report 
 | SQL Server Database |Yes |Yes |Yes |
 | SQL Server Analysis Services |Yes |Yes |Yes |
 | Azure SQL Database |Yes |Yes |Yes |
-| Azure SQL Data Warehouse |Yes |Yes |Yes |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |Yes |Yes |Yes |
 | Excel |Yes |Yes |No |
 | Access Database |Yes |Yes |No |
 | Active Directory |Yes |Yes |No |
@@ -51,7 +51,8 @@ These data sources are specific to Power BI reports used within Power BI Report 
 | OLE DB |Yes |Yes |No |
 | Oracle Database |Yes |Yes |Yes |
 | PostgreSQL Database |Yes |Yes |No |
-| Power BI service |No |No |No |
+| Power BI dataset in the Power BI service |No |No |No |
+| Power BI dataset in Power BI Report Server |No |No |No |
 | R Script |Yes |No |No |
 | Salesforce Objects |Yes |No |No |
 | Salesforce Reports |Yes |No |No |
@@ -114,7 +115,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | SQL Server Analysis Services |No |No |Yes |Yes |
 | Web |Yes |No |Yes |Yes |
 | Azure SQL Database |No |No |Yes |No |
-| Azure SQL Data Warehouse |No |No |Yes |No |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |
 | Active Directory |No |No |Yes |Yes |
 | Amazon Redshift |No |No |No |No |
 | Azure Blob Storage |Yes |Yes |No |No |
@@ -195,7 +196,7 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | SQL Server Database |No |No |Yes |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |Yes |
 | Azure SQL Database |No |No |Yes |No |No |
-| Azure SQL Data Warehouse |No |No |Yes |No |No |
+| Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
 | SAP HANA Database |No |No |Yes |Yes |Yes** |

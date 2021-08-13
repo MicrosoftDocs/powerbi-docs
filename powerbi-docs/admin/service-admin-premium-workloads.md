@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
 ---
 
@@ -19,6 +19,9 @@ This article describes enabling and configuring workloads for Power BI Premium c
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
+> [!NOTE]
+> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 ## Default memory settings
 
@@ -60,7 +63,7 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
-| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. |
+| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. Note that the upper limit may need to be further constrained based on what the datasource supports. |
 | **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
 | **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
@@ -131,16 +134,22 @@ The combined time for all queries is 75 minutes, but the setting limit isn't rea
 
 Note that Power BI reports override this default with a much smaller timeout for each query to the capacity. The timeout for each query is typically about three minutes.
 
-#### Automatic page refresh (preview)
+#### Automatic page refresh
 
 When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
 
 - Turn automatic page refresh on and off
 - Define a minimum refresh interval
 
-The following image shows the location of the automatic refresh interval setting:
+To find the automatic page refresh setting:
 
-![admin setting for automatic refresh interval](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+1. In the Power BI Admin portal, select **Capacity settings**.
+
+2. Select your capacity, and then scroll down and expand the **Workloads** menu.
+
+3. Scroll down to the **Datasets** section.
+
+:::image type="content" source="media/service-admin-premium-workloads/powerbi-permium-automatic-page-refresh.png" alt-text="Screenshot that shows the admin setting for automatic refresh interval.":::
 
 Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization. 
 

@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/14/2020
+ms.date: 05/17/2021
 LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop
@@ -41,7 +41,7 @@ When you prepare and run an R script in Power BI Desktop, there are a few limita
 
 Now you can run your R script to import data into Power BI Desktop:
 
-1. In Power BI Desktop, select **Get Data**, choose **Other** > **R script**, and then select **Connect**:
+1. In Power BI Desktop, select **Get data**, choose **Other** > **R script**, and then select **Connect**:
 
     ![Connect to R script, Other category, Get Data dialog box, Power BI Desktop](media/desktop-r-scripts/r-scripts-1.png)
 

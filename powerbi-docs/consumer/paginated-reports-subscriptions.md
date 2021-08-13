@@ -18,9 +18,9 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 ## Considerations for paginated report subscriptions 
 
-- You don't need edit permissions to the paginated report to create a subscription for yourself, but you must have edit permissions to create one for someone else in your organization. If you have at least a Contributor role in the workspace where the paginated report is, then you can create subscriptions for others in your organization. Read more about [Roles in workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- You don't need edit permissions to the paginated report to create a subscription for yourself, but you must have edit permissions to create one for someone else in your organization. If you have at least a Contributor role in the workspace where the paginated report is, then you can create subscriptions for others in your organization. Read more about [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
-- To subscribe external users who are not members of your organization, the external user must first [onboard using B2B (Business to business)](/power-platform/admin/invite-users-azure-active-directory-b2b-collaborationd). 
+- To subscribe external users who are not members of your organization, the external user must first [onboard using B2B (Business to business)](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration). 
 
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output.  The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML.
 

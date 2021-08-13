@@ -1,25 +1,23 @@
 ---
-title: Create a Q&A visual in Power BI
-description: How to create and format a Power BI Q&A visual in Power BI Desktop or the Power BI service.
+title: Create a Q&A visual in a report
+description: How to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rien
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/05/2021
+ms.date: 08/06/2021
 ---
-# Create a Q&A visual in Power BI
+# Create a Q&A visual in a report in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use it to quickly get answers to their data. *Designers* can also use it to create visuals quickly. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started. In this article, you create, format, and customize a Q&A visual. It supports themes and other default formatting options available inside Power BI. After you create it, it behaves like any other visual, supporting cross-filtering, cross-highlighting, and bookmarks. 
 
 Looking for more background about Q&A in Power BI? Check out [Introduction to Q&A](../natural-language/q-and-a-intro.md). 
 
 ![Q&A visual walkthrough](../natural-language/media/qna-visual-walkthrough.gif)
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 The Q&A visual consists of four core components:
 
@@ -43,7 +41,7 @@ The Q&A visual consists of four core components:
 If you see an error when creating a Q&A visual, be sure to check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article to see if the data source configuration is supported.    
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that either you both have individual Power BI Pro licenses or you save the report in a Premium capacity workspace. See [sharing reports](../collaborate-share/service-share-dashboards.md).
+> Sharing your report with a Power BI colleague requires that either you both have individual Power BI Pro or Premium Per User (PPU) licenses or you save the report in a Premium capacity workspace. See [sharing reports](../collaborate-share/service-share-dashboards.md).
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 

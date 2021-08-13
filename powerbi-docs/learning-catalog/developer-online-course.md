@@ -4,9 +4,9 @@ description: This video-based course empowers you as an app developer with th
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: yana.berkovich
-featuredvideoid: dv-ep90wse8
+ms.custom: video-dv-ep90wse8
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: tutorial
 ms.date: 06/01/2020
 ---

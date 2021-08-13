@@ -67,7 +67,7 @@ Now that you understand the handful of basic building blocks of Power BI, it bec
 
 For some people, using a single Excel table in a dataset, then sharing a dashboard with their team, will be an incredibly valuable way to use Power BI.
 
-For others, using real-time Azure SQL Data Warehouse tables that combine with other databases and real-time source, which then get filtered in real-time to build a dataset that monitors moment-by-moment manufacturing progress will be the value in Power BI that they seek.
+For others, using real-time Azure Synapse Analytics (formerly SQL Data Warehouse) tables that combine with other databases and real-time source, which then get filtered in real-time to build a dataset that monitors moment-by-moment manufacturing progress will be the value in Power BI that they seek.
 
 For both, the process is the same: create datasets, build compelling visuals, and share them with others. And similarly, the result of both (for each) is the same: harness your ever-expanding world of data, and turn it into actionable insights.
 

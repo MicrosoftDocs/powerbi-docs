@@ -1,6 +1,6 @@
 ---
-title: Configure credentials programmatically for Power BI embedded analytics enabling better embedded BI insights
-description: How to configure credentials programmatically when automating Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Configure credentials programmatically for Power BI embedded analytics
+description: How to configure credentials programmatically when automating Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -102,7 +102,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 6. Call [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) to set credentials.
 
     ```csharp
-    pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
+    pbiClient.Gateways.UpdateDatasource(datasource.GatewayId.Value, datasource.DatasourceId.Value, new UpdateDatasourceRequest(credentialDetails));
     ```
 
 ## Configure a new data source for a data gateway
@@ -231,3 +231,8 @@ After you create the dataset, an automatic binding is created between the datase
 If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](/rest/api/power-bi/datasets/bindtogateway).
 
 To discover gateways that could be bound, use [Discover Gateways](/rest/api/power-bi/datasets/discovergateways).
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Power BI REST APIs](/rest/api/power-bi/)

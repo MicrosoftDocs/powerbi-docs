@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 05/01/2020
+ms.date: 05/18/2021
 ---
 
 # Pass a report parameter in a URL for a paginated report in Power BI 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-mobile](../includes/yes-mobile.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 You can pass report parameters to a report by including them in a paginated report URL. All query parameters can have corresponding report parameters. Therefore, you pass a query parameter to a report by passing the corresponding report parameter. You need to prefix the parameter name with `rp:` for Power BI to recognize it in the URL. 
 
@@ -26,6 +26,12 @@ Report parameters are case-sensitive and use these special characters:
 - A semicolon in any portion of the string is replaced with the characters `%3A`.
 
 Browsers should automatically perform the proper URL encoding. You don't have to encode any of the characters manually. 
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+
+## Parameter examples
 
 To set a report parameter within a URL, use the following syntax: 
 

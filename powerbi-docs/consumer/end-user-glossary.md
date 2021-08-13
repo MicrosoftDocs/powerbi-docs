@@ -8,7 +8,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 11/21/2020
+ms.date: 06/20/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -69,7 +69,7 @@ A mathematical determination of the size or number of something.
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
-A Power BI [visual type](end-user-visual-type.md).
+A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 **card** (Power BI Home)    
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
@@ -93,7 +93,7 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 The content index for an app.
 
 **content pack**    
- A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
+ Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view**
 
@@ -143,8 +143,8 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
 
 **drill up, drill down, drillthrough**    
-In Power BI, use drill down and drill up to refer to the ability to explore the next level of detail in a report or visual. 
-Use drillthrough to refer to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
+In Power BI, "drill down" and "drill up" refer to the ability to explore the next level of detail in a report or visual. 
+"Drill through" refers to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
 Drill to details commonly means to show the underlying records.
 
 ## E

@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/29/2020
+ms.date: 06/10/2021
 LocalizationGroup: Reports
 ---
 
@@ -37,7 +37,7 @@ Some of the filters are shaded, and some are not. If a filter is shaded, that me
 
 In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report. 
 
-To reset the **Filters** pane to the designer's defaults, select **Reset to default** from the upper menu bar.
+To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the upper menu bar.
 
 ![Screenshot of the Reset to default icon.](media/end-user-report-filter/power-bi-reset-icon.png) 
 
@@ -103,7 +103,7 @@ To understand a filter, expand it and take a look at the available values and co
 
 ### Change filter selections
 
-One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name.  Depending on the filter and type of data that Power BI is filtering, your options will range from simple selections from a list, to identifying ranges of dates or numbers. In the advanced filter below, we've changed the **Total Units YTD** filter on the treemap to be between 2,000 and 3,000. Notice that this change removes Pirum from the treemap.
+One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name.  Depending on the filter and type of data that Power BI is filtering, your options will range from simple selections from a list, to identifying ranges of dates or numbers. In the advanced filter below, we've changed the **Total Units YTD** filter on the treemap to be between 2,000 and 3,000. Notice that this change removes Pirum and VanArsdel from the treemap.
   
 ![Screenshot of a report and its filters that shows treemap visual selected.](media/end-user-report-filter/power-bi-treemap-filter.png)
 
@@ -112,7 +112,7 @@ One way to search for data insights is to interact with the filters. You can cha
 
 ### Reset filter to default
 
-If you want to back out of all changes you've made to the filters, select **Reset to default** from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
+If you want to back out of all changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
 
 ![Screenshot of the Reset to default option.](media/end-user-report-filter/power-bi-reset-icon.png)
 

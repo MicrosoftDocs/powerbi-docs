@@ -6,9 +6,9 @@ ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 04/02/2021
 ---
 
 # Monitor report performance in Power BI
@@ -22,6 +22,10 @@ Monitoring performance is relevant in the following situations:
 - Your model calculations are slow.
 
 Slow queries or report visuals should be a focal point of continued optimization.
+
+
+> [!NOTE]
+> The Performance Analyzer cannot be used to monitor Premium Per User (PPU) activities or capacity.
 
 ## Use Query Diagnostics
 

@@ -4,11 +4,11 @@ description: This topic teaches how to add hyperlinks (URLs) to a table. You use
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 07/02/2021
 LocalizationGroup: Visualizations
 ---
 # Add hyperlinks (URLs) to a table or matrix
@@ -28,9 +28,9 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view or Report view, select the column. 
+2. In Data view, select the column. 
 
-3. On the **Modeling** tab, select **Data Category** > **Web URL**.
+3. On the **Column tools** tab, select **Data category** > **Web URL**.
    
     ![Data category dropdown list](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url.png)
 
@@ -121,8 +121,6 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 
 6. From the Power BI service or Power BI Desktop, connect to or import this workbook.
 7. Create a table visualization that includes the URL field.
-   
-   ![Create a table in Power BI with the URL field](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## Considerations and troubleshooting
 

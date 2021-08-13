@@ -4,11 +4,11 @@ description: This article describes dashboard tiles in Power BI, which includes 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/17/2020
+ms.date: 06/22/2021
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
@@ -85,6 +85,7 @@ When you select a tile, what happens next depends on how you created the tile. O
 * Tiles can be created from on-premises paginated reports in Power BI Report Server or SQL Server Reporting Services. If you don't have permission to access the on-premises report, selecting the tile takes you to a page indicating you don't have access (rsAccessDenied).
 * Say you select a tile created from an on-premises paginated report in Power BI Report Server or SQL Server Reporting Services. If you don't have access to the network where the report server is located, selecting a tile created from that paginated report takes you to a page that indicates it can't locate the server (HTTP 404). Your device needs network access to the report server to view the report.
 * If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
+* Some changes you make to a visual in a report aren't reflected in the tile you pin to a dashboard. For example, background color, width/height, and tooltips. Even if you turn tooltips off completely for a visual in a Power BI report, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
 ## Next steps
 - [Create a card (large number tile) for your dashboard](../visuals/power-bi-visualization-card.md)

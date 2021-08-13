@@ -4,11 +4,11 @@ description: Learn how to get data from Excel, Power BI Desktop, and CSV files i
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 06/10/2021
 LocalizationGroup: Data from files
 ---
 # Get data from files for Power BI
@@ -42,6 +42,11 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 **OneDrive - Personal** – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data > Files > OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
 
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+
+> [!NOTE]
+> Datasets imported from OneDrive for Business or OneDrive Personal cannot be updated from local files. You must replace the file in OneDrive for Business or OneDrive Personal for Power BI to update the dataset. Alternatively, delete the dataset and its related artifacts and then import from a local file.
+> 
+> 
 
 ## Ready to get started?
 See the following articles to learn more about getting your file into Power BI.

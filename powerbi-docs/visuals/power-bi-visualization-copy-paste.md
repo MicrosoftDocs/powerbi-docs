@@ -37,12 +37,12 @@ Visualizations on *dashboards* can't be copied and pasted into Power BI reports 
 
 Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual from the Power BI service or mobile and paste it into any other application that supports pasting. 
 
-When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes:
+When you copy a static image of a visual, you get a copy of the visual, including filters applied to it, along with its metadata. This includes:
 * link back to the Power BI report or dashboard
 * title of the report or dashboard
 * notice if the image contains confidential information
 * last updated time stamp
-* filters applied to the visual
+* text description of the filters applied to the visual
 
 ### Copy from a dashboard tile
 

@@ -7,21 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/20/2020
+ms.date: 08/09/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). These logs both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs), but there are several key differences, as summarized in the following table.
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
+
+## Choosing a log source
+The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
+
+- The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array)
+- You do not need to be assigned the global admin role in Microsoft 365 to access the Power BI Activity Log
+
+The differences between log sources are summarized in the following table.
 
 | **Unified audit log** | **Power BI activity log** |
 | --- | --- |
 | Includes events from SharePoint Online, Exchange Online, Dynamics 365, and other services in addition to the Power BI auditing events. | Includes only the Power BI auditing events. |
-| Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins and Power BI service admins have access. |
+| Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins, Power Platform admins, and Power BI service admins have access. |
 | Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
-| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins, Power Platform admins, and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
 | Retains audit data, even if the tenant is moved to a different Azure region. | Doesn't retain activity data when the tenant is moved to a different Azure region. |
 
@@ -70,16 +78,35 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
 > [!NOTE]
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
->
->
+
+If the time span between startDateTime and endDateTime exceeds 1 hour, it takes multiple requests to download the data through continuationUri in response.
+
+The following example shows how to download data for 1 hour and 5 minutes:
+```
+GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?startDateTime='2020-08-13T07:55:00Z'&endDateTime='2020-08-13T09:00:00Z'
+{
+  "activityEventEntities": […],
+  "continuationUri": https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?continuationToken='LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D',
+  "continuationToken": "LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D",
+  "lastResultSet": false
+}
+
+GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?continuationToken='LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D'
+{
+  "activityEventEntities": [],
+  "continuationUri": null,
+  "continuationToken": null,
+  "lastResultSet": false
+}
+```
+
+
+
 To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
 
 ### Get-PowerBIActivityEvent cmdlet
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
-
-> [!NOTE]
-> You can't run Get-PowerBIActivityEvent as the Azure service principal. Even if the service principal is assigned the Power BI service administrator role. 
 
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed.
 
@@ -256,6 +283,7 @@ The following operations are available in both the audit and activity logs.
 | Assigned a workspace to a deployment pipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Binded dataset to data sources                     | BindMonikersToDatasources                  |                                            |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
@@ -263,7 +291,6 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
 | Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
 | Created an organizational custom visual                          | InsertOrganizationalGalleryItem                                |                                          |
-| Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
 | Created deployment pipeline      | CreateAlmPipeline                                |                                          |
 | Created Power BI app                              | CreateApp                                   |                                          |
 | Created Power BI dashboard                        | CreateDashboard                             |                                          |
@@ -297,6 +324,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI report                           | DeleteReport                                |                                          |
 | Deleted Power BI template app workspace | DeleteTemplateApp |
 | Deleted Power BI template app package | DeleteTemplateAppPackage |
+| Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
@@ -316,6 +344,7 @@ The following operations are available in both the audit and activity logs.
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
 | Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
+| Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their dataset |
 | Installed Power BI app                            | InstallApp                                  |                                          |
 | Installed Power BI template app | InstallTemplateApp |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
@@ -334,9 +363,10 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
-| Sensitivity Label Applied                         | SensitivityLabelApplied                     |                                          |
-| Sensitivity Label Changed                         | SensitivityLabelChanged                     |                                          |
-| Sensitivity Label Removed                         | SensitivityLabelRemoved                     |                                          |
+| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset |
+| [Sensitivity Label Applied](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelApplied                     |                                          |
+| [Sensitivity Label Changed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelChanged                     |                                          |
+| [Sensitivity Label Removed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelRemoved                     |                                          |
 | Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
@@ -367,6 +397,7 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
 | Updated Power BI template app settings | UpdateTemplateAppSettings |
 | Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions |
+| Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
 | Viewed Power BI report                            | ViewReport                                  |                                          |

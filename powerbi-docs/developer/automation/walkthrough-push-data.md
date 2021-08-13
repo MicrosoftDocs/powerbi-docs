@@ -1,6 +1,6 @@
 ---
-title: Push data into a dataset  in Power BI embedded analytics for better embedded BI insights
-description: Push data into a Power BI dataset. Enable better embedded BI insights using Power BI embedded analytics.
+title: Push data into a dataset
+description: Push data into a Power BI dataset.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

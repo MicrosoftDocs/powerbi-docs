@@ -4,9 +4,9 @@ description: This video-based course aims to empower you as a report author with
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: maggies
-featuredvideoid: DN1t5p9aui0
+ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: tutorial
 ms.date: 12/31/2020
 ---

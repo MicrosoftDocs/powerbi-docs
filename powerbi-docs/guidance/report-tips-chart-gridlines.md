@@ -4,9 +4,9 @@ description: Three tips to control chart gridlines in Power BI report visuals, i
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: Y-igshes2LI
+ms.custom: video-Y-igshes2LI
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 02/15/2020
 ---

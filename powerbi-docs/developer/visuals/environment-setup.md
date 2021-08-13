@@ -1,13 +1,13 @@
 ---
-title: Setting up an environment for developing a Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article explains how to set up your environment so that you can develop a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Setting up an environment for developing a Power BI visual
+description: This article explains how to set up your environment so that you can develop a Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 09/02/2020
+ms.date: 05/15/2021
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -18,19 +18,22 @@ Before you start development, you'll need to install **node.js** and the **pbivi
 
 In this article, you'll learn how to:
 > [!div class="checklist"]
-> * Install *nodes.js*.
-> * Install *pbiviz*.
-> * Create and install a certificate.
-> * Set up Power BI service for developing a visual.
-> * Install additional libraries (required for developing a visual).
+>
+> * [Install *nodes.js*](#install-nodejs).
+> * [Install *pbiviz*](#install-pbiviz).
+> * [Create and install a certificate](#create-and-install-a-certificate).
+> * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
+> * [Install additional libraries](#install-development-libraries) (required for developing a visual).
 
 ## Install node.js
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
 
-1. To install *node.js*, in a web browser, navigate to [node.js](https://nodejs.org).
+To install *node.js*:
 
-2. Download the latest MSI installer.
+1. In a web browser, navigate to [node.js](https://nodejs.org).
+
+2. Download the latest recommended MSI installer.
 
 3. Run the installer, and then follow the installation steps. Accept the terms of the license agreement and all defaults.
 
@@ -42,17 +45,20 @@ The *pbiviz* tool, which is written using JavaScript, compiles the visual source
 
 The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
 
-1. Open Windows PowerShell and enter the following command.
+To install *pbiviz*, open Windows PowerShell and enter the following command.
 
-    ```powershell
-    npm i -g powerbi-visuals-tools
-    ```
+```powershell
+npm i -g powerbi-visuals-tools
+```
+
+>[!NOTE]
+>You might get some warnings when you run this command. They should not prevent *pbiviz* from installing.
 
 ## Create and install a certificate
 
 For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
 
-# [Windows](#tab/windows)
+### [Windows](#tab/windows)
 
 This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
 
@@ -68,9 +74,14 @@ This process describes running a PowerShell command that launches the **Certific
     This command does two things:
     * It returns a *passphrase*. In this case, the *passphrase* is 9765328806094.
     * It also starts the Certificate Import Wizard.
-    
+
     >[!div class="mx-imgBorder"]
     >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
+
+    >[!NOTE]
+    >
+    >* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
+    >* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
 
 2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
 
@@ -104,8 +115,7 @@ This process describes running a PowerShell command that launches the **Certific
     >[!NOTE]
     >If you receive a security warning, select **Yes**.
 
-
-# [OSX](#tab/sdk2osx)
+### [OSX](#tab/sdk2osx)
 
 1. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
 
@@ -158,7 +168,6 @@ To install the libraries listed in this article, open PowerShell and enter the i
 >[!NOTE]
 >Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
 
-
 ### D3 JavaScript library
 
 [D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
@@ -201,11 +210,12 @@ npm i powerbi-visuals-api --save-dev
 1. Open VS Code.
 
     >[!TIP]
-    >You can open VS Code from PowerShell by executing the following command:
+    >You can open **VS Code** from PowerShell by executing the following command from within the project folder:
     >
     >```powershell
     >code .
     >```
+
 2. In VS Code, open the **File** menu and select **Open Folder**.
 
     >[!div class="mx-imgBorder"]
@@ -229,7 +239,10 @@ npm i powerbi-visuals-api --save-dev
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
+
+> [!div class="nextstepaction"]
 > [Create a Power BI circle card visual](develop-circle-card.md)
 
 > [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+> [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)

@@ -2,13 +2,13 @@
 title: Dataset connectivity and management with the XMLA endpoint in Power BI
 description: Describes Power BI Premium and Premium Per User dataset connectivity from client applications and tools by using the XMLA endpoint.
 author: Minewiskan
-ms.author: owend
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/24/2021
-ms.custom: seodec18
+ms.date: 07/20/2021
+ms.custom: ''
 LocalizationGroup: Premium
 ---
 
@@ -22,8 +22,16 @@ Workspaces use the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-x
 
 By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
 
-> [!NOTE]
-> It's recommended you use the modern workspace experience, especially when connecting to your datasets by using the XMLA endpoint. Operations such as creating or deleting datasets are not supported with classic workspaces. To upgrade classic workspaces to the modern experience, see [Upgrade classic workspaces in Power BI](../collaborate-share/service-upgrade-workspaces.md).
+## Terms of Use
+
+Use of the XMLA endpoint is subject to the following:
+
+**Single-user application** - The application uses a single user account or app identity to access a Power BI dataset through the XMLA endpoint. Typical examples are developer tools, admin scripts, and automated processes to perform data modelling and administrative tasks, such as altering the metadata of a dataset, performing a backup or restore operation, or triggering a data refresh. The user account or app identity that the client application uses to access a dataset must have a valid Premium Per User (PPU) license unless the dataset resides on a Premium capacity.
+
+**Multi-user application** - The application provides multiple users with access to a Power BI dataset. For example, a middle-tier application integrating a dataset into a business solution and accessing the dataset on behalf of its business users.
+
+- For Premium Per User (PPU) workspaces, the application must require each user to sign in to Power BI. The application uses each user’s access token to access the datasets. The application is not permitted to use a service account or other app identity to perform tasks on behalf of its users. Each user must use their own Power BI account for opening reports, accessing datasets, and executing queries.
+- For Premium workspaces, the application may use a service account or app identity on behalf of the end users without requiring each user to sign in to Power BI.
 
 ## Data modeling and management tools
 
@@ -84,6 +92,9 @@ Users with UPNs in the same tenant (not B2B) can replace the tenant name with `m
 B2B users must specify their organization UPN in tenant name. For example,  
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
+> [!NOTE]
+> To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
@@ -130,11 +141,21 @@ Server name aliases, supported in Azure Analysis Services are not supported for 
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate AIXL files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
+
+The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
+
+
+|Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
+|---------|---------|---------|
+|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
+|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+
+
 
 **Allow live connections** is an export and sharing setting.
 
@@ -220,9 +241,13 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 
 ## Dataset refresh
 
-The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](service-premium-incremental-refresh.md) historical partitions without having to reload all historical data.
+The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
 
 Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+
+Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
+
+:::image type="content" source="media/service-premium-connect-tools/refresh-history-via-xmla.png" alt-text="Refresh history  via XMLA endpoint":::
 
 ## Dynamic Management Views (DMV)
 

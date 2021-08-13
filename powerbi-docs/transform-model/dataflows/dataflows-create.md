@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -16,7 +16,7 @@ A **dataflow** is a collection of tables that are created and managed in workspa
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 ![start a dataflow](media/dataflows-create/create-options.png)
 
-There are a multiple of ways to create or build on top of a new dataflow:
+There are multiple ways to create or build on top of a new dataflow:
 
 * [Create a dataflow using define new tables](#create-a-dataflow-using-define-new-tables)
 * [Create a dataflow using linked tables](#create-a-dataflow-using-linked-tables)
@@ -24,6 +24,9 @@ There are a multiple of ways to create or build on top of a new dataflow:
 * [Create a dataflow using import/export](#create-a-dataflow-using-importexport)
 
 The following sections explore each of these ways to create a dataflow in detail.
+
+> [!NOTE]
+> Dataflows can be created by user in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
 
 ## Create a dataflow using define new tables
 
@@ -42,7 +45,7 @@ Once you select the data for use in the table, you can use dataflow editor to sh
 
 Creating a dataflow using linked tables enables you to reference an existing table, defined in another dataflow, in a read-only fashion. The following list describes some of the reasons you may choose this approach:
 
-* If you want to reuse an table across multiple dataflows, such as a date table or a static lookup table, you should create an table once and then reference it across the other dataflows.
+* If you want to reuse a table across multiple dataflows, such as a date table or a static lookup table, you should create a table once and then reference it across the other dataflows.
 
 * If you want to avoid creating multiple refreshes to a data source, it's better to use linked tables to store the data and act as a cache. Doing so allows every subsequent consumer to leverage that table, reducing the load to the underlying data source.
 
@@ -112,7 +115,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 Creating a dataflow using import/export lets you import a dataflow from a file. This is useful if you want to save a dataflow copy offline, or move a dataflow from one workspace to another. 
 
-To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
+To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **Export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
 
 ![create computed table step 7](media/dataflows-create/export-dataflow.png)
 

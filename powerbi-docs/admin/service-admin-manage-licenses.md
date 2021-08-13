@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/08/2020
+ms.date: 05/25/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -25,7 +25,7 @@ This article explains how admins can use the Microsoft 365 admin center or the A
 To see which Power BI subscriptions your organization has, follow these steps.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. In the navigation menu, select **Billing** > **Products & services**.
+2. In the navigation menu, select **Billing** > **Your products**.
 
 Your active Power BI subscriptions are listed along with any other subscriptions you have. You may see an unexpected subscription for Power BI (free), as shown here.
 

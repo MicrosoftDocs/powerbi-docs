@@ -7,8 +7,8 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 03/17/2021
-ms.custom: licensing support
+ms.date: 05/26/2021
+ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a *business user*, you use the Power BI service to explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI *Pro* licenses. Pro users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
+As a *business user*, you use the Power BI service to explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI *Pro* or Premium Per User (PPU) licenses. Pro and PPU users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
 
 There are many different ways designers can share content. But this article is for Power BI *business users*, and therefore only describes how *business users* receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -32,12 +32,12 @@ This article lists which features in the Power BI service are available to *busi
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
 ### Workspaces and roles
-There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro licenses, to use an app workspace. 
+There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro or Premium Per User (PPU) licenses, to use an app workspace. 
 
 Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Business users* are often assigned the **Viewer** role. 
 
 ### Premium capacity
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro or Premium Per User (PPU) licenses. Within those workspaces, free users have elevated permissions (see list, below). 
 
 ### Licenses 
 

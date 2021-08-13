@@ -1,13 +1,13 @@
 ---
-title: Power BI visual project structure in Power BI embedded analytics for better embedded BI insights
-description: This article describes the folder and file structure of a Power BI visual project. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI visual project structure
+description: This article describes the folder and file structure of a Power BI visual project.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 01/12/2020
+ms.date: 06/12/2021
 ---
 
 # Power BI visual project structure
@@ -57,13 +57,14 @@ For more information, see [User and Workspace Settings](https://code.visualstudi
 
 This folder contains the `icon.png` file.
 
-The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane.
+The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane. This icon must be a **PNG** file, *20 pixels by 20 pixels*.
 
 ### src
 
 This folder contains the visual's source code.
 
 In this folder, the Power BI visuals tool creates the following files:
+
 * `visual.ts` - The visual's main source code.
 * `settings.ts` - The code of the visual's settings. The classes in the file provide an interface for defining your [visual's properties](./objects-properties.md#properties).
 
@@ -105,9 +106,10 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 
 ## Metadata entries
 
-The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries.
+The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries. Certain metadata (like the author's name and email) are required before you can package the visual.
 
 > [!NOTE]
+>
 > * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
@@ -167,6 +169,8 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 
 ## Next steps
 
-* To understand the interactions between a visual, a user, and Power BI, see [Power BI visual concept](./power-bi-visuals-concept.md).
+>[!div class="nextstepaction"]
+>[Power BI visual concept](power-bi-visuals-concept.md)
 
-* Start developing your own Power BI visuals from scratch, using the [step by step guide](./develop-circle-card.md).
+>[!div class="nextstepaction"]
+>[Step by step guide to developing a visual](develop-circle-card.md).

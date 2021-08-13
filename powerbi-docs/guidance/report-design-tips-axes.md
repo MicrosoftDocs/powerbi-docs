@@ -4,9 +4,9 @@ description: Eight tips to effectively manage axes in Power BI report visuals, i
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: 3t9W7Xvpzo0
+ms.custom: video-3t9W7Xvpzo0
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 01/29/2020
 ---

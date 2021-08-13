@@ -3,22 +3,21 @@ title: Anomaly detection tutorial
 description: 'Tutorial: Detect Anomalies in Power BI'
 author: aphilip94
 ms.author: anphil
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
+ms.custom: video-RE4M2hp
 ms.topic: how-to
-ms.date: 11/10/2020
+ms.date: 05/11/2021
 LocalizationGroup: Visualizations
 ---
-# Anomaly detection (preview)
+# Anomaly detection
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 Anomaly detection helps you enhance your line charts by automatically detecting anomalies in your time series data. It also provides explanations for the anomalies to help with root cause analysis.  With just a couple of clicks, you can easily find insights without slicing and dicing the data. You can create and view anomalies in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
 
-This feature is in preview, so you first need to turn on the feature switch. Go to **File** > **Options and Settings** > **Options** > **Preview features**, and make sure **Anomaly detection** is turned on:
-
-:::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="Screenshot showing how to enable Anomaly detection preview feature switch.":::
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hp]
  
 ## Get started
 This tutorial uses online sales data for various products.To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
@@ -49,8 +48,11 @@ You can also control the fields that are used for analysis. For example, by drag
 ## Limitations
 - Anomaly detection is only supported for line chart visuals containing time series data in the Axis field.
 - Anomaly detection isn't supported with legends, multiple values or secondary values in line chart visual.
-- Anomaly detection requires at least 12 data points.
+- Anomaly detection requires at least four data points.
 - Forecast/Min/Max/Average/ Median/Percentile lines doesn't work with Anomaly detection.
 - Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services aren't supported.
 - Anomaly Explanations doesn't work with 'Show Value As' options.
 - Drilling down to go to the next level in the hierarchy isn't supported.
+
+## Next steps
+To learn more about the algorithm that runs anomaly detection, see [Tony Xing's post on the SR-CNN algorithm in Azure Anomaly Detector](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798)

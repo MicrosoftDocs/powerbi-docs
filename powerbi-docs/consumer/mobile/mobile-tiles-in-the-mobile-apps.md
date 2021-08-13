@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 04/06/2021
 ---
 # Explore tiles in the Power BI mobile apps
 Applies to:
@@ -81,7 +81,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 ## Tiles in the Windows 10 mobile app
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 

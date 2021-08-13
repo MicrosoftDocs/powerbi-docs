@@ -1,33 +1,89 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: jtarquino
+author: willthom
 ms.author: v-okkyry
 ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 07/30/2021
 ---
 
 # Change log for Power BI Desktop
 
-This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
+This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
-## February 2021 QFE #1
+## July 2021 QFE 1
+
+*Version: 2.95.983.0, Released: July 29th, 2021*
+
+Bug fixes/improvements:
+- Fix for script visuals: now they can be enabled.
+- Fix for SAP BW reports: now tables are not duplicated if click refresh.
+- Fix for Enhanced-Tooltips: now tooltips stick long enough for users to interact with the drill buttons in the tooltip.
+
+## June 2021 QFE 1
+
+*Version: 2.94.921.0, Released: June 29th, 2021*
+
+Bug fixes/improvements:
+- Fix for Google Auth: Google Auth is moved to System Browser (non embedded) to allow users to log into Google Analytics and Google Big Query.
+- Fix for FinalNameCalculator that treated measure names as case sensitive: now when looking for measure name conflicts case will be ignored.
+- Fix for Q&A visual: now visual column renames are recognized as synonyms.
+ 
+## May 2021 QFE 1
+
+*Version: 2.93.981.0, Released: May 27th, 2021*
+
+Bug fixes/improvements:
+- Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
+
+## April 2021 QFE 2
+
+*Version: 2.92.1067.0, Released: May 4th, 2021*
+
+Bug fixes/improvements:
+- Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
+- Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
+- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance as this scenario isn't supported.
+
+## April 2021 QFE 1
+
+*Version: 2.92.943.0, Released: April 27, 2021*
+
+Bug fixes/improvements:
+- Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
+- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
+
+## March 2021 QFE 1
+
+*Version: 2.91.884.0, Released: March 29, 2021*
+
+Bug fixes:
+- Fix for Microsoft Information Protection SDK hanging during evaluation shutdown.
+- Amazon Redshift driver update to fix the issue with non-nullable primary key columns being treated as empty strings after merge queries.
+- Fix for slicers to contain unique (non-duplicated) values when using aggregations.
+- Fix for formula bar: prevent UI interactions when empty measures, calculated columns, calculated tables are deleted from the model.
+- Fix for PBI.FormatAnnotationStats telemetry event.
+- Fix for customized fields display folders: now the folders won't disappear after data refresh or **Choose Columns** changes in Power Query.
+- ODBC drivers update to newer versions.
+- Fix for Microsoft Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
+
+## February 2021 QFE 1
 
 *Version: 2.90.1081.0, Released: March 8, 2021*
 
-- Bug fixes
+Bug fixes: 
 - Fix for Azure Analysis Services OAuth token refresh.
 - Fix for Power Query model import from Excel to Power BI Desktop.
 - Fix for combo chart with dynamic format strings, series, categories, column values, and line values.
-- Update of PBI Desktop save validation: It doesn't overwrite the customer's previous file with an invalid .pbix file if it's caused by Analysis Services writing to the zip file.
-- Model view fix for large .pbix files. 
-- Model view fix for blurry fields and icon text inside a table card. 
-- Color picker now closes when you press ESC. 
+- Fix for Power BI Desktop save validation: now it doesn't overwrite the customer's previous file with an invalid .pbix file, if it's caused by Analysis Services writing to the zip file.
+- Fix for Model view large .pbix files: now it will not throw an error when you quickly switch to model view. 
+- Fix for Model view blurry fields and icon text inside a table card. 
+- Fix for Color picker: now it closes when you press ESC. 
 
 ## Next steps
 

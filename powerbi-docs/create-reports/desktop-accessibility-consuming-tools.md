@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2019
+ms.date: 04/12/2021
 LocalizationGroup: Create reports
 ---
 # Consume Power BI reports by using accessibility features

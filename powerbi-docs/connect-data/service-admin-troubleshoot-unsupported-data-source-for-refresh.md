@@ -7,8 +7,8 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 05/08/2020
-ms.custom: seodec18
+ms.date: 05/24/2021
+ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting unsupported data source for refresh
@@ -25,7 +25,7 @@ If you aren’t sure what data source was used, you can find that using the foll
 
 1. In Power BI Desktop, make sure you are on the **Report** pane.  
    ![Desktop report pane](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
-2. Select **Edit Queries** from the ribbon bar.  
+2. Select **Transform data** from the ribbon bar.  
    ![Edit queries](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
 3. Select **Advanced Editor**.  
    ![Advance editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)

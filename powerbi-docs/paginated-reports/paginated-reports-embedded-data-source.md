@@ -7,30 +7,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 03/02/2020
+ms.date: 05/24/2021
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources, and can connect to these data sources:
 
+- Power BI Datasets
 - Azure Analysis Services
-- Azure SQL Database and 
-- Azure SQL Data Warehouse
+- Azure SQL Database and Azure SQL Managed Instance
+- Azure Synapse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
 - Teradata 
+- Dataverse
 
 For the following data sources, use the [SQL Server Analysis Services connection](../admin/service-premium-connect-tools.md) option:
 
-- Power BI Premium datasets
+- Power BI Premium datasets via the XMLA endpoint
 
 Paginated reports connect to on-premises data sources by way of a [Power BI gateway](../connect-data/service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
 
 See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
+
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Create an embedded data source
   
@@ -64,7 +71,7 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
 
 ## Limitations and Considerations
 
-Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure  row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
+Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
 
 ### Classic apps and workspaces
 

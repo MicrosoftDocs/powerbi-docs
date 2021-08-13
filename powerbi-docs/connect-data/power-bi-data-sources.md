@@ -7,12 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ---
 
 # Power BI data sources
 
 The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
+
+> [!NOTE]
+> Because this table is so long, we've split it up alphabetically in order to retain the headers.
+
+## Data sources A-B
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
@@ -39,8 +44,14 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
-| Microsoft Dataverse | Yes | Yes | Yes | No | No | Yes |
+
+
+## Data sources C-D
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
+| Data Virtuality LDW | Yes | Yes | Yes | Yes | Yes | No |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
+| Microsoft Dataverse | Yes | Yes | Yes | No | No | Yes |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
 | Dremio | Yes | Yes | Yes | Yes | Yes | No |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
@@ -48,6 +59,12 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Customer Insights | Yes | Yes | No | No | No | No |
 | Dynamics NAV | Yes | Yes | No | No | No | No |
+
+
+
+## Data sources E-G
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | Emigo Data Source | Yes | Yes | No | No | No | No |
 | Entersoft Business Suite | Yes | Yes | No | No | No | No |
 | Essbase | Yes | Yes | Yes | Yes | Yes | No |
@@ -59,6 +76,12 @@ The following table shows the data sources that Power BI supports for datasets, 
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
+
+
+
+## Data sources H-K
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
@@ -74,21 +97,30 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Jethro ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | JSON | Yes | Yes | No | Yes** | No <sup>3</sup> | Yes |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | No |
+
+## Data sources M-O
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | MailChimp | Yes | Yes | No | No | No | No |
 | MariaDB | Yes | Yes | Yes | No | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
 | Microsoft Exchange | Yes | Yes | No | Yes | No | No |
-| Microsoft Exchange Online individual accounts | Yes | Yes | No | No | No | Yes |
+| Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | No |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
-| OData | Yes | Yes <sup>6</sup> | No | Yes | No | Yes |
+| OData | Yes | Yes | No | Yes | No | Yes |
 | ODBC | Yes | Yes | No | Yes | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes | No |
 | Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
-| Paxata <sup>7</sup> | Yes | Yes | No | Yes | No | No |
+
+
+## Data sources P-R
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
+| Paxata <sup>6</sup> | Yes | Yes | No | Yes | No | No |
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
@@ -103,6 +135,11 @@ The following table shows the data sources that Power BI supports for datasets, 
 | QuickBooks Online | Yes | Yes | No | No | No | No |
 | R script | Yes | Yes <sup>4</sup> | No | Yes <sup>4</sup> | No | No |
 | Roamler | Yes | Yes | No | Yes | No | No |
+
+
+## Data sources S
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | Salesforce Objects | Yes | Yes | No | No | No | Yes |
 | Salesforce Reports | Yes | Yes | No | No | No | Yes |
 | SAP Business Warehouse Message Server | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -121,6 +158,10 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SurveyMonkey | Yes | Yes | No | Yes | No | No |
 | SweetIQ | Yes | Yes | No | No | No | No |
 | Sybase | Yes | Yes | No | Yes | Yes | Yes |
+
+## Data sources T-Z
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | TeamDesk | Yes | Yes | No | Yes | No | No |
 | TenForce | Yes | Yes | No | No | No | No |
 | Teradata | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -144,15 +185,15 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>5</sup> Required for .html, .xls, and Access Databases
 
-<sup>6</sup> Power BI service doesn't support OData feeds that require authentication.
+<sup>6</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
-<sup>7</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
-
+<sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
 
 ## Considerations and limitations
 
 - Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
 - Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+- Power BI Desktop and the Power BI service may send multiple queries for any given query, to get schema information or the data itself, based in part on whether data is cached. This behavior is by design. 
 
 ## Single sign-on (SSO) for DirectQuery sources
 

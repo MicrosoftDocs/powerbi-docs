@@ -84,7 +84,7 @@ Depending on the type of export, you need to pass different attributes to the [E
     To export the current state of the report, use the `state` property. For example, you can use the bookmark's `bookmarksManager.capture` method to capture the changes a specific user made to a report, and then export it in its current state using `capturedBookmark.state`.
 
 >[!NOTE]
->[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+>[Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
 ### Filters
 
@@ -133,7 +133,7 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). 
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). 
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
 |-----------|------------|-----------|
@@ -152,7 +152,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals

@@ -1,6 +1,6 @@
 ---
-title: Create Power BI Embedded capacity in the Azure portal for your Power BI embedded analytics embedded BI solution
-description: This article walks through creating a Power BI Embedded capacity in Microsoft Azure, for your Power BI embedded analytics embedded BI solution.
+title: Create Power BI Embedded capacity in the Azure portal
+description: This article walks through creating a Power BI Embedded capacity in Microsoft Azure.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -14,7 +14,7 @@ ms.date: 01/14/2021
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks through how to create a [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
 ## Before you begin
 
@@ -103,7 +103,7 @@ Power BI embedded capacity commands require version 2.3.1 or later of the Azure 
 
 1. Sign in.
 
-   Sign in using the [az login](/cli/azure/reference-index#az-login) command if you're using a local install of the CLI.
+   Sign in using the [az login](/cli/azure/reference-index#az_login) command if you're using a local install of the CLI.
 
     ```azurecli
     az login
@@ -123,7 +123,7 @@ Power BI embedded capacity commands require version 2.3.1 or later of the Azure 
 
 ### Create a capacity with Azure CLI
 
-Use the [az Power BI embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-create) command to create a capacity.
+Use the [az Power BI embedded-capacity create](/cli/azure/powerbi/embedded-capacity#az_powerbi_embedded_capacity_create) command to create a capacity.
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -135,7 +135,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### Delete a capacity with Azure CLI
 
-To delete a capacity using Azure CLI, use the [Azure Power BI embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) command.
+To delete a capacity using Azure CLI, use the [Azure Power BI embedded-capacity delete](/cli/azure/powerbi/embedded-capacity#az_powerbi_embedded_capacity_delete) command.
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -144,7 +144,7 @@ az powerbi embedded-capacity delete --name
 
 ### Manage your capacity with Azure CLI
 
-You can view all the Power BI Embedded Azure CLI commands, in [Azure Power BI](/cli/azure/ext/powerbidedicated/powerbi).
+You can view all the Power BI Embedded Azure CLI commands, in [Azure Power BI](/cli/azure/powerbi).
 
 # [ARM template](#tab/ARM-template)
 
@@ -156,7 +156,7 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 ### Review the template
 
-The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
+The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/power-bi-embedded/).
 
 Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 

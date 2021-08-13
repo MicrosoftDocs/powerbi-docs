@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/17/2019
+ms.custom: video-lJKgWnvl6bQ
+ms.date: 04/12/2021
 ---
 # Create a Power BI dashboard from a report
 You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.  
@@ -59,12 +60,12 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
 > Did you know? You can narrow the nav pane by selecting the icon with three lines at the top ![nav pane show or hide icon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). That gives you more room for the report itself.
 
 ### Open the report and pin tiles to your dashboard
-1. In the same workspace, select the **Reports** tab, and then select **Procurement Analysis Sample** to open the report.
+1. In the same workspace, select the **Procurement Analysis Sample** report to open it.
 
     ![Reports tab](media/service-dashboard-create/power-bi-reports.png)
     The report opens in Reading view. Notice it has two tabs on the left: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
 
-2. Select **More options (...)** > **Edit report** to open the report in Editing view.
+2. Select **More options (...)** > **Edit** to open the report in Editing view.
 
     ![Report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hover over a visualization to reveal the options available. To add a visualization to a dashboard, select the pin icon ![Pin icon](media/service-dashboard-create/power-bi-pin-icon.png).
@@ -91,7 +92,7 @@ Instead of pinning one visual at a time, you can [pin an entire report page as a
 
    ![Report tab](media/service-dashboard-create/power-bi-page-tab.png)
 
-2. We want all of the visuals in the report on your dashboard. In the upper-right corner of the menubar, select **Pin live page**. On a dashboard, live page tiles update each time the page is refreshed.
+2. You want all of the visuals in the report on your dashboard. In the upper-right corner of the menubar, select **Pin to a dashboard**. On a dashboard, live page tiles update each time the page is refreshed.
 
    ![Upper right of report editor](media/service-dashboard-create/power-bi-pin-live.png)
 

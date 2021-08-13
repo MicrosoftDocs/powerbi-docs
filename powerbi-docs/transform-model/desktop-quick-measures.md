@@ -4,7 +4,7 @@ description: Quick measures provide ready-made DAX formulas that make quick work
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to

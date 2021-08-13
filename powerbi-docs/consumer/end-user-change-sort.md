@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 06/30/2021
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -21,6 +21,8 @@ LocalizationGroup: Reports
 > **This article is intended for Power BI users who do not have edit permissions to the report or dataset and who only work in the online version of Power BI (the Power BI service). If you are a report *designer* or *administrator* or *owner*, this article may not have all the information you need. Instead, please read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md)**.
 
 In the Power BI service, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey. Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visuals as desired. Power BI provides lots of flexibility for sorting, and quick menus for you to use. 
+
+And after you've changed the sorting of a visual, you can save a personalized version of that visual. With the [**Personalize this visual**](end-user-personalize-visuals.md) feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
 
 Visuals on a dashboard cannot be sorted. But in a Power BI report, you can sort most visuals by one, and sometimes two, fields at a time. For certain types of visuals, sorting is not available at all: tree maps, gauges, maps, etc. 
 
@@ -69,6 +71,11 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 If however, the **Reset to default** button is greyed out, that means the report *designer* has disabled the ability to save (persist) your changes.
 
 <a name="other"></a>
+
+Another way to save your changes is with bookmarks. If the report *designer* enabled the **Personalize visual** feature for this report, you'll be able to change the sort order for a visual (and a lot more) and save it as a bookmark. If you see this icon  ![Screenshot of the personalize visual icon.](media/end-user-change-sort/power-bi-personalize-visual-icon.png) in the visual's header, then personalize visuals is enabled. 
+
+To learn more, see [Personalize visuals in a report](end-user-personalize-visuals.md)
+
 ## Considerations and troubleshooting
 
 ### Sorting using other criteria
@@ -76,11 +83,11 @@ Sometimes, you want to sort your visual using a different field (that isn't incl
 to sort by month in sequential order (and not in alphabetical order) or you might
 want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
 
-Only the person who designed the report can make these changes for you. Contact information for the *designer* can be found by selecting the report name from the header bar.
+- To learn how to sort by another field in the dataset, and you have edit permissions to the report, see [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md).    
+- If you are the report designer, you can create new columns in the dataset to address sorting issues with values such as dates and numbers. Contact information for the *designer* can be found by selecting the report name from the header bar.
 
 ![Dropdown showing contact information](media/end-user-change-sort/power-bi-heading.png)
 
-If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).

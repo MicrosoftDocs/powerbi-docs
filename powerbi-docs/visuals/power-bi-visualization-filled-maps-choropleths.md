@@ -13,9 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use filled maps (choropleth maps) in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
@@ -60,33 +58,33 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
    ![yellow check mark next to State](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes, or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
 
-   ![templates with the icon for filled map highlighted](media/power-bi-visualization-filled-maps-choropleths/img003.png)
+   ![templates with the icon for filled map highlighted](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-icon.png)
 3. Filter the map to display only the continental United States.
 
    a.  To the left of the Visualizations pane, look for the **Filters** pane. Expand it if it is minimized
 
    b.  Hover over **State** and select the expand chevron  
-   ![Visual level filters showing State(All)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
+   ![Visual level filters showing State(All)](media/power-bi-visualization-filled-maps-choropleths/power-bi-state-hover.png)
 
-   c.  Place a check mark next to **All** and remove the check mark next to **AK**.
+   c.  Place a check mark next to **Select all** and remove the check mark next to **AK**.
 
-   ![State dropdown with All and AK not selected](media/power-bi-visualization-filled-maps-choropleths/img005.png)
+   ![State dropdown with All and AK not selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-continental.png)
 4. Select the paint roller icon to open the Formatting pane, and choose **Data colors**.
 
-    ![Formatting pane showing Data colors option](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
+    ![Formatting pane showing Data colors option](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors.png)
 
-5. Select the three vertical dots and choose **Conditional formatting**.
+5. Under the heading **Default color**, select **fx**.
 
-    ![Data colors conditional formatting button](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
+    ![Data colors conditional formatting button](media/power-bi-visualization-filled-maps-choropleths/power-bi-fx.png)
 
 6. Use the **Default color - Data colors** screen to determine how your filled map will be shaded. The options available to you include which field to base the shading, and how to apply the shading. In this example we're using the field **SalesFact** > **Sentiment**, and setting the lowest value for sentiment as orange and the highest value as blue. Values that fall between the maximum and minimum will be shades of orange and blue. The illustration at the bottom of the screen shows the range of colors that will be used. 
 
-    ![Default color pane with Sentiment selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
+    ![Default color pane with Sentiment selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
 
-7. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
-   ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
+7. The filled map is shaded in orange and blue, with orange representing the lower sentiment numbers and blue representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
+   ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho.png)
 
-10. [Save the report](../create-reports/service-report-save.md).
+8. Save the report.
 
 Power BI gives you plenty of control over the appearance of your filled map. Play around with these data color controls until you get the look you want. 
 

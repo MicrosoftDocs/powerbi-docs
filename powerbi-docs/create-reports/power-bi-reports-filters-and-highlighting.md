@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/12/2021
+ms.date: 08/02/2021
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
@@ -37,11 +37,11 @@ There are four standard types of filters that you create in the Filters pane.
 - **Visual filter** applies to a single visual on a report page. You see visual level filters when you select a visual on the report canvas. Even if you can't edit a report, you can select a visual and filter it.
 - **Page filter** applies to all the visuals on the report page.
 - **Report filter** applies to all pages in the report.
-- **Drill-through filter** With drill through in the Power BI service and Power BI Desktop, you create a *destination* report page that focuses on a specific entity, such as a supplier. From the other report pages, users can right-click a data point for that entity and drill through to the focused page.
+- **Drillthrough filter** With drillthrough in the Power BI service and Power BI Desktop, you create a *destination* report page that focuses on a specific entity, such as a supplier. From the other report pages, users can right-click a data point for that entity and drill through to the focused page.
 
 To create the first three, the visual, page, and report filters, see [Add a filter to a report in Power BI](power-bi-report-add-filter.md). 
 
-To create drill-through filters, see [Set up drill through in Power BI reports](desktop-drillthrough.md).
+To create drillthrough filters, see [Set up drillthrough in Power BI reports](desktop-drillthrough.md).
 
 ### Basic and advanced filtering
 
@@ -76,7 +76,7 @@ Each visual has filters for all the fields in the visual. When you create a repo
 
 In Reading view, you explore the data by modifying the existing filters. You're only filtering your view of the report. When you exit the report, the changes you make are saved with your view of the report, even if you open the report in a mobile app. To undo your filtering and return to the defaults set by the report author, select **Reset to default** from the top menu bar.
 
-:::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
+:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 
 Learn more about Reading view: [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md).
 
@@ -85,7 +85,7 @@ When you open a report in Power BI Desktop, you see that **Filters** is just one
 
 ![Filters pane in Editing view](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
-We see this page of the report has three page-level filters and one report-level filter. By selecting the column chart, we see it also has three visual-level filters.
+We see this page of the report has four page-level filters. By selecting the column chart, we see it also has three visual-level filters.
 
 #### Work with filters in Editing view
 
@@ -104,7 +104,7 @@ You can explore the relationships between the visuals in your report without usi
 
 To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) section of "How visuals cross-filter each other in a Power BI report."
 
-![Animation showing cross-filtering and cross-highlighting.](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+:::image type="content" source="media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif" alt-text="Animation showing cross-filtering and cross-highlighting.":::
 
 ## Next steps
 

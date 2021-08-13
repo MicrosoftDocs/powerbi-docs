@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
 ---
@@ -60,7 +60,7 @@ The essential activities related to development of a Power BI report or dashboar
 - Decide on using a Live Connection to an existing data model, or creating a new data model
 - When creating a new data model, decide on the [data storage mode](../transform-model/desktop-storage-mode.md) for model tables (Import, DirectQuery, or Composite).
 - Decide on the best data visualization tool to meet requirements: Power BI Desktop, Paginated Report Builder, or Excel.
-- Decide on the [best visuals](../consumer/end-user-visual-type.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
+- Decide on the [best visuals](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
 - Ensure all visuals present clear, concise, and business-friendly terminology.
 - Address interactivity requirements.
 - When using Live Connection, add [report-level measures](../transform-model/desktop-tutorial-create-measures.md).
@@ -95,7 +95,7 @@ In an Import dataset, data permissions are applied by defining [row-level securi
 
 The main ways to grant access to Power BI content are:
 
-- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) (for content editors and viewers).
+- [Workspace roles](../collaborate-share/service-roles-new-workspaces.md) (for content editors and viewers).
 - [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) applied to a packaged set of workspace content (for viewers).
 - [Sharing](../collaborate-share/service-share-dashboards.md) an individual report or dashboard (for viewers).
 
@@ -104,7 +104,7 @@ The main ways to grant access to Power BI content are:
 
 ### Validate functionality
 
-It's the time to double-check dataset details like field names, formatting, sorting, and default summarization behavior. Interactive report features, such as [slicers](../visuals/power-bi-visualization-slicers.md), [drill down](../consumer/end-user-drill.md), [drillthrough](../create-reports/desktop-drillthrough.md), [expressions](../create-reports/desktop-conditional-format-visual-titles.md), [buttons](../create-reports/desktop-buttons.md), or [bookmarks](../create-reports/desktop-bookmarks.md), should all be verified, too.
+It's the time to double-check dataset details like field names, formatting, sorting, and default summarization behavior. Interactive report features, such as [slicers](../visuals/power-bi-visualization-slicers.md), [drill-down actions](../consumer/end-user-drill.md), [drillthrough actions](../create-reports/desktop-drillthrough.md), [expressions](../create-reports/desktop-conditional-format-visual-titles.md), [buttons](../create-reports/desktop-buttons.md), or [bookmarks](../create-reports/desktop-bookmarks.md), should all be verified, too.
 
 During the development process, the Power BI solution should be published to a development workspace in the Power BI service on a regular basis. Verify all functionality works as expected in the service, such as the rendering of custom visuals. It's also a good time to do further testing. Test [scheduled refresh](../connect-data/refresh-scheduled-refresh.md), [Q&A](../consumer/end-user-q-and-a.md), and how reports and dashboards look on a [mobile device](../consumer/mobile/mobile-apps-for-mobile-devices.md).
 

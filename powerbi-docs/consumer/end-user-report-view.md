@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/27/2020
+ms.date: 06/12/2021
 LocalizationGroup: Reports
 ---
 
@@ -67,7 +67,7 @@ Sometimes it's difficult to see the details in a visual. You can make that visua
 ![Screenshot of a visual open in focus mode.](media/end-user-report-view/power-bi-focus.png)
 
 ### A visual in *Full screen* mode
-![Screenshot of a visual open in full screen mode.](media/end-user-report-view/power-bi-full-screen.png)
+![Screenshot of a visual open in full screen mode.](media/end-user-report-view/power-bi-visual-full-screen.png)
 
 ## Next steps
 

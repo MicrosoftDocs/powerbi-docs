@@ -86,8 +86,6 @@
         href: report-tips-legends.md
       - name: "Tips to optimize visual colors"
         href: report-tips-visual-colors.md
-      - name: "Tips to optimize visual colors"
-        href: report-tips-visual-colors.md
       - name: "Tips to sort and distribute data plots"
         href: report-tips-sort-distribute-data-plots.md
       - name: "Tips to work with shapes, images, and icons"
@@ -138,6 +136,34 @@
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md
+  - name: Adoption roadmap
+    items: 
+      - name: "Overview"
+        href: powerbi-adoption-roadmap-overview.md
+      - name: "Maturity levels"
+        href: powerbi-adoption-roadmap-maturity-levels.md
+      - name: "Data culture"
+        href: powerbi-adoption-roadmap-data-culture.md
+      - name: "Executive sponsorship"
+        href: powerbi-adoption-roadmap-executive-sponsorship.md
+      - name: "Content ownership"
+        href: powerbi-adoption-roadmap-content-ownership-and-management.md
+      - name: "Content delivery scope"
+        href: powerbi-adoption-roadmap-content-delivery-scope.md
+      - name: "Center of Excellence"
+        href: powerbi-adoption-roadmap-center-of-excellence.md
+      - name: "Governance"
+        href: powerbi-adoption-roadmap-governance.md
+      - name: "Mentoring and user enablement"
+        href: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+      - name: "Community of practice"
+        href: powerbi-adoption-roadmap-community-of-practice.md
+      - name: "User support"
+        href: powerbi-adoption-roadmap-user-support.md
+      - name: "System oversight"
+        href: powerbi-adoption-roadmap-system-oversight.md
+      - name: "Conclusion"
+        href: powerbi-adoption-roadmap-conclusion.md
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

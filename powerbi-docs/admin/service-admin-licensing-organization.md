@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 05/25/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -44,17 +44,20 @@ Individual users can get their own Power BI license by signing up with their wor
 
 If you don't want users in your organization to use self-service sign-up, see [Enable or disable self-service sign-up](service-admin-disable-self-service.md) to learn how to turn it off.
 
-Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Power BI (free) licenses for your organization and assign them to all users. Follow these steps to auto-assign a Power BI (free) license to all existing users:
+Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Power BI (free) licenses for your organization and assign them to all users. Follow these steps to assign a Power BI (free) license to all existing users:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), using global admin or billing admin credentials.
 1. From the left sidebar menu, select **Billing** > **Purchase services**.
-1. Search or scroll to locate the Power BI (free) offer. Select the offer, then select **Get now**.
-1. Enter the number of licenses needed to cover all your users.
-1. Select **Automatically assign to all of your users with no licenses**, then check out.
+1. Search or scroll to locate the Power BI (free) offer. Select the **Details** button below the offer.
+1. Enter the number of licenses needed to cover all your users, and then select **Buy**.
 
-  ![Screenshot of the Power B I free auto-assigned subscription, showing the self-service sign-up.](media/service-admin-licensing-organization/m365-auto-assign.png)
+    :::image type="content" source="media/service-admin-licensing-organization/m365-assign-2021.png" alt-text="Screenshot of the Power B I free subscription, showing the self-service sign-up.":::
 
-If you want to see which users in your organization may already have a license, see [View and manage user licenses](service-admin-manage-licenses.md) to learn how.
+1. Complete the information on the **Checkout** page, and then select **Place order**.
+1. Select **Licenses** from the left sidebar, and then select **Power BI (free)** from the subscriptions.
+1. Select **Assign licenses** and assign the licenses to your users.
+
+If you want to see which users in your organization might already have a license, see [View and manage user licenses](service-admin-manage-licenses.md) to learn how.
 
 ## License types and capabilities
 
@@ -87,7 +90,7 @@ The two types of subscriptions aren't mutually exclusive. You can have both Powe
 >[!NOTE]
 >Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
->* Per-user licensing. See the [Premium Per User FAQ](service-premium-per-user-faq.md) for more information.
+>* Per-user licensing. See the [Premium Per User article](service-premium-per-user-faq.yml) for more information.
 >* Greater scale
 >* Improved metrics
 >* Autoscaling

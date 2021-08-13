@@ -73,16 +73,16 @@ Some actions are only possible in focus mode, due to screen size constraints:
 ## Drill down in a visual
 If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../end-user-drill.md) either in the Power BI service or in Power BI Desktop.
 
-There are few types of drill-down:
+There are few ways to drill down:
 
 ### Drill down on a value
 1. Long tap (tap and hold) on a data point in a visual.
-2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill down and up arrow.
-3. Tap on the down arrow for drill-down
+2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill-down and up arrow.
+3. Tap on the down arrow to drill down
 
     ![Tap drill down](media/mobile-apps-view-phone-report/report-drill-down.png)
     
-4. Tap on the up arrow for drill-up.
+4. Tap on the up arrow to drill up.
 
 ### Drill to next level
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
@@ -108,14 +108,14 @@ There are few types of drill-down:
     ![Revert](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## Drill through from a value
-Drill through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
-Report authors can [define drill through](../../create-reports/desktop-drillthrough.md) when they create the report.
+Drilling through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
+Report authors can [define drillthrough](../../create-reports/desktop-drillthrough.md) when they create the report.
 
 1. Long tap (tap and hold) on a data point in a visual.
-2. Tooltip will show up, and if drill through is defined, then the tooltip footer will show drill through arrow.
-3. Tap on the arrow for drill through
+2. Tooltip will show up, and if drillthrough is defined, then the tooltip footer will show the drillthrough arrow.
+3. Tap on the arrow to drill through
 
-    ![Tap drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tap the arrow to drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Choose which report page to drill through
 

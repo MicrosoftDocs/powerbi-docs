@@ -46,7 +46,7 @@ However, while there are compelling advantages associated with Import models, th
 - A full refresh will remove all data from all tables and reload it from the data source. This operation can be expensive in terms of time and resources for the Power BI service, and the data source(s).
 
     > [!NOTE]
-    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see the [Incremental refresh in Power BI Premium](../admin/service-premium-incremental-refresh.md) article.
+    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 From a Power BI service resource perspective, Import models require:
 

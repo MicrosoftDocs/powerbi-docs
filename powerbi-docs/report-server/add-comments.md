@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 11/15/2018
+ms.date: 04/08/2021
 ---
 
 # Add comments to a report in a report server - Power BI Report Server
@@ -33,14 +33,14 @@ You can add comments to reports, including Power BI reports, within the web port
 
 ## Permissions
 
-Depending on your permissions, you can:
+Your ability to see, edit, delete, and manage comments depends on the tasks included in your role assignment. 
 
-* Not see comments.
-* See all comments, and post, edit, and delete your own.
-* See all comments; post, edit, and delete your own; and delete other people’s.
+* To see all comments, and post, edit, and delete your own, your role assignment must include the "Comment on reports" task. 
+* To see all comments; post, edit, and delete your own; and delete other people’s, your role assignment must include the "Manage comments" task. 
+
+For more details on permissions related to comments, see [Tasks and Permissions - Item-Level Tasks](/sql/reporting-services/security/tasks-and-permissions-item-level-tasks) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

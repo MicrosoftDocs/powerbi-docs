@@ -50,9 +50,25 @@
     - name: "Use Machine Learning and Cognitive Services with dataflows"
       href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
-      href: ./dataflows/dataflows-best-practices.md                  
+      href: ./dataflows/dataflows-best-practices.md  
+    - name: "Understanding and optimizing dataflow refresh"
+      href: ./dataflows/dataflows-understand-optimize-refresh.md  
+    - name: "Using DirectQuery with dataflows"
+      href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows limitations and considerations"
-      href: dataflows/dataflows-features-limitations.md            
+      href: dataflows/dataflows-features-limitations.md
+    - name: "Streaming dataflows (preview)"
+      href: dataflows/dataflows-streaming.md
+    - name: "Developing dataflows solutions"
+      href: dataflows/dataflows-develop-solutions.md      
+  - name: Log analytics
+    items: 
+    - name: "Using Azure Log Analytics in Power BI (Preview)"
+      href: log-analytics/desktop-log-analytics-overview.md
+    - name: "Configuring Azure Log Analytics in Power BI (Preview)"
+      href: log-analytics/desktop-log-analytics-configure.md
+    - name: "Azure Log Analytics in Power BI - FAQ (Preview)"
+      href: log-analytics/desktop-log-analytics-faq.md             
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -95,9 +111,15 @@
         href: desktop-import-and-display-kpis.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
+  - name: External tools
+    items:
+    - name: External tools in Power BI Desktop
+      href: desktop-external-tools.md
+    - name: Register an external tool
+      href: desktop-external-tools-register.md
   - name: Reference
     items: 
-    - name: "Use the Field list in Power BI Desktop (preview)"
+    - name: "Use the Field list in Power BI Desktop"
       href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md

@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2020
+ms.date: 07/29/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
@@ -32,23 +32,22 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
     ![tile ellipses](./media/end-user-tiles/power-bi-ellipsis.png)
 2. Select the ellipses to open the tile action menu. The options available vary by your permissions, the visual type, and the method used to create the tile. For example, the menu items available for tiles pinned from Q&A are different than the tiles pinned from a report. Here is an action menu for a tile created using Q&A.
 
-
-   
     ![Screenshot shows menu with nine options.](./media/end-user-tiles/power-bi-qna-menu.png)
 
-   
     Some of the actions available from these menus are:
-   
-   * [Open the report that was used to create the tile ](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
-   
-   * [Open the Q&A question that was used to create the tile ](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
-   
 
-   * [Open the workbook that was used to create the tile ](end-user-reports.md) ![worksheet icon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-   * [View the tile in focus mode ](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
-   * [View insights ](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
+   * [Open the report that was used to create the tile](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
+
+   * [Open the Q&A question that was used to create the tile](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
+
+   * [View the tile in focus mode](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
+
+   * [View insights](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
+
    * [Add a comment and start a discussion](end-user-comment.md)  ![comment icon](./media/end-user-tiles/comment-icons.png)
+
    * [Manage alerts set on a dashboard tile](end-user-alerts.md)  ![alert icon](./media/end-user-tiles/power-bi-alert-icon.png)
+
    * [Open the data in Excel](end-user-export.md)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
 
 

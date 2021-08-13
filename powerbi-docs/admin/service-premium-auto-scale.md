@@ -27,6 +27,9 @@ To enable Autoscale, the following steps need to be completed:
 
 The following sections describe the steps in detail.
 
+>[!NOTE]
+>[Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
+
 ## Configure an Azure subscription to use with Autoscale
 
 To select and configure an Azure subscription to work with Autoscale, you need to have *contributor* rights for the selected Azure subscription. Any user with *Account admin* rights for the Azure subscription can add a user as a *contributor*. In addition, you must be an admin for the Power BI tenant to enable Autoscale.
@@ -93,6 +96,6 @@ And that's it - your Power BI Premium Gen2 subscription is now configured to use
 ## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
+* [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

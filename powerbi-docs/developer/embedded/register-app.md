@@ -1,13 +1,13 @@
 ---
-title: Register an app to embed Power BI content in a Power BI embedded analytics application for better embedded BI insights
-description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content. Enable better embedded BI insights using Power BI embedded analytics.
+title: Register an app to embed Power BI content in a Power BI embedded analytics application
+description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/02/2019
+ms.date: 07/15/2021
 ---
 
 # Register an Azure AD application to use with Power BI
@@ -289,6 +289,7 @@ var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Get an Azure AD access token for your Power BI application](get-azuread-access-token.md)
+>[Considerations when generating an embed token](generate-embed-token.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)

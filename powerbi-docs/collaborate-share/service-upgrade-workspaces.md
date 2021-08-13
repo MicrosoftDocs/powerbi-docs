@@ -7,37 +7,36 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/24/2021
+ms.date: 08/04/2021
 LocalizationGroup: Share your work
 ---
 
 # Upgrade classic workspaces to the new workspaces in Power BI
 
-This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Microsoft 365 group. Learn about the [new workspace experience](service-new-workspaces.md).
+This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. If you're a workspace admin or a Power BI admin, you can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Microsoft 365 group. Learn about the [new workspace experience](service-new-workspaces.md).
 
 >[!NOTE]
->Workspace upgrade is available as a Public Preview. 
-
->[!NOTE]
->Workspace upgrade can be initiated by a Power BI admin. Workspace admins receive an email when their workspace was upgraded by their Power BI admin. [Learn more](../admin/service-admin-portal.md#workspaces) 
+>When a Power BI admin upgrades a workspace, the workspace admin receives an email that their workspace was upgraded. Learn more about [how Power BI admins upgrade workspaces](../admin/service-admin-portal.md#workspaces). 
 
 
 ![Success upgrading](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
-However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
-
 ## Things to plan before upgrading
+
+There may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience.
 
 You should do several things *after* you upgrade. It's best to plan them *before* you upgrade:
 - Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade).
 - Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire.
 - If you've not already, learn about the [new workspace experience](service-new-workspaces.md).
 
+See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section later in this article for more information.
+
 ## Upgrade a classic workspace
 
-Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Microsoft 365 group. To upgrade a workspace, follow these steps.
+Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Microsoft 365 group. If you're the workspace admin, use the following steps to upgrade a workspace. If you're the Power BI admin, see [how to upgrade workspaces in the admin portal](../admin/service-admin-portal.md#workspaces). 
 
-1. In the workspace content list, select **More options** (**...**) > **Edit this workspace**.
+1. In the workspace content list, select **Upgrade now** in the banner. If you don't see the banner, select **More options** (**...**) > **Edit this workspace**.
 
     ![Edit this workspace](media/service-upgrade-workspaces/power-bi-content-list-edit-workspace.png)
 
@@ -51,7 +50,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
-1. After upgrade finishes, you see the **Success** dialog box. You see your new workspace experience, with the same name and contents. We recommend reading [Organize work in the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
+1. After upgrade finishes, you see the **Success** dialog box. You see your new workspace experience, with the same name and contents. We recommend reading about [the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
 
 ### Impact on other workspace users
 
@@ -67,7 +66,7 @@ Users who are actively using the workspace are asked to refresh their browser. U
 - The Microsoft 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Microsoft 365 aren't changed. They remain intact after you upgrade your Power BI workspace. The Microsoft 365 group continues to exist as before.
 - There are changes to how your workspace is secured after the upgrade. See the [workspace permissions after upgrade](#permissions-after-upgrade) section for details.
 - An option to **go back to a classic workspace** is provided in case you need it. However, it doesn't fully restore some aspects of your workspace before it was upgraded. If you start using features that work only in the new workspace experience, you won't be able to go back. The go back option is available for 30 days after you upgrade.
-- Power BI admins can initate a workspace upgrade. Workspace admins will receive an email when their workspace was upgraded by the Power BI admin.
+- Power BI admins can initiate a workspace upgrade. Workspace admins will receive an email when their workspace was upgraded by the Power BI admin.
 
 ## Permissions after upgrade
 
@@ -96,13 +95,13 @@ We recommend evaluating whether to use the new Contributor role. After upgrade, 
 
 After upgrade, you may consider creating a security or Microsoft 365 group or distribution list for workspace admins, instead of managing access through role assignments to individual users.
 
-Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+Read more about [roles in the new workspaces](service-roles-new-workspaces.md).
 
 ## Licensing after upgrade
 
-Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro license to access the workspace.
+Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro or Premium Per User (PPU) license to access the workspace.
 
-If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro license to access the workspace.
+If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro or Premium Per User (PPU) license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro or Premium Per User (PPU) license to access the workspace.
 
 ## Other new workspace features
 
@@ -147,7 +146,7 @@ As part of the upgrade experience, you have the option to go back to a classic w
 
 To go back, you need to be an Owner of the Microsoft 365 group the workspace was associated with before it was upgraded. Follow these steps.
 
-1. In the workspace content list, select **More options** (**…**)  > **Workspace settings**.
+1. Select **Settings** in the menu bar at the top of the workspace content list to access workspace settings.
 
     ![Screenshot showing selecting More options (…) > Workspace settings.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
@@ -193,9 +192,9 @@ When you switch back to a classic workspace, you aren't restoring an exact copy 
 
 ## Manage migration to the new workspaces for your tenant 
 
-Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. [Learn more](../admin/service-admin-portal.md#workspaces) 
+Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade or use **Upgrade all** to queue upgrade of all workspaces. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. Learn more about [Power BI admins upgrading workspaces](../admin/service-admin-portal.md#upgrade-workspaces).
 
-We recommend that organizations wanting to manage such a process, take the following steps to ensure clear communiation with impacted workspace admins.
+For organizations wanting to manage such a process, we recommend taking the following steps to ensure clear communication with impacted workspace admins.
 
 1. The workspaces list in the Power BI admin portal and the corresponding API provides a list of all workspaces in Power BI. Classic workspaces are shown as type Group in the list.
 2. Work with individual group owners or your admin in Microsoft 365, to inform them of your plans to upgrade their classic workspaces.

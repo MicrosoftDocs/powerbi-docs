@@ -1,6 +1,6 @@
 ---
-title: Build a funnel plot from R script to R visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to build a funnel plot from R script to R Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Build a funnel plot from R script to R visual
+description: This article describes how to build a funnel plot from R script to R Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

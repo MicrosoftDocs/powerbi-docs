@@ -4,11 +4,11 @@ description: Learn how to manage data storage in your individual or workspace to
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/22/2021
+ms.date: 04/02/2021
 LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces
@@ -23,7 +23,7 @@ Workspace storage limits, whether for My Workspace or an app workspace, depend o
 For workspaces in shared capacity: 
 
 - There is a per-workspace storage limit of 10 GB.
-- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
+- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro or Premium Per User (PPU) licenses in the tenant.
 
 ### Premium capacity limits
 For workspaces in Premium capacity:
@@ -52,7 +52,7 @@ See how much data storage you’re using in your Power BI account, and manage yo
 
 1. To manage your own storage, go to **My Workspace** on the navigation pane.
    
-    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-myworkspace.png)
 
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage personal storage**.
    
@@ -72,7 +72,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 ## Manage your workspace
 1. Select the arrow next to **Workspaces** select the name of the workspace.
    
-    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-group-workspaces.png)
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
