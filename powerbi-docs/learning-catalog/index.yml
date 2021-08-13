@@ -27,11 +27,11 @@ landingContent:
             url: learning-catalog-bdm.md#
 
   # Card (optional)
-  - title: Consumers
+  - title: Business users
     linkLists:
       - linkListType: overview
         links:
-          - text: Consumers Learning Catalog
+          - text: Business users Learning Catalog
             url: learning-catalog-consumer.md#
 
   # Card
