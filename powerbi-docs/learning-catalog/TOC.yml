@@ -36,6 +36,6 @@
     expanded: true
     items:
     - name: "Webinars"
-      href: fundamentals/webinars.md 
+      href: /fundamentals/webinars.md 
     - name: "Videos"
-      href: fundamentals/videos.md
+      href: /fundamentals/videos.md
