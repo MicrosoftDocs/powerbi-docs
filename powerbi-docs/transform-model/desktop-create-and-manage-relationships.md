@@ -53,7 +53,7 @@ When you create or edit a relationship, you can configure additional options. By
 ### Cardinality
 The **Cardinality** option can have one of the following settings:
 
-**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of realtionship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
+**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of relationship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
 
 **One to one (1:1)**: In a one-to-one relationship, the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
 
