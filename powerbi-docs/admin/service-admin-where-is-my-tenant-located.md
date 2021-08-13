@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/29/2021
+ms.date: 08/13/2021
 ms.custom: video-0fOxaHJPvdM
 LocalizationGroup: Administration
 ---
@@ -42,8 +42,11 @@ To find the default data region for your organization, follow these steps:
 
      :::image type="content" source="media\service-admin-where-is-my-tenant-located\power-bi-data-region.png" alt-text="Screen capture showing about Power B I with data storage location highlighted..":::
 
-## Next steps
+## Learn more
 
-[Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
+- [International availability of Microsoft Power Platform](/power-platform/availability)
+- [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
+- [Move Power BI between regions](service-admin-region-move.md)
+- [Administrators learning catalog](learning-catalog/learning-catalog-administrator.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
