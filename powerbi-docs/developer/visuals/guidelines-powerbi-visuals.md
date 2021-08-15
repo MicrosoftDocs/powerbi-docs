@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 05/12/2021
+ms.date: 08/12/2021
 ---
 
 # Guidelines for publishing Power BI visuals
@@ -16,7 +16,7 @@ Before you [publish](office-store.md) your Power BI visual to Microsoft AppSourc
 
 ## *Free* and *for purchase* Power BI visuals
 
-You can submit Power BI visuals to be available to the marketplace (Microsoft AppSource) for free. You can also submit   Power BI visuals that will have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins in the [Office Store](office-store.md).
+Power BI visuals that are submitted to the [Commercial Marketplace](office-store.md) (Microsoft AppSource) can be made available for free, or they can have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
 
 Like the free Power BI visuals, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
@@ -24,7 +24,7 @@ Like the free Power BI visuals, an IAP Power BI visual can also be certified. Be
 
 An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features that are available for a  fee. In the Power BI visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
 
-Developers may use any third-party payment system for these purchases. For more information, see [our store policy](/legal/marketplace/certification-policies#11002-displaying-ads).
+Developers may use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 >[!IMPORTANT]  
 > If you update your Power BI visual from *free* to *additional purchase may be required*, users must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
