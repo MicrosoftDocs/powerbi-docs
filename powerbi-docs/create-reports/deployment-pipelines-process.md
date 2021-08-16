@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ---
 
 # Understand the deployment process
@@ -99,6 +99,8 @@ Deployment pipelines doesn't support the following items:
 * Datasets that do not originate from a PBIX
 
 * PUSH datasets
+
+* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
 
 * Streaming dataflows
 
