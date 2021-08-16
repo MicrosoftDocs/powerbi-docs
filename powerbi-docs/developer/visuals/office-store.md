@@ -75,6 +75,8 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 5. In the **Create a new Power BI visual** window, enter a name for your Power BI visual and select **Create**.
 
+    :::image type="content" source="/media/office-store/name-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
+
 6. Select **Packages** and upload your Power BI **pbiviz** file and the **pbix** file.
 
 7. Select **Properties** and provide the required information.
