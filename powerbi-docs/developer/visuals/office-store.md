@@ -53,9 +53,6 @@ Before you create the **pbiviz** package, make sure you fill the following field
 * name
 * email
 
->[!IMPORTANT]
->If you're resubmitting a visual, you cannot change its GUID.
-
 To submit your Power BI visual, you must be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account).
 
 >[!NOTE]
@@ -64,7 +61,7 @@ To submit your Power BI visual, you must be registered with Partner Center. If y
 >* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into Partner Center.
 >* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account) using your work email.
 
-Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](/office/dev/store/use-partner-center-to-submit-to-appsource).
+Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](../../office/dev/store/add-in-submission-guide.md).
 
 1. Log into **Partner Center**.
 
