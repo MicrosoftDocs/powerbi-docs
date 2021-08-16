@@ -16,7 +16,7 @@ Before you [publish](office-store.md) your Power BI visual to Microsoft AppSourc
 
 ## *Free* and *for purchase* Power BI visuals
 
-Power BI visuals that are submitted to the [Commercial Marketplace](../../azure/marketplace/overview.md) (Microsoft AppSource) can be made available for free, or they can have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
+Power BI visuals that are submitted to the [Commercial Marketplace](https://docs.microsoft.com/azure/marketplace/overview) (Microsoft AppSource) can be made available for free, or they can have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
 
 Like the free Power BI visuals, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
