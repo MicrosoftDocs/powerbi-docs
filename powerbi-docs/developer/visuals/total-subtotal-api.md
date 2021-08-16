@@ -12,7 +12,7 @@ ms.date: 06/18/2021
 
 # Request aggregated subtotal data
 
-The *Total and Subtotal API* enables custom visuals with a matrix data-view to request extra aggregated subtotal data from the Power BI host. The subtotals can be requested for the entire matrix dataset or specified for individual levels of the matrix data hierarchy (see this [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc)).
+The *Total and Subtotal API* allows custom visuals with a matrix data-view to request extra aggregated subtotal data from the Power BI host. The subtotals can be calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy (see this [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc)).
 
 >[!NOTE]
 >Requesting subtotal data is supported from API version 2.6.0. To find out which version you’re using, Run the `pbiviz -V` command.
