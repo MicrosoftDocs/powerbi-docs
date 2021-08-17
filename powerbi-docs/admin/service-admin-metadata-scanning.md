@@ -38,7 +38,8 @@ For each chunk of 100 workspaces:
 
 Call [workspaces/getInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info) to trigger a scan call for these 100 workspaces. You will receive the scanId in the response to use in the next steps. In the location header, you’ll also receive the URI to call for the next step.
 
->[!NOTE] Not more than 16 calls can be made simultaneously. The caller should wait for a scan succeed/failed response from the scanStatus API before invoking another call.
+>[!NOTE]
+> Not more than 16 calls can be made simultaneously. The caller should wait for a scan succeed/failed response from the scanStatus API before invoking another call.
 >
 > If some metadata you expected to receive is not returned, check with your Power BI admin to make sure they have [enabled all relevant admin switches](service-admin-metadata-scanning-setup.md).
 
