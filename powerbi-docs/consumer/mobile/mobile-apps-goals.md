@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 12/16/2019
+ms.date: 12/16/2ff
 ms.custom: mode-portal
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
