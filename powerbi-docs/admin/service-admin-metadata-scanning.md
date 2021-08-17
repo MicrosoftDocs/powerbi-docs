@@ -45,7 +45,7 @@ Call [workspaces/getInfo](/rest/api/power-bi/admin/workspace-info-post-workspace
 
 Use the URI from the location header you received from calling workspaces/getInfo and poll on [workspaces/scanStatus/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-status) until the status returned is "Succeeded". This means the scan result is ready. It is recommended to use a polling interval of 30-60 seconds. In the location header, you’ll also receive the URI to call in the next step. Use it only once the status is "Succeeded".
 
-Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using [workspaces/scanResult/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-result). The data contains the list of workspaces, artifact info, and other metadata based on the parameters passed in the workspaces/getInfo call.
+Use the URI from the location header you received from calling workspaces/scanStatus/{scan-id} and read the data using [workspaces/scanResult/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-result). The data contains the list of workspaces, artifact info, and other metadata based on the parameters passed in the workspaces/getInfo call.
 
 ### Step 2: Perform an incremental scan
 
