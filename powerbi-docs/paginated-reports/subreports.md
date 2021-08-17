@@ -12,7 +12,7 @@ ms.date: 04/29/2020
 
 # Subreports in Power BI paginated reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same Premium workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
   
@@ -21,6 +21,10 @@ A *subreport* is a paginated report item that displays another paginated report 
  In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
 You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
   
 ## Work with Report Builder and the Power BI service
 

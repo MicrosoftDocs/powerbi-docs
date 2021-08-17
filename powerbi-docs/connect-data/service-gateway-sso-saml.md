@@ -15,6 +15,9 @@ LocalizationGroup: Gateways
 
 By enabling single sign-on (SSO), you can make it easy for Power BI reports and dashboards to refresh data from on-premises sources while you respect user-level permissions that are configured on those sources. To enable seamless SSO connectivity, you use [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml). 
 
+> [!NOTE]
+> You can connect to only one data source using Single Sign-On SAML with an on-premises data gateway. To connect to an additional data source using Single Sign-On SAML, you must use a different on-premises data gateway.
+
 ## Supported data sources for SAML
 
 Microsoft currently supports SAP HANA with SAML. For more information about setting up and configuring single sign-on for SAP HANA by using SAML, see [SAML SSO for BI Platform to HANA](https://blogs.sap.com/2020/03/22/sap-bi-platform-saml-sso-to-hana-database/).

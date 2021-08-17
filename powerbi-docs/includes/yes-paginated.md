@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-✔️&nbsp;Power BI paginated reports
+✔️&nbsp;Power&nbsp;BI&nbsp;Report&nbsp;Builder

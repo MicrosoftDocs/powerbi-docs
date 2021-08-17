@@ -64,6 +64,8 @@
         href: service-premium-per-user-faq.yml
     - name: Information protection
       items:
+      - name: Default label policy (preview)
+        href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy (preview)
         href: service-security-sensitivity-label-mandatory-label-policy.md
       - name: Sensitivity label downstream inheritance (preview)
@@ -76,7 +78,9 @@
         href: service-security-sensitivity-label-custom-help-link.md
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md
-    - name: "Enhanced metadata scanning"
+      - name: Sensitivity label support for paginated reports (preview)
+        href: service-security-sensitivity-label-paginated-reports.md
+    - name: "Enhanced metadata scanning (preview)"
       href: service-admin-enhanced-metadata-scanning.md
   - name: How to
     items: 

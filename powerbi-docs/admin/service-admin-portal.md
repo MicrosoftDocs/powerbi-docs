@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/02/2021
+ms.date: 08/07/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -605,29 +605,20 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
-## Share data with your Microsoft 365 services
+## Q&A settings
 
-### Allow your Microsoft 365 services to process or store Power BI data outside of your Power BI tenant's geographic area
+### Review questions
+When this setting is enabled, dataset owners can review questions end-users ask about their data.
 
-![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
+![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
 
-This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
+### Synonym sharing
+When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
 
-Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may need to process and/or store Power BI data outside the geographic location of the Power BI tenant the data is located in.
+![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
 
-By enabling the switch, you, as a Power BI administrator, are explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, certain information about your Power BI content may potentially flow outside the geographic region where it is located.
-
-The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
-
-* The display name of the content.
-* When the content was last accessed.
-* The type of content that was accessed (report, dashboard etc.).
-
-To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**.
-
-References:
-* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
-* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
+> [!NOTE]
+> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
 
 ## Capacity settings
 
@@ -690,15 +681,23 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |State  |Description  |
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| **Orphaned** | A workspace with no admin user. |
+| **Orphaned** | A workspace with no admin user. Please assign an admin. |
 | **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
 | **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets.
 
-:::image type="content" source="media/service-admin-portal/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
+![Admins can also manage and recover workspaces.](media/service-admin-portal/admin-portal-manage-workspaces.png)
 
-Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
+_Selecting one or more workspaces for upgrade._
+
+### Upgrade workspaces
+
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade or use **Upgrade all** to queue up upgrade of all **Group** workspaces. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. Learn more about [workspace upgrade](../collaborate-share/service-upgrade-workspaces.md) before starting your Power BI admin-initiated workspace upgrade.
+
+![Admins can choose to Upgrade all workspaces.](media/service-admin-portal/admin-portal-workspaces-upgrade-all.png)
+
+_Upgrade all queues up all workspaces for upgrade._
 
 The following table gives more details about the status of the upgrade.
 
@@ -707,12 +706,20 @@ The following table gives more details about the status of the upgrade.
 | **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
 | **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
+| **Failed** | The workspace failed because of a validation rule. Power BI has released and will continue to release fixes for upgrade failures, please retry any 'Failed' upgrades. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option during the 30-day period after the workspace was upgraded. |
 
-> [!NOTE]
-> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
-> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
-> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+#### Limitations to upgrading workspaces
+
+There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+
+- If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+- As noted above, please check for **Orphaned** workspaces after upgrade and be sure to assign an admin to those workspaces. Power BI Admins may use filters from the Admin Portal to find Orphaned workspaces and assign admins one by one or in bulk.
+
+![Use text filters from column headers to find the workspaces you want to take action on.](media/service-admin-portal/admin-portal-orphaned-workspaces.png)
+
+_Helpful tip: Use text filters from column headers to find the workspaces you want to take action on, like finding Orphaned workspaces to assign admins to._
 
 ## Custom branding
 

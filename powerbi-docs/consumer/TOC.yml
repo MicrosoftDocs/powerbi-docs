@@ -86,10 +86,8 @@
           href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
-      - name: "What can I do with visualizations?"
-        href: end-user-visualizations.md
       - name: "Types of visualizations"
-        href: end-user-visual-type.md
+        href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
       - name: "Copy a visual and paste it elsewhere"
