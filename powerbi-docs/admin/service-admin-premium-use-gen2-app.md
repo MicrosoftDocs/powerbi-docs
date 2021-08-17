@@ -23,7 +23,13 @@ The Gen2 metrics app has four pages:
 
 * [Overview](#overview)
 
-This page provides an overview of the capacity performance. It is divided into three sections listed below. 
+* [Evidence]
+
+* [Refresh]
+
+* [Release Notes](#release-notes)
+
+This page provides an overview of the capacity performance. It is divided into three sections listed below.
 
 ## Weekly trendlines
 
@@ -69,12 +75,6 @@ The three visuals at the bottom of the page are *visual aids* that respond to yo
 * **Memory** - Memory footprint recorded for Power BI items over time. When no item is filtered this chart shows the maximum value seen from all items at each ten minute time sample in the past two weeks.
 
 * **Degradation** - Performance profile changes. This visual shows the percentage of *fast*,*medium* and *slow* operations from the total amount of operations performed on a Power BI item, over the past two weeks. When no item is filtered this chart shows the profile for *datasets* on the entire capacity.
-
-* [Evidence]
-
-* [Refresh]
-
-* [Release Notes](#release-notes)
 
 ## Overview
 
