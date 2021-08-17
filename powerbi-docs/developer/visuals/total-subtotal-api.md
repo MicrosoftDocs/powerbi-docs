@@ -101,7 +101,7 @@ Below is an example of the complete API configuration in the *capabilities* JSON
     }
 ```
 
-It’s important that the enumerateProperities() function of the visual is aligned with the defaults specified in the capabilities. E.g., if no properties are hanged by the user (no properties are dirty) the properties pane will display the subtotal defaults returned by enumerateProperties(). At the same time, the customization logic will operate according to the defaults specified in the capabilities (since no objects will be supplied in the data view). Now, the two must be aligned. Otherwise, the actual subtotal customizations will differ from the user’s perception.
+It’s important that the enumerateProperities() function of the visual is aligned with the defaults specified in the capabilities. At the same time, the customization logic will operate according to the defaults specified in the capabilities (since no objects are supplied in the data view). The two must be aligned. Otherwise, the actual subtotal customizations might differ from the user’s perception.
 
 Check out this [sample report](https://github.com/Microsoft/Powerbi-Visuals-SampleMatrix) in the DOC folder.
 
