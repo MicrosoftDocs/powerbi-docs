@@ -69,5 +69,5 @@ Metadata scanning requires no special license. It works for all of your tenant m
 
 * [Power BI REST Admin APIs](/rest/api/power-bi/admin)
 * [Set up metadata scanning](service-admin-metadata-scanning-setup.md)
-* [Enable service principal authentication for read-only admin APIs]()
+* [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md)
 * More questions? Try asking the [Power BI Community](https://community.powerbi.com)
