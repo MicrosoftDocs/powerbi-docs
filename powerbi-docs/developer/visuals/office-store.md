@@ -31,7 +31,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 
 | Item | Required | Description |
 | --- | --- | --- |
-| Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package containing all the required metadata.<br>Visual name<br>Display name<br>GUID<br>Version<br>Description<br>Author name and email |
+| Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package containing all the required metadata. <ul><li>Visual name</li><li>Display name</li><li>GUID</li><li>Version</li><li>Description</li><li>Author name and email</li></ul> |
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
 | Icon |Yes |You should include the custom visual logo that will appear in the Marketplace listing. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
@@ -73,7 +73,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
     ![Screenshot of creating a new Power B I visual in the office store tab in Partner Center.](media/office-store/power-bi-visual.png)
 
-5. In the **Create a new Power BI visual** window, enter a name and Offer ID for your Power BI visual and select **Create**.
+5. In the **Create a new Power BI visual** window, enter a [name](/office/dev/store/reserve-solution-name) and Offer ID for your Power BI visual and select **Create**.
 
     :::image type="content" source="media/office-store/name-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
 
