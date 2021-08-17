@@ -24,13 +24,13 @@ The following are the scanner APIs:
 
 Before metadata scanning can be run, a Power BI admin needs to set it up. See [Setting up metadata scanning in an organization](service-admin-metadata-scanning-setup.md).
 
-## Running metadata scanning
+## Run metadata scanning
 
 The following short walkthrough shows how to use the scanner APIs to retrieve metadata from your organizations artifacts. It assumes that a Power BI admin has set up metadata scanning in your organization.
 
 ### Step 1: Perform a full scan
 
-Call [workspaces/modified](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces) without the **modifiedSince** parameter to get the complete list of workspace IDs in the tenant. This retrieves all the workspaces in the tenant, including classic workspaces, personal workspaces, and new workspaces. **Note**: The workspaces/modified **excludePersonalWorkspaces** parameter enables you to exclude personal workspaces from the scan.
+Call [workspaces/modified](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces) without the **modifiedSince** parameter to get the complete list of workspace IDs in the tenant. This retrieves all the workspaces in the tenant, including classic workspaces, personal workspaces, and new workspaces. If you wish to exclude personal workspaces from the scan, use the workspaces/modified **excludePersonalWorkspaces** parameter.
 
 Divide the list into chunks of 100 workspaces at most.
 
@@ -59,7 +59,7 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 
 * Datasets that have not been refreshed or republished will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset's table and column names.
 * Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
-* [Real time datasets](/connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), datasets with a live connection to AS-Azure and AS on-prem, and Excel full fidelity datasets are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
+* [Real time datasets](../connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), datasets with a live connection to AS-Azure and AS on-prem, and Excel full fidelity datasets are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
 * The API doesn't return sub-artifact metadata for datasets that are larger than 1GB in shared workspaces. For Premium workspaces there is no size limitation.
 
 ## Licensing
