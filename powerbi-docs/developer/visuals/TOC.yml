@@ -100,6 +100,8 @@
       href: high-contrast-support.md
     - name: "Enable sync slicers"
       href: enable-sync-slicers.md
+    - name: "Display subtotal data"
+      href: total-subtotal-api.md     
     - name: "Render a visual without requiring data binding"
       href: no-dataroles-support.md  
     - name: "Debug visuals"
