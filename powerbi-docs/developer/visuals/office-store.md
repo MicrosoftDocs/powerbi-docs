@@ -31,7 +31,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 
 | Item | Required | Description |
 | --- | --- | --- |
-| Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package containing all the required metadata. <ul><li>Visual name</li><li>Display name</li><li>GUID</li><li>Version</li><li>Description</li><li>Author name and email</li></ul> |
+| Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package. Make sure the *pbiviz.json* file contains all the required metadata: <ul><li>Visual name</li><li>Display name</li><li>GUID</li><li>Version</li><li>Description</li><li>Support URL</li><li>Author name and email</li></ul> |
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
 | Icon |Yes |You should include the custom visual logo that will appear in the Marketplace listing. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
