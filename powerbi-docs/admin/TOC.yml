@@ -80,8 +80,12 @@
         href: service-security-sensitivity-label-audit-schema.md
       - name: Sensitivity label support for paginated reports (preview)
         href: service-security-sensitivity-label-paginated-reports.md
-    - name: "Enhanced metadata scanning (preview)"
-      href: service-admin-enhanced-metadata-scanning.md
+    - name: Metadata scanning
+      items:
+      - name: "Run metadata scanning"
+        href: service-admin-metadata-scanning.md
+      - name: "Set up metadata scanning in your org (admin)"
+        href: service-admin-metadata-scanning-setup.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"

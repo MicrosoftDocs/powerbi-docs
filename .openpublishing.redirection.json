@@ -3974,6 +3974,11 @@
             "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
             "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
-        }                        
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-enhanced-metadata-scanning.md",
+            "redirect_url": "/power-bi/admin/service-admin-metadata-scanning",
+            "redirect_document_id": true
+        }                                                
     ]           
 }
