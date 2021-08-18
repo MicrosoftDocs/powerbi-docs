@@ -91,15 +91,6 @@ While disabling load means Power BI doesn't evaluate that given query, when used
 
 It's also important to note that enabling load also enables you to keep the complete view of lineage, since Power BI considers a non-enabled load dataflow as a new item. If lineage is important to you, do not disable load for entities or dataflows connected to other dataflows.
 
-### Solution: Use the Dataflow connector to enable query folding and incremental refresh for import
-
-The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
-
-- Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
-- Dataset refresh operations can also fold to the enhanced compute engine, meaning even incremental refresh from a dataset can fold to a dataflow, improving refresh performance and potentially decreasing latency between refresh cycles. 
-
-To enable this for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must be using the August 2021 version of Power BI Desktop or later to take advantage of this feature.
-
 ## Reducing Refresh Times for Datasets
 
 Imagine you have a dataflow that is large, but you want to build datasets off of this and decrease the orchestration. Refreshes take a long time to complete from the data source > dataflow(s) > dataset(s), adding increased latency.
@@ -115,6 +106,15 @@ To summarize, using DirectQuery with dataflows enables the following enhancement
 - **Filtering data** DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and thereby work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the Enhanced Compute Engine) to filter dataflow data and work with the filtered subset you need.
 
 Generally, using DirectQuery will trade up-to-date data in your dataset with slower report performance compared to import mode. Consider this approach only when your use case requires low latency data coming from your dataflow, the dataflow data is large, an import would be too time consuming, and you're willing to trade cached performance for up-to-date data.
+
+### Solution: Use the Dataflow connector to enable query folding and incremental refresh for import
+
+The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
+
+- Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
+- Dataset refresh operations can also fold to the enhanced compute engine, meaning even incremental refresh from a dataset can fold to a dataflow, improving refresh performance and potentially decreasing latency between refresh cycles. 
+
+To enable this feature for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must be using the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
 ## Complex dataflow authoring in Power Query
 
