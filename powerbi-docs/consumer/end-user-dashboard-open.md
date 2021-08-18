@@ -33,6 +33,8 @@ If that workspace contains a dashboard, you'll see the following icon.
 
 ![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
+:::image type="content" source="media/end-user-dashboard-open/power-bi-dashboard.png" alt-text="Workspace showing contents including a dashboard.":::
+
 Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
 
 You may find dashboards in all of the containers in the nav pane. 
