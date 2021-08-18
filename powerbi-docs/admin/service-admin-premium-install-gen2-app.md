@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Install the Gen2 metrics app (preview)
 
-The Power BI Premium utilization and metrics app, is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-admin-premium-use-gen2-app.md).
+The Power BI Premium utilization and metrics app, is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-premium-gen2-metrics-app.md).
 
 The app is updated regularly with new features and functionalities. If you see there's a pending update in the notifications center, we recommend that you update the app.
 
