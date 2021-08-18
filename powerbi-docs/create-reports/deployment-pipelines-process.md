@@ -100,8 +100,6 @@ Deployment pipelines doesn't support the following items:
 
 * PUSH datasets
 
-* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
-
 * Streaming dataflows
 
 * Reports based on unsupported datasets
@@ -152,6 +150,8 @@ The following item properties are not copied during deployment:
 * Workspace settings - Each stage has its own workspace
 
 * App content and settings - To deploy your apps, see [deploying Power BI apps](#deploying-power-bi-apps)
+
+* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
 
 The following dataset properties are also not copied during deployment:
 
