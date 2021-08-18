@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 08/11/2021
+ms.date: 08/18/2021
 LocalizationGroup: Data from files
 ---
 
@@ -85,12 +85,20 @@ Imagine you have a large dataflow, but you want to build datasets off of that da
 
 It is important to note that Power BI does support simple orchestration for dataflows, as defined in [understanding and optimizing dataflows refresh](dataflows-understand-optimize-refresh.md#orchestration). However, taking advantage of this requires explicitly having any downstream dataflows configured to *Enable Load*.
 
-
 Disabling load typically is appropriate only when the overhead of loading more queries cancels the benefit of the entity with which you're developing.
 
 While disabling load means Power BI doesn't evaluate that given query, when used as ingredients - that is, referenced in other dataflows - it also means that Power BI does not treat it as an existing table where we can provide a pointer to and perform folding and query optimizations. In this sense, performing transformations such as a join or merge is merely a join/merge of two data source queries. Such operations can have a negative impact on performance as Power BI must fully reload already computed logic again, and then apply any additional logic. To simplify the query processing of your dataflow and ensure any engine optimizations are taking place, enable load and ensure that the compute engine in Power BI Premium dataflows is set at the default setting, which is **Optimized**.
 
 It's also important to note that enabling load also enables you to keep the complete view of lineage, since Power BI considers a non-enabled load dataflow as a new item. If lineage is important to you, do not disable load for entities or dataflows connected to other dataflows.
+
+### Solution: Use the Dataflow connector to enable query folding and incremental refresh for import
+
+The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
+
+- Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
+- Dataset refresh operations can also fold to the enhanced compute engine, meaning even incremental refresh from a dataset can fold to a dataflow, improving refresh performance and potentially decreasing latency between refresh cycles. 
+
+To enable this for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must be using the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
 ## Reducing Refresh Times for Datasets
 
