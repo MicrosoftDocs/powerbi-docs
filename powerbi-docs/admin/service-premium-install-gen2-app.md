@@ -19,11 +19,11 @@ The app is updated regularly with new features and functionalities. If you see t
 
 ## Prerequisites
 
-Before you install the Gen2 metrics app, verify that you meet the 
-
-* The app only works with Gen2 capacities
+Before you install the Gen2 metrics app, review these requirements:
 
 * You need to be a capacity admin
+
+* The app only works with Gen2 capacities
 
 ## Install the app
 
@@ -51,7 +51,7 @@ To install the Gen2 metrics app, follow these steps:
 
     * **Privacy level setting for this data source** - Select *Organizational*. This setting enables app access to all the data sources in your organization. If you select any other setting, the app will not work.
 
-    >[NOTE!]
+    >[!NOTE]
     >*ExtensionDataSourceKind* and *ExtensionDataSourcePath* are internal fields related to the app's connector. Do not change the values of these fields.
 
 6. Select **Sign in and continue**.
