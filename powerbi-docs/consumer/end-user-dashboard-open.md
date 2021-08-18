@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 08/18/2021
 LocalizationGroup: Dashboards
 ms.custom:  
 ---
@@ -25,11 +25,15 @@ A Power BI Pro or Premium license is required for both sharing a dashboard and v
 
 ## Open a dashboard
 
-Dashboards can be opened from many locations in the Power BI service.
+Dashboards can be opened from many locations in the Power BI service. One way to open a dashboard is to select and open a workspace. 
+
+![From the left navigation pane select Workspace.](media/end-user-dashboard-open/power-bi-workspaces.png)
+
+If that workspace contains a dashboard, you'll see the following icon.
 
 ![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
-Just look for this dashboard icon. Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
+Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
 
 You may find dashboards in all of the containers in the nav pane. 
 
