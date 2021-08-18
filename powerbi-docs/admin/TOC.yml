@@ -57,7 +57,7 @@
       - name: Using Autoscale with Premium Gen2 (preview)
         href: service-premium-auto-scale.md
       - name: Install the Gen2 metrics app (preview)
-        href: service-admin-premium-install-gen2-app.md                
+        href: service-premium-install-gen2-app.md                
       - name: Using the Premium Gen2 metrics app (preview)
         href: service-premium-gen2-metrics-app.md
       - name: Power BI Premium Gen2 FAQ (preview)
