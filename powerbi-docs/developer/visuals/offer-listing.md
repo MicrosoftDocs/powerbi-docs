@@ -18,11 +18,11 @@ This page lets you define the offer details such as offer name, description, lin
 
 The default language for the offer listing details is English. You can add more languages by selecting Manage Additional languages. The offer listing details must be filled out for each language listed.
 
-:::image type="content" source="media/offer-listing/offer-listing-languages.png" alt-text="Screenshot of languages for offer submission listing.":::
+:::image type="content" source="media/offer-listing/marketplace-listing-languages.png" alt-text="Screenshot of languages for offer submission listing.":::
 
 ## Marketplace details
 
-:::image type="content" source="media/offer-listing/offer-listing-details.png" alt-text="Screenshot of offer listing tab of offer submission.":::
+:::image type="content" source="media/offer-listing/marketplace-listing-details.png" alt-text="Screenshot of offer listing tab of offer submission.":::
 
 The **Name** you enter here is shown to customers as the title of the offer. This field is pre-populated with the name you entered when you created the offer, but you can change it. The name:
 
