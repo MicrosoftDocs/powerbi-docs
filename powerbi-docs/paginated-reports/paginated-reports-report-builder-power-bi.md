@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 04/02/2021
+ms.date: 08/10/2021
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -54,6 +54,12 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Production
 
 Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+## Apply sensitivity labels to paginated reports
+
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../admin/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
+
+Read more about [sensitivity label support for pagination reports](../admin/service-security-sensitivity-label-paginated-reports.md).
 
 ## Report from a variety of data sources
 
@@ -113,4 +119,4 @@ Here are some other features that aren't supported in the initial release:
 - [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)
+- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)

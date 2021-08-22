@@ -1582,7 +1582,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embed-paginated-reports-customers.md",
-            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports-customers",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
             "redirect_document_id": false
         },
         {
@@ -3961,9 +3961,24 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-organization.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-customers.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },   
+        {
             "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
             "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
-        }                        
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-enhanced-metadata-scanning.md",
+            "redirect_url": "/power-bi/admin/service-admin-metadata-scanning",
+            "redirect_document_id": true
+        }                                                
     ]           
 }

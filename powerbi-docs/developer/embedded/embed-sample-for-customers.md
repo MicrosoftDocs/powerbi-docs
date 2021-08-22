@@ -507,10 +507,7 @@ After configuring and running the *embed for your customers* sample application,
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
->[Embed paginated reports for your customers](embed-paginated-reports-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed paginated reports for your organization](embed-paginated-reports-organization.md)
+>[Embed paginated reports](embed-paginated-reports.md)
 
 >[!div class="nextstepaction"]
 >[Ask the Power BI Community](https://community.powerbi.com/)

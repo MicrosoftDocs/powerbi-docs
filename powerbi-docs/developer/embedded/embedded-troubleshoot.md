@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 07/01/2021
+ms.date: 08/12/2021
 ---
 
 # Troubleshoot your embedded application
@@ -110,7 +110,7 @@ A fiddler capture may be required to investigate further. There could be several
 * The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
-The backend of the application may need to refresh the auth token before calling GenerateToken.
+The backend of the application may need to refresh the auth token before calling GenerateToken. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
 ```console
 GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
@@ -287,7 +287,7 @@ Any user with read permissions for a dataset can see the entire schema (tables, 
 
 To manage which portion of the data your users can view, use one of these methods:
 
-* Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
+* Row-level filtering using Power BI [row-level security (RLS)](../../admin/service-admin-rls.md).
 
 * [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
 
