@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 08/22/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -26,6 +26,8 @@ Now you can monitor your goals and scorecards, and even check in progress on the
 
 ### Request access to reports from your mobile app. 
 Have a link to a report you don’t have access to? Now you can request access directly from the app!
+
+![Screenshot of Power BI mobile app request-access-dialog.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-request-access.png)
 
 ## July 2021
 ### New report footer (phones only)
