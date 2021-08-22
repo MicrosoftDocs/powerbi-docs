@@ -12,7 +12,7 @@ ms.date: 08/14/2021
 
 # Submitting a Power BI visual to AppSource
 
-To submit your Power BI visual, you must be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account).
+This article describes how to submit a Power BI visual to [Appsource](https://appsource.microsoft.com) for others to discover and use. To submit your Power BI visual, you must be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account).
 
 >[!NOTE]
 >Individual publishers can use one of these methods to submit a Power BI visual:
@@ -29,4 +29,4 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
     :::image type="content" source="media/offer-overview/new-offer.png" alt-text="Screenshot of creating new marketplace offer.":::
 5. In the Create a new Power BI visual window, enter a [name](/office/dev/store/reserve-solution-name) and Offer ID for your Power BI visual. Since the name has to be unique, select Check availability to make sure it hasn’t been used yet. If your name is unavailable, enter a different name.
     :::image type="content" source="media/offer-overview/offer-name.png" alt-text="Screenshot of naming new offer.":::
-6. Select **Create** to continue to the next tab, **Technical Configuration**.
+6. Select **Create** to continue to the next tab, [**Technical Configuration**](technical-configuration.md).

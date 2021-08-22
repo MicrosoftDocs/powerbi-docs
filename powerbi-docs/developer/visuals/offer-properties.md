@@ -35,4 +35,4 @@ Enter the **Privacy policy link** (URL) to your organization's privacy policy. Y
 
 Provide a **support URL** for your customers. This link is entered as part of your Partner Center listing and is visible to users when they access your visual's listing on AppSource. The format of your URL should include http:// or https://.
 
-Select **Save draft** before continuing to the next tab, *Offer listing*.
+Select **Save draft** before continuing to the next tab, [**Offer listing**](offer-listing.md).

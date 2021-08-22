@@ -29,4 +29,5 @@ These files are:
 
 * **Pbiviz package** (required) – To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a "hints" page at the end with some tips and tricks and things to avoid.
 The sample *.pbix* report file must work offline, without any external connections.
-Select **Save draft** before continuing to the next tab, **Properties**.
+
+Select **Save draft** before continuing to the next tab, [**Properties**](offer-properties.md).
