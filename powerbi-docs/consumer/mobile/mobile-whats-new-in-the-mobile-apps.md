@@ -24,7 +24,7 @@ Now you can monitor your goals and scorecards, and even check in progress on the
 
 ![Screenshot of Power BI mobile app Goals Hub.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-goals-hub.png)
 
-### Request access to reports from your mobile app. 
+### Request access to reports from your mobile app
 Have a link to a report you don’t have access to? Now you can request access directly from the app!
 
 ![Screenshot of Power BI mobile app request-access-dialog.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-request-access.png)
