@@ -18,6 +18,15 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## August 2021
+### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 
+Now you can monitor your goals and scorecards, and even check in progress on the go, directly from the mobile app! You’ll find them right there on the home page in the new Goals Hub.
+
+![Screenshot of Power BI mobile app Goals Hub.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-goals-hub.png)
+
+### Request access to reports from your mobile app. 
+Have a link to a report you don’t have access to? Now you can request access directly from the app!
+
 ## July 2021
 ### New report footer (phones only)
 We’ve simplified and improved the report footer to make it easier to find and understand the actions you can do with reports. Just tap **More**!
