@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/17/2021
+ms.date: 08/17/2021
 ---
 
 # Create a dialog box for your Power BI visual
@@ -30,9 +30,9 @@ When creating a dialog box for your visual, consider the following:
 
 * The dialog box appears in the middle of the screen.
 
-* The dialog box will display the icon of the visual and its name.
+* The dialog box always displays the icon and name of the visual.
 
-* The dialog box can have up to three action buttons. You can choose which buttons to display from a given selection.
+* The dialog box can have up to three action buttons. You can choose which buttons to display from a [given selection](create-display-dialog-box.md#invoke-the-dialog-box).
 
 * The dialog box uses a rich HTML `iframe`.
 
@@ -41,7 +41,7 @@ When creating a dialog box for your visual, consider the following:
 * The dialog code may use external NPM libraries, just like the visual.
 
 >[!IMPORTANT]
->The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
+>The dialog box should not be triggered spontaneously. It must be an immediate result of a user action.
 
 ## Design a dialog box for your visual
 
@@ -121,6 +121,43 @@ globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ```
 
+### Define the size of the dialog box
+
+The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in Javascript Or CSS.
+
+### Size {.tabset}
+
+#### Javascript
+
+Add the width and height to the constructor method
+
+```javascript
+    options.element.style.width = '400px';
+    options.element.style.height = '600px';
+```
+
+#### CSS
+
+Add the following line to the constructor:
+
+`options.element.classList.add('dialog-container');`
+
+In the .less file:
+
+```css
+body.dialog-container {
+    margin: 0;
+    display: grid;
+    > div {
+        margin: 10px 0;
+        height: 270px;
+        width: 244px;
+        display: flex;
+        justify-content: center;
+    }
+}
+```
+
 ### Invoke the dialog box
 
 Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals supports the following six dialog box buttons:
@@ -172,14 +209,12 @@ You can also program the dialog box to automatically close, by calling the `IDia
     |Minimum |240px                    |210px                     |
 
 * Certain environments, such as dashboards, block the use of dialog boxes. You can program your visual to detect whether the current environment allows opening a dialog box, by checking the boolean `this.host.hostCapabilities.allowModalDialog`.
-
+* As of powerbi-visuals-API 3.8, the dialog icon and title are determined by the visual’s icon and display name and can't be changed.
 * The following features don't support the Power BI visuals dialog box:
 
-    * Embedded analytics
-
-    * Publish to web
-
-    * Dashboards
+  * Embedded analytics
+  * Publish to web
+  * Dashboards
 
 ## Next steps
 
