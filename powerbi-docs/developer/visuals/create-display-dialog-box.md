@@ -159,7 +159,7 @@ button.onclick = () => {
 
 ## Define the size of the dialog box
 
-The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript Or CSS.
+The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript or CSS.
 
 ### [JavaScript](#tab/JavaScript)
 
