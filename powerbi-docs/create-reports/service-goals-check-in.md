@@ -77,7 +77,7 @@ There is also a keyword search that will filter the scorecard down to goal with 
 
 Scorecard authors are able to automate status updates based on rules that govern that goal or subgoal. Rules will trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  These status rules will be refreshed every time the data in your scorecard is refreshed in the case of connected goals, and every time a check-in is performed in the case of manual goals.
 
-    :::image type="content" source="media/service-goals-check-in/tule-types.png" alt-text="The Details pane for a goal.":::
+    :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="The Details pane for a goal.":::
 
 
 To get started:
