@@ -156,7 +156,6 @@ button.onclick = () => {
             }
 ```
 
-
 ## Define the size of the dialog box
 
 The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript or CSS.
@@ -199,6 +198,16 @@ body.dialog-container {
 The preferred method for closing the dialog box is by the end-user clicking the [x] button, one of the action buttons or the report background.
 
 You can also program the dialog box to automatically close by calling the `IDialogHost` close method. This method is blocked for five seconds after the dialog is opened, so that the earliest you can automatically close the dialog box is five seconds after it was initiated.
+
+## Don't show dialog box
+
+The dialog box appears with a checkbox that gives the user the option to block dialog boxes.
+
+:::image type="content" source="media/create-display-dialog-box/dont-show-checkbox.png" alt-text="Screenshot showing a checkbox giving the option to block dialog boxes.":::
+
+This checkbox is a security feature to prevent the visual from creating modal dialogs (either intentionally or not) without the user's consent.
+
+This blocking is only in effect for the current session. So if a user blocks the CV modal dialogs but later changes their mind, they can re-enable the dialogs by refreshing the reports page in Power BI Service, or exiting and restarting Power BI Desktop.
 
 ## Limitations
 
