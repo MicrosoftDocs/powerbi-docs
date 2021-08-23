@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/15/2021
+ms.date: 08/23/2021
 ms.custom: video-G26dr2PsEpk
 LocalizationGroup: Dashboards
 ---
