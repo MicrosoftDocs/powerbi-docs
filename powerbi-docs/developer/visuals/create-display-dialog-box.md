@@ -205,7 +205,7 @@ The dialog box appears with a checkbox that gives the user the option to block d
 
 :::image type="content" source="media/create-display-dialog-box/dont-show-checkbox.png" alt-text="Screenshot showing a checkbox giving the option to block dialog boxes.":::
 
-This checkbox is a security feature to prevent the visual from creating modal dialogs (either intentionally or not) without the user's consent.
+This checkbox is a security feature that prevents the visual from creating modal dialogs (either intentionally or not) without the user's consent.
 
 This blocking is only in effect for the current session. So if a user blocks the CV modal dialogs but later changes their mind, they can re-enable the dialogs by refreshing the reports page in Power BI Service, or exiting and restarting Power BI Desktop.
 
