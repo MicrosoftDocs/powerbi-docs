@@ -21,6 +21,21 @@ The goals Details pane provides the entire history for the goal from the start d
 - To access the details pane, open a scorecard and select the goal name. Power BI automatically shows the details pane.
 
     :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="The Details pane for a goal.":::
+    
+    
+## Filtering and keyword search 
+
+Scorecards can be filtered to goals labeled as a particular status by clicking on the summary cards at the top of the scorecard, making it easy to see what is on track or at risk. 
+
+    :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Goals filtered to at risk.":::
+    
+    :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Goals filtered to behind.":::
+
+There is also a keyword search that will filter the scorecard down to goal with the keyword match.  Simply click the filter icon above the first goal, and type in the keywords you're looking for.  The scorecard will filter to show those results without losing the context of any parent/child goal relationships, making ie easy to quickly find a particular goal and see how it's doing.
+
+    :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Location of keyword search on scorecard.":::
+    
+    :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Keyword search for premium.":::
 
 ## Add or update manual values
 
@@ -57,6 +72,46 @@ The goals Details pane provides the entire history for the goal from the start d
     :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Check-in for a connected goal.":::
 
 1. Select **Save**. 
+
+## Create automated status rules 
+
+Scorecard authors are able to automate status updates based on rules that govern that goal or subgoal. Rules will trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  These status rules will be refreshed every time the data in your scorecard is refreshed in the case of connected goals, and every time a check-in is performed in the case of manual goals.
+
+    :::image type="content" source="media/service-goals-check-in/tule-types.png" alt-text="The Details pane for a goal.":::
+
+
+To get started:
+
+1. In edit mode, select the goal for which you want to create status rules.
+1. In the details pane, select the tab called status rules, and click new rule.
+
+    :::image type="content" source="media/service-goals-check-in/new-status-rule.png" alt-text="Showing new status rules in details pane.":::
+
+1. From the first dropdown, select whether you want to base your rule on the value or the date.
+
+    :::image type="content" source="media/service-goals-check-in/first-dropdown.png" alt-text="First dropdown showing date or value.":::
+
+1. From the second dropdown, select your qualifier.
+
+    :::image type="content" source="media/service-goals-check-in/select-qualifier-second-dropdown.png" alt-text="Second dropdown showing qualifiers such as greater than or equal to.":::
+
+1. The last setting(s) will be based on your first dropdown.  If you chose value, you can etiher set the value or the percent or target met.  If you selected date in the first dropdown, you can select the date you want to base your rule on.
+
+    :::image type="content" source="media/service-goals-check-in/setting-value.png" alt-text="Setting the value for the rule.":::
+    
+    :::image type="content" source="media/service-goals-check-in/date-picker.png" alt-text="Showing date picker for date driven rule.":::
+
+1. Lastly, set the status that should be shown when the rules are met as well as the "otherwise" status. 
+
+    :::image type="content" source="media/service-goals-check-in/status-chosen.png" alt-text="Showing selected statuses for status rules.":::
+
+
+### More aspects of status rules:
+- With automated status rules, you can create create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
+- For the mobile experience, automatic refresh on status rules is not supported at this time, but will be coming soon. 
+
+    :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Adding a condition to a rule.":::
+
 
 ## Next steps
 
