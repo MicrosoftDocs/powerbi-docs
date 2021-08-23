@@ -128,7 +128,7 @@ If only a limited number of tenants need different geographies, consider keeping
 
 ### Cost
 
-Both [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
+Both [Power BI Embedded](./embedded-analytics-power-bi.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage. You can measure the load and performance with the various metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
 
@@ -208,10 +208,10 @@ Considerations and limitations for Power BI [capacities](embedded-capacity.md).
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Embedded analytics with Power BI](/power-bi/developer/embedded/embedded-analytics-power-bi)
+>[Embedded analytics with Power BI](./embedded-analytics-power-bi.md)
 
 >[!div class="nextstepaction"]
->[Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi)
+>[Power BI Embedded](./embedded-analytics-power-bi.md)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium](../../admin/service-premium-what-is.md)
