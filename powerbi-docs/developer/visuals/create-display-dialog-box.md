@@ -22,7 +22,7 @@ For these purposes, you can create a dialog visual pop-up window, referred to as
 
 ## Dialog box considerations
 
-When creating a dialog box for your visual, consider the following:
+When creating a dialog box for your visual, consider the  matters:
 
 * During development, you can specify the size of the dialog box.
 
@@ -103,7 +103,7 @@ export class DatePickerDialog {
 
 Create a class that returns the dialog box result, and add it to the dialog box implementation file.
 
-In the example below the `DatePickerDialogResult` class returns a date string.
+In the example below, the `DatePickerDialogResult` class returns a date string.
 
 ```javascript
 export class DatePickerDialogResult {
@@ -123,7 +123,7 @@ globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ### Define the size of the dialog box
 
-The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in Javascript Or CSS.
+The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript Or CSS.
 
 ### Size {.tabset}
 
@@ -142,7 +142,7 @@ Add the following line to the constructor:
 
 `options.element.classList.add('dialog-container');`
 
-In the .less file:
+In the *.less* file:
 
 ```css
 body.dialog-container {
@@ -160,7 +160,7 @@ body.dialog-container {
 
 ### Invoke the dialog box
 
-Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals supports the following six dialog box buttons:
+Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals support the following six dialog box buttons:
 
 ```javascript
 export enum DialogAction {
@@ -180,7 +180,7 @@ Each dialog box you create needs to be invoked in the `visual.ts` file. In this 
 private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 ```
 
-In this example, the dialog box is invoked by clicking a visual button. This is defined as part of the visual constructor in the `visual.ts` file.
+In this example, the dialog box is invoked by clicking a visual button. The visual button is defined as part of the visual constructor in the `visual.ts` file.
 
 ```javascript
 button.onclick = () => {
@@ -197,7 +197,7 @@ button.onclick = () => {
 
 The preferred method for closing the dialog box is by the end-user clicking the [x] button, one of the action buttons or the report background.
 
-You can also program the dialog box to automatically close, by calling the `IDialogHost` close method. This method will be blocked for five seconds after the dialog is open, so that the earliest you can automatically close the dialog box is five seconds after it was initiated.
+You can also program the dialog box to automatically close by calling the `IDialogHost` close method. This method is blocked for five seconds after the dialog is opened, so that the earliest you can automatically close the dialog box is five seconds after it was initiated.
 
 ## Limitations
 
