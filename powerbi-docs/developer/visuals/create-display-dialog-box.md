@@ -30,7 +30,7 @@ When creating a dialog box for your visual, consider the  matters:
 
 * The dialog box appears in the middle of the screen.
 
-* The dialog box always displays the icon and name of the visual.
+* The dialog header will contain the visual’s icon and its display name as a title.
 
 * The dialog box can have up to three action buttons. You can choose which buttons to display from a [given selection](create-display-dialog-box.md#invoke-the-dialog-box).
 
