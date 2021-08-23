@@ -125,9 +125,7 @@ globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript Or CSS.
 
-### Size {.tabset}
-
-#### Javascript
+#### [JavaScript](#tab/JavaScript)
 
 Add the width and height to the constructor method
 
@@ -136,7 +134,7 @@ Add the width and height to the constructor method
     options.element.style.height = '600px';
 ```
 
-#### CSS
+#### [CSS](#tab/css)
 
 Add the following line to the constructor:
 
