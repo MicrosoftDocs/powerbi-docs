@@ -121,6 +121,42 @@ globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ```
 
+### Invoke the dialog box
+
+Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals support the following six dialog box buttons:
+
+```javascript
+export enum DialogAction {
+        Close = 0,
+        OK = 1,
+        Cancel = 2,
+        Continue = 3,
+        No = 4,
+        Yes = 5
+    }
+
+```
+
+Each dialog box you create needs to be invoked in the `visual.ts` file. In this example, the dialog box is defined with two action buttons.
+
+```javascript
+private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
+```
+
+In this example, the dialog box is invoked by clicking a visual button. The visual button is defined as part of the visual constructor in the `visual.ts` file.
+
+```javascript
+button.onclick = () => {
+                const dialogOptions = {
+                    actionButtons: this.dialogActionsButtons
+                };
+                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
+                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
+                    catch(error => console.log("error:", error));
+            }
+```
+
+
 ## Define the size of the dialog box
 
 The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript Or CSS.
@@ -157,41 +193,6 @@ body.dialog-container {
 ```
 
 ---
-
-### Invoke the dialog box
-
-Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals support the following six dialog box buttons:
-
-```javascript
-export enum DialogAction {
-        Close = 0,
-        OK = 1,
-        Cancel = 2,
-        Continue = 3,
-        No = 4,
-        Yes = 5
-    }
-
-```
-
-Each dialog box you create needs to be invoked in the `visual.ts` file. In this example, the dialog box is defined with two action buttons.
-
-```javascript
-private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
-```
-
-In this example, the dialog box is invoked by clicking a visual button. The visual button is defined as part of the visual constructor in the `visual.ts` file.
-
-```javascript
-button.onclick = () => {
-                const dialogOptions = {
-                    actionButtons: this.dialogActionsButtons
-                };
-                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
-                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
-                    catch(error => console.log("error:", error));
-            }
-```
 
 ## How to close the dialog box?
 
