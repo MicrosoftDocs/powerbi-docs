@@ -113,26 +113,26 @@ To verify that the default region for data storage has been moved, follow the st
 ### Can I migrate back to the original region? If yes, what's the process and will I lose data?
 No, you can't revert to using the old region.
 
-### Is my data deleted immediately from the old region? If not, how long is it kept and do I have access to it?  
-Answer needed
+[//]: # "### Is my data deleted immediately from the old region? If not, how long is it kept and do I have access to it?  
+Answer needed"
 
-### What happens to my Microsoft 365 groups, SharePoint sites, etc.? Are they also migrated? 
-Answer needed
+[//]: # "### What happens to my Microsoft 365 groups, SharePoint sites, etc.? Are they also migrated? 
+Answer needed"
 
 ### Can I request that some of my data be migrated to a different region?
 No, migration of data to different regions isn't a supported scenario.
 
-### Does migration change any of my data or settings for Azure Active Directory (AAD)?
-Answer needed
+[//]: # "### Does migration change any of my data or settings for Azure Active Directory (AAD)?
+Answer needed"
 
 ### Can I use Power BI REST APIs for read-only operations during migration?
 No, using Power BI during tenant migration activity isn't recommended.
 
-### Why do I need to provide three proposed migration dates?
-Answer needed
+[//]: # "### Why do I need to provide three proposed migration dates?
+Answer needed"
 
-### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
-Answer needed
+[//]: # "### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
+Answer needed"
 
 ### How do I verify my data is now stored in the requested region? 
 Follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md). You should see the new region next to **Your data is stored in**.
@@ -140,9 +140,9 @@ Follow the steps in [Find where data is stored](service-admin-where-is-my-tenant
 ### Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?
 No, migration from one tenant to another isn't possible.
 
-### After migration, is it normal to still see some refreshes happening from the old tenant location? 
+[//]: # "### After migration, is it normal to still see some refreshes happening from the old tenant location? 
 Yes. Refreshes can happen temporarily and should stop after a few days. 
-*This needs verification from @Naveen Sivaraj/@Hanying Feng.
+*This needs verification from @Naveen Sivaraj/@Hanying Feng."
 
 ### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location? 
 Yes. As it’s a new location, the IP ranges are also changing and need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
