@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/11/2020
+ms.date: 08/20/2021
 LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop
@@ -54,7 +54,7 @@ Here's how Power Query Editor appears once a data connection is established:
 We'll look at each of these four areas: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
 
 ## The query ribbon
-The ribbon in Power Query Editor consists of four tabs: **Home**, **Transform**, **Add Column**, and **View**.
+The ribbon in Power Query Editor consists of four tabs: **Home**, **Transform**, **Add Column**, **View**, **Tools**, and **Help**.
 
 The **Home** tab contains the common query tasks.
 
@@ -95,7 +95,7 @@ The left pane, or **Queries** pane, displays the number of active queries and th
 ## The center (Data) pane
 In the center pane, or **Data** pane, data from the selected query is displayed. This pane is where much of the work of the **Query** view is accomplished.
 
-In the following image shows the Web data connection established earlier. The **Product** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
+In the following image shows the Web data connection established earlier. The **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
 
 ![Screenshot of Power B I Desktop showing Data in center pane.](media/desktop-query-overview/query-overview-the-center-pane.png)
 

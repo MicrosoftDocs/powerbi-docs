@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 08/20/2021
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-many relationships in Power BI Desktop
@@ -76,7 +76,7 @@ Before the July 2018 release of Power BI Desktop, you couldn't create a direct r
 
 * Create a third table that contains only the unique State IDs. The table could be any or all of:
   * A calculated table (defined by using Data Analysis Expressions [DAX]).
-  * A table based on a query that's defined in Query Editor, which could display the unique IDs drawn from one of the tables.
+  * A table based on a query that's defined in Power Query Editor, which could display the unique IDs drawn from one of the tables.
   * The combined full set.
 
 * Then relate the two original tables to that new table by using common *Many-1* relationships.

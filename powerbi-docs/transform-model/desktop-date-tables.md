@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/20/2021
 LocalizationGroup: Model your data
 ---
 # Set and use date tables in Power BI Desktop
@@ -26,7 +26,7 @@ To set a **date table** select the table you want to use as a date table in the 
 
 ![Screenshot of Power B I Desktop showing "Mark as date table" filter options in Fields pane.](media/desktop-date-tables/date-tables_02.png)
 
-You can also select the table and then select **Mark as Date Table** from the **Modeling** ribbon, shown here.
+You can also select the table and then select **Mark as Date Table** from the **Table tools** ribbon, shown here.
 
 ![Screenshot of Power B I Desktop showing "Mark as date table" button and options filter.](media/desktop-date-tables/date-tables_02b.png)
 
@@ -59,7 +59,7 @@ When you specify your own **date table**, you need to make sure the data type is
    
     ![Screenshot of Power B I Desktop showing Date filter in Fields pane.](media/desktop-date-tables/date-tables_04.png) 
 
-2. On the **Modeling** tab, select **Data type:** and then click the drop-down arrow to show available data types.
+2. On the **Column tools** tab, select **Data type** and then click the drop-down arrow to show available data types.
 
     ![Screenshot of Power B I Desktop showing Modeling tab with Data Type filter selected.](media/desktop-date-tables/date-tables_05.png)
 
