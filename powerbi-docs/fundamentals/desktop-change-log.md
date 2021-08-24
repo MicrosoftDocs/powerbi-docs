@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/30/2021
+ms.date: 08/23/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,14 @@ ms.date: 07/30/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## August 2021 QFE 1
+
+*Version: 2.96.901.0, Released: August 23rd, 2021*
+
+Bug fixes/improvements:
+- Fix not to show Biz apps launch event ad.
+- Fix for Query Editor: now'Enable load' will work after the query was renamed.
 
 ## July 2021 QFE 1
 
