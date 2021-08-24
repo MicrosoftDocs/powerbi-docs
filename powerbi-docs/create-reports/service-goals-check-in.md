@@ -27,15 +27,15 @@ The goals Details pane provides the entire history for the goal from the start d
 
 Scorecards can be filtered to goals labeled as a particular status by clicking on the summary cards at the top of the scorecard, making it easy to see what is on track or at risk. 
 
-    :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Goals filtered to at risk.":::
+   :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Goals filtered to status at risk via summary card.":::
     
-    :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Goals filtered to behind.":::
+   :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Goals filtered to status behind via summary card.":::
 
 There is also a keyword search that will filter the scorecard down to goal with the keyword match.  Simply click the filter icon above the first goal, and type in the keywords you're looking for.  The scorecard will filter to show those results without losing the context of any parent/child goal relationships, making ie easy to quickly find a particular goal and see how it's doing.
 
-    :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Location of keyword search on scorecard.":::
+   :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Indicating location of keyword search on scorecard.":::
     
-    :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Keyword search for premium.":::
+   :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Keyword search results for premium product sku.":::
 
 ## Add or update manual values
 
@@ -77,7 +77,7 @@ There is also a keyword search that will filter the scorecard down to goal with 
 
 Scorecard authors are able to automate status updates based on rules that govern that goal or subgoal. Rules will trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  These status rules will be refreshed every time the data in your scorecard is refreshed in the case of connected goals, and every time a check-in is performed in the case of manual goals.
 
-    :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="The Details pane for a goal.":::
+   :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="Showing the different types of status rules including value based, % of target based, and date based.":::
 
 
 To get started:
@@ -85,17 +85,17 @@ To get started:
 1. In edit mode, select the goal for which you want to create status rules.
 1. In the details pane, select the tab called status rules, and click new rule.
 
-    :::image type="content" source="media/service-goals-check-in/new-status-rule.png" alt-text="Showing new status rules in details pane.":::
+    :::image type="content" source="media/service-goals-check-in/new-status-rule.png" alt-text="Showing location of new status rules in details pane.":::
 
 1. From the first dropdown, select whether you want to base your rule on the value or the date.
 
-    :::image type="content" source="media/service-goals-check-in/first-dropdown.png" alt-text="First dropdown showing date or value.":::
+    :::image type="content" source="media/service-goals-check-in/first-dropdown.png" alt-text="First dropdown in rule UI showing date or value.":::
 
 1. From the second dropdown, select your qualifier.
 
     :::image type="content" source="media/service-goals-check-in/select-qualifier-second-dropdown.png" alt-text="Second dropdown showing qualifiers such as greater than or equal to.":::
 
-1. The last setting(s) will be based on your first dropdown.  If you chose value, you can etiher set the value or the percent or target met.  If you selected date in the first dropdown, you can select the date you want to base your rule on.
+1. The last setting(s) will be based on your first dropdown.  If you chose value, you can either set the value or the percent or target met.  If you selected date in the first dropdown, you can select the date you want to base your rule on.
 
     :::image type="content" source="media/service-goals-check-in/setting-value.png" alt-text="Setting the value for the rule.":::
     
