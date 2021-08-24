@@ -18,15 +18,15 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 ## August 2021 QFE 1
 
-*Version: 2.96.901.0, Released: August 23rd, 2021*
+*Version: 2.96.901.0, Released: August 23, 2021*
 
 Bug fixes/improvements:
-- Fix not to show Biz apps launch event ad.
-- Fix for Query Editor: now'Enable load' will work after the query was renamed.
+- Fix to hide Business apps launch event ad.
+- Fix for Query Editor: now 'Enable load' will work after the query was renamed.
 
 ## July 2021 QFE 1
 
-*Version: 2.95.983.0, Released: July 29th, 2021*
+*Version: 2.95.983.0, Released: July 29, 2021*
 
 Bug fixes/improvements:
 - Fix for script visuals: now they can be enabled.
@@ -35,23 +35,23 @@ Bug fixes/improvements:
 
 ## June 2021 QFE 1
 
-*Version: 2.94.921.0, Released: June 29th, 2021*
+*Version: 2.94.921.0, Released: June 29, 2021*
 
 Bug fixes/improvements:
-- Fix for Google Auth: Google Auth is moved to System Browser (non embedded) to allow users to log into Google Analytics and Google Big Query.
+- Fix for Google Auth: Google Auth is moved to System Browser (non-embedded) to allow users to sign in to Google Analytics and Google Big Query.
 - Fix for FinalNameCalculator that treated measure names as case sensitive: now when looking for measure name conflicts case will be ignored.
 - Fix for Q&A visual: now visual column renames are recognized as synonyms.
  
 ## May 2021 QFE 1
 
-*Version: 2.93.981.0, Released: May 27th, 2021*
+*Version: 2.93.981.0, Released: May 27, 2021*
 
 Bug fixes/improvements:
 - Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
 
 ## April 2021 QFE 2
 
-*Version: 2.92.1067.0, Released: May 4th, 2021*
+*Version: 2.92.1067.0, Released: May 4, 2021*
 
 Bug fixes/improvements:
 - Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
