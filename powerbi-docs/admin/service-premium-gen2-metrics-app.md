@@ -1,146 +1,92 @@
 ---
-title: Power BI Premium Gen2 Metrics app (preview)
-description: Learn how to use the Power BI Premium Gen2 Metrics app to manage and troubleshoot your Power BI Premium Gen2 capacities.
-author: davidiseminger
-ms.author: davidi
+title: Monitor Power BI Premium Gen2 capacities with the Gen2 metrics app.
+description: Learn how to use the Power BI Gen2 metrics app Metrics app, which enables you to monitor Power BI Premium Gen2 capacities.
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/08/2021
-LocalizationGroup: Premium
+ms.date: 08/17/2021
+LocalizationGroup: Premium 
 ---
-# Power BI Premium Gen2 metrics app (preview)
 
-With the release of **Power BI Premium Gen2 (preview)**, management of Premium capacities has become easier. To further facilitate managing your use of Premium Gen2 capacities, Power BI provides a self-service monitoring app, referred to in this article as the **Premium Gen2 Monitoring App**. 
+# Use the Gen2 metrics app (preview)
 
-The **Premium Gen2 Monitoring App** provides straightforward utilization data that reveals what is causing capacity resource utilization, and can help you plan your capacity needs or help inform changes in resource demand.
+The Power BI Premium utilization and metrics app, is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how best to utilize your Premium capacity resources. For example, the app can assist to identify when to scale up your capacity, or turn on autoscale.
 
->[!TIP]
->The **Premium Gen2 Monitoring App** is also applicable for [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md).
+The app is updated regularly with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
-> [!NOTE]
-> During the preview period, the Premium Gen2 Metrics app will undergo updates and revisions to respond to customer feedback. 
+To [install the Gen2 metrics app](service-premium-install-gen2-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
 
-## Install the Gen2 monitoring app
+## App pages
 
-Capacity administrators can get the **Premium Gen2 Monitoring App** app from its [link location](https://aka.ms/GenutilizationInstall), or by selecting **Apps** section in the Power BI service, selecting the **Get apps** button, and then searching for **Premium Gen 2 Capacity Utilization Metrics**. 
+The Gen2 metrics app has two pages:
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-01.png" alt-text="Screenshot of select get app button":::
+* [Overview](#overview)
 
-## Using the Gen2 monitoring app
+* [Release Notes](#release-notes)
 
-Once the **Premium Gen2 Monitoring App** is installed, launch the app and select the **Connect to your data** message on the top of the report to trigger loading data from your Premium Gen2 capacity. To connect to your capacity you must provide two parameters:
+### Overview
 
-* Your **capacity ID**
-* How many days of utilization you want to load. 
+This page provides an overview of the capacity performance. It is divided into three sections listed below.
 
-Your **capacity ID** can be found in the URL of the Power BI Admin portal. It's the value after the ```/capacity/``` portion in your URL, similar to what's shown in the following image.
+At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-02.png" alt-text="Screenshot of capacity ID in URL":::
+#### Weekly trendlines
 
-When choosing how many **days of utilization** to see in your report, select a value that reflects the analysis you want to perform. For example, if you are analyzing monthly usage for charging users of your capacity, you could choose to load 30 or 45 days of data once the metric app is out of preview. During the preview period, however, refreshing the Gen2 Metrics app to show more than 7 days may fail.
+The top four visuals, titled *Weekly trendlines*, summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks. Here's a breakdown of each visual:
 
-Once you submit those parameters, the **Premium Gen2 Monitoring App** loads the data and refreshes the view. The refresh can take a few minutes to complete.
+* **CPU** - Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
 
-Once refreshed, open the report. On the right are two charts:
+* **Active Artifacts** - Displays the number of Power BI items (such as reports, dashboards and datasets) that used CPU during the past four weeks.
 
-* A line and stacked column chart called **Daily peak usage**, showing v-cores used for each day.
-* A stacked bar chart called **Total by workspace ID and operation**, showing utilization by workspaces in your capacity
+* **Active Users** - Displays the number of users that used the capacity during the past four weeks.
 
-The **Daily peak usage** chart displays total available v-cores for each day as columns, and the highest v-core utilization recorded on that day as the line. Interact with the chart by selecting any column to filter the report to the selected day.
+* **Cores** - Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-03.png" alt-text="Screenshot of Daily peak usage chart":::
+#### Artifacts
 
-The **Total by workspace ID and operation** shows utilization broken down by the workspaces on your capacity. This visual can help you establish internal charge backs inside your organization, by attributing proportional costs to the amount of utilization for workspaces used by a given business unit.
+The artifacts visual is divided into three sections. The first section includes a matrix table, the second is made up of a stacked column table and the third section includes additional visual aids.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-04.png" alt-text="Screenshot of total by workspace I D and operation chart":::
+* **Matrix table** - The matrix visual displays metrics for each Power BI item on the capacity. Items in the *Full ID* column are comprised of a string that identifies them. The string's syntax is `workspace name \ item type \ item name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
-## Understanding usage patterns
+    Here are a few examples of ways you can sort this visual:
 
-To understand utilization patterns through each day, select any day in the **Daily peak usage** visual. In the following image, the *Feb 04* date is selected.
+    |Sort by          |Result   |
+    |-----------------|---------|
+    |CPU              |View the top CPUs that consumed Power BI items over the past two weeks |
+    |Duration         |View the Power BI items that need the longest processing time during the past two weeks |
+    |Users            |View the most popular Power BI items |
+    |Memory           |View the Power BI items that have the largest memory footprint |
+    |Throttling score |View the Power BI items that were impacted the most due to overload penalty |
+    |Performance delta|View the Power BI items that were impacted the most due to performance degradation |
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-05.png" alt-text="Screenshot of Daily peak usage chart with one day selected":::
+* **Stacked column table** - The stacked column table displays three values: *CPU*, *duration* (processing time) and *users*. It shows the top results for these values per Power BI item during the past two weeks. You can drill down to an individual day to identify daily patterns using an hourly view. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.  
 
-The right side of the report reveal utilization patterns throughout the day, in 15 minute intervals. In the top left corner of each visual is a spinning wheel icon, which continues to spin as data is being loaded into the chart. Rendering the chart requires significant data, so ensure the wheel icon is not spinning to ensure the data is fully loaded.
+* **Visual aids** - The three visuals at the bottom of the page are *visual aids* that respond to your interactions with the visuals in the other sections. They show three important auxiliary metrics:
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-06.png" alt-text="Screenshot of details for selected day from Daily peak usage chart":::
+    * *Utilization* - Overload impact score. Showing a chart with a score representing the severity that overload had on the performance of a Power BI item. When no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
 
-### Interactive and background operations
+    * *Memory* - Memory footprint recorded for Power BI items over time. When no item is filtered this chart shows the maximum value seen from all items at each ten minute time sample in the past two weeks.
 
-Throughout the **Premium Gen2 Monitoring App** you'll see two types of utilization values, from various artifacts: *interactive* and *background*. *Interactive* operations include report views and interactions that are rendered in real time. *Background* operations include refreshes of datasets and dataflows.
+    * *Degradation* - Performance profile changes. This visual shows the percentage of *fast*, *medium* and *slow* operations from the total number of operations performed on a Power BI item, over the past two weeks. When no item is filtered this chart shows the performance profile for *datasets* on the entire capacity.
 
-*Background* operations are typically create spikes in terms of CPU utilization and take a longer time to complete, which is why utilization for background operations is dispersed over 24 hours from the time they completed. A light blue line in the details chart, displayed in the previous image, reveals the overall background utilization value changed only subtly throughout the day due. This is due to the 24-hour distribution of each background operation.
+#### Release notes
 
-*Interactive* utilization is calculated when an operation completes. Power BI ensures no single operation will exceed your capacity; if an interactive operation's utilization is high enough to do so, its cost is spread over the following minutes. The dark blue line in the chart shows interactive utilization throughout the day.
+The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
 
-On the bottom right of the **Premium Gen2 Monitoring App** is a collection of summary visuals, showing peak utilization for the selected day, at what time of day the peak occurred, and how much of the peak was either interactive or background operation. The following image shows the summary visuals:
+## Limitations
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-07.png" alt-text="Screenshot of summary data for selected day of utilization":::
+* The app displays results for the last 14 or 28 days, depending on the visual.
 
-### Getting more detail
+* The app only displays memory measurements and performance breakdown for datasets.
 
-To see more information on a given data point in a chart, you can **CTRL+Click** on a data point to filter the table that appears beneath it display artifacts that contributed to the capacity's utilization during that 15-minute period. The table includes the artifact (dataset, dataflow, or other item), the operation, and the user who initiated it. The following image shows the results of a **CTRL+Click**:
+* Refresh Page does not work.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-08.png" alt-text="Screenshot of table detail information for a selected period of time":::
-
-You can use the dataset from the **Premium Gen2 Monitoring App** to build customized reports, and to connect to utilization data from other reports. The dataset is refreshed nightly.
-
-
-## Use a single app for all capacities
-
-You can create a single **Gen2 monitoring app** to monitor all of your Power BI Premium Gen2 capacities. The following steps describe how to create the app.
-
-1. **Create a new workspace:** The new workspace will be published as an app, and include all reports to monitor your Premium Gen2 capacities. You can name the workspace however you like, but it's best to have a good descriptive name, such as *Capacity monitoring*.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-09.png" alt-text="Screenshot of creating a new workspace called capacity monitoring":::
-
-2. Create a new app for each Premium Gen2 capacity you want to monitor, and rename each app with the name of the capacity or capacity ID, or some other naming convention that will enable you to distinguish among them. When installing more than one version of an app, choose **Install to a new workspace**, as shown in the following image.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-10.png" alt-text="Screenshot of installing app to a new workspace":::
-
-3. Open each app that you created in the previous step, and connect each app to its corresponding Premium Gen2 capacity's data. For each app you created, provide its corresponding **Capacity ID**.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-11.png" alt-text="Screenshot of connecting each app to its corresponding capacity":::
-
-4. Edit each app so you can save a *copy* of capacity its report. Select the **pencil** icon to edit, then select **Yes, go to workspace**.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-12.png" alt-text="Editing a workspace":::
-
-    Choose the **more** menu beside the name, and select **Save a copy**.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-13.png" alt-text="Screenshot of copying a report":::    
-    
-    When you select the destination workspace to which you want to save the copy of the report, select the workspace you created in **Step 1** as its destination. You should also rename the report appropriately, to identify the specific Premium Gen2 capacity to which the report belongs.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-14.png" alt-text="Screenshot of saving a copy of the report":::
-
-5. Next, publish the workspace you created in **Step 1** as an app. In this example, we are publishing two Premium Gen2 capacity reports to our unified workspace and app. You’ll need to provide a description for the app. First, select **Create app** from the upper-right corner.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-15.png" alt-text="Screenshot of creating a new app":::
-
-    Then select **Publish** from the dialog that appears.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-16.png" alt-text="Screenshot of selecting publish from the dialog":::
-
-6. Once the app is published, you can go directly to the app, or copy the link.
-
-    :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-17.png" alt-text="Screenshot of published app link":::
-
-When completed, you'll see each of the reports you copied in the workspace app you created. In this example, we created two apps, copied them into the new workspace we created in **Step 1**, and now we have a unified app that shows both workspace monitoring reports, all in a single report.
-
-:::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-18.png" alt-text="Screenshot of unified capacity app":::
-
-And that's it, you now have a unified app to monitor your Premium Gen2 capacities.
-
-For additional information about sharing the app, or considerations and limitations, check the following articles:
-
-* [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md)
-* [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
+* The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
 
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
-
+> [!div class="nextstepaction"]
+> [Install the Gen2 metrics app](service-premium-install-gen2-app.md)
