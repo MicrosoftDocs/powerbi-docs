@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/11/2021
+ms.date: 08/24/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
