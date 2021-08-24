@@ -1,15 +1,15 @@
 ---
-title: Datasets discovery for business users using the datasets hub (preview)
+title: Datasets discovery for business users using the datasets hub
 description: Learn how you can find, explore, and use the datasets and their related reports in your organization.
 author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 6/21/2021
+ms.date: 8/23/2021
 LocalizationGroup: Get started
 ---
-# Discover datasets using the datasets hub (preview)
+# Discover datasets using the datasets hub
 
 The datasets hub helps you find, explore, and use the datasets and reports in your organization. It provides information about the datasets as well as reports built using those datasets. In this way, report consumers can find reports based on trustworthy datasets.
 
