@@ -116,7 +116,7 @@ The unified Dataflows connector can significantly reduce evaluation time for ste
 
 To enable this feature for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must be using the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
-To leverage this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You may also need to make some changes to your dataflow as described in [Using the enhanced compute engine](#using-the-enhanced-compute-engine), and you must update any existing Power Query queries to use the new connector by replacing `"PowerBI.Dataflows”` in the **Source** section with `“PowerPlatform.Dataflows”`.
+To leverage this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You may also need to make some changes to your dataflow as described in [Using the enhanced compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine), and you must update any existing Power Query queries to use the new connector by replacing `"PowerBI.Dataflows”` in the **Source** section with `“PowerPlatform.Dataflows”`.
 
 ## Complex dataflow authoring in Power Query
 
