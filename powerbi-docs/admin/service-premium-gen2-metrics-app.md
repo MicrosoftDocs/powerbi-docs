@@ -1,6 +1,6 @@
 ---
 title: Monitor Power BI Premium Gen2 capacities with the Gen2 metrics app.
-description: Learn how to use the Power BI Gen2 metrics app Metrics app, which enables you to monitor Power BI Premium Gen2 capacities.
+description: Learn how to use the Power BI Gen2 metrics app Metrics app, which lets you monitor Power BI Premium Gen2 capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Use the Gen2 metrics app (preview)
 
-The Power BI Premium utilization and metrics app, is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how best to utilize your Premium capacity resources. For example, the app can assist to identify when to scale up your capacity, or turn on autoscale.
+The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best  utilize your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on autoscale.
 
 The app is updated regularly with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
@@ -29,7 +29,7 @@ The Gen2 metrics app has two pages:
 
 ### Overview
 
-This page provides an overview of the capacity performance. It is divided into three sections listed below.
+This page provides an overview of the capacity performance. It is divided into the three sections listed below.
 
 At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
