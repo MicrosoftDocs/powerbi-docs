@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 08/18/2021
+ms.date: 08/24/2021
 LocalizationGroup: Data from files
 ---
 
@@ -115,6 +115,8 @@ The unified Dataflows connector can significantly reduce evaluation time for ste
 - Dataset refresh operations can also fold to the enhanced compute engine, meaning even incremental refresh from a dataset can fold to a dataflow, improving refresh performance and potentially decreasing latency between refresh cycles. 
 
 To enable this feature for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must be using the August 2021 version of Power BI Desktop or later to take advantage of this feature.
+
+For existing solutions, you must be on a Premium or Premium Per User subscription. You may also need to make some changes to your dataflow to take advantage of the Enhanced Compute Engine by updating any existing Power Query queries to use the new connector by replacing `"PowerBI.Dataflows”` in the **Source** section with `“PowerPlatform.Dataflows”`.
 
 ## Complex dataflow authoring in Power Query
 
