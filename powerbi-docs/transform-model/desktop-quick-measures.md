@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/20/2021
+ms.date: 08/25/2021
 LocalizationGroup: Create reports
 ---
 # Use quick measures for common calculations

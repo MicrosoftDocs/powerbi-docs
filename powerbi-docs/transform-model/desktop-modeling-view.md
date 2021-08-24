@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 08/20/2021
+ms.date: 08/25/2021
 LocalizationGroup: Transform and shape data
 ---
 
