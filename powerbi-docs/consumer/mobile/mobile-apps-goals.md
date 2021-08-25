@@ -19,7 +19,7 @@ This article explains how to monitor your goals on the mobile app and shows you 
 
 To read more about Goals, see [Get started with goals in Power BI](../../create-reports/service-goals-introduction.md)
 
-## The goals hub
+## Goals hub
 The goals hub is a centralized place where you can see and update your important goals as well as navigate to scorecards you have access to.
 
 Tap the Goals tab on the app’s home page to display the goals hub.
@@ -27,6 +27,8 @@ Tap the Goals tab on the app’s home page to display the goals hub.
 ![Screenshot of the goals hub on the Power BI mobile app.](media/mobile-apps-goals/mobile-apps-goal.png)
   
 The top section of the goals hub, **My Goals**, contains all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on.
+
+### Update a goal
 
 You can easily update a goal by tapping the ellipsis at the upper right corner of a goal’s tile.
 
@@ -66,19 +68,32 @@ You can also tap and hold on the sparkline on a goal to see the the high-low val
 
 ![Screenshot of seeing the value range on a sparkline.](media/mobile-apps-goals/power-bi-mobile-app-sparkline.png)
 
-Goals detail pane
-Goal’s detail pane has a chart of the goal’s progress and lists all the activity on on the goal – check-ins and notes. 
+## Goals detail pane
+
+A goal’s detail pane has a chart of the goal’s progress and lists all the activity on the goal – all the check-ins and notes.
+
+![Screenshot of a goal detail pane.](media/mobile-apps-goals/power-bi-mobile-app-goal-details-pane.png)
  
 
-Tap the ellipsis to see update options or to open a connected report, if any.
+Tap the ellipsis to see update goal or to open a connected report, if any.
  
-You have several options:
-•	Quick check-in: Allows you to check in a value for the current date. Quick check-in is not available for goals with connected reports.
-•	New check-in: Allows you to check in a value for a date you choose, as well as add a note if you want to. 
-•	Connected report (current): Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report.
+You will have several options:
+* **Quick check-in**: Allows you to check in a value for the current date. Quick check-in is not available for goals with connected reports.
+* **New check-in**: Allows you to check in a value for a date you choose, as well as add a note if you want to. 
+* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report.
 
+### Add a note to an existing check-in
+
+Generally, you add note as part of a new check-in, but you can add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
+
+![Screenshot of the add note option.](media/mobile-apps-goals/power-bi-mobile-app-goal-details-pane.png)
+
+### Delete a check-in
+To delete a check-in, slide the check-in to the left and tap the **Delete check-in**.
+
+![Screenshot of the delete check-in option.](media/mobile-apps-goals/mobile-apps-delete-checkin.png)
 
 ## Next steps
-In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
-* [Explore dashboards and reports](mobile-apps-quickstart-view-dashboard-report.md)
-* [Explore reports in the Power BI mobile apps](mobile-reports-in-the-mobile-apps.md)
+ 
+* [Introducing Goals in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-goals-in-power-bi/)
+* [Get started with goals in Power BI](../../create-reports/service-goals-introduction.md)
