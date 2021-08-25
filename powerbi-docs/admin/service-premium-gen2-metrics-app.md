@@ -21,11 +21,13 @@ To [install the Gen2 metrics app](service-premium-install-gen2-app.md), you must
 
 ## App pages
 
-The Gen2 metrics app has two pages:
+The Gen2 metrics app has four pages, only two of which are currently active:
 
 * [Overview](#overview)
 
 * [Release Notes](#release-notes)
+
+The pages labeled **Evidence** and **Refresh** don't work yet.
 
 ### Overview
 
@@ -82,7 +84,7 @@ The release notes page contains the release notes for each new version of the ap
 
 * The app only displays memory measurements and performance breakdown for datasets.
 
-* Refresh Page doesn't work.
+* The Refresh page shown in the app doesn't work yet.
 
 * The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
 

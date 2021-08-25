@@ -29,15 +29,21 @@ Before you install the Gen2 metrics app, review these requirements:
 
 To install the Gen2 metrics app, follow these steps:
 
-1. Go to [https://aka.ms/gen2appredesign](https://aka.ms/gen2appredesign) and select **Install**.
+1. Go to [AppSource > Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport) and select **Get it now**.
 
-2. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
+   :::image type="content" source="media/service-premium-install-gen2-app/app-get-it-now.png" alt-text="Screen capture of app download with get it now button highlighted.":::
+
+1. If prompted, sign in to AppSource using your work or school account and complete the registration screen. The app will take you to the Power BI Service to complete the process. Select **Install** to continue.
+
+1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
     :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of setup screen showing connect button.":::
 
 3. In the first window, fill in the following fields:
 
     * **CapacityID** - An ID of a capacity you're an admin of. You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL.
+
+   :::image type="content" source="media/service-premium-install-gen2-app/connect-capacity-id.png" alt-text="Screen capture showing where to find the capacity I D in the page U R L.":::
 
     * **UTC_offset** - 0
 
@@ -51,7 +57,7 @@ To install the Gen2 metrics app, follow these steps:
 
     * **Authentication method** - Select your authentication method. The default authentication method is *OAuth2*.
 
-    * **Privacy level setting for this data source** - Select *Organizational*. This setting enables app access to all the data sources in your organization. If you select any other setting, the app won't work.
+    * **Privacy level setting for this data source** - Select *Organizational* to enable app access to all the data sources in your organization.
 
     >[!NOTE]
     >*ExtensionDataSourceKind* and *ExtensionDataSourcePath* are internal fields related to the app's connector. Do not change the values of these fields.
