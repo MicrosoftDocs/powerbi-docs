@@ -13,6 +13,11 @@ ms.custom: mode-portal
 ---
 # Goals
 
+Applies to
+| ![iPhone](./media/mobile-mobile-apps-goals/ios-logo-40-px.png) | ![iPads](./media/mobile-mobile-apps-goals) | ![Android phone](././media/mobile-mobile-apps-goals/android-logo-40-px.png) | ![Android tablet](././media/mobile-mobile-apps-goals/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhones |iPads |Android phones |Android tablets |
+
 The Power BI mobile apps make it easy for you to keep on top of your goals while on the go. In the app you can monitor progress on your goals, make check-ins to update progress, add notes, and, when a goal is connected to a report, easily open the associated report to dig deeper into the data.
 
 This article explains how to monitor your goals on the mobile app and shows you how to update progress and to dig deeper into the data when the goal is connected to a report.
