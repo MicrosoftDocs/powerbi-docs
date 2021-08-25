@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/11/2021
+ms.date: 08/24/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -63,7 +63,7 @@ The URLs for connecting to Power BI differ for government users and commercial u
 Your account might be set up in more than one cloud. If your account is set up that way, when you sign in to Power BI Desktop, you can choose which cloud to connect to.
 
 >[!TIP]
->In this video, [Using Power BI Desktop in government clouds](https://www.youtube.com/watch?v=CTMG1OE17uk), Technical Specialist Steve Winward shows how you can apply a registry setting to go directly to the right cloud endpoint for your environment. The [registry key settings](https://github.com/SteveWinward/PowerBI/blob/master/WriteUps/power-bi-desktop-sovereign-config.md) to bypass the global discovery endpoint are shared on GitHub.
+>In this video, [Using Power BI Desktop in government clouds](https://www.youtube.com/watch?v=CTMG1OE17uk), Technical Specialist Steve Winward shows how you can apply a registry setting to go directly to the right cloud endpoint for your environment. The [registry key settings](https://github.com/microsoft/Federal-Business-Applications/tree/main/whitepapers/power-bi-registry-settings) to bypass the global discovery endpoint are shared on GitHub.
 >
 
 ## Allow connections to Power BI
