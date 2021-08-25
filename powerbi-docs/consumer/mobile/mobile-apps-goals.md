@@ -39,7 +39,7 @@ You can easily update a goal by tapping the ellipsis at the upper right corner o
 You'll get a number of options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
 * **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
-* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
+* **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
 
 ## Scorecards
 
@@ -49,9 +49,9 @@ A scorecard has a summary that shows the number of goals in the scorecard and th
 
 ![Screenshot of a scorecard.](media/mobile-apps-goals/power-bi-mobile-app-scorecard-status-filters.png)
  
-Tap the status buttons in the summary to filter for the goals with the selected status. You can select multiple filters. Tap the Goals button to clear the filters. The image below shows the scorecard filtered by Completed and Behind status.
+Tap the status buttons in the summary to filter for the goals with the selected status. You can select multiple filters. Tap the Goals button to clear the filters. The image above shows the scorecard filtered by Completed and Behind status.
 
-In the scorecard, goals are listed in cards.
+In the scorecard, goals are represented by cards.
 
 ![Screenshot of a goal tile in a scorecard.](media/mobile-apps-goals/power-bi-mobile-app-goals-tile.png)
  
@@ -65,7 +65,7 @@ The card for a goal shows
 * An indication of whether there are any notes attached to the goal
 * An expandable menu to display subgoals, if any
 
-Tap anywhere else on the card to opens the goal’s details pane.
+Tap anywhere else on the card to open the goal’s [details pane](#goals-detail-pane).
 
 You can also tap and hold on the sparkline on a goal to see the the high-low value range and cycle (if any) of check-in values.
 
@@ -77,22 +77,21 @@ A goal’s detail pane has a chart of the goal’s progress and lists all the ac
 
 ![Screenshot of a goal detail pane.](media/mobile-apps-goals/power-bi-mobile-app-goal-details-pane.png)
  
-
 Tap the ellipsis to see update goal or to open a connected report, if any.
  
 You will have several options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
 * **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
-* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
+* **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
 
 ### Add a note to an existing check-in
 
-Generally, you add note as part of a new check-in, but you can add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
+Generally, you add note as part of a new check-in, but you can also add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
 
-![Screenshot of the add note option.](media/mobile-apps-goals/power-bi-mobile-app-goal-details-pane.png)
+![Screenshot of the add note option.](media/mobile-apps-goals/mobile-apps-add-note.png)
 
 ### Delete a check-in
-To delete a check-in, slide the check-in to the left and tap the **Delete check-in**.
+To delete a check-in, slide the check-in to the left and tap **Delete check-in**.
 
 ![Screenshot of the delete check-in option.](media/mobile-apps-goals/mobile-apps-delete-checkin.png)
 
