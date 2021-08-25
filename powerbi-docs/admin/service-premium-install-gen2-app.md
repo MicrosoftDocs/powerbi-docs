@@ -43,7 +43,7 @@ To install the Gen2 metrics app, follow these steps:
 
     * **CapacityID** - An ID of a capacity you're an admin of. You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL.
 
-   :::image type="content" source="media/service-premium-install-gen2-app/connect-capacity-id.png" alt-text="Screen capture showing where to find the capacity I D in the page U R L.":::
+     :::image type="content" source="media/service-premium-install-gen2-app/connect-capacity-id.png" alt-text="Screen capture showing where to find the capacity I D in the page U R L.":::
 
     * **UTC_offset** - 0
 
