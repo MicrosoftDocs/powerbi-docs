@@ -47,6 +47,6 @@ To find the default data region for your organization, follow these steps:
 - [International availability of Microsoft Power Platform](/power-platform/availability)
 - [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
 - [Move Power BI between regions](service-admin-region-move.md)
-- [Administrators learning catalog](learning-catalog\learning-catalog-administrator.md)
+- [Administrators learning catalog](..learning-catalog/learning-catalog-administrator.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
