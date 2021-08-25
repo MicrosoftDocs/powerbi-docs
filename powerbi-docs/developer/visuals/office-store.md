@@ -75,7 +75,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 5. In the **Create a new Power BI visual** window, enter an *offer ID* and *offer alias* for your Power BI visual and select **Create**.
 
-    :::image type="content" source="media/office-store/name-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
+    :::image type="content" source="media/office-store/offer-id-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
 
 6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, select if you want to [certify](power-bi-custom-visuals-certified.md) your visual, and provide details for [customer leads](https://aka.ms/PBIvisualconfiguringcustomerleads).
     >[!TIP]
