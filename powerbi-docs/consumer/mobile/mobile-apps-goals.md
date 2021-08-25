@@ -26,7 +26,9 @@ Tap the Goals tab on the app’s home page to display the goals hub.
 
 ![Screenshot of the goals hub on the Power BI mobile app.](media/mobile-apps-goals/mobile-apps-goal.png)
   
-The top section of the goals hub, **My Goals**, contains all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on.
+The top section of the goals hub, **My Goals**, displays all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on. Tapping on a goal opens the scorecard the goal belongs to.
+
+The My Goals section is followed by a list of the scorecards you have access to, grouped as Recents, Favorites, Shared with me, etc. Tapping a scorecard opens it.
 
 ### Update a goal
 
