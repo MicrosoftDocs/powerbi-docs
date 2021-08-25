@@ -30,7 +30,7 @@ The quick access tab shows you your frequently and recently viewed reports, dash
 
 ## Goals hub
 
-The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can can monitor progress on your goals, and even make check-ins to update progress, add notes, get to connected reports.
+The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can can monitor progress on your goals, and even make check-ins to update progress, add notes, or get to connected reports.
 
 ![Screenshot of goals hub in the Power BI mobile app.](media/mobile-apps-home-page/powerbi-mobile-app-hub-checkin.png)
 
