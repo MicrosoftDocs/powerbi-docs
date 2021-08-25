@@ -33,8 +33,8 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | --- | --- | --- |
 | Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package. Make sure the *pbiviz.json* file contains all the required metadata: <ul><li>Visual name</li><li>Display name</li><li>GUID</li><li>Version</li><li>Description</li><li>Support URL</li><li>Author name and email</li></ul> |
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
-| Icon |Yes |You should include the custom visual logo that will appear in the Marketplace listing. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
-| Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
+| Logo |Yes |You should include the custom visual logo that will appear in the Marketplace listing. The format should be PNG and it must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
+| Screenshots |Yes |Provide at least one screenshot. The format should be PNG. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
 | Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your URL should include https:// or https://. |
 | Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your link should include https:// or https://. |
 | End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use the [standard contract](https://go.microsoft.com/fwlink/?linkid=2041178), [Power BI visuals contract](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf), or your own EULA. |
@@ -53,7 +53,7 @@ Before you create the **pbiviz** package, make sure you fill the following field
 * name
 * email
 
-To submit your Power BI visual, you must be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account).
+To submit your Power BI visual, you must be enrolled with Partner Center. If you're not yet enrolled, [Open a developer account in Partner Center](/azure/marketplace/create-account).
 
 >[!NOTE]
 >**Individual publishers** can use one of these methods to submit a Power BI visual:
@@ -61,7 +61,7 @@ To submit your Power BI visual, you must be registered with Partner Center. If y
 >* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into Partner Center.
 >* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account) using your work email.
 
-Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](/office/dev/store/add-in-submission-guide).
+Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](https://aka.ms/PBIvisualavailability).
 
 1. Log into **Partner Center**.
 
@@ -77,17 +77,24 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
     :::image type="content" source="media/office-store/name-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
 
-6. Select **Packages** and upload your Power BI **pbiviz** file and the **pbix** file.
-
-7. Select **Properties** and provide the required information.
-
-8. If your product requires additional purchase, select **Offer setup** and check the **Associated service purchase** check box.
-
-9. (Optional) If you want to [certify](power-bi-custom-visuals-certified.md) your visual, select **Product setup** and check the **Power BI certification** check box.
+6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, select if you want to [certify](power-bi-custom-visuals-certified.md) your visual, and provide details for [customer leads](https://aka.ms/PBIvisualconfiguringcustomerleads).
     >[!TIP]
     The Power BI certification process takes time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
 
-10. Select **Offer setup** and click **Review and publish**.
+    Select **Save draft**.
+
+7. In **Properties**, Check categories and industries, supply links for your EULA, privacy policy, and support documents.
+
+    Select **Save draft**.
+
+8. In **Offer listing**, select the languages you want the offer to be available in, and provide all the marketplace details and media information in each language. When you select a name for the offer, you can also select *Reserve more names* to reserve other names for future use.
+    Select **Save draft**.
+
+9. In **Markets**, select the markets where you want the offer to be available.
+    Select **Save draft**.
+
+10. In **Technical configuration**, upload your Power BI **pbiviz** file and the **pbix** file.
+    Select **Review and Publish** to publish your offer.
 
 ## Tracking submission status and usage
 
