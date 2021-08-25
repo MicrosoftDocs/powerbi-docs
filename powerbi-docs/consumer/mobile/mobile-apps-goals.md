@@ -13,6 +13,7 @@ ms.custom: mode-portal
 ---
 # Goals
 
+
 Applies to
 | ![iPhone](media/mobile-apps-goals/ios-logo-40-px.png) | ![iPads](media/mobile-apps-goals/ios-logo-40-px.png) | ![Android phone](media/mobile-apps-goals/android-logo-40-px.png) | ![Android tablet](media/mobile-apps-goals/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
