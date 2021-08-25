@@ -79,7 +79,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, select if you want to [certify](power-bi-custom-visuals-certified.md) your visual, and provide details for [customer leads](https://aka.ms/PBIvisualconfiguringcustomerleads).
     >[!TIP]
-    The Power BI certification process takes time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
+    >The Power BI certification process takes time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
 
     Select **Save draft**.
 
