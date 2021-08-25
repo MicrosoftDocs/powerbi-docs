@@ -26,19 +26,20 @@ Tap the Goals tab on the app’s home page to display the goals hub.
 
 ![Screenshot of the goals hub on the Power BI mobile app.](media/mobile-apps-goals/mobile-apps-goal.png)
   
-The top section of the goals hub, **My Goals**, displays all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on. Tapping on a goal opens the scorecard the goal belongs to.
+The top section of the goals hub, **My Goals**, displays all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on. Tap a goal to open the scorecard that the goal belongs to.
 
-The My Goals section is followed by a list of the scorecards you have access to, grouped as Recents, Favorites, Shared with me, etc. Tapping a scorecard opens it.
+The My Goals section is followed by a list of the scorecards you have access to, grouped as Recents, Favorites, Shared with me, etc. Tap a scorecard to open it.
 
 ### Update a goal
 
 You can easily update a goal by tapping the ellipsis at the upper right corner of a goal’s tile.
 
-![Screenshot of check-in from goals hub.](media/mobile-apps-goals/power-bi-mobile-app-goals-hub-update.png) 
- 
-Tapping the goal itself opens the scorecard that the goal belongs to.
+![Screenshot of check-in from goals hub.](media/mobile-apps-goals/power-bi-mobile-app-goals-hub-update.png)
 
-The My Goals section is followed by a list of the scorecards you have access to, grouped as Recents, Favorites, Shared with me, etc. Tap a scorecard to open it.
+You'll get a number of options:
+* **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
+* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
+* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
 
 ## Scorecards
 
@@ -80,9 +81,9 @@ A goal’s detail pane has a chart of the goal’s progress and lists all the ac
 Tap the ellipsis to see update goal or to open a connected report, if any.
  
 You will have several options:
-* **Quick check-in**: Allows you to check in a value for the current date. Quick check-in is not available for goals with connected reports.
-* **New check-in**: Allows you to check in a value for a date you choose, as well as add a note if you want to. 
-* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report.
+* **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
+* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
+* **Connected report (current)**: Opens that report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
 
 ### Add a note to an existing check-in
 
