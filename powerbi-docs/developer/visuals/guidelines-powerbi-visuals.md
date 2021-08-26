@@ -43,7 +43,7 @@ You can use a pop-up window to explain how to purchase a license, when an invali
 
 ### Submission process
 
-Follow the [submission process](office-store.md#submitting-to-appsource) and then navigate to the *Product setup* tab. Check the *My product requires the purchase of a service* check box.
+Follow the [submission process](office-store.md#submitting-to-appsource) and then navigate to the *Offer setup* tab. Check the *My product requires the purchase of a service* check box.
 
 After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, *more purchase may be required* under the pricing options.
 
@@ -107,18 +107,7 @@ When using a commercial logo, the color of the logo must be grey (hex color #C8C
 
 ### Commercial logo size
 
-A Power BI visual requires two commercial logos, one for large tiles and one for small tiles. Place the logo within a bounding box placed at the top or bottom right corner, with 4-px margins.
-
-The following table describes the size considerations for Power BI visuals.
-
-|Settings  |Small Power BI visual  |Large Power BI visual  |
-|---------|---------|---------|
-|*Logo width*    |Up to 240 px         |Greater than 240 px         |
-|*Logo height*     |Up to 160 px         |Greater than 160 px         |
-|*Bounding box size*     |40 x 15 px         |101 x 30 px         |
-|*Commercial logo example*     |![A screenshot of the small version of the Microsoft Commercial logo.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![A screenshot of the Microsoft Commercial logo.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
-|*Bounding box example*    |![A screenshot of the dimensions of a small logo.](media/guidelines-powerbi-visuals/small-logo-box.png)         |![A screenshot of the dimensions of a large logo.](media/guidelines-powerbi-visuals/big-logo-box.png)         |
-|    |         |         |
+A Power BI visual offer uses two commercial logos, one for the offer details page and one for The search page. You provide the large logo in PNG. The large logo must be 300 x 300 px. Partner Center will use this logo to generate a smaller logo for the search page. You can optionally replace this with a different image later.
 
 ### Commercial logo behavior
 
@@ -128,20 +117,18 @@ Commercial logos are only allowed in edit mode. When clicked, a commercial logo 
 
 * Clicking the commercial logo opens a popup window with additional information. The popup window should be divided into two sections:
 
-    * A marketing area that can include the commercial logo, a visual, and market ratings.
-    * An information area that can include information and links.
+  * A marketing area that can include the commercial logo, a visual, and market ratings.
+  * An information area that can include information and links.
 
 ### Limitations regarding logos
 
 * Commercial logos can't be displayed in view mode.
 
-* An animated commercial logo can display animation for up to five seconds.
-
 * If your Power BI visual includes informative icons (i) in reading mode, they should comply to the color, size, and location of the commercial logo, as described above.
 
 * Avoid a colorful or a black commercial logo. The commercial logo must be grey (hex color #C8C8C8).
 
-    ![A screenshot of an unauthorized colorful Microsoft logo.](media/guidelines-powerbi-visuals/no-color-logo.png) ![A screenshot of an unauthorized Microsoft black logo](media/guidelines-powerbi-visuals/black-logo.png)
+    ![A screenshot of an unauthorized colorful Microsoft logo.](media/guidelines-powerbi-visuals/no-color-logo.png) ![A screenshot of an unauthorized Microsoft grey logo](media/guidelines-powerbi-visuals/black-logo.png)
 
 * Avoid a commercial logo with effects such as gradients or strong shadows.
 
