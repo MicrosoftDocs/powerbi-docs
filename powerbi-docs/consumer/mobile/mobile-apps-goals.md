@@ -19,7 +19,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-The Power BI mobile apps make it easy for you to keep on top of your goals while on the go. In the app you can monitor progress on your goals, make check-ins to update progress, add notes, and, when a goal is connected to a report, easily open the associated report to dig deeper into the data.
+The Power BI mobile apps make it easy for you to keep on top of your goals while on the go. While scorecards and goals are [created in the Power BI service](../../create-reports/service-goals-create.md), in the app you can monitor progress on your goals, make check-ins to update progress, add notes, and, when a goal is connected to a report, easily open the associated report to dig deeper into the data.
 
 This article explains how to monitor your goals on the mobile app and shows you how to update progress and to dig deeper into the data when the goal is connected to a report.
 
@@ -32,7 +32,7 @@ Tap the Goals tab on the app’s home page to display the goals hub.
 
 ![Screenshot of the goals hub on the Power BI mobile app.](media/mobile-apps-goals/mobile-apps-goal.png)
   
-The top section of the goals hub, **My Goals**, displays all the goals that matter most to you. Power BI automatically chooses which goals to display here based on the goals you are assigned to, have edited, or performed a recent check-in on. Tap a goal to open the scorecard that the goal belongs to.
+The top section of the goals hub, **My Goals**, displays all the goals that matter most to you. Tap a goal to open the scorecard that the goal belongs to.
 
 The My Goals section is followed by a list of the scorecards you have access to, grouped as Recents, Favorites, Shared with me, etc. Tap a scorecard to open it.
 
@@ -45,11 +45,12 @@ You can easily update a goal by tapping the ellipsis at the upper right corner o
 You'll get a number of options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
 * **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
-* **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
+* **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. You'll only see this option if the goal's current value is connected to a report.
+* **Connected report (target)**: Opens the report that is connected to the goal’s “target” value. You'll only see this option if the goal's target value is connected to a report.
 
 ## Scorecards
 
-Goals are created in scorecards. A scorecard is where colleagues can can keep track of a set of goals. 
+Goals are created in scorecards. A scorecard is where colleagues can can keep track of a set of goals. Goals and scorecards are [created in the Power BI service](../../create-reports/service-goals-create.md), but you can monitor and stay on top of them in the mobile app.
 
 A scorecard has a summary that shows the number of goals in the scorecard and the number of goals in each status followed by a list of all the goals.
 
@@ -105,3 +106,6 @@ To delete a check-in, slide the check-in to the left and tap **Delete check-in**
  
 * [Introducing Goals in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-goals-in-power-bi/)
 * [Get started with goals in Power BI](../../create-reports/service-goals-introduction.md)
+* [Stay on top of your goals in Power BI](../../create-reports/service-goals-check-in)
+* [Create scorecards and manual goals in Power BI](../../create-reports/service-goals-create.md)
+* [Create connected goals in Power BI](../../create-reports/service-goals-create-connected)
