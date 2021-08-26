@@ -138,10 +138,10 @@ When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#pow
 
 ```
 Executing the query ...
-Error -1052311437:
+Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Refresh operations
 
