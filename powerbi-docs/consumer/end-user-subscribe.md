@@ -67,7 +67,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
     - Give recipients permission to open and view the report or dashboard.
     - Select **Go to report/dashboard** to add a "Go to report" link to the body of the email.
     - Add a thumbnail preview of the report page to the body of the email.
-    - Add the full report as an attachment instead of only a single report page and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25 MB. The attachment respects all privacy labels for the report. 
+    - If the report is in Premium capacity, add the full report as an attachment instead of only a single report page. Select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25 MB. The attachment respects all privacy labels for the report. 
     
     > [!NOTE]
     >  You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.  
