@@ -50,22 +50,22 @@
         href: rls-guidance.md 
     - name: DAX
       items:
-      - name: "DIVIDE function vs divide operator (/)"
-        href: /dax/best-practices/dax-divide-function-operator
       - name: "Appropriate use of error functions"
         href: /dax/best-practices/dax-error-functions
-      - name: "Use SELECTEDVALUE instead of VALUES"
-        href: /dax/best-practices/dax-selectedvalue
-      - name: "Use COUNTROWS instead of COUNT"
-        href: /dax/best-practices/dax-countrows
-      - name: "Use variables to improve formulas"
-        href: /dax/best-practices/dax-variables
       - name: "Avoid converting BLANKs to values"
         href: /dax/best-practices/dax-avoid-converting-blank
-      - name: "Column and measure references"
-        href: /dax/best-practices/dax-column-measure-references
       - name: "Avoid using FILTER as a filter argument"
         href: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
+      - name: "Column and measure references"
+        href: /dax/best-practices/dax-column-measure-references
+      - name: "DIVIDE function vs divide operator (/)"
+        href: /dax/best-practices/dax-divide-function-operator
+      - name: "Use COUNTROWS instead of COUNT"
+        href: /dax/best-practices/dax-countrows
+      - name: "Use SELECTEDVALUE instead of VALUES"
+        href: /dax/best-practices/dax-selectedvalue
+      - name: "Use variables to improve formulas"
+        href: /dax/best-practices/dax-variables
       - name: "Sample model"
         href: /dax/dax-sample-model
     - name: Power BI reports
