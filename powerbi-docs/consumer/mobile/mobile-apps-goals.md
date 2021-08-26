@@ -106,6 +106,6 @@ To delete a check-in, slide the check-in to the left and tap **Delete check-in**
  
 * [Introducing Goals in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-goals-in-power-bi/)
 * [Get started with goals in Power BI](../../create-reports/service-goals-introduction.md)
-* [Stay on top of your goals in Power BI](../../create-reports/service-goals-check-in)
+* [Stay on top of your goals in Power BI](../../create-reports/service-goals-check-in.md)
 * [Create scorecards and manual goals in Power BI](../../create-reports/service-goals-create.md)
-* [Create connected goals in Power BI](../../create-reports/service-goals-create-connected)
+* [Create connected goals in Power BI](../../create-reports/service-goals-create-connected.md)
