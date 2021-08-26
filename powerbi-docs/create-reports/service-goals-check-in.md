@@ -1,6 +1,6 @@
 ---
-title: Stay on top of your goals in Power BI (preview)
-description: In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data and make notes on important events.
+title: View and update your goals in Power BI (preview)
+description: In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,9 +10,9 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/26/2021
 ---
-# Stay on top of your goals in Power BI (preview)
+# View and update your goals in Power BI (preview)
 
-Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data and make notes on important events. These features are covered in this section. 
+Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. These features are covered in this section. 
 
 ## View goal details 
 
@@ -75,7 +75,7 @@ There is also a keyword search that filters the scorecard down to goal with the 
 
 ## Create automated status rules 
 
-Scorecard authors can automate status updates based on rules that govern that goal or subgoal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  These status rules are refreshed every time the data in your scorecard is refreshed in the case of connected goals, and every time a check-in is performed in the case of manual goals.
+Scorecard authors can automate status updates based on rules that govern that goal or subgoal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  For connected goals, these status rules are refreshed every time the data in your scorecard is refreshed. For manual goals, they're refreshed every time you perform a check-in.
 
    :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="Showing the different types of status rules including value based, % of target based, and date based.":::
 
@@ -101,7 +101,7 @@ To get started:
     
     :::image type="content" source="media/service-goals-check-in/date-picker.png" alt-text="Showing date picker for date driven rule.":::
 
-1. Now set the status that should be shown when the rules are met, as well as the **Otherwise** status. 
+1. Now set the status that should be shown when the rules are met, and also the **Otherwise** status. 
 
     :::image type="content" source="media/service-goals-check-in/status-chosen.png" alt-text="Showing selected statuses for status rules.":::
 
