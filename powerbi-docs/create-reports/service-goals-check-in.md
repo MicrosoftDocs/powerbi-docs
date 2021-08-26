@@ -109,7 +109,7 @@ You can automate status updates based on rules that govern that goal or subgoal.
 ### More aspects of status rules
 
 - With automated status rules, you can create create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
-- For the mobile experience, automatic refresh on status rules is not supported at this time, but will be coming soon. 
+- For the mobile experience, automatic refresh on status rules is not supported at this time. 
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Adding a condition to a rule.":::
 
