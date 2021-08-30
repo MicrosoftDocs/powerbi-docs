@@ -94,7 +94,7 @@ Here's a conversation I'm having with the visualization *designer*. They are usi
 
 ## Considerations and troubleshooting
 
-- Comments are limited to 500 characters, including @mentions of other users and spaces.
+- Comments are limited to 2000 characters, including @mentions of other users and spaces.
 - The maximum number of conversations on a dashboard or report is 100. The maximum number of comments per conversation is 1000. To add a new conversation or comment, delete prior conversations or comments.
 - Bookmarks are not captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 - If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals is not available.
