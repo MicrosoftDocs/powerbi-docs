@@ -67,7 +67,7 @@ In the previous section, you connected to two sets of data: an Excel workbook an
 
 When you shape data, you transform a data source into the form and format that meets your needs.
 
-In Power Query Editor, many commands can be found in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then select the **Remove Columns** button from the **Home** tab in the ribbon.
+In Power Query Editor, many commands can be found in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then select the **Manage Columns** > **Remove Columns** button from the **Home** tab in the ribbon.
 
 ![Remove Columns command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
