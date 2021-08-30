@@ -7,7 +7,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/16/2020
+ms.date: 06/29/2021
 LocalizationGroup: Data from files
 ---
 # Data protection metrics report
