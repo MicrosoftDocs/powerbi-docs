@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 08/30/2021
 LocalizationGroup: Admin
 ---
 # Automatic aggregations (Preview)
 
-Automatic aggregations use state-of-the-art machine learning (ML) to continuously optimize DirectQuery datasets for maximum report query performance. Automatic aggregations are built on top of existing [user-defined aggregations](../transform-model/aggregations-advanced.md) infrastructure first introduced with composite models for Power BI. But unlike user-defined aggregations, automatic aggregations don’t require extensive data modeling and query-optimization skills to configure and maintain. Automatic aggregations are both self-training and self-optimizing. They enable dataset owners of any skill level to improve query performance, providing faster report visualizations for even the largest datasets.
+Automatic aggregations use state-of-the-art machine learning (ML) to continuously optimize DirectQuery datasets for maximum report query performance. Automatic aggregations are built on top of existing [user-defined aggregations](../transform-model/aggregations-advanced.md) infrastructure first introduced with composite models for Power BI. Unlike user-defined aggregations, automatic aggregations don’t require extensive data modeling and query-optimization skills to configure and maintain. Automatic aggregations are both self-training and self-optimizing. They enable dataset owners of any skill level to improve query performance, providing faster report visualizations for even the largest datasets.
 
 With automatic aggregations:
 
@@ -85,7 +85,7 @@ As described above, after the training operation completes as part of the first 
 
 :::image type="content" source="media/aggregations-automatic/auto-aggregations-refresh.png" border="false" alt-text="Refresh only operations":::
 
-Regularly scheduled refreshes throughout the day (or week) ensure aggregations data in the cache are more up to date with data at the backend data source. Through dataset settings, you can schedule up to 48 refreshes per day to ensure report queries that are returned by the aggregations cache are getting results based on the most recent refreshed data from the backend data source.
+Regularly scheduled refreshes throughout the day (or week) ensure aggregations data in the cache are more up to date with data at the backend data source. Through dataset Settings, you can schedule up to 48 refreshes per day to ensure report queries that are returned by the aggregations cache are getting results based on the most recent refreshed data from the backend data source.
 
 > [!CAUTION]
 > Training and refresh operations are process and resource intensive for both the Power BI service and the data source systems. Increasing the percentage of queries that use aggregations means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
@@ -104,7 +104,7 @@ While Power BI performs training and refresh operations as part of the first sch
 
 :::image type="content" source="media/aggregations-automatic/cache-refresh-history-partially-completed.png" alt-text="Refresh history partially completed":::
 
-If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache in dataset settings. This will reduce the number of aggregations created in the cache, but allow more time for training and refresh operations to complete. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
+If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache in dataset Settings. This will reduce the number of aggregations created in the cache, but allow more time for training and refresh operations to complete. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
 
 If training succeeds but refresh fails, the entire dataset refresh is marked as Failed because the result is an unavailable in-memory aggregations cache.
 
@@ -241,9 +241,9 @@ When using automatic aggregations, keep the following in mind:
 Power BI has a vibrant community where MVPs, BI pros, and peers share expertise in discussion groups, videos, blogs and more. When learning about automatic aggregations, be sure to check out these additional resources:
 
 - [Power BI Community](https://community.powerbi.com/)  
-- [Search "Power BI automatic aggregations" on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh)
+- [Search "Power BI automatic aggregations" on Bing](https://www.bing.com/search?q=power+bi+automatic+aggregations)
 
-## Next steps
+## See also
 
 [Configure automatic aggregations](aggregations-auto-configure.md)  
 [User-defined aggregations](../transform-model/aggregations-advanced.md)  
