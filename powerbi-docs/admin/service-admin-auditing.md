@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/09/2021
+ms.date: 08/30/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -400,7 +400,7 @@ The following operations are available in both the audit and activity logs.
 | Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
-| Viewed Power BI report                            | ViewReport                                  |                                          |
+| Viewed Power BI report                            | ViewReport                                  | Also generated per page when exporting a report|
 | Viewed Power BI tile                              | ViewTile                                    |                                          |
 | Viewed Power BI usage metrics                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |

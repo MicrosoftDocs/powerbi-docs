@@ -76,22 +76,22 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: DIVIDE function vs divide operator
-            url: /dax/best-practices/dax-divide-function-operator
           - text: Appropriate use of error functions
             url: /dax/best-practices/dax-error-functions
-          - text: Use SELECTEDVALUE instead of VALUES
-            url: /dax/best-practices/dax-selectedvalue
-          - text: Use COUNTROWS instead of COUNT
-            url: /dax/best-practices/dax-countrows
-          - text: Use variables to improve formulas
-            url: /dax/best-practices/dax-variables
           - text: Avoid converting BLANKs to values
             url: /dax/best-practices/dax-avoid-converting-blank
-          - text: Column and measure references
-            url: /dax/best-practices/dax-column-measure-references
           - text: Avoid using FILTER as a filter argument
             url: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
+          - text: Column and measure references
+            url: /dax/best-practices/dax-column-measure-references
+          - text: DIVIDE function vs divide operator
+            url: /dax/best-practices/dax-divide-function-operator
+          - text: Use COUNTROWS instead of COUNT
+            url: /dax/best-practices/dax-countrows
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: /dax/best-practices/dax-selectedvalue
+          - text: Use variables to improve formulas
+            url: /dax/best-practices/dax-variables
 
   # Card (optional)
   - title: Power BI reports
