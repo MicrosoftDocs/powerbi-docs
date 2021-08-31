@@ -1,6 +1,6 @@
 ---
 title: 'Goals in the Power BI mobile apps'
-description: This article explains how to work with scorecards and goals in the mobiel app.
+description: This article explains how to work with scorecards and goals in the mobile app.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
