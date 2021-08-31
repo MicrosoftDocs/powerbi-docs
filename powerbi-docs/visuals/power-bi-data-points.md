@@ -118,7 +118,7 @@ Depending on the configuration, a map can have:
 - Columns: Top 100 grouping columns 
 - Values: multiple values do not count against the data reduction
 
-### PowerApps visual
+### Power Apps visual
 Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Radial gauge

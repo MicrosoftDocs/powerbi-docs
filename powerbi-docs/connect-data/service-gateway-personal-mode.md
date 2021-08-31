@@ -28,7 +28,7 @@ The following table describes differences between an on-premises data gateway an
 
 |   |On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-|**Cloud services supported** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
+|**Cloud services supported** |Power BI, Power Apps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
 |**Runs** |As configured by users who have access to the gateway |As you for Windows authentication and as configured by you for other authentication types |
 |**Can install only as computer admin** |Yes |No |
 |**Centralized gateway and data source management** |Yes |No |

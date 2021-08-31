@@ -135,7 +135,7 @@ by Miranda Li
 
 ## Getting started
 
-**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Power Automate**  
+**Automate Day-to-Day Business Processes with Power BI, Power Apps, and Power Automate**  
 by Wim Coorevits and Enrique Plaza Garcia  
 [Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -155,7 +155,7 @@ by Miranda Li
 by Charles Sterling  
 [Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**The Total Economic Impact of Power Automate and PowerApps**  
+**The Total Economic Impact of Power Automate and Power Apps**  
 by Jonathan Lipsitz and Enrique Plaza Garcia  
 [Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 

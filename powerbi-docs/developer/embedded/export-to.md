@@ -110,7 +110,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
-    * PowerApps
+    * Power Apps
     * Python visuals
     * Visio
 
