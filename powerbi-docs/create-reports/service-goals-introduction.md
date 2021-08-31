@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/20/2021
+ms.date: 08/30/2021
 ---
 # Get started with goals in Power BI (preview)
 
@@ -20,7 +20,8 @@ This article covers the basics of using Goals in the Power BI service. See the o
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Stay on top of your goals in the Power BI service](service-goals-check-in.md)
+- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-goals.md)
 
 ## License requirements 
 
