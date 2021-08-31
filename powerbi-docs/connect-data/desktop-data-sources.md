@@ -114,7 +114,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service
-* Power Platform dataflows (Beta)
+* Dataflows
 
 The following image shows the **Get Data** window for **Power Platform**.
 
