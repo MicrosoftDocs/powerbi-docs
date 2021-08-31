@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 12/16/2019
+ms.date: 08/30/2021
 ms.custom: mode-portal
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -20,13 +20,21 @@ Applies to:
 |:--- |:--- |:--- |
 | iPhone | iPad | Android | 
 
-When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, and apps. In addition, there is an activity feed that keeps you up-to-date about what's happening with your Power BI content, as well as convenient navigation aids to get you quickly to the content you need.
+When you open Power BI Mobile app, you land on the home page, where you have **quick access** to your most frequently or recently visited reports, dashboards, apps, and scorecards. In addition, there is the **goals hub** that enables you to keep on top of your goals, and an **activity feed** that keeps you up-to-date about what's happening with your Power BI content. Finally, there are also convenient navigation aids to get you quickly to the content you need.
 
 ![Mobile app home page](./media/mobile-apps-home-page/powerbi-mobile-app-home.png)
- 
+
 ## Quick Access tab
 
-The quick access tab shows you your frequently and recently viewed reports, dashboards, and apps, grouped into two collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents. 
+The quick access tab shows you your frequently and recently viewed reports, dashboards, apps, and scorecards grouped into collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents.
+
+## Goals hub
+
+The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can can monitor progress on your goals, and even make check-ins to update progress, add notes, or get to connected reports.
+
+![Screenshot of goals hub in the Power BI mobile app.](media/mobile-apps-home-page/powerbi-mobile-app-hub-checkin.png)
+
+[Learn more about working with goals in the Power BI mobile app](mobile-apps-goals.md).
 
 ## Activity feed
 
@@ -62,10 +70,6 @@ The navigation bar provides quick access to:
 * ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
 
 ## Header
-
-At the top of the page, the header shows the name of the Power BI page, report, or dashboard you're on.
-
-![header](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 The header provides the following navigation items:
 * **Profile picture or avatar** - opens the side panel where you can [switch between your Power BI service and Report Server accounts](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
