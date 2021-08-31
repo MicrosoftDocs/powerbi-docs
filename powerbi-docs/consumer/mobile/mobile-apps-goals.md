@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 08/25/2021
+ms.date: 08/30/2021
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update goals in the Power BI mobile app.
 ---
