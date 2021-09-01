@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 08/30/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,13 @@ ms.date: 08/23/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## August 2021 QFE 2
+
+*Version: 2.96.1061.0, Released: August 30, 2021*
+
+Bug fixes/improvements:
+- Fix for custom visuals: now there will be no crash if a managed organizational store custom visual doesn't appear in the app source.
 
 ## August 2021 QFE 1
 
