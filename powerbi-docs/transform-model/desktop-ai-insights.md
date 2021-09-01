@@ -146,7 +146,7 @@ To learn more about dataflows, see [Self-service data prep in Power BI](./datafl
 
 To learn more about Azure Machine Learning, see the following articles:
 
-- Overview: [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Overview: [What is Azure Machine Learning?](/azure/machine-learning/overview-what-is-azure-machine-learning)
 - Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 ### Granting access to an Azure ML model
