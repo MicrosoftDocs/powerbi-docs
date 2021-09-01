@@ -107,7 +107,7 @@ Check out this [sample report](https://github.com/Microsoft/Powerbi-Visuals-Samp
 
 To review the available customizations, expand the Subtotals drop-down menu in the Format property pane, modify the subtotals settings, and track the changes to the subtotals presentation (named *Totals*) by the visual.
 
-![Subtotals drop-down menu](/powerbi-docs/visuals/media/desktop-matrix-visual/power-bi-subtotal.png)
+![Subtotals drop-down menu](/visuals/media/desktop-matrix-visual/power-bi-subtotal.png)
 
 ## Next steps
 
