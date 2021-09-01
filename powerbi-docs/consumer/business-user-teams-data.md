@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 08/31/2021
 LocalizationGroup: Get started
 
 ---
@@ -38,17 +38,22 @@ Review your data weekly, or at least monthly, to get in the habit of asking ques
 
 ## Add Power BI to a meeting
 
-Here's how to add a Power BI report, or a scorecard with goals, to a meeting.
+Here's how to add a Power BI report or scorecard to a meeting.
 
 1. Create the meeting and invite others.
 2. Send the meeting invite.
-3. Open the meeting from the calendar.
-4. Use the **+ Add a tab** button and add the Power BI tab to the meeting.
-5. Select a report or scorecard > **Save**.
-6. Select **Share** and share with everyone in your organization, or add the names of the meeting attendees.
-1. Copy the link to provide everyone with permission to view the report.
-1. If you can’t give permission, don’t worry. The others can request access when they try to view the report.
-1. Press Add to finish adding the report or scorecard to the meeting.
+3. Select **Edit** to open the meeting in the calendar.
+4. Select the **+ Add a tab** button and add the Power BI tab to the meeting.
+5. Navigate to a report or scorecard and select it.
+1. If you need to share it with meeting attendees, select **Make sure this team has been given access to this report in Power BI**. 
+
+    a. The report opens in the Power BI service. Select **Share** and add the names of the meeting attendees.
+    1. Copy the link to provide everyone with permission to view the report.
+
+    If you can’t give permission, don’t worry. The attendees can request access when they try to view the report.
+
+1. Select **Save** to finish adding the report or scorecard to the meeting.
+
 1. Add an agenda item to the meeting to review and discuss the data.
 
 ## Before the meeting
@@ -63,11 +68,11 @@ Consider setting a reminder for your meeting so attendees can also pre-read the 
 
 ## During the meeting
 
-When you’re in a meeting, data can help guide the discussion or answer questions raised by attendees. It’s easy to present data in Power BI during the meeting, share links to data with meeting attendees, or even find data that can answer questions.
+When you’re in a meeting, data can help guide the discussion or answer questions raised by attendees. It’s easy to present data in Power BI during the meeting, share links to data with meeting attendees, and even find data that can answer questions.
 
 1. After joining the meeting, navigate to the Teams window.
 2. Open the calendar in Teams.
-3. Open the meeting.
+3. Select **Edit** to open the meeting in the calendar.
 4. Navigate to the Power BI tab in the meeting.
 5. Use the meeting window to present your screen.
 
@@ -82,7 +87,6 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 
 1. View the report or scorecard in the Power BI service.
 1. Select **Share**.
-1. Select the people you want the link to work for > **Apply**.
 1. Copy the link.
 1. Paste the link in the meeting chat.
 
