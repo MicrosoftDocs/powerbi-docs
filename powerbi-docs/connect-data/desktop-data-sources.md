@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 08/13/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -98,6 +98,7 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB (Beta)
 * MarkLogic
+* Amazon Athena (Beta)
 
 
 > [!NOTE]
@@ -182,6 +183,7 @@ The **Online Services** category provides the following data connections:
 * Asana (Beta)
 * Assemble Views (Beta)
 * Automation Anywhere
+* Automy Data Analytics (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM (Beta)
@@ -200,7 +202,7 @@ The **Online Services** category provides the following data connections:
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-
+* Dynamics 365 Customer Insights (Beta)
 
 
 The following image shows the **Get Data** window for **Online Services**.

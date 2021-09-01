@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-transform-model
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 04/02/2021
 LocalizationGroup: Connect to data

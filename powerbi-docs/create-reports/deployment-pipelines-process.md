@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ---
 
 # Understand the deployment process
@@ -150,6 +150,8 @@ The following item properties are not copied during deployment:
 * Workspace settings - Each stage has its own workspace
 
 * App content and settings - To deploy your apps, see [deploying Power BI apps](#deploying-power-bi-apps)
+
+* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
 
 The following dataset properties are also not copied during deployment:
 

@@ -106,8 +106,6 @@ When using the Power BI service live connection, there are a few limitations and
 * If the owner modifies the original shared *.pbix* file, the dataset and report that is shared in the Power BI service is overwritten. Reports based on that dataset aren't overwritten, but any changes to the dataset are reflected in the report.
 * Members of a workspace can't replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
 * If you delete the shared dataset in the Power BI service, then other reports based on that dataset will no longer work properly or display their visuals.
-* For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a *.pbix* report and dataset to the Power BI service.
-* For Content Packs from *My Organization*, once copied, you can't replace the report created on the service or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
 * Deleting a shared dataset in the Power BI service means no one can access that dataset any longer from Power BI Desktop.
 * Reports that share a dataset on the Power BI service don't support automated deployments using the Power BI REST API.
 

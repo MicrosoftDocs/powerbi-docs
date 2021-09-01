@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/14/2021
+ms.date: 08/23/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -68,9 +68,6 @@ The exact steps for sign up can vary depending on your organization and what you
 
         ![Screenshot of Power B I service showing Get Started sign-in prompt.](media/service-self-service-signup-for-power-bi/power-bi-almost-there.png)
 
-1. Optionally, invite some colleagues to join you.
-
-   ![Screenshot of Power B I service showing the "invite more people" screen.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-friends.png)    
 
 1. At this point, you may have to wait if Microsoft is [setting up a new tenant](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser.
 
@@ -88,7 +85,7 @@ If a Power BI (free) license is sufficient, you don't have to do anything else. 
 
 ### Trial expiration
 
-When your free individual trial of Power BI expires, or you cancel your trial, your license changes back to its previous version of Power BI, either free or Pro. The trial cannot be extended. You will no longer have access to features that require a Premium Per User license. For more information, see [Features by license type](service-features-license-type.md). 
+When your free individual trial of Power BI expires, or you cancel your trial, your license changes back to its previous version of Power BI, either free or Pro. The trial cannot be extended. For more information, see [Features by license type](service-features-license-type.md). 
 
 If you'd like to cancel your trial before the expiration date, select your account icon and choose **Cancel trial**. 
 

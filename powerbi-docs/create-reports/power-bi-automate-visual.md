@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2021
+ms.date: 07/19/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -16,30 +16,17 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 :::image type="content" source="media/power-bi-automate-visual/power-automate-visual-resized-repositioned-report.png" alt-text="Flow button resized and repositioned on the report.":::
 
-## Download the visual
-
-To get started, you download the visual from AppSource and import it to your Power BI report. You need to download it to every report you want to use it in. It's not added the Power BI Desktop.
-
-1. In the **Visualizations** pane select **More options (...)** > **Get more visuals**.
-
-    :::image type="content" source="media/power-bi-automate-visual/automate-get-more-visuals.png" alt-text="Get more visuals.":::
-
-2. In AppSource, search for **Power Automate** > **Add**.
-
-    :::image type="content" source="media/power-bi-automate-visual/power-bi-visuals-appsource.png" alt-text="Power Automate visual in AppSource.":::
-
-    When it’s successfully imported, you see the **Power Automate** icon in the Visualization pane. 
-
-    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon.png" alt-text="Select the Power Automate icon.":::
-
-
 ## Add the Power Automate visual
 
-1. Select the Power Automate icon.
+1. Select the Power Automate icon from the **Visualizations** pane.
 
-    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon.png" alt-text="Select the Power Automate icon.":::
+    ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
 
-    It automatically gets added to your current report page, with getting started instructions.
+    In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate (preview)** in the **Power Platform** section.
+    
+    ![Screenshot of selecting the Power Automate icon on the Insert tab.](media/power-bi-automate-visual/power-automate-icon-in-desktop-ribbon.png)
+
+    Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
 1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 

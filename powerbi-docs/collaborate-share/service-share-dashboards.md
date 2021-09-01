@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 06/30/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -18,7 +18,7 @@ When you share a report or dashboard, the people you share it with can view it a
 
 ![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
-You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
+You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-roles-new-workspaces.md) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
 
 The Power BI service offers other ways to collaborate and distribute reports and dashboards, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances. 
 

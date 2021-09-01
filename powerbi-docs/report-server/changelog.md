@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2021
+ms.date: 07/06/2021
 ---
 
 # Change log for Power BI Report Server
@@ -33,6 +33,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Security updates
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.93.1681.0 (May 2021), Released: July 6, 2021*
+       - Contains fix for Google Auth: Google Auth is moved to System Browser (non embedded) to allow users to log into Google Analytics and Google Big Query.
     - *Version: 2.93.982.0 (May 2021), Released: May 27, 2021*
         - Contains changes required for connection with Power BI Report Server (May 2021).
         - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop for RS.

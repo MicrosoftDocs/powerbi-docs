@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 07/21/2021
 LocalizationGroup: Premium
 ---
 
@@ -18,11 +18,6 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 ## Why use BYOK?
 
 BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service within 30 minutes.
-
-> [!IMPORTANT]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do **not** support BYOK while in preview.
->
->**Embedded Gen2** capacities also do **not** support BYOK while in preview. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ## Data source and storage considerations
 
@@ -58,18 +53,20 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 ### Add the service principal
 
-1. In the Azure portal, in your key vault, under **Access policies**, select **Add New**.
+1. In the Azure portal, in your key vault, under **Access policies**, select **Add Access Policy**.
+
+1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+
+    ![P B I X file select cryptographic operations.](media/service-encryption-byok/key-permissions.png)
 
 1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
-1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+    ![P B I X file select service principal.](media/service-encryption-byok/service-principal.png)
 
-    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
-
-1. Select **OK**, then **Save**.
+1. Select **Add**, then **Save**.
 
 > [!NOTE]
 > To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.

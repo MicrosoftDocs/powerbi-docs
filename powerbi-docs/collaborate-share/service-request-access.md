@@ -8,7 +8,7 @@ ms.custom: video-0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/14/2021
+ms.date: 06/30/2021
 LocalizationGroup: Share your work
 ---
 # Request or grant access to shared dashboards or reports
@@ -35,7 +35,7 @@ If you're a report owner, you may receive an email from **Microsoft Power BI** s
 
 1. Select **Grant access**.
 
-    The user’s **Pending** access request opens automatically. Select **Approve request** to grant the user Read permissions to the report.
+    The user’s **Pending** access request opens automatically. Select **Approve** to grant the user Read permissions to the report.
 
     :::image type="content" source="media/service-request-access/power-bi-share-report-request-access.png" alt-text="Screenshot of Share report access request.":::
 

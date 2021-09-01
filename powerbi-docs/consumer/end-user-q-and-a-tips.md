@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: Mohammad.ali
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 09/23/2020
 LocalizationGroup: Ask questions of your data
@@ -46,7 +46,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Times**  |am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss  |
 |  |  Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 o clock, noon, midnight, hour, minute, second.  |
 |**Top N**     |     (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
-|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI custom visuals](../developer/visuals/power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
+|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI custom visuals](../developer/visuals/develop-power-bi-visuals.md) that you've manually added to the Visualization pane.  |
 |  |  Example: show districts by month and sales total as bar chart               |
 |**Wh (relationship, qualified)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
 
@@ -61,6 +61,14 @@ Q&A does its best to understand and answer the question being asked. It tries to
 * adds a double underline to words it doesn't understand.
 * adds a single underline to words it does understand.
 * allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
+
+## Tell Q&A which visual to use
+
+When typing natural language queries with Power BI Q&A, you can specify the visual type in your query.  For example:
+
+"***sales by state as treemap***"
+
+![q&a session](media/end-user-q-and-a-tips/qa-treemap.png)
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.

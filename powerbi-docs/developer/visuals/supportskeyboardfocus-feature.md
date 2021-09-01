@@ -1,37 +1,38 @@
 ---
-title: The supportsKeyboardFocus feature in Power BI
-description: This article describes how to use the supportsKeyboardFocus feature in Power BI visuals and its requirements.
+title: Keyboard navigation feature in Power BI
+description: This article describes how to enable using the keyboard to navigate visuals in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 04/30/2020
+ms.topic: how-to
+ms.date: 07/29/2021
 ---
 
-# Use the supportsKeyboardFocus feature
+# Enable keyboard navigation of a visual
 
-This article describes how to use the `supportsKeyboardFocus` feature in Power BI visuals.
-The `supportsKeyboardFocus` feature allows navigating the data points of the visual using the keyboard only.
+This article describes how to enable the user to navigate through a Power BI visual using the keyboard. This feature helps makes Power BI more accessible to people with disabilities and allows everyone more choice when interacting with reports.
+
+The `supportsKeyboardFocus` feature makes it possible to navigate the data points of the visual using the keyboard only.
+
+## How to navigate using the keyboard
+
+For a brief illustration of how keyboard navigation works:
+
+1. Open any visual that has the `supportsKeyboardFocus` feature enables. (Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-sample), for example.)
+2. Select any data point within the visual and press the **Tab** key.
+    The focus moves to the next data point each time you hit **Tab**.
+3. Press **Enter** to select the highlighted data point.
+
+> [!div class="mx-imgBorder"]
+> ![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
 
 To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
-## Example
+## Enable the support keyboard navigation feature
 
-Open a visual that uses the `supportsKeyboardFocus` feature. Select any data point within the visual and select tab. The focus moves to the next data point for each time you select tab. Select enter to select the highlighted data point.
-
-![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
-
-## Requirements
-
-This feature requires API v2.1.0 or higher.
-
-This feature can be applied to all visuals except image visuals.
-
-## Usage
-
-To use the `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
+To enable the `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
 This capability allows the visual to receive focus through keyboard navigation.
 
 ```json
@@ -40,11 +41,17 @@ This capability allows the visual to receive focus through keyboard navigation.
         "supportsKeyboardFocus": true
             ...
     }
-
 ```
+
+## Known limitations and issues
+
+* This feature requires API v2.1.0 or higher.
+* This feature can't be applied to image visuals.
 
 ## Next steps
 
-To learn more about accessibility features, see [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md).
+> [!div class="nextstepaction"]
+> [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md)
 
-To try out Power BI development, see [Developing a Power BI circle card visual](develop-circle-card.md).
+> [!div class="nextstepaction"]
+> [Developing a Power BI circle card visual](develop-circle-card.md)

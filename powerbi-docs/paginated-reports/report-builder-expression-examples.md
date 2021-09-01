@@ -11,7 +11,7 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 ---
 # Expression examples in Power BI Report Builder
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
 

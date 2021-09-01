@@ -5,7 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 09/27/2019
 ---

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 11/23/2020
+ms.date: 07/18/2021
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -165,6 +165,9 @@ public async Task<AuthenticationResult> DoAuthentication(){
 ## Configure Visual Studio to use MSI
 
 When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+
+>[!NOTE]
+>The user that signs into Visual Studio has to have Azure Key Vault permissions to get the certificate.
 
 1. Open your project in Visual Studio.
 

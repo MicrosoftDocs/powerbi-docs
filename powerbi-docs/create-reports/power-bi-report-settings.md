@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 08/02/2021
 LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports
@@ -29,8 +29,8 @@ It might be helpful to read these articles first:
 
 - For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- You need to have edit permission for the report in the Power BI service. See [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for details on permission.
-- If you don't already have a report in the Power BI service, you can [install a sample content pack](sample-datasets.md#install-built-in-content-packs) containing a dashboard, report, and dataset.
+- You need to have edit permission for the report in the Power BI service. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permission.
+- If you don't already have a report in the Power BI service, you can [install a sample content pack](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and dataset.
 
 ## Open the Settings pane in Power BI Desktop
 

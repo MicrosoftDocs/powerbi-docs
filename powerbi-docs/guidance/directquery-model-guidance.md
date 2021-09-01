@@ -5,9 +5,9 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/21/2021
+ms.date: 07/07/2021
 ---
 
 # DirectQuery model guidance in Power BI Desktop

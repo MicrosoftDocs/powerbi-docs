@@ -60,8 +60,10 @@ In another article, you can see how to configure Azure Log Analytics to work wit
 ## Considerations and limitations
 Keep the following considerations and limitations in mind when working with Azure Log Analytics and Power BI:
 
+* [Sovereign clouds](https://powerbi.microsoft.com/clouds/) are not currently supported.
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
+* Activities are only captured for datasets physically hosted within the Premium workspace where you configure logging. For example, if you configure logging for Premium workspace A, you will not see logs for any reports within that use datasets hosted in [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/#overview). You will also not see any logs for [shared datasets](https://docs.microsoft.com/power-bi/connect-data/service-datasets-share) that are not in Premium workspace A. To capture activities for shared datasets, configure logging on the workspace that contains the shared dataset, not the workspace that contains the report.
 * You cannot connect multiple Power BI workspaces to the same Log Analytics workspace yet. This restriction will be removed during the Preview. 
 * Datasets created on the web by uploading a CSV file do not generate logs.
 * If you have Multi-Factor Auth (MFA) in place for Azure but not Power BI, the configuration screens will give general Azure errors. A workaround is to first log in to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.

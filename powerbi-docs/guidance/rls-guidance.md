@@ -5,7 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 06/18/2020
 ---
@@ -191,7 +191,7 @@ When a specific user can't see any data, it could be because their UPN isn't sto
 When a specific user can see all data, it's possible they're accessing reports directly in the workspace and they're the dataset owner. RLS is only enforced when:
 
 - The report is opened in an app.
-- The report is opened in a workspace, and the user is mapped to the [Viewer role](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- The report is opened in a workspace, and the user is mapped to the [Viewer role](../collaborate-share/service-roles-new-workspaces.md).
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 05/05/2021
+ms.date: 07/16/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -138,10 +138,10 @@ When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#pow
 
 ```
 Executing the query ...
-Error -1052311437:
+Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Refresh operations
 
@@ -208,10 +208,6 @@ As stated in the error message, to resolve this issue, either delete or rename t
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
-
-## Dataset refresh through the XMLA endpoint
-
-Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
 
 ## DISCOVER_M_EXPRESSIONS 
 

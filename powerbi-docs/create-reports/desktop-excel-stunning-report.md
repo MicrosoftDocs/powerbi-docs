@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 06/07/2021
+ms.date: 07/02/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
