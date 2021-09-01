@@ -52,7 +52,7 @@ There are a few important considerations and limitations associated with downloa
 * Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded .pbix files using a Desktop version that does not support information protection.
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
-* Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
+* Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a .pbix file.
 * Live connect reports can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md). 
 * Usage metric reports can't be downloaded to a .pbix file
