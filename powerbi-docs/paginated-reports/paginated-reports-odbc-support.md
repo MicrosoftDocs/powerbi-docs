@@ -88,17 +88,17 @@ Here are some of the known limitations:
 - For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
 
     Example query:  
-    ```SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)```
+    `SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)`
 
     >[!NOTE]
     >Some data sources might require specific formatting. You can use an expression to format the parameter in the example above. For example, `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
 
-- For some ODBC drivers, there is a behavior difference between the Gateway and Power BI Report Builder. This may apply to all, some or just one driver. One known example is the Simba-BigQuery query requires casting of the parameter if it is not a string type. 
+- For some ODBC drivers, there is a behavior difference between the Gateway and Power BI Report Builder. This may apply to all, some, or just one driver. One known example is that the Simba-BigQuery query requires casting of the parameter if it is not a string type. 
 
-Example error string: "A data source used by this report returned an error. An exception encountered while accessing the target data source ERROR [42000] [Simba][BigQuery] (70) Invalid query: No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:7]"
+   Example error string: "A data source used by this report returned an error. An exception encountered while accessing the target data source ERROR [42000] [Simba][BigQuery] (70) Invalid query: No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:7]"
 
-    Example query with proper cast for an INT64 column:  
-    ```SELECT * FROM `teamplz.Sample.SampleTable` WHERE DataID=CAST(? as INT64)```
+   Example query with proper cast for an INT64 column:  
+   `SELECT * FROM 'teamplz.Sample.SampleTable' WHERE DataID=CAST(? as INT64)`
 
 - Any special data types exposed by a given ODBC driver or backend that aren't simply mapped to an <span>ADO.Net</span> data type aren't supported. One example is the Snowflake Array data type.
 - Scenarios where ODBC drivers use stored procedures without parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.
