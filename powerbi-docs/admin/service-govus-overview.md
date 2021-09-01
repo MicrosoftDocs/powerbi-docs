@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/24/2021
+ms.date: 09/01/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -89,8 +89,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Microsoft 365 integration | **GCC**: [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br>**GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)<br>**DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us<br>**GCC High**: *.high.powerbigov.us<br>**DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
-| Informational messages (optional) | **All**: dynmsg.modpim.com |
-| NPS surveys (optional) | **All**: nps.onyx.azure.net |
+| Informational messages (optional) | **All**: arc.msn.com |
 | | |
 
 <br>
