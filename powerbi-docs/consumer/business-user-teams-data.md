@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 
 ---
 
-# Create data-driven meetings in Microsoft Teams
+# Use data to make better meetings in Microsoft Teams
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
@@ -31,7 +31,7 @@ Here's how you can use data before, during, and after your meetings.
 Here are some questions you can use in your meeting agenda to jump start discussion and determine the best actions to take to achieve your desired outcomes:
 
 - Are we making progress toward our object as quickly as we expected to?
-- What actions can we take in the next week ormonth that are most likely to move these numbers?
+- What actions can we take in the next week or month that are most likely to move these numbers?
 - What numbers can we start tracking to get a better sense of if we’re making progress towards our desired outcomes?
 
 Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage the data as they plan their work.
@@ -42,13 +42,23 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
 1. Create the meeting and invite others.
 2. Send the meeting invite.
-3. Select **Edit** to open the meeting in the calendar.
+3. Select **Edit** to open the meeting in the calendar. You only see the option to edit if you're the meeting organizer.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-calendar-edit.png" alt-text="Edit the calendar item.":::
+
 4. Select the **+ Add a tab** button and add the Power BI tab to the meeting.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-invite-plus-sign.png" alt-text="Select the plus sign + to add a tab.":::
+
 5. Navigate to a report or scorecard and select it.
 1. If you need to share it with meeting attendees, select **Make sure this team has been given access to this report in Power BI**. 
 
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-power-bi-report-tab.png" alt-text="Make sure this team has been given access to this report in Power BI.":::
+
     a. The report opens in the Power BI service. Select **Share** and add the names of the meeting attendees.
     1. Copy the link to provide everyone with permission to view the report.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/service-share-report-link.png" alt-text="Share the report in the Power BI service.":::
 
     If you can’t give permission, don’t worry. The attendees can request access when they try to view the report.
 
@@ -73,31 +83,43 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 1. After joining the meeting, navigate to the Teams window.
 2. Open the calendar in Teams.
 3. Select **Edit** to open the meeting in the calendar.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-calendar-edit.png" alt-text="Edit the calendar item.":::
+
+    As the organizer, you're the only one who can edit it.
+
 4. Navigate to the Power BI tab in the meeting.
 5. Use the meeting window to present your screen.
 
 ### Capture specific visuals that are important for everyone to see
 
-1. View the report in Power BI.
+1. View the report in the Power BI app in Teams.
 2. Select the visual.
 3. Select **Copy visual as image** to copy the visual.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-power-bi-copy-visual.png" alt-text="Select Copy visual as image.":::
+
 4. Paste the visual into the meeting chat.
 
 ### Share a link to Power BI reports or scorecards
 
 1. View the report or scorecard in the Power BI service.
-1. Select **Share**.
-1. Copy the link.
+1. Select **Share** and add the names of the meeting attendees.
+1. Copy the link to provide everyone with permission to view the report.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/service-share-report-link.png" alt-text="Share the report in the Power BI service.":::
+
 1. Paste the link in the meeting chat.
+
+    If you can’t give permission, don’t worry. The attendees can request access when they try to view the report.
 
 ### Find data to answer questions
 
 1. Open the meeting chat.
 2. Select **Messaging extensions (...)**.
-3. Select **... Messaging extensions**.
 4. Select **Power BI**.
 5. Search for content, or select from your list of recent items.
-6. Pick an item
+6. Pick a Power BI item.
 7. Select **Send**.
 1. Select **Open**.
 

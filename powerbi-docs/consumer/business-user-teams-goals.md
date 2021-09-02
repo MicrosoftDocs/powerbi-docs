@@ -37,7 +37,7 @@ It's simple to start tracking goals by creating a scorecard.
 1. Create a goal in the scorecard, with a **Goal name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**.
 1. **Save**.
 
-Once you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat.
+Once you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
 
 ## Track goals with your team
 
@@ -70,3 +70,4 @@ Each project and organization can have its own goals. You can find all your goal
 ## Next steps
 
 [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+[Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
