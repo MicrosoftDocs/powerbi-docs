@@ -117,11 +117,19 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 
 1. Open the meeting chat.
 2. Select **Messaging extensions (...)**.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-chat-meeting-messaging-extensions.png" alt-text="Select Messaging extensions (...).":::
+
 4. Select **Power BI**.
 5. Search for content, or select from your list of recent items.
 6. Pick a Power BI item.
 7. Select **Send**.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-power-bi-meeting-chat-send.png" alt-text="Select Send to send the message in chat.":::
+
 1. Select **Open**.
+
+    :::image type="content" source="../collaborate-share/media/business-user-teams-data/teams-power-bi-meeting-chat-open.png" alt-text="Select Open to open the message in chat.":::
 
 ## After the meeting
 
