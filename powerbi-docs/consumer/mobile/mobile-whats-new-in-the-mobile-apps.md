@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 09/01/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -17,6 +17,10 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## September 2021
+### Find content that’s relevant to you  (Android and iOS)
+Enhance your Power BI experience and productivity by exploring content from your organization that has been picked especially for you. It’s there for you under Explore.
 
 ## August 2021
 ### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 
