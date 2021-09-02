@@ -132,7 +132,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     A solid underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the term **sales** but not the term **territory**.
 
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-underline.png" alt-text="Q&A question with a word solid underlined and a word dotted underline.":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-underline-word.png" alt-text="Q&A question with a word solid underlined and a word dotted underline.":::
 
     Select the unknown word to see suggestions.
 
