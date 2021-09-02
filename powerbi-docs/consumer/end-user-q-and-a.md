@@ -18,7 +18,7 @@ LocalizationGroup: Ask questions of your data
 ## What is Q&A?
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."
 
-Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
+Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI datasets.
 
 ## Which visualization does Q&A use?
 Q&A picks the best chart or graph based on the data being displayed. Sometimes data in the underlying dataset is defined as a certain type or category and this helps Q&A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
@@ -30,7 +30,7 @@ You'll find Q&A on dashboards in the Power BI service, and at the bottom of the 
 
 ![question box](media/end-user-q-and-a/power-bi-qna.png)
 
-You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
+You'll also find Q&A on reports, if the report *designer* added an interactive [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
 
 ![Q&A visual](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
