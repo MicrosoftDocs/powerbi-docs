@@ -78,6 +78,9 @@ In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned fro
 ## How do I start?
 First, get familiar with the content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. 
 
+> [!NOTE]
+> If you already feel comfortable with the data, just place your cursor in the question box to open the Q&A screen. 
+
 For example:
 
 * If a visual's axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*, or show *sales* by month as a bar chart."
@@ -86,7 +89,7 @@ For example:
 
 Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
 
-:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot of the Q&A screen"::: 
+:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot of the Q&A screen."::: 
 
 Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and questions containing the names of the tables in the underlying datasets and may even see *featured* questions created by the dataset owner.
 
@@ -94,7 +97,7 @@ You can select any of these to add them to the question box and then refine the 
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-results.png" alt-text="Q&A screen with query":::
 
-Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing your own natural language query](#create-a-visual-using-your-own-qa-question)
+Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual in reports. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing your own natural language query](#create-a-visual-using-your-own-qa-question)
 
 ## Use Q&A to ask natural language questions 
 Open the "Sales and Marketing Sample" dashboard. To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question. 
@@ -103,11 +106,11 @@ Open the "Sales and Marketing Sample" dashboard. To use Q&A on a dashboard or to
 
 Here, we've selected **top states by total business units**. Power BI does its best to select which visual type to use. In this case, it's a basic map.
 
-:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-suggest.png" alt-text="Q&A visual map":::
+:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-suggest.png" alt-text="Q&A visual map.":::
 
 But you can tell Power BI which visual type to use by adding it to your natural language query. Keep in mind that not all visual types will work or make sense with your data. For example, this data wouldn't produce a meaningful scatter chart. But it works as a filled map.
 
-:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-filled-map.png" alt-text="Q&A visual as a filled map":::
+:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-filled-map.png" alt-text="Q&A visual as a filled map.":::
 
 
 
@@ -129,7 +132,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     A solid underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the term **sales** but not the term **territory**.
 
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-underline.png" alt-text="Q&A question with a word solid underlined and a word dotted underline":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-underline.png" alt-text="Q&A question with a word solid underlined and a word dotted underline.":::
 
     Select the unknown word to see suggestions.
 
@@ -148,7 +151,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     After selecting Power BI's suggestions, notice that all words are recognized and underlined in blue. These results display as a line chart. Power BI Q&A restates your question below the visualization. 
 
-    ![Q&A visual results as a line chart](media/end-user-q-and-a-tutorial/power-bi-line-chart.png)
+    ![Q&A visual results as a line chart.](media/end-user-q-and-a-tutorial/power-bi-line-chart.png)
 
 ## Change the visualization type
 
