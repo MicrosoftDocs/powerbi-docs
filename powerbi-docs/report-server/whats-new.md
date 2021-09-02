@@ -464,7 +464,7 @@ Here's the list of all the new features:
 
 #### Support for trusted visuals
 
-We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and PowerApps aren't supported for this release.)
+We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and Power Apps aren't supported for this release.)
 
 #### Improved security features
 

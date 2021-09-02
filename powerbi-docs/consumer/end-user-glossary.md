@@ -24,7 +24,7 @@ This glossary is a community effort.  Don't see a word here? Please ask us to ad
 Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Azure Active Directory. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See **license** and **Premium**, below. 
 
 **admin portal**    
-The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and PowerApps use admin center.)
+The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and Power Apps use admin center.)
 
 **aggregates**    
 When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement.

@@ -966,7 +966,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 
 ### Visuals
-* PowerApps visual now included by default [[video]](https://youtu.be/A8A9baUQsXQ?t=505)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#powerApps) 
+* Power Apps visual now included by default [[video]](https://youtu.be/A8A9baUQsXQ?t=505)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#powerApps) 
 * New xViz visuals [[video]](https://youtu.be/A8A9baUQsXQ?t=538)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#xViz) 
 
 ### Data connectivity
@@ -1037,7 +1037,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 
 ### Visuals
-* PowerApps visual now generally available [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
+* Power Apps visual now generally available [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
 
 
 ### Data connectivity
@@ -1162,7 +1162,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 
 ### Visuals
-* PowerApps visual is now certified  [[video]](https://youtu.be/l7OMRUF9UYg?t=894)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
+* Power Apps visual is now certified  [[video]](https://youtu.be/l7OMRUF9UYg?t=894)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
 * Three new Power BI visuals and updates  [[video]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
 
 
@@ -2693,7 +2693,7 @@ The following updates were new to Power BI Desktop in February:
     -   ODBC and OLE DB connectors - support for *Select related tables* [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#relatedTables)
     -   Enhanced Folder connector - support for combining binaries from the Preview dialog [[video]](https://youtu.be/mn75-LOPxMA?t=10m1s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#folder)
     -   Unified Text and CSV connectors [[video]](https://youtu.be/mn75-LOPxMA?t=11m9s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#textConnector)
-    -   **New** - PowerApps Common Data Service connector [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#cds)
+    -   **New** - Power Apps Common Data Service connector [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#cds)
 
 
 ### Query Editing improvements

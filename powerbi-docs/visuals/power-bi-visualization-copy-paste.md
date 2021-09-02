@@ -132,7 +132,7 @@ A: We currently support native Power BI visuals and Certified Visuals. There is 
 - ESRI and other Map visuals 
 - Python visuals 
 - R visuals 
-- PowerApps 
+- Power Apps 
 - Non-certified custom visuals 
 For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 

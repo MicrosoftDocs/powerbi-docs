@@ -91,7 +91,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 | --- | --- | --- | --- |
 | 1 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
-| 3 | **Optional:** PowerApps | See the [Required services section](/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
+| 3 | **Optional:** Power Apps | See the [Required services section](/powerapps/maker/canvas-apps/limits-and-config#required-services) from the Power Apps system requirements site | N/A |
 | 4 | **Optional:** Visio | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 

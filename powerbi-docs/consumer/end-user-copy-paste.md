@@ -78,7 +78,7 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 - ESRI and other map visuals 
 - Python visuals 
 - R visuals 
-- PowerApps visuals   
+- Power Apps visuals   
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
