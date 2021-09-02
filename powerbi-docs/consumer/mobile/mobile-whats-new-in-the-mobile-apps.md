@@ -20,7 +20,9 @@ For related "What's New" information, see:
 
 ## September 2021
 ### Find content that’s relevant to you  (Android and iOS)
-Enhance your Power BI experience and productivity by exploring content from your organization that has been picked especially for you. It’s right there for you on the home page under **Recommended**, or on the new **Explore** page.
+Enhance your Power BI experience and productivity by exploring content from your organization that has been picked especially for you. It’s right there for you on the home page under **Recommended**, or on the new Explore page. Tap **See all**, or choose **Explore** from the home page footer, to get to the Explore page.
+
+![Screenshot of Power BI mobile app Explore.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-explore-page.png)
 
 ## August 2021
 ### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 

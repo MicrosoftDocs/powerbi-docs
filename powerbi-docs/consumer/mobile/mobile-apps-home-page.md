@@ -26,7 +26,7 @@ When you open Power BI Mobile app, you land on the home page, where you have **q
 
 ## Quick Access tab
 
-The quick access tab shows you your frequently and recently viewed reports, dashboards, apps, and scorecards grouped into collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents.
+The quick access tab shows you your Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards, grouped into collapsible sections. To see a longer list of your recent or recommended items, tap **See all** to the right of the section name.
 
 ## Goals hub
 
@@ -67,9 +67,6 @@ The navigation bar provides quick access to:
 * ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
 * ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
 * ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content from your organization that has been chosen especially for you.
-   
-    ![Screenshot of Explore page.](./media/mobile-apps-home-page/powerbi-mobile-app-explore-page.png)
-
 * ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
 
 ## Header
