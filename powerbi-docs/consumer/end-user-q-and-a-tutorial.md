@@ -44,7 +44,7 @@ If you want to familiarize yourself with the built-in samples in this tutorial a
 
 2. Select **Get data** at the bottom of the nav pane. 
 
-    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-get-sample-data.png" alt-text="Select Get data.":::
+    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-get-samples.png" alt-text="Select Get data.":::
 
 
 1. On the **Get Data** page that appears, select **Samples**.
