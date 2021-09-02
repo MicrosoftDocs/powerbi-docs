@@ -60,7 +60,10 @@ To submit your Power BI visual, you must be enrolled with Partner Center. If you
 >* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into Partner Center.
 >* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account) using your work email.
 
-Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](https://aka.ms/PBIvisualavailability).
+> [!IMPORTANT]
+> Before you submit your visual, make sure it passes all the [requirements](submission-testing.md). A visual that doesn't pass the requirements will be rejected.
+
+Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see the [Azure Marketplace listing guidelines](/azure/marketplace/marketplace-criteria-content-validation).
 
 1. Log into **Partner Center**.
 
@@ -92,7 +95,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 9. In **Markets**, select the markets where you want the offer to be available.
     Select **Save draft**.
 
-10. In **Technical configuration**, upload your Power BI visual **pbiviz** file and the **pbix** file.
+10. In **Technical configuration**, upload your Power BI visual **PBIVIZ** file and the **PBIX** file.
     Select **Review and Publish** to publish your offer.
 
 ## Tracking submission status and usage
@@ -107,7 +110,7 @@ You can review the [validation policies](/legal/marketplace/certification-polici
 
 Certified Power BI visuals are visuals in the Marketplace that meet certain specified code [requirements](power-bi-custom-visuals-certified.md#certification-requirements) that the Microsoft Power BI team has tested and approved. To request certification, select the Request Power BI certification check box.
 We recommend that you submit and publish your Power BI visual before you request certification, because the certification process can take time. When you request certification, be sure to provide all required certification information in the Notes for certification box on the Review and publish page.
-All certified visuals must passes all the [required tests](submission-testing.md).
+All certified visuals must passes all the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
 ## Next steps
 
