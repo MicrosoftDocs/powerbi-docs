@@ -47,7 +47,7 @@ When you open a report in Power BI Desktop, you may see a warning message lettin
 
 ## Working offline
 
-When working in Power BI Desktop without an internet connection, if you open a report with an [AppSource Power BI visual](./../developer/visuals/power-bi-custom-visuals#appsource-power-bi-visuals) that wasn't previously saved while Power BI Desktop was online, the visual will not render. To fix this problem, follow these steps:
+When working in Power BI Desktop without an internet connection, if you open a report with an [AppSource Power BI visual](./../developer/visuals/power-bi-custom-visuals.md#appsource-power-bi-visuals) that wasn't previously saved while Power BI Desktop was online, the visual will not render. To fix this problem, follow these steps:
 
 1. Make sure you're working online.
 
