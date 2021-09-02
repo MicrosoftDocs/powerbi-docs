@@ -154,7 +154,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
 Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualizatio type that you'd prefer.      
 
-:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-specify.png" alt-text="Q&A visual with "as a column chart" added to the question.":::
+:::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-specify.png" alt-text="Q&A visual with as a column chart added to the question.":::
 
 ## Next steps
 This environment is a safe one to play in, because you can choose not to save your changes. And if you do save them, you can always select **Get data** for a new copy of this sample.
