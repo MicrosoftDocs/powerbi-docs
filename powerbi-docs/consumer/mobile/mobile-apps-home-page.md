@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 08/30/2021
+ms.date: 09/02/2021
 ms.custom: mode-portal
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -66,7 +66,10 @@ The navigation bar provides quick access to:
 * ![workspaces icon](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
 * ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
 * ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
-* ![sampless icon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Samples** - Power BI samples you can use to learn about Power BI capabilities.
+* ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content that your organization has chosen especially for you.
+   
+    ![Screenshot of Explore page.](./media/mobile-apps-home-page/powerbi-mobile-app-explore-page.png)
+
 * ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
 
 ## Header
