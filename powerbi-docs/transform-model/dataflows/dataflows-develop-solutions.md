@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 # Develop solutions with dataflows
 
-Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article provides guidance for common scenarios, with links to articles and other information to help you understand and use dataflows to their full potential.
+Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents come common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
 
 ## Get access to Premium features of dataflows
 
@@ -47,13 +47,13 @@ Choosing a model typically depends on your organization's size and goals, but th
 | >5,000 users | ✔ | |
 | <5,000 users | | ✔ |
 
-For small teams, PPU can bridge the gap between Free, Pro, and Premium per capacity. For larger needs, using a Premium capacity with users who have Pro licenses is the best approach.
+For small teams, PPU can bridge the gap between Free, Pro, and Premium per capacity. If you have larger needs, using a Premium capacity with users who have Pro licenses is the best approach.
 
 ## Create user dataflows with security applied
 
 Imagine that you need to create dataflows for consumption but have security requirements:
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Graphic describing the scenario.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Graphic that describes the scenario.":::
 
 In this scenario, you likely have two types of workspaces:
 
@@ -70,21 +70,21 @@ Linked tables are simply a pointer to the original dataflow tables, and they inh
 
 ### Solution: Use computed tables
 
-If you have access to Power BI Premium, you can create a computed table in the destination that refers to the linked table, which has a copy of the data from the linked table (minus any columns you want to remove through projections and rows you want to remove through filters). The user with permission on the destination workspace can access data through this table. 
+If you have access to Power BI Premium, you can create a computed table in the destination that refers to the linked table, which has a copy of the data from the linked table. You can remove columns through projections and remove rows through filters. The user with permission on the destination workspace can access data through this table.
 
-In addition, lineage for privileged individuals shows the referenced workspace and allows users to link back to fully understand the parent dataflow. For those users who aren't privileged, privacy is still respected, and only the name of the workspace is shown.
+Lineage for privileged individuals also shows the referenced workspace and allows users to link back to fully understand the parent dataflow. For those users who aren't privileged, privacy is still respected. Only the name of the workspace is shown.
 
 The following diagram illustrates this setup. On the left is the architectural pattern. On the right is an example that shows sales data split and secured by region.
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Graphic describing using linked tables and dataflows.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Graphic that describes how to use linked tables and dataflows.":::
 
 ## Reduce refresh times for dataflows
 
-Imagine you have a large dataflow, but you want to build datasets off of that dataflow and decrease the time required to refresh it. Typically, refreshes take a long time to complete from the data source > dataflow > dataflow > dataflow > dataset, which makes it difficult to manage or maintain.
+Imagine you have a large dataflow, but you want to build datasets off of that dataflow and decrease the time required to refresh it. Typically, refreshes take a long time to complete from the data source to dataflows to the dataset. Lengthy refreshes are difficult to manage or maintain.
 
-### Solution: Use tables with Enable Load explicitly configured for referenced tables – don't disable load
+### Solution: Use tables with Enable Load explicitly configured for referenced tables and don't disable load
 
-Power BI supports simple orchestration for dataflows, as defined in [understanding and optimizing dataflows refresh](dataflows-understand-optimize-refresh.md#orchestration). Taking advantage of this requires explicitly having any downstream dataflows configured to *Enable Load*.
+Power BI supports simple orchestration for dataflows, as defined in [understanding and optimizing dataflows refresh](dataflows-understand-optimize-refresh.md#orchestration). Taking advantage of orchestration requires explicitly having any downstream dataflows configured to *Enable Load*.
 
 Disabling load typically is appropriate only when the overhead of loading more queries cancels the benefit of the entity with which you're developing.
 
@@ -96,16 +96,16 @@ Enabling load also enables you to keep the complete view of lineage because Powe
 
 ## Reduce refresh times for datasets
 
-Imagine you have a dataflow that's large, but you want to build datasets off of this and decrease the orchestration. Refreshes take a long time to complete from the data source to dataflows to datasets, which adds increased latency.
+Imagine you have a dataflow that's large, but you want to build datasets off of it and decrease the orchestration. Refreshes take a long time to complete from the data source to dataflows to datasets, which adds increased latency.
 
 ### Solution: Use DirectQuery dataflows
 
-DirectQuery can be used whenever a workspace's Enhanced Compute Engine (ECE) setting is configured explicitly to **On**. This setting is helpful when you have data that doesn't need to be loaded directly into a Power BI model. If you're configuring the ECE to be **On** for the first time, the changes that allow DirectQuery will occur during next refresh. You'll need to refresh it when you enable it to have changes take place immediately. Refreshes on the initial dataflow load can be slower because Power BI writes data to both storage and a managed SQL engine.
+DirectQuery can be used whenever a workspace's enhanced compute engine (ECE) setting is configured explicitly to **On**. This setting is helpful when you have data that doesn't need to be loaded directly into a Power BI model. If you're configuring the ECE to be **On** for the first time, the changes that allow DirectQuery will occur during the next refresh. You'll need to refresh it when you enable it to have changes take place immediately. Refreshes on the initial dataflow load can be slower because Power BI writes data to both storage and a managed SQL engine.
 
 To summarize, using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
 - **Avoid separate refresh schedules**: DirectQuery connects directly to a dataflow, which removes the need to create an imported dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
-- **Filtering data**: DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and thereby work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the ECE) to filter dataflow data and work with the filtered subset you need.
+- **Filtering data**: DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and in this way work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the ECE) to filter dataflow data and work with the filtered subset you need.
 
 Generally, using DirectQuery trades up-to-date data in your dataset with slower report performance compared to import mode. Consider this approach only when:
 
@@ -119,15 +119,15 @@ Generally, using DirectQuery trades up-to-date data in your dataset with slower 
 The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities, such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
 
 - Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
-- Dataset refresh operations can also fold to the enhanced compute engine, meaning even incremental refresh from a dataset can fold to a dataflow, which improves refresh performance and potentially decreases latency between refresh cycles.
+- Dataset refresh operations can also fold to the enhanced compute engine, which means even incremental refresh from a dataset can fold to a dataflow. This capability improves refresh performance and potentially decreases latency between refresh cycles.
 
-To enable this feature for any Premium Dataflow, make sure the [compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must use the August 2021 version of Power BI Desktop or later to take advantage of this feature.
+To enable this feature for any Premium dataflow, make sure the [compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must use the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
-To use this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You might also need to make some changes to your dataflow as described in [Using the enhanced compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine). You must update any existing Power Query queries to use the new connector by replacing `"PowerBI.Dataflows”` in the **Source** section with `“PowerPlatform.Dataflows”`.
+To use this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You might also need to make some changes to your dataflow as described in [Using the enhanced compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine). You must update any existing Power Query queries to use the new connector by replacing `PowerBI.Dataflows` in the **Source** section with `PowerPlatform.Dataflows`.
 
 ## Complex dataflow authoring in Power Query
 
-Imagine you have a dataflow that's millions of rows of data, but you want to build complex business logic and transformations with it. In addition to following best practices for working with large dataflows, you need the dataflow previews to perform quickly. But you have dozens of columns and millions of rows of data.
+Imagine you have a dataflow that's millions of rows of data, but you want to build complex business logic and transformations with it. You want to follow best practices for working with large dataflows. You also need the dataflow previews to perform quickly. But, you have dozens of columns and millions of rows of data.
 
 ### Solution: Use Schema view
 
@@ -135,7 +135,7 @@ You can [use Schema view](/power-query/schema-view), which is designed to optimi
 
 ## Work with bigger data sources
 
-Imagine you run a query on the source system, but you don't want to provide direct access to the system or democratize access. You plan to put this in a dataflow.
+Imagine you run a query on the source system, but you don't want to provide direct access to the system or democratize access. You plan to put it in a dataflow.
 
 ### Solution 1: Use a view for the query or optimize the query
 
@@ -143,15 +143,15 @@ Using an optimized data source and query is your best option. Often, the data so
 
 ### Solution 2: Use Native Query
 
-You can also use the [Value.NativeQuery()](/powerquery-m/value-nativequery) M function that allows you to do this by setting *EnableFolding=true* in the third parameter. It's documented [here](/power-query/connectors/postgresql) for the Postgres connector. It also works for the SQL Server connector.
+You can also use the [Value.NativeQuery()](/powerquery-m/value-nativequery) M function. You set *EnableFolding=true* in the third parameter. Native Query is documented on [this website](/power-query/connectors/postgresql) for the Postgres connector. It also works for the SQL Server connector.
 
-### Solution 3: Break the dataflow into ingestion and consumption dataflows to take advantage of the enhanced compute engine and Linked Entities
+### Solution 3: Break the dataflow into ingestion and consumption dataflows to take advantage of the ECE and Linked Entities
 
-Breaking a dataflow into separate ingestion and consumption dataflows allows you to take advantage of the ECE, and Linked Entities. You can learn more about this pattern and others in our [best practices documentation](dataflows-best-practices.md).
+By breaking a dataflow into separate ingestion and consumption dataflows, you can take advantage of the ECE and Linked Entities. You can learn more about this pattern and others in the [best practices documentation](dataflows-best-practices.md).
 
 ## Ensure customers use dataflows whenever possible
 
-Imagine you have many dataflows that serve common purposes, such as conformed dimensions like customers, data table, products, and geographies. Dataflows are already available in the ribbon for Power BI. Ideally, you want customers primarily using the dataflows you've created.
+Imagine you have many dataflows that serve common purposes, such as conformed dimensions like customers, data tables, products, and geographies. Dataflows are already available in the ribbon for Power BI. Ideally, you want customers to primarily use the dataflows you've created.
 
 ### Solution: Use endorsement to certify and promote dataflows
 
@@ -163,21 +163,21 @@ Imagine you have business requirements to automate imports, exports, or refreshe
 
 | **Type** | **Mechanism** |
 | --- | --- |
-| Use the [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates) | No-code |
-| Use [automation scripts in PowerShell](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) | Automation scripts |
-| Build your own business logic by using [the APIs](/rest/api/power-bi/dataflows) | Rest API |
+| Use the [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). | No-code |
+| Use [automation scripts in PowerShell](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows). | Automation scripts |
+| Build your own business logic by using [the APIs](/rest/api/power-bi/dataflows). | Rest API |
 
 For more information about refresh, see [Understanding and optimizing dataflows refresh](dataflows-understand-optimize-refresh.md).
 
 ## Ensure you protect data assets downstream
 
-You can use sensitivity labels to apply a data classification and any rules you've configured on downstream artifacts that connect to your dataflows. To learn more about sensitivity labels, see [Microsoft Information Protection sensitivity labels in Power BI](../../admin/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../admin/service-security-sensitivity-label-downstream-inheritance.md).
+You can use sensitivity labels to apply a data classification and any rules you configured on downstream artifacts that connect to your dataflows. To learn more about sensitivity labels, see [Microsoft Information Protection sensitivity labels in Power BI](../../admin/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../admin/service-security-sensitivity-label-downstream-inheritance.md).
 
 ## Multi-geo support
 
 Many customers today have a need to meet data sovereignty and residency requirements. You can complete a manual configuration to your dataflows workspace to be multi-geo.
 
-Dataflows support multi-geo when using the bring-your-own-storage-account feature, described in [Configuring dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md). The workspace must be empty prior to attach for this capability. With this specific configuration, you can store dataflow data in specific geo regions as you choose.
+Dataflows support multi-geo when they use the bring-your-own-storage-account feature. This feature is described in [Configuring dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md). The workspace must be empty prior to attach for this capability. With this specific configuration, you can store dataflow data in specific geo regions of your choice.
 
 ## Ensure you protect data assets behind a virtual network
 
@@ -185,8 +185,8 @@ Many customers today have a need to secure your data assets behind a private end
 
 | **Scenario** | **Status** |
 | --- | --- |
-| Read virtual network data sources through an on-premises gateway | Supported through an on-premises gateway |
-| Write data to an sensitivity labels account behind a virtual network by using an on-premises gateway | Not yet supported |
+| Read virtual network data sources through an on-premises gateway. | Supported through an on-premises gateway |
+| Write data to a sensitivity label account behind a virtual network by using an on-premises gateway. | Not yet supported |
 
 ## Next steps
 
