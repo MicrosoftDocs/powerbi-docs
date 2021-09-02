@@ -66,7 +66,7 @@ The navigation bar provides quick access to:
 * ![workspaces icon](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
 * ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
 * ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
-* ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content that your organization has chosen especially for you.
+* ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content from your organization that has been chosen especially for you.
    
     ![Screenshot of Explore page.](./media/mobile-apps-home-page/powerbi-mobile-app-explore-page.png)
 
