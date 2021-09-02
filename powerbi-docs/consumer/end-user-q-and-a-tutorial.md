@@ -152,7 +152,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
 ## Change the visualization type
 
-Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualizatio type that you'd prefer.      
+Don't like the default visualization that Power BI Q&A chose? Edit the natural language question to include the visualization type that you'd prefer.      
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-specify.png" alt-text="Q&A visual with as a column chart added to the question.":::
 
