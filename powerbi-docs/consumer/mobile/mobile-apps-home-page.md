@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |:--- |
 | iPhone | iPad | Android | 
 
-When you open Power BI Mobile app, you land on the home page, where you have **quick access** to your most frequently or recently visited reports, dashboards, apps, and scorecards. In addition, there is the **goals hub** that enables you to keep on top of your goals, and an **activity feed** that keeps you up-to-date about what's happening with your Power BI content. Finally, there are also convenient navigation aids to get you quickly to the content you need.
+When you open Power BI Mobile app, you land on the home page, where you have **quick access** to your most Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards. In addition, there is the **goals hub** that enables you to keep on top of your goals, and an **activity feed** that keeps you up-to-date about what's happening with your Power BI content. Finally, there are also convenient navigation aids to get you quickly to the content you need.
 
 ![Mobile app home page](./media/mobile-apps-home-page/powerbi-mobile-app-home.png)
 
