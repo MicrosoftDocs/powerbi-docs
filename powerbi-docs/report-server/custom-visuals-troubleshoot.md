@@ -15,41 +15,51 @@ This article discusses resources available to troubleshoot issues with custom vi
 
 ## The issue
 
-In Power BI desktop for Power BI Report Server, when adding a custom visual from local file, the visual keeps loading and doesn’t show up:
+In Power BI desktop for Power BI Report Server, you try to add a custom visual from a local file:
 
-![Selecting 'import a visual'](media/custom-visuals-troubleshoot/import-a-visual.png)
-![Custom visual does not load](media/custom-visuals-troubleshoot/custom-visuals-does-not-load.png)
+:::image type="content" source="media/custom-visuals-troubleshoot/import-a-visual.png" alt-text="Select Import a visual.":::
 
-The above-mentioned behavior would be encountered in one of the following scenarios:
+The visual keeps loading, but doesn’t show up:
 
-1. When the machine that has Power BI Desktop for Power BI Report Server is not connected to internet.
-2. When the Power BI Desktop for Power BI Report Server machine’s network device blocks access to `pbivisuals.powerbi.com`.
+:::image type="content" source="media/custom-visuals-troubleshoot/custom-visuals-does-not-load.png" alt-text="Custom visual does not load.":::
+
+You encounter this behavior in one of the following scenarios:
+
+- When the computer that has Power BI Desktop for Power BI Report Server isn't connected to the internet.
+- When the Power BI Desktop for Power BI Report Server computer’s network device blocks access to `pbivisuals.powerbi.com`.
 
 ## Loading custom visuals
 
-You can use one of the following solutions to get the custom visual to load in Power BI Desktop for Power BI Report Server:
+Use one of the following solutions to get the custom visual to load in Power BI Desktop for Power BI Report Server:
 
-1. Ensure that the Power BI Desktop for Power BI Report Server desktop machine is connected to internet.
+- Ensure that the Power BI Desktop for Power BI Report Server computer is connected to the internet.
 
-2. If the machine is connected to internet but you still encounter the behavior, check if the URL `https://pbivisuals.powerbi.com/` has been blocked Whitelist the URL to get the visual to load.
+- If the computer is connected to the internet but you still encounter the behavior, check to see if the URL `https://pbivisuals.powerbi.com/` has been blocked. If so, add the URL to an allowlist to get the visual to load.
 
-3. If the machine is not allowed internet access, perform the following step:
-Configure the Environment variable under “Advanced System settings” as shown below:
-![Opening Environment Variables settings](media/custom-visuals-troubleshoot/setting-environment-variable-1.png)
+- If the computer isn't allowed internet access, perform these steps:
 
-Add `PBI_userFavoriteResourcePackagesEnabled` to environment variables and set it to `0`.
+    1. Configure the Environment variable under “Advanced System settings” as shown below:
 
-![Setting `PBI_userFavoriteResourcePackagesEnabled` to `0`](media/custom-visuals-troubleshoot/setting-environment-variable-2.png)
+        :::image type="content" source="media/custom-visuals-troubleshoot/setting-environment-variable-1.png" alt-text="Open Environment Variables settings.":::
 
-After making the above-mentioned change, restart Power BI Desktop for Power BI Report Server and try loading a custom visual.
+    1. Add `PBI_userFavoriteResourcePackagesEnabled` to environment variables and set it to `0`.
 
-## Why this happens
+        :::image type="content" source="media/custom-visuals-troubleshoot/setting-environment-variable-2.png" alt-text="Set PBI_userFavoriteResourcePackagesEnabled to 0.":::
 
-When importing the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to internet and load the updated visual which results in this behavior. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visuals but fails with the following error:
-`DNS Lookup for "pbivisuals.powerbi.com" failed. The system reports that no network connection is available. 
-System.Net.Sockets.SocketException No such host is known`. To get around the issue, you can use one of the action items mentioned above.
+    1. After making this change, restart Power BI Desktop for Power BI Report Server, and try loading a custom visual.
+
+## Why this issue happens
+
+When importing the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual, which results in this behavior. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visuals but fails with the following error:
+
+```
+DNS Lookup for "pbivisuals.powerbi.com" failed. The system reports that no network connection is available. 
+System.Net.Sockets.SocketException No such host is known.
+```
+
+To get around the issue, use one of the solutions mentioned in this article.
 
 >[!NOTE]
->After implementing the action item of configuring the environment variable (action item 3), you might still encounter a few seconds delay before the visual gets loaded in Power BI Desktop for Power BI Report Server. This delay is encountered because Power BI Desktop for Power BI Report Server tries to fetch the updated copy of the visual from internet and after a retry period, displays the local copy of the custom visual after failing to connect to internet. This could result in a 20 to 30 second delay.
+>After implementing the solution of configuring the environment variable (the third solution), you might still encounter a few seconds delay before the visual loads in Power BI Desktop for Power BI Report Server. You encounter this delay because Power BI Desktop for Power BI Report Server tries to fetch the updated copy of the visual from the internet. After a retry period, it displays the local copy of the custom visual after failing to connect to internet. This could result in a 20 to 30 second delay.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
