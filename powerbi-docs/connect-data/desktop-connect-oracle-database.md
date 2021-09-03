@@ -15,9 +15,9 @@ To connect to an Oracle database with Power BI Desktop, the correct Oracle clien
 
 Supported Oracle versions: 
 - Oracle Server 9 and later
-- Oracle Data Access Client (ODAC) software 11.2 and later
+- Oracle Data Access Client (ODAC) software 11.2 or greater
 
-Before you can connect to an Oracle database using Power BI, you need to install the Oracle client software v8.1.7 or greater on your computer. To install the 32-bit Oracle client software, go to [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html). To install the 64-bit Oracle client, go to [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
+Before you can connect to an Oracle database using Power BI, you need to install the Oracle Data Access Client (ODAC) software 11.2 or greater on your computer. To install the 32-bit Oracle client software, go to [32-bit Oracle Data Access Components (ODAC) (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) or choose a version you prefer. To install the 64-bit Oracle client, go to [64-bit ODAC 12c Release 4 (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) or choose a version you prefer.  You must choose a windows installer version since xcopy version does not work with Power BI Desktop. 
 
 
 
