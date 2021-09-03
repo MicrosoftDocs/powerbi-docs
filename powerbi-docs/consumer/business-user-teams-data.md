@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 08/31/2021
+ms.date: 09/02/2021
 LocalizationGroup: Get started
 
 ---

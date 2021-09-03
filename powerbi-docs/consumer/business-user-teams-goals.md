@@ -24,6 +24,8 @@ It takes just a minute to create a goal in Power BI. Each goal has a name, owner
 
 - In Microsoft Teams, select **More added apps ...** > **Power BI**.
 
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-app.png" alt-text="Select More added apps, then Power BI.":::
+
     Now Power BI opens right inside Microsoft Teams.
 
 ## Create your first goal in a scorecard
@@ -32,12 +34,23 @@ It's simple to start tracking goals by creating a scorecard.
 
 1. Open Power BI in Teams.
 2. Select **Goals** in the navigation pane to open the Goals hub.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-app-goals-icon.png" alt-text="Select Goals in the navigation pane to open the Goals hub.":::
+
 3. Select **New scorecard**.
-1. Give it a name and description.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-app-goals-new-scorecard.png" alt-text="Select New scorecard.":::
+
+1. Give the scorecard a name and description.
 1. Create a goal in the scorecard, with a **Goal name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal-percent.png" alt-text="Create a goal by completing the needed values.":::
+
 1. **Save**.
 
-Once you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal.png" alt-text="Save your new goal.":::
+
+After you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
 
 ## Track goals with your team
 
@@ -45,10 +58,23 @@ To keep your goals top of mind for your team, add your scorecards as tabs to you
 
 1. Open a channel or meeting.
 4. Select the **+ Add a tab** button and add the Power BI tab.
-3. Pick a scorecard.
-4. Select **Save**.
-1. Select **Share**, and allow colleagues to **view, share, and build new content**.
+
+    :::image type="content" source="media/business-user-teams-data/teams-power-bi-channel-plus-sign.png" alt-text="Select the plus sign to add a tab.":::
+
+3. Pick a scorecard > **Save**.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-scorecard-tab.png" alt-text="Post to the channel about this tab.":::
+
+    If you keep **Post to the channel about this tab** selected, Teams adds a post to the chat, about the new tab.
+
+1. Select **Share**, allow colleagues to **view, share, and build new content**, and **Apply**.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-share-scorecard.png" alt-text="Select view, share, and build new content.":::
+
 1. Select **Copy link** or **Send** a message to your colleagues with a link to the scorecard so they can keep it up to date.
+1. Open the chat window in Teams to see the post about the scorecard.
+
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-scorecard-chat.png" alt-text="Open the chat window in Teams to see the post about the scorecard.":::
 
 ## Make tracking goals part of your team rhythm
 

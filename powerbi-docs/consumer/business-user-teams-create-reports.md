@@ -1,13 +1,13 @@
 ---
 title: Create reports from data in Microsoft Teams
-description: Overview of Power BI for business users (also known as end users or business users).
+description: It’s easy to create reports in Power BI in Microsoft Teams with just a few clicks. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 08/31/2021
+ms.date: 09/02/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Many teams need to create reports to track progress and gain valuable insights. It’s easy to create reports in Power BI with just a few clicks. When you’re ready you can also use tools like Power BI desktop if you’d like more advanced report authoring. 
+It’s easy to create reports with just a few clicks in Power BI in Microsoft Teams. This article gives a few examples of those quick reports. When you’re ready you can also use tools like Power BI Desktop for more advanced report authoring. 
 
 ## Create an automatic report from data you have
 
@@ -29,48 +29,51 @@ To create your first report, follow these steps.
 2. Select the **Create** tab.
 3. Select **Paste or manually enter data**.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Paste or manually enter data.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Paste or manually enter data.":::
 
 4. Select the first cell and paste the data.
-1. Select **Use first row as headers** if appropriate, give it a name, then select **Auto-create report**.
+1. Select **Use first row as headers** if appropriate, give the table a name, then select **Auto-create report**.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-paste-auto-create.png" alt-text="Select Auto-create report.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-paste-auto-create.png" alt-text="Select Auto-create report.":::
 
 1. Set a sensitivity label, if prompted.
 
     Power BI automatically analyzes and visualize your data in a pre-built report.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-auto-created-report.png" alt-text="Power BI automatically analyzes and visualize your data.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report.png" alt-text="Power BI automatically analyzes and visualize your data.":::
 
 1. Select **Personalize this visual** to customize a single visual.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-auto-created-report-personalize-visual.png" alt-text="Personalize this visual.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report-personalize-visual.png" alt-text="Personalize this visual.":::
 
 1. **Save** the report.
 1. Select **More options (...)** > **Edit** to customize the whole report.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-edit-auto-created-report.png" alt-text="Select Edit to customize the whole report.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-edit-auto-created-report.png" alt-text="Select Edit to customize the whole report.":::
 
-When you’re done, save and share the report with your colleagues.
+When you’re done, save and share the report with your colleagues in Teams.
 
 ## Create a report from a dataset shared in your organization
 
-Many organizations share dataset that you can use to build your reports. These are great since you can get up to date authoritative data. If you have certified or promoted datasets, they’re likely to be higher quality and maintained so your reports will keep working more often.
+Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets that are marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports will keep working longer.
 
-To build a report from a dataset shared to you, follow these steps.
+To build a report from a dataset shared with you, follow these steps.
 
 1. Open the Power BI app for Microsoft Teams.
 2. Select the **Create** tab > **Pick a published dataset**.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Pick a published dataset.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Pick a published dataset.":::
 
 4. Select a dataset > **Create**.
 
-    :::image type="content" source="../collaborate-share/media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Select a dataset and Create.":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Select a dataset and Create.":::
 
-6. Start exploring your data.
+6. Start exploring the data. 
 
-Use visualizations like charts, tables, and maps to show data in various ways. Click on data points to see other visuals update to filter data to your selection. Change formatting to make the report useful and readable by your colleagues. When you’re done just save and then share the report.
+    - Use visualizations like charts, tables, and maps to show data in various ways. 
+    - Select data points to see other visuals update to filter data to your selection. Change formatting to make the report useful and readable by your colleagues. 
+
+1. When you’re done, save and then share the report.
 
 ## Discover datasets and reports your organization has shared with you
 
@@ -85,11 +88,11 @@ To start exploring the datasets shared with you, follow these steps.
 2. Go to the **Datasets** tab.
 3. Select a dataset from the list or from recommended datasets.
 
-    teams-power-bi-datasets-tab
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Select a dataset from the list or from recommended datasets.":::
 
-4. Explore the dataset details page.
+4. Explore the Dataset details page.
 
-    teams-power-bi-datasets-details
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Explore the Dataset details page.":::
 
     - Discover pre-built reports that use the dataset.
     - Create a report in Power BI from the dataset with Create from scratch.
@@ -97,9 +100,9 @@ To start exploring the datasets shared with you, follow these steps.
 
 When you find interesting reports that are relevant to your team, bring then into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
 
-## Create even more reports
+## Create more sophisticated reports
 
-It’s easy to make stunning, interactive reports using Power BI Desktop, which is like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop runs on Windows and has additional capabilities like data import, cleaning, modeling, and much more. 
+It’s easy to make stunning, interactive reports using Power BI Desktop. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop runs on Windows and has additional capabilities like data import, cleaning, modeling, and much more. 
 
 To get started with Power BI Desktop, follow these steps.
 
