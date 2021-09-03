@@ -15,7 +15,7 @@ This article discusses resources available to troubleshoot issues with custom vi
 
 ## The issue
 
-In Power BI desktop for Power BI Report Server, you try to add a custom visual from a local file:
+In Power BI Desktop for Power BI Report Server, you try to add a custom visual from a local file:
 
 :::image type="content" source="media/custom-visuals-troubleshoot/import-a-visual.png" alt-text="Select Import a visual.":::
 
