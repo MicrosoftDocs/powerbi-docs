@@ -107,7 +107,7 @@
         href: excel-oos.md
   - name: Troubleshoot
     items: 
-    - name: "Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server"
+    - name: "Troubleshoot custom visuals in Power BI Desktop"
       href: custom-visuals-troubleshoot.md
     - name: "Troubleshoot scheduled refresh"
       href: scheduled-refresh-troubleshoot.md
