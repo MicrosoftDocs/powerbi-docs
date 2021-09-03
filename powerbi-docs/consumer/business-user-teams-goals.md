@@ -59,7 +59,7 @@ To keep your goals top of mind for your team, add your scorecards as tabs to you
 1. Open a channel or meeting.
 4. Select the **+ Add a tab** button and add the Power BI tab.
 
-    :::image type="content" source="media/business-user-teams-data/teams-power-bi-channel-plus-sign.png" alt-text="Select the plus sign to add a tab.":::
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-channel-plus-sign.png" alt-text="Select the plus sign to add a tab.":::
 
 3. Pick a scorecard > **Save**.
 
