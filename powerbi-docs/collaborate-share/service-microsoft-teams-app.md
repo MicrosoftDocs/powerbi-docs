@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/21/2021
+ms.date: 09/03/2021
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -100,13 +100,20 @@ With the search experience in Teams, you can find recent reports, dashboards, an
  
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-search-teams-apps.png" alt-text="Search for the Power BI app in Teams":::
 
-## Encourage Power BI app adoption in Teams
+## Increase Power BI app adoption in Teams
 
 Your organization can make it easier for everyone to find and use data by installing and pinning (optional but recommended) the Power BI app for Teams for users. 
 
 - Are you a leader in your organization? You can encourage individuals and teams to start using the Power BI app in Teams by installing it for themselves. 
-- Are you a Power BI admin or a Teams admin? You can encourage broader usage by installing and even pinning the app proactively. Read the [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) to learn the options for broad and targeted roll-out and decide what’s right for your organization.
+- Are you a Power BI admin or a Teams admin? By default, the Power BI app for Teams will be installed automatically, in some circumstances. See [Install the Power BI app for Teams automatically](../admin/service-admin-portal.md#install-the-power-bi-app-for-teams-automatically) for details. You can encourage broader usage by installing and even pinning the app proactively. Read the [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) to learn the options for broad and targeted roll-out and decide what’s right for your organization.
 
+### Install the Power BI app for Teams automatically
+
+Are you a Power BI admin or a Teams admin? By default, the Power BI app for Teams will be installed automatically, in some circumstances. See [Install the Power BI app for Teams automatically](../admin/service-admin-portal.md#install-the-power-bi-app-for-teams-automatically) for details. 
+
+As a Power BI end user, you may see a notification in the Power BI service notification pane that the Microsoft Teams app was automatically installed.
+
+:::image type="content" source="media/service-microsoft-teams-app/teams-auto-install-notification.png" alt-text="Notification that the Microsoft Teams app was automatically installed.":::
 
 ## Known issues and limitations
 
