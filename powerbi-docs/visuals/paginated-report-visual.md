@@ -98,7 +98,7 @@ When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum,
 ### Using a Power BI dataset with a date parameter
 
 > [!NOTE]
-> Versions of Power BI Report Builder 15.7.01704.0001 and above allow you to use date parameters with the paginated report visual without having to follow the below steps. [Download the newest version of Power BI Report Builder](https://aka.ms/pbireportbuilder).
+> Versions of Power BI Report Builder 15.7.01704.0001 and above allow you to use date parameters with the paginated report visual without having to follow these next steps. [Download the newest version of Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
 When you use a Power BI dataset as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. There are three options to work around this: 
 
