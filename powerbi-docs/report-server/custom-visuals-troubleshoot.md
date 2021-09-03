@@ -11,22 +11,18 @@ ms.date: 9/2/2021
 ---
 # Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
 
-This article discusses resources available to troubleshoot issues with custom visuals in Power BI Desktop for Power BI Report Server.
-
-## The issue
-
-In Power BI Desktop for Power BI Report Server, you try to add a custom visual from a local file:
+In some specific situations, Power BI Desktop for Power Report Server fails to load a custom visual. After loading a custom visual from a local file the visual keeps loading but does not show up:
 
 :::image type="content" source="media/custom-visuals-troubleshoot/import-a-visual.png" alt-text="Select Import a visual.":::
 
-The visual keeps loading, but doesn’t show up:
-
 :::image type="content" source="media/custom-visuals-troubleshoot/custom-visuals-does-not-load.png" alt-text="Custom visual does not load.":::
 
-You encounter this behavior in one of the following scenarios:
+This happens in one of the following scenarios:
 
 - When the computer that has Power BI Desktop for Power BI Report Server isn't connected to the internet.
 - When the Power BI Desktop for Power BI Report Server computer’s network device blocks access to `pbivisuals.powerbi.com`.
+
+In order to resolve this situation follow the steps below.
 
 ## Loading custom visuals
 
@@ -48,7 +44,7 @@ Use one of the following solutions to get the custom visual to load in Power BI 
 
     1. After making this change, restart Power BI Desktop for Power BI Report Server, and try loading a custom visual.
 
-## Why this issue happens
+## Why this happens
 
 When importing the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual, which results in this behavior. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visuals but fails with the following error:
 
