@@ -449,6 +449,8 @@ When auto-install occurs, users see the following notification in the Power BI s
 
 :::image type="content" source="../collaborate-share/media/service-microsoft-teams-app/teams-auto-install-notification.png" alt-text="Notification that the Microsoft Teams app was automatically installed.":::
 
+Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
+
 ### Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
