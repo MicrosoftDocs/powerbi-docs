@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/07/2021
+ms.date: 09/05/2021
 LocalizationGroup: Create reports
 ---
 # Create modern visual tooltips (preview)
