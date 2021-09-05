@@ -325,7 +325,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
 
-* To use the `exportToFile` API, you'll need an effective identity that's part of your Azure Active Directory. You can't use the API with an effective identity that isn't part of your Azure AD.
+* When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
 ## Next steps
 
