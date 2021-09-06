@@ -23,7 +23,7 @@ Add a personal comment or start a conversation about a dashboard or report with 
 > Collaborating with others, including adding comments to shared reports, requires a Power BI Pro license or for the content to be hosted in Power BI Premium capacity. [Which license type do I have?](end-user-license.md)
 
 ## How to use the Comments feature
-Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues. Comments can be up to 500 characters, including @mentions of other users and spaces.
+Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues. Comments can be up to 2000 characters, including @mentions of other users and spaces.
 
 When you add a comment to a report, Power BI captures the current filter and slicer values and creates a [bookmark](end-user-bookmarks.md). This means that when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
@@ -94,7 +94,7 @@ Here's a conversation I'm having with the visualization *designer*. They are usi
 
 ## Considerations and troubleshooting
 
-- Comments are limited to 500 characters, including @mentions of other users and spaces.
+- Comments are limited to 2000 characters, including @mentions of other users and spaces.
 - The maximum number of conversations on a dashboard or report is 100. The maximum number of comments per conversation is 1000. To add a new conversation or comment, delete prior conversations or comments.
 - Bookmarks are not captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 - If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals is not available.
