@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 09/06/2021
 LocalizationGroup: Get started
 ---
 # See related content in the Power BI service
@@ -39,7 +39,7 @@ With a dashboard or report open, select **More options** (...) in the menu bar a
 
 ![Ellipses dropdown](./media/end-user-related/power-bi-see-related.png)
 
-The **Related content** pane opens. For a dashboard, it shows all the reports that have visualizations pinned to the dashboard and their associated datasets. For this dashboard, there are visualizations pinned from only one report and that report is based on only one dataset. If you look at the image at the beginning of this article, you'll see related content for a dashboard that has visualizations pinned from four reports, and two datasets.
+The **Related content** pane opens. For a dashboard, it shows all the reports that have visualizations pinned to the dashboard and their associated datasets. For this dashboard, there are visualizations pinned from only one report and that report is based on only one dataset. If you look at the image at the beginning of this article, you'll see related content for a dashboard that has visualizations pinned from two reports, and two datasets.
 
 ![Related content pane](./media/end-user-related/power-bi-view-related-dashboard.png)
 
