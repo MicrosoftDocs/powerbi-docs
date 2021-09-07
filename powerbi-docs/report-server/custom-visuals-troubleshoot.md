@@ -15,6 +15,7 @@ In some specific situations, Power BI Desktop for Power Report Server fails to l
 
 :::image type="content" source="media/custom-visuals-troubleshoot/import-a-visual.png" alt-text="Select Import a visual.":::
 
+
 :::image type="content" source="media/custom-visuals-troubleshoot/custom-visuals-does-not-load.png" alt-text="Custom visual does not load.":::
 
 This happens in one of the following scenarios:
