@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 05/24/2021
+ms.date: 09/02/2021
 ---
 
 # Export paginated report to file
@@ -323,7 +323,9 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Limitations
 
-Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
+* Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
+
+* When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
 ## Next steps
 
