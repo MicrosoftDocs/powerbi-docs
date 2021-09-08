@@ -65,8 +65,8 @@ If you rename a workspace, the backup folder in the *power-bi-backup* container 
 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 
-* For existing workspaces with ADLS Gen2 configured to dataflows only, you must unlink the ADLS Gen2 account first, then relink it for **Backup and Restore** to work properly.
-* If your ADLS Gen2 is already working with backup and restore, if you later reconfigure it to work with backup and restore, you must first rename or move the backup folder, or the attempt will result in errors and failure. 
+* Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 cannot be located in a VNET.
+* If your ADLS Gen2 is already working with **Backup and Restore**, if you disconnect and later reconfigure it to work with **Backup and Restore** again, you must first rename or move the previous backup folder, or the attempt will result in errors and failure. 
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only the **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command is not supported

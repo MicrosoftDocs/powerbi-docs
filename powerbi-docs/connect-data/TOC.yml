@@ -131,6 +131,8 @@
         href: desktop-sap-hana.md
       - name: "Enable encryption for SAP HANA"
         href: desktop-sap-hana-encryption.md
+      - name: "Edit SAP variables in the Power BI service"
+        href: service-edit-sap-variables.md        
       - name: "Connect to Analysis Services tabular data"
         href: desktop-analysis-services-tabular-data.md
       - name: "Connect to data sources with DirectQuery"

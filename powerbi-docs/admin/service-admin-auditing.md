@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/30/2021
+ms.date: 09/08/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -246,7 +246,7 @@ $UserCredential = Get-Credential
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 
 Import-PSSession $Session
-Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
+Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBIAudit -ResultSize 1000 | Format-Table | More
 ```
 
 ### Use PowerShell to export audit logs
@@ -259,7 +259,7 @@ $UserCredential = Get-Credential
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 
 Import-PSSession $Session
-Search-UnifiedAuditLog -StartDate 9/11/2019 -EndDate 9/15/2019 -RecordType PowerBI -ResultSize 5000 |
+Search-UnifiedAuditLog -StartDate 9/11/2019 -EndDate 9/15/2019 -RecordType PowerBIAudit -ResultSize 5000 |
 Export-Csv -Path "c:\temp\PowerBIAuditLog.csv" -NoTypeInformation
 
 Remove-PSSession $Session
