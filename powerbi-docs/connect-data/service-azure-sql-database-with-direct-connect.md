@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ''
 ms.custom: ""
-ms.date: 05/24/2021
+ms.date: 09/08/2021
 LocalizationGroup: Data from databases
 ---
 
