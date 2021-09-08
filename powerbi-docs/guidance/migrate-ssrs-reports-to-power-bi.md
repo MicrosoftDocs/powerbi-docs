@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/03/2020
+ms.date: 09/07/2021
 ---
 
 # Migrate SQL Server Reporting Services reports to Power BI
@@ -134,8 +134,8 @@ Anyone with permission to access to the SSRS instance and the Power BI workspace
 1. Open each report in Power BI Report Builder, and then:
    1. Verify all data sources and datasets are embedded in the report definition, and that they're [supported data sources](../paginated-reports/paginated-reports-data-sources.md).
    1. Preview the report to ensure it renders correctly.
-   1. Choose the _Save As_ option, and then select _Power BI service_.
-   1. Select the workspace that will contain the report.
+   1. Choose **Publish** option, then select **Power BI service**.
+   1. Select the workspace where you want to save the report.
    1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action will fail. You'll be notified of the reasons. You'll then need to revise your report design, and try saving again.
 
 ### Automated migration
