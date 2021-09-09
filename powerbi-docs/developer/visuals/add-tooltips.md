@@ -228,11 +228,11 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-The public preview of [modern visuals tooltips](../../create-reports/desktop-visual-tooltips.md) includes data point drill actions and updated styling to match your report theme.
+[Modern visuals tooltips](../../create-reports/desktop-visual-tooltips.md) add data point drill actions to your tooltips, and update the styling to match your report theme.
 
 ![modern tooltip](media/add-tooltips/modern-tooltip.png)
 
-To manage report page modern tooltips support, add a `supportEnhancedTooltips` property to the `tooltips` [object](objects-properties.md) in the *capabilities.json* file.
+To manage report page modern tooltips support, add the `supportEnhancedTooltips` property to the `tooltips` [object](objects-properties.md) in the *capabilities.json* file.
 
 For example:
 
