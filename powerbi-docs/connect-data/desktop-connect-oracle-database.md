@@ -21,11 +21,9 @@ Before you can connect to an Oracle database using Power BI, you need to install
 
 From the Oracle readme file:
 
-    Machine-wide configuration is no longer supported beginning with ODAC 18c. Administrators can still 
-    place ODP.NET in the GAC and add the configuration section handler and DbProviderFactory information 
-    to machine.config manually if they wish to override ODP.NET settings for individual applications.
+"Machine-wide configuration is no longer supported beginning with ODAC 18c. Administrators can still place ODP.NET in the GAC and add the configuration section handler and DbProviderFactory information to machine.config manually if they wish to override ODP.NET settings for individual applications."
 
-Once Oracle 18.x/19.x is installed the customer must follow the instructions here: [Registering Oracle drivers for Power BI Desktop](https://docs.microsoft.com/en-us/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15#64-bit-and-32-bit-drivers-for-power-bi-desktop)
+Once Oracle 18.x/19.x is installed the customer must follow the instructions here: [Registering Oracle drivers for Power BI Desktop](/sql/reporting-services/report-data/oracle-connection-type-ssrs#64-bit-and-32-bit-drivers-for-power-bi-desktop)
 
 If you're configuring an Oracle database for Power BI Desktop, On Premises Data Gateway, or Power BI Report Server, consult the information in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article. 
 
