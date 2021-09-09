@@ -84,7 +84,7 @@ Also called data classification. This option can be turned on by Power BI admins
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
 
 **connector**    
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
 
 **container**    
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
