@@ -21,7 +21,7 @@ The public preview of modern visual tooltips includes data point drill actions a
 
 When you enable this preview, new reports have modern tooltips enabled by default. However, to have the new tooltips in existing reports, you need to enable them for each report.
 
-## [For new reports on desktop](#tab/desktop-new)
+## [For new reports in Power BI Desktop](#tab/desktop-new)
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Preview features**.
 1. Select the **Modern visual tooltips** checkbox.
@@ -30,7 +30,7 @@ When you enable this preview, new reports have modern tooltips enabled by defaul
 
 1. Restart Power BI Desktop.
 
-## [For existing reports on desktop](#tab/desktop-existing)
+## [For existing reports in Power BI Desktop](#tab/desktop-existing)
 
 1. Go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**.
 1. Select the checkbox under **Modern visual tooltips**.  
@@ -40,9 +40,10 @@ When you enable this preview, new reports have modern tooltips enabled by defaul
 ## [For reports in the Power BI service](#tab/web)
 
 1. Go to **File** > **Settings**.
-1. Switch the **Modern visual tooltips** toggle on.  
 
     :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-first-step.png" alt-text="Turn on the preview feature for reports in web service first step":::
+
+1. Switch the **Modern visual tooltips** toggle on.  
 
     :::image type="content" source="media/desktop-visual-tooltips/power-bi-service-preview-visual-tooltip-second-step.png" alt-text="Turn on the preview feature for reports in web service second step":::
 
