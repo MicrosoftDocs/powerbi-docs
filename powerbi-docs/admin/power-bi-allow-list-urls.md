@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/25/2020
+ms.date: 09/01/2021
 ms.custom: ''
 ---
 
@@ -25,7 +25,7 @@ The Power BI service requires only TCP Port 443 to be opened for the listed endp
 Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination(s)** column lists domain names and links to external sites, which contain further endpoint information.
 
 >[!Important]
->The information in the tables below doesn't apply to Power BI Germany, Power BI China operated by 21Vianet, or Power BI for US government. Read [Connect government and global Azure cloud services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
+>The information in the tables below doesn't apply to Power BI China operated by 21Vianet or Power BI for US government. Read [Connect government and global Azure cloud services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
 
 ## Authentication
 
@@ -48,7 +48,7 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | 5 | **Required:** Microsoft 365 integration | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | 6 | **Required:** Portal | *.powerbi.com | TCP 443 |
 | 7 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
-| 8 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
+| 8 | **Optional:** Informational messages | arc.msn.com | TCP 443 |
 | 9 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
 | | | |
 

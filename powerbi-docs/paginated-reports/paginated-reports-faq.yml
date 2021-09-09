@@ -48,7 +48,7 @@ sections:
       - question: |
           How do I turn on/off my paginated reports workload?
         answer: |
-          The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create, but will not consume memory until you upload your first paginated report.  
+          The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.  
 
       - question: |
           How can I monitor usage of paginated reports in my tenant?

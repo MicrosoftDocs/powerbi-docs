@@ -77,7 +77,7 @@ To make best use of the compute engine, split the ETL stage into two separate da
 * Date
 * Time
 
-## Use DirectQuery with dataflows in Power BI (preview)
+## Use DirectQuery with dataflows in Power BI
 
 You can use DirectQuery to connect directly to dataflows, and thereby connect directly to your dataflow without having to import its data. 
 

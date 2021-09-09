@@ -2922,7 +2922,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-aggregations.md",
-            "redirect_url": "/power-bi/transform-model/desktop-aggregations",
+            "redirect_url": "/power-bi/transform-model/aggregations-advanced",
             "redirect_document_id": true
         },
         {
@@ -3936,6 +3936,11 @@
 		    "redirect_document_id": false
 		},
         {
+		    "source_path": "powerbi-docs/transform-model/desktop-aggregations.md",
+		    "redirect_url": "/power-bi/admin/aggregations-auto",
+		    "redirect_document_id": false
+		},
+        {
             "source_path": "powerbi-docs/developer/embedded/azure-pbie-what-is-power-bi-embedded.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
@@ -3979,6 +3984,52 @@
             "source_path": "powerbi-docs/admin/service-admin-enhanced-metadata-scanning.md",
             "redirect_url": "/power-bi/admin/service-admin-metadata-scanning",
             "redirect_document_id": true
-        }                                                
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-divide-function-operator.md",
+            "redirect_url": "/dax/best-practices/dax-divide-function-operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-error-functions.md",
+            "redirect_url": "/dax/best-practices/dax-error-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-selectedvalue.md",
+            "redirect_url": "/dax/best-practices/dax-selectedvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-countrows.md",
+            "redirect_url": "/dax/best-practices/dax-countrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-variables.md",
+            "redirect_url": "/dax/best-practices/dax-variables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-converting-blank.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-converting-blank",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-column-measure-references.md",
+            "redirect_url": "/dax/best-practices/dax-column-measure-references",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-avoid-filter-as-filter-argument.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-avoid-filter-as-filter-argument",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-sample-model.md",
+            "redirect_url": "/dax/best-practices/dax-sample-model",
+            "redirect_document_id": false
+        }
+
     ]           
 }

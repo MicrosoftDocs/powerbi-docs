@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/25/2021
+ms.date: 09/08/2021
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
@@ -78,6 +78,9 @@ You can make a field appear in multiple folders by using a semicolon to separate
 You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
 
 ![Organize measures and keep them on top of the Fields List](media/desktop-measures/measures-05.png)
+
+> [!TIP]
+> Hidden measures are displayed and accessible in Power BI Desktop, however, you will not see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
 
 ## Learn more
 

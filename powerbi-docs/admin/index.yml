@@ -63,7 +63,7 @@ landingContent:
             url: service-premium-capacity-scenarios.md
       - linkListType: how-to-guide
         links:
-          - text: "Where is my tenant located?"
+          - text: "Where is my data stored?"
             url: service-admin-where-is-my-tenant-located.md
           - text: "Find users that have signed in"
             url: service-admin-access-usage.md

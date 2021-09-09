@@ -47,7 +47,7 @@ When you open a report in Power BI Desktop, you may see a warning message lettin
 
 ## Working offline
 
-When working in Power BI Desktop without an internet connection, if you open a report with a [custom Power BI visual](./../developer/visuals/power-bi-custom-visuals.md#custom-visual-files) that wasn't previously saved while Power BI Desktop was online, the visual will not render. To fix this problem, follow these steps:
+When working in Power BI Desktop without an internet connection, if you open a report with an [AppSource Power BI visual](./../developer/visuals/power-bi-custom-visuals.md#appsource-power-bi-visuals) that wasn't previously saved while Power BI Desktop was online, the visual will not render. To fix this problem, follow these steps:
 
 1. Make sure you're working online.
 
@@ -67,7 +67,7 @@ This section lists the limitations of downloading a PBIX file.
 
 * Datasets with incremental refresh can't be downloaded to a PBIX file.
 
-* Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a PBIX file.
+* Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a PBIX file.
 
 * Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#limitations-1).
 

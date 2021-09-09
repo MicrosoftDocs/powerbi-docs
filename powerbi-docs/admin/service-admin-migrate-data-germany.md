@@ -9,6 +9,7 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/02/2020
 LocalizationGroup: Administration
+ROBOTS: NOINDEX
 ---
 
 # Migrate your subscription to the new Local German regions

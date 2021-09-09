@@ -2,8 +2,8 @@
 metadata:
   Title: Frequently Asked Questions for German government customers
   description: For German government customers, answers to common questions for the Power BI German government service
-  author: davidiseminger
-  ms.author: davidi
+  author: kfollis
+  ms.author: kfollis
   ms.reviewer: ''
   ms.custom: ''
   ms.service: powerbi
@@ -11,6 +11,7 @@ metadata:
   ms.topic: conceptual
   ms.date: 08/20/2020
   LocalizationGroup: Get started
+  ROBOTS: NOINDEX
     
 title: Frequently asked questions for Power BI for Germany cloud customers
 summary: |
