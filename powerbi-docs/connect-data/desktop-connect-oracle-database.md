@@ -15,11 +15,17 @@ To connect to an Oracle database with Power BI Desktop, the correct Oracle clien
 
 Supported Oracle versions: 
 - Oracle Server 9 and later
-- Oracle Data Access Client (ODAC) software 11.2 and later
+- Oracle Data Access Client (ODAC) software 11.2 or greater
 
-Before you can connect to an Oracle database using Power BI, you need to install the Oracle client software v8.1.7 or greater on your computer. To install the 32-bit Oracle client software, go to [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html). To install the 64-bit Oracle client, go to [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
+Before you can connect to an Oracle database using Power BI, you need to install the Oracle Data Access Client (ODAC) software 11.2 or greater on your computer. To install the 32-bit ODAC software, go to [32-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) or choose a version you prefer. To install the 64-bit ODAC software, go to [64-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) or choose a version you prefer.  You must choose a windows installer version since xcopy version does not work with Power BI Desktop. 
 
+From the Oracle readme file:
 
+    Machine-wide configuration is no longer supported beginning with ODAC 18c. Administrators can still 
+    place ODP.NET in the GAC and add the configuration section handler and DbProviderFactory information 
+    to machine.config manually if they wish to override ODP.NET settings for individual applications.
+
+Once Oracle 18.x/19.x is installed the customer must follow the instructions here: [Registering Oracle drivers for Power BI Desktop](https://docs.microsoft.com/en-us/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15#64-bit-and-32-bit-drivers-for-power-bi-desktop)
 
 If you're configuring an Oracle database for Power BI Desktop, On Premises Data Gateway, or Power BI Report Server, consult the information in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article. 
 
