@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 09/05/2021
 LocalizationGroup: Create reports
 ---
+
 # Create modern visual tooltips (preview)
 
 The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
@@ -36,7 +37,7 @@ When you enable this preview, new reports have modern tooltips enabled by defaul
 
     :::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-preview-visual-tooltip-existing.png" alt-text="Turn on the preview feature for existing reports":::
 
-## [For reports in web service](#tab/web)
+## [For reports in the Power BI service](#tab/web)
 
 1. Go to **File** > **Settings**.
 1. Switch the **Modern visual tooltips** toggle on.  
