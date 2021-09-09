@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 05/14/2021
+ms.date: 09/09/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop

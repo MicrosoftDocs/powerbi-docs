@@ -8,7 +8,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 06/20/2021
+ms.date: 09/09/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -82,6 +82,9 @@ Also called data classification. This option can be turned on by Power BI admins
 
 **connect live**    
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
+
+**connector**    
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
 
 **container**    
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
