@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 09/09/2021
 ---
 
 # What's new in Power BI Report Server
@@ -15,6 +15,44 @@ ms.date: 01/27/2021
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## May 2021
+
+Here’s a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+Here are the new features in Power BI Desktop for Power BI Report Server.
+
+**Reporting**
+
+- New and improved shapes
+- New field list
+- Search bar
+- Updated color picker
+- Smart guides for aligning objects are now available in the mobile layout view
+- Invert axis and continuous axis sorting
+- New filter operations: “is empty” and “is not empty”
+
+**Analytics**
+
+- X axis constant line for line charts
+
+**Modeling**
+
+- IF.EAGER
+- Calculate filters are easier to use
+- CROSSFILTER supports many-to-many relationships
+- Performance improvements to IF and SWITCH functions
+
+**Data connectivity**
+
+- Text/CSV By Example
+
+**Other**
+
+- Certificate revocation check controls now available in Desktop interface
+- Simplifying collection of diagnostic information
 
 ## January 2021
 
