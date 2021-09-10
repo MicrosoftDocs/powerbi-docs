@@ -32,7 +32,7 @@ Here are highlights of the the new features in Power BI Desktop for Power BI Rep
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
 - [Text/CSV by example](../connect-data/desktop-connect-csv.md).
 
-**Other updated features**
+**Other new and updated features**
 
 **Reporting**
 
