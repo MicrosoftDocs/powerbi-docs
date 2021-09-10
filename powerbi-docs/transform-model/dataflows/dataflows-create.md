@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/03/2021
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -99,7 +99,7 @@ And that's it - the transformation is performed on the data in the dataflow that
 
 Creating a dataflow from a CDM folder allows you to reference an table that has been written by another application in the Common Data Model (CDM) format. You are prompted to provide the complete path to the CDM format file stored in ADLS Gen 2.
 
- ![create computed table step 6](media/dataflows-create/attach-cdm.jpg)
+ ![create computed table step 6](media/dataflows-create/attach-cdm.png)
 
 There are a few requirements for creating dataflows from CDM folders, as the following list describes:
 

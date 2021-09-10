@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/22/2019
+ms.date: 08/25/2021
 LocalizationGroup: Create reports
 ---
 # Use quick measures for common calculations
@@ -109,7 +109,7 @@ The formula bar not only shows you the formula behind the measure, but perhaps m
 
 Imagine you need to do a year-over-year calculation, but you're not sure how to structure the DAX formula, or you have no idea where to start. Instead of banging your head on the desk, you can create a quick measure using the **Year-over-year change** calculation, and see how it appears in your visual and how the DAX formula works. Then you can either make changes directly to the DAX formula, or create a similar measure that meets your needs and expectations. It's like having a teacher that immediately responds to what-if questions you ask with a few clicks. 
 
-You can always delete quick measures from your model if you don't like them. That's as easy as right-clicking or selecting the **...** next to the measure and selecting **Delete**. You can also rename a quick measure whatever you like by selecting **Rename** from the menu. 
+You can always delete quick measures from your model if you don't like them. That's as easy as right-clicking or selecting the **...** next to the measure and selecting **Delete from model**. You can also rename a quick measure whatever you like by selecting **Rename** from the menu. 
 
 ![Delete or rename a quick measure](media/desktop-quick-measures/quick-measures_11.png)
 
