@@ -22,7 +22,17 @@ Here’s a list of new and updated features. For details, see the [Power BI Repo
 
 ### Power BI Desktop for Power BI Report Server
 
-Here are the new features in Power BI Desktop for Power BI Report Server. Highlights are the new and improved shapes, the new field list, and visual formatting features.
+**Highlighted new features**
+
+Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
+
+- [Smart guides for aligning objects](../create-reports/desktop-create-phone-report.md) are now available in the mobile layout view.
+- [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
+- [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
+- Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
+- [Text/CSV by example](../connect-data/desktop-connect-csv.md).
+
+**Other updated features**
 
 **Reporting**
 
@@ -30,29 +40,21 @@ Here are the new features in Power BI Desktop for Power BI Report Server. Highli
 - New field list
 - Search bar
 - Updated color picker
-- Smart guides for aligning objects are now available in the mobile layout view
-- Invert axis and continuous axis sorting
 - New filter operations: “is empty” and “is not empty”
 
 **Analytics**
 
-- X axis constant line for line charts
+- X axis constant line for line charts.
 
 **Modeling**
 
 - IF.EAGER
-- Calculate filters are easier to use
-- CROSSFILTER supports many-to-many relationships
-- Performance improvements to IF and SWITCH functions
-
-**Data connectivity**
-
-- Text/CSV By Example
+- CROSSFILTER supports many-to-many relationships.
 
 **Other**
 
-- Certificate revocation check controls now available in Desktop interface
-- Simplifying collection of diagnostic information
+- Certificate revocation check controls now available in Desktop interface.
+- Simplifying collection of diagnostic information.
 
 ## January 2021
 
