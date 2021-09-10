@@ -226,8 +226,6 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 
 **Data preparation**
 
-- Automatic Table Detection from Excel files  
-- Automatic Table Detection from JSON files  
 - Global option to disable automatic type detection 
 
 **Other**  
