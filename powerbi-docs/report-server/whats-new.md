@@ -18,11 +18,11 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 ## May 2021
 
-Here’s a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2021-feature-summary/).
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for May 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2021-feature-summary/).
 
 ### Power BI Desktop for Power BI Report Server
 
-Here are the new features in Power BI Desktop for Power BI Report Server.
+Here are the new features in Power BI Desktop for Power BI Report Server. Highlights are the new and improved shapes, the new field list, and visual formatting features.
 
 **Reporting**
 
