@@ -8,7 +8,7 @@ ms.custom: video-e2PD8m1Q0vU, video-kOuINwgkEkQ, video-Cle_rKBpZ28
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2020
+ms.date: 09/10/2021
 LocalizationGroup: Dashboards
 ---
 # Add images, videos, and more to your dashboard
@@ -24,9 +24,9 @@ Watch Amanda add tiles to a dashboard.
 ## Add an image, video, or other tile
 You can add an image, text box, video, streaming data, or web code directly to your dashboard.
 
-1. Select **Add tile** from the top menu bar of your dashboard. Depending on space limitations, you may see only the plus ![plus sign](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) sign.
-   
-    ![Add tile icon](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
+1. Select the arrow next to **Edit** on the top menu, and then select **Add a tile**.
+
+    ![Screenshot showing the Add s tile selection.](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
 2. Select which type of tile to add: 
 
     **[Web content](#add-web-content)**
@@ -39,7 +39,7 @@ You can add an image, text box, video, streaming data, or web code directly to y
 
     **[Custom streaming data](#add-streaming-data)**
    
-    ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
+    ![Screenshot of the Add a tile window.](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## Add an image
 If you want to add your company logo or some other image to your dashboard, you save the image file online and link to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  

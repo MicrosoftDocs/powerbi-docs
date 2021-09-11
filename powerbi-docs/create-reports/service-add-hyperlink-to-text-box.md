@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/25/2019
+ms.date: 09/09/2021
 ms.custom: video-_3q6VEBhGew
 LocalizationGroup: Visualizations
 ---
@@ -47,10 +47,10 @@ For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlin
    b. Select the URL in the hyperlink field to open the page in a new browser window.
 
 ## To remove the hyperlink
-1. In the text box, select the hyperlink to highlight it.
+1. In the text box, place your cursor anywhere in the hyperlink.
    
      ![Remove the hyperlink](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
-2. Select **Remove** from the text box menu. 
+2. Select **Remove** from the hyperlink menu. 
 
    Power BI Desktop removes the hyperlink, but leaves the text.
 
