@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 09/09/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -172,3 +172,48 @@ The type of upgrade and trial options that you are offered will depend on how yo
 [Tips for finding help](../fundamentals/service-tips-for-finding-help.md)    
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
+
+
+
+
+SCENARIO 1
+You create a PBIX report in Power BI Desktop. You publish it to your Workspace on the Power BI Service. - No licensing required – Free license required
+SCENARIO 2
+You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop - No licensing required.
+SCENARIO 3
+You create a PBIX report in Power BI Desktop and publish to a shared workspace. - Licensing required – Paid license required
+SCENARIO 4
+You are sent a link to a report hosted on the Power BI Service and want to view it. - Licensing required – Free license required to view, but user is part of org with paid license See: Feature availability for users with free licenses - Power BI | Microsoft Docs
+
+also call out benefit of using PBIS for sharing as done in Feature Availability article. 
+
+
+
+
+SCENARIO 1
+You create a PBIX report in Power BI Desktop. You publish it to your Workspace on the Power BI Service. - No licensing required – Free license required for creator.  What is required by consumer in PBIS to open/view that report? Consumers can’t see what is in the creator’s own workspace. See the MWO in feature list column #1.
+SCENARIO 2
+You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop - No licensing required. What is required by a free user to open the file in Desktop? Nothing, just to have desktop downloaded and installed.
+SCENARIO 3
+You create a PBIX report in Power BI Desktop and publish to a shared workspace. - Licensing required – Paid license required. I’m assuming a paid license is required to publish to a shared workspace.  But what about the person you’re sharing with – what do they need A free license to view.
+SCENARIO 4
+You are sent a link to a report hosted on the Power BI Service and want to view it. - Licensing required – Free license required to view, but user is part of org with paid license See: Feature availability for users with free licenses - Power BI | Microsoft Docs.  So, if I’m the consumer and I have a free license and the report is not in Premium capacity, what do I need to view it?  If the report is not published with premium capacity then I don’t think the consumer can see it.
+Etc....
+
+
+
+
+
+
+
+
+
+
+Scenario	Creator 	Consumer
+#1 You create a PBIX report in Power BI Desktop. You publish it to your My Workspace on the Power BI Service.	Free license needed to publish in My Workspace in Service for personal consumption. Pro or Premium per User license required to share content in My Workspace with others.	Consumer cannot see content in other's My Workspace without a Pro or Premium per User license
+#2 You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop 	No licensing needed, only need Desktop to be downloaded.	No licensing needed, only need Desktop downloaded to view the file.
+#3 You create a PBIX report in Power BI Desktop and publish to a shared workspace.	Paid license needed to publish to shared workspace.	Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity the consumer only needs a Free license to view.
+#4 You are sent a link to a report hosted on the Power BI Service and want to view it.	Need paid licensing to share a link, or report needs to be in Premium capacity	Paid license required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity the consumer only needs a Free license to view.
+
