@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/09/2020
+ms.date: 08/13/2021
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
@@ -33,9 +33,9 @@ Common query tasks begin at the steps necessary to connect to both of those data
 
 ## Connect to data
 
-To connect to data in Power BI Desktop, select **Home** and then **Get Data**. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select **More** at the end of the menu. For more information, see [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md).
+To connect to data in Power BI Desktop, select **Home** and then **Get data**. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select **More** at the end of the menu. For more information, see [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md).
 
-![Most Common data sources menu, Get Data button, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
+![Most Common data sources menu, Get data button, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
 To start, select **Excel**, specify the Excel workbook mentioned earlier, and then select **Open**. Query inspects the workbook, then presents the data it found in the **Navigator** dialog box after you select a table.
 
@@ -43,7 +43,7 @@ To start, select **Excel**, specify the Excel workbook mentioned earlier, and th
 
 You can select **Transform Data** to edit, adjust, or *shape*, the data before you load it into Power BI Desktop. Editing is especially useful when you work with large datasets that you want to pare down before loading.
 
-Connecting to different types of data is as easy. You also want to connect to a Web resource. Choose **Get Data** > **More**, and then select **Other** > **Web** > **Connect**.
+Connecting to different types of data is as easy. You also want to connect to a Web resource. Choose **Get data** > **More**, and then select **Other** > **Web** > **Connect**.
 
 ![Web data source, Get Data dialog box, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
@@ -67,7 +67,7 @@ In the previous section, you connected to two sets of data: an Excel workbook an
 
 When you shape data, you transform a data source into the form and format that meets your needs.
 
-In Power Query Editor, many commands can be found in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then select the **Remove Columns** button from the **Home** tab in the ribbon.
+In Power Query Editor, many commands can be found in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then select the **Manage Columns** > **Remove Columns** button from the **Home** tab in the ribbon.
 
 ![Remove Columns command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
@@ -108,7 +108,7 @@ Let’s look at an example. The following **Products_by_Categories** table has b
 
 ![Pivot Column command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
 
-The **Pivot Column** dialog box appears, letting you know which column’s values will be used to create new columns (1). (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options** (2), you can select the function that will be applied to the aggregated values (3).
+The **Pivot Column** dialog box appears, letting you know which column’s values will be used to create new columns. (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options**, you can select the function that will be applied to the aggregated values.
 
 ![Pivot Column dialog box, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
 

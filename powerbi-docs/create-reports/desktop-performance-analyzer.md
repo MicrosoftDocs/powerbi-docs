@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2021
+ms.date: 09/09/2021
 LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance
@@ -60,6 +60,9 @@ The **Duration (ms)** values indicate the difference between a *start* and *end*
 After you've interacted with elements of the report you want to measure with Performance Analyzer, you can select the **Stop** button. The performance information remains in the pane after you select **Stop** for you to analyze.
 
 To clear out the information in the Performance Analyzer pane, select **Clear**. All information is erased and is not saved when you select **Clear**. See the next section to learn how to save information in logs. 
+
+> [!TIP]
+> When Power BI processes queries and their associated metadata, the processing of the query can be impacted by the complexity of the schema, the number of tables in the database(s), the complexity of the relationships between them, and the number of foreign key constraints on the tables. Such complexity can result in initial delays in returning or rendering a report.
 
 ## Refreshing visuals
 
