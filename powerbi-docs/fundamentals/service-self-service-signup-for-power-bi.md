@@ -14,7 +14,7 @@ LocalizationGroup: Get started
  
 # Sign up for or purchase the Power BI service as an individual
 
-Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how individuals can use **self-service sign-up** and **self-service purchase** to get a Power BI license for themselves.  If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).
+Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how individuals can use **self-service sign-up** and **self-service purchase** to get a license for the Power BI service for themselves.  If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md). To download the free Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md).
 
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
