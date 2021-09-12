@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/02/2020
+ms.date: 09/12/2021
 LocalizationGroup: Create reports
 ---
 # Use dashboard themes in the Power BI service
