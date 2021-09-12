@@ -118,7 +118,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 <a name="different"></a>
 
 ### Pin the tile to a different dashboard
-1. From the ellipses dropdown menu, select **Pin tile** ![pin icon](media/service-dashboard-edit-tile/pinnooutline.png) .
+1. From the ellipses dropdown menu, select **Pin tile** ![pin icon](media/service-dashboard-edit-tile/pin-tile.png) .
 2. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard. 
    
    ![Pin to dashboard dialog](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
