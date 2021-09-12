@@ -8,7 +8,7 @@ ms.custom: video-l8JoB7w0zJA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/02/2018
+ms.date: 09/10/2021
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from Excel
@@ -32,7 +32,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
     ![OneDrive for Business dialog](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
-3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![workbook icon](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook and a yellow asterisk indicates it's new.
+3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![workbook icon](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook.
     
     ![workbooks tab](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Open the workbook in Power BI by selecting the workbook name.
@@ -47,7 +47,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is from wit
 1. Highlight the cells that you'd like to pin to a dashboard.
    
     ![select cells in Excel workbook](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
-2. Select the pin ![pin icon](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) icon. 
+2. Select the pin ![pin icon](../media/pin-icon.png) icon. 
 3. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * Existing dashboard: select the name of the dashboard from the dropdown.
@@ -56,7 +56,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is from wit
      ![Pin to dashboard dialog](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Select **Pin**. A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard. 
    
-    ![Pinned to dashboard dialog](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
+    ![Pinned to dashboard dialog](../media/power-bi-pin.png)
 5. Select **Go to dashboard**. From here you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization. By default, selecting the pinned tile opens the workbook in Power BI.
 
 ## Pin an entire table or PivotTable to a dashboard
