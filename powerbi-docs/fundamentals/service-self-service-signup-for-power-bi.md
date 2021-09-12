@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/09/2021
+ms.date: 09/12/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -18,6 +18,17 @@ Power BI can be your personal data analysis and visualization tool, and can also
 
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
+## License scenarios
+Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro, Power BI Premium, and Power BI Premium Per User (PPU). Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../admin/service-premium-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
+
+|Scenario  |Creator  |Consumer  |
+|---------|---------|---------|
+|You create a report in Power BI Desktop (.PBIX). Then you publish it to your My Workspace on the Power BI Service.     |  As a creator, you only need the free Desktop app and a free Power BI license to publish to your My Workspace in the Power BI service for your own use.  A Power BI Pro or PPU license is required to share content in My Workspace with others.  |  Consumer cannot see content in other person's My Workspace without a Pro or Premium per User license.       |
+|You create a report in Power BI Desktop (.PBIX) and share the PBIX file to other people who open the file in Power BI Desktop     |   No licensing needed, only the Power BI Desktop app to be downloaded and installed.      |    No licensing needed, only the Power BI Desktop app to be downloaded and installed.     |
+|You create a report in Power BI Desktop (.PBIX) and publish it to a shared workspace in the Power BI service.     |   Paid license needed to publish to shared workspaces.	      |  	Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity, the consumer only needs a free license to view that report.       |
+|You are sent a link to a report hosted on the Power BI Service and want to view it.     |   You need a paid license to share a link. You need a free licence to share a link to a report that is in Premium capacity.      |    A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the consumer only needs a free license to view.     |
+
+
 ## Supported email addresses
 
 Before you start the self-service process, it's important to learn which types of email addresses you can use to sign-up for or purchase Power BI:
@@ -25,6 +36,8 @@ Before you start the self-service process, it's important to learn which types o
 * Power BI requires that you use a work or school email address. You can't sign up or purchase using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com, and others. If you don't have a work or school account, [learn about alternate ways to sign up.](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
 * You can sign-up for or purchase Power BI with .gov or .mil addresses, but this requires a different process. For more info, see [Enroll your US Government organization in the Power BI service](../admin/service-govus-signup.md).
+
+
 
 ## Use self-service sign-up to get an individual Power BI license
 
@@ -173,47 +186,4 @@ The type of upgrade and trial options that you are offered will depend on how yo
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-
-
-
-
-
-SCENARIO 1
-You create a PBIX report in Power BI Desktop. You publish it to your Workspace on the Power BI Service. - No licensing required – Free license required
-SCENARIO 2
-You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop - No licensing required.
-SCENARIO 3
-You create a PBIX report in Power BI Desktop and publish to a shared workspace. - Licensing required – Paid license required
-SCENARIO 4
-You are sent a link to a report hosted on the Power BI Service and want to view it. - Licensing required – Free license required to view, but user is part of org with paid license See: Feature availability for users with free licenses - Power BI | Microsoft Docs
-
-also call out benefit of using PBIS for sharing as done in Feature Availability article. 
-
-
-
-
-SCENARIO 1
-You create a PBIX report in Power BI Desktop. You publish it to your Workspace on the Power BI Service. - No licensing required – Free license required for creator.  What is required by consumer in PBIS to open/view that report? Consumers can’t see what is in the creator’s own workspace. See the MWO in feature list column #1.
-SCENARIO 2
-You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop - No licensing required. What is required by a free user to open the file in Desktop? Nothing, just to have desktop downloaded and installed.
-SCENARIO 3
-You create a PBIX report in Power BI Desktop and publish to a shared workspace. - Licensing required – Paid license required. I’m assuming a paid license is required to publish to a shared workspace.  But what about the person you’re sharing with – what do they need A free license to view.
-SCENARIO 4
-You are sent a link to a report hosted on the Power BI Service and want to view it. - Licensing required – Free license required to view, but user is part of org with paid license See: Feature availability for users with free licenses - Power BI | Microsoft Docs.  So, if I’m the consumer and I have a free license and the report is not in Premium capacity, what do I need to view it?  If the report is not published with premium capacity then I don’t think the consumer can see it.
-Etc....
-
-
-
-
-
-
-
-
-
-
-Scenario	Creator 	Consumer
-#1 You create a PBIX report in Power BI Desktop. You publish it to your My Workspace on the Power BI Service.	Free license needed to publish in My Workspace in Service for personal consumption. Pro or Premium per User license required to share content in My Workspace with others.	Consumer cannot see content in other's My Workspace without a Pro or Premium per User license
-#2 You create a PBIX report in Power BI Desktop and share the PBIX file to other people who open the file in Power BI Desktop 	No licensing needed, only need Desktop to be downloaded.	No licensing needed, only need Desktop downloaded to view the file.
-#3 You create a PBIX report in Power BI Desktop and publish to a shared workspace.	Paid license needed to publish to shared workspace.	Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity the consumer only needs a Free license to view.
-#4 You are sent a link to a report hosted on the Power BI Service and want to view it.	Need paid licensing to share a link, or report needs to be in Premium capacity	Paid license required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity the consumer only needs a Free license to view.
 
