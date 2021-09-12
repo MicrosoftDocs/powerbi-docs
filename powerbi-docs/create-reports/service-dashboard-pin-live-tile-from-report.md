@@ -29,7 +29,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
 
 1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
-2. With no visualizations selected, from the menubar, select **Pin to a dashboard**.
+2. With no visualizations selected, from the menu bar, select **Pin to a dashboard**.
    
    ![Pin Live Page icon](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
 3. Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
