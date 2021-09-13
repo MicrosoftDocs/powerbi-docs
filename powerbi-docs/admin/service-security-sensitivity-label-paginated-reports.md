@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/10/2021
+ms.date: 09/09/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity label support for paginated reports (preview)
@@ -23,7 +23,6 @@ Sensitivity labels on paginated reports are included in protection metrics (as p
 
 Sensitivity label support is now in public preview, and the following limitations apply:
 
-* Sensitivity labels are not supported for paginated reports in deployment pipelines. A sensitivity label on a paginated report in a deployment pipeline will not be deployed to subsequent pipeline stages.
 * [Downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md) is not supported. The label of an upstream model will not propagate down to its downstream paginated reports. Likewise, the label of a paginated report will not propagate down to the report’s downstream content.
 * [Mandatory labeling](service-security-sensitivity-label-mandatory-label-policy.md) will not apply to paginated reports.
 

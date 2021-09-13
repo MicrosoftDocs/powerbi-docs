@@ -90,6 +90,8 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
+* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
+
 * You can only assign one workspace to each deployment pipeline.
 
 >[!NOTE]
