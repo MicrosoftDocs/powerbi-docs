@@ -7,21 +7,21 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 09/13/2021
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-You can ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented in the form of visuals that are called *Insights*. 
+You can ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented in the form of visuals that are called *Insights*. Insights are available for visuals on dashboards, visuals in reports, and entire report pages. 
 
 To learn how to use Insights, see [Power BI Insights](end-user-insights.md)
 
 ![a set of Insights](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
-Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles.
+Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles, report visuals, and report pages.
 
 ## Some terminology
 Power BI uses statistical algorithms to uncover  Insights. The algorithms are listed and described in the next section of this article. Before we get to the algorithms, here are definitions for some terms that may be unfamiliar. 
@@ -33,7 +33,7 @@ Power BI uses statistical algorithms to uncover  Insights. The algorithms are li
 * **Continuous variable** - a continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.  
 
 ## What types of insights can you find?
-These are the algorithms that Power BI uses. 
+Power BI can find ten types of insights for dashboard tiles and these ten are described below.  For reports, Power BI proactively  performs analyses for anomalies, trends, and KPIs. 
 
 ### Category outliers (top/bottom)
 Highlights cases where one or two categories have much larger values than other categories.  
