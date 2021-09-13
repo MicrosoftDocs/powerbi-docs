@@ -443,7 +443,7 @@ The automatic installation happens for a user under the following conditions:
 - The user has a Microsoft Teams license.
 - The user opens the Power BI service (e.g. app.powerbi.com) in a web browser.
 
-Initially, auto-install applies to new users the first time they visit the Power BI service in a web browser. At a later date, auto-install will occur for all active users of the Power BI service who meet the criteria.
+Initially, auto-install applies to new users the first time they visit the Power BI service in a web browser. Automatic installation will start occurring after November 1, 2021 for users who visit the Power BI service and meet the criteria.
 
 When auto-install occurs, users see the following notification in the Power BI service notification pane.
 
