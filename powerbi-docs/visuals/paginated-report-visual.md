@@ -106,6 +106,10 @@ When you use a Power BI dataset as the data source for your paginated report and
 - Manually change the DAX query text in the auto-generated dataset to remove the part that sets the parameter to be a text value.  
 - Change the Power BI dataset using Power Query to add a column that formats the date field as a text field.
 
+## Limitations
+
+- Paginated Report Visual is not supported in Embedded scenario yet. 
+
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md) 
