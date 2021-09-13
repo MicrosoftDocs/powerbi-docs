@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 4/30/2021
+  ms.date: 9/13/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Per User
@@ -70,6 +70,9 @@ sections:
 
           You can move workspaces between Premium Per User (PPU) and Premium capacities as needed. Any such move will require a full refresh of any datasets or dataflows that reside in the workspace, once you move it back to a Premium capacity. There is a limited set of APIs available to enable movement of workspaces, but they do not include actions such as turning off a workload.
 
+          Datasets in the *Large Dataset format* in Premium Per User (PPU) will not appear in the user interface, which is by design. 
+
+
       - question: |
           End user experience
         answer: |
@@ -110,7 +113,7 @@ sections:
           * You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content
           
           Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed again before use. Reports opened after such migrations without the dataset being refreshed will fail with an error similar to the following:
-          * *This operation is not allowed, as the database '<DbName>' is in a blocked state.*
+          * *This operation is not allowed, as the database *<DbName>* is in a blocked state.*
 
 additionalContent: |
  
