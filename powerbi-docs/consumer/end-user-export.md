@@ -16,7 +16,7 @@ LocalizationGroup: Consumers
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 
-To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. This article shows you how to export to Excel. Data can be e exported to Excel from a Power BI dashboard tile and from a report visual. 
+To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. This article shows you how to export to Excel. Data can be exported to Excel from a Power BI dashboard tile and from a report visual. 
 
 Exporting data to Excel requires a Power BI paid license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md). 
 
