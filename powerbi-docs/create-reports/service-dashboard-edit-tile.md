@@ -8,7 +8,7 @@ ms.custom: video-lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/02/2018
+ms.date: 09/10/2021
 LocalizationGroup: Dashboards
 ---
 # Edit or remove a dashboard tile
@@ -43,15 +43,15 @@ To follow along, open Power BI service (not Power BI Desktop) and [download the 
 
     ![Amount tile](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
 
-2. Open the report in Editing view by selecting **Edit report** from the top menubar.
+2. Open the report in Editing view by selecting **Edit** from the top menu bar.
 
 3. Add a new report page by selecting the plus sign (+) at the bottom of the report.
 
     ![plus icon](media/service-dashboard-edit-tile/power-bi-add-page.png)
 
-4. From the FIELDS pane, select **Fact > Amount** and **Business Area > Business Area**.
+4. From the **Fields** pane, select **Fact** > **Amount** and **Business Area** > **Business Area**.
  
-5. From the VISUALIZATIONS pane, select the Donut chart icon to convert the visualization to a Donut chart.
+5. From the **Visualizations** pane, select the Donut chart icon to convert the visualization to a Donut chart.
 
     ![Visualizations pane](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
 
@@ -59,7 +59,7 @@ To follow along, open Power BI service (not Power BI Desktop) and [download the 
 
    ![hover over tile](media/service-dashboard-edit-tile/power-bi-pin.png)
 
-6. When the "Success"message appears, select **Go to dashboard**. You will be prompted to save your changes. Select **Save**.
+6. When the **Pinned to dashboard** message appears, select **Go to dashboard**. You will be prompted to save your changes. Select **Save**.
 
 - - -
 <a name="move"></a>
@@ -67,7 +67,6 @@ To follow along, open Power BI service (not Power BI Desktop) and [download the 
 ## Move the tile
 On the dashboard, locate the new tile. Select and hold the tile to drag it to a new location on the dashboard canvas.
 
-- - -
 <a name="resize"></a>
 
 ## Resize the tile
@@ -75,7 +74,6 @@ You can make tiles many different sizes -- from 1x1 tile units up to 5x5. Select
 
 ![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
-- - -
 ## **More options** (...) menu
 
 1. Select **More options** (...) in the upper-right corner of the tile. 
@@ -120,7 +118,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 <a name="different"></a>
 
 ### Pin the tile to a different dashboard
-1. From the ellipses dropdown menu, select **Pin tile** ![pin icon](media/service-dashboard-edit-tile/pinnooutline.png) .
+1. From the ellipses dropdown menu, select **Pin tile** ![pin icon](../media/pin-icon.png).
 2. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard. 
    
    ![Pin to dashboard dialog](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
