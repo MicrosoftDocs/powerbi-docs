@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 09/13/2021
 LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions
