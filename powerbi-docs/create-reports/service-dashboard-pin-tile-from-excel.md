@@ -32,7 +32,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
     ![OneDrive for Business dialog](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
-3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![workbook icon](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook.
+3. In Power BI, the workbook is added to your workspace.  The ![workbook icon](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook.
     
     ![workbooks tab](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Open the workbook in Power BI by selecting the workbook name.

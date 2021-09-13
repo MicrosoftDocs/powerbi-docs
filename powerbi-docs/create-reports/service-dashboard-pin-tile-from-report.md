@@ -32,7 +32,7 @@ Watch Amanda create a dashboard by pinning visuals and images from a Power BI re
 
 Now create your own dashboard by using one of the Power BI sample reports.
 
-1. In the report, hover over the visualization you want to pin, and select the pin icon. ![Pin icon](../media/pin-icon.png). Power BI opens the **Pin to dashboard** screen.
+1. In the report, hover over the visualization you want to pin, and select the pin icon ![Pin icon](../media/pin-icon.png). Power BI opens the **Pin to dashboard** screen.
    
      ![Pin to dashboard window](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Select whether to pin to an existing dashboard or new dashboard.
