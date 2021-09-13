@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 09/13/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -81,6 +81,8 @@ Dataflows that exist in Premium have the following limitations and consideration
 * When using a Premium Per User (PPU) license with dataflows, data is cleared when moving data out of a PPU environment
 
 * When a dataflow is refreshed in a Premium Per User (PPU) context, the data is not visible to non-PPU users
+
+* Incremental refresh works with dataflows only when the enhanced compute engine is enabled
 
 
 **Linked and Computed tables:**
