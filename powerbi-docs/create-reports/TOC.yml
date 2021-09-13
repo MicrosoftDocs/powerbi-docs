@@ -502,6 +502,8 @@
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
+      - name: "Assign a workspace"
+        href: deployment-pipelines-assign.md        
       - name: "Troubleshooting"
         href: deployment-pipelines-troubleshooting.md      
     - name: Accessibility

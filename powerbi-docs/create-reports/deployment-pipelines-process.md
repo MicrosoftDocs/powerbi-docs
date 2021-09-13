@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 08/16/2021
+ms.date: 09/13/2021
 ---
 
 # Understand the deployment process
@@ -373,6 +373,9 @@ This section lists most of the limitations in deployment pipelines.
 
 >[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)

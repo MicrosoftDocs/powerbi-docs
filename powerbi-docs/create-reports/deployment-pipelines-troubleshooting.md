@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 08/16/2021
+ms.date: 09/13/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -195,6 +195,14 @@ You can also review our PowerShell script, [AddUserToWorkspacePipeline](https://
 
 To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
 
+### I have all the required permissions, why can't I assign a workspace?
+
+When you attempt to assign a workspace to a deployment stage,
+
+### How can I reestablish connections between Power BI items after assigning  a workspace to the test stage?
+
+When you assign a workspace, deployment pipelines tries to establish connections between Power BI items that are the same in the adjacent stages.
+
 ## Paginated reports
 
 ### Why can't I see a paginated report?
@@ -286,6 +294,9 @@ Pipeline and workspace permissions are managed separately. You may have pipeline
 
 >[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

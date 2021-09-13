@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 07/01/2021
+ms.date: 09/13/2021
 ---
 
 # Get started with deployment pipelines
@@ -287,6 +287,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 
 >[!div class="nextstepaction"]
 >[Introduction to deployment pipelines](deployment-pipelines-overview.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
