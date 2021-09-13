@@ -25,7 +25,7 @@ Exporting data to Excel requires a Power BI paid license, or for the dashboard o
 
 ## Requirements
 - Power BI license, free or paid.
-- Sales and Marketing sample. If you have a paid license, you can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample). If you have a free license, you can [open the Sales and marketing sample](../create-reports/sample-sales-and-marketing.md) from Power BI using **Get data**. Depending on which source you use, your visuals may or may not exactly match what you see in this tutorial. 
+- Sales and Marketing sample. If you have a paid license, you can [download this app from AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample). If you have a free license, you can [open the Sales and marketing sample](../create-reports/sample-sales-and-marketing.md) from Power BI using **Get data**. Depending on which source you use, your visuals may or may not exactly match what you see in this tutorial. 
 
 ## Export data from a visual on a dashboard
 
@@ -49,7 +49,8 @@ Exporting data to Excel requires a Power BI paid license, or for the dashboard o
 
 
     > [!NOTE]
-    > If you don't have permissions to the data, you won't be able to export or open in Excel. Contact the dashboard owner or your Power BI administrator to request export permissions. To find the owner, select the dropdown next to the report title. ![Dashboard displaying contact information.](media/end-user-export/power-bi-contact.png)
+    > If you don't have permissions to the data, you won't be able to export or open in Excel. Contact the dashboard owner or your Power BI administrator to request export permissions. To find the owner, select the dropdown next to the report title. 
+    > ![Dashboard displaying contact information.](media/end-user-export/power-bi-contact.png)
 
 ## Export data from a visual in a report
 You can export data from a visual in a report as .csv or .xlsx (Excel) format. 
