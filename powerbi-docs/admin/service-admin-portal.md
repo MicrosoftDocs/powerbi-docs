@@ -428,7 +428,28 @@ This setting allows organizations to access features that work with Microsoft Te
 
 :::image type="content" source="media/service-admin-portal/power-bi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
 
-Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+Read more about [collaborating in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+
+### Install the Power BI app for Teams automatically
+
+Automatic installation makes it easier to install the Power BI app for Microsoft Teams, without needing to change Microsoft Teams app setup policies. This change speeds up the installation and removes admin hassles of configuring and maintaining infrastructure needed by an app setup policy.
+
+The **Install Power BI app for Microsoft Teams automatically** tenant setting is added to the Power BI admin portal so Power BI admins can control the auto-install behavior. By default, the auto-install is enabled.
+
+The automatic installation happens for a user under the following conditions: 
+
+- The Power BI app for Microsoft Teams is set to **Allowed** in the Microsoft Teams admin portal.
+- The Power BI tenant setting **Install Power BI app for Microsoft Teams automatically** is **Enabled**. 
+- The user has a Microsoft Teams license.
+- The user opens the Power BI service (e.g. app.powerbi.com) in a web browser.
+
+Initially, auto-install applies to new users the first time they visit the Power BI service in a web browser. Automatic installation will start occurring after November 1, 2021 for users who visit the Power BI service and meet the criteria.
+
+When auto-install occurs, users see the following notification in the Power BI service notification pane.
+
+:::image type="content" source="../collaborate-share/media/service-microsoft-teams-app/teams-auto-install-notification.png" alt-text="Notification that the Microsoft Teams app was automatically installed.":::
+
+Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
 ### Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
