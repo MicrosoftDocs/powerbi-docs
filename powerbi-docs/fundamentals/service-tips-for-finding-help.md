@@ -21,7 +21,7 @@ Here are 10 tips that Power BI experts (including people who work on the product
 ​
 
 ## 2 Check the Power BI documentation
-The Power BI team is continually updating and improving [the Power BI documentation](../). You can find great content including recordings of webinars, white papers, guided learning, and links to blog posts on all the latest features.
+The Power BI team is continually updating and improving [the Power BI documentation](../index.yml). You can find great content including recordings of webinars, white papers, guided learning, and links to blog posts on all the latest features.
 
 ## 3 Read the Power BI blog​ for the latest news
 The Power BI team explains all the new features in their regular [Power BI blog posts](https://powerbi.microsoft.com/blog/). Find out what's new in everything from Power BI Desktop to the Power BI mobile apps. Make a habit of returning often to see what's new: Take a few minutes each week to scan the blogs. You never know when you'll benefit from that bit of information you noticed months ago.
