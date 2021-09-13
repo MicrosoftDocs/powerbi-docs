@@ -99,7 +99,7 @@ When a trend in your data is flagged, Power BI looks for and identifies the cate
 ### KPI analysis
 For KPI analysis explanations, Power BI looks for and identifies the categories that have significantly high or low values. For KPI analysis with target, possible explanations are ranked based on Z-scores of the difference of the value from the target. Whereas for KPI analysis without target, possible explanations are ranked based on the Z-scores of the value itself.
 
-![Screenshot showing explanations for KPI analysis insight.](media/power-bi-insights/KPI-explanations.png)
+![Screenshot showing explanations for KPI analysis insight.](media/power-bi-insights/kpi-explanations.png)
 
 ## Details
 If the insight talks about multiple anomalies, or trends, clicking on the insight card will show you the **Details** cards to help you choose the specific anomaly/trend/KPI segment you’d like to get explanations for.
