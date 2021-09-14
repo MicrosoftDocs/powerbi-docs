@@ -33,7 +33,7 @@ To download the .pbix file, follow these steps:
 
 1. In the Power BI service, open the report you want to download in [Editing view](./service-interact-with-a-report-in-editing-view.md).
 
-2. From the top nav pane, select **File** > **Download report**.
+2. From the top nav pane, select **File** > **Download report (Preview)**.
 
    :::image type="content" source="media/service-export-to-pbix/power-bi-file-export-editing.png" alt-text="A screenshot of the File menu in the Power B I service, with the Download report option highlighted.":::
 

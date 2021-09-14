@@ -170,13 +170,12 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
    ![Screenshot of Share icon.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard.png)
 
-2. In the **Share dashboard** page, enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
+2. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field, and add an optional message.
 
-3. Decide which of these options you want, if any:
+3. Select the option to **Send an email notification**. Decide which of these other options you want, if any:
 
     - **Allow recipients to share this dashboard**
     - **Allow recipients to build content with the data associated with this dashboard**
-    - **Send an email notification**
 
    ![Screenshot of Share dashboard pane](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
 
