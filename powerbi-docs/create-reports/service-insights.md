@@ -32,7 +32,7 @@ Watch Amanda run quick insights on a dataset and open an insight in Focus mode. 
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets and dataflows** tab, select **More options** (...), and then choose **Get quick insights**.
+1. From the **Datasets + dataflows** tab, select **More options** (...) next to the dataset, and then choose **Get quick insights**.
    
     ![Screenshot that shows selecting Get quick insights from the More options menu.](media/service-insights/power-bi-tab.png)
 2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your dataset.
