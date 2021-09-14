@@ -8,7 +8,7 @@ ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/08/2021
+ms.date: 09/13/2021
 LocalizationGroup: Dashboards
 ---
 # Generate data insights on your dataset automatically with Power BI
@@ -32,11 +32,9 @@ Watch Amanda run quick insights on a dataset and open an insight in Focus mode. 
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets** tab, select **More options** (...), and then choose **Get quick insights**.
+1. From the **Datasets and dataflows** tab, select **More options** (...), and then choose **Get quick insights**.
    
-    ![Datasets tab](media/service-insights/power-bi-ellipses.png)
-   
-    ![Ellipsis menu](media/service-insights/power-bi-tab.png)
+    ![Screenshot that shows selecting Get quick insights from the More options menu.](media/service-insights/power-bi-tab.png)
 2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your dataset.
    
     ![Searching for insights dialog](media/service-insights/pbi_autoinsightssearching.png)
@@ -66,7 +64,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
    * Filter the visualizations. If the **Filters** pane isn't already open, expand it by selecting the arrow on the right side of the window.
 
        ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
-   * Pin the insight card to a dashboard by selecting **Pin visual**.
+   * Pin the insight card to a dashboard by selecting the pin icon or **Pin visual**.
    * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png) or **Get Insights**.
      
        ![Get Insights icon](media/service-insights/pbi-autoinsights-tile.png)
