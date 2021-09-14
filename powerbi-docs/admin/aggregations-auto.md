@@ -225,6 +225,7 @@ Power BI maintains the dataset configuration outside of the dataset. The presenc
 
 When using automatic aggregations, keep the following in mind:
 
+- The SQL queries generated during the initial training phase can generate significant load for the data warehouse. If refresh succeeds but training keeps failing, consider temporarily scaling up your data warehouse to meet the training demand.
 - Aggregations stored in the in-memory aggregations cache may not be calculated on the most recent data at the data source. Unlike pure DirectQuery, and more like regular import tables, there is a latency between updates at the data source and aggregations data stored in the in-memory aggregations cache. While there will always be some degree of latency, it can be mitigated through an effective refresh schedule.
 - To further optimize performance, set all dimension tables to **Dual mode** and leave fact tables in DirectQuery mode.
 - Automatic aggregations are not available with Power BI Pro, Azure Analysis Services, or SQL Server Analysis Services.  
