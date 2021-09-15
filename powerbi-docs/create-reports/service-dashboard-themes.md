@@ -100,7 +100,7 @@ The JSON file for dashboard theming includes:
 
 - name: The theme name (only required field).
 - foreground and background: Colors for the dashboard.
-- dataColors: A list of hexcode to use for data in charts. You can include as few or as many colors as you want.
+- dataColors: A list of hex code to use for data in charts. You can include as few or as many colors as you want.
 - tiles: Background and color configurations for dashboards.
 - visualStyles: Granular formatting for visuals.
 

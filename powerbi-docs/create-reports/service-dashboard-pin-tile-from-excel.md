@@ -28,7 +28,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
 1. Upload your workbook to your OneDrive for Business.
 
-2. From Power BI, [connect to that workbook](../connect-data/service-excel-workbook-files.md) by selecting **Get Data > Files > OneDrive - Business** and nagivating to the location where you saved the Excel file. Select the file and choose **Connect > Connect**.
+2. From Power BI, [connect to that workbook](../connect-data/service-excel-workbook-files.md) by selecting **Get Data > Files > OneDrive - Business** and navigating to the location where you saved the Excel file. Select the file and choose **Connect > Connect**.
 
     ![OneDrive for Business dialog](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
