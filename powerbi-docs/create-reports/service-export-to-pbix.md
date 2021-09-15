@@ -21,7 +21,7 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 
 Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded PBIX files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded PBIX files using a Power BI Desktop version that does not support information protection.
 
-* To download the file, you must have edit access to the report.
+* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
 
 * The report must have been created using Power BI Desktop and *published* or *uploaded* to the Power BI service.
 
@@ -31,7 +31,10 @@ Always use the latest version of Power BI Desktop when you open downloaded files
 
 To download the .pbix file, follow these steps:
 
-1. In the Power BI service, open the report you want to download in [Editing view](./service-interact-with-a-report-in-editing-view.md).
+1. In the Power BI service, open the report you want to download. 
+
+    >[!NOTE]
+    >You can download the report in Reading view or Editing view. The image in this procedure is in Editing view.
 
 2. From the top nav pane, select **File** > **Download report (Preview)**.
 
