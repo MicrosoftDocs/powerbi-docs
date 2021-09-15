@@ -20,7 +20,7 @@ Whether you create a button in Power BI Desktop or the Power BI service, you can
 
 A rectangle is the default shape for buttons, but you can change the shape. You can also change the button shape.
 
-- Select the button, navigate to the **Shape** tab of the **Format button** pane, customize the button to any of these shapes:
+- Select the button, navigate to the **Shape** tab of the **Format button** pane, and customize the button to any of these shapes:
 
     - Arrow 
     - Chevron arrow
@@ -67,7 +67,7 @@ Here's how.
 
     :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-custom.png" alt-text="Choose the image's Vertical and Horizontal alignment.":::
 
-1. You can also customize the **Icon size**. By default, icon size is set to **Auto**, meaning that as you resize the button, the icon size automatically changes size. Or you can set a fixed **Icon size** (in pixels) by typing a number in the **Icon size** box.
+1. You can also customize the **Icon size**. By default, icon size is set to **Auto**, meaning that as you resize the button, the icon size automatically changes size. You can set a fixed **Icon size** (in pixels) by typing a number in the **Icon size** box.
 
 ## Add effects
 
