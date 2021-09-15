@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: video-r88EE4IzZlE
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 09/17/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## August 2021 Update (2.96.701.0)
+## September 2021 Update (2.97.261.0)
 
-This month's release is like a warm summer day, with rays of new updates shining down on all of our Power BI enthusiasts and customers independent. 
+We're falling into this month's release, with crisp morning updates and new season of interesting and compelling features. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -41,30 +41,32 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-
 ### Reporting
-* Customize shape formatting  [[video]](https://youtu.be/thmvP1I6QVs?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419583)  [[article]](../visuals/power-bi-visualization-small-multiples.md)
-* X-axis constant line improvements [[video]](https://youtu.be/thmvP1I6QVs?t=47)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419584) 
-* Default sensitivity label policy in Power BI Desktop (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=77)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419585)  [[article]](../admin/service-security-sensitivity-label-overview.md)
+* New formatting options for buttons  [[video]](https://youtu.be/mOVmf5jQwrw?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908301)  [[article]](../create-reports/desktop-buttons.md)
+* Toggle total columns in waterfall charts [[video]](https://youtu.be/mOVmf5jQwrw?t=69)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908302) 
+* Padding around visual title and border  [[video]](https://youtu.be/mOVmf5jQwrw?t=95)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908303)  
+* Line chart series labels  [[video]](https://youtu.be/mOVmf5jQwrw?t=136)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908304)  
+* Sensitivity label support for Power BI template files  [[video]](https://youtu.be/mOVmf5jQwrw?t=301)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908305)  [[article]](../admin/service-security-sensitivity-label-overview.md)
 
 ### Analytics
-* Sharing Q&A synonyms  [[video]](https://youtu.be/thmvP1I6QVs?t=99)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419587) 
+* Insights (preview)  [[video]](https://youtu.be/mOVmf5jQwrw?t=327)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908307) [[article]](../create-reports/insights.md)
+
 
 ### Modeling
-* New way of expressing Date and DateTime values   [[video]](https://youtu.be/thmvP1I6QVs?t=133)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419591)  
-* Evaluation configuration settings [[video]](https://youtu.be/thmvP1I6QVs?t=258) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419592)  [[article]](../create-reports/desktop-evaluation-configuration.md)
+* Shortcut expression for CALCULATE now supports aggregation functions   [[video]](https://youtu.be/mOVmf5jQwrw?t=379)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908309)  [[article]](/dax/calculate-function-dax)
+* New parameter for XIRR function [[video]](https://youtu.be/mOVmf5jQwrw?t=409) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908310)  [[article]](/dax/xirr-function-dax)
+* Making it easier to format based on a user’s locale [[video]](https://youtu.be/mOVmf5jQwrw?t=430) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908311)  [[article]](/dax/format-function-dax)
 
 
 ### Data connectivity
-* New connector - Automy Data Analytics (Beta)  [[video]](https://youtu.be/thmvP1I6QVs?t=414)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419595)
-* Updates to many connectors [[video]](https://youtu.be/thmvP1I6QVs?t=375)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419593) 
-
+* The Power BI Connector in Power Automate [[video]](https://youtu.be/mOVmf5jQwrw?t=715)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908313)
+* Updates to many connectors [[video]](https://youtu.be/mOVmf5jQwrw?t=752)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908314) 
 
 ### Visuals
-* New store experience for Power BI visuals [[video]](https://youtu.be/thmvP1I6QVs?t=828)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419608)  [[site]](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) 
-* New visuals from various providers [[video]](https://youtu.be/thmvP1I6QVs?t=848)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419609)
+* New visuals from various providers [[video]](https://youtu.be/mOVmf5jQwrw?t=1089)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908331)
 
-
+### Other
+* New version of Power BI Report Builder [[video]](https://youtu.be/mOVmf5jQwrw?t=1157)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908339)  [[article]](/power-bi/paginated-reports/report-builder-power-bi)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -74,12 +76,12 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
+[Get started with goals in Power BI (preview)](../create-reports/service-goals-introduction.md)
 
-* Sensitivity labels for paginated reports (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=472)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419601)  [[article]](../admin/service-security-sensitivity-label-overview.md)
-* Use automatic aggregations to enhance performance of DirectQuery datasets  [[video]](https://youtu.be/thmvP1I6QVs?t=494)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419602)
-* Power BI REST API support for DAX queries (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=712)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419603)
-* Detailed historical activity information for Premium datasets (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=754)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419604)  [[article]](../transform-model/log-analytics/desktop-log-analytics-overview.md)
-
+* Power BI Goals: automated status rules (preview)  [[video]](https://youtu.be/mOVmf5jQwrw?t=777)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908321)  [[article]](../create-reports/service-goals-introduction.md)
+* Power BI Goals: improved filtering  (preview)  [[video]](https://youtu.be/mOVmf5jQwrw?t=823)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908322)  [[article]](../create-reports/service-goals-introduction.md)
+* APIs to determine who has access to what Power BI artifacts (preview)  [[video]](https://youtu.be/mOVmf5jQwrw?t=858)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908323)
+* Service Principal support for read-only Admin APIs (general availability)  [[video]](https://youtu.be/mOVmf5jQwrw?t=935)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908324)  [[article]](../admin/read-only-apis-service-principal-authentication.md)
 
 ---
 
@@ -90,7 +92,7 @@ For detailed information about each of new feature, see [Power BI feature summar
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/thmvP1I6QVs]
+> [!VIDEO https://www.youtube.com/embed/mOVmf5jQwrw]
 
 ## More videos
 
