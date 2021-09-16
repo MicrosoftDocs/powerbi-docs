@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 09/14/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -35,13 +35,13 @@ For a comparison of Power BI Pro and Power BI Premium, see the _Power BI feature
 >[!NOTE]
 >Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
->* Per-user licensing. See the [Premium Per User FAQ](/admin/service-premium-per-user-faq.yml) for more information.
+>* Per-user licensing. See [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) for more information.
 >* Greater scale
 >* Improved metrics
 >* Autoscaling
 >* Reduced management overhead
 >
->For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](/admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>For more information about Power BI Premium Gen2, see [What is Power BI Premium Gen2?](../admin/service-premium-gen2-what-is.md).
 >
 
 To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).
