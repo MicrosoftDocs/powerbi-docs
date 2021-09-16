@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/30/2021
+ms.date: 09/16/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -180,6 +180,7 @@ If you need to uninstall the **Analyze in Excel** feature, use the **Add or remo
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
 - Only Power BI datasets that use Import mode will preserve hierarchies in **Analyze in Excel** workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using **Analyze in Excel**.
 - **Analyze in Excel** doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
+- You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md).
 
 ## Next steps
 
