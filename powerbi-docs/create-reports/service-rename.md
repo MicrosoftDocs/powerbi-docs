@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/01/2018
+ms.date: 09/13/2021
 LocalizationGroup: Common tasks
 ---
 # Rename almost anything in Power BI service
@@ -27,7 +27,7 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 | Content in **Shared with me** |No |No |
 
 ## Rename a dashboard, report, or workbook
-1. Start in a workspace and select the **Dashboards**, **Reports**, or **Workbooks** tab. Hover over the item to rename, and select the gear icon ![gear icon](media/service-rename/powerbi-cog-icon.png). If there is no gear icon, you do not have permissions to rename.
+1. In a workspace, hover over the item to rename, select **More options** (...), and then select **Settings**.
    
    ![Power BI service workspace](media/service-rename/power-bi-workspace-dashboards.png)
 2. On the Settings page, type the new name and select **Save**.
@@ -35,9 +35,8 @@ This article teaches you how to rename a dashboard, report, report page, workboo
    ![Settings window for dataset](media/service-rename/power-bi-rename-dashboard2.png)
 
 ## Rename a dataset
-1. Start in a workspace and select the **Datasets** tab.
+1. Start in a workspace and select the **Datasets + dataflows** tab.
    
-   ![workspace Datasets tab](media/service-rename/power-bi-ellipses.png)
 2. Hover over the item to rename, select **More options** (...), and choose **Rename**.  
    
       ![select Rename](media/service-rename/power-bi-rename-datasets.png)
@@ -46,17 +45,17 @@ This article teaches you how to rename a dashboard, report, report page, workboo
    > The options in the dropdown will vary.
    > 
    > 
-3. On the Settings page, type a new name and select **Save**.
+3. On the Rename page, type a new name and select **Save**.
    
      ![Rename pane](media/service-rename/power-bi-rename.png)
 
 ## Rename a workspace
 Anyone with Admin permissions can rename a workspace.
 
-1. Start in the workspace you'd like to rename.
-2. In the top-right corner, select **More options** (...) and choose **Edit workspace**. If you don't see this option, then you don't have permissions to rename this workspace. 
+1. Start in the list of workspaces.
+2. Next to the workspace you'd like to rename, select **More options** (...), and select **Workspace settings**. If you don't see this option, then you don't have permissions to rename the workspace. 
    
-    ![select Edit workspace](media/service-rename/power-bi-edit-workspace.png)
+    ![Screenshot that shows Workspace settings in the Workspaces list.](media/service-rename/power-bi-edit-workspace.png)
 3. Type a new workspace name and select **Save**.
    
    ![Edit workspace pane](media/service-rename/power-bi-workspace-rename.png)
