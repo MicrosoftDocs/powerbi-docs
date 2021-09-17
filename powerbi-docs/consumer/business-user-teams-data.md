@@ -30,9 +30,9 @@ Here's how you can use data before, during, and after your meetings.
 
 Here are some questions you can use in your meeting agenda to jump start discussion and determine the best actions to take to achieve your desired outcomes:
 
-- Are we making progress toward our object as quickly as we expected to?
-- What actions can we take in the next week or month that are most likely to move these numbers?
-- What numbers can we start tracking to get a better sense of if we’re making progress towards our desired outcomes?
+- Are we making progress toward our objectives as quickly as we expected to?
+- What actions can we take in the next week or month that are most likely to improve our metrics?
+- What metrics can we start tracking to get a better sense of if we’re making progress towards our desired outcomes?
 
 Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage the data as they plan their work.
 
@@ -55,14 +55,15 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-report-tab.png" alt-text="Make sure this team has been given access to this report in Power BI.":::
 
-    a. The report opens in the Power BI service. Select **Share** and add the names of the meeting attendees.
-    a. Copy the link to provide everyone with permission to view the report.
+    a. The report opens in the Power BI service. Select **File** and then **Manage Permissions** and add the names of the meeting attendees.
+    
+    b. Copy the link to provide everyone with permission to view the report.
 
     :::image type="content" source="media/business-user-teams-data/service-share-report-link.png" alt-text="Share the report in the Power BI service.":::
 
     If you can’t give permission, don’t worry. The attendees can request access when they try to view the report.
 
-1. Select **Save** to finish adding the report or scorecard to the meeting.
+1. In Teams, select **Save** to finish adding the report or scorecard to the meeting.
 
 1. Add an agenda item to the meeting to review and discuss the data.
 
@@ -74,7 +75,7 @@ It's a good idea to review your data in Power BI before a meeting.
 2. Open the Power BI tab that has the report or scorecard.
 3. Review the report or scorecard.
 
-Consider setting a reminder for your meeting so attendees can also pre-read the data before the meeting. This helps everyone be up with the latest data, and improves the discussion during the meeting.
+Consider setting a reminder for your meeting so attendees can also pre-read the data before the meeting. This helps everyone be aware of the latest data, and improves the discussion during the meeting.
 
 ## During the meeting
 
@@ -100,6 +101,17 @@ When you’re in a meeting, data can help guide the discussion or answer questio
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-copy-visual.png" alt-text="Select Copy visual as image.":::
 
 4. Paste the visual into the meeting chat.
+
+### Quickly send a message in the meeting chat from a report
+
+1. View the rpeort in the Power BI app in Teams or in the Service.
+2. Select the report or a specific visual
+3. Press the Chat in Teams button
+4. Pick the meeting name to send to 
+5. Type your message above the link that's provided
+6. Press send. 
+
+Your message will appear as part of the meeting chat and attendees can open it to see the data you wanted with the filters and slicers applied.
 
 ### Share a link to Power BI reports or scorecards
 
@@ -136,6 +148,8 @@ You can share a link in the chat window to a report or scorecard.
 ## After the meeting
 
 It’s useful to share a summary of the most important data points discussed and the actions the team will take to help achieve outcomes. If you captured visuals during the meeting in chat, you can pull those into a meeting summary post in chat or a follow-up message.
+
+Consider using key data points to create goals and track them in a scorecard. Consistently tracking progress against with a goal through a series of meetings is a great way to keep your team or project on track. 
 
 ## Next steps
 

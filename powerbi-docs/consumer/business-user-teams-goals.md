@@ -96,4 +96,5 @@ Each project and organization can have its own goals. You can find all your goal
 ## Next steps
 
 [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+
 [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
