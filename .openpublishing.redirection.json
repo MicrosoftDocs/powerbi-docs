@@ -1973,7 +1973,7 @@
         {
             "source_path": "powerbi-docs/service-govde-faq.md",
             "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-govus-overview.md",
