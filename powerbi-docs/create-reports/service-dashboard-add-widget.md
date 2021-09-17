@@ -16,7 +16,10 @@ LocalizationGroup: Dashboards
 By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. 
 
 Watch Amanda add tiles to a dashboard.
-   
+ 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
 ## Add an image, video, or other tile
@@ -110,6 +113,9 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub. Here, Will explains how it works.
    
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
@@ -190,6 +196,9 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   ```
 * Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size doesn't change as you resize the tile.
   
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
@@ -197,7 +206,11 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   ```
   
   If you'd like the player to resize to fit the tile size, set the width and height to 100%.
-  
+
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
   ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"

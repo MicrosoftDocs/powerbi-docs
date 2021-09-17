@@ -19,6 +19,9 @@ For in-depth information about how Excel and Power BI work together, see [Get da
 
 Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
 
 ## Connect your Excel workbook from OneDrive for Business to Power BI

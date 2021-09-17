@@ -17,6 +17,9 @@ This article targets you as a report author designing Power BI reports, when usi
 
 Watch the video demonstrating the top nine tips to sort and distribute data plots in Power BI reports.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.youtube.com/embed/BnhA4qa-9Jk]
 
 ## Tips

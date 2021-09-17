@@ -27,6 +27,9 @@ We built the insights feature on a growing [set of advanced analytical algorithm
 ## Run quick insights on a dataset
 Watch Amanda run quick insights on a dataset and open an insight in Focus mode. Amanda pins an insight as a tile on the dashboard, then gets insights for a dashboard tile.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
