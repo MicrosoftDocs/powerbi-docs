@@ -277,7 +277,7 @@ Once you've created your virtual machine, called **myVM**, connected to it from 
 The next step is to access Power BI privately, from the virtual machine you created in the previous step, using the following steps: 
 
 1. In the Remote Desktop of myVM, open PowerShell.
-2. Enter nslookup <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net.
+2. Enter nslookup *tenant-object-id-without-hyphens*-api.privatelink.analysis.windows.net.
 3. You'll receive a response similar to the message shown below:
 
     ```
@@ -308,7 +308,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Usage metrics do *not* work when private endpoints are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
 * Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
-* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
+* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
 * Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. 
