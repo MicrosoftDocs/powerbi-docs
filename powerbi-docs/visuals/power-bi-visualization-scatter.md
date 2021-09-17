@@ -87,7 +87,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
     * **District** > **District**
 
-    ![Screenshot of the cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected called out.](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-bar-chart.png" alt-text="Screenshot of the cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected called out.":::
 
 1. In the **Visualization** pane, select  ![Screenshot of the scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the cluster column chart to a scatter chart.
 
