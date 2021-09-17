@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/07/2021
+ms.date: 09/16/2021
 ---
 
 # Chat in Microsoft Teams directly from the Power BI service
@@ -24,9 +24,9 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Chat about Power BI content in Microsoft Teams
 
-Follow these steps to share links to reports, dashboards, visuals, and datasets in the Power BI service, and chat about Microsoft Teams channels and chats.
+Follow these steps to share links to reports, dashboards, visuals, and datasets in the Power BI service, and chat in Microsoft Teams channels and chats.
 
-1. Select one of these options:
+1. In either the Power BI service or in Microsoft Teams, select one of these options:
 
    * **Chat in Teams** in the action bar of a dashboard, report, or dataset:
 
@@ -36,7 +36,7 @@ Follow these steps to share links to reports, dashboards, visuals, and datasets 
     
       ![Screenshot of Chat in Teams button in a visual contextual menu.](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. In the **Share to Microsoft Teams** dialog box, select the team or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
+1. In the **Share to Microsoft Teams** dialog box, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
     ![Screenshot of Share to Microsoft Teams dialog box with information and message.](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 
