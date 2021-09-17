@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/21/2019
+ms.date: 09/17/2021
 LocalizationGroup: Visualizations
 ---
 # Scatter charts, bubble charts, and dot plot charts in Power BI
@@ -66,9 +66,9 @@ They're a great choice if you want to include categorical data along the X-Axis.
 
 This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
+1. From the upper left section of the menubar, select **File** > **Open report**.
+
+1. Find your copy of the **Retail Analysis sample PBIX** file.
 
 1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
@@ -133,7 +133,7 @@ Now let's add a third dimension.
 
     - Add symmetry shading to show which points have a higher value of the x-axis measure compared to the y-axis measure, and vice-versa. When you turn symmetry shading on in the Analytics pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. This is a very quick way to identify which axis measure a data point favors, especially when you have a different axis range for your x- and y-axis.
 
-        a. Change the **Total sales variance %** field to **Gross margin last year %**
+        a. Change the **Y Axis** field to **Gross Margin Last Year %**
 
         ![Screenshot of the Details with Gross Margin Last Year percent selected.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
