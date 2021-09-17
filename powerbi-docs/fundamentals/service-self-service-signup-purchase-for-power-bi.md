@@ -45,7 +45,7 @@ Before you sign-up or purchase, determine which [license type](../admin/service-
  For information about Premium subscriptions, see [What is Power BI Premium?](../admin/service-premium-what-is.md).
 
 > [!NOTE]
-> Direct purchase of or upgrade to Pro or Premium Per User isn't available to educational organizations or organizations deployed to Azure Government, Azure Germany, or Azure China 21Vianet clouds.
+> Direct purchase of or upgrade to Pro or Premium Per User isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
 For more information about licenses and subscriptions, see [Licensing in Power BI](../admin/service-admin-licensing-organization.md).
 
 ### Look up your current license
