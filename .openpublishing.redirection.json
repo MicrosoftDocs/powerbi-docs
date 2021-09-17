@@ -4036,7 +4036,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/esrvice-govde-faq.yml",
+            "source_path": "powerbi-docs/admin/service-govde-faq.yml",
             "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
             "redirect_document_id": false
         }
