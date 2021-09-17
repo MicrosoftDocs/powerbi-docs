@@ -7,9 +7,9 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/16/2021
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
+
 ---
 
 # Use Power BI goals to improve results in Microsoft Teams
@@ -90,8 +90,8 @@ These capabilities help your team save time by eliminating manual updates, and h
 
 Each project and organization can have its own goals. You can find all your goals in one place in the Goals hub that is part of the Power BI app for Microsoft Teams. Here’s how to find it.
 
-1. Open the Power BI app for Teams from the Teams left rail.
-2. Select **Goals** in the navigation pane to open the Goals hub.
+1. Open the Power BI app for Teams from the Teams left navigation.
+2. Select **Goals** in the Power BI navigation pane to open the Goals hub.
 
 ## Next steps
 

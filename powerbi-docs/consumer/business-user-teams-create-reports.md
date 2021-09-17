@@ -1,6 +1,6 @@
 ---
 title: Create reports from data in Microsoft Teams
-description: It’s easy to create reports in Power BI in Microsoft Teams with just a few clicks. 
+description: It’s easy to create Power BI reports in Microsoft Teams with just a few clicks. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
@@ -9,19 +9,20 @@ ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 09/02/2021
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
+
 ---
 
 # Create reports from data in Microsoft Teams
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-It’s easy to create reports with just a few clicks in Power BI in Microsoft Teams. This article gives a few examples of those quick reports. When you’re ready you can also use tools like Power BI Desktop for more advanced report authoring. 
+It’s easy to create Power BI reports with just a few clicks in Microsoft Teams. This article gives a few examples of those quick reports you can create. When you’re ready you can also use tools like Power BI Desktop for more advanced report authoring.
 
 ## Create an automatic report from data you have
 
-To create your first report, follow these steps.
+Say you have a table with data that you'd like to try visualizing in Power BI, maybe from Excel. To create your first report, follow these steps.
 
+1. Copy the table of data.
 1. Open the Power BI app for Microsoft Teams.
 
     Need to install the Power BI app first? [install the app and then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
@@ -38,7 +39,7 @@ To create your first report, follow these steps.
 
 1. Set a sensitivity label, if prompted.
 
-    Power BI automatically analyzes and visualize your data in a pre-built report.
+    Power BI automatically analyzes and visualizes your data in a pre-built report.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-auto-created-report.png" alt-text="Power BI automatically analyzes and visualize your data.":::
 
