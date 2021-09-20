@@ -24,7 +24,7 @@ Here you will find the guidance and recommended practices for Power BI. Guidance
 
 | Guidance | Description |
 | --- | --- |
-| [DAX: DIVIDE function vs divide operator (/)](dax-divide-function-operator.md) | Describes proper use of the DIVIDE function within DAX. |
+| [DAX: DIVIDE function vs divide operator (/)](/dax/best-practices/dax-divide-function-operator) | Describes proper use of the DIVIDE function within DAX. |
 
 ## Dataflows
 
