@@ -4,7 +4,6 @@ description: Learn how to filter a Power BI report and share it with coworkers i
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
-ms.custom: video-0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to

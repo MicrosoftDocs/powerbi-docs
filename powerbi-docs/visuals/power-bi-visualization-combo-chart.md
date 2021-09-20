@@ -4,7 +4,7 @@ description: This tutorial about combo charts explains when to use them and how 
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-lnv66cTZ5hom pbibetadocbug
+ms.custom: video-lnv66cTZ5ho pbibetadocbug
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
@@ -46,10 +46,10 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 ## Create a basic, single-axis, Combo Chart
 Watch Will create a combo chart using the Sales and Marketing sample.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
 <a name="create"></a>

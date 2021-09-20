@@ -27,6 +27,8 @@ You can't pin tiles from reports that have been shared with you or from Power BI
 ## Pin a tile from a report
 Watch Amanda create a dashboard by pinning visuals and images from a Power BI report.
     
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 

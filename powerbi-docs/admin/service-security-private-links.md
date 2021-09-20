@@ -321,6 +321,9 @@ There are a few considerations to keep in mind while working with private endpoi
 
 The following video shows how to connect a mobile device to Power BI, using private endpoints:
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

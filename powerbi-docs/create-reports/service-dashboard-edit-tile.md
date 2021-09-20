@@ -16,6 +16,9 @@ LocalizationGroup: Dashboards
 ## Dashboard *owners* versus dashboard *consumers*
 When you create or own a dashboard, you have many options for changing the look and default behavior of the tiles on that dashboard. Use the settings and strategies below to design the dashboard *consuming* experience for your colleagues.  Will selecting a tile open the underlying report, a custom URL, or a different dashboard? Maybe you'll [add a tile that displays a video or streaming data](service-dashboard-add-widget.md)? And you might even want to [create a tile that has interactive slicers](service-dashboard-pin-live-tile-from-report.md). As a *creator* you have many options. 
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 This article covers the following.

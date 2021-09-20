@@ -23,8 +23,8 @@ With the numeric range slicer, you can apply all sorts of filters to any numeric
 
 In this video, Will walks through creating a numeric range slicer.
 
-> [!NOTE]
-> This video uses an older version of Power BI Desktop.
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 

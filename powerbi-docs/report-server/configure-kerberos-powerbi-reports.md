@@ -11,6 +11,10 @@ ms.custom: video-vCH8Fa3OpQ0
 ms.date: 11/01/2017
 ---
 # Configure Kerberos to use Power BI reports
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.

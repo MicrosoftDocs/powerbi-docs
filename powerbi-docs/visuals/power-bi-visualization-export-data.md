@@ -29,6 +29,9 @@ If you'd like to see the data that Power BI uses to create a visualization, [you
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself. Note that this video uses an older version of Power BI.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
 ## Export data from a Power BI dashboard
@@ -173,9 +176,6 @@ Users who are granted access to a report are **granted access to the entire unde
 ## Export underlying data details
 
 What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. 
-
-
->
 
 
 
