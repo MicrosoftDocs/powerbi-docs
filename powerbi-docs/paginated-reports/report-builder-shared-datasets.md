@@ -62,7 +62,7 @@ When you want the data in your Power BI report and in your Report Builder report
 In the following video, Chris Finlan demonstrates how to get the DAX you need for your paginated report.
 
 > [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+> This video might use earlier versions of Power BI Report Builder or the Power BI service.
 
 <iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
 
