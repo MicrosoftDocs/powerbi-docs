@@ -20,8 +20,8 @@ In this tutorial, you'll learn many different ways to customize the X-axis and Y
 
 Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill-down and drill-up options.
 
-> [!NOTE]
-> This video uses an older version of Power BI.
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
 
