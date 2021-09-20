@@ -12,12 +12,12 @@ ms.date: 11/01/2017
 ---
 # Configure Kerberos to use Power BI reports
 
+Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
+
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Server.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 
 Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specifically on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
