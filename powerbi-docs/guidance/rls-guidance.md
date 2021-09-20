@@ -181,7 +181,7 @@ If RLS produces unexpected results, check for the following issues:
 - Tables contain no data.
 - Incorrect values are loaded into tables.
 - The user is mapped to multiple roles.
-- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../admin/aggregations-auto.md#rls-for-aggregations).
+- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../admin/aggregations-auto.md#custom-alm-solutions).
 
 When a specific user can't see any data, it could be because their UPN isn't stored or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
 
