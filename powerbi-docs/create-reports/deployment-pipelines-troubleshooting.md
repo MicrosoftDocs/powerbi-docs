@@ -7,6 +7,7 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.date: 06/22/2021
+ms.custom: intro-deployment
 ---
 
 # Deployment pipelines troubleshooting

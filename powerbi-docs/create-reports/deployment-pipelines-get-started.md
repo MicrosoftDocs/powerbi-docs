@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, intro-get-started
 ms.date: 07/01/2021
 ---
 

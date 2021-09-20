@@ -9,6 +9,7 @@ ms.topic: overview
 ms.date: 03/29/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
+ms.custom: intro-overview
 ---
 
 # What is Power BI?

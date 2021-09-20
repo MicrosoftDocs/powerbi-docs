@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.custom: pbibetadocbug
+ms.custom: pbibetadocbug, intro-get-started
 ms.date: 05/27/2021
 LocalizationGroup: Visualizations
 ---
@@ -183,4 +183,3 @@ For more information, see the following article:
 
 * [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
 * [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
-

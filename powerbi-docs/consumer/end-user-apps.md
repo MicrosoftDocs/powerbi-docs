@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 06/21/2021
-ms.custom: licensing support, css_fy20Q4
+ms.custom: licensing support, css_fy20Q4, intro-overview
 LocalizationGroup: Share your work
 ---
 

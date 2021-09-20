@@ -5,12 +5,13 @@ summary: Find training options for Power BI
 
 metadata:
   title: Power BI learning catalog
-  description: Find the training options for Power BI appropriate for the roles in your organization. 
+  description: Find the training options for Power BI appropriate for the roles in your organization.
   ms.service: powerbi
   ms.topic: landing-page
   author: margoc
   ms.author: margoc
   ms.date: 04/08/2020
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

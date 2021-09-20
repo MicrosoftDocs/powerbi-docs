@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/03/2020
+ms.custom: intro-migration
 ---
 
 # Migrate SQL Server Reporting Services reports to Power BI

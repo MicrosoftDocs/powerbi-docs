@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.custom: video-B2vd4MQrz4M
+ms.custom: video-B2vd4MQrz4M, intro-overview
 ms.topic: overview
 ms.date: 09/05/2019
 LocalizationGroup: Get started

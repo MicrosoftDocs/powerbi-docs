@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/03/2021
+ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
 

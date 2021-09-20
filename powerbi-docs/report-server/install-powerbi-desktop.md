@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/16/2020
+ms.custom: intro-installation
 ---
 
 # Install Power BI Desktop for Power BI Report Server
@@ -102,4 +103,3 @@ Now that you have Power BI Desktop installed, you can start creating Power BI re
 [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

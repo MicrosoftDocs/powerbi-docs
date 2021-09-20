@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 07/08/2021
+ms.custom: intro-overview
 ---
 
 # Power BI Embedded Generation 2 (preview)

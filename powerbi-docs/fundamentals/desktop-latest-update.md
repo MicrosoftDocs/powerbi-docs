@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.custom: video-r88EE4IzZlE
+ms.custom: video-r88EE4IzZlE, intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/21/2021
