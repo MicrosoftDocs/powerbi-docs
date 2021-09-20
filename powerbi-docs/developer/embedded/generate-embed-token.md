@@ -28,8 +28,7 @@ You can use the following APIs to generate a token:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken)
-
+* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
