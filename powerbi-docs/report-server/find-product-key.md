@@ -14,7 +14,7 @@ ms.date: 06/03/2021
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
 
 > [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+> This video might use earlier versions of Power BI Report Server or the Power BI service.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
