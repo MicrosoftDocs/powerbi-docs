@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/18/2021
+ms.date: 09/06/2021
 LocalizationGroup: Reports
 ---
 
