@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/14/2021
+ms.date: 09/21/2021
 LocalizationGroup: Gateways
 ---
 
@@ -39,6 +39,10 @@ Power BI supports the following data sources:
 * Azure SQL (Azure AD) 
 * Azure Data Explorer (Azure AD)
 * Snowflake (Azure AD) 
+* Amazon Redshift (Azure AD)
+* Hive LLAP (Kerberos)
+* Tibco Data Virtualization (Kerberos)
+
 
 > [!NOTE]
 > SQL Server Analysis Services also supports SSO, but does so using [Live connections](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source), rather than using Kerberos or SAML. We don't currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
