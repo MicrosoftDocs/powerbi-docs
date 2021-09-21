@@ -20,23 +20,25 @@ Keeping everyone on track towards shared objectives and what matters is easier w
 
 It’s easy to use Power BI in meetings to help keep important data top of mind. It helps everyone know which data is the most important, and builds skills that help your team make agile decisions based on your progress towards objectives. By staying focused on driving towards measurable outcomes, your team gains a sense of the positive impact their work is having.
 
+:::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-tab.png" alt-text="Power BI report in a Teams meeting tab.":::
+
 Here's how you can use data before, during, and after your meetings.
 
-- **Before the meeting**, add the reports and scorecards directly to the meeting invite so everyone has access to them. 
-- **During the meeting**, open and present these from the calendar. You can even use chat to share more reports and scorecards, or to quickly find the right data to answer questions raised in the meeting. 
-- **After the meeting**, send a summary with key results that were discussed and actions the team decided to take to help achieve the desired outcomes.
+- **[Before the meeting](#before-the-meeting)**, add the reports and scorecards directly to the meeting invite so everyone has access to them. 
+- **[During the meeting](#during-the-meeting)**, open and present these reports from the calendar. You can even use chat to share more reports and scorecards, or to quickly find the right data to answer questions raised in the meeting. 
+- **[After the meeting](#after-the-meeting)**, send a summary with key results that you discussed and actions the team decided to take to help achieve the desired outcomes.
 
 ## Data-driven questions to ask
 
-Here are some questions you can use in your meeting agenda to jump start discussion and determine the best actions to take to achieve your desired outcomes:
+Here are the kinds of questions you can add to your meeting agenda, to jump start discussion and determine the best actions to take to achieve your desired outcomes:
 
 - Are we making progress toward our objectives as quickly as we expected to?
 - What actions can we take in the next week or month that are most likely to improve our metrics?
 - What metrics can we start tracking to get a better sense of if we’re making progress towards our desired outcomes?
 
-Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage the data as they plan their work.
+Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage data as they plan their work.
 
-## Add Power BI to a meeting
+## Before the meeting: Add Power BI
 
 Here's how to add a Power BI report or scorecard to a meeting.
 
@@ -51,13 +53,13 @@ Here's how to add a Power BI report or scorecard to a meeting.
     :::image type="content" source="media/business-user-teams-data/teams-invite-plus-sign.png" alt-text="Select the plus sign + to add a tab.":::
 
 5. Navigate to a report or scorecard and select it.
-1. If you need to share it with meeting attendees, select **Make sure this team has been given access to this report in Power BI**. 
+1. You may need to share it with meeting attendees. Select **Make sure this team has been given access to this report in Power BI**. 
 
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-report-tab.png" alt-text="Make sure this team has been given access to this report in Power BI.":::
 
-    a. The report opens in the Power BI service. Select **File** and then **Manage Permissions** and add the names of the meeting attendees.
+1. The report opens in the Power BI service. Select **File**, then **Manage Permissions**, and add the names of the meeting attendees.
     
-    b. Copy the link to provide everyone with permission to view the report.
+1. Copy the link to provide everyone with permission to view the report.
 
     :::image type="content" source="media/business-user-teams-data/service-share-report-link.png" alt-text="Share the report in the Power BI service.":::
 
@@ -67,7 +69,7 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
 1. Add an agenda item to the meeting to review and discuss the data.
 
-## Before the meeting
+### Review the data
 
 It's a good idea to review your data in Power BI before a meeting.
 
@@ -79,7 +81,7 @@ Consider setting a reminder for your meeting so attendees can also pre-read the 
 
 ## During the meeting
 
-When you’re in a meeting, data can help guide the discussion or answer questions raised by attendees. It’s easy to present data in Power BI during the meeting, share links to data with meeting attendees, and even find data that can answer questions.
+When you’re in a meeting, data can help guide the discussion or answer questions raised by attendees. It’s easy to present data in Power BI during the meeting, share links to data with meeting attendees, and find data that can answer questions.
 
 1. After joining the meeting, navigate to the Teams window.
 2. Open the calendar in Teams.
@@ -95,7 +97,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 ### Capture specific visuals that are important for everyone to see
 
 1. View the report in the Power BI app in Teams.
-2. Select the visual.
+2. Select a visual.
 3. Select **Copy visual as image** to copy the visual.
 
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-copy-visual.png" alt-text="Select Copy visual as image.":::
@@ -104,14 +106,14 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 
 ### Quickly send a message in the meeting chat from a report
 
-1. View the rpeort in the Power BI app in Teams or in the Service.
-2. Select the report or a specific visual
-3. Press the Chat in Teams button
-4. Pick the meeting name to send to 
-5. Type your message above the link that's provided
-6. Press send. 
+1. View the report in the Power BI app in Teams or in the Power BI service.
+2. Select the report or a specific visual.
+3. Select the **Chat in Teams** button.
+4. Select the meeting name to send to.
+5. Type your message above the link that's provided.
+6. Press **Send**. 
 
-Your message will appear as part of the meeting chat and attendees can open it to see the data you wanted with the filters and slicers applied.
+Your message appears as part of the meeting chat. Attendees can open it to see the data you wanted with the filters and slicers applied.
 
 ### Share a link to Power BI reports or scorecards
 

@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 Many of us spend a lot of time collaborating in Microsoft Teams. With Power BI, you can get insights into where you're spending your time and how you and your team collaborate.  By reviewing this data, you and your team can plan improved ways of working to be more responsive, agile, and productive.
 
-To start getting insights about collaboration in Microsoft Teams, follow these steps.
+Follow these steps to start getting insights about collaboration in Microsoft Teams.
 
 1. Open the Power BI app for Microsoft Teams.
 
@@ -53,11 +53,14 @@ Remote and hybrid work enable many of us to work from anywhere. This can impact 
 
 ### Am I using chat effectively?  
 
-Chat experiences help us communicate quickly with others, without interrupting their flow of work. Chat messages are fast, easy to write, and allow the recipient to multi-task by responding when they’re able. However, to use chat effectively, it’s important to consider how you’re using chat across the experiences Teams offers.  
+Chat experiences help us communicate quickly with others, without interrupting their flow of work. Chat messages are fast, easy to write, and allow the recipient to multi-task by responding when they’re able. However, to use chat effectively, it’s important to consider how you’re using chat across the experiences Teams offers. 
+
+> [!TIP]
+> Start a chat with a coworker by stating why you're contacting them, rather than just typing "Hi" or "Are you busy?" Just ask your question. That way, they can be coming up with a response rather than waiting for you to ask the question. 
 
 ### Am I sending too many chats?  
 
-Look at the number of chat messages you send in a day, and the trend. If you’re sending a lot of messages (20, 30, 40, 50), see what they were and review them. Consider whether a meeting or a 1:1 call could achieve the same outcome while creating a stronger connection with your colleague. You may even want to send a document rather than writing chats. Consider which option would be the most effective.
+Look at the number of chat messages you send in a day, and the trend. If you’re sending a lot of messages (20, 30, 40, 50), see what they were and review them. Consider whether a meeting or a 1:1 call could achieve the same outcome while creating a stronger connection with your colleague. You may even want to send a document rather than writing chats. Consider asking your colleague which option would be the most effective for them.
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-messaging-summary.png" alt-text="Summary of messages sent in Teams.":::
 
@@ -72,13 +75,13 @@ Looking at meeting activities such as audio, video, and screen-sharing, you can 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-meeting-activity.png" alt-text="My monthly Teams activity in the past 31 days.":::
 
 
-## Understanding activity in teams you access and own 
+## Understand activity in teams you access and own 
 
-Sometimes where you work is as important as how you work. The Teams view gives you a summary of how your teams collaborate. You can quickly see which teams you might be missing out on and potentially which you might close. If multiple teams cover the same topic, consider merging them to help everyone work together.  
+Sometimes where you work is as important as how you work. The **Teams activity** view gives you a summary of how your teams collaborate. You can quickly see which teams you might be missing out on and potentially which you might close. If multiple teams cover the same topic, consider merging them to help everyone work together.  
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-team-activity.png" alt-text="Activity in all the Teams teams you belong to, in one table.":::
 
-When you view the details for a specific team, you can get more detailed usage data. As a Team owner, you might show this view in a meeting with your colleagues to seek input on how to improve your collaboration. It’s also a great way to evaluate if you should retire a team if it has few active users or low engagement. 
+When you view the details for a specific team, you can get more detailed usage data. As a Teams team owner, you might show this view in a meeting with your colleagues to seek input on how to improve your collaboration. It’s also a great way to evaluate if you should retire a team if it has few active users or low engagement. 
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-team-activity-detail.png" alt-text="Teams team activity detail page in Power BI report.":::
 
