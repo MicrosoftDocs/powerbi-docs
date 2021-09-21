@@ -4,7 +4,7 @@ description: Get started with Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial

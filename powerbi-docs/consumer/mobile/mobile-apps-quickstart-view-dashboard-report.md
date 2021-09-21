@@ -8,8 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/06/2021
-ms.custom: mode-portal
-#customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
+ms.custom: mode-portal, intro-quickstart
+#Customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
 In this quickstart, you take a quick tour of the Power BI Mobile app and explore a sample dashboard and report. The Power BI app for iOS is shown, but you can easily follow along on other devices.

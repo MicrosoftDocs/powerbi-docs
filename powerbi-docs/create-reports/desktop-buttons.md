@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/01/2021
+ms.date: 09/15/2021
 LocalizationGroup: Create reports
 ---
 # Create buttons in Power BI reports
@@ -31,9 +31,11 @@ To create a button in the **Power BI service**, open the report in Editing view.
 
 ## Customize a button
 
-Whether you create the button in Power BI Desktop or the Power BI service, the rest of the process is the same. When you select the button on the report canvas, the **Format button** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off by toggling the slider in that card of the **Format button** pane. You can also change the button icon, the button fill, the title, and the action that's taken when users select the button in a report, among other properties.
+Whether you create the button in Power BI Desktop or the Power BI service, the rest of the process is the same. When you select the button on the report canvas, the **Format button** pane shows you the many ways you can customize the button to fit your requirements. For example, you can add a custom image.
 
-![Format a button in a Power BI report](media/desktop-buttons/power-bi-button-properties.png)
+:::image type="content" source="media/power-bi-customize-button/power-bi-customize-shape-parallelogram.png" alt-text="Customize the shape of a button.":::
+
+See [Customize buttons in Power BI reports](power-bi-customize-button.md) for more information.
 
 ## Set button properties when idle, hovered over, or selected
 

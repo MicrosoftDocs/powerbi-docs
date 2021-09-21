@@ -176,6 +176,8 @@
         href: desktop-insights-find-where-different.md
       - name: "Create buttons"
         href: desktop-buttons.md
+      - name: "Customize buttons"
+        href: power-bi-customize-button.md
       - name: "Create drillthrough buttons"
         href: desktop-drill-through-buttons.md
       - name: "Use the drillthrough feature"
