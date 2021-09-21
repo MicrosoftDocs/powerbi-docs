@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.custom: video-r88EE4IzZlE
+ms.custom: video-thmvP1I6QVs
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 09/17/2021
@@ -92,7 +92,11 @@ For detailed information about each of new feature, see [Power BI feature summar
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/mOVmf5jQwrw]
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+[!VIDEO https://www.youtube.com/embed/thmvP1I6QVs]
+
 
 ## More videos
 

@@ -36,6 +36,9 @@ After you complete the course, you'll know how to:
 
 Watch the welcome and introduction video to start the course.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.youtube.com/embed/dv-ep90wse8]
 
 ## Course outline

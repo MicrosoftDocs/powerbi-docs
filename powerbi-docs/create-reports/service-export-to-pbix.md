@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/13/2021
-ms.custom: video-ymWqU5jiUl0
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
