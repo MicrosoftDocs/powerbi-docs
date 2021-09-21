@@ -1,57 +1,51 @@
 ---
-title: Power BI videos
-description: Power BI Videos and link to YouTube channel.
-author: davidiseminger
-ms.author: davidi
+title: Power BI video series
+description: Find video demos for how to work with Power BI. View and link directly to the latest videos. Find training and product updates.
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/03/2020
-ms.custom: video-l2wy4XgQIu0, video-5DABLeJzQYM, video-07uBWhaCo78, video-47uXJW1GIUY
+ms.date: 09/21/2021
+ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ
 ---
 # Power BI videos
-We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos) and, if you're new to Power BI a good place to start is the [Analyze and Visualize data with Power BI playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
 
-Here are a few videos from that playlist to get you started.
+The Power BI video series provides product demos to help you learn how to visualize data and gain insights. Each month we deliver a product update video to highlight what’s new in Power BI. Our video channel also includes curated playlists to make it easy to find the content you need. This video series is a great way to get started and to get advice directly from our Power BI team.
 
-* Overview of Power BI service and Power BI Desktop.
-  
-  > [!NOTE]  
-  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+> [!NOTE]  
+  > Videos might use earlier versions of Power BI Desktop or the Power BI service.
 
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
-* Collaborating and sharing.
-  
-  > [!NOTE]  
-  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+## Subscribe to the Power BI video channel
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5DABLeJzQYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-* Overview of Power BI mobile
-  
-  > [!NOTE]  
-  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+We’re continually adding to our collection, so [subscribe to the Power BI video channel](https://www.youtube.com/c/MSPowerBI/) to be notified when we add new videos. Explore our playlists to discover videos focused on where you are in the business intelligence journey.
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/07uBWhaCo78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+## Featured video
 
-* Power BI for developers
+In this featured video, we show how to create quick reports in the Power BI service. This new way to create reports lets you paste data directly to the Power BI service, instead of downloading Power BI Desktop.
 
-  > [!NOTE]  
-  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+[![Image of YouTube video about new quick report creation](media/videos/video-quick-report-creation.png)](https://www.youtube.com/watch?v=9rh_qSK-UKQ)
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/47uXJW1GIUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+Catch up on these recent videos you may have missed:
 
-## Watch some of our new uploads
-* [Date slicer](https://youtu.be/V7i82ZZm0vw)
-* [Custom visualizations](https://youtu.be/d-rXAJ3_uAo)
-* [Alerts in the Power BI service](https://youtu.be/JbL2-HJ8clE)
+| [Learn about new data protection enhancements](http://www.youtube.com/watch?v=RxsT9TtOYok)  | [New enhancements in Power BI app for Teams](http://www.youtube.com/watch?v=abTASA8iOjQ) | 
+| ------| ------ | 
+| [![Image of YouTube video about new data protection enhancements in Power B I](media/videos/video-data-protection.png)](http://www.youtube.com/watch?v=RxsT9TtOYok) | [![Image of YouTube video about new enhancements in the Power B I app for Teams](media/videos/video-teams-app.png)](http://www.youtube.com/watch?v=abTASA8iOjQ) |
 
-## More videos
-Check out the following collection of sources and content for more videos.
+## Featured playlists
 
-* [[Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+Related Power BI videos are collected into playlists to help you easily find subjects of interest to you. Go to [Microsoft Power BI](https://www.youtube.com/c/MSPowerBI/playlists) to explore all our playlists. The list below is a sampling of the topics you’ll find featured as playlists:
+* [Power BI Desktop](https://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p)
+* [Dashboards, Reports, and Design](https://www.youtube.com/playlist?list=PL1N57mwBHtN0ufit2dISWvcOAIetKcstk) 
+* [Administration and Governance](https://www.youtube.com/playlist?list=PL1N57mwBHtN2RuqlRQV4b4TNlcBJ_NgSR)
+* [Analyze and Visualize Data](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP)
+* [Data Prep and Modeling](https://www.youtube.com/playlist?list=PL1N57mwBHtN2NhxTvyO6TquHuZOMh4BMq)
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
 
+* [Power BI on Microsoft Learn](/learn/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
+* [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
+* Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/videos/?q=power+bi)
+ 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
