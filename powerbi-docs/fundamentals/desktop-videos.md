@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 01/02/2020
 ms.custom: video-Qgam9M8I0xA, video-IMAsitQ2cAc, video-ByIUx-HmQbw
 LocalizationGroup: Get started
+ROBOTS: NOINDEX
 ---
 # Power BI Desktop videos
 
