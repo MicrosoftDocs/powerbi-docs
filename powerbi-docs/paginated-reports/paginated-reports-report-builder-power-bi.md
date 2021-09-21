@@ -1,10 +1,10 @@
 ---
 title: "What are paginated reports in Power BI Premium?"
-description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
+description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-jXTiYJKw1Rs
+ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview

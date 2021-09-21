@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/12/2021
+ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:

@@ -9,6 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 06/19/2021
 LocalizationGroup: Share your work
+ms.custom: intro-installation
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
 

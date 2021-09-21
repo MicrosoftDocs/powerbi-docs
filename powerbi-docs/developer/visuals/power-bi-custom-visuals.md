@@ -1,6 +1,6 @@
 ---
 title: Finding Power BI visuals
-description: This article describes the main ways of getting Power BI visuals. 
+description: This article describes the main ways of getting Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -10,6 +10,7 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 05/14/2021
 LocalizationGroup: Visualizations
+ms.custom: intro-overview
 ---
 
 # Where to find Power BI visuals
