@@ -144,7 +144,7 @@ You can also download the entire [PowerBI-Developer-Samples](https://github.com/
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

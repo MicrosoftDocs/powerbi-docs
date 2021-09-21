@@ -59,6 +59,9 @@ Make sure each field only has a single location category. For example, your City
 
 Add latitude and longitude values to your dataset. This removes any ambiguity and returns results more quickly. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 **4. Use Place category for columns with full location information**

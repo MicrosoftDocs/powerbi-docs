@@ -18,6 +18,9 @@ You can add a text box to a report in Power BI Desktop or the Power BI service. 
 
 Watch Will Thompson create a text box and add a hyperlink to it. 
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
 
 For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlinks to a table](power-bi-hyperlinks-in-tables.md). For information on adding text boxes to your dashboard, see [Add images, videos, and more to your dashboard](service-dashboard-add-widget.md). 

@@ -222,4 +222,7 @@ I hope this article gave you an understanding of the building blocks that make u
 
 - Watch a video in which Will reviews the basic concepts and gives a tour of the Power BI service.
 
+    > [!NOTE]  
+    > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>

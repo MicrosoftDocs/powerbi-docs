@@ -179,7 +179,7 @@ Deployment pipelines supports [incremental refresh](../connect-data/incremental-
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
-To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](deployment-pipelines-troubleshooting.md#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules)
+To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](../create-reports/deployment-pipelines-troubleshooting.yml#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules-)
 
 #### Activating incremental refresh in a pipeline
 
@@ -378,7 +378,7 @@ This section lists most of the limitations in deployment pipelines.
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

@@ -4,7 +4,6 @@ description: The Notification Center is a sequential feed of information related
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-ms.custom: video-bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

@@ -17,15 +17,28 @@ Here are a few videos from that playlist to get you started.
 
 * Overview of Power BI service and Power BI Desktop.
   
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 * Collaborating and sharing.
   
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5DABLeJzQYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 * Overview of Power BI mobile
   
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   <iframe width="560" height="315" src="https://www.youtube.com/embed/07uBWhaCo78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 * Power BI for developers
+
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   <iframe width="560" height="315" src="https://www.youtube.com/embed/47uXJW1GIUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
 
 ## Watch some of our new uploads

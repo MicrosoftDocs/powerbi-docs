@@ -207,4 +207,4 @@ In case there are bugs in production that require a quick fix, don't be tempted 
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)

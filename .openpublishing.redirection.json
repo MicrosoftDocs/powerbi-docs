@@ -1972,8 +1972,8 @@
         },
         {
             "source_path": "powerbi-docs/service-govde-faq.md",
-            "redirect_url": "/power-bi/admin/service-govde-faq",
-            "redirect_document_id": true
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-govus-overview.md",
@@ -4028,6 +4028,16 @@
         {
             "source_path": "powerbi-docs/guidance/dax-sample-model.md",
             "redirect_url": "/dax/best-practices/dax-sample-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-migrate-data-germany.md",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-govde-faq.yml",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
             "redirect_document_id": false
         }
 
