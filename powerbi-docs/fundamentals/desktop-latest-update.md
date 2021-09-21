@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## September 2021 Update (2.97.261.0)
+## September 2021 Update (2.97.801.0)
 
 We're falling into this month's release, with crisp morning updates and new season of interesting and compelling features. 
 
@@ -42,7 +42,7 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 ### Reporting
-* New formatting options for buttons  [[video]](https://youtu.be/mOVmf5jQwrw?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908301)  [[article]](../create-reports/desktop-buttons.md)
+* New formatting options for buttons  [[video]](https://youtu.be/mOVmf5jQwrw?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908301)  [[article]](../create-reports/power-bi-customize-button.md)
 * Toggle total columns in waterfall charts [[video]](https://youtu.be/mOVmf5jQwrw?t=69)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908302) 
 * Padding around visual title and border  [[video]](https://youtu.be/mOVmf5jQwrw?t=95)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908303)  
 * Line chart series labels  [[video]](https://youtu.be/mOVmf5jQwrw?t=136)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-17174-_Toc81908304)  
