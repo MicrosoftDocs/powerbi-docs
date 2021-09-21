@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/13/2019
+ms.custom: intro-migration
 ---
 
 # Migrate a report server installation

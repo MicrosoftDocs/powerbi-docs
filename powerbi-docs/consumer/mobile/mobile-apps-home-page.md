@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 09/12/2021
-ms.custom: mode-portal
+ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 # A quick tour of the Mobile app home page

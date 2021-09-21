@@ -7,9 +7,9 @@ keywords:
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.custom: mvc
+ms.custom: mvc, intro-overview
 ms.date: 03/25/2021
-#customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
+#Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
 # Comparing Power BI Report Server and the Power BI service

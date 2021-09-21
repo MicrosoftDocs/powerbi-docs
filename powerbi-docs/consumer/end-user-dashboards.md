@@ -9,6 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 07/29/2021
 LocalizationGroup: Dashboards
+ms.custom: intro-overview
 ---
 # Dashboards for business users of the Power BI service
 

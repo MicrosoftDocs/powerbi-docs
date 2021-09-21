@@ -10,6 +10,7 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/13/2021
 LocalizationGroup: Visualizations
+ms.custom: intro-overview
 ---
 
 # Develop your own Power BI visual

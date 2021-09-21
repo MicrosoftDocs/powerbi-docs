@@ -19,6 +19,9 @@ When model authors understand the intended semantics of their filters, they ofte
 
 Watch Justyna explain and use Dynamic M Query Parameters, and then try it out yourself. 
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hq]
 
 ## Enabling Dynamic M query parameters

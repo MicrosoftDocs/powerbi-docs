@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/09/2021
+ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server

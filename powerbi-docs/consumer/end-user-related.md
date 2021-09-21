@@ -30,8 +30,8 @@ In the Power BI service, reports are built on datasets, report visuals are pinne
 ## See related content for a dashboard or report
 Watch Will view related content for a dashboard. Then follow the step-by-step instructions below the video to try it out yourself with the Procurement Analysis sample.
 
-> [!NOTE]
-> This video is based on an earlier version of the Power BI service. 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
