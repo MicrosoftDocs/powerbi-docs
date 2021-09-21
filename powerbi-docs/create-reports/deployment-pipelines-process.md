@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, intro-deployment
 ms.date: 08/16/2021
 ---
 

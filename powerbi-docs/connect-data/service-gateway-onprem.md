@@ -9,6 +9,7 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
+ms.custom: intro-overview
 ---
 
 # What is an on-premises data gateway?
