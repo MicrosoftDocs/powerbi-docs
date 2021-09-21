@@ -15,7 +15,10 @@ LocalizationGroup: Gateways
 
 By enabling single sign-on (SSO), you can make it easy for Power BI reports and dashboards to refresh data from on-premises sources while you respect user-level permissions that are configured on those sources. To enable seamless SSO connectivity, you use [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml). 
 
-## Supported data sources
+> [!NOTE]
+> You can connect to only one data source using Single Sign-On SAML with an on-premises data gateway. To connect to an additional data source using Single Sign-On SAML, you must use a different on-premises data gateway.
+
+## Supported data sources for SAML
 
 Microsoft currently supports SAP HANA with SAML. For more information about setting up and configuring single sign-on for SAP HANA by using SAML, see [SAML SSO for BI Platform to HANA](https://blogs.sap.com/2020/03/22/sap-bi-platform-saml-sso-to-hana-database/).
 
@@ -98,7 +101,8 @@ To import and create the signed certificates in HANA, do the following:
 1. If there's no personal security environment (PSE) with purpose SAML, create one by running the following query in SAP HANA Studio:
     
     ```
-    CREATE PSE SAMLCOLLECTION;<br>set pse SAMLCOLLECTION purpose SAML;<br>
+    CREATE PSE SAMLCOLLECTION;
+    set pse SAMLCOLLECTION purpose SAML;
     ```
 
 1. Add the newly created signed certificate to the PSE by running the following command:

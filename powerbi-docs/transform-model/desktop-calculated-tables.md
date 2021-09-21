@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 08/13/2021
 LocalizationGroup: Model your data
 ---
 
@@ -20,7 +20,7 @@ Just like other Power BI Desktop tables, calculated tables can have relationship
 
 ## Create a calculated table
 
-You create calculated tables by using the **New Table** feature in Report View or Data View of Power BI Desktop.
+You create calculated tables by using the **New table** feature in Report View or Data View of Power BI Desktop.
 
 For example, imagine you're a personnel manager who has a table of **Northwest Employees** and another table of **Southwest Employees**. You want to combine the two tables into a single table called **Western Region Employees**.
 
@@ -32,7 +32,7 @@ For example, imagine you're a personnel manager who has a table of **Northwest E
 
  ![Screenshot of Power B I Desktop showing tabular data of Southwest Employees.](media/desktop-calculated-tables/calctables_swempl.png)
 
-In Report View or Data View of Power BI Desktop, in the **Calculations** group of the **Modeling** tab, select **New Table**. It's a bit easier to do in Data View, because then you can immediately see your new calculated table.
+In Report View or Data View of Power BI Desktop, in the **Calculations** group of the **Modeling** tab, select **New table**. It's a bit easier to do in **Table tools** in the Data View, because then you can immediately see your new calculated table.
 
  ![New table in Data View](media/desktop-calculated-tables/calctables_formulabarempty.png)
 

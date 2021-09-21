@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 07/08/2021
+ms.date: 08/12/2021
 ms.custom: intro-overview
 ---
 
@@ -72,8 +72,6 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
-
-* All the current Azure metrics and log diagnostics for Power BI Embedded, support only Gen1 capacities.
 
 * For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
 

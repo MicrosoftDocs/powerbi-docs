@@ -60,6 +60,8 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Work with goals"
+        href: mobile-apps-goals.md
       - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
         href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"

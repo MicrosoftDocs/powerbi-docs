@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: yana.berkovich
 ms.custom: video-dv-ep90wse8
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: tutorial
 ms.date: 06/01/2020
 ---
@@ -35,6 +35,9 @@ After you complete the course, you'll know how to:
 > - Choose the right license to suit your requirements
 
 Watch the welcome and introduction video to start the course.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.youtube.com/embed/dv-ep90wse8]
 

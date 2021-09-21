@@ -6,6 +6,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
+            "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
             "redirect_url": "/power-bi",
             "redirect_document_id": false
@@ -871,6 +876,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-preview-features.md",
             "redirect_url": "/power-bi/consumer/end-user-preview-features",
             "redirect_document_id": true
@@ -943,7 +953,7 @@
         {
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
@@ -1572,7 +1582,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embed-paginated-reports-customers.md",
-            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports-customers",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
             "redirect_document_id": false
         },
         {
@@ -1962,8 +1972,8 @@
         },
         {
             "source_path": "powerbi-docs/service-govde-faq.md",
-            "redirect_url": "/power-bi/admin/service-govde-faq",
-            "redirect_document_id": true
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-govus-overview.md",
@@ -2002,13 +2012,23 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-copy-refresh-access",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-create-and-publish.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-disconnect.md",
@@ -2017,8 +2037,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-introduction",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-introduction.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-manage-update-delete.md",
@@ -2817,8 +2842,13 @@
         },
         {
             "source_path": "powerbi-docs/service-refresh-xero-credentials.md",
-            "redirect_url": "/power-bi/connect-data/service-refresh-xero-credentials",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-refresh-xero-credentials.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-r-packages-support.md",
@@ -2892,7 +2922,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-aggregations.md",
-            "redirect_url": "/power-bi/transform-model/desktop-aggregations",
+            "redirect_url": "/power-bi/transform-model/aggregations-advanced",
             "redirect_document_id": true
         },
         {
@@ -3682,7 +3712,12 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look.md",
-            "redirect_url": "/power-bi/consumer/service-new-look",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi/consumer/service-new-look.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
         },
         {
@@ -3901,6 +3936,11 @@
 		    "redirect_document_id": false
 		},
         {
+		    "source_path": "powerbi-docs/transform-model/desktop-aggregations.md",
+		    "redirect_url": "/power-bi/admin/aggregations-auto",
+		    "redirect_document_id": false
+		},
+        {
             "source_path": "powerbi-docs/developer/embedded/azure-pbie-what-is-power-bi-embedded.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
@@ -3926,9 +3966,80 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-organization.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-customers.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },   
+        {
             "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
             "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
-        }                        
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-enhanced-metadata-scanning.md",
+            "redirect_url": "/power-bi/admin/service-admin-metadata-scanning",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-divide-function-operator.md",
+            "redirect_url": "/dax/best-practices/dax-divide-function-operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-error-functions.md",
+            "redirect_url": "/dax/best-practices/dax-error-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-selectedvalue.md",
+            "redirect_url": "/dax/best-practices/dax-selectedvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-countrows.md",
+            "redirect_url": "/dax/best-practices/dax-countrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-variables.md",
+            "redirect_url": "/dax/best-practices/dax-variables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-converting-blank.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-converting-blank",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-column-measure-references.md",
+            "redirect_url": "/dax/best-practices/dax-column-measure-references",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-avoid-filter-as-filter-argument.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-avoid-filter-as-filter-argument",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-sample-model.md",
+            "redirect_url": "/dax/best-practices/dax-sample-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-migrate-data-germany.md",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-govde-faq.yml",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        }
+
     ]           
 }

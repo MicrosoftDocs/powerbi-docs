@@ -7,24 +7,21 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/22/2021
+ms.date: 09/14/2021
 ---
 
 # Create and use the paginated report visual
 
-
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
 This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. This provides a fully interactive experience like any other visual.  
 
- 
-
 ## Prerequisites 
 
 - To access a paginated report to include in your Power BI report with a paginated report visual, you need access to a workspace in a [Power BI Premium capacity](../admin/service-premium-what-is.md). 
-- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity. 
+- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Create a paginated report visual 
 
@@ -94,11 +91,15 @@ You can decide whether report filters are automatically applied to the paginated
 
 - Select your paginated report visual. From the **Format** pane, turn **Auto-apply filters** on. 
 
-## Considerations  
+## Considerations and limitations 
 
-When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
+- When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
+- The paginated report visual isn't supported in Embedded scenarios yet. 
 
 ### Using a Power BI dataset with a date parameter
+
+> [!NOTE]
+> Versions of Power BI Report Builder 15.7.01704.0001 and above allow you to use date parameters with the paginated report visual without having to follow these next steps. [Download the newest version of Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
 When you use a Power BI dataset as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. There are three options to work around this: 
 

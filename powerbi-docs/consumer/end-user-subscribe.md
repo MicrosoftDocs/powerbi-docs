@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/03/2021
+ms.date: 08/25/2021
 LocalizationGroup: Common tasks
 ---
 
@@ -19,7 +19,7 @@ LocalizationGroup: Common tasks
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  In all, you can set up to 24 different subscriptions per report or dashboard.
 
-
+Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before or after subscribing will not show up in the email. However, when you select the link to open the report, you will see changes that you've made and saved.
 
 The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If no language is defined, Power BI uses English as a fallback. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
@@ -67,8 +67,11 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
     - Give recipients permission to open and view the report or dashboard.
     - Select **Go to report/dashboard** to add a "Go to report" link to the body of the email.
     - Add a thumbnail preview of the report page to the body of the email.
-    - Add the full report as an attachment instead of only a single report page and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25 MB. The attachment respects all privacy labels for the report. 
+    - If the report is in Premium capacity, add the full report as an attachment instead of only a single report page. Select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25 MB. The attachment respects all privacy labels for the report. 
     
+    > [!NOTE]
+    >  You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.  
+
     h. To review your subscription and test it out, select **Run now**.  This sends the email to you right away. 
 
 3. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
@@ -89,7 +92,7 @@ A subscription will end if the Pro or Premium Per User (PPU) license expires, th
 
 ## Considerations and troubleshooting
 * To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
-* Dashboards with over 25 pinned tiles, or four pinned live report pages, may not render fully in subscription e-mails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly.  
+* Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription e-mails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly.  
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  
 * If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.
 * For dashboard subscriptions, certain types of tiles aren't yet supported. These include: streaming tiles, video tiles, custom web content tiles. 
@@ -102,12 +105,12 @@ A subscription will end if the Pro or Premium Per User (PPU) license expires, th
 * Subscriptions don't currently support bookmarks.
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.
-* Keep in mind that like other BI products, the time you set your subscription for is when the subscription begins processing.  Once the report processing is complete, then the subscription is queued and sent to the e-mail recipients.  While we strive to process and deliver all subscriptions as quickly as possible, there are times at peak demand when you may see a longer delay due to the number of subscriptions that can be sent at once.  For the majority of customers, they shouldn’t see a delay of more than 15 minutes to process and send their reports, though it may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If any customer experiences a delay of that length, they should first ensure that the address no-reply-powerbi@microsoft.com is on your safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, they should contact their Power BI administrator or IT help desk for assistance.
+* Keep in mind that like other BI products, the time you set your subscription to begin is when the subscription starts to process.  Once the report processing is complete, then the subscription is queued and sent to the e-mail recipients.  While we strive to process and deliver all subscriptions as quickly as possible, there are times at peak demand when you may see a longer delay due to the number of subscriptions that can be sent at once.  The majority of customers shouldn’t see a delay of more than 15 minutes to process and send reports, though it may take up to 30 minutes for certain times and tenants that have significant usage.  Delivery should never exceed 60 minutes from the time the subscription is scheduled until the email is delivered.  If you experiences a delay of more than 60 minutes, ensure that the address *no-reply-powerbi@microsoft.com* is on the safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, contact your Power BI administrator or IT help desk for assistance.
 * The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
     - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
-    - The report has fewer than 20 pages.
+    - The report has fewer than 20 pages (see next bullet item).
     - The attachment file is under 25 MB in size.
-
+* You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.
 
 ## Next steps
 

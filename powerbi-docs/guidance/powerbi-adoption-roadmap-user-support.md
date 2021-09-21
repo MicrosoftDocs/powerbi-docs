@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: reference
 ms.date: 06/30/2021
 ---
@@ -122,7 +122,7 @@ Users with a Power BI Pro or Premium Per User license are eligible to [log a sup
 
 There are several support options available for [global and Power BI administrators](../admin/service-support-options.md#get-started-with-support-for-admins).
 
-For customers who have a [Microsoft Unified Support](https://www.microsoft.com/msservices/unified-support-solutions) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be setup to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
+For customers who have a [Microsoft Unified Support](https://www.microsoft.com/en-us/msservices/unified-support-solutions) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be setup to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
 
 ## Worldwide community support
 

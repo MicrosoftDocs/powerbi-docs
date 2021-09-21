@@ -8,12 +8,12 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 04/02/2021
+ms.date: 09/02/2021
 ---
 
 # What are paginated reports in Power BI Premium?
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 *Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called *pixel perfect* because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service. 
 
@@ -38,6 +38,9 @@ Now say you place the same table in a paginated report. When you print it or exp
 
 In the following video, Microsoft Most Valued Professional - Data Platform Peter Myers, and Principal Program Manager Chris Finlan demonstrate printing a similar table in the two report formats. 
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Report Builder or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
 
 This video is part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
@@ -54,6 +57,12 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Production
 
 Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+## Apply sensitivity labels to paginated reports
+
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../admin/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
+
+Read more about [sensitivity label support for pagination reports](../admin/service-security-sensitivity-label-paginated-reports.md).
 
 ## Report from a variety of data sources
 
@@ -98,10 +107,10 @@ For details, see the article [Subscribe yourself and others to paginated reports
 
 ## Limitations and considerations
 
-Here are some other features that aren't supported in the initial release:
+Here are some other features that aren't supported:
 
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
-- Document Maps.
+- Document maps. They don't render in the Power BI service, but they do when you export a report.
 - Drillthrough reports.  Consider using URL parameters with paginated reports for drillthrough scenarios.
 - Shared data sources and shared datasets.
 
@@ -113,4 +122,4 @@ Here are some other features that aren't supported in the initial release:
 - [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)
+- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)

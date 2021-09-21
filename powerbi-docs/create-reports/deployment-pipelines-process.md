@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ---
 
 # Understand the deployment process
@@ -151,6 +151,8 @@ The following item properties are not copied during deployment:
 
 * App content and settings - To deploy your apps, see [deploying Power BI apps](#deploying-power-bi-apps)
 
+* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
+
 The following dataset properties are also not copied during deployment:
 
 * Role assignment
@@ -177,7 +179,7 @@ Deployment pipelines supports [incremental refresh](../connect-data/incremental-
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
-To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](deployment-pipelines-troubleshooting.md#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules)
+To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](../create-reports/deployment-pipelines-troubleshooting.yml#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules-)
 
 #### Activating incremental refresh in a pipeline
 
@@ -376,7 +378,7 @@ This section lists most of the limitations in deployment pipelines.
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

@@ -5,9 +5,9 @@ author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: reference
-ms.date: 06/30/2021
+ms.date: 08/13/2021
 ---
 
 # Power BI adoption roadmap: Content delivery scope

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 09/09/2021
 
 LocalizationGroup: Connect to data
 ---
@@ -66,6 +66,8 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   ```
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here", UseStorageApi=false])
   ```
+
+
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:

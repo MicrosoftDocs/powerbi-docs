@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/01/2021
+ms.date: 09/16/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -169,6 +169,7 @@ Here are some requirements for using **Analyze in Excel**:
 * Guest users can't use **Analyze in Excel** for datasets sent from (originating from) another tenant. 
 * **Analyze in Excel** is a Power BI service feature, and isn't available in Power BI Report Server or Power BI Embedded. 
 * **Analyze in Excel** is only supported on computers running Microsoft Windows.
+* When sharing an Excel workbook via a Power BI app, you have to provide Build permissions to the dataset in the app and permissions to the OneDrive or SharePoint location for the Excel workbook. If you use the "Entire organization" setting when providing permissions to users in the Power BI app, you have to set the equivalent permission setting in OneDrive or SharePoint for the Excel workbook.
 
 
 If you need to uninstall the **Analyze in Excel** feature, use the **Add or remove programs** system setting on your computer.
@@ -179,6 +180,7 @@ If you need to uninstall the **Analyze in Excel** feature, use the **Add or remo
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
 - Only Power BI datasets that use Import mode will preserve hierarchies in **Analyze in Excel** workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using **Analyze in Excel**.
 - **Analyze in Excel** doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
+- You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md).
 
 ## Next steps
 

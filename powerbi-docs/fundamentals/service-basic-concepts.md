@@ -9,7 +9,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/28/2021
 LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
@@ -34,6 +34,9 @@ When you open the Power BI service in a browser, you start at your Home screen. 
 You and the end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
 We'll dig into these features later, but first let's review some Power BI concepts. Or you might want to watch this video first.  In the video, Will reviews the basic concepts and gives a tour of the Power BI service.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -71,11 +74,11 @@ You can't have dashboards or reports without data (well, you can have empty dash
 ## Datasets
 A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place. Datasets can also source data from dataflows.
 
-Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](../connect-data/service-get-data.md).
+Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset is a source of data available for one or more reports, and the dataset may contain data that comes from one or more sources. For example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](../connect-data/service-get-data.md).
 
 In the example below, I've selected **My workspace** and then selected the **Datasets + dataflows** tab.
 
-![Screenshot of Power B I showing sample Workspace with Datasets selected.](media/service-basic-concepts/power-bi-datasets.png)
+![Screenshot of Power BI showing sample Workspace with Datasets selected.](media/service-basic-concepts/power-bi-datasets.png)
 
 **ONE** dataset...
 

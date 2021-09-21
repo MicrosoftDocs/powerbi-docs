@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/28/2021
+ms.date: 08/03/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -28,6 +28,9 @@ If you have permissions to the data, you can see and export the data that Power 
 If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license as well as edit permissions to the dataset and report. If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself. Note that this video uses an older version of Power BI.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
@@ -175,9 +178,6 @@ Users who are granted access to a report are **granted access to the entire unde
 What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. 
 
 
->
-
-
 
 | Visual contains | What you'll see in export  |
 |---------------- | ---------------------------|
@@ -268,6 +268,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
-- If a dynamic format string is applied to a measure, the exported data would not preserve this formatting in Excel.
+- If a dynamic format string is applied to a measure, the exported data won't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

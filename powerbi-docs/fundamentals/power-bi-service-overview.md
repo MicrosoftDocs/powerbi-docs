@@ -17,6 +17,9 @@ LocalizationGroup: Get started
 
 Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](service-basic-concepts.md). Or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is *Introduction to the Power BI service*:
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 

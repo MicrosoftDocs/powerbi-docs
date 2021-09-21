@@ -8,7 +8,7 @@ metadata:
   description: Power BI documentation provides expert information for connecting to data with tools such as gateways, template apps, and data refresh.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-data-sources
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT

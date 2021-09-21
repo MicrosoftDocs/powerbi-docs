@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 02/05/2019
+ms.date: 07/18/2021
 ---
 
 # Tutorial: Embed a Power BI content into your application for national clouds
@@ -435,7 +435,7 @@ An application sample is available within the [Embedding for your organization s
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-* For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](../../admin/service-govde-faq.yml)
+* For more information about for Power BI for Germany cloud, reference [Microsoft Cloud Deutschland transition](https://www.microsoft.com/cloud-platform/germany-cloud-regions)
 
 Considerations and limitations
 

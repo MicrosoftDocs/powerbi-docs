@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 06/18/2021
+ms.date: 09/08/2021
 ---
 
 # Power BI data sources
@@ -70,7 +70,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Essbase | Yes | Yes | Yes | Yes | Yes | No |
 | Exasol | Yes | Yes | Yes | Yes | Yes | No |
 | Excel | Yes <sup>2</sup> | Yes <sup>2</sup> | No | Yes <sup>2</sup> | No <sup>3</sup> | Yes |
-| Facebook | Yes | Yes | No | No | No | No |
 | File | Yes | Yes | No | Yes | Yes | Yes |
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
 | GitHub | Yes | Yes | No | No | No | No |
@@ -85,7 +84,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
-| IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
+| IBM DB2 | Yes | Yes | Yes <sup>7</sup> | Yes | No | Yes |
 | IBM Informix Database | Yes | Yes | No | Yes | No | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes | No |
 | Impala | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -111,7 +110,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | No |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
-| OData | Yes | Yes <sup>6</sup> | No | Yes | No | Yes |
+| OData | Yes | Yes | No | Yes | No | Yes |
 | ODBC | Yes | Yes | No | Yes | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes | No |
 | Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -120,7 +119,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources P-R
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
-| Paxata <sup>7</sup> | Yes | Yes | No | Yes | No | No |
+| Paxata <sup>6</sup> | Yes | Yes | No | Yes | No | No |
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
@@ -185,9 +184,10 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>5</sup> Required for .html, .xls, and Access Databases
 
-<sup>6</sup> Power BI service doesn't support OData feeds that require authentication.
+<sup>6</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
-<sup>7</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+<sup>7</sup> DirectQuery works properly with the IBM DB2 connecter in Power BI Desktop, however, DirectQuery does *not* work with IBM DB2 when using the IBM driver to connect to IBM DB2. 
+
 
 <sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
 

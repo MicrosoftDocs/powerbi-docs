@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -120,6 +120,10 @@ When you select **Load**, the data is loaded into Power BI Desktop.
 When the data you selected is loaded, the data tables and fields are shown in the **Fields** pane.
 
 ## Limitations and considerations
+
+The following limitations and considerations apply to the Azure Cost Management data connector:
+
+* The Azure Cost Managagement data connector does not work with Office 365 GCC customer accounts.
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 

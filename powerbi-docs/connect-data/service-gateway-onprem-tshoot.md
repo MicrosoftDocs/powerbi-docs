@@ -131,6 +131,13 @@ A few different scenarios could be responsible for this error:
 
 The exact limitation is 10 GB of uncompressed data per table. If you're hitting this issue, there are good options to optimize and avoid it. In particular, reduce the use of highly constant, long string values and instead use a normalized key. Or, removing the column if it's not in use helps.
 
+### Error: DM_GWPipeline_Gateway_SpooledOperationMissing
+
+A few different scenarios could be responsible for this error
+
+- Gateway process may have restarted when the dataset refresh was in progress.
+- The gateway machine is cloned where gateway is running. We should not clone gateway machine.
+
 ## Reports
 
 ### Error: Report could not access the data source because you do not have access to our data source via an on-premises data gateway.

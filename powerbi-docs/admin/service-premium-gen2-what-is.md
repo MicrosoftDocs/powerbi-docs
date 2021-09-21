@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/21/2021
+ms.date: 08/03/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -127,8 +127,8 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 The following known limitations currently apply to Premium Gen2:
 
 * Premium Gen2 capacity utilization can't be tracked in the metrics app.
-* Premium Gen2 does not support customer-managed encryption keys for data at rest (BYOK). [Learn more about using your own keys (BYOK)](service-encryption-byok.md).
-* If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+* If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools).
+* There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
 * Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
     |Tool|Minimum version required|

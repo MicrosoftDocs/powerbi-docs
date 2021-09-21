@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 09/13/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -140,6 +140,9 @@ Keep in mind the following restrictions when using large datasets:
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
 - **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to the maximum capacity of the SKU.
+- **Push datasets**: Push datasets do not support the large dataset storage format.
+
+- You cannot enable large datasets using the REST API. 
 
 ## Region availability
 

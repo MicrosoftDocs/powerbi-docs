@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/29/2021
+ms.date: 08/30/2021
 ---
 
 # Change log for Power BI Desktop
@@ -16,25 +16,49 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
-## June 2021 QFE 1
+## August 2021 QFE 2
 
-*Version: 2.94.921.0, Released: June 29th, 2021*
+*Version: 2.96.1061.0, Released: August 30, 2021*
 
 Bug fixes/improvements:
-- Fix for Google Auth: Google Auth is moved to System Browser (non embedded) to allow users to log into Google Analytics and Google Big Query.
+- Fix for custom visuals: now there will be no crash if a managed organizational store custom visual doesn't appear in the app source.
+
+## August 2021 QFE 1
+
+*Version: 2.96.901.0, Released: August 23, 2021*
+
+Bug fixes/improvements:
+- Fix to hide Business apps launch event ad.
+- Fix for Query Editor: now 'Enable load' will work after the query was renamed.
+
+## July 2021 QFE 1
+
+*Version: 2.95.983.0, Released: July 29, 2021*
+
+Bug fixes/improvements:
+- Fix for script visuals: now they can be enabled.
+- Fix for SAP BW reports: now tables are not duplicated if click refresh.
+- Fix for Enhanced-Tooltips: now tooltips stick long enough for users to interact with the drill buttons in the tooltip.
+
+## June 2021 QFE 1
+
+*Version: 2.94.921.0, Released: June 29, 2021*
+
+Bug fixes/improvements:
+- Fix for Google Auth: Google Auth is moved to System Browser (non-embedded) to allow users to sign in to Google Analytics and Google Big Query.
 - Fix for FinalNameCalculator that treated measure names as case sensitive: now when looking for measure name conflicts case will be ignored.
 - Fix for Q&A visual: now visual column renames are recognized as synonyms.
  
 ## May 2021 QFE 1
 
-*Version: 2.93.981.0, Released: May 27th, 2021*
+*Version: 2.93.981.0, Released: May 27, 2021*
 
 Bug fixes/improvements:
 - Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
 
 ## April 2021 QFE 2
 
-*Version: 2.92.1067.0, Released: May 4th, 2021*
+*Version: 2.92.1067.0, Released: May 4, 2021*
 
 Bug fixes/improvements:
 - Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
@@ -46,7 +70,8 @@ Bug fixes/improvements:
 *Version: 2.92.943.0, Released: April 27, 2021*
 
 Bug fixes/improvements:
-- Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
+
+- Improvements in Microsoft Information Protection SDK detection of the machine stopping to respond and stop throwing "Unknown hard error" dialog.
 - Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
 
 ## March 2021 QFE 1
@@ -54,7 +79,8 @@ Bug fixes/improvements:
 *Version: 2.91.884.0, Released: March 29, 2021*
 
 Bug fixes:
-- Fix for Microsoft Information Protection SDK hanging during evaluation shutdown.
+
+- Fix where the Microsoft Information Protection SDK stops responding during evaluation shutdown.
 - Amazon Redshift driver update to fix the issue with non-nullable primary key columns being treated as empty strings after merge queries.
 - Fix for slicers to contain unique (non-duplicated) values when using aggregations.
 - Fix for formula bar: prevent UI interactions when empty measures, calculated columns, calculated tables are deleted from the model.

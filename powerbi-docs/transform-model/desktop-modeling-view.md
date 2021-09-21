@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/25/2021
 LocalizationGroup: Transform and shape data
 ---
 
@@ -18,7 +18,7 @@ With **Modeling view** in **Power BI Desktop**, you can view and work with compl
 
 ## Using Modeling view
 
-To access Modeling view, select the Modeling view icon found on the left side of **Power BI Desktop**, as shown in the following image.
+To access Modeling view, select the Model icon found on the left side of **Power BI Desktop**, as shown in the following image.
 
 ![The Modeling view icon  in Power BI Desktop](media/desktop-modeling-view/modeling-view_02.png)
 
@@ -38,9 +38,9 @@ When you do, tables that are related to the original table are displayed in the 
 
 ## Setting common properties
 
-You can select multiple objects at once in Modeling view by holding down the **CTRL** key and clicking multiple tables. When you select multiple tables they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.
+You can select multiple objects at once in Modeling view by holding down the **Ctrl** key and clicking multiple tables. When you select multiple tables they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.
 
-For example, you could change the [storage mode](desktop-storage-mode.md) for multiple tables in your diagram view by holding down the **CTRL** key, selecting tables, then changing the storage mode setting in the **Properties** pane.
+For example, you could change the [storage mode](desktop-storage-mode.md) for multiple tables in your diagram view by holding down the **Ctrl** key, selecting tables, then changing the storage mode setting in the **Properties** pane.
 
 ![Select multiple tables by holding CTRL, then set common properties across all selected tables](media/desktop-modeling-view/modeling-view_06.png)
 
