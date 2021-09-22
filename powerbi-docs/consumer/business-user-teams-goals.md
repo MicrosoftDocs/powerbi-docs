@@ -50,7 +50,7 @@ It's simple to start tracking goals by creating a scorecard.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal.png" alt-text="Save your new goal.":::
 
-After you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
+After you’ve saved your scorecard with its goals, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and goals in Power BI](../create-reports/service-goals-introduction.md).
 
 ## Track goals with your team
 

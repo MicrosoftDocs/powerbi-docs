@@ -32,13 +32,17 @@ Here's how you can use data before, during, and after your meetings.
 
 Here are the kinds of questions you can add to your meeting agenda, to jump start discussion and determine the best actions to take to achieve your desired outcomes:
 
-- Are we making progress toward our objectives as quickly as we expected to?
-- What actions can we take in the next week or month that are most likely to improve our metrics?
-- What metrics can we start tracking to get a better sense of if we’re making progress towards our desired outcomes?
+- **Are we making progress** toward our objectives as quickly as we expected to?
+- **What actions can we take** in the next week or month that are most likely to improve our metrics?
+- **What metrics can we start tracking** to get a better sense of if we’re making progress towards our desired outcomes?
 
 Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage data as they plan their work.
 
-## Before the meeting: Add Power BI
+## Before the meeting
+
+To get ready for the meeting, you add a Power BI report or scorecard to the meeting invite. You review the data in the report or scorecard, and encourage other participants to do the same. Then everyone is ready for the meeting.
+
+### Add Power BI
 
 Here's how to add a Power BI report or scorecard to a meeting.
 
@@ -48,7 +52,7 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
     :::image type="content" source="media/business-user-teams-data/teams-calendar-edit.png" alt-text="Edit the calendar item.":::
 
-4. Select the **+ Add a tab** button and add the Power BI tab to the meeting.
+4. Select the **+ Add a tab** button to add the Power BI tab to the meeting.
 
     :::image type="content" source="media/business-user-teams-data/teams-invite-plus-sign.png" alt-text="Select the plus sign + to add a tab.":::
 

@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 Data helps everyone get on the same page before important decisions. Sharing data with your team is important and easy with Power BI in Microsoft Teams.
 
-## Share with your channels, chats, and meeting
+## Share with your channels, chats, and meetings
 
 1. Open the channel, chat, or meeting where you’d like to share.
 4. Select the **+ Add a tab** button and add the Power BI tab.

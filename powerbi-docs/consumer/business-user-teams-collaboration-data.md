@@ -1,5 +1,5 @@
 ---
-title: Collaborate using data in Microsoft Teams
+title: Analyze your Teams collaboration with data
 description: With Power BI, you can get additional insights into where you're spending your time and how the teams you use collaborate. 
 author: maggiesMSFT
 ms.author: maggies
@@ -7,12 +7,12 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/20/2021
+ms.date: 09/21/2021
 LocalizationGroup: Get started
 
 ---
 
-# Collaborate using data in Microsoft Teams
+# Analyze your Teams collaboration with data
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
