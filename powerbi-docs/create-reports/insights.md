@@ -24,7 +24,7 @@ LocalizationGroup:
  
 ## Notifications
 
-Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces.
+Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces. Please note that the tenant and report setting for receiving notifications should be turned on for this to work.
 
  ![Screenshot showing toast notification for insights.](media/power-bi-insights/toast.png)
  
@@ -34,7 +34,7 @@ If you usually dismiss these notifications or don't engage with them, they'll be
 
  ![Screenshot showing notification when toasts are dismissed.](media/power-bi-insights/toast-dismiss.png)
  
- To stop getting notifications for a report, turn it off in the report settings as shown below:
+ You can control the setting for showing notifications in a report as shown below:
  
  ![Screenshot showing report setting for insights.](media/power-bi-insights/report-setting.png)
  
