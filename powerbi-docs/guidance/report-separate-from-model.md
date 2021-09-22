@@ -45,7 +45,7 @@ So, manage model changes carefully. If possible, avoid the following changes:
 - Renaming tables, columns, hierarchies, hierarchy levels, or measures.
 - Modifying column data types.
 - Modifying measure expressions so they return a different data type.
-- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify measures with their home table name. We don't recommend you write DAX expressions using fully qualified measures names. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).
+- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify measures with their home table name. We don't recommend you write DAX expressions using fully qualified measures names. For more information, see [DAX: Column and measure references](/dax/best-practices/dax-column-measure-references).
 
 Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception: It's possible that a new measure name could collide with a report-scoped measure name. To avoid collision, we recommend report authors adopt a naming convention when defining measures in their reports. They can prefix report-scoped measure names with an underscore or some other character(s).
 
