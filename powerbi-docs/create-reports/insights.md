@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 08/16/2021
+ms.date: 09/21/2021
 LocalizationGroup: 
 ---
 # Insights (preview)
@@ -107,7 +107,7 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
 ![Screenshot showing details pane for insight.](media/power-bi-insights/details.png)
 
 ## Considerations and limitations
-
+- Insights is currently not available in Apps and Embedded for reports in Premium workspaces. Users with PPU license can still use Insights. The Power BI team is working on a fix.
 - If no insights found are found, you’ll be shown the following message: “We didn’t find any insights”. This can be because:
   - The data or visuals aren't supported
      -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge, Cards, Bar, and Column charts.
