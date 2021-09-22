@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/21/2021
+ms.date: 09/22/2021
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
