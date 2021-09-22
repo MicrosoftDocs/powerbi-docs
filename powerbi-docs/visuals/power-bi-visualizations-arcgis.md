@@ -28,7 +28,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 > [!TIP]
 > GIS stands for Geographic Information Systems.
 
-The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using ArcGIS for Power BI offers enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
+The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2020 USA Median Disposable Income. As you'll see as you read on, using ArcGIS for Power BI offers enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
 
 :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-01.png" alt-text="ArcGIS opening image.":::
 
@@ -79,7 +79,7 @@ To access **ArcGIS for Power BI** formatting features:
 
 1. On the Visualizations pane, click the **Format** tab to view the formatting options.
 
-    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-06.png" alt-text=Format tab.":::
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-06.png" alt-text="Format tab.":::
 
     ArcGIS map formatting options include:
 
@@ -147,11 +147,11 @@ To modify your data's location type, follow these steps:
 1. In the Layers list, select the data layer you want to work with.
 2. Click the **Layer options** button and choose **Location type**.
 
-    ![Location type selection](media/power-bi-visualizations-arcgis/arcgis-tutorial-10.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-10.png" alt-text="Location type selection.":::
 
     Accept the default values to render the locations as points on the map and specify **One country > United States**.
 
-    ![Location type optional values](media/power-bi-visualizations-arcgis/arcgis-tutorial-11.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-11.png" alt-text="Location type optional values.":::
 
 For more information, see [Specify the location type](https://doc.arcgis.com/en/power-bi/design/specify-location-type.htm) in the ArcGIS for Power BI online help.
 
@@ -175,7 +175,7 @@ To change the map theme, follow these steps:
 
 1. Choose some of the other map themes to see how your map changes.
 
-    ![Map themes](media/power-bi-visualizations-arcgis/arcgis-tutorial-12.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-12.png" alt-text="Screenshot showing map themes.":::
 
 2. Choose the **Size** theme.
 
@@ -203,7 +203,7 @@ To change the symbol style, follow these steps:
 
     The example below shows the map theme set to  **Size**  and several symbol style adjustments to transparency, style, and size.
 
-    ![Map size and symbols](media/power-bi-visualizations-arcgis/arcgis-tutorial-13.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-13.png" alt-text="Map size and symbols.":::
 
 3. When you're done setting styling options, close the Symbology pane.
 
@@ -225,16 +225,16 @@ ArcGIS for Power BI provides several different selection tools to help you selec
 
 To display the selection tools, follow these steps:
 
-1. From the map tools, click the **Selection tools** button ![selection tools](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-07.png) to expand the toolset.
+1. From the map tools, click the **Selection tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-07.png"::: to expand the toolset.
 
     There are four selection tools available; different tools may appear in the  **Selection tools**  menu, depending on the type of layer that is currently active. Because the map in this example contains only a data layer, only the **Single select** and **Box select** tools appear.
     
     | **Tool** | **Description** |
     | --- | --- |
-    | ![single select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png) | **Single select** —This is a single-selection tool that can be used to click individual locations; it is the default selection tool. Press Ctrl and click to select multiple locations.Clicking data locations on the map selects them and triggers interactions with other visualizations.Clicking a pin or a location on a reference layer displays its tooltip. |
-    | ![box select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png)  | **Box select** —Drag a rectangle selector to select multiple locations or select individual locations by clicking them.As with the Select tool, clicking a pin or a location on a reference layer displays its tooltip.When the Box select tool is active, you cannot pan the map. |
-    | ![reference layer select icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **Reference layer select** —If you added a [reference layer](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
-    | ![drive-time select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **Drive-time select** —If you added a [drive-time area](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
+    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png"::: | **Single select** —This is a single-selection tool that can be used to click individual locations; it is the default selection tool. Press Ctrl and click to select multiple locations.Clicking data locations on the map selects them and triggers interactions with other visualizations.Clicking a pin or a location on a reference layer displays its tooltip. |
+    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png"::: | **Box select** —Drag a rectangle selector to select multiple locations or select individual locations by clicking them.As with the Select tool, clicking a pin or a location on a reference layer displays its tooltip.When the Box select tool is active, you cannot pan the map. |
+    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png"::: | **Reference layer select** —If you added a [reference layer](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
+    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png"::: | **Drive-time select** —If you added a [drive-time area](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
     
 2. Select one or more locations on the map. You can select a maximum of 250 data points at a time.
 
@@ -246,16 +246,17 @@ Pin a specific address, place, or point of interest on the map. For this example
 
 To pin a location, follow these steps:
 
-1. From the map tools, click the **Search** button ![search icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png) to open the Search pane.
-2. Type the keywords **Pittsburgh international** in the search box.
+1. From the map tools, click the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png"::: to open the Search pane.
+
+1. Type the keywords **Pittsburgh international** in the search box.
 
     Keywords can include an address, place, or point of interest. As you type, similar recent searches or suggestions based on similar keywords appear.
 
-3. From the results list, choose **Pittsburgh International Airport** and click **Close**.
+1. From the results list, choose **Pittsburgh International Airport** and click **Close**.
 
     A symbol appears on the map, and the map automatically zooms to the location. Pins remain in place on the map only during the current session; you cannot save a pinned location with the map. The pinned location also appears as a layer in the Layers list; you can rename the layer, show or hide it, or remove it from the map, as you can with other layers.
 
-4. To change the color of the pin, expand the **Search** category in the map visual's **Format** pane and choose a new color.
+1. To change the color of the pin, expand the **Search** category in the map visual's **Format** pane and choose a new color.
 
 > [!NOTE]
 > The **Search** feature replaces the Pins feature previously available in ArcGIS for Power BI.
@@ -272,18 +273,19 @@ The Standard ArcGIS for Power BI account includes a curated selection of U.S. de
 
 To add a demographic layer, follow these steps:
 
-1. From the map tools, click the **Analysis tools** button ![analysis tools icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png) to expand the toolset.
-2. Click the **Reference layer** button ![reference layer select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-13.png).
+1. From the map tools, click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
+
+1. Click the **Reference layer** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-13.png":::.
 
     The **Reference layer** pane appears, displaying the **Demographics** tab and its selection of layers.
 
-3. Scroll through the gallery and click **Add** on the thumbnail of the layer you want to add to your map.
+1. Scroll through the gallery and click **Add** on the thumbnail of the layer you want to add to your map.
 
-    For this example, find the **2016 USA Average Household Income** layer and click **Add**.
+    For this example, find the **2020 USA Average Household Income** layer and select **Add**.
     
     The map updates to show the new layer.
     
-    ![Demographic layer](media/power-bi-visualizations-arcgis/arcgis-tutorial-14.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-14.png" alt-text="Demographic layer.":::
     
 Demographic reference layers are interactive; click an area to view a tooltip containing more information. You can also use the **Reference select** tool to [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
@@ -295,15 +297,15 @@ To add an ArcGIS reference layer, follow these steps:
 
 1. In the Reference pane, click the **ArcGIS** tab.
 
-2. In the search field, type **USA Congressional districts** and press **Enter**.
+2. In the search field, type *USA Congressional districts* and press **Enter**.
 
     The gallery populates with several possible results.
 
-3. Locate the USA 116th Congressional Districts layer and click Add.
+3. Locate the **USA 117th Congressional Districts (all territories)** layer and select **Add**.
 
     The map updates to show the new layer.
     
-    ![Reference layer](media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png" alt-text="Reference layer.":::
     
 ArcGIS reference layers are interactive; click an area to view a tooltip containing more information. You can also use the **Reference select** tool to [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
@@ -315,23 +317,23 @@ In this example, you'll use the Pittsburgh International Airport you pinned earl
 
 To find locations within a specific driving distance from the point of origin, follow these steps:
 
-1. From the map tools, click the **Analysis tools** button ![analysis tools icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png) to expand the toolset.
+1. From the map tools, click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
 
-2. Click the **Drive-time** button ![drive time icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png) .
+1. Click the **Drive-time** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png":::.
 
     The **Drive time** pane appears.
 
-3. Click the single select tool and, on the map, select the **Pittsburgh International Airport** location you pinned earlier.
-4. From the **Search area** drop-down menu, choose **Radius** and specify a distance of **100** miles.
-5. Click **OK**.
+1. Click the single select tool and, on the map, select the **Pittsburgh International Airport** location you pinned earlier.
+1. From the **Search area** drop-down menu, choose **Radius** and specify a distance of **100** miles.
+1. Click **OK**.
 
     The map shows a circle surrounding the pinned airport location. The Drive time pane expands to show styling options for the driving distance area.
     
-    ![Find nearby locations](media/power-bi-visualizations-arcgis/arcgis-tutorial-16.png)
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-16.png" alt-text="Find nearby locations.":::
     
     The driving distance area also appears as a layer in the Layers list; you can rename the layer, show or hide it, or remove it from the map, as you can with other layers.
 
-6. With the drive-time layer active in the Layers list, use the Drive-time select tool to click the driving distance area.
+1. With the drive-time layer active in the Layers list, use the Drive-time select tool to click the driving distance area.
 
     Locations that fall within the search area are selected; unselected locations on the map appear smaller or become more transparent. Other visualizations are updated to reflect the selected locations.
 
@@ -347,10 +349,10 @@ Esri provides comprehensive online documentation on ArcGIS for Power BI.
 
 To access the ArcGIS for Power BI online help from the visualization, follow these steps:
 
-1. From the map tools, click the **Settings** button ![settings icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png).
+1. From the map tools, click the **Settings** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png":::.
 
-2. On the **Settings** pane, click the **Help** button.
-3. Click **OK** on the confirmation window that appears.
+1. On the **Settings** pane, click the **Help** button.
+1. Click **OK** on the confirmation window that appears.
 
     The ArcGIS for Power BI online help opens in a browser window.
     
@@ -366,13 +368,14 @@ Power BI allows designers, Power BI admins, and user administrators to manage th
 
 In Power BI Desktop, designers can disable ArcGIS for Power BI on the security tab. Select  **File**  >  **Options and settings**  and then select  **Options**  >  **Security**. When disabled, ArcGIS will not load by default.
 
-![Designer options](media/power-bi-visualizations-arcgis/arcgis-tutorial-17a.png)
+:::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-17a.png" alt-text="Designer options.":::
 
 #### Administrator options
 
 In the Power BI service, administrators can turn off ArcGIS for Power BI for all users. Select **Settings** > **Admin Portal** > **Tenant settings**. When disabled, Power BI will no longer display the ArcGIS for Power BI icon in the visualizations pane.
 
-![Administrator options](media/power-bi-visualizations-arcgis/arcgis-tutorial-18a.png)
+
+:::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-18a.png" alt-text="Administrator options.":::
 
 #### User Administrator options
 
@@ -416,20 +419,19 @@ In services or applications where ArcGIS for Power BI is not available, the visu
 
 The following table compares the standard features available to all Power BI users to those available to signed-in ArcGIS users:
 
-| ![included icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-17.png) Standard (included with Power BI) | ![ArcGIS account icon 1](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-18.png) ![ArcGIS account icon 2](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-19.png) With your ArcGIS account |
-| --- | --- | --- |
+| :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-17.png"::: Standard (included with Power BI) | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-18.png"::: :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-19.png"::: With your ArcGIS account |
+| --- | --- |
 | Basemaps |
 | 4 basic basemaps | All Esri basemaps plus access to your organization's basemaps, including custom basemaps |
 | Geocoding |
 | 3,500 locations per map | 10,000 locations per map |
- | 10,000 locations per month | No monthly limit |
+| 10,000 locations per month | No monthly limit |
 | Reference layers |
 | 10 reference layers that contain U.S. demographics | Access to all web maps and layers from your ArcGIS organization |
- | Publicly shared feature layers in ArcGIS | Publicly shared feature layers in ArcGIS |
- | Access to ArcGIS Living Atlas of the World maps and layers (feature services) |
+| Publicly shared feature layers in ArcGIS | Publicly shared feature layers in ArcGIS |
+| Access to ArcGIS Living Atlas of the World maps and layers (feature services) |
 | Infographics |
 | Curated gallery of U.S. demographics variables (7 categories) | Full access to the ArcGIS GeoEnrichment data browser, including U.S. and global demographics variables |
-|
 
 ## Next steps
 
