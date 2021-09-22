@@ -34,7 +34,7 @@ If you usually dismiss these notifications or don't engage with them, they'll be
 
  ![Screenshot showing notification when toasts are dismissed.](media/power-bi-insights/toast-dismiss.png)
  
- You can control the setting for showing notifications in a report as shown below:
+ You can control the setting for notifications in a report as shown below:
  
  ![Screenshot showing report setting for insights.](media/power-bi-insights/report-setting.png)
  
