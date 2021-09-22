@@ -1969,7 +1969,7 @@ The following video describes and shows each of these updates. You can also see 
 Here were the updates in the Power BI service.
 
 * Support for non-premium datasets for [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
-* General availability of Power BI [aggregations](../transform-model/desktop-aggregations.md).
+* General availability of Power BI [aggregations](../admin/aggregations-auto.md).
 * Send refresh notifications to others.
 * [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
 * Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
@@ -2532,7 +2532,7 @@ The following updates were new to **Power BI Desktop** in October:
 
 ### Analytics
 
-* Composite models and aggregation support in the Power BI service (preview) [[video]](https://youtu.be/8E6UokaDtc0)  [[article - aggregations]](../transform-model/desktop-aggregations.md) [[article - composite models]](../transform-model/desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
+* Composite models and aggregation support in the Power BI service (preview) [[video]](https://youtu.be/8E6UokaDtc0)  [[article - aggregations]](../admin/aggregations-auto.md) [[article - composite models]](../transform-model/desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Explain the increase for non-additive measures [[video]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
 ### Power BI visuals
@@ -2588,7 +2588,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 ### Analytics
 
-* Aggregations (preview) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[article]](../transform-model/desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
+* Aggregations (preview) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[article]](../admin/aggregations-auto.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
 ### Power BI visuals
 
