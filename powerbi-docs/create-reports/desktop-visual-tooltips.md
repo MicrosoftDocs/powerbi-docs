@@ -17,6 +17,12 @@ The public preview of modern visual tooltips includes data point drill actions a
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Example of a modern visual tooltip.":::
 
+## Video
+
+Sujata demonstrates how the modern visual tooltips work in this video.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDRUW]
+
 ## Turn on the new tooltips
 
 When you enable this preview, new reports have modern tooltips enabled by default. However, to have the new tooltips in existing reports, you need to enable them for each report.
