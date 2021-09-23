@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/22/2021
+ms.date: 09/23/2021
 LocalizationGroup: Create reports
 ---
 
@@ -20,6 +20,8 @@ The public preview of modern visual tooltips includes data point drill actions a
 ## Video
 
 Sujata demonstrates how the modern visual tooltips work in this video.
+
+[!INCLUDE [video-note-earlier-versions](../includes/video-note-earlier-versions.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDRUW]
 
