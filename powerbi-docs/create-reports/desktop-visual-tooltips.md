@@ -21,8 +21,6 @@ The public preview of modern visual tooltips includes data point drill actions a
 
 Sujata demonstrates how the modern visual tooltips work in this video.
 
-[!INCLUDE [video-note-earlier-versions](../includes/video-note-earlier-versions.md)]
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDRUW]
 
 ## Turn on the new tooltips
