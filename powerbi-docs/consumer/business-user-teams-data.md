@@ -61,11 +61,23 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-report-tab.png" alt-text="Make sure this team has been given access to this report in Power BI.":::
 
-1. The report opens in the Power BI service. Select **File**, then **Manage Permissions**, and add the names of the meeting attendees.
-    
-1. Copy the link to provide everyone with permission to view the report.
+    If you didn't select that link, don't worry. Just open the report in Power BI in Teams or in the Power BI service.
 
-    :::image type="content" source="media/business-user-teams-data/service-share-report-link.png" alt-text="Share the report in the Power BI service.":::
+1. The report opens in the Power BI service. Select **File**, then **Manage Permissions**
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-file-manage-permissions.png" alt-text="Select File > Manage permissions to add names.":::
+
+1. Select **Direct access**.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-direct-access.png" alt-text="Select the Direct access option.":::
+
+1. Select **Add user**.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-add-user.png" alt-text="Screenshot of selecting Add user.":::
+
+1. Add the names of the meeting attendees. Decide what permissions you want them to have, and whether to send them an email.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-grant-access.png" alt-text="Screenshot of Grant people access dialog.":::
 
     If you can’t give permission, don’t worry. The attendees can request access when they try to view the report.
 
