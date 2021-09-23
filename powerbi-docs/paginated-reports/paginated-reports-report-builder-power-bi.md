@@ -32,9 +32,7 @@ You can preview your report in Report Builder, then publish it to the Power BI s
 
 ## Prerequisites
 
-- You need a Power BI Pro or Premium Per User (PPU) license to publish a report to the service. 
-- You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. 
-- A Power BI admin needs to enable paginated reports in the [Premium capacities section](../admin/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
 ## Compare Power BI reports and paginated reports
 
