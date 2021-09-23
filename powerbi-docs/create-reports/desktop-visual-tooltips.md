@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/05/2021
+ms.date: 09/23/2021
 LocalizationGroup: Create reports
 ---
 
@@ -16,6 +16,14 @@ LocalizationGroup: Create reports
 The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Example of a modern visual tooltip.":::
+
+## Video
+
+Sujata demonstrates how the modern visual tooltips work in this video.
+
+[!INCLUDE [video-note-earlier-versions](../includes/video-note-earlier-versions.md)]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDRUW]
 
 ## Turn on the new tooltips
 
