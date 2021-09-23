@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 08/16/2021
+ms.date: 09/21/2021
 LocalizationGroup: 
 ---
 # Insights (preview)
@@ -24,7 +24,7 @@ LocalizationGroup:
  
 ## Notifications
 
-Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces.
+Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces. Please note that the tenant and report setting for receiving notifications should be turned on for this to work.
 
  ![Screenshot showing toast notification for insights.](media/power-bi-insights/toast.png)
  
@@ -34,7 +34,7 @@ If you usually dismiss these notifications or don't engage with them, they'll be
 
  ![Screenshot showing notification when toasts are dismissed.](media/power-bi-insights/toast-dismiss.png)
  
- To stop getting notifications for a report, turn it off in the report settings as shown below:
+ You can control the setting for notifications in a report as shown below:
  
  ![Screenshot showing report setting for insights.](media/power-bi-insights/report-setting.png)
  
@@ -107,7 +107,7 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
 ![Screenshot showing details pane for insight.](media/power-bi-insights/details.png)
 
 ## Considerations and limitations
-
+- Insights is currently not available in Apps and Embedded for reports in Premium workspaces. Users with PPU license can still use Insights. The Power BI team is working on a fix.
 - If no insights found are found, you’ll be shown the following message: “We didn’t find any insights”. This can be because:
   - The data or visuals aren't supported
      -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge, Cards, Bar, and Column charts.

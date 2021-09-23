@@ -35,10 +35,10 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 - Capacities and Premium workspaces can't be migrated.
 - Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
-- After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) if necessary.
+- After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets.
 - You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](/power-bi/connect-data/service-dataset-modes-understand) and [Manage data storage in Power BI workspaces](/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi).
+- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](./service-admin-manage-your-data-storage-in-power-bi.md).
 - Some usage data collected before migration is unavailable after migration. Usage data in the sources listed below will be lost:
   - [Power BI Activity Log](service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
@@ -100,11 +100,11 @@ When migration is complete, you'll be able to access Power BI in about 20-30 min
 
 Do the following steps to recreate the configuration of the original region:
 
-1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](/power-bi/admin/service-admin-premium-manage).
-1. If push datasets were deleted, recreate them. Refer to [https://docs.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming](/power-bi/connect-data/service-real-time-streaming) to learn how to push data into a dataset.
+1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](./service-admin-premium-manage.md).
+1. If push datasets were deleted, recreate them. Refer to [https://docs.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming](../connect-data/service-real-time-streaming.md) to learn how to push data into a dataset.
 1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) if necessary.
-1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. To fix this issue, follow the procedure in [Embed a report web part in SharePoint Online](/power-bi/collaborate-share/service-embed-report-spo).
+1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
+1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. To fix this issue, follow the procedure in [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md).
 
 To verify that the default region for data storage has been moved, follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md).
 
@@ -146,4 +146,3 @@ Yes. Refreshes can happen temporarily and should stop after a few days.
 
 ### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location? 
 Yes. As it’s a new location, the IP ranges are also changing and need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
-

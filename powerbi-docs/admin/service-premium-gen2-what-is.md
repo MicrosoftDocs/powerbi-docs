@@ -1,6 +1,6 @@
 ---
 title: What is Power BI Premium Gen2? (preview)
-description: Power BI Premium Gen2 provides streamlined use and management of capacities for your organization. 
+description: Power BI Premium Gen2 provides streamlined use and management of capacities for your organization.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 08/03/2021
-ms.custom: licensing support
+ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
 

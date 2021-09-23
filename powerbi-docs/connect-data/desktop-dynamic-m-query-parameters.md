@@ -227,7 +227,7 @@ There are some considerations and limitations to consider when using dynamic M q
     * Live connect data sources: Azure Analysis Services, SQL Server Analysis Services, Power BI Datasets
     * Other unsupported data sources: Oracle, Teradata, and Relational SAP Hana, PostgreSQL
     * Partially supported through XMLA / TOM endpoint programmability: SAP BW and SAP Hana 
-* [Aggregations](../transform-model/desktop-aggregations.md) are not supported with the feature
+* [Aggregations](../admin/aggregations-auto.md) are not supported with the feature
 * Row-level security (RLS) is not supported with the feature
 * Parameter names cannot be reserved words in DAX nor contain spaces. Appending "Parameter" to the end of the parameter name can help avoid this limitation.
 
