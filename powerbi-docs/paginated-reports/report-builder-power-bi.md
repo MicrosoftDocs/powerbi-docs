@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 07/19/2021
+ms.date: 09/23/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -23,10 +23,10 @@ The following paginated report is a sample of an invoice. You can download it an
 
 ![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
 
-## Prerequisites 
+## Prerequisites
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
-- 
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+
 ## Start with the Table, Matrix, or Chart wizard
 
 Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
