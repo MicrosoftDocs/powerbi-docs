@@ -40,7 +40,7 @@ As a Power BI service admin, you can analyze usage for all Power BI resources at
 
 > [!NOTE]
 > You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands. 
-
+>
 > There can be a lag of up to 30 minutes to retrieve Power BI events.
 
 ### Activity log requirements
@@ -157,7 +157,7 @@ You must meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first make sure to enable logging in Power BI. For more information, see [Audit and uage settings](service-admin-portal.md##create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first make sure to enable logging in Power BI. For more information, see [Audit and uage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -205,11 +205,11 @@ If you are trying to determine who has accessed a file, folder, or site, on the 
 
 In the example shown below, the search term "sales" was entered in the **File, folder, or site** field.
 
-![Screenshot of the Audit log search with file, folder, or site field called out.](media/service-admin-auditing/search-audit-log-by-file.png)
+[![Screenshot of the Audit log search with file, folder, or site field called out.](media/service-admin-auditing/search-audit-log-by-file.png)](media/service-admin-auditing/search-audit-log-by-file.png#lightbox)
 
 The search results for the "sales" filter show user activity for the Contoso Q2 Division Sales dataset.
 
-![Screenshot of the Audit log search results for a file search.](media/service-admin-auditing/search-audit-log-by-file-results.png)
+[![Screenshot of the Audit log search results for a file search.](media/service-admin-auditing/search-audit-log-by-file-results.png)](media/service-admin-auditing/search-audit-log-by-file-results.png#lightbox)
 
 ### Combine filters to narrow results
 
@@ -261,7 +261,7 @@ Set-ExecutionPolicy RemoteSigned
 #The following command loads the Exchange Online management module.
 Import-Module ExchangeOnlineManagement
 
-#Next, you connect using your user principal name.
+#Next, you connect using your user principal name. A dialog will prompt you for your password and any multi-factor authentication requirements.
 Connect-ExchangeOnline -UserPrincipalName <user@contoso.com>
 
 #Now you can query for Power BI activity. In this example, the results are limited to 1,000, shown as a table, and the "more" command causes output to display one screen at a time. 
