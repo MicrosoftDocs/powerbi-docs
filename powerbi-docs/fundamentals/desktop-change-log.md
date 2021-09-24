@@ -21,7 +21,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 *Version: 2.97.861.0, Released: September 24, 2021*
 
 Bug fixes/improvements:
-- Azure Analisis Services fix: now when connecting to AAS and proxy detection is required, the connection will succeed.
+- Azure Analysis Services fix: now when connecting to AAS and proxy detection is required, the connection will succeed.
 
 ## August 2021 QFE 2
 
