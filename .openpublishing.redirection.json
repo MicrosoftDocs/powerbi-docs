@@ -4039,6 +4039,11 @@
             "source_path": "powerbi-docs/admin/service-govde-faq.yml",
             "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/desktop-videos.md",
+            "redirect_url": "powerbi-docs/fundamentals/videos.md",
+            "redirect_document_id": false
         }
 
     ]           
