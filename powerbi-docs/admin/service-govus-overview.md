@@ -135,7 +135,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
 |[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
-|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2021-Q4|CY2021-Q4|CY2021-Q4|
+|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H1|CY2022-H1|CY2022-H1|
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |Tenant metadata scanning flow<sup>4</sup>|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
 | | | |
