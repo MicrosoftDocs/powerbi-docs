@@ -45,12 +45,11 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 
     :::image type="content" source="media/connect-data-source-apis/power-query-manage-parameters.png" alt-text="Select Manage Parameters":::
 
-1.  Create parameters for the servername and databasename.
+3. Create parameters for the servername and databasename.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-parameters.png" alt-text="Manage Parameters, set servername and databasename.":::
 
-
-3. Edit the query for the first connection, and map the database and servername.
+4. Edit the query for the first connection, and map the database and servername.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-map-database-server.png" alt-text="Map the Server and Database name":::
 
@@ -64,7 +63,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
         dbo_ExecutionLog3
     ```
 	
-	4. Publish that report to the server. In this example, the report is named executionlogparameter. The following image is an example of a data source management page.
+5. Publish that report to the server. In this example, the report is named executionlogparameter. The following image is an example of a data source management page.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-data-source-credentials.png" alt-text="The data source management page.":::
 
@@ -90,7 +89,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
     ```
 
 4. This variable is updated with the values that we need to change.
-5. We save the result of this call in a variable:
+5. Update the values of the desired parameters:
 
     ```powershell
     $parameters[0].Value = 'myproductionserver'
