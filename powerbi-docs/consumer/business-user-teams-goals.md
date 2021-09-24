@@ -46,7 +46,7 @@ It's simple to start tracking goals by creating a scorecard.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal-percent.png" alt-text="Create a goal by completing the needed values.":::
 
-1. **Save**.
+1. Select **Save**.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal.png" alt-text="Save your new goal.":::
 
@@ -61,17 +61,16 @@ To keep your goals top of mind for your team, add your scorecards as tabs to you
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-channel-plus-sign.png" alt-text="Select the plus sign to add a tab.":::
 
-3. Pick a scorecard > **Save**.
+3. Pick a scorecard. If you keep **Post to the channel about this tab** selected, Teams adds a post to the chat, about the new tab.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-scorecard-tab.png" alt-text="Post to the channel about this tab.":::
 
-    If you keep **Post to the channel about this tab** selected, Teams adds a post to the chat, about the new tab.
+1. Select **Save** to finish adding the scorecard to the channel as a tab.
 
-1. Select **Share**, allow colleagues to **view, share, and build new content**, and **Apply**.
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-scorecard-tab-save.png" alt-text="Select Save to finish adding the scorecard to the channel as a tab.":::
 
-    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-share-scorecard.png" alt-text="Select view, share, and build new content.":::
+1. You may need to share it with colleagues. See [Give team members permission](business-user-teams-share-data.md#give-team-members-permission) in the "Lead data-driven discussions in Microsoft Teams" article for how to share with your colleagues.
 
-1. Select **Copy link** or **Send** a message to your colleagues with a link to the scorecard so they can keep it up to date.
 1. Open the chat window in Teams to see the post about the scorecard.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-scorecard-chat.png" alt-text="Open the chat window in Teams to see the post about the scorecard.":::
@@ -95,6 +94,6 @@ Each project and organization can have its own goals. You can find all your goal
 
 ## Next steps
 
+[Create scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
 [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
-
 [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)

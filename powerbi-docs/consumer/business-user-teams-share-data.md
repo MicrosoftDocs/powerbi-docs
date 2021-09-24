@@ -25,16 +25,35 @@ Data helps everyone get on the same page before important decisions. Sharing dat
 3. Pick the Power BI item you’d like to share.
 4. Select **Save**.
 
+    :::image type="content" source="media/business-user-teams-data/teams-power-bi-save-tab.png" alt-text="Select Save to add this report or scorecard to the meeting tab.":::
+
 This works in channels, meetings, and even in chats.
 
 ### Give team members permission
 
-Make sure your team has permission to the item by sharing it with them.
+Make sure your team has permission to the report or scorecard by sharing it with them.
 
-1. Open the item in the Power BI service. Select **Share** and add the names of the meeting attendees.
-1. Copy the link to provide everyone with permission to view the report.
+1. Open the item in Power BI in Teams, or in the Power BI service, and select **File** > **Manage Permissions**.
 
-If you can’t give permission, don’t worry. They can also request access when they try to view the report.
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-file-manage-permissions.png" alt-text="Select File > Manage permissions to add names.":::
+
+    If you don't see this option, you may not have permission to share the item. If not, again, don’t worry. The attendees can request access themselves when they try to view the report.
+
+1. Select **Direct access**.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-direct-access.png" alt-text="Select the Direct access option.":::
+
+1. Select **Add user**.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-add-user.png" alt-text="Screenshot of selecting Add user.":::
+
+1. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
+
+    :::image type="content" source="media/business-user-teams-data/power-bi-teams-grant-access.png" alt-text="Screenshot of Grant people access dialog.":::
+
+1. Back in Teams, select **Save** to finish adding the report or scorecard to the meeting as a tab.
+
+
 
 ## Chat about data with rich links and cards
 
