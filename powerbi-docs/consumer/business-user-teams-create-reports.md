@@ -103,19 +103,59 @@ When you find interesting reports that are relevant to your team, bring then int
 
 ## Create more sophisticated reports
 
-It’s easy to make stunning, interactive reports using Power BI Desktop. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop runs on Windows and has additional capabilities like data import, cleaning, modeling, and much more. 
+### Enhance reports in the Power BI service and in Teams
+
+It’s easy to keep working on your reports, right in the Power BI service and in Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI. 
+
+**Q&A visual**
+
+For example, ask a question of your data by adding a *Q&A visual*, where you can ask natural language questions and get answers in the form of a visual.
+
+1. In the Visualizations pane, select the **Q&A** icon.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual-icon.png" alt-text="Select the Q&A visual icon.":::
+
+    Power BI generates a list of suggested questions you can choose from, or type your own.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-qna-visual.png" alt-text="Q&A visual with list of suggested questions.":::
+
+1. If you like the visual that Power BI created, you can convert it from a Q&A visual to a standard visual on the page.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-pin-qna-visual.png" alt-text="Convert it from a Q&A visual to a standard visual on the page.":::
+
+Read more about [creating Q&A visuals](../visuals/power-bi-visualization-q-and-a.md).
+
+**Smart narrative visual**
+
+You can also easily create a *smart narrative* visual, a dynamically generated text box that provides relevant innovative insights that you can customize.
+
+1. In the Visualizations pane, select the **Smart narrative** visual icon.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual-icon.png" alt-text="Select the Smart narrative visual icon.":::
+
+    Power BI generates a text description of key takeaways in your report.
+
+    :::image type="content" source="media/business-user-teams-create-reports/power-bi-teams-smart-narrative-visual.png" alt-text="Power BI generates a text description of key takeaways in your report.":::
+
+1. You can edit the visual, changing the way it looks and also the inline values it generates.
+
+Here's a tutorial about [creating smart narrative visuals](../visuals/power-bi-visualization-smart-narrative.md).
+
+### Create reports in Power BI Desktop
+
+Power BI Desktop is a downloadable Windows app you can use to make more sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop has additional capabilities like data import, cleaning, modeling, and much more.
 
 To get started with Power BI Desktop, follow these steps.
 
 1. To install Power BI Desktop, open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
-1. Create a report in Power BI Desktop. Here's a sample you can create:
+1. Create a report in Power BI Desktop. In this sample tutorial, you prepare and model your data, both tasks you can't do in a report in the Power BI service. Then you create a report based on the model you've created.
 
-    [From Excel workbook to stunning report in Power BI Desktop](../create-reports/desktop-excel-stunning-report.md)
+    [From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)
 
 1. [Publish the report](../collaborate-share/service-publish-to-web.md) to the Power BI service.
 1. Share the report with your colleagues in Teams.
 
 ## Next steps
 
-[Improve collaboration using data in Microsoft Teams](business-user-teams-collaboration-data.md)
-[Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Improve collaboration using data in Microsoft Teams](business-user-teams-collaboration-data.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)

@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/16/2021
+ms.date: 09/24/2021
 LocalizationGroup: Get started
 
 ---
@@ -63,8 +63,6 @@ To keep your goals top of mind for your team, add your scorecards as tabs to you
 
 3. Pick a scorecard. If you keep **Post to the channel about this tab** selected, Teams adds a post to the chat, about the new tab.
 
-    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-scorecard-tab.png" alt-text="Post to the channel about this tab.":::
-
 1. Select **Save** to finish adding the scorecard to the channel as a tab.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-add-scorecard-tab-save.png" alt-text="Select Save to finish adding the scorecard to the channel as a tab.":::
@@ -94,6 +92,6 @@ Each project and organization can have its own goals. You can find all your goal
 
 ## Next steps
 
-[Create scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
-[Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
-[Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Create scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
+- [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)

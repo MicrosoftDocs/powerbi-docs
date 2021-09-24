@@ -28,7 +28,7 @@ Here's how you can use data before, during, and after your meetings.
 - **[During the meeting](#during-the-meeting)**, open and present these reports from the calendar. You can even use chat to share more reports and scorecards, or to quickly find the right data to answer questions raised in the meeting. 
 - **[After the meeting](#after-the-meeting)**, send a summary with key results that you discussed and actions the team decided to take to help achieve the desired outcomes.
 
-## Data-driven questions to ask
+## Ask data-driven questions
 
 Here are the kinds of questions you can add to your meeting agenda, to jump start discussion and determine the best actions to take to achieve your desired outcomes:
 
@@ -139,4 +139,4 @@ Consider using key data points to create goals and track them in a scorecard. Co
 
 ## Next steps
 
-[Use Power BI goals to improve results in Microsoft Teams](business-user-teams-goals.md)
+- [Use Power BI goals to improve results in Microsoft Teams](business-user-teams-goals.md)

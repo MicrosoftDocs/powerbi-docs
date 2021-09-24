@@ -37,7 +37,7 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
     :::image type="content" source="media/business-user-teams-data/power-bi-teams-file-manage-permissions.png" alt-text="Select File > Manage permissions to add names.":::
 
-    If you don't see this option, you may not have permission to share the item. If not, again, don’t worry. The attendees can request access themselves when they try to view the report.
+    If you don't see this option, you may not have permission to share the item. If not, don’t worry. The attendees can request access themselves when they try to view the report.
 
 1. Select **Direct access**.
 
@@ -100,5 +100,5 @@ If you use Power BI in a web browser, it’s easy to send link to a colleague.
 
 ## Next steps
 
-[Create reports from data you have in Microsoft Teams](business-user-teams-create-reports.md)
-[Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Create reports from data you have in Microsoft Teams](business-user-teams-create-reports.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
