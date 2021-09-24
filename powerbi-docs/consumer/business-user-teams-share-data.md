@@ -51,10 +51,6 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
     :::image type="content" source="media/business-user-teams-data/power-bi-teams-grant-access.png" alt-text="Screenshot of Grant people access dialog.":::
 
-1. Back in Teams, select **Save** to finish adding the report or scorecard to the meeting as a tab.
-
-
-
 ## Chat about data with rich links and cards
 
 When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making.
@@ -68,23 +64,39 @@ When discussing data, it’s important that your colleagues can open the underly
 
 The link will include the full context of what data you were looking at, including the page, visual, any filters applied. When your colleagues open the link, they quickly see the data you’re referring to.
 
-### Quickly send your colleagues links to reports
+### Send your colleagues links to reports
 
 1. In the Teams channel or chat, start a new conversation.
-2. In the command bar for the editor, select **… Messaging extensions** and pick or search for Power BI.
-3. Pick or search for the content you want to share.
-4. Press the **Send** icon.
+2. In the command bar for the editor, select **Messaging extensions (...)**.
 
-A rich card is added to the conversation making it easy to open the item. It’s a great way to help without leaving the conversation, which save you time.
+    :::image type="content" source="media/business-user-teams-data/teams-chat-meeting-messaging-extensions.png" alt-text="Select Messaging extensions (...).":::
+
+4. Select **Power BI**.
+5. Search for the content you want to share, or select from your list of recent items.
+6. Pick a Power BI item.
+7. Select **Send**.
+
+    :::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-chat-send.png" alt-text="Select Send to send the message in chat.":::
+
+    A rich card is added to the conversation, making it easy for anyone to open the item. 
+
+    :::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-chat-open.png" alt-text="Select Open to open the message in chat.":::
+
+    It’s a great way to help without leaving the conversation, which saves you time.
 
 ## Create rich cards from links you paste in chat
 
 If you use Power BI in a web browser, it’s easy to send link to a colleague.
 
-1. Open a report in the Power BI service in the browser, and copy the link. 
+1. Open a report in the Power BI service in the browser, and copy the link.
+
+    :::image type="content" source="media/business-user-teams-share-data/power-bi-copy-link.png" alt-text="Copy the link in the browser.":::
+
 2. Start a conversation and paste the link.
-3. A rich card is automatically created.
-4. Press the **Send** icon.
+    Teams automatically creates a rich card.
+4. Select **Send**.
+
+    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png" alt-text="Teams automatically creates a rich card.":::
 
 ## Next steps
 
