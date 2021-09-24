@@ -75,7 +75,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 2.  To get the parameter for the report, use the new REST DataModelParameters API using the following PowerShell call:
 
     ```powershell
-    Get-RsRestItemDataModelParameters '/executionlogparameter'
+    Get-RsRestItemDataModelParameter '/executionlogparameter'
 
         Name         Value
         ----         -----
@@ -86,7 +86,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 3. We save the result of this call in a variable:
 
     ```powershell
-    $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
+    $parameters = Get-RsRestItemDataModelParameter '/executionlogparameter'
     ```
 
 4. This variable is updated with the values that we need to change.
@@ -97,10 +97,10 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
     $parameters[1].Value = 'myproductiondatabase'
     ```
 
-6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameters` to update the values in the server:
+6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameter` to update the values in the server:
 
     ```powershell
-    Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
+    Set-RsRestItemDataModelParameter -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
 7. Once the parameters are updated, the server updates any data sources that were bound to the parameters. Going back to the **Edit data source** dialog box, you should be able to set credentials for the updated server and database.
