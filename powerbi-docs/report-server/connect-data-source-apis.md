@@ -89,14 +89,14 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
     ```
 
 4. This variable is updated with the values that we need to change.
-5. Update the values of the desired parameters:
+5. Modify the values of the desired parameters:
 
     ```powershell
     $parameters[0].Value = 'myproductionserver'
     $parameters[1].Value = 'myproductiondatabase'
     ```
 
-6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameter` to update the values in the server:
+6. With the modified parameters, we can use the commandlet `Set-RsRestItemDataModelParameter` to update the values in the server:
 
     ```powershell
     Set-RsRestItemDataModelParameter -RsItem '/executionlogparameter' -DataModelParameters $parameters
