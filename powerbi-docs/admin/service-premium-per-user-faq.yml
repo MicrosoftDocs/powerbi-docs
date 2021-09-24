@@ -64,8 +64,6 @@ sections:
 
           Once a Premium Per User (PPU) license is provisioned in a tenant, its features are available in any workspace for which you turn them on.
 
-          ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
-
           Unlike Premium capacity settings, PPU licenses do not require memory management or CPU management, similar to how Pro licenses do not require such management. Tenant administrators can select feature settings for PPU licenses, but cannot disable specific workloads. 
 
           You can move workspaces between Premium Per User (PPU) and Premium capacities as needed. Any such move will require a full refresh of any datasets or dataflows that reside in the workspace, once you move it back to a Premium capacity. There is a limited set of APIs available to enable movement of workspaces, but they do not include actions such as turning off a workload.
@@ -104,7 +102,6 @@ sections:
         answer: |
           The following considerations should be kept in mind when working with Premium Per User licenses.
 
-          * Service principals are not currently supported in PPU
           * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement off
           * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
