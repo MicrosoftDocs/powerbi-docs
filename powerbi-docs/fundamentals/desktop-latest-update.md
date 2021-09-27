@@ -107,7 +107,7 @@ For detailed information about each of new feature, see [Power BI feature summar
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/i-KYRwIJX6s]
+> [![Power BI Update September 2021](https://img.youtube.com/vi/IagiPEZ_eIY/0.jpg)](https://www.youtube.com/embed/i-KYRwIJX6s)
 
 ## More videos
 
