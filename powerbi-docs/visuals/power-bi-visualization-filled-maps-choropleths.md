@@ -87,11 +87,11 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-fx.png" alt-text="Data colors conditional formatting button.":::
 
-1. Use the **Default color - Data colors** screen to determine how your filled map will be shaded. The options available to you include which field to base the shading, and how to apply the shading. In this example we're using the field **SalesFact** > **Sentiment**, and setting the lowest value for sentiment as orange and the highest value as blue. Values that fall between the maximum and minimum will be shades of orange and blue. The illustration at the bottom of the screen shows the range of colors that will be used. 
+1. Use the **Default color - Data colors** screen to determine how your filled map will be shaded. The options available to you include which field to base the shading on, and how to apply the shading. In this example we're using the field **SalesFact** > **Sentiment**, and setting the lowest value for sentiment to red and the highest value to green. Values that fall between the maximum and minimum will be shades of red and green. The illustration at the bottom of the screen shows the range of colors that will be used. 
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png" alt-text="Default color pane with Sentiment selected.":::
 
-1. The filled map is shaded in orange and blue, with orange representing the lower sentiment numbers and blue representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
+1. The filled map is shaded in red and green, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho.png" alt-text="Filled map showing Idaho tooltips.":::
 
@@ -100,11 +100,12 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 Power BI gives you plenty of control over the appearance of your filled map. Play around with these data color controls until you get the look you want. 
 
 ## Highlighting and cross-filtering
+
 For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 Highlighting a location in a filled map cross-filters the other visualizations on the report page... and vice versa.
 
-1. To follow along, first save this report by selecting **File > Save**. 
+1. To follow along, first save this report by selecting **File > Save**.
 
 1. Copy the filled map using CTRL-C.
 
@@ -116,12 +117,12 @@ Highlighting a location in a filled map cross-filters the other visualizations o
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png" alt-text="Filled map added to Sentiment page.":::
 
-1. On the filled map, select a state.  This cross-highlights and cross-filters the other visualizations on the page. Selecting **Texas**, for example, cross-filters the cards and cross-highlights the bar chart. From this, I know that Sentiment is 75 and that Texas is in the Central District #23.
+1. On the filled map, select a state. This cross-highlights and cross-filters the other visualizations on the page. Selecting **Texas**, for example, cross-filters the cards and cross-highlights the bar chart. From this, I know that **Sentiment** is **75** and that Texas is in the **Central District #23**.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png" alt-text="Texas selected.":::
 
 1. Select a data point on the VanArsdel - Sentiment by Month line chart. This filters the filled map to show Sentiment data for VanArsdel and not their competition.
- 
+
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png" alt-text="Screenshot showing new shading.":::
 
 ## Considerations and troubleshooting
