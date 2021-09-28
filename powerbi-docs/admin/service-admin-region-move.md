@@ -83,7 +83,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 1. Under **Is the problem you're reporting related to a recent service change?**, choose N/A. Select a severity level, then select **Next**.
 1. Add your contact information, then **Submit**.
 
-Our support team will be in touch. The support team makes sure that you're authorized to make this request, confirms your awareness of the issues listed above, and obtains written approval to confirm you want to move your tenant between regions.
+Our support team will be in touch. The support team makes sure you're authorized to make this request, confirms your awareness of the issues listed above, and obtains written approval to confirm you want to move your tenant between regions.
 
 Be sure to provide contact details for someone who can act as the point of contact for Support. The contact has to be available after business hours.
 
@@ -111,38 +111,49 @@ To verify that the default region for data storage has been moved, follow the st
 ## Frequently asked questions
 
 ### Can I migrate back to the original region? If yes, what's the process and will I lose data?
+
 No, you can't revert to using the old region.
 
-[//]: # "### Is my data deleted immediately from the old region? If not, how long is it kept and do I have access to it?  
-Answer needed"
+### Is my data deleted immediately from the old region? If not, how long is it kept and do I have access to it? 
+ 
+Data is retained in the old region for 30 days and is then deleted. Customers don't have access to data in the old region after migration.
 
-[//]: # "### What happens to my Microsoft 365 groups, SharePoint sites, etc.? Are they also migrated? 
-Answer needed"
+### What happens to my Microsoft 365 groups, SharePoint sites, etc.? Are they also migrated? 
+
+We only migrate Power BI-specific resources. Your Microsoft 365 groups and SharePoint sites aren't touched.
 
 ### Can I request that some of my data be migrated to a different region?
+
 No, migration of data to different regions isn't a supported scenario.
 
-[//]: # "### Does migration change any of my data or settings for Azure Active Directory (AAD)?
-Answer needed"
+### Does migration change any of my data or settings for Azure Active Directory (AAD)?
+
+No, migration doesn't affect anything outside of Power BI.
 
 ### Can I use Power BI REST APIs for read-only operations during migration?
+
 No, using Power BI during tenant migration activity isn't recommended.
 
-[//]: # "### Why do I need to provide three proposed migration dates?
-Answer needed"
+### Why do I need to provide three proposed migration dates?
 
-[//]: # "### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
-Answer needed"
+We need to ensure that migration happens outside of the production deployment window. This time-frame is subject to change on a weekly basis. We can only confirm the actual migration date five days before the migration.
+
+### Can I request migration during weekdays (if my company allows) or on any public holiday recognized by my organization?
+
+Yes, you can request migration during weekdays or public holidays.
 
 ### How do I verify my data is now stored in the requested region? 
+
 Follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md). You should see the new region next to **Your data is stored in**.
 
 ### Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?
+
 No, migration from one tenant to another isn't possible.
 
-[//]: # "### After migration, is it normal to still see some refreshes happening from the old tenant location? 
-Yes. Refreshes can happen temporarily and should stop after a few days. 
-*This needs verification from @Naveen Sivaraj/@Hanying Feng."
+### After migration, is it normal to still see some refreshes happening from the old tenant location? 
 
-### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location? 
+Refresh in the old region should stop after migration.
+
+### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location?
+ 
 Yes. As it’s a new location, the IP ranges are also changing and need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
