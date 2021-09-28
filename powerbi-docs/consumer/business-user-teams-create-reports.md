@@ -127,7 +127,7 @@ Read more about [creating Q&A visuals](../visuals/power-bi-visualization-q-and-a
 
 **Smart narrative visual**
 
-You can also easily create a *smart narrative* visual, a dynamically generated text box that provides relevant innovative insights that you can customize.
+You can also easily create a *smart narrative* visual, a dynamically generated text box that provides relevant insights that you can customize.
 
 1. In the Visualizations pane, select the **Smart narrative** visual icon.
 
