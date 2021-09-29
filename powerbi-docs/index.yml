@@ -44,7 +44,7 @@ highlightedContent:
       url: create-reports/power-bi-automate-visual.md
     # Card
     - title: Insights (preview)
-      itemType: concept
+      itemType: overview
       url: create-reports/insights.md
     # Card
     - title: View and update your goals in Power BI (preview)
