@@ -110,7 +110,7 @@ conceptualContent:
     # Card
     - title: Develop in Power BI
       links:
-        - url: embedded/embedded-analytics-power-bi.md
+        - url: developer/embedded/embedded-analytics-power-bi.md
           itemType: overview
           text: What is Power BI embedded analytics?
         - url: developer/visuals/index.yml
