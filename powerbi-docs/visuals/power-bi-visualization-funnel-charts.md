@@ -8,7 +8,7 @@ ms.custom: video-qKRZPBnaUXM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/27/2021
+ms.date: 09/29/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use funnel charts
@@ -44,10 +44,10 @@ Funnel charts:
 * Support multiples.
 * Can be highlighted and cross-filtered by other visualizations on the same report page.
 * Can be used to highlight and cross-filter other visualizations on the same report page.
+
    > [!NOTE]
    > Watch this video to see Will create a funnel chart using the Sales and Marketing sample. Then follow the steps below the video to try it out yourself using the Opportunity Analysis PBIX sample file
-   > 
-   > 
+
 ## Prerequisite
 
 This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
@@ -55,7 +55,7 @@ This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.
 
 1. From the upper left section of the menubar, select **File** > **Open report**
 
-2. Find your copy of the **Opportunity Analysis Sample PBIX file**
+1. Find your copy of the **Opportunity Analysis Sample PBIX file**
 
 1. Open the **Opportunity Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 

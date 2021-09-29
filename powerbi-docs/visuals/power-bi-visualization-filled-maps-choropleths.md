@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/27/2021
+ms.date: 09/29/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use filled maps (choropleth maps) in Power BI
@@ -35,16 +35,16 @@ For more information about the data being sent to Bing, and for tips to increase
 
 Filled maps are a great choice:
 
-* to display quantitative information on a map.
-* to show spatial patterns and relationships.
-* when your data is standardized.
-* when working with socioeconomic data.
-* when defined regions are important.
-* to get an overview of the distribution across the geographic locations.
+- to display quantitative information on a map.
+- to show spatial patterns and relationships.
+- when your data is standardized.
+- when working with socioeconomic data.
+- when defined regions are important.
+- to get an overview of the distribution across the geographic locations.
 
 ### Prerequisites
 
-This tutorial uses the [Sales and Marketing sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+This tutorial uses the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menu bar, select **File** > **Open report**
 

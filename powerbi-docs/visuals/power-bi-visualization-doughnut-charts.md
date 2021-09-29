@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/24/2021
+ms.date: 09/29/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use doughnut charts in Power BI
