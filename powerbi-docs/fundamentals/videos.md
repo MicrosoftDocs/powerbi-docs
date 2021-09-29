@@ -12,7 +12,7 @@ ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ
 ---
 # Power BI videos
 
-You'll find Power BI videos embedded in our documentation and organized into channels and playlists on YouTube. Our videos come in many different flavors:
+You'll find Power BI videos embedded in our documentation, organized into channels and playlists on YouTube, and in the Community video gallery. Our videos come in many different flavors:
 - How-to videos that teach you how to *do something* in Power BI
 - Conceptual videos that explain things like: terminology, the logic behind how something works, and foundational information
 - Video *series* that are combined into a course or certification
@@ -21,12 +21,14 @@ You'll find Power BI videos embedded in our documentation and organized into cha
 - Videos from conferences (Ignite, Data Insights, and more) that we've hosted 
 - Monthly product update videos that describe and show new features
 
-Our video channel also includes curated playlists to make it easy to find the content you need. The "Analyzing and visualizing data" playlist, for example, includes how-to and conceptual videos narrated by Power BI PMs (Project Managers).  
+
 
 > [!NOTE]  
   > Videos might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## Subscribe to the Power BI video channel
+
+Our video channel includes curated playlists to make it easy to find the content you need. The "Analyzing and visualizing data" playlist, for example, includes how-to and conceptual videos narrated by Power BI PMs (Project Managers).  
 
 We’re continually adding to our collection, so [subscribe to the Power BI video channel](https://www.youtube.com/c/MSPowerBI/) to be notified when we add new videos. Explore our playlists to discover videos focused on where you are in the business intelligence journey.
 
@@ -50,6 +52,11 @@ Related Power BI videos are collected into playlists to help you easily find sub
 * [Administration and Governance](https://www.youtube.com/playlist?list=PL1N57mwBHtN2RuqlRQV4b4TNlcBJ_NgSR)
 * [Analyze and Visualize Data](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP)
 * [Data Prep and Modeling](https://www.youtube.com/playlist?list=PL1N57mwBHtN2NhxTvyO6TquHuZOMh4BMq)
+
+## Microsoft Power BI Community videos and webinars
+
+[The Community gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks/) curates videos from hosted events and from our community members. Explore videos organized by date, top kudo-ed, featured, and live events. 
+
 
 ## Next steps
 
