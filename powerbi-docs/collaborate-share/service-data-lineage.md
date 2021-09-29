@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 09/29/2021
 ms.custom: video-RE4HmJG
 LocalizationGroup: 
 ---
@@ -89,10 +89,9 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 
 ## Considerations and limitations
 
-- Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.    
-- Currently, the lineage view scope for dataflows is limited to what exists in the current workspace. For more information see [Dataflows features limitations](../transform-model/dataflows/dataflows-features-limitations.md)
+- Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.
 
 ## Next steps
 
-* [Intro to datasets across workspaces (preview)](../connect-data/service-datasets-across-workspaces.md)
+* [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Dataset impact analysis](service-dataset-impact-analysis.md)
