@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 09/29/2021
 ms.custom: video-RE4HmJG
 LocalizationGroup: 
 ---
@@ -93,5 +93,5 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 
 ## Next steps
 
-* [Intro to datasets across workspaces (preview)](../connect-data/service-datasets-across-workspaces.md)
+* [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Dataset impact analysis](service-dataset-impact-analysis.md)
