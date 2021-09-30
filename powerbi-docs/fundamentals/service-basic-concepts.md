@@ -9,7 +9,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 07/28/2021
 LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
