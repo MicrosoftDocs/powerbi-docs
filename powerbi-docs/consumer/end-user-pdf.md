@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/16/2021
+ms.date: 09/30/2021
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -44,7 +44,7 @@ In the Power BI service, select a report to display it on the canvas. You can al
 And that's all there is to it. You can download the file and open it with any PDF viewer, like the one available in Microsoft Edge.
 
 
-## Limitations and considerations
+## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
 
 * The PDF will include the data and visualizations visible on your Power BI canvas. If the visual includes scrollbars, the PDF will include the visual in its unscrolled default state.  
