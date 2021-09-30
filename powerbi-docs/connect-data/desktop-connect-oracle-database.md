@@ -133,3 +133,7 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 If you see the error message, *Object reference not set*, in the Power BI Gateway when you connect to an Oracle database, follow the instructions in [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md).
 
 If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article.
+
+When connecting to an Oracle database, the Oracle client might need to have [National Language Support](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/nlspg/setting-up-globalization-support-environment.html#GUID-86A29834-AE29-4BA5-8A78-E19C168B690A) correctly configured if any underlying views or queries use functions with locale-specific behavior (such as `TO_DATE` or `TO_CHAR`). On Windows, the `NLS_LANG` parameter can be configured under the registry path `HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\<KEY_HOME_NAME>`. For more information, refer to the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/win.112/e10845/registry.htm#NTQRF415). If you are using Power BI Gateway to connect to Oracle, the `NLS_LANG` setting in the registry will need to be updated on the machine where both gateway and the Oracle client are installed.
+
+
