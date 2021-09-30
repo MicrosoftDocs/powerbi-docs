@@ -56,7 +56,7 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/authentication-dialog.png" alt-text="Screenshot of authentication first dialog.":::
 
-1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained in the [prerequisites](#prerequisites)
+1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained in the [prerequisites](#prerequisites).
 
     ![Pick an account.](media/service-connect-to-emissions-impact-dashboard/pick-account.png)
 
@@ -66,7 +66,7 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 
 Periodically you may receive update notifications from Appsource/Power BI about a new version of the app. When you install the new version, the following options are available:
 
-:::image type="content" source="media/service-connect-to-emissions-impact-dashboard/update-app.png" alt-text="Update app dialog":::
+:::image type="content" source="media/service-connect-to-emissions-impact-dashboard/update-app.png" alt-text="Screenshot of Update app dialog.":::
 
 Choose **Update the workspace and the app**, then click **Install**. This will install the update, overwriting the existing/installed workspace and app.
 
@@ -107,7 +107,7 @@ Follow the steps below to find your company's enrollment number, or ask your org
 
 1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
 
-   ![Find enrollment number](media/service-connect-to-emissions-impact-dashboard/enrollment-number.png)
+   :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/enrollment-number.png" alt-text="Screenshot of find enrollment number.":::
 
 ### Finding your company's billing account ID (MCA/MPA CSP with Azure Plan customers only)
 
