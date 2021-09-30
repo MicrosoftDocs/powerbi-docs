@@ -92,23 +92,19 @@ You’ll need your Azure enrollment number or Billing AccountID with valid permi
     * For **Privacy level setting for this data source**, choose **Organizational**.
     * When done, click **Sign in and connect**.
 
-    ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
+    ![Screenshot of parameters authentication first dialog.](media/service-connect-to-emissions-impact-dashboard/connecting-1-of-2.png)
 
 1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained [here](#prerequisites)
 
-    ![Pick an account](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
+    ![Pick an account.](media/service-connect-to-emissions-impact-dashboard/pick-account.png)
 
 1. Wait for the view to build, which can take up to 24 hours. Please refresh the dataset after 24 hours.
 
-
 ### Updating process
-
-> [!Note]
-> Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
 
 When you receive the update notification from Appsource/Power BI about a new version of the app, install that version. The following options are available:
 
-![updating app](media/service-connect-to-microsoft-sustainability-calculator/update-app.png)
+![Update app dialog.](media/service-connect-to-emissions-impact-dashboard/update-app.png)
 
 Choose **Update the workspace and the app**, then click **Install**. This will install the update on the existing/installed workspace and the app.
 
@@ -122,20 +118,19 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 1. Open the **Scheduled Refresh** option in the dataset settings and make sure the **Enrollment ID / Billing Account ID** is as per the format mentioned [here](#ea-direct-customers).
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
 
 1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, as shown in step 3, below.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-source-credentials-parameters.png" alt-text="Screenshot of Data source Credentials Parameters.":::
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/data-source-credentials-parameters.png" alt-text="Screenshot of Data source Credentials Parameters.":::
 
 1. Once the above steps are validated, go back to the app workspace and click on the **Refresh** option.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-refresh.png" alt-text="Screenshot of Data Refresh.":::
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/data-refresh.png" alt-text="Screenshot of Data Refresh.":::
 
 1. Once the dataset has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/updating-app.png" alt-text="Screenshot of Updating App.":::
-
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/updating-app.png" alt-text="Screenshot of Updating App.":::
 
 ### Additional resources
 
@@ -146,17 +141,17 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 #### App setup
 
-**I’m receiving an error at the time of connecting my data with the calculator. What can I do?**
+**I’m receiving an error at the time of connecting my data with the dashboard. What can I do?**
 
 First, check in Azure Cost Management that you have IT Admin privileges. If you don’t, request this access from your administrator. Next, ensure you’re using the correct enrollment number.
 
 **I entered my enrollment number, but my company data isn’t loading. What’s the issue?**
 
-The Sustainability Calculator Public Preview may take up to 24 hours to load your data. Return after 24 hours and select the **Refresh** button in Power BI.
+The Emissions Impact Dashboard may take up to 24 hours to load your data. Return after 24 hours and select the **Refresh** button in Power BI.
 
 **Is Microsoft trying to shift responsibility for emissions from Microsoft to me?**
 
-No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as emissions another entity emits on your behalf, and are inherently double-counted. The Microsoft Sustainability Calculator provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services".
+No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as emissions another entity emits on your behalf, and are inherently double-counted. The Emissions Impact Dashboard provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services".
 
 **Why are my emissions from use of the Microsoft cloud so much lower than they would be if I were using an on-premises solution?**
 
@@ -164,7 +159,7 @@ Microsoft conducted [a study, published in 2018](https://blogs.microsoft.com/on-
 
 **If Microsoft's operations are carbon neutral and powered by renewables, why aren't customer emissions from Azure services zero?**
 
-There are two primary reasons why customer emissions from Microsoft aren’t zero. The first is related to GHG accounting practices, and the second has to do with the boundary of this analysis. To achieve carbon neutral operations, Microsoft uses carbon offsets to reduce certain emission sources such as onsite fuel combustion for backup generators, refrigerants, and vehicle fleets. These reduce Microsoft’s *net* emissions to zero. The calculator reports *gross* GHG emissions before the application of these offsets, though the volume of offsets applied and net emissions is reported in the **GHG Reporting** tab for further transparency. The second reason is that in addition to the energy and emissions associated with the operation of Microsoft's datacenters, the emissions footprint includes the energy used by Internet Service Providers outside of Microsoft’s operational boundary to transmit data between Microsoft datacenters and Azure customers.
+There are two primary reasons why customer emissions from Microsoft aren’t zero. The first is related to GHG accounting practices, and the second has to do with the boundary of this analysis. To achieve carbon neutral operations, Microsoft uses carbon offsets to reduce certain emission sources such as onsite fuel combustion for backup generators, refrigerants, and vehicle fleets. These reduce Microsoft’s *net* emissions to zero. The dashboard reports *gross* GHG emissions before the application of these offsets, though the volume of offsets applied and net emissions is reported in the **GHG Reporting** tab for further transparency. The second reason is that in addition to the energy and emissions associated with the operation of Microsoft's datacenters, the emissions footprint includes the energy used by Internet Service Providers outside of Microsoft’s operational boundary to transmit data between Microsoft datacenters and Azure customers.
 
 **How am I supposed to use this data, and where do I report it?**
 
@@ -182,11 +177,11 @@ Yes, you will. Before your renewal, be sure to download all historical data and 
 
 **What is the methodology behind the tool?**
 
-The Microsoft Sustainability Calculator reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft’s purchases of renewable energy. As part of the app’s development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology** tab in the tool.
+The Emissions Impact Dashboard reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft’s purchases of renewable energy. As part of the app’s development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology** tab in the tool.
 
 **What data is required to calculate the Azure carbon footprint? Do you access my company's data?**
 
-The estimated carbon calculations are performed based on consumption of Azure services accessed using Azure Consumed Revenue. The Calculator does not access any of your stored customer data. The consumption data is combined with Microsoft's energy and carbon tracking data to compute the estimated emissions associated with your consumption of Azure services based on the datacenters that provide those services.
+The estimated carbon calculations are performed based on consumption of Azure services accessed using Azure Consumed Revenue. The dashboard does not access any of your stored customer data. The consumption data is combined with Microsoft's energy and carbon tracking data to compute the estimated emissions associated with your consumption of Azure services based on the datacenters that provide those services.
 
 **Does this calculation include all Azure services and all Azure regions?**
 
@@ -194,9 +189,9 @@ The estimates include all Azure services in all Azure regions associated with th
 
 #### Characterizing on-premises emissions
 
-**Where does the Microsoft Sustainability Calculator obtain data about my on-premises emissions and operations?**
+**Where does the Emissions Impact Dashboard obtain data about my on-premises emissions and operations?**
 
-The Microsoft Sustainability Calculator doesn’t obtain any information specifically about your on-premises datacenters *except* what you provide. As described in subsequent FAQs, the Microsoft Sustainability Calculator relies on industry research and user inputs about the efficiency and energy mix of on-premises alternatives to develop an estimate of on-premises emissions.
+The Emissions Impact Dashboard doesn’t obtain any information specifically about your on-premises datacenters *except* what you provide. As described in subsequent FAQs, the Emissions Impact Dashboard relies on industry research and user inputs about the efficiency and energy mix of on-premises alternatives to develop an estimate of on-premises emissions.
 
 **What are the assumptions regarding on-premises estimations? Are efficiency savings just from improvements in Power Usage Effectiveness (PUE)?**
 
@@ -204,7 +199,7 @@ Efficiencies associated with Microsoft cloud services include far more than impr
 
 **What is the assumed energy mix for the on-premises infrastructure?**
 
-By default, the Microsoft Sustainability Calculator estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It is assumed that the on-premises datacenter would be located on the same grid as Microsoft’s datacenters. However, for customers who purchase renewable electricity *in addition to* what’s on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Microsoft Sustainability Calculator will adjust on-premises emissions accordingly.
+By default, the Emissions Impact Dashboard estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It is assumed that the on-premises datacenter would be located on the same grid as Microsoft’s datacenters. However, for customers who purchase renewable electricity *in addition to* what’s on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Emissions Impact Dashboard will adjust on-premises emissions accordingly.
 
 **When should I choose Low, Medium, or High for the efficiency of the on-premises infrastructure?**
 
