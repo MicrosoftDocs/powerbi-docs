@@ -10,7 +10,7 @@ ms.date: 09/30/2021
 LocalizationGroup: Connect to services
 ---
 
-# Emissions Impact Dashboard support page
+# Connect to the Emissions Impact Dashboard
 
 Calculate your cloud-based carbon emissions today with the Emissions Impact Dashboard.
 
