@@ -30,7 +30,7 @@ sections:
           > [!NOTE]
           > Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
           >
-          >Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2 (preview)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
+          >Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
           >
           >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).      
           >  

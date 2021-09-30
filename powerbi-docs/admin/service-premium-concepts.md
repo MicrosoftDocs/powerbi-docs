@@ -1,5 +1,5 @@
 ---
-title: Understanding Power BI Premium Gen2 (preview)
+title: Understanding Power BI Premium Gen2
 description: Understand how Power BI Premium Gen2 operates, with concepts about its main features.
 author: davidiseminger
 ms.author: davidi
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 07/21/2021
 LocalizationGroup: Premium
 ---
-# Understanding Power BI Premium Gen2 (preview)
+# Understanding Power BI Premium Gen2
 
 **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience, is an improved and architecturally redesigned generation of Power BI Premium. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 

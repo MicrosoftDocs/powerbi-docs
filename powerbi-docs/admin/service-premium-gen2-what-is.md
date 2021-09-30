@@ -46,7 +46,7 @@ Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, ta
 1. In the admin portal, navigate to **Capacity settings**.
 1. Select **Power BI Premium**.
 1. If you have already allocated capacity, select it.
-1. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
+1. A section appears titled **Premium Generation 2**, and in that section is a slider to enable Premium Generation 2. 
 1. Move the slider to **Enabled**.
 
 The following short video shows how to enable Premium Gen2. 
@@ -62,20 +62,20 @@ Workspaces reside within capacities. Each Power BI user has a personal workspace
 
 Capacity administrators automatically have their my workspaces assigned to Premium capacities.
 
-## Capacity nodes for Premium Gen2 (Preview)
+## Capacity nodes for Premium Gen2
 
 With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
-## Refresh in Premium Gen2 (Preview)
+## Refresh in Premium Gen2
 
 Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 
-## Monitoring in Gen2 (preview)
+## Monitoring in Gen2
 
 The intent of monitoring in Premium Gen2 is to simplify monitoring and management of Premium capacities. Premium Gen2 customers can adapt their monitoring approach from a tool to ensure their Premium capacities are running properly, into a tool that alerts them if attention should be applied to correct overusage or if more resources are required. In other words, rather than constantly having to monitor for issues and adjust, Premium Gen2 aims to assure that everything is running properly and only alerts users if they must act. 
 
-**Updates for Premium Gen2 and Embedded Gen2 (Preview)** - Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) only require monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment.
+**Updates for Premium Gen2 and Embedded Gen2** - Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) only require monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment.
 
 This reduction in the need for monitoring is a departure from the many metrics that the original version of Power BI Premium required. Organizations that created a cadence of monitoring and reporting on their original Premium capacities will need to transition their existing rhythm of monitoring their Premium Gen2 capacities, due to the streamlined metrics and monitoring requirements of Premium Gen2.
 
@@ -84,16 +84,16 @@ In Premium Gen2, if you exceed your CPU time per the SKU size you purchased, you
 In [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), if you exceed your CPU time per the SKU size you purchased, your capacity throttles your interactive operations, based on your configuration settings. To autoscale in Embedded Gen 2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2).
 
 
-### Updates for Premium Gen2 (Preview)
+### Updates for Premium Gen2
 
 **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities use the Capacity Utilization App, which will be made available during the preview. 
 
-You can download and install the metrics app for Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
+You can download and install the metrics app for Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) using the [following link](https://aka.ms/GenutilizationInstall).
 
 
 ## Paginated reports and Premium Gen2
 
-In **Premium Gen2 (preview)** and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there is no memory management for Paginated reports. With Premium Gen2 and Embedded Gen2, Paginated reports are supported on the EM1-EM3 and A1-A3 SKUs.
+In **Premium Gen2** and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there is no memory management for Paginated reports. With Premium Gen2 and Embedded Gen2, Paginated reports are supported on the EM1-EM3 and A1-A3 SKUs.
 
 When using Premium Gen2, Paginated reports in Power BI benefit from the architectural and engineering improvements reflected in Premium Gen2. The following sections describe the benefits of Premium Gen2 for Paginated reports.
 

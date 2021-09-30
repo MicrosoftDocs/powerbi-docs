@@ -25,7 +25,7 @@ This article describes real-world scenarios where Power BI premium capacities ha
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics app** that a Power BI administrator will have access to.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
@@ -145,7 +145,7 @@ This effect can be especially apparent when a dataset is consumed in short burst
 In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
 > [!NOTE]
-> For Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), CPU time utilization is tracked on a per-artifact level, and is visible in the capacity utilization app. Each artifact displays their total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> For Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), CPU time utilization is tracked on a per-artifact level, and is visible in the capacity utilization app. Each artifact displays their total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## Acknowledgments
 

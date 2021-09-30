@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Using Autoscale with Power BI Premium
 
-Power BI Premium offers scale and performance for Power BI content in your organization. With Power BI Premium Gen2 (Preview), many improvements are introduced including enhanced performance, greater scale, improved metrics. In addition, Premium Gen2 enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
+Power BI Premium offers scale and performance for Power BI content in your organization. With Power BI Premium Gen2, many improvements are introduced including enhanced performance, greater scale, improved metrics. In addition, Premium Gen2 enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
 
 :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
 
@@ -70,7 +70,7 @@ The following steps show you how to enable and associated Autoscale with the res
 
     :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-06.png" alt-text="Screenshot of Power B I Admin portal.":::
 
-2. Autoscale only works with Power BI Premium Gen2 (Preview). Enabling Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2 (preview)** box. 
+2. Autoscale only works with Power BI Premium Gen2. Enabling Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2** box. 
 
     :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Video of enabling Premium Generation Two.":::
 

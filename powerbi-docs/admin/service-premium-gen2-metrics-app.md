@@ -11,7 +11,7 @@ ms.date: 08/17/2021
 LocalizationGroup: Premium 
 ---
 
-# Use the Gen2 metrics app (preview)
+# Use the Gen2 metrics app
 
 The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best  use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on autoscale.
 

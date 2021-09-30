@@ -40,7 +40,7 @@ sections:
       - question: |
           What is Power BI Premium Generation 2?
         answer: |
-          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2-preview).
     
       - question: |
           What does Power BI Premium do? How does it work? 

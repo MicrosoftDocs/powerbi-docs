@@ -31,7 +31,7 @@ highlightedContent:
       itemType: overview
       url: visuals/develop-power-bi-visuals.md
     # Card
-    - title: Power BI Embedded Generation 2 (preview)
+    - title: Power BI Embedded Generation 2
       itemType: whats-new
       url: embedded/power-bi-embedded-generation-2.md        
     # Card
