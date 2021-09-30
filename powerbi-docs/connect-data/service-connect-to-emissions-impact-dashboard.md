@@ -21,47 +21,15 @@ Accurate carbon accounting requires good information from partners, vendors, and
 
 ## Prerequisites
 
-To access the Microsoft Sustainability Calculator, you’ll need the following information from your organization’s Azure administrator:
-
-* Supported for **EA Direct and MCA / MPA (CSP with Azure Plan)** Accounts. 
-* You must be either an Enrollment or a Billing Admin with the following roles: 
-    * **EA-direct**: Enrollment Administrators with Read/Write permissions.
-    * **MCA / MPA (CSP with Azure Plan)**: Billing Account Administrators with roles as Billing Account Reader/Contributor/Owner.
-* You must have a Power BI Pro License
-
-You must be an admin with read/write permissions on the Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
-
-### Find your company’s enrollment number
-
-This procedure applies to EA customers only.
-
-1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-
-1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
-
-   ![Find enrollment number](media/service-connect-to-emissions-impact-dashboard/enrollment-number.png)
-
-### Find your company's billing account ID
-
-This procedure applies to MCA/CSP customers only.
-
-1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
-
-2. Select your billing account.
-
-3. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
-
-   ![Find billing account ID](media/service-connect-to-emissions-impact-dashboard/billing-account-id.png)
-
 ### Before you start
 
 The Emissions Impact Dashboard runs on Power BI Pro. If you don’t have Power BI Pro, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
 You’ll need your Azure enrollment number or Billing AccountID with valid permissions. If you don’t have one of these, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
 
-### Connecting the calculator: Five easy steps to carbon accounting
 
-**First time Installation**
+
+## Install the Emissions Impact Dashboard
 
 1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
 
