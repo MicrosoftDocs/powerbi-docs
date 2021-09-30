@@ -56,23 +56,23 @@ The Q&A question box is another option for you to use when creating a card. The 
 
 1. Start on a blank report page
 
-1. In the Visualizations pane, select the **Q&A**** icon.
+1. In the Visualizations pane, select the **Q&A** icon.
 
-   Power BI will create a Q&A visualization with a box for your question.
+   Power BI creates a Q&A visualization with a box for you to "Ask a question about your data".
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-visualization.png" alt-text="Screenshot showing a new Q&A visualization with an 'Ask a question about your data' box.":::
 
 1. For example, type "Total Sales for Tina" in the question box.
 
-   The question box helps you with suggestions and restatements, and when you select **Total Sales for Tina Lassila (store DM)**, it displays the total number.  
+   The question box helps you with suggestions and restatements. At this point, the entire **TotalSales** number is displayed until you further qualify it and select **Total Sales for Tina Lassila (store DM)**.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-box.png" alt-text="Question box example.":::
 
-1. Select the icon to the right of the question box.
+1. Select the icon to the right of the question box to convert the Q&A visualization to a card visualization.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-conversion.png" alt-text="Screenshot showing a Q&A visualization with the 'Turn this Q&A result into a standard visual' icon highlighted.":::
 
-Power BI converts the Q&A visualization to a card visualization. The card icon now shows as selected in the Visualizations pane.
+Power BI makes the conversion. Notice that the card icon is now highlighted in the Visualizations pane.
 
 :::image type="content" source="media/power-bi-visualization-card/power-bi-q-and-a-card.png" alt-text="Card example from question method.":::
 
@@ -88,15 +88,15 @@ The Formatting pane is available when interacting with the card in a report.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-format-card-2.png" alt-text="Card with paint roller outlined.":::
 
-1. With the card selected, expand **Data label** and change the color, size, and font family. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
+1. With the card selected, expand **Data label** and change the **Color**, **Text size**, and **Font family**. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-2.png" alt-text="Card with data format example.":::
 
-1. Expand **Category label** and change the color and size.
+1. Expand **Category label** and change the **Color**, **Text size**, and **Font family**.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-card-format-category.png" alt-text="Card with category example.":::
 
-1. Expand **Background** and move the slider to On.  Now you can change the background color and transparency.
+1. Expand **Background** and move the slider to On.  Now you can change the background **Color** and **Transparency**.
 
    :::image type="content" source="media/power-bi-visualization-card/power-bi-format-color-2.png" alt-text="Slider set to ON.":::
 
