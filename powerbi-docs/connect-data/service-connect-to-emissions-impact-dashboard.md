@@ -28,8 +28,38 @@ The Emissions Impact Dashboard runs on Power BI Pro. If you don’t have Power B
 You’ll need your Azure enrollment number or Billing AccountID with valid permissions. If you don’t have one of these, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
 
 
+The Emissions Impact Dashboard is supported for **EA Direct** and **MCA/MPA (CSP with Azure Plan)** accounts.
 
-## Install the Emissions Impact Dashboard
+* **EA-Direct accounts**: To access the Emissions Impact Dashboard
+    * You must have a Power BI Pro license
+    * You must be an Enrollment Administrator with read/write permissions
+    * You need your company's enrollment number.
+* **MCA/MPA (CSP with Azure Plan) accounts**:  To access the Emissions Impact Dashboard
+    * You must have a Power BI Pro license
+    * You must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner.
+    * You need your company's billing account ID.
+
+You must be an admin with read/write permissions on the Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
+
+### Finding your company’s enrollment number (EA Direct customers only)
+
+1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
+
+1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
+
+   ![Find enrollment number](media/service-connect-to-emissions-impact-dashboard/enrollment-number.png)
+
+### Finding your company's billing account ID (MCA/CSP customers only)
+
+1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
+
+1. Select your billing account.
+
+1. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
+
+   ![Find billing account ID](media/service-connect-to-emissions-impact-dashboard/billing-account-id.png)
+
+## Install the app
 
 1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
 
@@ -41,19 +71,14 @@ You’ll need your Azure enrollment number or Billing AccountID with valid permi
 
 1. Open the app.
 
-1. Select **Connect your data**. In the **Connect to Emissions Impact Dashboard** window, do one of the following sets of steps, depending on whether you're an EA Direct or an MCA/MPA (CSP with Azure Plan):
+1. Select **Connect your data**.
 
-    #### EA Direct customers
+1. In the **Connect to Emissions Impact Dashboard** dialog, under **EnrollmentIDorBillingAccountID**, enter either your enrollment number (EA Direct customers) or billing account ID (MCA/MPA (CSP with Azure Plan) customers)
 
-    Under **EnrollmentIDorBillingAccountID**, enter your enrollment number. For more information about obtaining your enrollment number, see [Find your company’s enrollment number](#find-your-companys-enrollment-number).
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/connect-enterprise-agreement.png" alt-text="Screenshot of connect to dialog 1.":::
 
-    ![EA Direct customers connect to the Emissions Impact Dashboard.](media/service-connect-to-emissions-impact-dashboard/connect-enterprise-agreement.png)
-
-    #### MCA / MPA (CSP with Azure Plan)
-    Under **EnrollmentIDorBillingAccountID**, enter your billing account ID. For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
-
-    ![MCA/CSP customers connect to the Emissions Impact Dashboard.](media/service-connect-to-emissions-impact-dashboard/connect-microsoft-customer-agreement.png)
-
+    When done, click **Next**.
+    
 1. Connect your account:
 
     * For **Authentication method**, choose **OAuth2**.
@@ -68,7 +93,7 @@ You’ll need your Azure enrollment number or Billing AccountID with valid permi
 
 1. Wait for the view to build, which can take up to 24 hours. Please refresh the dataset after 24 hours.
 
-### Updating process
+## Update the app
 
 When you receive the update notification from Appsource/Power BI about a new version of the app, install that version. The following options are available:
 
@@ -100,14 +125,14 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/updating-app.png" alt-text="Screenshot of Updating App.":::
 
-### Additional resources
+## Additional resources
 
 - [How-to video](https://go.microsoft.com/fwlink/?linkid=2151608)
 - [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
-### FAQ
+## FAQs
 
-#### App setup
+### App setup
 
 **I’m receiving an error at the time of connecting my data with the dashboard. What can I do?**
 
@@ -141,7 +166,7 @@ Being resource and cost efficient in Azure will reduce the environmental impact 
 
 Yes, you will. Before your renewal, be sure to download all historical data and reports you'll need for your records.
 
-#### Methodology
+### Methodology
 
 **What is the methodology behind the tool?**
 
@@ -155,7 +180,7 @@ The estimated carbon calculations are performed based on consumption of Azure se
 
 The estimates include all Azure services in all Azure regions associated with the tenant ID provided during setup.
 
-#### Characterizing on-premises emissions
+### Characterizing on-premises emissions
 
 **Where does the Emissions Impact Dashboard obtain data about my on-premises emissions and operations?**
 
