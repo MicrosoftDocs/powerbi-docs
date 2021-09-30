@@ -503,7 +503,7 @@
       - name: Publish a paginated report
         href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
       - name: Keyboard shortcuts in Power BI Report Builder
-        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context.json
       - name: PDF Rendering Extension conformance to ISO 14289-1
         href: ../report-server/rendering-extension-support.md
     - name: "Deployment pipelines"  
