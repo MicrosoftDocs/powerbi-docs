@@ -47,7 +47,7 @@ highlightedContent:
       itemType: overview
       url: create-reports/insights.md
     # Card
-    - title: View and update your goals in Power BI (preview)
+    - title: View and update goals (preview)
       itemType: how-to-guide
       url: create-reports/service-goals-check-in.md
     # Card
