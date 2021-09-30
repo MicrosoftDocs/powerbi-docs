@@ -96,7 +96,7 @@ The table below lists the visuals displayed in the evidence page according to th
 
 #### Artifacts causing overloading
 
-You can visually identify the different Power BI items that cause overload, by using the **Artifacts causing overloading** timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
+You can visually identify the different Power BI items that cause overload, by using the *Artifacts causing overloading* timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
 
 #### Artifact utilization details
 
@@ -104,29 +104,29 @@ Use this visual to identify the Power BI items that generate impactful overload 
 
 Switch to the *Overloaded artifacts* pivot to identify the items most affected by overload over the past 14 days. The overloading impact can affect either the item that's causing the overload, or other items that are hosted in the same capacity.
 
-The Overloaded time value shown is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
+The *Overloaded* time value shown is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
 
 #### Other timelines
 
-The three timelines displayed on the right side of the evidence page show which activity created an overload penalty, which items were impacted, and how many users were impacted. Item are represented by different colors in each visual.
+The three timelines displayed on the right side of the evidence page show which activity created an overload penalty, which items were impacted, and how many users were impacted. Items are represented by different colors in each visual.
 
-Below are two examples of using the timelines at the left of the evidence page, which can help to establish which action can be taken to resolve an overload.
+Below are two examples of using these timelines, to establish which action can be taken to resolve an overload.
 
 * *Item overload that affects its own performance* - You can identify this by seeing columns with the same color in the *Artifacts causing overload* and *Artifacts overloaded* visuals. This item will likely benefit from optimization to make it run more smoothly.
 
-* *Item overload that affects other items* - When an item causing overload is affecting other items and users in the capacity, you can optimize the item or scale the capacity. In some cases the capacity may not be able to support your level of traffic. You can easily resolve overloading from traffic spikes by using the optional autoscaling feature which will temporarily scale up the capacity. If such occurrences happen frequently, then it's possible an upgrade to a larger capacity is the best solution.
+* *Item overload that affects other items* - When an item causing overload is affecting other items and users in the capacity, you can optimize the item or scale the capacity. In some cases the capacity may not be able to support your level of traffic. You can easily resolve overloading from traffic spikes by using the optional autoscaling feature which will temporarily scale up the capacity. If such occurrences happen frequently, it's most likely that an upgrade to a larger capacity is the best solution.
 
 ### Refresh
 
 This page is designed to help you identify refresh CPU consumption power, and aspects concerning refresh performance.
 
-At the top of the page there's a multi-selection pivot to allow you to focus on refreshing Power BI item types (such as reports, dashboards, and datasets), successful or failed operations, metrics of interest (CPU, Processing time or number of operations) and the type of refresh performed. Each of these pivots filters all the visuals in refresh page.
+At the top of the page there's a multi-selection pivot allowing you to focus on refreshing Power BI item types (such as reports, dashboards, and datasets), successful or failed operations, metrics of interest (CPU, Processing time or number of operations) and the type of refresh performed. Each of these pivots filters all the visuals in the refresh page.
 
 * **Refresh by artifact** - The top visual on the left shows the breakdown of the metric selected in the pivot at the top, in the past 14 days. These breakdowns can indicate which refresh optimization is more likely to reduce the capacity footprint or the data source load:
 
     * When you select *CPU*, you can identify whether to reduce the capacity footprint.
 
-    * When *duration* is selected, you can identify which data source load to reduce.
+    * When you select *duration*, you can identify which data source load to reduce.
 
 * **Matrix table** - The matrix table describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
 
@@ -134,9 +134,16 @@ At the top of the page there's a multi-selection pivot to allow you to focus on 
 
 * **Refresh operations** - On the right side of the refresh page, there's a timeline describing the CPU power, processing time or number of refreshes done each hour over the past 14 days. This visual is designed to help you identify patterns.
 
-#### Release notes
+### Release notes
 
 The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
+
+### Help
+
+This page provides a help summary for each one of the Gen2 metrics app pages. At the top there's a tab for each page in the app. Select a tab to review the help summary.
+
+>[!NOTE]
+>Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
 ## Limitations
 
@@ -147,13 +154,6 @@ The release notes page contains the release notes for each new version of the ap
 * The Refresh page shown in the app doesn't work yet.
 
 * The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
-
-### Help
-
-This page provides a help summary for each one of the Gen2 metrics app pages. At the top there's a tab for each page in the app. Select a tab to review the help summary.
-
->[!NOTE]
->Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
 ## Next steps
 
