@@ -21,43 +21,12 @@ Accurate carbon accounting requires good information from partners, vendors, and
 
 ## Prerequisites
 
-### Before you start
-
-The Emissions Impact Dashboard runs on Power BI Pro. If you don’t have Power BI Pro, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
-
-You’ll need your Azure enrollment number or Billing AccountID with valid permissions. If you don’t have one of these, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
-
-
-The Emissions Impact Dashboard is supported for **EA Direct** and **MCA/MPA (CSP with Azure Plan)** accounts.
-
-* **EA-Direct accounts**: To access the Emissions Impact Dashboard
-    * You must have a Power BI Pro license
-    * You must be an Enrollment Administrator with read/write permissions
-    * You need your company's enrollment number.
-* **MCA/MPA (CSP with Azure Plan) accounts**:  To access the Emissions Impact Dashboard
-    * You must have a Power BI Pro license
-    * You must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner.
-    * You need your company's billing account ID.
-
-You must be an admin with read/write permissions on the Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
-
-### Finding your company’s enrollment number (EA Direct customers only)
-
-1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-
-1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
-
-   ![Find enrollment number](media/service-connect-to-emissions-impact-dashboard/enrollment-number.png)
-
-### Finding your company's billing account ID (MCA/CSP customers only)
-
-1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
-
-1. Select your billing account.
-
-1. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
-
-   ![Find billing account ID](media/service-connect-to-emissions-impact-dashboard/billing-account-id.png)
+To install the Emissions Impact Dashboard in Power BI and connect it to your data, make sure you have the following: before installing the app.
+* A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
+* An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
+* The Emissions Impact Dashboard is supported for EA Direct and MCA/MPA (CSP with Azure Plan) accounts.
+    * If you have an EA Direct account, you must be an Enrollment Administrator with read/write permissions and have your company's [enrollment number](#finding-your-companys-enrollment-number).
+    * If you have an MCA/MPA (CSP with Azure Plan) account, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id)).
 
 ## Install the app
 
@@ -129,6 +98,28 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 - [How-to video](https://go.microsoft.com/fwlink/?linkid=2151608)
 - [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
+
+### Finding your company’s enrollment number (EA Direct customers only)
+
+Follow the steps below to find your company's enrollment number, or ask your organization’s Azure administrator.
+
+1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
+
+1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
+
+   ![Find enrollment number](media/service-connect-to-emissions-impact-dashboard/enrollment-number.png)
+
+### Finding your company's billing account ID (MCA/MPA CSP with Azure Plan customers only)
+
+Follow the steps below to find your company's billing account ID, or ask your organization’s Azure administrator.
+
+1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
+
+1. Select your billing account.
+
+1. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
+
+   ![Find billing account ID](media/service-connect-to-emissions-impact-dashboard/billing-account-id.png)
 
 ## FAQs
 
