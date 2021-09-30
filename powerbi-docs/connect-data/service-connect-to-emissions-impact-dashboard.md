@@ -25,8 +25,8 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 * A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 * An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
 * The Emissions Impact Dashboard is supported for EA Direct and MCA/MPA (CSP with Azure Plan) accounts.
-    * If you have an EA Direct account, you must be an Enrollment Administrator with read/write permissions and have your company's [enrollment number](#finding-your-companys-enrollment-number).
-    * If you have an MCA/MPA (CSP with Azure Plan) account, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id)).
+    * If you have an EA Direct account, you must be an Enrollment Administrator with read/write permissions and have your company's [enrollment number](#finding-your-companys-enrollment-number-ea-direct-customers-only).
+    * If you have an MCA/MPA (CSP with Azure Plan) account, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
 
 ## Install the app
 
@@ -54,21 +54,21 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
     * For **Privacy level setting for this data source**, choose **Organizational**.
     * When done, click **Sign in and connect**.
 
-    ![Screenshot of parameters authentication first dialog.](media/service-connect-to-emissions-impact-dashboard/connecting-1-of-2.png)
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/authentication-dialog.png" alt-text="Screenshot of authentication first dialog.":::
 
-1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained [here](#prerequisites)
+1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained in the [prerequisites](#prerequisites)
 
     ![Pick an account.](media/service-connect-to-emissions-impact-dashboard/pick-account.png)
 
-1. Wait for the view to build, which can take up to 24 hours. Please refresh the dataset after 24 hours.
+1. Wait for the view to build. This can take up to 24 hours. Please refresh the dataset after 24 hours.
 
 ## Update the app
 
-When you receive the update notification from Appsource/Power BI about a new version of the app, install that version. The following options are available:
+Periodically you may receive update notifications from Appsource/Power BI about a new version of the app. When you install the new version, the following options are available:
 
-![Update app dialog.](media/service-connect-to-emissions-impact-dashboard/update-app.png)
+:::image type="content" source="media/service-connect-to-emissions-impact-dashboard/update-app.png" alt-text="Update app dialog":::
 
-Choose **Update the workspace and the app**, then click **Install**. This will install the update on the existing/installed workspace and the app.
+Choose **Update the workspace and the app**, then click **Install**. This will install the update, overwriting the existing/installed workspace and app.
 
 ### Issues
 
