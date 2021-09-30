@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/23/2021
+ms.date: 09/29/2021
 LocalizationGroup: Premium
 ---
 # Understanding Power BI Premium Gen2 (preview)
@@ -24,7 +24,7 @@ Architectural changes in Premium Gen2, especially around how CPU resources are a
 
 The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
 
-* In the original version of Power BI Premium, backend v-cores were dedicated physical computing nodes in the cloud, with differences in the number of v-cores and the amount of onboard memory according to the customer's licensing SKU. Customer administrators were required to keep track of how busy these nodes were, using the *Premium metrics app*. They had to use the app and other tools to determine how much capacity their users required to meet their computing needs.
+* In the original version of Power BI Premium, backend v-cores were reserved physical computing nodes in the cloud, with differences in the number of v-cores and the amount of onboard memory according to the customer's licensing SKU. Customer administrators were required to keep track of how busy these nodes were, using the *Premium metrics app*. They had to use the app and other tools to determine how much capacity their users required to meet their computing needs.
 
 * Each administrator had the ability to tweak and configure capacities to avoid resource contention between workloads (datasets, dataflows, paginated reports, and AI) or other performance impactful effects to make sure capacity performance remained tuned or acceptable.
 

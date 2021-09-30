@@ -45,7 +45,7 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
 
-The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The dedicated identity can be one of the following:
+The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be one of the following:
 
 * **[Service principal](embed-service-principal.md)**
 

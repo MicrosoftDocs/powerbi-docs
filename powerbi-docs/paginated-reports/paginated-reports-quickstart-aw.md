@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 04/02/2021
+ms.date: 09/29/2021
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
@@ -287,13 +287,13 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 
-3. Select the arrow next to **Advanced** and turn on **Dedicated capacity**. 
+3. Select the arrow next to **Advanced** and turn on **Reserved capacity**. 
 
     ![Create workspace in Premium capacity](media/paginated-reports-quickstart-aw/power-bi-paginated-create-workspace-premium-capacity.png)
 
-    If you can't turn it on, you need to ask your Power BI admin to give you permission to add the workspace to the dedicated Premium capacity.
+    If you can't turn it on, you need to ask your Power BI admin to give you permission to add the workspace to the reserved Premium capacity.
 
-4. Choose an **available dedicated capacity for this workspace**, if necessary > **Save**.
+4. Choose an **available reserved capacity for this workspace**, if necessary > **Save**.
     
     ![Diamond Premium icon](media/paginated-reports-quickstart-aw/power-bi-paginated-diamond-icon.png)
 
