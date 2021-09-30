@@ -78,11 +78,11 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 1. Go to the workspace panel and open the app workspace.
 
-1. Open the **Scheduled Refresh** option in the dataset settings and make sure the **Enrollment ID / Billing Account ID** is as per the format mentioned [here](#ea-direct-customers).
+1. Open the **Scheduled Refresh** option in the dataset settings and make sure the [Enrollment ID](#finding-your-companys-enrollment-number-ea-direct-customers-only) or [Billing Account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only) is correct.
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
 
-1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, as shown in step 3, below.
+1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, mentioned in the [prerequisites](#prerequisites).
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/data-source-credentials-parameters.png" alt-text="Screenshot of Data source Credentials Parameters.":::
 
