@@ -32,7 +32,7 @@ landingContent:
           - text: "Use the Gen2 metrics app"
             url: service-premium-gen2-metrics-app.md 
           - text: "Power BI Premium Gen2 FAQ"
-            url: service-premium-gen2-faq.md                     
+            url: service-premium-gen2-faq.yml                     
 
   # Card (optional)
   - title: Get started
