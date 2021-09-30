@@ -4,7 +4,7 @@ description: Learn about the admin roles, tasks, and tools used to manage Power 
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
-ms.custom: contperf-fy20q4
+ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/16/2021
+ms.date: 09/08/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -15,11 +15,15 @@ To connect to an Oracle database with Power BI Desktop, the correct Oracle clien
 
 Supported Oracle versions: 
 - Oracle Server 9 and later
-- Oracle Data Access Client (ODAC) software 11.2 and later
+- Oracle Data Access Client (ODAC) software 11.2 or greater
 
-Before you can connect to an Oracle database using Power BI, you need to install the Oracle client software v8.1.7 or greater on your computer. To install the 32-bit Oracle client software, go to [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html). To install the 64-bit Oracle client, go to [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
+Before you can connect to an Oracle database using Power BI, you need to install the Oracle Data Access Client (ODAC) software 11.2 or greater on your computer. To install the 32-bit ODAC software, go to [32-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) or choose a version you prefer. To install the 64-bit ODAC software, go to [64-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) or choose a version you prefer.  You must choose a windows installer version since xcopy version does not work with Power BI Desktop. 
 
+From the Oracle readme file:
 
+"Machine-wide configuration is no longer supported beginning with ODAC 18c. Administrators can still place ODP.NET in the GAC and add the configuration section handler and DbProviderFactory information to machine.config manually if they wish to override ODP.NET settings for individual applications."
+
+Once Oracle 18.x/19.x is installed the customer must follow the instructions here: [Registering Oracle drivers for Power BI Desktop](/sql/reporting-services/report-data/oracle-connection-type-ssrs#64-bit-and-32-bit-drivers-for-power-bi-desktop)
 
 If you're configuring an Oracle database for Power BI Desktop, On Premises Data Gateway, or Power BI Report Server, consult the information in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article. 
 
@@ -41,6 +45,36 @@ To determine which version of Power BI Desktop is installed, on the **Help** rib
 
 ## Connect to an Oracle database
 After you install the matching Oracle client driver, you can connect to an Oracle database. To connect to an Oracle database with the [on-premises data gateway](/data-integration/gateway/), the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md).
+
+### 64-bit and 32-bit drivers for Power BI Desktop
+
+Power BI Desktop uses **Unmanaged ODP.NET** for authoring Power BI reports. You only need the following steps when using Oracle ODAC drivers 12.2 and later. Otherwise, they install by default to a non-machine-wide configuration for a new Oracle home installation. These steps assume you've installed the ODAC 18.x files to the c:\oracle64 folder for 64-bit Power BI Desktop or the c:\oracle32 folder for 32-bit Power BI Desktop. Follow these steps to register Unmanaged ODP.NET:
+
+#### 64-bit Power BI Desktop
+
+1. On the Oracle download site, install the Oracle 64-bit ODAC Oracle Universal Installer (OUI).
+
+2. Register ODP.NET Unmanaged Client to GAC:
+
+
+    `C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:gac /providerpath:C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
+
+3. Add ODP.NET Unmanaged Client entries to machine.config:
+
+    `C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:config /force /product:odp /frameworkversion:v4.0.30319 /providerpath:C:\oracle64\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
+
+#### 32-bit Power BI Desktop
+
+1. On the Oracle download site, install the [Oracle 32-bit ODAC Oracle Universal Installer (OUI)](https://www.oracle.com/technetwork/topics/dotnet/downloads/odacdev-4242174.html).
+
+2. Register ODP.NET Unmanaged Client to GAC:
+
+    `C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:gac /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
+
+3. Add ODP.NET Unmanaged Client entries to machine.config:
+
+    `C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\OraProvCfg.exe /action:config /force /product:odp /frameworkversion:v4.0.30319 /providerpath:C:\oracle32\product\18.0.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll`
+
 
 ## Capabilities Supported
 * Import
@@ -99,3 +133,7 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 If you see the error message, *Object reference not set*, in the Power BI Gateway when you connect to an Oracle database, follow the instructions in [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md).
 
 If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article.
+
+When connecting to an Oracle database, the Oracle client might need to have [National Language Support](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/nlspg/setting-up-globalization-support-environment.html#GUID-86A29834-AE29-4BA5-8A78-E19C168B690A) correctly configured if any underlying views or queries use functions with locale-specific behavior (such as `TO_DATE` or `TO_CHAR`). On Windows, the `NLS_LANG` parameter can be configured under the registry path `HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\<KEY_HOME_NAME>`. For more information, refer to the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/win.112/e10845/registry.htm#NTQRF415). If you are using Power BI Gateway to connect to Oracle, the `NLS_LANG` setting in the registry will need to be updated on the machine where both gateway and the Oracle client are installed.
+
+

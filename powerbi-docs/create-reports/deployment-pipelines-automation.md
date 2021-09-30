@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 06/14/2021
+ms.date: 09/01/2021
 ---
 
 # Automate your deployment pipeline using APIs and Azure DevOps
@@ -128,6 +128,8 @@ You can also download the entire [PowerBI-Developer-Samples](https://github.com/
 
 * A *service principal* cannot configure *OAuth* credentials. After deploying new items, the signed in *service principal* becomes the owner of any deployed paginated reports and datasets. In such cases, a refresh cannot be completed.
 
+* Deploying dataflows using a *service principal* isn't supported.
+
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
 ## Next steps
@@ -142,7 +144,7 @@ You can also download the entire [PowerBI-Developer-Samples](https://github.com/
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 08/25/2021
 LocalizationGroup: Model your data
 ---
 # Apply DAX basics in Power BI Desktop

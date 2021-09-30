@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/07/2021
+ms.date: 09/07/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -428,7 +428,28 @@ This setting allows organizations to access features that work with Microsoft Te
 
 :::image type="content" source="media/service-admin-portal/power-bi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
 
-Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+Read more about [collaborating in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+
+### Install the Power BI app for Teams automatically
+
+Automatic installation makes it easier to install the Power BI app for Microsoft Teams, without needing to change Microsoft Teams app setup policies. This change speeds up the installation and removes admin hassles of configuring and maintaining infrastructure needed by an app setup policy.
+
+The **Install Power BI app for Microsoft Teams automatically** tenant setting is added to the Power BI admin portal so Power BI admins can control the auto-install behavior. By default, the auto-install is enabled.
+
+The automatic installation happens for a user under the following conditions: 
+
+- The Power BI app for Microsoft Teams is set to **Allowed** in the Microsoft Teams admin portal.
+- The Power BI tenant setting **Install Power BI app for Microsoft Teams automatically** is **Enabled**. 
+- The user has a Microsoft Teams license.
+- The user opens the Power BI service (e.g. app.powerbi.com) in a web browser.
+
+Initially, auto-install applies to new users the first time they visit the Power BI service in a web browser. Automatic installation will start occurring after November 1, 2021 for users who visit the Power BI service and meet the criteria.
+
+When auto-install occurs, users see the following notification in the Power BI service notification pane.
+
+:::image type="content" source="../collaborate-share/media/service-microsoft-teams-app/teams-auto-install-notification.png" alt-text="Notification that the Microsoft Teams app was automatically installed.":::
+
+Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
 ### Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
@@ -604,6 +625,30 @@ Users in the organization can download and install template apps **only** from [
 Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
+
+## Share data with your Microsoft 365 services
+
+### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area
+
+:::image type="content" source="media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch-new.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
+
+This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
+
+Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may need to process and/or store Power BI data outside the geographic location of the Power BI tenant the data is located in.
+
+By enabling the switch, you, as a Power BI administrator, are explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, certain information about your Power BI content may potentially flow outside the geographic region where it is located.
+
+The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**.
+
+References:
+* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ## Q&A settings
 

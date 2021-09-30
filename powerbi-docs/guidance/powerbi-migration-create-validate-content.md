@@ -48,7 +48,7 @@ The essential activities related to development of an Import dataset include:
 - Define [measures](../transform-model/desktop-measures.md).
 - Set up [row-level security](../admin/service-admin-rls.md), if necessary.
 - Configure synonyms and [optimize Q&A](../natural-language/q-and-a-best-practices.md).
-- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../transform-model/desktop-aggregations.md).
+- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../admin/aggregations-auto.md).
 
 > [!TIP]
 > If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. It will make deployment, described in [Stage 5](powerbi-migration-deploy-support-monitor.md), significantly easier.

@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 01/02/2020
 ms.custom: video-Qgam9M8I0xA, video-IMAsitQ2cAc, video-ByIUx-HmQbw
 LocalizationGroup: Get started
+ROBOTS: NOINDEX
 ---
 # Power BI Desktop videos
 
@@ -17,13 +18,22 @@ Power BI Desktop has a [YouTube channel](https://www.youtube.com/playlist?list=P
 
 See a high-level overview of Power BI Desktop, from getting data and building a report, to sharing your report with others: 
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Qgam9M8I0xA" frameborder="0" allowfullscreen></iframe>
 
 Learn how to build stunning reports using Power BI Desktop:
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="500" height="281" src="https://www.youtube.com/embed/IMAsitQ2cAc" frameborder="0" allowfullscreen></iframe> 
 
 Import, reshape, and transform data using Power Query Editor:
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/ByIUx-HmQbw" frameborder="0" allowfullscreen></iframe> 
 

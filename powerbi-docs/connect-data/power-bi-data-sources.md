@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 07/22/2021
+ms.date: 09/22/2021
 ---
 
 # Power BI data sources
@@ -84,7 +84,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
-| IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
+| IBM DB2 | Yes | Yes | Yes <sup>7</sup> | Yes | No | Yes |
 | IBM Informix Database | Yes | Yes | No | Yes | No | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes | No |
 | Impala | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -101,7 +101,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
 | MailChimp | Yes | Yes | No | No | No | No |
-| MariaDB | Yes | Yes | Yes | No | Yes | No |
+| MariaDB | Yes | Yes | Yes | Yes | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
@@ -185,6 +185,9 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>5</sup> Required for .html, .xls, and Access Databases
 
 <sup>6</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
+<sup>7</sup> DirectQuery works properly with the IBM DB2 connecter in Power BI Desktop, however, DirectQuery does *not* work with IBM DB2 when using the IBM driver to connect to IBM DB2. 
+
 
 <sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
 

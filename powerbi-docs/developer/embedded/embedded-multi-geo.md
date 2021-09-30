@@ -68,13 +68,7 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 ## Limitations and considerations
 
-* Confirm that any movement you initiate between regions follows all corporate and government compliance requirements before initiating data transfer.
-
-* A cached query stored in a remote region stays in that region at rest. However, other data in transit can go back and forth between different geographies.
-
-* When moving data from one region to another in a Multi-Geo environment, the source data may stay in the region from which the data was moved for up to 30 days. During that time, users don't have access to it. It's removed from this region and destroyed within 30 days.
-
-* Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
+The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [limitations and considerations](../../admin/service-admin-premium-multi-geo.md#limitations-and-considerations).
 
 ## Next steps
 

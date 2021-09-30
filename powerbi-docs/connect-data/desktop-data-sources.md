@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 09/17/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -85,11 +85,13 @@ The **Database** category provides the following data connections:
 * Snowflake
 * Essbase
 * Actian (Beta)
+* Amazon Athena (Beta)
 * AtScale cubes
 * BI Connector
 * Data Virtuality LDW
 * Denodo
-* Dremio
+* Dremio Software
+* Dremio Cloud (Beta)
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -98,7 +100,7 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB (Beta)
 * MarkLogic
-* Amazon Athena (Beta)
+* TIBDO(R) Data Virtualization (Beta)
 
 
 > [!NOTE]
@@ -116,7 +118,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI dataflows
 * Common Data Service (Legacy)
 * Dataverse
-* Power Platform dataflows (Beta)
+* Dataflows
 
 
 The following image shows the **Get Data** window for **Power Platform**.
@@ -159,7 +161,6 @@ The **Online Services** category provides the following data connections:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
-* Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Boards only)
 * Azure DevOps Server (Boards only)
 * Salesforce Objects
@@ -202,7 +203,6 @@ The **Online Services** category provides the following data connections:
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-* Dynamics 365 Customer Insights (Beta)
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -248,7 +248,6 @@ The **Other** category provides the following data connections:
 * SurveyMonkey (Beta)
 * Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
-* TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)

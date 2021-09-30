@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 09/14/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -16,17 +16,16 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Webinar Series: Mastering Data Modeling with Power BI  
-Episode 3 - Data Modeling for Experts with Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Register to watch on September 8th, 2021 10AM – 11AM Pacific Time]( https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
-
-
 [Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Webinar Series: Mastering Data Modeling with Power BI  
+Episode 3 - Data Modeling for Experts with Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Register to watch on September 8th, 2021 10AM – 11AM Pacific Time]( https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
 
 **Behind the Scenes with the Power BI Team**  
 by Jeroen ter Heerdt and Miguel Martinez  

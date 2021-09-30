@@ -74,6 +74,9 @@ To use sensitivity labels in Power BI Desktop:
 
 Watch a short video on applying sensitivity labels and then try it out yourself.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M5Gj]
 
 To apply a sensitivity label on the file you're working on, click the sensitivity button in the home tab and choose the desired label from the menu that appears.

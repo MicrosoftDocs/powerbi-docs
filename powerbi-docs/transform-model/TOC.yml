@@ -16,21 +16,21 @@
       href: desktop-tutorial-create-calculated-columns.md
   - name: Concepts
     expanded: true
-    items: 
+    items:
+    - name: "Work with Modeling view"
+      href: desktop-modeling-view.md  
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
-    - name: "Work with Modeling view"
-      href: desktop-modeling-view.md      
-    - name: "Manage aggregations"
-      href: desktop-aggregations.md      
-    - name: "Use composite models"
-      href: desktop-composite-models.md
-    - name: "Apply many-many relationships"
+    - name: "Many-to-many relationships"
       href: desktop-many-to-many-relationships.md
-    - name: "Manage storage mode"
-      href: desktop-storage-mode.md
     - name: "Enable bidirectional cross-filtering"
       href: desktop-bidirectional-filtering.md
+    - name: "Composite models"
+      href: desktop-composite-models.md
+    - name: "User-defined aggregations"
+      href: aggregations-advanced.md   
+    - name: "Manage storage mode"
+      href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
   - name: Dataflows

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 06/21/2021
+ms.custom: intro-installation
 ---
 
 # Install, share, and update template apps in your organization

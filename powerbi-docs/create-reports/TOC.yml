@@ -176,6 +176,8 @@
         href: desktop-insights-find-where-different.md
       - name: "Create buttons"
         href: desktop-buttons.md
+      - name: "Customize buttons"
+        href: power-bi-customize-button.md
       - name: "Create drillthrough buttons"
         href: desktop-drill-through-buttons.md
       - name: "Use the drillthrough feature"
@@ -356,16 +358,20 @@
         href: ../visuals/power-bi-visualization-waterfall-charts.md
     - name: Artificial intelligence
       items: 
-      - name: "Quick Insights"
-        href: service-insights.md
-      - name: "Optimize data for Quick Insights"
-        href: service-insights-optimize.md
-      - name: "Types of Quick Insights"
-        href: ../consumer/end-user-insight-types.md
-      - name: "View automatic insights for dashboard tiles"
-        ../consumer/href: end-user-insights.md
-      - name: "Use AI Insights (preview)"
-        href: ../transform-model/desktop-ai-insights.md        
+      - name: "Insights(preview)"
+        href: insights.md
+      - name: "Transform your data with AI"
+        items:
+        - name: "Use AI Insights in Desktop"
+          href: ../transform-model/desktop-ai-insights.md  
+        - name: "Use Cognitive Services"
+          href: ../connect-data/service-tutorial-use-cognitive-services.md
+        - name: "Build a machine learning model"
+          href: ../connect-data/service-tutorial-build-machine-learning-model.md
+        - name: "Consume a machine learning model in a report"
+          href: ../connect-data/service-aml-integrate.md
+        - name: "Use Machine Learning and Cognitive Services with dataflows"
+          href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
       - name: "Anomaly detection"
         href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Decomposition tree visuals"
@@ -373,15 +379,7 @@
       - name: "Key influencers visuals"
         href: ../visuals/power-bi-visualization-influencers.md
       - name: "Smart narratives"
-        href: ../visuals/power-bi-visualization-smart-narrative.md
-      - name: "Use Cognitive Services"
-        href: ../connect-data/service-tutorial-use-cognitive-services.md
-      - name: "Build a machine learning model"
-        href: ../connect-data/service-tutorial-build-machine-learning-model.md
-      - name: "Consume a machine learning model in a report"
-        href: ../connect-data/service-aml-integrate.md
-      - name: "Use Machine Learning and Cognitive Services with dataflows"
-        href: ../transform-model/dataflows/dataflows-machine-learning-integration.md  
+        href: ../visuals/power-bi-visualization-smart-narrative.md 
       - name: Python
         items: 
         - name: "Run Python scripts"
@@ -404,6 +402,16 @@
           href: ../connect-data/desktop-r-ide.md
         - name: "Create visuals with R packages"
           href: ../connect-data/service-r-packages-support.md
+      - name: "Quick Insights"
+        items:
+        - name: "Quick Insights"
+          href: service-insights.md
+        - name: "Optimize data for Quick Insights"
+          href: service-insights-optimize.md
+        - name: "Types of Quick Insights"
+          href: ../consumer/end-user-insight-types.md
+        - name: "View automatic insights for dashboard tiles"
+          href: ../consumer/end-user-insights.md
     - name: Natural language Q&A
       items: 
       - name: "Create a Q&A visual in a report"
@@ -495,7 +503,7 @@
       - name: Publish a paginated report
         href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
       - name: Keyboard shortcuts in Power BI Report Builder
-        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context.json
       - name: PDF Rendering Extension conformance to ISO 14289-1
         href: ../report-server/rendering-extension-support.md
     - name: "Deployment pipelines"  
@@ -503,7 +511,7 @@
       - name: "Get started"
         href: deployment-pipelines-get-started.md
       - name: "Troubleshooting"
-        href: deployment-pipelines-troubleshooting.md      
+        href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility
       items:       
       - name: "Design accessible reports"
