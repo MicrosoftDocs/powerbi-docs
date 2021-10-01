@@ -255,8 +255,8 @@
         href: service-connect-to-github.md
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Microsoft Sustainability Calculator"
-        href: service-connect-to-microsoft-sustainability-calculator.md
+      - name: "Emissions Impact Dashboard"
+        href: service-connect-to-emissions-impact-dashboard.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
       - name: "Power BI Premium Capacity Metrics"
