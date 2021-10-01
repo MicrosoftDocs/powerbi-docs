@@ -77,7 +77,7 @@ Selecting a data point on a line chart cross-highlights and cross-filters the ot
 
 On a line chart, a single data point is the intersection of a point on the X-axis and Y-axis. When you select a data point, Power BI adds markers indicating which point(for a single line) or points (if there are two or more lines) are the source for the cross-highlighting and cross-filtering of the other visuals on the report page. If your visual is very dense, Power BI will select the closest point to where you click on the visual.
 
-In this example, we've selected a data point that encompasses: July 2014, %Units Market Share R12 of 33.16 and %Units Market Share of 34.74.
+In this example, we've selected a data point that encompasses: July 2014, % Units Market Share R12M of 33.16 and % Units Market Share of 34.74.
 
 :::image type="content" source="media/power-bi-line-charts/power-bi-single-select.png" alt-text="Select a single data point on a line chart.":::
 
