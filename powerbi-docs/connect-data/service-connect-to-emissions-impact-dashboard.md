@@ -30,15 +30,21 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 
 ## Install the app
 
-1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
+1. Click the following link to get to the app: [Emissions Impact Dashboard template app](https://go.microsoft.com/fwlink/?linkid=2151690). 
+
+1. On the AppSource page for the app, select **GET IT NOW**.
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/appsource.png" alt-text="Screenshot of Emissions Impact Dashboard on AppSource.":::
 
     You can also search for the app in Power BI.
 
-    ![Search for the Emissions Impact Dashboard on AppSource.](media/service-connect-to-emissions-impact-dashboard/power-bi.png)
+1. When prompted, click **Install**.
 
-1. Open the app.
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/install-app.png" alt-text="Screenshot of install dialog.":::
+
+1. When the app finishes installing, it will appear on your Power BI Apps page. Click on the app and open it.
+
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/app-on-app-page.png" alt-text="Screenshot of app installed on app page.":::
 
 1. Select **Connect your data**.
 
