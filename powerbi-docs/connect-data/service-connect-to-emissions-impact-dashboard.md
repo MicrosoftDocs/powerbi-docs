@@ -6,7 +6,7 @@ ms.author: sericks
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 10/01/2021
 LocalizationGroup: Connect to services
 ---
 
@@ -48,7 +48,9 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 
 1. Select **Connect your data**.
 
-1. In the **Connect to Emissions Impact Dashboard** dialog, under **EnrollmentIDorBillingAccountID**, enter either your enrollment number (EA Direct customers) or billing account ID (MCA/MPA (CSP with Azure Plan) customers)
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/connect-your-data.png" alt-text="Screenshot of connect your data.":::
+
+1. In the **Connect to Emissions Impact Dashboard** dialog that appears, under **EnrollmentIDorBillingAccountID**, enter either your enrollment number (EA Direct customers) or billing account ID (MCA/MPA (CSP with Azure Plan) customers)
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/connect-enterprise-agreement.png" alt-text="Screenshot of connect to dialog 1.":::
 
