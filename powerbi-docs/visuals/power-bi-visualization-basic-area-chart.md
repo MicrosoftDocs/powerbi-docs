@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/29/2021
+ms.date: 10/01/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use basic area charts
