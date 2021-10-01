@@ -171,11 +171,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/service-connect-to-bing.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
@@ -2576,11 +2571,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-connect-to-office365mon.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-office365mon",
             "redirect_document_id": true
@@ -4039,7 +4029,23 @@
             "source_path": "powerbi-docs/admin/service-govde-faq.yml",
             "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": true
         }
+
 
     ]           
 }
