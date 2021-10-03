@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 Metadata scanning facilitates governance over your organization's Power BI data by making it possible to quickly catalog and report on all the metadata of your organization's Power BI artifacts. It accomplishes this using a set of Admin REST APIs that are collectively known as the scanner APIs. With the scanner APIs, you can extract both general information such as artifact name, owner, sensitivity label, endorsement status, and last refresh, as well as more detailed metadata such as dataset table and column names, measures, DAX expressions, mashup queries, etc.
 
-The following are the scanner APIs:
+The following are the scanner APIs. They support both public and sovereign clouds.
 
 * [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces)
 * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info)
