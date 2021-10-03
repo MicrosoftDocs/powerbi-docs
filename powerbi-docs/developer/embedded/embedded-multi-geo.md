@@ -70,8 +70,6 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 * The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [limitations and considerations](../../admin/service-admin-premium-multi-geo.md#limitations-and-considerations).
 
-* Query text and query result traffic for imported and DirectQuery data models does not transit through the home region. The report metadata does still come from the home region, and certain DNS routing states may take such traffic out of the region.
-
 ## Next steps
 
 >[!div class="nextstepaction"]
