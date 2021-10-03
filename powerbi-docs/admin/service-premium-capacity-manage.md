@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/30/2021
+ms.date: 09/29/2021
 ms.custom:
 LocalizationGroup: Premium
 ---
@@ -35,10 +35,13 @@ When creating a Premium capacity, administrators are required to define:
 
 At least one Capacity Admin must be assigned. Users assigned as Capacity Admins can:
 
-- Assign workspaces to the capacity.
-- Manage user permissions, to add additional Capacity Admins or users with assignment permissions (to enable them to assign workspaces to the capacity).
-- Manage workloads, to configure maximum memory usage for paginated reports and dataflows workloads.
-- Restart the capacity, to reset all operations because of a system overload.
+* Remove assigned workspaces from the capacity
+* Manage user permissions and assign:
+    * Additional Capacity Admins
+    * Contributors - Users who are allowed to assign workspaces to that capacity (Capacity Admins are automatically also Contributors)
+* Manage Autoscale settings for that capacity
+* Setup email alerts for resource utilization level
+* Track capacity resources usage using the dedicated out of the box app 
 
 Capacity Admins cannot access workspace content unless explicitly assigned in workspace permissions. They also don't have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs, or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Admins are assigned on a per capacity basis, ensuring that they can only view and manage capacities to which they are assigned.
 
@@ -50,13 +53,15 @@ A Premium capacity can be assigned to a region other than the home region of the
 
 Power BI service administrators and Global Administrators can modify Premium capacities. Specifically, they can:
 
-- Change the capacity size to scale-up or scale-down resources.
-- Add or remove Capacity Admins.
-- Add or remove users that have assignment permissions.
-- Add or remove additional workloads.
-- Change regions.
+* Change the capacity size to scale-up or scale-down resources.
+* Add or remove Capacity Admins.
+* Add or remove users that have assignment permissions.
+* Change regions.
 
-Assignment permissions are required to assign a workspace to a specific Premium capacity. The permissions can be granted to the entire organization, specific users, or groups.
+>[!NOTE]
+>Service and global administrators do not have access to capacity metrics unless explicitly added as capacity admins.
+
+Contributor assignment permissions are required to assign a workspace to a specific Premium capacity. The permissions can be granted to the entire organization, specific users, or groups.
 
 By default, Premium capacities support workloads associated with running Power BI queries. Premium capacities also support additional workloads: **AI (Cognitive Services)**, **Paginated Reports**, and **Dataflows**. Each workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. It's important to understand that increasing maximum memory allocations can impact the number of active models that can be hosted and the throughput of refreshes. 
 
@@ -64,7 +69,11 @@ Memory is dynamically allocated to dataflows, but is statically allocated to pag
 
 For Premium Gen2, no memory settings or updates are required. All workloads have all the memory they need, within the limits of your capacity SKU.
 
-Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region.
+Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region. 
+
+Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region. 
+
+Capacities have limited resources, defined by each capacity SKU. Resources consumption by Power BI items (such as reports and dashboards) across capacities can be tracked using the [metrics app](service-premium-install-gen2-app.md).
 
 ### Assigning workspaces to capacities
 
@@ -81,11 +90,33 @@ You can enable Premium capabilities in a workspace by setting the proper license
 
 ![Using the Workspace pane to assign a workspace to a Premium capacity](media/service-premium-capacity-manage/assign-workspace-capacity-02.png)
 
-Workspace admins can remove a workspace from a capacity (to shared capacity) without requiring assignment permission. Removing workspaces from dedicated capacities effectively relocates the workspace to shared capacity. Note that removing a workspace from a Premium capacity may have negative consequences resulting, for example, in shared content becoming unavailable to Power BI Free licensed users, or the suspension of scheduled refresh when they exceed the allowances supported by shared capacities.
+Workspace admins can remove a workspace from a capacity (to shared capacity) without requiring assignment permission. Removing workspaces from reserved capacities effectively relocates the workspace to shared capacity. Note that removing a workspace from a Premium capacity may have negative consequences resulting, for example, in shared content becoming unavailable to Power BI Free licensed users, or the suspension of scheduled refresh when they exceed the allowances supported by shared capacities.
 
 In the Power BI service, a workspace assigned to a Premium capacity is easily identified by the diamond icon that adorns the workspace name.
 
 ![Identifying a workspace assigned to a Premium capacity](media/service-premium-capacity-manage/premium-diamond-icon.png)
+
+### Planning your capacity size in advance
+
+Different Premium capacity SKUs have different amounts of resources that are made available to support Power BI items (such as reports, dashboards and datasets) processed by each capacity. The SKUs differentiate by the number of standard v-cores they have. The most influential resources to consider when sizing in advance are:
+
+* **CPU power** – The amount of CPU power each capacity has is a function of its base v-core and the number of [autoscale](service-premium-auto-scale.md) cores it has (purchased in-advance and allocated in advance during capacity instantiation). The CPU power exhaustion of a capacity is measured by aggregating CPU power used across all the Power BI items it processes. The more operations done against more items, the higher the CPU spend.
+
+* **Item size** - The size of a Power BI item relates to the amount of data available for processing inside the item. Size can have multiple dimensions depending on the item. Datasets size for example is determined by the footprint the dataset has in memory while being processed. Different items may have size measures that are defined differently. The size footprint across the capacity, unlike CPU, is not aggregated across all active items but is evaluated per item only. This means a capacity can support multiple items running concurrently if neither of those items exceeds the capacity size limit.
+
+Due to the individually enforced nature of a Power BI item's size measure, the size usually dictates how big a capacity should be. For example, if you have a P1 SKU, datasets are supported up to a [limit of 25Gb](service-premium-what-is.md#capacity-nodes). As long as your datasets do not exceed this value, the SKU should meet your needs. You can evaluate a typical dataset’s size by measuring the memory footprint of the Power BI Desktop tool. A a typical item's usage pattern will dictate its CPU power spend, which if exhausted can severely degrade report interaction performance for end-users. Therefore, once you have a typical report for evaluation, it will be beneficial to use that report in a load test, and evaluate the results to determine whether a higher SKU size or turning on autoscale is required.
+
+#### How to decide when to turn on autoscale? 
+
+Using the Power BI Premium [Capacity Utilization and Metrics app](service-premium-install-gen2-app.md) will indicate cases of overload impact in the *overloaded minutes* visual, in the overview page. You can evaluate the severity of the impact of those overload minutes by using the evidence page, where you can track how much impact an overload moment had, what Power BI items it impacted and how many users got affected. If based on your evaluation the impact is too high, you should turn on autoscale.  
+
+#### How to decide when to scale up to a higher SKU?
+
+ There are two different indicators that suggest you need to scale up your capacity:  
+
+* Using autoscale beyond a certain degree, is not economically viable. If your autoscaling patterns lead you to consume more than 25% of your capacity size on a regular basis, it may be less costly to upgrade your capacity to a higher SKU since your capacity CPU Power requirements are significantly higher than the capacity’s original power. Here we consider over 25% as both how many cores got added and how long were they added for. For example, a P1 SKU with 8 v-cores that uses auto scale in a way that is equivalent to two additional cores consistently applied, will cost the same as a P2.
+
+* The size of your Power BI items approach or exceed capacity limits. If the item size of any of the items reported in the metrics app approaches your capacity limit or exceeds it, operations against that item will fail. Therefore if a critical item approaches those limits (80% of the capacity size) it is advisable to consider upgrading the capacity in advance, to avoid interruption of service should that item exceed the capacity limit.
 
 ## Monitoring capacities
 

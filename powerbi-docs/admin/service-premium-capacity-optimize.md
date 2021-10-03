@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 09/29/2021
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -43,8 +43,8 @@ When trying to get the best utilization and performance, there are some recommen
 
   ![Separating business critical and Self-Service BI into different capacities](media/service-premium-capacity-optimize/separate-capacities.png)
 
-- If sharing content only with Power BI Pro users, there may be no need to store the content in a dedicated capacity.
-- Use dedicated capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
+- If sharing content only with Power BI Pro users, there may be no need to store the content in a reserved capacity.
+- Use reserved capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
 
 ### Addressing common questions
 

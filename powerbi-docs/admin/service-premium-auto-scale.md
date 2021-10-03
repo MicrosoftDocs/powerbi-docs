@@ -28,7 +28,8 @@ To enable Autoscale, the following steps need to be completed:
 The following sections describe the steps in detail.
 
 >[!NOTE]
->[Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
+>* Autoscale isn’t available for Microsoft 365 Government Community Cloud (GCC), due to the use of the commercial Azure cloud.
+>* [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
 
 ## Configure an Azure subscription to use with Autoscale
 
