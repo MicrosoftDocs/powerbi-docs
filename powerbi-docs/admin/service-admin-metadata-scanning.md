@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 08/18/2021
+ms.date: 10/03/2021
 LocalizationGroup: Administration
 ---
 
