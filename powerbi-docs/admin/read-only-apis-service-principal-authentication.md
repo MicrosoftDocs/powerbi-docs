@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/03/2021
+ms.date: 10/03/2021
 ms.author: painbar
 ms.custom:
 
@@ -23,7 +23,10 @@ When you create an Azure AD app, a [service principal object](/azure/active-dire
 To enable service principal authentication for Power BI read-only APIs, follow these steps:
 
 1. [Create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have an Azure AD app you want to use. Take note of the App-Id for later steps.
-2. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
+
+    >[!NOTE]
+    > Make sure the app you use doesn't have any Power BI admin roles set on it in Azure portal.
+1. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
     Make sure to select **Security** as the Group type.
 
     ![Screenshot of new group creation dialog in Azure portal.](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
