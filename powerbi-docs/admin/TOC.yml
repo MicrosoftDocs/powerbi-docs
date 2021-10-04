@@ -48,7 +48,7 @@
           href: service-premium-gen2-metrics-app.md
       - name: Power BI Premium Gen2 FAQ
         href: service-premium-gen2-faq.yml
-      - name: Power BI Premium Per User (preview)
+      - name: Power BI Premium Per User
         href: service-premium-per-user-faq.yml
       - name: Power BI Premium (original version)
         items:
