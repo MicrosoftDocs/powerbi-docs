@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/15/2020
+ms.date: 10/04/2021
 ---
 
 # What are Power BI template apps?
@@ -108,6 +108,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Feature | Known Limitation |
 |---------|---------|
 |Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
+|Contents:  Reports   | A single template app cannot include more than twenty reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed (in other words, no support for push or streaming datasets) |
 |Contents: Dataflows | Not supported: Dataflows |
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
