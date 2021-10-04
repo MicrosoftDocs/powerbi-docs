@@ -32,8 +32,6 @@ To install the Gen2 metrics app, follow these steps:
 
 1. Go to [AppSource > Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport) and select **Get it now**.
 
-   :::image type="content" source="media/service-premium-install-gen2-app/app-get-it-now.png" alt-text="Screen capture of app download with get it now button highlighted.":::
-
 1. If prompted, sign in to AppSource using your work or school account and complete the registration screen. The app will take you to the Power BI Service to complete the process. Select **Install** to continue.
 
 1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
