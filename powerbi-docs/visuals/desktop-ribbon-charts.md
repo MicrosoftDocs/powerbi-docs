@@ -41,9 +41,9 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
     Ribbon charts connect a category of data over the visualized time continuum using ribbons, enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
-1. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This year sales** > **Value**.  
+1. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This Year Sales** > **Value**.  
 
-    :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot shoing the selected fields.":::
+    :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot showing the selected fields.":::
 
     Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **Axis** well.
 
