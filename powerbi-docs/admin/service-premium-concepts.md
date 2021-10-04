@@ -10,7 +10,6 @@ ms.topic: conceptual
 ms.date: 10/04/2021
 LocalizationGroup: Premium
 ---
-
 # Premium Gen2 capacity load evaluation
 
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis.
@@ -64,10 +63,6 @@ Autoscale always ensures that no single interactive operation can account for al
 ## Using Premium Gen2 without autoscale
 
 If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution. 
-
-The amount of delay is proportionate to the amount of overload detected, as follows:
-* Overload of 100% incurs a delay of 20 seconds
-* Overloads smaller than 10% are ignored
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 
