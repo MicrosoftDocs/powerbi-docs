@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/01/2021 #Required; mm/dd/yyyy format.
+  ms.date: 10/04/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -23,9 +23,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started with Power BI Desktop
+    - title: Get Power BI Desktop
       itemType: get-started
-      url: fundamentals/desktop-getting-started.md
+      url: fundamentals/desktop-get-the-desktop.md
     # Card
     - title: Incremental refresh for datasets
       itemType: concept
@@ -35,21 +35,21 @@ highlightedContent:
       itemType: reference
       url: transform-model/desktop-external-tools.md
     # Card
-    - title: Create a Power BI visual using React
+    - title: Embed a Power BI report in an application
       itemType: tutorial
-      url: developer/visuals/create-react-visual.md
+      url: developer/embedded/embed-customer-app.md
     # Card
-    - title: Create a Power Automate visual for Power BI (preview)
-      itemType: how-to-guide
-      url: create-reports/power-bi-automate-visual.md
+    - title: Introducing Power BI Premium Gen2
+      itemType: whats-new
+      url: admin/service-premium-gen2-what-is.md
     # Card
-    - title: Power BI embedded analytics client APIs
+    - title: Find anomalies & trends with Insights (preview)
       itemType: overview
-      url: /javascript/api/overview/powerbi/
+      url: create-reports/insights.md
     # Card
-    - title: Mandatory label policy for content (preview)
-      itemType: concept
-      url: admin/service-security-sensitivity-label-mandatory-label-policy.md
+    - title: Stay on top of your goals (preview)
+      itemType: how-to-guide
+      url: create-reports/service-goals-check-in.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -65,9 +65,9 @@ conceptualContent:
         - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is Power BI?
-        - url: fundamentals/power-bi-overview.md
-          itemType: overview
-          text: What is the Power BI service?
+        - url: fundamentals/desktop-getting-started.md
+          itemType: get-started
+          text: Get started with Power BI Desktop
         - url: fundamentals/desktop-latest-update.md
           itemType: overview
           text: What's new in Power BI?
@@ -110,15 +110,15 @@ conceptualContent:
     # Card
     - title: Develop in Power BI
       links:
-        - url: developer/embedded/index.yml
+        - url: developer/embedded/embedded-analytics-power-bi.md
           itemType: overview
-          text: Embedded analytics
+          text: What is Power BI embedded analytics?
         - url: developer/visuals/index.yml
           itemType: overview
           text: Power BI Embedded Generation 2 (preview)
-        - url: developer/embedded/power-bi-embedded-generation-2.md
+        - url: developer/visuals/develop-power-bi-visuals.md
           itemType: overview
-          text: Automation
+          text: Develop your own Power BI visual
       # footerLink (optional)
       footerLink:
         url: developer/index.yml
@@ -180,9 +180,9 @@ conceptualContent:
         - url: paginated-reports/report-builder-shared-datasets.md
           itemType: concept
           text: Create a paginated report based on a shared dataset
-        - url: create-reports/service-goals-create.md
+        - url: create-reports/power-bi-customize-button.md
           itemType: how-to-guide
-          text: Create scorecards and goals (preview)
+          text: Customize buttons in reports
       # footerLink (optional)
       footerLink:
         url: create-reports/index.yml
@@ -220,6 +220,38 @@ conceptualContent:
         url: collaborate-share/index.yml
         text: See more
     # Card
+    - title: Enterprise
+      links:
+        - url: admin/service-premium-gen2-what-is.md
+          itemType: overview
+          text: What is Power BI Premium Gen2?
+        - url: admin/service-admin-power-bi-security.md
+          itemType: concept
+          text: Security
+        - url: admin/service-security-data-protection-overview.md
+          itemType: concept
+          text: Data protection
+      # footerLink (optional)
+      footerLink:
+        url: admin/index.yml
+        text: See more
+    # Card
+    - title: Power BI Premium Gen2
+      links:
+        - url: admin/service-premium-gen2-what-is.md
+          itemType: overview
+          text: What is Power BI Premium Gen2?
+        - url: admin/service-premium-concepts.md
+          itemType: concept
+          text: Understanding Power BI Premium Gen2
+        - url: admin/service-premium-gen2-metrics-app.md
+          itemType: concept
+          text: Use the Gen2 metrics app
+      # footerLink (optional)
+      footerLink:
+        url: admin/index.yml
+        text: See more
+    # Card
     - title: Power BI in the mobile apps
       links:
         - url: consumer/mobile/mobile-apps-for-mobile-devices.md
@@ -234,22 +266,6 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: consumer/mobile/index.yml
-        text: See more
-    # Card
-    - title: Enterprise
-      links:
-        - url: admin/service-premium-what-is.md
-          itemType: overview
-          text: What is Power BI Premium?
-        - url: admin/service-admin-power-bi-security.md
-          itemType: concept
-          text: Security
-        - url: admin/service-security-data-protection-overview.md
-          itemType: concept
-          text: Data protection
-      # footerLink (optional)
-      footerLink:
-        url: admin/index.yml
         text: See more
     # Card
     - title: Best practices guidance
