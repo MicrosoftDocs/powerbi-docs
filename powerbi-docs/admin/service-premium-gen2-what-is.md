@@ -126,7 +126,6 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 The following known limitations currently apply to Premium Gen2:
 
-* Premium Gen2 capacity utilization can't be tracked in the metrics app.
 * If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools).
 * There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
 * Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
