@@ -11,7 +11,7 @@ metadata:
   ms.date: 06/16/2021
   LocalizationGroup: Premium
     
-title: Power BI Premium Gen2 FAQ (preview)
+title: Power BI Premium Gen2 FAQ
 summary: |
   This article addresses questions frequently asked about Power BI Premium Gen2. For an overview, see [What is Power BI Premium Gen2? (preview)](service-premium-gen2-what-is.md).
   
@@ -23,14 +23,14 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          Power BI Premium Gen2 (preview)
+          Power BI Premium Gen2
         answer: |
           This section addresses questions and answers for Power BI Premium Gen2, which is currently in preview. 
 
       - question: |
           What is Power BI Premium Generation 2?
         answer: |
-          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
           
       - question: |
           How can I control the costs of autoscaling?
