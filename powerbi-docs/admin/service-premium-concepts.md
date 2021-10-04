@@ -1,5 +1,5 @@
 ---
-title: Understanding Power BI Premium Gen2 (preview)
+title: Understanding Power BI Premium Gen2
 description: Understand how Power BI Premium Gen2 operates, with concepts about its main features.
 author: davidiseminger
 ms.author: davidi
@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/29/2021
+ms.date: 10/04/2021
 LocalizationGroup: Premium
 ---
-# Understanding Power BI Premium Gen2 (preview)
+# Understanding Power BI Premium Gen2
 
 **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience, is an improved and architecturally redesigned generation of Power BI Premium. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 
@@ -102,10 +102,6 @@ Autoscale always ensures that no single interactive operation can account for al
 ## Using Premium Gen2 without autoscale
 
 If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution. 
-
-The amount of delay is proportionate to the amount of overload detected, as follows:
-* Overload of 100% incurs a delay of 20 seconds
-* Overloads smaller than 10% are ignored
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 
