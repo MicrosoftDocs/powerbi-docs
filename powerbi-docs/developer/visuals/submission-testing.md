@@ -1,6 +1,6 @@
 ---
 title: Testing submissions of Power BI visuals
-description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases.
+description: This article describes test cases that your visual must pass before publishing to AppSource. There are also optional test cases.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 08/09/2021
 ---
 
-# Test a Power BI visual before submission
+# Test a Power BI visual before submitting it
 
 Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. It is important to test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
@@ -20,7 +20,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-When testing or updating an already published visual, make sure you're using the correct version of the visual **without changing the GUID**. You can override the AppSource version with a local file version by enabling Developer mode in either Power BI Desktop, or Power BI service.
+When testing or updating a visual that is already published, make sure you're using the correct version of the visual **without changing the GUID**. You can override the AppSource version with a local file version by enabling Developer mode in either Power BI Desktop, or Power BI service.
 
 >[!IMPORTANT]
 >When testing or debugging a new version of a visual that is available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
@@ -37,7 +37,7 @@ To enable Developer mode, follow these steps:
 4. In the Options window, from the CURRENT FILE list, select **Report settings**.
 5. In Developer Mode, select the **Turn on developer mode for this session** option.
 
-![Screenshot of developer mode in PBI Desktop.](media/submission-testing/developer-mode-desktop.png)
+:::image type="content" source="media/submission-testing/developer-mode-desktop.png" alt-text="Screenshot of developer mode in PBI Desktop.":::
 
 ### Enable Developer mode in Power BI service
 

@@ -80,7 +80,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 

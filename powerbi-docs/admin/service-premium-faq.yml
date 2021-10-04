@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 07/09/2021
+  ms.date: 09/29/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium FAQ
@@ -40,7 +40,7 @@ sections:
       - question: |
           What is Power BI Premium Generation 2?
         answer: |
-          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
     
       - question: |
           What does Power BI Premium do? How does it work? 
@@ -74,7 +74,7 @@ sections:
           | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 |
           | --- | --- | --- | --- |
           | An organization or department wants every employee to have self-service BI and collaborate with each other – sharing dashboards, performing improvised analysis, and publishing reports. | An organization or department has a combination of users who require self-service BI and collaboration and users who only need to consume BI content. | An organization or department has users who require self-service BI and collaboration and the requirement to keep reports on-premises. | A finance department is actively working to analyze several large datasets in advance of an earnings announcement and requires unthrottled and isolated capacity to manage the workloads. |
-          | **Solution:**<br/><br/>1. Power BI Pro for every user<br/><br/>2. Look to expand the opportunity by adding Power BI Premium – see the other scenarios |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to distribute BI content to users who only need to consume |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to publish reports on-premises – and move to the cloud as appropriate |**Solution:**<br/><br/>1. Power BI Pro for every user in the finance department<br/><br/>2. Add Power BI Premium for the dedicated resources – in the cloud – to be used exclusively by the finance team, providing larger scale and greater performance |
+          | **Solution:**<br/><br/>1. Power BI Pro for every user<br/><br/>2. Look to expand the opportunity by adding Power BI Premium – see the other scenarios |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to distribute BI content to users who only need to consume |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to publish reports on-premises – and move to the cloud as appropriate |**Solution:**<br/><br/>1. Power BI Pro for every user in the finance department<br/><br/>2. Add Power BI Premium for the reserved resources – in the cloud – to be used exclusively by the finance team, providing larger scale and greater performance |
           
       - question: |
           How much does Power BI Premium cost? How many SKUs will you make available?  

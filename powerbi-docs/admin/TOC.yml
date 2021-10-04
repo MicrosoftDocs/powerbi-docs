@@ -7,8 +7,8 @@
     items: 
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
-    - name: "What is Power BI Premium?"
-      href: service-premium-what-is.md
+    - name: "What is Power BI Premium Gen2?"
+      href: service-premium-gen2-what-is.md
   - name: Concepts
     expanded: true
     items:
@@ -26,36 +26,46 @@
       href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
       href: service-admin-failover.yml
-    - name: Power BI Premium
+    - name: Power BI Premium Gen2
       items:
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Optimizing Premium capacities
-        href: service-premium-capacity-optimize.md
-      - name: Premium capacity scenarios
-        href: service-premium-capacity-scenarios.md
-      - name: Power BI Premium FAQ
-        href: service-premium-faq.yml
-      - name: Backup and restore Power BI Premium datasets (preview)
-        href: service-premium-backup-restore-dataset.md
-      - name: Using service tags with Power BI
-        href: service-premium-service-tags.md
-    - name: Power BI Premium Gen2 (preview)
-      items:
-      - name: What is Power BI Premium Gen2? (preview)
+      - name: What is Power BI Premium Gen2?
         href: service-premium-gen2-what-is.md
-      - name: Understanding Premium Gen2 (preview)
-        href: service-premium-concepts.md   
-      - name: Using Autoscale with Premium Gen2 (preview)
-        href: service-premium-auto-scale.md
-      - name: Install the Gen2 metrics app (preview)
-        href: service-premium-install-gen2-app.md                
-      - name: Using the Premium Gen2 metrics app (preview)
-        href: service-premium-gen2-metrics-app.md
-      - name: Power BI Premium Gen2 FAQ (preview)
+      - name: Plan your transition to Power BI Premium Gen2
+        href: service-premium-transition-gen1-to-gen2.md
+      - name: Premium Gen2 architecture
+        href: service-premium-architecture.md
+      - name: Premium Gen2 capacity load evaluation
+        href: service-premium-concepts.md      
+      - name: Managing capacities
+        items:            
+        - name: Managing Premium Gen2 capacities
+          href: service-premium-capacity-manage-gen2.md  
+        - name: Using autoscale with Premium Gen2
+          href: service-premium-auto-scale.md
+        - name: Install the Gen2 metrics app
+          href: service-premium-install-gen2-app.md                
+        - name: Using the Premium Gen2 metrics app
+          href: service-premium-gen2-metrics-app.md
+      - name: Power BI Premium Gen2 FAQ
         href: service-premium-gen2-faq.yml
       - name: Power BI Premium Per User (preview)
         href: service-premium-per-user-faq.yml
+      - name: Power BI Premium (original version)
+        items:
+        - name: What is Power BI Premium?
+          href: service-premium-what-is.md
+        - name: Monitoring Power BI capacities
+          href: service-premium-capacity-manage.md
+        - name: Optimizing Premium capacities
+          href: service-premium-capacity-optimize.md
+        - name: Premium capacity scenarios
+          href: service-premium-capacity-scenarios.md
+        - name: Power BI Premium FAQ
+          href: service-premium-faq.yml
+        - name: Backup and restore Power BI Premium datasets (preview)
+          href: service-premium-backup-restore-dataset.md
+        - name: Using service tags with Power BI
+          href: service-premium-service-tags.md      
     - name: Information protection
       items:
       - name: Default label policy (preview)
@@ -146,7 +156,7 @@
       href: service-admin-setup-certification.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
-    - name: Power BI Premium
+    - name: Power BI Premium (original version)
       items:
       - name: Purchase Power BI Premium
         href: service-admin-premium-purchase.md
@@ -154,12 +164,6 @@
         href: service-admin-premium-manage.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
-      - name: Automatic aggregations
-        items:     
-        - name: Automatic aggregations overview
-          href: aggregations-auto.md
-        - name: Configure automatic aggregations
-          href: aggregations-auto-configure.md
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md        
       - name: Monitor capacities with the app
@@ -184,6 +188,12 @@
         href: service-premium-service-principal.md
       - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
+    - name: Automatic aggregations
+      items:     
+      - name: Automatic aggregations overview
+        href: aggregations-auto.md
+      - name: Configure automatic aggregations
+        href: aggregations-auto-configure.md        
   - name: Reference
     items: 
     - name: "PowerShell, REST APIs, and .NET SDK"

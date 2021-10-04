@@ -209,4 +209,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
