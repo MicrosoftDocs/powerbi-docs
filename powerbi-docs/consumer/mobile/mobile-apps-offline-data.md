@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/06/2021
+ms.date: 10/03/2021
 ---
 
 # View your data offline in the Power BI mobile apps
@@ -32,7 +32,7 @@ While you're offline, you can access and interact with dashboards you've accesse
 You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
 
 >[!NOTE]
-> Reports based on DirectQuery are not cached and are not available offline.
+> Reports based on DirectQuery or live connection are not cached and are not available offline.
 
 ## Background data refresh
 Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to wifi, background refresh updates every 2 hours. Otherwise, if you're on a 3G network, Power BI updates the content every 24 hours.
@@ -53,6 +53,7 @@ Power BI provides clear indicators when you go in and out of offline mode, as we
 When you're offline with Power BI on your mobile device, you may encounter these limitations:
 
 * Power BI can cache up to 250 MB of data offline.
+* Reports based on DirectQuery or live connection are not cached and are not available offline.
 * Some tile types require an active server connection, so they aren't available offline; for example, Bing map tiles and some custom tiles.
 * Whole Excel workbooks in Power BI aren't available offline.
 * You can see Reporting Services mobile reports and KPIs offline, if you have viewed them while connected. They don't refresh in the background. They refresh every time you open them.
