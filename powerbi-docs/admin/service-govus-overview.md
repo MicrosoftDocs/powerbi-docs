@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/01/2021
+ms.date: 10/03/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -139,15 +139,12 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
 |Tenant metadata scanning flow<sup>4</sup>|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
-| | | |
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited. It works only for classic workspaces and doesn't include the enhanced functionality that's described in [Embed Power BI content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
-
-<sup>4</sup> The tenant metadata scanning flow is composed of the following Power BI REST APIs: [getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces), [getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult), [getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus), and [postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo). These APIs are not supported in sovereign clouds.
 
 ## Next steps
 
