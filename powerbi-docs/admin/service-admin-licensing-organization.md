@@ -96,7 +96,7 @@ The two types of subscriptions aren't mutually exclusive. You can have both Powe
 >* Autoscaling
 >* Reduced management overhead
 >
->For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 
 To compare product features and pricing, see [Power BI pricing](https://powerbi.microsoft.com/pricing).

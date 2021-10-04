@@ -115,7 +115,7 @@ conceptualContent:
           text: Embedded analytics
         - url: developer/visuals/index.yml
           itemType: overview
-          text: Power BI Embedded Generation 2 (preview)
+          text: Power BI Embedded Generation 2
         - url: developer/embedded/power-bi-embedded-generation-2.md
           itemType: overview
           text: Automation
