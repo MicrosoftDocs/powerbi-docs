@@ -17,7 +17,7 @@ LocalizationGroup: Premium
 
 Power BI Premium released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 
-:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of using auto scale in Power B I Premium.":::
+:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto scale in Power B I Premium.":::
 
 Premium Gen2 provides the following updates or improved experiences:
 

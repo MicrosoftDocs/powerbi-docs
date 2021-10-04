@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 Power BI Premium offers scale and performance for Power BI content in your organization. With Power BI Premium Gen2, many improvements are introduced including enhanced performance, greater scale, improved metrics. In addition, Premium Gen2 enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
 
-:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
+:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
 
 Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium Gen2. 
 
@@ -85,7 +85,7 @@ The following steps show you how to enable and associated Autoscale with the res
 
 5. Next, assign the maximum number of v-cores to use for Autoscale, and then select **Save** to save your settings. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings**, where you can see your settings have been applied. In the following image, there were a maximum of two v-cores configured for Autoscale.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of Autoscale being configured.":::
+    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of Autoscale being configured.":::
 
 Here's a short video that shows how quickly you can configure Autoscale for Power BI Premium Gen2:
 
