@@ -36,10 +36,10 @@
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
         href: service-premium-concepts.md      
-      - name: Managing Premium Gen2 capacities
-        href: service-premium-capacity-manage-gen2.md  
-      - name: Managing Premium Gen2 capacities
+      - name: Managing capacities
         items:            
+        - name: Managing Premium Gen2 capacities
+          href: service-premium-capacity-manage-gen2.md  
         - name: Using autoscale with Premium Gen2
           href: service-premium-auto-scale.md
         - name: Install the Gen2 metrics app
