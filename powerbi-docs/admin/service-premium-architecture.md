@@ -1,0 +1,64 @@
+---
+title: Power BI Premium Gen2 architecture
+description: Understand the Power BI Premium Gen2 architecture.
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-premium
+ms.topic: conceptual
+ms.date: 10/04/2021
+LocalizationGroup: Premium
+---
+# Power BI Premium Gen2 architecture
+
+**Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience, is an improved and architecturally redesigned generation of Power BI Premium.
+
+Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
+
+The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
+
+* In the original version of Power BI Premium, backend v-cores were reserved physical computing nodes in the cloud, with differences in the number of v-cores and the amount of onboard memory according to the customer's licensing SKU. Customer administrators were required to keep track of how busy these nodes were, using the *Premium metrics app*. They had to use the app and other tools to determine how much capacity their users required to meet their computing needs.
+
+* Each administrator had the ability to tweak and configure capacities to avoid resource contention between workloads (datasets, dataflows, paginated reports, and AI) or other performance impactful effects to make sure capacity performance remained tuned or acceptable.
+
+In Premium Gen2, backend v-cores are implemented on regional clusters of physical nodes in the cloud, which are shared by all tenants using Premium capacities in that Power BI region. The regional cluster is further divided into specialized groups of nodes, where each group handles a different Power BI workload (datasets, dataflows, or paginated reports). These specialized groups of nodes help avoid resource contention between fundamentally different workloads running on the same node.
+
+The contents of workspaces assigned to a Premium Gen2 capacity is stored on your organizations capacity's storage layer, which is implemented on top of capacity-specific Azure storage blob containers, similar to the original version of Premium. This approach enables features like BYOK to be used for your data.
+
+When the content needs to be viewed or refreshed, it is read from the storage layer and placed on a Premium Gen2 backend node for computing. Power BI uses a placement mechanism that assures the optimal node is chosen within the proper group of computing nodes. The mechanism typically places new content on the node with the most available memory at the time the content is loaded, so that the view or refresh operation can gain access to the most resources and can perform optimally. 
+
+As your capacity renders and refreshes more content, it uses more computation nodes, each with enough resources to complete operations fast and successfully. This means your capacity may use multiple computational nodes and in some cases, content might even move between nodes due to the Power BI service performing internal load-balancing across nodes or resources. When such load balancing occurs, Power BI makes sure content movement doesn't impact end-user experiences.
+
+There are several positive results from distributing backend processing of content (datasets, dataflows, and paginated reports) across shared backend nodes:
+
+1. The shared nodes are at least as large as an original Premium P3 node, which means there are more v-cores to perform any operations, which can increase performance by up to 16x when comparing to an original Premium P1.
+2. Whatever node your processing lands on, the placement mechanism makes sure memory remains available for your operation to complete, within the applicable memory constraints of your capacity. (see limitations section of this doc for full detail of memory constraints)
+3. Internal noisy neighbor problems in your capacity don't occur, since each of the *view* and *refresh* operations uses its own set of physical v-cores, with their own memory, on different computing nodes.
+4. Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups.
+5. The limitations on different capacity SKUs are not based on the physical constraints as they were in the original version of Premium; rather, they are based on an expected and clear set of rules that the Power BI Premium service enforces:
+    * Total capacity CPU throughput is at or below the throughput possible with the v-cores your purchased capacity has.
+    * Memory consumption required for viewing and refresh operations remains within the memory limits of your purchased capacity.
+6. Because of this new architecture, customer admins do not need to monitor their capacities for signs of approaching the limits of their resources, and instead are provided with clear indication when such limits are met. This significantly reduces the effort and overhead required of capacity administrators to maintain optimal capacity performance.
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+
+>[!div class="nextstepaction"]
+>[Premium Gen2 capacity load evaluation](service-premium-concepts.md)
+
+>[!div class="nextstepaction"]
+>[Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
+
+>[!div class="nextstepaction"]
+>[Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
+
+>[!div class="nextstepaction"]
+>[Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+
+>[!div class="nextstepaction"]
+>[Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
+
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
