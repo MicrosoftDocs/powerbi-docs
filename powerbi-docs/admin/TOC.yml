@@ -53,7 +53,7 @@
       - name: Power BI Premium (original version)
         items:
         - name: What is Power BI Premium?
-          href: service-premium-what-is.md        
+          href: service-premium-what-is.md
         - name: Monitoring Power BI capacities
           href: service-premium-capacity-manage.md
         - name: Optimizing Premium capacities
