@@ -48,7 +48,7 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 ## Understanding Embedded Gen2
 
-Embedded Gen 2 has the same [architecture improvements](../../admin/service-premium-concepts.md#premium-gen2-architecture-improvements), [capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation) and [background operation scheduling](../../admin/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
+Embedded Gen 2 has the same [architecture improvements](../../admin/service-premium-concepts.md#premium-gen2-architecture-improvements), [capacity load evaluation](../../admin/service-premium-concepts.md) and [background operation scheduling](../../admin/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
 
 ## Autoscaling in Embedded Gen2
 
