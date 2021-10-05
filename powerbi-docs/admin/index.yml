@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 
-title: Power BI got the Enterprise
+title: Power BI for the Enterprise
 summary: Power BI is the business analytics and insights platform that enables Enterprises to do more
 brand: power-bi
 
@@ -326,22 +326,22 @@ additionalContent:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
-          url: ../report-server/index.yml
+          url: /report-server/index.yml
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: ../rest/api/power-bi/
+          url: /rest/api/power-bi/
         - title: Power BI embedded analytics client APIs
           summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
-          url: ../javascript/api/overview/powerbi/
+          url: /javascript/api/overview/powerbi/
     - title: Get Started using Power BI # < 60 chars (optional)
       items:
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
-          url: ../powerapps/
+          url: /powerapps/
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
-          url: ../power-automate/
+          url: /power-automate/
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
-          url: ../power-virtual-agents/
+          url: /power-virtual-agents/
