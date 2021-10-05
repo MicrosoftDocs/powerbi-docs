@@ -96,7 +96,7 @@
         href: end-user-drill.md
     - name: Power BI in Teams
       items: 
-      - name: "Use data to make better decisions"
+      - name: "Use data for productive meetings"
         href: business-user-teams-data.md
       - name: "Use goals to drive results"
         href: business-user-teams-goals.md
@@ -104,7 +104,7 @@
         href: business-user-teams-share-data.md
       - name: "Create reports from your data"
         href: business-user-teams-create-reports.md
-      - name: "Improve collaboration"
+      - name: "Analyze collaboration data"
         href: business-user-teams-collaboration-data.md
     - name: Common tasks
       items: 

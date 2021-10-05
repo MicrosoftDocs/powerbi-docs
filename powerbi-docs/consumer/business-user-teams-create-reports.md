@@ -54,7 +54,7 @@ Say you have a table with data that you'd like to try visualizing in Power BI, m
 
 When you’re done, save and share the report with your colleagues in Teams.
 
-## Create a report from a dataset shared in your organization
+## Create a report from a dataset in your organization
 
 Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets that are marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports will keep working longer.
 
@@ -76,11 +76,9 @@ To build a report from a dataset shared with you, follow these steps.
 
 1. When you’re done, save and then share the report.
 
-## Discover datasets and reports your organization has shared with you
+## Explore datasets and reports shared with you
 
-It's easy to find all the datasets your organization has shared with you. They’re in the Datasets hub in the Power BI app for Microsoft Teams.
-
-To start exploring the datasets shared with you, follow these steps.
+It's easy to find all the datasets your organization has shared with you. They’re in the Datasets hub in the Power BI app for Microsoft Teams. Again, datasets that are marked *certified* or *promoted* are likely to be higher quality and better maintained.
 
 1. Open the Power BI app for Microsoft Teams.
 
@@ -91,23 +89,21 @@ To start exploring the datasets shared with you, follow these steps.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Select a dataset from the list or from recommended datasets.":::
 
-4. Explore the Dataset details page.
+4. Explore the **Dataset details** page.
 
     :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Explore the Dataset details page.":::
 
     - Discover pre-built reports that use the dataset.
-    - Create a report in Power BI from the dataset with Create from scratch.
+    - Create a report in Power BI from the dataset with **Create from scratch**.
     - Create an Excel workbook connected to the dataset with Analyze in Excel.
 
-When you find interesting reports that are relevant to your team, bring then into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
+When you find interesting reports that are relevant to your team, bring them into your collaboration by adding them to channels, meetings, and chats as tabs or in a conversation.
 
-## Create more sophisticated reports
-
-### Enhance reports in the Power BI service and in Teams
+## Enhance reports in the Power BI service and in Teams
 
 It’s easy to keep working on your reports, right in the Power BI service and in Power BI in Teams. Take advantage of the artificial intelligence capabilities built into Power BI. 
 
-**Q&A visual**
+### Q&A visual
 
 For example, ask a question of your data by adding a *Q&A visual*, where you can ask natural language questions and get answers in the form of a visual.
 
@@ -125,7 +121,7 @@ For example, ask a question of your data by adding a *Q&A visual*, where you can
 
 Read more about [creating Q&A visuals](../visuals/power-bi-visualization-q-and-a.md).
 
-**Smart narrative visual**
+### Smart narrative visual
 
 You can also easily create a *smart narrative* visual, a dynamically generated text box that provides relevant insights that you can customize.
 
@@ -141,13 +137,13 @@ You can also easily create a *smart narrative* visual, a dynamically generated t
 
 Here's a tutorial about [creating smart narrative visuals](../visuals/power-bi-visualization-smart-narrative.md).
 
-### Create reports in Power BI Desktop
+## Create sophisticated reports in Power BI Desktop
 
-Power BI Desktop is a downloadable Windows app you can use to make more sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop has additional capabilities like data import, cleaning, modeling, and much more.
+Power BI Desktop is a downloadable Windows app you can use to make more sophisticated reports. It's like PowerPoint, but it uses data visualizations to help you find insights in your data. Power BI Desktop also has powerful capabilities like data import, cleaning, modeling, and much more.
 
 To get started with Power BI Desktop, follow these steps.
 
-1. To install Power BI Desktop, open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
+1. To install Power BI Desktop, this link takes you directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
 1. Create a report in Power BI Desktop. In this sample tutorial, you prepare and model your data, both tasks you can't do in a report in the Power BI service. Then you create a report based on the model you've created.
 
     [From dimensional model to stunning report in Power BI Desktop](../create-reports/desktop-dimensional-model-report.md)

@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/24/2021
+ms.date: 10/04/2021
 LocalizationGroup: Get started
 
 ---
@@ -42,7 +42,7 @@ It's simple to start tracking goals by creating a scorecard.
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-app-goals-new-scorecard.png" alt-text="Select New scorecard.":::
 
 1. Give the scorecard a name and description.
-1. Create a goal in the scorecard, with a **Goal name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**.
+1. Create a goal in the scorecard, with a **Goal name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**. You can type in numbers, or you select **connect to data** to get values from your reports.
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal-percent.png" alt-text="Create a goal by completing the needed values.":::
 

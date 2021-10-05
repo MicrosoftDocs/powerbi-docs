@@ -1,5 +1,5 @@
 ---
-title: Use data to make productive meetings in Microsoft Teams
+title: Use data to make meetings productive in Microsoft Teams
 description: Use Power BI in meetings to help keep important data top of mind.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,16 +7,16 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/23/2021
+ms.date: 10/04/2021
 LocalizationGroup: Get started
 
 ---
 
-# Use data to make productive meetings in Microsoft Teams
+# Use data to make meetings productive in Microsoft Teams
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Keeping everyone on track towards shared objectives and what matters is easier when you use data, trends, and metrics to show the impact of the work you and your team are doing.
+In meetings, keeping everyone on track towards shared objectives is important. Use data, trends, and metrics to show the impact of the work you and your team are doing.
 
 It’s easy to use Power BI in meetings to help keep important data top of mind. It helps everyone know which data is the most important, and builds skills that help your team make agile decisions based on your progress towards objectives. By staying focused on driving towards measurable outcomes, your team gains a sense of the positive impact their work is having.
 

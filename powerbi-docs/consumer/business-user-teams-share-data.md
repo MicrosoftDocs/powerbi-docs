@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/16/2021
+ms.date: 10/04/2021
 LocalizationGroup: Get started
 
 ---
@@ -16,9 +16,9 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Data helps everyone get on the same page before important decisions. Sharing data with your team is important and easy with Power BI in Microsoft Teams.
+Data helps everyone get on the same page before important decisions. Sharing data with your team is important and easy with Power BI in Microsoft Teams. You can share data in Teams in channels, in chats, and in meetings.
 
-## Share with your channels, chats, and meetings
+## Share in channels, chats, and meetings
 
 1. Open the channel, chat, or meeting where you’d like to share.
 4. Select the **+ Add a tab** button and add the Power BI tab.
@@ -29,7 +29,7 @@ Data helps everyone get on the same page before important decisions. Sharing dat
 
 This works in channels, meetings, and even in chats.
 
-### Give team members permission
+## Give team members permission
 
 Make sure your team has permission to the report or scorecard by sharing it with them.
 
@@ -58,11 +58,11 @@ When discussing data, it’s important that your colleagues can open the underly
 ### Discussing data is easy
 
 1. Open a report in the Power BI app in Teams, or in the Power BI service.
-2. (Optionally) You can select a specific data visualization, if you want.
+2. (Optionally) Select a specific data visualization, if you want.
 3. Select **Chat in Teams**.
 4. Send a message to a channel where you work with your team.
 
-The link will include the full context of what data you were looking at, including the page, visual, any filters applied. When your colleagues open the link, they quickly see the data you’re referring to.
+The link will include the full context of the data you were looking at, including the page, the visual, and any filters you applied. When your colleagues open the link, they quickly see the data you’re referring to.
 
 ### Send your colleagues links to reports
 
@@ -82,11 +82,11 @@ The link will include the full context of what data you were looking at, includi
 
     :::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-chat-open.png" alt-text="Select Open to open the message in chat.":::
 
-    It’s a great way to help without leaving the conversation, which saves you time.
+    It’s a great way to help without leaving the conversation, and saves everyone time.
 
-## Create rich cards from links you paste in chat
+## Create rich cards to paste in chat
 
-If you use Power BI in a web browser, it’s easy to send link to a colleague.
+If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
 1. Open a report in the Power BI service in the browser, and copy the link.
 
@@ -95,6 +95,7 @@ If you use Power BI in a web browser, it’s easy to send link to a colleague.
 2. Start a conversation and paste the link.
     Teams automatically creates a rich card.
 4. Select **Send**.
+1. Your colleague sees a rich card with a link to open the report.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png" alt-text="Teams automatically creates a rich card.":::
 
