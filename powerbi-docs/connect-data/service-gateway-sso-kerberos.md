@@ -261,7 +261,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 * For Import based report, SSO credentials are not used, but the credentials entered in data source page are used. 
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
-* Fore DirecyQuery based report, SSO credentials of the user are used.
+* For DirecyQuery based report, SSO credentials of the user are used.
 * For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import. 
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways. 
