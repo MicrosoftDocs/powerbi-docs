@@ -11,9 +11,9 @@ ms.date: 08/12/2021
 ms.custom: intro-overview
 ---
 
-# Power BI Embedded Generation 2 (preview)
+# Power BI Embedded Generation 2
 
-Power BI Embedded recently released a new version of Power BI Embedded, **Power BI Embedded Generation 2**, referred to as **Embedded Gen2** for convenience. Embedded Gen2 is currently in preview, and is available for embedded subscribers to use during the preview period. You can still create the original version of the Power BI Embedded resource, called *Embedded Gen 1*, or create a new *Embedded Gen 2* resource. During the preview period, you can run both types of Power BI Embedded capacities in parallel, and assign any workspace to either a Gen1 or a Gen2 capacity”.
+Power BI Embedded recently released a new version of Power BI Embedded, **Power BI Embedded Generation 2**, referred to as **Embedded Gen2** for convenience. You can still create the original version of the Power BI Embedded resource, called *Embedded Gen 1*, or create a new *Embedded Gen 2* resource. You can run both types of Power BI Embedded capacities in parallel, and assign any workspace to either a Gen1 or a Gen2 capacity”.
 
 All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the capacity, are preserved in Gen 2. In addition, the Gen 2 capacity resource provides the following updates and improved experience:
 
@@ -40,7 +40,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
     * The need to upgrade your capacity
 
     >[!NOTE]
-    >Improved metrics will be made available later in the preview period. You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://aka.ms/GenutilizationInstall).
+    >You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://aka.ms/GenutilizationInstall).
 
 ## Using Embedded Gen2
 
