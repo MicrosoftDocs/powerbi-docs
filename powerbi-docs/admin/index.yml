@@ -32,7 +32,7 @@ highlightedContent:
     # Card
     - title: What is Power BI Premium Per User (PPU)?
       itemType: reference
-      url: service-premium-per-user-faq.md
+      url: service-premium-per-user-faq.yml
     # Card
     - title: Using dataflows in Power BI
       itemType: tutorial
@@ -65,7 +65,7 @@ conceptualContent:
         - url: service-premium-gen2-what-is.md
           itemType: overview
           text: What is Power BI Premium Gen2?
-        - url: service-premium-per-user-faq.md
+        - url: service-premium-per-user-faq.yml
           itemType: concept
           text: What is Premium Per User (PPU)?
         - url: service-premium-transition-gen1-to-gen2.md
@@ -73,7 +73,7 @@ conceptualContent:
           text: Plan your transition to Premium Gen2
       # footerLink (optional)
       footerLink:
-        url: service-premium-gen2-faq.md
+        url: service-premium-gen2-faq.yml
         text: Power BI Premium Gen2 FAQ
     # Card
     - title: Power BI Licensing
@@ -105,7 +105,7 @@ conceptualContent:
           text: What is Power BI administration?
       # footerLink (optional)
       footerLink:
-        url: service-admin-faq.md
+        url: service-admin-faq.yml
         text: Power BI admin FAQ
     # Card
     - title: Power BI Security
@@ -329,19 +329,19 @@ additionalContent:
           url: ../report-server/index.yml
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: ../../rest/api/power-bi/
+          url: ../rest/api/power-bi/
         - title: Power BI embedded analytics client APIs
           summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
-          url: ../../javascript/api/overview/powerbi/
+          url: ../javascript/api/overview/powerbi/
     - title: Get Started using Power BI # < 60 chars (optional)
       items:
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
-          url: ../../powerapps/
+          url: ../powerapps/
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
-          url: ../../power-automate/
+          url: ../power-automate/
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
-          url: ../../power-virtual-agents/
+          url: ../power-virtual-agents/
