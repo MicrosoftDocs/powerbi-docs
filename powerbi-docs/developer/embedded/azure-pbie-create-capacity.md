@@ -73,7 +73,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 # [Azure CLI](#tab/CLI)
 
 >[!NOTE]
->Azure CLI is not supported for [Power BI Embedded Generation 2 (preview)](power-bi-embedded-generation-2.md).
+>Azure CLI is not supported for [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Use Azure Cloud Shell
 
@@ -224,7 +224,7 @@ Use this template to create a classic Power BI Embedded resource.
 }
 ```
 
-#### Embedded Gen2 (preview)
+#### Embedded Gen2
 
 Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
 
