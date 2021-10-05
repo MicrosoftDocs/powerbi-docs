@@ -305,7 +305,7 @@ conceptualContent:
         - url: ../learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: ../learn/paths/dax-power-bi/
+        - url: /learn/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: ../learning-catalog/learning-catalog-solution-architect.md
