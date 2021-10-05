@@ -88,7 +88,7 @@ In [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), if
 
 **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities use the Capacity Utilization App, which will be made available during the preview. 
 
-You can download and install the metrics app for Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) using the [following link](https://aka.ms/GenutilizationInstall).
+You can download and install the metrics app for Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) using the [following link](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview).
 
 
 ## Paginated reports and Premium Gen2
