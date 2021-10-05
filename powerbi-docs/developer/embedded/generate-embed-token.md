@@ -62,7 +62,7 @@ If you're going to use the RLS approach, review the [RLS considerations and limi
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
 >[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API.
+>The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API.
 
 ### Access Level
 
