@@ -307,12 +307,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
-
 ## Next steps
-
-> [!div class="nextstepaction"]
->[Move to production](move-to-production.md)
 
 >[!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)

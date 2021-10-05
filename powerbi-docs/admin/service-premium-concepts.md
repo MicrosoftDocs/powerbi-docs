@@ -12,6 +12,9 @@ LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
 
+>[!TIP]
+>This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch the [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo) video, which illustrates some of the Gen2 features described in this article.
+
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis.
 
 Power BI evaluates throughput every **30 seconds**. It allows operations to complete, collects execution time on the shared pool physical node’s CPUs, and then for all operations on your capacity, aggregates them into **30-second CPU intervals** and compares the results to what your purchased capacity is able to support.
