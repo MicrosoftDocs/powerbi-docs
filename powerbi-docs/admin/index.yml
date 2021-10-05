@@ -313,7 +313,7 @@ conceptualContent:
           text: Solution architects
       # footerLink (optional)
       footerLink:
-        url: ../learning-catalog/index.yml
+        url: /learning-catalog/index.yml
         text: See more
 
 # additionalContent section (optional)
