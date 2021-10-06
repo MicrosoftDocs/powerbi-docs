@@ -17,7 +17,7 @@ You can use OAuth to connect to Power BI Report Server and Reporting Services to
 > [!NOTE]
 > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
 >
->If you want Power BI mobile app users to be able to add a report server connection to their app, you must grant them access to the report server’s home folder.
+>You must grant users access to the report server’s home folder if you want them to be able to add the report server connection to their Power BI mobile app.
 
 ## Requirements
 
