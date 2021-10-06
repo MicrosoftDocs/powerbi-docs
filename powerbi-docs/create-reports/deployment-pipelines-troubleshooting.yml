@@ -335,17 +335,17 @@ sections:
           A rule can't be applied due to a problem retrieving data from the data source. Remove the rule and make sure the dataset has valid queries. Then try creating the rule again.   
 
       - question: |
-          Rule property no longer exists 
+          Rule property no longer exists
         answer: |
           Some of the rule properties configured in the rule no longer exist. Refresh the page and configure the rule again.  
 
       - question: |
-          Illegal value 
+          Illegal value
         answer: |
           A value used in the configured rule isn't valid. Validate the rule's values and try configuring the rule again.   
 
       - question: |
-          Multiple data sources are not supported 
+          Multiple data sources are not supported
         answer: |
           A dataset rule can't be applied due to its data source configuration. Either remove the rule, or rewrite the dataset queries using standard Power BI Desktop tools.  
 
