@@ -85,7 +85,7 @@ As a Power BI customer, you can also take advantage of the following offerings f
 
 * **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. You can use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You will have an opportunity to work with a Microsoft Subject Matter Expert on Performance Tuning and Optimization of "Slow Running Power BI Reports", with a focus on Report Models and Data Analysis Expressions, or of "Slow Dataset Refresh” with a focus on Power BI dataset refresh performance running in the Power BI Cloud service or Power BI Report Server.
   
-Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier support](https://support.microsoft.com/premier).
+Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
 
 ## Next steps
 
