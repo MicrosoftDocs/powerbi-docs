@@ -12,23 +12,21 @@ ms.date: 08/17/2021
 
 # Create a dialog box for your Power BI visual
 
-When you create a visual, there are times when it's useful to display additional information to the customer in a separate window. Here are two examples:
+When you create a visual, sometimes it's useful to display additional information to the customer in a separate window. Here are two examples:
 
 * **To show additional information** - Such as a text note or a video.
 
 * **To display an input data dialog box** - Such as a date dialog box.
 
-For these purposes, you can create a dialog visual pop-up window, referred to as a *dialog window box* in this article.
+For these purposes, you can create a dialog visual pop-up window, called a *dialog window box* in this article.
 
 ## Dialog box considerations
 
 When creating a dialog box for your visual, consider the  matters:
 
-* During development, you can specify the size of the dialog box.
+* During development, you can specify the size and position of the dialog box. The default position is in the center of the screen.
 
 * When the dialog box is triggered, the report background is greyed.
-
-* The dialog box appears in the middle of the screen.
 
 * The dialog header will contain the visual’s icon and its display name as a title.
 
@@ -47,7 +45,7 @@ When creating a dialog box for your visual, consider the  matters:
 
 To configure a dialog box, you need to add two components to your code:
 
-* [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
+* [An implementation file](#create-the-dialog-box-implementation-file) - It's best practice to create an implementation file for each dialog box.
 
 * [Code to invoke your dialog box](#invoke-the-dialog-box) - To invoke your dialog box, add code to the `visual.ts` file.
 
@@ -146,13 +144,25 @@ private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 In this example, the dialog box is invoked by clicking a visual button. The visual button is defined as part of the visual constructor in the `visual.ts` file.
 
 ```javascript
-button.onclick = () => {
-                const dialogOptions = {
-                    actionButtons: this.dialogActionsButtons
+button.onclick = (event) => {
+                console.log('click event', event);
+                const initialDialogState = { startDate: this.getInitialDate() };
+                const position = {
+                        type: VisualDialogPositionType.RelativeToVisual,
+                        left: 100,
+                        top: 30
                 };
-                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
-                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
-                    catch(error => console.log("error:", error));
+
+                const size = {width: 250, height: 300};
+                const dialogOptions = {
+                    actionButtons: dialogActionsButtons,
+                    size: size,
+                    position: position,
+                    title: `Select a start date`
+                };
+                this.host.openModalDialog(DatePickerDialog.id, dialogOptions, initialDialogState).
+                    then(ret => this.handleDialogResult(ret, span)).
+                    catch(error => this.handleDialogError(error, span));
             }
 ```
 
@@ -193,7 +203,24 @@ body.dialog-container {
 
 ---
 
-## How to close the dialog box?
+## Define the position of the dialog box
+
+From API version 4.0 you can decide where you want the dialog box to open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
+
+    const enum VisualDialogPositionType {
+        Center = 0,
+        RelativeToVisual = 1
+    }
+
+    export interface VisualDialogPosition {
+        type: VisualDialogPositionType;
+        left?: number;
+        top?: number;
+    }
+
+If no type is specified the default is to open the dialog box in the center.
+
+## How to close the dialog box
 
 The preferred method for closing the dialog box is by the end-user clicking the [x] button, one of the action buttons or the report background.
 
@@ -209,7 +236,9 @@ This checkbox is a security feature that prevents the visual from creating modal
 
 This blocking is only in effect for the current session. So if a user blocks the CV modal dialogs but later changes their mind, they can re-enable the dialogs by starting a new session (refreshing the reports page in Power BI Service, or exiting and restarting Power BI Desktop).
 
-## Limitations
+## Considerations and limitations
+
+* As of powerbi-visuals-API 3.8, the dialog icon and title are determined by the visual’s icon and display name and can't be changed.
 
 * The size limitations of the dialog box are described in the table below.
 
@@ -218,13 +247,13 @@ This blocking is only in effect for the current session. So if a user blocks the
     |Maximum |90% of the browser width |90% of the browser height |
     |Minimum |240px                    |210px                     |
 
-* Certain environments, such as dashboards, block the use of dialog boxes. You can program your visual to detect whether the current environment allows opening a dialog box, by checking the boolean `this.host.hostCapabilities.allowModalDialog`.
-* As of powerbi-visuals-API 3.8, the dialog icon and title are determined by the visual’s icon and display name and can't be changed.
 * The following features don't support the Power BI visuals dialog box:
 
   * Embedded analytics
   * Publish to web
   * Dashboards
+
+ You can program your visual to detect whether the current environment allows opening a dialog box, by checking the boolean `this.host.hostCapabilities.allowModalDialog`.
 
 ## Next steps
 
