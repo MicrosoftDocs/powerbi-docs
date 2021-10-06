@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 09/01/2021
+ms.date: 10/06/2021
 ---
 
 # Automate your deployment pipeline using APIs and Azure DevOps
@@ -16,6 +16,10 @@ The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enabl
 To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
 
 You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
+
+* Manage pipelines from start to finish, including creating a pipeline, assigning a workspace to any stage, deploying and deleting the pipeline.
+
+* Assign and unassign users to and from a pipeline.
 
 * Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions).
 
@@ -27,11 +31,17 @@ You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-b
 
 ## Deployment pipelines API functions
 
-Using the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), you can get information about the pipeline, and deploy Power BI content from one stage to another.
+The [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), allow you to perform the following functions:
 
 * **Get pipeline information** - Retrieve information about your pipelines and their content. Getting the pipeline information will enable you to dynamically build the deployment API calls. You can also check the [status of a deployment](/rest/api/power-bi/pipelines/getpipelineoperation), or the [deployment history](/rest/api/power-bi/pipelines/getpipelineoperations).
 
 * **Deploy** - The REST calls enables developers to use any type of deployment available in the Power BI service.
+
+* **Create** and **delete** pipelines - Use the [Create Pipeline](/rest/api/power-bi/pipelines/create-pipeline) and [Delete Pipeline](/rest/api/power-bi/pipelines/delete-pipeline) to perform these operations.
+
+* **Manage workspaces** - With [Assign Workspace](/rest/api/power-bi/pipelines/assign-workspace) and [Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) you can assign and unassign workspaces to specific pipeline stages.
+
+* **Manage pipeline users** - [Delete Pipeline User](/rest/api/power-bi/pipelines/delete-pipeline-user) lets you remove a user from a pipeline.  [Update Pipeline User](/rest/api/power-bi/pipelines/update-pipeline-user) allows you to add a user to your pipeline.
 
 ### Which deployments are supported by the APIs?
 
