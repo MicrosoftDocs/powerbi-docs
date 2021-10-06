@@ -311,7 +311,41 @@ sections:
           Why can't I see workspaces in the pipeline?
         answer: |
           Pipeline and workspace permissions are managed separately. You may have pipeline permissions, but not workspace permissions. For more information, review the [permissions](deployment-pipelines-process.md#permissions) section.
+
+  - name: Rules
+    answer: Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you're having problems with configuring rules, you might also want to consider the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules).
+
+    questions:
+      - question: |
+          Data source rule can't contain a parameter
+        answer: |
+          Your rule can't be applied because the server name or database name referenced in the rule is controlled by a parameter. To change the server or database name, use a parameter rule or remove the controlling parameter from configured item. 
           
+      - question: |
+          Data source execution failure
+        answer: |
+          A rule can't be applied due to a problem retrieving data from the data source. Remove the rule and make sure the dataset has valid queries. Then try creating the rule again.   
+
+      - question: |
+          Rule property no longer exists 
+        answer: |
+          Some of the rule properties configured in the rule no longer exist. Refresh the page and configure the rule again.  
+
+      - question: |
+          Illegal value 
+        answer: |
+          A value used in the configured rule isn't valid. Validate the rule's values and try configuring the rule again.   
+
+      - question: |
+          Multiple data sources are not supported 
+        answer: |
+          A dataset rule can't be applied due to its data source configuration. Either remove the rule, or rewrite the dataset queries using standard Power BI Desktop tools.  
+
+      - question: |
+          Target datasets ownership problem
+        answer: |
+          Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.                                                               
+
 additionalContent: |
 
   ## Next steps
