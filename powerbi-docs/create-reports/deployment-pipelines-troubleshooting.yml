@@ -313,13 +313,9 @@ sections:
           Pipeline and workspace permissions are managed separately. You may have pipeline permissions, but not workspace permissions. For more information, review the [permissions](deployment-pipelines-process.md#permissions) section.
 
   - name: Rules
+    summary: Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you're having problems with configuring rules, you might also want to consider the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules).
     
     questions:
-      - question: |
-          
-        answer: |
-          Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you're having problems with configuring rules, you might also want to consider the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules).
-
       - question: |
           Data source rule can't contain a parameter
         answer: |
