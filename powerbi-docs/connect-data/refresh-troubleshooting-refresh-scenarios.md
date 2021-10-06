@@ -103,7 +103,7 @@ A Premium capacity may throttle data refresh operations when too many datasets a
 
 - *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
  
-If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both.
+You can retry the operation if you're using custom XMLA operations. If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. 
 
 
 ## Next steps
