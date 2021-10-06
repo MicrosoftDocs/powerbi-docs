@@ -47,9 +47,9 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 > To be able to connect to Report Server from your mobile app, you must have access to Report Server’s home folder. Contact the Report Server administrator if you don’t have such access.
 
 1. On your mobile device, open the Power BI app.
-2. If you haven't signed in to Power BI yet, tap **Report Server**.
+2. If you haven't signed in to Power BI yet, tap **Report server**.
    
-   ![Sign in to a report server](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
+   :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png" alt-text="Screenshot of Sign in to a report server.":::
    
    If you've already signed in to the Power BI app, tap your profile picture in the upper-left corner and then tap **Settings** on the accounts pane that slides out.
 3. On the settings page that opens, tap **Connect to server**.
