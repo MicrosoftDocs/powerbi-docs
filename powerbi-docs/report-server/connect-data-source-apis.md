@@ -45,12 +45,11 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 
     :::image type="content" source="media/connect-data-source-apis/power-query-manage-parameters.png" alt-text="Select Manage Parameters":::
 
-1.  Create parameters for the servername and databasename.
+3. Create parameters for the servername and databasename.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-parameters.png" alt-text="Manage Parameters, set servername and databasename.":::
 
-
-3. Edit the query for the first connection, and map the database and servername.
+4. Edit the query for the first connection, and map the database and servername.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-map-database-server.png" alt-text="Map the Server and Database name":::
 
@@ -64,7 +63,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
         dbo_ExecutionLog3
     ```
 	
-	4. Publish that report to the server. In this example, the report is named executionlogparameter. The following image is an example of a data source management page.
+5. Publish that report to the server. In this example, the report is named executionlogparameter. The following image is an example of a data source management page.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-data-source-credentials.png" alt-text="The data source management page.":::
 
@@ -75,7 +74,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 2.  To get the parameter for the report, use the new REST DataModelParameters API using the following PowerShell call:
 
     ```powershell
-    Get-RsRestItemDataModelParameters '/executionlogparameter'
+    Get-RsRestItemDataModelParameter '/executionlogparameter'
 
         Name         Value
         ----         -----
@@ -86,21 +85,21 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 3. We save the result of this call in a variable:
 
     ```powershell
-    $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
+    $parameters = Get-RsRestItemDataModelParameter '/executionlogparameter'
     ```
 
 4. This variable is updated with the values that we need to change.
-5. We save the result of this call in a variable:
+5. Modify the values of the desired parameters:
 
     ```powershell
     $parameters[0].Value = 'myproductionserver'
     $parameters[1].Value = 'myproductiondatabase'
     ```
 
-6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameters` to update the values in the server:
+6. With the modified parameters, we can use the commandlet `Set-RsRestItemDataModelParameter` to update the values in the server:
 
     ```powershell
-    Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
+    Set-RsRestItemDataModelParameter -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
 7. Once the parameters are updated, the server updates any data sources that were bound to the parameters. Going back to the **Edit data source** dialog box, you should be able to set credentials for the updated server and database.
