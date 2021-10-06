@@ -3,12 +3,12 @@ title: Microsoft Information Protection sensitivity labels in Power BI
 description: Learn how Microsoft Information Protection sensitivity labels work in Power BI
 author: paulinbar
 ms.author: painbar
-manager: rkarlin
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.custom: contperf-fy21q2
-ms.date: 06/28/2021
+ms.custom: contperf-fy21q3
+ms.date: 10/06/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -248,7 +248,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it is recommended to go back online and try saving again.
 
-* If you've created a large model and the resulting protected .pbix file is very large (over 2GB), it may crash when you try to save or open it. To work around this, consider removing the protection from the .pbix file and re-applying it after the file has been published to the Power BI service.
+* Very large .pbix files (over 2GB) cannot be saved with a sensitivity label. To work around this limitation, save the file without the label, publish it to the Power BI service, and then apply the label to the published dataset and report.
 
     In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 
