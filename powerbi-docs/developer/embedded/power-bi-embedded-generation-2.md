@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 08/12/2021
+ms.date: 10/06/2021
 ms.custom: intro-overview
 ---
 
