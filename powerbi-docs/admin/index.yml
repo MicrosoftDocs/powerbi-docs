@@ -164,7 +164,7 @@ conceptualContent:
         - url: ../connect-data/service-gateway-deployment-guidance.md
           itemType: concept
           text: Deployment guidance for Power BI data gateways
-        - url: ../connect-data/service-gateway-power-bi-faq.md
+        - url: ../connect-data/service-gateway-power-bi-faq.yml
           itemType: tutorial
           text: On-premises data gateway FAQ
       # footerLink (optional)
@@ -310,7 +310,7 @@ conceptualContent:
           text: Organizational visuals in Power BI
       # footerLink (optional)
       footerLink:
-        url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a
+        url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
         text: Visualization types in Power BI
 
 # additionalContent section (optional)
