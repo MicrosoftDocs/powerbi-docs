@@ -249,7 +249,7 @@ conceptualContent:
           text: Develop a Power BI visual
       # footerLink (optional)
       footerLink:
-        url: https://powerbi.microsoft.com/en-us/developers/
+        url: https://powerbi.microsoft.com/developers/
         text: Power BI developer center
     # Card
     - title: Power BI for government
@@ -262,7 +262,7 @@ conceptualContent:
           text: Enroll a US government organization
       # footerLink (optional)
       footerLink:
-        url: /power-platform/admin/powerapps-us-government.md
+        url: /power-platform/admin/powerapps-us-government
         text: Microsoft Power Apps for US Government
     # Card
     - title: Power BI whitepapers
@@ -323,7 +323,7 @@ additionalContent:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
-          url: /report-server/index.yml
+          url: /power-bi/report-server/index
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: /rest/api/power-bi/
