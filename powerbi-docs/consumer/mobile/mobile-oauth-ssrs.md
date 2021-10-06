@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 10/06/2021
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
@@ -16,6 +16,8 @@ You can use OAuth to connect to Power BI Report Server and Reporting Services to
 
 > [!NOTE]
 > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
+>
+>If you want Power BI mobile app users to be able to add a report server connection to their app, you must grant them access to the report server’s home folder.
 
 ## Requirements
 
@@ -43,7 +45,10 @@ You need to configure certificates for both the WAP application and the ADFS ser
 
 ## Reporting Services configuration
 
-There isn't much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
+There isn't much to configure on the Reporting Services side. You just need to make sure that:
+* There is a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur.
+* The Reporting Services server is enabled for negotiating authentication.
+* Users have access to the report server's home folder.
 
 ### Service Principal Name (SPN)
 
