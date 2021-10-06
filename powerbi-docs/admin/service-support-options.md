@@ -62,7 +62,7 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 ## Power BI benefits for Microsoft Premier or Unified support contracts
 
-With Microsoft Premier support, you also get the following benefits:
+With Microsoft Premier or Unified contract support, you also get the following benefits:
 
 * Account management
 * Option for on-site support
