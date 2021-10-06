@@ -45,19 +45,19 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
 1. Select **Title** to expand that section.
 
-   ![Screenshot of the Format pane with the paint roller icon called out and an arrow to the Title drop-down.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png)
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png" alt-text="Screenshot of the Format pane with the paint roller icon and the Title drop-down called out.":::
 
 1. Move the **Title** slider to **On**.
 
 1. To change the title, enter *Store count by month opened* in the **Title text** field.
 
-    ![Screenshot of the Format pane with the Title text entered.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png" alt-text="Screenshot of the Format pane with the Title text entered.":::
 
 1. Change **Font color** to white and **Background color** to blue.
 
-    a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
+    a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **More colors**.
 
-    ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png" alt-text="Screenshot of the Font color and Background color options.":::
 
     b. Select the drop-down to close the color window.
 
@@ -65,17 +65,17 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
 1. The last customization you'll make to the chart title is to align it in the center of the visualization.
 
-    ![Screenshot of the Alignment controls with the Center option selected.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png" alt-text="Screenshot of the Alignment controls with the Center option selected.":::
 
     At this point in the tutorial, your clustered column chart title will look something like this:
 
-    ![Screenshot of the newly configured clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-table.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-table.png" alt-text="Screenshot of the newly configured clustered column chart.":::
 
 Save the changes you've made and move to the next section.
 
 If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Title** customization pane.
 
-![Screenshot of the Revert to default option.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png)
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png" alt-text="Screenshot of the Revert to default option.":::
 
 ## Customize visualization backgrounds
 
@@ -89,7 +89,7 @@ With the same clustered column chart selected, expand the **Background** options
 
 At this point in the tutorial, your clustered column chart background will look something like this:
 
-![Screenshot of the clustered column chart with background color updated.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-background.png)
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-background.png" alt-text="Screenshot of the clustered column chart with background color updated.":::
 
 Save the changes you've made and move to the next section.
 
@@ -103,7 +103,7 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 1. Expand the **Legend** options:
 
-    ![Screenshot of the Legend card.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png" alt-text="Screenshot of the Legend card.":::
 
 1. Move the **Legend** slider to **On**.
 
@@ -111,7 +111,7 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 1. Add a legend title by toggling **Title** to **On**.
 
-1. Enter *Manager* in the **Legend name** field.
+1. Enter *Manager* in the **Legend Name** field.
 
 1. Change **Color** to black.
 
@@ -131,19 +131,19 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
 1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
 
-1. In the **Visualization** tab, select ![icon for the stacked bar chart](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels.
+1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png"::: to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels.
 
-    ![Screenshot of the new stacked bar chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png" alt-text="Screenshot of the new stacked bar chart.":::
 
 1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
 
 1. Move the **Total labels** slider to **On**. 
 
-    ![Screenshot showing Total label slider set to On.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total label slider set to On.":::
 
 1. Optionally, format the total labels. In this example, we've changed color to black, increased font size, and opted to display the values as **Thousands**.
 
-    ![Screenshot of the new stacked bar chart with total labels.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png" alt-text="Screenshot of the new stacked bar chart with total labels.":::
 
 ## Customize layer order
 
@@ -159,17 +159,17 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
 1. Add a shape to the canvas. Here, we've added a blue rectangle.
 
-    ![Screenshot of the new report page with a blue rectangle.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a blue rectangle.":::
 
 1. Copy-paste a visual from another page in the report.
 
-    ![Screenshot of the new report page with a blue rectangle and a pie chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png" alt-text="Screenshot of the new report page with a blue rectangle and a pie chart.":::
 
     Now that you have 2 layers, try selecting the pie chart and then the background. When you select the pie chart, Power BI makes that object active and displays its header menu. When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart. You can change this default behavior.
 
 1. Select the rectangle and open the Formatting pane. Expand **General** and locate the **Maintain layer order** toggle. Save the report changes and switch to Reading view.
 
-    ![Screenshot of the new report page and the Maintain layer order set to On.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png)
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page and the Maintain layer order set to On.":::
 
 1. In Reading view, when you select the blue rectangle, it stays in the back layer.
 
@@ -179,7 +179,7 @@ With report themes you can apply design changes to your entire report, such as u
 
 To apply a theme to your report, select **Switch theme** from the menu bar. Choose a theme.  The report below uses the **Solar** theme.
 
-![Report using Solar theme of yellows, oranges, and reds](media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png)
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Report using Solar theme of yellows, oranges, and reds.":::
 
 ## Visualization types that you can customize
 
