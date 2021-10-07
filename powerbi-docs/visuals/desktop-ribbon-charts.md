@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/01/2021
+ms.date: 10/07/2021
 LocalizationGroup: Visualizations
 ---
 # Create ribbon charts in Power BI

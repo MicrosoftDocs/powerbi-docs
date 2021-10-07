@@ -7,7 +7,7 @@ ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/05/2021
+ms.date: 10/07/2021
 LocalizationGroup: Transform and shape data
 ---
 
