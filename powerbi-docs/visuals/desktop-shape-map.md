@@ -45,10 +45,11 @@ Take the following steps to create a **Shape map**:
 1. In the **Fields** pane, drag a data field that has geography names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket.
 
    > [!NOTE]
-   > To get sample map data you can use to test the **Shape Map** visual, see the section titled **Getting map data** below.
+   > To get sample map data you can use to test the **Shape map** visual, see the section titled **Getting map data** below.
    > 
 
    :::image type="content" source="media/desktop-shape-map/power-bi-shape-map-selections.png" alt-text="Build your shape map.":::
+
 2. In the **Format** settings pane, expand **Shape**, and change the default **Map**. In this example we've selected **Italy**, and the rendering appears, as shown in the following image.
 
    :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Open the Formatting pane and select Shape and then Italy.":::
@@ -64,7 +65,7 @@ Take the following steps to create a **Shape map**:
 4. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
 ## Use custom maps
-You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
+You can use custom maps with **Shape map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use a **TopoJSON** map file, add a Shape map visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Format** section, expand **Shape** and select **+ Add map**.
 
@@ -94,7 +95,7 @@ You can do interesting things with the individual state maps as well, and show m
 
 
 ## Getting map data
-To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
+To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, then select **Enter data** from the **Home** ribbon.
 
 ![In Desktop, select Enter Data](media/desktop-shape-map/shape-map-4-new.png)
 
@@ -112,12 +113,12 @@ You can enter a new column simply by typing a new column name (in the blank colu
 > 
 
 ## Preview behavior and requirements
-There are a few considerations and requirements for this Preview release of **Shape Map**:
+There are a few considerations and requirements for this Preview release of **Shape map**:
 
-* The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox.
+* The **Shape map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox.
 * Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 
-* The **Shape Map** visual will plot up to a maximum of 1,500 data points.
+* The **Shape map** visual will plot up to a maximum of 1,500 data points.
 
 * The United States districts reports referenced above can be found in the link below, https://www.justice.gov/usao/resources/annual-statistical-reports.
 
