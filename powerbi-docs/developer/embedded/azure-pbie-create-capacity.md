@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 01/14/2021
+ms.date: 10/07/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
