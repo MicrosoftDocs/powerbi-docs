@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 10/07/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -93,7 +93,7 @@ You can download and install the metrics app for Premium Gen2 and [Embedded Gen2
 
 ## Paginated reports and Premium Gen2
 
-In **Premium Gen2** and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there is no memory management for Paginated reports. With Premium Gen2 and Embedded Gen2, Paginated reports are supported on the EM1-EM3 and A1-A3 SKUs.
+In **Premium Gen2** and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there is no memory management for Paginated reports. With Premium Gen2 and Embedded Gen2, Paginated reports are also supported on the EM1-EM3 and A1-A3 SKUs.
 
 When using Premium Gen2, Paginated reports in Power BI benefit from the architectural and engineering improvements reflected in Premium Gen2. The following sections describe the benefits of Premium Gen2 for Paginated reports.
 

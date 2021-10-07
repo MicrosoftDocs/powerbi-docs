@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/01/2021
+ms.date: 10/07/2021
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,15 @@ ms.date: 09/01/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## October 2021 
+
+Version 15.7.01740.0001, released October 7, 2021 
+
+### Features
+
+- ODBC is no longer in preview. Strings have been updated to reflect this.
+
 
 ## September 2021 
 
