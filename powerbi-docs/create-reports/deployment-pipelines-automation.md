@@ -59,8 +59,6 @@ Here's a list of the different deployment types the APIs support:
 
 Before you start using the deployment pipelines APIs, make sure you have the following:
 
-* A pipeline with Power BI content. To create a new pipeline, follow the steps in [Get started using deployment pipelines](deployment-pipelines-get-started.md).
-
 * The [*service principal*]() or *user* you're using to call the APIs, needs [pipeline and workspace permissions](deployment-pipelines-process.md#permissions), and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added).
 
 * If you're going to use PowerShell scripts, install the Power BI PowerShell cmdlets [Install-Module MicrosoftPowerBIMgmt](/powershell/power-bi/overview).
@@ -68,6 +66,24 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 ## Integrate your pipeline with Azure DevOps
 
 You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines). You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating datasources and updating parameters.
+
+### Access the PowerShell samples
+
+You can use the PowerShell scripts below to understand how to perform several automation processes. To view or copy the text in a PowerShell sample, use the links in this section.
+
+You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1) GitHub folder.
+
+* [Deploy all](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-DeployAll.ps1)
+
+* [Selective deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-SelectiveDeploy.ps1)
+
+* [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1)
+
+* [End to end example - including pipeline creation and deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-E2ESampleFromPipelineCreationToDeployment.ps1)
+
+* [Assign an admin user to a pipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-AddUserToPipeline.ps1)
+
+### PowerShell example
 
 This section describes an example PowerShell script that deploys a dataset, report and dashboard, from the development stage to the test stage. The script then checks whether the deployment was successful.
 
@@ -119,18 +135,6 @@ To run a PowerShell script that performs a deployment, you'll need the component
         $operation = Invoke-PowerBIRestMethod -Url $url -Method Get | ConvertFrom-Json
     }
     ```
-
-### Access the PowerShell samples
-
-To view or copy the text in a PowerShell example, use these links:
-
-* [Deploy all](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-DeployAll.ps1)
-
-* [Selective deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-SelectiveDeploy.ps1)
-
-* [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1)
-
-You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1) GitHub folder.
 
 ## Limitations and considerations
 
