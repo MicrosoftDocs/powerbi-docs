@@ -58,7 +58,7 @@ Take the following steps to create a **Shape map**:
    > In the **Region keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape map** visual.
    > 
    > 
-3. To display the map keys of the currently selected map, select **View map keys**.  In this example we're using a map of Mexico and the **Map keys** displays the values being used to buld the map. 
+3. To display the map keys of the currently selected map, select **View map keys**.  In this example we're using a map of Mexico and the **Map keys** displays the values being used to build the map. 
 
     :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Select View map keys to display keys.":::
 
