@@ -47,8 +47,6 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png" alt-text="Screenshot of the Format pane with the paint roller icon and the Title drop-down called out.":::
 
-1. Move the **Title** slider to **On**.
-
 1. To change the title, enter *Store count by month opened* in the **Title text** field.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png" alt-text="Screenshot of the Format pane with the Title text entered.":::
@@ -101,15 +99,11 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
 
-1. Expand the **Legend** options:
+1. Expand the **Legend** options. The toggles for **Legend** and **Title** are both **On** by default.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png" alt-text="Screenshot of the Legend card.":::
 
-1. Move the **Legend** slider to **On**.
-
-1. Move the legend to the left side of the visualization.
-
-1. Add a legend title by toggling **Title** to **On**.
+1. Use the **Position** field to move the legend to the left side of the visualization.
 
 1. Enter *Manager* in the **Legend Name** field.
 
@@ -129,19 +123,21 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
 
-1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
+1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
 
-1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png"::: to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels.
+1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png"::: to convert this area chart to a stacked bar chart.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png" alt-text="Screenshot of the new stacked bar chart.":::
 
 1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
 
-1. Move the **Total labels** slider to **On**. 
+1. Move the **Data labels** slider to **On**.
+
+1. Move the **Total labels** slider to **On**.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total label slider set to On.":::
 
-1. Optionally, format the total labels. In this example, we've changed color to black, increased font size, and opted to display the values as **Thousands**.
+1. Optionally, format the total labels. In this example, we've changed color to black, increased font size, and opted to display the values as **Millions** with one decimal place.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png" alt-text="Screenshot of the new stacked bar chart with total labels.":::
 
@@ -149,7 +145,7 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
 Change the layering order of visuals and shapes in your reports. Layer order determines which objects will come to the front when selected. Whenever you select an object on the report canvas, it becomes active and moves to the top layer. For visuals, this makes it easier to interact with the selected visual. But, for shapes and backgrounds, you may want to secure them to the bottom layer, so that you can't accidentally select them and cover or obscure your report visuals. 
 
-Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI service.
+Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Desktop.
 
 Watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
 
@@ -167,9 +163,9 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
     Now that you have 2 layers, try selecting the pie chart and then the background. When you select the pie chart, Power BI makes that object active and displays its header menu. When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart. You can change this default behavior.
 
-1. Select the rectangle and open the Formatting pane. Expand **General** and locate the **Maintain layer order** toggle. Save the report changes and switch to Reading view.
+1. Select the pie chart and open the **Selection** pane. Use the **Layer order** controls to manipulate the layer order. Save the report changes.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page and the Maintain layer order set to On.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page with the Layer Order controls highlighted.":::
 
 1. In Reading view, when you select the blue rectangle, it stays in the back layer.
 
@@ -177,7 +173,7 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
 With report themes you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme.
 
-To apply a theme to your report, select **Switch theme** from the menu bar. Choose a theme.  The report below uses the **Solar** theme.
+To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report below uses the **Solar** theme.
 
 :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Report using Solar theme of yellows, oranges, and reds.":::
 
