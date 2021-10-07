@@ -46,8 +46,8 @@ You need to configure certificates for both the WAP application and the ADFS ser
 ## Reporting Services configuration
 
 There isn't much to configure on the Reporting Services side. You just need to make sure that:
-* There is a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur.
-* The Reporting Services server is enabled for negotiating authentication.
+* There is a valid [Service Principal Name (SPN)](#service-principal-name-spn) to enable the proper Kerberos authentication to occur.
+* The Reporting Services server is [enabled for negotiating authentication](#enabling-negotiate-authentication).
 * Users have access to the report server's home folder.
 
 ### Service Principal Name (SPN)
