@@ -176,6 +176,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
     * R visuals
     * PowerApps
     * Python visuals
+    * Power Automate
     * Visio
 
 ## Code examples

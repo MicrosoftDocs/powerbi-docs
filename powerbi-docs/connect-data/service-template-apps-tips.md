@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 10/04/2021
 ---
 
 # Tips for authoring template apps in Power BI
@@ -89,7 +89,10 @@ The report pages offer additional insight into the data included in your templat
 * All of the aggregations presented make numeric sense (averages, unique values).  
 * Slicing produces rational results.  
 * Logo is present on at least the top report.  
-* Elements are in the client's color scheme to the extent possible.  
+* Elements are in the client's color scheme to the extent possible.
+
+>[!NOTE]
+> A single template app cannot include more than twenty reports.  
 
 <a name="dashboard"></a>
 

@@ -25,6 +25,10 @@ Enhance your Power BI experience and productivity by exploring content from your
 
 ![Screenshot of Power BI mobile app Explore.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-explore-page.png)
 
+### Faster access to "Shared with me" content (Windows)
+
+We've improved the load time of "Shared with me" content, making it faster for you to find and get to reports that have been shared with you.
+
 ## August 2021
 ### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 
 Now you can monitor your goals and scorecards, and even check in progress on the go, directly from the mobile app! You’ll find them right there on the home page in the new Goals Hub. [Learn more](mobile-apps-goals.md)

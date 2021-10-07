@@ -102,11 +102,12 @@ sections:
         answer: |
           The following considerations should be kept in mind when working with Premium Per User licenses.
 
-          * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement off
+          * Premium Per User is the lowest entry-point for Power BI Premium features. As such, it is built upon the Premium platform which has built-in mechanisms assuring PPU users can leverage the platform’s ability to scale. Premium Per user is designed to support enterprise workloads, against Power BI artifact with size limits that are equivalent to that of a P3 (for datasets, this is a 100Gb limit as documented in this [summary table](service-premium-gen2-what-is.md#limitations-in-premium-gen2)).
           * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity
+          * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement off
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
-          * The number of refreshes are not currently restricted
-          * The Power BI Premium metrics app is not supported for PPU
+          * The number of refreshes isn't currently restricted
+          * The Power BI Premium metrics app isn't currently supported for PPU
           * You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content
           
           Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed again before use. Reports opened after such migrations without the dataset being refreshed will fail with an error similar to the following:

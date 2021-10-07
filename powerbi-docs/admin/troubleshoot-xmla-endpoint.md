@@ -134,7 +134,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ### Query execution
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
