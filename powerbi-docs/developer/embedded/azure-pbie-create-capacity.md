@@ -214,7 +214,7 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.m
                     "members": [
                         "[parameters('admin')]"
                     ]
-                },
+                }
             }
         }
     ]
