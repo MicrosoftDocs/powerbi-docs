@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: conceptual
-  ms.date: 07/28/2021
+  ms.date: 10/07/2021
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -46,9 +46,11 @@ sections:
           User access for paginated reports is the same as user access for all other content in the Power BI service. 
 
       - question: |
-          How do I turn on/off my paginated reports workload?
+          How do I turn on/off my paginated reports workload in a Gen1 Premium capacity?
         answer: |
-          The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.  
+          A Gen1 Premium capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.
+          
+          In a Gen2 Premium capacity, the paginated report workload is always on.
 
       - question: |
           How can I monitor usage of paginated reports in my tenant?
