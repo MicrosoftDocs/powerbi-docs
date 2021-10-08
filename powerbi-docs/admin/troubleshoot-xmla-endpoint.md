@@ -180,8 +180,8 @@ The remote server returned an error: (400) Bad Request. (System)
 
 When connecting to a Power BI workspace with SSMS, ensure the following:
 
-- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
-- [Allow XMLA endpoints and Analyze in Excel with on-premises datasets]((service-premium-connect-tools.md#enable-xmla-read-write)) is enabled in tenant settings.
+- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write.md).
+- [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) is enabled in tenant settings.
 - You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## Editing role memberships in SSMS
