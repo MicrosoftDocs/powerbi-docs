@@ -25,7 +25,7 @@ sections:
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
-          The paginated reports workload is available on P1 – P3 SKUs. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
+          The paginated reports workload is available on P1 – P3 SKUs for Premium Gen1. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
 
           > [!NOTE]
           > Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
