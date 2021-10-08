@@ -194,7 +194,7 @@ Paginated reports offer the same capabilities that SQL Server Reporting Services
 
 In Gen1 Premium capacities, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
 
-In Gen2 Premium capacities, the paginated reports workload is never unavailable. 
+In Gen2 Premium capacities, the paginated reports workload is enabled automatically, and is never unavailable.
 
 ## Configure workloads
 
