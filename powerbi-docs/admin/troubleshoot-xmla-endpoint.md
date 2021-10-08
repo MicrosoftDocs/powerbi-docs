@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/16/2021
+ms.date: 10/08/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -160,6 +160,29 @@ Run complete
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
+## Connect to Server error in SSMS
+
+When connecting to a Power BI workspace with SQL Server Management Studio (SSMS), the following error may be displayed:
+
+```
+TITLE: Connect to Server
+------------------------------
+Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].
+------------------------------
+ADDITIONAL INFORMATION: 
+The remote server returned an error: (400) Bad Request.
+Technical Details:
+RootActivityId: 
+Date (UTC): 10/6/2021 1:03:25 AM (Microsoft.AnalysisServices.AdomdClient)
+------------------------------
+The remote server returned an error: (400) Bad Request. (System)
+```
+
+When connecting to a Power BI workspace with SSMS, ensure the following:
+
+- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+- [Allow XMLA endpoints and Analyze in Excel with on-premises datasets]((service-premium-connect-tools.md#enable-xmla-read-write)) is enabled in tenant settings.
+- You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## Editing role memberships in SSMS
 
