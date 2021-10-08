@@ -28,16 +28,18 @@ You can find the pbix used in the supply chain scenario here: [Supply Chain Samp
 https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix).
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## Get started
+
 Select the decomposition tree icon from the Visualizations pane.
+
 ![Decomposition tree watermark](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
 The visualization requires two types of input:
 
- - **Analyze** – the metric you would like to analyze. This has to be a measure or an aggregate.  
- - **Explain By** – one or more dimensions you would like to drill down into.
+- **Analyze** – the metric you would like to analyze. This has to be a measure or an aggregate.  
+- **Explain By** – one or more dimensions you would like to drill down into.
 
 Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below, we are visualizing the average % of products on backorder (5.07%).
 
@@ -147,16 +149,19 @@ In the example below, the first two levels are locked. This means that report co
 
 The maximum number of levels for the tree is 50. Maximum number of data points that can be visualized at one time on the tree is 5000. We truncate levels to show top n. Currently the top n per level is set to 10. 
 
-The decomposition tree is not supported in the following scenarios:  
--	On-premises Analysis Services
+The decomposition tree is not supported in the following scenarios: 
 
-AI splits are not supported in the following scenarios:  
--	Azure Analysis Services
--	Power BI Report Server
--	Publish to Web
--	Complex measures and measures from extensions schemas in 'Analyze'
+- On-premises Analysis Services
+
+AI splits are not supported in the following scenarios:
+  
+- Azure Analysis Services
+- Power BI Report Server
+- Publish to Web
+- Complex measures and measures from extensions schemas in 'Analyze'
 
 Other limitations:
+
 - Support inside Q&A
 
 ## Next steps
