@@ -260,6 +260,10 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
+## Feedback and suggestions
+
+The Power BI product team greatly appreciates any feedback you have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity lables. We're interested in your experiences, as well as any suggestions you might have about how to improve and enhance these capabilities. Please use [this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u) to submit your feedback. Thanks!
+
 ## Next steps
 
 This article provided an overview of data protection in Power BI. The following articles provide more details about data protection in Power BI. 
