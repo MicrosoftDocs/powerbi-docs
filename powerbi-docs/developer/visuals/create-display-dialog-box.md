@@ -12,19 +12,19 @@ ms.date: 08/17/2021
 
 # Create a dialog box for your Power BI visual
 
-When you create a visual, sometimes it's useful to display additional information to the customer in a separate window. Here are two examples:
+When you create a visual, sometimes it's useful to display additional information to the customer in a separate window. For example, you might want to:
 
-* **To show additional information** - Such as a text note or a video.
+* **show additional information** - Such as a text note or a video
 
-* **To display an input data dialog box** - Such as a date dialog box.
+* **display an input data dialog box** - Such as a date dialog box
 
 For these purposes, you can create a dialog visual pop-up window, called a *dialog window box* in this article.
 
 ## Dialog box considerations
 
-When creating a dialog box for your visual, consider the  matters:
+When creating a dialog box for your visual, keep in mind the following:
 
-* During development, you can specify the size and position of the dialog box. The default position is in the center of the screen.
+* During development, you can specify the size and position of the dialog box.
 
 * When the dialog box is triggered, the report background is greyed.
 
@@ -39,7 +39,7 @@ When creating a dialog box for your visual, consider the  matters:
 * The dialog code may use external NPM libraries, just like the visual.
 
 >[!IMPORTANT]
->The dialog box should not be triggered spontaneously. It must be an immediate result of a user action.
+>The dialog box should not be triggered spontaneously. It should be the immediate result of a user action.
 
 ## Design a dialog box for your visual
 
@@ -65,7 +65,7 @@ Each dialog box implementation file should include the following components:
 
 #### Create a dialog box class
 
-Create a dialog box class for your dialog box. The `initialState` parameter in `openModalDialog`, is passed to the dialog contractor upon its creation. Use the `initialState` object to pass parameters to the dialog box, in order to affect its behavior or appearance.
+Create a dialog box class for your dialog box. The `initialState` parameter in `openModalDialog` is passed to the dialog contractor upon its creation. Use the `initialState` object to pass parameters to the dialog box, in order to affect its behavior or appearance.
 
 The dialog code can use these `IDialogHost` methods:
 
@@ -111,7 +111,7 @@ export class DatePickerDialogResult {
 
 #### Add your dialog box to the registry list
 
-Every dialog implementation file needs to include a registry reference. Add the two lines in the example below, to your dialog box implementation file. The first line should be identical in every dialog box implementation file. The second line lists your dialog box, modify it according to the name of your dialog box class.
+Every dialog implementation file needs to include a registry reference. Add the two lines in the example below, to your dialog box implementation file. The first line should be identical in every dialog box implementation file. The second line lists your dialog box; modify it according to the name of your dialog box class.
 
 ```javascript
 globalThis.dialogRegistry = globalThis.dialogRegistry || {};
@@ -143,6 +143,33 @@ private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 
 In this example, the dialog box is invoked by clicking a visual button. The visual button is defined as part of the visual constructor in the `visual.ts` file.
 
+## Define the size and position of the dialog box
+
+The size of the dialog box can be defined by setting the width and height (in pixels) of DialogConstructorOptions.element.
+
+From API version 4.0 you can also decide where you want the dialog box to open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
+
+```javascript
+    const enum VisualDialogPositionType {
+        Center = 0,
+        RelativeToVisual = 1
+    }
+
+    export interface VisualDialogPosition {
+        type: VisualDialogPositionType;
+        left?: number;
+        top?: number;
+    }
+```
+
+If no *type* is specified the default is to open the dialog box in the center.
+The position is given in pixels relative to the top left corner of the visual:
+
+* left - the horizontal position of the dialog box. If this number is negative the box is to the left of the visual.
+* top - the vertical position of the dialog box. This number can't be negative. The dialog box can't be above the visual.
+
+The following example shows a 250 x 300 px date selection dialog box:
+
 ```javascript
 button.onclick = (event) => {
                 console.log('click event', event);
@@ -165,60 +192,6 @@ button.onclick = (event) => {
                     catch(error => this.handleDialogError(error, span));
             }
 ```
-
-## Define the size of the dialog box
-
-The size of the dialog box can be defined by setting the width and height of DialogConstructorOptions.element. You can define the size either in JavaScript or CSS.
-
-### [JavaScript](#tab/JavaScript)
-
-Add the width and height to the constructor method
-
-```javascript
-    options.element.style.width = '400px';
-    options.element.style.height = '600px';
-```
-
-### [CSS](#tab/css)
-
-Add the following line to the constructor:
-
-`options.element.classList.add('dialog-container');`
-
-In the *.less* file:
-
-```css
-body.dialog-container {
-    margin: 0;
-    display: grid;
-    > div {
-        margin: 10px 0;
-        height: 270px;
-        width: 244px;
-        display: flex;
-        justify-content: center;
-    }
-}
-```
-
----
-
-## Define the position of the dialog box
-
-From API version 4.0 you can decide where you want the dialog box to open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
-
-    const enum VisualDialogPositionType {
-        Center = 0,
-        RelativeToVisual = 1
-    }
-
-    export interface VisualDialogPosition {
-        type: VisualDialogPositionType;
-        left?: number;
-        top?: number;
-    }
-
-If no type is specified the default is to open the dialog box in the center.
 
 ## How to close the dialog box
 
@@ -258,7 +231,7 @@ This blocking is only in effect for the current session. So if a user blocks the
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a Power BI circle card visual](develop-circle-card.md)
+> [Publish a Power BI custom visual](office-store.md)
 
 > [!div class="nextstepaction"]
 > [Create a Power BI bar chart visual](create-bar-chart.md)
