@@ -7,7 +7,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/08/2021
+ms.date: 10/11/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 The decomposition tree visual in Power BI lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
-![Decomposition tree](media/power-bi-visualization-decomposition-tree/tree-full.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-full.png" alt-text="Screenshot showing a full decomposition tree.":::
 
 This tutorial uses two examples:
 
@@ -34,7 +34,7 @@ https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/
 
 Select the decomposition tree icon from the Visualizations pane.
 
-![Decomposition tree watermark](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-watermark.png" alt-text="Decomposition tree watermark.":::
 
 The visualization requires two types of input:
 
@@ -43,15 +43,15 @@ The visualization requires two types of input:
 
 Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below, we are visualizing the average % of products on backorder (5.07%).
 
-![Decomposition tree root node](media/power-bi-visualization-decomposition-tree/tree-root.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-root.png" alt-text="Decomposition tree root node.":::
 
 The next step is to bring in one or more dimensions you would like to drill down into. Add these fields to the **Explain by** bucket. Notice that a plus sign appears next to your root node. Selecting the + lets you choose which field you would like to drill into (you can drill into fields in any order that you want).
 
-![Screenshot shows the plus icon selected which displays options from the Explain by list.](media/power-bi-visualization-decomposition-tree/tree-menu.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-menu.png" alt-text="Screenshot showing the plus icon selected which displays options from the Explain by list.":::
 
 Selecting **Forecast bias** results in the tree expanding and breaking down the measure by the values in the column. This process can be repeated by choosing another node to drill into.
 
-![Decomposition tree expansion](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-expansion.png" alt-text="Decomposition tree expansion.":::
 
 Selecting a node from the last level cross-filters the data. Selecting a node from an earlier level changes the path.
 
@@ -66,7 +66,6 @@ Despite the path disappearing, the existing levels (in this case Game Genre) rem
 
 ![Animation shows selecting cross filters which affect which nodes are displayed.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
-
 ## AI splits
 
 You can use “AI Splits” to figure out where you should look next in the data. These splits appear at the top of the list and are marked with a lightbulb. The splits are there to help you find high and low values in the data, automatically.
@@ -78,7 +77,7 @@ The analysis can work in two ways depending on your preferences. The default beh
 
 Selecting **High Value** in the backorders example, results in the following:
 
-![Decomposition tree AI split](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-split.png" alt-text="Decomposition tree AI split.":::
 
 A lightbulb appears next to **Product Type** indicating this was an ‘AI split’. The tree also provides a dotted line recommending the **Patient Monitoring** node as that results in the highest value of backorders (9.2%). 
 
@@ -88,12 +87,13 @@ You can configure the visual to find **Relative** AI splits as opposed to **Abso
 
 Relative mode looks for high values that stand out (compared to the rest of the data in the column). To illustrate this, let’s take a look at an example:
 
-![Decomposition tree absolute split](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png" alt-text="Decomposition tree absolute split.":::
 
 In the screenshot above, we are looking at North America sales of video games. We first split the tree by **Publisher Name** and then drill into Nintendo. Selecting **High Value** results in the expansion of **Platform is Nintendo**. Since Nintendo (the publisher) only develops for Nintendo consoles, there is only one value present and so that is unsurprisingly the highest value.
 
 Nevertheless, a more interesting split would be to look at which high value stands out relative to other values in the same column. If we change the Analysis type from **Absolute** to **Relative**, we get the following result for Nintendo:
-![Decomposition tree relative split](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
+
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-relative.png" alt-text="Decomposition tree relative split.":::
 
 This time, the recommended value is **Platform within Game Genre**.  Platform doesn’t yield a higher absolute value than Nintendo ($19,950,000 vs. $46,950,000). Nevertheless it’s a value that stands out.
 
@@ -113,25 +113,25 @@ vs.
 
 If you prefer not to use any AI splits in the tree, you also have the option of turning them off under the **Analysis formatting** options:  
 
-![Decomposition tree disable AI split](media/power-bi-visualization-decomposition-tree/tree-ai-disable.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-disable.png" alt-text="Decomposition tree disable AI split.":::
 
 ## Tree interactions with AI splits
 
 You can have multiple subsequent AI levels. You can also mix up different kinds of AI levels (go from High Value to Low Value and back to High Value):
 
-![Decomposition tree multiple AI paths](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png" alt-text="Decomposition tree multiple AI paths.":::
 
 If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct High and Low Values.
 
-![Decomposition tree AI interactions](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png" alt-text="Decomposition tree AI interactions.":::
 
 AI levels are also recalculated when you cross-filter the decomposition tree by another visual. In the example below, we can see that our backorder % is highest for Plant #0477.
 
-![Screenshot shows the Root Cause Analysis with all months selected.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png" alt-text="Screenshot shows the Root Cause Analysis with all months selected.":::
 
-But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got reordered, but a completely different column was chosen. 
+But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got reordered, but a completely different column was chosen.
 
-![Screenshot shows the Root Cause Analysis with just the month of April selected.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png" alt-text="Screenshot shows the Root Cause Analysis with just the month of April selected.":::
 
 If we want AI levels to behave like non-AI levels, select the lightbulb to revert the behavior to default. 
 
@@ -143,7 +143,7 @@ A content creator can lock levels for report consumers. When a level is locked, 
 
 In the example below, the first two levels are locked. This means that report consumers can change level 3 and 4, and even add new levels afterwards. The first two levels however cannot be changed:
 
-![Decomposition tree locking](media/power-bi-visualization-decomposition-tree/tree-locking.png)
+:::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-locking.png" alt-text="Decomposition tree locking.":::
 
 ## Known limitations
 
