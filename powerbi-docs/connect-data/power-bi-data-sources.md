@@ -114,7 +114,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | OData | Yes | Yes <sup>6</sup> | No | Yes | No | Yes |
 | ODBC | Yes | Yes | No | Yes | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes | No |
-| Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
+| Oracle | Yes | Yes | Yes <sup>9</sup> | Yes | Yes | Yes |
 
 
 ## Data sources P-R
@@ -190,6 +190,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>7</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
 <sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
+
+<sup>9</sup> Decimal precision is limited to 15. 
 
 ## Considerations and limitations
 
