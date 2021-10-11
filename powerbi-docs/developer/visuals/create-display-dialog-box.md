@@ -1,8 +1,8 @@
 ---
 title: Creating a dialog box in a Power BI visual
 description: Learn how to create a dialog box in a Power BI visual
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -145,7 +145,21 @@ In this example, the dialog box is invoked by clicking a visual button. The visu
 
 ## Define the size and position of the dialog box
 
-The size of the dialog box can be defined by setting the width and height (in pixels) of DialogConstructorOptions.element.
+You can define the size of the dialog box by setting the width and height (in pixels) of DialogOpenOptions.
+
+```javascript
+    export interface RectSize {
+        width: number;
+        height: number;
+    }
+
+    export interface DialogOpenOptions {
+        title: string;
+        size?: RectSize;
+        position?: VisualDialogPosition;
+        actionButtons: DialogAction[];
+    }
+```
 
 From API version 4.0 you can also decide where you want the dialog box to open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
 
@@ -165,10 +179,7 @@ From API version 4.0 you can also decide where you want the dialog box to open o
 If no *type* is specified the default is to open the dialog box in the center.
 The position is given in pixels relative to the top left corner of the visual:
 
-* left - the horizontal position of the dialog box. If this number is negative the box is to the left of the visual.
-* top - the vertical position of the dialog box. This number can't be negative. The dialog box can't be above the visual.
-
-The following example shows a 250 x 300 px date selection dialog box:
+The following example shows a 250 x 300 px date selection dialog box 100 pixels to the left and 30 pixels below the top of the visual:
 
 ```javascript
 button.onclick = (event) => {
@@ -219,6 +230,8 @@ This blocking is only in effect for the current session. So if a user blocks the
     |--------|-------------------------|--------------------------|
     |Maximum |90% of the browser width |90% of the browser height |
     |Minimum |240px                    |210px                     |
+
+* When defining the position of the dialog box, the horizontal position can be a positive or negative integer, depending on which side of the visual you want the bos to be. The vertical position can't be negative, as this would place it above the visual.
 
 * The following features don't support the Power BI visuals dialog box:
 
