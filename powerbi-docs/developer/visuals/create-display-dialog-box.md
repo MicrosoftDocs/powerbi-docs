@@ -231,7 +231,7 @@ This blocking is only in effect for the current session. So if a user blocks the
     |Maximum |90% of the browser width |90% of the browser height |
     |Minimum |240px                    |210px                     |
 
-* When defining the position of the dialog box, the horizontal position can be a positive or negative integer, depending on which side of the visual you want the bos to be. The vertical position can't be negative, as this would place it above the visual.
+* When defining the position of the dialog box, the horizontal position can be a positive or negative integer, depending on which side of the visual you want the box to be. The vertical position can't be negative, as this would place it above the visual.
 
 * The following features don't support the Power BI visuals dialog box:
 
