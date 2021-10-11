@@ -139,11 +139,12 @@ You can also sync two or more separate slicers. This is particularly useful when
 
     ![Screenshot of Sync slicers pane.](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
 
-2. Select one of the slicers in your report. In the **Sync slicers** pane, expand **Advanced options**, and enter a name for the group. You can name it anything you want. Then select another slicer you want to sync with the first, and enter the same name in the **group name** box.
+2. Select one of the slicers that you want in the group. In the **Sync slicers** pane, expand **Advanced options**, and enter a name for the group. You can name it anything you want.
 
    ![Screenshot of entering a group name in the Advanced section of the Sync slicers pane.](media/power-bi-visualization-slicers/power-bi-slicer-advanced-group.png)
 
-6. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers** or both depending on your scenario. 
+6. Then select another slicer you want to sync with the first, and enter the same name in the **group name** box. Be sure to enter it exactly the same.
+7. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers** or both depending on your scenario. 
 
     - If you just want to keep the slicers in sync so filters set by the slicers are kept in sync, select **Sync filter changes to other slicers**. 
     - If you also want to make sure that any changes you make to the field on which the slicers are based get synced across the group, select **Sync field changes to other slicers**.
