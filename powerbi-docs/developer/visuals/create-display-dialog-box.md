@@ -145,7 +145,7 @@ In this example, the dialog box is invoked by clicking a visual button. The visu
 
 ## Define the size and position of the dialog box
 
-You can define the size of the dialog box by setting the width and height (in pixels) of DialogOpenOptions.
+From API version 4.0, you can define the size and position of the dialog box using the `DialogOpenOptions` parameter of `openModalDialog`.
 
 ```javascript
     export interface RectSize {
@@ -161,7 +161,7 @@ You can define the size of the dialog box by setting the width and height (in pi
     }
 ```
 
-From API version 4.0 you can also decide where you want the dialog box to open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
+The position parameter lets you decide where you the dialog box should open on the screen. You can choose to open the dialog box in the center of the screen, or you can define a different position relative to the visual.
 
 ```javascript
     const enum VisualDialogPositionType {
@@ -176,8 +176,8 @@ From API version 4.0 you can also decide where you want the dialog box to open o
     }
 ```
 
-If no *type* is specified the default is to open the dialog box in the center.
-The position is given in pixels relative to the top left corner of the visual:
+* If no *type* is specified the default is to open the dialog box in the center.
+* The position is given in pixels relative to the top left corner of the visual.
 
 This example shows a 250 x 300 px date selection dialog box 100 pixels to the left and 30 pixels below the top of the visual:
 
