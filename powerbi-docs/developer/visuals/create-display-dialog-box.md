@@ -179,7 +179,7 @@ From API version 4.0 you can also decide where you want the dialog box to open o
 If no *type* is specified the default is to open the dialog box in the center.
 The position is given in pixels relative to the top left corner of the visual:
 
-The following example shows a 250 x 300 px date selection dialog box 100 pixels to the left and 30 pixels below the top of the visual:
+This example shows a 250 x 300 px date selection dialog box 100 pixels to the left and 30 pixels below the top of the visual:
 
 ```javascript
 button.onclick = (event) => {
