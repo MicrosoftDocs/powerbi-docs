@@ -1,8 +1,8 @@
 ---
 title: Creating a dialog box in a Power BI visual
 description: Learn how to create a dialog box in a Power BI visual
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

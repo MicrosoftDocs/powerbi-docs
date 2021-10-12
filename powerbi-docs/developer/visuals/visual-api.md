@@ -1,8 +1,8 @@
 ---
 title:  Visual API
 description: This article describes how to use IVisual API for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
