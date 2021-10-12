@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-fDb5zZ3xmxU, video-2X1cW8oPtc8
 ms.topic: how-to
-ms.date: 10/11/2021
+ms.date: 10/12/2021
 LocalizationGroup: Visualizations
 ---
 # Create key influencers visualizations

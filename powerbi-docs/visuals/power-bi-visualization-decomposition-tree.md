@@ -7,7 +7,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/11/2021
+ms.date: 10/12/2021
 LocalizationGroup: Visualizations
 ---
 
