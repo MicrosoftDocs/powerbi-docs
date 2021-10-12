@@ -350,7 +350,7 @@ sections:
           A dataset rule can't be applied due to its data source configuration. Either remove the rule, or rewrite the dataset queries using standard Power BI Desktop tools.  
 
       - question: |
-          Target datasets ownership problem
+          Target dataset can only be changed by its owner
         answer: |
           Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.                                                               
 
