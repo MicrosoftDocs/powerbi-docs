@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/07/2021
+ms.date: 10/12/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -150,7 +150,11 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/power-bi-embedded/).
 
-Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
+Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - create a Power BI Embedded capacity.
+
+#### Embedded Gen2
+
+Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
 
 ```json
 {
@@ -212,6 +216,74 @@ Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capa
 }
 ```
 
+#### Embedded Gen1
+
+Use this template to create a classic Power BI Embedded resource.
+
+>[!NOTE]
+> Gen1 resources will be deprecated in the beginning of 2021
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "metadata": {
+                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+            }
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "The location where Power BI is hosted for your tenant"
+            }
+        },
+        "sku": {
+            "type": "string",
+            "allowedValues": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+            ],
+            "metadata": {
+                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+            }
+        },
+        "admin": {
+            "type": "string",
+            "metadata": {
+                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.PowerBIDedicated/capacities",
+            "apiVersion": "2021-01-01",
+            "name": "[parameters('name')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "administration": {
+                    "members": [
+                        "[parameters('admin')]"
+                    ]
+                },
+                "mode": "Gen1"
+            }
+        }
+    ]
+}
+```
+
 ### Deploy the template
 
 1. Select the following link to sign in to Azure and open a template. The template creates a Power BI Embedded capacity.
@@ -237,6 +309,7 @@ Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capa
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
+        >
         >* By default, the capacity administrator is the user creating the capacity.
         >* You can select a different user or service principal, as capacity administrator.
         >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.
