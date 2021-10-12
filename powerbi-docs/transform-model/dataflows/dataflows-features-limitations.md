@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 10/03/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -17,7 +17,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 ## General limitations
 
 * Feature parity across government environments can be found in the [Power BI feature availability for government](../../admin/service-govus-overview.md#power-bi-feature-availability) article.
-* Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **Diagram View**, deleted data sources appear as lineage for a dataflow.
+* Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **[Lineage View](../../collaborate-share/service-data-lineage.md)**, deleted data sources appear as lineage for a dataflow.
 * Deleted datasources  will still appear in the Setting page in the gateway drop-down.
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
 * *Breadth* equates to entities within a dataflow.
@@ -81,6 +81,8 @@ Dataflows that exist in Premium have the following limitations and consideration
 * When using a Premium Per User (PPU) license with dataflows, data is cleared when moving data out of a PPU environment
 
 * When a dataflow is refreshed in a Premium Per User (PPU) context, the data is not visible to non-PPU users
+
+* Incremental refresh works with dataflows only when the enhanced compute engine is enabled
 
 
 **Linked and Computed tables:**

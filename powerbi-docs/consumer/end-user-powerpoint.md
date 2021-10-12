@@ -8,12 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 09/30/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+[!INCLUDE[consumer-appliesto-yyn](../includes/consumer-appliesto-yyn.md)]
 
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
@@ -81,7 +81,7 @@ When you view an individual slide, you see that each report page is an independe
 
 What you do with your PowerPoint deck from there, or any of the high-resolution images, is up to you.
 
-## Considerations and troubleshooting
+## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 

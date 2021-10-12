@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/01/2018
+ms.date: 09/12/2021
 LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
@@ -31,7 +31,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by copyi
 5. Select **Pin**.
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to the selected dashboard.
    
-   ![Pinned to dashboard window](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
+   ![Pinned to dashboard window](../media/power-bi-pin.png)
 6. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization.
 
 ## Next steps

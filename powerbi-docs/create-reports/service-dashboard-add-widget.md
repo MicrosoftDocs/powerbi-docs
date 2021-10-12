@@ -16,15 +16,18 @@ LocalizationGroup: Dashboards
 By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. 
 
 Watch Amanda add tiles to a dashboard.
-   
+ 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
 ## Add an image, video, or other tile
 You can add an image, text box, video, streaming data, or web code directly to your dashboard.
 
-1. Select **Add tile** from the top menu bar of your dashboard. Depending on space limitations, you may see only the plus ![plus sign](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) sign.
-   
-    ![Add tile icon](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
+1. Select the arrow next to **Edit** on the top menu, and then select **Add a tile**.
+
+    ![Screenshot showing the Add s tile selection.](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
 2. Select which type of tile to add: 
 
     **[Web content](#add-web-content)**
@@ -37,7 +40,7 @@ You can add an image, text box, video, streaming data, or web code directly to y
 
     **[Custom streaming data](#add-streaming-data)**
    
-    ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
+    ![Screenshot of the Add a tile window.](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## Add an image
 If you want to add your company logo or some other image to your dashboard, you save the image file online and link to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way. Also, images can't be in .svg format.  
@@ -109,6 +112,9 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 ## Add streaming data
 You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub. Here, Will explains how it works.
    
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
@@ -190,6 +196,9 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   ```
 * Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size doesn't change as you resize the tile.
   
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
   ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
@@ -197,7 +206,11 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
   ```
   
   If you'd like the player to resize to fit the tile size, set the width and height to 100%.
-  
+
+  > [!NOTE]  
+  > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
   ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
+ms.custom: intro-deployment
 ---
 
 # Deploy to Power BI

@@ -7,9 +7,9 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
 ms.date: 03/11/2020
-ms.custom:  
-ms.reviewer:  
-#customer intent: As a Power BI end user, I want an overview of the Power BI mobile apps on the different devices so I can see how they can work in my company's workflow.
+ms.custom: intro-overview
+ms.reviewer: 
+#Customer intent: As a Power BI end user, I want an overview of the Power BI mobile apps on the different devices so I can see how they can work in my company's workflow.
 ---
 # What are the Power BI mobile apps?
 Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data. 

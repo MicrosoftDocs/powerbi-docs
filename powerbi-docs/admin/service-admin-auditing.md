@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 09/17/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -35,10 +35,6 @@ The differences between log sources are summarized in the following table.
 
 
 ## Use the activity log
-
-> [!NOTE]
-> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.yml).
-
 
 As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
 

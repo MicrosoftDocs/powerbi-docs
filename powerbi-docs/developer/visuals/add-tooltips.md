@@ -228,7 +228,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-[Modern visuals tooltips](../../create-reports/desktop-visual-tooltips.md) add data point drill actions to your tooltips, and update the styling to match your report theme.
+From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the styling to match your report theme.
 
 ![modern tooltip](media/add-tooltips/modern-tooltip.png)
 

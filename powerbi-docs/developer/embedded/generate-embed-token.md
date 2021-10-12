@@ -28,8 +28,7 @@ You can use the following APIs to generate a token:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken)
-
+* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
@@ -73,7 +72,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 

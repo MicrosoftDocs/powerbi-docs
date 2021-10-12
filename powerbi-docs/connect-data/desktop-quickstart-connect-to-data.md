@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: quickstart
 ms.date: 05/14/2021
-ms.custom: mode-portal
+ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
 ---

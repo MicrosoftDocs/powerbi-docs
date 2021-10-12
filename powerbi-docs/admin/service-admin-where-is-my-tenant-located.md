@@ -16,6 +16,8 @@ LocalizationGroup: Administration
 
 The region where your data is stored is important because it can affect the interactions you have with the Power BI service. For example, Power BI stores reports, connection information, data models, and the data inside those models in the service.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
 

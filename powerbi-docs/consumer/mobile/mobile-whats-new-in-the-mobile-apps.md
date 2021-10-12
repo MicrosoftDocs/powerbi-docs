@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/12/2021
+ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -23,6 +24,10 @@ For related "What's New" information, see:
 Enhance your Power BI experience and productivity by exploring content from your organization that has been picked especially for you. It’s right there for you on the home page under **Recommended**, or on the new Explore page. Tap **See all**, or choose **Explore** from the home page footer, to get to the Explore page.
 
 ![Screenshot of Power BI mobile app Explore.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-explore-page.png)
+
+### Faster access to "Shared with me" content (Windows)
+
+We've improved the load time of "Shared with me" content, making it faster for you to find and get to reports that have been shared with you.
 
 ## August 2021
 ### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 

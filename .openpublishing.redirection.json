@@ -171,11 +171,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/service-connect-to-bing.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
@@ -1972,8 +1967,8 @@
         },
         {
             "source_path": "powerbi-docs/service-govde-faq.md",
-            "redirect_url": "/power-bi/admin/service-govde-faq",
-            "redirect_document_id": true
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-govus-overview.md",
@@ -2573,11 +2568,6 @@
         {
             "source_path": "powerbi-docs/service-connect-to-github.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-github",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
             "redirect_document_id": true
         },
         {
@@ -4029,7 +4019,33 @@
             "source_path": "powerbi-docs/guidance/dax-sample-model.md",
             "redirect_url": "/dax/best-practices/dax-sample-model",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-migrate-data-germany.md",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-govde-faq.yml",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": true
         }
+
 
     ]           
 }

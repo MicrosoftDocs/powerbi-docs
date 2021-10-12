@@ -69,6 +69,9 @@ Power Query populates the columns automatically for you. You remember that in ou
 
 :::image type="content" source="media/service-aml-integrate/aml-pbi-run.png" alt-text="Screenshot showing Azure Machine Learning Models.":::
 
+> [!NOTE]
+> For time series models, Power BI may not automatically detect the date format for the time column. To proceed, convert the time column to Date/Time type in Power BI before invoking Azure Machine Learning.
+
 Selecting **OK** calls the Azure Machine Learning service. It triggers a warning on data privacy for both the data and the endpoint.
 
 :::image type="content" source="media/service-aml-integrate/data_privacy_warning.png" alt-text="Screenshot showing privacy warning.":::

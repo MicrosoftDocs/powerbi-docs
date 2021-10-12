@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 05/26/2021
+ms.date: 09/16/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -134,9 +134,9 @@ The second column represents a *business user*.  A business user:
 | Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)| 
 | Lineage view  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|PDF: create from report pages |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
-| PowerPoint: create from report pages*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+| Export to PowerPoint*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Promote content to Home  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 | Print report pages* |![green dot](media/end-user-license/power-bi-green-dot.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Interact with Q&A visual |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |

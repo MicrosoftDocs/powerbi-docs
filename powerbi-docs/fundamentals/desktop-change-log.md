@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 09/28/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,20 @@ ms.date: 08/30/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## September 2021 QFE 2
+
+*Version: 2.97.921.0, Released: September 28, 2021*
+
+Bug fixes/improvements:
+- Fix for proxy schema sync ordering issue: now when changing data source, refresh won't fail due to resolvable relationship ambiguity.
+
+## September 2021 QFE 1
+
+*Version: 2.97.861.0, Released: September 24, 2021*
+
+Bug fixes/improvements:
+- Azure Analysis Services fix: now when connecting to AAS and proxy detection is required, the connection will succeed.
 
 ## August 2021 QFE 2
 

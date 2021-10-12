@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 09/13/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -142,6 +142,8 @@ Keep in mind the following restrictions when using large datasets:
 - **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to the maximum capacity of the SKU.
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
+- You cannot enable large datasets using the REST API. 
+
 ## Region availability
 
 Large datasets in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
@@ -192,4 +194,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).

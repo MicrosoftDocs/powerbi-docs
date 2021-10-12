@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 09/29/2021
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -24,7 +24,7 @@ When additional Premium capacity is required, there are two options described in
 Finally, testing approaches and Premium capacity sizing conclude this article.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
@@ -43,8 +43,8 @@ When trying to get the best utilization and performance, there are some recommen
 
   ![Separating business critical and Self-Service BI into different capacities](media/service-premium-capacity-optimize/separate-capacities.png)
 
-- If sharing content only with Power BI Pro users, there may be no need to store the content in a dedicated capacity.
-- Use dedicated capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
+- If sharing content only with Power BI Pro users, there may be no need to store the content in a reserved capacity.
+- Use reserved capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
 
 ### Addressing common questions
 
@@ -283,4 +283,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).

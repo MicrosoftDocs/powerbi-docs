@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/02/2021
+ms.date: 09/14/2021
 ---
 
 # Create and use the paginated report visual
@@ -91,9 +91,10 @@ You can decide whether report filters are automatically applied to the paginated
 
 - Select your paginated report visual. From the **Format** pane, turn **Auto-apply filters** on. 
 
-## Considerations  
+## Considerations and limitations 
 
-When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
+- When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
+- The paginated report visual isn't supported in Embedded scenarios yet. 
 
 ### Using a Power BI dataset with a date parameter
 

@@ -4,11 +4,10 @@ description: The Notification Center is a sequential feed of information related
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-ms.custom: video-bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/26/2021
+ms.date: 09/13/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -16,7 +15,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-The Power BI service keeps track of events that have occurred since the last time you signed in. This includes updates to apps, alerts that have been triggered on dashboards, information about Power BI events and meetings, and new content added to workspaces. The Notification Center saves a sequential list of these events. 
+The Power BI service keeps track of events that have occurred since the last time you signed in. This includes updates to apps, alerts that have been triggered on dashboards, information about Power BI events and meetings, and new content added to workspaces. The Notifications center saves a sequential list of these events. 
 
 When you're ready to review your notifications, select the bell icon ![Notification Center bell icon.](./media/end-user-notification-center/power-bi-bell.png). Your notifications are listed, with the most recent at the top. Viewed items are shown in gray, and unviewed items are highlighted and have a yellow corner.   
 
@@ -24,9 +23,9 @@ When you're ready to review your notifications, select the bell icon ![Notificat
 
 ## View your notifications
 
-When you sign in to Power BI, any new notifications that you've received while you were offline are added to your feed. If you do have new notifications, Power BI displays a yellow bubble with the number of new items above the Notification Center icon. 
+When you sign in to Power BI, any new notifications that you've received while you were offline are added to your feed. If you do have new notifications, Power BI displays a yellow bubble with the number of new items above the Notifications icon. 
 
-Because the Notification Center is part of the Power BI service top menu bar, you can open your notifications from most areas of the Power BI service. For example, you can open your notifications from **Home**, **Recents**, dashboards, reports, apps, workspaces, and the Power BI Q&A screen.
+Because **Notifications** is part of the Power BI service top menu bar, you can open your notifications from most areas of the Power BI service. For example, you can open your notifications from **Home**, **Recents**, dashboards, reports, apps, workspaces, and the Power BI Q&A screen.
 
 You get notifications for a variety of reasons, and these might also be sent to you via email. You get notifications: 
 
@@ -36,7 +35,7 @@ You get notifications for a variety of reasons, and these might also be sent to 
 
 Follow these steps to view your notifications:
    
-1. In the Power BI service menu bar, select the bell icon. In this example, you have two new notifications since the last time you opened the Notification Center.
+1. In the Power BI service menu bar, select the bell icon. In this example, you have two new notifications since the last time you opened the Notification center.
    
    ![Screenshot showing the top menu bar, with the bell icon selected.](./media/end-user-notification-center/power-bi-notification-icon.png)
 

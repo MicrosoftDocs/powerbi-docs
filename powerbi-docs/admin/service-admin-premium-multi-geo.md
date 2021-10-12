@@ -23,7 +23,7 @@ Sovereign clouds support Multi-Geo across regions within that cloud.
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
 > [!NOTE]
 > Power BI Premium Per User (PPU) is not supported for Multi-Geo.
@@ -93,7 +93,7 @@ Large-storage format datasets should not be moved from the region where they wer
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 - Query text and query result traffic for imported and DirectQuery data models does not transit through the home region. The report metadata does still come from the home region, and certain DNS routing states may take such traffic out of the region. 
 - Certain features such as screenshots, data alerts and others will still process data in the home region.
-- The detailed dataset metadata that is cached as part of [enhanced metadata scanning](service-admin-enhanced-metadata-scanning.md) is always stored in the home region, even if the scanned dataset is located in a remote region.
+- The detailed dataset metadata that is cached as part of [enhanced metadata scanning](./service-admin-metadata-scanning.md) is always stored in the home region, even if the scanned dataset is located in a remote region.
 - The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature is not supported on Multi-GEO at this time.
 - It is possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, note that you cannot move storage format datasets to another region. Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, you must deploy it as if it was a new model, and then delete the old model from the undesired region.
 
@@ -112,4 +112,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).

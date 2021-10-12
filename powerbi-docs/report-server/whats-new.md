@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/09/2021
+ms.date: 10/07/2021
+ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server
@@ -15,6 +16,42 @@ ms.date: 09/09/2021
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## September 2021 
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for September 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- Area chart transparency sliders
+- Inner padding for continuous axes
+- Small multiples new feature
+- Conditional formatting for assorted visuals
+- Customize shape formatting
+- Line chart improvements
+- X-axis constant line improvements
+- Line chart series labels
+- New formatting options for buttons
+- Toggle total columns in waterfall charts
+
+#### Modeling
+
+- New Model View
+- New way of expressing Date and DateTime values
+- Shortcut expression for CALCULATE now supports aggregation functions
+- New parameter for XIRR function
+- Making it easier to format based on a user’s locale
+- Evaluation configuration settings
+
+### Paginated reports in Power BI Report Builder
+
+- New version of Power BI Report Builder
+
+### Other
+
+- New Power BI visuals store experience
 
 ## May 2021
 

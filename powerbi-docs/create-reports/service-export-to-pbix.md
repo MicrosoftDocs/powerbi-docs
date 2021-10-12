@@ -7,8 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/11/2021
-ms.custom: video-ymWqU5jiUl0
+ms.date: 09/13/2021
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -21,7 +20,7 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 
 Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded PBIX files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded PBIX files using a Power BI Desktop version that does not support information protection.
 
-* To download the file, you must have edit access to the report.
+* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
 
 * The report must have been created using Power BI Desktop and *published* or *uploaded* to the Power BI service.
 
@@ -31,9 +30,14 @@ Always use the latest version of Power BI Desktop when you open downloaded files
 
 To download the .pbix file, follow these steps:
 
-1. In the Power BI service, open the report you want to download in [Editing view](./service-interact-with-a-report-in-editing-view.md).
+1. In the Power BI service, open the report you want to download. 
 
-2. From the top nav pane, select **File > Download report**.
+    >[!NOTE]
+    >You can download the report in Reading view or Editing view. The image in this procedure is in Editing view.
+
+2. From the top nav pane, select **File** > **Download report (Preview)**.
+
+   :::image type="content" source="media/service-export-to-pbix/power-bi-file-export-editing.png" alt-text="A screenshot of the File menu in the Power B I service, with the Download report option highlighted.":::
 
 3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the PBIX file. The default name of the file matches the title of the report.
 
