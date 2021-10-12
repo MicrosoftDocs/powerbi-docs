@@ -79,7 +79,7 @@ You can also download the entire [PowerBI-Developer-Samples](https://github.com/
 
 * [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1)
 
-* [End to end example - including pipeline creation and deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-E2ESampleFromPipelineCreationToDeployment.ps1)
+* [End to end example of pipeline creation and backward deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-E2ESampleFromPipelineCreationToDeployment.ps1)
 
 * [Assign an admin user to a pipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-AddUserToPipeline.ps1)
 
