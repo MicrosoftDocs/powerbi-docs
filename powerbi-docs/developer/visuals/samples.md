@@ -1,8 +1,8 @@
 ---
 title: Power BI visuals samples
 description: This article presents sample Power BI visuals including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
