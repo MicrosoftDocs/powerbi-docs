@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 10/12/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -72,6 +72,12 @@ The following list provides suggestions on how you can explore **DirectQuery for
 - Creating visuals that use columns from different data sources
 
 Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Azure Analysis Services model, if a perspective is available. 
+
+Beginning with the October 2021 version of Power BI Desktop, you have more control over your connections:
+* You can remove a table from  your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you cannot remove tables from the model)
+* You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables
+* You can specify whether to add any tables that are subsequently added to the dataset after you make the connection in your model
+* With the October 2021 release, performance improvements were made with parallel execution of model queries, and smart caching
 
 ## Considerations and limitations
 
