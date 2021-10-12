@@ -101,6 +101,8 @@ Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a membe
 
 You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines) to programmatically perform deployments. For more information, see [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
 
+If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
+
 >[!NOTE]
 >To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
 

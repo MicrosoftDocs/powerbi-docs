@@ -10,9 +10,9 @@ ms.custom: contperf-fy21q1
 ms.date: 09/13/2021
 ---
 
-# Assign a workspace to a deployment pipeline
+# Assign a workspace to a deployment pipeline STAGE
 
-Deployment pipelines enables you to assign and unassign a workspace to any stage in a pipeline.
+Deployment pipelines enables you to assign and unassign a workspace to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces for each pipeline stage. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
 
 After assigning a workspace to a deployment pipeline stage, deployment pipelines attempts to recreate the connections between the Power BI items in the adjacent stages. If you're assigning a workspace to the test stage, deployment pipelines cannot recreate these connections as to reestablish the connections between the items in the *test* and *production* stages, follow the instructions in []() to 
 
