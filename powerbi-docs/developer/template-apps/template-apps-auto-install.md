@@ -88,7 +88,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## Step 2: Create an install ticket
 
 Create an install ticket, which is used when you redirect your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
-* [Template Apps CreateInstallTicket](/rest/api/power-bi/templateapps/createinstallticket)
+* [Template Apps CreateInstallTicket](/rest/api/power-bi/template-apps/create-install-ticket)
 
 A sample of how to create an install ticket for template app installation and configuration is available from the [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
