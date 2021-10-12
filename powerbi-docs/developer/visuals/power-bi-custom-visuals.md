@@ -2,7 +2,7 @@
 title: Finding Power BI visuals
 description: This article describes the main ways of getting Power BI visuals.
 author: mberdugo
-ms.author: monaberdugougougougo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi

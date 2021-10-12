@@ -2,7 +2,7 @@
 title: Introduction to unit tests for Power BI visual projects
 description: This article describes how to write unit tests for Power BI visual projects.
 author: mberdugo
-ms.author: monaberdugougo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

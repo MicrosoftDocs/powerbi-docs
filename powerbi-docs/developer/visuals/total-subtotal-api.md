@@ -2,7 +2,7 @@
 title: Introduction to the total and subtotal API in Power BI visual
 description: This article describes the total and subtotal API for creating Power BI visuals.
 author: mberdugo
-ms.author: monaberdugougo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

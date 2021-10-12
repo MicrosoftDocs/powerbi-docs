@@ -2,7 +2,7 @@
 title: Power BI visual interactions
 description: The article describes the interaction between the Power BI user, visual, and host.
 author: mberdugo
-ms.author: monaberdugougougo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi

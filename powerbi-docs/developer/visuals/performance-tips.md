@@ -2,7 +2,7 @@
 title: Performance tips in Power BI
 description: How to build a high performance Power BI visual.
 author: mberdugo
-ms.author: monaberdugougo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

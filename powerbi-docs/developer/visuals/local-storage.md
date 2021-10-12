@@ -2,7 +2,7 @@
 title: Local Storage API in Power BI Visuals
 description: The article describes how to use Power BI Visuals API to get access to browser local storage.
 author: mberdugo
-ms.author: monaberdugougo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
