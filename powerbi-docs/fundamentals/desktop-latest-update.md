@@ -43,7 +43,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Heat map layer - Azure Maps Visual (preview)  [[video]](https://youtu.be/4uVNk9xH2S0?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518680)  
+* Heat map layer - Azure Maps Visual (preview)  [[video]](https://youtu.be/4uVNk9xH2S0?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518680) [[article]](/azure/azure-maps/map-add-heat-map-layer?context=/power-bi/create-reports/context/context) 
 * DirectQuery for Power BI datasets and Azure Analysis Services [[video]](https://youtu.be/4uVNk9xH2S0?t=73)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518681)  [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 * Tenant-level features switch for Bing Maps  [[video]](https://youtu.be/4uVNk9xH2S0?t=291)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518684)  [[article]](../visuals/power-bi-map-tips-and-tricks.md)
 
