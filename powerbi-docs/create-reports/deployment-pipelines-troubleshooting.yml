@@ -92,11 +92,7 @@ sections:
       - question: |
           How can I assign workspaces to all the stages in a pipeline?
         answer: |
-          You can either assign one workspace to your pipeline and then deploy it across the pipeline, or assign a different workspace to each pipeline stage.
-          
-          * To deploy a workspace from one stage to another, see [assign a workspace to a deployment pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline). Once a workspace is assigned to a pipeline, you can deploy it to the next pipeline stages. During first-time deployment, a new workspace is created with copies of the items in the source stage. The relationships of the copied items are kept.
-
-          * To assign a workspace to a specific stage, see [Assign a workspace to a deployment pipeline](deployment-pipelines-assign.md).
+          You can either assign one workspace to your pipeline and then [deploy it across the pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline), or [assign a different workspace to each pipeline stage](deployment-pipelines-assign.md).
           
       - question: |
           Why did my first deployment fail?
@@ -219,6 +215,16 @@ sections:
           
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
           
+      - question: |
+          Why am I getting the error message 'workspace member permissions needed' when I try to assign a workspace to a pipeline stage?
+        answer: |
+          When you assign a workspace to a pipeline stage, deployment pipelines attempts to recreate the connections between the Power BI items in the adjacent stages. To assign a workspace to a pipeline stage, you need to be a member of the workspaces that the items has connection to, otherwise deployment pipelines will not be able to establish these connections.
+
+      - question: |
+          How do I reestablish connections after reassigning a workspace to the test stage?
+        answer: |
+          After you reassign a workspace to a deployment pipeline *test* stage, deployment pipelines cannot reestablish the Power BI items connections because they run across all of the pipeline stages. To reestablish these connections, unassign and reassign the workspaces in the *development* and *production* stages. Reassigning the workspaces in these stages, will cause deployment pipelines to reestablish the connection between items in these stages and the *test* stage.
+
   - name: Paginated reports
     questions:
       - question: |
