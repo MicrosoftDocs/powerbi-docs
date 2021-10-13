@@ -1,8 +1,8 @@
 ---
 title: Add the locale in Power BI for Power BI visuals
 description: Learn how visuals can retrieve the Power BI locale to localize their content to the relevant language.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Power BI visuals display warning icon
 description: Learn how to add a display warning icon to your Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi

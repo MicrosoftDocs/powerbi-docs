@@ -1,8 +1,8 @@
 ---
 title: Apply selection to multiple visuals feature in Power BI
 description: This article describes how to apply a selection to multiple visuals by using the supportsMultiVisualSelection feature in Power BI.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
