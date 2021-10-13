@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/13/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
@@ -17,24 +17,23 @@ LocalizationGroup: Visualizations
 R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R ](../create-reports/desktop-r-visuals.md).
 
 ## Viewing R visuals in the Power BI service
+
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.
 
 > [!NOTE]
 > The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Microsoft R 3.4.4.*
-> 
-> 
 
 The following image shows a Power BI dashboard with a collection of R visuals used for advanced analytics.
 
-![Screenshot of the Power BI service report canvas](media/service-r-visuals/power-bi-r-visuals.png)
+.:::image type="content" source="media/service-r-visuals/power-bi-r-visuals.png" alt-text="Screenshot of the Power BI service report canvas":::
 
 R visuals are created in a [Power BI Desktop report](../fundamentals/desktop-get-the-desktop.md), like the report shown in the following image.
 
-![Desktop report with two visuals](media/service-r-visuals/power-bi-r-visual-desktop.png)
+:::image type="content" source="media/service-r-visuals/power-bi-r-visual-desktop.png" alt-text="Desktop report with two visuals.":::
 
-Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. 
+Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service.
 
- In the service, not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
+In the service, not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
 You can download this [sample Power BI Desktop file](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix file) that contains a few R visuals to see how this works, and to experiment.
 
@@ -42,9 +41,10 @@ R visuals that are created in **Power BI Desktop**, and then published to the Po
 
 As you can see in the following image, R visuals in the Power BI service, either in dashboards or reports, largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
 
-![screenshot of the report page in the Power BI service](media/service-r-visuals/power-bi-r-visual.png)
+:::image type="content" source="media/service-r-visuals/power-bi-r-visual.png" alt-text="Screenshot of the report page in the Power BI service.":::
 
 ## R scripts security
+
 R visuals are created from R scripts, which could potentially contain code with security or privacy risks.
 
 These risks mainly exist in the authoring phase when the script author run the script on their own computer.
@@ -54,15 +54,18 @@ The Power BI service applies a *sandbox* technology to protect users and the ser
 This *sandbox* approach imposes some restrictions on the R scripts running in the Power BI service, such as accessing the Internet, or accessing to other resources that are not required to create the R visual.
 
 ## R scripts error experience
+
 When an R script encounters an error, the R visual is not plotted and an error message is displayed. For details on the error, select **See details** from the R visual error on the canvas, as shown in the following image.
 
-![error message](media/service-r-visuals/r-visuals-service-4.png)
+:::image type="content" source="media/service-r-visuals/r-visuals-service-4.png" alt-text="Screenshot showing an R visual error message.":::
 
 As another example, the following image shows the error message that appears when an R script failed to run properly due to a missing R package in Azure.
 
-![Screenshot showing a runtime error](media/service-r-visuals/r-visuals-service-5.png)
+:::image type="content" source="media/service-r-visuals/r-visuals-service-5.png" alt-text="Screenshot showing a runtime error.":::
+
 
 ## Licensing
+
 R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
 
 Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) for more information.
@@ -80,6 +83,7 @@ The following table describes R visuals capabilities based on licensing.
 
 
 ## Known Limitations
+
 R visuals in the Power BI service have a few limitations:
 
 * R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
@@ -114,6 +118,7 @@ powerbi_rEnableShowTextForCJKLanguages =  1
 ```
 
 ## Overview of R packages
+
 R packages are collections of R functions, data, and compiled code that are combined in a well-defined format. When R is installed, it comes with a standard set of packages, and other packages are available for download and installation. Once installed, an R package must be loaded into the session to be used. The primary source of free R packages is CRAN, the [Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html).
 
 **Power BI Desktop** can use any type of R packages without limitation. You can install R packages for use in **Power BI Desktop** on your own (using the [RStudio IDE](https://www.rstudio.com/), for example).
@@ -121,6 +126,7 @@ R packages are collections of R functions, data, and compiled code that are comb
 R visuals in the **Power BI service** are supported by the packages found in the **Supported Packages** section found in [this article](../connect-data/service-r-packages-support.md). If you don't find a package you're interested in among the supported packages list, you can request the support of the package. See [R packages in the Power BI service](../connect-data/service-r-packages-support.md) for information on how to request support.
 
 ### Requirements and Limitations of R packages
+
 There are a handful of requirements and limitations for R packages:
 
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
@@ -133,6 +139,7 @@ There are a handful of requirements and limitations for R packages:
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ### Supported Packages:
+
 For a long list of supported R packages (and the short list of unsupported packages) please see the following article:
 
 * [R packages in the Power BI service](../connect-data/service-r-packages-support.md)
