@@ -35,7 +35,7 @@ There are several positive results from distributing backend processing of conte
 1. The shared nodes are at least as large as an original Premium P3 node, which means there are more v-cores to perform any operations, which can increase performance by up to 16x when comparing to an original Premium P1.
 2. Whatever node your processing lands on, the placement mechanism makes sure memory remains available for your operation to complete, within the applicable memory constraints of your capacity. (see limitations section of this doc for full detail of memory constraints)
 3. Internal noisy neighbor problems in your capacity don't occur, since each of the *view* and *refresh* operations uses its own set of physical v-cores, with their own memory, on different computing nodes.
-4. Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups. As a result of this separation, there are no controls for paginated report workloads workloads.
+4. Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups. As a result of this separation, there are no controls for paginated report workloads.
 5. The limitations on different capacity SKUs are not based on the physical constraints as they were in the original version of Premium; rather, they are based on an expected and clear set of rules that the Power BI Premium service enforces:
     * Total capacity CPU throughput is at or below the throughput possible with the v-cores your purchased capacity has.
     * Memory consumption required for viewing and refresh operations remains within the memory limits of your purchased capacity.
