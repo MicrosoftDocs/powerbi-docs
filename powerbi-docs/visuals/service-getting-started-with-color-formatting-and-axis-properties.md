@@ -47,6 +47,8 @@ You can customize many elements of each visualization. The options available dep
 * Visual headers
 * Shapes
 * Position
+* Zoom
+
 and more.
 
 > [!NOTE]
@@ -81,11 +83,11 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 
     :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png" alt-text="Chart with new colors applied to some columns.":::
 
-Here are a few useful tips for working with colors. The numbers in the following list are also shown on the following screen, indicating where these useful elements can be accessed or changed.
+Here are a few useful tips for working with colors. The numbers in the following list are also shown on the following image, indicating where these useful elements can be accessed or changed.
 
-1. Don’t like the color? No problem, just select **Revert to default** and your selection reverts to the default setting. 
+1. Don’t like the color? No problem, just select the down-arrow to open the color palette and select a new one.
 
-1. Don't like any of the color changes? Select **Revert to default** from the bottom of the **Data color** section, and your colors revert to the default settings. 
+1. Don't like any of the color changes? Select **Revert to default** from the bottom of the **Data color** section, and your colors revert to the default settings.
 
 1. Want a color you don’t see in the palette? Just select **More colors...**, and choose from the spectrum.  
 
@@ -142,7 +144,7 @@ And, here is the *after* picture.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png" alt-text="Area chart formatted.":::
 
-We selected the visualization to make it active and opened the Formatting tab.  We selected **Data labels** and turned them On. Then we increased font to 12, changed font family to Arial Black, turned **Show background** to On and background color to white with a transparency of 5%.
+We selected the visualization to make it active and opened the Formatting tab.  We selected **Data labels** and turned them On. Then we increased font to 12, changed font family to Arial Black, turned **Show background** to On and **Background color** to white with a **Transparency** of 5%.
 
 Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
 
