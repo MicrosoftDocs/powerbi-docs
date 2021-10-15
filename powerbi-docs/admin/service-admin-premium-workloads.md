@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 10/14/2021
 LocalizationGroup: Premium
 ---
 
@@ -194,7 +194,7 @@ Paginated reports offer the same capabilities that SQL Server Reporting Services
 
 In Gen1 Premium capacities, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
 
-In Gen2 Premium capacities, the paginated reports workload is enabled automatically, and is never unavailable.
+In [Gen2 Premium capacities](../admin/service-premium-gen2-what-is#paginated-reports-and-premium-gen2), the paginated reports workload is enabled automatically, and is never unavailable.
 
 ## Configure workloads
 
