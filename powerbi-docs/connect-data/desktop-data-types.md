@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 05/05/2021
 LocalizationGroup: Connect to data
 ---
