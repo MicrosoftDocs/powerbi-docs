@@ -162,7 +162,7 @@ You may also have a [Center of Excellence (COE)](center-of-excellence-establish.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
 
-For more information about user support, with a focus on the resolution of issues, see [Power BI adoption roadmap: User support](../guidance/powerbi-adoption-roadmap-user-support.md).
+For more information about user support, with a focus on the resolution of issues, see [Power BI adoption roadmap: User support](powerbi-adoption-roadmap-user-support.md).
 
 ## Next steps
 
