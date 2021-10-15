@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 09/16/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
