@@ -26,8 +26,6 @@ In the [previous article](end-user-license.md), you learned that what you can do
 
 This article lists which features in the Power BI service are available to *business users* like you. By definition, *business users* have a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have content stored in Premium capacity.
 
-<art>
-
 ## Quick review of terminology
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
