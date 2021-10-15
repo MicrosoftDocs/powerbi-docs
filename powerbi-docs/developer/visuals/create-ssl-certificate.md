@@ -1,8 +1,8 @@
 ---
 title: Create SSL certificates for Power BI visuals
 description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

@@ -1,8 +1,8 @@
 ---
 title: Add bookmark support for Power BI visuals
 description: Power BI visuals can handle bookmarks switching
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
