@@ -102,9 +102,9 @@ You can download and set up an attendee kit, which consists of the presentation 
 > [!IMPORTANT]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md). A newly signed up account can benefit from a 60-day trial license.
 >
-> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq#using-premium-per-user--ppu-) license to use a dataset as a report data source.
+> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq.md#using-premium-per-user--ppu-) license to use a dataset as a report data source.
 >
-> Some lab tasks involve publishing paginated reports to a Power BI service workspace. You can only open a paginated report in the Power BI service when it's saved to a workspace that has its [license mode](../consumer/end-user-workspaces#licensing-workspaces-and-capacity) set to **Premium per user** or **Premium capacity**.
+> Some lab tasks involve publishing paginated reports to a Power BI service workspace. You can only open a paginated report in the Power BI service when it's saved to a workspace that has its [license mode](../consumer/end-user-workspaces.md#licensing-workspaces-and-capacity) set to **Premium per user** or **Premium capacity**.
 
 ## Instructor kit
 
