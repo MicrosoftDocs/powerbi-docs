@@ -12,13 +12,11 @@ LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
 
-Power BI is designed to work with any of the supported browsers mentioned below. However, performance differs depending on your choice of a browser. If you're using Internet Explorer in particular, you may encounter worse performance. We strongly recommend switching from Internet Explorer to a modern browser, including Microsoft Edge. If you still encounter unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
+Power BI is designed to work with any of the supported modern browsers mentioned below. However, performance differs depending on your choice of a browser. If you're using Internet Explorer in particular, which is no longer supported by Power BI, you may encounter worse performance. We strongly recommend a supported modern browser, like Microsoft Edge. If you still encounter unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
 
 Power BI supports these browsers on all platforms where they're available:
 
 - Microsoft Edge Chromium.
-- Internet Explorer 11. However, some advanced features, such as lineage view, aren't supported in Internet Explorer. 
-- Microsoft 365 apps and services, including Power BI, will no longer support Internet Explorer 11 (IE 11) starting in August 2021. The Internet Explorer 11 desktop application will be retired on June 15, 2022. Refer to [this Microsoft 365 blog post](https://aka.ms/AA97tsw) for more information. 
 - Chrome desktop latest version.
 - Safari Mac latest version.
 - Firefox desktop latest version. Firefox may change the fonts used in Power BI.
