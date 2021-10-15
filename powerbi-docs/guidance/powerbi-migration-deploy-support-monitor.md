@@ -2,12 +2,12 @@
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
-ms.author: kfollis
+ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 10/15/2021
 ms.custom: intro-deployment
 ---
 
@@ -161,6 +161,8 @@ Having a formal support process, staffed by IT with support tickets, is also ess
 You may also have a [Center of Excellence (COE)](center-of-excellence-establish.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
+
+For more information about user support, with a focus on the resolution of issues, see [Power BI adoption roadmap: User support](powerbi-adoption-roadmap-user-support.md).
 
 ## Next steps
 
