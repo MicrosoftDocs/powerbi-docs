@@ -1,7 +1,7 @@
 ---
 title: Use natural language to explore data with Power BI Q&A
-description: How to use Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language for queries.
-ms.author: mohaali
+description: How to use Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language queries.
+author: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -81,9 +81,6 @@ To add the Q&A visual to a report, select the **Q&A** icon, or select the Q&A vi
 ![Q&A visual icon](media/qna-visual-icon.png)
 
 To add a button, on the **Home** ribbon, select **Buttons** > **Q&A**. You can completely customize the Q&A button image.
-
-> [!NOTE]
-> When you start Q&A from the button, it still uses the old Q&A. Subsequent releases of Power BI will change that.
 
 ## Use Q&A for dashboards
 
