@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 10/15/2021
 LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
