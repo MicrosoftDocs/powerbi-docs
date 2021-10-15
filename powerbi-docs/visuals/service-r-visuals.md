@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/13/2021
+ms.date: 10/15/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
@@ -25,7 +25,7 @@ The Power BI service supports viewing and interacting with visuals created with 
 
 The following image shows a Power BI dashboard with a collection of R visuals used for advanced analytics.
 
-.:::image type="content" source="media/service-r-visuals/power-bi-r-visuals.png" alt-text="Screenshot of the Power BI service report canvas":::
+:::image type="content" source="media/service-r-visuals/power-bi-r-visuals.png" alt-text="Screenshot of the Power BI service report canvas":::
 
 R visuals are created in a [Power BI Desktop report](../fundamentals/desktop-get-the-desktop.md), like the report shown in the following image.
 

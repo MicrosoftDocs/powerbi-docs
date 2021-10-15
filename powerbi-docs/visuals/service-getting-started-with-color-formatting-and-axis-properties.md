@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.custom: pbibetadocbug, intro-get-started
-ms.date: 10/13/2021
+ms.date: 10/15/2021
 LocalizationGroup: Visualizations
 ---
 # Getting started with the formatting pane
@@ -43,8 +43,9 @@ You can customize many elements of each visualization. The options available dep
 * Background
 * Lock aspect
 * Border
-* Tooltips
-* Visual headers
+* Shadow
+* Tooltip
+* Visual header
 * Shapes
 * Position
 * Zoom
