@@ -23,9 +23,16 @@ By making it easy to find quality datasets and their related reports, the datase
 This article explains what you see on the datasets hub and describes how to use it. For dataset owners, it also includes a number of tips about how to [enhance the discoverability and useability of their datasets](#make-your-dataset-discoverable).
 
 **What datasets do I see in the datasets hub?**
-* For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
-* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear grayed out, and you can't create reports from them or see their details. You can request access to them, though. 
-* If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
+
+* Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
+* Datasets that you have read-only permission for.
+* Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out, and you can't create reports from them or get to their dataset info page. You can request access to them, though.
+
+For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+
+If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
+ 
+
 
 ## Find the dataset you need
 
@@ -76,6 +83,23 @@ The columns of the list are described below. Click on a column header to sort by
 To create a new report based on dataset, or to pull the data into Excel with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the dataset.
 
 When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
+
+### Read-only permission for datasets
+
+A user gets read-only permission on a dataset when someone shares a report or dataset with them but doesn’t grant them build permission on the dataset.
+
+With read-only access, a user can view some information about the dataset on the dataset hub and on the dataset's info page, as well as perform a limited number of actions on the dataset, but they can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, the user must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
+
+To request build permission on a dataset, do one of the following:
+
+* From the datasets hub: Find the dataset in the datasets list, hover over it with the mouse, and click  the **Request access** icon that appears
+
+    :::image type="content" source="media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png" alt-text="Request access icon on the datasets hub.":::
+
+* From the dataset info page, click the **Request access** button at the top right corner of the dataset info page.
+
+    :::image type="content" source="media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png" alt-text="Request access icon on the datasets hub.":::
+
 
 ## View dataset details and explore related reports
 
