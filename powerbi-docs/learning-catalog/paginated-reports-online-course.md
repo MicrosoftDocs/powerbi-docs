@@ -2,18 +2,18 @@
 title: "Power BI Paginated Reports in a Day course"
 description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
-ms.author: kfollis
+ms.author: v-petermyers
 ms.reviewer: maggies
 ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 12/31/2020
+ms.date: 10/15/2021
 ---
 
 # Power BI Paginated Reports in a Day course
 
-The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit) that you can download and use to complete eight hands-on labs.
+The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also an [attendee kit](#attendee-kit) that you can download and use to complete nine hands-on labs.
 
 Specifically, the course targets:
 
@@ -78,18 +78,18 @@ The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 25: [Bonus Content: December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## Self-study kit
+## Attendee kit
 
-You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
+You can download and set up an attendee kit, which consists of the presentation content and nine hands-on labs:
 
-1. Use [this link](https://aka.ms/priad-student) to download the self-study kit (.zip) locally to your PC (Windows 7, or later).
+1. Use [this link](https://aka.ms/priad-en) to download the _English_ language attendee kit (.zip) locally to your PC (Windows 8, or later). Alternatively, use [this link](https://aka.ms/priad-student) to download the _localized_ attendee kit (.zip) locally to your PC (Windows 8, or later).
 1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
 1. Extract the **PowerBIPRIAD-Student.zip** file contents to your root course folder.
 1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD** folder, open the **ReadMe.txt** file and work through the setup instructions.
 
-> [!TIP]
-> The **ReadMe.txt** file, lab documents and presentation file (PDF) are available in English and also the following eight languages:
+> [!NOTE]
+> In the localized attendee kit, you will find documents for the following eight languages:
 > - German (de-DE)
 > - Spanish (es-ES)
 > - French (fr-FR)
@@ -99,16 +99,16 @@ You can download and set up a self-study kit, which consists of the presentation
 > - Portuguese, Brazilian (pt-BR)
 > - Chinese, simplified characters (zh-CN)
 
-> [!NOTE]
-> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
+> [!IMPORTANT]
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md). A newly signed up account can benefit from a 60-day trial license.
 >
-> You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
+> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq#using-premium-per-user--ppu-) license to use a dataset as a report data source.
 >
-> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on a [capacity](../admin/service-premium-what-is.md#reserved-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing paginated reports to a Power BI service workspace. You can only open a paginated report in the Power BI service when it's saved to a workspace that has its [license mode](../consumer/end-user-workspaces#licensing-workspaces-and-capacity) set to **Premium per user** or **Premium capacity**.
 
 ## Instructor kit
 
-Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
+Use [this link](https://aka.ms/priad-inst-en) to download the instructor kit (.zip) locally to your PC.
 
 ## Next steps
 
