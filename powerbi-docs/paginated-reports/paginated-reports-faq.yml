@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: conceptual
-  ms.date: 07/28/2021
+  ms.date: 10/14/2021
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -25,7 +25,7 @@ sections:
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
-          The paginated reports workload is available on P1 – P3 SKUs. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
+          The paginated reports workload is available on P1 – P3 SKUs for Premium Gen1. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
 
           > [!NOTE]
           > Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
@@ -46,9 +46,11 @@ sections:
           User access for paginated reports is the same as user access for all other content in the Power BI service. 
 
       - question: |
-          How do I turn on/off my paginated reports workload?
+          How do I turn on/off my paginated reports workload in a Gen1 Premium capacity?
         answer: |
-          The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.  
+          A Gen1 Premium capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.
+          
+          In a [Gen2 Premium capacity](../admin/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2), the paginated report workload is always on.
 
       - question: |
           How can I monitor usage of paginated reports in my tenant?
