@@ -2,7 +2,7 @@
 title: Use natural language to explore data with Power BI Q&A
 description: How to use Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language queries.
 author: mohaali
-
+ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
