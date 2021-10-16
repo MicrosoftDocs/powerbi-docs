@@ -84,9 +84,9 @@ When you create a new report based on the dataset, the report edit canvas opens.
 
 ### Read-only permission for datasets
 
-A user gets read-only permission on a dataset when someone shares a report or dataset with them but doesn’t grant them build permission on the dataset.
+You get read-only permission on a dataset when someone shares a report or dataset with you but doesn’t grant you build permission on the dataset.
 
-With read-only access, a user can view some information about the dataset on the dataset hub and on the dataset's info page, as well as perform a limited number of actions on the dataset, but they can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, the user must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
+With read-only access, you can view some information about the dataset on the dataset hub and on the dataset's info page, as well as perform a limited number of actions on the dataset, but you can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, you must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
 
 To request build permission on a dataset, do one of the following:
 
