@@ -6,7 +6,7 @@ ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 10/15/2021
 ---
 
