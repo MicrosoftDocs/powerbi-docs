@@ -25,7 +25,7 @@ This article explains what you see on the datasets hub and describes how to use 
 **What datasets do I see in the datasets hub?**
 
 * Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
-* Datasets that you have read-only permission for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
+* Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
 * Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
 
 For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
@@ -100,11 +100,11 @@ To request build permission on a dataset, do one of the following:
 
 ### Discoverable datasets
 
-Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](). Discoverable datasets appear greyed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info or and to be able to use the dataset, you can request access.
+Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable]((../collaborate-share/service-discovery.md)). Discoverable datasets appear greyed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
 
-To request access to the dataset, on the datasets hub, hover over it with the mouse, and click the **Request access** icon that appears
+To request access, on the datasets hub, hover over it with the mouse, and click the **Request access** icon that appears
 
-    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon on the datasets hub.":::
+:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
 
 
 
