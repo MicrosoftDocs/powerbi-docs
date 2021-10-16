@@ -94,11 +94,11 @@ To request build permission on a dataset, do one of the following:
 
 * From the datasets hub: Find the dataset in the datasets list, hover over it with the mouse, and click  the **Request access** icon that appears
 
-    :::image type="content" source="media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png" alt-text="Request access icon on the datasets hub.":::
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
 
 * From the dataset info page, click the **Request access** button at the top right corner of the dataset info page.
 
-    :::image type="content" source="media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png" alt-text="Request access icon on the datasets hub.":::
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets hub.":::
 
 
 ## View dataset details and explore related reports
