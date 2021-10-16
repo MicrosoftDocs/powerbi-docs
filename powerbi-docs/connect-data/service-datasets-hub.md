@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 10/16/2021
 LocalizationGroup: Share your work
 ---
 # Datasets discovery using the datasets hub
@@ -105,8 +105,6 @@ Dataset owners can make it possible for you to find a their dataset without actu
 To request access, on the datasets hub, hover over it with the mouse, and click the **Request access** icon that appears
 
 :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
-
-
 
 ## View dataset details and explore related reports
 
