@@ -1,8 +1,8 @@
 ---
 title: Monitor Power BI Embedded
 description: Start here to learn how to monitor Power BI Embedded.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
