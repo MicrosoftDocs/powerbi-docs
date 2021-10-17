@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 10/16/2021
+ms.date: 10/17/2021
 LocalizationGroup: Share your work
 ---
 # Datasets discovery using the datasets hub
