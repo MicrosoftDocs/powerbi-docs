@@ -47,7 +47,7 @@ The datasets hub presents you with a selection of recommended datasets and a lis
 1. Click to view details page and to explore related reports.
 1. Click to view options.
 1. Click to view a summary of details.
-1. A greyed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. A grayed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
 1. Click to see dataset description.
 
@@ -100,7 +100,7 @@ To request build permission on a dataset, do one of the following:
 
 ### Discoverable datasets
 
-Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear greyed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
+Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
 
 To request access, on the datasets hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
 
