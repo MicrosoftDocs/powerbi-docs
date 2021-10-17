@@ -194,7 +194,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ---
 
-## Limitations
+## Considerations and limitations
 
 The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
 
