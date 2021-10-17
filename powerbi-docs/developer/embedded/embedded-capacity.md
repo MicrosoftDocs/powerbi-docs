@@ -90,7 +90,7 @@ The table below lists payment and usage considerations per capacity.
 | **SKU**        | A                                                                | EM                                           | P                                      |
 | **Billing**    | Hourly                                                           | Monthly                                      | Monthly                                |
 | **Commitment** | None                                                             | Yearly                                       | Monthly or yearly                      |
-| **Usage**      | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a> | Embed in apps, and in Microsoft applications | Embed in apps, and in Power BI service |
+| Usage      | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a> | Embed in apps, and in Microsoft applications | Embed in apps, and in Power BI service |
 
 ### SKU memory and computing power
 
