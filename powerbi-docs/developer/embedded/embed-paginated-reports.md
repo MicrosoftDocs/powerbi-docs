@@ -1,8 +1,8 @@
 ---
 title: Embed paginated reports in your Power BI embedded analytics application
 description: Learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.topic: how-to
 ms.service: powerbi

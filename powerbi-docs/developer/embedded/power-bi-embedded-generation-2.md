@@ -1,8 +1,8 @@
 ---
 title: Power BI Embedded Generation 2 explained as part of Power BI embedded analytics
 description: Learn about the Power BI Embedded Generation 2 offering in Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
