@@ -18,6 +18,7 @@ In [Part 1](power-bi-report-add-visualizations-i.md), you created a basic visual
 
 
 ## Create a new visualization
+
 In this tutorial, we'll dig into our Retail Analysis dataset and create a few key visualizations.
 
 ## Prerequisites
