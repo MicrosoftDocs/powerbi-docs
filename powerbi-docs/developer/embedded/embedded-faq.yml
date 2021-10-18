@@ -294,7 +294,7 @@ sections:
       - question: |
           How can I embed a paginated report visual in a Power BI report?
         answer: |
-          To embed an RDL visual in a Power BI report with the *Embed for your Customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the IDs of the following:
+          To embed an RDL visual in a Power BI report with the *Embed for your Customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the following IDs:
           *	PBI report 
           *	RDL report
           *	PBI report’s dataset
