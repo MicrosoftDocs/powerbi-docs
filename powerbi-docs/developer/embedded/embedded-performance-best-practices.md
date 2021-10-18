@@ -1,8 +1,8 @@
 ---
 title: Power BI embedded analytics performance best practices
 description: This article provides guidance for Power BI embedded analytics best practices.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

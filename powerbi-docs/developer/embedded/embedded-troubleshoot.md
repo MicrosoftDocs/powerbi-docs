@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting your Power BI embedded analytics application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
