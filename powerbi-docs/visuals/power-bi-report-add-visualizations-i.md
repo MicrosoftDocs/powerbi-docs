@@ -22,7 +22,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 This tutorial uses the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
+1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open report**
 
 1. Find your copy of the **Sales and Marketing Sample PBIX file**
 
@@ -41,7 +41,7 @@ This tutorial uses the [Sales and Marketing Sample PBIX file](https://download.m
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-column-chart.png" alt-text="Screenshot of a column chart with a single column.":::
 
-   Or, start with a category field, such as **Name** or **Product**. Power BI creates a table and adds that field to the **Values** well.
+   Or, start with a field, such as **Product** > **Category**. Power BI creates a table and adds that field to the **Values** well.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-product.png" alt-text="Screenshot of a table with four categories.":::
 
