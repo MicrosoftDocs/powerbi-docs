@@ -320,7 +320,7 @@ sections:
             ]
           }
           ```
-          # Master user is not supported
+          **Note: Master user is not supported**
 
       - question: |
           Can you manage an On-premises data gateway with service principal?
