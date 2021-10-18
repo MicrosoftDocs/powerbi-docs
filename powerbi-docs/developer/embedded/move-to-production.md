@@ -1,8 +1,8 @@
 ---
 title: Move your Power BI embedded analytics application to production
 description: Learn what are the needed steps to move your Power BI application to production.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi

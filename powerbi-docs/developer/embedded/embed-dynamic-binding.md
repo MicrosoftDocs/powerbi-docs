@@ -1,8 +1,8 @@
 ---
 title: Connect a Power BI report to a dataset using dynamic binding
 description: Learn how to embed a Power BI report using dynamic binding.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
