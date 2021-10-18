@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 10/18/2021
 LocalizationGroup: Conceptual
 ---
 
@@ -269,7 +269,7 @@ For Premium Gen1, a single sandbox exists per each one of the capacities of the 
 
 ![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
 
-For Premium Gen2 (in preview), an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
+For Premium Gen2, an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
 
 ![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
 

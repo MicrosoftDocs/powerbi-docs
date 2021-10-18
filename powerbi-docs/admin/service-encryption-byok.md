@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/15/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -202,7 +202,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/25/2021
+ms.date: 10/18/2021
 LocalizationGroup: Data from files
 ---
 # Understanding and optimizing dataflows refresh
@@ -102,7 +102,7 @@ For example, if you have a dataflow with three tables, no individual table can t
 
 If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](/power-query/power-query-folding) on your source systems.
 
-Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
+Separately, consider upgrading to Premium Per User, which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
 
 ### Long durations
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 10/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -98,5 +98,5 @@ And that's it - your Power BI Premium Gen2 subscription is now configured to use
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
