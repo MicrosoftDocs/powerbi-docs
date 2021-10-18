@@ -1,5 +1,5 @@
 ---
-title: What is Power BI Premium Gen2? (preview)
+title: What is Power BI Premium Gen2?
 description: Power BI Premium Gen2 provides streamlined use and management of capacities for your organization.
 author: davidiseminger
 ms.author: davidi
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/07/2021
+ms.date: 10/18/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium Gen2?
 
-Power BI Premium released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
+Power BI Premium released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 
 :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto scale in Power B I Premium.":::
 
@@ -30,7 +30,7 @@ Premium Gen2 provides the following updates or improved experiences:
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
-* **Improved and streamlined metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. 
+* **Improved and streamlined metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting.
 
 * **Autoscale** is an optional feature that allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
 
@@ -86,7 +86,7 @@ In [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), if
 
 ### Updates for Premium Gen2
 
-**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities use the Capacity Utilization App, which will be made available during the preview. 
+**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities use the Capacity Utilization App. 
 
 You can download and install the metrics app for Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) using the [following link](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview).
 

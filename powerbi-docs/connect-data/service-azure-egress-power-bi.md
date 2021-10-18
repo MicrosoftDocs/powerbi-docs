@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/18/2021
 LocalizationGroup: Data from databases
 ---
 # Power BI and Azure egress
@@ -33,6 +33,6 @@ For more information about Power BI Premium or Multi-Geo, take a look at the fol
 * [Azure bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth/)
 * [What is Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 * [How to purchase Power BI Premium](../admin/service-admin-premium-purchase.md)
-* [Multi-Geo support for Power BI Premium (Preview)](../admin/service-admin-premium-multi-geo.md)
+* [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
 * [Power BI Premium FAQ](../admin/service-premium-faq.yml)
