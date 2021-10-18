@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 10/18/2021
 LocalizationGroup: Visualizations
 ---
 # Add visuals to a Power BI report (part 2)
