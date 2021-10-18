@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/09/2021
+ms.date: 10/18/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -34,7 +34,7 @@ Power BI Embedded is for ISVs and developers who want to embed visuals into thei
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
 
 >[!NOTE]
->Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+>Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Power BI Premium
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/25/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium 
 ---
 
@@ -23,7 +23,8 @@ Sovereign clouds support Multi-Geo across regions within that cloud.
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+
 
 > [!NOTE]
 > Power BI Premium Per User (PPU) is not supported for Multi-Geo.
@@ -104,7 +105,7 @@ Large-storage format datasets should not be moved from the region where they wer
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -112,4 +113,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 10/18/2021
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -25,7 +25,7 @@ This article describes real-world scenarios where Power BI premium capacities ha
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics app** that a Power BI administrator will have access to.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
@@ -124,7 +124,7 @@ In a healthy capacity the visual will look like this, showing a gap between All 
 In a capacity experiencing memory pressure, the same visual will clearly show active memory and total memory converging, meaning that it is impossible to load additional datasets into memory then. In this case, the Power BI administrator can click **Capacity Restart** (in **Advanced Options** of the capacity settings area of the admin portal). Restarting the capacity results in all datasets being flushed from memory and allowing them to reload into memory as required (by queries or data refresh).
 
 > [!NOTE]
-> For Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), memory consumption does not need to be tracked. The only limitation in Premium Gen2 and Embedded Gen2, is on the memory footprint of a single artifact. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).
+> For Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), memory consumption does not need to be tracked. The only limitation in Premium Gen2 and Embedded Gen2, is on the memory footprint of a single artifact. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
 ![**Active** memory converging with **All** memory](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
@@ -160,7 +160,7 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -168,5 +168,5 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 

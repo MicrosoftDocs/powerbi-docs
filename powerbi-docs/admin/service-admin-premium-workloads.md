@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/14/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)**, **[Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
@@ -36,7 +36,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 | **Paginated reports** | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
 
 > [!NOTE]
-> **Premium Gen2**, currently in preview, does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. 
+> **Premium Gen2** does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. 
 
 
 ## Workload settings
@@ -232,7 +232,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
