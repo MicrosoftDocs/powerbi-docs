@@ -223,7 +223,7 @@ sections:
       - question: |
           How do I reestablish connections after reassigning a workspace to the test stage?
         answer: |
-          After you reassign a workspace to a deployment pipeline *test* stage, deployment pipelines cannot reestablish the Power BI item's connections because they run across all of the pipeline stages. To reestablish these connections, unassign and reassign the workspaces in the *development* and *production* stages. Reassigning the workspaces in these stages, will cause deployment pipelines to reestablish the connection between items in these stages and the *test* stage.
+          In a full pipeline, after you unassign a workspace to the *test* stage, deployment pipelines cannot reestablish the Power BI item's connections because they run across all the pipeline stages. To reestablish these connections, reassign or deploy a workspaces to the *test* stage.
 
   - name: Paginated reports
     questions:
