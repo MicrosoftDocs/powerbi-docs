@@ -324,15 +324,6 @@ sections:
           > Master user is not supported.
 
       - question: |
-          Can you manage an On-premises data gateway with service principal?
-        answer: |
-          You can't manage an On-premises data gateway (data gateway) using [service principal](embed-service-principal.md) like you can with a master account.
-          
-          With a master account, you can install a data gateway, add users to the gateway, connect to data sources, and do other administrative tasks.
-          
-          With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using a service principal.
-          
-      - question: |
           Can you sign into the Power BI service with service principal?
         answer: |
           No - you can't sign into Power BI using service principal.
