@@ -49,7 +49,7 @@ To see a field summarized in a different way, use the context menu of the field 
 
 :::image type="content" source="media/service-quick-create-report/how-summarize-data.png" alt-text="Change how the fields are summarized.":::
 
-You'll also have the option to personalize visuals for slight adjustments, such as tweaking the visual type or the fields. 
+You also have the option to personalize visuals for slight adjustments, such as tweaking the visual type or the fields. 
 
 :::image type="content" source="media/service-quick-create-report/personalize-visual.png" alt-text="Personalize the visual.":::
 
