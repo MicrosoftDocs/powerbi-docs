@@ -1,19 +1,19 @@
 ### YamlMime:FAQ
 metadata:
-  title: Power BI Premium Gen2 FAQ (preview)
+  title: Power BI Premium Gen2 FAQ
   description: Browse a list of frequently asked questions and answers about the Power BI Premium Gen2 offering.
-  author: davidiseminger
-  ms.author: davidi
+  author: KesemSharabi
+  ms.author: kesharab
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 06/16/2021
+  ms.date: 10/18/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Gen2 FAQ
 summary: |
-  This article addresses questions frequently asked about Power BI Premium Gen2. For an overview, see [What is Power BI Premium Gen2? (preview)](service-premium-gen2-what-is.md).
+  This article addresses questions frequently asked about Power BI Premium Gen2. For an overview, see [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md).
   
   * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
   * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
@@ -25,12 +25,12 @@ sections:
       - question: |
           Power BI Premium Gen2
         answer: |
-          This section addresses questions and answers for Power BI Premium Gen2, which is currently in preview. 
+          This section addresses questions and answers for Power BI Premium Gen2. 
 
       - question: |
           What is Power BI Premium Generation 2?
         answer: |
-          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
           
       - question: |
           How can I control the costs of autoscaling?
@@ -88,7 +88,7 @@ sections:
       - question: |
           How can my utilization data inform me I should turn on autoscale?
         answer: |
-          Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. During the preview period, a property will be added to each utilization record to reflect throttled requests. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
+          Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
       - question: |
           How can I get notified that I'm approaching my max capacity?
@@ -98,12 +98,12 @@ sections:
       - question: |
           How much data is Power BI storing? How can I retain more?
         answer: |
-          The Power BI service stores over 90 days of utilization data. Users who need longer data retention can use Bring Your Own Log Analytics (BYOLA) to store more utilization data, which will be available for Premium Gen2 customers by Premium Gen2 generally available (GA). 
+          The Power BI service stores over 90 days of utilization data. Users who need longer data retention can use Bring Your Own Log Analytics (BYOLA) to store more utilization data. 
 
       - question: |
           How do I get visibility into resources of Gen2 beyond CPU time?
         answer: |
-          Today, customers don't have visibility through utilization data to the memory footprint of their operations, and cannot know ahead of time whether any of their operations is subject to failures. A solution for such visibility is part of the preview feedback process.
+          Today, customers don't have visibility through utilization data to the memory footprint of their operations, and cannot know ahead of time whether any of their operations is subject to failures.
 
       - question: |
           How do I use utilization data to perform chargebacks?

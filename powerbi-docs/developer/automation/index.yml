@@ -56,7 +56,7 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: "Power BI Embedded Generation 2 (preview)"
+          - text: "Power BI Embedded Generation 2"
             url: ../embedded/power-bi-embedded-generation-2.md         
             
   # Card
