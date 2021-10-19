@@ -20,7 +20,7 @@ For information about enabling sensitivity labels on your tenant, including lice
 For information about how to apply sensitivity labels on your Power BI content and files, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md).
 
 >[!NOTE]
->Sensitivity label support in Power BI Desktop is currently in preview.
+>Please use **[this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** to submit any feedback you may have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. The product team is interested in hearing about your experiences and greatly appreciates any suggestions you may have to help us improve the product to better suit your information protection needs. Thanks!
 
 ## Introduction
 
@@ -259,10 +259,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 * **Export to PDF** does not support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF will not receive the label and no protection will be applied.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
-
-## Feedback and suggestions
-
-Please use [this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u) to submit any feedback you may have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. The product team is interested in hearing about your experiences and greatly appreciates any suggestions you may have to help us improve the product to better suit your information protection needs. Thanks!
 
 ## Next steps
 
