@@ -74,7 +74,7 @@ Power BI uses Microsoft Information Protection sensitivity labels. Thus if you e
 
 ## Considerations and limitations
 
-See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#limitations) for the list of sensitivity label limitations in Power BI.
+See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations) for the list of sensitivity label limitations in Power BI.
 
 ## Next steps
 

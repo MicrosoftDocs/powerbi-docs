@@ -68,7 +68,7 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 ## Considerations and limitations
 
-* The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [limitations and considerations](../../admin/service-admin-premium-multi-geo.md#limitations-and-considerations).
+* The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [considerations and limitations](../../admin/service-admin-premium-multi-geo.md#considerations-and-limitations).
 
 ## Next steps
 

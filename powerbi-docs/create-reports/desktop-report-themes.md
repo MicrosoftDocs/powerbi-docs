@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -4507,7 +4507,7 @@ The following section defines the enumerations that you can use in the JSON file
 }
 ```
 
-## Limitations and considerations
+## Considerations and limitations
 
 If you're using one of our original themes, the "Classic" theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
 

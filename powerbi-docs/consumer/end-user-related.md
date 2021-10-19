@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/06/2021
+ms.date: 10/19/2021
 LocalizationGroup: Get started
 ---
 # See related content in the Power BI service
@@ -65,7 +65,7 @@ Select the icon to open the **Related content** pane.
 
 From here, you can take direct action on the related content. For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashboard with others](../collaborate-share/service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../collaborate-share/service-analyze-in-excel.md), [rename](../create-reports/service-rename.md), or [get insights](end-user-insights.md).  -->
 
-## Limitations and troubleshooting
+## Considerations and limitations
 * If you don't see "See related", look for the icon instead ![See related icon](./media/end-user-related/power-bi-view-related-icon-new.png). Select the icon to open the **Related content** pane.
 * To open related content for a report, you need to be in [Reading view](end-user-reading-view.md).
 * The related content feature doesn't work for streaming datasets.

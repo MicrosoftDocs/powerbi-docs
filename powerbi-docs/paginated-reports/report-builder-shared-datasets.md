@@ -3,7 +3,7 @@ title: "Create a paginated report with a Power BI shared dataset - Power BI Repo
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-NfoOK4QRkhI
@@ -216,7 +216,7 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 
     ![Print no blank pages](media/report-builder-shared-datasets/power-bi-report-builder-print-26-pgs.png)
 
-## Limitations and considerations 
+## Considerations and limitations
 
 - For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
 - If you want to use a Power BI dataset that uses DirectQuery in Power BI Report Builder, the dataset has to include a measure, even if you don't plan to surface the measure in your report. Without the measure, the dataset won't return proper data results.

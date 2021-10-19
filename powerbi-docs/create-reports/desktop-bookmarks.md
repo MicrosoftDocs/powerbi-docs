@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
@@ -154,8 +154,8 @@ When you use the **View** feature of bookmarks, the following details apply:
 
 2. Select the members you want in the new group by pressing **Ctrl** and selecting each bookmark, then and select **Group** again. 
 
-## Limitations and considerations
-In this release of bookmark features, there are a few limitations and considerations to keep in mind.
+## Considerations and limitations
+In this release of bookmark features, there are a few considerations and limitations to keep in mind.
 
 * Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual is displayed in its default state. That is, if you add a slicer to a page where you previously created bookmarks, the slicer behaves in its default state.

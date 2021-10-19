@@ -1,8 +1,8 @@
 ---
 title: Monitor Power BI Premium capacities with the Premium Capacity Metrics app.
 description: Use the Power BI admin portal and Power BI Premium Capacity Metrics app
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

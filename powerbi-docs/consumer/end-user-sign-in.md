@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 05/15/2021
+ms.date: 10/19/2021
 LocalizationGroup: Get started
 ---
 
@@ -79,7 +79,7 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 ![profile selected](media/end-user-sign-in/power-bi-signout.png) 
 
-## Troubleshooting and considerations
+## Troubleshooting
 - If you've signed up for Power BI as an individual, sign in with the email address you used to sign up.
 
 - Some people use Power BI with more than one account. If so, when signing in, you will be prompted to select an account from a list. 

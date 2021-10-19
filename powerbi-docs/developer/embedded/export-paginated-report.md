@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 09/02/2021
+ms.date: 10/19/2021
 ---
 
 # Export paginated report to file
@@ -321,7 +321,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 }
 ```
 
-## Limitations
+## Considerations and limitations
 
 * Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
 

@@ -1,13 +1,13 @@
 ---
 title: What is Microsoft Power BI Premium?
 description: Power BI Premium provides capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/08/2021
+ms.date: 10/18/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---

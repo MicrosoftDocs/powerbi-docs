@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 05/11/2021
+ms.date: 10/19/2021
 ---
 
 # Add a display warning icon to your visual
@@ -97,7 +97,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
 * Resizing a visual doesn't affect the warning icon.
 
-## Limitations
+## Considerations and limitations
 
 The following limitations refer to the display icon text:
 
