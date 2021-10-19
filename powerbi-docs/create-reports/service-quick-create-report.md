@@ -45,23 +45,25 @@ Changing the data you see in the report is easy, too. Use the **Your data** pane
 
 You can modify your report without leaving the quick create experience.
 
-To see a field summarized in a different way, use the context menu of the field in the **Your data** pane to switch between sum, average, maximum, minimum, and so on. 
+- To see a field summarized in a different way, use the context menu of the field in the **Your data** pane to switch between sum, average, maximum, minimum, and so on. 
 
-:::image type="content" source="media/service-quick-create-report/how-summarize-data.png" alt-text="Change how the fields are summarized.":::
+    :::image type="content" source="media/service-quick-create-report/how-summarize-data.png" alt-text="Change how the fields are summarized.":::
 
-You also have the option to personalize visuals for slight adjustments, such as tweaking the visual type or the fields. 
+- Personalize visuals for slight adjustments, such as tweaking the visual type or the fields. 
 
-:::image type="content" source="media/service-quick-create-report/personalize-visual.png" alt-text="Personalize the visual.":::
+    :::image type="content" source="media/service-quick-create-report/personalize-visual.png" alt-text="Personalize the visual.":::
 
-Additionally, you can take advantage of the report's cross-highlighting capabilities for more insights on a particular data point.
+- Take advantage of the report's cross-highlighting capabilities for more insights on a particular data point.
 
-:::image type="content" source="media/service-quick-create-report/cross-highlighting.png" alt-text="Cross-highlight data points for more insights.":::
+    :::image type="content" source="media/service-quick-create-report/cross-highlighting.png" alt-text="Cross-highlight data points for more insights.":::
 
-You can also show or hide the table view of your data by selecting **Show** / **Hide data table** within the ribbon.
+- Show or hide the table view of your data by selecting **Show** / **Hide data table** within the ribbon.
 
-:::image type="content" source="media/service-quick-create-report/show-hide-table.png" alt-text="Show or hide the data table.":::
+    :::image type="content" source="media/service-quick-create-report/show-hide-table.png" alt-text="Show or hide the data table.":::
 
 You can save this report to the workspace you were in when you first selected **Create**. From there, you can share it, just like any other report. The next time you or anyone with edit permissions opens the report, you land right back in this quick edit experience.  
+
+## Switch to full edit experience
 
 If you want to switch to a full edit experience, select the **Edit** button in the menu bar. Be aware though, that once you save the report in the full edit experience, you can't go back to the quick edit view.  
 
