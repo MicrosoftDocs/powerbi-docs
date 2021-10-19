@@ -292,15 +292,15 @@ sections:
           To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
       - question: |
-          How can I embed a paginated report visual in a Power BI report?
+          How can I embed a Power BI report that contains a paginated report visual?
         answer: |
-          To embed an RDL visual in a Power BI report with the *Embed for your Customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the following IDs:
-          *	PBI report 
-          *	RDL report
-          *	PBI report’s dataset
+          To embed aTo embed a Power BI report that contains a paginated report visual  with the *Embed for your Customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the following:
+          *	PBI report ID
+          *	Paginated report ID (of the report the visual is connected to)
+          *	Dataset ID (dataset of the Power BI report
           
-          The service principal must have access to both reports.
-          For example (PBI report ID, RDL report ID):
+          The service principal must have access to both reports (paginated and Power BI).
+          Request body example for the [Generate Token](/rest/api/power-bi/embed-token/generate-token) call:
 
           ```json
           {
@@ -320,7 +320,7 @@ sections:
             ]
           }
           ```
-          **Note: Master user is not supported**
+          >[!NOTE] Master user is not supported**
 
       - question: |
           Can you manage an On-premises data gateway with service principal?

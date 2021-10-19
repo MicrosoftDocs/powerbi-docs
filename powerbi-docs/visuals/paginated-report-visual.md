@@ -94,7 +94,7 @@ You can decide whether report filters are automatically applied to the paginated
 ## Considerations and limitations
 
 - When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
-- When embedding a paginated report visual in a Power BI report with the *embed for your customers* method, you need a service principal and a multi-resource embed token as explained in [Frequently asked questions about Power BI Embedded](/developer/embedded/embedded-faq.yml#how-can-i-embed-a-paginated-report-visual-in-a-power-bi-report-).
+- When embedding a Power BI report that contains a paginated report visual, using the *embed for your customers* method, you need a service principal and a multi-resource embed token as explained in [Frequently asked questions about Power BI Embedded](/developer/embedded/embedded-faq.yml#how-can-i-embed-a-power-bi-report-that-contains-a-paginated-report-visual-).
 
 ### Using a Power BI dataset with a date parameter
 
