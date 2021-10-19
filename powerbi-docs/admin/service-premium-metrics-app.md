@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium Metrics app
 description: Learn how to use the Power BI Premium Metrics app to manage and troubleshoot your premium capacity.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

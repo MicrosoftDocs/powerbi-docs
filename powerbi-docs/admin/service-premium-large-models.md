@@ -1,8 +1,8 @@
 ---
 title: Large datasets in Power BI Premium
 description: The large dataset storage format allows datasets in Power BI Premium to grow beyond 10 GB in size.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

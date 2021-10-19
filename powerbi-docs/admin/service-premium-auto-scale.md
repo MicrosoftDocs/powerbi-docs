@@ -1,8 +1,8 @@
 ---
 title: Using Autoscale with Power BI Premium
 description: Autoscale for Power BI Premium Gen2 allows you to automatically scale processing power to meet your Power BI user requirements
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium

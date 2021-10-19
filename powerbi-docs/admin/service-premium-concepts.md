@@ -1,13 +1,13 @@
 ---
 title: Power BI Premium Gen2 capacity load, overload and autoscale
 description: Understand your Power BI Premium Gen2 capacity load, what overload means and how to autoscale.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
