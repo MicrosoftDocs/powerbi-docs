@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop
@@ -105,8 +105,8 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 
 
 
-## Limitations and considerations
-There are a few limitations and considerations for **tooltips** to keep in mind.
+## Considerations and limitations
+There are a few considerations and limitations for **tooltips** to keep in mind.
 
 * Button visuals also support tooltips.
 * Report tooltips are not supported for Power BI visuals. 

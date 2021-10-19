@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -59,7 +59,7 @@ When working in Power BI Desktop without an internet connection, if you open a r
 
 3. Save the report. After the report is saved, when you open it again without an internet connection, the Power BI visual will work.
 
-## Limitations
+## Considerations and limitations
 
 This section lists the limitations of downloading a PBIX file.
 

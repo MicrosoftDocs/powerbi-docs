@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q3
-ms.date: 10/06/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -212,7 +212,7 @@ To help your users understand what your sensitivity labels mean or how they shou
 
 See [Custom help link for sensitivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
 
-## Limitations
+## Considerations and limitations
 
 ### General
 

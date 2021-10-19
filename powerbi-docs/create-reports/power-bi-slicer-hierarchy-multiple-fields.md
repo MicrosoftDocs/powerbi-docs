@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/02/2021
+ms.date: 10/19/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---
@@ -73,7 +73,7 @@ If space is tight on your report, you may want to reduce the amount you indent t
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation.":::
 
     
-## Limitations and considerations
+## Considerations and limitations
 
 - When using live connection to SQL Server Analysis Services (SSAS) tabular models and the property **hide members** in the hierarchy is set to **Hide blank members**, Power BI doesn't hide blank members.  This creates a ragged hierarchy.    
 - A ragged hierarchy is also created when there are blank values for a category at any hierarchy level. For example, if Employee A has three levels of management (manager > vice-president > CEO) but does not have a "director", the data table row for Employee A will have three values (names) and one blank. While you can use the Filters pane to deselect blank values for "director", doing so also prevents the other three values from being included in the slicer for Employee A. As a result, Employee A will be removed from the hierarchy slicer.    

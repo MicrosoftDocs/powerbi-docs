@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 10/19/2021
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
@@ -69,7 +69,7 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
   
    The data source appears in the Report Data pane.
 
-## Limitations and Considerations
+## Considerations and limitations
 
 Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
 

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 10/19/2021
 ---
 # Create connected goals in Power BI (preview)
 
@@ -89,7 +89,7 @@ The time series refers to cases where you have a Date/Time field in the axis. In
 - **Data point** – measure is calculated at the last data point in time series and history is pulled in.
 - **Axis value** – measure is calculated at the last data point in time series and history is pulled in.
 
-## Limitations selecting values
+## Considerations and limitations
 
 Currently there are limitations on the values you can choose in a visual.
 

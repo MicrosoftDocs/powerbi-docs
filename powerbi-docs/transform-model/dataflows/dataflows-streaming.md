@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/26/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 
@@ -478,7 +478,7 @@ For more information about the feature, see [Automatic page refresh in Power BI]
 > [!TIP]
 > If your report isn't updated as fast as you need it to be or in real time, check the [documentation for automatic page refresh](../../create-reports/desktop-automatic-page-refresh.md). Follow the FAQs and troubleshooting instructions to figure out why this problem might be happening.
 
-## Limitations and considerations
+## Considerations and limitations
 
 ### General limitations
 

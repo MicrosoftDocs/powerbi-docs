@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 10/19/2021
 LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in the Power BI service
@@ -65,7 +65,7 @@ If you no longer use a report as often as you used to, you can unfavorite it. Wh
 > You can also unfavorite a dashboard, a report, or an app. Just open and select the black star to turn it back to a white star. 
 > 
 > 
-## Limitations and considerations
+## Considerations and limitations
 At the current time, you can favorite an app and this automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards. 
 
 ## Next steps

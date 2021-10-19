@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 09/09/2021
+ms.date: 10/19/2021
 ---
 
 # Export Power BI report to file (preview)
@@ -160,7 +160,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 |A5         |P2          |12         |
 |A6         |P3          |24         |
 
-## Limitations
+## Considerations and limitations
 
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.

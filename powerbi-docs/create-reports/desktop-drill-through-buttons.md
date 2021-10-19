@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Create a drillthrough button in Power BI
@@ -222,7 +222,7 @@ In this example, the user would need to select a Product, a Store, *and* a desti
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-product-store-destination.png" alt-text="Select product, store, and destination":::
 
-## Limitations
+## Considerations and limitations
 
 - This button doesn't allow for multiple destinations using a single button.
 - This button only supports drillthroughs within the same report; in other words, it doesn't support cross-report drillthrough.
