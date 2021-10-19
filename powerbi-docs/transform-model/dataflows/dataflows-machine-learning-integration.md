@@ -442,7 +442,7 @@ If the model returns multiple output parameters, they are grouped together as a 
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table table.
 
-##Limitations
+## Considerations and limitations
 
 - AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
 - AzureML models are not supported for Guest users.

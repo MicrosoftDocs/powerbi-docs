@@ -73,7 +73,7 @@ This section lists the limitations of downloading a PBIX file.
 
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a PBIX file.
 
-* Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#limitations-1).
+* Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
 
 * Usage metric reports can't be downloaded to a PBIX file.
 

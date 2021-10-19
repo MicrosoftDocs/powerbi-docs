@@ -2,7 +2,7 @@
 title: Streaming dataflows (preview)
 description: Get an overview of streaming dataflows in the Power BI service and how to use them.
 author: maikelson
-ms.author: miguem
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

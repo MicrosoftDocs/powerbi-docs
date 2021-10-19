@@ -39,7 +39,7 @@ You can connect either the current or the target value, or both, to a value in a
 
     :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Select the data point you want to use as your Current or Target.":::
 
-    Currently there are some limitations on the values you can select. See the [Limitations](#limitations-selecting-values) section in this article for details.
+    Currently there are some limitations on the values you can select. See the [Considerations and limitations](#considerations-and-limitations) section in this article for details.
 
 1. Select **Connect**.
 

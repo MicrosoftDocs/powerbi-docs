@@ -23,7 +23,7 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 
 ## Create embed codes with Publish to web
 
-**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
+**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
 
 The following steps describe how to use **Publish to web**.
 
@@ -141,7 +141,7 @@ The **Manage embed codes** page includes a status column. By default, embed code
 | --- | --- |
 | **Active** |The report is available for Internet users to view and interact with. |
 | **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
-| **Not supported** |The report's dataset is using row-level security, or another unsupported configuration. See the [**Limitations**](#limitations) section for a complete list. |
+| **Not supported** |The report's dataset is using row-level security, or another unsupported configuration. See the [**Considerations and imitations**](#considerations-and-limitations) section for a complete list. |
 | **Infringed** |The embed code is outside the defined tenant policy. This status typically occurs when an embed code was created and then the **Publish to web** tenant setting was changed to exclude the user owning the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes show an **Infringed** status. See the [Find your Power BI administrator](#find-your-power-bi-administrator) section in this article for details. |
 
 ## Report a concern with Publish to web content
