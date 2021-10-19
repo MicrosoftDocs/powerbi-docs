@@ -61,7 +61,7 @@ During backup and restore, the following actions apply:
 
 If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
 
-## Limitations and considerations
+## Considerations and limitations
 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 

@@ -87,7 +87,7 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 
 Large-storage format datasets should not be moved from the region where they were created. Reports based on a large-format dataset will not be able to load the dataset, and return a *Cannot load model* error. Move the large-storage format dataset back to its original region to make it available again.
 
-## Limitations and considerations
+## Considerations and limitations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - Cached data and queries stored in a remote region stays in that region at rest. Additionally the data at rest will be replicated to another region in the same Azure geography for disaster recovery if the Azure geography contains more than one region. Data in transit may go back and forth between multiple geographies.
