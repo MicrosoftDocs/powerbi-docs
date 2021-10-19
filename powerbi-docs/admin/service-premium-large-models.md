@@ -18,7 +18,7 @@ Power BI datasets can store data in a highly compressed in-memory cache for opti
 
 Large datasets can be enabled for all Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large dataset size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
-While required for datasets to grow beyond 10 GB, enabling the Large dataset storage format setting has additional benefits. If you're planning to use XMLA endpoint based tools for dataset write operations, be sure to enable the  setting, even for datasets that you wouldn't necessarily characterize as a *large* dataset. When enabled, the large dataset storage format can improve XMLA write operations performance.
+While required for datasets to grow beyond 10 GB, enabling the Large dataset storage format setting has other benefits. If you're planning to use XMLA endpoint-based tools for dataset write operations, be sure to enable the  setting, even for datasets that you wouldn't necessarily characterize as a *large* dataset. When enabled, the large dataset storage format can improve XMLA write operations performance.
 
 Large datasets in the service do not affect the Power BI Desktop model upload size, which is still limited to 10 GB. Instead, datasets can grow beyond that limit in the service on refresh.
 
@@ -28,7 +28,7 @@ Large datasets in the service do not affect the Power BI Desktop model upload si
 
 ## Enable large datasets
 
-Steps here describe enabling large datasets for a new model published to the service. For existing datasets, only step three is necessary.
+Steps here describe enabling large datasets for a new model published to the service. For existing datasets, only step 3 is necessary.
 
 1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 

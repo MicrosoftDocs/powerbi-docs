@@ -1,5 +1,5 @@
 ---
-title: Power BI Premium Gen2 capacity load, overload and autoscale
+title: Power BI Premium Gen2 capacity load, overload, and autoscale
 description: Understand your Power BI Premium Gen2 capacity load, what overload means and how to autoscale.
 author: KesemSharabi
 ms.author: kesharab
@@ -21,13 +21,13 @@ Power BI evaluates throughput every **30 seconds**. It allows operations to comp
 
 The following image illustrates how Premium Gen2 evaluates and completes queries.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries."lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries. "lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
 
 Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*. 
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
-* **Slow-running operations**, such as dataset and dataflow refreshes, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium Gen2 subscribers to run as many background operations as allowed by their purchased capacity SKU, and doesn’t limit them like the original Premium generation.
+* **Slow-running operations**, such as dataset and dataflow refresh, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium Gen2 subscribers to run as many background operations as allowed by their purchased capacity SKU, and doesn’t limit them like the original Premium generation.
 
 * **Fast operations** like queries, report loads, and others are considered *interactive operations*. The CPU time required to complete those operations is aggregated, to minimize the number of 30-seconds windows that are impacted following that operation's completion.
 
@@ -49,7 +49,7 @@ Premium Gen2 evaluates utilization by aggregating utilization records every 30 s
 
 Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflect the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
 
-If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds ( 4*30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
+If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds (4 x 30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
 
 :::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
 
