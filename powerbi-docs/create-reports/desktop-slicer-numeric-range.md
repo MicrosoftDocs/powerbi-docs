@@ -8,7 +8,7 @@ ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Use the numeric range slicer in Power BI
@@ -71,9 +71,9 @@ You could, for example, have a long date format for the underlying data type. In
 
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations apply to the numeric range slicer:
+The following considerations and limitations apply to the numeric range slicer:
 
 * The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
 * It doesn't currently work with measures.

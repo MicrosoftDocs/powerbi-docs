@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 architecture
 
 **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience, is an improved and architecturally redesigned generation of Power BI Premium.
 
-Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
+Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
 
 The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
 
@@ -56,7 +56,7 @@ There are several positive results from distributing backend processing of conte
 >[Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
 
 >[!div class="nextstepaction"]
->[Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+>[Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

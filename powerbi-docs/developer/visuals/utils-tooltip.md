@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 02/14/2020
 ---
 # Tooltip utils

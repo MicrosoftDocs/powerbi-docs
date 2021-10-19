@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/07/2021
+ms.date: 10/18/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -95,7 +95,7 @@ Premium per user is a new way to license Premium features on a per user basis. A
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml) to learn more about this licensing model.
 
 ## Audit logs
 

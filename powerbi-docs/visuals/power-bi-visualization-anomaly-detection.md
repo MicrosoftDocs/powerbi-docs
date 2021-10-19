@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-RE4M2hp
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 10/19/2021
 LocalizationGroup: Visualizations
 ---
 # Anomaly detection
@@ -48,7 +48,7 @@ Besides detecting anomalies, you can also automatically explain the anomalies th
 You can also control the fields that are used for analysis. For example, by dragging Seller and City into the **Explain by** field well, Power BI restricts the analysis to just those fields. In this case,  the anomaly on August 31 seems to be associated with a particular seller and particular cities. Here, seller "Fabrikam" has a strength of 99%. Power BI calculates *strength* as the ratio of the deviation from expected value, when filtered by the dimension to the deviation in total value. For example, it's the ratio of actual minus expected value, between the component time series *Fabrikam* and the aggregate time series *overall Revenue* for the anomaly point. Opening this card shows the visual with a spike in the revenue for this seller on August 31. Use the **Add to report** option to add this visual to the page.
 ![Screenshot showing how to configure explanations](media/power-bi-visualization-anomaly-detection/configure-explanations.png)
 
-## Limitations
+## Considerations and limitations
 - Anomaly detection is only supported for line chart visuals containing time series data in the Axis field.
 - Anomaly detection isn't supported with legends, multiple values or secondary values in line chart visual.
 - Anomaly detection requires at least four data points.

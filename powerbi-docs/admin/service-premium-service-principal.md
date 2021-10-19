@@ -1,13 +1,13 @@
 ---
 title: Automate Power BI Premium workspace and dataset tasks with service principals | Microsoft Docs
 description: Learn how service principals can be used for automating Power BI Premium workspace and dataset management tasks.
-author: Minewiskan
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/26/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 

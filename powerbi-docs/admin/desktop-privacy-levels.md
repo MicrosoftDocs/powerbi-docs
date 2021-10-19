@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Connect to data
 ---

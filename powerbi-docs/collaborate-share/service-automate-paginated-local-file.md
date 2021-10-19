@@ -22,7 +22,7 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 To follow along, make sure you have:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the P1 – P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Save a Power BI paginated report to a local folder
