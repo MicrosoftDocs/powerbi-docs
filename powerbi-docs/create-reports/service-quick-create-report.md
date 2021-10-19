@@ -39,7 +39,11 @@ As you go through the creation process, Power BI creates a new dataset for you, 
 
 :::image type="content" source="media/service-quick-create-report/select-data-fields-generate-new-visuals.png" alt-text="Select data fields to generate new visuals.":::
 
-Changing the data you see in the report is easy, too. Use the **Your data** pane to add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically plots meaninful charts based on your field selection.  
+Changing the data you see in the report is easy, too. Use the **Your data** pane to add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically plots meaningful charts based on your field selection.  
+
+## Modify your report
+
+You can modify your report without leaving the quick create experience.
 
 To see a field summarized in a different way, use the context menu of the field in the **Your data** pane to switch between sum, average, maximum, minimum, and so on. 
 
