@@ -57,7 +57,7 @@ Additionally, you can take advantage of the report's cross-highlighting capabili
 
 :::image type="content" source="media/service-quick-create-report/cross-highlighting.png" alt-text="Cross-highlight data points for more insights.":::
 
-You'll also have the ability to show or hide the table view of your data by selecting **Show** / **Hide data table** within the ribbon.
+You can also show or hide the table view of your data by selecting **Show** / **Hide data table** within the ribbon.
 
 :::image type="content" source="media/service-quick-create-report/show-hide-table.png" alt-text="Show or hide the data table.":::
 
