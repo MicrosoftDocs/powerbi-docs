@@ -1,8 +1,8 @@
 ---
 title: Manage Microsoft Power BI Premium Gen2 capacities
 description: Describes management tasks for Power BI Premium Gen2 capacities.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
