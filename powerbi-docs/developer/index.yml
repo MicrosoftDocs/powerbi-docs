@@ -43,7 +43,7 @@ highlightedContent:
       itemType: concept
       url: template-apps/template-apps-auto-install.md
     # Card
-    - title: Explore features and APIs in the playground
+    - title: Explore features and APIs in the embedded analytics playground
       itemType: quickstart
       url: https://aka.ms/pbieplayground
 
