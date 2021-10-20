@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 10/20/2021
 LocalizationGroup: Visualizations
 ---
 # Add visuals to a Power BI report (part 2)
@@ -43,7 +43,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-start.png" alt-text="Screenshot showing column chart.":::
 
-1. From the Time table, drag **FiscalMonth** into the **Axis** area.  
+1. From the **Time** table, drag **FiscalMonth** into the **Axis** area.  
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-fiscalmonth.png" alt-text="Screenshot showing column chart with FiscalMonth as axis.":::
 

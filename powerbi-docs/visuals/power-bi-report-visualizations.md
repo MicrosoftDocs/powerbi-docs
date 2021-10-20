@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 10/20/2021
 LocalizationGroup: Visualizations 
 ---
 
@@ -52,7 +52,7 @@ Once a visual has been pinned, it moves up to live with the other default visual
 
 ### Remove a visual from the visualization pane
 
-If you stop using a visual regularly, you can right-click it and remove it from the visualization pane. Any type of visual can be removed from the visualization pane, including default, file ,organizational and AppSource visuals.
+If you stop using a visual regularly, you can right-click it and remove it from the visualization pane. Any type of visual can be removed from the visualization pane, including default, file, organizational and AppSource visuals.
 
 :::image type="content" source="media/power-bi-report-visualizations/unpin-visual.png" alt-text="Unpin a visualization from the visualization pane.":::
 
@@ -60,7 +60,7 @@ If you stop using a visual regularly, you can right-click it and remove it from 
 
 Restoring the visualization pane only applies to default visuals. Visuals that were added to the visualization pane are not affected and will remain available from the visualization pane. If you want to remove AppSource or file visuals from the visualization pane, you'll have to do it manually.
 
-To restore the visualization pane to default, click more options and select **Restore default visuals**.
+To restore the visualization pane to default, click **More options** (...) and select **Restore default visuals**.
 
 :::image type="content" source="media/power-bi-report-visualizations/restore-default.png" alt-text="Restore the visualization pane to default.":::
 

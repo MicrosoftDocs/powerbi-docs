@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/15/2021
+ms.date: 10/20/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -37,7 +37,7 @@ This tutorial uses the [Sales and Marketing Sample PBIX file](https://download.m
 
 1. Create a visualization by selecting a field from the **Fields** pane.
 
-   Start with a numeric field like **Sales** > **Sales $**. Power BI creates a column chart with a single column.
+   Start with a numeric field like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-column-chart.png" alt-text="Screenshot of a column chart with a single column.":::
 
@@ -61,7 +61,7 @@ Create a visualization and then change its type.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-convert.png" alt-text="Screenshot of the Visualizations pane with the Stacked column chart icon called out.":::
 
-1. To change the way the visual is sorted, select **More options** (...).  Use the sort options to change the direction of the sort (ascending or descending) and change the column being used to sort (**Sort by**).
+1. To change the way the visual is sorted, select **More options** (...). Use the sort options to change the direction of the sort (ascending or descending) and select **Sort by** to change the column being used to sort.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-sort.png" alt-text="Screenshot of the More actions dropdown.":::
   

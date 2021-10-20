@@ -8,7 +8,7 @@ ms.custom: video-9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 10/19/2021
+ms.date: 10/20/2021
 LocalizationGroup: Visualizations
 ---
 
