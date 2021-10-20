@@ -37,15 +37,15 @@ highlightedContent:
     # Card
     - title: Power BI embedded analytics Client APIs
       itemType: whats-new
-      url: /javascript/api/overview/powerbi/  
-    # Card
-    - title: Automated  template app configuration
-      itemType: concept
-      url: template-apps/template-apps-auto-install.md
+      url: /javascript/api/overview/powerbi/
     # Card
     - title: Explore features and APIs in the embedded analytics playground
       itemType: quickstart
       url: https://aka.ms/pbieplayground
+    # Card
+    - title: Automated  template app configuration
+      itemType: concept
+      url: template-apps/template-apps-auto-install.md
 
 # conceptualContent section (optional)
 conceptualContent:
