@@ -17,7 +17,7 @@ ms.date: 10/12/2021
 This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
  >[!Important]
- >From January 2021 all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../admin/service-premium-gen2-what-is.md) capacities will available. We recommend that you upgrade all your capacities to Gen2. You can [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
+ >From January 2022 all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../admin/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
 
 ## Before you begin
 
@@ -361,7 +361,7 @@ The capacity will update automatically in a few seconds.
 
 ### [ARM API](#tab/arm)
 
-To upgrade a Gen1 capacity to Gen2 in the Azure UI:
+To upgrade a Gen1 capacity to Gen2 in the ARM API:
 
 ---
 
