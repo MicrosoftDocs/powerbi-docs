@@ -208,7 +208,7 @@ To sum up:
 
 * Consumers of a composite model see the results of the OLS rules that were applicable to the author of the composite model when they created the model. Thus, when a new report is created based on the composite model, the field list will show the tables that the author of the composite model had access to when they created the model, regardless of what the current user has access to in the source model.
 * OLS rules cannot be defined on the composite model itself.
-* A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DIrectQuery tries to retrieve the data using their credentials.
+* A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DirectQuery tries to retrieve the data using their credentials.
 * If the source model updates its OLS rules, those changes will only affect the composite model when it is refreshed.  
 
 ### Loading a subset of tables from a Power BI dataset or Azure Analysis Services model
@@ -216,8 +216,9 @@ When connecting to a Power BI dataset or Azure Analysis Services model using a D
 This dialog will not be shown for live connections.
 
 >[!NOTE]
->This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQUery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
+>This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
 
+[!div class="mx-imgBorder"]
 ![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
 
 ## Next steps
