@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -20,7 +20,7 @@ LocalizationGroup: Visualizations
 
 ## Who can export data
 
-If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Limitations and considerations** section at the end of this document. 
+If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Considerations and limitations** section at the end of this document. 
 
 ## Viewing and exporting data
 
@@ -212,9 +212,9 @@ You can also update this setting in the Power BI service.
 
 It's important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings.
 
-## Limitations and considerations
+## Considerations and limitations
 
-These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
+These considerations and limitations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 

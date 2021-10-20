@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/17/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -16,7 +16,7 @@ You can establish a live connection to a shared dataset in the *Power BI service
 
 ![Get data from the Power BI service](media/desktop-report-lifecycle-datasets/report-lifecycle_01.png)
 
-There are all sorts of benefits of this feature, including best practices, which we discuss during this article. We recommend you review the [considerations and limitations](#limitations-and-considerations) of this feature.
+There are all sorts of benefits of this feature, including best practices, which we discuss during this article. We recommend you review the [considerations and limitations](#considerations-and-limitations) of this feature.
 
 ## Using a Power BI service live connection for report lifecycle management
 
@@ -95,9 +95,9 @@ When you select **Create**, you establish a live connection to the selected data
 
 Now you and others can create and share custom reports, all from the same dataset. This approach is a great way to have one knowledgeable person create a well-formed dataset, such as what Anna does. Many teammates can use that shared dataset to create their own reports.
 
-## Limitations and considerations
+## Considerations and limitations
 
-When using the Power BI service live connection, there are a few limitations and considerations to keep in mind.
+When using the Power BI service live connection, there are a few considerations and limitations to keep in mind.
 
 * Only users with Build permission for a dataset can connect to a published dataset using the Power BI service live connection.
 * Free users only see datasets in their **My Workspace** and in Premium-based workspaces.

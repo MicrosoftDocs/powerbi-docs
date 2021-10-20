@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/21/2021
+ms.date: 10/19/2021
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -51,7 +51,7 @@ This video is part of an eight-module video-based course, [Power BI Paginated Re
 
 ## Create reports in Power BI Report Builder
 
-Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you'd previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Limitations and considerations](#limitations-and-considerations) in this article for details.
+Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you'd previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Considerations and limitations](#considerations-and-limitations) in this article for details.
 
 ## Use deployment pipelines with paginated reports
 
@@ -109,7 +109,7 @@ You can now set up email subscriptions for yourself and others for paginated rep
 
 For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/paginated-reports-subscriptions.md). 
 
-## Limitations and considerations
+## Considerations and limitations
 
 Here are some other features that aren't supported:
 

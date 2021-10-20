@@ -2,8 +2,8 @@
 metadata:
   title: Frequently asked questions about Power BI embedded analytics
   description: Browse a list of frequently asked questions and answers about Power BI embedded analytics
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: powerbi-developer
@@ -48,7 +48,7 @@ sections:
         answer: |
           Microsoft recommends that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution. We recommend ISVs buy Power BI Embedded for its cloud-powered embedded analytics components. However, a customer has no restriction on which product to buy.
           
-          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization. Some enterprises may decide to use A SKUs in Azure if they're only interested in building line-of-business applications and embedding analytics into them and aren't interested in using the pre-packaged Power BI service.
+          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization.
           
       - question: |
           How many embed tokens can I create?
@@ -285,21 +285,44 @@ sections:
           This situation matters when you add the service principal as an **admin** to the new workspace. You can manage this task through the [APIs](/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
           
       - question: |
-          When to use an application ID vs. a service principal object ID?
+          When should I use an application ID vs. a service principal object ID?
         answer: |
           The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
           
           To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
-          
+
       - question: |
-          Can you manage an On-premises data gateway with service principal?
+          How can I embed a Power BI report that contains a paginated report visual?
         answer: |
-          You can't manage an On-premises data gateway (data gateway) using [service principal](embed-service-principal.md) like you can with a master account.
+          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token), that contains the following:
+          *	Power BI report ID
+          *	Paginated report ID (of the report the visual is connected to)
+          *	Dataset ID (of the Power BI report)
           
-          With a master account, you can install a data gateway, add users to the gateway, connect to data sources, and do other administrative tasks.
-          
-          With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using a service principal.
-          
+          The service principal must have access to both reports (paginated and Power BI).
+          Request body example for the [generate token](/rest/api/power-bi/embed-token/generate-token) call:
+
+          ```json
+          {
+            "datasets": [
+              {
+                "id": "a5d577c7-0568-4180-a6d3-0f6cc0ca3df4"
+              }
+            ],
+            "reports": [
+              {
+                "allowEdit": false,
+                "id": "05024421-b4df-483c-a2ce-61202d0323ce"
+              },
+              {
+                "id": "f8612306-f3a8-40e1-a448-d8e05992a007"
+              }
+            ]
+          }
+          ```
+          > [!NOTE]
+          > Master user is not supported.
+
       - question: |
           Can you sign into the Power BI service with service principal?
         answer: |
