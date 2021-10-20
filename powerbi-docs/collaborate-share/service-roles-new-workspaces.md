@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 07/01/2021
+ms.date: 10/19/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -79,7 +79,7 @@ Publishing reports to the new workspace experience has stricter enforcement of e
 
 By default, [Azure AD B2B Guest users](../admin/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
 
-## Limitations and considerations
+## Considerations and limitations
 
 A limitation to be aware of:
 

@@ -7,7 +7,7 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 
@@ -82,9 +82,9 @@ Once you've selected **Relative date filtering**, you see three sections to chan
 
 ![Screenshot of the Report level filters with arrows pointing to the Show items when the value options.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations currently apply to the **relative date range slicer** and filter.
+The following considerations and limitations currently apply to the **relative date range slicer** and filter.
 
 * The data type for the field in the slicer must be a date, and not the default of text. Otherwise, the relative options don't show up in the slicer.
 * Data models in **Power BI** don't include time zone info. The models can store times, but there's no indication of the time zone they're in.

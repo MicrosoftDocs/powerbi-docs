@@ -1,13 +1,13 @@
 ---
 title: Keyboard navigation feature in Power BI
 description: This article describes how to enable using the keyboard to navigate visuals in Power BI.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/29/2021
+ms.date: 10/19/2021
 ---
 
 # Enable keyboard navigation of a visual
@@ -43,7 +43,7 @@ This capability allows the visual to receive focus through keyboard navigation.
     }
 ```
 
-## Known limitations and issues
+## Considerations and limitations
 
 * This feature requires API v2.1.0 or higher.
 * This feature can't be applied to image visuals.

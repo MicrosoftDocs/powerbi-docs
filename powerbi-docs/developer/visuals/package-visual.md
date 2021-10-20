@@ -1,8 +1,8 @@
 ---
 title: Package a Power BI visual
 description: Use this step-by-step guide to package a Power BI visual so it can be shared and imported. 
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
