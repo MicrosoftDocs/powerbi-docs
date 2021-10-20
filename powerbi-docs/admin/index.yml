@@ -123,7 +123,25 @@ conceptualContent:
       footerLink:
         url: ../developer/index.yml
         text: See more
-
+    # Card
+    - title: Third-party tools for Power BI
+      links:
+        - url: service-premium-connect-tools.md
+          itemType: overview
+          text: Using an XMLA endpoint
+        - url: https://tabulareditor.github.io/
+          itemType: download
+          text: The Tabular Editor 
+        - url: https://daxstudio.org/
+          itemType: download
+          text: DAX Studio
+        - url: http://alm-toolkit.com/
+          itemType: download
+          text: ALM Toolkit for Power BI
+      # footerLink (optional)
+      footerLink:
+        url: ../guidance/index.yml
+        text: See more
 
 # additionalContent section (optional)
 # Card with summary style
