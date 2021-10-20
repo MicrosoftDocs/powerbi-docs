@@ -361,7 +361,7 @@ The capacity will update automatically in a few seconds.
 
 ### [ARM API](#tab/arm)
 
-To upgrade a Gen1 capacity to Gen2 in the ARM API:
+To upgrade a Gen1 capacity to Gen2 with the ARM API:
 
 ---
 
