@@ -119,6 +119,9 @@ conceptualContent:
         - url: ../developer/visuals/develop-power-bi-visuals.md
           itemType: concept
           text: Develop a Power BI visual
+        - url: powershell/power-bi/overview.md
+          itemType: reference
+          text: Power BI PowerShell reference guide
       # footerLink (optional)
       footerLink:
         url: ../developer/index.yml
