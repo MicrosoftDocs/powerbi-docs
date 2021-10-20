@@ -1,12 +1,12 @@
 ---
 title:  Introduction to use tooltip utils in Power BI visual
 description: This article describes how to use tooltip utils  simplify tooltip customization for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 02/14/2020
 ---
 # Tooltip utils
@@ -55,7 +55,7 @@ This function creates an instance of ITooltipServiceWrapper.
 function createTooltipServiceWrapper(tooltipService: ITooltipService, rootElement: Element, handleTouchDelay?: number,  getEventMethod?: () => MouseEvent): ITooltipServiceWrapper;
 ```
 
-The ```ITooltipService``` is available in [IVisualHost](https://github.com/microsoft/PowerBI-visuals-tools/blob/master/templates/visuals/.api/v2.6.0/PowerBI-visuals.d.ts#L1335).
+The ```ITooltipService``` is available in IVisualHost.
 
 **Example**
 

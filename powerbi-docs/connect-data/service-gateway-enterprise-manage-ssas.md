@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2019
+ms.date: 10/19/2021
 ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
 LocalizationGroup: Gateways
 ---
@@ -184,7 +184,7 @@ To validate what an original name is replaced with, enter a value for **Original
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
 
-### Limitations for mapping rules
+### Considerations and limitations
 
 Mapping is for the specific data source that's being configured. It's not a global setting. If you have multiple Analysis Services data sources, you have to map the users for each data source.
 

@@ -214,6 +214,9 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
+> [!NOTE]
+> Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
     ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)

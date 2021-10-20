@@ -2,12 +2,12 @@
 title: "Power BI adoption roadmap: Community of practice"
 description: Establish a community of practice to help users drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
+ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: reference
-ms.date: 06/30/2021
+ms.topic: conceptual
+ms.date: 10/15/2021
 ---
 
 # Power BI adoption roadmap: Community of practice
@@ -69,7 +69,7 @@ The overriding objective of a community of practice is to facilitate knowledge s
 | Office hours with the COE | Regularly scheduled times when COE experts are available so the community can engage with them. Community users can receive assistance with minimal process overhead. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article. |
 | Internal blog posts or wiki posts | Short blog posts, usually covering technical how-to topics. |
 | Internal Power BI user group | A subset of the community that chooses to meet as a group on a regularly scheduled basis. User group members often take turns presenting to each other to share knowledge and improve their presentation skills. |
-| Internal Power BI conferences or events | An annual or semi-annual internal conference the delivers a series of sessions focused on Power BI. |
+| Internal Power BI conferences or events | An annual or semi-annual internal conference that delivers a series of sessions focused on Power BI. |
 
 > [!IMPORTANT]
 > Inviting an external presenter can reduce the effort level and bring a fresh viewpoint for learning and knowledge sharing.

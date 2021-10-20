@@ -7,7 +7,7 @@ services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 09/09/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
