@@ -40,7 +40,7 @@ highlightedContent:
       url: /javascript/api/overview/powerbi/
     # Card
     - title: Explore features and APIs in the embedded analytics playground
-      itemType: quickstart
+      itemType: whats-new
       url: https://aka.ms/pbieplayground
     # Card
     - title: Automated  template app configuration

@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/04/2021 #Required; mm/dd/yyyy format.
+  ms.date: 10/20/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -27,9 +27,9 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Incremental refresh for datasets
-      itemType: concept
-      url: connect-data/incremental-refresh-overview.md
+    - title: Explore features and APIs in the embedded analytics playground
+      itemType: whats-new
+      url: https://aka.ms/pbieplayground
     # Card
     - title: External tools in Power BI Desktop
       itemType: reference
