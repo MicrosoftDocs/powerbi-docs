@@ -211,6 +211,15 @@ To sum up:
 * A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DIrectQuery tries to retrieve the data using their credentials.
 * If the source model updates its OLS rules, those changes will only affect the composite model when it is refreshed.  
 
+### Loading a subset of tables from a Power BI dataset or Azure Analysis Services model
+When connecting to a Power BI dataset or Azure Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. Note that when you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
+This dialog will not be shown for live connections.
+
+>[!NOTE]
+>This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQUery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
+
+![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
+
 ## Next steps
 
 For more information about DirectQuery, check out the following resources:
