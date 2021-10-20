@@ -55,7 +55,7 @@ This function creates an instance of ITooltipServiceWrapper.
 function createTooltipServiceWrapper(tooltipService: ITooltipService, rootElement: Element, handleTouchDelay?: number,  getEventMethod?: () => MouseEvent): ITooltipServiceWrapper;
 ```
 
-The ```ITooltipService``` is available in [IVisualHost](https://github.com/microsoft/PowerBI-visuals-tools/blob/master/templates/visuals/.api/v2.6.0/PowerBI-visuals.d.ts#L1335).
+The ```ITooltipService``` is available in IVisualHost.
 
 **Example**
 

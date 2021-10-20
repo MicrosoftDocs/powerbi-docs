@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 08/25/2021
+ms.date: 10/19/2021
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-many relationships in Power BI Desktop
@@ -130,7 +130,7 @@ The major differences between *relationships with a many-many cardinality* and t
 
 With the preceding differences in mind, make sure the calculations that use `ALL(<Table>)`, such as *% of grand total*, are returning the intended results.
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations for this release of *relationships with a many-many cardinality* and composite models.
 

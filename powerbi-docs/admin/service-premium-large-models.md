@@ -130,7 +130,7 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 For datasets using the large dataset storage format, Power BI automatically sets the default segment size to 8 million rows to strike a good balance between memory requirements and query performance for large tables. This is the same segment size as in Azure Analysis Services. Keeping the segment sizes aligned helps ensure comparable performance characteristics when migrating a large data model from Azure Analysis Services to Power BI.
 
-## Limitations and considerations
+## Considerations and limitations
 
 Keep in mind the following restrictions when using large datasets:
 

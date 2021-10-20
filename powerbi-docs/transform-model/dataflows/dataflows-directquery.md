@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # Using DirectQuery with dataflows
@@ -74,5 +74,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

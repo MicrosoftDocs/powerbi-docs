@@ -2,11 +2,11 @@
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 01/31/2020
+ms.date: 10/19/2021
 ms.author: davidi
 ---
 
-## Limitations
+## Considerations and limitations
 
 The current limitations for row-level security on cloud models are as follows:
 

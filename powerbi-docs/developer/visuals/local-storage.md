@@ -7,7 +7,7 @@ ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 05/21/2021
+ms.date: 10/19/2021
 ---
 
 # Local Storage API
@@ -55,7 +55,7 @@ export class Visual implements IVisual {
 }
 ```
 
-## Known limitations and issues
+## Considerations and limitations
 
 * The local storage limit is 1mb per GUID.
 * Data can be shared between visuals with the same GUID only.

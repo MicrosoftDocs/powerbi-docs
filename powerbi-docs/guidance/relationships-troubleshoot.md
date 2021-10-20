@@ -16,7 +16,7 @@ This article targets you as a data modeler working with Power BI Desktop. It pro
 
 [!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
-## Troubleshooting checklist
+## Troubleshooting
 
 When a report visual is configured to use fields from two (or more) tables, and it doesn't present the correct result (or any result), it's possible that the issue is related to model relationships.
 

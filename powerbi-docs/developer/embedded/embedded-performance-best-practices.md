@@ -48,7 +48,7 @@ If you embed reports with the same filters, bookmarks, and slicers, to improve y
 When embedding multiple reports to the same iframe, don't generate a new iframe for each report. Instead, use `powerbi.embed(element, config)` with a different config to embed the new report.
 
 > [!NOTE]
-> Switching between reports when embedding for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](/rest/api/power-bi/embedtoken/generatetoken).
+> Switching between reports when embedding for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](/rest/api/power-bi/embed-token/generate-token).
 
 ## Query caching
 

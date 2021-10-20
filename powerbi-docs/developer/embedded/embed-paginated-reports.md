@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 10/18/2021
+ms.date: 10/19/2021
 
 ---
 
@@ -194,7 +194,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ---
 
-## Limitations
+## Considerations and limitations
 
 The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
 

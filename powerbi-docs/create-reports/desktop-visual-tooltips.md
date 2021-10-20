@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/23/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 
@@ -101,7 +101,7 @@ Additionally, you can format tooltips per visual by customizing the settings in 
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-format-pane.png" alt-text="Customize the tooltip in the Format pane.":::
 
-## Limitations and considerations
+## Considerations and limitations
 
 Currently, drill actions aren't available in the tooltip for the following scenarios:
 

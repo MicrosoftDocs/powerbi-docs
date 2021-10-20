@@ -294,7 +294,7 @@ sections:
       - question: |
           How can I embed a Power BI report that contains a paginated report visual?
         answer: |
-          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the following:
+          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token), that contains the following:
           *	Power BI report ID
           *	Paginated report ID (of the report the visual is connected to)
           *	Dataset ID (of the Power BI report)
