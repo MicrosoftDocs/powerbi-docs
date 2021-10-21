@@ -218,12 +218,16 @@ sections:
       - question: |
           How do I resolve the 'Can't start deployment' error?
         answer: |
-          The *Can't start deployment* error occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn't able to deploy from the source stage to the target stage. There are two ways to resolve this error:
+          There are a few reasons for getting the *Can’t start deployment* error. Here are two of them:
 
-          * *Delete the target dataset* - This method is not recommended as customers may experience downtime. In addition, the deployed dataset will be downgraded to a lower model version.
+          * Source and target dataset format version mismatch* - This error occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. There are two ways to resolve this error:
           
-          * *Use a dataset that has the same (or higher) model version in the source stage* - This is the recommended way of solving the error as it doesn't involve customer downtime or downgrading the target's dataset model version.
-                    
+            * *Use a dataset that has the same (or higher) model version in the source stage* - This is the recommended way of solving the error as it doesn't involve customer downtime or downgrading the target's dataset model version.
+
+            * *Delete the target dataset* - This method is not recommended as customers may experience downtime. In addition, the deployed dataset will be downgraded to a lower model version.   
+
+          * Source and target dataset type mismatch* - In most cases you can deploy a dataset in the source stage into a different type of dataset in the target stage. For example, you can deploy an import dataset from the source stage into a direct query dataset in the target stage. However, sometimes deployment pipelines can’t deploy a dataset from the source stage to the target stage, if these are not the same type of datasets.
+
   - name: Paginated reports
     questions:
       - question: |
