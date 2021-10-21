@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/08/2021
+ms.date: 10/21/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -263,7 +263,7 @@ In some cases, as shown in the following error, "consumed memory" is 0 but the a
 To potentially reduce exceeding the effective memory limit:
 
 - Upgrade to a larger Premium capacity (SKU) size for the dataset.
-- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh. For example, if using incremental refresh, specify a shorter range of dates between the RangeStart and RangeEnd parameters.
+- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
 - For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
 ## See also
