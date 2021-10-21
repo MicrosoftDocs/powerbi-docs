@@ -221,7 +221,7 @@ sections:
       - question: |
           What is Power BI Embedded's authentication model?
         answer: |
-          Power BI Embedded continues to use Azure AD for master user (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
+          Power BI Embedded continues to use Azure AD for *master user* (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
           
            An ISV can implement their own authentication and authorization for their applications.
           
