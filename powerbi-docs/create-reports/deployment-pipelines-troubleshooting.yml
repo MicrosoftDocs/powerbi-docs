@@ -216,13 +216,14 @@ sections:
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
 
       - question: |
-          How do I resolve the 'Can't start deployment' error?
+          How do I resolve a source and target dataset format version mismatch error?
         answer: |
-          There are a few reasons for getting the *Can’t start deployment* error. Here are two of them:
+          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage.
 
-          * **Source and target dataset format version mismatch** - This error occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. There are two ways to resolve this error:
-          
-            * *Use a dataset that has the same (or higher) model version in the source stage* - This is the recommended way of solving the error as it doesn't involve customer downtime or downgrading the target's dataset model version.
+      - question: |
+          How do I resolve a source and target data source type mismatch error?
+        answer: |
+          During deployment, if deployment pipelines discovers that the type of a data source in the target stage isn't the same as the data source in the source stage, it attempts to convert the target data source. In some cases, it's not possible to convert the target stafromattempts to convert data sources thatThe *Can’t start deployment* error that states that *the source and target data source types don't match*, occurs when the data source in the target stage is from a different type than the data source in the source stage.. To avoid this error, 
 
             * *Delete the target dataset* - This method is not recommended as customers may experience downtime. In addition, the deployed dataset will be downgraded to a lower model version.   
 
