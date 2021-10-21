@@ -1,8 +1,8 @@
 ---
 title: Import Power BI visuals from AppSource 
 description: Learn how you can import a visual downloaded from the AppSource or elsewhere. 
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

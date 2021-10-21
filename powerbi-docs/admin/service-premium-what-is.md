@@ -1,13 +1,13 @@
 ---
 title: What is Microsoft Power BI Premium?
 description: Power BI Premium provides capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/08/2021
+ms.date: 10/18/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -32,7 +32,7 @@ This article introduces key features in Power BI Premium. Where necessary, links
 
 ## Power BI Premium Generation 2
 
-Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
+Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience.
 
 For more information about Premium Gen2, see [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 

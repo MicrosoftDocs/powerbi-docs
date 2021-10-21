@@ -1,8 +1,8 @@
 ---
 title:  Introduction to usage of test utils in Power BI visual
 description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

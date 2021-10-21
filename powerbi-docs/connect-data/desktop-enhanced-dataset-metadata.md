@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/16/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata
@@ -28,7 +28,7 @@ Your reports will be automatically upgraded to the enhanced metadata format when
 ## Exclude table from report refresh
 Once a data model has been upgraded to the enhanced metadata format some metadata that was previously only used in Power BI Desktop will now be respected in the Power BI Service as well - this includes the "Include in Report Refresh" option. For upgraded models, if the "Include in Report Refresh" option is deselected in the Power Query Editor, then that table will not be refreshed when the report/dataset is refreshed in Power BI Desktop or the Power BI Service. Reports already published in the Power BI Service that are not yet upgraded to the new enhanced metadata formal will need to be upgraded in Power BI Desktop before this new behavior will take effect. 
 
-## Limitations
+## Considerations and limitations
 Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the data model. This query is used by Power BI Service data models. With enhanced metadata support, the Power BI service data model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations won't work without reading underlying data. You may see some errors in reports that previously worked. For example, the error will say: 
 
 “Unable to convert an M query in table 'Dimension City' into a native source query. Try again later or contact support. If you contact support, provide these details." 

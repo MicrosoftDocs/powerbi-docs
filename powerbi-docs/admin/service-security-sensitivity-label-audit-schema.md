@@ -6,7 +6,7 @@ ms.author: painbar
 manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 07/03/2021
 LocalizationGroup: Data from files
 ---

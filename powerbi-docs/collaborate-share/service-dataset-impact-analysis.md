@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 10/19/2021
 LocalizationGroup: 
 ---
 # Dataset impact analysis
@@ -78,7 +78,7 @@ When you make a change to a dataset in Power BI Desktop and then republish it to
 >
 >In the message, the number of workspaces is only shown if more than one workspace contains impacted reports and dashboards.
 
-## Limitations
+## Considerations and limitations
 
 * Usage metrics are currently not supported for classic and personal workspaces.
 

@@ -1,8 +1,8 @@
 ---
 title: Advanced edit mode in Power BI visuals
 description: This article discusses how to set advanced UI controls in Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

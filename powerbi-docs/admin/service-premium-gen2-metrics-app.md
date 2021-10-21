@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 LocalizationGroup: Premium 
 ---
 
@@ -57,7 +57,7 @@ The top four visuals, titled *Weekly trendlines*, summarize the capacity's behav
 
 The artifacts visual is divided into three sections. The first section includes a matrix table, the second is made up of a stacked column table, and the third section includes more visual aids.
 
-* **Matrix table** - The matrix visual displays metrics for each Power BI item on the capacity. Items in the *Full ID* column are composed of a string that identifies them. The string's syntax is `workspace name \ item type \ item name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
+* **Matrix table** - The matrix visual displays metrics for each Power BI item on the capacity. Items in the *Full ID* column are composed of a string that identifies them. The string's syntax is `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
     Here are a few examples of ways you can sort this visual:
 
@@ -145,7 +145,7 @@ This page provides a help summary for each one of the Gen2 metrics app pages. At
 >[!NOTE]
 >Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
-## Limitations
+## Considerations and limitations
 
 * The app displays results for the last 14 or 28 days, depending on the visual.
 
