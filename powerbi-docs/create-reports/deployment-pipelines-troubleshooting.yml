@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 08/16/2021
+  ms.date: 10/21/2021
     
 title: Deployment pipelines troubleshooting
 summary: Use this article to troubleshoot issues in deployment pipelines.
@@ -214,7 +214,16 @@ sections:
           * *Reclaim workspace ownership* - Add any user to a workspace in a pipeline that doesn't have an owner, allowing you to unblock it.
           
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
+
+      - question: |
+          How do I resolve the ‘Can’t start deployment’ error?
+        answer: |
+          The *Can’t start deployment* error occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. There are two ways to resolve this error:
+
+          * *Delete the target dataset* - This method is not recommended as customers may experience downtime. In addition, the deployed dataset will be downgraded to a lower model version.
           
+          * *Use a dataset that has the same (or higher) model version in the source stage* - This is the recommended way of solving the error as it doesn’t involve customer downtime or downgrading the target’s dataset model version.
+                    
   - name: Paginated reports
     questions:
       - question: |
