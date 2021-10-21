@@ -39,60 +39,59 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 1. Move and resize some of the report tiles to make space for the new visual.
 
-    ![Move and resize report tiles](media/power-bi-visualization-powerapp/power-bi-report-page.jpg)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-report-page.png" alt-text="Move and resize report tiles.":::
 
 1. From the Visualizations pane, select the Power Apps icon, then resize the visual to fit the space you made.
 
-    ![Visualization pane with Power Apps icon selected](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-icon.png" alt-text="Visualization pane with Power Apps icon selected":::
 
-1. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**. 
+1. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**.
 
-    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-fields.png" alt-text="Screenshot showing the selection of the Name, Product Code, and Sales Stage fields.":::
 
 1. On the Power Apps visual, select the Power Apps environment where you want to create the app, then select **Create new**.
 
-    ![Create new app](media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png" alt-text="Create a new app.":::
 
-    In Power Apps Studio, you see that a basic app is created, with a *gallery* that shows one of the fields you selected in Power BI.
+   In Power Apps Studio, you see that a basic app is created, with a *gallery* that shows one of the fields you selected in Power BI.
 
-    ![Power Apps opens](media/power-bi-visualization-powerapp/power-bi-power-app.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-power-app.png" alt-text="Power Apps opens.":::
 
 1. Resize the gallery so it takes up only half of the screen. 
 
 1. In the left pane, select **Screen1**, then set the screen's **Fill** property to "LightBlue" (so it shows up better in the report).
 
-    ![color palette](media/power-bi-visualization-powerapp/power-bi-powerapps-fill.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-fill.png" alt-text="Screenshot showing the color palette used to set the Fill property.":::
 
-1. Make some room for a label control. 
+1. Make some room for a label control.
 
-    ![change gallery dimensions](media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png" alt-text="Change gallery dimensions.":::
 
 1. Under **gallery**, insert a text label control.
 
-   ![label control](media/power-bi-visualization-powerapp/power-bi-label.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-label.png" alt-text="Label control.":::
 
 1. Drag the label to the bottom of your visual. Set the **Text** property to `"Opportunity Count: " & CountRows(Gallery1.AllItems)`. It now shows the total number of opportunities in the data set.
 
-    ![App with resized gallery](media/power-bi-visualization-powerapp/power-bi-power-app-label.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-power-app-label.png" alt-text="App with resized gallery.":::
 
-    ![App with label updated](media/power-bi-visualization-powerapp/power-bi-label-live.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-label-live.png" alt-text="App with label updated.":::
 
 1. Save the app with the name "Opportunities app". 
 
-    ![save the app](media/power-bi-visualization-powerapp/power-bi-save-powerapp.png)
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-save-powerapp.png" alt-text="Screenshot showing the screen for saving the app.":::
 
 ## View the app in the report
 
 The app is now available in the Power BI report, and it interacts with other visuals because it shares the same data source.
 
-![App in Power BI report](media/power-bi-visualization-powerapp/power-bi-powerapps-visual.png)
+:::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-visual.png" alt-text="[App in Power BI report.":::
 
 In the Power BI report, select **Jan** in the slicer, which filters the whole report, including the data in the app.
 
-![filtered report](media/power-bi-visualization-powerapp/power-bi-last.png)
+:::image type="content" source="media/power-bi-visualization-powerapp/power-bi-last.png" alt-text="Screenshot showing the filtered report.":::
 
 Notice that the opportunity count in the app matches the count in the upper left of the report. You can select other items in the report, and the data in the app updates.
-
 
 ## Clean up resources
 
