@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: conceptual
-  ms.date: 04/02/2021 
+  ms.date: 10/21/2021
     
 title: Frequently asked questions about Power BI Embedded
 summary: |
@@ -321,7 +321,7 @@ sections:
           }
           ```
           > [!NOTE]
-          > Master user is not supported.
+          > *Master user* is not supported.
 
       - question: |
           Can you manage an On-premises data gateway with service principal?
