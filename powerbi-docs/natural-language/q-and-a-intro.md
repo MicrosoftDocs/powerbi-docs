@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 10/20/2021
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A
 
