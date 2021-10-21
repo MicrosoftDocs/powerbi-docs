@@ -1,8 +1,8 @@
 ---
 title: Power BI embedded analytics multi-tenancy solutions
 description: Choose the Power BI embedded application multi-tenant that is best for you
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -59,7 +59,7 @@ When working in Power BI Desktop without an internet connection, if you open a r
 
 3. Save the report. After the report is saved, when you open it again without an internet connection, the Power BI visual will work.
 
-## Limitations
+## Considerations and limitations
 
 This section lists the limitations of downloading a PBIX file.
 
@@ -73,7 +73,7 @@ This section lists the limitations of downloading a PBIX file.
 
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a PBIX file.
 
-* Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#limitations-1).
+* Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
 
 * Usage metric reports can't be downloaded to a PBIX file.
 

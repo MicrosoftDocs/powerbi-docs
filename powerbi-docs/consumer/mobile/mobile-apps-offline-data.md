@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/03/2021
+ms.date: 10/19/2021
 ---
 
 # View your data offline in the Power BI mobile apps
@@ -49,7 +49,7 @@ You can turn off background refresh, for example, to avoid network usage. Check 
 ## Offline indicators
 Power BI provides clear indicators when you go in and out of offline mode, as well as indicators for missing dashboards, reports, and tiles that aren't available offline.
 
-## Limitations
+## Considerations and limitations
 When you're offline with Power BI on your mobile device, you may encounter these limitations:
 
 * Power BI can cache up to 250 MB of data offline.

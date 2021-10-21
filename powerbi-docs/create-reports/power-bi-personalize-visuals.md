@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/30/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -130,7 +130,7 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 
 ![Select Apply to all pages for the perpective to apply to the entire report](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
 
-## Limitations
+## Considerations and limitations
 
 Currently the feature has a few limitations to be aware of.
 

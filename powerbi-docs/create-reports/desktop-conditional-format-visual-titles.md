@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
@@ -43,7 +43,7 @@ When you right-click **Title text**, a context menu appears that allows you to s
 
 From that window, you can select the field that you created to use for your title.
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations to the current implementation of expression-based titles for visuals:
 

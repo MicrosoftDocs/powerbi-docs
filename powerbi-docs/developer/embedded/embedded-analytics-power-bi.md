@@ -1,8 +1,8 @@
 ---
 title: Power BI embedded analytics overview
 description: Learn about embedded analytics in Power BI a Microsoft solution for embedding BI content.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview

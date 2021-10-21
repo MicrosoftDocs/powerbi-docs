@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 architecture
 
 **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience, is an improved and architecturally redesigned generation of Power BI Premium.
 
-Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
+Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
 
 The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
 
@@ -35,7 +35,7 @@ There are several positive results from distributing backend processing of conte
 1. The shared nodes are at least as large as an original Premium P3 node, which means there are more v-cores to perform any operations, which can increase performance by up to 16x when comparing to an original Premium P1.
 2. Whatever node your processing lands on, the placement mechanism makes sure memory remains available for your operation to complete, within the applicable memory constraints of your capacity. (see limitations section of this doc for full detail of memory constraints)
 3. Internal noisy neighbor problems in your capacity don't occur, since each of the *view* and *refresh* operations uses its own set of physical v-cores, with their own memory, on different computing nodes.
-4. Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups.
+4. Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups. As a result of this separation, there are no controls for paginated report workloads.
 5. The limitations on different capacity SKUs are not based on the physical constraints as they were in the original version of Premium; rather, they are based on an expected and clear set of rules that the Power BI Premium service enforces:
     * Total capacity CPU throughput is at or below the throughput possible with the v-cores your purchased capacity has.
     * Memory consumption required for viewing and refresh operations remains within the memory limits of your purchased capacity.
@@ -56,7 +56,7 @@ There are several positive results from distributing backend processing of conte
 >[Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
 
 >[!div class="nextstepaction"]
->[Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+>[Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

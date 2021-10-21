@@ -1,13 +1,13 @@
 ---
 title: How to configure workloads in Power BI Premium
 description: Learn how to configure workloads in a Power BI Premium capacity.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)**, **[Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
@@ -36,7 +36,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 | **Paginated reports** | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
 
 > [!NOTE]
-> **Premium Gen2**, currently in preview, does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. 
+> **Premium Gen2** does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. 
 
 
 ## Workload settings
@@ -192,7 +192,9 @@ The paginated reports workload lets you run paginated reports, based on the stan
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.  To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them. 
 
-In some cases, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
+In Gen1 Premium capacities, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
+
+In [Gen2 Premium capacities](../admin/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2), the paginated reports workload is enabled automatically, and is never unavailable.
 
 ## Configure workloads
 
@@ -230,7 +232,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale

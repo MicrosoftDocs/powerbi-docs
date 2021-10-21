@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -39,7 +39,7 @@ There are a few benefits to using DirectQuery:
 - Underlying data changes can require a refresh of data. For some reports, the need to display current data can require large data transfers, making reimporting data unfeasible. By contrast, DirectQuery reports always use current data.
 - The 1-GB dataset limitation *doesn't* apply to DirectQuery.
 
-## Limitations of DirectQuery
+## Considerations and limitations
 There are currently a few limitations to using DirectQuery:
 
 - If the **Power Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Power Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Power Query Editor**.
