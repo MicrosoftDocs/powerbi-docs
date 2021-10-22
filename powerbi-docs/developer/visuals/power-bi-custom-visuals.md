@@ -1,8 +1,8 @@
 ---
-title: Visuals in Power BI
-description: This article describes custom Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+title: Finding Power BI visuals
+description: This article describes the main ways of getting Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
@@ -10,15 +10,16 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 05/14/2021
 LocalizationGroup: Visualizations
+ms.custom: intro-overview
 ---
 
-# Visuals in Power BI
+# Where to find Power BI visuals
 
 Power BI visuals can be obtained from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
 * Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or Power BI.
-* [Custom visuals](#custom-visual-files).
+* Create your own [custom visuals](#custom-visual-files).
 
 ## Default Power BI visuals
 
@@ -78,7 +79,7 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual from a file, see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
-If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you are a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.

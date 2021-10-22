@@ -42,6 +42,9 @@ Power BI supports the following data types: Whole Number, Decimal Number, Curren
 ## Prepare your workbook for Power BI
 Watch this helpful video to learn more about how to make sure your Excel workbooks are ready for Power BI.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 
 ## Where your workbook file is saved makes a difference

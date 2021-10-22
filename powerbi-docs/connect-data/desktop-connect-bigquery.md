@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 10/20/2021
 
 LocalizationGroup: Connect to data
 ---
@@ -36,36 +36,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
 * The Google BigQuery connector is available in Power BI Desktop and in the Power BI service. In the Power BI service, the connector can be accessed using the Cloud-to-Cloud connection from Power BI to Google BigQuery.
 
-* You can use Power BI with the Google BigQuery **Billing Project**. By default, Power BI uses the first project from the list returned for the user. 
-
-  To customize the behavior of the Billing Project when you use it with Power BI, specify the following option in the underlying M in the Source step, which can be customized by using **Power Query Editor** in Power BI Desktop:
-
-  ```
-  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
-  ```
-
-  [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
-
-  `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
-
-  You can resolve this issue by adjusting the user permissions for Storage API. Assign these Storage API permissions:
-
-  - `bigquery.readsessions.create` - Creates a new read session via the BigQuery Storage API.
-  - `bigquery.readsessions.getData` - Reads data from a read session via the BigQuery Storage API.
-  - `bigquery.readsessions.update` - Updates a read session via the BigQuery Storage API.
-
-  These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
-  
-  Beginning with the April 2021 release of Power BI, if you do not have adequate permissions, you will see zero rows returned from queries. Make sure the specific permissions described previously are set properly on the account being used, to enabling refreshing a report or retrieving data from any tables.
-  
-  If the above steps do not resolve the problem or if you want to disable the support for Storage API, change your query to the following:
-  ```
-  Source = GoogleBigQuery.Database([UseStorageApi=false])
-  ```
-  Or if you are already using a billing project, change the query to the following:
-  ```
-  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here", UseStorageApi=false])
-  ```
+For more detailed information about connecting to Google BigQuery, see the [Power Query article](/power-query/connectors/googlebigquery) that describes the connector in detail. 
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:

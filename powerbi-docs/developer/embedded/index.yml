@@ -11,8 +11,8 @@ metadata:
   ms.subservice: powerbi-developer
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.date: 31/03/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -32,7 +32,7 @@ landingContent:
             url: embedded-faq.yml
       - linkListType: whats-new
         links:
-          - text: "Power BI Embedded Generation 2 (preview)"
+          - text: "Power BI Embedded Generation 2"
             url: power-bi-embedded-generation-2.md
       - linkListType: reference
         links:
@@ -54,12 +54,14 @@ landingContent:
         links:
           - text: "Tutorial: Embed Power BI content into an application for your customers"
             url: embed-sample-for-customers.md
-          - text: "Tutorial: Embed Power BI content into an application for your organization"
-            url: embed-sample-for-your-organization.md
-          - text: "Tutorial: Embed Power BI paginated reports into an application for your customers"
-            url: embed-paginated-reports-customers.md
-          - text: "Tutorial: Embed a Power BI content into your application for national clouds"
-            url: embed-sample-for-customers-national-clouds.md
+          - text: "Tutorial: Embed a Power BI report in an application for your organization"
+            url: embed-organization-app.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Embed Power BI paginated reports"
+            url: embed-paginated-reports.md
+          - text: "Embed using a service principal"
+            url: embed-service-principal.md                              
       - linkListType: reference
         links:
           - text: "Embedding setup tool"

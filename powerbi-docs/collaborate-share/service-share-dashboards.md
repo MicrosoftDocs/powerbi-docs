@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 10/19/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -18,7 +18,7 @@ When you share a report or dashboard, the people you share it with can view it a
 
 ![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
-You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
+You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-roles-new-workspaces.md) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
 
 The Power BI service offers other ways to collaborate and distribute reports and dashboards, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances. 
 
@@ -191,7 +191,7 @@ At most, you can share with 100 users or groups in a single share action. Howeve
 - Create the report or dashboard in a workspace, then create an app from the workspace. You can share the app with many more people. Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
 
 
-## Limitations and considerations
+## Considerations and limitations
 Things to keep in mind about sharing reports and dashboards:
 * Both reports and dashboards can be shared to users through direct access; however, only reports can be shared via links that give access to the report and underlying data.
 * If you have reshare permissions to the underlying dataset and you share a report or dashboard with colleagues, you are sharing the underlying dataset as well. Your colleagues get access to the entire dataset unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors may use capabilities that  customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.

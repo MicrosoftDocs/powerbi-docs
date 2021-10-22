@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 12/24/2019
 ---
@@ -27,7 +27,7 @@ However, challenges related to large data volumes, or reporting on near real-tim
 
 Further, you can consider developing a Composite model in the following situations.
 
-- Your model could be a DirectQuery model, but you want to boost performance. In a Composite model, performance can be improved by configuring appropriate storage for each table. You can also add [aggregations](../transform-model/desktop-aggregations.md). Both of these optimizations are discussed later in this article.
+- Your model could be a DirectQuery model, but you want to boost performance. In a Composite model, performance can be improved by configuring appropriate storage for each table. You can also add [aggregations](../admin/aggregations-auto.md). Both of these optimizations are discussed later in this article.
 - You want to combine a DirectQuery model with additional data, which must be imported into the model. Imported data can be loaded from a different data source, or from calculated tables.
 - You want to combine two or more DirectQuery data sources into a single model.
 
@@ -36,7 +36,7 @@ Further, you can consider developing a Composite model in the following situatio
 
 ## Optimize model design
 
-A Composite model can be optimized by configuring table [storage modes](../transform-model/desktop-storage-mode.md), and by adding [aggregations](../transform-model/desktop-aggregations.md).
+A Composite model can be optimized by configuring table [storage modes](../transform-model/desktop-storage-mode.md), and by adding [aggregations](../admin/aggregations-auto.md).
 
 ### Table storage mode
 
@@ -64,7 +64,7 @@ In summary, we recommend that you:
 
 ### Aggregations
 
-You can add aggregations to DirectQuery tables in your Composite model. Aggregations are cached in the model, and so they behave as Import tables (although they can't be used like a model table). Their purpose is to improve performance for "higher grain" queries. For more information, see [Aggregations in Power BI Desktop](../transform-model/desktop-aggregations.md).
+You can add aggregations to DirectQuery tables in your Composite model. Aggregations are cached in the model, and so they behave as Import tables (although they can't be used like a model table). Their purpose is to improve performance for "higher grain" queries. For more information, see [Aggregations in Power BI Desktop](../admin/aggregations-auto.md).
 
 We recommend that an aggregation table follows a basic rule: Its row count should be at least a factor of 10 smaller than the underlying table. For example, if the underlying table stores 1 billion rows, then the aggregation table shouldn't exceed 100 million rows. This rule ensures there's an adequate performance gain relative to the cost of creating and maintaining the aggregation table.
 
@@ -79,6 +79,6 @@ For more information related to this article, check out the following resources:
 - [DirectQuery model troubleshooting in Power BI Desktop](../connect-data/desktop-directquery-troubleshoot.md)
 - [Power BI data sources](../connect-data/power-bi-data-sources.md)
 - [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
-- [Aggregations in Power BI Desktop](../transform-model/desktop-aggregations.md)
+- [Aggregations in Power BI Desktop](../admin/aggregations-auto.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

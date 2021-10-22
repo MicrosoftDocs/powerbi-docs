@@ -6,8 +6,8 @@ ms.author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
-ms.date: 05/26/2021
+ms.topic: conceptual
+ms.date: 09/16/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -25,8 +25,6 @@ There are many different ways designers can share content. But this article is f
 In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your roles and permissions, and where content is stored.
 
 This article lists which features in the Power BI service are available to *business users* like you. By definition, *business users* have a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have content stored in Premium capacity.
-
-<art>
 
 ## Quick review of terminology
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
@@ -134,9 +132,9 @@ The second column represents a *business user*.  A business user:
 | Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)| 
 | Lineage view  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|PDF: create from report pages |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
-| PowerPoint: create from report pages*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+| Export to PowerPoint*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Promote content to Home  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 | Print report pages* |![green dot](media/end-user-license/power-bi-green-dot.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Interact with Q&A visual |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |

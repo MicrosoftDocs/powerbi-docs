@@ -5,17 +5,15 @@ author: aphilip94
 ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 10/19/2021
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The smart narrative visualization helps you quickly summarize visuals and reports. It provides relevant innovative insights that you can customize.
 
@@ -25,6 +23,9 @@ Use smart narrative summaries in your reports to address key takeaways, to point
 
 ## Get started 
 Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -82,7 +83,7 @@ You can also do more advanced filtering. For example, in the sample file, look a
 
 There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto four summaries per visual and upto sixteen per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
    
-## Limitations
+## Considerations and limitations
 
 The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 

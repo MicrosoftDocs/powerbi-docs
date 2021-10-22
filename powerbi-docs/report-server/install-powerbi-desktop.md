@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/16/2020
+ms.date: 09/09/2021
+ms.custom: intro-installation
 ---
 
 # Install Power BI Desktop for Power BI Report Server
@@ -63,6 +64,9 @@ Power BI reports in Power BI Report Server, in the Power BI service (`https://ap
 
 For Power BI Desktop for Power BI Report Server, you select the language when you install the app. You can't change it after, but you can install a version in another language.
 
+> [!NOTE]
+> Translations aren’t supported for Power BI reports in Power BI Report Server.
+
 ### Report visuals in a browser
 
 Power BI Report Server reports support almost all visualizations, including Power BI visuals. Power BI Report Server reports don’t support:
@@ -102,4 +106,3 @@ Now that you have Power BI Desktop installed, you can start creating Power BI re
 [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

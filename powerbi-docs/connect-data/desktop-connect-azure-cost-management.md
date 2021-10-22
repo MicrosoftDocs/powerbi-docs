@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -20,10 +20,6 @@ The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
-
-> [!NOTE]
-> The Azure Cost Management connector for Power BI Desktop does not support connecting to government clouds. 
-
 
 ## Connect using Azure Cost Management
 
@@ -123,7 +119,11 @@ When you select **Load**, the data is loaded into Power BI Desktop.
 
 When the data you selected is loaded, the data tables and fields are shown in the **Fields** pane.
 
-## Limitations and considerations
+## Considerations and limitations
+
+The following considerations and limitations apply to the Azure Cost Management data connector:
+
+* The Azure Cost Managagement data connector does not work with Office 365 GCC customer accounts.
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 

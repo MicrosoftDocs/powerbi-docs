@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 10/06/2021
 ---
 
 # Power BI support options
@@ -60,35 +60,32 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 \* A one-hour SLA is available only through _Sev A cases_, which require justification of immediate, direct business impact from work stoppage in existing production reporting.
 
-## Power BI benefits for Microsoft Premier support
+## Power BI benefits for Microsoft Premier or Unified support contracts
 
-With Microsoft Premier support, you also get the following benefits:
+With Microsoft Premier or Unified contract support, you also get the following benefits:
 
-- Account management
-- Option for on-site support
-- Health check, risk assessments, and reviews
-- Training and workshops
-- Developer support
+* Account management
+* Option for on-site support
+* Health check, risk assessments, and reviews
+* Training and workshops
+* Developer support
 
 As a Power BI customer, you can also take advantage of the following offerings for proactive support hours:
 
- - **Power BI Assessment**, a service delivered by a Microsoft accredited engineer to diagnose potential issues and performance with your Power BI environment. The engineer will provide valuable guidance on recommended practices to improve the health and performance of your Power BI environment. At the end of this assessment, you'll receive a comprehensive Power BI report of results, a detailed best practices guidance deck, and a summary report tailored to your environment.
+* **Power BI Assessment**. A service delivered by a Microsoft-accredited Customer Engineer to diagnose potential issues and performance with your Power BI environment. The engineer will provide valuable guidance on recommended practices to improve the health and performance of your Power BI environment. At the end of this assessment, you'll receive a comprehensive Power BI report of results, a detailed best practice guidance deck, and a summary report tailored to your environment.
 
- - **Activate Business Analytics with Power BI**
-Work side-by-side with a Microsoft Premier Field Engineer (PFE) over three days, developing a proof-of-concept in Power BI, with the objective of improving one of the following options:
+* **Activate Business Analytics with Power BI**. This offering is designed to help you to implement a real-life scenario and enable Power BI for your organization. Work side-by-side with an expert over three days, developing a proof-of-concept in Power BI, with the objective of improving one of the following scenarios:
+    * Scenario 1: Power BI Solution Development. Your organization already has a data warehouse or data marts in place, or your department wants to explore data that isn't in the corporate store yet. We can prototype a Power BI solution that will connect to your data and extract meaningful insights using Power BI models and reports. Common data sources include Azure SQL Database, Azure SQL Data Warehouse (DW) or on-premises data using Enterprise Data Gateway. 
+    * Scenario 2: Adoption, Governance and Administration. The focus here is on establishing a framework for Power BI governance and operational processes. We'll review your infrastructure, discuss key components in typical Power BI deployments, and recommend practices for governance, administration, and management of Power BI. 
+    * Scenario 3: Enterprise Scale Data Analytics. The focus in this scenario is on developing Power BI Premium models or migrating existing AAS/SSAS models to Power BI. We consider key components, advantages, and limitations of Power BI Premium capacity management and migrations to Power BI Premium from existing enterprise analytics infrastructure.
 
-    - Automating a detailed report that requires a significant amount of effort to maintain and distribute.
-    - Update a report with compelling visualizations or different types of interactivity.
-    - Help drive Power BI adoption by setting up key components.
-Typical engagements cover use-cases that will provide a quick-win to the organization, a starting point for more complex scenarios, or even bootstrap your environment for Power BI adoption.
+* **WorkshopPLUS - Data AI: Business Analytics with Power BI**. This workshop is a great introduction to Power BI, making it an excellent starting point for adoption or for ramping up your users. It will provide you with a complete overview of Power BI functionality and capabilities and covers both Power BI Desktop and the Power BI service. You'll learn in detail how to transform data, build a model, build calculations and reports, as well as best practices around sharing and governing that content in the Power BI service. You can also expect many demonstrations and labs, so you can experiment and see the technology in action.
 
-  - **WorkshopPLUS - Data AI: Business Analytics with Power BI**
-This workshop, typically delivered by a Microsoft PFE, is a great introduction to Power BI, making it an excellent starting point for adoption or for ramping up your users. It will provide you with a complete overview of Power BI functionality and capabilities and covers both Power BI Desktop and Power BI service. You'll learn in detail how to transform data, build a model, build calculations and reports, and  best practices around sharing and governing that content in the Power BI service. You can also expect lots of demonstrations and laboratories, so you can experiment and see the technology in action.
+* **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**. This offering presents how you can implement the key principles of data modeling in Power BI, using tools such as Power BI Desktop and the accompanying cloud service for the publishing and consumption of Power BI assets. You will develop reports, including DAX, use premium capacities in Power BI, deal with advanced analytics involving AI components, Premium, and Data flows.
 
-  - **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**
-This course will provide you the knowledge to understand and implement the key principles of data modeling in Power BI using tools such as Power BI Desktop to publish BI assets for consumption in the Power BI service. This course covers the basics of report development, embedded analytics in Power BI to embed the content into custom applications, real-time dashboards, and advanced analytics involving data science and development in Power BI.
-
-Contact your Microsoft Technical Account Manager for details. If you don't already have a Microsoft Premier support contract, learn more at [Premier support](https://support.microsoft.com/premier).
+* **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. You can use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You will have an opportunity to work with a Microsoft Subject Matter Expert on Performance Tuning and Optimization of "Slow Running Power BI Reports", with a focus on Report Models and Data Analysis Expressions, or of "Slow Dataset Refresh” with a focus on Power BI dataset refresh performance running in the Power BI Cloud service or Power BI Report Server.
+  
+Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
 
 ## Next steps
 

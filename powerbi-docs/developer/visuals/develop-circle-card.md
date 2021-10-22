@@ -1,8 +1,8 @@
 ---
 title: Learn how to develop your own Power BI visual using the circle card visual as an example
 description: This tutorial explains how you can develop a Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -59,7 +59,7 @@ In this section you'll create a project for the circle card visual.
     >[!IMPORTANT]
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 
-## View the circle card in Power BI service
+## View the visual in Power BI service
 
 [!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
 

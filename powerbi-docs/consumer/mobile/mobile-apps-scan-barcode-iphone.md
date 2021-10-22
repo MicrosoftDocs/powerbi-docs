@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/02/2019
+ms.date: 10/19/2021
 ---
 # Scan barcodes from the mobile app to get filtered data 
 Scan barcodes in the real world to get directly to filtered BI information in the Power BI mobile app.
@@ -57,7 +57,7 @@ To clear barcode filtering while in a filtered report:
 1. On the report's action bar, tap **More options (...)** and find the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the scanner.
 1. Select **Clear barcode filter** to go back to the unfiltered report.
 
-## Limitations
+## Considerations and limitations
 
 * The Filters pane gives no indication of barcode filtering. To know whether a report is currently filtered by a barcode, look at the icon on the Barcode Scanner menu item:
 

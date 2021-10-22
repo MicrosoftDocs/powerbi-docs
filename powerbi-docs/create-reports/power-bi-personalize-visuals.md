@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -36,65 +36,13 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Reset all their changes for a visual
 - Clear out their recent changes
 
-## Use Perspectives for a more focused view
-
-For Personalize visuals, you can use **Perspectives** to choose a subset of a model that provides a more focused view. Choosing a subset can be helpful when working with a large data model, allowing you to focus on a manageable subset of fields, and not overwhelm report readers with the full collection of fields in that large model. 
-
-![Personalize visuals](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
-
-Keep the following considerations in mind when working with perspectives:
-
-* Perspectives are not meant to be used as a security mechanism, they are a tool for providing a better end-user experience. All security for a perspective is inherited from the underlying model.
-
-* Perspectives in both tabular and multi-dimensional models are supported. However, for perspectives in multi-dimensional models, you can only set the perspective to be the same as the base cube for the report.
-
-* Before deleting a perspective from a model, be sure to check that the perspective is not being used in the Personalize visuals experience. 
-
-To use Perspectives, you must enable Personalize visuals for the report. You also must create at least one Perspective that includes the dimensions and measures you want end-users to interact with for the Personalize visuals experience.
-
-To create the perspective use Tabular Editor, which you can download from the following location: [Tabular Editor download](https://tabulareditor.com/).
-
-Once you install **Tabular Editor**, open your report in **Power BI Desktop** and launch **Tabular Editor** from the **External Tools** tab of the ribbon, as shown in the following image.
-
-![Tabular Editor in the External Tools ribbon](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
-
-In Tabular Editor, right-click on the **Perspectives** folder to create a new perspective.
-
-![Create a new Perspectives folder in Tabular Editor](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
-
-You can double-click the text to rename the perspective.
-
-![Rename the perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
-
-Next, add fields to the perspective by opening the **Tables** folder in Tabular Editor, the right-click on the fields you want to show in the perspective.
-
-![Add fields to a perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
-
-Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so any fields you already added to a perspective will have the option to add it disabled.
-
-After you added all the fields you want, be sure to save your settings, both in Tabular Editor and then also in Power BI Desktop.
-
-![Save perspectives settings in Tabular Editor and Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
-
-Once you save the new perspective to the model, and save the Power BI Desktop report, navigate to the **Format** pane for the page, where you see a new section for **Personalize visual**.
-
-![Personalize visual section in the Format pane](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
-
-The selection for *Report-reader perspective* is set to *Default fields* initially. Once you select the drop down arrow, you see the other Perspectives you’ve created.
-
-![Select the drop down arrow to see your other perspectives](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
-
-Once you set the Perspective for the report page, the Personalize visuals experience for that page is filtered to the selected Perspective. Selecting **Apply to all pages** lets you apply your Perspective setting to all existing pages in your report.
-
-![Select Apply to all pages for the perpective to apply to the entire report](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
-
 ## Enable personalization in a report
 
 You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
 
 ### In Power BI Desktop
 
-To enable the feature in Power BI Desktop, go to **File** > **Options and Settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
+To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
 
@@ -130,8 +78,59 @@ Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
 
+## Use Perspectives for a more focused view
 
-## Limitations
+For Personalize visuals, you can use **Perspectives** to choose a subset of a model that provides a more focused view. Choosing a subset can be helpful when working with a large data model, allowing you to focus on a manageable subset of fields, and not overwhelm report readers with the full collection of fields in that large model. 
+
+![Personalize visuals](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
+
+Keep the following considerations in mind when working with perspectives:
+
+* Perspectives are not meant to be used as a security mechanism, they are a tool for providing a better end-user experience. All security for a perspective is inherited from the underlying model.
+
+* Perspectives in both tabular and multi-dimensional models are supported. However, for perspectives in multi-dimensional models, you can only set the perspective to be the same as the base cube for the report.
+
+* Before deleting a perspective from a model, be sure to check that the perspective is not being used in the Personalize visuals experience. 
+
+To use Perspectives, you must enable Personalize visuals for the report. You also must create at least one Perspective that includes the dimensions and measures you want end-users to interact with for the Personalize visuals experience.
+
+To create the perspective use Tabular Editor, which you can download from the following location: [Tabular Editor download](https://tabulareditor.com/).
+
+Once you install **Tabular Editor**, open your report in **Power BI Desktop** and launch **Tabular Editor** from the **External Tools** tab of the ribbon, as shown in the following image.
+
+![Tabular Editor in the External Tools ribbon](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
+
+In Tabular Editor, right-click on the **Perspectives** folder to create a new perspective.
+
+![Create a new Perspectives folder in Tabular Editor](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
+
+You can double-click the text to rename the perspective.
+
+![Rename the perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
+
+Next, add fields to the perspective by opening the **Tables** folder in Tabular Editor. Then right-click on the fields you want to show in the perspective.
+
+![Add fields to a perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
+
+Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so any fields you already added to a perspective will have the option to add it disabled.
+
+After you added all the fields you want, be sure to save your settings, both in Tabular Editor and then also in Power BI Desktop.
+
+![Save perspectives settings in Tabular Editor and Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
+
+Once you save the new perspective to the model, and save the Power BI Desktop report, navigate to the **Format** pane for the page, where you see a new section for **Personalize visual**.
+
+![Personalize visual section in the Format pane](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+
+The selection for *Report-reader perspective* is set to *Default fields* initially. Once you select the drop down arrow, you see the other Perspectives you’ve created.
+
+![Select the drop down arrow to see your other perspectives](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+
+Once you set the Perspective for the report page, the Personalize visuals experience for that page is filtered to the selected Perspective. Selecting **Apply to all pages** lets you apply your Perspective setting to all existing pages in your report.
+
+![Select Apply to all pages for the perpective to apply to the entire report](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+
+## Considerations and limitations
 
 Currently the feature has a few limitations to be aware of.
 

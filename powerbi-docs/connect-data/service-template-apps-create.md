@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/21/2021
+ms.date: 10/04/2021
 ---
 
 # Create a template app in Power BI

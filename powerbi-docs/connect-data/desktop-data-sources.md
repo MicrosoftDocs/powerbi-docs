@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 10/12/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -85,11 +85,12 @@ The **Database** category provides the following data connections:
 * Snowflake
 * Essbase
 * Actian (Beta)
+* Amazon Athena (Beta)
 * AtScale cubes
 * BI Connector
-* Data Virtuality LDW
 * Denodo
-* Dremio
+* Dremio Software
+* Dremio Cloud (Beta)
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -98,6 +99,9 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB (Beta)
 * MarkLogic
+* TIBDO(R) Data Virtualization (Beta)
+* Data Virtuality LDW
+* Exasol
 
 
 > [!NOTE]
@@ -115,7 +119,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI dataflows
 * Common Data Service (Legacy)
 * Dataverse
-* Power Platform dataflows (Beta)
+* Dataflows
 
 
 The following image shows the **Get Data** window for **Power Platform**.
@@ -139,6 +143,7 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
+* Azure Time Series Insights (Beta)
 * Azure Cost Management
 * Azure Databricks
 * Azure Time Series Insights (Beta)
@@ -158,7 +163,6 @@ The **Online Services** category provides the following data connections:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
-* Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Boards only)
 * Azure DevOps Server (Boards only)
 * Salesforce Objects
@@ -182,6 +186,8 @@ The **Online Services** category provides the following data connections:
 * Asana (Beta)
 * Assemble Views (Beta)
 * Automation Anywhere
+* Automy Data Analytics (Beta)
+* Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM (Beta)
@@ -198,8 +204,9 @@ The **Online Services** category provides the following data connections:
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Workplace Analytics (Beta)
 * Zoho Creator (Beta)
+* Assemble Views
+* Workplace Analytics (Beta)
 
 
 
@@ -246,10 +253,10 @@ The **Other** category provides the following data connections:
 * SurveyMonkey (Beta)
 * Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
-* TIBCO(R) Data Virtualization (Beta)
-* Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
+* Bloomberg Data and Analytics
+* Vena
 * Blank Query
 
 

@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/23/2019
+ms.date: 10/24/2019
 ---
 
 # Apply auto date/time in Power BI Desktop

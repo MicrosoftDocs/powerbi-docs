@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/11/2021
+ms.date: 10/03/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -46,7 +46,7 @@ After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To
 > [!IMPORTANT]
 > Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. 
 > 
-> If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them, as long as the reports are published to a Premium capacity. 
+> If you've purchased Power BI Premium, you don't have to assign Pro licenses to allow users to consume content.  Users in the organization can view reports that are shared with them, as long as the reports are published to a Premium capacity. Content creators still need to be assigned a Pro license.
 > 
 > To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
 >
@@ -63,7 +63,7 @@ The URLs for connecting to Power BI differ for government users and commercial u
 Your account might be set up in more than one cloud. If your account is set up that way, when you sign in to Power BI Desktop, you can choose which cloud to connect to.
 
 >[!TIP]
->In this video, [Using Power BI Desktop in government clouds](https://www.youtube.com/watch?v=CTMG1OE17uk), Technical Specialist Steve Winward shows how you can apply a registry setting to go directly to the right cloud endpoint for your environment. The [registry key settings](https://github.com/SteveWinward/PowerBI/blob/master/WriteUps/power-bi-desktop-sovereign-config.md) to bypass the global discovery endpoint are shared on GitHub.
+>In this video, [Using Power BI Desktop in government clouds](https://www.youtube.com/watch?v=CTMG1OE17uk), Technical Specialist Steve Winward shows how you can apply a registry setting to go directly to the right cloud endpoint for your environment. The [registry key settings](https://github.com/microsoft/Federal-Business-Applications/tree/main/whitepapers/power-bi-registry-settings) to bypass the global discovery endpoint are shared on GitHub.
 >
 
 ## Allow connections to Power BI
@@ -89,8 +89,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Microsoft 365 integration | **GCC**: [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br>**GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)<br>**DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us<br>**GCC High**: *.high.powerbigov.us<br>**DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
-| Informational messages (optional) | **All**: dynmsg.modpim.com |
-| NPS surveys (optional) | **All**: nps.onyx.azure.net |
+| Informational messages (optional) | **All**: arc.msn.com |
 | | |
 
 <br>
@@ -136,18 +135,16 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
 |[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
-|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2021-Q4|CY2021-Q4|CY2021-Q4|
+|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H1|CY2022-H1|CY2022-H1|
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
+|[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
 |Tenant metadata scanning flow<sup>4</sup>|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
-| | | |
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited. It works only for classic workspaces and doesn't include the enhanced functionality that's described in [Embed Power BI content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
-
-<sup>4</sup> The tenant metadata scanning flow is composed of the following Power BI REST APIs: [getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces), [getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult), [getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus), and [postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo). These APIs are not supported in sovereign clouds.
 
 ## Next steps
 

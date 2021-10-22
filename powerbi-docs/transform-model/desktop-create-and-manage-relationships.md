@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/28/2020
+ms.date: 05/29/2020
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
@@ -17,16 +17,16 @@ When you import multiple tables, chances are you'll do some analysis using data 
 If you query two or more tables at the same time, when the data is loaded, Power BI Desktop attempts to find and create relationships for you. The relationship options **Cardinality**, **Cross filter direction**, and **Make this relationship active** are automatically set. Power BI Desktop looks at column names in the tables you're querying to determine if there are any potential relationships. If there are, those relationships are created automatically. If Power BI Desktop can't determine with a high level of confidence there's a match, it doesn't create the relationship. However, you can still use the **Manage relationships** dialog box to manually create or edit relationships.
 
 ## Create a relationship with autodetect
-On the **Home** tab, select **Manage Relationships** \> **Autodetect**.
+On the **Modeling** tab, select **Manage relationships** \> **Autodetect**.
 
 ![Create a relationship with autodetect](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## Create a relationship manually
-1. On the **Home** tab, select **Manage Relationships** \> **New**.
+1. On the **Modeling** tab, select **Manage relationships** \> **New**.
 
 2. In the **Create relationship** dialog box, in the first table drop-down list, select a table. Select the column you want to use in the relationship.
 
-3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then elect **OK**.
+3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then select **OK**.
 
    ![Create a manual relationship](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
@@ -43,7 +43,7 @@ For more information, see this [blog post](/archive/blogs/cansql/relationships-i
 
 
 ## Edit a relationship
-1. On the **Home** tab, select **Manage Relationships**.
+1. On the **Modeling** tab, select **Manage relationships**.
 
 2. In the **Manage relationships** dialog box, select the relationship, then select **Edit**.
 
@@ -53,7 +53,7 @@ When you create or edit a relationship, you can configure additional options. By
 ### Cardinality
 The **Cardinality** option can have one of the following settings:
 
-**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of realtionship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
+**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of relationship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
 
 **One to one (1:1)**: In a one-to-one relationship, the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
 
@@ -139,7 +139,7 @@ Why these columns? Well, if we look at the **Project** column in the **ProjectHo
 If we look at the **ProjName** column in the **CompanyProject** table, we see there’s only one of each of the color values for the project name. Each color value in this table is unique, and that’s important, because we can create a relationship between these two tables. In this case, a many-to-one relationship. In a many-to-one relationship, at least one column in one of the tables must contain unique values. There are some additional options for some relationships, which we'll look at later. For now, let’s create a relationship between the project columns in each of our two tables.
 
 ### To create the new relationship
-1. Select **Manage Relationships** from the **Home** tab.
+1. Select **Manage relationships** from the **Modeling** tab.
 2. In **Manage relationships**, select **New** to open the **Create relationship** dialog box, where we can select the tables, columns, and any additional settings we want for our relationship.
 3. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many* side of our relationship.
 4. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship. 

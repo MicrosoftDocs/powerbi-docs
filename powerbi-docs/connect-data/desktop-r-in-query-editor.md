@@ -6,9 +6,9 @@ ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/28/2020
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -111,7 +111,7 @@ After you've uploaded the .pbix file to the Power BI service, you need to take a
 
 * **Install a personal gateway**: You need a personal gateway installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [Use personal gateways in Power BI](service-gateway-personal-mode.md).
 
-## Limitations
+## Considerations and limitations
 
 There are some limitations to queries that include R scripts created in Power Query Editor:
 

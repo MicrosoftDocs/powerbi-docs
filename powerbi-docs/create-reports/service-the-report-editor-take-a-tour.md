@@ -8,7 +8,7 @@ ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 12/01/2020
+ms.date: 06/22/2021
 LocalizationGroup: Reports
 ---
 # Tour the report editor in Power BI
@@ -18,6 +18,9 @@ In Power BI Desktop and in the Power BI service, the *report editor* is where yo
 After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share them, your end users can interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](../consumer/end-user-reading-view.md). 
 
 This video shows the report editor in Power BI Desktop. This article also shows the report editor in Power BI Desktop. 
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -54,7 +57,7 @@ For example, when you select an individual visual such as this column chart:
 
 **The bottom of the Visualization pane** has three tabs:
 
-![Fields in the visualization](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Fields** displays the fields in the visual. You may have to scroll down to see all the details. This chart is using StoreNumberName and This Year Sales.
+![Fields in the visualization](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Fields** displays the fields in the visual. You may have to scroll down to see all the details. This chart is using **FiscalMonth** and **Total Sales Variance**.
 
 ![Paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller.png) **Format** To display the format pane for the selected visualization, select the paint roller icon.
 
@@ -81,7 +84,7 @@ The visualizations pane has four sections itself. We'll start at the top of the 
 
 ![Top of Visualization pane](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-icons.png)
 
-Here's where you select a visualization type. The small icons show the different types of visualizations you can create. In the image above, the bubble chart is selected. If you start building a visualization by selecting fields without selecting a visualization type first, Power BI picks the visualization type for you. You can keep Power BI's selection, or change the type by selecting a different icon.
+Here's where you select a visualization type. The small icons show the different types of visualizations you can create. In the image above, the scatter chart is selected. If you start building a visualization by selecting fields without selecting a visualization type first, Power BI picks the visualization type for you. You can keep Power BI's selection, or change the type by selecting a different icon.
 
 You can download custom visualizations to Power BI Desktop. Their icons will show up in this pane, too. 
 
@@ -118,10 +121,10 @@ The Fields pane displays the tables, folders, and fields in your data that are a
 
 :::row:::
     :::column:::
-        ![The Fields pane](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png)
+        <ul><li>Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active (or new) visualization. And it also decides which bucket to place that field into.  For example, should the field be used a legend, axis, or value? Power BI makes a best-guess and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>
     :::column-end:::
     :::column:::
-        <ul><li>Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active (or new) visualization. And it also decides which bucket to place that field into.  For example, should the field be used a legend, axis, or value? Power BI makes a best-guess and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>
+        ![The Fields pane](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png)
     :::column-end:::
 :::row-end:::
 

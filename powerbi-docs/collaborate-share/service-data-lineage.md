@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 09/29/2021
 ms.custom: video-RE4HmJG
 LocalizationGroup: 
 ---
@@ -19,6 +19,9 @@ In modern business intelligence (BI) projects, understanding the flow of data fr
 Power BI has several artifact types, such as dashboards, reports, datasets, and dataflows. Many datasets and dataflows connect to external data sources such as SQL Server, and to external datasets in other workspaces. When a dataset is external to a workspace you own, it may be in a workspace owned by someone in IT or another analyst. External data sources and datasets make it harder to know where the data is coming from, ultimately. For complex projects and for simpler ones, we introduce lineage view.
 
 In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.    
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RE4HmJG" frameborder="0" allowfullscreen></iframe>
 
@@ -86,10 +89,9 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 
 ## Considerations and limitations
 
-- Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.    
-- Currently, the lineage view scope for dataflows is limited to what exists in the current workspace. For more information see [Dataflows features limitations](../transform-model/dataflows/dataflows-features-limitations.md)
+- Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.
 
 ## Next steps
 
-* [Intro to datasets across workspaces (preview)](../connect-data/service-datasets-across-workspaces.md)
+* [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Dataset impact analysis](service-dataset-impact-analysis.md)

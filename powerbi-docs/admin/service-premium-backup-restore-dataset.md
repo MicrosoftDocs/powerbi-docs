@@ -1,16 +1,16 @@
 ---
-title: Backup and restore Power BI Premium datasets (preview)
+title: Backup and restore Power BI Premium datasets
 description: Learn how to backup and restore datasets in Power BI Premium spaces
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/07/2021
-LocalizationGroup: Connect to data
+ms.date: 10/19/2021
+LocalizationGroup: Premium
 ---
-# Backup and restore datasets with Power BI Premium (preview)
+# Backup and restore datasets with Power BI Premium
 
 You can use the **Backup and Restore** feature with Power BI datasets if you have a Power BI Premium or Premium Per User (PPU) license, similar to the backup and restore operations available in tabular models for Azure Analysis Services (Azure AS).
 
@@ -22,8 +22,6 @@ The ability to backup and restore Power BI datasets provides a migration path fr
 
 ## Using dataset backup and restore
 
-**Backup and Restore** is in preview, and its features and functionality may change as we gather feedback from customers. 
-
 The **Backup and Restore** feature uses existing connections between Power BI and Azure, such as the ability to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant- or workspace-level to facilitate dataflow storage and operations. Since Backup and Restore uses the same connection, no other storage account is required. 
 
 You can also perform offline backups, downloading the files from your ADLS Gen2 storage account using the file system, Azure Storage Explorer, .NET tools, and PowerShell cmdlets, such as the *Get-AzDataLakeGen2ItemContent* cmdlet. The following image shows a workspace with three datasets and their corresponding backup files in Azure Storage Explorer.
@@ -34,9 +32,7 @@ To learn how to configure Power BI to use an ADLS Gen2 storage account, see [con
 
 ### Multi-geo considerations
 
-Even if you have configured your Power BI Premium capacities for multi-geo support, the **Backup and Restore** feature is not supported for multi-geo during preview. 
-
-As such, you must provision the storage account in your tenant’s home region, which also means that dataflow data and dataset backups might not be stored in the region of your Power BI Premium capacity. Check your data residency requirements before configuring your workspaces on a multi-geo capacity with a storage account.
+Backup and Restore relies on the Azure connections infrastructure in Power BI to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant or workspace level. As such, you should provision the storage account in the region of your Power BI Premium capacity to avoid data transfer costs across regional boundaries. Check your data residency requirements before configuring your workspaces on a multi-geo Premium capacity with a storage account.
 
 ### Who can perform backup and restore
 
@@ -65,12 +61,12 @@ During backup and restore, the following actions apply:
 
 If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
 
-## Limitations and considerations
+## Considerations and limitations
 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 
-* For existing workspaces with ADLS Gen2 configured to dataflows only, you must unlink the ADLS Gen2 account first, then relink it for **Backup and Restore** to work properly.
-* If your ADLS Gen2 is already working with backup and restore, if you later reconfigure it to work with backup and restore, you must first rename or move the backup folder, or the attempt will result in errors and failure. 
+* Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 cannot be located in a VNET.
+* If your ADLS Gen2 is already working with **Backup and Restore**, if you disconnect and later reconfigure it to work with **Backup and Restore** again, you must first rename or move the previous backup folder, or the attempt will result in errors and failure. 
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only the **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command is not supported
@@ -84,7 +80,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 

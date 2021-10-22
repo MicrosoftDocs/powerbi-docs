@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 03/10/2021
+ms.date: 10/06/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -25,7 +25,6 @@ You should always ensure that basic requirements for refresh are met and verifie
 * Verify the report has a gateway selected - if not, the datasource may have changed or might be missing
 
 Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
-
 
 ## Email notifications
 
@@ -93,6 +92,18 @@ Data refresh can also fail due to expired cached credentials. Clear your interne
 When you create a report in Power BI Desktop that contains an ANY data type column, and that column contains TRUE/FALSE values, the values of that column can differ between the Power BI Desktop and the Power BI service after a refresh. In Power BI Desktop, the underlying engine converts the boolean values to strings, retaining TRUE or FALSE values. In the Power BI service, the underlying engine converts the values to objects, and subsequently converts the values to -1 or 0.
 
 Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
+
+## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
+
+If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
+
+## Refresh operation throttled by Power BI Premium
+
+A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the follow error message is logged into the refresh history:
+
+- *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+ 
+If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations. 
 
 
 ## Next steps

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 10/19/2021
 LocalizationGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -158,7 +158,7 @@ Each of these cases has its own implications on performance, and the exact detai
 
 Additionally, the use of many-to-many relationships means that separate queries must be sent to the underlying source for each total or subtotal level, rather than aggregating the detailed values locally. A simple table visual with totals would send two SQL queries, rather than one.
 
-## Limitations and considerations
+## Considerations and limitations
 
 This release of composite models presents a few limitations:
 

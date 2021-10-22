@@ -5,9 +5,9 @@ author: otarb
 ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/14/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Use Python in Power Query Editor
@@ -78,7 +78,7 @@ Once you've uploaded the .pbix file to the Power BI service, a couple more steps
 * **Enable scheduled refresh for the dataset** - to enable scheduled refresh for the workbook that contains your dataset with Python scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
 * **Install the Personal Gateway** - you need a **Personal Gateway** installed on the machine where the file is located, and where Python is installed; the Power BI service must access that workbook and re-render any updated visuals. You can get more information on how to [install and configure Personal Gateway](service-gateway-personal-mode.md).
 
-## Limitations
+## Considerations and limitations
 There are some limitations to queries that include Python scripts created in **Power Query Editor**:
 
 * All Python data source settings must be set to *Public*, and all other steps in a query created in **Power Query Editor** must also be public. To get to data source settings, in **Power BI Desktop** select **File > Options and settings > Data source settings**.

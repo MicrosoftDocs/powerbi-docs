@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2019
+ms.date: 10/19/2021
 ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
 LocalizationGroup: Gateways
 ---
@@ -51,6 +51,9 @@ Optionally, you can configure the privacy level for your data source. This setti
 
 ## User names with Analysis Services
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
 Each time a user interacts with a report connected to Analysis Services, the effective user name is passed to the gateway and then passed on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI is passed to Analysis Services as the effective user. It's passed in the connection property [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth). 
@@ -60,6 +63,9 @@ The email address must match a defined user principal name (UPN) within the loca
 You can also [map your Power BI sign-in name with a local directory UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
 ## Map user names for Analysis Services data sources
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
@@ -178,7 +184,7 @@ To validate what an original name is replaced with, enter a value for **Original
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
 
-### Limitations for mapping rules
+### Considerations and limitations
 
 Mapping is for the specific data source that's being configured. It's not a global setting. If you have multiple Analysis Services data sources, you have to map the users for each data source.
 

@@ -1,15 +1,15 @@
 ---
-title: Datasets discovery using the datasets hub (preview)
+title: Datasets discovery using the datasets hub
 description: Learn how you can find, explore, and use the datasets in your organization and their related reports.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 10/17/2021
 LocalizationGroup: Share your work
 ---
-# Datasets discovery using the datasets hub (preview)
+# Datasets discovery using the datasets hub
 
 The datasets hub makes it easy to find, explore, and use the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
 
@@ -23,9 +23,14 @@ By making it easy to find quality datasets and their related reports, the datase
 This article explains what you see on the datasets hub and describes how to use it. For dataset owners, it also includes a number of tips about how to [enhance the discoverability and useability of their datasets](#make-your-dataset-discoverable).
 
 **What datasets do I see in the datasets hub?**
-* For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
-* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear greyed out, and you can't create reports from them or see their details. You can request access to them, though. 
-* If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
+
+* Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
+* Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
+* Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
+
+For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+
+If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
 
 ## Find the dataset you need
 
@@ -42,7 +47,7 @@ The datasets hub presents you with a selection of recommended datasets and a lis
 1. Click to view details page and to explore related reports.
 1. Click to view options.
 1. Click to view a summary of details.
-1. A greyed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. A grayed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
 1. Click to see dataset description.
 
@@ -54,7 +59,7 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear greyed out.
+The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear grayed out.
 
 The list has three tabs to filter the list of datasets.
 * **All datasets**: Shows all the datasets in your organization that you have permission to find. 
@@ -77,13 +82,53 @@ To create a new report based on dataset, or to pull the data into Excel with [An
 
 When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
 
+### Read-only permission for datasets
+
+You get read-only permission on a dataset when someone shares a report or dataset with you but doesn’t grant you build permission on the dataset.
+
+With read-only access, you can view some information about the dataset on the dataset hub and on the dataset's info page, as well as perform a limited number of actions on the dataset, but you can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, you must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
+
+To request build permission on a dataset, do one of the following:
+
+* From the datasets hub: Find the dataset in the datasets list, hover over it with the mouse, and click the **Request access** icon that appears
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
+
+* From the dataset info page, click the **Request access** button at the top right corner of the dataset info page.
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+
+### Discoverable datasets
+
+Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
+
+To request access, on the datasets hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
+
+:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
+
 ## View dataset details and explore related reports
 
 To see more information about the dataset, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 
-![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-explore-related-reports.png)
+[ ![Screenshot of datasets hub explore related reports page.](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png)](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
+
+### Action bar
+
+The Action bar at the top of the page contains a number of actions that you can launch.
+
+|Action  |Description  |
+|---------|---------|
+|**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
+|**Refresh**     | Refresh this dataset.        |
+|**Share**     | Share this dataset.        |
+|**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
+|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
+|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
+|**Show tables**     | Open a side panel showing the dataset's tables.        |
+
 
 ### Dataset details
 

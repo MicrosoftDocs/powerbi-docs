@@ -86,16 +86,26 @@
           href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
-      - name: "What can I do with visualizations?"
-        href: end-user-visualizations.md
       - name: "Types of visualizations"
-        href: end-user-visual-type.md
+        href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
       - name: "Copy a visual and paste it elsewhere"
         href: end-user-copy-paste.md
       - name: "Drill down in a visualization"
         href: end-user-drill.md
+    - name: Power BI in Teams
+      items: 
+      - name: "Use data for productive meetings"
+        href: business-user-teams-meetings.md
+      - name: "Use goals to drive results"
+        href: business-user-teams-goals.md
+      - name: "Lead data-driven discussions"
+        href: business-user-teams-share-data.md
+      - name: "Create reports from your data"
+        href: business-user-teams-create-reports.md
+      - name: "Analyze collaboration data"
+        href: business-user-teams-collaboration-data.md
     - name: Common tasks
       items: 
       - name: "Export data to Excel"
@@ -140,6 +150,8 @@
       items:
       - name: "Q&A in Power BI"
         href: end-user-q-and-a.md
+      - name: "Q&A tutorial"
+        href: end-user-q-and-a-tutorial.md
       - name: "Tips and tricks for asking questions with Q&A in Power BI"
         href: end-user-q-and-a-tips.md
   - name: Resources

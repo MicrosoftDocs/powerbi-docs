@@ -1,13 +1,13 @@
 ---
 title: Enable the Sync Slicers feature in Power BI visuals
 description: This article describes how to add the Sync Slicers feature to Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/13/2021
+ms.date: 10/19/2021
 ---
 
 # Sync slicers across pages in Power BI reports
@@ -43,7 +43,7 @@ For more information on how to sync slicers see [Sync and use slicers on other p
 >[!NOTE]
 >A report using the *sync slicer* feature must use API version 1.13.0 or later.
 
-## Limitations
+## Considerations and limitations
 
 The *sync slicers* feature only supports one field at a time. If your slicer has more than one field (**Category** or **Measure**), the feature is disabled.
 

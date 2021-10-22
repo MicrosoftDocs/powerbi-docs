@@ -10,6 +10,7 @@ ms.reviewer: ""
 ms.cunstom: ""
 ms.date: 01/12/2021
 LocalizationGroup: Get started
+ms.custom: intro-get-started
 ---
 
 # Get started with third-party apps

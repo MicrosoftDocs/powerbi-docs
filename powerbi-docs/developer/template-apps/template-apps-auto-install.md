@@ -68,7 +68,7 @@ The main steps for automating the configuration of a template app installation, 
 
 ## Step 1: Create a Power BI client object
 
-Using Power BI REST APIs requires you to get an *access token* for your [service principal](../embedded/embed-service-principal.md) from Azure AD. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
+Using Power BI REST APIs requires you to get an *access token* for your [service principal](../embedded/embed-service-principal.md) from Azure AD. You're required to get an [Azure AD access token](../embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
 To create the Power BI client with your access token, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a **Microsoft.Rest.TokenCredentials** object.
 
 ```csharp
@@ -88,7 +88,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## Step 2: Create an install ticket
 
 Create an install ticket, which is used when you redirect your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
-* [Template Apps CreateInstallTicket](/rest/api/power-bi/templateapps/createinstallticket)
+* [Template Apps CreateInstallTicket](/rest/api/power-bi/template-apps/create-install-ticket)
 
 A sample of how to create an install ticket for template app installation and configuration is available from the [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 

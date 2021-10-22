@@ -5,14 +5,16 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
-ms.subservice: pbi-deployment
-ms.custom: contperf-fy21q1
-ms.date: 06/14/2021
+ms.subservice: pbi-deployment-pipeline
+ms.custom: contperf-fy21q1, intro-get-started
+ms.date: 07/01/2021
 ---
 
 # Get started with deployment pipelines
 
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
+
+In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
 
 ## Accessing deployment pipelines
 
@@ -87,6 +89,8 @@ Follow these steps to assign a workspace in a deployment pipeline:
 * The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
+
+* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
 
 * You can only assign one workspace to each deployment pipeline.
 
@@ -291,7 +295,7 @@ You can learn more about [which items are copied to the next stage](deployment-p
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

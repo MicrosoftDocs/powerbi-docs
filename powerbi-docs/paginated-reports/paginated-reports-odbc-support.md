@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/01/2021
+ms.date: 10/04/2021
 ---
 
-# Power BI gateway and Report Builder support for ODBC data sources (preview)
+# Power BI gateway and Report Builder support for ODBC data sources
 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 This article spells out how to configure ODBC data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 
@@ -30,7 +30,7 @@ You need a Power BI gateway version February 2021 or later. We recommend install
 
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
-1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
+1.	Install the latest version of [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
 2.	Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
 
 ## Install Power BI gateway, configure ODBC data sources

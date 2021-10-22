@@ -45,7 +45,7 @@ No matter which option you choose, to share your content you need a [Power BI Pr
 
 When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
-Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in the new workspaces](service-roles-new-workspaces.md).
 
 ![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 

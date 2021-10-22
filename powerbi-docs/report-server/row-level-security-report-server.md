@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2021
+ms.date: 10/19/2021
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -73,7 +73,7 @@ Within Power BI Report Server, username() and userprincipalname() both return th
 
 If you're using custom authentication in Power BI Report Server, it returns the username format you’ve set up for users.  
 
-## Limitations 
+## Considerations and limitations
 
 Here are the current limitations for row-level security on Power BI models. 
 

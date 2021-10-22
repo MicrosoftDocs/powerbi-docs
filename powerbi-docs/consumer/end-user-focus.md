@@ -16,7 +16,8 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 

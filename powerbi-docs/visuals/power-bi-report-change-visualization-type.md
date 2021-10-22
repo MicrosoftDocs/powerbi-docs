@@ -12,9 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Change the type of visualization in a Power BI report
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 ## Select a new visualization type
 

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 10/19/2021
 ---
 # Create connected goals in Power BI (preview)
 
@@ -39,7 +39,7 @@ You can connect either the current or the target value, or both, to a value in a
 
     :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Select the data point you want to use as your Current or Target.":::
 
-    Currently there are some limitations on the values you can select. See the [Limitations](#limitations-selecting-values) section in this article for details.
+    Currently there are some limitations on the values you can select. See the [Considerations and limitations](#considerations-and-limitations) section in this article for details.
 
 1. Select **Connect**.
 
@@ -89,7 +89,7 @@ The time series refers to cases where you have a Date/Time field in the axis. In
 - **Data point** – measure is calculated at the last data point in time series and history is pulled in.
 - **Axis value** – measure is calculated at the last data point in time series and history is pulled in.
 
-## Limitations selecting values
+## Considerations and limitations
 
 Currently there are limitations on the values you can choose in a visual.
 

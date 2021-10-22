@@ -1,8 +1,8 @@
 ---
 title:  Visual API
 description: This article describes how to use IVisual API for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -132,7 +132,7 @@ enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualOb
 
 * `objectName: string`, name of the object
 
-## destroy `optional`
+## destroy *(optional)*
 
 The destroy function is called when your visual is unloaded and can be used for clean up tasks such as removing event listeners.
 

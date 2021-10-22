@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 08/30/2021
+ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
 
@@ -20,7 +21,8 @@ This article covers the basics of using Goals in the Power BI service. See the o
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Stay on top of your goals in the Power BI service](service-goals-check-in.md)
+- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-goals.md)
 
 ## License requirements 
 
@@ -68,6 +70,61 @@ The last section contains sample scorecards. As a new user, you can select one t
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-samples.png" alt-text="Sample scorecards with goals.":::
 
+## Frequently asked questions (FAQ)
+
+
+**Why don’t I see history for my goal when I connect to a Power BI data point?**
+
+You don’t see a history for a single data point because we only pull history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect. 
+
+
+**I'm connecting to time series data and still don’t see the history of the goal. Why not?**
+
+We don't pull in the history of time series if we only have a partial date (day of the week, month, etc.) We can only pull in the history of a time series when we have a full date to track (day, month, and year).  
+
+**Why aren't my goals getting updated over time in my scorecard?**
+
+There are a few reasons why your goal may not be getting updated:
+
+-	It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
+-	You don't have scheduled refresh for the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+-	Goals don’t get updated if they're created from a push dataset. 
+
+**I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
+
+To connect your current value or target to data, you need build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md). 
+    
+**I shared a scorecard but my users can’t do check-ins and add notes. Why not?**
+
+Currently, users need to have edit permissions for the scorecard to add check-ins. Updated scorecard and goal-level permissions are in the works. They'll allow check-in permissions without edit permissions for the scorecard.  
+    
+**Why can’t I update the value as part of my check-in?**
+
+You can only update values in manual goals.  If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the dataset refreshes.
+    
+**How often do goals update in the scorecard?**
+
+Goals only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the goals data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of. 
+    
+**I changed the tracking cycle of my goal. Why does the data still look the same?**
+
+Changing the tracking cycle only changes the trend that you see below your value/target area.  Changing this setting doesn't impact refreshes on the data or when your data is updated in the goals.
+
+**Why don’t I see the Power BI Premium workspace I’m looking for when I create a scorecard?**
+
+In order to create a scorecard in a Premium workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
+
+## Issues and limitations 
+  
+- Goals don't yet support bring your own key (BYOK). 
+- Goals don't yet support row-level security (RLS). 
+- For now, the maximum number of subgoal levels is four.
+- Goals don't support publish to web or “app-owns data scenarios” for embedded.
+- Mobile experience isn't currently available.
+- Business-to-business sharing (sharing across tenants) isn't supported.
+- Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 
+
+
 ## Next steps
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
@@ -75,3 +132,4 @@ The last section contains sample scorecards. As a new user, you can select one t
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
+

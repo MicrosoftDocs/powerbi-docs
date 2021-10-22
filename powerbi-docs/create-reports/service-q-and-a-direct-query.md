@@ -5,9 +5,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 03/16/2021
+ms.date: 09/13/2021
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
@@ -40,7 +40,7 @@ Once you have the data gateway set up, connect to your data from Power BI.  Eith
 2. Select **datasets** and choose the dataset to enable for Q&A.
    
    ![Datasets screen of Settings menu](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Expand **Q&A**, select the checkbox for **Turn on Q&A for this dataset**, and choose **Apply**.
+3. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
    
     ![Q&A area expanded](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 

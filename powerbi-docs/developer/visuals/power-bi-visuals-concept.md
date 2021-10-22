@@ -1,39 +1,35 @@
 ---
-title: Power BI visuals concepts
-description: The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI.
-author: KesemSharabi
-ms.author: kesharab
+title: Power BI visual interactions
+description: The article describes the interaction between the Power BI user, visual, and host.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 08/05/2021
 ---
 
 # Power BI visuals system integration
 
-The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI. 
+The article describes how Power BI handles the interactions between the user, visual, and host.
 
-The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
+The [`update` method](visual-api.md#update) is called whenever the visual's size or any of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
-![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.svg)
+Actions and subsequent updates in Power BI can be initiated by the user or by the visual itself. They usually occur in one of the following three patterns:
 
-## Visuals get updates from Power BI
+1. [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
+2. [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
+3. [Visual interacts with Power BI](#visual-interacts-with-power-bi).
 
-A visual calls an `update` method to get updates from Power BI. The `update` method usually contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
+The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
-Updates are triggered when the visual calls the `update` method.
+![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
 
-## Action and update patterns
+## User interacts with a visual through Power BI
 
-Actions and subsequent updates in Power BI visuals occur in one of these three patterns:
-
-* User interacts with a visual through Power BI.
-* User interacts with the visual directly.
-* Visual interacts with Power BI.
-
-### User interacts with a visual through Power BI
+The user can interact with Power BI to update a visual in the following ways:
 
 * A user opens the visual's properties panel.
 
@@ -67,17 +63,18 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 * A user selects a bookmark in the bookmarks panel of the report.
 
-    When a user selects a bookmark in the report's bookmarks panel, one of two actions can occur:
+    When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
 
     * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
-
     * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
 
     In either case, the visual must change its state according to the received selections or `filter` object.
 
     For more information about bookmarks and filters, see [Visual Filters API in Power BI visuals](filter-api.md).
 
-### User interacts with the visual directly
+## User interacts with the visual directly
+
+The user can also interact directly with the visual to update it as follows:
 
 * A user hovers the mouse over a data element.
 
@@ -85,7 +82,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
     For more information, see [Tooltips in Power BI visuals](add-tooltips.md).
 
-* A user changes visual properties. (For example, a user expands a tree and the visual saves state in the visual properties.)
+* A user changes visual properties (For example, by expanding a tree) and the visual saves the new state in the visual properties.
 
     A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
 
@@ -105,7 +102,9 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
     For more information about selections in a Power BI visual, see [Add interactivity by using Power BI visual selections](selection-api.md).
 
-### Visual interacts with Power BI
+## Visual interacts with Power BI
+
+Sometimes the visual initiates communication with the Power BI host without any input from the user:
 
 * A visual requests more data from Power BI.
 
@@ -125,5 +124,8 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-* [Developing a Power BI circle card visual](./develop-circle-card.md)
-* [Publish Power BI visuals to Partner Center](office-store.md)
+> [!div class="nextstepaction"]
+> [Developing a Power BI circle card visual](./develop-circle-card.md)
+
+> [!div class="nextstepaction"]
+> [Publish Power BI visuals to Partner Center](office-store.md)

@@ -8,7 +8,7 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/02/2020
+ms.date: 06/23/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -29,15 +29,20 @@ Only you can see the alerts you set, even if you share your dashboard. Even the 
 
 Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-content-pack-for-this-sample) if you want to follow along.
+This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) if you want to follow along.
 
 1. Start on a dashboard. From the **Total stores** tile, select the ellipses.
 
    ![Total Stores tile](media/service-set-data-alerts/powerbi-card.png)
 
-1. Select the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total Stores**.
+1. Select **Manage alerts** to add one or more alerts for **Total Stores**.
+
+   ![Screenshot of the More options menu with Manage alerts highlighted.](media/service-set-data-alerts/manage-alerts.png) 
 
 1. To start, select **+ Add alert rule**, ensure the **Active** slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
@@ -84,7 +89,9 @@ There are many ways to manage your alerts:
 
 ### From the dashboard tile
 
-1. If you need to change or remove an alert for a tile, reopen the **Manage alerts** window by selecting the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png).
+1. If you need to change or remove an alert for a tile, reopen the **Manage alerts** window by selecting **Manage alerts**.
+
+   ![Screenshot of Manage alerts on the More options menu.](media/service-set-data-alerts/manage-alerts.png) 
 
     Power BI displays the alert(s) that you've set for that tile.
 

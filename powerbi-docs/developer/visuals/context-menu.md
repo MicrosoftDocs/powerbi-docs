@@ -1,8 +1,8 @@
 ---
 title: Add context menu to Power BI Visual
 description: Learn how to add a context menu to a Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi

@@ -1,6 +1,6 @@
 ---
 title: Chat in Microsoft Teams directly from the Power BI service
-description: You can share Power BI dashboards and reports directly to Microsoft Teams from the Power BI service.
+description: You can share Power BI dashboards, reports, and datasets directly to Microsoft Teams from the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/04/2020
+ms.date: 09/16/2021
 ---
 
 # Chat in Microsoft Teams directly from the Power BI service
 
-You can chat about Power BI dashboards, reports, and visuals directly to Microsoft Teams from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports and dashboards in the Power BI service.
+You can open a Teams chat about Power BI dashboards, reports, visuals, and datasets directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [datasets](../connect-data/service-datasets-hub.md#view-dataset-details-and-explore-related-reports) in the Power BI service.
 
 ## Requirements
 
@@ -24,11 +24,11 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Chat about Power BI content in Microsoft Teams
 
-Follow these steps to share links to reports, dashboards, and visuals in the Power BI service, and chat about Microsoft Teams channels and chats.
+Follow these steps to share links to reports, dashboards, visuals, and datasets in the Power BI service, and chat in Microsoft Teams channels and chats.
 
-1. Select one of these options:
+1. In either the Power BI service or in Microsoft Teams, select one of these options:
 
-   * **Chat in Teams** in the action bar of a dashboard or report:
+   * **Chat in Teams** in the action bar of a dashboard, report, or dataset:
 
        ![Screenshot of Chat in Teams button in the action bar.](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
     
@@ -36,7 +36,7 @@ Follow these steps to share links to reports, dashboards, and visuals in the Pow
     
       ![Screenshot of Chat in Teams button in a visual contextual menu.](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. In the **Share to Microsoft Teams** dialog box, select the team or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
+1. In the **Share to Microsoft Teams** dialog box, select the person, group, or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
     ![Screenshot of Share to Microsoft Teams dialog box with information and message.](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 

@@ -8,7 +8,7 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 10/19/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
-* A [Power BI subscription](../fundamentals/service-self-service-signup-for-power-bi.md), with the [Opportunity Analysis Sample](../create-reports/sample-opportunity-analysis.md#get-the-content-pack-for-this-sample) installed
+* A [Power BI subscription](../fundamentals/service-self-service-signup-for-power-bi.md), with the [Opportunity Analysis Sample](../create-reports/sample-opportunity-analysis.md#get-the-built-in-sample) installed
 * An understanding of how to [create apps in Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](../create-reports/service-the-report-editor-take-a-tour.md)
 
 
@@ -100,7 +100,7 @@ Notice that the opportunity count in the app matches the count in the upper left
 ## Clean up resources
 If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and dataset.
 
-## Limitations and considerations
+## Considerations and limitations
 For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## Next steps

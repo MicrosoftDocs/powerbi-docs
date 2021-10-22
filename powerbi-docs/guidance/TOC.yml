@@ -50,24 +50,24 @@
         href: rls-guidance.md 
     - name: DAX
       items:
-      - name: "DIVIDE function vs divide operator (/)"
-        href: dax-divide-function-operator.md
       - name: "Appropriate use of error functions"
-        href: dax-error-functions.md
-      - name: "Use SELECTEDVALUE instead of VALUES"
-        href: dax-selectedvalue.md
-      - name: "COUNTROWS instead of COUNT"
-        href: dax-countrows.md
-      - name: "Use variables to improve formulas"
-        href: dax-variables.md
+        href: /dax/best-practices/dax-error-functions
       - name: "Avoid converting BLANKs to values"
-        href: dax-avoid-converting-blank.md
-      - name: "Column and measure references"
-        href: dax-column-measure-references.md 
+        href: /dax/best-practices/dax-avoid-converting-blank
       - name: "Avoid using FILTER as a filter argument"
-        href: dax-avoid-avoid-filter-as-filter-argument.md 
+        href: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
+      - name: "Column and measure references"
+        href: /dax/best-practices/dax-column-measure-references
+      - name: "DIVIDE function vs divide operator (/)"
+        href: /dax/best-practices/dax-divide-function-operator
+      - name: "Use COUNTROWS instead of COUNT"
+        href: /dax/best-practices/dax-countrows
+      - name: "Use SELECTEDVALUE instead of VALUES"
+        href: /dax/best-practices/dax-selectedvalue
+      - name: "Use variables to improve formulas"
+        href: /dax/best-practices/dax-variables
       - name: "Sample model"
-        href: dax-sample-model.md 
+        href: /dax/dax-sample-model
     - name: Power BI reports
       items:
       - name: "Separate reports from models"
@@ -136,6 +136,34 @@
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md
+  - name: Adoption roadmap
+    items: 
+      - name: "Overview"
+        href: powerbi-adoption-roadmap-overview.md
+      - name: "Maturity levels"
+        href: powerbi-adoption-roadmap-maturity-levels.md
+      - name: "Data culture"
+        href: powerbi-adoption-roadmap-data-culture.md
+      - name: "Executive sponsorship"
+        href: powerbi-adoption-roadmap-executive-sponsorship.md
+      - name: "Content ownership"
+        href: powerbi-adoption-roadmap-content-ownership-and-management.md
+      - name: "Content delivery scope"
+        href: powerbi-adoption-roadmap-content-delivery-scope.md
+      - name: "Center of Excellence"
+        href: powerbi-adoption-roadmap-center-of-excellence.md
+      - name: "Governance"
+        href: powerbi-adoption-roadmap-governance.md
+      - name: "Mentoring and user enablement"
+        href: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+      - name: "Community of practice"
+        href: powerbi-adoption-roadmap-community-of-practice.md
+      - name: "User support"
+        href: powerbi-adoption-roadmap-user-support.md
+      - name: "System oversight"
+        href: powerbi-adoption-roadmap-system-oversight.md
+      - name: "Conclusion"
+        href: powerbi-adoption-roadmap-conclusion.md
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

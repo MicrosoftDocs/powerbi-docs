@@ -9,9 +9,9 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.date: 05/22/2021
-ms.custom: mode-portal
+ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
-#customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
+#Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
 ---
 # Quickstart - Getting around in Power BI service
 

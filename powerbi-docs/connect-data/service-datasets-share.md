@@ -1,56 +1,53 @@
 ---
-title: Share a dataset
-description: As a dataset owner, you can create and share your datasets so others can use them. Learn how to share them.
+title: Share access to a dataset
+description: As a dataset owner, you share and grant access to your datasets so that others can use them. Learn how to grant access to your datasets.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: kayu
+ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 08/09/2021
 LocalizationGroup: Share your work
 ---
-# Share a dataset
+# Share access to a dataset (preview)
 
-As a creator of *data models* in Power BI Desktop, you're creating *datasets* that you can distribute in the Power BI service. Then other report creators can use your datasets as a basis for their own reports. In this article, you learn how to share your datasets. To learn how to give and remove access to your shared datasets, read about the [Build permission](service-datasets-build-permissions.md).
+To make it possible for other users to take advantage of a dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to a dataset using the **Share dataset** dialog.
 
-## Steps to sharing your dataset
+## Share a dataset
 
-1. You start by creating a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
+To share a dataset
 
-    A best practice is to save the .pbix file to a Microsoft 365 group.
+1. On either the [datasets hub page](service-datasets-hub.md#find-the-dataset-you-need) or on the [dataset info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports), choose **Share** as follows:
 
-1. Publish the .pbix file to a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md) in the Power BI service.
-    
-    Already, other members of this workspace can create reports in other workspaces based on this dataset. Use the Manage Permissions option on the dataset in the workspace content list give additional users access to the dataset. 
+    * **Datasets hub**: In the datasets list, click the **Share** icon. On a recommended dataset tile, choose **Share** on the **More options (…)** menu.
 
-1. You can also [publish an app](../collaborate-share/service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
+        ![Screenshot of dataset share option on the datasets hub.](media/service-datasets-share/power-bi-dataset-share-dataset.png)
 
-    > [!NOTE]
-    > If you select **Entire organization**, then no one in the organization will have Build permission. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permission, specify an email alias for the entire organization.
+    * **Dataset info page**: Click the **Share** icon on the action bar at the top of the page.
 
-    ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permission-new-look.png)
+        ![Screenshot of dataset share icon on the dataset info page.](media/service-datasets-share/power-bi-dataset-share-icon.png)
 
-1. Select **Publish app**, or **Update app** if it's already published.
+1. In the **Share dataset** dialog that appears, enter the names or email addresses of the specific people or groups (distribution groups or security groups) that you want to grant access to, then choose the types of access you wish to grant. You can optionally choose to send them an email notifying them that they've been granted access.
 
-## Track your dataset usage
+    ![Screenshot of the Share dataset dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
-When you have a shared dataset in your workspace, you may need to know what reports in other workspaces are based on it.
+    * **Allow recipients to share this dataset**: This option allows the recipients to grant access to other users via sharing.
+    * **Allow recipients to build content with the data associated with this dataset**: This option grants the recipients [Build permission](service-datasets-build-permissions.md) on the dataset, which enables them to build new reports and dashboards based on the data associated it.
 
-1. In the Datasets list view, select **View related**.
+        If you clear this checkbox, the user will get **read-only** permission on the dataset. Read-only permission allows them to explore the dataset on the [dataset's info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports) but doesn't allow them to build new content based on the dataset.
+    * **Send an email notification**: When this option is selected, an email will be sent to the recipients notifying them that they have been granted access to the dataset. You can add an optional message to the email message.
 
-    ![View related icon](media/service-datasets-build-permissions/power-bi-dataset-view-related-to-dataset.png)
+1. Click **Grant access**.
 
-1. The **Related content** dialog box shows all related items. In this list, you see the related items in this workspace and in **Other workspaces**.
- 
-    ![Related content dialog box](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
+> [!NOTE]
+> When you press **Grant access**, access is granted automatically. No further approval is required. 
 
-## Limitations and considerations
-Things to keep in mind about sharing datasets:
-
-* When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
+To monitor, change, or remove user access to your dataset, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
 
 ## Next steps
 
-- [Use datasets across workspaces](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Manage dataset access permissions](service-datasets-manage-access-permissions.md)
+* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
