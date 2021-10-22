@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/20/2021
+ms.date: 10/22/2021
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -18,7 +18,7 @@ LocalizationGroup: Samples
 Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
 Power BI offers different kinds of samples, for different purposes: 
-- A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
+- A sample **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** called Sales & Returns that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
 - A **[sample template app](sample-sales-marketing-template-app.md)** that you download from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
