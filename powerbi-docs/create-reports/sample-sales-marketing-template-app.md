@@ -1,6 +1,6 @@
 ---
-title: Get samples for Power BI
-description: Built-in samples, apps, .pbix files, and Excel datasets for Power BI
+title: Download a sample template app from AppSource
+description: The sample template app includes dashboards, reports, and datasets that you can modify, then distribute them to your colleagues.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 
@@ -11,35 +11,46 @@ ms.topic: conceptual
 ms.date: 10/20/2021
 LocalizationGroup: Samples
 ---
-# Get samples for Power BI
+# Download a sample template app from AppSource
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
+The Marketing and Sales *template app* is available from Microsoft AppSource. A template app is a Power BI content type that combines related dashboards and reports. An app can have one or more dashboards and one or more reports, all bundled together. You can download the Marketing and Sales app from **Apps** in the Power BI service, or by going to AppSource in your browser.
 
-Power BI offers different kinds of samples, for different purposes: 
-- A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
-- A **[sample template app](sample-sales-marketing-template-app.md)** that you download from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
-- **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
-- **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
-- Also a **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
+1. This link takes you to the [Sales & Marketing app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview) in AppSource. Select **Get it now**.
+1. Microsoft AppSource asks you to **Sign in**. You can sign up for a free account.
+1. Complete the profile information, then select **Continue**.
+1. Select **Install**.
 
-Our online documentation uses these same samples in tutorials and examples, so you can follow along.
+After you install it, you see it in your collection of apps. Here you see it in **List** view.
 
-## Sales & Returns sample .pbix file
+:::image type="content" source="media/sample-sales-marketing-template-app/power-bi-sales-marketing-app.png" alt-text="Screenshot of Sales & Marketing app in List view.":::
 
-:::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Sales & Returns sample .pbix file":::
+You see the app view, with the dashboard and individual report pages in the navigation pane. 
 
-*The Sales & Returns sample report*
+:::image type="content" source="media/sample-datasets/power-bi-sales-marketing-app-navigation.png" alt-text="App navigation pane":::
 
-Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drillthrough, conditional formatting, what-if, and customized tooltips. 
+Because you installed it, you can also open the *workspace* and edit the elements of the app. Select the **Edit** pencil icon to open the workspace.
 
-The scenario for this report is a company that sells Microsoft-themed skateboards. They want to see the state of their sales and returns, and analyze how they should modify their operations. 
+:::image type="content" source="media/sample-datasets/power-bi-app-edit-pencil.png" alt-text="Edit the app":::
 
-You can explore it these ways:
+Now you see the dashboard, report, and dataset from the app in the list view of the workspace. Here in the workspace, you can edit each of them.
 
-- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
-- Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
+:::image type="content" source="media/sample-datasets/power-bi-sales-marketing-workspace.png" alt-text="Sales & Marketing workspace":::
+
+If you want to, you can distribute this app to anyone in your organization. Select **Update app**.
+
+:::image type="content" source="media/sample-datasets/power-bi-update-app.png" alt-text="Update app button":::
+
+Complete the **Setup** tab, including choosing an **App theme color**. 
+
+:::image type="content" source="media/sample-datasets/power-bi-app-setup.png" alt-text="Select app setup":::
+
+Complete the **Navigation** and **Permission** tabs, then select **Update app**.
+
+:::image type="content" source="media/sample-datasets/power-bi-select-update-app.png" alt-text="Select Update app to publish it":::
+
+Read more about [publishing apps in Power BI](../collaborate-share/service-create-distribute-apps.md).
 
 ## Eight original samples
 Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:
