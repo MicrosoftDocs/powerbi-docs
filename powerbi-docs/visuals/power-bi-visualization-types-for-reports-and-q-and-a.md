@@ -70,7 +70,7 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 ## Decomposition tree
 
-[![Screenshot of a Decomposition tree.](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png#lightbox)
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
 The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
@@ -112,7 +112,7 @@ For more information, see [Gauge Charts in Power BI](power-bi-visualization-radi
 
 ## Key influencers chart
 
-[![Screenshot of a Key influencer chart.](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer-expanded.png#lightbox)
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png" alt-text="Screenshot of a Key influencer chart." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer-expanded.png":::
 
 A key influencer chart displays the major contributors to a selected result or value.
 
@@ -187,7 +187,7 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 
 ## Matrix
 
-[![Screenshot of matrix visual.](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix-expanded.png#lightbox)
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png" alt-text="Screenshot of matrix visual." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/matrix-expanded.png":::
 
 The matrix visual is a type of table visual (see [Tables](#tables) in this article) that supports a stepped layout. A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.
 
@@ -221,7 +221,7 @@ For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and
 
 ## R script visuals
 
-[![Screenshot of an R visual.](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visual.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visual-expanded.png#lightbox)
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visual.png" alt-text="Screenshot of an R visual." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visual-expanded.png":::
 
 >[!TIP]
 >Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R. R visuals can be created in Power BI Desktop and published to the Power BI service.
@@ -258,7 +258,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 
 ### Scatter-high density
 
-[![Screenshot of a high density Scatter chart.](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter-expanded.png#lightbox)
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png" alt-text="Screenshot of a high density Scatter chart." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter-expanded.png":::
 
 By definition, high-density data is sampled to create visuals reasonably quickly that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 
