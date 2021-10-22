@@ -1,6 +1,6 @@
 ---
 title: Analyze your Teams collaboration data
-description: With Power BI, you can get additional insights into where you're spending your time and how the teams you use collaborate. 
+description: With Power BI, you can get more insights into where you're spending your time and how the teams you use collaborate. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
@@ -47,7 +47,7 @@ When looking at your meeting participation, you can see where you spend your tim
 
 ### Am I building relationships with my colleagues? 
 
-Remote and hybrid work enable many of us to work from anywhere. This can impact the relationships we build with colleagues. Building strong relationships with colleagues helps you succeed, overcome challenges, and build a cohesive work environment. Look at the 1:1 calls metric to see if you’re making the connections you need for the future. 
+Remote and hybrid work enable many of us to work from anywhere, which can impact the relationships we build with colleagues. Building strong relationships with colleagues helps you succeed, overcome challenges, and build a cohesive work environment. Look at the 1:1 calls metric to see if you’re making the connections you need for the future. 
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-my-meeting-summary.png" alt-text="My meeting summary in Teams.":::
 
@@ -66,7 +66,7 @@ Look at the number of chat messages you send in a day, and the trend. If you’r
 
 ### Am I using channels effectively? 
 
-Teams and channels help keep your entire workgroup or project team up to date. Sometimes, it’s easier to just message someone directly instead of posting in a channel. This practice can raise challenges, since others teammates lack visibility into work happening around them, and don’t have the opportunity to offer input. It’s also harder for them to jump in and help to finish something when someone goes on vacation, for example. If you’re primarily using Chats consider if Channels would be a good option to add to your collaboration habits.  
+Teams and channels help keep your entire workgroup or project team up to date. Sometimes, it’s easier to just message someone directly instead of posting in a channel. This practice can raise challenges, since others teammates lack visibility into work happening around them, and don’t have the opportunity to offer input. It’s also harder for them to jump in and help to finish something when someone goes on vacation, for example. If you’re primarily using Chats, consider if Channels would be a good option to add to your collaboration habits.  
 
 ### Am I using in-meeting experiences in the best way? 
 
