@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 10/20/2021
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A
 
@@ -43,7 +43,7 @@ Q&A shows words with underlines to help you see which words the system understoo
 
 ![Q&A blue underline](media/qna-blue-underline.png)
 
- An orange underline indicates the word/words is categorized as *low confidence*. If you type a vague or ambiguous word, the field is underlined in orange. An example could be the word 'Sales'. Multiple fields could contain the word 'Sales', so the system uses a orange underline to prompt you to choose the field you meant. Another example of low confidence could be if you type the word 'area', but the column it matches is 'region'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office and also interpreting renames from within a report as potential suggestions. Q&A underlines the word in orange so you know it's not a direct match.
+ An orange dotted underline indicates the word/words is categorized as *low confidence*. If you type a vague or ambiguous word, the field is underlined in orange dots. An example could be the word 'Sales'. Multiple fields could contain the word 'Sales', so the system uses an orange dotted underline to prompt you to choose the field you meant. Another example of low confidence could be if you type the word 'area', but the column it matches is 'region'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office and also interpreting renames from within a report as potential suggestions. Q&A underlines the word with orange dots so you know it's not a direct match.
 
 A red underline means Q&A didn't recognize the word at all. You could encounter this issue by using a domain-specific term that isn't mentioned anywhere in the data, or the data fields are incorrectly named. An example could be using the word 'Costs' though the word doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A will mark this term with a red underline to indicate it didn't find this term with respect to the data.
 
