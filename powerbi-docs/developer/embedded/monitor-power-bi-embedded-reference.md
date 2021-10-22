@@ -1,8 +1,8 @@
 ---
 title: Monitoring Power BI Embedded data reference
 description: Important reference material needed when you monitor Power BI Embedded.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

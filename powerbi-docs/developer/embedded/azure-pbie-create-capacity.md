@@ -1,15 +1,15 @@
 ---
 title: Create Power BI Embedded capacity in the Azure portal
 description: This article walks through creating a Power BI Embedded capacity in Microsoft Azure.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/07/2021
+ms.date: 10/20/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -32,7 +32,7 @@ To complete this quickstart, you need:
 
 Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
-# [Portal](#tab/portal)
+### [Portal](#tab/portal)
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
@@ -41,7 +41,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 3. Within Power BI Embedded, select **Add**.
 
 4. Fill in the required information and then click **Review + Create**.
-    
+
     > [!div class="mx-imgBorder"]
     >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
@@ -57,6 +57,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
+        >
         >* By default, the capacity administrator is the user creating the capacity.
         >* You can select a different user or service principal, as capacity administrator.
         >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.
@@ -66,11 +67,11 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
         * **Embedded Generation 1** - The classic Power BI Embedded resource.
 
         * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-generation-2.md).
-        
+
         >[!IMPORTANT]
         >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using Azure Resource Manager APIs.
 
-# [Azure CLI](#tab/CLI)
+### [Azure CLI](#tab/CLI)
 
 ### Use Azure Cloud Shell
 
@@ -94,7 +95,7 @@ To run the code in this article in Azure Cloud Shell:
 
 4. Select **Enter** to run the code.
 
-## Prepare your environment
+### Prepare your environment
 
 Power BI embedded capacity commands require version 2.3.1 or later of the Azure CLI. Run `az --version` to find the version and dependent libraries that are installed. To install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
 
@@ -143,7 +144,7 @@ az powerbi embedded-capacity delete --name
 
 You can view all the Power BI Embedded Azure CLI commands, in [Azure Power BI](/cli/azure/powerbi).
 
-# [ARM template](#tab/ARM-template)
+### [ARM template](#tab/ARM-template)
 
 ### Use Resource Manager template
 
@@ -311,6 +312,7 @@ Use this template to create a classic Power BI Embedded resource.
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
+        >
         >* By default, the capacity administrator is the user creating the capacity.
         >* You can select a different user or service principal, as capacity administrator.
         >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.

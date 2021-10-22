@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 09/09/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity label support for paginated reports (preview)
@@ -19,7 +19,7 @@ When you export data from a labeled paginated report to a supported file type (E
 
 Sensitivity labels on paginated reports are included in protection metrics (as part of the Report count), and can be audited (label-change audits only) and modified by public APIs, just like labels on regular Power BI reports.
 
-## Limitations
+## Considerations and limitations
 
 Sensitivity label support is now in public preview, and the following limitations apply:
 

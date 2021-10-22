@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 10/12/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -72,6 +72,12 @@ The following list provides suggestions on how you can explore **DirectQuery for
 - Creating visuals that use columns from different data sources
 
 Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Azure Analysis Services model, if a perspective is available. 
+
+Beginning with the October 2021 version of Power BI Desktop, you have more control over your connections:
+* You can remove a table from  your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you cannot remove tables from the model)
+* You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables
+* You can specify whether to add any tables that are subsequently added to the dataset after you make the connection in your model
+* With the October 2021 release, performance improvements were made with parallel execution of model queries, and smart caching
 
 ## Considerations and limitations
 
@@ -204,6 +210,15 @@ To sum up:
 * OLS rules cannot be defined on the composite model itself.
 * A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DIrectQuery tries to retrieve the data using their credentials.
 * If the source model updates its OLS rules, those changes will only affect the composite model when it is refreshed.  
+
+### Loading a subset of tables from a Power BI dataset or Azure Analysis Services model
+When connecting to a Power BI dataset or Azure Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. Note that when you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
+This dialog will not be shown for live connections.
+
+>[!NOTE]
+>This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQUery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
+
+![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
 
 ## Next steps
 

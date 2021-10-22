@@ -1,8 +1,8 @@
 ---
 title: Publish Power BI visuals to Partner Center
 description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -12,7 +12,7 @@ ms.date: 09/25/2021
 
 # Publish Power BI visuals to Partner Center
 
-Once you have created your Power BI visual, you may want to publish it to AppSource for others to discover and use. For more information about creating a Power BI visual, see [Plan a Power BI visual offer](/azure/marketplace/marketplace-power-bi-visual.md).
+Once you have created your Power BI visual, you may want to publish it to AppSource for others to discover and use. For a detailed explanation of how to create a Power BI visual offer, see [Plan a Power BI visual offer](/azure/marketplace/marketplace-power-bi-visual.md).
 
 ## What is AppSource?
 

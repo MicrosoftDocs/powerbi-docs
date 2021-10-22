@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/25/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Use quick measures for common calculations
@@ -113,8 +113,8 @@ You can always delete quick measures from your model if you don't like them. Tha
 
 ![Delete or rename a quick measure](media/desktop-quick-measures/quick-measures_11.png)
 
-## Limitations and considerations
-There are a few limitations and considerations to keep in mind.
+## Considerations and limitations
+There are a few considerations and limitations to keep in mind.
 
 - You can use quick measures added to the **Fields** pane with any visual in the report.
 - You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** list and looking at the formula in the formula bar.

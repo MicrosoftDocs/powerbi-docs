@@ -1,8 +1,8 @@
 ---
 title: Plan your transition to Power BI Premium Gen2
 description: Learn how customers using Power BI Premium Gen1 will migrate to Premium Gen2 and key dates to plan for.
-author: kfollis   
-ms.author: kfollis
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium

@@ -1,8 +1,8 @@
 ---
 title: Power BI Embedded Generation 2 explained as part of Power BI embedded analytics
 description: Learn about the Power BI Embedded Generation 2 offering in Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -40,7 +40,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
     * The need to upgrade your capacity
 
     >[!NOTE]
-    >You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](../../admin/service-premium-install-gen2-app.md).
+    >You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview).
 
 ## Using Embedded Gen2
 
