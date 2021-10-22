@@ -97,7 +97,7 @@
     - name: Power BI in Teams
       items: 
       - name: "Use data for productive meetings"
-        href: business-user-teams-data.md
+        href: business-user-teams-meetings.md
       - name: "Use goals to drive results"
         href: business-user-teams-goals.md
       - name: "Lead data-driven discussions"

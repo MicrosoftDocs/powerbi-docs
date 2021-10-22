@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 09/02/2021
+ms.date: 10/22/2021
 LocalizationGroup: Get started
 
 ---
@@ -154,4 +154,4 @@ To get started with Power BI Desktop, follow these steps.
 ## Next steps
 
 - [Improve collaboration using data in Microsoft Teams](business-user-teams-collaboration-data.md)
-- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)

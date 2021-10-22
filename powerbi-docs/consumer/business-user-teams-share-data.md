@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/04/2021
+ms.date: 10/22/2021
 LocalizationGroup: Get started
 
 ---
@@ -102,4 +102,4 @@ If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 ## Next steps
 
 - [Create reports from data you have in Microsoft Teams](business-user-teams-create-reports.md)
-- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)

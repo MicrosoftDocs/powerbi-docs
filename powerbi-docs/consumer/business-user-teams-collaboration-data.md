@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/04/2021
+ms.date: 10/22/2021
 LocalizationGroup: Get started
 
 ---
@@ -87,4 +87,4 @@ When you view the details for a specific team, you can get more detailed usage d
 
 ## Next steps
 
-[Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+[Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)

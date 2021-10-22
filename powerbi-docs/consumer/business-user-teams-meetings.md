@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/04/2021
+ms.date: 10/22/2021
 LocalizationGroup: Get started
 
 ---
@@ -20,7 +20,7 @@ In meetings, keeping everyone on track towards shared objectives is important. U
 
 It’s easy to use Power BI in meetings to help keep important data top of mind. It helps everyone know which data is the most important, and builds skills that help your team make agile decisions based on your progress towards objectives. By staying focused on driving towards measurable outcomes, your team gains a sense of the positive impact their work is having.
 
-:::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-tab.png" alt-text="Power BI report in a Teams meeting tab.":::
+:::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-tab.png" alt-text="Power BI report in a Teams meeting tab.":::
 
 Here's how you can use data before, during, and after your meetings.
 
@@ -50,17 +50,17 @@ Here's how to add a Power BI report or scorecard to a meeting.
 2. Send the meeting invite.
 3. Select **Edit** to open the meeting in the calendar. You only see the option to edit if you're the meeting organizer.
 
-    :::image type="content" source="media/business-user-teams-data/teams-calendar-edit.png" alt-text="Edit the calendar item.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-calendar-edit.png" alt-text="Edit the calendar item.":::
 
 4. Select the **+ Add a tab** button to add the Power BI tab to the meeting.
 
-    :::image type="content" source="media/business-user-teams-data/teams-invite-plus-sign.png" alt-text="Select the plus sign + to add a tab.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-invite-plus-sign.png" alt-text="Select the plus sign + to add a tab.":::
 
 5. Navigate to a report or scorecard and select it.
 
 4. Select **Save**.
 
-    :::image type="content" source="media/business-user-teams-data/teams-power-bi-save-tab.png" alt-text="Select Save to add this report or scorecard to the meeting tab.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-save-tab.png" alt-text="Select Save to add this report or scorecard to the meeting tab.":::
 
 1. See [Give team members permission](business-user-teams-share-data.md#give-team-members-permission) in the "Lead data-driven discussions in Microsoft Teams" article for how to share with your colleagues.
 
@@ -85,7 +85,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 3. Open the meeting in the calendar.
 4. Anyone in the meeting can select the Power BI tab to view the report that you added to the meeting.
 
-    :::image type="content" source="media/business-user-teams-data/teams-meeting-power-bi-tab.png" alt-text="Anyone in the meeting can select the Power BI tab to view the report.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-meeting-power-bi-tab.png" alt-text="Anyone in the meeting can select the Power BI tab to view the report.":::
 
 5. Use the meeting window to present your screen.
 
@@ -95,7 +95,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 2. Select a visual.
 3. Select **Copy visual as image** to copy the visual.
 
-    :::image type="content" source="media/business-user-teams-data/teams-power-bi-copy-visual.png" alt-text="Select Copy visual as image.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-copy-visual.png" alt-text="Select Copy visual as image.":::
 
 4. Paste the visual into the meeting chat.
 
@@ -105,7 +105,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 2. Select the report or a specific visual.
 3. Select the **Chat in Teams** button.
 
-    :::image type="content" source="media/business-user-teams-data/power-bi-teams-chat-teams.png" alt-text="Screenshot of select the Chat in Teams icon in a report.":::
+    :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-chat-teams.png" alt-text="Screenshot of select the Chat in Teams icon in a report.":::
 
 4. Select the meeting name to send to.
 5. Type your message above the link that's provided.
@@ -118,18 +118,18 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 1. Open the meeting chat.
 2. Select **Messaging extensions (...)**.
 
-    :::image type="content" source="media/business-user-teams-data/teams-chat-meeting-messaging-extensions.png" alt-text="Select Messaging extensions (...).":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-chat-meeting-messaging-extensions.png" alt-text="Select Messaging extensions (...).":::
 
 4. Select **Power BI**.
 5. Search for content, or select from your list of recent items.
 6. Pick a Power BI item.
 7. Select **Send**.
 
-    :::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-chat-send.png" alt-text="Select Send to send the message in chat.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-send.png" alt-text="Select Send to send the message in chat.":::
 
 1. Select **Open**.
 
-    :::image type="content" source="media/business-user-teams-data/teams-power-bi-meeting-chat-open.png" alt-text="Select Open to open the message in chat.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-open.png" alt-text="Select Open to open the message in chat.":::
 
 ## After the meeting
 

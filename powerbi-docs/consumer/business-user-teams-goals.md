@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/04/2021
+ms.date: 10/22/2021
 LocalizationGroup: Get started
 
 ---
@@ -94,4 +94,4 @@ Each project and organization can have its own goals. You can find all your goal
 
 - [Create scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
 - [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
-- [Use data to make better meetings in Microsoft Teams](business-user-teams-data.md)
+- [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
