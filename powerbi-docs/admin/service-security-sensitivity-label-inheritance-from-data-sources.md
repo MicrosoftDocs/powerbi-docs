@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 03/11/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity label inheritance from data sources (preview)
@@ -44,7 +44,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 >[!NOTE]
 > No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
 
-## Limitations
+## Considerations and limitations
 * Inheritance from data sources is not supported for datasets located in classic workspaces. My Workspace and V2 workspaces are supported.
 * Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
 * Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.

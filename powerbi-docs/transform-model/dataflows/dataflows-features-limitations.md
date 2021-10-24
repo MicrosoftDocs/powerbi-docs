@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 10/03/2021
 LocalizationGroup: Data from files
 ---
-# Dataflows limitations and considerations
+# Dataflows considerations and limitations
 
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
 
@@ -68,7 +68,7 @@ There are limitations for Dataflows in shared capacities:
 
 ## Dataflows in Premium
 
-Dataflows that exist in Premium have the following limitations and considerations.
+Dataflows that exist in Premium have the following considerations and limitations.
 
 **Refreshes and data considerations:**
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 10/19/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -131,7 +131,7 @@ Complete the order form to purchase Power BI Pro.
 
 If self-service purchase is not available, contact your administrator about purchasing a Power BI Pro license.
 
-## Troubleshooting the self-service process
+## Troubleshooting
 
 In most cases, you can sign up for the Power BI service by following the described process. Some of the issues that may prevent you from signing up are described below, with possible workarounds.
 

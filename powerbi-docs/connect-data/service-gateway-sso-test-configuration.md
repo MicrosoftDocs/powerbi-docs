@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 10/19/2021
 LocalizationGroup: Gateways
 ---
 
@@ -36,7 +36,7 @@ The **test single sign-on** feature works for both Kerberos and SAML based singl
 
     :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-02.png" alt-text="Screenshot of successful test for S S O.":::
 
-## Troubleshooting Single Sign-On (SSO)
+## Troubleshooting
 
 This section describes frequent errors you may see, when testing single sign-on, and actions you can take to fix them:
 

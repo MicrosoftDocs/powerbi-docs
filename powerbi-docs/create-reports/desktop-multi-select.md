@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/26/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Multi-select data elements, data points, and visuals in Power BI Desktop
@@ -48,7 +48,7 @@ You can clear your current selection by clicking an empty space on the plot area
 
 For more information on this feature, see the [blog post about the release of this feature](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Data_point).
 
-There are a few limitations and considerations for multi-selecting data points within a visual:
+There are a few considerations and limitations for multi-selecting data points within a visual:
 
 * Line, area, scatter chart, treemap, and maps support lasso select
 * The maximum number of data points you can select at once is 300

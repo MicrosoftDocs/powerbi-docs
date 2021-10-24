@@ -88,7 +88,7 @@ A Power BI Premium subscription license allocates a capacity to an organization.
 The two types of subscriptions aren't mutually exclusive. You can have both Power BI Premium and standard. In this configuration, content stored in Premium capacity can be shared with all users and shared capacity is also available. For information about capacity limits, see [Manage data storage in Power BI workspaces](service-admin-manage-your-data-storage-in-power-bi.md).
 
 >[!NOTE]
->Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+>Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
 >* Per-user licensing. See the [Premium Per User article](service-premium-per-user-faq.yml) for more information.
 >* Greater scale

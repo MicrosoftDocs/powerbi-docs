@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 LocalizationGroup: Premium 
 ---
 
@@ -145,7 +145,7 @@ This page provides a help summary for each one of the Gen2 metrics app pages. At
 >[!NOTE]
 >Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
-## Limitations
+## Considerations and limitations
 
 * The app displays results for the last 14 or 28 days, depending on the visual.
 

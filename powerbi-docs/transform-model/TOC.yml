@@ -55,7 +55,7 @@
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
     - name: "Using DirectQuery with dataflows"
       href: ./dataflows/dataflows-directquery.md       
-    - name: "Dataflows limitations and considerations"
+    - name: "Dataflows considerations and limitations"
       href: dataflows/dataflows-features-limitations.md
     - name: "Streaming dataflows (preview)"
       href: dataflows/dataflows-streaming.md

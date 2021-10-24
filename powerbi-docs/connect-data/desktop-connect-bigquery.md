@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/21/2021
+ms.date: 10/20/2021
 
 LocalizationGroup: Connect to data
 ---
@@ -36,6 +36,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
 * The Google BigQuery connector is available in Power BI Desktop and in the Power BI service. In the Power BI service, the connector can be accessed using the Cloud-to-Cloud connection from Power BI to Google BigQuery.
 
+For more detailed information about connecting to Google BigQuery, see the [Power Query article](/power-query/connectors/googlebigquery) that describes the connector in detail. 
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
