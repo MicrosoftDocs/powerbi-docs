@@ -218,12 +218,12 @@ sections:
       - question: |
           How do I resolve a source and target dataset format version mismatch error?
         answer: |
-          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage.
+          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage. You can upgrade the dataset model in the source stage do that via an [XMLA read-write endpoint](./../admin/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop. After upgrading the dataset, republish it to the source stage.
 
       - question: |
-          How do I resolve a source and target data source type mismatch error?
+          How do I resolve a data source connectivity mode mismatch error?
         answer: |
-          During deployment, if deployment pipelines discovers that the type of a data source in the target stage isn't the same as the data source in the source stage, it attempts to convert the target data source. In some cases, it's not possible to convert the target stafromattempts to convert data sources thatThe *Can’t start deployment* error that states that *the source and target data source types don't match*, occurs when the data source in the target stage is from a different type than the data source in the source stage.. To avoid this error, 
+          During deployment, if deployment pipelines discovers that the connectivity mode of a data source in the target stage isn't the same as the data source in the source stage, it attempts to convert the connectivity mode of target data source. If you're using a data source with the `LiveConnection` or `RealTime` connectivity modes , deployment pipelines cannot convert the target's data source connectivity mode. In such cases, you can either use an [XMLA read-write endpoint](./../admin/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop to change the connection mode of the data source in the source stage, or delete the data source in the target stage so that the deployment overrides it.
 
             * *Delete the target dataset* - This method is not recommended as customers may experience downtime. In addition, the deployed dataset will be downgraded to a lower model version.   
 
