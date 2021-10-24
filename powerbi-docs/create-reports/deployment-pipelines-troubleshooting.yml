@@ -223,7 +223,12 @@ sections:
       - question: |
           How do I reestablish connections after reassigning a workspace to the test stage?
         answer: |
-          In a full pipeline, after you unassign a workspace to the *test* stage and then redeploy from the *development* or *production* stages, deployment pipelines reestablishes the connections between Power BI items in the stage you deployed from and the *test* stage. However, in such cases deployment pipelines cannot reestablish the Power BI item's connections between the *test* stage and the stage you didn't deploy from. To reestablish these connections, reassign the same workspace to the *test* stage.
+          In a full pipeline, after you unassign a workspace from the *test* stage and then deploy from the *development* or *production* stages to the *test* stage, deployment pipelines reestablishes the connections between Power BI items in the stage you deployed from and the *test* stage. However, in such cases deployment pipelines cannot reestablish the Power BI item's connections between the *test* stage and the stage you didn't deploy from. To reestablish these connections, unassign and reassign the same workspace in the *test* stage.
+
+      - question: |
+          Why am I getting the 'workspace includes unsupported items' error message when I assign a workspace?
+        answer: |
+          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. 
 
   - name: Paginated reports
     questions:
