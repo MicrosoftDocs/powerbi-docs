@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 10/19/2021
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
@@ -83,7 +83,7 @@ You can also do more advanced filtering. For example, in the sample file, look a
 
 There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto four summaries per visual and upto sixteen per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
    
-## Limitations
+## Considerations and limitations
 
 The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 

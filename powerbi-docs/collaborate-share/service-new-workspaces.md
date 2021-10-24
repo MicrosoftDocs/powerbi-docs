@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 10/19/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -87,7 +87,7 @@ Power BI audits the following activities for new workspace experience workspaces
 
 Read more about [Power BI auditing](../admin/service-admin-auditing.md).
 
-## Limitations and considerations
+## Considerations and limitations
 
 Limitations to be aware of:
 

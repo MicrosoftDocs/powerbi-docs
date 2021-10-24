@@ -20,7 +20,6 @@ Microsoft has world-class security capabilities to help protect customers from t
 
 Data protection capabilities in Power BI build on Microsoft’s strengths in security and enable customers to empower every user with Power BI and better protect their data no matter how or where it is accessed.
 
-
 >[!VIDEO https://www.youtube.com/embed/zEx0449K7F8]
 
 With Power BI's data protection capabilities you can:
@@ -32,6 +31,8 @@ With Power BI's data protection capabilities you can:
 
 Read more about [Microsoft Information Protection sensitivity labels](/microsoft-365/compliance/sensitivity-labels) and [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
+>[!NOTE]
+>Please use **[this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** to submit any feedback you may have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. The product team is interested in hearing about your experiences and greatly appreciates any suggestions you may have to help us improve the product to better suit your information protection needs. Thanks!
 
 ## Next steps
 

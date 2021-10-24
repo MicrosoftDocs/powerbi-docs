@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/29/2021
+ms.date: 10/19/2021
 ---
 
 # Apply a selection to multiple visuals in a report
@@ -35,7 +35,7 @@ To use the `supportsMultiVisualSelection` feature, add the following code to the
     }
 ```
 
-## Known limitations and issues
+## Considerations and limitations
 
 * This feature requires API v3.2.0 or higher.
 * This feature doesn't apply to image visuals.

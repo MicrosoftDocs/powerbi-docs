@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 10/19/2021
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -108,7 +108,7 @@ If you're listed in the **Users** tab of the data source configured in the gatew
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added in the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
 
-### Limitations
+### Considerations and limitations
 
 OAuth is a supported authentication scheme only for custom connectors with the on-premises data gateway.
 

@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: conceptual
-  ms.date: 10/14/2021
+  ms.date: 10/18/2021
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -28,7 +28,7 @@ sections:
           The paginated reports workload is available on P1 – P3 SKUs for Premium Gen1. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
 
           > [!NOTE]
-          > Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
+          > Power BI recently released a new version of Premium, called **Premium Gen2**. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2. 
           >
           >Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../admin/service-premium-what-is.md#power-bi-premium-generation-2).
           >
@@ -99,7 +99,7 @@ sections:
           :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
           
           > [!NOTE]
-          > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
+          > **Premium Gen2** doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
           
   - name: General
     questions:

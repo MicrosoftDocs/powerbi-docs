@@ -1,13 +1,13 @@
 ---
 title: Purchase Power BI Premium for testing
 description: Learn how you can purchase Power BI Premium for testing and other purposes
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 

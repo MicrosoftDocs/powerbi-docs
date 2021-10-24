@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -442,7 +442,7 @@ If the model returns multiple output parameters, they are grouped together as a 
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table table.
 
-##Limitations
+## Considerations and limitations
 
 - AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
 - AzureML models are not supported for Guest users.
@@ -462,5 +462,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)
