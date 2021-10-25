@@ -118,7 +118,7 @@ conceptualContent:
           text: Power BI embedded analytics
         - url: https://playground.powerbi.com 
           itemType: deploy
-          text: Power BI Playground        
+          text: Power BI Playground (for embedded analytics)
         - url: ../developer/visuals/develop-power-bi-visuals.md
           itemType: concept
           text: Develop a Power BI visual
