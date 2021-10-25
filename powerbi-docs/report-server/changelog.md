@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/28/2021
+ms.date: 10/25/2021
 ---
 
 # Change log for Power BI Report Server
@@ -53,6 +53,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Contains changes required for connection with Power BI Report Server (May 2021).
         - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop for RS.
         - Bug fixes
+    - *Version: 2.93.3901.0 (May 2021), Released: October 25, 2021*
+        - Contains changes required for support Chromium 89.
 
 ## January 2021
 - **Power BI Report Server**
