@@ -326,7 +326,12 @@ sections:
           Why can't I see workspaces in the pipeline?
         answer: |
           Pipeline and workspace permissions are managed separately. You may have pipeline permissions, but not workspace permissions. For more information, review the [permissions](deployment-pipelines-process.md#permissions) section.
-          
+
+      - question: |
+          Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
+        answer: |
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages.
+
 additionalContent: |
 
   ## Next steps
