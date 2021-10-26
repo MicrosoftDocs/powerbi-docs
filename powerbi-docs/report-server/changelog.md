@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 10/25/2021
 ---
 
 # Change log for Power BI Report Server
@@ -16,6 +16,20 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
+## September 2021
+- **Power BI Report Server**
+    - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
+        - Features
+            - Updated support for Power BI Reports including those with small multiples.
+            - Updated Power BI Report Server portal experience as default experience.
+        - Bug fixes
+        - Deprecated support for Internet Explorer.
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
+        - Contains changes required for connection with Power BI Report Server (September 2021).
+        - Updated gallery view for custom visuals.
+        - Bug fixes
 
 ## May 2021
 - **Power BI Report Server**
@@ -39,6 +53,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Contains changes required for connection with Power BI Report Server (May 2021).
         - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop for RS.
         - Bug fixes
+    - *Version: 2.93.3901.0 (May 2021), Released: October 25, 2021*
+        - Contains changes required for support Chromium 89.
 
 ## January 2021
 - **Power BI Report Server**

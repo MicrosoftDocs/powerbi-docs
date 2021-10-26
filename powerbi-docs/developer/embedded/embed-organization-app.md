@@ -1,8 +1,8 @@
 ---
 title: Embed Power BI report in a Power BI embedded analytics application for your organization
 description: Learn how to embed a Power BI report in a Power BI embedded analytics application for your organization 
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer

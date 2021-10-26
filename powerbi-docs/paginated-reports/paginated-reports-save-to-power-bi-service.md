@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/03/2021
 ---
 
 # Publish a paginated report to the Power BI service

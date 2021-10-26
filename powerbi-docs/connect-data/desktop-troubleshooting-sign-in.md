@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 09/13/2021
+ms.date: 10/19/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop
@@ -90,7 +90,7 @@ Once the registry entry is created (a reboot may be necessary) the proxy setting
 
 As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they have configured the Internet Explorer proxies correctly before enabling this feature.         
 
-### Limitations and considerations for using default system credentials
+### Considerations and limitations
 
 There are a collection of security implications that administrators should consider before enabling this capability. 
 

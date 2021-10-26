@@ -3,12 +3,12 @@ title: Microsoft Information Protection sensitivity labels in Power BI
 description: Learn how Microsoft Information Protection sensitivity labels work in Power BI
 author: paulinbar
 ms.author: painbar
-manager: rkarlin
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.custom: contperf-fy21q2
-ms.date: 06/28/2021
+ms.custom: contperf-fy21q3
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -20,7 +20,7 @@ For information about enabling sensitivity labels on your tenant, including lice
 For information about how to apply sensitivity labels on your Power BI content and files, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md).
 
 >[!NOTE]
->Sensitivity label support in Power BI Desktop is currently in preview.
+>Please use **[this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** to submit any feedback you may have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. The product team is interested in hearing about your experiences and greatly appreciates any suggestions you may have to help us improve the product to better suit your information protection needs. Thanks!
 
 ## Introduction
 
@@ -73,7 +73,7 @@ The sensitivity labels you apply to content persist and roam with the content as
 Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied, along with any associated encryption settings, is applied to the resulting .pbix file. If the label has encryption settings, the file is thus protected wherever it goes and however it is transmitted. Only those with the [necessary RMS permissions](#power-bi-desktop) will be able to open it.
 
 >[!NOTE]
->* Some limitations may apply. See [Limitations](#limitations).
+>* Some limitations may apply. See [Considerations and limitations](#considerations-and-limitations).
 
 If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, you can choose to keep those labels or to overwrite them with the label coming from Desktop.
  
@@ -212,7 +212,7 @@ To help your users understand what your sensitivity labels mean or how they shou
 
 See [Custom help link for sensitivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
 
-## Limitations
+## Considerations and limitations
 
 ### General
 
@@ -248,7 +248,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it is recommended to go back online and try saving again.
 
-* If you've created a large model and the resulting protected .pbix file is very large (over 2GB), it may crash when you try to save or open it. To work around this, consider removing the protection from the .pbix file and re-applying it after the file has been published to the Power BI service.
+* Very large .pbix files (over 2GB) cannot be saved with a sensitivity label. To work around this limitation, save the file without the label, publish it to the Power BI service, and then apply the label to the published dataset and report.
 
     In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 

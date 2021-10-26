@@ -1,14 +1,14 @@
 ---
 title: Conditional formatting in Power BI embedded analytics
 description: Learn how to apply conditional formatting to your Power BI visual project.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2021
+ms.date: 10/19/2021
 ---
 
 # Add conditional formatting
@@ -119,7 +119,7 @@ case 'colorSelector':
 
 ```
 
-## Limitations and considerations
+## Considerations and limitations
 
 Conditional formatting isn't supported for the following visuals:
 

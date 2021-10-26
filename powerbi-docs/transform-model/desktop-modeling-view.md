@@ -49,7 +49,7 @@ For example, you could change the [storage mode](desktop-storage-mode.md) for mu
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 
-* [Aggregations in Power BI Desktop (Preview)](desktop-aggregations.md)
+* [Aggregations in Power BI Desktop (Preview)](../admin/aggregations-auto.md)
 * [Composite models in Power BI Desktop](desktop-composite-models.md)
 * [Storage Mode in Power BI Desktop (Preview)](desktop-storage-mode.md)
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)

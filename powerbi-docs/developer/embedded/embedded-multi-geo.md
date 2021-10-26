@@ -1,13 +1,13 @@
 ---
 title: Multi-Geo support for Power BI embedded analytics
 description: Learn how you can deploy content to data centers in regions other than the home region of your Power BI embedded analytics solution. Use Multi-Geo support. 
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/25/2021
+ms.date: 09/25/2021
 ---
 
 # Multi-Geo support for Power BI Embedded
@@ -66,9 +66,9 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 3. **[Azure Resource Manager API](/rest/api/power-bi-embedded/capacities)** - all of the Azure Resource Manager API operations, including *Create* and *Delete*, supports Multi-Geo.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [limitations and considerations](../../admin/service-admin-premium-multi-geo.md#limitations-and-considerations).
+* The Power BI Embedded limitations, are similar to the Power BI Premium multi-geo [considerations and limitations](../../admin/service-admin-premium-multi-geo.md#considerations-and-limitations).
 
 ## Next steps
 

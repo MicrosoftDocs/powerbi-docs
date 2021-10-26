@@ -1,14 +1,14 @@
 ---
 title: Embed paginated reports in your Power BI embedded analytics application
 description: Learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 08/10/2021
+ms.date: 10/19/2021
 
 ---
 
@@ -92,7 +92,7 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
-    >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+    >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
@@ -113,9 +113,9 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 1 | 0.5 | 0.5 | 3.75 |
-| EM2 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 2 | 1 | 1 | 7.5 |
-| EM3 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 4 | 2 | 2 | 15 |
+| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
+| EM2 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
+| EM3 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
 | P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
 | P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
 | P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
@@ -194,7 +194,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ---
 
-## Limitations
+## Considerations and limitations
 
 The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
 

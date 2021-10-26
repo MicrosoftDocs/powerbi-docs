@@ -1,8 +1,8 @@
 ---
 title: Power BI visuals API changelog 
 description: This article describes main changes in different versions of Power BI visuals API.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
