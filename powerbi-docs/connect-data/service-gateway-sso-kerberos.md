@@ -135,7 +135,7 @@ Here's how to configure the delegation settings:
 
    You should now see the SPN in the list of services to which the gateway service account can present delegated credentials.
 
-    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
