@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 10/26/2021
 LocalizationGroup: Conceptual
 ---
 
