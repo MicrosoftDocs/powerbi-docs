@@ -143,7 +143,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with calculated table or calculated column which reference a Direct Query data source  will result in a "Single sign-on (SSO) credential is not provided" error message.
+- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column which reference a Direct Query data source will result in a "Single sign-on (SSO) credential is not provided" error message.
 
 - Sort by column isn't supported at this time.
 
