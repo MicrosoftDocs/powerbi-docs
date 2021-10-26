@@ -139,4 +139,8 @@ Consider using key data points to create goals and track them in a scorecard. Co
 
 ## Next steps
 
+- [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use Power BI goals to improve results in Microsoft Teams](business-user-teams-goals.md)
+- [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+- [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)
+- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)

@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 08/16/2021
+  ms.date: 10/21/2021
     
 title: Deployment pipelines troubleshooting
 summary: Use this article to troubleshoot issues in deployment pipelines.
@@ -216,11 +216,6 @@ sections:
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
           
       - question: |
-          Why am I getting the error message 'workspace member permissions needed' when I try to assign a workspace to a pipeline stage?
-        answer: |
-          When you assign a workspace to a pipeline stage, deployment pipelines attempts to recreate the connections between the Power BI items in the adjacent stages. To assign a workspace to a pipeline stage, you need to be a member of the workspaces that the items has connection to, otherwise deployment pipelines will not be able to establish these connections.
-
-      - question: |
           How do I reestablish connections after reassigning a workspace to the test stage?
         answer: |
           In a full pipeline, after you unassign a workspace from the *test* stage and then deploy from the *development* or *production* stages to the *test* stage, deployment pipelines reestablishes the connections between Power BI items in the stage you deployed from and the *test* stage. However, in such cases deployment pipelines cannot reestablish the Power BI item's connections between the *test* stage and the stage you didn't deploy from. To reestablish these connections, unassign and reassign the same workspace in the *test* stage.
@@ -229,6 +224,18 @@ sections:
           Why am I getting the 'workspace includes unsupported items' error message when I assign a workspace?
         answer: |
           When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. 
+          
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/unsupported-items-error.png" alt-text="A screenshot of the workspace includes unsupported items error message in deployment pipelines":::
+  
+      - question: |
+          How do I resolve a source and target dataset format version mismatch error?
+        answer: |
+          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage. You can upgrade the dataset model in the source stage using an [XMLA read-write endpoint](./../admin/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop. After upgrading the dataset, republish it to the source stage.
+
+      - question: |
+          How do I resolve a data source connectivity mode mismatch error?
+        answer: |
+          During deployment, if deployment pipelines discovers that the connectivity mode of a data source in the target stage isn't the same as the data source in the source stage, it attempts to convert the connectivity mode of the data source in the target stage. If you're using a data source with the [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) or [real time](./../connect-data/service-real-time-streaming.md) connectivity modes , deployment pipelines cannot convert the target's data source connectivity mode. In such cases, you can either use an [XMLA read-write endpoint](./../admin/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop to change the connection mode of the data source in the source stage, or delete the data source in the target stage so that the deployment overrides it.
 
   - name: Paginated reports
     questions:
@@ -331,6 +338,9 @@ sections:
           Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
         answer: |
           To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages.
+
+          
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline":::
 
 additionalContent: |
 
