@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/20/2021
+ms.date: 10/26/2021
 LocalizationGroup: Visualizations
 ---
 # Display a visualization's underlying data

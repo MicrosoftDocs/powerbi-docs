@@ -8,7 +8,7 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/20/2021
+ms.date: 10/26/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -45,7 +45,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-icon.png" alt-text="Visualization pane with Power Apps icon selected":::
 
-1. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**.
+1. In the **Fields** pane, select **Opportunity** > **Name**, **Product** > **Product Code**, and **SalesStage** > **Sales Stage**.
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-fields.png" alt-text="Screenshot showing the selection of the Name, Product Code, and Sales Stage fields.":::
 
@@ -77,7 +77,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-label-live.png" alt-text="App with label updated.":::
 
-1. Save the app with the name "Opportunities app". 
+1. Save the app with the name "Opportunities App".
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-save-powerapp.png" alt-text="Screenshot showing the screen for saving the app.":::
 

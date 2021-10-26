@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 08/04/2021
+ms.date: 10/26/2021
 LocalizationGroup: Visualizations
 ---
 # Visualization types in Power BI
