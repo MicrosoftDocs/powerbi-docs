@@ -1,0 +1,26 @@
+---
+title: Power BI embedded analytics playground explained as part of Power BI embedded analytics
+description: Learn about the Power BI Embedded analytics playground offering in Power BI embedded analytics.
+author: mberdugo
+ms.author: monaberdugo
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-developer
+ms.topic: overview
+ms.date: 10/06/2021
+ms.custom: intro-overview
+---
+
+# What is the Power BI embedded analytics playground?
+
+The Power BI embedded analytics playground is makes it easier for you to learn, explore and try out Power BI embedded analytics.
+
+>:::image type="content" source="media\powerbi-playground\Playground-Home.png" alt-text="A screenshot of the playground home page.":::
+
+You can get hands-on coding experience, embed your own reports, and interact with Power BI client APIs to see instant results.
+There are also interactive showcases that show you how to apply these features in your applications, and a learning center to help you find all the relevant samples, tutorials, and documentation you’ll need for successful integration.
+The playground has the following main experiences:
+
+* Developer sandbox 
+* Explore our APIs
+* Showcases
