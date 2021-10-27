@@ -15,16 +15,6 @@ To enable Q&A to successfully interpret the large collection of questions it's c
 
 In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
 
-## Automatic adjustments that Q&A makes
-
-### Measure tables
-
-In previous versions of Q&A, measure tables would confuse Q&A as the underlying table was disconnected. Q&A works just fine with measure tables now.
-
-### Table names conflicting with column names
-
-In previous versions of Q&A, if a table and column had the same name, the table would take preference. This issue has been addressed, so you don't have to fix this issue in your models anymore.
-
 ## Manual steps to improve Q&A
 
 ### Use the new Q&A tooling to fix your questions
@@ -92,7 +82,7 @@ Second, Q&A makes some educated guesses about how users are likely to talk about
 
 ## Choose a Sort By Column for relevant columns
 
-The **Sort By Column** property allows sorting in one column to automatically sort a different column instead. For example, when you ask “sort customers by shirt size”, you probably want your Shirt Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
+The **Sort By Column** property allows sorting in one column to automatically sort a different column instead. For example, when you ask “sort customers by hat size”, you probably want your Hat Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
 
 :::image type="content" source="media/q-and-a-best-practices/desktop-qna-08.png" alt-text="Choose Sort by Column appropriately for Q&A":::
 
