@@ -25,7 +25,7 @@ To get started setting up your permissions,
 1.	Open the settings pane 
 1.	Open the new permissions tab  
 
-do image here of permissions pane
+    :::image type="content" source="media/service-goals-create/goals-permissions-settings-pane.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
 
 The permissions tab allows you to create roles with different permission sets and assign those roles to specific user groups.
   
@@ -36,7 +36,7 @@ We support different types of permissions at the goal level:
   b.	<b>Status</b> – grants access to update status in a check-in  
   c.	<b>Current Value</b> - grants access to update the current value in a check-in  
 
-insert image of GLP sttings open
+    :::image type="content" source="media/service-goals-create/goals-permissions-create-role.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
 
 ## Inheritence 
 
@@ -48,11 +48,15 @@ Another aspect of goal level permissions is enabling a "default" permission mode
 
 The default permissions will apply to anyone accessing the scorecard who is not a member of another role already.  If someone is a member of another role, they will assume those permissions over the default permissions. 
 
-Insert image of setting default role
+    :::image type="content" source="media/service-goals-create/goals-permissions-create-default.png" alt-text="Set a role to become the default role by choosing it from the overflow menu.":::
 
 Goal level permissions roles apply to the underlying scorecard dataset we generate, with the exception of the default role. For example, if I give create a role and assign the sales team view access to 5 goals on the scorecard, those are the five goals they will see in the underlying dataset as well. 
 
 Default permissions do NOT apply to the underlying dataset, meaning if I give view permissions to all goals as the default role, anyone who adopts those default permissions will not have access to any goals in the underlying dataset.
+
+## Sharing the scorecard
+
+After your roles are created and permissions are set up, the final step is to share the scorecard with users.  Share the scorecard via the 'share' button in the ribbon, same as you would share a normal report.  If you do not want to give permissions to the underlying scorecard dataset, un-select the option to give build permissions to the underlying report in the share dialog.
 
 ## Additional Information
 -	The support for automatic roles based on Goal Level permissions (full RLS support) is coming, but is not yet available.
