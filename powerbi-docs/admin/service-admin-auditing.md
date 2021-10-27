@@ -380,7 +380,7 @@ The following operations are available in both the audit and activity logs.
 | Edited Power BI report endorsement | EditReportProperties | |
 | Encrypted credentials for Power BI gateway datasource | | |
 | Encrypted credentials using Power BI gateway cluster | | |
-| Export Power BI activity events | | |
+| Export Power BI activity events | ExportActivityEvents | |
 | Exported Power BI artifact to another file format | ExportArtifact | |
 | Exported Power BI dataflow   | ExportDataflow |  |
 | Exported Power BI report to another file format | ExportReport | |
@@ -427,14 +427,14 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataset refresh   | RefreshDataset     |       |
 | Requested Power BI dataset refresh from external app | | |
 | Requested SAS token for Power BI storage | | |
-| Restored Power BI workspace | | |
+| Restored Power BI workspace | RestoreWorkspace | |
 | Retrieved all Power BI gateway cluster datasources | | |
 | Retrieved all supported datasources for Power BI gateway cluster | | |
 | Retrieved allowed Power BI gateway regions | | |
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
 | Retrieved data sources from Power BI dataset | | |
 | Retrieved data sources from Power BI dataflow | | |
-| Retrieved goals of Power BI scorecard | | |
+| Retrieved goals of Power BI scorecard | GetGoal | |
 | Retrieved links between datasets and dataflows | | |
 | Retrieved list of datasource users for Power BI gateway cluster | | |
 | Retrieved list of modified workspaces in Power BI tenant | | |
@@ -522,13 +522,13 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI folder access                    | UpdateFolderAccess                          |     |
 | Updated Power BI gateway cluster datasource | | |
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |         |
-| Updated Power BI workspace | | |
-| Updated Power BI workspace access | | |
+| Updated Power BI workspace | UpdateWorkspace | |
+| Updated Power BI workspace access | UpdateWorkspaceAccess | |
 | Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
 | Updated the Power BI gateway | | |
 | Updated the Power BI datasource | | |
-| Updated settings for Power BI template app | | |
-| Updated testing permissions for Power BI template app | | |
+| Updated settings for Power BI template app | UpdateTemplateAppSettings | |
+| Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
 | Viewed Power BI dashboard    | ViewDashboard     |      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | | | 
