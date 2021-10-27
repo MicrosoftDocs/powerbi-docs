@@ -13,7 +13,7 @@ ms.custom: intro-overview
 
 # What is the Power BI embedded analytics playground?
 
-The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It's where you can find everything you need for successful integration.
+The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics.
 
 :::image type="content" source="media/powerbi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
 
