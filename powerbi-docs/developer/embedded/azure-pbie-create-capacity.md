@@ -43,7 +43,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
 3. Within Power BI Embedded, select **Create**.
 
-4. Fill in the required information and then click **Review + Create**.
+4. Fill in the required information and then select **Review + Create**.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
@@ -290,7 +290,7 @@ Use this template to create a classic Power BI Embedded resource.
 
     [![Deploy to Azure link](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-power-bi-embedded%2fazuredeploy.json)
 
-2. Fill in the required information and then click **Review + Create**.
+2. Fill in the required information and then select **Review + Create**.
 
     ![Screenshot shows the Basics tab of the Create a Power B I Embedded capacity page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/arm-template.png)
 
@@ -334,11 +334,11 @@ To delete the capacity you created, follow these steps:
 
 2. In the search box, search for *Power BI Embedded*.
 
-3. Open the context menu of the capacity you created and click **Delete**.
+3. Open the context menu of the capacity you created and select **Delete**.
 
     ![Screenshot of the delete capacity option available from the context menu on the right of each capacity listing](media/azure-pbie-create-capacity/delete-capacity.png)
 
-4. In the confirmation page, enter the name of the capacity and click **Delete**.
+4. In the confirmation page, enter the name of the capacity and select **Delete**.
 
     ![Screenshot of the delete capacity warning and confirmation page in the Azure portal](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
 
