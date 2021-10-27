@@ -113,7 +113,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | OData | Yes | Yes | No | Yes | No | Yes |
 | ODBC | Yes | Yes | No | Yes | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes | No |
-| Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
+| Oracle | Yes | Yes | Yes <sup>9</sup> | Yes | Yes | Yes |
 
 
 ## Data sources P-R
@@ -190,6 +190,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 
 <sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
+
+<sup>9</sup> Decimal precision is limited to 15. 
 
 ## Considerations and limitations
 
