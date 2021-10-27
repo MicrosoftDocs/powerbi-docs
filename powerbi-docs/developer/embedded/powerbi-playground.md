@@ -13,12 +13,11 @@ ms.custom: intro-overview
 
 # What is the Power BI embedded analytics playground?
 
-The Power BI embedded analytics playground is makes it easier for you to learn, explore and try out Power BI embedded analytics.
+The Power BI embedded analytics playground makes it easier for you to learn, explore, and try out Power BI embedded analytics. It's where you can find everything you’ll need for successful integration.
 
 :::image type="content" source="media/powerbi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
 
 You can get hands-on coding experience, embed your own reports, and interact with Power BI client APIs to see instant results.
-There are also interactive showcases that show you how to apply these features in your applications, and a learning center to help you find all the relevant samples, tutorials, and documentation you’ll need for successful integration.
 The playground has the following main experiences:
 
 * [Developer sandbox](#developer-sandbox)
@@ -44,7 +43,7 @@ You can interact with code snippets and embed reports, dashboards, Q&As, and mor
 
 ## Showcases
 
-Our showcases give you an opportunity to experience our client APIs in action. Each showcase presents an application that demonstrates what you can achieve with one or more of the client APIs.
+The interactive showcases let you see how to apply these features in your applications. Each showcase presents an application that demonstrates what you can do with one or more of the client APIs.
 
 :::image type="content" source="media/powerbi-playground/playground-showcases-gallery.png" alt-text="A screenshot of the playground showcases gallery.":::
 
@@ -52,7 +51,7 @@ The showcases code is open-sourced, and you can find the code behind all of them
 
 ## Learning center
 
-The Learning center is a collection of Power BI embedded analytics resources. Here you can dive into our documentation, learn about our APIs, find our developer samples and videos, and learn where to get help.
+The Learning center is a collection of Power BI embedded analytics resources. It's where you can dive into our documentation, learn about our APIs, find our developer samples and videos, and learn where to get help.
 
 :::image type="content" source="media/powerbi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
 
