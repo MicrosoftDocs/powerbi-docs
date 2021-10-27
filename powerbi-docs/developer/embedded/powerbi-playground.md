@@ -33,7 +33,7 @@ Go to the developer sandbox for hands-on experience using our client APIs. You c
 
 Drag and drop code snippets into the report, or type them directly into the code editor area to see how they work.
 
-:::image type="content" source="media/powerbi-playground/sandbox-add-code.png" alt-text="A screenshot of the playground developer sandbox.":::
+:::image type="content" source="media/powerbi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
 
 ## Explore our APIs
 
