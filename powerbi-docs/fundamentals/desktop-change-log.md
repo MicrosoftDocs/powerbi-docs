@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/28/2021
+ms.date: 10/22/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,14 @@ ms.date: 09/28/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## October 2021 QFE 1
+
+*Version: 2.98.882.0, Released: October 22, 2021*
+
+Bug fixes/improvements:
+- Fix for proxy tables: now when a proxy table is deleted there will be no visible LocalDateTable left.
+- Fix for the issue where opening a PBIX file with saved diagram layouts would not properly restore those layouts in the model view.
 
 ## September 2021 QFE 2
 

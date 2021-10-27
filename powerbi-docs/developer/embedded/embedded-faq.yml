@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: conceptual
-  ms.date: 04/02/2021 
+  ms.date: 10/21/2021
     
 title: Frequently asked questions about Power BI Embedded
 summary: |
@@ -221,7 +221,7 @@ sections:
       - question: |
           What is Power BI Embedded's authentication model?
         answer: |
-          Power BI Embedded continues to use Azure AD for master user (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
+          Power BI Embedded continues to use Azure AD for *master user* (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
           
            An ISV can implement their own authentication and authorization for their applications.
           
@@ -294,7 +294,7 @@ sections:
       - question: |
           How can I embed a Power BI report that contains a paginated report visual?
         answer: |
-          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token.md), that contains the following:
+          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token), that contains the following:
           *	Power BI report ID
           *	Paginated report ID (of the report the visual is connected to)
           *	Dataset ID (of the Power BI report)
@@ -321,7 +321,7 @@ sections:
           }
           ```
           > [!NOTE]
-          > Master user is not supported.
+          > *Master user* is not supported.
 
       - question: |
           Can you sign into the Power BI service with service principal?

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 02/26/2021
 LocalizationGroup: Gateways
 ---
 
@@ -135,7 +135,7 @@ Here's how to configure the delegation settings:
 
    You should now see the SPN in the list of services to which the gateway service account can present delegated credentials.
 
-    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
@@ -264,7 +264,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 * For Import based report, SSO credentials are not used, but the credentials entered in data source page are used. 
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
-* Fore DirecyQuery based report, SSO credentials of the user are used.
+* For DirectQuery based report, SSO credentials of the user are used.
 * For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import. 
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways. 
