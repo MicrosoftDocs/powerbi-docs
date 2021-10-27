@@ -324,7 +324,7 @@ To validate the deployment, do the following:
 
 3. Review the list of Power BI Embedded capacities, and verify that the new capacity you created is listed.
 
-    ![Screenshot of a Power BI Embedded capacity list in the Azure portal](media/azure-pbie-create-capacity/capacity-list.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/capacity-list.png.png" alt-text="Screenshot of a Power BI Embedded capacity list in the Azure portal.":::
 
 ### Clean up resources
 
@@ -336,7 +336,7 @@ To delete the capacity you created, follow these steps:
 
 3. Open the context menu of the capacity you created and select **Delete**.
 
-    :::image type="content" source="media/delete-capacity/confirm-delete-capacity.png" alt-text="Screenshot of the delete capacity option available from the context menu on the right of each capacity listing.":::
+    :::image type="content" source="media/azure-pbie-create-capacity/delete-capacity.png" alt-text="Screenshot of the delete capacity option available from the context menu on the right of each capacity listing.":::
 
 4. In the confirmation page, enter the name of the capacity and select **Delete**.
 
