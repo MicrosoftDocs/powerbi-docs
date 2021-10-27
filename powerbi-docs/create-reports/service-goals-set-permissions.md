@@ -32,9 +32,9 @@ The permissions tab allows you to create roles with different permission sets an
 We support different types of permissions at the goal level:
 1.	<b>View permissions:</b> grant access for users to view specified goals within a scorecard  
 1.	<b>Update permissions:</b> grant access for users to update or check-in specific aspects of a goal.  There are a few options available under update permissions, and any combination of the following can be selected   
-  a.	 <b>Note</b> – grants access to add notes in a check-in  
-  b.	<b>Status</b> – grants access to update status in a check-in  
-  c.	<b>Current Value</b> - grants access to update the current value in a check-in  
+- <b>Note</b> – grants access to add notes in a check-in  
+- <b>Status</b> – grants access to update status in a check-in  
+- <b>Current Value</b> - grants access to update the current value in a check-in  
 
     :::image type="content" source="media/service-goals-create/goals-permissions-create-role.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
 
