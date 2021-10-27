@@ -336,11 +336,11 @@ To delete the capacity you created, follow these steps:
 
 3. Open the context menu of the capacity you created and select **Delete**.
 
-    ![Screenshot of the delete capacity option available from the context menu on the right of each capacity listing](media/azure-pbie-create-capacity/delete-capacity.png)
+    :::image type="content" source="media/delete-capacity/confirm-delete-capacity.png" alt-text="Screenshot of the delete capacity option available from the context menu on the right of each capacity listing.":::
 
 4. In the confirmation page, enter the name of the capacity and select **Delete**.
 
-    ![Screenshot of the delete capacity warning and confirmation page in the Azure portal](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/confirm-delete-capacity.png" alt-text="Screenshot of the delete capacity warning and confirmation page in the Azure portal.":::
 
 ---
 
@@ -355,7 +355,7 @@ To upgrade a Gen1 capacity to Gen2 in the Azure UI:
 1. Select the capacity.
 2. From the overview section select **Update to Gen 2**.
 
-![Screenshot of a Power BI upgrade capacity option in the Azure portal.](media/azure-pbie-create-capacity/upgrade-to-gen-2.png)
+    :::image type="content" source="media/azure-pbie-create-capacity/upgrade-to-gen-2.png" alt-text="Screenshot of a Power BI upgrade capacity option in the Azure portal.":::
 
 The capacity will update automatically in a few seconds.
 
