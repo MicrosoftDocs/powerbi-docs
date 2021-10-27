@@ -13,9 +13,9 @@ metadata:
   ms.subservice: powerbi-developer # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
-  author: KesemSharabi #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kesharab #Required; microsoft alias of author; optional team alias.
-  ms.date: 31/03/2020 #Required; mm/dd/yyyy format.
+  author: mberdugo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: monaberdugo #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/20/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -31,13 +31,17 @@ highlightedContent:
       itemType: overview
       url: visuals/develop-power-bi-visuals.md
     # Card
-    - title: Power BI Embedded Generation 2 (preview)
+    - title: Power BI Embedded Generation 2
       itemType: whats-new
       url: embedded/power-bi-embedded-generation-2.md        
     # Card
     - title: Power BI embedded analytics Client APIs
       itemType: whats-new
-      url: /javascript/api/overview/powerbi/  
+      url: /javascript/api/overview/powerbi/
+    # Card
+    - title: Explore features and APIs in the embedded analytics playground
+      itemType: whats-new
+      url: https://aka.ms/pbieplayground
     # Card
     - title: Automated  template app configuration
       itemType: concept
@@ -132,10 +136,6 @@ additionalContent:
         - title: Embedding setup tool
           summary: Set up your Power BI embedding environment.
           url: https://app.powerbi.com/embedsetup
-        # Card
-        - title: Playground
-          summary: Try features and explore APIs.
-          url: https://aka.ms/pbieplayground
         # Card
         - title: Power BI embedded analytics Client APIs
           summary: Explore the Power BI embedded analytics Client APIs.

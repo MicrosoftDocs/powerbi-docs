@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 10/19/2021
 LocalizationGroup: Share your work
 ---
 # Filter and share a Power BI report
@@ -75,7 +75,7 @@ Here you can see any shared views for the report and when those views were creat
 
 When you share this link, recipients with access to the report will see your filtered report.
 
-## Limitations and considerations
+## Considerations and limitations
 Things to keep in mind about sharing reports:
 
 * When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../admin/service-admin-rls.md) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.

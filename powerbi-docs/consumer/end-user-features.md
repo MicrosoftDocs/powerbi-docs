@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 09/16/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
@@ -25,8 +25,6 @@ There are many different ways designers can share content. But this article is f
 In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your roles and permissions, and where content is stored.
 
 This article lists which features in the Power BI service are available to *business users* like you. By definition, *business users* have a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have content stored in Premium capacity.
-
-<art>
 
 ## Quick review of terminology
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).

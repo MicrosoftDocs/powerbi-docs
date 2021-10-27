@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/25/2021
+ms.date: 09/29/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -83,12 +83,12 @@ There are two kinds of Power BI subscription licenses for organizations: standar
 
 With a standard, self-service Power BI subscription, admins assign per user licenses. There's a per user monthly fee for Power BI Pro licenses. This license type enables collaboration, publishing, sharing, and ad-hoc analysis. Content is saved to shared storage capacity that is fully managed by Microsoft.
 
-A Power BI Premium subscription license allocates a capacity to an organization. Suitable for enterprise BI, big data analytics, and cloud and on-premises reporting, Premium provides advanced administration and deployment controls. Dedicated compute and storage resources are managed by capacity admins in your organization. There's a monthly cost for this dedicated environment. In addition to other Premium advantages, content stored in Premium capacity can be accessed by and distributed to users who don't have Power BI Pro licenses. At least one user has to have a Power BI Pro license assigned to use Premium, and content creators and developers still need a Power BI Pro license.
+A Power BI Premium subscription license allocates a capacity to an organization. Suitable for enterprise BI, big data analytics, and cloud and on-premises reporting, Premium provides advanced administration and deployment controls. Reserved compute and storage resources are managed by capacity admins in your organization. There's a monthly cost for this reserved environment. In addition to other Premium advantages, content stored in Premium capacity can be accessed by and distributed to users who don't have Power BI Pro licenses. At least one user has to have a Power BI Pro license assigned to use Premium, and content creators and developers still need a Power BI Pro license.
 
 The two types of subscriptions aren't mutually exclusive. You can have both Power BI Premium and standard. In this configuration, content stored in Premium capacity can be shared with all users and shared capacity is also available. For information about capacity limits, see [Manage data storage in Power BI workspaces](service-admin-manage-your-data-storage-in-power-bi.md).
 
 >[!NOTE]
->Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+>Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
 >* Per-user licensing. See the [Premium Per User article](service-premium-per-user-faq.yml) for more information.
 >* Greater scale
@@ -96,7 +96,7 @@ The two types of subscriptions aren't mutually exclusive. You can have both Powe
 >* Autoscaling
 >* Reduced management overhead
 >
->For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 
 To compare product features and pricing, see [Power BI pricing](https://powerbi.microsoft.com/pricing).

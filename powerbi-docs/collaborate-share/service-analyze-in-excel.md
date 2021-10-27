@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/16/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -174,7 +174,7 @@ Here are some requirements for using **Analyze in Excel**:
 
 If you need to uninstall the **Analyze in Excel** feature, use the **Add or remove programs** system setting on your computer.
 
-## Limitations and considerations
+## Considerations and limitations
 
 - Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.

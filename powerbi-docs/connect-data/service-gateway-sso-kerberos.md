@@ -214,6 +214,9 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
+> [!NOTE]
+> Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
     ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
@@ -261,7 +264,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 * For Import based report, SSO credentials are not used, but the credentials entered in data source page are used. 
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
-* Fore DirecyQuery based report, SSO credentials of the user are used.
+* For DirectQuery based report, SSO credentials of the user are used.
 * For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import. 
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways. 

@@ -1,13 +1,13 @@
 ---
 title: How to purchase Power BI Premium
 description: Learn how you can purchase Power BI Premium and enable access to content for your entire organization.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -23,7 +23,8 @@ For more information about Power BI Premium, see [What is Power BI Premium?](ser
 > If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on datasets that are greater than 1 GB or reports that require Premium capacities to render.
 
 > [!NOTE]
-> Power BI Premium released a version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+
 
 ## Purchase P SKUs for typical production scenarios
 
@@ -119,7 +120,7 @@ You can purchase Power BI Premium for individual users, using the Premium Per Us
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -127,4 +128,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

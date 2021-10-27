@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 08/16/2021
+ms.date: 10/19/2021
 ---
 
 # Understand the deployment process
@@ -207,7 +207,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-#### Limitations and considerations
+#### Considerations and limitations
 
 For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
@@ -229,7 +229,7 @@ You can use the composite models functionality to connect a Power BI dataset to 
 
 In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.  
 
-#### Limitations
+#### Considerations and limitations
 
 The following composite models connections are not supported:
 
@@ -332,7 +332,7 @@ Dataset owners that are either workspace members or admins, can also do the foll
 >[!NOTE]
 >This section describes user permissions in deployment pipelines. The permissions listed in this section may have different applications in other Power BI features.
 
-## Limitations
+## Considerations and limitations
 
 This section lists most of the limitations in deployment pipelines.
 

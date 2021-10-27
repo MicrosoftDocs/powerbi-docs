@@ -1,8 +1,8 @@
 ---
 title: Getting Power BI visuals certified
 description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
@@ -24,28 +24,28 @@ The certification process is optional. Power BI visuals that are not certified, 
 
 ## Certification requirements
 
-To get your Power BI visual certified, your Power BI visual must comply with all the requirements listed in this section.
+To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section.
 
 ### General requirements
 
-All certified Power BI visuals have to be approved by Partner Center. We recommend that you publish your Power BI visual in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) before submitting it for certification. To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
+Your Power BI visual has to be approved by Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
 Before submitting your Power BI visual to be certified, verify that:
 
-* it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
-* it [passes all the necessary tests](submission-testing.md)
-* the compiled package exactly matches the submitted package.
+* the visual complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
+* the visual passes all the [required tests](submission-testing.md)
+* the compiled package exactly matches the submitted package
 
 ### Code repository requirements
 
-Although you don't have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to ensure availability, is by providing the source code (JavaScript or TypeScript) in GitHub.
+Although you don't have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
 The repository must contain the following:
 
 * Code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
 * A branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
-If your Power BI visual uses private npm packages, or git submodules, you must provide access to the another repositories containing this code.
+If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
 
 To understand how a Power BI visual repository looks, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
@@ -55,8 +55,8 @@ Use the latest version of the API to write the Power BI visual.
 
 The repository must include the following files:
 
-* **.gitignore** - Add `node_modules`, `.tmp`, and  `dist` to this file. The code can't include the *node_modules*, *.tmp* or *dist* folders.
-* **capabilities.json** - If you're submitting a newer version of your Power BI visual with changes to the properties in this file, verify that they don't break reports for existing users.
+* **.gitignore** - Add `node_modules`, `.tmp` and  `dist` to this file. The code cannot include the *node_modules*, *.tmp* or *dist* folders.
+* **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
 * **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
   * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
@@ -104,10 +104,10 @@ The following are **Not allowed**:
 
 ## Submitting a Power BI visual for certification
 
-You can request to have your Power BI visual certified by the Power BI team via Partner Center. All visuals submitted for certification must pass the [required tests](submission-testing.md).
+You can request to have your Power BI visual certified by the Power BI team via Partner Center.
 
 >[!TIP]
->The Power BI certification process might take time. If you're creating a new Power BI visual, we recommend that you [publish](office-store.md) your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
+>The Power BI certification process might take time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
 
 To request Power BI certification:
 
@@ -172,6 +172,9 @@ Your Power BI visual will be available to download from AppSource when this proc
 * If you're requesting certification for an existing Power BI visual, the certification badge will be visible within two weeks of your submission.
 
 ## Next steps
+
+>[!div class="nextstepaction"]
+>[Developing a Power BI circle card visual](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)

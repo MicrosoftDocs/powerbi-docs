@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/16/2021
+ms.date: 10/21/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -134,7 +134,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ### Query execution
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
@@ -160,6 +160,29 @@ Run complete
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
+## Connect to Server error in SSMS
+
+When connecting to a Power BI workspace with SQL Server Management Studio (SSMS), the following error may be displayed:
+
+```
+TITLE: Connect to Server
+------------------------------
+Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].
+------------------------------
+ADDITIONAL INFORMATION: 
+The remote server returned an error: (400) Bad Request.
+Technical Details:
+RootActivityId: 
+Date (UTC): 10/6/2021 1:03:25 AM (Microsoft.AnalysisServices.AdomdClient)
+------------------------------
+The remote server returned an error: (400) Bad Request. (System)
+```
+
+When connecting to a Power BI workspace with SSMS, ensure the following:
+
+- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+- The [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
+- You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## Editing role memberships in SSMS
 
@@ -240,7 +263,7 @@ In some cases, as shown in the following error, "consumed memory" is 0 but the a
 To potentially reduce exceeding the effective memory limit:
 
 - Upgrade to a larger Premium capacity (SKU) size for the dataset.
-- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh. For example, if using incremental refresh, specify a shorter range of dates between the RangeStart and RangeEnd parameters.
+- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
 - For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
 ## See also

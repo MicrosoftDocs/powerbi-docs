@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -137,8 +137,8 @@ From the upper-right corner of your report canvas, select **Reset to default**. 
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
 
-## Limitations and considerations
-In this release of **personal bookmarks**, there are a few limitations and considerations to keep in mind.
+## Considerations and limitations
+In this release of **personal bookmarks**, there are a few considerations and limitations to keep in mind.
 
 * Most Power BI custom visuals should work well with personal bookmarking. If you run into trouble with bookmarking and a Power BI custom visual, contact the creator of that visual and ask them to add support for bookmarks.    
 * If you add a visual on a report page after creating a personal bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created personal bookmarks, the slicer will behave in its default state.

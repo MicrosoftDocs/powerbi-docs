@@ -1,14 +1,14 @@
 ---
 title: Backup and restore Power BI Premium datasets
 description: Learn how to backup and restore datasets in Power BI Premium spaces
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/07/2021
-LocalizationGroup: Connect to data
+ms.date: 10/19/2021
+LocalizationGroup: Premium
 ---
 # Backup and restore datasets with Power BI Premium
 
@@ -61,7 +61,7 @@ During backup and restore, the following actions apply:
 
 If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
 
-## Limitations and considerations
+## Considerations and limitations
 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 
@@ -80,7 +80,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 

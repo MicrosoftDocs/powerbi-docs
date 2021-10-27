@@ -1,8 +1,8 @@
 ---
 title: Build a funnel plot from R script to R visual
 description: This article describes how to build a funnel plot from R script to R Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

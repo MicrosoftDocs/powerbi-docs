@@ -1,22 +1,22 @@
 ---
 title: Using Autoscale with Power BI Premium
 description: Autoscale for Power BI Premium Gen2 allows you to automatically scale processing power to meet your Power BI user requirements
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 10/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
 
 # Using Autoscale with Power BI Premium
 
-Power BI Premium offers scale and performance for Power BI content in your organization. With Power BI Premium Gen2 (Preview), many improvements are introduced including enhanced performance, greater scale, improved metrics. In addition, Premium Gen2 enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
+Power BI Premium offers scale and performance for Power BI content in your organization. With Power BI Premium Gen2, many improvements are introduced including enhanced performance, greater scale, improved metrics. In addition, Premium Gen2 enables customers to automatically add compute capacity to avoid slowdowns under heavy use, using **Autoscale**.
 
-:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
+:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
 
 Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium Gen2. 
 
@@ -28,7 +28,8 @@ To enable Autoscale, the following steps need to be completed:
 The following sections describe the steps in detail.
 
 >[!NOTE]
->[Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
+>* Autoscale isn’t available for Microsoft 365 Government Community Cloud (GCC), due to the use of the commercial Azure cloud.
+>* [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
 
 ## Configure an Azure subscription to use with Autoscale
 
@@ -70,7 +71,7 @@ The following steps show you how to enable and associated Autoscale with the res
 
     :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-06.png" alt-text="Screenshot of Power B I Admin portal.":::
 
-2. Autoscale only works with Power BI Premium Gen2 (Preview). Enabling Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2 (preview)** box. 
+2. Autoscale only works with Power BI Premium Gen2. Enabling Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2** box. 
 
     :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Video of enabling Premium Generation Two.":::
 
@@ -84,7 +85,7 @@ The following steps show you how to enable and associated Autoscale with the res
 
 5. Next, assign the maximum number of v-cores to use for Autoscale, and then select **Save** to save your settings. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings**, where you can see your settings have been applied. In the following image, there were a maximum of two v-cores configured for Autoscale.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-09.png" alt-text="Screenshot of Autoscale being configured.":::
+    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of Autoscale being configured.":::
 
 Here's a short video that shows how quickly you can configure Autoscale for Power BI Premium Gen2:
 
@@ -97,5 +98,5 @@ And that's it - your Power BI Premium Gen2 subscription is now configured to use
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

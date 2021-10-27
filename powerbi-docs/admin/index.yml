@@ -1,75 +1,180 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: Power BI admin and enterprise documentation
-summary: Power BI documentation provides expert information and answers to address your administrative and enterprise questions.
+title: Power BI for the Enterprise
+summary: Power BI is the business analytics and insights platform that enables Enterprises to do more.
+brand: power-bi
 
 metadata:
-  title: Power BI admin and enterprise documentation
-  description: Power BI documentation provides expert information and answers to address your administrative and enterprise questions.
+  title: Power BI enterprise documentation
+  description: Power BI is the business analytics and insights platform that enables Enterprises to do more.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-admin
-  ms.topic: landing-page # Required
+  ms.topic: hub-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 03/17/2020
+  author: davidiseminger
+  ms.author: davidi
+  ms.date: 10/20/2021
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# highlightedContent section (optional)
+# Maximum of 8 items 
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Introducing Power BI Premium Gen2
+      itemType: whats-new
+      url: service-premium-gen2-what-is.md
+    # Card
+    - title: What is Power BI Premium Per User (PPU)?
+      itemType: reference
+      url: service-premium-per-user-faq.yml
+    # Card
+    - title: Power BI Security in the Enterprise
+      itemType: overview
+      url: service-admin-power-bi-security.md
+    # Card
+    - title: Power BI administration, and the admin portal
+      itemType: how-to-guide
+      url: service-admin-portal.md
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Power BI for admins and enterprises
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "What is Power BI administration?"
-            url: service-admin-administering-power-bi-in-your-organization.md
-          - text: "What is Power BI Premium?"
-            url: service-premium-what-is.md
-      - linkListType: concept
-        links:
-          - text: "Administration role"
-            url: service-admin-role.md
 
-  # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Licensing for your organization"
-            url: service-admin-licensing-organization.md
-          - text: "Using the admin portal"
-            url: service-admin-portal.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Get Power BI Desktop"
-            url: ../fundamentals/desktop-get-the-desktop.md
-          - text: "Purchase Power BI Pro"
-            url: service-admin-purchasing-power-bi-pro.md
-          - text: "Sign up with a Microsoft 365 Trial"
-            url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-          - text: "Add Power BI with a Microsoft 365 partner"
-            url: service-admin-syndication-partner.md
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Power BI Enterprise Guidance
+      links:
+        - url: ../guidance/overview.md
+          itemType: overview
+          text: Guidance overview
+        - url: ../guidance/star-schema.md
+          itemType: concept
+          text: Star schemas
+        - url: ../guidance/import-modeling-data-reduction.md
+          itemType: concept
+          text: Reduce data model size
+      # footerLink (optional)
+      footerLink:
+        url: ../guidance/index.yml
+        text: See more
+    # Card
+    - title: Power BI and DirectQuery
+      links:
+        - url: ../connect-data/desktop-directquery-about.md
+          itemType: overview
+          text: DirectQuery and Power BI
+        - url: ../connect-data/desktop-directquery-about.md
+          itemType: concept
+          text: Using DirectQuery in Power BI Desktop
+        - url: ../transform-model/dataflows/dataflows-directquery.md
+          itemType: concept
+          text: Using DirectQuery with dataflows
+      # footerLink (optional)
+      footerLink:
+        url: ../connect-data/index.yml
+        text: See more
+    # Card
+    - title: Power BI dataflows
+      links:
+        - url: ../transform-model/dataflows/dataflows-introduction-self-service.md
+          itemType: tutorial
+          text: Introduction to dataflows
+        - url: ../transform-model/dataflows/dataflows-create.md
+          itemType: how-to-guide
+          text: Create a dataflow
+        - url: ../transform-model/dataflows/dataflows-premium-features.md
+          itemType: concept
+          text: Premium features of dataflows
+      # footerLink (optional)
+      footerLink:
+        url: ../transform-model/index.yml
+        text: See more
+    # Card
+    - title: Power BI change management
+      links:
+        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-desktop
+          itemType: get-started
+          text: Latest updates to Power BI Desktop
+        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-service
+          itemType: get-started
+          text: Latest updates to the Power BI service
+        - url: ../fundamentals/desktop-latest-update-archive.md
+          itemType: reference
+          text: Power BI updates archive
+      # footerLink (optional)
+      footerLink:
+        url: ../fundamentals/index.yml
+        text: See more
+    # Card
+    - title: Power BI for developers
+      links:
+        - url: ../developer/automation/overview-of-power-bi-rest-api.md
+          itemType: overview
+          text: The Power BI REST API
+        - url: ../developer/embedded/embedded-analytics-power-bi.md
+          itemType: concept
+          text: Power BI embedded analytics
+        - url: https://playground.powerbi.com 
+          itemType: deploy
+          text: Power BI Playground (for embedded analytics)
+        - url: ../developer/visuals/develop-power-bi-visuals.md
+          itemType: concept
+          text: Develop a Power BI visual
+        - url: /powershell/power-bi/overview
+          itemType: reference
+          text: Power BI PowerShell reference guide
+      # footerLink (optional)
+      footerLink:
+        url: ../developer/index.yml
+        text: See more
+    # Card
+    - title: Third-party tools for Power BI
+      links:
+        - url: service-premium-connect-tools.md
+          itemType: overview
+          text: Using an XMLA endpoint
+        - url: https://tabulareditor.github.io/
+          itemType: download
+          text: The Tabular Editor 
+        - url: https://daxstudio.org/
+          itemType: download
+          text: DAX Studio
+        - url: http://alm-toolkit.com/
+          itemType: download
+          text: ALM Toolkit for Power BI
+      # footerLink (optional)
+      footerLink:
+        url: ../guidance/index.yml
+        text: See more
 
-  # Card
-  - title: Manage your organization
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Premium capacity scenarios"
-            url: service-premium-capacity-scenarios.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Where is my data stored?"
-            url: service-admin-where-is-my-tenant-located.md
-          - text: "Find users that have signed in"
-            url: service-admin-access-usage.md
-          - text: "Auditing Power BI"
-            url: service-admin-auditing.md
-          - text: "Track service health"
-            url: service-admin-health.md
-          - text: "Closing your Power BI account"
-            url: service-admin-closing-your-account.md
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Enterprise tools for Power BI # < 60 chars (optional)
+      items:
+        # Card
+        - title: Power BI Report Server
+          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
+          url: /power-bi/report-server/index
+        - title: Power BI REST APIs
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
+          url: /rest/api/power-bi/
+        - title: Power BI embedded analytics client APIs
+          summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
+          url: /javascript/api/overview/powerbi/
+    - title: Get Started using the Power Platform # < 60 chars (optional)
+      items:
+        # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
+          url: /powerapps/
+        - title: Power Automate
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
+          url: /power-automate/
+        - title: Power Virtual Agents
+          summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
+          url: /power-virtual-agents/

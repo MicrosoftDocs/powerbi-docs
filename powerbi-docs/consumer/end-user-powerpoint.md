@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/16/2021
+ms.date: 09/30/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -81,7 +81,7 @@ When you view an individual slide, you see that each report page is an independe
 
 What you do with your PowerPoint deck from there, or any of the high-resolution images, is up to you.
 
-## Considerations and troubleshooting
+## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 

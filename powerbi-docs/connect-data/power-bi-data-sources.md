@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 09/22/2021
 ---
 
 # Power BI data sources
@@ -101,7 +101,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
 | MailChimp | Yes | Yes | No | No | No | No |
-| MariaDB | Yes | Yes | Yes | No | Yes | No |
+| MariaDB | Yes | Yes | Yes | Yes | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
@@ -202,6 +202,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the underlying data source. This enables Power BI to respect the security settings that are configured at the data source level.
 The SSO option takes effect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
 
+- Azure Data Explorer
 - Azure SQL Database
 - Azure Synapse
 - Impala
