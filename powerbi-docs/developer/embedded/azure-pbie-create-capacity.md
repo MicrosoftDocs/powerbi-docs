@@ -324,7 +324,7 @@ To validate the deployment, do the following:
 
 3. Review the list of Power BI Embedded capacities, and verify that the new capacity you created is listed.
 
-    :::image type="content" source="media/azure-pbie-create-capacity/capacity-list.png.png" alt-text="Screenshot of a Power BI Embedded capacity list in the Azure portal.":::
+    :::image type="content" source="media/azure-pbie-create-capacity/capacity-list.png" alt-text="Screenshot of a Power BI Embedded capacity list in the Azure portal.":::
 
 ### Clean up resources
 
