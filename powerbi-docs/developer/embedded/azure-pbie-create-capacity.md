@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/12/2021
+ms.date: 10/27/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -361,7 +361,30 @@ The capacity will update automatically in a few seconds.
 
 ### [ARM API](#tab/arm)
 
-To upgrade a Gen1 capacity to Gen2 with the ARM API:
+Here's an example of a template for upgrading a capacity to Gen2:
+
+#### Request
+
+```http
+PATCH https://management.azure.com/subscriptions/613192d7-503f-477a-9cfe-4efc3ee2bd60/resourceGroups/TestRG/providers/Microsoft.PowerBIDedicated/capacities/azsdktest?api-version=2021-01-01
+```
+
+#### Request body
+
+```json
+{
+  "sku": {
+    "name": "A1",
+    "tier": "PBIE_Azure"
+  },
+  "tags": {
+    "testKey": "testValue"
+  },
+  "properties": {
+    "mode": "Gen2"
+  }
+}
+```
 
 ---
 
