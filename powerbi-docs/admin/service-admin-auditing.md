@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/23/2021
+ms.date: 10/27/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
+Knowing who is taking what action on which item in Power BI can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. This article discusses two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
 
 ## Choosing a log source
 The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
@@ -157,7 +157,7 @@ You must meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first make sure to enable logging in Power BI. For more information, see [Audit and uage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first make sure to enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -287,153 +287,144 @@ For more information on connecting to Exchange Online, see [Connect to Exchange 
 
 The following operations are available in both the audit and activity logs.
 
-| Friendly name                                     | Operation name                              | Notes                                  |
-|---------------------------------------------------|---------------------------------------------|------------------------------------------|
-| Accessed Power BI featured tables in Excel | AnalyzedByExternalApplication | NOT FOUND   |
-| Added data source to Power BI gateway             | AddDatasourceToGateway                      |                                          |
+| Friendly name         | Operation name           | Notes                                  |
+|-----------------------|--------------------------|----------------------------------------|
+| Added data source to Power BI gateway   | AddDatasourceToGateway |     |
 | Added external resource | | |
 | Added link to external resource | | |
-| Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
-| Added Power BI group members                      | AddGroupMembers                             |                                          |
+| Added Power BI folder access  | AddFolderAccess     | Not currently used      |
+| Added Power BI group members       | AddGroupMembers     |    |
 | Added user to Power BI gateway cluster | | |
 | Added user to Power BI gateway cluster datasource | | |
-| Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
-| Analyzed Power BI dataset                         | AnalyzedByExternalApplication               | Generated when users interact with the service                                         |
-| Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
-| Applied sensitivity label to Power BI artifact | | |
-| Assigned a workspace to a deployment pipeline                          | AssignWorkspaceToPipeline                              |                                          |
-| Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
+| Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
+| Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
+| Analyzed Power BI report    | AnalyzeInExcel   | |
+| [Applied sensitivity label to Power BI artifact]((service-security-sensitivity-label-audit-schema.md)) | SensitivityLabelApplied | |
+| Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
+| Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
 | Binded Power BI dataset to gateway  | BindToGateway        |     |
-| Canceled Power BI dataflow refresh                        | CancelDataflowRefresh                       |                                          |
-| Changed capacity state                            | ChangeCapacityState                         |                                          |
-| Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
-| Changed Power BI dataset connections              | SetAllConnections                           |                                          |
-| Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
-| Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
-| Changed sensitivity label for Power BI artifact | | |
+| Canceled Power BI dataflow refresh    | CancelDataflowRefresh |    |
+| Changed capacity state        | ChangeCapacityState  |      |
+| Changed capacity user assignment      | UpdateCapacityUsersAssignment   |    |
+| Changed Power BI dataset connections   | SetAllConnections         |         |
+| Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
+| Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
+| [Changed sensitivity label for Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | | 
 | Connected to Power BI dataset from external app | | |
-| Copied Power BI dashboard | | |
-| Copied Power BI report |  |  |
-| Create Power BI template app workspace | CreateTemplateApp   | NOT FOUND
-| Create Power BI template app install ticket | CreateTemplateAppInstallTicket | NOT FOUND
-| Create Power BI template app package | CreateTemplateAppPackage | NOT FOUND
-| Created a Power BI scorecard goal | | |
-| Created a Power BI goal value | | |
-| Created a Power BI scorecard | | |
-| Created an organizational custom visual                          | InsertOrganizationalGalleryItem                                |                                          |
-| Created deployment pipeline      | CreateAlmPipeline                                |                                          |
-| Created install ticket for installing Power BI template app | | |
-| Created organizational Power BI content pack | | |
-| Created Power BI app                              | CreateApp                                   |                                          |
-| Created Power BI dashboard                        | CreateDashboard                             |                                          |
-| Created Power BI dataflow                         | CreateDataflow                              |                                          |
-| Created Power BI dataset                          | CreateDataset                               |                                          |
+| Copied Power BI dashboard | CopyDashboard | |
+| Copied Power BI report | CopyReport  |  |
+| Created a Power BI scorecard goal | CreateGoal | |
+| Created a Power BI goal value | CreateGoalValue | |
+| Created a Power BI scorecard | CreateScorecard | |
+| Created an organizational custom visual     | InsertOrganizationalGalleryItem   |    |
+| Created deployment pipeline      | CreateAlmPipeline       |  |
+| Created install ticket for installing Power BI template app | CreateTemplateAppInstallTicket | |
+| Created Power BI app      | CreateApp           |       |
+| Created Power BI dashboard    | CreateDashboard  |       |
+| Created Power BI dataflow      | CreateDataflow            |                        |
+| Created Power BI dataset         | CreateDataset          |           |
 | Created Power BI dataset from external app | | |
-| Created Power BI email subscription               | CreateEmailSubscription                     |                                          |
-| Created Power BI folder                           | CreateFolder                                |                                          |
-| Created Power BI gateway                          | CreateGateway                               |                                          |
+| Created Power BI email subscription   | CreateEmailSubscription       |            |
+| Created Power BI folder   | CreateFolder           |              |
+| Created Power BI gateway        | CreateGateway     |              |
 | Created Power BI gateway cluster datasource | | |
-| Created Power BI group                            | CreateGroup                                 |                                          |
-| Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
-| Created workspace for Power BI template app | | |
-| Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
-| Custom visual requested Office Web Apps access token                           | GenerateCustomVisualWACAccessToken                                |                                          |
+| Created Power BI group      | CreateGroup            |       |
+| Created Power BI report       | CreateReport <sup>1</sup>      |          |
+| Created Power BI template app | CreateTemplateApp |  |
+| Created workspace for Power BI template app | CreateTemplateApp | |
+| Custom visual requested Azure AD access token         | GenerateCustomVisualAADAccessToken    |   |
+| Custom visual requested Office Web Apps access token    | CustomVisualWACAccessToken          |     |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
-| Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
-| Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
-| Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem                                |                                          |
-| Deleted deployment pipeline      | DeleteAlmPipeline                                |                                          |
+| Dataflow permissions added   | DataflowPermissionsAdded       | Not currently used     |
+| Dataflow permissions removed      | DataflowPermissionsRemoved                  | Not currently used       |
+| Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem               |        |
+| Deleted deployment pipeline      | DeleteAlmPipeline     |   |
 | Deleted current value connection of Power BI goal | | |
 | Deleted link to external resource | | |
 | Deleted member of Power BI gateway cluster | | |
-| Deleted organizational Power BI content pack      | DeleteOrgApp                                |                                          |
-| Deleted Power BI comment                          | DeleteComment                               |                                          |
-| Deleted Power BI dashboard                        | DeleteDashboard                             | Not currently used                       |
-| Deleted Power BI dataflow                         | DeleteDataflow                              | Not currently used                       |
-| Deleted Power BI dataset                          | DeleteDataset                               |                                          |
+| Deleted organizational Power BI content pack   | DeleteOrgApp     |       |
+| Deleted Power BI comment   | DeleteComment      |      |
+| Deleted Power BI dashboard      | DeleteDashboard       | Not currently used     |
+| Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
+| Deleted Power BI dataset     | DeleteDataset         |         |
 | Deleted Power BI dataset from external app | | |
-| Deleted Power BI email subscription               | DeleteEmailSubscription                     |                                          |
-| Deleted Power BI goal | | |
-| Deleted Power BI folder                           | DeleteFolder                                |                                          |
-| Deleted Power BI folder access                    | DeleteFolderAccess                          | Not currently used                       |
-| Deleted Power BI gateway                          | DeleteGateway                               |                                          |
+| Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
+| Deleted Power BI folder   | DeleteFolder   |   |
+| Deleted Power BI goal | DeleteGoal | |
+| Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
+| Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
 | Deleted Power BI gateway cluster datasource | | |
-| Deleted Power BI group                            | DeleteGroup                                 |                                          |
-| Deleted Power BI note | | |
-| Deleted Power BI scorecard | | |
-| Deleted Power BI report                           | DeleteReport                                |                                          |
-| Deleted Power BI template app | | |
-| Deleted Power BI template app workspace | DeleteTemplateApp | NOT FOUND
-| Deleted Power BI template app package | DeleteTemplateAppPackage | NOT FOUND
+| Deleted Power BI goal | DeleteGoal | |
+| Deleted Power BI group      | DeleteGroup          |            |
+| Deleted Power BI note | DeleteNote | |
+| Deleted Power BI scorecard | DeleteScorecard | |
+| Deleted Power BI report    | DeleteReport   |    |
+| Deleted Power BI template app | DeleteTemplateApp | |
+| [Deleted sensitivity label from Power BI artifact](service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
-| Deleted workspace for Power BI template app | | |
-| Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
-| Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
-| Downloaded Power BI report                        | DownloadReport                              |                                          |
-| Edited dataflow properties                        | EditDataflowProperties                      | NOT FOUND                                      |
+| Deleted workspace for Power BI template app | DeleteTemplateApp | |
+| Deployed to a pipeline stage     | DeployAlmPipeline    |        |
+| Discovered Power BI dataset data sources      | GetDatasources       | |
+| Downloaded Power BI report     | DownloadReport                   |       |
 | Edited Power BI app endorsement | | |
-| Edited Power BI certification permission          | EditCertificationPermission                 | Not currently used                       |
-| Edited Power BI dashboard                         | EditDashboard                               | Not currently used                       |
-| Edited Power BI dataflow endorsement | | |
-| Edited Power BI dataset                           | EditDataset                                 |                                          |
-| Edited Power BI dataset endorsement | | |
+| Edited Power BI certification permission    | EditCertificationPermission    | Not currently used    |
+| Edited Power BI dashboard      | EditDashboard        | Not currently used       |
+| Edited Power BI dataflow endorsement | EditDataflowProperties | |
+| Edited Power BI dataset    | EditDataset         |       |
+| Edited Power BI dataset endorsement | EditDatasetProperties | |
 | Edited Power BI dataset from external app | | |
-| Edited Power BI dataset properties                | EditDatasetProperties                       | Not currently used                       |
-| Edited Power BI report                            | EditReport                                  |                                          |
-| Edited Power BI report endorsement | | |
+| Edited Power BI dataset properties    | EditDatasetProperties     |  |
+| Edited Power BI report   | EditReport    |        |
+| Edited Power BI report endorsement | EditReportProperties | |
 | Encrypted credentials for Power BI gateway datasource | | |
 | Encrypted credentials using Power BI gateway cluster | | |
 | Export Power BI activity events | | |
-| Exported Power BI dataflow                        | ExportDataflow                              |                                          |
-| Exported Power BI report to another file format | | |
-| Exported Power BI report visual data              | ExportReport                                |                                          |
-| Exported Power BI tile data                       | ExportTile                                  |                                          |
-| Extracted Power BI template app package to workspace | ExtractTemplateAppPackage | NOT FOUND
-| Failed to add dataflow permissions                | FailedToAddDataflowPermissions              | Not currently used                       |
-| Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
-| Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
-| Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
-| Generate screenshot                       | GenerateScreenshot |                     |
+| Exported Power BI artifact to another file format | ExportArtifact | |
+| Exported Power BI dataflow   | ExportDataflow |  |
+| Exported Power BI report to another file format | ExportReport | |
+| Exported Power BI report visual data    | ExportReport    |     |
+| Exported Power BI tile data    | ExportTile       |         |
+| Generated Power BI dataflow SAS token    | GenerateDataflowSasToken   |  |
+| Generated Power BI Embed Token     | GenerateEmbedToken  |        |
+| Generate screenshot     | GenerateScreenshot |   |
 | Get Power BI group users | | |
-| Imported file to Power BI                         | Import                                      |                                          |
+| Imported file to Power BI   | Import   |           |
 | Initiated Power BI gateway cluster authentication process | | |
-| Inserted or updated current value connection of Power BI goal | | |
+| Inserted or updated current value connection of Power BI goal | UpsertGoalCurrentValueConnection | |
 | Inserted or updated target value connection of Power BI goal | | |
-| Inserted Power BI note | | |
+| Inserted Power BI note | InsertNote | |
 | Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their dataset |
-| Installed Power BI app                            | InstallApp                                  |                                          |
-| Installed Power BI template app | InstallTemplateApp |
+| Installed Power BI app    | InstallApp     |       |
+| Installed Power BI template app | InstallTemplateApp | |
 | Mapped user principal names for tenant | | |
 | Migrated dataflow storage location | | |
-| Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
-| Patched Power BI goal | | |
-| Patched Power BI goal value | | |
-| Patched Power BI note | | |
-| Patched Power BI scorecard | | |
-| Posted Power BI comment                           | PostComment                                 |                                          |
-| Printed Power BI dashboard                        | PrintDashboard                              |                                          |
-| Printed Power BI report page                      | PrintReport                                 |                                          |
+| Migrated workspace to a capacity    | MigrateWorkspaceIntoCapacity   |   |
+| Patched Power BI goal | PatchGoal | |
+| Patched Power BI goal value | PatchGoalValue | |
+| Patched Power BI note | PatchNote | |
+| Patched Power BI scorecard |PatchScorecard | |
+| Posted Power BI comment     | PostComment  | |
+| Printed Power BI Dashboard | PrintDashboard  |    |
+| Printed Power BI report page   | PrintReport      |    |
 | Promoted Power BI template app | | |
-| Promoted Power BI template app package | PromoteTemplateAppPackage | NOT FOUND
-| Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
-| Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | NOT FOUND |
-| Ran Power BI email subscription | | |
-| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Published Power BI report to web     | PublishToWebReport <sup>2</sup>       |      |
+| Ran Power BI email subscription | RunEmailSubscription | |
+| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault    |    |
 | Reencrypted credentials using Power gateway cluster | | |
 | Refreshed current value of Power BI goal | | |
 | Refreshed target value of Power BI goal | | |
-| Removed a workspace from a deployment pipeline         | UnassignWorkspaceFromPipeline                 |                                          |
-| Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
-| Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
+| Removed a workspace from a deployment pipeline  | UnassignWorkspaceFromPipeline  |  |
+| Removed data source from Power BI gateway    | RemoveDatasourceFromGateway  |     |
+| Removed Power BI group members     | DeleteGroupMembers          |       |
 | Removed user from Power BI gateway cluster | | |
 | Removed user from Power BI gateway cluster datasource | | |
-| Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
-| Renamed Power BI dashboard                        | RenameDashboard                             |                                          |
+| Removed workspace from a capacity    | RemoveWorkspacesFromCapacity  |  |
+| Renamed Power BI dashboard   | RenameDashboard   |     |
 | Requested account key for Power BI storage | | |
-| Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
-| Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
+| Requested Power BI dataflow refresh   | RequestDataflowRefresh       | Not currently used      |
+| Requested Power BI dataset refresh   | RefreshDataset     |       |
 | Requested Power BI dataset refresh from external app | | |
 | Requested SAS token for Power BI storage | | |
 | Restored Power BI workspace | | |
@@ -450,8 +441,8 @@ The following operations are available in both the audit and activity logs.
 | Retrieved list of Power BI gateway installer principals | | |
 | Retrieved member status of Power BI gateway cluster | | |
 | Retrieved multiple Power BI gateway clusters | | |
-| Retrieved multiple Power BI goal values | | |
-| Retrieved multiple Power BI scorecards | | |
+| Retrieved multiple Power BI goal values | GetGoalValues | |
+| Retrieved multiple Power BI scorecards | GetScorecards | |
 | Retrieved Power BI app users | | |
 | Retrieved Power BI apps | | |
 | Retrieved Power BI apps for user | | |
@@ -472,19 +463,19 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI gateway tenant key | | |
 | Retrieved Power BI gateway tenant policy | | |
 | Retrieved Power BI gateways for user | | |
-| Retrieved Power BI goal | | |
-| Retrieved Power BI goal value | | |
+| Retrieved Power BI goal | GetGoal | |
+| Retrieved Power BI goal value | GetGoalValue | |
 | Retrieved Power BI group users | | |
 | Retrieved Power BI groups for user | | |
 | Retrieved Power BI imports | | |
-| Retrieved Power BI refresh history | | |
+| Retrieved Power BI refresh history | GetRefreshHistory | |
 | Retrieved Power BI refreshable by ID | | |
 | Retrieved Power BI refreshables | | |
 | Retrieved Power BI refreshables for capacity | | |
 | Retrieved Power BI report users | | |
 | Retrieved Power BI reports for user | | |
-| Retrieved Power BI scorecard | | |
-| Retrieved Power BI scorecard by using report ID | | |
+| Retrieved Power BI scorecard | GetScorecard | |
+| Retrieved Power BI scorecard by using report ID | GetScorecardByReportId | |
 | Retrieved Power BI tenant keys | | |
 | Retrieved Power BI workspaces | GetWorkspaces | |
 | Retrieved scan result in Power BI tenant | | |
@@ -493,51 +484,44 @@ The following operations are available in both the audit and activity logs.
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | | |
 | Rotated Power BI gateway tenant key | | |
-| [Sensitivity Label Applied](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelApplied                     |                          NOT FOUND                | 
-| [Sensitivity Label Changed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelChanged                     | NOT FOUND                              |
-| [Sensitivity Label Removed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelRemoved                     | NOT FOUND                                        |
 | Sent a scan request in Power BI tenant | | |
-| Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
-| Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
-| Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
-| Shared Power BI dashboard                         | ShareDashboard                              |                                          |
-| Shared Power BI dataset | | |
-| Shared Power BI report                            | ShareReport                                 |                                          |
-| Started Power BI extended trial                   | OptInForExtendedProTrial                    | Not currently used                       |
-| Started Power BI trial                            | OptInForProTrial                            |                                          |
+| Set dataflow storage location for a workspace   | SetDataflowStorageLocationForWorkspace      | |
+| Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |     |
+| Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |     |
+| Shared Power BI dashboard     | ShareDashboard            |           |
+| Shared Power BI dataset | ShareDataset | |
+| Shared Power BI report    | ShareReport    |                                          |
+| Started Power BI extended trial       | OptInForExtendedProTrial         | Not currently used               |
+| Started Power BI trial       | OptInForProTrial        |      |
 | Tested Power BI gateway datasource connection with single sign-on | | |
-| Took over a Power BI datasource                   | TakeOverDatasource                          |                                          |
-| Took over Power BI dataset                        | TakeOverDataset                             |                                          |
-| Took over a Power BI dataflow                     | TookOverDataflow                             |                                          |
-| Took ownership of Power BI dataflow | | |
-| Unpublished Power BI app                          | UnpublishApp                                |                                          |
+| Took over a Power BI datasource  | TakeOverDatasource          |   |
+| Took over Power BI dataset     | TakeOverDataset                |          |
+| Took ownership of Power BI dataflow | TookOverDataflow| |
+| Unpublished Power BI app      | UnpublishApp      |     |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
-| Updated an organizational custom visual                     | UpdateOrganizationalGalleryItem                   |                                          |
-| Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
-| Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
+| Updated an organizational custom visual    | UpdateOrganizationalGalleryItem                |   |
+| Updated capacity admin    | UpdateCapacityAdmins                        |          |
+| Updated capacity display name     | UpdateCapacityDisplayName                   |    |
 | Updated capacity custom settings | | |
 | Updated credentials for Power BI gateway cluster | | |
-| Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
-| Updated deployment pipeline access   | UpdateAlmPipelineAccess |                                          |
-| Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |                                          |
-| Updated featured tables | | |
-| Updated installed Power BI template app parameters | UpdateInstalledTemplateAppParameters | NOT FOUND
-| Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
+| Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |    |
+| Updated deployment pipeline access   | UpdateAlmPipelineAccess |       |
+| Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |   |
+| Updated featured tables | UpdateFeaturedTables <sup>3</sup> | |
+| Updated organization's Power BI settings   | UpdatedAdminFeatureSwitch      |    |
 | Updated parameters for installed Power BI template app | | |
 | Updated Power BI access request settings | | |
-| Updated Power BI app                              | UpdateApp                                   |                                          |
-| Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
-| Updated Power BI dataset data sources             | UpdateDatasources                           |                                          |
-| Updated Power BI dataset parameters               | UpdateDatasetParameters                     |                                          |
-| Updated Power BI discoverable model settings | | |
+| Updated Power BI app   | UpdateApp     |       |
+| Updated Power BI dataflow    | UpdateDataflow     |    |
+| Updated Power BI dataset data sources   | UpdateDatasources  |   |
+| Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
+| Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
 | Updated Power BI gateway data source credentials | | |
-| Updated Power BI email subscription               | UpdateEmailSubscription                     |                                          |
-| Updated Power BI folder                           | UpdateFolder                                |                                          |
-| Updated Power BI folder access                    | UpdateFolderAccess                          |                                          |
+| Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
+| Updated Power BI folder                           | UpdateFolder                                |    |
+| Updated Power BI folder access                    | UpdateFolderAccess                          |     |
 | Updated Power BI gateway cluster datasource | | |
-| Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
-| Updated Power BI template app settings | UpdateTemplateAppSettings | NOT FOUND
-| Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions | NOT FOUND
+| Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |         |
 | Updated Power BI workspace | | |
 | Updated Power BI workspace access | | |
 | Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
@@ -545,13 +529,13 @@ The following operations are available in both the audit and activity logs.
 | Updated the Power BI datasource | | |
 | Updated settings for Power BI template app | | |
 | Updated testing permissions for Power BI template app | | |
-| Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
-| Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
+| Viewed Power BI dashboard    | ViewDashboard     |      |
+| Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | | | 
-| Viewed Power BI report                            | ViewReport                                  | Also generated per page when exporting a report|
-| Viewed Power BI tile                              | ViewTile                                    |                                          |
-| Viewed Power BI usage metrics                     | ViewUsageMetrics                            |                                          |
-|                                                   |                                             |                                          |
+| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report|
+| Viewed Power BI tile       | ViewTile      |     |
+| Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
+|   |  |   |
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
