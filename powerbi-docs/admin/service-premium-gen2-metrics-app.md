@@ -151,7 +151,7 @@ This page provides a help summary for each one of the Gen2 metrics app pages. At
 
 * The app only displays memory measurements and performance breakdown for datasets.
 
-* The app only supports monitoring datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](./../connect-data/desktop-report-lifecycle-datasets) use *Azure Analysis Services*.
+* The app only supports monitoring datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](./../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
 
 
 * The Refresh page shown in the app doesn't work yet.
