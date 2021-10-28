@@ -144,6 +144,33 @@ When you use stream data from Event Hubs or IoT Hub, you have access to the foll
 
 Neither of these fields will appear in the input preview. You need to add them manually.
 
+### Blob storage 
+
+Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data. 
+
+We can use Azure Blobs as a streaming/reference input. Streaming blobs are generally checked every second for updates. Unlike a streaming blob, a reference blob is only loaded at the beginning of the refresh. It is static data that isn’t expected to change and the recommended [limit](/azure/stream-analytics/stream-analytics-use-reference-data#size-limitation) for which is 50MB or less.  
+
+Reference blobs are expected to be used alongside streaming sources (eg. Through a JOIN). Hence, a streaming dataflow with a reference blob must also have a streaming source.  
+
+The configuration for Azure Blobs is slightly different to that of an Azure Event Hub node. To find your Azure Blob connection string follow the directions under the 'View account access keys’ section of this article [Manage account access keys - Azure Storage](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).  
+
+:::image type="content" source="media/dataflows-streaming/streaming-blob-editor-box.png" alt-text="Streaming blob editor box.":::
+
+Once you’ve entered the Blob connection string, you will also need to enter the name of your container as well as the path pattern within your directory to access the files you want to set as the source for your dataflow.  
+
+For streaming blobs, the directory path pattern is expected to be a dynamic value. It is required for the date to be a part of the filepath for the blob – referenced as {date}. Furthermore, an asterisk (*) in the path pattern – eg. {date}/{time}/*.json will not be supported.  
+
+For example, if you have a blob called ExampleContainer within which you are storing nested .json files – where the first level is the date of creation and the second level is the hour of creation (eg. 2021-10-21/16), then your Container input would be “ExampleContainer”, the Directory path pattern would be “{date}/{time}” where you could modify the date and time pattern.  
+
+:::image type="content" source="media/dataflows-streaming/blob-example-naming-patterns.png" alt-text="Blob example naming patterns.":::
+
+After your blob is connected to the endpoint, all functionality for selecting, adding, autodetecting, and editing fields coming in from Azure Blob is the same as in Event Hubs. You can also edit the credentials by selecting the gear icon. 
+
+Often, when working with real time data, data will be condensed, and Identifiers are used to represent the object. A possible use case for blobs could also be as reference data for your streaming sources. Reference data allows you to join static data to streaming data to enrich your streams for analysis. Let's go through a quick example of when this would be helpful. Imagine you install sensors at different department stores to measure how many people are entering the store at a given time. Usually, the sensor ID needs to be joined onto a static table to indicate which department store and which location the sensor is located at. Now with reference data, it is possible to join this data during the ingestion phase to make it easy to see which store has the highest output of users. 
+
+> [!NOTE]
+> A Streaming Dataflows job pulls data from Azure Blob storage or ADLS Gen2 input every second if the blob file is available. If the blob file is unavailable, there is an exponential backoff with a maximum time delay of 90 seconds. 
+
 ### Data types
 
 The available data types for streaming dataflows fields are:
