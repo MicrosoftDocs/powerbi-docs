@@ -154,7 +154,7 @@ Reference blobs are expected to be used alongside streaming sources (eg. Through
 
 The configuration for Azure Blobs is slightly different to that of an Azure Event Hub node. To find your Azure Blob connection string follow the directions under the 'View account access keys’ section of this article [Manage account access keys - Azure Storage](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).  
 
-![Streaming blob editor box.](media/dataflows-streaming/streaming-blob-editor-box.png)
+:::image type="content" source="media/dataflows-streaming/streaming-blob-editor-box.png" alt-text="Streaming blob editor box.":::
 
 Once you’ve entered the Blob connection string, you will also need to enter the name of your container as well as the path pattern within your directory to access the files you want to set as the source for your dataflow.  
 
@@ -162,7 +162,7 @@ For streaming blobs, the directory path pattern is expected to be a dynamic valu
 
 For example, if you have a blob called ExampleContainer within which you are storing nested .json files – where the first level is the date of creation and the second level is the hour of creation (eg. 2021-10-21/16), then your Container input would be “ExampleContainer”, the Directory path pattern would be “{date}/{time}” where you could modify the date and time pattern.  
 
-![Blob example naming patterns.](media/dataflows-streaming/blob-example-naming-patterns.png)
+:::image type="content" source="media/dataflows-streaming/blob-example-naming-patterns.png" alt-text="Blob example naming patterns.":::
 
 After your blob is connected to the endpoint, all functionality for selecting, adding, autodetecting, and editing fields coming in from Azure Blob is the same as in Event Hubs. You can also edit the credentials by selecting the gear icon. 
 
