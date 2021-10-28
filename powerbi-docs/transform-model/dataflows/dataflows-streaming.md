@@ -154,8 +154,22 @@ Reference blobs are expected to be used alongside streaming sources (eg. Through
 
 The configuration for Azure Blobs is slightly different to that of an Azure Event Hub node. To find your Azure Blob connection string follow the directions under the 'View account access keys’ section of this article [Manage account access keys - Azure Storage](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).  
 
-![image](https://user-images.githubusercontent.com/92886975/139342980-659da902-b5b3-437a-860f-ec5e7bef9758.png)
+![Streaming blob editor box.](media/dataflows-streaming/streaming-blob-editor-box.png)
 
+Once you’ve entered the Blob connection string, you will also need to enter the name of your container as well as the path pattern within your directory to access the files you want to set as the source for your dataflow.  
+
+For streaming blobs, the directory path pattern is expected to be a dynamic value. It is required for the date to be a part of the filepath for the blob – referenced as {date}. Furthermore, an asterisk (*) in the path pattern – eg. {date}/{time}/*.json will not be supported.  
+
+For example, if you have a blob called ExampleContainer within which you are storing nested .json files – where the first level is the date of creation and the second level is the hour of creation (eg. 2021-10-21/16), then your Container input would be “ExampleContainer”, the Directory path pattern would be “{date}/{time}” where you could modify the date and time pattern.  
+
+![Blob example naming patterns.](media/dataflows-streaming/blob-example-naming-patterns.png)
+
+After your blob is connected to the endpoint, all functionality for selecting, adding, autodetecting, and editing fields coming in from Azure Blob is the same as in Event Hubs. You can also edit the credentials by selecting the gear icon. 
+
+Often, when working with real time data, data will be condensed, and Identifiers are used to represent the object. A possible use case for blobs could also be as reference data for your streaming sources. Reference data allows you to join static data to streaming data to enrich your streams for analysis. Let's go through a quick example of when this would be helpful. Imagine you install sensors at different department stores to measure how many people are entering the store at a given time. Usually, the sensor ID needs to be joined onto a static table to indicate which department store and which location the sensor is located at. Now with reference data, it is possible to join this data during the ingestion phase to make it easy to see which store has the highest output of users. 
+
+> [!NOTE]
+> A Streaming Dataflows job pulls data from Azure Blob storage or ADLS Gen2 input every second if the blob file is available. If the blob file is unavailable, there is an exponential backoff with a maximum time delay of 90 seconds. 
 
 ### Data types
 
