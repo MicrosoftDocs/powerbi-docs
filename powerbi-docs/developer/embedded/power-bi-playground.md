@@ -1,5 +1,5 @@
 ---
-title: Power BI embedded analytics playground explained as part of Power BI embedded analytics
+title: What is the Power BI embedded analytics playground
 description: Learn about the Power BI Embedded analytics playground offering in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.custom: intro-overview
 ---
 
 # What is the Power BI embedded analytics playground?
 
-The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics.
+The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It’s also where you can keep up with all the new features and updates of Power BI embedded.
 
 :::image type="content" source="media/power-bi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
 
