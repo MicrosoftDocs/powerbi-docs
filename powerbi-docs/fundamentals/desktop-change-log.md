@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/22/2021
+ms.date: 10/28/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,22 @@ ms.date: 10/22/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## October 2021 QFE 2
+
+*Version: 2.98.1004.0, Released: October 28, 2021*
+
+Bug fixes/improvements:
+- Fix for the progress dialog: now Import/Refresh progress bar will be shown as expected.
+- Formula bar fixes: 
+   - "best" available list will be shown as the suggestion list;
+   - the parameter hints intellisense widget will cover function contents for multi-line measures; 
+   - DAX intellisense service is updated to set the right ui culture and respect localized DAX separate options; 
+   - the parameter hints will be shown when a suggestion is accepted;
+   - error won't be thrown for table names that start with "'";
+   - few icons are added to the suggestions list to make the suggestion clear and avoid confusion;
+   - missing function parameter information is added for some DAX functions and now intellisense works for them;
+   - the latest icon files will be shown for variable and enum formula bar icons.
 
 ## October 2021 QFE 1
 
