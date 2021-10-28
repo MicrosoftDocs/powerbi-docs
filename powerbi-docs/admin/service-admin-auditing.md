@@ -290,8 +290,8 @@ The following operations are available in both the audit and activity logs.
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|
 | Added data source to Power BI gateway   | AddDatasourceToGateway |     |
-| Added external resource | | |
-| Added link to external resource | | |
+| Added external resource | AddExternalResource | |
+| Added link to external resource | AddExternalResourceLink | |
 | Added Power BI folder access  | AddFolderAccess     | Not currently used      |
 | Added Power BI group members       | AddGroupMembers     |    |
 | Added user to Power BI gateway cluster | | |
@@ -311,7 +311,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
 | [Changed sensitivity label for Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | | 
-| Connected to Power BI dataset from external app | | |
+| Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
 | Created a Power BI scorecard goal | CreateGoal | |
@@ -324,7 +324,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI dashboard    | CreateDashboard  |       |
 | Created Power BI dataflow      | CreateDataflow            |                        |
 | Created Power BI dataset         | CreateDataset          |           |
-| Created Power BI dataset from external app | | |
+| Created Power BI dataset from external app | CreateDatasetFromExternalApplication | |
 | Created Power BI email subscription   | CreateEmailSubscription       |            |
 | Created Power BI folder   | CreateFolder           |              |
 | Created Power BI gateway        | CreateGateway     |              |
@@ -341,14 +341,14 @@ The following operations are available in both the audit and activity logs.
 | Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem               |        |
 | Deleted deployment pipeline      | DeleteAlmPipeline     |   |
 | Deleted current value connection of Power BI goal | | |
-| Deleted link to external resource | | |
+| Deleted link to external resource | DeleteExternalResourceLink | |
 | Deleted member of Power BI gateway cluster | | |
 | Deleted organizational Power BI content pack   | DeleteOrgApp     |       |
 | Deleted Power BI comment   | DeleteComment      |      |
 | Deleted Power BI dashboard      | DeleteDashboard       | Not currently used     |
 | Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
 | Deleted Power BI dataset     | DeleteDataset         |         |
-| Deleted Power BI dataset from external app | | |
+| Deleted Power BI dataset from external app | DeleteDatasetFromExternalApplication | |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
 | Deleted Power BI goal | DeleteGoal | |
@@ -368,13 +368,13 @@ The following operations are available in both the audit and activity logs.
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
 | Discovered Power BI dataset data sources      | GetDatasources       | |
 | Downloaded Power BI report     | DownloadReport                   |       |
-| Edited Power BI app endorsement | | |
+| Edited Power BI app endorsement | EditContentProviderProperties | |
 | Edited Power BI certification permission    | EditCertificationPermission    | Not currently used    |
 | Edited Power BI dashboard      | EditDashboard        | Not currently used       |
 | Edited Power BI dataflow endorsement | EditDataflowProperties | |
 | Edited Power BI dataset    | EditDataset         |       |
 | Edited Power BI dataset endorsement | EditDatasetProperties | |
-| Edited Power BI dataset from external app | | |
+| Edited Power BI dataset from external app | EditDatasetFromExternalApplication | |
 | Edited Power BI dataset properties    | EditDatasetProperties     |  |
 | Edited Power BI report   | EditReport    |        |
 | Edited Power BI report endorsement | EditReportProperties | |
@@ -389,7 +389,7 @@ The following operations are available in both the audit and activity logs.
 | Generated Power BI dataflow SAS token    | GenerateDataflowSasToken   |  |
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
 | Generate screenshot     | GenerateScreenshot |   |
-| Get Power BI group users | | |
+| Get Power BI group users | GetGroupUsers | |
 | Imported file to Power BI   | Import   |           |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI goal | UpsertGoalCurrentValueConnection | |
@@ -399,7 +399,7 @@ The following operations are available in both the audit and activity logs.
 | Installed Power BI app    | InstallApp     |       |
 | Installed Power BI template app | InstallTemplateApp | |
 | Mapped user principal names for tenant | | |
-| Migrated dataflow storage location | | |
+| Migrated dataflow storage location | MigratedDataflowStorageLocation | |
 | Migrated workspace to a capacity    | MigrateWorkspaceIntoCapacity   |   |
 | Patched Power BI goal | PatchGoal | |
 | Patched Power BI goal value | PatchGoalValue | |
@@ -408,7 +408,7 @@ The following operations are available in both the audit and activity logs.
 | Posted Power BI comment     | PostComment  | |
 | Printed Power BI Dashboard | PrintDashboard  |    |
 | Printed Power BI report page   | PrintReport      |    |
-| Promoted Power BI template app | | |
+| Promoted Power BI template app | PromoteTemplateAppPackage | |
 | Published Power BI report to web     | PublishToWebReport <sup>2</sup>       |      |
 | Ran Power BI email subscription | RunEmailSubscription | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault    |    |
@@ -422,69 +422,70 @@ The following operations are available in both the audit and activity logs.
 | Removed user from Power BI gateway cluster datasource | | |
 | Removed workspace from a capacity    | RemoveWorkspacesFromCapacity  |  |
 | Renamed Power BI dashboard   | RenameDashboard   |     |
-| Requested account key for Power BI storage | | |
+| Requested account key for Power BI storage | AcquireStorageAccountKey | |
 | Requested Power BI dataflow refresh   | RequestDataflowRefresh       | Not currently used      |
 | Requested Power BI dataset refresh   | RefreshDataset     |       |
-| Requested Power BI dataset refresh from external app | | |
-| Requested SAS token for Power BI storage | | |
+| Requested Power BI dataset refresh from external app | RefreshDatasetFromExternalApplication | |
+| Requested SAS token for Power BI storage | AcquireStorageSASFromExternalApplication | |
 | Restored Power BI workspace | RestoreWorkspace | |
 | Retrieved all Power BI gateway cluster datasources | | |
 | Retrieved all supported datasources for Power BI gateway cluster | | |
 | Retrieved allowed Power BI gateway regions | | |
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
-| Retrieved data sources from Power BI dataset | | |
-| Retrieved data sources from Power BI dataflow | | |
+| Retrieved data sources from Power BI dataset | GetDatasetDatasourcesAsAdmin | |
+| Retrieved data sources from Power BI dataflow | GetDataflowDatasourcesAsAdmin | |
 | Retrieved goals of Power BI scorecard | GetGoal | |
-| Retrieved links between datasets and dataflows | | |
+| Retrieved links between datasets and dataflows |GetDatasetToDataflowsLinksAsAdmin | |
 | Retrieved list of datasource users for Power BI gateway cluster | | |
-| Retrieved list of modified workspaces in Power BI tenant | | |
+| Retrieved list of modified workspaces in Power BI tenant | GetModifiedWorkspacesAPI | |
 | Retrieved list of Power BI gateway installer principals | | |
 | Retrieved member status of Power BI gateway cluster | | |
 | Retrieved multiple Power BI gateway clusters | | |
 | Retrieved multiple Power BI goal values | GetGoalValues | |
 | Retrieved multiple Power BI scorecards | GetScorecards | |
-| Retrieved Power BI app users | | |
-| Retrieved Power BI apps | | |
-| Retrieved Power BI apps for user | | |
-| Retrieved Power BI capacities for user | | |
-| Retrieved Power BI capacity users | | |
-| Retrieved Power BI dashboards | | |
-| Retrieved Power BI dashboard tiles | | |
-| Retrieved Power BI dashboard users | | |
-| Retrieved Power BI dashboards for user | | |
-| Retrieved Power BI dataflows | | |
-| Retrieved Power BI dataflows for user | | |
-| Retrieved Power BI datasets | | |
-| Retrieved Power BI datasets for user | | |
-| Retrieved Power BI data sources for user | | |
+| Retrieved Power BI app users | GetAppUsersAsAdmin | |
+| Retrieved Power BI apps | GetAppsAsAdmin | |
+| Retrieved Power BI apps for user | GetUserAppsAsAdmin | |
+| Retrieved Power BI capacities for user | GetUserCapacitiesAsAdmin | |
+| Retrieved Power BI capacity users | GetCapacityUsersAsAdmin | |
+| Retrieved Power BI dashboards | GetDashboardsAsAdmin | |
+| Retrieved Power BI dashboard tiles | GetDashboardTilesAsAdmin | |
+| Retrieved Power BI dashboard users | GetDashboardUsersAsAdmin | |
+| Retrieved Power BI dashboards for user | GetUserDashboardsAsAdmin | |
+| Retrieved Power BI dataflows | GetDataflowsAsAdmin | |
+| Retrieved Power BI dataflows for user | GetUserDataflowsAsAdmin | |
+| Retrieved Power BI datasets | GetDatasetsAsAdmin | |
+| Retrieved Power BI datasets for user | GetUserDatasetsAsAdmin  | |
+| Retrieved Power BI data sources for user | GetUserDatasourcesAsAdmin | |
 | Retrieved Power BI gateway cluster datasource | | |
 | Retrieved Power BI gateway cluster datasources | | |
-| Retrieved Power BI gateway datasource users | | |
+| Retrieved Power BI gateway datasource users | GetDatasourceUsersAsAdmin | |
 | Retrieved Power BI gateway tenant key | | |
 | Retrieved Power BI gateway tenant policy | | |
-| Retrieved Power BI gateways for user | | |
+| Retrieved Power BI gateway users | GetGatewayUsersAsAdmin |  |
+| Retrieved Power BI gateways for user | GetUserGatewaysAsAdmin | |
 | Retrieved Power BI goal | GetGoal | |
 | Retrieved Power BI goal value | GetGoalValue | |
-| Retrieved Power BI group users | | |
-| Retrieved Power BI groups for user | | |
-| Retrieved Power BI imports | | |
+| Retrieved Power BI group users | GetGroupUsersAsAdmin | |
+| Retrieved Power BI groups for user | GetUserGroupsAsAdmin | |
+| Retrieved Power BI imports | GetImportsAsAdmin | |
 | Retrieved Power BI refresh history | GetRefreshHistory | |
-| Retrieved Power BI refreshable by ID | | |
-| Retrieved Power BI refreshables | | |
-| Retrieved Power BI refreshables for capacity | | |
-| Retrieved Power BI report users | | |
-| Retrieved Power BI reports for user | | |
+| Retrieved Power BI refreshable by ID | GetRefreshablesForRefreshIdAsAdmin | |
+| Retrieved Power BI refreshables | GetRefreshablesAsAdmin | |
+| Retrieved Power BI refreshables for capacity | GetRefreshablesForCapacityAsAdmin | |
+| Retrieved Power BI report users | GetReportUsersAsAdmin | |
+| Retrieved Power BI reports for user | GetUserReportsAsAdmin | |
 | Retrieved Power BI scorecard | GetScorecard | |
 | Retrieved Power BI scorecard by using report ID | GetScorecardByReportId | |
-| Retrieved Power BI tenant keys | | |
+| Retrieved Power BI tenant keys | GetTenantKeysAsAdmin | |
 | Retrieved Power BI workspaces | GetWorkspaces | |
-| Retrieved scan result in Power BI tenant | | |
+| Retrieved scan result in Power BI tenant | GetWorkspacesInfoResult | |
 | Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset |
 | Retrieved status of Power BI gateway cluster | | |
 | Retrieved status of Power BI gateway cluster datasource | | |
-| Retrieved upstream dataflows from Power BI dataflow | | |
+| Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |
 | Rotated Power BI gateway tenant key | | |
-| Sent a scan request in Power BI tenant | | |
+| Sent a scan request in Power BI tenant | GetWorkspacesInfoAPI | |
 | Set dataflow storage location for a workspace   | SetDataflowStorageLocationForWorkspace      | |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |     |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |     |
@@ -502,21 +503,21 @@ The following operations are available in both the audit and activity logs.
 | Updated an organizational custom visual    | UpdateOrganizationalGalleryItem                |   |
 | Updated capacity admin    | UpdateCapacityAdmins                        |          |
 | Updated capacity display name     | UpdateCapacityDisplayName                   |    |
-| Updated capacity custom settings | | |
+| Updated capacity custom settings | UpdateCapacityCustomSettings | |
 | Updated credentials for Power BI gateway cluster | | |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |    |
 | Updated deployment pipeline access   | UpdateAlmPipelineAccess |       |
 | Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |   |
 | Updated featured tables | UpdateFeaturedTables <sup>3</sup> | |
 | Updated organization's Power BI settings   | UpdatedAdminFeatureSwitch      |    |
-| Updated parameters for installed Power BI template app | | |
+| Updated parameters for installed Power BI template app | UpdateInstalledTemplateAppParameters | |
 | Updated Power BI access request settings | | |
 | Updated Power BI app   | UpdateApp     |       |
 | Updated Power BI dataflow    | UpdateDataflow     |    |
 | Updated Power BI dataset data sources   | UpdateDatasources  |   |
 | Updated Power BI dataset parameters    | UpdateDatasetParameters     |    |
 | Updated Power BI discoverable model settings | UpdateDiscoverableModelSettings | Generated when a report is set to feature on home |
-| Updated Power BI gateway data source credentials | | |
+| Updated Power BI gateway data source credentials | UpdateDatasourceCredentials | |
 | Updated Power BI email subscription               | UpdateEmailSubscription                     |     |
 | Updated Power BI folder                           | UpdateFolder                                |    |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |     |
@@ -531,7 +532,7 @@ The following operations are available in both the audit and activity logs.
 | Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
 | Viewed Power BI dashboard    | ViewDashboard     |      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
-| Viewed Power BI metadata | | | 
+| Viewed Power BI metadata | ViewMetadata | | 
 | Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report|
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
