@@ -1,5 +1,5 @@
 ---
-title: What is Power BI embedded analytics playground
+title: What is the Power BI embedded analytics playground
 description: Learn about the Power BI Embedded analytics playground offering in Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
