@@ -72,8 +72,20 @@ sections:
           >[!NOTE]
           >When you create a workspace with a PPU, only other PPU users will be able to access the workspace and consume its content.
           
-  - name: Technical
+  - name: Technical  
     questions:
+      - question: |
+          How do I reestablish connections after deployment?
+        answer: |
+          In a full pipeline, after you unassign a workspace from a stage and then deploy to it, deployment pipelines reestablishes the connections between Power BI items in the source stage you deployed from and the target stage. However, sometimes deployment pipelines cannot reestablish the Power BI connections between items in the source and target stages. This can happen for example, when you accidentally delete an item. To reestablish these connections, unassign and reassign the same workspace in the target stage.
+
+      - question: |
+          Why am I getting the 'workspace includes unsupported items' error message when I assign a workspace?
+        answer: |
+          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. 
+          
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/unsupported-items-error.png" alt-text="A screenshot of the workspace includes unsupported items error message in deployment pipelines":::
+      
       - question: |
           Why can't I see all my workspaces when I try to assign a workspace to a pipeline?
         answer: |
@@ -215,18 +227,6 @@ sections:
           
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
           
-      - question: |
-          How do I reestablish connections after reassigning a workspace to the test stage?
-        answer: |
-          In a full pipeline, after you unassign a workspace from the *test* stage and then deploy from the *development* or *production* stages to the *test* stage, deployment pipelines reestablishes the connections between Power BI items in the stage you deployed from and the *test* stage. However, in such cases deployment pipelines cannot reestablish the Power BI item's connections between the *test* stage and the stage you didn't deploy from. To reestablish these connections, unassign and reassign the same workspace in the *test* stage.
-
-      - question: |
-          Why am I getting the 'workspace includes unsupported items' error message when I assign a workspace?
-        answer: |
-          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. 
-          
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/unsupported-items-error.png" alt-text="A screenshot of the workspace includes unsupported items error message in deployment pipelines":::
-  
       - question: |
           How do I resolve a source and target dataset format version mismatch error?
         answer: |
