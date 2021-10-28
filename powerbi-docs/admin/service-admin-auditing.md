@@ -191,7 +191,7 @@ You can search the logs by date range using the **Start date** and **End date** 
 
 You'll receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
-![Screenshot of the Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
+  :::image type="content" source="media/service-admin-auditing/search-audit-log-by-date.png" alt-text="Screenshot of the Audit log search with Start Date and End Date options called out." :::
 
 ### Search the audit logs by users
 
