@@ -299,7 +299,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
 | Analyzed Power BI report    | AnalyzeInExcel   | |
-| [Applied sensitivity label to Power BI artifact]((service-security-sensitivity-label-audit-schema.md)) | SensitivityLabelApplied | |
+| [Applied sensitivity label to Power BI artifact]((service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
