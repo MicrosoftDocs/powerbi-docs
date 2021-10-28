@@ -25,7 +25,7 @@ Bug fixes/improvements:
 - Formula bar fixes: 
    - "best" available list will be shown as the suggestion list;
    - the parameter hints intellisense widget will cover function contents for multi-line measures; 
-   - DAX intellisense service is updated to set the right ui culture and respect localized DAX separate options; 
+   - DAX intellisense service is updated to set the right UI culture and respect localized DAX separate options; 
    - the parameter hints will be shown when a suggestion is accepted;
    - error won't be thrown for table names that start with "'";
    - few icons are added to the suggestions list to make the suggestion clear and avoid confusion;
