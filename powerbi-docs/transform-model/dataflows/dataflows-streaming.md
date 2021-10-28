@@ -144,6 +144,19 @@ When you use stream data from Event Hubs or IoT Hub, you have access to the foll
 
 Neither of these fields will appear in the input preview. You need to add them manually.
 
+### Blob storage 
+
+Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data. 
+
+We can use Azure Blobs as a streaming/reference input. Streaming blobs are generally checked every second for updates. Unlike a streaming blob, a reference blob is only loaded at the beginning of the refresh. It is static data that isn’t expected to change and the recommended [limit](/azure/stream-analytics/stream-analytics-use-reference-data#size-limitation) for which is 50MB or less.  
+
+Reference blobs are expected to be used alongside streaming sources (eg. Through a JOIN). Hence, a streaming dataflow with a reference blob must also have a streaming source.  
+
+The configuration for Azure Blobs is slightly different to that of an Azure Event Hub node. To find your Azure Blob connection string follow the directions under the 'View account access keys’ section of this article [Manage account access keys - Azure Storage](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).  
+
+![image](https://user-images.githubusercontent.com/92886975/139342980-659da902-b5b3-437a-860f-ec5e7bef9758.png)
+
+
 ### Data types
 
 The available data types for streaming dataflows fields are:
