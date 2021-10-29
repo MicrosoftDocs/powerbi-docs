@@ -19,24 +19,24 @@ Knowing who is taking what action on which item in Power BI can be critical in h
 ## Choosing a log source
 The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
 
-- The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array)
-- You don't need to be assigned the global administrator role in Microsoft 365 to access the Power BI Activity Log
+- The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array).
+- The global administrator role isn't needed to access the Power BI Activity Log.
 
 The differences between log sources are summarized in the following table.
 
 | **Unified audit log** | **Power BI activity log** |
 | --- | --- |
-| Includes events from SharePoint Online, Exchange Online, Dynamics 365, and other services in addition to the Power BI auditing events. | Includes only the Power BI auditing events. |
-| Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins, Power Platform admins, and Power BI service admins have access. |
+| Includes events from Power BI, plus events from SharePoint Online, Exchange Online, Dynamics 365, and other services. | Includes only the Power BI auditing events. |
+| Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins, Power Platform admins, and Power BI admins have access. |
 | Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
-| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins, Power Platform admins, and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins, Power Platform admins, and Power BI admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
-| Retains audit data, even if the tenant is moved to a different Azure region. | Doesn't retain activity data when the tenant is moved to a different Azure region. |
+| Keeps audit data, even if the tenant is moved to a different Azure region. | Doesn't keep activity data when the tenant is moved to a different Azure region. |
 
 
 ## Use the activity log
 
-As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
+Power BI administrators can analyze usage for all Power BI resources at the tenant level by using custom reports that are based on the Power BI activity log. You download the activities by using a REST API or PowerShell cmdlet. Filter activity data by date range, user, and activity type.
 
 > [!NOTE]
 > You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands. 
@@ -45,10 +45,10 @@ As a Power BI service admin, you can analyze usage for all Power BI resources at
 
 ### Activity log requirements
 
-You must meet these requirements to access the Power BI activity log:
+To access the Power BI activity log, you must meet these requirements:
 
-- You must either be a global admin or a Power BI Administrator.
-- You have installed the [Power BI Management cmdlets](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt) locally or use the Power BI Management cmdlets in Azure Cloud Shell.
+- You have to be a global admin or a Power BI Administrator.
+- Install the [Power BI Management cmdlets](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt) locally or use the Power BI Management cmdlets in Azure Cloud Shell.
 
 ### ActivityEvents REST API
 
@@ -58,13 +58,13 @@ You can use an administrative application based on the Power BI REST APIs to exp
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. Call the **ActivityEvents** API again with the continuation token to obtain the next batch of entries, and so forth, until you have retrieved all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
+If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. Call the **ActivityEvents** API again with the continuation token to get the next batch of entries, and so forth, until you've gotten all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-Regardless of the number of entries returned, if the results include a continuation token, make sure you call the API again using that token to retrieve the remaining data, until a continuation token is no longer returned. It can happen that a call even returns a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
+No matter how many entries are returned, if the results include a continuation token, make sure you call the API again using that token to get the rest of the data, until a continuation token is no longer returned. It's possible for a call to return a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
 
 ```
 while(response.ContinuationToken != null)
@@ -139,17 +139,17 @@ $activities[0]
 
 ## Use the audit log
 
-If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft 365 compliance or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
+If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft 365 compliance or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
 You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
 
 ### Audit log requirements
 
-You must meet these requirements to access audit logs:
+Meet these requirements to access audit logs:
 
-- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
+- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups have roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
 
-    To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+    To give non-admin accounts access to the audit log, add the user as a member of one of these role groups. Another option is to create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
     If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
 
@@ -157,13 +157,13 @@ You must meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first make sure to enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
-1. In Power BI, select the **gear icon** in the upper-right corner, then select **Admin portal**.
+1. In Power BI, select **Settings** > **Admin portal**.
 
-   ![Screenshot of the gear drop-down menu with the Admin portal option called out.](media/service-admin-auditing/powerbi-admin.png)
+   ![Screenshot of the settings drop-down menu with the Admin portal option called out.](media/service-admin-auditing/powerbi-admin.png)
 
 1. Select **Audit logs**.
 
@@ -201,7 +201,7 @@ You can search for audit log entries for activities done by specific users. Ente
 
 ### Search the audit logs by file, folder, or site
 
-If you are trying to determine who has accessed a file, folder, or site, on the **Audit** page, enter all or part of a file name, folder name, or URL in the **File, folder, or site** field. Don't use any spaces or special characters. For example, you can enter all or part of the name of a dataset to find who has interacted with it recently.
+If you're trying to determine who accessed a file, folder, or site, on the **Audit** page, enter all or part of a file name, folder name, or URL in the **File, folder, or site** field. Don't use any spaces or special characters. For example, you can enter all or part of the name of a dataset to find who has interacted with it recently.
 
 In the example shown below, the search term "sales" was entered in the **File, folder, or site** field.
 
@@ -225,10 +225,10 @@ The following information is shown for each event returned by the search. Select
 | --- | --- |
 | Date |The date and time (in UTC format) when the event occurred. |
 | IP address |The IP address of the device used for the logged activity. The app displays the IP address in either an IPv4 or IPv6 address format. |
-| User |The user (or service account) who performed the activity. |
-| Activity |The activity performed by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet. |
+| User |The user (or service account) who did the activity. |
+| Activity |The activity done by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet. |
 | Item |The object created or modified because of the corresponding activity. For example, the  viewed or modified file, or the updated user account. Not all activities have a value in this column. |
-| Detail |Additional detail about an activity. Again, not all activities have a value. |
+| Detail |More detail about an activity. Again, not all activities have a value. |
 
 #### View the details for an event
 
@@ -242,7 +242,7 @@ All Power BI entries have a value of 20 for the RecordType property. For informa
 
 To export the Power BI audit log search results to a CSV file, follow these steps.
 
-1. Perform an audit search by following the steps in this article.
+1. Do an audit search by following the steps in this article.
 
 1. On the **Audit search** results page, select the drop-down next to **Export**, then select **Download all results**. The results are saved in CSV format and the file can be found in the user's **Downloads** folder.
 
@@ -287,6 +287,9 @@ For more information on connecting to Exchange Online, see [Connect to Exchange 
 
 The following operations are available in both the audit and activity logs.
 
+> [!NOTE]
+> We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft 365 Compliance, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
+
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|
 | Added data source to Power BI gateway   | AddDatasourceToGateway |     |
@@ -299,7 +302,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
 | Analyzed Power BI report    | AnalyzeInExcel   | |
-| [Applied sensitivity label to Power BI artifact]((service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
+| [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
