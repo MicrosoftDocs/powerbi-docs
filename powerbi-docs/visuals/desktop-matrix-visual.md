@@ -101,6 +101,7 @@ You can also use the **Expand** menu item to control the display further.  For e
 ![Matrix after Expand applied to Proposal](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### Drill down on column headers
+
 Similar to the ability to drill down on rows, you can also drill down on columns. In the following image, there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Region* and *Segment*. As soon as the second field was added to **Columns**, a new dropdown menu displayed on the visual, it currently shows **Rows**.
 
 ![Matrix after second column value added](media/desktop-matrix-visual/power-bi-matrix-row.png)
@@ -153,6 +154,7 @@ If you want to turn subtotals and grand total off, in the format section of the 
 The same process applies for column subtotals.
 
 ## Add conditional icons
+
 Add visual cues to your table or matrix with *conditional icons*. 
 
 In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
@@ -175,12 +177,9 @@ In addition, using Ctrl+Click also works for cross-highlighting. For example, in
 
 Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
-
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the _unformatted_ cell value on your clipboard, you can now paste it into another application.
 
     ![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
-
-
 
 * To copy more than a single cell, select a range of cells or use CTRL to select one or more cells.  **Copy selection** will ensure that measures are formatted according to the column's formatting rules, unlike the unformatted **Copy value** command.
 
@@ -209,6 +208,7 @@ Turn **Web URL** On, and select a field to use as the URL for the column. Once a
 For more information, see [Conditional table formatting](../create-reports/desktop-conditional-table-formatting.md)
 
 ## Shading and font colors with matrix visuals
+
 With the matrix visual, you can apply conditional formatting (colors and shading and data bars) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
 
 To apply conditional formatting, select the matrix visual and open the **Format** pane. Expand the **Conditional formatting** card and for **Background color**, **Font color**, or **Data bars**, turn the slider to **On**. Turning on one of these options displays a link for *Advanced controls*, which lets you customize the colors and values for the color formatting.
@@ -220,20 +220,20 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 ![Data bars pane](media/desktop-matrix-visual/power-bi-data-bars.png)
 
 ## Ragged hierarchy
+
 A ragged hierarchy has levels with no data.  A good example is a company employee matrix. A company has many levels, from CEO on down.  The CEO is the highest level in the hierarchy and reports to no other employees.  Any other company employee, on the other hand, may report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees may have data for one, two, five, or ten levels in the hierarchy. And, for any given employee, there may be no data for particular hierarchy levels.  
 
 ![Matrix visual with ragged hierarchy](media/desktop-matrix-visual/power-bi-ragged-hr.png)
 
 There is currently no way to hide blank rows or identical parent and child values. And you can’t control which levels of the hierarchy can and can’t be expanded. However, there are a few steps you can take to make the visual look more appealing.    
 
-* Turn off stepped layout.  In the Format pane, select **Row headers** > **Turn off stepped layout**.  All the blank values for a hierarchy level will now display in the same row. 
+* Turn off stepped layout. In the Format pane, expand the **Row headers** card and set the **Stepped layout** toggle to **Off**.  All the blank values for a hierarchy level will now display in the same row.
 
+  ![Format pane with Row headers expanded.](media/desktop-matrix-visual/power-bi-stepped-layout.png)
 
-    ![Format pane with Row headers expanded.](media/desktop-matrix-visual/power-bi-stepped-layout.png)
+* Turn off subtotals for the matrix rows and columns. In the Format pane, select **Format** > **Subtotals**.
 
-* Turn off subtotals for the matrix rows and columns.  In the Format pane, select **Format** > **Subtotals**.
-
-    ![Format pane with Subtotals expanded.](media/desktop-matrix-visual/power-bi-subtotal.png)
+  ![Format pane with Subtotals expanded.](media/desktop-matrix-visual/power-bi-subtotal.png)
 
 ## Considerations and troubleshooting
 
