@@ -60,12 +60,7 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 * [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
 
->[!TIP]
->To monitor your Embedded Gen 2 capacity, you can use the [Premium Gen2 Monitoring App](../../admin/service-premium-gen2-metrics-app.md).
-
 ## Known limitations
-
-* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [updates for Premium Gen2](../../admin/service-premium-gen2-what-is.md#updates-for-premium-gen2).
 
 * Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements)
 
