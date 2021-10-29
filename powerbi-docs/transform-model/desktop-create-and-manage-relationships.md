@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/29/2020
+ms.date: 10/29/2021
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
@@ -66,7 +66,7 @@ For more information about when to change cardinality, see [Understanding additi
 ### Cross filter direction
 The **Cross filter direction** option can have one the following settings:
 
-**Both**: For filtering purposes, both tables are treated as if they're a single table. The **Both** setting works well with a single table that has a number of lookup tables that surround it. An example is a sales actuals table with a lookup table for its department. This configuration is often called a star schema configuration (a central table with several lookup tables). However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the **Both** setting. To continue the previous example, in this case, you also have a budget sales table that records target budget for each department. And, the department table is connected to both the sales and the budget table. Avoid the **Both** setting for this kind of configuration.
+**Both**: For filtering purposes, both tables are treated as if they're a single table. The **Both** setting works well with a single table that has many lookup tables that surround it. An example is a sales actuals table with a lookup table for its department. This configuration is often called a star schema configuration (a central table with several lookup tables). However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the **Both** setting. To continue the previous example, in this case, you also have a budget sales table that records target budget for each department. And, the department table is connected to both the sales and the budget table. Avoid the **Both** setting for this kind of configuration.
 
 **Single**: The most common, default direction, which means filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships will have a single direction. 
 
@@ -352,3 +352,64 @@ We can change the active relationship and get **SubmittedBy** instead of **Opene
 Sometimes your model has multiple tables and complex relationships between them. **Relationship** view in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. 
 
 To learn more, see [Work with Relationship view in Power BI Desktop](desktop-relationship-view.md).
+
+
+## Troubleshooting
+
+This section provides guidance and troubleshooting information when working with relationships in Power BI.
+
+### Relationships between fields cannot be determined
+
+Power BI attempts to show relevant data in visuals by inferring the relationships from the model being used. Sometimes such inferences aren't obvious, and you might be surprised to see an error in your visual, indicating there is no relationship between certain columns. 
+ 
+To explain how Power BI determines whether fields are related, let's use an example model to illustrate a few scenarios in the following sections. The following image shows the sample model we'll use in the example scenarios.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-01.png" alt-text="Sample model used in troubleshooting scenarios":::
+
+**Scenario 1: Traditional star schema and no measure constraint provided.** Referring to the sample model in the previous image, let's look first at the right half of the images with the *Vendor - Purchases - Product* tables. This is a traditional star schema with the Fact table (*Purchases*) and two Dimension tables (*Product* and *Vendor*). The relationship between the dimension tables and the fact table is *1 to Many* (one product corresponds to many purchases, one vendor corresponds to many purchases). In this type of schema, we can answer questions like *What sales do we have for product X?* and *What sales do we have for Vendor Y?* and *What products does Vendor Y sell?*
+
+If we want to correlate *Products* and *Vendors*, we can do so by looking at the *Purchases* table to see if there is an entry with the same product and vendor. A sample query might look like the following: 
+
+`Correlate Product[Color] with Vendor[Name] where CountRows(Purchases)>0`
+
+The `where CountRows(Purchases)>0` is an implicit constraint that Power BI would add to ensure relevant data is returned.
+By doing this correlation through the *Purchases* table, we can return pairings of Product-Vendor that have at least one entry in a fact table, pairings that make sense from the data perspective. You can expect any non-sensical combinations of Product-Vendor for which there has never been a sale (which would be useless for analysis) will not be displayed.
+ 
+**Scenario 2: Traditional star schema and measure constraint provided.** In the previous example in Scenario 1, if the user provides a constraint in the form of summarized column (Sum/Average/Count of Purchase Qty, for example) or a model measure (Distinct Count of VendID), Power BI can generate a query in the form of the following: 
+
+`Correlate Product[Color] with Vendor[Name] where MeasureConstraint is not blank`
+
+In such a case, Power BI attempts to return combinations that have meaningful values for the constraint provided by the user (non-blank). Power BI does not need to also add its own implicit constraint of *CountRows(Purchases)>0*, such as what was done like in the previous Scenario 1, because the constraint provided by the user is sufficient.
+
+**Scenario 3: Non-star schema and no measure constraint provided.** In this scenario, we focus our attention to the center of the model, where we have the *Sales - Product - Purchases* tables, where we have one dimension table (*Product*) and two Fact Tables (*Sales*, *Purchases*). Since this is not a star schema, we can't answer the same kind of questions as we had in Scenario 1. Let's say we try to correlate *Purchases* and *Sales*; since *Purchases* has a *Many to 1* relationship with *Product*, and *Product* has a *1 to Many* relationship with *Sales*, *Sales* and *Purchases* are indirectly *Many to Many*. We can link one *Product* to many *Purchases* and one *Product* to many sales, but we cannot link one *Sale* to many *Purchases* or vice versa. We can only link many *Purchases* to many *Sales*.
+
+In this situation, if we try to combine *Purchase[VenID]* and *Sales[CustID]* in a visual, Power BI does not have a concrete constraint it can apply, due to the *Many to Many* relationship between those tables. Though there may custom constraints (not necessarily stemming from the relationships established in the model) that can be applied for various scenarios, Power BI cannot infer a default constraint solely based on the relationships. If Power BI attempted to return all combinations of the two tables, it would create a large cross join and return non-relevant data. Instead of this, Power BI raises an error in the visual, such as the following.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Error dialog when relationship cannot be inferred":::
+
+**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3 and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*) Power BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* is not blank. 
+
+In this case, Power BI respects the user's constraint as being the sole constraint Power BI needs to apply, and return the combinations that produce non-blank values for it. The user has guided Power BI to the scenario it wants, and Power BI applies the guidance.
+
+**Scenario 5: When a measure constraint is provided but it is partially related to the columns.** There are cases where the measure constraint provided by the user is not entirely related to all the columns in the visual. A model measure always relates everything; Power BI treats this as a black box when attempting to find relationships between columns in the visual, and assume the user knows what they are doing by using it. However, summarized columns in the form of *Sum*, *Average*, and similar summaries chosen from the user interface can be related to only a subset of the columns/tables used in the visual based on the relationships of the table to which that column belongs. As such, the constraint applies to some pairings of columns, but not to all, in which case Power BI attempts to find default constraints it can apply for the columns that are not related by the user provided constraint (such as in Scenario 1). If Power BI cannot find any, the following error is returned.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Error dialog when Power BI cannot find default constraints":::
+
+#### Resolving relationship errors
+
+When you see the **Can't determine relationships between the fields** error, you can take the following steps to attempt to resolve the error:
+
+1. Check your model. Is it set up appropriately for the types of questions you want answered from your analysis? Can you change some of the relationships between tables? Can you avoid creating an indirect *Many to Many*?
+    a. Consider converting your reversed *V* shape schema to two tables, and use a direct *Many to Many* relationship between them as described in [apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
+2.	Add a constraint to the visual in the form of a summarized column or a model measure.
+3.	If a summarized column is added and there still is an error, consider using a model measure.
+ 
+
+## Next steps
+
+For more information about models and relationships, see the following articles:
+* [Use composite models in Power BI Desktop](desktop-composite-models.md)
+* [Storage mode in Power BI Desktop](desktop-storage-mode.md)
+* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+* [Power BI data sources](../connect-data/power-bi-data-sources.md)
+
