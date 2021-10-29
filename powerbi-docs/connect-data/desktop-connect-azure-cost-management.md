@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 10/29/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -123,7 +123,8 @@ When the data you selected is loaded, the data tables and fields are shown in th
 
 The following considerations and limitations apply to the Azure Cost Management data connector:
 
-* The Azure Cost Managagement data connector does not work with Office 365 GCC customer accounts.
+* Data row requests exceeding one million rows is not supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
+* The Azure Cost Management data connector does not work with Office 365 GCC customer accounts.
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 
