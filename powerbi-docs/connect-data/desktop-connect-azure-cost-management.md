@@ -31,7 +31,7 @@ To use the **Azure Cost Management connector** in Power BI Desktop, take the fol
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
-4. In the dialog that appears, enter either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**. 
+4. In the dialog that appears, for the **Choose Scope** drop down, use **Manually Input Scope** for **Microsoft Customer Agreements**, or use **Enrollment Number** for **Enterprise Agreements (EA)**. 
 
 
 ## Connect to a Microsoft Customer Agreement account 
