@@ -87,7 +87,7 @@
       items: 
       - name: "Combine files (binaries)"
         href: desktop-combine-binaries.md
-      - name: "Use AI Insights (preview)"
+      - name: "Use AI Insights"
         href: desktop-ai-insights.md        
     - name: Model your data
       items: 
