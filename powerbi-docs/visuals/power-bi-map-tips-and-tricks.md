@@ -8,7 +8,7 @@ ms.custom: video-ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/28/2021
+ms.date: 10/29/2021
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for Power BI map visualizations
@@ -33,11 +33,11 @@ The Power BI service and Power BI Desktop send Bing the geo data it needs to cre
 
 * Filled maps require a field in the **Location** bucket; even if latitude and longitude are provided. Whatever data is in the **Location**, **Latitude**, or **Longitude** bucket is sent to Bing.
   
-    In the example below, the field **Vendor** is being used for geo-coding, so the values in the Vendor column are sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
+    In the example below, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Size** bucket is not sent to Bing.
   
     :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png" alt-text="Sent to Bing Maps.":::
   
-    In this second example below, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Legend** and **Color saturation** buckets is not sent to Bing.
+    In this second example below, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Legend** bucket (and the **Color saturation** bucket when you use a Shape Map in Power BI Desktop) is not sent to Bing.
   
     :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png" alt-text="Filled maps and Bing.":::
 
