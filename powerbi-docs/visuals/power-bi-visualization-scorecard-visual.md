@@ -1,5 +1,5 @@
 ---
-title: Scorcard visual tutorial
+title: Scorecard visual tutorial
 description: 'Create scorecards and goals in Power BI (preview)'
 author: aphilip94
 ms.author: anphil
