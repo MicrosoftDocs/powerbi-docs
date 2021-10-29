@@ -373,7 +373,7 @@ If we want to correlate *Products* and *Vendors*, we can do so by looking at the
 `Correlate Product[Color] with Vendor[Name] where CountRows(Purchases)>0`
 
 The `where CountRows(Purchases)>0` is an implicit constraint that Power BI would add to ensure relevant data is returned.
-By doing this correlation through the *Purchases* table, we can return pairings of Product-Vendor that have at least one entry in a fact table, pairings that make sense from the data perspective. You can expect any non-sensical combinations of Product-Vendor for which there has never been a sale (which would be useless for analysis) will not be displayed.
+By doing this correlation through the *Purchases* table, we can return pairings of Product-Vendor that have at least one entry in a fact table, pairings that make sense from the data perspective. You can expect any nonsensical combinations of Product-Vendor for which there has never been a sale (which would be useless for analysis) will not be displayed.
  
 **Scenario 2: Traditional star schema and measure constraint provided.** In the previous example in Scenario 1, if the user provides a constraint in the form of summarized column (Sum/Average/Count of Purchase Qty, for example) or a model measure (Distinct Count of VendID), Power BI can generate a query in the form of the following: 
 
@@ -400,7 +400,8 @@ In this case, Power BI respects the user's constraint as being the sole constrai
 When you see the **Can't determine relationships between the fields** error, you can take the following steps to attempt to resolve the error:
 
 1. Check your model. Is it set up appropriately for the types of questions you want answered from your analysis? Can you change some of the relationships between tables? Can you avoid creating an indirect *Many to Many*?
-    a. Consider converting your reversed *V* shape schema to two tables, and use a direct *Many to Many* relationship between them as described in [apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
+    
+    Consider converting your reversed *V* shape schema to two tables, and use a direct *Many to Many* relationship between them as described in [apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 2.	Add a constraint to the visual in the form of a summarized column or a model measure.
 3.	If a summarized column is added and there still is an error, consider using a model measure.
  
