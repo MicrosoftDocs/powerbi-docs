@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/27/2021
+ms.date: 10/29/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
@@ -39,8 +39,8 @@ In this example, each row in the matrix visual farthest to the right is showing 
 
 When you look at totals and subtotals, remember that those values are based on the underlying data. They aren't solely based on the visible values.
 
-
 ## Expanding and collapsing row headers
+
 There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you selected, the entire level, or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
 
 ![menu showing Expand and Selection](media/desktop-matrix-visual/power-bi-expand1.png)
@@ -59,6 +59,7 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## Using drill-down actions with the matrix visual
+
 With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
