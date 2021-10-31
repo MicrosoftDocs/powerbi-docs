@@ -23,7 +23,7 @@ Most Power BI report designers who work on business intelligence projects use **
 
 The Power BI service also hosts *paginated reports* in workspaces backed by a Power BI Premium capacity. You create paginated reports with Power BI Report Builder. See [Compare Power BI reports and paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md#compare-power-bi-reports-and-paginated-reports) in the article "What are paginated reports in Power BI Premium?" for more information.
 
-In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows some of the areas where the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to wither the Desktop application or to the Power BI service.  
+In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows some of the areas where the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to the Desktop application or to the Power BI service.  
 
 ![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
