@@ -67,8 +67,8 @@ After creating a pipeline, you need to add the content you want to manage to the
 
 Follow the instructions in the link to [assign a workspace to a newly created pipeline](deployment-pipelines-assign.md#assign-a-workspace-to-a-newly-created-pipeline).
 
-    >[!NOTE]
-    >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
+>[!NOTE]
+>If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
 
 ## Step 3 - Deploy to an empty stage
 

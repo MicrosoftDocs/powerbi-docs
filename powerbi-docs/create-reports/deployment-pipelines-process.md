@@ -342,7 +342,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Downloading a PBIX file after deployment isn't supported.
 
-* For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
+* For a list of workspace limitations, see the [workspace assignment limitations](deployment-pipelines-assign.md#limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 

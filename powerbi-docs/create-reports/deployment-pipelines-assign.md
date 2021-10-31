@@ -33,7 +33,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 To assign a workspace to a pipeline, the pipeline stage you want to assign the workspace to, has to be vacant. If you want to assign a workspace to a pipeline stage that already has another workspace assigned to it, [unassign](#unassign-a-workspace-from-a-pipeline-stage) the current workspace from that stage and then continue with assigning the new workspace.
 
-Before you assign a workspace to a pipeline stage, review the [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations) and make sure that the workspace meets the required conditions.
+Before you assign a workspace to a pipeline stage, review the [limitations](#limitations) section and make sure that the workspace meets the required conditions.
 
 >[NOTE!]
 >Before you assign or unassign a workspace to a pipeline, consider that every time you deploy to a vacant stage, a new workspace is created.

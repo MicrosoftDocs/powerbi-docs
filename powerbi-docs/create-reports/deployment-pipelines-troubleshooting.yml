@@ -104,7 +104,7 @@ sections:
       - question: |
           How can I assign workspaces to all the stages in a pipeline?
         answer: |
-          You can either assign one workspace to your pipeline and then [deploy it across the pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline), or [assign a different workspace to each pipeline stage](deployment-pipelines-assign.md).
+          You can either assign one workspace to your pipeline and then deploy it across the pipeline, or assign a different workspace to each pipeline stage. For more information see [assign a workspace to a deployment pipeline](deployment-pipelines-assign.md.
           
       - question: |
           Why did my first deployment fail?
