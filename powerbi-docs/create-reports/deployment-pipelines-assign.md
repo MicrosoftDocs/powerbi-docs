@@ -16,6 +16,9 @@ Deployment pipelines enables you to assign and unassign workspaces to any stage 
 
 After assigning a workspace to a deployment pipeline stage, if there are any adjacent stages already assigned, deployment pipelines attempts to create the connections between the Power BI items in the adjacent stages.
 
+>[!NOTE]
+>This article describes how to assign and unassign a workspace to a deployment pipeline stage in the Power BI service. You can also perform these functions programmatically, using the [Assign Workspace](/rest/api/power-bi/pipelines/assign-workspace) and [Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) Power BI REST APIs.
+
 ## Assign a workspace to a newly created pipeline
 
 Follow these steps to assign a workspace in a deployment pipeline:
