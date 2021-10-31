@@ -327,6 +327,8 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
+* When using [Gen2](../../admin/service-premium-gen2-what-is.md), the number of Power BI exports is limited to 50 paginated report pages per minute per capacity.
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
