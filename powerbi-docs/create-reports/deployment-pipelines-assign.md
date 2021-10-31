@@ -16,13 +16,27 @@ Deployment pipelines enables you to assign and unassign workspaces to any stage 
 
 After assigning a workspace to a deployment pipeline stage, if there are any adjacent stages already assigned, deployment pipelines attempts to create the connections between the Power BI items in the adjacent stages.
 
-Before you assign or unassign a workspace to a pipeline, consider that every time you deploy to a vacant stage, a new workspace is created.
+## Assign a workspace to a newly created pipeline
 
-## Assign a workspace to a pipeline stage
+Follow these steps to assign a workspace in a deployment pipeline:
+
+1. In the newly created deployment pipeline, select **Assign a workspace**.
+
+2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
+
+    >[!NOTE]
+    >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
+
+3. Select the stage you want to assign the workspace to.
+
+## Assign a workspace to any vacant pipeline stage
 
 To assign a workspace to a pipeline, the pipeline stage you want to assign the workspace to, has to be vacant. If you want to assign a workspace to a pipeline stage that already has another workspace assigned to it, [unassign](#unassign-a-workspace-from-a-pipeline-stage) the current workspace from that stage and then continue with assigning the new workspace.
 
 Before you assign a workspace to a pipeline stage, review the [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations) and make sure that the workspace meets the required conditions.
+
+>[NOTE!]
+>Before you assign or unassign a workspace to a pipeline, consider that every time you deploy to a vacant stage, a new workspace is created.
 
 To assign a workspace to a pipeline stage, follow these steps:
 
@@ -58,7 +72,19 @@ To unassign a workspace from a pipeline stage, follow these steps:
 
 ## Limitations
 
-When assigning a workspace, if a report and a paginated report from an adjacent stage have the same name, the assignment will fail.
+* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+
+* You must be an admin of the workspace.
+
+* The workspace is not assigned to any other pipeline.
+
+* The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
+
+* You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
+
+* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
+
+* When assigning a workspace, if a report and a paginated report from an adjacent stage have the same name, the assignment will fail.
 
 ## Next steps
 

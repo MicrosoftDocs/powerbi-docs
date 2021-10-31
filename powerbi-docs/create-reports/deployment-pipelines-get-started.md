@@ -61,37 +61,14 @@ You can create a pipeline from an existing workspace, providing you're the admin
 >[!NOTE]
 >If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
-## Step 2 - Assign a workspace to a deployment pipeline
+## Step 2 - Assign a workspace
 
 After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
-Follow these steps to assign a workspace in a deployment pipeline:
-
-1. In the newly created deployment pipeline, select **Assign a workspace**.
-
-2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
+Follow the instructions in the link to [assign a workspace to a newly created pipeline](deployment-pipelines-assign.md#assign-a-workspace-to-a-newly-created-pipeline).
 
     >[!NOTE]
     >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
-
-3. Select the stage you want to assign the workspace to.
-
-### Workspace assignment limitations
-
-* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
-
-* You must be an admin of the workspace.
-
-* The workspace is not assigned to any other pipeline.
-
-* The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
-
-* You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
-
-* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
-
->[!NOTE]
->Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
 
 ## Step 3 - Deploy to an empty stage
 
