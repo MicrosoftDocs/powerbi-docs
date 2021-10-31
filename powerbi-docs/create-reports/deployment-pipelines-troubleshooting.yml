@@ -80,11 +80,11 @@ sections:
           In a full pipeline, after you unassign a workspace from a stage and then deploy to it, deployment pipelines reestablishes the connections between Power BI items in the source stage you deployed from and the target stage. However, sometimes deployment pipelines cannot reestablish the Power BI connections between items in the source and target stages. This can happen for example, when you accidentally delete an item. To reestablish these connections, unassign and reassign the same workspace in the target stage.
 
       - question: |
-          Why am I getting the 'workspace includes unsupported items' error message when I assign a workspace?
+          Why am I getting the 'can't assign the workspace' error message when I assign a workspace?
         answer: |
-          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. 
+          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. To resolve this error, change the name of the item that doesn't match the item in the stage you're trying to assign. You can select the links in the error message to open the items in the Power BI service. 
           
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/unsupported-items-error.png" alt-text="A screenshot of the workspace includes unsupported items error message in deployment pipelines":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the can't assign the workspace error message in deployment pipelines":::
       
       - question: |
           Why can't I see all my workspaces when I try to assign a workspace to a pipeline?
@@ -337,7 +337,7 @@ sections:
       - question: |
           Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
         answer: |
-          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages.
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages is required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
 
           
           :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline":::
