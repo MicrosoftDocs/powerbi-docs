@@ -237,7 +237,25 @@ The following composite models connections are not supported:
 
 * Connecting datasets that reside in distinct pipelines.
 
-* Connecting datasets that reside in the same pipeline. 
+* Connecting datasets that reside in the same pipeline.
+
+### Automatic aggregations
+
+[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance. When using automatic aggregations in a pipeline, consider the following:
+
+* After deploying for the first time, you need to manually enable the automatic aggregation.
+
+* The automatic aggregation table needs to be in direct query mode.
+
+* The automatic aggregation tables are created by refreshing the dataset and are only refreshed once a day.
+
+* Each dataset keeps its automatic aggregations after deployment. If you deploy a dataset with an automatic aggregation to a stage that has that dataset with a different automatic aggregation, the automatic aggregation in the target stage will be overwritten by the automatic aggregation from the target stage.
+
+* During deployment, some or all of the auto aggregations might be deleted if they cause an error when items are saved or if they're no longer valid. In such cases there'll be no notification or request for user consent.
+
+### Hybrid tables
+
+Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. After deployment, the target stage will keep its old partitions until it's refreshed.
 
 ## Deploying Power BI apps
 
