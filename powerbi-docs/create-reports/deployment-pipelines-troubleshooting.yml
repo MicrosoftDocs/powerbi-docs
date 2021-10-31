@@ -337,7 +337,7 @@ sections:
       - question: |
           Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
         answer: |
-          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages is required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
 
           
           :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline":::
