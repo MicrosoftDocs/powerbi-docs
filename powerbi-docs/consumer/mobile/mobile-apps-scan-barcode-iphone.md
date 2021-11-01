@@ -50,7 +50,7 @@ On the report's action bar, tap the barcode icon.
 
 Either way, tap the icon to open a small menu with a floating scanner.
 
-![Screenshot showing barcode icon on Power B I report action bar.](media/mobile-apps-scan-barcode-iphone/power-bi-floating-scanner.png)
+![Screenshot showing floating barcode scanner.](media/mobile-apps-scan-barcode-iphone/power-bi-floating-scanner.png)
 
 * Focus the scanner on the new item to change the filter of the report to a different barcode value. 
 * Select **Clear barcode filter** to go back to the unfiltered report.
