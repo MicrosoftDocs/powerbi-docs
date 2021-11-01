@@ -444,6 +444,10 @@
         href: service-goals-create-connected.md
       - name: "Stay on top of your goals"
         href: service-goals-check-in.md        
+      - name: "Set goal-level permissions"
+        href: service-goals-set-permissions.md
+      - name: "Goals and Power Automate"
+        href: service-goals-power-automate.md        
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
