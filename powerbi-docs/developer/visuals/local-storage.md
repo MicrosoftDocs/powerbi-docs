@@ -18,8 +18,7 @@ Local storage is isolated so that each type of visual has its own separate stora
 
 ## How to use local storage
 
-In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally
-and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
+In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
 
 ```typescript
 export class Visual implements IVisual {
