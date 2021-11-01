@@ -18,9 +18,9 @@ Applies to:
 
 QR codes can be used to connect items in the real world directly to relevant BI information. When you scan a QR code that has been created for a Power BI report or dashboard tile, that report or tile will open directly - you won't have to navigate to it or search for it.
 
-Say a colleague has created a QR code for a report or for a tile in a dashboard (using either [the Power BI service's built-in QR generator](../../create-reports/service-create-qr-code-for-tile.md) or an external generator), shared the report or dashboard with you, and then placed the QR code in a key location, such as in an email or next to the door of a conference room. Then, using either the camera in the Power BI app or any other scanner installed on your mobile device, you can scan the QR code for immediate access to the relevant report or tile.
+Say a colleague has created a QR code for a report or for a tile in a dashboard (using either [the Power BI service's built-in QR generator](../../create-reports/service-create-qr-code-for-tile.md) or an external generator) and placed it in a key location, such as in an email, a PowerPoint presentation, or even next to the door of a conference room. Then, using either the camera in the Power BI app, or any other scanner installed on your mobile device, you can scan the QR code for immediate access to the relevant report or tile. If you don't have permissions to view the report or dashboard, you'll be able to request access directly from the app.
 
-If your colleague hasn't shared the report or dashboard with you, you can request access directly from the mobile app.
+The Power BI mobile app supports QR codes with URLs parameters, so if the QR code for a report includes such parameters, the report will open filtered according to those parameters. 
 
 > [!NOTE]
 > You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
