@@ -111,6 +111,7 @@ The following list is the collection of currently unsupported scenarios for **ex
 * Use of "Show value as"
 * Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of the visuals created by the insights feature
 * Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
+* RLS or OLS enabled data models
 
 
 In addition, the following model types and data sources are currently not supported for insights:
