@@ -20,7 +20,7 @@ Colleagues you've shared the report with can scan the QR code for access to the 
 The Power BI mobile app supports QR codes with URLs query parameters, so you can create URLs with query parameters that will filter report data when the report opens. 
 
 >[!NOTE]
-> While the Power BI app supports QR codes that contain URLs with query parameters, the built-in QR generator described in this document does not generate such URLs. If you want a to create a QR code that includes URL query parameters to filter the report upon opening, use an external QR code generator.
+> While the Power BI app supports QR codes that contain URLs with query parameters, the built-in QR generator described in this document does not generate such URLs. If you want to create a QR code that includes URL query parameters to filter the report upon opening, use an external QR code generator.
 
 ## Create a QR code for a report
 1. Open a report in the Power BI service.
@@ -47,7 +47,7 @@ Power BI generates the QR code as a JPG file, ready to print.
 
 ## Limitations
 
-The QR generator built-in to the Power BI service does not support URL query parameters. If you want a to create a QR code that includes URL query parameters that filter the report upon opening, use an external QR generator..  
+The QR generator built-in to the Power BI service does not support URL query parameters. If you want to create a QR code that includes URL query parameters that filter the report upon opening, use an external QR generator..  
 
 ## Next steps
 * [Connect to Power BI data from the real world](../consumer/mobile/mobile-apps-data-in-real-world-context.md) with the mobile apps
