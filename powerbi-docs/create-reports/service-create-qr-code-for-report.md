@@ -7,15 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2021
+ms.date: 11/01/2021
 LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
 QR codes in Power BI can connect anything in the real world directly to related BI information - no navigation or search needed.
 
-You can create a QR code in the Power BI service for any report, even for a report you can't edit. Then you place the QR code in a key location. For example, you could paste it in an email, or print it out and paste it in a specific location. 
+You can create a QR code in the Power BI service for any report, even for a report you can't edit. Then you place the QR code in a key location. For example, you could paste it in an email, or print it out and place it in a specific location. 
 
 Colleagues you've shared the report with can scan the QR code for access to the report, right from [their mobile device](../consumer/mobile/mobile-apps-qr-code.md). They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their device. They can also [scan a report QR code with the Power BI for Mixed Reality app](../consumer/mobile/mobile-hololens2-app.md#open-reports-with-qr-codes).
+
+The Power BI mobile app supports QR codes with URLs query parameters, so you can create URLs with query parameters that will filter report data when the report opens. 
+
+>[!NOTE]
+> While the Power BI app supports QR codes that contain URLs with query parameters, the built-in QR generator described in this document does not generate such URLs. If you want a to create a QR code that includes URL query parameters to filter the report upon opening, use an external QR code generator.
 
 ## Create a QR code for a report
 1. Open a report in the Power BI service.
@@ -38,10 +43,14 @@ Power BI generates the QR code as a JPG file, ready to print.
    The JPG file has the same name as the tile. For example, "Sales and Marketing Sample.jpg".
    
 1. Print the file at 100% or “actual size”.  
-2. Cut out the QR code along its edge and glue it to a place relevant to the report. 
+2. Cut out the QR code along its edge and glue it to a place relevant to the report.
+
+## Limitations
+
+The QR generator built-in to the Power BI service does not support URL query parameters. If you want a to create a QR code that includes URL query parameters that filter the report upon opening, use an external QR generator..  
 
 ## Next steps
 * [Connect to Power BI data from the real world](../consumer/mobile/mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Scan a Power BI QR code from your mobile device](../consumer/mobile/mobile-apps-qr-code.md)
-* [Create a QR code for a tile](service-create-qr-code-for-tile.md)
+* [Create a QR code for a dashboard tile](service-create-qr-code-for-tile.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
