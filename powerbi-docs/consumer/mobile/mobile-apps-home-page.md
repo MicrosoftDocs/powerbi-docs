@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 09/12/2021
+ms.date: 11/02/2021
 ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -67,7 +67,7 @@ The navigation bar provides quick access to:
 * ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
 * ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
 * ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content from your organization that has been chosen especially for you.
-* ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
+* ![notifications icon](./media/mobile-apps-home-page/powerbi-mobile-app-notification-icon.png) **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
 
 ## Header
 
@@ -76,9 +76,9 @@ The header provides the following navigation items:
 
     ![side panel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 
-* **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
+* **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
 
-    ![notifications page](./media/mobile-apps-home-page/powerbi-mobile-app-notifications-page.png)
+    ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-camera-icon.png)
 
 * **Search** - search for Power BI content in your subscription.
 
