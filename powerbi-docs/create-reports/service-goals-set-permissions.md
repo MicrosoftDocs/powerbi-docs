@@ -25,7 +25,7 @@ To get started setting up your permissions,
 1.	Open the settings pane 
 1.	Open the new permissions tab  
 
-    :::image type="content" source="media/service-goals-create/goals-permissions-settings-pane.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
+:::image type="content" source="media/service-goals-create/goals-permissions-settings-pane.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
 
 The permissions tab allows you to create roles with different permission sets and assign those roles to specific user groups.
   
@@ -36,7 +36,7 @@ We support different types of permissions at the goal level:
 - <b>Status</b> – grants access to update status in a check-in  
 - <b>Current Value</b> - grants access to update the current value in a check-in  
 
-    :::image type="content" source="media/service-goals-create/goals-permissions-create-role.png" alt-text="Open goal level permissions by accessing the scorecard settings and selecting permissions.":::
+:::image type="content" source="media/service-goals-create/goals-permissions-create-role.png" alt-text="A snapshot of the goal level permission settings open and editable.":::
 
 ## Inheritence 
 
@@ -48,7 +48,7 @@ Another aspect of goal level permissions is enabling a "default" permission mode
 
 The default permissions will apply to anyone accessing the scorecard who is not a member of another role already.  If someone is a member of another role, they will assume those permissions over the default permissions. 
 
-    :::image type="content" source="media/service-goals-create/goals-permissions-create-default.png" alt-text="Set a role to become the default role by choosing it from the overflow menu.":::
+:::image type="content" source="media/service-goals-create/goals-permissions-create-default.png" alt-text="Set a role to become the default role by choosing it from the overflow menu.":::
 
 Goal level permissions roles apply to the underlying scorecard dataset we generate, with the exception of the default role. For example, if I give create a role and assign the sales team view access to 5 goals on the scorecard, those are the five goals they will see in the underlying dataset as well. 
 
