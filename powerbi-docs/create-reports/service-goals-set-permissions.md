@@ -1,6 +1,6 @@
 ---
 title: Protect your scorecards with Goal Level Permissions (preview)
-description: Set up goal level permissions to protect who sees and updates which goals.
+description: Set up goal level permissions.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
