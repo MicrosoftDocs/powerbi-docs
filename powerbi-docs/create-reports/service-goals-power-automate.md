@@ -18,18 +18,19 @@ Many organizations want to use scorecards as part of processes that help them ac
 
 First get to the scorecard that will relate to your flow.  You can find the create a flow button in the ribbon.
 
-    :::image type="content" source="media/service-goals-create/flow-from-ribbon.png" alt-text="Access power automate by clicking the create a flow button in the ribbon.":::
+:::image type="content" source="media/service-goals-create/flow-from-ribbon.png" alt-text="Access power automate by clicking the create a flow button in the ribbon.":::
 
 ## Actions and Triggers
 
 For now, we are offering standalone actions and triggers, so to get started click ‘create your own flow’ and search for Power BI in the connector search area and click Power BI.
 
-    :::image type="content" source="media/service-goals-create/PBI-connector.png" alt-text="A list of actions and triggers after selecting the PBI connector.":::
+:::image type="content" source="media/service-goals-create/PBI-connector.png" alt-text="A list of actions and triggers after selecting the PBI connector.":::
     
 Here, you can browse the list of actions and triggers. 
 
-    :::image type="content" source="media/service-goals-create/goals-actions.png" alt-text="A list of the available actions in Power BI Goals.":::
-    :::image type="content" source="media/service-goals-create/goals-triggers.png" alt-text="A list of the available triggers in Power BI Goals.":::
+:::image type="content" source="media/service-goals-create/goals-actions.png" alt-text="A list of the available actions in Power BI Goals.":::
+
+:::image type="content" source="media/service-goals-create/goals-triggers.png" alt-text="A list of the available triggers in Power BI Goals.":::
 
 <b>Actions: </b>
 -	Create a goal   
@@ -51,12 +52,12 @@ Here, you can browse the list of actions and triggers.
 
 From here, you can create and customize your flows to help automate business processes related to your scorecards. Using Power Automate with your Power BI goals helps your teams and organization respond more quickly to changing conditions, and to easily use data to take better actions. 
 
-    :::image type="content" source="media/service-goals-create/example-goals-flow.png" alt-text="An example of a flow you can set up in Power Automate for your scorecard.":::
+ :::image type="content" source="media/service-goals-create/example-goals-flow.png" alt-text="An example of a flow you can set up in Power Automate for your scorecard.":::
     
 For more information on what each action and trigger does, you can see the documentation for each one by clicking the information icon to the right of each item, and seeing “more info,” or visiting this website: https://docs.microsoft.com/connectors/powerbi/#create-a-goal-(preview)
 
-    :::image type="content" source="media/service-goals-create/more-info-goals.png" alt-text="Information icon highlighted next to each action and trigger.":::
-    :::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="A snapshot of the documentation screen for each action and trigger.":::
+:::image type="content" source="media/service-goals-create/more-info-goals.png" alt-text="Information icon highlighted next to each action and trigger.":::
+:::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="A snapshot of the documentation screen for each action and trigger.":::
 
 ## Next Steps
 
