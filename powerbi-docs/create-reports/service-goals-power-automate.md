@@ -64,11 +64,12 @@ For more information on what each action and trigger does, you can see the docum
 
 Templates will allow you to choose a flow that matches closely to your more complex business scenarios, and ensure you have the building blocks you need to automate your process. This will be rolling out in the coming weeks and we will update the documentation accordingly. A sneak peak at just a few of the scenarios we'll be enabling:  
   
-•	Triggering a teams notification when a status changes to “behind” or "at risk"  
-•	Sending reminders to team members at a specified interval with a link to a scorecard or specific goals to review 
-•	Notifying a specific team member when they are assigned to a new goal and should perform a check-in 
-•	Sending a forms survey that gets added as a check-in note on a goal at a specified interval  
-•	Sending a congratulations email when a team completes a goal  
+- Triggering a teams notification when a status changes to “behind” or "at risk"  
+- Sending reminders to team members at a specified interval with a link to a scorecard or specific goals to review 
+- Notifying a specific team member when they are assigned to a new goal and should perform a check-in 
+- Sending a forms survey that gets added as a check-in note on a goal at a specified interval  
+- Sending a congratulations email when a team completes a goal  
 
 <b>More info</b>
+
 For more information on creating flows, see the Power automate documentation. https://docs.microsoft.com/power-automate/getting-started
