@@ -37,7 +37,8 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
     [![Screenshot of insights cards.](./media/end-user-insights/power-bi-insights-tiles.png)](./media/end-user-insights/power-bi-insights-tiles-expanded.png#lightbox)
 4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
 
- ## Interact with the insight cards
+## Interact with the insight cards
+
 Once you have an insight open, continue exploring.
 
    * Filter the visual on the canvas.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
@@ -59,4 +60,3 @@ To return to your report, from the upper left corner, select **Exit Focus mode**
 
 Run insights on report visuals [using the Analyze feature](end-user-analyze-visuals.md)    
 Learn about the [types of Insights available](end-user-insight-types.md)
-
