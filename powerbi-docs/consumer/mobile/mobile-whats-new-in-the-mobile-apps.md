@@ -26,6 +26,9 @@ Now when you scan a QR code that includes a URL to a report with query parameter
 ### Pinch and zoom enabled for Report Server (Android and iOS)
 We've now enabled pinch and zoom also for reports hosted in Report Server, making it easier for you to zoom into your on-premises report content.
 
+### Windows 11 support
+We've made a number of changes to improve our support for Windows 11.
+
 ## September 2021
 ### Find content that’s relevant to you  (Android and iOS)
 Enhance your Power BI experience and productivity by exploring content from your organization that has been picked especially for you. It’s right there for you on the home page under **Recommended**, or on the new Explore page. Tap **See all**, or choose **Explore** from the home page footer, to get to the Explore page.
