@@ -120,24 +120,22 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 1. Save changes, and the specified groups will not be able to use **Copy visual as image** throughout Power BI. 
   
-
 ## Considerations and troubleshooting
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
 Q: I don't see the Copy as image option.
 A: If you're using Power BI Desktop, this feature is not yet available.
-
 Q: Why is the Copy icon disabled on a visual?
 A: We currently support native Power BI visuals and Certified Visuals. There is limited support for certain visuals including:
 
-- ESRI and other Map visuals
-- Python visuals
-- R visuals
-- PowerApps
+- ESRI and other Map visuals 
+- Python visuals 
+- R visuals 
+- PowerApps 
 - Non-certified custom visuals
 
-For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md).
+For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
 Q: Why is my visual not pasting correctly?
 A: There are limitations around copy visual as an image, including:
@@ -147,7 +145,7 @@ A: There are limitations around copy visual as an image, including:
   - Tile scaling when pasting
   - Custom visuals with animations
 - Copying constraints
-  - Cannot copy a freshly pinned dashboard tile 
+  - Cannot copy a freshly pinned dashboard tile
   - Cannot redirect users to content with Odata filters and sticky states such as personal bookmarks
 - Applications with limited support for pasting HTML-formatted content from the clipboard may not render everything that was copied from the visual
 
