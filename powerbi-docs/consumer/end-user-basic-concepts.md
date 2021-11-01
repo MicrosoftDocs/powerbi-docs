@@ -23,7 +23,7 @@ Receiving content from others requires one of the following:
 - A Power BI Pro or Premium Per User (PPU) user license
 - Your organization to have a subscription for Power BI Premium, and for the content to be shared with you from a Power BI Premium capacity. [Look up your license and subscription types](end-user-license.md).
 
-You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a business user**, you'll only work with the Power BI service. This article applies only to the Power BI service.
+You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a *business user*, you'll only work with the Power BI service. This article applies only to the Power BI service.
 
 ## Terminology and concepts
 
@@ -73,9 +73,9 @@ At its most basic:
 
     For more info, see [Reports in Power BI](end-user-reports.md).
 
-- ![A screenshot of the app icon.](media/end-user-basic-concepts/app.png) An *app* is a way for *designers* to bundle and share related dashboards and reports together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example,out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
+- ![A screenshot of the app icon.](media/end-user-basic-concepts/app.png) An *app* is a way for *designers* to bundle and share related dashboards and reports together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example, out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
 
-To be clear, if you're a new user and you've logged in to the Power BI service for the first time, probably won't see any shared dashboards, apps, or reports yet.
+To be clear, if you're a new user and you've logged in to the Power BI service for the first time, you probably won't see any shared dashboards, apps, or reports yet.
 
 _______________________________________________________
 
