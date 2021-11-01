@@ -1,6 +1,6 @@
 ---
-title: Protect your scorecards with Goal Level Permissions (preview)
-description: Set up goal level permissions to protect who sees and updates which goals.
+title: Goals and power automate integration (preview)
+description: Automate business flows from a scorecard.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/03/2021
 ---
-# Goals and Power Automate
+# Goals and Power Automate (preview)
 
 Many organizations want to use scorecards as part of processes that help them achieve results more quickly. However, manually monitoring scorecards can be resource intensive and error prone. In this documentation, we’ll go over how this capability helps you automate business processes when important changes happen within your scorecard. It helps organization quickly respond to changing conditions by keeping everyone up to date and taking automated actions to improve outcomes. This new capability is very easy to use because you can launch Power Automate directly from your scorecard and immediately construct your automated flow.   
 
