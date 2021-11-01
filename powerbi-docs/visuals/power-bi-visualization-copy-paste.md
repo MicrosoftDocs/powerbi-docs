@@ -131,7 +131,8 @@ A: We currently support native Power BI visuals and Certified Visuals. There is 
 - Python visuals 
 - R visuals 
 - PowerApps 
-- Non-certified custom visuals 
+- Non-certified custom visuals
+
 For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
 
@@ -152,4 +153,3 @@ A: There are limitations around copy visual as an image, including:
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
