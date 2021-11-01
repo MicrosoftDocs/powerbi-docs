@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/02/2021
 ---
 # Scan barcodes from the mobile app to get filtered data 
 Scan barcodes in the real world to get directly to filtered BI information in the Power BI mobile app.
@@ -29,9 +29,9 @@ Here are examples of two scenarios where barcode scanning is useful:
 ## Scan a barcode with the Power BI scanner
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode-iphone/power-bi-camera.png)
 
-1. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+1. If your camera is not enabled, you'll need to approve the Power BI app to use the camera. This is a one-time operation. 
 1. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
 1. Find the report you're looking for and tap to open it on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you'll get the message "Couldn't filter report". In that case you can go back to the list and try another report.
     
@@ -41,12 +41,16 @@ Here are examples of two scenarios where barcode scanning is useful:
 ## Filter by other barcodes while in a report
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
 
-On the report's action bar, tap **More options (...)** and find the barcode icon.
+On the report's action bar, tap the barcode icon.
 
-* If the barcode icon is filled, ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and report Is already filtered by a barcode. 
+![Screenshot showing barcode icon on Power B I report action bar.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-icon-on-report-action-bar.png)
+
+* If the barcode icon is filled, ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and the report is already filtered by a barcode. 
 * If the icon is clear ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
 
 Either way, tap the icon to open a small menu with a floating scanner.
+
+![Screenshot showing barcode icon on Power B I report action bar.](media/mobile-apps-scan-barcode-iphone/power-bi-floating-scanner.png)
 
 * Focus the scanner on the new item to change the filter of the report to a different barcode value. 
 * Select **Clear barcode filter** to go back to the unfiltered report.
@@ -54,8 +58,9 @@ Either way, tap the icon to open a small menu with a floating scanner.
 
 ## Clear a barcode filter
 To clear barcode filtering while in a filtered report:
-1. On the report's action bar, tap **More options (...)** and find the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the scanner.
-1. Select **Clear barcode filter** to go back to the unfiltered report.
+1. On the report's action bar, tap the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the floating scanner.
+
+1. On the floating scanner, select **Clear barcode filter** to go back to the unfiltered report.
 
 ## Considerations and limitations
 
@@ -77,5 +82,4 @@ Here are some issues you may encounter when you scan a barcode on an item.
 
 ## Next steps
 * [Tag a barcode field in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
-* [Dashboard tiles in Power BI](../end-user-tiles.md)
-* [Dashboards in Power BI](../end-user-dashboards.md)
+* [Get data from the real world with the Power BI mobile apps](mobile-apps-data-in-real-world-context.md)
