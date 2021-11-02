@@ -76,7 +76,7 @@ The header provides the following navigation items:
 
     ![side panel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 
-* **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode-iphone.md) and [QR codes](mobile-apps-qr-code.md).
+* **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode.md) and [QR codes](mobile-apps-qr-code.md).
 
     ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-camera-icon.png)
 

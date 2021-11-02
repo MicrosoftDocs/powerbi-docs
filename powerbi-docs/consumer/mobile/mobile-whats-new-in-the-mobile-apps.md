@@ -317,7 +317,7 @@ Report page tooltips are now supported when viewing reports in your mobile app. 
 ### June 2019
 
 #### Barcode scanning is now available in Android
-Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### Supporting PBIX reports hosted in PBI-RS over ADFS configuration (iOS, Android)
 
@@ -898,7 +898,7 @@ More about [connecting to data in the real world](mobile-apps-data-in-real-world
 #### Filter data with barcodes (iPhone)
 Now you can scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. 
 
-More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### SQL Server 2016 Reporting Services mobile reports
 Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.
