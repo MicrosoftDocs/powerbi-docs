@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ---
 # Get data from the real world with the Power BI mobile apps
 The Power BI mobile apps can connect the real world directly to related BI information. The features described below make this possible. 
@@ -17,7 +17,7 @@ The Power BI mobile apps can connect the real world directly to related BI infor
 Power BI data can be tagged with barcodes in Power BI Desktop. These barcodes can then be attached to objects in the real world, such as machines on a shop floor or items on the shelf in a store. When you scan such a barcode using the Power BI app’s camera, the reports that contain barcode data can be opened, filtered to the specific barcoded data.
 
 For more information, see:
-* [Scanning a barcode from the Power BI app on your mobile device](mobile-apps-scan-barcode.md).
+* [Scanning a barcode from the Power BI app on your mobile device](mobile-apps-scan-barcode.md)
 * [Tagging barcode data in a report](../../transform-model/desktop-mobile-barcodes.md)
 
 ## QR code scanning
@@ -26,7 +26,7 @@ QR codes can be generated for reports and tiles in your organization. When you s
 
 For more information see:
 * [Scanning a Power BI QR code from your mobile device](mobile-apps-qr-code.md)
-* [Scanning a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
+* [Scanning a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes)
 * [Creating a QR code for a report in Power BI](../../create-reports/service-create-qr-code-for-report.md)
 * [Creating a QR code for a tile in Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 
