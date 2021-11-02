@@ -14,10 +14,10 @@ The Power BI mobile apps can connect the real world directly to related BI infor
 
 ## Barcode scanning
 
-Power BI data can be tagged with barcodes in Power BI Desktop. These barcodes can then be attached to objects in the real world, such as machines on a shop floor or items on the shelf in a store. When you scan such a barcode, using either the Power BI app’s camera or any other scanning app you have on your mobile device, the reports that contain barcode data can be opened, filtered to the specific barcoded data.
+Power BI data can be tagged with barcodes in Power BI Desktop. These barcodes can then be attached to objects in the real world, such as machines on a shop floor or items on the shelf in a store. When you scan such a barcode using the Power BI app’s camera, the reports that contain barcode data can be opened, filtered to the specific barcoded data.
 
 For more information, see:
-* [Scanning a barcode from the Power BI app on your iPhone](mobile-apps-scan-barcode.md).
+* [Scanning a barcode from the Power BI app on your mobile device](mobile-apps-scan-barcode.md).
 * [Tagging barcode data in a report](../../transform-model/desktop-mobile-barcodes.md)
 
 ## QR code scanning
@@ -37,3 +37,4 @@ Some data in Power BI may be categorized as geographical data. When you view tha
 For more information, see:
 * [Filtering by location](mobile-apps-geographic-filtering.md)
 * [Set geographic filters in Power BI Desktop for use in the mobile app](../../transform-model/desktop-mobile-geofiltering.md)
+* [Create URLs with query parameters to filter Power BI reports](../../collaborate-share/service-url-filters.md)
