@@ -20,7 +20,7 @@ Applies to:
 
 Say your organization has reports containing data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 
-![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode/power-bi-barcode-scanner.png)
 
 Here are examples of two scenarios where barcode scanning is useful:
 * Imagine you're checking inventory in a large supermarket and while your out in the aisles you need to get information about particular products, such as how many the store has in stock, what departments the items are stocked in, etc. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You'll get a list of reports that have barcode data. You choose the relevant report and the report opens, filtered to the relevant data.
@@ -29,7 +29,7 @@ Here are examples of two scenarios where barcode scanning is useful:
 ## Scan a barcode with the Power BI scanner
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode-iphone/power-bi-camera.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode/power-bi-camera.png)
 
 1. If your camera is not enabled, you'll need to approve the Power BI app to use the camera. This is a one-time operation. 
 1. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
@@ -43,14 +43,14 @@ While looking at a report filtered by a barcode on your device, you may want to 
 
 On the report's action bar, tap the barcode icon.
 
-![Screenshot showing barcode icon on Power B I report action bar.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-icon-on-report-action-bar.png)
+![Screenshot showing barcode icon on Power B I report action bar.](media/mobile-apps-scan-barcode/power-bi-barcode-icon-on-report-action-bar.png)
 
-* If the barcode icon is filled, ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and the report is already filtered by a barcode. 
-* If the icon is clear ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
+* If the barcode icon is filled, ![Filtered icon](media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png), the filter is active and the report is already filtered by a barcode. 
+* If the icon is clear ![Unfiltered icon](media/mobile-apps-scan-barcode/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
 
 Either way, tap the icon to open a small menu with a floating scanner.
 
-![Screenshot showing floating barcode scanner.](media/mobile-apps-scan-barcode-iphone/power-bi-floating-scanner.png)
+![Screenshot showing floating barcode scanner.](media/mobile-apps-scan-barcode/power-bi-floating-scanner.png)
 
 * Focus the scanner on the new item to change the filter of the report to a different barcode value. 
 * Select **Clear barcode filter** to go back to the unfiltered report.
@@ -58,7 +58,7 @@ Either way, tap the icon to open a small menu with a floating scanner.
 
 ## Clear a barcode filter
 To clear barcode filtering while in a filtered report:
-1. On the report's action bar, tap the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the floating scanner.
+1. On the report's action bar, tap the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the floating scanner.
 
 1. On the floating scanner, select **Clear barcode filter** to go back to the unfiltered report.
 
@@ -66,9 +66,9 @@ To clear barcode filtering while in a filtered report:
 
 * The Filters pane gives no indication of barcode filtering. To know whether a report is currently filtered by a barcode, look at the icon on the Barcode Scanner menu item:
 
-    ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) indicates that the report is currently filtered by a barcode.
+    ![Filtered icon](media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png) indicates that the report is currently filtered by a barcode.
     
-    ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png) indicates that the report is currently not filtered by a barcode. 
+    ![Unfiltered icon](media/mobile-apps-scan-barcode/power-bi-barcode-unfiltered-icon.png) indicates that the report is currently not filtered by a barcode. 
 * The mobile apps support Barcode filtering only for reports that have only one barcode column across all report data tables. If you scan a barcode for a report that has more than one barcode column, no filtering takes place.
 
 ## Issues with scanning a barcode
