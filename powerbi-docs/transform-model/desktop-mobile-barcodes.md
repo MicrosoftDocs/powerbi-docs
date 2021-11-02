@@ -12,7 +12,7 @@ LocalizationGroup: Model your data
 
 # Tag barcode fields in Power BI Desktop to enable barcode-scan filtering in the mobile apps
 
-In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, when someone in your company or organization [scans a barcode](../consumer/mobile/mobile-apps-scan-barcode-iphone.md) on a product using the Power BI mobile app on their iOS or Android phone or tablet, they'll see any report that includes that barcode. When they open the report, it will automatically be filtered to the data related to that barcode.
+In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, when someone in your company or organization [scans a barcode](../consumer/mobile/mobile-apps-scan-barcode.md) on a product using the Power BI mobile app on their iOS or Android phone or tablet, they'll see any report that includes that barcode. When they open the report, it will automatically be filtered to the data related to that barcode.
 
 ## Categorize barcode data
 
@@ -47,7 +47,7 @@ These are the barcode formats Power BI recognizes if you can tag them in a Power
 * ITF14Code 
 
 ## Next steps
-* [Scan a barcode from the Power BI app on your iOS or Android phone or tablet](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)
-* [Issues with scanning barcodes](../consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
+* [Scan a barcode from the Power BI app on your iOS or Android phone or tablet](../consumer/mobile/mobile-apps-scan-barcode.md)
+* [Issues with scanning barcodes](../consumer/mobile/mobile-apps-scan-barcode.md#issues-with-scanning-a-barcode)
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
