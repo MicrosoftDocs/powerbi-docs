@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 10/28/2021
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,16 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## October 2021
+### Use QR codes with URL parameters (Android and iOS)
+Now when you scan a QR code that includes a URL to a report with query parameters, the app will open the report and filter it by these parameters. [Learn more about filtering Power BI reports with URL query parameters](../../collaborate-share/service-url-filters.md).
+
+### Pinch and zoom enabled for Report Server (Android and iOS)
+We've now enabled pinch and zoom also for reports hosted in Report Server, making it easier for you to zoom into your on-premises report content.
+
+### Windows 11 support
+We've made a number of changes to improve our support for Windows 11.
 
 ## September 2021
 ### Find content that’s relevant to you  (Android and iOS)
@@ -307,7 +317,7 @@ Report page tooltips are now supported when viewing reports in your mobile app. 
 ### June 2019
 
 #### Barcode scanning is now available in Android
-Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### Supporting PBIX reports hosted in PBI-RS over ADFS configuration (iOS, Android)
 
@@ -888,7 +898,7 @@ More about [connecting to data in the real world](mobile-apps-data-in-real-world
 #### Filter data with barcodes (iPhone)
 Now you can scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. 
 
-More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### SQL Server 2016 Reporting Services mobile reports
 Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.

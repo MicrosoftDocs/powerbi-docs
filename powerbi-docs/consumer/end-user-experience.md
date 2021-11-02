@@ -60,7 +60,7 @@ To begin, open the Power BI service (app.powerbi.com).
     ![Screenshot shows the Power BI screen with a red border around My workspace.](./media/end-user-experience/power-bi-my-workspace.png)
 
 
-    The sample includes one one report and one dataset. Typically, *business users* won't receive datasets, but this sample is designed for all users and it does include one.
+    The sample includes one report and one dataset. Typically, *business users* won't receive datasets, but this sample is designed for all users and it does include one.
 
     ![Screenshot shows My workspace screen with one report and one dataset listed.](./media/end-user-experience/power-bi-workspace.png)
 
