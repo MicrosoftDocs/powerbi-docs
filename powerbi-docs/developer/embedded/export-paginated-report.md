@@ -329,6 +329,8 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * When using [Gen2](../../admin/service-premium-gen2-what-is.md), the number of Power BI exports is limited to 50 paginated report pages per minute per capacity.
 
+* In an occurrence of a timeout error post the 60th minute mark while exporting large amounts of data consider minimizing the data using appropriate filters. 
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
