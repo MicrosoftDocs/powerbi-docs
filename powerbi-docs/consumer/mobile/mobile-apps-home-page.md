@@ -22,7 +22,7 @@ Applies to:
 
 When you open Power BI Mobile app, you land on the home page, where you have **quick access** to your most Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards. In addition, there is the **goals hub** that enables you to keep on top of your goals, and an **activity feed** that keeps you up-to-date about what's happening with your Power BI content. Finally, there are also convenient navigation aids to get you quickly to the content you need.
 
-![Mobile app home page](./media/mobile-apps-home-page/powerbi-mobile-app-home.png)
+![Mobile app home page](./media/mobile-apps-home-page/power-bi-mobile-app-home.png)
 
 ## Quick Access tab
 
@@ -32,7 +32,7 @@ The quick access tab shows you your Frequent, Recent, and Recommended reports, d
 
 The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can can monitor progress on your goals, and even make check-ins to update progress, add notes, or get to connected reports.
 
-![Screenshot of goals hub in the Power BI mobile app.](media/mobile-apps-home-page/powerbi-mobile-app-hub-checkin.png)
+![Screenshot of goals hub in the Power BI mobile app.](media/mobile-apps-home-page/power-bi-mobile-app-hub-checkin.png)
 
 [Learn more about working with goals in the Power BI mobile app](mobile-apps-goals.md).
 
@@ -40,7 +40,7 @@ The goals hub shows you your relevant goals and lists all the scorecards you've 
 
 The activity feed helps you keep track of what's happening with your Power BI content. It shows you all your latest notifications, alerts, comments, and @mentions.
 
-![Activity feed](./media/mobile-apps-home-page/powerbi-mobile-app-activity.png)
+![Activity feed](./media/mobile-apps-home-page/power-bi-mobile-app-activity.png)
 
 The updates in the feed include:
 * **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
@@ -50,39 +50,39 @@ The updates in the feed include:
 
  Tap on an activity item to jump to the relevant place in order to explore further.
 
-Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the ![expand arrow](./media/mobile-apps-home-page/powerbi-mobile-app-expand-arrow.png) arrow to expand and see the aggregated items. The most recent item will always be at the top of the list.
+Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the ![expand arrow](./media/mobile-apps-home-page/power-bi-mobile-app-expand-arrow.png) arrow to expand and see the aggregated items. The most recent item will always be at the top of the list.
 
 ## Navigation bar
 
 At the bottom of the page you find the navigation bar.
 
-![Navigation bar](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
+![Navigation bar](./media/mobile-apps-home-page/power-bi-mobile-app-navbar.png)
 
 The navigation bar provides quick access to:
 
-* ![home icon](./media/mobile-apps-home-page/powerbi-mobile-app-home-icon.png) **Home** - returns you to the home page.
-* ![favorites icon](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Favorites** - the reports, dashboards and apps you have marked as [favorites](mobile-apps-favorites.md).
-* ![apps icon](./media/mobile-apps-home-page/powerbi-mobile-app-apps-icon.png) **Apps** - the apps you have installed in your account.
-* ![workspaces icon](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
-* ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
-* ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
-* ![explore icon](./media/mobile-apps-home-page/powerbi-mobile-app-explore-icon.png) **Explore** - content from your organization that has been chosen especially for you.
-* ![notifications icon](./media/mobile-apps-home-page/powerbi-mobile-app-notification-icon.png) **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
+* ![home icon](./media/mobile-apps-home-page/power-bi-mobile-app-home-icon.png) **Home** - returns you to the home page.
+* ![favorites icon](./media/mobile-apps-home-page/power-bi-mobile-app-favorites-icon.png) **Favorites** - the reports, dashboards and apps you have marked as [favorites](mobile-apps-favorites.md).
+* ![apps icon](./media/mobile-apps-home-page/power-bi-mobile-app-apps-icon.png) **Apps** - the apps you have installed in your account.
+* ![workspaces icon](./media/mobile-apps-home-page/power-bi-mobile-app-workspaces-icon.png) **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
+* ![recents icon](./media/mobile-apps-home-page/power-bi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
+* ![shared with me icon](./media/mobile-apps-home-page/power-bi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
+* ![explore icon](./media/mobile-apps-home-page/power-bi-mobile-app-explore-icon.png) **Explore** - content from your organization that has been chosen especially for you.
+* ![notifications icon](./media/mobile-apps-home-page/power-bi-mobile-app-notification-icon.png) **Notifications** - opens the [notifications page](mobile-apps-notification-center.md) where you can view and access your notifications. A dot on the notifications bell indicates that you have new notifications.
 
 ## Header
 
 The header provides the following navigation items:
 * **Profile picture or avatar** - opens the side panel where you can [switch between your Power BI service and Report Server accounts](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
 
-    ![side panel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
+    ![side panel](./media/mobile-apps-home-page/power-bi-mobile-app-side-panel.png)
 
 * **Scanner** - the device camera that you can use as a scanner to scan [barcodes](mobile-apps-scan-barcode.md) and [QR codes](mobile-apps-qr-code.md).
 
-    ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-camera-icon.png)
+    ![scanner icon](./media/mobile-apps-home-page/power-bi-mobile-app-camera-icon.png)
 
 * **Search** - search for Power BI content in your subscription.
 
-    ![search page](./media/mobile-apps-home-page/powerbi-mobile-app-search-page.png)
+    ![search page](./media/mobile-apps-home-page/power-bi-mobile-app-search-page.png)
 
 ## Next steps
 In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
