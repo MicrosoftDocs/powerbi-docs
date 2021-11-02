@@ -54,10 +54,10 @@ When you hover over the visual, you can access the Scorecard toolbar.
 
 The toolbar provides the following options:
 
- - **Create a flow**: Launch Power Automate and define automated business processes from events in your scorecard. Check out this documentation page to learn more.
+ - **Create a flow**: Launch Power Automate and define automated business processes from events in your scorecard. Check out [Use Power Automate to update goals automatically](../create-reports/power-bi-automate-visual.md) to learn more.
  - **Edit**: Edit the scorecard just like in the Power BI service. Create or update goals and subgoals, add notes and check-ins, create automated status rules, and so on. These changes made to the scorecard will be synced to the original scorecard. 
  - **Replace scorecard**: Replace the scorecard with another existing or new scorecard.
- - **Open in service**:  Open this scorecard in the Power BI service by selecting this link.
+ - **Open in service**:  Select this link to open this scorecard in the Power BI service.
 
 ## Format the scorecard
 
@@ -65,7 +65,7 @@ The toolbar provides the following options:
  
  ![Screenshot showing scorecard formatting options.](media/power-bi-visualization-scorecard-visual/format-scorecard.png)
 
-When you've connected to an existing scorecard in the Power BI service from Power BI Desktop, formatting changes you make from the **Visualizations** pane will only apply to the scorecard in this report. They won't update the original scorecard in the Power BI service.
+When you connect to an existing scorecard in the Power BI service from Power BI Desktop, formatting changes you make from the **Visualizations** pane will only apply to the scorecard in this report. They won't update the original scorecard in the Power BI service.
  
 ## Considerations and limitations
 
