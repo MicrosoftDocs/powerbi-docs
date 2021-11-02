@@ -45,10 +45,6 @@ On the **Role settings** page, you  can create roles with different permission s
 
 The last checkbox we have when it comes to permission settings is **Set for all**.  This checkbox supports inheritance for any and all future subgoals.  If you select **Set for all**  for a specific goal, all subgoals (existing and future) will adopt the specific permissions you set for that goal.  This allows you to future proof your goal-level permissions.
 
-### Workspace roles and goal-level roles
-
-Anyone who has at least a Contributor role in a workspace has permission to edit goals. Goal-level goals are designed toprovide tailored access to viewing and editing goals for people who aren't workspace Contributors. Goal-level permissions allow you to restrict access so that certain people only see certain goals, and have the ability to perform check-ins, which are different from edit permissions. In these scenarios, they typically don't have a workspace role that gives edit permissions. They don't have access to the workspace, just the scorecard. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details about workspace roles.
-
 ## Set a default
 
 Another aspect of goal-level permissions is enabling a *default* permission model that's applied to anyone accessing the scorecard.  You can create a role with any combination of permissions you choose, and make that the default permissions, ensuring that any time anyone lands on the scorecard, they’re seeing exactly what the scorecard author selects.    
@@ -69,7 +65,11 @@ After you've created roles and set up permissions, the final step is to share th
 
 - Select the **Share** button in the ribbon, same as you would share a normal report.  
 
-    If you don't want to give permissions to the underlying scorecard dataset, in the Share dialog clear the option **Allow recipients to build content with the data associated with this report**. to give build permissions to the underlying report.
+    If you don't want to give permissions to the underlying scorecard dataset, in the Share dialog clear the option **Allow recipients to build content with the data associated with this report** to give build permissions to the underlying report.
+
+### Workspace roles and scorecard roles
+
+Workspace roles are separate from goal level permissions roles.  While workspace permissions give view or build acccess to the workspace, goal level permissions allow you to restrict access so that certain people only see certain goals, and have the ability to perform check-ins within a scorecard, which are different from edit permissions. To give full edit access to the scorecard, you can assign someone as a contributor or member on the workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details about workspace roles.
 
 ## More information
 
