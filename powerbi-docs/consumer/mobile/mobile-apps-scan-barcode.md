@@ -18,7 +18,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-Say your organization has reports that have data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode with the scanner in the Power BI app on your device, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
+Say your organization has reports containing data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 
 ![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
