@@ -74,7 +74,7 @@ To clear barcode filtering while in a filtered report:
 ## Issues with scanning a barcode
 Here are some issues you may encounter when you scan a barcode on an item.
 
-* You get a message **Couldn't filter report - Looks like this barcode doesn't exist in the report data**: This means that the value of the barcode you scanned doesn't appear in datamodel of the report you chose to filter. This might be the case, for instance, if the product whose barcode you scanned isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered.
+* You get a message **Couldn't filter report - Looks like this barcode doesn't exist in the report data**: This means that the value of the barcode you scanned doesn't appear in the data model of the report you chose to filter. This might be the case, for instance, if the product whose barcode you scanned isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered.
 
 * You get a message **Looks like you don't have any reports that can be filtered by barcodes**: This means you don't have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**. Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 
