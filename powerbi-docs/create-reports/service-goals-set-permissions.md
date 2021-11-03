@@ -69,7 +69,7 @@ After you've created roles and set up permissions, the final step is to share th
 
 ### Workspace roles and scorecard roles
 
-Workspace roles are separate from goal level permissions roles.  While workspace permissions give view or build acccess to the workspace, with goal-level permissions you can restrict access so that certain people can only see certain goals and perform check-ins within a scorecard. Goal-level permissions are different from workspace edit permissions. To give full edit access to the scorecard, assign someone a contributor or member role on the workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details about workspace roles.
+Workspace roles are separate from goal level permissions roles.  While workspace permissions give view or build access to the workspace, with goal-level permissions you can restrict access so that certain people can only see certain goals and perform check-ins within a scorecard. Goal-level permissions are different from workspace edit permissions. To give full edit access to the scorecard, assign someone a contributor or member role on the workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details about workspace roles.
 
 ## More information
 
