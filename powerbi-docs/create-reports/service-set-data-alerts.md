@@ -123,7 +123,7 @@ There are many ways to manage your alerts:
 * Alerts only work with numeric data types.
 * Alerts only work on refreshed data. They don't work on static data.
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
-
+* You can create up to 250 alerts across all your models
 
 ## Next steps
 
