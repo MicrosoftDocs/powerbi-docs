@@ -135,7 +135,7 @@ Here's how to configure the delegation settings:
 
    You should now see the SPN in the list of services to which the gateway service account can present delegated credentials.
 
-    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
+    ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
@@ -159,7 +159,7 @@ Complete the following configuration steps:
 
 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 
