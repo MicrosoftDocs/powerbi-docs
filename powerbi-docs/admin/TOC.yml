@@ -1,4 +1,4 @@
-﻿- name: "Power BI admin and enterprise"
+- name: "Power BI admin and enterprise"
   href: index.yml
   expanded: true
   items:
@@ -146,7 +146,7 @@
         href: service-security-apply-data-sensitivity-labels.md
       - name: "Set or remove sensitivity labels programmatically"
         href: service-security-sensitivity-label-inheritance-set-remove-api.md
-      - name: "Use Microsoft Cloud App Security with Power BI"
+      - name: "Use Microsoft Defender for Cloud Apps with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
       - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md

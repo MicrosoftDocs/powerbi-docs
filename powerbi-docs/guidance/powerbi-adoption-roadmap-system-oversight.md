@@ -369,7 +369,7 @@ External user access is controlled by [tenant settings](../admin/service-admin-p
 Power BI supports capabilities for information protection and data loss prevention through its integration with:
 
 - [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to _know your data, protect your data, prevent data loss, and govern your data_.
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) (MCAS), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how MCAS can be used for oversight of the Power BI service.
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
 
 Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
 
@@ -378,7 +378,7 @@ Power BI's information protection capabilities are built upon [sensitivity label
 
 The power of sensitivity labels is:
 
-- Automated data loss prevention within the Power BI service, for instance, when [Cloud App Security](../admin/service-security-using-microsoft-cloud-app-security-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
+- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../admin/service-security-using-microsoft-cloud-app-security-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
 - Automated data loss prevention across system boundaries, such as when the [label follows the content](../admin/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
 - User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
 
@@ -427,14 +427,14 @@ When considering needs for creating auditing reports, consider the following:
 
 ### Monitoring
 
-[Microsoft Cloud App Security (MCAS)](https://powerbi.microsoft.com/blog/get-up-to-speed-with-power-bi-and-microsoft-cloud-app-security/) is a cloud access security broker (CASB) that allows administrators to perform activities such as:
+[Microsoft Defender for Cloud Apps](https://powerbi.microsoft.com/blog/get-up-to-speed-with-power-bi-and-microsoft-cloud-app-security/) is a cloud access security broker (CASB) that allows administrators to perform activities such as:
 
 - Audit, monitor, and raise alerts based on activities.
 - Create data loss prevention policies.
 - Detect unusual behaviors and risky sessions.
 - Limit activities performed by applications (in conjunction with [Azure Active Directory conditional access app control](/cloud-app-security/proxy-intro-aad)).
 
-Some very powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with MCAS. For example, you can:
+Some very powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 
 - Prohibit all—or certain users—from downloading a file from the Power BI service when a specific sensitivity label is assigned.
 - Receive an alert whenever a tenant setting is updated in the Power BI service (for instance, an administrative activity is detected).
@@ -444,7 +444,7 @@ Some very powerful [Power BI monitoring and protection](https://techcommunity.mi
 - Determine when someone outside a predefined security group views specific content in the Power BI service.
 
 > [!CAUTION]
-> Licensing, cost, and administrative permissions for MCAS are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
+> Licensing, cost, and administrative permissions for Defender for Cloud Apps are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
 
 ## Planning for change
 
@@ -503,7 +503,7 @@ Considerations and key actions you can take to improve security and data protect
 - Clarify exactly what the expectations are for data protection, and ensure those expectations are communicated to the community of users.
 - Understand and document the organizational policies around sharing Power BI content with external users, and ensure that Power BI service settings support those policies.
 - If they do not currently exist, begin the process of deciding on sensitivity labels. Involve the relevant IT teams for decision-making and configuration in Microsoft 365.
-- Investigate the use of Microsoft Cloud App Security to monitor user behavior and activities in the Power BI service.
+- Investigate the use of Microsoft Defender for Cloud Apps to monitor user behavior and activities in the Power BI service.
 
 Considerations and key actions you can take to begin or improve auditing and monitoring:
 
@@ -519,7 +519,7 @@ The following maturity levels will help you assess the current state of your Pow
 | 100: Initial | Tenant settings are configured independently by one or more administrators based on their best judgment.</br></br>Architecture needs, such as gateways and capacities, are satisfied on an as-needed basis, though without a strategic plan.</br></br>Power BI activity logs are unused, or selectively used for tactical purposes. |
 | 200: Repeatable | Tenant settings are reviewed on a regular basis, and purposefully align with established governance guidelines and policies.</br></br>A small number of specific administrators are selected, and they have a good understanding of what users are trying to accomplish.</br></br>An effective process exists for users to request licenses and software.</br></br>Sensitivity labels are configured in Microsoft 365, though usage of labels remains inconsistent. |
 | 300: Defined | The tenant settings are fully documented in the community portal for users to reference, including how to request access to the correct groups.</br></br>Cross-training and documentation exists for administrators to ensure continuity and stability.</br></br>Sensitivity labels are assigned to content consistently.</br></br>An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
-| 400: Capable | Automated policies are configured and actively monitored in Microsoft Cloud App Security for data loss prevention.</br></br>Administrators work closely with the COE and governance teams to provide oversight of Power BI with an emphasis on user empowerment within the requisite guardrails.</br></br>Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control.</br></br>Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
+| 400: Capable | Automated policies are configured and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention.</br></br>Administrators work closely with the COE and governance teams to provide oversight of Power BI with an emphasis on user empowerment within the requisite guardrails.</br></br>Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control.</br></br>Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
 | 500: Efficient | Regular cost management analysis is done to ensure user needs are met in a cost-effective way.</br></br>Power BI activity log and API data is actively used to inform and improve adoption efforts (in addition to monitoring and auditing of Power BI activities). |
 
 ## Next steps
