@@ -127,7 +127,7 @@ In the original version of the matrix visual, subcategories were shown in an ent
 
 :::image type="content" source="media/desktop-matrix-visual/matrix-visual_14.png" alt-text="Screenshot of the old Matrix visual showing the subcategories in a separate column.":::
 
-In the following image, you see a matrix visual, with stepped layout in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
+In the following image, you see a matrix visual, with stepped layout in action. Notice the category *Qualify* has its subcategories (Small, Medium, and Large) slightly indented, providing a cleaner and much more condensed visual.
 
 :::image type="content" source="media/desktop-matrix-visual/matrix-visual_13.png" alt-text="Current way that matrix formats data.":::
 
