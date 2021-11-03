@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/15/2021
+ms.date: 11/02/2021
 ---
 
 # Register an Azure AD application to use with Power BI
@@ -46,7 +46,7 @@ If you're creating an *embed for your organization* application, and want more c
 > [!IMPORTANT]
 > Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md).
 
-# [Embed for your customers](#tab/customers)
+## [Embed for your customers](#tab/customers)
 
 These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
 
@@ -74,7 +74,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
 [!INCLUDE[registration tool note](../../includes/register-tool-note.md)]
 
-# [Embed for your organization](#tab/organization)
+## [Embed for your organization](#tab/organization)
 
 These steps describe how to register an Azure AD application for the Power BI [embed for your organization](embed-sample-for-your-organization.md) solution.
 
@@ -90,7 +90,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
     * **Home Page URL** - Enter a URL for your home page.
 
-    * **Redirect URL** - Upon singing in, your application users will be redirected to this address while your application receives an authentication code from Azure. Select one of these options:
+    * **Redirect URL** - Upon signing in, your application users will be redirected to this address while your application receives an authentication code from Azure. Select one of these options:
 
         * **Use a default URL** - This option will automatically create and download a sample embedded analytics application. The default URL is http://localhost:13526/.
 
@@ -108,7 +108,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
 [!INCLUDE[registration tool note](../../includes/register-tool-note.md)]
 
-# [Manual registration](#tab/manual)
+## [Manual registration](#tab/manual)
 
 Use the Azure AD manual app registration only if you're creating one of the following solutions:
 
@@ -126,7 +126,7 @@ For more information about how to register applications in Azure Active Director
 2. Select your Azure AD tenant by selecting your account in the upper right corner of the page.
 
 3. Select **App registrations**. If you can't see this option, search for it.
- 
+
 4. In *App registrations*, select **New registration**.
 
 5. Fill in the following fields:
@@ -147,10 +147,11 @@ After you register your application, you can make changes to its permissions. Pe
 
 >[!NOTE]
 >Azure AD app permissions are only applicable for these scenarios:
+>
 >* *Embed for your organization*
 >* *Embed for your customers* with the *master user* authentication method
 
-# [Azure](#tab/Azure)
+## [Azure](#tab/Azure)
 
 In the Azure portal, you can view your app and make changes to its permissions.
 
@@ -180,7 +181,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
     
     3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
-# [HTTP](#tab/HTTP)
+## [HTTP](#tab/HTTP)
 
 To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
@@ -223,6 +224,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
      ```
 
     >[!NOTE]
+    >
     >* If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
     >* The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
@@ -242,7 +244,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
     }
     ```
 
-# [C#](#tab/CSharp)
+## [C#](#tab/CSharp)
 
 You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering to automate some of your processes.
 
