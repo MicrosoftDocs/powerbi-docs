@@ -53,7 +53,7 @@ There are several [types of Power BI administrators](../admin/service-admin-admi
 
 | **Role** | **Scope** | **Description** |
 | --- | --- | --- |
-| Power BI administrator | Power BI tenant | Manages tenant settings and other aspects of the Power BI service. All general references to _administrator_ in this article refer to this type of administrator. |
+| Power BI administrator | Power BI tenant | Manages tenant settings and other aspects of the Power BI service. All general references to *administrator* in this article refer to this type of administrator. |
 | Power BI Premium capacity administrator | One capacity | Manages workspaces, workloads, and monitors the health of a Premium capacity. |
 | Power BI gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. May also handle gateway software updates (or collaborate with infrastructure team on updates). |
 | Power BI workspace administrator | One workspace | Manages workspace settings and access. |
@@ -167,7 +167,7 @@ In addition to software installations, user machines may be managed for:
 
 ### Data architecture
 
-_Data architecture_ refers to the principles, practices, and methodologies that govern and define what data is collected, and how it is ingested, stored, managed, integrated, modeled, and used.
+*Data architecture* refers to the principles, practices, and methodologies that govern and define what data is collected, and how it is ingested, stored, managed, integrated, modeled, and used.
 
 There are many data architecture decisions to make. Frequently the COE engages in data architecture design and planning. It's common for administrators to get involved as well, especially when they manage databases or Azure infrastructure.
 
@@ -321,7 +321,7 @@ Consider disabling self-service purchasing when:
 
 ### Trials
 
-Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Premium Per User license, they will be prompted to start a trial to view the content (if the content doesn’t reside within Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
+Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Premium Per User license, they will be prompted to start a trial to view the content (if the content doesn't reside within Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
 
 Generally, disabling trials is not recommended. It can encourage users to apply workarounds, perhaps by exporting data or working outside of supported tools and processes. Consider disabling trials only when:
 
@@ -368,7 +368,7 @@ External user access is controlled by [tenant settings](../admin/service-admin-p
 
 Power BI supports capabilities for information protection and data loss prevention through its integration with:
 
-- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to _know your data, protect your data, prevent data loss, and govern your data_.
+- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to *know your data, protect your data, prevent data loss, and govern your data*.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
 
 Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
@@ -390,7 +390,7 @@ For organizations with requirements to store data within a geographic region, Pr
 
 ### Encryption keys
 
-Microsoft handles encryption of _data at rest_ in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as _bring-your-own-key_ or _BYOK_—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
+Microsoft handles encryption of *data at rest* in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as *bring-your-own-key* or *BYOK*—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
 
 Note that [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
 
@@ -462,7 +462,7 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 Considerations and key actions you can take to improve system oversight:
 
 - Verify who is permitted to be a Power BI administrator. If possible, reduce the number of people granted this role if it's more than a few people.
-- If you have people who _occasionally_ need Power BI administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory. It's designed to assign just-in-time role permissions that expire after a few hours.
+- If you have people who *occasionally* need Power BI administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory. It's designed to assign just-in-time role permissions that expire after a few hours.
 - Check the status of cross-training and documentation in place for handling Power BI administration responsibilities.
 
 Considerations and key actions you can take to improve management of the Power BI service:

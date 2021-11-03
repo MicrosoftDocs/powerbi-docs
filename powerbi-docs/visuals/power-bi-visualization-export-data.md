@@ -16,12 +16,11 @@ LocalizationGroup: Visualizations
 # Export the data that was used to create a visualization
 
 > [!IMPORTANT]
-> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. 
+> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions.
 
 ## Who can export data
 
-If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Considerations and limitations** section at the end of this document. 
-
+If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Considerations and limitations** section at the end of this document.
 
 ## Viewing and exporting data
 
@@ -29,7 +28,7 @@ If you'd like to see the data that Power BI uses to create a visualization, [you
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself. Note that this video uses an older version of Power BI.
 
-> [!NOTE]  
+> [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
@@ -44,7 +43,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
     ![Screenshot of the ellipsis drop-down with the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data.png)
 
-1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well. 
+1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well.
 
 1. Your browser will prompt you to save the file.  Once saved, open the *.csv* file in Excel.
 
@@ -72,14 +71,14 @@ To follow along, open the [Procurement analysis sample report](../create-reports
 
     ![Screenshot of the City filter with the cleared Atlanta, GA check box called out.](media/power-bi-visualization-export-data/power-bi-filter.png)
 
-   
-1. Drill down one level in the hierarchy. Turn on drilling and drill down to the **City** level. 
+1. Drill down one level in the hierarchy. Turn on drilling and drill down to the **City** level.
 
     ![Screenshot of the visual drilled down to the city level.](media/power-bi-visualization-export-data/power-bi-drill.png)
 
 Now we're ready to try out both options for exporting data.
 
 ### Export ***summarized*** data
+
 Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that are being used to create the visual.  If the visual has an aggregate, you'll export aggregated data. For example, if you have a bar chart showing four bars, you'll get four rows of Excel data. Summarized data is available in the Power BI service as *.xlsx* and *.csv* and in Power BI Desktop as .csv.
 
 1. Select the ellipsis in the upper-right corner of the visualization. Select **Export data**.
@@ -94,30 +93,28 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
-
     > [!NOTE]
-    > In Power BI Desktop, you'll only have the option to export summarized data as a .csv file. 
-    
-    
+    > In Power BI Desktop, you'll only have the option to export summarized data as a .csv file.
+
 1. From **Export data**, select **Summarized data**, either choose *.xlsx* or *.csv*, and then select **Export**. Power BI exports the data.
 
     ![Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder. 
+1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
 
     ![Screenshot of the Excel output.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
     In this example, our Excel export shows one total for each city. Since we filtered out Atlanta, it isn't included in the results. The first row of our spreadsheet shows the filters that Power BI used when extracting the data.
-    
-    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.  
+
+    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.
 
     - Our exported data is aggregated. We get a total, one row, for each city.
 
-    - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
+    - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**.
 
 ### Export ***underlying*** data
 
-Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single City row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.  
+Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single City row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.
 
 When you select **Export**, Power BI exports the data to an *.xlsx* file and your browser prompts you to save the file. Once saved, open the file in Excel.
 
@@ -133,37 +130,34 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
-
     > [!NOTE]
-    > In Power BI Desktop, you'll only have the option to export summarized data. 
-    
-    
+    > In Power BI Desktop, you'll only have the option to export summarized data.
+
 1. From **Export data**, select **Underlying data**, and then select **Export**. Power BI exports the data.
 
     ![Screenshot of the Export data screenshot with the underlying data called out.](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder. 
+1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
 
     ![Screenshot of the .xlsx file with the exported data displayed.](media/power-bi-visualization-export-data/power-bi-excel.png)
-    
-    - This screenshot shows you only a small portion of the Excel file; it has more than 100,000 rows.  
-    
-    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.  
 
-    - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
+    - This screenshot shows you only a small portion of the Excel file; it has more than 100,000 rows.
+
+    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.
+
+    - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**.
 
 ## Customize the export data user experience
 
 Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
-- Report authors [decide which *export options*](#set-the-export-options) are available to users.  
+- Report authors [decide which *export options*](#set-the-export-options) are available to users.
 
-- Power BI administrators can turn off some or all data export options for their organization.  
+- Power BI administrators can turn off some or all data export options for their organization.
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
 - Report authors can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
-
 
 **These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.**
 
@@ -175,9 +169,7 @@ Users who are granted access to a report are **granted access to the entire unde
 
 ## Export underlying data details
 
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. 
-
-
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department.
 
 | Visual contains | What you'll see in export  |
 |---------------- | ---------------------------|
@@ -221,11 +213,12 @@ You can also update this setting in the Power BI service.
 It's important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings.
 
 ## Considerations and limitations
+
 These considerations and limitations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
--  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
+- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
 - The maximum number of rows that the applications can export from an **import mode report** to an *.xlsx* file is 150,000.
 
@@ -234,8 +227,8 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
   - the version is older than 2016.
 
   - the tables in the model don't have a unique key.
-    
-  -  an administrator or report designer has disabled this feature.
+
+  - an administrator or report designer has disabled this feature.
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
@@ -251,16 +244,16 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 
 - Power BI custom visuals and R visuals aren't currently supported.
 
-- In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.  
+- In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.
 
 - If there are Unicode characters in the *.csv* file, the text in Excel may not display properly. Examples of Unicode characters are currency symbols and foreign words. You can open the file in Notepad and the Unicode will display correctly. If you want to open the file in Excel, the workaround is to import the *.csv*. To import the file into Excel:
 
   1. Open Excel.
 
   1. Go to the **Data** tab.
-  
+
   1. Select **Get external data** > **From text**.
-  
+
   1. Go to the local folder where the file is stored and select the *.csv*.
 
 - When exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
