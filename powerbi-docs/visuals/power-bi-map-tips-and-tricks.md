@@ -8,22 +8,22 @@ ms.custom: video-ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/29/2021
+ms.date: 11/03/2021
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for Power BI map visualizations
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries, but can't create the map visualization on its own, it enlists the help of Bing Maps. 
+Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries, but can't create the map visualization on its own, it enlists the help of Bing Maps.
 
-You, or your administrator, may need to update your firewall to allow access to the URLs Bing uses for geocoding.  Those URLs are:
+You, or your administrator, may need to update your firewall to allow access to the URLs Bing uses for geocoding. Those URLs are:
 
 * https://dev.virtualearth.net/REST/V1/Locations
 * https://platform.bing.com/geo/spatial/v1/public/Geodata
 * https://www.bing.com/api/maps/mapcontrol
 
-To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. The second set of tips is things you can do in Power BI if you don't have access to the dataset. 
+To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. The second set of tips is things you can do in Power BI if you don't have access to the dataset.
 
 ## What is sent to Bing Maps?
 

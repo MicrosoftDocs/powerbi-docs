@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/29/2021
+ms.date: 11/03/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
@@ -102,11 +102,11 @@ You can also use the **Expand** menu item to control the display further.  For e
 
 ### Drill down on column headers
 
-Similar to the ability to drill down on rows, you can also drill down on columns. In the following image, there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Region* and *Segment*. As soon as the second field was added to **Columns**, a new dropdown menu displayed on the visual, it currently shows **Rows**.
+Similar to the ability to drill down on rows, you can also drill down on columns. In the following image, there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Region* and *Segment*. As soon as the second field was added to **Columns**, a new dropdown menu (**Drill on**) is displayed on the visual, it currently shows **Rows**.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-row.png" alt-text="Matrix after second column value added.":::
 
-To drill down on columns, select **Columns** from the *Drill on* menu that can be found in the upper left corner of the matrix. Select the *East* region and choose **Drill Down**.
+To drill down on columns, select **Columns** from the **Drill on** menu that can be found in the upper left corner of the matrix. Select the *East* region and choose **Drill Down**.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-column.png" alt-text="Menu for drilling down into columns.":::
 
@@ -131,7 +131,7 @@ In the following image, you see a matrix visual, with stepped layout in action. 
 
 :::image type="content" source="media/desktop-matrix-visual/matrix-visual_13.png" alt-text="Current way that matrix formats data.":::
 
-You can easily adjust the stepped layout settings. With the matrix visual selected, in the **Format** section (the paint roller icon) of the **Visualizations** pane, expand the row headers section. You have two options: the stepped layout toggle (which turns it on or off), and the stepped layout indentation (specifies the indentation amount, in pixels).
+You can easily adjust the stepped layout settings. With the matrix visual selected, in the **Format** section (the paint roller icon) of the **Visualizations** pane, expand the row headers section. You have two options: the **Stepped layout** toggle (which turns it on or off), and the **Stepped layout indentation** (which specifies the indentation amount, in pixels).
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-stepped-matrix.png" alt-text="Row headers card displaying Stepped layout control.":::
 

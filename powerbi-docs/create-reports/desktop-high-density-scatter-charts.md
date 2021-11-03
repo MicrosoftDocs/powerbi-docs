@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/29/2021
+ms.date: 11/03/2021
 LocalizationGroup: Create reports
 ---
 # High-density sampling in Power BI scatter charts

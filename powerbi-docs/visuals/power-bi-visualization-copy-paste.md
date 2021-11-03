@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 LocalizationGroup: Visualizations
 ---
 # Copy and paste a report visualization
@@ -29,7 +29,7 @@ Visualizations on *dashboards* can't be copied and pasted into Power BI reports 
 
 1. Open a report that has at least one visualization.  
 
-1. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.      
+1. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.
 
    ![short video showing how to copy and paste](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
