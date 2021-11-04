@@ -65,7 +65,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 
 After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
-Follow the instructions in the link to [assign a workspace to a newly created pipeline](deployment-pipelines-assign.md#assign-a-workspace-to-a-newly-created-pipeline).
+Follow the instructions in the link to [assign a workspace to a pipeline](deployment-pipelines-assign.md#assign-a-workspace-to-any-vacant-pipeline-stage).
 
 >[!NOTE]
 >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
