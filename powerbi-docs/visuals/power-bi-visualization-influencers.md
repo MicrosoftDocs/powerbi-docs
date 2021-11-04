@@ -60,7 +60,7 @@ Your Product Manager wants you to figure out which factors lead customers to lea
 
 1. Open the report, and select the **Key influencers** icon. 
 
-:::image type="content" source="media/power-bi-visualization-influencers/power-bi-template-new.png" alt-text="From Visualizations pane, select Key influencers template.":::
+   :::image type="content" source="media/power-bi-visualization-influencers/power-bi-template-new.png" alt-text="From Visualizations pane, select Key influencers template.":::
 
 1. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
 
