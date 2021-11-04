@@ -89,7 +89,7 @@ sections:
       - question: |
           Why am I seeing the 'different' symbol after I assigned a workspace with reports that are similar to those in adjacent stages?
         answer: |
-          Most reports use the [enhanced dataset metadata](./../connect-data/desktop-enhanced-dataset-metadata.md) feature, also known as *model v3*. However, older reports might be using the old type of dataset metadata, sometimes referred to as *model v1*. If you're assigning a workspace that uses the old dataset metadata model (v1), deployment pipeline can't evaluate whether the report is similar in adjacent stages. In such cases, deployment pipelines will show the *different* UI symbol, even when the reports are identical. To resolve this issue, deploy the reports that are showing the *different* symbol.   
+          Most reports use the [enhanced dataset metadata](./../connect-data/desktop-enhanced-dataset-metadata.md) feature, also known as *model v3*. However, older reports might be using the old type of dataset metadata, sometimes referred to as *model v1*. If you're assigning a workspace that uses the old dataset metadata model (v1), deployment pipelines can't evaluate whether the report is similar in adjacent stages. In such cases, the *different* UI symbol is displayed, even when the reports are identical. To resolve this issue, deploy the reports that are showing the *different* symbol.   
 
       - question: |
           Why can't I see all my workspaces when I try to assign a workspace to a pipeline?
