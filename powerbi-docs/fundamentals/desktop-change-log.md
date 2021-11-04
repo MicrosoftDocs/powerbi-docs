@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/28/2021
+ms.date: 11/3/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,13 @@ ms.date: 10/28/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## October 2021 QFE 3
+
+*Version: 2.98.1025.0, Released: November 3, 2021*
+
+Bug fixes/improvements:
+- Formula bar Intellisense fix: now it's possible to save DAX expressions in localized format and use localized DAX separators. 
 
 ## October 2021 QFE 2
 

@@ -60,7 +60,7 @@ Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**
 by Jeroen ter Heerdt and Marc Lelijveld  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
 
-**Webinar Series: Mastering Data Modeling with Power BI
+**Webinar Series: Mastering Data Modeling with Power BI  
 Episode 2 - Learn Advanced Data Modeling with Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
