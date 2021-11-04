@@ -7,30 +7,19 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 10/31/2021
+ms.date: 11/04/2021
 ---
 
 # Assign a workspace to a deployment pipeline
 
 Deployment pipelines enables you to assign and unassign workspaces to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces for each pipeline stage. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
 
-After assigning a workspace to a deployment pipeline stage, if there are any adjacent stages already assigned, deployment pipelines attempts to create the connections between the Power BI items in the adjacent stages.
+:::image type="content" source="media/deployment-pipelines-assign/new-workspace.png" alt-text="A screenshot showing a deployment pipelines new workspace, with all the pipeline stages unassigned.":::
+
+After assigning a workspace to a deployment pipeline stage, if there are any adjacent stages already assigned, deployment pipelines attempts to create the connections between the Power BI items (such as reports, dashboards and datasets) in the adjacent stages. During this process, deployment pipelines checks the names of the Power BI items in the source stage and the stages adjacent to it. Connections to items in adjacent stages, are established according to the item's type and name. If there are multiple items of the same type with the same name in the adjacent stages, the deployment will fail. This happens because deployment pipelines doesn't know which item to establish a connection with. For example, if you're trying to assign a workspace to the *test stage*, and one of your reports is called 'regional sales', if you have more than one report with the same name in either the *development* or *production* stages, the deployment will fail. Your deployment will also fail if the workspace you're assigning has two datasets titles 'regional sales dataset', and there's a dataset with the same name in either the *development* or *production* stages. In such cases, you'll get the [can't assign the workspace](deployment-pipelines-troubleshooting.md#why-am-i-getting-the--can-t-assign-the-workspace--error-message-when-i-assign-a-workspace-) error message which includes links to the duplicate items. To resolve this error rename the duplicate items and reassign.
 
 >[!NOTE]
 >This article describes how to assign and unassign a workspace to a deployment pipeline stage in the Power BI service. You can also perform these functions programmatically, using the [Assign Workspace](/rest/api/power-bi/pipelines/assign-workspace) and [Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) Power BI REST APIs.
-
-## Assign a workspace to a newly created pipeline
-
-Follow these steps to assign a workspace in a deployment pipeline:
-
-1. In the newly created deployment pipeline, select **Assign a workspace**.
-
-2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
-
-    >[!NOTE]
-    >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
-
-3. Select the stage you want to assign the workspace to.
 
 ## Assign a workspace to any vacant pipeline stage
 
@@ -82,6 +71,8 @@ To unassign a workspace from a pipeline stage, follow these steps:
 * The workspace is not assigned to any other pipeline.
 
 * The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
+
+* To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages.
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
