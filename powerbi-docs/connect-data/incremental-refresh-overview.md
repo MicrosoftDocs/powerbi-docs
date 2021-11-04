@@ -93,7 +93,7 @@ We'll go over important concepts of configuring incremental refresh here. When y
 
 Configuring incremental refresh is done in Power BI Desktop. For most models, only a few tasks are required. However, keep the following in mind:
 
-- When published to the service, you can't publish the same model again from Power BI Desktop. Republishing would remove any existing partitions and data already in the dataset. If you're publishing to a Premium capacity, subsequent metadata schema changes can be made with the open-source ALM Toolkit or by using Tabular Model Scripting Language (TMSL). To learn more, see [Advanced incremental refresh - Metadata-only deployment](incremental-refresh-xmla.md#metadata-only-deployment).
+- When published to the service, you can't publish the same model again from Power BI Desktop. Republishing would remove any existing partitions and data already in the dataset. If you're publishing to a Premium capacity, subsequent metadata schema changes can be made with tools such as the open-source ALM Toolkit or by using Tabular Model Scripting Language (TMSL). To learn more, see [Advanced incremental refresh - Metadata-only deployment](incremental-refresh-xmla.md#metadata-only-deployment).
 - When published to the service, you can't download the dataset back as a PBIX to Power BI Desktop. Because datasets in the service can grow so large, it's impractical to download back and open on a typical desktop computer.
 
 ### Create parameters

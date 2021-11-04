@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Power BI for the Enterprise
-summary: Power BI is the business analytics and insights platform that enables Enterprises to do more
+summary: Power BI is the business analytics and insights platform that enables Enterprises to do more.
 brand: power-bi
 
 metadata:
@@ -14,17 +14,13 @@ metadata:
   ms.collection: collection
   author: davidiseminger
   ms.author: davidi
-  ms.date: 10/05/2021
+  ms.date: 10/20/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    # Card
-    - title: What is Power BI?
-      itemType: get-started
-      url: ../fundamentals/power-bi-overview.md
     # Card
     - title: Introducing Power BI Premium Gen2
       itemType: whats-new
@@ -34,252 +30,19 @@ highlightedContent:
       itemType: reference
       url: service-premium-per-user-faq.yml
     # Card
-    - title: Using dataflows in Power BI
-      itemType: tutorial
-      url: ../transform-model/dataflows/dataflows-introduction-self-service.md
-    # Card
     - title: Power BI Security in the Enterprise
       itemType: overview
       url: service-admin-power-bi-security.md
     # Card
-    - title: Power BI information protection
-      itemType: concept
-      url: service-security-sensitivity-label-default-label-policy.md
-    # Card
     - title: Power BI administration, and the admin portal
       itemType: how-to-guide
       url: service-admin-portal.md
-    # Card
-    - title: Power BI gateways 
-      itemType: deploy
-      url: ../connect-data/service-gateway-onprem.md
 
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    # Card
-    - title: Power BI Premium Gen2
-      links:
-        - url: service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: service-premium-per-user-faq.yml
-          itemType: concept
-          text: What is Premium Per User (PPU)?
-        - url: service-premium-transition-gen1-to-gen2.md
-          itemType: overview
-          text: Plan your transition to Premium Gen2
-      # footerLink (optional)
-      footerLink:
-        url: service-premium-gen2-faq.yml
-        text: Power BI Premium Gen2 FAQ
-    # Card
-    - title: Power BI Licensing
-      links:
-        - url: service-admin-licensing-organization.md
-          itemType: deploy
-          text: Licensing Power BI for your organization
-        - url: service-admin-org-subscription.md
-          itemType: get-started
-          text: Get a Power BI subscription
-        - url: https://powerbi.microsoft.com/pricing/ 
-          itemType: deploy
-          text: Power BI Pricing
-      # footerLink (optional)
-      footerLink:
-        url: service-admin-manage-licenses.md
-        text: View and manage your licenses
-    # Card
-    - title: Using the Power BI Admin portal
-      links:
-        - url: service-admin-portal.md
-          itemType: tutorial
-          text: Using the Power BI Admin portal
-        - url: service-admin-role.md
-          itemType: learn
-          text: Understanding the admin role
-        - url: service-admin-administering-power-bi-in-your-organization.md
-          itemType: concept
-          text: What is Power BI administration?
-      # footerLink (optional)
-      footerLink:
-        url: service-admin-faq.yml
-        text: Power BI admin FAQ
-    # Card
-    - title: Power BI Security
-      links:
-        - url: service-admin-power-bi-security.md
-          itemType: overview
-          text: Power BI Security
-        - url: ../guidance/whitepaper-powerbi-security.md
-          itemType: reference
-          text: Power BI Security Whitepaper
-        - url: service-security-sensitivity-label-overview.md
-          itemType: concept
-          text: Sensitivity Labels in Power BI
-      # footerLink (optional)
-      footerLink:
-        url: service-security-data-protection-metrics-report.md
-        text: Data protection metrics report
-    # Card
-    - title: Power BI data connectors
-      links:
-        - url: ../connect-data/desktop-connect-to-data.md
-          itemType: how-to-guide
-          text: Connect to data in Power BI
-        - url: ../connect-data/desktop-data-sources.md
-          itemType: overview
-          text: List of Power BI Desktop data connectors
-        - url: ../connect-data/desktop-connector-extensibility.md
-          itemType: how-to-guide
-          text: Data connector extensibility in Power BI
-      # footerLink (optional)
-      footerLink:
-        url: ../connect-data/service-azure-and-power-bi.md
-        text: Azure and Power BI
-    # Card
-    - title: Power BI dataflows
-      links:
-        - url: ../transform-model/dataflows/dataflows-introduction-self-service.md
-          itemType: tutorial
-          text: Introduction to dataflows
-        - url: ../transform-model/dataflows/dataflows-create.md
-          itemType: how-to-guide
-          text: Create a dataflow
-        - url: ../transform-model/dataflows/dataflows-premium-features.md
-          itemType: concept
-          text: Premium features of dataflows
-      # footerLink (optional)
-      footerLink:
-        url: ../transform-model/dataflows/dataflows-directquery.md
-        text: Using DirectQuery and dataflows
-    # Card
-    - title: Power BI gateways
-      links:
-        - url: ../connect-data/service-gateway-onprem.md
-          itemType: overview
-          text: On-premises data gateway
-        - url: ../connect-data/service-gateway-deployment-guidance.md
-          itemType: concept
-          text: Deployment guidance for Power BI data gateways
-        - url: ../connect-data/service-gateway-power-bi-faq.yml
-          itemType: tutorial
-          text: On-premises data gateway FAQ
-      # footerLink (optional)
-      footerLink:
-        url: ../connect-data/service-gateway-custom-connectors.md
-        text: Using custom data connectors with gateways
-    # Card
-    - title: Power BI change management
-      links:
-        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-desktop
-          itemType: get-started
-          text: Latest updates to Power BI Desktop
-        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-service
-          itemType: get-started
-          text: Latest updates to the Power BI service
-        - url: ../fundamentals/desktop-latest-update-archive.md
-          itemType: reference
-          text: Power BI updates archive
-      # footerLink (optional)
-      footerLink:
-        url: ../fundamentals/index.yml
-        text: Get Started with Power BI
-    # Card
-    - title: Power BI and DirectQuery
-      links:
-        - url: ../connect-data/desktop-directquery-about.md
-          itemType: overview
-          text: DirectQuery and Power BI
-        - url: ../connect-data/desktop-directquery-about.md
-          itemType: concept
-          text: Using DirectQuery in Power BI Desktop
-        - url: ../transform-model/dataflows/dataflows-directquery.md
-          itemType: concept
-          text: Using DirectQuery with dataflows
-      # footerLink (optional)
-      footerLink:
-        url: ../guidance/directquery-model-guidance.md
-        text: DirectQuery model guidance
-    # Card
-    - title: Power BI Desktop
-      links:
-        - url: ../fundamentals/desktop-what-is-desktop.md
-          itemType: concept
-          text: What is Power BI Desktop?
-        - url: ../fundamentals/desktop-get-the-desktop.md
-          itemType: how-to-guide
-          text: Get Power BI Desktop
-        - url: ../fundamentals/desktop-getting-started.md
-          itemType: how-to-guide
-          text: Get started with Power BI Desktop
-      # footerLink (optional)
-      footerLink:
-        url: ../connect-data/desktop-connect-to-data.md
-        text: Connect to data in Power BI Desktop
-    # Card
-    - title: The Power BI service
-      links:
-        - url: ../fundamentals/power-bi-service-overview.md
-          itemType: concept
-          text: What is the Power BI service?
-        - url: ../fundamentals/service-get-started.md
-          itemType: concept
-          text: Get started with the Power BI service
-        - url: ../fundamentals/service-basic-concepts.md
-          itemType: concept
-          text: Basic concepts for the Power BI service
-      # footerLink (optional)
-      footerLink:
-        url: ../consumer/end-user-experience.md
-        text: Getting around in the Power BI service
-    # Card
-    - title: Power BI development and embedded
-      links:
-        - url: ../developer/automation/overview-of-power-bi-rest-api.md
-          itemType: overview
-          text: The Power BI REST API
-        - url: ../developer/embedded/embedded-analytics-power-bi.md
-          itemType: concept
-          text: Power BI embedded analytics
-        - url: ../developer/visuals/develop-power-bi-visuals.md
-          itemType: concept
-          text: Develop a Power BI visual
-      # footerLink (optional)
-      footerLink:
-        url: https://powerbi.microsoft.com/developers/
-        text: Power BI developer center
-    # Card
-    - title: Power BI for government
-      links:
-        - url: service-govus-overview.md
-          itemType: overview
-          text: Power BI for US government customers
-        - url: service-govus-signup.md
-          itemType: concept
-          text: Enroll a US government organization
-      # footerLink (optional)
-      footerLink:
-        url: /power-platform/admin/powerapps-us-government
-        text: Microsoft Power Apps for US Government
-    # Card
-    - title: Power BI whitepapers
-      links:
-        - url: ../guidance/whitepapers.md
-          itemType: overview
-          text: White papers for Power BI
-        - url: ../guidance/whitepaper-powerbi-security.md
-          itemType: reference
-          text: Power BI Security whitepaper
-        - url: ../guidance/whitepaper-powerbi-enterprise-deployment.md
-          itemType: reference
-          text: Power BI Enterprise Deployment whitepaper
-      # footerLink (optional)
-      footerLink:
-        url: https://aka.ms/power-bi-gdpr-whitepaper
-        text: Power BI and GDPR
     # Card
     - title: Power BI Enterprise Guidance
       links:
@@ -297,21 +60,94 @@ conceptualContent:
         url: ../guidance/index.yml
         text: See more
     # Card
-    - title: Power BI visuals
+    - title: Power BI and DirectQuery
       links:
-        - url: organizational-visuals.md
+        - url: ../connect-data/desktop-directquery-about.md
           itemType: overview
-          text: Manage Power BI visuals in your enterprise
-        - url: ../developer/visuals/power-bi-custom-visuals.md
-          itemType: reference
-          text: Where to find Power BI visuals
-        - url: ../developer/visuals/power-bi-custom-visuals-organization.md
-          itemType: overview
-          text: Organizational visuals in Power BI
+          text: DirectQuery and Power BI
+        - url: ../connect-data/desktop-directquery-about.md
+          itemType: concept
+          text: Using DirectQuery in Power BI Desktop
+        - url: ../transform-model/dataflows/dataflows-directquery.md
+          itemType: concept
+          text: Using DirectQuery with dataflows
       # footerLink (optional)
       footerLink:
-        url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-        text: Visualization types in Power BI
+        url: ../connect-data/index.yml
+        text: See more
+    # Card
+    - title: Power BI dataflows
+      links:
+        - url: ../transform-model/dataflows/dataflows-introduction-self-service.md
+          itemType: tutorial
+          text: Introduction to dataflows
+        - url: ../transform-model/dataflows/dataflows-create.md
+          itemType: how-to-guide
+          text: Create a dataflow
+        - url: ../transform-model/dataflows/dataflows-premium-features.md
+          itemType: concept
+          text: Premium features of dataflows
+      # footerLink (optional)
+      footerLink:
+        url: ../transform-model/index.yml
+        text: See more
+    # Card
+    - title: Power BI change management
+      links:
+        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-desktop
+          itemType: get-started
+          text: Latest updates to Power BI Desktop
+        - url: /power-bi/fundamentals/desktop-latest-update?tabs=powerbi-service
+          itemType: get-started
+          text: Latest updates to the Power BI service
+        - url: ../fundamentals/desktop-latest-update-archive.md
+          itemType: reference
+          text: Power BI updates archive
+      # footerLink (optional)
+      footerLink:
+        url: ../fundamentals/index.yml
+        text: See more
+    # Card
+    - title: Power BI for developers
+      links:
+        - url: ../developer/automation/overview-of-power-bi-rest-api.md
+          itemType: overview
+          text: The Power BI REST API
+        - url: ../developer/embedded/embedded-analytics-power-bi.md
+          itemType: concept
+          text: Power BI embedded analytics
+        - url: https://playground.powerbi.com 
+          itemType: deploy
+          text: Power BI Playground (for embedded analytics)
+        - url: ../developer/visuals/develop-power-bi-visuals.md
+          itemType: concept
+          text: Develop a Power BI visual
+        - url: /powershell/power-bi/overview
+          itemType: reference
+          text: Power BI PowerShell reference guide
+      # footerLink (optional)
+      footerLink:
+        url: ../developer/index.yml
+        text: See more
+    # Card
+    - title: Third-party tools for Power BI
+      links:
+        - url: service-premium-connect-tools.md
+          itemType: overview
+          text: Using an XMLA endpoint
+        - url: https://tabulareditor.github.io/
+          itemType: download
+          text: The Tabular Editor 
+        - url: https://daxstudio.org/
+          itemType: download
+          text: DAX Studio
+        - url: http://alm-toolkit.com/
+          itemType: download
+          text: ALM Toolkit for Power BI
+      # footerLink (optional)
+      footerLink:
+        url: ../guidance/index.yml
+        text: See more
 
 # additionalContent section (optional)
 # Card with summary style

@@ -8,7 +8,7 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 10/19/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -100,7 +100,7 @@ Notice that the opportunity count in the app matches the count in the upper left
 ## Clean up resources
 If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and dataset.
 
-## Limitations and considerations
+## Considerations and limitations
 For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## Next steps

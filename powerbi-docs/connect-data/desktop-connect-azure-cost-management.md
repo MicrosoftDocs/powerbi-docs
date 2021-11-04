@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/21/2021
+ms.date: 10/29/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -31,7 +31,7 @@ To use the **Azure Cost Management connector** in Power BI Desktop, take the fol
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
-4. In the dialog that appears, enter either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**. 
+4. In the dialog that appears, for the **Choose Scope** drop down, use **Manually Input Scope** for **Microsoft Customer Agreements**, or use **Enrollment Number** for **Enterprise Agreements (EA)**. 
 
 
 ## Connect to a Microsoft Customer Agreement account 
@@ -119,11 +119,12 @@ When you select **Load**, the data is loaded into Power BI Desktop.
 
 When the data you selected is loaded, the data tables and fields are shown in the **Fields** pane.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations apply to the Azure Cost Management data connector:
+The following considerations and limitations apply to the Azure Cost Management data connector:
 
-* The Azure Cost Managagement data connector does not work with Office 365 GCC customer accounts.
+* Data row requests exceeding one million rows is not supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
+* The Azure Cost Management data connector does not work with Office 365 GCC customer accounts.
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 

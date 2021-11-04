@@ -1,13 +1,13 @@
 ---
 title: Multi-Geo support for Power BI Premium
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/25/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium 
 ---
 
@@ -23,7 +23,8 @@ Sovereign clouds support Multi-Geo across regions within that cloud.
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+
 
 > [!NOTE]
 > Power BI Premium Per User (PPU) is not supported for Multi-Geo.
@@ -86,7 +87,7 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 
 Large-storage format datasets should not be moved from the region where they were created. Reports based on a large-format dataset will not be able to load the dataset, and return a *Cannot load model* error. Move the large-storage format dataset back to its original region to make it available again.
 
-## Limitations and considerations
+## Considerations and limitations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - Cached data and queries stored in a remote region stays in that region at rest. Additionally the data at rest will be replicated to another region in the same Azure geography for disaster recovery if the Azure geography contains more than one region. Data in transit may go back and forth between multiple geographies.
@@ -104,7 +105,7 @@ Large-storage format datasets should not be moved from the region where they wer
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -112,4 +113,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

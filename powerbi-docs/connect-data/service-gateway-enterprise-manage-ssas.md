@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2019
+ms.date: 10/19/2021
 ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
 LocalizationGroup: Gateways
 ---
@@ -104,8 +104,7 @@ To perform on-premises Active Directory property lookup to remap Azure AD UPNs t
 
 In the Power BI service, the following occurs:
 
-* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as
-       firstName.lastName@contoso.com.
+* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as `firstName.lastName@contoso.com`.
 
 > [!NOTE]
 > Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* the user name string is sent to the on-premises data gateway.
@@ -184,7 +183,7 @@ To validate what an original name is replaced with, enter a value for **Original
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
 
-### Limitations for mapping rules
+### Considerations and limitations
 
 Mapping is for the specific data source that's being configured. It's not a global setting. If you have multiple Analysis Services data sources, you have to map the users for each data source.
 

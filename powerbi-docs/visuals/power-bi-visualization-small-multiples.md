@@ -7,7 +7,7 @@ ms.reviewer: mihart, rienhu
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/06/2021
+ms.date: 10/19/2021
 LocalizationGroup: Visualizations
 ---
 # Create small multiples in Power BI
@@ -50,7 +50,7 @@ The default is a 2×2 grid of small multiples, but you can adjust the number of 
 
 As with other visual titles, you can adjust the style and position of the small multiple titles in the **Small multiple title** card.
 
-## Limitations and considerations
+## Considerations and limitations
 
 Here are some current limitations.
 

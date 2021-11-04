@@ -7,13 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 LocalizationGroup: Premium 
 ---
 
 # Use the Gen2 metrics app
 
-The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best  use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on autoscale.
+The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on [autoscale](service-premium-auto-scale.md).
+
+>[!NOTE]
+>When turning on autoscale, make sure there are no [Azure policies](/azure/governance/policy/overview) preventing autoscale from working.
 
 The app is updated often with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
@@ -145,11 +148,14 @@ This page provides a help summary for each one of the Gen2 metrics app pages. At
 >[!NOTE]
 >Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
-## Limitations
+## Considerations and limitations
 
 * The app displays results for the last 14 or 28 days, depending on the visual.
 
 * The app only displays memory measurements and performance breakdown for datasets.
+
+* The app only supports monitoring datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](./../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
+
 
 * The Refresh page shown in the app doesn't work yet.
 

@@ -1,14 +1,14 @@
 ---
 title: Embed paginated reports in your Power BI embedded analytics application
 description: Learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 08/10/2021
+ms.date: 10/19/2021
 
 ---
 
@@ -92,7 +92,7 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
-    >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+    >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
@@ -194,7 +194,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ---
 
-## Limitations
+## Considerations and limitations
 
 The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
 

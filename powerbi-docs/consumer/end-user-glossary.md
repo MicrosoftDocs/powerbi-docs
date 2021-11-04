@@ -7,7 +7,7 @@ services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 09/09/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
@@ -240,6 +240,7 @@ This has been replaced with **nav pane** but may still appear in some documentat
 The controls along the left edge of Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **license**    
@@ -275,6 +276,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **notification**    
@@ -350,6 +352,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
+
 See *account*.
 
 **publish**    

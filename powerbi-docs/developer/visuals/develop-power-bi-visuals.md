@@ -1,8 +1,8 @@
 ---
 title: Developing custom visuals in Power BI
 description: This article describes the development of custom Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi

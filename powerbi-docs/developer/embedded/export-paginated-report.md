@@ -1,17 +1,18 @@
 ---
 title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 09/02/2021
+ms.date: 11/03/2021
 ---
 
 # Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
+
 * **.pptx** (PowerPoint)
 * **.pdf** (and [Accessible PDF, or PDF/UA](../../report-server/rendering-extension-support.md))
 * **.xlsx** (Excel)
@@ -20,8 +21,8 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.xml**
 * **.mhtml**
 * **Image**
-    * When exporting to an image, set the image format via the `OutputFormat` format setting
-    * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
+  * When exporting to an image, set the image format via the `OutputFormat` format setting
+  * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
 
 ## Usage examples
 
@@ -45,7 +46,7 @@ Specify a variety of format settings for each file format. The supported propert
 
 Here are two examples, one for exporting the first four pages of a report using the report page size to a .pptx file, and another for exporting the third page of a report to a .jpeg file.
 
-**Exporting the first four pages to a .pptx**
+#### Exporting the first four pages to a .pptx
 
 ```json
 {
@@ -60,7 +61,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 }
 ```
 
-**Exporting the third page to a .jpeg**
+#### Exporting the third page to a .jpeg
 
 ```json
 {
@@ -321,11 +322,15 @@ private async Task<ExportedFile> ExportPaginatedReport(
 }
 ```
 
-## Limitations
+## Considerations and limitations
 
 * Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+
+* The number of paginated report exports is limited to 50 reports per minute per capacity.
+
+* Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
 ## Next steps
 

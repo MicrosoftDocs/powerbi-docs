@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 10/19/2021
 LocalizationGroup: Transform and shape data
 ---
 
@@ -140,7 +140,7 @@ If at least one table in the dataset has its storage mode set to either **Import
 When you select Dual and Import tables in **Data** view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
 
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations for this release of storage mode and its correlation with composite models.
 

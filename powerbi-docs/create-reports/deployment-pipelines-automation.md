@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 10/06/2021
+ms.date: 10/19/2021
 ---
 
 # Automate your deployment pipeline using APIs and Azure DevOps
@@ -79,7 +79,7 @@ You can also download the entire [PowerBI-Developer-Samples](https://github.com/
 
 * [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1)
 
-* [End to end example - including pipeline creation and deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-E2ESampleFromPipelineCreationToDeployment.ps1)
+* [End to end example of pipeline creation and backward deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-E2ESampleFromPipelineCreationToDeployment.ps1)
 
 * [Assign an admin user to a pipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-AddUserToPipeline.ps1)
 
@@ -136,9 +136,9 @@ To run a PowerShell script that performs a deployment, you'll need the component
     }
     ```
 
-## Limitations and considerations
+## Considerations and limitations
 
-* Deployment using APIs is subject to the same [limitations](deployment-pipelines-process.md#limitations-1) as the Power BI deployment pipelines user interface.
+* Deployment using APIs is subject to the same [limitations](deployment-pipelines-process.md#considerations-and-limitations) as the Power BI deployment pipelines user interface.
 
 * A *service principal* cannot configure *OAuth* credentials. After deploying new items, the signed in *service principal* becomes the owner of any deployed paginated reports and datasets. In such cases, a refresh cannot be completed.
 

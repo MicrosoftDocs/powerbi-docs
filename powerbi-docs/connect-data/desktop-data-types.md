@@ -6,8 +6,8 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: reference
-ms.date: 05/05/2021
+ms.topic: conceptual
+ms.date: 10/27/2021
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -64,6 +64,44 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
+
+Power BI converts and displays data differently in certain situations. This section describes common cases of converting Boolean values, and how to address conversions that create unexpected results in Power BI.  
+
+For the best and most consistent results, when loading a column that contains Boolean information (true/false) into Power BI, set the column type to *True/False* as described and explained in the following example.
+
+In this example, we loaded data about whether our customers have signed up for our newsletter: a value of *TRUE* indicates the customer has signed up for the newsletter, a value of *FALSE* indicates the customer has not signed up. However, when we publish the report to the Power BI service, we notice that the column tracking the newsletter sign-up status shows as *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following collections of steps involving querying, publishing, and refreshing the data describe how conversions occur, and how to address them.
+
+The simplified query for this table shown in the following image.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-01.png" alt-text="Columns set to boolean":::
+
+The data type of the **Subscribed To Newsletter** column is set to *Any*, and as a result of that data type setting, the data is loaded as text into the Power BI model:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-02.png" alt-text="Data loaded into Power B I appears as expected":::
+
+When we add a simple visualization showing the detailed information per customer, the data appears in the visual as expected, both in Power BI Desktop, and when published to the Power BI service. 
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Visual shows data appearing as expected":::
+
+However, when we refresh the dataset in the Power BI service the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Visual shows data appearing in an unexpected format after refresh":::
+
+If we republish the report from Power BI Desktop, the **Subscribed To Newsletter** column will again show *TRUE* or *FALSE* as we expect, but once a refresh occurs in the Power BI service, the values are again changed to show *-1* and *0*.
+
+The **solution** to ensure this doesn't happen is to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-05.png" alt-text="Change the data type of the column to true false":::
+
+When the change is made, the visualization shows the values in the **Subscribed To Newsletter** column slightly differently; rather than the text being all capital letters (as entered in the table), they are now italic and only the first letter is capitalized, which is the result of change the column's data type.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-06.png" alt-text="Values appear differently when the data type is changed":::
+
+Once the data type is changed and republished to the Power BI service, and when a refresh occurs, the values are displayed as *True* or *False*, as expected.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="When true or false values use the true false data type, data appears as expected after refresh":::
+
+In summary, when working with Boolean data in Power BI, make sure your columns are set to the **True/False** data type in Power BI Desktop.
 
 ### Blanks/nulls type
 **Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](/dax/blank-function-dax) function, and test for blanks by using the [ISBLANK](/dax/isblank-function-dax) logical function.
@@ -191,3 +229,14 @@ How blanks are handled in operations such as addition or concatenation depends o
 | TRUE AND BLANK |FALSE |TRUE |
 | BLANK OR BLANK |BLANK |Error |
 | BLANK AND BLANK |BLANK |Error |
+
+
+## Next steps
+
+You can do all sorts of things with Power BI Desktop and data. For more information on its capabilities, check out the following resources:
+
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
