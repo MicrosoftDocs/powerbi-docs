@@ -37,17 +37,17 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 1. Select More actions (...) from the upper-right corner of the visualization.
 
-    ![Screenshot of a visualization with an arrow pointing to the ellipsis button.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/pbi-export-tile3.png" alt-text="Screenshot of a visualization with the ellipsis button called out.":::
 
-1. Choose the **Export to .csv** option.
+1. Choose the **Export data** option.
 
-    ![Screenshot of the ellipsis drop-down with the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data.png" alt-text="Screenshot of the ellipsis drop-down with the Export data option called out.":::
 
 1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well.
 
 1. Your browser will prompt you to save the file.  Once saved, open the *.csv* file in Excel.
 
-    ![Screenshot of the .csv file with the exported data displayed.](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/pbi-export-to-excel.png" alt-text="Screenshot of the .csv file with the exported data displayed.":::
 
 ## Export data from a report
 
@@ -57,23 +57,23 @@ To follow along, open the [Procurement analysis sample report](../create-reports
 
 1. Create a new **Stacked column chart**.
 
-    ![Screenshot of clustered column chart template.](media/power-bi-visualization-export-data/power-bi-clustered.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-clustered.png" alt-text="Screenshot of clustered column chart template.":::
 
-1. From the **Fields** pane, select **Location > City**, **Location > Country/Region**, and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the **Value** well.
+1. From the **Fields** pane, select **Location > Country/Region**, **Location > City**, and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the **Values** well.
 
-    ![Screenshot of the visualization being built with the City and Count of Discount Percent called out.](media/power-bi-visualization-export-data/power-bi-build.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-build.png" alt-text="Screenshot of the visualization being built with the City and Count of Discount Percent called out.":::
 
-1. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the **Value** well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
+1. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the **Values** well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
 
-    ![Screenshot of the aggregation list with the Average option called out.](media/power-bi-visualization-export-data/power-bi-export-data6.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data6.png" alt-text="Screenshot of the aggregation list with the Average option called out.":::
 
-1. Add a filter to **City**, select all cities, and then remove **Atlanta**.
+1. Add a filter to **City**, select all cities, and then remove **Atlanta, GA**.
 
-    ![Screenshot of the City filter with the cleared Atlanta, GA check box called out.](media/power-bi-visualization-export-data/power-bi-filter.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-filter.png" alt-text="Screenshot of the City filter with the cleared Atlanta, GA check box called out.":::
 
 1. Drill down one level in the hierarchy. Turn on drilling and drill down to the **City** level.
 
-    ![Screenshot of the visual drilled down to the city level.](media/power-bi-visualization-export-data/power-bi-drill.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-drill.png" alt-text="Screenshot of the visual drilled down to the city level.":::
 
 Now we're ready to try out both options for exporting data.
 
@@ -83,7 +83,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
 1. Select the ellipsis in the upper-right corner of the visualization. Select **Export data**.
 
-    ![Screenshot of the upper-right corner with the ellipsis button and the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data2.png" alt-text="Screenshot of the upper-right corner with the ellipsis button and the Export data option called out.":::
 
     In the Power BI service, since your visualization has an aggregate (you changed **Count** to *average*),  you'll have two options:
 
@@ -98,11 +98,11 @@ Select the option for **Summarized data** if you want to export data for what yo
 
 1. From **Export data**, select **Summarized data**, either choose *.xlsx* or *.csv*, and then select **Export**. Power BI exports the data.
 
-    ![Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data5.png" alt-text="Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.":::
 
 1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
 
-    ![Screenshot of the Excel output.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data9.png" alt-text="Screenshot of the Excel output.":::
 
     In this example, our Excel export shows one total for each city. Since we filtered out Atlanta, it isn't included in the results. The first row of our spreadsheet shows the filters that Power BI used when extracting the data.
 
@@ -120,7 +120,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
 1. Select the ellipsis from the upper-right corner of the visualization. Select **Export data**.
 
-    ![Screenshot of the upper-right corner with the ellipsis button and the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data2.png" alt-text="Screenshot of the upper-right corner with the ellipsis button and the Export data option called out.":::
 
     In the Power BI service, since your visualization has an aggregate (you changed **Count** to **average**),  you'll have two options:
 
@@ -135,11 +135,15 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
 1. From **Export data**, select **Underlying data**, and then select **Export**. Power BI exports the data.
 
-    ![Screenshot of the Export data screenshot with the underlying data called out.](media/power-bi-visualization-export-data/power-bi-underlying.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-underlying.png" alt-text="Screenshot of the Export data screenshot with the underlying data called out.":::
 
 1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
 
-    ![Screenshot of the .xlsx file with the exported data displayed.](media/power-bi-visualization-export-data/power-bi-excel.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-excel.png" alt-text="Screenshot of the .xlsx file with the exported data displayed.>":::
+
+    - This screenshot shows you only a small portion of the Excel file; it has more than 100,000 rows.
+
+    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.
 
     - This screenshot shows you only a small portion of the Excel file; it has more than 100,000 rows.
 
@@ -181,7 +185,7 @@ What you see when you select **Underlying data** can vary. Understanding these d
 | Measures only | all non-hidden columns from all related tables (to expand the measure) |
 | Measures only | summarized data for any duplicate rows for model measures |
 
-\* In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon ![showing icon](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Measures can be created in Power BI Desktop.
+\* In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
 ### Set the export options
 
@@ -204,7 +208,7 @@ To set these options:
 
 1. Under **CURRENT FILE**, select **Report settings**.
 
-    ![desktop report settings](media/power-bi-visualization-export-data/desktop-report-settings.png)
+    :::image type="content" source="media/power-bi-visualization-export-data/desktop-report-settings.png" alt-text="Screenshot showing the desktop report settings.":::
 
 1. Make your selection from the **Export data** section.
 
@@ -234,11 +238,11 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 
 - When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 
-    - There are too many columns. Try reducing the number of columns and exporting again.
+  - There are too many columns. Try reducing the number of columns and exporting again.
 
-    - There's data that is difficult to compress.
+  - There's data that is difficult to compress.
 
-    - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
+  - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
 
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
