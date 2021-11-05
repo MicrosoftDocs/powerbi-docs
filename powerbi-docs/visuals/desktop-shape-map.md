@@ -46,7 +46,7 @@ Take the following steps to create a **Shape map**:
    > [!NOTE]
    > To get sample map data you can use to test the **Shape Map** visual, see the section titled **Getting Map Data** below.
 
-   :::image type="content" source="media/desktop-shape-map/shape-map-3a.png" alt-text="Build your shape map.":::
+   :::image type="content" source="media/desktop-shape-map/power-bi-shape-map-selections.png" alt-text="Build your shape map.":::
 
 1. In the **Format** settings pane, expand **Shape**, and change the default **Map**. In this example we've selected Italy, and the rendering appears, as shown in the following image.
 
