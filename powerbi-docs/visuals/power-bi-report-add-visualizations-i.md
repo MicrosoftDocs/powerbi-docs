@@ -61,9 +61,9 @@ Create a visualization and then change its type.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-convert.png" alt-text="Screenshot of the Visualizations pane with the Stacked column chart icon called out.":::
 
-1. To change the way the visual is sorted, select **More options** (...). Use the sort options to change the direction of the sort (ascending or descending) and select **Sort by** to change the column being used to sort.
+1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the Sort axis (ascending or descending) or change the column that is being sorted on.
 
-   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-sort.png" alt-text="Screenshot of the More actions dropdown.":::
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-sort.png" alt-text="Screenshot of the More actions dropdown showing the sort axis options.":::
   
 ## Next steps
 
