@@ -11,4 +11,6 @@ ms.date: 11/05/2021
 LocalizationGroup: Create reports
 ---
 
+# Create page and button navigators
+
 Using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks. These navigators should save hours of effort building and managing your page or bookmark navigation experiences.
