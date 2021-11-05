@@ -444,7 +444,7 @@ Some very powerful [Power BI monitoring and protection](https://techcommunity.mi
 - Determine when someone outside a predefined security group views specific content in the Power BI service.
 
 > [!CAUTION]
-> Licensing, cost, and administrative permissions for Defender for Cloud Apps are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
+> Licensing, cost, and administrative permissions for Defender for Cloud Apps are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-defender-for-cloud-apps-admin-roles) with permissions scoped to monitoring just the Power BI service.
 
 ## Planning for change
 

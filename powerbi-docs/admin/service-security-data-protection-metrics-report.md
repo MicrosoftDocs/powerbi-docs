@@ -45,9 +45,10 @@ Improved versions of the data protection metrics report are released periodicall
 ## Notes and considerations
 
 * In order for the data protection metrics report to be successfully generated, [information protection](./service-security-enable-data-sensitivity-labels.md) must be enabled on your tenant and [sensitivity labels should have been applied](./service-security-apply-data-sensitivity-labels.md).
-* In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](./service-security-using-microsoft-cloud-app-security-controls.md#cloud-app-security-licensing).
+* In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](./service-security-using-microsoft-cloud-app-security-controls.md#defender-for-cloud-apps-licensing).
 * If you decide to share information from the data protection metrics report with a user who is not a Power BI administrator, be aware that this report contains sensitive information about your organization.
 * The data protection metrics report is a special kind of report and does not show up in "Shared with me", "Recents", and "Favorites" lists.
+
 * The data protection metrics report is not available to [external users (Azure Active Directory B2B guest users)](./service-admin-azure-ad-b2b.md).
 
 ## Next steps

@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Using Microsoft Defender for Cloud Apps controls in Power BI
 
-Using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
+Using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
 ![Using Defender for Cloud Apps controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
@@ -51,7 +51,7 @@ The process for setting session policies is described in detail in the [Session 
 
 You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
-Defender for Cloud Apps also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-cloud-app-security-detections-for-power-bi).
+Defender for Cloud Apps also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-defender-for-cloud-apps-detections-for-power-bi).
 
 ### Use Microsoft Information Protection sensitivity labels (recommended)
 
@@ -88,14 +88,14 @@ A new role is created for Power BI admins when using Defender for Cloud Apps wit
 
 ## Considerations and limitations
 
-Using Defender for Cloud Apps with Power BI is designed to help secure your organization's content and data, with detections that monitor user sessions and their activities. When using Defender for Cloud Apps with Power BI, there are a few considerations and limitations you should keep in mind:
+Using Defender for Cloud Apps with Power BI is designed to help secure your organization’s content and data, with detections that monitor user sessions and their activities. When using Defender for Cloud Apps with Power BI, there are a few considerations and limitations you should keep in mind:
 
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
 * Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. [See more detail](/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
-> In the session policy, in the "Action" part, the "protect" capability will only work if no label exists on the item. If a label already exists, the "protect" action won't apply; you can't override an existing label that has already been applied to an item in Power BI.
+> In the session policy, in the "Action" part, the "protect" capability works only if no label exists on the item. If a label already exists, the "protect" action won't apply; you can't override an existing label that has already been applied to an item in Power BI.
 
 ## Example
 
@@ -115,26 +115,26 @@ From the list of options in the drop-down, select **Session policy**.
 
 In the window that appears, create the session policy. The numbered steps describe settings for the following image.
 
-  1. In the **Policy template** drop-down, choose *No template*.
-  2. For the **Policy name** box, provide a relevant name for your session policy.
-  3. For **Session control type**, select *Control file downloaded (with DLP)*.
+1. In the **Policy template** drop-down, choose *No template*.
+2. For the **Policy name** box, provide a relevant name for your session policy.
+3. For **Session control type**, select *Control file downloaded (with DLP)*.
 
-      For the **Activity source** section, choose relevant blocking policies. We recommend blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
+    For the **Activity source** section, choose relevant blocking policies. We recommend blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
 
-        ![Create the session policy - block downloads.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
+    ![Create the session policy - block downloads.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
 
-        When you scroll down you see more options. The following image shows those options, with additional examples.
+    When you scroll down you see more options. The following image shows those options, with additional examples.
 
-  4. Choose *Confidentiality label* as *highly confidential* or whatever best fits your organization.
-  5. Change the **Inspection method** to *none*.
-  6. Choose the **Block** option that fits your needs.
-  7. Make sure you create an alert for such an action.
+4. Choose *Confidentiality label* as *highly confidential* or whatever best fits your organization.
+5. Change the **Inspection method** to *none*.
+6. Choose the **Block** option that fits your needs.
+7. Make sure you create an alert for such an action.
 
-        ![Select session policy settings.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
+    ![Select session policy settings.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
 
-  8. Finally make sure you select the **Create** button to create the session policy.
+8. Finally, select the **Create** button to create the session policy.
 
-        ![Create the session policy.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
+    ![Create the session policy.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 ## Next steps
 
