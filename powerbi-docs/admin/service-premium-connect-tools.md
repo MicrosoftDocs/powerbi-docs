@@ -80,16 +80,20 @@ By default, a Premium capacity has the XMLA Endpoint property setting enabled fo
 
 ## Connecting to a Premium workspace
 
-Workspaces assigned to a capacity have a connection string in URL format like this,  
+Workspaces assigned to a capacity have a connection string in URL format. For example:
+
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
-Applications connecting to the workspace use the URL as if it were an Analysis Services server name. For example,  
+Applications connecting to the workspace use the URL as if it were an Analysis Services server name. For example:
+
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
-Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example,  
+Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example:
+
 `powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
 
-B2B users must specify their organization UPN in tenant name. For example,  
+B2B users must specify their organization UPN in tenant name. For example:
+
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
 > [!NOTE]
@@ -113,10 +117,11 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 [New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
-**Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].**
+**Cannot connect to `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.**
 
-To work around this error, in addition to the workspace name, specify the ObjectIDGuid, which can be copied from the workspace objectID in the URL. Append the objectID to the connection URL. For example,  
-'powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830'.
+To work around this error, in addition to the workspace name, specify the ObjectIDGuid, which can be copied from the workspace objectID in the URL. Append the objectID to the connection URL. For example:
+
+`powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830`.
 
 ### Duplicate dataset name
 
@@ -130,7 +135,7 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 The following datasets aren't accessible by the XMLA endpoint. These datasets won't appear under the workspace in SSMS or in other tools:
 
-- Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model. 
+- Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets.
@@ -149,13 +154,10 @@ In addition to the XMLA Endpoint property being enabled read-write by the capaci
 
 The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
 
-
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
 |Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
 |Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
-
-
 
 **Allow live connections** is an export and sharing setting.
 
@@ -274,7 +276,7 @@ By selecting **Power BI datasets**, and then selecting a dataset to create a rep
 
 ![Connect live to dataset](media/service-premium-connect-tools/dataset-live-connect.png)
 
-The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset . In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model. 
+The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset . In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model.
 
 ![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
 

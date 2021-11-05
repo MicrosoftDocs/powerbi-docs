@@ -84,7 +84,7 @@ Settings for these detections are configured in the Defender for Cloud Apps port
 
 ## Power BI admin role in Defender for Cloud Apps
 
-A new role is created for Power BI admins when using Defender for Cloud Apps with Power BI. When you log in as a Power BI admin to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), you have limited access to Power-BI-relevant data, alerts, users at risk, activity logs, and other information.
+A new role is created for Power BI admins when using Defender for Cloud Apps with Power BI. When you log in as a Power BI admin to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), you have limited access to data, alerts, users at risk, activity logs, and other information relevant to Power BI.
 
 ## Considerations and limitations
 
