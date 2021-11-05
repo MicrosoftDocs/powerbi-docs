@@ -145,7 +145,7 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
 Change the layering order of visuals and shapes in your reports. Layer order determines which objects will come to the front when selected. Whenever you select an object on the report canvas, it becomes active and moves to the top layer. For visuals, this makes it easier to interact with the selected visual. But, for shapes and backgrounds, you may want to secure them to the bottom layer, so that you can't accidentally select them and cover or obscure your report visuals. 
 
-Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Desktop.
+Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Service.
 
 Watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
 
@@ -153,7 +153,7 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
 1. Add a new report page by selecting the yellow plus sign.
 
-1. Add a shape to the canvas. Here, we've added a blue rectangle.
+1. Add a shape to the canvas. Here, we've added a green rectangle.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a blue rectangle.":::
 

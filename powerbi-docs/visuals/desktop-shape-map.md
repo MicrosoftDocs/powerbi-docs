@@ -29,11 +29,7 @@ The **Shape map** visual is only available in Power BI Desktop and not in Power 
 
 ## Creating Shape Maps
 
-You can test the **Shape map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. 
-
-The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview features**, then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
-
-:::image type="content" source="media/desktop-shape-map/power-bi-preview-features.png" alt-text="Enable the Shape map preview feature.":::
+You can test the **Shape map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
 
 In Power BI Desktop, after **Shape map visual** is enabled, select the **Shape map** icon from the **Visualizations** pane.
 
@@ -45,19 +41,23 @@ Power BI Desktop creates an empty **Shape map** visual design canvas.
 
 Take the following steps to create a **Shape map**:
 
-1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket. Depending on the contents of the data field, you may not see a map yet.
+1. In the **Fields** pane, drag a data field that has geography names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket.
 
    > [!NOTE]
    > To get sample map data you can use to test the **Shape Map** visual, see the section titled **Getting Map Data** below.
 
    :::image type="content" source="media/desktop-shape-map/shape-map-3a.png" alt-text="Build your shape map.":::
 
-1. In the **Format** settings pane, expand **Shape**, and select from the **Map** drop-down to show your data. The rendering appears, as shown in the following image.
+1. In the **Format** settings pane, expand **Shape**, and change the default **Map**. In this example we've selected Italy, and the rendering appears, as shown in the following image.
 
-   :::image type="content" source="media/desktop-shape-map/shape-map-3b-new.png" alt-text="Open the Formatting pane and select Shape.":::
+   :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Open the Formatting pane and select Shape and then Italy.":::  
 
    > [!NOTE]
    > In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+
+1. To display the map keys of the currently selected map, select **View map type key**. In this example we're using a map of Mexico and the Map keys displays the values being used to build the map.
+
+   :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Select View map keys to display keys.":::
 
 1. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
@@ -67,7 +67,7 @@ You can use custom maps with **Shape map** as long as they are in the **TopoJSON
 
 To use a **TopoJSON** map file, add a Shape map visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Format** section, expand **Shape** and select **+ Add map**.
 
-:::image type="content" source="media/desktop-shape-map/shape-map-6-new.png" alt-text="Open Formatting pane and select Add Map.":::
+:::image type="content" source="media/desktop-shape-map/power-bi-add-custom.png" alt-text="Open Formatting pane and select Add Map.":::
 
 ### Sample custom map
 
@@ -79,9 +79,11 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
 1. From Power BI Desktop, select **File** > **Open report**. 
 
-2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data.
+2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
 
-    :::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Custom shape map.":::
+    :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Select the custom map for districts.":::
+
+:::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Custom shape map.":::
 
 You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains. 
 
@@ -95,7 +97,7 @@ To quickly get data into a model to test **Shape map**, you can copy one of the 
 
 In this example, we've selected the data for Mexico and pasted it into Desktop using **Enter data**. The top row is automatically identified as a header.
 
-:::image type="content" source="media/desktop-shape-map/shape-map-5.png" alt-text="Create Table pane.":::
+:::image type="content" source="media/desktop-shape-map/power-bi-create-table.png" alt-text="Create table using copy and paste. ":::
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 
