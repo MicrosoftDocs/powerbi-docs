@@ -163,11 +163,11 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
     Now that you have 2 layers, try selecting the pie chart and then the background. When you select the pie chart, Power BI makes that object active and displays its header menu. When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart. You can change this default behavior.
 
-1. Select the pie chart and open the **Selection** pane. Use the **Layer order** controls to manipulate the layer order. Save the report changes.
+1. Select the pie chart and open the Formatting pane. Expand General and switch On the **Maintain layer order** toggle. Save the report changes and switch to **Reading view**.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page with the Layer Order controls highlighted.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page showing the Maintain layer order toggle.":::
 
-1. In Reading view, when you select the blue rectangle, it stays in the back layer.
+1. In Reading view, when you select the green rectangle, it stays in the back layer.
 
 ## Customize colors using a theme
 
