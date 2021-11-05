@@ -43,7 +43,7 @@ Add the following import to your file:
 import powerbiVisualsApi from "powerbi-visuals-api"; 
 ```
 
-After adding the import, you'll need to add a condition that will determine when to display the warning icon. Use the examples below to view two optional conditions. The full code for these examples is available in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts), which is part of the [PowerBI-visuals-sampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart)  repository.
+After adding the import, you'll need to add a condition that will determine when to display the warning icon. Use the examples below to view two optional conditions. The full code for these examples is available in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts), which is part of the [`PowerBI-visuals-sampleBarChart`](https://github.com/microsoft/PowerBI-visuals-sampleBarChart)  repository.
 
 ### Example 1 - Check language compatibility
 

@@ -134,7 +134,7 @@ There are several [public Power BI community forums](https://community.powerbi.c
 
 ### Publicly available discussion areas
 
-It's very common to see people posting Power BI technical questions on platforms like Twitter. A quick look at the [#PowerBI hashtag](https://twitter.com/search?q=%23PowerBI&amp;f=live) reveals a vibrant global community of Power BI enthusiasts. You will find discussions, post announcements, and users helping each other. The [#PowerBIHelp hashtag](https://twitter.com/search?q=%23PowerBIHelp&amp;f=live) is sometimes used, though less frequently.
+It's very common to see people posting Power BI technical questions on platforms like Twitter. A quick look at the [`#PowerBI` hashtag](https://twitter.com/search?q=%23PowerBI&amp;f=live) reveals a vibrant global community of Power BI enthusiasts. You will find discussions, post announcements, and users helping each other. The [`#PowerBIHelp` hashtag](https://twitter.com/search?q=%23PowerBIHelp&amp;f=live) is sometimes used, though less frequently.
 
 ### Community documentation
 

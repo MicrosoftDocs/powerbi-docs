@@ -206,11 +206,11 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 ### Set user-mapping configuration parameters on the gateway machine (if necessary)
 
-If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube video](https://www.youtube.com/watch?v=NG05PG9aiRw).
+If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
 
-1. Open the main gateway configuration file, Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll. By default, this file is stored at C:\Program Files\On-premises data gateway.
+1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at `C:\Program Files\On-premises data gateway`.
 
-1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later. 
+1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later.
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 

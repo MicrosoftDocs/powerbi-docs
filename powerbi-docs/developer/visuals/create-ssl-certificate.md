@@ -14,7 +14,7 @@ ms.date: 05/08/2020
 
 This article describes how to generate and install Secure Sockets Layer (SSL) certificates for Power BI visuals.
 
-For the Windows, macOS X, and Linux procedures, you must have the Power BI Visual Tools **pbiviz** package installed. For more information, see [Set up your environment for developing a Power BI visual](./environment-setup.md). 
+For the Windows, macOS X, and Linux procedures, you must have the Power BI Visual Tools `pbiviz` package installed. For more information, see [Set up your environment for developing a Power BI visual](./environment-setup.md).
 
 ## Create a certificate on Windows
 

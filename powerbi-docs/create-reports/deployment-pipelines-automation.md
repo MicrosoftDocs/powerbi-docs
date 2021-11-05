@@ -71,7 +71,7 @@ You can use PowerShell to integrate a Power BI deployment pipeline into Azure De
 
 You can use the PowerShell scripts below to understand how to perform several automation processes. To view or copy the text in a PowerShell sample, use the links in this section.
 
-You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1) GitHub folder.
+You can also download the entire [`PowerBI-Developer-Samples`](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1) GitHub folder.
 
 * [Deploy all](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-DeployAll.ps1)
 

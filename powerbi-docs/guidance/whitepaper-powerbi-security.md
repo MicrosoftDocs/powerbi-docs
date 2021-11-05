@@ -15,9 +15,13 @@ LocalizationGroup: Conceptual
 
 **Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
+<!-- cspell:disable -->
+
 **Writers:** Yitzhak Kesselman, Paddy Osborne, Matt Neely, Tony Bencic, Srinivasan Turuvekere, Cristian Petculescu, Adi Regev, Naveen Sivaraj, Ben Glastein, Evgeny Tshiorny, Arthi Ramasubramanian Iyer, Sid Jayadevan, Ronald Chang, Ori Eduar, Anton Fritz, Idan Sheinberg, Ron Gilad, Sagiv Hadaya, Paul Inbar, Igor Uzhviev, Michael Roth, Jaime Tarquino, Gennady Pats, Orion Lee, Yury Berezansky, Maya Shenhav, Romit Chattopadhyay, Yariv Maimon, Bogdan Crivat
 
 **Technical Reviewers:** Cristian Petculescu, Amir Netz, Sergei Gundorov
+
+<!-- cspell:enable -->
 
 **Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded Analytics, Power BI Mobile
 
@@ -104,7 +108,7 @@ The connection to the Power BI Premium infrastructure can be done in a number of
 
 The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (for example, metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
-The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). VMSS and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
+The backbone of each cluster are compute resources managed by [virtual machine scale sets](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Virtual machine scale sets and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
 
 There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
 
@@ -310,7 +314,7 @@ This section outlines advanced security features in Power BI. Some of the featur
 
 ### Service tags
 
-A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (e.g., PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
+A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (such as `PowerBI`) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
 
 ### Private Link integration
 
@@ -371,7 +375,7 @@ When sensitivity labels are enabled in Power BI:
 * Label inheritance upon the creation of new content in the Power BI service ensures that the label applied on a dataset in the Power BI service will be applied on new content created on top of the dataset.
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports.
 * Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service. 
-* Coming soon
+* Coming soon:
     * Power BI admin APIs for applying MIP labels to enable central teams to programmatically label content in the Power BI service.  
     * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (preview).
     * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
@@ -462,9 +466,9 @@ The following questions are common security questions and answers for Power BI. 
 
 * The gateway supports the following two communications protocols:
 
-  - AMQP 1.0 – TCP + TLS: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
+  * AMQP 1.0 – TCP + TLS: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
 
-  - HTTPS – WebSockets over HTTPS + TLS: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+  * HTTPS – WebSockets over HTTPS + TLS: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **What is the role of Azure CDN in Power BI?**
 
@@ -481,9 +485,11 @@ The following questions are common security questions and answers for Power BI. 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services.
 
 **For template apps, does Microsoft perform any security or privacy assessment of the template app prior to publishing items to the Gallery?**
+
 * No. The app publisher is responsible for the content while it is the customer's responsibility to review and determine whether to trust the template app publisher.
 
 **Are there template apps that can send information outside the customer network?**
+
 * Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the template app on tenant. The publisher is responsible for informing the customer about the app's behavior and capabilities.
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
