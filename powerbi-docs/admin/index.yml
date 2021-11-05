@@ -14,7 +14,7 @@ metadata:
   ms.collection: collection
   author: davidiseminger
   ms.author: davidi
-  ms.date: 10/15/2021
+  ms.date: 10/20/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -116,14 +116,38 @@ conceptualContent:
         - url: ../developer/embedded/embedded-analytics-power-bi.md
           itemType: concept
           text: Power BI embedded analytics
+        - url: https://playground.powerbi.com 
+          itemType: deploy
+          text: Power BI Playground (for embedded analytics)
         - url: ../developer/visuals/develop-power-bi-visuals.md
           itemType: concept
           text: Develop a Power BI visual
+        - url: /powershell/power-bi/overview
+          itemType: reference
+          text: Power BI PowerShell reference guide
       # footerLink (optional)
       footerLink:
         url: ../developer/index.yml
         text: See more
-
+    # Card
+    - title: Third-party tools for Power BI
+      links:
+        - url: service-premium-connect-tools.md
+          itemType: overview
+          text: Using an XMLA endpoint
+        - url: https://tabulareditor.github.io/
+          itemType: download
+          text: The Tabular Editor 
+        - url: https://daxstudio.org/
+          itemType: download
+          text: DAX Studio
+        - url: http://alm-toolkit.com/
+          itemType: download
+          text: ALM Toolkit for Power BI
+      # footerLink (optional)
+      footerLink:
+        url: ../guidance/index.yml
+        text: See more
 
 # additionalContent section (optional)
 # Card with summary style

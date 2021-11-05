@@ -89,7 +89,7 @@ The [Run Python scripts in Power BI Desktop](desktop-python-scripts.md) article 
 
    To get a larger view of the visualizations, you can minimize the **Python script editor**.
 
-Ok, let's create some visuals.
+Now let's create some visuals.
 
 ## Create a scatter plot
 
@@ -101,7 +101,7 @@ Let's create a scatter plot to see if there's a correlation between age and weig
    import matplotlib.pyplot as plt 
    dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
-   ```  
+   ```
 
    Your Python script editor pane should now look like this:
 
@@ -115,10 +115,10 @@ Let's create a scatter plot to see if there's a correlation between age and weig
 
 ## Create a line plot with multiple columns
 
- Let's create a line plot for each person showing their number of children and pets. Remove or comment the code under **Paste or type your script code here** and enter this Python code:
+Let's create a line plot for each person showing their number of children and pets. Remove or comment the code under **Paste or type your script code here** and enter this Python code:
 
- ```python
- import matplotlib.pyplot as plt 
+```python
+import matplotlib.pyplot as plt 
 ax = plt.gca() 
 dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
 dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 

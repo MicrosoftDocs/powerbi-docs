@@ -113,7 +113,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | OData | Yes | Yes | No | Yes | No | Yes |
 | ODBC | Yes | Yes | No | Yes | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes | No |
-| Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
+| Oracle | Yes | Yes | Yes <sup>9</sup> | Yes | Yes | Yes |
 
 
 ## Data sources P-R
@@ -191,6 +191,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
 
+<sup>9</sup> Decimal precision is limited to 15. 
+
 ## Considerations and limitations
 
 - Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
@@ -202,6 +204,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the underlying data source. This enables Power BI to respect the security settings that are configured at the data source level.
 The SSO option takes effect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
 
+- Azure Data Explorer
 - Azure SQL Database
 - Azure Synapse
 - Impala
