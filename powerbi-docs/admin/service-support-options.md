@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/06/2021
+ms.date: 11/05/2021
 ---
 
 # Power BI support options
@@ -55,7 +55,7 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 | **Power BI Premium Per User end-user support**: Technical and billing support for end users creating and consuming content in Power BI. | X | X |  | One business day. | [Power BI Support](https://support.powerbi.com)  |
 | **Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   | One business day or one hour, depending on severity of case.\* | [Power BI Support](https://support.powerbi.com)<br>OR<br>[Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
 | **Power BI admin support**: Technical and billing support for administrators of Power BI deployments at their organizations.  To use this option, you must be a Power BI Administrator or be assigned a Microsoft 365 admin role that can manage service requests. | X | X |   | One business day or one hour, depending on severity of case.\* | [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
-| **Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X | Various, depending on offering and severity of case.\* | Technical Account Manager <br>OR<br> [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
+| **Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X | Various, depending on offering and severity of case.\* | Customer Success Account Manager <br>OR<br> [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
 | | | | | | |
 
 \* A one-hour SLA is available only through _Sev A cases_, which require justification of immediate, direct business impact from work stoppage in existing production reporting.
