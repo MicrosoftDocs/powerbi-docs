@@ -57,4 +57,4 @@ The following image summarizes each of the key milestones detailed in this artic
 
 ## Next steps
 
-* [What is Power BI Embedded Gen2?](power-bi-embedded-generation-2.md)
+[What is Power BI Embedded Gen2?](power-bi-embedded-generation-2.md)
