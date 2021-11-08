@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 10/19/2021
+ms.date: 11/08/2021
 ---
 
 # Understand the deployment process
