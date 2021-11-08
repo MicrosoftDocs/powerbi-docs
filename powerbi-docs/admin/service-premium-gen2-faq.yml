@@ -78,6 +78,7 @@ sections:
           * Datasets workload - scheduled refresh, on-demand refresh, background query (after refresh)
           * Dataflows workload - scheduled dataflow refresh
           * Paginated reports workload - data driven subscriptions renders
+          * Export report to file API calls
           * AI workloads
           
       - question: |
