@@ -1,8 +1,8 @@
 ---
 title: Plan your transition to Power BI Embedded Gen2
 description: Learn how customers using Power BI Embedded Gen1 will migrate to Embedded Gen2 and key dates to plan for.
-author: monaberdugo
-ms.author: mberdugo
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -38,7 +38,7 @@ Ready for the next generation? Follow these steps:
 1. If you have already allocated capacity, select it.
 1. Select **Update your capacity in Azure**
 
-    ![Enabling Embedded Generation 2](media/embedded-transition-gen1-to-gen2/upgrade-to-gen-2)
+    ![Enabling Embedded Generation 2](media/embedded-transition-gen1-to-gen2/upgrade-to-gen-2.png)
 
 ## Transition from preview to Embedded Gen 2 general availability
 
