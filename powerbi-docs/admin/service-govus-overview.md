@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/03/2021
+ms.date: 11/05/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -138,7 +138,6 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H1|CY2022-H1|CY2022-H1|
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
-|Tenant metadata scanning flow<sup>4</sup>|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
