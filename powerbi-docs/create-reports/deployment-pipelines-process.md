@@ -364,6 +364,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * In deployment pipelines, service principal isn't supported for dataflows.
 
+* Common data model (CDM) isn't supported.
+
 * For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ## Next steps
