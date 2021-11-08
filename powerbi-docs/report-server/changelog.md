@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2021
+ms.date: 11/09/2021
 ---
 
 # Change log for Power BI Report Server
@@ -18,13 +18,22 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## September 2021
 - **Power BI Report Server**
+    - *Version: 1.12.7977.29537 (Build 15.0.1107.165), Released: November 9, 2021*
+        - Bug fixes
+            - Fixed issue blocking upload of CSV, XLS, and XLSB files.
+            - Fixed security issue related to certain PBIX files.
+            - Fixed issue where usernames with commas displayed odd in new portal.
+            - Fixed issue with data parameters not displaying correctly.
+            - Fixed issue with download button not visible when viewing Excel workbooks.
+            - Fixed issue where PBIX data sources couldn't be edited if more than one existed.
+            - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
     - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
         - Features
             - Updated support for Power BI Reports including those with small multiples.
             - Updated Power BI Report Server portal experience as default experience.
         - Bug fixes
         - Deprecated support for Internet Explorer.
-
+        
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
         - Contains changes required for connection with Power BI Report Server (September 2021).
