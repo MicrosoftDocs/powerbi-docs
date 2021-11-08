@@ -241,21 +241,15 @@ The following composite models connections are not supported:
 
 ### Automatic aggregations
 
-[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance. When using automatic aggregations in a pipeline, consider the following:
+[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance.
 
-* After deploying for the first time, you need to manually enable the automatic aggregation.
+Each dataset keeps its automatic aggregations after deployment. Deployment pipelines doesn't change a dataset's automatic aggregation. This means that if you deploy a dataset with an automatic aggregation, the deployed automatic aggregation will overwrite the automatic aggregation in the target stage.
 
-* The automatic aggregation table needs to be in direct query mode.
-
-* The automatic aggregation tables are created by refreshing the dataset and are only refreshed once a day.
-
-* Each dataset keeps its automatic aggregations after deployment. If you deploy a dataset with an automatic aggregation to a stage that has that dataset with a different automatic aggregation, the automatic aggregation in the target stage will be overwritten by the automatic aggregation from the target stage.
-
-* During deployment, some or all of the auto aggregations might be deleted if they cause an error when items are saved or if they're no longer valid. In such cases there'll be no notification or request for user consent.
+To enable automatic aggregations, follow the instructions in [configure the automatic aggregation](./../admin/aggregations-auto-configure.md).
 
 ### Hybrid tables
 
-Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. After deployment, the target stage will keep its old partitions until it's refreshed.
+Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. During deployment, hybrid tables are copied. After deployment, the target stage will keep its old partitions until it's refreshed. When you deploy a hybrid table that was updated, only the partitions that were changed are overwritten in the table in the source stage.
 
 ## Deploying Power BI apps
 
