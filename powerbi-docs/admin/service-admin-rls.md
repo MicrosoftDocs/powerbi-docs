@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/13/2021
+ms.date: 10/29/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -79,7 +79,7 @@ You can remove members by selecting the X next to their name.
 You can validate that the role you defined is working correctly in the Power BI service by testing the role.
 
 1. Select **More options** (...) next to the role.
-2. Select **Test data as role**
+2. Select **Test data as role**.
 
 ![Test as role](media/service-admin-rls/rls-test-role.png)
 
@@ -94,6 +94,9 @@ Test other roles, or a combination of roles, by selecting **Now viewing as**.
 You can choose to view data as a specific person or you can select a combination of available roles to validate they're working.
 
 To return to normal viewing, select **Back to Row-Level Security**.
+    
+> [!NOTE]
+> The Test as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.
 
 [!INCLUDE [include-short-name](../includes/rls-usernames.md)]
 

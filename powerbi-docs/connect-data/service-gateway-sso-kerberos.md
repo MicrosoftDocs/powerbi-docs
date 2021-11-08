@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 02/26/2021
 LocalizationGroup: Gateways
 ---
 
@@ -159,7 +159,7 @@ Complete the following configuration steps:
 
 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 

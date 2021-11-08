@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: conceptual
-  ms.date: 10/21/2021
+  ms.date: 11/03/2021
     
 title: Frequently asked questions about Power BI Embedded
 summary: |
@@ -49,6 +49,8 @@ sections:
           Microsoft recommends that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution. We recommend ISVs buy Power BI Embedded for its cloud-powered embedded analytics components. However, a customer has no restriction on which product to buy.
           
           There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization.
+
+          For more on the differences between Premium and Embedded see [Which SKU should I use](embedded-capacity.md#which-sku-should-i-use).
           
       - question: |
           How many embed tokens can I create?

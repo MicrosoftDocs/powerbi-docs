@@ -100,7 +100,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
 
-- Display folders, KPIs, date tables, row level security, and translations will not be imported from the source in this preview release. You can still create display folders in the local model.
+- KPIs, row level security, and translations will not be imported from the source in this preview release.
 
 - You may see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using *Date Hierarchy*:
 
@@ -123,7 +123,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - A *discourage chaining* flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published dataset](desktop-discourage-directquery-connections-to-dataset.md) for more information.
 
-- As with all DirectQuery connections, the connection to a Power BI dataset will not be shown in Power Query.
+- The connection to a Power BI dataset will not be shown in Power Query.
 
 There are also a few **limitations** you need to keep in mind:
 
@@ -143,9 +143,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column which reference a Direct Query data source will result in a "Single sign-on (SSO) credential is not provided" error message.
-
-- Sort by column isn't supported at this time.
+- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column which references a Direct Query data source will result in a "Single sign-on (SSO) credential is not provided" error message.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 
@@ -208,7 +206,7 @@ To sum up:
 
 * Consumers of a composite model see the results of the OLS rules that were applicable to the author of the composite model when they created the model. Thus, when a new report is created based on the composite model, the field list will show the tables that the author of the composite model had access to when they created the model, regardless of what the current user has access to in the source model.
 * OLS rules cannot be defined on the composite model itself.
-* A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DIrectQuery tries to retrieve the data using their credentials.
+* A consumer of a composite model will never see actual data they are not supposed to see, because relevant OLS rules on the source model will block them when DirectQuery tries to retrieve the data using their credentials.
 * If the source model updates its OLS rules, those changes will only affect the composite model when it is refreshed.  
 
 ### Loading a subset of tables from a Power BI dataset or Azure Analysis Services model
@@ -216,8 +214,9 @@ When connecting to a Power BI dataset or Azure Analysis Services model using a D
 This dialog will not be shown for live connections.
 
 >[!NOTE]
->This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQUery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
+>This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
 
+[!div class="mx-imgBorder"]
 ![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
 
 ## Next steps

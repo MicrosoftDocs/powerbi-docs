@@ -7,8 +7,10 @@
     items:
     - name: "What is Power BI embedded analytics?"
       href: embedded-analytics-power-bi.md
-    - name: "What is Power BI Embedded Generation 2"
-      href: "power-bi-embedded-generation-2.md"      
+    - name: "What is Power BI Embedded Generation 2?"
+      href: "power-bi-embedded-generation-2.md"
+    - name: "What is the Power BI Embedded analytics playground?"
+      href: "power-bi-playground.md"    
   - name: Tutorials
     expanded: true
     items: 

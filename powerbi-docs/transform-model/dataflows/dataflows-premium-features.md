@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -32,7 +32,8 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 * Performs DirectQuery queries over entities
 
 > [!NOTE]
-> The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
+> * The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
+> * This feature is available on all Power BI clusters except WABI-INDIA-CENTRAL-A-PRIMARY
 
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
@@ -148,7 +149,6 @@ Setting incremental refresh adds parameters to the dataflow to specify the date 
 Do not set a dataflow to incremental refresh in the following situations:
 
 * Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
-* Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally perform well. If the refreshes take longer than expected, consider using the compute engine and or DirectQuery mode.
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:

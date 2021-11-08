@@ -432,7 +432,12 @@
         },
         {
             "source_path": "powerbi-docs/mobile-apps-scan-barcode-iphone.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode-iphone",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-scan-barcode-iphone.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode",
             "redirect_document_id": true
         },
         {
@@ -4031,6 +4036,7 @@
             "redirect_document_id": false
         },
         {
+
             "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
             "redirect_document_id": false
