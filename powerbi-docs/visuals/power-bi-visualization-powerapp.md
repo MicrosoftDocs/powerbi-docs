@@ -67,7 +67,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png" alt-text="Change gallery dimensions.":::
 
-1. Under **gallery**, insert a text label control.
+1. Expand the left navigation menu, choose **+ Insert**, and select **Text label** from the list of controls.
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-label.png" alt-text="Label control.":::
 
