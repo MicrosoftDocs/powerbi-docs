@@ -278,11 +278,11 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 
 When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
 
-|Power BI Item    |Required permission to deploy an existing item |Item ownership after deployment |
-|-----------------|---------|---------|
-|Dataset          |Workspace member |Unchanged       |
-|Dataflow         |Dataflow owner   |Unchanged         |
-|Paginated report |Workspace member |The user who made the deployment becomes the owner |
+|Power BI Item    |Required permission to deploy an existing item |Item ownership after a first time deployment |Item ownership after deployment to a stage with the Power BI item|
+|-----------------|---|---|---|
+|Dataset          |Workspace member |The user who made the deployment becomes the owner |Unchanged |
+|Dataflow         |Dataflow owner   |The user who made the deployment becomes the owner |Unchanged |
+|Paginated report |Workspace member |The user who made the deployment becomes the owner |The user who made the deployment becomes the owner |
 
 ### User with pipeline access
 
