@@ -51,7 +51,7 @@ When working with data, you often may have names of fields that could be referre
 
 Q&A automatically detects when an unrecognized word is a noun using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you in the following way:
 
-- <your term> **refers to** 
+- **refers to** 
 
 You fill in the box with the term from your data.
 
@@ -63,7 +63,7 @@ If you provide something other than a field from the data model, you may get und
 
 Sometimes you may want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives, showing a different prompt:
 
-- <field name> **that have**  
+- **that have**  
 
 You fill in the box with the condition.
 
