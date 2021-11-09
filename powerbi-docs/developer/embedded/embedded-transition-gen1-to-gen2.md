@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 10/01/2021
+ms.date: 11/09/2021
 LocalizationGroup: Embedded
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Embedded
 
 This article provides information about key dates for migrating Power BI Embedded capacity to the latest platform.
 
-Over the last several months, we've been working to make many improvements to Power BI Embedded. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Embedded, referred to as Power BI Embedded Gen2, has officially moved from preview to general availability as of October 4, 2021. You can read the announcement about this release in the [Power BI blog](https://powerbi.microsoft.com/blog/).
+Over the last several months, we've been working to make many improvements to Power BI Embedded. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Embedded, referred to as Power BI Embedded Gen2, has officially moved from preview to general availability as of October 4, 2021.
 
 If your organization is using the previous version of Power BI Embedded, you're required to migrate capacities to the modern Gen2 platform. The key dates for you to be aware of are listed below:
 
