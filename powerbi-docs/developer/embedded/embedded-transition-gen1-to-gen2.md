@@ -27,18 +27,7 @@ If your organization is using the previous version of Power BI Embedded, you're 
 
 If you want to perform your own migration to the latest platform before January 15, 2022, it's easy to transition. You simply need to enable Embedded Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
 
-Ready for the next generation? Follow these steps:
-
-1. Sign in to the [Power BI service](https://app.powerbi.com) as a Power BI capacity admin.
-1. From the navigation bar, select **Settings** > **Admin portal** > **Capacity settings**.
-
-    :::image type="content" source="media/embedded-transition-gen1-to-gen2/gen1-to-gen2-migration-capacity-settings.png" alt-text="Screen capture showing how to get to capacity settings.":::
-
-1. Select **Power BI Embedded**.
-1. If you have already allocated capacity, select it.
-1. Select **Update your capacity in Azure**
-
-    ![Enabling Embedded Generation 2](media/embedded-transition-gen1-to-gen2/upgrade-to-gen-2.png)
+Ready for the next generation? Follow these instructions in [Upgrade a capacity to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
 
 ## Transition from preview to Embedded Gen 2 general availability
 
