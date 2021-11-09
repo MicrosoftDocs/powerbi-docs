@@ -42,12 +42,7 @@ Ready for the next generation? Follow these steps:
 
 ## Transition from preview to Embedded Gen 2 general availability
 
-Customers using Power BI Embedded Gen2 in preview don't need to take any action to transition to the general availability release. However, there are some key dates to consider if you've been using **Autoscale** to balance your capacity needs.
-
-To date, organizations that have enabled Autoscale for capacities have gotten the burst processing benefits of Autoscale for free. Beginning **November 4, 2021** we'll begin charging for Autoscale cores. Take one of the following actions:
-
-* You can continue to use Autoscale to enable the automatic use of additional cores during periods of higher-than normal demand on your capacities. Review the [pricing details for Embedded per capacity add-ons](https://powerbi.microsoft.com/pricing/#premium-add-on-card-autoscale) so that you're aware of upcoming charges.
-* Or, to avoid Autoscale charges, disable the feature. Autoscale is an optional feature and benefit of the Embedded Gen2 platform. You can choose to not use it.
+Customers using Power BI Embedded Gen2 in preview don't need to take any action to transition to the general availability release.
 
 ## Migration timeline summary
 
