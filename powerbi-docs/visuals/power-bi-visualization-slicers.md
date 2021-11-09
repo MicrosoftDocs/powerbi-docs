@@ -86,10 +86,6 @@ Use visual interactions to exclude some page visualizations from being affected 
 
 1. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
 
-1. Select the **OpenDate** slicer, and then select the **None** option above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop this slicer from filtering it. 
-
-   Now, as you select names and date ranges in the slicers, the **Total Sales Variance by FiscalMonth and District Manager** chart is unchanged.
-
 For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
 ## Sync and use slicers on other pages
@@ -165,7 +161,7 @@ See [Filter types](../create-reports/power-bi-report-filter-types.md) for more i
 
 Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
-1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
+1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls.
 
    :::image type="content" source="media/power-bi-visualization-slicers/3-format.png" alt-text="Screenshot of Format selection.":::
 
@@ -200,7 +196,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 ### Selection controls options (list slicers only)
 
-1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select All** item to the slicer. 
+1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer.
 
     **Show "Select all" option** is **Off** by default. When enabled, this option, when toggled, selects or deselects all items. If you select all items, selecting an item deselects it, allowing an *is-not* type of filter.
 
@@ -208,7 +204,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 1. Turn **Single select** to **Off** to allow you to select multiple items without needing to hold down the **Ctrl** key. 
 
-    **Single select** is **On** by default. Selecting an item selects it, and holding down the **Ctrl** key selects multiple items. Selecting item again deselects it.
+    **Single select** is **On** by default. Selecting an item selects it, and holding down the **Ctrl** key selects multiple items. Selecting an item again deselects it.
 
 ### Title options
 
