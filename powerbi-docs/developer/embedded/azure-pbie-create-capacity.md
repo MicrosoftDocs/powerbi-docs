@@ -360,6 +360,10 @@ To upgrade a Gen1 capacity to Gen2 in the Azure UI:
 
     :::image type="content" source="media/azure-pbie-create-capacity/upgrade-to-gen-2.png" alt-text="Screenshot of a Power BI upgrade capacity option in the Azure portal.":::
 
+3. Select **Yes** to confirm.
+
+    :::image type="content" source="media/azure-pbie-create-capacity/confirm-upgrade.png" alt-text="Screenshot of a Power BI confirm upgrade in the Azure portal.":::
+
 The capacity will update automatically in a few seconds.
 
 ### [ARM API](#tab/arm)
