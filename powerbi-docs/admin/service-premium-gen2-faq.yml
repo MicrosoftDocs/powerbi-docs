@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 10/18/2021
+  ms.date: 11/08/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Gen2 FAQ
@@ -78,6 +78,7 @@ sections:
           * Datasets workload - scheduled refresh, on-demand refresh, background query (after refresh)
           * Dataflows workload - scheduled dataflow refresh
           * Paginated reports workload - data driven subscriptions renders
+          * Export report to file API calls
           * AI workloads
           
       - question: |
