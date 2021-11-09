@@ -285,7 +285,7 @@ Other than **name**, everything else is optional, which means you're free to onl
 
 ### JSON example files
 
-This GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/deldersveld/PowerBI-ThemeTemplates/blob/master/README.md).
+This GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
 ### Setting theme colors
 
