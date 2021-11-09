@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/27/2021
+ms.date: 11/09/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -32,6 +32,9 @@ To complete this quickstart, you need:
 * **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
+
+>[!NOTE]
+>To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
