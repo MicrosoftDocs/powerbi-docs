@@ -24,8 +24,6 @@ This article walks you through how to create a [Power BI Embedded](embedded-anal
 To complete this quickstart, you need:
 
 * **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
-    >[!NOTE]
-    >To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 * **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
@@ -38,6 +36,9 @@ To complete this quickstart, you need:
 Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
 ### [Portal](#tab/portal)
+
+>[!IMPORTANT]
+>To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
