@@ -33,12 +33,12 @@ To complete this quickstart, you need:
 
 ## Create a capacity
 
+>[!NOTE]
+>To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
+
 Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
 ### [Portal](#tab/portal)
-
->[!IMPORTANT]
->To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
