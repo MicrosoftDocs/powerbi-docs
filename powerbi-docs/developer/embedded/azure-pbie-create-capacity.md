@@ -25,7 +25,7 @@ To complete this quickstart, you need:
 
 * **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
     >[!NOTE]
-    >To create or manage a capacity, you must have the role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
+    >To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 * **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
