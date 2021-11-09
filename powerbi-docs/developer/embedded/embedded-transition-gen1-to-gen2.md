@@ -39,8 +39,6 @@ The following image summarizes each of the key milestones detailed in this artic
 
   :::image type="content" source="media/embedded-transition-gen1-to-gen2/gen2-timeline.png" alt-text="Image summarizing key dates for migration to Embedded Gen 2.":::
 
-Autoscale changes haven't been implemented yet for Embedded capacities and aren't relevant at this stage.
-
 ## Next steps
 
 [What is Power BI Embedded Gen2?](power-bi-embedded-generation-2.md)
