@@ -37,7 +37,7 @@ Customers using Power BI Embedded Gen2 in preview don't need to take any action 
 
 The following image summarizes each of the key milestones detailed in this article.
 
-  :::image type="content" source="media/embedded-transition-gen1-to-gen2/gen2-timeline.png" alt-text="Image summarizing key dates for migration to Embedded Gen 2.":::
+  :::image type="content" source="media/embedded-transition-gen1-to-gen2/gen-2-timeline.png" alt-text="Image summarizing key dates for migration to Embedded Gen 2.":::
 
 ## Next steps
 
