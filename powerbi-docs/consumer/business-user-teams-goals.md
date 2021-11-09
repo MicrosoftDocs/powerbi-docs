@@ -98,6 +98,9 @@ Each project and organization can have its own goals. You can find all your goal
 
 ## Next steps
 
+- [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Create scorecards and goals in Power BI](../create-reports/service-goals-introduction.md)
-- [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
+- [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
+- [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)
+- [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)

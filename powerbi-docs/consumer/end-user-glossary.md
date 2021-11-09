@@ -240,6 +240,7 @@ This has been replaced with **nav pane** but may still appear in some documentat
 The controls along the left edge of Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **license**    
@@ -275,6 +276,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **notification**    
@@ -350,6 +352,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
+
 See *account*.
 
 **publish**    

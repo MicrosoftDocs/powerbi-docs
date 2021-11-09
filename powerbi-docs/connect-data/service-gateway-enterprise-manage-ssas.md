@@ -104,8 +104,7 @@ To perform on-premises Active Directory property lookup to remap Azure AD UPNs t
 
 In the Power BI service, the following occurs:
 
-* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as
-       firstName.lastName@contoso.com.
+* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as `firstName.lastName@contoso.com`.
 
 > [!NOTE]
 > Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* the user name string is sent to the on-premises data gateway.

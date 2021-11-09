@@ -5,10 +5,10 @@
   - name: Overview
     expanded: true
     items: 
+    - name: "Sourcing and obtaining Power BI visuals"
+      href: power-bi-custom-visuals.md
     - name: "Develop your own Power BI visual"
       href: develop-power-bi-visuals.md
-    - name: "Where to find Power BI visuals"
-      href: power-bi-custom-visuals.md
   - name: Tutorials
     expanded: true
     items:

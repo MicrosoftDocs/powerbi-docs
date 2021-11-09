@@ -105,50 +105,50 @@ If you're unable to refresh the report in the Power BI service, you can use gate
    ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
- 
-	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	```
-	[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
-	Error 5 = "Access is denied." [dlnt.c       255]
-	```
+    CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
+    ```output
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
 
-	If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
+    If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
 
-	```
-	A handle to an object was requested.
+    If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
 
-	Subject:
-		Security ID:		MYDOMAIN\mytestuser
-		Account Name:		mytestuser
-		Account Domain:		MYDOMAIN
-		Logon ID:		0xCF23A8
+    ```output
+    A handle to an object was requested.
 
-	Object:
-		Object Server:		Security
-		Object Type:		File
-		Object Name:		<path information>\sapcrypto.dll
-		Handle ID:		0x0
-		Resource Attributes:	-
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:           0xCF23A8
 
-	Process Information:
-		Process ID:		0x2b4c
-		Process Name:		C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:          0x0
+        Resource Attributes:    -
 
-	Access Request Information:
-		Transaction ID:		{00000000-0000-0000-0000-000000000000}
-		Accesses:		ReadAttributes
-				
-	Access Reasons:		ReadAttributes:	Not granted
-				
-	Access Mask:		0x80
-	Privileges Used for Access Check:	-
-	Restricted SID Count:	0
-	```
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:   C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
 
-### CommonCryptoLib tracing 
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:           ReadAttributes
+
+    Access Reasons:     ReadAttributes: Not granted
+
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
+
+### CommonCryptoLib tracing
 
 1. Turn on CommonCryptoLib tracing by adding these lines to the sapcrypto.ini file you created earlier:
 

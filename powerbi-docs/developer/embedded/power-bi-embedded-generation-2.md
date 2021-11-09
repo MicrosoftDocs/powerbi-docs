@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 10/31/2021
 ms.custom: intro-overview
 ---
 
@@ -21,11 +21,11 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 
 * **Greater scale** - Including the following enhancements:
 
-    * *No limits on refresh concurrency* - You no longer need to track schedules for datasets being refreshed on your capacity
+  * *No limits on refresh concurrency* - You no longer need to track schedules for datasets being refreshed on your capacity
 
-    * *Fewer memory restrictions*
+  * *Fewer memory restrictions*
 
-    * *Complete separation between report interaction and scheduled refreshes*
+  * *Complete separation between report interaction and scheduled refreshes*
 
 * **Lower entry level for paginated reports and AI workloads** – Start with an *A1* SKU and grow as you need.
 
@@ -34,10 +34,10 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 * **Scaling without downtime** - With Embedded Gen2 you can scale your Power BI Embedded resource without experiencing any downtime.
 
 * **Improved metrics** - Including clear and normalized capacity utilization data, depending only on the complexity of the analysis operations the capacity performs. Metrics are not impacted by other factors such as the size of the capacity, and the level of load on the system while performing analytics. When using the improved metrics, the built-in reporting tool allows you to clearly see:
-    * Utilization analysis
-    * Budget planning
-    * Chargebacks
-    * The need to upgrade your capacity
+  * Utilization analysis
+  * Budget planning
+  * Chargebacks
+  * The need to upgrade your capacity
 
     >[!NOTE]
     >You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview).
@@ -60,12 +60,7 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 * [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
 
->[!TIP]
->To monitor your Embedded Gen 2 capacity, you can use the [Premium Gen2 Monitoring App](../../admin/service-premium-gen2-metrics-app.md).
-
-## Known limitations
-
-* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [updates for Premium Gen2](../../admin/service-premium-gen2-what-is.md#updates-for-premium-gen2).
+## Considerations and limitations
 
 * Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements)
 
