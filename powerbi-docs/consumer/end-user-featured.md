@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 
 Many of us have one dashboard that we visit more than any others. It might be the dashboard we use to run our business. Or, it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 
-This article addresses seeting your one featured dashboard.  For information about *featured content on Home*, please read [Explore Power BI Home](end-user-home.md)
+This article addresses setting your one featured dashboard.  For information about *featured content on Home*, please read [Explore Power BI Home](end-user-home.md)
 
 ## Create a featured dashboard
 When you set a dashboard as *featured*, each time you open the Power BI service from your browser (app.powerbi.com), it opens with that dashboard displayed. If you're opening Power BI from an email link, or any other shared URL, Power BI will open to the dashboard or report selected by the content owner.  
