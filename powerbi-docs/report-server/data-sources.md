@@ -117,7 +117,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | SQL Server Database |No |No |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |
 | Azure SQL Database |No |No |Yes |No |
-| Azure Analysis Services database |No |No |Yes* |No |
+| Azure Analysis Services database |No |No |Yes (1) |No |
 | Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |
 | Active Directory |No |No |Yes |Yes |
 | Amazon Redshift |No |No |No |No |
@@ -163,9 +163,9 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Snowflake |No |No |No |No |
 | Spark |No |No |No |No |
 | Sybase Database |No |No |Yes |Yes |
-| Teradata |No |No |Yes |Yes** |
+| Teradata |No |No |Yes |Yes (2) |
 | Vertica |No |No |No |No |
-| Web *** |Yes |No |Yes |Yes |
+| Web (3) |Yes |No |Yes |Yes |
 | appFigures (Beta) |No |No |No |No |
 | Common Data Service (Legacy) |No |No |No |No |
 | Dynamics 365 for Customer Insights (Beta) |No |No |No |No |
@@ -189,11 +189,11 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Webtrends Analytics (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
 
-* For Azure Analysis Services data source, you must have multi-factor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multi-factor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multi-factor authentication for the credentials used in the data source.
+(1) For Azure Analysis Services data source, you must have multi-factor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multi-factor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multi-factor authentication for the credentials used in the data source.
 
-** Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
+(2) Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
-*** Power BI Report Server has a limitation when using web data: only data files from web can be refreshed. Data based on Page or By example aren't refreshable. This limitation is because the M expressions created with Web.BrowserContents and Web.Page can't be refreshed. **Power BI Report Server can only refresh Web.Contents data sources.**
+(3) Power BI Report Server has a limitation when using web data: only data files from web can be refreshed. Data based on Page or By example aren't refreshable. This limitation is because the M expressions created with Web.BrowserContents and Web.Page can't be refreshed. **Power BI Report Server can only refresh Web.Contents data sources.**
 
 ## List of supported authentication methods for DirectQuery
 
@@ -207,10 +207,10 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
-| SAP HANA Database |No |No |Yes |Yes |Yes** |
+| SAP HANA Database |No |No |Yes |Yes |Yes (1) |
 | Teradata |No |No |Yes |Yes |Yes |
 
-** SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
+(1) SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
 ## Next steps
 
