@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
 
-[!INCLUDE[consumer-appliesto-yyn](../includes/applies-yes-service-yes-desktop.md)]
+[!INCLUDE[consumer-appliesto-yyn](../includes/applies-yes-desktop-yes-service.md)]
 
 
 With Power BI, you can publish your report to PDF format and easily create a document based on your Power BI report. When you export to PDF, each page in the Power BI report becomes an individual page in your PDF document. Exporting to PDF is one way to share or print reports.
