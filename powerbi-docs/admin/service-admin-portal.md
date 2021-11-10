@@ -485,9 +485,9 @@ Users in the organization can create template apps and organizational content pa
 
 ### Push apps to end users
 
-Admins can allow report creators to share apps directly with end users, without requiring installation from [AppSource](https://appsource.microsoft.com). Learn more about [automatically installing apps for end users](../collaborate-share/service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+Admins can allow report creators to share apps directly with end users, without requiring installation from [AppSource](https://appsource.microsoft.com). In the admin portal, the setting is **Push apps to end users**. Learn more about [automatically installing apps for end users](../collaborate-share/service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
-admin-push-apps-end-users.png
+:::image type="content" source="media/service-admin-portal/admin-push-apps-end-users.png" alt-text="Screenshot of admin portal, Push apps to end users.":::
 
 ## Integration settings
 
