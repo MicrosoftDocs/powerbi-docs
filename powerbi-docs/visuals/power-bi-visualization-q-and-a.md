@@ -28,7 +28,7 @@ The Q&A visual consists of four core components:
 
 ## Prerequisites
 
-1. Download [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to follow along.
+1. Download the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to follow along.
 
 1. In the upper left section of the Power BI Desktop, select **File** > **Open report**.
 
@@ -71,15 +71,15 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
 :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-terminology.png" alt-text="Canvas with Show all suggestions and the Fields pane outlined.":::
 
-1. Type a question in the Q&A field. Power BI adds a red underline to words it does not recognize. Whenever possible, Power BI helps define unrecognized words.  In the first example below, selecting either of the suggestions will work for us.  
+1. Type a question in the Q&A field. Power BI adds a red underline to words it does not recognize. Whenever possible, Power BI helps define unrecognized words. In the first example below, selecting either of the last two suggestions will work for us.  
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-red-suggest.png" alt-text="Typing a question in the Q&A question box.":::
 
-1. As we type more of the question, Power BI lets us know that it doesn't understand the question, and tries to help. In the example below, Power BI asks us "Did you mean..." and suggests a different way to word our question using terminology from our dataset. 
+1. As we type more of the question, Power BI lets us know that it doesn't understand the question, and tries to help. In the example below, Power BI suggests a different way to word our question using terminology from our dataset.
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-define.png" alt-text="Q&A visual displaying suggestions.":::
 
-1. With Power BI's help, we were able to ask a question with all recognizable terms. Power BI displays the results as a line chart. 
+1. With Power BI's help, we were able to ask a question with all recognizable terms. Power BI displays the results as a line chart.
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-type.png" alt-text="Q&A visual results.":::
 
@@ -99,17 +99,17 @@ The Q&A visual can be customized using the formatting pane, and by applying a th
 
 When you select a theme, that theme is applied to the entire report page. There are many themes to choose from, so try them out until you get the look you desire. 
 
-1. In the menu bar, select the **Home** tab and choose **Switch theme**. 
+1. In the menu bar, select the **View** menu and open the **Themes** dropdown.
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes.png" alt-text="Desktop with Switch theme selected.":::
 
-1. In this example, we've selected **More themes** > **Color blind safe**.
+1. In this example, we've selected the **Colorblind safe** theme in the **Power BI** section of the **Themes** dropdown.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-color-blind.png" alt-text="Q&A visual with color blind theme applied.":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-color-blind.png" alt-text="Screenshot showing the Q&A visual with the colorblind safe theme applied.":::
 
 ### Format the Q&A visual
 
-Format the Q&A visual, the question field, and the way suggestions are displayed. You can change everything from the background of a title to the hover color for unrecognized words. Here we've added a grey background to the question box and changed the underlines to yellow and green. The title is centered and has a yellow background. 
+Format the Q&A visual, the question field, and the way suggestions are displayed. You can change everything from the background of a title to the hover color for unrecognized words. Here we've added a grey background to the question box and changed the underlines to orange and green. The title is centered and has an orange background.
 
 :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png" alt-text="Q&A visual showing our formatting results.":::
 
@@ -126,7 +126,6 @@ This visual is no longer a Q&A visual but is a standard column chart. It can be 
 If you're using the ***Power BI Service***, you can now pin the visual to a dashboard by selecting the pin icon.
 
 :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-pin.png" alt-text="Rhe Power BI service with pin icon outlined.":::
-
 
 ## Advanced features of the Q&A visual
 
