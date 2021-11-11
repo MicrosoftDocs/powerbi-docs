@@ -302,7 +302,7 @@
         href: ../visuals/paginated-report-visual.md
       - name: "Scorecard visuals"
         href: ../visuals/power-bi-visualization-scorecard-visual.md
-     - name: Maps
+      - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
           href: ../visuals/desktop-shape-map.md
