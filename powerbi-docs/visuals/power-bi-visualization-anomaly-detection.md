@@ -25,7 +25,7 @@ Anomaly detection helps you enhance your line charts by automatically detecting 
 ## Get started
 This tutorial uses online sales data for various products. To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
 
-You can enable Anomaly detection by selecting the chart and selecting **Find anomalies**" in the analytics pane. 
+You can enable Anomaly detection by selecting the chart and selecting **Find anomalies** in the analytics pane. 
 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection/entry-point.png" alt-text="Screenshot showing entry point for anomaly detection.":::
 
