@@ -36,6 +36,9 @@ When you do, tables that are related to the original table are displayed in the 
 
 ![Showing related tables](media/desktop-modeling-view/modeling-view_05.png)
 
+>[!NOTE]
+>You can also find the 'Add related tables' option in the context menu on the background of the model view. When clicked, any table that has any relationship to any table already included in the layout will be added to the layout.
+
 ## Setting common properties
 
 You can select multiple objects at once in Modeling view by holding down the **Ctrl** key and clicking multiple tables. When you select multiple tables they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.

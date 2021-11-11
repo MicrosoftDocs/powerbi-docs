@@ -182,12 +182,14 @@
         href: service-encryption-customer-managed-keys.md        
       - name: Restart a Premium capacity
         href: service-admin-premium-restart.md
-      - name: Dataset connectivity with the XMLA endpoint
-        href: service-premium-connect-tools.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: troubleshoot-xmla-endpoint.md
+      - name: XMLA endpoint
+        items:
+        - name: Dataset connectivity with the XMLA endpoint
+          href: service-premium-connect-tools.md
+        - name: Troubleshoot XMLA endpoint connectivity
+          href: troubleshoot-xmla-endpoint.md
     - name: Automatic aggregations
       items:     
       - name: Automatic aggregations overview
