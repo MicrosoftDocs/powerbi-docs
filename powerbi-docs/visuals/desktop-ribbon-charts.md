@@ -29,7 +29,7 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 1. Find your copy of the **Retail Analysis Sample PBIX file**
 
-1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+1. Open the **Retail Analysis Sample PBIX file** in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
@@ -53,7 +53,7 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 ## Format a ribbon chart
 
-When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with additional formatting options that are specific to the ribbons.
+When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with more formatting options that are specific to the ribbons.
 
 :::image type="content" source="media/desktop-ribbon-charts/power-bi-format-ribbon.png" alt-text="Screenshot shows the format icon selected and the Ribbons area expanded.":::
 
