@@ -300,7 +300,7 @@
         href: ../visuals/power-bi-visualization-kpi.md
       - name: "Paginated report visuals"
         href: ../visuals/paginated-report-visual.md
-       - name: "Scorecard visuals"
+      - name: "Scorecard visuals"
         href: ../visuals/power-bi-visualization-scorecard-visual.md
      - name: Maps
         items: 
