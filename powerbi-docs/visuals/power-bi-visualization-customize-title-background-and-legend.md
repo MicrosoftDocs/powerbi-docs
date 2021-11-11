@@ -186,7 +186,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
 1. Save the report changes and switch to **Reading view**.
 
-Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals#selecting-visuals-within-a-group).
+Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#selecting-visuals-within-a-group).
 
 ## Customize colors using a theme
 
