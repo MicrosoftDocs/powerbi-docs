@@ -191,10 +191,9 @@ The minimum required versions of client libraries to work with Premium Gen2 capa
 
 |Client Library | Version  |
 |---------|---------|
-|[MSOLAP (amd64)](https://go.microsoft.com/fwlink/?linkid=829576)    |    15.1.65.22         |
-|[MSOLAP (x86)](https://go.microsoft.com/fwlink/?linkid=829575)     |     15.1.65.22         |
-|[AMO](https://go.microsoft.com/fwlink/?linkid=829578)     |   19.12.7.0         |
-|[ADOMD](https://go.microsoft.com/fwlink/?linkid=829577)     |    19.12.7.0           |
+|MSOLAP    |     15.1.65.22         |
+|AMO  |   19.12.7.0         |
+|ADOMD     |    19.12.7.0           |
 
 ## Editing role memberships in SSMS
 
