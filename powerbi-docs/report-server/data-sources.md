@@ -189,7 +189,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Webtrends Analytics (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
 
-(1) For Azure Analysis Services data source, you must have multi-factor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multi-factor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multi-factor authentication for the credentials used in the data source.
+(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multifactor authentication for the credentials used in the data source.
 
 (2) Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
