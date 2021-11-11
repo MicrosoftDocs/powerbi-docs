@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 11/11/2021
 LocalizationGroup: Connect to data
 ---
 # Use OneDrive for Business links in Power BI Desktop
@@ -16,16 +16,17 @@ Many people have Excel workbooks stored in OneDrive for Business that would be g
 Getting an online link from OneDrive for Business requires a few specific steps. The following sections explain those steps, which let you share the file link among groups, across different machines, and with your coworkers.
 
 ## Get a link from Excel
-1. Navigate to your OneDrive for Business location using a browser. Right-click the file you want to use, and select **Open in Excel**.
+1. Navigate to your OneDrive for Business location using a browser. Select the ellipses (...) to open the **More** menu, then select **Details**.
    
    > [!NOTE]
    > Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your OneDrive for Business browser interface. You can use any option that allows you to open the file in Excel.
    
-   ![Screenshot of OneDrive in a browser, showing the Open in Excel selection.](media/desktop-use-onedrive-business-links/odb-links_02.png)
+:::image type="content" source="media/desktop-use-onedrive-business-links/use-onedrive-links-excel-01.png" alt-text="Screenshot of select the more menu in OneDrive.":::   
 
-2. In Excel, select **File** > **Info**, and then select the **Copy path** button, as shown in the following image.
+
+2. In the **More details** pane that appears, select the *copy* icon next to **Path**.
    
-   ![Screenshot of the Info menu, showing the Copy path button selection.](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
+   :::image type="content" source="media/desktop-use-onedrive-business-links/use-onedrive-links-excel-02.png" alt-text="Screenshot of the More details pane, showing the Copy path button selection.":::
 
 ## Use the link in Power BI Desktop
 In Power BI Desktop, you can use the link you just copied to the clipboard. Take the following steps:
@@ -34,9 +35,8 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
    
    ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the Web selection.](media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png)
 2. With the **Basic** option selected, paste the link into the **From Web** dialog box.
-3. Remove the *?web=1* string at the end of the link so that Power BI Desktop can properly navigate to your file, and then select **OK**.
    
-    ![Screenshot of the From Web dialog, showing how to remove a string from the U R L field.](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
+    ![Screenshot of the From Web dialog.](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
 4. If Power BI Desktop prompts you for credentials, choose either **Windows** (for on-premises SharePoint sites) or **Organizational Account** (for Microsoft 365 or OneDrive for Business sites).
    
    ![Screenshot of the Power B I Desktop credential prompt, showing Windows or Organizational account selection.](media/desktop-use-onedrive-business-links/odb-links_06.png)
