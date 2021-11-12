@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Using Microsoft Defender for Cloud Apps controls in Power BI
 
-Using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
+Using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
 ![Using Defender for Cloud Apps controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
@@ -88,7 +88,7 @@ A new role is created for Power BI admins when using Defender for Cloud Apps wit
 
 ## Considerations and limitations
 
-Using Defender for Cloud Apps with Power BI is designed to help secure your organization’s content and data, with detections that monitor user sessions and their activities. When using Defender for Cloud Apps with Power BI, there are a few considerations and limitations you should keep in mind:
+Using Defender for Cloud Apps with Power BI is designed to help secure your organization's content and data, with detections that monitor user sessions and their activities. When using Defender for Cloud Apps with Power BI, there are a few considerations and limitations you should keep in mind:
 
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
