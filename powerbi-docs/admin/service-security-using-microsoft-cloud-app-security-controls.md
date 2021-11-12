@@ -1,6 +1,6 @@
 ---
-title: Using Microsoft Cloud App Security controls in Power BI
-description: Learn how to use Microsoft Cloud App Security together with Power BI
+title: Using Microsoft Defender for Cloud Apps controls in Power BI
+description: Learn how to use Microsoft Defender for Cloud Apps together with Power BI
 author: paulinbar
 ms.reviewer: ''
 

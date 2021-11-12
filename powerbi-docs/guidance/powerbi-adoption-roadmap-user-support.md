@@ -169,7 +169,7 @@ Considerations and key actions you can take to improve your internal help desk s
 - Ensure a good issue tracking system is in place. It's often a ticketing system that can manage priority levels.
 - Decide if anyone will be on-call for any issues related to Power BI. If appropriate, ensure the expectations for 24/7 support are clear.
 - Determine what SLAs will exist, and that expectations for response and resolution are clearly communicated.
-- Be prepared to address specific common issues extremely quickly. For example, a request to add a new [gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source) should be handled very quickly (to avoid user frustration, and to minimize use of personal gateways as an workaround). Slow support response may result in users finding workarounds.
+- Be prepared to address specific common issues extremely quickly. For example, a request to add a new [gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source) should be handled very quickly (to avoid user frustration, and to minimize use of personal gateways as a workaround). Slow support response may result in users finding workarounds.
 
 Considerations and key actions you can take to improve your internal COE extended support:
 

@@ -374,17 +374,17 @@ When sensitivity labels are enabled in Power BI:
 * Sensitivity labels will persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (preview). This helps organizations maintain classification and protection upon export when embedding Power BI content.
 * Label inheritance upon the creation of new content in the Power BI service ensures that the label applied on a dataset in the Power BI service will be applied on new content created on top of the dataset.
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports.
-* Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service. 
+* Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service.
 * Coming soon:
-    * Power BI admin APIs for applying MIP labels to enable central teams to programmatically label content in the Power BI service.  
-    * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (preview).
-    * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
+  * Power BI admin APIs for applying MIP labels to enable central teams to programmatically label content in the Power BI service.
+  * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (preview).
+  * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
 
 See the [Microsoft Information Protection sensitivity label documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
 
 ### Microsoft Defender for Cloud Apps for Power BI
 
-Microsoft Defender for Cloud Apps is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for the Cloud Access Security Broker (CASB) market. Defender for Cloud Apps is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
+Microsoft Defender for Cloud Apps is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for the cloud access security broker (CASB) market. Defender for Cloud Apps is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
 
 With Defender for Cloud Apps, organizations can gain the following DLP capabilities:
 
