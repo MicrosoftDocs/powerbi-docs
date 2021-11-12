@@ -130,37 +130,9 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
-## Errors in SSMS - Premium Gen 2
+## Errors on Premium Gen 2 capacity
 
-### Query execution
-
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
-
-```
-Executing the query ...
-Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
-```
-
-This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
-
-### Refresh operations
-
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
-
-```
-Executing the query ...
-Error -1052311437:
-The remote server returned an error: (400) Bad Request.
-
-Technical Details:
-RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
-Date (UTC): 11/13/2020 7:57:16 PM
-Run complete
-```
-
-This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
-
-## Connect to Server error in SSMS
+### Connect to Server error in SSMS
 
 When connecting to a Power BI workspace with SQL Server Management Studio (SSMS), the following error may be displayed:
 
@@ -183,6 +155,45 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 - The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
 - The [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
 - You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Query execution in SSMS
+
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+
+```
+Executing the query ...
+Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
+```
+
+This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Refresh operations in SSMS
+
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+
+```
+Executing the query ...
+Error -1052311437:
+The remote server returned an error: (400) Bad Request.
+
+Technical Details:
+RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
+Date (UTC): 11/13/2020 7:57:16 PM
+Run complete
+```
+
+This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Other BI applications
+
+You might see error such as **The remote server returned an error: (400) Bad Request.** when using other client applications (Excel, Power BI Desktop, and etc.) to interact against Power BI Premium Gen2 capacity, especially when the underline DAX query or XML/A command is long running. To solve such issue, make sure to get updated application that carries the a newer version of [Analysis Services client libraries](/analysis-services/client-libraries?view=asallproducts-allversions). 
+The minimum required versions of client libraries to work with Premium Gen2 capacity are as below,
+
+|Client Library | Version  |
+|---------|---------|
+|MSOLAP    |     15.1.65.22         |
+|AMO  |   19.12.7.0         |
+|ADOMD     |    19.12.7.0           |
 
 ## Editing role memberships in SSMS
 
