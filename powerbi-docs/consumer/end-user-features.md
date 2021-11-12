@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 09/16/2021
+ms.date: 11/03/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -54,8 +54,11 @@ The second column represents a *business user*.  A business user:
 
 - has a free user license
 - is part of an organization that has a Premium capacity subscription
-- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in Premium capacity.
+- gets content (apps, dashboards, reports) from Pro or PPU users who share that content using app workspaces in Premium capacity.
 - is assigned the **Viewer** role to those app workspaces. 
+
+> [!NOTE]
+> Users with PPU subscriptions cannot share content with users who have a Pro or free license.
 
 ### Legend
 ![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario    
