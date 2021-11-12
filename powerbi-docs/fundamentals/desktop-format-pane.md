@@ -21,14 +21,14 @@ We know it's a big change so we're rolling it out slowly, to get your early feed
 
 ## Turn on the preview
 
-- Go to **File** > **Options and settings** > **Options** > **Preview features** > **New format pane**.
+- Go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
 
 ## New pivot icons 
 
-We’ve updated the format tab icon and added a descriptive subtitle to make it easier to find the format pane. Previously, it was hard to find the *format page* settings. We’ve added a new **Format page** icon that you see when you haven't selected any visuals, and the canvas is ready for formatting.
+We’ve updated the format tab icon and added a descriptive subtitle to make it easier to find the Format pane. Previously, it was hard to find the *format page* settings. We’ve added a new **Format page** icon that you see when you haven't selected any visuals, and the canvas is ready for formatting.
 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-format-pane-icon.png" alt-text="Screenshot of the old Format pane icon.":::     | :::image type="content" source="media/desktop-format-pane/new-format-page-icon.png" alt-text="Screenshot of new Format page icon."::: <br><br> :::image type="content" source="media/desktop-format-pane/new-format-visual-icon.png" alt-text="Screenshot of new Format visual icon.":::       |
 
@@ -37,7 +37,7 @@ We’ve updated the format tab icon and added a descriptive subtitle to make it 
 
 To address the limited vertical space on the Format pane, we’ve moved the Visualization types gallery to be present only on the **Build** tab.  
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-visualizations-pane.png" alt-text="Screenshot of old Visualizations pane.":::    | :::image type="content" source="media/desktop-format-pane/new-visualizations-pane.png" alt-text="Screenshot of location of new Visualizations pane.":::        |
 
@@ -46,7 +46,7 @@ To address the limited vertical space on the Format pane, we’ve moved the Visu
 
 We condensed the toggle design to reduce truncation and improve readability of the settings.
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-toggle-format.png" alt-text="Screenshot of old format for toggles.":::     | :::image type="content" source="media/desktop-format-pane/new-toggle-format.png" alt-text="Screenshot of new format for toggles.":::       |
 
@@ -55,7 +55,7 @@ We condensed the toggle design to reduce truncation and improve readability of t
 
 We've split the long list of formatting cards into two categories: visual specific vs. general settings. The general settings contain cards that affect the visual container and are consistent across all visual types. The visual specific settings contain cards that pertain only to the visual type you’re currently working with. This change allows for easier adjustment of general settings when clicking across visuals, better scannability and discovery of visual specific cards, and helps new users learn where to find what. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-list-formatting-cards.png" alt-text="Screenshot of old list of formatting cards.":::    | :::image type="content" source="media/desktop-format-pane/new-format-visual-general.png" alt-text="Screenshot of new Visuals and General groupings of cards.":::        |
 
@@ -68,19 +68,19 @@ We’ve now added a new **More options (...)** menu that allows you to revert al
 
 ## Subcategories
 
-You’ll also notice within the cards we have broken up the settings further into subcategories. This improves readability and allows you to focus on specific parts of a card a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right click within a card to expand all the sub-categories at once or collapse for quick scanning and scrolling. 
+You’ll also notice within the cards we've broken up the settings further into subcategories. This improves readability and allows you to focus on specific parts of a card a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right click within a card to expand all the sub-categories at once or collapse for quick scanning and scrolling. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|:::image type="content" source="media/desktop-format-pane/old-no-categories.png" alt-text="Screenshot of old subcategories.":::     | :::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories.":::        |
 
 ## No more double scrollbars
 
-This a big usability improvement. Previously, when scrolling within a long card the format pane would have 2 scrollbars! Now when you expand cards and subcategories, we have 1 scrollbar that adapts to the length of the contents. 
+This a big usability improvement. Previously, when scrolling within a long card the Format pane would have 2 scrollbars! Now when you expand cards and subcategories, you have one scrollbar that adapts to the length of the contents. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|:::image type="content" source="media/desktop-format-pane/old-double-scrollbars.png" alt-text="Screenshot of old double scrollbars.":::     | :::image type="content" source="media/desktop-format-pane/new-single-scrollbar.png" alt-text="Screenshot of new single scrollbar.":::        |
 
 
 ## Hidden dynamic cards exposed
@@ -89,26 +89,26 @@ Previously, some cards were only shown when you added certain fields in the buil
 
 ## Merged font settings
 
-Across the format pane, we’ve now merged font family and font size to be on 1 line. Again, this was in an effort to reduce vertical space and better to align with Office. 
+Across the Format pane, we’ve now merged font family and font size to be on 1 line. Again, this was in an effort to reduce vertical space and better to align with Office. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|:::image type="content" source="media/desktop-format-pane/old-font-settings.png" alt-text="Screenshot of old font settings.":::     | :::image type="content" source="media/desktop-format-pane/new-font-settings.png" alt-text="Screenshot of new font settings.":::        |
 
 
 ## Customize series mechanism
 
-Previously, the old format pane would repeat the same list of settings after toggling the “customize series” toggle on. We have now consolidated this into an “apply settings to” dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll. 
+Previously, the old Format pane would repeat the same list of settings after toggling the “customize series” toggle on. We've now consolidated this into an “apply settings to” dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|:::image type="content" source="media/desktop-format-pane/old-customize-series.png" alt-text="Screenshot of old customize series.":::     | :::image type="content" source="media/desktop-format-pane/new-customize-series.png" alt-text="Screenshot of new customize series.":::         |
 
 ## Button states mechanism
 
 Similar to customize series, we’ve also consolidated the button style cards. This allows us to use 1 “apply settings to” dropdown to easily toggle between button states to update various aspects of the style.  
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |Row1     |         |
 
@@ -117,15 +117,15 @@ Similar to customize series, we’ve also consolidated the button style cards. T
 
 Small but mighty change, we’ve added the same yellow highlight you see in the Fields list and Filter pane to the Format pane search results. Note, when in search mode, results will reflect contents from both the visual and general pivots. 
 
-|Old format pane  |New format pane  |
+|Old Format pane  |New Format pane  |
 |---------|---------|
 |Row1     |         |
 
 
 ## Order, naming conventions, and information hierarchy
 
-Throughout the years, the format pane has received many new additions but not always have these additions been added in a consistent fashion. It’s especially hard for new users to learn where things are when cards and settings constantly jump around. Or the name of the same setting in one visual is called something entirely different in another. We’ve now rearranged, renamed, added missing units, and consolidated cards/settings to behave consistent across visuals.  
+Throughout the years, the Format pane has received many new additions but not always have these additions been added in a consistent fashion. It’s especially hard for new users to learn where things are when cards and settings constantly jump around. Or the name of the same setting in one visual is called something entirely different in another. We’ve now rearranged, renamed, added missing units, and consolidated cards/settings to behave consistent across visuals.  
 
 Bonus! Analytics pane updated styling: 
 
-To match the new format pane style, we’ve also updated the Analytics pane look and feel.  
+To match the new Format pane style, we’ve also updated the Analytics pane look and feel.  
