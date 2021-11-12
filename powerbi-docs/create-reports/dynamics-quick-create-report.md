@@ -1,6 +1,6 @@
 ---
 title: Visualize your data quickly from Power Apps and Dynamics 365 apps (preview)
-description: There's a new way to create reports quickly in the Power BI service. Paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.  
+description: There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored within Dataverse. With just a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data.  
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -48,7 +48,7 @@ This makes it very easy to iteratively explore your data, jumping back and forth
 
 ## Enable this feature for your app
 
-This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. You’ll find the option within the **Settings** dialog under **Features**. Read about [configuring app properties](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
+This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. You’ll find the option within the **Settings** dialog under **Features**. Read about [configuring app properties](/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
 
 :::image type="content" source="media/service-quick-create-report/power-apps-setting.png" alt-text="Screenshot of the setting to enable this feature in the Power Apps maker portal.":::
 
