@@ -48,7 +48,7 @@ This makes it very easy to iteratively explore your data, jumping back and forth
 
 ## Enable this feature for your app
 
-This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. You’ll find the option within the **Settings** dialog under **Features**. Read about [configuring app properties](/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
+This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. Admins will find the option in the **Settings** dialog under **Features**. Read about [configuring app properties](/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
 
 :::image type="content" source="media/service-quick-create-report/power-apps-setting.png" alt-text="Screenshot of the setting to enable this feature in the Power Apps maker portal.":::
 
