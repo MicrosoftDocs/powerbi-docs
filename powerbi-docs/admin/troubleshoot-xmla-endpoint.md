@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/21/2021
+ms.date: 11/12/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -184,10 +184,9 @@ Run complete
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-### Other BI applications
+### Other client applications and tools
 
-You might see error such as **The remote server returned an error: (400) Bad Request.** when using other client applications (Excel, Power BI Desktop, and etc.) to interact against Power BI Premium Gen2 capacity, especially when the underline DAX query or XML/A command is long running. To solve such issue, make sure to get updated application that carries the a newer version of [Analysis Services client libraries](/analysis-services/client-libraries?view=asallproducts-allversions). 
-The minimum required versions of client libraries to work with Premium Gen2 capacity are as below,
+ Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium Gen2 capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium Gen2 capacity through the XMLA endpoint are:
 
 |Client Library | Version  |
 |---------|---------|
