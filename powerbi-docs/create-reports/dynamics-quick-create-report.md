@@ -57,7 +57,7 @@ This feature is currently in preview, so for the Visualize the list feature to s
 - Currently, the visuals generated from this flow can only be used for personal exploration. You can't share or save them.
 - Column display names aren't used within the report. You’ll see the system names in the resulting visuals.
 - You may notice more columns within the report than you see in the original view. These fields could include foreign keys for the columns or hierarchy, or URL fields that are being used within the original view for purposes other than columns. 
-- The report created through this feature is temporary, so the experience times out after a set amount of time. At that point you need to close and reopen the report to continue exploring your data. For now, the timeout occurs at one hour, but that will increase in future updates. 
+- The report created through this feature is temporary, so the experience times out after a set amount of time. At that point you need to close and reopen the report to continue exploring your data. For now, the timeout occurs at one hour. 
 
 ## Next steps
 
