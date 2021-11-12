@@ -126,7 +126,7 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 The following known limitations currently apply to Premium Gen2:
 
-* [Client applications and tools](service-premium-connect-tools.md#data-modeling-and-management-tools) that connect to and work with datasets on Premium Gen2 capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries typically isn't necessary. Regardless of the client application or tool version, the following minimum client libraries versions are required:
+* [Client applications and tools](service-premium-connect-tools.md#client-applications-and-tools) that connect to and work with datasets on Premium Gen2 capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries typically isn't necessary. Regardless of the client application or tool version, the following minimum client library versions are required:
 
     |Client Library | Version  |
     |---------|---------|

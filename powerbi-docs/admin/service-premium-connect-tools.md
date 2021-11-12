@@ -35,7 +35,7 @@ Use of the XMLA endpoint is subject to the following:
 
 ## Client applications and tools
 
-Listed below are some of the most common applications and tools used with Azure Analysis Services and SQL Server Analysis Services, and now supported by Power BI Premium datasets:
+Here are some of the most common applications and tools used with Azure Analysis Services and SQL Server Analysis Services, and now supported by Power BI Premium datasets:
 
 **Microsoft Excel** – Excel PivotTables are one of the most common tools used to summarize, analyze, explore, and present summary data from Power BI datasets. Read-only is required for query operations. Click-to-Run version of Office 16.0.11326.10000 or higher is required. 
 
