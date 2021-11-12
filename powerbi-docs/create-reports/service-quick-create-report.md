@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 11/11/2021
 LocalizationGroup: Reports
 ---
 # Create quick reports in the Power BI service 
