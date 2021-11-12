@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Visualize your data quickly from Power Apps and Dynamics 365 apps (preview) 
 
-There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored with Dataverse. With just a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data. 
+There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored within Dataverse. With just a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data. 
 
 :::image type="content" source="media/service-quick-create-report/quick-summary-report.png" alt-text="Screenshot of the automatically generated report.":::
 
@@ -21,7 +21,7 @@ There's a new way to visualize your model-driven Power Apps and Dynamics 365 dat
 
     :::image type="content" source="media/service-quick-create-report/visualize-view-button.png" alt-text="Screenshot of the visualize this view button."::: 
 
-    A dialog opens with an automatically generated report with a few fields selected for your automatically in the **Your data** pane on the right. The visuals within the report will use some or all of your selected fields and potentially other fields from the table that work well with chosen fields.
+    A dialog opens with an automatically generated report with a few fields selected for you automatically in the **Your data** pane on the right. The visuals within the report will use some or all of your selected fields and potentially other fields from the table that work well with chosen fields.
 2.	Changing the data you see in the report is easy. Using the **Your data** pane, you can add or remove fields that you’re interested in visualizing. The selected fields are then used as ‘hints’ to the algorithm generating the visuals, and Power BI automatically adds or removes charts to show new visuals. 
 
     :::image type="content" source="media/service-quick-create-report/changing-the-report.png" alt-text="Screenshot of an updated report after selecting a field."::: 
@@ -35,7 +35,7 @@ There's a new way to visualize your model-driven Power Apps and Dynamics 365 dat
 
     :::image type="content" source="media/service-quick-create-report/show-data-table.png" alt-text="Screenshot of the show table button in the app bar.":::  
 
-    This will show the full table of data on the bottom of the report. Use the Hide data table button to hide the table again.    
+    This will show the full table of data on the bottom of the report. Use the **Hide data table** button to hide the table again.    
 
     :::image type="content" source="media/service-quick-create-report/data-table-shown.png" alt-text="Screenshot of the table visual at the bottom of the report and the hide data table option in the app bar.":::   
 
@@ -48,7 +48,7 @@ This makes it very easy to iteratively explore your data, jumping back and forth
 
 ## Enabling this feature for your app
 
-This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. You’ll find the option within the Settings dialog under Features. Read about [configuring app properties](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
+This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. You’ll find the option within the **Settings** dialog under **Features**. Read about [configuring app properties](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
 
 :::image type="content" source="media/service-quick-create-report/power-apps-setting.png" alt-text="Screenshot of the setting to enable this feature in the Power Apps maker portal.":::
 
@@ -56,7 +56,7 @@ This feature is currently in preview, so for the Visualize the list feature to s
 
 - Currently, the visuals generated from this flow can only be used for personal exploration and cannot be shared or saved.
 - Column display names are not used within the report. Currently, you’ll see the system names in the resulting visuals.
-- You may notice additional columns within the report than you see in the original view. These fields could include foreign keys for the columns or hierarchy or URL fields that are being used within the original view for purposes other than columns. 
+- You may notice more columns within the report than you see in the original view. These fields could include foreign keys for the columns or hierarchy or URL fields that are being used within the original view for purposes other than columns. 
 - The report created through this feature is temporary, so the experience will timeout after a set amount of time, at which point you’ll need to close and reopen the report if you want to continue exploring your data. For now the timeout will occur at 1 hour, but that will increase in future updates. 
 
 ## Next steps
