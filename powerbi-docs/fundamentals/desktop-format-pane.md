@@ -110,22 +110,22 @@ Similar to customize series, we’ve also consolidated the button style cards. T
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|old-button-states.png     | new-button-states.png         |
 
 
 ## Highlighting match in search
 
-Small but mighty change, we’ve added the same yellow highlight you see in the Fields list and Filter pane to the Format pane search results. Note, when in search mode, results will reflect contents from both the visual and general pivots. 
+In a small but mighty change, we’ve added the same yellow highlight you see in the Fields list and Filter pane to the Format pane search results. When in search mode, results will reflect contents from both the visual and general pivots.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
-|Row1     |         |
+|old-search-no-highlight.png     | new-search-highlight.png        |
 
 
-## Order, naming conventions, and information hierarchy
+## Order, naming, and hierarchy
 
-Throughout the years, the Format pane has received many new additions but not always have these additions been added in a consistent fashion. It’s especially hard for new users to learn where things are when cards and settings constantly jump around. Or the name of the same setting in one visual is called something entirely different in another. We’ve now rearranged, renamed, added missing units, and consolidated cards/settings to behave consistent across visuals.  
+Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of the same setting in one visual is called something entirely different in another. We’ve now rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
 
-Bonus! Analytics pane updated styling: 
+## Next steps
 
-To match the new Format pane style, we’ve also updated the Analytics pane look and feel.  
+[Get started with Power BI Desktop](desktop-getting-started.md)
