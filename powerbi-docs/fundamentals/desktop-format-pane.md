@@ -15,9 +15,9 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-We’re introducing a redesigned Format pane. This article explains the biggest changes we’ve made to improve the usability and consistency across visuals, and non-visual elements.  
+We’re introducing a redesigned Format pane in Power BI Desktop. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
 
-We know it's a big change so we're rolling it out slowly, to get your early feedback and make any needed adjustments. It's currently in preview starting with the Power BI Desktop November release. Give it a try!
+We know it's a big change so we're rolling it out slowly, to get your early feedback and make any needed adjustments. It's currently in preview starting with the Power BI Desktop November 2021 release. Give it a try!
 
 ## Turn on the preview
 
@@ -62,13 +62,13 @@ We've split the long list of formatting cards into two categories: visual specif
 
 ## New global revert to default
 
-We’ve now added a new **More options (...)** menu that allows you to revert all settings back to default. Previously this process was painstaking, opening each card and selecting Revert to default. This option is especially helpful when you want your visual to reflect your theme styling.  
+On a new **More options (...)** menu, you can revert all settings back to default. Previously this process was painstaking, opening each card and selecting **Revert to default**. This option is especially helpful when you want your visuals to reflect your theme styling.  
 
 :::image type="content" source="media/desktop-format-pane/new-revert-all-default.png" alt-text="Screenshot of new Revert all settings to defaults.":::
 
 ## Subcategories
 
-You’ll also notice within the cards we've broken up the settings further into subcategories. This improves readability and allows you to focus on specific parts of a card a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right click within a card to expand all the sub-categories at once or collapse for quick scanning and scrolling. 
+You’ll notice that within the cards we've broken up the settings further into subcategories. Breaking them up improves readability and allows you to focus on specific parts of a card at a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right-click in a card to expand all the subcategories at once, or collapse them all for quick scanning and scrolling. 
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -76,20 +76,19 @@ You’ll also notice within the cards we've broken up the settings further into 
 
 ## No more double scrollbars
 
-This a big usability improvement. Previously, when scrolling within a long card the Format pane would have 2 scrollbars! Now when you expand cards and subcategories, you have one scrollbar that adapts to the length of the contents. 
+Previously, when scrolling within a long card, the Format pane would have two scrollbars. Now when you expand cards and subcategories, you have one scrollbar that adapts to the length of the contents.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-double-scrollbars.png" alt-text="Screenshot of old double scrollbars.":::     | :::image type="content" source="media/desktop-format-pane/new-single-scrollbar.png" alt-text="Screenshot of new single scrollbar.":::        |
 
-
 ## Hidden dynamic cards exposed
 
-Previously, some cards were only shown when you added certain fields in the build tab. For new users, this can be hard to understand when and why some cards were available or unavailable. With our newly added vertical space, we can expose these hidden dynamic cards with helpful tooltips on what actions to take to enable the cards.  
+Previously, you only saw some cards when you added certain fields in the build tab. For new users, it can be hard to understand when and why some cards are available or unavailable. With our newly added vertical space, we can expose these hidden dynamic cards with helpful tooltips on what actions to take to enable the cards.  
 
 ## Merged font settings
 
-Across the Format pane, we’ve now merged font family and font size to be on 1 line. Again, this was in an effort to reduce vertical space and better to align with Office. 
+Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and better to align with Office.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -98,7 +97,7 @@ Across the Format pane, we’ve now merged font family and font size to be on 1 
 
 ## Customize series mechanism
 
-Previously, the old Format pane would repeat the same list of settings after toggling the “customize series” toggle on. We've now consolidated this into an “apply settings to” dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll. 
+Previously, the old Format pane repeated the same list of settings after toggling **Customize series** to **On**. We've consolidated this list into an **Apply settings to** dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -106,11 +105,11 @@ Previously, the old Format pane would repeat the same list of settings after tog
 
 ## Button states mechanism
 
-Similar to customize series, we’ve also consolidated the button style cards. This allows us to use 1 “apply settings to” dropdown to easily toggle between button states to update various aspects of the style.  
+Similar to customizing a series, we’ve consolidated the button style cards. Consolidation allows us to use one **Apply settings to** dropdown to easily toggle between button states and update various aspects of the style.  
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
-|old-button-states.png     | new-button-states.png         |
+|:::image type="content" source="media/desktop-format-pane/old-button-states.png" alt-text="Screenshot of old button state cards.":::    | :::image type="content" source="media/desktop-format-pane/new-button-states.png" alt-text="Screenshot of new button state cards":::         |
 
 
 ## Highlighting match in search
@@ -119,12 +118,11 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
-|old-search-no-highlight.png     | new-search-highlight.png        |
-
+|:::image type="content" source="media/desktop-format-pane/old-search-no-highlight.png" alt-text="Screenshot of no highlight in the old Search experience.":::     | :::image type="content" source="media/desktop-format-pane/new-search-highlight.png" alt-text="Screenshot of now there's a highlight in the new Search experience.":::       |
 
 ## Order, naming, and hierarchy
 
-Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of the same setting in one visual is called something entirely different in another. We’ve now rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
 
 ## Next steps
 
