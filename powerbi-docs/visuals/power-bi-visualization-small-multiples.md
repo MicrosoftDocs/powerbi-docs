@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. The versions are presented side by side, with data divided across these versions by a chosen dimension. For example, a small multiple could split a “sales by product” column chart across customer segment or country.
+Small multiples, or trellising, splits a visual into multiple versions of itself. The versions are presented side by side, with data divided across these versions by a chosen dimension. For example, a small multiple could split a “sales by product” column chart across countries or customer segments.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot showing a stacked column chart for sales by product split into small multiples by country.":::
 
