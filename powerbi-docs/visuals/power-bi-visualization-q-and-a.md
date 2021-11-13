@@ -34,7 +34,7 @@ The Q&A visual consists of four core components:
 
 1. Find your copy of the **Sales and Marketing Sample PBIX file**.
 
-1. Open the file in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+1. Open the file in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
 1. Select the plus sign :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
@@ -85,7 +85,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
 1. Let's change the visual to a column chart. 
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-specify-visual.png" alt-text="Q&A visual with "as a column chart" added to the question.":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-specify-visual.png" alt-text="Q&A visual with 'as a column chart' added to the question.":::
 
 1. Add more visuals to the report page and see how the Q&A visual interacts with the other visuals on the page. In this example, the Q&A visual has cross-filtered the line chart and map and cross-highlighted the bar chart.
 
@@ -103,9 +103,9 @@ When you select a theme, that theme is applied to the entire report page. There 
 
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-themes.png" alt-text="Desktop with Switch theme selected.":::
 
-1. In this example, we've selected the **Colorblind safe** theme in the **Power BI** section of the **Themes** dropdown.
+1. In this example, we've selected the **Color blind safe** theme in the **Power BI** section of the **Themes** dropdown.
 
-   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-color-blind.png" alt-text="Screenshot showing the Q&A visual with the colorblind safe theme applied.":::
+   :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-color-blind.png" alt-text="Screenshot showing the Q&A visual with the Color blind safe theme applied.":::
 
 ### Format the Q&A visual
 

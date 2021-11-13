@@ -59,7 +59,7 @@ This slicer filters data by district manager. If you want to follow along with t
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer.png" alt-text="Screenshot of Slicer populated with district manager names.":::
 
-1. Resize and drag the elements on the canvas to make room for the slicer. Note that if you resize the slicer too small, its items are cut off. 
+1. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
 
 1. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
 
@@ -74,15 +74,15 @@ This slicer filters data by district manager. If you want to follow along with t
 
 ## Control which page visuals are affected by slicers
 
-By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
+By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
-Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which you want to keep visible at all times. Use visual interactions to keep slicer selections from filtering this chart. 
+Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
 1. Go to the **Overview** page of the report, and then select the **DM** slicer you previously created.
 
 1. On the Power BI Desktop menu, select the **Format** menu under **Visual Tools**, and then select **Edit interactions**.
 
-   Filter controls :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png":::, each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+   Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
 1. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
 
@@ -100,7 +100,7 @@ In the current report, the **District Monthly Sales** page has a **District Mana
 
    Or in the Power BI service, on the **View** menu, set the **Sync slicers pane** to **On**.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power Bi service.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power BI service.":::
 
    The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
 
@@ -153,9 +153,9 @@ You can also sync two or more separate slicers. This is particularly useful when
 
 ## Filtering slicers
 
-You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer you'll see the other visuals update. Clearing the slicer would show all the dates again.
+You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer, you'll see the other visuals update. Clearing the slicer would show all the dates again.
 
-See [Filter types](../create-reports/power-bi-report-filter-types.md) for more information on visual-level filters.
+For more information on visual-level filters, see [Filter types](../create-reports/power-bi-report-filter-types.md).
 
 ## Format slicers
 
@@ -247,7 +247,7 @@ Date/numeric inputs and slider options are only available for range slider slice
 The other formatting options are **Off** by default. Turn **On** these options to control them: 
 
 - **Background**: Add a background color to the slicer and sets its transparency.
-- **Lock aspect**: Retain the relative height and width of the slicer if it's resized.
+- **Lock aspect**: Keep the relative height and width of the slicer if it's resized.
 - **Border**: Add a border around the slicer and sets its color. This slicer border is separate from and unaffected by the **General** settings.
 - **Shadow**: Add a drop shadow to the slider.
 
