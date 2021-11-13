@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 11/12/2021
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -126,18 +126,19 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 The following known limitations currently apply to Premium Gen2:
 
-* If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools).
+* [Client applications and tools](service-premium-connect-tools.md#client-applications-and-tools) that connect to and work with datasets on Premium Gen2 capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries typically isn't necessary. Regardless of the client application or tool version, the following minimum client library versions are required:
+
+    |Client Library | Version  |
+    |---------|---------|
+    |MSOLAP    |     15.1.65.22         |
+    |AMO  |   19.12.7.0         |
+    |ADOMD     |    19.12.7.0           |
+
+    In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operations errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
+
 * There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
-* Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
-    |Tool|Minimum version required|
-    |---|---|
-    |SQL Server Management Studio (SSMS)|18.8|
-    |SQL Server Data Tools (SSDT)|2.9.15|
-    | AS PowerShell| Greater than 21.1.18229|
-
-* Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
-In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
+* Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 
     * A single artifact cannot exceed the amount of memory the capacity SKU offers. 
 
