@@ -7,7 +7,7 @@ ms.reviewer: mihart, rienhu
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/05/2021
+ms.date: 11/12/2021
 LocalizationGroup: Visualizations
 ---
 # Create small multiples in Power BI

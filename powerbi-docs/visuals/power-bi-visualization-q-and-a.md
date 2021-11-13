@@ -7,7 +7,7 @@ ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 11/12/2021
 ---
 # Create a Q&A visual in a report in Power BI
 

@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/08/2021
+ms.date: 11/12/2021
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
@@ -94,11 +94,11 @@ You can sync a slicer and use it on any or all pages in a report.
 
 In the current report, the **District Monthly Sales** page has a **District Manager** slicer, but what if we also wanted that slicer on the **New Stores** page? The **New Stores** page has a slicer, but it provides only **Store Name** information. With the **Sync slicers** pane, you can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
 
-1. In Power BI Desktop on **View** ribbon, select **Sync slicers**.
+1. In Power BI Desktop on the **View** ribbon, select **Sync slicers**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in Power BI Desktop.":::
 
-   Or in the Power BI service, on **View** menu, select **Sync slicers**.
+   Or in the Power BI service, on the **View** menu, set the **Sync slicers pane** to **On**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power Bi service.":::
 
