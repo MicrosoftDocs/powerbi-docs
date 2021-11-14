@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 10/17/2021
+ms.date: 11/15/2021
 LocalizationGroup: Share your work
 ---
 # Datasets discovery using the datasets hub
@@ -30,7 +30,7 @@ This article explains what you see on the datasets hub and describes how to use 
 
 For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
 
-If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
+If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces. You also have a more limited number of actions you can perform on a dataset as compared to a user who has a Pro or Premium Per User license. See [Users with free licenses](#users-with-free-licenses) for more detail.
 
 ## Find the dataset you need
 
@@ -97,6 +97,16 @@ To request build permission on a dataset, do one of the following:
 * From the dataset info page, click the **Request access** button at the top right corner of the dataset info page.
 
     :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+
+### Users with free licenses
+
+Users with free licenses (aka free users) can see all the datasets that have been shared with them and that they have access to, but they can't perform most of the actions on the dataset. See the [details](../consumer/end-user-features#feature-list) about which actions they can perform.
+
+Free users who are working on a dataset that is hosted in a Premium capacity workspace have more capabilities available. See the [details](../consumer/end-user-features#feature-list) about which capabilities are available to them in such cases.
+
+Free users can perform most dataset actions in My Workspace except **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
+
+To be able to perform all the available dataset actions, a user needs a Premium Per User (PPU) license. When free users try to perform an action that is not available under their license, a pop-up message gives them the opportunity to upgrade to a free, 60-day trial PPU license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
 
 ### Discoverable datasets
 

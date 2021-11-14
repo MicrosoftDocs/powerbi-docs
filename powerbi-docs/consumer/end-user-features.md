@@ -116,7 +116,7 @@ The second column represents a *business user*.  A business user:
 |Create report, with Build permission on the dataset |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Create paginated report, with Build permission on the dataset |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Share |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
-|Manage permission |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Manage permissions |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Save a copy |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
 |Create from template |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
