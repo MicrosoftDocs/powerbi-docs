@@ -30,7 +30,7 @@ This article explains what you see on the datasets hub and describes how to use 
 
 For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
 
-If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces. You also have a more limited number of actions you can perform on a dataset as compared to a user who has a Pro or Premium Per User license. See [Users with free licenses](#users-with-free-licenses) for more detail.
+If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing datasets and using the capabilities available on the datasets hub.
 
 ## Find the dataset you need
 
