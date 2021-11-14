@@ -15,7 +15,6 @@ LocalizationGroup: Premium
 
 This article provides information about key dates for migrating Power BI Premium capacity to the latest platform.
 
-
 Over the last several months, we've been working to make many improvements to Power BI Premium. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Premium, referred to as Power BI Premium Gen2, has officially moved from preview to general availability as of October 4, 2021. You can read the announcement about this release in the [Power BI blog](https://powerbi.microsoft.com/blog/).
 
 If your organization is using the previous version of Power BI Premium, you're required to migrate capacities to the modern Gen2 platform. The key dates for you to be aware of are listed below:
@@ -24,22 +23,33 @@ If your organization is using the previous version of Power BI Premium, you're r
 * **November 15, 2021** - We start sending notifications reminding customers to migrate.
 * **January 15, 2022** - Microsoft begins migration of Premium capacities to the modern Gen2 platform for all organizations.
 
-## Self-migration to Premium Generation 2
+## Premium Gen2 prerequisites
 
+Power BI Premium Gen2 and [Embedded Gen2](./../developer/embedded/power-bi-embedded-generation-2.md) support open-platform connectivity from Microsoft and third-party client applications and tools by using XMLA endpoints.
+
+The article [Dataset connectivity with the XMLA endpoint](./..admin/service-premium-connect-tools.md) lists the minimum requirements for Power BI Premium, Premium Per User (PPU) and Embedded connectivity. In addition to these requirements, for dataset connectivity in Premium Gen2, you need to have the following:
+
+* **PowerShell cmdlets** - Version **21.1.18256** or higher
+
+* **Visual Studio with Analysis Services projects** - Version **2.9.16** or higher
+
+* **SQL Server Management Studio (SSMS)** - Version **18.9** or higher
+
+## Self-migration to Premium Generation 2
 
 If you want to perform your own migration to the latest platform before January 15, 2022, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
 
 Ready for the next generation? Follow these steps:
 
-1.  Sign in to the [Power BI service](https://app.powerbi.com) as a Power BI capacity admin.
-1. From the navigation bar, select **Settings** > **Admin portal** > **Capacity settings**.
+1. Sign in to the [Power BI service](https://app.powerbi.com) as a Power BI capacity admin.
+2. From the navigation bar, select **Settings** > **Admin portal** > **Capacity settings**.
 
     :::image type="content" source="media/service-premium-transition-gen1-to-gen2/gen1-to-gen2-migration-capacity-settings.png" alt-text="Screen capture showing how to get to capacity settings.":::
 
-1. Select **Power BI Premium**.
-1. If you have already allocated capacity, select it.
-1. The section **Premium Generation 2** appears.
-1. Select the slider to switch the setting to **Enabled**. This step is demonstrated in the following animation:
+3. Select **Power BI Premium**.
+4. If you have already allocated capacity, select it.
+5. The section **Premium Generation 2** appears.
+6. Select the slider to switch the setting to **Enabled**. This step is demonstrated in the following animation:
 
     ![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
 
