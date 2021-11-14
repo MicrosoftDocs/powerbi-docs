@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/01/2021
+ms.date: 11/14/2021
 LocalizationGroup: Premium
 ---
 
@@ -54,9 +54,7 @@ To date, organizations that have enabled Autoscale for capacities have gotten th
 
 ## Migration timeline summary
 
-The following image summarizes each of the key milestones detailed in this article.
-
-  :::image type="content" source="media/service-premium-transition-gen1-to-gen2/gen2-timeline.png" alt-text="Image summarizing key dates for migration to Premium Gen 2.":::
+Following the general availability of gen2, we’ll begin to notify affected customers so that you can prepare your organization for changes. We’ll post additional awareness, along with specific migration timelines to Microsoft 365 Message Center. Admins will receive 60 days advance notice of changes. The timeline will vary by cloud.
 
 ## Next steps
 
