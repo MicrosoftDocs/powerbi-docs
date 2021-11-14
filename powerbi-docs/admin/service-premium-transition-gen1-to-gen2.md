@@ -52,7 +52,7 @@ To date, organizations that have enabled Autoscale for capacities have gotten th
 * You can continue to use Autoscale to enable the automatic use of additional cores during periods of higher-than normal demand on your capacities. Review the [pricing details for Premium per capacity add-ons](https://powerbi.microsoft.com/pricing/#premium-add-on-card-autoscale) so that you're aware of upcoming charges.
 * Or, to avoid Autoscale charges, disable the feature. Autoscale is an optional feature and benefit of the Premium Gen2 platform. You can choose to not use it.
 
-## Migration timeline summary
+## Migration notification
 
 Following the general availability of gen2, we’ll begin to notify affected customers so that you can prepare your organization for changes. We’ll post additional awareness, along with specific migration timelines to Microsoft 365 Message Center. Admins will receive 60 days advance notice of changes. The timeline will vary by cloud.
 
