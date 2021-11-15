@@ -100,9 +100,9 @@ To request build permission on a dataset, do one of the following:
 
 ### Users with free licenses
 
-Users with free licenses (aka free users) can see all the datasets that have been shared with them and that they have access to, but they can't perform most of the actions on the dataset. See the [details](../consumer/end-user-features#feature-list) about which actions they can perform.
+Users with free licenses (aka free users) can see all the datasets that have been shared with them and that they have access to, but they can't perform most of the actions on the dataset. See the [details](../consumer/end-user-features.md#feature-list) about which actions they can perform.
 
-Free users who are working on a dataset that is hosted in a Premium capacity workspace have more capabilities available. See the [details](../consumer/end-user-features#feature-list) about which capabilities are available to them in such cases.
+Free users who are working on a dataset that is hosted in a Premium capacity workspace have more capabilities available. See the [details](../consumer/end-user-features.md#feature-list) about which capabilities are available to them in such cases.
 
 Free users can perform most dataset actions in My Workspace except **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
 
