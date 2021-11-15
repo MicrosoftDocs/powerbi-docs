@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 11/15/2021
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop
