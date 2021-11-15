@@ -21,7 +21,7 @@ Getting an online link from OneDrive for Business requires a few specific steps.
    > [!NOTE]
    > Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your OneDrive for Business browser interface. You can use any option that allows you to open the file in Excel.
    
-:::image type="content" source="media/desktop-use-onedrive-business-links/use-onedrive-links-excel-01.png" alt-text="Screenshot of select the more menu in OneDrive.":::   
+   :::image type="content" source="media/desktop-use-onedrive-business-links/use-onedrive-links-excel-01.png" alt-text="Screenshot of selecting the more menu in OneDrive.":::   
 
 
 2. In the **More details** pane that appears, select the *copy* icon next to **Path**.
