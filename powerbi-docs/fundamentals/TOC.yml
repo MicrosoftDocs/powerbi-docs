@@ -25,6 +25,8 @@
     items: 
     - name: "What's new in the latest Power BI update?"
       href: desktop-latest-update.md
+    - name: "The new Format pane"
+      href: desktop-format-pane.md
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
     - name: "Ten tips for getting help"
