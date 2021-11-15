@@ -23,7 +23,7 @@ For related "What's New" information, see:
 ### Updated report filters (iOS and Android phones)
 Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator.
 
-![Screenshot of report filter pane in the Power B I mobile app.]()
+![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
 
 ### Support for Power BI's new permission model for Goals (iOS and Android)
 The mobile apps for iOS and Android support Power BI's new permission model for Goals that allows greater control over who can update goals and scorecards and what can be updated.
