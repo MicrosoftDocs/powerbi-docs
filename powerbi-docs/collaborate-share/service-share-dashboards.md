@@ -145,7 +145,7 @@ Similar to report sharing, you can specify if you want to grant users the follow
 - Reshare permissions (included by default) – allows recipients to share the dashboard to others
 - Build permissions (included by default) – allows recipients to build content with the data associated with the dashboard
 
-You can share the dashboard with guest users whose addresses are outside your organization, but guest users cannot reshare dashboards. Read more about [sharing outside your organization](#share-a-report-or-dashboard-outside-your-organization) in this article.
+You can share the dashboard with guest users whose addresses are outside your organization, but guest users cannot reshare dashboards. Read more about [sharing outside your organization](#share-outside-your-organization) in this article.
 
    >[!NOTE] 
    > The input box supports, at most, 100 separate users or groups. See [Share with more than 100 users](#share-with-more-than-100-separate-users) in this article for ways to share with more people.
