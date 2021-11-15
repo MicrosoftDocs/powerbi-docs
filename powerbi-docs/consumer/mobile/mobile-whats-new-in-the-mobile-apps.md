@@ -25,11 +25,10 @@ Our redesigned report filter pane makes it easier to understand the filters appl
 
 ![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
 
-### Support for Power BI's new permission model for Goals (iOS and Android)
+### Goals support (iOS and Android)
 The mobile apps for iOS and Android support Power BI's new permission model for Goals that allows greater control over who can update goals and scorecards and what can be updated.
 
-### Support for customizations in Goals (iOS and Android)
-Scorecard creators can configure which attributes a goal has. This impacts what information a user has to provide when doing a check-in on a goal.
+Scorecard creators can configure which attributes a goal has. This impacts what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customizations.
 
 ## October 2021
 ### Use QR codes with URL parameters (Android and iOS)
