@@ -451,7 +451,9 @@
       - name: "Set goal-level permissions"
         href: service-goals-set-permissions.md
       - name: "Goals and Power Automate"
-        href: service-goals-power-automate.md        
+        href: service-goals-power-automate.md
+      - name: "Create and add Scorecards in reports"
+        href: ../visuals/power-bi-visualization-scorecard-visual.md   
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
