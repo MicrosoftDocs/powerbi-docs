@@ -43,6 +43,8 @@ A filled in filter icon indicates there are active filters on the page. You can 
     
     ![Phone BI phone report basic and advanced filtering.](./media/mobile-apps-view-phone-report/power-bi-iphone-basic-advanced-filtering.png)
 
+The filters pane supports filter customizations done by the report creator.
+
 ## Cross-highlight visuals
 Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
