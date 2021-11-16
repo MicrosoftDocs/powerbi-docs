@@ -21,7 +21,7 @@ For related "What's New" information, see:
 
 ## November 2021
 ### Updated report filters (iOS and Android phones)
-Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator.
+Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator. [Learn more](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone)!
 
 ![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
 
