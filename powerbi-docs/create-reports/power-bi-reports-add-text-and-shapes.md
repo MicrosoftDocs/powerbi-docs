@@ -44,9 +44,9 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
 ---
 
-     Power BI places an empty text box on the canvas.
+    Power BI places an empty text box on the canvas.
 
-4. To position the text box, select the grey area at the top and drag. To resize the text box, select and drag any of the outline handles. 
+2. To position the text box, select the grey area at the top and drag. To resize the text box, select and drag any of the outline handles. 
    
    ![Screenshot of Position the text box on the canvas.](media/power-bi-reports-add-text-and-shapes/power-bi-position-text-box.png)
 
