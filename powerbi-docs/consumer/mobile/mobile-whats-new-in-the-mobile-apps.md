@@ -28,7 +28,7 @@ Our redesigned report filter pane makes it easier to understand the filters appl
 ### Goals-related updates (iOS and Android)
 Goal-level permissions in Power BI enable goal and scorecard authors to grant different levels of access to different users for specific goals. For instance, some users may be permitted to add notes to a goal and/or to update the goal's status and current value, while other users may only be allowed to view specific goals within a scorecard. The mobile apps for iOS and Android support Power BI's goal-level permission model. [Learn more about goal-level permissions in Power BI](../../create-reports/service-goals-set-permissions.md).
 
-Scorecard creators can configure which attributes a goal has. This impacts what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customized check-ins.
+Scorecard creators can configure which attributes a goal has. For example, they can decide to show or hide columns. Customizing goal attributes can impact what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customized check-ins.
 
 ## October 2021
 ### Use QR codes with URL parameters (Android and iOS)
