@@ -22,7 +22,7 @@ In the original version of Power BI Premium, backend v-cores were reserved physi
 
 In Premium Gen2, backend v-cores are implemented on regional clusters of physical nodes in the cloud, which are shared by all tenants using Premium capacities in that Power BI region. The regional cluster is further divided into specialized groups of nodes, where each group handles a different Power BI workload (datasets, dataflows, or paginated reports). These specialized groups of nodes help avoid resource contention between fundamentally different workloads running on the same node.
 
-In both Premium Gen1 and Gen2 versions, administrators have the ability to [tweak and configure capacities](./../admin/service-admin-premium-workloads.md) to avoid resource contention between workloads (datasets, dataflows, paginated reports, and AI) or other performance impactful effects to make sure capacity performance remained tuned or acceptable.
+In both Premium Gen1 and Gen2 versions, administrators have the ability to [tweak and configure workload settings](./../admin/service-admin-premium-workloads.md) for their capacity. This can be used to reduce resource contention between workloads (datasets, dataflows, paginated reports, and AI), and adjust other settings such as memory limits and timeouts based on the capacity usage patterns.
 
 The contents of workspaces assigned to a Premium Gen2 capacity is stored on your organizations capacity's storage layer, which is implemented on top of capacity-specific Azure storage blob containers, similar to the original version of Premium. This approach enables features like BYOK to be used for your data.
 
