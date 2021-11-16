@@ -26,7 +26,7 @@ Our redesigned report filter pane makes it easier to understand the filters appl
 ![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
 
 ### Goals-related updates (iOS and Android)
-The mobile apps for iOS and Android support Power BI's new permission model for Goals that allows greater control over who can update goals and scorecards and what can be updated.
+Goal-level permissions in Power BI enable goal and scorecard authors to grant different levels of access to different users for specific goals. For instance, some users may be permitted to add notes to a goal and/or to update the goal's status and current value, while other users may only be allowed to view specific goals within a scorecard. The mobile apps for iOS and Android support Power BI's goal-level permission model. [Learn more about goal-level permissions in Power BI](../../create-reports/service-goals-set-permissions.md).
 
 Scorecard creators can configure which attributes a goal has. This impacts what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customized check-ins.
 
