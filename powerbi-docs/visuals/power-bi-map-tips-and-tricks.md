@@ -33,7 +33,7 @@ The Power BI service and Power BI Desktop send Bing the geo data it needs to cre
 
 * Filled maps require a field in the **Location** bucket; even if latitude and longitude are provided. Whatever data is in the **Location**, **Latitude**, or **Longitude** bucket is sent to Bing.
   
-    In the example below, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Size** bucket is not sent to Bing.
+    In the example below, the field **PostalCode** is being used for geo-coding, so the values in the PostalCode column are sent to Bing. Data from the **Size** bucket is not sent to Bing.
   
     :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png" alt-text="Sent to Bing Maps.":::
   
@@ -47,7 +47,7 @@ If you have access to the dataset that is being used to create the map visualiza
 
 **1. Categorize geographic fields in Power BI Desktop**
 
-In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Data view, select the desired column. From the ribbon, select the **Modeling** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **County**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you are live connecting to SQL Server Analysis Services, you will need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
+In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Data view, select the desired column. From the ribbon, select the **Modeling** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **County**, **Postal Code**, **State, or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you are live connecting to SQL Server Analysis Services, you will need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Use more than one location column.**
 
@@ -55,7 +55,7 @@ In Power BI Desktop, you can ensure fields are correctly geo-coded by setting th
 
 Power BI uses Bing's [unstructured URL template service](/bingmaps/rest-services/locations/find-a-location-by-address) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
 
- For example, if you only have a City column, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
+ For example, if you only have a City column, Bing may have a hard time geo-coding. Add other geo columns to make the location unambiguous. Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
 
 Make sure each field only has a single location category. For example, your City location field should be **Southampton**, not **Southampton, New York**.  And Address location fields should be **1 Microsoft Way** and not **1 Microsoft Way, Redmond, WA**.
 
@@ -76,7 +76,7 @@ While we encourage you to use geo-hierarchies in your maps, if you must use a si
 
 **1. Use latitude and longitude fields (if they exist)**
 
-In Power BI, if the dataset you are using has fields for longitude and latitude -- use them!  Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
+In Power BI, if the dataset you are using has fields for longitude and latitude--use them!  Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
 ![latitude and longitude](./media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
@@ -89,8 +89,8 @@ When your dataset already has different levels of location data, you and your co
 
 When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
 
-* The drill button on the far right, called Drill Mode :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png":::, allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn the drill-down option on and click North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
-* On the left there are 2 other drill options. The first option, :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png":::, drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
+* The drill button on the far right, called Drill Mode :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png":::, allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn on the drill-down option and select North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
+* On the left, there are two other drill options. The first option, :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png":::, drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
 * The second option, :::image type="icon" source="./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png":::, is similar to the drill-down option, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Next steps
