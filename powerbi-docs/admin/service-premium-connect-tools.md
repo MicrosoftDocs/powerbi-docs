@@ -47,7 +47,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 **Analysis Services Deployment Wizard** – Installed with SSMS, this tool provides deployment of Visual Studio authored tabular model projects to Analysis Services and Premium workspaces. It can be run interactively or from the command line for automation. XMLA read-write is required. To learn more, see [Analysis Services Deployment Wizard](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true).
 
-**PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks like refresh operations. XMLA read-write is required. Version **21.1.18221** (21.1.18229 when capacities are Premium Gen2) or higher of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) is required. Azure Analysis Services cmdlets in the Az.AnalysisServices module are not supported for Power BI datasets. To learn more, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true).
+**PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks like refresh operations. XMLA read-write is required. Version **21.1.18221** (for Premium Gen2 capacities, see [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites)) or higher of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) is required. Azure Analysis Services cmdlets in the Az.AnalysisServices module are not supported for Power BI datasets. To learn more, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true).
 
 **Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies what data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. XMLA read-only is required. To learn more, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
@@ -63,13 +63,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 Client applications and tools don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries that applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and  Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
-Minimum required versions to work with Premium Gen2 capacity:
-
-|Client Library | Version  |
-|---------|---------|
-|MSOLAP    |     15.1.65.22         |
-|AMO  |   19.12.7.0         |
-|ADOMD     |    19.12.7.0           |
+The minimum required client library versions for Premium Gen2 capacities are listed in the [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites).
 
 ## Optimize datasets for write operations by enabling large models
 
