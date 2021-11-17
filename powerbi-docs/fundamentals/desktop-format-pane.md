@@ -132,7 +132,7 @@ Some features aren't available yet in the current version of the new Format pane
 - Global text size is missing for tables and matrixes. 
 - Numeric input may not render input properly for overflowing text.
 - Red borders may appear around some controls when you first open the pane.
-- Scatter chart > category labels are missing a few properties.
+- Category labels for scatter charts are missing a few properties.
 - Some visuals, such as Azure maps, Esri maps, Power Automate, and decomposition tree, haven't been updated with subcategories yet.
 
 
