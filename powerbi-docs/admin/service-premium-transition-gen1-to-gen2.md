@@ -35,6 +35,14 @@ The article [Dataset connectivity with the XMLA endpoint](./../admin/service-pre
 
 * **SQL Server Management Studio (SSMS)** - Version **18.9** or higher
 
+You also need to use the following [client libraries](service-premium-connect-tools.md#client-libraries) when working with Gen2 capacities:
+
+* **MSOLAP** - Version **15.1.65.22** or higher
+
+* **AMO** - Version **19.12.7.0** or higher
+
+* **ADOMD** - Version **19.12.7.0** or higher
+
 ## Self-migration to Premium Generation 2
 
 If you want to perform your own migration to the latest platform before January 15, 2022, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
