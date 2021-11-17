@@ -6,20 +6,16 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/26/2021
+ms.date: 11/17/2021
 ---
 # Best practices to optimize Q&A in Power BI
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in Power BI does.
 
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A.
 
-In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
+## Use Q&A tooling to fix your questions
 
-## Manual steps to improve Q&A
-
-### Use the new Q&A tooling to fix your questions
-
-With the Q&A tooling, you can teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](q-and-a-tooling-intro.md).
+In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI. With Q&A tooling, you teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](q-and-a-tooling-intro.md).
 
 ## Add missing relationships
 
