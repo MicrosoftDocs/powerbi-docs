@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 11/17/2021
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -22,7 +22,25 @@ With Power BI, you can publish your report to PDF format and easily create a doc
 ## Export your Power BI report to PDF
 In the Power BI service or Desktop, select a report to display it on the canvas. In the Power BI service, you can select a report from your **Home** page, **Apps**, or any other container from the nav pane.  
 
-### Export to PDF from the Power BI service
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+## Export to PDF from Power BI Desktop
+The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described above.  There are only a few differences:
+
+* In Desktop, select **File** > **Export** > **Export to PDF**.
+
+    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Export to PDF from Desktop.":::
+
+* Report pages that are currently not visible, such as any tooltips or hidden pages, are not exported to the PDF file. 
+
+* While the export is being processed, a dialog appears that lets you know that the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export.
+
+* The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
+    
+
+# [Power BI service](#tab/powerbi-service)
+
+## Export to PDF from the Power BI service
 
 1. In the Power BI service, select **Export** > **PDF** from the menu bar.
 
@@ -49,18 +67,6 @@ In the Power BI service or Desktop, select a report to display it on the canvas.
 
     If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
-### Export to PDF from Power BI Desktop
-The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described above.  There are only a few differences:
-
-* In Desktop, select **File** > **Export** > **Export to PDF**.
-
-    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Export to PDF from Desktop.":::
-
-* Report pages that are currently not visible, such as any tooltips or hidden pages, are not exported to the PDF file. 
-
-* While the export is being processed, a dialog appears that lets you know that the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export.
-
-* The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
 
 
 
