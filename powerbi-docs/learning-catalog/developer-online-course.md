@@ -79,7 +79,7 @@ The [course of 21 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN0YdI
 
 ## Self-study kit
 
-You can download and set up a self-study kit, which consists of the presentation content and five hands-on labs. For more information, watch the [Self-study Kit](https://www.youtube.com/watch?v=a9E8X0a_Mis&list=PL1N57mwBHtN0YdIsiHDDdb9KyrRClbCyO&index=2) video.
+You can download and set up a self-study kit, which consists of the presentation content and six hands-on labs. For more information, watch the [Self-study Kit](https://www.youtube.com/watch?v=a9E8X0a_Mis&list=PL1N57mwBHtN0YdIsiHDDdb9KyrRClbCyO&index=2) video.
 
 To complete the labs, you'll need a Windows PC (Windows 7, or later) and the following software installed:
 
