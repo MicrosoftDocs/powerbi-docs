@@ -84,7 +84,7 @@ sections:
         answer: |
           When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items from the same type with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. For example, if you're trying to assign a workspace to the *test stage*, and one of your reports is called 'regional sales', if you have more than one report with the same name in either the *development* or *production* stages, the assignment will fail. Assigning your workspace will also fail if the workspace you're assigning has two datasets titles 'regional sales dataset', and there's a dataset with the same name in either the *development* or *production* stages. To resolve this error, change the name of the item that doesn't match the item in the stage you're trying to assign. You can select the links in the error message to open the items in the Power BI service. 
           
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the can't assign the workspace error message in deployment pipelines":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the can't assign the workspace error message in deployment pipelines.":::
 
       - question: |
           Why am I seeing the 'different' symbol after I assigned a workspace with datasets that are similar to those in adjacent stages?
@@ -109,7 +109,7 @@ sections:
       - question: |
           How can I assign workspaces to all the stages in a pipeline?
         answer: |
-          You can either assign one workspace to your pipeline and then deploy it across the pipeline, or assign a different workspace to each pipeline stage. For more information see [assign a workspace to a deployment pipeline](deployment-pipelines-assign.md.
+          You can either assign one workspace to your pipeline and then deploy it across the pipeline, or assign a different workspace to each pipeline stage. For more information see [assign a workspace to a deployment pipeline](deployment-pipelines-assign.md).
           
       - question: |
           Why did my first deployment fail?
@@ -345,7 +345,7 @@ sections:
           To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
 
           
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline.":::
   - name: Rules
     questions:
 
