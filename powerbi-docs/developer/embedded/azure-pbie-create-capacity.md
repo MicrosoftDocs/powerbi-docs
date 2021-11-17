@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 10/27/2021
+ms.date: 11/09/2021
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -32,6 +32,9 @@ To complete this quickstart, you need:
 * **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
+
+>[!NOTE]
+>To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
 Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
@@ -356,6 +359,10 @@ To upgrade a Gen1 capacity to Gen2 in the Azure UI:
 2. From the overview section select **Update to Gen 2**.
 
     :::image type="content" source="media/azure-pbie-create-capacity/upgrade-to-gen-2.png" alt-text="Screenshot of a Power BI upgrade capacity option in the Azure portal.":::
+
+3. Select **Yes** to confirm.
+
+    :::image type="content" source="media/azure-pbie-create-capacity/confirm-upgrade.png" alt-text="Screenshot of a Power BI confirm upgrade in the Azure portal.":::
 
 The capacity will update automatically in a few seconds.
 
