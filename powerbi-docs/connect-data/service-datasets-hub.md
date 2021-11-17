@@ -100,13 +100,13 @@ To request build permission on a dataset, do one of the following:
 
 ### Users with free licenses
 
-Users with free licenses are known as free users. In the datasets hub, free users can see all the datasets that have been shared with them and that they have access to, but they won’t be able to use most of the dataset hub’s capabilities unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
+Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most datasets hub capabilites will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
 
-For datasets in the free user's My Workspace, most capabilities are available except **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
+For datasets in other workspaces, free users can see all the datasets that have been shared with them and that they have sufficient permissions to access, but they won’t be able to use most of the dataset hub’s capabilities on those datasets unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
 
-See the [free users feature list](../consumer/end-user-features.md#feature-list) for a detailed list of actions free users can perform on datasets in the datasets hub.
+See the [free users feature list](../consumer/end-user-features.md#feature-list) for a detailed list of the actions free users can perform on datasets in the datasets hub and on the dataset details page.
 
-To be able to perform all available dataset actions, a free user needs an upgraded license. When a free user tries to perform an action that is not available under their license, a pop-up message gives them the opportunity to upgrade their license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
+To be able to perform all available dataset actions, a free user needs an upgraded license in addition to any necessary access permissions. When a free user tries to perform an action that is not available under the terms of the free user license, a pop-up message gives them the opportunity to upgrade their license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
 
 ### Discoverable datasets
 
