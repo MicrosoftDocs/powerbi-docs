@@ -2223,7 +2223,7 @@
         {
             "source_path": "powerbi-docs/create-reports/desktop-connect-pdf.md",
             "redirect_url": "/power-bi/consumer/end-user-pdf",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-redshift.md",
