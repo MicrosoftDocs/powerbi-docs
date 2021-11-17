@@ -75,7 +75,7 @@ You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to comple
 
 ### Use the Power BI automation tool extension
 
-After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=PBIALMTest.pbi-rest-api--extension&ssr=false#overview) extension to DevOps, you can [create one or more new tasks](/azure/devops/extend/develop/add-build-task) which include the following deployment pipelines tasks:
+After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=PBIALMTest.pbi-rest-api--extension&ssr=false#overview) extension to DevOps, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
 
 * Create a new pipeline
 
