@@ -3237,7 +3237,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-export-to-pdf.md",
-            "redirect_url": "/power-bi/create-reports/desktop-export-to-pdf",
+            "redirect_url": "/power-bi/consumer/end-user-pdf",
             "redirect_document_id": true
         },
         {
