@@ -36,7 +36,8 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 * While the export is being processed, a dialog appears that lets you know that the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export.
 
 * The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
-    
+
+---
 
 # [Power BI service](#tab/powerbi-service)
 
