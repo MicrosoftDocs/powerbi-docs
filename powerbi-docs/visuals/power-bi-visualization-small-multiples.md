@@ -20,7 +20,7 @@ Small multiples, or trellising, splits a visual into multiple versions of itself
 
 ## Create small multiples
 
-For live connected data models, this feature requires a version of AS which supports the second generation of DAX queries, aka SuperDAX: for tabular models, AS 2016 or newer; and for multidimensional models, AS 2019 or newer.
+For live connected data models, this feature requires a version of AS which supports the second generation of DAX queries, also known as SuperDAX: for tabular models, AS 2016 or newer; and for multidimensional models, AS 2019 or newer.
 
 Currently, you can create small multiples on bar, column, line, and area charts.
 
