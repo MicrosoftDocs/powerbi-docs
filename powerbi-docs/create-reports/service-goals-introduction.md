@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/30/2021
+ms.date: 11/16/2021
 ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
@@ -119,8 +119,7 @@ In order to create a scorecard in a Premium workspace, you need a contributor or
 - Goals don't yet support bring your own key (BYOK). 
 - Goals don't yet support row-level security (RLS). 
 - For now, the maximum number of subgoal levels is four.
-- Goals don't support publish to web or “app-owns data scenarios” for embedded.
-- Mobile experience isn't currently available.
+- Goals don't support publish-to-web or app-owns-data scenarios for embedded.
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 11/15/2021
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list in the Power BI service
@@ -19,6 +19,12 @@ There's a new way to create reports quickly in the Power BI service from data in
 New to creating in Power BI? Try reading [Reports in Power BI](../consumer/end-user-reports.md) for some quick background information.
 
 If you use Power BI Desktop, you can also [create a report on a SharePoint List in Power BI Desktop](../connect-data/desktop-sharepoint-online-list.md).
+
+## Video 
+
+In this video, watch Amanda demo creating a report from a SharePoint list in the Power BI service.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWOzjW]
 
 ## Visualize in Power BI 
 
