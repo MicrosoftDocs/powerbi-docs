@@ -65,7 +65,31 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 
 ## Integrate your pipeline with Azure DevOps
 
-You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines). You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating datasources and updating parameters.
+To automate Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines), you can use one of these methods:
+
+* **PowerShell** - The script signs into Power BI using a *service principal* or a *user*.
+
+* **Power BI automation tools** - This extension only works with a *service principal*.
+
+You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating data sources and parameters.
+
+### Use the Power BI automation tool extension
+
+After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=PBIALMTest.pbi-rest-api--extension&ssr=false#overview) extension to DevOps, you can [create one or more new tasks](/azure/devops/extend/develop/add-build-task) which include the following deployment pipelines tasks:
+
+* Create a new pipeline
+
+* Assign a workspace to a pipeline stage
+
+* Add a user to a deployment pipeline
+
+* Add a user to a workspace
+
+* Deploy content to a deployment pipeline
+
+* Remove a workspace from a deployment pipeline
+
+* Delete a pipeline
 
 ### Access the PowerShell samples
 
