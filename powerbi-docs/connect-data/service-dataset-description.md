@@ -13,6 +13,8 @@ LocalizationGroup: Share your work
 
 To help members of your organization quickly identify datasets that might be useful for them, provide a concise, informative description of your dataset in the dataset's settings. Users will see this description in the info tooltip next to the dataset's name in the datasets hub, as well as on the dataset's details page. Providing a meaningful description helps foster dataset reuse. For instance, based on a dataset's description, users may decide to explore reports that are based on the dataset, or to create their own reports based on the dataset.
 
+## Provide a dataset description
+
 To provide a description for a dataset, go to dataset's settings page, find the Dataset description section, and enter your description in the text box.
 
 :::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of dataset description text box on the dataset settings page.":::
