@@ -68,8 +68,6 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 
     If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
----
-
 
 ## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
