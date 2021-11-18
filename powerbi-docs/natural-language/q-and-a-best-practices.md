@@ -6,30 +6,16 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/23/2019
+ms.date: 11/17/2021
 ---
 # Best practices to optimize Q&A in Power BI
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in Power BI does.
 
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A.
 
-In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
+## Use Q&A tooling to fix your questions
 
-## Automatic adjustments that Q&A makes
-
-### Measure tables
-
-In previous versions of Q&A, measure tables would confuse Q&A as the underlying table was disconnected. Q&A works just fine with measure tables now.
-
-### Table names conflicting with column names
-
-In previous versions of Q&A, if a table and column had the same name, the table would take preference. This issue has been addressed, so you don't have to fix this issue in your models anymore.
-
-## Manual steps to improve Q&A
-
-### Use the new Q&A tooling to fix your questions
-
-With the Q&A tooling, you can teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](q-and-a-tooling-intro.md).
+In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI. With Q&A tooling, you teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](q-and-a-tooling-intro.md).
 
 ## Add missing relationships
 
@@ -39,13 +25,13 @@ If your model is missing relationships between tables, neither Power BI reports 
 
 In the first image, there are no relationships between the Customers, Sales, and Products tables.
 
-![Relationships that need work for Q&A](media/q-and-a-best-practices/desktop-qna-01.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-01.png" alt-text="Relationships that need work for Q&A":::
 
 **Ready for Q&A**
 
-In the first image, relationships are defined between the tables.
+In the second image, relationships are defined between the tables.
 
-![relationships in good shape for Q&A](media/q-and-a-best-practices/desktop-qna-02.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-02.png" alt-text="relationships in good shape for Q&A":::
 
 
 ## Rename tables and columns
@@ -60,25 +46,25 @@ Consider another example. Imagine you have a table named *Headcount* that contai
 
 Table names like *StoreInfo* and *Product List* need work.
 
-![Table names that need work for Q&A](media/q-and-a-best-practices/desktop-qna-03.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-03.png" alt-text="Table names that need work for Q&A":::
 
 **Ready for Q&A**
 
 Tables named *Store* and *Products* work better.
 
-![Table names in good shape for Q&A](media/q-and-a-best-practices/desktop-qna-04.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-04.png" alt-text="Table names in good shape for Q&A":::
 
 ## Fix incorrect data types
 
 Imported data can have incorrect data types. In particular, *date* and *number* columns that are imported as *strings* aren't interpreted by Q&A as dates and numbers. Make sure you select the correct data type in your Power BI model.
 
-![Choose the correct data type to ensure it's available for Q&A](media/q-and-a-best-practices/desktop-qna-05.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-05.png" alt-text="Choose the correct data type to ensure it's available for Q&A":::
 
 ## Mark year and identifier columns as Don't Summarize
 
-Power BI aggressively aggregates numeric columns by default, so questions like “total sales by year” can sometimes result in a grand total of sales alongside a grand total of years. If you have specific columns where you don't want Power BI to exhibit this behavior, set the **Default Summarization** property on the column to **Don’t Summarize**. Be mindful of **year**, **month**, **day**, and **ID** columns, as those columns are the most frequent problems. Other columns that aren’t sensible to sum, such as *age*, could also benefit from setting **Default Summarization** to **Don’t Summarize** or to **Average**. You'll find this setting in the **Modeling** tab.
+Power BI aggressively aggregates numeric columns by default, so questions like “total sales by year” can sometimes result in a grand total of sales alongside a grand total of years. If you have specific columns where you don't want Power BI to exhibit this behavior, set the **Default Summarization** property on the column to **Don’t Summarize**. Be mindful of **year**, **month**, **day**, and **ID** columns, as those columns are the most frequent problems. Other columns that aren’t sensible to sum, such as *age*, could also benefit from setting **Default Summarization** to **Don't Summarize** or to **Average**. You'll find this setting in the **Data** tab after you select a column.
 
-![Don't Summarize columns like year, month, date for Q&A](media/q-and-a-best-practices/desktop-qna-06.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-06.png" alt-text="Don't Summarize columns like year, month, date for Q&A":::
 
 ## Choose a Data Category for each date and geography column
 
@@ -88,13 +74,13 @@ First, Q&A uses the **Data Category** information to help make choices about wha
 
 Second, Q&A makes some educated guesses about how users are likely to talk about date and geography columns, to help it understand certain types of questions. For example, the “when” in “When was John Smith hired?” is almost certain to map to a date column, and the “Brown” in “Count customers in Brown” is more likely to be a city than a hair color.
 
-![Choose Data Categories appropriately for Q&A](media/q-and-a-best-practices/desktop-qna-07.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-07.png" alt-text="Choose Data Categories appropriately for Q&A":::
 
 ## Choose a Sort By Column for relevant columns
 
-The **Sort By Column** property allows sorting in one column to automatically sort a different column instead. For example, when you ask “sort customers by shirt size”, you probably want your Shirt Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
+The **Sort By Column** property allows sorting in one column to automatically sort a different column instead. For example, when you ask “sort customers by hat size”, you probably want your Hat Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
 
-![Choose Sort by Column appropriately for Q&A](media/q-and-a-best-practices/desktop-qna-08.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-08.png" alt-text="Choose Sort by Column appropriately for Q&A":::
 
 ## Normalize your model
 
@@ -110,11 +96,11 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 **Needs work**
 
-![Screenshot shows a Suppliers table that includes contact information.](media/q-and-a-best-practices/desktop-qna-09.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-09.png" alt-text="Screenshot shows a Suppliers table that includes contact information.":::
 
 **Ready for Q&A**
 
-![Screenshot shows two tables, one for Suppliers and one for Contacts.](media/q-and-a-best-practices/desktop-qna-10.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-10.png" alt-text="Screenshot shows two tables, one for Suppliers and one for Contacts.":::
 
 ### Pivot to eliminate property bags
 
@@ -124,11 +110,11 @@ For example, consider a *CustomerDemographics* table with CustomerID, Property, 
 
 **Needs work**
 
-![Don't use property bags in models for Q&A](media/q-and-a-best-practices/desktop-qna-11.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-11.png" alt-text="Don't use property bags in models for Q&A":::
 
 **Ready for Q&A**
 
-![Screenshot shows four columns that have Age, MartialStatus, City, and Gender properties as columns with values for different customers.](media/q-and-a-best-practices/desktop-qna-12.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-12.png" alt-text="Screenshot shows three columns that have Age, HatSize, and City properties as columns with values for different customers.":::
 
 ### Union to eliminate partitioning
 
@@ -138,11 +124,11 @@ Similarly, consider a typical pivoted value column: a *BookTour* table containin
 
 **Needs work**
 
-![Don't use pivoted value columns in models for Q&A](media/q-and-a-best-practices/desktop-qna-13.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-13.png" alt-text="Don't use pivoted value columns in models for Q&A":::
 
 **Ready for Q&A**
 
-![Screenshot shows two tables, one with book and author information for tours and one with cities associated with the tours.](media/q-and-a-best-practices/desktop-qna-14.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-14.png" alt-text="Screenshot shows two tables, one with book and author information for tours and one with cities associated with the tours.":::
 
 ### Split formatted columns
 
@@ -150,11 +136,11 @@ If the source from which you're importing your data contains formatted columns, 
 
 **Needs work**
 
-![Don't use single columns for multiple data elements for Q&A](media/q-and-a-best-practices/desktop-qna-15.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-15.png" alt-text="Don't use single columns for multiple data elements for Q&A":::
 
 **Ready for Q&A**
 
-![Screenshot shows a table with customers, a full address line, and three lines that break down the address into street, city, and country.](media/q-and-a-best-practices/desktop-qna-16.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-16.png" alt-text="Screenshot shows a table with customers, a full address line, and three lines that break down the address into street, city, and country.":::
 
 Similarly, if you have any full name columns for a person, add **First Name** and **Last Name** columns, just in case someone wants to ask questions using partial names. 
 
@@ -165,11 +151,11 @@ Also a similar situation, if the source from which you're importing your data co
 
 **Needs work**
 
-![Don't use multiple-value columns for Q&A](media/q-and-a-best-practices/desktop-qna-17.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-17.png" alt-text="Don't use multiple-value columns for Q&A":::
 
 **Ready for Q&A**
 
-![Screenshot shows two tables, one with name and genre, and one with composer.](media/q-and-a-best-practices/desktop-qna-18.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-18.png" alt-text="Screenshot shows two tables, one with name and genre, and one with composer.":::
 
 ### Denormalize to eliminate inactive relationships
 
@@ -177,11 +163,11 @@ The one exception to the “normalization is better” rule occurs when there is
 
 **Needs work**
 
-![only one path for each table for Q&A](media/q-and-a-best-practices/desktop-qna-19.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-19.png" alt-text="only one path for each table for Q&A":::
 
 **Ready for Q&A**
 
-![use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-20.png)
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-20.png" alt-text="use multiple tables for Q&A":::
 
 ### Add synonyms to tables and columns
 
@@ -189,7 +175,7 @@ This step applies specifically to Q&A (and not to Power BI reports in general). 
 
 This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them. They're not choosing from a predefined list of columns. The more sensible synonyms you add, the better your users' experience is with your report. To add synonyms, in Power BI Desktop go to Model view, select the Modeling tab, and select a field or table. The Properties pane shows the **Synonyms** box, where you can add synonyms.
 
-![Q&A Properties pane synonyms](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
+:::image type="content" source="media/q-and-a-best-practices/qna-modelling-pane-synonyms.png" alt-text="Q&A Properties pane synonyms":::
 
  Be careful when adding synonyms. Adding the same synonym to more than one column or table introduces ambiguity. Q&A uses context where possible to choose between ambiguous synonyms, but not all questions have sufficient context. For example, when your user asks “count the customers”, if you have three things with the synonym “customer” in your model, the users might not get the answer they're looking for. In these cases, make sure the primary synonym is unique, as that's what is used in the restatement. It can alert the user to the ambiguity (for example, a restatement of “show the number of archived customer records”), hinting they might want to ask it differently.
 

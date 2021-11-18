@@ -54,7 +54,7 @@ When you set your page background to greater than 50% transparency, a dotted bor
 It's important to note that the dotted boundary *only* shows up when editing your report, and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
 > [!NOTE]
-> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. See [export to PDF](desktop-export-to-pdf.md) for more information on **Export to PDF**.
+> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. See [export to PDF](../consumer/end-user-pdf.md) for more information on **Export to PDF**.
 
 
 ## Using improved visual headers in Power BI reports
