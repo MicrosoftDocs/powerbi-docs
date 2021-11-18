@@ -100,7 +100,7 @@ To request build permission on a dataset, do one of the following:
 
 ### Users with free licenses
 
-Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most datasets hub capabilites will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
+Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most datasets hub capabilities will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
 
 For datasets in other workspaces, free users can see all the datasets that have been shared with them and that they have sufficient permissions to access, but they won’t be able to use most of the dataset hub’s capabilities on those datasets unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
 
