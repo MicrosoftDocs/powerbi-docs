@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
 
-When you view dashboards in portrait mode on a phone, you notice the dashboard tiles are laid out one after another, all the same size. In the Power BI service, you can create a customized view of a dashboard, specifically for portrait mode on phones. Even if you create a phone view, when you turn the phone sideways, you see the dashboard as it's laid out in the service.
+When you view Power BI dashboards in portrait mode on a phone, you notice the dashboard tiles are laid out one after another, all the same size. In the Power BI service, you can create a customized view of a dashboard, specifically for portrait mode on phones. Even if you create a phone view, when you turn the phone sideways, you see the dashboard as it's laid out in the service.
 
 Are you looking for information about viewing dashboards on a mobile device? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) instead.
 
