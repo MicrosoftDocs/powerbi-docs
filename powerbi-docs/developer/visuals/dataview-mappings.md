@@ -839,7 +839,7 @@ To enable expanding and collapsing row headers, the following have been added to
     ```json
     interface DataViewTreeNode {
         //...
-        isCollpsed?: boolean;
+        isCollapsed?: boolean;
     }
     ```
 
