@@ -879,7 +879,7 @@ To enable the expand collapse feature to a visual using the matrix dataview:
 
 3. For each node, create an instance of selection builder and call the `withMatrixNode` method in the selected node hierarchy level and  create a `selectionId`. For example:
 
-    ```json
+    ```typescript
         let nodeSelectionBuilder: ISelectionIdBuilder = visualHost.createSelectionIdBuilder();
         // parantNodes is a list of the parents of the selected node.
         // node is the current node which the selectionId is created for. 
@@ -892,7 +892,7 @@ To enable the expand collapse feature to a visual using the matrix dataview:
 
 4. Create an instance of selection manager and use the `selectionManager.toggleExpandCollapse()` method with the parameter of the `selectionId` that you created for the selected node. For example:
 
-    ```json
+    ```typescript
         // handle click events to apply expand\collapse action for the selected node
         button.addEventListener("click", () => {
         this.selectionManager.toggleExpandCollapse(nodeSelectionId);
