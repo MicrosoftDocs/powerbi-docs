@@ -836,7 +836,7 @@ To enable expanding and collapsing row headers, the following have been added to
 
 * The `isCollapsed` flag in the `DataViewTreeNode`:
 
-    ```json
+    ```typescript
     interface DataViewTreeNode {
         //...
         isCollapsed?: boolean;
@@ -845,7 +845,7 @@ To enable expanding and collapsing row headers, the following have been added to
 
 * The `toggleExpandCollapse` method in the `ISelectionManger` interface:
 
-    ```json
+    ```typescript
     interface ISelectionManager {
         //...
         showContextMenu(selectionId: ISelectionId, position: IPoint, dataRoles?: string): IPromise<{}>; //dataRoles is the name of the role of the selected data point
