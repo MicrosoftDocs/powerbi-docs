@@ -1,5 +1,5 @@
 ---
-title: Optimize a dashboard for mobile phones - Power BI 
+title: Optimize a dashboard for mobile phones
 description: Learn how to create a customized view of a dashboard in the Power BI service specifically for viewing on mobile phones.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/10/2021
+ms.date: 11/18/2021
 LocalizationGroup: Dashboards
 ---
 # Optimize a dashboard for mobile phones - Power BI 
+
+[!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
+
 When you view dashboards in portrait mode on a phone, you notice the dashboard tiles are laid out one after another, all the same size. In the Power BI service, you can create a customized view of a dashboard, specifically for portrait mode on phones. Even if you create a phone view, when you turn the phone sideways, you see the dashboard as it's laid out in the service.
 
 Are you looking for information about viewing dashboards on a mobile device? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) instead.
