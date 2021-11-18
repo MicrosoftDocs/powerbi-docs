@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/25/2021
+ms.date: 11/18/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -716,6 +716,8 @@ The resulting visual looks like this:
 }
 ```
 
+### Hierarchial structure of matrix data
+
 Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role, with children from the **Children** column of the data role table.
 
 Dataset:
@@ -818,6 +820,95 @@ The visual gets its data structure as described in the following code (only the 
     }
 }
 ```
+
+### Expanding and collapsing row headers
+
+Starting from **API 4.1.0**, matrix data will support [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
+The expand/collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row.
+
+Expand and collapse commands can also be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
+
+:::image type="content" source="/media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
+
+#### API requirements
+
+To enable expanding and collapsing row headers, the following were added to the 4.1.0 API:
+
+* An `isCollapsed` flag added to the `DataViewTreeNode`:
+
+    ```json
+    interface DataViewTreeNode {
+        //...
+        isCollpsed?: boolean;
+    }
+    ```
+
+* A `toggleExpandCollapse` method added to the `ISelectionManger` interface:
+
+    ```json
+    interface ISelectionManager {
+        //...
+        showContextMenu(selectionId: ISelectionId, position: IPoint, dataRoles?: string): IPromise<{}>; //dataRoles is the name of the role of the selected data point
+        toggelExpandCollapse(selectionId: ISelectionId): IPromise<{}>;  
+        //...
+    }
+    ```
+
+#### Visual requirements
+
+To enable the expand collapse feature to a visual using the matrix dataview:
+
+1. Add the following to the capabilities.json file:
+
+    ```json
+       "expandCollapse": {
+        "roles": ["Rows"], //”Rows” is the name of rows data role
+        "addDataViewFlags": {
+            "defaultValue": true //indicates if the DataViewTreeNode will get the isCollapsed flag by default 
+        }
+    },
+    ```
+
+2. Make sure the roles are drillable:
+
+    ```json
+        "drilldown": {
+        "roles": ["Rows"]
+    },
+    ```
+
+3. For each node, create an instance of selection builder and call the `withMatrixNode` method in the selected node hierarchy level and  create a `selectionId`. For example:
+
+    ```json
+        let nodeSelectionBuilder: ISelectionIdBuilder = visualHost.createSelectionIdBuilder();
+        // parantNodes is a list of the parents of the selected node.
+        // node is the current node which the selectionId is created for. 
+        parentNodes.push(node);
+        for (let i = 0; i < parentNodes.length; i++) {
+            nodeSelectionBuilder = nodeSelectionBuilder.withMatrixNode(parentNodes[i], levels);
+        }
+      const nodeSelectionId: ISelectionId = nodeSelectionBuilder.createSelectionId(); 
+    ```
+
+4. Create an instance of selection manager and use the `selectionManager.toggleExpandCollapse()` method with the parameter of the `selectionId` that you created for the selected node. For example:
+
+    ```json
+        button.addEventListener("click", () => {
+            // handle click event to apply expand\collapse action for the selected node
+            this.selectionManager.toggleExpandCollapse(nodeSelectionId);
+        });    
+    ```
+
+>[!NOTE]
+>
+> * If the selected node is not a row node, PowerBI will ignore *expand/collapse* calls and the *expand/collapse* commands will be removed from the context menu.
+> * The dataRoles parameter is required for the `showContextMenu` method only if the visual supports drilldown or expandCollapse features. If the visual supports these features but the dataRoles was not supplied, an error dialog will popup (when debug mode is enabled).
+
+#### Considerations and limitations
+
+* After expanding a node, new data limits will be applied to the DataView. This means that the new DataView might not include some of the nodes presented in the previous DataView.
+* When using expand/collapse, totals are added on even if the visual didn’t request them.
+* Currently, expanding and collapsing columns is not supported.
 
 ## Data reduction algorithm
 
