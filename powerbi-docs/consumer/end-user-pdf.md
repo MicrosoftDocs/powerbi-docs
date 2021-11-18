@@ -37,7 +37,6 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 
 * The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
 
----
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -67,6 +66,8 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
     :::image type="content" source="media/end-user-pdf/power-bi-export-done.png" alt-text="Lower left corner of Chrome browser showing PDF options":::
 
     If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
+
+---
 
 
 ## Considerations and limitations
