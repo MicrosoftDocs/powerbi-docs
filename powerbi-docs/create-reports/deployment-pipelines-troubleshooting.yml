@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 10/21/2021
+  ms.date: 11/09/2021
     
 title: Deployment pipelines troubleshooting
 summary: Use this article to troubleshoot issues in deployment pipelines.
@@ -72,8 +72,25 @@ sections:
           >[!NOTE]
           >When you create a workspace with a PPU, only other PPU users will be able to access the workspace and consume its content.
           
-  - name: Technical
+  - name: Technical  
     questions:
+      - question: |
+          How do I reestablish connections after deployment?
+        answer: |
+          In a full pipeline, after you unassign a workspace from a stage and then deploy to it, deployment pipelines reestablishes the connections between Power BI items in the source stage you deployed from and the target stage. However, sometimes deployment pipelines cannot reestablish the Power BI connections between items in the source and target stages. This can happen for example, when you accidentally delete an item. To reestablish these connections, unassign and reassign the same workspace in the target stage.
+
+      - question: |
+          Why am I getting the 'can't assign the workspace' error message when I assign a workspace?
+        answer: |
+          When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items from the same type with the same name in an adjacent stage, deployment pipelines cannot determine which one of them should match the one in the assigned workspace. For example, if you're trying to assign a workspace to the *test stage*, and one of your reports is called 'regional sales', if you have more than one report with the same name in either the *development* or *production* stages, the assignment will fail. Assigning your workspace will also fail if the workspace you're assigning has two datasets titles 'regional sales dataset', and there's a dataset with the same name in either the *development* or *production* stages. To resolve this error, change the name of the item that doesn't match the item in the stage you're trying to assign. You can select the links in the error message to open the items in the Power BI service. 
+          
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the can't assign the workspace error message in deployment pipelines.":::
+
+      - question: |
+          Why am I seeing the 'different' symbol after I assigned a workspace with datasets that are similar to those in adjacent stages?
+        answer: |
+          Most datasets use the [enhanced dataset metadata](./../connect-data/desktop-enhanced-dataset-metadata.md) feature, also known as *model v3*. However, older reports might be using the old type of dataset metadata, sometimes referred to as *model v1*. If you're assigning a workspace that uses the old dataset metadata model (v1), deployment pipelines can't evaluate whether the dataset is similar in adjacent stages. In such cases, the *different* UI symbol is displayed, even when the datasets are identical. To resolve this issue, deploy the datasets that are showing the *different* symbol.   
+
       - question: |
           Why can't I see all my workspaces when I try to assign a workspace to a pipeline?
         answer: |
@@ -92,7 +109,7 @@ sections:
       - question: |
           How can I assign workspaces to all the stages in a pipeline?
         answer: |
-          You can assign one workspace per pipeline. Once a workspace is assigned to a pipeline, you can deploy it to the next pipeline stages. During first-time deployment, a new workspace is created with copies of the items in the source stage. The relationships of the copied items are kept. For more information, see how to [assign a workspace to a deployment pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline).
+          You can either assign one workspace to your pipeline and then deploy it across the pipeline, or assign a different workspace to each pipeline stage. For more information see [assign a workspace to a deployment pipeline](deployment-pipelines-assign.md).
           
       - question: |
           Why did my first deployment fail?
@@ -214,7 +231,7 @@ sections:
           * *Reclaim workspace ownership* - Add any user to a workspace in a pipeline that doesn't have an owner, allowing you to unblock it.
           
           To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
-
+          
       - question: |
           How do I resolve a source and target dataset format version mismatch error?
         answer: |
@@ -321,7 +338,56 @@ sections:
           Why can't I see workspaces in the pipeline?
         answer: |
           Pipeline and workspace permissions are managed separately. You may have pipeline permissions, but not workspace permissions. For more information, review the [permissions](deployment-pipelines-process.md#permissions) section.
+
+      - question: |
+          Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
+        answer: |
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
+
           
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline.":::
+  - name: Rules
+    questions:
+
+      - question: |
+          How to use the rules troubleshooting section?
+        answer: |
+          Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created.
+          
+          * Use the rule error message name, to understand what's wrong with your rule.
+
+          * If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
+    
+      - question: |
+          Data source rule can't contain a parameter
+        answer: |
+          Your rule can't be applied because the server name or database name referenced in the rule is controlled by a parameter. To change the server or database name, use a parameter rule or remove the controlling parameter from configured item. 
+          
+      - question: |
+          Data source execution failure
+        answer: |
+          A rule can't be applied due to a problem retrieving data from the data source. Remove the rule and make sure the dataset has valid queries. Then try creating the rule again.   
+
+      - question: |
+          Rule property no longer exists
+        answer: |
+          Some of the rule properties configured in the rule no longer exist. Refresh the page and configure the rule again.  
+
+      - question: |
+          Illegal value
+        answer: |
+          A value used in the configured rule isn't valid. Validate the rule's values and try configuring the rule again.   
+
+      - question: |
+          Multiple data sources are not supported
+        answer: |
+          A dataset rule can't be applied due to its data source configuration. Either remove the rule, or rewrite the dataset queries using standard Power BI Desktop tools.  
+
+      - question: |
+          Target dataset can only be changed by its owner
+        answer: |
+          Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.                                                               
+
 additionalContent: |
 
   ## Next steps
@@ -331,6 +397,9 @@ additionalContent: |
 
   >[!div class="nextstepaction"]
   >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+  >[!div class="nextstepaction"]
+  >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
   >[!div class="nextstepaction"]
   >[Understand the deployment pipelines process](deployment-pipelines-process.md)

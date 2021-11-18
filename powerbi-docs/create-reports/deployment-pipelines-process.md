@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 10/19/2021
+ms.date: 11/08/2021
 ---
 
 # Understand the deployment process
@@ -260,11 +260,11 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 
 When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
 
-|Power BI Item    |Required permission to deploy an existing item |Item ownership after deployment |
-|-----------------|---------|---------|
-|Dataset          |Workspace member |Unchanged       |
-|Dataflow         |Dataflow owner   |Unchanged         |
-|Paginated report |Workspace member |The user who made the deployment becomes the owner |
+|Power BI Item    |Required permission to deploy an existing item |Item ownership after a first time deployment |Item ownership after deployment to a stage with the Power BI item|
+|-----------------|---|---|---|
+|Dataset          |Workspace member |The user who made the deployment becomes the owner |Unchanged |
+|Dataflow         |Dataflow owner   |The user who made the deployment becomes the owner |Unchanged |
+|Paginated report |Workspace member |The user who made the deployment becomes the owner |The user who made the deployment becomes the owner |
 
 ### User with pipeline access
 
@@ -342,7 +342,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Downloading a PBIX file after deployment isn't supported.
 
-* For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
+* For a list of workspace limitations, see the [workspace assignment limitations](deployment-pipelines-assign.md#limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
@@ -364,6 +364,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * In deployment pipelines, service principal isn't supported for dataflows.
 
+* Deploying common data model (CDM) isn't supported.
+
 * For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ## Next steps
@@ -373,6 +375,9 @@ This section lists most of the limitations in deployment pipelines.
 
 >[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)

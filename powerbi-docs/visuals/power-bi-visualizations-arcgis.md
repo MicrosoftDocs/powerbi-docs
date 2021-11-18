@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/22/2021
+ms.date: 11/03/2021
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 > [!NOTE]
 > These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
 
-This overview is written from the point of view of a person creating an ArcGIS map for Power BI. Once a _designer_ shares an ArcGIS for Power BI map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Explore ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm).
+This overview is written from the point of view of a person creating an ArcGIS map for Power BI. Often ArcGIS maps are used when an organization already has geo data in ArcGIS that they want to display. And although similar to Azure maps, the ArcGIS visual has some demographic reference data that is not easily available in Azure maps.  Once a _designer_ shares an ArcGIS for Power BI map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Explore ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization. While you cannot create an ArcGIS for Power BI map on a mobile device, you can view and interact with it.
 

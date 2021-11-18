@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/05/2019
+ms.date: 10/07/2021
 LocalizationGroup: Visualizations
 ---
 # Create ribbon charts in Power BI
@@ -16,45 +16,46 @@ LocalizationGroup: Visualizations
 
 You can create ribbon charts to visualize data, and quickly discover which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period. 
 
-![Screenshot shows a ribbon chart with data for Audio, Cell phones, and other categories displayed by year and quarter.](media/desktop-ribbon-charts/ribbon-charts-01.png)
+:::image type="content" source="media/desktop-ribbon-charts/ribbon-charts-01.png" alt-text="Screenshot shows a ribbon chart with data for Audio, Cell phones, and other categories displayed by year and quarter.":::
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 
-This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
+1. From the upper left section of the menubar, select **File** > **Open report**
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Find your copy of the **Retail Analysis Sample PBIX file**
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+1. Open the **Retail Analysis Sample PBIX file** in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+
+1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 ## Create a ribbon chart
 
 1. To create a ribbon chart, select **Ribbon chart** from the **Visualizations** panel.
 
-    ![visualization templates](media/desktop-ribbon-charts/power-bi-template.png)
+    :::image type="content" source="media/desktop-ribbon-charts/power-bi-template.png" alt-text="Visualization templates.":::
 
     Ribbon charts connect a category of data over the visualized time continuum using ribbons, enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
-2. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This year sales** > **Value**.  
+1. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This Year Sales** > **Value**.  
 
-    ![selected Fields](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
+    :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot showing the selected fields.":::
 
     Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **Axis** well.
 
-3. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
+1. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
 
-    ![Screenshot shows the ribbon chart you created with some data called out.](media/desktop-ribbon-charts/power-bi-ribbon.png)
+    :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon.png" alt-text="[Screenshot shows the ribbon chart you created with some data called out.":::
 
 ## Format a ribbon chart
-When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with additional formatting options that are specific to the ribbons.
 
-![Screenshot shows the format icon selected and the Ribbons area expanded.](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
+When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with more formatting options that are specific to the ribbons.
+
+:::image type="content" source="media/desktop-ribbon-charts/power-bi-format-ribbon.png" alt-text="Screenshot shows the format icon selected and the Ribbons area expanded.":::
 
 These formatting options for ribbon charts let you make adjustments.
 
@@ -65,11 +66,11 @@ These formatting options for ribbon charts let you make adjustments.
 
 Since the ribbon chart does not have y-axis labels, you may want to add data labels. From the Formatting pane, select **Data labels**. 
 
-![formatting options for data labels](media/desktop-ribbon-charts/power-bi-labels.png)
+:::image type="content" source="media/desktop-ribbon-charts/power-bi-labels.png" alt-text="Formatting options for data labels.":::
 
 Set formatting options for your data labels. In this example, we've set the text color to white and display units to thousands.
 
-![Screenshot shows your final formatted ribbon chart.](media/desktop-ribbon-charts/power-bi-data-labels.png)
+:::image type="content" source="media/desktop-ribbon-charts/power-bi-data-labels.png" alt-text="Screenshot shows your final formatted ribbon chart.":::
 
 ## Next steps
 
