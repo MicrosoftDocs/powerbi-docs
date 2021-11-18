@@ -15,8 +15,8 @@ To help members of your organization quickly identify datasets that might be use
 
 To provide a description for a dataset, go to dataset's settings page, find the Dataset description section, and enter your description in the text box.
 
-[connect-data/media/service-dataset-description/dataset-description-section-in-dataset-settings.png]
-  
+:::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of dataset description text box on the dataset settings page.":::
+
 ## Next steps
 * [Datasets hub](service-datasets-hub.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
