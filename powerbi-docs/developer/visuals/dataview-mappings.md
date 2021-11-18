@@ -830,11 +830,11 @@ Expand and collapse commands can also be added to the context menu by supplying 
 
 :::image type="content" source="/media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
 
-#### API requirements
+#### API features
 
-Expanding and collapsing row headers is available from API version 4.1.0.
+To enable expanding and collapsing row headers, the following have been added to API version 4.1.0.
 
-* Set the `isCollapsed` flag in the `DataViewTreeNode`:
+* The `isCollapsed` flag in the `DataViewTreeNode`:
 
     ```json
     interface DataViewTreeNode {
@@ -843,7 +843,7 @@ Expanding and collapsing row headers is available from API version 4.1.0.
     }
     ```
 
-* Use the `toggleExpandCollapse` method in to the `ISelectionManger` interface:
+* The `toggleExpandCollapse` method in the `ISelectionManger` interface:
 
     ```json
     interface ISelectionManager {
@@ -893,16 +893,16 @@ To enable the expand collapse feature to a visual using the matrix dataview:
 4. Create an instance of selection manager and use the `selectionManager.toggleExpandCollapse()` method with the parameter of the `selectionId` that you created for the selected node. For example:
 
     ```json
+        // handle click events to apply expand\collapse action for the selected node
         button.addEventListener("click", () => {
-            // handle click event to apply expand\collapse action for the selected node
-            this.selectionManager.toggleExpandCollapse(nodeSelectionId);
-        });    
+        this.selectionManager.toggleExpandCollapse(nodeSelectionId);
+    });
     ```
 
 >[!NOTE]
 >
 > * If the selected node is not a row node, PowerBI will ignore expand/collapse calls and the expand/collapse commands will be removed from the context menu.
-> * The `dataRoles` parameter is required for the `showContextMenu` method only if the visual supports `drilldown` or `expandCollapse` features. If the visual supports these features but the `dataRoles` was not supplied, an error dialog will pop up (when debug mode is enabled).
+> * The `dataRoles` parameter is required for the `showContextMenu` method only if the visual supports `drilldown` or `expandCollapse` features. If the visual supports these features but the dataRoles was not supplied, an error will output to the console when using the developer visual or if debugging a public visual with debug mode enabled.
 
 #### Considerations and limitations
 
