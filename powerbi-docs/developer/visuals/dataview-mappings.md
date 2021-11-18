@@ -832,9 +832,9 @@ Expand and collapse commands can also be added to the context menu by supplying 
 
 #### API requirements
 
-To enable expanding and collapsing row headers, the following were added to the 4.1.0 API:
+Expanding and collapsing row headers is available from API version 4.1.0.
 
-* An `isCollapsed` flag added to the `DataViewTreeNode`:
+* Set the `isCollapsed` flag in the `DataViewTreeNode`:
 
     ```json
     interface DataViewTreeNode {
@@ -843,7 +843,7 @@ To enable expanding and collapsing row headers, the following were added to the 
     }
     ```
 
-* A `toggleExpandCollapse` method added to the `ISelectionManger` interface:
+* Use the `toggleExpandCollapse` method in to the `ISelectionManger` interface:
 
     ```json
     interface ISelectionManager {
@@ -901,8 +901,8 @@ To enable the expand collapse feature to a visual using the matrix dataview:
 
 >[!NOTE]
 >
-> * If the selected node is not a row node, PowerBI will ignore *expand/collapse* calls and the *expand/collapse* commands will be removed from the context menu.
-> * The dataRoles parameter is required for the `showContextMenu` method only if the visual supports drilldown or expandCollapse features. If the visual supports these features but the dataRoles was not supplied, an error dialog will popup (when debug mode is enabled).
+> * If the selected node is not a row node, PowerBI will ignore expand/collapse calls and the expand/collapse commands will be removed from the context menu.
+> * The `dataRoles` parameter is required for the `showContextMenu` method only if the visual supports `drilldown` or `expandCollapse` features. If the visual supports these features but the `dataRoles` was not supplied, an error dialog will pop up (when debug mode is enabled).
 
 #### Considerations and limitations
 
