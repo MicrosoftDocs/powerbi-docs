@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 11/17/2021
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop
@@ -123,6 +123,18 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+
+## Considerations and limitations
+
+Some features aren't available yet in the current version of the new Format pane.
+
+- The action cards for button, image, and shape, responsive toggle, and data limit settings are missing.
+- Global text size is missing for tables and matrixes. 
+- Numeric input may not render input properly for overflowing text.
+- Red borders may appear around some controls when you first open the pane.
+- Category labels for scatter charts are missing a few properties.
+- Some visuals, such as Azure maps, Esri maps, Power Automate, and decomposition tree, haven't been updated with subcategories yet.
+
 
 ## Next steps
 
