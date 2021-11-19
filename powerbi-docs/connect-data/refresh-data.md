@@ -64,7 +64,7 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 ![image](https://user-images.githubusercontent.com/89564630/142578407-7866eed0-185f-4528-bcc0-787acd10bd87.png)
 
 > [!NOTE]
-> The **Optimize Performance** section of the **Datasets** tab is not available for datasets in import mode or composite datasets that combine import mode and DirectQuery mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+> Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. For import models, you can find the refresh schedule in the “Scheduled refresh” section of the **Datasets** tab. For composite datasets, the  “Scheduled refresh” section is located in the **Optimize Performance** section. 
 
 > [!NOTE]
 > Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
