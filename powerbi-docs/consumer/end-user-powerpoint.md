@@ -97,6 +97,8 @@ There are a few considerations and limitations to keep in mind when you work wit
    - R and Python visuals are not supported.
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
+* Report page size can be a maximum of 1280x720.
+
 * Some reports cannot be exported. These include:
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
     - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details.
