@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/11/2021
+ms.date: 11/21/2021
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI
@@ -25,14 +25,15 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 When a mandatory label policy is in effect,
 * In the service:
     * Users must apply a sensitivity label in order to be able to save new reports, dashboards, or datasets.
-    * Users must apply a sensitivity label in order to be able to save updates to the settings or content of existing unlabeled reports and dashboards.
+    * Users must apply a sensitivity label in order to be able to save changes to the settings or content of existing unlabeled reports and dashboards.
     * If users try to import data from an unlabeled *.pbix* file, they will be prompted to select a label before being allowed to continue. The label they select will be applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
-    The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content. The save button only becomes active when the user selects a label.
+  
+  The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content. The save button only becomes active when the user selects a label.
 
     ![Screenshot of mandatory label dialog.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-dialog.png)
 
 * In Desktop:
-    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to save it. If they try to save an unlabeled *.pbix* without applying a label, a message prompts them to apply a label from the Sensitivity menu on the Home ribbon. 
+    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to save it. 
     * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to publish it to the service. If they try to publish an unlabeled *.pbix* file, a message prompts them to apply a label from the Sensitivity menu on the Home ribbon. After they've applied the label in Desktop and saved their changes, they will be able to publish the file to the service.
 
     The image below shows the Power BI Desktop message that prompts users to choose and apply a label from the Sensitivity menu on Desktop's Home ribbon.
