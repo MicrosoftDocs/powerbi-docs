@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/21/2021
+ms.date: 06/18/2019
 ---
 
 # Tutorial: Add unit tests for Power BI visual projects
@@ -510,7 +510,7 @@ To generate the same mapping, you must set the following params to `createCatego
     {
         source: {
             displayName: "Category",
-            queryName: SampleBarChartData.CategoryColumn,
+            queryName: SampleBarChartData.ColumnCategory,
             type: ValueType.fromDescriptor({ text: true }),
             roles: {
                 Category: true
