@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 07/18/2021
+ms.date: 11/21/2021
 ---
 
 # Tutorial: Embed a Power BI content into your application for national clouds
@@ -27,13 +27,11 @@ The different national clouds are:
 
 * U. S. Military (DoD)
 
-* Power BI for Germany cloud
-
 * Power BI for China cloud
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../admin/service-govus-signup.md), a [Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../admin/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](embed-sample-for-your-organization.md).
@@ -94,21 +92,6 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
-* Power BI for Germany cloud parameters
-
-1. Overwrite Cloud.config file with Power BI for Germany cloud content.
-
-2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
-
-3. Add the Power BI for Germany cloud parameters in the web.config file as follows.
-
-```xml
-<add key="authorityUrl" value="https://login.microsoftonline.de/common/" />
-<add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-<add key="apiUrl" value="https://api.powerbi.de/" />
-<add key="embedUrlBase" value="https://app.powerbi.de" />
-```
-
 * Power BI for China cloud parameters
 
 1. Overwrite Cloud.config file with [Power BI for China](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
@@ -134,8 +117,6 @@ Register your application with Azure AD to make REST API calls. For more informa
 
 * Military (DoD) - ```https://app.mil.powerbigov.us/apps```
 
-* Power BI for Germany cloud - ```https://app.powerbi.de/apps```
-
 * Power BI for China cloud - ```https://app.powerbi.cn/apps```
 
 If you downloaded the [Embedding for your customer sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
@@ -149,8 +130,6 @@ Within your application, you need to get an **access token**, from Azure AD, bef
 * Military Contractors (DoDCON) - ```https://login.microsoftonline.us```
 
 * Military (DoD) - ```https://login.microsoftonline.us```
-
-* Power BI for Germany cloud - ```https://login.microsoftonline.de```
 
 * Power BI for China cloud - ```https://login.chinacloudapi.cn```
 
@@ -434,9 +413,5 @@ An application sample is available within the [Embedding for your organization s
 * A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-
-* For more information about for Power BI for Germany cloud, reference [Microsoft Cloud Deutschland transition](https://www.microsoft.com/cloud-platform/germany-cloud-regions)
-
-Considerations and limitations
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
