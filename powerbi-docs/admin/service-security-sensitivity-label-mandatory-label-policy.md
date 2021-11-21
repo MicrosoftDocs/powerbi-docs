@@ -22,15 +22,13 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 
 ## What happens when a mandatory label policy is in effect?
 
-When a mandatory label policy is in effect,
-* **In the service**:
+* **In the Power BI service**:
     * Users must apply a sensitivity label in order to be able to save new reports, dashboards, or datasets.
-    * Users must apply a sensitivity label in order to be able to save changes to the settings or content of existing unlabeled reports and dashboards.
-    * If users try to import data from an unlabeled *.pbix* file, they will be prompted to select a label before being allowed to continue. The label they select will be applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
+    * Users must apply a sensitivity label in order to be able to save changes to the settings or content of existing, unlabeled reports and dashboards.
+    * If users try to import data from an unlabeled *.pbix* file, they will be prompted to select a label before the import will be allowed to continue. The label they select will be applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
 
-* **In Desktop**:
-    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to save it. 
-    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to publish it to the service.
+* **In Power BI Desktop**:
+    * Users must apply sensitivity labels to unlabeled *.pbix* files before they will be allowed to save them or publish them to the service.
 
 ## Enabling a mandatory label policy for Power BI
 
