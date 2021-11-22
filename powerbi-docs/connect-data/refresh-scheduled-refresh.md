@@ -65,7 +65,7 @@ If you are using the On-premises data gateway to refresh data, you do not need t
 
 The **Scheduled refresh** section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway to be configurable for refresh; other data sources require a gateway.
 
-In a Direct Query scenario, when dataset suffice for performance optimization, “Refresh schedule” will be moved to “Optimize performance” section.
+In a Direct Query scenario, when a dataset qualifies for performance optimization, "Refresh schedule" will be moved to the **Optimize performance** section.
 
 Set the **Keep your data up to date** slider to **On** to configure the settings.
 
