@@ -41,7 +41,7 @@ If, however, the sales table stores product details beyond the key, it's conside
 
 When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](/learn/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
 
-As described in this article, you can develop an optimized Power BI data model by ensuring its tables represent normalized data.
+As described in this article, you should strive to develop optimized Power BI data models with tables that represent normalized data.
 
 ## Star schema relevance to Power BI models
 
