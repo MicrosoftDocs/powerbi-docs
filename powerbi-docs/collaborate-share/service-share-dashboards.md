@@ -101,8 +101,7 @@ Links for **People with existing access** do not have any additional settings be
 - If your tenant admin has disabled shareable links to **People in your organization**, you can only copy and share links to **Specific people** or **People with existing access**.
 - If you have reshare permissions to the report but, you do not have reshare permissions to the report’s underlying data, your shareable links will not give access to the underlying data.
 - If you do not have reshare permissions to the report, you can only copy and share links to **People with existing access**.
-- Additionally, if you do not have a Power BI Pro License, you only copy and share links to **People with existing access**.
-- Currently, sharing via links doesn’t support the option to **Include my changes**; however, you can continue using direct access sharing for this scenario. 
+- Additionally, if you do not have a Power BI Pro License, you only copy and share links to **People with existing access**. 
 
 ## Manage permissions to a report
 To manage permission and manage links that give access to the report, select **More options (...)** in the upper right of the sharing dialog, and then select **Manage permissions**:
@@ -214,7 +213,6 @@ Things to keep in mind about sharing reports and dashboards:
 * You can’t use Microsoft 365 Unified groups for direct sharing. If you don’t want to specify individuals, you can use a security group to share with multiple users.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
 * If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://app.powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
-* Currently, sharing reports via links doesn’t support the option to **Include my changes**; however, you can use direct access sharing for this scenario.
 
 ## Next steps
 
