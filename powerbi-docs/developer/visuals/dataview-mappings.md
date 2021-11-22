@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/18/2021
+ms.date: 11/22/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -824,7 +824,7 @@ The visual gets its data structure as described in the following code (only the 
 ### Expanding and collapsing row headers
 
 Starting from **API 4.1.0**, matrix data will support [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
-The expand/collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row.
+The expand/collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state will remain consistent across bookmarks and even across reports saves. It's not specific to each visual.
 
 Expand and collapse commands can also be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
