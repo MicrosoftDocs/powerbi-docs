@@ -716,7 +716,7 @@ The resulting visual looks like this:
 }
 ```
 
-### Hierarchial structure of matrix data
+### Hierarchical structure of matrix data
 
 Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role, with children from the **Children** column of the data role table.
 
@@ -828,7 +828,7 @@ The expand/collapse feature optimizes fetching data to the dataView by allowing 
 
 Expand and collapse commands can also be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
-:::image type="content" source="/media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
+![Screenshot showing context menu with expand and collapse options.](media/dataview-mappings/expand-collapse-context-menu.png)
 
 #### API features
 
@@ -856,7 +856,7 @@ To enable expanding and collapsing row headers, the following have been added to
 
 #### Visual requirements
 
-To enable the expand collapse feature to a visual using the matrix dataview:
+To enable the expand collapse feature to a visual using the matrix data view:
 
 1. Add the following to the capabilities.json file:
 
