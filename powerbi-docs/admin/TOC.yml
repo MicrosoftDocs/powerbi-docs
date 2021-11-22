@@ -35,8 +35,12 @@
       - name: Premium Gen2 architecture
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
-        href: service-premium-concepts.md      
-      - name: Managing capacities
+        href: service-premium-concepts.md  
+      - name: Backup and restore Power BI Premium datasets (preview)
+        href: service-premium-backup-restore-dataset.md
+      - name: Using service tags with Power BI
+        href: service-premium-service-tags.md             
+      - name: Managing capacities        
         items:            
         - name: Managing Premium Gen2 capacities
           href: service-premium-capacity-manage-gen2.md  
@@ -61,11 +65,7 @@
         - name: Premium capacity scenarios
           href: service-premium-capacity-scenarios.md
         - name: Power BI Premium FAQ
-          href: service-premium-faq.yml
-        - name: Backup and restore Power BI Premium datasets (preview)
-          href: service-premium-backup-restore-dataset.md
-        - name: Using service tags with Power BI
-          href: service-premium-service-tags.md      
+          href: service-premium-faq.yml   
     - name: Information protection
       items:
       - name: Default label policy (preview)
