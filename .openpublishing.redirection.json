@@ -2226,9 +2226,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/desktop-connect-pdf.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-pdf",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/create-reports/desktop-connect-pdf.md",
+            "redirect_url": "/power-bi/consumer/end-user-pdf",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-redshift.md",
@@ -3242,7 +3242,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-export-to-pdf.md",
-            "redirect_url": "/power-bi/create-reports/desktop-export-to-pdf",
+            "redirect_url": "/power-bi/consumer/end-user-pdf",
             "redirect_document_id": true
         },
         {

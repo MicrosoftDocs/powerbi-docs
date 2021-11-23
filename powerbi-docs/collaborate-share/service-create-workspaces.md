@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 04/01/2021
-ms.custom: content-perf-fy21q3
+ms.custom: contperf-fy21q3
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI

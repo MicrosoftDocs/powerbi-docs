@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/16/2021
+ms.date: 11/19/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -64,6 +64,8 @@ If you are using the On-premises data gateway to refresh data, you do not need t
 ## Scheduled refresh
 
 The **Scheduled refresh** section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway to be configurable for refresh; other data sources require a gateway.
+
+In a Direct Query scenario, when a dataset qualifies for performance optimization, "Refresh schedule" will be moved to the **Optimize performance** section.
 
 Set the **Keep your data up to date** slider to **On** to configure the settings.
 

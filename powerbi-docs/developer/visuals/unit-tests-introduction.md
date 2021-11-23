@@ -510,7 +510,7 @@ To generate the same mapping, you must set the following params to `createCatego
     {
         source: {
             displayName: "Category",
-            queryName: SampleBarChartData.ColumnCategory,
+            queryName: SampleBarChartData.CategoryColumn,
             type: ValueType.fromDescriptor({ text: true }),
             roles: {
                 Category: true
