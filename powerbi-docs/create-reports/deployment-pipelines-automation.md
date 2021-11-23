@@ -13,7 +13,7 @@ ms.date: 10/19/2021
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables BI teams to build an efficient and reusable release process for their Power BI content.
 
-To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
+To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Organizations that use Azure DevOps, can use the [Power BI automation tool extension](#use-the-power-bi-automation-tool-extension) extension, which supports many of the deployment pipelines API operations.
 
 You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
 
@@ -74,6 +74,8 @@ To automate Power BI deployment processes from within your [release pipeline in 
 You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating data sources and parameters.
 
 ### Use the Power BI automation tool extension
+
+The Power BI automation tool is an Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in AzureDevops. It eliminates the need for using APIs or scripts to manage the pipelines built in deployment pipelines. The tasks can be used individually to perform a simple task, such as creating a pipeline, or used together in an Azure DevOps pipeline to create a more complex scenario such as creating a pipeline, assigning to it a workspace, adding users and deploying.
 
 After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=PBIALMTest.pbi-rest-api--extension&ssr=false#overview) extension to DevOps, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
 
