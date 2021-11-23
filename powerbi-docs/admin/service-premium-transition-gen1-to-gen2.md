@@ -29,19 +29,25 @@ Power BI Premium Gen2 and [Embedded Gen2](./../developer/embedded/power-bi-embed
 
 The article [Dataset connectivity with the XMLA endpoint](./../admin/service-premium-connect-tools.md) lists the minimum requirements for Power BI Premium, Premium Per User (PPU) and Embedded connectivity. In addition to these requirements, for dataset connectivity in Premium Gen2, you need to have the following:
 
+* **Microsoft Excel** - Version **16.0.13612.10000** or higher
+
 * **PowerShell cmdlets** - Version **21.1.18256** or higher
 
-* **Visual Studio with Analysis Services projects** - Version **2.9.16** or higher
+* **Server Profiler** - Version **18.9** or higher
 
 * **SQL Server Management Studio (SSMS)** - Version **18.9** or higher
 
+* **Visual Studio with Analysis Services projects** - Version **2.9.16** or higher
+
+* **Visual Studio with Analysis Services (SSDT)** - Version **2.9.16** or higher
+
 You also need to use the following [client libraries](service-premium-connect-tools.md#client-libraries) when working with Gen2 capacities:
 
-* **MSOLAP** - Version **15.1.65.22** or higher
+* **ADOMD** - Version **19.12.7.0** or higher
 
 * **AMO** - Version **19.12.7.0** or higher
 
-* **ADOMD** - Version **19.12.7.0** or higher
+* **MSOLAP** - Version **15.1.65.22** or higher
 
 ## Self-migration to Premium Generation 2
 
