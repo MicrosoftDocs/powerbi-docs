@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/23/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -183,6 +183,9 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 \* In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
+   > [!IMPORTANT] 
+   > Export underlying data will not include datetime / variations columns or include numeric columns if there is an aggregation.
+	
 ### Set the export options
 
 Power BI report designers control the types of data export options that are available for their consumers. The choices are:
