@@ -77,7 +77,5 @@ For extra security, you can block the use of resource key based authentication. 
 >[Administering Power BI in the admin portal](service-admin-portal.md)
 
 >[!div class="nextstepaction"]
->[Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
+>[What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
 
->[!div class="nextstepaction"]
->[Organizational visuals in Power BI](../developer/visuals/power-bi-custom-visuals-organization.md)
