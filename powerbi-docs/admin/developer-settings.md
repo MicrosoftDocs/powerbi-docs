@@ -21,7 +21,7 @@ As a Power BI admin for your organization, you can control how Power BI is used 
 To manage Power BI developer settings, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 >[!NOTE]
->The developer settings in the Admin portal are different from and not related to the [developer mode](../visuals/environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting for debugging visuals.
+>The developer settings in the Admin portal are different from and not related to the [developer mode](../developer/visuals/environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting for debugging visuals.
 
 ## Access the admin portal
 
