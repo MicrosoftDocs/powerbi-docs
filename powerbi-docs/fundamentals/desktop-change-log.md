@@ -21,8 +21,8 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 *Version: 2.99.782.0, Released: November 23, 2021*
 
 Bug fixes/improvements:
-- Fix for Custom Visuals Store: now if a user in not connected to internet, he/she still will be able to close the marketplace window;
-- Fix for Print to PDF: now it will work for users that have WebView2 feature turned off and don't have the new version of WebView2 installed.
+- Fix for Custom Visuals Store: now if a user isn't connected to the internet, they can still close the marketplace window.
+- Fix for Print to PDF: now works for users that have the WebView2 feature turned off and don't have the new version of WebView2 installed.
 
 
 ## October 2021 QFE 3
