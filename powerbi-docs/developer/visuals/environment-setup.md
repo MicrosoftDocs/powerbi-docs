@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/15/2021
+ms.date: 11/24/2021
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -154,7 +154,7 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
     >[!div class="mx-imgBorder"]
     >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
 
-3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable custom visual debugging using the developer visual** check box, and select **Apply**.
+3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable  developer mode** check box, and select **Apply**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
