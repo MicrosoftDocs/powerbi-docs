@@ -78,4 +78,3 @@ For extra security, you can block the use of resource key based authentication. 
 
 >[!div class="nextstepaction"]
 >[What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
-
