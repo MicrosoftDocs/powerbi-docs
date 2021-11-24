@@ -151,9 +151,7 @@
       - name: "Create modern visual tooltips"
         href: desktop-visual-tooltips.md        
       - name: "Power Automate button visual"
-        href: power-bi-automate-visual.md
-      - name: "Export reports to PDF files"
-        href: desktop-export-to-pdf.md             
+        href: power-bi-automate-visual.md            
       - name: Filters and slicers in reports
         items: 
         - name: "Add a filter to a report"
@@ -526,6 +524,8 @@
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
+      - name: "Assign a workspace"
+        href: deployment-pipelines-assign.md        
       - name: "Troubleshooting"
         href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility
