@@ -72,9 +72,9 @@ If any content is assigned to this capacity, it becomes available once started.
 You can also start or pause your capacity from the command line using:
 
 * [ARM API references](/rest/api/power-bi-embedded/capacities)
-* [PS references](/powershell/module/az.powerbiembedded/?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0#power-bi-embedded-capacity)
-  * [Suspend](/powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
-  * [Resume](/powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
+* [PS references](/powershell/module/az.powerbiembedded)
+  * [Suspend](/powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity)
+  * [Resume](/powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity)
 
 ## Next steps
 
