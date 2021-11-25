@@ -306,7 +306,7 @@ Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing
 
 ### August 2019
 
-#### Introducting Power BI Mobile new look (preview) (iOS and Android)
+#### Introducing Power BI Mobile new look (preview) (iOS and Android)
 
 We've refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it's now quicker and easier to find what you need, when you need it.
 Since the new look is in preview, you will need to turn it on to enjoy it.
