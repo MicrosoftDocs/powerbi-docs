@@ -37,9 +37,7 @@ The article [Dataset connectivity with the XMLA endpoint](./../admin/service-pre
 
 * **SQL Server Management Studio (SSMS)** - Version **18.9** or higher
 
-* **Visual Studio with Analysis Services projects** - Version **2.9.16** or higher
-
-* **Visual Studio with Analysis Services (SSDT)** - Version **2.9.16** or higher
+* **Visual Studio with Analysis Services projects (SSDT)** - Version **2.9.16** or higher
 
 You also need to use the following [client libraries](service-premium-connect-tools.md#client-libraries) when working with Gen2 capacities:
 
