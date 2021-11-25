@@ -13,8 +13,7 @@ ms.date: 04/02/2021
 
 # Monitor report performance in Power BI
 
-Learn where the bottlenecks are, and learn how you can improve report performance. Monitor report performance in Power BI Desktop using the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md).
-
+Monitor report performance in Power BI Desktop using the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md). Monitoring will help you learn where the bottlenecks are, and how you can improve report performance.
 
 Monitoring performance is relevant in the following situations:
 
