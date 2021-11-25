@@ -1,15 +1,15 @@
 ---
 title: Pause and start your Power BI Embedded capacity in the Azure portal
 description: This article walks through how to pause and start a Power BI Embedded capacity in Microsoft Azure.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 services: power-bi-embedded
 editor: ''
 tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/24/2021
+ms.date: 11/25/2021
 ---
 
 # Pause and start your Power BI Embedded capacity in the Azure portal
@@ -71,10 +71,10 @@ If any content is assigned to this capacity, it becomes available once started.
 
 You can also start or pause your capacity from the command line using:
 
-* [ARM API references](../../../rest/api/power-bi-embedded/capacities)
-* [PS references](../../../powershell/module/az.powerbiembedded/?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0#power-bi-embedded-capacity)
-  * [Suspend](../../../powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
-  * [Resume](../../../powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
+* [ARM API references](/rest/api/power-bi-embedded/capacities)
+* [PS references](/powershell/module/az.powerbiembedded/?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0#power-bi-embedded-capacity)
+  * [Suspend](/powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
+  * [Resume](/powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity?view=azps-6.6.0&viewFallbackFrom=azps-5.5.0)
 
 ## Next steps
 
