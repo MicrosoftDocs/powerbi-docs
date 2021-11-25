@@ -19,6 +19,13 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## Month 2021
+## Recommended Content supports hints (iOS)
+We've added hints to the items recommended for you by Power BI to help you understand why they were picked for you as recommended content. Being able to see who opened, certified, or published an item can help you decide whether the item might be relevant for your work.
+
+![Screenshot of hints on recommened items in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-hints.png)
+
+
 ## November 2021
 ### Updated report filters (iOS and Android phones)
 Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator. [Learn more](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone)!
