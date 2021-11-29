@@ -4054,67 +4054,67 @@
         {
             "source_path": "powerbi-docs/developer/automation/index.yml",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/overview-of-power-bi-rest-api.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },        
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-token.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-create-dataset.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-datasets.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-add-rows.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/api-automatic-retention-policy-for-real-time-data.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/api-rest-api-limitations.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/api-dataset-properties.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/api-data-model-versioning.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/rest-api-reference.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-complete-code.md",
             "redirect_url": "/rest/api/power-bi/",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }                                                                            
     ]           
 }

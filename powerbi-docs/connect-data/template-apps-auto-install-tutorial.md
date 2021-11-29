@@ -42,7 +42,7 @@ The following basic flow lists what the application does when the customer launc
 
 1. The user signs in to the ISV's portal and selects the supplied link. This action initiates the flow. The ISV's portal prepares the user-specific configuration at this stage.
 
-1. The ISV acquires an *app-only* token based on a [service principal (app-only token)](../embedded/embed-service-principal.md) that's registered in the ISV's tenant.
+1. The ISV acquires an *app-only* token based on a [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) that's registered in the ISV's tenant.
 
 1. Using [Power BI REST APIs](/rest/api/power-bi/), the ISV creates an *install ticket*, which contains the user-specific parameter configuration as prepared by the ISV.
 
@@ -55,9 +55,9 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](../embedded/create-an-azure-active-directory-tenant.md).
-* A [service principal (app-only token)](../embedded/embed-service-principal.md) registered in the preceding tenant.
-* A parameterized [template app](../../connect-data/service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](../../connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](../../connect-data/service-template-apps-create.md).
+* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+* A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
+* A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](connect-data/service-template-apps-create.md).
 * To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -67,7 +67,7 @@ Before you continue setting up your application, follow the instructions in [Qui
 
 ### Register an application in Azure AD
 
-Create a service principal as described in [Embed Power BI content with service principal and an application secret](../embedded/embed-service-principal.md).
+Create a service principal as described in [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md).
 
 Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret.
 
@@ -81,11 +81,11 @@ Add the service principal to the template app workspace as an Admin, so that you
 
 After you've created your template app and it's ready for installation, save the following information for the next steps:
 
-* *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at the end of the [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created.
+* *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at the end of the [Define the properties of the template app](connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created.
 
-    You can also get the same link by selecting **Get link** in the template app's [Release Management pane](../../connect-data/service-template-apps-create.md#manage-the-template-app-release).
+    You can also get the same link by selecting **Get link** in the template app's [Release Management pane](service-template-apps-create.md#manage-the-template-app-release).
 
-* *Parameter names* as they're defined in the template app's dataset. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
+* *Parameter names* as they're defined in the template app's dataset. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](.service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
 
 >[!NOTE]
 >You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in the [Power BI apps marketplace](https://app.powerbi.com/getdata/services). Before you distribute your template app by using the automated installation application you're creating, be sure to publish it to [Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
@@ -175,7 +175,7 @@ To get the application ID, follow these steps:
 
 #### Get the application secret
 
-Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in Azure. This attribute works when you use the [service principal](../embedded/embed-service-principal.md).
+Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in Azure. This attribute works when you use the [service principal](./../developer/embedded/embed-service-principal.md).
 
 To get the application secret, follow these steps:
 
