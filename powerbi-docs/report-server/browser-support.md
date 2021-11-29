@@ -22,7 +22,7 @@ The following is the current list of browsers supported for the web portal.
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
+* Microsoft Internet Explorer 11 (not supported from August 17, 2021 onwards)
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
