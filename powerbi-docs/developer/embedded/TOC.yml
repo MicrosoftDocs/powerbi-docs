@@ -64,6 +64,8 @@
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Configure credentials"
+      href: configure-credentials.md      
     - name: "Embed in Salesforce"
       href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
