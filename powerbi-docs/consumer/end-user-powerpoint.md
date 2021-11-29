@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/22/2022
+ms.date: 11/29/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
