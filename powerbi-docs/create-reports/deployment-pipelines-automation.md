@@ -13,7 +13,7 @@ ms.date: 11/29/2021
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables BI teams to build an efficient and reusable release process for their Power BI content.
 
-To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Organizations that use Azure DevOps, can use the [Power BI automation tool extension](#use-the-power-bi-automation-tool-extension) extension, which supports many of the deployment pipelines API operations.
+To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Organizations that use Azure DevOps, can use the [Power BI automation tool](#use-the-power-bi-automation-tool-extension) extension, which supports many of the deployment pipelines API operations.
 
 You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
 
