@@ -172,7 +172,7 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
-* When you unassign and reassign a workspace to [reestablish connections after deployment](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules are only kept for the source stage. When you unassign and reassign a workspace in the target stage, your rules will not be kept.
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules are not kept for that workspace and you'll need to reconfigure them.
 
 * Rules for dataflows that have other dataflows as sources, are not supported.
 
