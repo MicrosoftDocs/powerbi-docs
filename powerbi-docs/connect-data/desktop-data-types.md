@@ -62,6 +62,31 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 ### Text type
 **Text** - A Unicode character data string. Can be strings, numbers, or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
 
+Power BI stores and displays data differently in certain situations. This section describes common cases of working with Text data and why text data might be different between when querying data using Power Query and after the data has been loaded.
+
+The engine that stores data in Power BI is case insensitive - this means that it treats different capitalization of letters the same: 'a' is equal to 'A'. Power Query, however, is case sensitive: 'a' is not equal to 'A'. This leads to situations in which text data is loaded into Power BI and changes capitalization, seemingly inexplicably.
+
+In this simplified example, we loaded data about orders: an *OrderNo* column which is unique for each order and a *Addressee* column that contains the addressee's name which is entered manually at the time of order. In Power Query this data is shown as follows:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Textual data with various capitalizations in Power Query":::
+
+Notice that there are multiple orders with the same name as addressee, although written slightly differently.
+
+When we go to the 'Data' tab in Power BI after the data was loaded, the same table looks like the following:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="The same textual data after loading into Power BI has changed capitalization":::
+
+Notice that the capitalization of some of the names has changed from what it was originally. This is caused by the fact that the engine that stores data in Power BI is case insensitive and treats the lowercase and uppercase version of the same character as the same. Power Query is case insensitive, so makes that distinction and therefore shows the data exactly as it was stored in the source system. However, the data in the second screenshot has been loaded into the engine of Power BI and therefore has changed.
+
+When loading data, the engine evaluates each row, one by one, starting from the top. For each text column (such as *Addressee*), the engine stores a dictionary of unique values. It does this to achieve performance through data compression. While processing the *Addressee* column, the first three values the engine comes are unique and stored in the dictionary. However, from the fourth name (order 1004) onwards, since the engine is case insensitive, the names are seen as the same: 'Taina Hasu' is the same as 'TAINA HASU' as well as 'Taina HASU'. As a result, the engine does not store that name, but instead refers to the first name it came across. That also explains why the name 'MURALI DAS' is written in capitals, as that is simply the first name the engine evaluated when loading the data top to bottom.
+
+This image explains this process:
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Depiction of the data load process and mapping text values to a dictionary of unique values":::
+
+1. The engine loads the first row or data, creates the ‘Addressee’ dictionary and adds ‘Taina Hasu’ to it. It also adds a reference to that value in the Address column on the table it loaded. It does this for the second and third row as well, as both of these names are not equivalent to the others when compared ignoring case.
+2. The Addressee for the fourth row is compared against the names in the dictionary and is found: ‘TAINA HASU’ and ‘Taina Hasu’ are the same if compared ignoring case. As a result, the engine does not add a new name to the ‘Addressee’ dictionary, instead it refers to the existing name. This is the same for the remaining rows.
+
+
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
 
