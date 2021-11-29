@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/23/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -157,7 +157,7 @@ Users who are granted access to a report are **granted access to the entire unde
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
-- Report authors can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
+- Report authors can hide columns so that they don't show up in the **Fields** list.
 
 **These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.**
 
@@ -183,6 +183,9 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 \* In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
+   > [!IMPORTANT] 
+   > Export underlying data will not include datetime / variations columns or include numeric columns if there is an aggregation.
+	
 ### Set the export options
 
 Power BI report designers control the types of data export options that are available for their consumers. The choices are:

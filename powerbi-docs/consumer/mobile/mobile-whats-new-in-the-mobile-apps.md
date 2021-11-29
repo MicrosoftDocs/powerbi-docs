@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/16/2021
+ms.date: 11/25/2021
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,6 +20,11 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## November 2021
+### Recommended content supports hints (iOS)
+We've added hints to the items recommended for you by Power BI to help you understand why they were picked for you as recommended content. Being able to see who opened, certified, or published an item can help you decide whether the item might be relevant for your work.
+
+![Screenshot of hints on recommened items in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-hints.png)
+
 ### Updated report filters (iOS and Android phones)
 Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator. [Learn more](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone)!
 
@@ -301,7 +306,7 @@ Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing
 
 ### August 2019
 
-#### Introducting Power BI Mobile new look (preview) (iOS and Android)
+#### Introducing Power BI Mobile new look (preview) (iOS and Android)
 
 We've refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it's now quicker and easier to find what you need, when you need it.
 Since the new look is in preview, you will need to turn it on to enjoy it.
