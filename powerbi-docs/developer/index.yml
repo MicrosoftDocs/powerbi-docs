@@ -44,7 +44,7 @@ highlightedContent:
       url: https://aka.ms/pbieplayground
     # Card
     - title: Automated  template app configuration
-      itemType: concept
+      itemType: how-to-guide
       url: ./../connect-data/template-apps-auto-install.md
 
 # conceptualContent section (optional)
