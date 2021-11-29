@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/07/2021
+ms.date: 11/19/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -64,7 +64,7 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+> Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
 
 > [!NOTE]
 > Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
@@ -73,9 +73,6 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 #### Push datasets
 
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
-
-> [!NOTE]
-> Push Mode has several limitations as documented in [Power BI REST API limitations](../developer/automation/api-rest-api-limitations.md).
 
 ### Power BI refresh types
 

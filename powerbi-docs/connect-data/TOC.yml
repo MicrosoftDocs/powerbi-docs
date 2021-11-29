@@ -36,7 +36,9 @@
     - name: "Consume a machine learning model in a report"
       href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
-      href: service-gateway-sql-tutorial.md                  
+      href: service-gateway-sql-tutorial.md
+    - name: "Automate template app configuration"
+      href: template-apps-auto-install-tutorial.md                       
   - name: Concepts
     expanded: true
     items: 
@@ -242,7 +244,9 @@
       - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
       - name: "Template apps samples"
-        href: service-template-apps-samples.md        
+        href: service-template-apps-samples.md  
+      - name: "Automated template app configuration"
+        href: template-apps-auto-install.md              
     - name: Connect to services
       items: 
       - name: "Connect to services with apps"

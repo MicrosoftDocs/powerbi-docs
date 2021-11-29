@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/3/2021
+ms.date: 11/23/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,15 @@ ms.date: 11/3/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## November 2021 QFE 1
+
+*Version: 2.99.782.0, Released: November 23, 2021*
+
+Bug fixes/improvements:
+- Fix for Custom Visuals Store: now if a user isn't connected to the internet, they can still close the marketplace window.
+- Fix for Print to PDF: now works for users that have the WebView2 feature turned off and don't have the new version of WebView2 installed.
+
 
 ## October 2021 QFE 3
 
