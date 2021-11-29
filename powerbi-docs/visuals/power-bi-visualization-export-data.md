@@ -157,7 +157,7 @@ Users who are granted access to a report are **granted access to the entire unde
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
-- Report authors can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
+- Report authors can hide columns so that they don't show up in the **Fields** list.
 
 **These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.**
 

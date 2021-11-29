@@ -1307,7 +1307,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/encrypt-credentials.md",
-            "redirect_url": "/power-bi/developer/automation/configure-credentials",
+            "redirect_url": "/power-bi/developer/embedded/configure-credentials",
             "redirect_document_id": false
         },
         {
@@ -1417,57 +1417,57 @@
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-get-token.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-token",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-create-dataset.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-create-dataset",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-get-datasets.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-datasets",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-add-rows.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-add-rows",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-automatic-retention-policy-for-real-time-data.md",
-            "redirect_url": "/power-bi/developer/automation/api-automatic-retention-policy-for-real-time-data",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-rest-api-limitations.md",
-            "redirect_url": "/power-bi/developer/automation/api-rest-api-limitations",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-dataset-properties.md",
-            "redirect_url": "/power-bi/developer/automation/api-dataset-properties",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-data-model-versioning.md",
-            "redirect_url": "/power-bi/developer/automation/api-data-model-versioning",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/configure-credentials.md",
-            "redirect_url": "/power-bi/developer/automation/configure-credentials",
+            "redirect_url": "/power-bi/developer/embedded/configure-credentials",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-complete-code.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-complete-code",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
@@ -4050,8 +4050,71 @@
             "source_path": "powerbi-docs/connect-data/service-connect-to-microsoft-sustainability-calculator.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
             "redirect_document_id": true
-        }
-
-
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/index.yml",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/overview-of-power-bi-rest-api.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-token.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-create-dataset.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-datasets.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-add-rows.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-automatic-retention-policy-for-real-time-data.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-rest-api-limitations.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-dataset-properties.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-data-model-versioning.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/rest-api-reference.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-complete-code.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": true
+        }                                                                            
     ]           
 }
