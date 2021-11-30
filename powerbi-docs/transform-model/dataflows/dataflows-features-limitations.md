@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/03/2021
+ms.date: 11/30/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -29,6 +29,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * Multi-Geo is currently not supported.
 * Vnet support is achieved by using a gateway.
 * When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
+* In Power BI dataflows, you can use parameters but you cannot edit them unless you edit the entire dataflow. In this regard parameters in dataflows behave similar to declared constants.
 
 
 ## Dataflow authoring
