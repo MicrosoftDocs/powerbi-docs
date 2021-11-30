@@ -47,7 +47,7 @@
     - name: "Datasets in the Power BI service"
       href: service-datasets-understand.md      
     - name: "Dataset modes in the Power BI service"
-      href: service-datasets-modes-understand.md        
+      href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced dataset metadata in Power BI Desktop"
