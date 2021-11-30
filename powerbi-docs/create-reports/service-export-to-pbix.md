@@ -63,6 +63,10 @@ When working in Power BI Desktop without an internet connection, if you open a r
 
 This section lists the limitations of downloading a PBIX file.
 
+* To download the PBIX, you need Edit access to the report and dataset.
+
+* The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
+
 * This feature won't work with reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
 
 * Reports created in the Power BI service must be saved before they can be downloaded.
