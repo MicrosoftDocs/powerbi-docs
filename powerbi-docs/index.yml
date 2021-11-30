@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/18/2021
+  ms.date: 11/29/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -23,11 +23,11 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get the free Power BI Desktop download
+    - title: Download Power BI Desktop for free
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: automated partition creation with incremental dataset refresh
+    - title: Create automated partitions with incremental dataset refresh
       itemType: concept
       url: connect-data/incremental-refresh-overview.md
     # Card
@@ -47,7 +47,7 @@ highlightedContent:
       itemType: whats-new
       url: fundamentals/desktop-format-pane.md
     # Card
-    - title: Build page and button navigators for quick navigation experiences
+    - title: Build report navigation quickly with page and button navigators
       itemType: how-to-guide
       url: create-reports/button-navigators.md
     # Card
