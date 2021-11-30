@@ -47,9 +47,9 @@ sections:
           |Deployment Pipelines     | ✔        | ✔        |
           |XMLA endpoint connectivity     | ✔        | ✔        |
           |Enhanced automatic page refresh     | ✔        | ✔        |
+          |Power BI reports on-premises     | X        | ✔        |          
           |Multi-Geo support     | X        | ✔        |
           |Unlimited distribution     | X        | ✔        |
-          |Power BI reports on-premises     | X        | ✔        |
           |Incremental refresh     | ✔         | ✔        |            
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
