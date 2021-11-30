@@ -34,7 +34,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 
-- Attaching a dataflow with ADLS Gen 2 behind multi-factor authentication (MFA) is not supported.
+- Attaching a dataflow with ADLS Gen 2 behind multifactor authentication (MFA) is not supported.
 
 - Finally, you can connect to any ADLS Gen 2 from the admin portal, but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 
