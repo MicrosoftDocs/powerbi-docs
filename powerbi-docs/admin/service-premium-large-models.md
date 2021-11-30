@@ -148,7 +148,10 @@ Keep in mind the following restrictions when using large datasets:
 
 Large datasets in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
-The following list provides regions where large datasets in Power BI are available. Regions not in the following list are not supported for large models:
+The following list provides regions where large datasets in Power BI are available. Regions not in the following list are not supported for large models.
+
+>[!NOTE]
+>Once a large dataset is created in a workspace, it must stay in that region. You cannot reassign a workspace with a large dataset to a Premium capacity in another region.
 
 |Azure region  |Azure region abbreviation  |
 |---------|---------|
