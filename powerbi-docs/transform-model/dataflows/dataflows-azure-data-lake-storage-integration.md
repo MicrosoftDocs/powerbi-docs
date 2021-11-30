@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/27/2021
+ms.date: 11/30/2021
 LocalizationGroup: Data from files
 ---
 # Configuring dataflow storage to use Azure Data Lake Gen 2 
@@ -27,6 +27,10 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 - The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled.
 
 - The storage account must be created in the same Azure Active Directory tenant as the Power BI tenant.
+
+- The user must have Azure Blob Data Contributor role, and an owner role at the storage account level.
+
+- The Power BI workspace tenant region should be the same as the storage account region.
 
 - TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 

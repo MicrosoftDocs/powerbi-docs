@@ -8,7 +8,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/01/2020
+ms.date: 11/30/2021
 ---
 
 # Dataset modes in the Power BI service
@@ -46,7 +46,7 @@ However, while there are compelling advantages associated with Import models, th
 - A full refresh will remove all data from all tables and reload it from the data source. This operation can be expensive in terms of time and resources for the Power BI service, and the data source(s).
 
     > [!NOTE]
-    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
+    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. For more information, including supported plans and licensing, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 From a Power BI service resource perspective, Import models require:
 
