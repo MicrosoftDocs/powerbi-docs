@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/17/2021
+ms.date: 11/29/2021
 ---
 # Best practices to optimize Q&A in Power BI
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in Power BI does.
@@ -88,7 +88,7 @@ Rest assured that we’re not suggesting you need to reshape your entire model. 
 
 Follow this general rule: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. And, if your users talk about sales, there should be one *sales* object. Sounds simple, doesn't it? Depending on the shape of the data you’re starting with, it can be. There are rich data shaping capabilities available in **Query Editor** if you need them, while many of the more straightforward transformations can happen simply using calculations in the Power BI model.
 
-The following sections contain some common transformations you might need to perform.
+The following sections contain some common transformations you might need to perform. See [Normalization vs. denormalization](../guidance/star-schema#normalization-vs-denormalization.md) in the article _Understand star schema and the importance for Power BI_ for more information about normalizing a model.
 
 ### Create new tables for multi-column entities
 
