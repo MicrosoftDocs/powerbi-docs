@@ -57,9 +57,6 @@ The following table (or matrix, if you like) describes the three types of datase
 
 ![Screenshot of a table, showing the streaming dataset matrix.](media/service-real-time-streaming/real-time-streaming-11.png)
 
-> [!NOTE]
-> See [this article](../developer/automation/api-rest-api-limitations.md) for information on **Push** limits on how much data can be pushed in.
-
 ## Pushing data to datasets
 The previous section described the three primary types of real-time datasets you can use in real-time streaming, and how they differ. This section describes how to create and push data into those datasets.
 

@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/04/2021 #Required; mm/dd/yyyy format.
+  ms.date: 11/18/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -116,7 +116,7 @@ conceptualContent:
         - url: developer/visuals/index.yml
           itemType: overview
           text: Power BI Embedded Generation 2
-        - url: developer/embedded/power-bi-embedded-generation-2.md
+        - url: developer/visuals/develop-circle-card.md
           itemType: overview
           text: Develop your own Power BI visual
       # footerLink (optional)

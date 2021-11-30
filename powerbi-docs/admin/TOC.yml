@@ -36,6 +36,10 @@
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
         href: service-premium-concepts.md
+      - name: Backup and restore Power BI Premium datasets (preview)
+        href: service-premium-backup-restore-dataset.md
+      - name: Using service tags with Power BI
+        href: service-premium-service-tags.md
       - name: Managing capacities
         items:
         - name: Managing Premium Gen2 capacities
@@ -62,10 +66,6 @@
           href: service-premium-capacity-scenarios.md
         - name: Power BI Premium FAQ
           href: service-premium-faq.yml
-        - name: Backup and restore Power BI Premium datasets (preview)
-          href: service-premium-backup-restore-dataset.md
-        - name: Using service tags with Power BI
-          href: service-premium-service-tags.md
     - name: Information protection
       items:
       - name: Default label policy (preview)
@@ -182,12 +182,14 @@
         href: service-encryption-customer-managed-keys.md
       - name: Restart a Premium capacity
         href: service-admin-premium-restart.md
-      - name: Dataset connectivity with the XMLA endpoint
-        href: service-premium-connect-tools.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: troubleshoot-xmla-endpoint.md
+      - name: XMLA endpoint
+        items:
+        - name: Dataset connectivity with the XMLA endpoint
+          href: service-premium-connect-tools.md
+        - name: Troubleshoot XMLA endpoint connectivity
+          href: troubleshoot-xmla-endpoint.md
     - name: Automatic aggregations
       items:
       - name: Automatic aggregations overview
