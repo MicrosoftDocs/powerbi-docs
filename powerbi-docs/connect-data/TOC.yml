@@ -44,6 +44,10 @@
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
+    - name: "Datasets in the Power BI service"
+      href: service-datasets-understand.md      
+    - name: "Dataset modes in the Power BI service"
+      href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced dataset metadata in Power BI Desktop"
@@ -57,7 +61,7 @@
   - name: How-to guides
     expanded: true
     items: 
-    - name: "Connect to data sources"
+    - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
     - name: Connect to data
       items: 

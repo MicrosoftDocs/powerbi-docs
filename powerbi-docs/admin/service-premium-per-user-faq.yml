@@ -47,10 +47,11 @@ sections:
           |Deployment Pipelines     | ✔        | ✔        |
           |XMLA endpoint connectivity     | ✔        | ✔        |
           |Enhanced automatic page refresh     | ✔        | ✔        |
+          |Incremental refresh     | ✔         | ✔        |           
           |Multi-Geo support     | X        | ✔        |
           |Unlimited distribution     | X        | ✔        |
-          |Power BI reports on-premises     | X        | ✔        |
-          |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |
+          |Power BI reports on-premises     | X        | ✔        |           
+          |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
