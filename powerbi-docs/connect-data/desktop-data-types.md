@@ -62,7 +62,7 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 ### Text type
 **Text** - A Unicode character data string. Can be strings, numbers, or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
 
-Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear change slightly between querying data using Power Query, and then, after the data has been loaded.
+Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear to change slightly between querying data using Power Query, and then, after the data has been loaded.
 
 The engine that stores data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
 In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and a *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
@@ -82,7 +82,7 @@ When loading data, the engine evaluates each row, one by one, starting from the 
 This image explains this process:
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Depiction of the data load process and mapping text values to a dictionary of unique values":::
 
-In the example above, the engine loads the first row or data, creates the *Addressee* dictionary and adds *Taina Hasu* to it. It also adds a reference to that value in the *Addressee* column on the table it loaded. It does this for the second and third row as well, as both of these names are not equivalent to the others when compared ignoring case.
+In the example above, the engine loads the first row of data, creates the *Addressee* dictionary and adds *Taina Hasu* to it. It also adds a reference to that value in the *Addressee* column on the table it loaded. It does this for the second and third row as well, as both of these names are not equivalent to the others when compared ignoring case.
 
 The *Addressee* for the fourth row is compared against the names in the dictionary and is found: since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. As a result, the engine does not add a new name to the *Addressee* dictionary, instead it refers to the existing name. This is the same for the remaining rows.
 
