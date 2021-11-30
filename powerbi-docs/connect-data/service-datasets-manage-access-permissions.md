@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/07/2021
+ms.date: 11/30/2021
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
@@ -19,7 +19,7 @@ The dataset access management page enables you monitor and manage access to your
 This document explains how to use the dataset access management page.
 
 >[!NOTE]
-> You must be one of the dataset owners to be able to access the dataset access management page.
+> In order to be able to access the manage permissions page for a dataset, you must have at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md) in the workspace where the dataset is located.
 
 ## Open the dataset access management page
 
