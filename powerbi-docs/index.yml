@@ -23,35 +23,35 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get Power BI Desktop
+    - title: Get the free Power BI Desktop download
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Incremental refresh for datasets
+    - title: automated partition creation with incremental dataset refresh
       itemType: concept
       url: connect-data/incremental-refresh-overview.md
-    # Card
-    - title: External tools in Power BI Desktop
-      itemType: reference
-      url: transform-model/desktop-external-tools.md
     # Card
     - title: Embed a Power BI report in an application
       itemType: tutorial
       url: developer/embedded/embed-customer-app.md
     # Card
+    - title: Explore the Power BI Embedded Analytics Playground
+      itemType: reference
+      url: https://go.microsoft.com/fwlink/?linkid=848279
+    # Card
     - title: Introducing Power BI Premium Gen2
-      itemType: whats-new
+      itemType: overview
       url: admin/service-premium-gen2-what-is.md
     # Card
-    - title: Find anomalies & trends with Insights (preview)
-      itemType: overview
-      url: create-reports/insights.md
+    - title: Experiment with the reformatted Format pane (preview)
+      itemType: whats-new
+      url: fundamentals/desktop-format-pane.md
     # Card
-    - title: Stay on top of your goals (preview)
+    - title: Build page and button navigators for quick navigation experiences
       itemType: how-to-guide
-      url: create-reports/service-goals-check-in.md
+      url: create-reports/button-navigators.md
     # Card
-    - title: Power BI on Microsoft Learn 
+    - title: Study Power BI start to finish on Microsoft Learn 
       itemType: learn
       url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
