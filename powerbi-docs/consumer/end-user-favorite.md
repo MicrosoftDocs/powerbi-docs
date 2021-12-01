@@ -56,9 +56,9 @@ You have several options for viewing your favorites.
 
 1. Favorites are also available from Power BI Home.  If you've selected the **Expanded** display mode, your favorites are listed in the **Favorites + frequents** section. If you've selected the **Simplified** display mode, your favorites are listed in the **Favorites** tab. 
 
-    :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode.png" alt-text="From the upper right corner of Home, select the Simplified display mode."":::
+    :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode.png" alt-text="From the upper right corner of Home, select the Simplified display mode.":::
 
-    :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab.png" alt-text="From Home, select the tab for Favorites"":::
+    :::image type="content" source="media/end-user-favorite/power-bi-favorite-tab.png" alt-text="From Home, select the tab for Favorites":::
 ## Unfavorite content
 If you no longer use a report, dashboard, or app as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI.  Just select the black star to turn it back to a white star. 
 
