@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/23/2021
+ms.date: 11/30/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,13 @@ ms.date: 11/23/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## November 2021 QFE 2
+
+*Version: 2.99.862.0, Released: November 30, 2021*
+
+Bug fixes/improvements:
+- Fix for ArcGIS Maps visual sign-in issue: now the sign-in window for the visual will pop-up (when "Power BI Desktop infrastructure update" preview feature is off).
 
 ## November 2021 QFE 1
 
