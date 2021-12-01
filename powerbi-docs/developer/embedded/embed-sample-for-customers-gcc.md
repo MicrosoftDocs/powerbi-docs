@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application for government and national clouds
-description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
+title: Embed content in your Power BI embedded analytics application for the U.S. Government Community Cloud (GCC)
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for the GCC.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -8,31 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 11/30/2021
+ms.date: 12/01/2021
 ---
 
-# Tutorial: Embed Power BI content into your application for national clouds
+# Tutorial: Embed Power BI content into your Government Community Cloud (GCC)
 
-Learn how to embed analytical content within your business process applications for the [national cloud](/azure/active-directory/develop/authentication-national-cloud). You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
+Learn how to embed analytical content within your business process applications for the Government Community Cloud (GCC). You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
 
-Power BI supports the following national clouds:
-
-* U.S. Government Community Cloud (GCC)
-
-* U. S. Government Community Cloud High (GCC High)
-
-* U. S. Military Contractors (DoDCON)
-
-* U. S. Military (DoD)
-
-* Power BI for China cloud
-
->[!NOTE]
-> To embed content on a U.S. Government Community Cloud (GCC), see [Embed Power BI content into your Government Community Cloud (GCC)](embed-sample-for-customers-gcc.md)
+> [!NOTE]
+> To embed a content in a [national cloud](/azure/active-directory/develop/authentication-national-cloud) other than the GCC, see [Embed Power BI content into your application for national clouds](embed-sample-for-customers-national-clouds.md).
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../admin/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, you can [sign up for a U. S. government Power BI account](../../admin/service-govus-signup.md).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](embed-sample-for-your-organization.md).
@@ -41,14 +29,28 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 
 ## Download the sample
 
-This article shows the code used in the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers) on GitHub. To follow along with this walkthrough, you can download the sample. We'll be using the `.NET Framework/Embed for your customers` directory.
+This article shows the code used in the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers) on GitHub. To follow along with this walkthrough, you can download the sample. We will be using the `.NET Framework/Embed for your customers` directory.
 
 > [!IMPORTANT]
-> Embedding Power BI content from a Government Community Cloud (GCC), can only be done with a Microsoft 365 SKU. Other national cloud customers can use [Microsoft 365 or Azure SKUs](embedded-faq.yml).
+> Embedding Power BI content from a Government Community Cloud (GCC), can only be done with a [Microsoft 365 SKU](embedded-capacity.md#which-sku-should-i-use).
 
 ![Downloading App Owns Data sample.](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-026.png)
 
 ![App Owns Data directory.](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-directory.png)
+
+* Government Community Cloud (GCC):
+
+1. Overwrite Cloud.config file with GCCCloud.config content.
+
+2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
+
+3. Add the GCC parameters in the web.config file as follows.
+
+```xml
+<add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
+<add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
+<add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />>
+```
 
 * Military Contractors (DoDCON):
 
@@ -78,20 +80,6 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
 ```
 
-* Power BI for China cloud parameters
-
-1. Overwrite Cloud.config file with [Power BI for China](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
-
-2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
-
-3. Add the Power BI for China cloud parameters in the web.config file as follows.
-
-```xml
-<add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
-<add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
-<add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
-```
-
 ## Step 1 - register an app in Azure AD
 
 Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
@@ -116,8 +104,6 @@ Within your application, you need to get an **access token**, from Azure AD, bef
 
 * Military (DoD) - ```https://login.microsoftonline.us```
 
-* Power BI for China cloud - ```https://login.chinacloudapi.cn```
-
 You can see examples of these access tokens within each content item task in the **Controllers\HomeController.cs** file.
 
 ## Step 3 - get a content item
@@ -129,16 +115,14 @@ To embed your Power BI content, you need to do a couple of things to make sure i
 With your access token, you want to create your Power BI client object, which allows you to interact with the Power BI APIs. You create your Power BI client object by wrapping the AccessToken with a *Microsoft.Rest.TokenCredentials* object.
 
 ```csharp
-using AppOwnsData.Models;
-using Microsoft.PowerBI.Api;
-using Microsoft.PowerBI.Api.Models;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
+using Microsoft.PowerBI.Api.V2;
 
-public static async Task<PowerBIClient> GetPowerBiClient()
-{
-    var tokenCredentials = new TokenCredentials(await AadService.GetAccessToken(), "Bearer");
-    return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
-}
+var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+
+// Create a Power BI Client object. This is used to call the Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
 }
@@ -211,24 +195,19 @@ A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is avai
 #### Reports
 
 ```csharp
-using Microsoft.PowerBI.Api;
-using Microsoft.PowerBI.Api.Models;
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-var tokenResponse = await client.Dashboards.GenerateTokenInGroupAsync(workspaceId, dashboard.Id, generateTokenRequestParameters);
-
-if (tokenResponse == null)
-{
-    throw new NullReferenceException("Failed to generate embed token");
-}
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
-var dashboardEmbedConfig = new DashboardEmbedConfig
+var embedConfig = new EmbedConfig()
 {
     EmbedToken = tokenResponse,
-    EmbedUrl = dashboard.EmbedUrl,
-    DashboardId = dashboard.Id
+    EmbedUrl = report.EmbedUrl,
+    Id = report.Id
 };
 ```
 
