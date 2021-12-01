@@ -1,6 +1,6 @@
 ---
 title: Analyze Power BI datasets in Excel
-description: Power BI makes it easy for you to discover and connect to centralized and secure data shared with you in your organization from wherever you work, including Microsoft Excel and Microsoft Teams.
+description: After you've connected to your dataset, Excel presents you with an empty PivotTable and Fields list from the Power BI dataset, and you're ready analyze your data
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Analyze Power BI datasets in Excel
 
-Whether you connect to a dataset in Excel by starting in Power BI with Analyze in Excel or in Excel with Get Data, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, ready to be analyzed.
+You can connect to a dataset in Excel by starting in Power BI with Analyze in Excel or in Excel with Get Data. Now that you've connected to the dataset, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready analyze your data.
 
 ![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
@@ -28,7 +28,7 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
 - Right-click anywhere in the PivotTable and select **Refresh**.
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-refresh.png" alt-text="Right-click anywhere in the PivotTable andselect Refresh.":::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-refresh.png" alt-text="Right-click anywhere in the PivotTable and select Refresh.":::
 
 - Select **Data** in the Excel ribbon and select **Refresh**.
 
