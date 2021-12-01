@@ -99,8 +99,14 @@
         href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: Power BI in Excel
       items:         
-      - name: "Analyze in Excel"
+      - name: "Connect Excel to Power BI datasets"
+        href: service-connect-power-bi-datasets-excel.md
+      - name: "Start in Excel to connect to Power BI"
+        href: service-connect-power-bi-datasets-excel.md
+      - name: "Start in Power BI to connect to Excel"
         href: service-analyze-in-excel.md
+      - name: "Analyze Power BI datasets in Excel"
+        href: service-analyze-power-bi-datasets-excel.md
       - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md
       - name: "Set featured tables"
