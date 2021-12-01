@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/29/2021
+  ms.date: 12/01/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -36,16 +36,16 @@ highlightedContent:
       url: developer/embedded/embed-customer-app.md
     # Card
     - title: Explore the Power BI Embedded Analytics Playground
-      itemType: reference
+      itemType: get-started
       url: https://go.microsoft.com/fwlink/?linkid=848279
     # Card
-    - title: Introducing Power BI Premium Gen2
-      itemType: overview
-      url: admin/service-premium-gen2-what-is.md
+    - title: Use the Gen2 metrics app
+      itemType: concept
+      url: admin/service-premium-gen2-metrics-app.md
     # Card
-    - title: Experiment with the reformatted Format pane (preview)
-      itemType: whats-new
-      url: fundamentals/desktop-format-pane.md
+    - title: Get your data on the go with Power BI mobile apps
+      itemType: learn
+      url: /learn/modules/explore-power-bi-mobile-apps
     # Card
     - title: Build report navigation quickly with page and button navigators
       itemType: how-to-guide
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: collaborate-share/service-teams-notifications.md
+        - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
-          text: Get notifications in Teams about Power BI activity
+          text: Add the Power BI app to Microsoft Teams
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -260,9 +260,9 @@ conceptualContent:
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
           text: Explore dashboards and reports
-        - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-          itemType: how-to-guide
-          text: View on-premises reports
+        - url: /learn/modules/explore-power-bi-mobile-apps
+          itemType: learn
+          text: Get data on the go with the mobile apps
       # footerLink (optional)
       footerLink:
         url: consumer/mobile/index.yml
