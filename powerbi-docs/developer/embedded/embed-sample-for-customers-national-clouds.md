@@ -28,7 +28,7 @@ Power BI supports the following national clouds:
 * Power BI for China cloud
 
 >[!NOTE]
-> To embed content on a U.S. Government Community Cloud (GCC), see [Embed Power BI content into your Government Community Cloud (GCC)](embed-sample-for-customers-gcc.md)
+> To embed content on a U.S. Government Community Cloud (GCC), see [Embed Power BI content into your Government Community Cloud (GCC)](register-app.md#register-a-gcc-application)
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
@@ -110,7 +110,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
 
-* Government Community Cloud (GCC) - refer to []()
+* Government Community Cloud (GCC) - refer to [Register a GCC application](register-app.md#register-a-gcc-application)
 
 * Military Contractors (DoDCON) - ```https://app.high.powerbigov.us/apps```
 
@@ -420,6 +420,6 @@ An application sample is available within the [Embedding for your customers samp
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-* For information about embedding content for the GCC, reference [Embed Power BI content into your Government Community Cloud (GCC)](embed-sample-for-customers-gcc.md)
+* For information about embedding content for the GCC, reference [Embed Power BI content into your Government Community Cloud (GCC)](register-app.md#register-a-gcc-application)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

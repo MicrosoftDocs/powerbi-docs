@@ -159,7 +159,7 @@ After you register your application, you can make changes to its permissions. Pe
 In the Azure portal, you can view your app and make changes to its permissions.
 
 > [!IMPORTANT]
-> The following instructions will not work for GCC customers. If you are embedding for a GCC refer to [Registering a GCC application](#registering-a-gcc-application)
+> The following instructions will not work for GCC customers. If you are embedding for a GCC refer to [Register a GCC application](#register-a-gcc-application)
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
