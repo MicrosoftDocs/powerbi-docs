@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 11/30/2021
+ms.date: 12/02/2021
 ---
 
 # Tutorial: Embed Power BI content into your application for national clouds
@@ -44,17 +44,31 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 This article shows the code used in the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers) on GitHub. To follow along with this walkthrough, you can download the sample. We'll be using the `.NET Framework/Embed for your customers` directory.
 
 > [!IMPORTANT]
-> Embedding Power BI content from a Government Community Cloud (GCC), can only be done with a Microsoft 365 SKU. Other national cloud customers can use [Microsoft 365 or Azure SKUs](embedded-faq.yml).
+> Embedding Power BI content from a Government Community Cloud (GCC), can only be done with a Microsoft 365 SKU. Other national cloud customers can use [Microsoft 365 or Azure SKUs](embedded-capacity.md#which-sku-should-i-use).
 
 ![Downloading App Owns Data sample.](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-026.png)
 
 ![App Owns Data directory.](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-directory.png)
 
+* Government Community Cloud (GCC):
+
+1. Overwrite Cloud.config file with GCCCloud.config content.
+
+2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+
+3. Add the GCC parameters in the web.config file as follows.
+
+```xml
+<add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
+<add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
+<add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
+```
+
 * Military Contractors (DoDCON):
 
 1. Overwrite Cloud.config file with TBCloud.config content.
 
-2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
+2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
 3. Add the DoDCON parameters in the web.config file as follows.
 
@@ -68,7 +82,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 1. Overwrite Cloud.config file with PFCloud.config content.
 
-2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
+2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
 3. Add the DoDCON parameters in the web.config file as follows.
 
@@ -82,7 +96,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 1. Overwrite Cloud.config file with [Power BI for China](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
 
-2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
+2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
 3. Add the Power BI for China cloud parameters in the web.config file as follows.
 
@@ -96,7 +110,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
 
-* Government Community Cloud (GCC) - ```https://app.powerbigov.us/apps```
+* Government Community Cloud (GCC) - refer to []()
 
 * Military Contractors (DoDCON) - ```https://app.high.powerbigov.us/apps```
 
@@ -204,7 +218,7 @@ Using the JavaScript API, you can generate an embed token. The embed token is sp
 > [!IMPORTANT]
 > Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](/power-bi/developer/embedded/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
 
-A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
+A sample is available within **Controllers\HomeController.cs** of the [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
@@ -275,7 +289,7 @@ var embedConfig = new TileEmbedConfig()
 
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile, or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-An application sample is available within the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
+An application sample is available within the [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 ### Views\Home\EmbedDashboard.cshtml
 
@@ -402,8 +416,10 @@ An application sample is available within the [Embedding for your organization s
 
 ## Next steps
 
-* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
+* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+
+* For information about embedding content for the GCC, reference [Embed Power BI content into your Government Community Cloud (GCC)](embed-sample-for-customers-gcc.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
