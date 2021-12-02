@@ -47,7 +47,7 @@ This section provides information for each folder and file in the directory that
 
 ### .vscode
 
-This folder contains the VS code project settings.
+This folder contains the VS Code project settings.
 
 To configure your workspace, edit the `.vscode/settings.json` file.
 
