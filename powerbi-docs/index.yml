@@ -40,7 +40,7 @@ highlightedContent:
       url: https://go.microsoft.com/fwlink/?linkid=848279
     # Card
     - title: Use the Gen2 metrics app
-      itemType: concept
+      itemType: how-to-guide
       url: admin/service-premium-gen2-metrics-app.md
     # Card
     - title: Get your data on the go with Power BI mobile apps
