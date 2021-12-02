@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/05/2021
+ms.date: 12/02/2021
 LocalizationGroup: Share your work
 ---
 # Share a filtered Power BI report
@@ -35,7 +35,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
 1. Select **Share** and make sure **Include my changes** is selected: 
 
-    ![Share via link](media/service-share-reports/include-my-changes-setting.png)
+    :::image type="content" source="media/service-share-reports/include-my-changes-setting.png" alt-text="Screenshot of sharing Share via link.":::
 
 ## Share a report in Teams
 
