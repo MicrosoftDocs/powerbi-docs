@@ -36,12 +36,18 @@
     - name: "Consume a machine learning model in a report"
       href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
-      href: service-gateway-sql-tutorial.md                  
+      href: service-gateway-sql-tutorial.md
+    - name: "Automate template app configuration"
+      href: template-apps-auto-install-tutorial.md                       
   - name: Concepts
     expanded: true
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
+    - name: "Datasets in the Power BI service"
+      href: service-datasets-understand.md      
+    - name: "Dataset modes in the Power BI service"
+      href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced dataset metadata in Power BI Desktop"
@@ -55,7 +61,7 @@
   - name: How-to guides
     expanded: true
     items: 
-    - name: "Connect to data sources"
+    - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
     - name: Connect to data
       items: 
@@ -242,7 +248,9 @@
       - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
       - name: "Template apps samples"
-        href: service-template-apps-samples.md        
+        href: service-template-apps-samples.md  
+      - name: "Automated template app configuration"
+        href: template-apps-auto-install.md              
     - name: Connect to services
       items: 
       - name: "Connect to services with apps"

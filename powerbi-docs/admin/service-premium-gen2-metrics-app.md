@@ -87,6 +87,9 @@ The artifacts visual is divided into three sections. The first section includes 
 
 This page provides information about overloads in your capacity. You can use it to establish which Power BI items (such as reports, dashboards, and datasets) cause overload, and which items are affected by this overload.
 
+>[!NOTE]
+>This page only displays data when the capacity is overloaded.
+
 When you detect a Power BI item that causes overload, you can either optimize that item to reduce its impact on the capacity, or you can scale up the capacity.
 
 The table below lists the visuals displayed in the evidence page according to their location in the page.
