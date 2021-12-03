@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/03/2021
 LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
@@ -60,7 +60,7 @@ To make such changes, select the ellipsis next to the bookmark's name, then sele
 
 ## Arranging bookmarks
 
-As you create bookmarks, you might find that the order in which you create them is different from the order you'd like to present to your audience. No problem, you can easily rearrange the order of bookmarks.
+As you create report bookmarks, you might find that the order in which you create them is different from the order you'd like to present to your audience. No problem, you can easily rearrange the order of bookmarks.
 
 - In the **Bookmarks** pane, drag-and-drop bookmarks to change their order. 
 
@@ -69,6 +69,9 @@ As you create bookmarks, you might find that the order in which you create them 
    ![Screenshot showing changing bookmark order by drag-and-drop.](media/desktop-bookmarks/bookmarks_06.png)
 
 The order of your bookmarks can be important when you use the **View** feature of bookmarks, as described in the next section.
+
+> [!NOTE]
+> You can't rearrange personal bookmarks.
 
 ## Bookmarks as a slide show
 When you have a collection of bookmarks you would like to present, in order, you view them as a slide show in Power BI Desktop, and in the Power BI service in either **Edit** or **Reading mode**.  
