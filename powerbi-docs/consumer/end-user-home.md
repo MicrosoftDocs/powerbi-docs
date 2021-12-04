@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 12/03/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -42,22 +42,15 @@ On the Home canvas, you can view all the content that you have permission to use
  
 As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following.
 
-![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-experienced-user.png)
+:::image type="content" source="media/end-user-home/power-bi-experienced.png" alt-text="A screenshot of the Welcome screen for the Power BI service.":::
 
  
 The next few topics take a closer look at Home for an experienced user, from top to bottom. Your Home landing page may look different. Power BI optimizes Home based on your usage and settings.
 
 ## Most important content at your fingertips
 
-### Favorite dashboards
-This top section will display tiles from your favorite dashboards. The Power BI service selects from dashboards that you use the most and have marked as [a favorite](end-user-favorite.md).
-
-![Favorite dashboard section.](./media/end-user-home/power-bi-dashboards.png)
-
-Alternately, decide for yourself which dashboard to display here. Open a dashboard and tag it as [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
-
 ### Favorites and frequents
-This next section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
+This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
 
 ![Favorites flyout.](./media/end-user-home/power-bi-home-favorites.png)
 
