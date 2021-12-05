@@ -65,6 +65,8 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
     * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
+    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
+
 5. Select **Register**.
 
     Your Azure AD app **Application ID** is displayed in the *Summary* box. Copy this value for later use.
@@ -100,8 +102,6 @@ These steps describe how to register an Azure AD application for the Power BI [e
         * **Use a custom URL** - Select this option if you already have an embedded analytics application, and know what you want to use as a redirect URL.
 
     * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
-
-    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
 
 5. Select **Register**.
 
@@ -187,6 +187,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
     > [!NOTE]
     > For GCC apps, do the following:
+    >
     >
     >  1. Select the **APIs my organization uses** tab.
     >  2. Search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.

@@ -14,4 +14,4 @@ ms.custom: include file
     > [!NOTE]
     > If you're already signed in, verify that you're signed in with the user you want to use for creating the Azure AD app. To change a user, select the *sign out* link and once the tool restarts, sign in again
 
- Click **Next**.
+    Click **Next**.
