@@ -27,9 +27,6 @@ Power BI supports the following national clouds:
 
 * Power BI for China cloud
 
->[!NOTE]
-> To embed content on a U.S. Government Community Cloud (GCC), see [Embed Power BI content into your Government Community Cloud (GCC)](register-app.md#register-a-gcc-application)
-
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../admin/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
@@ -52,17 +49,15 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Government Community Cloud (GCC):
 
-1. Overwrite Cloud.config file with GCCCloud.config content.
+1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+2. Add the GCC parameters in the web.config file as follows.
 
-3. Add the GCC parameters in the web.config file as follows.
-
-```xml
-<add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
-<add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
-<add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
-```
+    ```xml
+    <add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
+    <add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
+    <add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
+    ```
 
 * Military Contractors (DoDCON):
 
@@ -70,11 +65,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 2. Add the DoDCON parameters in the web.config file as follows.
 
-```xml
-<add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-<add key="scope" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
-<add key="urlPowerBiServiceApiRoot" value="https://api.high.powerbigov.us/" />
-```
+    ```xml
+    <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
+    <add key="scope" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
+    <add key="urlPowerBiServiceApiRoot" value="https://api.high.powerbigov.us/" />
+    ```
 
 * Military (DoD):
 
@@ -83,10 +78,10 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 2. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-<add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
-<add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
-```
+    <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
+    <add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
+    <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
+    ```
 
 * Power BI for China cloud parameters
 
@@ -94,11 +89,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 2. Add the Power BI for China cloud parameters in the web.config file as follows.
 
-```xml
-<add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
-<add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
-<add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
-```
+    ```xml
+    <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
+    <add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
+    <add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
+    ```
 
 ## Step 1 - register an app in Azure AD
 

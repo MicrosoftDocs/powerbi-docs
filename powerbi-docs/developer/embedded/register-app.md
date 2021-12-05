@@ -160,9 +160,6 @@ After you register your application, you can make changes to its permissions. Pe
 
 In the Azure portal, you can view your app and make changes to its permissions.
 
-> [!IMPORTANT]
-> The following instructions will not work for GCC customers. If you are embedding for a GCC refer to [Register a GCC application](#register-a-gcc-application)
-
 1. Sign into the [Azure portal](https://portal.azure.com).
 
 2. Select your Azure AD tenant by selecting your account in the upper right corner of the page.
@@ -177,7 +174,10 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 6. Select **Add a permission**.
 
-6. To add permissions, follow these steps:
+7. To add permissions, follow these steps:
+
+    > [!IMPORTANT]
+    > This step is different for GCC apps. For GCC apps see the note below.
 
     1. From the **Microsoft APIs** tab, select **Power BI service**.
 
@@ -185,7 +185,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
     3. When you're done, select **Add permissions** to save your changes.
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > For GCC apps, do the following:
     >
     >  1. Select the **APIs my organization uses** tab.
@@ -194,7 +194,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
     >  3. Select **Open Delegated Permissions** and add or remove the specific permissions you need.
     >  4. When you're done, select **Add permissions** to save your changes.
 
-7. To remove a permission, follow these steps:
+8. To remove a permission, follow these steps:
 
     1. Select the ellipsis (...) to the right of the permission.
 
@@ -311,7 +311,7 @@ var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
 
 ## Register a GCC application
 
-To register your 
+To register a GCC app...
 
 ## Next steps
 
