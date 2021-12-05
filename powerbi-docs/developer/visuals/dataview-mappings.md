@@ -839,8 +839,14 @@ To enable expanding and collapsing row headers, the following have been added to
     ```typescript
     interface DataViewTreeNode {
         //...
+        /**
+        * TRUE if the node is Collapsed
+        * FALSE if it is Expanded
+            * Undefined if it cannot be Expanded (e.g. subtotal)
+    */
         isCollapsed?: boolean;
     }
+
     ```
 
 * The `toggleExpandCollapse` method in the `ISelectionManger` interface:
@@ -852,6 +858,17 @@ To enable expanding and collapsing row headers, the following have been added to
         toggelExpandCollapse(selectionId: ISelectionId): IPromise<{}>;  
         //...
     }
+    ```
+
+* The `canBeExpanded` flag in the DataViewTreeNodeValue:
+
+    ```typescript
+    interface DataViewTreeNodeValue {
+        //...
+        /** If TRUE, this level can be expanded/collapsed */
+        canBeExpanded?: boolean;
+    }
+
     ```
 
 #### Visual requirements
