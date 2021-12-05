@@ -27,7 +27,7 @@ To use your application, your users will not need to sign in to Power BI or have
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
 > [!IMPORTANT]
-> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-national-clouds.md) for details.
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 

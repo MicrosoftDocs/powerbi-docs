@@ -28,7 +28,7 @@ To use your application, your users will need to sign in to Power BI.
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
 
 > [!IMPORTANT]
-> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-national-clouds.md) for details.
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 

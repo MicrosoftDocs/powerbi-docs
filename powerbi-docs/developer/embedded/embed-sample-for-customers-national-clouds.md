@@ -77,7 +77,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 2. Add the DoDCON parameters in the web.config file as follows.
 
-```xml
+    ```xml
     <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
     <add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
     <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
