@@ -53,11 +53,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
     2. Add the GCC parameters in the web.config file as follows.
 
-    ```xml
-    <add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
-    <add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
-    <add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
-    ```
+        ```xml
+        <add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
+        <add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
+        ```
 
 * Military Contractors (DoDCON):
 
@@ -65,11 +65,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
     2. Add the DoDCON parameters in the web.config file as follows.
 
-    ```xml
-    <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-    <add key="scope" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
-    <add key="urlPowerBiServiceApiRoot" value="https://api.high.powerbigov.us/" />
-    ```
+        ```xml
+        <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
+        <add key="scope" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="urlPowerBiServiceApiRoot" value="https://api.high.powerbigov.us/" />
+        ```
 
 * Military (DoD):
 
@@ -77,11 +77,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
     2. Add the DoDCON parameters in the web.config file as follows.
 
-    ```xml
-    <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-    <add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
-    <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
-    ```
+        ```xml
+        <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
+        <add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
+        ```
 
 * Power BI for China cloud parameters
 
@@ -89,11 +89,11 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
     2. Add the Power BI for China cloud parameters in the web.config file as follows.
 
-    ```xml
-    <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
-    <add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
-    <add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
-    ```
+        ```xml
+        <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
+        <add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
+        <add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
+        ```
 
 ## Step 1 - register an app in Azure AD
 
