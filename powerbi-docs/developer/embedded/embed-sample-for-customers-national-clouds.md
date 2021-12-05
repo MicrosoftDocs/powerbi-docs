@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 12/02/2021
+ms.date: 12/05/2021
 ---
 
 # Tutorial: Embed Power BI content into your application for national clouds
@@ -66,11 +66,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Military Contractors (DoDCON):
 
-1. Overwrite Cloud.config file with TBCloud.config content.
+1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
-
-3. Add the DoDCON parameters in the web.config file as follows.
+2. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
 <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
@@ -80,11 +78,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Military (DoD):
 
-1. Overwrite Cloud.config file with PFCloud.config content.
+1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
-
-3. Add the DoDCON parameters in the web.config file as follows.
+2. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
 <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
@@ -94,11 +90,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Power BI for China cloud parameters
 
-1. Overwrite Cloud.config file with [Power BI for China](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
+1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
-
-3. Add the Power BI for China cloud parameters in the web.config file as follows.
+2. Add the Power BI for China cloud parameters in the web.config file as follows.
 
 ```xml
 <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
@@ -134,292 +128,17 @@ Within your application, you need to get an **access token**, from Azure AD, bef
 
 You can see examples of these access tokens within each content item task in the **Controllers\HomeController.cs** file.
 
-## Step 3 - get a content item
+## Step 3 - embed content
 
-To embed your Power BI content, you need to do a couple of things to make sure it embeds correctly. While all of these steps can be done with the REST API directly, the sample application and the examples here use the .NET SDK.
+Now that you have an access token, you can continue embedding as you would on any other platform.
 
-### Create the Power BI Client with your access token
-
-With your access token, you want to create your Power BI client object, which allows you to interact with the Power BI APIs. You create your Power BI client object by wrapping the AccessToken with a *Microsoft.Rest.TokenCredentials* object.
-
-```csharp
-using AppOwnsData.Models;
-using Microsoft.PowerBI.Api;
-using Microsoft.PowerBI.Api.Models;
-using Microsoft.Rest;
-
-public static async Task<PowerBIClient> GetPowerBiClient()
-{
-    var tokenCredentials = new TokenCredentials(await AadService.GetAccessToken(), "Bearer");
-    return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
-}
-{
-    // Your code to embed items.
-}
-```
-
-### Get the content item you want to embed
-
-Use the Power BI client object to retrieve a reference to the item you want to embed. You can embed dashboards, tiles, or reports. Here is an example of how to retrieve the first dashboard, tile, or report from a given workspace.
-
-A sample is available within **Controllers\HomeController.cs** of the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
-
-#### Reports
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
-
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
-#### Dashboards
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(workspaceId);
-
-// Get the first report in the group.
-Dashboard dashboard = dashboards.Value.FirstOrDefault();
-```
-
-#### Tiles
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// To retrieve the tile, you first need to retrieve the dashboard.
-
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(workspaceId);
-
-// Get the first report in the group.
-Dashboard dashboard = dashboards.Value.FirstOrDefault();
-
-// Get a list of tiles from a specific dashboard
-ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(workspaceId, dashboard.Id);
-
-// Get the first tile in the group.
-Tile tile = tiles.Value.FirstOrDefault();
-```
-
-### Create the embed token
-
-Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Anytime you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](/rest/api/power-bi/embedtoken).
-
-> [!IMPORTANT]
-> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](/power-bi/developer/embedded/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
-
-A sample is available within **Controllers\HomeController.cs** of the [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
-
-A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
-
-#### Reports
-
-```csharp
-using Microsoft.PowerBI.Api;
-using Microsoft.PowerBI.Api.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-var tokenResponse = await client.Dashboards.GenerateTokenInGroupAsync(workspaceId, dashboard.Id, generateTokenRequestParameters);
-
-if (tokenResponse == null)
-{
-    throw new NullReferenceException("Failed to generate embed token");
-}
-
-// Generate Embed Configuration.
-var dashboardEmbedConfig = new DashboardEmbedConfig
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = dashboard.EmbedUrl,
-    DashboardId = dashboard.Id
-};
-```
-
-#### Dashboards
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Dashboards.GenerateTokenInGroup(workspaceId, dashboard.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = dashboard.EmbedUrl,
-    Id = dashboard.Id
-};
-```
-
-#### Tiles
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token for a tile.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Tiles.GenerateTokenInGroup(workspaceId, dashboard.Id, tile.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new TileEmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = tile.EmbedUrl,
-    Id = tile.Id,
-    dashboardId = dashboard.Id
-};
-```
-
-## Step 4 - load an item using JavaScript
-
-You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile, or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
-
-An application sample is available within the [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
-
-### Views\Home\EmbedDashboard.cshtml
-
-```csharp
-<script src="~/scripts/powerbi.js"></script>
-<div id="dashboardContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read dashboard Id from Model
-    var embedDashboardId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'dashboard',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedDashboardId
-    };
-
-    // Get a reference to the embedded dashboard HTML element
-    var dashboardContainer = $('#dashboardContainer')[0];
-
-    // Embed the dashboard and display it within the div container.
-    var dashboard = powerbi.embed(dashboardContainer, config);
-</script>
-```
-
-### Views\Home\EmbedTile.cshtml
-
-```csharp
-<script src="~/scripts/powerbi.js"></script>
-<div id="tileContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read tile Id from Model
-    var embedTileId = "@Model.Id";
-
-    // Read dashboard Id from Model
-    var embedDashboardId = "@Model.dashboardId";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'tile',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedTileId,
-        dashboardId: embedDashboardId
-    };
-
-    // Get a reference to the embedded tile HTML element
-    var tileContainer = $('#tileContainer')[0];
-
-    // Embed the tile and display it within the div container.
-    var tile = powerbi.embed(tileContainer, config);
-</script>
-```
-
-### Views\Home\EmbedReport.cshtml
-
-```csharp
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
-    };
-
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
-
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-</script>
-```
+* [Embed content for customers](embed-sample-for-customers.md#step-8---embed-your-content)
+* [Embed content for your organization](embed-sample-for-your-organization.md#step-5---embed-your-content)
 
 ## Next steps
 
 * A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-
-* For information about embedding content for the GCC, reference [Embed Power BI content into your Government Community Cloud (GCC)](register-app.md#register-a-gcc-application)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

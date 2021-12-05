@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/02/2021
+ms.date: 12/05/2021
 ---
 
 # Register an Azure AD application to use with Power BI
@@ -18,8 +18,8 @@ To use Power BI embedded analytics, you need to register an Azure Active Directo
 
 Before registering your app, decide which of the following solutions is best suited for you:
 
-* Embed for your customers
-* Embed for your organization
+* [Embed for your customers](#embed-for-your-customers)
+* [Embed for your organization](#embed-for-your-organization)
 
 ### Embed for your customers
 
@@ -101,6 +101,8 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
     * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
+    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
+
 5. Select **Register**.
 
     Your Azure AD app **Application ID** and **Application secret** values are displayed in the *Summary* box. Copy these values for later use.
@@ -169,22 +171,35 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 4. From the **Owned applications** tab, select your app. The application opens in the *Overview* tab, where you can review the *Application ID*.
 
-5. Select the **API permissions** tab.
+5. Select the **View API permissions** tab.
+
+    ![Screenshot of View API permissions tab.](media/register-app/api-permissions.png)
+
+6. Select **Add a permission**.
 
 6. To add permissions, follow these steps:
 
-    1. Select **Add a permission** and then select **Power BI service**.
+    1. From the **Microsoft APIs** tab, select **Power BI service**.
 
     2. Select **Delegated Permissions** and add or remove the specific permissions you need.
 
     3. When you're done, select **Add permissions** to save your changes.
 
+    > [!IMPORTANT]
+    > For GCC apps, do the following:
+    >
+    >  1. Select the **APIs my organization uses** tab.
+    >  2. Search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
+    >    ![Screenshot of GCC permissions tab.](media/register-app/find-gcc-apis.png)
+    >  3. Select **Open Delegated Permissions** and add or remove the specific permissions you need.
+    >  4. When you're done, select **Add permissions** to save your changes.
+
 7. To remove a permission, follow these steps:
 
     1. Select the ellipsis (...) to the right of the permission.
-    
+
     2. Select **Remove permission**.
-    
+
     3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
 ## [HTTP](#tab/HTTP)
