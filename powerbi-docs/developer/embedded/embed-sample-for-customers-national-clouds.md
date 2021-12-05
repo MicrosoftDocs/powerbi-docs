@@ -49,9 +49,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Government Community Cloud (GCC):
 
-1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+    1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Add the GCC parameters in the web.config file as follows.
+    2. Add the GCC parameters in the web.config file as follows.
 
     ```xml
     <add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
@@ -61,9 +61,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Military Contractors (DoDCON):
 
-1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+    1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Add the DoDCON parameters in the web.config file as follows.
+    2. Add the DoDCON parameters in the web.config file as follows.
 
     ```xml
     <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
@@ -73,9 +73,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Military (DoD):
 
-1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+    1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Add the DoDCON parameters in the web.config file as follows.
+    2. Add the DoDCON parameters in the web.config file as follows.
 
     ```xml
     <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
@@ -85,9 +85,9 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Power BI for China cloud parameters
 
-1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
+    1. Update applicationId (Native app applicationId), workspaceId, the username (your master user), and password in Web.config file.
 
-2. Add the Power BI for China cloud parameters in the web.config file as follows.
+    2. Add the Power BI for China cloud parameters in the web.config file as follows.
 
     ```xml
     <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
