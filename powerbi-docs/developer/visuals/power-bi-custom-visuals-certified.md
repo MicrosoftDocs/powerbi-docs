@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/08/2021
+ms.date: 12/05/2021
 ---
 
 # Get a Power BI visual certified
@@ -174,16 +174,10 @@ Your Power BI visual will be available to download from AppSource when this proc
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md)
-
->[!div class="nextstepaction"]
->[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
-
->[!div class="nextstepaction"]
 >[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
 
 >[!div class="nextstepaction"]
->[Develop your own visuals in Power BI](develop-power-bi-visuals.md)
+>[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Microsoft AppSource](office-store.md)
