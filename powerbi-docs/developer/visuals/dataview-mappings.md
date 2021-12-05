@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/22/2021
+ms.date: 12/05/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -842,11 +842,10 @@ To enable expanding and collapsing row headers, the following have been added to
         /**
         * TRUE if the node is Collapsed
         * FALSE if it is Expanded
-            * Undefined if it cannot be Expanded (e.g. subtotal)
-    */
+        * Undefined if it cannot be Expanded (e.g. subtotal)
+        */
         isCollapsed?: boolean;
     }
-
     ```
 
 * The `toggleExpandCollapse` method in the `ISelectionManger` interface:
@@ -868,7 +867,6 @@ To enable expanding and collapsing row headers, the following have been added to
         /** If TRUE, this level can be expanded/collapsed */
         canBeExpanded?: boolean;
     }
-
     ```
 
 #### Visual requirements
