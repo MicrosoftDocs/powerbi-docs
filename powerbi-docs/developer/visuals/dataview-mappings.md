@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/22/2021
+ms.date: 12/05/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -839,6 +839,11 @@ To enable expanding and collapsing row headers, the following have been added to
     ```typescript
     interface DataViewTreeNode {
         //...
+        /**
+        * TRUE if the node is Collapsed
+        * FALSE if it is Expanded
+        * Undefined if it cannot be Expanded (e.g. subtotal)
+        */
         isCollapsed?: boolean;
     }
     ```
@@ -851,6 +856,16 @@ To enable expanding and collapsing row headers, the following have been added to
         showContextMenu(selectionId: ISelectionId, position: IPoint, dataRoles?: string): IPromise<{}>; //dataRoles is the name of the role of the selected data point
         toggelExpandCollapse(selectionId: ISelectionId): IPromise<{}>;  
         //...
+    }
+    ```
+
+* The `canBeExpanded` flag in the DataViewTreeNodeValue:
+
+    ```typescript
+    interface DataViewTreeNodeValue {
+        //...
+        /** If TRUE, this level can be expanded/collapsed */
+        canBeExpanded?: boolean;
     }
     ```
 
