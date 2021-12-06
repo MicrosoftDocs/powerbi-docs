@@ -51,7 +51,7 @@ If you're creating an *embed for your organization* application, and want more c
 These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
 
 > [!IMPORTANT]
-> The following instructions will not work for GCC customers. If you are embedding for a GCC, click on the Manual registration tab.
+> The following instructions will not work for GCC customers. If you are embedding for a GCC, follow the instructions for **Manual registration**.
 
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
