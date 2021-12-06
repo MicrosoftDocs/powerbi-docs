@@ -174,26 +174,16 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 6. Select **Add a permission**.
 
-7. To add permissions, follow these steps:
-
-    > [!IMPORTANT]
-    > This step is different for GCC apps. For GCC apps see the note below.
+7. To add permissions, follow these steps (note that the first step is different for GCC apps):
 
     1. From the **Microsoft APIs** tab, select **Power BI service**.
+    > [!NOTE]
+    > For GCC apps, Select the **APIs my organization uses** tab, and search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
+    >    ![Screenshot of GCC permissions tab.](media/register-app/find-gcc-apis.png)
 
     2. Select **Delegated Permissions** and add or remove the specific permissions you need.
 
     3. When you're done, select **Add permissions** to save your changes.
-
-    > [!NOTE]
-    > For GCC apps, do the following:
-    >
-    >
-    >  1. Select the **APIs my organization uses** tab.
-    >  2. Search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
-    >    ![Screenshot of GCC permissions tab.](media/register-app/find-gcc-apis.png)
-    >  3. Select **Open Delegated Permissions** and add or remove the specific permissions you need.
-    >  4. When you're done, select **Add permissions** to save your changes.
 
 8. To remove a permission, follow these steps:
 
