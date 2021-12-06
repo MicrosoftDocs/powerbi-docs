@@ -322,6 +322,9 @@ Note that Power BI not only sends notifications on refresh failures but also whe
 
 To resume scheduled refresh, visit a report or dashboard built using this dataset or manually refresh the dataset using the **Refresh Now** option.
 
+> [!NOTE]
+> Sending refresh notifications to external users is not supported. The recipients you specify in the **Email these users when the refresh fails** textbox must have accounts in your Azure Active Directory tenant. This limitation applies to both dataset refresh and dataflow refresh.
+
 ### Checking refresh status and history
 
 In addition to failure notifications, it is a good idea to check your datasets periodically for refresh errors. A quick way is to view the list of datasets in a workspace. Datasets with errors show a small warning icon. Select the warning icon to obtain additional information, as in the following screenshot. For more information about troubleshooting specific refresh errors, see [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
