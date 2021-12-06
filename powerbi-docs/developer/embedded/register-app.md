@@ -51,7 +51,7 @@ If you're creating an *embed for your organization* application, and want more c
 These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
 
 > [!IMPORTANT]
-> The following instructions will not work for GCC customers. If you are embedding for a GCC refer to [Register a GCC application](#register-a-gcc-application)
+> The following instructions will not work for GCC customers. If you are embedding for a GCC, click on the Manual registration tab.
 
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
@@ -309,10 +309,6 @@ var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
 ```
 
 ---
-
-## Register a GCC application
-
-To register a GCC app...
 
 ## Next steps
 

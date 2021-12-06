@@ -99,7 +99,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
 
-* Government Community Cloud (GCC) - refer to [Register a GCC application](register-app.md#register-a-gcc-application)
+* Government Community Cloud (GCC) - ```https://app.powerbigov.us/apps```
 
 * Military Contractors (DoDCON) - ```https://app.high.powerbigov.us/apps```
 
