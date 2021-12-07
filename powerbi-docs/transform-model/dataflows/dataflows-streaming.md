@@ -461,7 +461,7 @@ To connect to your data for streaming dataflows:
 
 1. Go to **Get Data**, search for **power platform**, and then select the **Dataflows** connector.
 
-   ![Screenshot that shows where to find the Power Platform dataflows (Beta) connector in Power B I Desktop.](media/dataflows-streaming/dataflows-streaming-34.png)
+   ![Screenshot that shows where to find the Power Platform dataflows (Beta) connector in Power B I Desktop.](media/dataflows-streaming/dataflows-streaming-40.png)
 
 2. Sign in with your Power BI credentials.
 3. Select workspaces. Look for the one that contains your streaming dataflow and select that dataflow. (In this example, the streaming dataflow is called **Toll**.)
