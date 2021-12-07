@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 12/05/2021
+ms.date: 12/07/2021
 ---
 
 # Tutorial: Embed Power BI content into your application for national clouds
@@ -132,8 +132,10 @@ Now that you have an access token, you can continue embedding as you would on an
 
 ## Next steps
 
-* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
+>[!div class="nextstepaction"]
+>[Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)
 
-* For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+>[!div class="nextstepaction"]
+>[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
