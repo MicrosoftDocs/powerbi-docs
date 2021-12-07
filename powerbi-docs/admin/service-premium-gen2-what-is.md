@@ -162,10 +162,12 @@ The following known limitations currently apply to Premium Gen2:
     | A4\P1 | 8 | 4 | 240 | 25 | 6 | 30 |
     | A5\P2 | 16 | 8 | 480 | 50 | 6 | 60 |
     | A6\P3 | 32 | 16 | 960 | 100 | 10 | 120 |
-    | P4\A7 | 64 | 32 | 200 | 240 | 240 | 48 |
-    | P5\A8 | 128 | 64 | 400 | 480 | 480 | 96 |
+    | P4\A7** | 64 | 32 | 200 | 240 | 240 | 48 |
+    | P5\A8** | 128 | 64 | 400 | 480 | 480 | 96 |
     
     \* The Premium Gen2 app doesn't currently expose these metrics.
+
+    \** SKUs greater than 100 GB are not available in all regions and require special request. Contact Microsoft if you want to use these SKUs or if you want to request using them in an unsupported region.
     
 ## Next steps
 
