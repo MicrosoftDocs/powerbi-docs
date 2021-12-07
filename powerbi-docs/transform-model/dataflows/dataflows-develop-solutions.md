@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 08/24/2021
+ms.date: 11/30/2021
 LocalizationGroup: Data from files
 ---
 
 
 # Develop solutions with dataflows
 
-Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents come common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
+Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
 
 ## Get access to Premium features of dataflows
 

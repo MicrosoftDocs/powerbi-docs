@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 12/02/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -214,6 +214,9 @@ Some other general implications of using DirectQuery are as follows:
 * **Limit of 1 million rows returned on any query:** There's a fixed limit of 1 million rows placed on the number of rows that can be returned in any single query to the underlying source. This limit generally has no practical implications, and visuals themselves aren't going to display that many points. However, the limit can occur in cases where Power BI isn't fully optimizing the queries sent, and there's some intermediate result being requested that exceeds the limit. It can also occur while building a visual, on the path to a more reasonable final state. For example, including **Customer** and **TotalSalesQuantity** would hit this limit if there were more than 1 million customers, until some filter were applied.
 
   The error that would be returned would be: "The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows."
+
+  > [!NOTE]
+  > The 1 million row limit can be exceeded in Premium capacities. For more information, see [max intermediate row set count](../admin/service-admin-premium-workloads.md#max-intermediate-row-set-count).
 
 * **Can't change from import to DirectQuery mode:** While it's possible to switch a model from DirectQuery mode to use import mode, all the necessary data must be imported. It's also not possible to switch back, primarily because of the set of features not supported in DirectQuery mode. DirectQuery models over multidimensional sources, like SAP BW, also can't be switched from DirectQuery to import, because of the different treatment of external measures.
 
