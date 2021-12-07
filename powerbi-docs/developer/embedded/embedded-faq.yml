@@ -206,7 +206,7 @@ sections:
       - question: |
           In what Azure regions is PBI Embedded available?
         answer: |
-          [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
+          [PAM](https://azure.microsoft.com/global-infrastructure/services/?products=all) (EcoManager) - see Product availability manager
           
           Available regions (16 - same regions as Power BI)
           
