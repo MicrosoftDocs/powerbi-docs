@@ -154,7 +154,7 @@ The following known limitations currently apply to Premium Gen2:
 
     The following table summarizes all the limitations that are dependent on the capacity size:
 
-    | Capacity SKU | Size in vCores | Backend vCores | CPU time / minute | Memory per artifact [GB]\* | Max memory per query [GB]\* | DirectQuery\LC queries / sec\* |
+    | Capacity SKU | Size in vCores | Backend vCores | CPU time/minute | Memory per artifact [GB]\* | Max memory per query [GB]\* | DirectQuery\LC queries/sec\* |
     | --- | --- | --- | --- | --- | --- | --- |
     | A1\EM1 | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
     | A2\EM2 | 2 | 1 | 60 | 6 | 2 | 7.5 |

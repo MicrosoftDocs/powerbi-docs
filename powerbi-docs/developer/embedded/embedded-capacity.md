@@ -96,7 +96,7 @@ The table below lists payment and usage considerations per capacity.
 
 The table below describes the resources and limits of each SKU.
 
-| Capacity Nodes | Total v-cores | Backend v-cores | CPU time / minute | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
+| Capacity Nodes | Total v-cores | Backend v-cores | CPU time/minute | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | EM1/A1 | 1 | 0.5 | 2.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 6 | 1 | 7.5 | 2 |
