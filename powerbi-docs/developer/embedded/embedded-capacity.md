@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 12/07/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -49,6 +49,7 @@ Each capacity offers a selection of SKUs, and each SKU provides different resour
 To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article.
 
 To plan and test your capacity, use these links:
+
 * [Capacity planning](embedded-capacity-planning.md)
 * [Testing approaches](../../admin/service-premium-capacity-optimize.md#testing-approaches)
 
@@ -59,6 +60,7 @@ Power BI Embedded is shipped with an [*a* SKU](../../admin/service-admin-premium
 ### Power BI Premium SKUs
 
 Power BI premium offers two SKUs, *P* and *EM*.
+
 * [Understand the differences between the *P* and *EM* SKUs](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
 * [Buy a Premium SKU](../../admin/service-admin-premium-purchase.md)
 
@@ -77,6 +79,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
+>
 >* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
@@ -104,11 +107,9 @@ The table below describes the resources and limits of each SKU.
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4/A7 <sup>[1](#limit)</sup> | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5/A8 <sup>[1](#limit)</sup> | 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
-
-<a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
 
 #### Embedded Gen 2 memory enhancements
 
