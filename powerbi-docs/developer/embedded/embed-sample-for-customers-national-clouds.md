@@ -136,6 +136,6 @@ Now that you have an access token, you can continue embedding as you would on an
 >[Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)
 
 >[!div class="nextstepaction"]
->[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+>[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
