@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/30/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -59,9 +59,9 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 ## Dataflows in shared capacities
 
-There are limitations for Dataflows in shared capacities:
+There are limitations for Dataflows in shared capacities (non-Premium capacities):
 
-* When refreshing Dataflows, timeouts in Shared are 2 hours per table, and 3 hours per Dataflow
+* When refreshing Dataflows, timeouts in a shared capacity are 2 hours per table, and 3 hours per Dataflow
 * Linked tables cannot be created in shared Dataflows, although they can exist within the Dataflow as long as the *Load Enabled* property on the query is disabled
 * Computed tables cannot be created in shared Dataflows
 * AutoML and Cognitive services are not available in shared Dataflows
