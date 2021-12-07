@@ -16,9 +16,33 @@ From a new Excel workbook, you can connect to Power BI datasets that have been s
 
 ## Prerequisites
 
-There's no limitation for connecting to datasets in Excel for the web if you have the right Power BI license.
+In general, you can connect to Power BI datasets from Excel if the following conditions are met:
 
-However, you can only connect to Power BI datasets from the Excel desktop app with specific Office SKUs. If your SKU doesn’t support this feature, you don’t see the Get Data menu option in the Excel desktop app. Check the Office release notes to learn if your Office SKU supports connecting to Power BI datasets.  
+ - Power BI license: If the dataset is in a Premium workspace or in My workspace, you would only need a free Power BI license. However, if the dataset is in a shared workspace or a Pro workspace, a Power BI Pro license is required. For datasets in a Premium Per User (PPU) workspaces, a PPU license is required.
+ 
+ - Build Permissions: In order to build reports on Power BI datasets from Excel, you will need build permissions to the dataset.
+ 
+ - Office SKU or Web Plan: You can only connect to Power BI datasets from Excel desktop or Excel for the web depending on your Office SKUs or Office for the web plans.
+
+        Excel desktop app: You can only connect to Power BI datasets from the Excel desktop app with specific Office SKUs. If your SKU doesn’t support this feature, you don’t see the Get Data menu option in the Excel desktop app. Check the Office release notes to learn if your SKU supports connecting to Power BI datasets depending on your primary update channel: [Current Channel] (https://docs.microsoft.com/officeupdates/current-channel), [Monthly Enterprise Channel] (https://docs.microsoft.com/officeupdates/monthly-enterprise-channel) or [Semi-Annual Enterprise Channel] (https://docs.microsoft.com/officeupdates/semi-annual-enterprise-channel).
+
+        Excel for the web: You can connect to datasets in [Excel for the web] (https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/excel-online) depending on your organization's [Office for the web plan] (https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description#feature-availability-across-office-for-the-web-plans).
+        
+- Enable Connected Experiences: To see the **From Power BI** option under **Get Data** in the Excel **Data** ribbon, you must enable connected experiences in Excel.  
+
+1. In Excel, select **File** > **Options** > **Trust Center** > **Trust Center Settings**.  
+
+    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-trust-center-settings.png" alt-text="Select Trust Center Settings.":::
+
+1. Select **Privacy Options** > **Privacy Settings**.
+
+    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-privacy-settings.png" alt-text="Select Privacy settings.":::
+
+1. Select **Turn on optional connected experiences**.
+
+    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-optional-connected-experiences.png" alt-text="Select Turn on optional connected experiences.":::
+
+1. Select **OK** > **OK** > **OK**.
 
 ## Connect to a Power BI dataset 
 
@@ -35,24 +59,6 @@ However, you can only connect to Power BI datasets from the Excel desktop app wi
     :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-available-power-bi-datasets.png" alt-text="Select a dataset from the list.":::
 
 1. Select the dataset you want and start creating reports and visualizations in the Excel grid. 
-
-## Enable connected experiences 
-
-To see the **From Power BI** option under **Get Data** in the Excel **Data** ribbon, you must enable connected experiences in Excel.  
-
-1. In Excel, select **File** > **Options** > **Trust Center** > **Trust Center Settings**.  
-
-    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-trust-center-settings.png" alt-text="Select Trust Center Settings.":::
-
-1. Select **Privacy Options** > **Privacy Settings**.
-
-    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-privacy-settings.png" alt-text="Select Privacy settings.":::
-
-1. Select **Turn on optional connected experiences**.
-
-    :::image type="content" source="media/service-connect-excel-power-bi-datasets/excel-optional-connected-experiences.png" alt-text="Select Turn on optional connected experiences.":::
-
-1. Select **OK** > **OK** > **OK**.
 
 ## Next steps
 
