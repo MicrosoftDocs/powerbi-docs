@@ -455,11 +455,11 @@ As we mentioned before, streaming dataflows save data in the following two locat
 
 ### Connect to streaming dataflows from Power BI Desktop
 
-With the July 2021 release of Power BI Desktop, a new connector called **Power Platform dataflows (Beta)** is available for you to use. As part of this new connector, for streaming dataflows, you'll see two tables that match the data storage previously described.
+With the July 2021 release of Power BI Desktop, a new connector called **Power Platform Dataflows* is available for you to use. As part of this new connector, for streaming dataflows, you'll see two tables that match the data storage previously described.
 
 To connect to your data for streaming dataflows: 
 
-1. Go to **Get Data**, search for **power platform**, and then select the **Power Platform dataflows (Beta)** connector.
+1. Go to **Get Data**, search for **power platform**, and then select the **Dataflows** connector.
 
    ![Screenshot that shows where to find the Power Platform dataflows (Beta) connector in Power B I Desktop.](media/dataflows-streaming/dataflows-streaming-34.png)
 
