@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/02/2021
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -148,7 +148,7 @@ When using DirectQuery, many of these model enrichments can still be made, and c
 * **Date/time support only to second accuracy:** When using time columns in your dataset, Power BI only issues queries to the underlying source to a level of detail of seconds. Queries aren't sent to the DirectQuery source for milliseconds. Remove this part of the times from your source columns.
 * **Limitations in calculated columns:** Calculated columns are limited to being intra-row, as in, they can only refer to values of other columns of the same table, without the use of any aggregate functions. Additionally, the DAX scalar functions, such as `LEFT()`, that are allowed, are limited to those functions that can be pushed to the underlying source. The functions vary depending upon the exact capabilities of the source. Functions that aren't supported aren't listed in autocomplete when authoring the DAX for a calculated column, and would result in an error if used.
 * **No support for parent-child DAX functions:** When in DirectQuery mode, it's not possible to use the family of `DAX PATH()` functions that generally handle Parent-Child structures, such as chart of accounts, or employee hierarchies.
-* **Calculated tables aren't supported:** The ability to define a calculated table using a DAX expression isn't supported in DirectQuery mode.
+* **Calculated tables:** You can use calculated tables in DirectQuery when using [composite models](../transform-model/desktop-composite-models.md#calculated-tables).
 * **Relationship filtering:** For information about bi-directional filtering, see [Bidirectional cross-filtering](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx). This whitepaper presents examples in the context of SQL Server Analysis Services. The fundamental points apply equally to Power BI.
 * **No Clustering:** When using DirectQuery, it's not possible to use the Clustering capability, to automatically find groups.
 

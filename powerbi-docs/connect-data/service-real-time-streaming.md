@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/17/2020
+ms.date: 12/07/2021
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
@@ -206,9 +206,6 @@ When applying filters to push datasets with *DateTime* fields with millisecond p
 Streaming datasets are designed for displaying the latest data. You can use the **Card** streaming visual to easily see latest numeric values. Unfortunately, the card does not support data of type *DateTime* or *Text*.
 
 For push datasets, when you have a timestamp in the schema you can try creating a report visual with the last N filter.
-
-#### Can I connect to push or streaming datasets in Power BI Desktop?
-Push and hybrid datasets can be live connected in Power BI Desktop. Other streaming datasets cannot be connected in Power BI Desktop.
 
 #### Given the previous question, how can I do any modeling on real-time datasets?
 Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use create dataset REST API to create a dataset with relationship and measures and/or use the update table REST APIs to add measures to an existing table. 
