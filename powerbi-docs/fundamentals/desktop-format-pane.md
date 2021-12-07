@@ -1,5 +1,5 @@
 ---
-title: The new Format pane in Power BI Desktop
+title: The new Format pane in Power BI Desktop (preview)
 description: Get to know the redesigned Format pane in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,10 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/17/2021
+ms.date: 12/02/2021
 LocalizationGroup: Get started
 ---
-# The new Format pane in Power BI Desktop
+# The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 

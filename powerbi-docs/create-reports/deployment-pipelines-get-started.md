@@ -172,6 +172,8 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
+
 * Rules for dataflows that have other dataflows as sources, are not supported.
 
 * Data source rules for common data model (CDM) folders in a dataflow, are not supported.

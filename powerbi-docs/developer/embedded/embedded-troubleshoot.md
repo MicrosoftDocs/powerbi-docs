@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 08/12/2021
+ms.date: 12/07/2021
 ---
 
 # Troubleshoot your embedded application
@@ -132,14 +132,6 @@ When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might
 To fix the timeout exception, you can resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
 
 ## Authentication
-
-### Authentication failed with AADSTS90002: Tenant 'authorize' not found
-
- If you're receiving messages logging in such as ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***, that is because ADAL 4.x doesn't support "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" as an authority url.
- 
-To resolve this issue you should trim "oauth2/authorize/" from the end of your authority url, see [Power BI Developer Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) for reference.
-
- Check [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) from ADAL 4.x release notes.
 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
