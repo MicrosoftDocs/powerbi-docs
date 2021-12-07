@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/26/2021
+ms.date: 11/23/2021
 LocalizationGroup: Gateways
 ---
 
@@ -62,7 +62,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
 
-   ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
+   ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
    

@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 12/02/2021
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -387,6 +387,11 @@ The following table shows the following information:
 |-|Small and Light |smallLightLabel |#605E5C<br>9pt |Data labels<br>Value axis labels|
 
 *\* Starred items are also colored based on the first data color of the report theme.*
+
+Bold is a Boolean value set on the format. To make text bold, set it to:
+
+- "bold": true
+- "titleBold": true
 
 > [!TIP]
 > The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined above.  If you are authoring a "dark theme," be sure to also set the colors "firstLevelElements" (matching the primary text color), "secondLevelElements" (matching the anticipated "light" color for text), and "background" (with sufficient contrast to both first- and second-level elements colors).
