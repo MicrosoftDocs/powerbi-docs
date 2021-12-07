@@ -18,7 +18,7 @@ For more information about sensitivity labels in Power BI, see [Sensitivity labe
 
 #### Give us your feedback
 
-The product team would love to get your [feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u) about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
 
 ## Apply sensitivity labels in the Power BI service
 
