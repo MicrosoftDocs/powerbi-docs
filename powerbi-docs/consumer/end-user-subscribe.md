@@ -154,7 +154,7 @@ Power BI administrators have levels of control over subscriptions. The following
 
 - [Enable email subscriptions](../admin/service-admin-portal.md) for all members of the organization. 
 
-- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal#invite-external-users-to-your-organization). 
+- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md). 
 
 ### View subscription audit and activity logs 
 
