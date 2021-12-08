@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 09/16/2021
+ms.date: 12/06/2021
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -318,6 +318,7 @@ There are a few considerations to keep in mind while working with private endpoi
 - [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding the Power BI admin role](service-admin-role.md)  
 - [Auditing Power BI in your organization](service-admin-auditing.md)  
+- [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 The following video shows how to connect a mobile device to Power BI, using private endpoints:
 
