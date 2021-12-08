@@ -20,7 +20,7 @@ THere are several ways for you to discover and connect to centralized and secure
 
 Microsoft Excel and Power BI together combine the versatility of Excel with the unified governance and security standards of Power BI to ensure workers are using the right data securely, driving better decision-making to achieve business objectives.
 
-Of course, you could [export data from Power BI to Excel](../visuals/power-bi-visualization-export-data.md). But the workbook won't be connected to the Power BI dataset it came from. It would be yet another disconnected, siloed Excel workbook that doesn't contain the freshest data. So avoid creating data silos: Connect Excel to Power BI instead.
+Of course, you could [export data from Power BI to Excel](../visuals/power-bi-visualization-export-data.md). But the workbook wouldn't be connected to the Power BI dataset that it came from. It would be yet another disconnected, siloed Excel workbook that doesn't contain the freshest data. So avoid creating data silos: Connect Excel to Power BI instead.
 
 ## Access Power BI datasets in Excel 
 

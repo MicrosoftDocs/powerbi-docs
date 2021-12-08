@@ -24,11 +24,15 @@ In general, you can connect to Power BI datasets from Excel if the following con
  
 - **Office SKU or Web Plan**: You can only connect to Power BI datasets from Excel desktop or Excel for the web depending on your Office SKUs or Office for the web plans.
 
-    **Excel desktop app**: You can only connect to Power BI datasets from the Excel desktop app with specific Office SKUs. If your SKU doesn’t support this feature, you don’t see the Get Data menu option in the Excel desktop app. Check the Office release notes to learn if your SKU supports connecting to Power BI datasets depending on your primary update channel: [Current Channel] (/officeupdates/current-channel), [Monthly Enterprise Channel] (/officeupdates/monthly-enterprise-channel) or [Semi-Annual Enterprise Channel] (/officeupdates/semi-annual-enterprise-channel).
+    **Excel desktop app**: You can only connect to Power BI datasets from the Excel desktop app with specific Office SKUs. If your SKU doesn’t support this feature, you don’t see the Get Data menu option in the Excel desktop app. Check the Office release notes to learn if your SKU supports connecting to Power BI datasets depending on your primary update channel: 
+
+    - [Current Channel](/officeupdates/current-channel)
+    - [Monthly Enterprise Channel](/officeupdates/monthly-enterprise-channel) or 
+    - [Semi-Annual Enterprise Channel](/officeupdates/semi-annual-enterprise-channel)
 
     **Excel for the web**: You can connect to datasets in [Excel for the web] (/office365/servicedescriptions/office-online-service-description/excel-online) depending on your organization's [Office for the web plan] (/office365/servicedescriptions/office-online-service-description/office-online-service-description#feature-availability-across-office-for-the-web-plans).
         
-## Enable Connected Experiences 
+## Enable connected experiences 
 
 To see the **From Power BI** option under **Get Data** in the Excel **Data** ribbon, you must enable connected experiences in Excel.  
 
