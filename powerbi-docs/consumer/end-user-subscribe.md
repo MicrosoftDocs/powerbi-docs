@@ -54,7 +54,7 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
     > [!TIP]
-        > To receive a subscription email only on certain days, select Weekly and then select the checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select Weekly and then select the checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after that.  
@@ -106,7 +106,7 @@ Subscribing others has two requirements.
 If your report isn’t hosted in a Premium capacity or workspace backed by a PPU license, you can subscribe others if they have a Power BI Pro or PPU license.  
 
 ### Use group email aliases 
-When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](./admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
+When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
 
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and do not support subscribing group aliases.  
@@ -152,9 +152,9 @@ For more information, visit [Subscribe to a paginated report in the Power BI ser
 
 Power BI administrators have levels of control over subscriptions. The following links point to the relevant sections of the admin portal: 
 
-- [Enable email subscriptions](admin/service-admin-portal#email-subscriptions) for all members of the organization. 
+- [Enable email subscriptions](../admin/service-admin-portal#email-subscriptions) for all members of the organization. 
 
-- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](admin/service-admin-portal.md#invite-external-users-to-your-organization). 
+- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#invite-external-users-to-your-organization). 
 
 ### View subscription audit and activity logs 
 
@@ -168,11 +168,11 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 - Modified by 
 - Modified date 
 
-See [Operations available in the audit and activity logs](admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
+See [Operations available in the audit and activity logs](../admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
 
 ## Considerations and limitations 
 
-For help with troubleshooting for the subscriptions feature, see [Troubleshoot subscriptions](service-troubleshoot-subscribe.md).  
+For help with troubleshooting for the subscriptions feature, see "Troubleshoot subscriptions".  
 
 ### General
 - If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.
@@ -194,7 +194,7 @@ Email subscriptions do not support:
  
 * R-powered Power BI visuals  
 * bookmarks
-* most [custom visuals](developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](developer/visuals/power-bi-custom-visuals-certified.md). 
+* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
 
 
