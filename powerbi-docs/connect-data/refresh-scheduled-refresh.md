@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -70,7 +70,7 @@ In a Direct Query scenario, when a dataset qualifies for performance optimizatio
 Set the **Keep your data up to date** slider to **On** to configure the settings.
 
 > [!NOTE]
-> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
+> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time. 
 
 ![Scheduled refresh dialog box](media/refresh-scheduled-refresh/scheduled-refresh.png)
 

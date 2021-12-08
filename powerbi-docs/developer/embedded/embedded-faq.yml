@@ -206,19 +206,9 @@ sections:
       - question: |
           In what Azure regions is PBI Embedded available?
         answer: |
-          [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
+          Power BI Embedded is non-regional which means it is not dependent on any specific Azure region.
           
-          Available regions (16 - same regions as Power BI)
-          
-          * US (6) - East US, East US 2, North Central US, South Central US, West US, West US 2
-          * Europe (2) - North Europe, West Europe
-          * Asia Pacific (2) - Southeast Asia, East Asia
-          * Brazil (1) - Brazil South
-          * Japan (1) - Japan East
-          * Australia (1) - Australia Southeast
-          * India (1) - West India
-          * Canada (1) - Canada Central
-          * United Kingdom (1) - UK South
+          See [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=all) for regional information about all Azure products.
           
       - question: |
           What is Power BI Embedded's authentication model?
