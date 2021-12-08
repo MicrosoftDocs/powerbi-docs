@@ -154,7 +154,7 @@ Power BI administrators have levels of control over subscriptions. The following
 
 - [Enable email subscriptions](../admin/service-admin-portal#email-subscriptions) for all members of the organization. 
 
-- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#invite-external-users-to-your-organization). 
+- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal#invite-external-users-to-your-organization). 
 
 ### View subscription audit and activity logs 
 
@@ -168,7 +168,7 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 - Modified by 
 - Modified date 
 
-See [Operations available in the audit and activity logs](../admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
+See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
 
 ## Considerations and limitations 
 
