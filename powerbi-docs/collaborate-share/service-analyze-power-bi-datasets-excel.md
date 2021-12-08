@@ -7,12 +7,12 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 11/30/2021
+ms.date: 12/07/2021
 LocalizationGroup: Share your work
 ---
 # Analyze Power BI datasets in Excel
 
-You can connect to a dataset in Excel by starting in Power BI with Analyze in Excel or in Excel with Get Data. Now that you've connected to the dataset, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready analyze your data.
+You've connected to a Power BI dataset in Excel by starting in Power BI with Analyze in Excel or in Excel with Get Data. Now that you're connected, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready analyze your data.
 
 ![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
@@ -43,11 +43,11 @@ Analyze in Excel is especially useful for Power BI datasets and reports that con
 
 * Azure Analysis Services *tabular* data models and SQL Server Analysis Services (SSAS) *tabular* or *multidimensional* data models.
 
-    Connection to datasets from live connection to Analysis Services (Azure and SQL Server) are not currently supported.
+    Connection to datasets from live connection to Analysis Services (Azure and SQL Server) aren't currently supported.
 
 * Power BI Desktop files or Excel workbooks with data models that have model measures created using Data Analysis Expressions (DAX).
 
-With **Excel for the web**, you can now explore and refresh Excel workbooks connected to Power BI datasets. If you have downloaded an Analyze in Excel workbook from Power BI or connected directly to a Power BI dataset from Excel desktop, you can share and refresh these workbooks through OneDrive and SharePoint. You can copy the link to the OneDrive or SharePoint location by clicking the **Share** button in Excel desktop and pasting the link directly in a browser. Now you start working with PivotTables connected to Power BI datasets in Excel for the web just like you would in Excel desktop.
+With **Excel for the web**, you can now explore and refresh Excel workbooks connected to Power BI datasets. If you have downloaded an Analyze in Excel workbook from Power BI or connected directly to a Power BI dataset from the Excel desktop app, you can share and refresh these workbooks through OneDrive and SharePoint. You can copy the link to the OneDrive or SharePoint location by clicking the **Share** button in the Excel desktop app and pasting the link directly in a browser. Now you start working with PivotTables connected to Power BI datasets in Excel for the web just like you would in the Excel desktop app.
 
 > [!IMPORTANT]
 > Using Analyze in Excel exposes all detail-level data to any users with permission to the dataset.
@@ -60,7 +60,7 @@ Here are the requirements for connecting to Power BI datasets in Excel:
 
 * Analyze in Excel is supported for Microsoft Excel 2010 SP1 and later.
 * Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](../transform-model/desktop-measures.md).
-* Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you’re unable to install the updates, check with your administrator.
+* Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you can't install the updates, check with your administrator.
 * Analyze in Excel requires that the dataset be in a Power BI Premium workspace or that you have a Power BI Pro or Premium Per User (PPU) license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 * You can connect to datasets through Analyze in Excel if you have permission for the underlying dataset. You could have this permission in a few ways. You  could have the Member role in the workspace containing the dataset, or have Build permission for a dataset in a workspace, or in an app that contains the dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md) for datasets.
 * Guest users can't use Analyze in Excel for datasets sent from (originating from) another tenant. 

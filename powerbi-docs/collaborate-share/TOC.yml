@@ -102,7 +102,7 @@
       - name: "Connect Excel to Power BI datasets"
         href: service-connect-power-bi-datasets-excel.md
       - name: "Start in Excel to connect to Power BI"
-        href: service-connect-power-bi-datasets-excel.md
+        href: service-connect-excel-power-bi-datasets.md
       - name: "Start in Power BI to connect to Excel"
         href: service-analyze-in-excel.md
       - name: "Analyze Power BI datasets in Excel"
@@ -111,7 +111,7 @@
         href: service-excel-featured-tables.md
       - name: "Set featured tables"
         href: service-create-excel-featured-tables.md
-      - name: "Troubleshoot analyze in Excel"
+      - name: "Troubleshoot analyzing in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
