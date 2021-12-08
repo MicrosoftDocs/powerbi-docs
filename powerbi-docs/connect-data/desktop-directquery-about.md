@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -148,7 +148,7 @@ When using DirectQuery, many of these model enrichments can still be made, and c
 * **Date/time support only to second accuracy:** When using time columns in your dataset, Power BI only issues queries to the underlying source to a level of detail of seconds. Queries aren't sent to the DirectQuery source for milliseconds. Remove this part of the times from your source columns.
 * **Limitations in calculated columns:** Calculated columns are limited to being intra-row, as in, they can only refer to values of other columns of the same table, without the use of any aggregate functions. Additionally, the DAX scalar functions, such as `LEFT()`, that are allowed, are limited to those functions that can be pushed to the underlying source. The functions vary depending upon the exact capabilities of the source. Functions that aren't supported aren't listed in autocomplete when authoring the DAX for a calculated column, and would result in an error if used.
 * **No support for parent-child DAX functions:** When in DirectQuery mode, it's not possible to use the family of `DAX PATH()` functions that generally handle Parent-Child structures, such as chart of accounts, or employee hierarchies.
-* **Calculated tables aren't supported:** The ability to define a calculated table using a DAX expression isn't supported in DirectQuery mode.
+* **Calculated tables:** You can use calculated tables in DirectQuery when using [composite models](../transform-model/desktop-composite-models.md#calculated-tables).
 * **Relationship filtering:** For information about bi-directional filtering, see [Bidirectional cross-filtering](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx). This whitepaper presents examples in the context of SQL Server Analysis Services. The fundamental points apply equally to Power BI.
 * **No Clustering:** When using DirectQuery, it's not possible to use the Clustering capability, to automatically find groups.
 
@@ -214,6 +214,9 @@ Some other general implications of using DirectQuery are as follows:
 * **Limit of 1 million rows returned on any query:** There's a fixed limit of 1 million rows placed on the number of rows that can be returned in any single query to the underlying source. This limit generally has no practical implications, and visuals themselves aren't going to display that many points. However, the limit can occur in cases where Power BI isn't fully optimizing the queries sent, and there's some intermediate result being requested that exceeds the limit. It can also occur while building a visual, on the path to a more reasonable final state. For example, including **Customer** and **TotalSalesQuantity** would hit this limit if there were more than 1 million customers, until some filter were applied.
 
   The error that would be returned would be: "The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows."
+
+  > [!NOTE]
+  > The 1 million row limit can be exceeded in Premium capacities. For more information, see [max intermediate row set count](../admin/service-admin-premium-workloads.md#max-intermediate-row-set-count).
 
 * **Can't change from import to DirectQuery mode:** While it's possible to switch a model from DirectQuery mode to use import mode, all the necessary data must be imported. It's also not possible to switch back, primarily because of the set of features not supported in DirectQuery mode. DirectQuery models over multidimensional sources, like SAP BW, also can't be switched from DirectQuery to import, because of the different treatment of external measures.
 
@@ -327,7 +330,13 @@ The setting is only enabled when there's at least one DirectQuery source in the 
 
 Increasing **Maximum connections per data source** ensures more queries, up to the maximum number specified, can be sent to the underlying data source. This approach is useful when many visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit does result in more load on the underlying source, so the setting isn't guaranteed to improve overall performance.
 
-Once a report is published, the maximum number of concurrent queries sent to the underlying data source also depend upon fixed limits. The limits depend on the target environment to which the report is published. Different environments, such as Power BI, Power BI Premium, or Power BI Report Server, can impose different limits.
+Once a report is published, the maximum number of concurrent queries sent to the underlying data source also depend upon fixed limits. The limits depend on the target environment to which the report is published. Different environments, such as Power BI, Power BI Premium, or Power BI Report Server, can impose different limits. The table below lists the upper limits of the active connections per data source for each Power BI environment. These limits apply to cloud data sources and on-premise data sources such as SQL Server, Oracle and Teradata.
+
+|Environment            |Upper limit  |
+|-----------------------|-------------|
+|Power BI Pro           |10 active connections per data source |
+|Power BI Premium       |30 active connections per data source |
+|Power BI Report Server |10 active connections per data source |
 
 > [!NOTE]
 > The maximum number of DirectQuery connections setting applies to all DirectQuery sources when [enhanced metadata](desktop-enhanced-dataset-metadata.md) is enabled, which is the default setting for all models created in Power BI Desktop. 

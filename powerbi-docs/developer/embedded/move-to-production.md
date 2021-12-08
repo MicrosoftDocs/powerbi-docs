@@ -14,10 +14,11 @@ ms.date: 06/02/2020
 
 # Move your embedded app to production
 
-After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
+>[!IMPORTANT]
+>This article only applies to [*embed for your customers/app owns data*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. Customers using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario don't need to purchase a capacity.
 
-> [!Important]
-> All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
+Note that **all workspaces** (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
 
 ## Create a capacity
 
