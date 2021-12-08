@@ -34,6 +34,9 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
     :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Select Data in the Excel ribbon and select Refresh.":::
 
+> [!IMPORTANT]
+> **Refresh** updates the Power BI connection string for the report you see on the sheet. **Refresh All** updates all the connection strings in the Excel workbook, including non-Power BI data sources.
+
 ## Data sources for Analyze in Excel
 
 Analyze in Excel is especially useful for Power BI datasets and reports that connect to the following data sources:
