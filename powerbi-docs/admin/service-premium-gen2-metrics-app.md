@@ -140,6 +140,97 @@ At the top of the page there's a multi-selection pivot allowing you to focus on 
 
 * **Refresh operations** - On the right side of the refresh page, there's a timeline describing the CPU power, processing time or number of refreshes done each hour over the past 14 days. This visual is designed to help you identify patterns.
 
+### Timepoint
+
+This page provides a detailed view of every operation resulted in CPU activity in a given timepoint. Use this page to understand which interactive and background operations contributed the most to CPU usage.
+
+>[!TIP]
+>You can only get to this page by using the drill through feature from the visual in the top right corner of the *Overview* and *Evidence* pages.
+
+When the total combined CPU for interactive and background operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
+
+* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added and the total CPUs will be higher for the next 24 hours.
+
+    >[!NOTE]
+    >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
+
+* **Autoscle isn't enabled** - If autoscale is not enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
+
+#### Top row visuals
+
+This section describes the operations of the visuals in the top row of the timepoint page.
+
+* **Top left visual** - Displays the timepoint used to drill through to this page.
+
+* **Heartbeat line chart** - Shows a 60 minute window of CPU activity. Use this visual to establish the duration of peaks and troughs.
+
+    * *Vertical red line* - The timepoint you currently drilled to view. The visual shows the 30 minutes of CPU activity leading to the selected timepoint, as well as the 30 minutes of CPU activity after the selected time point.
+
+    * *Blue line* - Total CPUs.
+
+    * *Yellow line* - The capacity allowance.
+
+    >[!NOTE]
+    >If the blue line is above the yellow line the capacity is overloaded.
+
+* **Interactive operations card** - Displays the total number of interactive operations that contributed to the CPU's activity during this timepoint.
+
+* **Background operations card** - Displays the total number of background operations that contributed to the CPU's activity during this timepoint.
+
+* **SKU card** - Displays the current SKU.
+
+* **Capacity CPU card** - Displays the total number of CPU seconds allowed for this capacity, for a given 30 second timepoint window.
+
+#### Interactive Operations
+
+A table showing every interactive operation that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, 100% of the CPU seconds used by the interactive operation get attributed to the timepoint window.
+
+* **Artifact** - The name of the Power BI item, its type, and its workspace details.
+
+* **Operation** - The type of interactive operation.
+
+* **Start** - The time the interactive operation began.
+
+* **End** - The time the interactive operation finished.
+
+* **Status** - An indication showing if the operation succeeded or failed.
+
+    >[!NOTE]
+    >CPU usage for failed operations is counted when determining if the capacity is in overload.
+
+* **User** - The name of the user attributed to the interactive operation.
+
+* **Duration** - The number of chronological seconds the interactive operation took to complete.
+
+* **CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+
+* **Throttling** - The number of chronological seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
+
+* **% Of Capacity** - Interactive CPU operations as a proportion of the overall capacity allowance.
+
+#### Background Operations
+
+A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
+
+* **Artifact** - The name of the Power BI item, its type, and its workspace details.
+
+* **Operation** - The type of background operation.
+
+* **Start** -The time the background operation began.
+
+* **End** - The time the background operation finished.
+
+* **Status** - An indication showing if the operation succeeded or failed.
+
+    >[!NOTE]
+    >CPU usage for failed operations is counted when determining if the capacity is in overload.
+
+* **Duration** - The number of chronological seconds the background operation took to complete.
+
+* **Total CPU** -  The total number of CPU seconds used by the background operation. A small portion of this metric contributes to determine if the capacity exceeds the total number of CPU seconds for the current timepoint window.
+
+* **Timepoint CPU** - This metric is the *total CPU* metric divided by 2,880, and is used to determine how much CPU the background operation contributes to this timepoint.  
+
 ### Release notes
 
 The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
