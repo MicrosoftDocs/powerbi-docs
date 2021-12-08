@@ -152,7 +152,7 @@ For more information, visit [Subscribe to a paginated report in the Power BI ser
 
 Power BI administrators have levels of control over subscriptions. The following links point to the relevant sections of the admin portal: 
 
-- [Enable email subscriptions](../admin/service-admin-portal#email-subscriptions) for all members of the organization. 
+- [Enable email subscriptions](../admin/service-admin-portal.md) for all members of the organization. 
 
 - Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal#invite-external-users-to-your-organization). 
 
