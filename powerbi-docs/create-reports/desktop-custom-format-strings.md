@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/19/2021
+ms.date: 12/07/2021
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
@@ -70,7 +70,7 @@ Here are examples of different formats for different value strings:
 
 |Values   | Format String | Format String  | Format String  | Format String  |
 | --- | --- | --- | --- | --- |
-| **0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
+| |**0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
 | **-1.234** | -1.2 | &quot;&quot; | -1.2 | &quot;&quot; |
 | **0** | &quot;Zero&quot; | &quot;&quot; | &quot;&quot; | 0.00 |
 | **1.234** | 1.23 | 1.23 | 1.23 | 1.23 |
