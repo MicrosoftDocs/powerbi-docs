@@ -207,6 +207,7 @@ sections:
           In what Azure regions is PBI Embedded available?
         answer: |
           Power BI Embedded is non-regional which means it is not dependent on any specific Azure region.
+          
           See [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=all) for regional information about all Azure products.
           
       - question: |
