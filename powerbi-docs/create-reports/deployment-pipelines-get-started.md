@@ -61,47 +61,22 @@ You can create a pipeline from an existing workspace, providing you're the admin
 >[!NOTE]
 >If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
-## Step 2 - Assign a workspace to a deployment pipeline
+## Step 2 - Assign a workspace
 
 After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
-You can only assign *one workspace* to a deployment pipeline. Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
-
-Follow these steps to assign a workspace in a deployment pipeline:
-
-1. In the newly created deployment pipeline, select **Assign a workspace**.
-
-2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
-
-    >[!NOTE]
-    >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
-
-3. Select the stage you want to assign the workspace to.
-
-### Workspace assignment limitations
-
-* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
-
-* You must be an admin of the workspace.
-
-* The workspace is not assigned to any other pipeline.
-
-* The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
-
-* You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
-
-* You cannot assign a [template app](./../connect-data/service-template-apps-create.md#create-the-template-workspace) workspace.
-
-* You can only assign one workspace to each deployment pipeline.
+Follow the instructions in the link to [assign a workspace to a pipeline](deployment-pipelines-assign.md#assign-a-workspace-to-any-vacant-pipeline-stage).
 
 >[!NOTE]
->Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
+>If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
 
 ## Step 3 - Deploy to an empty stage
 
 Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
 You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines) to programmatically perform deployments. For more information, see [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
+
+If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
 
 >[!NOTE]
 >To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
@@ -197,6 +172,8 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
+
 * Rules for dataflows that have other dataflows as sources, are not supported.
 
 * Data source rules for common data model (CDM) folders in a dataflow, are not supported.
@@ -287,6 +264,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 
 >[!div class="nextstepaction"]
 >[Introduction to deployment pipelines](deployment-pipelines-overview.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

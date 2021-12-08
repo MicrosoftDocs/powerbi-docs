@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/01/2021
+ms.date: 11/18/2021
 LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
+
+[!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
+
 QR codes in Power BI can connect anything in the real world directly to related BI information - no navigation or search needed.
 
 You can create a QR code in the Power BI service for any report, even for a report you can't edit. Then you place the QR code in a key location. For example, you could paste it in an email, or print it out and place it in a specific location. 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 12/02/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -40,6 +40,8 @@ For more information, take a look at the following resources:
 * [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
 * [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
 * [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob storage and Table storage)
+
+And for more information about Azure resources available in Power BI, see the **Azure data sources** section in [data sources in Power BI Desktop](desktop-data-sources.md).
 
 ## Get complex (and ahead) using Azure Services and Power BI
 

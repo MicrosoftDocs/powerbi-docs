@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/04/2021 #Required; mm/dd/yyyy format.
+  ms.date: 12/01/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -23,35 +23,35 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get Power BI Desktop
+    - title: Download Power BI Desktop for free
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Incremental refresh for datasets
+    - title: Create automated partitions with incremental dataset refresh
       itemType: concept
       url: connect-data/incremental-refresh-overview.md
-    # Card
-    - title: External tools in Power BI Desktop
-      itemType: reference
-      url: transform-model/desktop-external-tools.md
     # Card
     - title: Embed a Power BI report in an application
       itemType: tutorial
       url: developer/embedded/embed-customer-app.md
     # Card
-    - title: Introducing Power BI Premium Gen2
-      itemType: whats-new
-      url: admin/service-premium-gen2-what-is.md
+    - title: Explore the Power BI Embedded Analytics Playground
+      itemType: get-started
+      url: https://go.microsoft.com/fwlink/?linkid=848279
     # Card
-    - title: Find anomalies & trends with Insights (preview)
-      itemType: overview
-      url: create-reports/insights.md
-    # Card
-    - title: Stay on top of your goals (preview)
+    - title: Use the Gen2 metrics app
       itemType: how-to-guide
-      url: create-reports/service-goals-check-in.md
+      url: admin/service-premium-gen2-metrics-app.md
     # Card
-    - title: Power BI on Microsoft Learn 
+    - title: Get your data on the go with Power BI mobile apps
+      itemType: learn
+      url: /learn/modules/explore-power-bi-mobile-apps
+    # Card
+    - title: Build report navigation quickly with page and button navigators
+      itemType: how-to-guide
+      url: create-reports/button-navigators.md
+    # Card
+    - title: Study Power BI start to finish on Microsoft Learn 
       itemType: learn
       url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
@@ -116,7 +116,7 @@ conceptualContent:
         - url: developer/visuals/index.yml
           itemType: overview
           text: Power BI Embedded Generation 2
-        - url: developer/embedded/power-bi-embedded-generation-2.md
+        - url: developer/visuals/develop-circle-card.md
           itemType: overview
           text: Develop your own Power BI visual
       # footerLink (optional)
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: collaborate-share/service-teams-notifications.md
+        - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
-          text: Get notifications in Teams about Power BI activity
+          text: Add the Power BI app to Microsoft Teams
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -260,9 +260,9 @@ conceptualContent:
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
           text: Explore dashboards and reports
-        - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-          itemType: how-to-guide
-          text: View on-premises reports
+        - url: /learn/modules/explore-power-bi-mobile-apps
+          itemType: learn
+          text: Get data on the go with the mobile apps
       # footerLink (optional)
       footerLink:
         url: consumer/mobile/index.yml

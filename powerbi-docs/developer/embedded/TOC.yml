@@ -28,6 +28,8 @@
     items:
     - name: "Capacity and SKUs in Power BI embedded analytics"
       href: embedded-capacity.md
+    - name: "Plan your transition to Power BI Embedded Gen2"
+      href: embedded-transition-gen1-to-gen2.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
     - name: "Embedded analytics application tokens"
@@ -62,6 +64,8 @@
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Configure credentials"
+      href: configure-credentials.md      
     - name: "Embed in Salesforce"
       href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"

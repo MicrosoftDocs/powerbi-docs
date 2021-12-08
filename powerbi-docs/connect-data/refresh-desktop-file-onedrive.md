@@ -28,7 +28,7 @@ When you import your Power BI Desktop file from OneDrive or SharePoint Online, y
 When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources and query for updated data. Then, it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive or SharePoint Online.
 
 ## What’s supported?
-Power BI supports **Refresh** and **Schedule refresh** for datasets created from Power PI Desktop files imported from a local drive where you use **Get data** or **Power Query Editor** to connect to and load data from the following data sources.
+Power BI supports **Refresh** and **Schedule refresh** for datasets created from Power BI Desktop files imported from a local drive where you use **Get data** or **Power Query Editor** to connect to and load data from the following data sources.
 
 > [!NOTE]
 > Onedrive refresh for live connection datasets is supported. However, changing the live connection dataset, from one dataset to another in an already published report, is not supported in the OneDrive refresh scenario.

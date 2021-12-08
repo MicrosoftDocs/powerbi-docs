@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 10/18/2021
+  ms.date: 11/08/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Gen2 FAQ
@@ -62,7 +62,7 @@ sections:
       - question: |
           What happens to traffic during overload if I don't autoscale?
         answer: |
-          If a capacity’s utilization exceeded a 100% and it cannot use autoscale, due to being turned off or already at its maximum v-core utilization value, the capacity enters into a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds, while overloads smaller than 10% are allowed. 
+          If a capacity’s utilization exceeded a 100% and it cannot use autoscale, due to being turned off or already at its maximum v-core utilization value, the capacity enters into a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds. 
           
           The capacity stays in *interactive request delay* mode if the previous evaluation is at greater than 100% resource usage.
           
@@ -78,6 +78,7 @@ sections:
           * Datasets workload - scheduled refresh, on-demand refresh, background query (after refresh)
           * Dataflows workload - scheduled dataflow refresh
           * Paginated reports workload - data driven subscriptions renders
+          * Export report to file API calls
           * AI workloads
           
       - question: |

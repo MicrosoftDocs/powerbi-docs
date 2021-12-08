@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 06/22/2021
+ms.date: 12/06/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
-In Power BI, the term *content* refers to apps, dashboards, and reports. Content is created by Power BI *designers*, who share it with colleagues like you. Your content is accessible and viewable in the Power BI service, and the best place to start working in Power BI is from Power BI **Home**.
+In Power BI, the term *content* refers to apps, dashboards, reports, and more. Content is created by Power BI *designers*, who share it with colleagues like you. Your content is accessible and viewable in the Power BI service, and the best place to start working in Power BI is from Power BI **Home**.
 
 ## Explore Power BI Home
 After you sign in to the Power BI service, select **Home** from the navigation pane. 
@@ -21,20 +21,20 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 ![A screenshot of the nav pane for the Power BI service and Home selected.](media/end-user-home/power-bi-select-home.png)
 
 
-Power BI displays your Home canvas, as shown in the following image. The layout and content on Home is different for every user. Later in this article, we'll see Home for a brand new user and for a very experienced user. 
+Power BI displays your Home canvas, as shown in the following image. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often.  Your Home view will also depend on the layout you've selected.  The image below is using the *Expanded* view.  The *Simplified* view displays less categories of content; you'll see only **Recommended** and tabs for **Recents, Favorites, My apps** and a link to **Show more**.  
  
-![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-canvas.png)
+![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-experienced.png)
 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
-- The Home canvas displays and organizes your favorite, frequent, recent, and recommended content, along with apps and workspaces.  If you're new to the Power BI service, you'll also have a Getting started section. Select a card, or an item in a list, to open it.
-- Along the left side, is a navigation pane, referred to as the nav pane. Select ![Icon to expand nav pane.](media/end-user-home/power-bi-expand.png) to expand the nav pane. On the nav pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
+- The Home canvas displays and organizes your favorite, frequent, recent, featured, and recommended content, along with apps and workspaces.  If you're new to the Power BI service, you'll also have a Getting started section. Select a card, or an item in a list, to open it.
+- Along the left side, is a navigation pane, referred to as the nav pane. Select ![Icon to expand nav pane.](media/end-user-home/power-bi-expand.png) to expand the nav pane. On the nav pane, your same content is organized a little differently, by Favorites, Recent, Apps, Datasets, and Shared with me. From here, you can view lists of content and select the one to open.
 - In the upper right corner, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
 
 ## Home canvas
-On the Home canvas, you can view all the content that you have permission to use. Your Home canvas also updates with recommended content and learning resources. At first, you might not have much content on your Home canvas, but that will change as you start to use Power BI with your colleagues.
+On the Home canvas, you can view all the content that you have permission to use. Your Home canvas also updates with recommended content, featured content, and learning resources. At first, you might not have much content on your Home canvas, but that will change as you start to use Power BI with your colleagues.
 
 ![A screenshot of the Welcome screen for a new user of the Power BI service.](media/end-user-home/power-bi-home-new-user.png)
 
@@ -42,29 +42,22 @@ On the Home canvas, you can view all the content that you have permission to use
  
 As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following.
 
-![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-experienced-user.png)
+:::image type="content" source="media/end-user-home/power-bi-experienced.png" alt-text="A screenshot of the Welcome screen for the Power BI service.":::
 
  
 The next few topics take a closer look at Home for an experienced user, from top to bottom. Your Home landing page may look different. Power BI optimizes Home based on your usage and settings.
 
 ## Most important content at your fingertips
 
-### Favorite dashboards
-This top section will display tiles from your favorite dashboard. The Power BI service selects from dashboards that you use the most and have marked as [a favorite](end-user-favorite.md).
-
-![Favorite dashboard section.](./media/end-user-home/power-bi-dashboards.png)
-
-Alternately, decide for yourself which dashboard to display here. Open a dashboard and tag it as [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
-
 ### Favorites and frequents
-This next section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
+This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
 
 ![Favorites flyout.](./media/end-user-home/power-bi-home-favorites.png)
 
 
 
 ### Featured
-The **Featured** section contains content that your administrator has *promoted* to your Home. Typically, this is content that is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.
+The **Featured** section contains content that your administrator or colleagues have *promoted* to your Home. Typically, this is content that is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.  Unless it has been disabled by your administrator, any user with Admin, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md)
 
 
 ![featured content, promoted by admin.](./media/end-user-home/power-bi-home-featured.png)

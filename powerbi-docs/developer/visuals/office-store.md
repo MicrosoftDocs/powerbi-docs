@@ -12,7 +12,7 @@ ms.date: 09/25/2021
 
 # Publish Power BI visuals to Partner Center
 
-Once you have created your Power BI visual, you may want to publish it to AppSource for others to discover and use. For a detailed explanation of how to create a Power BI visual offer, see [Plan a Power BI visual offer](/azure/marketplace/marketplace-power-bi-visual.md).
+Once you have created your Power BI visual, you may want to publish it to AppSource for others to discover and use. For a detailed explanation of how to create a Power BI visual offer, see [Plan a Power BI visual offer](/azure/marketplace/marketplace-power-bi-visual).
 
 ## What is AppSource?
 
@@ -79,7 +79,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
     :::image type="content" source="media/office-store/offer-id-visual.png" alt-text="Screenshot of pop up window for PBI visual name.":::
 
-6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, and if you want to [certify](power-bi-custom-visuals-certified.md) your visual. Provide details for [customer leads](https://aka.ms/PBIvisualconfiguringcustomerleads).
+6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, and if you want to [certify](power-bi-custom-visuals-certified.md) your visual. Provide details for [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).
     >[!TIP]
     >The Power BI certification process takes time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
 

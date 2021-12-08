@@ -7,15 +7,17 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/26/2021
+ms.date: 11/30/2021
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service
 
 Many of us have one dashboard that we visit more than any others. It might be the dashboard we use to run our business. Or, it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 
+This article addresses how to select your one featured dashboard. Power BI automatically displays your featured dashboard each time you open the Power BI service. For information about a different functionality (that has a similar name), *featured content on Home*, please read [Explore Power BI Home](end-user-home.md)
+
 ## Create a featured dashboard
-When you set a dashboard as *featured*, each time you open the Power BI service, it opens with that dashboard displayed. 
+When you set a dashboard as *featured*, each time you open the Power BI service from your browser (app.powerbi.com), it opens with that dashboard displayed. If you're opening Power BI from an email link, or any other shared URL, Power BI will open to the dashboard or report selected by the content owner.  
 
 ![Set as featured icon](./media/end-user-featured/power-bi-dropbox.png)
 

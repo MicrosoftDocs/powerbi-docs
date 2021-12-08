@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2021
+ms.date: 12/06/2021
 ---
 
 # Change log for Power BI Report Server
@@ -18,18 +18,30 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## September 2021
 - **Power BI Report Server**
+    - *Version: 1.12.7977.29537 (Build 15.0.1107.165), Released: November 9, 2021*
+        - Bug fixes
+            - Fixed issue blocking upload of CSV, XLS, and XLSB files.
+            - Fixed security issue related to certain PBIX files.
+            - Fixed issue where usernames with commas displayed oddly in new portal.
+            - Fixed issue with data parameters not displaying correctly.
+            - Fixed issue with download button not visible when viewing Excel workbooks.
+            - Fixed issue where PBIX data sources couldn't be edited if more than one existed.
+            - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
     - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
         - Features
-            - Updated support for Power BI Reports including those with small multiples.
+            - Updated support for Power BI reports including those with small multiples.
             - Updated Power BI Report Server portal experience as default experience.
         - Bug fixes
         - Deprecated support for Internet Explorer.
-
+        
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.97.2222.0 (September 2021), Released: December 6, 2021*
+        - Bug fix for the progress dialog: now import/refresh progress will be shown after import/refresh.
+        - Bug fix for table tooltips: now last refreshed time information will be available from table tooltips outside of the model view.
     - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
         - Contains changes required for connection with Power BI Report Server (September 2021).
         - Updated gallery view for custom visuals.
-        - Bug fixes
+        - Bug fixes.
 
 ## May 2021
 - **Power BI Report Server**
@@ -63,7 +75,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue with URL filters causing PBIX reports to not load.
     - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
         - Features
-            - New Icons releate to Power BI and Power BI reports.
+            - New Icons relate to Power BI and Power BI reports.
             - Custom Visual API shipped with release - version 3.5.0
             - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
         - Bug fixes
@@ -112,7 +124,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - **Power BI Desktop (optimized for Power BI Report Server)**
    - *Version: 2.86.3481.0 (October 2020), Released: March 31, 2021*
         - Bug fixes
-   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2021*
+   - *Version: 2.86.2841.0 (October 2020), Released: February 5, 2021*
         - Bug fixes
    - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
         - Bug fixes

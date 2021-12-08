@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 11/29/2021
 ---
 # Browser support for Power BI Report Server
 Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
@@ -22,7 +22,6 @@ The following is the current list of browsers supported for the web portal.
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
 

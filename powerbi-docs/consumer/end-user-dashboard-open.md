@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/18/2021
+ms.date: 12/02/2021
 LocalizationGroup: Dashboards
 ms.custom:  
 ---
@@ -39,7 +39,7 @@ Once you've identified a dashboard, open it by selecting it and the dashboard wi
 
 You may find dashboards in all of the containers in the nav pane. 
 
-![Video showing all the locations where dashboards may be found](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
+![Video showing all the locations where dashboards may be found](media/end-user-dashboard-open/power-bi-open-dashboard.gif)
 
 - **Home** 
 - **Favorites** - if you've [set a dashboard as a favorite](end-user-favorite.md)

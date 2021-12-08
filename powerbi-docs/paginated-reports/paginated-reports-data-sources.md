@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2021
+ms.date: 11/16/2021
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -75,6 +75,10 @@ For Azure SQL Database data sources, here are the supported authentication types
 
 For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source is connecting to needs to have [Azure Active Directory authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Azure Active Directory generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
   
+## Considerations and limitations
+
+- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-in-excel.md#considerations-and-limitations) to support Power BI datasets in Premium and non-Premium workspaces.
+
 ## Next steps
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
