@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Troubleshooting Power BI subscriptions
 
-Here are some common issues that may come up when you're subscribing yourself or others to a dashboard or report. Please also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations)
+Here are some common issues that may come up when you're subscribing yourself or others to a dashboard or report. Please also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations-and-limitations)
 
 If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/). 
 
@@ -113,7 +113,7 @@ If you choose to include a link, ensure that all users also have access to the c
 :::image type="content" source="media/end-user-subscribe/power-bi-troubleshoot.png" alt-text="Screenshot showing 2 options selected under the heading Also include.":::
 
 ### I removed access for others, but they can still open the report or dashboard
-Clearing the **Access to this report/dashboard** option does not revoke access for users who have already been granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a report](../collaborate-share/service-share-dashboards#manage-permissions-to-a-dashboard).
+Clearing the **Access to this report/dashboard** option does not revoke access for users who have already been granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-dashboard) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-report).
 
 ### I can't tell if access is enabled or disabled
 The option to provide **Access to this report/dashboard** always shows as enabled when you edit an existing subscription. If you clear this option and save the subscription, this state is saved. However, if you edit the subscription again, the option will be checked again by default. 
@@ -128,7 +128,7 @@ When you receive the subscription email, it includes a link to **Go to report or
 
 The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
     - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
-    - The report has fewer than 20 pages (see [this issue described above](#my-subscription-has-over-20-pages).
+    - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-over-20-pages).
     - The attachment file is under 25 MB in size.
  
 ## Which Power BI features are not supported in subscriptions?
