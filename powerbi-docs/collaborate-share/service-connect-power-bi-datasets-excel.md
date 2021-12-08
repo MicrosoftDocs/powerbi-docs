@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 12/08/2021
 LocalizationGroup: Share your work
 ---
 # Connect Excel to Power BI datasets
@@ -16,11 +16,10 @@ Microsoft Excel is the most common data analysis tool for information workers an
 
 In many organizations, data sits in multiple silos, including in Excel workbooks, across the enterprise, making it hard for users to find the data they need. This problem can result in potential business losses. 
 
-THere are several ways for you to discover and connect to centralized and secure data shared with you in Power BI from wherever you work, including Microsoft Excel and Microsoft Teams. When you can securely access data in the tools you feel most comfortable working in, you can quickly derive insights from your data, saving valuable time and fostering an enhanced data culture. 
+There are several ways for you to discover and connect to centralized and secure data shared with you in Power BI from wherever you work, including Microsoft Excel and Microsoft Teams. When you can securely access data in the tools you feel most comfortable working in, you can quickly derive insights from your data, saving valuable time and fostering an enhanced data culture. 
 
 Microsoft Excel and Power BI together combine the versatility of Excel with the unified governance and security standards of Power BI to ensure workers are using the right data securely, driving better decision-making to achieve business objectives.
 
-Of course, you could [export data from Power BI to Excel](../visuals/power-bi-visualization-export-data.md). But the workbook wouldn't be connected to the Power BI dataset that it came from. It would be yet another disconnected, siloed Excel workbook that doesn't contain the freshest data. So avoid creating data silos: Connect Excel to Power BI instead.
 
 ## Access Power BI datasets in Excel 
 
