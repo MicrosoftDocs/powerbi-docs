@@ -1,6 +1,6 @@
 ---
 title: Connect Excel to Power BI datasets 
-description: Power BI makes it easy for you to discover and connect to centralized and secure data shared with you in your organization from wherever you work, including Microsoft Excel and Microsoft Teams.
+description: Power BI makes it easy for you to discover and connect to centralized and secure data from wherever you work, including Microsoft Excel and Microsoft Teams.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
