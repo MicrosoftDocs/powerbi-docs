@@ -14,16 +14,13 @@ LocalizationGroup: Share your work
 
 Microsoft Excel is the most common data analysis tool for information workers and organizations across the globe. Part of Excel’s appeal is that you can start your data journey in a few clicks, with quick calculations, data visualizations, and ad-hoc analysis. 
 
-In many organizations, data sits in multiple silos, including in Excel workbooks, across the enterprise, making it hard for users to find the data they need. This problem can result in potential business losses. 
+In many organizations, data sits in multiple silos, including in Excel workbooks, across the enterprise, making it hard for users to find the data they need. This situation can result in potential business losses. 
 
-There are several ways for you to discover and connect to centralized and secure data shared with you in Power BI from wherever you work, including Microsoft Excel and Microsoft Teams. When you can securely access data in the tools you feel most comfortable working in, you can quickly derive insights from your data, saving valuable time and fostering an enhanced data culture. 
-
-Microsoft Excel and Power BI together combine the versatility of Excel with the unified governance and security standards of Power BI to ensure workers are using the right data securely, driving better decision-making to achieve business objectives.
-
+There are several ways to discover and connect to centralized, secure data in Power BI from wherever you work, including Microsoft Excel and Microsoft Teams. Microsoft Excel and Power BI together combine the versatility of Excel with the unified governance and security standards of Power BI. This pairing ensures that workers use the right data securely, make better decisions to achieve business objectives, and foster an enhanced data culture..
 
 ## Access Power BI datasets in Excel 
 
-When you access Power BI datasets in Excel, properties such as endorsement labels and Microsoft Information Protection labels are inherited by the datasets in Excel, so the data stays secure in Excel. Datasets tagged with the labels Certified or Promoted are more likely to be of better quality and more authoritative than datasets without a label. 
+When you access Power BI datasets in Excel, properties such as endorsement labels and Microsoft Information Protection labels are inherited by the datasets in Excel, so the data stays secure in Excel. Datasets tagged with the labels Certified or Promoted are likely to be of better quality and more authoritative than datasets without a label.
 
 You can connect to Power BI datasets in Excel by starting in the Power BI service or in Excel for the web or the Excel desktop app.  
 
