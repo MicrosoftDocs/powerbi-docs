@@ -29,8 +29,6 @@ By using the base URL, resources and operations can be appended based on paramet
 
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
 
-
-
 ## Requirements
 
 - GroupId and DatasetId are required.
@@ -83,14 +81,14 @@ Specifying parameters is not required. If not specified, the default is applied.
 |---------|---------|---------|---------|
 |`notifyOption`     |  NotifyOption       |    `none`     |    Mail notification options (`success` and/or `failure`, or `none`)     |
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. <br>`Add` type is not supported.      |
-|`commitMode`*     |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
+|`commitMode`<sup>[1](#commit)</sup>     |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads on which to run processing commands in parallel. This value aligned with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation will retry before failing.      |
 |`objects`     |    Array      |    Process the entire dataset      |    An array of objects to be processed. Each object includes `table` when processing the entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset is refreshed.      |
 |`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, `applyRefreshPolicy` will determine if the policy is applied or not. If the policy is not applied, a **process full** operation will leave partition definitions unchanged and all partitions in the table will be fully refreshed. Modes are `true` or `false`.  |
-|`effectiveDate`    |    Date     |    current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
+|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
 
-\* `commitMode` is equal to `partialBatch`. It's used when doing an initial load of large datasets that could take hours. If the refresh operation fails after successfully committing one or more batches, the successfully committed batches will remain committed and not rolled back.
+<a name="commit">1</a> - `commitMode` is equal to `partialBatch`. It's used when doing an initial load of large datasets that could take hours. If the refresh operation fails after successfully committing one or more batches, the successfully committed batches will remain committed and not rolled back.
 
 ### Response
 
