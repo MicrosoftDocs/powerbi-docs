@@ -1,6 +1,6 @@
 ---
 title: Install the AS Engine App (preview)
-description: Usage guide for the Template App that visualizes Dataset activity from Analysis Services
+description: Installation guide for the Template App that visualizes Dataset activity from Analysis Services
 author: Bhavik-MSFT
 ms.author: bhmerc
 ms.reviewer: ''
@@ -32,7 +32,7 @@ To install the AS Engine app, follow these steps:
 1. If prompted, sign in to AppSource using your work or school account and complete the registration screen. The app will take you to the Power BI Service to complete the process. Select **Install** to continue.
 
 1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
-    ![Install AS Engine - Connect your own data](media/as-engine/InstallASEngine.png)
+    ![Install AS Engine - Connect your own data](media/install-as-engine-app/InstallASEngine.png)
 
 3. In the first window, fill in the following fields:
 
