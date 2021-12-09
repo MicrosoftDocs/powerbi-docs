@@ -165,7 +165,7 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-### GET /refreshes/<refreshId>
+### GET /refreshes/\<refreshId\>
 
 To check the status of a refresh operation, use the GET verb on the refreshId. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
@@ -192,7 +192,7 @@ To check the status of a refresh operation, use the GET verb on the refreshId. H
 
 ```
 
-### DELETE /refreshes/<refreshId>
+### DELETE /refreshes/\<refreshId\>
 
 To cancel an in-progress refresh operation, use the DELETE verb on the refresh ID.
 
