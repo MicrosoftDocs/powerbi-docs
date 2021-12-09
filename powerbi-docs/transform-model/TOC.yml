@@ -65,14 +65,14 @@
     items: 
     - name: "Using Azure Log Analytics in Power BI (preview)"
       href: log-analytics/desktop-log-analytics-overview.md
-    - name: "Using the Log Analytics for Power BI Datasets Template App (preview)"
-      href: log-analytics/desktop-loganalytics-reportguide-datasets.md
-    - name: "Using the Log Analytics for Power BI Datasets Template App (preview)"
-      href: log-analytics/install-as-engine-app.md
     - name: "Configuring Azure Log Analytics in Power BI (preview)"
       href: log-analytics/desktop-log-analytics-configure.md
     - name: "Azure Log Analytics in Power BI - FAQ (preview)"
-      href: log-analytics/desktop-log-analytics-faq.md             
+      href: log-analytics/desktop-log-analytics-faq.md
+    - name: "Installing the Log Analytics for Power BI Datasets Template App (preview)"
+      href: log-analytics/install-as-engine-app.md   
+    - name: "Using the Log Analytics for Power BI Datasets Template App (preview)"
+      href: log-analytics/desktop-loganalytics-reportguide-datasets.md
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
