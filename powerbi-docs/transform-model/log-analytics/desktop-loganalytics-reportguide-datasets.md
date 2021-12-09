@@ -141,7 +141,7 @@ Also, there is back button on top left corner to go back to previous page and in
 
 Every page has a filter button below the navigation bar which you can click to open the pop-up filter panel and make selections.
 
-![Filters.png](media/desktop-loganalytics-reportguide-datasets/filters.png)
+![Screenshot of filter button.](media/desktop-loganalytics-reportguide-datasets/filters.png)
 
 The current values of the filters are displayed in smart narrative adjacent to the filters button. You can clear all the slicers using the "Clear" button on the top left corner or close the window using ‘X’ button on top right corner.
 
@@ -167,7 +167,7 @@ The current values of the filters are displayed in smart narrative adjacent to t
 * [User Activities](#page-user-activities)
 * [User Detail](#drill-through-page-user-detail)
 * [Error Summary](#page-error-summary)
-* [Error Detail](#drill-through-page-error-detail)
+* [Error Detail](#drill-through-page--error-detail)
 * [Help](#help)
 
 ### Page: Workspace Summary
@@ -355,7 +355,7 @@ This page provides a help summary of different features throughout the app. It a
  
 * Log Analytics Query Limits
 
-  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits) 
+  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](/azure/data-explorer/kusto/concepts/querylimits) 
 
   * If template app refresh is failing due to above data limits, you can configure Pagination Hours parameter. Setting a lower value here will lower the amount of data retrieved from Log Analytics per call by increasing the number of calls. 
  
