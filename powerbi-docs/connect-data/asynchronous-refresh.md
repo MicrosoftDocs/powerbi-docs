@@ -207,4 +207,8 @@ Here's a C# code sample to get you started, [RestApiSample on GitHub](https://gi
 1. Clone or download the repo. Open the RestApiSample solution.
 1. Find the line **client.BaseAddress = …** and provide your [base URL](#base-url).
 
-The code sample uses [service principal](#service-principal) authentication.
+The code sample uses service principal authentication.
+
+## See also
+
+[Using the Power BI REST APIs](/rest/api/power-bi/)  
