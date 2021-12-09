@@ -180,7 +180,7 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 
 ## Considerations and limitations 
 
-For help with troubleshooting for the subscriptions feature, see "Troubleshoot subscriptions".  
+For help with troubleshooting for the subscriptions feature, see [Troubleshoot subscriptions](service-troubleshoot-subscribe.md).  
 
 **General**
   
