@@ -44,44 +44,44 @@ This page provides an overview of the capacity performance. It's divided into th
 
 At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
+:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Gen2 metrics app, with the capacity I D selector highlighted.":::
+
 #### Weekly trendlines
 
 The top four visuals, titled *Weekly trendlines*, summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks. Here's a breakdown of each visual:
 
-* **CPU** - Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
+* **CPU** - Displays the total CPU power your capacity used over the past week to process Power BI reports, dashboards and datasets.
 
-* **Active Artifacts** - Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
+    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-cpu.png" alt-text="A screenshot showing the C P U tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
 
-* **Active Users** - Displays the number of users that used the capacity during the past four weeks.
+* **Duration** - Displays the 
 
-* **Cores** - Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
+    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-duration.png" alt-text="A screenshot showing the duration tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
+* **Operations** - Displays the number of users that used the capacity during the past four weeks.
+
+    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-operations.png" alt-text="A screenshot showing the operations tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
+* **Users** - Displays the number of distinct users who used the capacity during each seven day period.
+
+    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-users.png" alt-text="A screenshot showing the users tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
 
 #### Artifacts
 
-The artifacts visual is divided into three sections. The first section includes a matrix table, the second is made up of a stacked column table, and the third section includes more visual aids.
+The artifacts visual is a stacked column table that displays the top results per Power BI item during the past two weeks. You can drill down to an individual day to identify daily patterns using an hourly view.
 
-* **Matrix table** - The matrix visual displays metrics for each Power BI item on the capacity. Items in the *Full ID* column are composed of a string that identifies them. The string's syntax is `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
+:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-artifacts.png" alt-text="A screenshot showing the artifact visual, in the overview page, in the Power BI Gen2 metrics app.":::
 
-    Here are a few examples of ways you can sort this visual:
+Here are a few examples of ways you can sort this visual:
 
-    |Sort by          |Result   |
-    |-----------------|---------|
-    |CPU              |View the top CPUs that consumed Power BI items over the past two weeks |
-    |Duration         |View the Power BI items that need the longest processing time during the past two weeks |
-    |Users            |View the most popular Power BI items |
-    |Memory           |View the Power BI items that have the largest memory footprint |
-    |Throttling score |View the Power BI items that were affected the most due to overload penalty |
-    |Performance delta|View the Power BI items that were affected the most due to performance degradation |
-
-* **Stacked column table** - The stacked column table displays three values: *CPU*, *duration* (processing time) and *users*. It shows the top results for these values per Power BI item during the past two weeks. You can drill down to an individual day to identify daily patterns using an hourly view. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.  
-
-* **Visual aids** - The three visuals at the bottom of the page are *visual aids* that respond to your interactions with the visuals in the other sections. They show three important auxiliary metrics:
-
-    * *Utilization* - Overload impact score. Showing a chart with a score representing the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
-
-    * *Memory* - Memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten-minute time sample in the past two weeks.
-
-    * *Degradation* - Performance profile changes. This visual shows the percentage of *fast*, *medium*, and *slow* operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for *datasets* on the entire capacity.
+|Sort by            |Result   |
+|-------------------|---------|
+|CPU                |View the top CPUs that consumed Power BI items over the past two weeks |
+|Duration           |View the Power BI items that need the longest processing time during the past two weeks |
+|Users              |View the most popular Power BI items |
+|Artifact size      |  |
+|Overloaded minutes |  |
+|Performance delta  |View the Power BI items that were affected the most due to performance degradation |
 
 ### Evidence
 
@@ -144,12 +144,14 @@ At the top of the page there's a multi-selection pivot allowing you to focus on 
 
 This page provides a detailed view of every operation resulted in CPU activity in a given timepoint. Use this page to understand which interactive and background operations contributed the most to CPU usage.
 
->[!TIP]
->You can only get to this page by using the drill through feature from the visual in the top right corner of the *Overview* and *Evidence* pages.
+To get to this page follow these instructions:
+
+1. In the **Overview** page, right-click the  
+You can only get to this page by using the drill through feature from the visual in the top right corner of the *Overview* and *Evidence* pages.
 
 When the total combined CPU for interactive and background operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
 
-* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added and the total CPUs will be higher for the next 24 hours.
+* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added for the next 24 hours, and will be shown as an increased value in the CPU limit line.
 
     >[!NOTE]
     >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
@@ -200,11 +202,11 @@ A table showing every interactive operation that contributed CPU usage in the ti
 
 * **User** - The name of the user attributed to the interactive operation.
 
-* **Duration** - The number of chronological seconds the interactive operation took to complete.
+* **Duration** - The number of seconds the interactive operation took to complete.
 
 * **CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
 
-* **Throttling** - The number of chronological seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
+* **Throttling** - The number of seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
 
 * **% Of Capacity** - Interactive CPU operations as a proportion of the overall capacity allowance.
 
@@ -225,7 +227,7 @@ A table showing every background operation that contributed CPU usage to the tim
     >[!NOTE]
     >CPU usage for failed operations is counted when determining if the capacity is in overload.
 
-* **Duration** - The number of chronological seconds the background operation took to complete.
+* **Duration** - The number of seconds the background operation took to complete.
 
 * **Total CPU** -  The total number of CPU seconds used by the background operation. A small portion of this metric contributes to determine if the capacity exceeds the total number of CPU seconds for the current timepoint window.
 
