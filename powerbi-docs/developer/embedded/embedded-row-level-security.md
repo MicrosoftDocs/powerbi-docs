@@ -142,7 +142,7 @@ An [On-premises data gateway](../../connect-data/service-gateway-onprem.md) is u
 
 Roles can be provided with the identity in an embed token. If no role is provided, the username that was provided can be used to resolve the associated roles.
 
-### Using the CustomData feature
+## Using the CustomData feature
 
 The CustomData feature allows you to add a Row filter by passing a free text (string) using the CustomData connection string property. Unlike users and roles, CustomData can't be set within a .pbix file.
 
@@ -153,7 +153,7 @@ The CustomData feature is part of token generation functionality for dashboard, 
 > [!NOTE]
 > When generating a token with the CustomData feature, you must specify a username of no more than 256 characters.
 
-#### CustomData SDK Additions
+### CustomData SDK additions
 
 The CustomData string property was added to our effective identity in the token generation scenario.
 
@@ -168,7 +168,7 @@ The identity can be created with custom data using the following call:
 public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
 ```
 
-#### CustomData SDK Usage
+### CustomData SDK usage
 
 If you're calling the REST API, you can add custom data inside each identity, for example:
 
