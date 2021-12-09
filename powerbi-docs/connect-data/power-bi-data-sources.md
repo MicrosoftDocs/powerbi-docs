@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/22/2021
+ms.date: 12/09/2021
 ---
 
 # Power BI data sources
@@ -22,11 +22,16 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
 | Access database | Yes | Yes | No | Yes <sup>1</sup> | Yes | Yes |
+| Actian | Yes | Yes | Yes | Yes | No | No |
 | ActiveDirectory | Yes | Yes | No | Yes | Yes | Yes |
 | Adobe Analytics | Yes | Yes | No | No | No | No |
+| Amazon Athena | Yes | Yes | Yes | Yes | No | No |
 | Amazon Redshift | Yes | Yes | Yes | Yes | No | Yes |
+| Anaplan | Yes | Yes | No | Yes | No | No |
 | appFigures | Yes | Yes | No | No | No | No |
+| AssembleViews | Yes | Yes | No | Yes | No | No |
 | AtScale cubes | Yes | Yes | Yes | Yes | No | No |
+| Autonomy Data Analytics | Yes | Yes | No | Yes | No | No |
 | Azure Analysis Services | Yes | Yes | Yes | No | No | No |
 | Azure Blob Storage | Yes | Yes | No | Yes | No | Yes |
 | Azure Cosmos DB | Yes | Yes | No | No | No | No |
@@ -41,9 +46,13 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
 | Azure SQL Database | Yes | Yes | Yes | Yes  | No | Yes |
 | Azure Synapse | Yes | Yes | Yes | Yes  | No | Yes |
+| Azure Synapse Analytics workspaces | Yes | Yes | No | Yes | No | No |
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
+| Bloomberg Data and Analytics | Yes | Yes | No | Yes | No | No |
+| BQE Core | Yes | Yes | No | Yes | No | No |
+
 
 
 ## Data sources C-D
@@ -51,7 +60,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 |---|---|---|---|---|---|---|
 | Data Virtuality LDW | Yes | Yes | Yes | Yes | Yes | No |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
-| Microsoft Dataverse | Yes | Yes | Yes | No | No | Yes |
+| Microsoft Dataverse | Yes | Yes | Yes | Yes | No | Yes |
+| Delta Sharing | Yes | Yes | No | Yes | No | No |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
 | Dremio | Yes | Yes | Yes | Yes | Yes | No |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
@@ -67,6 +77,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 |---|---|---|---|---|---|---|
 | Emigo Data Source | Yes | Yes | No | No | No | No |
 | Entersoft Business Suite | Yes | Yes | No | No | No | No |
+| EQuIS | Yes | Yes | No | Yes | No | No |
 | Essbase | Yes | Yes | Yes | Yes | Yes | No |
 | Exasol | Yes | Yes | Yes | Yes | Yes | No |
 | Excel | Yes <sup>2</sup> | Yes <sup>2</sup> | No | Yes <sup>2</sup> | No <sup>3</sup> | Yes |
@@ -75,6 +86,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
+| Google Sheets | Yes | Yes | No | Yes | No | No |
+
 
 
 
@@ -95,6 +108,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Intune Data Warehouse | Yes | Yes | No | No | No | No |
 | Jethro ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | JSON | Yes | Yes | No | Yes** | No <sup>3</sup> | Yes |
+| Kognitwin | Yes | Yes | No | Yes | No | No |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | No |
 
 ## Data sources M-O
@@ -149,11 +163,15 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SharePoint Online List | Yes | Yes | No | Yes | No | Yes |
 | Smartsheet | Yes | Yes | No | No | No | Yes |
 | Snowflake | Yes | Yes | Yes | Yes | No | Yes |
+| SoftOne BI | Yes | Yes | No | Yes | No | No |
 | Spark | Yes | Yes | Yes | Yes | No | Yes |
 | SparkPost | Yes | Yes | No | No | No | No |
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
 | SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
+| SISCC-SDMX | Yes | Yes | No | Yes | No | No |
+| Starburst Enterprise | Yes | Yes | Yes | Yes | No | No |
 | Stripe | Yes | Yes | No | No | No | No |
+| SumTotal | Yes | Yes | No | Yes | No | No |
 | SurveyMonkey | Yes | Yes | No | Yes | No | No |
 | SweetIQ | Yes | Yes | No | No | No | No |
 | Sybase | Yes | Yes | No | Yes | Yes | Yes |
@@ -167,10 +185,12 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Text/CSV | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Twilio | Yes | Yes | No | No | No | No |
 | tyGraph | Yes | Yes | No | No | No | No |
+| Usercube | Yes | Yes | No | Yes | No | No |
 | Vertica | Yes | Yes | Yes | Yes | Yes | Yes |
 | Web | Yes | Yes | No | Yes | Yes <sup>6</sup> | Yes |
 | Webtrends | Yes | Yes | No | No | No | No |
 | Workforce Dimensions | Yes | Yes | No | Yes | No | No |
+| Workplace Analytics | Yes | Yes | No | Yes | No | No |
 | XML | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
 | Zendesk | Yes | Yes | No | No | No | No |
 
