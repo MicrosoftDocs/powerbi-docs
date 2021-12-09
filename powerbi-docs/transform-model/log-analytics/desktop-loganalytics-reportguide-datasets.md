@@ -218,9 +218,9 @@ The table below lists the visuals displayed on the dataset refreshes page accord
 
 | Visuals |
 |---------|
-|**Duration (ms) by refresh and start date/time** - Column chart shows the refresh duration for datasets over a period of time. 
+|**Duration (ms) by refresh and start date/time** - Column chart shows the refresh duration for datasets over a period of time.| 
 | **Dataset refresh timeline** - Timeline visual shows refreshes per dataset over a period of time. |
-| **Dataset refresh operations** - Table shows details for the refresh operations. | |
+| **Dataset refresh operations** - Table shows details for the refresh operations. |
 
 ### Drill-through Page: Dataset Refresh Detail
 
@@ -325,8 +325,8 @@ The table below lists the visuals displayed on the error summary page according 
 
 |Left  | Right  |
 |---------|---------|
-|**Total query failed and query failure rate by date** - Columns shows total failed queries. Line values represent the query failure rate. <br><br> **Total failed refreshes and refresh - failure rate by date** - Columns shows total failed dataset refreshes. Line values represent the dataset refresh failure rate. Both are shown by day. | **Failure details** - Table shows the details of failure with respect to the total values. ||
-|**Error details** - Lists errors reported by datasets for any operation.||
+|**Total query failed and query failure rate by date** - Columns shows total failed queries. Line values represent the query failure rate. <br><br> **Total failed refreshes and refresh - failure rate by date** - Columns shows total failed dataset refreshes. Line values represent the dataset refresh failure rate. Both are shown by day. | **Failure details** - Table shows the details of failure with respect to the total values. |
+|**Error details** - Lists errors reported by datasets for any operation.|
 
 The cards on the right display overall operations count, query failure count, refresh failure count and user count.
 
@@ -339,8 +339,8 @@ The table below lists the visuals displayed on the error detail page according t
 
 | Visuals  |  
 |---------|
-|**CPU time (ms) total and count of operations by date, hour and scenario** - Line and column chart shows the trends for the scenario executed on the day distributed by CPU time taken for each scenario in stacked column series. |  ||
-|**Operations** - Table lists all operations performed on the dataset. |   
+|**CPU time (ms) total and count of operations by date, hour and scenario** - Line and column chart shows the trends for the scenario executed on the day distributed by CPU time taken for each scenario in stacked column series. |
+|**Operations** - Table lists all operations performed on the dataset. | 
 
 ### Help
 
