@@ -48,7 +48,7 @@ We wanted to build an app that can be used to analyze AS engine behavior in gene
 
 The app loads data from a single Azure Log Analytics workspace.
  
-It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role so there is only one version of the app. We included different levels of aggregation to cater for a range of use cases. [Using Log Analytics in Power BI](desktop-log-analytics-overview.md)goes into detail on this.
+It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role so there is only one version of the app. We included different levels of aggregation to cater for a range of use cases. [Using Log Analytics in Power BI](desktop-log-analytics-overview.md) goes into detail on this.
 
 ## App Data Model
 
@@ -206,7 +206,7 @@ The table below lists the visuals displayed on the engine activity details page 
 | Visuals  | 
 |---------|
 |**CPU time (s) and count of operation by scenarios over period of time** - Column chart shows the total CPU time taken by each scenario per day.  | 
-**Operations** - Table shows the detail of operations. |
+|**Operations** - Table shows the detail of operations. |
 
 ### Page: Dataset Refreshes (also a drill-through)
 
@@ -216,7 +216,7 @@ This page provides an overview of dataset refreshes occurring over a selected pe
 
 The table below lists the visuals displayed on the dataset refreshes page according to their location on the page.
 
-| Visuals | 
+| Visuals |
 |---------|
 |**Duration (ms) by refresh and start date/time** - Column chart shows the refresh duration for datasets over a period of time. 
 | **Dataset refresh timeline** - Timeline visual shows refreshes per dataset over a period of time. |
@@ -313,8 +313,8 @@ The table below lists the visuals displayed on the user detail page according to
 
 |Left  | Right  |
 |---------|---------|
-|**CPU time (s), count of operations and users by date** - Columns show the total CPU time taken by per day by each operation type. The line shows the count of operations for a day. | **CPU time (s), count of operations and earliest date by hour and scenario** - This hourly breakdown complements the daily version of the chart. ||
-|**User details** - Table shows the user activities sorted by timestamp. | 
+|**CPU time (s), count of operations and users by date** - Columns show the total CPU time taken by per day by each operation type. The line shows the count of operations for a day. | **CPU time (s), count of operations and earliest date by hour and scenario** - This hourly breakdown complements the daily version of the chart. |
+|**User details** - Table shows the user activities sorted by timestamp. ||
 
 ### Page: Error Summary
 These pages provide an overview of errors or failed executions over time, allowing you to view individual operations that reported an error status.
