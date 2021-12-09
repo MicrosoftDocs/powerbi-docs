@@ -122,7 +122,7 @@ Power BI end users may see a notification in the Power BI service notification p
     - Sending feedback.
     - Settings such as managing personal storage and accessing the admin portal.
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
-- The Power BI app for Microsoft Teams is to Commercial Cloud and US Government Community Cloud (GCC) customers.
+- The Power BI app for Microsoft Teams is available to Commercial Cloud and US Government Community Cloud (GCC) customers.
 - Search experience is not available in US Government Community Cloud (GCC).
 
 ## Next steps
