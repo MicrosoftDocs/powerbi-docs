@@ -21,11 +21,11 @@ If you encounter a scenario that is not listed below, and it's causing you issue
 
 The **Subscribe** option is missing or greyed out.
 
-### Contact your Power BI administrator or IT help desk.
+### Contact your Power BI administrator or IT help desk
 
 - If you can’t use the subscription feature, contact your Power BI administrator or IT help desk. Your organization may have disabled this feature, generally or specifically for external users, or a maximum subscriber limit may have been reached. 
 
-- Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources. 
+- Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
 
 ### You've reached the maximum of 24 subscriptions
 There is a limit of 24 scheduled subscription runs per day per report or dashboard.  
@@ -57,7 +57,7 @@ If the links in your email (to the content) stop working, it may be that the con
 
 The email and snapshot will use the language set in Power BI settings (see[Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If no language is defined, Power BI uses English as a fallback. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
-![Language dropdown](./media/end-user-subscribe/power-bi-languages.png)
+![General tab of Settings showing the language dropdown.](./media/end-user-subscribe/power-bi-languages.png)
 
 ## My dashboard subscription is missing tiles 
 You receive your subscription email, open the dashboard, and notice that one or more tiles are missing
@@ -131,7 +131,7 @@ The full report attachment feature is available for reports that meet the follow
 - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-over-20-pages).
 - The attachment file is under 25 MB in size.
  
-## Which Power BI features are not supported in subscriptions?
+## Which Power BI features are not supported in subscriptions
 There are certain Power BI features that will not work when using the subscription feature.
 
 - Email subscriptions do not support most [custom visuals](../developer/visuals/develop-power-bi-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).

@@ -126,6 +126,8 @@
         href: end-user-recent.md
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
+      - name: "Troubleshoot Power BI subscriptions"
+        href: service-troubleshoot-subscribe.md  
       - name: "Search and sort content in Power BI"
         href: end-user-search-sort.md
       - name: "Turn on preview features"
