@@ -197,3 +197,14 @@ To check the status of a refresh operation, use the GET verb on the refreshId. H
 To cancel an in-progress refresh operation, use the DELETE verb on the refresh ID.
 
 **Example needed!!!**
+
+## Code sample
+
+Here's a C# code sample to get you started, [RestApiSample on GitHub](https://github.com/Microsoft/Analysis-Services/tree/master/RestApiSample).
+
+### To use the code sample
+
+1. Clone or download the repo. Open the RestApiSample solution.
+1. Find the line **client.BaseAddress = …** and provide your [base URL](#base-url).
+
+The code sample uses [service principal](#service-principal) authentication.
