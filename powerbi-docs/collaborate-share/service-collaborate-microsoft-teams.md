@@ -65,7 +65,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 - In other national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
 - After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
 - Link previews don't work in meeting chat or private channels.
-- The messaging extension may process request and response data in a region that is different than your Power BI tenant home region.
+- The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.
 
 ## Microsoft Power Platform in Microsoft Teams
 
