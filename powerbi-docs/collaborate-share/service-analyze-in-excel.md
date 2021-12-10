@@ -1,5 +1,5 @@
 ---
-title: Start in Power BI to analyze in Excel
+title: Start in Power BI with Analyze in Excel
 description: Analyze Power BI datasets in Microsoft Excel
 author: maggiesMSFT
 ms.author: maggies
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 12/10/2021
 LocalizationGroup: Reports
 ---
-# Start in Power BI to analyze in Excel
+# Start in Power BI with Analyze in Excel
 
 With **Analyze in Excel**, you can bring Power BI datasets into Excel, and then view and interact with them using PivotTables, charts, slicers, and other Excel features. 
 

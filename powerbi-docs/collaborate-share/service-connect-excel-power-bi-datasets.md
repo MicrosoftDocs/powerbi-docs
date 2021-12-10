@@ -52,7 +52,7 @@ To see the **From Power BI** option under **Get Data** in the Excel **Data** rib
 
 In general, you can connect to Power BI datasets from Excel if you meet the following conditions:
 
-- **Power BI license**: If the dataset is in a Premium workspace or in My workspace, you only need a free Power BI license. However, if the dataset is in any other workspace, then you need a Power BI Pro or Premium Per User (PPU) license. Learn more about [Power BI license types and capabilities](../admin/service-admin-licensing-organization#license-types-and-capabilities.md).
+- **Power BI license**: If the dataset is in a Premium workspace or in My workspace, you only need a free Power BI license. However, if the dataset is in any other workspace, then you need a Power BI Pro or Premium Per User (PPU) license. Learn more about [Power BI license types and capabilities](../admin/service-admin-licensing-organization.md#license-types-and-capabilities).
 
 - **Build permissions**: To build reports on Power BI datasets from Excel, you need build permissions to the dataset. Read about [Build permission for shared datasets](../connect-data/service-datasets-build-permissions.md).
  
