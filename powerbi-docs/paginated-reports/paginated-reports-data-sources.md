@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/16/2021
+ms.date: 12/09/2021
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -40,15 +40,17 @@ For Azure SQL Database data sources, you need to supply more information, as des
 
 ## Other data sources
 
-In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md):
+In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md) or a [VNet gateway](/data-integration/vnet/overview):
 
-- SQL Server (supports SSO)
-- SQL Server Analysis Services
-- Oracle (supports SSO)
-- Teradata
-- ODBC
+| Data Source | Enterprise gateway | VNet gateway |
+| --- | --- | --- |
+| SQL Server (supports SSO) | ✔️ | ✔️ |
+| SQL Server Analysis Services | ✔️ | ✔️|
+| Oracle (supports SSO) | ✔️ | |
+| Teradata | ✔️ | |
+| ODBC | ✔️ | |
 
-For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway. When authenticating with SSO service principal is not supported.
+For paginated reports, Azure Analysis Services currently can't be accessed via either a Power BI enterprise gateway or a VNet gateway. When authenticating with SSO, service principal isn't supported.
 
 > [!IMPORTANT]
 > Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos constrained delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.
