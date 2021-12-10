@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/07/2021
+ms.date: 12/09/2021
 LocalizationGroup: Reports
 ---
 # Start in Power BI to analyze in Excel

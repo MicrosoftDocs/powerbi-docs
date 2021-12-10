@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/09/2021
+ms.date: 12/08/2021
 LocalizationGroup: Share your work
 ---
 # Build refreshable reports in Excel with Power BI data

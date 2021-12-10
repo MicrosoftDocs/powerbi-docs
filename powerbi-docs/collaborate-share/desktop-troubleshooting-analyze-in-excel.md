@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 12/09/2021
+ms.date: 12/08/2021
 LocalizationGroup: Troubleshooting
 ---
 
