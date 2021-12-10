@@ -12,7 +12,11 @@ LocalizationGroup:
 ---
 # Asynchronous refresh with the Power BI REST API (Preview)
 
-The Power BI REST API enables data-refresh operations to be carried out asynchronously. Asynchronous refresh eliminates the need for long-running HTTP connections from client applications.
+By using any programming language that supports REST calls, you can perform asynchronous data-refresh operations on your Power BI datasets.
+
+Dataset refresh operations can take some time depending on a number of factors including data volume, level of optimization using partitions, etc. Traditionally, optimizing refresh for large and complex datasets have been invoked with existing programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). These methods can, however, require often unreliable, long-running HTTP connections.
+
+The Power BI REST API enables dataset-refresh operations to be carried out asynchronously. By using the REST API, long-running HTTP connections from client applications aren't necessary. Asynchronous refresh also includes additional reliability features such as auto retries and batched commits.
 
 > [!IMPORTANT]
 > This feature is in **Preview**. When in preview, functionality and documentation are likely to change.
@@ -26,6 +30,8 @@ https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refresh
 ```
 
 By using the base URL, resources and operations can be appended based on parameters. Groups, Datasets, and Refreshes are *collections*. Group, Dataset, and Refresh are *objects*.
+
+**Examples needed!!!**
 
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
 
@@ -47,7 +53,7 @@ REST API modifications do not change permissions as they are currently defined f
 
 ## POST /refreshes
 
-To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The **Location** header in the response includes the **refreshId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
+To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The Location header in the response includes the **refreshId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
 
 The body may resemble the following:
 
