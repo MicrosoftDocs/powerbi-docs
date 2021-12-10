@@ -71,6 +71,8 @@ To successfully deploy and manage Power BI, it's important to understand where m
 
 It's also important to understand that Power BI-hosted Import models can refresh according to a schedule, or be triggered on-demand by a user in the Power BI service.
 
+In scenarios where the dataset owner might have left the organization and one needs to take over the ownership, use the ["Datasets - Take Over In Group"](https://docs.microsoft.com/rest/api/power-bi/datasets/take-over-in-group) API.
+
 ## Next steps
 
 - [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
