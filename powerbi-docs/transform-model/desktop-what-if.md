@@ -75,6 +75,6 @@ There are a few considerations and limitations for **what-if** variables to keep
 
 You might also be interested in the following articles:
 
-* [Use gridlines and snap-to-grid in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)
-* [About filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)
-
+* [Use quick measures for common calculations](desktop-quick-measures.md)
+* [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
+* [Create calculated tables in Power BI Desktop](desktop-calculated-tables.md)
