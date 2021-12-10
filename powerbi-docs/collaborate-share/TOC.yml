@@ -105,7 +105,7 @@
         href: service-connect-excel-power-bi-datasets.md
       - name: "Start in Power BI"
         href: service-analyze-in-excel.md
-      - name: "Analyze Power BI datasets in Excel"
+      - name: "Build refreshable reports in Excel"
         href: service-analyze-power-bi-datasets-excel.md
       - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md

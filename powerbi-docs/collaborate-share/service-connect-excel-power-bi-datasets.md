@@ -68,8 +68,13 @@ To see the **From Power BI** option under **Get Data** in the Excel **Data** rib
 
 ## Next steps
 
-- [Start in Excel to connect to Power BI data](service-connect-excel-power-bi-datasets.md)
+For more information about getting data into Excel, see [Create a PivotTable from Power BI datasets](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
+
+You can also access **featured tables** in Excel, in the **Data Types** gallery. To learn more about featured tables and how to access them, see [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md). You can also read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+
+### Other related articles
+
 - [Start in Power BI to analyze in Excel](service-analyze-in-excel.md)
 - [Analyze Power BI datasets in Excel](service-analyze-power-bi-datasets-excel.md)
-- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
