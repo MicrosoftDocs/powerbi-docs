@@ -22,9 +22,9 @@ With that connection to the data in Power BI now established, you can create Piv
 
 :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="Blank PivotTable for Analyze in Excel.":::
 
-## Data sources for Analyze in Excel
+## Data sources for Power BI datasets in Excel
 
-Analyze in Excel is especially useful for Power BI datasets and reports that connect to the following data sources:
+Excel is especially useful for Power BI datasets and reports that connect to the following data sources:
 
 * Azure Analysis Services *tabular* data models and SQL Server Analysis Services (SSAS) *tabular* or *multidimensional* data models.
 
@@ -35,9 +35,9 @@ Analyze in Excel is especially useful for Power BI datasets and reports that con
 With **Excel for the web**, you can now explore and refresh Excel workbooks connected to Power BI datasets. If you have downloaded an Analyze in Excel workbook from Power BI or connected directly to a Power BI dataset from the Excel desktop app, you can share and refresh these workbooks through OneDrive and SharePoint. You can copy the link to the OneDrive or SharePoint location by clicking the **Share** button in the Excel desktop app and pasting the link directly in a browser. Now you start working with PivotTables connected to Power BI datasets in Excel for the web just like you would in the Excel desktop app.
 
 > [!IMPORTANT]
-> Using Analyze in Excel exposes all detail-level data to any users with permission to the dataset.
+> Analyzing Power BI data in Excel exposes all detail-level data to any users with permission to the dataset.
 
-There are a handful of things to consider when you begin using Analyze in Excel, which might require an extra step or two to reconcile. These possibilities are described in the following sections. 
+There are a handful of things to consider when you begin analyzing Power BI data in Excel, which might require an extra step or two to reconcile. These possibilities are described in the following sections.
 
 ## Refresh the data
 
@@ -58,26 +58,22 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
 Here are the requirements for connecting to Power BI datasets in Excel:
 
-* Analyze in Excel is supported for Microsoft Excel 2010 SP1 and later.
+* Analyzing Power BI data in Excel is supported for Microsoft Excel 2010 SP1 and later.
 * Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](../transform-model/desktop-measures.md).
-* Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you can't install the updates, check with your administrator.
-* Analyze in Excel requires that the dataset be in a Power BI Premium workspace or that you have a Power BI Pro or Premium Per User (PPU) license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
-* You can connect to datasets through Analyze in Excel if you have permission for the underlying dataset. You could have this permission in a few ways. You  could have the Member role in the workspace containing the dataset, or have Build permission for a dataset in a workspace, or in an app that contains the dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md) for datasets.
-* Guest users can't use Analyze in Excel for datasets sent from (originating from) another tenant. 
-* Analyze in Excel is a Power BI service feature. It isn't available in Power BI Report Server or Power BI Embedded.
-* Analyze in Excel is only supported on computers running Microsoft Windows.
+* Some organizations may have Group Policy rules that prevent installing the required updates to Excel. If you can't install the updates, check with your administrator.
+* Analyzing Power BI data in Excel requires that the dataset be in a Power BI Premium workspace or that you have a Power BI Pro or Premium Per User (PPU) license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+* You can connect to Power BI datasets in Excel if you have permission for the underlying dataset. You could have this permission in a few ways. You could have the Member role in the workspace containing the dataset, or have Build permission for a dataset in a workspace, or in an app that contains the dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md) for Power BI datasets.
+* Guest users can't analyze Power BI data in Excel for datasets sent from (originating from) another tenant. 
+* Analyzing Power BI data in Excel is a Power BI service feature. You can't analyze Power BI data in Excel from Power BI Report Server or Power BI Embedded.
+* You can only analyze Power BI data in Excel on computers running Microsoft Windows.
 * When sharing an Excel workbook via a Power BI app, you have to provide Build permissions to the dataset in the app, and permissions to the OneDrive or SharePoint location for the Excel workbook. If you use the **Entire organization** setting when providing permissions to users in the Power BI app, you have to set the equivalent permission setting in OneDrive or SharePoint for the Excel workbook.
-
-If you need to uninstall the Analyze in Excel feature, use the **Add or remove programs** system setting on your computer.
 
 ### Sign in to Power BI
 Although you’re signed in to Power BI in your browser, the first time you open a new Excel file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
 
 ### Multiple Power BI accounts
 
-If you have multiple Power BI accounts, you might be signed in to Power BI with one account, but your other account has access to the dataset being used in Analyze in Excel. In that case, you might see a **Forbidden** error, or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
-
-If that happens, you'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel. You can also select your name in the top ribbon in Excel, which identifies which account is currently signed in. Sign out and sign back in with the other account.
+If you have multiple Power BI accounts, you might be signed in to Power BI with one account, but your other account has access to the dataset being used in Excel. In that case, you might see a **Forbidden** error, or a sign-in failure when attempting to access a dataset that's being used in an Excel workbook. See the [Forbidden error](desktop-troubleshooting-analyze-in-excel.md#forbidden-error) section of "Troubleshoot connecting Excel to Power BI data."
 
 ## Considerations and limitations
 

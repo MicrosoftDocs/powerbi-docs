@@ -39,7 +39,7 @@ For any of these options, the Analyze in Excel feature should install automatica
 
 :::image type="content" source="media/service-analyze-in-excel/install-analyze-excel-first-updates.png" alt-text="Install Analyze in Excel updates.":::
 
-If not, or for more details, see [Install Analyze in Excel](#install-analyze-in-excel) later in this article.
+If it doesn't install automatically, see [Install Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md#install-analyze-in-excel) in the article "Troubleshoot Analyze in Excel."
 
 The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and downloads this workbook to your computer. 
 
@@ -62,29 +62,8 @@ If you manually set sensitivity labels in Excel, they aren’t automatically ove
 
 For more information, see [how to apply sensitivity labels in Power BI](../admin/service-security-apply-data-sensitivity-labels.md).
 
-## Install Analyze in Excel
 
-To use Analyze in Excel, you must first download the feature from Power BI and install it from links provided after you [sign in to the Power BI service](https://app.powerbi.com). Usually, it installs automatically when you [select Analyze in Excel](#connect-to-power-bi-data-with-analyze-in-excel) in the Power BI service. If not, follow these steps to install. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit).
-
-1. In the Power BI service in your browser, select **More options (...)** in the upper-right corner, then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel.
-
-    ![Download Analyze in Excel from Power BI Home.](media/service-analyze-in-excel/install-analyze-excel-download-updates.png)
-
-    Power BI detects whether you have installed Analyze in Excel. If not, Power BI prompts you to download.
-
-    ![Download Analyze in Excel updates.](media/service-analyze-in-excel/install-analyze-excel-download.png)
-
-When you select **Download**, Power BI detects the version of Excel you have installed and downloads the appropriate version of the Analyze in Excel installer. You see a download status in the bottom of your browser, or wherever your browser displays download progress. 
-
-![Updates downloading](media/service-analyze-in-excel/analyze-excel-04.png)
-
-When the download completes, run the installer (.msi) to install Analyze in Excel. The name of the installation process is different from Analyze in Excel; the name will be **Microsoft Analysis Services OLE DB Provider** as shown in the following image, or something similar.
-
-![Updates installing Analysis Services OLE DB provider](media/service-analyze-in-excel/analyze-excel-05.png)
-
-Once it completes, you're ready to select a report in the Power BI service (or other Power BI data element, like a dataset), and then analyze it in Excel.
-
-## Saving and sharing your new workbook
+## Save and share your new workbook
 
 You can **Save** the Excel workbook you create with the Power BI dataset, just like any other workbook. However, you can't publish or import the workbook back into Power BI. You can only publish or import workbooks into Power BI that have data in tables, or that have a data model. Because the new workbook just has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles!
 
@@ -98,14 +77,6 @@ Refresh for external connections isn't supported in Excel Online. Since users ne
 > Administrators for Power BI tenants can use the *Power BI admin portal* to disable the use of **Analyze in Excel** with on-premises datasets housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for other datasets.
 
 
-## Other ways to access Power BI datasets from Excel
-Users with specific Office SKUs can also connect to Power BI datasets from within Excel by using the **Get Data** feature in Excel. If your SKU doesn't support this feature, the **Get Data** menu option doesn't appear.
-
-From the **Data** ribbon menu, select **Get Data > From Power BI dataset**.
-
-![Using the Get Data menu](media/service-analyze-in-excel/analyze-excel-10.png)
-
-In the pane that appears, you can browse datasets you have access to, see if datasets are certified or promoted, and determine whether data protection labels have been applied to those datasets. 
 
 For more information about getting data into Excel in this way, see [Create a PivotTable from Power BI datasets](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
 

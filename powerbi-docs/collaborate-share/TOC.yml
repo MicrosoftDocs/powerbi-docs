@@ -97,13 +97,13 @@
         href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Power BI in Excel
+    - name: Power BI and Excel
       items:         
       - name: "Connect Excel to Power BI datasets"
         href: service-connect-power-bi-datasets-excel.md
-      - name: "Start in Excel to connect to Power BI"
+      - name: "Start in Excel"
         href: service-connect-excel-power-bi-datasets.md
-      - name: "Start in Power BI to connect to Excel"
+      - name: "Start in Power BI"
         href: service-analyze-in-excel.md
       - name: "Analyze Power BI datasets in Excel"
         href: service-analyze-power-bi-datasets-excel.md
@@ -111,7 +111,7 @@
         href: service-excel-featured-tables.md
       - name: "Set featured tables"
         href: service-create-excel-featured-tables.md
-      - name: "Troubleshoot analyzing in Excel"
+      - name: "Troubleshoot connecting Excel to Power BI data"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
