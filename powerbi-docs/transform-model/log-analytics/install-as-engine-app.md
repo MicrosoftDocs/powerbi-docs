@@ -1,5 +1,5 @@
 ---
-title: Install the AS Engine App (preview)
+title: Installing the Log Analytics for Power BI Datasets Template App (preview)
 description: Installation guide for the Template App that visualizes Dataset activity from Analysis Services
 author: Bhavik-MSFT
 ms.author: bhmerc
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 12/10/2021
 LocalizationGroup: Transform and shape data
 ---
-# Install the AS Engine app (preview)
+# Installing the Log Analytics for Power BI Datasets Template App (preview)
 
 The Power BI Log Analytics for Analysis Services Engine app is designed to analyze AS Engine behavior in general, and to help isolate and debug specific problems in depth. Use this guide to install the app. Once the app is installed, you can [learn how to use it](desktop-loganalytics-reportguide-datasets.md).
 
