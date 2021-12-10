@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 LocalizationGroup: Troubleshooting
 ---
 
@@ -19,7 +19,7 @@ There may be times when connecting Excel to Power BI data that you get an unexpe
 > There are separate pages that describe:
 >
 > - [Starting in Power BI with Analyze in Excel](service-analyze-in-excel.md).
-> - [Starting in Excel to connect to Power BI data](service-connect-excel-power-bi-datasets.md)
+> - [Starting in Excel to connect to Power BI data](service-connect-excel-power-bi-datasets.md).
 >
 > If you encounter a scenario that is not listed below, you can ask for assistance on the [Power BI community site](https://community.powerbi.com/), or create a [support ticket](https://powerbi.microsoft.com/support/).
 
@@ -64,7 +64,7 @@ Once your measures are defined in the model in the Power BI service, you'll be a
 
 ## Install Analyze in Excel
 
-To use Analyze in Excel, you must first download the feature from Power BI and install it from links provided after you [sign in to the Power BI service](https://app.powerbi.com). Usually, it installs automatically when you [select Analyze in Excel](#connect-to-power-bi-data-with-analyze-in-excel) in the Power BI service. If not, follow these steps to install. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit).
+To use Analyze in Excel, you must first download the feature from Power BI and install it from links provided after you [sign in to the Power BI service](https://app.powerbi.com). Usually, it installs automatically when you [select Analyze in Excel](service-analyze-in-excel.md) in the Power BI service. If not, follow these steps to install. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit).
 
 1. In the Power BI service in your browser, select **More options (...)** in the upper-right corner, then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel.
 

@@ -1,5 +1,5 @@
 ---
-title: Build refreshable reports in Excel with Power BI data
+title: Build refreshable Excel reports with Power BI data
 description: After you've connected to your dataset, Excel presents you with an empty PivotTable and Fields list from the Power BI dataset, and you're ready analyze your data
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 12/10/2021
 LocalizationGroup: Share your work
 ---
-# Build refreshable reports in Excel with Power BI data
+# Build refreshable Excel reports with Power BI data
 
 You've connected to a Power BI dataset in Excel by starting in [Power BI with Analyze in Excel](service-analyze-in-excel.md) or in [Excel with Get Data](service-connect-excel-power-bi-datasets.md). Now that you're connected, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready analyze your data.
 
@@ -41,6 +41,8 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
 - Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](../transform-model/desktop-measures.md).
 - You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md).
+
+For general [considerations and limitations](service-connect-power-bi-datasets-excel.md#considerations-and-limitations) about connecting to Power BI data in Excel, see the article "Connect Excel to Power BI datasets."
 
 ## Next steps
 
