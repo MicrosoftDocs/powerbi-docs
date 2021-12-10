@@ -142,7 +142,7 @@ Here's an example of the response body:
 
 |Name  |Type  |Description  |
 |---------|---------|---------|
-|`refreshId`     |    Guid     |    The identifier of the Refresh request. Required to query for individual refresh operation status or cancel an in-progress refresh operation. |
+|`refreshId`     |    Guid     |    The identifier of the refresh request. `refreshId` is required to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
 |`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call.   |
 |`startTime`     |    string     |    DateTime of start.     |
 |`endTime`     |   string      |    DateTime of end.     |
@@ -152,7 +152,7 @@ Here's an example of the response body:
 
 \* In Azure Analysis Services, this status result is 'succeeded'. If migrating an Azure Analysis Services solution to Power BI, you may have to modify your solutions.
 
-### Limiting the number of refresh operations returned
+### Limit the number of refresh operations returned
 
 The Power BI REST API supports limiting the requested number of entries in the refresh history by using the optional **$top** parameter. If not specified, the default is all available entries.
 
@@ -162,7 +162,7 @@ GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top
 
 ## GET /refreshes/\<refreshId\>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the refreshId. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **refreshId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
