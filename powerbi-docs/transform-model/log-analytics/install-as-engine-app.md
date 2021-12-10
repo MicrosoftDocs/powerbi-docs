@@ -27,7 +27,7 @@ Before you install the AS Engine app, review these requirements:
 
 To install the AS Engine app, follow these steps:
 
-1. Go to [AppSource > Power BI Log Analytics for Analysis Services Engine](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi&search=Power%20BI%20Log%20Analytics%20for%20Analysis%20Services%20Engine&page=1) and select **Get it now**.
+1. Go to [AppSource > Power BI Log Analytics for Analysis Services Engine](https://aka.ms/AS_Engine_TemplateApp) and select **Get it now**.
 
 1. If prompted, sign in to AppSource using your work or school account and complete the registration screen. The app will take you to the Power BI Service to complete the process. Select **Install** to continue.
 
