@@ -45,7 +45,7 @@ All calls must be authenticated with a valid Azure Active Directory (OAuth 2) to
 
 REST API modifications do not change permissions as they are currently defined for dataset refreshes.
 
-## POST
+## POST /refreshes
 
 To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The **Location** header in the response includes the **refreshId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
 
@@ -71,7 +71,7 @@ The body may resemble the following:
 
 ```
 
-Only one refresh operation is accepted at a time for a dataset. If there's a current running refresh operation and another is submitted, a 409 Conflict HTTP status code is returned.
+Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 409 Conflict HTTP status code is returned.
 
 ### Parameters
 
@@ -79,7 +79,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
-|`notifyOption`     |  NotifyOption       |    `none`     |    Mail notification options (`success` and/or `failure`, or `none`)     |
+|`notifyOption`     |  NotifyOption       |    `none`     |    Mail notification options (`MailOnSuccess` and/or `MailOnFailure`, or `none`)     |
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. <br>`Add` type is not supported.      |
 |`commitMode`<sup>[1](#commit)</sup>     |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads on which to run processing commands in parallel. This value aligned with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
@@ -102,14 +102,7 @@ The response also includes a Location response-header field to point the caller 
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refreshes/{refreshId}
 ```
 
-## Status
-
-To check the status of a particular refresh operation requires the refreshId. The refreshId can be obtained by listing all the historical, current, and pending refresh operations for a dataset.
-
-> [!NOTE]
-> Power BI might drop additional requests if too many requests are sent in a short period of time. Power BI will perform a refresh, queue the next request, and drop all others. You cannot query status on requests that have been dropped. This is by design.
-
-### GET /refreshes
+## GET /refreshes
 
 Use the GET verb on the /refreshes collection to list historical, current, and pending refresh operations.
 
@@ -142,22 +135,24 @@ Here's an example of the response body:
 
 ```
 
-#### Response parameters
+> [!NOTE]
+> Power BI might drop additional requests if too many requests are sent in a short period of time. Power BI will perform a refresh, queue the next request, and drop all others. You cannot query status on requests that have been dropped. This is by design.
+
+### Response properties
 
 |Name  |Type  |Description  |
 |---------|---------|---------|
-|`request`     |    Guid     |    The identifier of the Refresh request. Required to query for individual status or cancel an ongoing refresh.
-     |
+|`refreshId`     |    Guid     |    The identifier of the Refresh request. Required to query for individual refresh operation status or cancel an in-progress refresh operation. |
 |`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call.   |
-|`startTime`     |    string     |    `DateTime` of start.     |
-|`endTime`     |   string      |    `DateTime` of end.     |
-|`status`     |  string       |   `Failed` indicates the refresh operation failed. serviceExceptionJson will contain the error. <br>`Unknown` indicates a completion state that cannot be determined. `endTime` will be empty with this status. <br>`Completed`\*  indicates refresh completed successfully.  <br>`Disabled` indicates refresh was disabled by Selective Refresh.  |
-|`extendedStatus`     |    string     |   Augments the status property to provide additional information. <br>`Status` indicates Unknown. <br>`NotStarted` indicates the operation has not yet started. <br>`InProgress` indicates the refresh operation is in progress.       |
+|`startTime`     |    string     |    DateTime of start.     |
+|`endTime`     |   string      |    DateTime of end.     |
+|`status`     |  string       |   `completed`\*  indicates the refresh operation completed successfully. <br>`failed` indicates the refresh operation failed - serviceExceptionJson will contain the error. <br>`unknown` indicates a completion state that cannot be determined. `endTime` will be empty with this status.   <br>`disabled` indicates refresh was disabled by selective refresh.  |
+|`extendedStatus`     |    string     |   Augments the status property to provide additional information.     |
 |`serviceExceptionJson`     |   string      |    Failure error code in json format (not empty only on error).     |
 
 \* In Azure Analysis Services, this status result is 'succeeded'. If migrating an Azure Analysis Services solution to Power BI, you may have to modify your solutions.
 
-#### Limiting the number of refresh operations returned
+### Limiting the number of refresh operations returned
 
 The Power BI REST API supports limiting the requested number of entries in the refresh history by using the optional **$top** parameter. If not specified, the default is all available entries.
 
@@ -165,9 +160,9 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-### GET /refreshes/\<refreshId\>
+## GET /refreshes/\<refreshId\>
 
-To check the status of a refresh operation, use the GET verb on the refreshId. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the refreshId. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
@@ -192,9 +187,9 @@ To check the status of a refresh operation, use the GET verb on the refreshId. H
 
 ```
 
-### DELETE /refreshes/\<refreshId\>
+## DELETE /refreshes/\<refreshId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh ID.
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the refreshId.
 
 **Example needed!!!**
 
