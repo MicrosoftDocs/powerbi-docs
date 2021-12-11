@@ -66,3 +66,5 @@ Where:
 
 * [Default label policy for Power BI](service-security-sensitivity-label-default-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Data protection metrics report](service-security-data-protection-metrics-report.md)
+* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)

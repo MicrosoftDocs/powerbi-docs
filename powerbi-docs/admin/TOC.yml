@@ -68,7 +68,7 @@
           href: service-premium-faq.yml   
     - name: Information protection
       items:
-      - name: Default label policy (preview)
+      - name: Default label policy
         href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy
         href: service-security-sensitivity-label-mandatory-label-policy.md
