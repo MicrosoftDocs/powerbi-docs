@@ -50,12 +50,12 @@
       href: advanced-edit-mode.md
   - name: How to
     items:
-    - name: "Get a Power BI visual certified"
-      href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
     - name: "Test your Power BI visual"  
       href: submission-testing.md
+    - name: "Get a Power BI visual certified"
+      href: power-bi-custom-visuals-certified.md
     - name: "Create mobile friendly visuals"
       href: mobile-development.md
     - name: "Set up your environment for developing a Power BI visual"

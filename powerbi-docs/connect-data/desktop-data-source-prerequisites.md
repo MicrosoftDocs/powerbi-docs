@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 12/02/2021
 LocalizationGroup: Connect to data
 ---
 # Power BI data source prerequisites
@@ -15,12 +15,10 @@ For each data provider, Power BI supports a specific provider version on objects
 
 | Data source | Provider | Minimum provider version | Minimum data source version | Supported data source objects | Download link |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server |ADO.net (built into .Net Framework) |.NET Framework 3.5 (only) |SQL Server 2005+ |Tables/Views, Scalar functions, Table functions |Included in .NET Framework 3.5 or above |
+| SQL Server |ADO.net (built into .NET Framework) |.NET Framework 3.5 (only) |SQL Server 2005+ |Tables/Views, Scalar functions, Table functions |Included in .NET Framework 3.5 or above |
 | Access |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |No restriction |Tables/Views |[Download link](./desktop-access-database-errors.md) |
 | Excel (.xls files only) (see note 1) |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |No restriction |Tables, Sheets |[Download link](./desktop-access-database-errors.md) |
 | Oracle (see note 2) |ODP.NET |ODAC 11.2 Release 5 (11.2.0.3.20) |9.x+ |Tables/Views |[Download link](./desktop-connect-oracle-database.md) |
-| | System.Data.OracleClient (Built in .NET Framework) |.NET Framework 3.5 |9.x+ |Tables/Views |Included in .NET Framework 3.5 or above |
-| IBM DB2 |ADO.Net client from IBM (part of the IBM data server driver package) |10.1 |9.1+ |Tables/Views |[Download link](https://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Connector/Net |6.6.5 |5.1 |Tables/Views, Scalar functions |[Download link](https://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
 | PostgreSQL |NPGSQL ADO.NET provider (Shipped with Power BI Desktop) |4.0.10 |9.4 |Tables/Views |[Download link](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
 | Teradata |.NET Data Provider for Teradata |14+ |12+ |Tables/Views |[Download link](https://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409) |
