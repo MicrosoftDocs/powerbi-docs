@@ -8,23 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/11/2021
+ms.date: 12/12/2021
 LocalizationGroup: Data from files
 ---
-# Default label policy for Power BI (preview)
+# Default label policy for Power BI
 
 To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content.
 
 This article describes how to enable a default label policy, both in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection) and by using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
 
 >[!NOTE]
-> Currently, default label policies for Power BI are supported only in Power BI Desktop. Default labels will not be applied to unlabeled content in the Power BI service.
->
 > The default label policy settings for Power BI are independent of the default label policy settings for files and email.
 
 ## What happens when a default label policy is in effect?
 
-If a default label policy is in effect, when a user to whom the policy applies opens in Power BI Desktop a new *.pbix* file or an existing unlabeled *.pbix* file, the default label will be applied to the file. If the user is offline, the label will be applied when the user signs-in.
+* In Power BI Desktop, when a user to whom the policy applies opens a new *.pbix* file or an existing unlabeled *.pbix* file, the default label will be applied to the file. If the user is working offline, the label will be applied when the user signs in.
+* In the Power BI service, when a user to whom the policy applies creates a new dataset, report, dashboard, dataflow or scorecard, the default label will be applied to that item.
 
 ## Enabling a default label policy for Power BI
 
@@ -56,12 +55,14 @@ Where:
 * [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
 
 ## Considerations and limitations
-* Default label policies are not currently supported in the Power BI service.
-* Default labeling in Power BI is in preview, so there may be flows that allow users to open or create an unlabeled .pbix file.
+* Default labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow users to open or create unlabeled *.pbix* files or Power BI artifacts.
 * Default label policy settings for Power BI are independent of the default label policy settings for files and email.
-* Default label policies in Power BI are not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled file in Power BI Desktop, no default label will be applied to the file automatically.
+* Default labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not subject to default label policies.
+* Default label policies in Power BI are not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power Bi service, no default label will applied automatically.
 
 ## Next steps
 
 * [Mandatory label policy for Power BI](service-security-sensitivity-label-mandatory-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Data protection metrics report](service-security-data-protection-metrics-report.md)
+* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
