@@ -21,7 +21,7 @@ For related "What's New" information, see:
 
 ## December 2021
 ### New default view for non-mobile-optimized report pages  
-Now you can choose to view any report page, mobile-optimized or not, in the orientation you want. If you're holding your phone in portrait orientation and the report page you’re looking at isn't optimized for mobile viewing, you’ll get a small, regular view of the page. You can always tilt your phone for a closer look at your data, but if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
+Non-mobile-optimized report pages now open no matter which way you're holding your phone. You no longer have to tip it on its side in order to view non-mobile-optimized pages. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small, regular view of the page instead. You can still tilt your phone if you want a larger view of  the data, or you can just use pinch and zoom on the smaller image.
 
 ![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
 
