@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/25/2021
+ms.date: 12/12/2021
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -25,7 +25,9 @@ Recommended Content hints are supported on Android devices, just as they are for
 ### Dark mode now available in the Power BI app for Windows
 Try out the new dark mode in the Power BI app for Windows. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between light and dark themes in the app’s appearance settings. [Learn more](mobile-apps-dark-mode.md)!
 ### Small landscape  - New report default view 
+Now you can choose to view any report page, mobile-optimized or not, in the orientation you want. If you're holding your phone in portrait orientation and the report page you’re looking at isn't optimized for mobile viewing, you’ll get a small, regular view of the page. You can always tilt your phone for a closer look at your data, but if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
 
+![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
 
 ## November 2021
 ### Recommended content supports hints (iOS)
