@@ -20,18 +20,18 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## December 2021
-### Recommended Content hints now supported on Android devices
-Recommended Content hints are supported on Android devices, just as they are for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
+### New default view for non-mobile-optimized report pages  
+Now you can choose to view any report page, mobile-optimized or not, in the orientation you want. If you're holding your phone in portrait orientation and the report page you’re looking at isn't optimized for mobile viewing, you’ll get a small, regular view of the page. You can always tilt your phone for a closer look at your data, but if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
+
+![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
 
 ### Dark mode now available in the Power BI app for Windows
 Try out the new dark mode in the Power BI app for Windows. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between light and dark themes in the app’s appearance settings. [Learn more](mobile-apps-dark-mode.md)!
 
 ![Screenshot of dark mode in Windows app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-dark-mode-windows-app.png)
 
-### Small landscape  - new default view for non-mobile-optimized report pages  
-Now you can choose to view any report page, mobile-optimized or not, in the orientation you want. If you're holding your phone in portrait orientation and the report page you’re looking at isn't optimized for mobile viewing, you’ll get a small, regular view of the page. You can always tilt your phone for a closer look at your data, but if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
-
-![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
+### Recommended content hints now supported on Android devices
+Recommended content hints are supported on Android devices, just as they are for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
 
 ## November 2021
 ### Recommended content supports hints (iOS)
