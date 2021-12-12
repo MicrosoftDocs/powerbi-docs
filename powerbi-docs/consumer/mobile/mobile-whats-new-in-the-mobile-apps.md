@@ -19,6 +19,14 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## December 2021
+### Recommended Content hints now supported on Android devices
+Recommended Content hints are supported on Android devices, just as they are for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
+### Dark mode now available in the Power BI app for Windows
+Try out the new dark mode in the Power BI app for Windows. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between light and dark themes in the app’s appearance settings. [Learn more](mobile-apps-dark-mode.md)!
+### Small landscape  - New report default view 
+
+
 ## November 2021
 ### Recommended content supports hints (iOS)
 We've added hints to the items recommended for you by Power BI to help you understand why they were picked for you as recommended content. Being able to see who opened, certified, or published an item can help you decide whether the item might be relevant for your work.
