@@ -20,7 +20,7 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## December 2021
-### New default view for non-mobile-optimized report pages  
+### Non-mobile-optimized report pages now open directly in any orientation
 Non-mobile-optimized report pages now open no matter which way you're holding your phone. You no longer have to tip it on its side in order to view non-mobile-optimized pages. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small, regular view of the page instead. You can still tilt your phone if you want a larger view of  the data, or you can just use pinch and zoom on the smaller image.
 
 ![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
