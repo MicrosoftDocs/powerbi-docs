@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/06/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -73,7 +73,7 @@ The maximum size for datasets imported into the **Power BI service** is 1 GB. Th
 
 ## Scheduled refresh timeout
 
-Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
+Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
 
 ## Scheduled refresh failures
 
