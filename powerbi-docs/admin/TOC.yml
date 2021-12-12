@@ -68,6 +68,8 @@
           href: service-premium-faq.yml   
     - name: Information protection
       items:
+      - name: DLP policies for Power BI
+        href: service-security-dlp-policies-for-power-bi.md
       - name: Default label policy
         href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy
