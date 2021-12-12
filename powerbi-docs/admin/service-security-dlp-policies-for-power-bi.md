@@ -23,7 +23,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
-* DLP policies for Power BI are not supported for sample datasets, streaming datasets(../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections). 
+* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections). 
 
 ## How do DLP policies for Power BI work
 
@@ -33,14 +33,16 @@ You define a DLP policy in the data loss prevention section of the compliance po
 * Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance center. 
 
 When a dataset is evaluated by DLP policies, if it matches the conditions specified in a DLP policy, the actions specified in the policy occur. A dataset is evaluated against DLP policies whenever one of the following events occurs:
+
 * Publish
 * Republish
 * On-demand refresh
 * Scheduled refresh
-    
-    >[!NOTE]> DLP evaluation of the dataset does not occur in either of the following cases:
-    > * The initiator of the event is a service principal.
-    > * The dataset owner is either a service principal or a B2B user.
+
+>[!NOTE]
+> DLP evaluation of the dataset does not occur in either of the following cases:
+> * The initiator of the event is a service principal.
+> * The dataset owner is either a service principal or a B2B user.
 
 ## What happens when a dataset is flagged by a Power BI DLP policy
 
