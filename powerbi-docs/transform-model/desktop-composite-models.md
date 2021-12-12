@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/30/2021
-LocalizationGroup: Transform and shape data
+ms.date: 11/07/2021
+Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
 
@@ -171,8 +171,6 @@ The following Live Connect tabular sources can't be used with composite models:
 * SQL Server Analysis Services
 * Power BI datasets
 * Azure Analysis Services
-
-When you connect to these tabular sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with import data.
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 

@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 12/06/2021
 ---
 
 # Change log for Power BI Report Server
@@ -35,10 +35,13 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Deprecated support for Internet Explorer.
         
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.97.2222.0 (September 2021), Released: December 6, 2021*
+        - Bug fix for the progress dialog: now import/refresh progress will be shown after import/refresh.
+        - Bug fix for table tooltips: now last refreshed time information will be available from table tooltips outside of the model view.
     - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
         - Contains changes required for connection with Power BI Report Server (September 2021).
         - Updated gallery view for custom visuals.
-        - Bug fixes
+        - Bug fixes.
 
 ## May 2021
 - **Power BI Report Server**

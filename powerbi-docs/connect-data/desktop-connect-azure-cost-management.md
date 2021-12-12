@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/29/2021
+ms.date: 12/08/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -49,6 +49,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
 5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* with the data copied from the previous steps. 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
+
+    Alternatively, for **Choose Scope**, select **Enrollment Number** and input the Billing Account ID string as copied from the previous steps.
+
 6.	Enter the number of months and select **OK**.
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
