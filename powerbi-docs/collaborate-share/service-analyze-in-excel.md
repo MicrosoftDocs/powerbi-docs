@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 LocalizationGroup: Reports
 ---
 # Start in Power BI with Analyze in Excel
@@ -30,7 +30,7 @@ In the Power BI service, to the workspace that contains the dataset or report yo
 
 - Select a dataset. In the **Dataset details** pane, under **Analyze in Excel**, select **Analyze**.
 
-    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-dataset-analyze-excel.png" alt-text="Start from a dataset, then select Analyze in Excel.":::
+    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-dataset-analyze-excel.png" alt-text="Start from a dataset, then select Analyze in Excel."  lightbox="start-powerbi-dataset-analyze-excel-expanded.png":::
 
     >[!NOTE]
     >Remember that if you select Analyze in Excel for a report, it is the report's underlying dataset that is brought into Excel.
