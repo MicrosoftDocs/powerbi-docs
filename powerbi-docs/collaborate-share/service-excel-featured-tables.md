@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/21/2021
+ms.date: 12/10/2021
 LocalizationGroup: Share your work
 ---
 # Access Power BI featured tables in Excel organization data types
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 Do you create datasets in Power BI? Read about [setting featured tables in Power BI Desktop](service-create-excel-featured-tables.md).
 
 > [!NOTE]
-> In Excel, you can also analyze data from any Power BI dataset that you can access in Power BI. See [Other ways to access Power BI datasets from Excel](service-analyze-in-excel.md#other-ways-to-access-power-bi-datasets-from-excel) in the "Analyze in Excel for Power BI" article for details.
+> In Excel, you can also [analyze data from any Power BI dataset](service-connect-excel-power-bi-datasets.md) that you can access in Power BI.
 > 
 
 ## The Excel Data Types Gallery

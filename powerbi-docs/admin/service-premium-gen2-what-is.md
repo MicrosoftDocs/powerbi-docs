@@ -154,20 +154,16 @@ The following known limitations currently apply to Premium Gen2:
 
     The following table summarizes all the limitations that are dependent on the capacity size:
 
-    | Capacity SKU | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB)\* | CPU time/minute | DirectQuery/Live connection (per second)\* | Max memory per query [GB]\* | Model refresh parallelism |
-    | ------- | --- | --- | --- | --- | --- | ---- | --- | --- |
-    | EM/A1   | 1   | 0.5 | 0.5 | 3   | 3   | 3.75 | 1   | 5   |
-    | EM2/A2  | 2   | 1   | 1   | 6   | 5   | 7.5  | 2   | 10  |
-    | EM3/A3  | 4   | 2   | 2   | 10  | 10  | 15   | 2   | 20  |
-    | P1/A4   | 8   | 4   | 4   | 25  | 25  | 30   | 6   | 40  |
-    | P2/A5   | 16  | 8   | 8   | 50  | 50  | 60   | 6   | 80  |
-    | P3/A6   | 32  | 16  | 16  | 100 | 100 | 120  | 10  | 160 |
-    | P4/A7** | 64  | 32  | 32  | 200 | 240 | 480  | 240 | 320 |
-    | P5/A8** | 128 | 64  | 64  | 400 | 480 | 960  | 480 | 640 |
+    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [GB]** | **Max memory per query\* [GB]** | **DirectQuery\LC queries / sec \*** |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | **A1\EM1** | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
+    | **A2\EM2** | 2 | 1 | 60 | 6 | 2 | 7.5 |
+    | **A3\EM3** | 4 | 2 | 120 | 10 | 2 | 15 |
+    | **A4\P1** | 8 | 4 | 240 | 25 | 6 | 30 |
+    | **A5\P2** | 16 | 8 | 480 | 50 | 6 | 60 |
+    | **A6\P3** | 32 | 16 | 960 | 100 | 10 | 120 |
     
-    \* The Premium Gen2 app doesn't currently expose these metrics.
-
-    \** SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+    \*The Premium Gen2 app doesn't currently expose these metrics.
     
 ## Next steps
 
