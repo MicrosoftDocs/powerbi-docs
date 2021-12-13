@@ -93,7 +93,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P4/A7* | 64  | 32  | 32  | 200 | 240 | 240  | 10  | 48  |
 | P5/A8* | 128 | 64  | 64  | 400 | 480 | 480  | 10  | 96  |
 
-\* SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+\* SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
 >Using a single larger SKU can be preferable to combining smaller SKUs. For example, one P2 SKU instead of two P1 SKUs. Using a larger SKU enables you to use larger models and achieve better parallelism with the P2 SKU.

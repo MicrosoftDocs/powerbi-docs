@@ -167,7 +167,7 @@ The following known limitations currently apply to Premium Gen2:
     
     \* The Premium Gen2 app doesn't currently expose these metrics.
 
-    \** SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+    \** SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
     
 ## Next steps
 

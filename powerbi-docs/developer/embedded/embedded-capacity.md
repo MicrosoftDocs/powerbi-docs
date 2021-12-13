@@ -112,7 +112,7 @@ The table below describes the resources and limits of each SKU.
 | P4/A7* | 64  | 32  | 32  | 200 | 200 | 240  | 10  | 320 |
 | P5/A8* | 128 | 64  | 64  | 400 | 400 | 480  | 10  | 640 |
 
-\* SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+\* SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 # [Premium Gen1](#tab/gen1)
 
@@ -127,7 +127,7 @@ The table below describes the resources and limits of each SKU.
 | P4/A7* | 64  | 32  | 32  | 200 | 200 | 240  | 10  | 48  |
 | P5/A8* | 128 | 64  | 64  | 400 | 400 | 480  | 10  | 96  |
 
-\* SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+\* SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 ---
 
