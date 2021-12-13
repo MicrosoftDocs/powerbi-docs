@@ -195,5 +195,3 @@ Click on an alert to start drilling down to its details and to see management op
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Data protection metrics report](service-security-data-protection-metrics-report.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)

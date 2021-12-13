@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q3
-ms.date: 12/12/2021
+ms.date: 12/13/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -111,6 +111,10 @@ When a sensitivity label is applied to a dataset or report in the Power BI servi
 Downstream inheritance is a critical link in Power BI’s end-to-end information protection solution. Together with inheritance from data sources, inheritance upon creation of new content, inheritance upon export to file, and other capabilities for applying sensitivity labels, downstream inheritance helps ensure that sensitive data remains protected throughout its journey through Power BI, from data source to point of consumption.
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
+
+## Data loss prevention (DLP) policies (preview)
+
+Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. DLP policies for Power BI currently support detection of sensitivity labels on datasets, and can trigger automatic risk remediation actions such as alerts to security admins in Microsoft 365 compliance portal and policy tips for end users. See [Data loss prevention policies for Power BI (preview)](service-security-dlp-policies-for-power-bi.md) for detail.
 
 ## Default label policy
 
