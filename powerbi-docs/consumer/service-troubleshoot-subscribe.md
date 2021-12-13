@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Troubleshooting Power BI subscriptions
 
-Here are some common issues that may come up when you're subscribing yourself or others to a dashboard or report. Please also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations-and-limitations)
+Here are some common issues that may come up when you're subscribing yourself or others to a dashboard or report. Also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations-and-limitations)
 
 If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/). 
 
@@ -51,7 +51,7 @@ I've set up a subscription but am not receiving the subscription emails.
 
 ## The links in my email subscription no longer work
 
-If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.
+If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that coworker to either cancel the emails or resubscribe you.
 
 ## The language in my subscription is not correct  
 
@@ -71,7 +71,7 @@ Dashboards with more than 25 pinned tiles, or four pinned live report pages, may
 - For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 
 ### Tile type not supported
-For dashboard subscriptions, certain types of tiles aren't yet supported. These include: streaming tiles, video tiles, custom web content tiles. 
+For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles. 
 
 ## My subscription is delayed  
 You notice that your subscription emails aren't being delivered as expected. 
@@ -79,7 +79,7 @@ You notice that your subscription emails aren't being delivered as expected.
 ### Periods of peak demand
 - The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. If the email isn't being blocked, contact your Power BI administrator or IT help desk for assistance. 
 
-- On rare occasions, email subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and email subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
+- On rare occasions, email subscriptions may take longer than 15 minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and email subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 
 ### Email software is blocking delivery
 Another possibility is that your email software is blocking the Power BI sender. To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
@@ -94,11 +94,11 @@ Subscriptions set to **After Data Refresh** for the report or dashboard will
 
 Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](end-user-subscribe.md#subscribe-to-paginated-reports). 
 
-## My subscription has over 200 recipients 
+## My subscription has more than 200 recipients 
 
 There's a limit to the number of subscribers for one report or dashboard. After you pass 200 subscribers, you may encounter issues with delivery. To reduce the number, use group email aliases instead. Each email alias counts as one subscriber. 
 
-## I get an error that my subscription has over 20 pages
+## I get an error that my subscription has more than 20 pages
 You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.
 
 ## Data security for subscription email content  
@@ -110,7 +110,7 @@ For dashboard subscriptions, if any tiles have row level security (RLS) applied,
 ### Recipients don't have access to the report or dashboard
 If you choose to include a link, ensure that all users also have access to the content. Subscribed users receive report attachments, with data based on your permissions. 
 
-:::image type="content" source="media/end-user-subscribe/power-bi-troubleshoot.png" alt-text="Screenshot showing 2 options selected under the heading Also include.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-troubleshoot.png" alt-text="Screenshot showing two options selected under the heading Also include.":::
 
 ### I removed access for others, but they can still open the report or dashboard
 Clearing the **Access to this report/dashboard** option does not revoke access for users who have already been granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-dashboard) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-report).
@@ -136,7 +136,7 @@ There are certain Power BI features that will not work when using the subscripti
 
 - Email subscriptions do not support most [custom visuals](../developer/visuals/develop-power-bi-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 
-- For dashboard subscriptions, certain types of tiles aren't yet supported. These include: streaming tiles, video tiles, custom web content tiles.
+- For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
 
 - For dashboard subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  
 
