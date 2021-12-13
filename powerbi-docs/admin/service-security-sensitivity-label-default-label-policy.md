@@ -58,7 +58,7 @@ Where:
 * Default labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow users to open or create unlabeled *.pbix* files or Power BI artifacts.
 * Default label policy settings for Power BI are independent of the default label policy settings for files and email.
 * Default labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not subject to default label policies.
-* Default label policies in Power BI are not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power Bi service, no default label will applied automatically.
+* Default label policies in Power BI are not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label will be applied automatically.
 
 ## Next steps
 
