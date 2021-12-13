@@ -20,7 +20,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 
 * DLP policies for Power BI are defined in the Microsoft 365 compliance portal.
 * DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled are supported.
-* DLP evaluation consumes capacity. Metering for DLP capacity consumption is not yet in place. 
+* DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
@@ -41,7 +41,7 @@ When a dataset is evaluated by DLP policies, if it matches the conditions specif
 * Scheduled refresh
 
 >[!NOTE]
-> DLP evaluation of the dataset does not occur in either of the following cases:
+> DLP evaluation of the dataset does not occur in either of the following is true:
 > * The initiator of the event is a service principal.
 > * The dataset owner is either a service principal or a B2B user.
 
@@ -59,15 +59,15 @@ When a DLP policy detects an issue with a dataset:
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the Alerts tab in the data loss prevention section of the compliance center.
+* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
 
     ![Screenshot of Alerts tab in the compliance center.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
 ## Configure a DLP policy for Power BI
 
-1. Log into the Microsoft 365 compliance portal.
+1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
 
-1. Choose the Data loss prevention solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
+1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
     ![Screenshot of D L P create policy page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create.png)
 
@@ -86,7 +86,7 @@ When a DLP policy detects an issue with a dataset:
  
     When done, click **Next**.
 
-1. Enable Power BI as a location for the DLP policy. Disable all other locations. Currently, DLP policies for Power BI must specify Power BI as the sole location.
+1. Enable Power BI as a location for the DLP policy. **Disable all other locations**. Currently, DLP policies for Power BI must specify Power BI as the sole location.
 
     ![Screenshot of D L P choose location page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-choose-location.png)
 
@@ -115,7 +115,7 @@ When a DLP policy detects an issue with a dataset:
 
     ![Screenshot of D L P create rule form.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-rule-form.png)
  
-    ### Conditions
+### Conditions
 
 In the condition section, you define the conditions under which the policy will apply to a dataset. Conditions are created in groups. Groups make it possible to construct complex conditions.
 
@@ -132,9 +132,9 @@ In the condition section, you define the conditions under which the policy will 
     
     ![Screenshot of D L P add conditions section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-add-conditions.png)
  
-    When you choose **Sensitivity label**, you will be able to choose a particular sensitivity label from a list that will appear.
+    When you choose **Sensitivity labels**, you will be able to choose a particular sensitivity label from a list that will appear.
 
-    You can add additional sensitivity labels to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the labels is required for the condition to hold. Make sure Any of these is selected, since datasets can’t have more than one label applied.
+    You can add additional sensitivity labels to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the labels is required for the condition to hold. Make sure **Any of these** is selected, since datasets can’t have more than one label applied.
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
@@ -148,7 +148,7 @@ In the condition section, you define the conditions under which the policy will 
  
 ### Exceptions
 
-If dataset content or the sensitivity label of the dataset matches any of the defined exceptions, the rule won’t be applied to the dataset. 
+If the sensitivity label of the dataset matches any of the defined exceptions, the rule won’t be applied to the dataset. 
 
 Exceptions are configured in the same way as conditions, described above.
     
@@ -195,3 +195,4 @@ Click on an alert to start drilling down to its details and to see management op
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
