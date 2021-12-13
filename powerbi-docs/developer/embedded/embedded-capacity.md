@@ -97,7 +97,7 @@ The table below lists payment and usage considerations per capacity.
 
 ### SKU memory and computing power
 
-The table below describes the resources and limits of SKU.
+The table below describes the resources and limits of each SKU.
 
 # [Premium Gen1](#tab/gen1)
 
