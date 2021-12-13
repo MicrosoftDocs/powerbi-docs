@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/12/2021
+ms.date: 12/13/2021
 LocalizationGroup: Data from files
 ---
 
@@ -115,18 +115,18 @@ When a DLP policy detects an issue with a dataset:
 
     ![Screenshot of D L P create rule form.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-rule-form.png)
  
-### Conditions
-    
+    ### Conditions
+
 In the condition section, you define the conditions under which the policy will apply to a dataset. Conditions are created in groups. Groups make it possible to construct complex conditions.
 
- 1. Open the conditions section, choose **Add condition** and then **Content contains**.
+1. Open the conditions section, choose **Add condition** and then **Content contains**.
 
     ![Screenshot of D L P add conditions content contains section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-add-conditions-content-contains.png)
  
     This opens the first group (named Default – you can change this).
 
-    1. Choose **Add**, and then **Sensitivity labels**.
-
+1. Choose **Add**, and then **Sensitivity labels**.
+        
     >[!NOTE]
     > Sensitive info types are currently not supported.
     
@@ -144,7 +144,7 @@ In the condition section, you define the conditions under which the policy will 
 
     The image below shows a rule containing two groups, joined by **OR** logic.
 
-    ![](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-content-contains.png) 
+    ![Screenshot of rule with two groups.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-content-contains.png) 
  
 ### Exceptions
 
@@ -156,9 +156,10 @@ Exceptions are configured in the same way as conditions, described above.
  
 ### Actions
 
+Protection actions are currently unavailable for Power BI DLP policies.
+
 ![Screenshot of D L P policy actions section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-actions-section.png)
 
-Protection actions are currently unavailable for Power BI DLP policies.
 
 ### User notifications
 
@@ -192,7 +193,7 @@ Click on an alert to start drilling down to its details and to see management op
 
 ## Next steps
 
-* [Mandatory label policy for Power BI](service-security-sensitivity-label-mandatory-label-policy.md)
+* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
