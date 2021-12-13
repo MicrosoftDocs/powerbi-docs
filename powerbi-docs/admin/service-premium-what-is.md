@@ -96,7 +96,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 \* SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
->Using a single larger SKU can be preferable to combining smaller SKUs. For example, one P2 SKU instead of two P1 SKUs. Using a larger SKU enables you to use larger models and achieve better parallelism with the P2 SKU.
+>Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
+
 
 ### Capacity workloads
 
