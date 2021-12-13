@@ -162,8 +162,8 @@ The following known limitations currently apply to Premium Gen2:
     | P1/A4   | 8   | 4   | 4   | 25  | 25  | 30   | 6   | 40  |
     | P2/A5   | 16  | 8   | 8   | 50  | 50  | 60   | 6   | 80  |
     | P3/A6   | 32  | 16  | 16  | 100 | 100 | 120  | 10  | 160 |
-    | P4/A7** | 64  | 32  | 32  | 200 | 240 | 480  | 240 | 320 |
-    | P5/A8** | 128 | 64  | 64  | 400 | 480 | 960  | 480 | 640 |
+    | P4/A7** | 64  | 32  | 32  | 200 | 240 | 480  | 10  | 320 |
+    | P5/A8** | 128 | 64  | 64  | 400 | 480 | 960  | 10  | 640 |
     
     \* The Premium Gen2 app doesn't currently expose these metrics.
 
