@@ -7,8 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
-ms.date: 07/16/2020
+ms.topic: 12/13/2021
 LocalizationGroup: Reports
 ---
 
@@ -106,10 +105,10 @@ Power BI supports many operators in addition to '**and**'. The table below lists
 |**gt**     | greater than        |no | yes | yes  | product/price gt 20
 |**le**     |   less than or equal      | no | yes | yes  | product/price le 100
 |**lt**     |  less than       | no | yes | yes |  product/price lt 20
-|**in\*\***     |  including       | yes | yes |  yes | Student/Age in (27, 29)
+|**in\***     |  including       | yes | yes |  yes | Student/Age in (27, 29)
 
 
-\*\* When using **in**, the values to the right of **in** can be a comma-separated list enclosed in parentheses, or a single expression that returns a collection.
+\* When using **in**, the values to the right of **in** can be a comma-separated list enclosed in parentheses, or a single expression that returns a collection. See the [IN Operator article](/odata/webapi/in-operator) for examples.
 
 ### Numeric data types
 
