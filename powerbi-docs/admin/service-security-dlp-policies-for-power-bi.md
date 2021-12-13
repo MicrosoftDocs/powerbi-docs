@@ -41,7 +41,7 @@ When a dataset is evaluated by DLP policies, if it matches the conditions specif
 * Scheduled refresh
 
 >[!NOTE]
-> DLP evaluation of the dataset does not occur in either of the following is true:
+> DLP evaluation of the dataset does not occur if either of the following is true:
 > * The initiator of the event is a service principal.
 > * The dataset owner is either a service principal or a B2B user.
 
