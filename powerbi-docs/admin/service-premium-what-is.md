@@ -82,23 +82,21 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
-| --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
-| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
-| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
-| | | | | | | |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | CPU time/minute | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism |
+| ------ | --- | --- | --- | --- | --- | ---- | --- | --- |
+| EM1/A1 | 1   | 0.5 | 0.5 | 3   | 3   | 3.75 | 1   | 5   |
+| EM2/A2 | 2   | 1   | 1   | 6   | 5   | 7.5  | 2   | 10  |
+| EM3/A3 | 4   | 2   | 2   | 10  | 10  | 15   | 2   | 20  |
+| P1/A4  | 8   | 4   | 4   | 25  | 25  | 30   | 6   | 40  |
+| P2/A5  | 16  | 8   | 8   | 50  | 50  | 60   | 6   | 80  |
+| P3/A6  | 32  | 16  | 16  | 100 | 100 | 120  | 10  | 160 |
+| P4/A7* | 64  | 32  | 32  | 200 | 240 | 240  | 240 | 320 |
+| P5/A8* | 128 | 64  | 64  | 400 | 480 | 480  | 480 | 640 |
 
-<a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
+\* SKUs greater than 100 GB are available most regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
->Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
-
+>Using a single larger SKU can be preferable to combining smaller SKUs. For example, one P2 SKU instead of two P1 SKUs. Using a larger SKU enables you to use larger models and achieve better parallelism with the P2 SKU.
 
 ### Capacity workloads
 
