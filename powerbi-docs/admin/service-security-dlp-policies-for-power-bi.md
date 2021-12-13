@@ -20,6 +20,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 
 * DLP policies for Power BI are defined in the Microsoft 365 compliance portal.
 * DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled are supported.
+* DLP evaluation consumes capacity. Metering for DLP capacity consumption is not yet in place. 
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
@@ -137,13 +138,13 @@ In the condition section, you define the conditions under which the policy will 
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
-    []() 
+    ![Screenshot of D L P conditions group section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-condition-group.png) 
  
     You can create more than one group, and you can control the logic between the groups with **AND** or **OR** logic. 
 
     The image below shows a rule containing two groups, joined by **OR** logic.
 
-    []() 
+    ![](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-content-contains.png) 
  
 ### Exceptions
 
@@ -188,38 +189,6 @@ Log into the Microsoft 365 compliance portal and navigate to **Data loss prevent
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
 Click on an alert to start drilling down to its details and to see management options.
-
-
-![Screenshot of Activity Explorer.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-activity-explorer.png)
-
-![Screenshot of D L P add conditions section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-add-conditions.png)
-
-
-
-
-
-![Screenshot of D L P conditions group section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-condition-group.png)
-
-![Screenshot of D L P content contains section.](media/service-security-dlp-policies-for-power-bi/(power-bi-dlp-content-contains.png)
-
-
-
-
-![Screenshot of D L P create rule page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-rule.png)
-
-![Screenshot of D L P create rule form.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-rule-form.png)
-
-
-
-
-
-
-
-![Screenshot of D L P rule name description.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-rule-name-description.png)
-
-
-
-
 
 ## Next steps
 
