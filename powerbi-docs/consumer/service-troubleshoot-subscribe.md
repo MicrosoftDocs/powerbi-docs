@@ -128,7 +128,7 @@ When you receive the subscription email, it includes a link to **Go to report or
 
 The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
 - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
-- The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages).
+- The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages)).
 - The attachment file is under 25 MB in size.
  
 ## Which Power BI features are not supported in subscriptions
