@@ -85,7 +85,7 @@ The following table describes Gen2 national cloud supportability. If a certain c
 |Environment |Supported |Unsupported features |
 |------------|----------|---------------------|
 |U.S. Government Community Cloud (GCC)            |✔️ |Autoscale |
-|U. S. Government Community Cloud High (GCC High) |✔️ |          |
+|U.S. Government Community Cloud High (GCC High) |✔️ |          |
 
 ## Next steps
 
