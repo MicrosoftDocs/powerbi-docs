@@ -75,9 +75,18 @@ You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to comple
 
 ### Use the Power BI automation tool extension
 
-The Power BI automation tool is an Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure Devops. It eliminates the need for using APIs or scripts to manage pipelines. Each operation can be used individually to perform a simple task, such as creating a pipeline, or used together in an Azure DevOps pipeline to create a more complex scenario such as creating a pipeline, assigning a workspace to the pipeline, adding users and deploying.
+The Power BI automation tool is an Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure Devops. It eliminates the need for using APIs or scripts to manage pipelines. Each operation can be used individually to perform a simple task such as creating a pipeline, or used together in an Azure DevOps pipeline to create a more complex scenario such as creating a pipeline, assigning a workspace to the pipeline, adding users and deploying.
 
-After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=ms-pbi-api.pbi-automation-tools) extension to DevOps, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
+After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=ms-pbi-api.pbi-automation-tools) extension to DevOps, a service connection needs to be created. The following connections are available:
+
+* **Service principal** (recommended) - This connection authenticates using a [service principal](./../developer/embedded/embed-service-principal.md) and requires the Azure AD app’s secret and application ID. When using this option, verify that the [Power BI service admin settings](./../developer/embedded/embed-service-principal.md##step-3---enable-the-power-bi-service-admin-settings) for the service principal are enabled.
+
+* **Username and password** – Configured as a generic service connection with a username and a password. This connection method doesn’t support multi-factor authentication. Microsoft recommends using the service principal connection method as it doesn’t require storing user credentials on Azure DevOps.
+
+>[!NOTE]
+>The Power BI automation tool uses Azure DevOps service connection to store credentials. For more details, see [How we store your credentials for Azure DevOps Services](/azure/devops/organizations/security/credential-storage).
+
+After enabling a service connection for your Azure DevOps Power BI automation tool, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
 
 * Create a new pipeline
 
