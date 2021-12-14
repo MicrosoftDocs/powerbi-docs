@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q3
-ms.date: 10/19/2021
+ms.date: 12/13/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -19,8 +19,9 @@ For information about enabling sensitivity labels on your tenant, including lice
 
 For information about how to apply sensitivity labels on your Power BI content and files, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md).
 
->[!NOTE]
->Please use **[this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** to submit any feedback you may have concerning Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. The product team is interested in hearing about your experiences and greatly appreciates any suggestions you may have to help us improve the product to better suit your information protection needs. Thanks!
+#### Give us your feedback
+
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
 
 ## Introduction
 
@@ -111,11 +112,11 @@ Downstream inheritance is a critical link in Power BI’s end-to-end information
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
 
-## Default label policy (preview)
+## Default label policy
 
 To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content. Currently, default label policies are supported in Power BI Desktop only. See [Default label policy](service-security-sensitivity-label-default-label-policy.md) for more information.
 
-## Mandatory label policy (preview)
+## Mandatory label policy
 
 To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. See [Mandatory label policy](service-security-sensitivity-label-mandatory-label-policy.md) for more information.
 

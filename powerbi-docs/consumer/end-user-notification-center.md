@@ -7,8 +7,9 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 12/08/2021
 LocalizationGroup: Dashboards
+ROBOTS: NOINDEX
 ---
 
 # View Power BI notifications
