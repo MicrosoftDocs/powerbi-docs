@@ -165,8 +165,10 @@ The process includes of the following steps:
 
 1. Ensure the target dataset has the required minimum compatibility level. In SSMS, right-click the **[dataset name] > Properties > Compatibility Level**. To increase the compatibility level, either use a createOrReplace TMSL script or check the following TOM sample code for an example.
 
+    ```
     a. Import policy - 1550
     b. Hybrid policy - 1565
+    ```
 
 2.	Add the *RangeStart* and *RangeEnd* parameters to the dataset expressions. If necessary, also add a function to convert Date/Time values to date keys. 
 3.	Define a *RefreshPolicy* object with the desired archiving (rolling window) and incremental refresh periods as well as a source expression that filters the target table based on the *RangeStart* and *RangeEnd* parameters. Set the refresh policy mode to Import or Hybrid depending on your real-time data requirements. Hybrid causes Power BI to add a DirectQuery partition to the table to fetch the latest changes from the data source that occurred after the last refresh time.
