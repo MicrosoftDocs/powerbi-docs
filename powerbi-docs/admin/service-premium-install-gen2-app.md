@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/03/2021
+ms.date: 12/14/2021
 LocalizationGroup: Premium 
 ---
 
@@ -26,19 +26,71 @@ Before you install the Gen2 metrics app, review these requirements:
 
 * The app only works with Gen2 capacities
 
-## Install the app
+## Install the app for the first time
 
-To install the Gen2 metrics app, follow these steps:
+To install the Power BI Premium Capacity Utilization and Metrics app for the first time, follow these steps:
 
-1. Go to [AppSource > Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport) and select **Get it now**.
+1. Select one of these options to get the app from AppSource:
 
-1. If prompted, sign in to AppSource using your work or school account and complete the registration screen. The app will take you to the Power BI Service to complete the process. Select **Install** to continue.
+    * Go to [AppSource > Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport) and select **Get it now**.
 
-1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
+    * In Power BI service, do the following:
+
+        1. Select **Apps**.
+
+        2. Select **Get apps**.
+
+        3. Search for **Power BI Premium**.
+
+        4. Select the **Power BI Premium Capacity Utilization and Metrics** app.
+
+        5. Select **Get it now**.
+
+2. When prompted, sign in to AppSource using your Microsoft account and complete the registration screen. The app will take you to the Power BI service to complete the process. Select **Install** to continue.
+
+    :::image type="content" source="media\service-premium-install-gen2-app\one-more-thing.png" alt-text="Screen capture of the one more thing window which includes fields to fill in with your Microsoft account details.":::
+
+3. In the *Install this Power BI app* window, select install.
+
+    :::image type="content" source="media\service-premium-install-gen2-app\install-app.png" alt-text="Screen capture of the install this Power B I app, with the install button highlighted.":::
+
+4. Wait a few seconds for the app to install.
+
+## Upgrade the app
+
+To upgrade a previous installation of the Power BI Premium Capacity Utilization and Metrics app, follow these steps:
+
+1. Select one of these options to get the app from AppSource:
+
+    * Go to [AppSource > Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport) and select **Get it now**.
+
+    * In Power BI service, do the following:
+
+        1. Select **Apps**.
+
+        2. Select **Get apps**.
+
+        3. Search for **Power BI Premium**.
+
+        4. Select the **Power BI Premium Capacity Utilization and Metrics** app.
+
+        5. Select **Get it now**.
+
+2. 
+
+## Run the app for the first time
+
+To complete the installation, you need to configure the Power BI Premium utilization and metrics app by running it for the first time.
+
+1. In Power BI service, select **Apps**.
+
+2. Select the **Premium Capacity Utilization And Metrics** app.
+
+3. when you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
     :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of setup screen showing connect button.":::
 
-3. In the first window, fill in the following fields:
+4. In the **Connect to Premium Capacity Utilization And Metrics** window, fill in the following fields:
 
     * **CapacityID** - An ID of a capacity you're an admin of. You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL.
 
@@ -46,13 +98,11 @@ To install the Gen2 metrics app, follow these steps:
 
     * **UTC_offset** - 0
 
-    * **APIBaseURL** - `api.powerbi.com`
+    * **Timepoint** - The time that you want the app to draw metrics for. Set this value using a valid date time format such as `dd/mm/yyyy hh/mm/ss`.
 
-    * (Optional) - The app automatically refreshes data every day at midnight. To turn off this option, expand the *Advanced* option and turn the switch off.
+5. Select **Next**.
 
-4. Select **Next**.
-
-5. In the second window, fill in the following fields:
+6. In the second window, fill in the following fields:
 
     * **Authentication method** - Select your authentication method. The default authentication method is *OAuth2*.
 
