@@ -267,6 +267,8 @@
         href: service-connect-to-health-emergency-response.md
       - name: "Emissions Impact Dashboard"
         href: service-connect-to-emissions-impact-dashboard.md
+      - name: "Emissions Impact Dashboard for Microsoft 365 (preview)"
+        href: service-connect-to-emissions-impact-dashboard-for-m365.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
       - name: "Power BI Premium Capacity Metrics"
