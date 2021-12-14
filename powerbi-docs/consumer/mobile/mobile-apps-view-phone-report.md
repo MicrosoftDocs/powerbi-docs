@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/16/2021
+ms.date: 12/12/2021
 ---
 # View Power BI reports optimized for your phone
 
@@ -17,13 +17,13 @@ Applies to:
 |:--- |:--- |
 | iPhones |Android phones |
 
-When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the optimized report in portrait view.
+When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the report in the optimized view.
 
 ![Report in portrait mode](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a phone-optimized report doesn't exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If the report doesn't have an optimized view, in portrait orientation you'll see small regular version of the report page. For a closer look, you can either tip the phone to landscape orientation, or, if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
 
-![Report page not optimized](./media/mobile-apps-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
+![Report page not optimized](./media/mobile-apps-view-phone-report/power-bi-phone-report-page-not-optimized.png)
 
 All the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
 
