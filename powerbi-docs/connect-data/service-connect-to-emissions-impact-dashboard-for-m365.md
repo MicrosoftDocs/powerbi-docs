@@ -41,33 +41,25 @@ The Emissions Impact Dashboard for Microsoft 365 (preview) is supported for any 
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
-    ![Screenshot of Emissions Impact Dashboard on AppSource.](media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-appsource.png). [Peter to update screenshot] 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-appsource.png" alt-text="Screenshot of Emissions Impact Dashboard on AppSource.":::
 
     You can also search for the app in Power BI. 
 
 1. When prompted, click **Install**. 
 
-    ![Screenshot of install dialog.]() 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-install.png" alt-text="Screenshot of install dialog.":::
 
 1. When the app finishes installing, it will appear on your Power BI Apps page. Click on the app and open it. 
 
-    ![Screenshot of app installed on app page.]() 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-apps-page.png" alt-text="Screenshot of app installed on app page.":::
 
 1. Select **Connect your data**. 
 
-     ![]()
-
-    Graphical user interface, application, email, website
-
-    Description automatically generated 
+     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-connect-data.png" alt-text="Screenshot of connect data.":::
 
 1. In the **Connect to Emissions Impact Dashboard** dialog, enter your Microsoft 365 tenant ID. 
 
-    Graphical user interface, text, application, email
-
-    Description automatically generated 
-
-    [Peter to update screenshot after name change] 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-tenant-id.png" alt-text="Screenshot of tenant id input."::: 
 
     When done, click **Next**. 
 
@@ -77,17 +69,11 @@ The Emissions Impact Dashboard for Microsoft 365 (preview) is supported for any 
     * For **Privacy level setting for this data source**, choose **Organizational**.
     * When done, click **Sign in and connect**. 
 
-    ![]()
-
-    Graphical user interface, text, application
-
-    Description automatically generated 
-
-    [Peter to update screenshot after name change as well as IKS API change] 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-sign-in-connect.png" alt-text="Screenshot of authentication and sign in."::: 
 
 1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained in the [prerequisites](#prerequisites). 
 
-    ![Pick an account.]() 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
     Wait for the view to build. This can take 24-48 hours. Please refresh the dataset after 24 hours. 
 
@@ -95,11 +81,11 @@ The Emissions Impact Dashboard for Microsoft 365 (preview) is supported for any 
 
 Periodically you may receive update notifications from Appsource/Power BI about a new version of the app. When you install the new version, the following options are available: 
 
-![Screenshot of Update app dialog.]() 
+:::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-update.png" alt-text="Screenshot of Update app dialog.":::
 
 Choose **Update the workspace and the app**, then click **Install**. This will install the update, overwriting the existing/installed workspace and app. 
 
-## Issues 
+### Issues 
 
 If there are any issues with the dataset refresh/app update during the updating process, please validate the following steps and refresh the dataset. 
 
@@ -109,35 +95,19 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 1. Open the **Scheduled Refresh** option in the dataset settings. 
 
-    ![]()
-
-    Graphical user interface, text, application, email
-
-    Description automatically generated 
-
-    [Peter to update screenshot with new name] 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-scheduled-refresh.png" alt-text="Screenshot of scheduled refresh button."::: 
 
 1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Tenant ID** with valid permissions, mentioned in the [prerequisites](#prerequisites) section above. 
 
-    ![]()
-
-    Graphical user interface, text, application
-
-    Description automatically generated 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-data-source-credentials.png" alt-text="Screenshot of data source credentials.":::
 
 1. Once the above steps are validated, go back to the app workspace and click on the **Refresh** option. 
 
-    ![]()
-
-    Graphical user interface, text, application
-
-    Description automatically generated 
-
-    [Peter to update screenshot with new name] 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-refresh.png" alt-text="Screenshot of refresh button."::: 
 
 1. Once the dataset has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace. 
 
-    ![Screenshot of Updating App.]() 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-update-app.png" alt-text="Screenshot of update app button."::: 
 
 ## Additional resources
 
