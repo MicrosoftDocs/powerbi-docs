@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 12/14/2021
 LocalizationGroup: Connect to services
 ---
 
@@ -164,3 +164,35 @@ The Emissions Impact Dashboard may take 24-48 hours to load your data. Return af
 **How am I supposed to use this data, and where do I report it?** 
 
 Your emissions can be reported as part of your company's Scope 3 indirect carbon emissions. Scope 3 emissions are often disclosed in sustainability reports, CDP climate change, and other reporting outlets. In addition to the emissions totals, the emissions savings provide a clear example of how your company's decision to use Microsoft 365 services is contributing to global emissions reductions. To contextualize, the app indicates the equivalent vehicle miles avoided corresponding to the reduction in GHG emissions, based on EPA's equivalency calculator factors as of January 2020.
+
+### Methodology 
+
+**What is the methodology behind the tool?** 
+
+The Emissions Impact Dashboard reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft's purchases of renewable energy. As part of the app's development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology**[ tab in the tool. 
+
+**Does this calculation include all Microsoft 365 applications?**
+
+The estimates are currently limited to emissions associated with your organization's use of Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, and the Microsoft Search function within these applications. 
+
+### Characterizing on-premises emissions 
+
+**Where does the Emissions Impact Dashboard obtain data about my on-premises emissions and operations?**
+
+The Emissions Impact Dashboard doesn't obtain any information specifically about your on-premises datacenters except what you provide. As described in subsequent FAQs, the Emissions Impact Dashboard relies on industry research and user inputs about the efficiency and energy mix of on-premises alternatives to develop an estimate of on-premises emissions. 
+
+**What are the assumptions regarding on-premises estimations? Are efficiency savings just from improvements in Power Usage Effectiveness (PUE)?**
+
+Efficiencies associated with Microsoft cloud services include far more than improved PUE. While Microsoft datacenters strive to optimize PUE, the primary efficiency improvements come from IT operational efficiency (dynamic provisioning, multitenancy, server utilization) and IT equipment efficiency (tailoring hardware to services ensuring more energy goes towards useful output), in addition to datacenter infrastructure efficiency (PUE improvements). Our [2018 study](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) quantifies these savings compared to a range of on-premises alternatives ranging from low-efficiency to high-efficiency datacenters. These findings are used to estimate the energy use required for a corresponding on-premises datacenter to provide the same services that each customer consumes on the Microsoft cloud. 
+
+**What is the assumed energy mix for the on-premises infrastructure?**
+
+By default, the Emissions Impact Dashboard estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It is assumed that the on-premises datacenter would be located on the same grid as Microsoft's datacenters. However, for customers who purchase renewable electricity *in addition* to what's on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Emissions Impact Dashboard will adjust on-premises emissions accordingly. 
+
+**When should I choose Low, Medium, or High for the efficiency of the on-premises infrastructure?**
+
+Users should select the efficiency most representative of the on-premises deployment they would like to compare against, based on the equipment and datacenter characteristics here:
+
+* **Low**: Physical servers and direct attached storage in small localized datacenter (500-1,999 square feet).
+* **Medium**: Mix of physical/virtualized servers and attached/dedicated storage in mid-tier internal datacenter (2,000-19,999 square feet).
+* **High**: Virtualized servers and dedicated storage in high-end internal datacenter (>20,000 square feet).
