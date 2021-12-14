@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 12/14/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## November 2021 Update (2.99.563.0)
+## December 2021 Update ()
 
-We're all thankful for the great things that Power BI serves for our extended business intelligence family. Even better, there's always enough features to feast on the next day, so invite your friends and even folks you don't know, sit down around this article, and share what you like best about what's on the menu.
+This month's features are like a sleigh ride through your favorite snowy location, lighting up the season with all sorts of new things we've been wanting and asking for throughout the year.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -43,32 +43,23 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New Format pane (preview)  [[video]](https://youtu.be/d_Un5tnKuIc?t=120)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473933) [[article]](https://powerbi.microsoft.com/blog/introducing-the-new-format-pane-preview/) 
-* Page and bookmark navigators [[video]](https://youtu.be/d_Un5tnKuIc?t=302)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473934) 
-* Sort legend  [[video]](https://youtu.be/d_Un5tnKuIc?t=595)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473938) 
-* Bold, italic, underline for text formatting  [[video]](https://youtu.be/d_Un5tnKuIc?t=636)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473939)
-* Text box superscript, subscript, and bulleted lists  [[video]](https://youtu.be/d_Un5tnKuIc?t=659)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473940)
-* Pie and donut chart rotation  [[video]](https://youtu.be/d_Un5tnKuIc?t=679)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473941)
-* Scorecard visual  [[video]](https://youtu.be/d_Un5tnKuIc?t=1034)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473942)
-* Update on tenant-level Bing Maps feature switch  [[video]](https://youtu.be/d_Un5tnKuIc?t=1173)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473943)
+* Sparklines (preview)  [[video]](https://youtu.be/iyAmYqTRCLY?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785231) [[article]](https://powerbi.microsoft.com/blog/introducing-the-new-format-pane-preview/) 
+* New Format Pane updates (preview) [[video]](https://youtu.be/iyAmYqTRCLY?t=448)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785232) 
 
 
 ### Data connectivity
-* Azure Synapse Analytics (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1223)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473945)
-* Google Sheets (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1271)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473946)
-* Azure Cosmos DB V2 (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1329)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473947)
-* Delta Sharing (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1363)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473948) 
-* Many more updated connectors [[video]](https://youtu.be/d_Un5tnKuIc?t=1397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473949) 
+* Azure Data Explorer (update) [[video]](https://youtu.be/iyAmYqTRCLY?t=491)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785234)
+* TIBCO Data Virtualization now Generally Available [[video]](https://youtu.be/iyAmYqTRCLY?t=551)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785238)
+* Many more updated connectors [[video]](https://youtu.be/iyAmYqTRCLY?t=514)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785235) 
 
 
 ### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/d_Un5tnKuIc?t=1944)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473970)
-* Find report sample files easily in AppSource [[video]](https://youtu.be/d_Un5tnKuIc?t=1991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473972)
-* Many new visuals [[video]](https://youtu.be/d_Un5tnKuIc?t=1964)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473973)
+* New visuals in AppSource [[video]](https://youtu.be/iyAmYqTRCLY?t=1229)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785259)
+* Many new visuals and updates [[video]](https://youtu.be/iyAmYqTRCLY?t=1269)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785260)
 
 
 ### Other
-* Automatic page refresh now supports DirectQuery for Power BI datasets and Azure Analysis Services  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473978)  
+* Visualize your data quickly from Power Apps and Dynamics 365 apps (Preview)   [[video]](https://youtu.be/iyAmYqTRCLY?t=1303)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785268)  
 
 
 
@@ -81,14 +72,16 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Admin and governance - datasets hub improvements  [[video]](https://youtu.be/d_Un5tnKuIc?t=1414)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473954) 
-* Admin and governance - Power BI Goals  [[video]](https://youtu.be/d_Un5tnKuIc?t=1516)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473956)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Admin and governance - email subscriptions access using Admin API  [[video]](https://youtu.be/iyAmYqTRCLY?t=583)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785243) 
+* Allow sharing links to include your changes to the report  [[video]](https://youtu.be/iyAmYqTRCLY?t=646)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785244)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Hybrid Tables in Power BI Premium (Preview)  [[video]](https://youtu.be/iyAmYqTRCLY?t=691)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785245)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Deployment pipelines - assign a workspace to all pipeline stages  [[video]](https://youtu.be/iyAmYqTRCLY?t=806)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785246)  [[article]](/power-bi/create-reports/service-goals-introduction)
 
 
 ---
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-december-2021-feature-summary/).
 
 
 ### Power BI monthly update video
@@ -98,7 +91,7 @@ The following video describes each of these updates. You can also watch this vid
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 
-> [!VIDEO https://www.youtube.com/embed/d_Un5tnKuIc]
+> [!VIDEO https://www.youtube.com/embed/iyAmYqTRCLY]
 
 
 ## More videos
