@@ -86,7 +86,7 @@ After adding the [Power BI automation tools](https://marketplace.visualstudio.co
 >[!NOTE]
 >The Power BI automation tool uses Azure DevOps service connection to store credentials. For more details, see [How we store your credentials for Azure DevOps Services](/azure/devops/organizations/security/credential-storage).
 
-After enabling a service connection for your Azure DevOps Power BI automation tool, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
+Once you enable a service connection for your Azure DevOps Power BI automation tool, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
 
 * Create a new pipeline
 
