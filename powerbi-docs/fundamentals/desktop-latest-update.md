@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## December 2021 Update ()
+## December 2021 Update (2.100.261.0)
 
 This month's features are like a sleigh ride through your favorite snowy location, lighting up the season with all sorts of new things we've been wanting and asking for throughout the year.
 
