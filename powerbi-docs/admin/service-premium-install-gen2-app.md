@@ -76,7 +76,13 @@ To upgrade a previous installation of the Power BI Premium Capacity Utilization 
 
         5. Select **Get it now**.
 
-2. 
+2. In the **Update app** window, select one of the following:
+
+    * **Update the workspace and the app** - Updates the current app you have and the Power BI workspace it resides in. This is the default option for upgrading the app. It'll remove the current version and its workspace and replace them with the new app version and a corresponding workspace.
+
+    * **Update only workspace content without updating the app** - Updates the Power BI workspace but doesn't update the app. Select this option to update your workspace without upgrading the app.
+
+    * **Install another copy of the app into a new workspace** - Creates a new Power BI workspace and installs the new version of the app in this workspace. Select this option if you want to keep the old version of the app alongside the new one. This option creates another workspace for the app new version and installs the app in the newly created workspace. If you select this option, you'll need 
 
 ## Run the app for the first time
 
