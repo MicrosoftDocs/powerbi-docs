@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/06/2021
+ms.date: 12/13/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -23,7 +23,7 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 
 Power BI displays your Home canvas, as shown in the following image. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often.  Your Home view will also depend on the layout you've selected.  The image below is using the *Expanded* view.  The *Simplified* view displays less categories of content; you'll see only tabs for **Recents, Favorites, My apps** and a link to **Show more**.  
  
-![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-experienced.png)
+![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-experience.png)
 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
