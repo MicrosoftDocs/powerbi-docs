@@ -41,7 +41,7 @@ The Emissions Impact Dashboard for Microsoft 365 (preview) is supported for any 
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
-    ![Screenshot of Emissions Impact Dashboard on AppSource.](). [Peter to update screenshot] 
+    ![Screenshot of Emissions Impact Dashboard on AppSource.](media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-appsource.png). [Peter to update screenshot] 
 
     You can also search for the app in Power BI. 
 
