@@ -31,9 +31,13 @@ https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refresh
 
 By using the base URL, resources and operations can be appended based on parameters. Groups, Datasets, and Refreshes are *collections*. Group, Dataset, and Refresh are *objects*.
 
-**Examples needed!!!**
-
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
+
+Sample request
+
+```http
+POST https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes
+```
 
 ## Requirements
 
@@ -60,7 +64,6 @@ The body may resemble the following:
 ```json
 {
     "type": "Full",
-    "notifyOption": "MailOnFailure"
     "commitMode": "transactional",
     "maxParallelism": 2,
     "retryCount": 2,
@@ -85,7 +88,6 @@ Specifying parameters is not required. If not specified, the default is applied.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
-|`notifyOption`     |  NotifyOption       |    `none`     |    Mail notification options (`MailOnSuccess` and/or `MailOnFailure`, or `none`)     |
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. <br>`Add` type is not supported.      |
 |`commitMode`<sup>[1](#commit)</sup>     |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads on which to run processing commands in parallel. This value aligned with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
@@ -104,9 +106,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 
 The response also includes a Location response-header field to point the caller to the refresh operation that was just created/accepted. The Location is that of the new resource which was created by the request, which includes the `refreshId`:
 
-```http
-https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refreshes/{refreshId}
-```
+
 
 ## GET /refreshes
 
@@ -198,6 +198,41 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the refreshId.
 
 **Example needed!!!**
+
+## Limitations
+
+#### Non-asynchronous refresh operations
+
+Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<refreshId>`.
+
+Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<refreshId>`.
+
+#### Power BI Embedded
+
+If a capacity is paused manually in the Portal or by using PowerShell, or a system outage occurs, if there is an on-going asynchronous refresh operation the status of the refresh will stay in `In-Progress` for the maximum of six hours. If the capacity is resumed within six hours, the asynchronous refresh operation will resume automatically. If the capacity is resumed after more than six hours, the asynchronous refresh operation may return a time out error. The asynchronous refresh operation must then be run again.
+
+## Troubleshooting
+
+#### Problem - Dataset eviction
+
+Power BI uses dynamic memory management to optimize capacity memory. If during an asynchronous refresh operation the dataset is evicted from memory, the following error may be returned:
+
+```json
+{
+    "messages": [
+        {
+            "code": "0xC11C0020",
+            "message": "Session cancelled because it is connected to a database that has been evicted to free up memory for other operations",
+            "type": "Error"
+        }
+    ]
+}
+
+```
+
+#### Solution: Run the asynchronous refresh operation again
+
+To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../admin/service-premium-what-is.md#how-capacities-function).
 
 ## Code sample
 
