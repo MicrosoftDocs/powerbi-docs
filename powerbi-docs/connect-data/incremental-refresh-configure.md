@@ -1,8 +1,8 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI datasets
 description: Describes how to configure incremental refresh
-author: minewiskan
-ms.author: owend
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -66,28 +66,33 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
     ![Table context menu](media/incremental-refresh-configure/incremental-refresh-context-menu.png)
 
-1. In **Incremental refresh** > **Table**, verify or select the table, and then click the **Incrementally refresh this table** slider to **On**. If the slider is disabled, it means the Power Query expression for the table does not include a filter based on the RangeStart and RangeEnd parameters.
+1. In **Incremental refresh and real-time data** > **Select table**, verify or select the table. By default, the Select table listbox defaults to the table you select in Data view.
 
-1. In **Archive data starting:**, specify the historical *store* period you want to include in the dataset. All rows with dates in this period will be loaded into the dataset in the service, unless other filters apply.
+1. Specify required settings:
+    
+    In **Set import and refresh ranges** > **Incrementally refresh this table** click the slider to **On**. If the slider is disabled, it means the Power Query expression for the table does not include a filter based on the RangeStart and RangeEnd parameters.
 
-1. In **Incrementally refresh data starting:**, specify the *refresh* period. All rows with dates in this period will be refreshed in the dataset each time a manual or scheduled refresh operation is performed.
+    In **Archive data starting:**, specify the historical *store* period you want to include in the dataset. All rows with dates in this period will be loaded into the dataset in the service, unless other filters apply.
 
-    ![Refresh policy dialog](media/incremental-refresh-configure/incremental-refresh-policy-dialog-02.png)
+    In **Incrementally refresh data starting:**, specify the *refresh* period. All rows with dates in this period will be refreshed in the dataset each time a manual or scheduled refresh operation is performed.
 
-1. Select optional settings:
+1. Specify optional settings:
 
-    Select **Get the latest data in real time with DirectQuery (Premium only)** to include the latest data changes that occurred at the data source after the last refresh period. This setting causes the incremental refresh policy to add a DirectQuery partition to the table.
+    In **Choose optional settings**, select **Get the latest data in real time with DirectQuery (Premium only)** to include the latest data changes that occurred at the data source after the last refresh period. This setting causes the incremental refresh policy to add a DirectQuery partition to the table.
 
     Select **Only refresh complete days** to refresh only whole days. If the refresh operation detects a day is not complete, rows for that whole day are not refreshed. This option is automatically enabled if you select **Get the latest data in real time with DirectQuery (Premium only)**.
 
     Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, the current period is not refreshed. For datasets published to Premium capacities, you can also specify a custom query. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+    
+    Depending on your settings, your policy should look something like this:
 
+    ![Refresh policy dialog](media/incremental-refresh-overview/pbid-incremental-refresh-dialog-02.png)
 
-1. Click **Apply all** to complete the refresh policy. Source data is not loaded with this step.
+1. Review your settings and then click **Apply** to complete the refresh policy. Source data is not loaded with this step.
 
 ## Save and publish to the service
 
-When your RangeStart and RangeEnd parameters, filtering, and refresh parameters are complete, be sure to save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../admin/service-premium-large-models.md) *prior* to invoking the first refresh in the service.
+When your RangeStart and RangeEnd parameters, filtering, and refresh policy settings are complete, be sure to save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../admin/service-premium-large-models.md) *prior* to invoking the first refresh in the service.
 
 ## Refresh dataset
 
