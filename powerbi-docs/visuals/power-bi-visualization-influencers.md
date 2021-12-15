@@ -2,13 +2,13 @@
 title: Key influencers visualizations tutorial
 description: 'Tutorial: Create a key influencers visualization in Power BI'
 author: aphilip94
-ms.author: philip.ancy
+ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-fDb5zZ3xmxU, video-2X1cW8oPtc8
 ms.topic: how-to
-ms.date: 10/12/2021
+ms.date: 10/15/2021
 LocalizationGroup: Visualizations
 ---
 # Create key influencers visualizations
