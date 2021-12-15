@@ -6,8 +6,8 @@ ms.author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
-ms.date: 05/26/2021
+ms.topic: conceptual
+ms.date: 11/18/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -25,8 +25,6 @@ There are many different ways designers can share content. But this article is f
 In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your roles and permissions, and where content is stored.
 
 This article lists which features in the Power BI service are available to *business users* like you. By definition, *business users* have a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have content stored in Premium capacity.
-
-<art>
 
 ## Quick review of terminology
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
@@ -56,8 +54,11 @@ The second column represents a *business user*.  A business user:
 
 - has a free user license
 - is part of an organization that has a Premium capacity subscription
-- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in Premium capacity.
+- gets content (apps, dashboards, reports) from Pro or PPU users who share that content using app workspaces in Premium capacity.
 - is assigned the **Viewer** role to those app workspaces. 
+
+> [!NOTE]
+> Users with PPU subscriptions cannot share content with users who have a Pro or free license.
 
 ### Legend
 ![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario    
@@ -110,7 +111,14 @@ The second column represents a *business user*.  A business user:
 |  Add, delete, edit  |  ![green myw](media/end-user-features/green-mwo.png)  |  ![orange x](media/end-user-features/orange-x.png) |   
 | Create a report in another workspace based on a dataset in this workspace | ![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |  
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
-|Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
+|Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Analyze in Excel |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)*|
+|Create a report |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Create a paginated report |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Share |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Manage permissions |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Save a copy |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Create from template |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
 |Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 | Collaborate with colleagues on the same version of a report |![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
@@ -134,9 +142,9 @@ The second column represents a *business user*.  A business user:
 | Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Insights on reports<sup>1</sup>  | ![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)| 
 | Lineage view  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-|PDF: create from report pages |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Export to PDF* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Performance Inspector |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
-| PowerPoint: create from report pages*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
+| Export to PowerPoint*   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Promote content to Home  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 | Print report pages* |![green dot](media/end-user-license/power-bi-green-dot.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Interact with Q&A visual |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |

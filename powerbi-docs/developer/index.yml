@@ -13,9 +13,9 @@ metadata:
   ms.subservice: powerbi-developer # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
-  author: KesemSharabi #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kesharab #Required; microsoft alias of author; optional team alias.
-  ms.date: 31/03/2020 #Required; mm/dd/yyyy format.
+  author: mberdugo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: monaberdugo #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/20/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -31,17 +31,21 @@ highlightedContent:
       itemType: overview
       url: visuals/develop-power-bi-visuals.md
     # Card
-    - title: Power BI Embedded Generation 2 (preview)
+    - title: Power BI Embedded Generation 2
       itemType: whats-new
       url: embedded/power-bi-embedded-generation-2.md        
     # Card
     - title: Power BI embedded analytics Client APIs
       itemType: whats-new
-      url: /javascript/api/overview/powerbi/  
+      url: /javascript/api/overview/powerbi/
+    # Card
+    - title: Explore features and APIs in the embedded analytics playground
+      itemType: whats-new
+      url: https://aka.ms/pbieplayground
     # Card
     - title: Automated  template app configuration
-      itemType: concept
-      url: template-apps/template-apps-auto-install.md
+      itemType: how-to-guide
+      url: ./../connect-data/template-apps-auto-install.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -82,20 +86,20 @@ conceptualContent:
         url: visuals/index.yml
         text: See more
     # Card
-    - title: Automation
+    - title: Embedded analytics client APIs
       links:
-        - url: automation/overview-of-power-bi-rest-api.md
+        - url: /javascript/api/overview/powerbi/embedded-analytics-client-api
           itemType: overview
-          text: What can developers do with the Power BI API?
-        - url: automation/walkthrough-push-data.md
-          itemType: tutorial
-          text: Push data into a Power BI dataset
-        - url: automation/configure-credentials.md
+          text: What is the Power BI embedded analytics Client API?
+        - url: /javascript/api/overview/powerbi/showcase-export-events
+          itemType: overview
+          text: Go from insights to quick action showcase
+        - url: /javascript/api/overview/powerbi/embed-report
           itemType: how-to-guide
-          text: Configure credentials
+          text: Embed a report
       # footerLink (optional)
       footerLink:
-        url: automation/index.yml
+        url: /javascript/api/overview/powerbi/
         text: See more
 
 # additionalContent section (optional)
@@ -132,10 +136,6 @@ additionalContent:
         - title: Embedding setup tool
           summary: Set up your Power BI embedding environment.
           url: https://app.powerbi.com/embedsetup
-        # Card
-        - title: Playground
-          summary: Try features and explore APIs.
-          url: https://aka.ms/pbieplayground
         # Card
         - title: Power BI embedded analytics Client APIs
           summary: Explore the Power BI embedded analytics Client APIs.

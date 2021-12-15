@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/13/2021
+ms.date: 10/27/2021
 ---
 
 # Manage Power BI visuals admin settings
@@ -74,7 +74,7 @@ When this setting is enabled, only [certified Power BI visuals](../developer/vis
 
 2. Click **Enabled**.
 
-3. Click **Apply**.
+3. Select **Apply**.
 
 ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the add and use certified visuals only (block uncertified) option is expanded, and the enabled button is turned on.](media/organizational-visuals/certified-visuals.png)
 

@@ -5,8 +5,8 @@ author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
-ms.topic: reference
+ms.subservice: powerbi-resource
+ms.topic: conceptual
 ms.date: 06/30/2021
 ---
 
@@ -71,8 +71,8 @@ You may also find useful adoption-related guidance published by other Microsoft 
 
 A wide variety of other adoption guides for individual technologies can be found online. A few examples include:
 
-- [Microsoft Teams adoption guide](https://teamworktools.azurewebsites.net/tft/#p=1).
-- [Microsoft Security and Compliance adoption guide](https://teamworktools.azurewebsites.net/sec/).
+- [Microsoft Teams adoption guide](https://adoption.microsoft.com/files/tft/#p=1).
+- [Microsoft Security and Compliance adoption guide](https://adoption.microsoft.com/files/sec/).
 - [SharePoint Adoption Resources](https://resources.techcommunity.microsoft.com/resources/sharepoint-adoption/).
 
 ## Industry guidance

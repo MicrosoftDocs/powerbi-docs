@@ -9,9 +9,9 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.date: 05/22/2021
-ms.custom: mode-portal
+ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
-#customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
+#Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
 ---
 # Quickstart - Getting around in Power BI service
 
@@ -60,7 +60,7 @@ To begin, open the Power BI service (app.powerbi.com).
     ![Screenshot shows the Power BI screen with a red border around My workspace.](./media/end-user-experience/power-bi-my-workspace.png)
 
 
-    The sample includes one one report and one dataset. Typically, *business users* won't receive datasets, but this sample is designed for all users and it does include one.
+    The sample includes one report and one dataset. Typically, *business users* won't receive datasets, but this sample is designed for all users and it does include one.
 
     ![Screenshot shows My workspace screen with one report and one dataset listed.](./media/end-user-experience/power-bi-workspace.png)
 

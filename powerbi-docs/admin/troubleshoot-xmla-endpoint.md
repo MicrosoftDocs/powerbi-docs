@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 05/05/2021
+ms.date: 11/12/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -130,20 +130,44 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
-## Errors in SSMS - Premium Gen 2
+## Errors on Premium Gen 2 capacity
 
-### Query execution
+### Connect to Server error in SSMS
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connecting to a Power BI workspace with SQL Server Management Studio (SSMS), the following error may be displayed:
+
+```
+TITLE: Connect to Server
+------------------------------
+Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].
+------------------------------
+ADDITIONAL INFORMATION: 
+The remote server returned an error: (400) Bad Request.
+Technical Details:
+RootActivityId: 
+Date (UTC): 10/6/2021 1:03:25 AM (Microsoft.AnalysisServices.AdomdClient)
+------------------------------
+The remote server returned an error: (400) Bad Request. (System)
+```
+
+When connecting to a Power BI workspace with SSMS, ensure the following:
+
+- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+- The [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
+- You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Query execution in SSMS
+
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
-Error -1052311437:
+Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-### Refresh operations
+### Refresh operations in SSMS
 
 When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
@@ -160,6 +184,15 @@ Run complete
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
+### Other client applications and tools
+
+ Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium Gen2 capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium Gen2 capacity through the XMLA endpoint are:
+
+|Client Library | Version  |
+|---------|---------|
+|MSOLAP    |     15.1.65.22         |
+|AMO  |   19.12.7.0         |
+|ADOMD     |    19.12.7.0           |
 
 ## Editing role memberships in SSMS
 
@@ -209,10 +242,6 @@ As stated in the error message, to resolve this issue, either delete or rename t
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
 
-## Dataset refresh through the XMLA endpoint
-
-Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
-
 ## DISCOVER_M_EXPRESSIONS 
 
 The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not supported in Power BI using the XMLA Endpoint. Applications can use the Tabular object model (TOM) to obtain M expressions used by the data model.
@@ -244,7 +273,7 @@ In some cases, as shown in the following error, "consumed memory" is 0 but the a
 To potentially reduce exceeding the effective memory limit:
 
 - Upgrade to a larger Premium capacity (SKU) size for the dataset.
-- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh. For example, if using incremental refresh, specify a shorter range of dates between the RangeStart and RangeEnd parameters.
+- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
 - For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
 ## See also

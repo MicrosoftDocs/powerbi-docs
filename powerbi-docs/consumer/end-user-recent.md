@@ -44,6 +44,9 @@ If your lists get long, [use the search field and sorting to find what you need]
 
 Watch Amanda demonstrate how the Power BI service **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]

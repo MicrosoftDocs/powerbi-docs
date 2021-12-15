@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 12/07/2021
 LocalizationGroup: Gateways
 ---
 
@@ -35,8 +35,14 @@ In a standard installation, the gateway runs as the machine-local service accoun
 
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
-> [!NOTE]
-> If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.
+
+If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.The local service SID for NT SERVICE/PBIEgwService is as follows: 
+
+`S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
+
+To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
+
+`SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
 
 ## Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
@@ -62,7 +68,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
 
-   ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
+   ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
    
@@ -159,7 +165,7 @@ Complete the following configuration steps:
 
 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gatewaysvc-properties.png)
 
 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 
@@ -214,6 +220,9 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
+> [!NOTE]
+> Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
     ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
@@ -261,7 +270,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 * For Import based report, SSO credentials are not used, but the credentials entered in data source page are used. 
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
-* Fore DirecyQuery based report, SSO credentials of the user are used.
+* For DirectQuery based report, SSO credentials of the user are used.
 * For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import. 
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways. 

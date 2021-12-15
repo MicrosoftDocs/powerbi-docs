@@ -5,8 +5,8 @@ author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
-ms.topic: reference
+ms.subservice: powerbi-resource
+ms.topic: conceptual
 ms.date: 06/30/2021
 ---
 

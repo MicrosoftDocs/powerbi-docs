@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 ms.custom: references_regions
 LocalizationGroup: Data from files
 ---
@@ -153,4 +153,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)

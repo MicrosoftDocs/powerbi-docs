@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 05/18/2021
+ms.date: 07/14/2021
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
@@ -20,8 +20,9 @@ When sensitivity labels are enabled:
 
 Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.
 
->[!NOTE]
->During the first 48 hours after users opt in to the Information Protection preview feature, **they may experience issues with .pbix files that have sensitivity labels applied (e.g. publishing the .pbix to the service, downloading the .pbix from the service)**. Such issues are expected and will resolve automatically within 48 hours.
+#### Give us your feedback
+
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
 
 ## Licensing and requirements
 
@@ -36,7 +37,7 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 * Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. See [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) for detail.
 
-* Customers in China must enable rights management for the tenant and add the Microsoft Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet#configure-aip-for-customers-in-china).
+* Customers in China must enable rights management for the tenant and add the Microsoft Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
 
 * Using sensitivity labels in Desktop requires the Desktop December 2020 release and later.
 
@@ -45,7 +46,7 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 ## Enable sensitivity labels
 
-Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings. For additional considerations pertaining to Desktop, see [Disabling sensitivity labels in Desktop across your org](#disable-sensitivity-labels-in-desktop-across-your-org) below. 
+Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings.
 
 To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
@@ -67,18 +68,6 @@ In the **Information Protection** section, perform the following steps:
 > [!IMPORTANT]
 > Only Power BI Pro users who have *create* and *edit* permissions on the asset, and who are part of the relevant security group that was set in this section, will be able to set and edit the sensitivity labels. Users who are not part of this group won’t be able to set or edit the label.  
 
-## Disable sensitivity labels in Desktop across your org
-
-For organizations that want to make sure that .pbix files **do not** work with sensitivity labels, the Power BI admin can create a group policy that causes Power BI to block users from classifying and protecting .pbix files or opening files that have already had protection applied to them. To create such a policy:
-
-1. Open the [Registry Editor](https://support.microsoft.com/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11).
-
-1. Find the key **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop**.
-
-1. Find the valueName **EnableInformationProtection** and set it to **false**.
-
-See the [sensitivity label overview](./service-security-sensitivity-label-overview.md#limitations) for further limitations and considerations related to using sensitivity labels in Power BI Desktop.
-
 ## Troubleshooting
 
 Power BI uses Microsoft Information Protection sensitivity labels. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
@@ -89,7 +78,7 @@ Power BI uses Microsoft Information Protection sensitivity labels. Thus if you e
 
 ## Considerations and limitations
 
-See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#limitations) for the list of sensitivity label limitations in Power BI.
+See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations) for the list of sensitivity label limitations in Power BI.
 
 ## Next steps
 

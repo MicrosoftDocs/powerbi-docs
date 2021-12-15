@@ -1,18 +1,19 @@
 ---
-title: Finding Power BI visuals
-description: This article describes the main ways of getting Power BI visuals. 
-author: KesemSharabi
-ms.author: kesharab
+title: Main sources for acquiring Power BI visuals
+description: This article describes the main ways of getting Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 05/14/2021
+ms.date: 11/07/2021
 LocalizationGroup: Visualizations
+ms.custom: intro-overview
 ---
 
-# Where to find Power BI visuals
+# Sourcing and acquiring Power BI visuals
 
 Power BI visuals can be obtained from three main sources:
 

@@ -5,9 +5,9 @@ author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 10/26/2021
 LocalizationGroup: Conceptual
 ---
 
@@ -48,7 +48,7 @@ To provide an end-to-end solution for protecting sensitive assets, the product t
 
 This article provides a comprehensive answer to all these questions. It starts with an overview of the service architecture and explains how the main flows in the system work. It then moves on to describe how users authenticate to Power BI, how data connections are established, and how Power BI stores and moves data through the service. The last section discusses the security features that allow you, as the service admin, to protect your most valuable assets.
 
-The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=9555) and to the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581). For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](/compliance/regulatory/offering-home).
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=9555) and to the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581). For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](/compliance/regulatory/offering-home).
 
 The Power BI service follows the Security Development Lifecycle (SDL), strict security practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Learn more at [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
@@ -269,7 +269,7 @@ For Premium Gen1, a single sandbox exists per each one of the capacities of the 
 
 ![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
 
-For Premium Gen2 (in preview), an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
+For Premium Gen2, an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
 
 ![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
 
@@ -354,7 +354,7 @@ See [Automate Premium workspace and dataset tasks with service principals](../ad
 Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
 When sensitivity labels are enabled in Power BI:
-* Sensitive data, both in the Power BI service (GA) and in Power BI Desktop (preview), can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
+* Sensitive data, both in the Power BI service and in Power BI Desktop, can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
 * Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or *.pbix* files, to help ensure data is protected even when it leaves Power BI.
 * *.pbix* files can be encrypted according to MIP label policies when a MIP label is applied on the *.pbix* file in Desktop, ensuring that only authorized users can edit this file.
 * It's easy to classify and protect *.pbix* files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
@@ -488,10 +488,6 @@ The following questions are common security questions and answers for Power BI. 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
 * The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure AD to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
-
-## Feedback and suggestions
-
-We appreciate your feedback. We're interested in hearing any suggestions you have for improvement, additions, or clarifications to this white paper, or other content related to Power BI. Send your suggestions to [pbiss@microsoft.com](mailto:pbiss@microsoft.com).
 
 ## Additional resources
 

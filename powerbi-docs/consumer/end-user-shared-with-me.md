@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/15/2021
+ms.date: 08/23/2021
 ms.custom: video-G26dr2PsEpk
 LocalizationGroup: Dashboards
 ---
@@ -23,9 +23,8 @@ When a colleague shares a dashboard or a report with you, it appears in your **S
 Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro or Premium Per User (PPU) license. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
     
 
-> [!NOTE]
-> This video uses an older version of the Power BI service.
-    
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

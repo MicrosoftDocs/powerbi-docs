@@ -107,7 +107,7 @@ For Import datasets:
 For DirectQuery datasets:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
-- Create [aggregations](../transform-model/desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
+- Create [aggregations](../admin/aggregations-auto.md) to cache higher-level results to reduce the number of DirectQuery requests
 - Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
 - Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model

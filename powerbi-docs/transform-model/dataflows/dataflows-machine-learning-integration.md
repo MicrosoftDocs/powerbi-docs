@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-dataflows
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -108,7 +108,7 @@ AutoML in Power BI enables data analysts to use dataflows to build machine learn
 
 AutoML supports the creation of **Binary Prediction**, **Classification**, and **Regression Models** for dataflows. These are types of supervised machine learning techniques, which means that they learn from the known outcomes of past observations to predict the outcomes of other observations. The input dataset for training an AutoML model is a set of rows that are **labeled** with the known outcomes.
 
-AutoML in Power BI integrates [automated ML](/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
+AutoML in Power BI integrates [automated ML](/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
 
 After an ML model is trained, AutoML automatically generates a Power BI report that explains the likely performance of your ML model. AutoML emphasizes explainability by highlighting the key influencers among your inputs that influence the predictions returned by your model. The report also includes key metrics for the model.
 
@@ -368,16 +368,13 @@ To learn more about dataflows, see [Introduction to dataflows and self-service d
 
 To learn more about Azure Machine Learning, please see:
 
-- Overview:  [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Overview:  [What is Azure Machine Learning?](/azure/machine-learning/overview-what-is-azure-machine-learning)
 - Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 
 ### Granting access to the Azure ML model to a Power BI user
 
-To access an Azure ML model from Power BI, the user must have **Read** access to the Azure subscription.  In addition:
-
-- For Machine Learning Studio (classic) models, **Read** access to Machine Learning Studio (classic) web service
-- For Machine Learning models, **Read** access to the Machine Learning workspace
+To access an Azure ML model from Power BI, the user must have **Read** access to the Azure subscription and the Machine Learning workspace.
 
 The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function.  For further details, please see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
@@ -401,11 +398,11 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 6. Select **Save**.
 
-7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning Studio (classic) web service, *or* the Machine Learning workspace hosting the model.
+7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning workspace hosting the model.
 
 ### Schema discovery for Machine Learning models
 
-Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning.  Unlike the Machine Learning Studio (classic), which helps automate the task of creating a schema file for the model, in the case of Machine Learning, the data scientist must explicitly generate the schema file using Python.
+Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. The data scientist must explicitly generate the schema file using Python.
 
 This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation. 
 
@@ -442,7 +439,7 @@ If the model returns multiple output parameters, they are grouped together as a 
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table table.
 
-##Limitations
+## Considerations and limitations
 
 - AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
 - AzureML models are not supported for Guest users.
@@ -462,5 +459,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

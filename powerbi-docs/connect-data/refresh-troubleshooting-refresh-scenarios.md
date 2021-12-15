@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 03/10/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -73,7 +73,7 @@ The maximum size for datasets imported into the **Power BI service** is 1 GB. Th
 
 ## Scheduled refresh timeout
 
-Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
+Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
 
 ## Scheduled refresh failures
 
@@ -96,6 +96,15 @@ Visuals created in Power BI Desktop using such columns may behave or appear as d
 ## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
 
 If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
+
+## Refresh operation throttled by Power BI Premium
+
+A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the follow error message is logged into the refresh history:
+
+- *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+ 
+If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations. 
+
 
 ## Next steps
 

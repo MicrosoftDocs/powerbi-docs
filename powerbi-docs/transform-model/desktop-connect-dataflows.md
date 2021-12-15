@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 08/13/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to data created by Power Platform dataflows in Power BI Desktop
-In **Power BI Desktop**, you can connect to data created by **Power Platform dataflows** just like any other data source in Power BI Desktop.
+In **Power BI Desktop**, you can connect to data created by Power Platform dataflows just like any other data source in Power BI Desktop. Select **Power Platform** > **Dataflows**.
 
 ![Connect to dataflows](media/desktop-connect-dataflows/connect-dataflows_01.png)
 
-The **Power Platform dataflows** connector lets you connect to entities created by dataflows in the Power BI service. 
+The Power Platform dataflows connector lets you connect to entities created by dataflows in the Power BI service. 
 
 ## Considerations and limitations
 
-To use the **Power Platform dataflows connector**, you must be running a recent version of **Power BI Desktop**. You can always [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) and install it on your computer to ensure you have the most recent version.  
+To use the Power Platform dataflows connector, you must be running a recent version of **Power BI Desktop**. You can always [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) and install it on your computer to ensure you have the most recent version.  
 
 > [!NOTE]
 > The previous version of the Power Platform dataflows connector required that you download a .MEZ file and place it in a folder. Current versions of **Power BI Desktop** include the Power Platform dataflows connector, so that file is no longer required and can cause conflicts with the included version of the connector. If you manually placed that .MEZ file into the folder, you *must* delete that downloaded .MEZ file from your **Documents > Power BI Desktop > Custom connectors** folder to avoid conflicts. 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/12/2021
+ms.date: 12/01/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -62,11 +62,11 @@ Here's a breakdown of what you can see in each tile:
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 
-* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
+* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to an app that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS template apps, files, or databases.
 
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
@@ -95,7 +95,7 @@ Premium per user is a new way to license Premium features on a per user basis. A
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -428,7 +428,28 @@ This setting allows organizations to access features that work with Microsoft Te
 
 :::image type="content" source="media/service-admin-portal/power-bi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
 
-Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+Read more about [collaborating in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+
+### Install the Power BI app for Teams automatically
+
+Automatic installation makes it easier to install the Power BI app for Microsoft Teams, without needing to change Microsoft Teams app setup policies. This change speeds up the installation and removes admin hassles of configuring and maintaining infrastructure needed by an app setup policy.
+
+The **Install Power BI app for Microsoft Teams automatically** tenant setting is added to the Power BI admin portal so Power BI admins can control the auto-install behavior. By default, the auto-install is enabled.
+
+The automatic installation happens for a user under the following conditions: 
+
+- The Power BI app for Microsoft Teams is set to **Allowed** in the Microsoft Teams admin portal.
+- The Power BI tenant setting **Install Power BI app for Microsoft Teams automatically** is **Enabled**. 
+- The user has a Microsoft Teams license.
+- The user opens the Power BI service (e.g. app.powerbi.com) in a web browser.
+
+Initially, auto-install applies to new users the first time they visit the Power BI service in a web browser. Automatic installation will start occurring after November 1, 2021 for users who visit the Power BI service and meet the criteria.
+
+When auto-install occurs, users see the following notification in the Power BI service notification pane.
+
+:::image type="content" source="../collaborate-share/media/service-microsoft-teams-app/teams-auto-install-notification.png" alt-text="Notification that the Microsoft Teams app was automatically installed.":::
+
+Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
 ### Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
@@ -464,7 +485,9 @@ Users in the organization can create template apps and organizational content pa
 
 ### Push apps to end users
 
-Report creators can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). Learn more about [automatically installing apps for end users](../collaborate-share/service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+Admins can allow report creators to share apps directly with end users, without requiring installation from [AppSource](https://appsource.microsoft.com). In the admin portal, the setting is **Push apps to end users**. Learn more about [automatically installing apps for end users](../collaborate-share/service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+
+:::image type="content" source="media/service-admin-portal/admin-push-apps-end-users.png" alt-text="Screenshot of admin portal, Push apps to end users.":::
 
 ## Integration settings
 
@@ -490,6 +513,24 @@ This feature is on by default. Even if the feature is disabled, in SharePoint an
 
 Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
 
+### Snowflake (SSO)
+
+For dataset owners to be able to enable single sign-on for DirectQuery connections to Snowflake in dataset settings, a Power BI admin must enable the **Snowflake SSO** setting. This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. See [Connect to Snowflake in Power BI Service](../connect-data/service-connect-snowflake.md) for more detail.
+
+![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal/powerbi-admin-portal-snowflake-sso-setting.png)
+
+### Azure AD Single Sign-On (SSO) for Gateway
+
+This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through on-premises data gateways to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
+
+This feature is important for users who work with reports that require SSO connectivity in DirectQuery mode to data sources deployed in an Azure virtual network (Azure VNet). When you configure SSO for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report.
+
+An important security-related consideration is that gateway owners have full control over their on-premises data gateways. This means that it is theoretically possible for a malicious gateway owner to intercept Azure AD SSO tokens as they flow through an on-premises data gateway (this is not a concern for VNet data gateways because they are maintained by Microsoft). 
+
+Because of this possible threat, the Azure AD Single Sign-On feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway. Before enabling the feature, make sure to restrict the ability to deploy on-premises data gateways in your organization to appropriate administrators.  
+
+![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
+
 ## R and Python visuals settings
 
 ### Interact with and share R and Python visuals
@@ -512,7 +553,7 @@ This setting must be enabled for audit log entries to be recorded. There can be 
 
 ### Usage metrics for content creators
 
-When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. [Learn more](../collaborate-share/service-usage-metrics.md)
+When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metrics.md).
 
 1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
 1. Enable (or disable) usage metrics > **Apply**.
@@ -521,7 +562,7 @@ When enabled, users in the organization can see usage metrics for dashboards, re
 
 ### Per-user data in usage metrics for content creators
 
-Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](../collaborate-share/service-usage-metrics.md)
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metrics.md).
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
@@ -587,6 +628,45 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
+## Share data with your Microsoft 365 services
+
+### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area
+
+:::image type="content" source="media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch-new.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
+
+This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
+
+Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may need to process and/or store Power BI data outside the geographic location of the Power BI tenant the data is located in.
+
+By enabling the switch, you, as a Power BI administrator, are explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, certain information about your Power BI content may potentially flow outside the geographic region where it is located.
+
+The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**.
+
+References:
+* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
+
+## Q&A settings
+
+### Review questions
+When this setting is enabled, dataset owners can review questions end-users ask about their data.
+
+![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
+
+### Synonym sharing
+When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
+
+![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
+
+> [!NOTE]
+> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
+
 ## Capacity settings
 
 ### Power BI Premium
@@ -648,15 +728,24 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |State  |Description  |
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| **Orphaned** | A workspace with no admin user. |
-| **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
-| **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Orphaned** | A workspace with no admin user. Please assign an admin. |
+| **Deleted** | A deleted workspace. A Power BI administrator can restore the workspace up to 90 days after it was deleted. When the 90 days pass, the workspace enters the *Removing* state.<br>If you delete a *MyWorkspace* workspace, it moves to the *Removing* state immediately, without the 90 days grace period. |
+| **Removing** | After deleting a workspace, and once the 90 day grace period passes, the workspace moves into the *Removing* state. During this state the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
+| **Not found** | If the customer's API request includes a workspace ID for a workspace that doesn't belong to the customer's tenant, "Not found" is returned as the status for that ID. |
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets.
 
-:::image type="content" source="media/service-admin-portal/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
+![Admins can also manage and recover workspaces.](media/service-admin-portal/admin-portal-manage-workspaces.png)
 
-Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
+_Selecting one or more workspaces for upgrade._
+
+### Upgrade workspaces
+
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade or use **Upgrade all** to queue up upgrade of all **Group** workspaces. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. Learn more about [workspace upgrade](../collaborate-share/service-upgrade-workspaces.md) before starting your Power BI admin-initiated workspace upgrade.
+
+![Admins can choose to Upgrade all workspaces.](media/service-admin-portal/admin-portal-workspaces-upgrade-all.png)
+
+_Upgrade all queues up all workspaces for upgrade._
 
 The following table gives more details about the status of the upgrade.
 
@@ -665,12 +754,20 @@ The following table gives more details about the status of the upgrade.
 | **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
 | **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
+| **Failed** | The workspace failed because of a validation rule. Power BI has released and will continue to release fixes for upgrade failures, please retry any 'Failed' upgrades. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option during the 30-day period after the workspace was upgraded. |
 
-> [!NOTE]
-> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
-> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
-> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+#### Limitations to upgrading workspaces
+
+There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+
+- If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+- As noted above, please check for **Orphaned** workspaces after upgrade and be sure to assign an admin to those workspaces. Power BI Admins may use filters from the Admin Portal to find Orphaned workspaces and assign admins one by one or in bulk.
+
+![Use text filters from column headers to find the workspaces you want to take action on.](media/service-admin-portal/admin-portal-orphaned-workspaces.png)
+
+_Helpful tip: Use text filters from column headers to find the workspaces you want to take action on, like finding Orphaned workspaces to assign admins to._
 
 ## Custom branding
 

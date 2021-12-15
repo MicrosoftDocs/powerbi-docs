@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data from files
 ---
-# Dataflows limitations and considerations
+# Dataflows considerations and limitations
 
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
 
 ## General limitations
 
 * Feature parity across government environments can be found in the [Power BI feature availability for government](../../admin/service-govus-overview.md#power-bi-feature-availability) article.
-* Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **Diagram View**, deleted data sources appear as lineage for a dataflow.
+* Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **[Lineage View](../../collaborate-share/service-data-lineage.md)**, deleted data sources appear as lineage for a dataflow.
 * Deleted datasources  will still appear in the Setting page in the gateway drop-down.
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
 * *Breadth* equates to entities within a dataflow.
@@ -29,6 +29,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * Multi-Geo is currently not supported.
 * Vnet support is achieved by using a gateway.
 * When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
+* In Power BI dataflows, you can use parameters but you cannot edit them unless you edit the entire dataflow. In this regard parameters in dataflows behave similar to declared constants.
 
 
 ## Dataflow authoring
@@ -58,9 +59,9 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 ## Dataflows in shared capacities
 
-There are limitations for Dataflows in shared capacities:
+There are limitations for Dataflows in shared capacities (non-Premium capacities):
 
-* When refreshing Dataflows, timeouts in Shared are 2 hours per table, and 3 hours per Dataflow
+* When refreshing Dataflows, timeouts in a shared capacity are 2 hours per table, and 3 hours per Dataflow
 * Linked tables cannot be created in shared Dataflows, although they can exist within the Dataflow as long as the *Load Enabled* property on the query is disabled
 * Computed tables cannot be created in shared Dataflows
 * AutoML and Cognitive services are not available in shared Dataflows
@@ -68,7 +69,7 @@ There are limitations for Dataflows in shared capacities:
 
 ## Dataflows in Premium
 
-Dataflows that exist in Premium have the following limitations and considerations.
+Dataflows that exist in Premium have the following considerations and limitations.
 
 **Refreshes and data considerations:**
 
@@ -81,6 +82,9 @@ Dataflows that exist in Premium have the following limitations and consideration
 * When using a Premium Per User (PPU) license with dataflows, data is cleared when moving data out of a PPU environment
 
 * When a dataflow is refreshed in a Premium Per User (PPU) context, the data is not visible to non-PPU users
+
+* Incremental refresh works with dataflows only when the enhanced compute engine is enabled
+
 
 **Linked and Computed tables:**
 

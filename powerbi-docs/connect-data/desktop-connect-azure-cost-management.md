@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/08/2021
+ms.date: 12/08/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -31,7 +31,7 @@ To use the **Azure Cost Management connector** in Power BI Desktop, take the fol
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
-4. In the dialog that appears, enter either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**. 
+4. In the dialog that appears, for the **Choose Scope** drop down, use **Manually Input Scope** for **Microsoft Customer Agreements**, or use **Enrollment Number** for **Enterprise Agreements (EA)**. 
 
 
 ## Connect to a Microsoft Customer Agreement account 
@@ -49,6 +49,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
 5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* with the data copied from the previous steps. 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
+
+    Alternatively, for **Choose Scope**, select **Enrollment Number** and input the Billing Account ID string as copied from the previous steps.
+
 6.	Enter the number of months and select **OK**.
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
@@ -119,7 +122,20 @@ When you select **Load**, the data is loaded into Power BI Desktop.
 
 When the data you selected is loaded, the data tables and fields are shown in the **Fields** pane.
 
-## Limitations and considerations
+## Considerations and limitations
+
+The following considerations and limitations apply to the Azure Cost Management data connector:
+
+* Data row requests exceeding one million rows is not supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
+* The Azure Cost Management data connector does not work with Office 365 GCC customer accounts.
+* **Data refresh:** The cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day. 
+* **Data source reuse:** If you have multiple reports that are pulling the same data, and do not need additional report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
+
+    For more information on reusing data sources, see the following:
+
+    * [Introduction to datasets across workspaces](service-datasets-across-workspaces.md)
+    * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 

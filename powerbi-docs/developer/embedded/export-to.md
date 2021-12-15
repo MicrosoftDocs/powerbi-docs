@@ -1,12 +1,12 @@
 ---
 title: Export Power BI embedded analytics reports API
 description: Learn how to export an embedded Power BI report.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/09/2021
+ms.date: 10/19/2021
 ---
 
 # Export Power BI report to file (preview)
@@ -18,6 +18,19 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
     * When exporting to a .png, a report with multiple pages is compressed into a .zip file
     * Each file in the .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
+
+## Gen2
+
+>[!IMPORTANT]
+>The changes described in this section will be deployed to Premium Gen2 and Embedded Gen2 capacities in stages, over the following weeks. If these changes are not yet implemented in your Gen2 capacity, wait for the deployment to reach it.
+
+An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation). The workload under which export API operations will appear, is called `InteractiveReportExports`.
+
+The following improvements are available for [Premium Gen2](../../admin/service-premium-concepts.md) and [Embedded Gen2](power-bi-embedded-generation-2.md) capacities:
+
+* The number of Power BI exports per hour will not be limited to 50 per hour per capacity. Instead, the number of Power BI exports is limited to 50 report pages per minute per capacity.
+
+* [Concurrent requests](#concurrent-requests) are not applicable for Gen2 capacities. There's no maximum concurrent report pages limitation.
 
 ## Usage examples
 
@@ -128,6 +141,9 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 
 ## Concurrent requests
 
+>[!IMPORTANT]
+>This section isn't applicable for Gen2 capacities. In Premium and Embedded Gen2, there's no maximum concurrent report pages limitation.
+
 `exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
@@ -144,11 +160,13 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 |A5         |P2          |12         |
 |A6         |P3          |24         |
 
-## Limitations
+## Considerations and limitations
 
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
 * For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
+    >[!NOTE]
+    >This limitation isn't applicable for Premium and Embedded Gen2 capacities. Instead, in Gen2, the number of Power BI exports is limited to 50 report pages per minute per capacity.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
@@ -158,6 +176,8 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
     * R visuals
     * PowerApps
     * Python visuals
+    * Power Automate
+    * Paginated report visual
     * Visio
 
 ## Code examples

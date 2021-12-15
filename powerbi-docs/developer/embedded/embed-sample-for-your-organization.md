@@ -1,14 +1,14 @@
 ---
 title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your organization
 description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 12/17/2020
+ms.date: 12/05/2021
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -19,12 +19,16 @@ Power BI embedded analytics allows you to embed Power BI content such as reports
 In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
+>
 >* Set up your embedded environment.
 >* Configure an *embed for your organization* (also known as *user owns data*) sample application.
 
 To use your application, your users will need to sign in to Power BI.
 
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
+
+> [!IMPORTANT]
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -307,21 +311,13 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
-
 ## Next steps
-
-> [!div class="nextstepaction"]
->[Move to production](move-to-production.md)
 
 >[!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
->[Embed paginated reports for your customers](embed-paginated-reports-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed paginated reports for your organization](embed-paginated-reports-organization.md)
+>[Embed paginated reports](embed-paginated-reports.md)
 
 >[!div class="nextstepaction"]
 >[Ask the Power BI Community](https://community.powerbi.com/)

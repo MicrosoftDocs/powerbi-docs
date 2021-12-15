@@ -7,41 +7,42 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
-The Retail Analysis sample content pack contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis. 
+The Retail Analysis built-in sample contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis. 
 
 ![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Retail Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Retail Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
- Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+ Before you can use the sample, you must first [download it in the Power BI service](#get-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the content pack for this sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
     If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
-    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **Retail Analysis Sample**, and then choose **Connect**.  
   
    ![Connect to sample](media/sample-retail-analysis/retail16.png)
    
-5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample, and then adds a new dashboard, report, and dataset to your current workspace.
    
    ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
   
@@ -71,7 +72,7 @@ If you want to view the data source for this sample, it's also available as an [
 
    The **FD-01** district has the highest average **Sales per Square Foot** and FD-02 has the lowest **Total Sales Variance** compared to last year. FD-03 and FD-04 are worst performers overall.
 4. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
-5. To return to the dashboard, select  **Retail Analysis Sample** from the top nav pane.
+5. To return to the dashboard, select  **Retail Analysis Sample** from the left navigation bar.
 
    ![Navigation bar](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.
@@ -85,10 +86,10 @@ If you want to view the data source for this sample, it's also available as an [
 ## Review a tile created with Power BI Q&A
 Let's get more specific.
 
-1. Change the question to _this year sales **by district**_. Observe the result: Q&A automatically places the answer in a bar chart and suggests other phrases:
+1. Change the question to _this year's sales **by district**_. Observe the result. Q&A automatically places the answer in a bar chart:
 
    ![This year's sales by district in Q&A](media/sample-retail-analysis/retail8.png)
-2. Now change the question to _this year sales **by zip and chain**_.
+2. Now change the question to _this year's sales **by zip and chain**_.
 
    Notice how Power BI answers the question as you type and displays the appropriate chart.
 3. Experiment with more questions and see what kind of results you get.
@@ -155,6 +156,6 @@ The last area we want to explore is our growth by examining the new stores opene
 6. Explore by selecting other bars, lines, and bubbles throughout the charts and see what insights you can discover.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

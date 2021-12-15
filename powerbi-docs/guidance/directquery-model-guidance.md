@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 07/07/2021
 ---
@@ -118,7 +118,7 @@ In addition to the above list of optimization techniques, each of the following 
 
 The benefits of Import and DirectQuery models can be combined into a single model by configuring the storage mode of the model tables. The table storage mode can be Import or DirectQuery, or both, known as Dual. When a model contains tables with different storage modes, it is known as a Composite model. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
-There are many functional and performance enhancements that can be achieved by converting a DirectQuery model to a Composite model. A Composite model can integrate more than one DirectQuery source, and it can also include aggregations. Aggregation tables can be added to DirectQuery tables to import a summarized representation of the table. They can achieve dramatic performance enhancements when visuals query higher-level aggregates. For more information, see [Aggregations in Power BI Desktop](../transform-model/desktop-aggregations.md).
+There are many functional and performance enhancements that can be achieved by converting a DirectQuery model to a Composite model. A Composite model can integrate more than one DirectQuery source, and it can also include aggregations. Aggregation tables can be added to DirectQuery tables to import a summarized representation of the table. They can achieve dramatic performance enhancements when visuals query higher-level aggregates. For more information, see [Aggregations in Power BI Desktop](../admin/aggregations-auto.md).
 
 ## Educate users
 

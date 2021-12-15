@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/07/2021
+ms.date: 12/08/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -53,6 +53,8 @@ Because Power BI caches the data, Import mode dataset sizes can be substantial. 
 | A6 or P3 | 10 GB |
 | | |
 
+For more information about large datasets in Premium capacities, see [large datasets](../admin/service-premium-what-is.md#large-datasets). On A6 or P3 capacities, datasets can be refreshed to up to 12 GB.
+
 #### Datasets in DirectQuery/LiveConnect mode
 
 Power BI does not import data over connections that operate in DirectQuery/LiveConnect mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
@@ -64,7 +66,7 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+> Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
 
 > [!NOTE]
 > Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
@@ -73,9 +75,6 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 #### Push datasets
 
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
-
-> [!NOTE]
-> Push Mode has several limitations as documented in [Power BI REST API limitations](../developer/automation/api-rest-api-limitations.md).
 
 ### Power BI refresh types
 
@@ -315,15 +314,18 @@ Note also that the configured refresh time might not be the exact time when Powe
 
 ### Getting refresh failure notifications
 
-By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails to me** enabled.
+By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails dataset owner** enabled.
 
-It is also a good idea to specify additional recipients by using the **Email these users when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
+It is also a good idea to specify additional recipients by using the **Email these contacts when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
 
 Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
 ![Email for paused refresh](media/refresh-data/email-paused-refresh.png)
 
 To resume scheduled refresh, visit a report or dashboard built using this dataset or manually refresh the dataset using the **Refresh Now** option.
+
+> [!NOTE]
+> Sending refresh notifications to external users is not supported. The recipients you specify in the **Email these users when the refresh fails** textbox must have accounts in your Azure Active Directory tenant. This limitation applies to both dataset refresh and dataflow refresh.
 
 ### Checking refresh status and history
 
@@ -351,7 +353,7 @@ Checking the refresh history of your datasets regularly is one of the most impor
 In addition, consider the following recommendations to establish and maintain reliable data refresh processes for your datasets:
 
 - Schedule your refreshes for less busy times, especially if your datasets are on Power BI Premium. If you distribute the refresh cycles for your datasets across a broader time window, you can help to avoid peaks that might otherwise overtax available resources. Delays starting a refresh cycle are an indicator of resource overload. If a Premium capacity is completely exhausted, Power BI might even skip a refresh cycle.
-- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode dataset. However, DirectQuery/LiveConnect mode has several limitations, such as a one-million-row limit for returning data and a 225 seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For very large data volumes, consider the use of [aggregations in Power BI](../transform-model/desktop-aggregations.md).
+- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode dataset. However, DirectQuery/LiveConnect mode has several limitations, such as a one-million-row limit for returning data and a 225 seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For very large data volumes, consider the use of [aggregations in Power BI](../admin/aggregations-auto.md).
 - Verify that your dataset refresh time does not exceed the maximum refresh duration. Use Power BI Desktop to check the refresh duration. If it takes more than 2 hours, consider moving your dataset to Power BI Premium. Your dataset might not be refreshable on shared capacity. Also consider using [Incremental refresh](../connect-data/incremental-refresh-overview.md) for datasets that are larger than 1GB or take several hours to refresh.
 - Optimize your datasets to include only those tables and columns that your reports and dashboards use. Optimize your mashup queries and, if possible, avoid dynamic data source definitions and expensive DAX calculations. Specifically avoid DAX functions that test every row in a table because of the high memory consumption and processing overhead.
 - Apply the same privacy settings as in Power BI Desktop to ensure that Power BI can generate efficient source queries. Keep in mind that Power BI Desktop does not publish privacy settings. You must manually reapply the settings in the data source definitions after publishing your dataset.

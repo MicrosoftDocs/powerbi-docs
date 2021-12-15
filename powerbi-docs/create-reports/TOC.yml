@@ -17,6 +17,10 @@
       href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
+    - name: "Explore a Power BI sample"
+      href: sample-tutorial-connect-to-the-samples.md
+    - name: "Create a decomposition tree"
+      href: sample-tutorial-decomp-tree.md
     - name: "Online course: Paginated reports"
       href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload
@@ -40,10 +44,10 @@
       href: sample-procurement.md
     - name: "Retail Analysis sample"
       href: sample-retail-analysis.md 
-    - name: "Explore Retail Analysis sample"
-      href: sample-tutorial-connect-to-the-samples.md
     - name: "Sales and Marketing sample"
       href: sample-sales-and-marketing.md
+    - name: "Sales & Marketing sample template app"
+      href: sample-sales-marketing-template-app.md
     - name: "Supplier Quality Analysis sample"
       href: sample-supplier-quality.md
     - name: "Download the Financial Sample workbook"
@@ -77,12 +81,12 @@
           href: ../natural-language/q-and-a-tooling-advanced.md
         - name: "Q&A limitations"
           href: ../natural-language/q-and-a-limitations.md
-        - name: "Visualization types in Q&A"
-          href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: Paginated reports
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Paginated reports FAQ
+        href: ../paginated-reports/paginated-reports-faq.yml
       - name: Report Builder change log
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Sample Power BI paginated reports
@@ -111,8 +115,8 @@
         href: ../paginated-reports/paginated-reports-pagination.md
       - name: Previewing reports
         href: ../paginated-reports/report-builder-previewing-reports.md
-      - name: Paginated reports FAQ
-        href: ../paginated-reports/paginated-reports-faq.yml
+      - name: Default system credentials for web proxy
+        href: ../paginated-reports/report-builder-web-proxy-authentication.md
     - name: "Deployment pipelines"  
       items:
       - name: "Introduction to deployment pipelines"
@@ -134,6 +138,8 @@
         href: service-report-create-new.md
       - name: "Create a report quickly from a SharePoint list"
         href: service-quick-create-sharepoint-list.md
+      - name: "Visualize data quickly from Power Apps and Dynamics 365 apps"
+        href: dynamics-quick-create-report.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -145,9 +151,7 @@
       - name: "Create modern visual tooltips"
         href: desktop-visual-tooltips.md        
       - name: "Power Automate button visual"
-        href: power-bi-automate-visual.md
-      - name: "Export reports to PDF files"
-        href: desktop-export-to-pdf.md             
+        href: power-bi-automate-visual.md            
       - name: Filters and slicers in reports
         items: 
         - name: "Add a filter to a report"
@@ -168,20 +172,22 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
-      - name: "Apply insights to explain fluctuations in visuals"
-        href: desktop-insights.md
-      - name: "Use insights to discover how distributions vary"
-        href: desktop-insights-find-where-different.md
-      - name: "Create buttons"
-        href: desktop-buttons.md
+      - name: Bookmarks and buttons
+        items: 
+         - name: "Create buttons"
+           href: desktop-buttons.md
+         - name: "Customize buttons"
+           href: power-bi-customize-button.md
+         - name: "Create bookmarks to save and share insights"
+           href: desktop-bookmarks.md
+         - name: "Create page and button navigators"
+           href: button-navigators.md
       - name: "Create drillthrough buttons"
         href: desktop-drill-through-buttons.md
       - name: "Use the drillthrough feature"
         href: desktop-drillthrough.md      
       - name: "Use the cross-report drillthrough feature"
         href: desktop-cross-report-drill-through.md              
-      - name: "Create bookmarks to save and share insights"
-        href: desktop-bookmarks.md
       - name: "Work with report themes"
         href: desktop-report-themes.md
       - name: "Apply grouping and binning"
@@ -248,6 +254,8 @@
         href: desktop-upload-desktop-files.md
     - name: Visualizations
       items: 
+      - name: "Visualization types in Power BI"
+        href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Add visuals to a report (part 1)"
         href: ../visuals/power-bi-report-add-visualizations-i.md
       - name: "Add visuals to a report (part 2)"
@@ -278,26 +286,22 @@
         href: service-reports-visual-interactions.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "Anomaly detection"
-        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
         href: ../visuals/power-bi-visualization-card.md
       - name: "Combo charts"
         href: ../visuals/power-bi-visualization-combo-chart.md
-      - name: "Decomposition tree visuals"
-        href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Funnel charts"
         href: ../visuals/power-bi-visualization-funnel-charts.md
-      - name: "Key influencers visuals"
-        href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
       - name: "Paginated report visuals"
         href: ../visuals/paginated-report-visual.md
+      - name: "Scorecard visuals"
+        href: ../visuals/power-bi-visualization-scorecard-visual.md
       - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
@@ -318,6 +322,8 @@
           href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
         - name: "Add a bar chart layer"
           href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a heat map layer"
+          href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
         - name: "Add a reference layer"
           href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
         - name: "Add a tile layer"
@@ -346,18 +352,94 @@
         href: desktop-high-density-sampling.md
       - name: "High-density sampling in scatter charts"
         href: desktop-high-density-scatter-charts.md
-      - name: "Create small multiples (preview)"
+      - name: "Create small multiples"
         href: ../visuals/power-bi-visualization-small-multiples.md
-      - name: "Interact with small multiples (preview)"
+      - name: "Interact with small multiples"
         href: ../visuals/power-bi-visualization-small-multiples-interact.md
-      - name: "Smart narratives"
-        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
       - name: "Treemaps"
         href: ../visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts"
         href: ../visuals/power-bi-visualization-waterfall-charts.md
+    - name: Artificial intelligence
+      items: 
+      - name: "Insights(preview)"
+        href: insights.md
+      - name: "Apply insights to explain fluctuations in visuals"
+        href: desktop-insights.md
+      - name: "Use insights to discover how distributions vary"
+        href: desktop-insights-find-where-different.md
+      - name: "Transform your data with AI"
+        items:
+        - name: "Use AI Insights in Desktop"
+          href: ../transform-model/desktop-ai-insights.md  
+        - name: "Use Cognitive Services"
+          href: ../connect-data/service-tutorial-use-cognitive-services.md
+        - name: "Build a machine learning model"
+          href: ../connect-data/service-tutorial-build-machine-learning-model.md
+        - name: "Consume a machine learning model in a report"
+          href: ../connect-data/service-aml-integrate.md
+        - name: "Use Machine Learning and Cognitive Services with dataflows"
+          href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
+      - name: "Decomposition tree visuals"
+        href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: "Key influencers visuals"
+        href: ../visuals/power-bi-visualization-influencers.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md 
+      - name: Python
+        items: 
+        - name: "Run Python scripts"
+          href: ../connect-data/desktop-python-scripts.md
+        - name: "Use Python in Query Editor"
+          href: ../connect-data/desktop-python-in-query-editor.md
+        - name: "Use an external Python IDE"
+          href: ../connect-data/desktop-python-ide.md
+        - name: "Create visuals with Python"
+          href: ../connect-data/desktop-python-visuals.md
+        - name: "Learn which Python packages are supported"
+          href: ../connect-data/service-python-packages-support.md
+      - name: R in Power BI
+        items: 
+        - name: "Run R scripts"
+          href: ../connect-data/desktop-r-scripts.md
+        - name: "Use R in Query Editor"
+          href: ../connect-data/desktop-r-in-query-editor.md
+        - name: "Use an external R IDE"
+          href: ../connect-data/desktop-r-ide.md
+        - name: "Create visuals with R packages"
+          href: ../connect-data/service-r-packages-support.md
+      - name: "Quick Insights"
+        items:
+        - name: "Quick Insights"
+          href: service-insights.md
+        - name: "Optimize data for Quick Insights"
+          href: service-insights-optimize.md
+        - name: "Types of Quick Insights"
+          href: ../consumer/end-user-insight-types.md
+        - name: "View automatic insights for dashboard tiles"
+          href: ../consumer/end-user-insights.md
+    - name: Natural language Q&A
+      items: 
+      - name: "Create a Q&A visual in a report"
+        href: ../visuals/power-bi-visualization-q-and-a.md
+      - name: "Teach Q&A to understand"
+        href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
+      - name: "Q&A best practices"
+        href: ../natural-language/q-and-a-best-practices.md
+      - name: "Use Q&A to explore your data"
+        href: power-bi-tutorial-q-and-a.md
+      - name: "Create a Q&A visual in a dashboard"
+        href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: "Make Excel data work well with Q&A"
+        href: service-prepare-data-for-q-and-a.md
+      - name: "Create featured questions for Q&A"
+        href: service-q-and-a-create-featured-questions.md
+      - name: "Use Q&A with live connections"
+        href: service-q-and-a-direct-query.md
     - name: Goals
       items: 
       - name: "Get started with goals"
@@ -368,28 +450,10 @@
         href: service-goals-create-connected.md
       - name: "Stay on top of your goals"
         href: service-goals-check-in.md        
-    - name: Natural language Q&A
-      items: 
-      - name: "Create a Q&A visual"
-        href: ../visuals/power-bi-visualization-q-and-a.md
-      - name: "Teach Q&A to understand"
-        href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
-      - name: "Q&A best practices"
-        href: ../natural-language/q-and-a-best-practices.md
-      - name: "Use Q&A to explore your data"
-        href: power-bi-tutorial-q-and-a.md
-      - name: "Create a visual with Q&A"
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: "Make Excel data work well with Q&A"
-        href: service-prepare-data-for-q-and-a.md
-      - name: "Create featured questions for Q&A"
-        href: service-q-and-a-create-featured-questions.md
-      - name: "Use Q&A with live connections"
-        href: service-q-and-a-direct-query.md
-      - name: "Quick Insights"
-        href: service-insights.md
-      - name: "Optimize data for Quick Insights"
-        href: service-insights-optimize.md
+      - name: "Set goal-level permissions"
+        href: service-goals-set-permissions.md
+      - name: "Goals and Power Automate"
+        href: service-goals-power-automate.md        
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
@@ -460,8 +524,10 @@
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
+      - name: "Assign a workspace"
+        href: deployment-pipelines-assign.md        
       - name: "Troubleshooting"
-        href: deployment-pipelines-troubleshooting.md      
+        href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility
       items:       
       - name: "Design accessible reports"

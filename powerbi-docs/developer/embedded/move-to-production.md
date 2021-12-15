@@ -1,8 +1,8 @@
 ---
 title: Move your Power BI embedded analytics application to production
 description: Learn what are the needed steps to move your Power BI application to production.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
@@ -14,10 +14,11 @@ ms.date: 06/02/2020
 
 # Move your embedded app to production
 
-After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
+>[!IMPORTANT]
+>This article only applies to [*embed for your customers/app owns data*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. Customers using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario don't need to purchase a capacity.
 
-> [!Important]
-> All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
+Note that **all workspaces** (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
 
 ## Create a capacity
 
@@ -48,7 +49,7 @@ The table below describes the resources and limits of each SKU. To determine whi
 
 For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a capacity.
 
-The number of embed trial tokens a Power BI *service principal* or *master user* (master account) can generate, is limited. Use the [Available Features](/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
+The number of embed trial tokens a Power BI *service principal* or *master user* (master account) can generate, is limited. Use the [Available Features](/rest/api/power-bi/available-features/get-available-features) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
 
 If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a capacity.
 

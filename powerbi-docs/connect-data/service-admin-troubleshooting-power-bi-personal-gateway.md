@@ -84,7 +84,7 @@ You might get this error in settings for \<dataset\> if you have a scheduled ref
 
 **Error: Sign-in error when you enter credentials for a data source:** If you get an error like this one when you enter Windows credentials for a data source: 
 
-  ![Windows credential error message](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
+  ![Windows credential error message](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.png)
 
 You might still be on an older version of the gateway (personal mode). 
 

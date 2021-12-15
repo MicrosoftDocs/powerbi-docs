@@ -3,7 +3,7 @@ title: "Create a paginated report with a Power BI shared dataset - Power BI Repo
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-NfoOK4QRkhI
@@ -11,19 +11,18 @@ ms.topic: how-to
 ---
 # Create a paginated report based on a Power BI shared dataset
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
 
 You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix. A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, no discrepancies, so you use the same dataset.
 
 ![Power BI Desktop to Report Builder paginated report](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
-
-The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. You just need to have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. To publish your paginated report, you do need a Power BI Pro or Premium Per User (PPU) license. You also need at least a Contributor role for a workspace in a Premium capacity.
 
 ## What you need
 
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
 - Power BI Report Builder. [Download and install Power BI Report Builder](https://aka.ms/pbireportbuilder).
+- The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. 
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
 - You don't need a Power BI Pro or Premium Per User (PPU) license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro or Premium Per User (PPU) license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
@@ -61,6 +60,9 @@ When you want the data in your Power BI report and in your Report Builder report
 ### Video: Get the DAX query
 
 In the following video, Chris Finlan demonstrates how to get the DAX you need for your paginated report.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Report Builder or the Power BI service.
 
 <iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
 
@@ -214,7 +216,7 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 
     ![Print no blank pages](media/report-builder-shared-datasets/power-bi-report-builder-print-26-pgs.png)
 
-## Limitations and considerations 
+## Considerations and limitations
 
 - For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
 - If you want to use a Power BI dataset that uses DirectQuery in Power BI Report Builder, the dataset has to include a measure, even if you don't plan to surface the measure in your report. Without the measure, the dataset won't return proper data results.

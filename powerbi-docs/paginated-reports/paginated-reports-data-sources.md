@@ -7,14 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 12/09/2021
 ---
 
 # Supported data sources for Power BI paginated reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 This article spells out supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by way of data gateways.
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Natively supported data sources
 
@@ -36,15 +40,20 @@ For Azure SQL Database data sources, you need to supply more information, as des
 
 ## Other data sources
 
-In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md):
+In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md) or a [VNet gateway](/data-integration/vnet/overview):
 
-- SQL Server (supports SSO)
-- SQL Server Analysis Services
-- Oracle (supports SSO)
-- Teradata
-- ODBC
+| Data Source | Enterprise gateway | VNet gateway |
+| --- | --- | --- |
+| SQL Server (supports SSO) | ✔️ | ✔️ |
+| SQL Server Analysis Services | ✔️ | ✔️|
+| Oracle (supports SSO) | ✔️ | |
+| Teradata | ✔️ | |
+| ODBC | ✔️ | |
 
-For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway. When authenticating with SSO service principal is not supported.
+For paginated reports, Azure Analysis Services currently can't be accessed via either a Power BI enterprise gateway or a VNet gateway. When authenticating with SSO, service principal isn't supported.
+
+> [!IMPORTANT]
+> Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos constrained delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.
 
 ## Azure SQL Database authentication
 
@@ -68,6 +77,10 @@ For Azure SQL Database data sources, here are the supported authentication types
 
 For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source is connecting to needs to have [Azure Active Directory authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Azure Active Directory generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
   
+## Considerations and limitations
+
+- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in Premium and non-Premium workspaces.
+
 ## Next steps
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)

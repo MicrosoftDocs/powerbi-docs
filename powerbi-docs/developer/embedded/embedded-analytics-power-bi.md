@@ -1,12 +1,13 @@
 ---
 title: Power BI embedded analytics overview
 description: Learn about embedded analytics in Power BI a Microsoft solution for embedding BI content.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 06/17/2021
+ms.custom: intro-overview
 ---
 
 # What is Power BI embedded analytics?
@@ -31,11 +32,11 @@ Power BI embedded analytics offers two solutions:
 
 ### Embed for your customers
 
-The *embed for your customers* solution allows you to build an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](/power-bi/developer/embedded/embed-sample-for-customers).
+The *embed for your customers* solution allows you to build an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](./embed-sample-for-customers.md).
 
 ### Embed for your organization
 
-The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content they have access to on Power BI service. This solution is aimed at big organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](/power-bi/developer/embedded/embed-sample-for-your-organization).
+The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content they have access to on Power BI service. This solution is aimed at big organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
 
 ## Comparing the solutions
 
@@ -54,7 +55,7 @@ The following table provides a comparison between the two Power BI embedded anal
 
 Capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
-There are two types of Power BI embedded analytics offerings, each requiring a different [capacity](/power-bi/developer/embedded/embedded-capacity):
+There are two types of Power BI embedded analytics offerings, each requiring a different [capacity](./embedded-capacity.md):
 
 * [Power BI Embedded](#power-bi-embedded)
 
@@ -67,10 +68,6 @@ There are two types of Power BI embedded analytics offerings, each requiring a d
 ### Embedding with Power BI
 
 Embedding with Power BI is a Microsoft Office offer that requires P or EM SKUs.
-
-## Moving to production
-
-When you're ready to [go to production](/power-bi/developer/embedded/move-to-production), review the [capacity planning](/power-bi/developer/embedded/embedded-capacity-planning) article.
 
 ## Next steps
 

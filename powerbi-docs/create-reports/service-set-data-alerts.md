@@ -8,7 +8,7 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/23/2021
+ms.date: 11/03/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -29,9 +29,12 @@ Only you can see the alerts you set, even if you share your dashboard. Even the 
 
 Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-content-pack-for-this-sample) if you want to follow along.
+This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) if you want to follow along.
 
 1. Start on a dashboard. From the **Total stores** tile, select the ellipses.
 
@@ -120,7 +123,7 @@ There are many ways to manage your alerts:
 * Alerts only work with numeric data types.
 * Alerts only work on refreshed data. They don't work on static data.
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
-
+* You can create up to 250 alerts across all your models.
 
 ## Next steps
 

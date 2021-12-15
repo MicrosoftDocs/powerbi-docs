@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/17/2021
+ms.date: 12/09/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -16,7 +16,7 @@ You can establish a live connection to a shared dataset in the *Power BI service
 
 ![Get data from the Power BI service](media/desktop-report-lifecycle-datasets/report-lifecycle_01.png)
 
-There are all sorts of benefits of this feature, including best practices, which we discuss during this article. We recommend you review the [considerations and limitations](#limitations-and-considerations) of this feature.
+There are all sorts of benefits of this feature, including best practices, which we discuss during this article. We recommend you review the [considerations and limitations](#considerations-and-limitations) of this feature.
 
 ## Using a Power BI service live connection for report lifecycle management
 
@@ -95,9 +95,9 @@ When you select **Create**, you establish a live connection to the selected data
 
 Now you and others can create and share custom reports, all from the same dataset. This approach is a great way to have one knowledgeable person create a well-formed dataset, such as what Anna does. Many teammates can use that shared dataset to create their own reports.
 
-## Limitations and considerations
+## Considerations and limitations
 
-When using the Power BI service live connection, there are a few limitations and considerations to keep in mind.
+When using the Power BI service live connection, there are a few considerations and limitations to keep in mind.
 
 * Only users with Build permission for a dataset can connect to a published dataset using the Power BI service live connection.
 * Free users only see datasets in their **My Workspace** and in Premium-based workspaces.
@@ -106,8 +106,6 @@ When using the Power BI service live connection, there are a few limitations and
 * If the owner modifies the original shared *.pbix* file, the dataset and report that is shared in the Power BI service is overwritten. Reports based on that dataset aren't overwritten, but any changes to the dataset are reflected in the report.
 * Members of a workspace can't replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
 * If you delete the shared dataset in the Power BI service, then other reports based on that dataset will no longer work properly or display their visuals.
-* For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a *.pbix* report and dataset to the Power BI service.
-* For Content Packs from *My Organization*, once copied, you can't replace the report created on the service or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
 * Deleting a shared dataset in the Power BI service means no one can access that dataset any longer from Power BI Desktop.
 * Reports that share a dataset on the Power BI service don't support automated deployments using the Power BI REST API.
 

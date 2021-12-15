@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/08/2021
+ms.date: 07/30/2021
 LocalizationGroup: Reports
 ---
 # Format filters in Power BI reports

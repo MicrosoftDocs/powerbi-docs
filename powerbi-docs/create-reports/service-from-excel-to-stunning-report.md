@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 12/14/2020
+ms.date: 09/13/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
@@ -170,17 +170,16 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
    ![Screenshot of Share icon.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard.png)
 
-2. In the **Share dashboard** page, enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
+2. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field, and add an optional message.
 
-3. Decide which of these options you want, if any:
+3. Select the option to **Send an email notification**. Decide which of these other options you want, if any:
 
-    - **Allow recipients to share your dashboard**. 
-    - **Allow recipients to build new content using the underlying datasets**.
-    - **Send an email notification to recipients.**
+    - **Allow recipients to share this dashboard**
+    - **Allow recipients to build content with the data associated with this dashboard**
 
    ![Screenshot of Share dashboard pane](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
 
-1. Select **Share**.
+1. Select **Grant access**.
 
 ## Share to Microsoft Teams
 

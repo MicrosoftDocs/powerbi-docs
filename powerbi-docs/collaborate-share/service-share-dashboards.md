@@ -8,23 +8,38 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 11/15/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 *Sharing* is the easiest way to give people access to your reports and dashboards in the Power BI service. You can share with people inside or outside your organization.
 
-When you share a report or dashboard, the people you share it with can view it and interact with it but can't edit it. They see the same data that you see in the reports and dashboards and get access to the entire underlying dataset unless row-level security (RLS) is applied to the underlying dataset.  The coworkers you share with can also share with their coworkers if you allow them to.
+When you share a report or dashboard, the people you share it with can view it and interact with it but can't edit it. They see the same data that you see in the reports and dashboards and get access to the entire underlying dataset unless row-level security (RLS) is applied to the underlying dataset.  The coworkers you share with can reshare with their coworkers if you allow them to.
 
 ![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
-You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-roles-new-workspaces.md) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
+The Power BI service offers other ways to collaborate and distribute reports and dashboards, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances.
 
-The Power BI service offers other ways to collaborate and distribute reports and dashboards, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances. 
+## Video
 
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+Sujata demonstrates how to share in the Power BI service.
 
-You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. However, you can [share a report or dashboard from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWO30a]
+
+## Prerequisites
+
+- You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md), whether you share content inside or outside your organization. 
+- Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+
+### Where you can share
+
+- You can share reports and dashboards from My Workspace. 
+- You can share from workspaces other than My Workspace, if you have the [Admin or Member role](service-roles-new-workspaces.md) in the workspace. If you have the Contributor or Viewer role, you can share if you have Reshare permissions.
+- You can [share from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).
+- You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. 
 
 ## Share a report via link
 
@@ -80,7 +95,6 @@ Links that give access to **People in your organization** or **Specific people**
 
 Links for **People with existing access** do not have any additional settings because these links do not give any access to the report.
 
-
 **Additional considerations**
 
 - If a user tries to access a report using a link that they don't have access to, they can only access the report if there is another link granting them access or they have direct access to the report.    
@@ -131,7 +145,7 @@ Similar to report sharing, you can specify if you want to grant users the follow
 - Reshare permissions (included by default) – allows recipients to share the dashboard to others
 - Build permissions (included by default) – allows recipients to build content with the data associated with the dashboard
 
-You can share the dashboard with guest users whose addresses are outside your organization, but guest users cannot reshare dashboards. Read more about [sharing outside your organization](#share-a-report-or-dashboard-outside-your-organization) in this article.
+You can share the dashboard with guest users whose addresses are outside your organization, but guest users cannot reshare dashboards. Read more about [sharing outside your organization](#share-outside-your-organization) in this article.
 
    >[!NOTE] 
    > The input box supports, at most, 100 separate users or groups. See [Share with more than 100 users](#share-with-more-than-100-separate-users) in this article for ways to share with more people.
@@ -161,9 +175,7 @@ In the **Remove access** dialog, decide if you also want to remove access to rel
 
  ![Screenshot of the Remove access dialog.](media/service-share-dashboards/power-bi-share-remove-access.png)
 
-
-
-## Share a report or dashboard outside your organization
+## Share outside your organization
 When you share with people outside your organization, they receive an email with a link to the shared report or dashboard. They must sign in to Power BI to see what you shared. If they don't have a Power BI Pro or Premium Per User (PPU) license, they can sign up for a license when they click the link.
 
 After they sign in, they see the shared report or dashboard in its own browser window, not in the usual Power BI portal. To access this report or dashboard later, they must bookmark the link.
@@ -191,7 +203,7 @@ At most, you can share with 100 users or groups in a single share action. Howeve
 - Create the report or dashboard in a workspace, then create an app from the workspace. You can share the app with many more people. Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
 
 
-## Limitations and considerations
+## Considerations and limitations
 Things to keep in mind about sharing reports and dashboards:
 * Both reports and dashboards can be shared to users through direct access; however, only reports can be shared via links that give access to the report and underlying data.
 * If you have reshare permissions to the underlying dataset and you share a report or dashboard with colleagues, you are sharing the underlying dataset as well. Your colleagues get access to the entire dataset unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors may use capabilities that  customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.

@@ -4,11 +4,11 @@ description: Get started with Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 04/13/2021
+ms.date: 10/29/2021
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
@@ -215,7 +215,7 @@ For now, you have enough data to create an interesting report in Power BI Deskto
 
 ![Screenshot of Power B I Desktop showing the Close and Apply Changes option.](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
+You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Transform Data** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
 In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:

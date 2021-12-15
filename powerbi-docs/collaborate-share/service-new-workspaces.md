@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/19/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -30,9 +30,9 @@ With the new workspaces, we've redesigned some features. Here are the main diffe
 - **Use more granular workspace roles** for more flexible permissions management in the new workspaces.  In classic workspaces, you can add only individuals to the members and admin lists. 
 - **Assign user groups to workspace roles**: In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these roles, for easier user management. 
 - **Contact list**: In the new workspaces, you can specify who receives notification about workspace activity.
-- **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
+- **Create template apps**: You can create *template apps* only in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share datasets**: To share a dataset outside a specific workspace, you need to save the report that contains the dataset to one of the new workspaces. You can't share datasets from classic workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
-- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
+- **Organizational content packs**: Apps and template apps replace organizational content packs in the new workspaces. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 This article explains these features in more detail.
 
@@ -87,12 +87,13 @@ Power BI audits the following activities for new workspace experience workspaces
 
 Read more about [Power BI auditing](../admin/service-admin-auditing.md).
 
-## Limitations and considerations
+## Considerations and limitations
 
 Limitations to be aware of:
 
 - Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset. 
 - Power BI publisher for Excel isn't supported.
+- Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 
 ## Frequently asked questions
 

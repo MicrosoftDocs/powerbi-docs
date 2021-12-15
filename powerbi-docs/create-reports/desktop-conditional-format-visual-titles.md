@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
@@ -43,13 +43,14 @@ When you right-click **Title text**, a context menu appears that allows you to s
 
 From that window, you can select the field that you created to use for your title.
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations to the current implementation of expression-based titles for visuals:
 
 * Expression-based formatting isn’t currently supported on Python visuals, R visuals, or the Key Influencers visual.
 * The field you create for the title must be a string data type. Measures that return numbers or date/time (or any other data type) aren't currently supported.
 * Expression based titles aren't carried over when you pin a visual to a dashboard.
+* Conditional formatting can only use measures defined in the underlying model, and cannot use measures locally created in a report (dataset connection).
 
 ## Next steps
 

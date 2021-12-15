@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 12/08/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
 
-Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses. 
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription (which is either a Premium capacity or Premium Per User (PPU) license). This article describes and details the Premium Per User (PPU) and Premium-only features and their uses. 
 
-The following features are available only with Power BI Premium:
+The following features are available only with Power BI Premium (PPU or a Premium capacity subscription):
 
 * Enhanced compute engine
 * Direct Query
@@ -32,15 +32,14 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 * Performs DirectQuery queries over entities
 
 > [!NOTE]
-> The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
+> * The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
+> * This feature is available on all Power BI clusters except WABI-INDIA-CENTRAL-A-PRIMARY
 
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** as shown in the following image, and save your settings. 
-
-![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** and save your settings. 
 
 > [!IMPORTANT]
 > The enhanced compute engine works only for Power BI capacities of A3 and larger.
@@ -64,7 +63,7 @@ To make best use of the compute engine, split the ETL stage into two separate da
 
 **Question:** I cannot see the enhanced compute engine toggle. Why?
 
-**Answer:** The enhanced compute engine is being released in stages to regions around the world. We anticipate all regions will supported by the end of 2020.
+**Answer:** The enhanced compute engine is being released in stages to regions around the world, but is not yet available in every region.
 
 **Question:** What are the supported data types for the compute engine?
 
@@ -79,7 +78,7 @@ To make best use of the compute engine, split the ETL stage into two separate da
 * Date
 * Time
 
-## Use DirectQuery with dataflows in Power BI (preview)
+## Use DirectQuery with dataflows in Power BI
 
 You can use DirectQuery to connect directly to dataflows, and thereby connect directly to your dataflow without having to import its data. 
 
@@ -92,12 +91,14 @@ Using DirectQuery with dataflows enables the following enhancements to your Powe
 
 ### Using DirectQuery for dataflows
 
-Using DirectQuery with dataflows is a preview feature available in Power BI Desktop. 
+Using DirectQuery with dataflows is available in Power BI Desktop. 
 
 There are also prerequisites for using DirectQuery with dataflows:
 
 * Your dataflow must reside within a Power BI Premium enabled workspace
 * The **compute engine** must be turned on
+
+You can learn more about DirectQuery with dataflows in the [using DirectQuery with dataflows](dataflows-directquery.md) article.
 
 ### Enable DirectQuery for dataflows
 
@@ -110,8 +111,6 @@ Once you've applied that setting, refresh the dataflow for the optimization to t
 ### Considerations and limitations for DirectQuery
 
 There are a few known limitations with DirectQuery and dataflows:
-
-* During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
 * Composite/mixed models that have import and DirectQuery data sources are currently not supported.
 
@@ -150,7 +149,6 @@ Setting incremental refresh adds parameters to the dataflow to specify the date 
 Do not set a dataflow to incremental refresh in the following situations:
 
 * Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
-* Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally perform well. If the refreshes take longer than expected, consider using the compute engine and or DirectQuery mode.
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
@@ -162,4 +160,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)

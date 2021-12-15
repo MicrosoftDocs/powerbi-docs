@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/16/2021
+ms.date: 12/07/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -41,7 +41,7 @@ You can also select the enterprise gateway if one is available for you. You only
 
 ### Power BI Gateway - Personal
 
-If you are using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to a content pack from an online service, the credentials you entered to connect are carried over for scheduled refresh.
+If you are using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to an app from an online service, the credentials you entered to connect are carried over for scheduled refresh.
 
 ![Data source credentials](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
@@ -65,10 +65,12 @@ If you are using the On-premises data gateway to refresh data, you do not need t
 
 The **Scheduled refresh** section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway to be configurable for refresh; other data sources require a gateway.
 
+In a Direct Query scenario, when a dataset qualifies for performance optimization, "Refresh schedule" will be moved to the **Optimize performance** section.
+
 Set the **Keep your data up to date** slider to **On** to configure the settings.
 
 > [!NOTE]
-> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
+> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time. 
 
 ![Scheduled refresh dialog box](media/refresh-scheduled-refresh/scheduled-refresh.png)
 

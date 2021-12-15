@@ -2,13 +2,13 @@
 metadata:
   title: Frequently asked questions about Power BI embedded analytics
   description: Browse a list of frequently asked questions and answers about Power BI embedded analytics
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: conceptual
-  ms.date: 04/02/2021 
+  ms.date: 12/13/2021
     
 title: Frequently asked questions about Power BI Embedded
 summary: |
@@ -48,14 +48,16 @@ sections:
         answer: |
           Microsoft recommends that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution. We recommend ISVs buy Power BI Embedded for its cloud-powered embedded analytics components. However, a customer has no restriction on which product to buy.
           
-          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization. Some enterprises may decide to use A SKUs in Azure if they're only interested in building line-of-business applications and embedding analytics into them and aren't interested in using the pre-packaged Power BI service.
+          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization.
+
+          For more on the differences between Premium and Embedded see [Which SKU should I use](embedded-capacity.md#which-sku-should-i-use).
           
       - question: |
           How many embed tokens can I create?
         answer: |
           Embed tokens with Pro or Premium Per User (PPU) license are intended for development testing, so a Power BI master account or [service principal](embed-service-principal.md) can only generate a limited number of tokens. [Purchase a capacity](/power-bi/developer/embedded/embedded-faq#technical) for embedding in a production environment. There's no limit to how many embed tokens you can generate when you purchase a capacity. Go to [Available Features](/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
 
-  - name: Embedded Gen 2 (Preview)
+  - name: Embedded Gen 2
     questions:
       - question: |
           What is Power BI Embedded Generation 2?
@@ -105,11 +107,6 @@ sections:
           Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you are to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you will arrive at 100% utilization of your resources.
 
       - question: |
-          How can my utilization data inform me I should scale?
-        answer: |
-          Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. During the preview period, a property will be added to each utilization record to reflect throttled requests. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload.
-
-      - question: |
           How can I get notified that I'm approaching my max capacity?
         answer: |
           There are two options for Embedded Gen2:
@@ -120,11 +117,6 @@ sections:
           How much data is Power BI storing? How can I retain more?
         answer: |
           The Power BI service stores over 90 days of utilization data. Users who need longer data retention can use Bring Your Own Log Analytics (BYOLA) to store more utilization data, which will be available for Embedded Gen2 customers by the Embedded Gen2 generally available (GA) date. 
-
-      - question: |
-          How do I get visibility into resources of Gen2 beyond CPU time?
-        answer: |
-          Today, customers don't have visibility through utilization data to the memory footprint of their operations, and cannot know ahead of time whether any of their operations are subject to failures. A solution for such visibility is part of the preview feedback process.
 
       - question: |
           How do I use utilization data to perform chargebacks?
@@ -167,7 +159,7 @@ sections:
       - question: |
           Can I only create Power BI Embedded capacities in a specific region?
         answer: |
-          With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
+          With the [Multi-geo](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
           
       - question: |
           Why can't I see a workspace although I have permissions?
@@ -214,42 +206,20 @@ sections:
       - question: |
           In what Azure regions is PBI Embedded available?
         answer: |
-          [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
+          Power BI Embedded is non-regional which means it is not dependent on any specific Azure region.
           
-          Available regions (16 - same regions as Power BI)
-          
-          * US (6) - East US, East US 2, North Central US, South Central US, West US, West US 2
-          * Europe (2) - North Europe, West Europe
-          * Asia Pacific (2) - Southeast Asia, East Asia
-          * Brazil (1) - Brazil South
-          * Japan (1) - Japan East
-          * Australia (1) - Australia Southeast
-          * India (1) - West India
-          * Canada (1) - Canada Central
-          * United Kingdom (1) - UK South
+          See [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=all) for regional information about all Azure products.
           
       - question: |
           What is Power BI Embedded's authentication model?
         answer: |
-          Power BI Embedded continues to use Azure AD for master user (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
+          Power BI Embedded continues to use Azure AD for *master user* (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
           
            An ISV can implement their own authentication and authorization for their applications.
           
           You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
           
           To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
-          
-      - question: |
-          My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
-        answer: |
-          It's standard OAuth on-behalf-of flow (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). You need to configure your application to require Power BI service (with the required scopes) permissions. Once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify the Power BI resource URL as the resource ID:
-          
-          ```csharp
-          var context = new AD.AuthenticationContext(authorityUrl);
-          var userAssertion = new AD.UserAssertion(userAccessToken);
-          var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
-          var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
-          ```
           
       - question: |
           What object ID is the service principal object ID?
@@ -295,21 +265,44 @@ sections:
           This situation matters when you add the service principal as an **admin** to the new workspace. You can manage this task through the [APIs](/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
           
       - question: |
-          When to use an application ID vs. a service principal object ID?
+          When should I use an application ID vs. a service principal object ID?
         answer: |
           The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
           
           To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
-          
+
       - question: |
-          Can you manage an On-premises data gateway with service principal?
+          How can I embed a Power BI report that contains a paginated report visual?
         answer: |
-          You can't manage an On-premises data gateway (data gateway) using [service principal](embed-service-principal.md) like you can with a master account.
+          To embed a Power BI report that contains a paginated report visual  with the *embed for your customers* method, use a service principal and embed the report with a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token), that contains the following:
+          *	Power BI report ID
+          *	Paginated report ID (of the report the visual is connected to)
+          *	Dataset ID (of the Power BI report)
           
-          With a master account, you can install a data gateway, add users to the gateway, connect to data sources, and do other administrative tasks.
-          
-          With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using a service principal.
-          
+          The service principal must have access to both reports (paginated and Power BI).
+          Request body example for the [generate token](/rest/api/power-bi/embed-token/generate-token) call:
+
+          ```json
+          {
+            "datasets": [
+              {
+                "id": "a5d577c7-0568-4180-a6d3-0f6cc0ca3df4"
+              }
+            ],
+            "reports": [
+              {
+                "allowEdit": false,
+                "id": "05024421-b4df-483c-a2ce-61202d0323ce"
+              },
+              {
+                "id": "f8612306-f3a8-40e1-a448-d8e05992a007"
+              }
+            ]
+          }
+          ```
+          > [!NOTE]
+          > *Master user* is not supported.
+
       - question: |
           Can you sign into the Power BI service with service principal?
         answer: |

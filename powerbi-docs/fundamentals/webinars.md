@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/01/2021
+ms.date: 11/05/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -16,16 +16,38 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**June 7th, 2021**  
-**Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data**    
-by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
-[Register to watch on June 7th, 8:00 AM – 9:00 AM (PST) 2021](https://mipc.eventbuilder.com/event/47133)
-
-[Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
+[Upcoming events from the Power BI community](https://community.powerbi.com/t5/Upcoming-Events/bd-p/Community)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Webinar Series: Mastering Data Modeling with Power BI  
+Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
+
+**Webinar Series: Mastering Data Modeling with Power BI  
+Episode 2 - Learn Advanced Data Modeling with Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
+
+**Webinar Series: Mastering Data Modeling with Power BI  
+Episode 3 - Data Modeling for Experts with Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Watch now]( https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
+
+**Behind the Scenes with the Power BI Team**  
+by Jeroen ter Heerdt and Miguel Martinez  
+[Watch now](https://info.microsoft.com/ww-landing-behindthescenespowerbiteam.html)  
+
+**Enable Greater Data Agility with Azure Purview and Power BI**  
+by Chandru Sugunan and Gaurav Malhotra  
+[Watch now](https://info.microsoft.com/ww-Ondemand-Enable-Greater-Data-Agility-with-Azure-Purview-and-Power-BI.html)  
+
+**Best Practices for Deploying Power BI Embedded**
+<br>by Alon Baram
+<br>[Watch now](https://info.microsoft.com/ww-Ondemand-Best-Practices-for-Deploying-Power-BI-Embedded.html)  
 
 **Harness Power BI for Self Service Data Prep with Dataflows**  
 by Charles Webb  
@@ -48,7 +70,7 @@ Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**
 by Jeroen ter Heerdt and Marc Lelijveld  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
 
-**Webinar Series: Mastering Data Modeling with Power BI
+**Webinar Series: Mastering Data Modeling with Power BI  
 Episode 2 - Learn Advanced Data Modeling with Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
@@ -112,6 +134,10 @@ by Kim Manis and Lukasz Pawlowski
 ## On-demand webinars
 
 Watch recorded sessions at any time.
+
+**Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data**    
+by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
+[Register to watch](https://mipc.eventbuilder.com/event/47133)
 
 **Explore the Total Economic Impact of Microsoft Power BI**  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
@@ -229,7 +255,8 @@ by Shakun Grover
 by Reid Havens  
 [Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### Partner Solutions Series ###  
+## Partner Solutions Series
+
 [Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Power BI: How to Get Insights from Your Workday HR Data**  
@@ -264,7 +291,9 @@ by Scott Ball from Esri and Enrique Plaza from Microsoft
 by Rohit Bhargava from Non-Obvious  
 [Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html)
 
-### Community ###
+## Community
+
+Visit the [Community Webinars and Video Gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks) for more resources.
 
 **Power BI Tricks, Tips, and Tools from the owners of PowerBI.Tips**  
 by Mike Carlo and Seth Bauer  
@@ -290,7 +319,7 @@ by Kasper de Jonge
 by Ted Pattison  
 [Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### Advanced Topics
+## Advanced Topics
 
 **Advanced Analytics with Excel and Power BI**  
 by Nagasaikiran Kambhampati and Miguel Martinez  

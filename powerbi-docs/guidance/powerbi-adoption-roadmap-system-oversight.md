@@ -2,12 +2,12 @@
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
+ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
-ms.topic: reference
-ms.date: 07/08/2021
+ms.subservice: powerbi-resource
+ms.topic: conceptual
+ms.date: 10/29/2021
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -490,7 +490,7 @@ Considerations and key actions you can take to improve management of user licens
 
 - Review the process to request a user license, including any prerequisites.
 - Clarify whether self-service licensing purchasing is enabled.
-- Confirm whether Power BI Pro and Premium Per User trials are enabled or disabled.
+- Confirm whether Power BI Pro and Premium Per User trials are enabled or disabled. Note that all user trials are Premium Per User, and they apply to Free licensed users signing up for a trial, as well as Power BI Pro users signing up for a Premium Per User trial.
 
 Considerations and key actions you can take to improve cost management:
 

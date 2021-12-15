@@ -8,12 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/02/2021
+ms.date: 11/29/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+[!INCLUDE[consumer-appliesto-yyn](../includes/consumer-appliesto-yyn.md)]
 
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
@@ -70,7 +70,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 3. Each report page is a separate slide, as shown in the nav pane. 
 
     > [!NOTE]
-    > PowerPoint adds alt text for each item on the page. The report creator can include alt text when designing the report. Otherwise, the default is "No alt text provided."
+    > PowerPoint includes the name of each visual on the page and adds alt text for each item. The report creator can include alt text when designing the report. Otherwise, the default is "No alt text provided."
 
 5. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
@@ -81,7 +81,7 @@ When you view an individual slide, you see that each report page is an independe
 
 What you do with your PowerPoint deck from there, or any of the high-resolution images, is up to you.
 
-## Considerations and troubleshooting
+## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
@@ -106,6 +106,7 @@ There are a few considerations and limitations to keep in mind when you work wit
     - Report pages that take longer than 6 minutes to load. 
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
+* The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 

@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: pbi-deployment
-ms.custom: contperf-fy21q1
-ms.date: 06/14/2021
+ms.subservice: pbi-deployment-pipeline
+ms.custom: contperf-fy21q1, intro-deployment
+ms.date: 11/08/2021
 ---
 
 # Understand the deployment process
@@ -151,6 +151,8 @@ The following item properties are not copied during deployment:
 
 * App content and settings - To deploy your apps, see [deploying Power BI apps](#deploying-power-bi-apps)
 
+* [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
+
 The following dataset properties are also not copied during deployment:
 
 * Role assignment
@@ -177,7 +179,7 @@ Deployment pipelines supports [incremental refresh](../connect-data/incremental-
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
-To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](deployment-pipelines-troubleshooting.md#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules)
+To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](../create-reports/deployment-pipelines-troubleshooting.yml#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules-)
 
 #### Activating incremental refresh in a pipeline
 
@@ -205,7 +207,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-#### Limitations and considerations
+#### Considerations and limitations
 
 For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
@@ -227,7 +229,7 @@ You can use the composite models functionality to connect a Power BI dataset to 
 
 In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.  
 
-#### Limitations
+#### Considerations and limitations
 
 The following composite models connections are not supported:
 
@@ -235,7 +237,19 @@ The following composite models connections are not supported:
 
 * Connecting datasets that reside in distinct pipelines.
 
-* Connecting datasets that reside in the same pipeline. 
+* Connecting datasets that reside in the same pipeline.
+
+### Automatic aggregations
+
+[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance.
+
+Each dataset keeps its automatic aggregations after deployment. Deployment pipelines doesn't change a dataset's automatic aggregation. This means that if you deploy a dataset with an automatic aggregation, the automatic aggregation in the target stage will remain as is, and will not be overwritten by the automatic aggregation deployed from the source stage.
+
+To enable automatic aggregations, follow the instructions in [configure the automatic aggregation](./../admin/aggregations-auto-configure.md).
+
+### Hybrid tables
+
+Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. During a clean deployment, both the refresh policy and the hybrid table partitions are copied. When deploying to a pipeline stage that already has hybrid table partitions, only the refresh policy is copied. To update the partitions, refresh the table.
 
 ## Deploying Power BI apps
 
@@ -258,11 +272,11 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 
 When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
 
-|Power BI Item    |Required permission to deploy an existing item |Item ownership after deployment |
-|-----------------|---------|---------|
-|Dataset          |Workspace member |Unchanged       |
-|Dataflow         |Dataflow owner   |Unchanged         |
-|Paginated report |Workspace member |The user who made the deployment becomes the owner |
+|Power BI Item    |Required permission to deploy an existing item |Item ownership after a first time deployment |Item ownership after deployment to a stage with the Power BI item|
+|-----------------|---|---|---|
+|Dataset          |Workspace member |The user who made the deployment becomes the owner |Unchanged |
+|Dataflow         |Dataflow owner   |The user who made the deployment becomes the owner |Unchanged |
+|Paginated report |Workspace member |The user who made the deployment becomes the owner |The user who made the deployment becomes the owner |
 
 ### User with pipeline access
 
@@ -330,7 +344,7 @@ Dataset owners that are either workspace members or admins, can also do the foll
 >[!NOTE]
 >This section describes user permissions in deployment pipelines. The permissions listed in this section may have different applications in other Power BI features.
 
-## Limitations
+## Considerations and limitations
 
 This section lists most of the limitations in deployment pipelines.
 
@@ -340,7 +354,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Downloading a PBIX file after deployment isn't supported.
 
-* For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
+* For a list of workspace limitations, see the [workspace assignment limitations](deployment-pipelines-assign.md#limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
@@ -362,6 +376,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * In deployment pipelines, service principal isn't supported for dataflows.
 
+* Deploying common data model (CDM) isn't supported.
+
 * For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ## Next steps
@@ -373,10 +389,13 @@ This section lists most of the limitations in deployment pipelines.
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

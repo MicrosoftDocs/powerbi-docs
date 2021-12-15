@@ -1,8 +1,8 @@
 ---
 title: Introduction to unit tests for Power BI visual projects
 description: This article describes how to write unit tests for Power BI visual projects.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -20,7 +20,7 @@ This article describes the basics of writing unit tests for your Power BI visual
 
 ## Prerequisites
 
-* An installed Power BI visuals project
+* An installed Power BI visuals project. We'll use the [Bar chart](create-bar-chart.md) visual as an example
 * A configured Node.js environment
 
 ## Install and configure the Karma JavaScript test runner and Jasmine
@@ -28,35 +28,41 @@ This article describes the basics of writing unit tests for your Power BI visual
 Add the required libraries to the *package.json* file in the `devDependencies` section:
 
 ```json
-"@babel/polyfill": "^7.2.5",
-"@types/d3": "5.5.0",
-"@types/jasmine": "2.5.37",
-"@types/jasmine-jquery": "1.5.28",
-"@types/jquery": "2.0.41",
-"@types/karma": "3.0.0",
-"@types/lodash-es": "4.17.1",
-"coveralls": "3.0.2",
-"istanbul-instrumenter-loader": "^3.0.1",
-"jasmine": "2.5.2",
-"jasmine-core": "2.5.2",
-"jasmine-jquery": "2.1.1",
-"jquery": "3.1.1",
-"karma": "3.1.1",
-"karma-chrome-launcher": "2.2.0",
-"karma-coverage": "1.1.2",
-"karma-coverage-istanbul-reporter": "^2.0.4",
-"karma-jasmine": "2.0.1",
-"karma-junit-reporter": "^1.2.0",
-"karma-sourcemap-loader": "^0.3.7",
-"karma-typescript": "^3.0.13",
-"karma-typescript-preprocessor": "0.4.0",
-"karma-webpack": "3.0.5",
-"puppeteer": "1.17.0",
-"style-loader": "0.23.1",
-"ts-loader": "5.3.0",
-"ts-node": "7.0.1",
-"tslint": "^5.12.0",
-"webpack": "4.26.0"
+"@types/d3": "5.7.2",
+"@types/d3-selection": "^1.0.0",
+"@types/jasmine": "^3.10.2",
+"@types/jasmine-jquery": "^1.5.34",
+"@types/jquery": "^3.5.8",
+"@types/karma": "^6.3.1",
+"@types/lodash-es": "^4.17.5",
+"coveralls": "^3.1.1",
+"d3": "5.12.0",
+"jasmine": "^3.10.0",
+"jasmine-core": "^3.10.1",
+"jasmine-jquery": "^2.1.1",
+"jquery": "^3.6.0",
+"karma": "^6.3.9",
+"karma-chrome-launcher": "^3.1.0",
+"karma-coverage": "^2.0.3",
+"karma-coverage-istanbul-reporter": "^3.0.3",
+"karma-jasmine": "^4.0.1",
+"karma-junit-reporter": "^2.0.1",
+"karma-sourcemap-loader": "^0.3.8",
+"karma-typescript": "^5.5.2",
+"karma-typescript-preprocessor": "^0.4.0",
+"karma-webpack": "^5.0.0",
+"powerbi-visuals-api": "^3.8.4",
+"powerbi-visuals-tools": "^3.3.2",
+"powerbi-visuals-utils-dataviewutils": "^2.4.1",
+"powerbi-visuals-utils-formattingutils": "^4.7.1",
+"powerbi-visuals-utils-interactivityutils": "^5.7.1",
+"powerbi-visuals-utils-tooltiputils": "^2.5.2",
+"puppeteer": "^11.0.0",
+"style-loader": "^3.3.1",
+"ts-loader": "~8.2.0",
+"ts-node": "^10.4.0",
+"tslint": "^5.20.1",
+"tslint-microsoft-contrib": "^6.2.0"
 ```
 
 To learn more about *package.json*, see the description at [npm-package.json](https://docs.npmjs.com/files/package.json).
@@ -293,29 +299,25 @@ To test the visual, first create an instance of visual.
 Add a *visualBuilder.ts* file to the *test* folder by using the following code:
 
 ```typescript
-import {
-    VisualBuilderBase
-} from "powerbi-visuals-utils-testutils";
+import { VisualBuilderBase } from "powerbi-visuals-utils-testutils";
 
-import {
-    BarChart as VisualClass
-} from "../src/visual";
+import { BarChart as VisualClass } from "../src/barChart";
 
-import  powerbi from "powerbi-visuals-api";
+import powerbi from "powerbi-visuals-api";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 
 export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
-    constructor(width: number, height: number) {
-        super(width, height);
-    }
+  constructor(width: number, height: number) {
+    super(width, height);
+  }
 
-    protected build(options: VisualConstructorOptions) {
-        return new VisualClass(options);
-    }
+  protected build(options: VisualConstructorOptions) {
+    return new VisualClass(options);
+  }
 
-    public get mainElement() {
-        return this.element.children("svg.barChart");
-    }
+  public get mainElement() {
+    return $(this.element).children("svg.barChart");
+  }
 }
 ```
 
@@ -330,29 +332,31 @@ Add a *visualTest.ts* file for the test cases by using the following code:
 ```typescript
 import powerbi from "powerbi-visuals-api";
 
-import { BarChartBuilder } from "./VisualBuilder";
+import { BarChartBuilder } from "./visualBuilder";
+import { SampleBarChartDataBuilder } from "./visualData";
 
-import {
-    BarChart as VisualClass
-} from "../src/visual";
-
-import VisualBuilder = powerbi.extensibility.visual.test.BarChartBuilder;
+import DataView = powerbi.DataView;
 
 describe("BarChart", () => {
-    let visualBuilder: VisualBuilder;
-    let dataView: DataView;
+  let visualBuilder: BarChartBuilder;
+  let dataView: DataView;
+  let defaultDataViewBuilder: SampleBarChartDataBuilder;
 
-    beforeEach(() => {
-        visualBuilder = new VisualBuilder(500, 500);
-    });
+  beforeEach(() => {
+    visualBuilder = new BarChartBuilder(500, 500);
+    defaultDataViewBuilder = new SampleBarChartDataBuilder();
+    dataView = defaultDataViewBuilder.getDataView();
+  });
 
-    it("root DOM element is created", () => {
-        expect(visualBuilder.mainElement).toBeInDOM();
+  it("root DOM element is created", () => {
+    visualBuilder.updateRenderTimeout(dataView, () => {
+      expect(visualBuilder.mainElement[0]).toBeInDOM();
     });
+  });
 });
 ```
 
-Several methods are called:
+Several Jasmine methods are called:
 
 * [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): Describes a test case. In the context of the Jasmine framework, it often describes a suite or group of specs.
 
@@ -410,37 +414,36 @@ Create the *visualData.ts* file in the *test* folder by using the following code
 import powerbi from "powerbi-visuals-api";
 import DataView = powerbi.DataView;
 
-import {
-    testDataViewBuilder,
-    getRandomNumbers
-} from "powerbi-visuals-utils-testutils";
+import { testDataViewBuilder } from "powerbi-visuals-utils-testutils";
+
+import TestDataViewBuilder = testDataViewBuilder.TestDataViewBuilder;
 
 export class SampleBarChartDataBuilder extends TestDataViewBuilder {
-    public static CategoryColumn: string = "category";
-    public static MeasureColumn: string = "measure";
+  public static CategoryColumn: string = "category";
+  public static MeasureColumn: string = "measure";
 
-    public constructor() {
-        super();
-        ...
-    }
+  public getDataView(columnNames?: string[]): DataView {
+    let dateView: any = this.createCategoricalDataViewBuilder(
+      [
+          ...
+      ],
+      [
+          ...
+      ],
+      columnNames
+    ).build();
 
-    public getDataView(columnNames?: string[]): DataView {
-        let dateView: any = this.createCategoricalDataViewBuilder([
-            ...
-        ],
-        [
-            ...
-        ], columnNames).build();
+    // there's client side computed maxValue
+    let maxLocal = 0;
+    this.valuesMeasure.forEach((item) => {
+      if (item > maxLocal) {
+        maxLocal = item;
+      }
+    });
+    (<any>dataView).categorical.values[0].maxLocal = maxLocal;
 
-        // there's client side computed maxValue
-        let maxLocal = 0;
-        this.valuesMeasure.forEach((item) => {
-                if (item > maxLocal) {
-                    maxLocal = item;
-                }
-        });
-        (<any>dataView).categorical.values[0].maxLocal = maxLocal;
-    }
+    return dataView;
+  }
 }
 ```
 
@@ -510,7 +513,7 @@ To generate the same mapping, you must set the following params to `createCatego
     {
         source: {
             displayName: "Category",
-            queryName: SampleBarChartData.ColumnCategory,
+            queryName: SampleBarChartDataBuilder.CategoryColumn,
             type: ValueType.fromDescriptor({ text: true }),
             roles: {
                 Category: true
@@ -524,7 +527,7 @@ To generate the same mapping, you must set the following params to `createCatego
         source: {
             displayName: "Measure",
             isMeasure: true,
-            queryName: SampleBarChartData.MeasureColumn,
+            queryName: SampleBarChartDataBuilder.MeasureColumn,
             type: ValueType.fromDescriptor({ numeric: true }),
             roles: {
                 Measure: true
@@ -547,18 +550,88 @@ And `this.valuesMeasure` is an array of measures for each category:
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
 ```
 
+The final version of *visualData.ts* should contain the following code:
+
+```ts
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+
+import { testDataViewBuilder } from "powerbi-visuals-utils-testutils";
+import { valueType } from "powerbi-visuals-utils-typeutils";
+import ValueType = valueType.ValueType;
+
+import TestDataViewBuilder = testDataViewBuilder.TestDataViewBuilder;
+
+export class SampleBarChartDataBuilder extends TestDataViewBuilder {
+  public static CategoryColumn: string = "category";
+  public static MeasureColumn: string = "measure";
+  public valuesCategory: string[] = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  public valuesMeasure: number[] = [
+    742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34,
+  ];
+
+  public getDataView(columnNames?: string[]): DataView {
+    let dataView: any = this.createCategoricalDataViewBuilder(
+      [
+        {
+          source: {
+            displayName: "Category",
+            queryName: SampleBarChartDataBuilder.CategoryColumn,
+            type: ValueType.fromDescriptor({ text: true }),
+            roles: {
+              category: true,
+            },
+          },
+          values: this.valuesCategory,
+        },
+      ],
+      [
+        {
+          source: {
+            displayName: "Measure",
+            isMeasure: true,
+            queryName: SampleBarChartDataBuilder.MeasureColumn,
+            type: ValueType.fromDescriptor({ numeric: true }),
+            roles: {
+              measure: true,
+            },
+          },
+          values: this.valuesMeasure,
+        },
+      ],
+      columnNames
+    ).build();
+
+    // there's client side computed maxValue
+    let maxLocal = 0;
+    this.valuesMeasure.forEach((item) => {
+      if (item > maxLocal) {
+        maxLocal = item;
+      }
+    });
+    (<any>dataView).categorical.values[0].maxLocal = maxLocal;
+
+    return dataView;
+  }
+}
+```
+
 Now, you can use the `SampleBarChartDataBuilder` class in your unit test.
 
-The `ValueType` class is defined in the powerbi-visuals-utils-testutils package. And the
-`createCategoricalDataViewBuilder` method requires the `lodash` library.
+The `ValueType` class is defined in the powerbi-visuals-utils-testutils package. Add these package to the dependencies.
 
-Add these packages to the dependencies.
-
-In `package.json` at `devDependencies` section
+In `package.json` at `dependencies` section
 
 ```json
-"lodash-es": "4.17.1",
-"powerbi-visuals-utils-testutils": "2.2.0"
+"powerbi-visuals-utils-testutils": "^2.4.1",
 ```
 
 Call
@@ -567,7 +640,7 @@ Call
 npm install
 ```
 
-to install `lodash-es` library.
+to install `powerbi-visuals-utils-testutils` package.
 
 Now, you can run the unit test again. You must get the following output:
 
@@ -590,11 +663,7 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Your visual opens in the Chrome browser, as shown:
-
-![UT launches in Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
-
-The summary shows that coverage has increased. To learn more about current code coverage, open `coverage\index.html`.
+The summary shows that coverage has increased. To learn more about current code coverage, open `coverage/html-report/index.html` file.                                                     
 
 ![UT coverage index](media/unit-tests-introduction/code-coverage-index.png)
 
@@ -607,7 +676,15 @@ In the scope of file, you can view the source code. The `Coverage` utilities wou
 ![Code coverage of the visual.ts file](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> Code coverage doesn't mean that you have good functionality coverage of the visual. One simple unit test provides over 96 percent coverage in `src\visual.ts`.
+> Code coverage doesn't mean that you have good functionality coverage of the visual. One simple unit test provides over 96 percent coverage in `src/barChart.ts`.
+
+### Debugging
+
+To debug your tests via browser console, in *karma.conf.ts* file change `singleRun` value to *false*. This setting will keep your browser running once it got launched after tests' execution.
+
+Your visual opens in the Chrome browser, as shown:
+
+![UT launches in Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 ## Next steps
 

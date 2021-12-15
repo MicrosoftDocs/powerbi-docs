@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Personalize visuals in a report
@@ -115,7 +115,7 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Revert recent changes":::
 
-## Limitations
+## Considerations and limitations
 
 Currently the feature has a few limitations to be aware of.
 

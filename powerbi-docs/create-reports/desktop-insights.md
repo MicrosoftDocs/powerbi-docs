@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/23/2021
+ms.date: 12/09/2021
 LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI Desktop to explain fluctuations in visuals
@@ -111,6 +111,7 @@ The following list is the collection of currently unsupported scenarios for **ex
 * Use of "Show value as"
 * Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of the visuals created by the insights feature
 * Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
+* RLS or OLS enabled data models
 
 
 In addition, the following model types and data sources are currently not supported for insights:
@@ -119,6 +120,8 @@ In addition, the following model types and data sources are currently not suppor
 * Live connect
 * On-premises Reporting Services
 * Embedding
+
+The insights feature does not support reports that are distributed as an App.
 
 ## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
@@ -129,3 +132,4 @@ For more information about **Power BI Desktop**, and how to get started, check o
 * [Connect to Data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Apps in Power BI](../consumer/end-user-apps.md)

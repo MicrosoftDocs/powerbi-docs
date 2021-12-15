@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/20/2021
+ms.date: 09/29/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 
 When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 
-Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md).
+Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md). Furthermore, Automatic Page Refresh supports Proxy Models as well.
 
 ## Refresh types
 
@@ -161,7 +161,7 @@ In the Power BI service, restrictions on automatic page refresh apply based on t
 
 To clarify how these restrictions work, let's start with some background on capacities and workspaces.
 
-*Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or dedicated. A *shared capacity* is shared with other Microsoft customers. A *dedicated capacity* is fully committed to a single customer. For an introduction to dedicated capacities, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
+*Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or reserved. A *shared capacity* is shared with other Microsoft customers. A *reserved capacity* is reserved for a single customer. For an introduction to reserved capacities, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
 
 In shared capacity, workloads run on computational resources shared with other customers. Because the capacity needs to share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 

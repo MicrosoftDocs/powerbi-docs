@@ -1,8 +1,8 @@
 ---
 title: Power BI embedded analytics multi-tenancy solutions
 description: Choose the Power BI embedded application multi-tenant that is best for you
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -86,7 +86,7 @@ Despite these advantages, consider the scale that your multi-tenant app can reac
 
 # [RLS](#tab/rls)
 
-With row-level security-based separation, the data needs to fit within the dataset size limit. With the introduction of [incremental refresh](../../connect-data/incremental-refresh-overview.md) and the release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../transform-model/desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
+With row-level security-based separation, the data needs to fit within the dataset size limit. With the introduction of [incremental refresh](../../connect-data/incremental-refresh-overview.md) and the release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../admin/aggregations-auto.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
 
 ---
 
@@ -128,7 +128,7 @@ If only a limited number of tenants need different geographies, consider keeping
 
 ### Cost
 
-Both [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
+Both [Power BI Embedded](./embedded-analytics-power-bi.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage. You can measure the load and performance with the various metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
 
@@ -208,10 +208,10 @@ Considerations and limitations for Power BI [capacities](embedded-capacity.md).
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Embedded analytics with Power BI](embedding.md)
+>[Embedded analytics with Power BI](./embedded-analytics-power-bi.md)
 
 >[!div class="nextstepaction"]
->[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
+>[Power BI Embedded](./embedded-analytics-power-bi.md)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium](../../admin/service-premium-what-is.md)

@@ -6,8 +6,8 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: reference
-ms.date: 05/05/2021
+ms.topic: conceptual
+ms.date: 10/27/2021
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -62,8 +62,71 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 ### Text type
 **Text** - A Unicode character data string. Can be strings, numbers, or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
 
+Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear to change slightly between querying data using Power Query, and then, after the data has been loaded.
+
+The engine that stores data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
+In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and a *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Textual data with various capitalizations in Power Query":::
+
+Notice there are multiple orders with the same name as addressee, although entered into the system slightly differently.
+
+When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="The same textual data after loading into Power BI has changed capitalization":::
+
+Notice that the capitalization of some of the names has changed from the way it was originally entered. This change is because the engine that stores data in Power BI is case *insensitive* and treats the lowercase and uppercase version of the same character as the same. Power Query *is* case sensitive, so makes that distinction and therefore shows the data exactly as it was stored in the source system. However, the data in the second screenshot has been loaded into the engine of Power BI and therefore has changed.
+
+When loading data, the engine evaluates each row, one by one, starting from the top. For each text column (such as *Addressee*), the engine stores a dictionary of unique values to achieve performance through data compression. While processing the *Addressee* column, the first three values the engine comes across are unique and stored in the dictionary. However, from the fourth name (order 1004) onwards, since the engine is case insensitive, the names are seen as the same: *Taina Hasu* is the same as *TAINA HASU* as well as *Taina HASU*. As a result, the engine does not store that name, but instead refers to the first name it came across. That also explains why the name *MURALI DAS* is written in capitals, as that is simply the way the name was written when the engine first evaluated it when loading the data top to bottom.
+
+This image explains this process:
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Depiction of the data load process and mapping text values to a dictionary of unique values":::
+
+In the example above, the engine loads the first row of data, creates the *Addressee* dictionary and adds *Taina Hasu* to it. It also adds a reference to that value in the *Addressee* column on the table it loaded. It does this for the second and third row as well, as both of these names are not equivalent to the others when compared ignoring case.
+
+The *Addressee* for the fourth row is compared against the names in the dictionary and is found: since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. As a result, the engine does not add a new name to the *Addressee* dictionary, instead it refers to the existing name. This is the same for the remaining rows.
+
+
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
+
+Power BI converts and displays data differently in certain situations. This section describes common cases of converting Boolean values, and how to address conversions that create unexpected results in Power BI.  
+
+For the best and most consistent results, when loading a column that contains Boolean information (true/false) into Power BI, set the column type to *True/False* as described and explained in the following example.
+
+In this example, we loaded data about whether our customers have signed up for our newsletter: a value of *TRUE* indicates the customer has signed up for the newsletter, a value of *FALSE* indicates the customer has not signed up. However, when we publish the report to the Power BI service, we notice that the column tracking the newsletter sign-up status shows as *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following collections of steps involving querying, publishing, and refreshing the data describe how conversions occur, and how to address them.
+
+The simplified query for this table shown in the following image.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-01.png" alt-text="Columns set to boolean":::
+
+The data type of the **Subscribed To Newsletter** column is set to *Any*, and as a result of that data type setting, the data is loaded as text into the Power BI model:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-02.png" alt-text="Data loaded into Power B I appears as expected":::
+
+When we add a simple visualization showing the detailed information per customer, the data appears in the visual as expected, both in Power BI Desktop, and when published to the Power BI service. 
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Visual shows data appearing as expected":::
+
+However, when we refresh the dataset in the Power BI service the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Visual shows data appearing in an unexpected format after refresh":::
+
+If we republish the report from Power BI Desktop, the **Subscribed To Newsletter** column will again show *TRUE* or *FALSE* as we expect, but once a refresh occurs in the Power BI service, the values are again changed to show *-1* and *0*.
+
+The **solution** to ensure this doesn't happen is to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-05.png" alt-text="Change the data type of the column to true false":::
+
+When the change is made, the visualization shows the values in the **Subscribed To Newsletter** column slightly differently; rather than the text being all capital letters (as entered in the table), they are now italic and only the first letter is capitalized, which is the result of change the column's data type.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-06.png" alt-text="Values appear differently when the data type is changed":::
+
+Once the data type is changed and republished to the Power BI service, and when a refresh occurs, the values are displayed as *True* or *False*, as expected.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="When true or false values use the true false data type, data appears as expected after refresh":::
+
+In summary, when working with Boolean data in Power BI, make sure your columns are set to the **True/False** data type in Power BI Desktop.
 
 ### Blanks/nulls type
 **Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](/dax/blank-function-dax) function, and test for blanks by using the [ISBLANK](/dax/isblank-function-dax) logical function.
@@ -191,3 +254,14 @@ How blanks are handled in operations such as addition or concatenation depends o
 | TRUE AND BLANK |FALSE |TRUE |
 | BLANK OR BLANK |BLANK |Error |
 | BLANK AND BLANK |BLANK |Error |
+
+
+## Next steps
+
+You can do all sorts of things with Power BI Desktop and data. For more information on its capabilities, check out the following resources:
+
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

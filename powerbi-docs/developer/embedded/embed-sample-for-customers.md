@@ -1,13 +1,13 @@
 ---
 title: Embed content in your Power BI embedded analytics application
 description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/02/2021
+ms.date: 12/05/2021
 
 ---
 
@@ -18,12 +18,16 @@ ms.date: 04/02/2021
 In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
+>
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
 To use your application, your users will not need to sign in to Power BI or have a Power BI license.
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
+
+> [!IMPORTANT]
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -507,10 +511,7 @@ After configuring and running the *embed for your customers* sample application,
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
->[Embed paginated reports for your customers](embed-paginated-reports-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed paginated reports for your organization](embed-paginated-reports-organization.md)
+>[Embed paginated reports](embed-paginated-reports.md)
 
 >[!div class="nextstepaction"]
 >[Ask the Power BI Community](https://community.powerbi.com/)

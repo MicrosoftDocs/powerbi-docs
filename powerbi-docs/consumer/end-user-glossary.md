@@ -7,8 +7,8 @@ services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
-ms.date: 06/20/2021
+ms.topic: conceptual
+ms.date: 09/09/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -69,7 +69,7 @@ A mathematical determination of the size or number of something.
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
-A Power BI [visual type](end-user-visual-type.md).
+A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 **card** (Power BI Home)    
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
@@ -82,6 +82,9 @@ Also called data classification. This option can be turned on by Power BI admins
 
 **connect live**    
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
+
+**connector**    
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
 
 **container**    
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
@@ -237,6 +240,7 @@ This has been replaced with **nav pane** but may still appear in some documentat
 The controls along the left edge of Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **license**    
@@ -272,6 +276,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **notification**    
@@ -347,6 +352,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
+
 See *account*.
 
 **publish**    

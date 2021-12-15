@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 10/04/2021
 ---
 
 # Tips for authoring template apps in Power BI
@@ -89,7 +89,10 @@ The report pages offer additional insight into the data included in your templat
 * All of the aggregations presented make numeric sense (averages, unique values).  
 * Slicing produces rational results.  
 * Logo is present on at least the top report.  
-* Elements are in the client's color scheme to the extent possible.  
+* Elements are in the client's color scheme to the extent possible.
+
+>[!NOTE]
+> A single template app cannot include more than twenty reports.  
 
 <a name="dashboard"></a>
 
@@ -142,7 +145,7 @@ In order to redirect a user to the app's download link in Power BI see the follo
 
 ## Automate parameter configuration during installation
 
-If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](template-apps-auto-install.md) for details.
 
 ## Next steps
 

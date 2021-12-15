@@ -8,8 +8,8 @@ ms.date: 05/28/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.custom: mvc
-#customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.
+ms.custom: mvc, intro-overview
+#Customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.
 ---
 # What is Power BI Report Server?
 
