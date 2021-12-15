@@ -413,7 +413,7 @@
         {
             "source_path": "powerbi-docs/consumer/end-user-notification-center.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-notification-center",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }, 
         {
             "source_path": "powerbi-docs/mobile-apps-offline-data.md",
