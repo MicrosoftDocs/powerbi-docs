@@ -22,8 +22,6 @@ The app is updated often with new features and functionalities and provides the 
 
 To [install the Gen2 metrics app](service-premium-install-gen2-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
 
-## App pages
-
 The Gen2 metrics app has five pages:
 
 * [Overview](#overview)
@@ -36,9 +34,7 @@ The Gen2 metrics app has five pages:
 
 * [Help](#help)
 
-The pages labeled **Evidence** and **Refresh** don't work yet.
-
-### Overview
+## Overview
 
 This page provides an overview of the capacity performance. It's divided into the three sections listed below.
 
@@ -46,39 +42,72 @@ At the top of each page, the **CapacityID** field allows you to select the capac
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Gen2 metrics app, with the capacity I D selector highlighted.":::
 
-#### Artifacts
+### Artifacts
 
 The artifacts section is made up of two visuals, one on top of the other, in the left side of the report. The top visual is a stacked column table, and below it is a matrix table.
 
-* **Multi metric column chart** - A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Gen2 metrics app.":::
 
-    The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
+#### Multi metric column chart
 
-    * **CPU** - CPU processing time in seconds.
+A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
 
-    * **Duration** - Processing time in seconds.
+:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Gen2 metrics app.":::
 
-    * **Operations** - The number of operations that took place.
+The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
 
-    * **Users** - The number of users that performed the operation.
+:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart-values.png" alt-text="A screenshot showing the multi metric column chart with the values row highlighted.":::
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-artifacts.png" alt-text="A screenshot showing the artifact visual, in the overview page, in the Power BI Gen2 metrics app.":::
+* **CPU** - CPU processing time in seconds.
 
-* **Matrix by artifact and operation** - A matrix table that displays metrics for each Power BI item on the capacity. To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below.
+* **Duration** - Processing time in seconds.
 
-    * **Artifacts** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
+* **Operations** - The number of Power BI operations that took place.
 
-    * **CPU** - CPU processing time in seconds. Sort by this CPU to top CPUs that consumed Power BI items over the past two weeks.
+* **Users** - The number of users that performed operations.
+
+#### Matrix by artifact and operation
+
+A matrix table that displays metrics for each Power BI item on the capacity.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
+To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
+
+* **Artifacts** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
+
+* **CPU (s)** - CPU processing time in seconds. Sort to view the top CPUs that consumed Power BI items over the past two weeks.
+
+* **Duration (s)** - Processing time in seconds. Sort to view the Power BI items that needed the longest processing time during the past two weeks.
+
+* **Users** - In this table the term *users* refers to Power BI items. Sort to view the most popular Power BI items.
+
+* **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
+
+* **Overloaded minutes** - Displays a sum of 30 minutes increments were overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
+
+* **Performance delta** - Displays the performance effect on Power BI items. A positive value indicates that the performance is improving, and a negative value indicates that the performance is degrading. Sort to view the Power BI items that were effected the most due to performance degradation.
+
+### Performance
+
+The performance section is made up of four visuals, one on top of the other, in the left side of the report.
 
 
-|Sort by            |Result   |
-|-------------------|---------|
-|CPU                |View the  |
-|Duration           |View the Power BI items that need the longest processing time during the past two weeks |
-|Users              |View the most popular Power BI items |
-|Artifact size      |  |
-|Overloaded minutes |  |
-|Performance delta  |View the Power BI items that were affected the most due to performance degradation |
+
+#### NNNNNNEW
+
+Visual aids - The three visuals at the bottom of the page are visual aids that respond to your interactions with the visuals in the other sections. They show three important auxiliary metrics:
+
+Utilization - Overload impact score. Showing a chart with a score representing the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
+
+Memory - Memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten-minute time sample in the past two weeks.
+
+Degradation - Performance profile changes. This visual shows the percentage of fast, medium, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
+
+
+
 
 #### Weekly trendlines
 
@@ -86,19 +115,19 @@ The four visuals arranged in one column on the right of the report titled *Weekl
 
 * **CPU** - Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
 
-    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-cpu.png" alt-text="A screenshot showing the C P U tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
 
 * **Active Artifacts** - Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
 
-    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-duration.png" alt-text="A screenshot showing the duration tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
 
 * **Active Users** - Displays the number of users that used the capacity during the past four weeks.
 
-    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-operations.png" alt-text="A screenshot showing the operations tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
 
 * **Cores** - Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
 
-    :::image type="content" source="media/service-premium-gen2-metrics-app/overview-page-users.png" alt-text="A screenshot showing the users tab in the weekly trendlines visual, in the overview page, in the Power BI Gen2 metrics app.":::
+
 
 ### Evidence
 
