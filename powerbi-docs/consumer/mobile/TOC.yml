@@ -52,6 +52,8 @@
         href: mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile-apps-geographic-filtering.md
+      - name: "Dark mode"
+        href: mobile-apps-dark-mode.md
       - name: "Using OAuth to connect to Reporting Services"
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
@@ -78,8 +80,6 @@
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"
         href: mobile-apps-split-screen.md
-      - name: "Dark mode"
-        href: mobile-apps-dark-mode.md
       - name: "Configure using mobile device management"
         href: mobile-app-configuration.md        
     - name: iOS

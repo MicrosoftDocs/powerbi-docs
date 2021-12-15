@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/14/2021
+ms.date: 12/13/2021
 LocalizationGroup: Premium
 ---
 
@@ -77,6 +77,15 @@ To date, organizations that have enabled Autoscale for capacities have gotten th
 ## Migration notification
 
 Following the general availability of gen2, we’ll begin to notify affected customers so that you can prepare your organization for changes. We’ll post additional awareness, along with specific migration timelines to Microsoft 365 Message Center. Admins will receive 60 days advance notice of changes. The timeline will vary by cloud.
+
+## National cloud supportability
+
+The following table describes Gen2 national cloud supportability. If a certain cloud environment has unsupported Gen2 features, they're also listed in the table.
+
+|Environment |Supported |Unsupported features |
+|------------|----------|---------------------|
+|U.S. Government Community Cloud (GCC)            |✔️ |Autoscale |
+|U.S. Government Community Cloud High (GCC High) |✔️ |          |
 
 ## Next steps
 
