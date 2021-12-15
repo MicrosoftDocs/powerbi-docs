@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 12/15/2021
 ---
 
 # Capabilities and properties of Power BI visuals 
@@ -66,9 +66,9 @@ DataRoles are defined by the following properties:
 * **name**: The internal name of this data field (must be unique).
 * **displayName**: The name displayed to the user in the **Properties** pane.
 * **kind**: The kind of field:
-    * `Grouping`: Discrete values that are used to group measure fields.
-    * `Measure`: Numeric data values.
-    * `GroupingOrMeasure`: Values that can be used as either a grouping or a measure.
+  * `Grouping`: Set of discrete values that are used to group measure fields.
+  * `Measure`: Single numeric values.
+  * `GroupingOrMeasure`: Values that can be used as either a grouping or a measure.
 * **description**: A short text description of the field (optional).
 * **requiredTypes**: The required type of data for this data role. Values that don't match are set to null (optional).
 * **preferredTypes**: The preferred type of data for this data role (optional).
