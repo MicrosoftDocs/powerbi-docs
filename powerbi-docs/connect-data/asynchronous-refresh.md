@@ -33,11 +33,7 @@ By using the base URL, resources and operations can be appended based on paramet
 
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
 
-Sample request
 
-```http
-POST https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes
-```
 
 ## Requirements
 
@@ -58,6 +54,12 @@ REST API modifications do not change permissions as they are currently defined f
 ## POST /refreshes
 
 To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The Location header in the response includes the **refreshId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
+
+Sample request
+
+```http
+POST https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes
+```
 
 The body may resemble the following:
 
@@ -104,9 +106,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 202 Accepted
 ```
 
-The response also includes a Location response-header field to point the caller to the refresh operation that was just created/accepted. The Location is that of the new resource which was created by the request, which includes the `refreshId`:
-
-
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`.
 
 ## GET /refreshes
 
@@ -195,10 +195,12 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 
 ## DELETE /refreshes/\<refreshId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the refreshId.
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the refreshId. 
+
+For example,
 
 ```http
-Delete https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes /1344a272-7893-4afa-a4b3-3fb87222fdac
+DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes /1344a272-7893-4afa-a4b3-3fb87222fdac
 ``````
 
 ## Limitations
