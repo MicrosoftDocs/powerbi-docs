@@ -12,6 +12,8 @@ ms.date: 11/04/2021
 
 # Assign a workspace to a deployment pipeline
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Deployment pipelines enables you to assign and unassign workspaces to any stage in a pipeline. This capability is particularly important for organizations that already have workspaces that are used as development, test and production environments. In such cases, you can assign each workspace to its corresponding pipeline stage, and continue working in your usual flow.
 
 >[!NOTE]

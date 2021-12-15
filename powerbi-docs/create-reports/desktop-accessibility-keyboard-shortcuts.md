@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The tables in this article describe the shortcuts available in a Power BI report. 
 
 When using Power BI Desktop, you can press **Shift + ?** to show keyboard shortcuts, as shown in the following image.

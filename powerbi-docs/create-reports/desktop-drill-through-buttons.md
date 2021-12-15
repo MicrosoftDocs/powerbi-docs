@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Create a drillthrough button in Power BI
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 You can create a *drillthrough* button in Power BI, a button that drills through to a page with details that are filtered to a specific context.
 
 One way to drill through in a report is to right-click in a visual. If you want the drillthrough action to be more obvious, you can create a drillthrough button instead. The button can increase the discoverability of important drillthrough scenarios in your reports. You can conditionally determine much of how the button looks and acts. For example, you can show different text on a button if certain conditions are met. Read on for details. 

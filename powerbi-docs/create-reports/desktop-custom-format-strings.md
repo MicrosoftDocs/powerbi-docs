@@ -12,9 +12,11 @@ LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 With custom format strings in **Power BI Desktop**, you can customize how fields appear in visuals, and make sure your reports look just the way you want them to look.
 
-![Screenshot shows Power B I desktop with a custom format selected. ](media/desktop-custom-format-strings/custom-format-strings-01.png)
+![Screenshot shows Power BI desktop with a custom format selected. ](media/desktop-custom-format-strings/custom-format-strings-01.png)
 
 
 ## How to use custom format strings

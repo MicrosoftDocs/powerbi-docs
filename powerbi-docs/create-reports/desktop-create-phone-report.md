@@ -13,6 +13,8 @@ LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
 
 ![Screenshot of mobile-optimized reports in portrait and landscape orientation.](media/desktop-create-phone-report/desktop-mobile-optimized-report.png)
