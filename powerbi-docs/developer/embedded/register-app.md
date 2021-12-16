@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/02/2021
+ms.date: 12/05/2021
 ---
 
 # Register an Azure AD application to use with Power BI
@@ -18,8 +18,8 @@ To use Power BI embedded analytics, you need to register an Azure Active Directo
 
 Before registering your app, decide which of the following solutions is best suited for you:
 
-* Embed for your customers
-* Embed for your organization
+* [Embed for your customers](#embed-for-your-customers)
+* [Embed for your organization](#embed-for-your-organization)
 
 ### Embed for your customers
 
@@ -50,6 +50,9 @@ If you're creating an *embed for your organization* application, and want more c
 
 These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
 
+> [!IMPORTANT]
+> The following instructions will not work for GCC customers. If you are embedding for a GCC, follow the instructions for **Manual registration**.
+
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
 2. In the *Choose an embedding solution* section, select **Embed for your customers**.
@@ -61,6 +64,8 @@ These steps describe how to register an Azure AD application for the Power BI [e
     * **Application Name** - Give your application a name.
 
     * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+
+    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
 
 5. Select **Register**.
 
@@ -163,22 +168,29 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 4. From the **Owned applications** tab, select your app. The application opens in the *Overview* tab, where you can review the *Application ID*.
 
-5. Select the **API permissions** tab.
+5. Select the **View API permissions** tab.
 
-6. To add permissions, follow these steps:
+    ![Screenshot of View API permissions tab.](media/register-app/api-permissions.png)
 
-    1. Select **Add a permission** and then select **Power BI service**.
+6. Select **Add a permission**.
+
+7. To add permissions, follow these steps (note that the first step is different for GCC apps):
+
+    1. From the **Microsoft APIs** tab, select **Power BI service**.
+    > [!NOTE]
+    > For GCC apps, Select the **APIs my organization uses** tab, and search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
+    >    ![Screenshot of GCC permissions tab.](media/register-app/find-gcc-apis.png)
 
     2. Select **Delegated Permissions** and add or remove the specific permissions you need.
 
     3. When you're done, select **Add permissions** to save your changes.
 
-7. To remove a permission, follow these steps:
+8. To remove a permission, follow these steps:
 
     1. Select the ellipsis (...) to the right of the permission.
-    
+
     2. Select **Remove permission**.
-    
+
     3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
 ## [HTTP](#tab/HTTP)
@@ -223,10 +235,10 @@ To change your Azure AD app permissions programmatically, you'll need to get the
      }
      ```
 
-    >[!NOTE]
+    > [!NOTE]
     >
-    >* If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
-    >* The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
+    > * If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
+    > * The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
 4. Grant app permissions to Azure AD, by assigning a value to `consentType`.
 

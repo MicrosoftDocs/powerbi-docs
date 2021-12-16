@@ -35,8 +35,12 @@
       - name: Premium Gen2 architecture
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
-        href: service-premium-concepts.md      
-      - name: Managing capacities
+        href: service-premium-concepts.md  
+      - name: Backup and restore Power BI Premium datasets (preview)
+        href: service-premium-backup-restore-dataset.md
+      - name: Using service tags with Power BI
+        href: service-premium-service-tags.md             
+      - name: Managing capacities        
         items:            
         - name: Managing Premium Gen2 capacities
           href: service-premium-capacity-manage-gen2.md  
@@ -61,16 +65,18 @@
         - name: Premium capacity scenarios
           href: service-premium-capacity-scenarios.md
         - name: Power BI Premium FAQ
-          href: service-premium-faq.yml
-        - name: Backup and restore Power BI Premium datasets (preview)
-          href: service-premium-backup-restore-dataset.md
-        - name: Using service tags with Power BI
-          href: service-premium-service-tags.md      
+          href: service-premium-faq.yml   
     - name: Information protection
       items:
-      - name: Default label policy (preview)
+      - name: "Data protection in Power BI"
+        href: service-security-data-protection-overview.md
+      - name: "Sensitivity label overview"
+        href: service-security-sensitivity-label-overview.md
+      - name: DLP policies for Power BI (preview)
+        href: service-security-dlp-policies-for-power-bi.md
+      - name: Default label policy
         href: service-security-sensitivity-label-default-label-policy.md
-      - name: Mandatory label policy (preview)
+      - name: Mandatory label policy
         href: service-security-sensitivity-label-mandatory-label-policy.md
       - name: Sensitivity label downstream inheritance (preview)
         href: service-security-sensitivity-label-downstream-inheritance.md
@@ -136,10 +142,6 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Data protection in Power BI"
-        href: service-security-data-protection-overview.md
-      - name: "Sensitivity label overview"
-        href: service-security-sensitivity-label-overview.md
       - name: "Enable sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
       - name: "How to apply sensitivity labels"
