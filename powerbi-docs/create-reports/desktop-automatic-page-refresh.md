@@ -38,7 +38,7 @@ This refresh type allows you to refresh visuals on a page based on detecting cha
 
 Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you are connected to a supported data source. This restriction applies to both automatic page refresh types.
 
-To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
+To use automatic page refresh, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
 ![Page refresh location](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
@@ -139,9 +139,9 @@ Now let's look at how you can potentially detect and diagnose performance proble
 
 # [Power BI service](#tab/powerbi-service)
 
-You can also set automatic page refresh for reports that have been published to the Power BI service as long as the data source is [DirectQuery](../connect-data/desktop-directquery-about.md).
+You can set automatic page refresh for reports that have been published to the Power BI service as long as the data source is [DirectQuery](../connect-data/desktop-directquery-about.md).
 
-To configure automatic page refresh for reports in the Power BI service, the steps are similar to Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedded-analytics-power-bi.md) content. This image shows the **Page refresh** configuration for the Power BI service:
+When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedded-analytics-power-bi.md) content. This image shows the **Page refresh** configuration for the Power BI service:
 
 ![Page refresh location in the service](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
