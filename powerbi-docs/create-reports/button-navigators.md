@@ -19,7 +19,7 @@ Using Power BI’s built-in navigators, you can quickly build page and bookmark 
 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Example report with page and bookmark navigation":::
 
-You can find this capability in Power BI Desktop or Power BI Service.
+You can find this capability in Power BI Desktop or Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 

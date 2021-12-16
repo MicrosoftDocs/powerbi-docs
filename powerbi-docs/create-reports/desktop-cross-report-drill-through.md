@@ -39,7 +39,7 @@ After you validate your models, enable the source report to use cross-report dri
 
 # [Power BI Desktop](#tab/powerbi-desktop)
  
-1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**. 
+1. Go to **File** > **Options and settings** > **Options**. 
 1. In the **Options** window left navigation, at the bottom of the **Current file** section, select **Report settings**. 
 1. At bottom right, under **Cross-report drillthrough**, select **Allow visuals in this report to use drillthrough targets from other reports**. 
 1. Select **OK**. 
@@ -48,7 +48,7 @@ After you validate your models, enable the source report to use cross-report dri
 
 # [Power BI service](#tab/powerbi-service)
 
-1. In Power BI service, select the workspace that contains your target and source reports.
+1. Select the workspace that contains your target and source reports.
 1. Next to the source report name in the workspace list, select the **More options** symbol, and then select **Settings**. 
 1. Near the bottom of the **Settings** pane, under **Cross-report drillthrough**, select **Allow visuals in this report to use drill-through targets from other reports**, and then select **Save**.
    

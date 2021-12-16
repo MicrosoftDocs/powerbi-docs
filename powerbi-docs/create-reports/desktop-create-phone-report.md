@@ -29,11 +29,19 @@ These capabilities make it possible to design and build attractive, interactive 
 
 **Prerequisite**: The first step is to design and create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
 
-To create the mobile-optimized view, open the report in either Power BI Desktop or in the Power BI service. When the report is open, go the mobile layout view:
-   * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
-   * In the Power BI service, choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+To create the mobile-optimized view, open the report in either Power BI Desktop or in the Power BI service. When the report is open, go the mobile layout view.
 
-   You see a scrollable canvas shaped like a phone, and a **Page visuals** pane that lists all of the visuals that are on the original report page.
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+Select the **View** ribbon and choose **Mobile layout**.
+
+# [Power BI service](#tab/powerbi-service)
+
+Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+
+---
+
+You see a scrollable canvas shaped like a phone, and a **Page visuals** pane that lists all of the visuals that are on the original report page.
 
 * Each visual in the **Page visuals** pane appears with its name for easy identification.
 * Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
