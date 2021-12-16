@@ -212,7 +212,9 @@
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
-        href: refresh-summaries.md        
+        href: refresh-summaries.md
+      - name: "Asynchronous refresh with REST API"
+        href: asynchronous-refresh.md     
       - name: Incremental refresh
         items:
         - name: Incremental refresh and real-time data for datasets
