@@ -1,6 +1,6 @@
 ---
-title: Show, hide, and move columns in scorecards (preview)
-description: Learn how to show, hide, and move columns in Power BI scorecards.
+title: Arrange columns and goals in scorecards (preview)
+description: Learn how to move goals and show, hide, and move columns in Power BI scorecards.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,17 +8,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/10/2021
+ms.date: 12/16/2021
 ---
-# Show, hide, and move columns in Power BI scorecards (preview)
+# Arrange columns and goals in Power BI scorecards (preview)
 
-Some organizations may use all the columns in a scorecard, but in some scenarios, you may not want all the columns. As a scorecard author, you decide the columns that your scorecard consumers see, and each scorecard shows only columns that are appropriate to your scenario. You can also re-order the columns to best optimize the scorecard for your audience.
+In some scenarios, you may want to reorder the goals in a scorecard, or make one goal a subgoal of another. You may also want hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving goals and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
 ## Prerequisites
 
 Creating goals is a Power BI Premium feature, so you need either:
 
-- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity
+- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity.
 - A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
 
 You also need:
@@ -26,11 +26,26 @@ You also need:
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
 
-## Show, hide, or move a goal
+## Reorder the goals in a scorecard
 
-1. In edit mode,select the arrow icon next to a column and open column settings.
-1. Select which columns you want to show or hide.
-1. Drag column names up or down to reorder them on the scorecard.
+It's easy to reorder goals on the scorecard, or make them subgoals.
+
+1. Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal. 
+
+    When you make it a subgoal, it takes the color of the goal it's under.
+
+## Hide or move a column
+
+1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to hide or move > **Column settings**.
+1. Select **Move right**, **Move left**, or **Hide this column**.
+
+## Show a hidden column
+
+1. Open the scorecard in edit mode, and select the arrow icon next to any column > **Column settings**.
+1. Select **Show/Hide columns**.
+1. In **Edit view columns**, select **Reset to default** or select the column you want to view. 
+1. You can also re-order columns in this view but dragging them up or down.
+1. Select **Apply**.
 
 ## Next steps
 
