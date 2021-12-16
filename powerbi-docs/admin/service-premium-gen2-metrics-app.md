@@ -100,7 +100,7 @@ The performance section is made up of four visuals, one on top of the other, in 
 
 #### CPU over time
 
-Displays a chart with the selected capacity's CPU usage over time. Filters applied to the page in the [Multi metric column chart](#multi-metric-column-chart), affect this chart's display as follows:
+Displays the CPU usage of the selected capacity over time. Filters applied to the page in the [Multi metric column chart](#multi-metric-column-chart), affect this chart's display as follows:
 
 * *No filters applied* - Columns display the peak timepoint per hour.
 
@@ -127,7 +127,7 @@ The CPU over time chart displays the following elements:
 
 #### Overloaded minutes per hour
 
-Displays a chart with a score that represents the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
+Displays a score that represents the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
 
 #### Artifact size
 
@@ -172,7 +172,7 @@ When you detect a Power BI item that causes overload, you can either optimize th
 
 ### Artifacts causing overloading
 
-You can visually identify the different Power BI items that cause overload, by using the [Artifacts causing overloading](#rtifacts-causing-overloading) timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
+You can visually identify the different Power BI items that cause overload, by using the [Artifacts causing overloading](#artifacts-causing-overloading) timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
 
 ### Overloaders
 
@@ -192,7 +192,7 @@ Use this visual to understand whether overload or autoscale events happen due to
 
 Each column represents a 30 second window where CPU usage for the capacity exceeded allowance. The height of the column represents the amount of CPU used.
 
-The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Artifacts overloaded (seconds)](#artifacts-overloaded-(seconds)) chart.
+The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Artifacts overloaded (seconds)](#artifacts-overloaded-seconds) chart.
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
@@ -283,7 +283,7 @@ This page provides a detailed view of every operation that resulted in CPU activ
 
 When the total combined CPU for *interactive* and *background* operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
 
-* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added for the next 24 hours and will be shown as an increased value in the [CPU Limit](#cpu-limit) line.
+* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added for the next 24 hours and will be shown as an increased value in the *CPU Limit* line in the [CPU over time](#cpu-over-time) chart.
 
     >[!NOTE]
     >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
