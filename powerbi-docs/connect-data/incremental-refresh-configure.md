@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 LocalizationGroup: 
 ---
 
@@ -86,7 +86,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
     
     Depending on your settings, your policy should look something like this:
 
-    ![Refresh policy dialog](media/incremental-refresh-overview/pbid-incremental-refresh-dialog-02.png)
+    :::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog-02.png" alt-text="Define policy dialog":::
 
 1. Review your settings and then click **Apply** to complete the refresh policy. Source data is not loaded with this step.
 
