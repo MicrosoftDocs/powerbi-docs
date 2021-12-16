@@ -72,6 +72,8 @@
         href: service-security-data-protection-overview.md
       - name: "Sensitivity label overview"
         href: service-security-sensitivity-label-overview.md
+      - name: DLP policies for Power BI (preview)
+        href: service-security-dlp-policies-for-power-bi.md
       - name: Default label policy
         href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy

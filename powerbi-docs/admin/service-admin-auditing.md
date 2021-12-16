@@ -352,6 +352,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
 | Deleted Power BI dataset     | DeleteDataset         |         |
 | Deleted Power BI dataset from external app | DeleteDatasetFromExternalApplication | |
+| Deleted Power BI dataset rows | DeleteDatasetRows |   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
 | Deleted Power BI goal | DeleteGoal | |
