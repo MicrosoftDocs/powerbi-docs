@@ -31,13 +31,13 @@ You have to have permissions to edit a report to create report bookmarks that ot
  
 On the **View** tab, select **Bookmarks**. 
 
-    ![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
+![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
 
 # [Power BI service](#tab/powerbi-service)
 
 Select **Edit**, then select **View** and turn on **Bookmarks pane**. 
 
-    :::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
+:::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
 
 ---
 
