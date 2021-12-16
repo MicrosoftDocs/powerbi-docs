@@ -32,13 +32,11 @@ This refresh type allows you to update all visuals in a report page based on a c
 
 This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you also have to select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI datasets are not supported.
 
-## Authoring reports with automatic page refresh
-
-# [Power BI Desktop](#tab/powerbi-desktop)
+## Authoring reports with automatic page refresh in Power BI Desktop
 
 Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you are connected to a supported data source. This restriction applies to both automatic page refresh types.
 
-To use automatic page refresh, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
+To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
 ![Page refresh location](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
@@ -134,14 +132,11 @@ To summarize, when using change detection only one query is sent to the data sou
 
 Now let's look at how you can potentially detect and diagnose performance problems as a capacity administrator. You can also check the [Frequently asked questions](#frequently-asked-questions) section, later in this article, for more questions and answers about performance and troubleshooting.
 
-> [!WARNING]
-> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI datasets and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
+## Automatic page refresh in the Power BI service
 
-# [Power BI service](#tab/powerbi-service)
+You can also set automatic page refresh for reports that have been published to the Power BI service as long as the data source is [DirectQuery](../connect-data/desktop-directquery-about.md).
 
-You can set automatic page refresh for reports that have been published to the Power BI service as long as the data source is [DirectQuery](../connect-data/desktop-directquery-about.md).
-
-When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedded-analytics-power-bi.md) content. This image shows the **Page refresh** configuration for the Power BI service:
+To configure automatic page refresh for reports in the Power BI service, the steps are similar to Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedded-analytics-power-bi.md) content. This image shows the **Page refresh** configuration for the Power BI service:
 
 ![Page refresh location in the service](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
@@ -208,7 +203,8 @@ This table describes with more detail where this feature is available and the li
 1. *FI: Fixed interval*
 2. *CD: Change detection*
 
----
+> [!WARNING]
+> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI datasets and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
 
 ## Considerations and limitations
 
