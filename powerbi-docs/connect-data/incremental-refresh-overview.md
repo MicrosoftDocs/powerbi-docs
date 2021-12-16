@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -122,7 +122,7 @@ Using our FactInternetSales example, after creating filters based on the paramet
 
 After filters have been applied and a subset of data has been loaded into the model, you then define an incremental refresh policy for the table. After the model is published to the service, the policy is used by the service to create and manage table partitions and perform refresh operations. To define the policy, you will use the **Incremental refresh and real-time data** dialog box to specify both required settings and optional settings.
 
-:::image type="content" source="media/incremental-refresh-overview/pbid-incremental-refresh-dialog-02.png" alt-text="Define policy dialog":::
+:::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog-02.png" alt-text="Define policy dialog":::
 
 
 ## Publish
