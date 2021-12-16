@@ -44,7 +44,7 @@ At the top of each page, the **CapacityID** field allows you to select the capac
 
 ### Artifacts
 
-The artifacts section is made up of two visuals, one on top of the other, in the left side of the report. The top visual is a stacked column table, and below it is a matrix table.
+The *artifacts* section is made up of two visuals, one on top of the other, in the left side of the report. The top visual is a stacked column table, and below it is a matrix table.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Gen2 metrics app.":::
 
@@ -92,42 +92,70 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 ### Performance
 
-The performance section is made up of four visuals, one on top of the other, in the left side of the report.
+The *performance* section is made up of four visuals, one on top of the other, in the middle of the report.
 
+:::image type="content" source="media/service-premium-gen2-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Gen2 metrics app.":::
 
+#### CPU over time
 
-#### NNNNNNEW
+Displays a chart with the selected capacity's CPU usage over time. Filters applied to the page in the [Multi metric column chart](#multi-metric-column-chart), affect this chart's display as follows:
 
-Visual aids - The three visuals at the bottom of the page are visual aids that respond to your interactions with the visuals in the other sections. They show three important auxiliary metrics:
+* *No filters applied* - Columns display the peak time point per hour.
 
-Utilization - Overload impact score. Showing a chart with a score representing the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
+* *Filters are applied* -  The visuals displays every 30 second time point.
 
-Memory - Memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten-minute time sample in the past two weeks.
+>[!NOTE]
+>Peak is calculated as the highest number of seconds from both *interactive* and *background* operations.
 
-Degradation - Performance profile changes. This visual shows the percentage of fast, medium, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
+To access the [Timepoint](#timepoint) page, right-click an overloaded time point, select **Drill through** and then select **TimePoint Detail**.
 
+:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-drillthrough.png" alt-text="A screenshot showing the time point drill through option in the C P U overtime chart.":::
 
+The...
 
+* **Interactive CPU** - Red columns represent the number of CPU seconds used during *interactive operations* in a 30 second period.
 
-#### Weekly trendlines
+    *Interactive* operations cover a wide range of resources triggered by Power BI users. These operations are handled by front end cores and are associated with interactive page loads.
 
-The four visuals arranged in one column on the right of the report titled *Weekly trendlines*, summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks. Here's a breakdown of each visual:
+* **Background** - Blue columns represent the number of CPU seconds used during *background* in a 30 second period.
 
-* **CPU** - Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
+    *Background* operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
 
+* **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent time points where the capacity is overloaded.
 
+#### Overloaded minutes per hour
 
-* **Active Artifacts** - Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
+Displays a chart with a score that represents the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
 
+#### Artifact size
 
+Displays the memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten minute time sample in the past two weeks.
 
-* **Active Users** - Displays the number of users that used the capacity during the past four weeks.
+#### Performance profile
 
+Displays the percentage of fast, medium, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
+### Weekly trendlines
 
-* **Cores** - Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
+The *weekly trendlines* section is made up of four visuals, one on top of the other, in the right side of the report. These visuals summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks.
 
+:::image type="content" source="media/service-premium-gen2-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Gen2 metrics app.":::
 
+#### CPU
+
+Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
+
+#### Active Artifacts
+
+Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
+
+#### Active Users
+
+Displays the number of users that used the capacity during the past four weeks.
+
+#### Cores
+
+Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
 
 ### Evidence
 
@@ -137,6 +165,8 @@ This page provides information about overloads in your capacity. You can use it 
 >This page only displays data when the capacity is overloaded.
 
 When you detect a Power BI item that causes overload, you can either optimize that item to reduce its impact on the capacity, or you can scale up the capacity.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Gen2 metrics app.":::
 
 The table below lists the visuals displayed in the evidence page according to their location in the page.
 
@@ -158,33 +188,83 @@ Switch to the *Overloaded artifacts* pivot to identify the items most affected b
 
 The *Overloaded* time value shown is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
 
-#### Other timelines
+#### Overloading windows
 
-The three timelines displayed on the right side of the evidence page show which activity created an overload penalty, which items were impacted, and how many users were impacted. Items are represented by different colors in each visual.
+Use this visual to understand whether overload or autoscale events happen due to a single Power BI item, or many items. Each Power BI item is given a different color.
 
-Below are two examples of using these timelines, to establish which action can be taken to resolve an overload.
+Each column represents a 30 second window where CPU usage for the capacity exceeded allowance. The height of the column represents the amount of CPU used during overloaded times.
 
-* *Item overload that affects its own performance* - You can identify this by seeing columns with the same color in the *Artifacts causing overload* and *Artifacts overloaded* visuals. This item will likely benefit from optimization to make it run more smoothly.
+The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Artifacts overloaded (seconds)](#artifacts-overloaded-(seconds)) chart.
 
-* *Item overload that affects other items* - When an item causing overload is affecting other items and users in the capacity, you can optimize the item or scale the capacity. In some cases the capacity may not be able to support your level of traffic. You can easily resolve overloading from traffic spikes by using the optional autoscaling feature which will temporarily scale up the capacity. If such occurrences happen frequently, it's most likely that an upgrade to a larger capacity is the best solution.
+#### Artifacts overloaded (seconds)
+
+Use this visual to understand whether overloading Power BI items impact themselves or produce a noisy neighbor problem by impacting the performance of other items. Each item is given a different color.
+
+The column height represents the duration time of operations subject to overload penalties, that occur when autoscale isn't turned on or used to its maximum.
+
+#### Number of users overloaded
+
+Use this visual to understand how widespread the impact of overload is. The visual will help you determine whether a single user is impacted by an overload event, or whether the overload event impacts multiple users.
+
+The column height represents the number of distinct users affected when overload occurs.
 
 ### Refresh
 
 This page is designed to help you identify refresh CPU consumption power, and aspects concerning refresh performance.
 
-At the top of the page there's a multi-selection pivot allowing you to focus on refreshing Power BI item types (such as reports, dashboards, and datasets), successful or failed operations, metrics of interest (CPU, Processing time or number of operations) and the type of refresh performed. Each of these pivots filters all the visuals in the refresh page.
+:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Gen2 metrics app.":::
 
-* **Refresh by artifact** - The top visual on the left shows the breakdown of the metric selected in the pivot at the top, in the past 14 days. These breakdowns can indicate which refresh optimization is more likely to reduce the capacity footprint or the data source load:
+At the top of the page there's a multi-selection pivot allowing you to focus on refreshing the page according to the filters listed below. Each of these pivots filters all the visuals in the refresh page.
 
-    * When you select *CPU*, you can identify whether to reduce the capacity footprint.
+:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page-filters.png" alt-text="A screenshot showing the filters in the refresh page.":::
 
-    * When you select *duration*, you can identify which data source load to reduce.
+* **Artifact Kind** - Filter the page by Power BI item type, such as report, dataset and dashboard.
 
-* **Matrix table** - The matrix table describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
+* **Status** - Filter the page by failed or successful operations.
 
-    The matrix has a *ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
+* **Metric** - Filter the page by one of the following:
 
-* **Refresh operations** - On the right side of the refresh page, there's a timeline describing the CPU power, processing time or number of refreshes done each hour over the past 14 days. This visual is designed to help you identify patterns.
+    * *CPU* - CPU consumption
+
+     * *Duration* - Operations processing time
+
+    * *Operations* - Number of operations
+
+* **Operation** - Filter according to the type of operation selected.
+
+#### Refresh by artifact
+
+Displays the breakdown of the metric selected in the pivot at the top, in the past 14 days. These breakdowns can indicate which refresh optimization is more likely to reduce the capacity footprint or the data source load:
+
+* When you select *CPU*, you can identify whether to reduce the capacity footprint.
+
+* When you select *Duration*, you can identify which data source load to reduce.
+
+#### Duration
+
+Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+
+#### CPU
+
+Each column represents the number of CPU seconds used to compete a single operation per hour, over a 14 day period.
+
+#### Operations
+
+Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
+
+#### Matrix table
+
+The matrix table describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
+
+The matrix has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
+
+#### Refresh operations
+
+On the right side of the refresh page, there are two visuals designed to help you identify patterns.
+
+* **Timeline** - Displays the number of operations per day, for the past 14 days.
+
+* **Score card** - Displays the total number of performed operations.
 
 ### Timepoint
 
