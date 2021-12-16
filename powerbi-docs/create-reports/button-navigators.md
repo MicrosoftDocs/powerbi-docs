@@ -19,9 +19,21 @@ Using Power BI’s built-in navigators, you can quickly build page and bookmark 
 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Example report with page and bookmark navigation":::
 
-You can find this capability in Power BI Desktop or Power BI Service on the **Insert** tab > **Buttons** > **Navigator**:
+You can find this capability in Power BI Desktop or Power BI Service.
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+On the **Insert** tab, select **Buttons** > **Navigator**.
 
 :::image type="content" source="media/desktop-buttons/navigator-in-ribbon.png" alt-text="Add a navigator from the ribbon":::
+
+# [Power BI service](#tab/powerbi-service)
+
+Select **Edit** to edit the report, then on the menu bar select **Buttons** > **Navigator**.
+
+:::image type="content" source="media/desktop-buttons/navigator-in-menu-bar.png" alt-text="Add a navigator from the menu bar":::
+
+---
 
 ## Page navigator
 
