@@ -452,6 +452,8 @@
         href: service-goals-check-in.md        
       - name: "Set goal-level permissions"
         href: service-goals-set-permissions.md
+      - name: "Arrange goals and columns in scorecards"
+        href: service-goals-move.md
       - name: "Goals and Power Automate"
         href: service-goals-power-automate.md        
     - name: Dashboards
