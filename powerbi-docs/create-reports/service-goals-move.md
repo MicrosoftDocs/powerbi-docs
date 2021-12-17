@@ -32,7 +32,7 @@ You also need:
 
 It's easy to reorder goals on the scorecard, or make them subgoals.
 
-1. Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal. 
+- Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal. 
 
     When you make it a subgoal, it takes the color of the goal it's under.
 
