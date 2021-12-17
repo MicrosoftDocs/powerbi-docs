@@ -91,9 +91,21 @@ When you have a collection of bookmarks you would like to present, in order, you
 Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slide-show).
 
 ## Visibility: Using the Selection pane
-Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. In Power BI Desktop, the Selection pane is on the **View** tab. When you're editing a report in the Power BI service, it's on the **View** menu. You don't see it if you can't edit the report.
+Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+In Power BI Desktop, the Selection pane is on the **View** tab. 
 
 ![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
+
+# [Power BI service](#tab/powerbi-service)
+
+When you're editing a report in the Power BI service, it's on the **View** menu. You don't see it if you can't edit the report.
+
+:::image type="content" source="media/desktop-bookmarks/power-bi-service-selection-pane.png" alt-text="Screenshot showing how to turn on the Selection pane in the Power B I service.":::
+
+---
 
 In the **Selection** pane, you select an object and toggle whether the object is currently visible by selecting the eye icon to the right of the object. 
 
