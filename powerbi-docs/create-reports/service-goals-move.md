@@ -14,6 +14,8 @@ ms.date: 12/16/2021
 
 In some scenarios, you may want to reorder the goals in a scorecard, or make one goal a subgoal of another. You may also want hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving goals and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
+:::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
+
 ## Prerequisites
 
 Creating goals is a Power BI Premium feature, so you need either:
@@ -49,7 +51,7 @@ It's easy to reorder goals on the scorecard, or make them subgoals.
 1. Select **Show/Hide columns**.
 1. In **Edit view columns**, select **Reset to default** or select the column you want to view. 
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-edit-view-columns.png" alt-text="Screenshot of moving a column in the Edit view columns pane.":::
 
 1. You can also re-order columns in this view but dragging them up or down.
 1. Select **Apply**.
