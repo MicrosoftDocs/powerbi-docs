@@ -12,6 +12,8 @@ LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
 You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
