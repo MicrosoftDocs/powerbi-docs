@@ -34,16 +34,23 @@ It's easy to reorder goals on the scorecard, or make them subgoals.
 
     When you make it a subgoal, it takes the color of the goal it's under.
 
+    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Animation of moving a goal, and making it a subgoal.":::
+
 ## Hide or move a column
 
 1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to hide or move > **Column settings**.
 1. Select **Move right**, **Move left**, or **Hide this column**.
+
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-columns.png" alt-text="Screenshot of Move or Hide columns.":::
 
 ## Show a hidden column
 
 1. Open the scorecard in edit mode, and select the arrow icon next to any column > **Column settings**.
 1. Select **Show/Hide columns**.
 1. In **Edit view columns**, select **Reset to default** or select the column you want to view. 
+
+    :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
+
 1. You can also re-order columns in this view but dragging them up or down.
 1. Select **Apply**.
 
