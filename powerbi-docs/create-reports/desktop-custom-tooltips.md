@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 12/16/2021
 LocalizationGroup: Create reports
 ---
 # Customize tooltips in Power BI
@@ -30,10 +30,12 @@ Once tooltips are added to **Tooltips**, hovering over a data point on the visua
 
 ![Custom tooltip](media/desktop-custom-tooltips/custom-tooltips-3.png)
 
-## Customizing tooltips with aggregation or quick measures
+## Customize tooltips with aggregation or quick measures
 
-You can further customize a tooltip by selecting an aggregation function or a *quick measure*. Select the arrow beside the field in the **Tooltips** bucket. Then, select from the available options.
+You can further customize a tooltip by selecting an aggregation function. Select the arrow beside the field in the **Tooltips** bucket. Then, select from the available options.
 
 ![Tooltip with quick measure](media/desktop-custom-tooltips/custom-tooltips-4.png)
+
+In Power BI Desktop, you can also select a *quick measure*. Read about [creating quick measures](../transform-model/desktop-quick-measures.md) in Power BI Desktop.
 
 There are many ways to customize tooltips, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.
