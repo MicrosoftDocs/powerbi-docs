@@ -101,7 +101,7 @@ In Power BI Desktop, the Selection pane is on the **View** tab.
 
 # [Power BI service](#tab/powerbi-service)
 
-When you're editing a report in the Power BI service, it's on the **View** menu. You don't see it if you can't edit the report.
+When you're editing a report in the Power BI service, the **Selection pane** is on the **View** menu. You don't see it if you can't edit the report.
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-service-selection-pane.png" alt-text="Screenshot showing how to turn on the Selection pane in the Power B I service.":::
 
