@@ -95,7 +95,7 @@
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
         href: ../paginated-reports/report-builder-planning-report.md
-      - name: Report Builder data
+      - name: Understanding paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
