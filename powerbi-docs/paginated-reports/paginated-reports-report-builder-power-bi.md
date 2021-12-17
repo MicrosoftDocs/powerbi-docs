@@ -70,8 +70,7 @@ A single paginated report can have a number of different data sources. It doesn'
 - Oracle
 - Teradata
 
-See [Supported data sources for Power BI paginated reports](paginated-reports-data-sources
-.md) for a complete list.
+See [Supported data sources for Power BI paginated reports](paginated-reports-data-sources.md) for a complete list.
 
 ## Design your report  
 
