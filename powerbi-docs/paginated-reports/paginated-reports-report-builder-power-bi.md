@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 12/17/2021
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -53,15 +53,6 @@ This video is part of an eight-module video-based course, [Power BI Paginated Re
 
 Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you'd previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Considerations and limitations](#considerations-and-limitations) in this article for details.
 
-## Use deployment pipelines with paginated reports
-
-In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
-- Development
-- Test
-- Production
-
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
-
 ## Apply sensitivity labels to paginated reports
 
 Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../admin/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
@@ -70,15 +61,17 @@ Read more about [sensitivity label support for pagination reports](../admin/serv
 
 ## Report from a variety of data sources
 
-A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to at this time:
+A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. You create embedded data sources and datasets in the paginated report itself. You can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are some of the data sources you can connect to:
 
-- Azure SQL Database and Data Warehouse (via Basic and oAuth)
+- Azure SQL Database and Azure Synapse Analytics (via Basic and oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
-- SQL Server Analysis Services via a gateway
-- Power BI Datasets
+- Power BI datasets
 - Oracle
 - Teradata
+
+See [Supported data sources for Power BI paginated reports](paginated-reports-data-sources
+.md) for a complete list.
 
 ## Design your report  
 
@@ -108,6 +101,15 @@ You view your paginated report in the Power BI service in a browser, and also in
 You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
 For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/paginated-reports-subscriptions.md). 
+
+## Use deployment pipelines with paginated reports
+
+In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+- Development
+- Test
+- Production
+
+Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
 
 ## Considerations and limitations
 
