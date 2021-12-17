@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 06/18/2021
+ms.date: 12/17/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
@@ -60,6 +60,21 @@ You may see a message similar to this:
 
 **Solution**: You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
 
+## Resolve issues starting the Microsoft Store version of Power BI Desktop
+
+You may see a message similar to this:
+
+"Hmmmm... can't reach this page. ms-pbi.pbi.microsoft.com's server IP address could not be found. Application event log message - The description for Event ID 1 from source"
+
+It may include further information, such as the following:
+
+"Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer."
+
+**Solution**: Reinstall WebView2 with the following steps:
+
+1. Uninstall webview2, which does not require elevated permissions (you don't have to be an administrator).
+1. Install webview2 using the [installation link](https://go.microsoft.com/fwlink/p/?LinkId=2124703), which also does not require elevated permissions.
+
 ## Get help with other launch issues
 
 We strive to cover as many issues that occur with Power BI Desktop as possible. We regularly look at issues that may be affecting many customers, and include them in our articles.
@@ -67,3 +82,7 @@ We strive to cover as many issues that occur with Power BI Desktop as possible. 
 If the issue with opening Power BI Desktop isn't associated with the On-premises data gateway, or when the previous resolutions don't work, you can submit a support incident to *Power BI support* (<https://support.powerbi.com>) to help identify and solve your issue.
 
 Should you come across other issues in the future with Power BI Desktop, it's helpful to turn on tracing and gather log files. Log files may help to isolate and identify the issue. To turn on tracing, choose **File** > **Options and settings** > **Options**, select **Diagnostics**, and then select **Enable tracing**. Power BI Desktop must be running to set this option, but it's helpful for future issues associated with opening Power BI Desktop.
+
+## Next steps
+
+* [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)

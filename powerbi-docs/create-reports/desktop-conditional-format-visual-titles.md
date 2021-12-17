@@ -12,6 +12,8 @@ LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 You can create dynamic, customized titles for your Power BI visuals. By creating Data Analysis Expressions (DAX) based on fields, variables, or other programmatic elements, your visuals' titles can automatically adjust as needed. These changes are based on filters, selections, or other user interactions and configurations.
 
 ![Screenshot of Power BI Desktop conditional formatting option](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
