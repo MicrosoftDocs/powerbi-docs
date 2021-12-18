@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 11/08/2021
+ms.date: 12/18/2021
 
 ---
 
@@ -36,8 +36,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 >
 > * You must use a **service principal**. Master user is not supported.
 > * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
-> * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
-> * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
+> * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md).
+> * To embed a paginated report with a Power BI dataset as a datasource you need a [multi-resource embed token](https://docs.microsoft.com/rest/api/power-bi/embed-token/generate-token), with the XMLA parameter set to “Read Only”.
 
 ## [Embed for your organization](#tab/organization)
 
