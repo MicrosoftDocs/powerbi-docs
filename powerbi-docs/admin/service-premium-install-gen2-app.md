@@ -30,6 +30,15 @@ Before you install the Gen2 metrics app, review these requirements:
 
 Follow the steps below according to the type of installation you need.
 
+>[!NOTE]
+>If you're installing the app in a government cloud environment, use one of these links:
+>
+>* [Microsoft 365 Government Community Cloud (GCC)](https://app.powerbi.cn/Redirect?action=InstallApp&appId=9d32cce2-9ef1-4372-a5fb-e8db60bb9856&packageKey=a537ab87-1979-4364-a88c-da3b81edf29fo6W72Nq0S0RiaERqc3AiDrqPer-Wdt3oHLgQKJCk7RI&ownerId=55769454-bf41-4b52-ad0a-b50c58ff2a8a&buildVersion=4)
+>
+>* [Microsoft 365 Government Community Cloud High (GCC High)](https://app.high.powerbigov.us/Redirect?action=InstallApp&appId=da1ffb3e-18bd-453c-b934-14fd92d63c4b&packageKey=9ec40462-3fff-4705-b7e2-006811e56eb7EpT8ek2rdaBOwkuzJWx8aJXr-3xYIPG0D5qwuHYQ4VQ&ownerId=db57d19f-0f8c-438a-9854-8adadddae510&buildVersion=2)
+>
+>* [Microsoft 365 Department of Defense (DoD)](https://app.mil.powerbigov.us/Redirect?action=InstallApp&appId=0376ba51-f9bd-4839-91c8-32de48821c7c&packageKey=011d8762-9d84-4ed4-9e54-23bf5851285fnkEQp0gFdCB-C5ZKHYKR-kQN-GsEigJJuH30D7DpClY&ownerId=c64c39f3-9e44-4c15-a137-030c970b7170&buildVersion=2)
+
 # [First time installation](#tab/1st)
 
 To install the *Power BI Premium Capacity Utilization and Metrics* app for the first time, follow these steps:
