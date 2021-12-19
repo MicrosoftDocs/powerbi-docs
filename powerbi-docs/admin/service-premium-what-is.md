@@ -82,16 +82,16 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] |
-| ------ | --- | --- | --- | --- | ---- | --- |
-| EM1/A1 | 1   | 0.5 | 0.5 | 3   | 3.75 | 1   |
-| EM2/A2 | 2   | 1   | 1   | 6   | 7.5  | 2   |
-| EM3/A3 | 4   | 2   | 2   | 10  | 15   | 2   |
-| P1/A4  | 8   | 4   | 4   | 25  | 30   | 6   |
-| P2/A5  | 16  | 8   | 8   | 50  | 60   | 6   |
-| P3/A6  | 32  | 16  | 16  | 100 | 120  | 10  |
-| P4/A7* | 64  | 32  | 32  | 200 | 240  | 10  |
-| P5/A8* | 128 | 64  | 64  | 400 | 480  | 10  |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model Refresh Parallelism |
+| ------ | --- | ---- | ---- | --- | ------ | --- | --- |
+| EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
+| EM2/A2 |   2 |  1   |  1   |   6 |   7.5  |  2  |  2  |
+| EM3/A3 |   4 |  2   |  2   |  10 |  15    |  2  |  3  |
+| P1/A4  |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
+| P2/A5  |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
+| P3/A6  |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
+| P4/A7* |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
+| P5/A8* | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
 \* SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
