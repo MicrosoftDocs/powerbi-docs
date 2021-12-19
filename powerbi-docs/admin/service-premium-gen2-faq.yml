@@ -80,7 +80,14 @@ sections:
           * Paginated reports workload - data driven subscriptions renders
           * Export report to file API calls
           * AI workloads
+
+      - question: |
+          What's the difference between interactive and a background operations? 
+        answer: |
+          *Interactive* operations cover a wide range of resources triggered by Power BI users. These operations are handled by front end cores and are associated with interactive page loads. Examples of an interactive operations are loading a report within Power BI service or using XMLA commands.          
           
+          *Background* operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores. An example of a background operation is a scheduled data refresh.
+
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
