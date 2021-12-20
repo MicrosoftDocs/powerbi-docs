@@ -75,7 +75,7 @@ You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to comple
 
 ### Use the Power BI automation tools extension
 
-Power BI automation tools is an [open source](https://github.com/microsoft/powerbi-azure-pipelines-extensions) Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure Devops. It eliminates the need for using APIs or scripts to manage pipelines. Each operation can be used individually to perform a simple task such as creating a pipeline, or used together in an Azure DevOps pipeline to create a more complex scenario such as creating a pipeline, assigning a workspace to the pipeline, adding users and deploying.
+Power BI automation tools is an [open source](https://github.com/microsoft/powerbi-azure-pipelines-extensions) Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure DevOps. It eliminates the need for using APIs or scripts to manage pipelines. Each operation can be used individually to perform a simple task such as creating a pipeline, or used together in an Azure DevOps pipeline to create a more complex scenario such as creating a pipeline, assigning a workspace to the pipeline, adding users and deploying.
 
 After adding the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=ms-pbi-api.pbi-automation-tools) extension to DevOps, a service connection needs to be created. The following connections are available:
 
