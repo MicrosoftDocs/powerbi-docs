@@ -19,8 +19,8 @@ To [install the AS Engine app](install-as-engine-app.md), you must have a Log An
 ## App Goals
 We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID. 
 
-<details>
-<summary>Some examples of questions that can be answered</summary><br>
+<details><br>
+<summary>Some examples of questions that can be answered</summary>
 
 **General**
 * What is engine activity by capacity and workspace?
@@ -46,9 +46,8 @@ We wanted to build an app that can be used to analyze AS engine behavior in gene
 
 **Others**
 * Since the app contains a variety of AS engine events, you can customize the **app** to answer questions related to other events such as Discover or Notification.
+</details>
 
-</details> 
- 
 ## App Data Source
 
 The app loads data from a single Azure Log Analytics workspace.
@@ -71,7 +70,7 @@ The app has following tables and relationships
 
 <details>
 <summary>Screenshot of ER Diagram</summary><br>
- 
+
 ![Screenshot of ER Diagram.](media/desktop-loganalytics-reportguide-datasets/er-diagram.png)
 
 </details>
@@ -91,11 +90,11 @@ Pagination Hours | This is an optional parameter. It describes the time window f
 
 <details>
 <summary>Screenshot of AS Engine Parameters</summary><br>
- 
+
 ![Screenshot of AS Engine Parameters.](media/desktop-loganalytics-reportguide-datasets/parameters.png)
- 
+
 </details>
- 
+
 ## App Usage
 
 ### App Workflow
@@ -150,7 +149,7 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 ![Screenshot of the navigation bar.](media/desktop-loganalytics-reportguide-datasets/nav-bar.png)
 
 </details>
- 
+
 <details>
 <summary>Also, there is back button on top left corner to go back to previous page and info icon which gives information about the page.</summary><br>
 
@@ -165,7 +164,7 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 ![Screenshot of filter button.](media/desktop-loganalytics-reportguide-datasets/filters.png)
 
 </details>
- 
+
 <details>
 <summary>The current values of the filters are displayed in smart narrative adjacent to the filters button. You can clear all the slicers using the "Clear" button on the top left corner or close the window using ‘X’ button on top right corner.</summary><br>
 
@@ -179,7 +178,7 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 >In case more than one value is selected for a filter, the smart narrative displays one of the values followed by "and more". 
 
 </details>  
- 
+
 ## App Pages
 
 * [Workspace Summary](#page-workspace-summary)
@@ -201,7 +200,7 @@ This page is targeted at a Workspace Administrator and shows activities and stat
 
 <details>
 <summary>Workspace Summary</summary><br>
- 
+
 ![Screenshot of ASEngine_WorkspaceSummary.](media/desktop-loganalytics-reportguide-datasets/workspace-summary.png)
 
 The table below lists the visuals displayed on the workspace summary page according to their location on the page.
@@ -235,7 +234,7 @@ This page allows you to focus on a narrow time range and see the individual acti
 
 <details>
 <summary>Engine Activity Details</summary><br>
- 
+
 ![Screenshot of ASEngine_EngineActivityDetails.](media/desktop-loganalytics-reportguide-datasets/engine-activity-details.png)
 
 The table below lists the visuals displayed on the engine activity details page according to their location on the page.
@@ -252,7 +251,7 @@ This page provides an overview of dataset refreshes occurring over a selected pe
 
 <details>
 <summary>Dataset Refreshes</summary><br>
- 
+
 ![Screenshot of ASEngine_DatasetRefreshes.](media/desktop-loganalytics-reportguide-datasets/dataset-refreshes.png)
 
 The table below lists the visuals displayed on the dataset refreshes page according to their location on the page.
@@ -270,7 +269,7 @@ This page allows you to visualize a single dataset refresh in detail. You can se
 
 <details>
 <summary>Dataset Refresh Detail</summary><br>
- 
+
 ![Screenshot of ASEngine_DatasetRefreshDetails.](media/desktop-loganalytics-reportguide-datasets/dataset-refresh-detail.png)
 
 The table below lists the visuals displayed on the dataset refresh detail page according to their location on the page.
@@ -291,7 +290,7 @@ You can also drill to a page called _Query History_ which will show you all exec
 
 <details>
 <summary>Query Statistics</summary><br>
- 
+
 ![Screenshot of ASEngine_QueryStatistcs.](media/desktop-loganalytics-reportguide-datasets/query-statistics.png)
 
 The table below lists the visuals displayed on the query statistics page according to their location on the page.
@@ -309,7 +308,7 @@ This page provides a detailed look at a single execution of a DAX query. Dependi
 
 <details>
 <summary>Query Detail</summary><br>
- 
+
 ![Screenshot of ASEngine_QueryDetail.](media/desktop-loganalytics-reportguide-datasets/query-detail.png)
 
 The table below lists the visuals displayed on the query detail page according to their location on the page.
@@ -329,7 +328,7 @@ This is a historical view of a single unique query. It shows metrics over time a
 
 <details>
 <summary>Query History</summary><br>
- 
+
 ![Screenshot of ASEngine_QueryHistory.](media/desktop-loganalytics-reportguide-datasets/query-history.png)
 
 
@@ -350,7 +349,7 @@ This page gives an overview of the user activities across the workspace. Also in
 
 <details>
 <summary>User Activities</summary><br>
- 
+
 ![Screenshot of ASEngine_UserActivities.](media/desktop-loganalytics-reportguide-datasets/user-activities.png)
 
 The table below lists the visuals displayed on the user activities page according to their location on the page.
@@ -362,15 +361,15 @@ The table below lists the visuals displayed on the user activities page accordin
 |**User details** - Shows a count of actions and artifacts per user. | |
 
 The cards on the right display user count and operations count.
-
 </details>
- 
-###	Drillthrough Page: User Detail 
+
+### Drillthrough Page: User Detail
+
 This page provides a detailed historical view of activities for a single user.
 
 <details>
 <summary>User Detail</summary><br>
- 
+
 ![Screenshot of ASEngine_UserDetails.](media/desktop-loganalytics-reportguide-datasets/user-detail.png)
 
 The table below lists the visuals displayed on the user detail page according to their location on the page.
@@ -386,7 +385,7 @@ This page provides an overview of errors or failed executions over time, allowin
 
 <details>
 <summary>Error Summary</summary><br>
- 
+
 ![Screenshot of ASEngine_ErrorSummary.](media/desktop-loganalytics-reportguide-datasets/error-summary.png)
 
 The table below lists the visuals displayed on the error summary page according to their location on the page.
@@ -404,7 +403,7 @@ This page provides details of errors generated by the engine. It also provides t
 
 <details>
 <summary>Error Detail</summary><br>
- 
+
 ![Screenshot of ASEngine_ErrorDetails.](media/desktop-loganalytics-reportguide-datasets/error-detail.png)
 
 The table below lists the visuals displayed on the error detail page according to their location on the page.
@@ -421,16 +420,16 @@ This page provides a help summary of different features throughout the app. It a
 
 <details>
 <summary>Help</summary><br>
- 
+
 ![Screenshot of ASEngine_Help.](media/desktop-loganalytics-reportguide-datasets/help.png)
 
 >[!NOTE]
 >Each visual in the AS Engine app has a **?** icon. Select this icon to learn more about the visual.
 
- </details>
- 
+</details>
+
 ## Considerations and Limitations
- 
+
 * Log Analytics Query Limits
 
   * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](/azure/data-explorer/kusto/concepts/querylimits) 
