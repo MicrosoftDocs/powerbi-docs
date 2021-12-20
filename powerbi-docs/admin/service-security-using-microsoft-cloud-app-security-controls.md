@@ -137,7 +137,6 @@ In the window that appears, create the session policy. The numbered steps descri
     ![Create the session policy.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 ## Next steps
-
 This article described how Defender for Cloud Apps can provide data and content protections for Power BI. You might also be interested in the following articles, which describe Data Protection for Power BI and supporting content for the Azure services that enable it.
 
 * [Overview of sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
