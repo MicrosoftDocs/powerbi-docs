@@ -38,6 +38,8 @@ Follow the steps below according to the type of installation you need.
 >* [Microsoft 365 Government Community Cloud High (GCC High)](https://aka.ms/USGovHighCapacityUsageReport)
 >
 >* [Microsoft 365 Department of Defense (DoD)](https://aka.ms/USGovDodCapacityUsageReport)
+>
+>* [Power BI for China cloud](https://aka.ms/MCCapacityUsageReport)
 
 # [First time installation](#tab/1st)
 
