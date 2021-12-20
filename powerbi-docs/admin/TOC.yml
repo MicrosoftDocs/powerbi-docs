@@ -36,7 +36,7 @@
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
         href: service-premium-concepts.md  
-      - name: Backup and restore Power BI Premium datasets (preview)
+      - name: Backup and restore Power BI Premium datasets
         href: service-premium-backup-restore-dataset.md
       - name: Using service tags with Power BI
         href: service-premium-service-tags.md             
