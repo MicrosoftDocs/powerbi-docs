@@ -421,9 +421,9 @@ sections:
       - question: |
           I've downloaded the sample app, which solution do I choose?
         answer: |
-          If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+          If you're working with the **Embed for your customers** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\App Owns Data` folder and run the `PowerBIEmbedded_AppOwnsData.sln` file.
           
-          If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
+          If you're working with the **Embed for your organization** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app` folder and run the `pbi-saas-embed-report.sln` file.
           
       - question: |
           How can I edit my registered application?

@@ -212,11 +212,11 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 ### Set user-mapping configuration parameters on the gateway machine (if necessary)
 
-If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube video](https://www.youtube.com/watch?v=NG05PG9aiRw).
+If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
 
-1. Open the main gateway configuration file, Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll. By default, this file is stored at C:\Program Files\On-premises data gateway.
+1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at `C:\Program Files\On-premises data gateway`.
 
-1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later. 
+1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later.
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
@@ -259,7 +259,7 @@ Similarly, Teradata also has additional data-source specific configuration requi
 After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries** is checked for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** is checked for Import based Reports.
 
 > [!NOTE]
-> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine "Users" group.
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
