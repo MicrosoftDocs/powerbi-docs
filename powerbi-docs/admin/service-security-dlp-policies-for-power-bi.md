@@ -8,14 +8,11 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/15/2021
+ms.date: 12/18/2021
 LocalizationGroup: Data from files
 ---
 
 # Data loss prevention policies for Power BI (preview)
-
->[!NOTE]
-> The public preview of DLP policies for Power BI is in the process of being rolled out and may not be available yet in all regions. If you don't see Power BI listed as a DLP location in the compliance portal, please check back in a day or two.
 
 To help organizations detect and protect their sensitive data, Power BI supports [Microsoft 365 data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 

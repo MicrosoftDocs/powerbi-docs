@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/16/2021
+ms.date: 12/20/2021
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -59,6 +59,10 @@ Because support for query folding is different for different types of data sourc
 If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries by using a tool supported by the data source, like SQL Profiler. If query folding is not occurring, verify the filter logic is included in the query being passed to the data source. If not, it's likely the query includes a transformation that prevents folding.
 
 Before configuring your incremental refresh solution, be sure to thoroughly read and understand [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding). These articles can help you determine if your data source and queries support query folding.
+
+#### Single data source
+
+When configuring incremental refresh and real-time data by using Power BI Desktop, or configuring an advanced solution by using Tabular Model Scripting Language (TMSL) or Tabular Object Model (TOM) through the XMLA endpoint, *all partitions* whether import or DirectQuery must query data from a single source.
 
 #### Other data source types
 
