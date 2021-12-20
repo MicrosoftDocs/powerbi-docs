@@ -35,7 +35,7 @@ To use Defender for Cloud Apps with Power BI, you must use and configure relevan
 The sections below describe the steps for configuring real-time controls for Power BI with Defender for Cloud Apps.
 
 ### Set session policies in Azure AD (required)
-The steps necessary to set session controls are completed in the Azure AD and Defender for Cloud Appsy portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Defender for Cloud Appsy service. 
+The steps necessary to set session controls are completed in the Azure AD and Defender for Cloud Apps portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Defender for Cloud Apps service. 
 
 Defender for Cloud Apps operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Defender for Cloud Apps article](/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
 
