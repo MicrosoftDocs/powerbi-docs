@@ -69,7 +69,7 @@ The app has following tables and relationships
 * Suboperation - Refresh
 
 <details>
-<summary>Screenshot of ER Diagram</summary><br>
+<summary>Screenshot of ER Diagram</summary>
 
 ![Screenshot of ER Diagram.](media/desktop-loganalytics-reportguide-datasets/er-diagram.png)
 
@@ -89,7 +89,7 @@ UTC Offset |An hourly offset used to convert the data from UTC to a local time z
 Pagination Hours | This is an optional parameter. It describes the time window for each log analytics call from Power BI. You only need to update this if you're running into failures while fetching data due to data size exceeding Log Analytics limits. |
 
 <details>
-<summary>Screenshot of AS Engine Parameters</summary><br>
+<summary>Screenshot of AS Engine Parameters</summary>
 
 ![Screenshot of AS Engine Parameters.](media/desktop-loganalytics-reportguide-datasets/parameters.png)
 
@@ -100,7 +100,7 @@ Pagination Hours | This is an optional parameter. It describes the time window f
 ### App Workflow
 
 <details>
-<summary>Diagram showing the major pages of the app and some important available drillthroughs</summary><br>
+<summary>Diagram showing the major pages of the app and some important available drillthroughs</summary>
 
 ![Screenshot of Template App-ASEngine_Report Flow.](media/desktop-loganalytics-reportguide-datasets/template-app-as-engine-flow.png)
 
@@ -144,14 +144,14 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 
 ### Navigating in The App
 <details>
-<summary>The app contains the navigation bar at top of the page to navigate to reach the expected page.</summary><br>
+<summary>The app contains the navigation bar at top of the page to navigate to reach the expected page.</summary>
 
 ![Screenshot of the navigation bar.](media/desktop-loganalytics-reportguide-datasets/nav-bar.png)
 
 </details>
 
 <details>
-<summary>Also, there is back button on top left corner to go back to previous page and info icon which gives information about the page.</summary><br>
+<summary>Also, there is back button on top left corner to go back to previous page and info icon which gives information about the page.</summary>
 
 ![Screenshot of Info & Back button_1.](media/desktop-loganalytics-reportguide-datasets/info-and-back.png)
 
@@ -159,18 +159,19 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 
 ### Filtering and Understanding Current Context
 <details>
-<summary>Every page has a filter button below the navigation bar which you can click to open the pop-up filter panel and make selections.</summary><br>
+<summary>Every page has a filter button below the navigation bar which you can click to open the pop-up filter panel and make selections.</summary>
 
 ![Screenshot of filter button.](media/desktop-loganalytics-reportguide-datasets/filters.png)
 
 </details>
 
 <details>
-<summary>The current values of the filters are displayed in smart narrative adjacent to the filters button. You can clear all the slicers using the "Clear" button on the top left corner or close the window using ‘X’ button on top right corner.</summary><br>
+<summary>The current values of the filters are displayed in smart narrative adjacent to the filters button. You can clear all the slicers using the "Clear" button on the top left corner or close the window using ‘X’ button on top right corner.</summary>
 
+<br> Pop-up Filter <br>
 ![Screenshot of Pop-Up Filter.](media/desktop-loganalytics-reportguide-datasets/pop-up-filter.png)
 
-
+Smart Narrative <br>
 **![Screenshot of smart narrative.](media/desktop-loganalytics-reportguide-datasets/smart-narrative.png)**
 
 
@@ -216,7 +217,8 @@ The table below lists the visuals displayed on the workspace summary page accord
 This page provides a trend overview of AS Engine activities by day and by hour. It allows you to identify peaks or outliers on a day and then see how that activity was distributed by hour when you cross highlight by selecting a day. 
 
 <details>
-<summary>Engine Activities</summary><br>
+<summary>Engine Activities</summary>
+
 ![Screenshot of ASEngine_EngineActivities.](media/desktop-loganalytics-reportguide-datasets/engine-activities.png)
 
 The table below lists the visuals displayed on the engine activities page according to their location on the page.
@@ -233,7 +235,7 @@ The table below lists the visuals displayed on the engine activities page accord
 This page allows you to focus on a narrow time range and see the individual activities at a granular level of detail. The example below shows all the DAX queries that were executed in a minute, sorted by longest duration. 
 
 <details>
-<summary>Engine Activity Details</summary><br>
+<summary>Engine Activity Details</summary>
 
 ![Screenshot of ASEngine_EngineActivityDetails.](media/desktop-loganalytics-reportguide-datasets/engine-activity-details.png)
 
@@ -250,7 +252,7 @@ The table below lists the visuals displayed on the engine activity details page 
 This page provides an overview of dataset refreshes occurring over a selected period. It allows you to identify long running refreshes and visualize which ones are happening in parallel. This page allows you to select any data refresh and drill to a page called Dataset Refresh Detail.
 
 <details>
-<summary>Dataset Refreshes</summary><br>
+<summary>Dataset Refreshes</summary>
 
 ![Screenshot of ASEngine_DatasetRefreshes.](media/desktop-loganalytics-reportguide-datasets/dataset-refreshes.png)
 
@@ -268,7 +270,7 @@ The table below lists the visuals displayed on the dataset refreshes page accord
 This page allows you to visualize a single dataset refresh in detail. You can see all the internal operations that the engine performed such as executing queries and compressing data. It allows you to determine the longest running operations, which are parallel, and which may have dependencies. 
 
 <details>
-<summary>Dataset Refresh Detail</summary><br>
+<summary>Dataset Refresh Detail</summary>
 
 ![Screenshot of ASEngine_DatasetRefreshDetails.](media/desktop-loganalytics-reportguide-datasets/dataset-refresh-detail.png)
 
@@ -289,7 +291,7 @@ Any query can be drilled through to a page called _Query Details_ to see details
 You can also drill to a page called _Query History_ which will show you all execution of that query over a period, and its performance trend. 
 
 <details>
-<summary>Query Statistics</summary><br>
+<summary>Query Statistics</summary>
 
 ![Screenshot of ASEngine_QueryStatistcs.](media/desktop-loganalytics-reportguide-datasets/query-statistics.png)
 
@@ -307,7 +309,7 @@ The table below lists the visuals displayed on the query statistics page accordi
 This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for Import or DQ model, you will either see the internal Vertipaq Storage Engine queries or the external DQ source queries (e.g. T-SQL for SQL Server). It also identifies which aggregations were used, if any.
 
 <details>
-<summary>Query Detail</summary><br>
+<summary>Query Detail</summary>
 
 ![Screenshot of ASEngine_QueryDetail.](media/desktop-loganalytics-reportguide-datasets/query-detail.png)
 
@@ -327,7 +329,7 @@ The cards on the right display the number of users who ran this query and applic
 This is a historical view of a single unique query. It shows metrics over time and introduces the Storage Engine and Formula Engine time. You can use it to determine how consistent a query is over time and identify if issues are isolated to particular users or time frames.
 
 <details>
-<summary>Query History</summary><br>
+<summary>Query History</summary>
 
 ![Screenshot of ASEngine_QueryHistory.](media/desktop-loganalytics-reportguide-datasets/query-history.png)
 
@@ -348,7 +350,7 @@ The cards on the right display total number of executions of a given query, the 
 This page gives an overview of the user activities across the workspace. Also informs about the most active users for a period by capturing their CPU time usage, query usage and operations performed.
 
 <details>
-<summary>User Activities</summary><br>
+<summary>User Activities</summary>
 
 ![Screenshot of ASEngine_UserActivities.](media/desktop-loganalytics-reportguide-datasets/user-activities.png)
 
@@ -368,7 +370,7 @@ The cards on the right display user count and operations count.
 This page provides a detailed historical view of activities for a single user.
 
 <details>
-<summary>User Detail</summary><br>
+<summary>User Detail</summary>
 
 ![Screenshot of ASEngine_UserDetails.](media/desktop-loganalytics-reportguide-datasets/user-detail.png)
 
@@ -384,7 +386,7 @@ The table below lists the visuals displayed on the user detail page according to
 This page provides an overview of errors or failed executions over time, allowing you to view individual operations that reported an error status.
 
 <details>
-<summary>Error Summary</summary><br>
+<summary>Error Summary</summary>
 
 ![Screenshot of ASEngine_ErrorSummary.](media/desktop-loganalytics-reportguide-datasets/error-summary.png)
 
@@ -402,7 +404,7 @@ The cards on the right display overall operations count, query failure count, re
 This page provides details of errors generated by the engine. It also provides the information about failed operations due to query failures.
 
 <details>
-<summary>Error Detail</summary><br>
+<summary>Error Detail</summary>
 
 ![Screenshot of ASEngine_ErrorDetails.](media/desktop-loganalytics-reportguide-datasets/error-detail.png)
 
@@ -419,7 +421,7 @@ The table below lists the visuals displayed on the error detail page according t
 This page provides a help summary of different features throughout the app. It also has support links that can be used for any support assistance.
 
 <details>
-<summary>Help</summary><br>
+<summary>Help</summary>
 
 ![Screenshot of ASEngine_Help.](media/desktop-loganalytics-reportguide-datasets/help.png)
 
