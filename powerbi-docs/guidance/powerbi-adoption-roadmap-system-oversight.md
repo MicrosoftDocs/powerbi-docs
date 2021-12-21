@@ -378,7 +378,7 @@ Power BI's information protection capabilities are built upon [sensitivity label
 
 The power of sensitivity labels is:
 
-- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../admin/service-security-using-microsoft-cloud-app-security-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
+- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../admin/service-security-using-defender-for-cloud-apps-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
 - Automated data loss prevention across system boundaries, such as when the [label follows the content](../admin/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
 - User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
 

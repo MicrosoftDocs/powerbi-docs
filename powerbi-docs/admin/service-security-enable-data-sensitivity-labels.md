@@ -86,5 +86,5 @@ This article described how to enable sensitivity labels in Power BI. The followi
 
 * [Overview of sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)
