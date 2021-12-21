@@ -105,14 +105,6 @@ First, create a new session policy. In the **Defender for Cloud Apps** portal, s
 
 ![Create a new session policy.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy.png)
 
-In the window that appears, select the **Create policy** drop-down.
-
-![Select create policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-03.png)
-
-From the list of options in the drop-down, select **Session policy**.
-
-![Select session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-04.png)
-
 In the window that appears, create the session policy. The numbered steps describe settings for the following image.
 
 1. In the **Policy template** drop-down, choose *No template*.
