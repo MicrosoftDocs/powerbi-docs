@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 12/21/2021
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -101,9 +101,9 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 
 The following example shows you how to create a new session policy using Defender for Cloud Apps with Power BI.
 
-First, create a new session policy. Select **Policies** from the left menu in the **Defender for Cloud Apps** portal.
+First, create a new session policy. In the **Defender for Cloud Apps** portal, select **Policies** on the navigation pane. Then on the policies page, click **Create policy** and choose **Session policy**.
 
-![Create a new session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-02.png)
+![Create a new session policy.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy.png)
 
 In the window that appears, select the **Create policy** drop-down.
 
