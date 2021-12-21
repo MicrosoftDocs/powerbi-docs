@@ -105,7 +105,7 @@ In addition to the internal user support approaches discussed in this article, t
 
 ### Microsoft documentation
 
-Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-priority issues that broadly affect all customers. Global Microsoft 365 (M365) administrators have access to additional support issue details within the M365 portal.
+Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-priority issues that broadly affect all customers. Global Microsoft 365 administrators have access to additional support issue details within the Microsoft 365 portal.
 
 Monitor the [Microsoft 365 Twitter account](https://twitter.com/MSFT365Status). Microsoft posts timely information and updates about outages for all Microsoft 365 services.
 

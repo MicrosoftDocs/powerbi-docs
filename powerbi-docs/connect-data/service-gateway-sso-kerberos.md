@@ -263,7 +263,7 @@ After you complete all the configuration steps, use the **Manage Gateway** page 
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
-The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries** give a different behaviour for DirectQuery based reports and Import based reports.
+The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries** give a different behavior for DirectQuery based reports and Import based reports.
 
 **Use SSO via Kerberos for DirectQuery queries**:
 * For DirectQuery based report, SSO credentials of the user are used.

@@ -145,10 +145,6 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.
 
-    - This screenshot shows you only a small portion of the Excel file; it has more than 100,000 rows.
-
-    - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.
-
     - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**.
 
 ## Customize the export data user experience

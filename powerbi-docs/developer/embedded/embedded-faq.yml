@@ -219,7 +219,7 @@ sections:
           
           You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
           
-          To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
+          To get an Azure AD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
           
       - question: |
           What object ID is the service principal object ID?
