@@ -278,7 +278,7 @@ By selecting **Power BI datasets**, and then selecting a dataset to create a rep
 
 ![Connect live to dataset](media/service-premium-connect-tools/dataset-live-connect.png)
 
-The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset . In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model.
+The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset. In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model.
 
 ![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
 
