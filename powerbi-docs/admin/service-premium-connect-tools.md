@@ -26,7 +26,7 @@ By default, *read-only* connectivity using the endpoint is enabled for the **Dat
 
 Use of the XMLA endpoint is subject to the following:
 
-**Single-user application** - The application uses a single user account or app identity to access a Power BI dataset through the XMLA endpoint. Typical examples are developer tools, admin scripts, and automated processes to perform data modelling and administrative tasks, such as altering the metadata of a dataset, performing a backup or restore operation, or triggering a data refresh. The user account or app identity that the client application uses to access a dataset must have a valid Premium Per User (PPU) license unless the dataset resides on a Premium capacity.
+**Single-user application** - The application uses a single user account or app identity to access a Power BI dataset through the XMLA endpoint. Typical examples are developer tools, admin scripts, and automated processes to perform data modeling and administrative tasks, such as altering the metadata of a dataset, performing a backup or restore operation, or triggering a data refresh. The user account or app identity that the client application uses to access a dataset must have a valid Premium Per User (PPU) license unless the dataset resides on a Premium capacity.
 
 **Multi-user application** - The application provides multiple users with access to a Power BI dataset. For example, a middle-tier application integrating a dataset into a business solution and accessing the dataset on behalf of its business users.
 
@@ -175,7 +175,7 @@ Other users who have [Build permission](../connect-data/service-datasets-build-p
 
 ### Model roles
 
-With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (AAD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (Azure AD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
 
 For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
