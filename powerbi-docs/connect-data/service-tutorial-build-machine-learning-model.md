@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 08/03/2020
+ms.date: 12/09/2021
 #customer intent: "As a Power BI end user, I want to build a Machine Learning model, so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -104,6 +104,14 @@ Next, Power BI does a preliminary scan of a sample of your data and suggests the
 In the final step, we must provide a name for our model. Name the model _Purchase Intent Prediction_. You can choose to reduce the training time to see quick results or increase the amount of time spent in training to get the best model. Then select **Save and train** to start training the model.
 
 ![Save the model](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png)
+
+You may run into an error that states *Credentials not found for data source* or something similar, in which case you need to update your credentials so the data can be scored. To update credentials go to **My Workspace** in the Power BI service and in the header bar select **More options (...) > Settings > Settings**.
+
+:::image type="content" source="media/service-aml-integrate/settings-pbi.png" alt-text="Screenshot showing settings.":::
+
+Select **Datasets**, expand **Data source credentials**, then select **Edit Credentials**.
+
+:::image type="content" source="media/service-aml-integrate/data-refresh.png" alt-text="Screenshot showing credential refresh.":::
 
 The training process will begin by sampling and normalizing your historical data and splitting your dataset into two new entities _Purchase Intent Prediction Training Data_ and _Purchase Intent Prediction Testing Data_.
 

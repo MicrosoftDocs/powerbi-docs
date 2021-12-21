@@ -158,7 +158,7 @@ After you create a capacity, you need to assign your workspace to that capacity.
 ## Step 4 - Enable paginated reports workload
 
 >[!NOTE]
->This step is only necessary for Embedded Gen1. If your capacity is Gen2, continue to [Step 5](#step-5---create-and-upload-your-paginated-report).
+>This step is only necessary for **Embedded Gen1**. If your capacity is Gen2, continue to [Step 5](#step-5---create-and-upload-your-paginated-report).
 
 After creating a capacity and assigning your workspace to it, you need to enable the paginated report workload on your capacity.
 

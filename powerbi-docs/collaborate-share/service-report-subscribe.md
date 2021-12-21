@@ -1,14 +1,14 @@
 ---
 title: Subscribe others to your reports and dashboards
 description: Learn how to subscribe others to a snapshot of a Power BI report page or dashboard.
-author: maggiesMSFT
-ms.author: maggies
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/05/2021
+ms.date: 12/17/2021
 
 
 LocalizationGroup: Common tasks
@@ -35,16 +35,14 @@ To create subscriptions for others, you must have:
 
 If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other people, but they must have Power BI Pro or Premium Per User (PPU) licenses.
 
-## Power BI admins and subscriptions
+## Power BI administrators and subscriptions
 
-### Admins control subscription activity
-
-Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal:
+Power BI administrators have levels of control over subscriptions. The following links point to the relevant sections of the admin portal:
 
 - [Enable email subscriptions](../admin/service-admin-portal.md#email-subscriptions) for all members of the organization.
 - Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#invite-external-users-to-your-organization).
 
-### Admins audit subscription activity
+### Auditing subscription activity
 
 Power BI administrators can use the Power BI audit logs to view details around subscriptions. These details include:
 
@@ -60,7 +58,7 @@ See [Operations available in the audit and activity logs](../admin/service-admin
 
 ## Considerations for subscribing others
 
-See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#considerations-and-troubleshooting) in "Subscribe to a report or dashboard in the Power BI service" for general considerations.
+
 
 ### General
 
@@ -74,7 +72,7 @@ See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#consi
 - To test a subscription, or run it on demand at any time, select  **Run Now** for the subscription. Everyone for that subscription receives the email. This action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset.
 - Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - On rare occasions, email subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and email subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
-- Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
+- Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources.
 - Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.
 - For Power BI apps, you can only create subscriptions for others if you are the owner of the app.
 
@@ -83,6 +81,7 @@ See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#consi
 - If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
 - To subscribe external users, your report or dashboard must be hosted in a Premium capacity workspace or app. Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 - Sharing content with a colleague outside of your tenant does not require a Premium capacity. So if you are `aaron@contoso.com`, you can *share* with `anyone@fabrikam.com`, but you can't *subscribe* `anyone@fabrikam.com`, and they can't subscribe to shared content *unless* that content is hosted in a Premium capacity.
+- External users can't subscribe themselves to reports or dashboards. Only people in an organization can subscribe external users, if the content is in a Premium capacity workspace or app.
 
 ### Troubleshooting
 

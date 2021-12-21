@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/12/2021
+ms.date: 11/29/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -47,7 +47,7 @@ The **All** category includes all data connection types from all categories.
 
 The **File** category provides the following data connections:
 
-* Excel
+* Excel Workbook
 * Text/CSV
 * XML
 * JSON
@@ -85,23 +85,23 @@ The **Database** category provides the following data connections:
 * Snowflake
 * Essbase
 * Actian (Beta)
-* Amazon Athena (Beta)
+* Amazon Athena
 * AtScale cubes
 * BI Connector
+* Data Virtuality LDW
 * Denodo
-* Dremio Software
-* Dremio Cloud (Beta)
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence
 * Linkar PICK Style / MultiValue Databases (Beta)
-* MariaDB (Beta)
+* MariaDB
 * MarkLogic
-* TIBDO(R) Data Virtualization (Beta)
-* Data Virtuality LDW
-* Exasol
+* TIBCO(R) Data Virtualization (Beta)
+* Dremio Software
+* Dremio Cloud (Beta)
+
 
 
 > [!NOTE]
@@ -143,10 +143,10 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Time Series Insights (Beta)
 * Azure Cost Management
 * Azure Databricks
 * Azure Time Series Insights (Beta)
+* Azure Synapse Analytics workspace (Beta)
 
 
 The following image shows the **Get Data** window for **Azure**.
@@ -184,13 +184,13 @@ The **Online Services** category provides the following data connections:
 * Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
-* Assemble Views (Beta)
+* Assemble Views
 * Automation Anywhere
 * Automy Data Analytics (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
-* eWay-CRM (Beta)
+* eWay-CRM
 * FactSet Analytics
 * Palantir Foundry
 * Hexagon PPM Smart API
@@ -204,9 +204,10 @@ The **Online Services** category provides the following data connections:
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Zoho Creator (Beta)
-* Assemble Views
 * Workplace Analytics (Beta)
+* Zoho Creator (Beta)
+
+
 
 
 
@@ -234,9 +235,8 @@ The **Other** category provides the following data connections:
 * Anaplan Connector v1.0 (Beta)
 * Solver
 * BQE Core (Beta)
-* Bloomberg Data and Analytics (Beta)
+* Bloomberg Data and Analytics
 * Cherwell (Beta)
-* Cognite Data Fusion
 * EQuIS (Beta)
 * FHIR
 * Information Grid (Beta)
@@ -249,14 +249,17 @@ The **Other** category provides the following data connections:
 * Shortcuts Business Insights (Beta)
 * Siteimprove
 * Starburst Enterprise
-* SumTotal (Beta)
+* SumTotal
 * SurveyMonkey (Beta)
 * Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
-* Vessel Insight (Beta)
-* Zucchetti HR Infinity (Beta)
-* Bloomberg Data and Analytics
+* Usercube (Beta)
 * Vena
+* Vessel Insight
+* Zucchetti HR Infinity (Beta)
+* Cognite Data Fusion
+* Delta Sharing
+* Google Sheets (Beta)
 * Blank Query
 
 

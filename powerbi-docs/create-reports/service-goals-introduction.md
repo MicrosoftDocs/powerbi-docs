@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/30/2021
+ms.date: 11/18/2021
 ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
@@ -26,12 +26,12 @@ This article covers the basics of using Goals in the Power BI service. See the o
 
 ## License requirements 
 
-Goals is a Premium feature. Users can access various aspects of the experience depending on their license. 
+Goals is a Pro feature. Users can access various aspects of the experience depending on their license. 
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring scorecards, goals, and performing check-ins | [Power BI Premium](../admin/service-premium-what-is.md) capacity + Power BI Pro license <br><br>OR <br><br>[Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license |
-|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Premium Per User license |
+|Authoring scorecards, goals, and performing check-ins | Power BI Pro license |
+|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
 |Viewing scorecard samples   |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
@@ -110,17 +110,18 @@ Goals only update as often as the data updates in the dataset.  We support conne
 
 Changing the tracking cycle only changes the trend that you see below your value/target area.  Changing this setting doesn't impact refreshes on the data or when your data is updated in the goals.
 
-**Why don’t I see the Power BI Premium workspace I’m looking for when I create a scorecard?**
+**Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
 
-In order to create a scorecard in a Premium workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
+In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+
+Scorecards do have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access so that certain people can only see certain goals and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
 
 ## Issues and limitations 
   
 - Goals don't yet support bring your own key (BYOK). 
 - Goals don't yet support row-level security (RLS). 
 - For now, the maximum number of subgoal levels is four.
-- Goals don't support publish to web or “app-owns data scenarios” for embedded.
-- Mobile experience isn't currently available.
+- Goals don't support publish-to-web or app-owns-data scenarios for embedded.
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 
 
@@ -130,6 +131,7 @@ In order to create a scorecard in a Premium workspace, you need a contributor or
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Protect your scorecard with goal-level permissions](service-goals-set-permissions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

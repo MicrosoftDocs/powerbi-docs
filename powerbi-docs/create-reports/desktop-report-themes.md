@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 12/02/2021
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -328,15 +328,15 @@ Next, you can add various color classes, such as **background** and **firstLevel
 
 The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
 
-|Color class  |What it formats  |
+|Color class preferred name | Also called  |What it formats  |
 |---------|---------|
-| **firstLevelElements** <br> **foreground**    (deprecated) | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color <br> Modern visual tooltips text and icon color (Preview)|
-| **secondLevelElements** <br> **foregroundNeutralSecondary** (deprecated) | "light" [secondary text classes](#setting-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
-| **thirdLevelElements** <br >**backgroundLight** (deprecated) | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> When background = FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (deprecated) | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
-| **background** | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color <br> Modern visual tooltips background color (Preview)|
-| **secondaryBackground** <br> **backgroundNeutral** (deprecated) | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> When background != FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> Modern visual tooltips separator line and hover color (Preview)|
-| **tableAccent** | Overrides table and matrix grid outline color when present |
+| **firstLevelElements** | **foreground** | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color <br> Modern visual tooltips text and icon color (Preview)|
+| **secondLevelElements** |**foregroundNeutralSecondary**| "light" [secondary text classes](#setting-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
+| **thirdLevelElements** |**backgroundLight** | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> When background = FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
+| **fourthLevelElements** | **foregroundNeutralTertiary** | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
+| **background** | | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color <br> Modern visual tooltips background color (Preview)|
+| **secondaryBackground** | **backgroundNeutral** | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> When background != FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> Modern visual tooltips separator line and hover color (Preview)|
+| **tableAccent** | | Overrides table and matrix grid outline color when present |
 
 Here's a sample theme that sets the color classes:
 
@@ -387,6 +387,11 @@ The following table shows the following information:
 |-|Small and Light |smallLightLabel |#605E5C<br>9pt |Data labels<br>Value axis labels|
 
 *\* Starred items are also colored based on the first data color of the report theme.*
+
+Bold is a Boolean value set on the format. To make text bold, set it to:
+
+- "bold": true
+- "titleBold": true
 
 > [!TIP]
 > The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined above.  If you are authoring a "dark theme," be sure to also set the colors "firstLevelElements" (matching the primary text color), "secondLevelElements" (matching the anticipated "light" color for text), and "background" (with sufficient contrast to both first- and second-level elements colors).
@@ -584,7 +589,7 @@ The following table defines **cardName** values. The first value in each cell is
 | y1AxisReferenceLine: Constant Line |
 | zoom: Zoom |
 
-### Properties within each card
+## Properties within each card
 
 The following section defines the properties within each card. The card name is followed by each property name. For each property: the name you see if the formatting pane is displayed, a description of what the formatting option does, and the type of the formatting option. This approach lets you know what kind of values you can use in your theme file.
 

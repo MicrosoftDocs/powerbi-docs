@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 12/01/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -729,8 +729,9 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
 | **Orphaned** | A workspace with no admin user. Please assign an admin. |
-| **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
-| **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Deleted** | A deleted workspace. A Power BI administrator can restore the workspace up to 90 days after it was deleted. When the 90 days pass, the workspace enters the *Removing* state.<br>If you delete a *MyWorkspace* workspace, it moves to the *Removing* state immediately, without the 90 days grace period. |
+| **Removing** | After deleting a workspace, and once the 90 day grace period passes, the workspace moves into the *Removing* state. During this state the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
+| **Not found** | If the customer's API request includes a workspace ID for a workspace that doesn't belong to the customer's tenant, "Not found" is returned as the status for that ID. |
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets.
 

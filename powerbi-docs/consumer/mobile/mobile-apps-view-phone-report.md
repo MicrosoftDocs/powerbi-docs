@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 12/12/2021
 ---
 # View Power BI reports optimized for your phone
 
@@ -17,13 +17,13 @@ Applies to:
 |:--- |:--- |
 | iPhones |Android phones |
 
-When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the optimized report in portrait view.
+When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the report in the optimized view.
 
 ![Report in portrait mode](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a phone-optimized report doesn't exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If the report doesn't have an optimized view, in portrait orientation you'll see small regular version of the report page. For a closer look, you can either tip the phone to landscape orientation, or, if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
 
-![Report page not optimized](./media/mobile-apps-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
+![Report page not optimized](./media/mobile-apps-view-phone-report/power-bi-phone-report-page-not-optimized.png)
 
 All the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
 
@@ -31,13 +31,19 @@ All the other features of Power BI reports still work in phone-optimized reports
 * [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
 ## Filter the report page on a phone
-If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web. You see a message that there are active filters on the page. You can change the filters on your phone.
+If a report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web.
 
-1. Tap the filter icon ![Phone filter icon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page.
+A filled in filter icon indicates there are active filters on the page. You can change the filters on your phone.
 
-2. Use basic or advanced filtering to see the results you're interested in.
+1. Tap the filter icon in the report footer. The filters appear in panels on the filter pane. Active filters are highlighted.
    
-    ![Phone BI phone report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
+    ![Phone BI phone report filters pane.](./media/mobile-apps-view-phone-report/power-bi-iphone-active-filters.png)
+
+2. Tap a filter to open it. You can then change the filter, choose between basic and advanced filtering, etc.
+    
+    ![Phone BI phone report basic and advanced filtering.](./media/mobile-apps-view-phone-report/power-bi-iphone-basic-advanced-filtering.png)
+
+The filters pane supports filter customizations done by the report creator.
 
 ## Cross-highlight visuals
 Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.

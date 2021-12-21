@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/03/2021
+ms.date: 11/18/2021
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -111,7 +111,14 @@ The second column represents a *business user*.  A business user:
 |  Add, delete, edit  |  ![green myw](media/end-user-features/green-mwo.png)  |  ![orange x](media/end-user-features/orange-x.png) |   
 | Create a report in another workspace based on a dataset in this workspace | ![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |  
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
-|Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
+|Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Analyze in Excel |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)*|
+|Create a report |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Create a paginated report |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Share |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Manage permissions |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Save a copy |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)|
+|Create from template |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
 |Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 | Collaborate with colleagues on the same version of a report |![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 

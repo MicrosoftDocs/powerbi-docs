@@ -95,7 +95,7 @@
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
         href: ../paginated-reports/report-builder-planning-report.md
-      - name: Report Builder data
+      - name: Understanding paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
@@ -151,9 +151,7 @@
       - name: "Create modern visual tooltips"
         href: desktop-visual-tooltips.md        
       - name: "Power Automate button visual"
-        href: power-bi-automate-visual.md
-      - name: "Export reports to PDF files"
-        href: desktop-export-to-pdf.md             
+        href: power-bi-automate-visual.md            
       - name: Filters and slicers in reports
         items: 
         - name: "Add a filter to a report"
@@ -174,22 +172,22 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
-      - name: "Apply insights to explain fluctuations in visuals"
-        href: desktop-insights.md
-      - name: "Use insights to discover how distributions vary"
-        href: desktop-insights-find-where-different.md
-      - name: "Create buttons"
-        href: desktop-buttons.md
-      - name: "Customize buttons"
-        href: power-bi-customize-button.md
+      - name: Bookmarks and buttons
+        items: 
+         - name: "Create buttons"
+           href: desktop-buttons.md
+         - name: "Customize buttons"
+           href: power-bi-customize-button.md
+         - name: "Create bookmarks to save and share insights"
+           href: desktop-bookmarks.md
+         - name: "Create page and button navigators"
+           href: button-navigators.md
       - name: "Create drillthrough buttons"
         href: desktop-drill-through-buttons.md
       - name: "Use the drillthrough feature"
         href: desktop-drillthrough.md      
       - name: "Use the cross-report drillthrough feature"
         href: desktop-cross-report-drill-through.md              
-      - name: "Create bookmarks to save and share insights"
-        href: desktop-bookmarks.md
       - name: "Work with report themes"
         href: desktop-report-themes.md
       - name: "Apply grouping and binning"
@@ -368,6 +366,10 @@
       items: 
       - name: "Insights(preview)"
         href: insights.md
+      - name: "Apply insights to explain fluctuations in visuals"
+        href: desktop-insights.md
+      - name: "Use insights to discover how distributions vary"
+        href: desktop-insights-find-where-different.md
       - name: "Transform your data with AI"
         items:
         - name: "Use AI Insights in Desktop"
@@ -450,6 +452,8 @@
         href: service-goals-check-in.md        
       - name: "Set goal-level permissions"
         href: service-goals-set-permissions.md
+      - name: "Arrange goals and columns in scorecards"
+        href: service-goals-move.md
       - name: "Goals and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"
@@ -524,6 +528,8 @@
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
+      - name: "Assign a workspace"
+        href: deployment-pipelines-assign.md        
       - name: "Troubleshooting"
         href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility

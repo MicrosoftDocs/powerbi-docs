@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 11/22/2021
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -22,7 +22,25 @@ With Power BI, you can publish your report to PDF format and easily create a doc
 ## Export your Power BI report to PDF
 In the Power BI service or Desktop, select a report to display it on the canvas. In the Power BI service, you can select a report from your **Home** page, **Apps**, or any other container from the nav pane.  
 
-### Export to PDF from the Power BI service
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+## Export to PDF from Power BI Desktop
+The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described above.  There are only a few differences:
+
+* In Desktop, select **File** > **Export** > **Export to PDF**.
+
+    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Export to PDF from Desktop.":::
+
+* Report pages that are currently not visible, such as any tooltips or hidden pages, are not exported to the PDF file. 
+
+* While the export is being processed, a dialog appears that lets you know that the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export.
+
+* The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
+
+
+# [Power BI service](#tab/powerbi-service)
+
+## Export to PDF from the Power BI service
 
 1. In the Power BI service, select **Export** > **PDF** from the menu bar.
 
@@ -49,19 +67,7 @@ In the Power BI service or Desktop, select a report to display it on the canvas.
 
     If you make no selection, by default, the PDF is saved in your **Downloads** folder. 
 
-### Export to PDF from Power BI Desktop
-The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described above.  There are only a few differences:
-
-* In Desktop, select **File** > **Export** > **Export to PDF**.
-
-    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Export to PDF from Desktop.":::
-
-* Report pages that are currently not visible, such as any tooltips or hidden pages, are not exported to the PDF file. 
-
-* While the export is being processed, a dialog appears that lets you know that the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export.
-
-* The exported PDF displays in your browser and is automatically saved in your **Downloads** folder.
-
+---
 
 
 ## Considerations and limitations
@@ -76,13 +82,13 @@ There are a few considerations and limitations to keep in mind when you work wit
 * If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your Power BI administrator disabled the feature. Contact your administrator for details.
 * Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be published to PDF.
 * If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
-* Background images are cropped with the visualization's bounding area. A;so, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
+* Background images are cropped with the visualization's bounding area. Also, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
 * When exporting to PDF, reports using themes with custom fonts will have the custom font replaced with a default font.
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
-* When exporting to PDF, we cannot guarantee pixel perfect fidelity for PBIX reports.
+* When exporting to PDF, we cannot guarantee pixel perfect fidelity for Power BI reports. The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * Visuals with scrollbars are exported in their default state.  The visual will display all possible rows, starting with the first row. Even if you have the visual scrolled down, when exported, the visual will display unscrolled. 
 
     ![Export visual with scrollbars.](media/end-user-pdf/export-to-pdf-03.png)

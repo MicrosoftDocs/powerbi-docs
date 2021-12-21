@@ -1,5 +1,5 @@
 ---
-title: The new Format pane in Power BI Desktop
+title: The new Format pane in Power BI Desktop (preview)
 description: Get to know the redesigned Format pane in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,10 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 12/07/2021
 LocalizationGroup: Get started
 ---
-# The new Format pane in Power BI Desktop
+# The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
@@ -123,6 +123,13 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+
+## Considerations and limitations
+
+Some features aren't available yet in the current version of the new Format pane.
+
+- Some visuals, such as Azure maps, Esri maps, Power Automate, and decomposition tree, haven't been updated with subcategories yet.
+
 
 ## Next steps
 

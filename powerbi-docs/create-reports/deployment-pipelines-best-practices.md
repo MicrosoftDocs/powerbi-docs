@@ -202,6 +202,9 @@ In case there are bugs in production that require a quick fix, don't be tempted 
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]

@@ -152,7 +152,7 @@ You can also use the publicly available SSRS and Power BI APIs to automate the m
 
 For more information about the APIs, see:
 
-- [Power BI REST API Reference](../developer/automation/rest-api-reference.md)
+- [Power BI REST APIs](/rest/api/power-bi/)
 - [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api)
 
 ## Post-migration stage
