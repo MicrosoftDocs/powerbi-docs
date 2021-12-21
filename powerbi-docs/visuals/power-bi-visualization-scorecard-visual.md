@@ -64,7 +64,7 @@ The toolbar provides the following options:
  
 :::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard.png" alt-text="Screenshot showing scorecard formatting options.":::
 
-:::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard-2.png" alt-text="Screenshot showing scorecard formatting options.":::
+:::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard-2.png" alt-text="Screenshot showing other scorecard formatting options.":::
 
 When you connect to an existing scorecard in the Power BI service from Power BI Desktop, formatting changes you make from the **Visualizations** pane will only apply to the scorecard in this report. They won't update the original scorecard in the Power BI service.
  
