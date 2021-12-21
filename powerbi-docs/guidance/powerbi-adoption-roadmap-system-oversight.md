@@ -53,7 +53,7 @@ There are several [types of Power BI administrators](../admin/service-admin-admi
 
 | **Role** | **Scope** | **Description** |
 | --- | --- | --- |
-| Power BI administrator | Power BI tenant | Manages tenant settings and other aspects of the Power BI service. All general references to _administrator_ in this article refer to this type of administrator. |
+| Power BI administrator | Power BI tenant | Manages tenant settings and other aspects of the Power BI service. All general references to *administrator* in this article refer to this type of administrator. |
 | Power BI Premium capacity administrator | One capacity | Manages workspaces, workloads, and monitors the health of a Premium capacity. |
 | Power BI gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. May also handle gateway software updates (or collaborate with infrastructure team on updates). |
 | Power BI workspace administrator | One workspace | Manages workspace settings and access. |
@@ -167,7 +167,7 @@ In addition to software installations, user machines may be managed for:
 
 ### Data architecture
 
-_Data architecture_ refers to the principles, practices, and methodologies that govern and define what data is collected, and how it is ingested, stored, managed, integrated, modeled, and used.
+*Data architecture* refers to the principles, practices, and methodologies that govern and define what data is collected, and how it is ingested, stored, managed, integrated, modeled, and used.
 
 There are many data architecture decisions to make. Frequently the COE engages in data architecture design and planning. It's common for administrators to get involved as well, especially when they manage databases or Azure infrastructure.
 
@@ -321,7 +321,7 @@ Consider disabling self-service purchasing when:
 
 ### Trials
 
-Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Premium Per User license, they will be prompted to start a trial to view the content (if the content doesn’t reside within Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
+Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Premium Per User license, they will be prompted to start a trial to view the content (if the content doesn't reside within Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
 
 Generally, disabling trials is not recommended. It can encourage users to apply workarounds, perhaps by exporting data or working outside of supported tools and processes. Consider disabling trials only when:
 
@@ -368,8 +368,8 @@ External user access is controlled by [tenant settings](../admin/service-admin-p
 
 Power BI supports capabilities for information protection and data loss prevention through its integration with:
 
-- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to _know your data, protect your data, prevent data loss, and govern your data_.
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) (MCAS), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how MCAS can be used for oversight of the Power BI service.
+- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to *know your data, protect your data, prevent data loss, and govern your data*.
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
 
 Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
 
@@ -378,7 +378,7 @@ Power BI's information protection capabilities are built upon [sensitivity label
 
 The power of sensitivity labels is:
 
-- Automated data loss prevention within the Power BI service, for instance, when [Cloud App Security](../admin/service-security-using-microsoft-cloud-app-security-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
+- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../admin/service-security-using-defender-for-cloud-apps-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
 - Automated data loss prevention across system boundaries, such as when the [label follows the content](../admin/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
 - User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
 
@@ -390,7 +390,7 @@ For organizations with requirements to store data within a geographic region, Pr
 
 ### Encryption keys
 
-Microsoft handles encryption of _data at rest_ in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as _bring-your-own-key_ or _BYOK_—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
+Microsoft handles encryption of *data at rest* in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as *bring-your-own-key* or *BYOK*—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
 
 Note that [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
 
@@ -427,14 +427,14 @@ When considering needs for creating auditing reports, consider the following:
 
 ### Monitoring
 
-[Microsoft Cloud App Security (MCAS)](https://powerbi.microsoft.com/blog/get-up-to-speed-with-power-bi-and-microsoft-cloud-app-security/) is a cloud access security broker (CASB) that allows administrators to perform activities such as:
+[Microsoft Defender for Cloud Apps](https://powerbi.microsoft.com/blog/get-up-to-speed-with-power-bi-and-microsoft-cloud-app-security/) is a cloud access security broker (CASB) that allows administrators to perform activities such as:
 
 - Audit, monitor, and raise alerts based on activities.
 - Create data loss prevention policies.
 - Detect unusual behaviors and risky sessions.
 - Limit activities performed by applications (in conjunction with [Azure Active Directory conditional access app control](/cloud-app-security/proxy-intro-aad)).
 
-Some very powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with MCAS. For example, you can:
+Some very powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 
 - Prohibit all—or certain users—from downloading a file from the Power BI service when a specific sensitivity label is assigned.
 - Receive an alert whenever a tenant setting is updated in the Power BI service (for instance, an administrative activity is detected).
@@ -444,7 +444,7 @@ Some very powerful [Power BI monitoring and protection](https://techcommunity.mi
 - Determine when someone outside a predefined security group views specific content in the Power BI service.
 
 > [!CAUTION]
-> Licensing, cost, and administrative permissions for MCAS are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
+> Licensing, cost, and administrative permissions for Defender for Cloud Apps are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-defender-for-cloud-apps-admin-roles) with permissions scoped to monitoring just the Power BI service.
 
 ## Planning for change
 
@@ -462,7 +462,7 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 Considerations and key actions you can take to improve system oversight:
 
 - Verify who is permitted to be a Power BI administrator. If possible, reduce the number of people granted this role if it's more than a few people.
-- If you have people who _occasionally_ need Power BI administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory. It's designed to assign just-in-time role permissions that expire after a few hours.
+- If you have people who *occasionally* need Power BI administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory. It's designed to assign just-in-time role permissions that expire after a few hours.
 - Check the status of cross-training and documentation in place for handling Power BI administration responsibilities.
 
 Considerations and key actions you can take to improve management of the Power BI service:
@@ -503,7 +503,7 @@ Considerations and key actions you can take to improve security and data protect
 - Clarify exactly what the expectations are for data protection, and ensure those expectations are communicated to the community of users.
 - Understand and document the organizational policies around sharing Power BI content with external users, and ensure that Power BI service settings support those policies.
 - If they do not currently exist, begin the process of deciding on sensitivity labels. Involve the relevant IT teams for decision-making and configuration in Microsoft 365.
-- Investigate the use of Microsoft Cloud App Security to monitor user behavior and activities in the Power BI service.
+- Investigate the use of Microsoft Defender for Cloud Apps to monitor user behavior and activities in the Power BI service.
 
 Considerations and key actions you can take to begin or improve auditing and monitoring:
 
@@ -519,7 +519,7 @@ The following maturity levels will help you assess the current state of your Pow
 | 100: Initial | Tenant settings are configured independently by one or more administrators based on their best judgment.</br></br>Architecture needs, such as gateways and capacities, are satisfied on an as-needed basis, though without a strategic plan.</br></br>Power BI activity logs are unused, or selectively used for tactical purposes. |
 | 200: Repeatable | Tenant settings are reviewed on a regular basis, and purposefully align with established governance guidelines and policies.</br></br>A small number of specific administrators are selected, and they have a good understanding of what users are trying to accomplish.</br></br>An effective process exists for users to request licenses and software.</br></br>Sensitivity labels are configured in Microsoft 365, though usage of labels remains inconsistent. |
 | 300: Defined | The tenant settings are fully documented in the community portal for users to reference, including how to request access to the correct groups.</br></br>Cross-training and documentation exists for administrators to ensure continuity and stability.</br></br>Sensitivity labels are assigned to content consistently.</br></br>An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
-| 400: Capable | Automated policies are configured and actively monitored in Microsoft Cloud App Security for data loss prevention.</br></br>Administrators work closely with the COE and governance teams to provide oversight of Power BI with an emphasis on user empowerment within the requisite guardrails.</br></br>Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control.</br></br>Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
+| 400: Capable | Automated policies are configured and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention.</br></br>Administrators work closely with the COE and governance teams to provide oversight of Power BI with an emphasis on user empowerment within the requisite guardrails.</br></br>Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control.</br></br>Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
 | 500: Efficient | Regular cost management analysis is done to ensure user needs are met in a cost-effective way.</br></br>Power BI activity log and API data is actively used to inform and improve adoption efforts (in addition to monitoring and auditing of Power BI activities). |
 
 ## Next steps

@@ -20,7 +20,7 @@ To use this package, you'll need to install the following:
 
 * [node.js](https://nodejs.org), it's recommended to use the LTS version
 * [npm](https://www.npmjs.com/), version 3.0.0 or higher
-* The [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools) package
+* The [`PowerBI-visuals-tools`](https://github.com/Microsoft/PowerBI-visuals-tools) package
 
 ## Installation
 

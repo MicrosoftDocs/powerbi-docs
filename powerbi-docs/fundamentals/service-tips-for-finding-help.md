@@ -27,7 +27,7 @@ The Power BI team is continually updating and improving [the Power BI documentat
 The Power BI team explains all the new features in their regular [Power BI blog posts](https://powerbi.microsoft.com/blog/). Find out what's new in everything from Power BI Desktop to the Power BI mobile apps. Make a habit of returning often to learn about the new features released each month. You never know when you'll benefit from that bit of information you noticed months ago.
 
 ## 4 Try Twitter
-Lots of Power BI customers and experts are on Twitter. Ask your question in a tweet. Add the hashtags #powerbi and #powerbihelp so the people who know will see your tweet.
+Lots of Power BI customers and experts are on Twitter. Ask your question in a tweet. Add the hashtags `#PowerBI` and `#PowerBIHelp` so the people who know see your tweet.
 
 ## 5 Watch videos on YouTube
 Do videos fit your learning style better? Power BI has two sets you'll be interested in:
