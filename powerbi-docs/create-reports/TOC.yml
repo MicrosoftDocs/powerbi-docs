@@ -306,7 +306,7 @@
         items: 
         - name: "Shape map visuals (preview)"
           href: ../visuals/desktop-shape-map.md
-        - name: "Filled maps (choropleths)"
+        - name: "Filled maps (choropleth maps)"
           href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
         - name: "ArcGIS maps"
           href: ../visuals/power-bi-visualizations-arcgis.md
