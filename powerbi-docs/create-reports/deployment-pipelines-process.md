@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/08/2021
+ms.date: 12/21/2021
 ---
 
 # Understand the deployment process
@@ -67,6 +67,10 @@ When you use [selective deploy](deployment-pipelines-get-started.md?#selective-d
 Auto-binding works only with Power BI items that are supported by deployment pipelines and reside within Power BI. To view the dependencies of a Power BI item, from the item's *More options* menu, select *View lineage*.
 
 :::image type="content" source="media/deployment-pipelines-process/view-lineage.png" alt-text="A screenshot of the view lineage option, in an item's more options menu.":::
+
+#### Auto-binding across pipelines
+
+Deployment pipelines also automatically binds Power BI items that are linked across pipelines. When you deploy such items, deployment pipelines will attempt to establish a new link between the deployed item and the equivalent item it's linked to in the other pipeline. For example, if you have a report in pipeline A that's linked to a dataset in pipeline B, deployment pipelines will recognize this link. Say the report and dataset are both in the development stages of their respective pipelines. When you deploy the report, it moves to the test stage in pipeline A. Deployment pipelines knows that this report is connected to a dataset in pipeline B, and it'll look for an equivalent dataset in the test stage in that pipeline. If such a dataset exists, deployment pipelines will automatically link it to the deployed report, which now resides in pipeline A.
 
 ### Refreshing data
 
