@@ -16,13 +16,13 @@ ms.date: 12/20/2021
 
 As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats.
 
-- [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md), and bring your Power BI service experience into Microsoft Teams.
-- [Embed interactive reports in Microsoft Teams channels and chats](service-embed-report-microsoft-teams.md) with a Power BI tab: Help your colleagues find and discuss your team's data. 
-- Create a [link preview in the Microsoft Teams message box](service-teams-link-preview.md) when you paste links to your reports, dashboards, and apps.
-- [Chat in Microsoft Teams](service-share-report-teams.md) to share a filtered view of your reports and dashboards and start conversations.
+- [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md): Integrate the Power BI service experience into Microsoft Teams.
+- [Embed interactive reports in Teams channels and chats](service-embed-report-microsoft-teams.md) with a Power BI tab: Help your colleagues find and discuss your team's data. 
+- Create a [link preview in the Teams message box](service-teams-link-preview.md) when you paste links to your reports, dashboards, and apps.
+- [Chat in Microsoft Teams](service-share-report-teams.md): Share a filtered view of your reports and dashboards and start conversations.
 - [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
-- [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams, to analyze your Tteams activity.
-- [Get notified](service-teams-notifications.md) when important things happen in Power BI directly in the Teams activity feed.
+- [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
+- [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 
