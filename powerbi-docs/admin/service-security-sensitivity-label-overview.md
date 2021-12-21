@@ -277,5 +277,5 @@ This article provided an overview of data protection in Power BI. The following 
 
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)

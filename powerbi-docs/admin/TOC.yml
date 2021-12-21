@@ -149,7 +149,7 @@
       - name: "Set or remove sensitivity labels programmatically"
         href: service-security-sensitivity-label-inheritance-set-remove-api.md
       - name: "Use Microsoft Defender for Cloud Apps with Power BI"
-        href: service-security-using-microsoft-cloud-app-security-controls.md
+        href: service-security-using-defender-for-cloud-apps-controls.md
       - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"

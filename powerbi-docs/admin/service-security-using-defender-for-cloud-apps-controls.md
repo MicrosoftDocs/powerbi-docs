@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 12/21/2021
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 Using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
-![Using Defender for Cloud Apps controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
+![Using Defender for Cloud Apps controls pane](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-cloud-apps-catalog.png)
 
 You can configure Defender for Cloud Apps for all sorts of apps and services, not only Power BI. You'll need to configure Defender for Cloud Apps to work with Power BI to benefit from Defender for Cloud Apps protections for your Power BI data and analytics. For more information about Defender for Cloud Apps, including an overview of how it works, the dashboard, and app risk scores, see the [Defender for Cloud Apps](/cloud-app-security/) documentation.
 
@@ -101,40 +101,32 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 
 The following example shows you how to create a new session policy using Defender for Cloud Apps with Power BI.
 
-First, create a new session policy. Select **Policies** from the left menu in the **Defender for Cloud Apps** portal.
+First, create a new session policy. In the **Defender for Cloud Apps** portal, select **Policies** on the navigation pane. Then on the policies page, click **Create policy** and choose **Session policy**.
 
-![Create a new session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-02.png)
-
-In the window that appears, select the **Create policy** drop-down.
-
-![Select create policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-03.png)
-
-From the list of options in the drop-down, select **Session policy**.
-
-![Select session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-04.png)
+![Create a new session policy.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy.png)
 
 In the window that appears, create the session policy. The numbered steps describe settings for the following image.
 
 1. In the **Policy template** drop-down, choose *No template*.
 2. For the **Policy name** box, provide a relevant name for your session policy.
-3. For **Session control type**, select *Control file downloaded (with DLP)*.
+3. For **Session control type**, select *Control file download (with inspection)* (for DLP).
 
     For the **Activity source** section, choose relevant blocking policies. We recommend blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
 
-    ![Create the session policy - block downloads.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
+    ![Create the session policy - block downloads.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy-configure-name.png)
 
     When you scroll down you see more options. The following image shows those options, with additional examples.
 
-4. Choose *Confidentiality label* as *highly confidential* or whatever best fits your organization.
+4. Create a filter on **Sensitivity label** and choose *Highly confidential* or whatever best fits your organization.
 5. Change the **Inspection method** to *none*.
 6. Choose the **Block** option that fits your needs.
 7. Make sure you create an alert for such an action.
 
-    ![Select session policy settings.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
+    ![Select session policy settings.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy-configure-inpection-method.png)
 
 8. Finally, select the **Create** button to create the session policy.
 
-    ![Create the session policy.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
+    ![Save the session policy.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy-configure-save.png)
 
 ## Next steps
 This article described how Defender for Cloud Apps can provide data and content protections for Power BI. You might also be interested in the following articles, which describe Data Protection for Power BI and supporting content for the Azure services that enable it.
