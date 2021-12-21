@@ -95,7 +95,7 @@ To see all your subscriptions across all workspaces, navigate to **My workspace*
 
 To subscribe others to a report or dashboard, you’ll need:     
 
-- a Power BI Pro or [Premium Per User (PPU) license](../admin/service-premium-per-user-faq#end-user-experience.md)  
+- a Power BI Pro or [Premium Per User (PPU) license](../admin/service-premium-per-user-faq.md#end-user-experience)  
 
 - the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
