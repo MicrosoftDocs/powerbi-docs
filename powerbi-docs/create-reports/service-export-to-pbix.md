@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/21/2021
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -64,27 +64,16 @@ When working in Power BI Desktop without an internet connection, if you open a r
 This section lists the limitations of downloading a PBIX file.
 
 * To download the PBIX, you need Edit access to the report and dataset.
-
-* The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-
+* The report you're downloading must be published or updated after November 23, 2016. You can't download reports published earlier than that.
 * This feature won't work with reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
-
 * Reports created in the Power BI service must be saved before they can be downloaded.
-
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
-
 * Datasets with incremental refresh can't be downloaded to a PBIX file.
-
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a PBIX file.
-
 * Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
-
 * Usage metric reports can't be downloaded to a PBIX file.
-
 * Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a PBIX file.
-
 * If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won't be able to download it. The download feature is not supported in this scenario.
-
 * You can only download the original report. You can't download a copy of a report.
 
 ## Next steps
