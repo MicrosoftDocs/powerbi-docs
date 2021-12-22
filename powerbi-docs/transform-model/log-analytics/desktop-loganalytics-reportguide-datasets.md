@@ -450,7 +450,7 @@ This page provides a help summary of different features throughout the app. It a
 ## Next steps
 The following articles provide more information about Power BI and its many features:
 
-* [Log Analytics for Analysis Services Template App](https://appsource.microsoft.com/en-us/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine)
+* [Log Analytics for Analysis Services Template App](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine)
 * [Install Log Analytics Template App](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
