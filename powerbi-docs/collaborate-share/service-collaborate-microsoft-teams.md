@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/17/2021
+ms.date: 12/20/2021
 ---
 
 # Collaborate in Microsoft Teams with Power BI
 
 As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats.
 
-- With the **Power BI tab** for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The Power BI tab helps your colleagues find your team's data and discuss the data within your team channels. 
-- Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
-- Use [Chat in Microsoft Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Microsoft Teams.
-- Use the [Power BI app in Microsoft Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Microsoft Teams.
-- Use the In Teams tab on the Power BI app home page to [view all the Power BI tabs you use](service-teams-pivot.md) in Microsoft Teams.
-- In the Power BI app in Teams, [create a Teams usage report](service-teams-analytics.md) automatically to analyze your activity in Teams.
-- [Get notified](service-teams-notifications.md) when important things happen in Power BI directly in the Teams activity feed.
+- [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md): Integrate the Power BI service experience into Microsoft Teams.
+- [Embed interactive reports in Teams channels and chats](service-embed-report-microsoft-teams.md) with a Power BI tab: Help your colleagues find and discuss your team's data. 
+- Create a [link preview in the Teams message box](service-teams-link-preview.md) when you paste links to your reports, dashboards, and apps.
+- [Chat in Microsoft Teams](service-share-report-teams.md): Share a filtered view of your reports and dashboards and start conversations.
+- [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
+- [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
+- [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 

@@ -219,7 +219,7 @@ sections:
           
           You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
           
-          To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
+          To get an Azure AD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
           
       - question: |
           What object ID is the service principal object ID?
@@ -421,9 +421,9 @@ sections:
       - question: |
           I've downloaded the sample app, which solution do I choose?
         answer: |
-          If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+          If you're working with the **Embed for your customers** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\App Owns Data` folder and run the `PowerBIEmbedded_AppOwnsData.sln` file.
           
-          If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
+          If you're working with the **Embed for your organization** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app` folder and run the `pbi-saas-embed-report.sln` file.
           
       - question: |
           How can I edit my registered application?

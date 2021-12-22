@@ -36,7 +36,7 @@ You can see your capacities location easily when going to the main Power BI Embe
 
 ![Capacities with different locations](media/embedded-multi-geo/pbie-multi-geo-location-different.png)
 
-It's also available in the Admin Portal in Powerbi.com. In the Admin portal, choose 'Capacity settings,' and then switch to 'Power BI Embedded' tab.
+It's also available in the Admin portal at PowerBI.com. In the Admin portal, choose **Capacity settings**, and then switch to the **Power BI Embedded** tab.
 
 ![View in admin portal](media/embedded-multi-geo/pbie-multi-geo-admin-portal.png)
 
