@@ -8,7 +8,7 @@ editor: ''
 tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: how-to
+ms.topic: reference
 ms.date: 12/22/2021
 ---
 
