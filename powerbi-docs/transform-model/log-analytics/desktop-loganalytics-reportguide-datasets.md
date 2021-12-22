@@ -17,7 +17,7 @@ Power BI is integrating with Azure Log Analytics (LA) to enable administrators a
 To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app.
 
 ## App Goals
-We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID. 
+We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name, and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID. 
 
 <details><br>
 <summary>Some examples of questions that can be answered</summary>
@@ -52,7 +52,7 @@ We wanted to build an app that can be used to analyze AS engine behavior in gene
 
 The app loads data from a single Azure Log Analytics workspace.
  
-It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role, so there is only one version of the app. We included different levels of aggregation to cater for a range of use cases. [Using Log Analytics in Power BI](desktop-log-analytics-overview.md) goes into detail on this.
+It doesn't matter if the Log Analytics workspace contains data from many Power BI workspaces. It also doesn't matter which level of administrator configured logging. The log schemas are exactly the same for every role, so there is only one version of the app. We included different levels of aggregation to accommodate a range of use cases. [Using Log Analytics in Power BI](desktop-log-analytics-overview.md) goes into detail on this.
 
 ## App Data Model
 
@@ -151,7 +151,7 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 </details>
 
 <details>
-<summary>Also, there is back button on top left corner to go back to previous page and info icon which gives information about the page.</summary>
+<summary>Also, there is a back button on top-left corner to go back to the previous page and an info icon that provides information about the page.</summary>
 
 ![Screenshot of Info & Back button_1.](media/desktop-loganalytics-reportguide-datasets/info-and-back.png)
 
@@ -159,14 +159,14 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 
 ### Filtering and Understanding Current Context
 <details>
-<summary>Every page has a filter button below the navigation bar which you can click to open the pop-up filter panel and make selections.</summary>
+<summary>Every page has a filter button below the navigation bar that you can click to open the pop-up filter panel and make selections.</summary>
 
 ![Screenshot of filter button.](media/desktop-loganalytics-reportguide-datasets/filters.png)
 
 </details>
 
 <details>
-<summary>The current values of the filters are displayed in smart narrative adjacent to the filters button. You can clear all the slicers using the "Clear" button on the top left corner or close the window using ‘X’ button on top right corner.</summary>
+<summary>The current values of the filters are displayed in the smart narrative next to the filters button. You can clear all the slicers using the **Clear** button on the top-left corner or close the window using the **X** button on top-right corner.</summary>
 
 <br> Pop-up Filter <br>
 ![Screenshot of Pop-Up Filter.](media/desktop-loganalytics-reportguide-datasets/pop-up-filter.png)
@@ -225,7 +225,7 @@ The table below lists the visuals displayed on the engine activities page accord
 
 |Left  | Right  |
 |---------|---------|
-|**CPU time (s) and count of operation by date and scenario** - Columns show the total CPU time taken per day by each operation type.  | **Engine activity details** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports showing count of operations, CPU time and durations. |
+|**CPU time (s) and count of operation by date and scenario** - Columns show the total CPU time taken per day by each operation type.  | **Engine activity details** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports showing count of operations, CPU time, and durations. |
 | **CPU time (s) and count of operations by hour and scenario** - Columns show the total CPU time taken per hour by each operation type. | |
 
 </details>
@@ -258,11 +258,11 @@ This page provides an overview of dataset refreshes occurring over a selected pe
 
 The table below lists the visuals displayed on the dataset refreshes page according to their location on the page.
 
-| Visuals | 
+| Visuals |
 |---------|
-|**Duration (ms) by refresh and start date/time** - Column chart shows the refresh duration for datasets over a period of time. 
-| **Dataset refresh timeline** - Timeline visual shows refreshes per dataset over a period of time. |
-| **Dataset refresh operations** - Table shows details for the refresh operations. | |
+|**Duration (ms) by refresh and start date/time** - Column chart shows the refresh duration for datasets over a period of time.|
+| **Dataset refresh timeline** - Timeline visual shows refreshes per dataset over a period of time.|
+| **Dataset refresh operations** - Table shows details for the refresh operations.|
 </details>
 
 ### Drillthrough Page: Dataset Refresh Detail
@@ -288,7 +288,7 @@ This page focuses on queries in bulk. The goal is to identify which queries are 
 
 Any query can be drilled through to a page called _Query Details_ to see details about its execution like Storage Engine and Formulae Engine time. You can also see the internal Vertipaq Queries or external DirectQuery text and duration depending on the model type.
 
-You can also drill to a page called _Query History_ which will show you all execution of that query over a period, and its performance trend. 
+You can also drill to a page called *Query History** that will show you all the execution of that query over a period, and its performance trend.
 
 <details>
 <summary>Query Statistics</summary>
@@ -301,12 +301,12 @@ The table below lists the visuals displayed on the query statistics page accordi
 |---------|---------|
 |**Query success vs failures count** - Line chart shows daily trend of query completions and failures.  |**Queries by aggregation usage** - Shows how many queries used aggregations using both count and percentage. |
 |**Queries by date and segments** - Clustered column chart shows query count by query duration segment. | | 
-|**Top N queries by CPU variability** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports and queries showing the count of operations, CPU time standard deviation and more. <br><br> **Top N queries by duration P50** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports and queries showing the count of operations, duration standard deviation and more.||
+|**Top N queries by CPU variability** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, CPU time standard deviation, and more. <br><br> **Top N queries by duration P50** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports, and queries showing the count of operations, duration standard deviation, and more.||
 </details>
 
 ### Drillthrough Page: Query Detail
 
-This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for Import or DQ model, you will either see the internal Vertipaq Storage Engine queries or the external DQ source queries (e.g. T-SQL for SQL Server). It also identifies which aggregations were used, if any.
+This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for Import or DQ model, you will either see the internal Vertipaq Storage Engine queries or the external DQ source queries (for example, T-SQL for SQL Server). It also identifies which aggregations were used, if any.
 
 <details>
 <summary>Query Detail</summary>
@@ -321,7 +321,7 @@ The table below lists the visuals displayed on the query detail page according t
 |**Query executions** - Table lists each query executed, with performance details.  |**Event Text** - Table shows the complete event text for queries executed. |
 |**CPU time (s) by date and time** - Line chart shows total CPU time taken in seconds depending on whether aggregation is used or not over a time period. <br><br> **Duration (ms) by date and time** - Line chart shows total duration taken in seconds depending on whether aggregation is used or not over a time period. |  | 
 
-The cards on the right display the number of users who ran this query and application which was used to run this query. 
+The cards on the right display the number of users who ran this query and the application that was used to run this query. 
 </details>
 
 ### Drillthrough Page: Query History
@@ -378,8 +378,8 @@ The table below lists the visuals displayed on the user detail page according to
 
 |Left  | Right  |
 |---------|---------|
-|**CPU time (s), count of operations and users by date** - Columns show the total CPU time taken by per day by each operation type. The line shows the count of operations for a day. | **CPU time (s), count of operations and earliest date by hour and scenario** - This hourly breakdown complements the daily version of the chart. ||
-|**User details** - Table shows the user activities sorted by timestamp. | 
+|**CPU time (s), count of operations and users by date** - Columns show the total CPU time taken by per day by each operation type. The line shows the count of operations for a day. |**CPU time (s), count of operations and earliest date by hour and scenario** - This hourly breakdown complements the daily version of the chart.|
+|**User details** - Table shows the user activities sorted by timestamp.|
 </details>
 
 ### Page: Error Summary
@@ -394,7 +394,7 @@ The table below lists the visuals displayed on the error summary page according 
 
 |Left  | Right  |
 |---------|---------|
-|**Total query failed and query failure rate by date** - Columns shows total failed queries. Line values represent the query failure rate. <br><br> **Total failed refreshes and refresh - failure rate by date** - Columns shows total failed dataset refreshes. Line values represent the dataset refresh failure rate. Both are shown by day. | **Failure details** - Table shows the details of failure with respect to the total values. ||
+|**Total query failed and query failure rate by date** - Columns shows total failed queries. Line values represent the query failure rate. <br><br>**Total failed refreshes and refresh - failure rate by date** - Columns shows total failed dataset refreshes. Line values represent the dataset refresh failure rate. Both are shown by day. |**Failure details** - Table shows the details of failure with respect to the total values.|
 |**Error details** - Lists errors reported by datasets for any operation.||
 </details>
 
@@ -412,8 +412,8 @@ The table below lists the visuals displayed on the error detail page according t
 
 | Visuals  |  
 |---------|
-|**CPU time (ms) total and count of operations by date, hour and scenario** - Line and column chart shows the trends for the scenario executed on the day distributed by CPU time taken for each scenario in stacked column series. |  ||
-|**Operations** - Table lists all operations performed on the dataset. |   
+|**CPU time (ms) total and count of operations by date, hour and scenario** - Line and column chart shows the trends for the scenario executed on the day distributed by CPU time taken for each scenario in stacked column series.|
+|**Operations** - Table lists all operations performed on the dataset.|
 </details>
 
 ### Help
