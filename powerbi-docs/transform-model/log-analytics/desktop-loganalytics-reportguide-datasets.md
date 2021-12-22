@@ -12,12 +12,12 @@ LocalizationGroup: Transform and shape data
 ---
 # Using the Log Analytics for Power BI Datasets Template App (preview)
 
-Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. We published a Template App to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths to answer questions about datasets operations from the perspective of the Analysis Services engine. We will describe each page so you can understand its purpose and typical use cases they support.
+Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. We published a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. We will describe each page so you can understand its purpose and the typical use cases they support.
 
 To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app.
 
 ## App Goals
-We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name, and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID. 
+We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name, and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID.
 
 <details><br>
 <summary>Some examples of questions that can be answered</summary>
@@ -42,7 +42,7 @@ We wanted to build an app that can be used to analyze AS engine behavior in gene
 * Which refreshes are expensive? 
 * Which refreshes are overlapping?
 * Which operations within a refresh are in parallel, and which ones take the longest time?
-* What were the different operations and suboperations within a refresh?
+* What were the different operations and sub-operations within a refresh?
 
 **Others**
 * Since the app contains a variety of AS engine events, you can customize the **app** to answer questions related to other events such as Discover or Notification.
@@ -56,7 +56,7 @@ It doesn't matter if the Log Analytics workspace contains data from many Power B
 
 ## App Data Model
 
-The app has following tables and relationships
+The app has the following tables and relationships:
 
 * User
 * Query Duration Segment
@@ -77,7 +77,7 @@ The app has following tables and relationships
 
 ## App Parameters
 
-The following parameters are defined in the template. 
+The following parameters are defined in the template:
 
 |**Parameter**  |**Description**  |
 |---------|---------|
@@ -107,34 +107,34 @@ Pagination Hours | This is an optional parameter. It describes the time window f
 </details>
 
 ### Workspace Summary 
-Shows engine activities and load at a workspace level, focusing on identifying interesting datasets, reports, or users. You can use this to identify a high-level issue to analyze further by navigating or drill through to other pages of the app.
+Shows engine activities and load at a workspace level, focusing on identifying interesting datasets, reports, or users. You can use this to identify a high-level issue to analyze further by navigating or drilling through to other pages of the app.
 
 ### Engine Activities
-Provides engine load and activity trends by day and hour, with the ability to select a scenario such as Refresh Completed or Query Completed. You can drill through to the Engine Activity Detail page to get a look at the detailed list of each activity within the selected context. 
+Provides engine load and activity trends by day and hour, with the ability to select a scenario such as Refresh Completed or Query Completed. You can drill through to the Engine Activity Detail page to get a look at a detailed list of each activity within the selected context.
 
 ### Engine Activity Detail
-This is a drillthrough page showing event level data. For example, you can list all queries that ran in a particular time range.
+This is a drillthrough page showing event-level data. For example, you can list all queries that ran in a particular time range.
 
 ### Dataset Refresh
 Provides a Gantt chart for style view of refreshes to observe duration and parallelism. You can drill through to the dataset refresh details for more details.
 
 ### Dataset Refresh Detail
-A drillthrough page showing the operations that occurred within a single dataset refresh. You can use this to identify the longest running operation in a refresh and see if there are any dependencies between activities. 
+A drillthrough page showing the operations that occurred within a single dataset refresh. You can use this view to identify the longest running operation in a refresh and to see if there are any dependencies between activities.
 
 ### Query Statistics
-An overview of query performance, highlighting typical and low performing durations and letting you see how variable each unique query is. 
+An overview of query performance, highlighting typical and low performing durations and letting you see how variable each unique query is.
 
 ### Query Detail
-A drillthrough page showing visuals like detailed table for query, table for related query etc. For Import tables, it will show you the internal Vertipaq storage engine queries and durations. For DirectQuery models, it will show you the external queries, for example T-SQL sent to a SQL Server.
+A drillthrough page showing visuals such as a detailed table for the query, a table for related queries etc. For Import tables, the page will show you the internal Vertipaq storage engine queries and durations. For DirectQuery models, the page will show you the external queries, for example T-SQL sent to a SQL Server.
 
 ### Query History
-Shows you every execution of a query, provides CPU and duration stats and trend visuals to see if there are any spikes. 
+Shows you every execution of a query, provides CPU and duration stats and trend visuals to see if there are any spikes.
 
 ### User Activities
-A summary view that focuses on users, helping you identify the most active and those experiencing worse performance relative to others. 
+A summary view that focuses on users, helping you identify the most active users and those users who are experiencing worse performance relative to others.
 
 ### User Detail
-A drillthrough page provides details of the activities performed by a single user.
+A drillthrough page that provides details of the activities performed by a single user.
 
 ### Error Summary
 Helps identify errors and spot any error trends.
@@ -144,7 +144,7 @@ Allows you to zoom in on a specific error by viewing the detailed event.
 
 ### Navigating in The App
 <details>
-<summary>The app contains the navigation bar at top of the page to navigate to reach the expected page.</summary>
+<summary>The app contains a navigation bar at top of the page to navigate to the expected page.</summary>
 
 ![Screenshot of the navigation bar.](media/desktop-loganalytics-reportguide-datasets/nav-bar.png)
 
@@ -176,7 +176,7 @@ Smart Narrative <br>
 
 
 >[!NOTE]
->In case more than one value is selected for a filter, the smart narrative displays one of the values followed by "and more". 
+>If more than one value is selected for a filter, the smart narrative displays one of the values followed by "and more".
 
 </details>  
 
@@ -197,7 +197,7 @@ Smart Narrative <br>
 * [Help](#help)
 
 ### Page: Workspace Summary
-This page is targeted at a Workspace Administrator and shows activities and statistics related to datasets and queries. It also identifies top reports by load, details popular datasets by operations or users, and allows drill through to various pages to get further details.
+This page is targeted at a Workspace Administrator and shows activities and statistics related to datasets and queries. It also identifies top reports by load, details popular datasets by operations or users, and allows drillthrough to various pages to get further details.
 
 <details>
 <summary>Workspace Summary</summary><br>
@@ -214,7 +214,7 @@ The table below lists the visuals displayed on the workspace summary page accord
 </details>
 
 ### Page: Engine Activities (also a drillthrough)
-This page provides a trend overview of AS Engine activities by day and by hour. It allows you to identify peaks or outliers on a day and then see how that activity was distributed by hour when you cross highlight by selecting a day. 
+This page provides a trend overview of AS Engine activities by day and by hour. It allows you to identify peaks or outliers on a day and then see how that activity was distributed by hour when you cross-highlight by selecting a day.
 
 <details>
 <summary>Engine Activities</summary>
@@ -225,14 +225,14 @@ The table below lists the visuals displayed on the engine activities page accord
 
 |Left  | Right  |
 |---------|---------|
-|**CPU time (s) and count of operation by date and scenario** - Columns show the total CPU time taken per day by each operation type.  | **Engine activity details** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, reports showing count of operations, CPU time, and durations. |
+|**CPU time (s) and count of operation by date and scenario** - Columns show the total CPU time taken per day by each operation type.  | **Engine activity details** - Table is represented in stepped layout as a hierarchy across capacities, workspaces, datasets, and reports, showing a count of operations, CPU time, and durations. |
 | **CPU time (s) and count of operations by hour and scenario** - Columns show the total CPU time taken per hour by each operation type. | |
 
 </details>
 
 ### Drillthrough Page: Engine Activity Details
 
-This page allows you to focus on a narrow time range and see the individual activities at a granular level of detail. The example below shows all the DAX queries that were executed in a minute, sorted by longest duration. 
+This page allows you to focus on a narrow time range and see the individual activities at a granular level of detail. The example below shows all the DAX queries that were executed in a minute, sorted by longest duration.
 
 <details>
 <summary>Engine Activity Details</summary>
@@ -243,13 +243,13 @@ The table below lists the visuals displayed on the engine activity details page 
 
 | Visuals  | 
 |---------|
-|**CPU time (s) and count of operation by scenarios over period of time** - Column chart shows the total CPU time taken by each scenario per day.  | 
+|**CPU time (s) and count of operation by scenarios over period of time** - Column chart shows the total CPU time taken by each scenario per day.  |
 **Operations** - Table shows the detail of operations. |
 </details>
 
 ### Page: Dataset Refreshes (also a drillthrough)
 
-This page provides an overview of dataset refreshes occurring over a selected period. It allows you to identify long running refreshes and visualize which ones are happening in parallel. This page allows you to select any data refresh and drill to a page called Dataset Refresh Detail.
+This page provides an overview of dataset refreshes occurring over a selected period. It allows you to identify long running refreshes and visualize which ones are happening in parallel. This page allows you to select any data refresh and drill through to a page called Dataset Refresh Detail.
 
 <details>
 <summary>Dataset Refreshes</summary>
@@ -267,7 +267,7 @@ The table below lists the visuals displayed on the dataset refreshes page accord
 
 ### Drillthrough Page: Dataset Refresh Detail
 
-This page allows you to visualize a single dataset refresh in detail. You can see all the internal operations that the engine performed such as executing queries and compressing data. It allows you to determine the longest running operations, which are parallel, and which may have dependencies. 
+This page allows you to visualize a single dataset refresh in detail. You can see all the internal operations that the engine performed such as executing queries and compressing data. It allows you to determine the longest running operations, which are parallel, and which may have dependencies.
 
 <details>
 <summary>Dataset Refresh Detail</summary>
@@ -278,17 +278,17 @@ The table below lists the visuals displayed on the dataset refresh detail page a
 
 | Visuals  | 
 |---------|
-|**Data refresh suboperation timeline by object and event subclass** - Timeline of each corresponding dataset refresh suboperation is displayed.  
+|**Data refresh suboperation timeline by object and event subclass** - Timeline of each corresponding dataset refresh sub-operation is displayed.  
 | **Dataset refresh suboperations** - Table shows details of the sub-operations that the engine performs for each refresh. |
 </details>
 
 ###	Page: Query Statistics (also a drillthrough)
 
-This page focuses on queries in bulk. The goal is to identify which queries are common, and which queries have high variability. We provide percentiles and deviations to give you an idea of both typical and more extreme measurements. 
+This page focuses on queries in bulk. The goal is to identify which queries are common, and which queries have high variability. We provide percentiles and deviations to give you an idea of both typical and more extreme measurements.
 
-Any query can be drilled through to a page called _Query Details_ to see details about its execution like Storage Engine and Formulae Engine time. You can also see the internal Vertipaq Queries or external DirectQuery text and duration depending on the model type.
+Any query can be drilled through to a page called *Query Details* to see details about its execution,  such as Storage Engine and Formulae Engine time. You can also see the internal Vertipaq Queries or external DirectQuery text and duration depending on the model type.
 
-You can also drill to a page called *Query History** that will show you all the execution of that query over a period, and its performance trend.
+You can also drill through to a page called *Query History* that will show you all the execution of that query over a period, and its performance trend.
 
 <details>
 <summary>Query Statistics</summary>
@@ -306,7 +306,7 @@ The table below lists the visuals displayed on the query statistics page accordi
 
 ### Drillthrough Page: Query Detail
 
-This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for Import or DQ model, you will either see the internal Vertipaq Storage Engine queries or the external DQ source queries (for example, T-SQL for SQL Server). It also identifies which aggregations were used, if any.
+This page provides a detailed look at a single execution of a DAX query. Depending on whether the query was for an Import or DQ model, you will either see the internal Vertipaq Storage Engine queries or the external DQ source queries (for example, T-SQL for SQL Server). It also identifies which aggregations were used, if any.
 
 <details>
 <summary>Query Detail</summary>
@@ -321,7 +321,7 @@ The table below lists the visuals displayed on the query detail page according t
 |**Query executions** - Table lists each query executed, with performance details.  |**Event Text** - Table shows the complete event text for queries executed. |
 |**CPU time (s) by date and time** - Line chart shows total CPU time taken in seconds depending on whether aggregation is used or not over a time period. <br><br> **Duration (ms) by date and time** - Line chart shows total duration taken in seconds depending on whether aggregation is used or not over a time period. |  | 
 
-The cards on the right display the number of users who ran this query and the application that was used to run this query. 
+The cards on the right display the number of users who ran this query and the application that was used to run this query.
 </details>
 
 ### Drillthrough Page: Query History
@@ -342,12 +342,12 @@ The table below lists the visuals displayed on the query history page according 
 |**Related queries details** - Table shows related query details. <br><br> **Aggregation details** - When queries are able to use aggregations, details are provided here. |
 
 
-The cards on the right display total number of executions of a given query, the execution times in ms and aggregation utilization percentage.
+The cards on the right display the total number of executions of a given query, the execution times in ms and the aggregation utilization percentage.
 </details>
 
 ### Page: User Activities
 
-This page gives an overview of the user activities across the workspace. Also informs about the most active users for a period by capturing their CPU time usage, query usage and operations performed.
+This page gives an overview of the user activities across the workspace. It also gives information about the most active users for a period by capturing their CPU time usage, query usage, and operations performed.
 
 <details>
 <summary>User Activities</summary>
@@ -358,7 +358,7 @@ The table below lists the visuals displayed on the user activities page accordin
 
 |Left  | Right  |
 |---------|---------|
-|**Top N users by operation** - Shows top 5 users who performed the most operations against the dataset. <br><br> **Top N users by query execution** - Shows top 5 users who ran the most queries against the dataset. |**Queries vs CPU time by users** - Compares query count vs Avg CPU time for each unique query text. | 
+|**Top N users by operation** - Shows the top 5 users who performed the most operations against the dataset. <br><br> **Top N users by query execution** - Shows the top 5 users who ran the most queries against the dataset. |**Queries vs CPU time by users** - Compares query count vs Avg CPU time for each unique query text. | 
 | **Daily user and operation count** - Columns show count of users and line shows operation count, both by day. | **Hourly user and operation count** - Column chart represents the users as column and operation count over the time as hourly trend for user.
 |**User details** - Shows a count of actions and artifacts per user. | |
 
@@ -398,7 +398,7 @@ The table below lists the visuals displayed on the error summary page according 
 |**Error details** - Lists errors reported by datasets for any operation.||
 </details>
 
-The cards on the right display overall operations count, query failure count, refresh failure count and user count.
+The cards on the right display overall operations count, query failure count, refresh failure count, and user count.
 
 ### Drillthrough Page:  Error Detail
 This page provides details of errors generated by the engine. It also provides the information about failed operations due to query failures.
@@ -434,13 +434,11 @@ This page provides a help summary of different features throughout the app. It a
 
 * Log Analytics Query Limits
 
-  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](/azure/data-explorer/kusto/concepts/querylimits) 
+  * Kusto has limits in terms of number of records returned and the overall size of the data based on the query. The app has been built to work around these limits by pulling data in sequential chunks. However, you might still exceed these limits, resulting in a refresh failure in this template app. [Query Limits](/azure/data-explorer/kusto/concepts/querylimits)
 
-  * If template app refresh is failing due to above data limits, you can configure the Pagination Hours parameter. Setting a lower value here will lower the amount of data retrieved from Log Analytics per call by increasing the number of calls. 
+  * If template app refresh is failing due to above data limits, you can configure the Pagination Hours parameter. Setting a lower value here will lower the amount of data retrieved from Log Analytics per call by increasing the number of calls.
  
-
-
-* The following events are intentionally excluded from Log Analytics during the Preview. Due to this, storage engine subqueries are not visible for now in Query Detail page.
+* The following events are intentionally excluded from Log Analytics during the Preview. Due to this, storage engine sub-queries are not visible for now on the Query Detail page.
   
   * ProgressReportCurrent
   * ProgressReportBegin
