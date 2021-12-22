@@ -123,11 +123,14 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
         The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.
 
+        >[!NOTE]
+        >Once installed, the app will let you see all the capacities you can access.
+
     * **UTC_offset** - 0
 
-    * **Timepoint** - The start time for the time period you want the app to draw metrics for. Set this value using a valid date time format such as `mm/dd/yyyy`.
+    * **Timepoint** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
 
-    * **Timepoint2** - The end time for the time period you want the app to draw metrics for. Set this value using a valid date time format such as `mm/dd/yyyy`.
+    * **Timepoint2** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
 
     >[!NOTE]
     >The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option.
@@ -147,7 +150,11 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
     :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign in and continue button is highlighted":::
 
-8. After configuring the app, it may take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
+8. Select a capacity form the **capacity name** dropdown.
+
+    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app":::
+
+9. After configuring the app, it may take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
 
     :::image type="content" source="media\service-premium-install-gen2-app\refresh-app.png" alt-text="Screen capture of the Power B I premium utilization and metrics app displaying no data.":::
 
