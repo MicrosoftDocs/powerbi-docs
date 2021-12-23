@@ -1,13 +1,13 @@
 ---
-title: Introduction to use chart utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use chart utils to draw axes and legends Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Introduction to use chart utils in Power BI visual
+description: This article describes how to use chart utils to draw axes and legends Power BI visual.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 

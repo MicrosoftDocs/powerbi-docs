@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 08/10/2021
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The tables in this article describe the shortcuts available in a Power BI report. 
 
@@ -51,6 +53,14 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Right-click | <ul><li>Windows keyboard: **Windows context key + F10**. The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 | Clear selection | **Ctrl + Shift + C** |
 | Show or hide tooltip | **Ctrl + H** |
+| Move a visual on the canvas (small moves)* | **Arrow keys (up, down, right, left**) |
+| Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
+| Resize a visual* | **Arrow keys**  |
+| Maintain aspect ratio*  | **Shift** + drag the resize handles |
+| Group Visuals*  | Select visuals + **Ctrl + G** |
+
+
+\* Must be in editing mode
 
 ## Table and matrix navigation
 | To do this action          | Press                |
@@ -84,16 +94,25 @@ In our continued effort to improve accessibility, the previous list of experienc
 ## DAX editor
 | To do this action          | Press                |
 | :------------------- | :------------------- |
+| Go to line number | **Ctrl + G** |
 | Move line up / down | **Alt + Up arrow key** / **Down arrow key** |
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
 | Insert line below | **Shift + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
+| Delete selected word | **Ctrl + Del**|
+| Delete all selected lines | **Ctrl + Shift + K**|
 | Jump to matching bracket | **Ctrl + Shift +** \ |
+| Jump to start of a line of code | **Ctrl + Home**  |
+| Jump to the end of a line of code | **Ctrl + End** |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
 | Select current line | **Ctrl + I** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
+| Select next occurrences of current selection | **Ctrl + D** |
+| Select the line above | **Shift + Up arrow key** |
+| Select the line below | **Shift + Down arrow key** |
+| Enter multiple lines of code up / down |**Ctrl + Alt + Up arrow key** / **Down arrow key**|
 | Comment a line | **Ctrl + /** or **Ctrl + K + C** |
 | Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
 | Increase font size | **Ctrl + +** Or **Scroll Up** |

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/17/2020
+ms.date: 05/20/2021
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -30,12 +30,12 @@ First, import product data from the *Products.xlsx* Excel workbook into Power BI
 
 1. [Download the Products.xlsx Excel workbook](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) and save it as *Products.xlsx*.
 
-1. Select the arrow next to **Get Data** in the Power BI Desktop ribbon's **Home** tab, and then select **Excel** from the **Most Common** menu.
+1. Select the arrow next to **Get data** in the Power BI Desktop ribbon's **Home** tab, and then select **Excel** from the **Common data sources** menu.
 
    ![Get data](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
 
    >[!NOTE]
-   >You can also select the **Get Data** item itself, or select **Get Data** from the Power BI **Get started** dialog box, then select **Excel** or **File** > **Excel** in the **Get Data** dialog box, and then select **Connect**.
+   >You can also select the **Get data** item itself, or select **Get data** from the Power BI **Get started** dialog box, then select **Excel** or **File** > **Excel** in the **Get Data** dialog box, and then select **Connect**.
 
 1. In the **Open** dialog box, navigate to and select the **Products.xlsx** file, and then select **Open**.
 
@@ -48,7 +48,7 @@ A table preview opens in the Power Query Editor, where you can apply transformat
 ![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
 
 >[!NOTE]
->You can also open the Power Query Editor by selecting **Edit Queries** > **Edit Queries** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in the **Report** view, and selecting **Edit Query**.
+>You can also open the Power Query Editor by selecting **Transform data** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in the **Report** view, and selecting **Transform data**.
 
 ## Clean up the products columns
 
@@ -73,7 +73,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
 
    ![OData feed dialog box](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
 
-1. In **Navigator**, select the **Orders** table, and then select **Transform Data** to load the data into Power Query Editor.
+1. In **Navigator**, select the **Orders** table, and then select **OK** to load the data into Power Query Editor.
 
    ![Navigator for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
 
@@ -159,14 +159,14 @@ Finally, to make the **LineTotal** column easier to access, drag and drop it to 
 
 ## Review the query steps
 
-Your Power Query Editor actions to shape and transform data are recorded. Each action appears on the right in the **Query Settings** pane under **Applied Steps**. You can step back through the **Applied Steps** to review your steps, and edit, delete, or rearrange them if necessary. However, changing preceding steps is risky as that can break later steps.
+Your Power Query Editor actions to shape and transform data are recorded. Each action appears on the right in the **Query Settings** pane under **APPLIED STEPS**. You can step back through the **APPLIED STEPS** to review your steps, and edit, delete, or rearrange them if necessary. However, changing preceding steps is risky as that can break later steps.
 
-Select each of your queries in the **Queries** list on the left side of Power Query Editor, and review the **Applied Steps** in **Query Settings**. After applying the previous data transformations, the **Applied Steps** for your two queries should look like this:
+Select each of your queries in the **Queries** list on the left side of Power Query Editor, and review the **APPLIED STEPS** in **Query Settings**. After applying the previous data transformations, the **APPLIED STEPS** for your two queries should look like this:
 
 ![Products query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/products-query-applied-steps.png) &nbsp;&nbsp; ![Orders query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orders-query-applied-steps.png)
 
 >[!TIP]
->Underlying the Applied Steps are formulas written in the *Power Query Language*, also known as the [M language](/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon.
+>Underlying the applied steps are formulas written in the *Power Query Language*, also known as the [M language](/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon.
 
 ## Import the transformed queries
 
@@ -184,7 +184,7 @@ Power BI Desktop doesn't require you to combine queries to report on them. Howev
 
 The shared `ProductID` field creates a relationship between this tutorial's `Orders` and `Products` datasets.
 
-1. In Power BI Desktop **Report** view, select **Manage Relationships** in the **Home** ribbon tab's **Relationships** area.
+1. In Power BI Desktop **Report** view, select **Manage Relationships** in the **Modeling** ribbon tab's **Relationships** area.
 
    ![Manage Relationships ribbon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
 
@@ -192,7 +192,7 @@ The shared `ProductID` field creates a relationship between this tutorial's `Ord
 
    ![Manage Relationships dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
 
-   **Edit Relationship** opens, showing details about the relationship.  
+   **Edit relationship** opens, showing details about the relationship.  
 
    ![Edit Relationship dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
 
@@ -218,7 +218,7 @@ First, create a stacked column chart that uses fields from both queries to show 
 
 1. To show the quantity of each product ordered, select **ProductName** from **Products** in the **Fields** pane, or drag it onto the chart.
 
-1. To sort the products by most to least ordered, select the **More options** ellipsis (**...**) at the visualization's upper right, and then select **Sort By Quantity**.
+1. To sort the products by most to least ordered, select the **More options** ellipsis (**...**) at the visualization's upper right, and then select **Sort By** > **Quantity**.
 
 1. Use the handles at the corners of the chart to enlarge it so more product names are visible.
 
@@ -241,7 +241,7 @@ Finally, create a map visualization showing order amounts from each country.
 
 1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country names. It then automatically creates a map visualization, with a data point for each country with orders.
 
-1. To make the data point sizes reflect each country's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Drag data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country.
+1. To make the data point sizes reflect each country's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Add data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country.
 
    ![LineTotals by ShipCountry map visualization](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-shipcountry-map-visualization.png)
 
@@ -267,6 +267,6 @@ Your completed report combines data from the *Products.xlsx* Excel file and the 
 ## Next steps
 
 * [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-* [Watch Power BI Desktop videos](../fundamentals/desktop-videos.md)
+* [Watch Power BI videos](../fundamentals/videos.md)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

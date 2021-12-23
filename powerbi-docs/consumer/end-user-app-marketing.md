@@ -7,8 +7,9 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 06/19/2021
 LocalizationGroup: Share your work
+ms.custom: intro-installation
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
 
@@ -17,7 +18,7 @@ LocalizationGroup: Share your work
 Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's use Microsoft AppSource to get the Marketing and Sales template app. The Marketing and Sales template app contains sample data that you can use to explore the Power BI service. This particular app has one dashboard and several report pages. 
 
 > [!IMPORTANT]
-> Installing this app from Microsoft AppSource requires that you have a **Power BI Pro** license.  For more information, see [licenses](end-user-license.md).
+> Installing this app from Microsoft AppSource requires that you have a **Power BI Pro** or **Premium Per User** license.  For more information, see [licenses](end-user-license.md).
 
 ## Get the app from Microsoft AppSource
 
@@ -37,7 +38,7 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
    ![Install this app?](./media/end-user-app-marketing/power-bi-install-confirm.png)
 
-5. The Power BI service displays a success message once the app is installed. Select **Go to app**. Or select the app itself from your **Apps** canvas. Depending on how the designer created the app, either the app dashboard or app report will display.
+5. The Power BI service displays a success message once the app is installed. Select **Go to app**. Or select the app itself from your **Apps** container. Depending on how the designer created the app, either the app dashboard or app report will display.
 
 
     ![Apps in Power BI](./media/end-user-app-marketing/power-bi-marketing.png)

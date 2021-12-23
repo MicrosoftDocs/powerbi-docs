@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 10/04/2021
 ---
 
 # Tips for authoring template apps in Power BI
@@ -30,7 +30,7 @@ For template apps, queries developed in Power BI Desktop are used to connect to 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
 
-You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed.
+You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (**Get data** > **Web**) to connect to your Rest API or the OData connector (**Get data** > **OData feed**) to connect to your OData feed.
 
 > [!NOTE]
 > Currently template apps do not support custom connectors, it is recommended to explore using Odatafeed Auth 2.0 as a mitigation for some of the connection use-cases or to submit your connector for certification. For details on how to develop a connector and certify it check the [Data Connectors documentation](https://aka.ms/DataConnectors).
@@ -89,14 +89,17 @@ The report pages offer additional insight into the data included in your templat
 * All of the aggregations presented make numeric sense (averages, unique values).  
 * Slicing produces rational results.  
 * Logo is present on at least the top report.  
-* Elements are in the client's color scheme to the extent possible.  
+* Elements are in the client's color scheme to the extent possible.
+
+>[!NOTE]
+> A single template app cannot include more than twenty reports.  
 
 <a name="dashboard"></a>
 
 ## Dashboards
 The dashboard is the main point of interaction with your template app for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
-To create a dashboard for your template app, just upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
+To create a dashboard for your template app, just upload your PBIX through **Get data** > **Files** or publish directly from Power BI Desktop.
 
 
 ### Additional dashboard tips
@@ -113,7 +116,7 @@ Template apps, as part of the app creation stage, wraps the cache data in the wo
 * Allows the installer to understand the functionality and purpose of the app before connecting data.
 * Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app dataset.
 
-We recommend having quality sample data before creating the app. ensure the app report and dashboards are populated with data.
+We recommend having quality sample data before creating the app to ensure that the app's report and dashboards are populated with data. Try to keep sample data size as small as possible.
 
 ## Publishing on AppSource
 Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
@@ -142,7 +145,7 @@ In order to redirect a user to the app's download link in Power BI see the follo
 
 ## Automate parameter configuration during installation
 
-If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](template-apps-auto-install.md) for details.
 
 ## Next steps
 

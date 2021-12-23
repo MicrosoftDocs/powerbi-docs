@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 10/07/2021
+ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server
@@ -15,6 +16,82 @@ ms.date: 01/27/2021
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## September 2021 
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for September 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- Area chart transparency sliders
+- Inner padding for continuous axes
+- Small multiples new feature
+- Conditional formatting for assorted visuals
+- Customize shape formatting
+- Line chart improvements
+- X-axis constant line improvements
+- Line chart series labels
+- New formatting options for buttons
+- Toggle total columns in waterfall charts
+
+#### Modeling
+
+- New Model View
+- New way of expressing Date and DateTime values
+- Shortcut expression for CALCULATE now supports aggregation functions
+- New parameter for XIRR function
+- Making it easier to format based on a user’s locale
+- Evaluation configuration settings
+
+### Paginated reports in Power BI Report Builder
+
+- New version of Power BI Report Builder
+
+### Other
+
+- New Power BI visuals store experience
+
+## May 2021
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for May 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+**Highlighted new features**
+
+Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
+
+- [Smart guides for aligning objects](../create-reports/desktop-create-phone-report.md) are now available in the mobile layout view.
+- [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
+- [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
+- Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
+- [Text/CSV by example](../connect-data/desktop-connect-csv.md).
+
+**Other new and updated features**
+
+**Reporting**
+
+- New and improved shapes
+- New field list
+- Search bar
+- Updated color picker
+- New filter operations: “is empty” and “is not empty”
+
+**Analytics**
+
+- X axis constant line for line charts.
+
+**Modeling**
+
+- IF.EAGER
+- CROSSFILTER supports many-to-many relationships.
+
+**Other**
+
+- Certificate revocation check controls now available in Desktop interface.
+- Simplifying collection of diagnostic information.
 
 ## January 2021
 
@@ -71,7 +148,7 @@ See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-m
 
 **Browser support deprecation**
 
-If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Edge Legacy browser ends beginning March 9, 2021. Support for Internet Explorer 11 ends beginning August 17, 2021. 
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
@@ -145,7 +222,7 @@ If you have an older PBIX that can't automatically update, for reasons such as u
 
 **Support for Windows 7 ends**
 
-After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
+After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we stopped support for Power BI Desktop on Windows 7 on January 31, 2021. Power BI Desktop is only supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
 **Complete list of updates**
 
@@ -188,8 +265,6 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 
 **Data preparation**
 
-- Automatic Table Detection from Excel files  
-- Automatic Table Detection from JSON files  
 - Global option to disable automatic type detection 
 
 **Other**  
@@ -215,7 +290,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - New action types for buttons:
 
     - Page navigation
-    - Drill through
+    - Drillthrough
 
 - Buttons now support fill images
 - Multi-column sort for tables
@@ -450,7 +525,7 @@ Here's the complete list of features.
     - Border color
 
 - Conditional formatting warnings
-- Drill-through discoverability improvement
+- Drillthrough discoverability improvement
 - New DAX expressions: REMOVEFILTERS and CONVERT
 - New DAX comparison operator: ==
 
@@ -578,7 +653,7 @@ Out of the whole long list of new features, these features stand out as especial
 
 #### Report theming
 
-Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
+Report theming is available in Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:
@@ -838,7 +913,7 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 
 ### Support for new table and matrix visuals
 
-Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side by side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
+Power BI Report Server now supports the new Power BI table and matrix visuals. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
 
 ## June 2017
 

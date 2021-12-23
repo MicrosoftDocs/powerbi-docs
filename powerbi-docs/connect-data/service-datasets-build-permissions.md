@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/12/2021
+ms.date: 08/09/2021
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
@@ -26,38 +26,17 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
  
-- Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select **More options** (...) next to a dataset > **Manage Permissions**.
+- Dataset owners can assign Build permission to specific users or security groups on the Manage permissions page. See [Manage dataset access permissions](service-datasets-manage-access-permissions.md) for detail.
 
-    ![Select the ellipsis](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
+- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Allow users to connect to datasets](../collaborate-share/service-create-distribute-apps.md#allow-users-to-connect-to-datasets) in [Publish an app](../collaborate-share/service-create-distribute-apps.md) for detail.
 
-    That opens the Permission center for that dataset, where you can set and change permissions.
-
-    ![Permission center](media/service-datasets-build-permissions/power-bi-dataset-remove-permissions-no-callouts.png)
-
-- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Share a dataset](service-datasets-share.md) for details.
-
-- Say you have Reshare and Build permission on a dataset. When you share a report or dashboard built on that dataset, you can specify that the recipients also get Build permission for the underlying dataset.
-
-    ![Build permission](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
-
-You can remove a person's Build permission for a dataset. If you do, they can still see the report built on the shared dataset, but they can no longer edit it. See the next section for details.
+- Say you have Reshare and Build permission on a dataset. When you share a report or dashboard built on that dataset, you can specify that the recipients also get Build permission for the underlying dataset. See [Share Power BI reports and dashboards](../collaborate-share/service-share-dashboards.md) for detail.
 
 ## Remove Build permission for a dataset
 
-At some point, you may need to remove Build permission for some users of a shared dataset. 
-
-1. In a workspace, go to the **Datasets** list page. 
-1. Select **More options** (...) next to the dataset > **Manage permission**.
-
-    ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
-
-1. Select **More options** (...) next to a name > **Remove build**.
-
-    ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
-
-    They can still see the report built on the shared dataset, but they can no longer edit it.
+At some point, you may need to remove Build permission for some users of a shared dataset. Follow the instructions in the [Manage permissions](service-datasets-manage-access-permissions.md#manage-direct-access) section of [Manage dataset access permissions] article to see how to do this.(service-datasets-manage-access-permissions.md).
 
 ### Remove Build permission for a dataset in an app
 
@@ -74,24 +53,38 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 
     You see a message explaining that you need to go to **Manage permissions** to remove Build permission for users with existing access. 
 
-    ![Manage permissions message](media/service-datasets-build-permissions/power-bi-dataset-app-remove-message.png)
+    :::image type="content" source="media/service-datasets-build-permissions/power-bi-dataset-app-remove-message.png" alt-text="Screenshot of Manage permissions message.":::
 
 1. Select **Update**.
 
-1. In the workspace, go to the **Datasets** list page. 
-1. Select **More options** (...) next to the dataset > **Manage permission**.
+1. Follow the instructions in the [Manage permissions](service-datasets-manage-access-permissions.md#manage-direct-access) section of [Manage dataset access permissions](service-datasets-manage-access-permissions.md) to see how to do remove permissions from users with existing access. When you take away Build permission on the dataset from a user, they can still see the report built on the dataset, but they can no longer edit it.
 
-    ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
+## Configure how users request Build permission
 
-1. Select **More options** (...) next to their name > **Remove build**.
+Certain actions, such as creating a report on top of a dataset or accessing the details page of a dataset in the datasets hub, require [Build permission](service-datasets-build-permissions.md) on the dataset. By default, when a user who doesn't have this permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email will include the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
-    ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
+![Screenshot of default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
+ 
+### Changing the access request behavior
 
-    They can still see the report built on the shared dataset, but they can no longer edit it.
+If you have an [Admin, Member, or Contributor role](../collaborate-share/service-roles-new-workspaces.md) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
+
+![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
+ 
+The first option (here shown unchecked) is the default option described at the beginning of this section. Requests for Build permission on the dataset will come to you via email. When you get the request, you are responsible for acting on the request and notifying the requestor.
+
+The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide.
+
+In the image of the the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
+
+![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
+
+>[!NOTE]
+> When you provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
 
 ## More granular permissions
 
-Power BI introduced Build permission in June 2019 as a complement to the existing permissions, Read and Reshare. All users who already had Read permission for datasets via app permissions, sharing, or workspace access at that time also got Build permission for those same datasets. They got Build permission automatically because Read permission already granted them the right to build new content on top of the dataset, by using Analyze in Excel or Export.
+Power BI provides the Build permission as a complement to the existing permissions, Read and Reshare. All users who already had Read permission for datasets via app permissions, sharing, or workspace access at that time also got Build permission for those same datasets. They got Build permission automatically because Read permission already granted them the right to build new content on top of the dataset, by using Analyze in Excel or Export.
 
 With this more granular Build permission, you can choose who can only view the content in the existing report or dashboard and who can create content connected to the underlying datasets.
 
@@ -101,5 +94,7 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 ## Next steps
 
-- [Use datasets across workspaces](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Share a dataset](service-datasets-share.md)
+* [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

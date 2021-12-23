@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 12/02/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -41,6 +41,8 @@ For more information, take a look at the following resources:
 * [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
 * [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob storage and Table storage)
 
+And for more information about Azure resources available in Power BI, see the **Azure data sources** section in [data sources in Power BI Desktop](desktop-data-sources.md).
+
 ## Get complex (and ahead) using Azure Services and Power BI
 
 You can expand as much as you need with Azure and Power BI. Harness multi-source data processing, make use of massive real-time systems, use [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)and [Event Hubs](https://azure.microsoft.com/services/event-hubs/), and coalesce your varied SaaS services into business intelligence reports that give your business an edge.
@@ -53,7 +55,7 @@ Embed stunning, interactive data visualizations in applications, websites, porta
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](https://dev.powerbi.com).
 
-For more information, see [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
+For more information, see [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md#power-bi-embedded).
 
 ## Embed your Power BI data within your app
 

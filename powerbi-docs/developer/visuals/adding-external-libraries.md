@@ -1,14 +1,15 @@
 ---
-title:  Adding external libraries to Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use external libraries in Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title:  Adding external libraries to Power BI visuals
+description: This article describes how to use external libraries in Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 05/24/2021
 ---
+
 # Adding external libraries
 
 This article describes how to use external libraries in Power BI visuals. It includes information about installing, importing, and calling external libraries from the Power BI visual's code.
@@ -62,3 +63,8 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
     ```less
     @import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
     ```
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Set up your environment for developing a Power BI visual](environment-setup.md)

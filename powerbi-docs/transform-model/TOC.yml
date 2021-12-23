@@ -16,21 +16,21 @@
       href: desktop-tutorial-create-calculated-columns.md
   - name: Concepts
     expanded: true
-    items: 
+    items:
+    - name: "Work with Modeling view"
+      href: desktop-modeling-view.md  
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
-    - name: "Work with Modeling view"
-      href: desktop-modeling-view.md      
-    - name: "Manage aggregations"
-      href: desktop-aggregations.md      
-    - name: "Use composite models"
-      href: desktop-composite-models.md
-    - name: "Apply many-many relationships"
+    - name: "Many-to-many relationships"
       href: desktop-many-to-many-relationships.md
-    - name: "Manage storage mode"
-      href: desktop-storage-mode.md
     - name: "Enable bidirectional cross-filtering"
       href: desktop-bidirectional-filtering.md
+    - name: "Composite models"
+      href: desktop-composite-models.md
+    - name: "User-defined aggregations"
+      href: aggregations-advanced.md   
+    - name: "Manage storage mode"
+      href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
   - name: Dataflows
@@ -50,9 +50,29 @@
     - name: "Use Machine Learning and Cognitive Services with dataflows"
       href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
-      href: ./dataflows/dataflows-best-practices.md                  
-    - name: "Dataflows limitations and considerations"
-      href: dataflows/dataflows-features-limitations.md            
+      href: ./dataflows/dataflows-best-practices.md  
+    - name: "Understanding and optimizing dataflow refresh"
+      href: ./dataflows/dataflows-understand-optimize-refresh.md  
+    - name: "Using DirectQuery with dataflows"
+      href: ./dataflows/dataflows-directquery.md       
+    - name: "Dataflows considerations and limitations"
+      href: dataflows/dataflows-features-limitations.md
+    - name: "Streaming dataflows (preview)"
+      href: dataflows/dataflows-streaming.md
+    - name: "Developing dataflows solutions"
+      href: dataflows/dataflows-develop-solutions.md      
+  - name: Log analytics
+    items: 
+    - name: "Using Azure Log Analytics in Power BI (preview)"
+      href: log-analytics/desktop-log-analytics-overview.md
+    - name: "Configuring Azure Log Analytics in Power BI (preview)"
+      href: log-analytics/desktop-log-analytics-configure.md
+    - name: "Azure Log Analytics in Power BI - FAQ (preview)"
+      href: log-analytics/desktop-log-analytics-faq.md
+    - name: "Installing the Log Analytics Template App (preview)"
+      href: log-analytics/install-as-engine-app.md   
+    - name: "Using the Log Analytics Template App (preview)"
+      href: log-analytics/desktop-loganalytics-reportguide-datasets.md
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -71,7 +91,7 @@
       items: 
       - name: "Combine files (binaries)"
         href: desktop-combine-binaries.md
-      - name: "Use AI Insights (preview)"
+      - name: "Use AI Insights"
         href: desktop-ai-insights.md        
     - name: Model your data
       items: 
@@ -95,9 +115,15 @@
         href: desktop-import-and-display-kpis.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
+  - name: External tools
+    items:
+    - name: External tools in Power BI Desktop
+      href: desktop-external-tools.md
+    - name: Register an external tool
+      href: desktop-external-tools-register.md
   - name: Reference
     items: 
-    - name: "Use the Field list in Power BI Desktop (preview)"
+    - name: "Use the Field list in Power BI Desktop"
       href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md

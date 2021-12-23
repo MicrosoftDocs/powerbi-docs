@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/17/2020
-ms.custom: seodec18
+ms.date: 10/29/2021
+ms.custom: ''
 LocalizationGroup: Administration
 ---
 
 # Row-level security (RLS) with Power BI
 
-Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access.
+Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access. 
 
 You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI Desktop. The security option will not show up for live connection datasets.
 
@@ -26,12 +26,13 @@ For more information, see [Bidirectional cross-filtering using DirectQuery in Po
 
 ![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
 
-
 [!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
+
+Now that you're done validating the roles in Power BI Desktop, go ahead and publish your report to the Power BI service.
 
 ## Manage security on your model
 
-To manage security on your data model, do the following steps:
+To manage security on your data model, open the workspace where you saved your report in the Power BI service and do the following steps:
 
 1. In the Power BI service, select the **More options** menu for a dataset. This menu appears when you hover on a dataset name, whether you select it from the navigation menu or the workspace page.
 
@@ -43,7 +44,7 @@ To manage security on your data model, do the following steps:
 
    ![Select security from more options menu](media/service-admin-rls/dataset-more-options-menu.png)
 
-Security will take you to the RLS page where you add members to a role you created in Power BI Desktop. Only the owners of the dataset will see Security. If the dataset is in a Group, only administrators of the group will see the security option.
+Security will take you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Only the owners of the dataset will see **Security**. If the dataset is in a Group, only administrators of the group will see the security option.
 
 You can only create or modify roles within Power BI Desktop.
 
@@ -51,7 +52,15 @@ You can only create or modify roles within Power BI Desktop.
 
 ### Add members
 
-Add a member to the role by typing in the email address or name of the user or security group. You can't add Groups created in Power BI. You can add members [external to your organization](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
+In the Power BI service, you can add a member to the role by typing in the email address or name of the user or security group. You can't add Groups created in Power BI. You can add members [external to your organization](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
+
+You can use the following groups to set up row level security.
+
+- Distribution Group
+- Mail-enabled Group
+- Security Group
+
+Note, however, that Office 365 groups are not supported and cannot be added to any roles.
 
 ![Add a member](media/service-admin-rls/rls-add-member.png)
 
@@ -67,10 +76,10 @@ You can remove members by selecting the X next to their name.
 
 ## Validating the role within the Power BI service
 
-You can validate that the role you defined is working correctly by testing the role.
+You can validate that the role you defined is working correctly in the Power BI service by testing the role.
 
 1. Select **More options** (...) next to the role.
-2. Select **Test data as role**
+2. Select **Test data as role**.
 
 ![Test as role](media/service-admin-rls/rls-test-role.png)
 
@@ -85,17 +94,20 @@ Test other roles, or a combination of roles, by selecting **Now viewing as**.
 You can choose to view data as a specific person or you can select a combination of available roles to validate they're working.
 
 To return to normal viewing, select **Back to Row-Level Security**.
+    
+> [!NOTE]
+> The Test as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.
 
 [!INCLUDE [include-short-name](../includes/rls-usernames.md)]
 
 ## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to a workspace in the Power BI service, the roles will be applied to read-only members. You'll need to indicate that members can only view Power BI content in the workspace settings.
+If you publish your Power BI Desktop report to a [new workspace experience](../collaborate-share/service-new-workspaces.md) in the Power BI service, the RLS roles are applied to members who are assigned to the **Viewer** role in the workspace. Even if  **Viewers** are given Build permissions to the dataset, RLS still applies. For example, if Viewers with Build permissions use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), their view of the data will be protected by RLS. Workspace members assigned **Admin**, **Member**, or **Contributor** have edit permission for the dataset and, therefore, RLS doesn’t apply to them. If you want RLS to apply to people in a workspace, you can only assign them the **Viewer** role. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 > [!WARNING]
-> If you have configured the workspace so that members have edit permissions, the RLS roles won't be applied to them. Users can see all of the data.
-
-![Group settings](media/service-admin-rls/rls-group-settings.png)
+> If you have configured a *classic* workspace so that members have edit permissions, the RLS roles won't be applied to them. Users can see all of the data. Read more about [classic workspaces](../collaborate-share/service-create-workspaces.md).
+>
+>![Group settings](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](../includes/rls-limitations.md)]
 

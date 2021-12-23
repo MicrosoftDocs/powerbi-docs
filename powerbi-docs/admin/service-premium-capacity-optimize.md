@@ -1,13 +1,13 @@
 ---
 title: Optimize Microsoft Power BI Premium capacities
 description: Describes optimization strategies for Power BI Premium capacities.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 10/18/2021
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -24,9 +24,13 @@ When additional Premium capacity is required, there are two options described in
 Finally, testing approaches and Premium capacity sizing conclude this article.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
+> [!NOTE]
+> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+
 
 The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
 
@@ -39,8 +43,8 @@ When trying to get the best utilization and performance, there are some recommen
 
   ![Separating business critical and Self-Service BI into different capacities](media/service-premium-capacity-optimize/separate-capacities.png)
 
-- If sharing content only with Power BI Pro users, there may be no need to store the content in a dedicated capacity.
-- Use dedicated capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
+- If sharing content only with Power BI Pro users, there may be no need to store the content in a reserved capacity.
+- Use reserved capacities when looking to achieve a specific refresh time, or when specific features are required. For example, with large datasets or paginated reporting.
 
 ### Addressing common questions
 
@@ -155,7 +159,7 @@ Incremental refresh can significantly reduce data refresh duration, especially f
 - **Refreshes are more reliable** - Shorter running connections to volatile datasource systems are less susceptible to disconnection.
 - **Models remain trim** - Incremental refresh policies can be configured to automatically remove history beyond a sliding window of time.
 
-To learn more, see [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ### Why are data refreshes not completing?
 
@@ -271,7 +275,7 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
   
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -279,4 +283,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

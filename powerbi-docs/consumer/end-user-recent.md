@@ -3,12 +3,11 @@ title: Display recently visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
 ms.reviewer: mihart
-featuredvideoid: G26dr2PsEpk
-
+ms.custom: video-G26dr2PsEpk
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/24/2020
+ms.date: 06/09/2021
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -44,6 +43,9 @@ If your lists get long, [use the search field and sorting to find what you need]
 ![Screenshot showing both the Search field and the sort arrow](./media/end-user-recent/power-bi-recent-sort-search.png)
 
 Watch Amanda demonstrate how the Power BI service **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

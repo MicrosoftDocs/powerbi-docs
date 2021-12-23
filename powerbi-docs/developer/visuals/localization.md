@@ -1,36 +1,69 @@
 ---
-title: Add the locale in Power BI for Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: Learn how visuals can retrieve the Power BI locale to localize their content to the relevant language. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Add the locale in Power BI for Power BI visuals
+description: Learn how visuals can retrieve the Power BI locale to localize their content to the relevant language.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
-ms.date: 06/18/2019
+ms.topic: how-to
+ms.date: 03/18/2021
 ---
 
-# Add the locale in Power BI for Power BI visuals
+# Add the locale Power BI language to your Power BI visual
 
-Visuals can retrieve the Power BI locale to localize their content to the relevant language.
+Power BI [supports a range of local languages](./../../fundamentals/supported-languages-countries-regions.md). You can retrieve the Power BI locale language, and use it to display content in your visual.
 
-Read more about [Supported languages and countries/regions for Power BI](./../../fundamentals/supported-languages-countries-regions.md)
-
-For example, getting locale in the Sample Bar Chart visual.
+Below is an example of a *sample bar chart* visual displaying content in different languages. Each of these bar charts was created using a different locale language (English, Basque, and Hindi) which is displayed in the tooltip.
 
 ![Localization in Sample Bar Chart visual](media/localization/locale-in-samplebarchart.png)
 
-Each of these bar charts was created under a different locale (English, Basque, and Hindi), and it's displayed in the tooltip.
-
 > [!NOTE]
-> The localization manager in the visual's code is supported from API 1.10.0 and higher.
+> * The localization manager in the visual's code is supported from API 1.10.0 and higher.
+> * Localization  is not supported for debugging the development visual.
 
-## Get the locale
+## How to add the local Power BI language to your visual
 
-The `locale` is passed as a string during the initialization of the visual. If a locale is changed in Power BI, the visual will be generated again with the new locale. You can find the full sample code at SampleBarChart with Locale
+To add the local Power BI language to your visual, you'll need to do follow these steps:
 
-The BarChart constructor now has a locale member, which is instantiated in the constructor with the host locale instance.
+1. [Set up your environment to display a language that isn't English](#step-1---set-up-your-environment-to-display-a-language-that-isnt-english).
+
+2. [Get the local Power BI language](#step-2---get-the-locale-power-bi-language).
+
+3. [Set the visual display names](#step-3---set-the-visual-display-names)
+
+4. [Create a language folder](#step-4---create-a-language-folder).
+
+5. [Add a resources file for each language](#step-5---add-a-resources-file-for-each-language).
+
+6. [Create a new localizationManager instance](#step-6---create-a-new-localizationmanager-instance).
+
+7. [Call the getDisplayName function](#step-7---call-the-getdisplayname-function).
+
+### Step 1 - Set up your environment to display a language that isn't English
+
+To test your visual, you'll need Power BI to use a language that isn't English. This section shows how to change the settings of Power BI Desktop and Power BI service, so that they use a local language that isn't English.
+
+* **Power BI Desktop** - Download the localized version of Power BI desktop from https://powerbi.microsoft.com.
+
+* **Power BI service** - If you're using Power BI service (web portal), change your language in settings:
+
+    1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
+
+    2. Navigate to **Settings** > **Settings** > **Settings**.
+
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
+
+    3. From the **General** tab, select **Language**. In the **Language Settings** select the language you want Power BI to use, and then select **Apply**.
+
+        >[!div class="mx-imgBorder"]
+        >![A screenshot showing the language settings in Power BI service.](media/localization/webservice-settings.png)
+
+### Step 2 - Get the locale Power BI language
+
+The local Power BI language is passed as a string called `locale` during the initialization of the visual. If a locale language is changed in Power BI, the visual will be generated again with the new `locale`.
 
 ```typescript
 private locale: string;
@@ -38,10 +71,109 @@ private locale: string;
 this.locale = options.host.locale;
 ```
 
-Supported locales:
+> [!NOTE]
+> In Power BI Desktop, the `locale` property contains the language of the installed Power BI Desktop.
+
+### Step 3 - Set the visual display names
+
+Every visual displays information in the property pane. For example, a non-localized custom visual created by using the `pbiviz new` command, will show the *Category Data* and *Measure Data* fields in the property pane.
+
+>[!div class="mx-imgBorder"]
+>![A screenshot showing the category data and measure data fields in a newly created Power BI visual.](media/localization/property-pane.png)
+
+The property pane display fields are defined in the  **capabilities.json** file. Every display field is defined using a `displayName` property. Add a `displayNameKey` to every display name you want to localize.
+
+```json
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "displayNameKey": "VisualCategoryDataNameKey1",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Measure Data",
+            "displayNameKey": "VisualMeasureDataNameKey2",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ]
+}
+```
+
+### Step 4 - Create a language folder
+
+To create localized visuals, your project needs to have a language folder. In your project, create a folder called **stringResources**. The folder will contain one sub folder for each local language you want your visual to support. For example, to support Arabic and Hebrew, add two folders in the following way:
+
+>[!div class="mx-imgBorder"]
+>![A screenshot from V S code showing a visual project folder structure, with the string resources folder, and two sub folders, one for Arabic and one for Hebrew.](media/localization/stringresources-files.png)
+
+### Step 5 - Add a resources file for each language
+
+For each language you want your visual to support, you'll need to add a **resources.resjson** JSON file in the appropriate **stringResources** sub folder. These files contain the locale language information, and the localized string values for every `displayNameKey` you want to replace.
+
+>[!div class="mx-imgBorder"]
+>![A screenshot from V S code showing a visual project folder structure, with the string resources folder, and two resources resjson files, one in the Arabic sub folder, and one in the Hebrew sub folder.](media/localization/new-resjson.png)
+
+Every JSON file defines a single [supported locale language](#supported-languages). Add all the localization strings you are going to use into each **resources.resjson** file.
+
+#### Examples
+
+* **resources.resjson** file with *Russian* strings for each `displayNameKey`.
+
+    ```json
+    {
+        ...
+        "Role_Legend": "Обозначения",
+        "Role_task": "Задача",
+        "Role_StartDate": "Дата начала",
+        "Role_Duration": "Длительность"
+        ...
+    }
+    ```
+
+* **resources.resjson** file with *Hebrew* strings for each `displayNameKey`.
+
+    ```json
+    {
+        ...
+        "Role_Legend": "Legend",
+        "Role_task": "Task",
+        "Role_StartDate": "Start date",
+        "Role_Duration": "Duration"
+        ...
+    }
+    ```
+
+### Step 6 - Create a new localizationManager instance
+
+Create a new `localizationManager` instance in your visual's code.
+
+```typescript
+private localizationManager: ILocalizationManager;
+
+constructor(options: VisualConstructorOptions) {
+    this.localizationManager = options.host.createLocalizationManager();
+}
+```
+
+### Step 7 - Call the getDisplayName function
+
+After creating a new `localizationManager` instance, you can call the localization manager's `getDisplayName` function with the string key argument you defined in **resources.resjson**.
+
+For example, the following code returns *Legend* for en-US, and *Обозначения* for ru-RU.
+
+```typescript
+let legend: string = this.localization.getDisplayName("Role_Legend");
+```
+
+## Supported languages
+
+The table below contains a list of all the languages supported in Power BI, and the string that the `local` variable returns for each one.
 
 Locale string | Language
---------------|----------------------
+--------------|---------------------
 ar-SA | العربية (Arabic)
 bg-BG | български (Bulgarian)
 ca-ES | català (Catalan)
@@ -87,130 +219,7 @@ vi-VN | tiếng Việt (Vietnamese)
 zh-CN | 中国 (Chinese-Simplified)
 zh-TW | 中國 (Chinese-Tranditional)
 
-> [!NOTE]
-> In the PowerBI Desktop the locale property will contain the language of the PowerBI Desktop installed.
-
-## Localizing the property pane for Power BI visuals
-
-Fields in the property pane can be localized to provide more integrated and coherent experience. It makes your custom visual behave like any other Power BI core visual.
-
-For example, a non-localized custom visual created by using the `pbiviz new` command, will show the following fields in the property pane:
-
-![Localization in property pane](media/localization/property-pane.png)
-
-both the Category Data and the Measure Data are defined in the capabilities.json file as `displayName`.
-
-## How to localize capabilities
-
-First add a display name key to every display name you want to localize in your capabilities. In this example:
-
-```json
-{
-    "dataRoles": [
-        {
-            "displayName": "Category Data",
-            "displayNameKey": "VisualCategoryDataNameKey1",
-            "name": "category",
-            "kind": "Grouping"
-        },
-        {
-            "displayName": "Measure Data",
-            "displayNameKey": "VisualMeasureDataNameKey2",
-            "name": "measure",
-            "kind": "Measure"
-        }
-    ]
-}
-```
-
-Then add a directory called stringResources. The directory will contain all your different string resource files based on the locales you want your visual to support. Under this directory, you'll need to add a JSON file for every locale you want to support. Those files contain the locale information and the localized strings values for every displayNameKey you want to replace.
-
-In our example, lets say we want to support Arabic and Hebrew. We will need to add two JSON files in the following way:
-
-![Localizations strings in string resources folder](media/localization/stringresources-files.png)
-
-Every JSON file defines a single locale (this file has to be one of the locales from the supported list above), with the string values for the desired display name keys. In our example the Hebrew string resource file will look as follows:
-
-```json
-{
-    "locale": "he-IL",
-    "values": {
-        "VisualCategoryDataNameKey1": "קטגוריה",
-        "VisualMeasureDataNameKey2": "יחידות מידה"
-    }
-}
-```
-
-All the required steps to use the localization manager are described below.
-
-> [!NOTE]
-> Currently, localization  is not supported for debugging the dev visual
-
-## Setup environment
-
-### Desktop
-
-For desktop usage, download the localized version of Power BI desktop from https://powerbi.microsoft.com.
-
-### Web service
-
-If you use the web client (browser) in the service, then change your language in settings:
-
-![Localization in web service](media/localization/webservice-settings.png)
-
-## Resource file
-
-Add a resources.resjson file to a folder named as the locale you're going to use inside of the stringResources folder. It is en-US and ru-RU in our example.
-
-![The new resjson file](media/localization/new-resjson.png)
-
-After that, add all the localization strings you are going to use into the resources.resjson file you've added in the previous step.
-
-```json
-{
-    ...
-    "Role_Legend": "Обозначения",
-    "Role_task": "Задача",
-    "Role_StartDate": "Дата начала",
-    "Role_Duration": "Длительность"
-    ...
-}
-```
-
-This sample is the en-US version of resources.resjson file:
-
-```json
-{
-    ...
-    "Role_Legend": "Legend",
-    "Role_task": "Task",
-    "Role_StartDate": "Start date",
-    "Role_Duration": "Duration"
-    ...
-}
-```
-
-New localizationManager instance
-Create an instance of localizationManager in your visual's code as follows
-
-```typescript
-private localizationManager: ILocalizationManager;
-
-constructor(options: VisualConstructorOptions) {
-    this.localizationManager = options.host.createLocalizationManager();
-}
-```
-
-## localizationManager usage sample
-
-Now you can call the getDisplayName function of the localization manager with the string key argument you defined in resources.resjson to get the required string anywhere inside of your code:
-
-```typescript
-let legend: string = this.localization.getDisplayName("Role_Legend");
-```
-
-It returns "Legend" for en-US and "Обозначения" for ru-RU
-
 ## Next steps
 
-* [Read how to use formatting utils to provide localized formats](utils-formatting.md)
+>[!div class="nextstepaction"]
+>[Formatting utils](utils-formatting.md)

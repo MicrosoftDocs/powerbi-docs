@@ -7,15 +7,13 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 09/24/2021
 LocalizationGroup: Visualizations
 ---
 
 # Treemaps in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle (branch) containing smaller rectangles (leaves). Power BI bases the size of the space inside each rectangle on the measured value. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
@@ -56,18 +54,16 @@ Treemaps are a great choice:
 
 This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
+1. From the upper left section of the menubar, select **File** > **Open report**
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Find your copy of the **Retail Analysis sample PBIX file**
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+1. Open the **Retail Analysis sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+
+1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
-
-
 
 After you get the **Retail Analysis Sample** dataset, you can get started.
 
@@ -75,24 +71,23 @@ After you get the **Retail Analysis Sample** dataset, you can get started.
 
 You'll create a report and add a basic treemap.
 
-
 1. From the **Fields** pane, select the **Sales** > **Last Year Sales** measure.
 
-   ![Screenshot of Sales > Last Tear Sales selected and the resulting visual.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
+   :::image type="content" source="media/power-bi-visualization-treemaps/treemapfirstvalue-new.png" alt-text="Screenshot of Sales > Last Tear Sales selected and the resulting visual.":::
 
-1. Select the treemap icon ![Screenshot of the treemap icon](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) to convert the chart to a treemap.
+1. Select the treemap icon :::image type="icon" source="media/power-bi-visualization-treemaps/power-bi-treemap-icon.png"::: to convert the chart to a treemap.
 
-   ![Screenshot of the treemap without configuration.](media/power-bi-visualization-treemaps/treemapconvertto-new.png)
+   :::image type="content" source="media/power-bi-visualization-treemaps/treemapconvertto-new.png" alt-text="Screenshot of the treemap without configuration.":::  
 
 1. Select **Item** > **Category** which will add **Category** to the **Group** well.
 
     Power BI creates a treemap where the size of the rectangles is based on total sales and the color represents the category. In essence you've created a hierarchy that visually describes the relative size of total sales by category. The **Men's** category has the highest sales and the **Hosiery** category has the lowest.
 
-    ![Screenshot of the configured treemap.](media/power-bi-visualization-treemaps/power-bi-complete.png)
+    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-complete.png" alt-text="Screenshot of the configured treemap.":::
 
 1. Select **Store** > **Chain** which will add **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.
 
-   ![Screenshot of the treemap with Store > Chain added to the Details.](media/power-bi-visualization-treemaps/power-bi-details.png)
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-details.png" alt-text="Screenshot of the treemap with Store > Chain added to the Details.":::
 
    > [!NOTE]
    > Color Saturation and Details cannot be used at the same time.
@@ -101,7 +96,7 @@ You'll create a report and add a basic treemap.
 
     For example, hovering over **Fashions Direct** in the **090-Home** rectangle reveals the tooltip for Fashion Direct's portion of the Home category.
 
-   ![Screenshot of the Home tooltip that appears.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
+   :::image type="content" source="media/power-bi-visualization-treemaps/treemaphoverdetail-new.png" alt-text="Screenshot of the Home tooltip that appears.":::
 
 
 ## Highlighting and cross-filtering
@@ -110,9 +105,10 @@ Highlighting a **Category** or **Detail** in a treemap cross-highlights and cros
 
 1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$16,352,432** with **Fashions Direct** accounting for **$2,174,185** of those sales.
 
-   ![Screenshot of the Store Sales Overview report showing cross-highlighting.](media/power-bi-visualization-treemaps/treemaphiliting.png)
+   :::image type="content" source="media/power-bi-visualization-treemaps/treemaphiliting.png" alt-text="Screenshot of the Store Sales Overview report showing cross-highlighting.":::
 
 1. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.
+
    ![GIF demonstration of the cross-filtering feature.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
 1. To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).

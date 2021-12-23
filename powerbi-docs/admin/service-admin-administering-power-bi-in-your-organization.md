@@ -4,7 +4,7 @@ description: Learn about the admin roles, tasks, and tools used to manage Power 
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
-ms.custom: contperf-fy20q4
+ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
@@ -32,6 +32,10 @@ There are several roles that work together to administer Power BI for your organ
 | License admin | Microsoft 365 | Assign or remove licenses for users |
 | User admin | Microsoft 365 | Create and manage users and groups |
 | | | Reset user passwords |
+| Power Platform admin | Power Platform | Full access to Power BI management tasks|
+| | | Enable and disable Power BI features |
+| | | Report on usage and performance |
+| | | Review and manage auditing |
 | Power BI admin | Power BI service | Full access to Power BI management tasks|
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
@@ -76,7 +80,7 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Use the Power BI admin portal](service-admin-portal.md)
 - [Tenant settings guidance](../guidance/admin-tenant-settings.md)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
-- [Power BI administration FAQ](service-admin-faq.md)
+- [Power BI administration FAQ](service-admin-faq.yml)
 - [Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

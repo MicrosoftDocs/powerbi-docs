@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 2/18/2021
+ms.date: 11/30/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -18,7 +18,7 @@ With *Power BI Desktop*, when you connect to your data source, it's always possi
 For a full listing of data sources that support DirectQuery, see [Data sources supported by DirectQuery](power-bi-data-sources.md).
 
 ## How to connect using DirectQuery
-When you use **Get Data** to connect to a data source supported by DirectQuery, the connection dialog box lets you select how you want to connect. For example, in Power BI Desktop, under the **Home** ribbon, select **Get Data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
+When you use **Get data** to connect to a data source supported by DirectQuery, the connection dialog box lets you select how you want to connect. For example, in Power BI Desktop, under the **Home** ribbon, select **Get data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
 
 ![Import and DirectQuery options, SQL Server Database dialog, Power BI Desktop](media/desktop-use-directquery/directquery_sqlserverdb.png)
 
@@ -39,19 +39,20 @@ There are a few benefits to using DirectQuery:
 - Underlying data changes can require a refresh of data. For some reports, the need to display current data can require large data transfers, making reimporting data unfeasible. By contrast, DirectQuery reports always use current data.
 - The 1-GB dataset limitation *doesn't* apply to DirectQuery.
 
-## Limitations of DirectQuery
+## Considerations and limitations
 There are currently a few limitations to using DirectQuery:
 
-- If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
+- If the **Power Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Power Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Power Query Editor**.
 
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with Single Sign-on (SSO) authentication are not supported in the Power BI Service.
 
 - Auto date/time is unavailable in DirectQuery. For example, special treatment of date columns (drill down by using year, quarter, month, or day) isn't supported in DirectQuery mode.
 
-- There's a one-million-row limit for cloud sources, with on-premises sources limited to a defined payload of about 4 MB per row (depending on proprietary compression algorithm) or 16MB data size for the entire visual. Certain limits may be raised when using Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
+- There's a one-million-row limit for cloud sources (which is any data source that is not on-premises), with on-premises sources limited to a defined payload of about 4 MB per row (depending on proprietary compression algorithm) or 16MB data size for the entire visual. Certain limits may be raised when using Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
     For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
+- There's a 125 column limit in a table or matrix for results that have more than 500 rows for DirectQuery sources. When displaying a result that contains more than 500 rows in a table or matrix, you will see a scrollbar that enables you to fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures using MIN, MAX, FIRST or LAST as they do not count against this maximum.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
@@ -80,7 +81,7 @@ The following three points should be taken into consideration when using DirectQ
 ## Publish to the Power BI service
 Reports created using DirectQuery can be published to the Power BI service.
 
-If the used data source doesn't need the **On-premises data gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), you must provide credentials before the Power BI service shows the published report. Follow these instructions to provide the credentials:
+If the used data source doesn't need the **On-premises data gateway** (**Azure SQL Database**, **Azure Synapse Analytics (formerly SQL Data Warehouse)**, or **Redshift**), you must provide credentials before the Power BI service shows the published report. Follow these instructions to provide the credentials:
 
 1. Sign in to [Power BI](https://www.powerbi.com/).
 2. In the Power BI service, select the **Settings** gear icon and choose the **Settings** menu item.
@@ -91,7 +92,7 @@ If the used data source doesn't need the **On-premises data gateway** (**Azure S
 
 4. Add the credentials. Otherwise, an error occurs when you open a published report or explore a dataset that's created with a DirectQuery connection.
 
-To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
+To make a data connection for data sources other than **Azure SQL Database**, **Azure Synapse Analytics (formerly SQL Data Warehouse)**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:

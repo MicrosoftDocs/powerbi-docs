@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 12/07/2021
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
@@ -55,10 +55,7 @@ Tiles based on a **PubNub streaming dataset** are optimized for quickly displayi
 ### Streaming dataset matrix
 The following table (or matrix, if you like) describes the three types of datasets for real-time streaming, and lists capabilities and limitations of each.
 
-![Screenshot of a table, showing the streaming dataset matrix.](media/service-real-time-streaming/real-time-streaming_11.png)
-
-> [!NOTE]
-> See [this article](../developer/automation/api-rest-api-limitations.md) for information on **Push** limits on how much data can be pushed in.
+![Screenshot of a table, showing the streaming dataset matrix.](media/service-real-time-streaming/real-time-streaming-11.png)
 
 ## Pushing data to datasets
 The previous section described the three primary types of real-time datasets you can use in real-time streaming, and how they differ. This section describes how to create and push data into those datasets.
@@ -87,11 +84,11 @@ All requests to REST APIs are secured using **Azure AD OAuth**.
 ### Using the Streaming Dataset UI to push data
 In the Power BI service, you can create a dataset by selecting the **API** approach as shown in the following image.
 
-![Screenshot of the New streaming dataset choices, showing the A P I selection.](media/service-real-time-streaming/real-time-streaming_0b.png)
+![Screenshot of the New streaming dataset choices, showing the A P I selection.](media/service-real-time-streaming/real-time-streaming-0b.png)
 
 When creating the new streaming dataset, you can select to enable **Historic data analysis** as shown below, which has a significant impact.
 
-![Screenshot of the New streaming dataset, showing the Historic data analysis enabled.](media/service-real-time-streaming/real-time-streaming_0c.png)
+![Screenshot of the New streaming dataset, showing the Historic data analysis enabled.](media/service-real-time-streaming/real-time-streaming-0c.png)
 
 When **Historic data analysis** is disabled, and it is by default, you create a **streaming dataset** as described earlier in this article. When **Historic data analysis** is *enabled*, the dataset created becomes both a **streaming dataset** and a **push dataset**. This is equivalent to using the Power BI REST APIs to create a dataset with its *defaultMode* set to *pushStreaming*, as described earlier in this article.
 
@@ -120,19 +117,19 @@ To get started with real-time streaming, you need to choose one of the two ways 
 
 With either option, you'll need to set up **Streaming data** in Power BI. To do this, in your dashboard (either an existing dashboard, or a new one) select **Add a tile** and then select **Custom streaming data**.
 
-![Screenshot of the dashboard, showing the Custom streaming data selection in the Add tile section.](media/service-real-time-streaming/real-time-streaming_1.png)
+![Screenshot of the dashboard, showing the Custom streaming data selection in the Add tile section.](media/service-real-time-streaming/real-time-streaming-1.png)
 
 If you don't have streaming data set up yet, don't worry - you can select **manage data** to get started.
 
-![Screenshot of the dashboard, showing the manage data link in the Add a custom streaming data tile.](media/service-real-time-streaming/real-time-streaming_2.png)
+![Screenshot of the dashboard, showing the manage data link in the Add a custom streaming data tile.](media/service-real-time-streaming/real-time-streaming-2.png)
 
 On this page, you can input the endpoint of your streaming dataset if you already have one created (into the text box). If you don't have a streaming dataset yet, select the plus icon ( **+** ) in the upper right corner to see the available options to create a streaming dataset.
 
-![Screenshot of the dashboard, showing how to input the endpoint of your streaming dataset with a pointer to the plus icon.](media/service-real-time-streaming/real-time-streaming_3.png)
+![Screenshot of the dashboard, showing how to input the endpoint of your streaming dataset with a pointer to the plus icon.](media/service-real-time-streaming/real-time-streaming-3.png)
 
 When you click on the **+** icon, you see two options:
 
-![Screenshot of the New streaming dataset choices, showing A P I and PubNub options.](media/service-real-time-streaming/real-time-streaming_4a.png)
+![Screenshot of the New streaming dataset choices, showing A P I and PubNub options.](media/service-real-time-streaming/real-time-streaming-4a.png)
 
 The next section describes these options, and goes into more detail about how to create a streaming **tile** or how to create a **dataset** from the streaming data source, which you can then use later to build reports.
 
@@ -147,7 +144,7 @@ The next sections look at each option in turn.
 ### Using the POWER BI REST API
 **Power BI REST API** - Recent improvements to the Power BI REST API are designed to make real-time streaming easier for developers. When you select **API** from the **New streaming dataset** window, you're presented with entries to provide that enable Power BI to connect to and use your endpoint:
 
-![Screenshot of the New streaming dataset dialog, showing the Power B I REST A P I entries for connection.](media/service-real-time-streaming/real-time-streaming_5.png)
+![Screenshot of the New streaming dataset dialog, showing the Power B I REST A P I entries for connection.](media/service-real-time-streaming/real-time-streaming-5.png)
 
 If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](/rest/api/power-bi/).
 
@@ -161,7 +158,7 @@ When making *POST* requests, you should ensure the request body matches the samp
 ### Using PubNub
 With the integration of **PubNub** streaming with Power BI, you can use your low-latency **PubNub** data streams (or create new ones) and use them in Power BI. When you select **PubNub** and then select **Next**, you see the following window:
 
-![Screenshot of the New streaming dataset dialog, showing the PubNub entries for connection.](media/service-real-time-streaming/real-time-streaming_7.png)
+![Screenshot of the New streaming dataset dialog, showing the PubNub entries for connection.](media/service-real-time-streaming/real-time-streaming-7.png)
 
 > [!WARNING]
 > PubNub channels can be secured by using a PubNub Access Manager (PAM) authentication key. This key will be shared with all users who have access to the dashboard. You can [learn more about PubNub access control](https://www.pubnub.com/docs/web-javascript/pam-security).
@@ -177,7 +174,7 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 
 1. In the **Power BI service**, select a dashboard (or create a new one) and select **Add tile** > **Custom Streaming Data** and then select the **Next** button.
    
-   ![Screenshot of the dashboard, showing the Add tile with the Custom streaming data selection.](media/service-real-time-streaming/real-time-streaming_1.png)
+   ![Screenshot of the dashboard, showing the Add tile with the Custom streaming data selection.](media/service-real-time-streaming/real-time-streaming-1.png)
 2. If you don't have and streaming data sources yet, select the **manage data** link (just above the **Next** button), then select **+ Add streaming data** from the link in the upper right of the window. Select **PubNub** and then select **Next**.
 3. Create a name for your dataset, then paste in the following values into the window that appears, then select **Next**:
    
@@ -185,10 +182,10 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 
    **Channel:** *pubnub-sensor-network*
    
-   ![Screenshot of the New streaming dataset dialog, showing how to create a Dataset name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming_8.png)
+   ![Screenshot of the New streaming dataset dialog, showing how to create a Dataset name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming-8.png)
 4. In the following window, just select the defaults (which are automatically populated), then select **Create**.
    
-   ![Screenshot of the New streaming dataset dialog, showing defaults for the Dataset name and Values from stream fields.](media/service-real-time-streaming/real-time-streaming_9.png)
+   ![Screenshot of the New streaming dataset dialog, showing defaults for the Dataset name and Values from stream fields.](media/service-real-time-streaming/real-time-streaming-9.png)
 5. Back in your Power BI workspace, create a new dashboard and then add a tile (see above for steps, if you need them). This time when you create a tile and select **Custom Streaming Data**, you have a streaming data set to work with. Go ahead and play around with it. Adding the *number* fields to line charts, and then adding other tiles, you can get a real time dashboard that looks like the following:
    
    ![Screenshot of the Environmental sensors dashboard, showing the results in real-time.](media/service-real-time-streaming/real-time-streaming-10.png)
@@ -209,9 +206,6 @@ When applying filters to push datasets with *DateTime* fields with millisecond p
 Streaming datasets are designed for displaying the latest data. You can use the **Card** streaming visual to easily see latest numeric values. Unfortunately, the card does not support data of type *DateTime* or *Text*.
 
 For push datasets, when you have a timestamp in the schema you can try creating a report visual with the last N filter.
-
-#### Can I connect to push or streaming datasets in Power BI Desktop?
-Push and hybrid datasets can be live connected in Power BI Desktop. Other streaming datasets cannot be connected in Power BI Desktop.
 
 #### Given the previous question, how can I do any modeling on real-time datasets?
 Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use create dataset REST API to create a dataset with relationship and measures and/or use the update table REST APIs to add measures to an existing table. 

@@ -1,14 +1,14 @@
 ---
-title: Introduction to use SVG utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use SVG utils to simplify SVG manipulations for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Introduction to use SVG utils in Power BI visual
+description: This article describes how to use SVG utils to simplify SVG manipulations for Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
-ms.date: 06/18/2019
+ms.topic: conceptual
+ms.date: 07/15/2021
 ---
 
 # SVG utils
@@ -752,39 +752,4 @@ Rect.getCentroid({ left: 0, top: 0, width: 100, height: 100 });
     x: 50,
     y: 50
 }*/
-```
-
-## pointer
-
-The `pointer` module provides a special function to get position of the pointer.
-
-The module provides the following function:
-
-### getCoordinates
-
-This function returns position of the pointer.
-
-```typescript
-function getCoordinates(rootNode: Element, isPointerEvent: boolean): number[];
-```
-
-Example:
-
-```typescript
-import { pointer } from "powerbi-visuals-utils-svgutils";
-
-let bodySelection = d3.select("body");
-
-bodySelection
-  .append("div")
-  .style({
-    width: "100px",
-    height: "100px",
-    "background-color": "green"
-  })
-  .on("click", () => {
-    pointer.getCoordinates(bodySelection.node(), true);
-  });
-
-// click element, after that you will get position of the pointer
 ```

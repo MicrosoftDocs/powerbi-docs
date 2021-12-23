@@ -4,9 +4,9 @@ description: Eight tips to optimize visual colors in Power BI report visuals, in
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: RhYcEsdPqJg
+ms.custom: video-RhYcEsdPqJg
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 02/15/2020
 ---
@@ -16,6 +16,9 @@ ms.date: 02/15/2020
 This article targets you as a report author designing Power BI reports, configuring visual colors.
 
 Watch the video demonstrating the top eight tips to optimize visual colors in your Power BI reports.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.youtube.com/embed/RhYcEsdPqJg]
 

@@ -4,11 +4,11 @@ description: R packages that are supported and unsupported in Power BI
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/15/2021
+ms.date: 06/17/2021
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
@@ -127,7 +127,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |broom|0.4.4|https://cran.r-project.org/web/packages/broom/index.html|
 |bspec|1.5|https://cran.r-project.org/web/packages/bspec/index.html|
 |bspmma|0.1-1|https://cran.r-project.org/web/packages/bspmma/index.html|
-|bupaR|0.4.0|https://cran.r-project.org/web/packages/bupaR/index.html|
+|bupaR|0.4.4|https://cran.r-project.org/web/packages/bupaR/index.html|
 |BVS|4.12.1|https://cran.r-project.org/web/packages/BVS/index.html|
 |C50|0.1.1|https://cran.r-project.org/web/packages/C50/index.html|
 |Cairo|1.5-9|https://cran.r-project.org/web/packages/Cairo/index.html|
@@ -248,6 +248,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |english|1.2-3|https://cran.r-project.org/web/packages/english/index.html|
 |ensembleBMA|5.1.5|https://cran.r-project.org/web/packages/ensembleBMA/index.html|
 |entropy|1.2.1|https://cran.r-project.org/web/packages/entropy/index.html|
+|epitools|0.5-10.1|https://cran.r-project.org/web/packages/epitools/index.html|
+|epitrix|0.2.2|https://cran.r-project.org/web/packages/epitrix/index.html|
 |estimability|1.3|https://cran.r-project.org/web/packages/estimability/index.html|
 |eulerr|5.1.0|https://cran.r-project.org/web/packages/eulerr/index.html|
 |EvalEst|2015.4-2|https://cran.r-project.org/web/packages/EvalEst/index.html|
@@ -331,16 +333,18 @@ The following table shows which packages **are supported** in the Power BI servi
 |ggforce|0.1.1|https://cran.r-project.org/web/packages/ggforce/index.html|
 |ggformula|0.6.2|https://cran.r-project.org/web/packages/ggformula/index.html|
 |ggfortify|0.4.3|https://cran.r-project.org/web/packages/ggfortify/index.html|
+|gghighlight|0.3.0|https://cran.r-project.org/web/packages/gghighlight/index.html|
 |ggimage|0.1.2|https://cran.r-project.org/web/packages/ggimage/index.html|
 |ggjoy|0.4.0|https://cran.r-project.org/web/packages/ggjoy/index.html|
 |ggm|2.3|https://cran.r-project.org/web/packages/ggm/index.html|
 |ggmap|2.6.1|https://cran.r-project.org/web/packages/ggmap/index.html|
 |ggmcmc|1.1|https://cran.r-project.org/web/packages/ggmcmc/index.html|
-|ggplot2|3.3.2|https://cran.r-project.org/web/packages/ggplot2/index.html|
+|ggplot2|3.2.0|https://cran.r-project.org/web/packages/ggplot2/index.html|
 |ggplot2movies|0.0.1|https://cran.r-project.org/web/packages/ggplot2movies/index.html|
 |ggpmisc|0.2.16|https://cran.r-project.org/web/packages/ggpmisc/index.html|
 |ggpubr|0.1.6|https://cran.r-project.org/web/packages/ggpubr/index.html|
 |ggQC|0.0.31|https://cran.r-project.org/web/packages/ggQC/index.html|
+|ggRandomForests|2.0.1|https://cran.r-project.org/web/packages/ggRandomForests/index.html|
 |ggraph|1.0.1|https://cran.r-project.org/web/packages/ggraph/index.html|
 |ggrepel|0.7.0|https://cran.r-project.org/web/packages/ggrepel/index.html|
 |ggridges|0.4.1|https://cran.r-project.org/web/packages/ggridges/index.html|
@@ -407,13 +411,13 @@ The following table shows which packages **are supported** in the Power BI servi
 |htmlwidgets|1.3|https://cran.r-project.org/web/packages/htmlwidgets/index.html|
 |hts|5.1.5|https://cran.r-project.org/web/packages/hts/index.html|
 |httpuv|1.3.6.2|https://cran.r-project.org/web/packages/httpuv/index.html|
-|httr|1.3.1|https://cran.r-project.org/web/packages/httr/index.html|
 |huge|1.2.7|https://cran.r-project.org/web/packages/huge/index.html|
 |hunspell|2.9|https://cran.r-project.org/web/packages/hunspell/index.html|
 |IBrokers|0.9-12|https://cran.r-project.org/web/packages/IBrokers/index.html|
 |ifultools|2.0-4|https://cran.r-project.org/web/packages/ifultools/index.html|
 |igraph|1.2.1|https://cran.r-project.org/web/packages/igraph/index.html|
 |imager|0.40.2|https://cran.r-project.org/web/packages/imager/index.html|
+|incidence|1.7.2|https://cran.r-project.org/web/packages/incidence/index.html|
 |influenceR|0.1.0|https://cran.r-project.org/web/packages/influenceR/index.html|
 |inline|0.3.14|https://cran.r-project.org/web/packages/inline/index.html|
 |intervals|0.15.1|https://cran.r-project.org/web/packages/intervals/index.html|
@@ -495,6 +499,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |MasterBayes|2.55|https://cran.r-project.org/web/packages/MasterBayes/index.html|
 |Matching|4.9-5|https://cran.r-project.org/web/packages/Matching/index.html|
 |MatchIt|3.0.2|https://cran.r-project.org/web/packages/MatchIt/index.html|
+|Matchmaker|0.1.1|https://cran.r-project.org/web/packages/matchmaker/index.html|
 |Matrix|1.2-12|https://cran.r-project.org/web/packages/Matrix/index.html|
 |matrixcalc|1.0-3|https://cran.r-project.org/web/packages/matrixcalc/index.html|
 |MatrixModels|0.4-1|https://cran.r-project.org/web/packages/MatrixModels/index.html|
@@ -569,6 +574,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |openair|2.3-0|https://cran.r-project.org/web/packages/openair/index.html|
 |openssl|1.0.1|https://cran.r-project.org/web/packages/openssl/index.html|
 |osmar|1.1-7|https://cran.r-project.org/web/packages/osmar/index.html|
+|Outbreaks|1.5.0|https://cran.r-project.org/web/packages/outbreaks/index.html|
 |OutlierDC|0.3-0|https://cran.r-project.org/web/packages/OutlierDC/index.html|
 |OutlierDM|1.1.1|https://cran.r-project.org/web/packages/OutlierDM/index.html|
 |outliers|0.14|https://cran.r-project.org/web/packages/outliers/index.html|
@@ -598,7 +604,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |plogr|0.2.0|https://cran.r-project.org/web/packages/plogr/index.html|
 |plot3D|1.1.1|https://cran.r-project.org/web/packages/plot3D/index.html|
 |plot3Drgl|1.0.1|https://cran.r-project.org/web/packages/plot3Drgl/index.html|
-|plotly|4.7.1|https://cran.r-project.org/web/packages/plotly/index.html|
+|plotly|4.9.2.2|https://cran.r-project.org/web/packages/plotly/index.html|
 |plotmo|3.3.6|https://cran.r-project.org/web/packages/plotmo/index.html|
 |plotrix|3.7|https://cran.r-project.org/web/packages/plotrix/index.html|
 |pls|2.6-0|https://cran.r-project.org/web/packages/pls/index.html|
@@ -617,7 +623,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |PresenceAbsence|1.1.9|https://cran.r-project.org/web/packages/PresenceAbsence/index.html|
 |prettyunits|1.0.2|https://cran.r-project.org/web/packages/prettyunits/index.html|
 |pROC|1.11.0|https://cran.r-project.org/web/packages/pROC/index.html|
-|processmapR|0.3.2|https://cran.r-project.org/web/packages/processmapR/index.html|
+|processmapR|0.3.3|https://cran.r-project.org/web/packages/processmapR/index.html|
 |processmonitR|0.1.0|https://cran.r-project.org/web/packages/processmonitR/index.html|
 |processx|2.0.0.1|https://cran.r-project.org/web/packages/processx/index.html|
 |prodlim|1.6.1|https://cran.r-project.org/web/packages/prodlim/index.html|
@@ -983,4 +989,4 @@ For more information about R in Power BI, take a look at the following articles:
 * [Creating R visuals in the Power BI service](../visuals/service-r-visuals.md)
 * [Create Power BI visuals using R](../create-reports/desktop-r-visuals.md)
 * [Running R scripts in Power BI Desktop](desktop-r-scripts.md)
-* [Using R in Query Editor](desktop-r-in-query-editor.md)
+* [Using R in Power Query Editor](desktop-r-in-query-editor.md)

@@ -1,8 +1,8 @@
 ---
-title: Create a React-based visual for Power BI in Power BI embedded analytics for better embedded BI insights
-description: This tutorial shows how to create a Power BI visual using React. It displays a value in a circle. Adaptive size and settings allow you to customize it. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Create a React-based visual for Power BI 
+description: This tutorial shows how to create a Power BI visual using React. It displays a value in a circle. Adaptive size and settings allow you to customize it. 
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -309,7 +309,7 @@ Configure your visual's capabilities file so that only one data field can be sub
 
 5. Save the changes you made to **capabilities.json**.
 
-6. Verify that `pbiviz start` is running and in Power BI service, refresh your *React Circle Card* visual. The **Measure data** field can except only one data field, as specified by `max: 1`.  
+6. Verify that `pbiviz start` is running and in Power BI service, refresh your *React Circle Card* visual. The **Measure data** field can accept only one data field, as specified by `max: 1`.  
 
     >[!div class="mx-imgBorder"]
     >![Screenshot showing the measure Data field in the react circle card in Power B I service.](media/create-react-visual/measure-data.png)
@@ -403,7 +403,7 @@ The code below selects `textLabel` and `textValue` from `DataView`, and if the d
 
 1. In VS Code, from the **src** folder, open **visual.ts**.
 
-2. Replace the *ReactCircleCard* import, with the following line:
+2. Replace the line `import ReactCircleCard from "./component";` with the following code:
 
     ```typescript
     import { ReactCircleCard, initialState } from "./component";
@@ -440,7 +440,7 @@ In this section, you'll update your visual to send updates to instances in the *
 
 1. In VS Code, from the **src** folder, open **component.tsx**.
 
-2. Replace the content of the `ReactCircleCard` class, with the following code.
+2. Add the following code to the `ReactCircleCard` class:
 
     ```typescript
     private static updateCallback: (data: object) => void = null;
@@ -477,7 +477,7 @@ Test your *React Circle Card* visual to view the changes you made.
 
 ## Make your visual resizable
 
-Currently, your visual has fixed width and height. In this section, you'll make the visual resizable.
+Currently, your visual has fixed width and height. To make the visual resizable you need to define the `size` variable in both the **visual.ts** and **component.tsx** files. In this section, you'll make the visual resizable.
 
 After completing the steps outlined in this section, the circle diameter in your visual will correspond to the minimal width or height size, and you'll be able to resize it in Power BI service.
 

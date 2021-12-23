@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/26/2020
+ms.date: 03/09/2021
 ---
 # Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server
 
-
-Starting with the October 2020 release of Power BI Report Server we enabled the ability to update connections for Power BI reports for DirectQuery and refresh.
+We enable the ability to update connections for Power BI reports for DirectQuery and refresh.
 
 > [!IMPORTANT]
 > This is also a breaking change on how you could set this up in previous releases. If you're using a pre-October 2020 version of Power BI Report Server, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server pre-October 2020](connect-data-source-apis-pre-oct-2020.md)
 
-## Prerequisites:
-- Download the October 2020 or later release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+## Prerequisites
+
+- Download the latest release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 - A report saved with the October 2020 or later release of Power BI Desktop optimized for Report Server, with **Enhanced DataSet Metadata** enabled.
 - A report that uses parameterized connections. Only reports with parameterized connections and databases can be updated after publishing.
 - This example uses the Reporting Services PowerShell tools. You can achieve the same  by using the new REST APIs.
@@ -87,18 +87,25 @@ Starting with the October 2020 release of Power BI Report Server we enabled the 
     $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-4. This variable is updated with the values that we need to change.
-5. We save the result of this call in a variable:
+4. Map to a dictionary to access the parameter values.
 
     ```powershell
-    $parameters[0].Value = 'myproductionserver'
-    $parameters[1].Value = 'myproductiondatabase'
+    $parameterdictionary = @{}
+    foreach ($parameter in $parameters) { $parameterdictionary.Add($parameter.Name, $parameter); }
+
+4. This variable is updated with the values that we need to change.
+5. Update the values of the desired parameters:
+
+    ```powershell
+    $parameterdictionary[“ServerName”].Value = 'myproductionserver'
+    $parameterdictionary[“Databasename”].Value = 'myproductiondatabase'
     ```
 
 6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameters` to update the values in the server:
 
     ```powershell
     Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
+    $parameterdictionary.Values
     ```
 
 7. Once the parameters are updated, the server updates any data sources that were bound to the parameters. Going back to the **Edit data source** dialog box, you should be able to set credentials for the updated server and database.

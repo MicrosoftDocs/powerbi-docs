@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/21/2021
-ms.custom: seodec18
+ms.date: 05/19/2021
+ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
 
@@ -18,7 +18,7 @@ Before you contact Microsoft Support for help with a problem you're having with 
 
 Power BI admins can use the **Help + support** experience in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to get self-help solutions and to contact Support. The diagnostic files that you collect using the steps below can be attached to your support request to help with troubleshooting. For more support options, see [Power BI support options](service-support-options.md).
 
-To collect a browser trace and other session information, follow the steps below for the browser you use.
+To collect a browser trace and other session information, follow the steps below for the browser you use. If you need to collect diagnostic information from Power BI Desktop, follow the instructions in [Power BI Desktop diagnostics collection](../fundamentals/desktop-diagnostics.md).
 
 ## Collect a browser trace
 
@@ -127,7 +127,7 @@ The following steps show how to use the developer tools in Firefox. For more inf
 
 1. Next, you'll set options in the **Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your repro requires going to more than one page.
 
-    1. In the **Inspector** window, select the **Network** tab. Then, select **Persist Logs**.
+    1. In the **Inspector** window, select the **Network** tab, then select **Network settings** > **Persist Logs**.
     
        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-network-persist-logs.png" alt-text="Inspector tools with network tab and persist logs selected." :::
 
@@ -146,11 +146,11 @@ The following steps show how to use the developer tools in Firefox. For more inf
     Go through the steps to reproduce the issue you're having.
     
 3. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
-    1. To export the network log, select **Network** > **HAR Export/Import** then **Save All as HAR**.
+    1. To export the network log, select **Network** > **Network settings** then **Save All as HAR**.
 
          :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-save-har.png" alt-text="Network tab with HAR export/import menu and save all options selected." :::
 
-    2. To export the console output, select the **Console** tab. Right-click on a displayed message, then select **Export Visible Messages To**,  and save the console output to a text file.
+    2. To export the console output, select the **Console** tab. Right-click on a displayed message, then select **Export Visible Messages To** > **File**.
     
          :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-export-visible-messages.png" alt-text="Console tab selected and export visible messages option shown." :::
 

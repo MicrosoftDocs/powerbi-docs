@@ -1,16 +1,14 @@
-﻿- name: "Power BI admin and enterprise"
+- name: "Power BI admin and enterprise"
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
-    items: 
+    items:
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
-    - name: "Where is my tenant located?"
-      href: service-admin-where-is-my-tenant-located.md
-    - name: What is Power BI Premium?
-      href: service-premium-what-is.md
+    - name: "What is Power BI Premium Gen2?"
+      href: service-premium-gen2-what-is.md
   - name: Concepts
     expanded: true
     items:
@@ -24,32 +22,82 @@
         href: service-govus-overview.md
       - name: "Enroll a US Government organization"
         href: service-govus-signup.md
-    - name: Power BI in national clouds
-      items:
-      - name: "Migrate to Go Local German regions"
-        href: service-admin-migrate-data-germany.md    
-      - name: "FAQ for Germany Cloud customers"
-        href: service-govde-faq.md
     - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
+      href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
-      href: service-admin-failover.md
-    - name: Power BI Premium
+      href: service-admin-failover.yml
+    - name: Power BI Premium Gen2
       items:
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Using Autoscale with Power BI Premium
-        href: service-premium-auto-scale.md        
-      - name: Optimizing Premium capacities
-        href: service-premium-capacity-optimize.md
-      - name: Premium capacity scenarios
-        href: service-premium-capacity-scenarios.md
-      - name: Power BI Premium FAQ
-        href: service-premium-faq.md
-      - name: Power BI Premium Per User FAQ
-        href: service-premium-per-user-faq.md        
+      - name: What is Power BI Premium Gen2?
+        href: service-premium-gen2-what-is.md
+      - name: Plan your transition to Power BI Premium Gen2
+        href: service-premium-transition-gen1-to-gen2.md
+      - name: Premium Gen2 architecture
+        href: service-premium-architecture.md
+      - name: Premium Gen2 capacity load evaluation
+        href: service-premium-concepts.md
+      - name: Backup and restore Power BI Premium datasets
+        href: service-premium-backup-restore-dataset.md
+      - name: Using service tags with Power BI
+        href: service-premium-service-tags.md
+      - name: Managing capacities
+        items:
+        - name: Managing Premium Gen2 capacities
+          href: service-premium-capacity-manage-gen2.md
+        - name: Using autoscale with Premium Gen2
+          href: service-premium-auto-scale.md
+        - name: Install the Gen2 metrics app
+          href: service-premium-install-gen2-app.md
+        - name: Using the Premium Gen2 metrics app
+          href: service-premium-gen2-metrics-app.md
+      - name: Power BI Premium Gen2 FAQ
+        href: service-premium-gen2-faq.yml
+      - name: Power BI Premium Per User
+        href: service-premium-per-user-faq.yml
+      - name: Power BI Premium (original version)
+        items:
+        - name: What is Power BI Premium?
+          href: service-premium-what-is.md
+        - name: Monitoring Power BI capacities
+          href: service-premium-capacity-manage.md
+        - name: Optimizing Premium capacities
+          href: service-premium-capacity-optimize.md
+        - name: Premium capacity scenarios
+          href: service-premium-capacity-scenarios.md
+        - name: Power BI Premium FAQ
+          href: service-premium-faq.yml
+    - name: Information protection
+      items:
+      - name: "Data protection in Power BI"
+        href: service-security-data-protection-overview.md
+      - name: "Sensitivity label overview"
+        href: service-security-sensitivity-label-overview.md
+      - name: DLP policies for Power BI (preview)
+        href: service-security-dlp-policies-for-power-bi.md
+      - name: Default label policy
+        href: service-security-sensitivity-label-default-label-policy.md
+      - name: Mandatory label policy
+        href: service-security-sensitivity-label-mandatory-label-policy.md
+      - name: Sensitivity label downstream inheritance (preview)
+        href: service-security-sensitivity-label-downstream-inheritance.md
+      - name: Sensitivity label inheritance from data sources (preview)
+        href: service-security-sensitivity-label-inheritance-from-data-sources.md
+      - name: Sensitivity label change enforcement
+        href: service-security-sensitivity-label-change-enforcement.md
+      - name: Custom help link for sensitivity labels
+        href: service-security-sensitivity-label-custom-help-link.md
+      - name: Audit schema for sensitivity labels
+        href: service-security-sensitivity-label-audit-schema.md
+      - name: Sensitivity label support for paginated reports (preview)
+        href: service-security-sensitivity-label-paginated-reports.md
+    - name: Metadata scanning
+      items:
+      - name: "Run metadata scanning"
+        href: service-admin-metadata-scanning.md
+      - name: "Set up metadata scanning in your org (admin)"
+        href: service-admin-metadata-scanning-setup.md
   - name: How to
-    items: 
+    items:
     - name: "Licensing and sign-up"
       items:
       - name: "Get Power BI for your organization"
@@ -64,10 +112,18 @@
         href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with a Microsoft 365 partner"
         href: service-admin-syndication-partner.md
+    - name: "Power BI and datacenter regions"
+      items:
+      - name: "Find where data is stored"
+        href: service-admin-where-is-my-tenant-located.md
+      - name: "Move between regions"
+        href: service-admin-region-move.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Add custom branding"
+      href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
-      href: service-security-private-links.md      
+      href: service-security-private-links.md
     - name: "Manage Power BI visuals admin settings"
       href: organizational-visuals.md
     - name: "Find users that have signed in"
@@ -86,16 +142,14 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Data protection in Power BI"
-        href: service-security-data-protection-overview.md
-      - name: "Sensitivity label overview"
-        href: service-security-sensitivity-label-overview.md
       - name: "Enable sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
       - name: "How to apply sensitivity labels"
         href: service-security-apply-data-sensitivity-labels.md
-      - name: "Use Microsoft Cloud App Security with Power BI"
-        href: service-security-using-microsoft-cloud-app-security-controls.md
+      - name: "Set or remove sensitivity labels programmatically"
+        href: service-security-sensitivity-label-inheritance-set-remove-api.md
+      - name: "Use Microsoft Defender for Cloud Apps with Power BI"
+        href: service-security-using-defender-for-cloud-apps-controls.md
       - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
@@ -104,7 +158,7 @@
       href: service-admin-setup-certification.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
-    - name: Power BI Premium
+    - name: Power BI Premium (original version)
       items:
       - name: Purchase Power BI Premium
         href: service-admin-premium-purchase.md
@@ -113,11 +167,11 @@
       - name: Configure workloads
         href: service-admin-premium-workloads.md
       - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md        
+        href: service-admin-premium-testing.md
       - name: Monitor capacities with the app
         href: service-admin-premium-monitor-capacity.md
       - name: Monitor Premium workload metrics
-        href: service-premium-metrics-app.md      
+        href: service-premium-metrics-app.md
       - name: Monitor capacities in the Admin portal
         href: service-admin-premium-monitor-portal.md
       - name: Configure large datasets
@@ -127,17 +181,25 @@
       - name: Bring your own encryption keys
         href: service-encryption-byok.md
       - name: Use customer managed keys
-        href: service-encryption-customer-managed-keys.md        
+        href: service-encryption-customer-managed-keys.md
       - name: Restart a Premium capacity
         href: service-admin-premium-restart.md
-      - name: Dataset connectivity with the XMLA endpoint
-        href: service-premium-connect-tools.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: troubleshoot-xmla-endpoint.md
+      - name: XMLA endpoint
+        items:
+        - name: Dataset connectivity with the XMLA endpoint
+          href: service-premium-connect-tools.md
+        - name: Troubleshoot XMLA endpoint connectivity
+          href: troubleshoot-xmla-endpoint.md
+    - name: Automatic aggregations
+      items:
+      - name: Automatic aggregations overview
+        href: aggregations-auto.md
+      - name: Configure automatic aggregations
+        href: aggregations-auto-configure.md
   - name: Reference
-    items: 
+    items:
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
@@ -146,15 +208,17 @@
     - name: Service URL reference
       href: power-bi-allow-list-urls.md
   - name: Resources
-    items: 
+    items:
     - name: "Power BI governance and deployment approaches"
       href: service-admin-governance.md
     - name: "Power BI security"
-      href: service-admin-power-bi-security.md      
+      href: service-admin-power-bi-security.md
     - name: "Privacy levels"
       href: desktop-privacy-levels.md
+    - name: "Power BI site reliability engineering model"
+      href: service-admin-site-reliability-engineering-model.md
   - name: Troubleshoot
-    items: 
+    items:
     - name: "Can't sign in?"
       href: power-bi-cannot-sign-in.md
     - name: "Power BI support options"

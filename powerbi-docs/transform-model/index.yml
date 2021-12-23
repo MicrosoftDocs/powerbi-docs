@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Transform, shape, and model data in Power BI - documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information about transforming, shaping, and modeling data in Power BI.
 
 metadata:
   title: Transform, shape, and model data in Power BI - documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information about transforming, shaping, and modeling data in  Power BI.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-transform-model
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
@@ -87,3 +87,5 @@ landingContent:
             url: ./dataflows/dataflows-introduction-self-service.md
           - text: "Create and use dataflows"
             url: ./dataflows/dataflows-create.md
+          - text: "Streaming dataflows (preview)"
+            url: ./dataflows/dataflows-streaming.md

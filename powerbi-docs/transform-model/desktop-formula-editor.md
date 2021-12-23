@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/29/2021
 LocalizationGroup: Transform and shape data
 ---
 # Formula editor in Power BI Desktop
 
-Beginning with the October 2018 **Power BI Desktop** release, the formula editor (often referred to as the DAX editor) includes robust editing and shortcut enhancements to make authoring and editing formulas easier and more intuitive. 
+The formula editor (often referred to as the DAX editor) includes robust editing and shortcut enhancements to make authoring and editing formulas easy and intuitive. 
 
 ## Using the formula editor
 
@@ -27,7 +27,7 @@ You can use the following keyboard shortcuts to increase your productivity and t
 |Ctrl+M  |Toggle Tab moves focus |
 |Ctrl+U  |Undo last cursor operation  |
 |Ctrl+X   | Cut line (empty selection) |
-|Ctrl+Enter  |Insert line below  |
+|Shift+Enter  |Insert line below  |
 |Ctrl+Shift+Enter  |Insert line above  |
 |Ctrl+Shift+\  |Jump to matching bracket  |
 |Ctrl+Shift+K  |Delete line  |

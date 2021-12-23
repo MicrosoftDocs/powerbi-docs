@@ -1,20 +1,20 @@
 ---
 title: Troubleshoot XMLA endpoint connectivity in Power BI
-description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
+description: Describes how to troubleshoot connectivity through the XMLA endpoint.
 author: Minewiskan
-ms.author: owend
-ms.reviewer: owend
+ms.author: davidi
+ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/02/2021
-ms.custom: seodec18, css_fy20Q4
+ms.date: 11/12/2021
+ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
 
 # Troubleshoot XMLA endpoint connectivity
 
-XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
+XMLA endpoints in Power BI rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
 
 ## Before you begin
 
@@ -22,7 +22,7 @@ Before troubleshooting an XMLA endpoint scenario, be sure to review the basics c
 
 ## Enabling the XMLA endpoint
 
-The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
+The XMLA endpoint can be enabled on both Power BI Premium, Premium Per User, and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
 
 Here are a couple things to try:
 
@@ -62,7 +62,7 @@ With support for Azure Active Directory (Azure AD) business-to-business (B2B) in
 
 ## Deploying a dataset
 
-You can deploy a tabular model project in Visual Studio (SSDT) to a Power BI Premium workspace much the same as to Azure Analysis Services. However, when deploying to a Power BI Premium workspace, there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the Dataset connectivity with the XMLA endpoint article.
+You can deploy a tabular model project in Visual Studio (SSDT) to a workspace assigned to a Premium capacity, much the same as to a server resource in Azure Analysis Services. However, when deploying there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the Dataset connectivity with the XMLA endpoint article.
 
 ### Deploying a new model
 
@@ -72,13 +72,13 @@ If Power BI cannot bind your new dataset to data source credentials, you will re
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/deploy-refresh-error.png" alt-text="Model deployment error":::
 
-To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the dataset in the Power BI user interface. For information about troubleshooting processing issues, see the section [Refreshing a dataset](#refreshing-a-dataset) later in this article.
+To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the dataset in the Power BI user interface.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Do not process option":::
 
 ### New project from an existing dataset
 
-Creating a new tabular project in Visual Studio by importing the metadata from an existing dataset on a Power BI Premium workspace is not supported. However, you can connect to the dataset by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
+Creating a new tabular project in Visual Studio by importing the metadata from an existing dataset is not supported. However, you can connect to the dataset by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
 
 ## Migrating a dataset to Power BI
 
@@ -106,18 +106,13 @@ The following table provides an example of a .NET Framework Data Provider for SQ
 
 Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services support cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing dataset, the following table describes supported configurations:  
 
-|Data source   |Partition source   |Comments   |Supported in Power BI Premium with XMLA endpoint   |
+|Data source   |Partition source   |Comments   |Supported  with XMLA endpoint   |
 |---------|---------|---------|---------|
 |Provider data source      |   Query partition source      |   The AS engine uses the cartridge-based connectivity stack to access the data source.       |     Yes     |
 |Provider data source      |   M partition source       |   The AS engine translates the provider data source into a generic structured data source and then uses the Mashup engine to import the data.       |    No     |
 |Structured data source      |     Query partition source     |    The AS engine wraps the native query on the partition source into an M expression and then uses the Mashup engine to import the data.      |    No     |
 |Structured data source      |    M partition source      |     The AS engine uses the Mashup engine to import the data.     |   Yes      |
 
-## Refreshing a dataset
-
-XMLA endpoints enable you to perform refresh operations against tabular models as well as datasets created in Power BI Desktop. To support the latter, make sure you specify the Enhanced storage format setting. This setting is required if you want to perform processing or other read/write operations by using the XMLA endpoint. You can find the setting in Power BI Desktop under Preview features. After setting, publish your PBIX solution again to your Power BI Premium workspace.  
-
-Power BI returns the following error if you perform a refresh via the XMLA endpoint against a model without enhanced metadata: "The operation is only supported on model with property 'DefaultPowerBIDataSourceVersion' set to 'PowerBI_V3' in Power BI Premium."
 
 ### Data sources and impersonation
 
@@ -133,22 +128,46 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 ### Overrides in Refresh TMSL command
 
-Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported** in Power BI Premium. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
+Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
-## Errors in SSMS - Premium Gen 2
+## Errors on Premium Gen 2 capacity
 
-### Query execution
+### Connect to Server error in SSMS
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connecting to a Power BI workspace with SQL Server Management Studio (SSMS), the following error may be displayed:
+
+```
+TITLE: Connect to Server
+------------------------------
+Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].
+------------------------------
+ADDITIONAL INFORMATION: 
+The remote server returned an error: (400) Bad Request.
+Technical Details:
+RootActivityId: 
+Date (UTC): 10/6/2021 1:03:25 AM (Microsoft.AnalysisServices.AdomdClient)
+------------------------------
+The remote server returned an error: (400) Bad Request. (System)
+```
+
+When connecting to a Power BI workspace with SSMS, ensure the following:
+
+- The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+- The [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
+- You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Query execution in SSMS
+
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
-Error -1052311437:
+Error -1052311437: We had to move the session with ID '<Session ID>' to another Power BI Premium node. Moving the session temporarily interrupted this trace - tracing will resume automatically as soon as the session has been fully moved to the new node.
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-### Refresh operations
+### Refresh operations in SSMS
 
 When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
@@ -164,6 +183,16 @@ Run complete
 ```
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+### Other client applications and tools
+
+ Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium Gen2 capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium Gen2 capacity through the XMLA endpoint are:
+
+|Client Library | Version  |
+|---------|---------|
+|MSOLAP    |     15.1.65.22         |
+|AMO  |   19.12.7.0         |
+|ADOMD     |    19.12.7.0           |
 
 ## Editing role memberships in SSMS
 
@@ -211,15 +240,41 @@ As stated in the error message, to resolve this issue, either delete or rename t
 
 ## Workspace/server alias
 
-Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Power BI Premium workspaces. 
-
-## Dataset refresh through the XMLA endpoint
-
-Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
+Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
 
 ## DISCOVER_M_EXPRESSIONS 
 
 The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not supported in Power BI using the XMLA Endpoint. Applications can use the Tabular object model (TOM) to obtain M expressions used by the data model.
+
+## Resource governing command memory limit in Premium Gen 2
+
+Premium Gen2 capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per artifact of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+The effective memory limit for a command is based on the lesser of the capacity's memory limit (determined by SKU) or the value of the [DbpropMsmdRequestMemoryLimit](/analysis-services/xmla/xml-elements-properties/dbpropmsmdrequestmemorylimit-element-xmla?view=asallproducts-allversions&preserve-view=true) XMLA property.
+
+For example, for a P1 capacity, if:
+
+- DbpropMsmdRequestMemoryLimit = 0 (or unspecified), the effective memory limit for the command is 25 GB.
+
+- DbpropMsmdRequestMemoryLimit = 5 GB, the effective memory limit for the command is 5 GB.
+
+- DbpropMsmdRequestMemoryLimit = 50 GB, the effective memory limit for the command is 25 GB.
+
+Typically, the effective memory limit for a command is calculated on the memory allowed for the dataset by the capacity (25 GB, 50 GB, 100 GB) and how much memory the dataset is already consuming when the command starts executing. For example, a dataset using 12 GB on a P1 capacity allows an effective memory limit for a new command of 13 GB. However, the effective memory limit can be further constrained by the DbPropMsmdRequestMemoryLimit XMLA property when optionally specified by an application. Using the previous example, if 10 GB is specified in the DbPropMsmdRequestMemoryLimit property, then the command’s effective limit is further reduced to 10 GB.
+
+If the command operation attempts to consume more memory than allowed by the limit, the operation can fail, and an error is returned. For example, the following error describes an effective memory limit of 25 GB (P1 capacity) has been exceeded because the dataset already consumed 12 GB (12288 MB) when the command started execution, and an effective limit of 13 GB (13312 MB) was applied for the command operation:
+
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+
+In some cases, as shown in the following error, "consumed memory" is 0 but the amount shown for "database size before command execution" is already greater than the effective memory limit. This means the operation failed to begin execution because the amount of memory already used by the dataset is greater than the memory limit for the SKU.
+
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+
+To potentially reduce exceeding the effective memory limit:
+
+- Upgrade to a larger Premium capacity (SKU) size for the dataset.
+- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
+- For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
 ## See also
 

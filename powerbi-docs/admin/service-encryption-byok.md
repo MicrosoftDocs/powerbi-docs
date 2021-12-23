@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -19,11 +19,6 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 
 BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service within 30 minutes.
 
-> [!IMPORTANT]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do **not** support BYOK while in preview.
->
->**Embedded Gen2** capacities also do **not** support BYOK while in preview. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
-
 ## Data source and storage considerations
 
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. You cannot use BYOK in the following scenarios:
@@ -32,6 +27,7 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - [Push datasets](/rest/api/power-bi/pushdatasets)
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+- [Power BI goals](../create-reports/service-goals-introduction.md) do not currently support bring your own key (BYOK).
 
 
 BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
@@ -58,18 +54,20 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 ### Add the service principal
 
-1. In the Azure portal, in your key vault, under **Access policies**, select **Add New**.
+1. In the Azure portal, in your key vault, under **Access policies**, select **Add Access Policy**.
+
+1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+
+    ![P B I X file select cryptographic operations.](media/service-encryption-byok/key-permissions.png)
 
 1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
-1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+    ![P B I X file select service principal.](media/service-encryption-byok/service-principal.png)
 
-    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
-
-1. Select **OK**, then **Save**.
+1. Select **Add**, then **Save**.
 
 > [!NOTE]
 > To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.
@@ -204,7 +202,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -212,4 +210,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

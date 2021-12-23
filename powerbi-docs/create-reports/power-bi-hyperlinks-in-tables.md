@@ -4,11 +4,11 @@ description: This topic teaches how to add hyperlinks (URLs) to a table. You use
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 07/02/2021
 LocalizationGroup: Visualizations
 ---
 # Add hyperlinks (URLs) to a table or matrix
@@ -28,9 +28,9 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view or Report view, select the column. 
+2. In Data view, select the column. 
 
-3. On the **Modeling** tab, select **Data Category** > **Web URL**.
+3. On the **Column tools** tab, select **Data category** > **Web URL**.
    
     ![Data category dropdown list](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url.png)
 
@@ -73,9 +73,9 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view or Report view, select the column that contains the URL. 
+2. In Data view, select the column that contains the URL. 
 
-3. On the **Modeling** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
+3. On the **Column tools** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
 
 2. In Report view, create a table or matrix with the URL column and the column you're going to format as link text.
 
@@ -86,7 +86,7 @@ You can also format another field in a table as the hyperlink, and not have a co
     ![Conditional formatting Web URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
 
     > [!NOTE]
-    > If you don't see a **Web URL** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
+    > If you don't see a **Web URL** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box. Also, make sure that you're using Desktop version February 2020 or later.
 
 5. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
 
@@ -121,8 +121,6 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 
 6. From the Power BI service or Power BI Desktop, connect to or import this workbook.
 7. Create a table visualization that includes the URL field.
-   
-   ![Create a table in Power BI with the URL field](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## Considerations and troubleshooting
 

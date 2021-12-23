@@ -1,13 +1,13 @@
 ---
-title: Capacity and SKUs in Power BI embedded analytics enabling better embedded BI insights
-description: Understand capacity and SKUs in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Capacity and SKUs in Power BI embedded analytics
+description: Understand capacity and SKUs in Power BI embedded analytics.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/15/2021
+ms.date: 12/07/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -17,7 +17,7 @@ When moving to production, Power BI embedded analytics requires a capacity (*A*,
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro account.
+>For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
 
 ## What is embedded analytics?
 
@@ -34,7 +34,7 @@ Power BI Embedded is for ISVs and developers who want to embed visuals into thei
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
 
 >[!NOTE]
->Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+>Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Power BI Premium
 
@@ -46,9 +46,10 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
-To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article
+To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article.
 
 To plan and test your capacity, use these links:
+
 * [Capacity planning](embedded-capacity-planning.md)
 * [Testing approaches](../../admin/service-premium-capacity-optimize.md#testing-approaches)
 
@@ -59,6 +60,7 @@ Power BI Embedded is shipped with an [*a* SKU](../../admin/service-admin-premium
 ### Power BI Premium SKUs
 
 Power BI premium offers two SKUs, *P* and *EM*.
+
 * [Understand the differences between the *P* and *EM* SKUs](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
 * [Buy a Premium SKU](../../admin/service-admin-premium-purchase.md)
 
@@ -77,53 +79,21 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
->* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
+>
+>* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
 ### Capacity considerations
 
 The table below lists payment and usage considerations per capacity.
 
-</br>
-<table>
-<tbody>
-<tr>
-<td></td>
-<td style="text-align: center;"><p><strong>Power BI Embedded</strong></p></td>
-<td style="text-align: center;" colspan="2"><p><strong>Power BI Premium</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>Offer</strong></p></td>
-<td style="text-align: center"><p>Azure</p></td>
-<td style="text-align: center" colspan="2"><p>Office</p></td>
-</tr>
-<tr>
-<td><p><strong>SKU</strong></p></td>
-<td style="text-align: center"><p>A</p></td>
-<td style="text-align: center"><p>EM</p></td>
-<td style="text-align: center"><p>P</p></td>
-</tr>
-<tr>
-<td><p><strong>Billing</strong></td>
-<td style="text-align: center">Hourly</td>
-<td style="text-align: center">Monthly</td>
-<td style="text-align: center">Monthly</td>
-</tr>
-<tr>
-<td><p><strong>Commitment</strong></td>
-<td style="text-align: center">None</td>
-<td style="text-align: center">Yearly</td>
-<td style="text-align: center">Monthly or yearly</td>
-</tr>
-<tr>
-<td valign="top"><p><strong>Usage</strong></td>
-<td style="text-align: center">Azure resources can be:<li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>
-</td></li>
-<td style="text-align: center">Embed in apps, and in</br> Microsoft applications</td>
-<td style="text-align: center">Embed in apps, and</br> in Power BI service</td>
-</tr>
-</tbody>
-</table>
+|            | **Power BI Embedded**                                                | **Power BI Premium**                             |                                        |
+|------------|------------------------------------------------------------------|----------------------------------------------|----------------------------------------|
+| **Offer**      | Azure                                                            | Office                                       |                                        |
+| **SKU**        | A                                                                | EM                                           | P                                      |
+| **Billing**    | Hourly                                                           | Monthly                                      | Monthly                                |
+| **Commitment** | None                                                             | Yearly                                       | Monthly or yearly                      |
+| Usage      | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a> | Embed in apps, and in Microsoft applications | Embed in apps, and in Power BI service |
 
 ### SKU memory and computing power
 
@@ -137,11 +107,11 @@ The table below describes the resources and limits of each SKU.
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-#### Embedded Gen 2 memory enhancements (preview)
+#### Embedded Gen 2 memory enhancements
 
 The amount of memory available on each node size is described in the *RAM (GB)* column in the [SKU memory and computing power](#sku-memory-and-computing-power) table. With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), this amount of memory is set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
 

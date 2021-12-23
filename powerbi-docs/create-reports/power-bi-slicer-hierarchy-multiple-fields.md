@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/19/2021
+ms.date: 10/19/2021
+ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---
 # Add multiple fields to a hierarchy slicer
@@ -23,7 +24,7 @@ When you add multiple fields to the slicer, by default it displays an arrow, or 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Screenshot of Hierarchy slicer dropdown in Power B I.":::
  
  
-When you select one or more children for an item, you see a semi-selected circle for the top-level item.
+When you select one or more children for an item, you see a semi-selected square for the top-level item.
  
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Screenshot of Single-selection hierarchy slicer in Power B I.":::
 
@@ -70,10 +71,13 @@ If space is tight on your report, you may want to reduce the amount you indent t
 1. Expand **Items**, then drag **Stepped layout indentation** smaller or larger. You can also just type a number in the box.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation.":::
-    
-## Limitations and considerations
 
-- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.
+    
+## Considerations and limitations
+
+- When using live connection to SQL Server Analysis Services (SSAS) tabular models and the property **hide members** in the hierarchy is set to **Hide blank members**, Power BI doesn't hide blank members.  This creates a ragged hierarchy.    
+- A ragged hierarchy is also created when there are blank values for a category at any hierarchy level. For example, if Employee A has three levels of management (manager > vice-president > CEO) but does not have a "director", the data table row for Employee A will have three values (names) and one blank. While you can use the Filters pane to deselect blank values for "director", doing so also prevents the other three values from being included in the slicer for Employee A. As a result, Employee A will be removed from the hierarchy slicer.    
+- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.    
 - For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
 ## Next steps

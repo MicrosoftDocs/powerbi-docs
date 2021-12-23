@@ -1,8 +1,8 @@
 ---
-title: Power BI embedded analytics capacity planning enabling better embedded BI insights
-description: Learn how to plan your capacity in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Power BI embedded analytics capacity planning
+description: Learn how to plan your capacity in Power BI embedded analytics.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -3,12 +3,12 @@ title: What is a Power BI app?
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: mihart
 ms.author: mihart
-ms.reviewer: lukaszp
+ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
-ms.custom: licensing support, css_fy20Q4
+ms.date: 06/21/2021
+ms.custom: licensing support, css_fy20Q4, intro-overview
 LocalizationGroup: Share your work
 ---
 
@@ -18,13 +18,17 @@ LocalizationGroup: Share your work
 
 
 ## What is a Power BI app?
-An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with their colleagues. There are many different ways a *designer* can share an app. To learn more, see the **Get a new app** section, below. 
+Power BI *designers* can create official packaged content, then distribute it to a broad audience as an *app*. Apps are created in workspaces, where members can collaborate on Power BI content with their colleagues before publishing the finished app to individuals, large groups of people in an organization, or an entire organization. By using an app, it's easier for designers to manager permissions on these collections since the app can have permissions that are different than those set on the workspace.
+
+An *app* combines related content -- dashboards, spreadsheets, datasets, and reports -- all in one place. An app can have one or more of each content type, all bundled together. There are many different ways a *designer* can share an app. To learn more, see the **Get a new app** section, below. 
+
+There is a special type of app called a *[template app](../connect-data/service-template-apps-install-distribute.md)*. To install, customize, and distribute a template app requires a Power BI Pro or Premium Per User license. Power BI template apps are used by Power BI partners to build and package analytical content into an app. They then deploy that app to other Power BI tenants through any available platform, including AppSource or their own web service.  
 
 
 ## App *designers* and app *users*
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*business user*) created by others. This article is for *business users*.
 
-Seeing and opening an app require certain permissions. The recipient must either have a Power BI Pro license or the app must be shared with the recipient in a special type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](end-user-license.md).
+Seeing and opening an app require certain permissions. The recipient must either have a Power BI Pro or Premium Per User (PPU) license or the app must be shared with the recipient in a special type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](end-user-license.md).
 
 ## Advantages of apps
 Apps are an easy way for *designers* to share different types of content at one time. App *designers* create the dashboards and reports and bundle them together into an app. The *designers* then share or publish the app to a location where you, the *business user*, can access it. Because related dashboards and reports are bundled together, it's easier for you to find and install in both the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards or reports because they're all together in one app, in your browser or on your mobile device.
@@ -56,7 +60,7 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
 
+
 ## Next steps
 * [Open and interact with an app](end-user-app-view.md)
 * [Other ways to share content](end-user-shared-with-me.md)
-

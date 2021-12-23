@@ -4,11 +4,11 @@ description: Learn best practices for building reports in the Power BI service a
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: willthom
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 11/16/2020
 ---
 # Tips and tricks for creating reports in Power BI Desktop
 To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips & tricks you can use when creating reports in the Microsoft Power BI Desktop *and* in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled. 
@@ -218,6 +218,7 @@ A few of our favorite books include:
 * *Advanced Presentations Design* by Andrew Abela   
 
 ## Next steps
+* [Design effective reports in Power BI](/learn/paths/power-bi-effective/)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * [Reports in Power BI](../consumer/end-user-reports.md)
 

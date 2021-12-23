@@ -22,6 +22,8 @@ The Power BI mobile app for Android provides two easy ways to get straight to th
 
  >[!NOTE]
  >Android app shortcuts are available from Android 8 and higher.
+>
+> Android app shortcuts can be created for only for reports and dashboards hosted in the Power BI service. Shortcuts for Report Server content are not supported. 
 
 ## Create a shortcut to any report or dashboard
 

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/16/2020
+ms.date: 03/14/2021
+ms.custom: intro-installation
 ---
 
 # Install Power BI Report Server
@@ -49,6 +50,9 @@ Selecting **Power BI Report Server key** displays a dialog containing your produ
 #### SQL Server Enterprise Software Assurance (SA)
 
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
+
+ > [!IMPORTANT]
+ > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Premium product key or SQL Server Enterprise Software Assurance (SA) product key.
 
 ## Install your report server
 

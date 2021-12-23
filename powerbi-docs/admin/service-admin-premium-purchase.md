@@ -1,13 +1,13 @@
 ---
 title: How to purchase Power BI Premium
 description: Learn how you can purchase Power BI Premium and enable access to content for your entire organization.
-author: davidiseminger
-ms.author: davidi
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 10/18/2021
 LocalizationGroup: Premium
 ---
 
@@ -20,10 +20,11 @@ This article describes how to purchase Power BI Premium capacity for your organi
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization. With A SKUs, _all users_ who consume content also require Pro licenses.
 
 > [!NOTE]
-> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
+> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on datasets that are greater than 1 GB or reports that require Premium capacities to render.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+
 
 ## Purchase P SKUs for typical production scenarios
 
@@ -41,19 +42,19 @@ If you have an existing organization (tenant), you must be in the Microsoft 365 
 
 To purchase Premium capacity, follow these steps.
 
-1. From within the Power BI service, select the Microsoft 365 app picker then **Admin**.
+1. From within the Power BI service, select the Microsoft 365 app picker, and then select **Admin**.
 
-    ![Microsoft 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
+    :::image type="content" source="media/service-admin-premium-purchase/powerbi-select-admin.png" alt-text="Screenshot that shows the Microsoft 365 app picker.":::
 
     Alternatively, you can browse to the Microsoft 365 admin center.
 
 1. Select **Billing** > **Purchase services**.
 
-1. Under **Other plans**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
+1. Under **Power BI**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
 
-1. Hover over the ellipsis (**. . .**) and then select **Buy now**.
+1. Select **Details** under the service you want, select a license quantity, and then select **Buy**.
 
-    ![Buy now](media/service-admin-premium-purchase/premium-purchase.png)
+    :::image type="content" source="media/service-admin-premium-purchase/powerbi-premium-purchase-options.png" alt-text="Screenshot that shows purchase options for Power B I Premium with the Details button selected.":::
 
 1. Follow the steps to complete the purchase.
 
@@ -67,20 +68,18 @@ After you purchase capacity, learn how to [manage capacities](service-admin-prem
 
 Now that you have a capacity, you can add more as your needs grow. You can use any combination of Premium capacity SKUs (P1 through P3) within your organization. The different SKUs provide different resource capabilities.
 
-1. In the Microsoft 365 admin center, select **Billing** > **Purchase services**.
+1. In the Microsoft 365 admin center, select **Billing** > **Your products**.
 
-1. Find the Power BI Premium item you want to purchase more of under **Other plans**.
+1. Select the Power BI Premium service you want to add capacity to.
 
-1. Hover over **More options** (...) and then select **Change license quantity**.
-
-    ![Change license quantity](media/service-admin-premium-purchase/premium-purchase-more.png)
+1. Select **Buy licenses**.
 
 1. Change the number of instances that you want to have for this item. Then select **Submit** when finished.
 
    > [!IMPORTANT]
    > Selecting **Submit** charges the credit card on file.
 
-The **Purchase services** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
+The **Your products** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
 
 ![Available v-cores for Power BI Premium capacity](media/service-admin-premium-purchase/premium-capacities.png)
 
@@ -90,34 +89,38 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 1. Browse to the Microsoft 365 admin center.
 
-1. Select **Billing** > **Subscriptions**.
+1. Select **Billing** > **Your products**.
 
-1. Select your Power BI Premium subscription from the list.
+1. Select your Power BI Premium product from the list.
 
-1. Select **More actions** > **Cancel subscription**.
+1. Under **Subscription status**, select **Cancel subscription**.
 
-1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3). This page will also let you know when the data will be deleted for the subscription.
+1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3).  
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
 #### When canceling or your license expires
 
-When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
+When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, your workspaces will move to a shared capacity and will still be accessible. However, you will not be able to view reports that are based on datasets that require Premium capacities to render. This includes datasets larger than 1GB and refreshes of those datasets.
 
 ## Purchase A SKUs for testing and other scenarios
 
 You can also purchase A SKUs for testing and other scenarios, which provides Premium capacity on an hourly basis. For more information and steps, see [Purchase Power BI Premium for testing](service-admin-premium-testing.md).
 
+## Purchase Premium Per User (PPU) licenses
+
+You can purchase Power BI Premium for individual users, using the Premium Per User (PPU) license model. For more information about Premium Per User, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+
 ## Next steps
 
 [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium FAQ](service-premium-faq.md)\
+[Power BI Premium FAQ](service-premium-faq.yml)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 * Performance
 * Per-user licensing
 * Greater scale
@@ -125,4 +128,4 @@ Power BI has introduced Power BI Premium Gen2 as a preview offering, which impro
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 07/02/2021
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Consumers
 
  Everyone using the Power BI service also has a **My workspace**.  My workspace is your personal sandbox where you can create content for yourself.
 
- You can see your workspaces in Power BI **Home** or by selecting **Workspaces** from your navigation pane.
+ You can see your workspaces in Power BI by selecting **Workspaces** from your navigation pane.
 
  ![Screenshot shows navigation pane showing two types of workspaces.](media/end-user-workspaces/power-bi-home-workspace.png)
 
@@ -27,7 +27,7 @@ LocalizationGroup: Consumers
 
 **Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
 
-The Fig sales workspace below contains three reports and one dashboard. 
+The **Customer Profitability** workspace below contains a dashboard, a report, a workbook, and a dataset.
 
 ![Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
 
@@ -41,21 +41,18 @@ As a Power BI *business user*, you'll typically interact in workspaces using the
 
 For a detailed list of what you can do as a *business user* with the Viewer role, see [Power BI features for business users](end-user-features.md).
 
+For a detailed list of all four roles and their capabilities, see [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
 
-### Workspace permissions and roles
-
-Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except *view and interact with an item*, require a Power BI Pro license.
-
-[!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## Licensing, workspaces, and capacity
-Licensing also plays a part in determining what you can and can't do in a workspace. Many features require the user to have a Power BI *Pro* license or for the workspace to be stored in Premium capacity. 
+Licensing also plays a part in determining what you can and can't do in a workspace. Many features require the user to have a Power BI *Pro* or *Premium Per User (PPU)* license or for the workspace to be stored in Premium capacity. 
 
 Often, *business users* work with a free license. [Learn more about licensing](end-user-license.md). If the content isn't stored in Premium capacity, the business user won't have access.
 
 If the workspace is stored in Premium capacity, *business users* will be able to view and interact with the content in that workspace. A diamond icon identifies the workspaces that are stored in Premium capacity.
 
 ![Workspaces selected](media/end-user-workspaces/power-bi-diamonds.png)
+
 To learn more, see [Which license do I have?](end-user-license.md).
 
 

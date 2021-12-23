@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/16/2019
+ms.date: 04/12/2021
 LocalizationGroup: Create reports
 ---
 # Add a column from examples in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 With *add column from examples* in Power Query Editor, you can add new columns to your data model simply by providing one or more example values for the new columns. You can create the new column examples from a selection, or provide input based on all existing columns in the table.
 
 ![Screenshot of Power Query Editor, showing how to add a column from examples in Power B I Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
@@ -35,9 +38,9 @@ Paste the following URL into the dialog that appears, and select **OK**:
 
 In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-Or, to open already-loaded data from Power BI Desktop, select **Edit Queries** from the **Home** tab of the ribbon. The data opens in Power Query Editor. 
+Or, to open already-loaded data from Power BI Desktop, select **Transform data** from the **Home** tab of the ribbon. The data opens in Power Query Editor. 
 
-![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
+![Select Transform data from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
 Once the sample data opens in Power Query Editor, select the **Add Column** tab on the ribbon, and then select **Column from Examples**. Select the **Column From Examples** icon itself to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this walkthrough, use **From All Columns**.
 

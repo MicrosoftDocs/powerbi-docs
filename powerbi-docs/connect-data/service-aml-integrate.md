@@ -3,8 +3,8 @@ title: "Tutorial: Consume an Azure Machine Learning model in Power BI"
 titleSuffix: Azure Machine Learning
 description: Learn how to consume Azure Machine Learning models in Power BI.
 services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
+ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: tutorial
 ms.author: samkemp
 author: samuel100
@@ -68,6 +68,9 @@ After signing in to your Azure account using single sign-on, you see a list of a
 Power Query populates the columns automatically for you. You remember that in our schema for the service, we had a Python decorator that specified the inputs. Select **OK**.
 
 :::image type="content" source="media/service-aml-integrate/aml-pbi-run.png" alt-text="Screenshot showing Azure Machine Learning Models.":::
+
+> [!NOTE]
+> For time series models, Power BI may not automatically detect the date format for the time column. To proceed, convert the time column to Date/Time type in Power BI before invoking Azure Machine Learning.
 
 Selecting **OK** calls the Azure Machine Learning service. It triggers a warning on data privacy for both the data and the endpoint.
 

@@ -1,8 +1,8 @@
 ---
-title: Use row-level security with Power BI embedded analytics content for better embedded BI insights
-description: Learn about the steps you need to take to embed Power BI content within your Power BI embedded analytics application for better embedded BI insights.
-author: KesemSharabi
-ms.author: kesharab
+title: Use row-level security with Power BI embedded analytics content
+description: Learn about the steps you need to take to embed Power BI content within your Power BI embedded analytics application.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer

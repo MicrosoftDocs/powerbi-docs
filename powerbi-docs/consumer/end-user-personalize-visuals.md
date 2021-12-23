@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/13/2020
+ms.date: 10/19/2021
 LocalizationGroup: Reports
 ---
 # Personalize visuals in a report
@@ -93,7 +93,7 @@ Using personal bookmarks, capture your changes so you can return to your persona
 You can also make the bookmark your default view.
 
 ### Share changes 
-If you have read and reshare permissions, when you share the report you can choose to include your changes.
+If you have read and reshare permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Share changes":::
  
@@ -115,7 +115,7 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Revert recent changes":::
 
-## Limitations
+## Considerations and limitations
 
 Currently the feature has a few limitations to be aware of.
 

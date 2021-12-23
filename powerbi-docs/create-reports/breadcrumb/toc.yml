@@ -1,0 +1,29 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    href: /azure/
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /azure/
+      topicHref: /power-bi/
+      items:
+      - name: Create reports and dashboards
+        tocHref: /azure/azure-maps/
+        topicHref: /power-bi/create-reports/index
+  - name: Power Platform
+    href: /sql/
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /sql/reporting-services/report-builder/index
+      items:
+      - name: Create reports and dashboards
+        tocHref: /power-bi/create-reports/
+        topicHref: /sql/reporting-services/report-builder/index

@@ -4,12 +4,11 @@ description: The Power BI service apps, workspaces, dashboards, reports, dataset
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: B2vd4MQrz4M
 ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 11/02/2021
 LocalizationGroup: Get started
 ---
 
@@ -21,10 +20,10 @@ LocalizationGroup: Get started
 This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from colleagues. *Business users* work with the Power BI service (app.powerbi.com), which is the website-based version of Power BI.
 
 Receiving content from others requires one of the following:
-- A Power BI Pro user license
+- A Power BI Pro or Premium Per User (PPU) user license
 - Your organization to have a subscription for Power BI Premium, and for the content to be shared with you from a Power BI Premium capacity. [Look up your license and subscription types](end-user-license.md).
 
-You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a business user**, you'll only work with the Power BI service. This article applies only to the Power BI service.
+You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a *business user*, you'll only work with the Power BI service. This article applies only to the Power BI service.
 
 ## Terminology and concepts
 
@@ -74,9 +73,9 @@ At its most basic:
 
     For more info, see [Reports in Power BI](end-user-reports.md).
 
-- ![A screenshot of the app icon.](media/end-user-basic-concepts/app.png) An *app* is a way for *designers* to bundle and share related dashboards and reports together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example,out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
+- ![A screenshot of the app icon.](media/end-user-basic-concepts/app.png) An *app* is a way for *designers* to bundle and share related dashboards and reports together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example, out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
 
-To be clear, if you're a new user and you've logged in to the Power BI service for the first time, probably won't see any shared dashboards, apps, or reports yet.
+To be clear, if you're a new user and you've logged in to the Power BI service for the first time, you probably won't see any shared dashboards, apps, or reports yet.
 
 _______________________________________________________
 
@@ -112,7 +111,7 @@ Just some of the visualizations you'll come across in Power BI are: waterfall, r
 
    ![A screenshot of eight sample visuals.](media/end-user-basic-concepts/power-bi-visuals.png)
 
-See the [full list of visualizations included with Power BI](end-user-visual-type.md).
+See the [full list of visualizations included with Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 Special visualizations called *custom visuals* are available from the community. If you receive a report with a visual you don't recognize, likely it's a custom visual. If you need help with interpreting the custom visual, look up the name of the report or dashboard *designer* and contact them. Contact information is available by selecting the title from the top menu bar.
 
@@ -185,7 +184,7 @@ Sometimes, the app's workspace itself is shared, and there can be many people co
 ![Screenshot of Apps permissions screen.](media/end-user-basic-concepts/power-bi-app-permissions.png)
 
 > [!NOTE]
-> The use of apps requires a Power BI Pro license, or for the app workspace to be stored in Premium capacity. [Learn about licenses](end-user-license.md).
+> The use of apps requires a Power BI Pro or Premium Per User (PPU) license, or for the app workspace to be stored in Premium capacity. [Learn about licenses](end-user-license.md).
 
 
 
@@ -222,5 +221,8 @@ I hope this article gave you an understanding of the building blocks that make u
 - Read the [overview of Power BI written especially for business users](end-user-consumer.md)
 
 - Watch a video in which Will reviews the basic concepts and gives a tour of the Power BI service.
+
+    > [!NOTE]  
+    > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>

@@ -7,20 +7,20 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/28/2021
+ms.date: 07/19/2021
 ---
 
 # Sample Power BI paginated reports
 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 This article provides information and links to several sample Power BI paginated reports to download and explore. They demonstrate typical ways you can use paginated reports.
 
 ## Prerequisites
 
-- You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license. Sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
-- You also need access to a Power BI workspace in a [Premium capacity](../admin/service-premium-what-is.md).
+- You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license. Sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-trial-of-power-bi-pro).
+- You also need write access to a Power BI workspace in a [Premium capacity](../admin/service-premium-what-is.md), or a [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license.
 - To edit these reports, you need to [install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
 - OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
 
@@ -31,7 +31,7 @@ To download the reports successfully, you need to download the repo as a zip fil
 1. Open the [Reporting Services GitHub repo](https://github.com/microsoft/Reporting-Services).
 1. Select the arrow on the green **Code** button > **Download ZIP**.
 
-    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the  sample Power BI paginated reports.":::
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the sample Power BI paginated reports.":::
     
 1. Open the file, select **Extract all**, and choose a location for the files. By default, the folder name is **Reporting-Services-master**.
 1. Open the **Reporting-Services-master** folder, then open the **PaginatedReportSamples** folder.
@@ -44,7 +44,7 @@ To download the reports successfully, you need to download the repo as a zip fil
 
 ## Invoice
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of Sample Power BI paginated report invoice.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of sample Power BI paginated report invoice.":::
 
 
 This paginated report is a self-contained invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
@@ -60,7 +60,7 @@ Data source: Included in the .rdl file
 
 ## Labels
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of Paginated report labels.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of sample Power BI paginated report labels.":::
 
 This is a self-contained paginated report sample. It's a multi-column report perfectly sized to fit the print layout of the mailing label template. 
 
@@ -74,7 +74,7 @@ Data source: Included in the .rdl
 
 ## Mailing letter
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of Sample Power BI paginated report letter.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of sample Power BI paginated report letter.":::
 
 This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
 
@@ -90,7 +90,7 @@ Data source: Included in the .rdl
 
 ## Transcript
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of Sample Power BI paginated report transcript.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of sample Power BI paginated report transcript.":::
 
 The scenario for this report is that you want a pixel-perfect printable transcript. It needs to contain dynamic content listing program description details and dates for each student.
 

@@ -1,19 +1,22 @@
 ---
 title: Monitoring Power BI Embedded data reference
 description: Important reference material needed when you monitor Power BI Embedded.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 02/16/2021
+ms.date: 08/02/2021
 ---
 
 # Monitoring Power BI Embedded data reference
 
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
+
+>[!TIP]
+>You can also use the [Premium Gen2 Monitoring App](../../admin/service-premium-gen2-metrics-app.md) to monitor your [Embedded Gen 2](power-bi-embedded-generation-2.md) capacity.
 
 ## Metrics
 
@@ -30,9 +33,10 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
 |CPU (Gen2) |cpu_metric |Percent |CPU utilization. Supported only for Power BI Embedded Generation 2 resources. |
+|CPU Per Workload (Gen2) |cpu_workload_metric |Percent |CPU utilization per workload. Supported only for Power BI Embedded Generation 2 resources. |
+|Overload (Gen2) |overload_metric |0/1 |Resource overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |
 |Memory (Gen1) |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6. Supported only for Power BI Embedded Generation 1 resources. |
 |Memory Thrashing (Datasets) (Gen1) |memory_thrashing_metric     |Percent      |Average memory thrashing. Supported only for Power BI Embedded Generation 1 resources. |
-|Overload (Gen2) |overload_metric |0/1 |Resource overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |
 |QPU High Utilization (Gen1) |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0. Supported only for Power BI Embedded Generation 1 resources. |
 |Query Duration (Datasets) (Gen1) |QueryDuration               |Milliseconds |DAX Query duration in last interval. Supported only for Power BI Embedded Generation 1 resources. |
 |Query Pool Job Queue Length (Datasets) (Gen1) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool. Supported only for Power BI Embedded Generation 1 resources. |
@@ -66,8 +70,8 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Po
 ### Power BI Embedded
 
 | Table |  Description |
-|:---------|:-------------|------------------|
-| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |                             |                                                   | 
+|:---------|:-------------|
+| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |
 | [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
 | [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Metric data emitted by Azure services that measure their health and performance. |
 
@@ -131,6 +135,14 @@ The following table lists the operations related to Power BI Embedded that may b
 ## Schemas
 
 Power BI Embedded uses the **Power BI Dedicated** schema.
+
+## Example script for scaling a capacity
+
+To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
+
+The script uses Power BI and ARM REST APIs, and can be called in Azure automation, and triggered by Azure alert.
+
+You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
 ## Next steps
 

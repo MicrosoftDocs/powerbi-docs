@@ -1,13 +1,13 @@
 ---
 title: Using report tooltip pages in Power BI 
 description: Tooltip pages in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports
-author: davidiseminger
-ms.author: davidi
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/26/2019
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop
@@ -18,6 +18,9 @@ You can create visually rich **report tooltips** that appear when you hover over
 You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint over which your mouse is hovering. 
 
 There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
+
+> [!TIP]
+> You may be interested in trying the new visual tooltips, currently in preview. They can include drill-down and drillthrough actions, and can reflect report theme styling. Read more about [visual tooltips](desktop-visual-tooltips.md).
 
 ## Create a report tooltip page
 To get started, create a new report page by clicking the **+** button, found along the bottom of the **Power BI Desktop** canvas, in the page tabs area. The button is located beside the last page in the report. 
@@ -52,7 +55,7 @@ To begin with, you need to turn the **Tooltip** slider to **On**, in the **Page 
 
 ![Turn on the tooltip slider to indicate the page is a tooltip](media/desktop-tooltips/desktop-tooltips_07.png)
 
-Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *SalesAmount* field has been dragged into the **Tooltips fields** bucket.
+Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *Sales $* field has been dragged into the **Tooltips fields** bucket.
 
 ![Add fields to determine where the tooltip will appear](media/desktop-tooltips/desktop-tooltips_08.png)
  
@@ -102,13 +105,14 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 
 
 
-## Limitations and considerations
-There are a few limitations and considerations for **tooltips** to keep in mind.
+## Considerations and limitations
+There are a few considerations and limitations for **tooltips** to keep in mind.
 
-* Beginning with the December 2018 release of **Power BI Desktop**, Button visuals also support tooltips.
+* Button visuals also support tooltips.
 * Report tooltips are not supported for Power BI visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
+* You can turn tooltips off completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: Power BI visuals interactivity utils in Power BI embedded analytics for better embedded BI insights
-description: The article describes how to add selections into Power BI visuals by using interactivity utils. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Power BI visuals interactivity utils
+description: The article describes how to add selections into Power BI visuals by using interactivity utils.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: how-to
 ms.date: 02/24/2020
 ---
 

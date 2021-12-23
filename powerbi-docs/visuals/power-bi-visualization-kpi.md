@@ -8,18 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/30/2020
+ms.date: 09/29/2021
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
 
 # Create key performance indicator (KPI) visualizations
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
-
-A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](https://support.office.com/en-us/article/Key-Performance-Indicators-KPIs-in-Power-Pivot-E653EDEF-8A21-40E4-9ECE-83A6C8C306AA).
+A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](https://support.office.com/article/Key-Performance-Indicators-KPIs-in-Power-Pivot-E653EDEF-8A21-40E4-9ECE-83A6C8C306AA).
 
 
 ## When to use a KPI
@@ -40,16 +38,16 @@ A KPI dataset needs to contain goal values for a KPI. If your dataset doesn't co
 
 This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open**
+1. From the upper left section of the menubar, select **File** > **Open report**
 
-1. Find your copy of the **Retail Analysis sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**
 
-1. Open the **Retail Analysis sample PBIX file** in report view. ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
-1. Select **+** to add a new page. ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png":::.
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## How to create a KPI
 
@@ -59,24 +57,26 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
 1. Add **Time > FiscalMonth**.  This value will represent the trend.
 
-1. In the upper-right corner of the visual, select the ellipsis and check that Power BI sorted the columns in ascending order by **FiscalMonth**.
+1. In the upper-right corner of the visual, select the ellipsis and select **Sort by > FiscalMonth**, then select the ellipsis again and choose **Sort ascending**.
+
+1. Check that Power BI has sorted the columns in ascending order by **FiscalMonth**.
 
     > [!IMPORTANT]
     > Once you convert the visualization to a KPI, there's **no** option to sort. You must sort it correctly now.
 
-    ![Screenshot of the ellipsis menu expanded with Sort ascending and FiscalMonth selected.](media/power-bi-visualization-kpi/power-bi-ascending-by-fiscal-month.png)
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-ascending-by-fiscal-month.png" alt-text="Screenshot of the ellipsis menu expanded with Sort ascending and FiscalMonth selected.":::
 
     Once sorted correctly, your visual will look like this:
 
-    ![Screenshot of the visual sorted correctly.](media/power-bi-visualization-kpi/power-bi-chart.png)
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-chart.png" alt-text="Screenshot of the visual sorted correctly.":::
 
 1. Convert the visual to a KPI by selecting the **KPI** icon from the **Visualization** pane.
 
-    ![Screenshot of the Visualizations pane with the KPI icon called out.](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-template.png" alt-text="Screenshot of the Visualizations pane with the KPI icon called out.":::
 
 1. To add a goal, drag **Total Units Last Year** to the **Target goals** field.
 
-    ![Screenshot of the finished KPI visual and the Fields pane with the values depicted.](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-done.png" alt-text="Screenshot of the finished KPI visual and the Fields pane with the values depicted.":::
 
 1. Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
 
@@ -86,7 +86,7 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     * **Goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
 
-    * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **high is good** and, optionally, change the color settings.
+    * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **High is good** and, optionally, change the color settings.
 
 KPIs are also available in the Power BI service and on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 

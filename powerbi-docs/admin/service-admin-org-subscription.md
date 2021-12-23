@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/13/2020
+ms.date: 05/25/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -34,21 +34,23 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 2. On the navigation menu, select **Billing** > **Purchase services**.
   
-   ![Microsoft 365 billing menu](media/service-admin-org-subscription/m365-billing-menu.png)
+   :::image type="content" source="media/service-admin-org-subscription/m365-purchase-services-2021.png" alt-text="Screenshot that shows the Microsoft 365 billing menu with Purchase services selected.":::
 
-3. Search or scroll to find the subscription you want to buy. You'll find **Power BI** under **Other categories that might interest you** near the bottom of the page. Select the link to view the Power BI subscriptions available to your organization.
+3. Search for **Power BI** or select the **Power BI** button from the **View by category** section near the top of the page.
 
 4. Select an offer, like Power BI Pro.
 
 5. On the **Purchase services** page, select **Buy**. If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
 
-   ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial-pro.png)
+   :::image type="content" source="media/service-admin-org-subscription/power-bi-pro-purchase.png" alt-text="Screenshot that shows the purchase options for Power B I Pro.":::
 
-6. Choose **Pay monthly** or **Pay for a full year**, according to how you want to pay.
+6. Choose **Pay monthly** or **Pay yearly**, according to how you want to pay.
 
-7. Under **How many users do you want?** enter the number of licenses to buy, then select **Check out now** to complete the transaction.
+7. Under **Select license quantity** enter the number of licenses to buy, and then select **Buy**.
 
-8. To verify your purchase, go to **Billing** > **Products & services** and look for  **Power BI Pro**.
+8. Complete the information on the checkout page, and then select **Place order**.
+
+9. To verify your purchase, go to **Billing** > **Your products** and look for  **Power BI Pro**.
 
 To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
@@ -73,7 +75,7 @@ Follow these steps to sign up:
 >
 >
  
-4. Complete the form to tell us about yourself. Be sure to choose the correct country or region. The country you select determines where your data is stored, as explained in [How to determine where your Power BI tenant is located](service-admin-where-is-my-tenant-located.md#how-to-determine-where-your-power-bi-tenant-is-located).
+4. Complete the form to tell us about yourself. Be sure to choose the correct country or region. The country you select determines where your data is stored, as explained in [Find the default region for your organization](service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for the majority of your users.
 
    ![Tell us about yourself](media/service-admin-org-subscription/tell-about-yourself.png)
 

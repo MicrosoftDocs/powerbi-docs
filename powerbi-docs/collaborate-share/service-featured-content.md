@@ -7,7 +7,7 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/10/2021
+ms.date: 04/30/2021
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page
@@ -20,7 +20,7 @@ You can feature dashboards, reports, and apps so they appear in the Featured sec
 
 ## Who can feature content
 
-To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for details. You do need to have a Power BI Pro license. 
+To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in the new workspaces](service-roles-new-workspaces.md) for details. You do need to have a Power BI Pro license. 
 
 Your Power BI admin can turn off the ability to feature content on your tenant, and choose who can feature content. See the [admin portal](../admin/service-admin-portal.md#featured-content) article for details.
 

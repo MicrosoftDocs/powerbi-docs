@@ -3,11 +3,11 @@ title: Set featured tables in Power BI Desktop
 description: Create featured tables in Power BI Desktop so they show up in the Excel Organization Data Types Gallery. 
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/07/2020
+ms.date: 06/28/2021
 LocalizationGroup: Share your work
 ---
 # Set featured tables in Power BI Desktop to show in Excel Organization Data Types Gallery
@@ -22,7 +22,7 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 > You can [promote or certify datasets in Power BI](../collaborate-share/service-endorse-content.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
 
 > [!NOTE]
-> Starting with the December 2020 version of Power BI Desktop, creating featured tables is available by default. If you're using an earlier version, upgrade Power BI Desktop or enable the **Featured tables** capability through **File** > **Options and Settings** > **Options** > **Preview Features**.
+> Creating featured tables is available by default. You can change the **Featured tables** capability through **File** > **Options and Settings** > **Options** > **Preview Features**.
 
 ## Select a table
 
@@ -70,6 +70,7 @@ Here are the current limitations:
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for English-language search. Searching in other languages may not result in accurate matches. 
+- Featured tables use Power BI Q&A indexing when users query data in those tables. See [How does indexing work with Q&A?](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa) for details.
 - Most numerical columns aren't considered for matching. If the Row Label or Key Column are numeric, they are included for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
@@ -90,4 +91,3 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - [Access Power BI featured tables in Excel](service-excel-featured-tables.md)
 - Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
-

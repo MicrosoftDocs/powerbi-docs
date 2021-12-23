@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/12/2021
+ms.date: 07/30/2021
 LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports
@@ -48,11 +48,11 @@ Drill-down filters get automatically added to the filter pane when you use the d
 
 Cross-drill filters are automatically added to the pane when a drill-down filter is passed to another visual on the report page via the cross-filter or cross-highlight feature. Even if you can edit a report, you can't delete, clear, hide, lock, rename, or sort this filter because it's associated with the drill-down functionality of visuals. You also can't edit this filter because it comes from drilling down in another visual. To remove the drill-down filter, select the drill-up button for the visual that's passing the filter.
 
-## Drill-through filters
+## Drillthrough filters
 
-Drill-through filters get passed from one page to another via the drill-through feature. They show up in the Drill through pane. There are two types of drill-through filters. The first type is the one that invokes the drill through. If you can edit a report, you can edit, delete, clear, hide, or lock this type of filter. The second type is the drill-through filter that gets passed to the target, based on the page-level filters of the source page. You can edit, delete, or clear this transient type of drill-through filter. You can't lock or hide this filter for end users.
+Drillthrough filters get passed from one page to another via the drillthrough feature. They show up in the Drillthrough pane. There are two types of drillthrough filters. The first type is the one that invokes the drillthrough. If you can edit a report, you can edit, delete, clear, hide, or lock this type of filter. The second type is the drillthrough filter that gets passed to the target, based on the page-level filters of the source page. You can edit, delete, or clear this transient type of drillthrough filter. You can't lock or hide this filter for end users.
 
-Read about [creating drill-through filters](desktop-drillthrough.md).
+Read about [creating drillthrough filters](desktop-drillthrough.md).
 
 ## URL filters
 
@@ -81,8 +81,8 @@ This table compares what authors can do with the different types of filters.
 | Include/Exclude filters | N | N | Y | Y | Y | Y | N |
 | Drill-down filters | Y | Y | N | N | N | N | N |
 | Cross Drill filters | N | N | N | N | N | N | N |
-| Drill-through filters (Invokes drill-through) | Y | Y | Y | Y | Y | N | N |
-| Drill-through filters (Transient) | Y | Y | Y | N | N | N | N |
+| Drillthrough filters (Invokes drillthrough) | Y | Y | Y | Y | Y | N | N |
+| Drillthrough filters (Transient) | Y | Y | Y | N | N | N | N |
 | URL filters - transient | Y | Y | Y | N | N | N | N |
 | Pass Through filters | N | N | Y | Y | N | Y | N |
 

@@ -1,8 +1,8 @@
 ---
 title: Understand the permission tokens needed for embedding a Power BI application
 description: Learn which tokens your Power BI application needs to authenticate against Azure and Power BI service.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: amshuste
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -45,7 +45,7 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
 
-The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The dedicated identity can be one of the following:
+The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be one of the following:
 
 * **[Service principal](embed-service-principal.md)**
 
@@ -55,7 +55,7 @@ The *Embed for your customers* solution uses a non-interactive authentication fl
 
 * **Master user**
 
-    Your web app uses a user account to authenticate against Azure AD and get the *Azure AD token*. The *master user* needs to have a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or a [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
+    Your web app uses a user account to authenticate against Azure AD and get the *Azure AD token*. The *master user* needs to have a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or a [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
 
     When using a *master user* you'll need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is required to grant consent for using these permissions using the Power BI REST APIs.
 

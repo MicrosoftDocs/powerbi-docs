@@ -4,16 +4,16 @@ description: Create your own what-if variable to imagine and visualize variables
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/21/2020
+ms.date: 12/10/2021
 LocalizationGroup: Create reports
 ---
 # Create and use what-if parameters to visualize variables in Power BI Desktop
 
-Starting with the August 2018 release of *Power BI Desktop*, you can create *what-if* variables for your reports, interact with the variable as a slicer, and visualize and quantify different key values in your reports.
+You can create *what-if* variables for your reports, interact with the variable as a slicer, and visualize and quantify different key values in your reports.
 
 ![New Parameter option](media/desktop-what-if/what-if_01.png)
 
@@ -61,3 +61,20 @@ Then, as we move the slider, we see that the **Sales after Discount** column ref
 ![Slider interacts with visualization](media/desktop-what-if/what-if_08.png)
 
 And, that's all there is to it. You can use what-if parameters in all sorts of situations. These parameters enable the consumers of reports to interact with different scenarios that you create in your reports.
+
+
+## Considerations and limitations
+There are a few considerations and limitations for **what-if** variables to keep in mind.
+
+* What-if parameters can only be used with value ranges between 0 and 1,000. For ranges greater than 1,000, the parameter value will be sampled.
+
+* What if parameters are designed for measures within visuals, and may not calculate properly when used in a dimension calculation.
+
+
+## Next steps
+
+You might also be interested in the following articles:
+
+* [Use quick measures for common calculations](desktop-quick-measures.md)
+* [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
+* [Create calculated tables in Power BI Desktop](desktop-calculated-tables.md)

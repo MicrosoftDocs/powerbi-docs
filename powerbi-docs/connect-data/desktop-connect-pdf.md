@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to PDF files in Power BI Desktop
@@ -20,7 +20,7 @@ The following sections describe how to connect to a **PDF file**, select data, a
 We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). 
 
 ## Connect to a PDF file
-To connect to a **PDF** file select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **File** from the categories on the left, and you see **PDF**.
+To connect to a **PDF** file select **Get data** from the **Home** ribbon in Power BI Desktop. Select **File** from the categories on the left, and you see **PDF**.
 
 ![Select PDF from Get Data](media/desktop-connect-pdf/connect-pdf-01.png)
 
@@ -30,11 +30,11 @@ You're prompted to provide the location of the PDF file you want to use. Once yo
 
 Selecting a checkbox next to discovered elements in the PDF file displays them in the right pane. When you're ready to import, select the **Load** button to bring the data into **Power BI Desktop**.
 
-Beginning with the November 2018 release of **Power BI Desktop**, you can specify the **Start page** and **End Page** as optional parameters for your PDF connection. You can also specify these parameters in the M formula language, using the following format:
+You can specify the **Start page** and **End Page** as optional parameters for your PDF connection. You can also specify these parameters in the M formula language, using the following format:
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
-## Limitations and considerations
+## Considerations and limitations
 
 When working with the PDF connector on datasets in a Premium capacity, the PDF connector does not properly make the connection. To enable the PDF connector to work on a dataset in a Premium capacity, configure that dataset to use a gateway, and confirm the connection to that dataset goes through the gateway.  
 

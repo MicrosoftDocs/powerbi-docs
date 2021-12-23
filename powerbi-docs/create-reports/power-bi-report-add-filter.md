@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/12/2021
+ms.date: 07/30/2021
 LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
@@ -16,7 +16,7 @@ This article explains how to add a visualization filter, page filter, or report 
 
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
-Power BI offers a number of different kinds of filters, from the manual and automatic to the drill-through and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
+Power BI offers a number of different kinds of filters, from the manual and automatic to the drillthrough and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
 
 After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to look and act the way you want.
 
@@ -25,7 +25,7 @@ You interact with reports in two different views: Reading view and Editing view.
 
 Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menu bar.
 
-:::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
+:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 
 Keep in mind that as the report creator, whatever filters you save with the report become the *default filter state* for all your report readers. When they select **Reset to default**, that's what they return to.
 
@@ -41,11 +41,11 @@ You can add a visual-level filter to a visual in two different ways.
 * The fields that are in a visual are automatically filters for that visual. 
 * As the report designer, you can identify a field that isn't already the visual, and add that field directly to the **Visual level filters** bucket.
  
-By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-content-pack-for-this-sample) content pack.
+By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample).
 
 ### Filter with a field that's not in the visual
 
-1. In the Power BI service, select **More options (...)** > **Edit** to open your report in Editing view.
+1. In the Power BI service, select **Edit** to open your report in Editing view.
    
    ![Edit report button.](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -57,7 +57,7 @@ By the way, this article uses the Retail Analysis sample, if you'd like to insta
    
    ![Select visual-level filters](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
   
-1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example, we drag **Category** to **Add data fields here** under **Filters on this visual**.
+1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Filters on this visual** area.  In this example, we drag **Category** to **Add data fields here**.
      
     ![Add a field to the Filters pane](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -77,14 +77,17 @@ You can also add a page-level filter to filter an entire page.
 
 1. In the Power BI service, open the Retail Analysis report, then go to the **District Monthly Sales** page. 
 
-2. Select **...** > **Edit report** to open your report in Editing view.
+2. Select **Edit** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 2. Open the Visualizations, Filters, and Fields panes, if they're not already open.
 
-3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it into the **Page level filters** area.  
-4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
+3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it to the bottom of the **Filters on this page** area.  
+
+   ![Drag field to Add page filter area.](media/power-bi-report-add-filter/power-bi-page-filter.png)
+
+1. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
    
    All the visualizations on the page are redrawn to reflect the change.
    
@@ -92,7 +95,7 @@ You can also add a page-level filter to filter an entire page.
 
 ## Add a report-level filter to filter an entire report
 
-1. Select **Edit report** to open the report in Editing view.
+1. Select **Edit** to open the report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
