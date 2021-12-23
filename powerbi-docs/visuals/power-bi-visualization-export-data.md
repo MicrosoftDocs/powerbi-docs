@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/23/2021
+ms.date: 12/22/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -177,7 +177,6 @@ What you see when you select **Underlying data** can vary. Understanding these d
 | Aggregates | related data - if the visual uses data from other data tables that are  *related* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
 | Measures* | all measures in the visual *and* all measures from any data table containing a measure used in the visual |
 | Measures* | all non-hidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1) |
-| Measures* | all data from all tables that are related to table(s) containing the measures via a chain of \*:1 of 1:1) |
 | Measures only | all non-hidden columns from all related tables (to expand the measure) |
 | Measures only | summarized data for any duplicate rows for model measures |
 
