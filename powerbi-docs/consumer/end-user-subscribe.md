@@ -1,5 +1,5 @@
 ---
-title: Subscribe yourself to reports and dashboards
+title: Subscribe to reports and dashboards
 description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
@@ -22,7 +22,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 :::image type="content" source="./media/end-user-subscribe/power-bi-email-sent.png" alt-text="Email for subscription to a report.":::
 
 ## Requirements
-To create a subscription for yourself or others, you'll need either:
+To create a subscription for yourself, you'll need either:
 
 - A Power BI Pro or Premium Per User (PPU) [license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../admin/service-premium-what-is.md).
@@ -37,19 +37,18 @@ Whether you're subscribing to a dashboard or to a report page, the process is si
 
 Subscribing to a paginated report is slightly different, as outlined in [Subscribe to paginated reports](paginated-reports-subscriptions.md).
 
-1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png). When subscribing to a report, first navigate to the report page that you'd like to display in your subscription email, and then select **Subscribe**. 
+1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
 1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard.
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-report.png" alt-text="Subscribe window.":::
     
-1. To subscribe to more than one page in a report: Either select **Add new subscription** and choose a different page from the dropdown near the top, or select the **Full report attachment as** checkbox under **Also include**. 
 
 1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
 1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-1. For Power BI reports, select the **Report page** you want to appear in the preview image.
+1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. 
 
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
@@ -59,7 +58,7 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after that.  
 
-1. Select a Start date and optionally, an End date for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
+1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
 
 1. Include additional information in the email. Select one or more of these checkboxes.
@@ -68,11 +67,10 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. 
 
-1. To review your subscription and test it out, select **Run now**.  This immediately sends the email to you and everyone you've subscribed. This action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset.
-    
-1. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
+1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now**. This sends the email to you right away. It does NOT trigger a data refresh of the underlying dataset. 
 
-    For reports with live connections, for example a live connection to Analysis Services, Power BI will check the Analysis Services instance for changes. If you have the subscription set to run after data refreshes, it will run the first time the Power BI service detects a change in your on-premises model. Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription. 
+1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to After data refresh will only send an email after the first scheduled refresh on that day.  
+
     
     > [!NOTE]
     > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
@@ -80,13 +78,6 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscriptions-email.png)
    
-   
-
-   You will be able to refresh the report page but not the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), open the report and select the dropdown from the menu bar.
-   
-    ![find the owner](./media/end-user-subscribe/power-bi-owner.png)
-
-
 ## Manage subscriptions
 Only you can manage the subscriptions you create. 
 Open the report and select **Subscribe** from the top menu again. In the lower-left corner of the subscriptions pane, select **Manage all subscriptions**. 
@@ -101,13 +92,15 @@ To see all your subscriptions across all workspaces, navigate to **My workspace*
 
 ## Subscribe others 
 
-Subscribing others has two requirements.    
+To subscribe others to a report or dashboard, you’ll need:     
 
-**Subscribing others** is only available to the dashboard or report owners who have a Power BI Pro or Premium Per User (PPU) license and also have the Contributor, Member or Admin role to the dashboard's or report's workspace.   
+- a Power BI Pro or [Premium Per User (PPU) license](../admin/service-premium-per-user-faq.yml)  
 
-:::image type="content" source="media/end-user-subscribe/power-bi-diamonds.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+- the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-If your report isn’t hosted in a Premium capacity or workspace backed by a PPU license, you can subscribe others if they have a Power BI Pro or PPU license.  
+- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
+
+    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
@@ -137,9 +130,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 - If your report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values, but unless you explicitly change that value as well, the subscription uses the expression-based parameter. 
 
-### Create a paginated report subscription for yourself or others
- 
-You don't need edit permissions to the paginated report to create a subscription for yourself, but you must have edit permissions to create one for someone else in your organization. If you have at least a Contributor role in the workspace where the paginated report is hosted, then you can create subscriptions for others in your organization. Read more about [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+### Considerations unique to paginated report subscriptions
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions. 
 
@@ -147,16 +138,16 @@ You don't need edit permissions to the paginated report to create a subscription
 
 - You can set up an unlimited number of subscriptions per paginated report. 
 
+- The maximum attachment size is 25 MB.
+
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 
 - You may include a preview image of the report in the email body. This is optional, and may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
 
-For more information, visit [Subscribe to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
 
-
-## Subscription controls for administrators 
+## Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal: 
 
