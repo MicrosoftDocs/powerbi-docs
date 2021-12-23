@@ -16,6 +16,10 @@ ms.date: 12/22/2021
 
 This article lists the Power BI REST APIs [push datasets](/rest/api/power-bi/push-datasets) limitations.
 
+## Limitations list
+
+Review the following list of limitations before using the *push datasets* APIs.
+
 * 75 max columns
 
 * 75 max tables
