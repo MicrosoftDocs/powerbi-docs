@@ -1,8 +1,8 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI datasets
 description: Describes how to configure incremental refresh
-author: davidiseminger
-ms.author: davidi
+author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -86,7 +86,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
     
     Depending on your settings, your policy should look something like this:
 
-    :::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog-02.png" alt-text="Define policy dialog":::
+    :::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog.png" alt-text="Define policy dialog":::
 
 1. Review your settings and then click **Apply** to complete the refresh policy. Source data is not loaded with this step.
 

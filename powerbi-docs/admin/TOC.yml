@@ -1,10 +1,10 @@
-﻿- name: "Power BI admin and enterprise"
+- name: "Power BI admin and enterprise"
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
-    items: 
+    items:
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
     - name: "What is Power BI Premium Gen2?"
@@ -35,19 +35,19 @@
       - name: Premium Gen2 architecture
         href: service-premium-architecture.md
       - name: Premium Gen2 capacity load evaluation
-        href: service-premium-concepts.md  
+        href: service-premium-concepts.md
       - name: Backup and restore Power BI Premium datasets
         href: service-premium-backup-restore-dataset.md
       - name: Using service tags with Power BI
-        href: service-premium-service-tags.md             
-      - name: Managing capacities        
-        items:            
+        href: service-premium-service-tags.md
+      - name: Managing capacities
+        items:
         - name: Managing Premium Gen2 capacities
-          href: service-premium-capacity-manage-gen2.md  
+          href: service-premium-capacity-manage-gen2.md
         - name: Using autoscale with Premium Gen2
           href: service-premium-auto-scale.md
         - name: Install the Gen2 metrics app
-          href: service-premium-install-gen2-app.md                
+          href: service-premium-install-gen2-app.md
         - name: Using the Premium Gen2 metrics app
           href: service-premium-gen2-metrics-app.md
       - name: Power BI Premium Gen2 FAQ
@@ -65,7 +65,7 @@
         - name: Premium capacity scenarios
           href: service-premium-capacity-scenarios.md
         - name: Power BI Premium FAQ
-          href: service-premium-faq.yml   
+          href: service-premium-faq.yml
     - name: Information protection
       items:
       - name: "Data protection in Power BI"
@@ -97,7 +97,7 @@
       - name: "Set up metadata scanning in your org (admin)"
         href: service-admin-metadata-scanning-setup.md
   - name: How to
-    items: 
+    items:
     - name: "Licensing and sign-up"
       items:
       - name: "Get Power BI for your organization"
@@ -123,7 +123,7 @@
     - name: "Add custom branding"
       href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
-      href: service-security-private-links.md      
+      href: service-security-private-links.md
     - name: "Manage Power BI visuals admin settings"
       href: organizational-visuals.md
     - name: "Find users that have signed in"
@@ -148,8 +148,8 @@
         href: service-security-apply-data-sensitivity-labels.md
       - name: "Set or remove sensitivity labels programmatically"
         href: service-security-sensitivity-label-inheritance-set-remove-api.md
-      - name: "Use Microsoft Cloud App Security with Power BI"
-        href: service-security-using-microsoft-cloud-app-security-controls.md
+      - name: "Use Microsoft Defender for Cloud Apps with Power BI"
+        href: service-security-using-defender-for-cloud-apps-controls.md
       - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
@@ -167,11 +167,11 @@
       - name: Configure workloads
         href: service-admin-premium-workloads.md
       - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md        
+        href: service-admin-premium-testing.md
       - name: Monitor capacities with the app
         href: service-admin-premium-monitor-capacity.md
       - name: Monitor Premium workload metrics
-        href: service-premium-metrics-app.md      
+        href: service-premium-metrics-app.md
       - name: Monitor capacities in the Admin portal
         href: service-admin-premium-monitor-portal.md
       - name: Configure large datasets
@@ -181,7 +181,7 @@
       - name: Bring your own encryption keys
         href: service-encryption-byok.md
       - name: Use customer managed keys
-        href: service-encryption-customer-managed-keys.md        
+        href: service-encryption-customer-managed-keys.md
       - name: Restart a Premium capacity
         href: service-admin-premium-restart.md
       - name: Automation with service principals
@@ -193,13 +193,13 @@
         - name: Troubleshoot XMLA endpoint connectivity
           href: troubleshoot-xmla-endpoint.md
     - name: Automatic aggregations
-      items:     
+      items:
       - name: Automatic aggregations overview
         href: aggregations-auto.md
       - name: Configure automatic aggregations
-        href: aggregations-auto-configure.md        
+        href: aggregations-auto-configure.md
   - name: Reference
-    items: 
+    items:
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
@@ -208,17 +208,17 @@
     - name: Service URL reference
       href: power-bi-allow-list-urls.md
   - name: Resources
-    items: 
+    items:
     - name: "Power BI governance and deployment approaches"
       href: service-admin-governance.md
     - name: "Power BI security"
-      href: service-admin-power-bi-security.md      
+      href: service-admin-power-bi-security.md
     - name: "Privacy levels"
       href: desktop-privacy-levels.md
     - name: "Power BI site reliability engineering model"
-      href: service-admin-site-reliability-engineering-model.md      
+      href: service-admin-site-reliability-engineering-model.md
   - name: Troubleshoot
-    items: 
+    items:
     - name: "Can't sign in?"
       href: power-bi-cannot-sign-in.md
     - name: "Power BI support options"
