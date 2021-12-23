@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/30/2021
+ms.date: 12/21/2021
 ---
 
 # Change log for Power BI Desktop
@@ -16,6 +16,14 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## December 2021 QFE 1
+
+*Version: 2.100.785.0, Released: December 21, 2021*
+
+Bug fixes/improvements:
+- Fix for calculation groups: duplicated measures will not be shown in the field list for PBIX files with calculation groups.
+- Accessibility fixes for hierarchical slicer. 
+ 
 ## November 2021 QFE 2
 
 *Version: 2.99.862.0, Released: November 30, 2021*
