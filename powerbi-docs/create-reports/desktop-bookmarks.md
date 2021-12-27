@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 When you edit a report in Power BI Desktop and the Power BI service, you can add *report bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. When others view your report, they can get back to that exact state by selecting your saved bookmark.
 
 > [!NOTE]
@@ -25,13 +27,19 @@ There are many uses for bookmarking. For example, you can create a collection of
 
 You have to have permissions to edit a report to create report bookmarks that others can use.
 
-- To create report bookmarks in Power BI Desktop, on the **View** tab, select **Bookmarks**. 
+# [Power BI Desktop](#tab/powerbi-desktop)
+ 
+On the **View** tab, select **Bookmarks**. 
 
-    ![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
+![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
 
-- To create report bookmarks in the Power BI service, select **Edit**, then select **View** and turn on **Bookmarks pane**. 
+# [Power BI service](#tab/powerbi-service)
 
-    :::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
+Select **Edit**, then select **View** and turn on **Bookmarks pane**. 
+
+:::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
+
+---
 
 When you create a bookmark, the following elements are saved with the bookmark:
 
@@ -83,9 +91,21 @@ When you have a collection of bookmarks you would like to present, in order, you
 Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slide-show).
 
 ## Visibility: Using the Selection pane
-Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. In Power BI Desktop, the Selection pane is on the **View** tab. When you're editing a report in the Power BI service, it's on the **View** menu. You don't see it if you can't edit the report.
+Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+In Power BI Desktop, the Selection pane is on the **View** tab. 
 
 ![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
+
+# [Power BI service](#tab/powerbi-service)
+
+When you're editing a report in the Power BI service, the **Selection pane** is on the **View** menu. You don't see it if you can't edit the report.
+
+:::image type="content" source="media/desktop-bookmarks/power-bi-service-selection-pane.png" alt-text="Screenshot showing how to turn on the Selection pane in the Power B I service.":::
+
+---
 
 In the **Selection** pane, you select an object and toggle whether the object is currently visible by selecting the eye icon to the right of the object. 
 
