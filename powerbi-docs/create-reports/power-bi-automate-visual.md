@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/22/2021
+ms.date: 12/28/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -128,7 +128,8 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 - Additional manual inputs to the button aren't supported at this time. We plan to add support for this by the general availability release.
 - Currently, we only have a few built-in templates; we plan to add more based on user feedback.
-- The visual isn't supported for "embed for your customers" scenarios, nor in Sovereign Cloud scenarios. See the tutorial [Embed Power BI content using a sample embed for your customers application](../developer/embedded/embed-sample-for-customers.md) for more about embedding content.
+- The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
+- The visual isn't supported in sovereign clouds.
 
 ## Next steps
 
