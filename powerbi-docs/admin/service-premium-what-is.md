@@ -82,7 +82,7 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model Refresh Parallelism |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
