@@ -104,7 +104,7 @@ The table below describes the resources and limits of each SKU.
 | Capacity SKU | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] |Model refresh parallelism |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5 |
-| EM2/A2 |   2 |  1   |  1   |   6 |   7.5  |  2  |  10 |
+| EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  10 |
 | EM3/A3 |   4 |  2   |  2   |  10 |  15    |  2  |  20 |
 | P1/A4  |   8 |  4   |  4   |  25 |  30    |  6  |  40 |
 | P2/A5  |  16 |  8   |  8   |  50 |  60    |  6  |  80 |
@@ -119,7 +119,7 @@ The table below describes the resources and limits of each SKU.
 | Capacity SKU | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model Refresh Parallelism |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
-| EM2/A2 |   2 |  1   |  1   |   6 |   7.5  |  2  |  2  |
+| EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
 | EM3/A3 |   4 |  2   |  2   |  10 |  15    |  2  |  3  |
 | P1/A4  |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
 | P2/A5  |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
