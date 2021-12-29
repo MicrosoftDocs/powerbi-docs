@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
 
-The dataset manage permissions page enables you monitor and manage access to your dataset. It has two tabs that help you control access to your dataset:
+The dataset manage permissions page enables you to monitor and manage access to your dataset. It has two tabs that help you control access to your dataset:
 * **Direct access**: Enables you to monitor, add, modify, or delete access permissions for specific people or groups (distribution groups or security groups).
 * **Shared report links**: Shows you [links that were generated for sharing reports](../collaborate-share/service-share-dashboards.md). Such links sometimes also give access to your dataset. On this tab you can review them and remove them if necessary.
 
