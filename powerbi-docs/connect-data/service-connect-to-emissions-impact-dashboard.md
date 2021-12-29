@@ -26,7 +26,7 @@ To install the Emissions Impact Dashboard in Power BI and connect it to your dat
 * An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
 * The Emissions Impact Dashboard is supported for EA Direct and MCA/MPA (CSP with Azure Plan) accounts.
     * If you have an EA Direct account, you must be an Enrollment Administrator with either read or write permissions and have your company's [enrollment number](#finding-your-companys-enrollment-number-ea-direct-customers-only).
-    * If you have an MCA/MPA (CSP with Azure Plan) account, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
+    * If you have an MCA/MPA (CSP with Azure Plan) account (that is, you have a direct billing relationship with Microsoft), you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
 
 ## Install the app
 
