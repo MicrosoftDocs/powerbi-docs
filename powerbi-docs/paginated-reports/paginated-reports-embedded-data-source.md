@@ -1,5 +1,5 @@
 ---
-title: "Embedded data sources for paginated reports in the Power BI service"
+title: "Create embedded data sources for paginated reports in the Power BI service"
 description: In this article, you learn how to create and modify an embedded data source in a paginated report in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -14,25 +14,20 @@ ms.date: 10/19/2021
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources, and can connect to these data sources:
+In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Paginated reports published to the Power BI service can't use shared datasets and data sources. Here are some of the data sources you can connect to:
 
-- Power BI Datasets
-- Azure Analysis Services
-- Azure SQL Database and Azure SQL Managed Instance
-- Azure Synapse
-- SQL Server
-- SQL Server Analysis Services
-- Oracle 
-- Teradata 
-- Dataverse
+- Azure SQL Database and Azure Synapse Analytics (via Basic and oAuth)
+- Azure Analysis Services (via SSO)
+- SQL Server via a gateway
+- Power BI datasets
+- Oracle
+- Teradata
 
-For the following data sources, use the [SQL Server Analysis Services connection](../admin/service-premium-connect-tools.md) option:
-
-- Power BI Premium datasets via the XMLA endpoint
+See [Supported data sources for Power BI paginated reports](paginated-reports-data-sources.md) for a complete list.
 
 Paginated reports connect to on-premises data sources by way of a [Power BI gateway](../connect-data/service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
 
-See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
+See [Understanding report data in Power BI Report Builder](report-builder-data.md) for more background.
 
 
 ## Prerequisites 

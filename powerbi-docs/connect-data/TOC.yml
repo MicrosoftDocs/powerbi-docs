@@ -212,16 +212,18 @@
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
-        href: refresh-summaries.md        
+        href: refresh-summaries.md
+      - name: "Asynchronous refresh with REST API"
+        href: asynchronous-refresh.md     
       - name: Incremental refresh
         items:
-        - name: Incremental refresh for datasets
+        - name: Incremental refresh and real-time data for datasets
           href: ../connect-data/incremental-refresh-overview.md
-        - name: Configure incremental refresh
+        - name: Configure incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-configure.md
         - name: Advanced incremental refresh
           href: ../connect-data/incremental-refresh-xmla.md
-        - name: Troubleshoot incremental refresh
+        - name: Troubleshoot incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-troubleshoot.md
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md

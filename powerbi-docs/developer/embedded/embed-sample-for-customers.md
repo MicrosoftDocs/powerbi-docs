@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/02/2021
+ms.date: 12/27/2021
 
 ---
 
@@ -18,12 +18,16 @@ ms.date: 04/02/2021
 In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
+>
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
 To use your application, your users will not need to sign in to Power BI or have a Power BI license.
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
+
+> [!IMPORTANT]
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -488,7 +492,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
 
-    b. Open a new tab in your browser and navigate to `http://localhost:5300`.
+    b. Open a new tab in your browser and navigate to `http://localhost:5000`.
 
 ---
 

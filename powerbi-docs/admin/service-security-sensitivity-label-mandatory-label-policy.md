@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/11/2021
+ms.date: 12/13/2021
 LocalizationGroup: Data from files
 ---
-# Mandatory label policy for Power BI (preview)
+# Mandatory label policy for Power BI
 
 To help ensure comprehensive protection and governance of sensitive data, you can require your organization's Power BI users to apply sensitivity labels to content they create or edit in Power BI. You do this by enabling, in their sensitivity label policies, a special setting for mandatory labeling in Power BI. This article describes the user actions that are affected by a mandatory labeling policy, and explains how to enable a mandatory labeling policy for Power BI.
 
@@ -22,22 +22,13 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 
 ## What happens when a mandatory label policy is in effect?
 
-When a mandatory label policy is in effect,
-* In the service:
-    * Users must apply a sensitivity label before saving new reports, dashboards, or datasets. If they try to save a new item without applying a label, a dialog prompts them to choose a label before allowing them to save.
-    * Users must apply a sensitivity label before saving updates to the settings or content of existing unlabeled reports and dashboards. If they try to save the updates without applying a label, a dialog prompts them to apply a label before allowing them to save.
-    * If users try to import data from an unlabeled *.pbix* file, a dialog prompts them to apply a label before allowing import to continue. The label they select will be applied to the resulting dataset and report in the service. It is not applied to the *.pbix* file itself.
-    The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content. The save button only becomes active when the user selects a label.
+* **In the Power BI service**:
+    * Users must apply a sensitivity label in order to be able to save new reports, dashboards, or datasets.
+    * Users must apply a sensitivity label in order to be able to save changes to the settings or content of existing, unlabeled reports and dashboards.
+    * If users try to import data from an unlabeled *.pbix* file, they will be prompted to select a label before the import will be allowed to continue. The label they select will be applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
 
-    ![Screenshot of mandatory label dialog.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-dialog.png)
-
-* In Desktop:
-    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to save it. If they try to save an unlabeled *.pbix* without applying a label, a message prompts them to apply a label from the Sensitivity menu on the Home ribbon. 
-    * Users must apply a sensitivity label to an unlabeled *.pbix* file before they will be allowed to publish it to the service. If they try to publish an unlabeled *.pbix* file, a message prompts them to apply a label from the Sensitivity menu on the Home ribbon. After they've applied the label in Desktop and saved their changes, they will be able to publish the file to the service.
-
-    The image below shows the Power BI Desktop message that prompts users to choose and apply a label from the Sensitivity menu on Desktop's Home ribbon.
-
-    :::image type="content" source="media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-desktop-message.png" alt-text="Screenshot of mandatory label message in Desktop.":::
+* **In Power BI Desktop**:
+    * Users must apply sensitivity labels to unlabeled *.pbix* files before they will be allowed to save them or publish them to the service.
 
 ## Enabling a mandatory label policy for Power BI
 
@@ -45,7 +36,7 @@ A Microsoft 365 administrator can enable a mandatory label policy for Power BI b
 
 :::image type="content" source="media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png" alt-text="Screenshot of mandatory label setting in the Microsoft compliance center.":::
 
-For existing policies, it is also possible to enable mandatory labeling in Power BI using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
+If you already have an existing policy and you want to enable mandatory labeling in Power BI in it, you can use the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
 
 ```powershell
 Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
@@ -66,7 +57,7 @@ Where:
 * [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
 
 ## Considerations and limitations
-* Mandatory labeling in Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
+* Mandatory labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow a user to create or edit unlabeled content.
 * The mandatory label policy setting for Power BI is independent of the mandatory label policy setting for files and email.
 * Mandatory labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not subject to mandatory label policies.
 * Mandatory labeling in Power BI is not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users are not subject to mandatory label policies.
@@ -75,3 +66,5 @@ Where:
 
 * [Default label policy for Power BI](service-security-sensitivity-label-default-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Data protection metrics report](service-security-data-protection-metrics-report.md)
+* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)

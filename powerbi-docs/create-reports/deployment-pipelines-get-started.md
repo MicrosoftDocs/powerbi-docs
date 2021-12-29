@@ -12,6 +12,8 @@ ms.date: 07/01/2021
 
 # Get started with deployment pipelines
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
 In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
@@ -171,6 +173,8 @@ This section lists the limitations for the deployment rules.
 * Deployment rules cannot be created in the development stage.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
+
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
 
 * Rules for dataflows that have other dataflows as sources, are not supported.
 
