@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/20/2021
+ms.date: 12/21/2021
 LocalizationGroup: 
 ---
 
@@ -17,7 +17,7 @@ Datasets in a Premium capacity with the [XMLA endpoint](../admin/service-premium
 
 ## Partitions
 
-Dataset table partitions are not visible and cannot be managed in the Power BI user interface. For datasets in a workspace assigned to a Premium capacity, partitions can be managed through the XMLA endpoint by using tools like SQL Server Management Studio (SSMS), the open-source Tabular Editor, scripted with Tabular Model Scripting Language (TMSL), and programmatically with the Tabular Object Model (TOM).
+Dataset table partitions are not visible and cannot be managed by using Power BI Desktop or the Power BI user interface in the browser. For datasets in a workspace assigned to a Premium capacity, partitions can be managed through the XMLA endpoint by using tools like SQL Server Management Studio (SSMS), the open-source Tabular Editor, scripted with Tabular Model Scripting Language (TMSL), and programmatically with the Tabular Object Model (TOM).
 
 When you first publish a model to the service, each table in the new dataset has one partition. For tables with no incremental refresh policy, that one partition contains all rows of data for that table (unless filters have been applied). For tables with an incremental refresh policy, that one initial partition only exists because Power BI has not yet applied the policy. You configured the initial partition in Power BI Desktop when you defined by the date/time range filter for your table based on the RangeStart and RangeEnd parameters, and any other filters applied in Power Query Editor. This initial partition will contain only those rows of data that meet your filter criteria.
 

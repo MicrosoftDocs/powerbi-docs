@@ -1,13 +1,13 @@
 ---
 title: Incremental refresh for datasets and real-time data in Power BI
 description: Describes incremental refresh features in Power BI
-author: davidiseminger
-ms.author: davidi
+author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/20/2021
+ms.date: 12/21/2021
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -126,8 +126,45 @@ Using our FactInternetSales example, after creating filters based on the paramet
 
 After filters have been applied and a subset of data has been loaded into the model, you then define an incremental refresh policy for the table. After the model is published to the service, the policy is used by the service to create and manage table partitions and perform refresh operations. To define the policy, you will use the **Incremental refresh and real-time data** dialog box to specify both required settings and optional settings.
 
-:::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog-02.png" alt-text="Define policy dialog":::
+:::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog.png" alt-text="Define policy dialog":::
 
+#### Table
+
+The **Select table** listbox defaults to the table you select in Data view. Enable incremental refresh for the table with the slider. If the Power Query expression for the table doesn't include a filter based on the RangeStart and RangeEnd parameters, the toggle is disabled.
+
+#### Required settings
+
+The **Archive data starting before refresh date** setting determines the historical period in which rows with a date/time in that period are included in the dataset, plus rows for the current incomplete historical period, plus rows in the refresh period up to the current date and time.
+
+For example, if we specify 5 *years*, our table will store the last five whole years of historical data in year partitions, plus rows for the current year in quarter, month, or day partitions, up to and including the refresh period.
+
+For datasets in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting. To learn more, see [Advanced incremental refresh - Partitions](incremental-refresh-xmla.md#partitions).
+
+The **Incrementally refresh data starting before refresh date** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the refresh partition(s) and refreshed with each refresh operation.
+
+For example, if we specify a refresh period of 3 days, with each refresh operation the service overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time within a three-day period, beginning and ending dependent on the current date and time. Rows with a date/time in the last 3 days up to the current refresh operation time are refreshed. With this type of policy, we can expect our FactInternetSales dataset table in the service, which averages 10k new rows per day, to refresh roughly 30k rows with each refresh operation.
+
+Be sure to specify a period that includes only the minimum number of rows required to ensure accurate reporting. If defining policies for more than one table, the same RangeStart and RangeEnd parameters must be used even if different store and refresh periods are defined for each table.
+
+#### Optional settings
+
+The **Get the latest data in real time with DirectQuery (Premium only)** setting enables fetching the latest changes from the selected table at the data source beyond the incremental refresh period by using DirectQuery. All rows with a date/time later than the incremental refresh period are included in a DirectQuery partition and fetched from the data source with every dataset query.
+
+For example, if enabled, with each refresh operation the service still overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time after the refresh period, beginning dependent on the current date and time. Rows with a date/time after the current refresh operation time are included. With this type of policy, we can expect our FactInternetSales dataset table in the service to include even the latest data updates.
+
+The **Only refresh complete days** ensures all rows for the entire day are included in the refresh operation. This setting is optional *unless* you enable the Get the latest data in real time with DirectQuery (Premium only) setting. Let's say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you do not want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the refresh period to 1 month and schedule the refresh to run on the 12th day of the month. With this option selected, it would, for example, refresh January data on February 12.
+
+Keep in mind, unless scheduled refresh is configured for a non-UTC time zone, refresh operations in the service run under UTC time, which can determine the effective date and effect complete periods.
+
+The **Detect data changes** setting enables even more selective refresh. You can select a date/time column used to identify and refresh only those days where the data has changed. This assumes such a column exists in the data source, which is typically for auditing purposes. This should *not* be the same column used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period. In this example, this could potentially further reduce the days incrementally refreshed from 3 to 1.
+
+The current design requires that the column to detect data changes is persisted and cached into memory. The following techniques can be used to reduce cardinality and memory consumption:
+
+- Persist only the maximum value of the column at time of refresh, perhaps by using a Power Query function.
+- Reduce the precision to an acceptable level, given your refresh-frequency requirements.
+- Define a custom query for detecting data changes by using the XMLA endpoint and avoid persisting the column value altogether.
+
+In some cases, enabling the Detect data changes option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use Tabular Model Scripting Language (TMSL) and/or the Tabular Object Model (TOM) to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
 
 ## Publish
 
@@ -148,8 +185,8 @@ After publishing to the service, you perform an initial refresh operation on the
 Subsequent refresh operations, either individual or scheduled are much faster because only the incremental refresh partition(s) is refreshed. Other processing operations must still occur, like merging partitions and recalculation, but it usually takes only a small fraction of time compared to the initial refresh.
 
 ## Automatic report refresh
-For reports using a dataset with an incremental refresh policy to get the latest data in real time with DirectQuery, it is a good idea to enable automatic page refresh at a fixed interval or based on change detection so that the reports include the latest data without delay. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
+For reports using a dataset with an incremental refresh policy to get the latest data in real time with DirectQuery, it's a good idea to enable automatic page refresh at a fixed interval or based on change detection so that the reports include the latest data without delay. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
 ## Advanced incremental refresh
 

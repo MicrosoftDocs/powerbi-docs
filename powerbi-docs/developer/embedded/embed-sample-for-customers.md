@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/05/2021
+ms.date: 12/27/2021
 
 ---
 
@@ -492,7 +492,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
 
-    b. Open a new tab in your browser and navigate to `http://localhost:5300`.
+    b. Open a new tab in your browser and navigate to `http://localhost:5000`.
 
 ---
 
