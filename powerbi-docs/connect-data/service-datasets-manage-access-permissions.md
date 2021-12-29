@@ -25,15 +25,15 @@ This document explains how to use the dataset manage permissions page.
 
 To open the dataset manage permissions page:
 
-* From the [datasets hub](service-datasets-hub.md#find-the-dataset-you-need): Click **Manage permissions** on the **More options (…)** menu.
+* From the [datasets hub](service-datasets-hub.md#find-the-dataset-you-need): Select **Manage permissions** on the **More options (…)** menu.
 
     ![Screenshot of dataset manage permissions page entry points on the datasets hub.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png)
 
-* From the [dataset info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports): Click the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
+* From the [dataset info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
 
     ![Screenshot of dataset manage permissions page entry points on the dataset info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
 
-* From the [Share dataset dialog](service-datasets-share.md): In the dialog header, click **Manage permissions** on the **More options (…)** menu. This opens the **Manage permissions** side pane. In the side pane, choose **Advanced** at the bottom of the pane.
+* From the [Share dataset dialog](service-datasets-share.md): In the dialog header, select **Manage permissions** on the **More options (…)** menu. This opens the **Manage permissions** side pane. In the side pane, choose **Advanced** at the bottom of the pane.
 
     ![Screenshot of dataset manage permissions page entry point on the Share dataset dialog.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-share-dataset-dialog.png)
  
@@ -41,9 +41,9 @@ These actions will open the datasets manage permissions page. The manage permiss
 
 ## Manage direct access
 
-The direct access tab lists users who have been granted access. For each user you can see their email address and the permissions they have.
+The direct access tab lists users who have been granted access. For each user, you can see their email address and the permissions they have.
 
-To modify a user’s permissions, click **More options (…)** and choose one of the available options.
+To modify a user’s permissions, select **More options (…)** and choose one of the available options.
  
 Click **+ Add user** to grant dataset access to another user. The [Share dataset dialog](service-datasets-share.md) will open.
 
