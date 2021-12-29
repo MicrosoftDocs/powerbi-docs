@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 12/21/2021
+ms.date: 12/29/2021
 ---
 
 # Understand the deployment process
@@ -70,7 +70,11 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 #### Auto-binding across pipelines
 
-Deployment pipelines also automatically binds Power BI items that are linked across pipelines. When you deploy such items, deployment pipelines will attempt to establish a new link between the deployed item and the equivalent item it's linked to in the other pipeline. For example, if you have a report in pipeline A that's linked to a dataset in pipeline B, deployment pipelines will recognize this link. Say the report and dataset are both in the development stages of their respective pipelines. When you deploy the report, it moves to the test stage in pipeline A. Deployment pipelines knows that this report is connected to a dataset in pipeline B, and it'll look for an equivalent dataset in the test stage in that pipeline. If such a dataset exists, deployment pipelines will automatically link it to the deployed report, which now resides in pipeline A.
+Deployment pipelines also automatically binds Power BI items that are linked across pipelines. When you deploy such items, deployment pipelines will attempt to establish a new link between the deployed item and the equivalent item it's linked to in the other pipeline. For example, if you have a report in pipeline A that's linked to a dataset in pipeline B, deployment pipelines will recognize this link. In a scenario where the report and dataset are both in the development stages of their respective pipelines. When you deploy the report, it moves to the test stage in pipeline A. Deployment pipelines knows that this report is connected to a dataset in pipeline B, and it'll look for an equivalent dataset in the test stage in that pipeline. If such a dataset exists, deployment pipelines will automatically link it to the deployed report, which now resides in pipeline A. However, if this dataset doesn't exist in the test stage of pipeline B, the deployment will fail.
+
+In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipeline will always try to maintain this connection. When you're deploying an item that has dependencies, the deployment will only succeed if the items it depends on are available in the relevant target stages. In such cases, auto-binding will occur and the connections will be reestablished after deployment.
+
+* Deploy a Power BI item that depends on another item, if the item isn't
 
 ### Refreshing data
 
