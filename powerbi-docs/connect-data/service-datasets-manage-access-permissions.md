@@ -19,7 +19,7 @@ The dataset manage permissions page enables you to monitor and manage access to 
 This document explains how to use the dataset manage permissions page.
 
 >[!NOTE]
-> In order to be able to access the manage permissions page for a dataset, you must have at least a [member role](../collaborate-share/service-roles-new-workspaces.md) in the workspace where the dataset is located.
+> In order to be able to access the manage permissions page for a dataset, you must have an [admin or member role](../collaborate-share/service-roles-new-workspaces.md) in the workspace where the dataset is located.
 
 ## Open the dataset manage permissions page
 
