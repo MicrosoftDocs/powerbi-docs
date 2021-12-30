@@ -78,7 +78,7 @@ In Power BI, when items are connected, one of the items depends on the other. Fo
 
 Auto-binding will not take place when parameter rules in one item, reference another. In such cases, You'll need to rebind the items after the deployment.
 
-Parameter rules can be used to control the connections between either datasets or dataflows, to other dataflows. In such cases, auto-binding will be kept only when the parameter rule doesn't include a reference to both the dataflow's ID and its workspace ID.
+Parameter rules can be used to control the connections between either datasets or dataflows, and other dataflows. In such cases, auto-binding will be kept only when the parameter rule doesn't include a reference to both the dataflow's ID and its workspace ID.
 
 ### Refreshing data
 
