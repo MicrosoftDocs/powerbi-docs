@@ -58,9 +58,11 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 ### Auto-binding
 
+In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipeline will always try to maintain this connection. When you're deploying an item that has dependencies, the deployment will only succeed if the items it depends on are available in the relevant target stages. In such cases, auto-binding will occur and the connections will be reestablished after deployment. However, if the item that the deployed item depends on, isn't in the target stage of the pipeline it belongs to, the deployment will fail.
+
 During deployment, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item relies on.
 
-* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that database.
+* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it depends on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that dataset.
 
 * **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
 
@@ -72,13 +74,20 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 Deployment pipelines automatically binds Power BI items that are connected across pipelines. When you deploy such items, deployment pipelines will attempt to establish a new connection between the deployed item and the item it's connected to in the other pipeline. For example, if you have a report in pipeline A that's connected to a dataset in pipeline B, deployment pipelines will recognize this connection. In a scenario where the report and dataset are both in the development stages of their respective pipelines, when you deploy the report, it moves to the test stage in pipeline A. Deployment pipelines knows that this report is connected to a dataset in pipeline B, and it'll look for an equivalent dataset in the test stage in that pipeline. If this dataset exists, deployment pipelines will automatically connect it to the deployed report, which now resides in pipeline A. However, if this dataset doesn't exist in the test stage of pipeline B, the deployment will fail because the dataset, which the report depends on, can't be found.
 
-In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipeline will always try to maintain this connection. When you're deploying an item that has dependencies, the deployment will only succeed if the items it depends on are available in the relevant target stages. In such cases, auto-binding will occur and the connections will be reestablished after deployment. However, if the item that the deployed item depends on, isn't in the target stage of the pipeline it belongs to, the deployment will fail.
+#### Auto-binding and parameters
 
-#### Auto-binding and parameter rules
+Parameters can be used to control the connections between datasets or dataflows and  the Power BI items that depend on them. In such cases, auto-binding after deployment will not take place. You'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
 
-Auto-binding will not take place when parameter rules in one item, reference another. In such cases, You'll need to rebind the items after the deployment.
+>[!NOTE]
+>Auto-binding will not take place when the connection includes a parameter rule that applies to the dataset’s or dataflow's ID or workspace ID.
 
-Parameter rules can be used to control the connections between either datasets or dataflows, and other dataflows. In such cases, auto-binding will be kept only when the parameter rule doesn't include a reference to both the dataflow's ID and its workspace ID.
+#### Disabling auto-binding
+
+There are two methods for disabling auto-binding:
+
+* Define a parameter rule
+
+* Don't connect the Power BI item to corresponding stages.
 
 ### Refreshing data
 
