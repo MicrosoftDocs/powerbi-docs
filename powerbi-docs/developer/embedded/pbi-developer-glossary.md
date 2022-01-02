@@ -58,51 +58,52 @@ Are now called *Quick Insights*.
 
 **BI, business intelligence**
 
-**bookmark**    
+**bookmark**
 A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
-**breadcrumbs**    
+**breadcrumbs**
 The navigation at the top left to quickly navigate between reports and dashboards.
 
 ## C
 
-**calculation**    
+**calculation**
 A mathematical determination of the size or number of something.
 
-**Capacity**    
+**Capacity**
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
-**card** (visual type)    
+**card** (visual type)
 A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-**card** (Power BI Home)    
+**card** (Power BI Home)
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
 
-**certified custom visual**    
+**certified custom visual**
 A Power BI custom visual that has met requirements and passed strict security testing.
 
-**classification**    
+**classification**
 Also called data classification. This option can be turned on by Power BI admins to raise awareness of the level of security required for a dashboard. The classification types can be customized by an organization.
 
-**connect live**    
+**connect live**
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
 
-**connector**    
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
+**connector**
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources.
 
-**container**    
+**container**
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
 
-**content**    
+**content**
 Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
 
-**content list**    
+**content list**
 The content index for an app.
 
-**content pack**    
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
+**content pack**
+ Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
 
 **content view**
+The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.
 
 **Continuous variable**     
 A continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
