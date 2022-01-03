@@ -1,12 +1,12 @@
 ---
 title: Glossary for Power BI developers
-description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
+description: Power BI documentation introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
 author: mberdugo
 ms.author: monaberdugo
 services: power-bi
 ms.reviewer: 
 ms.service: powerbi
-ms.subservice: pbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/03/2022
 ms.custom: contperf-fy21q1
@@ -152,7 +152,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 
 ### dashboard
 
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts.md).
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](../../consumer/end-user-basic-concepts.md#dashboards).
 
 ### data classification
 
@@ -407,7 +407,7 @@ An on-premises report server with a web portal in which you display and manage r
 
 ### Power BI service
 
-An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
+An online SaaS (Software as a service) service. For more information, see [What is Power BI](../../fundamentals/power-bi-overview.md).
 
 ### Premium workspace
 
@@ -600,4 +600,8 @@ The axis along the side, the vertical axis.
 
 ## Next steps
 
-[Basic concepts for Power BI service consumer](end-user-basic-concepts.md)
+> [!div class="nextstepaction"]
+> [Basic concepts for Power BI service consumer](../../consumer/end-user-basic-concepts.md)
+
+> [!div class="nextstepaction"]
+> [Basic concepts for designers](../../fundamentals/service-basic-concepts.md)
