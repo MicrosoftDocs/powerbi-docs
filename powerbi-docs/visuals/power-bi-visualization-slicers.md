@@ -74,7 +74,7 @@ This slicer filters data by district manager. If you want to follow along with t
 
 ## Control which page visuals are affected by slicers
 
-By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
+By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date slicers that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
 Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
