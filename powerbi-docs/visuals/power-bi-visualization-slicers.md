@@ -192,7 +192,7 @@ Different formatting options are available, depending on the slicer type. By usi
 
    :::image type="content" source="media/power-bi-visualization-slicers/6-buttons.png" alt-text="Screenshot of Horizontal options.":::
 
-For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power B I](../create-reports/power-bi-slicer-filter-responsive.md).
+For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### Selection controls options (list slicers only)
 
@@ -246,9 +246,9 @@ Date/numeric inputs and slider options are only available for range slider slice
 
 The other formatting options are **Off** by default. Turn **On** these options to control them: 
 
-- **Background**: Add a background color to the slicer and sets its transparency.
+- **Background**: Add a background color to the slicer and set its transparency.
 - **Lock aspect**: Keep the relative height and width of the slicer if it's resized.
-- **Border**: Add a border around the slicer and sets its color. This slicer border is separate from and unaffected by the **General** settings.
+- **Border**: Add a border around the slicer and set its color. This slicer border is separate from and unaffected by the **General** settings.
 - **Shadow**: Add a drop shadow to the slider.
 
 ## Next steps
