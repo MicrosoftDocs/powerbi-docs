@@ -33,25 +33,32 @@ The location where Power BI admins manage users, features, and settings for Powe
 
 When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement. Only implicit measures (see definition below) can be aggregated.
 
-**aggregation**    
+### aggregation
+
 The reduction of rows in underlying data sources to fit in a model. The result is an aggregate.
 
-**alert, alerts**    
+### alert, alerts
+
 A feature that notifies users of changes in the data based on limits they set. Alerts can be set on tiles pinned from report visuals. Users receive alerts on the service and on their mobile app.
 
-**annotate**    
+### annotate
+
 To write lines, text, or stamps on a snapshot copy of a tile, report, or visual on the Power BI mobile app for iOS and Android devices.
 
-**app, apps**     
+### app, apps
+
 A bundle of dashboards, reports, and datasets. It also refers to the mobile apps for consuming content, such as Power BI app for iOS.
 
-**AppSource**    
+### AppSource
+
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
 
-**ArcGIS for Power BI**    
+### ArcGIS for Power BI
+
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
-**Auto Insights**    
+### Auto Insights
+
 Are now called *Quick Insights*.
 
 ## B
