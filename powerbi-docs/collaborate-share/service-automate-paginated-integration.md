@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 01/04/2022
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you learn which templates to use to build your own flows to export your paginated reports.  
+
+Power Automate is a no-code way to interact with the Export To File API in the user interface. See the [connector reference article for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
 
 ## Prerequisites  
 
