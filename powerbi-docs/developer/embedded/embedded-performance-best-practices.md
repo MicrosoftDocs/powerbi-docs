@@ -1,6 +1,6 @@
 ---
 title: Best practices for faster performance in Power BI embedded analytics 
-description: This article provides guidance for Power BI embedded analytics best practices for fast rendering.
+description: This article provides recommendations for Power BI embedded analytics best practices for fast rendering.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.date: 01/04/2022
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
 > [!Note]
-> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and measures. For more information, refer to the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
+> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and measures. For more information, see the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
 
 ## Update tools and SDK packages
 
@@ -23,7 +23,7 @@ Keep tools and SDK packages up-to-date.
 
 * Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
-* Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release additional enhancements, so make sure to follow up from time to time.
+* Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release new enhancements, so make sure to follow up from time to time.
 
 ## Embed parameters
 
@@ -35,13 +35,13 @@ Avoid generating the embed URL yourself. Instead, make sure you get the Embed UR
 
 ### Permissions
 
-Provide **View** permissions if you don't intend to embed a report in edit mode. This way, the embedded code doesn't spend time initializing components which are only used in edit mode.
+Provide **View** permissions if you don't intend to embed a report in edit mode. This way, time isn't spent initializing components that are only used in edit mode.
 
 ### Filters, bookmarks, and slicers
 
 Usually, report visuals are saved with cached data. Reports render the cached data while queries are executed. If filters, bookmarks, or slicers are provided, cached data isn't used and the visuals are rendered only after the visual query has ended.
 
-If you embed reports with the same filters, bookmarks, and slicers, save the report with the filters, bookmarks, and slicers already applied. This way, the report renders with the cached data which includes the filters, bookmarks, and slicers, and this improves performance.
+If you embed reports with the same filters, bookmarks, and slicers, save the report with the filters, bookmarks, and slicers already applied. When you save the report this way, it will render using the cached data that includes the filters, bookmarks, and slicers, which improves performance.
 
 ## Switching between reports
 
@@ -56,9 +56,9 @@ When embedding several visuals from the same report, don't generate a new iframe
 
 When embedding multiple reports into a single iframe, keep in mind the following limitations:
 
-* The visuals should be adjacent to each other. If the visuals are not adjacent to each other (for example, if you want to have text in between them that does not come from Power BI), then you need a different iframe for each cluster of adjacent visuals.
+* Visuals in the same iframe are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iframe for each cluster of adjacent visuals.
 
-* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iframe. Alternatively, you can embed a dashboard into the iframe and pin the visuals to the dashboard. Keep in mind, however, that tiles pinned to a dashboard are not interactive and do not [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
+* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iframe. Alternatively, you can embed a dashboard into the iframe and pin the visuals to the dashboard. Keep in mind, however, that tiles pinned to a dashboard aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
 ## Query caching
 
@@ -95,7 +95,7 @@ To measure embedded performance, you may use two events:
 1. Loaded event: The time until the report is initialized (the Power BI logo will disappear when the load is finished).
 2. Rendered event: The time until the report is fully rendered, using the actual data. The rendered event is fired each time the report is re-rendered (for example, after applying filters). To measure a report, make sure you do the calculations on the first raised event.
 
-Cached data is rendered when available but no additional event is generated.
+Cached data is rendered when available but no other event is generated.
 
 [Learn more about event handling](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events).
 
