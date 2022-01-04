@@ -34,9 +34,9 @@ Workspace permissions, sometimes referred to as folder permissions or [roles](./
 
 Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](./../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-### Write
+### Write permissions
 
-There's one more permission, which is titled *write*. The write permission is higher than the admin permission, but it can't be granted or deleted. You get the write permission if you created the a Power BI item (such as a dataset), or if the item is in your Power BI service *my workspace* folder.
+There's one more workspace permission, which is titled *write*. The write permission is higher than the admin permission, but it can't be granted or deleted. You get the write permission if you created the a Power BI item (such as a dataset), or if the item is in your Power BI service *my workspace* folder.
 
 ## Item permissions
 
@@ -62,7 +62,7 @@ The table below describes the Power BI dataset permissions.
 
 ### Build permissions
 
-In the [Power BI REST APIs](/rest/api/power-bi/), the build permission is returned as *explore*.
+In the [Power BI REST APIs](/rest/api/power-bi/), the build permission is returned as *explore*. For example, a returned string can look like this: `ReadReshareExplore`.
 
 When you give a user the build permission, the user can build new content on your dataset. Examples for such content are reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery.
 
@@ -100,7 +100,7 @@ These limitations are relevant for the [Datasets - Post Dataset User](/rest/api/
 
 * These APIs only support users and groups. Service principals are not supported.
 
-* You cannot use this API to remove dataset permissions.
+* You cannot use these API to remove dataset permissions.
 
 ## Next steps
 
