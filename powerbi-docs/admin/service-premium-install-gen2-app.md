@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/19/2021
+ms.date: 01/04/2022
 LocalizationGroup: Premium 
 ---
 
@@ -137,7 +137,7 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
 5. Select **Next**.
 
-6. In the In the **Connect to Premium Capacity Utilization And Metrics** second window, fill in the following fields:
+6. In the **Connect to Premium Capacity Utilization And Metrics** second window, fill in the following fields:
 
     * **Authentication method** - Select your authentication method. The default authentication method is *OAuth2*.
 
@@ -148,11 +148,11 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
 7. Select **Sign in and continue**.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign in and continue button is highlighted":::
+    :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign in and continue button is highlighted.":::
 
-8. Select a capacity form the **capacity name** dropdown.
+8. Select a capacity from the **capacity name** dropdown.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app":::
+    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app.":::
 
 9. After configuring the app, it may take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
 
