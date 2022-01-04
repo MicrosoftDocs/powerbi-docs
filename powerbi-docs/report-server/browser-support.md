@@ -51,7 +51,6 @@ The following is the current list of browsers supported with the Report Viewer w
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
@@ -100,7 +99,6 @@ Use a browser that has script support enabled. If the browser cannot run scripts
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
