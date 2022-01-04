@@ -7,7 +7,7 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 01/03/2022
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page
@@ -30,7 +30,7 @@ When you feature a dashboard or report from a workspace, people with at least a 
 
 ## Feature a dashboard or report
 
-The procedure for featuring either a dashboard or report is similar.
+To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. The procedure for featuring either a dashboard or report is similar.
 
 1. In the **All** or **Content** list for a workspace, select **More options (...)** > **Settings**.
 
@@ -48,11 +48,13 @@ The procedure for featuring either a dashboard or report is similar.
 
 ## Feature an app
 
-- To feature an app, open the workspace for the app, select the **Options** menu (**...**) > **Feature this app on Home**.
+To feature app, you need to have the Admin or Member role in a workspace. 
+
+- Open the *workspace* for the app, not the app itself, and select the **Options** menu (**...**) > **Feature this app on Home**.
 
     :::image type="content" source="media/service-featured-content/power-bi-feature-app-home.png" alt-text="Screenshot of Feature this app on Home.":::
 
-Now everyone who has access to this app will also see it in the **Featured** section on **Home**.
+Now everyone who has access to this app also sees it in the **Featured** section on **Home**.
 
 ## Considerations
 

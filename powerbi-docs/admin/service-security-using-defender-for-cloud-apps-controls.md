@@ -40,16 +40,17 @@ The steps necessary to set session controls are completed in the Azure AD and De
 
 Defender for Cloud Apps operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Defender for Cloud Apps article](/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
 
-1. [Create an Azure AD conditional access test policy](/cloud-app-security/proxy-deployment-aad#add-azure-ad)
-2. [Sign into each app using a user scoped to the policy](/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
-3. [Verify the apps are configured to use access and session controls](/cloud-app-security/proxy-deployment-aad#portal)
-4. [Test the deployment](/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
+1. [Create an Azure AD conditional access test policy](/defender-cloud-apps/proxy-deployment-aad#conf-idp)
+1. [Sign into each app using a user scoped to the policy](/defender-cloud-apps/proxy-deployment-aad#sign-in-scoped)
+1. [Verify the apps are configured to use access and session controls](/defender-cloud-apps/proxy-deployment-aad#portal)
+1. [Enable the app for use in your organization](/defender-cloud-apps/proxy-deployment-aad#enable-app)
+1. [Test the deployment](/defender-cloud-apps/proxy-deployment-aad#test)
 
-The process for setting session policies is described in detail in the [Session policies](/cloud-app-security/session-policy-aad) article.
+The process for setting session policies is described in detail in the [Session policies](/defender-cloud-apps/session-policy-aad) article.
 
 ### Set anomaly detection policies to monitor Power BI activities (recommended)
 
-You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
+You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](/defender-cloud-apps/anomaly-detection-policy#scope-anomaly-detection-policies).
 
 Defender for Cloud Apps also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-defender-for-cloud-apps-detections-for-power-bi).
 
@@ -70,7 +71,7 @@ Defender for Cloud Apps activity policies enable administrators to define their 
 > [!NOTE]
 > The unique identifiers (IDs) of Power BI artifacts and sensitivity labels can be found using [Power BI REST APIs](/rest/api/power-bi/). See [Get datasets](/rest/api/power-bi/datasets/getdatasets) or [Get reports](/rest/api/power-bi/reports/getreports).
 
-Custom activity policies are configured in the Defender for Cloud Apps portal. [Learn more](/cloud-app-security/user-activity-policies).
+Custom activity policies are configured in the Defender for Cloud Apps portal. [Learn more](/defender-cloud-apps/user-activity-policies).
 
 ## Built-in Defender for Cloud Apps detections for Power BI
 
@@ -80,7 +81,7 @@ Defender for Cloud Apps detections enable administrators to monitor specific act
 
 * **Mass share of reports** – detects when a user shares a massive number of reports in a single session.
 
-Settings for these detections are configured in the Defender for Cloud Apps portal. [Learn more](/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user).
+Settings for these detections are configured in the Defender for Cloud Apps portal. [Learn more](/defender-cloud-apps/anomaly-detection-policy#unusual-activities-by-user).
 
 ## Power BI admin role in Defender for Cloud Apps
 
@@ -92,7 +93,7 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
-* Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. [See more detail](/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+* Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. [See more detail](/defender-cloud-apps/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > In the session policy, in the "Action" part, the "protect" capability works only if no label exists on the item. If a label already exists, the "protect" action won't apply; you can't override an existing label that has already been applied to an item in Power BI.
@@ -137,8 +138,8 @@ This article described how Defender for Cloud Apps can provide data and content 
 
 You might also be interested in the following Azure and security articles:
 
-* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad)
-* [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad)
-* [Session policies](/cloud-app-security/session-policy-aad)
+* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad)
+* [Deploy Conditional Access App Control for featured apps](/defender-cloud-apps/proxy-deployment-aad)
+* [Session policies](/defender-cloud-apps/session-policy-aad)
 * [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)

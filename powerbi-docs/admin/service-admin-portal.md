@@ -531,6 +531,10 @@ Because of this possible threat, the Azure AD Single Sign-On feature is disabled
 
 ![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
 
+## Power BI visuals settings
+
+All the Power BI visuals admin settings, including Power BI visuals tenant settings, are described in [Manage Power BI visuals admin settings](organizational-visuals.md).
+
 ## R and Python visuals settings
 
 ### Interact with and share R and Python visuals

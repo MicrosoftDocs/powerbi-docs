@@ -76,7 +76,8 @@ The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 22: [Bonus Content: Review](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 23: [Bonus Content: Evolution of Paginated Reporting](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
-  - Video 25: [Bonus Content: December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+- **Updates**
+  - Video 25: [December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Attendee kit
 
@@ -85,8 +86,8 @@ You can download and set up an attendee kit, which consists of the presentation 
 1. Use [this link](https://aka.ms/priad-en) to download the _English_ language attendee kit (.zip) locally to your PC (Windows 8, or later). Alternatively, use [this link](https://aka.ms/priad-student) to download the _localized_ attendee kit (.zip) locally to your PC (Windows 8, or later).
 1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
-1. Extract the **PowerBIPRIAD-Student.zip** file contents to your root course folder.
-1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD** folder, open the **ReadMe.txt** file and work through the setup instructions.
+1. Extract the **PowerBIPRIAD-Attendee.zip** file contents to your root course folder.
+1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A** folder, open the PDF lab document and follow the lab instructions.
 
 > [!NOTE]
 > In the localized attendee kit, you will find documents for the following eight languages:

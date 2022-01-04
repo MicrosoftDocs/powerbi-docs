@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/05/2021
+ms.date: 01/03/2022
 ---
 # Power BI webinars
-[//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
+[//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) and Anna Khachatryan (v-annakh) are vendors who work with Chauncy Freels and help to maintain this list of webinars"
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
 
@@ -21,6 +21,14 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Power BI 101: Create Reports Quickly and Effectively**  
+by Amanda Rivera  
+[Watch now](https://info.microsoft.com/ww-landing-bi101createreportseffectively.html)
+
+**Power BI How-to: Analyze Real-Time Data with Streaming Dataflows**  
+by Mohammad Ali and Jeroen ter Heerdt  
+[Watch now](https://info.microsoft.com/ww-ondemand-power-bi-how-to-analyze-real-time-data-with-streaming-dataflows.html)
 
 **Webinar Series: Mastering Data Modeling with Power BI  
 Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
