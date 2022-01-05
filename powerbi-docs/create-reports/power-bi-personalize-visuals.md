@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 01/03/2022
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -20,7 +20,7 @@ When you share a report with a broad audience, some of your users may want to se
  
 ## What report users can change
 
-This feature allows business users to gain further insights through ad-hoc exploration of visuals on a Power BI report. To learn how to use this feature as a user, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). The feature is ideal for report creators who want enable basic exploration scenarios for their report readers. Here are modifications that report readers can make:
+This feature is ideal for report creators: You can enable basic exploration scenarios for your report readers. Your report readers gain further insights through ad-hoc exploration of visuals on a Power BI report. Here are modifications that they can make:
 
 - Change the visualization type
 - Swap out a measure or dimension
@@ -32,9 +32,11 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 
 - Capture their changes
 - Share their changes
-- Reset all their changes for a report
+- Reset all their changes for a report. Selecting **Reset to default** removes all personalizations.
 - Reset all their changes for a visual
 - Clear out their recent changes
+
+After report readers personalize a report, they can [create personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to save their personalizations. To learn how report readers can use this feature, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). 
 
 ## Enable personalization in a report
 
@@ -135,9 +137,9 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 Currently the feature has a few limitations to be aware of.
 
 - This feature isn't supported for publish to web.
-- Export to PowerPoint and PDF do not capture personalized visuals.
-- User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
-- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+- Export to PowerPoint and PDF don't capture personalized visuals.
+- User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
+- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Next steps
 
