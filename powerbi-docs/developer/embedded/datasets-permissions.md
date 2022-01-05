@@ -58,7 +58,7 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 >[!TIP]
 >Although the API permissions are identical to the Power BI service permissions, [build](#build-permissions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
 
-|Permission             |Read     |Explore (also known as build)  |Reshare  |
+|Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
 |Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read permissions for it |
 |**ReadReshareExplore** |✔️       |✔️      |✔️       |
@@ -71,11 +71,11 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 
 ### Build permissions and REST APIs
 
-In the [Power BI REST APIs](/rest/api/power-bi/), the build permission is returned as *explore*. For example, a returned string with the *read*, *reshare* and *build* permissions, will look like this: `ReadReshareExplore`.
+In the [Power BI REST APIs](/rest/api/power-bi/), the build permission is returned as *explore*. For example, a string with the *read*, *reshare* and *build* permissions, will look like this: `ReadReshareExplore`.
 
 When you give a user the build permission, the user can build new content on your dataset. Examples for such content are reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery.
 
-Users also need Build permissions to work with data outside Power BI:
+Users also need build permissions to work with data outside Power BI:
 
 * To export the underlying data.
 
