@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/03/2022
+ms.date: 01/05/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -262,6 +262,10 @@ Visuals with more data points than Power BI can render. Power BI samples the dat
 The default landing page for Power BI service users. Doesn't modify anything. Can be called Power BI Home or simply Home.
 
 ## I
+
+### Inline frame, iFrame
+
+A component of an HTML element that allows you to embed reports and other artifacts inside your app. By doing this, you can display a secondary webpage on your main page
 
 ### Implicit measures
 
@@ -548,7 +552,7 @@ summarization
 
 ### Tiles
 
-Power BI dashboards contain report tiles.
+A [tile](/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 

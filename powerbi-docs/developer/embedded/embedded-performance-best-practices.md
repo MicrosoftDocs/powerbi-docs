@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/04/2022
+ms.date: 01/05/2022
 ---
 
 # Best practices for faster performance in Power BI embedded analytics
@@ -45,20 +45,22 @@ If you embed reports with the same filters, bookmarks, and slicers, save the rep
 
 ## Switching between reports
 
-When embedding multiple reports to the same space, don't generate a new iframe for each report. Instead, embed the new report in the same iframe to overwrite the previous report. Use `powerbi.embed(element, config)` with a different config to embed the new report.
+When embedding multiple reports to the same space, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each report. Instead, embed the new report in the same iFrame to overwrite the previous report. Use `powerbi.embed(element, config)` with a different config to embed the new report.
 
 > [!NOTE]
 > Embedding reports using embed for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](/rest/api/power-bi/embed-token/generate-token).
 
 ## Multiple visuals
 
-When embedding several visuals from the same report, don't generate a new iframe for each visual. Use a single iframe to render the report with the specified visuals.
+When embedding several visuals from the same report, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each visual. Use a single iFrame to [render the report](/javascript/api/overview/powerbi/embed-report) with the [specified visuals](/visuals/power-bi-report-change-visualization-type).
 
-When embedding multiple reports into a single iframe, keep in mind the following limitations:
+When embedding multiple visuals into a single iFrame, consider the following:
 
-* Visuals in the same iframe are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iframe for each cluster of adjacent visuals.
+* Visuals in the same iFrame are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iFrame for each rectangular region of adjacent visuals.
 
-* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iframe. Alternatively, you can embed a dashboard into the iframe and pin the visuals to the dashboard. Keep in mind, however, that tiles pinned to a dashboard aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
+* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
+
+* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to embed a [dashboard](pbi-glossary.md#dashboard) into the iFrame and pin the visuals to the dashboard. Dashboards are lighter than reports and will load faster. Keep in mind, however, that [tiles](/create-reports/service-dashboard-tiles) pinned to a dashboard aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
 ## Query caching
 
@@ -72,19 +74,19 @@ Use `powerbi.preload()` to improve the end-user performance. The method `powerbi
 
 Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
 
-## Bootstrapping the iframe
+## Bootstrapping the iFrame
 
 > [!NOTE]
-> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 is required to bootstrap the iframe.
+> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 is required to bootstrap the iFrame.
 
-`powerbi.bootstrap(element, config)` allows you to start embedding before all required parameters are available. The bootstrap API prepares and initializes the iframe.
+`powerbi.bootstrap(element, config)` allows you to start embedding before all required parameters are available. The bootstrap API prepares and initializes the iFrame.
 When using the bootstrap API, it's still required to call `powerbi.embed(element, config)` on the same HTML element.
 
-For example, one of the use cases for this feature, is to run the iframe bootstrap and the back-end calls for embedding, in parallel.
+For example, one of the use cases for this feature, is to run the iFrame bootstrap and the back-end calls for embedding, in parallel.
 > [!TIP]
-> Use the bootstrap API when it's possible to generate the iframe before it's visible to the end user.
+> Use the bootstrap API when it's possible to generate the iFrame before it's visible to the end user.
 
-[Learn more about iframe bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
+[Learn more about iFrame bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
 
 ## Measure performance
 
