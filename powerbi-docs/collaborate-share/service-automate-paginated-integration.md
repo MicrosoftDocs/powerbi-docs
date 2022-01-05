@@ -38,6 +38,10 @@ Select a template from the list to get started with a step-by-step walkthrough.
 - [Export a Power BI paginated report for items in a SharePoint Online List, or for each row in an Excel Online table](service-automate-paginated-excel-sharepoint-list.md).
 - [Save a Power BI paginated report to a local system folder](service-automate-paginated-local-file.md).
 
+## Limitations
+
+When using Power Automate to export a paginated report that's larger than 20 MB, it's likely that the export will fail.
+
 ## Next steps
 
 - The [Power BI export API for paginated reports](../developer/embedded/export-paginated-report.md)
