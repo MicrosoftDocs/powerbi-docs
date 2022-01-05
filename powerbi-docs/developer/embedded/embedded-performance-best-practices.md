@@ -60,7 +60,7 @@ When embedding multiple visuals into a single iFrame, consider the following:
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and [creating a new report](/create-reports/) so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to pin the visuals to a [dashboard](pbi-glossary.md#dashboard) and embed the [tiles](/create-reports/service-dashboard-tiles) into the iFrame. Dashboards are lighter than reports and will load faster. Keep in mind, however, that [dashboard tiles](/create-reports/service-dashboard-tiles) aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
+* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to pin the visuals to a [dashboard](pbi-glossary.md#dashboard) and embed the [tiles](/create-reports/service-dashboard-tiles) into the iFrame. Dashboards are lighter than reports and will load faster. Keep in mind, however, that dashboard tiles aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
 ## Query caching
 
