@@ -14,7 +14,7 @@ ms.date: 01/03/2022
 
 # Datasets permissions
 
-This article describes Power BI permissions in general, and dataset permissions in the context of the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/).
+This article describes Power BI permissions in general, and dataset permissions in the context of the [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Power BI permissions
 
@@ -28,7 +28,7 @@ Power BI also has a [write](#write-permissions) permission which isn't part of t
 
 ### Workspace permissions
 
-Workspace permissions, sometimes referred to as folder permissions or [roles](./../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder. There are four types of workspace permissions:
+Workspace permissions, sometimes referred to as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder. There are four types of workspace permissions:
 
 * Admin
 
@@ -38,7 +38,7 @@ Workspace permissions, sometimes referred to as folder permissions or [roles](./
 
 * Viewer
 
-Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](./../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
 ### Item permissions
 
@@ -53,14 +53,14 @@ There's one more permission titled *write*. The write permission is applied to a
 
 ## Dataset permissions and REST APIs
 
-Dataset permissions are part of the [item permissions](#item-permissions). The table below lists  the Power BI dataset permissions and their representation in the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/).
+Dataset permissions are part of the [item permissions](#item-permissions). The table below lists  the Power BI dataset permissions and their representation in the [Power BI REST APIs](/rest/api/power-bi/).
 
 >[!TIP]
->Although the API permissions are identical to the Power BI service permissions, [build](#build-permisions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
+>Although the API permissions are identical to the Power BI service permissions, [build](#build-permissions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
 
 |Permission             |Read     |Explore (also known as build)  |Reshare  |
 |-----------------------|---------|---------|---------|
-|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permisions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read permissions for it |
+|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read permissions for it |
 |**ReadReshareExplore** |✔️       |✔️      |✔️       |
 |**ReadReshare**        |✔️       |❌      |✔️       |
 |**ReadExplore**        |✔️       |✔️      |❌       |
