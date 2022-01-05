@@ -52,15 +52,18 @@ When embedding multiple reports to the same space, don't generate a new [iFrame]
 
 ## Multiple visuals
 
-When embedding several visuals from the same report, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each visual. Use a single iFrame to [render the report](/javascript/api/overview/powerbi/embed-report) with the [specified visuals](/visuals/power-bi-report-change-visualization-type).
+When embedding several visuals from the same report, don't generate a new [iFrame](pbi-glossary.md#inline-frame-iframe) for each visual. Use a single iFrame to [render the report](/javascript/api/overview/powerbi/embed-report) with the [specified visuals](/javascript/api/overview/powerbi/embed-visual).
 
 When embedding multiple visuals into a single iFrame, consider the following:
 
 * Visuals in the same iFrame are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iFrame for each rectangular region of adjacent visuals.
 
-* If you have visuals from different reports or different datasets, consider joining the datasets and [creating a new report](/create-reports/) so that you can include all the visuals in the same iFrame.
+* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to pin the visuals to a [dashboard](pbi-glossary.md#dashboard) and embed the [tiles](/create-reports/service-dashboard-tiles) into the iFrame. Dashboard tiles are lighter than reports and will load faster. Keep in mind, however, that dashboard tiles aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
+* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
+  * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into non-contiguous iFrames. Dashboard tiles are lighter than reports and load faster.
+  * Embed the entire dashboard into one iFrame. This allows you have visuals from different reports or datasets in one iFrame without creating a new report.
+Keep in mind, however, that dashboard tiles aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
 ## Query caching
 
