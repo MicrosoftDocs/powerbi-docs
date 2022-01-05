@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/06/2021
+ms.date: 01/04/2022
 ---
 
 # Change log for Power BI Report Server
@@ -18,6 +18,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## September 2021
 - **Power BI Report Server**
+    - *Version: 1.12.7981.11681 (build 15.0.1107.166), Released: December 6, 2021*
+    	- Version number update only, no functional changes.
     - *Version: 1.12.7977.29537 (Build 15.0.1107.165), Released: November 9, 2021*
         - Bug fixes
             - Fixed issue blocking upload of CSV, XLS, and XLSB files.

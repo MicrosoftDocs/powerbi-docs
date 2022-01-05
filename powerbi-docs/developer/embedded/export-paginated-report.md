@@ -332,6 +332,8 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
+* In an occurrence of a timeout error post the 60th minute mark while exporting large amounts of data consider minimizing the data using appropriate filters. 
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
