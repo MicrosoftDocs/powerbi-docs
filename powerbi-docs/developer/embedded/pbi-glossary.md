@@ -265,11 +265,11 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-A component of an HTML element that allows you to embed reports and other artifacts inside your app. By doing this, you can display a secondary webpage on your main page
+An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's basically a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
-Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report. 
+Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
 
 ### Insights
 

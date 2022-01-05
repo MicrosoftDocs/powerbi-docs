@@ -58,7 +58,7 @@ When embedding multiple visuals into a single iFrame, consider the following:
 
 * Visuals in the same iFrame are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iFrame for each rectangular region of adjacent visuals.
 
-* If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
+* If you have visuals from different reports or different datasets, consider joining the datasets and [creating a new report](/create-reports/) so that you can include all the visuals in the same iFrame.
 
 * Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to embed a [dashboard](pbi-glossary.md#dashboard) into the iFrame and pin the visuals to the dashboard. Dashboards are lighter than reports and will load faster. Keep in mind, however, that [tiles](/create-reports/service-dashboard-tiles) pinned to a dashboard aren't interactive and don't [refresh](/power-bi/connect-data/refresh-data) with the same frequency as visuals.
 
