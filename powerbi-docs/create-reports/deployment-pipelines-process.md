@@ -415,11 +415,15 @@ This section lists most of the limitations in deployment pipelines.
 
 * When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
 
-* In deployment pipelines, service principal isn't supported for dataflows.
+* Service principal isn't supported for dataflows.
 
 * Deploying common data model (CDM) isn't supported.
 
 * For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+
+* If a dataflow is being refreshed during deployment, the deployment will fail.
+
+* When comparing stages during dataflow refresh, the results are unpredictable.
 
 ## Next steps
 
