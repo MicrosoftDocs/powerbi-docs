@@ -7,14 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/02/2021
+ms.date: 01/03/2022
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
 
-With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports to a variety of formats and scenarios. In this article, you create your own flow from scratch. You use the Export to File for Power BI Reports action to automatically distribute a Power BI report via email.
+With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports to a variety of formats and scenarios. In this article, you create your own flow from scratch. You use the Export to File for Power BI Reports action to automatically distribute a Power BI report via email. 
 
 :::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Power Automate steps to export and email a report.":::
+
+Power Automate is a no-code way to interact with the Export To File API in the user interface. See the [connector reference article for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
 
 ## Prerequisites  
 

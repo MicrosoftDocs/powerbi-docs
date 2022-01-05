@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2020
+ms.date: 12/20/2021
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
@@ -18,11 +18,11 @@ Planned maintenance for the Power BI service is a necessary part of our commitme
 
 Maintenance is planned to happen outside of normal business hours to help minimize any impact to your organization. For organizations that have users around the globe, we recognize that "outside of normal business hours" might affect you differently. We apologize for any effect to your users. We're working hard to improve Power BI and to minimize these maintenance windows.
 
-If your organization is affected, we'll provide you with advance notice. Microsoft 365 admins will see an advance notice in the Microsoft 365 Message center and will receive email. Additionally, customers with Premier Support contracts will be notified through their Microsoft account team.
+If your organization is affected, we'll provide you with advance notice. Microsoft 365 admins will see an advance notice in the Microsoft 365 Message center.
 
 ## Actions to take now
 
-* Microsoft 365 administrators should [check the Message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter) for messages about Power BI planned maintenance. Share the message with people who should be aware but may not have access to Message center.
+* Microsoft 365 administrators should [check the Message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter) for messages about Power BI planned maintenance. Share the message with people who should be aware but may not have access to Message center. Set your preferences in Message center to receive email notifications.
 * If you're not a Microsoft 365 admin, engage with your IT department or your internal support teams to ask about any upcoming maintenance.
 
 ## Actions to take when maintenance is complete

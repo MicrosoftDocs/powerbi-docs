@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 12/21/2021
 LocalizationGroup: 
 ---
 
@@ -17,11 +17,11 @@ Datasets in a Premium capacity with the [XMLA endpoint](../admin/service-premium
 
 ## Partitions
 
-Dataset table partitions are not visible and cannot be managed in the Power BI user interface. For datasets in a workspace assigned to a Premium capacity, partitions can be managed through the XMLA endpoint by using tools like SQL Server Management Studio (SSMS), the open-source Tabular Editor, scripted with Tabular Model Scripting Language (TMSL), and programmatically with the Tabular Object Model (TOM).
+Dataset table partitions are not visible and cannot be managed by using Power BI Desktop or the Power BI user interface in the browser. For datasets in a workspace assigned to a Premium capacity, partitions can be managed through the XMLA endpoint by using tools like SQL Server Management Studio (SSMS), the open-source Tabular Editor, scripted with Tabular Model Scripting Language (TMSL), and programmatically with the Tabular Object Model (TOM).
 
-When you first publish a model to the service, each table in the new dataset has one partition. For tables with no incremental refresh policy, that one partition contains all rows of data for that table (unless filters have been applied). For tables with an incremental refresh policy, that one initial partition only exists because Power BI has not yet applied the incremental refresh policy. You configured the initial partition in Power BI Desktop when you defined by the date/time range filter for your table based on the RangeStart and RangeEnd parameters, and any other filters applied in Power Query Editor. This initial partition will contain only those rows of data that meet your filter criteria.
+When you first publish a model to the service, each table in the new dataset has one partition. For tables with no incremental refresh policy, that one partition contains all rows of data for that table (unless filters have been applied). For tables with an incremental refresh policy, that one initial partition only exists because Power BI has not yet applied the policy. You configured the initial partition in Power BI Desktop when you defined by the date/time range filter for your table based on the RangeStart and RangeEnd parameters, and any other filters applied in Power Query Editor. This initial partition will contain only those rows of data that meet your filter criteria.
 
-When you perform the *first* dataset refresh operation, tables with no incremental refresh policy will refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, refresh and historical partitions are automatically created and rows are loaded into them according to the date/time for each row.  If the incremental refresh policy includes getting data in real time, Power BI also adds a DirectQuery partition to the table.
+When you perform the *first* dataset refresh operation, tables with no incremental refresh policy will refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, refresh and historical partitions are automatically created and rows are loaded into them according to the date/time for each row. If the incremental refresh policy includes getting data in real time, Power BI also adds a DirectQuery partition to the table.
 
 This first refresh operation can take quite some time depending on the amount of data that needs to be loaded from the data source. The complexity of the model can also be a significant factor because refresh operations must perform additional processing and recalculation. This operation can be bootstrapped. To learn more, see [Prevent timeouts on initial full refresh](#prevent-timeouts-on-initial-full-refresh) later in this article.
 
@@ -81,8 +81,9 @@ To learn more about overriding default incremental refresh behavior with TMSL, s
 
 With each refresh operation, the Power BI service may send initialization queries to the data source for each incremental refresh partition. You may be able to improve incremental refresh performance by reducing the number of initialization queries by ensuring the following: 
 
-- The table you configure incremental refresh for should get data from a single data source. If the table gets data from more than one data source, the number of queries sent by the service for each refresh operation is multiplied by the number of datasources, potentially reducing refresh performance. Ensure the query for the incremental refresh table is for a single data source.
-- If your security requirements allow, set the Data source privacy level setting to Organizational or Public. By default, the privacy level is Private, however this level can prevent data from being exchanged with other cloud sources. Set privacy level in **Dataset Settings** > **Data source credentials** > **Edit credentials** > **Privacy level setting for this datasource**. If Privacy level is set in the Power BI Desktop model before publishing to the service, it is not transferred to the service when you publish. You must still set it in dataset settings in the service. To learn more, see [Privacy levels](../admin/desktop-privacy-levels.md).
+- The table you configure incremental refresh for should get data from a single data source. If the table gets data from more than one data source, the number of queries sent by the service for each refresh operation is multiplied by the number of data sources, potentially reducing refresh performance. Ensure the query for the incremental refresh table is for a single data source.
+- For solutions with both incremental refresh of import partitions and real-time data with Direct Query, *all partitions* must query data from a single data source.
+- If your security requirements allow, set the Data source privacy level setting to Organizational or Public. By default, the privacy level is Private, however this level can prevent data from being exchanged with other cloud sources. Set privacy level in **Dataset Settings** > **Data source credentials** > **Edit credentials** > **Privacy level setting for this data source**. If Privacy level is set in the Power BI Desktop model before publishing to the service, it is not transferred to the service when you publish. You must still set it in dataset settings in the service. To learn more, see [Privacy levels](../admin/desktop-privacy-levels.md).
 - If using an On-premises Data Gateway, be sure you’re using version 3000.77.3 or higher.
 
 ## Prevent timeouts on initial full refresh
@@ -155,8 +156,9 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 
 ![ALM Toolkit](media/incremental-refresh-xmla/alm-toolkit.png)
 
-## Adding an incremental refresh policy and real-time data programmatically 
-You can also use the Tabular Model Scripting Language (TMSL) and the Tabular Object Model (TOM) to add an incremental refresh policy to an existing dataset through XMLA endpoints.
+## Adding an incremental refresh policy and real-time data programmatically
+
+You can also use the TMSL and TOM to add an incremental refresh policy to an existing dataset through the XMLA endpoint.
 
 > [!NOTE]
 > To avoid compatibility issues, make sure you use the latest version of the Analysis Services client libraries. For example, to work with Hybrid policies, the version must be 19.27.1.8 or higher.

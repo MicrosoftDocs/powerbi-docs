@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 06/17/2021
+ms.date: 12/19/2021
 ms.custom: intro-overview
 ---
 
@@ -51,6 +51,9 @@ The following table provides a comparison between the two Power BI embedded anal
 |Non-interactive authentication, your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication, your app uses the app user credentials to authenticate         |
 |   |   |
 
+> [!TIP]
+> Get started with the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup).
+
 ## What are Power BI capacities?
 
 Capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
@@ -63,11 +66,11 @@ There are two types of Power BI embedded analytics offerings, each requiring a d
 
 ### Power BI Embedded
 
-*Power BI Embedded* is an an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
+[*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
 ### Embedding with Power BI
 
-Embedding with Power BI is a Microsoft Office offer that requires P or EM SKUs.
+*Embedding with Power BI* is a [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) offer that requires P or EM SKUs.
 
 ## Next steps
 
@@ -82,3 +85,6 @@ Embedding with Power BI is a Microsoft Office offer that requires P or EM SKUs.
 
 > [!div class="nextstepaction"]
 > [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)
+
+> [!div class="nextstepaction"]
+> [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup)
