@@ -56,7 +56,7 @@ When embedding several visuals from the same report, don't generate a new [iFram
 
 When embedding multiple visuals into a single iFrame, consider the following:
 
-* Visuals in the same iFrame are always contiguous. If you want to have visuals that aren't next to each other (for example, if you want text in between them that doesn't come from Power BI), then you need a different iFrame for each rectangular region of adjacent visuals.
+* The iFrame is a rectangular region that contains the Power BI report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you need a different iFrame for each rectangular region of adjacent visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible.
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
