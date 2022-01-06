@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 12/13/2021
+ms.date: 01/04/2022
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -145,8 +145,8 @@ Special characters and spaces in table and column names require some additional 
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
-|**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
-|**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
+|**Table Name**     | Space is 00x20        |  Table_x0020_Name       |
+|**Column**@**Number**     |   @ is 00x40     |  Column_x0040_Number       |
 |**[Column]**     |  [ is 0x005B ] is 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
@@ -159,9 +159,7 @@ Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
 
 ### Special characters in values
 
-URL filters already support all special characters in field values, except the single quote ('). That's the only character you need to escape. To search for a single quote character, use two single quotes (''). 
-
-For example:
+URL filters already support most special characters in field values, which also require *escape codes*.  For example, to search for a single quote character, use two single quotes (''). 
 
 - `?filter=Table/Name eq 'O''Brien'` becomes: 
 
@@ -174,6 +172,32 @@ For example:
 - The `in` operator supports this escaping as well: `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` becomes:
 
     :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lee's Summit or O'Brien":::
+
+Here's a list of some special characters that require escape codes in field values.
+
+|Character  | Escape code  |
+|---------|---------|
+|'    | '' |
+| % | %25 |
+| + | %2B |
+| / | %2F |
+|? | %3F |
+| # | %23 |
+| & | %26 |
+
+### Standard URL escape characters
+
+When you use a URL with spaces and other special characters in it, browsers may automatically replace them with standard escape characters. Say you create this URL query string:
+
+`https://app.powerbi.com/groups/me/reports/b7dea1d4-d9f0-47aa-a88d-xxxxxxxxxxxx/ReportSection2?filter=Executives/Executive eq 'Andrew Ma'`
+
+It opens the Customer Profitability Sample, filtered to Andrew Ma. But if you look at the URL, it may now look like this:
+
+`https://app.powerbi.com/groups/me/reports/b7dea1d4-d9f0-47aa-a88d-xxxxxxxxxxxx/ReportSection2?filter=Executives%2FExecutive%20eq%20%27Andrew%20Ma%27`
+
+The browser has replaced the space between `Andrew` and `Ma` with `%20`, likewise the other spaces. It replaced the forward slash between the table name `Executives` and the field name `Executive` with %2F.
+
+This version of a URL may be useful. For example, you can paste it in chant in Microsoft Teams, and it will return the desired filtered results.
 
 ## Use DAX to filter on multiple values
 
