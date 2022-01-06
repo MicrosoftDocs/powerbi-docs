@@ -29,8 +29,7 @@ Visuals on a dashboard cannot be sorted. But in a Power BI report, you can sort 
 
 This video demonstrates how to change sort order and some of the newer sorting features now available in the Power BI service. 
 
-:::video source="https://www.microsoft.com/en-us/videoplayer/embed/RWRpNT":::
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRpNT]
 
 ## Get started
 
