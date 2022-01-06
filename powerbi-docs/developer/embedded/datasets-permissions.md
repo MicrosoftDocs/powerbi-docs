@@ -28,28 +28,30 @@ Power BI also has a [write](#write-permissions) permission which isn't part of t
 
 ### Workspace permissions
 
-Workspace permissions, sometimes referred to as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder. There are four types of workspace permissions:
+Workspace permissions, sometimes referred to as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder.
 
-* Admin
+The table below lists the four types of workspace permissions. It shows each permission's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-* Member
+|Permission  |Level |Code string               |
+|------------|------|--------------------------|
+|Admin       |4     |`ReadWriteReshareExplore` |
+|Member      |3     |`ReadReshareExplore`      |
+|Contributor |2     |`ReadExplore`             |
+|Viewer      |1     |`Read`                    |
 
-* Contributor
+#### Get and add workspace permissions with APIs
 
-* Viewer
+To get and add workspace permissions programmatically, you can use these APIs:
 
-Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+* [Groups - Add Group User](/rest/api/power-bi/groups/add-group-user) - A POST API for adding workspace permissions
+
+* [Groups - Update Group User](/rest/api/power-bi/groups/update-group-user) - A PUT API for changing workspace permissions
+
+*  [Groups - Get Group Users](/rest/api/power-bi/groups/get-group-users) - A GET API for getting workspace permissions
 
 ### Item permissions
 
 Power BI items, such as reports, datasets and dashboards have their own permissions. Item permissions cannot override workspace permissions, and can only be granted by someone who has at least the same permission level.
-
-### Write permissions
-
-There's one more permission titled *write*. The write permission is applied to all Power BI items (such as datasets) created by *admin*, *member* and *contributor* users in a workspace they own. The write permission cannot be granted or deleted.
-
->[!NOTE]
->When creating Power BI items in the *my workspace* Power BI folder, they only get write permissions. Other workspace permissions are not applied to these items.
 
 ## Dataset permissions and REST APIs
 
@@ -60,7 +62,7 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 
 |Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
-|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read permissions for it |
+|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read, reshare or explore permissions for it |
 |**ReadReshareExplore** |✔️       |✔️      |✔️       |
 |**ReadReshare**        |✔️       |❌      |✔️       |
 |**ReadExplore**        |✔️       |✔️      |❌       |
@@ -89,7 +91,7 @@ When you add or change permissions in an organization that uses row-level securi
 
 ### Dataset APIs for changing permissions
 
-To add permissions for using datasets, use the APIs listed below. You can only add dataset permissions, to users that don't have any permissions for the specified dataset.
+To add permissions for using datasets, use the [PUT]() APIs listed below. You can only add dataset permissions, to users that don't have any permissions for the specified dataset.
 
 * [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user)
 
