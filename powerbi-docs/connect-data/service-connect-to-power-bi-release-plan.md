@@ -1,8 +1,8 @@
 ---
 title: Connect to the Power BI Release Plan report
 description: How to get and install the Power BI Release Plan template app, and how to connect to data.
-author: alpowers
-ms.author: alpowers
+author: itsnotaboutthecell
+ms.author: itsnotaboutthecell
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
@@ -14,7 +14,7 @@ This article tells  you how to install the template app for the Power BI Release
 
 ![Power BI Release Plan Report](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-title-screen.png)
 
-For more detailed information, including disclaimers and archived release plans, see [Dynamics 365 and Microsoft Power Platform release plans](https://docs.microsoft.com/en-us/dynamics365/release-plans/).
+For more detailed information, including disclaimers and archived release plans, see [Dynamics 365 and Microsoft Power Platform release plans](https://docs.microsoft.com/dynamics365/release-plans).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
