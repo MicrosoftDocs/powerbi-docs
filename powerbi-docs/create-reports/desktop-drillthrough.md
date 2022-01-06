@@ -16,12 +16,12 @@ LocalizationGroup: Create reports
 
 With *drillthrough* in Power BI reports, you can create a destination *target* page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers right-click a data point in other *source* report pages, they drill through to the target page to get details that are filtered to that context. You can set up drillthrough in your reports in Power BI Desktop or the Power BI service. 
 
+![Using drillthrough](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
+
 Here are other ways to use drillthrough.
 
 - [Create a button that drills through](desktop-drill-through-buttons.md) to details when they click it.
 - [Set up cross-report drillthrough](desktop-cross-report-drill-through.md) to jump from one report to another in the same Power BI service workspace or app.
-
-![Using drillthrough](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
 ## Set up the drillthrough target page
 1. To set up drillthrough, create a target report page that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
