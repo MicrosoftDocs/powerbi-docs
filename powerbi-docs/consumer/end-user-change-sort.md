@@ -7,7 +7,8 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/30/2021
+ms.custom: video-RWRpNT
+ms.date: 01/06/2022
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -25,6 +26,11 @@ In the Power BI service, you can change how a visual looks by sorting it by diff
 And after you've changed the sorting of a visual, you can save a personalized version of that visual. With the [**Personalize this visual**](end-user-personalize-visuals.md) feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
 
 Visuals on a dashboard cannot be sorted. But in a Power BI report, you can sort most visuals by one, and sometimes two, fields at a time. For certain types of visuals, sorting is not available at all: tree maps, gauges, maps, etc. 
+
+This video demonstrates how to change sort order and some of the newer sorting features now available in the Power BI service. 
+
+:::video source="https://www.microsoft.com/en-us/videoplayer/embed/RWRpNT":::
+
 
 ## Get started
 
