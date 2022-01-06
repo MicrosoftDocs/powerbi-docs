@@ -1,6 +1,6 @@
 ---
 title: Power BI REST APIs datasets permissions
-description: This article lists the Power BI REST APIs dataset permissionss
+description: This article lists the Power BI REST APIs dataset permissions
 author: mberdugo
 ms.author: monaberdugo
 services: power-bi-embedded
@@ -24,20 +24,21 @@ Power BI has two sets of permissions:
 
 * [Item permissions](#item-permissions)
 
-Power BI also has a [write](#write-permissions) permission which isn't part of the workspace or item permissions.
-
 ### Workspace permissions
 
 Workspace permissions, sometimes referred to as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder.
 
-The table below lists the four types of workspace permissions. It shows each permission's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+The table below lists the four types of workspace permissions. It shows each permission's level, the code string returned by the Power BI REST APIs, and the inherited permissions for Power BI items (such as reports and datasets) created in these workspaces. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-|Permission  |Level |Code string               |
-|------------|------|--------------------------|
-|Admin       |4     |`ReadWriteReshareExplore` |
-|Member      |3     |`ReadReshareExplore`      |
-|Contributor |2     |`ReadExplore`             |
-|Viewer      |1     |`Read`                    |
+|Permission  |Level |Code string               |Inherited permissions for items created in the workspace    |
+|------------|------|--------------------------|--------------------------|
+|Admin       |4     |`ReadWriteReshareExplore` |`ReadWriteReshareExplore` |
+|Member      |3     |`ReadReshareExplore`      |`ReadWriteReshareExplore` |
+|Contributor |2     |`ReadExplore`             |`ReadWriteExplore`        |
+|Viewer      |1     |`Read`                    |`Read`                    |
+
+>[!NOTE]
+>The *write* permission is applied to Power BI items created by *admin*, *member* and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It cannot directly be granted to, or deleted from, a Power BI item.
 
 #### Get and add workspace permissions with APIs
 
@@ -51,7 +52,7 @@ To get and add workspace permissions programmatically, you can use these APIs:
 
 ### Item permissions
 
-Power BI items, such as reports, datasets and dashboards have their own permissions. Item permissions cannot override workspace permissions, and can only be granted by someone who has at least the same permission level.
+Power BI items, such as reports, datasets, and dashboards have their own permissions. Item permissions cannot override workspace permissions, and can only be granted by someone who has at least the same permission level.
 
 ## Dataset permissions and REST APIs
 
@@ -62,7 +63,7 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 
 |Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
-|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read, reshare or explore permissions for it |
+|Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read, reshare, or explore permissions for it |
 |**ReadReshareExplore** |✔️       |✔️      |✔️       |
 |**ReadReshare**        |✔️       |❌      |✔️       |
 |**ReadExplore**        |✔️       |✔️      |❌       |
@@ -111,7 +112,7 @@ These limitations are relevant for the [Datasets - Post Dataset User](/rest/api/
 
 * These APIs only support users and groups. Service principals are not supported.
 
-* You cannot use these API to remove dataset permissions.
+* You cannot use these APIs to remove dataset permissions.
 
 ## Next steps
 
