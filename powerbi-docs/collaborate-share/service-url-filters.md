@@ -81,13 +81,13 @@ See the [Operators](#operators) table later in the article for a list of other u
 
 ## Filter on multiple fields
 
-You can also filter on multiple fields by adding additional parameters to your URL. Let's go back to our original filter parameter.
+You can also filter on multiple fields by adding more parameters to your URL. Let's go back to our original filter parameter.
 
 ```
 ?filter=Store/Territory eq 'NC'
 ```
 
-To filter on additional fields, add an '**and**' and another field in the same format as above. Here is an example.
+To filter on more fields, add an '**and**' and another field in the same format as above. Here is an example.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -97,7 +97,7 @@ To filter on additional fields, add an '**and**' and another field in the same f
 
 Power BI supports many operators in addition to '**and**'. The table below lists those operators along with the content type they support.
 
-|operator  | definition | string  | number | Date |  Example|
+|Operator  | Definition | String  | Number | Date |  Example|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | and |  yes      | yes |  yes|  product/price le 200 and price gt 3.5 |
 |**eq**     | equals |  yes      | yes   |  yes       | Address/City eq 'Redmond' |
@@ -141,7 +141,7 @@ There are other differences between V3 and V4. OData V3 does not support Dates, 
 
 ### Special characters in table and column names
 
-Special characters and spaces in table and column names require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
+Special characters and spaces in table and column names require more formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
@@ -159,7 +159,7 @@ Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
 
 ### Special characters in values
 
-URL filters already support most special characters in field values, which also require *escape codes*.  For example, to search for a single quote character, use two single quotes (''). 
+URL filters support most special characters in field values, but some also require *escape codes*.  For example, to search for a single quote character, use two single quotes (''). 
 
 - `?filter=Table/Name eq 'O''Brien'` becomes: 
 
@@ -177,6 +177,7 @@ Here's a list of some special characters that require escape codes in field valu
 
 |Character  | Escape code  |
 |---------|---------|
+| (a space) | %20 |
 |'    | '' |
 | % | %25 |
 | + | %2B |
@@ -195,9 +196,9 @@ It opens the Customer Profitability Sample, filtered to Andrew Ma. But if you lo
 
 `https://app.powerbi.com/groups/me/reports/b7dea1d4-d9f0-47aa-a88d-xxxxxxxxxxxx/ReportSection2?filter=Executives%2FExecutive%20eq%20%27Andrew%20Ma%27`
 
-The browser has replaced the space between `Andrew` and `Ma` with `%20`, likewise the other spaces. It replaced the forward slash between the table name `Executives` and the field name `Executive` with %2F.
+The browser has replaced the space between `Andrew` and `Ma` with `%20`, likewise the other spaces. It replaced the forward slash between the table name `Executives` and the field name `Executive` with `%2F`, and replaced the single quote `'` with `%27`.
 
-This version of a URL may be useful. For example, you can paste it in chant in Microsoft Teams, and it will return the desired filtered results.
+This version of a URL may be useful. For example, you can paste it in chat in Microsoft Teams, and it will return the desired filtered results.
 
 ## Use DAX to filter on multiple values
 
@@ -224,7 +225,7 @@ This discrepancy is helpful when you want to see different results; filtered on 
 There are a couple of things to be aware of when using the query string parameters.
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
-* Power BI Report Server also supports the ability to specify additional filters using the “filter” URL parameter. Here's an example of what the URL might look like in Power BI Report Server:
+* Power BI Report Server also supports the ability to specify more than one filter using the “filter” URL parameter. Here's an example of what the URL might look like in Power BI Report Server:
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
