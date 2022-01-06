@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/29/2021
+ms.date: 01/06/2022
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -98,7 +98,7 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB
 * MarkLogic
-* TIBCO(R) Data Virtualization (Beta)
+* TIBCO(R) Data Virtualization
 * Dremio Software
 * Dremio Cloud (Beta)
 
