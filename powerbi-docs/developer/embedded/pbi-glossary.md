@@ -57,6 +57,10 @@ Centralized online repository where you can browse and discover dashboards, repo
 
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
+### Artifacts
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+
 ### Auto Insights
 
 Are now called *Quick Insights*.
@@ -505,7 +509,11 @@ Simple screenshots of a report can be emailed using the send a screenshot featur
 ### Service
 
 See *Power BI service*
-A standalone resource available to customers by subscription or license. A service is a product offering delivered exclusively via the cloud.  
+A standalone resource available to customers by subscription or license. A service is a product offering delivered exclusively via the cloud.
+
+### Service principal
+
+The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Can sometimes replace the *master user* to authenticate with Power BI.
 
 ### Settings
 
@@ -545,6 +553,10 @@ summarization
 [Power BI Desktop] The operation being applied to the values in one column.
 
 ## T
+
+### Tenant
+
+A client organization that is served from a web service (SaaS) which serves other client organizations, where each organization’s data is stored in a separate database from the others.
 
 ### Tiles
 
