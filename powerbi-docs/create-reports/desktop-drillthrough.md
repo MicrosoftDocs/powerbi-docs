@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With *drillthrough* in Power BI reports, you can create a destination *target* page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers use drillthrough, they right-click a data point in other *source* report pages, and drill through to the target page to get details that are filtered to that context. You can set up drillthrough in your reports in Power BI Desktop or the Power BI service. 
+With *drillthrough* in Power BI reports, you can create a destination *target* page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers right-click a data point in other *source* report pages, they drill through to the target page to get details that are filtered to that context. You can set up drillthrough in your reports in Power BI Desktop or the Power BI service. 
 
 Here are other ways to use drillthrough.
 
@@ -26,7 +26,7 @@ Here are other ways to use drillthrough.
 ## Set up the drillthrough target page
 1. To set up drillthrough, create a target report page that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
 
-    For example, suppose you want to provide drillthrough for manufacturers. For this case, you might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
+    For example, suppose you want to provide drillthrough for manufacturers. You might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
 
 2. Then, on that drillthrough target page, in the **Fields** section of the **Visualizations** pane, drag the field for which you want to enable drillthrough into the **Drillthrough filters** well.
 
@@ -62,7 +62,7 @@ To keep all applied filters, in the **Drillthrough** section of the **Visualizat
 
 ![Keep all filters](media/desktop-drillthrough/drillthrough_06.png)
 
-When you then drill through on a visual on one of the source pages, you can see which filters were applied to the drillthrough target page as a result of the source visual having temporary filters applied. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
+When you then drill through on a visual on a source page, the temporary filters that were applied to the source visual are also applied to the drillthrough target page. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
 
 ![Transient filters in italics](media/desktop-drillthrough/drillthrough_07.png)
 
