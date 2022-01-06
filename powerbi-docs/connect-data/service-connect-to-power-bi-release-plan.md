@@ -2,7 +2,7 @@
 title: Connect to the Power BI Release Plan report
 description: How to get and install the Power BI Release Plan template app, and how to connect to data.
 author: itsnotaboutthecell
-ms.author: itsnotaboutthecell
+ms.author: alpowers
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
