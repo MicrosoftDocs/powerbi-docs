@@ -77,6 +77,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 ## Known issues and limitations
 
 - The first time you visualize a list or library, creating the dataset and report can take some time. We’re working to improve the end-to-end performance of this experience. 
+- Reports are published back to the list or library at the SharePoint data access level of the report creator. Row-level security (RLS) is not supported for reports created via this method.
 - Currently, some complex column types in SharePoint will show up as [Record]s or [List]s within the report. We’re working on updating the experience so these column values match what you see in the list or library.  
 - Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
 - This feature isn't supported for guest users in a tenant.
