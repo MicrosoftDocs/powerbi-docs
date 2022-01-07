@@ -6,15 +6,15 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 01/05/2022
 LocalizationGroup: Connect to services
 ---
 # Connect to the Power BI Release Plan report
 This article tells  you how to install the template app for the Power BI Release Plan report, and how to connect to the data source.
 
-![Power BI Release Plan Report](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-title-screen.png)
+   :::image type="content" source="media/service-connect-to-power-bi-release-plan/power-bi-release-plan-title-screen.png" alt-text="Power BI Release Plan Report report":::
 
-For more detailed information, including disclaimers and archived release plans, see [Dynamics 365 and Microsoft Power Platform release plans](https://docs.microsoft.com/dynamics365/release-plans).
+For more detailed information, including disclaimers and archived release plans, see [Dynamics 365 and Microsoft Power Platform release plans](https://docs.microsoft.com/en-us/dynamics365/release-plans/).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
@@ -24,7 +24,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Once you're on the App's AppSource page, select [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/pbicat.powerbi-release-plan).
 
-    [![Power BI Release Plan Report in AppSource](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-appsource-icon.png)](https://appsource.microsoft.com/product/power-bi/pbicat.pbi-customer-advisory-team)
+    :::image type="content" source="media/service-connect-to-power-bi-release-plan/power-bi-release-plan-appsource-icon.png" alt-text="Power BI Release Plan Report in AppSource.":::
 
 1. When prompted , select **Install**. Once the app has installed, you will see it on your Apps page.
 
@@ -38,11 +38,11 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Power BI Release Plan connect your data link](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-connect-data.png)
 
-1. The parameters dialog will appear. There are no required parameters. Select **Next**.
+1. The parameters dialog will appear. There are no required parameters. select **Next**.
 
    ![Screenshot of the Power BI Release Plan report parameters dialog.](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-parameters-dialog.png)
 
-1. The authentication method dialog will appear. Recommended values are prepopulated as an Anonymous authentication method. Select **Sign in and continue**.
+1. The authentication method dialog will appear. Recommended values are prepopulated as an Anonymous authentication method. select **Sign in and continue**.
 
    ![Screenshot of the Power BI Release Plan report authentication dialog.](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-authentication-dialog.png)
 
