@@ -20,29 +20,29 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Install the app
 
-1. Click the following link to get to the app: [Power BI Release Plan](https://appsource.microsoft.com/product/power-bi/pbicat.powerbi-release-plan)
+1. Select the following link to get to the app: [Power BI Release Plan](https://appsource.microsoft.com/product/power-bi/pbicat.powerbi-release-plan)
 
-1. Once you're on the App's AppSource page, click [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/pbicat.powerbi-release-plan).
+1. Once you're on the App's AppSource page, select [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/pbicat.powerbi-release-plan).
 
     [![Power BI Release Plan Report in AppSource](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-appsource-icon.png)](https://appsource.microsoft.com/product/power-bi/pbicat.pbi-customer-advisory-team)
 
-1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
+1. When prompted , select **Install**. Once the app has installed, you will see it on your Apps page.
 
    ![Power BI Release Plan Report on App page](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-apps-page-icon.png)
 
 ## Connect to data sources
 
-1. Click the icon on your Apps page to open the app. The app opens, showing sample data.
+1. Select the icon on your Apps page to open the app. The app opens, showing sample data.
 
 1. Select the **Connect your data** link on the banner at the top of the page.
 
    ![Power BI Release Plan connect your data link](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-connect-data.png)
 
-1. The parameters dialog will appear. There are no required parameters. Click **Next**.
+1. The parameters dialog will appear. There are no required parameters. Select **Next**.
 
    ![Screenshot of the Power BI Release Plan report parameters dialog.](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-parameters-dialog.png)
 
-1. The authentication method dialog will appear. Recommended values are prepopulated as an Anonymous authentication method. Click **Sign in and continue**.
+1. The authentication method dialog will appear. Recommended values are prepopulated as an Anonymous authentication method. Select **Sign in and continue**.
 
    ![Screenshot of the Power BI Release Plan report authentication dialog.](media/service-connect-to-power-bi-release-plan/power-bi-release-plan-authentication-dialog.png)
 
