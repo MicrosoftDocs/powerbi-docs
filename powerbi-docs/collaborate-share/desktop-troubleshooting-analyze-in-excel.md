@@ -87,7 +87,7 @@ Once it completes, you're ready to select a report in the Power BI service (or o
 If you need to uninstall the Analyze in Excel feature, use the **Add or remove programs** system setting on your computer.
 
 ## Update Excel libraries for the OLE DB provider
-To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This article, [Analysis Services client libraries](/analysis-services/client-libraries?view=asallproducts-allversions#download-the-latest) is a good place to verify your installation of the OLE DB provider, or to download a recent version.
+To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This article, [Analysis Services client libraries](/analysis-services/client-libraries#download-the-latest) is a good place to verify your installation of the OLE DB provider, or to download a recent version.
 
 The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
 
