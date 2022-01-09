@@ -1,0 +1,494 @@
+# Configure automatic aggregations (Preview)
+## Enable
+## Fine-tuning
+## Disable
+## See also
+# Automatic aggregations (Preview)
+## Requirements
+## Configuring automatic aggregations
+## Benefits
+## Automatic query and aggregations management
+## User-defined and automatic aggregations
+## Query caching and automatic aggregations
+## Monitor with Azure Log Analytics
+## Application Lifecycle Management
+## Metadata elements
+# Administrators: Manage the Power BI Desktop sign-in form
+# Power BI Desktop privacy levels
+## Configure a privacy level
+## Configure privacy level settings
+## Configure Privacy Levels
+# Power BI Desktop Privacy
+## Sending additional information
+# Manage Power BI visuals admin settings
+## Access the admin portal
+## Power BI visuals tenant settings
+## Organizational visuals
+## Next steps
+# Add Power BI URLs to your allowlist
+## Authentication
+## General site usage
+## Administration
+## Getting data
+## Dashboard and report integration
+## Power BI visuals
+## Related external sites
+# Troubleshooting sign-in issues for Power BI
+## Contact Microsoft support
+## Power BI community
+## Next steps
+# Enable service principal authentication for read-only admin APIs
+## Method
+## Supported APIs
+## Considerations and limitations
+# Find Power BI users that have signed in
+## Requirements
+## Use the Azure Active Directory admin center to view sign-ins
+## Export the data
+## Data retention
+## Next steps
+# What is Power BI administration
+## Administrator roles related to Power BI
+## Administrative tasks and tools
+## Next steps
+# Use an alternate email address
+## Use Microsoft 365
+## Use PowerShell
+# Track user activities in Power BI
+## Choosing a log source
+## Use the activity log
+# Distribute Power BI content to external guest users with Azure AD B2B
+## Enable access
+## Who can you invite?
+## Invite guest users
+## Licensing
+## Guest users who can edit and manage content
+## Considerations and Limitations
+## Next steps
+# Capture diagnostic information from the Power BI service
+## Collect a browser trace
+## Next steps
+# Close your Power BI account
+## Individual Power BI users
+## Managed users
+# Add custom branding to the Power BI service
+## Before you begin
+## Add custom branding
+## Remove custom branding
+## Next steps
+# Enable or disable self-service sign-up and purchasing
+## When to use self-service sign-up and purchase
+## Use PowerShell, Azure AD, and Microsoft 365 to enable and disable self-service
+# Forgot your password for Power BI?
+# Governance and deployment approaches
+# Track Power BI service health in Microsoft 365
+# Using the same account for Power BI and Azure
+# Licensing the Power BI service for users in your organization
+## Who can purchase and assign licenses?
+## Get Power BI for your organization
+## About self-service sign-up
+## License types and capabilities
+## Subscription license types
+## Guest user access
+## Purchase Power BI Pro licenses
+## Next steps
+# View and manage Power BI user licenses
+## View your subscriptions
+## Manage user licenses in Microsoft 365
+## Manage user licenses in Azure portal
+## Next steps
+# Manage data storage in Power BI workspaces
+## Capacity limits
+## What's included in storage
+## Manage items you own
+## Manage your workspace
+## Dataset limits
+## What happens when you reach a limit
+# Set up metadata scanning in your organization
+## Enable service principal authentication for read-only admin APIs
+## Enable tenant settings for metadata scanning 
+## Next steps
+# Metadata scanning
+## Run metadata scanning
+## Considerations and limitations
+## Licensing
+## Next steps
+# Configure mobile apps with Microsoft Intune
+## General mobile device management configuration
+## Step 1: Add the Power BI app to Intune
+## Step 2: Assign the app to your end users
+## Step 3: Create and assign app protection policies
+## Step 4: Use the application on a device
+## Next steps
+# Get a Power BI service subscription for your organization
+## Sign up through Microsoft 365
+## More ways to get Power BI for your organization
+## Next steps
+# Administering Power BI in the admin portal
+## How to get to the admin portal
+## Usage metrics
+## Users
+## Premium per user
+## Audit logs
+## Tenant settings
+## Help and support settings
+# Power BI Security
+## Power BI Architecture
+## Data Storage Security
+## User Authentication
+## Data and Service Security
+## Enforcing TLS version usage
+# Configure and manage capacities in Power BI Premium
+## Manage capacity
+## Assign a workspace to a capacity
+## Power BI Report Server product key
+## Next steps
+# Monitor Premium capacities with the app
+## Install the app
+## Get app refresh history
+## Monitor capacities with the app
+## Monitor Power BI Embedded capacity
+## Next steps
+# Monitor capacities in the Admin portal
+## System Metrics
+## Workload metrics
+## Next steps
+# Configure Multi-Geo support for Power BI Premium
+## Enable and configure
+## View capacity regions
+## Change the region for existing content
+## Move content out of Multi-Geo  
+## Considerations and limitations
+## Next steps
+# How to purchase Power BI Premium
+## Purchase P SKUs for typical production scenarios
+## Purchase A SKUs for testing and other scenarios
+## Purchase Premium Per User (PPU) licenses
+## Next steps
+# Restart a Power BI Premium capacity
+## Why does Power BI provide this option?
+## Is the restart process safe? Will I lose any data?
+## How do I restart a capacity?
+## How can I prevent issues from happening in the future?
+## Next steps
+# Purchase Power BI Premium for testing
+## Purchase A SKUs for testing and other scenarios
+## Next steps
+# Configure workloads in a Premium capacity
+## Default memory settings
+## Workload settings
+## Configure workloads
+## Monitoring workloads
+## Next steps
+# Purchase and assign Power BI Pro user licenses
+## Purchase Power BI Pro user licenses
+## Assign licenses in the Microsoft 365 admin center
+## Assign licenses in the Azure portal
+## Next steps
+# PowerShell cmdlets, REST APIs, and .NET Client library for Power BI administration
+# Move between regions
+## Prerequisites
+## Prepare
+## Request a region move
+## During the region move
+## After the region move
+## Frequently asked questions
+# Row-level security (RLS) with Power BI
+## Manage security on your model
+## Working with members
+## Validating the role within the Power BI service
+## Using RLS with workspaces in Power BI
+## Next steps
+# Understanding Power BI administrator roles
+## Considerations and limitations
+## Assign users to an admin role in the Microsoft 365 admin center
+## Assign users to the admin role with PowerShell
+# Enable content certification
+## Set up certification
+## Next steps
+# Signing up for Power BI with a new Microsoft 365 Trial
+## Sign up for a Microsoft 365 trial of Office
+## Important considerations
+## Next steps
+# Power BI site reliability engineering (SRE) model
+## Background
+## Why incidents occur and how to live with them
+## Live site incident process
+## Our practices for service monitoring
+## Our practices for incident response
+## Our practices for continuous improvement
+## Measuring success through objective key results (OKRs)
+## Release management and deployment process
+## What's next
+## Next steps
+# Add Power BI to a Microsoft 365 partner subscription
+## Work with your partner to purchase Power BI
+## Purchase from Microsoft or another channel
+## Sign up for a free trial
+## Next steps
+# Find the default region for your organization
+## How to find the default region for your organization
+## Learn more
+# Bring your own encryption keys for Power BI
+## Why use BYOK?
+## Data source and storage considerations
+# Use customer-managed keys in Power BI
+## Why use customer-managed keys
+## How to use customer-managed keys
+## Next steps
+# Power BI for US government customers
+## Government cloud instances
+## Sign in to Power BI for US government
+## Allow connections to Power BI
+## Connect government and global Azure cloud services
+## Power BI feature availability
+## Next steps
+# Enroll your US government organization in the Power BI service
+## Select the right sign-up process for your US government organization
+## Sign up for a new Microsoft 365 Government plan
+## Add Power BI to a Microsoft 365 Government plan
+## More signup information
+## Next steps
+# Service interruption notifications
+## Capacity and reliability notifications
+## Enable notifications
+## Service health in Microsoft 365
+## Next steps
+# Power BI planned maintenance
+## Actions to take now
+## Actions to take when maintenance is complete
+## Next steps
+# Power BI Premium Gen2 architecture
+## Next steps
+# Using Autoscale with Power BI Premium
+## Configure an Azure subscription to use with Autoscale
+## Enable Autoscale in the Power BI Admin portal
+## Next steps
+# Backup and restore datasets with Power BI Premium
+## Using dataset backup and restore
+## Considerations and limitations
+## Next steps
+# Managing Premium Gen2 capacities
+## Creating and managing capacities
+## Next steps
+# Monitoring Power BI capacities
+## Power BI Admin portal
+## Power BI Premium Capacity Metrics app
+## Interpreting metrics
+## Acknowledgments
+## Next steps
+# Optimizing Premium capacities
+## Best practices
+## Optimizing models
+## Capacity planning
+## Testing approaches
+## Acknowledgments
+## Next steps
+# Premium capacity scenarios
+## Keeping datasets up to date
+## Identifying slow-responding datasets
+## Identifying causes for sporadically slow-responding datasets
+## Determining whether there is enough memory
+## Determining whether there is enough CPU
+## Acknowledgments
+## Next steps
+# Premium Gen2 capacity load evaluation
+## Premium Gen2 background operation scheduling
+## How capacity size limits are enforced when viewing reports
+## Using Premium Gen2 without autoscale
+## Configure autoscale
+## Next steps
+# Dataset connectivity with the XMLA endpoint
+## What's an XMLA endpoint?
+## Terms of Use
+## Client applications and tools
+## Optimize datasets for write operations by enabling large models
+## Enable XMLA read-write
+## Connecting to a Premium workspace
+## Connection requirements
+## Security
+## Deploy model projects from Visual Studio (SSDT)
+## Connect with SSMS
+## Dataset refresh
+## Dynamic Management Views (DMV)
+## Power BI Desktop authored datasets
+## Audit logs
+## See also
+# Use the Gen2 metrics app
+## Overview
+## Evidence
+## Refresh
+## Timepoint
+## Considerations and limitations
+## Next steps
+# What is Power BI Premium Gen2?
+## Enabling Premium Gen2
+## Workspaces and Premium Gen2
+## Capacity nodes for Premium Gen2
+## Refresh in Premium Gen2
+## Monitoring in Gen2
+## Paginated reports and Premium Gen2
+## Subscriptions and licensing
+## Limitations in Premium Gen2
+## Next steps
+# Install the Gen2 metrics app
+## Prerequisites
+## Install the app
+## Run the app for the first time
+## Next steps
+# Large datasets in Power BI Premium
+## Enable large datasets
+## Set default storage format
+# Power BI Premium Metrics app
+## Premium capacity health center
+## The active memory metric
+## The query waits metric
+## The refresh waits metric
+## Next steps
+# Automate Premium workspace and dataset tasks with service principals
+## Create a service principal
+## Create an Azure AD security group
+## Enable service principals
+## Workspace access
+## Connection strings for the XMLA endpoint
+# Using service tags with Power BI
+## Enable a public endpoint
+## Create a network security group rule
+# Plan your transition to Power BI Premium Gen2
+## Premium Gen2 prerequisites
+## Self-migration to Premium Generation 2
+## Transition from preview to Premium Gen 2 general availability
+## Migration notification
+## National cloud supportability
+## Next steps
+# What is Power BI Premium?
+## Power BI Premium Generation 2
+## Subscriptions and licensing
+## Reserved capacities
+## Large datasets
+## Incremental refresh
+## Paginated reports
+## Premium features unique to Dataflows
+## Deployment Pipelines
+## Power BI Report Server
+## Unlimited content sharing
+## Analysis Services in Power BI Premium
+## Next steps
+# How to apply sensitivity labels in Power BI
+## Apply sensitivity labels in the Power BI service
+## Apply sensitivity labels in Power BI Desktop
+## Remove sensitivity labels
+## Considerations and limitations
+## Next steps
+# Data protection metrics report
+## What is the data protection metrics report?
+## Viewing the data protection metrics report
+## Report updates
+## Notes and considerations
+## Next steps
+# Data protection in Power BI
+## Overview
+## Next steps
+# Data loss prevention policies for Power BI (preview)
+## Considerations and limitations
+## How do DLP policies for Power BI work
+## What happens when a dataset is flagged by a Power BI DLP policy
+## Configure a DLP policy for Power BI
+## Monitor and manage policy alerts
+## Next steps
+# Enable sensitivity labels in Power BI
+## Licensing and requirements
+## Enable sensitivity labels
+## Troubleshooting
+## Considerations and limitations
+## Next steps
+# Private endpoints for accessing Power BI
+## Understanding private endpoints
+## Using secure private endpoints to access Power BI
+## Enable private endpoints for Power BI
+## Create a Power BI resource in the Azure portal
+# Audit schema for sensitivity labels in Power BI
+## SensitivityLabelEventData
+## ArtifactType
+## ActionSource
+## ActionSourceDetail
+## LabelEventType
+## Next steps
+# Sensitivity label change enforcement
+## Relaxations to accommodate automatic labeling scenarios
+## Next steps
+# Custom help link for sensitivity labels
+## Define a custom help link
+# Default label policy for Power BI
+## What happens when a default label policy is in effect?
+## Enabling a default label policy for Power BI
+# Sensitivity label downstream inheritance (preview)
+## Downstream inheritance modes
+## Relaxed label change enforcement
+## Enabling fully automated downstream inheritance
+## Considerations and limitations
+## Next steps
+# Sensitivity label inheritance from data sources (preview)
+## Requirements
+## Inheritance behavior
+## Considerations and limitations
+## Next steps
+# Set or remove sensitivity labels using Power BI REST admin APIs
+## Requirements and considerations
+## API documentation
+## Sample
+# Mandatory label policy for Power BI
+## What happens when a mandatory label policy is in effect?
+## Enabling a mandatory label policy for Power BI
+# Sensitivity labels in Power BI
+## Introduction
+## Important considerations
+## How sensitivity labels work in Power BI
+## Sensitivity labels in Power BI Desktop
+## Sensitivity label inheritance upon creation of new content
+## Sensitivity label inheritance from data sources (preview)
+## Sensitivity label downstream inheritance (preview)
+## Data loss prevention (DLP) policies (preview)
+## Default label policy
+## Mandatory label policy
+## Admin APIs for setting and removing labels programmatically
+## Auditing for activity on sensitivity labels
+## Sensitivity labels and protection on exported data
+## Sensitivity label inheritance in Analyze in Excel
+## Sensitivity label persistence in embedded reports and dashboards
+## Sensitivity labels in paginated reports
+## Sensitivity labels in deployment pipelines
+## Sensitivity labels in the Power BI mobile apps
+## Label change enforcement
+## Supported clouds
+## Licensing and requirements
+## Sensitivity label creation and management
+## Custom help link
+## Considerations and limitations
+## Next steps
+# Sensitivity label support for paginated reports (preview)
+## Considerations and limitations
+## Paginated Report visuals (preview)
+## Next steps
+# Using Microsoft Defender for Cloud Apps controls in Power BI
+## Defender for Cloud Apps licensing
+## Configure real-time controls for Power BI with Defender for Cloud Apps
+## Custom policies to alert on suspicious user activity in Power BI
+## Built-in Defender for Cloud Apps detections for Power BI
+## Power BI admin role in Defender for Cloud Apps
+## Considerations and limitations
+## Example
+## Next steps
+# Power BI support options
+## Get started with support for end users
+## Get started with support for admins
+## Connect with Support
+## Power BI benefits for Microsoft Premier or Unified support contracts
+## Next steps
+# Troubleshoot XMLA endpoint connectivity
+## Before you begin
+## Enabling the XMLA endpoint
+## Establishing a client connection
+## Deploying a dataset
+## Migrating a dataset to Power BI
+## Errors on Premium Gen 2 capacity
