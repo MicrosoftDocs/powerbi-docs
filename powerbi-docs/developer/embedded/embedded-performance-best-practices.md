@@ -56,7 +56,7 @@ When embedding several visuals from the same report, don't generate a new [iFram
 
 When embedding multiple visuals into a single iFrame, consider the following:
 
-* The iFrame is a rectangular region that contains the Power BI report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you need a different iFrame for each rectangular region of adjacent visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible.
+* Power BI uses iFrames to embed a report. Sometimes you might want to add more content between the visuals (for example, text or graphics that don't come from the report). In that case, you may need a different iFrame to render different visuals. For best performance, try and arrange the visuals so that you use the fewest iFrames possible. To reduce the number of iFrames, please consider using the [custom-layout feature](/javascript/api/overview/powerbi/custom-layout).
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
