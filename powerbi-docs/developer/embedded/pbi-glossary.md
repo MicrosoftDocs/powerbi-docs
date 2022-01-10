@@ -71,7 +71,7 @@ Are now called *Quick Insights*.
 
 ### Bookmark
 
-A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
+A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the PBIX report file for sharing on the Power BI service
   
 ### Breadcrumbs
 
@@ -361,11 +361,11 @@ Reports have one or more pages. Each tab on the report canvas represents a page.
 
 Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
-### .pbiviz
+### PBIVIZ
 
 The file extension for a Power BI custom visual.
 
-### .pbix
+### PBIX
 
 The file extension for a Power BI Desktop file.
 
@@ -424,7 +424,7 @@ See *account*.
 ### Publish
 
 Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others. 
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others. 
 
 ## Q
 
