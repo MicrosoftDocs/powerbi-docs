@@ -12,6 +12,8 @@ LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library in the Power BI service
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 There's a new way to create reports quickly in the Power BI service from data in SharePoint lists or libraries. Power BI automatically generates the visuals for you. Microsoft List and SharePoint list or library users can explore their data with just a few clicks.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-report.png" alt-text="Screenshot of Create a quick report from a SharePoint list.":::
