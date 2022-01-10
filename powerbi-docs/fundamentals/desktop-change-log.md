@@ -22,7 +22,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 - Fix for the drop action: now no exception/error message will appear when dragging and dropping into a drill-through bucket.
-- AS engine start fix: now Power BI application and the corresponding AS engine process will start successfully after locking/unlocking the screen.
+- AS engine start telemetry fix: Power BI application and the corresponding AS engine process should start successfully after locking/unlocking the screen.
  
 ## December 2021 QFE 1
 
