@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/03/2022
+ms.date: 01/10/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -501,6 +501,10 @@ Administrators can configure RLS for data models imported into Power BI with Pow
 ### SaaS
 
 Software as a service (or SaaS) is a way of delivering applications over the internet—as a web-based service. Also referred to as: web-based software, on-demand software, or hosted software.
+
+### Scalability
+
+The capability of a piece of hardware or software or network to expand or shrink to meet future needs and circumstances.
 
 ### Screenshot
 
