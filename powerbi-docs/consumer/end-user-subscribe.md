@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2021
+ms.date: 01/06/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -188,7 +188,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot s
 
 - For [Power BI apps](end-user-apps.md) you have installed, you can only create subscriptions for others if you are the owner of the app. 
 
-**Unsupported features**
+**Unsupported features**    
 Email subscriptions do not support:
  
 * R-powered Power BI visuals  

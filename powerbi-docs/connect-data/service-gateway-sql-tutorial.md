@@ -34,6 +34,7 @@ In this tutorial, you complete the following steps:
 
 > [!NOTE]
 > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
+> If you're planning to use a stored procedure, you should use Import Data connectivity mode.
 
 ## Create and publish a Power BI Desktop file
 

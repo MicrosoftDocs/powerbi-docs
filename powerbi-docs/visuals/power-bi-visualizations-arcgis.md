@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/03/2021
+ms.date: 12/24/2021
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
@@ -358,7 +358,6 @@ To access the ArcGIS for Power BI online help from the visualization, follow the
     
     - Find answers to [frequently asked questions](https://doc.arcgis.com/en/power-bi/get-started/pbi-faq.htm#anchor5) on ArcGIS for Power BI online help.
     - You can ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to  **ArcGIS for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
-    - If you have a suggestion for an improvement, please submit it to [Power BI's ideas list](https://ideas.powerbi.com/).
     
 ### Manage the use of ArcGIS for Power BI within your organization
 
