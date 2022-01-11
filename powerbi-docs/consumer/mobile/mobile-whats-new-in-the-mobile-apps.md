@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/08/2021
+ms.date: 01/11/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,8 +20,8 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## January 2022
-### Request access to reports and dashboards from your Windows app
-Have a link to a report you don't have access to? Now you can request access directly from your Windows app!
+### Request access to reports and dashboards from your Power BI Windows app
+Have a link to a report you don't have access to? Now you can request access directly from your Power BI Windows app!
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
 
