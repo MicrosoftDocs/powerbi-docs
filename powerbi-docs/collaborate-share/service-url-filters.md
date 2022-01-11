@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 01/10/2022
+ms.date: 01/11/2022
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -230,7 +230,7 @@ There are a couple of things to be aware of when using the query string paramete
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
 * Power BI doesn't limit the number of characters in URL query strings. Different browsers have different length restrictions.
-* You can't filter on table names that start with the capital letters _INF_, including, for example, a table name starting with "INFORMATION". INF is a special value in OData. If you want to use "INF" at the start of a table name, make it lower-case "inf" instead. 
+* You can't filter on table or column names that start with the capital letters _INF_, including, for example, a table name starting with "INFORMATION". Upper-case INF is a special value in OData. If you want to start a table or column name with "INF", make it lower-case "inf" instead. 
 
 ### Embedding scenarios
 
