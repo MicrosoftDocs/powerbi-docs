@@ -75,6 +75,19 @@ It may include further information, such as the following:
 1. Uninstall webview2, which does not require elevated permissions (you don't have to be an administrator).
 1. Install webview2 using the [installation link](https://go.microsoft.com/fwlink/p/?LinkId=2124703), which also does not require elevated permissions.
 
+## Resolve issues related to WebView2
+
+In rare cases, Power BI Desktop might fail to start at all. Instead, it might show a gray window and/or an error message that mentions 'WebView2':
+![Error message mentioning WebView2.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-webview2-error.png)
+
+If this happens to you, please [reach out to us](#get-help-with-other-launch-issues) with the following information:
+1. WebView2 error reports. If you use the Microsoft Store version of Power BI Deskotp, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
+2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
+3. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
+![Event viewer showing context menu with 'Save All Events As...' highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png)
+4. Extra diagnostic information. For this you will first have to download the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install). 
+
+
 ## Get help with other launch issues
 
 We strive to cover as many issues that occur with Power BI Desktop as possible. We regularly look at issues that may be affecting many customers, and include them in our articles.
