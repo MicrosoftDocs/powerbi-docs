@@ -72,51 +72,49 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 #### Auto-binding across pipelines
 
-Deployment pipelines automatically binds Power BI items that are connected across pipelines. When you deploy such items, deployment pipelines will attempt to establish a new connection between the deployed item and the item it's connected to in the other pipeline. For example, if you have a report in pipeline A that's connected to a dataset in pipeline B, deployment pipelines will recognize this connection.
+Deployment pipelines automatically binds Power BI items that are connected across pipelines, if they're in the same pipeline stage. When you deploy such items, deployment pipelines will attempt to establish a new connection between the deployed item and the item it's connected to in the other pipeline. For example, if you have a report in the test stage of pipeline A that's connected to a dataset in the test stage of pipeline B, deployment pipelines will recognize this connection.
 
-Here's an example that will help demonstrate how auto-binding across pipelines works:
+Here's an example with illustrations that'll help demonstrate how auto-binding across pipelines works:
 
-1. You have a report in the development stage of pipeline A.
+1. You have a dataset in the development stage of pipeline A.
 
-2. You also have a dataset in the development stage of pipeline B.
+2. You also have a report in the development stage of pipeline B.
 
-3. Your report in pipeline A is connected to your dataset in pipeline B. Your report depends on this dataset.
+3. Your report in pipeline B is connected to your dataset in pipeline A. Your report depends on this dataset.
 
-4. You deploy the report in pipeline A from the development stage to the test stage.
+4. You deploy the report in pipeline B from the development stage to the test stage.
 
-5. The deployment will succeed or fail, depending on whether or not you have a copy of the dataset it depends on in the test stage of pipeline B:
+5. The deployment will succeed or fail, depending on whether or not you have a copy of the dataset it depends on in the test stage of pipeline A:
 
-    * *You have a copy of the dataset the report depends on in the test stage of pipeline B*
+    * *You have a copy of the dataset the report depends on in the test stage of pipeline A*
 
-        The deployment will succeed, and deployment pipelines will connect (auto-bind) the report in the test stage of pipeline A, to the dataset in the test stage of pipeline B.
+        The deployment will succeed, and deployment pipelines will connect (auto-bind) the report in the test stage of pipeline B, to the dataset in the test stage of pipeline A.
 
-        :::image type="content" source="media/deployment-pipelines-process/successful-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline A. The report is connected to a dataset in pipeline B. The deployment is successful because there's a copy of the dataset the report depends on in the test stage of pipeline B. After the deployment the report in the test stage on pipeline A, auto-binds with the dataset in the test stage of pipeline B.":::
+        :::image type="content" source="media/deployment-pipelines-process/successful-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline B. The report is connected to a dataset in pipeline A. The deployment is successful because there's a copy of the dataset the report depends on in the test stage of pipeline A. After the deployment the report in the test stage on pipeline B, auto-binds with the dataset in the test stage of pipeline A.":::
 
-    * *You don't have a copy of the dataset the report depends on in the test stage of pipeline B*
+    * *You don't have a copy of the dataset the report depends on in the test stage of pipeline A*
 
-        The deployment will fail because deployment pipelines cannot connect (auto-bind) the report in the test stage in pipeline A, to the dataset it depends on in the test stage of pipeline B.
+        The deployment will fail because deployment pipelines cannot connect (auto-bind) the report in the test stage in pipeline B, to the dataset it depends on in the test stage of pipeline A.
 
-        :::image type="content" source="media/deployment-pipelines-process/failed-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline A. The report is connected to a dataset in pipeline B. The deployment fails because there isn't a copy of the dataset the report depends on in the test stage of pipeline B.":::
+        :::image type="content" source="media/deployment-pipelines-process/failed-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline B. The report is connected to a dataset in pipeline A. The deployment fails because there isn't a copy of the dataset the report depends on in the test stage of pipeline A.":::
 
-#### Disabling auto-binding
+#### Not using auto-binding
 
 In some cases, you might not want to use auto-binding. For example, if you have one pipeline for developing organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to disable the auto-binding feature.
 
-:::image type="content" source="media/deployment-pipelines-process/no-auto-binding.png" alt-text="A diagram showing two pipelines. Pipeline A has a report in every stage and pipeline B has a dataset in every stage. All the reports from pipeline A are connected to the dataset in the production stage of pipeline B.":::
+:::image type="content" source="media/deployment-pipelines-process/no-auto-binding.png" alt-text="A diagram showing two pipelines. Pipeline A has a dataset in every stage and pipeline B has a report in every stage. All the reports from pipeline B are connected to the dataset in the production stage of pipeline A.":::
 
 There are three methods for disabling auto-binding:
 
-* Define a parameter rule
+* Don't connect the Power BI item to corresponding stages. When the items are not connected in the same stage, deployment pipelines keeps the original connection. For example, if you have a report in the development stage of pipeline B that's connected to a dataset in the production stage of pipeline A. When you deploy the report to the test stage of pipeline B, it'll remain connected to the dataset in the production stage of pipeline A.
 
-* Don't connect the Power BI item to corresponding stages.
+* Define a parameter rule. This option is not available for reports, you can only use it with datasets and dataflows.
 
 * Connect your reports dashboards and tiles to a proxy dataset or dataflow, that isn't connected to a pipeline.
 
 #### Auto-binding and parameters
 
-Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. Auto-binding after deployment will not take place, even when the connection includes a parameter rule that applies to the dataset’s or dataflow's ID, or the workspace ID.
-
-In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment will not take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
 
 ### Refreshing data
 
