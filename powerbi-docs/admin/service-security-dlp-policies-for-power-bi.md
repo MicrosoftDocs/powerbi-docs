@@ -39,7 +39,7 @@ Before you get started with DLP for Power BI, you should confirm your [Microsoft
 
 ### Permissions
 
-Data from DLP for Power BI can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer; the account you use for accessing the data must be a member of any one of them.
+Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide). There are four roles that grant permission to activity explorer; the account you use for accessing the data must be a member of any one of them.
 
 * Global administrator
 * Compliance administrator
