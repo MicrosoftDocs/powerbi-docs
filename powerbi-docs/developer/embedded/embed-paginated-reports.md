@@ -191,7 +191,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ## Considerations and limitations
 
-### [Embed for your customers limitaions](#tab/customers)
+### [Embed for your customers limitations](#tab/customers)
 
 * You must use a **service principal**. Master user is not supported.
 * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
