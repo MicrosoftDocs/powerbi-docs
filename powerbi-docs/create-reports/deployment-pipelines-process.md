@@ -100,20 +100,23 @@ Here's an example that will help demonstrate how auto-binding across pipelines w
 
 #### Disabling auto-binding
 
-In some cases, you might not want to use auto-binding. For example, if you have one pipeline for the development of organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to disable the auto-binding feature.
+In some cases, you might not want to use auto-binding. For example, if you have one pipeline for developing organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to disable the auto-binding feature.
 
-There are two methods for disabling auto-binding:
+:::image type="content" source="media/deployment-pipelines-process/no-auto-binding.png" alt-text="A diagram showing two pipelines. Pipeline A has a report in every stage and pipeline B has a dataset in every stage. All the reports from pipeline A are connected to the dataset in the production stage of pipeline B.":::
+
+There are three methods for disabling auto-binding:
 
 * Define a parameter rule
 
 * Don't connect the Power BI item to corresponding stages.
 
+* Connect your reports dashboards and tiles to a proxy dataset or dataflow, that isn't connected to a pipeline.
+
 #### Auto-binding and parameters
 
-Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. In such cases, auto-binding after deployment will not take place. You'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. Auto-binding after deployment will not take place, even when the connection includes a parameter rule that applies to the dataset’s or dataflow's ID, or the workspace ID.
 
->[!NOTE]
->Auto-binding will not take place when the connection includes a parameter rule that applies to the dataset’s or dataflow's ID or workspace ID.
+In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
 
 ### Refreshing data
 
