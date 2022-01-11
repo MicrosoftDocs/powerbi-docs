@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/18/2021
+ms.date: 01/11/2022
 LocalizationGroup: Data from files
 ---
 
@@ -24,7 +24,27 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
-* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections). 
+* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
+* DLP policies for Power BI are not support for sovereign clouds.
+
+## Licensing and permissions
+
+### SKU/subscriptions licensing
+
+Before you get started with DLP for Power BI, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). The admin account that sets up the DLP rules must be assigned one of the following licenses:
+
+* Microsoft 365 E5
+* Microsoft 365 E5 Compliance
+* Microsoft 365 E5 Information Protection & Governance
+
+### Permissions
+
+Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide). There are four roles that grant permission to activity explorer; the account you use for accessing the data must be a member of any one of them.
+
+* Global administrator
+* Compliance administrator
+* Security administrator
+* Compliance data administrator
 
 ## How do DLP policies for Power BI work
 
