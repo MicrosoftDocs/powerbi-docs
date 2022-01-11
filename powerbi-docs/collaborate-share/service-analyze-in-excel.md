@@ -91,7 +91,7 @@ Refresh for external connections isn't supported in Excel Online. Since users ne
 - Only Power BI datasets that use Import mode will preserve hierarchies in Analyze in Excel workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
 
-For general [considerations and limitations](service-connect-power-bi-datasets-excel.md#considerations-and-limitations) about connecting to Power BI data in Excel, see the article "Connect Excel to Power BI datasets."
+See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements when connecting to Power BI data in Excel.
 
 ## Next steps
 
