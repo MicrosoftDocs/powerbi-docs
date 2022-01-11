@@ -78,13 +78,16 @@ It may include further information, such as the following:
 ## Resolve issues related to WebView2
 
 In rare cases, Power BI Desktop might fail to start at all. Instead, it might show a gray window and/or an error message that mentions 'WebView2':
+
 ![Error message mentioning WebView2.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-webview2-error.png)
 
 If this happens to you, please [reach out to us](#get-help-with-other-launch-issues) with the following information:
 1. WebView2 error reports. If you use the Microsoft Store version of Power BI Deskotp, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
 2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
 3. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
+
 ![Event viewer showing context menu with 'Save All Events As...' highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png)
+
 4. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install) installed. Please follow these steps to install the required tools:
 - First, download the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install).
 - After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
@@ -99,20 +102,20 @@ If this happens to you, please [reach out to us](#get-help-with-other-launch-iss
 - Download the [EdgeWebView2_General_EventsOnly.wprp](media/desktop-error-launching-desktop/EdgeWebView2_General_EventsOnly.wprp) file to your machine.
 - In Windows Performance Recorder, choose **More options**:
 
-![Windows Performance Recorder with More options highlighted.](media/desktop-error-launching-desktop-performance-recorder-more-options.png)
+![Windows Performance Recorder with More options highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png)
 
 - Next, choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
 
-![Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.](media/desktop-error-launching-desktop-performance-recorder-load-profile.png)
+![Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-load-profile.png)
 
 - Finally, choose **Start** to start the recording:
 
-![Windows Performance Recorder with Start highlighted.](media/desktop-error-launching-desktop-performance-recorder-start.png)
+![Windows Performance Recorder with Start highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-start.png)
 
 - With the recording running, Start Power BI Desktop and make sure the issue occurs again.
 - Once done, choose **Save** to stop the recording and save the results to your machine:
 
-![Windows Performance Recorder with Save highlighted.](media/desktop-error-launching-desktop-performance-recorder-save.png)
+![Windows Performance Recorder with Save highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-save.png)
 
 - Provide all information collected to our support team when requested.
 
