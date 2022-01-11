@@ -8,14 +8,14 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/05/2022
+ms.date: 01/10/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
 
 # Glossary for Power BI developers
 
-Power BI may introduce terminology that is unfamiliar or confusing. This glossary is a great place to look up terminology, you might even want to keep it bookmarked. Other great resources for learning about the building blocks that make up Power BI are [Power BI service basic Concepts](../../consumer/end-user-basic-concepts.md) and [Basic concepts for designers](../../fundamentals/service-basic-concepts.md). These articles give a high level overview of the Power BI *pieces* and how they're connected.
+Power BI may introduce terminology that is unfamiliar or confusing. This glossary is a great place to look up terminology, you might even want to keep it bookmarked. Other great resources for learning about the building blocks that make up Power BI are [Power BI service basic Concepts](../../consumer/end-user-basic-concepts.md) and [Basic concepts for designers](../../fundamentals/service-basic-concepts.md). These articles give a high-level overview of the Power BI *pieces* and how they're connected.
 
 This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
@@ -56,6 +56,10 @@ Centralized online repository where you can browse and discover dashboards, repo
 ### ArcGIS for Power BI
 
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
+
+### Artifacts
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
 
 ### Auto Insights
 
@@ -105,11 +109,11 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 
 ### Connector
 
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources.
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
 
 ### Container
 
-The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
+The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home.
 
 ### Content
 
@@ -121,7 +125,7 @@ The content index for an app.
 
 ### Content pack
 
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
+ Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Content view
 
@@ -133,7 +137,7 @@ A continuous variable can be any value between its minimum and maximum limits, o
 
 ### Correlation
 
-A correlation tells us how the behavior of things are related.  If their patterns of increase and decrease are similar, then they are positively correlated. And if their patterns are opposite, then they are negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
+A correlation tells us how the behaviors of things are related.  If their patterns of increase and decrease are similar, then they are positively correlated. And if their patterns are opposite, then they are negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
 
 ### Cross-filter
 
@@ -184,7 +188,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 ### Dimension
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.
 
 ### Drill up, drill down, drill through
 
@@ -201,7 +205,7 @@ The mode in which report *designers* can explore, design, build, and share a rep
 ### Ellipsis
 
 Three dots - ...
-Selecting an ellipsis displays additional menu options. Also referred to as the **More actions** menu.
+Selecting an ellipsis displays more menu options. Also referred to as the **More actions** menu.
 
 ### Embed code
 
@@ -243,7 +247,7 @@ See *account*
 
 ### Full screen, full-screen mode
 
-Use full screen mode to view Power BI content without the distraction of menus and navigation panes. This is sometimes referred to as TV mode. 
+Use full screen mode to view Power BI content without the distraction of menus and navigation panes. This is sometimes referred to as TV mode.
 
 ## G
 
@@ -403,7 +407,7 @@ A monthly per-user license that provides the ability to build reports and dashbo
 
 ### Power BI Report Builder
 
-A free, standalone Windows Desktop application used for authoring paginated reports. Used by report designers. For more information see [Power BI Report Builder](../../paginated-reports/report-builder-power-bi.md). Power BI Report Builder can be downloaded from the Power BI site.
+A free, standalone Windows Desktop application used for authoring paginated reports. Used by report designers. For more information, see [Power BI Report Builder](../../paginated-reports/report-builder-power-bi.md). Power BI Report Builder can be downloaded from the Power BI site.
 
 ### Power BI Report Server
 
@@ -476,7 +480,7 @@ Links from dashboard tiles to other dashboards and reports that have been shared
 
 ### Report
 
-A multi-perspective view into a single dataset, with visualizations that represent different findings and insights from that dataset. Can have a single visualization or many, a single page or many pages.  
+A multi-perspective view into a single dataset, with visualizations that represent different findings and insights from that dataset. It can have a single visualization or many, a single page or many pages.  
 
 ### Report editor
 
@@ -502,6 +506,10 @@ Administrators can configure RLS for data models imported into Power BI with Pow
 
 Software as a service (or SaaS) is a way of delivering applications over the internet—as a web-based service. Also referred to as: web-based software, on-demand software, or hosted software.
 
+### Scalability
+
+The capability of a piece of hardware or software or network to expand or shrink to meet future needs and circumstances.
+
 ### Screenshot
 
 Simple screenshots of a report can be emailed using the send a screenshot feature.
@@ -509,7 +517,11 @@ Simple screenshots of a report can be emailed using the send a screenshot featur
 ### Service
 
 See *Power BI service*
-A standalone resource available to customers by subscription or license. A service is a product offering delivered exclusively via the cloud.  
+A standalone resource available to customers by subscription or license. A service is a product offering delivered exclusively via the cloud.
+
+### Service principal
+
+The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Can sometimes replace the *master user* to authenticate with Power BI.
 
 ### Settings
 
@@ -544,11 +556,15 @@ See *real-time streaming*.
 
 You can subscribe to report pages, apps, and dashboards and receive emails containing a snapshot. Requires a Power BI Pro license.
 
-summarization
+### Summarization
 
 [Power BI Desktop] The operation being applied to the values in one column.
 
 ## T
+
+### Tenant
+
+A client organization that is served from a web service (SaaS) which serves other client organizations, where each organization’s data is stored in a separate database from the others.
 
 ### Tiles
 

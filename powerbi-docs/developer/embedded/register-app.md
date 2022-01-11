@@ -39,7 +39,7 @@ The embed for your organization solution is usually used by enterprises and big 
 
 ## Register an Azure AD app
 
-The easiest way to register an Azure AD app, is by using the  [Power BI embedding setup tool](https://app.powerbi.com/embedsetup). The tool offers a quick registration process for both embedding solutions, using a simple graphical interface.
+The easiest way to register an Azure AD app is by using the  [Power BI embedding setup tool](https://app.powerbi.com/embedsetup). The tool offers a quick registration process for both embedding solutions, using a simple graphical interface.
 
 If you're creating an *embed for your organization* application, and want more control over your Azure AD app, you can register it manually in the Azure portal.
 
@@ -120,9 +120,6 @@ Use the Azure AD manual app registration only if you're creating one of the foll
 * An *embed for your organization* application.
 
 * An *embed for your customers* application with a *service principal*.
-
-    >[!NOTE]
-    >If you choose this option, after you register your Azure AD app you'll have to [add Power BI permissions](#change-your-azure-ad-apps-permissions) to it.
 
 For more information about how to register applications in Azure Active Directory, see [Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
 
