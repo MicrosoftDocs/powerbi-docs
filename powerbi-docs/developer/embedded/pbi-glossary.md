@@ -211,6 +211,10 @@ Selecting an ellipsis displays more menu options. Also referred to as the **More
 
 A common standard across the internet. In Power BI, the customer can generate an embed code and copy it to place content such as a report visual on a website or blog.
 
+### Embed token
+
+A string of encrypted characters that is used for authentication which specifies the content the web app user can access and the user’s access level.
+
 ### Embedded
 
 See Power BI Embedded.
