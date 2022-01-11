@@ -8,12 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/07/2022
+ms.date: 01/10/2022
 LocalizationGroup: Reports
 ---
 # Start in Power BI with Analyze in Excel
 
-With **Analyze in Excel**, you can bring Power BI datasets into Excel, and then view and interact with them using PivotTables, charts, slicers, and other Excel features. Need some background before you get started? See [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md).
+With **Analyze in Excel**, you can bring Power BI datasets into Excel, and then view and interact with them using PivotTables, charts, slicers, and other Excel features. Need some background before you get started? See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
 
 ## Connect to Power BI data with Analyze in Excel
 
