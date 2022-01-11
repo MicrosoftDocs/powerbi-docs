@@ -32,13 +32,6 @@ To get started, you're required to have:
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-> [!IMPORTANT]
->
-> * You must use a **service principal**. Master user is not supported.
-> * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
-> * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md).
-> * To embed a paginated report with a Power BI dataset as a datasource you need a [multi-resource embed token](https://docs.microsoft.com/rest/api/power-bi/embed-token/generate-token), with the XMLA parameter set to “Read Only”.
-
 ## [Embed for your organization](#tab/organization)
 
 * A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.
@@ -48,9 +41,6 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 * A Premium capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-
->[!NOTE]
->[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ---
 
@@ -202,6 +192,22 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 ## Considerations and limitations
 
 The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
+
+### [Embed for your customers limitaions](#tab/customers)
+
+* You must use a **service principal**. Master user is not supported.
+* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
+* Embedding a paginated report with a Power BI dataset as a datasource is supported if the following conditions are met:
+  * Both the Paginated report and the Power BI dataset reside in a Premium workspace (they can reside in two different workspaces).
+  * The user generating the embed token has *Write* permissions in the workspaces of the report and the dataset.
+  * The [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) is generated with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
+* Datasources and datasets configured with single sign-on (SSO) enabled, are not yet supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md).
+
+### [Embed for your organization limitations](#tab/organization)
+
+[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+
+---
 
 ## Next steps
 
