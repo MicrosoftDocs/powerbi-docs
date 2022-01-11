@@ -191,8 +191,6 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ## Considerations and limitations
 
-The `powerbi.bootstrap` method isn't supported when embedding paginated reports.
-
 ### [Embed for your customers limitaions](#tab/customers)
 
 * You must use a **service principal**. Master user is not supported.
