@@ -88,7 +88,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
-* **Overloaded minutes** - Displays a sum of 30 minutes increments were overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
+* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
 
 * **Performance delta** - Displays the performance effect on Power BI items. A positive value indicates that the performance is improving, and a negative value indicates that the performance is degrading. Sort to view the Power BI items that were effected the most due to performance degradation.
 
