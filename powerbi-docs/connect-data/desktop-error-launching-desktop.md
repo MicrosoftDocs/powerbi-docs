@@ -85,7 +85,36 @@ If this happens to you, please [reach out to us](#get-help-with-other-launch-iss
 2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
 3. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
 ![Event viewer showing context menu with 'Save All Events As...' highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png)
-4. Extra diagnostic information. For this you will first have to download the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install). 
+4. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install) installed. Please follow these steps to install the required tools:
+- First, download the [Windows Assessment and Deployment Kit](../../windows-hardware/get-started/adk-install).
+- After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
+
+![Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK.png)
+
+- Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
+
+![Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK-features.png)
+
+- Complete the installation and then start **Windows Performance Recorder**.
+- Download the [EdgeWebView2_General_EventsOnly.wprp](media/desktop-error-launching-desktop/EdgeWebView2_General_EventsOnly.wprp) file to your machine.
+- In Windows Performance Recorder, choose **More options**:
+
+![Windows Performance Recorder with More options highlighted.](media/desktop-error-launching-desktop-performance-recorder-more-options.png)
+
+- Next, choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
+
+![Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.](media/desktop-error-launching-desktop-performance-recorder-load-profile.png)
+
+- Finally, choose **Start** to start the recording:
+
+![Windows Performance Recorder with Start highlighted.](media/desktop-error-launching-desktop-performance-recorder-start.png)
+
+- With the recording running, Start Power BI Desktop and make sure the issue occurs again.
+- Once done, choose **Save** to stop the recording and save the results to your machine:
+
+![Windows Performance Recorder with Save highlighted.](media/desktop-error-launching-desktop-performance-recorder-save.png)
+
+- Provide all information collected to our support team when requested.
 
 
 ## Get help with other launch issues
