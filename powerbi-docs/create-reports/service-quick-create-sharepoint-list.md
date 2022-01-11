@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/04/2022
+ms.date: 01/10/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library in the Power BI service
@@ -82,6 +82,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Reports are published back to the list or library at the SharePoint data access level of the report creator. Row-level security (RLS) isn't supported for reports created using this method.
 - Currently, some complex column types in SharePoint will show up as [Record]s or [List]s within the report. We’re working on updating the experience so these column values match what you see in the list or library.  
 - Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
+- Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
 
 ## Troubleshooting
