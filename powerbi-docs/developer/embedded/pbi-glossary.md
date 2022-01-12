@@ -71,7 +71,7 @@ Are now called *Quick Insights*.
 
 ### Bookmark
 
-A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the PBIX report file for sharing on the Power BI service
+A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
 ### Breadcrumbs
 
@@ -428,7 +428,7 @@ See *account*.
 ### Publish
 
 Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app.
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others.
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others.
 
 ## Q
 
