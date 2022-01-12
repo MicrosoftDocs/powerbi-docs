@@ -59,8 +59,8 @@ Take the following steps to create a **Shape map**:
    :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Select View map keys to display keys.":::
 
 1. Choose which way to display a three-dimensional object (the earth) as a two-dimensional map using the **Projection** dropdown.
-    - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area. 
-    - **Mercator**: cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections. 
+    - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
+    - **Mercator**: cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections.
     - **Orthographic**: a projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe  
 
     For more detailed information, see [ESRI's map projections article](http://downloads2.esri.com/support/documentation/ao_/710Understanding_Map_Projections.pdf)
@@ -79,11 +79,11 @@ To use a **TopoJSON** map file, add a Shape map visual to your report and add so
 
 The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data. We've converted some of their district data into .json files and added them to this sample PBIX.
 
-[Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix) 
+[Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 If you'd like to experiment with custom maps, download this PBIX file and follow along.
 
-1. From Power BI Desktop, select **File** > **Open report**. 
+1. From Power BI Desktop, select **File** > **Open report**.
 
 2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
 
@@ -91,7 +91,7 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
 :::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Custom shape map.":::
 
-You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains. 
+You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains.
 
 :::image type="content" source="media/desktop-shape-map/shape-map-7b.png" alt-text="Texas shape map.":::
 
@@ -116,12 +116,12 @@ You can enter a new column simply by typing a new column name (in the blank colu
 
 There are a few considerations and requirements for this Preview release of **Shape Map**:
 
-* The **Shape map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox.
-* Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
+- The **Shape map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox.
+- Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 
-* The **Shape map** visual will plot up to a maximum of 1,500 data points.
+- The **Shape map** visual will plot up to a maximum of 1,500 data points.
 
-* The reports for the United States districts used in these examples can be found at [https://www.justice.gov/usao/resources/annual-statistical-reports](https://www.justice.gov/usao/resources/annual-statistical-reports).
+- The reports for the United States districts used in these examples can be found at [https://www.justice.gov/usao/resources/annual-statistical-reports](https://www.justice.gov/usao/resources/annual-statistical-reports).
 
 ## Region keys
 
@@ -129,7 +129,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Australia: States
 
-| ID | abbr | iso | name | postal |
+| ID | Abbr | ISO | Name | Postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -142,7 +142,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Austria: States
 
-| ID | iso | name | name-en | postal |
+| ID | ISO | Name | Name-en | Postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -192,7 +192,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Canada: Provinces
 
-| ID | iso | name | postal |
+| ID | ISO | Name | Postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -210,7 +210,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### France: Regions
 
-| ID | name | name-en |
+| ID | Name | Name-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -232,7 +232,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Germany: States
 
-| ID | iso | name | name-en | postal |
+| ID | ISO | Name | Name-en | Postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -284,7 +284,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Italy: Regions
 
-| ID | iso | name | name-en | postal |
+| ID | ISO | Name | Name-en | Postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -309,7 +309,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Mexico: States
 
-| ID | abreviatura | iso | name | name-en | postal |
+| ID | Abreviatura | ISO | Name | Name-en | Postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -346,7 +346,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Netherlands: Provinces
 
-| ID | iso | name | name-en |
+| ID | ISO | Name | Name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -363,7 +363,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### UK: Countries
 
-| ID | iso | name |
+| ID | ISO | Name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -372,7 +372,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### USA: States
 
-| ID | name | postal |
+| ID | Name | Postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -428,6 +428,6 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ## Next steps
 
-* [Matrix visual in Power BI](desktop-matrix-visual.md)
+- [Matrix visual in Power BI](desktop-matrix-visual.md)
 
-* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
