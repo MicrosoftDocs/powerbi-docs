@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/10/2022
+ms.date: 01/12/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -277,7 +277,7 @@ Power BI uses implicit measures and explicit measures (see definition above). Im
 
 ### Insights
 
-See **quick insights**.
+See [**quick insights**](#quick-insights).
 
 ## J
 
@@ -427,8 +427,8 @@ See *account*.
 
 ### Publish
 
-Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others. 
+Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app.
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others.
 
 ## Q
 
@@ -456,7 +456,7 @@ Quick Insights refer to automatically generated insights that reveal trends and 
 
 ### R, Microsoft R
 
-R is a programming language and software environment for statistical computing and graphics.
+A programming language and software environment for statistical computing and graphics.
 
 ### Reading View
 
