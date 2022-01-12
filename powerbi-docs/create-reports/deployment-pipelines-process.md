@@ -58,7 +58,7 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 ### Auto-binding
 
-In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipelines will always try to maintain this connection. When you're deploying an item that has dependencies, the deployment will only succeed if the items it depends on are available in the relevant target stages. In such cases, auto-binding will occur and the connections will be reestablished after deployment. However, if the item that the deployed item depends on, isn't in the target stage of the pipeline it belongs to, the deployment will fail.
+In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipelines will always try to maintain this connection.
 
 During deployment, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item depends on.
 
@@ -98,13 +98,13 @@ Here's an example with illustrations that'll help demonstrate how auto-binding a
 
         :::image type="content" source="media/deployment-pipelines-process/failed-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline B. The report is connected to a dataset in pipeline A. The deployment fails because there isn't a copy of the dataset the report depends on in the test stage of pipeline A.":::
 
-#### Not using auto-binding
+#### Avoid using auto-binding
 
-In some cases, you might not want to use auto-binding. For example, if you have one pipeline for developing organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to disable the auto-binding feature.
+In some cases, you might not want to use auto-binding. For example, if you have one pipeline for developing organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to avoid using the auto-binding feature.
 
 :::image type="content" source="media/deployment-pipelines-process/no-auto-binding.png" alt-text="A diagram showing two pipelines. Pipeline A has a dataset in every stage and pipeline B has a report in every stage. All the reports from pipeline B are connected to the dataset in the production stage of pipeline A.":::
 
-There are three methods for disabling auto-binding:
+There are three methods you can use to avoid using auto-binding:
 
 * Don't connect the Power BI item to corresponding stages. When the items are not connected in the same stage, deployment pipelines keeps the original connection. For example, if you have a report in the development stage of pipeline B that's connected to a dataset in the production stage of pipeline A. When you deploy the report to the test stage of pipeline B, it'll remain connected to the dataset in the production stage of pipeline A.
 
