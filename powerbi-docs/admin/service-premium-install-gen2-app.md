@@ -31,7 +31,7 @@ Before you install the Gen2 metrics app, review these requirements:
 Follow the steps below according to the type of installation you need.
 
 >[!NOTE]
->If you're installing the app in a government cloud environment, use one of these links:
+>If you're installing the app in a government cloud environment, use one of the links below. You can also use these links to upgrade the app. When upgrading, you don't need to delete the old app.
 >
 >* [Microsoft 365 Government Community Cloud (GCC)](https://aka.ms/USGovCapacityUsageReport)
 >
