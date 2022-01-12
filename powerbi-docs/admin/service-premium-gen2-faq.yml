@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 11/08/2021
+  ms.date: 01/12/2022
   LocalizationGroup: Premium
     
 title: Power BI Premium Gen2 FAQ
@@ -110,7 +110,13 @@ sections:
           How do I use utilization data to perform chargebacks?
         answer: |
           On the left side of the utilization report, a bar chart visual displays utilization information between workspaces for the time span of the report. The bar chart visual can be used for chargebacks, providing each workspace represents a different business unit, cost center, or other entity to which chargebacks can apply.
-          
+
+      - question: |
+          Why doesn’t the app separate the usage analysis of frontend and backend cores? 
+        answer: |
+          The *Power BI Premium Utilization and Metrics* app shows usage only for the backend cores which are half of the total v-cores on the capacity. Backend cores support both interactive and background operations and frontend cores support the web service, APIs, scheduling, user rights management and so forth. Frontend cores are assigned to a capacity pool and we do not report usage or overload on these cores.
+
+          Power BI makes throttling and autoscale decisions based on the backend data which is displayed in the app.      
           
       - question: |
           Premium Per User (PPU)
