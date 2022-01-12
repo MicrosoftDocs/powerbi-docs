@@ -7,7 +7,7 @@ ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 01/11/2022
 LocalizationGroup: Transform and shape data
 ---
 
@@ -57,6 +57,13 @@ Take the following steps to create a **Shape map**:
 1. To display the map keys of the currently selected map, select **View map type key**. In this example, we're using a map of Mexico and the Map keys displays the values being used to build the map.
 
    :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Select View map keys to display keys.":::
+
+1. Choose which way to display a three-dimensional object (the earth) as a two-dimensional map using the **Projection** dropdown.
+    - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area. 
+    - **Mercator**: cylindrical projection with the equator depicted as the line of tangency. Polar areas are more distorted than Equirectangular projections. 
+    - **Orthographic**: a projection from an infinite point, as if from deep space. It gives the illusion of a three-dimensional globe  
+
+    For more detailed information, see [ESRI's map projections article](http://downloads2.esri.com/support/documentation/ao_/710Understanding_Map_Projections.pdf)
 
 1. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
