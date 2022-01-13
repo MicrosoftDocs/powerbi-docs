@@ -84,9 +84,9 @@ sections:
       - question: |
           What's the difference between interactive and a background operations? 
         answer: |
-          *Interactive* operations are fast running operations such as queries and server-side rendering of reports and images. Interactive operations require user interaction and can be monitored.
+          *Interactive* operations are short running operations such as dataset queries. They’re usually triggered by user interactions with the UI. For example, an interactive operation is triggered when a user clicks on a slicer in a Power BI report. Interactive operations can also be triggered without interacting with the UI, for example when using SQL Server Management Studio (SSMS) or XMLA, to run a Data Analysis Expressions (DAX) query.
 
-          *Background* operations are slower running operations such as dataset and dataflow refreshes and displaying paginated reports. Background operations run in the background, don’t require user interaction, and cannot be monitored. 
+          *Background* operations are long running operations such as dataset or dataflow refreshes. They can be triggered manually by a user, or automatically without user interaction. Users are not expected to wait in front of a screen for these operations to finish. Instead, they might come back at a later time to check the status of the operations.
 
           Both interactive and background operations run on backend cores.
 
