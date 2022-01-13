@@ -97,30 +97,30 @@ Please follow these steps to install the required tools:
 1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
 1. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
 
-    ![Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK.png)
-
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+    
 1. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
 
-    ![Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK-features.png)
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
 
 1. Complete the installation and then start **Windows Performance Recorder**.
-1. Download the [EdgeWebView2_General_EventsOnly.wprp](media/desktop-error-launching-desktop/EdgeWebView2_General_EventsOnly.wprp) file to your machine.
+1. Download the [EdgeWebView2_General_EventsOnly.zip](media/desktop-error-launching-desktop/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
 1. In Windows Performance Recorder, choose **More options**:
 
-    ![Windows Performance Recorder with More options highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png)
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
 
 1. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
 
-    ![Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-load-profile.png)
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
 
 1. Choose **Start** to start the recording:
 
-    ![Windows Performance Recorder with Start highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-start.png)
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
 
 1. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
 1. Once done, choose **Save** to stop the recording and save the results to your machine:
 
-    ![Windows Performance Recorder with Save highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-save.png)
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
 
 1. Provide all information collected to our support team when requested.
 
