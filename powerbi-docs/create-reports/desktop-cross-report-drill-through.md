@@ -97,7 +97,7 @@ When you land on the target report for drillthrough, Power BI only applies filte
 
 Power BI doesn't apply sticky filters from the target report, but it does apply your default personal bookmark if you have one. For example, if your default personal bookmark includes a report-level filter for *Country = US*, Power BI applies that filter before applying the filter context from the source visual. 
 
-For cross-report drillthrough, Power BI passes the filter context to standard pages in the target report. Power BI doesn't pass filter context for tooltip pages, because tooltip pages are filtered based on the source visual that invokes the tooltip.
+For cross-report drillthrough, Power BI passes the filter context to all standard pages in the target report. Power BI doesn't pass filter context for tooltip pages, because tooltip pages are filtered based on the source visual that invokes the tooltip.
 
 If you want to return to the source report after the cross-report drillthrough action, use the browser's **Back** button. 
 
