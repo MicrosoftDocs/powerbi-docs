@@ -67,11 +67,11 @@ sections:
           The capacity stays in *interactive request delay* mode if the previous evaluation is at greater than 100% resource usage.
 
       - question: |
-          How is overload evaluated?
+          How is the overload score calculated?
         answer: |
-          Overload events that take place in the middle of the day are likely to affect many users. Overload events that take place in the middle of the night will probably affect only a handful of users. The overload evaluation is designed to help you differentiate between these two overload events, so that you can single out the Power BI items (such as reports and datasets) that most impact your users.
+          Overload events that take place in the middle of the day are likely to affect many users. Overload events that take place in the middle of the night will probably affect only a handful of users. The overload score is designed to help you differentiate between these two overload events, so that you can single out the Power BI items (such as reports and datasets) that most impact your users.
 
-          Overload evaluation is calculated in two steps:
+          The overload score is calculated in two steps:
 
           1. The amount of CPU seconds belonging to interactive queries affected by an overload event is summed.
 

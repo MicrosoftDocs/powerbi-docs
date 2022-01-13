@@ -176,7 +176,7 @@ You can visually identify the different Power BI items that cause overload, by u
 
 ### Overloaders
 
-Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an *Overloading score* when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
+Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-gen2-faq#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
 
