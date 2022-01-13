@@ -104,7 +104,7 @@ Please follow these steps to install the required tools:
     :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
 
 1. Complete the installation and then start **Windows Performance Recorder**.
-1. Download the [EdgeWebView2_General_EventsOnly.zip](media/desktop-error-launching-desktop/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
+1. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
 1. In Windows Performance Recorder, choose **More options**:
 
     :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
