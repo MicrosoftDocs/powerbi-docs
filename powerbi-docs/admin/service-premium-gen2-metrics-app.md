@@ -172,7 +172,7 @@ When you detect a Power BI item that causes overload, you can either optimize th
 
 ### Artifacts causing overloading
 
-You can visually identify the different Power BI items that cause overload, by using the [Artifacts causing overloading](#artifacts-causing-overloading) timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
+You can visually identify the different Power BI items that cause overload, by using the timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
 
 ### Overloaders
 
