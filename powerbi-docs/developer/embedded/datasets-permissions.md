@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/03/2022
+ms.date: 01/13/2022
 ---
 
 # Datasets permissions
