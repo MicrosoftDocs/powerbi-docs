@@ -186,8 +186,6 @@ This section lists the limitations for the deployment rules.
 
 * If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
-* When creating a parameter rule for a dataflow, if you want mapping (rebind to data sources) to work, you must create two parameter rules: one for the dataflow's workspace ID, and another that includes the dataflow ID.
-
 >[!NOTE]
 >Parameter rules are not supported for paginated reports.
 
