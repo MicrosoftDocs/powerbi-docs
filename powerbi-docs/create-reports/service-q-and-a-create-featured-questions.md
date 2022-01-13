@@ -1,5 +1,5 @@
 ---
-title: Create featured questions for Power BI Q&A
+title: Create Q&A featured questions for Power BI dashboards
 description: Documentation on how to create featured questions for Power BI Q&A
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,10 @@ ms.topic: how-to
 ms.date: 04/13/2021
 LocalizationGroup: Ask questions of your data
 ---
-# Create featured questions for Power BI Q&A
+# Create Q&A featured questions for Power BI dashboards
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset.  Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you -- add popular questions, questions that display interesting results, or questions that may be hard to phrase.
 
 > [!NOTE]
