@@ -65,7 +65,18 @@ sections:
           If a capacity’s utilization exceeded a 100% and it cannot use autoscale, due to being turned off or already at its maximum v-core utilization value, the capacity enters into a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds. 
           
           The capacity stays in *interactive request delay* mode if the previous evaluation is at greater than 100% resource usage.
-          
+
+      - question: |
+          How is overload evaluated?
+        answer: |
+          Overload events that take place in the middle of the day are likely to affect many users. Overload events that take place in the middle of the night will probably affect only a handful of users. The overload evaluation is designed to help you differentiate between these two overload events, so that you can single out the Power BI items (such as reports and datasets) that most impact your users.
+
+          Overload evaluation is calculated in two steps:
+
+          1. The amount of CPU seconds belonging to interactive queries affected by an overload event is summed.
+
+          2. The value form step 1 is multiplied by the count of interactive operations that were affected by throttling.
+
       - question: |
           Which operations contribute to interactive utilization, and which to background utilization?
         answer: |
