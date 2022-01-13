@@ -85,7 +85,7 @@ You can validate that the role you defined is working correctly in the Power BI 
 
 You'll see reports that are available for this role. Dashboards aren't shown in this view. In the page header, the role being applied is shown.
 
-![Now viewing as <role>](media/service-admin-rls/rls-test-role2.png)
+![Screenshot of Now viewing as Eastern US.](media/service-admin-rls/rls-test-role2.png)
 
 Test other roles, or a combination of roles, by selecting **Now viewing as**.
 
