@@ -88,8 +88,6 @@ sections:
 
           Longer running operations such as dataset or dataflow refreshes are classified as *Backgroun*d operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
 
-          Both interactive and background operations run on backend cores.
-
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
