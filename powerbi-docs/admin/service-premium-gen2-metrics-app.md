@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/01/2021
+ms.date: 01/13/2022
 LocalizationGroup: Premium 
 ---
 
@@ -254,11 +254,11 @@ Each column represents the number of CPU seconds used to compete a single operat
 
 Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
 
-### Matrix table
+### Refresh detail
 
-The matrix table describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
+A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
 
-The matrix has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
+The table has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
 
 ### Refresh operations
 
