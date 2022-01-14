@@ -97,11 +97,11 @@ Please follow these steps to install the required tools:
 1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
 1. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
     
 1. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-ADK-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
 
 1. Complete the installation and then start **Windows Performance Recorder**.
 1. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
