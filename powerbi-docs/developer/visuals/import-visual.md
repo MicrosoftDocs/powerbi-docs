@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 01/16/2022
 ---
 
 # Import a Power BI visual
@@ -33,17 +33,26 @@ To import a Power BI visual directly from AppSource, follow these steps:
 
    :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of get more visuals.":::
 
-4. Navigate to the visual you want to import and select **Add**.
+4. Select *AppSource visuals* and click on the visual you want to import.
+
+   :::image type="content" source="media/import-visual/select-visual.png" alt-text="Screenshot showing visuals available for import.":::
+
+5. Select **Add** to add the visual to your report.
+
+   :::image type="content" source="media/import-visual/add-download-sample.png" alt-text="Screenshot of visual description and download link.":::
+
+    > [!TIP]
+    > Click on **Download Sample** to download sample Power BI dataset and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
   
-5. When the visual has successfully imported, select **OK**.
+6. When the visual has successfully imported, select **OK**.
 
    :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of successful import.":::
 
-6. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
+7. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
 
    :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization pane.":::
 
-7. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
+8. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
   
 ## Import a visual file from your local computer into Power BI
 
