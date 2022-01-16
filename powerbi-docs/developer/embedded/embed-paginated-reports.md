@@ -177,12 +177,12 @@ You can create your paginated report using [Power BI Report Builder](../../pagin
 
 ### [Embed for your customers](#tab/customers)
 
-> [!NOTE]
-> To embed a paginated report with a Power BI dataset as a datasource, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only* set to Read Only.
-
 Follow the instructions in the [embed content for your customers](embed-sample-for-customers.md) tutorial.
 
 Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
+
+> [!NOTE]
+> To embed a paginated report with a Power BI dataset as a datasource, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
 ### [Embed for your organization](#tab/organization)
 
