@@ -87,13 +87,13 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 The table below lists payment and usage considerations per capacity.
 
-|            | **Power BI Embedded**                                                | **Power BI Premium**                             |                                        |
-|------------|------------------------------------------------------------------|----------------------------------------------|----------------------------------------|
-| **Offer**      | Azure                                                            | Office                                       |                                        |
-| **SKU**        | A                                                                | EM                                           | P                                      |
-| **Billing**    | Hourly                                                           | Monthly                                      | Monthly                                |
-| **Commitment** | None                                                             | Yearly                                       | Monthly or yearly                      |
-| Usage      | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a> | Embed in apps, and in Microsoft applications | Embed in apps, and in Power BI service |
+| **Payment and usage** | **Power BI Embedded** | **Power BI Premium** | **Power BI Premium** |
+|-----------------------|-----------------------|----------------------|----------------------|
+| **Offer**             | Azure                 | Office               | Office               |
+| **SKU**               | A                     | EM                   | P                    |
+| **Billing**           | Hourly                | Monthly              | Monthly              |
+| **Commitment**        | None                  | Yearly               | Monthly or yearly    |
+| Usage                 | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>  | Embed in apps, and in Microsoft applications    | Embed in apps, and in Power BI service |
 
 ### SKU memory and computing power
 
@@ -112,7 +112,7 @@ The table below describes the resources and limits of each SKU.
 | P4/A7<sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
 | P5/A8<sup>3</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../admin/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> The model refresh parallelism limits apply to Analysis Services only.
 
