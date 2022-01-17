@@ -148,7 +148,7 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
-Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, he overall time to complete the four jobs will be shorter than exporting the entire report in one job.
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
 >[!NOTE]
 >Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml).
