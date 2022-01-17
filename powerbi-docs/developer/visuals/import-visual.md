@@ -42,7 +42,7 @@ To import a Power BI visual directly from AppSource, follow these steps:
    :::image type="content" source="media/import-visual/add-download-sample.png" alt-text="Screenshot of visual description and download link.":::
 
     > [!TIP]
-    > Click on **Download Sample** to download sample Power BI dataset and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
+    > Click on **Download Sample** to download a sample Power BI dataset and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
   
 6. When the visual has successfully imported, select **OK**.
 
