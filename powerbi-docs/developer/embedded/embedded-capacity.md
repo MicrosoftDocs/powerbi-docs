@@ -93,7 +93,7 @@ The table below lists payment and usage considerations per capacity.
 | **SKU**               | A                     | EM                   | P                    |
 | **Billing**           | Hourly                | Monthly              | Monthly              |
 | **Commitment**        | None                  | Yearly               | Monthly or yearly    |
-| Usage                 | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>  | Embed in apps, and in Microsoft applications    | Embed in apps, and in Power BI service |
+| **Usage**             | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>  | Embed in apps, and in Microsoft applications    | Embed in apps, and in Power BI service |
 
 ### SKU memory and computing power
 
@@ -109,7 +109,7 @@ The table below describes the resources and limits of each SKU.
 | P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
 | P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
 | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
+| P4/A7</b><sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
 | P5/A8<sup>3</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../admin/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
