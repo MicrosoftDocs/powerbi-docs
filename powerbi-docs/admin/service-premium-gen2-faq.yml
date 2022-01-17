@@ -82,11 +82,11 @@ sections:
           * AI workloads
 
       - question: |
-          What's the difference between interactive and a background operations? 
+          What's the difference between interactive and background operations? 
         answer: |
           Shorter running operations such as dataset queries are classified as *Interactive* operations. They’re usually triggered by user interactions with the UI. For example, an interactive operation is triggered when a user opens a report or clicks on a slicer in a Power BI report. Interactive operations can also be triggered without interacting with the UI, for example when using SQL Server Management Studio (SSMS) or a custom application to run a DAX query.
 
-          Longer running operations such as dataset or dataflow refreshes are classified as *Backgroun*d operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
+          Longer running operations such as dataset or dataflow refreshes are classified as *Background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
 
       - question: |
           How can I use my utilization data to predict my capacity needs?
