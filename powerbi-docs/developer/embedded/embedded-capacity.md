@@ -101,7 +101,7 @@ The table below describes the resources and limits of each SKU.
 
 # [Premium Gen2](#tab/gen2)
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism</b><sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
