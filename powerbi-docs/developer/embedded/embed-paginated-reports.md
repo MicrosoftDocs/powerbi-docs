@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/12/2022
+ms.date: 01/17/2022
 
 ---
 
@@ -171,7 +171,7 @@ After creating a capacity and assigning your workspace to it, you need to enable
 You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 >[!NOTE]
->The user uploading the paginated report must have a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
+>The user uploading the paginated report needs a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
 
 ## Step 6 - Embed content using the sample application
 
