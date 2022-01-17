@@ -18,7 +18,7 @@ ms.custom: intro-overview
 Power BI visuals can be obtained from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
-* Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or Power BI.
+* Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
 * Create your own [custom visuals](#custom-visual-files).
 
 ## Default Power BI visuals
@@ -35,7 +35,7 @@ To restore the default Power BI visuals in the visualization pane, click the ell
 
 ## AppSource Power BI visuals
 
-Many additional Power BI visuals are available from the Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are tested and validated by the AppSource validation team.
+Many additional Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are tested and validated by the AppSource validation team.
 
 Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
@@ -51,13 +51,13 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 ### Certified Power BI visuals
 
-Certified Power BI visuals are visuals in [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) that meet certain specified code requirements that the Microsoft Power BI team has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
+Certified Power BI visuals are visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain specified code requirements that the Microsoft Power BI team has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
 
 To view the list of certified Power BI visuals, or to submit your own, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
 
 ### Samples for Power BI visuals
 
-Each Power BI visual on AppSource has a sample report you can download that illustrates how the visual works. To download the sample report, in the [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) select a Power BI visual and click the **Download Sample** link.
+Each Power BI visual on AppSource has a sample report you can download that illustrates how the visual works. To download the sample report, in the [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) select a Power BI visual and click the **Download Sample** link.
 
 ## Organizational store
 
