@@ -151,9 +151,9 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, he overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). 
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml).
 
-|Azure SKU |Office SKU |Maximum concurrent report pages for the original Premium capacities |Maximum concurrent report pages for Premium Gen2 capacities |
+|Azure SKU |Office SKU |Maximum concurrent report pages for original Premium capacities |Maximum concurrent report pages for Premium Gen2 capacities |
 |----------------|-----------------|----|-----|
 | A1             | EM1             |  1 |  20 |
 | A2             | EM2             |  2 |  25 |
