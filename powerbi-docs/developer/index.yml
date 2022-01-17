@@ -26,14 +26,14 @@ highlightedContent:
     - title: What is embedded analytics in Power BI
       itemType: overview
       url: embedded/embedded-analytics-power-bi.md
-    # Card
-    - title: Develop your own Power BI visual
-      itemType: overview
-      url: visuals/develop-power-bi-visuals.md
-    # Card
+     # Card
     - title: Power BI Embedded Generation 2
       itemType: whats-new
-      url: embedded/power-bi-embedded-generation-2.md        
+      url: embedded/power-bi-embedded-generation-2.md 
+     # Card
+    - title: Develop your own Power BI visual
+      itemType: overview
+      url: visuals/develop-power-bi-visuals.md   
     # Card
     - title: Power BI embedded analytics Client APIs
       itemType: whats-new
@@ -43,9 +43,9 @@ highlightedContent:
       itemType: whats-new
       url: https://aka.ms/pbieplayground
     # Card
-    - title: Automated  template app configuration
+    - title: Browse Power BI PowerShell code samples
       itemType: how-to-guide
-      url: ./../connect-data/template-apps-auto-install.md
+      url: /samples/azure-samples/powerbi-powershell/microsoft-power-bi-powershell-samples/
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -77,7 +77,7 @@ conceptualContent:
           text: Develop your own Power BI visual
         - url: visuals/develop-circle-card.md
           itemType: tutorial
-          text: Develop a Power BI visual
+          text: Step by step instructions for developing a sample Power BI visual 
         - url: visuals/office-store.md
           itemType: how-to-guide
           text: Publish Power BI visuals to Partner Center

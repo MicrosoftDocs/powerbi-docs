@@ -1,13 +1,13 @@
-- name: "The Power BI service for consumers"
+- name: "The Power BI service for business users"
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
     items: 
-    - name: "What is a Power BI consumer?"
+    - name: "What is a Power BI business user?"
       href: end-user-consumer.md
-    - name: "Basic concepts and terminology for Power BI consumers"
+    - name: "Basic concepts and terminology for Power BI business users"
       href: end-user-basic-concepts.md
     - name: "Take a tour of the Power BI service"
       href: end-user-reading-view.md     
@@ -18,7 +18,7 @@
       href: end-user-experience.md
     - name: "Find content using your Home landing page"
       href: end-user-home.md
-    - name: "List of features available to consumers"
+    - name: "List of features available to business users"
       href: end-user-features.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md

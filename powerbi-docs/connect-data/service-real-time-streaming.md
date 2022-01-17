@@ -192,6 +192,10 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 
 Give it a try, and play around with the sample dataset. Then go create your own datasets, and stream live data to Power BI.
 
+> [!CAUTION]
+> The color saturation option is no longer supported for real-time tiles. If you attempt to add the saturation, you'll be met with an error. The option should be left empty and the visual will work correctly.
+>
+
 ## Questions and answers
 Here are some common questions about real-time streaming in Power BI, and answers.
 

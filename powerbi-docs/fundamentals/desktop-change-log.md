@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/21/2021
+ms.date: 1/10/2022
 ---
 
 # Change log for Power BI Desktop
@@ -16,6 +16,14 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## December 2021 QFE 2
+
+*Version: 2.100.1182.0, Released: January 10, 2022*
+
+Bug fixes/improvements:
+- Fix for the drop action: now no exception/error message will appear when dragging and dropping into a drill-through bucket.
+- AS engine start telemetry fix: Power BI application and the corresponding AS engine process should start successfully after locking/unlocking the screen.
+ 
 ## December 2021 QFE 1
 
 *Version: 2.100.785.0, Released: December 21, 2021*

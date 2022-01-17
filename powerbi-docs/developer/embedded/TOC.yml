@@ -108,6 +108,8 @@
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
       href: /cli/azure/powerbi
+    - name: Power BI glossary
+      href: pbi-glossary.md
   - name: Resources
     items:
     - name: "Power BI Dev Camp"
