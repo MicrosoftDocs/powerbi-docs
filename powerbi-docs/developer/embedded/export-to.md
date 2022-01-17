@@ -6,10 +6,10 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/19/2021
+ms.date: 01/17/2022
 ---
 
-# Export Power BI report to file (preview)
+# Export Power BI report to file
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
@@ -148,23 +148,29 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, he overall time to complete the four jobs will be shorter than exporting the entire report in one job.
+
 >[!NOTE]
 >Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). 
 
-|Azure SKU  |Office SKU  |Maximum concurrent report pages  |
-|-----------|------------|-----------|
-|A1         |EM1         |1          |
-|A2         |EM2         |2          |
-|A3         |EM3         |3          |
-|A4         |P1          |6          |
-|A5         |P2          |12         |
-|A6         |P3          |24         |
+|Azure SKU |Office SKU |Maximum concurrent report pages for the original Premium capacities |Maximum concurrent report pages for Premium Gen2 capacities |
+|----------------|-----------------|----|-----|
+| A1             | EM1             |  1 |  20 |
+| A2             | EM2             |  2 |  25 |
+| A3             | EM3             |  3 |  35 |
+| A4             | P1              |  6 |  55 |
+| A5             | P2              | 12 |  95 |
+| A6             | P3              | 24 | 175 |
+| A7<sup>1</sup> | P4<sup>1</sup>  |    | 200 |
+| A8<sup>1</sup> | P5<sup>1</sup>  |    | 200 |
+
+<sup>1</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 ## Considerations and limitations
 
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
+* The number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
     >[!NOTE]
     >This limitation isn't applicable for Premium and Embedded Gen2 capacities. Instead, in Gen2, the number of Power BI exports is limited to 50 report pages per minute per capacity.
 * Exported reports cannot exceed a file size of 250 MB.
