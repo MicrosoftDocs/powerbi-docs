@@ -88,7 +88,7 @@ Users also need build permissions to work with data outside Power BI:
 
 ### Row-level security
 
-When you add or change permissions in an organization that uses row-level security (RLS), any permissions higher than build will enable the user to view all the data in the dataset. Build, and permissions lower than build, will let the dataset user have access only to the data they're allowed to see as configured in your RLS settings.
+When you add or change permissions on a dataset that uses row-level security (RLS), any permissions higher than build will enable the user to view all the data in the dataset. Build, and permissions lower than build, will let the dataset user have access only to the data they're allowed to see as configured in your RLS settings.
 
 ### Dataset APIs for changing permissions
 
