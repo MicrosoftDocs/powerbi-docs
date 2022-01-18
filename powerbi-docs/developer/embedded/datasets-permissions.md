@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/13/2022
+ms.date: 01/18/2022
 ---
 
 # Datasets permissions
@@ -92,7 +92,7 @@ When you add or change permissions in an organization that uses row-level securi
 
 ### Dataset APIs for changing permissions
 
-To add permissions for using datasets, use the [PUT]() APIs listed below. You can only add dataset permissions, to users that don't have any permissions for the specified dataset.
+To add permissions for using datasets, use the POST APIs listed below. Using these APIs, you can add dataset permissions to users that don't have any permissions for the specified dataset, or to users that have a lower permissions level. For example, you can add the *Reshare* permission to a user that has the *Read* permission. However, you cannot remove the *Reshare* permission from a user that has both *Read* and *Reshare* permissions, by attempting to add the *Read* permission.
 
 * [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user)
 
