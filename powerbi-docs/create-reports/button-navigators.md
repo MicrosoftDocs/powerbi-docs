@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2021
+ms.date: 01/12/2022
 LocalizationGroup: Create reports
 ---
 
@@ -55,7 +55,7 @@ If you want to further customize the pages that show or hide in the page navigat
 Note that if you’re testing out the page navigator in Power BI Desktop or in edit mode of the Power BI Service, you need to press Ctrl + click to navigate to the desired page.
 
 ## Bookmark navigator
-Before you create the bookmark navigator, you need to create the bookmarks first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
+Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md) first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
 
 :::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Bookmark examples":::  
 

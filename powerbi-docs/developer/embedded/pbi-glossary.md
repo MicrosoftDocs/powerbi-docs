@@ -271,6 +271,10 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ## I
 
+### Inline frame, iFrame
+
+An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's essentially a way to display a secondary webpage inside the main page.
+
 ### Implicit measures
 
 Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
@@ -572,7 +576,7 @@ A client organization that is served from a web service (SaaS) which serves othe
 
 ### Tiles
 
-Power BI dashboards contain report tiles.
+A [tile](/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 
