@@ -8,12 +8,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2022
+ms.date: 01/18/2022
 ms.author: mihart
 
 ---
 # Interacting with an ArcGIS map in Power BI
-This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS map by Esri tutorial](../visuals/power-bi-visualizations-arcgis.md).
+This topic is written from the point of view of a person *consuming* an ArcGIS map in the Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS map by Esri tutorial](../visuals/power-bi-visualizations-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
@@ -33,7 +33,7 @@ The example we're using looks at last year's sales by city and uses a street bas
 <br/>
 
 ## User consent
-The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by Esri(www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
+The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by Esri (www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Selection tools
 ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data points can be selected at a time.
@@ -49,9 +49,9 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 <br/>
 
 ## Interacting with an ArcGIS map
-The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (also known as [Reading view](../consumer/end-user-reading-view.md), here are the actions available to you.
+The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (also known as [Reading view](../consumer/end-user-reading-view.md)), here are the actions available to you.
 
-* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](../consumer/end-user-show-data.md) , [subscribe](../consumer/end-user-subscribe.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [view related content](../consumer/end-user-related.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
+* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](../consumer/end-user-show-data.md) , [subscribe](../consumer/end-user-subscribe.md), see the map in [focus mode and full screen mode](../consumer/end-user-focus.md), [view related content](../consumer/end-user-related.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report creator*, [share the report](../service-share-reports.md), and more.
 
 * As with other visualization types, Power BI **Pro** consumers can do everything the Premium consumer can do, plus [export the underlying data](../visuals/power-bi-visualization-export-data.md), [get usage metrics](../service-usage-metrics.md), save a copy and [publish to Web](../service-publish-to-web.md), and more.
 
@@ -71,7 +71,7 @@ The features available to you depend on whether you are the *creator* (person wh
   ![Details displayed for North Canton, OH.](media/end-user-arcgis/power-bi-arcgis-hover.png)
   
   > [!TIP]
-  > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI may present you with more than 1 tooltip at a time. Select the arrows to move between the tooltips
+  > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI will present you with more than one tooltip at a time. Select the arrows to move between the tooltips
   > 
   > ![Tooltip showing page one of three.](media/end-user-arcgis/power-bi-3-screens.png)
   > 
@@ -112,7 +112,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 </table>
 
 **How do ArcGIS Maps for Power BI work together?**
-ArcGIS Map for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS Map for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=8263222) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Map for Power BI visuals, need to accept the consent dialog (see User Consent for details).  Using Esri’s ArcGIS Map for Power BI is subject to Esri’s Terms and Privacy Policy, which are also linked to from the consent dialog. Each user must consent prior to using ArcGIS Map for Power BI for the first time. Once the user accepts the consent, data bound to the visual is sent to Esri’s services at least for geocoding, meaning transforming location information into latitude and longitude information that can be represented in a map. You should assume any data bound to the data visualization can be sent to Esri’s services. Esri provides services like base maps, spatial analytics, geocoding, etc. The ArcGIS Map for Power BI visual interacts with these services using an SSL connection protected by a certificate provided and maintained by Esri. Additional information about ArcGIS Map for Power BI can be obtained from Esri’s [ArcGIS Map for Power BI product page](https://www.esri.com/powerbi).
+ArcGIS Map for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS Map for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=8263222) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Map for Power BI visuals need to accept the consent dialog (see User Consent for details).  Using Esri’s ArcGIS Map for Power BI is subject to Esri’s Terms and Privacy Policy, which are also linked to from the consent dialog. Each user must consent prior to using ArcGIS Map for Power BI for the first time. Once the user accepts the consent, data bound to the visual is sent to Esri’s services at least for geocoding, meaning transforming location information into latitude and longitude information that can be represented in a map. You should assume any data bound to the data visualization can be sent to Esri’s services. Esri provides services like base maps, spatial analytics, geocoding, etc. The ArcGIS Map for Power BI visual interacts with these services using an SSL connection protected by a certificate provided and maintained by Esri. Additional information about ArcGIS Map for Power BI can be obtained from Esri’s [ArcGIS Map for Power BI product page](https://www.esri.com/powerbi).
 
 **Power BI Plus**    
 ![Select the Plus icon to sign up or sign in](media/end-user-arcgis/power-bi-plus.png)
@@ -125,7 +125,7 @@ For technical detailed questions about how Esri’s ArcGIS Map for Power BI work
 In services or applications where ArcGIS Map for Power BI is not available, the visualization will show as an empty visual with the Power BI logo.
 
 **I'm not seeing all of my information on the map**    
-When geocoding latitude/longitude on the map, up to 30,000 data points are displayed. When geocoding data points such as zip codes or street addresses, only the first 15,000 data points are geocoded. Geocoding place names or countries is not subject to the 1500 address limit.
+When geocoding latitude/longitude on the map, up to 30,000 data points are displayed. When geocoding data points such as zip codes or street addresses, only the first 15,000 data points are geocoded. Geocoding place names or countries is not subject to the 15,000 address limit.
 
 **Is there any charge for using ArcGIS Map for Power BI?**
 
