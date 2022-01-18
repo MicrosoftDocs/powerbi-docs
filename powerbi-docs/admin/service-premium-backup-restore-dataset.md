@@ -70,7 +70,19 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only the **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command is not supported
-
+* There is a new property, IgnoreIncompatibilities, for restore command. The new property is to address RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only support read permission for roles but AAS does support all permissions. If you try to restore a backup file which some roles are not read permission, you have to specify IgnoreIncompatibilities in your restore command, otherwise, restore will fail. Once IgnoreIncompatibilities is specified, the role which permission is not read will be dropped. So far, there is no UX support to IgnoreIncompatibilities in SSMS, so you need to specify it in restore command manually. 
+For example:
+```
+{
+  "restore": {
+    "database": "DB",
+    "file": "/Backup.abf",
+    "allowOverwrite": true,
+    "security": "copyAll",
+    "ignoreIncompatibilities": true
+  }
+}
+```
 
 ## Next steps
 
