@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/27/2021
+ms.date: 01/18/2022
 ---
 
 # Manage Power BI visuals admin settings
 
-As a Power BI admin for your organization, you can control which type of Power BI visuals users can access across the organization.
+As a Power BI admin for your organization, you can control the type of Power BI visuals users can access across the organization, as well as limit the actions users can perform.
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -28,7 +28,9 @@ To enable the settings described in the article, you'll need to access the admin
 
 ## Power BI visuals tenant settings
 
-As a Power BI admin for your organization, you can control which type of Power BI visuals users will be able to access across the organization.
+To manage the tenant settings for Power BI visuals from the Admin Portal, go to **Tenant settings** and scroll down to **Power BI visuals**.
+
+:::image type="content" source="/media/organizational-visuals/powerbi-visuals-tenant-settings.png" alt-text="Screenshot of the Power B I visuals tenant settings location.":::
 
 The UI tenant settings only affect Power BI service. If you want these settings to take effect in Power BI Desktop, use group policies. A table at the end of each section provides details for enabling the setting in Power BI Desktop.
 
@@ -52,14 +54,13 @@ Follow the instructions below to enable users in your organization upload .pbivi
 3. Choose who can upload .pbiviz and AppSource visuals:
 
     * Select **The entire organization** option to allow everyone in your organization to upload .pbiviz files, and add visuals from AppSource.
-
-     * Select the **Specific security groups** option to manage uploading .pbiviz files, and adding visuals from AppSource using security groups. Add the security groups you want to manage to the *Enter security groups* text bar. The security groups you specified are excluded by default. If you want to include these security groups and exclude everyone else in the organization, select the **Except specific security groups** option.
+    * Select the **Specific security groups** option to manage uploading .pbiviz files, and adding visuals from AppSource using security groups. Add the security groups you want to manage to the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
 
 4. Click **Apply**.
 
-![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the allow visuals created using the Power B I S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
+ ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the allow visuals created using the Power B I S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
 
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization upload .pbiviz files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload .pbiviz files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
@@ -83,6 +84,30 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 |Key  |Value name  |Value  |
 |---------|---------|---------|
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
+|
+
+### Export data to file
+
+When this setting is enabled the user can download data from a custom visual into a file on their storage device.
+
+1. Expand the **Allow downloads fro custom visuals** settings.
+
+2. Click **Enabled**.
+
+3. Choose who can download files:
+
+    * Select **The entire organization** option to allow everyone in your organization to download data from a visual into a file.
+    * Select the **Specific security groups** option to limit downloading files to specific security groups. Enter the security groups you want in the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
+
+4. Click **Apply**.
+
+ :::image type="content" source="/media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I allow downloads from custom visuals settings.":::
+
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+
+|Key  |Value name  |Value  |
+|---------|---------|---------|
+|Software\Policies\Microsoft\Power BI Desktop\    |Download???    |0 - Disable </br>1 - Enable (default)         |
 |
 
 ## Organizational visuals
