@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 11/08/2021
+  ms.date: 01/17/2022
   LocalizationGroup: Premium
     
 title: Power BI Premium Gen2 FAQ
@@ -80,7 +80,14 @@ sections:
           * Paginated reports workload - data driven subscriptions renders
           * Export report to file API calls
           * AI workloads
-          
+
+      - question: |
+          What's the difference between interactive and background operations? 
+        answer: |
+          Shorter running operations such as dataset queries are classified as *Interactive* operations. They’re usually triggered by user interactions with the UI. For example, an interactive operation is triggered when a user opens a report or clicks on a slicer in a Power BI report. Interactive operations can also be triggered without interacting with the UI, for example when using SQL Server Management Studio (SSMS) or a custom application to run a DAX query.
+
+          Longer running operations such as dataset or dataflow refreshes are classified as *Background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
+
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
@@ -110,7 +117,13 @@ sections:
           How do I use utilization data to perform chargebacks?
         answer: |
           On the left side of the utilization report, a bar chart visual displays utilization information between workspaces for the time span of the report. The bar chart visual can be used for chargebacks, providing each workspace represents a different business unit, cost center, or other entity to which chargebacks can apply.
-          
+
+      - question: |
+          Why doesn’t the app separate the frontend and backend cores usage analysis? 
+        answer: |
+          The *Power BI Premium Utilization and Metrics* app shows usage only for the backend cores which are half of the total v-cores on the capacity. Backend cores support both interactive and background operations and frontend cores support the web service, APIs, scheduling, user rights management and so forth. Frontend cores are assigned to a capacity pool and we do not report usage or overload on these cores.
+
+          Power BI makes throttling and autoscale decisions based on the backend data which is displayed in the app.      
           
       - question: |
           Premium Per User (PPU)
