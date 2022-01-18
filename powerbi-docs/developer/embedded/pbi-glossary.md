@@ -273,7 +273,11 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Implicit measures
 
-Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report. 
+Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
+
+### Independent Software Vendor, ISV
+
+A third-party software developer which may include an individual or an organization that independently creates computer software.
 
 ### Insights
 
