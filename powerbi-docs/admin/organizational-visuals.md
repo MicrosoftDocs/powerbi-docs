@@ -96,8 +96,8 @@ When this setting is enabled the user can download data from a custom visual int
 
 3. Choose who can download files:
 
-    * Select **The entire organization** option to allow everyone in your organization to download data from a visual into a file.
-    * Select the **Specific security groups** option to limit downloading files to specific security groups. Enter the security groups you want in the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
+   * Select **The entire organization** option to allow everyone in your organization to download data from a visual into a file.
+   * Select the **Specific security groups** option to limit downloading files to specific security groups. Enter the security groups you want in the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
 
 4. Click **Apply**.
 
