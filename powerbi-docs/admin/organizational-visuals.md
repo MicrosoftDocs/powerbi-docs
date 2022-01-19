@@ -110,6 +110,12 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 |Software\Policies\Microsoft\Power BI Desktop\    |AllowCVToExportDataToFile    |0 - Disable </br>1 - Enable (default)         |
 |
 
+> [!NOTE]
+> When `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only when the:
+>
+> * The feature switch in the admin portal is enabled.
+> * The user is logged on.
+
 ## Organizational visuals
 
 As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab in the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
