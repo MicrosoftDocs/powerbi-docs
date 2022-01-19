@@ -98,7 +98,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
-- RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
+- RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources. Also, you cannot define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group.
 
 - KPIs, row level security, and translations will not be imported from the source in this preview release.
 
@@ -136,6 +136,10 @@ There are also a few **limitations** you need to keep in mind:
   - SAP HANA
   - SAP Business Warehouse
   - [Real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets)
+  - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
+  - [Excel Online Refresh](refresh-excel-file-onedrive.md)
+  - Import Excel / CSV files
+  - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
