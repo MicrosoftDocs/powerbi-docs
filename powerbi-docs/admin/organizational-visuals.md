@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 01/19/2022
 ---
 
 # Manage Power BI visuals admin settings
@@ -107,7 +107,7 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
-|Software\Policies\Microsoft\Power BI Desktop\    |Download???    |0 - Disable </br>1 - Enable (default)         |
+|Software\Policies\Microsoft\Power BI Desktop\    |AllowCVToExportDataToFile    |0 - Disable </br>1 - Enable (default)         |
 |
 
 ## Organizational visuals
