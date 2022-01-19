@@ -19,19 +19,6 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
     * Each file in the .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
 
-## Gen2
-
->[!IMPORTANT]
->The changes described in this section will be deployed to Premium Gen2 and Embedded Gen2 capacities in stages, over the following weeks. If these changes are not yet implemented in your Gen2 capacity, wait for the deployment to reach it.
-
-An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation). The workload under which export API operations will appear, is called `InteractiveReportExports`.
-
-The following improvements are available for [Premium Gen2](../../admin/service-premium-concepts.md) and [Embedded Gen2](power-bi-embedded-generation-2.md) capacities:
-
-* The number of Power BI exports per hour will not be limited to 50 per hour per capacity. Instead, the number of Power BI exports is limited to 50 report pages per minute per capacity.
-
-* [Concurrent requests](#concurrent-requests) are not applicable for Gen2 capacities. There's no maximum concurrent report pages limitation.
-
 ## Usage examples
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
@@ -195,6 +182,7 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 # [Premium Gen2](#tab/gen2)
 
+* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation). The workload under which export API operations will appear, is called `InteractiveReportExports`.
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
 * The number of Power BI exports is limited to 50 report pages per minute per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
