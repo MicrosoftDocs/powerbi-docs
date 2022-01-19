@@ -20,6 +20,9 @@ You can get seamless single sign-on connectivity, enabling Power BI reports and 
     * Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)).
 * Azure Active Directory (Azure AD) SSO.
 
+> [!NOTE]
+> SSO is only supported by Power BI datasets and not by Power BI dataflows.
+
 AD SSO is usually configured for on-premises data sources which are secured within your on-premises network, while Azure AD SSO is configured for data sources that support Azure Active Directory authentication (typically cloud data sources) secured behind an Azure Virtual Network.
 
 While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or Refresh for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md) is supported for Azure AD SSO. 

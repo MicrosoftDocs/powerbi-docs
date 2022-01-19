@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/13/2021
+ms.date: 12/13/2021
 LocalizationGroup: Consumers
 ---
 # Tutorial: export data from a visual to Excel
@@ -77,7 +77,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     **Underlying data**: select this option if you want to export data for what you see in the visual **plus** additional data from the underlying dataset.  This may include data that is contained in the dataset but not used in the visual. If the visual has filters applied, then the data you export will also be filtered.  If your visual has aggregates (sum, average, etc.), the export will remove the aggregation; essentially flattening the data. 
 
-    ![Menu where you choose underlying or summarized](media/end-user-export/power-bi-export-underlying.png)
+    :::image type="content" source="media/end-user-export/power-bi-export-underlying-data.png" alt-text="Menu where you choose underlying or summarized":::
 
 5. What happens next depends on which browser you're using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. If you're using the Power BI app in Microsoft Teams, your exported file is saved in your local Downloads folder. 
 

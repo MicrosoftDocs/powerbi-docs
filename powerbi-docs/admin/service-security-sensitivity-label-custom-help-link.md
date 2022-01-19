@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 06/13/2021
+ms.date: 11/29/2021
 LocalizationGroup: Data from files
 ---
 # Custom help link for sensitivity labels

@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/29/2021
+ms.date: 11/30/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/08/2021
+ms.date: 01/19/2022
 ---
 
 # Understand the deployment process
@@ -58,15 +58,63 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 ### Auto-binding
 
-When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item relies on.
+In Power BI, when items are connected, one of the items depends on the other. For example, a report will always depend on the dataset it's connected to. A dataset can depend on another dataset, and can also be connected to several reports that depend on it. If there's a connection between two Power BI items, deployment pipelines will always try to maintain this connection.
 
-* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that database.
+During deployment, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item depends on.
+
+* **Linked item exists in the target stage** - Deployment pipelines will automatically connect (auto-bind) the deployed item, to the item it depends on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that dataset.
 
 * **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
 
 Auto-binding works only with Power BI items that are supported by deployment pipelines and reside within Power BI. To view the dependencies of a Power BI item, from the item's *More options* menu, select *View lineage*.
 
 :::image type="content" source="media/deployment-pipelines-process/view-lineage.png" alt-text="A screenshot of the view lineage option, in an item's more options menu.":::
+
+#### Auto-binding across pipelines
+
+Deployment pipelines automatically binds Power BI items that are connected across pipelines, if they're in the same pipeline stage. When you deploy such items, deployment pipelines will attempt to establish a new connection between the deployed item and the item it's connected to in the other pipeline. For example, if you have a report in the test stage of pipeline A that's connected to a dataset in the test stage of pipeline B, deployment pipelines will recognize this connection.
+
+Here's an example with illustrations that'll help demonstrate how auto-binding across pipelines works:
+
+1. You have a dataset in the development stage of pipeline A.
+
+2. You also have a report in the development stage of pipeline B.
+
+3. Your report in pipeline B is connected to your dataset in pipeline A. Your report depends on this dataset.
+
+4. You deploy the report in pipeline B from the development stage to the test stage.
+
+5. The deployment will succeed or fail, depending on whether or not you have a copy of the dataset it depends on in the test stage of pipeline A:
+
+    * *You have a copy of the dataset the report depends on in the test stage of pipeline A*
+
+        The deployment will succeed, and deployment pipelines will connect (auto-bind) the report in the test stage of pipeline B, to the dataset in the test stage of pipeline A.
+
+        :::image type="content" source="media/deployment-pipelines-process/successful-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline B. The report is connected to a dataset in pipeline A. The deployment is successful because there's a copy of the dataset the report depends on in the test stage of pipeline A. After the deployment the report in the test stage on pipeline B, auto-binds with the dataset in the test stage of pipeline A.":::
+
+    * *You don't have a copy of the dataset the report depends on in the test stage of pipeline A*
+
+        The deployment will fail because deployment pipelines cannot connect (auto-bind) the report in the test stage in pipeline B, to the dataset it depends on in the test stage of pipeline A.
+
+        :::image type="content" source="media/deployment-pipelines-process/failed-deployment.png" alt-text="A diagram showing a deployment of a report from the development stage to the test stage in pipeline B. The report is connected to a dataset in pipeline A. The deployment fails because there isn't a copy of the dataset the report depends on in the test stage of pipeline A.":::
+
+#### Avoid using auto-binding
+
+In some cases, you might not want to use auto-binding. For example, if you have one pipeline for developing organizational datasets, and another for creating reports. In this case, you might want all the reports to always be connected to datasets in the production stage of the pipeline they belong to. To accomplish this, you'll need to avoid using the auto-binding feature.
+
+:::image type="content" source="media/deployment-pipelines-process/no-auto-binding.png" alt-text="A diagram showing two pipelines. Pipeline A has a dataset in every stage and pipeline B has a report in every stage. All the reports from pipeline B are connected to the dataset in the production stage of pipeline A.":::
+
+There are three methods you can use to avoid using auto-binding:
+
+* Don't connect the Power BI item to corresponding stages. When the items are not connected in the same stage, deployment pipelines keeps the original connection. For example, if you have a report in the development stage of pipeline B that's connected to a dataset in the production stage of pipeline A. When you deploy the report to the test stage of pipeline B, it'll remain connected to the dataset in the production stage of pipeline A.
+
+* Define a parameter rule. This option is not available for reports, you can only use it with datasets and dataflows.
+
+* Connect your reports dashboards and tiles to a proxy dataset or dataflow, that isn't connected to a pipeline.
+
+#### Auto-binding and parameters
+
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment will not take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
 
 ### Refreshing data
 
@@ -237,7 +285,19 @@ The following composite models connections are not supported:
 
 * Connecting datasets that reside in distinct pipelines.
 
-* Connecting datasets that reside in the same pipeline. 
+* Connecting datasets that reside in the same pipeline.
+
+### Automatic aggregations
+
+[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance.
+
+Each dataset keeps its automatic aggregations after deployment. Deployment pipelines doesn't change a dataset's automatic aggregation. This means that if you deploy a dataset with an automatic aggregation, the automatic aggregation in the target stage will remain as is, and will not be overwritten by the automatic aggregation deployed from the source stage.
+
+To enable automatic aggregations, follow the instructions in [configure the automatic aggregation](./../admin/aggregations-auto-configure.md).
+
+### Hybrid tables
+
+Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. During a clean deployment, both the refresh policy and the hybrid table partitions are copied. When deploying to a pipeline stage that already has hybrid table partitions, only the refresh policy is copied. To update the partitions, refresh the table.
 
 ## Deploying Power BI apps
 
@@ -350,6 +410,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
+* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported
+
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
@@ -362,11 +424,15 @@ This section lists most of the limitations in deployment pipelines.
 
 * When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
 
-* In deployment pipelines, service principal isn't supported for dataflows.
+* Service principal isn't supported for dataflows.
 
 * Deploying common data model (CDM) isn't supported.
 
 * For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+
+* If a dataflow is being refreshed during deployment, the deployment will fail.
+
+* When comparing stages during dataflow refresh, the results are unpredictable.
 
 ## Next steps
 

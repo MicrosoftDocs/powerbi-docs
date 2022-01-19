@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 12/07/2021
 LocalizationGroup: Premium
 ---
 
@@ -31,3 +31,4 @@ The following links provide information that can be useful for customer-managed 
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
+* [Power BI security white paper](../guidance/whitepaper-powerbi-security.md)

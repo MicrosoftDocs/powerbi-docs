@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 09/16/2021
+ms.date: 01/06/2022
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -312,12 +312,14 @@ There are a few considerations to keep in mind while working with private endpoi
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
 * Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. A potential workaround is to turn off Private Links, config the gateway, and then reenable the Private Links. 
+* When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
 
 ## Next steps
 
 - [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding the Power BI admin role](service-admin-role.md)  
 - [Auditing Power BI in your organization](service-admin-auditing.md)  
+- [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 The following video shows how to connect a mobile device to Power BI, using private endpoints:
 

@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/18/2021
+ms.date: 12/02/2021
 ---
 
 # Row-level security with Power BI Embedded
@@ -142,23 +142,18 @@ An [On-premises data gateway](../../connect-data/service-gateway-onprem.md) is u
 
 Roles can be provided with the identity in an embed token. If no role is provided, the username that was provided can be used to resolve the associated roles.
 
-### Using the CustomData feature
+## Using the CustomData feature
 
-The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Custom data feature can't be set inside a .pbix file. When generating a token with the Custom data feature, you need to have a username.
+The CustomData feature allows you to add a Row filter by passing a free text (string) using the CustomData connection string property. Unlike users and roles, CustomData can't be set within a .pbix file.
 
->[!NOTE]
->The CustomData username can only be 256 characters long.
+CustomData can be used in a *role* DAX query, and can be used without a role in a *measure* DAX query.
 
-The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
+The CustomData feature is part of token generation functionality for dashboard, report, and tile artifacts. Dashboards can have multiple CustomData identities (one per tile/model or dataset).
 
-The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services uses this value via the *CUSTOMDATA()* function.
+> [!NOTE]
+> When generating a token with the CustomData feature, you must specify a username of no more than 256 characters.
 
-The only way to have dynamic RLS (which uses dynamic values for filter evaluation) in **Azure Analysis Services**, is using the *CUSTOMDATA()* function.
-
-You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
-CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
-
-#### CustomData SDK Additions
+### CustomData SDK additions
 
 The CustomData string property was added to our effective identity in the token generation scenario.
 
@@ -173,7 +168,7 @@ The identity can be created with custom data using the following call:
 public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
 ```
 
-#### CustomData SDK Usage
+### CustomData SDK usage
 
 If you're calling the REST API, you can add custom data inside each identity, for example:
 

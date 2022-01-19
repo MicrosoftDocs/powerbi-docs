@@ -64,6 +64,8 @@
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Configure credentials"
+      href: configure-credentials.md      
     - name: "Embed in Salesforce"
       href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
@@ -96,14 +98,18 @@
         href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
+      - name: "Push datasets limitations"
+        href: push-datasets-limitations.md         
     - name: "Power BI Developer in a Day course"
       href: ../../learning-catalog/developer-online-course.md
     - name: "Monitor Power BI Embedded data reference"
-      href: monitor-power-bi-embedded-reference.md        
+      href: monitor-power-bi-embedded-reference.md            
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
       href: /cli/azure/powerbi
+    - name: Power BI glossary
+      href: pbi-glossary.md
   - name: Resources
     items:
     - name: "Power BI Dev Camp"

@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 Integrating goals and scorecards deeply into reporting solutions is a great way to drive alignment and progress on a team. With the new scorecard visual in Power BI Desktop, you have the flexibility from an authoring perspective to add an existing scorecard to a report, or create a new scorecard. You can seamlessly integrate existing scorecards into reports, and even make updates to a scorecard directly from Power BI Desktop. 
 
-:::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual.png" alt-text="Screenshot showing a scorecard visual in a report.":::
+:::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual.gif" alt-text="Screenshot showing a scorecard visual in a report.":::
 ## Prerequisites
 
 - You must be signed in to Power BI Desktop and have a Power BI Pro license.
@@ -37,7 +37,7 @@ This feature is in preview, so you first need to turn the feature on. Go to **Fi
 
      :::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual-empty-state.png" alt-text="Screenshot showing scorecard visual empty state.":::
 
-    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. You create the new scorecard and the associated dataset in the workspace that you select.
+    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. The new scorecard and the associated dataset gets created in the workspace that you select.
 
     :::image type="content" source="media/power-bi-visualization-scorecard-visual/create-scorecard.png" alt-text="Screenshot showing create scorecard experience.":::
 
@@ -61,8 +61,10 @@ The toolbar provides the following options:
 ## Format the scorecard
 
  The visual supports various formatting options for scorecards, such as font style, colors, and backgrounds, so you can customize the scorecard to fit the look and feel of the rest of your report. You can also turn off the Scorecard header or status overview cards.
- 
-:::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard.png" alt-text="Screenshot showing scorecard formatting options.":::
+
+| Format the scorecard | Format the goals |
+|-----|------|
+| :::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard.png" alt-text="Screenshot showing scorecard formatting options.":::  | :::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard-2.png" alt-text="Screenshot showing other scorecard formatting options."::: |
 
 When you connect to an existing scorecard in the Power BI service from Power BI Desktop, formatting changes you make from the **Visualizations** pane will only apply to the scorecard in this report. They won't update the original scorecard in the Power BI service.
  

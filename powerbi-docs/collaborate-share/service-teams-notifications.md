@@ -79,6 +79,10 @@ We recommend Power BI admins to allow notifications in Teams. However, the [**Mi
 
 To help users receive notifications in Teams, you can work with the your Teams Admins to install Power BI broadly in the organization through an app setup policy.
 
+## Known issues and limitations
+
+- See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
+
 ## Next steps
 
 - [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md)

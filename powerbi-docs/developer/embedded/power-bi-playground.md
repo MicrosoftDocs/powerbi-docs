@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 11/23/2021
 ms.custom: intro-overview
 ---
 
@@ -24,6 +24,9 @@ The playground has the following main experiences:
 * [Explore our APIs](#explore-our-apis)
 * [Showcases](#showcases)
 * [Learning center](#learning-center)
+
+>[!TIP]
+>For a demonstration of how to best use the playground, watch this [video](https://microsofteur-my.sharepoint.com/personal/alonba_microsoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground%2FPower%20BI%20Embedded%20Playground%2Emp4&parent=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground)
 
 ## Developer sandbox
 

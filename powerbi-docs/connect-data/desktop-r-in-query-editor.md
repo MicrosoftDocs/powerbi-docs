@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -107,9 +107,9 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 
 After you've uploaded the .pbix file to the Power BI service, you need to take additional steps to enable service data refresh and updated visuals:  
 
-* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about personal gateways.
+* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
 
-* **Install a personal gateway**: You need a personal gateway installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [Use personal gateways in Power BI](service-gateway-personal-mode.md).
+* **Install a gateway**: You need an on-premises data gateway (personal mode) installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [use personal gateways in Power BI](service-gateway-personal-mode.md).
 
 ## Considerations and limitations
 
@@ -125,7 +125,7 @@ There are some limitations to queries that include R scripts created in Power Qu
 
    ![Data source settings dialog box](media/desktop-r-in-query-editor/r-in-query-editor_10.png)  
   
-* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install a personal gateway on the computer containing the workbook and R. 
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. 
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 

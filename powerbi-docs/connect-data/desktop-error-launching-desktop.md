@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 06/18/2021
+ms.date: 01/13/2022
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
@@ -60,6 +60,71 @@ You may see a message similar to this:
 
 **Solution**: You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
 
+## Resolve issues starting the Microsoft Store version of Power BI Desktop
+
+You may see a message similar to this:
+
+"Hmmmm... can't reach this page. ms-pbi.pbi.microsoft.com's server IP address could not be found. Application event log message - The description for Event ID 1 from source"
+
+It may include further information, such as the following:
+
+"Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer."
+
+**Solution**: Reinstall WebView2 with the following steps:
+
+1. Uninstall webview2, which does not require elevated permissions (you don't have to be an administrator).
+1. Install webview2 using the [installation link](https://go.microsoft.com/fwlink/p/?LinkId=2124703), which also does not require elevated permissions.
+
+## Resolve issues related to WebView2
+
+In rare cases, Power BI Desktop might fail to start at all. Instead, it might show a gray window and/or an error message that mentions 'WebView2':
+
+![Error message mentioning WebView2.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-webview2-error.png)
+
+If this happens to you, please [reach out to us](#get-help-with-other-launch-issues) with the following information:
+1. WebView2 error reports. If you use the Microsoft Store version of Power BI Deskotp, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
+2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
+3. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png" alt-text="Event viewer showing context menu with 'Save All Events As...' highlighted.":::
+
+4. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
+
+### Install the Windows Assessment and Deployment Kit
+
+Please follow these steps to install the required tools:
+
+1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
+1. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+    
+1. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
+
+1. Complete the installation and then start **Windows Performance Recorder**.
+1. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
+1. In Windows Performance Recorder, choose **More options**:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
+
+1. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
+
+1. Choose **Start** to start the recording:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
+
+1. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
+1. Once done, choose **Save** to stop the recording and save the results to your machine:
+
+    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
+
+1. Provide all information collected to our support team when requested.
+
+
 ## Get help with other launch issues
 
 We strive to cover as many issues that occur with Power BI Desktop as possible. We regularly look at issues that may be affecting many customers, and include them in our articles.
@@ -67,3 +132,7 @@ We strive to cover as many issues that occur with Power BI Desktop as possible. 
 If the issue with opening Power BI Desktop isn't associated with the On-premises data gateway, or when the previous resolutions don't work, you can submit a support incident to *Power BI support* (<https://support.powerbi.com>) to help identify and solve your issue.
 
 Should you come across other issues in the future with Power BI Desktop, it's helpful to turn on tracing and gather log files. Log files may help to isolate and identify the issue. To turn on tracing, choose **File** > **Options and settings** > **Options**, select **Diagnostics**, and then select **Enable tracing**. Power BI Desktop must be running to set this option, but it's helpful for future issues associated with opening Power BI Desktop.
+
+## Next steps
+
+* [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)

@@ -31,6 +31,9 @@ Since the Azure AD token of the user is passed via the gateway, it is possible f
 * A tenant-level setting in the Power BI admin portal allows only Power BI service admins to enable this feature for a tenant. See [Azure AD Single Sign-On (SSO) for Gateway](../admin/service-admin-portal.md#azure-ad-single-sign-on-sso-for-gateway) for details.
 * As a Power BI service admin, you can also control who can install gateways in your tenant. See [Preview: View and manage on-premises data gateways - Power Platform](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) for more information.
 
+The Azure AD Single Sign-On feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the Azure AD Single Sign-On (SSO) for Gateway tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway.
+![enable azure ad sso for gateway in Power BI admin portal](media/service-gateway-azure-active-directory-sso/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
+
 ## Next steps
 
 * [Overview of single sign-on (SSO) for on-premises data gateways in Power BI](service-gateway-sso-overview.md)

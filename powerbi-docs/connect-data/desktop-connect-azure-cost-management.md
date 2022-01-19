@@ -8,13 +8,15 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/29/2021
+ms.date: 01/03/2022
 LocalizationGroup: Connect to data
 ---
 
 # Create visuals and reports with the Azure Cost Management connector in Power BI Desktop
 
-You can use the Azure Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spend. The Azure Cost Management connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).  
+You can use the Azure Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spend. The Azure Cost Management connector currently supports customers with a direct [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).  
+
+The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management | Microsoft Docs](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
 The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles?view=o365-worldwide) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
@@ -49,6 +51,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
 5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* with the data copied from the previous steps. 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
+
+    Alternatively, for **Choose Scope**, select **Enrollment Number** and input the Billing Account ID string as copied from the previous steps.
+
 6.	Enter the number of months and select **OK**.
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
@@ -125,6 +130,14 @@ The following considerations and limitations apply to the Azure Cost Management 
 
 * Data row requests exceeding one million rows is not supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
 * The Azure Cost Management data connector does not work with Office 365 GCC customer accounts.
+* **Data refresh:** The cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day. 
+* **Data source reuse:** If you have multiple reports that are pulling the same data, and do not need additional report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
+
+    For more information on reusing data sources, see the following:
+
+    * [Introduction to datasets across workspaces](service-datasets-across-workspaces.md)
+    * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 

@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: conceptual
-  ms.date: 11/03/2021
+  ms.date: 12/13/2021
     
 title: Frequently asked questions about Power BI Embedded
 summary: |
@@ -206,19 +206,9 @@ sections:
       - question: |
           In what Azure regions is PBI Embedded available?
         answer: |
-          [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
+          Power BI Embedded is non-regional which means it is not dependent on any specific Azure region.
           
-          Available regions (16 - same regions as Power BI)
-          
-          * US (6) - East US, East US 2, North Central US, South Central US, West US, West US 2
-          * Europe (2) - North Europe, West Europe
-          * Asia Pacific (2) - Southeast Asia, East Asia
-          * Brazil (1) - Brazil South
-          * Japan (1) - Japan East
-          * Australia (1) - Australia Southeast
-          * India (1) - West India
-          * Canada (1) - Canada Central
-          * United Kingdom (1) - UK South
+          See [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=all) for regional information about all Azure products.
           
       - question: |
           What is Power BI Embedded's authentication model?
@@ -229,19 +219,7 @@ sections:
           
           You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
           
-          To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
-          
-      - question: |
-          My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
-        answer: |
-          It's standard OAuth on-behalf-of flow (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). You need to configure your application to require Power BI service (with the required scopes) permissions. Once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify the Power BI resource URL as the resource ID:
-          
-          ```csharp
-          var context = new AD.AuthenticationContext(authorityUrl);
-          var userAssertion = new AD.UserAssertion(userAccessToken);
-          var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
-          var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
-          ```
+          To get an Azure AD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
           
       - question: |
           What object ID is the service principal object ID?
@@ -443,9 +421,9 @@ sections:
       - question: |
           I've downloaded the sample app, which solution do I choose?
         answer: |
-          If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+          If you're working with the **Embed for your customers** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\App Owns Data` folder and run the `PowerBIEmbedded_AppOwnsData.sln` file.
           
-          If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
+          If you're working with the **Embed for your organization** experience, save and unzip the `PowerBI-Developer-Samples.zip` file. Then open the `PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app` folder and run the `pbi-saas-embed-report.sln` file.
           
       - question: |
           How can I edit my registered application?

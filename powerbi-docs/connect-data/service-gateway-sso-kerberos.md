@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/26/2021
+ms.date: 12/07/2021
 LocalizationGroup: Gateways
 ---
 
@@ -35,8 +35,14 @@ In a standard installation, the gateway runs as the machine-local service accoun
 
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
-> [!NOTE]
-> If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.
+
+If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.The local service SID for NT SERVICE/PBIEgwService is as follows: 
+
+`S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
+
+To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
+
+`SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
 
 ## Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
@@ -62,7 +68,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
 
-   ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
+   ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
    
@@ -206,11 +212,11 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 ### Set user-mapping configuration parameters on the gateway machine (if necessary)
 
-If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube video](https://www.youtube.com/watch?v=NG05PG9aiRw).
+If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
 
-1. Open the main gateway configuration file, Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll. By default, this file is stored at C:\Program Files\On-premises data gateway.
+1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at `C:\Program Files\On-premises data gateway`.
 
-1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later. 
+1. Set **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll use `msDS-cloudExtensionAttribute1` in the steps that follow. This attribute is available only in Windows Server 2012 and later.
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
@@ -253,11 +259,11 @@ Similarly, Teradata also has additional data-source specific configuration requi
 After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries** is checked for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** is checked for Import based Reports.
 
 > [!NOTE]
-> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine "Users" group.
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
-The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries** give a different behaviour for DirectQuery based reports and Import based reports.
+The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries** give a different behavior for DirectQuery based reports and Import based reports.
 
 **Use SSO via Kerberos for DirectQuery queries**:
 * For DirectQuery based report, SSO credentials of the user are used.

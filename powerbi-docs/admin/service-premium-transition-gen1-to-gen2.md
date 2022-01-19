@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/14/2021
+ms.date: 12/13/2021
 LocalizationGroup: Premium
 ---
 
@@ -21,7 +21,7 @@ If your organization is using the previous version of Power BI Premium, you're r
 
 * **October 4, 2021** - Power BI Premium Gen2 is generally available.
 * **November 15, 2021** - We start sending notifications reminding customers to migrate.
-* **January 15, 2022** - Microsoft begins migration of Premium capacities to the modern Gen2 platform for all organizations.
+* **March 2022** - Microsoft begins migration of Premium capacities to the modern Gen2 platform for all organizations.
 
 ## Premium Gen2 prerequisites
 
@@ -37,9 +37,7 @@ The article [Dataset connectivity with the XMLA endpoint](./../admin/service-pre
 
 * **SQL Server Management Studio (SSMS)** - Version **18.9** or higher
 
-* **Visual Studio with Analysis Services projects** - Version **2.9.16** or higher
-
-* **Visual Studio with Analysis Services (SSDT)** - Version **2.9.16** or higher
+* **Visual Studio with Analysis Services projects (SSDT)** - Version **2.9.16** or higher
 
 You also need to use the following [client libraries](service-premium-connect-tools.md#client-libraries) when working with Gen2 capacities:
 
@@ -51,7 +49,7 @@ You also need to use the following [client libraries](service-premium-connect-to
 
 ## Self-migration to Premium Generation 2
 
-If you want to perform your own migration to the latest platform before January 15, 2022, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
+If you want to perform your own migration to the latest platform before March 2022, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
 
 Ready for the next generation? Follow these steps:
 
@@ -79,6 +77,15 @@ To date, organizations that have enabled Autoscale for capacities have gotten th
 ## Migration notification
 
 Following the general availability of gen2, we’ll begin to notify affected customers so that you can prepare your organization for changes. We’ll post additional awareness, along with specific migration timelines to Microsoft 365 Message Center. Admins will receive 60 days advance notice of changes. The timeline will vary by cloud.
+
+## National cloud supportability
+
+The following table describes Gen2 national cloud supportability. If a certain cloud environment has unsupported Gen2 features, they're also listed in the table.
+
+|Environment |Supported |Unsupported features |
+|------------|----------|---------------------|
+|U.S. Government Community Cloud (GCC)            |✔️ |Autoscale |
+|U.S. Government Community Cloud High (GCC High) |✔️ |          |
 
 ## Next steps
 
