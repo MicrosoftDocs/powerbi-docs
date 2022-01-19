@@ -88,7 +88,7 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 
 ### Export data to file
 
-When this setting is enabled the user can download data from a custom visual into a file on their storage device.
+When this setting is enabled, the user can download data from a custom visual into a file on their storage device.
 
 1. Expand the **Allow downloads fro custom visuals** settings.
 
