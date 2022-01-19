@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot incremental refresh in Power BI
+title: Troubleshoot incremental refresh and real-time data in Power BI
 description: Describes common troubleshooting scenarios for incremental refresh.
 author: minewiskan
 ms.author: owend
@@ -7,18 +7,20 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/08/2021
+ms.date: 12/13/2021
 LocalizationGroup: 
 ---
-# Troubleshoot incremental refresh
+# Troubleshoot incremental refresh and real-time data
 
-Because there are two phases when implementing an incremental refresh solution, the first being configuring parameters, filtering, and defining a policy in Power BI Desktop, and the second being the initial dataset refresh operation and subsequent refreshes in the service, we will look at troubleshooting separately for each of these phases.
+Because there are two phases when implementing an incremental refresh and real-time data solution, the first being configuring parameters, filtering, and defining a policy in Power BI Desktop, and the second being the initial dataset refresh operation and subsequent refreshes in the service, we will look at troubleshooting separately for each of these phases.
 
-Before troubleshooting incremental refresh, be sure to review [Incremental refresh for datasets](incremental-refresh-overview.md) and step-by-step information in [Configure incremental refresh](incremental-refresh-configure.md).
+Having partitioned the table in the Power BI service, it is important to keep in mind that incrementally refreshed tables that are also getting real-time data with DirectQuery are now operating in hybrid mode, meaning they operate in both import and DirectQuery mode. Any tables with relationships to such an incrementally refreshed hybrid table must use Dual mode so that they can be used in import and DirectQuery mode without performance penalties. Moreover, report visuals might cache results to avoid sending queries back to the data source, which would prevent the table from picking up the latest data updates in real time. The final troubleshooting section covers these hybrid-mode issues. 
+
+Before troubleshooting incremental refresh and real-time data, be sure to review [Incremental refresh for datasets and real-time data](incremental-refresh-overview.md) and step-by-step information in [Configure incremental refresh and real-time data](incremental-refresh-configure.md).
 
 ## Configuring in Power BI Desktop
 
-Most problems that occur when configuring incremental refresh have to do with query folding. As described in [Incremental refresh for datasets overview - Supported data sources](incremental-refresh-overview.md#supported-data-sources), your data source must support query folding.
+Most problems that occur when configuring incremental refresh and real-time data have to do with query folding. As described in [Incremental refresh for datasets overview - Supported data sources](incremental-refresh-overview.md#supported-data-sources), your data source must support query folding.
 
 ### Problem: Loading data takes too long
 
@@ -34,7 +36,7 @@ Verify the date/time column for the incremental refresh table is of Date/Time da
 
 #### Cause: The data source does not support query folding
 
-As described in [Incremental refresh for datasets - Requirements](incremental-refresh-overview.md#requirements), incremental refresh is designed for data sources that support query folding. Make sure data source queries are being folded in Power BI Desktop before publishing to the service, where query folding issues can be significantly compounded.
+As described in [Incremental refresh and real-time data for datasets - Requirements](incremental-refresh-overview.md#requirements), incremental refresh is designed for data sources that support query folding. Make sure data source queries are being folded in Power BI Desktop before publishing to the service, where query folding issues can be significantly compounded. This is especially important when including real-time data in an incremental refresh policy because the real-time DirectQuery partition requires query folding.
 
 #### Solution: Verify and test queries
 
@@ -112,6 +114,37 @@ Specify smaller refresh and store periods in the policy. For example, if you spe
 #### Cause: Date in the date column at the data source is updated
 
 The filter on the date column is used to dynamically partition the data into period ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won't get picked up, which can cause data refresh failures due to partition-key conflicts.
+
+## Hybrid mode in the service (Preview)
+
+When Power BI applies an incremental refresh policy with real-time data, it turns the incrementally refreshed table into a hybrid table that operates in both import and DirectQuery mode. Notice the DirectQuery partition at the end of the following partitions list of a sample table. The presence of a DirectQuery partition has implications for related tables as well as report visuals that query this table. 
+
+:::image type="content" source="media/incremental-refresh-troubleshoot/hybrid-table-01.png" alt-text="Screenshot of hybrid table.":::
+
+### Problem: Query performance is poor
+
+#### Cause: Related tables are not in Dual mode
+
+Hybrid tables operating in both import and DirectQuery mode require any related tables to operating in Dual mode so that they can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. Dual mode enables Power BI to reduce the number of limited relationships in the dataset and generate efficient data source queries to ensure good performance. Limited relationships can't be pushed to the data source requiring Power BI to retrieve more data than necessary. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
+
+#### Solution: Convert related tables to Dual mode
+
+When configuring an incremental refresh policy, Power BI Desktop reminds you to switch any related tables to Dual mode when you select Get the latest data in real time with DirectQuery (Premium only). In addition, make sure you review all existing table relationships in Model View.
+
+:::image type="content" source="media/incremental-refresh-troubleshoot/hybrid-table-02.png" alt-text="Screen showing converting related tables to dual mode.":::
+
+Tables currently operating in DirectQuery mode, are easily switched to Dual mode. In the table properties, under Advanced, select Dual from the Storage mode listbox. Tables currently operating in import mode, however, require manual work. Dual tables have the same functional constraints as DirectQuery tables. Power BI Desktop can therefore not convert import tables because they might rely on additional functionality not available in Dual mode. You must manually recreate these tables in DirectQuery mode and then convert them to Dual mode. To learn more, see [Manage storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md).
+
+### Problem: Report visuals don’t show the latest data
+
+#### Cause: Power BI caches query results improve performance and reduce back-end load
+
+By default, Power BI caches query results, so that queries of report visuals can be processed quickly even if they're based on DirectQuery. Avoiding unnecessary data source queries improves performance and reduces data source load, but it might also mean that the latest data changes at the source are not included in the results. 
+
+#### Solution: Configure automatic page refresh
+
+To keep fetching the latest data changes from the source, configure automatic page refresh for your reports in the Power BI service. Automatic page refresh can be performed in fixed intervals, such as five seconds or ten minutes. When that specific interval is reached, all visuals in that page send an update query to the data source and update accordingly. Alternatively, you can refresh visuals on a page based on detecting changes in the data. This requires a change detection measure that Power BI then uses to poll the data source for changes. Change detection is only supported in workspaces that are part of a Premium capacity. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
+
 
 ## See also
 

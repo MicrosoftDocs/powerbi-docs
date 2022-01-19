@@ -31,8 +31,8 @@ Supported Oracle versions:
 > Choose a version of Oracle Data Access Client (ODAC) which is compatible with your Oracle Server. For instance, ODAC 12.x does not always support Oracle Server version 9.
 > Choose the Windows installer of the Oracle Client.
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
- 
-After the client is installed and ODAC is configured properly, we recommend using PowerBI Desktop or other test client to verify correct installation and configuration on the Gateway.
+
+After the client is installed and ODAC is configured properly, we recommend using Power BI Desktop or other test client to verify correct installation and configuration on the Gateway.
 
 ## Add a data source
 
@@ -96,7 +96,7 @@ These errors might occur if the Oracle client either isn't installed or isn't co
 
 You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
 
-For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client(such as PowerBI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
+For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client (such as Power BI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
 
 For additional troubleshooting information that relates to the gateway, see [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 

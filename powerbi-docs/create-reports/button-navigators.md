@@ -7,21 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2021
+ms.date: 01/12/2022
 LocalizationGroup: Create reports
 ---
 
 # Create page and button navigators
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks. These navigators should save hours of effort building and managing your page or bookmark navigation experiences.
 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Example report with page and bookmark navigation":::
 
-You can find this capability in Power BI Desktop or Power BI Service on the **Insert** tab > **Buttons** > **Navigator**:
+You can find this capability in Power BI Desktop or Power BI service.
+
+## Page navigator
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+On the **Insert** tab, select **Buttons** > **Navigator** > **Page navigator**.
 
 :::image type="content" source="media/desktop-buttons/navigator-in-ribbon.png" alt-text="Add a navigator from the ribbon":::
 
-## Page navigator
+# [Power BI service](#tab/powerbi-service)
+
+Select **Edit** to edit the report, then on the menu bar select **Buttons** > **Navigator** > **Page navigator**.
+
+:::image type="content" source="media/desktop-buttons/navigator-in-menu-bar.png" alt-text="Add a navigator from the menu bar":::
+
+---
 
 When you select the Page navigator option, Power BI automatically creates a page navigator for you: 
 
@@ -41,11 +55,27 @@ If you want to further customize the pages that show or hide in the page navigat
 Note that if you’re testing out the page navigator in Power BI Desktop or in edit mode of the Power BI Service, you need to press Ctrl + click to navigate to the desired page.
 
 ## Bookmark navigator
-Before you create the bookmark navigator, you need to create the bookmarks first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
+Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md) first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
 
 :::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Bookmark examples":::  
 
-Once you’ve created your bookmarks, select the **Bookmark navigator** option. Power BI automatically creates a bookmark navigator for you: 
+Once you’ve created your bookmarks, select the **Bookmark navigator** option. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+On the **Insert** tab, select **Buttons** > **Navigator** > **Bookmark navigator**.
+
+:::image type="content" source="media/desktop-buttons/navigator-in-ribbon.png" alt-text="Add a navigator from the ribbon":::
+
+# [Power BI service](#tab/powerbi-service)
+
+Select **Edit** to edit the report, then on the menu bar select **Buttons** > **Navigator** > **Bookmark navigator**.
+
+:::image type="content" source="media/desktop-buttons/navigator-in-menu-bar.png" alt-text="Add a navigator from the menu bar":::
+
+---
+
+Power BI automatically creates a bookmark navigator for you: 
 
 :::image type="content" source="media/desktop-buttons/example-bookmark-navigator.png" alt-text="Bookmark navigator example":::
  
@@ -76,7 +106,7 @@ If the bookmark that you’re using for deselection is within the bookmark navig
 
 :::image type="content" source="media/desktop-buttons/hide-deselection-bookmark-setting.png" alt-text="Option to hide the deselection bookmark":::
  
-## Formatting   options
+## Formatting options
 Just like our other buttons, there are lots of formatting options for the navigators including: 
 - Fill
 - Text

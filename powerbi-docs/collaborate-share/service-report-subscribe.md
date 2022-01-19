@@ -8,11 +8,10 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/05/2021
+ms.date: 12/17/2021
 
 
 LocalizationGroup: Common tasks
-ROBOTS: NOINDEX
 ---
 # Subscribe others to your reports and dashboards in the Power BI service
 
@@ -82,6 +81,7 @@ See [Operations available in the audit and activity logs](../admin/service-admin
 - If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
 - To subscribe external users, your report or dashboard must be hosted in a Premium capacity workspace or app. Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 - Sharing content with a colleague outside of your tenant does not require a Premium capacity. So if you are `aaron@contoso.com`, you can *share* with `anyone@fabrikam.com`, but you can't *subscribe* `anyone@fabrikam.com`, and they can't subscribe to shared content *unless* that content is hosted in a Premium capacity.
+- External users can't subscribe themselves to reports or dashboards. Only people in an organization can subscribe external users, if the content is in a Premium capacity workspace or app.
 
 ### Troubleshooting
 
