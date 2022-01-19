@@ -1,5 +1,5 @@
 ---
-title: The Power BI service - basic concepts for business users
+title: The Power BI service - basic concepts for beginners
 description: The Power BI service apps, workspaces, dashboards, reports, datasets, and workbooks.
 author: mihart
 ms.author: mihart
@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 01/12/2022
 LocalizationGroup: Get started
 ---
 
@@ -16,8 +16,13 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
+Use this article to familiarize yourself with some of the terms and concepts associated with the Power BI service. Understanding these terms and concepts will make it easier for you to read through the other Power BI articles and to work in the Power BI service (app.powerbi.com). 
 
-This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from colleagues. *Business users* work with the Power BI service (app.powerbi.com), which is the website-based version of Power BI.
+
+## Prerequisites
+- You don't need a license for Power BI to learn from this article. But, it will probably make more sense if you can see the *bits and pieces* that you're reading about.  
+
+- This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from *creator* colleagues. *Business users* work with the Power BI service (app.powerbi.com), which is the website-based version of Power BI. 
 
 Receiving content from others requires one of the following:
 - A Power BI Pro or Premium Per User (PPU) user license
