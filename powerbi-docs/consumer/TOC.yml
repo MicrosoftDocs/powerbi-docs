@@ -94,6 +94,8 @@
         href: end-user-copy-paste.md
       - name: "Drill down in a visualization"
         href: end-user-drill.md
+      - name: "How to use an ArcGIS map in Power BI"
+        href: end-user-arcgis.md
     - name: Power BI in Teams
       items: 
       - name: "Use data for productive meetings"
