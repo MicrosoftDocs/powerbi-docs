@@ -25,10 +25,11 @@ You can find this capability in Power BI Desktop or Power BI service.
 ## Video
 
 Watch this video showing how to add page and bookmark navigators, and then try it yourself.
+
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.youtube.com/embed/RWRCPO]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRCPO]
 
 ## Page navigator
 
