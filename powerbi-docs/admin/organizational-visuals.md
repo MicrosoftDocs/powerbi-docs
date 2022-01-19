@@ -110,11 +110,10 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 |Software\Policies\Microsoft\Power BI Desktop\    |AllowCVToExportDataToFile    |0 - Disable </br>1 - Enable (default)         |
 |
 
-> [!NOTE]
-> When `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only when the:
->
-> * The feature switch in the admin portal is enabled.
-> * The user is logged on.
+Note that when `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only when:
+
+* The feature switch in the admin portal is enabled.
+* The user is logged on.
 
 ## Organizational visuals
 
