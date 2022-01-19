@@ -3,11 +3,12 @@ title: Create page and button navigators
 description: Using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks.
 author: Sujata994
 ms.author: sunaraya
-ms.reviewer: ''
+ms.reviewer: 'maggies'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2022
+ms.custom: video-RWRCPO
+ms.date: 01/19/2022
 LocalizationGroup: Create reports
 ---
 
@@ -20,6 +21,14 @@ Using Power BI’s built-in navigators, you can quickly build page and bookmark 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Example report with page and bookmark navigation":::
 
 You can find this capability in Power BI Desktop or Power BI service.
+
+## Video
+
+Watch this video showing how to add page and bookmark navigators, and then try it yourself.
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+> [!VIDEO https://www.youtube.com/embed/RWRCPO]
 
 ## Page navigator
 
