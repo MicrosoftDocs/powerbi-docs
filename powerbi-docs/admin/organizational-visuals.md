@@ -45,22 +45,22 @@ Manage organizational access for the following type of Power BI visuals:
 
 * Visuals available from AppSource.
 
-Follow the instructions below to enable users in your organization upload .pbiviz files, and add visuals from AppSource to their reports and dashboards.
+Follow the instructions below to enable users in your organization upload **.pbiviz** files, and add visuals from AppSource to their reports and dashboards.
 
 1. Expand the **Allow visuals created using the Power BI SDK** settings.
 
 2. Click **Enabled**.
 
-3. Choose who can upload .pbiviz and AppSource visuals:
+3. Choose who can upload **.pbiviz** and AppSource visuals:
 
-    * Select **The entire organization** option to allow everyone in your organization to upload .pbiviz files, and add visuals from AppSource.
-    * Select the **Specific security groups** option to manage uploading .pbiviz files, and adding visuals from AppSource using security groups. Add the security groups you want to manage to the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
+    * Select **The entire organization** option to allow everyone in your organization to upload **.pbiviz** files, and add visuals from AppSource.
+    * Select the **Specific security groups** option to manage uploading **.pbiviz** files, and adding visuals from AppSource using security groups. Add the security groups you want to manage to the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
 
 4. Click **Apply**.
 
    ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the allow visuals created using the Power B I S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
 
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload .pbiviz files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload **.pbiviz** files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
@@ -117,7 +117,7 @@ Note that when `AllowCVToExportDataToFile` is set to `1` the custom visual can e
 
 ## Organizational visuals
 
-As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab in the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
+As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab in the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and **.pbiviz** visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
 
 Organizational visuals settings are automatically deployed to Power BI Desktop.
 
@@ -126,7 +126,7 @@ Organizational visuals settings are automatically deployed to Power BI Desktop.
 
 ### Add a visual from a file
 
-Use this method to add a new Power BI visual from a .pbiviz file.
+Use this method to add a new Power BI visual from a **.pbiviz** file.
 
 > [!WARNING]
 > A Power BI visual uploaded from a file, could contain code with security or privacy risks; make sure you trust the author and the source of the visual, before deploying to the organization's repository.
@@ -171,7 +171,7 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
 You can pick visuals from the organizational visuals page to automatically show on the visualization pane of all the users in your organization.
 
-1. In the row of the visual you want to add , click **settings**.
+1. In the row of the visual you want to add, click **settings**.
 
     ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded. The from app source option is selected and a list of app source visuals is displayed. The screenshot also shows a cog settings menu button selected next to one of the visuals.](media/organizational-visuals/organizational-pane.png)
 
@@ -188,28 +188,28 @@ To permanently delete a visual, select the trash bin icon for the visual in the 
 
 ### Disable a .pbiviz visual
 
-You can disable a .pbiviz visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
+You can disable a **.pbiviz** visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
 
-1. In the row of the .pbiviz visual you want to disable , click **settings**.
+1. In the row of the **.pbiviz** visual you want to disable , click **settings**.
 
 2. In the **Access** section, disable the setting: *Users in the organization can access, view, share, and interact with this visual*.
 
-After you disable the .pbiviz visual, the visual won't render in existing reports, and it displays the following error message:
+After you disable the **.pbiviz** visual, the visual won't render in existing reports, and it displays the following error message:
 
 *This custom visual is no longer available. Please contact your administrator for details.*
 
 >[!NOTE]
->.pbiviz visuals that are bookmarked carry on working after they've been disabled.
+>**.pbiviz** visuals that are bookmarked continue working after they've been disabled.
 
 ### Update a visual
 
 AppSource visuals are updated automatically. Once a new version is available from AppSource, it will replace an older version deployed via the organizational visuals list.
 
-To update a .pbiviz visual, follow these steps to replace the visual.
+To update a **.pbiviz** visual, follow these steps to replace the visual.
 
 1. In the row of the visual you want to add , click **settings**.
 
-2. Click **Browse**, and select the .pbiviz you want to replace the current visual with.
+2. Click **Browse**, and select the **.pbiviz** you want to replace the current visual with.
 
 3. Click **Update**.
 
