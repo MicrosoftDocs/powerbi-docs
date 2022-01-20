@@ -76,7 +76,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 (Preview) in Power B
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-sign-in-connect.png" alt-text="Screenshot of authentication and sign in."::: 
 
-1. Select the user account. Make sure to sign in with the credentials which have appropriate admin access to your Microsoft 365 tenant (see list of approved roles above). 
+1. Select the user account. Make sure to sign in with the credentials which have appropriate admin access to your Microsoft 365 tenant (see [list of approved roles above](#prerequisites)). 
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
