@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 01/19/2022
+ms.date: 01/20/2022
 LocalizationGroup: Connect to services
 ---
 
@@ -76,11 +76,11 @@ To install the Emissions Impact Dashboard for Microsoft 365 (Preview) in Power B
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-sign-in-connect.png" alt-text="Screenshot of authentication and sign in."::: 
 
-1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained in the [prerequisites](#prerequisites). 
+1. Select the user account. Please make sure to login with the credentials which have appropriate admin access to your Microsoft 365 tenant (see list of approved roles above). 
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
-    Wait for the view to build. This can take 24-48 hours. Please refresh the dataset after 24 hours. 
+    Wait for the view to build. This can take 24-48 hours. Please refresh the dataset after 24 hours.
 
 ## Update the app 
 
@@ -116,13 +116,13 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 ## Additional resources
 
-* How-to video [Peter to add new link once available]
+* [How-to video (still pending)]()
 * [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 * [Microsoft Sustainability webpage](https://www.microsoft.com/en-us/sustainability)
 
 ### Finding your company’s Microsoft 365 Tenant ID 
 
-Follow the steps on [this page](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) to find your tenant ID. 
+Follow the steps on [this page](/onedrive/find-your-office-365-tenant-id) to find your tenant ID. 
 
 ## FAQs 
 
@@ -134,17 +134,43 @@ First, check in the Microsoft 365 Admin Center that you have one of the roles li
 
 **I entered my tenant ID, but my company data isn't loading. What's the issue?** 
 
-The Emissions Impact Dashboard for Microsoft 365 (Preview) may take 24-48 hours to load your data. Return after 24 hours and select the **Refresh** button in Power BI. 
+The Emissions Impact Dashboard for Microsoft 365 (Preview) may take 24-48 hours to load your data after completing the connection process. Return after 24 hours and select the **Refresh** button in Power BI in the app workspace, as shown in the [Issues](#issues) section above.
 
 **How am I supposed to use this data, and where do I report it?** 
 
 Your emissions can be reported as part of your company's Scope 3 indirect carbon emissions. Scope 3 emissions are often disclosed in sustainability reports, CDP climate change, and other reporting outlets. In addition to the emissions totals, the emissions savings provide a clear example of how your company's decision to use Microsoft 365 services is contributing to global emissions reductions. To contextualize, the app indicates the equivalent vehicle miles avoided corresponding to the reduction in GHG emissions, based on EPA's equivalency calculator factors as of January 2020.
 
+### Emissions data
+
+**I successfully connected to my tenant's data. Why do I see blank data in the report?**
+
+This likely indicates that your tenant's emissions volumes are very small. The charts in this report do not display emissions values that are lower than 0.001 MTCO2e.
+
+**Why can't I see emissions data for the previous month?**
+
+Emissions data for a given month is available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
+
+**This report currently only includes Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, and the Microsoft Search function within these applications. When will the remaining Microsoft 365 applications be added?**
+
+The remaining applications will be added over time. Check the Microsoft 365 Roadmap for the latest information on our feature release schedule.
+
+**My emissions data for previous months appears to have changed since I last looked at it. What happened?**
+
+We continuously make investments in improving the accuracy and completeness of this report. We may periodically restate historical data to account for these improvements, which may result in your historical emissions increasing or decreasing.
+
+**Why do I see emissions from regions outside of my Microsoft 365 data location?**
+
+Microsoft 365 emissions are allocated based on data storage as well as active usage and compute associated with Microsoft 365 applications. Emissions driven by compute may occur in regions outside your Microsoft 365 data location. Learn more about Microsoft 365 data residency [here](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwidev).
+
+**Where is the data used to produce this report stored?**
+
+It is stored in the United States.
+
 ### Methodology 
 
 **What is the methodology behind the tool?** 
 
-The Emissions Impact Dashboard for Microsoft 365 (Preview) reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft's purchases of renewable energy. As part of the app's development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology**[ tab in the tool. 
+The Emissions Impact Dashboard for Microsoft 365 (Preview) reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft's purchases of renewable energy. As part of the app's development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Microsoft 365 services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology** tab in the tool.
 
 **Does this calculation include all Microsoft 365 applications?**
 
