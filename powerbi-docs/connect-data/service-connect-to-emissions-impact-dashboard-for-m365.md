@@ -44,14 +44,14 @@ To install the Emissions Impact Dashboard for Microsoft 365 (Preview) in Power B
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
-    **[Peter will provide a link as soon as it’s available]**
+    **[Peter will provide a new screenshot as soon as it’s available]**
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-appsource.png" alt-text="Screenshot of Emissions Impact Dashboard for Microsoft 365 (Preview) on AppSource.":::
 
     You can also search for the app in Power BI. 
 
 1. When prompted, click **Install**. 
 
-    **[Peter will provide a link as soon as it’s available]**
+    **[Peter will provide a new screenshot as soon as it’s available]**
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-install.png" alt-text="Screenshot of install dialog.":::
 
 1. When the app finishes installing, it will appear on your Power BI Apps page. Click on the app and open it. 
