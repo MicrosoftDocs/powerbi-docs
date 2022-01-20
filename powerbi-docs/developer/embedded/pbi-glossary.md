@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/10/2022
+ms.date: 01/12/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -71,7 +71,7 @@ Are now called *Quick Insights*.
 
 ### Bookmark
 
-A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the PBIX report file for sharing on the Power BI service
+A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
 ### Breadcrumbs
 
@@ -279,9 +279,13 @@ An iFrame is component of an HTML element that allows you to embed reports and o
 
 Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
 
+### Independent Software Vendor, ISV
+
+A third-party software developer which may include an individual or an organization that independently creates computer software.
+
 ### Insights
 
-See **quick insights**.
+See [**quick insights**](#quick-insights).
 
 ## J
 
@@ -431,8 +435,8 @@ See *account*.
 
 ### Publish
 
-Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others. 
+Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app.
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others.
 
 ## Q
 
@@ -460,7 +464,7 @@ Quick Insights refer to automatically generated insights that reveal trends and 
 
 ### R, Microsoft R
 
-R is a programming language and software environment for statistical computing and graphics.
+A programming language and software environment for statistical computing and graphics.
 
 ### Reading View
 
