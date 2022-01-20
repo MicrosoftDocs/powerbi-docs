@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/10/2022
+ms.date: 01/12/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -211,6 +211,10 @@ Selecting an ellipsis displays more menu options. Also referred to as the **More
 
 A common standard across the internet. In Power BI, the customer can generate an embed code and copy it to place content such as a report visual on a website or blog.
 
+### Embed token
+
+A string of encrypted characters that is used for authentication which specifies the content the web app user can access and the user’s access level.
+
 ### Embedded
 
 See Power BI Embedded.
@@ -267,13 +271,21 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ## I
 
+### Inline frame, iFrame
+
+An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's essentially a way to display a secondary webpage inside the main page.
+
 ### Implicit measures
 
-Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report. 
+Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
+
+### Independent Software Vendor, ISV
+
+A third-party software developer which may include an individual or an organization that independently creates computer software.
 
 ### Insights
 
-See **quick insights**.
+See [**quick insights**](#quick-insights).
 
 ## J
 
@@ -361,11 +373,11 @@ Reports have one or more pages. Each tab on the report canvas represents a page.
 
 Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
-### .pbiviz
+### PBIVIZ
 
 The file extension for a Power BI custom visual.
 
-### .pbix
+### PBIX
 
 The file extension for a Power BI Desktop file.
 
@@ -423,8 +435,8 @@ See *account*.
 
 ### Publish
 
-Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others. 
+Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app.
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others.
 
 ## Q
 
@@ -452,7 +464,7 @@ Quick Insights refer to automatically generated insights that reveal trends and 
 
 ### R, Microsoft R
 
-R is a programming language and software environment for statistical computing and graphics.
+A programming language and software environment for statistical computing and graphics.
 
 ### Reading View
 
@@ -564,7 +576,7 @@ A client organization that is served from a web service (SaaS) which serves othe
 
 ### Tiles
 
-Power BI dashboards contain report tiles.
+A [tile](/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 

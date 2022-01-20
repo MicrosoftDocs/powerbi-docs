@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/01/2021
+ms.date: 01/13/2022
 LocalizationGroup: Premium 
 ---
 
@@ -88,7 +88,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
-* **Overloaded minutes** - Displays a sum of 30 minutes increments were overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
+* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
 
 * **Performance delta** - Displays the performance effect on Power BI items. A positive value indicates that the performance is improving, and a negative value indicates that the performance is degrading. Sort to view the Power BI items that were effected the most due to performance degradation.
 
@@ -117,7 +117,7 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    *Interactive* operations cover a wide range of resources triggered by Power BI users. These operations are handled by front end cores and are associated with interactive page loads.
+    *Interactive* operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
@@ -172,11 +172,11 @@ When you detect a Power BI item that causes overload, you can either optimize th
 
 ### Artifacts causing overloading
 
-You can visually identify the different Power BI items that cause overload, by using the [Artifacts causing overloading](#artifacts-causing-overloading) timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
+You can visually identify the different Power BI items that cause overload, by using the timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
 
 ### Overloaders
 
-Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an *Overloading score* when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
+Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-gen2-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
 
@@ -254,11 +254,11 @@ Each column represents the number of CPU seconds used to compete a single operat
 
 Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
 
-### Matrix table
+### Refresh detail
 
-The matrix table describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
+A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
 
-The matrix has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
+The table has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
 
 ### Refresh operations
 
