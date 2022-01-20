@@ -160,7 +160,7 @@ We continuously make investments in improving the accuracy and completeness of t
 
 **Why do I see emissions from regions outside of my Microsoft 365 data location?**
 
-Microsoft 365 emissions are allocated based on data storage as well as active usage and compute associated with Microsoft 365 applications. Emissions driven by compute may occur in regions outside your Microsoft 365 data location. Learn more about Microsoft 365 data residency [here](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwidev).
+Microsoft 365 emissions are allocated based on data storage as well as active usage and compute associated with Microsoft 365 applications. Emissions driven by compute may occur in regions outside your Microsoft 365 data location. Learn more about Microsoft 365 data residency [here](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwidev&preserve-view=true).
 
 **Where is the data used to produce this report stored?**
 
