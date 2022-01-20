@@ -64,7 +64,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 (Preview) in Power B
 
 1. In the **Connect to Emissions Impact Dashboard for Microsoft 365 (Preview)** dialog, enter your Microsoft 365 tenant ID. 
 
-    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-tenant-id.png" alt-text="Screenshot of tenant id input."::: 
+    :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-tenant-id.png" alt-text="Screenshot of tenant ID input."::: 
 
     When done, click **Next**. 
 
@@ -76,11 +76,11 @@ To install the Emissions Impact Dashboard for Microsoft 365 (Preview) in Power B
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-sign-in-connect.png" alt-text="Screenshot of authentication and sign in."::: 
 
-1. Select the user account. Please make sure to login with the credentials which have appropriate admin access to your Microsoft 365 tenant (see list of approved roles above). 
+1. Select the user account. Make sure to sign in with the credentials which have appropriate admin access to your Microsoft 365 tenant (see list of approved roles above). 
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard-for-m365/m365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
-    Wait for the view to build. This can take 24-48 hours. Please refresh the dataset after 24 hours.
+    Wait for the view to build. This can take 24-48 hours. Refresh the dataset after 24 hours.
 
 ## Update the app 
 
