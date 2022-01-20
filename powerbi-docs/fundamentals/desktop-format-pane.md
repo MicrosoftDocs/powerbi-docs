@@ -8,20 +8,24 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 01/20/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-We’re introducing a redesigned Format pane in Power BI Desktop. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
+The redesigned Format pane in Power BI Desktop is now on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
 
-We know it's a big change so we're rolling it out slowly, to get your early feedback and make any needed adjustments. It's currently in preview starting with the Power BI Desktop November 2021 release. Give it a try!
+We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
 
-## Turn on the preview
+## Turn off the preview
 
-- Go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+
+    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+
+    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
 
 ## New pivot icons 
 
