@@ -122,7 +122,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 ### Finding your company’s Microsoft 365 Tenant ID 
 
-Follow the steps on [this page](https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id to find your tenant ID). 
+Follow the steps on [this page](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) to find your tenant ID. 
 
 ## FAQs 
 
