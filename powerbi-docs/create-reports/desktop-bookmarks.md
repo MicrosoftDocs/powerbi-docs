@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2022
+ms.date: 01/21/2022
 LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
@@ -16,8 +16,10 @@ LocalizationGroup: Create reports
 
 When you edit a report in Power BI Desktop and the Power BI service, you can add *report bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. When others view your report, they can get back to that exact state by selecting your saved bookmark.
 
-> [!NOTE]
-> In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, see [Bookmarks in the Power BI service](../consumer/end-user-bookmarks.md).
+## Related articles
+
+- In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, see [Bookmarks in the Power BI service](../consumer/end-user-bookmarks.md).
+- After you've created your report bookmarks, you can quickly build a [bookmark navigation experience](button-navigators.md) with a few more clicks.
 
 ![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks_01.png)
 
@@ -187,5 +189,6 @@ In this release of bookmark features, there are a few considerations and limitat
 ## Next steps
 For more information about features that are similar or interact with bookmarks, see the following articles:
 
-* [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in focus mode](../consumer/end-user-focus.md)
+- [Personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md)
+- [Build a bookmark navigation experience](button-navigators.md)
+- [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
