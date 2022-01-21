@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2021
+ms.date: 01/21/2022
 LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report (preview)
@@ -20,6 +20,15 @@ A good way to add meaning to a table or matrix is to add *sparklines*. Sparkline
 ## Turn on the sparklines preview
 
 - Go to **File** > **Options and settings** > **Options** > **Preview features**, and select **Sparklines**.
+
+## Video
+
+Watch this video showing how to add sparklines, and then try it yourself.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RWRCPQ]
 
 ## Add a sparkline
 
