@@ -51,7 +51,7 @@ REST API modifications do not change permissions as they are currently defined f
 
 ## POST /refreshes
 
-To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The Location header in the response includes the **refreshId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
+To perform a refresh operation, use the POST verb on the /refreshes collection to add a new *refresh* object to the collection. The Location header in the response includes the **requestId**. Because the operation is asynchronous, a client application can disconnect and check the status later if required.
 
 Sample request
 
@@ -102,7 +102,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 202 Accepted
 ```
 
-The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`. For example, in the following response, `refreshId` is the last identifier identifier in the response.
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`, which is required for some asynchronous refresh operations. For example, in the following response, `refreshId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
 
 ```json
 x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
@@ -166,9 +166,9 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-## GET /refreshes/\<requestId\>
+## GET /refreshes/\<refreshId\>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **requestId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **refreshId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
@@ -195,7 +195,7 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 
 ## DELETE /refreshes/\<refreshId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `refreshId`. 
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `refreshId`.
 
 For example,
 
