@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/16/2021
+ms.date: 01/21/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -32,8 +32,6 @@ https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refresh
 By using the base URL, resources and operations can be appended based on parameters. Groups, Datasets, and Refreshes are *collections*. Group, Dataset, and Refresh are *objects*.
 
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
-
-
 
 ## Requirements
 
@@ -104,7 +102,12 @@ Specifying parameters is not required. If not specified, the default is applied.
 202 Accepted
 ```
 
-The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`.
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`. For example, in the following response, `refreshId` is the last identifier identifier in the response.
+
+```json
+x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
+Location: https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/87f31ef7-1e3a-4006-9b0b-191693e79e9e
+```
 
 ## GET /refreshes
 
@@ -115,21 +118,21 @@ Here's an example of the response body:
 ```json
 [
     {
-        "refreshId": "1344a272-7893-4afa-a4b3-3fb87222fdac",
+        "requestId": "1344a272-7893-4afa-a4b3-3fb87222fdac",
         "refreshType": "ViaApi",
         "startTime": "2020-12-07T02:06:57.1838734Z",
         "endTime": "2020-12-07T02:07:00.4929675Z",
         "status": "succeeded"
     },
     {
-        "refreshId": "474fc5a0-3d69-4c5d-adb4-8a846fa5580b",
+        "requestId": "474fc5a0-3d69-4c5d-adb4-8a846fa5580b",
         "startTime": "2020-12-07T01:05:54.157324Z",
         "refreshType": "ViaApi",
         "endTime": "2020-12-07T01:05:57.353371Z",
         "status": "inProgress"
     }
     {
-        "refreshId": "85a82498-2209-428c-b273-f87b3a1eb905",
+        "requestId": "85a82498-2209-428c-b273-f87b3a1eb905",
         "refreshType": "ViaApi",
         "startTime": "2020-12-07T01:05:54.157324Z",
         "endTime": "2020-12-07T01:05:57.353371Z",
@@ -146,13 +149,12 @@ Here's an example of the response body:
 
 |Name  |Type  |Description  |
 |---------|---------|---------|
-|`refreshId`     |    Guid     |    The identifier of the refresh request. `refreshId` is required to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
-|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call.   |
+|`requestId`     |    Guid     |    The identifier of the refresh request. `requestId` is required to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
+|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call. <br>`ReliableProcessing` indicates an Asynchronous refresh triggered by an API call.   |
 |`startTime`     |    string     |    DateTime of start.     |
 |`endTime`     |   string      |    DateTime of end.     |
 |`status`     |  string       |   `completed`\*  indicates the refresh operation completed successfully. <br>`failed` indicates the refresh operation failed - serviceExceptionJson will contain the error. <br>`unknown` indicates a completion state that cannot be determined. `endTime` will be empty with this status.   <br>`disabled` indicates refresh was disabled by selective refresh.  |
 |`extendedStatus`     |    string     |   Augments the status property to provide additional information.     |
-|`serviceExceptionJson`     |   string      |    Failure error code in json format (not empty only on error).     |
 
 \* In Azure Analysis Services, this status result is 'succeeded'. If migrating an Azure Analysis Services solution to Power BI, you may have to modify your solutions.
 
@@ -164,9 +166,9 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-## GET /refreshes/\<refreshId\>
+## GET /refreshes/\<requestId\>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **refreshId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **requestId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
@@ -193,7 +195,7 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 
 ## DELETE /refreshes/\<refreshId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the refreshId. 
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `refreshId`. 
 
 For example,
 
@@ -208,6 +210,8 @@ DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a
 Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<refreshId>`.
 
 Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<refreshId>`.
+
+Get Details and Cancel are new operations for asynchronous refresh only. They are not supported for non-asynchronous refresh operations.
 
 #### Power BI Embedded
 
