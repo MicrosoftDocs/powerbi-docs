@@ -63,6 +63,8 @@
         href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
+      - name: "The new Format pane"
+        href: ../fundamentals/desktop-format-pane.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "About accessibility"
