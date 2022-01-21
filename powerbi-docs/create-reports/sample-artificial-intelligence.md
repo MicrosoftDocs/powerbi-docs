@@ -75,15 +75,15 @@ The second report page we’ll explore is **Decomposition Tree**, where we’ll 
 #### Who is the top sales owner and largest opporunity path for computer sales
 1. From the **Decomposition tree** visual in the center of our report, select the **Computers** option within the **Category** breakdown to re-run the analysis.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Status change for Key influencers.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Decomposition tree re-run analysis.":::
 
 1. With our updated analysis, we can leverage **artificial intelligence splits** to determine the path to the next highest sales opportunities in our data, select the "**+**" symbol next to **Tablets** and the **High value** option.
 
-:::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Status change for Key influencers.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Decomposition tree ai split path.":::
 
 3. The **Territory** field is determined as the next path for sales opportunity with the **US-SOUTH** being the largest. Select the "**+**" symbol next to **US-SOUTH** and then the **High value** option. From the updated selection we can now answer the question **“Who is the top sales owner?"**
 
-:::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Status change for Key influencers.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Decomposition tree ai split path to highest value.":::
 
 To learn more, see [Decomposition tree visuals](../visuals/power-bi-visualization-decomposition-tree).
 
