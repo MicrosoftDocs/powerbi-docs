@@ -15,17 +15,31 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-The redesigned Format pane in Power BI Desktop is now on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
+Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
+
+The first time you open the February release of Power BI Desktop, you see a notification about the updated Format pane.
+
+:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
 
 We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
 
-## Turn off the preview
+## Latest updates
 
-- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+Improvements added in February 2022 include:
 
-    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+- Ability to toggle axis title independent of axis has been re-added.
+- Ability to add shade area to combo charts has been re-added.
+- Ability to customize marker shape by series for scatter charts has been re-added.
+- Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 
-    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
+### Consolidated outline settings for matrix and table
+
+We also consolidated the outline settings for matrixes and tables to be set from the Grid card. Previously users needed to go to the Grid card to set the color and width, and then to each section of the matrix to adjust the border location. Now, users can adjust the borders for the whole matrix and tweak each section from the same place within the Grid card.
+
+
+|Before  |After  |
+|---------|---------|
+|  :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of the old matrix format pane experience.":::   | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of the new matrix format pane experience."::: |
 
 ## New pivot icons 
 
@@ -127,6 +141,15 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+
+## Turn off the preview
+
+- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+
+    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+
+    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
+
 
 ## Considerations and limitations
 
