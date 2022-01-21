@@ -49,10 +49,10 @@ Alternatively, you can [download a report from the service to Power BI Desktop](
 
 The sample report has three pages **Key Influencers**, **Decomposition Tree**, and **Anomaly Detection** to demonstrate how people can discover new insights and inform their decision making with easy to use Artificial Intelligence visuals.
 
-### Key Influencers page
+## Key Influencers page
 The first report page we’ll explore is **Key Influencers**, where we’ll analyze our data to understand the impact and influence of key contributors on our results.
 
-#### What are our top contributors for wins and losses?
+### What are our top contributors for wins and losses?
 
 1. We’ll start by reviewing the top contributors that resulted in a **Status of Won** using the **Key influencers** visual in the center of our report. From the visual we notice the top contributor is when the **Discount goes up 2%** we are **2.76x** more likely to win new revenue.
 1. After selecting the **2.76x** indicator a scatter chart will now be displayed to the right displaying the correlation between our **Discount** and **% Status is Won** for this influencer.
@@ -69,10 +69,10 @@ The first report page we’ll explore is **Key Influencers**, where we’ll anal
 
 To learn more, see [Key influencers visuals](../visuals/power-bi-visualization-influencers).
 
-### Decomposition Tree page
+## Decomposition Tree page
 The second report page we’ll explore is **Decomposition Tree**, where we’ll conduct root cause and ad hoc analysis to understand the impact of **Sales Opportunities** across the different fields within our data.
 
-#### Who is the top sales owner and largest opporunity path for computer sales
+### Who is the top sales owner and largest opporunity path for computer sales
 1. From the **Decomposition tree** visual in the center of our report, select the **Computers** option within the **Category** breakdown to re-run the analysis.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Decomposition tree re-run analysis.":::
@@ -87,10 +87,10 @@ The second report page we’ll explore is **Decomposition Tree**, where we’ll 
 
 To learn more, see [Decomposition tree visuals](../visuals/power-bi-visualization-decomposition-tree).
 
-### Anomaly Detection page
+## Anomaly Detection page
 The final report page we'll explore is **Anomaly Detection**, where we’ll combine several Artificial Intelligence capabilities to detect anomalies in our results, generate dynamic text summaries, and use our own natural language to ask questions and get answers from our data.
 
-#### Why the sharp decline in software revenue?
+### Why the sharp decline in software revenue?
 1. The clustered bar chart in the top right of the page is divided into multiple versions of itself (**small multiples**) to compare data across the **Manager** and **Product category** fields. Within the **Software** multiple select the bar for **Low, Spencer** to dynamically filter the rest of the page to Spencer's specific results.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-small-multiple.png" alt-text="Small multiple for Product category.":::
@@ -105,7 +105,7 @@ The final report page we'll explore is **Anomaly Detection**, where we’ll comb
 
 To learn more, see [Smart narratives](../visuals/power-bi-visualization-smart-narrative) and [Apply insights to explain fluctuations in visuals](../create-reports/desktop-insights).
 
-#### Why the unexpected increase in revenue over the last 90 days?
+### Why the unexpected increase in revenue over the last 90 days?
 
 1. In the top right of the page select the **Last 90 days** to view the **Revenue Won** displayed as individual days.
 
