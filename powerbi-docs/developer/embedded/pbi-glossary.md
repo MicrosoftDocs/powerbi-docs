@@ -425,6 +425,10 @@ An on-premises report server with a web portal in which you display and manage r
 
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../../fundamentals/power-bi-overview.md).
 
+### Power BI tenant
+
+A Power BI account for an organization which has its data stored separately from other organizations but which is accessed through a shared service.
+
 ### Premium workspace
 
 A workspace running in a capacity, signified to customers by a diamond icon.  
