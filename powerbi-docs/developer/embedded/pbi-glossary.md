@@ -574,7 +574,7 @@ You can subscribe to report pages, apps, and dashboards and receive emails conta
 
 ### Tenant
 
-A client organization that is served from a web service (SaaS) which serves other client organizations, where each organization’s data is stored in a separate database from the others.
+A client organization that is served from a web service (SaaS) which also serves other client organizations, and each organization’s data is stored in a separate database.
 
 ### Tiles
 
