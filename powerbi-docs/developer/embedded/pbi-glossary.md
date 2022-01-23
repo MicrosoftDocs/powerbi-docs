@@ -225,7 +225,7 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 ### Environment
 
-[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
+[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment ([tenant](#tenant)) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
 ### Explicit measures
 
@@ -273,7 +273,7 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [artifacts](#artifacts) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -480,7 +480,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual [artifacts](#artifacts) that were accessed last.
 
 ### Related content
 
@@ -548,7 +548,7 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
 
 ### Snapshot
 
