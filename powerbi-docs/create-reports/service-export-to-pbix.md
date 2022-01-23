@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 01/19/2022
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -76,6 +76,7 @@ This section lists the limitations of downloading a PBIX file.
 * If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won't be able to download it. The download feature is not supported in this scenario.
 * You can only download the original report. You can't download a copy of a report.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after changing its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded PBIX will still contain the old data source.
+* If you download the .pbix file multiple times, the SecurityBindings file section in the .pbix file changes each time. This is by design.
 
 ## Next steps
 
