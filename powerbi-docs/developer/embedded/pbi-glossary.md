@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/12/2022
+ms.date: 01/23/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -529,7 +529,9 @@ A standalone resource available to customers by subscription or license. A servi
 
 ### Service principal
 
-The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Can sometimes replace the *master user* to authenticate with Power BI.
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. The service principal tokens can be used to authenticate and grant access to specific Azure resources from a user-app, service or automation tool, when an organization is using Azure Active Directory.
+
+It can sometimes replace the *master user* to authenticate with Power BI.
 
 ### Settings
 
