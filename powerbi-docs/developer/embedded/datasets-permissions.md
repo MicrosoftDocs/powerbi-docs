@@ -26,16 +26,16 @@ Power BI has two sets of permissions:
 
 ### Workspace permissions
 
-Workspace permissions, sometimes referred to as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder.
+Workspace permissions, also known as folder permissions or [roles](../../collaborate-share/service-roles-new-workspaces.md), are the highest level of permissions in Power BI. These permissions override permissions that are given to a specific item in the workspace folder.
 
-The table below lists the four types of workspace permissions. It shows each permission's level, the code string returned by the Power BI REST APIs, and the derived permissions for Power BI datasets created in these workspaces. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+The table below lists the four types of folder roles. It shows each role's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-|Folder Role |Level |Permissions               |Derived permissions for datasets created in the workspace    |
-|------------|------|--------------------------|--------------------------|
-|Admin       |4     |`ReadWriteReshareExplore` |`ReadWriteReshareExplore` |
-|Member      |3     |`ReadReshareExplore`      |`ReadWriteReshareExplore` |
-|Contributor |2     |`ReadExplore`             |`ReadWriteExplore`        |
-|Viewer      |1     |`Read`                    |`Read`                    |
+|Folder Role |Level |Permissions               |
+|------------|------|--------------------------|
+|Admin       |4     |`ReadWriteReshareExplore` |
+|Member      |3     |`ReadReshareExplore`      |
+|Contributor |2     |`ReadExplore`             |
+|Viewer      |1     |`Read`                    |
 
 >[!NOTE]
 >The *write* permission is applied to Power BI items created by *admin*, *member* and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It cannot directly be granted to, or deleted from, a Power BI item.
