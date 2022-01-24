@@ -102,7 +102,7 @@ To add permissions for using datasets, use the POST APIs listed below. Using the
 
 These limitations are relevant for the [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user) and [Datasets - Post Dataset User In Group](/rest/api/power-bi/datasets/post-dataset-user-in-group) APIs.
 
-* The API caller must have at least ReadReshare permissions on the dataset.
+* The API caller must have at least `ReadReshare` permissions on the dataset.
 
 * The API caller cannot grant permissions that are higher than his permissions for the dataset.
 
