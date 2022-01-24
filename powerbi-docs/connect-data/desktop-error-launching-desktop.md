@@ -81,14 +81,70 @@ In rare cases, Power BI Desktop might fail to start at all. Instead, it might sh
 
 ![Error message mentioning WebView2.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-webview2-error.png)
 
-If this happens to you, please [reach out to us](#get-help-with-other-launch-issues) with the following information:
-1. WebView2 error reports. If you use the Microsoft Store version of Power BI Deskotp, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
+The majority of the cases is caused by some program on your machine, mostly anti-virus software. To verify this is the case, please perform the following steps:
+1. Close Power BI Desktop.
+2. Open Windows **Settings** > **About** > **Advanced System Settings** and configure a new Environment Variable:
+
+![System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-environment-variables.png)
+ Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables and set it's value to `--disable-features=RendererCodeIntegrity`:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-environment-variable-new-user-variable.png" alt-text="New User Variable with name 'WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS' and value '--disable-features=RendererCodeIntegrity'.":::
+ 
+ 3. Launch Power BI Desktop and verify it starts successfully this time.
+ 4. Delete the Environment Variable you have set above and disable any software that might be interfering or provide an exemption for the WebView2 process.
+
+If you are still having issues, please  [reach out to us](#get-help-with-other-launch-issues) with the following information:
+1. WebView2 error reports. If you use the Microsoft Store version of Power BI Desktop, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
 2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
-3. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
+3. Installer and update logs. Please collect the following files from the following locations by copying and pasting the path into File Explorer and copying the file to another location. Keep in mind that some files have the same name, so take care not to overwrite them but instead rename them when copying.
+
+|Path|File|
+|----|----|
+|%temp%\ | msedge_installer.log|
+|%ProgramData%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
+|%windir%\Temp\ | MicrosoftEdgeUpdate.log|
+|%allusersprofile%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
+|%systemroot%\Temp\ | msedge_installer.log|
+|%localappdata%\Temp\ | msedge_installer.log|
+|%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
+
+4. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
 
     :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png" alt-text="Event viewer showing context menu with 'Save All Events As...' highlighted.":::
 
-4. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
+5. Open **Registry Editor** by seaching for `regedit` in Windows Search or in the start menu and navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState`. Right-click on the **ClientState** key in the left bar and choose **Export** and save the file:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-export-registry-key.png" alt-text="Registry Editor showing context menu with 'Export' highlighted.":::
+
+6. Process traces. For this, you will need to use [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon). Please follow these steps to collect the process traces:
+
+1. Download [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon), extract the downloaded file and run 'Procmon.exe'.
+
+2. Stop capturing by clicking the following button:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with capture button highlighted.":::
+
+3. Clear all traces by clicking the following button:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-clear.png" alt-text="Process Monitor with garbage can icon highlighted.":::
+
+4. Start capturing by clicking the following button:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-start.png" alt-text="Process Monitor with capture button highlighted.":::
+
+5. Launch Power BI Desktop and wait for the error to appear.
+
+6. Stop the capture by clicking the following button:
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with capture button highlighted.":::
+
+7. Save the traces by choosing **File** > **Save**, making sure to select **All events** and **Native Process Monitor Format (PML)** before choosing 'OK':
+
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-save.png" alt-text="Process Monitor Save to File dialog with 'All events' and 'Native Process Monitor Format (PML) highlighted.":::
+
+8. Share the traces when asked.
+
+7. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
 
 ### Install the Windows Assessment and Deployment Kit
 
