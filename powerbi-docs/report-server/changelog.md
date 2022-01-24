@@ -7,15 +7,38 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 01/24/2022
 ---
 
 # Change log for Power BI Report Server
 
-This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
+This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
+
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## January 2022
+- **Power BI Report Server**
+    - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
+        - Features
+            - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
+            -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](https://docs.microsoft.com/en-us/sql/reporting-services/branding-the-web-portal?view=sql-server-ver15#colorsjson-example). 
+        - Bug fixes
+            -  Fixed various accessibility issues in new portal
+            -  Various small UI tweaks in new portal
+            -  Fixed issue with setting datetimes in subscriptions
+            -  Fixed issue with managing reports with multiple data sources
+            -  Fixed issue with username and password passed in via URL
+            -  Fixed issue related to KPIs with certain characters in name
+            -  Fixed issue blocking opening breadcrumb link in new tab
+            -  Fixed issue with saving changes when editing cache refresh plan
+            -  Fixed issue on parameter tab for reports with many parameters
+            -  Fixed issue in config tool connecting to SQL server to create ReportServer database
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.100.1381.0 (January 2022), Released: January 24, 2022*
+        - Support for January 2022 Power BI Report Server   
+       
 ## September 2021
 - **Power BI Report Server**
     - *Version: 1.12.7981.11681 (build 15.0.1107.166), Released: December 6, 2021*
