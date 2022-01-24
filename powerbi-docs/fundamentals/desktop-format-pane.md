@@ -30,8 +30,8 @@ Improvements added in February 2022 include:
 - Ability to toggle axis title independent of axis has been re-added.
 - Ability to add shade area to combo charts has been re-added.
 - Ability to customize marker shape by series for scatter charts has been re-added.
-- Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 - Outline settings for matrix and table have been re-added.
+- Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 
 ## New pivot icons 
 
