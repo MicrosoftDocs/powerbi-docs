@@ -39,7 +39,7 @@ We also consolidated the outline settings for matrixes and tables to be set from
 
 |Before  |
 |---------|
-|  :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of the old format pane experience."::: |
+|  :::image type="content" source="media/desktop-format-pane/format-pane-outline-old-large.png" alt-text="Screenshot of the old format pane experience."::: |
 
 |After  |
 |---------|
