@@ -37,9 +37,9 @@ Improvements added in February 2022 include:
 We also consolidated the outline settings for matrixes and tables to be set from the Grid card. Previously users needed to go to the Grid card to set the color and width, and then to each section of the matrix to adjust the border location. Now, users can adjust the borders for the whole matrix and tweak each section from the same place within the Grid card.
 
 
-|Before  |  | | |
-|---------|---------|---------|---------|
-|  :::image type="content" source="media/desktop-format-pane/format-pane-grid-outline-old.png" alt-text="Screenshot of the old Grid Outline format pane experience.":::  | :::image type="content" source="media/desktop-format-pane/format-pane-column-header-old.png" alt-text="Screenshot of the old Column Header Outline format pane experience.":::  | :::image type="content" source="media/desktop-format-pane/format-pane-row-header-old.png" alt-text="Screenshot of the old Row Header Outline format pane experience."::: | :::image type="content" source="media/desktop-format-pane/format-pane-values-outline-old.png" alt-text="Screenshot of the old Values Outline format pane experience."::: |
+|Before  |
+|---------|
+|  :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of the old format pane experience."::: |
 
 |After  |
 |---------|
