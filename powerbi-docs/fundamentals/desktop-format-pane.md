@@ -31,20 +31,7 @@ Improvements added in February 2022 include:
 - Ability to add shade area to combo charts has been re-added.
 - Ability to customize marker shape by series for scatter charts has been re-added.
 - Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
-
-### Consolidated outline settings for matrix and table
-
-We also consolidated the outline settings for matrixes and tables to be set from the Grid card. Previously users needed to go to the Grid card to set the color and width, and then to each section of the matrix to adjust the border location. Now, users can adjust the borders for the whole matrix and tweak each section from the same place within the Grid card.
-
-
-**Before** 
-
-:::image type="content" source="media/desktop-format-pane/format-pane-outline-old-large.png" alt-text="Screenshot of the old format pane experience.":::
-
-**After** 
-
-:::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of the new Outline format pane experience.":::
-
+- Outline settings for matrix and table have been re-added.
 
 ## New pivot icons 
 
