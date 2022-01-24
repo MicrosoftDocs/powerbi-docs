@@ -21,8 +21,8 @@ For related "What's New" information, see:
 
 ## January 2022
 
-### The Power BI Windows app now opens directly in the new look
-Starting with this release, when you open the Power BI Windows app, it will open directly in the new look, and you’ll land on the new home page, where you can easily find and access your most frequently and recently viewed items. The old look is no longer available.
+### New look and home page for the Power BI Windows app (general availability)
+The Power BI Windows app now opens directly in the new look. You land on the new home page, where you can easily find and access your most frequently and recently viewed items. The old look is no longer available.
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-new-look-ga.png" alt-text="Screenshot of the new look in the Windows app.":::
 
