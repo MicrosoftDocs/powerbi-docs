@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/20/2022
+ms.date: 01/24/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
@@ -37,9 +37,14 @@ Improvements added in February 2022 include:
 We also consolidated the outline settings for matrixes and tables to be set from the Grid card. Previously users needed to go to the Grid card to set the color and width, and then to each section of the matrix to adjust the border location. Now, users can adjust the borders for the whole matrix and tweak each section from the same place within the Grid card.
 
 
-|Before  |After  |
-|---------|---------|
-|  :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of the old matrix format pane experience.":::   | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of the new matrix format pane experience."::: |
+|Before  |  | | |
+|---------|---------|---------|---------|
+|  :::image type="content" source="media/desktop-format-pane/format-pane-grid-outline-old.png" alt-text="Screenshot of the old Grid Outline format pane experience.":::  | :::image type="content" source="media/desktop-format-pane/format-pane-column-header-old.png" alt-text="Screenshot of the old Column Header Outline format pane experience.":::  | :::image type="content" source="media/desktop-format-pane/format-pane-row-header-old.png" alt-text="Screenshot of the old Row Header Outline format pane experience."::: | :::image type="content" source="media/desktop-format-pane/format-pane-values-outline-old.png" alt-text="Screenshot of the old Values Outline format pane experience."::: |
+
+|After  |
+|---------|
+| :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of the new Outline format pane experience."::: |
+
 
 ## New pivot icons 
 
