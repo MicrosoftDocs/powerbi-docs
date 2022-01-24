@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 01/24/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -42,4 +42,4 @@ If you are a web developer interested in creating your own visual and adding it 
 >[Frequently asked questions](power-bi-custom-visuals-faq.yml)
 
 >[!div class="nextstepaction"]
->[Power BI Community](https://community.powerbi.com/)
+>[Power BI Community](https://community.powerbi.com/t5/Custom-Visuals-Development/bd-p/CustomVisualsDevelopmentDiscussion)
