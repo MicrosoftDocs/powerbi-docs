@@ -7,6 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
+<<<<<<< HEAD
 ms.date: 01/24/2022
 LocalizationGroup: Share your work
 ---
@@ -55,9 +56,9 @@ If the links in your email (to the content) stop working, it may be that the con
 
 ## The language in my subscription is not correct  
 
-The email and snapshot will use the language set in Power BI settings (see[Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If no language is defined, Power BI uses English as a fallback. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
+The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If **Default (browser language)** is selected, Power BI uses U.S. English as a fallback for your subscription. To avoid this, set your language preference to a specific language. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
-![General tab of Settings showing the language dropdown.](./media/end-user-subscribe/power-bi-languages.png)
+![Screenshot of general tab of Settings showing the language dropdown.](./media/end-user-subscribe/power-bi-languages.png)
 
 ## My dashboard subscription is missing tiles 
 You receive your subscription email, open the dashboard, and notice that one or more tiles are missing

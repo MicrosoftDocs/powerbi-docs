@@ -216,6 +216,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in a table, matrix, or slicer"
         href: power-bi-images-tables.md
+      - name: "Create sparklines in a table or matrix"
+        href: power-bi-sparklines-tables.md
       - name: "Display custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Apply conditional table formatting"
