@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 12/15/2021
+ms.date: 01/25/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -241,7 +241,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### Power BI service
 
-* Sensitivity labels can be applied only on dashboards, reports, datasets, and dataflows. They are not currently available for [paginated reports](../paginated-reports/report-builder-power-bi.md) and workbooks.
+* Sensitivity labels can be applied only on dashboards, reports, datasets, dataflows, and [paginated reports](service-security-sensitivity-label-paginated-reports.md) (preview). They are not currently available for workbooks.
 
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels are not currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
 
