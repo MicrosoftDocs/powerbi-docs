@@ -13,10 +13,10 @@ ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
 ---
-# Quickstart - Getting around in Power BI service
+# Tutorial - Getting around in Power BI service
 
 
-Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports, dashboards, and apps for others. They're *designers*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This quickstart is for *business users*. 
+Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports, dashboards, and apps for others. They're *designers*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This tutorial is for *business users*. 
 
 
    
@@ -32,7 +32,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from Premium capacity.    
     [Learn about licenses and subscriptions](end-user-license.md).     
 
-    For the purposes of this quickstart, we aren't requiring either of these conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
+    For the purposes of this tutorial, we aren't requiring either of these conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
 
 ## Open the Power BI service
 
@@ -110,7 +110,7 @@ Let's start by opening a dashboard.
     Learn more about workspaces [Workspaces](end-user-workspaces.md).
 
 ## Using the left navigation pane
-The nav pane will become more useful as colleagues share content with you. In this section of the Quickstart, we'll look at a dashboard and report that belong to a Power BI *business user* who has a lot of shared content.
+The nav pane will become more useful as colleagues share content with you. In this section of the tutorial, we'll look at a dashboard and report that belong to a Power BI *business user* who has a lot of shared content.
 
 1. **Home** is the default landing page when you log in to the Power BI service. Home is a great jumping off point and alternate way to navigate your content. Content on Home is organized several different ways: by recommended, favorites, recent, and apps. For new users, the **Getting started** section is especially helpful, with tabs containing samples, documentation, and training content. Just select an item to open it.
 
@@ -157,13 +157,13 @@ Or, look for the Search **Filters** near the upper right corner of your content 
 To learn more, see [Power BI navigation: search and sort](end-user-search-sort.md)
 
 ## Find the owner
-And we'll end this quickstart with a helpful tip. If you have questions about a dashboard, report, or app -- you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
+And we'll end this tutrial with a helpful tip. If you have questions about a dashboard, report, or app -- you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
 
 ![Home canvas](./media/end-user-experience/power-bi-owner.png)
 
 
 ## Clean up resources
-After you finish this quickstart, you can delete the sample report and dataset, if you wish.
+After you finish this tutorial, you can delete the sample report and dataset, if you wish.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.    
 2. Open Power BI Home, scroll down and select **My workspace**.      
