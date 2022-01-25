@@ -33,8 +33,8 @@ The table below lists the four types of folder roles. It shows each role's level
 |Folder Role |Level |Permissions               |
 |------------|------|--------------------------|
 |Admin       |4     |`ReadWriteReshareExplore` |
-|Member      |3     |`ReadReshareExplore`      |
-|Contributor |2     |`ReadExplore`             |
+|Member      |3     |`ReadWriteReshareExplore` |
+|Contributor |2     |`ReadWriteExplore`        |
 |Viewer      |1     |`Read`                    |
 
 >[!NOTE]
