@@ -7,7 +7,6 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-<<<<<<< HEAD
 ms.date: 01/24/2022
 LocalizationGroup: Share your work
 ---
