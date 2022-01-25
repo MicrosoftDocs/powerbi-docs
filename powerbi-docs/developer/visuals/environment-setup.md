@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/18/2022
+ms.date: 01/19/2022
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -154,7 +154,7 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
     >[!div class="mx-imgBorder"]
     >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
 
-3. From the **General** tab, select **Developer**. In the **Developer** setting, select the **Enable  developer mode** check box, and then click **Apply**.
+3. From the **General** tab, select **Developer**. In the **Developer** setting, select the **Enable  developer mode** check box, and then select **Apply**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
@@ -219,22 +219,22 @@ npm i powerbi-visuals-api --save-dev
 2. In VS Code, open the **File** menu and select **Open Folder**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the VS studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
+    >![Screenshot of the VS  studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
 
 3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and select **Select Folder**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of selecting the Power BI visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
+    >![Screenshot of selecting the Power B I visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
 
 4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library is installed.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the 3d folder in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
+    >![Screenshot of the 3d folder in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
 
 5. In the **Explorer** pane, expand **node_modules > @types  > d3** and verify that the file **index.t.ds** is installed.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the index.t.ds file in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
+    >![Screenshot of the index.t.ds file in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
 
 ## Next steps
 
