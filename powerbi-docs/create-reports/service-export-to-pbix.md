@@ -35,7 +35,7 @@ To download a report as a .pbix file, follow these steps:
 
    :::image type="content" source="media/service-export-to-pbix/power-bi-file-export-editing.png" alt-text="A screenshot of the File menu in the Power B I service, with the Download report option highlighted.":::
 
-If this option is not shown or disabled, you are likely trying to download a .pbix in a scenario listed under [Considerations and limitations](#considerations-and-limitations).
+If this option is not shown or disabled, you are likely trying to download a .pbix in a scenario listed under [limitations](#limitations).
 
 3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the .pbix file. The default name of the file matches the title of the report.
 
