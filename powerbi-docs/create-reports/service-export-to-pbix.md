@@ -16,19 +16,15 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 
 :::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power B I service, with the download a P B I X file option highlighted.":::
 
-## Requirements
+## Downloading a .pbix file
 
-Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded PBIX files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded PBIX files using a Power BI Desktop version that does not support information protection.
+There are two ways to download a .pbix file, each with different results and considerations:
+1. Downloading a report as a .pbix file. Depending on the configuration this might include a dataset.
+2. Downloading a .pbix file from a dataset.
 
-* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
+### Downloading a report as a .pbix file
 
-* The report must have been created using Power BI Desktop and *published* or *uploaded* to the Power BI service.
-
-* The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-
-## Download the report as a PBIX file
-
-To download the .pbix file, follow these steps:
+To download a report as a .pbix file, follow these steps:
 
 1. In the Power BI service, open the report you want to download. 
 
@@ -39,13 +35,69 @@ To download the .pbix file, follow these steps:
 
    :::image type="content" source="media/service-export-to-pbix/power-bi-file-export-editing.png" alt-text="A screenshot of the File menu in the Power B I service, with the Download report option highlighted.":::
 
-3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the PBIX file. The default name of the file matches the title of the report.
+If this option is not shown or disabled, you are likely trying to download a .pbix in a scenario listed under [Considerations and limitations](#considerations-and-limitations).
 
-4. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the PBIX file in Power BI Desktop.
+3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the .pbix file. The default name of the file matches the title of the report.
 
-## Report feature parity
+4. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
 
-When you open a report in Power BI Desktop, you may see a warning message letting you know that some features available in the Power BI service report aren't available in Power BI Desktop.
+### Downloading a .pbix file from a dataset
+
+To download a datasets as a .pbix file, follow these steps:
+
+1. In the Power BI service, open the workspace content view: 
+
+:::image type="content" source="../collaborate-share/media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI workspace content view.":::
+
+2. Find the dataset you want to export and select the **More options** button:
+
+:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options.png" alt-text="Power BI workspace content view with 'More options' button highlighted on a dataset.":::
+
+3. In the menu, select 'Download the .pbix' option if available:
+
+:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
+
+If this option is not shown, you are likely trying to download a .pbix in a scenario listed under [limitations](#limitations).
+
+4. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the .pbix file. The default name of the file matches the title of the report.
+
+5. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
+
+## Considerations
+
+* Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded .pbix files using a Power BI Desktop version that does not support information protection.
+* If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
+* If you download the same .pbix file multiple times, the SecurityBindings file section in the .pbix file changes each time. This is by design.
+
+## Limitations
+
+This section lists the limitations of downloading a .pbix file. This section is split into multiple parts:
+- limitations to downloading a .pbix from a report
+- limitations when downloading a .pbix from a dataset
+
+### Limitations when downloading a .pbix from a report
+
+* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
+* The report must have been created using Power BI Desktop and *published* or *uploaded* to the Power BI service.
+* If the report is created in the Power BI service must be saved before they can be downloaded.
+* The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
+* You cannot download reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
+* Usage metric reports can't be downloaded to a .pbix file.
+* You can only download the original report. You can't download a copy of a report.
+* If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after changing its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
+
+### Limitations when downloading a .pbix from a dataset
+
+* To download the .pbix, you need Edit access to the report and dataset.
+* Datasets with [incremental refresh](../connect-data/incremental-refresh-configure) can't be downloaded to a .pbix file.
+* Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
+* Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
+* Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
+* Downloading a .pbix that is larger than 1GB is not supported.
+
+## Feature parity between service and Desktop
+
+When you open a .pbix file in Power BI Desktop, you may see a warning message letting you know that some features available in the Power BI service report aren't available in Power BI Desktop.
 
 ![A screenshot of a Power B I desktop Warning dialog box titled: Report layout differences might exist.](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
 
@@ -58,25 +110,6 @@ When working in Power BI Desktop without an internet connection, if you open a r
 2. Open the report in Power BI Desktop. If you're connection was reestablished after the report was opened, close the report and reopen it.
 
 3. Save the report. After the report is saved, when you open it again without an internet connection, the Power BI visual will work.
-
-## Considerations and limitations
-
-This section lists the limitations of downloading a PBIX file.
-
-* To download the PBIX, you need Edit access to the report and dataset.
-* The report you're downloading must be published or updated after November 23, 2016. You can't download reports published earlier than that.
-* This feature won't work with reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
-* Reports created in the Power BI service must be saved before they can be downloaded.
-* If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
-* Datasets with incremental refresh can't be downloaded to a PBIX file.
-* Datasets enabled for [large models](../admin/service-premium-large-models.md) and the reports created from these datasets can't be downloaded to a PBIX file.
-* Downloading a PBIX file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
-* Usage metric reports can't be downloaded to a PBIX file.
-* Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a PBIX file.
-* If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won't be able to download it. The download feature is not supported in this scenario.
-* You can only download the original report. You can't download a copy of a report.
-* If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after changing its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded PBIX will still contain the old data source.
-* If you download the .pbix file multiple times, the SecurityBindings file section in the .pbix file changes each time. This is by design.
 
 ## Next steps
 
