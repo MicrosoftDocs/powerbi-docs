@@ -182,7 +182,7 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 # [Premium Gen2](#tab/gen2)
 
-* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation). The workload under which export API operations will appear, is called `InteractiveReportExports`.
+* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
 * The number of Power BI exports is limited to 50 report pages per minute per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
