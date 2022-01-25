@@ -22,7 +22,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
         - Features
             - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
-            -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](https://docs.microsoft.com/en-us/sql/reporting-services/branding-the-web-portal?view=sql-server-ver15#colorsjson-example). 
+            -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](/sql/reporting-services/branding-the-web-portal#colorsjson-example). 
         - Bug fixes
             -  Fixed various accessibility issues in new portal
             -  Various small UI tweaks in new portal
