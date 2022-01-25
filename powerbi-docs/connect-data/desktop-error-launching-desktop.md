@@ -122,7 +122,7 @@ If you are still having issues, please  [reach out to us](#get-help-with-other-l
 
 2. Stop capturing by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with capture button highlighted.":::
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
 
 3. Clear all traces by clicking the following button:
 
@@ -130,13 +130,13 @@ If you are still having issues, please  [reach out to us](#get-help-with-other-l
 
 4. Start capturing by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-start.png" alt-text="Process Monitor with capture button highlighted.":::
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-start.png" alt-text="Process Monitor with start button highlighted.":::
 
 5. Launch Power BI Desktop and wait for the error to appear.
 
 6. Stop the capture by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with capture button highlighted.":::
+:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
 
 7. Save the traces by choosing **File** > **Save**, making sure to select **All events** and **Native Process Monitor Format (PML)** before choosing 'OK':
 
