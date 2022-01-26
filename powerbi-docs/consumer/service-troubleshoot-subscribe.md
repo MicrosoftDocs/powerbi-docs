@@ -28,7 +28,7 @@ The **Subscribe** option is missing or greyed out.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
 
 ### You've reached the maximum of 24 subscriptions
-There is a limit of 24 scheduled subscription runs per day per report or dashboard.  
+There is a limit of 24 subscriptions per report or dashboard. You can provide unique recipients, times, and frequencies for each subscription.  
 
 ## I’ve stopped receiving a subscription 
 I've set up a subscription but am not receiving the subscription emails.
@@ -77,14 +77,13 @@ For dashboard subscriptions, certain types of tiles aren't yet supported. These 
 You notice that your subscription emails aren't being delivered as expected. 
 
 ### Periods of peak demand
-- The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. If the email isn't being blocked, contact your Power BI administrator or IT help desk for assistance. 
+- The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator or IT help desk for assistance. 
 
-- On rare occasions, email subscriptions may take longer than 15 minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and email subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 
 ### Email software is blocking delivery
 Another possibility is that your email software is blocking the Power BI sender. To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
 
-## My report or dashboard has too many or too few data refreshes
+## Issues with subscriptions set to run after data refresh
 I'm not receiving subscription emails each time my data refreshes. 
 
 ### Check the **Frequency** setting for your subscription
@@ -109,22 +108,20 @@ There's a limit to the number of subscribers for one report or dashboard. After 
 ## I get an error that my subscription has more than 20 pages
 You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.
 
-## Data security for subscription email content  
-You can choose to give subscription recipients access to open and view the content in Power BI by selecting **Access to this report/dashboard** and whether to include a link to this content by selecting **Link to report/dashboard in Power BI**. 
+## Issues related to daylight savings time
+If your subscription is scheduled for 12:00AM on the day daylight savings time begins,your subscription may not be sent. If your subscription is scheduled for 12:00AM on the day daylight savings time ends, the subscription may be sent twice.
 
-### Row level security
-For dashboard subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  
+
+## Access the report or dashboard in the Power BI service  
+You can choose to give subscription recipients access to open and view the content in Power BI by selecting **Permission to access the report/dashboard in Power BI** and whether to include a link to this content by selecting **Link to report/dashboard in Power BI**. 
 
 ### Recipients don't have access to the report or dashboard
 If you choose to include a link, ensure that all users also have access to the content. Subscribed users receive report attachments, with data based on your permissions. 
 
-:::image type="content" source="media/end-user-subscribe/power-bi-troubleshoot.png" alt-text="Screenshot showing two options selected under the heading Also include.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-permissions.png" alt-text="Screenshot showing two options selected under the heading Also include.":::
 
 ### I removed access for others, but they can still open the report or dashboard
-Clearing the **Access to this report/dashboard** option does not revoke access for users who have already been granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-dashboard) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-report).
-
-### I can't tell if access is enabled or disabled
-The option to provide **Access to this report/dashboard** always shows as enabled when you edit an existing subscription. If you clear this option and save the subscription, this state is saved. However, if you edit the subscription again, the option will be checked again by default. 
+Clearing the **Permission to access the report/dashboard in Power BI** option does not revoke access for users who have already been granted access this report in the Power BI service (app.powerbi.com). To remove access, see [Manage permissions to a dashboard](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-dashboard) and see  [Manage permissions to a report](../collaborate-share/service-share-dashboards.md#manage-permissions-to-a-report).
 
 ## On a mobile device, the email link opens the app instead of the Power BI service website
 

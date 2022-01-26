@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 01/26/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -35,13 +35,13 @@ Whether you're subscribing to a dashboard or to a report page, the process is si
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscriber.png" alt-text="select the Subscribe icon":::
 
-Subscribing to a paginated report is slightly different, as outlined in [Subscribe to paginated reports](paginated-reports-subscriptions.md).
+Subscribing to a paginated report is slightly different, as outlined below [Subscribe to paginated reports](#subscribe-to-paginated-reports).
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
 1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-report.png" alt-text="Subscribe window.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-reports.png" alt-text="Subscribe window.":::
     
 
 1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
@@ -98,7 +98,7 @@ To subscribe others to a report or dashboard, you’ll need:
 
 - the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
+If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
@@ -116,7 +116,9 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 
-- *Sharing* content with a colleague outside of your domain does not require a Premium capacity. For example, if you are aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, and they can't subscribe to shared content unless that content is hosted in a Premium capacity. 
+- *Sharing* content with a colleague outside of your domain does not require a Premium capacity. For example, if you are aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
+
+- External users can't subscribe themselves to reports or dashboards, even if they have been added as guest users.
 
 ## Subscribe to paginated reports 
 
@@ -134,7 +136,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions. 
 
-- For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
+
 
 - You can set up an unlimited number of subscriptions per paginated report. 
 
@@ -153,7 +155,7 @@ Power BI administrators have levers of control over subscriptions. The following
 
 - [Enable email subscriptions](../admin/service-admin-portal.md#export-and-sharing-settings) for all members of the organization. 
 
-- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#export-and-sharing-settings). 
+- Enable all members of the organization or just specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#export-and-sharing-settings). 
 
 ### View subscription audit and activity logs 
 
@@ -171,12 +173,13 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 
 ## Considerations and limitations 
 
-For help with troubleshooting for the subscriptions feature, see [Troubleshoot subscriptions](service-troubleshoot-subscribe.md).  
+For help with troubleshooting for the subscriptions feature, see [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.md).  
 
 **General**
   
 - If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited. 
+- - For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 
 **Power BI reports**  
 
