@@ -34,7 +34,7 @@ There is a limit of 24 subscriptions per report or dashboard. You can provide un
 I've set up a subscription but am not receiving the subscription emails.
 
 ### Account or license issues
-- A subscription will end if the Power BI Pro or Premium Per User (PPU) license expires, the report or dashboard is deleted by the owner, or the user account used to create the subscription is deleted. 
+A subscription will end if the Power BI Pro or Premium Per User (PPU) license expires, the report or dashboard is deleted by the owner, or the user account used to create the subscription is deleted. 
 
 ### Email issues
 - To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
@@ -77,7 +77,7 @@ For dashboard subscriptions, certain types of tiles aren't yet supported. These 
 You notice that your subscription emails aren't being delivered as expected. 
 
 ### Periods of peak demand
-- The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator or IT help desk for assistance. 
+The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator or IT help desk for assistance. 
 
 
 ### Email software is blocking delivery
@@ -151,11 +151,3 @@ There are certain Power BI features that will not work when using the subscripti
 - [How should I collaborate on and share dashboards and reports?](../service-how-to-collaborate-distribute-dashboards-reports.md)
 - [Share a filtered Power BI report](../service-share-reports.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/) 
-
-
-
-
-
-
-
-
