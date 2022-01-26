@@ -16,8 +16,6 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 
 :::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power B I service, with the 'Download a P B I X file' option highlighted.":::
 
-## Download a .pbix file
-
 There are two ways to download a .pbix file, each with different results and considerations:
 - Downloading a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a dataset.
 - Downloading a [.pbix file from a dataset](#download-a-pbix-file-from-a-dataset).
@@ -72,7 +70,7 @@ To download a dataset as a .pbix file, follow these steps:
 ## Limitations
 
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
-- Limitations when [downloading a .pbix file from a report]](#limitations-downloading-a-pbix-from-a-report).
+- Limitations when [downloading a .pbix file from a report](#limitations-downloading-a-pbix-from-a-report).
 - Limitations when [downloading a .pbix file from a dataset](#limitations-downloading-a-pbix-from-a-dataset).
 
 ### Limitations downloading a .pbix from a report
