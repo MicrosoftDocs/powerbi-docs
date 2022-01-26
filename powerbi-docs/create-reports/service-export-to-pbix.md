@@ -12,17 +12,17 @@ LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
 
-In Power BI Desktop, you can publish a report from your local computer to the Power BI service. Power BI reports can go the other direction as well, you can download a report from the Power BI service to Power BI Desktop. The extension for a Power BI report file, in either case, is .pbix.
+In Power BI Desktop, you can publish a report from your local computer to the Power BI service. Power BI reports can go the other direction as well. This article explains how to download a report or a dataset from the Power BI service to Power BI Desktop. The extension for a Power BI file, in either case, is *.pbix*.
 
 :::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power B I service, with the 'Download a P B I X file' option highlighted.":::
 
 ## Download a .pbix file
 
 There are two ways to download a .pbix file, each with different results and considerations:
-- Downloading a report as a .pbix file. Depending on the configuration, this file might include a dataset.
-- Downloading a .pbix file from a dataset.
+- Downloading a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a dataset.
+- Downloading a [.pbix file from a dataset](#download-a-pbix-file-from-a-dataset).
 
-### Download a report as a .pbix file
+## Download a report as a .pbix file
 
 To download a report as a .pbix file, follow these steps:
 
@@ -41,7 +41,7 @@ To download a report as a .pbix file, follow these steps:
 
 4. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
 
-### Download a .pbix file from a dataset
+## Download a .pbix file from a dataset
 
 To download a dataset as a .pbix file, follow these steps:
 
@@ -72,8 +72,8 @@ To download a dataset as a .pbix file, follow these steps:
 ## Limitations
 
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
-- Limitations to [downloading a .pbix file from a report]](#limitations-downloading-a-pbix-from-a-report).
-- Limitations when [downloading a .pbix file from a dataset](#limitations-when-downloading-a-pbix-from-a-dataset).
+- Limitations when [downloading a .pbix file from a report]](#limitations-downloading-a-pbix-from-a-report).
+- Limitations when [downloading a .pbix file from a dataset](#limitations-downloading-a-pbix-from-a-dataset).
 
 ### Limitations downloading a .pbix from a report
 
