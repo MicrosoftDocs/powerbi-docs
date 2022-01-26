@@ -76,7 +76,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 ### Limitations downloading a .pbix from a report
 
 * You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
-* The report must have been created using Power BI Desktop and *published* or *uploaded* to the Power BI service.
+* Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before they can be downloaded.
 * Reports created in the Power BI service must be saved before they can be downloaded.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
