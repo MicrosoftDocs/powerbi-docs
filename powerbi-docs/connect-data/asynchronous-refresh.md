@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 01/26/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
