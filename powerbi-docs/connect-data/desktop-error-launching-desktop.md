@@ -79,106 +79,108 @@ It may include further information, such as the following:
 
 In rare cases, Power BI Desktop might fail to start at all. Instead, it might show a gray window and/or an error message that mentions 'WebView2':
 
-![Error message mentioning WebView2.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-webview2-error.png)
+![Error message mentioning WebView2.](media/desktop-error-launching-desktop/webview2-error.png)
 
 The majority of the cases is caused by some program on your machine, mostly anti-virus software. To verify this is the case, please perform the following steps:
 1. Close Power BI Desktop.
 2. Open Windows **Settings** > **About** > **Advanced System Settings** and configure a new Environment Variable:
 
-![System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/desktop-error-launching-desktop-environment-variables.png)
- Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables and set it's value to `--disable-features=RendererCodeIntegrity`:
+![System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-environment-variable-new-user-variable.png" alt-text="New User Variable with name 'WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS' and value '--disable-features=RendererCodeIntegrity'.":::
+Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables and set the value to `--disable-features=RendererCodeIntegrity`:
+
+:::image type="content" source="media/desktop-error-launching-desktop/environment-variable-new-user-variable.png" alt-text="New User Variable with name 'WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS' and value '--disable-features=RendererCodeIntegrity'.":::
  
  3. Launch Power BI Desktop and verify it starts successfully this time.
  4. Delete the Environment Variable you have set above and disable any software that might be interfering or provide an exemption for the WebView2 process.
 
 If you are still having issues, please  [reach out to us](#get-help-with-other-launch-issues) with the following information:
-1. WebView2 error reports. If you use the Microsoft Store version of Power BI Desktop, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
-2. Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
-3. Installer and update logs. Please collect the following files from the following locations by copying and pasting the path into File Explorer and copying the file to another location. Keep in mind that some files have the same name, so take care not to overwrite them but instead rename them when copying.
+* WebView2 error reports. If you use the Microsoft Store version of Power BI Desktop, this information is stored in `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\Microsoft\Power BI Desktop Store App\WebView2Elevated\EBWebView\Crashpad\reports`. If you use the downloaded version of Power BI Desktop (EXE), this information is stored in `c:\Users\][username]\AppData\Local\Microsoft\Power BI Desktop\WebView2\EBWebView\Crashpad\reports` or `c:\Users\[username]\AppData\Local\Microsoft\Power BI Desktop\WebView2Elevated\EBWebView\Crashpad\reports`.
+* Your machine's Device ID. This you can find in Windows **Settings** > **System** > **About**.
+* Installer and update logs. Please collect the following files from the following locations by copying and pasting the path into File Explorer and copying the file to another location. Keep in mind that some files have the same name, so take care not to overwrite them but instead rename them when copying.
 
-|Path|File|
-|----|----|
-|%temp%\ | msedge_installer.log|
-|%ProgramData%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
-|%windir%\Temp\ | MicrosoftEdgeUpdate.log|
-|%allusersprofile%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
-|%systemroot%\Temp\ | msedge_installer.log|
-|%localappdata%\Temp\ | msedge_installer.log|
-|%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
+    |Path|File|
+    |----|----|
+    |%temp%\ | msedge_installer.log|
+    |%ProgramData%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
+    |%windir%\Temp\ | MicrosoftEdgeUpdate.log|
+    |%allusersprofile%\Microsoft\EdgeUpdate\Log\ | MicrosoftEdgeUpdate.log|
+    |%systemroot%\Temp\ | msedge_installer.log|
+    |%localappdata%\Temp\ | msedge_installer.log|
+    |%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
 
-4. Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
+* Event Viewer logs. To retrieve this, please start `Event Viewer` from your start menu, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right click on `Operational` in the left bar and choose **Save All Events As...**. Store this file somewhere where you can retrieve it when asked.
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-eventviewer-save-all-events-as.png" alt-text="Event viewer showing context menu with 'Save All Events As...' highlighted.":::
+    :::image type="content" source="media/desktop-error-launching-desktop/eventviewer-save-all-events-as.png" alt-text="Event viewer showing context menu with 'Save All Events As...' highlighted.":::
 
-5. Open **Registry Editor** by seaching for `regedit` in Windows Search or in the start menu and navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState`. Right-click on the **ClientState** key in the left bar and choose **Export** and save the file:
+* Open **Registry Editor** by searching for `regedit` in Windows Search or in the start menu and navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState`. Right-click on the **ClientState** key in the left bar and choose **Export** and save the file:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-export-registry-key.png" alt-text="Registry Editor showing context menu with 'Export' highlighted.":::
+    :::image type="content" source="media/desktop-error-launching-desktop/export-registry-key.png" alt-text="Registry Editor showing context menu with 'Export' highlighted.":::
 
-6. Process traces. For this, you will need to use [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon). Please follow these steps to collect the process traces:
+* Process traces. For this, you will need to use [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon). Please follow these steps to collect the process traces:
 
-1. Download [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon), extract the downloaded file and run 'Procmon.exe'.
+    1. Download [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon), extract the downloaded file and run 'Procmon.exe'.
 
-2. Stop capturing by clicking the following button:
+    2. Stop capturing by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
 
-3. Clear all traces by clicking the following button:
+    3. Clear all traces by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-clear.png" alt-text="Process Monitor with garbage can icon highlighted.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/procmon-clear.png" alt-text="Process Monitor with garbage can icon highlighted.":::
 
-4. Start capturing by clicking the following button:
+    4. Start capturing by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-start.png" alt-text="Process Monitor with start button highlighted.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/procmon-start.png" alt-text="Process Monitor with start button highlighted.":::
 
-5. Launch Power BI Desktop and wait for the error to appear.
+    5. Launch Power BI Desktop and wait for the error to appear.
 
-6. Stop the capture by clicking the following button:
+    6. Stop the capture by clicking the following button:
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Process Monitor with stop button highlighted.":::
 
-7. Save the traces by choosing **File** > **Save**, making sure to select **All events** and **Native Process Monitor Format (PML)** before choosing 'OK':
+    7. Save the traces by choosing **File** > **Save**, making sure to select **All events** and **Native Process Monitor Format (PML)** before choosing 'OK':
 
-:::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-procmon-save.png" alt-text="Process Monitor Save to File dialog with 'All events' and 'Native Process Monitor Format (PML) highlighted.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/procmon-save.png" alt-text="Process Monitor Save to File dialog with 'All events' and 'Native Process Monitor Format (PML) highlighted.":::
 
-8. Share the traces when asked.
+    8. Share the traces when asked.
 
-7. Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
+* Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
 
-### Install the Windows Assessment and Deployment Kit
+    ### Install the Windows Assessment and Deployment Kit
 
-Please follow these steps to install the required tools:
+    Please follow these steps to install the required tools:
 
-1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
-1. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
-
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+    1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
     
-1. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
+    2. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
+        :::image type="content" source="media/desktop-error-launching-desktop/install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+    
+    3. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
 
-1. Complete the installation and then start **Windows Performance Recorder**.
-1. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
-1. In Windows Performance Recorder, choose **More options**:
+        :::image type="content" source="media/desktop-error-launching-desktop/install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
+    4. Complete the installation and then start **Windows Performance Recorder**.
+    5. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
+    6. In Windows Performance Recorder, choose **More options**:
 
-1. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
+        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
+    7. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
 
-1. Choose **Start** to start the recording:
+        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
+    8. Choose **Start** to start the recording:
 
-1. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
-1. Once done, choose **Save** to stop the recording and save the results to your machine:
+        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
 
-    :::image type="content" source="media/desktop-error-launching-desktop/desktop-error-launching-desktop-performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
+    9. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
+    10. Once done, choose **Save** to stop the recording and save the results to your machine:
 
-1. Provide all information collected to our support team when requested.
+        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
+
+    11. Provide all information collected to our support team when requested.
 
 
 ## Get help with other launch issues
