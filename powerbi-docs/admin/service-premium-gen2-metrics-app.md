@@ -84,7 +84,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Duration (s)** - Processing time in seconds. Sort to view the Power BI items that needed the longest processing time during the past two weeks.
 
-* **Users** - In this table the term *users* refers to Power BI items. Sort to view the most popular Power BI items.
+* **Users** - The number of users that used the Power BI item.
 
 * **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
