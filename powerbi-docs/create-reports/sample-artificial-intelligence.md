@@ -6,7 +6,7 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 01/25/2022
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
@@ -19,8 +19,8 @@ This tutorial explores the Artificial Intelligence Sample in the Power BI servic
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My Workspace. 
-- You can [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) for free, too, and explore the sample.
+- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace. 
+- You can [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) for free, too, to explore the sample .pbix file.
 
 ## Get the sample
 
@@ -59,14 +59,14 @@ See [Download a report from the service to Power BI Desktop](service-export-to-p
 
 ## Explore the Artificial Intelligence sample report
 
-The sample report has three pages, **Key Influencers**, **Decomposition Tree**, and **Anomaly Detection**, to demonstrate how people can discover new insights and inform their decision making with easy to use artificial intelligence visuals.
+The sample report has three pages, **Key Influencers**, **Decomposition Tree**, and **Anomaly Detection**, to demonstrate how people can discover new insights and inform their decision making with easy-to-use artificial intelligence visuals.
 
 ## Key Influencers page
 The first report page we explore is **Key Influencers**, where we analyze our data to understand the impact and influence of key contributors on our results.
 
 ### What are our top contributors for wins and losses?
 
-1. We start by reviewing the top contributors that resulted in a **Status of Won** using the **Key influencers** visual in the center of our report. From the visual, we notice the top contributor is when the **Discount goes up 2%**, we are **2.76x** more likely to win new revenue.
+1. We start by reviewing the top contributors that resulted in a **Status** of **Won** using the **Key influencers** visual in the center of our report. From the visual, we notice the top contributor is when the **Discount goes up 2%**, we are **2.76x** more likely to win new revenue.
 1. Select the **2.76x** indicator. Power BI displays a scatter chart next to it, showing the correlation between our **Discount** and **% Status is Won** for this influencer.
  
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-top-contributor.png" alt-text="Screenshot of Top contributor to revenue won.":::
@@ -75,7 +75,7 @@ The first report page we explore is **Key Influencers**, where we analyze our da
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-update.png" alt-text="Screenshot of Updated analysis for Key influencers.":::
 
-1. To review the top contributors for when our **Status** changes, from the drop-down select the **Lost** option to generate new insights based upon the updated selection. From the updated selection, we can now answer the question, **“What is the top contributor when a loss occurs?"**
+1. To review the top contributors for when our **Status** changes, from the drop-down select the **Lost** option to generate new insights based upon the updated selection. We can now answer the question, **“What is the top contributor when a loss occurs?"**
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-key-influencers-status-change.png" alt-text="Screenshot of Status change for Key influencers.":::
 
@@ -89,11 +89,11 @@ The second report page we explore is **Decomposition Tree**, where we conduct ro
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-selection.png" alt-text="Screenshot of Decomposition tree rerun analysis.":::
 
-1. With our updated analysis, we can leverage **artificial intelligence splits** to determine the path to the next highest sales opportunities in our data, select the "**+**" symbol next to **Tablets** and the **High value** option.
+1. With our updated analysis, we can leverage *artificial intelligence splits* to determine the path to the next highest sales opportunities in our data. Select the "**+**" symbol next to **Tablets** and the **High value** option.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Screenshot of Decomposition tree ai split path.":::
 
-3. The **Territory** field is determined as the next path for sales opportunity with the **US-SOUTH** being the largest. Select the "**+**" symbol next to **US-SOUTH**, then select the **High value** option. From the updated selection, we can now answer the question, **“Who is the top sales owner?"**
+3. The **Territory** field is determined as the next path for sales opportunity, with the **US-SOUTH** being the largest. Select the "**+**" symbol next to **US-SOUTH**, then select the **High value** option. From the updated selection, we can now answer the question, **“Who is the top sales owner?"**
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Screenshot of Decomposition tree ai split path to highest value.":::
 
@@ -111,7 +111,7 @@ The final report page we explore is **Anomaly Detection**, where we combine seve
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-smart-narrative.png" alt-text="Screenshot of Smart narrative summary.":::
 
-1. Within the line chart in the center of the page, right-click the **December 2020** data point. Within the menu options, select **Analyze** > **Explain the decrease.** to answer **"Why the sharp decline in revenue in December 2020?"** using quick insights.
+1. Within the line chart in the center of the page, right-click the **December 2020** data point. Within the menu options, select **Analyze** > **Explain the decrease** to answer **"Why the sharp decline in revenue in December 2020?"** using quick insights.
 
     :::image type="content" source="media/sample-artificial-intelligence/power-bi-quick-insights.png" alt-text="Screenshot of Quick insights to explain the decrease.":::
 
