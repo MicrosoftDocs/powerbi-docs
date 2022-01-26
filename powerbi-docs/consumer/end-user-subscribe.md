@@ -100,7 +100,7 @@ To subscribe others to a report or dashboard, you’ll need:
 
 If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
-    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
