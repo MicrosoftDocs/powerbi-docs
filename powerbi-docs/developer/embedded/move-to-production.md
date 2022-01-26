@@ -8,14 +8,14 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 06/02/2020
-#Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
+ms.date: 01/23/2022
+#Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 
 # Move your embedded app to production
 
 >[!IMPORTANT]
->This article only applies to [*embed for your customers/app owns data*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. Customers using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario don't need to purchase a capacity.
+>This article only applies to [*embed for your customers*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. If you're using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario, you don't need to purchase a capacity.
 
 After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
 Note that **all workspaces** (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
@@ -43,6 +43,8 @@ The table below describes the resources and limits of each SKU. To determine whi
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4/A7 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 ## Development testing

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/23/2021
+ms.date: 01/21/2022
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
@@ -64,6 +64,10 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Turkish - Türkçe
 * Ukrainian - українська
 * Vietnamese - Tiếng Việt
+
+### Report or dashboard subscription language
+
+When you create a subscription for a report or dashboard, you may be surprised to see that the subscription is in U.S. English, even though Power BI is in another language. If so, you need to specify a language for your browser. See [The language in my subscription is not correct](../consumer/service-troubleshoot-subscribe.md#the-language-in-my-subscription-is-not-correct) in the article "Troubleshoot Power BI subscriptions."
 
 ## Languages for Power BI Desktop
 Power BI Desktop is available in the the same languages as the Power BI service, except Hebrew and Arabic. Desktop doesn't support right-to-left languages.

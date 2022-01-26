@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 12/13/2021
+ms.date: 01/24/2022
 LocalizationGroup: Share your work
 ---
 
@@ -55,9 +55,9 @@ If the links in your email (to the content) stop working, it may be that the con
 
 ## The language in my subscription is not correct  
 
-The email and snapshot will use the language set in Power BI settings (see[Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If no language is defined, Power BI uses English as a fallback. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
+The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md)). If **Default (browser language)** is selected, Power BI uses U.S. English as a fallback for your subscription. To avoid this, set your language preference to a specific language. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
-![General tab of Settings showing the language dropdown.](./media/end-user-subscribe/power-bi-languages.png)
+![Screenshot of general tab of Settings showing the language dropdown.](./media/end-user-subscribe/power-bi-languages.png)
 
 ## My dashboard subscription is missing tiles 
 You receive your subscription email, open the dashboard, and notice that one or more tiles are missing
@@ -84,7 +84,7 @@ You notice that your subscription emails aren't being delivered as expected.
 ### Email software is blocking delivery
 Another possibility is that your email software is blocking the Power BI sender. To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
 
-## My report or dashboard has multiple data refreshes
+## My report or dashboard has too many or too few data refreshes
 I'm not receiving subscription emails each time my data refreshes. 
 
 ### Check the **Frequency** setting for your subscription
@@ -93,6 +93,14 @@ Subscriptions set to **After Data Refresh** for the report or dashboard will
 ### Your data uses a live connection
 
 Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](end-user-subscribe.md#subscribe-to-paginated-reports). 
+
+For your reports with live connections, for example a live connection to Analysis Services, Power BI will check the Analysis Services instance for changes. If you have the subscription set to run after data refreshes, it will run the first time the Power BI service detects a change in your on-premises model. Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription. 
+
+
+### I'm not getting subscription emails because my data is not refreshing
+You will be able to refresh the report page but not the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), open the report and select the dropdown from the menu bar.
+   
+![find the owner](./media/end-user-subscribe/power-bi-owner.png)
 
 ## My subscription has more than 200 recipients 
 
@@ -146,6 +154,11 @@ There are certain Power BI features that will not work when using the subscripti
 - [How should I collaborate on and share dashboards and reports?](../service-how-to-collaborate-distribute-dashboards-reports.md)
 - [Share a filtered Power BI report](../service-share-reports.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/) 
+
+
+
+
+
 
 
 
