@@ -1,6 +1,6 @@
 ---
-title: "Power BI implementation planning: Usage scenarios"
-description: "An overview of the Power BI implementation planning usage scenario articles."
+title: "Power BI implementation planning: Usage scenarios 3"
+description: "An overview of the Power BI implementation planning usage scenario articles 3."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
