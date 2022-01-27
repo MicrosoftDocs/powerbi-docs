@@ -60,7 +60,7 @@ Once any required parameters are provided, you're prompted for the location of t
 
 ![Specify data location for a template](media/desktop-templates/desktop-templates-05.png)
 
-Once parameters and data have been specified, a report is created containing all the pages, visuals, data model artifacts, and queries that were part of the report on which the template is based. 
+Once parameters and data have been specified, a report is created. This report contains all the pages, visuals, data model artifacts, and queries that were part of the report on which the template is based. 
 
 That's it. Creating and using report templates in Power BI Desktop is easy, enabling you to easily reproduce compelling layouts and other report aspects, and share them with others.
 
