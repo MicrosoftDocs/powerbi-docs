@@ -125,8 +125,8 @@ In Power BI, you have the option to set OAuth with SSO. When you do, the credent
 
 What can make access tokens confusing is getting the correct access token for the resource that you want to access.
 
-- For Azure SQL, the resource is `https://database.windows.net`.
-- For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
+* For Azure SQL, the resource is `https://database.windows.net`.
+* For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
@@ -155,6 +155,7 @@ Here is an example for supplying an effective user name with an access token.
 ```
 
 ## PPU concurrent requests
+
 The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
@@ -290,6 +291,7 @@ public class ExportedFile
 ### End-to-end example
 
 This is an end-to-end example for exporting a report. This example includes the following stages:
+
 1. [Sending the export request](#step-1---sending-an-export-request).
 2. [Polling](#step-2---polling).
 3. [Getting the file](#step-3---getting-the-file).
