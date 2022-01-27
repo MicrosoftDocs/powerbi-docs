@@ -85,11 +85,11 @@ The majority of the cases is caused by some program on your machine, mostly anti
 1. Close Power BI Desktop.
 2. Open Windows **Settings** > **About** > **Advanced System Settings** and configure a new Environment Variable:
 
-![System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
+   ![System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
 
-Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables and set the value to `--disable-features=RendererCodeIntegrity`:
+   Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables and set the value to `--disable-features=RendererCodeIntegrity`:
 
-:::image type="content" source="media/desktop-error-launching-desktop/environment-variable-new-user-variable.png" alt-text="New User Variable with name 'WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS' and value '--disable-features=RendererCodeIntegrity'.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/environment-variable-new-user-variable.png" alt-text="New User Variable with name 'WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS' and value '--disable-features=RendererCodeIntegrity'.":::
  
  3. Launch Power BI Desktop and verify it starts successfully this time.
  4. Delete the Environment Variable you have set above and disable any software that might be interfering or provide an exemption for the WebView2 process.
@@ -147,40 +147,40 @@ If you are still having issues, please  [reach out to us](#get-help-with-other-l
 
 * Extra diagnostic information. For this, you will need to have the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) installed. 
 
-    ### Install the Windows Assessment and Deployment Kit
+### Install the Windows Assessment and Deployment Kit
 
-    Please follow these steps to install the required tools:
+Please follow these steps to install the required tools:
 
-    1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
+1. Download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
     
-    2. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
+2. After downloading, start `adksetup.exe` and select **Install the Windows Assessment and Development Kit to this computer** and select **Next**:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/install-adk.png" alt-text="Assessment and Deployment Kit installer showing Install the Windows Assessment and Development Kit to this computer option selected.":::
     
-    3. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
+3. Continue the wizard until the **Select the features you want to install** page shows. On this page, make sure to select **Windows Performance Toolkit** and select **Install**:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/install-adk-features.png" alt-text="Assessment and Deployment Kit installer showing the Select the features you want to install page with Windows Performance Toolkit selected.":::
 
-    4. Complete the installation and then start **Windows Performance Recorder**.
-    5. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
-    6. In Windows Performance Recorder, choose **More options**:
+4. Complete the installation and then start **Windows Performance Recorder**.
+5. Download the [EdgeWebView2_General_EventsOnly.wprp](https://github.com/microsoft/powerbi-troubleshooting/raw/main/WebView2/EdgeWebView2_General_EventsOnly.zip) file to your machine and unpack it.
+6. In Windows Performance Recorder, choose **More options**:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-more-options.png" alt-text="Windows Performance Recorder with More options highlighted.":::
 
-    7. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
+7. Choose **Add Profiles...** to add the **EdgeWebView2_General_EventsOnly.wprp** profile that you downloaded in the previous step:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-load-profile.png" alt-text="Windows Performance Recorder with EdgeWebView2_General_EventsOnly profile loaded.":::
 
-    8. Choose **Start** to start the recording:
+8. Choose **Start** to start the recording:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-start.png" alt-text="Windows Performance Recorder with Start highlighted.":::
 
-    9. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
-    10. Once done, choose **Save** to stop the recording and save the results to your machine:
+9. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
+10. Once done, choose **Save** to stop the recording and save the results to your machine:
 
-        :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
+   :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
 
-    11. Provide all information collected to our support team when requested.
+11. Provide all information collected to our support team when requested.
 
 
 ## Get help with other launch issues
