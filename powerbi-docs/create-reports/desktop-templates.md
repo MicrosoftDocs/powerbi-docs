@@ -28,17 +28,17 @@ Power BI report templates contain the following information from the report from
 
 What is *not* included in templates is the report's data. 
 
-Report templates use the file extension *.PBIT* (compare to Power BI Desktop reports, which use the *.PBIX* extension). 
+Report templates use the file extension .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
 
 To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template.*
 
 ![Export template description dialog](media/desktop-templates/desktop-templates-02.png)
 
-Select **OK** and you're prompted for a file location to store the *.PBIT* template file.
+Select **OK** and you're prompted for a file location to store the .PBIT template file.
 
 ![Template location](media/desktop-templates/desktop-templates-03.png)
 
-And that's it, your Power BI report template is created in the file location you specified, with the *.PBIT* extension.
+And that's it, your Power BI report template is created in the file location you specified, with the .PBIT extension.
 
 > [!NOTE]
 > Power BI report template files are generally much smaller than a Power BI Desktop report, because templates to not contain any data - just the report definitions themselves. 
@@ -47,7 +47,7 @@ And that's it, your Power BI report template is created in the file location you
 
 To use a Power BI report template, simply open it in Power BI Desktop and begin using it. You can open Power BI report templates in two ways:
 
-* Double-click on any .*PBIT* file to automatically launch Power BI Desktop and load the template
+* Double-click on any .PBIT file to automatically launch Power BI Desktop and load the template
 * Select **File > Import > Power BI template** from within Power BI Desktop
 
 ![Import a template](media/desktop-templates/desktop-templates-04.png)

@@ -11,7 +11,6 @@ ms.date: 04/20/2021
 LocalizationGroup: Create reports
 ---
 # Use inline hierarchy labels in Power BI Desktop
-
 **Power BI Desktop** supports the use of **inline hierarchy labels**, which is the first of two features intended to enhance hierarchical drilling. The second feature, which is currently in development, is the ability to use nested hierarchy labels (stay tuned for that - our updates happen frequently).   
 
 ## How inline hierarchy labels work
