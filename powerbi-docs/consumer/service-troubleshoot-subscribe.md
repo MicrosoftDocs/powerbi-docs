@@ -109,7 +109,7 @@ There's a limit to the number of subscribers for one report or dashboard. After 
 You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.
 
 ## Issues related to daylight savings time
-If your subscription is scheduled for 12:00AM on the day daylight savings time begins,your subscription may not be sent. If your subscription is scheduled for 12:00AM on the day daylight savings time ends, the subscription may be sent twice.
+If your subscription is scheduled for 12:00AM on the day daylight savings time begins, your subscription may not be sent. If your subscription is scheduled for 12:00AM on the day daylight savings time ends, the subscription may be sent twice.
 
 
 ## Access the report or dashboard in the Power BI service  
