@@ -28,7 +28,7 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format specific settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -44,7 +44,7 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
-Here are two examples, one for exporting the first four pages of a report using the report page size to a .pptx file, and another for exporting the third page of a report to a .jpeg file.
+Here are two examples. The first is for exporting the first four pages of a report using the report page size to a .pptx file. The second example is for exporting the third page of a report to a .jpeg file.
 
 #### Exporting the first four pages to a .pptx
 
@@ -80,7 +80,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 
 You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/paginated-reports-parameters.md) capabilities.
 
-Here is an example for setting report parameter values.
+Here's an example for setting report parameter values.
 
 ```json
 {
@@ -106,7 +106,7 @@ When using a Power BI dataset that has Row Level Security (RLS) defined as a dat
 
 To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
 
-Here is an example for supplying an effective user name for RLS.
+Here'ss an example for supplying an effective user name for RLS.
 
 ```json
 {
@@ -121,16 +121,16 @@ Here is an example for supplying an effective user name for RLS.
 
 ### Single Sign-on SQL and Dataverse (SSO)
 
-In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header is not used to access the data, the token must be passed in with the effective identity in the post body.
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header isn't used to access the data. The token must be passed in with the effective identity in the post body.
 
-What can make access tokens confusing is getting the correct access token for the resource that you want to access.
+Getting the correct access token for the resource that you want to access can sometimes be tricky.
 
 * For Azure SQL, the resource is `https://database.windows.net`.
-* For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
+* For Dataverse, the resource is the `https://` address for your environment. For example, `https://contoso.crm.dynamics.com`.
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
-Here is an example for supplying an effective user name with an access token.
+Here's an example for supplying an effective user name with an access token.
 
 ```json
 {
@@ -156,7 +156,7 @@ Here is an example for supplying an effective user name with an access token.
 
 ## PPU concurrent requests
 
-The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
+The `exportToFile` API allows one request in a five-minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five-minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -326,7 +326,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
+* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
@@ -334,7 +334,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
-* In an occurrence of a timeout error post the 60th minute mark while exporting large amounts of data consider minimizing the data using appropriate filters. 
+* If you get a timeout error past the 60 minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
 ## Next steps
 
