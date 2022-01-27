@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/31/2022
 ---
 
-# Personal BI
+# Power BI implementation planning: Usage scenarios: Personal BI
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
@@ -33,7 +33,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The Power BI content creator develops a BI solution using [Power BI Desktop](https://docs.microsoft.com/power-bi/fundamentals/desktop-what-is-desktop). |
+| ![Item 1.](media/common/icon-01-red-30x30.png) | The Power BI content creator develops a BI solution using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development and report creation are done in Power BI Desktop. In a personal BI solution, the primary intention is typically data exploration and analysis. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, the content creator publishes the Power BI Desktop file (.pbix) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
@@ -90,4 +90,4 @@ In the [next article in this series](#todo), learn about small team collaboratio
 
 ## Todo
 
-*Get rid of this section once all links are set.*
+*Remove this section once all links are set.*

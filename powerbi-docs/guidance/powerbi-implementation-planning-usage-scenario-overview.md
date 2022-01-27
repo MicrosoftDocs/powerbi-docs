@@ -124,6 +124,6 @@ The *on-premises reporting* scenario focuses on using a basic portal for publish
 
 In the [next article in this series](#todo), learn about the first usage scenario.
 
-## TODO
+## Todo
 
-*Get rid of this section once all links are set.*
+*Remove this section once all links are set.*

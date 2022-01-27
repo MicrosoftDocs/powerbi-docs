@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/31/2022
 ---
 
-# Power BI implementation planning: Usage scenarios
+# Power BI implementation planning: Usage scenarios 2
 
 The Power BI ecosystem is diverse and can be implemented in different ways. In this series of articles, common usage scenarios are provided to illustrate different ways that Power BI can be deployed and utilized by creators and consumers. Understanding how these usage scenarios are used in your organization, and by whom, can influence the implementation strategies you decide to take.
 
@@ -83,4 +83,4 @@ In the [next article in this series](#todo), learn about enabling private analyt
 
 ## Todo
 
-*Get rid of this section once all links are set.*
+*Remove this section once all links are set.*

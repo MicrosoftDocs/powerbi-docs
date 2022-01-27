@@ -55,7 +55,3 @@ Other helpful resources include:
 - [Power BI migration overview](powerbi-migration-overview.md)
 
 Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
-
-## Acknowledgements
-
-This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/) with significant contributions from Peter Myers, Matthew Roche, Alex Powers, and Chris Webb.
