@@ -178,7 +178,7 @@ Please follow these steps to install the required tools:
 9. With the recording running, Start Power BI Desktop and make sure the issue occurs again.
 10. Once done, choose **Save** to stop the recording and save the results to your machine:
 
-   :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
+    :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Windows Performance Recorder with Save highlighted.":::
 
 11. Provide all information collected to our support team when requested.
 
