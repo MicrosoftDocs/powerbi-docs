@@ -28,7 +28,7 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes, and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -334,7 +334,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
-* If you get a timeout error past the 60 minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
+* If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
 ## Next steps
 

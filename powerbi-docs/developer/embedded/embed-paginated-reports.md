@@ -86,7 +86,7 @@ Before you import or upload a paginated report to embed, the workspace containin
     >[!NOTE]
     >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports and Premium Gen2](../../admin/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2).
 
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
+The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
 | Capacity Nodes | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) |
 | --- | --- | --- | --- | --- |
@@ -196,9 +196,9 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 ### [Embed for your customers limitations](#tab/customers)
 
-* You must use a **service principal**. Master user is not supported.
-* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
-* Data sources and datasets configured with single sign-on (SSO) enabled, are not yet supported.
+* You must use a **service principal**. Master user isn't supported.
+* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) isn't supported.
+* Data sources and datasets configured with single sign-on (SSO) enabled, aren't yet supported.
 * When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
