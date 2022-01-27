@@ -182,7 +182,7 @@ Follow the instructions in the [embed content for your customers](embed-sample-f
 Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 > [!NOTE]
-> To embed a paginated report with a Power BI dataset as a datasource, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
+> To embed a paginated report with a Power BI dataset as a data source, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
 ### [Embed for your organization](#tab/organization)
 
@@ -198,7 +198,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 * You must use a **service principal**. Master user is not supported.
 * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported.
-* Datasources and datasets configured with single sign-on (SSO) enabled, are not yet supported.
+* Data sources and datasets configured with single sign-on (SSO) enabled, are not yet supported.
 * When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
