@@ -12,13 +12,15 @@ ms.date: 04/21/2021
 LocalizationGroup: Create reports
 ---
 # Use gridlines and snap-to-grid in Power BI reports
-The report canvas in Power BI Desktop and the Power BI service provides gridlines that let you neatly align visuals on a report page and use snap-to-grid functionality so the visuals in your report look clean, aligned, and evenly spaced.
 
-In **Power BI Desktop**, you can also adjust the z-order (bring forward, send backward) of objects on a report and align or evenly distribute selected visuals on the canvas.
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+The report canvas in Power BI Desktop and the Power BI service provides gridlines that let you neatly align visuals on a report page and use snap-to-grid functionality so the visuals in your report look clean, aligned, and evenly spaced.
 
 ![Screenshot of the report canvas, showing how to use gridlines and snap-to-grid in Power B I Desktop reports.](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
 ## Enabling gridlines and snap-to-grid
+
 To enable gridlines and snap-to-grid, select the **View** ribbon, then enable the checkboxes for **Show gridlines** and **Snap objects to grid.** You can select one or both options; they operate independently.
 
 ![Screenshot of the report canvas, showing how to enable gridlines and snap-to-grid in Power B I Desktop reports.](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
@@ -58,13 +60,15 @@ When you enable **Snap objects to grid**, all visuals on the **Power BI Desktop*
 
 And, that's all there is to using **gridlines** and **snap-to-grid** to ensure the visuals in your reports are neatly aligned.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+ 
+In **Power BI Desktop**, you can also adjust the z-order (bring forward, send backward) of objects on a report and align or evenly distribute selected visuals on the canvas.
+
 ## Using z-order, align, and distribute
-In Power BI Desktop, you can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. You set the order of your visuals using the **Bring forward** and **Send backward** buttons, found in the **Format** ribbon. The **Format** ribbon appears as soon as you select one or more visuals on the page.
+
+You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. You set the order of your visuals using the **Bring forward** and **Send backward** buttons, found in the **Format** ribbon. The **Format** ribbon appears as soon as you select one or more visuals on the page.
 
 ![Screenshot of the report canvas, showing how to manage the front-to-back order of visuals in a report.](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)
-
-> [!NOTE]
-> You can also set z-order when you're editing a report in the Power BI service. On the **View** menu, turn the **Selection pane** on. In the **Selection pane**, you change the z-order on the **Layer order** tab.
 
 ### Align and distribute visuals
 
@@ -85,3 +89,8 @@ You can also distribute your visuals evenly across the report canvas, either ver
 ![Screenshot of the report canvas, showing how to distribute your visuals evenly across the canvas using the Distribute option.](media/desktop-gridlines-snap-to-grid/snap-to-grid_8.png)
 
 With a few selections from these gridlines, alignment, and distribution tools, your reports will look just how you want them to.
+
+# [Power BI service](#tab/powerbi-service)
+ 
+You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. On the **View** menu, turn the **Selection pane** on. In the **Selection pane**, you set the z-order using the **Layer order** tab.
+

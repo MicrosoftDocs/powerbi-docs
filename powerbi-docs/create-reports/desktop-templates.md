@@ -52,15 +52,15 @@ To use a Power BI report template, simply open it in Power BI Desktop and begin 
 
 ![Import a template](media/desktop-templates/desktop-templates-04.png)
 
-When you open a report template, a dialog may appear. The dialog asks for values for any parameters that are defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, select a *Country* value from the list of values that were specified when defining the parameter. 
+When you open a report template, a dialog may appear. The dialog asks for values for any parameters that are defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, select a *Country* value from that list.  Each list of values are specified when defining the parameter. 
 
 ![Specify parameters for a template](media/desktop-templates/desktop-templates-05a.png)
 
-Once any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
+After any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
 
 ![Specify data location for a template](media/desktop-templates/desktop-templates-05.png)
 
-Once parameters and data have been specified, a report is created. This report contains all the pages, visuals, data model artifacts, and queries that were part of the report on which the template is based. 
+Once parameters and data have been specified, a report is created. This report contains all the pages, visuals, data model artifacts, and queries that are in the report on which the template is based. 
 
 That's it. Creating and using report templates in Power BI Desktop is easy, enabling you to easily reproduce compelling layouts and other report aspects, and share them with others.
 
