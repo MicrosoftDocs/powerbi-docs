@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 01/28/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -143,18 +143,6 @@ If your dataset resides on a Premium capacity, you might be able to improve the 
 ![Query caching](media/refresh-data/query-caching.png)
 
 Following a data refresh, however, previously cached query results are no longer valid. Power BI discards these cached results and must rebuild them. For this reason, query caching might not be as beneficial for reports and dashboards associated with datasets that you refresh very often, such as 48 times per day.
-
-#### Tile refresh
-
-Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
-
-![Refresh dashboard tiles](media/refresh-data/refresh-dashboard-tiles.png)
-
-Because it happens automatically, you can consider tile refresh an intrinsic part of data refresh. Among other things, you might notice that the refresh duration increases with the number of tiles. The tile refresh overhead can be significant.
-
-By default, Power BI maintains a single cache for every tile, but if you use dynamic security to restrict data access based on user roles, as covered in the article [row-level security (RLS) with Power BI](../admin/service-admin-rls.md), then Power BI must maintain a cache for every role and every tile. The number of tile caches multiplies by the number of roles.
-
-The situation can get even more involved if your dataset uses a live connection to an Analysis Services data model with RLS, as highlighted in the tutorial [Dynamic row level security with Analysis services tabular model](desktop-tutorial-row-level-security-onprem-ssas-tabular.md). In this situation, Power BI must maintain and refresh a cache for every tile and every user who ever viewed the dashboard. It is not uncommon that the tile refresh portion of such a data refresh operation far exceeds the time it takes to fetch the data from the source. For more details around tile refresh, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
 #### Refresh of report visuals
 
