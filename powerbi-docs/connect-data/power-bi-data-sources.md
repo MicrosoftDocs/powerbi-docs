@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/09/2021
+ms.date: 01/28/2022
 ---
 
 # Power BI data sources
@@ -114,7 +114,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources M-O
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
-| MailChimp | Yes | Yes | No | No | No | No |
+| MailChimp (deprecated) | Yes | Yes | No | No | No | No |
 | MariaDB | Yes | Yes | Yes | Yes | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
