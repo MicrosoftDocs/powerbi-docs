@@ -45,15 +45,15 @@ To download a dataset as a .pbix file, follow these steps:
 
 1. In the Power BI service, open the workspace content view: 
 
-    :::image type="content" source="../collaborate-share/media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI workspace content view.":::
+    :::image type="content" source="../collaborate-share/media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="A screenshot of the Power BI workspace content view.":::
 
 1. Find the dataset you want to export and select the **More options** button:
 
-    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options.png" alt-text="Power BI workspace content view with 'More options' button highlighted on a dataset.":::
+    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options.png" alt-text="A screenshot of the Power BI workspace content view with 'More options' button highlighted on a dataset.":::
 
 1. In the menu, select **Download the .pbix**, if it's available:
 
-    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
+    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
 
     If this option isn't shown, you are likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
@@ -84,7 +84,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can only download the original report. You can't download a copy of a report.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
 * You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../admin/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md).
-* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download it.
+* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../admin/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md).
 
 ### Limitations downloading a .pbix from a dataset
 
