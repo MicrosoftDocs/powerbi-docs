@@ -2,7 +2,7 @@
 title: Track user activities in Power BI
 description: Learn how to use Power BI activity logs and Microsoft 365 audit logs to monitor and track user activities in Power BI.
 author: kfollis
-ms.author: kfollis
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -302,7 +302,7 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster datasource | | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | Generated when users click the Analyze in Excel button on a report or dataset in the service |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when users select **Analyze in Excel** on a report or dataset in the service |
 | [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
