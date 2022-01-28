@@ -1,5 +1,5 @@
 ---
-title: "Power BI implementation planning: Usage scenarios: Personal BI"
+title: "Power BI usage scenarios: Personal BI"
 description: "TODO"
 author: peter-myers
 ms.author: v-petermyers
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/31/2022
 ---
 
-# Power BI implementation planning: Usage scenarios: Personal BI
+# Power BI usage scenarios: Personal BI
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
@@ -27,7 +27,7 @@ In personal BI scenarios, the content creator has a lot of freedom and flexibili
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support personal BI. The focus is on private analytics for one individual.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi.png" alt-text="Image shows a diagram of personal B I (private analytics for an individual). Items in the diagram are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi.png" alt-text="Image shows a diagram of personal B I (private analytics for an individual). Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-large.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 
@@ -43,9 +43,6 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 8.](media/common/icon-08-red-30x30.png) | Scheduled data refresh can be set up in the Power BI service to keep imported data up to date. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | To connect to data sources that reside within a private organizational network, an [On-premises data gateway](../connect-data/service-gateway-onprem.md) is required for data refresh. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Personal workspaces are usually governed to a much lesser extent than workspaces that are intended for collaboration and distribution. |
-
-> [!TIP]
-> Click [here](media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-large.png) to open a larger image.
 
 ## Key points
 

@@ -164,6 +164,16 @@
         href: powerbi-adoption-roadmap-system-oversight.md
       - name: "Conclusion"
         href: powerbi-adoption-roadmap-conclusion.md
+  - name: Implementation planning
+    items: 
+      - name: "Introduction"
+        href: powerbi-implementation-planning-introduction.md
+      - name: Usage scenarios
+        items:
+        - name: "Usage scenarios overview"
+          href: powerbi-implementation-planning-usage-scenario-overview.md
+        - name: "Personal BI"
+          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
@@ -171,17 +181,7 @@
       - name: "Establish a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
-        href: center-of-excellence-business-intelligence-solution-architecture.md        
-  - name: Implementation planning
-    items: 
-      - name: "Overview"
-        href: powerbi-implementation-planning-overview.md
-      - name: Usage scenarios
-        items:
-        - name: "Overview"
-          href: powerbi-implementation-planning-usage-scenario-overview.md
-        - name: "Personal BI"
-          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
+        href: center-of-excellence-business-intelligence-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

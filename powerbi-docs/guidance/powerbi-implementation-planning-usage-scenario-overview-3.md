@@ -1,5 +1,5 @@
 ---
-title: "Power BI implementation planning: Usage scenarios 3"
+title: "Power BI usage scenarios 3"
 description: "An overview of the Power BI implementation planning usage scenario articles 3."
 author: peter-myers
 ms.author: v-petermyers
@@ -10,7 +10,9 @@ ms.topic: conceptual
 ms.date: 01/31/2022
 ---
 
-# Power BI implementation planning: Usage scenarios 3
+# Power BI usage scenarios 3
+
+[!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
 The Power BI ecosystem is diverse and can be implemented in different ways. In this series of articles, common usage scenarios are provided to illustrate different ways that Power BI can be deployed and utilized by creators and consumers. Understanding how these usage scenarios are used in your organization, and by whom, can influence the implementation strategies you decide to take.
 
