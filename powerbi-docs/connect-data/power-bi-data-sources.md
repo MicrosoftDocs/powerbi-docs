@@ -25,7 +25,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Actian | Yes | Yes | Yes | Yes | No | No |
 | ActiveDirectory | Yes | Yes | No | Yes | Yes | Yes |
 | Adobe Analytics | Yes | Yes | No | No | No | No |
-| Amazon Athena | Yes | Yes | Yes | Yes | No | No |
+| Amazon Athena | Yes | Yes | Yes | Yes | Yes | Yes |
 | Amazon Redshift | Yes | Yes | Yes | Yes | No | Yes |
 | Anaplan | Yes | Yes | No | Yes | No | No |
 | appFigures | Yes | Yes | No | No | No | No |
