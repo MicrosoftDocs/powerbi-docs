@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/27/2021
+ms.date: 01/28/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -302,7 +302,7 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster datasource | | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when users click the Analyze in Excel button on a report or dataset in the service |
 | [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
