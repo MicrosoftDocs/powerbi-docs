@@ -25,10 +25,9 @@ You can also connect goals to an existing report visual in Power BI. See [Create
 
 ## Prerequisites
 
-Creating goals is a Power BI Premium feature, so you need either:
+Creating goals is a Power BI Pro license feature, so you need :
 
-- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity
-- A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
+- A Power BI Pro license.
 
 You also need:
 
