@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/21/2020
+ms.date: 01/28/2022
 LocalizationGroup: Gateways
 ---
 
