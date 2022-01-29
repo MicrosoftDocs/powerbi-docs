@@ -167,7 +167,7 @@ The following known limitations currently apply to Premium Gen2:
 
     <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-    <sup>2</sup> The *model refresh parallelism* and *max memory per query* limits only apply to datasets workload.
+    <sup>2</sup> The *model refresh parallelism* and *max memory per query* limits apply only to the datasets workload.
 
     <sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
