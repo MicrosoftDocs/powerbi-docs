@@ -26,7 +26,7 @@ Premium Gen2 provides the following updates or improved experiences:
 * Enhanced **performance** on any capacity size, anytime: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
 * **Greater scale**:
-    * *No limits* on refresh concurrency, no longer requiring you to track schedules for datasets being refreshed on your capacity
+    * *Higher limits* on refresh concurrency, alleviating the need to track schedules for datasets being refreshed on your capacity
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
@@ -167,7 +167,7 @@ The following known limitations currently apply to Premium Gen2:
 
     <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-    <sup>2</sup> The *model refresh parallelism* and *max memory per query* limits only apply to dataset workloads.
+    <sup>2</sup> The *model refresh parallelism* and *max memory per query* limits only apply to datasets workload.
 
     <sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
