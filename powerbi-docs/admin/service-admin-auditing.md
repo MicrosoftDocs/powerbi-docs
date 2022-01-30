@@ -538,7 +538,7 @@ The following operations are available in both the audit and activity logs.
 | Viewed Power BI dashboard    | ViewDashboard     |Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | ViewMetadata | |
-| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report</br> Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
+| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report</br></br> Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
 |   |  |   |
