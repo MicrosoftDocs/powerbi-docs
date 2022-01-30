@@ -8,8 +8,8 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/18/2022
-
+ms.date: 01/24/2022
+ROBOTS: NOINDEX
 
 LocalizationGroup: Common tasks
 ---

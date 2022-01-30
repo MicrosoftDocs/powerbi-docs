@@ -30,15 +30,15 @@ Workspace permissions, also known as folder permissions or [roles](../../collabo
 
 The table below lists the four types of folder roles. It shows each role's level, and the code string returned by the Power BI REST APIs. Admin is the highest workspace permission level, and viewer is the lowest. Every permission level includes the capabilities of the permissions below it. You can review the capabilities of each permission in [Workspace roles](../../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-|Folder Role |Level |Permissions               |
+|Folder Role |Level |Derived permissions for datasets created in the workspace |
 |------------|------|--------------------------|
 |Admin       |4     |`ReadWriteReshareExplore` |
-|Member      |3     |`ReadReshareExplore`      |
-|Contributor |2     |`ReadExplore`             |
+|Member      |3     |`ReadWriteReshareExplore` |
+|Contributor |2     |`ReadWriteExplore`        |
 |Viewer      |1     |`Read`                    |
 
 >[!NOTE]
->The *write* permission is applied to Power BI items created by *admin*, *member* and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It cannot directly be granted to, or deleted from, a Power BI item.
+>The *write* permission is applied to Power BI datasets created by *admin*, *member* and *contributor* users in a workspace they own. The write permission can be granted or deleted using workspace permissions only. It cannot directly be granted to, or deleted from, a Power BI item.
 
 #### Get and add workspace permissions with APIs
 
