@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/13/2022
+ms.date: 01/30/2022
 LocalizationGroup: Premium 
 ---
 
