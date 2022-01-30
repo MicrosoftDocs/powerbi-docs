@@ -550,7 +550,7 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 
 The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
 
-### Single sign-on
+### Single sign-on, SSO
 
 An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
