@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/23/2022
+ms.date: 01/30/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -549,6 +549,10 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 ### Shared with me
 
 The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
+
+### Single sign-on
+
+An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
 ### Snapshot
 
