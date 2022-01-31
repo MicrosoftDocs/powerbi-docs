@@ -30,6 +30,8 @@
     items: 
     - name: "Get samples for Power BI"
       href: sample-datasets.md
+    - name: "Artificial intelligence sample"
+      href: sample-artificial-intelligence.md
     - name: "COVID-19 US sample"
       href: sample-covid-19-us.md
     - name: "Power BI Release Plan report"
