@@ -1,6 +1,6 @@
 ---
 title: "Power BI implementation planning"
-description: "An overview of the Power BI implementation planning series of articles."
+description: "An introduction to the Power BI implementation planning series of articles."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche

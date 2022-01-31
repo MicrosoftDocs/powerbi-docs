@@ -1,6 +1,6 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
-description: "TODO"
+description: "Learn how Power BI personal BI is about private analytics for an individual."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
@@ -18,16 +18,16 @@ There are four *content collaboration and delivery* scenarios that build upon ea
 
 As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-delivery-scope.md#personal-bi), personal BI is about enabling an individual to gain analytical value. It's also about allowing them to perform business tasks more efficiently with the use of data, information, and analytics. Personal BI is sometimes thought of as the entry point for *self-service BI*.
 
-In personal BI scenarios, the content creator has a lot of freedom and flexibility to create content for individual usage. Simplicity and speed are usually high priorities. There's no sharing or collaboration in this usage scenario—those topics are covered in the [team BI](#todo), [departmental BI](#todo), and [enterprise BI](#todo) scenario articles.
+In personal BI scenarios, the content creator has a lot of freedom and flexibility to create content for individual usage. Simplicity and speed are usually high priorities. There's no sharing or collaboration in this usage scenario—those topics are covered in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md), [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md), and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario articles.
 
 > [!NOTE]
 > There are different ways that an organization can approach self-service BI. These approaches are described in the [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) and [Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) articles of the Power BI adoption roadmap.
 
 ## Scenario diagram
 
-The following diagram depicts a high-level overview of the most common user actions and Power BI components that support personal BI. The focus is on private analytics for one individual.
+The following diagram depicts a high-level overview of the most common user actions and Power BI components that support personal BI. The focus is on private analytics for an individual.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi.png" alt-text="Image shows a diagram of personal B I (private analytics for an individual). Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-large.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi.png" alt-text="Image shows a diagram of personal B I, which is about private analytics for an individual. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 
@@ -64,7 +64,7 @@ Use of the [personal workspace](../fundamentals/service-basic-concepts.md#worksp
 For personal use, which means by definition there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Power BI free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
 
 > [!TIP]
-> The [enterprise BI usage scenario](#todo) describes how users with a Power BI free license can view content when it's hosted in a Premium capacity.
+> The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Power BI free license can view content when it's hosted in a Premium capacity.
 
 ### Gateway setup
 
@@ -83,8 +83,4 @@ The [activity log](../admin/service-admin-auditing.md) records user activities t
 
 ## Next steps
 
-In the [next article in this series](#todo), learn about small team collaboration with the team BI usage scenario.
-
-## Todo
-
-*Remove this section once all links are set.*
+In the [next article in this series](powerbi-implementation-planning-usage-scenario-team-bi.md), learn about small team collaboration with the team BI usage scenario.
