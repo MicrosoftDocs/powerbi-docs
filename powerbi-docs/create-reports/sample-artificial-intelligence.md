@@ -143,11 +143,11 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month.png" alt-text="Q&A segmented by month.":::
 
-4. While columns can be great for comparing one item to another they are not  as useful when displaying movement over time, update the original text to **close % by date in a line chart** where we now notice some dips in July and October.
+3. While columns can be great for comparing one item to another they are not as useful when displaying movement over time, update the original text to **close % by month in a line chart**.
 
    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart.png" alt-text="Q&A in a line chart.":::
 
-6. And to answer the question of **Which manager had the highest close percentage?** update the question to **close % by date in a line chart by manager** to compare the final results.
+4. And to answer the question of **Which manager had the highest close percentage?** update the question to **close % by month in a line chart by manager** and compare the final results.
 
 :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart-by-manager.png" alt-text="Q&A by manager.":::
 
