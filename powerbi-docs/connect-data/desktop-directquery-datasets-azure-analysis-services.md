@@ -96,7 +96,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - All connections to remote Power BI Datasets models are made using single sign-on.
 
-- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../admin/service-premium-connect-tools.md#to-enable-read-write-for-a-capacity).
+- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../admin/service-premium-connect-tools.md#Enable XMLA read-write).
 
 - If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
