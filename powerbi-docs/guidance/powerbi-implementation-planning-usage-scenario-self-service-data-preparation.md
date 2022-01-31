@@ -135,7 +135,7 @@ There are several advantages to publishing a dataflow to a [workspace](../collab
 
 ### Dependencies and impact analysis
 
-Ideally, a dataflow is used by many datasets. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify dataflow dependencies. Perform [impact analysis](../collaborate-share/service-dataset-impact-analysis#perform-dataset-impact-analysis) when planning a dataflow change to understand which datasets will require editing or testing.
+Ideally, a dataflow is used by many datasets. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify dataflow dependencies. Perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) when planning a dataflow change to understand which datasets will require editing or testing.
 
 ### Gateway setup
 
