@@ -8,18 +8,19 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/22/2021
+ms.date: 01/31/2022
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
+Are you new to Power BI and you want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
 Power BI offers different kinds of samples, for different purposes: 
-- A sample **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** called Sales & Returns that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
-- A **[sample template app](sample-sales-marketing-template-app.md)** that you download from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
+- The **[Sales & Returns sample](#sales--returns-sample-pbix-file)** Power BI report (.pbix file). You can view it in the Data Stories Gallery, open and explore it in Power BI Desktop, or upload it to the Power BI service.
+- The **[Artificial Intelligence sample](sample-artificial-intelligence.md)** Power BI report. In the report, you explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Download a copy from the **Learn** page in the Power BI service navigation pane.
+- A **[sample template app](sample-sales-marketing-template-app.md)**. You download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
 - A **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
