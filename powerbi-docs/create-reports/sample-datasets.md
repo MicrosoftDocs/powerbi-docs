@@ -22,7 +22,7 @@ Power BI offers different kinds of samples, for different purposes:
 - The **[Artificial Intelligence sample](sample-artificial-intelligence.md)** Power BI report. In the report, you explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Download a copy from the **Learn** page in the Power BI service navigation pane.
 - A **[sample template app](sample-sales-marketing-template-app.md)**. You download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
-- **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
+- **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model. You can explore the data model in the Power Pivot add-in for Excel or use the Excel workbook as a data source for a Power BI report.
 - A **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
 - An Excel workbook version of the **[AdventureWorks dimensional model](desktop-dimensional-model-report.md)**, in a tutorial to walk you through creating a Power BI report with the data. 
 
@@ -175,6 +175,20 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
     
     ![SharePoint Team Sites](media/sample-datasets/save-sharepoint-logo.png) **SharePoint Team-Sites**    Saving your Power BI files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
+### Explore Excel samples in Excel
+
+(Optional) Want to understand how the data in these Excel workbooks gets converted to Power BI datasets and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers. 
+
+- When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
+- Each workbook contains several Power View sheets. The Power View add-in is no longer supported in Excel, but when you upload the Excel file to the Power BI service, each Power View sheet is rendered as a Power BI report page.
+- So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
+
+    Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
+
+    In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
+
+- The Info tab provides information about obviEnce, the company that created the sample.
+
 ### Upload the Excel files to the Power BI service
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
@@ -198,25 +212,11 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
     ![Import or Connect](media/sample-datasets/sample-files-import-connect.png)
 9. If you select **Import**, Power BI imports the sample workbook and adds it as a new report and dataset, in this case each named **Procurement Analysis Sample**.
 
-    Because the workbook has Power View sheets, Power BI creates a report with a page for each Power BI sheet. 
+    Because the workbook has Power View sheets, Power BI creates a report with a page for each Power View sheet. 
 
 10. Open the report. Select different elements of the report to explore their interactions. 
 
     ![View report](media/sample-datasets/sample-procurement-power-bi-service.png)
-
-### Explore Excel samples in Excel
-
-(Optional) Want to understand how the data in these Excel workbooks gets converted to Power BI datasets and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers. 
-
-- When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
-- Each workbook contains several Power View sheets. The Power View add-in is no longer supported in Excel, but when you upload the Excel file to the Power View service, each Power View sheet is rendered as a Power BI report page.
-- So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
-
-    Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
-
-    In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
-
-- The Info tab provides information about obviEnce, the company that created the sample.
 
 ## Next steps
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
