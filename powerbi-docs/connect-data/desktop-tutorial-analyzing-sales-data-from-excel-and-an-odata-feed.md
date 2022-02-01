@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 05/20/2021
+ms.date: 01/28/2022
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -235,7 +235,7 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
    ![LineTotals by OrderDate line chart](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-orderdate-line-chart.png)
 
    >[!TIP]
-   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**.
+   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you may need select **Options and settings > Options** from the **File** menu, and under **Data Load**, deselect the *Auto date/time for new files* option.
 
 Finally, create a map visualization showing order amounts from each country.
 

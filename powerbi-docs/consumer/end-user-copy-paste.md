@@ -7,14 +7,16 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 01/31/2022
 LocalizationGroup: Visualizations
 ---
-# Copy a visual as an image to your clipboard
+# Copy a visual and then paste it into another application
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
 
-Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. 
+Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. Copy an important visual and paste it into an email message, Word, PowerPoint, another Power BI report, and many more applications.
+
+:::image type="content" source="media/end-user-copy-paste/power-bi-copy-paste.png" alt-text="Copy a visual to your clipboard.":::
 
 When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes:
 * link back to the Power BI report or dashboard

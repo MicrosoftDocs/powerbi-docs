@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/13/2022
+ms.date: 01/30/2022
 LocalizationGroup: Premium 
 ---
 
@@ -128,9 +128,9 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
     * **UTC_offset** - 0
 
-    * **Timepoint** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
+    * **Timepoint** - Enter any value using a valid date time format, for example `10/10/2021 10:00:00 AM`. This field is used for internal purposes and the value you entered will get overwritten.
 
-    * **Timepoint2** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
+    * **Timepoint2** - Enter any value using a valid date time format, for example `10/10/2021 10:00:00 AM`. This field is used for internal purposes and the value you entered will get overwritten.
 
     >[!NOTE]
     >The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option.

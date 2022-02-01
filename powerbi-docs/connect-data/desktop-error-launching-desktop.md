@@ -117,9 +117,9 @@ If you are still having issues, please  [reach out to us](#get-help-with-other-l
 
     :::image type="content" source="media/desktop-error-launching-desktop/export-registry-key.png" alt-text="Registry Editor showing context menu with 'Export' highlighted.":::
 
-* Process traces. For this, you will need to use [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon). Please follow these steps to collect the process traces:
+* Process traces. For this, you will need to use [Process Monitor](/sysinternals/downloads/procmon). Please follow these steps to collect the process traces:
 
-    1. Download [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon), extract the downloaded file and run 'Procmon.exe'.
+    1. Download [Process Monitor](/sysinternals/downloads/procmon), extract the downloaded file and run 'Procmon.exe'.
 
     2. Stop capturing by clicking the following button:
 
