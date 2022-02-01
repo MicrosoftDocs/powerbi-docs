@@ -49,7 +49,7 @@ Eight original samples are available for you to use. Each sample represents a di
 - Install the [built-in samples](#install-built-in-samples) in the Power BI service.
 - Download the [Power BI report files](#download-original-sample-power-bi-files) (.pbix).
 - Download the [Excel workbook files](#download-sample-excel-files) (.xlsx), then upload them to the Power BI service.
-- Explore the [Excel files in Excel](#explore-excel-samples-inside-excel) itself.
+- Explore the [Excel files in Excel](#explore-excel-samples-in-excel) itself.
 
 The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft teamed up to create samples for you to use with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. 
 
