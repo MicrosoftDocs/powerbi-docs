@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/21/2021
+ms.date: 02/02/2022
 ---
 
 # Create and use the paginated report visual
