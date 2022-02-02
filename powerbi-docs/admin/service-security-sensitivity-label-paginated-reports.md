@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 10/19/2021
+ms.date: 02/02/2022
 LocalizationGroup: Data from files
 ---
-# Sensitivity label support for paginated reports (preview)
+# Sensitivity label support for paginated reports
 
 Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a [regular Power BI report](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
 
@@ -21,12 +21,10 @@ Sensitivity labels on paginated reports are included in protection metrics (as p
 
 ## Considerations and limitations
 
-Sensitivity label support is now in public preview, and the following limitations apply:
-
 * [Downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md) is not supported. The label of an upstream model will not propagate down to its downstream paginated reports. Likewise, the label of a paginated report will not propagate down to the report’s downstream content.
 * [Mandatory labeling](service-security-sensitivity-label-mandatory-label-policy.md) will not apply to paginated reports.
 
-## Paginated Report visuals (preview)
+## Paginated Report visuals
 
 A Paginated Report visual is a special type of visual that you can include in a regular Power BI report. It renders a selected paginated report inside the regular Power BI report.
 
