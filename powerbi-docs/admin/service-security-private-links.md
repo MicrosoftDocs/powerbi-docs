@@ -307,7 +307,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
 * Usage metrics do *not* work when private endpoints are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
-* Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link**
+* Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link** in Power BI.
 * Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
 * [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
