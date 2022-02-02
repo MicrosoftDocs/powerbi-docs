@@ -51,7 +51,7 @@ Alternatively, after you've saved it to My workspace, you can download the repor
 1. Open the report in the Power BI service.
 1. On the **File** menu, select **Download the .pbix file**.
 
-    :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download the .pbix file.":::
+    :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download the dot p b i x file.":::
 
     It's saved to your Downloads folder, and you can open it with Power BI Desktop. 
 
@@ -91,11 +91,11 @@ The second report page we explore is **Decomposition Tree**, where we conduct ro
 
 1. With our updated analysis, we can leverage *artificial intelligence splits* to determine the path to the next highest sales opportunities in our data. Select the "**+**" symbol next to **Tablets** and the **High value** option.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Screenshot of Decomposition tree ai split path.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split.png" alt-text="Screenshot of Decomposition tree a i split path.":::
 
 3. The **Territory** field is determined as the next path for sales opportunity, with the **US-SOUTH** being the largest. Select the "**+**" symbol next to **US-SOUTH**, then select the **High value** option. From the updated selection, we can now answer the question, **“Who is the top sales owner?"**
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Screenshot of Decomposition tree ai split path to highest value.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-decomposition-ai-split-sales-owner.png" alt-text="Screenshot of Decomposition tree a i split path to highest value.":::
 
 To learn more, see [Decomposition tree visuals](../visuals/power-bi-visualization-decomposition-tree.md).
 
@@ -121,7 +121,7 @@ To learn more, see [Smart narratives](../visuals/power-bi-visualization-smart-na
 
 1. In the top right of the page, select the **Last 90 days** to view **Revenue Won** displayed as individual days.
 
-    :::image type="content" source="media/sample-artificial-intelligence/power-bi-button.png" alt-text="Screenshot of Power BI button selection.":::
+    :::image type="content" source="media/sample-artificial-intelligence/power-bi-button.png" alt-text="Screenshot of Power B I button selection.":::
 
 1. The button has preserved the **Low, Spencer** & **Software** selections from earlier steps. It has also rewritten the **Revenue Summary** based upon the last 90 days filter, which we can review for new insights. Within the line chart are also visual **anomaly** indicators. Select the **April 25th** indicator for a possible explanation as to **"Why?"** an anomaly was detected.
 
@@ -137,19 +137,19 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
 1. In the bottom right of the page, type the question **close %** in the **Ask a question about your data** field to return a single value.
 
-    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question.png" alt-text="Ask a question.":::
+    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question.png" alt-text="Screenshot of Ask a question.":::
 
 2. To segment the **close %** results by month, modify the current question to **close % by month** to visually display the results in a clustered column chart.
 
-   :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month.png" alt-text="Q&A segmented by month.":::
+   :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month.png" alt-text="Screenshot of Q and A segmented by month.":::
 
 3. While columns can be great for comparing one item to another they are not as useful when displaying movement over time, update the original text to **close % by month in a line chart**.
 
-   :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart.png" alt-text="Q&A in a line chart.":::
+   :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart.png" alt-text="Screenshot of Q and A in a line chart.":::
 
 4. And to answer the question of **Which manager had the highest close percentage?** update the question to **close % by month in a line chart by manager** and compare the final results.
 
-    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart-by-manager.png" alt-text="Q&A by manager.":::
+    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart-by-manager.png" alt-text="Screenshot of Q and A by manager.":::
 
 ## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. If you do save them, you can always visit the **Learn** section's **Sample reports** for a new copy of this sample.
