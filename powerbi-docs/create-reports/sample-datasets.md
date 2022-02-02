@@ -181,11 +181,10 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
 
 - When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
 - Each workbook contains several Power View sheets. The Power View add-in is no longer supported in Excel, but when you upload the Excel file to the Power BI service, each Power View sheet is rendered as a Power BI report page.
-- So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
+- So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**. In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
 
-    Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
-
-    In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
+    >[!TIP]
+    >Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 
 - The Info tab provides information about obviEnce, the company that created the sample.
 
