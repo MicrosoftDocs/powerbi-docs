@@ -6,14 +6,14 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/25/2022
+ms.date: 02/02/2022
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
 
 The Artificial Intelligence sample contains a report for a fictitious company named Contoso. The Contoso sales manager created this report to understand their products and regions' key contributors for revenue won/loss, identify the highest or lowest breakdown of revenue, and determine if there are anomalies in their data. This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards.
 
-   :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample-report.png" alt-text="Screenshot of opened Artificial Intelligence Sample.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample-report.png" alt-text="Screenshot of opened Artificial Intelligence Sample." lightbox="media/sample-artificial-intelligence/power-bi-ai-sample-report-large.png":::
 
 This tutorial explores the Artificial Intelligence Sample in the Power BI service. Because the report experience may be similar in Power BI Desktop and in the service, you can also follow along by downloading the sample .pbix file in Power BI Desktop.
 
@@ -149,7 +149,7 @@ To learn more, see [Anomaly detection](../visuals/power-bi-visualization-anomaly
 
 4. And to answer the question of **Which manager had the highest close percentage?** update the question to **close % by month in a line chart by manager** and compare the final results.
 
-:::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart-by-manager.png" alt-text="Q&A by manager.":::
+    :::image type="content" source="media/sample-artificial-intelligence/ask-a-question-by-month-line-chart-by-manager.png" alt-text="Q&A by manager.":::
 
 ## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. If you do save them, you can always visit the **Learn** section's **Sample reports** for a new copy of this sample.
