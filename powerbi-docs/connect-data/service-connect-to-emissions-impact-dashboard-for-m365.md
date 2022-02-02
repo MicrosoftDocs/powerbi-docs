@@ -137,7 +137,7 @@ This likely indicates that your tenant's emissions volumes are very small. The c
 
 Emissions data for a given month is available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
 
-**This report currently only includes Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, and the Microsoft Search function within these applications. When will the remaining Microsoft 365 applications be added?**
+**This report currently only includes Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams. When will the remaining Microsoft 365 applications be added?**
 
 Additional Microsoft 365 applications will be added over time. Check the Microsoft 365 Roadmap for the latest information on our feature release schedule.
 
