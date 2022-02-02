@@ -42,7 +42,7 @@ In this simplified data model, which combines data from two Power BI Datasets, t
 - A regular relationship between Sales and Product.
 - A limited relationship between Sales and Customer. This relationship is limited because Customer is in a different source group. That's not the only reason a relationship can be limited. For more information, see [limited relationships](../transform-model/desktop-relationships-understand.md#limited-relationships).
 
-Also, two RLS rules have been defined in this data model:
+Also, two RLS roles have been defined in this data model:
 - RLS_Product, which is defined on Product and restricts access to product information.
 - RLS_Customer, which is defined on Customer and restricts access to customer information.
 
@@ -54,7 +54,7 @@ User A belongs both RLS_Product and RLS_Customer. When User A accesses the data 
 
 Adopt one of the following workarounds to avoid this error:
 
-- If feasible, don't put any user into multiple RLS rules. In the scenario above, we can create another RLS role, e.g. RLS_Product_Customer, which combines the RLS filters set in both RLS_Product and RLS_Customer. Next, we can assign User A to just RLS_Product_Customer, and remove the user from both RLS_Product and RLS_Customer.
+- If feasible, don't put any user into multiple RLS roles. In the scenario above, we can create another RLS role, e.g. RLS_Product_Customer, which combines the RLS filters set in both RLS_Product and RLS_Customer. Next, we can assign User A to just RLS_Product_Customer, and remove the user from both RLS_Product and RLS_Customer.
 - Define RLS roles only on one source group. If it's necessary for a user to belong to multiple RLS roles, make sure all RLS filters set in the roles are defined on tables from a single source group. In the scenario above, if we could define RLS_Customer on the source group that contains Sales and Product, we could avoid the error.
 
 > [!NOTE]

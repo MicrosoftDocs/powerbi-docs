@@ -6,10 +6,10 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/19/2021
+ms.date: 01/30/2022
 ---
 
-# Export Power BI report to file (preview)
+# Export Power BI report to file
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
@@ -18,19 +18,6 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
     * When exporting to a .png, a report with multiple pages is compressed into a .zip file
     * Each file in the .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
-
-## Gen2
-
->[!IMPORTANT]
->The changes described in this section will be deployed to Premium Gen2 and Embedded Gen2 capacities in stages, over the following weeks. If these changes are not yet implemented in your Gen2 capacity, wait for the deployment to reach it.
-
-An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation). The workload under which export API operations will appear, is called `InteractiveReportExports`.
-
-The following improvements are available for [Premium Gen2](../../admin/service-premium-concepts.md) and [Embedded Gen2](power-bi-embedded-generation-2.md) capacities:
-
-* The number of Power BI exports per hour will not be limited to 50 per hour per capacity. Instead, the number of Power BI exports is limited to 50 report pages per minute per capacity.
-
-* [Concurrent requests](#concurrent-requests) are not applicable for Gen2 capacities. There's no maximum concurrent report pages limitation.
 
 ## Usage examples
 
@@ -141,32 +128,64 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 
 ## Concurrent requests
 
->[!IMPORTANT]
->This section isn't applicable for Gen2 capacities. In Premium and Embedded Gen2, there's no maximum concurrent report pages limitation.
+# [Premium Gen2](#tab/gen2)
+
+`exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 55 pages in one export request on an A4 SKU, will be processed concurrently. This will take roughly the same time as sending 55 export requests with one page each.
+
+A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export 30 pages in an A2 SKU, the first 25 jobs will run, and the remaining five will wait for the next execution cycle.
+
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
+
+>[!NOTE]
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml).
+
+| Azure SKU      | Office SKU      | Maximum concurrent report pages |
+|----------------|-----------------|---------------------------------|
+| A1             | EM1             |  20                             |
+| A2             | EM2             |  25                             |
+| A3             | EM3             |  35                             |
+| A4             | P1              |  55                             |
+| A5             | P2              |  95                             |
+| A6             | P3              | 175                             |
+| A7<sup>1</sup> | P4<sup>1</sup>  | 200                             |
+| A8<sup>1</sup> | P5<sup>1</sup>  | 200                             |
+
+<sup>1</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+# [Premium Gen1](#tab/gen1)
 
 `exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
->[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). 
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A5 SKU with a limit of processing 12 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
-|Azure SKU  |Office SKU  |Maximum concurrent report pages  |
-|-----------|------------|-----------|
-|A1         |EM1         |1          |
-|A2         |EM2         |2          |
-|A3         |EM3         |3          |
-|A4         |P1          |6          |
-|A5         |P2          |12         |
-|A6         |P3          |24         |
+>[!NOTE]
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml).
+
+|Azure SKU       | Office SKU      |Maximum concurrent report pages |
+|----------------|-----------------|--------------------------------|
+| A1             | EM1             |  1                             |
+| A2             | EM2             |  2                             |
+| A3             | EM3             |  3                             |
+| A4             | P1              |  6                             |
+| A5             | P2              | 12                             |
+| A6             | P3              | 24                             |
+| A7<sup>1</sup> | P4<sup>1</sup>  |                                |
+| A8<sup>1</sup> | P5<sup>1</sup>  |                                |
+
+<sup>1</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+---
 
 ## Considerations and limitations
 
+# [Premium Gen2](#tab/gen2)
+
+* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../admin/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
-    >[!NOTE]
-    >This limitation isn't applicable for Premium and Embedded Gen2 capacities. Instead, in Gen2, the number of Power BI exports is limited to 50 report pages per minute per capacity.
+* The number of Power BI exports is limited to 50 report pages per minute per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
@@ -179,6 +198,26 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
     * Power Automate
     * Paginated report visual
     * Visio
+
+# [Premium Gen1](#tab/gen1)
+
+* The report you're exporting must reside on a Premium or Embedded capacity.
+* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
+* The number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
+* Exported reports cannot exceed a file size of 250 MB.
+* When exporting to .png, sensitivity labels are not supported.
+* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+* The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
+    * Uncertified Power BI visuals
+    * R visuals
+    * PowerApps
+    * Python visuals
+    * Power Automate
+    * Paginated report visual
+    * Visio
+
+---
 
 ## Code examples
 

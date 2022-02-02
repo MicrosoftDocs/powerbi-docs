@@ -31,7 +31,7 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 
    ![Screenshot of select apps.](media/service-delete/power-bi-delete-app.png)
 
-   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your [Notifications center](../consumer/end-user-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
+   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your Notifications center to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
 
 ## Remove or delete a workspace
 
