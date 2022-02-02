@@ -158,7 +158,7 @@ This report page provides a different slice of the data. It looks at gross margi
 
 1. How does profitability vary by industry? How do the products and customers break down by industry? To answer these questions, select one or more industries from the top left (start with the CPG industry). To clear the filter, select the eraser icon.
 
-2. On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager's impact by industry segment, filter the page by select each manager's name in turn in the area chart.
+2. On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager's impact by industry segment, filter the page by selecting each manager's name in turn in the area chart.
 
 3. As you select each manager in the chart, note the following details:
    * Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.
