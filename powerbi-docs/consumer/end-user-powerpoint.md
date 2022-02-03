@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/29/2021
+ms.date: 02/03/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -95,6 +95,7 @@ There are a few considerations and limitations to keep in mind when you work wit
    - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
    - The [ESRI ArcGIS visual](../visuals/power-bi-visualizations-arcgis.md) is not supported
    - R and Python visuals are not supported.
+   - Visuals in a drill down state will be exported in their default state. 
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
 * Some reports cannot be exported. These include:
