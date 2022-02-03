@@ -19,11 +19,11 @@ Power BI supports the following national clouds:
 
 * U.S. Government Community Cloud (GCC)
 
-* U. S. Government Community Cloud High (GCC High)
+* U.S. Government Community Cloud High (GCC High)
 
-* U. S. Military Contractors (DoDCON)
+* U.S. Military Contractors (DoDCON)
 
-* U. S. Military (DoD)
+* U.S. Military (DoD)
 
 * Power BI for China cloud
 
