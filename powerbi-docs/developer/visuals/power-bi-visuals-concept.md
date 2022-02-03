@@ -19,9 +19,9 @@ The [`update` method](visual-api.md#update) is called whenever the visual's size
 
 Actions and subsequent updates in Power BI can be initiated by the user or by the visual itself. They usually occur in one of the following three patterns:
 
-1. [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
-2. [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
-3. [Visual interacts with Power BI](#visual-interacts-with-power-bi).
+* [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
+* [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
+* [Visual interacts with Power BI](#visual-interacts-with-power-bi).
 
 The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
