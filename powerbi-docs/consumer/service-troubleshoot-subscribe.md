@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 01/24/2022
+ms.date: 02/03/2022
 LocalizationGroup: Share your work
 ---
 
@@ -28,7 +28,7 @@ The **Subscribe** option is missing or greyed out.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
 
 ### You've reached the maximum of 24 subscriptions
-There is a limit of 24 subscriptions per report or dashboard. You can provide unique recipients, times, and frequencies for each subscription.  
+There is a limit of 24 subscriptions per Power BI report or dashboard. You can provide unique recipients, times, and frequencies for each subscription. Paginated reports don't have this limit. 
 
 ## I’ve stopped receiving a subscription 
 I've set up a subscription but am not receiving the subscription emails.
