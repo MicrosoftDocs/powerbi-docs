@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/31/2022
+ms.date: 02/03/2022
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -237,7 +237,7 @@ When republishing a live connected dataset utilizing the Analysis Services conne
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
 
-As stated in the error message, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
+This is due to the dataset being published having a different connection string but having the same name as the existing dataset. To resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
 ## Workspace/server alias
 
