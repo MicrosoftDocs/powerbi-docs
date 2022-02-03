@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/17/2019
+ms.date: 05/13/2019
+ms.custom: intro-migration
 ---
 
 # Migrate a report server installation
@@ -80,6 +81,10 @@ Migrating from one Power BI Report Server is the same process as migrating from 
 * Backup database, application, and configuration files
 * Back up the encryption key
 * Clone your report server database hosting your reports
+
+> [!NOTE]
+> The name of the database must stay the same when restored to the Power BI Report Server.
+
 * Install Power BI Report Server. You *can't* install Power BI Report Server on the same server as the one you're migrating from. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
 
 > [!NOTE]

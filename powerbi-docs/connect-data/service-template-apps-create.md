@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 10/04/2021
 ---
 
 # Create a template app in Power BI
 
 Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions for creating a Power BI template app.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](../developer/template-apps/template-apps-auto-install.md) to make things easier for your customers.
+If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](template-apps-auto-install.md) to make things easier for your customers.
 
 Power BI admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
@@ -42,6 +42,11 @@ To create a template app you can distribute to other Power BI tenants, you need 
 4. Expand the **Advanced** section and select **Develop a template app**.
 
     ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
+
+    >[!Important]
+    > App builder workspace settings do not affect the workspaces where app installers install the app, which means that an app developed in a premium capacity workspace will not be automatically be installed on a premium capacity workspace. It is therefore **not** recommended to use premium capacity for the builder workspace, as installer workspaces may not be premium capacity, and functionality that relies on premium capacity will not work unless the installer manually moves the installed workspace to premium capacity.
+    >
+    > Do not select Large dataset storage format. This format is not supported for template apps.
 
 5. Select **Save**.
 >[!NOTE]
@@ -91,7 +96,13 @@ Now that you have content in your workspace, you're ready to package it in a tem
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Exporting to .pbix format is always blocked for users installing the app.
+    >If you want to protect your data, disable the **Download the report to file** option and then configure the other two options as desired.
+    >
+    >Why:
+    >
+    > The view, edit, and export controls on this tab apply only to the Power BI service. Once you download the .pbix file, it is no longer in the service. It puts a copy of your data, unprotected, in a location chosen by the user. You then no longer have any control over what the user can do with it.
+    >
+    > If you want to limit access to your queries and measures while still allowing your users to add their own data sources, consider checking only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your dataset. [Learn more](../transform-model/desktop-composite-models.md)
 
     **Parameters**
 
@@ -196,7 +207,7 @@ To make your app widely available to thousands of Power BI users in the world, w
 
 ## Automate parameter configuration during installation
 
-If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](template-apps-auto-install.md) for details.
 
 ## Next steps
 

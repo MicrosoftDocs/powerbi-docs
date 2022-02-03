@@ -6,7 +6,7 @@ ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 10/23/2019
 ---

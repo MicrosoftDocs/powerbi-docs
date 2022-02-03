@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/7/2020
+ms.date: 06/16/2021
 LocalizationGroup: Visualizations
 ---
 # Interact with visuals in reports, dashboards, and apps
@@ -65,4 +65,4 @@ For many of these options, your administrator or the *designer* can disable your
 ## Next steps
 Back to [Basic concepts for business users](end-user-basic-concepts.md)    
 [Select a visual to open a report](end-user-report-open.md)    
-[Types of visuals available in Power BI](end-user-visual-type.md)
+[Types of visuals available in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

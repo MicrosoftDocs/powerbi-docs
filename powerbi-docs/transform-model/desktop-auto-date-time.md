@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/23/2019
+ms.date: 10/24/2019
 ---
 
 # Apply auto date/time in Power BI Desktop
@@ -42,7 +42,7 @@ If it were possible to see the rows of an auto date/time table, they would look 
 >
 > Further, it's not possible to work with them when using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
-The table also defines a hierarchy, providing visuals with a drill down path through year, quarter, month, and day levels.
+The table also defines a hierarchy, providing visuals with a drill-down path through year, quarter, month, and day levels.
 
 If it were possible to see an auto date/time table in the Model view diagram, it would look like this (related columns are highlighted):
 

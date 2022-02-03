@@ -4,7 +4,7 @@ description: In this article, we look at how the Q&A feature works with the diff
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 08/19/2020
 ---

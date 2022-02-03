@@ -7,12 +7,12 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/02/2019
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Procurement Analysis sample for Power BI: Take a tour
 
-The Procurement Analysis sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company's spending on vendors by category and location. In the sample, we explore these areas:
+The Procurement Analysis built-in sample contains a dashboard, report, and dataset that analyzes a manufacturing company's spending on vendors by category and location. In the sample, we explore these areas:
 
 * Who the top vendors are
 * What categories we spend the most on
@@ -20,32 +20,33 @@ The Procurement Analysis sample content pack contains a dashboard, report, and d
 
 ![Dashboard for the Procurement Analysis sample](media/sample-procurement/procurement1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Procurement Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Procurement Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
-Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first [download it in the Power BI service](#get-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the content pack for this sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
-    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
-    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the **Get Data** page that appears, select **Samples**.
 
 4. Select **Procurement Analysis Sample**, and then choose **Connect**.  
   
    ![Connect to sample](media/sample-procurement/procurement1a.png)
    
-5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample, and then adds a new dashboard, report, and dataset to your current workspace.
    
    ![Procurement Analysis Sample entry](media/sample-procurement/procurement-entry.png)
   
@@ -89,9 +90,9 @@ Let's explore the spending areas in Mexico.
 
       For Mexico, the biggest spending is in the **Maintenance & Repair** subcategory.
 
-      ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
+      ![Indirect Goods & Services drill-down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
-4. Select the drill-down arrow again to turn drill down off.  
+4. Select the drill-down arrow again to turn the drill-down feature off.  
 5. In the top nav pane, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
@@ -133,6 +134,6 @@ Select **Edit report** in the upper-left corner and explore in Editing view:
 * Pin charts to your dashboard.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

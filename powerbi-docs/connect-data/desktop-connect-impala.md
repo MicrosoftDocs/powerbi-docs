@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to an Impala database in Power BI Desktop
@@ -39,7 +39,7 @@ To connect to an **Impala** database, take the following steps:
     ![Navigator window](media/desktop-connect-impala/connect_impala_5.png)
 
 ## Considerations and limitations
-There are a few limitations and considerations to keep in mind with the **Impala** connector:
+There are a few considerations and limitations to keep in mind with the **Impala** connector:
 
 * The Impala connector is supported on the on-premises data gateway, using any of the three supported authentication mechanisms.
 

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 10/19/2021
+ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
 LocalizationGroup: Gateways
 ---
 # Manage your data source - Analysis Services
@@ -21,6 +22,9 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 > [!NOTE]
 > If you have an Analysis Services data source, you need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 
+> [!NOTE]
+> The gateway only supports Windows authentication for Analysis Services.
+
 ## Add a data source
 
 For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select **Analysis Services** for **Data Source Type** if you're connecting to either a multidimensional or tabular server.
@@ -31,6 +35,7 @@ Fill in the information for the data source, which includes **Server** and **Dat
 
 > [!NOTE]
 > The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 
@@ -46,6 +51,9 @@ Optionally, you can configure the privacy level for your data source. This setti
 
 ## User names with Analysis Services
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
 Each time a user interacts with a report connected to Analysis Services, the effective user name is passed to the gateway and then passed on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI is passed to Analysis Services as the effective user. It's passed in the connection property [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth). 
@@ -55,6 +63,9 @@ The email address must match a defined user principal name (UPN) within the loca
 You can also [map your Power BI sign-in name with a local directory UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
 ## Map user names for Analysis Services data sources
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
@@ -93,8 +104,7 @@ To perform on-premises Active Directory property lookup to remap Azure AD UPNs t
 
 In the Power BI service, the following occurs:
 
-* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as
-       firstName.lastName@contoso.com.
+* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as `firstName.lastName@contoso.com`.
 
 > [!NOTE]
 > Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* the user name string is sent to the on-premises data gateway.
@@ -173,7 +183,7 @@ To validate what an original name is replaced with, enter a value for **Original
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
 
-### Limitations for mapping rules
+### Considerations and limitations
 
 Mapping is for the specific data source that's being configured. It's not a global setting. If you have multiple Analysis Services data sources, you have to map the users for each data source.
 

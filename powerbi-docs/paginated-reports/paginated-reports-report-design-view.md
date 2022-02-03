@@ -12,7 +12,7 @@ ms.date: 11/05/2018
 
 # Getting around in Report Design View for paginated reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Report Design View in Power BI Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
 
@@ -61,7 +61,7 @@ The design surface size might be different from the page size print area you spe
 ## 3 Parameters pane  
  With report parameters, you can control report data, connect related reports together, and vary report presentation. The  Parameters pane provides a flexible layout for the report parameters.  
   
- Read more about Report Parameters   
+[Read more about Report Parameters](paginated-reports-parameters.md)   
   
 ## 4 Properties pane
  Every item in a report, including data regions, images, text boxes, and the report body itself, has properties associated with it. For example, the BorderColor property for a text box shows the color value of the text box's border, and the PageSize property for the report shows the page size of the report.  
@@ -97,7 +97,7 @@ The design surface size might be different from the page size print area you spe
   
  The Grouping pane is displayed by default but you can close it by clearing the Grouping pane check box on the View tab. The Grouping pane is not available for the Chart or Gauge data regions.  
   
- For more information, see Grouping Pane and Understanding Groups.  
+ For more information, see [Grouping Pane and Understanding Groups](../create-reports/desktop-grouping-visuals.md).  
   
 ## 6 Current report status bar
 

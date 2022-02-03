@@ -4,11 +4,11 @@ description: Easily connect to and use Excel workbook data in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Excel in Power BI Desktop
@@ -25,7 +25,7 @@ Power BI Desktop presents the tables on other data elements from the workbook in
 
 ![Screenshot of the Navigator window.](media/desktop-connect-excel/connect_to_excel_3.png)
 
-You can select the Load button to import the data, or if you want to edit the data using **Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
+You can select the Load button to import the data, or if you want to edit the data using **Power Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
 
 When you load the data, Power BI Desktop displays the **Load** window and displays the activity associated with loading the data.  
 

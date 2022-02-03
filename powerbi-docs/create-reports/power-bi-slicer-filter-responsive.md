@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 08/02/2021
 LocalizationGroup: Create reports
 ---
 # Create a responsive slicer you can resize in Power BI
@@ -54,9 +54,9 @@ This step is easy.
 
 In Power BI Desktop, you can create a phone layout for each page of a report. If a page has a phone layout, it displays on a mobile phone in portrait view. Otherwise, you need to view it in landscape view. 
 
-1. On the **View** menu, select **Phone Layout**.
+1. On the **View** menu, select **Mobile layout**.
 
-     ![Phone layout icon, View menu](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-6-phone-layout-button.png)
+     ![Screenshot of the Mobile layout button in the View menu.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-6-phone-layout-button.png)
     
 1. Drag all the visuals you want in the phone report to the grid. When you drag the responsive slicer, make it the size you want -- in this case, just a filter icon.
 

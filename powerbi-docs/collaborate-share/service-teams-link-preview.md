@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
+ms.date: 04/06/2021
 ---
 
 # Get a Power BI link preview in Microsoft Teams
@@ -19,8 +19,6 @@ When you paste a link to your reports, dashboards, and apps into the Microsoft T
 - Reports
 - Dashboards
 - Apps
-
-The link preview service requires your users to sign in. To sign out, select the **Power BI** icon at the bottom of the message box. Then select **Sign out**.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including requirements you need to meet.
 
@@ -50,7 +48,6 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 ## Known issues and limitations
 
-- Single sign-on isn't supported for the link preview service.
 - Link previews don't work in meeting chat or private channels.
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 

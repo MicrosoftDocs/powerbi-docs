@@ -1,12 +1,12 @@
 ---
-title:  Introduction to use color utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title:  Introduction to use color utils in Power BI visual
+description: This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: how-to
 ms.date: 02/14/2020
 ---
 
@@ -17,7 +17,7 @@ This article will help you to install, import, and use color utils. This article
 To use the package, you should have the following things:
 * [node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
-* The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
+* The custom visual created by [`PowerBI-visuals-tools`](https://www.npmjs.com/package/powerbi-visuals-tools)
 
 ## Installation
 
@@ -26,7 +26,8 @@ To install the package, you should run the following command in the directory wi
 ```bash
 npm install powerbi-visuals-utils-colorutils --save
 ```
-This command installs the package and adds a package as a dependency to your ```package.json```
+
+This command installs the package and adds a package as a dependency to your `package.json` file.
 
 ## Usage
 

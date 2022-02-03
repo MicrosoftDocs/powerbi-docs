@@ -25,8 +25,6 @@
       href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
     - name: "Analyze sales data from Excel and an OData feed"
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-    - name: "Analyze Facebook data"
-      href: desktop-tutorial-facebook-analytics.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
@@ -38,12 +36,18 @@
     - name: "Consume a machine learning model in a report"
       href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
-      href: service-gateway-sql-tutorial.md                  
+      href: service-gateway-sql-tutorial.md
+    - name: "Automate template app configuration"
+      href: template-apps-auto-install-tutorial.md                       
   - name: Concepts
     expanded: true
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
+    - name: "Datasets in the Power BI service"
+      href: service-datasets-understand.md      
+    - name: "Dataset modes in the Power BI service"
+      href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced dataset metadata in Power BI Desktop"
@@ -54,16 +58,10 @@
       href: desktop-directquery-about.md
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
-    - name: Gateways
-      items:
-      - name: "Guidance for deploying a data gateway"
-        href: service-gateway-deployment-guidance.md
-      - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.md
   - name: How-to guides
     expanded: true
     items: 
-    - name: "Connect to data sources"
+    - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
     - name: Connect to data
       items: 
@@ -139,6 +137,8 @@
         href: desktop-sap-hana.md
       - name: "Enable encryption for SAP HANA"
         href: desktop-sap-hana-encryption.md
+      - name: "Edit SAP variables in the Power BI service"
+        href: service-edit-sap-variables.md        
       - name: "Connect to Analysis Services tabular data"
         href: desktop-analysis-services-tabular-data.md
       - name: "Connect to data sources with DirectQuery"
@@ -153,8 +153,6 @@
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links"
         href: desktop-use-onedrive-business-links.md
-      - name: "Third-party service: Use the Facebook connector"
-        href: service-facebook-connector.md
       - name: "Third-party service: Use the Google Analytics connector"
         href: service-google-analytics-connector.md
       - name: "Connect to Project Online data through Power BI Desktop"
@@ -181,8 +179,12 @@
       items: 
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Share datasets"
+      - name: "Provide a dataset description"
+        href: service-dataset-description.md
+      - name: "Share dataset access (preview)"
         href: service-datasets-share.md
+      - name: "Manage dataset access (preview)"
+        href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
@@ -197,22 +199,32 @@
         href: service-azure-and-power-bi.md
       - name: "Power BI and Azure egress"
         href: service-azure-egress-power-bi.md           
-      - name: "Azure SQL Data Warehouse with DirectQuery"
+      - name: "Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
-      - name: "SQL Server Analysis Services live data in Power BI"
-        href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Managing query refresh"
+        href: refresh-include-in-report-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
-        href: refresh-summaries.md        
-      - name: Configure incremental refresh
-        href: ../admin/service-premium-incremental-refresh.md   
+        href: refresh-summaries.md
+      - name: "Asynchronous refresh with REST API"
+        href: asynchronous-refresh.md     
+      - name: Incremental refresh
+        items:
+        - name: Incremental refresh and real-time data for datasets
+          href: ../connect-data/incremental-refresh-overview.md
+        - name: Configure incremental refresh and real-time data
+          href: ../connect-data/incremental-refresh-configure.md
+        - name: Advanced incremental refresh
+          href: ../connect-data/incremental-refresh-xmla.md
+        - name: Troubleshoot incremental refresh and real-time data
+          href: ../connect-data/incremental-refresh-troubleshoot.md
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
@@ -229,30 +241,18 @@
       items: 
       - name: "Template apps overview"
         href: service-template-apps-overview.md
-      - name: "Create template apps"
+      - name: "Create and publish a template app"
         href: service-template-apps-create.md
       - name: "Tips for creating template apps"
         href: service-template-apps-tips.md
-      - name: "Install & distribute template apps"
-        href: service-template-apps-install-distribute.md
-      - name: "Update, delete, and extract a Power BI template app"
+      - name: "Manage your published template app"
         href: service-template-update-delete-extract.md
+      - name: "Install, share, and update a template app"
+        href: service-template-apps-install-distribute.md
       - name: "Template apps samples"
-        href: service-template-apps-samples.md        
-    - name: Troubleshoot
-      items: 
-      - name: "Troubleshoot refresh scenarios"
-        href: refresh-troubleshooting-refresh-scenarios.md
-      - name: "Troubleshoot an unsupported data source for refresh"
-        href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-      - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
-        href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-      - name: "Troubleshoot analyze in Excel"
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
-      - name: "Error: We couldn't find any data in your Excel workbook"
-        href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "How to refresh your Xero content pack credentials if refresh failed"
-        href: service-refresh-xero-credentials.md
+        href: service-template-apps-samples.md  
+      - name: "Automated template app configuration"
+        href: template-apps-auto-install.md              
     - name: Connect to services
       items: 
       - name: "Connect to services with apps"
@@ -267,8 +267,8 @@
         href: service-connect-to-github.md
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Microsoft Sustainability Calculator"
-        href: service-connect-to-microsoft-sustainability-calculator.md
+      - name: "Emissions Impact Dashboard"
+        href: service-connect-to-emissions-impact-dashboard.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
       - name: "Power BI Premium Capacity Metrics"
@@ -277,7 +277,7 @@
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
-      - name: "Salesforce"
+      - name: "Salesforce Analytics"
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
@@ -287,10 +287,14 @@
         href: service-connect-to-zendesk.md
     - name: Gateways
       items:
+      - name: "Guidance for deploying a data gateway"
+        href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway - in-depth"
         href: service-gateway-onprem-indepth.md
       - name: "On-premises data gateway (personal mode)"
         href: service-gateway-personal-mode.md
+      - name: "On-premises data gateway FAQ"
+        href: service-gateway-power-bi-faq.yml              
       - name: "Manage gateway data sources"
         items:
         - name: "Add or remove a gateway data source"
@@ -311,20 +315,30 @@
         items:
         - name: "SSO overview"
           href: service-gateway-sso-overview.md
-        - name: "Kerberos-based SSO"
+        - name: "Active Directory SSO"
           items:
-          - name: "Configure Kerberos-based SSO"
-            href: service-gateway-sso-kerberos.md
-          - name: "Datasource-specific configuration"
+          - name: "Active Directory SSO overview"
+            href: service-gateway-active-directory-sso.md
+          - name: "Kerberos-based SSO"
             items:
-            - name: "SAP HANA"
-              href: service-gateway-sso-kerberos-sap-hana.md
-            - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
-              href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
-            - name: "SAP BW - gx64krb5.dll"
-              href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-        - name: "SAML-based SSO"
-          href: service-gateway-sso-saml.md
+            - name: "Configure Kerberos-based SSO"
+              href: service-gateway-sso-kerberos.md
+            - name: "Datasource-specific configuration"
+              items:
+              - name: "SAP HANA"
+                href: service-gateway-sso-kerberos-sap-hana.md
+              - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
+                href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+              - name: "SAP BW - gx64krb5.dll"
+                href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+              - name: "Teradata and SSO"
+                href: service-gateway-sso-kerberos-teradata.md              
+          - name: "SAML-based SSO"
+            href: service-gateway-sso-saml.md
+          - name: "Test single sign-on (SSO) configuration"
+            href: service-gateway-sso-test-configuration.md
+        - name: "Azure Active Directory SSO"
+          href: service-gateway-azure-active-directory-sso.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"
@@ -333,12 +347,26 @@
         href: service-gateway-custom-connectors.md
     - name: Troubleshoot
       items: 
-      - name: "Troubleshoot importing Access and Excel .xls files"
-        href: desktop-access-database-errors.md
       - name: "Troubleshoot opening Power BI Desktop"
         href: desktop-error-launching-desktop.md
+      - name: "Troubleshoot refresh scenarios"
+        href: refresh-troubleshooting-refresh-scenarios.md
+      - name: "Troubleshoot tile errors"
+        href: refresh-troubleshooting-tile-errors.md
+      - name: "Troubleshoot an unsupported data source for refresh"
+        href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
+        href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+      - name: "Troubleshoot analyze in Excel"
+        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+      - name: "Error: We couldn't find any data in your Excel workbook"
+        href: service-admin-troubleshoot-excel-workbook-data.md
+      - name: "Troubleshoot importing Access and Excel .xls files"
+        href: desktop-access-database-errors.md
       - name: "Troubleshoot developing DirectQuery models"
         href: desktop-directquery-troubleshoot.md
+      - name: "Troubleshooting Nested Values"
+        href: service-troubleshooting-nested-values.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -347,3 +375,7 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Manage DirectQuery connections to a published dataset"
+      href: desktop-discourage-directquery-connections-to-dataset.md
+    - name: "Troubleshooting sign in with OData Feed connections"
+      href: desktop-troubleshoot-odata.md      

@@ -21,7 +21,7 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 > You can only filter by location if the geographic names in the report are in English; for example, "New York City" or "Germany". Windows 10 tablets and PCs don't support geographic filtering, but Windows 10 phones do.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Filter your report by your geographic location
 1. Open a report in the Power BI mobile app on your mobile device.

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/25/2019
+ms.date: 07/26/2019
 LocalizationGroup: Share your work
 ---
 # Collaborate in a classic workspace

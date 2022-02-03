@@ -1,8 +1,8 @@
 ---
-title: Considerations for generating an embed token in Power BI embedded analytics for better embedded BI insights
-description: Learn about the considerations, limitations, and required permissions for generating an embed token. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Considerations for generating an embed token in Power BI embedded analytics
+description: Learn about the considerations, limitations, and required permissions for generating an embed token.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -28,8 +28,7 @@ You can use the following APIs to generate a token:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken)
-
+* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
@@ -54,11 +53,7 @@ When creating an embed token, different workspaces have different considerations
 
 ## Securing your data
 
-When creating your solution, consider these two approaches for securing your data:
-
-* [Workspace-based isolation](embed-multi-tenancy.md#power-bi-workspace-based-isolation)
-
-* [Row-level security-based isolation](embed-multi-tenancy.md#row-level-security-based-isolation)
+When creating your solution, consider these two approaches for securing your data: *Workspace-based isolation* and *Row-level security-based isolation*. You can find a detailed comparison between them in [Multi-tenancy solutions with Power BI embedded analytics](embed-multi-tenancy.md).
 
 If you're going to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
 
@@ -67,7 +62,7 @@ If you're going to use the RLS approach, review the [RLS considerations and limi
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
 >[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API.
+>The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API.
 
 ### Access Level
 
@@ -77,7 +72,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 

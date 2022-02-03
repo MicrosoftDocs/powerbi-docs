@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 03/05/2020
+ms.date: 10/19/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop
@@ -31,13 +31,13 @@ The following exceptions in *Power BI Desktop* trace files are associated with t
 
 When this error occurs, the most likely reason is that a proxy authentication server on your network is blocking the web requests issued by **Power BI Desktop**. 
 
-If your network uses a proxy authentication server, your administrator can fix this issue by adding the following domains to the allow list on the proxy authentication server:
+If your network uses a proxy authentication server, your administrator can fix this issue by adding the following domains to the allowlist on the proxy authentication server:
 
 * app.powerbi.com
 * api.powerbi.com
 * domains in the *.analysis.windows.net namespace
 
-For customers who are part of a government cloud, fixing this issue can be done by adding the following domains to the allow list on the proxy authentication server:
+For customers who are part of a government cloud, fixing this issue can be done by adding the following domains to the allowlist on the proxy authentication server:
 
 * app.powerbigov.us
 * api.powerbigov.us
@@ -75,7 +75,7 @@ There may be many trace files in that folder. Make sure you only send the recent
 
 Web requests issued by Power BI Desktop do not use web proxy credentials. In networks that use a proxy server, Power BI Desktop may not be able to successfully make web requests. 
 
-Starting with the March 2020 Power BI Desktop release, system or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
+System or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
 
 The registry entry can be placed in either of the following locations:
 
@@ -84,13 +84,13 @@ The registry entry can be placed in either of the following locations:
 
 It is not necessary to have the registry entry in both locations.
 
-![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03b.png)
 
 Once the registry entry is created (a reboot may be necessary) the proxy settings defined in Internet Explorer are used when Power BI Desktop makes web requests. 
 
 As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they have configured the Internet Explorer proxies correctly before enabling this feature.         
 
-### Limitations and considerations for using default system credentials
+### Considerations and limitations
 
 There are a collection of security implications that administrators should consider before enabling this capability. 
 
@@ -99,7 +99,6 @@ The following recommendations should be followed whenever enabling this feature 
 * Only use **Negotiation** as the authentication scheme on the for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client. 
 * Do not use **NTLM fallback** on clients that use this feature.
 * If users are not on a network with a proxy when this feature is enabled and configured as recommended in this section, the process of attempting to contact the proxy server and using default system credentials is not used.
-
+* Power BI Desktop is not proxy-aware, and thus proxy mechanisms including **Azure Application Proxy** and other proxy services, will not work properly with Power BI Desktop
 
 [Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)
-

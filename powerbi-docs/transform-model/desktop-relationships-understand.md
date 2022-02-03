@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 03/23/2021
 ---
 
 # Model relationships in Power BI Desktop
@@ -212,8 +212,8 @@ Bi-directional relationships can introduce multiple—and therefore ambiguous—
 The following list orders filter propagation performance, from fastest to slowest performance:
 
 1. One-to-many intra source group relationships
-2. Many-to-many cardinality relationships
-3. Many-to-many model relationships achieved with an intermediary table and that involves at least one bi-directional relationship
+2. Many-to-many model relationships achieved with an intermediary table and that involves at least one bi-directional relationship
+3. Many-to-many cardinality relationships
 4. Cross source group relationships
 
 ## Next steps

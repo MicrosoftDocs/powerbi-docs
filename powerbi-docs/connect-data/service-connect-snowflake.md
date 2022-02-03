@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 11/30/2021
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in Power BI Service
@@ -44,12 +44,7 @@ After SSO is enabled you can use reports with SSO.
 
 After a report that is based on the Snowflake connector is published to the Power BI service, the dataset creator has to update settings for the appropriate workspace so that it will use SSO.
 
-Because of the way that Power BI works, SSO will only work when no data sources are run through the on-premises data gateway. Limitations are listed below:
-
-* If you're using only a Snowflake source in your data model, then you can use SSO if you choose not to use the on-premises data gateway.
-* If you're using a Snowflake source and another source, then you can use SSO if none of the sources use the on-premises data gateway.
-* If you're using a Snowflake source through the on-premises data gateway, AAD credentials aren't currently supported. This consideration might be relevant in case you're trying to access a VNet from a single IP with the gateway installed on it, rather than from the entire Power BI IP range.
-* If you're using a Snowflake source and another source that requires a gateway, you need to use Snowflake through the on-premises data gateway as well. You won't be able to use SSO in this case.
+For more information about using AAD and SSO, refer to the following announcement that describes the steps and support for using AAD and SSO with Snowflake: [Data gateway support for SSO with AAD](https://powerbi.microsoft.com/blog/announcing-data-gateway-support-for-single-sign-on-sso-with-azure-active-directory/).
 
 Learn more about how to use the on-premises data gateway, in [What is an on-premises data gateway?](service-gateway-onprem.md)
 

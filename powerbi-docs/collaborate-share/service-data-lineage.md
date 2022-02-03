@@ -1,17 +1,18 @@
 ---
 title: Data lineage
-description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
+description: Data lineage view helps you understand the flow of data from the data source to its destination.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 01/12/2022
+ms.custom: video-RE4HmJG
 LocalizationGroup: 
 ---
 # Data lineage
-In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies. Questions like "What happens if I change this data?" or "Why isn't this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. We designed a data lineage view to help you answer these questions.
+In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies. Questions like "What happens if I change this data?" or "Why isn't this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. Power BI's data lineage view helps you answer these questions.
 
 ![Power BI lineage view](media/service-data-lineage/service-data-lineage-view.png)
  
@@ -19,7 +20,10 @@ Power BI has several artifact types, such as dashboards, reports, datasets, and 
 
 In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.    
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+<iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RE4HmJG" frameborder="0" allowfullscreen></iframe>
 
 ## Explore lineage view
 
@@ -85,9 +89,11 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 
 ## Considerations and limitations
 
-- Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.
+* Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.
+* Lineage supports only the **Dataflows** connector for showing dataset-dataflow lineage. The **Power BI dataflows (Beta)** connector is not supported.
+* Correct display of dataset-dataflow lineage is guaranteed only if the **Get Data** UI is used to set up the connection to the dataflow, and the **Dataflows** connector is used. Correct display of dataset-dataflow lineage is not guaranteed if a manually created Mashup query is used to connect to the dataflow.
 
 ## Next steps
 
-* [Intro to datasets across workspaces (preview)](../connect-data/service-datasets-across-workspaces.md)
+* [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Dataset impact analysis](service-dataset-impact-analysis.md)

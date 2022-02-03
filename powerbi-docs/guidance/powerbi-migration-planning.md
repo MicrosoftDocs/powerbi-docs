@@ -5,9 +5,9 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 04/02/2021
 ---
 
 # Plan deployment to migrate to Power BI
@@ -47,7 +47,7 @@ For more information about architectural considerations, see **Section 3** of th
 - Is a new workspace needed for this new solution?
 - Will separate workspaces be needed to accommodate development, test, and production?
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
-- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). If an app will be used by content consumers, [permissions for the app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
+- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [permissions for the app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
 - Can existing groups be used for securing the new content? Both Azure Active Directory and Microsoft 365 groups are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
 - Are there any security considerations related to external guest users? You may need to work with your Azure Active Directory administrator and your Power BI administrator to configure [guest user access](../admin/service-admin-azure-ad-b2b.md).
 
@@ -76,7 +76,7 @@ There are several key decisions to be made related to allowing consumers to crea
 
 Additional capabilities are available when a workspace is stored on a [Premium capacity](../admin/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 
-- Content can be accessed by consumers who don't have a Power BI Pro license.
+- Content can be accessed by consumers who don't have a Power BI Pro or Premium Per User (PPU) license.
 - Support for large datasets.
 - Support for more frequent data refreshes.
 - Support for using the full feature set of dataflows.
@@ -90,7 +90,7 @@ The data required by a report may influence several decisions. Questions to ask 
 - Can an existing Power BI [shared dataset](../connect-data/service-datasets-share.md) be used, or is the creation of a new Power BI dataset appropriate for this solution?
 - Does an existing shared dataset need to be augmented with new data or measures to meet additional needs?
 - Which [data storage mode](../transform-model/desktop-storage-mode.md) will be most appropriate? Options include Import, DirectQuery, Composite, or Live Connection.
-- Should [aggregations](../transform-model/desktop-aggregations.md) be used to enhance query performance?
+- Should [aggregations](../admin/aggregations-auto.md) be used to enhance query performance?
 - Will creation of a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) be useful and can it serve as a source for numerous datasets?
 - Will a new [gateway data source](../connect-data/service-gateway-data-sources.md) need to be registered?
 

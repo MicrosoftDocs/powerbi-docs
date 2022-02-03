@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/10/2019
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 You can create dynamic, customized titles for your Power BI visuals. By creating Data Analysis Expressions (DAX) based on fields, variables, or other programmatic elements, your visuals' titles can automatically adjust as needed. These changes are based on filters, selections, or other user interactions and configurations.
 
@@ -22,26 +24,13 @@ Creating dynamic titles, sometimes called *expression-based titles*, is straight
 
 The first step in creating an expression-based title is to create a field in your model to use for the title. 
 
-There are all sorts of creative ways to have your visual title reflect what you want it to say, or what you want to express. Let's take a look at a couple examples.
+There are all sorts of creative ways to have your visual title reflect what you want it to say, or what you want to express. Let's take a look at an example.
 
 You can create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
 
 ![Screenshot of DAX formula](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Another example is using a dynamic title that changes based on the user's language or culture. You can create language-specific titles in a DAX measure by using the `USERCULTURE()` function. This function returns the culture code for the user, based on their operating system or browser settings. You can use the following DAX switch statement to select the correct translated value. 
-
-```
-SWITCH (
-  USERCULTURE(),
-  "de-DE", “Umsatz nach Produkt”,
-  "fr-FR", “Ventes par produit”,
-  “Sales by product”
-)
-```
-
-Or you can retrieve the string from a lookup table that contains all the translations. You  place that table in your model. 
-
-These are just a couple of examples you can use to create dynamic, expression-based titles for your visuals in Power BI Desktop. What you can do with your titles are limited only by your imagination, and your model.
+This is just one example you can use to create dynamic, expression-based titles for your visuals in Power BI Desktop. What you can do with your titles are limited only by your imagination, and your model.
 
 
 ## Select your field for your title
@@ -56,13 +45,14 @@ When you right-click **Title text**, a context menu appears that allows you to s
 
 From that window, you can select the field that you created to use for your title.
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations to the current implementation of expression-based titles for visuals:
 
 * Expression-based formatting isn’t currently supported on Python visuals, R visuals, or the Key Influencers visual.
 * The field you create for the title must be a string data type. Measures that return numbers or date/time (or any other data type) aren't currently supported.
 * Expression based titles aren't carried over when you pin a visual to a dashboard.
+* Conditional formatting can only use measures defined in the underlying model, and cannot use measures locally created in a report (dataset connection).
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 08/25/2021
 LocalizationGroup: Model your data
 ---
 # Apply DAX basics in Power BI Desktop
@@ -44,7 +44,7 @@ This formula includes the following syntax elements:
 
 **C.** The DAX function **SUM**, which adds up all of the numbers in the **Sales[SalesAmount]** column. You’ll learn more about functions later.
 
-**D.** Parenthesis **()**, which surround an expression that contains one or more arguments. All functions require at least one argument. An argument passes a value to a function.
+**D.** Parenthesis **()**, which surround an expression that contains one or more arguments. Most functions require at least one argument. An argument passes a value to a function.
 
 **E.** The referenced table, **Sales**.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Save a paginated report to OneDrive for Business or SharePoint Online
@@ -40,7 +40,7 @@ With either of these templates, you set up recurring exports of a paginated repo
 
 1. Select **Save a Power BI paginated report to OneDrive for Business** or **Save a Power BI paginated report to a SharePoint Online folder**. Make sure you're signed into Power BI and OneDrive for Business or SharePoint Online.
 
-    :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-step1.png" alt-text="Screenshot of selecting the Power BI and OneDrive for Business template.":::
+    :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-step-1.png" alt-text="Screenshot of selecting the Power BI and OneDrive for Business template.":::
 1. Select **Continue**.  
 
 

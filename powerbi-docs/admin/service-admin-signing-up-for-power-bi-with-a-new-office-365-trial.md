@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/17/2020
+ms.date: 05/18/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -24,7 +24,7 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
 
 ![Select Try for free](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 
-If you select **Office 365 E5**, your trial will include Power BI Pro. The Power BI Pro trial will expire at the same time as your Office 365 E5 trial, which is currently 30 days. If, instead, you select **Office 365 E3**, you'll be able to sign up for Power BI as a *free* user and upgrade to **Pro** for a 60-day trial. 
+If you select **Office 365 E5**, your trial will include Power BI Pro. The Power BI Pro trial will expire at the same time as your Office 365 E5 trial, which is currently 30 days. If, instead, you select **Office 365 E3**, you'll be able to sign up for Power BI as a *free* user and upgrade to **Premium Per User** for a 60-day trial. For more information about Premium Per User (PPU), see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 1. Enter your email address. Microsoft will let you know if that email address will work with Microsoft 365 or if you'll need to create a new email address.  ![welcome page](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-setup.png)
 
@@ -50,7 +50,7 @@ If you select **Office 365 E5**, your trial will include Power BI Pro. The Power
 
 If you have any issues signing in with the new account, try using a private browser session.
 
-By using this signup method, you are creating a new organizational tenant and you'll become the administrator of the tenant. For more information, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Microsoft 365 admin documentation](https://support.office.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+By using this signup method, you are creating a new organizational tenant and you'll become the User administrator of the tenant. For more information, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Microsoft 365 admin documentation](https://support.office.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ## Next steps
 

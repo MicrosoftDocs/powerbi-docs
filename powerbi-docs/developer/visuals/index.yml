@@ -11,8 +11,8 @@ metadata:
   ms.subservice: powerbi-developer
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.date: 31/03/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -25,12 +25,14 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: "Visuals in Power BI"
+          - text: "Develop your own Power BI visual"
+            url: develop-power-bi-visuals.md
+          - text: "Where to find Power BI visuals"
             url: power-bi-custom-visuals.md
           - text: "Power BI visual project structure"
             url: visual-project-structure.md
           - text: "Frequently asked questions"
-            url: power-bi-custom-visuals-faq.md
+            url: power-bi-custom-visuals-faq.yml
 
   # Card
   - title: Develop a Power BI visual

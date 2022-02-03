@@ -2,12 +2,13 @@
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
-ms.author: kfollis
+ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 10/15/2021
+ms.custom: intro-deployment
 ---
 
 # Deploy to Power BI
@@ -40,7 +41,7 @@ Key activities during a deployment to the test workspace typically include:
 - **Workspace content:** Publish datasets and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any Import datasets for the period when UAT is actively occurring.
-- **Security:** Update or verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). Testing workspace access includes a small number of people who are involved with UAT.
+- **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
 
 > [!NOTE]
 > For more information about options for deployment to development, test, and production, see Section 9 of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
@@ -86,7 +87,7 @@ Key activities during a deployment to the production workspace typically include
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
 - **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
-- **Security:** Update and verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) based on your content distribution and collaboration strategy.
+- **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
   - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
@@ -160,6 +161,8 @@ Having a formal support process, staffed by IT with support tickets, is also ess
 You may also have a [Center of Excellence (COE)](center-of-excellence-establish.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
+
+For more information about user support, with a focus on the resolution of issues, see [Power BI adoption roadmap: User support](powerbi-adoption-roadmap-user-support.md).
 
 ## Next steps
 

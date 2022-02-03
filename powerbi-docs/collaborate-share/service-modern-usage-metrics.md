@@ -1,6 +1,6 @@
 ---
-title: Monitor usage metrics in the new workspace experience (preview)
-description: How to view, save, and use usage metrics in the new workspace experience for Power BI dashboards and reports. 
+title: Monitor usage metrics in the new modern workspaces (preview)
+description: How to view, save, and use usage metrics in the new modern workspace for Power BI dashboards and reports. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 01/07/2022
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics in the new workspace experience (preview)
+# Monitor usage metrics in the new modern workspaces (preview)
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in modern workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md).
+If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
 
 ![New Usage Metrics report](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -25,9 +25,9 @@ If you create reports in modern workspaces, you have access to improved usage me
 
 ## Prerequisites
 
-- You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
+- You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#control-usage-metrics).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#audit-and-usage-settings).
 
 ## Create & view an improved usage metrics report
 
@@ -91,8 +91,8 @@ The improved usage metrics report includes the following report pages:
 | Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages are not included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
-| Report performance | Daily performance | The performance for 10%, 50%, and 90% of the open report actions calculated for each individual day. |
-| Report performance | seven-day performance | The performance for 10%, 50%, and 90% of the open report actions calculated across the past seven days for each date. |
+| Report performance | Daily performance | The performance for 25%, 50%, and 75% of the open report actions calculated for each individual day. |
+| Report performance | seven-day performance | The performance for 25%, 50%, and 75% of the open report actions calculated across the past seven days for each date. |
 | Report performance | Consumption method | How users opened the report, such as via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report performance | Browsers | What browser the users used to open the report, such as Firefox, Edge, and Chrome. |
 
@@ -120,10 +120,13 @@ Assuming all client telemetry reaches Power BI, the resulting metrics would be:
 
 ## Update usage metrics report credentials
 
-Use the following procedure to take over a Usage Metrics Report dataset and update the credentials.
+Use the following procedure to take over a Usage Metrics Report dataset and update the credentials. 
+    
+>[!NOTE]
+> Updating credentials doesn't apply to My Workspace, because each user owns their own My Workspace, and they never need to transfer ownership of the dataset. 
 
 1. Open the workspace that contains the report for which you want to update the Usage Metrics Report dataset.
-2. In the black header bar at the top, select the **Settings** icon, then select **Settings**.
+2. In the gray header bar at the top, select the **Settings** icon, then select **Settings**.
 
     ![Select Settings](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
@@ -153,22 +156,22 @@ Use the following procedure to take over a Usage Metrics Report dataset and upda
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal.md#audit-and-usage-settings) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
 
 ## Exclude user information from usage metrics reports
 
-By default, per-user data is enabled for usage metrics. Content consumer account information is included in the metrics report. If admins don't want to expose this information for some or all users, they can exclude user information from your usage report. In the Power BI admin portal tenant settings, they can disable per-user data in usage metrics for specified security groups or for the entire organization.
+By default, per-user data is enabled for usage metrics. This means content consumer account information such as user name and email address is included in the usage metrics report. Admins can limit exposure of identifying user information in the Power BI admin portal tenant settings. They can enable per-user data for the entire organization or specified security groups.
 
-1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**.
+If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures.
+
+1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**. This will hide user account information for all users.
 
 2. Decide whether to **Delete all existing per-user data in current usage metrics content**. Select **Apply**.
 
     ![Disable per-user metrics](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
-
-If user information is excluded, the usage report refers to users as Unnamed.
 
 When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
@@ -187,19 +190,19 @@ To dig into the report data, or to build your own reports against the underlying
 
 When you create a copy of the read-only, pre-built usage report, Power BI creates an editable instance of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. In the new usage metrics report, select the **More options** menu (...), then select **Save a copy**.
+1. In the new usage metrics report, select the **File** dropdown, then select **Save a copy**.
 
     ![Save a copy of the report](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-save.png)
 
 2. In the **Save your report** dialog box, enter a name, then select **Save**.
 
-    Power BI creates an editable Power BI report, saved in the current workspace, and opens the report copy. 
+    Power BI creates an editable Power BI report saved in the current workspace. Select **Go to report** in the **Report saved** dialog box that appears.
 
-3. Select the **More options** menu (…), then select **Edit** to switch into Editing view. 
+3. Select **Edit** to switch into Editing view.
 
-    For example, you can change filters, add new pages, and build new visualizations, format the fonts and colors, etc.
+    From here you can change filters, add new pages, build new visualizations, format the fonts and colors, and so on.
 
-1. The new report is saved to the Reports tab in the current workspace and added to the Recent content list.
+1. The new report is saved to the **All** tab and the **Content** tab in the current workspace and added to the **Recent** list.
 
     ![The new report on the Reports tab](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
     
@@ -215,13 +218,13 @@ You can create a new usage report in Power BI Desktop, based on the Usage Metric
 
 2. If you aren't signed in to the Power BI service, on the **File** menu select **Sign in**.
 
-1. To connect to the Usage Metrics Report dataset, on the **Home** ribbon select **Get Data**.
+1. To connect to the Usage Metrics Report dataset, on the **Home** ribbon select **Get Data** > **More**.
 
 4. In the left pane, select **Power Platform**, then select **Power BI datasets** > **Connect**.
 
     ![Get data > Power Platform](media/service-modern-usage-metrics/power-bi-desktop-get-data.png)
 
-1. Scroll to the desired dataset or type *Usage Metrics Report* in the search box. 
+1. Scroll to the desired dataset or type *Usage Metrics* in the search box. 
 
 6. Verify in the Workspace column that you are selecting the correct dataset, then select **Create**. 
 
@@ -239,7 +242,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 1. First, if you haven't done so already, [create a copy of the usage metrics report](#create-a-copy-of-the-usage-report). 
 
-2. Open the new usage metrics report, select the **More options** menu (…), and select **Analyze in Excel**.
+2. Open the new usage metrics report, select **Export** > **Analyze in Excel**.
 
     ![Analyze in Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
@@ -290,7 +293,7 @@ In addition to the above differences between previous and improved usage metrics
 - User masking isn't working as expected when using nested groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
-- Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
+- Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
 - If your organization is using [Private Links](../admin/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
 
@@ -348,9 +351,14 @@ The Platform indicates the technology a viewer used to open a report: via PowerB
 **Q:**  There are four reports in the previous version of the usage metrics report, but the improved version only displays three.
 **A:**  The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
-## Troubleshoot: Delete the dataset
+## Troubleshoot refresh issues
 
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports. Follow these steps.
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports.
+
+> [!NOTE]
+> Power Automate can perform a refresh that can force the Report Usage model to reload data. This option may not resolve all refresh issues; for example, if an older version is stuck in the workspace.
+
+Follow these steps to delete the dataset and then create a fresh data refresh report. 
 
 ### Delete the dataset
 
@@ -371,6 +379,9 @@ If you suspect data consistency or refresh issues, it might make sense to delete
 1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
 
     ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
+
+    > [!NOTE]
+   > This **Try it** button does not apply to GCC customers since their API endpoint is different.
 
 1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**. 
 

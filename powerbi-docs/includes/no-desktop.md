@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-❌&nbsp;Power BI Desktop
+❌&nbsp;Power&nbsp;BI&nbsp;Desktop

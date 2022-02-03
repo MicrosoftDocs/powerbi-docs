@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour
@@ -21,32 +21,33 @@ This sample has two main objectives:
 
 ![Dashboard for the Supplier Quality Analysis sample](media/sample-supplier-quality/supplier1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Supplier Quality Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Supplier Quality Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
-Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first [download it as a sample in the Power BI service](#get-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the content pack for this sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
-   If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
    
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **Supplier Quality Analysis Sample**, then choose **Connect**.  
    
    ![Connect to sample](media/sample-supplier-quality/supplier16.png)
 
-5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample and then adds a new dashboard, report, and dataset to your current workspace.
    
    ![Supplier Quality Analysis Sample entry](media/sample-supplier-quality/supplier17.png)
   
@@ -77,7 +78,7 @@ Let's analyze the downtime caused by defective materials and see which vendors a
 ### Which are the worst suppliers?
  We want to find the worst eight suppliers and determine what percentage of the downtime they're responsible for creating. We can do so by changing the **Downtime (min) by Vendor** area chart to a treemap.  
 
-1. On the **Downtime Analysis** page of the report, select **Edit report** in the upper-left corner.  
+1. On the **Downtime Analysis** page of the report, select **Edit** in the top menu.  
 2. Select the **Downtime (min) by Vendor** area chart, and in the **Visualizations** pane, select the **Treemap** icon.  
 
    ![Select treemap icon](media/sample-supplier-quality/supplier4.png)  
@@ -87,7 +88,7 @@ Let's analyze the downtime caused by defective materials and see which vendors a
     ![Downtime (min) by Vendor treemap](media/sample-supplier-quality/supplier5.png)  
 
    From this treemap, we can see the top eight vendors are the eight blocks on the left of the treemap. We can also see they account for about 50% of all downtime minutes.  
-3. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
+3. Select **Supplier Quality Analysis Sample** from the left navigation bar to return to the dashboard.
 
 ### Comparing plants
 Now let's explore which plant does a better job managing defective material, resulting in less downtime.  
@@ -106,7 +107,7 @@ Now let's explore which plant does a better job managing defective material, res
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield's large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
+4. Select **Supplier Quality Analysis Sample** in the left navigation bar to return to the dashboard.
 
 ## Which material type is best managed?
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -131,7 +132,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
-4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.  
+4. Select **Supplier Quality Analysis Sample** in the left navigation bar to return to the dashboard.  
 5. Because we know that raw materials have the highest number of defects, type in the question box: *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  
@@ -163,6 +164,6 @@ Let's look at another dashboard tile related to total defective quantity.
 5. Select **Exit Q&A** in the upper-left corner to return to the dashboard.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

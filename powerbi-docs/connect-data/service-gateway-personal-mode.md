@@ -56,7 +56,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 
    `%localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config`
 
-2. At the bottom of the file, add the following text:
+2. At the bottom of the file, before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>` add the following text:
 
     ```xml
     <setting name="EnableFastCombine" serializeAs="String">

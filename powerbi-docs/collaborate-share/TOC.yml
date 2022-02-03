@@ -10,14 +10,18 @@
   - name: Concepts
     expanded: true
     items: 
-      - name: "Organize work in workspaces"
+      - name: "The new workspace experience"
         href: service-new-workspaces.md
+      - name: "Roles in new workspaces"
+        href: service-roles-new-workspaces.md
       - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
         href: service-modern-usage-metrics.md
       - name: "Content endorsement"
         href: service-endorsement-overview.md
+      - name: "Dataset discoverability"
+        href: service-discovery.md
   - name: How-to guides
     expanded: true
     items:
@@ -25,6 +29,8 @@
       items: 
       - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
+      - name: "Give access to new workspaces"
+        href: service-give-access-new-workspaces.md
       - name: "Upgrade classic workspaces"
         href: service-upgrade-workspaces.md
       - name: "Create classic workspaces"
@@ -59,9 +65,15 @@
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md
+      - name: "View all your Power BI tabs in Teams"
+        href: service-teams-pivot.md
+      - name: "Analyze Teams usage in Teams"
+        href: service-teams-analytics.md
+      - name: "Get notifications in Teams"
+        href: service-teams-notifications.md
     - name: Publish and share your work
       items: 
-      - name: "Share dashboards and reports"
+      - name: "Share reports and dashboards"
         href: service-share-dashboards.md
       - name: "Request access to a report or dashboard"
         href: service-request-access.md
@@ -85,15 +97,21 @@
         href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Power BI in Excel
+    - name: Power BI and Excel
       items:         
-      - name: "Analyze in Excel"
+      - name: "Connect Excel to Power BI datasets"
+        href: service-connect-power-bi-datasets-excel.md
+      - name: "Start in Excel"
+        href: service-connect-excel-power-bi-datasets.md
+      - name: "Start in Power BI"
         href: service-analyze-in-excel.md
+      - name: "Build refreshable reports in Excel"
+        href: service-analyze-power-bi-datasets-excel.md
       - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md
       - name: "Set featured tables"
         href: service-create-excel-featured-tables.md
-      - name: "Troubleshoot analyze in Excel"
+      - name: "Troubleshoot connecting Excel to Power BI data"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
@@ -111,16 +129,12 @@
         href: service-automate-paginated-excel-sharepoint-list.md
       - name: Save a paginated report to a local folder
         href: service-automate-paginated-local-file.md
+      - name: "Power Automate button visual"
+        href: ../create-reports/power-bi-automate-visual.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
       items:
-      - name: "Intro to organizational content packs"
-        href: service-organizational-content-pack-introduction.md
-      - name: "Create and publish a content pack"
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: "Copy, refresh, get access to content packs"
-        href: service-organizational-content-pack-copy-refresh-access.md
       - name: "Manage, update, delete content packs"
         href: service-organizational-content-pack-manage-update-delete.md
       - name: "Remove a connection to a content pack"

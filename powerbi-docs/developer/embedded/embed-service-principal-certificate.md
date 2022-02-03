@@ -1,14 +1,14 @@
 ---
-title: Embed Power BI content in an Power BI embedded analytics application with service principal and a certificate enabling better embedded BI insights
-description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate. Enable better embedded BI insights using Power BI embedded analytics.
-author: KesemSharabi
-ms.author: kesharab
+title: Embed Power BI content in an Power BI embedded analytics application with service principal and a certificate
+description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 11/23/2020
+ms.date: 07/18/2021
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -165,6 +165,9 @@ public async Task<AuthenticationResult> DoAuthentication(){
 ## Configure Visual Studio to use MSI
 
 When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+
+>[!NOTE]
+>The user that signs into Visual Studio has to have Azure Key Vault permissions to get the certificate.
 
 1. Open your project in Visual Studio.
 

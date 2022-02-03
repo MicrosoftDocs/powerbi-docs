@@ -40,7 +40,7 @@ In this example we're using a treemap that has a hierarchy made up of territory,
 
 You have two ways for accessing the drill-down, drill-up, and expand features for visuals that have hierarchies. Try them both, and use the one that you enjoy the most.
 
-- First way: hover over a visual to see and use the icons. Turn on drill down first by selecting the downward arrow. The grey background lets you know that drill down is active.   
+- First way: hover over a visual to see and use the icons. Turn on the drill-down feature first by selecting the downward arrow. The grey background lets you know that the drill-down option is active.   
 
     ![Screenshot of the hover example.](./media/end-user-drill/power-bi-drill-hover.png)
 
@@ -72,13 +72,13 @@ Select the drill-up icon ![Drill-up icon](./media/end-user-drill/power-bi-drill-
 ### Drill down one field at a time
 
 
-1. Select the drill-down icon to turn it on ![Screenshot of drill down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png).
+1. Select the drill-down icon to turn it on ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png).
 
     Now you have the option of drilling down **one field at a time** by selecting a visual element. Examples of visual elements are: bar, bubble, and leaf.
 
     ![Screenshot of visual with arrow pointing at drill-down on/off icon turned on.](media/end-user-drill/power-bi-select-drill-icon.png)
 
-    If you don't turn on drill down, selecting a visual element (like a bar, bubble, or leaf) won't drill down. Instead, it will cross-filter the other charts on the report page.
+    If you don't turn on the drill-down option, selecting a visual element (like a bar, bubble, or leaf) won't drill down. Instead, it will cross-filter the other charts on the report page.
 
 1. Select the leaf for **TN**. Your treemap now shows all the cities and territories in Tennessee that have a store.
 
@@ -117,7 +117,7 @@ Having a treemap that shows us only a postal code or only a store name isn't inf
 
     ![Screenshot of the treemap showing all data for TN.](media/end-user-drill/power-bi-expand-second.png)
 
-1. Make sure drill down is still turned on, ![Screenshot of drill down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) and select the *expand down* icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). Your treemap now shows the same number of leaves (boxes), but each leaf has additional detail. Instead of only showing city and state, it now also shows us postal code.
+1. Make sure the drill-down option is still turned on, ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) and select the *expand down* icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). Your treemap now shows the same number of leaves (boxes), but each leaf has additional detail. Instead of only showing city and state, it now also shows us postal code.
 
     ![Screenshot of the visual showing city, state, and postal code.](./media/end-user-drill/power-bi-expand-third.png)
 

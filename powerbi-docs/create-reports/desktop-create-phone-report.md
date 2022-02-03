@@ -8,10 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 06/22/2021
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
 
@@ -27,19 +29,27 @@ These capabilities make it possible to design and build attractive, interactive 
 
 **Prerequisite**: The first step is to design and create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
 
-To create the mobile-optimized view, open the report in either Power BI Desktop or in the Power BI service. When the report is open, go the mobile layout view:
-   * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
-   * In the Power BI service, choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+To create the mobile-optimized view, open the report in either Power BI Desktop or in the Power BI service. When the report is open, go the mobile layout view.
 
-   You see a scrollable canvas shaped like a phone, and a **Visualizations** pane that lists all of the visuals that are on the original report page.
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-* Each visual in the **Visualizations** pane appears with its name for easy identification.
+Select the **View** ribbon and choose **Mobile layout**.
+
+# [Power BI service](#tab/powerbi-service)
+
+Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+
+---
+
+You see a scrollable canvas shaped like a phone, and a **Page visuals** pane that lists all of the visuals that are on the original report page.
+
+* Each visual in the **Page visuals** pane appears with its name for easy identification.
 * Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png)
 
 ## Add visuals to the mobile layout canvas
-To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
+To add a visual to the mobile layout, drag it from the **Page visuals** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
 
 You can add some or all of the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
@@ -50,7 +60,7 @@ Visuals can be layered one on top of the other to create interactive reports usi
 
 Once you've placed a visual on the canvas, you can resize it by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
-The image below illustrates dragging and dropping visuals from the **Visualizations** pane onto the canvas, as well as resizing and overlaying some of them.
+The image below illustrates dragging and dropping visuals from the **Page visuals** pane onto the canvas, as well as resizing and overlaying some of them.
 
    ![Drag and drop, resize, and overlay visuals](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
@@ -71,9 +81,9 @@ The **Selection** pane also has a visibility indication for each visual in the l
 ## Remove visuals from the mobile layout canvas
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
-You can remove all the visualizations from the canvas by clicking the eraser on the **Visualization** pane.
+You can remove all the visualizations from the canvas by clicking the eraser on the **Page visuals** pane.
 
-Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
+Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the **Page visuals** pane, and the original report remains unaffected.
 
 ## Configure visuals and slicers for use in mobile-optimized reports
 

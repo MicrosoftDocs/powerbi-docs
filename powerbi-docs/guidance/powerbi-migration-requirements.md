@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
 ---
@@ -41,7 +41,7 @@ Compile thorough, easy-to-reference, information about reports, such as:
 - **How consumers use the report:** Consider sitting with report consumers of the existing report to understand exactly what they do with it. You may learn that certain elements of the report can be eliminated or improved in the new Power BI version. This process involves additional time investment but it's valuable for critical reports or reports that are used often.
 - **Owner and subject matter expert:** Identify the report owner and any subject matter expert(s) associated with the report or data domain. They may become the owners of the new Power BI report going forward. Include any specific change management requirements (which typically differ between IT-managed and business-managed solutions) as well as approvals and sign-offs, which will be required when changes are made in the future.
 - **Content delivery method:** Clarify report consumer expectations for content delivery. It may be on-demand, interactive execution, embedded within a custom application, or delivery on a schedule using an e-mail subscription. There may also be requirements to trigger alert notifications.
-- **Interactivity needs:** Determine _must-have_ and _nice-to-have_ interactivity requirements, such as filters, drill-down, or drill-through.
+- **Interactivity needs:** Determine _must-have_ and _nice-to-have_ interactivity requirements, such as filters, drill-down actions, or drillthrough actions.
 - **Data sources:** Ensure all data sources required by the report are discovered, and data latency needs (data freshness) are understood. Identify historical data, trending, and data snapshot requirements for each report so they can be aligned with the data requirements. Data source documentation can also be useful later on when performing data validation of a new report with its source data.
 - **Security requirements:** Clarify security requirements (such as allowed viewers, allowed editors, and any row-level security needs), including any exceptions to normal organizational security. Document any data sensitivity level, data privacy, or regulatory/compliance needs.
 - **Calculations, KPIs, and business rules:** Identify and document all calculations, KPIs, and business rules that are currently defined within the existing report so they can be aligned with the data requirements.
@@ -62,7 +62,7 @@ Compile detailed information pertaining to data, such as:
 - **Data structure and cleansing needs:** Determine the data structure for each requisite data source, and to what extent [data cleansing](../transform-model/desktop-query-overview.md) activities are necessary.
 - **Data integration:** Assess how data integration will be handled when there are multiple data sources, and how [relationships](../transform-model/desktop-create-and-manage-relationships.md) can be defined between each model table. Identify specific data elements needed to simplify the model and [reduce its size](import-modeling-data-reduction.md).
 - **Acceptable data latency:** Determine the data latency needs for each data source. It will influence decisions about which [data storage mode](../transform-model/desktop-storage-mode.md) to use. Data refresh frequency for Import model tables is important to know too.
-- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../admin/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining the [incremental data refresh](../admin/service-premium-incremental-refresh.md) rules will also be necessary.
+- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../admin/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining [incremental data refresh](../connect-data/incremental-refresh-overview.md) will also be necessary.
 - **Measures, KPIs, and business rules:** Assess needs for measures, KPIs, and business rules. They will impact decisions regarding where to apply the logic: in the dataset or the data integration process.
 - **Master data and data catalog:** Consider whether there are master data issues requiring attention. Determine if integration with an enterprise data catalog is appropriate for enhancing discoverability, accessing definitions, or producing consistent terminology accepted by the organization.
 - **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for datasets, including [row-level security](../admin/service-admin-rls.md) requirements.

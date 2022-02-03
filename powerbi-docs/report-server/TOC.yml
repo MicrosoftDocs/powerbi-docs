@@ -43,8 +43,6 @@
         href: /sql/reporting-services/working-with-subscriptions-web-portal
       - name: "Using the mobile app"
         href: ../consumer/mobile/mobile-apps-for-mobile-devices.md
-      - name: "Troubleshoot scheduled refresh"
-        href: scheduled-refresh-troubleshoot.md
     - name: Report server for developers
       items: 
       - name: "Report server for developers"
@@ -107,6 +105,12 @@
         href: /azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: excel-oos.md
+  - name: Troubleshoot
+    items: 
+    - name: "Troubleshoot custom visuals in Power BI Desktop"
+      href: custom-visuals-troubleshoot.md
+    - name: "Troubleshoot scheduled refresh"
+      href: scheduled-refresh-troubleshoot.md
   - name: Reference
     items: 
     - name: "REST API"

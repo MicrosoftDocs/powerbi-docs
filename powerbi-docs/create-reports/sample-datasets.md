@@ -1,6 +1,6 @@
 ---
 title: Get samples for Power BI
-description: Sample content packs, apps, .pbix files, and Excel datasets for Power BI
+description: Built-in samples, apps, .pbix files, and Excel datasets for Power BI
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 
@@ -8,18 +8,22 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 10/22/2021
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
 Power BI offers different kinds of samples, for different purposes: 
-- A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
-- A **[sample app](#sample-app-from-appsource)** that you download from AppSource, also right in the Power BI service. Apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
-- **[Eight original built-in samples](#eight-original-samples)** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
+- A sample **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** called Sales & Returns that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
+- A **[sample template app](sample-sales-marketing-template-app.md)** that you download from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
+- **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
-- Also a **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
+- A **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
+- An Excel workbook version of the **[AdventureWorks dimensional model](desktop-dimensional-model-report.md)**, in a tutorial to walk you through creating a Power BI report with the data. 
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 
@@ -29,61 +33,19 @@ Our online documentation uses these same samples in tutorials and examples, so y
 
 *The Sales & Returns sample report*
 
-Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drill through, conditional formatting, what-if, and customized tooltips. 
+Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drillthrough, conditional formatting, what-if, and customized tooltips. 
 
 The scenario for this report is a company that sells Microsoft-themed skateboards. They want to see the state of their sales and returns, and analyze how they should modify their operations. 
 
 You can explore it these ways:
 
-- View and interact with it in the Power BI Community [Data Stories Gallery](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607).
 - Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
-
-## Sample app from AppSource
-
-The Marketing and Sales *app* is available from Microsoft AppSource. An app is a Power BI content type that combines related dashboards and reports. An app can have one or more dashboards and one or more reports, all bundled together. You can download the Marketing and Sales app from **Apps** in the Power BI service, or by going to AppSource in your browser.
-
-- The article [Install and use apps](../consumer/end-user-app-view.md) explains how to download an app from within the Power BI service.
-- This link takes you to the [Sales & Marketing app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview) in AppSource.
-
-After you install it, you see it in your collection of apps.
-
-:::image type="content" source="media/sample-datasets/power-bi-sales-marketing-app.png" alt-text="Sales & Marketing app tile":::
-
-When you open it, select **Explore with sample data**. 
-
-:::image type="content" source="media/sample-datasets/power-bi-explore-app.png" alt-text="Explore the app":::
-
-You see the app view, with the dashboard and individual report pages in the navigation pane. 
-
-:::image type="content" source="media/sample-datasets/power-bi-sales-marketing-app-navigation.png" alt-text="App navigation pane":::
-
-Because you installed it, you can also open the *workspace* and edit the elements of the app. Select the **Edit** pencil icon to open the workspace.
-
-:::image type="content" source="media/sample-datasets/power-bi-app-edit-pencil.png" alt-text="Edit the app":::
-
-Now you see the dashboard, report, and dataset from the app in the list view of the workspace. Here in the workspace, you can edit each of them.
-
-:::image type="content" source="media/sample-datasets/power-bi-sales-marketing-workspace.png" alt-text="Sales & Marketing workspace":::
-
-If you want to, you can distribute this app to anyone in your organization. Select **Update app**.
-
-:::image type="content" source="media/sample-datasets/power-bi-update-app.png" alt-text="Update app button":::
-
-Complete the **Setup** tab, including choosing an **App theme color**. 
-
-:::image type="content" source="media/sample-datasets/power-bi-app-setup.png" alt-text="Select app setup":::
-
-Complete the **Navigation** and **Permission** tabs, then select **Update app**.
-
-:::image type="content" source="media/sample-datasets/power-bi-select-update-app.png" alt-text="Select Update app to publish it":::
-
-Read more about [publishing apps in Power BI](../collaborate-share/service-create-distribute-apps.md).
 
 ## Eight original samples
 Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:
 
-- Install the [built-in content packs](#install-built-in-content-packs) in the Power BI service.
+- Install the [built-in samples](#install-built-in-samples) in the Power BI service.
 - Download the [Power BI report files](#download-original-sample-power-bi-files) (.pbix).
 - Download the [Excel workbook files](#download-sample-excel-files) (.xlsx), then upload them to the Power BI service.
 - Explore the [Excel files in Excel](#explore-excel-samples-inside-excel) itself.
@@ -92,7 +54,7 @@ The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsof
 
 ![Available samples](media/sample-datasets/power-bi-samples.png)
 
-Each of these samples is available in several formats: as a content pack, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. This article explains it all. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
+Each of these samples is available in several formats: as a built-in sample, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. This article explains it all. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
 
 Before we get started, here are the legal guidelines for using these samples. After that, we introduce the samples and show how to use them.
 
@@ -152,29 +114,30 @@ This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows 
 
 This industry sample focuses on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-### Install built-in content packs
+### Install built-in samples
 
-Let's start with the *content packs*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. A content pack is a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI sample content pack contains a dataset, report, and dashboard.  Content packs are still available, but are being deprecated. They aren't available for Power BI Desktop.
+Let's start with the *built-in samples*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. These built-in samples are still available, but are being deprecated. They aren't available for Power BI Desktop.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 2. Navigate to your My Workspace, or another workspace where you want to install the sample. 
 2. In the bottom-left corner, select **Get data**.
 
-    ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the Get Data page that appears, select **Samples**.
 
    ![Samples on Get Data](media/sample-datasets/get-data-samples.png)
 4. Select one of the samples to open a description of that sample, and choose **Connect**.  
 
    ![Select a sample > select Connect](media/sample-datasets/power-bi-connect.png)
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
+5. Power BI imports the built-in sample and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
 
    ![New content in workspace](media/sample-datasets/power-bi-sample-workspace.png)
 
-Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open the Power BI service and explore.
+Now that you have data, you're on your way.  Try out some of our tutorials using the built-in samples or just open the Power BI service and explore.
 
 ### Download original sample Power BI files
-Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
+Each of the built-in samples is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
 
@@ -191,7 +154,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 
 ### Download sample Excel files
-Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with the Power BI service.  
+Each of the built-in samples is also available as an Excel workbook. The Excel workbooks are designed to be used with the Power BI service.  
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
 
@@ -216,7 +179,8 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 4. In the bottom-left corner of the navigation pane, select **Get data**.
 
-    ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 5. On the **Get Data** page that appears, select **Files > Get**.
 
     ![Files > Get](media/sample-datasets/power-bi-files.png)

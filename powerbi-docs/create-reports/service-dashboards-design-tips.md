@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/14/2019
+ms.date: 09/12/2021
 LocalizationGroup: Dashboards
 ---
 # Tips for designing a great Power BI dashboard

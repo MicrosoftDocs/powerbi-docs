@@ -14,7 +14,7 @@ LocalizationGroup: Connect to services
 With Power BI, you can connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service. It creates a Power BI *workspace* with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
 >[!IMPORTANT]
->Service content packs are being replaced by [Template apps](./service-template-apps-overview.md). As of September 25, 2019, a number of content packs have already been deprecated. Any deprecated content pack that you have installed will remain in your account, but no documentation or support will be provided for it, nor will it be possible to install it again.
+>Service content packs are being replaced by [Template apps](./service-template-apps-overview.md). A number of content packs have already been deprecated. Any deprecated content pack that you have installed will remain in your account, but no documentation or support will be provided for it, nor will it be possible to install it again.
 
 Sign in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). 
 

@@ -4,11 +4,10 @@ description: Documentation for how to set Visual interactions in a Microsoft Pow
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/04/2020
+ms.date: 06/23/2021
 LocalizationGroup: Reports
 ---
 # Change how visuals interact in a Power BI report
@@ -38,9 +37,9 @@ If you have edit permissions to a report, you can turn on the visual interaction
 2. Display the **Visual Interactions** options.
     
 
-    - In Desktop, select **Format > Interactions**.
+    - In Power BI Desktop, select **Format** > **Edit interactions**.
 
-        ![select Format then Interactions](media/service-reports-visual-interactions/power-bi-interaction.png)
+        ![Screenshot showing Edit interactions on the Format menu.](media/service-reports-visual-interactions/power-bi-interaction.png)
 
     - In the Power BI service, open the report in Editing view and select the dropdown from the report menu bar.
 
@@ -67,16 +66,16 @@ If the selected visualization should:
 [Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
 
 > [!TIP]
-> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with drill down on the **New hires** tab.
+> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New hires** tab.
 >
 
 1. Select the drillable visual to make it active. 
 
-2. Turn on drill down by selecting the drill down icon.
+2. Turn on the drill-down feature by selecting the drill-down icon.
 
     ![turn on drilling](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
-2. From the menu bar, select **Format** > **Drilling filters other visuals**.  Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection. 
+2. From the menu bar, select **Format**, select the drop-down caret under **Apply drill down filters to**, and select **Entire page**.  Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection. 
 
     ![turn on drilling filters other visuals](media/service-reports-visual-interactions/power-bi-drill.png)
 
@@ -85,7 +84,5 @@ If the selected visualization should:
 ## Considerations and troubleshooting
 If you build a matrix with fields from different tables, then try to cross-highlight by selecting multiple items at different levels of the hierarchy, you get errors on the other visuals. 
 
-![Video of bug when try to filter at different levels of hierarchy](media/service-reports-visual-interactions/cross-highlight.gif)
-    
 ## Next steps
 [Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)

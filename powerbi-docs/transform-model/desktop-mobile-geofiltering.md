@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/16/2018
+ms.date: 08/25/2021
 LocalizationGroup: Model your data
 ---
 # Set geographic filters in Power BI Desktop for use in the mobile app

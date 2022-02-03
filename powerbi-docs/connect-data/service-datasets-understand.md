@@ -21,7 +21,7 @@ Power BI datasets represent a source of data ready for reporting and visualizati
 - Connecting to an existing data model that isn't hosted in a Power BI capacity
 - Uploading a Power BI Desktop file that contains a model
 - Uploading an Excel workbook (containing one or more Excel tables and/or a workbook data model), or uploading a  CSV (comma-separated values) file
-- Using the Power BI service to create a [push dataset](../developer/automation/walkthrough-push-data.md)
+- Using the Power BI service to create a [push dataset](/rest/api/power-bi/)
 - Using the Power BI service to create a [streaming or hybrid streaming dataset](service-real-time-streaming.md)
 
 Except for streaming datasets, the dataset represents a data model, which leverages the mature modeling technologies of [Analysis Services](/analysis-services/analysis-services-overview).
@@ -70,6 +70,8 @@ Here is a summary of important facts about Power BI datasets that represent mode
 To successfully deploy and manage Power BI, it's important to understand where models are hosted, their storage mode, any dependencies on gateways, size of imported data, and refresh type and frequency. These configurations can all have a significant impact on Power BI capacity resources. In addition, the model design itself, including its data preparation queries, relationships, and calculations, all add to the mix of considerations.
 
 It's also important to understand that Power BI-hosted Import models can refresh according to a schedule, or be triggered on-demand by a user in the Power BI service.
+
+In scenarios where the dataset owner might have left the organization and one needs to take over the ownership, use the ["Datasets - Take Over In Group"](/rest/api/power-bi/datasets/take-over-in-group) API.
 
 ## Next steps
 

@@ -4,9 +4,9 @@ description: Nine tips to sort and distribute data plots in Power BI report visu
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: BnhA4qa-9Jk
+ms.custom: video-BnhA4qa-9Jk
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 03/25/2020
 ---
@@ -16,6 +16,9 @@ ms.date: 03/25/2020
 This article targets you as a report author designing Power BI reports, when using data plot visuals.
 
 Watch the video demonstrating the top nine tips to sort and distribute data plots in Power BI reports.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.youtube.com/embed/BnhA4qa-9Jk]
 

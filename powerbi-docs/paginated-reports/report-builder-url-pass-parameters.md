@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 05/01/2020
+ms.date: 08/22/2021
 ---
 
 # Pass a report parameter in a URL for a paginated report in Power BI 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-mobile](../includes/yes-mobile.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 You can pass report parameters to a report by including them in a paginated report URL. All query parameters can have corresponding report parameters. Therefore, you pass a query parameter to a report by passing the corresponding report parameter. You need to prefix the parameter name with `rp:` for Power BI to recognize it in the URL. 
 
@@ -26,6 +26,12 @@ Report parameters are case-sensitive and use these special characters:
 - A semicolon in any portion of the string is replaced with the characters `%3A`.
 
 Browsers should automatically perform the proper URL encoding. You don't have to encode any of the characters manually. 
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+
+## Parameter examples
 
 To set a report parameter within a URL, use the following syntax: 
 
@@ -62,7 +68,7 @@ To pass a Boolean value, use 0 for false and 1 for true. To pass a Float value, 
 > [!NOTE]
 > If your report contains a report parameter that has a default value, and the value of the **Prompt** property is **false** (that is, the **Prompt User** property isn't selected in Report Manager), then you can't pass a value for that report parameter within a URL. This provides administrators the option of preventing end users from adding or modifying the values of certain report parameters.
 > 
-> Power BI does not support a query string of more than 2,000 characters.  This value can be exceeded if you are using url parameters to view your paginated report.  It is especially true if you are using multi-value parameters.
+> Power BI doesn't support a query string of more than 2,000 characters.  You may inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values.  To properly load the report, reduce the number of characters to under 2,000.
 
 ## Additional examples 
 

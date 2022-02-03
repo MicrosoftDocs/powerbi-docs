@@ -5,9 +5,9 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/16/2020
+ms.date: 05/20/2021
 ---
 
 # Image use guidance for paginated reports
@@ -17,7 +17,7 @@ This article targets you as a report author designing Power BI [paginated report
 Images can be stored in three different locations:
 
 - Within the report (embedded)
-- On a web server
+- On a web server (external)
 - In a database, which can be retrieved by a dataset
 
 They can then be used in a variety of scenarios in your report layouts:
@@ -34,9 +34,9 @@ They can then be used in a variety of scenarios in your report layouts:
 
 Consider the following suggestions to deliver professional report layouts, ease of maintenance, and optimized report performance:
 
-- **Use smallest possible size**: We recommend you prepare images that are small in size, yet still look sharp, and crisp. It's all about a balance between quality and size. Consider using a graphics editor (like MS Paint) to reduce the image file size.
+- **Use smallest possible size**: We recommend you prepare images that are small in size, yet still look sharp, and crisp. It's all about a balance between quality and size. Consider using a graphics editor (like MS Paint) to reduce the image file size. 
 - **Avoid embedded images**: First, embedded images can bloat the report file size, which can contribute to slower report rendering. Second, embedded images can quickly become a maintenance nightmare if you need to update many report images (as might be the case should your company logo change).
-- **Use web server storage**: Storing images on a web server is a good option, especially for the company logo, which may be sourced from the company website. However, take care if your report users will access reports outside your network. In this case, be sure that the images are available over the Internet.
+- **Use web server storage**: Storing images on a web server is a good option, especially for the company logo, which may be sourced from the company website. However, take care if your report users will access reports outside your network. In this case, be sure that the images are available over the Internet. Images stored on a web server must not exceed 4 MB in size or they will not load in the Power BI service.
 
     When images relate to your data (like pictures of your salespeople), name image files so a report expression can dynamically produce the image URL path. For example, you could name the salespeople pictures using each salesperson's employee number. Providing the report dataset retrieves the employee number, you can write an expression to produce the full image URL path.
 - **Use database storage**: When a relational database stores image data, it makes sense to source the image data directly from the database tables—especially when the images are not too large.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/21/2020
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Get webpage data by providing examples
@@ -22,7 +22,7 @@ Prices in graphics are for example purposes only.
 
 ## Using Get Data from Web by example
 
-Select **Get Data** from the **Home** ribbon menu. In the dialog box that appears, select **Other** from the categories in the left pane, and then select **Web**. Select **Connect** to continue.
+Select **Get data** from the **Home** ribbon menu. In the dialog box that appears, select **Other** from the categories in the left pane, and then select **Web**. Select **Connect** to continue.
 
 ![select Web from Get Data](media/desktop-connect-to-web-by-example/web-by-example_03.png)
 

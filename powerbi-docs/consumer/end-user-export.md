@@ -1,5 +1,5 @@
 ---
-title: Export data from a Power BI visual
+title: Export data from a Power BI visual to Excel
 description: Export data from a report visual and dashboard visual and view it in Excel.
 author: mihart
 ms.author: mihart
@@ -8,25 +8,28 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/31/2021
+ms.date: 12/13/2021
 LocalizationGroup: Consumers
 ---
-# Export data from a visual
+# Tutorial: export data from a visual to Excel
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 
-To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. This article shows you how to export to Excel.
+To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. This article shows you how to export to Excel. Data can be exported to Excel from a Power BI dashboard tile and from a report visual. 
 
-Exporting data to Excel requires a Power BI Pro license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md). 
+Exporting data to Excel requires a Power BI paid license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md). 
 
 > [!IMPORTANT]
 > If you are unable to export to Excel, it's possible that the report author or your Power BI administrator has disabled this feature. This is often done to protect private data.
 
+## Requirements
+- Power BI license, free or paid.
+- Sales and Marketing sample. If you have a paid license, you can [download this app from AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample). If you have a free license, you can [open the Sales and marketing sample](../create-reports/sample-sales-and-marketing.md) from Power BI using **Get data**. Depending on which source you use, your visuals may or may not exactly match what you see in this tutorial. 
 
 ## Export data from a visual on a dashboard
 
-1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample).
+1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Sales and marketing sample*** app. 
 
     ![App dashboard](media/end-user-export/power-bi-dashboard.png)
 
@@ -42,11 +45,12 @@ Exporting data to Excel requires a Power BI Pro license, or for the dashboard or
 
 5. Open the file in Excel. 
 
-    > [!NOTE]
-    > If you don't have permissions to the data, you won't be able to export or open in Excel. Contact the dashboard owner or your Power BI administrator to request export permissions. 
-
     ![Total Units YTD in Excel](media/end-user-export/power-bi-excel.png)
 
+
+    > [!NOTE]
+    > If you don't have permissions to the data, you won't be able to export or open in Excel. Contact the dashboard owner or your Power BI administrator to request export permissions. To find the owner, select the dropdown next to the report title. 
+    > ![Dashboard displaying contact information.](media/end-user-export/power-bi-contact.png)
 
 ## Export data from a visual in a report
 You can export data from a visual in a report as .csv or .xlsx (Excel) format. 
@@ -73,7 +77,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     **Underlying data**: select this option if you want to export data for what you see in the visual **plus** additional data from the underlying dataset.  This may include data that is contained in the dataset but not used in the visual. If the visual has filters applied, then the data you export will also be filtered.  If your visual has aggregates (sum, average, etc.), the export will remove the aggregation; essentially flattening the data. 
 
-    ![Menu where you choose underlying or summarized](media/end-user-export/power-bi-export-underlying.png)
+    :::image type="content" source="media/end-user-export/power-bi-export-underlying-data.png" alt-text="Menu where you choose underlying or summarized":::
 
 5. What happens next depends on which browser you're using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. If you're using the Power BI app in Microsoft Teams, your exported file is saved in your local Downloads folder. 
 

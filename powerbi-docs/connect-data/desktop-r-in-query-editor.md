@@ -4,11 +4,11 @@ description: Use R in Power BI Desktop Power Query Editor for advanced analytics
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/28/2020
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
@@ -45,7 +45,7 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
 1. [Download the EuStockMarkets_NA.csv file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
-1. Load the file into Power BI Desktop. From the **Home** tab, select **Get Data** > **Text/CSV**.
+1. Load the file into Power BI Desktop. From the **Home** tab, select **Get data** > **Text/CSV**.
 
    ![Select Text/CSV](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
@@ -57,9 +57,9 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
    ![Data in Fields pane](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-1. To open Power Query Editor, from the **Home** ribbon select **Edit Queries**.
+1. To open Power Query Editor, from the **Home** ribbon select **Transform data**.
 
-   ![Select Edit Queries](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![Select Transform data](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
 1. From the **Transform** tab, select **Run R script**. The **Run R script** editor appears. Rows 15 and 20 have missing data, as do other rows you can't see in the image. The following steps show how R completes those rows for you.
 
@@ -107,11 +107,11 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 
 After you've uploaded the .pbix file to the Power BI service, you need to take additional steps to enable service data refresh and updated visuals:  
 
-* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about personal gateways.
+* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
 
-* **Install a personal gateway**: You need a personal gateway installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [Use personal gateways in Power BI](service-gateway-personal-mode.md).
+* **Install a gateway**: You need an on-premises data gateway (personal mode) installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [use personal gateways in Power BI](service-gateway-personal-mode.md).
 
-## Limitations
+## Considerations and limitations
 
 There are some limitations to queries that include R scripts created in Power Query Editor:
 
@@ -125,7 +125,7 @@ There are some limitations to queries that include R scripts created in Power Qu
 
    ![Data source settings dialog box](media/desktop-r-in-query-editor/r-in-query-editor_10.png)  
   
-* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install a personal gateway on the computer containing the workbook and R. 
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. 
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 

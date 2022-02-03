@@ -5,9 +5,9 @@ author: otarb
 ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 04/03/2020
+ms.date: 05/14/2021
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals by using Python
@@ -89,7 +89,7 @@ The [Run Python scripts in Power BI Desktop](desktop-python-scripts.md) article 
 
    To get a larger view of the visualizations, you can minimize the **Python script editor**.
 
-Ok, let's create some visuals.
+Now let's create some visuals.
 
 ## Create a scatter plot
 
@@ -101,7 +101,7 @@ Let's create a scatter plot to see if there's a correlation between age and weig
    import matplotlib.pyplot as plt 
    dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
    plt.show() 
-   ```  
+   ```
 
    Your Python script editor pane should now look like this:
 
@@ -115,10 +115,10 @@ Let's create a scatter plot to see if there's a correlation between age and weig
 
 ## Create a line plot with multiple columns
 
- Let's create a line plot for each person showing their number of children and pets. Remove or comment the code under **Paste or type your script code here** and enter this Python code:
+Let's create a line plot for each person showing their number of children and pets. Remove or comment the code under **Paste or type your script code here** and enter this Python code:
 
- ```python
- import matplotlib.pyplot as plt 
+```python
+import matplotlib.pyplot as plt 
 ax = plt.gca() 
 dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
 dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
@@ -165,6 +165,7 @@ This tutorial is designed to help you get started creating visuals with Python i
 Python visuals in Power BI Desktop have a few limitations:
 
 - Data size limitations. Data used by the Python visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB. 
+- If the input dataset of a Python Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
 - Resolution. All Python visuals are displayed at 72 DPI.
 - Calculation time limitation. If a Python visual calculation exceeds five minutes the execution times out which results in an error.
 - Relationships. As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.

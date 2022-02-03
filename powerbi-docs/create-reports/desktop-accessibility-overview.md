@@ -21,7 +21,7 @@ This article provides an overview of Power BI and accessibility. Additional arti
 
 ## Universal design
 
-Universal design is the design of products that are usable by as many people as reasonable possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who may have hearing, motor, cognitive, or visual impairments. It can help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
+Universal design is the design of products that are usable by as many people as reasonably possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who may have hearing, motor, cognitive, or visual impairments. It can help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
 
 ## Accessibility standards
 

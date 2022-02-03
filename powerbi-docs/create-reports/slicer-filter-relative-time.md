@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 10/19/2020
 LocalizationGroup: Create reports
 ---
 
@@ -80,9 +80,9 @@ When a filter is applied to the page or report level, all visuals on that page o
 - Relative time filtering using the Q&A visual isn't relative to this anchor time, until you convert the Q&A visual to a standard visual. However, the other AI visuals, such as key influencers and the decomposition tree, are synchronized with the anchor time. 
 - Additionally, relative date filters or slicers aren't relative to the anchor time, unless in the presence of relative time filters. If a relative date and a relative time filter are on the same page, the relative date filter respects the anchor time.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations currently apply to the relative time slicer and filter.
+The following considerations and limitations currently apply to the relative time slicer and filter.
 
 - **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the UTC time zone, you both must account for the time offset you’ll experience. Use the Query Editor to convert data captured in a local time zone to UTC.
 - This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.

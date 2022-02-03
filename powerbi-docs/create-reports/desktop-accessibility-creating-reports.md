@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/30/2019
+ms.date: 03/26/2021
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
@@ -55,7 +55,7 @@ As a report consumer navigates around a report, focus shows up to indicate where
 
 ![Focus for accessibility navigation](media/desktop-accessibility/accessibility-creating-reports-01.png)
 
-To access the most frequently used keyboard shortcuts, you can press *?* to display a keyboard shortcut dialog. To learn more, see these articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
+To access the most frequently used keyboard shortcuts, you can press ? to display a keyboard shortcut dialog. To learn more, see these articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
 
 
 ### Screen reader compatibility
@@ -68,12 +68,12 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **V > High contrast** colors and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
 
 ![Screenshot shows how to select a theme of high contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### Focus mode
-If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by navigating to the context menu of the visual and selecting **Open in focus mode**.
+If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by selecting the **Focus mode** icon in the context menu of the visual.
 
 ![Focus mode](media/desktop-accessibility/accessibility-creating-reports-03.png)
 
@@ -104,6 +104,9 @@ Alt text should include information about the insight that you'd like the report
 
 Keep in mind that calling out an insight or specific data points may not be the best thing to put in static alt text, because data in Power BI is dynamic. If you'd like to use dynamic alt text, see the next section that describes conditional formatting for alt text.
 
+> [!NOTE]
+> When you export a report to PowerPoint, PowerPoint adds alt text for each item on the page. If you don't specify alt text for each item, the default alt text in PowerPoint is "No alt text provided."
+
 ### Conditional formatting for alt text
 
 One feature that makes Power BI so compelling is that its data is dynamic. You can use DAX measures and conditional formatting to create dynamic alt text. Screen readers are then able to call out values specific to the data that a report consumer is viewing.
@@ -113,9 +116,9 @@ One feature that makes Power BI so compelling is that its data is dynamic. You c
 ### Tab order
 Setting the tab order helps keyboard users navigate your report in an order that matches the way users visually process the report visuals. If you're including decorative shapes and images in your report, you should remove those from the tab order. 
 
-To set the tab order, select the **View** tab in the ribbon and select the **Selection Pane** button to display the Selection pane.
+To set the tab order, select the **View** tab in the ribbon and under **Show panes**, select **Selection** to display the **Selection** pane.
 
-![View menu to show Selection Pane](media/desktop-accessibility/accessibility-creating-reports-08.png)
+![View menu to show Selection pane](media/desktop-accessibility/accessibility-creating-reports-08.png)
 
 In the **Selection pane**, selecting **Tab order** displays the current tab order for your report. You can select an object, then use the up and down arrow buttons to move the object in the hierarchy, or you can select an object with your mouse and drag it into the position you'd like it the list. Clicking on the number next to an object hides the object from the tab order.
 
@@ -156,7 +159,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Be thoughtful about applying data labels](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://pluginsaddonsextensions.com/google-chrome/the-squint-test-chrome-extension_86008).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 
 ### Themes, contrast and colorblind-friendly colors

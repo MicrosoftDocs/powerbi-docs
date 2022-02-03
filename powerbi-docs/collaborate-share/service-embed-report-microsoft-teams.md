@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 09/21/2020
+ms.date: 04/29/2021
 ---
 
 # Embed Power BI content in Microsoft Teams
@@ -21,7 +21,7 @@ You can easily embed interactive Power BI reports in Microsoft Teams channels an
 To use the **Power BI** tab in Microsoft Teams, ensure these elements:
 
 - Microsoft Teams has the **Power BI** tab.
-- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-roles-new-workspaces.md).
 - To see the report in the **Power BI** tab in Microsoft Teams, users must have permission to view the report.
 - Users must be Microsoft Teams users with access to channels and chats.
 
@@ -72,7 +72,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - In Microsoft Teams, when you export data from a visual in a Power BI report, it's automatically saved to your Downloads folder. It's an Excel file called "data (*n*).xlsx" where *n* is the number of times you've exported data to the same folder.
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
-- In national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
+- In national clouds, the **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 

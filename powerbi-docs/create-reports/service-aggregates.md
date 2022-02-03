@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/16/2020
-ms.custom: seodec18
+ms.date: 09/09/2021
+ms.custom: ''
 LocalizationGroup: Reports
 ---
 

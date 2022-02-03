@@ -5,9 +5,10 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/03/2020
+ms.date: 09/07/2021
+ms.custom: intro-migration
 ---
 
 # Migrate SQL Server Reporting Services reports to Power BI
@@ -55,7 +56,7 @@ We recommend you use the [RDL Migration Tool](https://github.com/microsoft/RdlMi
 
 The tool automates the following tasks:
 
-* Checks for [unsupported data sources](../paginated-reports/paginated-reports-data-sources.md) and [unsupported report features](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
+* Checks for [unsupported data sources](../paginated-reports/paginated-reports-data-sources.md) and [unsupported report features](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-)
 * Converts any _shared_ resources to _embedded_ resources:
   * Shared **data sources** become embedded data sources
   * Shared **datasets** become embedded datasets
@@ -97,7 +98,7 @@ The following SSRS item types, however, can't be migrated to Power BI:
 
 <sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets—providing they're using supported data sources.
 
-If your RDL reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
+If your RDL reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
 
 If your RDL reports need to retrieve data from _on-premises data sources_, they cannot use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
 
@@ -109,7 +110,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 
 1. Ensure the [Paginated Reports workload](../admin/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
-1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces and workspace roles](../collaborate-share/service-new-workspaces.md).
+1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI new workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your SSRS shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
@@ -134,8 +135,8 @@ Anyone with permission to access to the SSRS instance and the Power BI workspace
 1. Open each report in Power BI Report Builder, and then:
    1. Verify all data sources and datasets are embedded in the report definition, and that they're [supported data sources](../paginated-reports/paginated-reports-data-sources.md).
    1. Preview the report to ensure it renders correctly.
-   1. Choose the _Save As_ option, and then select _Power BI service_.
-   1. Select the workspace that will contain the report.
+   1. Select **Publish**, then select **Power BI service**.
+   1. Select the workspace where you want to save the report.
    1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action will fail. You'll be notified of the reasons. You'll then need to revise your report design, and try saving again.
 
 ### Automated migration
@@ -151,7 +152,7 @@ You can also use the publicly available SSRS and Power BI APIs to automate the m
 
 For more information about the APIs, see:
 
-- [Power BI REST API Reference](../developer/automation/rest-api-reference.md)
+- [Power BI REST APIs](/rest/api/power-bi/)
 - [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api)
 
 ## Post-migration stage
@@ -188,9 +189,9 @@ For more information about this article, check out the following resources:
 - [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
-- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - [Online course: Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
-- [Power BI Premium FAQ](../admin/service-premium-faq.md)
+- [Power BI Premium FAQ](../admin/service-premium-faq.yml)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

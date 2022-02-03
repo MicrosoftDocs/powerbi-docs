@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 10/19/2021
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-many relationships in Power BI Desktop
@@ -76,7 +76,7 @@ Before the July 2018 release of Power BI Desktop, you couldn't create a direct r
 
 * Create a third table that contains only the unique State IDs. The table could be any or all of:
   * A calculated table (defined by using Data Analysis Expressions [DAX]).
-  * A table based on a query that's defined in Query Editor, which could display the unique IDs drawn from one of the tables.
+  * A table based on a query that's defined in Power Query Editor, which could display the unique IDs drawn from one of the tables.
   * The combined full set.
 
 * Then relate the two original tables to that new table by using common *Many-1* relationships.
@@ -104,7 +104,7 @@ As you can see, TX&mdash;with **Sales** data but unknown *Population* data&mdash
 
 ## Use a relationship with a many-many cardinality instead of the workaround
 
-With the July 2018 version of Power BI Desktop, you can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you may still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
+You can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you may still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
 
 In Power BI Desktop, the cardinality defaults to *many-to-many* when it determines neither table contains unique values for the relationship columns. In such cases, a warning message confirms you want to set a relationship, and the change isn't the unintended effect of a data issue.
 
@@ -130,7 +130,7 @@ The major differences between *relationships with a many-many cardinality* and t
 
 With the preceding differences in mind, make sure the calculations that use `ALL(<Table>)`, such as *% of grand total*, are returning the intended results.
 
-## Limitations and considerations
+## Considerations and limitations
 
 There are a few limitations for this release of *relationships with a many-many cardinality* and composite models.
 

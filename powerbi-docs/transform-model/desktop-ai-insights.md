@@ -5,28 +5,18 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-transform-model
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/10/2020
+ms.date: 08/13/2021
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
 
-In Power BI, you can use AI Insights to gain access to a collection of pre-trained machine learning models that enhance your data preparation efforts. AI Insights is accessed in the **Power Query editor**, and its associated features and functions are accessed through the **Home** and **Add Column** tabs in **Power Query editor**. 
+In Power BI, you can use AI Insights to gain access to a collection of pre-trained machine learning models that enhance your data preparation efforts. AI Insights is accessed in the **Power Query Editor**, and its associated features and functions are accessed through the **Home** and **Add Column** tabs in **Power Query Editor**.
 
 ![AI Insights location in the ribbon](media/desktop-ai-insights/ai-insights-00.png)
 
 This article describes functions for Text Analytics and Vision functions, both from Azure Cognitive Services. Also in this article is a section that describes the custom functions available in Power BI from Azure Machine Learning.
-
-## How to enable AI Insights
-
-AI insights was made generally available in the June 2020 release of Power BI Desktop. For earlier versions of Power BI Desktop, AI insights in Power BI must be enabled by selecting **File > Options and settings > Options**, then **Preview features** from the left column. In the right pane is an **AI Insights function browser** selection. Check the box beside **AI Insights function browser** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
-
-> [!NOTE]
-> AI insights is generally available for all versions of Power BI Desktop beginning with June 2020 release, and for those versions, does not need to be enabled as a preview feature.
-
-![AI Insights option for Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
-
 
 ## Using Text Analytics and Vision
 
@@ -47,7 +37,7 @@ The transformations are executed on the Power BI service and do not require an A
 
 ### Enabling Text Analytics and Vision on Premium capacities
 
-Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run Cognitive Services. During public preview of these features (prior to June 2019), this workload was disabled by default. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ### Available functions
 
@@ -81,13 +71,13 @@ The **Tag Images** function returns tags based on more than two thousand recogni
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging is not limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
-This function requires an image URL or a base-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [supported languages](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+This function requires an image URL or a base-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [supported languages](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision.tagimage#azure-java-stable).
 
 ### Invoking Text Analytics or Vision functions in Power Query
 
-To enrich your data with Text Analytics or Vision functions, open **Power Query editor**. This example walks through scoring the sentiment of a text. The same steps can be used to extract key phrases, detect language, and tag images.
+To enrich your data with Text Analytics or Vision functions, open **Power Query Editor**. This example walks through scoring the sentiment of a text. The same steps can be used to extract key phrases, detect language, and tag images.
 
-Select the **Text analytics** button in the **Home** or **Add column** ribbon. You'll be prompted to sign in.
+Select the **Text analytics** button in the **Home** or **Add Column** ribbon. You'll be prompted to sign in.
 
 ![Text analytics](media/desktop-ai-insights/ai-insights-02.png)
 
@@ -114,7 +104,7 @@ In the cases of image tagging and key phrase extraction, the results can return 
 
 ### Publishing a report with Text Analytics or Vision functions
 
-While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query editor. After publishing the report to Power BI, it uses the Premium capacity of the workspace into which it was published.
+While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After publishing the report to Power BI, it uses the Premium capacity of the workspace into which it was published.
 
 Reports with applied Text Analytics and Vision functions should be published to a workspace that is not on a Premium capacity, otherwise refreshing the dataset will fail.
 
@@ -148,7 +138,7 @@ There are a few considerations and limitations to keep in mind when using Text A
 
 Numerous organizations use **Machine Learning** models for better insights and predictions about their business. The ability to visualize and invoke insights from these models, in your reports and dashboards and other analytics, can help disseminate these insights to the business users who need it the most. Power BI makes it simple to incorporate the insights from models hosted on Azure Machine Learning, using straightforward point-and-click gestures.
 
-To use this capability, a data scientist can simply grant access to the Azure ML model to the BI analyst using the Azure portal. Then, at the start of each session, Power Query discovers all the Azure ML models to which the user has access and exposes them as dynamic Power Query functions. The user can then invoke those functions by accessing them from the ribbon in Power Query editor, or by invoking the M function directly. Power BI also automatically batches the access requests when invoking the Azure ML model for a set of rows to achieve better performance.
+To use this capability, a data scientist can simply grant access to the Azure ML model to the BI analyst using the Azure portal. Then, at the start of each session, Power Query discovers all the Azure ML models to which the user has access and exposes them as dynamic Power Query functions. The user can then invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. Power BI also automatically batches the access requests when invoking the Azure ML model for a set of rows to achieve better performance.
 
 This functionality is supported in Power BI Desktop, Power BI dataflows, and for Power Query Online in the Power BI service.
 
@@ -156,15 +146,12 @@ To learn more about dataflows, see [Self-service data prep in Power BI](./datafl
 
 To learn more about Azure Machine Learning, see the following articles:
 
-- Overview: [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Overview: [What is Azure Machine Learning?](/azure/machine-learning/overview-what-is-azure-machine-learning)
 - Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 ### Granting access to an Azure ML model
 
-To access an Azure ML model from Power BI, the user must have **Read** access to the Azure subscription. In addition, they must have the following:
-
-- For Machine Learning Studio (classic) models, **Read** access to Machine Learning Studio (classic) web service
-- For Machine Learning models, **Read** access to the Machine Learning workspace
+To access an Azure ML model from Power BI, the user must have **Read** access to the Azure subscription. In addition, they must also have **Read** access to the Machine Learning workspace.
 
 The steps in this section describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function. For further details, please see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
@@ -174,11 +161,11 @@ The steps in this section describe how to grant a Power BI user access to a mode
 4. Select **Access control (IAM)**, and then select the **Add** button.
 5. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure ML model.
 6. Select **Save**
-7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning Studio (classic) web service, *or* the Machine Learning workspace hosting the model.
+7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning workspace hosting the model.
 
 ### Schema discovery for Machine Learning models
 
-Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. Unlike the Machine Learning Studio (classic), which helps automate the task of creating a schema file for the model, in the case of Machine Learning, the data scientist must explicitly generate the schema file using Python.
+Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. The data scientist must explicitly generate the schema file using Python.
 
 This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation.
 
@@ -191,7 +178,7 @@ These instructions for schema generation by updating the entry script must also 
 > 
 ### Invoking an Azure ML model in Power Query
 
-You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor. To access the Azure ML models, select **Azure Machine Learning** button in the **Home** or **Add Column** ribbon in the Power Query editor.
+You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor. To access the Azure ML models, select **Azure Machine Learning** button in the **Home** or **Add Column** ribbon in the Power Query Editor.
 
 ![Screenshot shows the Azure Machine Learning button in the Power Query Editor.](media/desktop-ai-insights/ai-insights-06.png)
 
