@@ -1,6 +1,6 @@
 ---
-title: Power BI visual interactions
-description: The article describes the interaction between the Power BI user, visual, and host.
+title: Power BI visual system integration
+description: This article describes the interaction between the Power BI user, visual, and host.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
@@ -63,10 +63,10 @@ The user can interact with Power BI to update a visual in the following ways:
 
 * A user selects a bookmark in the bookmarks panel of the report.
 
-    When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
+  When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
 
-    * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
-    * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
+  * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
+  * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
 
     In either case, the visual must change its state according to the received selections or `filter` object.
 
@@ -84,7 +84,7 @@ The user can also interact directly with the visual to update it as follows:
 
 * A user changes visual properties (For example, by expanding a tree) and the visual saves the new state in the visual properties.
 
-    A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
+    A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `persistProperties` method.
 
 * A user selects a URL.
 
