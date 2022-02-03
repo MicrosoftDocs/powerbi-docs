@@ -32,6 +32,8 @@ The Gen2 metrics app has six pages:
 
 * [Timepoint](#timepoint)
 
+* [Artifact Detail](#artifact-detail)
+
 * [Release Notes](#release-notes)
 
 * [Help](#help)
@@ -366,6 +368,16 @@ A table showing every background operation that contributed CPU usage to the tim
 * **Total CPU** -  The total number of CPU seconds used by the background operation. A small portion of this metric contributes to determine if the capacity exceeds the total number of CPU seconds for the current timepoint window.
 
 * **Timepoint CPU** - This metric is the *total CPU* metric divided by 2,880, and is used to determine how much CPU the background operation contributes to this timepoint.  
+
+## Artifact Detail
+
+This page provides useful information about a specific Power BI item.
+
+>[!IMPORTANT]
+>You can only get to this page by using the drill through feature in one of the visuals that displays individual items.
+
+>[NOTE!]
+>Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred, such as 
 
 ### Release notes
 
