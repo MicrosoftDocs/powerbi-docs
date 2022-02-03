@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 02/03/2022
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -35,7 +35,27 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 > * The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
 > * This feature is available on all Power BI clusters except WABI-INDIA-CENTRAL-A-PRIMARY
 
+### Enable the enhanced compute engine
+
+# [Premium Gen2](#tab/gen2)
+
+Premium Gen2 has three settings for the dataflows enhanced compute engine:
+
+* **Disabled**
+
+* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when the dataflow is connected to another dataflow.
+
+* **On**
+
+To change the default setting, do the following:
+
+1. In your workspace select **More options**
+
+# [Premium Gen1](#tab/gen1)
+
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
+
+---
 
 ### Using the enhanced compute engine
 
@@ -151,13 +171,29 @@ Do not set a dataflow to incremental refresh in the following situations:
 * Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
 
 ## Next steps
+
 The following articles provide more information about dataflows and Power BI:
 
-* [Dataflows best practices](dataflows-best-practices.md)
-* [Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)
-* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
-* [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows considerations and limitations](dataflows-features-limitations.md)
+> [!div class="nextstepaction"]
+> [Dataflows best practices](dataflows-best-practices.md)
+
+> [!div class="nextstepaction"]
+> [Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)
+
+> [!div class="nextstepaction"]
+> [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
+
+> [!div class="nextstepaction"]
+> [Creating a dataflow](dataflows-create.md)
+
+> [!div class="nextstepaction"]
+> [Configure and consume a dataflow](dataflows-configure-consume.md)
+
+> [!div class="nextstepaction"]
+> [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
+
+> [!div class="nextstepaction"]
+> [AI with dataflows](dataflows-machine-learning-integration.md)
+
+> [!div class="nextstepaction"]
+> [Dataflows considerations and limitations](dataflows-features-limitations.md)
