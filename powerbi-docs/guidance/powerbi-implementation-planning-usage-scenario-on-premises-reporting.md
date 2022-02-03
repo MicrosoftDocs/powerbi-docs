@@ -1,6 +1,6 @@
 ---
 title: "Power BI usage scenarios: On-premises reporting"
-description: "Learn how Power BI on-premises reporting is delivered with a customer-managed report portal."
+description: "Learn how Power BI on-premises reporting is about customer-managed reporting."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
@@ -16,13 +16,13 @@ ms.date: 01/31/2022
 
 The *on-premises reporting* scenario is one of several *hybrid and custom scenarios* for deploying Power BI solutions without using the Power BI service. A list of all scenarios can be found in the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
 
-[Power BI Report Server](../report-server/get-started.md) is an on-premises alternative for publishing, sharing, and consuming business intelligence content within your organizational network. It's useful when you need an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform may be necessary for regulatory, legal, or intellectual property reasons.
+[Power BI Report Server](../report-server/get-started.md) is an on-premises portal for publishing, sharing, and consuming business intelligence content within your organizational network. It's useful when you need an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform may be necessary for regulatory, legal, or intellectual property reasons.
 
 ## Scenario diagram
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support on-premises reporting. The focus is on using Power BI Report Server, which runs on a Windows server within the organizational network.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting.png" alt-text="Image shows a diagram of on-premises reporting, which is about customer-managed reporting. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting.png" alt-text="Image shows a diagram of on-premises reporting, which is about delivering a customer-managed portal. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 
@@ -55,7 +55,7 @@ Content creators use a specific tool named [Power BI Desktop for Report Server](
 
 ### Report consumer experience
 
-The report consumer experience for Power BI Report Server is very different from the Power BI service. The Power BI Report Server portal is a web portal for viewing, storing, and managing content. Content files (.pbix, .rdl, or .xlsx) are published to folders. For more information, see [Manage content in the web portal](../report-server/getting-around.md).
+The report consumer experience for Power BI Report Server is very different from the Power BI service. The Power BI Report Server is a web portal for viewing, storing, and managing content. Content files (.pbix, .rdl, or .xlsx) are published to folders. For more information, see [Manage content in the web portal](../report-server/getting-around.md).
 
 ### Power BI Report Server
 
