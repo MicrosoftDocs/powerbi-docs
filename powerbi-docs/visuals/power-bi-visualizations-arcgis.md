@@ -439,6 +439,6 @@ The following table compares the standard features available to all Power BI use
 - [Interacting with an ArcGIS map that has been shared with you](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm)
 - [Blog posts announcing ArcGIS for Power BI](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI) updates
 - [Community post about ArcGIS visual](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947)
-- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/arcgis/products/arcgis-for-power-bi/overview)
+- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/overview)
 - [Esri's ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 - [ESRI's Community site for Power BI](https://geonet.esri.com/groups/powerbi)

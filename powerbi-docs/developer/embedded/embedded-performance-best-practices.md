@@ -60,7 +60,7 @@ When embedding multiple visuals into a single iFrame, consider the following:
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
+* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
 
   * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into non-contiguous iFrames. Dashboard tiles are lighter than reports and load faster.
   * Embed the entire dashboard into one iFrame. This allows you to have visuals from different reports or datasets in one iFrame without creating a new report.
