@@ -143,7 +143,7 @@ You can also distribute your visuals evenly across the report canvas, either ver
 
 For example, if you select three visuals and choose the **Distribute vertically** option, the visuals then distribute evenly on the report canvas.
 
-:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-desktop-visuals-distributed-vertically.png.png" alt-text="Screenshot of the report canvas, showing three visuals distributed using the 'Distribute vertically' option.":::
+:::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-desktop-visuals-distributed-vertically.png" alt-text="Screenshot of the report canvas, showing three visuals distributed using the 'Distribute vertically' option.":::
 
 With a few selections from these gridlines, alignment, and distribution tools, your reports will look just how you want them to.
 
