@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 02/07/2022
 ---
 
 # Power BI usage scenarios: Managed self-service BI
@@ -36,11 +36,11 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 1.](media/common/icon-01-red-30x30.png) | Dataset creators develop models using Power BI Desktop. For datasets that are intended for reuse, it's common (but not required) for creators to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it will be used as a data source by many self-service report creators. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creators publish their Power BI Desktop file (.pbix) that contains only a model to the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](/collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between artifacts. |
+| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creators publish their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](/collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between artifacts, including reports connected to the dataset. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | [Dataset discovery in the datasets hub](../connect-data/service-datasets-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the datasets hub by other Power BI content creators who are looking for data. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators use the datasets hub in the Power BI service to search for discoverable datasets. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | If report creators don't have permission, they can request [Build](/connect-data/service-datasets-build-permissions.md) permission on the dataset. This starts a workflow to request Build permission from an authorized approver. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | If report creators don't have permission, they can request [Build permission](/connect-data/service-datasets-build-permissions.md) on the dataset. This starts a workflow to request Build permission from an authorized approver. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Report creators create new reports using Power BI Desktop. Reports use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to a shared dataset. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Report creators develop reports in Power BI Desktop. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | When ready, report creators publish their Power BI Desktop file to the Power BI service. |
@@ -56,24 +56,24 @@ The following are some key points to emphasize about the managed self-service BI
 
 ### Shared dataset
 
-The key aspect of making *managed self-service* BI work is to minimize the number of datasets. This scenario depicts a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that contributes towards achieving a *single version of the truth*.
+The key aspect of making *managed self-service BI* work is to minimize the number of datasets. This scenario is about [shared datasets](../connect-data/service-datasets-across-workspaces.md) that help achieve a *single version of the truth*.
 
 > [!NOTE]
-> For simplicity, this scenario depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal of managed self-service BI is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
+> For simplicity, the above diagram depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal of managed self-service BI is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
 
 ### Decouple dataset and reports
 
-When the dataset is decoupled from reports, it facilitates the separation of effort and responsibility. A shared dataset is commonly maintained by a centralized team (like IT, BI, or COE), while reports are maintained by subject matter experts in the business units. However, that's not required. For example, this pattern can be followed by any content creator that wants to achieve reusability.
+When the dataset is decoupled from reports, it facilitates the separation of effort and responsibility. A shared dataset is commonly maintained by a centralized team (like IT, BI, or Center of Excellence), while reports are maintained by subject matter experts in the business units. However, that's not required. For example, this pattern can be adopted by any content creator that wants to achieve reusability.
 
 > [!NOTE]
-> For simplicity, dataflows aren't depicted in this scenario. To learn about dataflows, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
+> For simplicity, dataflows aren't depicted in the above diagram. To learn about dataflows, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
 
 ### Dataset endorsement
 
 Because shared datasets are intended for reuse, it's helpful to [endorse](../collaborate-share/service-endorse-content.md) them. A *certified* dataset conveys to report creators that the data is trustworthy and meets the organization's quality standards. A *promoted* dataset highlights that the dataset owner believes the data is valuable and worthwhile for others to use.
 
 > [!TIP]
-> It's a best practice to have a consistent, repeatable, rigorous process for use of the certified endorsement. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
+> It's a best practice to have a consistent, repeatable, rigorous process for endorsing content. Certified content should indicate that data quality has been validated. It should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
 
 ### Dataset discovery
 
@@ -88,7 +88,7 @@ A report creator may find a dataset in the [datasets hub](../connect-data/servic
 
 ### Live connection to the shared dataset
 
-A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) connects a report to an existing dataset. Live connections avoid the need to create a new data model in the report file.
+A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) connects a report to an existing dataset. Live connections avoid the need to create a new data model in the Power BI Desktop file.
 
 > [!IMPORTANT]
 > When using a live connection, all data that the report creator needs must reside within the connected dataset. However, the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) scenario describes how a dataset can be extended with additional data and calculations.
@@ -100,7 +100,7 @@ There are several advantages to publishing reports to a workspace different from
 First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific datasets. This technique allows [row-level security (RLS)](../admin/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
 
 > [!IMPORTANT]
-> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers are given Build permission to the dataset, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](../admin/service-admin-rls.md#using-rls-with-workspaces-in-power-bi).
+> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers have Build permission to the dataset, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](../admin/service-admin-rls.md#using-rls-with-workspaces-in-power-bi).
 
 ### Dependency and impact analysis
 
@@ -111,11 +111,11 @@ When a shared dataset is used by many reports, those reports can exist in many w
 Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset.
 
 > [!NOTE]
-> For managed self-service BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in [personal mode](../connect-data/service-gateway-personal-mode.md). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+> For managed self-service BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a managed self-service BI scenario, it's particularly helpful to track usage of the shared dataset. A high report-to-dataset ratio indicates good reuse of datasets.
+The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a managed self-service BI scenario, it's particularly helpful to track usage of shared datasets. A high report-to-dataset ratio indicates good reuse of datasets.
 
 ## Next steps
 

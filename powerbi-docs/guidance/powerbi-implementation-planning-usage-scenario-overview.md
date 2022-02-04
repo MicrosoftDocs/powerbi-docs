@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 02/07/2022
 ---
 
 # Power BI usage scenarios
@@ -17,7 +17,7 @@ ms.date: 01/31/2022
 The Power BI ecosystem is diverse and can be implemented in different ways. In this series of articles, common usage scenarios are provided to illustrate different ways that Power BI can be deployed and utilized by creators and consumers. Understanding how these usage scenarios are used in your organization, and by whom, can influence the implementation strategies you decide to take.
 
 > [!NOTE]
-> The most prevalent components of Power BI are identified in each scenario based on how Power BI is intended to be used for that scenario. The objective is *not* to call out every possible option for each usage scenario. Rather, each diagram depicts the primary features that are most relevant for that scenario.
+> The most prevalent components of Power BI are identified in each scenario based on how Power BI is intended to be used for that scenario. The objective is *not* to call out every possible option for each usage scenario. Rather, each scenario diagram depicts the primary features that are most relevant for that scenario.
 
 ## How to use the scenarios
 
@@ -25,16 +25,16 @@ Use the scenarios to help you with Power BI architecture planning and implementa
 
 - Initially read the scenarios in the order they're documented. Become familiar with the concepts and how the scenarios build upon each other.
 - Focus on the scenarios that align well with your [data culture](powerbi-adoption-roadmap-data-culture.md). Also consider how [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) is handled, as well as [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) when determining which usage scenarios are a good fit.
-- Consider which areas of your BI operations should be strengthened in your organization. For example, if your goal is to reduce the level of data duplication, focus on the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario. If your goal is to improve efficiency of data preparation efforts, focus on the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
+- Consider which areas of your BI operations could be strengthened in your organization. For example, if your goal is to reduce the level of data duplication, focus on the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario. If your goal is to improve efficiency of data preparation efforts, focus on the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
 - Determine if there are ways to use Power BI that will bring additional value or reduce risk for your organization. For example, if your goal is to achieve a balance between centralization and decentralization (described further in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) articles), consider the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) scenario.
 - After understanding the areas of your BI operations that you want to implement or strengthen, create a project plan that defines tactical steps to arrive at your desired future state.
 
 > [!TIP]
-> You may need to mix and match the ideas described in the usage scenarios to create a Power BI implementation strategy that fits your situation. To support the needs of users from different departments and business units, expect to draw from multiple Power BI implementation methods simultaneously. That way you'll be able to support diverse content creators and various solutions.
+> You may need to mix and match the ideas described in the usage scenarios to create a Power BI implementation strategy that fits your circumstances. To support the needs of users from different departments and business units, expect to draw from multiple Power BI implementation methods simultaneously. That way, you'll be able to support diverse content creators and various solutions.
 
 ## Content collaboration and delivery scenarios
 
-The following usage scenarios focus on *content collaboration and delivery*, which focus primarily on [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). These scenarios are inter-related. They build upon each other in a way that aligns with how business intelligence teams evolve and grow over time.
+The following usage scenarios are about *content collaboration and delivery*, which focuses primarily on [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). These scenarios are inter-related. They build upon each other in a way that aligns with how business intelligence teams evolve and grow over time.
 
 - **[Personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md):** The content creator has a lot of freedom and flexibility to create content for individual usage. This scenario describes using a personal workspace for private usage.
 - **[Team BI](powerbi-implementation-planning-usage-scenario-team-bi.md):** The primary focus is on informal collaboration among team members who work closely together on a team. This scenario describes using a workspace for both collaboration and distribution. It also showcases the value of using Microsoft Teams for collaboration between Power BI creators and consumers.
@@ -53,7 +53,7 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 - **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared datasets. This scenario describes decoupling the report creation process from the dataset creation process. To encourage report authors to find and reuse an existing shared dataset, it should be endorsed and made discoverable in the datasets hub in the Power BI service.
 - **[Customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md):** The focus is on the dataset creator customizing or extending an existing dataset to satisfy new requirements. This scenario describes publishing a customized data model where some tables are new while others are dependent on the existing shared dataset.
 - **[Self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md):** The focus is on centralizing data preparation activities to improve consistency and reduce effort. This scenario describes creating Power BI dataflows to avoid repeating data preparation Power Query logic in many different Power BI Desktop files. A dataflow can be consumed as a data source by numerous datasets.
-- **[Prototyping and data sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that is fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It is followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
+- **[Prototyping and data sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
 
     > [!NOTE]
     > Additional information about [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md), which affect self-service BI activities and decisions, are described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
@@ -63,14 +63,14 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 The following *content management and deployment* scenarios describe approaches for how content creators and owners use methodical and disciplined lifecycle management processes to reduce errors, minimize inconsistencies, and improve the user experience for consumers.
 
 - **[Self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** The focus is on ensuring that content is stable for consumers. This scenario describes using a Power BI deployment pipeline to publish content through development, test, and production workspaces. It also describes how (optionally) Premium per user license mode can be used for development and test workspaces, and Premium per capacity license mode for the production workspace.
-- **Advanced data model management (coming soon):** The focus is on using more sophisticated techniques. This scenario describes managing a data model using Tabular Editor, which is an external tool. The data model is deployed to the Power BI service using the XMLA endpoint available with Power BI Premium.
-- **Enterprise content publishing (coming soon):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. Azure DevOps coordinates and executes Power BI REST API operations to deploy content.
+- **Advanced data model management (coming soon):** The focus is on using more sophisticated modeling techniques. This scenario describes managing a data model using Tabular Editor, which is an external tool. The data model is deployed to the Power BI service using the XMLA endpoint available with Power BI Premium.
+- **Enterprise content publishing (coming soon):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, Azure DevOps coordinates and executes Power BI REST API operations to deploy content.
 
 ## Real-time scenarios
 
 *The articles for this scenario are coming soon.*
 
-*Real-time* scenarios describe different techniques to allow presenting data updates in near real-time. Monitoring data in real-time allows the organization to react faster when time-sensitive decisions are necessary.
+*Real-time* scenarios describe different techniques to allow presenting data updates in near real-time. Monitoring data in real-time allows the organization to react faster when time-sensitive decisions must be made.
 
 ## Embedding and hybrid scenarios
 
