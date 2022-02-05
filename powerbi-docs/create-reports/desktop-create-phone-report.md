@@ -48,6 +48,8 @@ You see a scrollable canvas shaped like a phone, and a **Page visuals** pane tha
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png)
 
+![Mobile layout view new](media/desktop-create-phone-report/mobile-layout-page-visuals-pane.png)
+
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Page visuals** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
 
@@ -84,6 +86,8 @@ To remove a visual from the mobile layout, click the **X** in the top-right corn
 You can remove all the visualizations from the canvas by clicking the eraser on the **Page visuals** pane.
 
 Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the **Page visuals** pane, and the original report remains unaffected.
+
+![Screenshot showing visualizations pane.](media/desktop-create-phone-report/mobile-layout-page-visualizations-pane.png)
 
 ## Configure visuals and slicers for use in mobile-optimized reports
 
