@@ -8,7 +8,7 @@ ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 10/15/2021
+ms.date: 04/02/2022
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -41,7 +41,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 25.
+The [course of 26 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 26.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -78,6 +78,7 @@ The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 - **Updates**
   - Video 25: [December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 26: [December 2022 Update](https://www.youtube.com/watch?v=tPasEyezQnc&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Attendee kit
 
