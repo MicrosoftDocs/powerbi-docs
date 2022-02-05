@@ -8,7 +8,7 @@ ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 04/02/2022
+ms.date: 02/04/2022
 ---
 
 # Power BI Paginated Reports in a Day course
