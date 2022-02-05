@@ -78,7 +78,7 @@ The [course of 26 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 - **Updates**
   - Video 25: [December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
-  - Video 26: [December 2022 Update](https://www.youtube.com/watch?v=tPasEyezQnc&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 26: [December 2021 Update](https://www.youtube.com/watch?v=tPasEyezQnc&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Attendee kit
 
