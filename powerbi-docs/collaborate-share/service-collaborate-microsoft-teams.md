@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/20/2021
+ms.date: 02/04/2022
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -30,7 +30,7 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
-- Your users have a Power BI Pro or Premium Per User (PPU) license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
+- Your users have a Power BI Pro or Premium Per User (PPU) license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) for users with a free Power BI license.
 - Users have signed in to the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
