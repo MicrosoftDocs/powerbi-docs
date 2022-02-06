@@ -66,6 +66,9 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
 Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](/azure/cost-management-billing/manage/add-change-subscription-administrator).
 
+>[!NOTE]
+>After creating the subscription and enabling Autoscale in the admin portal, a `Microsoft.PowerBIDedicated/autoScaleVCores` resource is created. Make sure that you don't have any Azure policies that prevent Power BI Premium from provisioning, updating or deleting the `Microsoft.PowerBIDedicated/autoScaleVCores` resource.
+
 The following steps show you how to enable and associated Autoscale with the resource group.
 
 1. Open the **Power BI Admin portal** and select **Capacity settings** from the left pane. Information about your Power BI Premium capacity is displayed.
@@ -91,8 +94,6 @@ The following steps show you how to enable and associated Autoscale with the res
 Here's a short video that shows how quickly you can configure Autoscale for Power BI Premium Gen2:
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2.":::
-
-After creating the subscription and enabling autoscale in the admin portal, a `Microsoft.PowerBIDedicated/autoScaleVCores` resource is created. Make sure that you don't have any Azure policies that prevent Power BI Premium from provisioning, updating or deleting the `Microsoft.PowerBIDedicated/autoScaleVCores` resource.
 
 ## Next steps
 
