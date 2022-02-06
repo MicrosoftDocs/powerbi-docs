@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/03/2022
+ms.date: 02/04/2022
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -49,7 +49,19 @@ Premium Gen2 has three settings for the dataflows enhanced compute engine:
 
 To change the default setting, do the following:
 
-1. In your workspace select **More options**
+1. In your workspace, next to the dataflow you want to change the settings for, select **More options**.
+
+2. From the dataflow's *more options* menu, select **Settings**.
+
+    :::image type="content" source="media\dataflows-premium-features\more-options-menu.png" alt-text="Screenshot of a dataflows more options menu with the settings setting highlighted.":::
+
+3. Expand the **Enhanced compute engine settings**.
+
+    :::image type="content" source="media\dataflows-premium-features\enhanced-compute-engine-settings.png" alt-text="Screenshot of a dataflows settings page with the enhanced compute engine settings setting highlighted.":::
+
+4. Select **On** and then select **Apply**.
+
+    :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
 
 # [Premium Gen1](#tab/gen1)
 
@@ -168,7 +180,7 @@ Setting incremental refresh adds parameters to the dataflow to specify the date 
 
 Do not set a dataflow to incremental refresh in the following situations:
 
-* Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
+* Linked entities should not use incremental refresh if they reference a dataflow.
 
 ## Next steps
 

@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/22/2021
+ms.date: 02/03/2022
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -93,6 +93,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
     ![Export visual with scrollbars.](media/end-user-pdf/export-to-pdf-03.png)
 
+* Visuals in a drill down state are exported in their default state. 
 * The feature does *not* export any wallpaper you may have applied to the report. Since wallpaper is not exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, to have it stand out against your dark wallpaper, it will be difficult to read or unreadable in the export to PDF process since the wallpaper will not be exported with the rest of the report. 
 
 ## Next steps
