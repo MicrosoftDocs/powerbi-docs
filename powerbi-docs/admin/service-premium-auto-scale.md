@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/03/2022
+ms.date: 02/06/2022
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -62,8 +62,6 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
     :::image type="content" source="media/service-premium-auto-scale/create-resource-group-validation.png" alt-text="Screenshot of the create a resource group page after it passes the Azure validation test. The create button is highlighted.":::
 
-After creating the subscription a `Microsoft.PowerBIDedicated/autoScaleVCores` resource is created. Make sure that you don't have any Azure policies that prevent Power BI Premium from provisioning, updating or deleting the `Microsoft.PowerBIDedicated/autoScaleVCores` resource.
-
 ## Enable Autoscale in the Power BI Admin portal
 
 Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](/azure/cost-management-billing/manage/add-change-subscription-administrator).
@@ -94,7 +92,7 @@ Here's a short video that shows how quickly you can configure Autoscale for Powe
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2.":::
 
-And that's it - your Power BI Premium Gen2 subscription is now configured to use Autoscale, so users in your organization automatically get the responsiveness they need from their Power BI content and insights, even under periods of heavy use.
+After creating the subscription and enabling autoscale in the admin portal, a `Microsoft.PowerBIDedicated/autoScaleVCores` resource is created. Make sure that you don't have any Azure policies that prevent Power BI Premium from provisioning, updating or deleting the `Microsoft.PowerBIDedicated/autoScaleVCores` resource.
 
 ## Next steps
 
