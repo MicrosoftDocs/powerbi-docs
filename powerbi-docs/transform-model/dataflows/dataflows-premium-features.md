@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 02/04/2022
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -148,7 +148,7 @@ Setting incremental refresh adds parameters to the dataflow to specify the date 
 
 Do not set a dataflow to incremental refresh in the following situations:
 
-* Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
+* Linked entities should not use incremental refresh if they reference a dataflow.
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
