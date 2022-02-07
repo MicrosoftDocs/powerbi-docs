@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyy](../includes/consumer-appliesto-nyyy.md)]    
+[!INCLUDE[consumer-appliesto-yyyy](../includes/consumer-appliesto-nyyy.md)]    
 
 > [!NOTE]
 > These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
