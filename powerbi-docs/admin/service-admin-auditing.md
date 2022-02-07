@@ -302,7 +302,7 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster datasource | | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | Generated when users select **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
 | [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
