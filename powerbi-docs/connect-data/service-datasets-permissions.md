@@ -7,35 +7,56 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/27/2022
+ms.date: 02/07/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
 
-## What are dataset permissions
+This article describes the dataset permissions in the Power BI service and how these permissions are acquired by users.
 
+## What are the dataset permissions?
 
+The table below described the four levels of permission that control access to datasets in the Power BI service. 
 
-## How do users acquire dataset permissions?
+|Permission  |Description  |
+|------------|-------------|
+|Read        |Allows access to reports that read data from the dataset.<br>Doesn't provide enhanced discoverability for report authoring from this dataset.<br>Doesn't allow querying using XMLA.|
+|Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows querying using external APIs like XMLA. |
+|Reshare     |Allows user to share the content of the dataset with other users who will get read, reshare, or build permissions for it. |
+|Write       |Allows user to view and modify dataset metadata. |
 
-A  user might acquire dataset permissions in two ways:
-* **Implicitly**, via the user's Workspace role
-* **Explicitly**, for example, by being granted permissions on the dataset's manage permissions page, or by having a report that uses the dataset shared with them (which might grant them build permission on the dataset).
+## How are dataset permissions acquired?
 
-The table below shows which dataset permissions a user has implicitly based on their workspace role.
+**Implicitly  via Workspace role**
 
-|Dataset Permission\Workspace Role  |Admin  |Member  |Contributor  |Viewer |
+A user's role in a workspace implicitly grants them permissions on the datasets in the workspace, as described in the following table.
+
+| |Admin  |Member  |Contributor  |Viewer |
 |-----------------------------------|-------|--------|-------------|-------|
 |Read                               |✔️      |✔️       |✔️            |✔️      |
 |Build                              |✔️      |✔️       |✔️            |❌      |
 |Reshare                            |✔️      |✔️       |❌            |❌      |
-|Write                              |✔️      |✔️       |✔️            |❌      |   
+|Write                              |✔️      |✔️       |✔️            |❌      |
 
+>[NOTE!]
+>Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicity using the manage permissions page.
 
+**Explicitly via the manage dataset permissions page**
 
-|Permission  |Description  |Can be granted explicitly  |
-|------------|-------------|---------------------------|
-|Read        |Can access reports that read data from the dataset.<br>No enhanced discoverability for report authoring from this dataset.<br>Can't query using XMLA|Yes |
-|Build       |Can query using external APIs like XMLA<br>Enhanced discoverability for report authoring from this dataset |Yes        |
-|Reshare     |Can assign dataset level permissions (and therefore access) to the dataset |Yes |
-|Write       |Can view and modify the dataset metadata |Yes |
+Users with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
+
+**Via a link that provides permissions**
+
+When users share reports or datasets, links are created that provide permissions on the dataset. User with Admin or Member roles in the workspace where a dataset is located can manage these links on the manage permissions page. 
+
+**Via permissions granted in a app**
+
+Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps#publish-your-app). 
+
+**Via REST APIs**
+
+Dataset permissions can be set via REST APIs. For more information, see [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md).
+
+## Next steps
+* [Manage dataset permissions](service-datasets-manage-access-permissions.md)
+* [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)
