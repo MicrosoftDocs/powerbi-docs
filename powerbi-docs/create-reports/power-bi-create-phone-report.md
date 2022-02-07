@@ -21,7 +21,7 @@ Mobile users can view any Power BI report page on their Android or iOS phone, in
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:
 * A mobile layout view where you create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
-* A formatting pane that enables you to precisely format your report visuals by changing visual properties.
+* A formatting pane that enables you to precisely format your report visuals by changing their properties.
 * Visuals and slicers that can be optimized for use on small, mobile screens.
 
 These capabilities make it possible to design and build attractive, interactive mobile-optimized reports.
@@ -45,14 +45,17 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 ---
 
-You see a scrollable canvas shaped like a phone, and a **Page visuals** pane that lists all of the visuals that are on the original report page.
+You see a scrollable canvas shaped like a phone, a **Page visuals** pane that lists all of the visuals that are on the original report page, and a **Visualizations** pane, where you will format visual properties. The features of the  Page visuals pane are described below. The Visualization pane is empty until you select a visual on the canvas.
 
+![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view.png)
+
+### The Page visuals pane
 * Each visual in the **Page visuals** pane appears with its name for easy identification.
 * Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
+* To make it easier to find the visual you are looking for, you can filter the pane according to visibility status.
+* You can remove all visuals from the canvas by selecting the eraser icon. Removing visuals from the canvas will not remove them from the Page visuals page. They will still be there available for you to use.
 
-   ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png)
-
-![Mobile layout view new](media/desktop-create-phone-report/mobile-layout-page-visuals-pane.png)
+![Screenshot of page visuals pane in mobile layout view.](media/desktop-create-phone-report/mobile-layout-page-visuals-pane.png)
 
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Page visuals** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
@@ -68,7 +71,7 @@ Once you've placed a visual on the canvas, you can resize it by dragging the han
 
 The image below illustrates dragging and dropping visuals from the **Page visuals** pane onto the canvas, as well as resizing and overlaying some of them.
 
-   ![Drag and drop, resize, and overlay visuals](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
+   ![Animated image of drag and drop, resize, and overlay of visuals.](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
@@ -120,7 +123,7 @@ Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.
 ## Publish a mobile-optimized report
 To publish a mobile-optimized version of a report, [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md). This publishes the mobile-optimized version at the same time.
 
-## Viewing optimized and unoptimized reports on a phone or tablet
+## Viewing optimized and unoptimized reports on a phone
 
 In the Power BI mobile apps, mobile-optimized reports are indicated by a special icon.
 
@@ -128,13 +131,12 @@ In the Power BI mobile apps, mobile-optimized reports are indicated by a special
 
 On phones, the app automatically detects whether the report is mobile-optimized or not.
 * If a mobile-optimized report exists, the app automatically opens the report in mobile-optimized mode.
-* If a mobile-optimized report doesn’t exist, the report opens in the unoptimized, landscape view.
+* If a mobile-optimized report doesn’t exist, the report opens in the regular unoptimized view. Turn the phone on it's side to get a slightly larger view of an unoptimzed report page. Alternatively, if all you need to do is get a quick look at the data, you can pinch and zoom into the data you're interested in.
 
-Holding a phone in landscape orientation opens the report in the unoptimized view with the original report layout, regardless of whether the report is optimized or not.
+The image below shows an optimized report page as well as an unoptimized version of the same page, in both portrait and landscape orientation.
 
-If you optimize only some pages, when readers come to an unoptimized page they will be prompted to switch to landscape view. Turning the phone or tablet sideways will enable them to see the page in landscape mode. [Read more about interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
+![Screenshot of mobile-optimized reports in portrait and landscape orientation.](media/power-bi-create-phone-report/power-bi-mobile-optimized-report.png)
 
-![Phone page not optimized](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
 ## Considerations when creating mobile-optimized layouts
 * For reports with multiple pages, you can optimize all the pages or just a few.
