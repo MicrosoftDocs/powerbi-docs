@@ -31,12 +31,12 @@ The table below described the four levels of permission that control access to d
 
 A user's role in a workspace implicitly grants them permissions on the datasets in the workspace, as described in the following table.
 
-| |Admin  |Member  |Contributor  |Viewer |
+|                                   |Admin  |Member  |Contributor  |Viewer |
 |-----------------------------------|-------|--------|-------------|-------|
-|Read                               |✔️      |✔️       |✔️            |✔️      |
-|Build                              |✔️      |✔️       |✔️            |❌      |
-|Reshare                            |✔️      |✔️       |❌            |❌      |
-|Write                              |✔️      |✔️       |✔️            |❌      |
+|Read                               |✔️     |✔️     |✔️           |✔️    |
+|Build                              |✔️     |✔️     |✔️           |❌    |
+|Reshare                            |✔️     |✔️     |❌           |❌    |
+|Write                              |✔️     |✔️     |✔️           |❌    |
 
 >[NOTE!]
 >Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicity using the manage permissions page.
@@ -51,7 +51,7 @@ When users share reports or datasets, links are created that provide permissions
 
 **Via permissions granted in a app**
 
-Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps#publish-your-app). 
+Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps#publish-your-app.md). 
 
 **Via REST APIs**
 
