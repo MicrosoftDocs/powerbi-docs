@@ -12,15 +12,15 @@ LocalizationGroup: Share your work
 ---
 # Dataset permissions
 
-This article describes the dataset permissions in the Power BI service and how these permissions are acquired by users.
+This article describes dataset permissions in the Power BI service and how these permissions are acquired by users.
 
 ## What are the dataset permissions?
 
-The table below describes the four levels of permission that control access to datasets in the Power BI service. 
+The table below describes the four levels of permission that control access to datasets in the Power BI service.  
 
 |Permission  |Description  |
 |------------|-------------|
-|Read        |Allows access to reports that read data from the dataset.<br>Doesn't provide enhanced discoverability for report authoring from this dataset.<br>Doesn't allow querying using XMLA.|
+|Read        |Allows user to access reports that read data from the dataset.<br>Doesn't provide enhanced discoverability for report authoring from the dataset.<br>Doesn't allow querying using XMLA.|
 |Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows querying using external APIs like XMLA. |
 |Reshare     |Allows user to share the content of the dataset with other users who will get read, reshare, or build permissions for it. |
 |Write       |Allows user to view and modify dataset metadata. |
