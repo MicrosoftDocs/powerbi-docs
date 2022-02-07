@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 01/24/2022
+ms.date: 02/03/2022
 LocalizationGroup: Share your work
 ---
 
@@ -28,7 +28,7 @@ The **Subscribe** option is missing or greyed out.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
 
 ### You've reached the maximum of 24 subscriptions
-There is a limit of 24 subscriptions per report or dashboard. You can provide unique recipients, times, and frequencies for each subscription.  
+There is a limit of 24 subscriptions per Power BI report or dashboard. You can provide unique recipients, times, and frequencies for each subscription. Paginated reports don't have this limit. 
 
 ## I’ve stopped receiving a subscription 
 I've set up a subscription but am not receiving the subscription emails.
@@ -77,7 +77,7 @@ For dashboard subscriptions, certain types of tiles aren't yet supported. These 
 You notice that your subscription emails aren't being delivered as expected. 
 
 ### Periods of peak demand
-The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator or IT help desk for assistance. 
+The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you may see a delay, but not more than 15 minutes. On rare occasion, it may take up to 30 minutes, but should never exceed 60 minutes. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator or IT help desk for assistance. 
 
 
 ### Email software is blocking delivery

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 02/04/2022
 LocalizationGroup: Data from files
 ---
 # Understanding and optimizing dataflows refresh
@@ -76,7 +76,7 @@ The refresh statistics provide valuable information you can use to optimize and 
 
 ### Orchestration
 
-Using dataflows in the same workspace allows straightforward orchestration. If you have dataflows A, B and C in a single workspace, and chaining like A > B > C, then if you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you'll have to refresh others independently.
+Using dataflows in the same workspace allows straightforward orchestration. If you have dataflows A, B and C in a single workspace, and chaining like A > B > C, then if you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you'll have to refresh others independently. Also, if you add a new data source in dataflow B (which is not included in A) that data will not be refreshed as a part of orchestration.
 
 For scenarios where you want to chain items together that don't fit the managed orchestration Power BI performs, or if you want to mix and match, you can use the APIs and/or use PowerAutomate. You can refer to the [API documentation](/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There is a Power Automate connector that enables doing this without writing any code. You can see [detailed samples](/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
 
