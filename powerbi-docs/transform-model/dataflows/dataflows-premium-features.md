@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/04/2022
+ms.date: 02/07/2022
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -39,7 +39,7 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 
 # [Premium Gen2](#tab/gen2)
 
-Premium Gen2 has three settings for the dataflows enhanced compute engine:
+In Premium Gen2, the enhanced compute engine is individually set for each dataflow. There are three configurations to choose from:
 
 * **Disabled**
 
@@ -47,7 +47,7 @@ Premium Gen2 has three settings for the dataflows enhanced compute engine:
 
 * **On**
 
-To change the default setting, do the following:
+To change the default setting and enable the enhanced compute engine, do the following:
 
 1. In your workspace, next to the dataflow you want to change the settings for, select **More options**.
 
