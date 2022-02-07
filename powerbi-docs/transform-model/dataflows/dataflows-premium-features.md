@@ -38,7 +38,7 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 ### Enable the enhanced compute engine
 
 > [!IMPORTANT]
-> The enhanced compute engine works only for Power BI capacities of A3 and larger.
+> The enhanced compute engine works only for A3 or larger Power BI capacities.
 
 # [Premium Gen2](#tab/gen2)
 
