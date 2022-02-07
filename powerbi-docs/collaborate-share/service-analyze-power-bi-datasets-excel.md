@@ -1,18 +1,18 @@
 ---
 title: Build refreshable Excel reports with Power BI data
-description: After you've connected to your dataset, Excel presents you with an empty PivotTable and Fields list from the Power BI dataset, and you're ready analyze your data
+description: After you've connected to your dataset, Excel presents you with an empty PivotTable and Fields list from the Power BI dataset, and you're ready to analyze your data
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/07/2021
+ms.date: 02/07/2022
 LocalizationGroup: Share your work
 ---
 # Build refreshable Excel reports with Power BI data
 
-You've connected to a Power BI dataset in Excel by starting in [Power BI with Analyze in Excel](service-analyze-in-excel.md) or in [Excel with Get Data](service-connect-excel-power-bi-datasets.md). Now that you're connected, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready analyze your data.
+You've connected to a Power BI dataset in Excel by starting in [Power BI with Analyze in Excel](service-analyze-in-excel.md) or in [Excel with Get Data](service-connect-excel-power-bi-datasets.md). Now that you're connected, Excel presents you with an empty *PivotTable* and *Fields* list from the Power BI dataset, and you're ready to analyze your data.
 
 ![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
