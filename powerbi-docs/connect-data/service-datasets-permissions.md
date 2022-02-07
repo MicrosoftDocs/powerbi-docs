@@ -47,7 +47,7 @@ A users with an Admin or Member role in the workspace can explicitly grant permi
 
 ### Permissions acquired via a link
 
-When users share reports or datasets, links are created that provide permissions on the dataset. Users authorized to use those links will be able to access the dataset. Users with Admin or Member roles in the workspace where a dataset is located can manage these links on the manage permissions page.
+When users share reports or datasets, links are created that provide permissions on the dataset. Users authorized to use those links will be able to access the dataset. Users with Admin or Member roles in the workspace where a dataset is located can manage these links on the [manage permissions page](service-datasets-manage-access-permissions.md#manage-links-generated-for-report-sharing).
 
 ### Permissions granted in a app
 
