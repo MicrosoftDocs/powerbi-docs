@@ -59,7 +59,7 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
     :::image type="content" source="media\dataflows-premium-features\enhanced-compute-engine-settings.png" alt-text="Screenshot of a dataflows settings page with the enhanced compute engine settings setting highlighted.":::
 
-4. Select **On** and then select **Apply**.
+4. In the *Enhanced compute engine settings*, select **On** and then select **Apply**.
 
     :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
 
