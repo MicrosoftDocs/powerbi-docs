@@ -377,10 +377,12 @@ A table showing every background operation that contributed CPU usage to the tim
 This page provides useful information about a specific Power BI item.
 
 >[!IMPORTANT]
->You can only get to this page by using the drill through feature in one of the visuals that displays individual items.
+>You can only get to this page by using the drill through feature in one of the visuals that displays individual Power BI items.
 
->[NOTE!]
+>[!NOTE]
 >Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
+
+You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`. 
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Gen2 metrics app.":::
 
@@ -388,9 +390,11 @@ This page provides useful information about a specific Power BI item.
 
 The overloading visual displays time slots where overloading occurred involving the Power BI item you're drilling into.
 
+The overloading visual has the following columns:
+
 * **Date** - The date the item was in overload.
 
-* **Overloaded mins** - Summed 30-second windows where at least one overload event took place.
+* **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
 
 * **Overload time %** - The number of overloaded penalty seconds divided by the duration of interactive operations that took place.
 
@@ -398,11 +402,11 @@ The overloading visual displays time slots where overloading occurred involving 
 
 Displays the percentage of fast, medium, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
-* **Fast** - The moving average of fast operations as a percentage of all the operations over time. A fast operation is less than 100 milliseconds or faster.
+* **Fast** - The moving average of fast operations as a percentage of all the operations over time. A fast operation takes less than 100 milliseconds.
 
-* **Moderate** - The moving average of moderate operations as a percentage of all the operations over time. A moderate operation is between 100 milliseconds to two seconds.
+* **Moderate** - The moving average of moderate operations as a percentage of all the operations over time. A moderate operation takes between 100 milliseconds to two seconds.
 
-* **Slow** - The moving average of slow operations as a percentage of all the operations over time. A slow operation is over two seconds.
+* **Slow** - The moving average of slow operations as a percentage of all the operations over time. A slow operation takes over two seconds.
 
 ### Artifact size
 
