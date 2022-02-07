@@ -25,9 +25,9 @@ The table below describes the four levels of permission that control access to d
 |Reshare     |Allows user to share the content of the dataset with other users who will get read, reshare, or build permissions for it. |
 |Write       |Allows user to view and modify dataset metadata. |
 
-## How are dataset permissions acquired?
+## How are the dataset permissions acquired?
 
-**Implicitly  via Workspace role**
+### Permissions acquired implicitly via workspace role
 
 A user's role in a workspace implicitly grants them permissions on the datasets in the workspace, as described in the following table.
 
@@ -41,19 +41,19 @@ A user's role in a workspace implicitly grants them permissions on the datasets 
 >[!NOTE]
 >Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicitly using the [manage permissions page](service-datasets-manage-access-permissions.md).
 
-**Explicitly via the manage dataset permissions page**
+### Permissions granted explicitly via the manage dataset permissions page
 
-Users with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
+A users with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
 
-**Via a link that provides permissions**
+### Permissions acquired via a link
 
-When users share reports or datasets, links are created that provide permissions on the dataset. User with Admin or Member roles in the workspace where a dataset is located can manage these links on the manage permissions page. 
+When users share reports or datasets, links are created that provide permissions on the dataset. Users authorized to use those links will be able to access the dataset. Users with Admin or Member roles in the workspace where a dataset is located can manage these links on the manage permissions page.
 
-**Via permissions granted in a app**
+### Permissions granted in a app
 
 Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#publish-your-app). 
 
-**Via REST APIs**
+### Permissions granted via REST APIs
 
 Dataset permissions can be set via REST APIs. For more information, see [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md).
 
