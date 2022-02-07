@@ -16,7 +16,7 @@ This article describes the dataset permissions in the Power BI service and how t
 
 ## What are the dataset permissions?
 
-The table below described the four levels of permission that control access to datasets in the Power BI service. 
+The table below describes the four levels of permission that control access to datasets in the Power BI service. 
 
 |Permission  |Description  |
 |------------|-------------|
@@ -38,8 +38,8 @@ A user's role in a workspace implicitly grants them permissions on the datasets 
 |Reshare                            |✔️     |✔️     |❌           |❌    |
 |Write                              |✔️     |✔️     |✔️           |❌    |
 
->[NOTE!]
->Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicity using the manage permissions page.
+>[!NOTE]
+>Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicitly using the [manage permissions page](service-datasets-manage-access-permissions.md).
 
 **Explicitly via the manage dataset permissions page**
 
