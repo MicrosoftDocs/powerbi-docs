@@ -156,6 +156,10 @@ In the walkthrough we'll see
 
 ### Changing grid orientation to better suit mobile layout
 
+The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator visual, while the page navigator stacked vertically worked well for desktop layout, it is not suitable for mobile layout. 
+
+Let’s first change the grid orientation of the navigation pane to better suit phone orientation. While having the page navigator stacked vertically works for desktop layout, it is not suitable for mobile layout.  Changing the orientation settings to horizontal, along with a few other style setting changes, makes the page navigator look appropriate for mobile.
+
 ![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
 
 ### Using changing a shape to use as a design element
