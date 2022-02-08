@@ -111,7 +111,7 @@ You can discard mobile formatting changes to a single category by selecting **Cl
 
 When you discard mobile formatting changes, the property (or properties) will take onthe current desktop value and resume inheriting from the desktop layout.
 
-With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane).
+With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md).
 
 ## Remove visuals from the mobile layout canvas
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
