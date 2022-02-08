@@ -87,6 +87,32 @@ The **Selection** pane also has a visibility indication for each visual in the l
 
 ![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
 
+## Format visuals for use in mobile-optimized reports
+Use the visualizations pane to format a visual for mobile layout.
+
+>[!NOTE]
+> Formatting changes that you make to visuals in the mobile layout will not affect the desktop layout of your report.
+
+On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane.
+
+[Screenshot of Visualizations pane showing a visual's property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout.png)
+ 
+The visual's properties are split out on to two tabs. The **Visuals** tab contains settings that pertain only to the visual, while the **General** tab contains settings that are consistent across all visual types. Expand the categories to start editing properties.
+
+When you first place a visual on the canvas, most of its property values are inherited from the desktop layout. When you change a property, however, the property stops inheriting from the desktop layout and becomes independent. Any changes you make to the property won't affect the desktop layout, and vice versa; any changes you make to the property in desktop layout won’t affect mobile layout. 
+When you change a visual's property, an icon indicates that the property has changed.
+
+[Screenshot of Visualizations pane showing a visual's changed property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+
+You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
+
+When you discard mobile formatting changes, the property (or properties) will take onthe current desktop value and resume inheriting from the desktop layout.
+
+The image below shows the Visualizations pane when a visual's Call out font size has been changed from 20 to 10. Note the icon that indicates the change, and the options for discarding the changes if so desired.
+ 
+
+With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane).
+
 ## Remove visuals from the mobile layout canvas
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
