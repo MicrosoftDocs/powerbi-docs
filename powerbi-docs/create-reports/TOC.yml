@@ -229,7 +229,7 @@
       - name: "Sort one column by another"
         href: desktop-sort-by-column.md
       - name: "Optimize reports for the mobile apps"
-        href: desktop-create-phone-report.md
+        href: power-bi-create-phone-report.md
       - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"

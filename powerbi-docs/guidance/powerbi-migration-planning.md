@@ -60,7 +60,7 @@ It's helpful to understand how consumers of a solution prefer to view reports an
 
 - Will a [Power BI app](../consumer/end-user-apps.md) (which comprises reports and dashboards from a single workspace) be the best way to deliver content to consumers, or will direct access to a workspace be sufficient for content viewers?
 - Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
-- Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/desktop-create-phone-report.md).
+- Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-phone-report.md).
 
 ## Decide if other content may be created
 
