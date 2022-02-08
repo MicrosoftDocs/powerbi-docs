@@ -82,7 +82,7 @@ The image below illustrates dragging and dropping visuals from the **Page visual
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
-## Set the layering order of visuals on the mobile layout canvas
+## Set the layering order of visuals
 
 Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
 
@@ -94,7 +94,7 @@ The **Selection** pane also has a visibility indication for each visual in the l
 
 ![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
 
-## Format visuals for use in mobile-optimized reports
+## Format visuals for mobile-optimized reports
 Use the visualizations pane to format a visual for mobile layout.
 
 >[!NOTE]
