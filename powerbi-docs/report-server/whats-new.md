@@ -63,7 +63,7 @@ Here’s a list of new and updated features. For details, see the [Power BI Repo
 
 Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
 
-- [Smart guides for aligning objects](../create-reports/desktop-create-phone-report.md) are now available in the mobile layout view.
+- [Smart guides for aligning objects](../create-reports/power-bi-create-phone-report.md) are now available in the mobile layout view.
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
 - [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.

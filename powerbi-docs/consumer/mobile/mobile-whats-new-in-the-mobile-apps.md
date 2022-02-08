@@ -688,7 +688,7 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 
 #### All devices
 **Background color for phone reports**
-When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/desktop-create-phone-report.md).
+When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/power-bi-create-phone-report.md).
 
 **Develop mobile-friendly Power BI visual**
 Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
@@ -755,7 +755,7 @@ Read the [January 2017 mobile apps blog feature summary](https://powerbi.microso
 Now, if you have a large table or matrix on your dashboard or report, we show as much data as possible in the tile. Then in focus mode, you can scroll down to load additional rows.
 
 **Phone report - general availability**
-Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../create-reports/desktop-create-phone-report.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
+Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../create-reports/power-bi-create-phone-report.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
 
 #### iOS
 **SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
