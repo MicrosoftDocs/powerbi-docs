@@ -100,7 +100,7 @@ On the mobile layout canvas, select the visual you want to format. The visual's 
 When you first place a visual on the canvas, most of its property values are inherited from the desktop layout. When you change a property, however, the property stops inheriting from the desktop layout and becomes independent. Any changes you make to the property won't affect the desktop layout, and vice versa; any changes you make to the property in desktop layout won’t affect mobile layout. 
 When you change a visual's property, an icon indicates that the property has changed.
 
-[Screenshot of Visualizations pane showing a visual's changed property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+![Screenshot of Visualizations pane showing a visual's changed property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
