@@ -55,7 +55,7 @@ You see a scrollable canvas shaped like a phone, a **Page visuals** pane that li
 * To make it easier to find the visual you are looking for, you can filter the pane according to visibility status.
 * You can remove all visuals from the canvas by selecting the eraser icon. Removing visuals from the canvas will not remove them from the Page visuals page. They will still be there available for you to use.
 
-![Screenshot of page visuals pane in mobile layout view.](media/desktop-create-phone-report/mobile-layout-page-visuals-pane.png)
+![Screenshot of page visuals pane in mobile layout view.](media/power-bi-create-phone-report/mobile-layout-page-visuals-pane.png)
 
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Page visuals** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
@@ -71,7 +71,7 @@ Once you've placed a visual on the canvas, you can resize it by dragging the han
 
 The image below illustrates dragging and dropping visuals from the **Page visuals** pane onto the canvas, as well as resizing and overlaying some of them.
 
-   ![Animated image of drag and drop, resize, and overlay of visuals.](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
+   ![Animated image of drag and drop, resize, and overlay of visuals.](media/power-bi-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
@@ -85,7 +85,7 @@ The **Selection** pane lists all the visuals that are on the canvas. The order o
 
 The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
 
-![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
+![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
 
 ## Format visuals for use in mobile-optimized reports
 Use the visualizations pane to format a visual for mobile layout.
@@ -95,30 +95,18 @@ Use the visualizations pane to format a visual for mobile layout.
 
 On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane. The visual's properties are split out on to two tabs. The **Visual** tab contains settings that pertain only to the visual, while the **General** tab contains settings that are consistent across all visual types. Expand the categories to start editing properties.
 
-![Screenshot of Visualizations pane showing a visual's property values](media/power-bi-create-phone-report/visualizations-pane-mobile-layout.png)
+![Screenshot of Visualizations pane showing a visual's property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout.png)
 
 When you first place a visual on the canvas, most of its property values are inherited from the desktop layout. When you change a property, however, the property stops inheriting from the desktop layout and becomes independent. Any changes you make to the property won't affect the desktop layout, and vice versa; any changes you make to the property in desktop layout won’t affect mobile layout. 
 When you change a visual's property, an icon indicates that the property has changed.
 
-![Screenshot of Visualizations pane showing a visual's changed property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
 When you discard mobile formatting changes, the property (or properties) will take onthe current desktop value and resume inheriting from the desktop layout.
 
-The image below shows the Visualizations pane when a visual's Call out font size has been changed from 20 to 10. Note the icon that indicates the change, and the options for discarding the changes if so desired.
- 
-
 With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane).
-
-## Remove visuals from the mobile layout canvas
-To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
-
-You can remove all the visualizations from the canvas by clicking the eraser on the **Page visuals** pane.
-
-Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the **Page visuals** pane, and the original report remains unaffected.
-
-![Screenshot showing visualizations pane.](media/desktop-create-phone-report/mobile-layout-page-visualizations-pane.png)
 
 ## Configure visuals and slicers for use in mobile-optimized reports
 
@@ -128,7 +116,7 @@ By default, many visuals, particularly chart-type visuals, are responsive.  That
 
 As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
 
-![Responsive visual resizing](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
+![Responsive visual resizing](media/power-bi-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
  
 If for some reason you want to turn responsiveness off, you can do that in the **General** section of the visual's format settings.
 
@@ -140,9 +128,16 @@ Slicers offer on-canvas filtering of report data. When designing slicers in the 
 
 If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
 
-![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.gif)
+![Power BI responsive slicer](media/power-bi-create-phone-report/desktop-create-phone-report-8.gif)
  
 Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
+
+## Remove visuals from the mobile layout canvas
+To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
+
+You can remove all the visualizations from the canvas by clicking the eraser on the **Page visuals** pane.
+
+Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the **Page visuals** pane, and the original report remains unaffected.
 
 ## Publish a mobile-optimized report
 To publish a mobile-optimized version of a report, [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md). This publishes the mobile-optimized version at the same time.
@@ -151,7 +146,7 @@ To publish a mobile-optimized version of a report, [publish the main report from
 
 In the Power BI mobile apps, mobile-optimized reports are indicated by a special icon.
 
-![Mobile optimized report icon](media/desktop-create-phone-report/desktop-create-phone-report-optimized-icon.png)
+![Mobile optimized report icon](media/power-bi-create-phone-report/desktop-create-phone-report-optimized-icon.png)
 
 On phones, the app automatically detects whether the report is mobile-optimized or not.
 * If a mobile-optimized report exists, the app automatically opens the report in mobile-optimized mode.
