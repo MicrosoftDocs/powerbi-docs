@@ -31,31 +31,73 @@ The root objects of a visual's capabilities are `privileges`, `dataRoles`, `data
 
 ## Define the special permissions that your visual requires: privileges
 
-Privileges are the special operations required by your visual. It takes an array of `Privilege` objects, which defines all privilege properties:
+Privileges are the special operations required by your visual. It takes an array of `Privilege` objects, which defines all privilege properties. Following is the list of possible privileges:
 
-* **name** - the name of the privilege. This property is mandatory and should contain be one of the known privilege names:
-    * `WebAccess`: an ability to access resources located outside of Power BI portal
-    * `LocalStorage`: an ability to store and retrieve data from a browser local storage
-* **essential** - boolean value, should be `true` if the visual is unable to function properly without this privilege. This property is optional and if it is missed, it considered to be `false`
-* **parameters** - an optional array of string parameters of the privilege. In case parameters property is missing, it considered to be an empty array.
-
-### Example
+### General Privilege definition
 
 ```json
-  "privileges": [
-    {
-      "name": "WebAccess",
-      "essential": true,
-      "parameters": [ "https://*.virtualearth.net" ]
-    },
-    {
-      "name": "LocalStorage",
-      "essential": true
-    }
-  ]
+{
+    // string - The name of the privilege
+    "name"
+
+    // boolean - essentiality of the privilege. true - means, that the normal 
+    // visual functionality requires this privilege. false - it is not mandatory
+    // The property is optional and if missing - it considered to be false
+    "essential"
+    
+    // array of strings - privilege arguments as a list of strings
+    // The property is optional and if missing - it considered to be an empty array
+    "parameters"
+}
 ```
 
-The example definition means, that the visual requires both: an access to outside resource (any subdomain of *virtualearth.net* using *https* protocol only) and browser local storage. And also, both of them are required for normal visual functionality.
+### Access external resources
+
+Visual going to access any external resource, must add a `WebAccess` privilege into capabilities section. The privilege can definition can contain an optional list of URLs the visual need to access in form of http://xyz.com or https://xyz.com. Every URL can include a wildcard to specify subdomains as well
+
+#### Example
+
+```json
+{
+    "name": "WebAccess",
+    "essential": true,
+    "parameters": [ "https://*.virtualearth.net" ]
+}
+```
+
+The above definition means, that the visual need to access any subdomain of the virtualearth.net via HTTPS protocol only and that this is essential for visual's normal work.
+
+### Access browser local storage
+
+Visual going to access browser local storage via [Local Storage API](./local-storage.md), must add a `LocalStorage` privilege into capabilities section.
+
+#### Example
+
+```json
+{
+    "name": "LocalStorage",
+    "essential": false
+}
+```
+The above definition means, that the visual may need to access browser local storage and that if it will not be permitted it will contnue to work anyway.
+
+### Common example
+
+```json
+"privileges": [
+    {
+        "name": "WebAccess",
+        "essential": true,
+        "parameters": [ "https://*.virtualearth.net" ]
+    },
+    {
+        "name": "LocalStorage",
+        "essential": false
+    }
+]
+```
+
+### No privileges
 
 In case the visual does not requires any special permissions, the privileges array should be empty:
 
