@@ -146,19 +146,30 @@ The image below shows an optimized report page as well as an unoptimized version
 This walkthrough shows some of example of how the Power BI's mobile formatting options can be used to create a phone-optimized report that is easy to read makes it possible to focus on the most critical information.
 
 In the walkthrough we'll see
-•	How the grid orientation and style settings of a visual can be changed to better suit phone layout.
-•	How different shapes can be used to better fit the mobile design.
-•	How a visual's font size can be adjusted to fit in with other report visuals.
-•	How you can create precise, pixel perfect design with size and position settings.
-•	How chart settings can be adjusted to maximize real estate.
+* How the grid orientation and style settings of a visual can be changed to better suit phone layout.
+* How different shapes can be used to better fit the mobile design.
+* How a visual's font size can be adjusted to fit in with other report visuals.
+* How you can create precise, pixel perfect design with size and position settings.
+* *How chart settings can be adjusted to maximize real estate.
+
+### Changing grid orientation to better suit mobile layout
 
 ![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
 
+### Using changing a shape to use as a design element
+
 ![Screenshot of changing the shape used in by the mobile layout.](media/power-bi-create-phone-report/shape-to-line.gif)
+
+
+### Changing a visual's font size to better suit other visuals
 
 ![Screenshot of changing a visual's font size.](media/power-bi-create-phone-report/change-font-size.gif)
 
-![Screenshot of using properties to precisely determine visual size and position.](media/picture-perfect-arrangement.gif)
+### Using properties to precisely determine visual size and position
+
+![Screenshot of using properties to precisely determine visual size and position.](media/power-bi-create-phone-report/picture-perfect-arrangement.gif)
+
+### Using properties for optimize the a visual to save valuable screen real estate
 
 ![Screenshot of using properties to save screen real estate.](media/power-bi-create-phone-report/save-real-estate.gif)
 
