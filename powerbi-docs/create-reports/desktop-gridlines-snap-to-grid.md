@@ -63,11 +63,7 @@ Modifying certain elements of gridlines can be especially useful in reports wher
 
 # [Power BI Desktop](#tab/powerbi-desktop)
  
-1. With a visual selected, select the drop-down carat next to **Y axis** in the **Format** section of the **Visualizations** pane.
-   
-   :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-gridlines-desktop-y-axis.png" alt-text="Screenshot of a Power B I Desktop visual, showing the Y axis card.":::
-   
-1. Scroll to the **Gridlines** setting and set it to **On**, then change the settings as desired.
+1. With a visual selected, scroll to the **Gridlines** setting and set it to **On**, then change the settings as desired.
 
    :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-gridlines-desktop-axis-edit.png" alt-text="Screenshot of a Power B I Desktop visual, showing the axis gridlines settings.":::
    
@@ -146,6 +142,4 @@ For example, if you select three visuals and choose the **Distribute vertically*
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-desktop-visuals-distributed-vertically.png" alt-text="Screenshot of the report canvas, showing three visuals distributed using the 'Distribute vertically' option.":::
 
 With a few selections from these gridlines, alignment, and distribution tools, your reports will look just how you want them to.
-
-
 
