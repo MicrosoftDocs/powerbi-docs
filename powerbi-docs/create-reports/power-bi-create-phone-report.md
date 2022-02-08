@@ -143,6 +143,8 @@ The image below shows an optimized report page as well as an unoptimized version
 
 ## Walkthrough
 
+This section not ready for review yet..need to add explanations about what's going on in each one.
+
 This walkthrough shows some of example of how the Power BI's mobile formatting options can be used to create a phone-optimized report that is easy to read makes it possible to focus on the most critical information.
 
 In the walkthrough we'll see
