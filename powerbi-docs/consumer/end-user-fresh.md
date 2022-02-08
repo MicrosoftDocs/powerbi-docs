@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # How to determine that content is up to date
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 This article shows you how to determine when your content was last updated or refreshed and also provides some suggestions for ways to stay in sync with your most important data. 
 
@@ -48,7 +48,7 @@ When you open a list of content in the Power BI service, you'll see a column tha
 The *designer* sets up the refresh schedule for content. Some content updates continually while other content may refresh daily, weekly, or not at all. Not all content is scheduled for refreshing, so you may see empty entries. If the refresh encounters an error, you'll see an error icon. 
 
 ### Viewing reports
-When you open and view a report, you'll notice a dropdown arrow in the center of the menu bar. Select the arrow to display contact information and a timestamp. Dashboards, worksheets, and scorecards display the owner but not a timestamp. 
+When you open and view a report, you'll notice a dropdown arrow in the center of the menu bar. Select the arrow to display contact information and a timestamp. Dashboards, worksheets, and scorecards display the owner but not a timestamp. Select the **Owner** link if you have questions or suggestions for the owner of the report.
 
 :::image type="content" source="media/end-user-fresh/power-bi-owner.png" alt-text="Report with title dropdown displayed.":::
 
