@@ -15,7 +15,9 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Mobile users can view any Power BI report page on their Android or iOS phone, in any orientation they like. However, reports designed to be used on a computer can be difficult to read and interact with on a phone. Using Power BI's mobile layout authoring capabilities, report authors can create an additional phone-optimized view that always displays in portrait orientation. This mobile layout design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select, rearrange, and reformat just those report visuals that make sense for mobile users on the go.
+Mobile users can view any Power BI report page on their Android or iOS phone, in any orientation they like. However, reports designed to be used on a computer can be difficult to read and interact with on a phone. 
+
+Using Power BI's mobile layout authoring capabilities, report authors can create an additional phone-optimized view that always displays in portrait orientation. This mobile layout design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select, rearrange, and reformat just those report visuals that make sense for mobile users on the go.
 
 ![Screenshot of mobile-optimized report page.](media/power-bi-create-phone-report/power-bi-mobile-optimized-report-page.png)
 
@@ -26,7 +28,7 @@ Power BI provides a number of features to help you create mobile-optimized versi
 
 These capabilities make it possible to design and build attractive, interactive mobile-optimized reports.
 
-This aritcle introduces Power BI's mobile authoring capabilities and features, and presents a [walkthough](#walkthrough) that demonstrates some of the things you can do to create attractive and effective report page views for phone viewing. 
+This article introduces Power BI's mobile authoring capabilities and features, and presents a [walkthough](#walkthrough) that demonstrates some of the things you can do to create attractive and effective report page views for phone viewing. 
 
 >[!NOTE]
 > Formatting changes you make for your phone optimized layout do not affect the regular layout of your report.for mobile 
