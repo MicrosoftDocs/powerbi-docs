@@ -12,12 +12,13 @@ ms.date: 06/18/2019
 
 # Capabilities and properties of Power BI visuals 
 
-You use capabilities to provide information to the host about your visual. All properties on the capabilities model are `optional`.
+You use capabilities to provide information to the host about your visual. All properties on the capabilities model are `optional` except `privileges`, which are manadtory.
 
-The root objects of a visual's capabilities are `dataRoles`, `dataViewMappings`, and so on.
+The root objects of a visual's capabilities are `privileges`, `dataRoles`, `dataViewMappings`, and so on.
 
 ```json
 {
+    "privileges": [ ... ],
     "dataRoles": [ ... ],
     "dataViewMappings": [ ... ],
     "objects":  { ... },
@@ -26,6 +27,40 @@ The root objects of a visual's capabilities are `dataRoles`, `dataViewMappings`,
     "sorting": { ... }
 }
 
+```
+
+## Define the special permissions that your visual requires: privileges
+
+Privileges are the special operations required by your visual. It takes an array of `Privilege` objects, which defines all privilege properties:
+
+* **name** - the name of the privilege. This property is mandatory and should contain be one of the known privilege names:
+    * `WebAccess`: an ability to access resources located outside of Power BI portal
+    * `LocalStorage`: an ability to store and retrieve data from a browser local storage
+* **essential** - boolean value, should be `true` if the visual is unable to function properly without this privilege. This property is optional and if it is missed, it considered to be `false`
+* **parameters** - an optional array of string parameters of the privilege. In case parameters property is missing, it considered to be an empty array.
+
+### Example
+
+```json
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": true,
+      "parameters": [ "https://*.virtualearth.net" ]
+    },
+    {
+      "name": "LocalStorage",
+      "essential": true
+    }
+  ]
+```
+
+The example definition means, that the visual requires both: an access to outside resource (any subdomain of *virtualearth.net* using *https* protocol only) and browser local storage. And also, both of them are required for normal visual functionality.
+
+In case the visual does not requires any special permissions, the privileges array should be empty:
+
+```json
+  "privileges": []
 ```
 
 ## Define the data fields that your visual expects: dataRoles

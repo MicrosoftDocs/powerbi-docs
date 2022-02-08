@@ -31,14 +31,18 @@ export class Visual implements IVisual {
             this.storage = options.host.storageService;
             // ...
 
-            this.storage.get(this.updateCountName).then(count =>
-            {
-                this.updateCount = +count;
-            })
-            .catch(() =>
-            {
-                this.updateCount = 0;
-                this.storage.set(this.updateCountName, this.updateCount.toString());
+            this.storage.enabled().then(enabled => {
+                if (enabled) {
+                    this.storage.get(this.updateCountName).then(count =>
+                    {
+                        this.updateCount = +count;
+                    })
+                    .catch(() =>
+                    {
+                        this.updateCount = 0;
+                        this.storage.set(this.updateCountName, this.updateCount.toString());
+                    });
+                }
             });
             // ...
         }
@@ -46,7 +50,11 @@ export class Visual implements IVisual {
         public update(options: VisualUpdateOptions) {
             // ...
             this.updateCount++;
-            this.storage.set(this.updateCountName, this.updateCount.toString());
+            this.storage.enabled().then(enabled => {
+                if (enabled) {
+                    this.storage.set(this.updateCountName, this.updateCount.toString());
+                }
+            });
             // ...
         }
 }
@@ -55,4 +63,4 @@ export class Visual implements IVisual {
 ## Known limitations and issues
 
 Local Storage API isn't activated for Power BI visuals by default. If you want to activate it for your Power BI visual, send a request to Power BI visuals Support `pbicvsupport@microsoft.com`.  
-**Please note that your visual should be available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) and be [certified](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/).**
+**Please note that your visual should be available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) and be [certified](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/). Also `LocalStorage` privilege should be defined in the capabilities section.**
