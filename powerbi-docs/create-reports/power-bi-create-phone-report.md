@@ -143,6 +143,25 @@ The image below shows an optimized report page as well as an unoptimized version
 
 ## Walkthrough
 
+This walkthrough shows some of example of how the Power BI's mobile formatting options can be used to create a phone-optimized report that is easy to read makes it possible to focus on the most critical information.
+
+In the walkthrough we'll see
+•	How the grid orientation and style settings of a visual can be changed to better suit phone layout.
+•	How different shapes can be used to better fit the mobile design.
+•	How a visual's font size can be adjusted to fit in with other report visuals.
+•	How you can create precise, pixel perfect design with size and position settings.
+•	How chart settings can be adjusted to maximize real estate.
+
+![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
+
+![Screenshot of changing the shape used in by the mobile layout.](media/power-bi-create-phone-report/shape-to-line.gif)
+
+![Screenshot of changing a visual's font size.](media/power-bi-create-phone-report/change-font-size.gif)
+
+![Screenshot of using properties to precisely determine visual size and position.](media/picture-perfect-arrangement.gif)
+
+![Screenshot of using properties to save screen real estate.](media/power-bi-create-phone-report/save-real-estate.gif)
+
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
