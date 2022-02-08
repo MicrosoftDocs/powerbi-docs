@@ -402,6 +402,8 @@ The overloading visual has the following columns:
 
 Displays the percentage of fast, medium, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
+
 * **Fast** - The moving average of fast operations as a percentage of all the operations over time. A fast operation takes less than 100 milliseconds.
 
 * **Moderate** - The moving average of moderate operations as a percentage of all the operations over time. A moderate operation takes between 100 milliseconds to two seconds.
