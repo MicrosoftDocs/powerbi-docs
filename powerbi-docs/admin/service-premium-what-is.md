@@ -200,9 +200,9 @@ The following table shows the recommended SKUs for .pbix file upload or publish 
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
    |P3, P4, P5    | up to 10 GB  |
-   |PPU   | up to 10 GB  |
-
+   
 The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
+A PPU capacity can allow the pbix of size upto 10 GB
 
 ### Large dataset storage format
 
