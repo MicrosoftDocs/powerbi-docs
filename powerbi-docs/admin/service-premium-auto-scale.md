@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/23/2021
+ms.date: 02/06/2022
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -18,12 +18,13 @@ Power BI Premium offers scale and performance for Power BI content in your organ
 
 :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto-scale in Power BI Premium.":::
 
-Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium Gen2. 
+Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium Gen2.
 
 To enable Autoscale, the following steps need to be completed:
 
-* Select and configure an Azure subscription to use with Autoscale
-* Configure Power BI Premium to use the selected Azure subscription for Autoscale
+1. [Configure an Azure subscription to use with Autoscale](#configure-an-azure-subscription-to-use-with-autoscale).
+
+2. [Enable Autoscale in the Power BI Admin portal](#enable-autoscale-in-the-power-bi-admin-portal)
 
 The following sections describe the steps in detail.
 
@@ -37,31 +38,40 @@ To select and configure an Azure subscription to work with Autoscale, you need t
 
 To select an Azure subscription to work with Autoscale, take the following steps:
 
-1. Log into the Azure portal and select **Subscriptions** from the left pane. In the following image, the highlighted subscription is called *Pay-As-You-Go*. 
+1. Log into the Azure portal and in the search box type and select **Subscriptions**.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-02.png" alt-text="Screenshot of select a subscription from Azure portal.":::
+    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-02.png" alt-text="Screenshot of the Azure portal. The word subscriptions is typed in the search box.":::
 
-2. Select a subscription. Once selected, you need to create a *Resource group* to use with Autoscale. Select *Resource group* from the **Settings** selections for your selected subscription. Then select the **Add** button to create a new *Resource group*. 
+2. From the *Subscriptions* page, select the subscription you want to work with autoscale.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-03.png" alt-text="Screenshot of creating a resource group.":::
+    :::image type="content" source="media/service-premium-auto-scale/select-subscription.png" alt-text="Screenshot of the subscriptions page in the Azure portal. A subscription is highlighted.":::
 
-3. The **Create a resource group** window appears, where you can name the resource group. In the following image, the resource group is called *powerBIPremiumAutoscaleCores*. You can name your resource group whatever you prefer. Just remember the name of the subscription, and the name of your resource group, since you'll need to select it again when you configure Autoscale in the Power BI Admin Portal. 
+3. From the *Settings* selections for your selected subscription, select **Resource groups**.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-04.png" alt-text="Screenshot of naming your resource group.":::
+    :::image type="content" source="media/service-premium-auto-scale/resource-groups.png" alt-text="Screenshot of the selecting a subscription page in the Azure portal. The resource group option in the settings section is highlighted.":::
 
-4. When you're satisfied with the name of the resource group, select the **Review + create** button in the bottom left corner of the portal pane. Azure validates the information, after which you select the **Create** button to create the resource group. Once created, you receive a notification in the upper-right corner of the Azure portal, similar to the following:
+4. Select **Create** to create a resource group to use with Autoscale.
 
-    :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-05.png" alt-text="Screenshot of resource group creation succeeded.":::
- 
-Okay, you've selected the **Subscription** in the Azure portal that you'll use for Autoscale, and created a **Resource group** for that subscription. The next step is to enable Autoscale in the Power BI Admin portal, and link it to the resource group you just created.
+    :::image type="content" source="media/service-premium-auto-scale/create-resource-group.png" alt-text="Screenshot of a resource group page in the Azure portal. The create button is highlighted.":::
+
+5. Name your resource group and select **Review + create**. In the following image, the resource group is called *powerBIPremiumAutoscaleCores*. You can name your resource group whatever you prefer. Just remember the name of the subscription, and the name of your resource group, since you'll need to select it again when you configure Autoscale in the Power BI Admin Portal.
+
+    :::image type="content" source="media/service-premium-auto-scale/create-resource-group-page.png" alt-text="Screenshot of the create a resource group page. The resource group text field is highlighted with the resource group's name, powerBIPremiumAutoscaleCores, is highlighted. The review plus create button is also highlighted.":::
+
+6. Azure validates the information. After the validation process completes successfully, select **Create**. Once created, you receive a notification in the upper-right corner of the Azure portal.
+
+    :::image type="content" source="media/service-premium-auto-scale/create-resource-group-validation.png" alt-text="Screenshot of the create a resource group page after it passes the Azure validation test. The create button is highlighted.":::
 
 ## Enable Autoscale in the Power BI Admin portal
 
-Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](/azure/cost-management-billing/manage/add-change-subscription-administrator). 
+Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](/azure/cost-management-billing/manage/add-change-subscription-administrator).
+
+>[!NOTE]
+>After creating the subscription and enabling Autoscale in the admin portal, a `Microsoft.PowerBIDedicated/autoScaleVCores` resource is created. Make sure that you don't have any Azure policies that prevent Power BI Premium from provisioning, updating or deleting the `Microsoft.PowerBIDedicated/autoScaleVCores` resource.
 
 The following steps show you how to enable and associated Autoscale with the resource group.
 
-1. Open the **Power BI Admin portal** and select **Capacity settings** from the left pane. Information about your Power BI Premium capacity is displayed. 
+1. Open the **Power BI Admin portal** and select **Capacity settings** from the left pane. Information about your Power BI Premium capacity is displayed.
 
     :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-06.png" alt-text="Screenshot of Power B I Admin portal.":::
 
@@ -73,7 +83,7 @@ The following steps show you how to enable and associated Autoscale with the res
 
     :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-07.png" alt-text="Screenshot of enabling Autoscale.":::
 
-4. You can then select the Azure subscription to use with Autoscale. Only subscriptions available to the current user are displayed, which is why you must be at least a *contributor* for the subscription. Once your subscription is selected, select the **Resource group** you created in the previous section, from the list of resource groups available to the subscription. 
+4. You can then select the Azure subscription to use with Autoscale. Only subscriptions available to the current user are displayed, which is why you must be at least a *contributor* for the subscription. Once your subscription is selected, select the **Resource group** you created in the previous section, from the list of resource groups available to the subscription.
 
     :::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-08.png" alt-text="Screenshot of selecting the resource group to use with Autoscale.":::
 
@@ -83,14 +93,18 @@ The following steps show you how to enable and associated Autoscale with the res
 
 Here's a short video that shows how quickly you can configure Autoscale for Power BI Premium Gen2:
 
-:::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2."::: 
-
-And that's it - your Power BI Premium Gen2 subscription is now configured to use Autoscale, so users in your organization automatically get the responsiveness they need from their Power BI content and insights, even under periods of heavy use. 
-
+:::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2.":::
 
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
-* [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
+> [!div class="nextstepaction"]
+> [What is Power BI Premium?](service-premium-what-is.md)
+
+> [!div class="nextstepaction"]
+> [Power BI Premium FAQ](service-premium-faq.yml)
+
+> [!div class="nextstepaction"]
+> [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
+
+> [!div class="nextstepaction"]
+> [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
