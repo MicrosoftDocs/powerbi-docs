@@ -138,10 +138,6 @@ There are several advantages to publishing a dataflow to a [workspace](../collab
 > [!NOTE]
 > Dataflows cannot be created in personal workspaces.
 
-### Dependencies and impact analysis
-
-Ideally, a dataflow is used by many datasets. The [lineage view](../collaborate-share/service-data-lineage.md) helps identify dataflow dependencies. Perform [impact analysis](../collaborate-share/service-dataset-impact-analysis.md#perform-dataset-impact-analysis) when planning a dataflow change to understand which datasets require editing or testing.
-
 ### Gateway setup
 
 Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
