@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/20/2022
+ms.date: 02/08/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -200,6 +200,7 @@ The following table shows the recommended SKUs for .pbix file upload or publish 
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
    |P3, P4, P5    | up to 10 GB  |
+   |PPU   | up to 10 GB  |
 
 The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
