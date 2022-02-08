@@ -113,18 +113,6 @@ When you discard mobile formatting changes, the property (or properties) will ta
 
 With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane).
 
-## Configure slicers for use in mobile-optimized reports
-
-Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
-* You can decide whether to allow report readers to select only one item or multiple items.
-* You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
-
-If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
-
-![Power BI responsive slicer](media/power-bi-create-phone-report/desktop-create-phone-report-8.gif)
- 
-Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
-
 ## Remove visuals from the mobile layout canvas
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
