@@ -32,6 +32,8 @@ The Gen2 metrics app has six pages:
 
 * [Timepoint](#timepoint)
 
+* [Artifact Detail](#artifact-detail)
+
 * [Release Notes](#release-notes)
 
 * [Help](#help)
@@ -214,6 +216,9 @@ The column height represents the number of distinct users effected when overload
 
 This page is designed to help you identify aspects concerning refresh performance such as refresh CPU consumption power.
 
+>[!NOTE]
+>You can get to a version of this page, dedicated to a specific Power BI item, using the drill through feature in one of the visuals that displays individual items. The visuals in the drill through version of the page are identical to the ones listed below. However, they only display information for the item you're drilling into.
+
 :::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Gen2 metrics app.":::
 
 At the top of the page there's a multi-selection pivot allowing you to focus on refreshing the page according to the filters listed below. Each of these pivots filters all the visuals in the refresh page.
@@ -367,11 +372,67 @@ A table showing every background operation that contributed CPU usage to the tim
 
 * **Timepoint CPU** - This metric is the *total CPU* metric divided by 2,880, and is used to determine how much CPU the background operation contributes to this timepoint.  
 
-### Release notes
+## Artifact Detail
+
+This page provides useful information about a specific Power BI item.
+
+>[!IMPORTANT]
+>You can only get to this page by using the drill through feature in one of the visuals that displays individual Power BI items.
+
+>[!NOTE]
+>Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
+
+You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`. 
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Gen2 metrics app.":::
+
+### Overloading
+
+The overloading visual displays time slots where overloading occurred involving the Power BI item you're drilling into.
+
+The overloading visual has the following columns:
+
+* **Date** - The date the item was in overload.
+
+* **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
+
+* **Overload time %** - The number of overloaded seconds divided by the duration of interactive operations that took place.
+
+### Performance
+
+Displays the percentage of fast, medium, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
+
+* **Fast** - The moving average of fast operations as a percentage of all the operations over time. A fast operation takes less than 100 milliseconds.
+
+* **Moderate** - The moving average of moderate operations as a percentage of all the operations over time. A moderate operation takes between 100 milliseconds to two seconds.
+
+* **Slow** - The moving average of slow operations as a percentage of all the operations over time. A slow operation takes over two seconds.
+
+### Artifact size
+
+This visual displays the peak amount of memory detected in any three hour window, over a 14 day period, for the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Gen2 metrics app.":::
+
+### CPU duration and users
+
+Use these visuals to review CPU consumption, operation duration and number of users for the item you're drilling into. In these visuals, each column represents a single hour over a 14 day period.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Gen2 metrics app.":::
+
+* **CPU** - Each column displays the amount of CPU seconds used to complete each operation per hour.
+
+* **Duration** - Each column displays the amount of seconds used to complete each operation per hour.
+
+* **Users** - Each column displays the number of active users per hour.
+
+## Release notes
 
 The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
 
-### Help
+## Help
 
 This page provides a help summary for each one of the Gen2 metrics app pages. At the top there's a tab for each page in the app. Select a tab to review the help summary.
 
