@@ -22,7 +22,7 @@ This scenario involves using [Power BI Report Server](../report-server/get-start
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support on-premises reporting. The focus is on using Power BI Report Server, which runs on a Windows server within the organizational network.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting.png" alt-text="Image shows a diagram of on-premises reporting, which is about delivering a customer-managed portal. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-inline.png" alt-text="Image shows a diagram of on-premises reporting, which is about delivering a customer-managed portal. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 

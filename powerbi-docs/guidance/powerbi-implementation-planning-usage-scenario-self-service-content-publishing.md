@@ -33,7 +33,7 @@ Using methodical and disciplined lifecycle management processes reduces errors, 
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support self-service content publishing. The focus is on use of a Power BI deployment pipeline for promoting content through development, test, and production workspaces.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing.png" alt-text="Image shows a diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Image shows a diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 

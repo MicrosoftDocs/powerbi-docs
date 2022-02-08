@@ -27,7 +27,7 @@ Dataflows are created by using [Power Query Online](https://powerquery.microsoft
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support self-service data preparation. The primary focus is on creating a dataflow in Power Query Online that becomes a source of data for multiple datasets. The goal is for many datasets to leverage the data preparation that's done once by the dataflow.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation.png" alt-text="Image shows a diagram of self-service data preparation, which is about dataflows for centralizing data cleansing and transformation work. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-inline.png" alt-text="Image shows a diagram of self-service data preparation, which is about dataflows for centralizing data cleansing and transformation work. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 

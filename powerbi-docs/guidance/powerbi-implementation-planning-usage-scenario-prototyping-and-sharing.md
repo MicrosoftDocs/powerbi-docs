@@ -29,7 +29,7 @@ Prototyping often occurs naturally during self-service BI development efforts. O
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support prototyping activities. The focus is on using Power BI Desktop during an interactive prototyping session. Focus can also be on sharing in the Power BI service when additional feedback is needed from subject matter experts.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing.png" alt-text="Image shows a diagram of prototyping and sharing, which is about rapid exploration of user requirements. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-inline.png" alt-text="Image shows a diagram of prototyping and sharing, which is about rapid exploration of user requirements. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-expanded.png" border="false":::
 
 The above diagram depicts the following user actions, tools, and features:
 
