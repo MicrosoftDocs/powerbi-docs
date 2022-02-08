@@ -117,28 +117,15 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
     :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the power B I premium utilization and metrics app's setup screen, showing the connect button.":::
 
-4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the following fields:
+4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the following fields according to the table below:
     
     |Field          |Required |Value  |Notes  |
     |---------------|---------|---------|---------|
-    |**CapacityID** |✔️ |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br>Once installed, the app will let you see all the capacities you can access. |
-    |**UTC_offset** |✔️ |0 |Enter a numerical zero only         |
-    |**Timepoint**  |❌ |         |This field is automatically populated and is used for internal purposes. The value in these fields will be overwritten when you use the app. |
-    |**Timepoint2** |❌ |         |This field is automatically populated and is used for internal purposes. The value in these fields will be overwritten when you use the app. |
-    |**Advanced**   |Optional |**On** (default) or **Off** |The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option and selecting **Off**. |
-    
-    * **CapacityID** - An ID of a capacity you're an admin of. You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity.
-
-        The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.
-
-        >[!NOTE]
-        >Once installed, the app will let you see all the capacities you can access.
-
-    * **UTC_offset** - 0
-
-    >[!NOTE]
-    >* The *Timepoint* and *Timepoint2* fields, are automatically populated and are used for internal purposes. The value in these fields will be overwritten when you use the app.
-    >* The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option.
+    |**CapacityID** |Yes |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br></br>Once installed, the app will let you see all the capacities you can access. |
+    |**UTC_offset** |Yes |0 |Enter a numerical zero only. |
+    |**Timepoint**  |No  |         |This field is automatically populated and is used for internal purposes. The value in these fields will be overwritten when you use the app. |
+    |**Timepoint2** |No  |         |This field is automatically populated and is used for internal purposes. The value in these fields will be overwritten when you use the app. |
+    |**Advanced**   |Optional |**On** or **Off** |The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option and selecting **Off**. |
 
 5. Select **Next**.
 
