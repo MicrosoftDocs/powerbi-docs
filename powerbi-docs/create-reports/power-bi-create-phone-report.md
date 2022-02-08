@@ -93,11 +93,9 @@ Use the visualizations pane to format a visual for mobile layout.
 >[!NOTE]
 > Formatting changes that you make to visuals in the mobile layout will not affect the desktop layout of your report.
 
-On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane.
+On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane. The visual's properties are split out on to two tabs. The **Visual** tab contains settings that pertain only to the visual, while the **General** tab contains settings that are consistent across all visual types. Expand the categories to start editing properties.
 
-[Screenshot of Visualizations pane showing a visual's property values](media/desktop-create-phone-report/visualizations-pane-mobile-layout.png)
- 
-The visual's properties are split out on to two tabs. The **Visuals** tab contains settings that pertain only to the visual, while the **General** tab contains settings that are consistent across all visual types. Expand the categories to start editing properties.
+![Screenshot of Visualizations pane showing a visual's property values](media/power-bi-create-phone-report/visualizations-pane-mobile-layout.png)
 
 When you first place a visual on the canvas, most of its property values are inherited from the desktop layout. When you change a property, however, the property stops inheriting from the desktop layout and becomes independent. Any changes you make to the property won't affect the desktop layout, and vice versa; any changes you make to the property in desktop layout won’t affect mobile layout. 
 When you change a visual's property, an icon indicates that the property has changed.
