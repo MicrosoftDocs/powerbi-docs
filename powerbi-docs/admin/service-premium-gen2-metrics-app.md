@@ -117,7 +117,7 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    [*Interactive*](service-premium-gen2-faq.tml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
+    [*Interactive*](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
