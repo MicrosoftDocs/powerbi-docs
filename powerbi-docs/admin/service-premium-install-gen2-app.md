@@ -119,7 +119,6 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
 4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the fields according to the table below:
 
-    |   |   |   |   |
     |Field          |Required |Value    |Notes    |
     |---------------|---------|---------|---------|
     |**CapacityID** |Yes |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br>Once installed, the app will let you see all the capacities you can access. |
