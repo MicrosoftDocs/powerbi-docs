@@ -68,9 +68,9 @@ conceptualContent:
         - url: fundamentals/desktop-getting-started.md
           itemType: get-started
           text: Get started with Power BI Desktop
-        - url: fundamentals/desktop-latest-update.md
-          itemType: overview
-          text: What's new in Power BI?
+        - url: fundamentals/service-get-started.md
+          itemType: tutorial
+          text: Get started creating in the Power BI service
       # footerLink (optional)
       footerLink:
         url: fundamentals/index.yml
