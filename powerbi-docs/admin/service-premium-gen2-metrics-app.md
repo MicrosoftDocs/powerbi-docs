@@ -396,7 +396,7 @@ The overloading visual has the following columns:
 
 * **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
 
-* **Overload time %** - The number of overloaded penalty seconds divided by the duration of interactive operations that took place.
+* **Overload time %** - The number of overloaded seconds divided by the duration of interactive operations that took place.
 
 ### Performance
 
