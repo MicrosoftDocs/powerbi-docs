@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/18/2021
+ms.date: 01/31/2022
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -71,14 +71,21 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA read-write
 
-By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces and datasets* assigned to the capacity.
+By default, Premium capacity or Premium Per User dataset workloads have the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write.
 
-### To enable read-write for a capacity
+### To enable read-write for a Premium capacity
 
+1. Click **Settings** > **Admin portal**.
 1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > capacity name.
-2. Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**.
+1. Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**. The XMLA Endpoint setting applies to *all workspaces and datasets* assigned to the capacity.
 
     ![Enable XMLA endpoint](media/service-premium-connect-tools/xmla-endpoint-enable.png)
+
+### To enable read-write for Premium Per User
+
+1. Click **Settings** > **Admin portal**.
+1. In the Admin portal, select **Premium Per User**.
+1. Expand **Dataset workload settings**. In the **XMLA Endpoint** setting, select **Read Write**.
 
 ## Connecting to a Premium workspace
 

@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/10/2022
+ms.date: 01/30/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -71,7 +71,7 @@ Are now called *Quick Insights*.
 
 ### Bookmark
 
-A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the PBIX report file for sharing on the Power BI service
+A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
 ### Breadcrumbs
 
@@ -225,7 +225,7 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 ### Environment
 
-[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
+[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment ([tenant](#tenant)) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
 ### Explicit measures
 
@@ -273,15 +273,19 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [artifacts](#artifacts) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
 Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report.
 
+### Independent Software Vendor, ISV
+
+A third-party software developer which may include an individual or an organization that independently creates computer software.
+
 ### Insights
 
-See **quick insights**.
+See [**quick insights**](#quick-insights).
 
 ## J
 
@@ -421,6 +425,10 @@ An on-premises report server with a web portal in which you display and manage r
 
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../../fundamentals/power-bi-overview.md).
 
+### Power BI tenant
+
+A Power BI account for an organization which has its data stored separately from other organizations but which is accessed through a shared service.
+
 ### Premium workspace
 
 A workspace running in a capacity, signified to customers by a diamond icon.  
@@ -431,8 +439,8 @@ See *account*.
 
 ### Publish
 
-Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
-Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in PBIX format to the Power BI service so that they can build dashboards from it and easily share it with others. 
+Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app.
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others.
 
 ## Q
 
@@ -460,7 +468,7 @@ Quick Insights refer to automatically generated insights that reveal trends and 
 
 ### R, Microsoft R
 
-R is a programming language and software environment for statistical computing and graphics.
+A programming language and software environment for statistical computing and graphics.
 
 ### Reading View
 
@@ -472,7 +480,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual [artifacts](#artifacts) that were accessed last.
 
 ### Related content
 
@@ -525,7 +533,9 @@ A standalone resource available to customers by subscription or license. A servi
 
 ### Service principal
 
-The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Can sometimes replace the *master user* to authenticate with Power BI.
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. The service principal tokens can be used to authenticate and grant access to specific Azure resources from a user-app, service or automation tool, when an organization is using Azure Active Directory.
+
+It can sometimes replace the *master user* to authenticate with Power BI.
 
 ### Settings
 
@@ -538,7 +548,11 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
+
+### Single sign-on, SSO
+
+An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
 ### Snapshot
 
@@ -560,6 +574,10 @@ See *real-time streaming*.
 
 You can subscribe to report pages, apps, and dashboards and receive emails containing a snapshot. Requires a Power BI Pro license.
 
+### Subtenant
+
+Some Power BI tenants can have multiple Power BI applications. These applications can have multiple subtenants dedicated to particular customers or projects that require isolation.
+
 ### Summarization
 
 [Power BI Desktop] The operation being applied to the values in one column.
@@ -568,11 +586,11 @@ You can subscribe to report pages, apps, and dashboards and receive emails conta
 
 ### Tenant
 
-A client organization that is served from a web service (SaaS) which serves other client organizations, where each organization’s data is stored in a separate database from the others.
+A client organization that is served from a web service (SaaS) which also serves other client organizations, and each organization’s data is stored in a separate database.
 
 ### Tiles
 
-A [tile](/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
+A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 

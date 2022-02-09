@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 01/28/2022
 ---
 # Create scorecards and manual goals in Power BI (preview)
 
@@ -25,12 +25,7 @@ You can also connect goals to an existing report visual in Power BI. See [Create
 
 ## Prerequisites
 
-Creating goals is a Power BI Premium feature, so you need either:
-
-- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity
-- A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
-
-You also need:
+You need a Power BI Pro license to author and share goals in standard workspaces. You also need:
 
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
@@ -43,15 +38,15 @@ You also need:
     :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Select Goals in the left nav.":::
 
 1. In the Goals hub, select **New scorecard**. The scorecard creation pane opens. 
-1. Name your scorecard, provide a description, and select a Power BI Premium workspace where you want to store the scorecard. 
+1. Name your scorecard, provide a description, and select the Power BI workspace where you want to store the scorecard. 
 
-    If you don’t have a Premium workspace, you can't create a scorecard. You can create a Premium workspace using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
+    If you don’t have a workspace, you can create one using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Complete the Create Scorecard pane.":::
 
 1. Select **Create**. Power BI creates the scorecard and opens it. 
 
-    Power BI creates these items in the Premium workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the goals data. 
+    Power BI creates these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the goals data. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="The new scorecard and dataset that Power BI created.":::
 
@@ -114,7 +109,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-share-link.png" alt-text="Share a link to a scorecard.":::
 
-    When you share scorecards, whether inside or outside your organization, your recipients need [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) (PPU) licenses, unless the content is in a [Power BI Premium](../admin/service-premium-what-is.md) capacity.
+    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../admin/service-premium-what-is.md) capacity.
 
 ## Next steps
 

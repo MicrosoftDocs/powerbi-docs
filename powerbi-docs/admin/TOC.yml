@@ -88,7 +88,7 @@
         href: service-security-sensitivity-label-custom-help-link.md
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md
-      - name: Sensitivity label support for paginated reports (preview)
+      - name: Sensitivity label support for paginated reports
         href: service-security-sensitivity-label-paginated-reports.md
     - name: Metadata scanning
       items:

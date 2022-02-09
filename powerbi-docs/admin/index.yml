@@ -110,7 +110,7 @@ conceptualContent:
     # Card
     - title: Power BI for developers
       links:
-        - url: ../developer/automation/overview-of-power-bi-rest-api.md
+        - url: /rest/api/power-bi/
           itemType: overview
           text: The Power BI REST API
         - url: ../developer/embedded/embedded-analytics-power-bi.md

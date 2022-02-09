@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/03/2021
+ms.date: 01/21/2022
 LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
@@ -16,8 +16,12 @@ LocalizationGroup: Create reports
 
 When you edit a report in Power BI Desktop and the Power BI service, you can add *report bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. When others view your report, they can get back to that exact state by selecting your saved bookmark.
 
-> [!NOTE]
-> In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, see [Bookmarks in the Power BI service](../consumer/end-user-bookmarks.md).
+## Other articles about bookmarks
+
+After you've created report bookmarks, you and your report readers can do more with them.
+
+- In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
+- After you've created your report bookmarks, you can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
 
 ![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks_01.png)
 
@@ -119,7 +123,7 @@ It's important to note that slicers continue to filter a report page, regardless
 > When using the **Selection** pane in combination with bookmarks, changing the visibility of a selection results in its visibility reverting to the default setting. After making such changes, you can right-click a bookmark and select *update* to update its visibility.
 
 ## Assign bookmarks to buttons
-You can also link shapes and images to bookmarks. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. For more information, see [Using buttons in Power BI](desktop-buttons.md). 
+You can link shapes and images to bookmarks. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. For more information, see [Using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks. 
 
 To assign a bookmark to an object: 
 
@@ -187,5 +191,6 @@ In this release of bookmark features, there are a few considerations and limitat
 ## Next steps
 For more information about features that are similar or interact with bookmarks, see the following articles:
 
-* [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in focus mode](../consumer/end-user-focus.md)
+- [Personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md)
+- [Build a bookmark navigation experience](button-navigators.md)
+- [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)

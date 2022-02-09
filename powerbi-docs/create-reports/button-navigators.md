@@ -1,17 +1,18 @@
 ---
-title: Create page and button navigators
+title: Create page and bookmark navigators
 description: Using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks.
 author: Sujata994
 ms.author: sunaraya
-ms.reviewer: ''
+ms.reviewer: 'maggies'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2021
+ms.custom: video-RWRCPO
+ms.date: 01/21/2022
 LocalizationGroup: Create reports
 ---
 
-# Create page and button navigators
+# Create page and bookmark navigators
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -20,6 +21,15 @@ Using Power BI’s built-in navigators, you can quickly build page and bookmark 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Example report with page and bookmark navigation":::
 
 You can find this capability in Power BI Desktop or Power BI service.
+
+## Video
+
+Watch this video showing how to add page and bookmark navigators, and then try it yourself.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRCPO]
 
 ## Page navigator
 
@@ -55,7 +65,7 @@ If you want to further customize the pages that show or hide in the page navigat
 Note that if you’re testing out the page navigator in Power BI Desktop or in edit mode of the Power BI Service, you need to press Ctrl + click to navigate to the desired page.
 
 ## Bookmark navigator
-Before you create the bookmark navigator, you need to create the bookmarks first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
+Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md) first. Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report. 
 
 :::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Bookmark examples":::  
 
