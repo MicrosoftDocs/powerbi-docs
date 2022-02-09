@@ -140,6 +140,7 @@ The image below shows an optimized report page as well as an unoptimized version
 
 ## Considerations when creating mobile-optimized layouts
 * For reports with multiple pages, you can optimize all the pages or just a few.
+* If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
 
 ## Walkthrough
 
@@ -156,26 +157,38 @@ In the walkthrough we'll see
 
 ### Changing grid orientation to better suit mobile layout
 
-The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator visual, while the page navigator stacked vertically worked well for desktop layout, it is not suitable for mobile layout. 
-
-Let’s first change the grid orientation of the navigation pane to better suit phone orientation. While having the page navigator stacked vertically works for desktop layout, it is not suitable for mobile layout.  Changing the orientation settings to horizontal, along with a few other style setting changes, makes the page navigator look appropriate for mobile.
+The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator was stacked vertically. While this orientation worked well for desktop layout, it is not optimal for mobile layout. The image below shows how the page navigator becomes horizontal by changing the Grid layout orientation property in the Visualizations pane.
 
 ![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
 
-### Using changing a shape to use as a design element
+### Changing a shape to use as a design element
+
+You can take any shape created in desktop layout and change it into any other shape in mobile layout using the Shape setting. This makes it possible to repurpose shapes. The image below demonstrates how a rectangle shape in the desktop layout, which was used as a background for the page navigator, gets changed to a line shape in the mobile layout and is used to underline the page navigator. 
 
 ![Screenshot of changing the shape used in by the mobile layout.](media/power-bi-create-phone-report/shape-to-line.gif)
 
-
 ### Changing a visual's font size to better suit other visuals
+
+The font sizes used in desktop layout are usually too large for mobile layout, taking up too much space and resulting in text that is hard to read. Therefore one of the most common things you need to do when you create a mobile layout is change the font sizes. In the image below, you can see how changing the font size on the card visual makes the text fit better into the other visual. Note how changing the display unit from thousands to millions also helps get the visual sized better for the mobile layout.
 
 ![Screenshot of changing a visual's font size.](media/power-bi-create-phone-report/change-font-size.gif)
 
 ### Using properties to precisely determine visual size and position
 
+While mobile layout canvas already has a fine-grained grid and smart guides to help you size and align visuals, there are cases where you need to control the exact size and position of the visual. You can do this using the position and size setting.
+
+>[!NOTE]
+> Size and position settings are never inherited from the desktop layout. Therefore, when you make changes to size and position settings, no change indicator will appear. 
+
+The images below shows how size and position settings can be used to size and align visuals. Note how multi-selecting the visuals makes it possible to apply the changes to several visuals at once. 
+
 ![Screenshot of using properties to precisely determine visual size and position.](media/power-bi-create-phone-report/picture-perfect-arrangement.gif)
 
 ### Using properties for optimize the a visual to save valuable screen real estate
+
+Sometimes you can use a visual's settings to make it more compact and to save space. In the following example, we see bar chart visual. To reduce the size that the visual takes up on the canvas, the legend and X axis get toggled off. However, removing the legend and X axis makes the bars unclear, as there are no values to go along with them. To remedy this, data labels are toggled on and centered on the bars. Saving space in such ways makes it possible to see more visuals at once, without having to scroll. 
+
+Tip: Most charts have the responsive setting on by default. If you don't want the elements on your chart to be affected by the visual's size, toggle the responsive setting off in the visual's settings (General > Properties > Advanced options > Responsive)  
 
 ![Screenshot of using properties to save screen real estate.](media/power-bi-create-phone-report/save-real-estate.gif)
 
