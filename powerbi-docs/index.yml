@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/01/2021
+  ms.date: 02/07/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -35,21 +35,21 @@ highlightedContent:
       itemType: tutorial
       url: developer/embedded/embed-customer-app.md
     # Card
-    - title: Explore the Power BI Embedded Analytics Playground
-      itemType: get-started
-      url: https://go.microsoft.com/fwlink/?linkid=848279
+    - title: Export Power BI embedded analytics reports API
+      itemType: concept
+      url: developer/embedded/export-to.md
     # Card
-    - title: Use the Gen2 metrics app
-      itemType: how-to-guide
-      url: admin/service-premium-gen2-metrics-app.md
+    - title: Protect sensitive data with data loss prevention policies
+      itemType: concept
+      url: admin/service-security-dlp-policies-for-power-bi.md
     # Card
     - title: Get your data on the go with Power BI mobile apps
       itemType: learn
       url: /learn/modules/explore-power-bi-mobile-apps
     # Card
-    - title: Build report navigation quickly with page and button navigators
+    - title: Create sparklines in a table or matrix
       itemType: how-to-guide
-      url: create-reports/button-navigators.md
+      url: create-reports/power-bi-sparklines-tables.md
     # Card
     - title: Study Power BI start to finish on Microsoft Learn 
       itemType: learn
@@ -68,9 +68,9 @@ conceptualContent:
         - url: fundamentals/desktop-getting-started.md
           itemType: get-started
           text: Get started with Power BI Desktop
-        - url: fundamentals/desktop-latest-update.md
-          itemType: overview
-          text: What's new in Power BI?
+        - url: fundamentals/service-get-started.md
+          itemType: tutorial
+          text: Get started creating in the Power BI service
       # footerLink (optional)
       footerLink:
         url: fundamentals/index.yml
