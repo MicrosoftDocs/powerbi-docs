@@ -49,7 +49,7 @@ Select the **View** ribbon and choose **Mobile layout**.
 
 Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
 
-![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-service.png)
+   ![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-service.png)
 
 ---
 
