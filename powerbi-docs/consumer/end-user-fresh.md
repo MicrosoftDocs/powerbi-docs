@@ -50,7 +50,7 @@ The *designer* sets up the refresh schedule for content. Some content updates co
 ### Viewing reports
 When you open and view a report, you'll notice a dropdown arrow in the center of the menu bar. Select the arrow to display contact information and a timestamp. Dashboards, worksheets, and scorecards display the owner but not a timestamp. Select the **Owner** link if you have questions or suggestions for the owner of the report.
 
-:::image type="content" source="media/end-user-fresh/power-bi-contact.png" alt-text="Report with title dropdown displayed.":::
+:::image type="content" source="media/end-user-fresh/power-bi-owners.png" alt-text="Report with title dropdown displayed.":::
 
 
 ### Viewing dashboards
