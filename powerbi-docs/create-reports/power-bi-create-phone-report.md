@@ -142,22 +142,22 @@ The image below shows an optimized report page as well as an unoptimized version
 * For reports with multiple pages, you can optimize all the pages or just a few.
 * If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
 
-## Walkthrough
+## Examples
 
-This section not ready for review yet..need to add explanations about what's going on in each one.
+This sections shows some examples of how Power BI's mobile formatting options can be used to create an easy-to-read phone-optimized report that focuses on the most critical information in your report.
 
-This walkthrough shows some of example of how the Power BI's mobile formatting options can be used to create a phone-optimized report that is easy to read makes it possible to focus on the most critical information.
-
-In the walkthrough we'll see
+The examples show:
 * How the grid orientation and style settings of a visual can be changed to better suit phone layout.
 * How different shapes can be used to better fit the mobile design.
 * How a visual's font size can be adjusted to fit in with other report visuals.
 * How you can create precise, pixel perfect design with size and position settings.
-* *How chart settings can be adjusted to maximize real estate.
+* How chart settings can be adjusted to maximize real estate.
+
+In the animated images below, the starting points show the mobile layout after some visuals have been placed on the canvas. The images then show how those visuals are changed using the Visualizations formatting pane. 
 
 ### Changing grid orientation to better suit mobile layout
 
-The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator was stacked vertically. While this orientation worked well for desktop layout, it is not optimal for mobile layout. The image below shows how the page navigator becomes horizontal by changing the Grid layout orientation property in the Visualizations pane.
+The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator was stacked vertically. While this orientation worked well for desktop layout, it is not optimal for mobile layout. The image shows how the page navigator becomes horizontal by changing the Grid layout orientation setting in the Visualizations pane.
 
 ![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
 
