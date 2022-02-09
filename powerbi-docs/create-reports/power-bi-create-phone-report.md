@@ -144,7 +144,7 @@ The image below shows an optimized report page as well as an unoptimized version
 
 ## Examples
 
-This sections shows some examples of how Power BI's mobile formatting options can be used to create an easy-to-read phone-optimized report that focuses on the most critical information in your report.
+This section shows some examples of how Power BI's mobile formatting capabilities can be used to modify visuals so that they are more useful and suitable for mobile layout.
 
 The examples show:
 * How the grid orientation and style settings of a visual can be changed to better suit phone layout.
