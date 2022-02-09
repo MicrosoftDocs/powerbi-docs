@@ -28,7 +28,7 @@ Power BI provides a number of features to help you create mobile-optimized versi
 
 These capabilities make it possible to design and build attractive, interactive mobile-optimized reports.
 
-This article introduces Power BI's mobile authoring capabilities and features, and presents a [walkthrough](#walkthrough) that demonstrates some of the things you can do to create attractive and effective report page views for phone viewing. 
+This article introduces Power BI's mobile authoring capabilities and features, and presents some [examples](#examples) that demonstrate some of the things you can do to create attractive and effective report page views for phones. 
 
 >[!NOTE]
 > Formatting changes you make for your phone optimized layout do not affect the regular layout of your report.for mobile 
