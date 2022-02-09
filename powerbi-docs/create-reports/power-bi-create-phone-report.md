@@ -43,9 +43,13 @@ To create the mobile-optimized view, open the report in either Power BI Desktop 
 
 Select the **View** ribbon and choose **Mobile layout**.
 
+![Screenshot of the mobile layout button on the View ribbon in Power B I Desktop.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-desktop.png)
+
 # [Power BI service](#tab/powerbi-service)
 
 Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+
+![Screenshot of the mobile layout button on the View ribbon in Power B I Desktop.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-desktop.png)
 
 ---
 
