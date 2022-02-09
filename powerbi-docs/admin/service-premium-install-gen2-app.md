@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/04/2022
+ms.date: 01/30/2022
 LocalizationGroup: Premium 
 ---
 
@@ -31,7 +31,7 @@ Before you install the Gen2 metrics app, review these requirements:
 Follow the steps below according to the type of installation you need.
 
 >[!NOTE]
->If you're installing the app in a government cloud environment, use one of these links:
+>If you're installing the app in a government cloud environment, use one of the links below. You can also use these links to upgrade the app. When upgrading, you don't need to delete the old app.
 >
 >* [Microsoft 365 Government Community Cloud (GCC)](https://aka.ms/USGovCapacityUsageReport)
 >
@@ -117,23 +117,16 @@ To complete the installation, you need to configure the Power BI Premium utiliza
 
     :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the power B I premium utilization and metrics app's setup screen, showing the connect button.":::
 
-4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the following fields:
+4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the fields according to the table below:
 
-    * **CapacityID** - An ID of a capacity you're an admin of. You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity.
-
-        The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.
-
-        >[!NOTE]
-        >Once installed, the app will let you see all the capacities you can access.
-
-    * **UTC_offset** - 0
-
-    * **Timepoint** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
-
-    * **Timepoint2** - Enter any value using a valid date time format such as `mm/dd/yyyy`. This field is used for internal purposes and the value you entered will get overwritten.
-
-    >[!NOTE]
-    >The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option.
+    |Field          |Required |Value    |Notes    |
+    |---------------|---------|---------|---------|
+    |**CapacityID** |Yes |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br>Once installed, the app will let you see all the capacities you can access. |
+    |**UTC_offset** |Yes |0 |Enter a numerical zero only. |
+    |**Timepoint**  |No  |         |This field is automatically populated and is used for internal purposes. The value in this field will be overwritten when you use the app. |
+    |**Timepoint2** |No  |         |This field is automatically populated and is used for internal purposes. The value in this field will be overwritten when you use the app. |
+    |**Advanced**   |Optional |**On** or **Off** |The app automatically refreshed your data at midnight. This option can be disabled by expanding the *advanced* option and selecting **Off**. |
+    |   |   |   |   |
 
 5. Select **Next**.
 

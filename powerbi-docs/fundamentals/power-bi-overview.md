@@ -6,7 +6,7 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 03/29/2021
+ms.date: 03/30/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ms.custom: intro-overview
@@ -53,7 +53,7 @@ Explore documents that pertain to your role:
 - Power BI for *developers*
     * [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
     * [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
-    * [What can developers do with the Power BI API?](../developer/automation/overview-of-power-bi-rest-api.md)
+    * [What can developers do with the Power BI API?](/rest/api/power-bi/)
 
 ## The flow of work in Power BI
 

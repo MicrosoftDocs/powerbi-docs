@@ -30,6 +30,8 @@
     items: 
     - name: "Get samples for Power BI"
       href: sample-datasets.md
+    - name: "Artificial intelligence sample"
+      href: sample-artificial-intelligence.md
     - name: "COVID-19 US sample"
       href: sample-covid-19-us.md
     - name: "Power BI Release Plan report"
@@ -216,6 +218,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in a table, matrix, or slicer"
         href: power-bi-images-tables.md
+      - name: "Create sparklines in a table or matrix"
+        href: power-bi-sparklines-tables.md
       - name: "Display custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Apply conditional table formatting"

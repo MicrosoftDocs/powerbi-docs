@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 01/19/2022
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -105,7 +105,7 @@ In summary, given the current capabilities of DirectQuery in Power BI, it offers
 * Data sovereignty restrictions apply.
 * The source is a multidimensional source containing measures, such as SAP BW.
 
-The details in the previous list relate to the use of Power BI alone. Instead, you could use an external SQL Server Analysis Services or Azure Analysis Services model to import data. Then use Power BI to connect to that model. While that approach would require additional configuration, it does provide greater flexibility. Much larger volumes of data can be imported. There's no restriction on how frequently the data can be refreshed.
+The details in the previous list relate to the use of Power BI alone. For more information about using large models in Power BI, see [large datasets in Power BI Premium](../admin/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
 
 ## Implications of using DirectQuery
 
