@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 02/08/2022
 LocalizationGroup: Create reports
 ---
-# Optimize Power BI reports for the mobile app
+# Use responsive visuals
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
