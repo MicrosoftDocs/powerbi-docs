@@ -191,18 +191,18 @@ Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbi
 
 ### Size considerations
 
-Large datasets can be resource-intensive. You should have at least a P1 or an A4 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
+Large datasets can be resource intensive. You should have at least a P1 or an A4 SKU for any datasets larger than one GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
 
-The following table shows the recommended SKUs for .pbix file upload or publish to the Power BI service:
+The following table shows the recommended SKUs for uploading or publishing a .pbix file to the Power BI service:
 
-   |SKU  |Size of .pbix   |
-   |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3, P4, P5    | up to 10 GB  |
+|SKU                    |Size of .pbix |
+|-----------------------|--------------|
+|P1/A4                  | Up to 3 GB   |
+|P2/A5                  | Up to 6 GB   |
+|P3/A6, P4/A7 and P5/A8 | Up to 10 GB  |
    
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
-A PPU capacity can allow the pbix of size upto 10 GB
+>[!NOTE]
+>When using a PPU capacity you can upload or publish .pbix files that are up to 10 GB in size.
 
 ### Large dataset storage format
 
