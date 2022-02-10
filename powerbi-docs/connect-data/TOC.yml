@@ -183,6 +183,8 @@
         href: service-dataset-description.md
       - name: "Share dataset access (preview)"
         href: service-datasets-share.md
+      - name: "Dataset permissions"
+        href: service-datasets-permissions.md
       - name: "Manage dataset access (preview)"
         href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
