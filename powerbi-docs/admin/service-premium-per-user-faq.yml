@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 02/01/2022
+  ms.date: 02/10/2022
   LocalizationGroup: Premium
     
 title: Power BI Premium Per User
@@ -112,6 +112,8 @@ sections:
 
           * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity.
 
+          * PPU model refresh parallelism limits depend on the number of licenses your organization has. The lowest PPU model refresh parallelism limit is 40, and the highest is 160.
+          
           * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement offering.
 
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
