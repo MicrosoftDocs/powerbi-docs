@@ -53,7 +53,7 @@ Privileges are the special operations required by your visual. It takes an array
 
 ### Access external resources
 
-Visual going to access any external resource, must add a `WebAccess` privilege into capabilities section. The privilege can definition can contain an optional list of URLs the visual need to access in form of http://xyz.com or https://xyz.com. Every URL can include a wildcard to specify subdomains as well
+Visual going to access any external resource, must add a `WebAccess` privilege into capabilities section. The privilege definition may contain an optional list of URLs the visual needs to access of the following form: http://xyz.com or https://xyz.com. Every URL can also include a wildcard to specify subdomains as well.
 
 #### Example
 
@@ -61,15 +61,15 @@ Visual going to access any external resource, must add a `WebAccess` privilege i
 {
     "name": "WebAccess",
     "essential": true,
-    "parameters": [ "https://*.virtualearth.net" ]
+    "parameters": [ "https://*.microsoft.com", "http://example.com" ]
 }
 ```
 
-The above definition means, that the visual need to access any subdomain of the virtualearth.net via HTTPS protocol only and that this is essential for visual's normal work.
+The above definition means, that the visual needs to access any subdomain of the microsoft.com via HTTPS protocol only, example.com without subdomains via HTTP and that this is essential for visual's normal work.
 
 ### Access browser local storage
 
-Visual going to access browser local storage via [Local Storage API](./local-storage.md), must add a `LocalStorage` privilege into capabilities section.
+The visual will access the browser local storage via the [Local Storage API](./local-storage.md), must add a `LocalStorage` privilege into capabilities section.
 
 #### Example
 
@@ -79,7 +79,7 @@ Visual going to access browser local storage via [Local Storage API](./local-sto
     "essential": false
 }
 ```
-The above definition means, that the visual may need to access browser local storage and that if it will not be permitted it will contnue to work anyway.
+The above definition means, that the visual may need to access browser local storage and that if it will not be permitted it will continue to work anyway.
 
 ### Common example
 
