@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to 
-ms.date: 09/28/2021
+ms.date: 02/10/2022
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -157,3 +157,7 @@ Refresh in the old region should stop after migration.
 ### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location?
  
 Yes. As it’s a new location, the IP ranges are also changing and need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
+
+### Is there a cost to have my tenant moved to a different region?
+
+No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. The operation must be requested by a global administrator.
