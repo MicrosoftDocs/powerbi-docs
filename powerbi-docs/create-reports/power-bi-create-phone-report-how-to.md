@@ -42,7 +42,15 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 You see a scrollable canvas shaped like a phone, a **Page visuals** pane that lists all of the visuals that are on the original report page, and a **Visualizations** pane, where you will format visual properties. The Visualization pane is empty until you select a visual on the canvas.
 
-![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view.png)
+![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-explained.png)
+
+1. Fined-grained canvas grid
+1. Grid controls
+1. Visual name
+1. Visualization status (Shown visual)
+1. Visualization status indicator (Hidden visual)
+1. Filter by visualization status
+1. Remove all visuals from canvas
 
 ## Create an initial layout
 
