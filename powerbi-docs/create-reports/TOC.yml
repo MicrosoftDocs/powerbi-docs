@@ -256,16 +256,12 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
-    - name: Optimized reports for the mobile apps
+    - name: Create mobile-optimized reports for the mobile apps
       items:
-      - name: "Mobile optimized reports overview"
-        href: power-bi-create-phone-report-overview.md
-      - name: "Create a mobile-optimized layout"
-        href: power-bi-create-phone-report-layout-visuals.md
-      - name: "Fine tune a mobile optimized layout"
-        href: power-bi-create-phone-report-format-visuals.md
-      - name: "Responsive visuals"
-        href: power-bi-create-phone-report-responsive-visuals.md
+      - name: "About mobile-optimized reports"
+        href: power-bi-create-phone-report.md
+      - name: "Create a mobile-optimized report"
+        href: power-bi-create-phone-report-how-to.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
