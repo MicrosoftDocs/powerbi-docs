@@ -21,6 +21,9 @@ This article describes how you can receive notifications about activity from Pow
 To receive notifications in Teams, you’ll need to install the [Power BI app for Teams](service-microsoft-teams-app.md). You’ll start getting notified when important things happen, including:
 - Someone shared a report to you and sends a message about it through Power BI.
 - Someone requests access to a report you own or manage. 
+- Someone assigns you a goal
+- Someone @mentions you in a goal 
+- Status of a goal you own changes
 
 ## Using Power BI notifications in the Teams activity feed
 
@@ -61,6 +64,40 @@ When you grant someone access to a report, they get a **report sharing** notific
 
 You can customize how to receive these notifications through the **Actions and updates** setting.
 
+### Goals notifications
+
+The following notifications are supported for Goals.
+
+#### Goals assignment 
+
+When a user assigns you as the owner of a goal you'll get a notification in Teams from them.
+
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-assign.png" alt-text="Get Power BI Goals assignment notifications in Microsoft Teams activity feed":::
+
+When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+
+You can customize how to receive these notifications through the Mentions setting.
+
+### Mentions in notes
+
+When someone @mentions you in a note on a new or existing check-in, you'll get a notification in Teams from them.
+
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-mention.png" alt-text="Get Power BI Goals mention notifications in Microsoft Teams activity feed":::
+
+When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+
+You can customize how to receive these notifications through the Mentions setting.
+
+### Goal status update 
+
+When the status of the goal gets updated by an automated status rule, you'll get a notification in Teams if you're the owner of the goal. You will get a notification from the user who configured the data connection in the case of connected goals or the user who edited the value in the case of manual goals.
+
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-status-update.png" alt-text="Get Power BI Goals status update notifications in Microsoft Teams activity feed":::
+
+When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+
+You can customize how to receive these notifications through the Actions and updates setting.
+
 ## Customizing how you receive Power BI notifications
 In Microsoft Teams settings, you can customize how you receive notifications sent by Power BI.
 
@@ -71,7 +108,7 @@ Select **Settings and more ...** icon to the left of your profile picture at the
 
 :::image type="content" source="media/service-teams-notifications/teams-notifications-settings.png" alt-text="Customize how Power BI notifications are received in Microsoft Teams.":::
 
-The currently supported notifications are in the **Actions and updates** category. The remaining categories are reserved for future use and don't currently control any notifications. 
+The currently supported notifications are in the **Actions and updates** and **Mentions** categories. The remaining categories are reserved for future use and don't currently control any notifications. 
 
 ## Admin control over notifications 
 
@@ -82,6 +119,7 @@ To help users receive notifications in Teams, you can work with the your Teams A
 ## Known issues and limitations
 
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
+- The recipient needs to have access to the scorecards to get the Goals notifications. 
 
 ## Next steps
 
