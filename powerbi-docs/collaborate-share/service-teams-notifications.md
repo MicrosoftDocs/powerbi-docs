@@ -1,15 +1,15 @@
 ---
 title: Get notifications in Microsoft Teams about activity from Power BI
 description: When important activities happen in Power BI, they're shown in the Microsoft Teams activity feed.
-author: LukaszPawlowski-MS
-ms.author: lukaszp
+author: LukaszPawlowski-MS, aphilip94
+ms.author: lukaszp, anphil
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/28/2021
+ms.date: 02/14/2022
 ---
 
 # Get notifications in Microsoft Teams about activity from Power BI
@@ -78,7 +78,7 @@ When you click the notification, the scorecard opens within the activity feed ex
 
 You can customize how to receive these notifications through the Mentions setting.
 
-### Mentions in notes
+#### Mentions in notes
 
 When someone @mentions you in a note on a new or existing check-in, you'll get a notification in Teams from them.
 
@@ -88,7 +88,7 @@ When you click the notification, the scorecard opens within the activity feed ex
 
 You can customize how to receive these notifications through the Mentions setting.
 
-### Goal status update 
+#### Goal status update 
 
 When the status of the goal gets updated by an automated status rule, you'll get a notification in Teams if you're the owner of the goal. You will get a notification from the user who configured the data connection in the case of connected goals or the user who edited the value in the case of manual goals.
 
