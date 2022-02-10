@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 02/09/2022
 LocalizationGroup: Embedded
 ---
 
@@ -35,9 +35,7 @@ Customers using Power BI Embedded Gen2 in preview don't need to take any action 
 
 ## Migration timeline summary
 
-The following image summarizes each of the key milestones detailed in this article.
-
-  :::image type="content" source="media/embedded-transition-gen1-to-gen2/gen-2-timeline.png" alt-text="Image summarizing key dates for migration to Embedded Gen 2.":::
+If you're currently using the previous version of Power BI Embedded, you're required to migrate capacities to the newer Gen2 platform. The key dates for you to be aware of are [the same as those for Power BI Premium](../../admin/service-premium-transition-gen1-to-gen2.md).
 
 ## Next steps
 
