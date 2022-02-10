@@ -43,13 +43,13 @@ A user's role in a workspace implicitly grants them permissions on the datasets 
 
 ### Permissions granted explicitly via the manage dataset permissions page
 
-A users with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
+A user with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
 
 ### Permissions acquired via a link
 
 When users share reports or datasets, links are created that provide permissions on the dataset. Users authorized to use those links will be able to access the dataset. Users with Admin or Member roles in the workspace where a dataset is located can manage these links on the [manage permissions page](service-datasets-manage-access-permissions.md#manage-links-generated-for-report-sharing).
 
-### Permissions granted in a app
+### Permissions granted in an app
 
 Users may acquire permissions on a dataset used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#publish-your-app). 
 
