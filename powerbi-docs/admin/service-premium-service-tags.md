@@ -42,7 +42,7 @@ The next collection of steps requires that you create a **Network Security Group
 > [!NOTE]
 > The priority of the rule you set must be higher than the 4096 *deny_all_inbound* rule, which means the priority value must be lower than 4096. In the following example, a priority value of 400 is used.
 
-The following **CLI script** is provided as a reference example. See [az network nsg rule](/cli/azure/network/nsg/rule?view=azure-cli-latest) for more information. You may need to change multiple values for the example to work properly in your situation. A PowerShell script is provided afterward. 
+The following **CLI script** is provided as a reference example. See [az network nsg rule](/cli/azure/network/nsg/rule) for more information. You may need to change multiple values for the example to work properly in your situation. A PowerShell script is provided afterward. 
 
 ```azurecli
 #login to azure
@@ -145,7 +145,7 @@ Save your settings and exit. Your SQL Managed Instance is now configured to allo
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Enable a Public Endpoint in the SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure)
-* [az network nsg rule](/cli/azure/network/nsg/rule?view=azure-cli-latest)
+* [az network nsg rule](/cli/azure/network/nsg/rule)
 * [Add a network security group rule in PowerShell](/azure/service-fabric/scripts/service-fabric-powershell-add-nsg-rule)
 
 
