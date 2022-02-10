@@ -33,6 +33,13 @@ See [Create a mobile-optimized report](power-bi-create-phone-report-how-to) to g
 >[!NOTE]
 > Creating a mobile-optimized view of a report page does not affect the regular desktop view of the page. 
 
+
+## Viewing optimized and unoptimized reports on a phone
+
+In the Power BI mobile apps, mobile-optimized reports are indicated by a special icon.
+
+![Mobile optimized report icon](media/power-bi-create-phone-report/desktop-create-phone-report-optimized-icon.png)
+
 ## Next steps
 * [Create a mobile-optimized report](power-bi-create-phone-report-how-to)
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
