@@ -44,13 +44,14 @@ You see a scrollable canvas shaped like a phone, a **Page visuals** pane that li
 
 ![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-explained.png)
 
-1. Fined-grained canvas grid
-1. Grid controls
-1. Visual name
-1. Visualization status (Shown visual)
-1. Visualization status indicator (Hidden visual)
-1. Filter by visualization status
-1. Remove all visuals from canvas
+1. **Fined-grained canvas grid**: Helps place visuals accurately. Can be turned on and off using the grid controls.
+1. **Grid controls**: Enable you to hide the grid, turn on/off snap-to-grid, and lock visuals in place so that they can't be moved.
+1. **Visual name**: Helps to identify the visual.
+1. **Visualization status (Shown visual)**: Indicates the visibility status of the visual - visible or hidden. Changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks. 
+1. **Visualization status indicator (Hidden visual)**: Indicates the visibility status of the visual - visible or hidden. Changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
+1. **Filter by visualization status**: To make it easier to find the visual you are looking for by reducing the number of visuals displayed in the pane, you can filter the visuals according to visibility status.
+1. **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas will not remove them from the Page visuals pane. They will still be there available for you to use.
+
 
 ## Create an initial layout
 
@@ -72,13 +73,6 @@ The image below illustrates dragging and dropping visuals from the **Page visual
 
 
 
-### The Page visuals pane
-* **Visual name**: Helps with identifying the visual.
-* **Visibility indicator**: Indicates the visibilty status of the visual - visible or hidden. Changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
-* **Visibility status filter**: To make it easier to find the visual you are looking for by reducing the number of visuals displayed in the pane, you can filter the visuals according to visibility status.
-* **Eraser**: Removes all visuals from the canvas. Removing visuals from the canvas will not remove them from the Page visuals pane. They will still be there available for you to use.
-
-![Screenshot of page visuals pane in mobile layout view.](media/power-bi-create-phone-report/mobile-layout-page-visuals-pane.png)
 
 
 
