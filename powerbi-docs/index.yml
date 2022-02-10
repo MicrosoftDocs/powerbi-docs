@@ -113,10 +113,10 @@ conceptualContent:
         - url: developer/embedded/embedded-analytics-power-bi.md
           itemType: overview
           text: What is Power BI embedded analytics?
-        - url: developer/visuals/index.yml
+        - url: developer/embedded/power-bi-embedded-generation-2.md
           itemType: overview
           text: Power BI Embedded Generation 2
-        - url: developer/visuals/develop-circle-card.md
+        - url: developer/visuals/develop-power-bi-visuals.md
           itemType: overview
           text: Develop your own Power BI visual
       # footerLink (optional)
