@@ -142,7 +142,7 @@ There are also a few **limitations** you need to keep in mind:
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
   - Import Excel / CSV files
   - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
-  - [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics) 
+  - [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
