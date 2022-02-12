@@ -29,7 +29,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.png" alt-text="Image shows a diagram of team B I, which is about small team collaboration. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -44,7 +44,7 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Users assigned to the administrator, member, or contributor [workspace role](../collaborate-share/service-roles-new-workspaces.md) can publish and manage workspace content. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Scheduled data refresh can be set up in the Power BI service to keep imported data—in datasets or dataflows—up to date. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Other self-service content creators can author new reports using an existing dataset. They can choose to use Power BI Desktop, Excel, or Power BI Report Builder (not depicted in the above diagram). The [reuse of existing datasets](../connect-data/desktop-report-lifecycle-datasets.md) in this manner is highly encouraged. |
+| ![Item 12.](media/common/icon-12-red-30x30.png) | Other self-service content creators can author new reports using an existing dataset. They can choose to use Power BI Desktop, Excel, or Power BI Report Builder (not depicted in the scenario diagram). The [reuse of existing datasets](../connect-data/desktop-report-lifecycle-datasets.md) in this manner is highly encouraged. |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Team BI solutions may be subject to more governance requirements than [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md), but fewer than [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) and [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions. |
 
 ## Key points
@@ -53,7 +53,7 @@ The following are some key points to emphasize about the team BI scenario.
 
 ### Source file storage
 
-[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and interactive reports. Because collaboration is a high priority for team BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the above diagram) are useful due to built-in version history and automatic file synchronization. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
+[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and interactive reports. Because collaboration is a high priority for team BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the scenario diagram) are useful due to built-in version history and automatic file synchronization. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
 
 When the co-management of a BI solution involves multiple people with different skillsets, consider decoupling the model and reports into separate Power BI Desktop files (described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). This approach encourages reuse of the dataset and is more efficient than continually alternating between the people who are editing the Power BI Desktop file. That's particularly helpful when, for instance, one person works on the dataset while another person works on the reports.
 
@@ -66,7 +66,7 @@ A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md
 In addition to organizing content, a workspace forms a security boundary. Assign users to workspace roles when a team member needs to edit or view all artifacts published to a workspace. The four [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (administrator, member, contributor, and viewer) support productivity for self-service content creators and consumers, without over-provisioning permissions.
 
 > [!NOTE]
-> Alternatively, workspace users can [share individual reports](../collaborate-share/service-share-dashboards.md) and dashboards (not depicted in the above diagram). Sharing can grant read-only access to someone who isn't assigned to a workspace role. However, try to limit sharing because it can be tedious to setup for many artifacts or many users.
+> Alternatively, workspace users can [share individual reports](../collaborate-share/service-share-dashboards.md) and dashboards (not depicted in the scenario diagram). Sharing can grant read-only access to someone who isn't assigned to a workspace role. However, try to limit sharing because it can be tedious to setup for many artifacts or many users.
 
 ### Power BI user licenses
 
@@ -91,7 +91,7 @@ Using a modern collaboration tool like Microsoft Teams engages users to make dat
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
 > [!NOTE]
 > For team, departmental, and enterprise BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

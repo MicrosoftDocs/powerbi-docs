@@ -29,7 +29,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-inline.png" alt-text="Image shows a diagram of enterprise B I, which is organization-wide content distribution at scale. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -60,11 +60,11 @@ The following are some key points to emphasize about the enterprise BI scenario.
 
 When the workspace license mode is **Premium** (via either Power BI capacity or Premium Per User), paginated reports can be published to the workspace. [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is a tool to develop highly interactive reports, whereas [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) is a tool to develop paginated reports. For more information about when to use paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
-Excel reports can also be published to the Power BI service (not depicted in the above diagram) when a PivotTable or PivotChart better meets reporting requirements.
+Excel reports can also be published to the Power BI service (not depicted in the scenario diagram) when a PivotTable or PivotChart better meets reporting requirements.
 
 ### Source file storage
 
-For enterprise BI, it's important to store the source Power BI Desktop files and Power BI Report Builder files in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the above diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
+For enterprise BI, it's important to store the source Power BI Desktop files and Power BI Report Builder files in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
 
 When the co-management of a BI solution involves multiple people with different skillsets, consider decoupling the model and reports into separate Power BI Desktop files (described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). This approach encourages reuse of the dataset, and is more efficient than continually alternating between the people who are editing the Power BI Desktop file. That's particularly helpful when, for instance, one person works on the dataset while another person works on the reports.
 
@@ -112,7 +112,7 @@ To access an existing dataset, the content creator must have [Build permission](
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
 > [!NOTE]
 > For team, departmental, and enterprise BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

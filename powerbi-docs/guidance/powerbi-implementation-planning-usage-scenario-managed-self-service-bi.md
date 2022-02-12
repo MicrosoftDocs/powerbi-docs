@@ -29,7 +29,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-inline.png" alt-text="Image shows a diagram of managed self-service B I, which is about reuse of centralized shared datasets by other report creators. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -59,14 +59,14 @@ The following are some key points to emphasize about the managed self-service BI
 The key aspect of making *managed self-service BI* work is to minimize the number of datasets. This scenario is about [shared datasets](../connect-data/service-datasets-across-workspaces.md) that help achieve a *single version of the truth*.
 
 > [!NOTE]
-> For simplicity, the above diagram depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal of managed self-service BI is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
+> For simplicity, the scenario diagram depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal of managed self-service BI is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
 
 ### Decouple dataset and reports
 
 When the dataset is decoupled from reports, it facilitates the separation of effort and responsibility. A shared dataset is commonly maintained by a centralized team (like IT, BI, or Center of Excellence), while reports are maintained by subject matter experts in the business units. However, that's not required. For example, this pattern can be adopted by any content creator that wants to achieve reusability.
 
 > [!NOTE]
-> For simplicity, dataflows aren't depicted in the above diagram. To learn about dataflows, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
+> For simplicity, dataflows aren't depicted in the scenario diagram. To learn about dataflows, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
 
 ### Dataset endorsement
 

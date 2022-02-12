@@ -29,7 +29,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi/usage-scenario-customizable-managed-self-service-bi-inline.png" alt-text="Image shows a diagram of customizable managed self-service B I, which is about creating new specialized datasets by extending and personalizing existing datasets. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi/usage-scenario-customizable-managed-self-service-bi-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -63,11 +63,11 @@ The following are some key points to emphasize about the customizable managed se
 The key aspect of making *managed self-service BI* work is to minimize the number of datasets. This scenario depicts a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that contributes towards achieving a *single version of the truth*.
 
 > [!NOTE]
-> For simplicity, the above diagram depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
+> For simplicity, the scenario diagram depicts just one shared dataset. However, it's not usually practical to model all organizational data in a single dataset. The other extreme is to create a new dataset for every report, as less experienced content creators often do. The goal is to find the right balance, leaning toward relatively few datasets and creating new datasets when it makes sense to do so.
 
 ### Augment the initial shared dataset
 
-Sometimes self-service creators need to augment an existing dataset with, for instance, additional data that's specific to their department. In this case, they can use [DirectQuery connections to Power BI datasets](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). This feature allows for an ideal balance of self-service enablement while taking advantage of the investment in centrally managed data assets. The above diagram depicts a DirectQuery connection. The act of converting a live connection to a DirectQuery connection creates a local model that allows new tables to be added. Relationships can be created between tables from the original shared dataset (the remote model) and new tables just added (the local model). Additional calculations and data modeling can be done to customize the new data model.
+Sometimes self-service creators need to augment an existing dataset with, for instance, additional data that's specific to their department. In this case, they can use [DirectQuery connections to Power BI datasets](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). This feature allows for an ideal balance of self-service enablement while taking advantage of the investment in centrally managed data assets. The scenario diagram depicts a DirectQuery connection. The act of converting a live connection to a DirectQuery connection creates a local model that allows new tables to be added. Relationships can be created between tables from the original shared dataset (the remote model) and new tables just added (the local model). Additional calculations and data modeling can be done to customize the new data model.
 
 > [!TIP]
 > This scenario highlights reusing a shared dataset. However, sometimes there are situations when data modelers want to limit the creation of downstream data model. In that case, they can enable the [Discourage DirectQuery connections](../connect-data/desktop-discourage-directquery-connections-to-dataset.md#discourage-directquery-connections-to-a-dataset-using-power-bi-desktop) property in the Power BI Desktop settings.

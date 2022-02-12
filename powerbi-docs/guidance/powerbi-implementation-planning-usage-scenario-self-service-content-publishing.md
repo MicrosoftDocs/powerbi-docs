@@ -35,7 +35,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Image shows a diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -77,7 +77,7 @@ It's a best practice to consider the entire workspace content as an *analytical 
 
 ### Permissions model
 
-Spend time planning the [permissions model](../create-reports/deployment-pipelines-best-practices.md#plan-your-permission-model). Full flexibility for applying different [workspace roles](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) (between development, test, and production) is supported. As depicted in the above diagram, it's common to assign the following workspace permissions:
+Spend time planning the [permissions model](../create-reports/deployment-pipelines-best-practices.md#plan-your-permission-model). Full flexibility for applying different [workspace roles](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) (between development, test, and production) is supported. As depicted in the scenario diagram, it's common to assign the following workspace permissions:
 
 - **Development workspace:** Limit access to a team of content creators and owners who collaborate together.
 - **Test workspace:** Limit access to reviewers involved with quality assurance, data validations, and user acceptance testing activities.
@@ -99,7 +99,7 @@ When possible, it's recommended that the existing content creator or owner condu
 
 ### Power BI Premium licensing
 
-Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The above diagram depicts use of a Premium (P SKUs, such as P1, P2, P3, P4, or P5) [capacity-based license](../admin/service-premium-faq.yml#what-is-power-bi-premium---) for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../admin/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the above diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
+Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The scenario diagram depicts use of a Premium (P SKUs, such as P1, P2, P3, P4, or P5) [capacity-based license](../admin/service-premium-faq.yml#what-is-power-bi-premium---) for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../admin/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the scenario diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
 
 ### Deployment settings
 
@@ -121,7 +121,7 @@ Purposefully, [certain properties aren't copied](../create-reports/deployment-pi
 
 ### OneDrive storage
 
-The above diagram depicts using OneDrive for storing the source Power BI Desktop files. The goal is to store the source files in a location that is:
+The scenario diagram depicts using OneDrive for storing the source Power BI Desktop files. The goal is to store the source files in a location that is:
 
 - Appropriately secured to ensure only publishers can access the source files. A [shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0) (rather than a personal library) is a good choice.
 - Backed up frequently so the files are safe from loss.
@@ -132,7 +132,7 @@ The above diagram depicts using OneDrive for storing the source Power BI Desktop
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
 When working with multiple environments, it's common to configure development, test, and production connections to use different source systems. In this case, use [data source rules and parameter rules](../create-reports/deployment-pipelines-get-started.md#step-4---create-deployment-rules) to manage values that differ between environments.
 

@@ -27,7 +27,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-inline.png" alt-text="Image shows a diagram of personal B I, which is about private analytics for an individual. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -48,7 +48,7 @@ The following are some key points to emphasize about the personal BI scenario.
 
 ### Choice of authoring tools
 
-[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and Power BI reports. It's possible to use different tools to create Excel reports and Power BI paginated reports (not depicted in the above diagram).
+[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and Power BI reports. It's possible to use different tools to create Excel reports and Power BI paginated reports (not depicted in the scenario diagram).
 
 ### Reliance on personal workspace
 
@@ -66,7 +66,7 @@ For personal use, which by definition means there's no sharing or collaboration 
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a [live connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
 > [!NOTE]
 > A data gateway in *personal mode* is most frequently installed on the machine of an individual user. Therefore, a data gateway in personal mode is best-suited to personal BI usage scenarios. Your organization may restrict individuals from installing data gateways, in which case the content creator can use a data gateway in standard mode (typically set up and managed by IT).
