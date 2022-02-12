@@ -31,7 +31,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-inline.png" alt-text="Image shows a diagram of prototyping and sharing, which is about rapid exploration of user requirements. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -66,14 +66,14 @@ A development [workspace](../collaborate-share/service-new-workspaces.md) is app
 
 ### Sharing reports and dashboards
 
-The above diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md#publish-your-app)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
+The scenario diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md#publish-your-app)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
 
 > [!TIP]
-> Individual item sharing should be done infrequently. Since sharing is configured per individual artifact in a workspace, it's more tedious to maintain and increases the risk of error. A valid alternative to sharing (not depicted in the above diagram) is to use [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). Workspace roles work best when colleagues need access to *all artifacts* in a workspace.
+> Individual item sharing should be done infrequently. Since sharing is configured per individual artifact in a workspace, it's more tedious to maintain and increases the risk of error. A valid alternative to sharing (not depicted in the scenario diagram) is to use [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). Workspace roles work best when colleagues need access to *all artifacts* in a workspace.
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the above diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
 
 > [!NOTE]
 > For team, departmental, and enterprise BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

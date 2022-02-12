@@ -24,7 +24,7 @@ The following diagram depicts a high-level overview of the most common user acti
 
 :::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-inline.png" alt-text="Image shows a diagram of on-premises reporting, which is about delivering a customer-managed portal. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
 
-The above diagram depicts the following user actions, tools, and features:
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -66,7 +66,7 @@ Power BI Report Server is a distinct product from SQL Server Reporting Services 
 
 ### Report server databases
 
-SQL Server hosts the Report Server databases. Most commonly, a SQL Server Database Engine instance is [installed on a Windows server](../report-server/system-requirements.md#database-server-version-requirements) in an on-premises data center. It can also be installed on a virtual machine in Azure (hosted cloud) or hosted by Azure SQL Managed Instance (not depicted in the above diagram). The database infrastructure is managed by a database administrator.
+SQL Server hosts the Report Server databases. Most commonly, a SQL Server Database Engine instance is [installed on a Windows server](../report-server/system-requirements.md#database-server-version-requirements) in an on-premises data center. It can also be installed on a virtual machine in Azure (hosted cloud) or hosted by Azure SQL Managed Instance (not depicted in the scenario diagram). The database infrastructure is managed by a database administrator.
 
 ### Mobile access
 
