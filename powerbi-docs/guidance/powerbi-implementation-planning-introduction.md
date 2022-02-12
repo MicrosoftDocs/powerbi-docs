@@ -45,10 +45,6 @@ This series of articles is certain to be helpful for organizations that are in t
 > [!TIP]
 > Some knowledge of Power BI and general business intelligence concepts is assumed. To get the most from this content, it's recommended that you become familiar with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) first.
 
-## Acknowledgments
-
-This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/) with significant contributions from Peter Myers, Matthew Roche, Alex Powers, and Chris Webb.
-
 ## Next steps
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-overview.md), learn about usage scenarios that describe how Power BI can be implemented in many different ways.
