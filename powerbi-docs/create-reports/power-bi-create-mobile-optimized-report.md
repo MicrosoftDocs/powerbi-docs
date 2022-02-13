@@ -42,37 +42,33 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 The mobile layout view will open. You'll see the scrollable [mobile layout canvas](power-bi-mobile-layout-view.md#mobile-layout-canvas) where you'll create your layout, the [page visuals pane](power-bi-mobile-layout-view.md#page-visuals-pane) that lists all of the visuals that are on the original report page, and the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane), where you will format visuals by changing their setings. The visualization pane is empty until you select a visual on the canvas. See [Mobile layout view](power-bi-mobile-layout-view.md) for further details about these design elements.  
 
-![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-explained.png)
+![Screenshot of mobile layout view.](media/power-bi-create-mobile-optimized-report/power-bi-mobile-layout-view.png)
 
 ## Create an initial layout
 
-Drag and drop the visuals you want to use from the **Page visuals** pane to the phone canvas. When you drag a visual to the canvas, by default it snaps to the grid. Alternatively, you can double-click the visual in the Page visuals pane and  it will be added to the canvas.
+Drag and drop the visuals you want to use from the page visuals pane to the mobile-layout canvas. When you drag a visual to the canvas, by default it snaps to the grid. Alternatively, you can double-click the visual in the page visuals pane and it will be added to the canvas.
 
-Once you've placed a visual on the canvas, you can resize it by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
+Once you've placed a visual on the canvas, resize it if necessary by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
-Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. You can [change the layering order of the visuals using the Selection pane](#set-the-layering-order-of-visuals).
+Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use  the [Selection pane](#set-the-layering-order-of-visuals) to change the layering order of the visuals.
 
-
-
-The image below illustrates dragging and dropping visuals from the **Page visuals** pane onto the canvas, as well as resizing and overlaying some of them.
+The image below illustrates dragging and dropping visuals from the page visuals pane onto the canvas, as well as resizing and overlaying some of them.
 
    ![Animated image of drag and drop, resize, and overlay of visuals.](media/power-bi-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
-* You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
-* You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current desktop report view.
-* The phone report grid scales across phones of different sizes, so your report will look good on both small- and large-screen phones.
+>[!NOTE]
+> * You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
+> * You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current desktop report view.
 
 ### Changing the layering order of visuals
 
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
+Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. Use the [selection pane](power-bi-mobile-layout-view.md#selection-pane) to change the layering order of the visuals as necessary.
 
-To open the **Selection** pane, click the **Selection** button in the **Show panes** section on the **View** tab. 
-
-The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
-
-The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
+Open the selection pane, click the **Selection** button in the **Show panes** section. Then select a visual on the canvas and change it's layering order by clicking the up or down arrows on the selection pane or by dragging it up or down in the list. 
 
 ![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
+
+See [Selection pane](power-bi-mobile-layout-view.md#selection-pane) for more details. about using the selection pane.
 
 ### Removing visuals from the mobile layout canvas
 
