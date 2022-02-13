@@ -7,10 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/25/2022
+ms.date: 02/14/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
+
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
@@ -21,7 +22,8 @@ For related "What's New" information, see:
 
 ## February 2022
 
-### Mobile formatting options now available in Power BI Desktop mobile layout (Preview)
+### Mobile formatting options now available in Power BI Desktop mobile layout (preview)
+
 With the new formatting pane in Power BI Desktop's mobile layout view, you can now style and format visuals specifically for mobile-optimized layout without affecting their formatting in desktop layout! [Read all about it in our blog!](https://powerbi.microsoft.com/blog/create-stunning-mobile-optimized-power-bi-reports-with-mobile-layouts-new-visual-formatting-pane-preview/)
 
 ![Screenshot of the visualizations pane in Power B I mobile layout view.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
@@ -29,17 +31,21 @@ With the new formatting pane in Power BI Desktop's mobile layout view, you can n
 ## January 2022
 
 ### New look and home page for the Power BI Windows app (general availability)
+
 The Power BI Windows app now opens directly in the new look. You land on the new home page, where you can easily find and access your most frequently and recently viewed items. The old look is no longer available.
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-new-look-ga.png" alt-text="Screenshot of the new look in the Windows app.":::
 
 ### Request access to reports and dashboards from your Power BI Windows app
+
 Have a link to a report you don't have access to? Now you can request access directly from your Power BI Windows app!
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
 
 ## December 2021
+
 ### Non-mobile-optimized report pages now open directly in any orientation
+
 Non-mobile-optimized report pages now open no matter which way you're holding your phone. You no longer have to tip it on its side in order to view non-mobile-optimized pages. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small, regular view of the page instead. You can still tilt your phone if you want a larger view of  the data, or you can just use pinch and zoom on the smaller image.
 
 ![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
