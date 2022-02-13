@@ -88,9 +88,9 @@ The visualizations pane is quite similar to the visualization pane that is part 
 
 Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
 
-To open the **Selection** pane, click the **Selection** button in the **Show panes** section on the **View** tab.
+To open the **Selection** pane, click the **Selection** button in the **Show panes** section of the mobile layout view.
 
-![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
+![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/mobile-layout-selection-pane.png)
 
 The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
 
