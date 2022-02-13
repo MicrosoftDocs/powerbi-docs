@@ -17,15 +17,13 @@ LocalizationGroup: Create reports
 
 Power BI's mobile layout view is used to create views of report pages that are optimized for viewing on mobile devices. Mobile layout view is available in both Power BI Desktop and in the Power BI service. This article explains how to open the mobile layout view and describes the features it provides.
 
-![Screenshot of mobile layout view in Power B I.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-explained.png)
+![Screenshot of mobile layout view in Power B I.](media/power-bi-create-phone-report/power-bi-mobile-layout-view.png)
 
 The mobile layout view provides the following features.
-1. **Fined-grained canvas grid**: Helps place visuals accurately. Can be turned on and off using the grid controls.
-2. **Grid controls**: Enable you to hide the grid, turn on/off snap-to-grid, and lock visuals in place so that they can't be moved.
+1. **Mobile layout canvas**: Helps place visuals accurately. Can be turned on and off using the grid controls.
 1. **Page visuals** pane: Lists all of the visuals that are included on the original report page. From the visuals listed in the page visuals pane you choose which visuals you want to include in your mobile-optimized view.
 1. **Visualizations** pane: Enables you to format visuals by changing their formatting settings. The Visualization pane is empty until you select a visual on the canvas.
 1. **Selection** pane: Enables you to change the layering order of visuals on the canvas.
-1. **Bookmarks** pane: TBD
 
 ## How to open mobile layout view
 
@@ -64,7 +62,7 @@ The page visuals pane has the following features to help you select the visuals 
 * **Filter by visualization status**: You can filter the visuals according to visibility status to make it easier to find the visual you are looking.
 * **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas does not remove them from the Page visuals pane. They remain available for you to use.
 
-## Visualization pane
+## Visualizations pane
 
 The visualizations pane enables you to precisely format visuals for mobile layout by changing their formatting settings.
 
@@ -98,14 +96,11 @@ The **Selection** pane lists all the visuals that are on the canvas. The order o
 
 The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular desktop layout view.
 
-## Bookmarks pane
-
-TBD
-
 See [Create a mobile-optimized report](power-bi-create-phone-report-how-to) to get started creating your mobile-optimized report page views.
 
 ## Next steps
-* [Create a mobile-optimized report](power-bi-create-phone-report-how-to)
+* [About mobile optimized reports](power-bi-create-phone-report.md)
+* [Create a mobile-optimized report](power-bi-create-phone-report-how-to.md)
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
 * [Power BI documentation on creating reports and dashboards](./index.yml).

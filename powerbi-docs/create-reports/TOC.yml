@@ -260,6 +260,8 @@
       items:
       - name: "About mobile-optimized reports"
         href: power-bi-create-phone-report.md
+      - name: "Mobile layout view"
+        href: power-bi-mobile-layout-view.md
       - name: "Create a mobile-optimized report"
         href: power-bi-create-phone-report-how-to.md
     - name: Visualizations
