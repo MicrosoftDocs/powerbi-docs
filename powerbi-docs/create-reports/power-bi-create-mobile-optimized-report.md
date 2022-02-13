@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 ## Prerequisite
 
-* A completed report in the regular desktop layout view that contains all the visuals you will need in the mobile-optimized view. After you've created that report, you can optimize one or more of its pages for use on phones.
+* A completed report in the regular desktop layout view that contains all the visuals you will need in the mobile-optimized view.
 
 ## Considerations when creating mobile-optimized layouts
 * For reports with multiple pages, you can optimize all the pages or just a few.
@@ -46,11 +46,11 @@ The mobile layout view will open. You'll see the scrollable [mobile layout canva
 
 ## Create an initial layout
 
-Drag and drop the visuals you want to use from the page visuals pane to the mobile-layout canvas. When you drag a visual to the canvas, by default it snaps to the grid. Alternatively, you can double-click the visual in the page visuals pane and it will be added to the canvas.
+From the page visuals pane, drag and drop the visuals you want to use onto the mobile-layout canvas. When you drag a visual to the canvas, by default it snaps to the grid. Alternatively, you can double-click the visual in the page visuals pane and it will be added to the canvas.
 
 Once you've placed a visual on the canvas, resize it if necessary by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
-Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use  the [Selection pane](#set-the-layering-order-of-visuals) to change the layering order of the visuals.
+Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-mobile-layout-view.md#selection-pane) to change the layering order of the visuals.
 
 The image below illustrates dragging and dropping visuals from the page visuals pane onto the canvas, as well as resizing and overlaying some of them.
 
@@ -59,16 +59,6 @@ The image below illustrates dragging and dropping visuals from the page visuals 
 >[!NOTE]
 > * You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
 > * You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current desktop report view.
-
-### Changing the layering order of visuals
-
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. Use the [selection pane](power-bi-mobile-layout-view.md#selection-pane) to change the layering order of the visuals as necessary.
-
-Open the selection pane, click the **Selection** button in the **Show panes** section. Then select a visual on the canvas and change it's layering order by clicking the up or down arrows on the selection pane or by dragging it up or down in the list. 
-
-![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
-
-See [Selection pane](power-bi-mobile-layout-view.md#selection-pane) for more details. about using the selection pane.
 
 ### Removing visuals from the mobile layout canvas
 
@@ -80,13 +70,15 @@ Removing visuals from the mobile layout canvas removes them from the mobile layo
 
 ## Fine tune visual formatting
 
-Use the visualizations pane to format a visual for mobile layout.
+Use the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane) to optimize a visual's format for mobile layout.
 
-On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane. The visual's formatting settings are arranged in categories split out on to two tabs. See XXX for more information about the formatting pane.
+On the mobile layout canvas, select the visual you want to format, and modify the relevant settings in the visualization pane.
 
-When you first place a visual on the canvas, most of its format settings are connected to the desktop layout and take their values from there. See XXX for exceptions. When you change a setting, however, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed.
+When you first place a visual on the canvas, most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](power-bi-mobile-layout-view.md#mobile-formatting-considerations-and-limitations) for exceptions. When you change a setting, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed.
 
 ![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+
+### Discarding mobile formatting changes
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
@@ -99,9 +91,30 @@ With the exception of the mobile change indications and the clear mobile changes
 
 ### Alternate formatting option: Responsive visuals
 
-### Limitations
 
-### Examples
+**Visuals**
+
+By default, many visuals, particularly chart-type visuals, are responsive.  That means they change dynamically to display the maximum amount of data and insight, no matter the screen size.
+
+As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
+
+![Responsive visual resizing](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
+ 
+Responsiveness can interfere with formatting using visual settings. To turn responsiveness off, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
+
+### Slicers
+
+Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
+* You can decide whether to allow report readers to select only one item or multiple items.
+* You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
+
+If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
+
+![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.gif)
+ 
+Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
+
+## Mobile formatting examples
 
 This section shows some examples of how Power BI's mobile formatting capabilities can be used to modify visuals so that they are more useful and suitable for mobile layout.
 
