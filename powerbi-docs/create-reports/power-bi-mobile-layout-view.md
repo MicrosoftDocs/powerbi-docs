@@ -56,6 +56,8 @@ The page visuals pane lists all of the visuals (both shown and hidden) that are 
 
 To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. Alternatively, you can double-click the visual on the page visuals pane and it will be added to the canvas.
 
+Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The [selection pane](#selection-pane) enables you to change the layering order.
+
 ![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-mobile-layout-view/mobile-layout-page-visuals-pane.png)
 
 The page visuals pane has the following features to help you select the visuals you want to use in your mobile-optimized view:
@@ -89,7 +91,7 @@ The visualizations pane is quite similar to the visualization pane that is part 
 
 ## Selection pane
 
-Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The selection pane enables you to change the layering order.
+The selection pane enables you to change the layering order of visuals on the canvas..
 
 To open the selection pane, click the **Selection** button in the **Show panes** section of the mobile layout view.
 
