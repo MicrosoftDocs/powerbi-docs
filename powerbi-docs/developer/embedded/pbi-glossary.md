@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/30/2022
+ms.date: 02/13/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -64,6 +64,10 @@ A component type of the Power BI workspace that includes dashboards, reports, da
 ### Auto Insights
 
 Are now called *Quick Insights*.
+
+### Azure AD, Azure Active Directory
+
+The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API.
 
 ## B
 
