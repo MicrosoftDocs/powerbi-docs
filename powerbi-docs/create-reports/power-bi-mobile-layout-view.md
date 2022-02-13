@@ -47,67 +47,56 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 ## Mobile layout canvas
 
-Use the scrollable phone emulator canvas to create your mobile-optimized layout by dragging and dropping visuals from the page visuals pane. 
+The scrollable phone emulator canvas is where you create your mobile-optimized layout. The canvas features a fine-grained grid to help you layout your visuals. Controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals in place to prevent them from accidentally being moved around. The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
-The canvas features a fine-grained grid to help you layout your visuals. Grid controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals to prevent them from accidently being moved around.
-
-![Screenshot of mobile layout view phone emulator canvas.](media/power-bi-create-phone-report power-bi-mobile-layout-view-phone-emulator-canvas.png)
-
-**Mobile canvas**
-
-1. **Fined-grained canvas grid**: Helps place visuals accurately. Can be turned on and off using the grid controls.
-2. **Grid controls**: Enable you to hide the grid, turn on/off snap-to-grid, and lock visuals in place so that they can't be moved.
- 
-The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+![Screenshot of mobile layout view phone emulator canvas.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-phone-emulator-canvas.png)
 
 ## Page visuals pane
 
-![Screenshot of page visuals pane in Power B I mobile layout  view.](media/power-bi-create-phone-report/mobile-layout-page-visuals-pane.png)
+The **Page visuals** pane lists all of the visuals (both shown and hidden) that are on the original report page, You drag and drop the visuals you want to use from the **Page visuals** pane onto the mobile layout canvas. Alternatively, you can double-click the visual in the Page visuals pane and  it will be added to the canvas.
 
-The **Page visuals** pane lists all of the visuals that are on the original report page, You drag and drop the visuals you want to use from the **Page visuals** pane onto the mobile layout canvas. Alternatively, you can double-click the visual in the Page visuals pane and  it will be added to the canvas.
+![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-create-phone-report/mobile-layout-page-visuals-pane.png)
 
-You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
+The page visuals pane has the following features to help you select the visuals you want to use in your mobile-optimized view:
 
-You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current desktop report view.
-
-The page visuals pane has the following features:
-
-1. **Visual name**: Helps to identify the visual.
-1. **Visualization status**: Indicates the visibility status of the visual - visible or hidden. This indicator changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
-1. **Filter by visualization status**: To make it easier to find the visual you are looking for by reducing the number of visuals displayed in the pane, you can filter the visuals according to visibility status.
-1. **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas does not remove them from the Page visuals pane. They remain available for you to use.
+* **Visual name**: Helps to identify the visual.
+* ***Visualization status**: Indicates the visibility status of the visual - visible or hidden. This indicator changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
+* **Filter by visualization status**: You can filter the visuals according to visibility status to make it easier to find the visual you are looking.
+* **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas does not remove them from the Page visuals pane. They remain available for you to use.
 
 ## Visualization pane
 
-Use the visualizations pane to format a visual for mobile layout.
-A **formatting pane** that enables you to precisely format your report visuals by changing their properties.
+The visualizations pane enables you to precisely format visuals for mobile layout by changing their formatting settings.
 
-On the mobile layout canvas, select the visual you want to format. The visual's properties will display on the visualizations pane. The visual's formatting settings are arranged in categories split out on to two tabs. See XXX for more information about the formatting pane.
+When you first place a visual on the canvas, its formatting settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. 
 
-When you first place a visual on the canvas, most of its format settings are connected to the desktop layout and take their values from there. See XXX for exceptions. When you change a setting, however, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed.
+When you make a change to a format setting in mobile layout, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout.
+
+When you change a formatting setting, an icon indicates that it has been changed, as shown in the illustration below.
 
 ![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
-When you discard mobile formatting changes, the property (or properties) will take on the current desktop value and resume inheriting from the desktop layout.
+When you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
 
-With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md).
+The visualizations pane is quite similar to the visualization pane that is part of desktop layout view. See [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md) for more information about the visualization pane in desktop layout.
 
->[!NOTE]
-> Formatting changes that you make to visuals in the mobile layout will not affect the desktop layout of your report.
+## Mobile formatting considerations and limitations
+* Size and positions settings are not inherited from desktop layout - hence you will never see an a change indication on size and position settings.
+* Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
 ## Selection pane
 
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
+Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
 
-To open the **Selection** pane, click the **Selection** button in the **Show panes** section on the **View** tab. 
+To open the **Selection** pane, click the **Selection** button in the **Show panes** section on the **View** tab.
+
+![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
 
 The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
 
-The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
-
-![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/selection-pane-mobile-layout.png)
+The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular desktop layout view.
 
 ## Bookmarks pane
 
