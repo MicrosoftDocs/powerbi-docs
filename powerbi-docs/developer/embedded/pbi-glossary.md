@@ -69,6 +69,10 @@ Auto insights are now called [Quick Insights](#quick-insights).
 
 The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API.
 
+### Azure Key Vault
+
+The pay-as-you-go security solution that uses a single location (the vault) in Azure to store, secure and manage cryptographic keys and secrets that can then be invoked by URI and used by applications for small, high-value security data, such as authentication keys, storage account keys, data encryption keys, .pfx files, and passwords.
+
 ## B
 
 ### BI, business intelligence
