@@ -21,7 +21,7 @@ For related "What's New" information, see:
 
 ## February 2022
 
-### New visual formatting pane for mobile report authoring (preview)
+### New visual formatting pane for mobile-optimized report authoring (preview)
 With the new formatting pane in Power BI's mobile layout view, you can now style and format visuals specially for mobile-optimized layout without affecting their formatting in desktop layout! [Read all about it in our blog!](https://powerbi.microsoft.com/blog/create-stunning-mobile-optimized-power-bi-reports-with-mobile-layouts-new-visual-formatting-pane-preview/)
 
 ![Screenshot of the visualizations pane in Power B I mobile layout view.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
