@@ -49,6 +49,8 @@ You see a scrollable canvas shaped like a phone, a **Page visuals** pane that li
 1. **Fined-grained canvas grid**: Helps place visuals accurately. Can be turned on and off using the grid controls.
 2. **Grid controls**: Enable you to hide the grid, turn on/off snap-to-grid, and lock visuals in place so that they can't be moved.
 
+The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+
 **Page visuals pane**
 
 3. **Visual name**: Helps to identify the visual.
