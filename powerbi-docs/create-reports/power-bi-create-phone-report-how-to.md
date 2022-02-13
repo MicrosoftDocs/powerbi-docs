@@ -16,9 +16,9 @@ LocalizationGroup: Create reports
 
 ## Prerequisite
 
-The first step is to design and create the report in the regular web view. After you've created the report, you can optimize one or more of its pages for use on phones. 
+* A completed report in the regular desktop layout view that contains all the visuals you will need in the mobile-optimized view. After you've created that report, you can optimize one or more of its pages for use on phones.
 
-### Considerations when creating mobile-optimized layouts
+## Considerations when creating mobile-optimized layouts
 * For reports with multiple pages, you can optimize all the pages or just a few.
 * If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
 
@@ -40,29 +40,9 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 ---
 
-You see a scrollable canvas shaped like a phone, a **Page visuals** pane that lists all of the visuals that are on the original report page, and a **Visualizations** pane, where you will format visual properties. The Visualization pane is empty until you select a visual on the canvas.
+The mobile layout view will open. You'll see the scrollable [mobile layout canvas](power-bi-mobile-layout-view.md#mobile-layout-canvas) where you'll create your layout, the [page visuals pane](power-bi-mobile-layout-view.md#page-visuals-pane) that lists all of the visuals that are on the original report page, and the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane), where you will format visuals by changing their setings. The visualization pane is empty until you select a visual on the canvas. See [Mobile layout view](power-bi-mobile-layout-view.md) for further details about these design elements.  
 
 ![Screenshot of mobile layout view.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-explained.png)
-
-**Mobile canvas**
-
-1. **Fined-grained canvas grid**: Helps place visuals accurately. Can be turned on and off using the grid controls.
-2. **Grid controls**: Enable you to hide the grid, turn on/off snap-to-grid, and lock visuals in place so that they can't be moved.
-
-The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
-
-**Page visuals pane**
-
-3. **Visual name**: Helps to identify the visual.
-1. **Visualization status (Shown visual)**: Indicates the visibility status of the visual - visible or hidden. Changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks. 
-1. **Visualization status indicator (Hidden visual)**: Indicates the visibility status of the visual - visible or hidden. Changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
-1. **Filter by visualization status**: To make it easier to find the visual you are looking for by reducing the number of visuals displayed in the pane, you can filter the visuals according to visibility status.
-1. **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas will not remove them from the Page visuals pane. They will still be there available for you to use.
-
-**Visualizations pane**
-
-The Visualizations pane is empty until you select a visual on the canvas.
-
 
 ## Create an initial layout
 

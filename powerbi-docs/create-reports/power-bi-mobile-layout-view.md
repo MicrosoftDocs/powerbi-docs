@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 Power BI's mobile layout view is used to create views of report pages that are optimized for viewing on mobile devices. Mobile layout view is available in both Power BI Desktop and in the Power BI service. This article explains how to open the mobile layout view and describes the features it provides.
 
-![Screenshot of mobile layout view in Power B I.](media/power-bi-create-phone-report/power-bi-mobile-layout-view.png)
+![Screenshot of mobile layout view in Power B I.](media/power-bi-mobile-layout-view/power-bi-mobile-layout-view.png)
 
 * **Mobile layout canvas**: Create your mobile optimized view on the mobile layout canvas. The canvas has a fined-grained grid to help you place your visuals.
 * **Page visuals pane**: The page visuals pane lists all of the visuals that are included on the original report page. From the visuals listed in the page visuals pane you choose which visuals you want to include in your mobile-optimized view.
@@ -34,13 +34,13 @@ You can open mobile layout view in both Power BI Desktop and the Power BI servic
 
 Select the **View** ribbon and choose **Mobile layout**.
 
-![Screenshot of the mobile layout button on the View ribbon in Power B I Desktop.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-desktop.png)
+![Screenshot of the mobile layout button on the View ribbon in Power B I Desktop.](media/power-bi-mobile-layout-view/power-bi-mobile-layout-button-desktop.png)
 
 # [Power BI service](#tab/powerbi-service)
 
 Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
 
-   ![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-service.png)
+   ![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-mobile-layout-view/power-bi-mobile-layout-button-service.png)
 
 ---
 
@@ -48,7 +48,7 @@ Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look 
 
 The scrollable phone emulator canvas is where you create your mobile-optimized layout. The canvas features a fine-grained grid to help you layout your visuals. Canvas controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals in place to prevent them from accidentally being moved around. The grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
-![Screenshot of mobile layout view phone emulator canvas.](media/power-bi-create-phone-report/power-bi-mobile-layout-view-phone-emulator-canvas.png)
+![Screenshot of mobile layout view phone emulator canvas.](media/power-bi-mobile-layout-view/power-bi-mobile-layout-view-phone-emulator-canvas.png)
 
 ## Page visuals pane
 
@@ -56,7 +56,7 @@ The page visuals pane lists all of the visuals (both shown and hidden) that are 
 
 To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. Alternatively, you can double-click the visual on the page visuals pane and it will be added to the canvas.
 
-![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-create-phone-report/mobile-layout-page-visuals-pane.png)
+![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-mobile-layout-view/mobile-layout-page-visuals-pane.png)
 
 The page visuals pane has the following features to help you select the visuals you want to use in your mobile-optimized view:
 
@@ -75,7 +75,7 @@ When you make a change to a format setting in mobile layout, that setting discon
 
 When you change a formatting setting, an icon indicates that it has been changed, as shown in the illustration below.
 
-![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-mobile-layout-view/visualizations-pane-mobile-layout-with-changes.png)
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
@@ -97,7 +97,7 @@ The selection pane lists all the visuals that are on the canvas. The order of th
 
 The selection pane also has an appearance indication for each visual in the list, but it is not possible to change the appearance in the mobile layout view - this must be done in the regular desktop layout view.
 
-![Screenshot showing selection pane and how to open it.](media/power-bi-create-phone-report/mobile-layout-selection-pane.png)
+![Screenshot showing selection pane and how to open it.](media/power-bi-mobile-layout-view/mobile-layout-selection-pane.png)
 
 ## Next steps
 * [Create a mobile-optimized report](power-bi-create-phone-report-how-to.md)
