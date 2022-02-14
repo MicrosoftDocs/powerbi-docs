@@ -264,9 +264,9 @@
         href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
       - name: "Create an initial layout"
         href: power-bi-create-mobile-optimized-report-initial-layout.md
-      - name: "Format visuals"
+      - name: "Optimize visual formatting"
         href: power-bi-create-mobile-optimized-report-format-visuals.md
-      - name: "Rearrange layering of visuals"
+      - name: "Rearrange visual layering"
         href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 

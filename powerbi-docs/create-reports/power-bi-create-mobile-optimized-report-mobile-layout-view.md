@@ -52,27 +52,7 @@ The scrollable phone emulator canvas is where you create your mobile-optimized l
 
 
 
-## Visualizations pane
 
-The visualizations pane enables you to precisely format visuals for mobile layout by changing their format settings.
-
-When you first place a visual on the canvas, its format settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. 
-
-When you make a change to a format setting in mobile layout, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. IF you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
-
-When you change a formatting setting, an icon indicates that it has been changed, as shown in the illustration below.
-
-![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-mobile-layout-view/visualizations-pane-mobile-layout-with-changes.png)
-
-You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
-
-Remember, When you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
-
-The visualizations pane is quite similar to the visualization pane that is part of desktop layout view. See [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md) for more information about the visualization pane in desktop layout.
-
-## Mobile formatting considerations and limitations
-* Size and positions settings are not inherited from desktop layout - hence you will never see an a change indication on size and position settings.
-* Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
 ## Selection pane
 

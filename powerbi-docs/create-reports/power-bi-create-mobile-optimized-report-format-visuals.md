@@ -1,5 +1,5 @@
 ---
-title: Optimize reports for the Power BI mobile apps
+title: Format visuals for mobile
 description: Learn how to optimize report pages for the Power BI mobile apps by creating a portrait version of the report specifically for phones.
 author: paulinbar
 ms.author: painbar
@@ -8,89 +8,39 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/08/2022
+ms.date: 02/14/2022
 LocalizationGroup: Create reports
 ---
 
-# Create a mobile-optimized report
-
-## Prerequisite
-
-* A completed report in the regular desktop layout view that contains all the visuals you will need in the mobile-optimized view.
-
-## Considerations when creating mobile-optimized layouts
-* For reports with multiple pages, you can optimize all the pages or just a few.
-* If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
-
-## Open mobile layout view
-
-To create the mobile-optimized view, open the report in either Power BI Desktop or in the Power BI service. When the report is open, go the mobile layout view.
-
-# [Power BI Desktop](#tab/powerbi-desktop)
-
-Select the **View** ribbon and choose **Mobile layout**.
-
-![Screenshot of the mobile layout button on the View ribbon in Power B I Desktop.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-desktop.png)
-
-# [Power BI service](#tab/powerbi-service)
-
-Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
-
-   ![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-create-phone-report/power-bi-mobile-layout-button-service.png)
-
----
-
-The mobile layout view will open. You'll see the scrollable [mobile layout canvas](power-bi-mobile-layout-view.md#mobile-layout-canvas) where you'll create your layout, the [page visuals pane](power-bi-mobile-layout-view.md#page-visuals-pane) that lists all of the visuals that are on the original report page, and the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane), where you will format visuals by changing their setings. The visualization pane is empty until you select a visual on the canvas. See [Mobile layout view](power-bi-mobile-layout-view.md) for further details about these design elements.  
-
-![Screenshot of mobile layout view.](media/power-bi-create-mobile-optimized-report/power-bi-mobile-layout-view.png)
-
-## Create an initial layout
-
-From the page visuals pane, drag and drop the visuals you want to use onto the mobile-layout canvas. When you drag a visual to the canvas, by default it snaps to the grid. Alternatively, you can double-click the visual in the page visuals pane and it will be added to the canvas.
-
-Once you've placed a visual on the canvas, resize it if necessary by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
-
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-mobile-layout-view.md#selection-pane) to change the layering order of the visuals.
-
-The image below illustrates dragging and dropping visuals from the page visuals pane onto the canvas, as well as resizing and overlaying some of them.
-
-   ![Animated image of drag and drop, resize, and overlay of visuals.](media/power-bi-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
-
->[!NOTE]
-> * You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
-> * You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current desktop report view.
-
-### Removing visuals from the mobile layout canvas
-
-* To remove a single visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
-
-* To remove all the visualizations from the canvas, click the eraser on the **Page visuals** pane.
-
-Removing visuals from the mobile layout canvas removes them from the mobile layout canvas only. The visuals remain available for use in the **Page visuals** pane, and the original desktop layout report remains unaffected.
-
-## Fine tune visual formatting
+# Optimize visual formatting
 
 Use the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane) to optimize a visual's format for mobile layout.
 
-On the mobile layout canvas, select the visual you want to format, and modify the relevant settings in the visualization pane.
+## The visualizations pane
 
-When you first place a visual on the canvas, most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](power-bi-mobile-layout-view.md#mobile-formatting-considerations-and-limitations) for exceptions. When you change a setting, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed.
+The visualizations pane enables you to precisely format visuals for mobile layout by changing their format settings.
 
-![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-phone-report/visualizations-pane-mobile-layout-with-changes.png)
+When you first place a visual on the canvas, its format settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](power-bi-mobile-layout-view.md#mobile-formatting-considerations-and-limitations) for exceptions.
+
+When you change a setting, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed. If you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
+
+The image below shows the visualizations pane with format settings, change indication, another pane functionality.
+
+![Screenshot of Visualizations pane showing a visual's changed property values.](media/power-bi-create-mobile-optimized-report-format-visuals/visualizations-pane-mobile-layout-with-changes.png)
 
 ### Discarding mobile formatting changes
 
 You can discard mobile formatting changes to a single category by selecting **Clear mobile changes** at the bottom of the category card. You can discard all mobile formatting changes for the visual by selecting **More options (…)** and choosing **Clear mobile formatting** from the context menu.
 
-When you discard mobile formatting changes, the property (or properties) will take on the current desktop value and resume inheriting from the desktop layout.
+When you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout resume taking its value from the there.
 
-With the exception of the mobile change indications and the clear mobile changes options, the Visualizations pane is similar to the Visualizations pane in desktop layout. For more information about using the Visualizations pane, see [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md).
+The visualizations pane in mobile layout view is quite similar to the visualization pane that is part of desktop layout view. See [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md) for more information about the visualization pane in desktop layout.
 
->[!NOTE]
-> Formatting changes that you make to visuals in the mobile layout will not affect the desktop layout of your report.
+### Mobile formatting considerations and limitations
+* Size and positions settings are not inherited from desktop layout - hence you will never see an a change indication on size and position settings.
+* Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
-### Alternate formatting option: Responsive visuals
-
+### Alternate formatting options for visuals and slicers
 
 **Visuals**
 
@@ -98,7 +48,7 @@ By default, many visuals, particularly chart-type visuals, are responsive.  That
 
 As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
 
-![Responsive visual resizing](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
+![Responsive visual resizing](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-mobile-layout-responsive-visual.gif)
  
 Responsiveness can interfere with formatting using visual settings. To turn responsiveness off, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
 
@@ -110,7 +60,7 @@ Slicers offer on-canvas filtering of report data. When designing slicers in the 
 
 If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
 
-![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.gif)
+![Power BI responsive slicer](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-create-phone-report-8.gif)
  
 Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
 
@@ -164,11 +114,5 @@ Tip: Most charts have the responsive setting on by default. If you don't want th
 
 ![Screenshot of using properties to save screen real estate.](media/power-bi-create-phone-report/save-real-estate.gif)
 
-## Publish the mobile-optimized report
-
 ## Next steps
-* Fine tune visual formatting
-* [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
-* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Power BI documentation on creating reports and dashboards](./index.yml).
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+* Arrange layering of visuals
