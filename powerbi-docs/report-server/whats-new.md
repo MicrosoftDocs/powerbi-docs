@@ -19,21 +19,21 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 ## January 2022 
 
-Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2022](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-january-2022-feature-summary/).
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2022-feature-summary/).
 
 ### Power BI Desktop for Power BI Report Server
 
 #### Reporting
 
-- Page and Bookmark Navigators
+- Page and bookmark Navigators
 - Sort legend
 - New formatting options for text
-- Pie and donut chart rotation- 
+- Pie and donut chart rotation
 
 #### Modeling
 
 - SWITCH performance optimization
-- Bitwise functions in DAX- 
+- Bitwise functions in DAX
 
 ### Other
 
