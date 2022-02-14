@@ -81,19 +81,19 @@ In the animated images below, the starting points show the mobile layout after s
 
 The grid orientation of some visuals might work well in desktop layout but not so well in the smaller size and more limited space of a mobile screen. In this sample report page, the page navigator was stacked vertically. While this orientation worked well for desktop layout, it is not optimal for mobile layout. The image shows how the page navigator becomes horizontal by changing the Grid layout orientation setting in the Visualizations pane.
 
-![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-phone-report/grid-orientation.gif)
+![Screenshot of changing the grid orientation in mobile layout view.](media/power-bi-create-mobile-optimized-report-format-visuals/grid-orientation.gif)
 
 ### Changing a shape to use as a design element
 
 You can take any shape created in desktop layout and change it into any other shape in mobile layout using the Shape setting. This makes it possible to repurpose shapes. The image below demonstrates how a rectangle shape in the desktop layout, which was used as a background for the page navigator, gets changed to a line shape in the mobile layout and is used to underline the page navigator. 
 
-![Screenshot of changing the shape used in by the mobile layout.](media/power-bi-create-phone-report/shape-to-line.gif)
+![Screenshot of changing the shape used in by the mobile layout.](media/power-bi-create-mobile-optimized-report-format-visuals/shape-to-line.gif)
 
 ### Changing a visual's font size to better suit other visuals
 
 The font sizes used in desktop layout are usually too large for mobile layout, taking up too much space and resulting in text that is hard to read. Therefore one of the most common things you need to do when you create a mobile layout is change the font sizes. In the image below, you can see how changing the font size on the card visual makes the text fit better into the other visual. Note how changing the display unit from thousands to millions also helps get the visual sized better for the mobile layout.
 
-![Screenshot of changing a visual's font size.](media/power-bi-create-phone-report/change-font-size.gif)
+![Screenshot of changing a visual's font size.](media/power-bi-create-mobile-optimized-report-format-visuals/change-font-size.gif)
 
 ### Using properties to precisely determine visual size and position
 
@@ -104,7 +104,7 @@ While mobile layout canvas already has a fine-grained grid and smart guides to h
 
 The images below shows how size and position settings can be used to size and align visuals. Note how multi-selecting the visuals makes it possible to apply the changes to several visuals at once. 
 
-![Screenshot of using properties to precisely determine visual size and position.](media/power-bi-create-phone-report/picture-perfect-arrangement.gif)
+![Screenshot of using properties to precisely determine visual size and position.](media/power-bi-create-mobile-optimized-report-format-visuals/picture-perfect-arrangement.gif)
 
 ### Using properties for optimize the a visual to save valuable screen real estate
 
@@ -112,7 +112,7 @@ Sometimes you can use a visual's settings to make it more compact and to save sp
 
 Tip: Most charts have the responsive setting on by default. If you don't want the elements on your chart to be affected by the visual's size, toggle the responsive setting off in the visual's settings (General > Properties > Advanced options > Responsive)  
 
-![Screenshot of using properties to save screen real estate.](media/power-bi-create-phone-report/save-real-estate.gif)
+![Screenshot of using properties to save screen real estate.](media/power-bi-create-mobile-optimized-report-format-visuals/save-real-estate.gif)
 
 ## Next steps
-* Arrange layering of visuals
+* [Arrange layering of visuals](power-bi-create-mobile-optimized-report-order-layers.md)
