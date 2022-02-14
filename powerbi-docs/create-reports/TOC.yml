@@ -256,7 +256,7 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
-    - name: Mobile-optimized reports for the mobile apps
+    - name: Mobile-optimized reports
       items:
       - name: "About mobile-optimized reports"
         href: power-bi-create-mobile-optimized-report-about.md
