@@ -22,7 +22,9 @@ The visualizations pane enables you to precisely format visuals for mobile layou
 
 When you first place a visual on the canvas, its format settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](#mobile-formatting-considerations-and-limitations) for exceptions.
 
-When you change a setting, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed. If you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
+To format a visual, make sure the visual is selected on the canvas. In the visualizations pane, find the relevant settings and make your changes.
+
+When you change a setting, the setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed. If you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
 
 The image below shows the visualizations pane with format settings, change indication, another pane functionality.
 
