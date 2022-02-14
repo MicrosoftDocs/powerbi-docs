@@ -1,10 +1,10 @@
 ---
 title: Format visuals for mobile
-description: Learn how to optimize report pages for the Power BI mobile apps by creating a portrait version of the report specifically for phones.
+description: Learn how to optimize the visual formatting for mobile layout.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
-ms.custom: contperf-fy20q4
+ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -14,13 +14,13 @@ LocalizationGroup: Create reports
 
 # Optimize visual formatting
 
-Use the [visualizations pane](power-bi-mobile-layout-view.md#visualizations-pane) to optimize a visual's format for mobile layout.
+Use the visualizations pane to optimize a visual's format for mobile layout.
 
 ## The visualizations pane
 
 The visualizations pane enables you to precisely format visuals for mobile layout by changing their format settings.
 
-When you first place a visual on the canvas, its format settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](power-bi-mobile-layout-view.md#mobile-formatting-considerations-and-limitations) for exceptions.
+When you first place a visual on the canvas, its format settings will display in the visualizations pane. Most of its format settings are connected to the desktop layout and take their values from there. See [Mobile formatting considerations and limitations](#mobile-formatting-considerations-and-limitations) for exceptions.
 
 When you change a setting, that setting disconnects from desktop layout and becomes independent. Any changes you make to the setting won't affect the desktop layout, and vice versa; any changes you make to the setting in desktop layout won't affect mobile layout. When you change a visual's setting, an icon indicates that it has been changed. If you discard mobile formatting changes, the setting (or settings) reconnects to the desktop layout and will take on the current desktop value.
 
