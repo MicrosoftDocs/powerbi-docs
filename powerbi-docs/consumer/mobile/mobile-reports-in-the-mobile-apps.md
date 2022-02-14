@@ -203,5 +203,5 @@ See [app interaction settings](./mobile-app-interaction-settings.md) for informa
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
-* [Create a version of a report that's optimized for phones](../../create-reports/power-bi-create-phone-report.md)
+* [Create a version of a report that's optimized for phones](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

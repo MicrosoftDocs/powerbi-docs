@@ -62,7 +62,7 @@ landingContent:
           - text: Share a dashboard or report
             url: mobile-share-dashboard-from-the-mobile-apps.md
           - text: Optimize reports for the mobile apps
-            url: ../../create-reports/power-bi-create-phone-report.md
+            url: ../../create-reports/power-bi-create-mobile-optimized-report-about.md
 
   # Card (optional)
   - title: On-premises reports

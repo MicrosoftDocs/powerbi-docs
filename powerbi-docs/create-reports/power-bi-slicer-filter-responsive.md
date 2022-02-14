@@ -62,7 +62,7 @@ In Power BI Desktop, you can create a phone layout for each page of a report. If
 
     ![Add the slicer to the phone report layout](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-7-phone-slicer-icon.png)
 
-Read more about creating [reports optimized for the Power BI mobile apps](power-bi-create-phone-report.md).
+Read more about creating [reports optimized for the Power BI mobile apps](power-bi-create-mobile-optimized-report-about.md).
 
 ## Make a time or range slicer responsive
 
