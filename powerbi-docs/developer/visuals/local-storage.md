@@ -16,7 +16,7 @@ The Local Storage API is an API a custom visual can use to request the host to s
 
 ## API
 
-Local storage interface is shown in the following code:
+The local storage interface is shown in the following code:
 
 ```typescript
     export interface ILocalVisualStorageService {
@@ -104,4 +104,4 @@ export class Visual implements IVisual {
 ## Known limitations and issues
 
 Local Storage API isn't activated for Power BI visuals by default. If you want to activate it for your Power BI visual, send a request to Power BI visuals Support `pbicvsupport@microsoft.com`.  
-**Please note that your visual should be available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) and be [certified](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/). Also [LocalStorage](./capabilities.md#access-browser-local-storage) privilege should be defined in the capabilities section.**
+**Please note that your visual should be available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) and be [certified](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/). Also, the [LocalStorage](./capabilities.md#access-browser-local-storage) privilege should be defined in the capabilities section.**
