@@ -14,7 +14,9 @@ LocalizationGroup: Create reports
 
 # Rearrange visual layering
 
-The selection pane enables you to change the layering order of visuals on the canvas.
+After laying out visuals on the mobile layout canvas, use the selection pane to change the layering order of visuals on the canvas if necessary.
+
+## Use the selection pane to reorder visual layers
 
 To open the selection pane, click the **Selection** button in the **Show panes** section of the mobile layout view.
 
