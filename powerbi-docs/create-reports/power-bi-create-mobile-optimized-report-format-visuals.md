@@ -1,5 +1,5 @@
 ---
-title: Format visuals for mobile
+title: Optimize visual formatting for mobile layout
 description: Learn how to optimize the visual formatting for mobile layout.
 author: paulinbar
 ms.author: painbar

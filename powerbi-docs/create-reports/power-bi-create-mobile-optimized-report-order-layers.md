@@ -4,7 +4,7 @@ description: Learn how to rearrange the layering order of the visuals on the mob
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
-ms.custom: contperf-fy20q4
+ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
