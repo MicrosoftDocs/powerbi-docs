@@ -1,0 +1,2 @@
+> [!NOTE]
+> This article forms part of the Power BI planing implementation series of articles. For an introduction to the series, see [Power BI implementation planning](../powerbi-implementation-planning-introduction.md).
