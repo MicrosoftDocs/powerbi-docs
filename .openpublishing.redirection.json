@@ -3217,7 +3217,12 @@
         },
         {
             "source_path": "powerbi-docs/desktop-create-phone-report.md",
-            "redirect_url": "/power-bi/create-reports/desktop-create-phone-report",
+            "redirect_url": "/power-bi/create-reports/power-bi-create-mobile-optimized-report-about",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-create-phone-report.md",
+            "redirect_url": "/power-bi/create-reports/power-bi-create-mobile-optimized-report-about",
             "redirect_document_id": true
         },
         {

@@ -228,8 +228,6 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort one column by another"
         href: desktop-sort-by-column.md
-      - name: "Optimize reports for the mobile apps"
-        href: desktop-create-phone-report.md
       - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"
@@ -258,6 +256,18 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
+    - name: Mobile-optimized reports
+      items:
+      - name: "About mobile-optimized reports"
+        href: power-bi-create-mobile-optimized-report-about.md
+      - name: "Mobile layout view"
+        href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
+      - name: "Create an initial layout"
+        href: power-bi-create-mobile-optimized-report-initial-layout.md
+      - name: "Optimize visual formatting"
+        href: power-bi-create-mobile-optimized-report-format-visuals.md
+      - name: "Rearrange visual layering"
+        href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
