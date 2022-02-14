@@ -1,6 +1,6 @@
 ---
 title: Mobile layout view
-description: Learn about mobile layout view which is used to create mobile optimized views of Power BI report pages.
+description: Learn about mobile layout view, which is used to create mobile optimized views of Power BI report pages.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -29,7 +29,7 @@ Select the **View** ribbon and choose **Mobile layout**.
 
 # [Power BI service](#tab/powerbi-service)
 
-Choose **Edit report > Mobile Layout**. If the Edit option is not visible, look under **More options (...)**.
+Choose **Edit report > Mobile Layout**. If the Edit option isn't visible, look under **More options (...)**.
 
    ![Screenshot of the mobile layout button on the View ribbon in the Power B I service.](media/power-bi-create-mobile-optimized-report-mobile-layout-view/power-bi-mobile-layout-button-service.png)
 
@@ -42,7 +42,7 @@ The mobile layout view will open.
 The features of the mobile layout view are described below.
 
 * **Mobile layout canvas**: You'll create your mobile optimized layout on the mobile layout canvas. The canvas features a fine-grained grid to help you layout your visuals. Canvas controls enable you to turn off the grid, enable/disable snap-to-grid, and lock visuals in place to prevent them from accidentally being moved around. The grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
-* **Page visuals pane**: The page visuals pane lists all of the visuals that are included on the original report page. You'll create your mobile-optimized layout by dragging and dropping visuals from page visuals pane onto the layout canvas. See [Create an inital layout](power-bi-create-mobile-optimized-report-initial-layout.md).
+* **Page visuals pane**: The page visuals pane lists all of the visuals that are included on the original report page. You'll create your mobile-optimized layout by dragging and dropping visuals from page visuals pane onto the layout canvas. See [Create an initial layout](power-bi-create-mobile-optimized-report-initial-layout.md).
 * **Visualizations pane**: The visuals pane shows the format settings of the visual that is selected on the canvas. You'll use the visualizations pane to style and format visuals. See [Optimize visuals](power-bi-create-mobile-optimized-report-format-visuals.md). The visualizations pane is empty until you select a visual on the canvas.
 * **Selection pane**: The selection pane enables you to change the layering order of visuals on the canvas. See [Rearrange visual layering](power-bi-create-mobile-optimized-report-order-layers.md).
 

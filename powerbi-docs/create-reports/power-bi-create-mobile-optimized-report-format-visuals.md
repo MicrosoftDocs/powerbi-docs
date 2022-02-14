@@ -39,7 +39,7 @@ When you discard mobile formatting changes, the setting (or settings) reconnects
 The visualizations pane in mobile layout view is quite similar to the visualization pane that is part of desktop layout view. See [The new Format pane in Power BI Desktop](../fundamentals/desktop-format-pane.md) for more information about the visualization pane in desktop layout.
 
 ### Mobile formatting considerations and limitations
-* Size and positions settings are not inherited from desktop layout - hence you will never see an a change indication on size and position settings.
+* Size and positions settings are not inherited from desktop layout - hence you will never see a change indication on size and position settings.
 * Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
 ## Alternate formatting options for visuals and slicers
@@ -52,7 +52,7 @@ As a visual changes size, Power BI gives priority to the data. For example, it m
 
 ![Responsive visual resizing](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-mobile-layout-responsive-visual.gif)
  
-Responsiveness can interfere with formatting using visual settings. To turn responsiveness off, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
+Responsiveness can interfere with formatting using visual settings. To turn off responsiveness, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
 
 ### Slicers
 
@@ -108,11 +108,11 @@ The images below shows how size and position settings can be used to size and al
 
 ![Screenshot of using properties to precisely determine visual size and position.](media/power-bi-create-mobile-optimized-report-format-visuals/picture-perfect-arrangement.gif)
 
-### Using properties for optimize the a visual to save valuable screen real estate
+### Using format settings to optimize a visual to save valuable screen real estate
 
 Sometimes you can use a visual's settings to make it more compact and to save space. In the following example, we see a bar chart visual. To reduce the size that the visual takes up on the canvas, the legend and X axis get toggled off. However, removing the legend and X axis makes the bars unclear, as there are no values to go along with them. To remedy this, data labels are toggled on and centered on the bars. Saving space in such ways makes it possible to see more visuals at once, without having to scroll. 
 
-Tip: Most charts have the responsive setting on by default. If you don't want the elements on your chart to be affected by the visual's size, toggle the responsive setting off in the visual's settings (General > Properties > Advanced options > Responsive)  
+Tip: Most charts have the responsive setting on by default. If you don't want the elements on your chart to be affected by the visual's size, toggle off the responsive setting in the visual's settings (General > Properties > Advanced options > Responsive)  
 
 ![Screenshot of using properties to save screen real estate.](media/power-bi-create-mobile-optimized-report-format-visuals/save-real-estate.gif)
 

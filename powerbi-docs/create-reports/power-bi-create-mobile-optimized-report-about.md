@@ -32,13 +32,13 @@ Power BI provides a number of features to help you create mobile-optimized versi
 * A **formatting pane** that enables you to precisely format your report visuals by changing their format settings.
 * **Visuals and slicers** that can be optimized for use on small, mobile screens.
 
-With these mobile authoring capabilties, you can select, rearrange, and reformat just those visuals that make sense for mobile users on the go, enabling you to create report page views that are attractive, focused, and easy to read and use on mobile devices.
+With these mobile authoring capabilities, you can select, rearrange, and reformat just those visuals that make sense for mobile users on the go, enabling you to create report page views that are attractive, focused, and easy to read and use on mobile devices.
 
 See [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md) to learn more about Power BI's mobile authoring capabilities and to get started creating your mobile-optimized reports.
 
 ## Publish a mobile-optimized report
 
-If you created your mobile-optimized report in Power BI Desktop, all you have do is publish the main report from Desktop to the Power BI service. This publishes the mobile-optimized version at the same time.
+If you created your mobile-optimized report in Power BI Desktop, all you have to do is publish the main report from Desktop to the Power BI service. This publishes the mobile-optimized version at the same time.
 
 If you created the mobile-optimized report in the Power BI service, just save the report.
 

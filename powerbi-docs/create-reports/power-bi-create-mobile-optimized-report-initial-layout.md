@@ -24,7 +24,7 @@ The page visuals pane lists all of the visuals (both shown and hidden) that are 
 
 * **Visual name**: Helps to identify the visual.
 * **Appearance status**: Indicates the appearance status of the visual - visible or hidden. This indicator changes depending on the appearance status of the visual in the current state of the web report view. The appearance indicator is useful when working with bookmarks.
-* **Filter by appearance status**: You can filter the visuals according to appearance status to make it easier to find the visual you are looking.
+* **Filter by appearance status**: You can filter the visuals according to appearance status to make it easier to find the visual you're looking for.
 * **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas does not remove them from the Page visuals pane. They remain available for you to use.
 
 ## Lay out visuals on the canvas
@@ -33,7 +33,7 @@ To place a visual on the canvas, drag and drop the visual you want to use from t
 
 Once you've placed a visual on the canvas, resize it if necessary by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-create-mobile-optimized-report-order-layers.md) to change the layering order of the visuals.
+Each time you drag a visual onto the canvas, it's added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-create-mobile-optimized-report-order-layers.md) to change the layering order of the visuals.
 
 The image below illustrates dragging and dropping visuals from the page visuals pane onto the canvas, as well as resizing and overlaying some of them.
 
