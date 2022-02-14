@@ -58,9 +58,9 @@ To place a visual on the canvas, drag and drop the visual you want to use from t
 
 Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The [selection pane](#selection-pane) enables you to change the layering order.
 
-![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-mobile-layout-view/mobile-layout-page-visuals-pane.png)
-
 The page visuals pane has the following features to help you select the visuals you want to use in your mobile-optimized view:
+
+![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-mobile-layout-view/mobile-layout-page-visuals-pane.png)
 
 * **Visual name**: Helps to identify the visual.
 * **Appearance status**: Indicates the appearance status of the visual - visible or hidden. This indicator changes depending on the appearance status of the visual in the current state of the web report view. The appearance indicator is useful when working with bookmarks.
