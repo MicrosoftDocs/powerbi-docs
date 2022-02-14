@@ -42,30 +42,6 @@ The visualizations pane in mobile layout view is quite similar to the visualizat
 * Size and positions settings are not inherited from desktop layout - hence you will never see a change indication on size and position settings.
 * Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
-## Alternate formatting options for visuals and slicers
-
-**Visuals**
-
-By default, many visuals, particularly chart-type visuals, are responsive.  That means they change dynamically to display the maximum amount of data and insight, no matter the screen size.
-
-As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
-
-![Responsive visual resizing](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-mobile-layout-responsive-visual.gif)
- 
-Responsiveness can interfere with formatting using visual settings. To turn off responsiveness, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
-
-### Slicers
-
-Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
-* You can decide whether to allow report readers to select only one item or multiple items.
-* You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
-
-If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
-
-![Power BI responsive slicer](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-create-phone-report-8.gif)
- 
-Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
-
 ## Mobile formatting examples
 
 This section shows some examples of how Power BI's mobile formatting capabilities can be used to modify visuals so that they are more useful and suitable for mobile layout.
@@ -115,6 +91,30 @@ Sometimes you can use a visual's settings to make it more compact and to save sp
 Tip: Most charts have the responsive setting on by default. If you don't want the elements on your chart to be affected by the visual's size, toggle off the responsive setting in the visual's settings (General > Properties > Advanced options > Responsive)  
 
 ![Screenshot of using properties to save screen real estate.](media/power-bi-create-mobile-optimized-report-format-visuals/save-real-estate.gif)
+
+## Alternate formatting options for visuals and slicers
+
+**Visuals**
+
+By default, many visuals, particularly chart-type visuals, are responsive.  That means they change dynamically to display the maximum amount of data and insight, no matter the screen size.
+
+As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
+
+![Responsive visual resizing](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-mobile-layout-responsive-visual.gif)
+ 
+Responsiveness can interfere with formatting using visual settings. To turn off responsiveness, select the visual on the canvas and then in the visualizations pane go to **General > Properties > Advanced options**.
+
+### Slicers
+
+Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
+* You can decide whether to allow report readers to select only one item or multiple items.
+* You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
+
+If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
+
+![Power BI responsive slicer](media/power-bi-create-mobile-optimized-report-format-visuals/desktop-create-phone-report-8.gif)
+ 
+Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
 
 ## Next steps
 * [Arrange layering of visuals](power-bi-create-mobile-optimized-report-order-layers.md)
