@@ -50,22 +50,7 @@ The scrollable phone emulator canvas is where you create your mobile-optimized l
 
 ![Screenshot of mobile layout view phone emulator canvas.](media/power-bi-mobile-layout-view/power-bi-mobile-layout-view-phone-emulator-canvas.png)
 
-## Page visuals pane
 
-The page visuals pane lists all of the visuals (both shown and hidden) that are on the original report page.
-
-To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. Alternatively, you can double-click the visual on the page visuals pane and it will be added to the canvas.
-
-Each time you drag a visual from the page visuals pane onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The [selection pane](#selection-pane) enables you to change the layering order.
-
-The page visuals pane has the following features to help you select the visuals you want to use in your mobile-optimized view:
-
-![Screenshot of page visuals pane in Power B I mobile layout view.](media/power-bi-mobile-layout-view/mobile-layout-page-visuals-pane.png)
-
-* **Visual name**: Helps to identify the visual.
-* **Appearance status**: Indicates the appearance status of the visual - visible or hidden. This indicator changes depending on the appearance status of the visual in the current state of the web report view. The appearance indicator is useful when working with bookmarks.
-* **Filter by appearance status**: You can filter the visuals according to appearance status to make it easier to find the visual you are looking.
-* **Remove all visuals from canvas**: Removes all visuals from the canvas. Removing visuals from the canvas does not remove them from the Page visuals pane. They remain available for you to use.
 
 ## Visualizations pane
 

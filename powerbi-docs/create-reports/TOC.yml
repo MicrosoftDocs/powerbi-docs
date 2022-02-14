@@ -259,11 +259,15 @@
     - name: Mobile-optimized reports for the mobile apps
       items:
       - name: "About mobile-optimized reports"
-        href: power-bi-create-phone-report.md
+        href: power-bi-create-mobile-optimized-report-about.md
       - name: "Mobile layout view"
-        href: power-bi-mobile-layout-view.md
-      - name: "Create a mobile-optimized report"
-        href: power-bi-create-phone-report-how-to.md
+        href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
+      - name: "Create an initial layout"
+        href: power-bi-create-mobile-optimized-report-initial-layout.md
+      - name: "Format visuals"
+        href: power-bi-create-mobile-optimized-report-format-visuals.md
+      - name: "Rearrange layering of visuals"
+        href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
