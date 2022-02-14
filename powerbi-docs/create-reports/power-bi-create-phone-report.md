@@ -21,11 +21,9 @@ In Power BI, after you create a report, you can create additional mobile-optimiz
 
 ![Screenshot showing how mobile-optimized report pages display on a phone in portrait and landscape orientation.](media/power-bi-create-phone-report/power-bi-mobile-optimized-report-portrait-landscape.png)
 
-In the Power BI mobile app, reports that have mobile-optimized views are indicated with a special icon:
+In the Power BI mobile app, reports that have mobile-optimized pages are indicated with a special icon:
 
 ![Screenshot showing how mobile-optimized report pages display on a phone in portrait and landscape orientation.](media/power-bi-create-phone-report/power-bi-mobile-optimized-report-optimized-icon.png)
-
-
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:
 * A **mobile layout view** where you create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
@@ -35,16 +33,6 @@ Power BI provides a number of features to help you create mobile-optimized versi
 With these mobile authoring capabilties, you can select, rearrange, and reformat just those visuals that make sense for mobile users on the go, enabling you to create report page views that are attractive, focused, and easy to read and use on mobile devices.
 
 See [Create a mobile-optimized report](power-bi-create-phone-report-how-to) to get started creating your mobile-optimized report page views.
-
->[!NOTE]
-> Creating a mobile-optimized view of a report page does not affect the regular desktop view of the page. 
-
-
-## Viewing optimized and unoptimized reports on a phone
-
-In the Power BI mobile apps, mobile-optimized reports are indicated by a special icon.
-
-![Mobile optimized report icon](media/power-bi-create-phone-report/desktop-create-phone-report-optimized-icon.png)
 
 ## Next steps
 * [Create a mobile-optimized report](power-bi-create-phone-report-how-to)
