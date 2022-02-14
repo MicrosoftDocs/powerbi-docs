@@ -25,4 +25,7 @@ The selection pane also has an appearance indication for each visual in the list
 ![Screenshot showing selection pane and how to open it.](media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png)
 
 ## Next steps
-* ?
+* [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
+* [Optimize visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)
+* [Place viuals on the mobile layout canvas](power-bi-create-mobile-optimized-report-initial-layout.md)
+* [Publish a mobile-optimized report](power-bi-create-mobile-optimized-report-about.md#publish-a-mobile-optimized-report)
