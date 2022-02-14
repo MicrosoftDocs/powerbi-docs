@@ -23,7 +23,7 @@ In Power BI, after you create a report, you can create additional mobile-optimiz
 
 In the Power BI mobile app, reports that have mobile-optimized pages are indicated with a special icon:
 
-![Screenshot showing how mobile-optimized report pages display on a phone in portrait and landscape orientation.](media/power-bi-create-mobile-optimized-report-about/power-bi-mobile-optimized-report-optimized-icon.png)
+![Screenshot showing optimized report icon in the Power BI mobile apps.](media/power-bi-create-mobile-optimized-report-about/power-bi-mobile-optimized-report-optimized-icon.png)
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:
 * A **mobile layout view** where you create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
