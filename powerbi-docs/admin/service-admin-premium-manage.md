@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 02/14/2022
 LocalizationGroup: Premium
 ---
 
@@ -91,6 +91,8 @@ Power BI admins and global administrators can change Power BI Premium capacity. 
 1. Select **Change size**.
 
     :::image type="content" source="media/service-admin-premium-manage/powerbi-settings-change-capacity-size.png" alt-text="Screenshot that shows the Power BI Change Size button for capacity.":::
+    
+    Now you can see the options to upgrade to higher capacities like P4 and P5 for Gen 2 capacities. Ensure that you have enough v-cores available. If you dont have enough v-cores available, Go to Billing-> Purchase services and consider to purchase smaller SKU's that constitutes the number of cores to provision higher SKU.
 
 1. On the **Change size** screen, upgrade or downgrade your capacity as appropriate.
 
