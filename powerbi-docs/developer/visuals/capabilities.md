@@ -12,7 +12,7 @@ ms.date: 06/18/2019
 
 # Capabilities and properties of Power BI visuals 
 
-You use capabilities to provide information to the host about your visual. All properties on the capabilities model are `optional` except `privileges`, which are manadtory.
+You use capabilities to provide information to the host about your visual. All properties on the capabilities model are `optional` except `privileges`, which are mandatory.
 
 The root objects of a visual's capabilities are `privileges`, `dataRoles`, `dataViewMappings`, and so on.
 
@@ -31,31 +31,21 @@ The root objects of a visual's capabilities are `privileges`, `dataRoles`, `data
 
 ## Define the special permissions that your visual requires: privileges
 
-Privileges are the special operations required by your visual. It takes an array of `Privilege` objects, which defines all privilege properties. Following is the list of possible privileges:
+Privileges are special operations your visual requires to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
-### General Privilege definition
+### General privilege definition
 
-```json
-{
-    // string - The name of the privilege
-    "name"
+A JSON privilege definition contains these components:
 
-    // boolean - essentiality of the privilege. true - means, that the normal 
-    // visual functionality requires this privilege. false - it is not mandatory
-    // The property is optional and if missing - it considered to be false
-    "essential"
-    
-    // array of strings - privilege arguments as a list of strings
-    // The property is optional and if missing - it considered to be an empty array
-    "parameters"
-}
-```
+- `name` - (string) The name of the privilege.
+- `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege is not mandatory.
+- `parameters` - (string array) Arguments. `parameters` is optional, and if missing, it's considered an empty array.
 
 ### Access external resources
 
-Visual going to access any external resource, must add a `WebAccess` privilege into capabilities section. The privilege definition may contain an optional list of URLs the visual needs to access of the following form: http://xyz.com or https://xyz.com. Every URL can also include a wildcard to specify subdomains as well.
+A visual that accesses any external resource must add a `WebAccess` privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
-#### Example
+#### Example to access external resources
 
 ```json
 {
@@ -65,13 +55,13 @@ Visual going to access any external resource, must add a `WebAccess` privilege i
 }
 ```
 
-The above definition means, that the visual needs to access any subdomain of the microsoft.com via HTTPS protocol only, example.com without subdomains via HTTP and that this is essential for visual's normal work.
+The preceding definition means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual's normal work.
 
 ### Access browser local storage
 
-The visual will access the browser local storage via the [Local Storage API](./local-storage.md), must add a `LocalStorage` privilege into capabilities section.
+If the visual accesses the browser local storage via the [Local Storage API](./local-storage.md), you must add a `LocalStorage` privilege in the capabilities section.
 
-#### Example
+#### Example to access browser local storage
 
 ```json
 {
@@ -79,9 +69,10 @@ The visual will access the browser local storage via the [Local Storage API](./l
     "essential": false
 }
 ```
-The above definition means, that the visual may need to access browser local storage and that if it will not be permitted it will continue to work anyway.
 
-### Common example
+The preceding definition means that the visual might need to access browser local storage, and that if it is not permitted access, it will continue to work anyway.
+
+### Common example of a privileges definition
 
 ```json
 "privileges": [
@@ -99,7 +90,7 @@ The above definition means, that the visual may need to access browser local sto
 
 ### No privileges
 
-In case the visual does not requires any special permissions, the privileges array should be empty:
+If the visual does not requires any special permissions, the `privileges` array should be empty:
 
 ```json
   "privileges": []
