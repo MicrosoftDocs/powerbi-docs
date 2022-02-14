@@ -38,9 +38,9 @@ See [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-v
 
 ## Publish a mobile-optimized report
 
-If you created your mobile optimized report in Power BI Desktop, all you have do is publish the main report from Desktop to the Power BI service. This publishes the mobile-optimized version at the same time.
+If you created your mobile-optimized report in Power BI Desktop, all you have do is publish the main report from Desktop to the Power BI service. This publishes the mobile-optimized version at the same time.
 
-If you created the mobile optimized report in the Power BI service, just save the report.
+If you created the mobile-optimized report in the Power BI service, just save the report.
 
 ## Next steps
 * [Start creating a mobile optimized report in mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
