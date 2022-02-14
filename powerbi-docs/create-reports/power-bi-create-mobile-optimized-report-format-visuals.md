@@ -42,7 +42,7 @@ The visualizations pane in mobile layout view is quite similar to the visualizat
 * Size and positions settings are not inherited from desktop layout - hence you will never see an a change indication on size and position settings.
 * Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
-### Alternate formatting options for visuals and slicers
+## Alternate formatting options for visuals and slicers
 
 **Visuals**
 
