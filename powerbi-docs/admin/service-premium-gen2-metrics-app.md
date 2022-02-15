@@ -88,7 +88,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
 
-* **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, a value of +20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
+* **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
     Sorting the matrix by this column helps identify datasets that have had the biggest change  in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. Small datasets with little CPU activity can easily show large positive or negative values.
 
