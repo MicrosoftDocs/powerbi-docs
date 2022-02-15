@@ -13,11 +13,11 @@ LocalizationGroup: Visualizations
 
 # Organizational visuals in Power BI
 
-You can develop your own custom Power BI visuals tailored to your own specific needs. Usually, this is done when none of the visuals included with Power BI meet your exact needs.
+You can develop your own custom Power BI visuals tailored to your own specific needs. Usually, organizations develop their own custom visuals when none of the visuals included with Power BI meet their exact needs.
 
 Some organizations might have unique requirements for their Power BI visuals. They might need visuals that can convey specific data or insights unique to their organization. They may have special data requirements, or they may highlight private business methods. These organizations can develop and maintain their own Power BI visuals that they can share throughout their organization.
 
-Organizational visuals are deployed and managed by the Power BI administrator from the Admin portal. Once deployed into the organizational repository, users in the organization can easily discover and import them into their reports directly from Power BI Desktop.
+Organizational visuals are deployed and managed by the Power BI administrator from the Admin portal. Once the visuals are deployed into the organizational repository, users in the organization can easily discover and import them into their reports directly from Power BI Desktop.
 
 ![Custom visual pic](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
 
@@ -47,7 +47,7 @@ This section lists the [admin](#admin-consideration) and [user](#user-considerat
   * Viso
   * Map box
   * PowerAutomate
-  * Charticulator
+  * Articulator
 
 ## Next steps
 
