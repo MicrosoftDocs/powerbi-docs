@@ -42,14 +42,13 @@ The following additional root objects can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
-* suppressDefaultTitle
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
-* subtotals
+* [subtotals](total-subtotal-api.md)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
