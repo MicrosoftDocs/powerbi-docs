@@ -226,7 +226,7 @@ The icons in the upper right corner are your resource for settings, notification
 ### 5. **Dashboard title**
 It's not always easy to figure out which workspace and dashboard are active, so Power BI shows you the workspace and the dashboard title. In this example, we see the workspace (My workspace) and the dashboard title (Store Sales Overview). If we opened a report, the name of the report would be displayed.
 
-![Screenshot of Power B I service showing the Data classification icon.](media/service-basic-concepts/power-bi-title.png)
+![Screenshot of Power B I service showing the dashboard title.](media/service-basic-concepts/power-bi-title.png)
 
 ### 6. **Microsoft 365 app launcher**
 With the app launcher, all your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
