@@ -6,6 +6,7 @@ ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
+ms.custom: video-RWUWA9
 ms.topic: conceptual
 ms.date: 02/07/2022
 ---
