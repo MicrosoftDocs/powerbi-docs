@@ -34,10 +34,6 @@ The Gen2 metrics app has six pages:
 
 * [Artifact Detail](#artifact-detail)
 
-* [Release Notes](#release-notes)
-
-* [Help](#help)
-
 ## Overview
 
 This page provides an overview of the capacity performance. It's divided into the three sections listed below.
@@ -427,17 +423,6 @@ Use these visuals to review CPU consumption, operation duration and number of us
 * **Duration** - Each column displays the amount of seconds used to complete each operation per hour.
 
 * **Users** - Each column displays the number of active users per hour.
-
-## Release notes
-
-The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
-
-## Help
-
-This page provides a help summary for each one of the Gen2 metrics app pages. At the top there's a tab for each page in the app. Select a tab to review the help summary.
-
->[!NOTE]
->Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
 ## Considerations and limitations
 
