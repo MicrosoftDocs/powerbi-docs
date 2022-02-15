@@ -12,6 +12,10 @@ ms.date: 02/07/2022
 
 # Power BI implementation planning
 
+In this video, watch Matthew introduce you to the Power BI implementation planning series of articles.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
+
 Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series of articles is intended to help you accomplish your Power BI implementation. The articles include key considerations, actions, decision-making criteria, recommendations, and describe implementation patterns for important common usage scenarios.
 
 The series is a work in progress. The plan is to gradually release new and updated content over time. When completed, the series will:
