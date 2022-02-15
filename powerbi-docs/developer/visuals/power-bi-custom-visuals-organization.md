@@ -47,7 +47,7 @@ This section lists the [admin](#admin-consideration) and [user](#user-considerat
   * Viso
   * Map box
   * PowerAutomate
-  * Articulator
+  * Charticulator
 
 ## Next steps
 
