@@ -3587,7 +3587,12 @@
         },
         {
             "source_path": "powerbi-docs/service-data-classification.md",
-            "redirect_url": "/power-bi/create-reports/service-data-classification",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-data-classification.md",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
             "redirect_document_id": true
         },
         {
