@@ -7,10 +7,9 @@ metadata:
   ms.reviewer: ""
   ms.service: powerbi
   ms.subservice: powerbi-custom-visuals
-  ms.topic: conceptual
+  ms.topic: faq
   ms.custom: ''
   ms.date: 09/30/2020
-    
 title: Power BI visuals FAQ
 summary: | 
 
@@ -182,4 +181,3 @@ additionalContent: |
   ## Next steps
   
   For more information, visit [Troubleshooting your Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
-
