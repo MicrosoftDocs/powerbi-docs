@@ -38,7 +38,7 @@ This article lists all the Power BI Premium features.
 |[Paginated reports](./../paginated-reports/paginated-reports-report-builder-power-bi.md) |Reports that are designed for print |Gen2</br>Premium (original version) |
 |[Power BI Report Server](./../report-server/get-started.md) |On-premises report server |Gen2</br>Premium (original version) |
 |Refresh rate |[*Gen2*](service-premium-gen2-what-is.md#refresh-in-premium-gen2) - Concurrent dataset refreshes don't contribute to resource constraints</br>*Premium (original version)* - See the table at the bottom of [Capacity nodes](service-premium-what-is.md#capacity-nodes) |Gen2</br>Premium (original version) |
-|[Query caching](./../connect-data/power-bi-query-caching,md) |Speed up reports by using local caching |Gen2</br>Premium (original version) |
+|[Query caching](./../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |Gen2</br>Premium (original version) |
 |[Storage](service-admin-manage-your-data-storage-in-power-bi.md) |Manage data storage |Gen2</br>Premium (original version) |
 |[Streaming dataflows](./../transform-model/dataflows/dataflows-streaming.md) (preview) |Connect to, ingest, mash up, model, and build reports using near real-time data |Gen2</br>Premium (original version) |
 |[Unlimited content sharing](service-premium-what-is.md#unlimited-content-sharing) |Share Power BI content with anyone |Gen2</br>Premium (original version) |
