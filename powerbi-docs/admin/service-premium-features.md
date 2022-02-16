@@ -26,7 +26,7 @@ This article lists the main Power BI Premium features.
 |[Dataflows computed entities](./../transform-model/dataflows/dataflows-premium-features.md#computed-entities) |Perform in-storage computations |Gen2 or Premium (original version) |
 |[Dataflows enhanced compute engine](./../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) |Optimize the use of dataflows |Gen2 or Premium (original version)</br>Both require A3 or larger capacities |
 |[Dataflows incremental refresh](./../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh) |Use incremental refresh with dataflows |Gen2 or Premium (original version) |
-|[Dataflows linked entities](./../transform-model/dataflows/dataflows-premium-features.md#linked-entities) Reference other dataflows |Gen2, Premium (original version) or Premium Per User (PPU) |
+|[Dataflows linked entities](./../transform-model/dataflows/dataflows-premium-features.md#linked-entities) |Reference other dataflows | Gen2, Premium (original version) or Premium Per User (PPU) |
 |[Deployment pipelines](./../create-reports/deployment-pipelines-overview.md) |Manage the lifecycle of your Power BI content |Gen2, Premium (original version) or Premium Per User (PPU) |
 |[DirectQuery with dataflows](./../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi) |Connect directly to your dataflow without having to import its data |Gen2 or Premium (original version) |
 |Hybrid tables (preview) |Incremental refresh augmented with real-time data |Gen2, Premium (original version) or Premium Per User (PPU) |
