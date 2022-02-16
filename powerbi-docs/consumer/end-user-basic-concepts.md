@@ -89,7 +89,7 @@ One dataset...
 
 To learn more about datasets, visit these articles:
 - [How do designers assign permissions to datasets](../connect-data/service-datasets-build-permissions.md)    
-- [How datasets are shared with colleagues](../collaborate-share/service-share-dashboards)
+- [How datasets are shared with colleagues](../collaborate-share/service-share-dashboards.md)
 
 
 On to the next building block -- visualizations.
@@ -120,7 +120,7 @@ _______________________________________________________
 
 A dashboard represents a customized graphical view of some subset of the underlying dataset(s). *Designers* build dashboards and share them with *business users*; either individually or as part of an app. If a *business user* is given permissions to the report, they can build their own dashboards too. A dashboard is a single canvas that has *tiles*, graphics, and text.
 
-Dashboards can look similar to a report page. Just a few of the differences are that dashboards have a natural language query field in the upper left corner, and when you select a visual tile you are transported to the underlying report or URL or query. For more explanation, see [Reports versus dashboards](end-user-reports#dashboards-versus-reports).
+Dashboards can look similar to a report page. Just a few of the differences are that dashboards have a natural language query field in the upper left corner, and when you select a visual tile you are transported to the underlying report or URL or query. For more explanation, see [Reports versus dashboards](end-user-reports.md#dashboards-versus-reports).
 
   ![Screenshot of a sample dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
