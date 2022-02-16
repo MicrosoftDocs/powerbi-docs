@@ -25,7 +25,7 @@ This article assumes that you've already read the [Power BI overview](../fundame
 ### This article isn't about Power BI Desktop
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. But, as long as you're a *business user*, you'll typically work with the Power BI service. This article applies only to the Power BI service.
 
-For more information about the full suite of Power BI tools, see [What is Power BI?](../fundamentals/power-bi-overwiew.md).
+For more information about the full suite of Power BI tools, see [What is Power BI?](../fundamentals/power-bi-overview.md).
 
 ## Let's get started
 To follow along, open app.powerbi.com in your browser. 
