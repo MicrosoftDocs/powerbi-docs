@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 12/19/2021
+ms.date: 02/16/2022
 ms.custom: intro-overview
 ---
 
@@ -36,7 +36,7 @@ The *embed for your customers* solution allows you to build an app that uses non
 
 ### Embed for your organization
 
-The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content they have access to on Power BI service. This solution is aimed at big organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
+The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at significant organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
 
 ## Comparing the solutions
 
@@ -48,7 +48,7 @@ The following table provides a comparison between the two Power BI embedded anal
 |Aimed at external users         |Aimed at internal users         |
 |To authenticate app users, use your own authentication method        |App users authenticate against Azure AD         |
 |App users don't need a license         |Each app user needs a Power BI license         |
-|Non-interactive authentication, your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication, your app uses the app user credentials to authenticate         |
+|Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
 |   |   |
 
 > [!TIP]
@@ -66,11 +66,15 @@ There are two types of Power BI embedded analytics offerings, each requiring a d
 
 ### Power BI Embedded
 
-[*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
+[*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
 ### Embedding with Power BI
 
 *Embedding with Power BI* is a [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) offer that requires P or EM SKUs.
+
+## Considerations and limitations
+
+The ESRI ArcGIS visual isn't supported yet in the embed for your customers (app owns data) solution.
 
 ## Next steps
 
