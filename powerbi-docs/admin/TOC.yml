@@ -121,7 +121,7 @@
     - name: "Using the admin portal"
       href: service-admin-portal.md
     - name: "Configure capacity notifications"
-      href: service-admin-premium-capacity-notification.md      
+      href: service-admin-premium-capacity-notifications.md      
     - name: "Add custom branding"
       href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
