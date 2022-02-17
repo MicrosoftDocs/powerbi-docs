@@ -11,9 +11,9 @@ ms.date: 02/17/2022
 LocalizationGroup: Premium 
 ---
 
-# Configure Power BI Premium capacity notifications
+# Configure Power BI Premium Gen2 capacity notifications
 
-Power BI Premium allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
+Power BI Premium Gen2 allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
 
 To calculate when to send emails, Power BI checks the capacity every 15 minutes. During the check, the last 15 to 30 minutes of capacity activity are examined.
 
@@ -22,7 +22,7 @@ To calculate when to send emails, Power BI checks the capacity every 15 minutes.
 
 ## Configure capacity notifications
 
-Follow these settings to configure 
+To configure the capacity notification emails, follow these steps:
 
 1. In the Power BI service, go to **Settings** > **Settings** > **Admin portal**.
 
@@ -30,11 +30,11 @@ Follow these settings to configure
 
 2. In the *Admin portal*, select the capacity you want to configure notifications for.
 
-    :::image type="content" source="media/service-admin-premium-capacity-notifications/admin-portal-notifications.png" alt-text="A screenshot showing the notifications section in the Power B I service admin portal.":::
-
 3. Expand the **Notifications** section.
 
-4. In the **Send notifications when** section, configure your required notifications as follows:
+    :::image type="content" source="media/service-admin-premium-capacity-notifications/admin-portal-notifications.png" alt-text="A screenshot showing the notifications section in the Power B I service admin portal.":::
+
+4. In the section **Send notifications when**, configure your required notifications as follows:
 
     * **You're using ___% of your available capacity** - A notification is sent once the capacity reaches the threshold you enter.
 
@@ -44,9 +44,9 @@ Follow these settings to configure
 
     * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. When this happens, throttling will be applied to your capacity.
 
-5. In the **Send notifications to** section, select who you want to the notifications to be emailed to:
+5. In the section **Send notifications to**, select who you want the notifications to be emailed to:
 
-    * **Capacity admins** - Email notifications are sent to all the capacity admins.
+    * **Capacity admins** - Email notifications are sent to all the admins of this capacity.
 
     * **These contacts** - Enter the emails of the contacts you want to receive notifications.
 
@@ -54,13 +54,13 @@ Follow these settings to configure
 
 ## Considerations and limitations
 
-* Notifications don't include a timestamp.
+* Timestamps are not included in notification emails.
 
-* Notifications don't list by how much a threshold was crossed.
+* Notification emails don't list by how much a threshold was crossed.
 
-* After a notification is sent, there's a three hour cooling period. During this time, you'll not get any notifications even if your capacity crosses thresholds that are set to configure notifications.
+* After a notification is sent, there's a three hour cooling period. During this time, you'll not get any notifications even if your capacity crosses thresholds that are set to trigger notifications.
 
-* Capacity usage is calculated using a 30 seconds windows. In the metrics app the graphs might smooth the peak off. 
+* A 30 seconds window is applied to calculate your capacity usage. Due to a less granular calculation, capacity usage may appear differently in the [Power BI Premium utilization and metrics](service-premium-gen2-metrics-app.md) app. As a result, you may not see the event your notification points to, in the app. For example, a very short spike in capacity activity that triggers a notification, may not be seen at all in the Power BI Premium utilization and metrics app.
 
 ## Next steps
 
