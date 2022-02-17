@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/17/2022
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
@@ -26,6 +26,9 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
 > [!NOTE]
 > ArcGIS for Power BI supports Power BI Report Server in online environments only; it isn't supported in an offline environment.
+
+> [!NOTE]
+> Power BI Embedded supports ArcGIS for Power BI in the Power BI embedded analytics playground ("user owns data"); it isn't supported in the "app owns data" embed for your customers scenario.
 
 > [!TIP]
 > GIS stands for Geographic Information Systems.
@@ -437,8 +440,8 @@ The following table compares the standard features available to all Power BI use
 ## Next steps
 
 - [Interacting with an ArcGIS map that has been shared with you](https://doc.arcgis.com/en/power-bi/use/explore-maps.htm)
-- [Blog posts announcing ArcGIS for Power BI](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI) updates
-- [Community post about ArcGIS visual](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947)
+- [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  
+- [Helpful discussion on the Power BI Community site about ArcGIS visual](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947)
 - [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/overview)
 - [Esri's ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 - [ESRI's Community site for Power BI](https://geonet.esri.com/groups/powerbi)
