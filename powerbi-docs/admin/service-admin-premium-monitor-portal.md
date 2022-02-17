@@ -7,13 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 02/17/2022
 LocalizationGroup: Premium 
 ---
 
 # Monitor capacities in the Admin portal
 
-The **Health** tab in the **Capacity settings** area in the Admin portal provides a metrics summary about your capacity and enabled workloads.  
+The **Health** tab in the **Capacity settings** area in the Admin portal provides a metrics summary about your capacity and enabled workloads.
+
+>[!NOTE]
+>This article refers to monitoring *Premium (original version)* capacities. To monitor *Premium Gen2* capacities, [install](service-premium-install-gen2-app.md) and [use](service-premium-gen2-metrics-app.md) the *Power BI Premium Utilization and Metrics* app.
 
 ![Capacity Health tab in the portal](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
