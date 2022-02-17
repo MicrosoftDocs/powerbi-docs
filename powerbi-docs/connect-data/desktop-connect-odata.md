@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 02/04/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
@@ -21,6 +21,9 @@ To connect to an OData feed, select **Get data > OData feed** from the **Home** 
 In the **OData Feed** window that appears, type or paste your OData feed URL into the box, and select **OK**.
 
 ![Screenshot of the OData Feed dialog, showing the URL field.](media/desktop-connect-odata/connect-to-odata_2.png)
+
+> [!TIP]
+> The location of the Northwind OData feed changes occasionally. Currently the link is https://services.odata.org/v2/northwind/northwind.svc/.
 
 Power BI Desktop connects to the OData feed, and displays the available tables and other data elements in the **Navigator** window. When you select an element, the right pane of the **Navigator** window displays a preview of the data. You can select as many tables as you want to import. The **Navigator** window shows a preview of the currently selected table.
 

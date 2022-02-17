@@ -8,14 +8,14 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 01/24/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
 
 # Develop your own Power BI visual
 
-Power BI comes with [default](power-bi-custom-visuals.md#default-power-bi-visuals) visuals readily available on the visualization pane. You can also [import visuals](power-bi-custom-visuals.md#appsource-power-bi-visuals) from Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or Power BI.
+Power BI comes with [default](power-bi-custom-visuals.md#default-power-bi-visuals) visuals readily available on the visualization pane. You can also [import visuals](power-bi-custom-visuals.md#appsource-power-bi-visuals) from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
 
 If none of these visuals meet your specific needs, you can create your own custom Power BI visual to be used by you, your organization, or the entire Power BI community.
 
@@ -42,4 +42,4 @@ If you are a web developer interested in creating your own visual and adding it 
 >[Frequently asked questions](power-bi-custom-visuals-faq.yml)
 
 >[!div class="nextstepaction"]
->[Power BI Community](https://community.powerbi.com/)
+>[Power BI Community](https://community.powerbi.com/t5/Custom-Visuals-Development/bd-p/CustomVisualsDevelopmentDiscussion)

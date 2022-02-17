@@ -22,7 +22,7 @@ On [supported](#device-requirements) iPads and Android tablets, you can view and
 
 With the two apps open side by side, you can adjust the size of the screens by dragging the dividing line between the apps to the right or left.
 
-Working side by side with another app works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../../create-reports/desktop-create-phone-report.md) for details.
+Working side by side with another app works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../../create-reports/power-bi-create-mobile-optimized-report-about.md) for details.
 
 ## Opening two apps side by side
 

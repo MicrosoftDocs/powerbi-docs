@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 9/13/2021
+  ms.date: 02/10/2022
   LocalizationGroup: Premium
     
 title: Power BI Premium Per User
@@ -31,7 +31,7 @@ sections:
         answer: |
           Premium Per User (PPU) is a new way to license premium features on a per-user basis, and includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities that previously were only available with a Premium capacity. With a PPU license, you do not need a separate Power BI Pro license, as all Pro license capabilities are included in PPU. 
 
-          You can get a trial version of Premium Per User (PPU) through Microsoft 365, as long as your organization has not restricted PPU licenses. Trials are enabled through the portal, similar to how Power BI Pro licenses are initiated.
+          A Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) can be used to try Premium Per User (PPU) as long as your organization has not disabled individual trials with the [Allow users to try Power BI paid features tenant setting](service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
 
           The following table describes the Premium Per User (PPU) features against a Premium capacity:
 
@@ -97,31 +97,53 @@ sections:
           Any datasets that reside in a Premium Per User (PPU) workspace are not viewable by users without a license, including reports create using that dataset. For example, you cannot host a Power BI dataset in a PPU workspace, build a report against it, publish it in a non-PPU workspace, then allow users without a PPU license to access the report. Similarly, content in a PPU workspace shared using **Publish to Web** behaves the same way it does with content hosted in a Premium capacity.
           
           Power BI mobile works with any content published to a Premium Per User (PPU) app or workspace.
-          
+
+      - question: |
+          How can I purchase a PPU license?
+        answer: |
+          To purchase Power BI Premium Per User, visit [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/). In the table, scroll down and from the *Power BI Premium > Per user* column, select *buy now*.
+
       - question: |
           Considerations and limitations
         answer: |
           The following considerations should be kept in mind when working with Premium Per User licenses.
 
           * Premium Per User is the lowest entry-point for Power BI Premium features. As such, it is built upon the Premium platform which has built-in mechanisms assuring PPU users can leverage the platform’s ability to scale. Premium Per user is designed to support enterprise workloads, against Power BI artifact with size limits that are equivalent to that of a P3 (for datasets, this is a 100Gb limit as documented in this [summary table](service-premium-gen2-what-is.md#limitations-in-premium-gen2)).
-          * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity
-          * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement off
-          * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
-          * The number of refreshes isn't currently restricted
-          * The Power BI Premium metrics app isn't currently supported for PPU
-          * You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content
+
+          * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity.
+
+          * PPU model refresh parallelism limits depend on the number of licenses your organization has. The lowest PPU model refresh parallelism limit is 40, and the highest is 160.
           
-          Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed again before use. Reports opened after such migrations without the dataset being refreshed will fail with an error similar to the following:
-          * *This operation is not allowed, as the database *<DbName>* is in a blocked state.*
+          * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement offering.
+
+          * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
+
+          * The number of refreshes isn't currently restricted.
+
+          * The Power BI Premium metrics app isn't currently supported for PPU.
+
+          * You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content.
+          
+          * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed again before use. Reports opened after such migrations without the dataset being refreshed will fail with an error similar to the following: *This operation is not allowed, as the database 'database name' is in a blocked state.*
 
 additionalContent: |
  
  ## Next steps
-  
-  * [What is Power BI Premium?](service-premium-what-is.md)
-  * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-  * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-  * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
-  * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
 
-  More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+ >[!div class="nextstepaction"]
+ >[What is Power BI Premium?](service-premium-what-is.md)
+
+ >[!div class="nextstepaction"]
+ >[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
+
+ >[!div class="nextstepaction"]
+ >[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+
+ >[!div class="nextstepaction"]
+ >[Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
+
+ >[!div class="nextstepaction"]
+ >[Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
+
+ >[!div class="nextstepaction"]
+ >[The Power BI Community](https://community.powerbi.com/)

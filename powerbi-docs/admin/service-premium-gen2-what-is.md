@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/12/2021
+ms.date: 02/16/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -26,7 +26,7 @@ Premium Gen2 provides the following updates or improved experiences:
 * Enhanced **performance** on any capacity size, anytime: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
 * **Greater scale**:
-    * *No limits* on refresh concurrency, no longer requiring you to track schedules for datasets being refreshed on your capacity
+    * *Higher limits* on refresh concurrency, alleviating the need to track schedules for datasets being refreshed on your capacity
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
@@ -138,6 +138,8 @@ The following known limitations currently apply to Premium Gen2:
 
 * There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
 
+* Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently.
+
 * Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 
     * A single artifact cannot exceed the amount of memory the capacity SKU offers. 
@@ -154,17 +156,23 @@ The following known limitations currently apply to Premium Gen2:
 
     The following table summarizes all the limitations that are dependent on the capacity size:
 
-    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [GB]** | **Max memory per query\* [GB]** | **DirectQuery\LC queries / sec \*** |
-    | --- | --- | --- | --- | --- | --- | --- |
-    | **A1\EM1** | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
-    | **A2\EM2** | 2 | 1 | 60 | 6 | 2 | 7.5 |
-    | **A3\EM3** | 4 | 2 | 120 | 10 | 2 | 15 |
-    | **A4\P1** | 8 | 4 | 240 | 25 | 6 | 30 |
-    | **A5\P2** | 16 | 8 | 480 | 50 | 6 | 60 |
-    | **A6\P3** | 32 | 16 | 960 | 100 | 10 | 120 |
-    
-    \*The Premium Gen2 app doesn't currently expose these metrics.
-    
+    | Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+    | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
+    | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
+    | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
+    | EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
+    | P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
+    | P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
+    | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
+    | P4/A7<sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
+    | P5/A8<sup>3</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
+
+    <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+
+    <sup>2</sup> The *model refresh parallelism* and *max memory per query* limits apply only to the datasets workload.
+
+    <sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
 ## Next steps
 
 The following articles provide additional information about Power BI Premium.

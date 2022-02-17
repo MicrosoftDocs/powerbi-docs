@@ -2,12 +2,12 @@
 title: Track user activities in Power BI
 description: Learn how to use Power BI activity logs and Microsoft 365 audit logs to monitor and track user activities in Power BI.
 author: kfollis
-ms.author: kfollis
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/27/2021
+ms.date: 02/07/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -302,7 +302,7 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster datasource | | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
 | [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
@@ -535,10 +535,10 @@ The following operations are available in both the audit and activity logs.
 | Updated the Power BI datasource | | |
 | Updated settings for Power BI template app | UpdateTemplateAppSettings | |
 | Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
-| Viewed Power BI dashboard    | ViewDashboard     |      |
+| Viewed Power BI dashboard    | ViewDashboard     |Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | ViewMetadata | |
-| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report|
+| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report</br></br> Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
 |   |  |   |

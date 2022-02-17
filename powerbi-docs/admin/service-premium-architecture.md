@@ -36,8 +36,6 @@ There are several positive results from distributing backend processing of conte
 
 * Whatever node your processing lands on, the placement mechanism makes sure memory remains available for your operation to complete, within the applicable memory constraints of your capacity. (see limitations section of this doc for full detail of memory constraints)
 
-* Internal noisy neighbor problems in your capacity don't occur, since each of the *view* and *refresh* operations uses its own set of physical v-cores, with their own memory, on different computing nodes.
-
 * Cross-workloads resource contention is prevented by separating the shared nodes into specialized workload groups. As a result of this separation, there are no controls for paginated report workloads.
 
 * The limitations on different capacity SKUs are not based on the physical constraints as they were in the original version of Premium; rather, they are based on an expected and clear set of rules that the Power BI Premium service enforces:

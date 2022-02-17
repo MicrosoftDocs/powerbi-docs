@@ -30,6 +30,8 @@
     items: 
     - name: "Get samples for Power BI"
       href: sample-datasets.md
+    - name: "Artificial intelligence sample"
+      href: sample-artificial-intelligence.md
     - name: "COVID-19 US sample"
       href: sample-covid-19-us.md
     - name: "Power BI Release Plan report"
@@ -216,6 +218,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in a table, matrix, or slicer"
         href: power-bi-images-tables.md
+      - name: "Create sparklines in a table or matrix"
+        href: power-bi-sparklines-tables.md
       - name: "Display custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Apply conditional table formatting"
@@ -224,8 +228,6 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort one column by another"
         href: desktop-sort-by-column.md
-      - name: "Optimize reports for the mobile apps"
-        href: desktop-create-phone-report.md
       - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"
@@ -254,6 +256,18 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
+    - name: Mobile-optimized reports
+      items:
+      - name: "About mobile-optimized reports"
+        href: power-bi-create-mobile-optimized-report-about.md
+      - name: "Mobile layout view"
+        href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
+      - name: "Create an initial layout"
+        href: power-bi-create-mobile-optimized-report-initial-layout.md
+      - name: "Optimize visual formatting"
+        href: power-bi-create-mobile-optimized-report-format-visuals.md
+      - name: "Rearrange visual layering"
+        href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
@@ -492,8 +506,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Dashboard data classification"
-        href: service-data-classification.md
       - name: "Dashboard themes"
         href: service-dashboard-themes.md
     - name: Paginated reports

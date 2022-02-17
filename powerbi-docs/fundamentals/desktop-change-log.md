@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 1/10/2022
+ms.date: 1/20/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,15 @@ ms.date: 1/10/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## December 2021 QFE 3
+
+*Version: 2.100.1401.0, Released: January 20, 2022*
+
+Bug fixes/improvements:
+- Fix for creating hybrid incremental refresh policies on DirectQuery over M queries: now users will be able to create a hybrid incremental refresh policy for the import tables that use DirectQuery over M. 
+- Fix for the "Power BI Desktop infrastructure update" preview feature: now when the feature is on, Quick measure dropdown dialog will not gray out and will work as expected.
+- Fix for Proxy models: now when adding new table on the proxy source relationship with IncludeFutureArtifacts = false, the relationship to the original table will be created and proxy model will be refreshed.  
 
 ## December 2021 QFE 2
 
