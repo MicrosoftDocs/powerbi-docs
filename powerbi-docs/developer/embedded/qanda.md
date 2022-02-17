@@ -12,7 +12,7 @@ ms.date: 02/17/2022
 
 # Q&A in Power BI embedded analytics
 
-Power BI embedded analytics offers you a way to incorporate [Q&A](pbi-glossary.md#qa) into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
+Power BI embedded analytics offers you a way to incorporate [Q&A](pbi-glossary.md#qa) into an application. Your users can ask questions using natural language, and receive immediate answers in the form of visuals like charts or graphs.
 
 ![Q&A Interactive question in an embedded frame](media/qanda/embedded-qanda.gif)
 
@@ -43,7 +43,7 @@ var qna = powerbi.embed(qnaContainer, config);
 
 ## Set question
 
-If you use **result mode** with a set question, you can inject additional questions into the frame. The answer to the new question will immediately replace the previous result. A new visual is rendered matching the new question.
+If you use **result mode** with a set question, you can inject more questions into the frame. The answer to the new question will immediately replace the previous result. A new visual is rendered matching the new question.
 
 One example of this usage would be a frequently asked question list. The user could go through the questions and have them answered within the same embedded part.
 
