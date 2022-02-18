@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/20/2022
+ms.date: 02/16/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -137,6 +137,8 @@ The following known limitations currently apply to Premium Gen2:
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operations errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
 
 * There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
+
+* Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently.
 
 * Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 

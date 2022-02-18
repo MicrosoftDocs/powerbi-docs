@@ -128,7 +128,7 @@ In the example below, I've selected **My workspace** and then selected the **Con
 
 ### Dig deeper
 - [Create a report in the Power BI service by importing a dataset](../create-reports/service-report-create-new.md)
-- [Optimize reports for the Power BI mobile apps](../create-reports/desktop-create-phone-report.md)
+- [Optimize reports for the Power BI mobile apps](../create-reports/power-bi-create-mobile-optimized-report-about.md)
 
 ## Dashboards
 A *dashboard* is something you create **in the Power BI service** or something a colleague creates **in the Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](../consumer/end-user-q-and-a.md) displays a single [visualization](../visuals/power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](../create-reports/service-dashboard-tiles.md).
@@ -226,7 +226,7 @@ The icons in the upper right corner are your resource for settings, notification
 ### 5. **Dashboard title**
 It's not always easy to figure out which workspace and dashboard are active, so Power BI shows you the workspace and the dashboard title. In this example, we see the workspace (My workspace) and the dashboard title (Store Sales Overview). If we opened a report, the name of the report would be displayed.
 
-![Screenshot of Power B I service showing the Data classification icon.](media/service-basic-concepts/power-bi-title.png)
+![Screenshot of Power B I service showing the dashboard title.](media/service-basic-concepts/power-bi-title.png)
 
 ### 6. **Microsoft 365 app launcher**
 With the app launcher, all your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
