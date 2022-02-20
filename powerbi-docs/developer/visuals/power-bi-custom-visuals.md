@@ -29,13 +29,13 @@ Power BI comes with many out-of-the box visuals. These Power BI visuals are avai
 
 To remove a Power BI visual from the visualization pane, right-click it and select **unpin**.
 
-To restore the default Power BI visuals in the visualization pane, click the ellipsis and then select **Restore default visuals**.
+To restore the default Power BI visuals in the visualization pane, select the ellipsis and then select **Restore default visuals**.
 
 :::image type="content" source="media/power-bi-custom-visuals/restore-default.png" alt-text="Screenshot of the Power B I visualization pane restore default option.":::
 
 ## AppSource Power BI visuals
 
-Many additional Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These are visuals created by Microsoft and Microsoft partners. They are tested and validated by the AppSource validation team.
+Many more Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These visuals are created by Microsoft and Microsoft partners. They're tested and validated by the AppSource validation team.
 
 Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
@@ -46,7 +46,7 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 ### What is AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
 
 ### Certified Power BI visuals
 
@@ -60,7 +60,7 @@ Each Power BI visual on AppSource has a sample report you can download that illu
 
 ## Organizational store
 
-Power BI admins approve and deploy Power BI visuals into their organization. This allows report authors to easily discover, update, and use these Power BI visuals. Admins can easily manage these visuals with actions such as updating versions, disabling and enabling Power BI visuals.
+Power BI admins can approve and deploy Power BI custom visuals for their organization. Report authors can easily discover, update, and use these Power BI visuals. Admins can easily manage these visuals with actions such as updating versions, disabling and enabling Power BI visuals.
 
 To access the organizational store, in the *Visualization* pane click the ellipsis, then select **Get more visuals**.
 
@@ -78,7 +78,7 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual from a file, see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
-If you are a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you're a web developer and want to create your own visual and add it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
