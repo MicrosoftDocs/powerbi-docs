@@ -36,7 +36,7 @@ The *embed for your customers* solution allows you to build an app that uses non
 
 ### Embed for your organization
 
-The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at significant organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
+The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at large organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
 
 ## Comparing the solutions
 
