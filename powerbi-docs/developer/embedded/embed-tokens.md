@@ -7,7 +7,7 @@ ms.reviewer: amshuste
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 02/17/2022
 ---
 
 # Embedded analytics application tokens
@@ -25,9 +25,9 @@ If you're using the *embed for your organization* solution, your web app users w
 
 For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
-* In the *embed for your customers*, the Azure AD token is used to generate the *embed token*.
+* In the *embed for your customers* scenario, the Azure AD token is used to generate the *embed token*.
 
-* In the *embed for your organization*, the Azure AD token is used to access Power BI.
+* In the *embed for your organization* scenario, the Azure AD token is used to access Power BI.
 
 ## Embed token
 
@@ -35,7 +35,7 @@ When you're using the *embed for your customers* solution, your web app needs to
 
 * Which content your web app user can access.
 
-* The web app user's access level (view, create, or edit).
+* The web app user's access level (*view*, *create*, or *edit*).
 
 For more information, see [Considerations when generating an embed token](generate-embed-token.md).
 
@@ -45,7 +45,7 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
 
-The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be one of the following:
+The *Embed for your customers* solution uses a non-interactive authentication flow. Users don't have to sign in to Azure AD, to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be one of the following:
 
 * **[Service principal](embed-service-principal.md)**
 
@@ -55,15 +55,16 @@ The *Embed for your customers* solution uses a non-interactive authentication fl
 
 * **Master user**
 
-    Your web app uses a user account to authenticate against Azure AD and get the *Azure AD token*. The *master user* needs to have a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or a [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
+    Your web app uses a user account to authenticate against Azure AD and get the *Azure AD token*. The *master user* needs either a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or a [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
 
-    When using a *master user* you'll need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is required to grant consent for using these permissions using the Power BI REST APIs.
+    When using a *master user* you need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is has to grant consent for using these permissions using the Power BI REST APIs.
 
 After successful authentication against Azure AD, your web app will generate an [embed token](/rest/api/power-bi/embedtoken) to allow its users to access specific Power BI content.
 
 >[!NOTE]
->* To embed using the *embed for your customers* solution, you'll need a capacity with an A, EM, or P SKU.
->* To [move to production](move-to-production.md) you'll need a capacity.
+>
+>* To embed using the *embed for your customers* solution, you need a capacity with an A, EM, or P SKU.
+>* To [move to production](move-to-production.md) you need a capacity.
 
 The following diagram shows the authentication flow for the *embed for your customers* solution.
 
@@ -92,11 +93,13 @@ The *Embed for your organization* solution uses an interactive authentication fl
 >:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 >[!NOTE]
+>
 >* The *embed for your organization* solution doesn't support A SKUs.
 >* To [move to production](move-to-production.md) you'll need one of the following configurations:
->    * All users with Pro licenses.
->    * All users with PPU licenses.
->    * A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
+>
+>   * All users with Pro licenses.
+>   * All users with PPU licenses.
+>   * A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
 
 This diagram shows an example of the authentication flow for the *embed for your organization* solution.
 
@@ -123,5 +126,4 @@ This diagram shows an example of the authentication flow for the *embed for your
 >[!div class="nextstepaction"]
 >[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
->[!div class="nextstepaction"]
->[More questions? Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/)
