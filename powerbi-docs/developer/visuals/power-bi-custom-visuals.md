@@ -8,12 +8,12 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 01/16/2022
+ms.date: 02/16/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
 
-# Sourcing and acquiring Power BI visuals
+# What are Power BI custom visuals and where can I get them?
 
 Power BI visuals can be obtained from three main sources:
 
