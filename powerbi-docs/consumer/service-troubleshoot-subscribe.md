@@ -147,7 +147,7 @@ There are certain Power BI features that will not work when using the subscripti
 
     
 ## Next steps
-- [Share Power BI dashboards and reports with coworkers and others](../service-share-dashboards.md)
-- [How should I collaborate on and share dashboards and reports?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-- [Share a filtered Power BI report](../service-share-reports.md)
-- Questions? [Try the Power BI Community](https://community.powerbi.com/) 
+- [Share Power BI dashboards and reports with coworkers and others](/power-bi/collaborate-share/service-share-dashboards)
+- [How should I collaborate on and share dashboards and reports?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports)
+- [Share a filtered Power BI report](/power-bi/collaborate-share/service-share-reports)
+- Questions? [Try the Power BI Community](https://community.powerbi.com/)

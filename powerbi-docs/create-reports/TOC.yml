@@ -65,6 +65,8 @@
         href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
+      - name: "The new Format pane"
+        href: ../fundamentals/desktop-format-pane.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "About accessibility"
@@ -506,8 +508,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Dashboard data classification"
-        href: service-data-classification.md
       - name: "Dashboard themes"
         href: service-dashboard-themes.md
     - name: Paginated reports

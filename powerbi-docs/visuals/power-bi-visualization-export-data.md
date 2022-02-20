@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/27/2022
+ms.date: 02/15/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
@@ -239,6 +239,8 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
   - Matrices with columns and/or values but no rows will be exported as having rows and/or values but no columns
   
   - Matrices with only one row and/or values but no columns will be exported as table (no right border separator)
+  
+  - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
 
 - When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 
