@@ -188,7 +188,6 @@ You need to [find one of these people](/microsoft-365/business-video/admin-cente
 - Reports in a workspace in which you aren't an edit member.
 - "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.
-- ArcGIS Maps for Power BI visuals.
 - Q&A for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
