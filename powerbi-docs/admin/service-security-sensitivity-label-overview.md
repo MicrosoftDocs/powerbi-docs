@@ -106,7 +106,7 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
 
-## Sensitivity label downstream inheritance (preview)
+## Sensitivity label downstream inheritance
 
 When a sensitivity label is applied to a dataset or report in the Power BI service, it is possible to have the label trickle down and be automatically applied to content that is built from that dataset or report as well. This capability is called downstream inheritance.
 
