@@ -108,7 +108,7 @@ These limitations are relevant for the [Datasets - Post Dataset User](/rest/api/
 
 * Write permissions cannot be granted.
 
-* These APIs only support datasets that were created in the [new workspace experience](/collaborate-share/service-new-workspaces). Datasets that reside on the classic workspace are not supported.
+* These APIs only support datasets that were created in the [new workspace experience](/power-bi/collaborate-share/service-new-workspaces). Datasets that reside on the classic workspace are not supported.
 
 * These APIs only support users and groups. Service principals are not supported.
 

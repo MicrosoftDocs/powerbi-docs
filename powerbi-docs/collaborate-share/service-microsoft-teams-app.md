@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/13/2021
+ms.date: 02/04/2022
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -30,7 +30,7 @@ There are a few features that you can only access in the Power BI service in a b
 
 ## Requirements
 
-In general, for Power BI to work in Microsoft Teams, ensure these elements:
+In general, ensure these elements so you can install the Power BI app in Microsoft Teams:
 
 - You have a Power BI Pro or Premium Per User (PPU) license.
 - You have signed in to the Power BI service to activate your Power BI license.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 02/15/2022
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -103,6 +103,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported, as certain controls (such as closing the startup screen) display beyond those resolutions.
 * Windows display settings: If you set your display settings to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that you must interact with to continue using Power BI Desktop. If you encounter this issue, check your display settings in Windows by going to **Settings** > **System** > **Display**, and use the slider to return display settings to 100%.
 * CPU: 1 gigahertz (GHz) 64-bit (x64) processor or better recommended.
+* WebView2, if not automatically installed with Power BI Desktop or uninstalled. [Download and run the installer for WebView2](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
 
 > [!NOTE]
 > We recommend using a client version of Windows such as Windows 10, rather than Windows Server. For example, Power BI Desktop does not support using Internet Explorer Enhanced Security Configuration as it will stop Power BI Desktop from signing in to the Power BI service.

@@ -183,6 +183,8 @@
         href: service-dataset-description.md
       - name: "Share dataset access (preview)"
         href: service-datasets-share.md
+      - name: "Dataset permissions"
+        href: service-datasets-permissions.md
       - name: "Manage dataset access (preview)"
         href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
@@ -269,6 +271,8 @@
         href: service-connect-to-health-emergency-response.md
       - name: "Emissions Impact Dashboard"
         href: service-connect-to-emissions-impact-dashboard.md
+      - name: "Emissions Impact Dashboard for Microsoft 365"
+        href: service-connect-emissions-impact-dashboard-microsoft-365.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
       - name: "Power BI Premium Capacity Metrics"

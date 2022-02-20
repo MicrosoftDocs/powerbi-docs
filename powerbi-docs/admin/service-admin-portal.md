@@ -572,13 +572,6 @@ Per-user data is enabled for usage metrics by default, and content creator accou
 
 ## Dashboard settings
 
-### Data classification for dashboards
-
-Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../create-reports/service-data-classification.md)
-
-> [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
-
 ### Web content on dashboard tiles
 
 Users in the organization can add and view web content tiles on Power BI dashboards. [Learn more](../create-reports/service-dashboard-add-widget.md)

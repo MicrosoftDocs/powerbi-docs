@@ -12,7 +12,7 @@ ms.date: 04/15/2021
 
 # Samples of Power BI visuals
 
-You can download, use, and modify these Power BI visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
+You can download, use, and modify these Power BI custom visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
 
 ## Slicers
 
@@ -80,4 +80,5 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 
 ## Next steps
 
-To try out creating Power BI visuals, see [Developing a Power BI circle card visual](develop-circle-card.md).
+> [!div class="nextstepaction"]
+> [Developing a Power BI circle card visual](develop-circle-card.md)

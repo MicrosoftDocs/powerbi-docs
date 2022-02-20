@@ -61,7 +61,7 @@ Alternatively, you can download the Opportunity Analysis sample as a [.pbix file
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
+If you want to view the data source for this sample, it's also available as an Excel workbook. The workbook contains Power View sheets that become Power BI report pages when you upload the file to the Power BI service. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the zip file with the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
 ## What is our dashboard telling us?
 Our sales manager has created a dashboard to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:

@@ -7,10 +7,9 @@ metadata:
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: powerbi-premium
-  ms.topic: conceptual
-  ms.date: 02/01/2022
+  ms.topic: faq
+  ms.date: 02/10/2022
   LocalizationGroup: Premium
-    
 title: Power BI Premium Per User
 summary: |
   Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and also adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
@@ -31,7 +30,7 @@ sections:
         answer: |
           Premium Per User (PPU) is a new way to license premium features on a per-user basis, and includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities that previously were only available with a Premium capacity. With a PPU license, you do not need a separate Power BI Pro license, as all Pro license capabilities are included in PPU. 
 
-          You can get a trial version of Premium Per User (PPU) through Microsoft 365, as long as your organization has not restricted PPU licenses. Trials are enabled through the portal, similar to how Power BI Pro licenses are initiated.
+          A Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) can be used to try Premium Per User (PPU) as long as your organization has not disabled individual trials with the [Allow users to try Power BI paid features tenant setting](service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
 
           The following table describes the Premium Per User (PPU) features against a Premium capacity:
 
@@ -112,6 +111,8 @@ sections:
 
           * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity.
 
+          * PPU model refresh parallelism limits depend on the number of licenses your organization has. The lowest PPU model refresh parallelism limit is 40, and the highest is 160.
+          
           * If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement offering.
 
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.

@@ -86,9 +86,9 @@ The exact steps for sign up can vary depending on your organization and what you
 
     ![Screenshot of Power B I service showing Power BI home screen.](media/service-self-service-signup-for-power-bi/power-bi-home-new.png)    
 
-## Use self-service sign-up to start an individual trial of Power BI Pro
+## Use self-service sign-up to start an individual trial of the Power BI paid version
 
-Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI. If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or Premium Per User license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
+Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI which includes Power BI Pro and Power BI Premium Per User (PPU). If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or PPU license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
 
 ![Screenshot of Power B I service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
 
