@@ -7,10 +7,10 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 02/15/2022
 ---
 
-# Capabilities and properties of Power BI visuals 
+# Capabilities and properties of Power BI visuals
 
 Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the *capabilities.json* file are **optional**.
 
@@ -42,6 +42,7 @@ The following additional root objects can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
+* [expandCollapse](dataview-mappings.md#expanding-and-collapsing-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
@@ -52,7 +53,7 @@ The following additional root objects can be added as needed:
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
-## dataroles: define the data fields that your visual expects
+## data roles: define the data fields that your visual expects
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are the **fields** that appear on the [Properties pane](../../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
 
