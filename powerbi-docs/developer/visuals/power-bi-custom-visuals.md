@@ -15,15 +15,15 @@ ms.custom: intro-overview
 
 # What are Power BI custom visuals and where can I get them?
 
-Power BI visuals can be obtained from three main sources:
+Power BI visuals come from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
-* Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
-* Create your own [custom visuals](#custom-visual-files).
+* You can [download or import](#appsource-power-bi-visuals) visuals from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
+* You can create your own [custom visuals](#custom-visual-files).
 
 ## Default Power BI visuals
 
-Power BI comes with many out-of-the box Power BI visuals. These visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
+Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
 :::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
 
@@ -35,15 +35,14 @@ To restore the default Power BI visuals in the visualization pane, click the ell
 
 ## AppSource Power BI visuals
 
-Many additional Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are tested and validated by the AppSource validation team.
+Many additional Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These are visuals created by Microsoft and Microsoft partners. They are tested and validated by the AppSource validation team.
 
 Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
 >[!NOTE]
 >
-> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, third party or other services located outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
-> * Power BI certified visuals are visuals in the AppSource that were additionally tested to check that the visual does not access external services or resources.
-> * Once Power BI visuals from AppSource are imported, visuals may be updated automatically without any additional notice.
+> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
+> * Once Power BI visuals from AppSource are imported, they may be updated automatically without any additional notice.
 
 ### What is AppSource?
 

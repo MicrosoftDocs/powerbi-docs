@@ -103,10 +103,6 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 
 A Power BI custom visual that has met requirements and passed strict security testing.
 
-### Classification
-
-Also called data classification. This option can be turned on by Power BI admins to raise awareness of the level of security required for a dashboard. The classification types can be customized by an organization.
-
 ### Connect live
 
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
@@ -161,10 +157,6 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 ### Dashboard
 
 In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](../../consumer/end-user-basic-concepts.md#dashboards).
-
-### Data classification
-
-See classification
 
 ### Data connector
 
