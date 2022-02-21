@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 01/25/2022
+ms.date: 02/21/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -267,7 +267,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * **Get data** can upload protected files only if they’re local. Protected files from online services such as SharePoint Online or OneDrive for Business can’t be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
-* **Export to PDF** doesn’t support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
+* **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
