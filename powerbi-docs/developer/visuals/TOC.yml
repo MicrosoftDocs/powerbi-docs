@@ -5,7 +5,7 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Sourcing and obtaining Power BI visuals"
+    - name: "What are Power BI custom visuals"
       href: power-bi-custom-visuals.md
     - name: "Develop your own Power BI visual"
       href: develop-power-bi-visuals.md
@@ -49,65 +49,70 @@
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
   - name: How to
+    expanded: true
     items:
-    - name: "Publish Power BI visuals to AppSource"
-      href: office-store.md
-    - name: "Test your Power BI visual"  
-      href: submission-testing.md
-    - name: "Get a Power BI visual certified"
-      href: power-bi-custom-visuals-certified.md
-    - name: "Create mobile friendly visuals"
-      href: mobile-development.md
-    - name: "Set up your environment for developing a Power BI visual"
-      href: environment-setup.md
-    - name: "Package a Power BI visual"
-      href: package-visual.md
     - name: "Import a custom visual"
       href: import-visual.md
-    - name: "Create a dialog box"
-      href: create-display-dialog-box.md         
-    - name: "Add a display warning icon to your visual"
-      href: visual-display-warning-icon.md      
-    - name: "Visual interactions"
-      href: visuals-interactions.md
-    - name: "Add selections"
-      href: selection-api.md
-    - name: "Add visuals tooltips"
-      href: add-tooltips.md
-    - name: "Add analytics pane" 
-      href: analytics-pane.md
-    - name: "Filter visuals" 
-      href: filter-api.md
-    - name: "Fetch more data" 
-      href: fetch-more-data.md
-    - name: "Add bookmarks support"
-      href: bookmarks-support.md
-    - name: "Add context menu support"
-      href: context-menu.md
-    - name: "Add drill-down support"
-      href: drill-down-support.md
-    - name: "Add colors to your visual" 
-      href: add-colors-power-bi-visual.md
-    - name: "Add conditional formatting" 
-      href: conditional-format.md
-    - name: "Highlight data in visuals"
-      href: highlight.md
-    - name: "Enable selection across multiple visuals"
-      href: supportsmultivisualselection-feature.md
-    - name: "Enable keyboard navigation"
-      href: supportskeyboardfocus-feature.md
-    - name: "Add high-contrast mode support"
-      href: high-contrast-support.md
-    - name: "Enable sync slicers"
-      href: enable-sync-slicers.md
-    - name: "Display subtotal data"
-      href: total-subtotal-api.md     
-    - name: "Render a visual without requiring data binding"
-      href: no-dataroles-support.md  
-    - name: "Debug visuals"
-      href: visuals-how-to-debug.md  
-    - name: "Troubleshoot  environment setup"
-      href: power-bi-custom-visuals-troubleshoot.md
+    - name: Publish Power BI custom visuals
+      items:
+      - name: "Publish Power BI visuals to AppSource"
+        href: office-store.md
+      - name: "Test your Power BI visual"  
+        href: submission-testing.md
+      - name: "Get a Power BI visual certified"
+        href: power-bi-custom-visuals-certified.md
+    - name: Develop your own custom visual
+      items:
+      - name: "Create mobile friendly visuals"
+        href: mobile-development.md
+      - name: "Set up your environment for developing a Power BI visual"
+        href: environment-setup.md
+      - name: "Package a Power BI visual"
+        href: package-visual.md
+      - name: "Create a dialog box"
+        href: create-display-dialog-box.md         
+      - name: "Add a display warning icon to your visual"
+        href: visual-display-warning-icon.md      
+      - name: "Visual interactions"
+        href: visuals-interactions.md
+      - name: "Add selections"
+        href: selection-api.md
+      - name: "Add visuals tooltips"
+        href: add-tooltips.md
+      - name: "Add analytics pane" 
+        href: analytics-pane.md
+      - name: "Filter visuals" 
+        href: filter-api.md
+      - name: "Fetch more data" 
+        href: fetch-more-data.md
+      - name: "Add bookmarks support"
+        href: bookmarks-support.md
+      - name: "Add context menu support"
+        href: context-menu.md
+      - name: "Add drill-down support"
+        href: drill-down-support.md
+      - name: "Add colors to your visual" 
+        href: add-colors-power-bi-visual.md
+      - name: "Add conditional formatting" 
+        href: conditional-format.md
+      - name: "Highlight data in visuals"
+        href: highlight.md
+      - name: "Enable selection across multiple visuals"
+        href: supportsmultivisualselection-feature.md
+      - name: "Enable keyboard navigation"
+        href: supportskeyboardfocus-feature.md
+      - name: "Add high-contrast mode support"
+        href: high-contrast-support.md
+      - name: "Enable sync slicers"
+        href: enable-sync-slicers.md
+      - name: "Display subtotal data"
+        href: total-subtotal-api.md     
+      - name: "Render a visual without requiring data binding"
+        href: no-dataroles-support.md  
+      - name: "Debug visuals"
+        href: visuals-how-to-debug.md  
+      - name: "Troubleshoot  environment setup"
+        href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
     - name: "Changelog"
