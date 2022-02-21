@@ -23,7 +23,7 @@ Workspace storage limits, whether for My Workspace or an app workspace, depend o
 For workspaces in shared capacity:
 
 - There is a per-workspace storage limit of 10 GB.
-- Premium and Premium Per User (PPU) tenants have a 100 TB storage limit.
+- Premium Per User (PPU) tenants have a 100 TB storage limit.
 - When using a Pro license, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
 
 ### Premium capacity limits
