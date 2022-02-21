@@ -20,7 +20,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 
 |Feature |Description |
 |--------|------------|
-|[Advanced AI (Cognitive services, AutoML)](./../transform-model/dataflows/dataflows-machine-learning-integration.md) |Use artificial intelligence (AI) with dataflows |
+|[Advanced AI](./../transform-model/dataflows/dataflows-machine-learning-integration.md) |Use artificial intelligence (AI) with dataflows |
 |[Asynchronous refresh](./../connect-data/asynchronous-refresh.md) (preview) |Perform asynchronous data-refresh operations |
 |[Automatic aggregations](aggregations-auto.md) (preview) |Optimize DirectQuery datasets |
 |[Autoscale](service-premium-auto-scale.md) |Automatically add compute capability when your capacity is overloaded</br></br>Available for [Gen2](service-premium-gen2-what-is.md) only |
