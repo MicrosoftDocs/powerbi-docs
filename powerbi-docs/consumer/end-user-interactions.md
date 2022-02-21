@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 LocalizationGroup: Reports
 ---
 
@@ -49,6 +49,7 @@ Let's define these terms as we look at the report pages below. The "Total catego
 
     ![Report page showing filters already set](media/end-user-interactions/power-bi-visual-filters.png)
 
+- In case of the tables with no hierarchical relationships, slicing up the measures ( often referred as Complex slicers) may result in visual rendering errors and are evident on the desktop logs with the message 'Measures are not allowed with complex slicers unless they have a filter context change' . To avoid this, avoid such slicers or re-model the relationships to get the desired output
 
 ## Next steps
 
