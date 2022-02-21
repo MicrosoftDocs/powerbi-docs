@@ -48,6 +48,8 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
 
+Today, both transactability and license management of existing licensed visuals take place outside of AppSource. Each publisher defines their own business and licensing model for their visual. For example, pricing, per-user license vs site license.
+
 ### Certified Power BI visuals
 
 Certified Power BI visuals are visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain specified code requirements that the Microsoft Power BI team has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
@@ -56,13 +58,13 @@ To view the list of certified Power BI visuals, or to submit your own, see [Cert
 
 ### Samples for Power BI visuals
 
-Each Power BI visual on AppSource has a sample report you can download that illustrates how the visual works. To download the sample report, in the [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) select a Power BI visual and click the **Download Sample** link.
+Each Power BI visual on AppSource has a sample report you can download that illustrates how the visual works. To download the sample report, in the [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) select a Power BI visual and select the **Download Sample** link.
 
 ## Organizational store
 
 Power BI admins can approve and deploy Power BI custom visuals for their organization. Report authors can easily discover, update, and use these Power BI visuals. Admins can easily manage these visuals with actions such as updating versions, disabling and enabling Power BI visuals.
 
-To access the organizational store, in the *Visualization* pane click the ellipsis, then select **Get more visuals**.
+To access the organizational store, in the *Visualization* pane select the ellipsis, then select **Get more visuals**.
 
 :::image type="content" source="media/power-bi-custom-visuals/get-more.png" alt-text="Screenshot of the Power B I visualization pane get more visuals option.":::
 
