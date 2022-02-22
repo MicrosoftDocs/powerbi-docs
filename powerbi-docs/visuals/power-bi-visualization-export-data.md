@@ -54,7 +54,7 @@ Security and Power BI a administrators can use [Microsoft Defender for Cloud App
 
 1. If the tile was pinned from a report with a sensitivity label, you'll see this warning. Consider the sensitivity of your content before deciding whether to export or not.
 
-    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-sensitivity.png" alt-text="Screenshot of a visualization with the ellipsis button called out.":::
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-sensitivity.png" alt-text="Screenshot of sensitivity warning.":::
 
 1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well. Your browser will prompt you to save or open the file.  You can save first, or open and then save.
 
@@ -67,15 +67,15 @@ Security and Power BI a administrators can use [Microsoft Defender for Cloud App
 ## Export data from a report
 
 To illustrate the different options for exporting data from a report visual, we've created a stacked column chart that includes:
-- a [hierarchy](end-user-hierarchy.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again. 
+- a [hierarchy](end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again. 
 - a filter for **City**
 - an aggregate for **Discount percent** (count was changed to average).
 
-    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-numbered.png" alt-text="Stacked column chart showing a hierarchy and a visual filter.":::
+    :::image type="content" source="media/power-bi-visualization-export-data/power-bi-numbered.png" alt-text="Chart with numbered labels.":::
 
 Now we're ready to try out two different options for exporting data. Start by selecting **More options (...)** in the upper-right corner of the visual and choosing **Export data**.
 
-:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-visual.png" alt-text="Stacked column chart showing a hierarchy and a visual filter.":::
+:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-visual.png" alt-text="Visual dropdown showing option for selecting Export data.":::
 
 Power BI gives you the option to export the summarized data or underlying data. Since your visualization has an aggregate (you changed **count** to *average*),  you'll have two options:
 
@@ -84,7 +84,7 @@ Power BI gives you the option to export the summarized data or underlying data. 
 - **Underlying data**
  
 
-:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-options.png" alt-text="Stacked column chart showing a hierarchy and a visual filter.":::
+:::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-options.png" alt-text="Window showing options for Summarized data and Underlying data.":::
 
 ### Export ***summarized*** data
 
