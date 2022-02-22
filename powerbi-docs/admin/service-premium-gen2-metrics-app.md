@@ -135,7 +135,7 @@ Displays the memory footprint recorded for Power BI items over time. If no item 
 
 #### Performance profile
 
-Displays the percentage of fast, medium, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
+Displays the percentage of fast, moderate, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
 ### Weekly trendlines
 
@@ -398,7 +398,7 @@ The overloading visual has the following columns:
 
 ### Performance
 
-Displays the percentage of fast, medium, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
+Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
 

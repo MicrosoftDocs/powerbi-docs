@@ -3,7 +3,7 @@ title: Mandatory label policy in Power BI
 description: Learn how organizations can require users to apply sensitivity labels with a mandatory label policy in Power BI
 author: paulinbar
 ms.author: painbar
-manager: kfolis
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

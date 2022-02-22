@@ -200,13 +200,13 @@ Once you've installed the app, just select it from your Apps list and select whi
 
 ![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps-card.png)
 
-I hope this article gave you an understanding of the building blocks that make up the Power BI service for business users.
+Now that you've been introduced to the building blocks that make up the Power BI service for business users, continue learning using the links below. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
 
 ## Next steps
 
 - Review and bookmark the [Glossary](end-user-glossary.md)
 
-- Take a [tour of the Power BI service](end-user-experience.md)
+- Take a [tour of the Power BI service](end-user-reading-view.md))
 
 - Read the [overview of Power BI written especially for business users](end-user-consumer.md)
 

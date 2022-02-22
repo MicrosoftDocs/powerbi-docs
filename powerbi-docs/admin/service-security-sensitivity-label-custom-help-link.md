@@ -3,7 +3,7 @@ title: Custom help link for sensitivity labels
 description: Learn how to define a custom help link for your sensitivity label menu
 author: paulinbar
 ms.author: painbar
-manager: kfolis
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
