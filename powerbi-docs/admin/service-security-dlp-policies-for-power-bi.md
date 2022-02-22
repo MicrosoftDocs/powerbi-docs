@@ -3,7 +3,7 @@ title: Data loss prevention policies for Power BI (preview)
 description: Learn how to configure data loss prevention policies for Power BI.
 author: paulinbar
 ms.author: painbar
-manager: kfolis
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
