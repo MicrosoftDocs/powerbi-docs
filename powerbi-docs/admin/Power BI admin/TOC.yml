@@ -1,0 +1,51 @@
+- name: Power BI administration
+  href: index.yml
+  expanded: true
+  items:
+  - name: General Information for administrators
+    expanded: false
+    items:
+    - name: What is Power BI administration?
+      href: service-admin-administering-power-bi-in-your-organization.md
+    - name: Administration role in Microsoft 365
+      href: service-admin-role.md      
+    - name: Frequently asked questions (FAQ)
+      href: service-admin-faq.yml
+    - name: Can't sign in?
+      href: power-bi-cannot-sign-in.md
+    - name: Forgot your password for Power BI?
+      href: service-admin-forgot-your-password.md
+    - name: How to use the same account login for Power BI and Azure
+      href: service-admin-how-to-use-the-same-account-as-azure.md                  
+    - name: Add custom branding
+      href: service-admin-custom-branding.md
+  - name: System administration
+    expanded: false
+    items:
+    - name: Manage Power BI Desktop sign-in form
+      href: desktop-admin-sign-in-form.md      
+    - name: Service URL reference
+      href: power-bi-allow-list-urls.md
+    - name: Service interruption notifications
+      href: service-interruption-notifications.md
+    - name: Capture diagnostic information from the Power BI service
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: Power BI support options
+      href: service-support-options.md
+    - name: Find where data is stored
+      href: service-admin-where-is-my-tenant-located.md 
+    - name: Move between regions
+      href: service-admin-region-move.md           
+    - name: Track service health
+      href: service-admin-health.md
+    - name: Find users that have signed in
+      href: service-admin-access-usage.md
+    - name: Track user activities
+      href: service-admin-auditing.md    
+  - name: Portal settings
+    expanded: false
+    items:
+    - name: Using the admin portal
+      href: service-admin-portal.md
+    - name: Manage Power BI visuals admin settings
+      href: organizational-visuals.md
