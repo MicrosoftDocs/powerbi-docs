@@ -131,33 +131,33 @@
       href: service-security-using-defender-for-cloud-apps-controls.md
     - name: Protection metrics report
       href: service-security-data-protection-metrics-report.md
-  - name: Sensitivity labels
-    expanded: false
-    items:
-    - name: Sensitivity label overview
-      href: service-security-sensitivity-label-overview.md    
-    - name: Default label policy
-      href: service-security-sensitivity-label-default-label-policy.md
-    - name: Mandatory label policy
-      href: service-security-sensitivity-label-mandatory-label-policy.md
-    - name: Sensitivity label downstream inheritance
-      href: service-security-sensitivity-label-downstream-inheritance.md
-    - name: Sensitivity label inheritance from data sources (preview)
-      href: service-security-sensitivity-label-inheritance-from-data-sources.md
-    - name: Sensitivity label change enforcement
-      href: service-security-sensitivity-label-change-enforcement.md
-    - name: Custom help link for sensitivity labels
-      href: service-security-sensitivity-label-custom-help-link.md
-    - name: Audit schema for sensitivity labels
-      href: service-security-sensitivity-label-audit-schema.md
-    - name: Sensitivity label support for paginated reports
-      href: service-security-sensitivity-label-paginated-reports.md
-    - name: Enable sensitivity labeling
-      href: service-security-enable-data-sensitivity-labels.md
-    - name: How to apply sensitivity labels
-      href: service-security-apply-data-sensitivity-labels.md
-    - name: Set or remove sensitivity labels programmatically
-      href: service-security-sensitivity-label-inheritance-set-remove-api.md
+    - name: Sensitivity labels
+      expanded: false
+      items:
+      - name: Sensitivity label overview
+        href: service-security-sensitivity-label-overview.md    
+      - name: Default label policy
+        href: service-security-sensitivity-label-default-label-policy.md
+      - name: Mandatory label policy
+        href: service-security-sensitivity-label-mandatory-label-policy.md
+      - name: Sensitivity label downstream inheritance
+        href: service-security-sensitivity-label-downstream-inheritance.md
+      - name: Sensitivity label inheritance from data sources (preview)
+        href: service-security-sensitivity-label-inheritance-from-data-sources.md
+      - name: Sensitivity label change enforcement
+        href: service-security-sensitivity-label-change-enforcement.md
+      - name: Custom help link for sensitivity labels
+        href: service-security-sensitivity-label-custom-help-link.md
+      - name: Audit schema for sensitivity labels
+        href: service-security-sensitivity-label-audit-schema.md
+      - name: Sensitivity label support for paginated reports
+        href: service-security-sensitivity-label-paginated-reports.md
+      - name: Enable sensitivity labeling
+        href: service-security-enable-data-sensitivity-labels.md
+      - name: How to apply sensitivity labels
+        href: service-security-apply-data-sensitivity-labels.md
+      - name: Set or remove sensitivity labels programmatically
+        href: service-security-sensitivity-label-inheritance-set-remove-api.md
   - name: Security
     expanded: false
     items:
@@ -171,11 +171,11 @@
       href: service-security-private-links.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
-  - name: Row-level security
-    expanded: false
-    items:
     - name: Row-level security
-      href: service-admin-rls.md
+      expanded: false
+      items:
+      - name: Row-level security
+        href: service-admin-rls.md
   - name: Programming
     expanded: false
     items:
