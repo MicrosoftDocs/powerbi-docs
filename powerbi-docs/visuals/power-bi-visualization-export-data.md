@@ -20,6 +20,10 @@ LocalizationGroup: Visualizations
 > [!IMPORTANT]
 > Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions.
 
+## Who can export data
+
+If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Considerations and limitations** section at the end of this document.
+
 ## Viewing and exporting data
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-introduction.png" alt-text="Power BI service showing dropdown for More actions (...).":::
@@ -67,7 +71,7 @@ Security and Power BI a administrators can use [Microsoft Defender for Cloud App
 ## Export data from a report
 
 To illustrate the different options for exporting data from a report visual, we've created a stacked column chart that includes:
-- a [hierarchy](end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again. 
+- a [hierarchy](../consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again. 
 - a filter for **City**
 - an aggregate for **Discount percent** (count was changed to average).
 
@@ -121,29 +125,29 @@ When you select  **Export**, your browser prompts you to save the file. Once sav
 
 - Since we applied filters to the visual, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**.
 
----
 
 
 
 
 ## Export underlying data details
 
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department.
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
 | Visual contains | What you'll see in export  |
 |---------------- | ---------------------------|
 | Aggregates | the *first* aggregate and non-hidden data from the entire table for that aggregate |
 | Aggregates | related data - if the visual uses data from other data tables that are  *related* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
-| Measures* | all measures in the visual *and* all measures from any data table containing a measure used in the visual |
-| Measures* | all non-hidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1) |
+| Measures | all measures in the visual *and* all measures from any data table containing a measure used in the visual |
+| Measures | all non-hidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1) |
 | Measures only | all non-hidden columns from all related tables (to expand the measure) |
 | Measures only | summarized data for any duplicate rows for model measures |
 
-\* In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
    > [!IMPORTANT] 
    > Export underlying data will not include datetime / variations columns or include numeric columns if there is an aggregation.
 	
+# [Admin and designer controls for exporting](#tab/admin)
+
 ### Set the export options
 
 Power BI report designers control the types of data export options that are available for their consumers. The choices are:
@@ -172,6 +176,8 @@ To set these options:
 You can also update this setting in the Power BI service.
 
 It's important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings.
+
+---
 
 ## Considerations and limitations
 
