@@ -156,9 +156,9 @@ Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
 
 ## Step 3 - Enable the Power BI service admin settings
 
-For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal.
+For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI [admin portal](../../admin/service-admin-portal.md).
 
-Add the security group you created in Azure AD, to the specific security group section in the **Developer settings**.
+Go to **Tenant settings** in the **Admin portal**, and add the security group you created in Azure AD to the specific security group section in the **Developer settings**.
 
 >[!IMPORTANT]
 >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
