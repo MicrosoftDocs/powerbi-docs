@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 02/23/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -137,9 +137,13 @@ Keep in mind the following restrictions when using large datasets:
 - **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
+
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
-- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to the maximum capacity of the SKU.
+- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to 75% of SKU's capacity.
+
+- **Refreshing large datasets**: Datasets larger than 50 GB should be refreshed using XMLA APIs.  
+
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
 - You cannot enable large datasets using the REST API. 
@@ -153,48 +157,50 @@ The following list provides regions where large datasets in Power BI are availab
 >[!NOTE]
 >Once a large dataset is created in a workspace, it must stay in that region. You cannot reassign a workspace with a large dataset to a Premium capacity in another region.
 
-|Azure region  |Azure region abbreviation  |
-|---------|---------|
-|Australia East     | australiaeast        |
-|Australia Southeast     | australiasoutheast        |
-|Canada East     | canadaeast        |
-|Canada Central     | canadacentral        |
-|Central India     | centralindia        |
-|Central US     | centralus        |
-|East Asia     | eastasia        |
-|East US     | eastus        |
-|East US 2     | eastus2        |
-|Japan East     | japaneast        |
-|Japan West     | japanwest        |
-|Korea Central     | koreacentral        |
-|Korea South     | koreasouth        |
-|North Central US     | northcentralus        |
-|North Europe     | northeurope        |
-|South Central US     | southcentralus        |
-|Southeast Asia     | southeastasia        |
-|UK South     | uksouth        |
-|UK West     | ukwest        |
-|West Europe     | westeurope        |
-|West India     | westindia        |
-|West US     | westus        |
-|West US 2     | westus2        |
+|Azure region        |Azure region abbreviation |
+|--------------------|--------------------------|
+|Australia East      |australiaeast             |
+|Australia Southeast |australiasoutheast        |
+|Canada East         |canadaeast                |
+|Canada Central      |canadacentral             |
+|Central India       |centralindia              |
+|Central US          |centralus                 |
+|East Asia           |eastasia                  |
+|East US             |eastus                    |
+|East US 2           |eastus2                   |
+|Japan East          |japaneast                 |
+|Japan West          |japanwest                 |
+|Korea Central       |koreacentral              |
+|Korea South         |koreasouth                |
+|North Central US    |northcentralus            |
+|North Europe        |northeurope               |
+|South Central US    |southcentralus            |
+|Southeast Asia      |southeastasia             |
+|UK South            |uksouth                   |
+|UK West             |ukwest                    |
+|West Europe         |westeurope                |
+|West India          |westindia                 |
+|West US             |westus                    |
+|West US 2           |westus2                   |
 
 ## Next steps
 
 The following links provide information that can be useful for working with large models:
 
-* [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
-* [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
-* [Bring your own encryption keys for Power BI](service-encryption-byok.md)
-* [How capacities function](service-premium-what-is.md#how-capacities-function)
-* [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
+> [!div class="nextstepaction"]
+> [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
-* Performance
-* Per-user licensing
-* Greater scale
-* Improved metrics
-* Autoscaling
-* Reduced management overhead
+> [!div class="nextstepaction"]
+> [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [!div class="nextstepaction"]
+> [Bring your own encryption keys for Power BI](service-encryption-byok.md)
+
+> [!div class="nextstepaction"]
+> [How capacities function](service-premium-what-is.md#how-capacities-function)
+
+> [!div class="nextstepaction"]
+> [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
+
+> [!div class="nextstepaction"]
+> [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
