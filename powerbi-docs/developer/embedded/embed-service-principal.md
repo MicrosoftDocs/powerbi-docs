@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 02/04/2021
+ms.date: 02/04/2022
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -26,6 +26,7 @@ This article describes service principal authentication using *Application ID* a
 
 >[!NOTE]
 >Azure AD recommends that you secure your backend services using certificates, rather than secret keys.
+>
 >* [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 >* To secure your solution using a certificate, complete the instructions in this article and then follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
 
@@ -36,7 +37,6 @@ To use service principal and an application ID  embedded analytics, follow these
 1. Create an [Azure AD app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Create the Azure AD app's secret.
-    
     2. Get the app's *Application ID* and *Application secret*.
 
     >[!NOTE]
@@ -128,16 +128,17 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD, and add the service principal you created to that security group.
 
 There are two ways to create an Azure AD security group:
+
 * [Manually (in Azure)](embed-service-principal.md#create-a-security-group-manually)
 * [Using PowerShell](embed-service-principal.md#create-a-security-group-using-powershell)
 
 ### Create a security group manually
 
-To create an Azure security group manually, follow the instructions in the [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) article. 
+To create an Azure security group manually, follow the instructions in [create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
 
 ### Create a security group using PowerShell
 
-Below is a sample script for creating a new security group, and adding an app to that security group.
+Below is a sample script for creating a new security group and adding an app to that security group.
 
 >[!NOTE]
 >If you want to enable service principal access for the entire organization, skip this step.
