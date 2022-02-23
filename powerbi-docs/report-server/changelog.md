@@ -19,7 +19,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2022
 - **Power BI Report Server**
-    - *Version: 1.13.8082.22081 (build 15.0.1108.159), Released: Feburary 23, 2022*
+    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: Feburary 23, 2022*
     	- Bug fixes
     	   - Fixed issue with V3 reports with SAP HANA datasource and Kerberos single sign-on.
     	   - Several minor UI fixes in new portal experience.
