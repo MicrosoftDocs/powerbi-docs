@@ -82,8 +82,6 @@
           href: paginated-reports-view-power-bi-service.md
         - name: "Interact with parameters"
           href: paginated-reports-view-parameters.md
-        - name: "Subscribe yourself or others"
-          href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
       - name: "Types of visualizations"
