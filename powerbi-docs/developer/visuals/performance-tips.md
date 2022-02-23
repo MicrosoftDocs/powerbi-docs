@@ -1,6 +1,6 @@
 ---
 title: Performance tips creating quality Power BI custom visuals
-description: How to build a high performance Power BI custom visuals.
+description: How to build a high performance Power BI custom visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -34,7 +34,7 @@ Does the animation loop redraw unchanged elements?
 
 Solution: Update the frames selectively.
 
-When it's time to animate static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
+When you're animating static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
 
 Instead consider using a visual constructor method to draw everything static. Then the update function only needs to draw visualization elements that change.
 
@@ -43,7 +43,7 @@ Instead consider using a visual constructor method to draw everything static. Th
 
 ## Cache DOM nodes
 
-When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete additional nodes in the relevant area, caching them can improve your application's overall efficiency.
+When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve your application's overall efficiency.
 
 To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum.
 
@@ -86,7 +86,7 @@ Limit DOM manipulation as much as possible.  *Insert operations* like `prepend()
 
 **Try:**
 
-Make hhe above example faster by using `html()` and building the list beforehand:
+Make the above example faster by using `html()` and building the list beforehand:
 
   ```javascript
   let list = ''; 
@@ -99,13 +99,13 @@ Make hhe above example faster by using `html()` and building the list beforehand
 
 ## Reconsider JQuery
 
-Limit your JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. This could also decrease compatibility issues with older browsers.
+Limit your JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
 
 For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
 ## Use canvas or WebGL
 
-For repeated use of animations consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
+For repeated use of animations, consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
 You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
 
