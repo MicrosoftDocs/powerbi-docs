@@ -78,7 +78,7 @@
         href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy
         href: service-security-sensitivity-label-mandatory-label-policy.md
-      - name: Sensitivity label downstream inheritance (preview)
+      - name: Sensitivity label downstream inheritance
         href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
