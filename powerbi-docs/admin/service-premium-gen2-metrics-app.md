@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/13/2022
+ms.date: 02/15/2022
 LocalizationGroup: Premium 
 ---
 
@@ -33,10 +33,6 @@ The Gen2 metrics app has six pages:
 * [Timepoint](#timepoint)
 
 * [Artifact Detail](#artifact-detail)
-
-* [Release Notes](#release-notes)
-
-* [Help](#help)
 
 ## Overview
 
@@ -92,7 +88,9 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
 
-* **Performance delta** - Displays the performance effect on Power BI items. A positive value indicates that the performance is improving, and a negative value indicates that the performance is degrading. Sort to view the Power BI items that were effected the most due to performance degradation.
+* **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
+
+    Sorting the matrix by this column helps identify datasets that have had the biggest change  in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. Small datasets with little CPU activity can easily show large positive or negative values.
 
 ### Performance
 
@@ -137,7 +135,7 @@ Displays the memory footprint recorded for Power BI items over time. If no item 
 
 #### Performance profile
 
-Displays the percentage of fast, medium, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
+Displays the percentage of fast, moderate, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
 ### Weekly trendlines
 
@@ -400,7 +398,7 @@ The overloading visual has the following columns:
 
 ### Performance
 
-Displays the percentage of fast, medium, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
+Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
 
@@ -427,17 +425,6 @@ Use these visuals to review CPU consumption, operation duration and number of us
 * **Duration** - Each column displays the amount of seconds used to complete each operation per hour.
 
 * **Users** - Each column displays the number of active users per hour.
-
-## Release notes
-
-The release notes page contains the release notes for each new version of the app. As the app updates automatically, it's a good idea to review the release notes from time to time.
-
-## Help
-
-This page provides a help summary for each one of the Gen2 metrics app pages. At the top there's a tab for each page in the app. Select a tab to review the help summary.
-
->[!NOTE]
->Each visual in the Gen2 metrics app has a **?** icon. Select this icon to learn more about the visual.
 
 ## Considerations and limitations
 
