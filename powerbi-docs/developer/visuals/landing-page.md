@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/18/2021
+ms.date: 02/23/2022
 ---
 
 # Add a landing page to your Power BI visual
@@ -25,7 +25,7 @@ An example of a landing page is shown in the following image:
 This article explains how to design a landing page for your visual. The landing page is displayed whenever the visual has no data in it.
 
 >[!NOTE]
->Designing a Power BI visual landing page is supported from API version 2.3.0. To find out which version you’re using, Run the `pbiviz -V` command.
+>Designing a Power BI visual landing page is supported from API version 2.3.0. To find out which version you’re using, run the `pbiviz -V` command.
 
 ## Creating a landing page
 
