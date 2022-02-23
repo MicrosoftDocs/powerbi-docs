@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/20/2020
+ms.date: 02/20/2022
 ---
 # Power BI custom visual performance tips
 
