@@ -179,30 +179,18 @@
   - name: Power BI administration
     expanded: false
     items:
-    - name: General Information for administrators
-      expanded: false
-      items:
-      - name: What is Power BI administration?
-        href: service-admin-administering-power-bi-in-your-organization.md
-      - name: Administration role in Microsoft 365
-        href: service-admin-role.md      
-      - name: Frequently asked questions (FAQ)
-        href: service-admin-faq.yml
-      - name: Can't sign in?
-        href: power-bi-cannot-sign-in.md
-      - name: Forgot your password for Power BI?
-        href: service-admin-forgot-your-password.md
-      - name: How to use the same account login for Power BI and Azure
-        href: service-admin-how-to-use-the-same-account-as-azure.md                  
-      - name: Feature enablement
-        expanded: false
-        items:
-        - name: Using the admin portal
-          href: service-admin-portal.md
-        - name: Add custom branding
-          href: service-admin-custom-branding.md        
-        - name: Manage Power BI visuals admin settings
-          href: organizational-visuals.md      
+    - name: What is Power BI administration?
+      href: service-admin-administering-power-bi-in-your-organization.md
+    - name: Administration role in Microsoft 365
+      href: service-admin-role.md      
+    - name: Frequently asked questions (FAQ)
+      href: service-admin-faq.yml
+    - name: Can't sign in?
+      href: power-bi-cannot-sign-in.md
+    - name: Forgot your password for Power BI?
+      href: service-admin-forgot-your-password.md
+    - name: How to use the same account login for Power BI and Azure
+      href: service-admin-how-to-use-the-same-account-as-azure.md                  
     - name: System administration
       expanded: false
       items:
@@ -225,7 +213,16 @@
       - name: Find users that have signed in
         href: service-admin-access-usage.md
       - name: Track user activities
-        href: service-admin-auditing.md       
+        href: service-admin-auditing.md  
+    - name: Feature enablement
+      expanded: false
+      items:
+      - name: Using the admin portal
+        href: service-admin-portal.md
+      - name: Add custom branding
+        href: service-admin-custom-branding.md        
+      - name: Manage Power BI visuals admin settings
+        href: organizational-visuals.md                   
   - name: Automation tools
     expanded: false
     items:
