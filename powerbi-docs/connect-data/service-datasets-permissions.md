@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
