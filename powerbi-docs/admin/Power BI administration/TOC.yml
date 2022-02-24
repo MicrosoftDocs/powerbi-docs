@@ -2,18 +2,21 @@
   href: ../../index.yml
   expanded: false
   items:
-  - name: What is Power BI administration?
-    href: ../service-admin-administering-power-bi-in-your-organization.md
-  - name: Administration role in Microsoft 365
-    href: ../service-admin-role.md      
-  - name: Frequently asked questions (FAQ)
-    href: ../service-admin-faq.yml
-  - name: Can't sign in?
-    href: ../power-bi-cannot-sign-in.md
-  - name: Forgot your password for Power BI?
-    href: ../service-admin-forgot-your-password.md
-  - name: How to use the same account login for Power BI and Azure
-    href: ../service-admin-how-to-use-the-same-account-as-azure.md                  
+  - name: General information administration
+    expanded: false
+    items:
+    - name: What is Power BI administration?
+      href: ../service-admin-administering-power-bi-in-your-organization.md
+    - name: Administration role in Microsoft 365
+      href: ../service-admin-role.md      
+    - name: Frequently asked questions (FAQ)
+      href: ../service-admin-faq.yml
+    - name: Can't sign in?
+      href: ../power-bi-cannot-sign-in.md
+    - name: Forgot your password for Power BI?
+      href: ../service-admin-forgot-your-password.md
+    - name: How to use the same account login for Power BI and Azure
+      href: ../service-admin-how-to-use-the-same-account-as-azure.md                  
   - name: System administration
     expanded: false
     items:
