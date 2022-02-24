@@ -732,7 +732,7 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
             "redirect_document_id": true
         },
         {
@@ -2107,8 +2107,13 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/collaborate-share/service-report-subscribe",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-security-apply-data-sensitivity-labels.md",
