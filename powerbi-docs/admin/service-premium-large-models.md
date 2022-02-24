@@ -140,13 +140,13 @@ Keep in mind the following restrictions when using large datasets:
 
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
-- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to 75% of SKU's capacity.
+- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to 75% of the SKU's capacity.
 
-- **Refreshing large datasets**: Datasets larger than 50 GB should be refreshed using XMLA APIs.  
+- **Refreshing large datasets**: Datasets that are close to half the size of the capacity size (for example, a 12 GB dataset on a 25 GB capacity size) may exceed the available memory during refreshes. Using an [XMLA endpoint](service-premium-connect-tools.md) you can configure fine grained data refreshes, so that the memory needed by the refresh can be minimized to fit within your capacity's size.
 
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
-- You cannot enable large datasets using the REST API. 
+- You cannot enable large datasets using the REST API.
 
 ## Region availability
 
