@@ -40,9 +40,9 @@ To configure the capacity notification emails, follow these steps:
 
     * **You've exceeded your available capacity and might experience slowdowns** - A notification is sent once you reach your capacity limit. Once the limit is reached, if you have [autoscale](service-premium-auto-scale.md) enabled, autoscale will start. If you don't have autoscale enabled, throttling will be applied to your capacity.
 
-    * **An Autoscale v-core has been added** - A notification will be sent once autoscale starts (if enabled).
+    * **An Autoscale v-core has been added** - A notification will be sent once autoscale starts and every time a v-core is added.
 
-    * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. When this happens, throttling will be applied to your capacity.
+    * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. If the capacity continues to use all the autoscale v-cores, throttling will be applied to your capacity.
 
 5. In the section **Send notifications to**, select who you want the notifications to be emailed to:
 
@@ -58,7 +58,7 @@ To configure the capacity notification emails, follow these steps:
 
 * Notification emails don't list by how much a threshold was crossed.
 
-* After a notification is sent, there's a three hour cooling period. During this time, you'll not get any notifications even if your capacity crosses thresholds that are set to trigger notifications.
+* After a notification is sent, there's a three hour cooling period for that type of notification. During this time, you'll not get any notifications from this type, even if your capacity will cross thresholds that are set to trigger these notifications. For example, if you configure your capacity to send a notification once you cross the 75% usage threshold, once that threshold is met you'll receive a notification. If the capacity goes below this threshold to 60%, and then right back over it in the next hour, you'll not get another notification for crossing the 75% mark. If you have the autoscale notification turned on, and your capacity crosses the 100% threshold during these three hours, you'll get a notification that autoscale started.
 
 * A 30 seconds window is applied to calculate your capacity usage. Due to a less granular calculation, capacity usage may appear differently in the [Power BI Premium utilization and metrics](service-premium-gen2-metrics-app.md) app. As a result, you may not see the event your notification points to, in the app. For example, a very short spike in capacity activity that triggers a notification, may not be seen at all in the Power BI Premium utilization and metrics app.
 
