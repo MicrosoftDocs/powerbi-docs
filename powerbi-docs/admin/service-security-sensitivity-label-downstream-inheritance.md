@@ -3,15 +3,15 @@ title: Sensitivity label downstream inheritance in Power BI
 description: Learn how sensitivity labels can be propagated to downstream content
 author: paulinbar
 ms.author: painbar
-manager: kfolis
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 06/28/2021
+ms.date: 02/20/2022
 LocalizationGroup: Data from files
 ---
-# Sensitivity label downstream inheritance (preview)
+# Sensitivity label downstream inheritance
 
 When a sensitivity label is applied to a dataset or report in the Power BI service, it is possible to have the label trickle down and be applied to content that is built from that dataset or report as well. For datasets, this means other datasets, reports, and dashboards. For reports, this means dashboards. This capability is called downstream inheritance.
 
@@ -54,7 +54,7 @@ In certain cases, downstream inheritance (like other automated labeling scenario
 
 ## Enabling fully automated downstream inheritance
 
-By default, downstream inheritance operates in user consent mode. To switch downstream inheritance in the tenant to fully automated mode, the Power BI admin must enable the **Automatically apply sensitivity labels to downstream content (preview)** tenant setting in the admin portal.
+By default, downstream inheritance operates in user consent mode. To switch downstream inheritance in the tenant to fully automated mode, the Power BI admin must enable the **Automatically apply sensitivity labels to downstream content** tenant setting in the admin portal.
 
 ![Screenshot of tenant setting for automatically applying labels to downstream content.](media/service-security-sensitivity-label-downstream-inheritance/downstream-inheritance-fully-automated-tenant-switch.png)
 

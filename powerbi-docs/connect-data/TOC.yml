@@ -285,8 +285,6 @@
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
-      - name: "Xero"
-        href: service-connect-to-xero.md
       - name: "Zendesk"
         href: service-connect-to-zendesk.md
     - name: Gateways

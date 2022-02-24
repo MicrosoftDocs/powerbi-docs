@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/08/2022
+ms.date: 02/20/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -95,7 +95,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-<sup>2</sup> The *model refresh parallelism* and *max memory per query* limits only apply to dataset workloads.
+<sup>2</sup> These limits only apply to dataset workloads.
 
 <sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 

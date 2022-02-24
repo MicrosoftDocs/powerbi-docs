@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/19/2021
+ms.date: 02/19/2022
 ---
 
 # Visual API
@@ -15,14 +15,14 @@ ms.date: 03/19/2021
 All visuals start with a class that implements the `IVisual` interface. You can name the class anything as long as there's exactly one class that implements the `IVisual` interface.
 
 > [!NOTE]
-> The visual class name must match the `visualClassName` in the `pbiviz.json` file.
+> The visual class name must be the same as the `visualClassName` in the `pbiviz.json` file.
 
 The visual class should implement the following methods as shown in the sample below:
 
-* `constructor`, a standard constructor that initializes the visual's state
-* `update`, updates the visual's data
-* `enumerateObjectInstances`, returns objects that populate the property pane (formatting options) where you can modify them as needed
-* `destroy`, a standard destructor for cleanup
+* [`constructor`](#constructor), a standard constructor that initializes the visual's state
+* [`update`](#update), updates the visual's data
+* [`enumerateObjectInstances`](#enumerateobjectinstances-optional), returns objects that populate the property pane (formatting options) where you can modify them as needed
+* [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
 class MyVisual implements IVisual {
@@ -47,7 +47,7 @@ class MyVisual implements IVisual {
 
 ## constructor
 
-The constructor of the visual class is called when the visual is instantiated. It can be used for any set up operations needed by the visual.
+The `constructor` of the visual class is called when the visual is instantiated. It can be used for any set-up operations the visual needs.
 
 ```typescript
 constructor(options: VisualConstructorOptions)
@@ -61,11 +61,11 @@ constructor(options: VisualConstructorOptions)
    `IVisualHost` contains the following services:
 
   * `createSelectionIdBuilder`, generates and stores metadata for selectable items in your visual
-  * `createSelectionManager`, creates the communication bridge used to notify the visual's host on changes in the selection state, see [Selection API](./selection-api.md).
-  * `createLocalizationManager`, generates a manager to help with [Localization](./localization.md)
-  * `allowInteractions: boolean`, a boolean flag which hints whether or not the visual should be interactive
+  * `createSelectionManager`, creates the communication bridge used to notify the visual's host about changes in the selection state, see [Selection API](./selection-api.md).
+  * `createLocalizationManager`, generates a manager to help with [localization](./localization.md)
+  * `allowInteractions: boolean`, a boolean flag that determines whether or not the visual is interactive
   * `applyJsonFilter`, applies specific filter types, see [Filter API](./filter-api.md)
-  * `persistProperties`, allows users to persist properties and save them along with the visual definition, so they're available on the next reload
+  * `persistProperties`, allows users to create persistent settings and save them along with the visual definition, so they're available on the next reload
   * `eventService`, returns an [event service](./event-service.md) to support **Render** events
   * `storageService`, returns a service to help use [local storage](./local-storage.md) in the visual
   * `authenticationService`, generates a service to help with user authentication
@@ -100,7 +100,6 @@ constructor(options: VisualConstructorOptions)
    }
    ```
 
-
 ## update
 
 All visuals must implement a public update method that's called whenever there's a change in the data or host environment.
@@ -112,17 +111,17 @@ public update(options: VisualUpdateOptions): void
 ### VisualUpdateOptions
 
 * `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
-* `dataViews: DataView[]`, the dataview object which contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
-* `type: VisualUpdateType`, flags to indicate the type(s) of data being updated (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
-* `viewMode: ViewMode`, flags to indicate the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
-* `editMode: EditMode`, flag to indicate the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
-* `operationKind?: VisualDataChangeOperationKind`, flag to indicate type of data change (**Create** | **Append**)
+* `dataViews: DataView[]`, the dataview object that contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
+* `type: VisualUpdateType`, flags indicating the type(s) of data being updated (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
+* `viewMode: ViewMode`, flags indicating the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
+* `editMode: EditMode`, flag indicating the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
+* `operationKind?: VisualDataChangeOperationKind`, flag indicating type of data change (**Create** | **Append**)
 * `jsonFilters?: IFilter[]`, collection of applied json filters
 * `isInFocus?: boolean`, flag to indicate if the visual is in focus mode or not
 
 ## enumerateObjectInstances *(optional)*
 
-This method is called for every `object` listed in the [`capabilities.json`](capabilities.md) file. For each `object` (currently just the name) you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
+This method is called for every `object` listed in the [`capabilities.json`](capabilities.md) file. For each `object` (currently just the name), you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
 
 ```typescript
 enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualObjectInstanceEnumeration
@@ -134,7 +133,7 @@ enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualOb
 
 ## destroy *(optional)*
 
-The destroy function is called when your visual is unloaded and can be used for clean up tasks such as removing event listeners.
+The destroy function is called when your visual is unloaded and can be used for clean-up tasks such as removing event listeners.
 
 ``` typescript
 public destroy(): void

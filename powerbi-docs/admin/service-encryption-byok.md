@@ -187,7 +187,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
 
-
+    Please note that the current key should be enabled.
 
 ## Next steps
 

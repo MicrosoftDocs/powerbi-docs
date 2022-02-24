@@ -7,10 +7,9 @@ metadata:
   ms.reviewer: ''
   ms.service: powerbi
   ms.subservice: powerbi-gateways
-  ms.topic: conceptual
+  ms.topic: faq
   ms.date: 07/15/2019
   LocalizationGroup: Gateways
-    
 title: On-premises data gateway FAQ - Power BI
 summary: |
   [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
