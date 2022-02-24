@@ -255,7 +255,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If the label applied to a .pbix file hasn't been published to the user in the Microsoft 365 compliance center, the user won’t be able to save the file in Desktop.
 
-* Publishing or importing a .pbix file with a sensitivity label to the service via APIs running under a service principal isn’t supported and will fail. To mitigate, users can remove the labels and then publish using service principals.
+* Publishing or importing a .pbix file that has a protected sensitivity label to the service via APIs running under a service principal isn't supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
 
