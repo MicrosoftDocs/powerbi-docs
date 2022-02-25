@@ -736,6 +736,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/paginated-reports-view-parameters.md",
             "redirect_url": "/power-bi/consumer/paginated-reports-view-parameters",
             "redirect_document_id": true
