@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 02/24/2022
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -119,6 +119,9 @@ Local Excel workbooks open in Excel Online *within* Power BI. Unlike Excel workb
 
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](service-publish-from-excel.md) to learn more.
+
+> [!NOTE]
+> If you upload an Excel workbook connected to an on-premises SSAS cube, the underlying data model cannot be refreshed in the Power BI service.
 
 ## Troubleshooting
 Workbook file too big? Check out [Reduce the size of an Excel workbook to view it in Power BI](reduce-the-size-of-an-excel-workbook.md).
