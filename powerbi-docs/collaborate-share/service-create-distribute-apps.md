@@ -143,7 +143,7 @@ When adding links to your app navigation and selecting the Content area option:
 
 ## App permissions
 
-This section describes the kinds of permissions you can grant to the specified users ([Step 5 in Publish your app](#publish-your-app), above.
+This section describes the kinds of permissions you can grant to the specified users ([Step 5 in Publish your app](#publish-your-app), above).
 
 * **Allow all users to connect to the app's underlying datasets using the Build permission**
 
@@ -159,8 +159,6 @@ This section describes the kinds of permissions you can grant to the specified u
 
 > [!NOTE]
 > Removing app permissions via the app's **Permissions** tab prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail. 
-
-
 
 ## Automatically install apps for end users
 If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
