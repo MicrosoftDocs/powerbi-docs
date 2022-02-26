@@ -100,7 +100,7 @@ After you publish your app, you may want to change or update it. It's easy to up
     The people you've published the app to automatically see the updated version of the app.
 
     > [!NOTE]
-    > If you removed app permissions as part of the update, new app installers won't get those permissions. **However, the update won't remove the permissions from users who already them**. To remove this existing access, go to the **Direct access** tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail.
+    > If you removed app permissions as part of the update, new app installers won't get those permissions. **However, the update won't remove the permissions from users who already have them**. To remove such existing access, go to the **Direct access** tab on the datasets manage permissions page and remove the permissions manually. See the **Manage direct access** section in [Manage dataset access permissions](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail.
 
 ## Design the navigation experience
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
