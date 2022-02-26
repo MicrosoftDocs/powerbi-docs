@@ -97,7 +97,10 @@ After you publish your app, you may want to change or update it. It's easy to up
 
 1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
 
-    The people you've published the app to automatically see the updated version of the app. 
+    The people you've published the app to automatically see the updated version of the app.
+
+    > [!NOTE]
+    > If you removed app permissions as part of the update, new app installers won't get those permissions. **However, the update won't remove the permissions from users who already them**. To remove this existing access, go to the **Direct access** tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail.
 
 ## Design the navigation experience
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
@@ -152,7 +155,7 @@ This section describes the kinds of permissions you can grant to the specified u
     This option grants users reshare permission on the app's underlying datasets.
 
 > [!NOTE]
-> Removing app permissions via the app's **Permissions** tab, prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail. 
+> Removing app permissions via the app's **Permissions** tab prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the **Direct access** tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail. 
 
 
 
