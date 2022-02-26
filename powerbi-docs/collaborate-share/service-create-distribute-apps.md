@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 04/21/2021
+ms.date: 02/26/2022
 
 LocalizationGroup: Share your work
 ---
@@ -134,6 +134,27 @@ When adding links to your app navigation and selecting the Content area option:
 * Embedding Power BI service content like reports or dashboards in other workspaces isn't supported. 
 * Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](../report-server/quickstart-embed.md#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
 * A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
+
+## App permissions
+
+This section describes the kinds of permissions you can grant to the specified users ([Step 5 in Publish your app](#publish-your-app), above.
+
+* **Allow all users to connect to the app's underlying datasets using the Build permission**
+
+    This option grants build permission on the app's underlying datasets.
+
+* **Allow users to make a copy of the reports in this app**
+
+    This option grants the ability to create copies of the reports in the app. It can only be selected if the first option granting build permission is selected.
+
+* **Allow users to share the app and the app's underlying datasets using the share permission**
+
+    This option grants users reshare permission on the app's underlying datasets.
+
+> [!NOTE]
+> Removing app permissions via the app's **Permissions** tab, prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions#manage-direct-access) for detail. 
+
+
 
 ## Automatically install apps for end users
 If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
