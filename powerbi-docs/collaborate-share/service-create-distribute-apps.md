@@ -152,7 +152,7 @@ This section describes the kinds of permissions you can grant to the specified u
     This option grants users reshare permission on the app's underlying datasets.
 
 > [!NOTE]
-> Removing app permissions via the app's **Permissions** tab, prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions#manage-direct-access) for detail. 
+> Removing app permissions via the app's **Permissions** tab, prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail. 
 
 
 
