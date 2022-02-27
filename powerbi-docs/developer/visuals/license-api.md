@@ -125,7 +125,7 @@ Example of the visual display containing the "licenses are required" general ico
 
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" general icon.](media/licensing/generalIconExpand.png)
+>![visual display containing the "licenses are required" expanded icon.](media/licensing/generalIconExpand.png)
 
 
 ### Overlay the visual's display with a notification on missing licenses
