@@ -55,7 +55,8 @@ export interface LicenseInfoResult {
 | Suspended | Indicates that the license is suspended likely due to Payment violation. |
 
 
-* `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement. Currently, the following Power BI environments don't support license management or license enforcement:
+* `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement.   
+Currently, the following Power BI environments don't support license management or license enforcement:
     *   Embedded (Publish To Web, PaaS embed)
     *   Sovereign clouds
     *   RS Desktop
@@ -113,7 +114,7 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to displ
 Once triggered, the icon will be preserved throughout the visual's lifetime until `clearLicenseNotification` is called.
 
 > [!NOTE]
-> The `LicenseNotificationType.General` is only supported in Power BI Edit scenarios. Calling this when the report is in Read mode or dashboard scenario will not apply the icon and will return `false` in the call's response.   
+> The `LicenseNotificationType.General` notification is only enforced in Power BI Edit scenarios. Calling this when the report is in Read mode or dashboard scenario will not apply the icon and will return `false` in the call's response.   
 
 Example of the visual display containing the "licenses are required" general icon:
 
@@ -140,6 +141,9 @@ Example of the visual display containing the "visual blocked" notification:
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` to overlay the visual's display with a notification that visual is blocked since the Power BI in use doesn't support licenses management\enforcement.  
 Once triggered, the icon will be preserved throughout the visual's lifetime until `clearLicenseNotification` is called.
+
+> [!NOTE]
+> The `LicenseNotificationType.UnsupportedEnv` notification is only enforced when called in context of unsupported for licensing environment. Calling this in any other environment will not apply the notification and will return `false` in the call's response.   
 
 Example of the visual display containing the "Unsupported Environment" notification:
 
