@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/29/2021
+ms.date: 02/26/2022
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
@@ -44,10 +44,26 @@ These actions will open the datasets manage permissions page. The manage permiss
 The direct access tab lists users who have been granted access. For each user, you can see their email address and the permissions they have.
 
 To modify a user’s permissions, select **More options (…)** and choose one of the available options.
- 
-Click **+ Add user** to grant dataset access to another user. The [Share dataset dialog](service-datasets-share.md) will open.
+
+To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
 
 ![Screenshot of direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab.png)
+
+### Managing permissions granted through an app
+
+Permissions on the dataset that have been granted through an app are indicated by the word "App" followed by the permissions enclosed in parentheses, as shown in the image below.
+
+![Screenshot of app permissions on datasets Direct access tab.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-app-permissions.png)
+
+You can't modify permissions granted through an app directly from the Direct access tab - you must first remove them from the app configuration. To remove such permissions:
+
+1. [Edit the app](../collaborate-share/service-create-distribute-apps.md#change-your-published-app) and unselect the relevant permissions on the Permissions tab of the app's configuration settings.
+
+1. Republish the app.
+
+1. Go to the Direct access tab of the dataset's manage dataset permissions page as described [above](#manage-direct-access). The user will still have the permissions that were granted via the app before update, but now they won't be tied to the app (note that the parentheses are gone). Now you can remove whatever permissions you desire.
+
+    ![Screenshot of editing former app permissions.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-app-permissions-remove.png)
 
 ## Manage links generated for report sharing
 
