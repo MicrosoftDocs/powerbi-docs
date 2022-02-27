@@ -29,7 +29,7 @@ landingContent:
           - text: What is Power BI administration
             url: ../service-admin-administering-power-bi-in-your-organization.md
           - text: Can't sign in?
-            url: ../power-bi-cannot-sign-in.yml
+            url: ../power-bi-cannot-sign-in.md
           - text: Use the same account for Power BI and Azure
             url: ../service-admin-how-to-use-the-same-account-as-azure.md
 
