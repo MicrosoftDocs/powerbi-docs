@@ -66,8 +66,8 @@ Currently, the following Power BI environments don't support license management 
     *   Rendering in Service Principal context (TBD: Public Preview)
     *   Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
-* `isLicenseInfoAvailable` - if false, indicates that the licenses info could not be retrieved.   
-This can happen in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
+* `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.   
+Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
 Example of calling `getAvailableServicePlans`:  
 
