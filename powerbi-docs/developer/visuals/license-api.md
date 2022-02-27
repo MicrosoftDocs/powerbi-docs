@@ -114,7 +114,7 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to displ
 Once triggered, the icon will be preserved throughout the visual's lifetime until `clearLicenseNotification` is called.
 
 > [!NOTE]
-> The `LicenseNotificationType.General` notification is only enforced in Power BI Edit scenarios. Calling this when the report is in Read mode or dashboard scenario will not apply the icon and will return `false` in the call's response.   
+> The `LicenseNotificationType.General` notification is only enforced when both applies: supported for licensing environment and Power BI Edit scenarios. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will not apply the icon and will return `false` in the call's response.    
 
 Example of the visual display containing the "licenses are required" general icon:
 
@@ -154,6 +154,9 @@ Example of the visual display containing the "Unsupported Environment" notificat
 ### Display a banner notifying that a specific visual's functionality couldn't be applied
 
 When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that can be set by you and used to provide additional information on the feature that triggered the notification.
+
+> [!NOTE]
+> The feature blocked notification is only enforced when called in the context of supported for licensing environment. Calling this in an unsupported environment will not apply the notification and will return `false` in the call's response. 
 
 > [!NOTE]
 > To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
