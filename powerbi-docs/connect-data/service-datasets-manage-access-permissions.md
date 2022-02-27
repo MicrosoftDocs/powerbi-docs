@@ -57,7 +57,7 @@ Permissions on the dataset that have been granted through an app are indicated b
 
 You can't modify permissions granted through an app directly from the Direct access tab - you must first remove them from the app configuration. To remove such permissions:
 
-1. [Edit the app](../collaborate-share/service-create-distribute-apps.md#change-your-published-app) and unselect the relevent permissions on the Permissions tab of the app's configuration settings.
+1. [Edit the app](../collaborate-share/service-create-distribute-apps.md#change-your-published-app) and unselect the relevant permissions on the Permissions tab of the app's configuration settings.
 
 1. Republish the app.
 
