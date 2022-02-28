@@ -24,8 +24,8 @@ Learn more about [Power BI Licensing and Translatability support](https://go.mic
 
 ## Retrieve visual's service plans that are assigned to the active user
 
-To retrieve the service plans (licenses) assigned to the user, call `getAvailableServicePlans` (available via `IVisualLicenseManager`).    
-From performance perspective, attempt to fetch the licenses once, preferably in the `constructor` or the `init` calls, and save the result.  
+To retrieve the service plans that were assigned to the user, add a call to `getAvailableServicePlans` (available via `IVisualLicenseManager`).  
+For best results, fetch the service plans (licenses) once, in the `constructor` or the `init` calls, and save the result.
 Once licenses are retrieved, they will be cached on Power BI host side during the Power BI session and any further calls to the same will return the cached data.
 
 ```typescript
