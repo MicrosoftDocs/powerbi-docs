@@ -61,7 +61,7 @@ export interface LicenseInfoResult {
 Currently, the following Power BI environments don't support license management or license enforcement:
     *   Embedded; Publish To Web, PaaS embed (TBD: GA)
     *   National clouds (Dependency on general support for translatability in national clouds)
-    *   RS Desktop (No planned support)
+    *   RS (No planned support)
     *   Exporting (PDF\PPT) using direct API calls (TBD: GA)
     *   Rendering in Service Principal context (TBD: Public Preview)
     *   Private Preview licensing feature isn't lighted (Private Preview only limitation)
