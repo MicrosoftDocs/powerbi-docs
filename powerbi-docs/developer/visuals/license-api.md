@@ -59,11 +59,10 @@ export interface LicenseInfoResult {
 
 * `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement.   
 Currently, the following Power BI environments don't support license management or license enforcement:
-    *   Embedded; Publish To Web, PaaS embed (TBD: GA)
+    *   Embedded - Publish To Web, PaaS embed (TBD: GA)
     *   National clouds (Dependency on general support for translatability in national clouds)
     *   RS (No planned support)
     *   Exporting (PDF\PPT) using [REST API](https://docs.microsoft.com/en-us/rest/api/power-bi/reports/export-to-file) (TBD: GA)
-    *   Rendering in Service Principal context (TBD: GA)
     *   Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.   
