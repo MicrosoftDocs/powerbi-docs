@@ -16,12 +16,12 @@ LocalizationGroup: Visualizations
 
 # Export the data that was used to create a visualization
 
-To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual. 
+To see the data that's used to create a visual, [you can display that data in Power BI](../consumer/end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual. 
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-introduction.png" alt-text="Power BI service showing dropdown for More actions (...).":::
 
 > [!IMPORTANT]
-> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. If you are a designer or admin, select the tab below for [Admin and designer controls for exporting](#admin-and-designer-controls-for-exportingtabadmin).
+> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. If you are a designer or admin, select the tab below for[Admin and designer controls for exporting](#admin-and-designer-controls-for-exportingtabadmin).
 
 ## Who can export data
 
