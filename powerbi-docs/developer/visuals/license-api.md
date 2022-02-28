@@ -24,7 +24,7 @@ Learn more on Power BI Licensing and Translatability support [here](https://go.m
 
 ## Retrieve visual's service plans that are assigned to the active user
 
-To get service plans assigned, add a call to `getAvailableServicePlans` (available via `IVisualLicenseManager`).    
+To retrieve the service plans (licenses) assigned to the user, call `getAvailableServicePlans` (available via `IVisualLicenseManager`).    
 From performance perspective, attempt to fetch the licenses once, preferably in the `constructor` or the `init` calls, and save the result.  
 Once licenses are retrieved, they will be cached on Power BI host side during the Power BI session and any further calls to the same will return the cached data.
 
@@ -62,7 +62,7 @@ Currently, the following Power BI environments don't support license management 
     *   Embedded - Publish To Web, PaaS embed (TBD: GA)
     *   National clouds (Dependency on general support for translatability in national clouds)
     *   RS (No planned support)
-    *   Exporting (PDF\PPT) using [REST API](https://docs.microsoft.com/en-us/power-bi/developer/embedded/export-to) (TBD: GA)
+    *   Exporting (PDF\PPT) using [REST API](../embedded/export-to.md) (TBD: GA)
     *   Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.   
@@ -120,11 +120,11 @@ Once triggered, the icon will be preserved throughout the visual's lifetime unti
 Example of the visual display containing the "licenses are required" general icon:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" general icon.](media/licensing/generalIcon.png)
+>![visual display containing the "licenses are required" general icon.](media/license-api/generalIcon.png)
 
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" expanded icon.](media/licensing/generalIconExpand.png)
+>![visual display containing the "licenses are required" expanded icon.](media/license-api/generalIconExpand.png)
 
 
 ### Overlay the visual's display with a notification on missing licenses
@@ -135,7 +135,7 @@ Once triggered, this notification will be preserved throughout the visual's life
 Example of the visual display containing the "visual blocked" notification:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "visual blocked" notification.](media/licensing/blockedVis.png)
+>![visual display containing the "visual blocked" notification.](media/license-api/blockedVis.png)
 
 
 ### Overlay the visual's display with a notification on licenses unsupported environment
@@ -149,7 +149,7 @@ Once triggered, the icon will be preserved throughout the visual's lifetime unti
 Example of the visual display containing the "Unsupported Environment" notification:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "Unsupported Environment" notification](media/licensing/unsupportedEnv.png)
+>![visual display containing the "Unsupported Environment" notification](media/license-api/unsupportedEnv.png)
 
 
 ### Display a banner notifying that a specific visual's functionality couldn't be applied
@@ -171,7 +171,7 @@ until `clearLicenseNotification` is called (whatever comes first).
 
 Example of the visual display containing the "feature blocked" banner notification:
 >[!div class="mx-imgBorder"]
->![visual display containing the "feature blocked" banner notification.](media/licensing/featureBanner.png)
+>![visual display containing the "feature blocked" banner notification.](media/license-api/featureBanner.png)
 
 ## Considerations and limitations
 
