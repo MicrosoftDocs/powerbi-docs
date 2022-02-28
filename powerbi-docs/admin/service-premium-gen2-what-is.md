@@ -154,7 +154,10 @@ The following known limitations currently apply to Premium Gen2:
         * The refresh operation will cause the memory used by the dataset to double, at least, since the original copy of data is still available for active queries, while an additional copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
         * Report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory and will be subject to the query memory limitation as described.
 
-    The following table summarizes all the limitations that are dependent on the capacity size:
+    The following table summarizes all the limitations that are dependent on the capacity size.
+
+    >[!NOTE]
+    >When using [large datasets](service-premium-large-models.md), the RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
     | Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
     | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
