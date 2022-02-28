@@ -68,7 +68,7 @@ Currently, the following Power BI environments don't support license management 
 
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses information could be retrieved.   
-Failure to retreive licenses can occur if the Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
+Failure to retrieve licenses can occur if the Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
 Example of calling `getAvailableServicePlans`:  
 
