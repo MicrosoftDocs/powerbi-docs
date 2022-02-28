@@ -13,10 +13,10 @@ ms.date: 02/26/2022
 
 # Licensing API
 
-The **Licensing API** allows Power BI visual developers to enforce Power BI visual's licenses. The API supports retrieving the information on Power BI visual's licenses that are assigned to the Power BI user.   
-The API also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user of the need to purchase the missing licenses.
-The visual should not display its own licensing UX, instead use one of Power BI predefined supported notifications as detailed below.  
-Learn more on Power BI Licensing and Translatability support [here](https://go.microsoft.com/fwlink/?linkid=2186097).
+The **Licensing API** allows Power BI visual developers to enforce Power BI visual's licensing policies. Use this API to retrieve information about the licenses that are assigned to each Power BI user.
+You can also use the API to trigger license related notifications. The notifications will appear on the Power BI visual to inform the user that they need to purchase missing licenses.
+The visual should not display its own licensing UX. Instead, use one of Power BI predefined supported notifications as detailed below.  
+Learn more about [Power BI Licensing and Translatability support](https://go.microsoft.com/fwlink/?linkid=2186097).
 
 >[!NOTE]
 >The `licensing` API is available from version 4.4. To find out which version you’re using, run the `pbiviz -V` command.
@@ -34,8 +34,8 @@ export interface IVisualLicenseManager {
     }
 ```
 
-Retrieving the licenses might be a long operation, thus the `getAvailableServicePlans` call is an asynchronous call and should be handled as such in your code.  
-As a response to calling the method,  `LicenseInfoResult` object is returned.
+Retrieving the licenses might take a long time. Therefore, the `getAvailableServicePlans` call is an asynchronous call and should be handled as such in your code.  
+As a response to calling the method,  a `LicenseInfoResult` object is returned.
 
 ```typescript
 export interface LicenseInfoResult {
@@ -46,27 +46,29 @@ export interface LicenseInfoResult {
 ```
 
 * `plans` - an array of Service Plans purchased by the active user for this visual. A ServicePlan contains the service identifier and its state (ServicePlanState).  
-   Supported service plan states:
+   Supported service plan states are:
 
 | State | Description |
 | - | - |
-| Inactive | Indicates that the license is not active and shouldn't be used for provisioning benefits. |
-| Active | Indicates that the license is active and can be used for provisioning benefits. |
-| Warning | Indicates that the license is in grace period likely due to payment violation. |
-| Suspended | Indicates that the license is suspended likely due to payment violation. |
+| Inactive | The license is not active and shouldn't be used for provisioning benefits. |
+| Active | The license is active and can be used for provisioning benefits. |
+| Warning | The license is in grace period, likely due to payment violation. |
+| Suspended | The license is suspended, likely due to payment violation. |
 | Unknown | Sentinel value. |
 
 
 * `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement.   
 Currently, the following Power BI environments don't support license management or license enforcement:
-    *   Embedded - Publish To Web, PaaS embed (TBD: GA)
-    *   National clouds (Dependency on general support for translatability in national clouds)
-    *   RS (No planned support)
-    *   Exporting (PDF\PPT) using [REST API](../embedded/export-to.md) (TBD: GA)
-    *   Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
-* `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.   
-Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
+  * Embedded - Publish To Web, PaaS embed (TBD: GA)
+  * National clouds (Dependency on general support for translatability in national clouds)
+  * RS (No planned support)
+  * Exporting (PDF\PPT) using [REST API](../embedded/export-to.md) (TBD: GA)
+  * Private Preview licensing feature isn't lighted (Private Preview only limitation)
+
+
+* `isLicenseInfoAvailable` - Indicates whether the licenses information could be retrieved.   
+Failure to retreive licenses can occur if the Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
 Example of calling `getAvailableServicePlans`:  
 
@@ -94,11 +96,12 @@ this.licenseManager.getAvailableServicePlans().then((result: LicenseInfoResult) 
 
 ## Notify the user that the required licenses are missing
 
-Power BI platform provides several out of the box experiences that can be used to notify:
-* Licenses should be purchased in order to enjoy full visual's capabilities
-* Particular visual's feature is blocked due to missing licenses
+Power BI platform provides several out-of-the-box experiences that can be used to notify the user that:
+
+* Licenses should be purchased in order to enjoy the visual's full capabilities
+* A particular visual's feature is blocked due to missing licenses
 * Entire visual is blocked due to missing licenses
-* Entire visual is blocked because the Power BI environment in use doesn't support license management\enforcement
+* Entire visual is blocked because the Power BI environment used doesn't support license management\enforcement
 
 ```typescript
 export interface IVisualLicenseManager {
@@ -115,7 +118,7 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to displ
 Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
 
 > [!NOTE]
-> The `LicenseNotificationType.General` notification is only enforced when both applies: supported for licensing environment and Power BI Edit scenarios. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will not apply the icon and will return `false` in the call's response.    
+> The `LicenseNotificationType.General` notification is only enforced when it is called in a supported licensing environment **and** Power BI is in Edit mode. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will return `false` in the call's response and the icon won't appear.    
 
 Example of the visual display containing the "licenses are required" general icon:
 
@@ -129,7 +132,7 @@ Example of the visual display containing the "licenses are required" general ico
 
 ### Overlay the visual's display with a notification on missing licenses
 
-Use `notifyLicenseRequired` call with `LicenseNotificationType.VisualIsBlocked` to overlay the visual's display with a notification that visual is blocked since required licenses were found missing.  
+Use `notifyLicenseRequired` call with `LicenseNotificationType.VisualIsBlocked` to overlay the visual's display with a notification that the visual is blocked due to missing licenses.  
 Once triggered, this notification will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
 Example of the visual display containing the "visual blocked" notification:
@@ -140,7 +143,7 @@ Example of the visual display containing the "visual blocked" notification:
 
 ### Overlay the visual's display with a notification on licenses unsupported environment
 
-Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` to overlay the visual's display with a notification that visual is blocked since the Power BI in use doesn't support licenses management\enforcement.  
+Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` to overlay the visual's display with a notification that visual is blocked because the Power BI in use doesn't support licenses management\enforcement.  
 Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
 
 > [!NOTE]
@@ -154,7 +157,7 @@ Example of the visual display containing the "Unsupported Environment" notificat
 
 ### Display a banner notifying that a specific visual's functionality couldn't be applied
 
-When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that can be set by you and used to provide additional information on the feature that triggered the notification.
+When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that you can set and use to provide additional information on the feature that triggered the notification.
 
 > [!NOTE]
 > The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response. 
@@ -163,11 +166,11 @@ When applying a specific visual's functionality requires licenses that were foun
 > To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
 
 
-Once triggered, the banner will be displayed for 10 seconds 
-or 
-until other "feature blocked" banner is triggered 
-or 
-until `clearLicenseNotification` is called (whatever comes first).
+Once triggered, the banner will be displayed until the one of the following conditions occurs:
+
+* Ten seconds pass
+* Another "feature blocked" banner is triggered 
+* `clearLicenseNotification` is called (whatever comes first).
 
 Example of the visual display containing the "feature blocked" banner notification:
 >[!div class="mx-imgBorder"]
