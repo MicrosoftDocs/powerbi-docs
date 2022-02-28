@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
-ms.date: 02/21/2022
+ms.date: 02/28/2022
 LocalizationGroup: Premium 
 ---
 
@@ -17,6 +17,8 @@ This article lists the main Power BI Premium features. Most of the features appl
 
 >[!IMPORTANT]
 >During March 2022, Microsoft will transition all [Premium (original version)](service-premium-what-is.md) capacities to the modern [Premium Gen2](service-premium-gen2-what-is.md) platform.
+
+## Power BI Premium feature list
 
 |Feature |Description |
 |--------|------------|
