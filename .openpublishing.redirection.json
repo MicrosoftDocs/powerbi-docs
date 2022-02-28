@@ -316,6 +316,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-export.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/template-content-pack-experience.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-install-distribute",
             "redirect_document_id": false
