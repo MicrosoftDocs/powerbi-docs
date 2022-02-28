@@ -8,29 +8,31 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/22/2022
+ms.date: 02/28/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
+
 ---
 
 # Export the data that was used to create a visualization
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
-
-> [!IMPORTANT]
-> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions.
-
-## Who can export data
-
-If you have permissions to the data, you can see and export the data that Power BI uses to create a visualization. Often, data is confidential or limited to specific users. In those cases, you will not be able to see or export that data. For details, see the **Considerations and limitations** section at the end of this document.
-
-## Viewing and exporting data
+To see the data that's used to create a visual, [you can display that data in Power BI](../consumer/end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual. 
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-introduction.png" alt-text="Power BI service showing dropdown for More actions (...).":::
 
-If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license as well as edit permissions to the dataset and report. If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.
+> [!IMPORTANT]
+> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. If you are a designer or admin, select the tab below for **Admin and designer controls for exporting**.
 
-This article explains how to export the data used to create a visual on a dashboard (a *tile*) and the data used to create a visual in a report.
+## Who can export data
+
+If you do have permissions to the data, you can see and export the data that Power BI uses to create a visualization. 
+
+If you don't have permissions to the data, you won't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the **Considerations and limitations** section at the end of this document. If you are working in the Power BI service, you can contact your Power BI administrator or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title. 
+:::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
+
+## Viewing and exporting data
+
+
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.  
 
@@ -39,11 +41,11 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
-## Protect data when it is exported out of Power BI
+## Data is protected when it's exported out of Power BI
 
-Report authors can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users can open protected files.
+Report owners can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
 
-Security and Power BI a administrators can use [Microsoft Defender for Cloud Apps](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
+Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
 # [Visuals on dashboards](#tab/dashboard)
 
@@ -60,7 +62,7 @@ Security and Power BI a administrators can use [Microsoft Defender for Cloud App
 
     :::image type="content" source="media/power-bi-visualization-export-data/power-bi-sensitivity.png" alt-text="Screenshot of sensitivity warning.":::
 
-1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well. Your browser will prompt you to save or open the file.  You can save first, or open and then save.
+1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the .csv export will be filtered as well. Your browser will prompt you to save or open the file.  By default, your export is saved to your local Downloads folder.
 
 1. Open the *.csv* file in Excel.
 
@@ -94,12 +96,14 @@ Power BI gives you the option to export the summarized data or underlying data. 
 
 Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that is being used to create the visual.  Since this visual has a hierarchy, you'll export aggregated data for the full hierarchy. This means that even though your current view of the chart shows two columns (two Country/Regions), your summarized data will display four rows -- one for each **City** in the hierarchy.  
 
+If the visual has filters applied, then the data you export will also be filtered. If your visual has aggregates (sum, average, and so on), the export will also be aggregated.
+
 For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 > [!NOTE]
 > In Power BI Desktop, you'll only have the option to export summarized data as a .csv file.
 
-When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
+When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder or in a folder that you specify.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-data9.png" alt-text="Screenshot of the Excel output.":::
 
@@ -115,7 +119,9 @@ In this example, our Excel export shows one total for each city. Since we filter
 
 Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single **City** row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.
 
-When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder.
+For some data, **underlying** will be disabled. Additional permissions may be required to see more data than is currently displayed in the visual (underlying data). These permissions protect the data from being inappropriately viewed, re-used, or shared with anyone other than the intended audience. 
+
+When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder or in a folder that you specify.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-excel.png" alt-text="Screenshot of the .xlsx file with the exported data displayed.>":::
 
@@ -131,7 +137,7 @@ When you select  **Export**, your browser prompts you to save the file. Once sav
 
 ## Export underlying data details
 
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
 
 | Visual contains | What you'll see in export  |
 |---------------- | ---------------------------|
@@ -183,11 +189,18 @@ It's important to note that if the Power BI admin portal settings conflict with 
 
 These considerations and limitations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
+There are many considerations related to exporting to Excel. This is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They do this to ensure that private data isn't exposed to the wrong audience. 
+
+If you find that you are unable to use this feature, reach out to the report owner and your administrator to understand why you are unable to export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles: 
+[Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../admin/service-admin-rls.md), and [Data protection](../admin/service-security-data-protection-overview.md).
+
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
-- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
+- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from a *.csv* file is 30,000.
 
-- The maximum number of rows that the applications can export from an **import mode report** to an *.xlsx* file is 150,000.
+- The maximum number of rows that the applications can export from an *.xlsx* file is 150,000.
+
+- For a matrix visual, the export limit still holds good for 150,000 interactions (_equivalent to rows in table visual_). You may see the error "_Exported data exceeded the allowed volume. Some data may have been omitted._" at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
 
 - Export using *Underlying data* won't work if:
 
