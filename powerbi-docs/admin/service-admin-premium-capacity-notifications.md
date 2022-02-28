@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/17/2022
+ms.date: 02/28/2022
 LocalizationGroup: Premium 
 ---
 
@@ -42,7 +42,7 @@ To configure the capacity notification emails, follow these steps:
 
     * **An Autoscale v-core has been added** - A notification will be sent once autoscale starts and every time a v-core is added.
 
-    * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. If the capacity continues to use all the autoscale v-cores, throttling will be applied to your capacity.
+    * **You've reached your Autoscale maximum** - A notification will be sent when all the autoscale v-cores are fully utilized. Throttling will be applied to your capacity if it continues to be overloaded.
 
 5. In the section **Send notifications to**, select who you want the notifications to be emailed to:
 
