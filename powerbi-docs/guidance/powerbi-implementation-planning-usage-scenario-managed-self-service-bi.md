@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/27/2022
 ---
 
 # Power BI usage scenarios: Managed self-service BI
@@ -21,7 +21,7 @@ Usually, there are many more report creators than dataset creators. These report
 > [!NOTE]
 > The managed self-service BI scenario is the first of the self-service BI scenarios. For a complete list of the self-service BI scenarios, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
 >
-> For brevity, some aspects described in the [content collaboration and delivery scenarios](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios) topic aren't covered in this article. For complete coverage, read those articles first.
+> For brevity, some aspects described in the [content collaboration and delivery scenarios](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios) topic aren't covered in this article. For complete coverage, read those articles first.
 
 ## Scenario diagram
 

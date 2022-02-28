@@ -3,11 +3,11 @@ title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
 ms.author: v-petermyers
-ms.reviewer: asaxton
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/15/2021
+ms.date: 02/27/2022
 ms.custom: intro-deployment
 ---
 
@@ -154,11 +154,14 @@ Here's some questions that can be addressed by reviewing the activity log:
 
 Although the migration is complete, the post-migration period is vital for addressing issues and handling any performance concerns. Over time, the migrated solution will likely undergo changes as business needs evolve.
 
-Support tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
+[Support](powerbi-adoption-roadmap-user-support.md) tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
 
 Having a formal support process, staffed by IT with support tickets, is also essential for handling routine system-oriented requests and for escalation purposes.
 
-You may also have a [Center of Excellence (COE)](center-of-excellence-establish.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
+> [!NOTE]
+> The different types of [internal and external support](powerbi-adoption-roadmap-user-support.md#types-of-user-support) are described in the Power BI adoption roadmap.
+
+You may also have a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
 
