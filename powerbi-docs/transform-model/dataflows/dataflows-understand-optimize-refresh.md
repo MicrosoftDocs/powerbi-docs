@@ -157,6 +157,9 @@ While Power Query has design-time visibility into query folding, the Compute Eng
 
 The following sections provide guidance about using the Compute Engine, and its statistics.
 
+> [!WARNING]
+> During design time the folding indicator in the editor may show that the query does not fold when consuming data from another dataflow. Check the source dataflow if enhanced compute is enabled to ensure folding on the source dataflow is enabled.
+
 #### Guidance on Compute Engine Statuses
 
 Turning on the Enhanced Compute Engine and understanding the various statuses is helpful. Internally, the enhanced Compute Engine uses a SQL database to read and store data. It's best to have your transformations execute against the query engine here. The paragraphs below provide various situations, and guidance about what to do for each.
