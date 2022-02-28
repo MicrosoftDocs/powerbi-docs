@@ -14,7 +14,7 @@ ms.date: 02/26/2022
 # Licensing API
 
 The **Licensing API** allows Power BI visual developers to enforce Power BI visual's licenses. The API supports retrieving the information on Power BI visual's licenses that are assigned to the Power BI user.   
-The API also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user on the need to purchase the missing licenses.
+The API also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user of the need to purchase the missing licenses.
 The visual should not display its own licensing UX, instead use one of Power BI predefined supported notifications as detailed below.  
 Learn more on Power BI Licensing and Translatability support [here](https://go.microsoft.com/fwlink/?linkid=2186097).
 
