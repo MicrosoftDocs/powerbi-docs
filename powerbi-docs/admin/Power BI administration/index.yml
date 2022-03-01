@@ -48,6 +48,8 @@ landingContent:
             url: ../service-admin-where-is-my-tenant-located.md
           - text: Move between regions
             url: ../service-admin-region-move.md
+          - text: Set up metadata scanning in your organization
+            url: ../service-admin-metadata-scanning-setup.md             
 
   # Card (optional)
   - title: Monitoring

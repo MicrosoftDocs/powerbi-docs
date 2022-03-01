@@ -114,12 +114,12 @@
     items:
     - name: Power BI governance and deployment approaches
       href: service-admin-governance.md
-    - name: Set up metadata scanning in your org
-      href: service-admin-metadata-scanning-setup.md      
-    - name: Run metadata scanning
+    - name: Content endorsement overview
+      href: ../collaborate-share/service-endorsement-overview.md
+    - name: Endorse your content
+      href: ../collaborate-share/service-endorse-content.md                       
+    - name: Metadata scanning
       href: service-admin-metadata-scanning.md
-    - name: Enable content certification
-      href: service-admin-setup-certification.md
   - name: Information protection
     expanded: false
     items:

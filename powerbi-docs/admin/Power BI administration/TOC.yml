@@ -48,4 +48,8 @@
     - name: Using the admin portal
       href: ../service-admin-portal.md       
     - name: Manage Power BI visuals admin settings
-      href: ../organizational-visuals.md 
+      href: ../organizational-visuals.md
+    - name: Enable content certification
+      href: ../service-admin-setup-certification.md
+    - name: Set up metadata scanning in your org
+      href: ../service-admin-metadata-scanning-setup.md              

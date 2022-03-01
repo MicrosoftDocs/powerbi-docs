@@ -24,18 +24,20 @@ landingContent:
   # Card (optional)
   - title: Governance and compliance
     linkLists:
+      - linkListType: overview
+        links:    
+          - text: Content endorsement overview
+            url: ../collaborate-share/service-endorsement-overview.md 
+          - text: Metadata scanning
+            url: service-admin-metadata-scanning.md                   
       - linkListType: concept
         links:
           - text: Governance and deployment approaches
-            url: service-admin-governance.md
+            url: service-admin-governance.md                                 
       - linkListType: how-to-guide
-        links:            
-          - text: Set up metadata scanning in your organization
-            url: service-admin-metadata-scanning-setup.md
-          - text: Run metadata scanning
-            url: service-admin-metadata-scanning.md
-          - text: Enable content certification
-            url: service-admin-setup-certification.md            
+        links:
+          - text: Endorse your content  
+            url: ../collaborate-share/service-endorse-content.md         
 
   # Card (optional)
   - title: Power BI Premium Gen2
@@ -44,18 +46,18 @@ landingContent:
         links:
           - text: Introducing Power BI Premium Gen2
             url: service-premium-gen2-what-is.md
+      - linkListType: concept
+        links:            
           - text: Power BI Premium Gen2 architecture
             url: service-premium-architecture.md
           - text: Managing Premium Gen2 capacities
-            url: service-premium-capacity-manage-gen2.md
-          - text: Use the Premium utilization and metrics app
-            url: service-premium-gen2-metrics-app.md            
-      - linkListType: concept
-        links:
+            url: service-premium-capacity-manage-gen2.md           
           - text: Power BI for US government
             url: service-govus-overview.md
       - linkListType: how-to-guide
         links:
+          - text: Use the Premium utilization and metrics app
+            url: service-premium-gen2-metrics-app.md         
           - text: Enroll a US government organization
             url: service-govus-signup.md
 
