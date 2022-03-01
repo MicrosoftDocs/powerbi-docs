@@ -625,6 +625,43 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
+## Q&A settings
+
+### Review questions
+When this setting is enabled, dataset owners can review questions end-users ask about their data.
+
+![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
+
+### Synonym sharing
+When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
+
+![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
+
+> [!NOTE]
+> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
+
+## Dataset security
+
+### Block republish and disable package refresh
+
+## Advanced networking
+
+### Azure Private Link
+
+### Block Public Internet Access
+
+## Goals settings (preview)
+
+### Create and use Goals (preview)
+
+## User experience experiments
+
+### Help Power BI optimize your experience
+
+When this feature is enabled, users in the organization will get minor user experience variations, including content, layout, and design, that the Power BI team is experimenting with before they go live for all users.
+
+:::image type="content" source="media/service-admin-portal/user-experience-experiments-tenant-setting.png" alt-text="{Screenshot of the Help Power B I optimize your experience tenant setting.}"::: 
+
 ## Share data with your Microsoft 365 services
 
 ### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area
@@ -649,20 +686,11 @@ References:
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
 * [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
 
-## Q&A settings
+## Insights settings
 
-### Review questions
-When this setting is enabled, dataset owners can review questions end-users ask about their data.
+### Receive notifications for top insights (preview)
 
-![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
-
-### Synonym sharing
-When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
-
-![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
-
-> [!NOTE]
-> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
+### Show entry points for insights (preview)
 
 ## Capacity settings
 
