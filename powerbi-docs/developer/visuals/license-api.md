@@ -118,7 +118,7 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to displ
 Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
 
 > [!NOTE]
-> The `LicenseNotificationType.General` notification is only enforced when it is called in a supported licensing environment **and** Power BI is in Edit mode. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will return `false` in the call's response and the icon won't appear.    
+> The `LicenseNotificationType.General` notification is only enforced when it's called in a supported licensing environment **and** Power BI is in Edit mode (Power BI Desktop is in *edit* mode, or user selected *edit report* in Power BI Service). Calling this in an unsupported environment or when the report is in Read mode or in dashboard will return `false` in the call's response and the icon won't appear.
 
 Example of the visual display containing the "licenses are required" general icon:
 
@@ -156,17 +156,17 @@ Example of the visual display containing the "Unsupported Environment" notificat
 When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that you can set and use to provide additional information on the feature that triggered the notification.
 
 > [!NOTE]
-> The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response. 
+> The *feature is blocked* notification is only sent when called in the context of *supported for licensing* environment **and** when blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response. 
 
 > [!NOTE]
 > To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
 
 
-Once triggered, the banner will be displayed until the one of the following conditions occurs:
+Once triggered, the banner will be displayed until the one of the following conditions occurs (whichever comes first):
 
 * Ten seconds pass
 * Another "feature blocked" banner is triggered 
-* `clearLicenseNotification` is called (whatever comes first).
+* `clearLicenseNotification` is called
 
 Example of the visual display containing the "feature blocked" banner notification:  
 
