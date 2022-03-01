@@ -123,11 +123,11 @@ Once triggered, the icon will be preserved throughout the visual's lifetime unti
 Example of the visual display containing the "licenses are required" general icon:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" general icon.](media/license-api/generalIcon.png)
+>![visual display containing the "licenses are required" general icon.](media/license-api/lcs-generalIcon.png)
 
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" expanded icon.](media/license-api/generalIconExpand.png)
+>![visual display containing the "licenses are required" expanded icon.](media/license-api/lcs-generalIconExpand.png)
 
 
 ### Overlay the visual's display with a notification on missing licenses
@@ -138,7 +138,7 @@ Once triggered, this notification will be preserved throughout the visual's life
 Example of the visual display containing the "visual blocked" notification:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "visual blocked" notification.](media/license-api/blockedVis.png)
+>![visual display containing the "visual blocked" notification.](media/license-api/lcs-blockedVis.png)
 
 
 ### Overlay the visual's display with a notification on licenses unsupported environment
@@ -152,7 +152,7 @@ Once triggered, the icon will be preserved throughout the visual's lifetime unti
 Example of the visual display containing the "Unsupported Environment" notification:
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "Unsupported Environment" notification](media/license-api/unsupportedEnv.png)
+>![visual display containing the "Unsupported Environment" notification](media/license-api/lcs-unsupportedEnv.png)
 
 
 ### Display a banner notifying that a specific visual's functionality couldn't be applied
@@ -174,7 +174,7 @@ Once triggered, the banner will be displayed until the one of the following cond
 
 Example of the visual display containing the "feature blocked" banner notification:
 >[!div class="mx-imgBorder"]
->![visual display containing the "feature blocked" banner notification.](media/license-api/featureBanner.png)
+>![visual display containing the "feature blocked" banner notification.](media/license-api/lcs-featureBanner.png)
 
 ## Considerations and limitations
 
