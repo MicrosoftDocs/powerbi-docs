@@ -4164,7 +4164,12 @@
         {
             "source_path": "powerbi-docs/admin/service-admin-portal.md#tenant-settings",
             "redirect_url": "/power-bi/admin/service-security-enable-data-sensitivity-labels",
+            "redirect_document_id": true   
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal.md#manage-featured-content",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
             "redirect_document_id": false   
-        }                                                                                          
+        }                                                                                                                                  
     ]           
 }
