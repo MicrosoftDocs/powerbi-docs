@@ -23,7 +23,6 @@ The Power BI service supports viewing and interacting with visuals created with 
 > [!NOTE]
 > The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Microsoft R 3.4.4.*
 
-
 R visuals are created in a [Power BI Desktop report](../fundamentals/desktop-get-the-desktop.md), like the report shown in the following image.
 
 :::image type="content" source="media/service-r-visuals/power-bi-r-visual-desktop.png" alt-text="Desktop report with two visuals.":::
