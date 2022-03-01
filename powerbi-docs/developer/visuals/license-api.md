@@ -62,7 +62,7 @@ Currently, the following Power BI environments don't support license management 
 
   * Embedded - Publish To Web, PaaS embed (TBD: GA)
   * National clouds (Dependency on general support for translatability in national clouds)
-  * RS (No planned support)
+  * Report server (No planned support)
   * Exporting (PDF\PPT) using [REST API](../embedded/export-to.md) (TBD: GA)
   * Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
