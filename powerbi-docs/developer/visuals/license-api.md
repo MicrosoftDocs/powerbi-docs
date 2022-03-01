@@ -1,9 +1,9 @@
 ---
 title: Licensing API
 description: This article discusses how to retrieve the Power BI visual's licenses and trigger the display of out of box license related notifications to the PBI user.
-author: 
-ms.author: 
-ms.reviewer: 
+author: monaberdugo
+ms.author: monaberdugo
+ms.reviewer: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
