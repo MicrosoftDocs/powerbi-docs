@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 1/20/2022
+ms.date: 2/25/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,18 @@ ms.date: 1/20/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## February 2022 QFE 1
+
+*Version: 2.102.845.0, Released: February 24, 2022*
+
+Bug fixes/improvements:
+- Dynamics 365 (Dataverse) entry in GetData which redirects to Dataverse connector is removed from the GetData list.
+- Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
+- Fix for fields well description: a multiline field's tooltip will not be cut off and will be fully visible.
+- Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
+- Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
+- Fix for perspective selection in the proxy models navigator.
 
 ## December 2021 QFE 3
 

@@ -9,6 +9,8 @@
       href: service-admin-administering-power-bi-in-your-organization.md
     - name: "What is Power BI Premium Gen2?"
       href: service-premium-gen2-what-is.md
+    - name: "Power BI Premium features"
+      href: service-premium-features.md      
   - name: Concepts
     expanded: true
     items:
@@ -120,6 +122,8 @@
         href: service-admin-region-move.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Configure capacity notifications"
+      href: service-admin-premium-capacity-notifications.md      
     - name: "Add custom branding"
       href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"

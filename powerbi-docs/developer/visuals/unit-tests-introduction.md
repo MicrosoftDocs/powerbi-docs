@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/18/2019
+ms.date: 12/18/2021
 ---
 
 # Tutorial: Add unit tests for Power BI visual projects

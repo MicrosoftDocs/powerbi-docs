@@ -2,8 +2,8 @@
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
 author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -70,7 +70,7 @@ There are several key decisions to be made related to allowing consumers to crea
 - If consumers want to customize a report, can they [save a copy](../connect-data/service-datasets-copy-reports.md) of it and personalize it to meet their needs?
 
 > [!CAUTION]
-> Although the _Save a copy_ capability is a nice feature, it should be used with caution when the report includes certain graphics or header/footer messages. Since logos, icons, and textual messages often relate to branding requirements or regulatory compliance, it's important to carefully control how they're delivered and distributed. If _Save a copy_ is used, but the original graphics or header/footer messages remain unchanged by the new author, it can result in confusion about who actually produced the report. It can also reduce the meaningfulness of the branding.
+> Although the *Save a copy* capability is a nice feature, it should be used with caution when the report includes certain graphics or header/footer messages. Since logos, icons, and textual messages often relate to branding requirements or regulatory compliance, it's important to carefully control how they're delivered and distributed. If *Save a copy* is used, but the original graphics or header/footer messages remain unchanged by the new author, it can result in confusion about who actually produced the report. It can also reduce the meaningfulness of the branding.
 
 ## Evaluate needs for Premium capacity
 
