@@ -121,7 +121,7 @@ To configure Azure Key Vault to allow access to trusted Microsoft services, foll
 
     :::image type="content" source="media/service-encryption-byok/trusted-service.png" alt-text="A screenshot showing the allow trusted Microsoft services to bypass this firewall option selected.":::
 
-7. In Select **Save**.
+7. Select **Save**.
 
     :::image type="content" source="media/service-encryption-byok/save.png" alt-text="A screenshot showing the Azure Key Vault networking save button highlighted.":::
 
