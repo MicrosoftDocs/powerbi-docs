@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/01/2021
+ms.date: 03/01/2022
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -644,15 +644,23 @@ When this setting is enabled, users can share Q&A synonyms as suggested terms wi
 
 ### Block republish and disable package refresh
 
+![Screenshot of the Block republish and disable package refresh tenant setting.](media/service-admin-portal/block-republish-disable-package-tenant-setting.png)
+
 ## Advanced networking
 
 ### Azure Private Link
 
+![Screenshot of the Azure Private Link tenant setting.](media/service-admin-portal/azure-private-link-tenant-setting.png)
+
 ### Block Public Internet Access
+
+![Screenshot of the block public internet access tenant setting.](media/service-admin-portal/block-public-internet-access-tenant-setting.png)
 
 ## Goals settings (preview)
 
 ### Create and use Goals (preview)
+
+![Screenshot of the Create and use goals tenant setting.](media/service-admin-portal/create-use-goals-tenant-setting.png)
 
 ## User experience experiments
 
@@ -660,7 +668,7 @@ When this setting is enabled, users can share Q&A synonyms as suggested terms wi
 
 When this feature is enabled, users in the organization will get minor user experience variations, including content, layout, and design, that the Power BI team is experimenting with before they go live for all users.
 
-:::image type="content" source="media/service-admin-portal/user-experience-experiments-tenant-setting.png" alt-text="{Screenshot of the Help Power B I optimize your experience tenant setting.}"::: 
+![Screenshot of the Help Power B I optimize your experience tenant setting.](media/service-admin-portal/user-experience-experiments-tenant-setting.png)
 
 ## Share data with your Microsoft 365 services
 
@@ -690,7 +698,11 @@ References:
 
 ### Receive notifications for top insights (preview)
 
+![Screenshot of the Receive notifications for top insights tenant setting.](media/service-admin-portal/receive-notifications-top-insights-tenant-setting.png)
+
 ### Show entry points for insights (preview)
+
+![Screenshot of the Show entry points for insights tenant setting.](media/service-admin-portal/show-entry-points-insights-tenant-setting.png)
 
 ## Capacity settings
 
@@ -805,7 +817,6 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
 * **Select Theme color**: You can select your theme based on a hex #, RGB, value, or from the provided palette.
-
 
 For more information, see [Add custom branding to the Power BI service](service-admin-custom-branding.md).
 
