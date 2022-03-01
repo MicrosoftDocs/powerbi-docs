@@ -151,13 +151,13 @@
       - name: Set or remove sensitivity labels programmatically
         href: service-security-sensitivity-label-inheritance-set-remove-api.md    
       - name: Audit schema for sensitivity labels
-        href: service-security-sensitivity-label-audit-schema.md         
+        href: service-security-sensitivity-label-audit-schema.md  
+      - name: Protection metrics report
+        href: service-security-data-protection-metrics-report.md               
     - name: DLP policies for Power BI (preview)
       href: service-security-dlp-policies-for-power-bi.md
-    - name: Use Microsoft Defender for Cloud Apps with Power BI
+    - name: Microsoft Defender for Cloud Apps with Power BI
       href: service-security-using-defender-for-cloud-apps-controls.md
-    - name: Protection metrics report
-      href: service-security-data-protection-metrics-report.md
   - name: Security
     expanded: false
     items:
