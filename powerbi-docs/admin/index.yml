@@ -22,6 +22,22 @@ landingContent:
 # Start card title with a verb
 
   # Card (optional)
+  - title: Governance and compliance
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Governance and deployment approaches
+            url: service-admin-governance.md
+      - linkListType: how-to-guide
+        links:            
+          - text: Set up metadata scanning in your organization
+            url: service-admin-metadata-scanning-setup.md
+          - text: Run metadata scanning
+            url: service-admin-metadata-scanning.md
+          - text: Enable content certification
+            url: service-admin-setup-certification.md            
+
+  # Card (optional)
   - title: Power BI Premium Gen2
     linkLists:
       - linkListType: overview
