@@ -178,9 +178,4 @@ Example of the visual display containing the "feature blocked" banner notificati
 * Tooltip for feature banner requires localization.
 
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Publish a Power BI custom visual](office-store.md)
-
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
