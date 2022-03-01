@@ -57,18 +57,18 @@ Configure your key vault in the following way:
 
 1. In the Azure portal, in your key vault, under **Access policies**, select **Add Access Policy**.
 
-1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+2. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
     ![P B I X file select cryptographic operations.](media/service-encryption-byok/key-permissions.png)
 
-1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
+3. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
     ![P B I X file select service principal.](media/service-encryption-byok/service-principal.png)
 
-1. Select **Add**, then **Save**.
+4. Select **Add**, then **Save**.
 
 > [!NOTE]
 > To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.
@@ -77,17 +77,17 @@ Configure your key vault in the following way:
 
 1. In your key vault, under **Keys**, select **Generate/Import**.
 
-1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
+2. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
     ![Create a key with key type and size highlighted](media/service-encryption-byok/create-rsa-key.png)
 
-1. Select **Create**.
+3. Select **Create**.
 
-1. Under **Keys**, select the key you created.
+4. Under **Keys**, select the key you created.
 
-1. Select the GUID for the **Current Version** of the key.
+5. Select the GUID for the **Current Version** of the key.
 
-1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
+6. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
 
     ![Properties with key identifier and permitted operations highlighted](media/service-encryption-byok/key-properties.png)
 
@@ -99,12 +99,9 @@ With Azure Key Vault properly configured, you're ready to enable BYOK on your te
 
 ## Use the trusted Microsoft service firewall bypass
 
-Power BI is a trusted Microsoft service. You can instruct the key vault firewall to allow access to all trusted Microsoft services, a setting that enables accessing Power BI without specifying end point connections.
+Power BI is a trusted Microsoft service. You can instruct the key vault firewall to allow access to all trusted Microsoft services, a setting that enables Power BI to access your key vault without specifying end point connections.
 
->[!NOTE]
->The Power BI trusted Microsoft service bypass doesn't work for the following national clouds:
->* U.S. Government Community Cloud (GCC)
->* U.S. Government Community Cloud High (GCC High)
+Enabling the trusted Microsoft service firewall bypass is optional. If you chose to enable the bypass, you don't need to supply keys as described in [Enable BYOK](#enable-byok).
 
 To configure Azure Key Vault to allow access to trusted Microsoft services, follow these steps:
 
@@ -116,13 +113,15 @@ To configure Azure Key Vault to allow access to trusted Microsoft services, foll
 
 4. Select **Networking** and then select **Firewalls and virtual networks**.
 
+5. From the *Allow access from* option, select **Selected networks**.
+
     :::image type="content" source="media/service-encryption-byok/key-vault-firewall.png" alt-text="A screenshot showing the Azure Key Vault networking option, with the firewalls and virtual networks option selected.":::
 
-5. In the *firewall* section, in the *Allow trusted Microsoft services to bypass this firewall*, select **Yes**.
+6. In the *firewall* section, in the *Allow trusted Microsoft services to bypass this firewall*, select **Yes**.
 
     :::image type="content" source="media/service-encryption-byok/trusted-service.png" alt-text="A screenshot showing the allow trusted Microsoft services to bypass this firewall option selected.":::
 
-6. In Select **Save**.
+7. In Select **Save**.
 
     :::image type="content" source="media/service-encryption-byok/save.png" alt-text="A screenshot showing the Azure Key Vault networking save button highlighted.":::
 
