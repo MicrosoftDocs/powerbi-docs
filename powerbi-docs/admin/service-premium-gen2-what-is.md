@@ -156,10 +156,7 @@ The following known limitations currently apply to Premium Gen2:
 
     The following table summarizes all the limitations that are dependent on the capacity size.
 
-    >[!NOTE]
-    >When using [large datasets](service-premium-large-models.md), the RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
-
-    | Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+    | Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
     | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
     | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
     | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
@@ -167,14 +164,16 @@ The following known limitations currently apply to Premium Gen2:
     | P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
     | P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
     | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-    | P4/A7<sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-    | P5/A8<sup>3</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
+    | P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
+    | P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
 
     <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
     <sup>2</sup> These limits only apply to dataset workloads.
 
-    <sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+    <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+
+    <sup>4</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 ## Next steps
 
