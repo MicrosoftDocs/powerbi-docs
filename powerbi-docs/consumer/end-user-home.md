@@ -23,7 +23,7 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 
 Power BI displays your Home canvas, as shown in the following image. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often. Only content that you can access will display on your Home. For example, if you don't have permissions to a report, then that report will not appear on Home. 
 
-Your Home view will also depend on the layout you've selected. By default, you'll see the **Simplified** view. This view includes recommended content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. Recommended content may include something that you've marked as a favorite, content that you visit often, content that is used frequently by your closest colleagues, and getting started content.
+Your Home view will also depend on the layout you've selected. By default, you'll see the **Simplified** view. This view includes recommended content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. Recommended content may include something that you've marked as a favorite, content that you visit often, content that is used frequently by your closest colleagues, and getting started content. If you don't see **Recommended** content, it may have been disabled by your administrator.
 
 :::image type="content" source="media/end-user-home/power-bi-simplified.png" alt-text="Screenshot showing Power BI Home with the Simplified toggle selected.":::
 
@@ -79,7 +79,7 @@ The next section is two (or more) tabbed lists.
 
  
 ### Getting started learning resources
-The exact resources that appear depend on your activity, settings, and Power BI administrator. If you're a new user, the Getting started section displays at the top of Home. If you're a new user, and you no longer want to see Getting started at the top of Home, select **Pin to bottom**. When you no longer need to see the Getting started tabs, select **Hide getting started**.
+The exact resources that appear depend on your activity, settings, and Power BI administrator. If you're a new user, you'll see Getting started content under **Recommended** in **Simplified** layout. And you'll see a **Getting started with Power BI** section in **Expanded** layout.  In **Expanded** layout, when you no longer need to see the Getting started tabs, select **Hide getting started**.
 
 ![Home showing Getting started section](./media/end-user-home/power-bi-get-started.png)
 
