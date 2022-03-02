@@ -37,7 +37,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |Hybrid tables (preview) |Incremental refresh augmented with real-time data |
 |[Insights](./../create-reports/insights.md) (preview) |Explore and find insights such as anomalies and trends in your reports |
 |[Model size limit](service-premium-gen2-what-is.md#capacity-nodes-for-premium-gen2) |Available memory is set to:</br></br>*Premium Gen2* - The limit of memory footprint of a single Power BI item; see the column *RAM* in the table at the bottom of [Limitations in Premium Gen2](service-premium-gen2-what-is.md#limitations-in-premium-gen2)</br></br>*Premium (original version)* - The cumulative consumption of memory of the capacity; see the column *RAM* in the table at the bottom of [Capacity nodes](service-premium-what-is.md#capacity-nodes)</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations) |
-|[Multi-geo](service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) |
+|[Multi-geo](service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |On-demand loading capabilities for large models |Improve report load time by loading datasets to memory on demand |
 |[Paginated reports](./../paginated-reports/paginated-reports-report-builder-power-bi.md) |Pixel-perfect reports |
 |[Power BI Report Server](./../report-server/get-started.md) |On-premises report server</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) |
@@ -45,7 +45,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Query caching](./../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |
 |[Storage](service-admin-manage-your-data-storage-in-power-bi.md) |Manage data storage |
 |[Streaming dataflows](./../transform-model/dataflows/dataflows-streaming.md) (preview) |Connect to, ingest, mash up, model, and build reports using near real-time data |
-|[Unlimited content sharing](service-premium-what-is.md#unlimited-content-sharing) |Share Power BI content with anyone</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) |
+|[Unlimited content sharing](service-premium-what-is.md#unlimited-content-sharing) |Share Power BI content with anyone</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |[Virtual network data gateway](/data-integration/vnet/overview) (preview) | Connect from Microsoft Cloud to Azure using a virtual network (VNet) |
 |[XMLA read/write](service-premium-connect-tools.md) |Enable XMLA endpoint |
 
