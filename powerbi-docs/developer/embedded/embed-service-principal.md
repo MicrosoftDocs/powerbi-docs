@@ -218,7 +218,6 @@ $SGObjectId = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 $pbiWorkspace = Get-PowerBIWorkspace -Name "YourWorkspaceName"
 
 Add-PowerBIWorkspaceUser -Id $pbiWorkspace.Id -AccessRight Member -PrincipalType Group -Identifier $SGObjectId 
-
 ```
 
 ## Step 5 - Embed your content
