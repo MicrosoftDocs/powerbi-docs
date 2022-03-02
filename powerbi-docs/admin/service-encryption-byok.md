@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 03/02/2022
 LocalizationGroup: Premium
 ---
 
@@ -97,11 +97,14 @@ We recommend that you enable [soft-delete](/azure/key-vault/key-vault-ovw-soft-d
 
 With Azure Key Vault properly configured, you're ready to enable BYOK on your tenant.
 
-## Use the trusted Microsoft service firewall bypass
+## Configure the Azure Key Vault firewall
+
+This section describes using the trusted Microsoft service firewall bypass, to configure a firewall around your Azure Key Vault.
+
+>[!NOTE]
+>Configuring the Azure Key Vault firewall is optional. Skip the instructions in this section if you don't want to configure the firewall.
 
 Power BI is a trusted Microsoft service. You can instruct the key vault firewall to allow access to all trusted Microsoft services, a setting that enables Power BI to access your key vault without specifying end point connections.
-
-Enabling the trusted Microsoft service firewall bypass is optional. If you chose to enable the bypass, you don't need to supply keys as described in [Enable BYOK](#enable-byok).
 
 To configure Azure Key Vault to allow access to trusted Microsoft services, follow these steps:
 
