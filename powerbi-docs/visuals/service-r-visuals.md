@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/02/2022
+ms.date: 03/03/2022
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
