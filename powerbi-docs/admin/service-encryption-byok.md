@@ -102,7 +102,7 @@ With Azure Key Vault properly configured, you're ready to enable BYOK on your te
 This section describes using the trusted Microsoft service firewall bypass, to configure a firewall around your Azure Key Vault.
 
 >[!NOTE]
->Configuring the Azure Key Vault firewall is optional. Skip the instructions in this section if you don't want to configure the firewall.
+>Enabling firewall rules on your key vault is optional. You can also choose to leave the firewall disabled on your key vault as per the default setting.
 
 Power BI is a trusted Microsoft service. You can instruct the key vault firewall to allow access to all trusted Microsoft services, a setting that enables Power BI to access your key vault without specifying end point connections.
 
