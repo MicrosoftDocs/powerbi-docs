@@ -7,7 +7,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 03/02/2022
 LocalizationGroup: Data from files
 ---
 # Data protection in Power BI
