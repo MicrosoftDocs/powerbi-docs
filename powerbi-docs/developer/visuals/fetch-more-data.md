@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 03/01/2022
 ---
 
 # Fetch more data from Power BI
