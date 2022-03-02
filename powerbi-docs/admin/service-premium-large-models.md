@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 03/02/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -164,8 +164,8 @@ The following list provides regions where large datasets in Power BI are availab
 | East Asia           | eastasia                  |
 | East US             | eastus                    |
 | East US 2           | eastus2                   |
-| France Central      |                           |
-| France South        |                           |
+| France Central      | francecentral             |
+| France South        | francesouth               |
 | Japan East          | japaneast                 |
 | Japan West          | japanwest                 |
 | Korea Central       | koreacentral              |
@@ -174,8 +174,8 @@ The following list provides regions where large datasets in Power BI are availab
 | North Europe        | northeurope               |
 | South Central US    | southcentralus            |
 | Southeast Asia      | southeastasia             |
-| Switzerland North   |                           |
-| Switzerland West    |                           |
+| Switzerland North   | switzerlandnorth          |
+| Switzerland West    | switzerlandwest           |
 | UK South            | uksouth                   |
 | UK West             | ukwest                    |
 | West Europe         | westeurope                |
