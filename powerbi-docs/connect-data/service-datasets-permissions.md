@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
@@ -56,6 +56,15 @@ Users may acquire permissions on a dataset used in an app if the app owner allow
 ### Permissions granted via REST APIs
 
 Dataset permissions can be set via REST APIs. For more information, see [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md).
+
+## Dataset permissions and row-level security (RLS)
+
+Row-level security may affect the ability of users with read or build permission on a dataset to read data from the dataset.
+
+* When RLS **isn't** defined on the dataset, users with write, read, or build permission on the dataset can read data from the dataset.
+* When RLS **is** defined on the dataset:
+    * Users with only read or build permission on the dataset will not be able to read data from the dataset unless they belong to one of its RLS roles.
+    * Users with write permission on the dataset will be able to read data from the dataset regardless of whether or not they belong to any of its RLS roles.
 
 ## Next steps
 * [Manage dataset permissions](service-datasets-manage-access-permissions.md)

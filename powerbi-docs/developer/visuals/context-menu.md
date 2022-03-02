@@ -1,5 +1,5 @@
 ---
-title: Add context menu to Power BI Visual
+title: Add context menu to Power BI custom visual
 description: Learn how to add a context menu to a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
@@ -8,7 +8,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/05/2021
+ms.date: 03/01/2022
 ---
 
 # Add a context menu to your Power BI Visual
@@ -38,7 +38,7 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 
 > [!NOTE]
 >
-> * The `selectionManager.showContextMenu()` is only available from Visuals API version 2.2.0.
+> * The `selectionManager.showContextMenu()` is available from Visuals API version 2.2.0.
 > * All visuals published to AppSource must support both `ContextMenu` modes (empty space and data point).
 
 The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part to the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
