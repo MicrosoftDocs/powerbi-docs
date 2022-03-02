@@ -19,25 +19,7 @@ metadata:
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-
-  # Card (optional)
-  - title: Governance and compliance
-    linkLists:
-      - linkListType: overview
-        links:    
-          - text: Content endorsement overview
-            url: ../collaborate-share/service-endorsement-overview.md 
-          - text: Metadata scanning
-            url: service-admin-metadata-scanning.md                   
-      - linkListType: concept
-        links:
-          - text: Governance and deployment approaches
-            url: service-admin-governance.md                                 
-      - linkListType: how-to-guide
-        links:
-          - text: Endorse your content  
-            url: ../collaborate-share/service-endorse-content.md         
+# Start card title with a verb                                        
 
   # Card (optional)
   - title: Power BI Premium Gen2
@@ -65,16 +47,16 @@ landingContent:
   # Card (optional)
   - title: Information protection
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
           - text: Data protection in Power BI
             url: service-security-data-protection-overview.md
-          - text: Use Microsoft Defender for Cloud Apps
-            url: service-security-using-defender-for-cloud-apps-controls.md
-      - linkListType: overview
-        links:            
+      - linkListType: concept
+        links:   
           - text: Sensitivity labels
-            url: service-security-sensitivity-label-overview.md            
+            url: service-security-sensitivity-label-overview.md                  
+          - text: Microsoft Defender for Cloud Apps
+            url: service-security-using-defender-for-cloud-apps-controls.md           
       - linkListType: how-to-guide
         links:            
           - text: Enable sensitivity labels
@@ -89,16 +71,20 @@ landingContent:
         links:
           - text: Power BI Security
             url: service-admin-power-bi-security.md
-          - text: Power BI Desktop privacy levels
-            url: desktop-privacy-levels.md
-          - text: Row-level security (RLS)
-            url: service-admin-rls.md            
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:            
+          - text: Power BI Desktop privacy levels
+            url: desktop-privacy-levels.md 
+          - text: Row-level security (RLS)
+            url: service-admin-rls.md                       
+      - linkListType: how-to-guide
+        links:                    
           - text: Use service tags
             url: service-premium-service-tags.md
           - text: Private endpoints with Power BI
             url: service-security-private-links.md
+          - text: Bring your own encryption keys
+            url: service-encryption-byok.md
 
   # Card (optional)
   - title: Automation tools

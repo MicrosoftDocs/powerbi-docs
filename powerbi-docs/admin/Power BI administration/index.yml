@@ -44,12 +44,12 @@ landingContent:
             url: ../power-bi-allow-list-urls.md
           - text: Add custom branding
             url: ../service-admin-custom-branding.md
+          - text: Find where data is stored
+            url: ../service-admin-where-is-my-tenant-located.md   
           - text: Find your org's default region
             url: ../service-admin-where-is-my-tenant-located.md
           - text: Move between regions
-            url: ../service-admin-region-move.md
-          - text: Set up metadata scanning in your organization
-            url: ../service-admin-metadata-scanning-setup.md             
+            url: ../service-admin-region-move.md           
 
   # Card (optional)
   - title: Monitoring
