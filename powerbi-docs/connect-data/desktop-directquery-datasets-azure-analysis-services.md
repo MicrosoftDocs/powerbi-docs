@@ -150,7 +150,9 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column which references a Direct Query data source will result in a "Single sign-on (SSO) credential is not provided" error message.
+- Calculated tables are not supported in the Service using this feature. Attempting to perform a refresh on a dataset with a calculated table or a calculated column which references a DirectQuery data source will result in a "Single sign-on (SSO) credential is not provided" error message.
+
+- If you rename a workspace after the DirectQuery connection has been set up you will need to update the data source in Power BI Desktop for the report to continue working.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 

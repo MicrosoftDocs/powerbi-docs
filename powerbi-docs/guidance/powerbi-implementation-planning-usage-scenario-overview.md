@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/27/2022
 ---
 
 # Power BI usage scenarios
@@ -34,7 +34,7 @@ Use the scenarios to help you with Power BI architecture planning and implementa
 
 ## Content collaboration and delivery scenarios
 
-The following usage scenarios are about *content collaboration and delivery*, which focuses primarily on [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). These scenarios are inter-related. They build upon each other in a way that aligns with how business intelligence teams evolve and grow over time.
+The following usage scenarios are about *content collaboration and delivery*. These initial four scenarios focus primarily on [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md). They are inter-related, building upon each other in a way that aligns with how business intelligence teams evolve and grow over time. They can be thought of as the building blocks that other scenarios build upon—particularly the [self-service BI scenarios](#self-service-bi-scenarios) that are described in the next section. Therefore, it's a good idea to review those scenarios first.
 
 - **[Personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md):** The content creator has a lot of freedom and flexibility to create content for individual usage. This scenario describes using a personal workspace for private usage.
 - **[Team BI](powerbi-implementation-planning-usage-scenario-team-bi.md):** The primary focus is on informal collaboration among team members who work closely together on a team. This scenario describes using a workspace for both collaboration and distribution. It also showcases the value of using Microsoft Teams for collaboration between Power BI creators and consumers.
@@ -53,7 +53,7 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 - **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared datasets. This scenario describes decoupling the report creation process from the dataset creation process. To encourage report authors to find and reuse an existing shared dataset, it should be endorsed and made discoverable in the datasets hub in the Power BI service.
 - **[Customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md):** The focus is on the dataset creator customizing or extending an existing dataset to satisfy new requirements. This scenario describes publishing a customized data model where some tables are new while others are dependent on the existing shared dataset.
 - **[Self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md):** The focus is on centralizing data preparation activities to improve consistency and reduce effort. This scenario describes creating Power BI dataflows to avoid repeating data preparation Power Query logic in many different Power BI Desktop files. A dataflow can be consumed as a data source by numerous datasets.
-- **[Prototyping and data sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
+- **[Prototyping and sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
 
     > [!NOTE]
     > Additional information about [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md), and [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md), which affect self-service BI activities and decisions, are described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).

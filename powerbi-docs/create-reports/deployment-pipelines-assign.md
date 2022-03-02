@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 11/04/2021
+ms.date: 02/14/2022
 ---
 
 # Assign a workspace to a deployment pipeline
