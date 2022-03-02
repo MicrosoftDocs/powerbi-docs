@@ -3,12 +3,12 @@ title: Subscribe to reports and dashboards
 description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
-ms.reviewer: cmfinlan
+ms.reviewer: mibruhje
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/26/2022
+ms.date: 03/02/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -179,7 +179,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
   
 - If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited. 
-- - For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
+- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 
 **Power BI reports**  
 
