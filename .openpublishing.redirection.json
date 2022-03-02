@@ -316,6 +316,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-export.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/template-content-pack-experience.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-install-distribute",
             "redirect_document_id": false
@@ -732,8 +737,13 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/paginated-reports-view-parameters.md",
@@ -2107,8 +2117,13 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/collaborate-share/service-report-subscribe",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-security-apply-data-sensitivity-labels.md",
@@ -4145,6 +4160,6 @@
             "source_path": "powerbi-docs/connect-data/service-connect-to-emissions-impact-dashboard-for-m365.md",
             "redirect_url": "/power-bi/connect-data/service-connect-emissions-impact-dashboard-microsoft-365",
             "redirect_document_id": true
-        }                                                                                              
+        }                                                                                                                               
     ]           
 }

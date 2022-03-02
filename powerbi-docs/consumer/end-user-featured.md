@@ -7,10 +7,13 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/30/2021
+ms.date: 02/28/1964
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service
+
+> [!NOTE]
+> Featuring a dashboard is being deprecated. If you have a featured dashboard, now is a good time to convert it to a [favorite](end-user-favorite.md) instead.  
 
 Many of us have one dashboard that we visit more than any others. It might be the dashboard we use to run our business. Or, it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 

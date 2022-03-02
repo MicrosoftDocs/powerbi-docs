@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 01/11/2022
+ms.date: 02/27/2022
 LocalizationGroup: Data from files
 ---
 
@@ -19,9 +19,9 @@ To help organizations detect and protect their sensitive data, Power BI supports
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the Microsoft 365 compliance portal.
-* DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled are supported.
+* DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
 * DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
-* Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities with [autoscaling](service-premium-auto-scale.md) enabled.
+* Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
 * DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
@@ -112,7 +112,7 @@ When a DLP policy detects an issue with a dataset:
 
     By default the policy will apply to all workspaces. Alternatively, you can specify particular workspaces to include in the policy as well as workspaces to exclude from the policy.
     >[!NOTE]
-    > DLP actions are supported only for workspaces hosted in Premium Gen2 capacities with autoscaling enabled.
+    > DLP actions are supported only for workspaces hosted in Premium Gen2 capacities.
 
     If you select **Choose workspaces** or **Exclude workspaces**, a dialog will allow you to create a list of included (or excluded) workspaces. You must specify workspaces by workspace object ID. Click the info icon for information about how to find workspace object IDs.
 
