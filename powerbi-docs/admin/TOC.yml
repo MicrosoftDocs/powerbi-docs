@@ -9,6 +9,8 @@
       href: service-admin-administering-power-bi-in-your-organization.md
     - name: "What is Power BI Premium Gen2?"
       href: service-premium-gen2-what-is.md
+    - name: "Power BI Premium features"
+      href: service-premium-features.md      
   - name: Concepts
     expanded: true
     items:
@@ -78,7 +80,7 @@
         href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy
         href: service-security-sensitivity-label-mandatory-label-policy.md
-      - name: Sensitivity label downstream inheritance (preview)
+      - name: Sensitivity label downstream inheritance
         href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
@@ -120,6 +122,8 @@
         href: service-admin-region-move.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Configure capacity notifications"
+      href: service-admin-premium-capacity-notifications.md      
     - name: "Add custom branding"
       href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"

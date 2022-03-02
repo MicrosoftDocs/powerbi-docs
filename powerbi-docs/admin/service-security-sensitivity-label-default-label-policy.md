@@ -3,7 +3,7 @@ title: Default label policy in Power BI
 description: Learn how organizations can apply a default sensitivity label on their unlabeled Power BI content
 author: paulinbar
 ms.author: painbar
-manager: kfolis
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual

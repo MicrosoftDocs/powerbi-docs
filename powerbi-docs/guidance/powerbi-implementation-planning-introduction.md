@@ -6,11 +6,16 @@ ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
+ms.custom: video-RWUWA9
 ms.topic: conceptual
 ms.date: 02/07/2022
 ---
 
 # Power BI implementation planning
+
+In this video, watch Matthew introduce you to the Power BI implementation planning series of articles.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
 
 Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series of articles is intended to help you accomplish your Power BI implementation. The articles include key considerations, actions, decision-making criteria, recommendations, and describe implementation patterns for important common usage scenarios.
 
@@ -44,6 +49,10 @@ This series of articles is certain to be helpful for organizations that are in t
 
 > [!TIP]
 > Some knowledge of Power BI and general business intelligence concepts is assumed. To get the most from this content, it's recommended that you become familiar with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) first.
+
+## Acknowledgments
+
+This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/) with significant contributions from Peter Myers, Matthew Roche, Alex Powers, and Chris Webb.
 
 ## Next steps
 

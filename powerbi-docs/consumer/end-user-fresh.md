@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/19/2022
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -48,13 +48,13 @@ When you open a list of content in the Power BI service, you'll see a column tha
 The *designer* sets up the refresh schedule for content. Some content updates continually while other content may refresh daily, weekly, or not at all. Not all content is scheduled for refreshing, so you may see empty entries. If the refresh encounters an error, you'll see an error icon. 
 
 ### Viewing reports
-When you open and view a report, you'll notice a dropdown arrow in the center of the menu bar. Select the arrow to display contact information and a timestamp. Dashboards, worksheets, and scorecards display the owner but not a timestamp. Select the **Owner** link if you have questions or suggestions for the owner of the report.
+When you open and view a report, you'll notice a dropdown arrow in the center of the menu bar. Select the arrow to display contact information and a timestamp. Dashboards, worksheets, and scorecards display the owner but not a timestamp. Select the **Owner** or **Contact** link if you have questions or suggestions for the owner of the report.
 
 :::image type="content" source="media/end-user-fresh/power-bi-owners.png" alt-text="Report with title dropdown displayed.":::
 
 
 ### Viewing dashboards
-The dashboard title dropdown displays an **Owner**, but not a timestamp.  However, you can look up the last refresh date for individual dashboard tiles and for the  underlying dataset. 
+The dashboard title dropdown displays a **Contact**, but not a timestamp.  However, you can look up the last refresh date for individual dashboard tiles and for the  underlying dataset. 
 
 :::image type="content" source="media/end-user-fresh/power-bi-dashboard-menu.png" alt-text="Marketing and sales dashboard dropdown":::
 
@@ -80,7 +80,7 @@ There are a couple of built in Power BI features that can help you stay up-to-da
 
 
 ## Set data alerts
-Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md) for a dashboard.  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
+Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md) for a dashboard.  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value on a dashboard passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
 
 ## Subscribe to see changes
 Another way to stay up-to-date is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
@@ -89,7 +89,7 @@ Another way to stay up-to-date is to subscribe to a report or dashboard. Instead
 
 ## Considerations and limitations
 
-- Within an app, each piece of content will have its own **Date updated** and/or **Owner** that may be different than the app published date.  
+- Within an app, each piece of content will have its own **Date updated** and/or **Owner** that may be different than the app published date and app owner.  
 
 
 ## Next steps

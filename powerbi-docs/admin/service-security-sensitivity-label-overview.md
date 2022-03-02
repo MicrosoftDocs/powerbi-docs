@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 01/25/2022
+ms.date: 02/24/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -106,7 +106,7 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
 
-## Sensitivity label downstream inheritance (preview)
+## Sensitivity label downstream inheritance
 
 When a sensitivity label is applied to a dataset or report in the Power BI service, it is possible to have the label trickle down and be automatically applied to content that is built from that dataset or report as well. This capability is called downstream inheritance.
 
@@ -227,11 +227,11 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### General
 
-* It is not recommended to allow users to apply parent labels within Power BI (a label is considered to be a parent label only if it has sublabels). If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels).
+* Power BI admins: If a sensitivity label is or becomes a parent (that is, has sublabels), exporting data from content that has that label applied will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels).
 
 * Data sensitivity labels aren’t supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 
-* In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you will not be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a .pbix file has such an invalid label, you won’t be able to save the file.
+* In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you will not be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label.
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
@@ -243,7 +243,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Sensitivity labels can be applied only on dashboards, reports, datasets, dataflows, and [paginated reports](service-security-sensitivity-label-paginated-reports.md). They aren't currently available for workbooks.
 
-* Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels aren’t currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
+* Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels aren’t currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, PDF, and PBIX files.
 
 ### Power BI Desktop
 
@@ -255,7 +255,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If the label applied to a .pbix file hasn't been published to the user in the Microsoft 365 compliance center, the user won’t be able to save the file in Desktop.
 
-* Publishing or importing a .pbix file with a sensitivity label to the service via APIs running under a service principal isn’t supported and will fail. To mitigate, users can remove the labels and then publish using service principals.
+* Publishing or importing a .pbix file that has a protected sensitivity label to the service via APIs running under a service principal isn't supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
 
@@ -267,7 +267,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * **Get data** can upload protected files only if they’re local. Protected files from online services such as SharePoint Online or OneDrive for Business can’t be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
-* **Export to PDF** doesn’t support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
+* **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
