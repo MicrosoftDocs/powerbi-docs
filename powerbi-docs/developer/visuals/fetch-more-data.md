@@ -181,7 +181,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 > For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
 > N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
-## Known limitations of fetchMoreData
+## Considerations and limitations
 
 * Window size is limited to a range of 2-30,000.
 * Dataview total row count is limited to 1,048,576 rows.
