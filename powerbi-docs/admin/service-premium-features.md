@@ -45,7 +45,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Query caching](./../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |
 |[Storage](service-admin-manage-your-data-storage-in-power-bi.md) |Manage data storage |
 |[Streaming dataflows](./../transform-model/dataflows/dataflows-streaming.md) (preview) |Connect to, ingest, mash up, model, and build reports using near real-time data |
-|[Unlimited content sharing](service-premium-what-is.md#unlimited-content-sharing) |Share Power BI content with anyone</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) |
+|[Unlimited content sharing](service-premium-what-is.md#unlimited-content-sharing) |Share Power BI content with anyone</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md)  |
 |[Virtual network data gateway](/data-integration/vnet/overview) (preview) | Connect from Microsoft Cloud to Azure using a virtual network (VNet) |
 |[XMLA read/write](service-premium-connect-tools.md) |Enable XMLA endpoint |
 
