@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/15/2021
+ms.date: 03/02/2022
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
@@ -82,7 +82,7 @@ The following table describes R visuals capabilities based on licensing.
 
 
 
-## Known Limitations
+## Considerations and limitations
 
 R visuals in the Power BI service have a few limitations:
 
