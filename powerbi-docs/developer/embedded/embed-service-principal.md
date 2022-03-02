@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 02/04/2022
+ms.date: 03/02/2022
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -40,7 +40,7 @@ To use service principal and an application ID  embedded analytics, follow these
     2. Get the app's *Application ID* and *Application secret*.
 
     >[!NOTE]
-    >These steps are described in **step 1**. For more information about creating an Azure AD app, see the [create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal) article.
+    >These steps are described in **step 1**. For more information about creating an Azure AD app, see [create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 2. Create an Azure AD security group.
 
