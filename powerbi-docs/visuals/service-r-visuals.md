@@ -23,10 +23,6 @@ The Power BI service supports viewing and interacting with visuals created with 
 > [!NOTE]
 > The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Microsoft R 3.4.4.*
 
-The following image shows a Power BI dashboard with a collection of R visuals used for advanced analytics.
-
-:::image type="content" source="media/service-r-visuals/power-bi-r-visuals.png" alt-text="Screenshot of the Power BI service report canvas":::
-
 R visuals are created in a [Power BI Desktop report](../fundamentals/desktop-get-the-desktop.md), like the report shown in the following image.
 
 :::image type="content" source="media/service-r-visuals/power-bi-r-visual-desktop.png" alt-text="Desktop report with two visuals.":::
@@ -37,9 +33,9 @@ In the service, not all of the R packages are supported. See supported packages 
 
 You can download this [sample Power BI Desktop file](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix file) that contains a few R visuals to see how this works, and to experiment.
 
-R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](../collaborate-share/service-share-dashboards.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
+R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, or share them with others. A few differences from other visuals is that R visuals cannot show tool tips, cannot be pinned to dashboards, and cannot be used to filter other visuals.
 
-As you can see in the following image, R visuals in the Power BI service, either in dashboards or reports, largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
+As you can see in the following image, R visuals in the Power BI service largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
 
 :::image type="content" source="media/service-r-visuals/power-bi-r-visual.png" alt-text="Screenshot of the report page in the Power BI service.":::
 
@@ -73,12 +69,12 @@ Free users of Power BI can only consume tiles shared with them in Premium worksp
 The following table describes R visuals capabilities based on licensing.
 
 
-|  |Author R visuals in Power BI Desktop  | Create PBI service reports with R visuals |View R visuals in reports  | View R tiles in dashboards |
-|---------|---------|---------|---------|--------|
-|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  | Supported in Premium/Azure capacity only |
-|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
-|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
-**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    |Supported|
+|  |Author R visuals in Power BI Desktop  | Create PBI service reports with R visuals |View R visuals in reports  |  
+|---------|---------|---------|---------|
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  |  
+|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
+**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
 
 
 
@@ -97,7 +93,7 @@ R visuals in the Power BI service have a few limitations:
 * R visuals are currently not supported for the *Time* data type. Please use Date/Time instead.
 * R visuals do not display when using **Publish to web**.
 * R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
-* R visuals currently do not print with dashboard and reports printing.
+* R visuals currently do not print with reports printing.
 * R visuals are currently not supported in the DirectQuery mode of Analysis Services.
 * R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following additional step:
   

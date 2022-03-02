@@ -1,13 +1,14 @@
 ---
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI enables sharing content with external guest users through Azure Active Directory Business-to-business (Azure AD B2B).
-author: kfollis
-ms.author: kfollis
+author: paulinbar
+ms.author: painbar
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/17/2021
+ms.date: 02/22/2022
 LocalizationGroup: Administration
 ---
 
@@ -124,6 +125,11 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 * External Azure AD B2B guests can view apps, dashboards, reports, and export data. They can't access workspaces or publish their own content. To remove these restrictions, you can use the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
 
 * To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed. Pro Trial users can't invite guest users in Power BI.
+
+* Information protection in Power BI doesn't support B2B and multi-tenant scenarios. This means that although external users may be able to see sensitivity labels in Power BI:
+    * They can't set labels
+    * [Mandatory](service-security-sensitivity-label-mandatory-label-policy.md) and [default label](service-security-sensitivity-label-default-label-policy.md) polices will not be enforced for them
+    * While they can view a report that has a label with protection settings, if they export data from that report to a file, they may not be able to open the file, as it has the Azure Active Directory permissions of the original organization that it got due to the label on the report.
 
 * Some experiences are not available to [guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files.  The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service

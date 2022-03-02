@@ -2,8 +2,8 @@
 title: "Power BI adoption roadmap: Executive sponsorship"
 description: Appoint an executive sponsor to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual

@@ -2,8 +2,8 @@
 title: "Power BI adoption roadmap: User support"
 description: Support users to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -43,7 +43,7 @@ Each of the four types of internal user support introduced above are described i
 
 ## Intra-team support
 
-_Intra-team support_ refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
+*Intra-team support* refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
 
 > [!NOTE]
 > Intra-team support does not work well for individuals who are the only data analyst within a department. It's also not effective for those who don't have very many connections yet in their organization. When there aren't any close colleagues to depend on, other types of support, as described in this article, become more important.

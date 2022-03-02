@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 02/05/2022
 ---
 
 # Power BI visuals system integration

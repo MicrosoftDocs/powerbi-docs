@@ -1,5 +1,5 @@
 ---
-title: Add bookmark support for Power BI visuals
+title: Add bookmark support for Power BI custom visuals
 description: Power BI visuals can handle bookmarks switching
 author: mberdugo
 ms.author: monaberdugo
@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/03/2021
+ms.date: 02/03/2022
 ---
 
 # Add bookmark support to visuals in Power BI reports
 
-With Power BI report bookmarks, you can capture and save a configured view of a report page. You can then go back to this view quickly and easily whenever you want. The bookmark saves the entire configuration, including selections and filters.
+With Power BI report bookmarks, you can capture and save a configured view of a report page. Then you can go back to the saved view quickly and easily whenever you want. The bookmark saves the entire configuration, including selections and filters.
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
@@ -31,13 +31,13 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 ## How Power BI visuals interact with Power BI in report bookmarks
 
-Consider the following scenario: you want to create several bookmarks on a report page with each bookmark having different data points selected.
+Let's say you want to create several bookmarks on a report page with each bookmark having different data points selected.
 
 First, you select one or more data points in your visual. The visual passes your selections to the host. You then select **Add** in the [**Bookmark pane**](../../consumer/end-user-bookmarks.md), and Power BI saves the current selections for the new bookmark.
 
 You do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
-When you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state that's stored in the bookmark. To do this, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
+Each time you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state that's stored in the bookmark. To do this, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
 
 The new selection state (or filter) is communicated through the `options.jsonFilters` property in the `update` method. The `jsonFilters` can be either [`Advanced Filter`](filter-api.md#the-advanced-filter-api) or [`Tuple Filter`](filter-api.md#the-tuple-filter-api-multi-column-filter).
 

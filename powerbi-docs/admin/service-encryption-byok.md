@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/18/2021
+ms.date: 03/02/2022
 LocalizationGroup: Premium
 ---
 
@@ -29,45 +29,46 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Power BI goals](../create-reports/service-goals-introduction.md) do not currently support bring your own key (BYOK).
 
-
 BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running `Get-InstalledModule -Name MicrosoftPowerBIMgmt`. Install the latest version by running `Install-Module -Name MicrosoftPowerBIMgmt`. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
 In this section you learn how to configure Azure Key Vault, a tool for securely storing and accessing secrets, like encryption keys. You can use an existing key vault to store encryption keys, or you can create a new one specifically for use with Power BI.
 
-The instructions in this section assume basic knowledge of Azure Key Vault. For more information, see [What is Azure Key Vault?](/azure/key-vault/key-vault-whatis). Configure your key vault in the following way:
+The instructions in this section assume basic knowledge of Azure Key Vault. For more information, see [What is Azure Key Vault?](/azure/key-vault/key-vault-whatis)
 
-1. Add the Power BI service as a service principal for the key vault, with wrap and unwrap permissions.
+Configure your key vault in the following way:
 
-1. Create an RSA key with a 4096-bit length (or use an existing key of this type), with wrap and unwrap permissions.
+1. [Add the Power BI service as a service principal](#add-the-service-principal) for the key vault, with wrap and unwrap permissions.
+
+2. [Create an RSA key](#create-an-rsa-key) with a 4096-bit length (or use an existing key of this type), with wrap and unwrap permissions.
 
     > [!IMPORTANT]
     > Power BI BYOK supports only RSA keys with a 4096-bit length.
 
-1. Recommended: Check that the key vault has the _soft delete_ option enabled.
+3. (Recommended) Check that the key vault has the [_soft delete_ option enabled](#soft-delete-option).
 
 ### Add the service principal
 
 1. In the Azure portal, in your key vault, under **Access policies**, select **Add Access Policy**.
 
-1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
+2. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
     ![P B I X file select cryptographic operations.](media/service-encryption-byok/key-permissions.png)
 
-1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
+3. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
     ![P B I X file select service principal.](media/service-encryption-byok/service-principal.png)
 
-1. Select **Add**, then **Save**.
+4. Select **Add**, then **Save**.
 
 > [!NOTE]
 > To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.
@@ -76,17 +77,17 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. In your key vault, under **Keys**, select **Generate/Import**.
 
-1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
+2. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
     ![Create a key with key type and size highlighted](media/service-encryption-byok/create-rsa-key.png)
 
-1. Select **Create**.
+3. Select **Create**.
 
-1. Under **Keys**, select the key you created.
+4. Under **Keys**, select the key you created.
 
-1. Select the GUID for the **Current Version** of the key.
+5. Select the GUID for the **Current Version** of the key.
 
-1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
+6. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
 
     ![Properties with key identifier and permitted operations highlighted](media/service-encryption-byok/key-properties.png)
 
@@ -95,6 +96,37 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 We recommend that you enable [soft-delete](/azure/key-vault/key-vault-ovw-soft-delete) on your key vault, to protect from data loss in case of accidental key – or key vault – deletion. You must use [PowerShell to enable the "soft-delete" property](/azure/key-vault/key-vault-soft-delete-powershell) on the key vault, because this option is not available from the Azure portal yet.
 
 With Azure Key Vault properly configured, you're ready to enable BYOK on your tenant.
+
+## Configure the Azure Key Vault firewall
+
+This section describes using the trusted Microsoft service firewall bypass, to configure a firewall around your Azure Key Vault.
+
+>[!NOTE]
+>Enabling firewall rules on your key vault is optional. You can also choose to leave the firewall disabled on your key vault as per the default setting.
+
+Power BI is a trusted Microsoft service. You can instruct the key vault firewall to allow access to all trusted Microsoft services, a setting that enables Power BI to access your key vault without specifying end point connections.
+
+To configure Azure Key Vault to allow access to trusted Microsoft services, follow these steps:
+
+1. Log into the [Azure portal](https://portal.azure.com).
+
+2. Search for **Key Vaults**.
+
+3. Select the key vault you want to allow access to Power BI (and all other trusted Microsoft services).
+
+4. Select **Networking** and then select **Firewalls and virtual networks**.
+
+5. From the *Allow access from* option, select **Selected networks**.
+
+    :::image type="content" source="media/service-encryption-byok/key-vault-firewall.png" alt-text="A screenshot showing the Azure Key Vault networking option, with the firewalls and virtual networks option selected.":::
+
+6. In the *firewall* section, in the *Allow trusted Microsoft services to bypass this firewall*, select **Yes**.
+
+    :::image type="content" source="media/service-encryption-byok/trusted-service.png" alt-text="A screenshot showing the allow trusted Microsoft services to bypass this firewall option selected.":::
+
+7. Select **Save**.
+
+    :::image type="content" source="media/service-encryption-byok/save.png" alt-text="A screenshot showing the Azure Key Vault networking save button highlighted.":::
 
 ## Enable BYOK on your tenant
 
@@ -191,23 +223,20 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 ## Next steps
 
-* [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
+> [!div class="nextstepaction"]
+> [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
-* [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+> [!div class="nextstepaction"]
+> [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [Filter a report using query string parameters in the URL](../collaborate-share/service-url-filters.md)
+> [!div class="nextstepaction"]
+> [Filter a report using query string parameters in the URL](../collaborate-share/service-url-filters.md)
 
-* [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
+> [!div class="nextstepaction"]
+> [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
-* [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
+> [!div class="nextstepaction"]
+> [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
-
-Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
-* Performance
-* Per-user licensing
-* Greater scale
-* Improved metrics
-* Autoscaling
-* Reduced management overhead
-
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [!div class="nextstepaction"]
+> [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2)

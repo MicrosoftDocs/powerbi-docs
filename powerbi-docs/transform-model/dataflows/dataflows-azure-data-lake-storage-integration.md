@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 2/17/2022
+ms.date: 3/02/2022
 LocalizationGroup: Data from files
 ---
 # Configuring dataflow storage to use Azure Data Lake Gen 2 
@@ -28,7 +28,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The storage account must be created in the same Azure Active Directory tenant as the Power BI tenant.
 
-- The user must have Azure Blob Data Contributor role, and an Storage Blob Data Owner role at the storage account level.
+- The user must have Azure Blob Data Contributor role, and a Owner role at the storage account level.
 
 - The Power BI workspace tenant region should be the same as the storage account region.
 
@@ -42,8 +42,8 @@ The following table describes the permissions for ADLS and for Power BI required
 
 |Action  |ADLS permissions  |Minimum Power BI permissions  |
 |---------|---------|---------|
-|Connect ADLS Gen 2 to Power BI tenant     | Storage Blob Data Owner        | Power BI administrator |
-|Connect ADLS Gen 2 to Workspace     | Storage Blob Data Owner        | Workspace Admin        |
+|Connect ADLS Gen 2 to Power BI tenant     | Owner        | Power BI administrator |
+|Connect ADLS Gen 2 to Workspace     | Owner        | Workspace Admin        |
 |Create Power BI dataflows writing back to connected ADLS account     | Not applicable        | Workspace contributor         |
 |Consume Power BI dataflow     | Not applicable        | Workspace viewer        |
 
