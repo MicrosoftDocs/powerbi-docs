@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/23/2022
+ms.date: 03/02/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -157,31 +157,35 @@ The following list provides regions where large datasets in Power BI are availab
 >[!NOTE]
 >Once a large dataset is created in a workspace, it must stay in that region. You cannot reassign a workspace with a large dataset to a Premium capacity in another region.
 
-|Azure region        |Azure region abbreviation |
-|--------------------|--------------------------|
-|Australia East      |australiaeast             |
-|Australia Southeast |australiasoutheast        |
-|Canada East         |canadaeast                |
-|Canada Central      |canadacentral             |
-|Central India       |centralindia              |
-|Central US          |centralus                 |
-|East Asia           |eastasia                  |
-|East US             |eastus                    |
-|East US 2           |eastus2                   |
-|Japan East          |japaneast                 |
-|Japan West          |japanwest                 |
-|Korea Central       |koreacentral              |
-|Korea South         |koreasouth                |
-|North Central US    |northcentralus            |
-|North Europe        |northeurope               |
-|South Central US    |southcentralus            |
-|Southeast Asia      |southeastasia             |
-|UK South            |uksouth                   |
-|UK West             |ukwest                    |
-|West Europe         |westeurope                |
-|West India          |westindia                 |
-|West US             |westus                    |
-|West US 2           |westus2                   |
+| Azure region        | Azure region abbreviation |
+|---------------------|---------------------------|
+| Australia East      | australiaeast             |
+| Australia Southeast | australiasoutheast        |
+| Canada East         | canadaeast                |
+| Canada Central      | canadacentral             |
+| Central India       | centralindia              |
+| Central US          | centralus                 |
+| East Asia           | eastasia                  |
+| East US             | eastus                    |
+| East US 2           | eastus2                   |
+| France Central      | francecentral             |
+| France South        | francesouth               |
+| Japan East          | japaneast                 |
+| Japan West          | japanwest                 |
+| Korea Central       | koreacentral              |
+| Korea South         | koreasouth                |
+| North Central US    | northcentralus            |
+| North Europe        | northeurope               |
+| South Central US    | southcentralus            |
+| Southeast Asia      | southeastasia             |
+| Switzerland North   | switzerlandnorth          |
+| Switzerland West    | switzerlandwest           |
+| UK South            | uksouth                   |
+| UK West             | ukwest                    |
+| West Europe         | westeurope                |
+| West India          | westindia                 |
+| West US             | westus                    |
+| West US 2           | westus2                   |
 
 ## Next steps
 

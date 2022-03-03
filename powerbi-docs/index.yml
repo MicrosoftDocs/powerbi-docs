@@ -92,20 +92,36 @@ conceptualContent:
         url: consumer/index.yml
         text: See more
     # Card
+    - title: Enterprise
+      links:
+        - url: admin/service-premium-gen2-what-is.md
+          itemType: overview
+          text: What is Power BI Premium Gen2?
+        - url: admin/service-admin-power-bi-security.md
+          itemType: concept
+          text: Security
+        - url: admin/service-security-data-protection-overview.md
+          itemType: concept
+          text: Data protection
+      # footerLink (optional)
+      footerLink:
+        url: admin/index.yml
+        text: See more        
+    # Card
     - title: Administer Power BI
       links:
         - url: admin/service-admin-administering-power-bi-in-your-organization.md
           itemType: overview
           text: What is Power BI administration?
-        - url: admin/service-admin-licensing-organization.md
-          itemType: concept
-          text: Licensing in your organization
-        - url: admin/service-premium-what-is.md
-          itemType: concept
-          text: What is Power BI Premium?
+        - url: admin/service-admin-portal.md
+          itemType: how-to-guide
+          text: Admin portal settings
+        - url: service-admin-how-to-use-the-same-account-as-azure.md
+          itemType: how-to-guide
+          text: admin/Use the same account for Power BI and Azure
       # footerLink (optional)
       footerLink:
-        url: admin/index.yml
+        url: admin/Power BI administration/index.yml
         text: See more
     # Card
     - title: Develop in Power BI
@@ -218,22 +234,6 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
-        text: See more
-    # Card
-    - title: Enterprise
-      links:
-        - url: admin/service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: admin/service-admin-power-bi-security.md
-          itemType: concept
-          text: Security
-        - url: admin/service-security-data-protection-overview.md
-          itemType: concept
-          text: Data protection
-      # footerLink (optional)
-      footerLink:
-        url: admin/index.yml
         text: See more
     # Card
     - title: Power BI Premium Gen2

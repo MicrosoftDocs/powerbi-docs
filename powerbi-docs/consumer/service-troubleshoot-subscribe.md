@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 02/03/2022
+ms.date: 03/02/2022
 LocalizationGroup: Share your work
 ---
 
@@ -64,11 +64,6 @@ You receive your subscription email, open the dashboard, and notice that one or 
 
 ### Too many dashboard tiles
 Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription emails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly. 
-
-### Row level security (RLS)
-- For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display. 
-
-- For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 
 ### Tile type not supported
 For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles. 
