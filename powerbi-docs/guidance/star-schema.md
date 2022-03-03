@@ -3,11 +3,11 @@ title: Understand star schema and the importance for Power BI
 description: Understand a star schema and its relevance to developing Power BI data models optimized for performance and usability.
 author: peter-myers
 ms.author: v-petermyers
-ms.reviewer: asaxton
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/22/2021
+ms.date: 03/03/2022
 ---
 # Understand star schema and the importance for Power BI
 
@@ -41,7 +41,7 @@ If, however, the sales table stores product details beyond the key, it's conside
 
 When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](/learn/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
 
-As described in this article, you should strive to develop optimized Power BI data models with tables that represent normalized data.
+As described in this article, you should strive to develop optimized Power BI data models with tables that represent normalized fact and dimension data. However, there's one exception where a [snowflake dimension](#snowflake-dimensions) should be denormalized to produce a single model table.
 
 ## Star schema relevance to Power BI models
 
