@@ -95,6 +95,7 @@ Currently there are limitations on the values you can choose in a visual.
 
 - In a 100% stacked bar or column chart, Power BI will pull in the measure value rather than the percentage.
 - In a multi-row card, Power BI will pull in the first measure in the card.
+- Goals does not support Multi Geo.
 - In gauges and KPI tiles, Power BI will pull in the value, but not the target, or the min or max value in the gauge.
 - In a table with more than one column of measures, Power BI selects the first measure in the row.
 
