@@ -171,7 +171,7 @@ The following known limitations currently apply to Premium Gen2:
 
     <sup>2</sup> These limits only apply to dataset workloads.
 
-    <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+    <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
     <sup>4</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
