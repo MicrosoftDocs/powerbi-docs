@@ -105,7 +105,7 @@ conceptualContent:
           text: Data protection
       # footerLink (optional)
       footerLink:
-        url: admin/index.yml
+        url: admin/enterprise/index.yml
         text: See more        
     # Card
     - title: Administer Power BI
@@ -121,7 +121,7 @@ conceptualContent:
           text: admin/Use the same account for Power BI and Azure
       # footerLink (optional)
       footerLink:
-        url: admin/Power BI administration/index.yml
+        url: admin/administration/index.yml
         text: See more
     # Card
     - title: Develop in Power BI
@@ -249,7 +249,7 @@ conceptualContent:
           text: Use the Gen2 metrics app
       # footerLink (optional)
       footerLink:
-        url: admin/index.yml
+        url: admin/enterprise/index.yml
         text: See more
     # Card
     - title: Power BI in the mobile apps

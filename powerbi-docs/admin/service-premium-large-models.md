@@ -137,12 +137,16 @@ Keep in mind the following restrictions when using large datasets:
 - **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
+
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
-- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to the maximum capacity of the SKU.
+- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. For more information see *Max Memory* in [Datasets](service-admin-premium-workloads.md#datasets).
+
+- **Refreshing large datasets**: Datasets that are close to half the size of the capacity size (for example, a 12 GB dataset on a 25 GB capacity size) may exceed the available memory during refreshes. Using an [XMLA endpoint](service-premium-connect-tools.md) you can configure fine grained data refreshes, so that the memory needed by the refresh can be minimized to fit within your capacity's size.
+
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
-- You cannot enable large datasets using the REST API. 
+- You cannot enable large datasets using the REST API.
 
 ## Region availability
 
@@ -187,18 +191,20 @@ The following list provides regions where large datasets in Power BI are availab
 
 The following links provide information that can be useful for working with large models:
 
-* [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
-* [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
-* [Bring your own encryption keys for Power BI](service-encryption-byok.md)
-* [How capacities function](service-premium-what-is.md#how-capacities-function)
-* [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
+> [!div class="nextstepaction"]
+> [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
-* Performance
-* Per-user licensing
-* Greater scale
-* Improved metrics
-* Autoscaling
-* Reduced management overhead
+> [!div class="nextstepaction"]
+> [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [!div class="nextstepaction"]
+> [Bring your own encryption keys for Power BI](service-encryption-byok.md)
+
+> [!div class="nextstepaction"]
+> [How capacities function](service-premium-what-is.md#how-capacities-function)
+
+> [!div class="nextstepaction"]
+> [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
+
+> [!div class="nextstepaction"]
+> [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

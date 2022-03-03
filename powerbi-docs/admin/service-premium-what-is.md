@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/20/2022
+ms.date: 03/03/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -82,7 +82,7 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
@@ -90,14 +90,16 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
 | P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
 | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>3</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
-| P5/A8<sup>3</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
+| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
+| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to dataset workloads.
 
-<sup>3</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+
+<sup>4</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
 >Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.

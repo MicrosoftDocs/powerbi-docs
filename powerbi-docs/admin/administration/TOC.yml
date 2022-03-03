@@ -1,5 +1,5 @@
 - name: Power BI administration
-  href: ../../index.yml
+  href: index.yml
   expanded: false
   items:
   - name: General info for admins
@@ -52,4 +52,4 @@
     - name: Enable content certification
       href: ../service-admin-setup-certification.md
     - name: Set up metadata scanning in your org
-      href: ../service-admin-metadata-scanning-setup.md              
+      href: ../service-admin-metadata-scanning-setup.md            
