@@ -49,3 +49,4 @@ There are five main steps for using a gateway:
 * [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+ 
