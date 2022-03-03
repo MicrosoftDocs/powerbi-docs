@@ -1,5 +1,5 @@
 - name: Power BI enterprise documentation
-  href: ../index.yml
+  href: index.yml
   expanded: true
   items:
   - name: Enterprise
@@ -182,6 +182,5 @@
     - name: PowerShell, REST APIs, and .NET SDK
       href: ../service-admin-reference.md
     - name: Power BI cmdlets for PowerShell
-      href: ..//powershell/power-bi/
+      href: /powershell/power-bi/
       maintainContext: true
-      
