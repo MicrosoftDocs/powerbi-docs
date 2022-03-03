@@ -206,6 +206,10 @@ Drill to details commonly means to show the underlying records.
 
 The mode in which report *designers* can explore, design, build, and share a report.
 
+### Effective identity
+
+The identity used by the generate token API to generate a token for an individual user, depending on that user's credentials in the app. It could be a master user or service principal.
+
 ### Ellipsis
 
 Three dots - ...
