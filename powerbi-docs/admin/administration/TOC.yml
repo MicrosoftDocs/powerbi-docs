@@ -52,4 +52,5 @@
     - name: Enable content certification
       href: ../service-admin-setup-certification.md
     - name: Set up metadata scanning in your org
-      href: ../service-admin-metadata-scanning-setup.md              
+      href: ../service-admin-metadata-scanning-setup.md
+                  
