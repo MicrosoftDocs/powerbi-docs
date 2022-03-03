@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: KesemSharabi
   ms.author: kesharab
-  ms.date: 02/27/2022
+  ms.date: 03/03/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,23 +27,23 @@ landingContent:
       - linkListType: overview
         links:
           - text: Introducing Power BI Premium Gen2
-            url: service-premium-gen2-what-is.md
+            url: ../service-premium-gen2-what-is.md
           - text: Power BI Premium features
-            url: service-premium-features.md           
+            url: ../service-premium-features.md           
       - linkListType: concept
         links:            
           - text: Power BI Premium Gen2 architecture
-            url: service-premium-architecture.md
+            url: ../service-premium-architecture.md
           - text: Managing Premium Gen2 capacities
-            url: service-premium-capacity-manage-gen2.md           
+            url: ../service-premium-capacity-manage-gen2.md           
           - text: Power BI for US government
-            url: service-govus-overview.md
+            url: ../service-govus-overview.md
       - linkListType: how-to-guide
         links:
           - text: Use the Premium utilization and metrics app
-            url: service-premium-gen2-metrics-app.md         
+            url: ../service-premium-gen2-metrics-app.md         
           - text: Enroll a US government organization
-            url: service-govus-signup.md
+            url: ../service-govus-signup.md
 
 
   # Card (optional)
@@ -52,19 +52,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: Data protection in Power BI
-            url: service-security-data-protection-overview.md
+            url: ../service-security-data-protection-overview.md
       - linkListType: concept
         links:   
           - text: Sensitivity labels
-            url: service-security-sensitivity-label-overview.md                  
+            url: ../service-security-sensitivity-label-overview.md                  
           - text: Microsoft Defender for Cloud Apps
-            url: service-security-using-defender-for-cloud-apps-controls.md           
+            url: ../service-security-using-defender-for-cloud-apps-controls.md           
       - linkListType: how-to-guide
         links:            
           - text: Enable sensitivity labels
-            url: service-security-enable-data-sensitivity-labels.md
+            url: ../service-security-enable-data-sensitivity-labels.md
           - text: Apply sensitivity labels
-            url: service-security-apply-data-sensitivity-labels.md           
+            url: ../service-security-apply-data-sensitivity-labels.md           
 
   # Card (optional)
   - title: Security
@@ -72,21 +72,21 @@ landingContent:
       - linkListType: overview
         links:
           - text: Power BI Security
-            url: service-admin-power-bi-security.md
+            url: ../service-admin-power-bi-security.md
       - linkListType: concept
         links:            
           - text: Power BI Desktop privacy levels
-            url: desktop-privacy-levels.md 
+            url: ../desktop-privacy-levels.md 
           - text: Row-level security (RLS)
-            url: service-admin-rls.md                       
+            url: ../service-admin-rls.md                       
       - linkListType: how-to-guide
         links:                    
           - text: Use service tags
-            url: service-premium-service-tags.md
+            url: ../service-premium-service-tags.md
           - text: Private endpoints with Power BI
-            url: service-security-private-links.md
+            url: ../service-security-private-links.md
           - text: Bring your own encryption keys
-            url: service-encryption-byok.md
+            url: ../service-encryption-byok.md
 
   # Card (optional)
   - title: Automation tools
@@ -94,6 +94,6 @@ landingContent:
       - linkListType: reference
         links:
           - text: Service principal authentication for read-only admin APIs
-            url: read-only-apis-service-principal-authentication.md
+            url: ../read-only-apis-service-principal-authentication.md
           - text: PowerShell cmdlets, REST APIs, and .NET Client library
-            url: service-admin-reference.md          
+            url: ../service-admin-reference.md          
