@@ -11,7 +11,7 @@
       topicHref: /power-bi/
       items:
       - name: Administration
-        tocHref: /power-bi/admin/Power BI administration
+        tocHref: /power-bi/admin/administration
         topicHref: /power-bi/admin/administration/index
       - name: Collaborate, share, integrate
         tocHref: /power-bi/collaborate-share/
