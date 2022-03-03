@@ -1,13 +1,13 @@
 ---
 title: Organizational visuals
 description: This article describes admin organizational visual capabilities.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/19/2022
+ms.date: 03/03/2022
 ---
 
 # Manage Power BI visuals admin settings
