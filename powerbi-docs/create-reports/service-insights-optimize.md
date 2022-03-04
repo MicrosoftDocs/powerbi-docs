@@ -11,6 +11,9 @@ ms.date: 03/02/2017
 LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Want to improve quick insights results?  If you are a dataset owner, try these:
 
 * Hide or unhide columns in your dataset. Power BI quick insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
