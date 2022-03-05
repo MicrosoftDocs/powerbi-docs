@@ -271,7 +271,7 @@ In some cases, as shown in the following error, "consumed memory" is 0 but the a
 
 **"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
 
-To potentially reduce exceeding the effective memory limit:
+To potentially reduce the chance of exceeding the effective memory limit:
 
 - Upgrade to a larger Premium capacity (SKU) size for the dataset.
 - Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
