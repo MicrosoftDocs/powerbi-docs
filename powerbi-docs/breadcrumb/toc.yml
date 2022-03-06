@@ -45,7 +45,7 @@
           tocHref: /power-bi/developer/visuals/
           topicHref: /power-bi/developer/visuals/index
       - name: Enterprise
-        tocHref: /power-bi/admin/
+        tocHref: /power-bi/admin/enterprise
         topicHref: /power-bi/admin/enterprise/index
       - name: Get started
         tocHref: /power-bi/fundamentals/
