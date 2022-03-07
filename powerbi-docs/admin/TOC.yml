@@ -6,51 +6,51 @@
     expanded: false
     items:
     - name: What is Power BI administration?
-      href: ../service-admin-administering-power-bi-in-your-organization.md
+      href: service-admin-administering-power-bi-in-your-organization.md
     - name: Administration role in Microsoft 365
-      href: ../service-admin-role.md      
+      href: service-admin-role.md      
     - name: Can't sign in?
-      href: ../power-bi-cannot-sign-in.md
+      href: power-bi-cannot-sign-in.md
     - name: Forgot your password for Power BI?
-      href: ../service-admin-forgot-your-password.md
+      href: service-admin-forgot-your-password.md
     - name: How to use the same account login for Power BI and Azure
-      href: ../service-admin-how-to-use-the-same-account-as-azure.md 
+      href: service-admin-how-to-use-the-same-account-as-azure.md 
     - name: Frequently asked questions (FAQ)
-      href: ../service-admin-faq.yml                       
+      href: service-admin-faq.yml                       
   - name: System administration
     expanded: false
     items:
     - name: Manage Power BI Desktop sign-in form
-      href: ../desktop-admin-sign-in-form.md      
+      href: desktop-admin-sign-in-form.md      
     - name: Service URL reference
-      href: ../power-bi-allow-list-urls.md
+      href: power-bi-allow-list-urls.md
     - name: Add custom branding
-      href: ../service-admin-custom-branding.md       
+      href: service-admin-custom-branding.md       
     - name: Service interruption notifications
-      href: ../service-interruption-notifications.md
+      href: service-interruption-notifications.md
     - name: Capture diagnostic information from the Power BI service
-      href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: Power BI support options
-      href: ../service-support-options.md
+      href: service-support-options.md
     - name: Find where data is stored
-      href: ../service-admin-where-is-my-tenant-located.md 
+      href: service-admin-where-is-my-tenant-located.md 
     - name: Move between regions
-      href: ../service-admin-region-move.md           
+      href: service-admin-region-move.md           
     - name: Track service health
-      href: ../service-admin-health.md
+      href: service-admin-health.md
     - name: Find users that have signed in
-      href: ../service-admin-access-usage.md
+      href: service-admin-access-usage.md
     - name: Track user activities
-      href: ../service-admin-auditing.md  
+      href: service-admin-auditing.md  
   - name: Feature enablement
     expanded: false
     items:
     - name: Using the admin portal
-      href: ../service-admin-portal.md       
+      href: service-admin-portal.md       
     - name: Manage Power BI visuals admin settings
-      href: ../organizational-visuals.md
+      href: organizational-visuals.md
     - name: Enable content certification
-      href: ../service-admin-setup-certification.md
+      href: service-admin-setup-certification.md
     - name: Set up metadata scanning in your org
-      href: ../service-admin-metadata-scanning-setup.md            
+      href: service-admin-metadata-scanning-setup.md            
       
