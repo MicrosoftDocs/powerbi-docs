@@ -72,7 +72,7 @@ The next few topics take a closer look at each section of Home. Your Home landin
 ## Most important content at your fingertips
 
 ### Favorites and frequents
-This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
+This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that these cards have black stars; they've been tagged as favorites. 
 
 ![Favorites flyout.](./media/end-user-home/power-bi-home-favorites.png)
 
@@ -123,7 +123,7 @@ The nav pane organizes your content into containers that are similar to what you
     ![A video of using the nav pane for Recent.](media/end-user-home/recents2.gif)
 
  
-The nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. Even if you hide content from the Home canvas, you can still access it from the nav pane.
+To summarize, the nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. Even if you hide content from the Home canvas, you can still access it from the nav pane.
 
 ### Workspaces
 Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace**.
