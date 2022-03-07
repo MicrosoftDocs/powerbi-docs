@@ -38,14 +38,14 @@ If you don't see **Recommended** content, it may have been disabled by your admi
 The screenshots below show **Simplified** layout for a new user and then for a more experienced user.
 
 
-:::image type="content" source="media/end-user-home/power-bi-new.png" alt-text="Screenshot of Simplified view for a new user.":::
+:::image type="content" source="media/end-user-home/power-bi-new-home.png" alt-text="Screenshot of Simplified view for a new user.":::
 
 
 :::image type="content" source="media/end-user-home/power-bi-simplified.png" alt-text="Screenshot showing Power BI Home of an experienced user with the Simplified toggle selected.":::
 
 The **Expanded** layout includes a different set of information. The images below are using the *Expanded* view. Once you've selected the **Expanded** toggle, the expanded layout will become your default Home layout. 
 
-:::image type="content" source="media/end-user-home/power-bi-new-user.png" alt-text="Screenshot of Expanded view for a new user":::
+:::image type="content" source="media/end-user-home/power-bi-new-user-home.png" alt-text="Screenshot of Expanded view for a new user":::
 
 :::image type="content" source="media/end-user-home/power-bi-expanded.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
 
