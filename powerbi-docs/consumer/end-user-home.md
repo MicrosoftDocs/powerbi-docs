@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 03/04/2022
+ms.date: 03/07/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -38,7 +38,7 @@ If you don't see **Recommended** content, it may have been disabled by your admi
 The screenshots below show **Simplified** layout for a new user and then for a more experienced user.
 
 
-:::image type="content" source="media/end-user-home/power-bi-new.png" alt-text="Screenshot of Simplified view for a new user":::
+:::image type="content" source="media/end-user-home/power-bi-new.png" alt-text="Screenshot of Simplified view for a new user.":::
 
 
 :::image type="content" source="media/end-user-home/power-bi-simplified.png" alt-text="Screenshot showing Power BI Home of an experienced user with the Simplified toggle selected.":::
