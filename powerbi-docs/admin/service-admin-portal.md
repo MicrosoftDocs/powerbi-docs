@@ -592,6 +592,20 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
 
+## Admin API admin settings
+
+### Allow service principals to use read-only Power BI admin APIs
+
+:::image type="content" source="media/service-admin-portal/allow-service-principals-tenant-setting.png" alt-text="Screenshot of allow service principals tenant setting.":::
+
+### Enhance admin APIs responses with detailed metadata
+
+:::image type="content" source="media/service-admin-portal/enhance-admin-apis-metadata-tenant-setting.png" alt-text="Screenshot of enhance admin API response with detailed metadata tenant setting.":::
+
+### Enhance admin APIs responses with DAX and mashup expressions
+
+:::image type="content" source="media/service-admin-portal/enhance-admin-apis-mashup-tenant-setting.png" alt-text="Screenshot of enhance admin API response with DAX and mashup expressions tenant setting.":::
+
 ## Dataflow settings
 
 ### Create and use dataflows
@@ -717,6 +731,10 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
 For more information about Power BI Embedded SKUs, see [Capacity and SKUs in Power BI embedded analytics](../developer/embedded/embedded-capacity.md).
+
+## Refresh summary
+
+View summary of data refreshes in your organization.
 
 ## Embed codes
 
