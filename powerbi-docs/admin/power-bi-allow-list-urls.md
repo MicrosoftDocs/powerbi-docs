@@ -25,7 +25,7 @@ The Power BI service requires only TCP Port 443 to be opened for the listed endp
 Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination(s)** column lists domain names and links to external sites, which contain further endpoint information.
 
 >[!Important]
->The information in the tables below doesn't apply to Power BI China operated by 21Vianet or Power BI for US government. Read [Connect government and global Azure cloud services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
+>The information in the tables below doesn't apply to Power BI China operated by 21Vianet or Power BI for US government. Read [Connect government and global Azure cloud services](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
 
 ## Authentication
 

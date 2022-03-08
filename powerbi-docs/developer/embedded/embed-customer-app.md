@@ -28,7 +28,7 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
+* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license.
 
 * A Power BI workspace with a report.
 
