@@ -3798,7 +3798,7 @@
         {
             "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",
             "redirect_url": "/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-arcgis.md",
@@ -4451,11 +4451,6 @@
             "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi",
             "redirect_document_id": false
         }, 
-        {
-            "source_path": "powerbi-docs/admin/service-security-enable-data-sensitivity-labels.md",
-            "redirect_url": "/power-bi/enterprise/service-security-enable-data-sensitivity-labels",
-            "redirect_document_id": false
-        },
         {
             "source_path": "powerbi-docs/admin/service-security-enable-data-sensitivity-labels.md",
             "redirect_url": "/power-bi/enterprise/service-security-enable-data-sensitivity-labels",
