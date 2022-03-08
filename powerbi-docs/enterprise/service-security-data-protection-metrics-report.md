@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 ## What is the data protection metrics report?
 
-The data protection metrics report is a dedicated report that [Power BI administrators](../../admin/service-admin-role.md) can use to  monitor and track sensitivity label usage and adoption in their tenant.
+The data protection metrics report is a dedicated report that [Power BI administrators](../admin/service-admin-role.md) can use to  monitor and track sensitivity label usage and adoption in their tenant.
 
 ![Data protection metrics report](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
 
@@ -28,7 +28,7 @@ The report refreshes every 24 hours.
 
 ## Viewing the data protection metrics report
 
-You must have a [Power BI administrator role](../../admin/service-admin-role.md) to open and view the report.
+You must have a [Power BI administrator role](../admin/service-admin-role.md) to open and view the report.
 To view the report, go to **Settings > Admin portal**, and choose **Protection metrics**.
 
 ![protection metrics admin portal](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
@@ -55,5 +55,5 @@ Improved versions of the data protection metrics report are released periodicall
 
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
 * [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
-* [Understanding the Power BI service administrator role](../../admin/service-admin-role.md)
+* [Understanding the Power BI service administrator role](../admin/service-admin-role.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)

@@ -154,7 +154,7 @@ Export fails if a label can't be applied when data is exported to a file. To che
 
 ## Sensitivity label inheritance in Analyze in Excel
 
-When you create a PivotTable in Excel with a live connection to a Power BI dataset (you can do this either from Power BI through [Analyze In Excel](../../collaborate-share/service-analyze-in-excel.md) or from [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US)), the dataset's sensitivity label is inherited and applied to your Excel file, along with any associated protection. If the label on the dataset later changes to a more restrictive one, the label applied on the linked Excel file will automatically update upon data refresh.
+When you create a PivotTable in Excel with a live connection to a Power BI dataset (you can do this either from Power BI through [Analyze In Excel](../collaborate-share/service-analyze-in-excel.md) or from [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US)), the dataset's sensitivity label is inherited and applied to your Excel file, along with any associated protection. If the label on the dataset later changes to a more restrictive one, the label applied on the linked Excel file will automatically update upon data refresh.
 
 ![Screenshot of Excel showing sensitivity label inherited from dataset via live connection.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
 
@@ -171,9 +171,9 @@ You can embed Power BI reports, dashboards, and visuals in business applications
 
 The following embedding scenarios are supported:
 
-* [Embed for your organization](../../developer/embedded/embed-sample-for-your-organization.md)
-* Microsoft 365 apps (for example, [Teams](../../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../../collaborate-share/service-embed-report-spo.md))
-* [Secure URL embedding](../../collaborate-share/service-embed-secure.md) (embedding from the Power BI service)
+* [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md)
+* Microsoft 365 apps (for example, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service)
 
 ## Sensitivity labels in paginated reports
 
@@ -181,7 +181,7 @@ Sensitivity labels can be applied to paginated reports hosted in the Power BI se
 
 ## Sensitivity labels in deployment pipelines
 
-Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
+Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
 
 ## Sensitivity labels in the Power BI mobile apps
 

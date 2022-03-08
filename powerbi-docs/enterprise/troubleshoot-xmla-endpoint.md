@@ -18,7 +18,7 @@ XMLA endpoints in Power BI rely on the native Analysis Services communication pr
 
 ## Before you begin
 
-Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Dataset connectivity with the XMLA endpoint](../../admin/service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
+Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Dataset connectivity with the XMLA endpoint](../admin/service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
 
 ## Enabling the XMLA endpoint
 
@@ -58,7 +58,7 @@ It's also valid to specify the app ID without the tenant ID. However, in this ca
 
 ### Connecting with Azure Active Directory B2B
 
-With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to datasets over the XMLA endpoint. Make sure the [Share content with external users](../../admin/service-admin-portal.md#export-and-sharing-settings) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
+With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to datasets over the XMLA endpoint. Make sure the [Share content with external users](../admin/service-admin-portal.md#export-and-sharing-settings) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 
 ## Deploying a dataset
 
@@ -169,7 +169,7 @@ This is an informational message that can be ignored in SSMS 18.8 and higher bec
 
 ### Refresh operations in SSMS
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
 ```
 Executing the query ...
@@ -281,5 +281,5 @@ To potentially avoid exceeding the effective memory limit:
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
 [Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)  
-[Troubleshooting Analyze in Excel](../../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
 [Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

@@ -61,8 +61,8 @@ With Power BI Premium, you get *reserved capacities*. In contrast to a shared ca
 
 * Excel workbooks (unless data is first imported into Power BI Desktop)
 * [Push datasets](/rest/api/power-bi/pushdatasets)
-* [Streaming datasets](../../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-* [Q&A](../../create-reports/power-bi-tutorial-q-and-a.md)
+* [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default, workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
@@ -107,9 +107,9 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 ### Capacity workloads
 
-Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md), and [Paginated reports](../../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
+Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
-Each additional workload allows configuring the maximum memory (as a percentage of total capacity memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings aren't meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins using **Capacity settings** in the [Admin portal](../../admin/service-admin-portal.md) or using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
+Each additional workload allows configuring the maximum memory (as a percentage of total capacity memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings aren't meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins using **Capacity settings** in the [Admin portal](../admin/service-admin-portal.md) or using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
 
 ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
@@ -140,7 +140,7 @@ Refreshes, like queries, require the model be loaded into memory. If there is in
 
 ### Regional support
 
-When creating a new capacity, global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region where the Microsoft 365 subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](../../admin/service-admin-premium-multi-geo.md).
+When creating a new capacity, global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region where the Microsoft 365 subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md).
 
 ### Capacity management
 
@@ -148,7 +148,7 @@ Managing Premium capacities involves creating or deleting capacities, assigning 
 
 Global administrators and Power BI service administrators can create Premium capacities from available v-cores, or modify existing Premium capacities. When a capacity is created, capacity size and geographic region are specified, and at least one capacity admin is assigned. 
 
-When capacities are created, most administrative tasks are completed in the [Admin portal](../../admin/service-admin-portal.md).
+When capacities are created, most administrative tasks are completed in the [Admin portal](../admin/service-admin-portal.md).
 
 ![Screenshot shows the Power B I Admin portal with My Workspace selected.](media/service-premium-what-is/premium-admin-portal.png)
 
@@ -158,7 +158,7 @@ Capacity admins can assign workspaces to the capacity, manage user permissions, 
 
 Capacity admins can also make sure a capacity is running smoothly. They can monitor capacity health right in the Admin portal or by using the Premium capacity metrics app.
 
-To learn more about creating capacities, assigning admins, and assigning workspaces, see [Managing Premium capacities](service-premium-capacity-manage.md). To learn more about roles, see [Administrator roles related to Power BI](../../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+To learn more about creating capacities, assigning admins, and assigning workspaces, see [Managing Premium capacities](service-premium-capacity-manage.md). To learn more about roles, see [Administrator roles related to Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 ### Monitoring
 
@@ -214,7 +214,7 @@ Power BI datasets can store data in a highly compressed, in-memory cache for opt
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
-Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](../../connect-data/incremental-refresh-overview.md) is configured, because it's faster, more reliable, and consumes fewer resources.
+Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](../connect-data/incremental-refresh-overview.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
 The initial report load of large datasets can take a long time if it has been a while since the last time the dataset was used. A loading bar for longer-loading reports displays the load progress.
 
@@ -222,7 +222,7 @@ While the per-query memory and time constraints are much higher in Premium capac
 
 ## Incremental refresh
 
-Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied in the service. To learn more, see [Incremental refresh for datasets](../../connect-data/incremental-refresh-overview.md).
+Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied in the service. To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ## Paginated reports
 
@@ -234,19 +234,19 @@ In Power BI Premium, Paginated reports are a workload that must be enabled for a
 
 Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses.
 
-To learn more, see [Premium features unique to Dataflows](../../transform-model/dataflows/dataflows-premium-features.md).
+To learn more, see [Premium features unique to Dataflows](../transform-model/dataflows/dataflows-premium-features.md).
 
 ## Deployment Pipelines
 
 The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, and datasets.
 
-To learn more, see [Introduction to Deployment Pipelines](../../create-reports/deployment-pipelines-overview.md).
+To learn more, see [Introduction to Deployment Pipelines](../create-reports/deployment-pipelines-overview.md).
 
 ## Power BI Report Server
  
 Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization's firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
 
-To learn more, see [Power BI Report Server](../../report-server/get-started.md).
+To learn more, see [Power BI Report Server](../report-server/get-started.md).
 
 ## Unlimited content sharing
 

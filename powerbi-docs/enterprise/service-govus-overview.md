@@ -127,7 +127,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
-|[Azure B2B collaboration between government and commercial cloud](../admin/service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)
+|[Azure B2B collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| ![Image of "Available" button.](../media/yes.png)|
 |[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|

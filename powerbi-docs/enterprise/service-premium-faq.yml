@@ -103,11 +103,11 @@ sections:
       - question: |
           What is Power BI Report Server? Does this mean you're making Power BI available on-premises?
         answer: |
-          Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization's firewall. Power BI Report Server is available through Power BI Premium or as a benefit for customers with SQL Server Enterprise Edition with Software Assurance. For information about licensing, see [Licensing Power BI Report Server](../../report-server/get-started.md#licensing-power-bi-report-server). Contact your Microsoft representative for details.
+          Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization's firewall. Power BI Report Server is available through Power BI Premium or as a benefit for customers with SQL Server Enterprise Edition with Software Assurance. For information about licensing, see [Licensing Power BI Report Server](../report-server/get-started.md#licensing-power-bi-report-server). Contact your Microsoft representative for details.
           
           With Power BI Premium, the same number of virtual cores an organization provisions in the cloud can also be deployed on-premises through Power BI Report Server. There is no need to split the capacity. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
           
-          For more information, see [Get started with Power BI Report Server](../../report-server/get-started.md).
+          For more information, see [Get started with Power BI Report Server](../report-server/get-started.md).
           
           
 
@@ -122,7 +122,7 @@ additionalContent: |
   * [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
   * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
   * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
-  * [Extended Pro Trial activation](../../fundamentals/service-self-service-signup-for-power-bi.md)
-  * [Power BI Embedded FAQ](../../developer/embedded/embedded-faq.yml)
+  * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
+  * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
           
   More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

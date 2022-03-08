@@ -49,7 +49,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 **PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks like refresh operations. XMLA read-write is required. Version **21.1.18256** (for Premium Gen2 capacities, see [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites)) or higher of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) is required. Azure Analysis Services cmdlets in the Az.AnalysisServices module are not supported for Power BI datasets. To learn more, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true).
 
-**Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies what data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. XMLA read-only is required. To learn more, see [Power BI Report Builder](../../paginated-reports/report-builder-power-bi.md).
+**Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies what data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. XMLA read-only is required. To learn more, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 **Tabular Editor** - An open-source tool for creating, maintaining, and managing tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Objects are organized by display folders with support for multi-select property editing and DAX syntax highlighting. XMLA read-only is required for query operations. Read-write is required for metadata operations. To learn more, see [tabulareditor.github.io](https://tabulareditor.github.io/).
 
@@ -124,7 +124,7 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 ### Duplicate workspace names
 
-[New workspaces](../../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
+[New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
 **Cannot connect to `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.**
 
@@ -145,7 +145,7 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 The following datasets aren't accessible by the XMLA endpoint. These datasets won't appear under the workspace in SSMS or in other tools:
 
 - Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
-- Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../../connect-data/service-datasets-across-workspaces.md).
+- Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets.
 
@@ -178,7 +178,7 @@ Workspace contributors and above have write access to the dataset and are theref
 
 Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property are not supported in Premium workspaces at this time.
 
-Other users who have [Build permission](../../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
+Other users who have [Build permission](../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
 
 ### Model roles
 
@@ -252,9 +252,9 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 
 ## Dataset refresh
 
-The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
+The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
 
-Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
 
@@ -268,7 +268,7 @@ Analysis Services [DMVs](/analysis-services/instances/use-dynamic-management-vie
 
 ### Enhanced metadata
 
-XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace require enhanced metadata. To learn more, see [Enhanced dataset metadata](../../connect-data/desktop-enhanced-dataset-metadata.md).
+XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace require enhanced metadata. To learn more, see [Enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md).
 
 > [!CAUTION]
 > At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain your original PBIX file.
@@ -303,7 +303,7 @@ When applications connect to a workspace, access through XMLA endpoints is logge
 |Edited Power BI dataset from an external application     |  EditDatasetFromExternalApplication        |
 |Deleted Power BI dataset from an external application      |  DeleteDatasetFromExternalApplication        |
 
-To learn more, see [Auditing Power BI](../../admin/service-admin-auditing.md).
+To learn more, see [Auditing Power BI](../admin/service-admin-auditing.md).
 
 ## See also
 

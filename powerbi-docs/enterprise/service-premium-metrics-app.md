@@ -23,7 +23,7 @@ You can use the **Power BI Premium Metrics app** to manage the health and capaci
 The following sections describe the landing page, and the three metrics report pages, in detail. 
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
@@ -342,8 +342,8 @@ To diagnose scenario two, first determine whether throttling is due to running i
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-* [Extended Pro Trial activation](../../fundamentals/service-self-service-signup-for-power-bi.md)
-* [Power BI Embedded FAQ](../../developer/embedded/embedded-faq.yml)
+* [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
+* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

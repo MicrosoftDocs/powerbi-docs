@@ -24,7 +24,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
-* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../../connect-data/desktop-use-directquery.md) or [live connection](../../connect-data/desktop-directquery-about.md#live-connections).
+* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
 * DLP policies for Power BI are not supported in sovereign clouds.
 
 ## Licensing and permissions

@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
-Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more, see [Embedding Power BI content with service principals](../../developer/embedded/embed-service-principal.md).
+Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more, see [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
 
 In **Power BI Premium**, service principals can also be used with the [XMLA endpoint](service-premium-connect-tools.md) to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
 
@@ -24,9 +24,9 @@ In **Power BI Premium**, service principals can also be used with the [XMLA endp
 - Azure Logic Apps
 - Custom client applications
 
-Only [New workspaces](../../collaborate-share/service-new-workspaces.md) support XMLA endpoint connections using service principals. Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces that it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+Only [New workspaces](../collaborate-share/service-new-workspaces.md) support XMLA endpoint connections using service principals. Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces that it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
 
-To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
+To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
 ## Create a service principal
 

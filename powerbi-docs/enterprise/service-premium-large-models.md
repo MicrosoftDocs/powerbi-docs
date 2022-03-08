@@ -30,7 +30,7 @@ Large datasets in the service do not affect the Power BI Desktop model upload si
 
 Steps here describe enabling large datasets for a new model published to the service. For existing datasets, only step 3 is necessary.
 
-1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../../connect-data/incremental-refresh-overview.md).
+1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 
 1. Publish the model as a dataset to the service.
 
@@ -134,9 +134,9 @@ For datasets using the large dataset storage format, Power BI automatically sets
 
 Keep in mind the following restrictions when using large datasets:
 
-- **New workspaces are required**: Large datasets only work with [New workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
+- **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
-- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../../create-reports/service-export-to-pbix.md) file will fail.
+- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
@@ -195,7 +195,7 @@ The following links provide information that can be useful for working with larg
 > [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 
 > [!div class="nextstepaction"]
-> [Configure Multi-Geo support for Power BI Premium](../../admin/service-admin-premium-multi-geo.md)
+> [Configure Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md)
 
 > [!div class="nextstepaction"]
 > [Bring your own encryption keys for Power BI](service-encryption-byok.md)
@@ -204,7 +204,7 @@ The following links provide information that can be useful for working with larg
 > [How capacities function](service-premium-what-is.md#how-capacities-function)
 
 > [!div class="nextstepaction"]
-> [Incremental refresh for datasets](../../connect-data/incremental-refresh-overview.md)
+> [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

@@ -432,7 +432,7 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
 * The app only displays memory measurements and performance breakdown for datasets.
 
-* The app only supports monitoring datasets that use [import mode](../../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
+* The app only supports monitoring datasets that use [import mode](../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
 
 * The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
 

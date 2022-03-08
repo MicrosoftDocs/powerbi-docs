@@ -25,9 +25,9 @@ If your organization is using the previous version of Power BI Premium, you're r
 
 ## Premium Gen2 prerequisites
 
-Power BI Premium Gen2 and [Embedded Gen2](../../developer/embedded/power-bi-embedded-generation-2.md) support open-platform connectivity from Microsoft and third-party client applications and tools by using XMLA endpoints.
+Power BI Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) support open-platform connectivity from Microsoft and third-party client applications and tools by using XMLA endpoints.
 
-The article [Dataset connectivity with the XMLA endpoint](../../admin/service-premium-connect-tools.md) lists the minimum requirements for Power BI Premium, Premium Per User (PPU) and Embedded connectivity. In addition to these requirements, for dataset connectivity in Premium Gen2, you need to have the following:
+The article [Dataset connectivity with the XMLA endpoint](../admin/service-premium-connect-tools.md) lists the minimum requirements for Power BI Premium, Premium Per User (PPU) and Embedded connectivity. In addition to these requirements, for dataset connectivity in Premium Gen2, you need to have the following:
 
 * **Microsoft Excel** - Version **16.0.13612.10000** or higher
 

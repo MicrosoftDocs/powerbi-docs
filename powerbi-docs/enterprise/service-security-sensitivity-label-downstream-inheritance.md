@@ -17,7 +17,7 @@ When a sensitivity label is applied to a dataset or report in the Power BI servi
 
 Downstream inheritance is a critical link in Power BI’s end-to-end information protection solution. Together with [inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md), [inheritance upon creation of new content](service-security-sensitivity-label-overview.md#sensitivity-label-inheritance-upon-creation-of-new-content), [inheritance upon export to file](service-security-sensitivity-label-overview.md#sensitivity-labels-and-protection-on-exported-data), and other capabilities for applying sensitivity labels, downstream inheritance helps ensure that sensitive data remains protected throughout its journey through Power BI, from data source to point of consumption. 
 
-Downstream inheritance is illustrated below using [lineage view](../../collaborate-share/service-data-lineage.md). When a label is applied to the dataset “Customer profitability”, that label filters down and also gets applied to the dataset’s downstream content – the reports that are built using that dataset, and, in this case, a dashboard that is built from visuals from one of those reports.
+Downstream inheritance is illustrated below using [lineage view](../collaborate-share/service-data-lineage.md). When a label is applied to the dataset “Customer profitability”, that label filters down and also gets applied to the dataset’s downstream content – the reports that are built using that dataset, and, in this case, a dashboard that is built from visuals from one of those reports.
 
 ![Screenshot of lineage view illustrating downstream inheritance.](media/service-security-sensitivity-label-downstream-inheritance/downstream-inheritance-lineage-view.png)
 
