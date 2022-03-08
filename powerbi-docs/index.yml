@@ -249,7 +249,7 @@ conceptualContent:
           text: Use the Gen2 metrics app
       # footerLink (optional)
       footerLink:
-        url: enterprise/enterprise/index.yml
+        url: enterprise/index.yml
         text: See more
     # Card
     - title: Power BI in the mobile apps

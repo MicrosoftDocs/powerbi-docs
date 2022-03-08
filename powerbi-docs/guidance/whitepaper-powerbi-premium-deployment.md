@@ -20,7 +20,7 @@ We have retired the Power BI Premium whitepaper in favor of providing up-to-date
 |-----|----|
 | [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)</br>[Datasets in the Power BI service](../connect-data/service-datasets-understand.md)</br>[Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) | Background information about Power BI service capacities, workspaces,   dashboards, reports, workbooks, datasets, and dataflows. |
 | [What is Power BI Premium?](../enterprise/service-premium-what-is.md) | An overview of Power BI Premium, covering the basics of reserved capacities, supported workloads, unlimited content sharing, and other features.  |
-| [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md)</br>[Configure and manage capacities in Power BI Premium](../admin/service-admin-premium-manage.md)
+| [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md)</br>[Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md)
 </br>[Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md) | Detailed information about configuring and managing capacities and workloads. |
 | [Optimizing Premium capacities](../enterprise/service-premium-capacity-optimize.md) | Best practices for performance optimization, optimizing models, capacity   planning, and testing approaches. |
 | [Premium capacity scenarios](../enterprise/service-premium-capacity-scenarios.md) | Common issues in real-world scenarios, with a focus on identifying and   resolving those issues. |
