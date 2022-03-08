@@ -166,9 +166,9 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-## GET /refreshes/\<refreshId\>
+## GET /refreshes/\<requestId\>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **refreshId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **requestId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
@@ -193,9 +193,9 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 
 ```
 
-## DELETE /refreshes/\<refreshId\>
+## DELETE /refreshes/\<requestId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `refreshId`.
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `requestId`.
 
 For example,
 
@@ -207,9 +207,9 @@ DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a
 
 #### Non-asynchronous refresh operations
 
-Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<refreshId>`.
+Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<requestId>`.
 
-Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<refreshId>`.
+Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<requestId>`.
 
 Get Details and Cancel are new operations for asynchronous refresh only. They are not supported for non-asynchronous refresh operations.
 

@@ -148,4 +148,4 @@ If a release is planned for an environment, we include the quarter of estimated 
 * Article: [Sign up for Power BI for US government](service-govus-signup.md)
 * Article: [Microsoft Power Apps US Government](/power-platform/admin/powerapps-us-government)
 * Article: [Power Automate US Government](/power-automate/us-govt)
-* Video: [Power BI US Government](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government) demo
+* Video: [Power BI US Government](/shows/azure/cognitive-services-hdinsight-power-bi-on-azure-government) demo
