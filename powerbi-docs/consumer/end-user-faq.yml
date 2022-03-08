@@ -109,7 +109,7 @@ sections:
           
           * This [Power BI Security](../guidance/whitepaper-powerbi-security.md) white paper
           
-          * This [Power BI security support](../admin/service-admin-power-bi-security.md) article
+          * This [Power BI security support](../enterprise/service-admin-power-bi-security.md) article
           
       - question: |
          How do I undo in Power BI?
