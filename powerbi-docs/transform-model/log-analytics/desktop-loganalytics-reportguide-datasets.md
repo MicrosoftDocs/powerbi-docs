@@ -1,8 +1,8 @@
 ---
 title: Using the Log Analytics for Power BI Datasets Template App (preview)
 description: Usage guide for the Template App that visualizes Dataset activity from Analysis Services
-author: Bhavik-MSFT
-ms.author: bhmerc
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -454,6 +454,6 @@ The following articles provide more information about Power BI and its many feat
 * [Install Log Analytics Template App](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 
 

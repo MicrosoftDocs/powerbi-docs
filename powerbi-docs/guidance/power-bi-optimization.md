@@ -35,7 +35,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your dataset enforces dynamic [row-level security (RLS)](../admin/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your dataset enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
 When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
 
@@ -70,7 +70,7 @@ Be sure to put each custom visual through its paces to ensure high performance. 
 
 Power BI paginated report designs can be optimized by applying best practice design to the report's data retrieval. For more information, see [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md).
 
-Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../admin/service-admin-premium-workloads.md#paginated-reports).
+Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../enterprise/service-admin-premium-workloads.md#paginated-reports).
 
 ## Optimizing the environment
 
@@ -78,7 +78,7 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md).
+When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../enterprise/service-premium-capacity-optimize.md).
 
 ### Gateway sizing
 

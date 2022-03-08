@@ -18,7 +18,7 @@ This article provides information about key dates for migrating Power BI Embedde
 Over the last several months, we've been working to make many improvements to Power BI Embedded. Changes include updates to performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Embedded, referred to as Power BI Embedded Gen2, has officially moved from preview to general availability as of October 4, 2021.
 
 If your organization is using the previous version of Power BI Embedded, you'll soon be required to migrate capacities to the modern Gen2 platform.
-The key dates related to the move are the same as [the dates for Power BI Premium](../../admin/service-premium-transition-gen1-to-gen2.md).
+The key dates related to the move are the same as [the dates for Power BI Premium](../../enterprise/service-premium-transition-gen1-to-gen2.md).
 
 ## Self-migration to Embedded Generation 2
 
@@ -32,7 +32,7 @@ Customers using Power BI Embedded Gen2 in preview don't need to take any action 
 
 ## Migration timeline summary
 
-If you're currently using the previous version of Power BI Embedded, you're required to migrate capacities to the newer Gen2 platform. The key dates for you to be aware of are [the same as those for Power BI Premium](../../admin/service-premium-transition-gen1-to-gen2.md).
+If you're currently using the previous version of Power BI Embedded, you're required to migrate capacities to the newer Gen2 platform. The key dates for you to be aware of are [the same as those for Power BI Premium](../../enterprise/service-premium-transition-gen1-to-gen2.md).
 
 ## Next steps
 

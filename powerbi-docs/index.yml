@@ -41,7 +41,7 @@ highlightedContent:
     # Card
     - title: Protect sensitive data with data loss prevention policies
       itemType: concept
-      url: admin/service-security-dlp-policies-for-power-bi.md
+      url: enterprise/service-security-dlp-policies-for-power-bi.md
     # Card
     - title: Get your data on the go with Power BI mobile apps
       itemType: learn
@@ -94,18 +94,18 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: admin/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-gen2-what-is.md
           itemType: overview
           text: What is Power BI Premium Gen2?
-        - url: admin/service-admin-power-bi-security.md
+        - url: enterprise/service-admin-power-bi-security.md
           itemType: concept
           text: Security
-        - url: admin/service-security-data-protection-overview.md
+        - url: enterprise/service-security-data-protection-overview.md
           itemType: concept
           text: Data protection
       # footerLink (optional)
       footerLink:
-        url: admin/enterprise/index.yml
+        url: enterprise/index.yml
         text: See more        
     # Card
     - title: Administer Power BI
@@ -121,7 +121,7 @@ conceptualContent:
           text: admin/Use the same account for Power BI and Azure
       # footerLink (optional)
       footerLink:
-        url: admin/administration/index.yml
+        url: admin/index.yml
         text: See more
     # Card
     - title: Develop in Power BI
@@ -238,18 +238,18 @@ conceptualContent:
     # Card
     - title: Power BI Premium Gen2
       links:
-        - url: admin/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-gen2-what-is.md
           itemType: overview
           text: What is Power BI Premium Gen2?
-        - url: admin/service-premium-concepts.md
+        - url: enterprise/service-premium-concepts.md
           itemType: concept
           text: Understanding Power BI Premium Gen2
-        - url: admin/service-premium-gen2-metrics-app.md
+        - url: enterprise/service-premium-gen2-metrics-app.md
           itemType: concept
           text: Use the Gen2 metrics app
       # footerLink (optional)
       footerLink:
-        url: admin/enterprise/index.yml
+        url: enterprise/enterprise/index.yml
         text: See more
     # Card
     - title: Power BI in the mobile apps
