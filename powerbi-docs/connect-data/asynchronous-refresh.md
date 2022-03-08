@@ -102,7 +102,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 202 Accepted
 ```
 
-The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`, which is required for some asynchronous refresh operations. For example, in the following response, `refreshId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `requestId`, which is required for some asynchronous refresh operations. For example, in the following response, `requestId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
 
 ```json
 x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
