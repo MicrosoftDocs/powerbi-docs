@@ -26,7 +26,7 @@ Power BI is constantly improving in how it protects Premium capacity users again
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 capacities do not require restarts, so this feature is not available in Premium Gen2.
 >
-> **Embedded Gen2** capacities also don't require restart. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../../developer/embedded/power-bi-embedded-generation-2.md).
+> **Embedded Gen2** capacities also don't require restart. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 > [!NOTE]
 > This process and functionality does not apply to Power BI Premium Per User (PPU) capacities or activities.

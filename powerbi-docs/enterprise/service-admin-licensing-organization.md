@@ -18,7 +18,7 @@ What a user can do in the Power BI service depends on the type of per-user licen
 
 There are two ways for users to get a license. Using self-service sign-up capabilities and their work or school account, users can get their own free, Pro, or Premium Per User license. Or, admins can get a Power BI license subscription and assign licenses to users.
 
-This article focuses on purchasing services and per-user licensing from an administrator perspective. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../../fundamentals/service-self-service-signup-for-power-bi.md).
+This article focuses on purchasing services and per-user licensing from an administrator perspective. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## Who can purchase and assign licenses?
 
@@ -30,7 +30,7 @@ You must be assigned an admin role to purchase or assign licenses for your organ
 | Global administrator | User administrator |
 |  | Global administrator |
 
-These roles manage the organization. For information about Power BI service administrator roles, see [Understanding Power BI service administrator roles](../../admin/service-admin-role.md).
+These roles manage the organization. For information about Power BI service administrator roles, see [Understanding Power BI service administrator roles](../admin/service-admin-role.md).
 
 ## Get Power BI for your organization
 
@@ -63,11 +63,11 @@ If you want to see which users in your organization might already have a license
 
 There are three kinds of Power BI per-user licenses: Free, Pro, and Premium Per User. Which type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where content can be stored is determined by your organization's [subscription license type](#subscription-license-types).
 
-One type of organizational subscription, [Power BI Premium](../../admin/service-admin-premium-purchase.md), is a capacity-based license. Using Premium allows users with a free license to act on content in workspaces that are assigned to Premium capacity. Outside of Premium capacity, a user with a free license can only use the Power BI service to connect to data and create reports and dashboards in **My Workspace**. They can't share content with others or publish content to other workspaces. To learn more about workspace types, see [Types of workspaces](../../consumer/end-user-workspaces.md#types-of-workspaces).
+One type of organizational subscription, [Power BI Premium](../admin/service-admin-premium-purchase.md), is a capacity-based license. Using Premium allows users with a free license to act on content in workspaces that are assigned to Premium capacity. Outside of Premium capacity, a user with a free license can only use the Power BI service to connect to data and create reports and dashboards in **My Workspace**. They can't share content with others or publish content to other workspaces. To learn more about workspace types, see [Types of workspaces](../consumer/end-user-workspaces.md#types-of-workspaces).
 
 A Power BI organization with only free and Pro per-user licenses uses a shared and limited capacity to process content. If content is stored in that shared capacity, users who are assigned a Power BI Pro license can collaborate only with other Power BI Pro users. They can consume content shared by other users, publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.  When workspaces are in Premium capacity, Pro users may distribute content to users who don't have a Power BI Pro license.
 
-Content created by a user who is assigned a Premium Per User license can only be shared with other users that have a Premium Per User license, unless that content is specifically put on a workspace hosted on a Premium capacity. The table below summarizes the basic capabilities of each license type. For a detailed breakdown of feature availability per license type, see [Features by license type](../../fundamentals/service-features-license-type.md).
+Content created by a user who is assigned a Premium Per User license can only be shared with other users that have a Premium Per User license, unless that content is specifically put on a workspace hosted on a Premium capacity. The table below summarizes the basic capabilities of each license type. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 
 | License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
 | --------- | ----------- | ----------- |
@@ -85,7 +85,7 @@ With a standard, self-service Power BI subscription, admins assign per user lice
 
 A Power BI Premium subscription license allocates a capacity to an organization. Suitable for enterprise BI, big data analytics, and cloud and on-premises reporting, Premium provides advanced administration and deployment controls. Reserved compute and storage resources are managed by capacity admins in your organization. There's a monthly cost for this reserved environment. In addition to other Premium advantages, content stored in Premium capacity can be accessed by and distributed to users who don't have Power BI Pro licenses. At least one user has to have a Power BI Pro license assigned to use Premium, and content creators and developers still need a Power BI Pro license.
 
-The two types of subscriptions aren't mutually exclusive. You can have both Power BI Premium and standard. In this configuration, content stored in Premium capacity can be shared with all users and shared capacity is also available. For information about capacity limits, see [Manage data storage in Power BI workspaces](../../admin/service-admin-manage-your-data-storage-in-power-bi.md).
+The two types of subscriptions aren't mutually exclusive. You can have both Power BI Premium and standard. In this configuration, content stored in Premium capacity can be shared with all users and shared capacity is also available. For information about capacity limits, see [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
 
 >[!NOTE]
 >Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
@@ -126,6 +126,6 @@ Power BI Pro has the same license lifecycle as Microsoft 365. For more informati
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
 - [Business subscriptions and billing documentation](/microsoft-365/commerce/)
-- [Find Power BI users that have signed in](../../admin/service-admin-access-usage.md)
+- [Find Power BI users that have signed in](../admin/service-admin-access-usage.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

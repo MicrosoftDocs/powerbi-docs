@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the **Power BI Premium Capacity Metrics** app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For a higher level overview of average use metrics over the last seven days, you can use the Admin portal. To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
 
-The app is updated regularly with new features and functionality. Make sure you're running the latest version. When a new version becomes available, you will receive [notification](../../connect-data/service-template-apps-install-distribute.md#update-a-template-app).
+The app is updated regularly with new features and functionality. Make sure you're running the latest version. When a new version becomes available, you will receive [notification](../connect-data/service-template-apps-install-distribute.md#update-a-template-app).
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
@@ -23,14 +23,14 @@ The app is updated regularly with new features and functionality. Make sure you'
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
->To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../../developer/embedded/power-bi-embedded-generation-2.md).
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 > [!NOTE]
 > The metrics app cannot be used to monitor Premium Per User (PPU) activities or capacity.
 
 ## Install the app
 
-Go to [Connect to Power BI Premium Capacity Metrics](../../connect-data/service-connect-to-pbi-premium-capacity-metrics.md) to see how to install the app and connect to data. Alternatively, you can [go straight to the app](https://go.microsoft.com/fwlink/?linkid=2114036).
+Go to [Connect to Power BI Premium Capacity Metrics](../connect-data/service-connect-to-pbi-premium-capacity-metrics.md) to see how to install the app and connect to data. Alternatively, you can [go straight to the app](https://go.microsoft.com/fwlink/?linkid=2114036).
 
 ## Get app refresh history
 

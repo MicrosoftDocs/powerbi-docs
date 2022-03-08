@@ -46,7 +46,7 @@ If your partner doesn't offer Power BI and you can't buy directly from Microsoft
 
 ## Sign up for a free trial
 
-You can sign up for a free trial of Power BI Premium Per User. If you don't purchase Power BI at the end of the trial period, your license returns to the version you had prior to starting the trial. You still have a Pro or free license that offers many of the features of Power BI. For more information, see [Sign up for Power BI as an individual](../../fundamentals/service-self-service-signup-for-power-bi.md).
+You can sign up for a free trial of Power BI Premium Per User. If you don't purchase Power BI at the end of the trial period, your license returns to the version you had prior to starting the trial. You still have a Pro or free license that offers many of the features of Power BI. For more information, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ### Enable ad-hoc subscriptions
 

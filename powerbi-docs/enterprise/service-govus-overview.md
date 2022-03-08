@@ -48,7 +48,7 @@ After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To
 > 
 > If you've purchased Power BI Premium, you don't have to assign Pro licenses to allow users to consume content.  Users in the organization can view reports that are shared with them, as long as the reports are published to a Premium capacity. Content creators still need to be assigned a Pro license.
 > 
-> To review the differences between license types, see [Power BI service features by license type](../../fundamentals/service-features-license-type.md).
+> To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
 >
 
 ## Sign in to Power BI for US government
@@ -74,7 +74,7 @@ The following table lists the required endpoints to add to your allowlist to ena
 
 The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. 
 
-To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](../../admin/power-bi-allow-list-urls.md).
+To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](../admin/power-bi-allow-list-urls.md).
 
 Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also have to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see "Microsoft 365 integration" in the following table:
 
@@ -119,25 +119,25 @@ The following table lists features that aren't yet available in a particular gov
 
 | Key | Description |
 |-----|------|
-|![Image of an "Available" button, a checkmark indicating that the listed item is available.](../../media/yes.png)|The feature is available in the environment, and any exceptions are defined in footnotes.|
-|![Image of a "Not available" button, an "x" sign indicating that the listed item is not available.](../../media/no.png)| The feature isn't available in the environment, and we don't have an estimated time frame for delivery.|
+|![Image of an "Available" button, a checkmark indicating that the listed item is available.](../media/yes.png)|The feature is available in the environment, and any exceptions are defined in footnotes.|
+|![Image of a "Not available" button, an "x" sign indicating that the listed item is not available.](../media/no.png)| The feature isn't available in the environment, and we don't have an estimated time frame for delivery.|
 | | |
 
 If a release is planned for an environment, we include the quarter of estimated availability.
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
-|[Azure B2B collaboration between government and commercial cloud](../../admin/service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../../media/yes.png)
-|[Template apps](../../connect-data/service-template-apps-overview.md)<sup>2</sup>|![Image of "Available" button.](../../media/yes.png) |![Image of "Available" button.](../../media/yes.png)| ![Image of "Available" button.](../../media/yes.png)|
-|[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../../media/yes.png)|![Image of "Available" button.](../../media/yes.png)|![Image of "Not available" button.](../../media/no.png)|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../../media/yes.png)|![Image of "Available" button.](../../media/yes.png) |![Image of "Available" button.](../../media/yes.png)|
-|[Dataflows - Direct Query](../../transform-model/dataflows/dataflows-configure-consume.md) | ![Image of "Available" button.](../../media/yes.png) |![Image of "Available" button.](../../media/yes.png)|Not planned |
-|[Dataflows - SQL Compute engine optimization](../../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../../media/yes.png) |![Image of "Available" button.](../../media/yes.png)|Not planned |
-|[Power BI tab in Teams](../../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../../media/yes.png)|![Image of "Not available" button.](../../media/no.png)|![Image of "Not available" button.](../../media/no.png)|
-|[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../../media/yes.png) |![Image of "Available" button.](../../media/yes.png)| Not planned |
+|[Azure B2B collaboration between government and commercial cloud](../admin/service-admin-azure-ad-b2b.md)<sup>1</sup>|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)
+|[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| ![Image of "Available" button.](../media/yes.png)|
+|[Embed in SharePoint Online by using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|
+|[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
+|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
+|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
+|[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H1|CY2022-H1|CY2022-H1|
-|[Bring your own storage (Azure Data Lake Gen 2)](../../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../../media/no.png)|![Image of "Available" button.](../../media/yes.png)|![Image of "Available" button.](../../media/yes.png)|
-|[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../../media/no.png) |![Image of "Not available" button.](../../media/no.png) |![Image of "Not available" button.](../../media/no.png) |
+|[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
+|[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 

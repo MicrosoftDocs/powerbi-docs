@@ -60,6 +60,6 @@ To understand how your end users can use the Power BI app on their device, revie
 
 [How to create and assign app protection policies](/intune/app-protection-policies) 
 
-[Power BI apps for mobile devices](../../consumer/mobile/mobile-apps-for-mobile-devices.md)  
+[Power BI apps for mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

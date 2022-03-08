@@ -28,7 +28,7 @@ You can also perform offline backups, downloading the files from your ADLS Gen2 
 
 :::image type="content" source="media/service-premium-backup-restore-datasets/premium-backup-restore-datasets-02.png" alt-text="Screenshot of Azure Storage Explorer with backups":::
 
-To learn how to configure Power BI to use an ADLS Gen2 storage account, see [configuring dataflow storage to use Azure Data Lake Gen 2](../../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
+To learn how to configure Power BI to use an ADLS Gen2 storage account, see [configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ### Multi-geo considerations
 
@@ -94,6 +94,6 @@ For example:
 * [Power BI Premium FAQ](service-premium-faq.yml)
 * [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
-* [Configuring tenant and workspace storage](../../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
+* [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

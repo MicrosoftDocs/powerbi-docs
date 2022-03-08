@@ -13,7 +13,7 @@ LocalizationGroup: Administration
 
 # Power BI Security
 
-For a detailed explanation of Power BI security, [read the Power BI Security whitepaper](../../guidance/whitepaper-powerbi-security.md).
+For a detailed explanation of Power BI security, [read the Power BI Security whitepaper](../guidance/whitepaper-powerbi-security.md).
 
 The Power BI service is built on **Azure**, which is Microsoft’s cloud computing infrastructure and platform. The Power BI service architecture is based on two clusters – the Web Front End (**WFE**) cluster and the **Back-End** cluster. The WFE cluster manages the initial connection and authentication to the Power BI service, and once authenticated, the Back-End handles all subsequent user interactions. Power BI uses Azure Active Directory (AAD) to store and manage user identities, and manages the storage of data and metadata using Azure BLOB and Azure SQL Database, respectively.
 
@@ -52,7 +52,7 @@ For more information, please visit the [Microsoft Trust Center](https://www.micr
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using their credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
-An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](../../connect-data/service-gateway-onprem-indepth.md).
+An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](../connect-data/service-gateway-onprem-indepth.md).
 
 ## Enforcing TLS version usage
 

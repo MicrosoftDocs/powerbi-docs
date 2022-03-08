@@ -13,12 +13,12 @@ LocalizationGroup: Premium
 
 # Configure workloads in a Premium capacity
 
-This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../../transform-model/dataflows/dataflows-machine-learning-integration.md)**, **[Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md)**, and **[Paginated reports](../../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)**, **[Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 > [!NOTE]
 > * Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 >
->* To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../../developer/embedded/power-bi-embedded-generation-2.md).
+>* To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 >
 > * You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
@@ -51,7 +51,7 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that AI processes can use in a capacity. |
 | **Allow usage from Power BI Desktop** | This setting is reserved for future use and does not appear in all tenants. |
-| **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../../transform-model/dataflows/dataflows-machine-learning-integration.md). |
+| **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md). |
 | **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
 |  |  |
 
@@ -220,15 +220,15 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 
 ## Next steps
 
 [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
-[Self-service data prep in Power BI with Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md)
-[What are paginated reports in Power BI Premium?](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
-[Automatic page refresh in Power BI Desktop (preview)](../../create-reports/desktop-automatic-page-refresh.md)
+[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
+[What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 

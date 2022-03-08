@@ -49,7 +49,7 @@ Capacity size is selected from an available list of SKU options, which is constr
 
 ![An example setup for the fictitious Contoso organization](media/service-premium-capacity-manage/contoso-organization-example.png)
 
-A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, known as multi-geo. Multi-geo provides administrative control over which datacenters within defined geographic regions your Power BI content resides. The rationale for a multi-geo deployment is typically for corporate or government compliance, rather than performance and scale. Report and dashboard loading still involves requests to the home region for metadata. To learn more, see [Multi-Geo support for Power BI Premium](../../admin/service-admin-premium-multi-geo.md).
+A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, known as multi-geo. Multi-geo provides administrative control over which datacenters within defined geographic regions your Power BI content resides. The rationale for a multi-geo deployment is typically for corporate or government compliance, rather than performance and scale. Report and dashboard loading still involves requests to the home region for metadata. To learn more, see [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md).
 
 Power BI service administrators and Global Administrators can modify Premium capacities. Specifically, they can:
 

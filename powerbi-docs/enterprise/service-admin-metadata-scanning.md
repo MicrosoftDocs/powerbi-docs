@@ -22,7 +22,7 @@ The following are the scanner APIs. They support both public and sovereign cloud
 * [WorkspaceScanStatus](/rest/api/power-bi/admin/workspace-info-get-scan-status)
 * [WorkspaceScanResult](/rest/api/power-bi/admin/workspace-info-get-scan-result)
 
-Before metadata scanning can be run, a Power BI admin needs to set it up. See [Setting up metadata scanning in an organization](../../admin/service-admin-metadata-scanning-setup.md).
+Before metadata scanning can be run, a Power BI admin needs to set it up. See [Setting up metadata scanning in an organization](../admin/service-admin-metadata-scanning-setup.md).
 
 ## Run metadata scanning
 
@@ -41,7 +41,7 @@ Call [workspaces/getInfo](/rest/api/power-bi/admin/workspace-info-post-workspace
 >[!NOTE]
 > Not more than 16 calls can be made simultaneously. The caller should wait for a scan succeed/failed response from the scanStatus API before invoking another call.
 >
-> If some metadata you expected to receive is not returned, check with your Power BI admin to make sure they have [enabled all relevant admin switches](../../admin/service-admin-metadata-scanning-setup.md).
+> If some metadata you expected to receive is not returned, check with your Power BI admin to make sure they have [enabled all relevant admin switches](../admin/service-admin-metadata-scanning-setup.md).
 
 Use the URI from the location header you received from calling workspaces/getInfo and poll on [workspaces/scanStatus/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-status) until the status returned is "Succeeded". This means the scan result is ready. It is recommended to use a polling interval of 30-60 seconds. In the location header, you’ll also receive the URI to call in the next step. Use it only once the status is "Succeeded".
 
@@ -59,7 +59,7 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 
 * Datasets that have not been refreshed or republished will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset's table and column names.
 * Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
-* [Real time datasets](../../connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), datasets with a live connection to AS-Azure and AS on-prem, and Excel full fidelity datasets are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
+* [Real time datasets](../connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), datasets with a live connection to AS-Azure and AS on-prem, and Excel full fidelity datasets are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
 * The API doesn't return sub-artifact metadata for datasets that are larger than 1GB in shared workspaces. For Premium workspaces there is no size limitation.
 
 ## Licensing
@@ -69,6 +69,6 @@ Metadata scanning requires no special license. It works for all of your tenant m
 ## Next steps
 
 * [Power BI REST Admin APIs](/rest/api/power-bi/admin)
-* [Set up metadata scanning](../../admin/service-admin-metadata-scanning-setup.md)
+* [Set up metadata scanning](../admin/service-admin-metadata-scanning-setup.md)
 * [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md)
 * More questions? Try asking the [Power BI Community](https://community.powerbi.com)

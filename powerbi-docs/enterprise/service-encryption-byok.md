@@ -26,8 +26,8 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Analysis Services Live Connection
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - [Push datasets](/rest/api/power-bi/pushdatasets)
-- [Streaming datasets](../../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Power BI goals](../../create-reports/service-goals-introduction.md) do not currently support bring your own key (BYOK).
+- [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+- [Power BI goals](../create-reports/service-goals-introduction.md) do not currently support bring your own key (BYOK).
 
 BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
 
@@ -227,16 +227,16 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 > [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
 > [!div class="nextstepaction"]
-> [Ways to share your work in Power BI](../../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+> [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
 > [!div class="nextstepaction"]
-> [Filter a report using query string parameters in the URL](../../collaborate-share/service-url-filters.md)
+> [Filter a report using query string parameters in the URL](../collaborate-share/service-url-filters.md)
 
 > [!div class="nextstepaction"]
-> [Embed with report web part in SharePoint Online](../../collaborate-share/service-embed-report-spo.md)
+> [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 > [!div class="nextstepaction"]
-> [Publish to Web from Power BI](../../collaborate-share/service-publish-to-web.md)
+> [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2)
