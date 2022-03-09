@@ -58,7 +58,7 @@ Information protection allows enforcing protection settings—such as encryption
 
 There are two tenant settings related to information protection. By default, both settings are disabled for the entire organization.
 
-We recommend you enable these settings when you need to handle and protect sensitive data. For more information, see [Data protection in Power BI](../admin/service-security-data-protection-overview.md).
+We recommend you enable these settings when you need to handle and protect sensitive data. For more information, see [Data protection in Power BI](../enterprise/service-security-data-protection-overview.md).
 
 ### Create workspaces
 
@@ -113,11 +113,11 @@ We recommend you assign one or more security groups. These groups can be granted
 ![Screenshot of Power B I Desktop showing the "Export data" setting.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
-> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../admin/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
+> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../enterprise/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
 
 ### Allow external guest users to edit and manage content in the organization
 
-It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
+It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 The **Allow external guest users to edit and manage content in the organization** setting is disabled by default for the entire organization. It's found in the **Export and sharing settings** group.
 

@@ -105,7 +105,7 @@ In summary, given the current capabilities of DirectQuery in Power BI, it offers
 * Data sovereignty restrictions apply.
 * The source is a multidimensional source containing measures, such as SAP BW.
 
-The details in the previous list relate to the use of Power BI alone. For more information about using large models in Power BI, see [large datasets in Power BI Premium](../admin/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
+The details in the previous list relate to the use of Power BI alone. For more information about using large models in Power BI, see [large datasets in Power BI Premium](../enterprise/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
 
 ## Implications of using DirectQuery
 
@@ -216,7 +216,7 @@ Some other general implications of using DirectQuery are as follows:
   The error that would be returned would be: "The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows."
 
   > [!NOTE]
-  > The 1 million row limit can be exceeded in Premium capacities. For more information, see [max intermediate row set count](../admin/service-admin-premium-workloads.md#max-intermediate-row-set-count).
+  > The 1 million row limit can be exceeded in Premium capacities. For more information, see [max intermediate row set count](../enterprise/service-admin-premium-workloads.md#max-intermediate-row-set-count).
 
 * **Can't change from import to DirectQuery mode:** While it's possible to switch a model from DirectQuery mode to use import mode, all the necessary data must be imported. It's also not possible to switch back, primarily because of the set of features not supported in DirectQuery mode. DirectQuery models over multidimensional sources, like SAP BW, also can't be switched from DirectQuery to import, because of the different treatment of external measures.
 

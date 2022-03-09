@@ -31,7 +31,7 @@ In a classic workspace in **Microsoft 365** you can:
 * See the group email address.
 * Delete the group.
 
-You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md) to be an admin or member of a workspace. Your app users need a Power BI Pro or Premium Per User (PPU) license, too, unless your workspace is in a Power BI Premium capacity. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
+You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md) to be an admin or member of a workspace. Your app users need a Power BI Pro or Premium Per User (PPU) license, too, unless your workspace is in a Power BI Premium capacity. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
 ## Edit a classic workspace in Power BI
 

@@ -86,7 +86,7 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
    ![Privacy levels dialog box](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   For more information about privacy settings and their implications, see [Power BI Desktop privacy levels](../admin/desktop-privacy-levels.md).
+   For more information about privacy settings and their implications, see [Power BI Desktop privacy levels](../enterprise/desktop-privacy-levels.md).
 
  9. Select **Save** to run the script. 
 

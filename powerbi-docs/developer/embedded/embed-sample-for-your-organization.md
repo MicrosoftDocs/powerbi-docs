@@ -57,9 +57,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     * One of the following licenses:
 
-        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)
+        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-        * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml)
+        * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need one of the following configurations:

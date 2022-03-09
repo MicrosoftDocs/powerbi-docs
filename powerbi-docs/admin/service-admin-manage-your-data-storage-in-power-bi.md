@@ -94,7 +94,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
    Any member in a workspace with the admin, member, or contributor role has permissions to delete datasets and reports from the workspace.
 
 ## Dataset limits
-There is a 1 GB limit per dataset that is imported into Power BI, unless the workspace is in a Power BI Premium capacity. See the [Large datasets](service-premium-what-is.md#large-datasets) section of _What is Power BI Premium?_ for details. However, if you choose to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
+There is a 1 GB limit per dataset that is imported into Power BI, unless the workspace is in a Power BI Premium capacity. See the [Large datasets](../enterprise/service-premium-what-is.md#large-datasets) section of _What is Power BI Premium?_ for details. However, if you choose to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
 
 ## What happens when you reach a limit
 When you reach the data capacity limit of what you can do, you see prompts within the service. 

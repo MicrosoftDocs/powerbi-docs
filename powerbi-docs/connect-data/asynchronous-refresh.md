@@ -238,7 +238,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If during a
 
 #### Solution: Run the asynchronous refresh operation again
 
-To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../admin/service-premium-what-is.md#how-capacities-function).
+To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../enterprise/service-premium-what-is.md#how-capacities-function).
 
 ## Code sample
 

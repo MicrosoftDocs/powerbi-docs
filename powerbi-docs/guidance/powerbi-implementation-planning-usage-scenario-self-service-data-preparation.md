@@ -118,7 +118,7 @@ The [Azure connections](../admin/service-admin-portal.md#azure-connections) sect
 > [!IMPORTANT]
 > Setting [Azure connections](../admin/service-admin-portal.md#azure-connections) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
 >
-> It's critical to set the workspace Azure connections *prior to creating any dataflows* in the workspace. The same Azure storage account is used for [Power BI dataset backups](../admin/service-premium-backup-restore-dataset.md).
+> It's critical to set the workspace Azure connections *prior to creating any dataflows* in the workspace. The same Azure storage account is used for [Power BI dataset backups](../enterprise/service-premium-backup-restore-dataset.md).
 
 ### Workspace-level storage
 

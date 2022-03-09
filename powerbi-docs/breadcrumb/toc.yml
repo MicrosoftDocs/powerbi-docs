@@ -11,8 +11,8 @@
       topicHref: /power-bi/
       items:
       - name: Administration
-        tocHref: /power-bi/admin/administration
-        topicHref: /power-bi/admin/administration/index
+        tocHref: /power-bi/admin/
+        topicHref: /power-bi/admin/index
       - name: Collaborate, share, integrate
         tocHref: /power-bi/collaborate-share/
         topicHref: /power-bi/collaborate-share/index
@@ -45,8 +45,8 @@
           tocHref: /power-bi/developer/visuals/
           topicHref: /power-bi/developer/visuals/index
       - name: Enterprise
-        tocHref: /power-bi/admin/
-        topicHref: /power-bi/admin/enterprise/index
+        tocHref: /power-bi/enterprise/
+        topicHref: /power-bi/enterprise/index
       - name: Get started
         tocHref: /power-bi/fundamentals/
         topicHref: /power-bi/fundamentals/index
