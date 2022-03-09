@@ -302,7 +302,7 @@ conceptualContent:
     # Card
     - title: Troubleshooting
       links:
-        - url: troubleshooting/known-issues/power-bi-known-issues.md
+        - url: troubleshoot/known-issues/power-bi-known-issues.md
           itemType: overview
           text: Known issues for Power BI features
         - url: admin/service-interruption-notifications.md
