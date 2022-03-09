@@ -295,7 +295,7 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
-- If your organization is using [Private Links](../admin/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
+- If your organization is using [Private Links](../enterprise/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
 
 ## Frequently asked questions
 

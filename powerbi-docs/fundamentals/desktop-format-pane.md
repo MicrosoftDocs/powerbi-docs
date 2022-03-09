@@ -98,7 +98,7 @@ Previously, you only saw some cards when you added certain fields in the build t
 
 ## Merged font settings
 
-Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and better to align with Office.
+Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and to better align with Office.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -38,7 +38,7 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 ### Power BI Premium
 
-[Power BI Premium](../../admin/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+[Power BI Premium](../../enterprise/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
 
@@ -46,23 +46,23 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
-To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article.
+To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../enterprise/service-admin-premium-workloads.md) article.
 
 To plan and test your capacity, use these links:
 
 * [Capacity planning](embedded-capacity-planning.md)
-* [Testing approaches](../../admin/service-premium-capacity-optimize.md#testing-approaches)
+* [Testing approaches](../../enterprise/service-premium-capacity-optimize.md#testing-approaches)
 
 ### Power BI Embedded SKUs
 
-Power BI Embedded is shipped with an [*a* SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded is shipped with an [*a* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### Power BI Premium SKUs
 
 Power BI premium offers two SKUs, *P* and *EM*.
 
-* [Understand the differences between the *P* and *EM* SKUs](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](../../admin/service-admin-premium-purchase.md)
+* [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
+* [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
 
 ### Which SKU should I use?
 
@@ -80,7 +80,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 >[!NOTE]
 >
->* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
+>* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
 ### Capacity considerations
@@ -112,9 +112,9 @@ The table below describes the resources and limits of each SKU.
 | P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
 | P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../admin/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-<sup>2</sup> These limits only apply to dataset workloads.
+<sup>2</sup> These limits only apply to the datasets workload.
 
 <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 

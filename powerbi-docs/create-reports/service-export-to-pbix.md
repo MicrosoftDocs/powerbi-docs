@@ -83,16 +83,16 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Usage metric reports can't be downloaded to a .pbix file.
 * You can only download the original report. You can't download a copy of a report.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
-* You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../admin/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md).
-* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../admin/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md).
+* You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
+* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 
 ### Limitations downloading a .pbix from a dataset
 
 * To download the .pbix file, you need Edit access to the report and dataset.
 * Datasets with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
-* Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
+* Datasets enabled for [large models](../enterprise/service-premium-large-models.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
-* Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
+* Datasets modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file that is larger than 1 GB isn't supported.
 
 ## Parity between Power BI Desktop and the service

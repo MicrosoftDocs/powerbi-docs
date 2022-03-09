@@ -95,7 +95,7 @@ Premium per user is a new way to license Premium features on a per user basis. A
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -173,7 +173,7 @@ The setting to **Allow users to try Power BI paid features** is enabled by defau
 > [!NOTE]
 > You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a trial license. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
 
-To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+To learn more, see [Enable or disable self-service sign-up and purchasing](../enterprise/service-admin-disable-self-service.md).
 
 ### Show a custom message before publishing reports  
 
@@ -246,7 +246,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Apply sensitivity labels from data sources to their data in Power BI (preview)
 
-When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources (preview)](service-security-sensitivity-label-inheritance-from-data-sources.md).
+When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources (preview)](../enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md).
 
 To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal.md#tenant-settings), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
 
@@ -287,7 +287,7 @@ To invite external users to your organization, a user also needs the Azure Activ
 
 ### Allow external guest users to edit and manage content in the organization
 
-Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+Azure AD B2B guest users can edit and manage content in the organization. [Learn more](../enterprise/service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow Azure Active Directory external guest users to edit and manage content in the organization.
 
@@ -610,7 +610,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). To enable dataflows in a Premium capacity, see [Configure workloads](../enterprise/service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.

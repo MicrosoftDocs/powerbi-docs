@@ -62,9 +62,9 @@ As another example, the following image shows the error message that appears whe
 
 ## Licensing
 
-R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
+R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) for more information.
+Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) for more information.
 
 The following table describes R visuals capabilities based on licensing.
 

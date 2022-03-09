@@ -279,7 +279,7 @@ Any user with read permissions for a dataset can see the entire schema (tables, 
 
 To manage which portion of the data your users can view, use one of these methods:
 
-* Row-level filtering using Power BI [row-level security (RLS)](../../admin/service-admin-rls.md).
+* Row-level filtering using Power BI [row-level security (RLS)](../../enterprise/service-admin-rls.md).
 
 * [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
 

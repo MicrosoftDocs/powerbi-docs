@@ -20,8 +20,8 @@ In some scenarios, you may want to reorder the goals in a scorecard, or make one
 
 Creating goals is a Power BI Premium feature, so you need either:
 
-- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity.
-- A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
+- A Power BI Pro license and access to a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
+- A [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml) license.
 
 You also need:
 

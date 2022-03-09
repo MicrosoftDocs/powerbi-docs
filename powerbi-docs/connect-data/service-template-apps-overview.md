@@ -40,7 +40,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
 :::row-end:::
 
  > [!NOTE] 
- > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../admin/service-govus-overview.md) for more detail.
+ > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../enterprise/service-govus-overview.md) for more detail.
 
 
 ## Process

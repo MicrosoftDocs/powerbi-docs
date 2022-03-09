@@ -25,7 +25,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 To create a subscription for yourself, you'll need either:
 
 - A Power BI Pro or Premium Per User (PPU) [license](end-user-license.md) or
-- Access to a workspace backed by a [Power BI Premium capacity](../admin/service-premium-what-is.md).
+- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal.md#email-subscriptions).
 
@@ -94,7 +94,7 @@ To see all your subscriptions across all workspaces, navigate to **My workspace*
 
 To subscribe others to a report or dashboard, you’ll need:     
 
-- a Power BI Pro or [Premium Per User (PPU) license](../admin/service-premium-per-user-faq.yml)  
+- a Power BI Pro or [Premium Per User (PPU) license](../enterprise/service-premium-per-user-faq.yml)  
 
 - the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
@@ -103,7 +103,7 @@ If the report or dashboard isn't hosted in a Premium capacity, as indicated by t
 :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
-When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
+When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
 
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and do not support subscribing group aliases.  
