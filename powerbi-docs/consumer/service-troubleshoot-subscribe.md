@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 03/02/2022
+ms.date: 03/09/2022
 LocalizationGroup: Share your work
 ---
 
@@ -85,9 +85,6 @@ I'm not receiving subscription emails each time my data refreshes.
 Subscriptions set to **After Data Refresh** for the report or dashboard will only send an email after the first scheduled refresh on that day. 
 
 ### Your data uses a live connection
-
-Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](end-user-subscribe.md#subscribe-to-paginated-reports). 
-
 For your reports with live connections, for example a live connection to Analysis Services, Power BI will check the Analysis Services instance for changes. If you have the subscription set to run after data refreshes, it will run the first time the Power BI service detects a change in your on-premises model. Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription. 
 
 
