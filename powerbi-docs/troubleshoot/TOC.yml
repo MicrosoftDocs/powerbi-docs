@@ -18,7 +18,7 @@
       href: ../admin/service-admin-health.md       
     - name: Service interruption notifications
       href: ../service-interruption-notifications.md
-      -name: Refresh
+      - name: Refresh
         expanded: false
         - name: Troubleshoot refresh scenarios
           href: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
@@ -36,7 +36,7 @@
           href: ../connect-data/refresh-troubleshooting-tile-errors.md
         - name: Troubleshoot connecting Excel to Power BI data
           href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
-        - name: Error: We couldn't find any data in your Excel workbook
+        - name: Error, We couldn't find any data in your Excel workbook
           href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
         - name: Find where data is stored
           href: ../connect-data/desktop-access-database-errors.md   

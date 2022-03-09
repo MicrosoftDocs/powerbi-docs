@@ -313,7 +313,7 @@ conceptualContent:
           text:  Power BI Pro and Power BI Premium support options
       # footerLink (optional)
       footerLink:
-        url: troubleshooting/index.yml
+        url: troubleshoot/index.yml
         text: See more        
 
 # additionalContent section (optional)
