@@ -18,29 +18,29 @@
       href: ../admin/service-admin-health.md       
     - name: Service interruption notifications
       href: ../service-interruption-notifications.md
-        -name: Troubleshoot refresh
-         expanded: false
-           - name: Troubleshoot refresh scenarios
-             href: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
-           - name: Troubleshoot unsupported data sources for refresh
-             href: ../connect-data/service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-           - name: Troubleshoot scheduled refresh in Power BI Report Server
-             href: ../report-server/scheduled-refresh-troubleshoot.md
-           - name: Troubleshoot scheduled refresh for Azure SQL databases in Power BI
-             href: ../connect-data/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md 
-           - name: Troubleshoot incremental refresh and real-time data
-             href: ../connect-data/incremental-refresh-troubleshoot.md
-        -name: Connecting data
-         expanded: false
-           - name: Troubleshoot tile errors
-             href: ../connect-data/refresh-troubleshooting-tile-errors.md
-           - name: Troubleshoot connecting Excel to Power BI data
-             href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
-           - name: Error: We couldn't find any data in your Excel workbook
-             href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-           - name: Find where data is stored
-             href: ../connect-data/desktop-access-database-errors.md   
-           - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop        
+      -name: Refresh
+        expanded: false
+        - name: Troubleshoot refresh scenarios
+          href: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
+        - name: Troubleshoot unsupported data sources for refresh
+          href: ../connect-data/service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+        - name: Troubleshoot scheduled refresh in Power BI Report Server
+          href: ../report-server/scheduled-refresh-troubleshoot.md
+        - name: Troubleshoot scheduled refresh for Azure SQL databases in Power BI
+          href: ../connect-data/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md 
+        - name: Troubleshoot incremental refresh and real-time data
+          href: ../connect-data/incremental-refresh-troubleshoot.md
+      -name: Connecting data
+        expanded: false
+        - name: Troubleshoot tile errors
+          href: ../connect-data/refresh-troubleshooting-tile-errors.md
+        - name: Troubleshoot connecting Excel to Power BI data
+          href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+        - name: Error: We couldn't find any data in your Excel workbook
+          href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
+        - name: Find where data is stored
+          href: ../connect-data/desktop-access-database-errors.md   
+        - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop        
     - name: Move between regions
       href: ../admin/service-admin-region-move.md
     - name: Capture diagnostic information from the Power BI service
