@@ -299,6 +299,22 @@ conceptualContent:
       footerLink:
         url: learning-catalog/index.yml
         text: See more
+    # Card
+    - title: Troubleshooting
+      links:
+        - url: troubleshooting/known-issues/power-bi-known-issues.md
+          itemType: overview
+          text: Known issues for Power BI features
+        - url: admin/service-interruption-notifications.md
+          itemType: concept
+          text: Service interruption notifications
+        - url: admin/service-support-options.md
+          itemType: how-to-guide
+          text:  Power BI Pro and Power BI Premium support options
+      # footerLink (optional)
+      footerLink:
+        url: troubleshooting/index.yml
+        text: See more        
 
 # additionalContent section (optional)
 # Card with summary style
