@@ -186,6 +186,8 @@ This section lists the limitations for the deployment rules.
 
 * If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
+* After deploying a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
+
 >[!NOTE]
 >Parameter rules are not supported for paginated reports.
 
