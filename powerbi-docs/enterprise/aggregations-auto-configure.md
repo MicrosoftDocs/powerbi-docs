@@ -78,3 +78,4 @@ When disabling automatic aggregations, existing system-created aggregation table
 [Automatic aggregations](aggregations-auto.md)  
 [User-defined aggregations](../transform-model/aggregations-advanced.md)  
 [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
+ 
