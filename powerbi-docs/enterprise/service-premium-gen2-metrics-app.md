@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/15/2022
+ms.date: 03/09/2022
 LocalizationGroup: Premium 
 ---
 
@@ -341,7 +341,9 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 * **Duration** - The number of seconds the interactive operation took to complete.
 
-* **CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+* **Total CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+
+* **Timepoint CPU** - The number of seconds used by the interactive operation during the current timepoint.
 
 * **Throttling** - The number of seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
 
