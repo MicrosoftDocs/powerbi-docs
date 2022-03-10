@@ -343,7 +343,7 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 * **Total CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
 
-* **Timepoint CPU** - The number of seconds used by the interactive operation during the current timepoint.
+* **Timepoint CPU** - The number of CPU seconds assigned to the interactive operation in the current timepoint.
 
 * **Throttling** - The number of seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
 
@@ -370,7 +370,7 @@ A table showing every background operation that contributed CPU usage to the tim
 
 * **Total CPU** -  The total number of CPU seconds used by the background operation. A small portion of this metric contributes to determine if the capacity exceeds the total number of CPU seconds for the current timepoint window.
 
-* **Timepoint CPU** - The number of seconds used by the interactive operation during the current timepoint.
+* **Timepoint CPU** - The number of CPU seconds assigned to the interactive operation in the current timepoint.
 
 * **Timepoint CPU** - This metric is the *total CPU* metric divided by 2,880, and is used to determine how much CPU the background operation contributes to this timepoint.  
 
