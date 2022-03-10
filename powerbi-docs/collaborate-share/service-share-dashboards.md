@@ -50,7 +50,7 @@ Then in the **Send link** dialog, you'll see the option to copy the sharing link
    ![Share link dialog box.](media/service-share-dashboards/power-bi-copy-link-outlook-teams.png)
 
    > [!NOTE] 
-   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal.md#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
+   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal-export-sharing.md#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
 
