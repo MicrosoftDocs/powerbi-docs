@@ -78,47 +78,51 @@
     items:
     - name: About tenant settings
       href: service-admin-portal-about-tenant-settings.md
+    - name: Admin API settings
+      href: service-admin-portal-admin-api-settings.md
+    - name: Advanced networking settings 
+      href: service-admin-portal-advanced-networking.md
+    - name: Audit and usage settings
+      href: service-admin-portal-audit-usage.md
+    - name: Content pack and app settings
+      href: service-admin-portal-content-pack-app.md
+    - name: Dashboard settings
+      href: service-admin-portal-dashboard.md
+    - name: Dataflow settings
+      href: service-admin-portal-dataflow.md
+    - name: Dataset Security settings
+      href: service-admin-portal-dataset-security.md
+    - name: Developer settings
+      href: service-admin-portal-developer.md
+    - name: Discovery settings
+      href: service-admin-portal-discovery.md
+    - name: Export and sharing settings
+      href: service-admin-portal-export-sharing.md
+    - name: Goals settings (preview)
+      href: service-admin-portal-goals-settings.md
     - name: Help and support settings
       href: service-admin-portal-help-support.md
+    - name: Information protection settings
+      href: service-admin-portal-information-protection.md
     - name: Workspace settings
       href: service-admin-portal-workspace.md
     - name: Information protection settings
       href: service-admin-portal-information-protection.md
-    - name: Export and sharing settings
-      href: service-admin-portal-export-sharing.md
-    - name: Discovery settings
-      href: service-admin-portal-discovery.md
-    - name: Content pack and app settings
-      href: service-admin-portal-content-pack-app.md
+    - name: Insights settings
+      href: service-admin-portal-insights.md
     - name: Integration settings
       href: service-admin-portal-integration.md
     - name: Power BI visuals settings
       href: service-admin-portal-power-bi-visuals.md
-    - name: R and Python visuals settings
-      href: service-admin-portal-r-python-visuals.md
-    - name: Audit and usage settings
-      href: service-admin-portal-audit-usage.md
-    - name: Dashboard settings
-      href: service-admin-portal-dashboard.md
-    - name: Developer settings
-      href: service-admin-portal-developer.md
-    - name: Admin API settings
-      href: service-admin-portal-admin-api-settings.md
-    - name: Dataflow settings
-      href: service-admin-portal-dataflow.md
-    - name: Template app settings
-      href: service-admin-portal-template-app.md
     - name: Q&A settings
       href: service-admin-portal-qa.md
-    - name: Dataset Security settings
-      href: service-admin-portal-dataset-security.md
-    - name: Advanced networking settings 
-      href: service-admin-portal-advanced-networking.md
-    - name: Goals settings (preview)
-      href: service-admin-portal-goals-settings.md
+    - name: R and Python visuals settings
+      href: service-admin-portal-r-python-visuals.md
+    - name: Share data with your Microsoft 365 services settings
+      href: service-admin-portal-share-data-microsoft-365-services.md
+    - name: Template app settings
+      href: service-admin-portal-template-app.md
     - name: User experience experiments settings
       href: service-admin-portal-user-experience-experiments.md
     - name: Share data with your Microsoft 365 services settings
       href: service-admin-portal-share-data-microsoft-365-services.md
-    - name: Insights settings
-      href: service-admin-portal-insights.md
