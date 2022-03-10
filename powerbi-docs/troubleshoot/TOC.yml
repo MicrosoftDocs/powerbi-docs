@@ -93,7 +93,7 @@
       items:
       - name: Troubleshoot subreports in Power BI paginated reports
         href: ../paginated-reports/subreports-troubleshoot.md  
-  -name: Microsoft Support
+  - name: Microsoft Support
    expanded: true
    items:
    - name: Power BI support options for paid customers
