@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Q&A admin settings
 description: Learn how to configure Power BI Q&A admin settings.
 author: paulinbar
 ms.author: painbar

@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Developer admin settings
 description: Learn how to configure Power BI developer admin settings.
 author: paulinbar
 ms.author: painbar

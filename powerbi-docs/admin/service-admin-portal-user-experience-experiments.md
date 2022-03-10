@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: User experience experiments admin settings
 description: Learn how to configure Power BI user experience experiments admin settings.
 author: paulinbar
 ms.author: painbar

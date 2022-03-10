@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage Azure connections
 description: Learn how to manage Power BI connections to Azure services.
 author: paulinbar
 ms.author: painbar

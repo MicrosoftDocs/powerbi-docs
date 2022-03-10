@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Share data with your Microsoft 365 services admin settings
 description: Learn how to configure Power BI share data with your Microsoft 365 services admin settings.
 author: paulinbar
 ms.author: painbar

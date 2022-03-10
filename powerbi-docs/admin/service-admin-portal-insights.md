@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Insights admin settings
 description: Learn how to configure Power BI insights admin settings.
 author: paulinbar
 ms.author: painbar

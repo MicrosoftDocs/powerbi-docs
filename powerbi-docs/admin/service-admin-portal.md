@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: About the Admin portal
 description: Learn how toconfigure org-wide settings for Power BI.
 author: paulinbar
 ms.author: painbar
@@ -32,20 +32,20 @@ There are many sections in the Admin portal. The rest of this article provides i
 
    :::image type="content" source="media/service-admin-portal/power-bi-admin-portal-menu-2021.png" alt-text="Screenshot that shows the Admin portal menu.":::
 
-* [Usage metrics](service-admin-portal-usage-metrics.md)
-* [Users](service-admin-portal-users.md)
-* [Premium per user](service-admin-portal-premium-per-user.md)
-* [Audit logs](service-admin-portal-audit-logs.md)
-* [Tenant settings](service-admin-portal-about-tenant-settings.md)
-* [Capacity settings](service-admin-portal-capacity-settings.md)
-* [Embed codes](service-admin-portal-embed-codes.md)
+* [Usage metrics](service-admin-portal.md#usage-metrics)
+* [Users](service-admin-portal.md#users)
+* [Premium per user](service-admin-portal.md#premium-per-user)
+* [Audit logs](service-admin-portal.md#audit-logs)
+* [Tenant settings](service-admin-portal.md#tenant-settings)
+* [Capacity settings](service-admin-portal.md#capacity-settings)
+* [Embed codes](service-admin-portal.md#embed-codes)
 * [Organizational visuals](organizational-visuals.md#organizational-visuals)
-* [Azure connections](service-admin-portal-azure-connections.md)
-* [Workspaces](service-admin-portal-workspaces.md)
-* [Custom branding](service-admin-portal-custom-branding.md)
-* [Protection metrics](service-admin-portal-protection-metrics.md)
-* [Featured content](service-admin-portal-export-sharing.md#featured-content)
+* [Azure connections](service-admin-portal.md#azure-connections)
+* [Workspaces](service-admin-portal.md#workspaces)
+* [Custom branding](service-admin-portal.md#custom-branding)
+* [Protection metrics](service-admin-portal.md#protection-metrics)
+* [Featured content](service-admin-portal.md#featured-content)
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-tenant-settings.md)
+* [About the Admin portal](service-admin-portal.md)

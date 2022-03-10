@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: R and Python visuals admin settings
 description: Learn how to configure Power BI R and Python visuals admin settings.
 author: paulinbar
 ms.author: painbar

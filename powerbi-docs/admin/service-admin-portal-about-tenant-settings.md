@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: About tenant settings
 description: Learn how to enable and disable Power BI tenant settings.
 author: paulinbar
 ms.author: painbar

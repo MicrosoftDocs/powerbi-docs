@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Dataflow admin settings
 description: Learn how to configure Power BI dataflow admin settings.
 author: paulinbar
 ms.author: painbar

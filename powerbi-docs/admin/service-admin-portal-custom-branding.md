@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Customize branding
 description: Learn how to customize Power BI branding for your organization..
 author: paulinbar
 ms.author: painbar

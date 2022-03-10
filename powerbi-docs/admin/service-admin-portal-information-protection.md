@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Information protection admin settings
 description: Learn how to configure Power BI information protection admin settings.
 author: paulinbar
 ms.author: painbar
@@ -20,7 +20,7 @@ These settings are configured in the tenant settings section of the Admin portal
 
 When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources (preview)](../enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md).
 
-To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal-about-tenant-settings.md), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
+To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal.md#tenant-settings), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
 
 :::image type="content" source="media/service-admin-portal-information-protection/inherit-from-data-sources-tenant-setting.png" alt-text="Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.":::
 

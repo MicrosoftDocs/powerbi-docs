@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: View information protection metrics
 description: Learn how to customize Power BI with  your organization's branding.
 author: paulinbar
 ms.author: painbar

@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Template app admin settings
 description: Learn how to configure Power BI template app admin settings.
 author: paulinbar
 ms.author: painbar

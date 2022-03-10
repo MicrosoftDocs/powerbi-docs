@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Export and sharing admin settings
 description: Learn how to configure Power BI export and sharing admin settings.
 author: paulinbar
 ms.author: painbar
@@ -41,7 +41,7 @@ The following image shows the option to Allow Azure Active Directory external gu
 
 :::image type="content" source="media/service-admin-portal-export-sharing/allow-external-guest-users-azure-ad.png" alt-text="Screenshot that shows the Allow Azure A D guest users to edit and manage content in the organization.":::
 
-In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](service-admin-portal-export-sharing.md) in this article for details.
+In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](service-admin-portal.md#export-and-sharing-settings) in this article for details.
 
 ## Show Azure Active Directory guests in lists of suggested people
 
@@ -58,7 +58,7 @@ The **Show Azure Active Directory guests in lists of suggested people** setting 
 As a Power BI admin, the **Publish to web** setting gives you options that let users create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
 
 > [!NOTE]
-> Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal-embed-codes.md) section of the admin portal to review currently published reports.
+> Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
 
 You can find **Publish to web** under **File** > **Embed report** when the **Publish to web** setting is enabled.
 
@@ -157,7 +157,7 @@ Users in the organization can create email subscriptions. Learn more about [subs
 
 By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. New users will see that content in the the Featured section at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites & frequents**, and **Recents**. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for more information.
 
-You can turn off the ability to feature content, and manage it in the Admin portal. See [Manage featured content](service-admin-portal-featured-content.md) in this article to read about controlling featured content in your domain.
+You can turn off the ability to feature content, and manage it in the Admin portal. See [Manage featured content](service-admin-portal.md#manage-featured-content) in this article to read about controlling featured content in your domain.
 
 ## Allow connections to featured tables
 
@@ -166,7 +166,7 @@ This setting lets Power BI admins control who in the organization can use featur
 ![Screenshot of allow connections to featured tables setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
 
 >[!NOTE]
->Connections to featured tables are also disabled if the [Allow live connections](service-admin-portal-export-sharing.md#allow-live-connections) setting is set to Disabled.
+>Connections to featured tables are also disabled if the [Allow live connections](service-admin-portal.md#allow-live-connections) setting is set to Disabled.
 
 Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 

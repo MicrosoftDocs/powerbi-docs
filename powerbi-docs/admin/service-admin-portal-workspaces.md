@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: View workspaces
 description: Learn how to view info about Power BI workspaces.
 author: paulinbar
 ms.author: painbar
@@ -27,7 +27,7 @@ As an administrator, you can view the workspaces that exist in your organization
 
 :::image type="content" source="media/service-admin-portal-workspaces/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows a Power B I workspaces list in the admin portal.":::
 
-Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](service-admin-portal.md#workspace-settings) in this article for details.
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [The new workspaces](../collaborate-share/service-new-workspaces.md).
 

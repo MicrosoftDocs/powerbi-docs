@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage users
 description: Learn mange Power BI users.
 author: paulinbar
 ms.author: painbar

@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Discovery admin settings
 description: Learn how to configure Power BI discovery admin settings.
 author: paulinbar
 ms.author: painbar

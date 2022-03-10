@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage featured content
 description: Learn how to manage featured content in Power BI.
 author: paulinbar
 ms.author: painbar
@@ -22,7 +22,7 @@ As a Power BI admin, you can manage all the reports, dashboards, and apps that h
 
 Here you see an overview of who featured the content, when it was featured, and all its relevant metadata. If something looks suspicious, or you want to clean up the Featured section, you can delete promoted content as needed.
 
-See [Featured content](service-admin-portal-export-sharing.md#featured-content) in this article for information about enabling featured content.
+See [Featured content](service-admin-portal.md#featured-content) in this article for information about enabling featured content.
 
 ## Next steps
 

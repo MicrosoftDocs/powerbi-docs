@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Dashboard admin settings
 description: Learn how to configure Power BI dashboard admin settings.
 author: paulinbar
 ms.author: painbar

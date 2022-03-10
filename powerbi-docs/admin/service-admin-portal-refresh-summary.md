@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: View refresh summary
 description: Learn view the Power BI refresh summary.
 author: paulinbar
 ms.author: painbar

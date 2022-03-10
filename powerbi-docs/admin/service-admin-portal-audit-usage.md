@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Audit and usage admin settings
 description: Learn how to configure Power BI audit and usage admin settings.
 author: paulinbar
 ms.author: painbar

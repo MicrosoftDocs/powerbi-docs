@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Dataset Security admin setting
 description: Learn how to configure Power BI dataset security admin settings.
 author: paulinbar
 ms.author: painbar

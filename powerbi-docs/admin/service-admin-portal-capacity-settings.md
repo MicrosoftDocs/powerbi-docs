@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage Capacity settings
 description: Learn how to configure Power BI capacity settings.
 author: paulinbar
 ms.author: painbar

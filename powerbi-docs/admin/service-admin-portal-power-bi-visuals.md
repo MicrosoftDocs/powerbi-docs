@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Power BI visuals admin settings
 description: Learn how to configure Power BI visuals admin settings.
 author: paulinbar
 ms.author: painbar

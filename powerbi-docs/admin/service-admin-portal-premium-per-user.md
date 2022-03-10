@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage Premium Per User
 description: Learn how to manage Power BI Premium Per User.
 author: paulinbar
 ms.author: painbar

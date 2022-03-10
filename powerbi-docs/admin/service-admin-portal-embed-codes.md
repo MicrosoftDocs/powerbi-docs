@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Manage embed codes
 description: Learn how to manage Power BI embed codes.
 author: paulinbar
 ms.author: painbar

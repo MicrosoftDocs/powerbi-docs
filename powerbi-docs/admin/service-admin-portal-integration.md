@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Integration admin settings
 description: Learn how to configure Power BI integration admin settings.
 author: paulinbar
 ms.author: painbar

@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Advanced networking admin settings 
 description: Learn how to configure Power BI advanced networking admin settings.
 author: paulinbar
 ms.author: painbar

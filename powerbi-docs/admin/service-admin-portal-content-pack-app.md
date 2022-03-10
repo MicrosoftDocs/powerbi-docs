@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: Content pack and app admin settings
 description: Learn how to configure Power BI content pack and app admin settings.
 author: paulinbar
 ms.author: painbar

@@ -1,5 +1,5 @@
 ---
-title: Power BI admin portal
+title: View usage metrics
 description: Learn how to view Power BI usage metrics.
 author: paulinbar
 ms.author: painbar
