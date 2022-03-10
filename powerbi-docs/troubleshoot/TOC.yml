@@ -94,13 +94,13 @@
       - name: Troubleshoot subreports in Power BI paginated reports
         href: ../paginated-reports/subreports-troubleshoot.md  
   - name: Microsoft Support
-   expanded: true
-   items:
-   - name: Power BI support options for paid customers
-     href: ../admin/service-support-options.md
-   - name: Options for contacting support for sign-in issues
-     href: ../admin/power-bi-cannot-sign-in.md
-   - name: Capture diagnostic information before contacting support
-     href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
-   - name: 10 tips for getting help with Power
-     href: ../fundamentals/service-tips-for-finding-help.md
+    expanded: true
+    items:
+    - name: Power BI support options for paid customers
+      href: ../admin/service-support-options.md
+    - name: Options for contacting support for sign-in issues
+      href: ../admin/power-bi-cannot-sign-in.md
+    - name: Capture diagnostic information before contacting support
+      href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
+    - name: 10 tips for getting help with Power
+      href: ../fundamentals/service-tips-for-finding-help.md
