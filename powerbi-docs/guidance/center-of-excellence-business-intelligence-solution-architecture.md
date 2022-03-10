@@ -11,9 +11,6 @@ ms.date: 03/11/2022
 ---
 # BI solution architecture in the Center of Excellence
 
-> [!TIP]
-> This series of articles focuses on Microsoft's experience establishing a Center of Excellence. When setting up your own [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md), we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
-
 This article targets IT professionals and IT managers. You'll learn about BI solution architecture in the COE and the different technologies employed. Technologies include Azure, Power BI, and Excel. Together, they can be leveraged to deliver a scalable and data-driven cloud BI platform.
 
 Designing a robust BI platform is somewhat like building a bridge; a bridge that connects transformed and enriched source data to data consumers. The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architectures you could design. In a large organization, a BI solution architecture can consist of:

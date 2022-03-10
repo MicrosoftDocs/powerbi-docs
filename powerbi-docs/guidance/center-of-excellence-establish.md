@@ -12,7 +12,7 @@ ms.date: 03/11/2022
 # How Microsoft established a Center of Excellence
 
 > [!TIP]
-> This series of articles focuses on Microsoft's experience establishing a Center of Excellence. When setting up your own [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md), we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+> This article focuses on Microsoft's experience establishing a [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
 
 This article targets IT professionals and IT managers. You'll learn how to set up a BI and analytics Center of Excellence (COE) in your organization, and how Microsoft has set up theirs.
 
