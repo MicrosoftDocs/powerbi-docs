@@ -89,10 +89,10 @@
       - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report
         href: ../report-server/custom-visuals-troubleshoot.md
     - name: Paginated reports
-     expanded: false
-     items:
-     - name: Troubleshoot subreports in Power BI paginated reports
-       href: ../paginated-reports/subreports-troubleshoot.md  
+      expanded: false
+      items:
+      - name: Troubleshoot subreports in Power BI paginated reports
+        href: ../paginated-reports/subreports-troubleshoot.md  
   -name: Microsoft Support
    expanded: true
    items:
