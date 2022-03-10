@@ -51,8 +51,8 @@
       href: organizational-visuals.md
     - name: Enable content certification
       href: service-admin-setup-certification.md
-    - name: service-admin-premium-capacity-notifications.md
-      href: Configure Power BI Premium Gen2 capacity notifications
+    - name: Configure Power BI Premium Gen2 capacity notifications
+      href: service-admin-premium-capacity-notifications.md
     - name: Set up metadata scanning in your org
       href: service-admin-metadata-scanning-setup.md            
       
