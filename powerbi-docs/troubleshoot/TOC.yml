@@ -19,14 +19,14 @@
     - name: Troubleshoot nested values returned as text in the Power BI service
       href: ../connect-data/service-troubleshooting-nested-values.md
     - name: Troubleshoot deployment pipelines
-      href: ../create-reports/deployment-pipelines-troubleshooting.md  
+      href: ../create-reports/deployment-pipelines-troubleshooting.yml  
     - name: Troubleshoot relationships in Power BI models
       href: ../guidance/relationships-troubleshoot.md
     - name: Troubleshoot developing DirectQuery models in Power BI Desktop
       href: ../connect-data/desktop-directquery-troubleshoot.md
     - name: Troubleshoot your embedded application 
       href: ../developer/embedded/embedded-troubleshoot.md
-    - name: Troubleshoot report performance in Power
+    - name: Troubleshoot report performance in Power BI
       href: ../guidance/report-performance-troubleshoot.md  
     - name: Gateways
       expanded: false
@@ -86,7 +86,7 @@
       items:
       - name: Debug Power BI custom visuals
         href: ../developer/visuals/visuals-how-to-debug.md
-      - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report
+      - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
         href: ../report-server/custom-visuals-troubleshoot.md
     - name: Paginated reports
       expanded: false
@@ -102,5 +102,5 @@
       href: ../admin/power-bi-cannot-sign-in.md
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
-    - name: 10 tips for getting help with Power
+    - name: 10 tips for getting help with Power BI
       href: ../fundamentals/service-tips-for-finding-help.md
