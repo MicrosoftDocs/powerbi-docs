@@ -84,6 +84,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
+- Within SharePoint libraries, this option will only show on the root of the document library.
 
 ## Troubleshooting
 
