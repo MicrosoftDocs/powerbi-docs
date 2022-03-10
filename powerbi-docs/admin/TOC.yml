@@ -103,7 +103,7 @@
     - name: Developer settings
       href: service-admin-portal-developer.md
     - name: Admin API settings
-      href: service-admin-portal-admin-api.md
+      href: service-admin-portal-admin-api-settings.md
     - name: Dataflow settings
       href: service-admin-portal-dataflow.md
     - name: Template app settings
@@ -115,7 +115,7 @@
     - name: Advanced networking settings 
       href: service-admin-portal-advanced-networking.md
     - name: Goals settings (preview)
-      href: service-admin-portal-goals.md
+      href: service-admin-portal-goals-settings.md
     - name: User experience experiments settings
       href: service-admin-portal-user-experience-experiments.md
     - name: Share data with your Microsoft 365 services settings

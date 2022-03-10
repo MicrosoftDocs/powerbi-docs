@@ -18,15 +18,15 @@ These settings are configured in the tenant settings section of the Admin portal
 
 ## Allow service principals to use read-only Power BI admin APIs
 
-:::image type="content" source="media/service-admin-portal-admin-api-admin-settings/allow-service-principals-tenant-setting.png" alt-text="Screenshot of allow service principals tenant setting.":::
+:::image type="content" source="media/service-admin-portal-admin-api-settings/allow-service-principals-tenant-setting.png" alt-text="Screenshot of allow service principals tenant setting.":::
 
 ## Enhance admin APIs responses with detailed metadata
 
-:::image type="content" source="media/service-admin-portal-admin-api-admin-settings/enhance-admin-apis-metadata-tenant-setting.png" alt-text="Screenshot of enhance admin API response with detailed metadata tenant setting.":::
+:::image type="content" source="media/service-admin-portal-admin-api-settings/enhance-admin-apis-metadata-tenant-setting.png" alt-text="Screenshot of enhance admin API response with detailed metadata tenant setting.":::
 
 ## Enhance admin APIs responses with DAX and mashup expressions
 
-:::image type="content" source="media/service-admin-portal-admin-api-admin-settings/enhance-admin-apis-mashup-tenant-setting.png" alt-text="Screenshot of enhance admin API response with DAX and mashup expressions tenant setting.":::
+:::image type="content" source="media/service-admin-portal-admin-api-settings/enhance-admin-apis-mashup-tenant-setting.png" alt-text="Screenshot of enhance admin API response with DAX and mashup expressions tenant setting.":::
 
 ## Next steps
 
