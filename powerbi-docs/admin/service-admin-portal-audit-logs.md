@@ -18,7 +18,7 @@ Go to the **Admin portal** access this feature. For information about how to get
 
 You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center. To learn more, see [Track user activities in Power BI](service-admin-auditing.md).
 
-To use audit logs, make sure the [**Create audit logs for internal activity auditing and compliance**](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) setting is enabled.
+To use audit logs, make sure the [**Create audit logs for internal activity auditing and compliance**](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) setting is enabled.
 
 ## Next steps
 

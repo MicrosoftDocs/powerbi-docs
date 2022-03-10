@@ -18,9 +18,9 @@ These settings are configured in the tenant settings section of the Admin portal
 
 In **Tenant settings**, the admin portal has three sections for controlling workspaces:
 
-- [Create the new workspace experiences](service-admin-portal.md#create-the-new-workspaces).
-- [Use datasets across workspaces](service-admin-portal.md#use-datasets-across-workspaces).
-- [Block classic workspace creation](service-admin-portal.md#block-classic-workspace-creation).
+- [Create the new workspace experiences](service-admin-portal-workspace.md#create-the-new-workspaces).
+- [Use datasets across workspaces](service-admin-portal-workspace.md#use-datasets-across-workspaces).
+- [Block classic workspace creation](service-admin-portal-workspace.md#block-classic-workspace-creation).
 
 ## Create the new workspaces
 
@@ -35,11 +35,11 @@ For classic workspaces based on Microsoft 365 Groups, administration continues t
 
 **List of workspaces**
 
-The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](service-admin-portal.md#workspaces) in this article for details.
+The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](service-admin-portal-workspaces.md) in this article for details.
 
 **Publish content packs and apps**
 
-In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](service-admin-portal.md#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
+In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
 
 ## Use datasets across workspaces
 
