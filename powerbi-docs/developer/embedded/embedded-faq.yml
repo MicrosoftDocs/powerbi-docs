@@ -139,7 +139,7 @@ sections:
       - question: |
           How can I monitor Power BI Embedded capacity consumption?
         answer: |
-          * Using the [Power BI Admin portal](../../admin/service-admin-portal.md#power-bi-embedded).
+          * Using the [Power BI Admin portal](../../admin/service-admin-portal-embed-codes.md#power-bi-embedded).
           
           * Downloading the [metric app](../../enterprise/service-admin-premium-monitor-capacity.md) in Power BI.
           

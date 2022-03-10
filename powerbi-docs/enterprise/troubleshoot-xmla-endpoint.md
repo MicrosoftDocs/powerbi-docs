@@ -58,7 +58,7 @@ It's also valid to specify the app ID without the tenant ID. However, in this ca
 
 ### Connecting with Azure Active Directory B2B
 
-With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to datasets over the XMLA endpoint. Make sure the [Share content with external users](../admin/service-admin-portal.md#export-and-sharing-settings) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
+With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to datasets over the XMLA endpoint. Make sure the [Share content with external users](../admin/service-admin-portal-export-sharing.md) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 
 ## Deploying a dataset
 
