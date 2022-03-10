@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/15/2022
+ms.date: 03/09/2022
 LocalizationGroup: Premium 
 ---
 
@@ -324,6 +324,7 @@ This section describes the operations of the visuals in the top row of the timep
 
 A table showing every [interactive operation](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
+
 * **Artifact** - The name of the Power BI item, its type, and its workspace details.
 
 * **Operation** - The type of interactive operation.
@@ -341,7 +342,9 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 * **Duration** - The number of seconds the interactive operation took to complete.
 
-* **CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+* **Total CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+
+* **Timepoint CPU** - The number of seconds used by the interactive operation during the current timepoint.
 
 * **Throttling** - The number of seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
 
@@ -351,24 +354,7 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
 
-* **Artifact** - The name of the Power BI item, its type, and its workspace details.
-
-* **Operation** - The type of background operation.
-
-* **Start** -The time the background operation began.
-
-* **End** - The time the background operation finished.
-
-* **Status** - An indication showing if the operation succeeded or failed.
-
-    >[!NOTE]
-    >CPU usage for failed operations is counted when determining if the capacity is in overload.
-
-* **Duration** - The number of seconds the background operation took to complete.
-
-* **Total CPU** -  The total number of CPU seconds used by the background operation. A small portion of this metric contributes to determine if the capacity exceeds the total number of CPU seconds for the current timepoint window.
-
-* **Timepoint CPU** - This metric is the *total CPU* metric divided by 2,880, and is used to determine how much CPU the background operation contributes to this timepoint.  
+All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations tables doesn't have a *users* column.
 
 ## Artifact Detail
 
