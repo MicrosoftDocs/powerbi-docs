@@ -68,7 +68,7 @@
     - name: View workspace info
       href: service-admin-portal-workspaces.md
     - name: Customize Power BI branding
-      href: ../service-admin-custom-branding.md
+      href: service-admin-custom-branding.md
     - name: View information protection metrics
       href: service-admin-portal-protection-metrics.md
     - name: Manage featured content
