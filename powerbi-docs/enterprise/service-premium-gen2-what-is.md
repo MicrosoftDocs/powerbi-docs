@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/20/2022
+ms.date: 03/09/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -169,7 +169,7 @@ The following known limitations currently apply to Premium Gen2:
 
     <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-    <sup>2</sup> These limits only apply to dataset workloads.
+    <sup>2</sup> These limits only apply to the datasets workload.
 
     <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 

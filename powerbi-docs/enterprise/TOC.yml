@@ -82,8 +82,6 @@
           href: service-admin-premium-monitor-portal.md
         - name: Configure large datasets
           href: service-premium-large-models.md
-        - name: Restart a Premium capacity
-          href: service-admin-premium-restart.md
         - name: Automation with service principals
           href: service-premium-service-principal.md
         - name: Dataset connectivity with the XMLA endpoint
@@ -109,6 +107,8 @@
           href: service-admin-premium-monitor-capacity.md
         - name: Monitor Premium workload metrics
           href: service-premium-metrics-app.md
+        - name: Restart a Premium capacity
+          href: service-admin-premium-restart.md          
         - name: Power BI Premium FAQ
           href: service-premium-faq.yml
   - name: Governance and compliance
