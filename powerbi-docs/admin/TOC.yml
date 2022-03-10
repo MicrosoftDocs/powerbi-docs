@@ -46,79 +46,79 @@
     expanded: false
     items:
     - name: About the Admin portal
-      href: ../service-admin-portal.md
+      href: service-admin-portal.md
     - name: View usage metrics
-      href: ../service-admin-portal-usage-metrics.md
+      href: service-admin-portal-usage-metrics.md
     - name: Manage users
-      href: ../service-admin-portal-users.md
+      href: service-admin-portal-users.md
     - name: Manage Premium Per User
-      href: ../service-admin-portal-premium-per-user.md
+      href: service-admin-portal-premium-per-user.md
     - name: View audit logs
-      href: ../service-admin-portal-audit-logs.md
+      href: service-admin-portal-audit-logs.md
     - name: Manage capacity settings
-      href: ../service-admin-portal-capacity-settings.md
+      href: service-admin-portal-capacity-settings.md
     - name: View refresh summary
-      href: ../service-admin-portal-refresh-summary.md
+      href: service-admin-portal-refresh-summary.md
     - name: Manage embed codes
-      href: ../service-admin-portal-embed-codes.md
+      href: service-admin-portal-embed-codes.md
     - name: Manage organizational visuals
-      href: ../service-admin-portal-organizational-visuals.md
+      href: service-admin-portal-organizational-visuals.md
     - name: Configure Azure connections
-      href: ../service-admin-portal-azure-connections.md
+      href: service-admin-portal-azure-connections.md
     - name: View workspace info
-      href: ../service-admin-portal-workspaces.md
+      href: service-admin-portal-workspaces.md
     - name: Customize Power BI branding
       href: ../service-admin-custom-branding.md
     - name: View information protection metrics
-      href: ../service-admin-portal-protection-metrics.md
+      href: service-admin-portal-protection-metrics.md
     - name: Manage featured content
-      href: ../service-admin-portal-featured-content.md
+      href: service-admin-portal-featured-content.md
   - name: Configure admin settings
     expanded: false
     items:
     - name: About tenant settings
-      href: ../service-admin-portal-about-tenant-settings.md
+      href: service-admin-portal-about-tenant-settings.md
     - name: Help and support settings
-      href: ../service-admin-portal-help-support.md
+      href: service-admin-portal-help-support.md
     - name: Workspace settings
-      href: ../service-admin-portal-workspace.md
+      href: service-admin-portal-workspace.md
     - name: Information protection settings
-      href: ../service-admin-portal-information-protection.md
+      href: service-admin-portal-information-protection.md
     - name: Export and sharing settings
-      href: ../service-admin-portal-export-sharing.md
+      href: service-admin-portal-export-sharing.md
     - name: Discovery settings
-      href: ../service-admin-portal-discovery.md
+      href: service-admin-portal-discovery.md
     - name: Content pack and app settings
-      href: ../service-admin-portal-content-pack-app.md
+      href: service-admin-portal-content-pack-app.md
     - name: Integration settings
-      href: ../service-admin-portal-integration.md
+      href: service-admin-portal-integration.md
     - name: Power BI visuals settings
-      href: ../service-admin-portal-power-bi-visuals.md
+      href: service-admin-portal-power-bi-visuals.md
     - name: R and Python visuals settings
-      href: ../service-admin-portal-r-python-visuals.md
+      href: service-admin-portal-r-python-visuals.md
     - name: Audit and usage settings
-      href: ../service-admin-portal-audit-usage.md
+      href: service-admin-portal-audit-usage.md
     - name: Dashboard settings
-      href: ../service-admin-portal-dashboard.md
+      href: service-admin-portal-dashboard.md
     - name: Developer settings
-      href: ../service-admin-portal-developer.md
+      href: service-admin-portal-developer.md
     - name: Admin API settings
-      href: ../service-admin-portal-admin-api.md
+      href: service-admin-portal-admin-api.md
     - name: Dataflow settings
-      href: ../service-admin-portal-dataflow.md
+      href: service-admin-portal-dataflow.md
     - name: Template app settings
-      href: ../service-admin-portal-template-app.md
+      href: service-admin-portal-template-app.md
     - name: Q&A settings
-      href: ../service-admin-portal-qa.md
+      href: service-admin-portal-qa.md
     - name: Dataset Security settings
-      href: ../service-admin-portal-dataset-security.md
+      href: service-admin-portal-dataset-security.md
     - name: Advanced networking settings 
-      href: ../service-admin-portal-advanced-networking.md
+      href: service-admin-portal-advanced-networking.md
     - name: Goals settings (preview)
-      href: ../service-admin-portal-goals.md
+      href: service-admin-portal-goals.md
     - name: User experience experiments settings
-      href: ../service-admin-portal-user-experience-experiments.md
+      href: service-admin-portal-user-experience-experiments.md
     - name: Share data with your Microsoft 365 services settings
-      href: ../service-admin-portal-share-data-microsoft-365-services.md
+      href: service-admin-portal-share-data-microsoft-365-services.md
     - name: Insights settings
-      href: ../service-admin-portal-insights.md
+      href: service-admin-portal-insights.md
