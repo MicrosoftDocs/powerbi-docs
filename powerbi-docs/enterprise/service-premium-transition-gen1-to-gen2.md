@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 03/10/2022
 LocalizationGroup: Premium
 ---
 
@@ -17,11 +17,7 @@ This article provides information about key dates for migrating Power BI Premium
 
 Over the last several months, we've been working to make many improvements to Power BI Premium. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Premium, referred to as Power BI Premium Gen2, has officially moved from preview to general availability as of October 4, 2021. You can read the announcement about this release in the [Power BI blog](https://powerbi.microsoft.com/blog/).
 
-If your organization is using the previous version of Power BI Premium, you're required to migrate capacities to the modern Gen2 platform. The key dates for you to be aware of are listed below:
-
-* **October 4, 2021** - Power BI Premium Gen2 is generally available.
-* **November 15, 2021** - We start sending notifications reminding customers to migrate.
-* **March 2022** - Microsoft begins migration of Premium capacities to the modern Gen2 platform for all organizations.
+If your organization is using the previous version of Power BI Premium, you're required to migrate capacities to the modern Gen2 platform. Microsoft began migrating all Premium capacities to Gen2 capacities. If you have a Premium capacity that requires migrating, **you’ll receive an email notification 60 days before the migration is scheduled to start**.
 
 ## Premium Gen2 prerequisites
 

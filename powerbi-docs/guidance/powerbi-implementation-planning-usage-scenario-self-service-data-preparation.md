@@ -43,7 +43,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 8.](media/common/icon-08-red-30x30.png) | When ready, the dataset creator publishes the Power BI Desktop file (.pbix) that contains the data model to the Power BI service. Refresh for the dataset is managed separately from the dataflow (not depicted in the scenario diagram). |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | The dataflow can be reused as a data source by other datasets that could reside in different workspaces. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Power BI administrators manage settings in the Admin portal. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | In the Admin portal, Power BI administrators can configure [Azure connections](../admin/service-admin-portal.md#azure-connections) to store dataflow data in their Azure Data Lake Storage Gen2 (ADLS Gen2) account. Settings include assigning a tenant-level storage account and enabling workspace-level storage permissions. |
+| ![Item 11.](media/common/icon-11-red-30x30.png) | In the Admin portal, Power BI administrators can configure [Azure connections](../admin/service-admin-portal-azure-connections.md) to store dataflow data in their Azure Data Lake Storage Gen2 (ADLS Gen2) account. Settings include assigning a tenant-level storage account and enabling workspace-level storage permissions. |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | By default, dataflows store data using internal storage that's managed by the Power BI service. Optionally, data output by the dataflow can be stored in the organization's [ADLS Gen2](/azure/storage/blobs/data-lake-storage-introduction) account. This type of storage is sometimes called *bring your own data lake*. A benefit of storing dataflow data in the data lake is that it can be accessed and consumed by other BI tools. |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Dataflow data in ADLS Gen2 is stored within a Power BI-specific container known as *filesystem*. Within this container, a [folder exists for each workspace](/power-query/dataflows/what-is-the-cdm-storage-structure-for-analytical-dataflows#whats-in-a-dataflow-folder). A subfolder is created for each dataflow, as well as for each table. Power BI generates a snapshot each time the dataflow data is refreshed. Snapshots are self-describing, comprising metadata and data files. |
 | ![Item 14.](media/common/icon-14-red-30x30.png) | Other self-service dataset creators can create new data models in Power BI Desktop using the dataflow as a data source. |
@@ -113,10 +113,10 @@ Here are some advantages of using the organization's data lake account:
 
 ### Tenant-level storage
 
-The [Azure connections](../admin/service-admin-portal.md#azure-connections) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, a [workspace is set to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, a [workspace is set to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 > [!IMPORTANT]
-> Setting [Azure connections](../admin/service-admin-portal.md#azure-connections) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
+> Setting [Azure connections](../admin/service-admin-portal-azure-connections.md) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
 >
 > It's critical to set the workspace Azure connections *prior to creating any dataflows* in the workspace. The same Azure storage account is used for [Power BI dataset backups](../enterprise/service-premium-backup-restore-dataset.md).
 
@@ -125,7 +125,7 @@ The [Azure connections](../admin/service-admin-portal.md#azure-connections) sect
 A Power BI administrator can configure a setting to allow workspace-level storage permissions (in the Azure connections section of the Admin portal). When enabled, this setting allows [workspace administrators to use a different storage account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) than the one defined at the tenant-level. Enabling this setting is particularly helpful for decentralized business units who manage their own data lake in Azure.
 
 > [!NOTE]
-> The [workspace-level storage permission](../admin/service-admin-portal.md#azure-connections) in the Admin portal applies to all workspaces in the Power BI tenant.
+> The [workspace-level storage permission](../admin/service-admin-portal-azure-connections.md) in the Admin portal applies to all workspaces in the Power BI tenant.
 
 ### Common Data Model format
 

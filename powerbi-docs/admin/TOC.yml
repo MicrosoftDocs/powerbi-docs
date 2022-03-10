@@ -42,15 +42,85 @@
       href: service-admin-access-usage.md
     - name: Track user activities
       href: service-admin-auditing.md  
-  - name: Feature enablement
+  - name: Monitor and manage Power BI
     expanded: false
     items:
-    - name: Using the admin portal
-      href: service-admin-portal.md       
-    - name: Manage Power BI visuals admin settings
-      href: organizational-visuals.md
-    - name: Enable content certification
-      href: service-admin-setup-certification.md
-    - name: Set up metadata scanning in your org
-      href: service-admin-metadata-scanning-setup.md            
-      
+    - name: About the Admin portal
+      href: service-admin-portal.md
+    - name: Configure Azure connections
+      href: service-admin-portal-azure-connections.md
+    - name: Customize Power BI branding
+      href: service-admin-custom-branding.md
+    - name: Manage capacity settings
+      href: service-admin-portal-capacity-settings.md
+    - name: Manage embed codes
+      href: service-admin-portal-embed-codes.md
+    - name: Manage featured content
+      href: service-admin-portal-featured-content.md
+    - name: Manage organizational visuals
+      href: service-admin-portal-organizational-visuals.md
+    - name: Manage Premium Per User
+      href: service-admin-portal-premium-per-user.md
+    - name: Manage users
+      href: service-admin-portal-users.md
+    - name: View audit logs
+      href: service-admin-portal-audit-logs.md
+    - name: View information protection metrics
+      href: service-admin-portal-protection-metrics.md
+    - name: View refresh summary
+      href: service-admin-portal-refresh-summary.md
+    - name: View usage metrics
+      href: service-admin-portal-usage-metrics.md
+    - name: View workspace info
+      href: service-admin-portal-workspaces.md
+  - name: Configure admin settings
+    expanded: false
+    items:
+    - name: About tenant settings
+      href: service-admin-portal-about-tenant-settings.md
+    - name: Admin API settings
+      href: service-admin-portal-admin-api-settings.md
+    - name: Advanced networking settings 
+      href: service-admin-portal-advanced-networking.md
+    - name: Audit and usage settings
+      href: service-admin-portal-audit-usage.md
+    - name: Content pack and app settings
+      href: service-admin-portal-content-pack-app.md
+    - name: Dashboard settings
+      href: service-admin-portal-dashboard.md
+    - name: Dataflow settings
+      href: service-admin-portal-dataflow.md
+    - name: Dataset Security settings
+      href: service-admin-portal-dataset-security.md
+    - name: Developer settings
+      href: service-admin-portal-developer.md
+    - name: Discovery settings
+      href: service-admin-portal-discovery.md
+    - name: Export and sharing settings
+      href: service-admin-portal-export-sharing.md
+    - name: Goals settings (preview)
+      href: service-admin-portal-goals-settings.md
+    - name: Help and support settings
+      href: service-admin-portal-help-support.md
+    - name: Information protection settings
+      href: service-admin-portal-information-protection.md
+    - name: Workspace settings
+      href: service-admin-portal-workspace.md
+    - name: Information protection settings
+      href: service-admin-portal-information-protection.md
+    - name: Insights settings
+      href: service-admin-portal-insights.md
+    - name: Integration settings
+      href: service-admin-portal-integration.md
+    - name: Power BI visuals settings
+      href: service-admin-portal-power-bi-visuals.md
+    - name: Q&A settings
+      href: service-admin-portal-qa.md
+    - name: R and Python visuals settings
+      href: service-admin-portal-r-python-visuals.md
+    - name: Share data with your Microsoft 365 services settings
+      href: service-admin-portal-share-data-microsoft-365-services.md
+    - name: Template app settings
+      href: service-admin-portal-template-app.md
+    - name: User experience experiments settings
+      href: service-admin-portal-user-experience-experiments.md
