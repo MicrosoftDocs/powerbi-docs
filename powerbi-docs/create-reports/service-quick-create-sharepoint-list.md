@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 03/10/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library in the Power BI service
