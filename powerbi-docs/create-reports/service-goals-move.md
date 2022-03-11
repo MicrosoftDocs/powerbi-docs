@@ -1,5 +1,5 @@
 ---
-title: Customize your scorecard (preview)
+title: Customize your scorecard's statuses and column views (preview)
 description: Learn how to customize your Power BI scorecards to meet your teams' needs.
 author: maggiesMSFT
 ms.author: maggies
@@ -20,27 +20,27 @@ Statuses are an integral part of goal tracking, and in some scenarios the status
 
 In edit mode there are two entry points to start customizing your statuses.  
 
-1.	Click the settings gear icon
-1.	Click the status section of the pane that appears
+1.	Select the settings gear icon
+1.	Choose the <b>statuses</b> section of the pane that appears
 
 :::image type="content" source="media/service-goals-move/power-bi-custom-statuses-2.png" alt-text="A view of the edit status pane open, customizing statuses.":::
 
 You can also get to this area by editing a goal inline.
 
-1.	In edit mode, click the pencil icon to edit a goal
-1.	Click the status section dropdown
-1.	Click the ‘manage statuses’ option at the end of the list
+1.	In edit mode, select the pencil icon to edit a goal
+1.	Select the status section dropdown
+1.	Choose the <b>‘manage statuses’</b> option at the end of the list
 
 :::image type="content" source="media/service-goals-move/power-bi-custom-statuses-3.png" alt-text="A view of the entry point when editing a goal in-line, at the bottom of the status dropdown.":::
 
 Once you’re in the manage status section, there a few actions you can take.  ou can create new statuses, rename existing statuses and change the color associated with the status.  
 
-1.	To add a new status, click the +add status button at the top.  
+1.	To add a new status, select the <b>+add status</b> button at the top.  
 1	To rename an existing status, simply highlight the text, and type your new status name.
-1.	To change the color associated with a status, select the color picker to the right of the status, and select your desired color.
-1.	To delete a status, click the trash icon.
-1.	To reset all statuses to the default settings (the original scorecard statuses) click ‘reset statuses’ at the top.
-1.	To reorder the statuses within the list, use the arrow buttons to move an item up or down, or simply click and drag the status to it’s new location. 
+1.	To change the color associated with a status, select the color picker to the right of the status, and choose your desired color.
+1.	To delete a status, select the trash icon.
+1.	To reset all statuses to the default settings (the original scorecard statuses) select <b>‘reset statuses’</b> at the top.
+1.	To reorder the statuses within the list, use the arrow buttons to move an item up or down, or simply select and drag the status to it’s new location. 
 
 :::image type="content" source="media/service-goals-move/power-bi-custom-statuses-4.png" alt-text="A screenshot of a status being re-ordered in the edit status pane.":::
 
