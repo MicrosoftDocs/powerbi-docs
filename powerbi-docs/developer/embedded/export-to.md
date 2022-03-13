@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 01/30/2022
+ms.date: 03/13/2022
 ---
 
 # Export Power BI report to file
@@ -99,9 +99,6 @@ The table below includes a few syntax examples of strings you can pass to  `Expo
 |A value in a field    |Table/Field eq 'value'    |Store/Territory eq 'NC'    |
 |Multiple values in a field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
 |A distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
-
->[!NOTE]
->`ReportLevelFilters` can only contain a single [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter).
 
 ### Authentication
 
