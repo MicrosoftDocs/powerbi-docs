@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Customize branding
 
-Go to the **Admin portal** access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
 As an administrator, you can customize the look of Power BI for your whole organization. Currently there are three main options:
 

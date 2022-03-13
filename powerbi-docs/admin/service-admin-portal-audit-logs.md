@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # View audit logs
 
-Go to the **Admin portal** access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
 You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center. To learn more, see [Track user activities in Power BI](service-admin-auditing.md).
 

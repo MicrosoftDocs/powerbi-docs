@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Manage Capacity settings
 
-Go to the **Admin portal** access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
 ## Power BI Premium
 

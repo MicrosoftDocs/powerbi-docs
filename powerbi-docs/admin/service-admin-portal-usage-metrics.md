@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # View usage metrics
 
-Go to the **Admin portal** access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
 **Usage metrics** let you monitor Power BI usage for your organization. It also shows which users and groups in your organization are the most active in Power BI.
 
