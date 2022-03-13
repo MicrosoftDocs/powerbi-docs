@@ -23,7 +23,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
-* Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
+* Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
 * DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
 * DLP policies for Power BI are not supported in sovereign clouds.
 
@@ -48,7 +48,7 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 
 ## How do DLP policies for Power BI work
 
-You define a DLP policy in the data loss prevention section of the compliance portal. In the policy, you specify sensitivity label(s) you want to detect. You also specify the action(s) that will happen when the policy detects a dataset that has a specified sensitivity label applied. DLP policies for Power BI support two actions:
+You define a DLP policy in the data loss prevention section of the compliance portal. In the policy, you specify the sensitivity labels and/or sensitive info types you want to detect. You also specify the actions that will happen when the policy detects a dataset that contains sensitive data of the kind you specified. DLP policies for Power BI support two actions:
 
 * User notification via policy tips.
 * Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance center. 
@@ -145,16 +145,13 @@ In the condition section, you define the conditions under which the policy will 
  
     This opens the first group (named Default – you can change this).
 
-1. Choose **Add**, and then **Sensitivity labels**.
-        
-    >[!NOTE]
-    > Sensitive info types are currently not supported.
+1. Choose **Add**, and then chose either **Sensitive info types** or **Sensitivity labels**.
     
     ![Screenshot of D L P add conditions section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-add-conditions.png)
  
-    When you choose **Sensitivity labels**, you will be able to choose a particular sensitivity label from a list that will appear.
+    When you choose either **Sensitive info types** or **Sensitivity labels**, you will be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
-    You can add additional sensitivity labels to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the labels is required for the condition to hold. Make sure **Any of these** is selected, since datasets can’t have more than one label applied.
+    You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you will only be able to choose **Any of these**, since datasets can’t have more than one label applied.
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
