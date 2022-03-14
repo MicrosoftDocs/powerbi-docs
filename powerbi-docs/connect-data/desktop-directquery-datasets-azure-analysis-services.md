@@ -92,7 +92,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
 
-- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
 - All connections to remote Power BI Datasets models are made using single sign-on.
 

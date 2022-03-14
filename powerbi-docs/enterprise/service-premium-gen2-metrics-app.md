@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 03/14/2022
 LocalizationGroup: Premium 
 ---
 
@@ -324,6 +324,7 @@ This section describes the operations of the visuals in the top row of the timep
 
 A table showing every [interactive operation](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
+
 * **Artifact** - The name of the Power BI item, its type, and its workspace details.
 
 * **Operation** - The type of interactive operation.
@@ -353,7 +354,7 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
 
-All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations tables doesn't have a *User* column.
+All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations tables doesn't have a *users* column.
 
 ## Artifact Detail
 

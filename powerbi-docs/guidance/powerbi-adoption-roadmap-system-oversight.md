@@ -81,7 +81,7 @@ Overseeing the Power BI service is a crucial aspect to ensure that all users hav
 
 ### Tenant settings
 
-Proper management of [tenant settings](../admin/service-admin-portal.md#tenant-settings) in the Power BI service is critical. Tenant settings are the main way to control which Power BI capabilities are enabled and to which groups of users in your organization.
+Proper management of [tenant settings](../admin/service-admin-portal-about-tenant-settings.md) in the Power BI service is critical. Tenant settings are the main way to control which Power BI capabilities are enabled and to which groups of users in your organization.
 
 It's essential that tenant settings align with governance guidelines and policies, and also with how the COE makes decisions. If a Power BI administrator independently decides which settings to enable or disable, that's a clear indicator of an opportunity to improve governance processes.
 
@@ -117,13 +117,13 @@ As discussed in the Power BI adoption [maturity levels](powerbi-adoption-roadmap
 
 Additional responsibilities for managing the Power BI service include:
 
-- [Workspace management and access](../admin/service-admin-portal.md#workspaces).
-- [Premium capacity and Premium Per User settings](../admin/service-admin-portal.md#capacity-settings).
-- [Embed codes](../admin/service-admin-portal.md#embed-codes).
-- [Organizational visuals](../admin/service-admin-portal.md#organizational-visuals).
-- [Azure connections](../admin/service-admin-portal.md#azure-connections).
-- [Custom branding](../admin/service-admin-portal.md#custom-branding).
-- [Featured content](../admin/service-admin-portal.md#manage-featured-content).
+- [Workspace management and access](../admin/service-admin-portal-workspaces.md).
+- [Premium capacity and Premium Per User settings](../admin/service-admin-portal-capacity-settings.md).
+- [Embed codes](../admin/service-admin-portal-embed-codes.md).
+- [Organizational visuals](../admin/service-admin-portal-organizational-visuals.md).
+- [Azure connections](../admin/service-admin-portal-azure-connections.md).
+- [Custom branding](../admin/service-admin-portal-custom-branding.md).
+- [Featured content](../admin/service-admin-portal-featured-content.md).
 
 In addition to these documentation links, see the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP), which describes additional considerations for Power BI administration.
 
@@ -356,13 +356,13 @@ Some organizations ask Power BI users to accept a self-service user acknowledgme
 
 In a [cloud shared responsibility model](/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves, and by raising concerns when they see issues that could be discovered when [managing workspaces](../admin/service-admin-portal.md#workspaces), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a several [tenant settings](../admin/service-admin-portal.md#tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](../admin/service-admin-portal.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal.md#publish-content-packs-and-apps-to-the-entire-organization)).
+Administrators can be help by following best practices themselves, and by raising concerns when they see issues that could be discovered when [managing workspaces](../admin/service-admin-portal-workspaces.md), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a several [tenant settings](../admin/service-admin-portal-about-tenant-settings.md) that are usually restricted except for a few users (for instance, the ability to [publish to web](../admin/service-admin-portal-export-sharing.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization)).
 
 ### External guest users
 
 External users—such as partners, customers, vendors, and consultants—are a very common occurrence for some organizations, and very rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](../admin/service-admin-portal.md#export-and-sharing-settings) in the Power BI service as well as certain Azure Active Directory settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](../admin/service-admin-portal-export-sharing.md) in the Power BI service as well as certain Azure Active Directory settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection
 
@@ -382,7 +382,7 @@ The power of sensitivity labels is:
 - Automated data loss prevention across system boundaries, such as when the [label follows the content](../enterprise/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
 - User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
 
-There are several [tenant settings](../admin/service-admin-portal.md#information-protection) which relate to information protection. For more information, see the [Auditing and monitoring](#auditing-and-monitoring) section in this article.
+There are several [tenant settings](../admin/service-admin-portal-information-protection.md) which relate to information protection. For more information, see the [Auditing and monitoring](#auditing-and-monitoring) section in this article.
 
 ### Data residency
 
@@ -469,7 +469,7 @@ Considerations and key actions you can take to improve management of the Power B
 
 - Conduct a review of all tenant settings to ensure they are aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 - Document the tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal.md#help-and-support-settings) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal-help-support.md) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
 
 Considerations and key actions you can take to improve management of user machines and devices:
 

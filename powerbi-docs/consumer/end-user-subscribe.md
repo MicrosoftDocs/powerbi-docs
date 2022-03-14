@@ -27,7 +27,7 @@ To create a subscription for yourself, you'll need either:
 - A Power BI Pro or Premium Per User (PPU) [license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
-Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal.md#email-subscriptions).
+Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#email-subscriptions).
 
 
 ## Subscribe to a report or dashboard
@@ -153,9 +153,9 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal: 
 
-- [Enable email subscriptions](../admin/service-admin-portal.md#export-and-sharing-settings) for all members of the organization. 
+- [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
-- Enable all members of the organization or just specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#export-and-sharing-settings). 
+- Enable all members of the organization or just specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
 
 ### View subscription audit and activity logs 
 
