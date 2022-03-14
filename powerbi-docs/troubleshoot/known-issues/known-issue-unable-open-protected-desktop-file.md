@@ -19,15 +19,15 @@ Power BI Desktop March 2022 Update
 
 ## Description of problem
 
-You will be unable to open a protected Power BI Desktop (.pbix) file and will receive an "Unable to open document" error message.  The impacted file has a protection setting applied to the file that has not been published to you.
+You won't be able to open a protected Power BI Desktop (.pbix) file and will receive an "Unable to open document" error message.  The impacted file has a protection setting applied to the file that hasn't been published to you.
 
 **Problem area**: Power BI Desktop
 
-If you see an "Unable to open document" error message when trying to open a protected Power BI Desktop (.pbix) file, you may be affected by this known issue.
+When opening a protected Power BI Desktop file (.pbix), you receive an error.  The error is "Unable to open document."  
 
 ## Symptoms
 
-When opening a Power BI Desktop (.pbix) file, you will receive the error message:
+When opening a Power BI Desktop (.pbix) file, you'll receive the error message:
 **Unable to open document**
 The protection setting applied to the file caused an error that prevented it from opening. Try opening the file again.  
 
