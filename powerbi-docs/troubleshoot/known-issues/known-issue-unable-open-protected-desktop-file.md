@@ -29,11 +29,11 @@ If you see an "Unable to open document" error message when trying to open a prot
 
 When opening a Power BI Desktop (.pbix) file, you will receive the error message:
 **Unable to open document**
-The protection setting applied to the file caused an error that prevented it from opening. Try opening the file again. If the problem still occurs, contact your Power BI admin.
+The protection setting applied to the file caused an error that prevented it from opening. Try opening the file again.  
 
 ## Solutions and workarounds
 
-The recommended solution to ask your organization's security team to publish the impacted Desktop file's label to the user in the M365 Compliance center.
+The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the M365 Compliance center.
 
 ## Next steps
 
