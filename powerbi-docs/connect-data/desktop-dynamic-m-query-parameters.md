@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 03/14/2022
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
@@ -22,7 +22,7 @@ Watch Sujata explain and use Dynamic M Query Parameters, and then try it out you
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QLsb]
 
 ## Enabling Dynamic M query parameters
 
