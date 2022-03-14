@@ -12,25 +12,21 @@ ms.custom:
 
 # Power BI known issues
 
-In the coming month, this page will begin listing all known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed.
+This page lists all known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed.
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
-## Known issues by bug ID
+## Known issues by Issue ID
 
 Select the **Title** to view more information about that specific known issue.
 
-|Issue ID  |Area  |Title  |Issue publish date | Status*  |
-|---------|---------|---------|---------|--------|
-|     |          |       |          |   |
-|      |          |         |         |  |
-|      |          |         |         |  |
-|      |          |         |         |  |
-|      |          |         |         |  |
+|Issue ID |Area |Title  |Issue publish date | Status*  |
+|---------|-----|-------|---------|--------|
+| 151 | Power BI Desktop | [Unable to open protected Power BI desktop file](../create-reports/powerbi-known-issue-Unable-to-open-protected-Power-BI-desktop-file-knownissue.md) | 3/13/2022 | Open |
 
 \* Fixed issues are removed after 46 days.
 
 ## Next steps
 
-[Service level outages](https://support.powerbi.com)    
+[Service level outages](https://support.powerbi.com)
 [Get your questions answered by the Power BI community](https://community.powerbi.com)
