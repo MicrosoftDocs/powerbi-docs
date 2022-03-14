@@ -6,7 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: admin-portal
+ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
 ms.date: 03/10/2022
 LocalizationGroup: Administration
