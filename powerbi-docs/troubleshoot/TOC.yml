@@ -8,7 +8,7 @@
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
     - name: Unable to open protected Desktop files 
-      href: known-issue-unable-open-protected-desktop-file.md                
+      href: known-issues/known-issue-unable-open-protected-desktop-file.md                
   - name: Troubleshoot
     expanded: false
     items:
