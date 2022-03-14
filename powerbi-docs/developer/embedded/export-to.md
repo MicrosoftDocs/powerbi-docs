@@ -137,7 +137,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+>Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
 
 | Azure SKU      | Office SKU      | Maximum concurrent report pages |
 |----------------|-----------------|---------------------------------|
@@ -161,7 +161,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in ten sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A5 SKU with a limit of processing 12 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+>Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
 
 |Azure SKU       | Office SKU      |Maximum concurrent report pages |
 |----------------|-----------------|--------------------------------|
@@ -190,7 +190,7 @@ Only five pages of a report are processed concurrently. For example, if you're e
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
-* Exporting a Power BI report to file using the `exporToFile` API, is not supported for **Premium Per User (PPU)**.
+* Exporting a Power BI report to file using the `exportToFile` API, is not supported for **Premium Per User (PPU)**.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
   * Uncertified Power BI visuals
   * R visuals
@@ -209,14 +209,15 @@ Only five pages of a report are processed concurrently. For example, if you're e
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+* Exporting a Power BI report to file using the `exportToFile` API, is not supported for **Premium Per User (PPU)**.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
-    * Uncertified Power BI visuals
-    * R visuals
-    * PowerApps
-    * Python visuals
-    * Power Automate
-    * Paginated report visual
-    * Visio
+  * Uncertified Power BI visuals
+  * R visuals
+  * PowerApps
+  * Python visuals
+  * Power Automate
+  * Paginated report visual
+  * Visio
 
 ---
 
