@@ -133,13 +133,13 @@ Users in the organization can export Paginated reports as Word documents.
 
 Users in the organization can export Paginated reports as XML documents.
 
-![Screenshot of export to XML setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-export-xml-setting.png)
+:::image type="content" source="media/service-admin-portal-export-sharing/powerbi-admin-portal-export-xml-setting.png" alt-text="Screenshot of export to XML setting.":::
 
 ## Export reports as image files
 
 Users in the organization can use the export report to file API to export reports as image files.
 
-![Screenshot of export as image setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-export-as-image-setting.png)
+:::image type="content" source="media/service-admin-portal-export-sharing/powerbi-admin-portal-export-as-image-setting.png" alt-text="Screenshot of export as image setting.":::
 
 ## Print dashboards and reports
 
