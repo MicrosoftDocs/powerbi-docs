@@ -33,7 +33,7 @@ The protection setting applied to the file caused an error that prevented it fro
 
 ## Solutions and workarounds
 
-The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the M365 Compliance center.
+The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the Microsoft 365 Compliance center.
 
 ## Next steps
 
