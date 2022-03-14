@@ -18,6 +18,26 @@ The admin portal includes settings that govern Power BI for all users in your or
 
 The full admin portal can be accessed by global admins and users who have the Power BI Administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
+
+| Feature  | Description  |
+| --- | --- |
+| [Usage metrics](service-admin-portal-usage-metrics.md) | Description here. |
+| [Users](service-admin-portal-users.md) | Description here. |
+| [Premium per user](service-admin-portal-premium-per-user.md) | Description here. |
+| [Audit logs](service-admin-portal-audit-logs.md) | Description here. |
+| [Tenant settings](service-admin-portal-about-tenant-settings.md) | Description here. |
+| [Capacity settings](service-admin-portal-capacity-settings.md) | Manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. |
+| [Embed codes](service-admin-portal-embed-codes.md) | View and manage the embed codes that have been generated for your organization to share reports publicly. |
+| [Organizational visuals](organizational-visuals.md#organizational-visuals) | Control which type of Power BI visuals users can access across the organization. |
+| [Azure connections](service-admin-portal-azure-connections.md) | Configure and manage connections to Azure resources. |
+| [Workspaces](service-admin-portal-workspaces.md) | View and manage the workspaces that exist in your organization. |
+| [Custom branding](service-admin-portal-custom-branding.md) |  Change the look and feel of the Power BI service to match your organization's own branding. |
+| [Protection metrics](service-admin-portal-protection-metrics.md) | Description here. |
+| [Featured content](service-admin-portal-featured-content.md) |  Mnage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization. |
+
+
+
+
 ## How to get to the admin portal
 
 You have to be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
