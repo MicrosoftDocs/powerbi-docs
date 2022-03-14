@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
-ms.date: 03/09/2022  
+ms.date: 03/13/2022  
 ms.custom:  
 ---
 
@@ -22,7 +22,7 @@ Select the **Title** to view more information about that specific known issue.
 
 |Issue ID  |Area  |Title  |Issue publish date | Status*  |
 |---------|---------|---------|---------|--------|
-|     |          |       |          |   |
+|  151   |  Desktop        |  [Unable to open protected Desktop file](known-issue-unable-open-protected-desktop-file.md)     |  March 13, 2022        |  Active |
 |      |          |         |         |  |
 |      |          |         |         |  |
 |      |          |         |         |  |
