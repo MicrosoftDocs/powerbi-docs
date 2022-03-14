@@ -135,7 +135,7 @@ Users in the organization can export Paginated reports as XML documents.
 
 ![Screenshot of export to XML setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-export-xml-setting.png)
 
-## Export reports as image files (preview)
+## Export reports as image files
 
 Users in the organization can use the export report to file API to export reports as image files.
 
@@ -146,9 +146,11 @@ Users in the organization can use the export report to file API to export report
 ![Screenshot of print dashboards and reports setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
 ## Certification
+
 Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
 ## Email Subscriptions
+
 Users in the organization can create email subscriptions. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
