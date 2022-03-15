@@ -102,9 +102,6 @@ The table below includes a few syntax examples of strings you can pass to  `Expo
 |Multiple values in a field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
 |A distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
 
->[!NOTE]
->`ReportLevelFilters` can only contain a single [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter).
-
 ### Authentication
 
 You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).

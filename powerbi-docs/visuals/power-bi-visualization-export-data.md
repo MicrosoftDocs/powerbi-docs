@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 03/01/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 
@@ -195,6 +195,8 @@ If you find that you are unable to use this feature, reach out to the report own
 [Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
+
+- When exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwith.
 
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from a *.csv* file is 30,000.
 
