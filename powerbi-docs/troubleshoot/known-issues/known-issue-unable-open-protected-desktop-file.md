@@ -1,5 +1,5 @@
 ---
-title: Unable to open protected Power BI Desktop file - known issue
+title: Open known issue - Unable to open protected Power BI Desktop file
 description: A known issue is posted where you may be unable to open a protected Power BI Desktop file.
 author: jessicamo
 ms.author: mihart

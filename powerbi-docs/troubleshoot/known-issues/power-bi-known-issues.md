@@ -12,7 +12,7 @@ ms.custom:
 
 # Power BI known issues
 
-This page lists all known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed.
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed.
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
