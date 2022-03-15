@@ -189,14 +189,14 @@ X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
 }
 ```
 
-## Design features
+## Design aspects
 
 Before setting up a profile-based multi-customer solution, you should be aware of the following issues:
 
 * [Scalability](#scalability)
 * [Automation & operational complexity](#automation-and-operational-complexity)
 * [Multi-Geo needs](#multi-geo-needs)
-* [Cost](#cost)
+* [Cost efficiency](#cost-efficiency)
 * [Row level security](#row-level-security)
 
 ### Scalability
@@ -227,9 +227,9 @@ Multi-Geo support for Power BI Embedded means that ISVs and organizations that b
 
 For compliance reasons, you may still want to create multiple Power BI tenants in different regions. Read more about [multi-geo](../../admin/service-admin-premium-multi-geo.md).
 
-### Cost
+### Cost efficiency
 
-Application developers using Power BI Embedded need to [purchase a Power BI Embedded capacity](move-to-production.md). The profile-based separation model works well with capacities for the following reasons:
+Application developers using Power BI Embedded need to [purchase a Power BI Embedded capacity](move-to-production.md). The profile-based separation model works well with capacities because:
 
 * The smallest object you can independently assign to a capacity is a [workspace](pbi-glossary.md#workspace) (you can't assign a report, for example). By separating customers by profiles, you get different workspaces - one per customer. This way, you get full flexibility to manage each customer according to their performance needs, and optimize capacity utilization by scaling up or down. For example, you can manage large and essential customers with high volume and volatility in a separate capacity to ensure a consistent level of service, while grouping smaller customers in another capacity to optimize costs.
 
