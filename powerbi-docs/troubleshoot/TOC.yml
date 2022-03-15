@@ -16,8 +16,6 @@
       href: ../admin/service-admin-health.md       
     - name: Service interruption notifications
       href: ../service-interruption-notifications.md
-    - name: Move between regions
-      href: ../admin/service-admin-region-move.md
     - name: Troubleshoot deployment pipelines
       href: ../create-reports/deployment-pipelines-troubleshooting.yml  
     - name: Troubleshoot relationships in Power BI models
@@ -107,5 +105,7 @@
       href: ../admin/power-bi-cannot-sign-in.md
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
+    - name: Move your tenant between regions
+      href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
       href: ../fundamentals/service-tips-for-finding-help.md
