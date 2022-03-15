@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
-ms.date: 03/13/2022  
+ms.date: 03/15/2022  
 ms.custom:  
 ---
 
@@ -16,7 +16,7 @@ This page lists all known issues for Power BI features. Before submitting a Supp
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
-## Known issues by bug ID
+## Active known issues
 
 Select the **Title** to view more information about that specific known issue.
 
