@@ -304,10 +304,7 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Set up multi tenancy using service principal profiles](../../admin/service-premium-what-is.md)
-
->[!div class="nextstepaction"]
->[Migrating to service principal profiles](migration-to-profiles.md)
+>[Learn more about service principals](embed-service-principal.md)
 
 >[!div class="nextstepaction"]
 >[Security white paper](/power-bi/guidance/whitepaper-powerbi-security)
