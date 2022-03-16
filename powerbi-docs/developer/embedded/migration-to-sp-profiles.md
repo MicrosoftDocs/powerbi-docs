@@ -20,7 +20,7 @@ This article describes how to get better scalability by migrating your Power BI 
 >
 > Not all applications benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps don't need to migrate:
 >
-> * Small applications that maintain one service principal with a small number of objects.
+> * Small apps that maintain one service principal with a small number of objects.
 > * Apps that use one multiple service principal per customer
 
 ## Prerequisites
