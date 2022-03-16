@@ -63,6 +63,7 @@ Keep the following considerations and limitations in mind when working with Azur
 * [Sovereign cloud](https://powerbi.microsoft.com/clouds/) support is currrently limited to US Department of Defense and US Government Community Cloud High.
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
+* Azure Log Analytics doesn't support tenant migration.
 * Activities are only captured for datasets physically hosted within the Premium workspace where you configure logging. For example, if you configure logging for Premium workspace A, you will not see logs for any reports within that use datasets hosted in [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/#overview). You will also not see any logs for [shared datasets](../../connect-data/service-datasets-share.md) that are not in Premium workspace A. To capture activities for shared datasets, configure logging on the workspace that contains the shared dataset, not the workspace that contains the report.
 * You cannot connect multiple Power BI workspaces to the same Log Analytics workspace at this time. 
 * Datasets created on the web by uploading a CSV file do not generate logs.
