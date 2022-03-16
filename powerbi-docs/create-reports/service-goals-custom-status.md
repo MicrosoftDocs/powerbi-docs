@@ -20,8 +20,8 @@ Statuses are an integral part of goal tracking. In some scenarios the statuses t
 
 When you open a scorecard in edit mode, there are two entry points to start customizing your statuses.  
 
-1. Select the **Settings** gear icon.
-1. Select the **Statuses** section of the **Edit scorecard settings** pane.
+* Select the **Settings** gear icon, or
+* Select the **Statuses** section of the **Edit scorecard settings** pane.
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-2.png" alt-text="A view of the edit status pane open, customizing statuses.":::
 
@@ -52,14 +52,13 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
 ## Delete statuses
 
-Consider what happens when you delete a status. When you delete a status, it's no longer available in your status list. You no longer see the deleted status as an option when you perform check-ins. 
+When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your dataset and check-in history as long as we can.
 
-However, we preserve the history in your dataset and check-in history as long as we can.
-If a goal uses a status that is then deleted, we preserve the goal’s deleted status until you change it, either by editing or by a check-in. For example in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the goal statuses that use that status.
+If a goal uses a status that is then deleted, we preserve the goal’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the goal statuses that use that status.
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="A view of the edit status pane open.":::
 
-With this update, you can customize the statues to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for goals to work seamlessly for your organization.
+You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for goals to work seamlessly for your organization.
 
 ## Next steps
 
