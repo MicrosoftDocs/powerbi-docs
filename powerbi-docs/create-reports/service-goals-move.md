@@ -12,7 +12,7 @@ ms.date: 03/14/2022
 ---
 # Arrange columns and goals in Power BI scorecards (preview)
 
-In some scenarios, you may want to reorder the goals in a scorecard, or make one goal a subgoal of another. You may also want hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving goals and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
+In some scenarios, you may want to reorder the goals in a scorecard, or make one goal a subgoal of another. You may also want to hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving goals and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
