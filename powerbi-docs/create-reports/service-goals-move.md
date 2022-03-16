@@ -41,7 +41,7 @@ It's easy to reorder goals on the scorecard, or make them subgoals.
 
     :::image type="content" source="media/service-goals-move/power-bi-goals-edit-view-columns.png" alt-text="Screenshot of moving a column in the Edit view columns pane.":::
 
-1. You can also re-order columns in this view but dragging them up or down.
+1. You can also re-order columns in this view by dragging them up or down.
 1. Select **Apply**.
 
 ## Next steps
