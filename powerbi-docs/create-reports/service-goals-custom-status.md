@@ -52,7 +52,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
 ## Delete statuses
 
-When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your dataset and check-in history as long as we can.
+When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your dataset and check-in history for up to 12 deleted statuses.
 
 If a goal uses a status that is then deleted, we preserve the goal’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the goal statuses that use that status.
 
