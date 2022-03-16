@@ -30,8 +30,11 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
-- Your users have a Power BI Pro or Premium Per User (PPU) license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) for users with a free Power BI license.
-- Users have signed in to the Power BI service to activate their Power BI license.
+- Ensure the Power BI app is enabled in the Teams Admin center apps list. 
+- Your users with a Power BI (Free) license can access personal analytics including using the built-in Teams analytics report and create reports in their My workspace.
+- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)] (../enterprise/service-premium-what-is.md).
+- Your users have a Power BI Pro or Premium Per User (PPU) license, can share content with others or build content in workspaces.
+- Users will need to sign-in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
 ## Grant access to reports
