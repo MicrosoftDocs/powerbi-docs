@@ -44,12 +44,12 @@ The image below shows the datasets hub in the Power BI service.
 
 The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
 
-1. Click to view details page and to explore related reports.
-1. Click to view options.
-1. Click to view a summary of details.
-1. A grayed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Click to view details page.
+1. Click to display options menu.
+1. Click to view details summary.
+1. A greyed-out icon indicates that you don't have permissions to access that dataset's details page. Datasets with greyed-out icons only show up for you in the list if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
-1. Click to see dataset description.
+1. Hover to view dataset description.
 
 The sections below describe these sections and the actions you can perform.
 
