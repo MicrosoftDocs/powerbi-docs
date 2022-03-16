@@ -13,12 +13,11 @@ ms.date: 03/16/2022
 
 This article describes how to get better scalability by migrating your Power BI embedded analytics multi-tenancy applications to the service principal profiles model.
 
-> [!NOTE]
-> This article is aimed at organizations that already have a multi-customer SaaS ([software as a service](pbi-glossary.md#saas)) app that supports multiple customers from a single Power BI tenant.
-
 [Service principal profiles](embed-multi-tenancy.md) can make it easier to manage organizational content in Power BI and use your capacities more efficiently.
 
-> [!IMPORTANT]
+> [!NOTE]
+> This article is aimed at organizations that already have a multi-customer [SaaS (software as a service](pbi-glossary.md#saas)) app that supports multiple customers from a single Power BI tenant.
+>
 > Not all applications benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps don't need to migrate:
 >
 > * Small applications that maintain one service principal with a small number of objects.
