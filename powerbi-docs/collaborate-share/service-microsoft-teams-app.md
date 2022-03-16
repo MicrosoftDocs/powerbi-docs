@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/04/2022
+ms.date: 03/16/2022
 ---
 
 # Add the Power BI app to Microsoft Teams
 
-This article describes how you can install, pin, and interact with Power BI right inside Microsoft Teams. The Power BI personal app brings the entire basic Power BI service experience to Microsoft Teams.
+This article describes how you can install, pin, and interact with Power BI directly inside Microsoft Teams. The Power BI personal app brings the entire basic Power BI service experience to Microsoft Teams.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-teams.png" alt-text="Screenshot of Power BI app in Microsoft Teams.":::
 
