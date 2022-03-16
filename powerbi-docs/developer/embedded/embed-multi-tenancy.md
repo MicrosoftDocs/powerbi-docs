@@ -287,7 +287,7 @@ Generally, you have one report and one dataset per customer. If you have hundred
 
 #### Customizing and authoring content
 
-When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
+When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
 #### System-Managed identity
 
