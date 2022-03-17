@@ -18,21 +18,27 @@ These settings are configured in the tenant settings section of the Admin portal
 
 ## Allow XMLA endpoints and Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
+When enabled, users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-allow-xmla-endpoints-setting.png" alt-text="Screenshot of the allow x m l a endpoints and analyze in excel with on premises datasets admin setting.":::
 
 ## Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
+When enabled, users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power b i admin setting.":::
 
 ## Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search.
+When enabled, users in the organization can use external search features that rely on Azure Search.
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-global-search-setting.png" alt-text="Screenshot of the use global search for power b i admin setting.":::
 
 ## Use Azure Maps Visual
 
 When enabled, users in the organization can use the Azure Maps visual for Power BI. See [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started) for more information.
 
-:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-azure-maps-visual-setting.png" alt-text="Screenshot of the User Azure Maps visual admin setting.":::
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-azure-maps-visual-setting.png" alt-text="Screenshot of the Use Azure Maps visual admin setting.":::
 
 ## Map and filled map visuals
 
