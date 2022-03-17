@@ -28,6 +28,18 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 Users in the organization can use external search features that rely on Azure Search.
 
+## Use Azure Maps Visual
+
+When enabled, users in the organization can use the Azure Maps visual for Power BI. See [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started) for more information.
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-use-azure-maps-visual-setting.png" alt-text="Screenshot of the User Azure Maps visual admin setting.":::
+
+## Map and filled map visuals
+
+When enabled, users in the organization can use map and filled map visualizations in their reports.
+
+:::image type="content" source="media/service-admin-portal-integration/admin-integration-map-filled-map-visuals-setting.png" alt-text="Screenshot of the map and filled map visuals admin setting.":::
+
 ## Integration with SharePoint and Microsoft Lists
 
 Users in the organization can create Power BI reports directly from SharePoint and Microsoft Lists. Then they can build Power BI reports on the data in those lists and publish them back to the lists, to be visible to others who can access the list. This setting is in **Tenant settings** > **Integration settings**.
