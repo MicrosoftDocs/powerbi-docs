@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 03/17/2022
 LocalizationGroup: Administration
 ---
 
@@ -22,21 +22,22 @@ The full admin portal can be accessed by global admins and users who have the Po
 
 There are a number of controls in the Admin portal. They are listed in the table below, which provides links relevant documentation for each one.
 
-| Feature  | Description  |
-| --- | --- |
-| [Usage metrics](service-admin-portal-usage-metrics.md) | Description here. |
-| [Users](service-admin-portal-users.md) | Description here. |
-| [Premium per user](service-admin-portal-premium-per-user.md) | Description here. |
-| [Audit logs](service-admin-portal-audit-logs.md) | Description here. |
-| [Tenant settings](service-admin-portal-about-tenant-settings.md) | Description here. |
-| [Capacity settings](service-admin-portal-capacity-settings.md) | Manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. |
+| Feature | Description  |
+| :---    | :---         |
+| [Tenant settings](service-admin-portal-about-tenant-settings.md) | Enable, disable, and configure Power BI. |
+| [Usage metrics](service-admin-portal-usage-metrics.md) | View metrics about Power BI usage in your organization. |
+| [Users](service-admin-portal-users.md) | Manage users in the Microsoft 365 admin center. |
+| [Premium Per User](service-admin-portal-premium-per-user.md) | Configure auto refresh and dataset workload settings. |
+| [Audit logs](service-admin-portal-audit-logs.md) | Audit Power BI activities in the Microsoft 365 compliance center. |
+| [Capacity settings](service-admin-portal-capacity-settings.md) | Manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization |
+| [Refresh summary](service-admin-portal-refresh-summary.md) | Schedule refresh on a capacity and also view the details of refreshes that have occurred. |
 | [Embed codes](service-admin-portal-embed-codes.md) | View and manage the embed codes that have been generated for your organization to share reports publicly. |
-| [Organizational visuals](organizational-visuals.md#organizational-visuals) | Control which type of Power BI visuals users can access across the organization. |
+| [Organizational visuals](organizational-visuals.md#organizational-visuals) | View, add, and manage which type of Power BI visuals users can access across the organization. |
 | [Azure connections](service-admin-portal-azure-connections.md) | Configure and manage connections to Azure resources. |
 | [Workspaces](service-admin-portal-workspaces.md) | View and manage the workspaces that exist in your organization. |
 | [Custom branding](service-admin-portal-custom-branding.md) |  Change the look and feel of the Power BI service to match your organization's own branding. |
-| [Protection metrics](service-admin-portal-protection-metrics.md) | Description here. |
-| [Featured content](service-admin-portal-featured-content.md) |  Mnage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization. |
+| [Protection metrics](service-admin-portal-protection-metrics.md) | View a metrics to monitor and track sensitivity label usage and adoption in your organization. |
+| [Featured content](service-admin-portal-featured-content.md) |  Manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization. |
 
 ## How to get to the admin portal
 
