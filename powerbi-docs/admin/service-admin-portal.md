@@ -36,7 +36,7 @@ There are a number of controls in the Admin portal. They are listed in the table
 | [Azure connections](service-admin-portal-azure-connections.md) | Configure and manage connections to Azure resources. |
 | [Workspaces](service-admin-portal-workspaces.md) | View and manage the workspaces that exist in your organization. |
 | [Custom branding](service-admin-portal-custom-branding.md) |  Change the look and feel of the Power BI service to match your organization's own branding. |
-| [Protection metrics](service-admin-portal-protection-metrics.md) | View a metrics to monitor and track sensitivity label usage and adoption in your organization. |
+| [Protection metrics](service-admin-portal-protection-metrics.md) | View a metric to monitor and track sensitivity label usage and adoption in your organization. |
 | [Featured content](service-admin-portal-featured-content.md) |  Manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization. |
 
 ## How to get to the admin portal
