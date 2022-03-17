@@ -472,6 +472,8 @@
         href: service-goals-set-permissions.md
       - name: "Arrange goals and columns in scorecards"
         href: service-goals-move.md
+      - name: "Create custom statuses"
+        href: service-goals-custom-status.md
       - name: "Goals and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"

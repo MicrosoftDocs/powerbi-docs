@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 03/07/2022
+ms.date: 03/15/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -33,9 +33,7 @@ Your Home view will also depend on the layout you've selected. By default, you'l
 - is used frequently by your closest colleagues
 - is Getting started content
 
-If you don't see **Recommended** content, it may have been disabled by your administrator.
-
-The screenshots below show **Simplified** layout for a new user and then for a more experienced user.
+The screenshots below show a **Simplified** layout for a new user and then for a more experienced user.
 
 
 :::image type="content" source="media/end-user-home/power-bi-new-home.png" alt-text="Screenshot of Simplified view for a new user.":::
