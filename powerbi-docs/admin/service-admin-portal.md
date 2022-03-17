@@ -51,4 +51,4 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-tenant-settings.md)
+* [About tenant settings](service-admin-portal-about-tenant-settings.md)
