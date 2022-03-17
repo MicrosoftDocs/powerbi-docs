@@ -2,12 +2,12 @@
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
 author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting
-ms.date: 04/15/2020
+ms.date: 03/17/2022
 ---
 
 # Troubleshoot report performance in Power BI
@@ -55,7 +55,7 @@ If you determine there's no time pattern, next consider if slow performance is i
 - Changing architecture by using [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) (flowchart terminator 3).
 - Optimizing [on-premises data gateway performance](/data-integration/gateway/service-gateway-performance) (flowchart terminator 3).
 
-Finally, if you determine there's no time pattern _and_ slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), as described earlier, to optimize the report or model (flowchart terminator 5).
+Finally, if you determine there's no time pattern *and* slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), as described earlier, to optimize the report or model (flowchart terminator 5).
 
 When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/) (flowchart terminator 6).
 
@@ -66,6 +66,6 @@ For more information about this article, check out the following resources:
 - [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
-- Whitepaper: [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861)
+- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
