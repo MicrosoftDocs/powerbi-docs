@@ -80,4 +80,4 @@ The sections of the tenant settings page are listed in the table below.
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+* [About the Admin portal](service-admin-portal.md)
