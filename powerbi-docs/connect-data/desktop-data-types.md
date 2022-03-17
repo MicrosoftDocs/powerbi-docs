@@ -64,7 +64,7 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear to change slightly between querying data using Power Query, and then, after the data has been loaded.
 
-The engine that stores data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
+The engine that stores and queries data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
 In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and a *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Textual data with various capitalizations in Power Query":::
@@ -86,6 +86,10 @@ In the example above, the engine loads the first row of data, creates the *Addre
 
 The *Addressee* for the fourth row is compared against the names in the dictionary and is found: since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. As a result, the engine does not add a new name to the *Addressee* dictionary, instead it refers to the existing name. This is the same for the remaining rows.
 
+> [!NOTE]
+>  Since the engine that stores and queries data in Power BI is case-insensitive, special care needs to be taken when working in DirectQuery mode with a source that is case-sensitive. In this case, Power BI assumes that the source has eliminated duplicate rows and since Power BI is case-insensitive two values that differ by case only are treated as duplicate, whereas the source might not treated as such. If this happens, the final result is undefined and this situation should be avoided. If you are using DirectQuery mode and your data source is case-sensitive, please make sure to normalize casing in the source query or in Power Query.
+> 
+>
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
