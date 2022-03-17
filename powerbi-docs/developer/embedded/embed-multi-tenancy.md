@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/15/2022
+ms.date: 03/17/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -250,7 +250,7 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-### Power BI capacity considerationsembed-multi-tenancy
+### Power BI capacity limitations
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md). For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
 * To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](../../admin/service-premium-large-models.md) setting.
@@ -287,7 +287,7 @@ Generally, you have one report and one dataset per customer. If you have hundred
 
 #### Customizing and authoring content
 
-When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
+When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
 #### System-Managed identity
 
