@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/15/2022
+ms.date: 03/17/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -250,7 +250,7 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-### Power BI capacity considerationsembed-multi-tenancy
+### Power BI capacity limitations
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md). For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
 * To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](../../admin/service-premium-large-models.md) setting.
