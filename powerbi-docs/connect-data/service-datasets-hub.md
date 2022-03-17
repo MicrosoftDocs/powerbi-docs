@@ -32,6 +32,9 @@ For a dataset to show up in the datasets hub, it must be located in a [new works
 
 If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing datasets and using the capabilities available on the datasets hub.
 
+>[!NOTE]
+> To be fully functional, the datasets hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access datasets you see listed in the datasets hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
+
 ## Find the dataset you need
 
 The dataset discovery experience starts on the datasets hub page. To get to the datasets hub page:
