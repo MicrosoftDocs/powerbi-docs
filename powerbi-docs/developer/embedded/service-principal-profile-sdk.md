@@ -7,12 +7,12 @@ ms.reviewer: mshmordo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 03/17/2022
 ---
 
 # Use the Power BI SDK with service principal profiles
 
-This article explains how to use the SDK with service principal profiles.
+This article explains how to use the SDK with [service principal profiles](embed-multi-tenancy.md).
 There are two ways to connect a Power BI client to a service principal profile. You can:
 
 * [Create a client with a profile object ID](#create-a-power-bi-client-with-a-service-principal-profile)

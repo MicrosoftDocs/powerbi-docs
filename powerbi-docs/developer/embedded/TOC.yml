@@ -47,7 +47,7 @@
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
-      href: ./monitor-power-bi-embedded.md
+      href: monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
       href: embedded-faq.yml
   - name: How to
@@ -57,7 +57,9 @@
     - name: "Embed using service principal and a certificate"
       href: embed-service-principal-certificate.md
     - name: "Embed a paginated report"
-      href: embed-paginated-reports.md        
+      href: embed-paginated-reports.md   
+    - name: "Use the Power BI SDK with service principal profiles"
+      href: service-principal-profile-sdk.md   
     - name: "Move an embedded app to production"
       href: move-to-production.md          
     - name: "Export report to file"
@@ -70,8 +72,6 @@
       href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
-    - name: "Use the Power BI SDK with service principal profiles"
-      href: service-principal-profile-sdk.md
     - name: "Create an Azure Active Directory tenant"
       href: create-an-azure-active-directory-tenant.md
     - name: "Register an application"
