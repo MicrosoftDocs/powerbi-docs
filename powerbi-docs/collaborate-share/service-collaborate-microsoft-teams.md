@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 02/04/2022
+ms.date: 03/16/2022
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -30,8 +30,11 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
-- Your users have a Power BI Pro or Premium Per User (PPU) license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) for users with a free Power BI license.
-- Users have signed in to the Power BI service to activate their Power BI license.
+- Ensure the Power BI app is enabled in the Teams Admin center apps list. 
+- Your users with a Power BI (Free) license can access personal analytics including using the built-in Teams analytics report and create reports in their My workspace.
+- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
+- Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
+- Users will need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
 ## Grant access to reports
@@ -58,7 +61,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 - Users without a Power BI license or permission to access the report see a "Content is not available" message.
 - You might have issues if you use Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../fundamentals/power-bi-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
-- In US Government Community Cloud, the Power BI app for Microsoft Teams and new tab are available. However, the following experiences are not available:
+- In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences are not available:
     - Power BI messaging extension, which provides link previews, search, and link unfurling
     - Power BI activity feed notifications
     - Chat in Microsoft Teams
