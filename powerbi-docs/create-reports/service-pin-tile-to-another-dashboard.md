@@ -31,7 +31,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is to copy 
    * **Existing dashboard**: select the name of the dashboard from the dropdown.
    * **New dashboard**: enter the name of the new dashboard.
    
-    :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pin-to-dashboard.png" alt-text="'Pin to dashboad' dialog.":::
+    :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pin-to-dashboard.png" alt-text="'Pin to dashboard' dialog.":::
 
 5. Select **Pin**.
 
@@ -41,7 +41,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is to copy 
 
 7. A Success message near the top right corner lets you know the visualization was pinned to the selected dashboard.
    
-    :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pinned-to-dashboard.png" alt-text="'Pinned to dashboad' dialog.":::
+    :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pinned-to-dashboard.png" alt-text="'Pinned to dashboard' dialog.":::
 
 8. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization.
 
