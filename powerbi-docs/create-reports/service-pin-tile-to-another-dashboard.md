@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/02/2022
+ms.date: 03/17/2022
 LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
+One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is to copy it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
 
 > [!NOTE]
 > You cannot pin tiles from shared dashboards.
@@ -22,7 +22,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by copyi
 ## Pin a tile to another dashboard
 1. [Get data](../connect-data/service-get-data.md). This example uses the [IT Spend Analysis sample](sample-it-spend.md).
 2. Open a [dashboard](../consumer/end-user-dashboards.md).
-3. Hover over the tile you want to pin and click on the pushpin icon. 
+3. Hover over the tile you want to pin and select the pushpin icon. 
    
     :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pushpin.png" alt-text="Power B I 'Pin visual' pushpin.":::
 
@@ -35,11 +35,11 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by copyi
 
 5. Select **Pin**.
 
-6. If this dashboard does not yet have a sensitivity label, you are prompted to specify one.
+6. If this dashboard does not yet have a sensitivity label, Power BI prompts you to specify one.
 
     :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-add-sensitivity-label.png" alt-text="'Add sensitivity label' dialog.":::
 
-7. A dialog (near the top right corner) lets you know the visualization was pinned to the selected dashboard.
+7. A Success message near the top right corner lets you know the visualization was pinned to the selected dashboard.
    
     :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pinned-to-dashboard.png" alt-text="'Pinned to dashboad' dialog.":::
 
