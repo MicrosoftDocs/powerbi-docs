@@ -12,7 +12,7 @@ ms.date: 03/18/2022
 
 # Service principal profiles in Power BI Embedded
 
-This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the [ISV](pbi-glossary.md#independent-software-vendor-isv) to build a scalable application that enables better customer data isolation and establishes [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
+This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
 > [!NOTE]
 > For the sake of simplicity, all ISVs and Power BI Embedded Enterprise application owners will be referred to as ISVs in this article.
