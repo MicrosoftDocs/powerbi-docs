@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 03/17/2022
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -306,6 +306,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Any uses of external images or themes aren't available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
 * Usage metrics do *not* work when private endpoints are enabled.
+* The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
 * Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link** in Power BI.
 * Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
