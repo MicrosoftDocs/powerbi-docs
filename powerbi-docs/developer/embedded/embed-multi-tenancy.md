@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/17/2022
+ms.date: 03/18/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -307,4 +307,4 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 >[Learn more about service principals](embed-service-principal.md)
 
 >[!div class="nextstepaction"]
->[Security white paper](/power-bi/guidance/whitepaper-powerbi-security)
+>[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
