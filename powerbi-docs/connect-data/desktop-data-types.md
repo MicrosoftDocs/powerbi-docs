@@ -87,7 +87,7 @@ In the example above, the engine loads the first row of data, creates the *Addre
 The *Addressee* for the fourth row is compared against the names in the dictionary and is found: since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. As a result, the engine does not add a new name to the *Addressee* dictionary, instead it refers to the existing name. This is the same for the remaining rows.
 
 > [!NOTE]
->  Since the engine that stores and queries data in Power BI is case-insensitive, special care needs to be taken when working in DirectQuery mode with a source that is case-sensitive. In this case, Power BI assumes that the source has eliminated duplicate rows and since Power BI is case-insensitive two values that differ by case only are treated as duplicate, whereas the source might not treated as such. If this happens, the final result is undefined and this situation should be avoided. If you are using DirectQuery mode and your data source is case-sensitive, please make sure to normalize casing in the source query or in Power Query.
+>  Since the engine that stores and queries data in Power BI is case-*in*sensitive, special care must be taken when working in DirectQuery mode with a source that *is* case-sensitive. Power BI assumes that the source has eliminated duplicate rows; since Power BI is case-insensitive, two values that differ by case only are treated as duplicate, whereas the source might not treated as such. In such cases the final result is undefined and should be avoided. If you are using DirectQuery mode and your data source is case-sensitive, you must normalize casing in the source query or in Power Query.
 > 
 >
 
