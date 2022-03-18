@@ -130,6 +130,14 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 For datasets using the large dataset storage format, Power BI automatically sets the default segment size to 8 million rows to strike a good balance between memory requirements and query performance for large tables. This is the same segment size as in Azure Analysis Services. Keeping the segment sizes aligned helps ensure comparable performance characteristics when migrating a large data model from Azure Analysis Services to Power BI.
 
+## Checking column usage
+
+Large dataset format allows identifying usage pattern and state of the models by querying DMV. Using the below query, you can get Temperature and Last Accessed statistic for each column in the dataset. Temperature indicates the usage frequency wile Last Accessed is the last date when the column was queried. This is enabled by default when Large dataset mode is enabled. The dataset will have to be refreshed for the statistic to populate. You can read more about this feature [here](https://powerbi.microsoft.com/en-us/blog/announcing-on-demand-loading-capabilities-for-large-models-in-power-bi/).
+
+```sql
+SELECT * from SYSTEMRESTRICTSCHEMA ($System.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS, [DATABASE_NAME] = ‘<Dataset Name>’)
+```
+
 ## Considerations and limitations
 
 Keep in mind the following restrictions when using large datasets:
