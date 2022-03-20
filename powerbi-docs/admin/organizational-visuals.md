@@ -146,10 +146,10 @@ Use this method to add a new Power BI visual from a **.pbiviz** file.
     * **Description** - Provide a short description of the visual to give more context for the user.
 
     * **Access** - This section has two options:
-    
-        * Select whether users in your organization can access this visual. This setting is enabled by default.
 
-        * Select whether this visual will appear in the visualization pane of the users in your organization. This setting is disabled by default. For more information, see [add a visual to the visualization pane](#add-a-visual-to-the-visualization-pane).
+      * Select whether users in your organization can access this visual. This setting is enabled by default.
+
+      * Select whether this visual will appear in the visualization pane of the users in your organization. This setting is disabled by default. For more information, see [add a visual to the visualization pane](#add-a-visual-to-the-visualization-pane).
 
     ![A screenshot of the add visual pop up menu with the options described in step two.](media/organizational-visuals/add-visual.png)
 
