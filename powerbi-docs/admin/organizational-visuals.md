@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 03/20/2022
 ---
 
 # Manage Power BI visuals admin settings
@@ -49,14 +49,14 @@ Follow the instructions below to enable users in your organization upload **.pbi
 
 1. Expand the **Allow visuals created using the Power BI SDK** settings.
 
-2. Click **Enabled**.
+2. Select **Enabled**.
 
 3. Choose who can upload **.pbiviz** and AppSource visuals:
 
     * Select **The entire organization** option to allow everyone in your organization to upload **.pbiviz** files, and add visuals from AppSource.
     * Select the **Specific security groups** option to manage uploading **.pbiviz** files, and adding visuals from AppSource using security groups. Add the security groups you want to manage to the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
 
-4. Click **Apply**.
+4. Select **Apply**.
 
    ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the allow visuals created using the Power B I S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
 
@@ -69,11 +69,11 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 
 ### Certified Power BI visuals
 
-When this setting is enabled, only [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) will render in your organization's reports and dashboards. Power BI visuals from AppSource or files, that are not certified, will return an error message.
+When this setting is enabled, only [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) will render in your organization's reports and dashboards. Power BI visuals from AppSource or files that aren't certified, will return an error message.
 
 1. From the admin portal, select **Add and use certified visuals only**.
 
-2. Click **Enabled**.
+2. Select **Enabled**.
 
 3. Select **Apply**.
 
@@ -88,18 +88,18 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 
 ### Export data to file
 
-When this setting is enabled, the user can download data from a custom visual into a file on their storage device.
+When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../guidance/admin-tenant-settings.md#export-data) settings.
 
-1. Expand the **Allow downloads fro custom visuals** settings.
+1. Expand the **Allow downloads from custom visuals** settings.
 
-2. Click **Enabled**.
+2. Select **Enabled**.
 
 3. Choose who can download files:
 
    * Select **The entire organization** option to allow everyone in your organization to download data from a visual into a file.
    * Select the **Specific security groups** option to limit downloading files to specific security groups. Enter the security groups you want in the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
 
-4. Click **Apply**.
+4. Select **Apply**.
 
    :::image type="content" source="/media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I allow downloads from custom visuals settings.":::
 
@@ -110,7 +110,7 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 |Software\Policies\Microsoft\Power BI Desktop\    |AllowCVToExportDataToFile    |0 - Disable </br>1 - Enable (default)         |
 |
 
-Note that when `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only when:
+When `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only if:
 
 * The feature switch in the admin portal is enabled.
 * The user is logged on.
@@ -165,17 +165,17 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
     ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded, and the from app source option is selected.](media/organizational-visuals/add-visual-from-appsource.png)
 
-2. In the **Power BI visuals** window, find the AppSource visual you want to add, and click **Add**. Once uploaded, the visual will display in the organizational visuals list.
+2. In the **Power BI visuals** window, find the AppSource visual you want to add, and select **Add**. Once uploaded, the visual will display in the organizational visuals list.
 
 ### Add a visual to the visualization pane
 
 You can pick visuals from the organizational visuals page to automatically show on the visualization pane of all the users in your organization.
 
-1. In the row of the visual you want to add, click **settings**.
+1. In the row of the visual you want to add, select **settings**.
 
     ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded. The from app source option is selected and a list of app source visuals is displayed. The screenshot also shows a cog settings menu button selected next to one of the visuals.](media/organizational-visuals/organizational-pane.png)
 
-2. Enable the visualization pane setting and click **Update**.
+2. Enable the visualization pane setting and select **Update**.
 
     ![A screenshot showing the Visual Settings dialog box with the second button in the access area titled: the visual will appear in the visualization pane for the entire organization, enabled.](media/organizational-visuals/update-organizational-pane.png)
 
@@ -190,7 +190,7 @@ To permanently delete a visual, select the trash bin icon for the visual in the 
 
 You can disable a **.pbiviz** visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
 
-1. In the row of the **.pbiviz** visual you want to disable , click **settings**.
+1. In the row of the **.pbiviz** visual you want to disable, select **settings**.
 
 2. In the **Access** section, disable the setting: *Users in the organization can access, view, share, and interact with this visual*.
 
@@ -207,11 +207,11 @@ AppSource visuals are updated automatically. Once a new version is available fro
 
 To update a **.pbiviz** visual, follow these steps to replace the visual.
 
-1. In the row of the visual you want to add , click **settings**.
+1. In the row of the visual you want to add, select **settings**.
 
-2. Click **Browse**, and select the **.pbiviz** you want to replace the current visual with.
+2. Select **Browse**, and then select the **.pbiviz** you want to replace the current visual with.
 
-3. Click **Update**.
+3. Select **Update**.
 
 ### Replace a visual from a file with a visual from AppSource
 
