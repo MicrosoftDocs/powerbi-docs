@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 02/13/2022
+ms.date: 03/20/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -569,10 +569,6 @@ See *real-time streaming*.
 ### Subscriptions, Subscribe
 
 You can subscribe to report pages, apps, and dashboards and receive emails containing a snapshot. Requires a Power BI Pro license.
-
-### Subtenant
-
-Some Power BI tenants can have multiple Power BI applications. These applications can have multiple subtenants dedicated to particular customers or projects that require isolation.
 
 ### Summarization
 

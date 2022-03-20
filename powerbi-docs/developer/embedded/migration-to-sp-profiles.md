@@ -6,17 +6,17 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 03/16/2022
+ms.date: 03/20/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
 
-This article describes how to get better scalability by migrating your Power BI embedded analytics multi-tenancy applications to the service principal profiles model.
+This article describes how to get better scalability by migrating your Power BI embedded analytics multi-customer applications to the service principal profiles model.
 
 [Service principal profiles](embed-multi-tenancy.md) can make it easier to manage organizational content in Power BI and use your capacities more efficiently.
 
 > [!NOTE]
-> This article is aimed at organizations that already have a multi-customer [SaaS (software as a service](pbi-glossary.md#saas)) app that supports multiple customers from a single Power BI tenant.
+> This article is aimed at organizations that already have an app that supports multiple customers from a single Power BI tenant.
 >
 > Not all applications benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps don't need to migrate:
 >
@@ -30,7 +30,7 @@ It's important to read about [service principal profiles](embed-multi-tenancy.md
 You'll also need to do the following steps:
 
 * Set up the service principal by following **the first three steps** of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
-* From a Power BI tenant admin account, enable creating profiles in the tenant.
+* From a Power BI tenant admin account, [enable creating profiles in the tenant](embed-multi-tenancy.md#prerequisites).
 
  :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
@@ -46,9 +46,9 @@ Migrating to service principal profiles involves the following steps:
 
 ### Create Profiles (Required)
 
-Use [Profiles REST API](/rest/api/power-bi/) with the service principal you created to create one profile for each application [subtenant](pbi-glossary.md#subtenant).
+Use [Profiles REST API](/rest/api/power-bi/) with the service principal you created to create one profile for each customer.
 
-It's a good idea to save a mapping of each data tenant ID with its corresponding profile ID in your database. You'll need this mapping later to make API calls with the tenant profile.
+It's a good idea to save a mapping of each data customer ID with its corresponding profile ID in your database. You'll need this mapping later to make API calls with the tenant profile.
 
 ### Organize your workspaces
 
@@ -62,9 +62,9 @@ Now you have a profile and a workspace for each customer. If you created new wor
 
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
-* If your app uses one dataset with row level security (RLS) to provide different data to different customers, we recommend creating [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer). This means you'll have to recreate your datasets.
+* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by migrating it to [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 
-Once the objects are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](/rest/api/power-bi/imports/post-import-in-group).
+Once the objects are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
 
 ## Change the application codes to use profiles
 
