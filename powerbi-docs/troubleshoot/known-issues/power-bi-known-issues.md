@@ -29,5 +29,5 @@ Select the **Title** to view more information about that specific known issue.
 
 ## Next steps
 
-[Service level outages](https://support.powerbi.com)
+[Service level outages](https://support.powerbi.com)    
 [Get your questions answered by the Power BI community](https://community.powerbi.com)
