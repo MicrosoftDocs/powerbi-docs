@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/12/2022
+ms.date: 03/21/2022
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -135,7 +135,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![Image of "Available" button.](../media/yes.png)|![Image of "Not available" button.](../media/no.png)|![Image of "Not available" button.](../media/no.png)|
 |[Large models](service-premium-large-models.md) | ![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png)| Not planned |
-|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H1|CY2022-H1|CY2022-H1|
+|[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|CY2022-H2|CY2022-H2|CY2022-H2|
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
 
