@@ -27,9 +27,9 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Get started creating in the Power BI service
-      itemType: tutorial
-      url: fundamentals/service-get-started.md
+    - title: Create automated partitions with incremental dataset refresh
+      itemType: concept
+      url: connect-data/incremental-refresh-overview.md
     # Card
     - title: Embed a Power BI report in an application
       itemType: tutorial
