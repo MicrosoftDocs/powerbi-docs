@@ -198,7 +198,7 @@ If you want to add link to your report that points to another Power BI item, you
 
 ## Considerations and limitations
 
-Report-level bookmark values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* are not supported.
+Deep links to reports with a bookmarkGuid param are supported in the Mobile apps only when the value of the bookmarkGuid parameter has the standard 36-character GUID format. Links where the bookmarkGuid parameter value has the format *BookmarkXXXXXXXXXXXXXXXXXXX* are not supported.
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
