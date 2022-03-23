@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 03/23/2022
 ---
 # Create a link to a specific location in the Power BI mobile apps
 You can use links to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
