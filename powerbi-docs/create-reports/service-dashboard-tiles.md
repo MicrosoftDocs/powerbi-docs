@@ -13,6 +13,8 @@ LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
