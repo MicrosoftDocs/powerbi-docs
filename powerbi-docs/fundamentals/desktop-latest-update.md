@@ -46,7 +46,7 @@ The following updates are new to Power BI Desktop this month:
 * New Format pane to be Generally Available in May (preview)  [[video]](https://youtu.be/6BpiFBCCS5A?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245361)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
 * Error bars (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=64)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245362) 
 * Dynamic format strings now supported for all chart elements  [[video]](https://youtu.be/6BpiFBCCS5A?t=640)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245363)  
-* Updates to the Azure Maps visual (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=690)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245364)  
+* Updates to the Azure Maps visual (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=690)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245364)  [[Geocoding article]](/azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context) [[Pie chart article]](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context/power-bi/fundamentals/desktop-format-pane)
 * Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/power-bi/enterprise/service-security-sensitivity-label-overview) 
 * Multi-row card selection  [[video]](https://youtu.be/6BpiFBCCS5A?t=1003)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245366)
 
@@ -65,12 +65,6 @@ The following updates are new to Power BI Desktop this month:
 * Many new visuals and updates [[video]](https://youtu.be/6BpiFBCCS5A?t=1417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245384)
 
 
-### Other
-* Quickly create reports from SharePoint document libraries  [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245389)  
-* Changing the default Power BI Home layout   [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245390)  
-
-
-
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
@@ -81,6 +75,8 @@ The following updates are new to the Power BI service this month:
 
 * Datasets hub improvements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1096)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245374)   [[article]](/power-bi/connect-data/service-datasets-hub)
 * Power BI Goals enhancements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245375)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Quickly create reports from SharePoint document libraries  [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245389)   [[article]](/power-bi/create-reports/service-quick-create-sharepoint-list)
+* Changing the default Power BI Home layout   [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245390)  [[article]](/power-bi/consumer/end-user-home)
 
 
 ---

@@ -201,7 +201,7 @@ Before setting up a profile-based multi-customer solution, you should be aware o
 
 ### Scalability
 
-By separating the data into separate datasets for each customer, you minimize the need for [large datasets](../../admin/service-premium-large-models.md). When the capacity gets overloaded, it can evict unused datasets to free memory for active datasets. This optimization is impossible for a [single large dataset](#row-level-security). By using multiple datasets, you can also separate tenants into multiple Power BI capacities if necessary.
+By separating the data into separate datasets for each customer, you minimize the need for [large datasets](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused datasets to free memory for active datasets. This optimization is impossible for a [single large dataset](#row-level-security). By using multiple datasets, you can also separate tenants into multiple Power BI capacities if necessary.
 
 Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
@@ -252,9 +252,9 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md). For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
-* To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](../../admin/service-premium-large-models.md) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
+* To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
 * Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
 ### Change a service principal
