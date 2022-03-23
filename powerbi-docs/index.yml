@@ -116,7 +116,7 @@ conceptualContent:
         - url: admin/service-admin-portal.md
           itemType: how-to-guide
           text: Admin portal settings
-        - url: service-admin-how-to-use-the-same-account-as-azure.md
+        - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
           itemType: how-to-guide
           text: Use the same account for Power BI and Azure
       # footerLink (optional)
