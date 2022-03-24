@@ -37,7 +37,7 @@ All the data is currently sourced from the raw dataset
 
 ### Report
 
-- The Audit Log Search report included in the workspace is used to monitor activities and drill down on specific events. You can learn more about the [Audit Log Search Report here](https://dev.azure.com/bhmerc/BYOLATemplateApps/_wiki/wikis/BYOLATemplateApps.wiki/56/Audit-Log-Search-Report)
+- The Audit Log Search report included in the workspace is used to monitor activities and drill down on specific events. You can learn more about the [Audit Log Search Report here](service-admin-monitoring-audit-log-search.md)
 - The Audit Log Search report is connected to the raw dataset
 - The raw dataset can be used to build additional reports in other workspaces
 
