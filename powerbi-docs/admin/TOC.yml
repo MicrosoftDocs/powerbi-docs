@@ -73,6 +73,13 @@
       href: service-admin-portal-usage-metrics.md
     - name: View workspace info
       href: service-admin-portal-workspaces.md
+  - name: Admin Monitoring Workspace (preview)
+    expanded: false
+    items:
+    - name: About the Admin Monitoring Workspace (preview)
+      href: service-admin-monitoring-workspace.md
+    - name: Audit Log Search Report (preview)
+      href: service-admin-monitoring-audit-log-search.md
   - name: Configure admin settings
     expanded: false
     items:
