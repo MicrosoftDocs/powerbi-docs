@@ -420,8 +420,6 @@ This section lists most of the limitations in deployment pipelines.
 
 ### Dataflow limitations
 
-* When deploying a dataflow with linked entities that reside on the same workspace, the deployment will fail.
-
 * When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
 
 * Service principal isn't supported for dataflows.
