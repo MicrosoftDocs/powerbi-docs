@@ -48,13 +48,24 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ## Edit the flow
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
+
+    :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
+
+1. Select **More options (...)** > **Edit** to configure the button:
+
+    :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Select Edit to edit the flow.":::
+
+# [Power BI service](#tab/powerbi-service)
 1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual.png" alt-text="Add any fields you want as dynamic inputs.":::
 
 1. Select **More options (...)** > **Edit** to configure the button:
 
-    :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Select Edit to edit the flow.":::
+    :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual-service.png" alt-text="Screenshot shows Edit selected in the Power Automate visual.":::
+---
 
 1. In the edit mode of the visual, you either select an existing flow to apply to the button, or create a new flow to be applied to the button.
 
@@ -94,8 +105,12 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 Optionally, you can change the button text, font color, font size, or fill color of the button. These options along with other settings are available in the **Format** pane: 
 
-:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow."::: 
+# [Power BI Desktop](#tab/powerbi-desktop)
+:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format-desktop.png" alt-text="Screenshot shows the Format pane for the flow."::: 
 
+# [Power BI service](#tab/powerbi-service)
+:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow."::: 
+---
 ## Test the flow
 
 After you have applied a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
