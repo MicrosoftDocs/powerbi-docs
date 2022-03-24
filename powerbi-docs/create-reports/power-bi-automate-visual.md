@@ -53,7 +53,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
 
-1. Select **More options (...)** > **Edit** to configure the button:
+2. Select **More options (...)** > **Edit** to configure the button:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Select Edit to edit the flow.":::
 
@@ -62,36 +62,36 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual.png" alt-text="Add any fields you want as dynamic inputs.":::
 
-1. Select **More options (...)** > **Edit** to configure the button:
+2. Select **More options (...)** > **Edit** to configure the button:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual-service.png" alt-text="Screenshot shows Edit selected in the Power Automate visual.":::
 ---
 
-1. In the edit mode of the visual, you either select an existing flow to apply to the button, or create a new flow to be applied to the button.
+3. In the edit mode of the visual, you either select an existing flow to apply to the button, or create a new flow to be applied to the button.
 
     :::image type="content" source="media/power-bi-automate-visual/apply-power-automate-flow.png" alt-text="Create a flow for a SharePoint list in Power B I.":::
 
-1. You can start from scratch or start with one of the built-in templates as an example. To start from scratch, select **New** > **Instant cloud flow**: 
+4. You can start from scratch or start with one of the built-in templates as an example. To start from scratch, select **New** > **Instant cloud flow**: 
 
     :::image type="content" source="media/power-bi-automate-visual/automate-instant-cloud-flow.png" alt-text="New Instant cloud flow."::: 
 
-1. Select **New step**.
+5. Select **New step**.
 
     :::image type="content" source="media/power-bi-automate-visual/create-flow-from-scratch.png" alt-text="Start creating a flow from scratch."::: 
 
-1. Here, you can choose a subsequent action or specify a Control if you want to specify additional logic to determine the subsequent action.
+6. Here, you can choose a subsequent action or specify a Control if you want to specify additional logic to determine the subsequent action.
 
     :::image type="content" source="media/power-bi-automate-visual/choose-actions-for-flow.png" alt-text="Choose actions for the flow.":::
 
-1. Optionally, you can reference the data field(s) as dynamic content if you want the flow to be data contextual. This example uses the Region data field to create an item in a SharePoint list. Based on the end-user’s selection, Region could have multiple values or just one.
+7. Optionally, you can reference the data field(s) as dynamic content if you want the flow to be data contextual. This example uses the Region data field to create an item in a SharePoint list. Based on the end-user’s selection, Region could have multiple values or just one.
 
     :::image type="content" source="media/power-bi-automate-visual/include-dynamic-content-for-flow-inputs.png" alt-text="Add dynamic content for the flow.":::
 
-1. After you’ve configured your flow logic, you can name the flow and select **Save**. 
+8. After you’ve configured your flow logic, you can name the flow and select **Save**. 
 
     :::image type="content" source="media/power-bi-automate-visual/save-flow.png" alt-text="Save the flow."::: 
 
-1. Select the arrow button to go to the Details page of the flow you just created:
+9. Select the arrow button to go to the Details page of the flow you just created:
 
     :::image type="content" source="media/power-bi-automate-visual/navigate-details-page-for-saved-flow.png" alt-text="Navigate to the Details page for the flow.":::
 
@@ -99,7 +99,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
     :::image type="content" source="media/power-bi-automate-visual/details-page-saved-flow.png" alt-text="The Details page for a saved flow.":::
 
-1. Select the **Apply** button :::image type="icon" source="media/power-bi-automate-visual/apply-icon.png" border="false"::: to attach the flow you’ve created to your button.
+10. Select the **Apply** button :::image type="icon" source="media/power-bi-automate-visual/apply-icon.png" border="false"::: to attach the flow you’ve created to your button.
 
 ### Format the flow
 
