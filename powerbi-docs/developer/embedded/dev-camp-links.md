@@ -6,22 +6,37 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/20/2021
+ms.date: 03/24/2022
 ---
 
 # Power BI Dev Camp
 
-[Power BI Dev Camp](https://www.powerbidevcamp.net/) (third-party site) is an educational resource for developers that want to learn more about Power BI as a developer platform. It covers topics such as Power BI embedding and the development of Power BI visuals and custom connectors.
+[Power BI Dev Camp](https://www.powerbidevcamp.net/) (third-party site) is an educational resource for developers who want to learn more about Power BI as a developer platform. It covers topics such as Power BI embedding and the development of Power BI visuals and custom connectors.
 
 This article provides links to some of the Power BI Dev Camp resources.
 
 ## Tutorials
 
-The Power BI Dev Camp tutorials are targeted towards developers who are interested in understanding how to embed Power BI items (such as reports, dashboards and tiles).
+The Power BI Dev Camp tutorials are targeted towards developers who are interested in understanding how to embed Power BI items (such as reports, dashboards and tiles) and do other basic embedding tasks.
+
+### [App owns data tutorials](#tab/app-owns-data-tutorials)
 
 * [App owns data embedding with .NET 5](https://github.com/PowerBiDevCamp/DOTNET5-AppOwnsData-Tutorial) - A tutorial that shows developers how to create a .NET 5 MVC web application that implements Power BI embedding using the *app owns data* embedding model. The tutorial covers advanced topics such as adding project support for TypeScript using `node.js`, and programming the Power BI REST API to generate multi-resource access tokens.
 
+### [User owns data tutorials](#tab/user-owns-data-tutorials)
+
 * [User owns data embedding with .NET 5](https://github.com/PowerBiDevCamp/DOTNET5-UserOwnsData-Tutorial) - A tutorial that shows developers how to create a .NET 5 MVC web application that implements Power BI embedding using the *user owns data* embedding model. The tutorial covers advanced topics such as adding project support for TypeScript using `node.js` and programming the Power BI REST API to generate multi-resource access tokens.
+
+* [NetCore user owns Data tutorial](https://github.com/PowerBiDevCamp/NetCore-UserOwnsData-Tutorial)
+A tutorial for developing web applications for Power BI using .NET Core 3.1.
+
+---
+
+* [Tabular-Object-Model-Tutorial](https://github.com/PowerBiDevCamp/Tabular-Object-Model-Tutorial)
+A tutorial and sample code programming datasets using the Tabular Object Model with Power BI Desktop and the Power BI Service via the XMLA endpoint.
+
+* [PowerBI-PowerShell-Tutorial](https://github.com/PowerBiDevCamp/PowerBI-PowerShell-Tutorial)
+Students files for the Power BI PowerShell tutorial from Power BI Dev Camp.
 
 ## Samples
 
@@ -38,6 +53,8 @@ The Power BI Dev Camp samples provide additional resources for developers who ar
 * [Salesforce app owns data embedding](https://github.com/PowerBiDevCamp/SalesforceAppOwnsDataEmbedding) - A sample project that demonstrates how to implement *app owns data* embedding with Power BI reports. This project has been created using the Salesforce developer experience (SFDX) and the Salesforce command line interface (CLI). The goal of this sample project is to provide guidance and demonstrate best practices for developers who need to implement Power BI embedding in a Salesforce environment.
 
 * [Salesforce user owns data embedding](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding) - A sample project that includes a simple single page application (SPA) that implements *user owns data* embedding with Power BI reports. The solution is built using three essential files, which include `index.html`, `app.css` and `app.js`. This solution contains an option fourth file named `loading.gif` which is used to demonstrate a white-label loading technique in which the developer can display a custom loading image, instead of the standard Power BI branded loading image.
+
+* [App owns data multi-tenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) - A developer sample project demonstrating how to use service principal profiles to manage a multi-tenant environment with Power BI and App-Owns-Data embedding.
 
 ## Videos
 
