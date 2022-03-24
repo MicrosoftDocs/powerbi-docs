@@ -108,6 +108,20 @@ Power BI uses dynamic memory management to evict inactive datasets from memory. 
 
 You should consider the impact of eviction on large models. Despite relatively fast dataset load times, there could still be a noticeable delay for users if they have to wait for large evicted datasets to be reloaded. For this reason, in its current form, the large models feature is recommended primarily for capacities dedicated to enterprise BI requirements rather than capacities mixed with self-service BI requirements. Capacities dedicated to enterprise BI requirements are less likely to frequently trigger eviction and need to reload datasets. Capacities for self-service BI on the other hand can have many small datasets that are more frequently loaded in and out of memory.
 
+## On-demand load
+
+On-demand load is enabled by default for large datasets, and can provide significantly improved report performance. With on-demand load, you get the following benefits during subsequent queries and refreshes:
+
+* Relevant data pages are loaded on-demand (paged in to memory).
+
+* Evicted datasets are quickly made available for queries.
+
+On-demand loading surfaces additional Dynamic Management View (DMV) information that can be used to identify usage patterns and understand the state of your models. You can check the *Temperature* and *Last Accessed* statistics for each column in the dataset, by running the following DMV query from SQL Server Management Studio (SSMS):
+
+```sql
+Select * from SYSTEMRESTRICTSCHEMA ($System.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS, [DATABASE_NAME] = ‘<Dataset Name>’), and then click Execute.
+```
+
 ## Checking dataset size
 
 After loading historical data, you can use [SSMS](/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
