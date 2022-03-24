@@ -12,27 +12,37 @@ LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 When you create a Power Automate visual in a Power BI report, your end-users can run an automated flow, just by clicking a button in your report. Furthermore, the flow can be data contextual, meaning that the flow inputs can be dynamic, based on the filters the end-users set.
 
 :::image type="content" source="media/power-bi-automate-visual/power-automate-visual-resized-repositioned-report.png" alt-text="Flow button resized and repositioned on the report.":::
 
 ## Add the Power Automate visual
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 1. Select the Power Automate icon from the **Visualizations** pane.
 
     ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
 
     In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate (preview)** in the **Power Platform** section.
-    
+
     ![Screenshot of selecting the Power Automate icon on the Insert tab.](media/power-bi-automate-visual/power-automate-icon-in-desktop-ribbon.png)
 
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
-1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
+# [Power BI service](#tab/powerbi-service)
+1. Select the Power Automate icon from the **Visualizations** pane.
+
+    Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
+
+---
+
+2. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
     :::image type="content" source="media/power-bi-automate-visual/automate-new-visual.png" alt-text="Power Automate new visual added to the report.":::
 
-1. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
+3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
 
 ## Edit the flow
 
