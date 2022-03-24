@@ -48,13 +48,13 @@ The Power BI Dev Camp samples provide additional resources for developers who ar
 
 * [App owns data and RLS](https://github.com/PowerBiDevCamp/AppOwnsDataWithRLS) - A sample web application built using .NET 5 and Power BI *app owns data* embedding. Created to demonstrate how to design a security authorization model, which leverages `EffectiveIdentity` and Row-level Security (RLS).
 
+* [App owns data multi-tenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) - A developer sample project demonstrating how to use service principal profiles to manage a multi-tenant environment with Power BI and App-Owns-Data embedding.
+
 * [Tenant management application for Power BI](https://github.com/PowerBiDevCamp/TenantManagement) - A .NET 5 sample application that demonstrates how to manage service principals within a large-scale Power BI embedding environment with thousands of customer tenants.
 
 * [Salesforce app owns data embedding](https://github.com/PowerBiDevCamp/SalesforceAppOwnsDataEmbedding) - A sample project that demonstrates how to implement *app owns data* embedding with Power BI reports. This project has been created using the Salesforce developer experience (SFDX) and the Salesforce command line interface (CLI). The goal of this sample project is to provide guidance and demonstrate best practices for developers who need to implement Power BI embedding in a Salesforce environment.
 
 * [Salesforce user owns data embedding](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding) - A sample project that includes a simple single page application (SPA) that implements *user owns data* embedding with Power BI reports. The solution is built using three essential files, which include `index.html`, `app.css` and `app.js`. This solution contains an option fourth file named `loading.gif` which is used to demonstrate a white-label loading technique in which the developer can display a custom loading image, instead of the standard Power BI branded loading image.
-
-* [App owns data multi-tenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) - A developer sample project demonstrating how to use service principal profiles to manage a multi-tenant environment with Power BI and App-Owns-Data embedding.
 
 ## Videos
 
