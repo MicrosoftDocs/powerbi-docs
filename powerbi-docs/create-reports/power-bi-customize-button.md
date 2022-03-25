@@ -82,7 +82,7 @@ Here's how.
  
     :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-illustration.png" alt-text="Illustration of image placement options.":::
  
-    Or choose the **Custom** option to control the icon’s **Vertical** and **Horizontal alignment**:
+    Or choose the **Custom** option to control the icon’s **Vertical alignment** and **Horizontal alignment**:
 
     :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-custom.png" alt-text="Choose the image's Vertical and Horizontal alignment.":::
 
