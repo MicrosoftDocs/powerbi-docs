@@ -18,6 +18,10 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 > [!NOTE]
 > Before you attempt to refresh a SAP BW-based report that uses Kerberos SSO, complete both the steps in this article and the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md). Using CommonCryptoLib as your SNC library enables SSO connections to both SAP BW Application Servers and SAP BW Message Servers.
 
+> [!NOTE]
+> Configuring both libraries(sapcrypto and gx64krb5) on the same gateway server is an unsupported scenario. It’s not recommended to configure both libraries on the same gateway server as it’ll lead to a mix of libraries. If you want to use both libraries, please fully separate the gateway server. For example, configure gx64krb5 for server A then sapcrypto for server B. Please remember that any failure on server A which uses gx64krb5 is not supported as gx64krb5 is no longer supported by SAP and Microsoft.
+
+
 ## Configure SAP BW to enable SSO using CommonCryptoLib
 
 > [!NOTE]
