@@ -68,11 +68,11 @@ To create the SPN for this SID against the Power BI Gateway computer, you would 
 
 `SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
 
-## Step 3: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
+### Step 3: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
 To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
-## Step 4: Configure an SPN for the gateway service account
+### Step 4: Configure an SPN for the gateway service account
 
 First, determine whether an SPN was already created for the domain account used as the gateway service account:
 
@@ -92,7 +92,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
-## Step 5: Configure Kerboeros constrained delegation
+### Step 5: Configure Kerboeros constrained delegation
 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
@@ -100,7 +100,7 @@ Depending on which approach you want to use, proceed to one of the following sec
  - [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). This is the default recommendation for most environments.
 - [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation). This is required if your data source belongs to a different domain than your gateway.
 
-### Option A: Standard Kerberos constrained delegation
+#### Option A: Standard Kerberos constrained delegation
 
 We'll now set the delegation settings for the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use the **Active Directory Users and Computers** MMC snap-in to administer and publish information in the directory. It's available on domain controllers by default; on other machines, you can enable it through Windows feature configuration.
 
@@ -146,7 +146,7 @@ Here's how to configure the delegation settings:
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
-### Option B: Resource-based Kerberos constrained delegation
+#### Option B: Resource-based Kerberos constrained delegation
 
 You use [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains) to enable single sign-on connectivity for Windows Server 2012 and later versions. This type of delegation permits front-end and back-end services to be in different domains. For it to work, the back-end service domain needs to trust the front-end service domain.
 
@@ -186,7 +186,7 @@ Complete the following configuration steps:
 
 6. In **Active Directory Users and Computers**, verify that the update is reflected in the **Attribute Editor** tab in the properties for the back-end service account. 
 
-## Step 6: Grant the gateway service account local policy rights on the gateway machine
+### Step 6: Grant the gateway service account local policy rights on the gateway machine
 
 Finally, on the machine running the gateway service (**MyGatewayMachine** in our example), grant the gateway service account the local policies **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. Perform this configuration with the Local Group Policy Editor (**gpedit.msc**).
 
@@ -208,7 +208,7 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 6. Restart the **On-premises data gateway** service process.
 
-## Step 7: Windows account can access gateway machine
+### Step 7: Windows account can access gateway machine
 
 SSO uses Windows Authentication, so make sure the Windows account can access the gateway machine. If not sure, add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine "Users" group.
 
@@ -222,30 +222,6 @@ Complete this section if **any** of the following situations apply:
 * When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests.
 
 You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
-
-For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
-
-To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
-1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
-2. Locate the group **Windows Authorization and Access Group**, which is typically found in the **Builtin** container.
-3. Double click on the group, and click on the **Members** tab.
-4. Click **Add**, and change the domain location to the domain that the gateway service account resides in.
-5. Type in the gateway service account name and click **Check Names** to verify that the gateway service account is accessible.
-6. Click **OK**.
-7. Click **Apply**.
-8. Restart the gateway service.
-
-
-
-## Configure Kerberos constrained delegation for the gateway and data source
-
-If necessary, configure an SPN for the gateway service domain account as a domain administrator and configure delegation settings on the gateway service domain account.
-
-
-   
-### Add gateway service account to Windows Authorization and Access Group if required
-
-In certain scenarios the gateway service account must be added to the Windows Authorization and Access Group. These scenarios include security hardening of the Active Directory environment, and when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
 
 For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
 
