@@ -46,7 +46,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **Key Vaults** and select the **Key Vaults** link.
+2. Search for and select the **Key Vaults** link.
 
     ![A screenshot that shows a link to the key vault in the Azure portal.](media/embed-service-principal-certificate/key-vault.png)
 
