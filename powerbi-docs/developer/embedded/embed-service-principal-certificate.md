@@ -144,15 +144,7 @@ public async Task<AuthenticationResult> DoAuthentication(){
                                                     .WithCertificate(certificate)
                                                     .WithAuthority(tenantSpecificURL)
                                                     .Build();
-    try
-    {
-        authenticationResult = await clientApp.AcquireTokenForClient(Scope).ExecuteAsync();
-    }
-    catch (MsalException)
-    {
-        throw;
-    }
-    return authenticationResult
+    return await clientApp.AcquireTokenForClient(Scope).ExecuteAsync();
 }
 ```
 
