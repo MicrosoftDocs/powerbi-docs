@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 07/18/2021
+ms.date: 03/27/2022
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -113,16 +113,10 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
     var keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(serviceTokenProvider.KeyVaultTokenCallback));
     CertificateBundle certificate = null;
     SecretBundle secret = null;
-    try
-    {
-        certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
-        secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
-    }
-    catch (Exception)
-    {
-        return null;
-    }
 
+    certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
+    secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
+    
     return new X509Certificate2(Convert.FromBase64String(secret.Value));
 }
 ```
