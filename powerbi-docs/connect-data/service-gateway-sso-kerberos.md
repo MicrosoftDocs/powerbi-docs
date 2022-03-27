@@ -1,13 +1,13 @@
 ---
 title: Configure Kerberos-based SSO from Power BI service to on-premises data sources
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
-author: arthiriyer
-ms.author: arthii
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/07/2021
+ms.date: 03/27/2022
 LocalizationGroup: Gateways
 ---
 
@@ -22,12 +22,36 @@ Several items must be configured for Kerberos constrained delegation to work pro
 > [!NOTE]
 > Using DNS aliasing with SSO is not supported.
 
+## Setup guide outline
 
-### Install and configure the Microsoft on-premises data gateway
+The steps required for configuring gateway single sign-on are outlined below.
+
+1. Complete all the steps in Section 1: Basic configuration.
+
+1. Depending on your Active Directory environment and the data sources used, you may need to complete some of all of the configuration described in Section 2: Environment-specific configuration.
+
+    The possible scenarios that may require additional configuration are listed below:
+    
+    1. Your Active Directory environment is security hardened. See Section 2.1.
+    1. When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See Section 2.1.
+    1. You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. See section 2.2.
+    1. You plan to use an SAP HANA data source with SSO. See section 2.3.
+    1. You plan to use an SAP BW data source with SSO. See section 2.3.
+    1. You plan to use a Teradata data source with SSO. See section 2.3.
+
+1. Validate your configuration in Section 3 to ensure that SSO is setup correctly.
+
+## Section 1: Basic configuration
+
+### Step 1: Install and configure the Microsoft on-premises data gateway
 
 The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
-### Run the gateway Windows service as a domain account
+### Step 2: Configure the Gateway service account
+
+Option A below is the recommended configuration unless you have Azure AD Connect configured and user accounts are synchronized. In that case option B is recommended.
+
+#### Option A: Run the gateway Windows service as a domain account
 
 In a standard installation, the gateway runs as the machine-local service account, **NT Service\PBIEgwService**.
 
@@ -35,7 +59,7 @@ In a standard installation, the gateway runs as the machine-local service accoun
 
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
-
+#### Option B: Configure computer for Azure AD Connect
 If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.The local service SID for NT SERVICE/PBIEgwService is as follows: 
 
 `S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
@@ -44,15 +68,11 @@ To create the SPN for this SID against the Power BI Gateway computer, you would 
 
 `SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
 
-## Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
+## Step 3: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
 To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
-## Configure Kerberos constrained delegation for the gateway and data source
-
-If necessary, configure an SPN for the gateway service domain account as a domain administrator and configure delegation settings on the gateway service domain account.
-
-### Configure an SPN for the gateway service account
+## Step 4: Configure an SPN for the gateway service account
 
 First, determine whether an SPN was already created for the domain account used as the gateway service account:
 
@@ -71,35 +91,16 @@ First, determine whether an SPN was already created for the domain account used 
    ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
-   
-### Add gateway service account to Windows Authorization and Access Group if required
 
-In certain scenarios the gateway service account must be added to the Windows Authorization and Access Group. These scenarios include security hardening of the Active Directory environment, and when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
+## Step 5: Configure Kerboeros constrained delegation
 
-For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
-To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
-1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
-2. Locate the group **Windows Authorization and Access Group**, which is typically found in the **Builtin** container.
-3. Double click on the group, and click on the **Members** tab.
-4. Click **Add**, and change the domain location to the domain that the gateway service account resides in.
-5. Type in the gateway service account name and click **Check Names** to verify that the gateway service account is accessible.
-6. Click **OK**.
-7. Click **Apply**.
-8. Restart the gateway service.
+Depending on which approach you want to use, proceed to one of the following sections. Don't complete both sections:
+ - [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). This is the default recommendation for most environments.
+- [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation). This is required if your data source belongs to a different domain than your gateway.
 
-### Decide on the type of Kerberos constrained delegation to use
-
-You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. Use resource-based delegation (requires Windows Server 2012 or later) if your data source belongs to a different domain than your gateway. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
-
- Depending on which approach you want to use, proceed to one of the following sections. Don't complete both sections:
- - [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation)
-- [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation). 
-
-## Configure the gateway service account for standard Kerberos constrained delegation
-
-> [!NOTE]
-> Complete the steps in this section if you want to enable [standard Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview). Otherwise, if you want to enable resource-based Kerberos constrained delegation, complete the steps in [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation).
+### Option A: Standard Kerberos constrained delegation
 
 We'll now set the delegation settings for the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use the **Active Directory Users and Computers** MMC snap-in to administer and publish information in the directory. It's available on domain controllers by default; on other machines, you can enable it through Windows feature configuration.
 
@@ -145,10 +146,7 @@ Here's how to configure the delegation settings:
 
 10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
-## Configure the gateway service account for resource-based Kerberos constrained delegation
-
-> [!NOTE]
-> Complete the steps in this section if you want to enable [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains). Otherwise, if you want to enable standard Kerberos constrained delegation, complete the steps in [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation).
+### Option B: Resource-based Kerberos constrained delegation
 
 You use [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains) to enable single sign-on connectivity for Windows Server 2012 and later versions. This type of delegation permits front-end and back-end services to be in different domains. For it to work, the back-end service domain needs to trust the front-end service domain.
 
@@ -188,7 +186,7 @@ Complete the following configuration steps:
 
 6. In **Active Directory Users and Computers**, verify that the update is reflected in the **Attribute Editor** tab in the properties for the back-end service account. 
 
-## Grant the gateway service account local policy rights on the gateway machine
+## Step 6: Grant the gateway service account local policy rights on the gateway machine
 
 Finally, on the machine running the gateway service (**MyGatewayMachine** in our example), grant the gateway service account the local policies **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. Perform this configuration with the Local Group Policy Editor (**gpedit.msc**).
 
@@ -210,9 +208,65 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 6. Restart the **On-premises data gateway** service process.
 
-### Set user-mapping configuration parameters on the gateway machine (if necessary)
+## Step 7: Windows account can access gateway machine
 
-If you don't have Azure AD Connect configured, follow these steps to map a Power BI service user to a local Active Directory user. Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
+SSO uses Windows Authentication, so make sure the Windows account can access the gateway machine. If not sure, add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine "Users" group.
+
+## Section 2: Environment-specific configuration
+
+### Add gateway service account to Windows Authorization and Access Group
+
+Complete this section if **any** of the following situations apply:
+
+* Your Active Directory environment is security hardened.
+* When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests.
+
+You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
+
+For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
+1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
+2. Locate the group **Windows Authorization and Access Group**, which is typically found in the **Builtin** container.
+3. Double click on the group, and click on the **Members** tab.
+4. Click **Add**, and change the domain location to the domain that the gateway service account resides in.
+5. Type in the gateway service account name and click **Check Names** to verify that the gateway service account is accessible.
+6. Click **OK**.
+7. Click **Apply**.
+8. Restart the gateway service.
+
+
+
+## Configure Kerberos constrained delegation for the gateway and data source
+
+If necessary, configure an SPN for the gateway service domain account as a domain administrator and configure delegation settings on the gateway service domain account.
+
+
+   
+### Add gateway service account to Windows Authorization and Access Group if required
+
+In certain scenarios the gateway service account must be added to the Windows Authorization and Access Group. These scenarios include security hardening of the Active Directory environment, and when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
+
+For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
+1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
+2. Locate the group **Windows Authorization and Access Group**, which is typically found in the **Builtin** container.
+3. Double click on the group, and click on the **Members** tab.
+4. Click **Add**, and change the domain location to the domain that the gateway service account resides in.
+5. Type in the gateway service account name and click **Check Names** to verify that the gateway service account is accessible.
+6. Click **OK**.
+7. Click **Apply**.
+8. Restart the gateway service.
+
+### Set user-mapping configuration parameters on the gateway machine
+
+Complete this section if:
+
+* You don't have Azure AD Connect configured AND
+* The UPN used in Power BI for users does not match the UPN in your local Active Directory environment.
+
+Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
 
 1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at `C:\Program Files\On-premises data gateway`.
 
@@ -245,21 +299,22 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
     
     1. Select **Apply**. Verify that the correct value has been set in the **Value** column.
 
-## Complete data source-specific configuration steps
+### Complete data source-specific configuration steps
 
-SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that you need to meet before you can establish an SSO connection through the gateway to these data sources. For more information, see [SAP HANA configuration](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Although it's possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), this library isn't recommended because it's no longer supported by SAP. You should use CommonCryptoLib _or_ gx64krb5 as your SNC library. Don't complete the configuration steps for both libraries.
+For SAP HANA, SAP BW, and Teradata data sources, additional configuration is required to use with gateway SSO:
 
-Similarly, Teradata also has additional data-source specific configuration requirements and prerequisites. For more information, see [Use Kerberos for SSO to Teradata](service-gateway-sso-kerberos-teradata.md). 
+* [Use Kerberos for single sign-on (SSO) to SAP HANA](service-gateway-sso-kerberos-sap-hana.md).
+* [Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib (sapcrypto.dll)](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) - Power BI | Microsoft Docs.
+* [Use Kerberos for single sign-on (SSO) to Teradata](service-gateway-sso-kerberos-teradata.md).
 
 > [!NOTE]
 > Although other SNC libraries might also work for BW SSO, they aren't officially supported by Microsoft.
 
-## Run a Power BI report
+## Section 3: Validate configuration
+
+### Step 1: Configure data sources in Power BI
 
 After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries** is checked for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** is checked for Import based Reports.
-
-> [!NOTE]
-> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine "Users" group.
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
@@ -271,11 +326,15 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
 * For DirectQuery based report, SSO credentials of the user are used.
-* For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import. 
+* For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import.
 
-When you publish, select the gateway you've configured for SSO if you have multiple gateways. 
+### Step 2: Test single sign-on
 
-This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report won't load, contact your domain administrator to investigate further. If your data source is SAP BW, refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), depending on which SNC library you've chosen.
+Go to [Test single sign-on (SSO) configuration](service-gateway-sso-test-configuration.md) to quickly validate that your configuration is set correctly and troubleshoot common problems. 
+
+### Step 3: Run a Power BI report
+
+When you publish, select the gateway you've configured for SSO if you have multiple gateways.
 
 ## Next steps
 
