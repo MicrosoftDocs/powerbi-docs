@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2022
+ms.date: 03/26/2022
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
