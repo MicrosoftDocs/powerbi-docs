@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/18/2022
+ms.date: 03/27/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -250,6 +250,8 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
+Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
+
 ### Power BI capacity limitations
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md). For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
@@ -257,12 +259,14 @@ Even if you use service principal profiles to separate your customers' data, you
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).
 * Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
-### Change a service principal
+### Manage service principals
+
+#### Change a service principal
 
 In Power BI, a profile belongs to the service principal that created it. That means, a profile can't be shared with other principals. With this limitation, if you want to change the service principal for any reason, you'll need to recreate all the profiles and provide the new profiles access to the relevant workspaces.
 Often, the ISV application needs to save a mapping between a profile ID and a customer ID in order to pick the right profile when needed. If you change the service principal and recreate the profiles, the IDs will also change, and you may need to update the mapping in the ISV application database.
 
-### Delete a service principal
+#### Delete a service principal
 
 > [!WARNING]
 > Be very careful when deleting a service principal. You don't want to accidentally lose data from all its associated profiles.
