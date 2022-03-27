@@ -55,7 +55,7 @@ To plan and test your capacity, use these links:
 
 ### Power BI Embedded SKUs
 
-Power BI Embedded is shipped with an [*a* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### Power BI Premium SKUs
 
