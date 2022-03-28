@@ -82,7 +82,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 3. In the search result, right-click the gateway service account and select **Properties**.
 
-4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Decide on the type of Kerberos constrained delegation to use](#decide-on-the-type-of-kerberos-constrained-delegation-to-use).
+4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Configure Kerberos constrained delegation](#step-5-configure-kerboeros-constrained-delegation).
 
 5. If there isn't a **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows (you need domain admin rights to create the SPN).
 
@@ -97,8 +97,8 @@ First, determine whether an SPN was already created for the domain account used 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
 Depending on which approach you want to use, proceed to one of the following sections. Don't complete both sections:
- - [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). This is the default recommendation for most environments.
-- [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation). This is required if your data source belongs to a different domain than your gateway.
+* [Option A: Standard Kerberos constrained delegation](#option-a-standard-kerberos-constrained-delegation). This is the default recommendation for most environments.
+* [Option B: Resource-based Kerberos constrained delegation](#option-b-resource-based-kerberos-constrained-delegation). This is required if your data source belongs to a different domain than your gateway.
 
 #### Option A: Standard Kerberos constrained delegation
 
@@ -144,7 +144,7 @@ Here's how to configure the delegation settings:
 
     ![Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
+10. To continue the setup process, proceed to [Grant the gateway service account local policy rights on the gateway machine](#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 #### Option B: Resource-based Kerberos constrained delegation
 
