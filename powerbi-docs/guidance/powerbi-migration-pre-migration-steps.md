@@ -73,7 +73,7 @@ Some critical items to address early in a Power BI implementation include:
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
 - Preferences related to [dataset modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [Composite model](composite-model-guidance.md).
-- [Securing data and access](../admin/service-admin-power-bi-security.md).
+- [Securing data and access](../enterprise/service-admin-power-bi-security.md).
 - Working with [shared datasets](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
 - Use of different [report types](../create-reports/index.yml), including Power BI reports, Excel reports, or paginated reports for different use cases or business units.
@@ -91,12 +91,12 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 
 - Power BI tenant setup and integration with Azure Active Directory.
 - Define [Power BI administrators](../admin/service-admin-role.md).
-- Procure and assign initial [user licenses](../admin/service-admin-licensing-organization.md).
+- Procure and assign initial [user licenses](../enterprise/service-admin-licensing-organization.md).
 - Configure and review [Power BI tenant settings](admin-tenant-settings.md).
 - Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Azure Active Directory security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
-- Procure initial [Premium capacity license](../admin/service-admin-premium-purchase.md) (if applicable).
-- Configure [Premium capacity workloads](../admin/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
+- Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).
+- Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
 
 ## Define success criteria for migration
 

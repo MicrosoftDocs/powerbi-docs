@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 03/14/2022
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
@@ -22,7 +22,7 @@ Watch Sujata explain and use Dynamic M Query Parameters, and then try it out you
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QLsb]
 
 ## Enabling Dynamic M query parameters
 
@@ -219,10 +219,10 @@ Here are some examples:
 There are some considerations and limitations to consider when using dynamic M query parameters:
 
 * A single parameter cannot be bound to multiple fields nor vice-versa.
-* [Aggregations](../admin/aggregations-auto.md) are not supported with the feature
+* [Aggregations](../enterprise/aggregations-auto.md) are not supported with the feature
 * Row-level security (RLS) is not supported with the feature
 * Parameter names cannot be reserved words in DAX nor contain spaces. Appending "Parameter" to the end of the parameter name can help avoid this limitation.
-* If your parameter is of Date/Time data type, you will need to cast it within the M query as DateTime.Date(<YourDateParameter>)
+* If your parameter is of Date/Time data type, you will need to cast it within the M query as `DateTime.Date(<YourDateParameter>)`
 * If using SQL sources, you may notice a confirmation dialog every time the parameter value changes. This is due to a security setting: Require user approval for new native database queries. You can find and turn off this setting within the Security tab of the Options Dialog in Power BI Desktop. 
 * Unsupported out-of-box parameter types are the following:
   * Any

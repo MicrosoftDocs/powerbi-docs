@@ -173,7 +173,7 @@ After configuring the incremental refresh policy, you publish the model to the s
 > [!NOTE]
 > Datasets with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
 
-For datasets published to workspaces assigned to Premium capacities, if you think the dataset will grow beyond 1 GB or more, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../admin/service-premium-large-models.md).
+For datasets published to workspaces assigned to Premium capacities, if you think the dataset will grow beyond 1 GB or more, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../enterprise/service-premium-large-models.md).
 
 > [!IMPORTANT]
 > After being published to the service, you cannot download the PBIX back.

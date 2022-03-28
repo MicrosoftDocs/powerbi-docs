@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 03/10/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library in the Power BI service
@@ -84,10 +84,11 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
+- Within SharePoint libraries, this option will only show on the root of the document library.
 
 ## Troubleshooting
 
-If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list or library, your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](../admin/service-admin-portal.md#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
+If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list or library, your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](../admin/service-admin-portal-integration.md#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
 
 ## Next steps
 

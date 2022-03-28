@@ -158,7 +158,7 @@ Meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -303,7 +303,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
 | Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
-| [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
+| [Applied sensitivity label to Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
@@ -314,7 +314,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI dataset connections   | SetAllConnections         |         |
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
-| [Changed sensitivity label for Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
+| [Changed sensitivity label for Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
 | Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
@@ -367,7 +367,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
 | Deleted Power BI template app | DeleteTemplateApp | |
-| [Deleted sensitivity label from Power BI artifact](service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
+| [Deleted sensitivity label from Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deleted workspace for Power BI template app | DeleteTemplateApp | |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |

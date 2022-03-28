@@ -165,7 +165,7 @@ The data is cached for one hour from the time it is retrieved. If you update the
 
 ## Find your Power BI administrator
 
-The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
+The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal-export-sharing.md#publish-to-web) in the admin portal.
 
 For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
@@ -174,7 +174,7 @@ Established organizations usually already have a Power BI administrator. People 
 - Global administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
-You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
+You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal-export-sharing.md#publish-to-web) in the admin portal.
 
 ## Considerations and limitations
 
@@ -193,7 +193,7 @@ You need to [find one of these people](/microsoft-365/business-video/admin-cente
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
-- Admins can block public internet access, as described in [Private links for accessing Power BI](../admin/service-security-private-links.md). In that case, the **Publish to Web** option is grayed out for your tenant in the Power BI admin portal. 
+- Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the **Publish to Web** option is grayed out for your tenant in the Power BI admin portal. 
 
 ## Next steps
 

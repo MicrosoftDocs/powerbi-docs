@@ -72,7 +72,7 @@ In many cases, the timeout is caused by the amount of data that must be queried 
 
 #### Solution: Enable Large dataset storage format
 
-For datasets published to Premium capacities, if the dataset will grow beyond 1 GB or more, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../admin/service-premium-large-models.md).
+For datasets published to Premium capacities, if the dataset will grow beyond 1 GB or more, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../enterprise/service-premium-large-models.md).
 
 #### Solution: Bootstrap initial refresh
 

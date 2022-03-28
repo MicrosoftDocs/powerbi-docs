@@ -72,7 +72,7 @@ The report **Settings** pane has three settings for controlling reader interacti
 
 ## Export data
 
-By default, [report readers can export summarized or underlying data](../consumer/end-user-export.md) from visuals in your report. With **Export data**, you can allow them to export only summarized data, or to export no data at all from your report.
+By default, [report readers can export summarized or underlying data](/power-bi/visuals/power-bi-visualization-export-data) from visuals in your report. With **Export data**, you can allow them to export only summarized data, or to export no data at all from your report.
 
 ## Personalize visuals
 

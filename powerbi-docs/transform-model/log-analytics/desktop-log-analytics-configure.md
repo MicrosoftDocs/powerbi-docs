@@ -111,7 +111,7 @@ The following table provides a collection of common errors, the events or config
 ## Events and schema
 
 
-Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events).
 
 
 * AggregateTableRewriteQuery
@@ -212,5 +212,5 @@ The following articles can help you learn more about Power BI, and about its int
 
 * [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * [The new workspace experience in Power BI](../../collaborate-share/service-new-workspaces.md)

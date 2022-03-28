@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 01/19/2022
+ms.date: 02/14/2022
 ---
 
 # Understand the deployment process
@@ -36,7 +36,7 @@ If you have Premium permissions, the content of the workspace is copied to the s
 
 If you don't have Premium permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
 
-If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases Premium permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
+If you're using [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases Premium permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
@@ -124,7 +124,7 @@ In many cases, when you have a small change such as adding or removing a table, 
 
 ### Requirements for deploying to a stage with an existing workspace
 
-A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../admin/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../enterprise/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
@@ -176,7 +176,7 @@ During deployment, the following item properties are copied and overwrite the it
 
 * Item relationships
 
-[Sensitivity labels](../admin/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
+[Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
 * A new item is deployed.
 
 * An item is deployed to an empty stage.
@@ -289,11 +289,11 @@ The following composite models connections are not supported:
 
 ### Automatic aggregations
 
-[Automatic aggregations](./../admin/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance.
+[Automatic aggregations](./../enterprise/aggregations-auto.md) are built on top of user defined aggregations and use machine learning to continuously optimize DirectQuery datasets for maximum report query performance.
 
 Each dataset keeps its automatic aggregations after deployment. Deployment pipelines doesn't change a dataset's automatic aggregation. This means that if you deploy a dataset with an automatic aggregation, the automatic aggregation in the target stage will remain as is, and will not be overwritten by the automatic aggregation deployed from the source stage.
 
-To enable automatic aggregations, follow the instructions in [configure the automatic aggregation](./../admin/aggregations-auto-configure.md).
+To enable automatic aggregations, follow the instructions in [configure the automatic aggregation](./../enterprise/aggregations-auto-configure.md).
 
 ### Hybrid tables
 
@@ -396,7 +396,7 @@ Dataset owners that are either workspace members or admins, can also do the foll
 
 This section lists most of the limitations in deployment pipelines.
 
-* The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
+* The workspace must reside on a [premium capacity](../enterprise/service-premium-what-is.md).
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
@@ -419,8 +419,6 @@ This section lists most of the limitations in deployment pipelines.
 * For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ### Dataflow limitations
-
-* When deploying a dataflow with linked entities that reside on the same workspace, the deployment will fail.
 
 * When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
 

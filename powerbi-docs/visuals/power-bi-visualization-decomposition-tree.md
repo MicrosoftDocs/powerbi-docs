@@ -145,7 +145,7 @@ In the example below, the first two levels are locked. This means that report co
 
 :::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-locking.png" alt-text="Decomposition tree locking.":::
 
-## Known limitations
+## Considerations and limitations
 
 The maximum number of levels for the tree is 50. Maximum number of data points that can be visualized at one time on the tree is 5000. We truncate levels to show top n. Currently the top n per level is set to 10. 
 

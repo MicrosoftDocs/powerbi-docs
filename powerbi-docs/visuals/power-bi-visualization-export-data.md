@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 03/01/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 
@@ -43,9 +43,9 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Data is protected when it's exported out of Power BI
 
-Report owners can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
+Report owners can classify and label reports using Microsoft Information Protection [sensitivity labels](../enterprise/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
 
-Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
+Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](../enterprise/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
 # [Visuals on dashboards](#tab/dashboard)
 
@@ -192,15 +192,17 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 There are many considerations related to exporting to Excel. This is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They do this to ensure that private data isn't exposed to the wrong audience. 
 
 If you find that you are unable to use this feature, reach out to the report owner and your administrator to understand why you are unable to export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles: 
-[Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../admin/service-admin-rls.md), and [Data protection](../admin/service-security-data-protection-overview.md).
+[Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
-- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from a *.csv* file is 30,000.
+- When exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwith.
 
-- The maximum number of rows that the applications can export from an *.xlsx* file is 150,000.
+- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
-- For a matrix visual, the export limit still holds good for 150,000 interactions (_equivalent to rows in table visual_). You may see the error "_Exported data exceeded the allowed volume. Some data may have been omitted._" at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
+- The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
+
+  - For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has 1 *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has 3 *data intersections* per row, the maximum row count will be 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" will be added at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
 
 - Export using *Underlying data* won't work if:
 
@@ -219,6 +221,8 @@ If you find that you are unable to use this feature, reach out to the report own
   - Matrices with only one row and/or values but no columns will be exported as table (no right border separator)
   
   - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
+
+  - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work-around this issue, use the **Expand | All** command from the visual's context menu.
 
 - When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 

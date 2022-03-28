@@ -92,11 +92,11 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
 
-- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
 - All connections to remote Power BI Datasets models are made using single sign-on.
 
-- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../admin/service-premium-connect-tools.md#enable-xmla-read-write).
+- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
 - If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
@@ -162,7 +162,7 @@ There are also a few **limitations** you need to keep in mind:
 
 ### Tenant considerations
 
-Any model with a DirectQuery connection to a Power BI dataset or to Azure Analysis Services must be published in the same tenant, which is especially important when accessing a Power BI dataset or an Azure Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
+Any model with a DirectQuery connection to a Power BI dataset or to Azure Analysis Services must be published in the same tenant, which is especially important when accessing a Power BI dataset or an Azure Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../enterprise/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
 
 Consider the following diagram. The numbered steps in the diagram are described in paragraphs that follow.
 

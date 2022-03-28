@@ -7,7 +7,7 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/04/2021
+ms.date: 03/02/2022
 LocalizationGroup: Share your work
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. If you're a workspace admin or a Power BI admin, you can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Microsoft 365 group. Learn about the [new workspace experience](service-new-workspaces.md).
 
 >[!NOTE]
->When a Power BI admin upgrades a workspace, the workspace admin receives an email that their workspace was upgraded. Learn more about [how Power BI admins upgrade workspaces](../admin/service-admin-portal.md#workspaces). 
+>When a Power BI admin upgrades a workspace, the workspace admin receives an email that their workspace was upgraded. Learn more about [how Power BI admins upgrade workspaces](../admin/service-admin-portal-workspaces.md). 
 
 
 ![Success upgrading](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
@@ -34,7 +34,7 @@ See the [Upgrade considerations and limitations](#upgrade-considerations-and-lim
 
 ## Upgrade a classic workspace
 
-Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Microsoft 365 group. If you're the workspace admin, use the following steps to upgrade a workspace. If you're the Power BI admin, see [how to upgrade workspaces in the admin portal](../admin/service-admin-portal.md#workspaces). 
+Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Microsoft 365 group. If you're the workspace admin, use the following steps to upgrade a workspace. If you're the Power BI admin, see [how to upgrade workspaces in the admin portal](../admin/service-admin-portal-workspaces.md). 
 
 1. In the workspace content list, select **Upgrade now** in the banner. If you don't see the banner, select **More options** (**...**) > **Edit this workspace**.
 
@@ -192,7 +192,7 @@ When you switch back to a classic workspace, you aren't restoring an exact copy 
 
 ## Manage migration to the new workspaces for your tenant 
 
-Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade or use **Upgrade all** to queue upgrade of all workspaces. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. Learn more about [Power BI admins upgrading workspaces](../admin/service-admin-portal.md#upgrade-workspaces).
+Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade or use **Upgrade all** to queue upgrade of all workspaces. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. Learn more about [Power BI admins upgrading workspaces](../admin/service-admin-portal-workspaces.md#upgrade-workspaces).
 
 For organizations wanting to manage such a process, we recommend taking the following steps to ensure clear communication with impacted workspace admins.
 
@@ -208,13 +208,12 @@ There are several known issues that you may encounter after upgrading:
 - You may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
 - Some workspace names are different than before upgrade. In that case, the workspace name has either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
 - In a workspace that had an installed content pack, you may see additional dashboards that weren't visible before the upgrade. In this case, a content pack may not have been updated recently. You can safely remove these dashboards.
-- If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
-- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the tenant admin needs to assign a workspace admin using the Admin portal. If no workspace admin is assigned, the workspace will be upgraded but orphaned.
 
 ## Next steps
 
 * [Organize work in the new workspace experiences](service-new-workspaces.md)
 * [Create the new workspaces](service-create-the-new-workspaces.md)
 * [Create the classic workspaces](service-create-workspaces.md)
-* [Start a Power BI admin initiated workspace upgrade](../admin/service-admin-portal.md#workspaces)
+* [Start a Power BI admin initiated workspace upgrade](../admin/service-admin-portal-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

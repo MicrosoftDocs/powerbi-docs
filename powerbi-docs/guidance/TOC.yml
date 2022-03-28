@@ -192,11 +192,11 @@
           href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
-  - name: Center of Excellence (COE)
+  - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
         href: center-of-excellence-microsoft-business-intelligence-transformation.md
-      - name: "Establish a COE"
+      - name: "How Microsoft established a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md

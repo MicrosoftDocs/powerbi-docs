@@ -16,7 +16,7 @@ This article targets Power BI administrators who are responsible for setting up 
 
 We provide guidance for specific tenant settings that help improve the Power BI experience, or could expose your organization to risk. We recommend you always configure your tenant to align with your organization's policies and processes.
 
-[Tenant settings](../admin/service-admin-portal.md#tenant-settings) are managed in the [Admin portal](https://app.powerbi.com/admin-portal/tenantSettings), and can be configured by a [Power BI service administrator](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Many tenant settings can restrict capabilities and features to a limited set of users. So, we recommend you first become familiar with the settings to plan the security groups you'll need. You might find that you can apply the same security group to multiple settings.
+[Tenant settings](../admin/service-admin-portal-about-tenant-settings.md) are managed in the [Admin portal](https://app.powerbi.com/admin-portal/tenantSettings), and can be configured by a [Power BI service administrator](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Many tenant settings can restrict capabilities and features to a limited set of users. So, we recommend you first become familiar with the settings to plan the security groups you'll need. You might find that you can apply the same security group to multiple settings.
 
 ## Improve Power BI experience
 
@@ -34,13 +34,13 @@ If you do so, we recommend you then enable the **Publish "Get Help" information*
 These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
-> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
+> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 >
 >
 
 ![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
 
-For more information, see [Help and support settings](../admin/service-admin-portal.md#help-and-support-settings).
+For more information, see [Help and support settings](../admin/service-admin-portal-help-support.md).
 
 ## Manage risk
 The settings to manage risks can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, disabling the **Export data** setting removes the feature from the Power BI user interface and helps in this way Power BI users to work in compliance with your organization's governance policies, but it does not prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has the permission to query this dataset and can persist the results regardless of the features available in the Power BI user interface.
@@ -58,7 +58,7 @@ Information protection allows enforcing protection settings—such as encryption
 
 There are two tenant settings related to information protection. By default, both settings are disabled for the entire organization.
 
-We recommend you enable these settings when you need to handle and protect sensitive data. For more information, see [Data protection in Power BI](../admin/service-security-data-protection-overview.md).
+We recommend you enable these settings when you need to handle and protect sensitive data. For more information, see [Data protection in Power BI](../enterprise/service-security-data-protection-overview.md).
 
 ### Create workspaces
 
@@ -113,11 +113,11 @@ We recommend you assign one or more security groups. These groups can be granted
 ![Screenshot of Power B I Desktop showing the "Export data" setting.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
-> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../admin/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
+> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../enterprise/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
 
 ### Allow external guest users to edit and manage content in the organization
 
-It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
+It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 The **Allow external guest users to edit and manage content in the organization** setting is disabled by default for the entire organization. It's found in the **Export and sharing settings** group.
 

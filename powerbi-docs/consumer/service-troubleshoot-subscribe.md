@@ -7,7 +7,7 @@ ms.reviewer: michael.brujhell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: troubleshooting
-ms.date: 02/03/2022
+ms.date: 03/09/2022
 LocalizationGroup: Share your work
 ---
 
@@ -65,11 +65,6 @@ You receive your subscription email, open the dashboard, and notice that one or 
 ### Too many dashboard tiles
 Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription emails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly. 
 
-### Row level security (RLS)
-- For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display. 
-
-- For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
-
 ### Tile type not supported
 For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles. 
 
@@ -90,9 +85,6 @@ I'm not receiving subscription emails each time my data refreshes.
 Subscriptions set to **After Data Refresh** for the report or dashboard will only send an email after the first scheduled refresh on that day. 
 
 ### Your data uses a live connection
-
-Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](end-user-subscribe.md#subscribe-to-paginated-reports). 
-
 For your reports with live connections, for example a live connection to Analysis Services, Power BI will check the Analysis Services instance for changes. If you have the subscription set to run after data refreshes, it will run the first time the Power BI service detects a change in your on-premises model. Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription. 
 
 
@@ -132,7 +124,7 @@ When you receive the subscription email, it includes a link to **Go to report or
 ## I can't create a report attachment, full report attachment greyed out
 
 The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
-- They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
+- They're in an upgraded workspace with [Power BI Premium or Premium Per User](../enterprise/service-premium-what-is.md). 
 - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages)).
 - The attachment file is under 25 MB in size.
  
