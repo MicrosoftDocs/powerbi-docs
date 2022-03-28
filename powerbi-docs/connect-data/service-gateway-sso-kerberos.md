@@ -31,7 +31,12 @@ The steps required for configuring gateway single sign-on are outlined below.
 1. Depending on your Active Directory environment and the data sources used, you may need to complete some of all of the configuration described in Section 2: Environment-specific configuration.
 
     The possible scenarios that may require additional configuration are listed below:
-    
+
+    | Scenario | Reference |
+    |----|----|
+    | Your Active Directory environment is security hardened. | See Section 2.1. |
+    | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | See Section 2.1. |
+
     1. Your Active Directory environment is security hardened. See Section 2.1.
     1. When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See Section 2.1.
     1. You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. See section 2.2.
