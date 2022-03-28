@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/28/2022
+ms.date: 03/28/2022
 ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
@@ -30,9 +30,9 @@ Goals is a Pro feature. Users can access various aspects of the experience depen
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring scorecards, goals, and performing check-ins | Power BI Pro license |
+|Authoring and sharing scorecards and goals, and performing check-ins | Power BI Pro license |
 |Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
-|Viewing scorecard samples   |  Free user |
+|Viewing scorecard samples and authoring scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
 
