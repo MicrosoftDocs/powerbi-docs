@@ -96,7 +96,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
-### Step 5: Configure Kerboeros constrained delegation
+### Step 5: Configure Kerberos constrained delegation
 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
