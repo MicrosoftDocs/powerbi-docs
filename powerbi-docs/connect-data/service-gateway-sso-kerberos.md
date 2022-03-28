@@ -282,7 +282,7 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
 For SAP HANA, SAP BW, and Teradata data sources, additional configuration is required to use with gateway SSO:
 
 * [Use Kerberos for single sign-on (SSO) to SAP HANA](service-gateway-sso-kerberos-sap-hana.md).
-* [Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib (sapcrypto.dll)](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) - Power BI | Microsoft Docs.
+* [Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib (sapcrypto.dll)](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md).
 * [Use Kerberos for single sign-on (SSO) to Teradata](service-gateway-sso-kerberos-teradata.md).
 
 > [!NOTE]
