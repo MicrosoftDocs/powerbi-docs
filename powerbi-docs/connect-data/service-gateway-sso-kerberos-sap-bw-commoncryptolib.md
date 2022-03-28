@@ -80,7 +80,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
     ![Restart gateway service](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png)
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#step-1-configure-data-sources-in-power-bi)
 
 ## Troubleshooting
 
