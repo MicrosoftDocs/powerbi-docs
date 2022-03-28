@@ -13,33 +13,35 @@ LocalizationGroup: Gateways
 
 # Configure Kerberos-based SSO from Power BI service to on-premises data sources
 
-Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources while respecting user-level permissions configured on those sources. Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity. 
+Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources while respecting user-level permissions configured on those sources. Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity.
+
+This article describes the steps you need to take to configure Kerberos-based SSO from Power BI service to on-premises data sources.  
 
 ## Prerequisites
 
-Several items must be configured for Kerberos constrained delegation to work properly, including _Service Principal Names (SPN)_ and delegation settings on service accounts.
+Several items must be configured for Kerberos constrained delegation to work properly, including *Service Principal Names (SPN)*_* and delegation settings on service accounts.
 
 > [!NOTE]
 > Using DNS aliasing with SSO is not supported.
 
-## Setup guide outline
+## Configuration outline
 
 The steps required for configuring gateway single sign-on are outlined below.
 
 1. Complete all the steps in [Section 1: Basic configuration](#section-1-basic-configuration).
 
-1. Depending on your Active Directory environment and the data sources used, you may need to complete some of all of the configuration described in [Section 2: Environment-specific configuration](#section-2-environment-specific-configuration).
+1. Depending on your Active Directory environment and the data sources used, you may need to complete some or all of the configuration described in [Section 2: Environment-specific configuration](#section-2-environment-specific-configuration).
 
     Possible scenarios that may require additional configuration are listed below:
 
-    | Scenario | Reference |
+    | Scenario | Go to |
     |----|----|
-    | Your Active Directory environment is security hardened. | See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
-    | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
-    | You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | See [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
-    | You plan to use an SAP HANA data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
-    | You plan to use an SAP BW data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
-    | You plan to use a Teradata data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+    | Your Active Directory environment is security hardened. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
+    | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
+    | You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
+    | You plan to use an SAP HANA data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+    | You plan to use an SAP BW data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+    | You plan to use a Teradata data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
 
 1. Validate your configuration as described in [Section 3: Validate configuration](#section-3-validate-configuration) to ensure that SSO is setup correctly.
 
