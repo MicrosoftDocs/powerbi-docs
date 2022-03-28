@@ -61,10 +61,10 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within the embedded report.
 - Power BI dashboards can't be embedded in the **Power BI** tab for Microsoft Teams.
-- Users without a Power BI license or permission to access the report see a "Content is not available" message.
+- Users without a Power BI license or permission to access the report see a "Content isn't available" message.
 - You might have issues if you use Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../fundamentals/power-bi-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
-- In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences are not available:
+- In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences aren't available:
     - Power BI messaging extension, which provides link previews, search, and link unfurling
     - Power BI activity feed notifications
     - Chat in Microsoft Teams
@@ -73,7 +73,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.
 
-## <a id="OutlookOffice" />Power BI app in Outlook and Office 
+## <a id="OutlookOffice" />Power BI app in Outlook and Office
 
 The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a Public Preview. Users with the Power BI app installed in Microsoft Teams will have it installed in Outlook and Office. Users in Outlook and Office can install the Power BI app from the store. When installed, the app also appears in Teams. The Power BI app in Teams continues to be Generally Available. The Power BI app supports Outlook for the web and Outlook for Windows.
 
@@ -82,11 +82,11 @@ The Power BI app for Microsoft Teams is available in Microsoft Outlook and Micro
 The Public preview is rolling out incrementally for First Release and Office Insiders users. This means some users in your organization may not yet see the experiences in Outlook and Office.
 
 In Outlook and Office, the preview app has some additional limitations:
-- File downloads are not yet supported. This means export options and file downloads do not successfully download a file. 
-- On the create tab, the paste or manually enter data option is not yet supported.
-- Viewing items in full screen option is not yet supported
-- Deep links are not yet supported in Outlook and Office. Items open in a new browser tab.
-- In Outlook, generating link previews for URLs that you paste into email is not yet supported.
+- File downloads aren't supported yet. This means export options and file downloads don't download files. 
+- On the create tab, the paste or manually enter data option isn't supported yet.
+- Viewing items in full screen option isn't supported yet.
+- Deep links aren't supported yet in Outlook and Office. Items open in a new browser tab.
+- In Outlook, generating link previews for URLs that you paste into email isn't supported yet.
 
 ## Microsoft Power Platform in Microsoft Teams
 
