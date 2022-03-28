@@ -147,7 +147,7 @@ When the flow is running successfully, you can share it with your report readers
 
 Alternatively, you can give any users edit access to the flow, not just run permissions.
 
-1. Select **Share** :::image type="icon" source="media/power-bi-automate-visual/share-icon.png" border="false":::, and specify the users or groups that you want to add as an owner:
+- Select **Share** :::image type="icon" source="media/power-bi-automate-visual/share-icon.png" border="false":::, and specify the users or groups that you want to add as an owner:
 
     :::image type="content" source="media/power-bi-automate-visual/share-flow-ownership.png" alt-text="Share flow ownership with others.":::
 
