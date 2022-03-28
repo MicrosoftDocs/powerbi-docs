@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 When you share a report with a broad audience, some of your users may want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's hard to make one visual that satisfies everyone's requirements. With this new capability, you can empower your business users to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want, and save it as a bookmark to come back to. They don't need to have edit permission for the report, or to go back to the report author for a change.
 
@@ -42,13 +42,13 @@ After report readers personalize a report, they can [create personal bookmarks](
 
 You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
 
-### In Power BI Desktop
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
 
-### In the Power BI service
+# [Power BI service](#tab/powerbi-service)
 
 To enable the feature in the Power BI service instead, go to **Settings** for your report.
 
@@ -57,6 +57,7 @@ To enable the feature in the Power BI service instead, go to **Settings** for yo
 Turn on **Personalize visuals** > **Save**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Turn on Personalize visuals in the service":::
+---
 
 ## Turn the feature on or off at a page or visual level
 
@@ -64,14 +65,32 @@ When you enable Personalize visuals for a given report, by default all visuals i
 
 ### Per page
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+Select the page tab > select **Format** in the **Visualizations** pane.
+
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting-desktop.png" alt-text="Screenshot shows the menu to select Personalize visual for a page.":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+# [Power BI service](#tab/powerbi-service)
 Select the page tab > select **Format** in the **Visualizations** pane.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
  
 Slide **Personalize visual** >  **On** or **Off**.
+---
 
 ### Per visual
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+Select the visual. Then select **Format** > **General** > **Icons**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize-desktop.png" alt-text="Screenshot shows the Icons menu, where you can select personalization.":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off-desktop.png" alt-text="Screenshot shows the Personalize visual slider.":::
+# [Power BI service](#tab/powerbi-service)
 Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
@@ -79,6 +98,7 @@ Select the visual > select **Format** in the **Visualizations** pane > expand **
 Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
+---
 
 ## Use Perspectives for a more focused view
 
