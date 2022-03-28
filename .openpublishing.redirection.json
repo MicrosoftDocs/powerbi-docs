@@ -4520,6 +4520,16 @@
             "source_path": "powerbi-docs/admin/troubleshoot-xmla-endpoint.md",
             "redirect_url": "/power-bi/enterprise/troubleshoot-xmla-endpoint",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                      
+        },
+        {
+            "source_path": "powerbi-docs/developer/template-apps/template-apps-auto-install.md",
+            "redirect_url": "/power-bi/connect-data/template-apps-auto-install",
+            "redirect_document_id": true
+        },                                                                       
+        {
+            "source_path": "powerbi-docs/developer/template-apps/template-apps-auto-install-tutorial.md",
+            "redirect_url": "/power-bi/connect-data/template-apps-auto-install-tutorial",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                                                                                            
     ]           
 }
