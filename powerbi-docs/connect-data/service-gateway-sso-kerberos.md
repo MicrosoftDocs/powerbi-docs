@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 03/27/2022
+ms.date: 03/28/2022
 LocalizationGroup: Gateways
 ---
 
@@ -26,11 +26,11 @@ Several items must be configured for Kerberos constrained delegation to work pro
 
 The steps required for configuring gateway single sign-on are outlined below.
 
-1. Complete all the steps in Section 1: Basic configuration.
+1. Complete all the steps in [Section 1: Basic configuration](#section-1-basic-configuration).
 
-1. Depending on your Active Directory environment and the data sources used, you may need to complete some of all of the configuration described in Section 2: Environment-specific configuration.
+1. Depending on your Active Directory environment and the data sources used, you may need to complete some of all of the configuration described in [Section 2: Environment-specific configuration](#section-2-environment-specific-configuration).
 
-    The possible scenarios that may require additional configuration are listed below:
+    Possible scenarios that may require additional configuration are listed below:
 
     | Scenario | Reference |
     |----|----|
@@ -41,23 +41,7 @@ The steps required for configuring gateway single sign-on are outlined below.
     | You plan to use an SAP BW data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use a Teradata data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
 
-    * Your Active Directory environment is security hardened. See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group).
-    * The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group).
-    * You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. See [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine).
-    * You plan to use an SAP HANA data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
-    * You plan to use an SAP BW data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
-    * You plan to use a Teradata data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
-
-
-
-    1. Your Active Directory environment is security hardened. See Section 2.1.
-    1. When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See Section 2.1.
-    1. You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. See section 2.2.
-    1. You plan to use an SAP HANA data source with SSO. See section 2.3.
-    1. You plan to use an SAP BW data source with SSO. See section 2.3.
-    1. You plan to use a Teradata data source with SSO. See section 2.3.
-
-1. Validate your configuration in Section 3 to ensure that SSO is setup correctly.
+1. Validate your configuration as described in [Section 3: Validate configuration](#section-3-validate-configuration) to ensure that SSO is setup correctly.
 
 ## Section 1: Basic configuration
 
