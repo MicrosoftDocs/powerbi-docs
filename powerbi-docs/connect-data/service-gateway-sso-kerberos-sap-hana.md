@@ -46,7 +46,7 @@ We also recommend following these extra steps, which can yield a small performan
     </setting>
     ```
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#step-1-configure-data-sources-in-power-bi).
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration).
 
 ## Troubleshoot
 

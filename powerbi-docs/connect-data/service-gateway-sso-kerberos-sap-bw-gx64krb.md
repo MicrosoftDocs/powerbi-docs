@@ -155,7 +155,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. Select **Use SSO via Kerberos for DirectQuery queries**, and then select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#step-1-configure-data-sources-in-power-bi)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration)
 
 ## Troubleshooting
 
