@@ -7,7 +7,7 @@ ms.reviewer: mshmordo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 03/27/2022
 ---
 
 # Use the Power BI SDK with service principal profiles
@@ -72,6 +72,10 @@ var profileObjectId = new Guid("81f24a6d-7ebb-4478-99c7-2c36f7870a26");
 var powerBIclient = new PowerBIClient(credentials, profileObjectId: profileObjectId); 
 var currentProfileObjectId = powerBIclient.GetServicePrincipalProfileObjectId(); 
 ```
+
+## Considerations and Limitations
+
+Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
 
 ## Next steps
 
