@@ -34,8 +34,21 @@ The steps required for configuring gateway single sign-on are outlined below.
 
     | Scenario | Reference |
     |----|----|
-    | Your Active Directory environment is security hardened. | See Section 2.1. |
-    | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | See Section 2.1. |
+    | Your Active Directory environment is security hardened. | See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
+    | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
+    | You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | See [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
+    | You plan to use an SAP HANA data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+    | You plan to use an SAP BW data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+    | You plan to use a Teradata data source with SSO. | See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
+
+    * Your Active Directory environment is security hardened. See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group).
+    * The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group).
+    * You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. See [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine).
+    * You plan to use an SAP HANA data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
+    * You plan to use an SAP BW data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
+    * You plan to use a Teradata data source with SSO. See [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps).
+
+
 
     1. Your Active Directory environment is security hardened. See Section 2.1.
     1. When the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. See Section 2.1.
