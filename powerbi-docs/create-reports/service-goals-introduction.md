@@ -30,9 +30,9 @@ Goals is a Pro feature. Users can access various aspects of the experience depen
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring and sharing scorecards and goals, and performing check-ins | Power BI Pro license |
-|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
-|Viewing scorecard samples and authoring scorecards in My Workspace  |  Free user |
+|Author and share scorecards and goals, and perform check-ins | Power BI Pro license |
+|View scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
+|View scorecard samples and author scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
 
