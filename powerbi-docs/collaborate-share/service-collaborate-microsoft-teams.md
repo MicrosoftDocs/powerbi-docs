@@ -73,7 +73,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.
 
-## <a id="OutlookOffice" />Power BI app in Outlook and Office
+## <a id="OutlookOffice"></a>Power BI app in Outlook and Office
 
 The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a Public Preview. Users with the Power BI app installed in Microsoft Teams will have it installed in Outlook and Office. Users in Outlook and Office can install the Power BI app from the store. When installed, the app also appears in Teams. The Power BI app in Teams continues to be Generally Available. The Power BI app supports Outlook for the web and Outlook for Windows.
 
