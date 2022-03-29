@@ -1,4 +1,10 @@
 ---
+title: Manage Capacity settings
+description: Learn how to configure Power BI capacity settings.
+author: paulinbar
+ms.author: painbar
+ms.reviewer: ''
+ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
