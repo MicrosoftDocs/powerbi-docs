@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) is a way to license Premium features on a per user basis. Once the first user is assigned a PPU license, associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA Endpoint can be turned off, set to read-only, or set to read-write.
 
-[!INCLUDE[Get the client ID](../includes/embed-tutorial-client-id.md)]
+[!INCLUDE[Get the client ID](../includes/admin-portal-settings.md)]
 
 ## PPU settings
 

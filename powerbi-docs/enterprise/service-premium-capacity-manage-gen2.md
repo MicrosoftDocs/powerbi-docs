@@ -122,5 +122,3 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 
 >[Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
 >[!div class="nextstepaction"]
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
