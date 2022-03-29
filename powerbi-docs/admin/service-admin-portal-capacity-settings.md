@@ -34,7 +34,7 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 To understand more about the concepts of capacity management, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
 
-The capacity management process, is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage).
+The capacity management process, is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
 
 ## Power BI Embedded
 

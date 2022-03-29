@@ -46,4 +46,4 @@ To activate this feature, go to **Admin portal > Azure connections > Connect to 
 >[About the Admin portal](service-admin-portal.md)
 
 >[!div class="nextstepaction"]
->[Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration)
+>[Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
