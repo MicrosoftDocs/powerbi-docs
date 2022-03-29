@@ -20,7 +20,7 @@ This article describes the steps you need to take to configure Kerberos-based SS
 
 ## Prerequisites
 
-Several items must be configured for Kerberos constrained delegation to work properly, including *Service Principal Names (SPN)*_* and delegation settings on service accounts.
+Several items must be configured for Kerberos constrained delegation to work properly, including *Service Principal Names (SPN) and delegation settings on service accounts.
 
 > [!NOTE]
 > Using DNS aliasing with SSO is not supported.
