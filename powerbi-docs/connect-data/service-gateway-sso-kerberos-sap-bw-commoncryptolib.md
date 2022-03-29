@@ -237,7 +237,7 @@ The error becomes clearer in the sectraces from the Gateway machine *sec-Microso
 [2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 3: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
 ```
 
-When looking at WireShark traces, the issue can also be seen.
+You can also see the issue if you look at WireShark traces.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
 
@@ -251,7 +251,7 @@ You may run into a similar, but not identical error that manifests in WireShark 
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
 
-This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
+This error indicates the **SPN SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
 
 **Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
 

@@ -44,7 +44,7 @@ The steps required for configuring gateway single sign-on are outlined below.
     | You plan to use an SAP BW data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use a Teradata data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
 
-1. Validate your configuration as described in [Section 3: Validate configuration](#section-3-validate-configuration) to ensure that SSO is setup correctly.
+1. Validate your configuration as described in [Section 3: Validate configuration](#section-3-validate-configuration) to ensure that SSO is set up correctly.
 
 ## Section 1: Basic configuration
 
@@ -65,7 +65,7 @@ In a standard installation, the gateway runs as the machine-local service accoun
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
 #### Option B: Configure computer for Azure AD Connect
-If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.The local service SID for NT SERVICE/PBIEgwService is as follows: 
+If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
 
 `S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
 
