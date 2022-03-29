@@ -1,20 +1,23 @@
----
-title: Manage Capacity settings
-description: Learn how to configure Power BI capacity settings.
-author: paulinbar
-ms.author: painbar
-ms.reviewer: ''
-ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 03/29/2022
 LocalizationGroup: Administration
 ---
 
 # Manage Capacity settings
 
-Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+Capacity is a dedicated set of resources reserved for exclusive use. Premium and Embedded capacities offer a dependable and consistent performance for your content. Here are some settings that you can configure when managing your organization's capacity settings:
+
+* Creating new capacities
+
+* Deleting capacities
+
+* Managing capacity permissions
+
+* Changing the size of the capacity
+
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ## Power BI Premium
 
@@ -22,12 +25,25 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ![No access to Premium settings](media/service-admin-portal-capacity-settings/premium-settings-no-access.png)
 
+To understand more about the concepts of capacity management, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
+
+The capacity management process, is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage).
+
 ## Power BI Embedded
 
 The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
-For more information about Power BI Embedded SKUs, see [Capacity and SKUs in Power BI embedded analytics](../developer/embedded/embedded-capacity.md).
+For more information about Power BI Embedded, see:
+
+* Power BI Embedded SKUs - [Capacity and SKUs in Power BI embedded analytics](../developer/embedded/embedded-capacity.md)
+
+* Create a Power BI Embedded capacity in Azure  - [Create Power BI Embedded capacity in the Azure portal](../developer/embedded/azure-pbie-create-capacity.md)
+
+* Scale a capacity in Azure - [Scale your Power BI Embedded capacity in the Azure portal](../developer/embedded/azure-pbie-scale-capacity.md)
+
+* Pause and start a capacity Azure - [Pause and start your Power BI Embedded capacity in the Azure portal](../developer/embedded/azure-pbie-pause-start.md)
 
 ## Next steps
 
-* [About the Admin portal](service-admin-portal.md)
+> [!div class="nextstepaction"]
+> [About the Admin portal](service-admin-portal.md)
