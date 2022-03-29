@@ -1,4 +1,10 @@
 ---
+title: Manage Azure connections
+description: Learn how to manage Power BI connections to Azure services.
+author: paulinbar
+ms.author: painbar
+ms.reviewer: ''
+ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
