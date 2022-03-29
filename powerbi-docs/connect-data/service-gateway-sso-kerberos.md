@@ -247,7 +247,7 @@ Complete this section if:
 * You don't have Azure AD Connect configured AND
 * The UPN used in Power BI for users does not match the UPN in your local Active Directory environment.
 
-Each Active Directory user mapped in this way needs to have SSO permissions for your data source. For more information, see [Guy in a Cube: Power BI User lookup with the gateway using Active Directory (video)](https://www.youtube.com/watch?v=NG05PG9aiRw).
+Each Active Directory user mapped in this way needs to have SSO permissions for your data source.
 
 1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at `C:\Program Files\On-premises data gateway`.
 
@@ -255,8 +255,8 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
-> [!NOTE]
-> Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+    > [!NOTE]
+    > Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
