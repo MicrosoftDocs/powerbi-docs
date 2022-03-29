@@ -1,3 +1,4 @@
+---
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
