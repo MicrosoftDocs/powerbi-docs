@@ -1,7 +1,14 @@
+---
+title: Manage Premium Per User
+description: Learn how to manage Power BI Premium Per User.
+author: paulinbar
+ms.author: painbar
+ms.reviewer: ''
+ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/29/2022
+ms.date: 03/10/2022
 LocalizationGroup: Administration
 ---
 
