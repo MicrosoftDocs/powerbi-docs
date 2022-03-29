@@ -117,6 +117,7 @@ You can also format these elements for filter cards, depending on if they're app
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
     ![Expand Filter card](media/power-bi-report-filter/power-bi-format-filter-cards.png)
+
 ---
 
 ## Theming for Filters pane
@@ -220,8 +221,10 @@ You can also format the search box, just as you can format the other elements of
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 ![Screenshot shows the option to format the search box in Power BI Desktop.](media/power-bi-report-filter/power-bi-desktop-filter-format-search.png)
+
 # [Power BI service](#tab/powerbi-service)
 ![Format the search box](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
 ---
 
 # [Power BI Desktop](#tab/powerbi-desktop)
@@ -234,6 +237,7 @@ While this Filters pane search feature is on by default, you can also choose to 
 Select **File** > **Setting**, then select **Enable search for Filters pane**.
 
 ![Screenshot shows the option to Enable search for Filters pane in the Power BI service.](media/power-bi-report-filter/power-bi-service-enable-search-filter.png)
+
 ---
 
 ## Restrict changes to filter type
@@ -248,6 +252,7 @@ You have an option to control if users can change the filter type.
 Select **File** > **Setting**, then select **Allow users to change filter types**.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-service-enable-change-filter-type.png)
+
 ---
 
 ## Allow saving filters
@@ -257,12 +262,12 @@ By default, your report readers can save filters for your report. You can choose
 # [Power BI Desktop](#tab/powerbi-desktop)
 Also in **Report** settings of the **Options** dialog, under **Persistent filters**, select **Don't allow end users to save filters on this file in the Power BI service**.
 
-    :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this file in the Power BI service.":::
+:::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this file in the Power BI service.":::
 
 # [Power BI service](#tab/powerbi-service)
 Select **File** > **Setting**. Under **Persistent filters**, select **Don't allow end users to save filters on this report**.
 
-    :::image type="content" source="media/power-bi-report-filter/power-bi-service-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this report.":::
+:::image type="content" source="media/power-bi-report-filter/power-bi-service-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this report.":::
 
 ---
 

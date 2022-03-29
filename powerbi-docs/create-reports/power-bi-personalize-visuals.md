@@ -57,6 +57,7 @@ To enable the feature in the Power BI service instead, go to **Settings** for yo
 Turn on **Personalize visuals** > **Save**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Turn on Personalize visuals in the service":::
+
 ---
 
 ## Turn the feature on or off at a page or visual level
@@ -78,6 +79,7 @@ Select the page tab > select **Format** in the **Visualizations** pane.
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
  
 Slide **Personalize visual** >  **On** or **Off**.
+
 ---
 
 ### Per visual
@@ -98,6 +100,7 @@ Select the visual > select **Format** in the **Visualizations** pane > expand **
 Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
+
 ---
 
 ## Use Perspectives for a more focused view
