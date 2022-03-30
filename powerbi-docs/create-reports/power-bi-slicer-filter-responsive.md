@@ -42,13 +42,13 @@ The first step to creating a dynamic slicer is to create a basic slicer.
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
 2. Expand the **Slicer settings** section, then for **Orientation**, select **Horizontal**.
 
-    ![Screenshot shows setting the slicer to horizontal in Power B I Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png) 
+    ![Screenshot shows setting the slicer to horizontal in Power B I Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png)
 
 # [Power BI service](#tab/powerbi-service)
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
 2. Expand the **General** section, then for **Orientation**, select **Horizontal**.
 
-    ![Screenshot shows setting the slicer to horizontal in Power B I service.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png) 
+    ![Screenshot shows setting the slicer to horizontal in Power B I service.](media/power-bi-slicer-filter-responsive/power-bi-service-slicer-filter-responsive-horizontal.png) 
 
 ---
 

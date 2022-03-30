@@ -52,11 +52,11 @@ How would we go about creating this line chart using Q&A?
 # [Power BI Desktop](#tab/powerbi-desktop)
 1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
 
-2. Select the Reports icon to open the Reports view.
+2. Select the **Report** icon to open the Reports view.
 
-    ![Screenshot shows the Report icon, use to open the Reports view.](media/power-bi-visualization-introduction-to-q-and-a/power-bi-report-view.png)
+    ![Screenshot shows the Report icon, used to open the Reports view.](media/power-bi-visualization-introduction-to-q-and-a/power-bi-report-view.png)
 
-3. At the bottom of the page, select the District Monthly Sales tab.
+3. At the bottom of the page, select **District Monthly Sales**.
 
     ![Screenshot shows the chart tile for Last Year Sales and This Year Sales in the Reports view.](media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-report-visual.png)
 
