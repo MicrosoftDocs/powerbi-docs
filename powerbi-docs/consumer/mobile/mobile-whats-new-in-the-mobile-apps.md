@@ -30,7 +30,6 @@ Now you can get notified when someone assigns you a goal or mentions you, so you
 ### Custom goal statuses in scorecards
 The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards.
 
-
 ## February 2022
 
 ### You can now style and format your visuals especially for mobile layout (preview)
