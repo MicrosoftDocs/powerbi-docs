@@ -119,7 +119,7 @@ On-demand load is enabled by default for large datasets, and can provide signifi
 On-demand loading surfaces additional Dynamic Management View (DMV) information that can be used to identify usage patterns and understand the state of your models. For example, you can check the *Temperature* and *Last Accessed* statistics for each column in the dataset, by running the following DMV query from SQL Server Management Studio (SSMS):
 
 ```sql
-Select * from SYSTEMRESTRICTSCHEMA ($System.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS, [DATABASE_NAME] = <Dataset Name>)
+Select * from SYSTEMRESTRICTSCHEMA ($System.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS, [DATABASE_NAME] = '<Dataset Name>')
 ```
 
 ## Checking dataset size
