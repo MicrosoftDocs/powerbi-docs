@@ -151,7 +151,7 @@ The dataset details section shows the name of the workspace where the dataset is
 The Explore related reports section shows you all the reports that are built on the selected dataset. You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
 The columns in the list of related reports are:
-* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template.
+* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
 * **Endorsement**: Endorsement status.
 * **Workspace**: The name of the workspace where the report is located.
 
