@@ -86,6 +86,8 @@
           href: service-premium-service-principal.md
         - name: Dataset connectivity with the XMLA endpoint
           href: service-premium-connect-tools.md
+        - name: Interactive and background operations
+          href: service-premium-interactive-background-operations.md         
         - name: Troubleshoot XMLA endpoint connectivity
           href: troubleshoot-xmla-endpoint.md
         - name: Power BI Premium Gen2 FAQ
