@@ -274,9 +274,11 @@ To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage.md)
-> [Azure Power BI Embedded Documentation](https://azure.microsoft.com/services/power-bi-embedded/)
-> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+>[!div class="nextstepaction"]
+>[Managing Premium capacities](service-premium-capacity-manage.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Azure Power BI Embedded Documentation](https://azure.microsoft.com/services/power-bi-embedded/)
+
+>[!div class="nextstepaction"]
+>[What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
