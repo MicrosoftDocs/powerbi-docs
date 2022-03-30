@@ -24,7 +24,7 @@ This article describes enabling and configuring workloads for Power BI Premium c
 
 Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources.
 
-All SKUs in Premium Gen2 support workloads, apart from the *EM1* and *A1* SKUs.
+The list of workloads below, describes which Premium Gen2 SKUs supports each workload:
 
 * **AI** - All SKUs are supported apart from the *EM1/A1* SKUs
 
@@ -32,7 +32,7 @@ All SKUs in Premium Gen2 support workloads, apart from the *EM1* and *A1* SKUs.
 
 * **Dataflows** - All SKUs are supported
 
-* **Paginated reports** - Only the *P1/A4* and *P2/A5* SKUs are supported.
+* **Paginated reports** - Only the *P1/A4* and *P2/A5* SKUs are supported
 
 ### [Gen1](#tab/gen1)
 
@@ -66,7 +66,6 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 | **Allow usage from Power BI Desktop** | This setting is reserved for future use and does not appear in all tenants. |
 | **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md). |
 | **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
-|  |  |
 
 <sup>1</sup> *Premium Gen2* does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
 
@@ -187,7 +186,6 @@ The dataflows workload lets you use dataflows self-service data prep, to ingest,
 | **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that dataflows can use in a capacity. |
 | **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
 | **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
-|  |  |
 
 <sup>1</sup> *Premium Gen2* does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
 
@@ -212,7 +210,7 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 
 ### [Gen2](#tab/gen2)
 
-The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
+The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service. The paginated reports workload is enabled automatically, and is never unavailable.
 
 Paginated reports are only supported when using the *P1/A4* and *P2/A5* SKUs.
 
@@ -223,13 +221,10 @@ The paginated reports workload lets you run paginated reports, based on the stan
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. |
-|  |  |
 
-Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.  To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them. 
+Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.  To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them.
 
-In Gen1 Premium capacities, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
-
-In [Gen2 Premium capacities](../enterprise/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2), the paginated reports workload is enabled automatically, and is never unavailable.
+The paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
 
 ## Configure workloads
 
@@ -267,9 +262,10 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 >[Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
 
 >[!div class="nextstepaction"]
-[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
+>[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
 >[!div class="nextstepaction"]
 >[What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
+>[!div class="nextstepaction"]
 >[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
