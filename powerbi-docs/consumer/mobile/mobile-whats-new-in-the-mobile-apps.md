@@ -25,7 +25,7 @@ For related "What's New" information, see:
 ### Goals now supports push notifications
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out.
 
-:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png" alt-text="Screenshot of goals notification in the Power BI mobile app.":::
+![Screenshot of goals notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
 
 ### Custom goal statuses in scorecards
 The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards.
