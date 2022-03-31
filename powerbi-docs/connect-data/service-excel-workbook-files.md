@@ -125,6 +125,9 @@ Workbook file too big? Check out [Reduce the size of an Excel workbook to view i
 
 Currently, when you choose Import, Power BI only imports data that is part of a named table or a data model. As a result, if the workbook contains no named tables, Power View sheets, or Excel data models, you might see this error: **"We couldn't find any data in your Excel workbook"**. [This article](service-admin-troubleshoot-excel-workbook-data.md) explains how to fix your workbook and re-import it.
 
+## Limitations
+At the moment, the upload of Excel workbooks to a Power BI workspace is not supported for sovereign cloud customers.
+
 ## Next steps
 **Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. Just right-click the new dataset and then click Explore. If you chose to connect to a workbook file on OneDrive in step 4, your workbook will appear in Reports. When you click on it, it will open in Power BI, just as it would if it were in Excel Online.
 
