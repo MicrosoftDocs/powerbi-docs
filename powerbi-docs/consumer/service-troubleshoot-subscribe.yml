@@ -82,7 +82,7 @@ sections:
           For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles. 
 
       - question: |
-          ## My subscription is delayed  
+          My subscription is delayed  
         answer: |
           You notice that your subscription emails aren't being delivered as expected. 
 
