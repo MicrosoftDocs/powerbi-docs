@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/02/2021
+ms.date: 03/31/2022
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -43,11 +43,18 @@ Sujata demonstrates how to share in the Power BI service.
 
 ## Share a report via link
 
-In a list of reports, or in an open report, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::.
+In a list of reports, or in an open report, select **Share** :::image type="icon" source="media/service-share-dashboards/power-bi-share.png" border="false":::.
 
-Then in the **Send link** dialog, you'll see the option to copy the sharing link or share it via Outlook and Teams to **People in your organization**:
 
-   ![Share link dialog box.](media/service-share-dashboards/power-bi-copy-link-outlook-teams.png)
+
+
+Then in the **Send link** dialog, you'll see the option to copy the sharing link or share it via Outlook, PowerPoint, and Teams to **People in your organization**:
+
+:::image type="content" source="media/service-share-dashboards/power-bi-share-links.png" alt-text="Share link dialog box.":::
+
+You'll also have the option to change how you share this report.  Select **People in your organization with the link can view and share** and then choose which option works best for sharing this. For more information, see [Link settings, below](#link-settings).
+
+:::image type="content" source="media/service-share-dashboards/power-bi-share-links-2.png" alt-text="Share link options dialog box.":::
 
    > [!NOTE] 
    > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal-export-sharing.md#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) in the admin portal documentation.
@@ -129,7 +136,7 @@ For additional access management capabilities, select the **Advanced** option in
    > Each report cannot have more than 1,000 sharing links. In the unlikely case that your report hits this max limit, we recommend removing links that give **Specific people** access and instead grant those users direct access.
  
 ## Share a dashboard
-In a list of dashboards, or in an open dashboard, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::.
+In a list of dashboards, or in an open dashboard, select **Share** :::image type="icon" source="media/service-share-dashboards/power-bi-share.png" border="false":::.
 
 Then in the **Share dashboard** dialog, you'll see the option to grant users or groups direct access to the dashboard:
 
