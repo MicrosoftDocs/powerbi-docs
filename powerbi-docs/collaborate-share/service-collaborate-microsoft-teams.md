@@ -17,7 +17,7 @@ ms.date: 03/28/2022
 Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams, Outlook, and Office.
 
 > [!NOTE]
-> The Power BI app is Generally Available in Microsoft Teams. The Power BI app is in Public Preivew in Microsoft Outlook and Microsoft Office. [Learn more](#OutlookOffice).
+> The Power BI app is generally available in Microsoft Teams. The Power BI app is in public preview in Microsoft Outlook and Microsoft Office. [Learn more](#OutlookOffice).
 
 - [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md): Integrate the Power BI service experience into Microsoft Teams.
 - [Embed interactive reports in Teams channels and chats](service-embed-report-microsoft-teams.md) with a Power BI tab: Help your colleagues find and discuss your team's data. 
@@ -75,15 +75,15 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 ## <a id="OutlookOffice"></a>Power BI app in Outlook and Office
 
-The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a Public Preview. Users with the Power BI app installed in Microsoft Teams will have it installed in Outlook and Office. Users in Outlook and Office can install the Power BI app from the store. When installed, the app also appears in Teams. The Power BI app in Teams continues to be Generally Available. The Power BI app supports Outlook for the web and Outlook for Windows.
+The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a public preview. If you have installed the Power BI app in Microsoft Teams, it will also be installed in Outlook and Office. Otherwise, in Outlook and Office you can install the Power BI app from the store. When you install the app, it also appears in Teams. The Power BI app in Teams continues to be generally available. The Power BI app supports Outlook for the web and Outlook for Windows.
 
 > [!IMPORTANT]
-> To participate in the preview, users must be in Microsoft 365 First Release for web experiences and in Office Insiders Beta Channel for Windows experiences. 
-The Public preview is rolling out incrementally for First Release and Office Insiders users. This means some users in your organization may not yet see the experiences in Outlook and Office.
+> To participate in the preview, you must be in Microsoft 365 First Release for web experiences and in Office Insiders Beta Channel for Windows experiences. 
+The public preview is rolling out incrementally for First Release and Office Insiders users. This means some users in your organization may not yet see the experiences in Outlook and Office.
 
 In Outlook and Office, the preview app has some additional limitations:
 - File downloads aren't supported yet. This means export options and file downloads don't download files. 
-- On the create tab, the paste or manually enter data option isn't supported yet.
+- On the **Create** tab, the **Paste or manually enter data** option isn't supported yet.
 - Viewing items in full screen option isn't supported yet.
 - Deep links aren't supported yet in Outlook and Office. Items open in a new browser tab.
 - In Outlook, generating link previews for URLs that you paste into email isn't supported yet.
