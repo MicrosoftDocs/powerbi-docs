@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 03/28/2022
+ms.date: 03/31/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -46,9 +46,29 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 ### What is AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before. You can find many Power BI custom visuals available in AppSource.
 
-Today, both transactability and license management of existing licensed visuals take place outside of AppSource. Each publisher defines their own business and licensing model for their visual. For example, pricing, per-user license vs site license. Once you select the visual, you’ll see a **Plans + Pricing** tab (if it costs money) and a **Details + support** tab for the license information.
+You can download the visuals from AppSource for free, and each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plane. Pricing information is also shown on the left side.
+
+:::image type="content" source="media/power-bi-custom-visuals/app-purchase-plans.png" alt-text="Screenshot showing a custom visual available for download with pricing information.":::
+
+Select **Add** to download the visual for free. If a free trial period is offered, it will start when you download the visual.
+
+You *purchase* licenses for the visual in AppSource with a credit card, and *assign* licenses to yourself or others in the [M365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
+
+WHERE DOES THIS GO?
+
+If you have an unlicensed visual in your report during the free trial period, the visual will render with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
+
+:::image type="content" source="media/power-bi-custom-visuals/unlicensed-icon.png" alt-text="Screenshot showing an unlicensed custom visual with the unlicensed user icon in the corner.":::
+
+If you have a free version of the visual and try using a feature that is only available in the paid version, a banner will appear offering a link to upgrade your license.
+
+:::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing  a banner offering to upgrade the visual.":::
+
+If you have an unlicensed visual in your report, the visual will not render and a button will appear enabling you to get a license or contact the owner of the report.
+
+:::image type="content" source="media/power-bi-custom-visuals/get-a-license.png" alt-text="Screenshot showing  a button for getting a license or contacting owner.":::
 
 ### Certified Power BI visuals
 
@@ -76,7 +96,7 @@ When the *Power BI visuals* window appears, select the **My organization** tab.
 
 You can also develop your own Power BI visual, to be used by you, your organization, or the entire Power BI community.
 
-Power BI visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can then be imported into a Power BI report.
+Power BI visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single **.pbiviz** file, that can then be imported into a Power BI report.
 
 To import a Power BI visual from a file, see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/17/2022
+ms.date: 03/31/2022
 ---
 
 # Import a Power BI visual
