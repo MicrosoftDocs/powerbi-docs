@@ -18,12 +18,12 @@ summary: |
   If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/). 
   
 
-  sections:
+sections:
   - name: Ignored  
     questions:
       - question: |
           I can’t use the subscription feature  
-      answer: |
+        answer: |
           The **Subscribe** option is missing or greyed out.
           
           ### Contact your Power BI administrator or IT help desk
@@ -37,7 +37,7 @@ summary: |
           
       - question: |
           I’ve stopped receiving a subscription 
-      answer: |
+        answer: |
           I've set up a subscription but am not receiving the subscription emails.
 
           ### Account or license issues
