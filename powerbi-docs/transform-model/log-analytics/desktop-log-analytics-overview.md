@@ -68,6 +68,7 @@ Keep the following considerations and limitations in mind when working with Azur
 * You cannot connect multiple Power BI workspaces to the same Log Analytics workspace at this time. 
 * Datasets created on the web by uploading a CSV file do not generate logs.
 * If you have Multi-Factor Auth (MFA) in place for Azure but not Power BI, the configuration screens will give general Azure errors. A workaround is to first log in to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.
+* If you are using private links/VNets to isolate your Log Analytics workspaces, data ingestion into Log Analytics is unaffected. However, the [Log Analytics Template app(https://appsource.microsoft.com/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine?tab=Overview)] will not work because it relies on a public endpoint which is no longer accessible by the Power Service as a private link. A workaround is to use the [.pbit report template(https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports)] and refresh the data from inside the private VNet. You must set up a custom DNS mapping to ensure the public endpoint uses a private internal IP.
 * The following events are intentionally excluded temporarily. This will affect the Query Detail page in the template report (that is, no storage engine subqueries will be visible for now)
   * ProgressReportCurrent
   * ProgressReportBegin
