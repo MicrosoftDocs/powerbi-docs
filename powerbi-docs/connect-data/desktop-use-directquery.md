@@ -54,6 +54,22 @@ There are currently a few limitations to using DirectQuery:
 
 - There's a 125 column limit in a table or matrix for results that have more than 500 rows for DirectQuery sources. When displaying a result that contains more than 500 rows in a table or matrix, you will see a scrollbar that enables you to fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures using MIN, MAX, FIRST or LAST as they do not count against this maximum.
 
+- There is a known issue with filters in DirectQuery when filtering a date column that contains December 31st, 9999. This date is often used as a placeholder when the actual date information was not captured. Therefore, it's common to want to filter that date out from your analysis. However, using an 'is' or 'is not' filter will not correctly filter out this special date. It's recommended to use a 'is on or after' or 'is on or before' filter to filter for this special date. To understand this better, please see the example below. 
+
+    In this example, we will be using a simple dataset that contains just two rows of data with two dates. Note that the dates are formatted as is common in the USA: the month followed by the day followed by the year. The first row contains a date of March 5th, 2022 and the second row contains December 31st, 9999:
+    :::image type="content" source="media/desktop-use-directquery/directquery_date_filter_example_data.png" alt-text="Example data to explain filter issue with special date of December 31st, 9999. The data contains two rows: first row contains March 5th, 2022 and the second row contains December 31st, 9999":::
+
+    If you want to isolate or remove the rows that contain December 31st, 9999 you will most likely set up a filter on the column that contains the dates and set it to show items when the value is or is not equal to December 31st, 9999, like below. Notice however, that this does not return the expected results, as the visual now returns no data where one row is expected:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery_date_is_filter_incorrect_result.png" alt-text="Setting a filter to show items when the value is or is not equal to December 31st, 9999 will filter all data and thus return incorrect results.":::
+    
+    However, setting the filter to show items when the value *is on or before* or *is on or after* December 31st, 9999 returns the expected results:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery_date_filter_is_on_or_before.png" alt-text="Setting a filter to is on or before December 31st, 9999 returns the correct results: the rows that contain December 31st, 9999 are removed.":::
+
+    :::image type="content" source="media/desktop-use-directquery/directquery_date_filter_is_on_or_after.png" alt-text="Setting a filter to is on or after December 31st, 9999 returns the correct results: only the rows that contain December 31st, 9999 are returned.":::
+
+
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
 
