@@ -11,7 +11,10 @@ ms.topic: how-to
 ms.date: 09/10/2021
 LocalizationGroup: Dashboards
 ---
+
 # Add images, videos, and more to your dashboard
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. 
 
