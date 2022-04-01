@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/16/2022
+ms.date: 03/31/2022
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -27,6 +27,9 @@ The Power BI app in Microsoft Teams is one of the ways that you can [collaborate
 And there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (app.powerbi.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you've viewed](service-teams-pivot.md), everywhere in Teams.
 
 There are a few features that you can only access in the Power BI service in a browser. See the [Known issues and limitations](#known-issues-and-limitations) section of this article for details.
+
+> [!NOTE]
+> When you install the Power BI app in Microsoft Teams, you can also install the public preview of the Power BI app in Microsoft Outlook and Microsoft Office. Learn more about the [public preview in Outlook and Office](service-collaborate-microsoft-teams.md#OutlookOffice)
 
 ## Requirements
 
