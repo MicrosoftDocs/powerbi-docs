@@ -204,7 +204,7 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service. The paginated reports workload is enabled automatically, and is never unavailable.
 
-Paginated reports are only supported when using the *P1/A4* or higher SKUs.
+Paginated reports are only supported when using *P1/A4* or higher SKUs.
 
 ### [Gen1](#tab/gen1)
 
