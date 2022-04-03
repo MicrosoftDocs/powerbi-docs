@@ -8,7 +8,7 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 03/01/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 
@@ -196,11 +196,13 @@ If you find that you are unable to use this feature, reach out to the report own
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
-- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from a *.csv* file is 30,000.
+- When exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwith.
 
-- The maximum number of rows that the applications can export from an *.xlsx* file is 150,000.
+- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
-- For a matrix visual, the export limit still holds good for 150,000 interactions (_equivalent to rows in table visual_). You may see the error "_Exported data exceeded the allowed volume. Some data may have been omitted._" at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
+- The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
+
+  - For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has 1 *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has 3 *data intersections* per row, the maximum row count will be 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" will be added at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
 
 - Export using *Underlying data* won't work if:
 
@@ -219,6 +221,8 @@ If you find that you are unable to use this feature, reach out to the report own
   - Matrices with only one row and/or values but no columns will be exported as table (no right border separator)
   
   - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
+
+  - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work-around this issue, use the **Expand | All** command from the visual's context menu.
 
 - When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 

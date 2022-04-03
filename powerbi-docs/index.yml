@@ -27,9 +27,9 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Create automated partitions with incremental dataset refresh
-      itemType: concept
-      url: connect-data/incremental-refresh-overview.md
+    - title: Get started creating in the Power BI service
+      itemType: tutorial
+      url: fundamentals/service-get-started.md
     # Card
     - title: Embed a Power BI report in an application
       itemType: tutorial
@@ -116,7 +116,7 @@ conceptualContent:
         - url: admin/service-admin-portal.md
           itemType: how-to-guide
           text: Admin portal settings
-        - url: service-admin-how-to-use-the-same-account-as-azure.md
+        - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
           itemType: how-to-guide
           text: Use the same account for Power BI and Azure
       # footerLink (optional)

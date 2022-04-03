@@ -18,7 +18,7 @@ Monitoring your capacities is essential to making informed decisions on how best
 The app is updated regularly with new features and functionality. Make sure you're running the latest version. When a new version becomes available, you will receive [notification](../connect-data/service-template-apps-install-distribute.md#update-a-template-app).
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](/power-bi/admin/service-interruption-notifications#capacity-and-reliability-notifications) for more information.
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

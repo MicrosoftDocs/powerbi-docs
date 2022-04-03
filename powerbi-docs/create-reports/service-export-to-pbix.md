@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/26/2022
+ms.date: 03/23/2022
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -75,7 +75,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 
 ### Limitations downloading a .pbix from a report
 
-* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must have edit access to the report.
+* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md), but you must at minimum have Write access to the report or be a Contributor to the workspace.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before they can be downloaded.
 * Reports created in the Power BI service must be saved before they can be downloaded.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
@@ -88,7 +88,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 
 ### Limitations downloading a .pbix from a dataset
 
-* To download the .pbix file, you need Edit access to the report and dataset.
+* To download the .pbix file, you must at minimum have Write access to the dataset or be a Contributor to the workspace.
 * Datasets with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
 * Datasets enabled for [large models](../enterprise/service-premium-large-models.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).

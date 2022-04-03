@@ -6,28 +6,29 @@
     expanded: false
     items:
     - name: Active known issues for Power BI
-      href: known-issues/power-bi-known-issues.md                   
+      href: known-issues/power-bi-known-issues.md  
+    - name: Unable to open protected Desktop files 
+      href: known-issues/known-issue-unable-open-protected-desktop-file.md                
   - name: Troubleshoot
     expanded: false
     items:
     - name: Track Power BI service health in Microsoft 365
       href: ../admin/service-admin-health.md       
     - name: Service interruption notifications
-      href: ../service-interruption-notifications.md
-    - name: Move between regions
-      href: ../admin/service-admin-region-move.md
-    - name: Troubleshoot nested values returned as text in the Power BI service
-      href: ../connect-data/service-troubleshooting-nested-values.md
+      href: /power-bi/admin/service-interruption-notifications
     - name: Troubleshoot deployment pipelines
       href: ../create-reports/deployment-pipelines-troubleshooting.yml  
     - name: Troubleshoot relationships in Power BI models
       href: ../guidance/relationships-troubleshoot.md
-    - name: Troubleshoot developing DirectQuery models in Power BI Desktop
-      href: ../connect-data/desktop-directquery-troubleshoot.md
-    - name: Troubleshoot your embedded application 
-      href: ../developer/embedded/embedded-troubleshoot.md
     - name: Troubleshoot report performance in Power BI
       href: ../guidance/report-performance-troubleshoot.md  
+    - name: Develop in Power BI
+      expanded: false
+      items:
+      - name: Troubleshoot developing DirectQuery models in Power BI Desktop
+        href: ../connect-data/desktop-directquery-troubleshoot.md
+      - name: Troubleshoot your embedded application 
+        href: ../developer/embedded/embedded-troubleshoot.md      
     - name: Gateways
       expanded: false
       items:
@@ -60,7 +61,9 @@
       - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop
         href: ../connect-data/desktop-access-database-errors.md
       - name: Troubleshoot XMLA endpoint connectivity
-        href: ../admin/troubleshoot-xmla-endpoint.md    
+        href: /power-bi/enterprise/troubleshoot-xmla-endpoint
+      - name: Troubleshoot nested values returned as text in the Power BI service
+        href: ../connect-data/service-troubleshooting-nested-values.md
     - name: Signing in
       expanded: false
       items:
@@ -102,5 +105,7 @@
       href: ../admin/power-bi-cannot-sign-in.md
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
+    - name: Request a region move via a support request
+      href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
       href: ../fundamentals/service-tips-for-finding-help.md

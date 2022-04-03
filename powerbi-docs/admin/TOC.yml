@@ -116,6 +116,8 @@
       href: service-admin-portal-power-bi-visuals.md
     - name: Q&A settings
       href: service-admin-portal-qa.md
+    - name: Quick measure suggestions settings
+      href: service-admin-portal-quick-measure-suggestions-settings.md
     - name: R and Python visuals settings
       href: service-admin-portal-r-python-visuals.md
     - name: Share data with your Microsoft 365 services settings

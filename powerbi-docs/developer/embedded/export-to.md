@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/14/2022
+ms.date: 03/29/2022
 ---
 
 # Export Power BI report to file
@@ -102,9 +102,6 @@ The table below includes a few syntax examples of strings you can pass to  `Expo
 |Multiple values in a field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
 |A distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
 
->[!NOTE]
->`ReportLevelFilters` can only contain a single [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter).
-
 ### Authentication
 
 You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).
@@ -114,6 +111,7 @@ You can authenticate using a user (or master user) or a [service principal](embe
 With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
 To export using RLS, you must have the following permissions:
+
 * Write and reshare permissions for the dataset the report is connected to
 * If the report resides on a v1 workspace, you need to be the workspace admin
 * If the report resides on a v2 workspace, you need to be a workspace member or admin
@@ -192,9 +190,10 @@ Only five pages of a report are processed concurrently. For example, if you're e
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* Dynamic Dataset binding isn't supported.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
-  * Uncertified Power BI visuals
+  * Uncertified Power BI custom visuals
   * R visuals
   * PowerApps
   * Python visuals
@@ -211,9 +210,10 @@ Only five pages of a report are processed concurrently. For example, if you're e
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* Dynamic Dataset binding isn't supported.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
-  * Uncertified Power BI visuals
+  * Uncertified Power BI custom visuals
   * R visuals
   * PowerApps
   * Python visuals

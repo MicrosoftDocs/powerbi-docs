@@ -94,7 +94,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
-- All connections to remote Power BI Datasets models are made using single sign-on.
+- All connections to remote Power BI Datasets models are made using single sign-on. Authenticating with [a service principal](../developer/embedded/embed-service-principal.md) is not currently supported.
 
 - For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
