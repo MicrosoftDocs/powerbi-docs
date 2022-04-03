@@ -11,7 +11,7 @@
       href: "power-bi-embedded-generation-2.md"
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
-  - name: Tutorials
+  - name: Getting started
     expanded: true
     items: 
     - name: "Embed content for customers"
