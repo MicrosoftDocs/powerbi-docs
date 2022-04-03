@@ -70,6 +70,8 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 
 ### Datasets
 
+Use the settings in the table below to control workload behavior. There is additional usage information below the table for some of the settings.
+
 >[!NOTE]
 >In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
 
