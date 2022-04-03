@@ -57,7 +57,7 @@ Create a role in Power BI Desktop using the username() function. For example, yo
 
 Let's say you want to give your user, jane@contoso.com, access to data for *France*. When you generate an embed token for jane@contose.com, you pass the string *France* as the *username* in the *CountryDynamic* role. Your data will be filtered according to [CountryRegionCode] = *France*.
 
-```javascript
+```json
 {
     "accessLevel": "View",
     "identities": [
@@ -83,7 +83,7 @@ To generate a token using the Embed Token API, pass the following information to
 
 You can now embed your report into your app. The report will filter data according to the RLS applied.
 
-```javascript
+```csharp
 public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
     {
         PowerBIClient pbiClient = this.GetPowerBIClient();
