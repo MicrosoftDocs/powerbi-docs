@@ -48,27 +48,49 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before. You can find many Power BI custom visuals available in AppSource.
 
-You can download the visuals from AppSource for free, and each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plane. Pricing information is also shown on the left side.
+Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with additional functionality available for purchase. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plans. Pricing information is also shown on the left side.
 
 :::image type="content" source="media/power-bi-custom-visuals/app-purchase-plans.png" alt-text="Screenshot showing a custom visual available for download with pricing information.":::
 
-Select **Add** to download the visual for free. If a free trial period is offered, it will start when you download the visual.
+Select **Add** to download the visual. If a free trial period is offered, it will start when you download the visual.
 
-You *purchase* licenses for the visual in AppSource with a credit card, and *assign* licenses to yourself or others in the [M365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
+After you *purchase* the licenses for the visual in AppSource with a credit card, you need to *assign* them to yourself or others in the [M365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
-WHERE DOES THIS GO?
+:::image type="content" source="media/power-bi-custom-visuals/assign-license.png" alt-text="Screenshot showing a link to the Admin center after purchasing a visual.":::
 
-If you have an unlicensed visual in your report during the free trial period, the visual will render with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
+For more information on how to assign licenses go to XXX.
 
-:::image type="content" source="media/power-bi-custom-visuals/unlicensed-icon.png" alt-text="Screenshot showing an unlicensed custom visual with the unlicensed user icon in the corner.":::
+WHERE DOES UX THIS GO?
 
-If you have a free version of the visual and try using a feature that is only available in the paid version, a banner will appear offering a link to upgrade your license.
+License enforcement:
 
-:::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing  a banner offering to upgrade the visual.":::
+If you try to render an unlicensed visual or a visual that you only have a partial license for, you may see one of the following icons:
 
-If you have an unlicensed visual in your report, the visual will not render and a button will appear enabling you to get a license or contact the owner of the report.
+* If you have an unlicensed visual in your report during the free trial period, the visual will render with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
 
-:::image type="content" source="media/power-bi-custom-visuals/get-a-license.png" alt-text="Screenshot showing  a button for getting a license or contacting owner.":::
+  :::image type="content" source="media/power-bi-custom-visuals/unlicensed-icon.png" alt-text="Screenshot showing an unlicensed custom visual with the unlicensed user icon in the corner.":::
+
+* If you have a free version of the visual, when you are in edit mode, a banner will appear offering a link to upgrade your license. This banner will disappear after a while.
+
+  :::image type="content" source="media/power-bi-custom-visuals/upgrade-visual-banner.png" alt-text="Screenshot showing a banner offering to upgrade the visual license.":::
+
+* If you have a free version of the visual and try using a feature that is only available in the paid version, a banner will appear offering a link to upgrade your license.
+
+  :::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the vlicenseisual.":::
+
+* If you have an unlicensed visual in your report, the visual will not render and a button will appear enabling you to get a license or contact the owner of the report.
+
+  :::image type="content" source="media/power-bi-custom-visuals/get-a-license.png" alt-text="Screenshot showing a button for getting a license or contacting owner.":::
+
+* If your report has a custom visual in it that is not supported in your environment, it won't render and a notification will appear.
+
+  :::image type="content" source="media/power-bi-custom-visuals/unsupported-environment.png" alt-text="Screenshot showing notification of an unsupported environment.":::
+
+Selecting the icon will take you to the AppSource page where you can buy the license or upgrade to the paid version.
+
+After you purchase and assign the license, you might have to refresh the visual or restart the Desktop, before the icon disappears.
+
+END OF UX
 
 ### Certified Power BI visuals
 
@@ -104,6 +126,15 @@ If you're a web developer and want to create your own visual and add it to AppSo
 
 > [!WARNING]
 > A Power BI custom visual could contain code with security or privacy risks. Make sure you trust the author and source before importing it to your report.
+
+## Considerations and limitations
+
+Licensed visuals aren't supported in the following environments. This means that Power BI can't tell the ISV if the user is licensed, nor will it block the visual.
+
+* RS (report server) - no Azure AD
+* Sovereign or government clouds
+* PaaS Power BI embedded App owns data
+* Publish to web (P2W)
 
 ## Next steps
 
