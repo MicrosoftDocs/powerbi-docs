@@ -19,6 +19,9 @@ This article describes the data refresh features of Power BI and their dependenc
 
 ## Understanding data refresh
 
+
+[Embed Power BI content with service principal and an application secret](../developer/embedded/embed-service-principal.md)
+
 Whenever you refresh data, Power BI must query the underlying data sources, possibly load the source data into a dataset, and then update any visualizations in your reports or dashboards that rely on the updated dataset. The entire process consists of multiple phases, depending on the storage modes of your datasets, as explained in the following sections.
 
 To understand how Power BI refreshes your datasets, reports, and dashboards, you must be aware of the following concepts:
