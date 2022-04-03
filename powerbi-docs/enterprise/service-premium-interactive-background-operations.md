@@ -34,8 +34,8 @@ The table below lists the Power BI operations. It provides a short description f
 | Dataset on-demand refresh | A background dataset refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Datasets | Background |
 | Dataset Scheduled Refresh | A scheduled background dataset refresh, performed by the service, REST APIs or public XMLA endpoints | Datasets | Background |
 | Interactive query    | User queries for loading models, opening, and interacting with reports | Datasets | Interactive |
-| Paginated report | A Power BI paginated report exported with the [Export report to file](../developer/embedded/export-paginated-report) REST API | Paginated report | Background |
-| Report | A Power BI report exported with the [Export paginated report to file](../developer/embedded/export-to) REST API |         | Background |
+| Paginated report | A Power BI paginated report exported with the [Export report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
+| Report | A Power BI report exported with the [Export paginated report to file](../developer/embedded/export-to.md) REST API |         | Background |
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Datasets | Interactive |
 | XMLA write | A background XMLA write operation that changes the model | Datasets | Background    |
 |Row4     |         |         |    |
