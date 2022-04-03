@@ -11,7 +11,7 @@ ms.date: 04/03/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
-# Embed a report that uses cloud-based RLS
+# Embed a report with cloud-based RLS
 
 This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
 

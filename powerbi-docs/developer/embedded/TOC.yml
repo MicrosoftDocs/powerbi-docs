@@ -92,6 +92,11 @@
         href: azure-pbie-scale-capacity.md
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
+  - name: RLS
+    expanded: true
+    items: 
+    - name: "Embed a report with cloud-based RLS"
+      href: cloud-rls.md
   - name: Reference
     items:
     - name: APIs
