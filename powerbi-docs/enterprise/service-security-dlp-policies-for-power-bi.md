@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 02/27/2022
+ms.date: 04/03/2022
 LocalizationGroup: Data from files
 ---
 
@@ -151,6 +151,12 @@ In the condition section, you define the conditions under which the policy will 
  
     When you choose either **Sensitive info types** or **Sensitivity labels**, you will be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
+    ![Screenshot of sensitivity-label and sensitive info types choices.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-sensitivity-labels-types.png)
+
+    When you select a sensitive info type as a condition, you then need to specify how many instances of that type must be detected in order for the condition to be considered as met. You can specify from 1 to 500 instances. If you want to detect 500 or more unique instances, enter a range of '500' to 'Any'. You also can select the degree of confidence in the matching algorithm. Click the info button next to the confidence level to see the definition of each level.
+
+    ![Screenshot of confidence level setting for sensitive info types.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-confidence-level-settings.png) 
+
     You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you will only be able to choose **Any of these**, since datasets can’t have more than one label applied.
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
@@ -165,7 +171,7 @@ In the condition section, you define the conditions under which the policy will 
  
 ### Exceptions
 
-If the sensitivity label of the dataset matches any of the defined exceptions, the rule won’t be applied to the dataset. 
+If the dataset has a sensitivity label or sensitive info type that matches any of the defined exceptions, the rule won’t be applied to the dataset. 
 
 Exceptions are configured in the same way as conditions, described above.
     
@@ -211,5 +217,6 @@ Click on an alert to start drilling down to its details and to see management op
 ## Next steps
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+* [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
