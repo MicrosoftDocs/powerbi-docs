@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/21/2021
+ms.date: 04/03/2022
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -94,6 +94,7 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
 * Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. [See more detail](/defender-cloud-apps/proxy-intro-aad#supported-apps-and-clients).
+* If you experience login difficulties, such as having to login more than once, it could be related to the way some apps handle authentication. See [Slow login in the Defender for Cloud Apps documentation](/defender-cloud-apps/troubleshooting-proxy#slow-login) for more information and remediation steps.
 
 > [!CAUTION]
 > In the session policy, in the "Action" part, the "protect" capability works only if no label exists on the item. If a label already exists, the "protect" action won't apply; you can't override an existing label that has already been applied to an item in Power BI.
