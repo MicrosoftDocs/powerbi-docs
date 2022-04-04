@@ -19,7 +19,7 @@ ArcGIS for Power BI is a map visualization used to enrich data, reports, and das
 
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sales.png" alt-text="Screenshot of map zoomed in to Lancaster county and displaying tooltip.":::
 
-For example, you can use ArcGIS for Power BI to provide regional insight into sales figures. The example above shows regional sales by size against a demographic layer of the 2020 Esri Diversity Index for the selected area. An interactive tooltip for Lancaster County shows total population, household 
+For example, you can use ArcGIS for Power BI to provide regional insight into sales figures. The example above shows regional sales by size against a demographic layer of the 2020 Esri Diversity Index. An interactive tooltip for Lancaster County shows total population, household 
 population, and total households for the selected area.
 
 > [!TIP]
@@ -64,7 +64,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ## Select locations
 
- There are multiple ways to select locations on the map. The options available depend on the the type of layer selected. If the map contains more than one layer, the selection tool will apply to the active layer. A maximum of 250 data points can be selected at a time. To learn more, see [selection tools](https://doc.arcgis.com/power-bi/use/select-features-on-the-map.htm). 
+ There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply to the active layer. A maximum of 250 data points can be selected at a time. To learn more, see [selection tools](https://doc.arcgis.com/power-bi/use/select-features-on-the-map.htm). 
 
 
 ![All five selection tools.](media/end-user-arcgis/power-bi-arcgis-selection-tools.png)
@@ -79,7 +79,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ![Selection tool for freehand selection.](media/end-user-arcgis/power-bi-arcgis-freehand-select.png) Select by freehand polygon draws a freehand shape on the map and selects the contained data points and features. Use CTRL to add or remove selections.
 
-![Selection tool for reference layers.](media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png) Select by reference layer is visible only if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information see [reference layers](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
+![Selection tool for reference layers.](media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png) Select by reference layer is visible only if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [reference layers](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
 
 ![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://doc.arcgis.com/power-bi/design/find-nearby-locations.htm).
 
@@ -159,7 +159,7 @@ To access the ArcGIS for Power BI online help from the visualization, follow the
 
 1. Select **OK** in the confirmation window that appears.
 The ArcGIS for Power BI online help opens in a browser window.
-From here you can do the following:
+From here you can:
    - Find answers to frequently asked questions about ArcGIS for Power BI.
    - Ask questions, find the latest information, report issues, and find answers on the Power BI community thread related to ArcGIS for Power BI.
    - Give a suggestion for an improvement by submitting it to the Power BI Ideas list.
@@ -232,26 +232,26 @@ In services or applications for which ArcGIS for Power BI is not available, ArcG
 
 **How do ArcGIS Maps for Power BI work together?**  
 
-ArcGIS Map for Power BI is provided by Esri (www.esri.com). When you provide your consent, any data you use that is connected to the map visualization is sent to Esri’s services for geocoding, meaning location information is transformed into latitude and longitude coordinates that can be represented in a map. Through ArcGIS for Power BI, Esri provides a number of services to enrich your data, including basemaps, spatial analytics, location services, demographic data, and other authoritative data layers. ArcGIS for Power BI interacts with Power BI using an SSL connection protected by a certificate that is provided and maintained by Esri. Additional information about ArcGIS Map for Power BI can be obtained from Esri’s [ArcGIS Map for Power BI product page](https://www.esri.com/powerbi).
+ArcGIS Map for Power BI is provided by Esri (www.esri.com). When you provide your consent, any data you use that is connected to the map visualization is sent to Esri’s services for geocoding. This means that location information is transformed into latitude and longitude coordinates that can be represented in a map. Through ArcGIS for Power BI, Esri provides services to enrich your data. These include basemaps, spatial analytics, location services, demographic data, and other authoritative data layers. ArcGIS for Power BI interacts with Power BI using an SSL connection protected by a certificate that is provided and maintained by Esri. Additional information about ArcGIS Map for Power BI can be obtained from Esri’s [ArcGIS Map for Power BI product page](https://www.esri.com/powerbi).
 
 **What is an ArcGIS account?**    
 
-Esri offers an Esri [ArcGIS account](https://www.esri.com/arcgis/products/arcgis-for-power-bi/buy) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geoenrichment. 
+Esri offers an Esri [ArcGIS account](https://www.esri.com/arcgis/products/arcgis-for-power-bi/buy) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geo enrichment. 
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sign-up.png" alt-text="Screenshot showing the sign up screen.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sign-up.png" alt-text="Screenshot showing the sign-up screen.":::
 
 Power BI does not send personal information about you to Esri; this is a separate relationship with a third-party vendor. Once you add ArcGIS account content to your ArcGIS for Power BI visualization, you will have access to all the Esri content and data associated with your account, role, and organization. Any other Power BI user with whom you share that data—whether within your organization or the public—may also need an ArcGIS account to view shared, potentially licensed content. For details about account types and data limitations, [visit the ArcGIS for Power BI online help](https://doc.arcgis.com/maps-for-powerbi/get-started/account-types.htm). 
 
 For technical or detailed questions about ArcGIS for Power BI, see [Esri’s ArcGIS for Power BI online help](https://doc.arcgis.com/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/en-us/contact#c=us&t=5). 
 
-The following table compares the standard features available to all Power BI users to those available to users signed in to a valid, licensed ArcGIS account:
+The following table compares the standard features available to all Power BI users to those features available to users signed in to a valid, licensed ArcGIS account.
 
 
 |Feature  |Standard, included with Power BI  |Requires ArcGIS account  |
 |---------|---------|---------|
-|Basemaps     |     4 basic basemaps    |    All Esri basemaps, access to your organization's basemaps, custom basemaps     |
+|Basemaps     |     Four basic basemaps    |    All Esri basemaps, access to your organization's basemaps, custom basemaps     |
 |Geocoding     |   3,500 locations per map, 10,000 locations per month      |   10,000 locations per map, no monthly limit     |
-|Reference layers     |     Ten curated reference layers that contain U.S. demographic data and publicly shared feature layers in ArcGIS    |   Access to all global web maps and layers as defined by your ArcGIS organization/account; includes access to ArcGIS Living Atlas of the World maps and layers (feature services) and publicly shared feature layers in ArcGIS       |
+|Reference layers     |     10 curated reference layers that contain U.S. demographic data and publicly shared feature layers in ArcGIS    |   Access to all global web maps and layers as defined by your ArcGIS organization/account. This includes access to ArcGIS Living Atlas of the World maps and layers (feature services) and publicly shared feature layers in ArcGIS.     |
 |Infographics     |   A curated gallery of U.S. demographic data variables, a maximum of two variables, support for drive time and radius settings      |   Access to all global demographic data variables as defined by your ArcGIS organization/account; includes access to the ArcGIS GeoEnrichment data browser, maximum of five variables, support for all distance and travel settings     |
 
 
