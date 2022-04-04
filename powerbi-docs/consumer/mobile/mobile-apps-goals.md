@@ -106,7 +106,7 @@ To delete a check-in, slide the check-in to the left and tap **Delete check-in**
 
 Notifications help you stay up to date with information that requires your immediate attention. The Mobile apps support two types of notification that are related to Goals:
 * **Goal assignment notification**: When someone assigns you a goal, you'll receive a goal assignment notification on your mobile device. This way you’ll never miss when you've become a goal owner and are now accountable for that goal.  
-* **Notifications for @mentions**: Whenever you're @mentioned in a note attached to a new or existing check-in, you'll receive a notification on your mobile device. This way, you won't miss it when someone @mentions you to get your attention.
+* **Notifications for \@mentions**: Whenever you're @mentioned in a note attached to a new or existing check-in, you'll receive a notification on your mobile device. This way, you won't miss it when someone @mentions you to get your attention.
 
 For both kinds of notification, tapping the notification takes you right to the goals details pane inside the scorecard, where you can see all the necessary information.
 
