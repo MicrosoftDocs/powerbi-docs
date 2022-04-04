@@ -148,17 +148,17 @@ Now comes the ad hoc analysis part.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
 
-1. Keep selecting **High value** until you have a decomp tree that looks like this one.
+2. Keep selecting **High value** until you have a decomp tree that looks like this one.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Power BI selected all the highest values.":::
 
    Or select other values yourself, and see what you end up with.
 
-1. You can delete levels by selecting the **X** in the heading.
+3. You can delete levels by selecting the **X** in the heading.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Delete a dimension from the decomp tree.":::
 
-1. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
+4. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-reading-view.png" alt-text="The decomp tree in Reading view.":::
 
