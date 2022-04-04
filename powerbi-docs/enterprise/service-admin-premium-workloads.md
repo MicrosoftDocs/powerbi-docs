@@ -42,7 +42,7 @@ By default, capacities support only the workload associated with running Power B
 
 Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative.
 
-|                       | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|                       | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
 |-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
 | **AI**                | Unsupported               | 40% default; 40% minimum  | 20% default; 20% minimum  | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum   |
 | **Datasets**          | 100% default; 67% minimum | 100% default; 40% minimum | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum  |
@@ -107,7 +107,7 @@ If you have an existing dataset that is larger than the size you specify for thi
 
 To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling does not apply to Power BI datasets which are optimized for large data sizes. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
 
-|                                               | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
+|                                               | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |
 |-----------------------------------------------|----------|----------|----------|---------|---------|---------|
 | **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
 
@@ -129,7 +129,7 @@ Note that data refresh operations may also execute DAX queries as part of refres
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
-|                                  | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 | P4 / A7 | P5 / A8 |
+|                                  | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 | P4/A7 | P5/A8 |
 |----------------------------------|----------|----------|----------|---------|---------|---------|---------|---------|
 | **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
 
