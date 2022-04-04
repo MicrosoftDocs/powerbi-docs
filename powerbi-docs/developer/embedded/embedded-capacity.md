@@ -114,7 +114,7 @@ The table below describes the resources and limits of each SKU.
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-<sup>2</sup> These limits only apply to the datasets workload.
+<sup>2</sup> These limits only apply to the datasets workload per capacity.
 
 <sup>3</sup> The RAM column represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
@@ -133,7 +133,7 @@ The table below describes the resources and limits of each SKU.
 | P4/A7<sup>2</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
 | P5/A8<sup>2</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
-<sup>1</sup> The model refresh parallelism limits only apply to dataset workloads.
+<sup>1</sup> The model refresh parallelism limits only apply to dataset workloads per capacity.
 
 <sup>2</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
