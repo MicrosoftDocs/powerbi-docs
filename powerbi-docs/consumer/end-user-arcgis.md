@@ -90,7 +90,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 Pin a specific address, place, or point of interest on the map. In this example, we're looking for the Washington Monument.
 
-1. Expand the map tools ![Screenshot showing the map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Search button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-search.png) to open the search pane.
+1. Expand the map tools ![Screenshot showing the map tool icon and options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Search button ![Screenshot of the search tool icon.](media/end-user-arcgis/power-bi-arcgis-search.png) to open the search pane.
 2. Type the keywords **Washington Monument** in the search field.
     Keywords can include an address, place, or point of interest. As you type, similar recent searches or suggestions based on similar keywords appear.
 3. From the results list, choose **Washington Monument, 2 15th St NW, Washington DC 20024 USA** and select **Close** . A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session. Pins remain in place on the map only during the current session; you cannot save a pinned location with the map.
