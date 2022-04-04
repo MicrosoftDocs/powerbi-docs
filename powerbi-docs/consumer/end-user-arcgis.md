@@ -27,7 +27,7 @@ population, and total households for the selected area.
 > 
 
 ## User consent
-The first time you use ArcGIS for Power BI. ArcGIS Maps for Power BI is provided by [Esri](www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=826322) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
+The first time you use ArcGIS for Power BI. ArcGIS Maps for Power BI is provided by [Esri](http://www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=826322) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Interact with an ArcGIS map
 The features available to you depend on whether you are the report designer (person who made the map) or a business user (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a business user (also known as Reading view), here are the actions available to you: 
@@ -40,7 +40,7 @@ The features available to you depend on whether you are the report designer (per
 |See the map in [focus mode and full screen mode](end-user-focus.md)     |    Y     |     Y    |
 |[View related content](end-user-related.md)    |    Y     |     Y    |
 |[Interact with the filters](end-user-report-filter.md) set by the report designer    |      Y   |     Y    |
-|[Share the report](service-share-reports.md)    |   Y      |     Y    |
+|[Share the report](../collaborate-share/service-share-reports.md)    |   Y      |     Y    |
 |[Export the underlying data](../visuals/power-bi-visualization-export-data.md)     |     N    |    Y     |
 |[Get usage metrics](../collaborate-share/service-usage-metrics.md)     |    N     |    Y     |
 |[Publish to the web](../collaborate-share/service-publish-to-web.md)     |     N    |    Y     |
@@ -90,7 +90,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 Pin a specific address, place, or point of interest on the map. In this example, we're looking for the Washington Monument.
 
-1. Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Search button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-search.png) to open the search pane.
+1. Expand the map tools ![Screenshot showing the map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Search button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-search.png) to open the search pane.
 2. Type the keywords **Washington Monument** in the search field.
     Keywords can include an address, place, or point of interest. As you type, similar recent searches or suggestions based on similar keywords appear.
 3. From the results list, choose **Washington Monument, 2 15th St NW, Washington DC 20024 USA** and select **Close** . A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session. Pins remain in place on the map only during the current session; you cannot save a pinned location with the map.
@@ -100,7 +100,7 @@ For more information about pinning a location, visit the [ArcGIS for Power BI he
 
 As a business user, you can show or hide a layer, change the sequence in which a layer is shown, and zoom to a layer’s data boundaries.  To view your map’s layers, follow these steps:
 
-Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Layers button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-layers.png) to open the **Layers** pane.
+Expand the map tools ![Screenshot showing the map tool options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Layers button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-layers.png) to open the **Layers** pane.
    - To hide a layer, select the **Hide** button.
    - To show a hidden layer, select the **Show** button ![Icon for unhide.](media/end-user-arcgis/power-bi-arcgis-unhide.png). 
    - To change the sequence in which a layer is shown on the map, for example, to display a Demographic reference layer on top of the data layer, drag the reference layer to the top of the list of layers in the **Layers** pane. 
@@ -140,7 +140,7 @@ A basemap provides a background, or visual context, for the data in a map. For e
 > The report designer must have made basemaps available to you when designing the report. When unavailable, you will not see the **Basemap** button in the Map tools.
 
 To change the basemap, follow these steps:
-1. Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Basemap** button ![Basemap icon.](media/end-user-arcgis/power-bi-arcgis-basemap.png) to display the gallery of available basemaps.
+1. Expand the map tools ![Map tool options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Basemap** button ![Basemap icon.](media/end-user-arcgis/power-bi-arcgis-basemap.png) to display the gallery of available basemaps.
 2. Select the Dark Gray Canvas basemap.
 
     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot showing Dark Gray Canvas selected and applied to basemap.":::
@@ -152,7 +152,7 @@ For more information about changing the basemap, visit the [ArcGIS for Power BI 
 
 Esri provides comprehensive online documentation for ArcGIS for Power BI. 
 To access the ArcGIS for Power BI online help from the visualization, follow these steps:
-1. Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Settings** button ![Basemap icon.](media/end-user-arcgis/power-bi-arcgis-settings.png) 
+1. Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Settings** button ![Screenshot of the Basemap icon.](media/end-user-arcgis/power-bi-arcgis-settings.png) 
 2. In the **Settings** pane, select the **Help** button.
 
     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-help.png" alt-text="Screenshot showing the Help button displayed on the Settings screen.":::
