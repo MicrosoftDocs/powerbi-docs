@@ -55,7 +55,7 @@ When you first open an ArcGIS for Power BI map visualization in Reading view, th
 
 Select the map tools button ![Screenshot of the Map too expand button.](media/end-user-arcgis/power-bi-arcgis-map-tool.png) to expand the tools.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand.png" alt-text="{alt-text}":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="{alt-text}":::
 
 The map tools expand to show the available options. When selected, each tool opens a task pane that provides detailed options.
 
