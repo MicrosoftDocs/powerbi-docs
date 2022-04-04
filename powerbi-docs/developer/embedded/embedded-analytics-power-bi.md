@@ -49,7 +49,6 @@ The following table provides a comparison between the two Power BI embedded anal
 |To authenticate app users, use your own authentication method        |App users authenticate against Azure AD         |
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
-|   |   |
 
 > [!TIP]
 > Get started with the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup).
