@@ -82,7 +82,7 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism<sup>1</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
@@ -90,20 +90,15 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
 | P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
 | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
+| P4/A7<sup>2</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
+| P5/A8<sup>2</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The model refresh parallelism limits only apply to dataset workloads per capacity.
 
-<sup>2</sup> These limits only apply to the datasets workload.
-
-<sup>3</sup> The RAM column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
-
-<sup>4</sup> SKUs greater than 100 GB are not available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>2</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
 >Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
-
 
 ### Capacity workloads
 
@@ -113,7 +108,7 @@ Each additional workload allows configuring the maximum memory (as a percentage 
 
 ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
-To learn more, see [Configure workloads in a Premium capacity](service-admin-premium-workloads.md). 
+To learn more, see [Configure workloads in a Premium capacity](service-admin-premium-workloads.md).
 
 ### How capacities function
 
@@ -136,7 +131,6 @@ Refreshes of import models are always memory intensive as models must be loaded 
 Incremental refresh performs partition refresh instead of a full model refresh, and will typically be faster and require less memory, and can substantially reduce the capacity's resource usage. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables or columns that are complex or are based on a large volume of data.
 
 Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times. If there still aren't enough resources, the refresh will then fail.
-
 
 ### Regional support
 
@@ -167,7 +161,6 @@ Monitoring Premium capacities provides administrators with an understanding of h
 Monitoring in the portal provides a quick view with high-level metrics indicating loads placed and the resources utilized by your capacity, averaged, over the past seven days. 
 
 ![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
-
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 
@@ -202,7 +195,7 @@ The following table shows the recommended SKUs for uploading or publishing a .pb
 |P1/A4                  | Up to 3 GB   |
 |P2/A5                  | Up to 6 GB   |
 |P3/A6, P4/A7 and P5/A8 | Up to 10 GB  |
-   
+
 >[!NOTE]
 >When using a PPU capacity you can upload or publish .pbix files that are up to 10 GB in size.
 
@@ -270,7 +263,6 @@ With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) 
 To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
-
 
 ## Next steps
 
