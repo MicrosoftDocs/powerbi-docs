@@ -12,9 +12,9 @@ ms.date: 03/29/2022
 LocalizationGroup: Administration
 ---
 
-# Manage Azure connections (preview)
+# Manage Azure connections
 
-With Power BI you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You can read about the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
+The Azure connections admin settings connects Azure services to Power BI. Using these settings, you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You review the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
 
 The Azure connections admin settings has the following options:
 
@@ -22,17 +22,15 @@ The Azure connections admin settings has the following options:
 
 * [Workspace-level storage permissions](#workspace-level-storage-permissions) - Use to store dataflows in specific ADLS Gen 2 accounts, organized per workspace.
 
-* [Workspace-level Log Analytics permissions]() - Use to 
-
 [!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
 
 ## Tenant-level storage
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Storing dataflows in Azure Data Lake, allows you to access them using the Azure portal, Azure Storage Explorer and Azure APIs. For more information, see [Dataflows and Azure Data Lake integration](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ## Workspace-level storage permissions
 
-By default, workspace admins can't connect their own storage account. This preview feature lets Power BI administrators turn on a setting that allows workspace admins to connect their own storage account.
+By default, workspace admins can't connect their own storage account. This feature lets Power BI administrators turn on a setting that allows workspace admins to connect their own storage account.
 
 To activate this feature, go to **Admin portal > Azure connections > Connect to Azure resources (preview) > Workspace-level storage permissions (preview)**, and check the **Allow workspace admins to connect their own storage account** checkbox.
 
