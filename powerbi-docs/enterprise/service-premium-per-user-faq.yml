@@ -117,6 +117,8 @@ sections:
 
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
 
+          * The [Export Power BI report to file](../developer/embedded/export-to.md) REST API isn't supported for PPU.
+
           * The number of refreshes isn't currently restricted.
 
           * The Power BI Premium metrics app isn't currently supported for PPU.
