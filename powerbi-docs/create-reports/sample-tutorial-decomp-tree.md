@@ -136,17 +136,21 @@ Now comes the ad hoc analysis part.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value-desktop.png" alt-text="Screenshot shows selecting the highest value for analysis.":::
 
+   Power BI selects **Store type**.
+
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
+
 # [Power BI service](#tab/powerbi-service)
 
 1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means Power BI will use artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value.png" alt-text="Let Power BI select the highest value.":::
 
----
-
    Power BI selects **Store type**.
 
    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
+
+---
 
 2. Keep selecting **High value** until you have a decomp tree that looks like this one.
 
