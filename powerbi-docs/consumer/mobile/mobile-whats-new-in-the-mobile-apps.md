@@ -23,7 +23,7 @@ For related "What's New" information, see:
 ## April 2022
 
 ### Goals now supports push notifications
-Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out.
+Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-goals.md#notifications)
 
 ![Screenshot of goals notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
 
