@@ -1,16 +1,16 @@
 ---
-title: Testing submissions of Power BI visuals
-description: This article describes test cases that your visual must pass before publishing to AppSource. There are also optional test cases.
+title: Testing submissions of Power BI custom visuals
+description: This article describes test cases that your Power BI custom visual must pass before publishing it on AppSource. There are also optional test cases.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2021
+ms.date: 04/04/2022
 ---
 
-# Test a Power BI visual before submitting it
+# Test a Power BI custom visual before submitting it for publication
 
 Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. It is important to test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
@@ -110,7 +110,7 @@ Optionally, test your visual in the following browsers.
 
 ## Desktop testing
 
-Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
+Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
 | Test case | Expected results
 | --------- | ----------------
