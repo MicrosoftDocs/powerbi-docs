@@ -83,7 +83,7 @@
       - name: Troubleshoot sharing dashboards and reports
         href: ../collaborate-share/service-troubleshoot-sharing.md
       - name: Troubleshoot subscriptions
-        href: ../consumer/service-troubleshoot-subscribe.md 
+        href: ../consumer/service-troubleshoot-subscribe.yml 
     - name: Visuals
       expanded: false
       items:
