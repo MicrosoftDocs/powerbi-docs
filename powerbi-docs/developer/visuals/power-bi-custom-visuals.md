@@ -48,7 +48,7 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before. You can find many Power BI custom visuals available in AppSource.
 
-Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with additional functionality available for purchase. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plans. Pricing information is also shown on the left side.
+Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with additional functionality available for purchase. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plans. Pricing information is also shown on the left pane.
 
 :::image type="content" source="media/power-bi-custom-visuals/app-purchase-plans.png" alt-text="Screenshot showing a custom visual available for download with pricing information.":::
 
@@ -76,7 +76,7 @@ If you try to render an unlicensed visual or a visual that you only have a parti
 
 * If you have a free version of the visual and try using a feature that is only available in the paid version, a banner will appear offering a link to upgrade your license.
 
-  :::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the vlicenseisual.":::
+  :::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the license.":::
 
 * If you have an unlicensed visual in your report, the visual will not render and a button will appear enabling you to get a license or contact the owner of the report.
 

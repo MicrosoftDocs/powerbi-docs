@@ -80,6 +80,8 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 5. In the **Create a new Power BI visual** window, enter an *offer ID* and *offer alias* for your Power BI visual and select **Create**.
 
     :::image type="content" source="media/office-store/offer-id-visual.png" alt-text="Screenshot of pop up window for Power B I visual name.":::
+    >[!NOTE]
+    >If you're creating an offer for testing purposes, please add the text *-ISVPILOT* to the end of your offer alias. This will indicate to the App Source Certification team that the offer is for testing purposes and should be approved faster. Microsoft will delete offers with *-ISVPILOT* periodically so please don't use this tag for reasons other than testing transactability and license management capability.  
 
 6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, and if you want to [certify](power-bi-custom-visuals-certified.md) your visual.
 
