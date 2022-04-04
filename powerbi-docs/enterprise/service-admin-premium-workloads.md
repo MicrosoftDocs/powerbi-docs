@@ -129,9 +129,9 @@ Note that data refresh operations may also execute DAX queries as part of refres
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
-|                                  | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
-|----------------------------------|----------|----------|----------|---------|---------|---------|
-| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
+|                                  | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 | P4 / A7 | P5 / A8 |
+|----------------------------------|----------|----------|----------|---------|---------|---------|---------|---------|
+| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
 
 To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
 
