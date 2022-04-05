@@ -12,7 +12,7 @@ ms.date: 03/31/2022
 ms.author: mihart
 
 ---
-# Interacting with an ArcGIS map in Power BI
+# Interact with an ArcGIS map in Power BI
 This topic is written from the point of view of a person *consuming* an ArcGIS map in the Power BI service. ArcGIS maps in Power BI are also available in Power BI Desktop and mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see the [ArcGIS map by Esri tutorial](../visuals/power-bi-visualizations-arcgis.md).
 
 ArcGIS for Power BI is a map visualization used to enrich data, reports, and dashboards. ArcGIS for Power BI adds geographic, location, and regional demographic data, smart map themes, and analytic features such as drive time, infographics, and points of interest. Combining authoritative data layers on an ArcGIS for Power BI map with spatial analysis provides more complex insight into your Power BI data.
@@ -48,14 +48,13 @@ The features available to you depend on whether you are the report designer (per
 
 
 
-
 ## Display the Map tools
 
 When you first open an ArcGIS for Power BI map visualization in Reading view, the Map tools button is typically collapsed.
 
 Select the map tools button ![Screenshot of the Map too expand button.](media/end-user-arcgis/power-bi-arcgis-map-tool.png) to expand the tools.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="{alt-text}":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="Screenshot showing all the selection tools.":::
 
 The map tools expand to show the available options. When selected, each tool opens a task pane that provides detailed options.
 
@@ -191,39 +190,17 @@ If the report designer added an Infographics layer to the ArcGIS map, you will s
 ## Considerations and Limitations
 ArcGIS Maps for Power BI is available in the following services and applications:
 
-<table>
-<tr><th>Service/Application</th><th>Availability</th></tr>
-<tr>
-<td>Power BI Desktop</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Power BI service (app.powerbi.com)</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Power BI mobile applications*</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Power BI publish to web</td>
-<td>Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/power-bi/use/sign-in-to-arcgis.htm).</td>
-</tr>
-<tr>
-<td>Power BI Embedded</td>
-<td>Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm)</td>
-</tr>
-<tr>
-<td>Power BI service embedding (powerbi.com)</td>
-<td>No</td>
-</tr>
-<td>Power BI Report Server</td>
-<td>Yes, when signed in to a valid ArcGIS Enterprise account through Report Server (online environment only). Not supported in a disconnected environment or with ArcGIS Online.
 
-Accessing Report Server with ArcGIS for Power BI consumes ArcGIS credits. For 
-more information about credits, visit [Understand credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)</td>
-</tr>
-</table>
+|Service/Application  |Availability  |
+|---------|---------|
+|Power BI Desktop     |   Yes      |
+|Power BI service (app.powerbi.com)     |    Yes     |
+|Power BI mobile applications*     |    Yes     |
+|Power BI publish to web     |    Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/power-bi/use/sign-in-to-arcgis.htm).     |
+|Power BI Embedded     |   Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm)      |
+|Power BI service embedding (powerbi.com)     |    No     |
+| Power BI Report Server  |  Yes, when signed in to a valid ArcGIS Enterprise account through Report Server (online environment only). Not supported in a disconnected environment or with ArcGIS Online. Accessing Report Server with ArcGIS for Power BI consumes ArcGIS credits. For more information about credits, visit [Understand credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)  |
+
 
 *In mobile environments, you can view maps created using the ArcGIS for Power BI visualization included with Power BI (Standard account). Maps that contain premium content from ArcGIS are not supported in mobile environments.
 
