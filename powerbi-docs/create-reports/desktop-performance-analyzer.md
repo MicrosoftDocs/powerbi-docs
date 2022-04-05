@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 In **Power BI Desktop** you can find out how each of your report elements, such as visuals and DAX formulas, are performing. Using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them, and which aspects of their performance are most (or least) resource intensive.
 
 ![Performance analyzer](media/desktop-performance-analyzer/performance-analyzer-01.png)

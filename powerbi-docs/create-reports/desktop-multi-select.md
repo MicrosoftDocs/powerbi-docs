@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Multi-select data elements, data points, and visuals in Power BI Desktop
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 You can select multiple data elements in one visual, multiple data points in a visual, or multiple visuals in a report using Power BI Desktop. The following sections describe each in turn.
 
 ## Select multiple data points

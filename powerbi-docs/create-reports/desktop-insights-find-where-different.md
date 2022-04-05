@@ -13,6 +13,8 @@ LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI Desktop to discover where distributions vary
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI Desktop** you can find out with just a few clicks.
 
 Consider the following visual, which shows *Total Sales* by *Country*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
