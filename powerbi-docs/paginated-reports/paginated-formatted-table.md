@@ -12,45 +12,45 @@ ms.date: 04/04/2022
 
 # Create exportable formatted data tables in the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
 In this article, you learn how to export all the data from your Power BI dataset easily, while preserving data and style format. The feature lets you quickly create a paginated report on the web and apply styling. Then you can export it using the rich export functionality of paginated reports.
 
-## Find the formatted table option
+## Get started
 
-In the dataset data hub view, select **More options (...)** next to a report > **Create formatted table**.
+In Dataset hub view, select **More options (...)** next to a dataset > **Create formatted table**.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-context-menu.png" alt-text="Screenshot of data hub context menu.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-context-menu.png" alt-text="Screenshot of Dataset hub context menu.":::
 
 Select **As formatted table**.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of data hub Create report.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of Dataset hub Create report.":::
 
-Selecting either formatted table option above brings you to the new paginated report online editing experience called formatted table.  There are a few panes here to take a look at.
+The new paginated report online editing experience opens. It's called formatted table.  There are a few panes here to take a look at.
 
-## Get started
+## Create a table
 
-To create your first table, use the **Fields** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  Once you find a column that you wish to add to your table, select the column or drag it into the pane labelled **Build**.
+To create your first table, select fields names in the **Fields** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it into the pane labelled **Build**.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-fields-list.png" alt-text="Screenshot of selecting fields.":::
 
-Give the editor a few moments to run a newly created query on the dataset. Then you see the formatted table show up on the paginated report viewer to the left side of the page.
+Give the editor a few moments to run a newly created query on the dataset. The formatted table shows up in the paginated report viewer to the left side of the page.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-table.png" alt-text="Screenshot of Formatted Table Preview.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-table.png" alt-text="Screenshot of formatted table preview.":::
 
-This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before tweaking or saving the report.
+This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
-If you see that columns are in the wrong order in the **Build** pane, don't worry.  You can easily re-order the **Build** pane columns by dragging the columns in the **Build** pane into the desired order.
+If columns are in the wrong order in the **Build** pane, don't worry.  You can easily re-order the columns in the **Build** pane columns by dragging the columns into the desired order.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-build-pane-selected-fields.png" alt-text="Screenshot of Draggable Items.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-build-pane-selected-fields.png" alt-text="Screenshot of dragging items.":::
 
 When you select a field, we use the default aggregate set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
 
-The **Build** pane has other customization options for you to create a better looking table.  To access these options, select the formatting tab at the top of the **Build** pane.
+The **Build** pane has other customization options for you to create a better looking table.  To access these options, select the **Format** tab at the top of the **Build** pane.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of Styling Options.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
 
-Use the **File** menu to save, download, or print your report.
+On the **File** menu, save, download, or print your report.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu.":::
 
@@ -58,7 +58,7 @@ In **Save your report**, give your report a name and select a workspace.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog.png" alt-text="Screenshot of Save menu.":::
 
-After you save the report, you see a success or failure notification in the top right of the editor. 
+After you save the report, you see a success or failure notification in the top right of the editor.
 
 - If it failed, the message gives the reason for the failure. 
 - If a report already exists where you have chosen to save, it asks you if you wish to overwrite the existing report.  
@@ -77,10 +77,16 @@ If you navigate to any formatted table that you authored online, you have the op
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit.png" alt-text="Screenshot of Edit button.":::
 
-This option takes you back to the formatted table editor experience, where you can make any changes you want to the report.  
+This option takes you back to the formatted table editor experience, where you can make changes to the report.  
 
 > [!NOTE]
-> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button instead opens Power BI Report Builder, and isn't backwards compatible with the online formatted table experience.
+> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. If you edit this report in Report Builder, you won't be able to edit it in the online formatted table experience anymore.
+
+## Export the table
+
+Now that you've created this table and formatted it the way you want it, you can export it in a variety of formats.
+
+
 
 ## Next steps
 
