@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 04/05/2022
 ms.author: mihart
