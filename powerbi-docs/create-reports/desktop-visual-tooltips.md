@@ -107,10 +107,6 @@ Currently, drill actions aren't available in the tooltip for the following scena
 
 - Report page tooltips
 - AppSource visuals (custom visuals)
-- Matrix visuals
-- Line charts
-- Area charts
-- Stacked area charts
 - Decomposition trees
 
 We currently don't have visual-level control to turn on or off the drill actions for the tooltips. You can enable or disable this capability for a whole report.
