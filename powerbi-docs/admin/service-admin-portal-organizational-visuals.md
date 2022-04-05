@@ -16,6 +16,10 @@ LocalizationGroup: Administration
 
 The *organizational visuals* admin setting, allows you to manage the list of Power BI visuals available in your organization. For more information and detailed instructions, see [Organizational visuals](organizational-visuals.md#organizational-visuals).
 
+[!INCLUDE[Get the client ID](../includes/admin-portal-settings.md)]
+
+## Additional Power BI visuals admin settings
+
 All the Power BI visuals admin settings, including Power BI visuals tenant settings, are described in [Manage Power BI visuals admin settings](organizational-visuals.md).
 
 ## Next steps

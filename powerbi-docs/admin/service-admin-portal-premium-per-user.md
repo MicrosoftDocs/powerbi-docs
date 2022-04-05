@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 04/05/2022
 LocalizationGroup: Administration
 ---
 
@@ -20,6 +20,8 @@ LocalizationGroup: Administration
 
 ## PPU settings
 
+You can configure the following PPU settings in the admin portal.
+
    :::image type="content" source="media/service-admin-portal-premium-per-user/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
 Reference [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml) to learn more about this licensing model.
@@ -28,3 +30,6 @@ Reference [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user
 
 >[!div class="nextstepaction"]
 >[About the Admin portal](service-admin-portal.md)
+
+>[!div class="nextstepaction"]
+>[Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml)
