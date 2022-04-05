@@ -173,7 +173,7 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 
 ## Considerations and limitations 
 
-For help with troubleshooting for the subscriptions feature, see [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.md).  
+For help with troubleshooting for the subscriptions feature, see [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).  
 
 **General**
   
