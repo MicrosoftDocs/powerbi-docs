@@ -13,6 +13,8 @@ ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-hub.png" alt-text="Goals page with goals, scorecards, and samples":::
