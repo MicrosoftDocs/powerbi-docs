@@ -24,8 +24,6 @@ You can configure the following PPU settings in the admin portal.
 
    :::image type="content" source="media/service-admin-portal-premium-per-user/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml) to learn more about this licensing model.
-
 ## Next steps
 
 >[!div class="nextstepaction"]
