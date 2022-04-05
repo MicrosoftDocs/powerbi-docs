@@ -38,10 +38,6 @@
       href: generate-embed-token.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
-    - name: "Row-level security"
-      href: embedded-row-level-security.md
-    - name: "Paginated reports Row-level security"
-      href: paginated-reports-row-level-security.md
     - name: "Service principal profiles for multi-customer solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
@@ -93,10 +89,13 @@
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
   - name: RLS
-    expanded: true
-    items: 
+    items:
+    - name: "Row-level security"
+      href: embedded-row-level-security.md
     - name: "Embed a report with cloud-based RLS"
       href: cloud-rls.md
+    - name: "Paginated reports Row-level security"
+      href: paginated-reports-row-level-security.md
   - name: Reference
     items:
     - name: APIs
