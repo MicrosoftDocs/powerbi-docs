@@ -1,6 +1,6 @@
 ---
 title: Manage organizational visuals
-description: Learn how to mange Power BI organizational visuals.
+description: Learn how to manage Power BI organizational visuals.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
