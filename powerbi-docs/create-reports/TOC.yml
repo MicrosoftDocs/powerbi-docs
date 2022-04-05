@@ -522,6 +522,8 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Edit a paginated report from the Power BI service
         href: ../paginated-reports/paginated-reports-edit-service.md
+      - name: Create a paginated report with formatted table
+        href: ../paginated-reports/paginated-formatted-table.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
