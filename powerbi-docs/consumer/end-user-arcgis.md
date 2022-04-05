@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/31/2022
+ms.date: 04/05/2022
 ms.author: mihart
 
 ---
@@ -143,6 +143,7 @@ To change the basemap, follow these steps:
 2. Select the Dark Gray Canvas basemap.
 
     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot showing Dark Gray Canvas selected and applied to basemap.":::
+   
     The map updates to the new basemap.
 For more information about changing the basemap, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/power-bi/use/change-the-basemap.htm). 
 
