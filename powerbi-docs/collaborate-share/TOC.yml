@@ -55,7 +55,7 @@
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: Power BI in Teams
       items: 
-      - name: Collaborate in Teams
+      - name: Collaborate in Teams, Outlook, & Office
         href: service-collaborate-microsoft-teams.md
       - name: Add the Power BI app to Teams
         href: service-microsoft-teams-app.md
