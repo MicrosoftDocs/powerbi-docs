@@ -1,5 +1,5 @@
 ---
-title: Considerations for generating an embed token in Power BI embedded analytics
+title: Generate an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token.
 author: mberdugo
 ms.author: monaberdugo
@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 10/15/2020
+ms.date: 04/05/2022
 ---
 
-# Considerations when generating an embed token
+# Generate an embed token
 
 [Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
 
@@ -22,7 +22,7 @@ After successful authentication, access to the relevant data is granted.
 >[!NOTE]
 >Generate token is only applicable when you're [*embedding for your customers*](embed-sample-for-customers.md) (also known as the *app owns data* scenario).
 
-You can use the following APIs to generate a token:
+You can use APIs to generate a token for the following items:
 
 * [Dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
 
@@ -48,7 +48,8 @@ When creating an embed token, different workspaces have different considerations
 |**Workspace permissions**|The master user must be an admin of the workspace  |The service principal or master user must be at least a member of both workspaces |
 
 >[!NOTE]
->* You cannot create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
+>
+>* You can't create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
 >* The word *item* refers to a Power BI item such as a dashboard, tile, Q&A or report.
 
 ## Securing your data
@@ -102,9 +103,14 @@ The table also shows the considerations and limitation applicable to each RLS ty
 |SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
->Service principal must always provide the following:
+>Service principals must always provide the following:
+>
 >* An identity for any item with an RLS dataset.
 >* For an SSO dataset, an effective RLS identity with the username property defined.
+
+## Considerations and limitations
+
+The lifetime of an embed token can’t go beyond of the expiration of the Azure AD access token used to create it. Therefore, if you use an Azure AD access token to generate several embed tokens over a period of time, each embed token will return with a shorter lifetime so that it doesn't expire after the access token.
 
 ## Next steps
 
