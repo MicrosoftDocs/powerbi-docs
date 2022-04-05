@@ -50,30 +50,37 @@ The **Build** pane has other customization options for you to create a better lo
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of Styling Options.":::
 
-Once you have worked with your table to the point you would like to save, download, or print it, use the **File** menu to perform any of those options.  These should be familiar if you have used these options previously in a Power BI report.
+Use the **File** menu to save, download, or print your report.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu.":::
+
+In **Save your report**, give your report a name and select a workspace.
+
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog.png" alt-text="Screenshot of Save menu.":::
 
-After you save the report, you see a notification in the top right of the editor with the success or failure.  If it failed, it gives you a message, with the reason for the failure.  If there is already an existing report where you have chosen to save, it asks you if you wish to overwrite the existing report at that location.  If successful, you see a link to the report.  You can either follow this link or continue editing.  Once you've saved it, you see another option in the **File** menu.  This **Save As** option allows you to resave the current formatted table elsewhere.
+After you save the report, you see a success or failure notification in the top right of the editor. 
 
-At any point after saving the report you may preview the report using the **Reading Mode** option on the top bar within the editor.  This will allow you to leave the editor experience and enter the normal paginated report viewer experience.
+- If it failed, the message gives the reason for the failure. 
+- If a report already exists where you have chosen to save, it asks you if you wish to overwrite the existing report.  
+- If it succeeded, you see a link to the report.  You can either follow this link or continue editing.  
+
+After saving the report you can preview it. Select **Reading Mode** on the top bar in the editor. You leave the editor experience and enter the normal paginated report viewer experience.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-reading-view.png" alt-text="Screenshot of Reading View button.":::
 
 > [!NOTE]
-> If you have not saved the report yet, or have unsaved changes, you will instead receive a prompt asking you to save or discard your changes before taking you to the reading view.  
+> If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
 
 ## Edit a formatted table
 
-If you navigate to any formatted table that has been authored online, you will have the option within the paginated report viewer experience to edit the report.  This option is available in the toolbar above the viewer. 
+If you navigate to any formatted table that you authored online, you have the option to edit the report within the paginated report viewer experience. This option is available in the toolbar above the viewer.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit.png" alt-text="Screenshot of Edit button.":::
 
-This will take you back to the formatted table editor experience and allow you to affect any changes you wish to the report.  
+This option takes you back to the formatted table editor experience, where you can make any changes you want to the report.  
 
 > [!NOTE]
-> This Edit button is not to be confused with the Edit button on the **File** menu.  That **Edit** button will instead open Power BI Report Builder, and isn't backwards compatible with the online formatted table experience.
+> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button instead opens Power BI Report Builder, and isn't backwards compatible with the online formatted table experience.
 
 ## Next steps
 
