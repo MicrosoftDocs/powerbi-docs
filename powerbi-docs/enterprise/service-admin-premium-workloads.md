@@ -169,7 +169,7 @@ To find the automatic page refresh setting:
 
 :::image type="content" source="media/service-admin-premium-workloads/powerbi-permium-automatic-page-refresh.png" alt-text="Screenshot that shows the admin setting for automatic refresh interval.":::
 
-Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization. 
+Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization.
 
 ### Dataflows
 
@@ -202,23 +202,25 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 
 ### Paginated reports
 
+The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
+
+Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
+
 ### [Gen2](#tab/gen2)
 
-The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service. The paginated reports workload is enabled automatically, and is never unavailable.
-
-Paginated reports are only supported when using *P1/A4* or higher SKUs.
+The paginated reports workload is enabled automatically, and is always enabled.
 
 ### [Gen1](#tab/gen1)
 
-The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service. Use the following setting to control workload behavior.
+Paginated reports are only supported when using *P1/A4* or higher SKUs. 
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. |
 
-Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.  To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them.
+To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them.
 
-The paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again. 
+A power BI administer can enable or disable the paginated reports workload. When the workload is disabled, you cannot use the paginated reports feature. If you're trying to use the feature when the workload is disabled, you'll get timeouts for report rendering and an error in the admin portal.
 
 ## Configure workloads
 
