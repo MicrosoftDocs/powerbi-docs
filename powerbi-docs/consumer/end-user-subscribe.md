@@ -1,6 +1,6 @@
 ---
-title: Subscribe to reports and dashboards
-description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
+title: Email subscriptions for Power BI reports and dashboards
+description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
 ms.reviewer: mibruhje
@@ -8,11 +8,15 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/02/2022
+ms.date: 04/04/2022
 LocalizationGroup: Common tasks
 ---
 
-# Subscribe to a report or dashboard in the Power BI service 
+# Email subscriptions for Power BI reports and dashboards
+
+Learn how to subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
+
+## Subscribe to a report or dashboard in the Power BI service 
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -21,10 +25,11 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-email-sent.png" alt-text="Email for subscription to a report.":::
 
+
 ## Requirements
 To create a subscription for yourself, you'll need either:
 
-- A Power BI Pro or Premium Per User (PPU) [license](end-user-license.md) or
+- A Power BI Pro or [Premium Per User (PPU) license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#email-subscriptions).
@@ -78,27 +83,11 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscriptions-email.png)
    
-## Manage subscriptions
-Only you can manage the subscriptions you create. 
-Open the report and select **Subscribe** from the top menu again. In the lower-left corner of the subscriptions pane, select **Manage all subscriptions**. 
-
-Alternatively, select the gear icon from the header bar, then choose **Settings** and then select the **Subscriptions** tab.  
-
-All the subscriptions for the current workspace are displayed. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
-
-:::image type="content" source="./media/end-user-subscribe/power-bi-manage-subscriptions.png" alt-text="see all subscriptions in My Workspace":::
-
-To see all your subscriptions across all workspaces, navigate to **My workspace** and the select the gear icon, **Settings** and then the **Subscriptions** tab. 
-
 ## Subscribe others 
 
-To subscribe others to a report or dashboard, you’ll need:     
+You can subscribe others to reports or dashboards in a workspace if you have  the Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-- a Power BI Pro or [Premium Per User (PPU) license](../enterprise/service-premium-per-user-faq.yml)  
-
-- the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
-
-If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
+If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
@@ -108,11 +97,11 @@ When creating a subscription, you can add other email addresses in the same doma
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and do not support subscribing group aliases.  
 
-## Subscribe external users 
+### Subscribe external users 
 
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity.  
 
-- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
+- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
 - Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 
@@ -149,17 +138,66 @@ Paginated reports allow you to specify the view of the report people will receiv
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
 
 
-## Subscription controls and tracking for administrators 
+## Manage subscriptions
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. 
 
-Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal: 
+# [Creator](#tab/creator)
+
+### Subscriptions for a workspace
+
+To see all subscriptions that you own for a given workspace, select that workspace to make it active and choose **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
+
+For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
+
+:::image type="content" source="media/end-user-subscribe/power-bi-non-admin-user.png" alt-text="Screenshot showing workspace with Subscriptions selected from the top.":::
+
+From here, you will see all subscriptions you have created in the currently selected workspace. For each subscription, Power BI displays the name you gave to the subscription, the name of the content you are subscribing to, and the content type. Search for subscriptions by keyword or filter by any of these fields. Select **Edit** to make changes to a subscription’s settings.   
+
+### Subscriptions across all workspaces
+
+To see all of your subscriptions, across all workspaces, open the **Subscriptions** pane. Start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**.
+
+:::image type="content" source="media/end-user-subscribe/power-bi-settings.png" alt-text="Screenshot showing cog icon selected.":::
+
+
+:::image type="content" source="media/end-user-subscribe/power-bi-my-workspace.png" alt-text="Screenshot showing all subscriptions for a user.":::
+
+From here, you will see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you are subscribing to, and the content type. Select **Edit** to make changes to a subscription’s settings. 
+
+Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane and select **Manage all subscriptions**.   
+
+:::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
+
+
+# [Workspace admin](#tab/Workspace administrator)
+
+Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+
+To navigate to this view from within a workspace, select the ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-view.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
+
+Users with the Admin role can also make edits or take over ownership of subscriptions that are not their own.  
+
+If, for example, the owner of a subscription is on vacation and a new recipient needs to be added to their subscription, an admin can do this by selecting **Edit** and making the necessary updates to the subscription. The owner of this subscription will receive an email notification that their workspace admin has made an edit.  
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-edit.png" alt-text="Screenshot showing a list of subscriptions with the pencil icon selected.":::
+
+Admins can also take over ownership of subscriptions in workspaces they manage. This is essential when the original owner leaves a team or an organization. When the admin completes the take over, the original owner receives an email and will no longer see this subscription in their list of subscriptions.
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
+
+### Subscription controls and tracking for administrators 
+
+Power BI administrators have levers of control over subscriptions. 
 
 - [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
-- Enable all members of the organization or just specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
+- Enable all members of the organization, or just specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
 
 ### View subscription audit and activity logs 
 
-Power BI administrators can use the Power BI audit and activity logs to view details around subscriptions. These details include: 
+Power BI administrators can use the Power BI audit and activity logs to view details about subscriptions. These details include: 
 
 - Created by 
 - Creation date 
@@ -171,6 +209,8 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 
 See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
 
+
+---
 ## Considerations and limitations 
 
 For help with troubleshooting for the subscriptions feature, see [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).  
