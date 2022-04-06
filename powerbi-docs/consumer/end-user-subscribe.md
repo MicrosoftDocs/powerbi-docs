@@ -14,11 +14,13 @@ LocalizationGroup: Common tasks
 
 # Email subscriptions for Power BI reports and dashboards
 
-Learn how to subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions owned by others.
 
 ## Subscribe to a report or dashboard in the Power BI service 
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
@@ -72,9 +74,9 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. 
 
-1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now**. This sends the email to you right away. It does NOT trigger a data refresh of the underlying dataset. 
+1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now**. This sends the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
-1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to After data refresh will only send an email after the first scheduled refresh on that day.  
+1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
     
     > [!NOTE]
@@ -164,7 +166,7 @@ To see all of your subscriptions, across all workspaces, open the **Subscription
 
 From here, you will see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you are subscribing to, and the content type. Select **Edit** to make changes to a subscription’s settings. 
 
-Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane and select **Manage all subscriptions**.   
+Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane from a dashboard or report, and select **Manage all subscriptions**.   
 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
 
@@ -242,15 +244,5 @@ Email subscriptions do not support:
 
 ## Next steps
 
+[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml)   
 [Search for and sort content](end-user-search-sort.md)
-
-
-
-
-
- 
-
-
-
- 
-
