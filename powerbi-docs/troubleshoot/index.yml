@@ -8,12 +8,12 @@ metadata:
   description: Self-service guidance to identify feature issues that are already known by Microsoft, to troubleshoot problems you are experiencing, and to learn how to contact Support.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi-fundamentals
+  ms.subservice: pbi-fundamentals
   ms.topic: landing-page # Required
   ms.collection: collection
   author: mihart
   ms.author: mihart
-  ms.date: 03/15/2022
+  ms.date: 04/05/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

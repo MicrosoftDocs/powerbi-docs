@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 04/05/2022
 ms.custom:
 LocalizationGroup: Premium
 ---
@@ -117,10 +117,8 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 >[!div class="nextstepaction"]
 >[Using autoscale with Premium Gen2](service-premium-auto-scale.md)
 
-> [Install the Gen2 metrics app](service-premium-install-gen2-app.md)
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
+>[Install the Gen2 metrics app](service-premium-install-gen2-app.md)
 
-> [Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
-> [!div class="nextstepaction"]
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
