@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/03/2022
+ms.date: 04/06/2022
 LocalizationGroup: Premium
 ---
 
@@ -241,7 +241,7 @@ The paginated reports workload is enabled automatically, and is always enabled.
 
 ### [Gen1](#tab/gen1)
 
-Paginated reports are only supported when using *P1/A4* or higher SKUs. 
+Paginated reports are only supported when using *P1/A4* or higher SKUs.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
@@ -249,7 +249,7 @@ Paginated reports are only supported when using *P1/A4* or higher SKUs.
 
 To ensure proper isolation, paginated reports are run within a protected sandbox per capacity. Reports running with the same capacity can cause side effects between them. In the same way you'd restrict the authors who can publish content to an instance of SSRS, we recommend that you follow a similar practice with paginated reports. Ensure that authors publishing content to a capacity are trusted by the organization. You can further secure your environment by provisioning multiple capacities and assigning different authors to each of them.
 
-A power BI administer can enable or disable the paginated reports workload. When the workload is disabled, you cannot use the paginated reports feature. If you're trying to use the feature when the workload is disabled, you'll get timeouts for report rendering and an error in the admin portal.
+A power BI administer can enable or disable the paginated reports workload. When the workload is disabled, you cannot use the paginated reports feature. If you're trying to render a paginated report when the workload is disabled, you’ll receive a message notifying you that you need to contact your capacity administrator.
 
 ---
 
