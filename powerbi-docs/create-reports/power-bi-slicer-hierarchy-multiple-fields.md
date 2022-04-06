@@ -22,6 +22,7 @@ If you want to filter multiple related fields in a single slicer, you do so by b
 
 # [Power BI service](#tab/powerbi-service)
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Screenshot of Hierarchy slicer in Power B I.":::
+
 ---
 
 When you add multiple fields to the slicer, by default it displays an arrow, or *chevron* next to the items that can be expanded to show the items in the next level.
@@ -69,6 +70,7 @@ To change the name, select the slicer, then select the **Format** pane. Under **
 Select the text and add a new name.
 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-new-title.png" alt-text="Screenshot of new title for hierarchy slicer.":::
+
 ---
 
 ### Change the expand/collapse icon
