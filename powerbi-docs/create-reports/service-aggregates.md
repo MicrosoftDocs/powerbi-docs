@@ -14,6 +14,8 @@ LocalizationGroup: Reports
 
 # Work with aggregates (sum, average, and so on) in the Power BI service
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 ## What is an aggregate?
 
 Sometimes you want to mathematically combine values in your data. The mathematical operation could be sum, average, maximum, count, and so on. When you combine values in your data, it's called *aggregating*. The result of that mathematical operation is an *aggregate*.

@@ -13,6 +13,8 @@ LocalizationGroup: Create reports
 
 # Create modern visual tooltips (preview)
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Example of a modern visual tooltip.":::
