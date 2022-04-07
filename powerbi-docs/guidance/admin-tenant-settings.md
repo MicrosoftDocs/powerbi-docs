@@ -7,10 +7,10 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2021
+ms.date: 04/06/2022
 ---
 
-# Tenant settings guidance
+# Tenant settings
 
 This article targets Power BI administrators who are responsible for setting up and configuring the Power BI environment in their organization.
 
@@ -22,7 +22,7 @@ We provide guidance for specific tenant settings that help improve the Power BI 
 
 ### Publish "Get Help" information
 
-We encourage you to set up internal Power BI-related sites using [Microsoft Teams](/microsoftteams), or other collaboration platform. These sites can be used to store training documentation, host discussions, make requests for licenses, or respond to help.
+We encourage you to set up internal Power BI-related sites using [Microsoft Teams](/microsoftteams), or another collaboration platform. These sites can be used to store training documentation, host discussions, make requests for licenses, or respond to help.
 
 If you do so, we recommend you then enable the **Publish "Get Help" information** setting _for the entire organization_. It's found in the **Help and support settings** group. You can set URLs for your:
 
@@ -35,18 +35,18 @@ These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
 > Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
->
->
 
 ![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
 
 For more information, see [Help and support settings](../admin/service-admin-portal-help-support.md).
 
 ## Manage risk
-The settings to manage risks can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, disabling the **Export data** setting removes the feature from the Power BI user interface and helps in this way Power BI users to work in compliance with your organization's governance policies, but it does not prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has the permission to query this dataset and can persist the results regardless of the features available in the Power BI user interface.
+
+The _manage risks_ setting can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, if you disable the **Export data** setting, it removes the feature from the Power BI user interface and helps Power BI users work in compliance with your organization's governance policies, but it doesn't prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has permission to query the dataset and can persist the results regardless of the features available in the Power BI user interface.
+
 ### Receive email notification service outages or incidents
 
-You can be notified by email if your tenant is impacted by a service outage or incident. This way, you can proactively respond to incidents.
+When in this setting is enabled, you'll be notified by email if your tenant is impacted by a service outage or incident. This helps you proactively respond to incidents.
 
 We recommend you enable the **Receive email notification service outages or incidents** setting. It's found in the **Help and support settings** group. Assign one or more _mail-enabled_ security groups.
 
@@ -127,15 +127,15 @@ If you need to authorize external users to edit and manage content, we recommend
 
 ### Developer settings
 
-There are two tenant settings related to [embedding Power BI content](../developer/embedded/embedded-analytics-power-bi.md). They are:
+There are three tenant settings related to [embedding Power BI content](../developer/embedded/embedded-analytics-power-bi.md). They are:
 
 - Embed content in apps (enabled by default)
 - Allow service principals to user Power BI APIs (disabled by default)
 - Block ResourceKey Authentication (disabled by default)*
 
-If you have no intention of using the developer APIs to embed content, we recommend you disable them. Or, at least configure specific security groups that would be doing this work.
+If you don't intend to use the developer APIs to embed content, we recommend you disable them. Or, at least configure specific security groups that would be doing this work.
 
-**This setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.*
+**This setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.**
 
 ![Screenshot of Power BI admin portal showing the developer settings.](media/admin-tenant-settings/developer-settings.png)
 
