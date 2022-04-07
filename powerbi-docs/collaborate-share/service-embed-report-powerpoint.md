@@ -104,6 +104,17 @@ When you have the report page URL, paste it into the Power BI report add-in in P
 
 ## Working with the embedded report page
 
+When you first insert a report page into PowerPoint, the initial view is determined by the URL you used. This initial state is called the default view. As you work with the report, you can always restore the default view if you want to go back to it.
+
+You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
+
+You can interact with the report in both edit mode and presentation modes. The main difference between the two modes is that changes you make to a view in edit mode are persistent, whereas changes you make while in presentation mode are not persistent. This behavior is useful for preparing presentations, which will be discussed later. 
+
+In addition to the report data and visuals of the report itself, there are a number of controls and features that help you with your work.
+
+![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-embed-report-powerpoint/embedded-report-page-controls.png)
+
+
 ## Next steps
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
