@@ -30,7 +30,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 * **Data Source Credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
 
-* **Sensitivity Label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [how to apply sensitivity labels in Power BI](../../admin/service-security-apply-data-sensitivity-labels.md).
+* **Sensitivity Label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [how to apply sensitivity labels in Power BI](../../enterprise/service-security-apply-data-sensitivity-labels.md).
 
 * **Scheduled Refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a dataset.
 

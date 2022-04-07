@@ -2,21 +2,22 @@
 title: Track user activities in Power BI
 description: Learn how to use Power BI activity logs and Microsoft 365 audit logs to monitor and track user activities in Power BI.
 author: kfollis
-ms.author: kfollis
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/27/2021
+ms.date: 02/07/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in Power BI can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. This article discusses two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
+Knowing who is taking what action on which item in Power BI can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. This article discusses two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log).
 
 ## Choosing a log source
+
 The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
 
 - The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array).
@@ -28,18 +29,17 @@ The differences between log sources are summarized in the following table.
 | --- | --- |
 | Includes events from Power BI, plus events from SharePoint Online, Exchange Online, Dynamics 365, and other services. | Includes only the Power BI auditing events. |
 | Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins, Power Platform admins, and Power BI admins have access. |
-| Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
+| Global admins and auditors can search the unified audit log by using the Microsoft 365 Defender portal and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
 | Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins, Power Platform admins, and Power BI admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
 | Keeps audit data, even if the tenant is moved to a different Azure region. | Doesn't keep activity data when the tenant is moved to a different Azure region. |
-
 
 ## Use the activity log
 
 Power BI administrators can analyze usage for all Power BI resources at the tenant level by using custom reports that are based on the Power BI activity log. You download the activities by using a REST API or PowerShell cmdlet. Filter activity data by date range, user, and activity type.
 
 > [!NOTE]
-> You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands. 
+> You need to be familiar with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed before you can run commands.
 >
 > There can be a lag of up to 30 minutes to retrieve Power BI events.
 
@@ -84,6 +84,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 If the time span between startDateTime and endDateTime exceeds 1 hour, it takes multiple requests to download the data through continuationUri in response.
 
 The following example shows how to download data for 1 hour and 5 minutes:
+
 ```
 GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?startDateTime='2020-08-13T07:55:00Z'&endDateTime='2020-08-13T09:00:00Z'
 {
@@ -157,7 +158,7 @@ Meet these requirements to access audit logs:
 
 ### Access your audit logs
 
-To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
@@ -187,7 +188,7 @@ Your search will only return the selected Power BI activities.
 
 ### Search the audit logs by date
 
-You can search the logs by date range using the **Start date** and **End date** fields. The default selection is the past seven days. The display presents the date and time in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. 
+You can search the logs by date range using the **Start date** and **End date** fields. The default selection is the past seven days. The display presents the date and time in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days.
 
 You'll receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
@@ -301,8 +302,8 @@ The following operations are available in both the audit and activity logs.
 | Added user to Power BI gateway cluster datasource | | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
-| Analyzed Power BI report    | AnalyzeInExcel   | |
-| [Applied sensitivity label to Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
+| Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
+| [Applied sensitivity label to Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelApplied | |
 | Assigned a workspace to a deployment pipeline | AssignWorkspaceToPipeline  | |
 | Attached dataflow storage account     | AttachedDataflowStorageAccount | |
 | Binded monikers to Power BI datasources | BindMonikerstoDatasources | |
@@ -313,7 +314,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI dataset connections   | SetAllConnections         |         |
 | Changed Power BI gateway admins   | ChangeGatewayAdministrators  |       |
 | Changed Power BI gateway data source users  | ChangeGatewayDatasourceUsers   |       |
-| [Changed sensitivity label for Power BI artifact](service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | | 
+| [Changed sensitivity label for Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md) | SensitivityLabelChanged  | |
 | Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
@@ -352,6 +353,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
 | Deleted Power BI dataset     | DeleteDataset         |         |
 | Deleted Power BI dataset from external app | DeleteDatasetFromExternalApplication | |
+| Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
 | Deleted Power BI goal | DeleteGoal | |
@@ -365,7 +367,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI scorecard | DeleteScorecard | |
 | Deleted Power BI report    | DeleteReport   |    |
 | Deleted Power BI template app | DeleteTemplateApp | |
-| [Deleted sensitivity label from Power BI artifact](service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
+| [Deleted sensitivity label from Power BI artifact](../enterprise/service-security-sensitivity-label-audit-schema.md)  | SensitivityLabelRemoved | |
 | Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deleted workspace for Power BI template app | DeleteTemplateApp | |
 | Deployed to a pipeline stage     | DeployAlmPipeline    |        |
@@ -483,7 +485,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI tenant keys | GetTenantKeysAsAdmin | |
 | Retrieved Power BI workspaces | GetWorkspaces | |
 | Retrieved scan result in Power BI tenant | GetWorkspacesInfoResult | |
-| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset |
+| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset such as when a user visits the data hub |
 | Retrieved status of Power BI gateway cluster | | |
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |
@@ -533,17 +535,17 @@ The following operations are available in both the audit and activity logs.
 | Updated the Power BI datasource | | |
 | Updated settings for Power BI template app | UpdateTemplateAppSettings | |
 | Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
-| Viewed Power BI dashboard    | ViewDashboard     |      |
+| Viewed Power BI dashboard    | ViewDashboard     |Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
-| Viewed Power BI metadata | ViewMetadata | | 
-| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report|
+| Viewed Power BI metadata | ViewMetadata | |
+| Viewed Power BI report    | ViewReport     | Also generated per page when exporting a report</br></br> Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace. |
 | Viewed Power BI tile       | ViewTile      |     |
 | Viewed Power BI usage metrics   | ViewUsageMetrics    |   |
 |   |  |   |
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
-<sup>2</sup> PublishtoWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
+<sup>2</sup> PublishToWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
 
 <sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 

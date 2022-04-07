@@ -74,7 +74,7 @@ This slicer filters data by district manager. If you want to follow along with t
 
 ## Control which page visuals are affected by slicers
 
-By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
+By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date slicers that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
 Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
@@ -192,7 +192,7 @@ Different formatting options are available, depending on the slicer type. By usi
 
    :::image type="content" source="media/power-bi-visualization-slicers/6-buttons.png" alt-text="Screenshot of Horizontal options.":::
 
-For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power B I](../create-reports/power-bi-slicer-filter-responsive.md).
+For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### Selection controls options (list slicers only)
 
@@ -246,9 +246,9 @@ Date/numeric inputs and slider options are only available for range slider slice
 
 The other formatting options are **Off** by default. Turn **On** these options to control them: 
 
-- **Background**: Add a background color to the slicer and sets its transparency.
+- **Background**: Add a background color to the slicer and set its transparency.
 - **Lock aspect**: Keep the relative height and width of the slicer if it's resized.
-- **Border**: Add a border around the slicer and sets its color. This slicer border is separate from and unaffected by the **General** settings.
+- **Border**: Add a border around the slicer and set its color. This slicer border is separate from and unaffected by the **General** settings.
 - **Shadow**: Add a drop shadow to the slider.
 
 ## Next steps

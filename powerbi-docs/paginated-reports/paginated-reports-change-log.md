@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/07/2021
+ms.date: 12/13/2021
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,18 @@ ms.date: 10/07/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## December 2021 
+
+Version 15.7.01796.0001, released December 13, 2021 
+
+### Features
+
+- Updated authentication library used to communicate with Power BI service.
+
+### Bug fixes 
+
+- Fixed accessibility issues in various parts of Power BI Report Builder.
 
 ## October 2021 
 

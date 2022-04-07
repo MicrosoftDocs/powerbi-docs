@@ -43,7 +43,7 @@ Add the following import to your file:
 import powerbiVisualsApi from "powerbi-visuals-api"; 
 ```
 
-After adding the import, you'll need to add a condition that will determine when to display the warning icon. Use the examples below to view two optional conditions. The full code for these examples is available in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts), which is part of the [PowerBI-visuals-sampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart)  repository.
+After adding the import, you'll need to add a condition that will determine when to display the warning icon. Use the examples below to view two optional conditions. The full code for these examples is available in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts), which is part of the [`PowerBI-visuals-sampleBarChart`](https://github.com/microsoft/PowerBI-visuals-sampleBarChart)  repository.
 
 ### Example 1 - Check language compatibility
 
@@ -91,7 +91,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
 ## Considerations
 
-* Errors or warnings that are not caused by the visual, for example the *Too many values. Not showing all data* error which is derived from the Power BI service, get propagated prior to your visual’s calls and take precedence over errors that originate from your visual's code. If an error occurs while loading data, before the visual's code is run and the display warning icon condition is met, it will be displayed instead of the display warning icon error. 
+* Errors or warnings that are not caused by the visual, for example the *Too many values. Not showing all data* error which is derived from the Power BI service, get propagated prior to your visual's calls and take precedence over errors that originate from your visual's code. If an error occurs while loading data, before the visual's code is run and the display warning icon condition is met, it will be displayed instead of the display warning icon error. 
 
 * The display warning is cleared during each rendering of the visual, for example, when new data is dragged into the visual. The visual's `update()` method is invoked after the visual is rendered. Therefore, if the visual's warning is raised based on a condition that's checked in the update method, each time the visual is rendered, if the condition is met the warning will be displayed again.
 

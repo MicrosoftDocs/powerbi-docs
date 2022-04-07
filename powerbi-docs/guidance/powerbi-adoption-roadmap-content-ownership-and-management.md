@@ -2,19 +2,22 @@
 title: "Power BI adoption roadmap: Content ownership and management"
 description: Develop strategies about how BI content is owned and managed to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 02/27/2022
 ---
 
 # Power BI adoption roadmap: Content ownership and management
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. For the purposes of this series of articles, the term _content_ refers to any type of data artifact. It's synonymous with _solution_.
+> [!NOTE]
+> The Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) explore many concepts discussed in this article. The usage scenario articles include detailed diagrams that you may find helpful to support your planning and decision making.
+
+There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. For the purposes of this series of articles, the term *content* refers to any type of data artifact. It's synonymous with *solution*.
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies are implemented.
 
@@ -24,8 +27,8 @@ The areas in the above diagram include:
 
 | **Area** | **Description** |
 | --- | --- |
-| ![Area 1.](media/common/icon-01-red-30x30.png) | **Business-led self-service BI:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up BI_ strategy. |
-| ![Area 2.](media/common/icon-02-red-30x30.png) | **Managed self-service BI:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
+| ![Area 1.](media/common/icon-01-red-30x30.png) | **Business-led self-service BI:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a *decentralized* or *bottom-up BI* strategy. |
+| ![Area 2.](media/common/icon-02-red-30x30.png) | **Managed self-service BI:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as *discipline at the core and flexibility at the edge*. |
 | ![Area 3.](media/common/icon-03-red-30x30.png) | **Enterprise BI:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
 
 It's unlikely that an organization operates exclusively with one content ownership and management strategy. Depending on your data culture, one strategy might be far more dominant than the others. The choice of strategy could differ from solution to solution, or from team to team. In fact, a single team can actively use multiple strategies if it's both a consumer of enterprise BI content and a producer of its own self-service content. The strategy to pursue depends on factors such as:
@@ -50,9 +53,9 @@ As discussed in the [governance](powerbi-adoption-roadmap-governance.md) article
 
 In general:
 
-- Business-led self-service BI content is subject to the least stringent governance and oversight controls.
-- Managed self-service BI content is subject to moderately stringent governance and oversight controls.
-- Enterprise BI solutions are subject to more rigorous governance controls and oversight.
+- Business-led self-service BI content is subject to the least stringent governance and oversight controls. It often includes [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) solutions.
+- Managed self-service BI content is subject to moderately stringent governance and oversight controls. It frequently includes [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) and [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) solutions.
+- [Enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions are subject to more rigorous governance controls and oversight.
 
 As stated in the [adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md) article, organizational adoption measures the state of data management processes and governance. The choices made for content ownership and management significantly affect how organizational adoption is achieved.
 
@@ -91,7 +94,7 @@ The remainder of this article covers considerations related to the three content
 
 ## Business-led self-service BI
 
-With business-led self-service BI, all content is owned and managed by creators and subject matter experts. Because responsibility is retained within a business unit, this strategy is often described as the _bottom-up_, or _decentralized_, approach.
+With business-led self-service BI, all content is owned and managed by creators and subject matter experts. Because responsibility is retained within a business unit, this strategy is often described as the *bottom-up*, or *decentralized*, approach. Business-led self-service BI is often a good strategy for [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) solutions.
 
 > [!IMPORTANT]
 > The concept of business-led self-service BI is not the same as shadow IT. In both scenarios, BI content is created, owned, and managed by business users. However, shadow IT implies that the business unit is circumventing IT and so the solution is not sanctioned. With business-led self-service BI solutions, the business unit has full authority to create and manage content. Resources and support from the [COE](powerbi-adoption-roadmap-center-of-excellence.md) are available to self-service content creators. It's also expected that the business unit complies with all established data governance guidelines and policies.
@@ -113,9 +116,9 @@ Guidelines for being successful with business-led self-service BI:
 
 ## Managed self-service BI
 
-Managed self-service BI is a blended approach. The data is owned and managed by a centralized team (such as IT, enterprise BI, or the COE), while responsibility for reports and dashboards belongs to creators and subject matter experts within the business units.
+Managed self-service BI is a blended approach. The data is owned and managed by a centralized team (such as IT, enterprise BI, or the COE), while responsibility for reports and dashboards belongs to creators and subject matter experts within the business units. Managed self-service BI is frequently a good strategy for [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) and [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) solutions.
 
-This approach is often called _[discipline at the core and flexibility at the edge](center-of-excellence-microsoft-business-intelligence-transformation.md#discipline-at-the-core)_. It's because the data architecture is maintained by a single team with an appropriate level of discipline and rigor. Business units have the flexibility to create reports and dashboards based on centralized data. This approach allows report creators to be far more efficient because they can remain focused on delivering value from their data analysis and visuals.
+This approach is often called *[discipline at the core and flexibility at the edge](center-of-excellence-microsoft-business-intelligence-transformation.md#discipline-at-the-core)*. It's because the data architecture is maintained by a single team with an appropriate level of discipline and rigor. Business units have the flexibility to create reports and dashboards based on centralized data. This approach allows report creators to be far more efficient because they can remain focused on delivering value from their data analysis and visuals.
 
 Managed self-service BI is most suitable when:
 
@@ -137,7 +140,7 @@ Guidelines for being successful with self-service BI:
 
 ## Enterprise BI
 
-Enterprise BI is a centralized approach in which all content is owned and managed by a centralized team. This team is usually IT, enterprise BI, or the COE.
+[Enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) is a centralized approach in which all content is owned and managed by a centralized team. This team is usually IT, enterprise BI, or the COE.
 
 Enterprise BI is most suitable when:
 
@@ -151,7 +154,7 @@ Guidelines for being successful with enterprise BI:
 
 - Implement a rigorous process for use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for datasets, reports, and apps. Not all enterprise BI content needs to be certified, but much of it probably should be. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
 - Include consistent branding on enterprise BI reports to indicate who produced the content, and who to contact for help. A small image or text label in the report footer is valuable when the report is exported from the Power BI service.
-- If you use specific report branding to indicate enterprise BI content, be careful with the _save a copy_ functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. A more seamless solution is to provide a separate [Power BI Desktop template file](../create-reports/desktop-templates.md#using-report-templates) for self-service authors. The template defines a starting point for report creation with a live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
+- If you use specific report branding to indicate enterprise BI content, be careful with the *save a copy* functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. A more seamless solution is to provide a separate [Power BI Desktop template file](../create-reports/desktop-templates.md#using-report-templates) for self-service authors. The template defines a starting point for report creation with a live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
 
 ## Ownership transfers
 
@@ -180,7 +183,7 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 Here is a list of considerations and key actions you can take to strengthen your approach to content ownership and management:
 
-- Ensure you deeply understand how content ownership and management is happening throughout the organization. Recognize that there likely won't be a one-size-fits-all approach to apply uniformly across the entire organization.
+- Ensure you deeply understand how content ownership and management is happening throughout the organization. Recognize that there likely won't be a one-size-fits-all approach to apply uniformly across the entire organization. Review the Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) to understand how Power BI can be used in diverse ways.
 - Determine what is currently working well, what isn't working well, and what the desired balance is between the three ownership strategies. If necessary, schedule discussions with specific people on various teams. Develop a plan for moving from the current state to the desired state.
 - If your enterprise BI team currently has challenges related to scheduling and priorities, do an assessment to determine if a managed self-service BI strategy can be put in place to empower more content creators throughout the organization. Managed self-service BI can be extremely effective on a global scale.
 - Clarify terms used in your organization for owner, data steward, and subject matter expert. Make sure roles and responsibilities are documented, including backup personnel.

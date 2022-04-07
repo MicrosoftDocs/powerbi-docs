@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/13/2021
+ms.date: 12/07/2021
 LocalizationGroup: Connect to data
 ---
 # Use an external R IDE with Power BI
@@ -41,12 +41,15 @@ And if no **.R** file association exists, it's possible to specify a path to a c
 To launch an R IDE from **Power BI Desktop**, take the following steps:
 
 1. Load data into **Power BI Desktop**.
-2. Select some fields from the **Fields** pane that you want to work with. If you haven't enabled script visuals yet, you'll be prompted to do so.
-   
-   ![Screenshot of the Enable script visuals dialog, prompting to enable the script vsiuals.](media/desktop-r-ide/r-ide_3.png)
-3. When script visuals are enabled, you can select an R visual from the **Visualizations** pane, which creates a blank R visual that's ready to display the results of your script. The **R script editor** pane also appears.
+
+2. When script visuals are enabled, you can select an R visual from the **Visualizations** pane, which creates a blank R visual that's ready to display the results of your script. The **R script editor** pane also appears.
    
    ![Screenshot of the Visualization pane, showing a blank R visual.](media/desktop-r-ide/r-ide_4.png)
+
+3. Select some fields from the **Fields** pane that you want to work with. If you haven't enabled script visuals yet, you'll be prompted to do so.
+   
+   ![Screenshot of the Enable script visuals dialog, prompting to enable the script vsiuals.](media/desktop-r-ide/r-ide_3.png)
+
 4. Now you can select the fields you want to use in your R script. When you select a field, the **R script editor** field automatically creates script code based on the field or fields you select. You can either create (or paste) your R script directly in the **R script editor** pane, or you can leave it empty.
    
    ![Screenshot of the Visualization pane, showing a blank R visual with script in the R script editor.](media/desktop-r-ide/r-ide_5.png)

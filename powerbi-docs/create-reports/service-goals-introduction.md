@@ -8,10 +8,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2021
+ms.date: 03/28/2022
 ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
@@ -30,9 +32,9 @@ Goals is a Pro feature. Users can access various aspects of the experience depen
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring scorecards, goals, and performing check-ins | Power BI Pro license |
-|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
-|Viewing scorecard samples   |  Free user |
+|Author and share scorecards and goals, and perform check-ins | Power BI Pro license |
+|View scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
+|View scorecard samples and author scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
 
@@ -42,13 +44,13 @@ After you sign in to the Power BI service, select Goals from the navigation pane
 
 :::image type="content" source="media/service-goals-introduction/power-bi-goals-new-home.png" alt-text="The new, empty Goals home page.":::
 
-### My goals and activity 
+### Recommended
 
-The top section contains all the goals that matter the most to you. Power BI curates these goals automatically, based on goals that you're assigned to, you've edited, or you've performed a recent check-in. 
+The top section contains all the goals that matter the most to you, and the scorecard samples. Power BI curates these goals automatically, based on goals that you're assigned to, you've edited, or you've performed a recent check-in. If you don't have any scorecards yet, you see the samples there.
 
-:::image type="content" source="media/service-goals-introduction/power-bi-my-goals-activity.png" alt-text="Top section contains all the goals that matter the most to you.":::
+:::image type="content" source="media/service-goals-introduction/scorecard-samples-recommended.png" alt-text="Top section contains all the goals that matter the most to you.":::
 
-A goal must have at least two values to show up in this section. 
+A goal must have at least two values, **Current** and **Target**, to show up in this section. 
 
 ### Recent, Favorites, Shared with me, and All Scorecards 
 
@@ -64,11 +66,6 @@ The next section is a tabbed list.
 - **Shared with me** contains scorecards that your colleagues have shared with you. 
 - **All scorecards** lists all the scorecards you have access to. 
 
-### Sample scorecards 
-
-The last section contains sample scorecards. As a new user, you can select one the pre-configured scorecards to check out what scorecards are all about. Selecting a sample opens the scorecard.
-
-:::image type="content" source="media/service-goals-introduction/power-bi-goals-samples.png" alt-text="Sample scorecards with goals.":::
 
 ## Frequently asked questions (FAQ)
 
@@ -86,26 +83,26 @@ We don't pull in the history of time series if we only have a partial date (day 
 
 There are a few reasons why your goal may not be getting updated:
 
--	It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
--	You don't have scheduled refresh for the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
--	Goals don’t get updated if they're created from a push dataset. 
+- It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
+- You don't have scheduled refresh for the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- Goals don’t get updated if they're created from a push dataset. 
 
 **I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
 
 To connect your current value or target to data, you need build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md). 
-    
+
 **I shared a scorecard but my users can’t do check-ins and add notes. Why not?**
 
 Currently, users need to have edit permissions for the scorecard to add check-ins. Updated scorecard and goal-level permissions are in the works. They'll allow check-in permissions without edit permissions for the scorecard.  
-    
+
 **Why can’t I update the value as part of my check-in?**
 
 You can only update values in manual goals.  If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the dataset refreshes.
-    
+
 **How often do goals update in the scorecard?**
 
 Goals only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the goals data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of. 
-    
+
 **I changed the tracking cycle of my goal. Why does the data still look the same?**
 
 Changing the tracking cycle only changes the trend that you see below your value/target area.  Changing this setting doesn't impact refreshes on the data or when your data is updated in the goals.

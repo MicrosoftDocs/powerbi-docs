@@ -8,13 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 04/14/2021
+ms.date: 01/07/2022
 LocalizationGroup: Dashboards
 ---
 
 # Monitor usage metrics in classic workspaces
 
-Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-modern-usage-metrics.md)  
+Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). Your My Workspace is based on the classic workspace technology, so it has the same usage metrics reports as other classic workspaces. 
+
+If your reports are in one of the new _modern_ workspaces, see the article [Monitor usage metrics in the new modern workspaces](service-modern-usage-metrics.md).
 
 Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
@@ -33,7 +35,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access usage metrics for a particular dashboard or report, you must have edit access to that dashboard or report.
-- Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#audit-and-usage-settings). 
+- Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md). 
 
 ## View a Usage Metrics report
 
@@ -143,7 +145,7 @@ By default, per-user data is enabled for usage metrics, and content consumer acc
 
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes access to usage metrics data for users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
-See [Audit and usage metrics](../admin/service-admin-portal.md#audit-and-usage-settings) in the Admin portal article for details on these settings. 
+See [Audit and usage metrics](../admin/service-admin-portal-audit-usage.md) in the Admin portal article for details on these settings. 
 
 ## Usage metrics in national clouds
 
@@ -166,7 +168,7 @@ The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST API
 
 ### Classic Usage Metrics are not supported with Private Links 
 
-If your organization is using [Private Links](../admin/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
+If your organization is using [Private Links](../enterprise/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 

@@ -13,6 +13,8 @@ LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 A good way to enhance your reports is to add images to them. Static images on the page are good for some purposes. But sometimes you want images that relate to the data in your report. This topic teaches you how to display images in a table, matrix, slicer, or multi-row card. 
 
 ![URL images in a table](media/power-bi-images-tables/power-bi-url-images-table.png)

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 03/17/2022
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## November 2021 Update (2.99.563.0)
+## March 2022 Update (2.103.661.0)
 
-We're all thankful for the great things that Power BI serves for our extended business intelligence family. Even better, there's always enough features to feast on the next day, so invite your friends and even folks you don't know, sit down around this article, and share what you like best about what's on the menu.
+Lucky us, we have more compelling updates to Power BI this month, more than we could wish for using a four-leaf clover.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -43,33 +43,26 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New Format pane (preview)  [[video]](https://youtu.be/d_Un5tnKuIc?t=120)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473933) [[article]](https://powerbi.microsoft.com/blog/introducing-the-new-format-pane-preview/) 
-* Page and bookmark navigators [[video]](https://youtu.be/d_Un5tnKuIc?t=302)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473934) 
-* Sort legend  [[video]](https://youtu.be/d_Un5tnKuIc?t=595)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473938) 
-* Bold, italic, underline for text formatting  [[video]](https://youtu.be/d_Un5tnKuIc?t=636)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473939)
-* Text box superscript, subscript, and bulleted lists  [[video]](https://youtu.be/d_Un5tnKuIc?t=659)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473940)
-* Pie and donut chart rotation  [[video]](https://youtu.be/d_Un5tnKuIc?t=679)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473941)
-* Scorecard visual  [[video]](https://youtu.be/d_Un5tnKuIc?t=1034)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473942)
-* Update on tenant-level Bing Maps feature switch  [[video]](https://youtu.be/d_Un5tnKuIc?t=1173)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473943)
+* New Format pane to be Generally Available in May (preview)  [[video]](https://youtu.be/6BpiFBCCS5A?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245361)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* Error bars (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=64)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245362) 
+* Dynamic format strings now supported for all chart elements  [[video]](https://youtu.be/6BpiFBCCS5A?t=640)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245363)  
+* Updates to the Azure Maps visual (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=690)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245364)  [[Geocoding article]](/azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context) [[Pie chart article]](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context/power-bi/fundamentals/desktop-format-pane)
+* Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/power-bi/enterprise/service-security-sensitivity-label-overview) 
+* Multi-row card selection  [[video]](https://youtu.be/6BpiFBCCS5A?t=1003)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245366)
 
+### Data connectivity and preparation
+* BitSight Security Ratings (new connector) [[video]](https://youtu.be/6BpiFBCCS5A?t=1034)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245368)
+* Bloomberg Enterprise Data and Analytics (update) [[video]](https://youtu.be/6BpiFBCCS5A?t=1073)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245369)
+* Anaplan (update) [[video]](https://youtu.be/6BpiFBCCS5A?t=1073)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245370)
+* FactSet Analytics (update) [[video]](https://youtu.be/6BpiFBCCS5A?t=1073)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245371)
+* AssembleViews (update) [[video]](https://youtu.be/6BpiFBCCS5A?t=1073)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245372)
 
-### Data connectivity
-* Azure Synapse Analytics (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1223)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473945)
-* Google Sheets (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1271)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473946)
-* Azure Cosmos DB V2 (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1329)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473947)
-* Delta Sharing (new connector) (preview) [[video]](https://youtu.be/d_Un5tnKuIc?t=1363)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473948) 
-* Many more updated connectors [[video]](https://youtu.be/d_Un5tnKuIc?t=1397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473949) 
 
 
 ### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/d_Un5tnKuIc?t=1944)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473970)
-* Find report sample files easily in AppSource [[video]](https://youtu.be/d_Un5tnKuIc?t=1991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473972)
-* Many new visuals [[video]](https://youtu.be/d_Un5tnKuIc?t=1964)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473973)
-
-
-### Other
-* Automatic page refresh now supports DirectQuery for Power BI datasets and Azure Analysis Services  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473978)  
-
+* New visuals in AppSource [[video]](https://youtu.be/6BpiFBCCS5A?t=1356)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245382)
+* Charticulator visual now certified [[video]](https://youtu.be/6BpiFBCCS5A?t=1417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245383)
+* Many new visuals and updates [[video]](https://youtu.be/6BpiFBCCS5A?t=1417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245384)
 
 
 > [!NOTE]
@@ -80,15 +73,20 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-
-* Admin and governance - datasets hub improvements  [[video]](https://youtu.be/d_Un5tnKuIc?t=1414)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473954) 
-* Admin and governance - Power BI Goals  [[video]](https://youtu.be/d_Un5tnKuIc?t=1516)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473956)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Datasets hub improvements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1096)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245374)   [[article]](/power-bi/connect-data/service-datasets-hub)
+* Power BI Goals enhancements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245375)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Quickly create reports from SharePoint document libraries  [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245389)   [[article]](/power-bi/create-reports/service-quick-create-sharepoint-list)
+* Changing the default Power BI Home layout   [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245390)  [[article]](/power-bi/consumer/end-user-home)
 
 
 ---
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/).
+### Developers
+* A new improved method for deploying Power BI Embedded multi-tenancy solutions in scale [[video]](https://youtu.be/6BpiFBCCS5A?t=1256)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245379)
+
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/).
 
 
 ### Power BI monthly update video
@@ -98,7 +96,7 @@ The following video describes each of these updates. You can also watch this vid
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 
-> [!VIDEO https://www.youtube.com/embed/d_Un5tnKuIc]
+> [!VIDEO https://www.youtube.com/embed/6BpiFBCCS5A]
 
 
 ## More videos

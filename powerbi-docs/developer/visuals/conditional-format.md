@@ -18,6 +18,7 @@ ms.date: 10/19/2021
 This article describes how to add the conditional formatting functionality to your Power BI visual.
 
 Conditional formatting can only be applied to the following property types:
+
 * Color
 * Text
 * Icon

@@ -3,7 +3,7 @@ title: "Power BI adoption roadmap: Community of practice"
 description: Establish a community of practice to help users drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: v-petermyers
-ms.reviewer: asaxton
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 10/15/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-A _community of practice_ is a group of people with a common interest that interacts with, and helps, each other on a voluntary basis. Using Power BI to produce effective analytics is a common interest that can bring people together across an organization.
+A *community of practice* is a group of people with a common interest that interacts with, and helps, each other on a voluntary basis. Using Power BI to produce effective analytics is a common interest that can bring people together across an organization.
 
 The following diagram provides an overview of an internal community.
 
@@ -37,7 +37,7 @@ For information about related topics including resources, documentation, and tra
 
 ## Champions network
 
-One important part of a community of practice is its _champions_. A champion is a Power BI content creator who works in a business unit that engages with the COE. A champion is recognized by their peers as the _go-to_ Power BI expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power BI champions influence and help their colleagues in many ways including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
+One important part of a community of practice is its *champions*. A champion is a Power BI content creator who works in a business unit that engages with the COE. A champion is recognized by their peers as the *go-to* Power BI expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power BI champions influence and help their colleagues in many ways including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
 
 Champions emerge as leaders of the community of practice who:
 
@@ -49,7 +49,7 @@ Champions emerge as leaders of the community of practice who:
 - Communicate well with colleagues.
 
 > [!IMPORTANT]
-> To add an element of fun, some organizations refer to their champions network as _ambassadors_, _Jedis_, _ninjas_, or _rangers_. Microsoft has an internal community called _BI Champs_.
+> To add an element of fun, some organizations refer to their champions network as *ambassadors*, *Jedis*, *ninjas*, or *rangers*. Microsoft has an internal community called *BI Champs*.
 
 Often, people aren't directly asked to become champions. Commonly, champions are identified by the COE and recognized for the activities they're already doing, such as frequently answering questions in an internal discussion channel or participating in lunch and learns.
 
@@ -93,7 +93,7 @@ Incentives that the entire community (including champions) find particularly rew
 
 Incentives that champions find particularly rewarding can include:
 
-- **More direct access to the COE:** The ability to have _connections_ in the COE is valuable. It's depicted in the diagram shown earlier in this article.
+- **More direct access to the COE:** The ability to have *connections* in the COE is valuable. It's depicted in the diagram shown earlier in this article.
 - **Champion of the month:** Publicly thank one of your champions for something outstanding they did during the previous month. It could be a fun tradition at the beginning of a monthly lunch and learn.
 - **A private experts discussion area:** A private area for the champions to share ideas and learn from each other is usually highly valued.
 - **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes or conferences.
@@ -115,7 +115,7 @@ The most critical communication objectives include ensuring your community membe
 - How to share suggestions and ideas.
 
 > [!TIP]
-> Consider requiring a simple _Power BI test_ before a user is granted a Power BI license. This _test_ is a misnomer because it doesn't focus on any Power BI skills. Rather, it verifies that the user knows where to find help and resources. It sets them up for success. It's also a great opportunity to have users acknowledge any governance policies or data privacy and protection agreements you need them to be aware of. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
+> Consider requiring a simple *Power BI test* before a user is granted a Power BI license. This *test* is a misnomer because it doesn't focus on any Power BI skills. Rather, it verifies that the user knows where to find help and resources. It sets them up for success. It's also a great opportunity to have users acknowledge any governance policies or data privacy and protection agreements you need them to be aware of. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
 
 ### Types of communication
 

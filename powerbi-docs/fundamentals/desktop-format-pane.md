@@ -8,20 +8,30 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/02/2021
+ms.date: 01/24/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-We’re introducing a redesigned Format pane in Power BI Desktop. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
+Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
 
-We know it's a big change so we're rolling it out slowly, to get your early feedback and make any needed adjustments. It's currently in preview starting with the Power BI Desktop November 2021 release. Give it a try!
+The first time you open the February release of Power BI Desktop, you see a notification about the updated Format pane.
 
-## Turn on the preview
+:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
 
-- Go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
+
+## Latest updates
+
+Improvements added in February 2022 include:
+
+- Ability to toggle axis title independent of axis has been re-added.
+- Ability to add shade area to combo charts has been re-added.
+- Ability to customize marker shape by series for scatter charts has been re-added.
+- Outline settings for matrix and table have been re-added.
+- Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 
 ## New pivot icons 
 
@@ -88,7 +98,7 @@ Previously, you only saw some cards when you added certain fields in the build t
 
 ## Merged font settings
 
-Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and better to align with Office.
+Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and to better align with Office.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -124,15 +134,19 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
 
+## Turn off the preview
+
+- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+
+    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+
+    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
+
+
 ## Considerations and limitations
 
 Some features aren't available yet in the current version of the new Format pane.
 
-- The action cards for button, image, and shape, responsive toggle, and data limit settings are missing.
-- Global text size is missing for tables and matrixes. 
-- Numeric input may not render input properly for overflowing text.
-- Red borders may appear around some controls when you first open the pane.
-- Category labels for scatter charts are missing a few properties.
 - Some visuals, such as Azure maps, Esri maps, Power Automate, and decomposition tree, haven't been updated with subcategories yet.
 
 

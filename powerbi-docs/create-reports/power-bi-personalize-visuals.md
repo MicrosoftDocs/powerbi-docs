@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 01/03/2022
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 When you share a report with a broad audience, some of your users may want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's hard to make one visual that satisfies everyone's requirements. With this new capability, you can empower your business users to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want, and save it as a bookmark to come back to. They don't need to have edit permission for the report, or to go back to the report author for a change.
 
@@ -20,7 +20,7 @@ When you share a report with a broad audience, some of your users may want to se
  
 ## What report users can change
 
-This feature allows business users to gain further insights through ad-hoc exploration of visuals on a Power BI report. To learn how to use this feature as a user, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). The feature is ideal for report creators who want enable basic exploration scenarios for their report readers. Here are modifications that report readers can make:
+This feature is ideal for report creators: You can enable basic exploration scenarios for your report readers. Your report readers gain further insights through ad-hoc exploration of visuals on a Power BI report. Here are modifications that they can make:
 
 - Change the visualization type
 - Swap out a measure or dimension
@@ -32,21 +32,23 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 
 - Capture their changes
 - Share their changes
-- Reset all their changes for a report
+- Reset all their changes for a report. Selecting **Reset to default** removes all personalizations.
 - Reset all their changes for a visual
 - Clear out their recent changes
+
+After report readers personalize a report, they can [create personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to save their personalizations. To learn how report readers can use this feature, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). 
 
 ## Enable personalization in a report
 
 You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
 
-### In Power BI Desktop
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
 
-### In the Power BI service
+# [Power BI service](#tab/powerbi-service)
 
 To enable the feature in the Power BI service instead, go to **Settings** for your report.
 
@@ -56,20 +58,41 @@ Turn on **Personalize visuals** > **Save**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Turn on Personalize visuals in the service":::
 
+---
+
 ## Turn the feature on or off at a page or visual level
 
 When you enable Personalize visuals for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per page or per visual.
 
 ### Per page
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+Select the page tab > select **Format** in the **Visualizations** pane.
+
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting-desktop.png" alt-text="Screenshot shows the menu to select Personalize visual for a page.":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+# [Power BI service](#tab/powerbi-service)
 Select the page tab > select **Format** in the **Visualizations** pane.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
  
 Slide **Personalize visual** >  **On** or **Off**.
 
+---
+
 ### Per visual
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+Select the visual. Then select **Format** > **General** > **Icons**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize-desktop.png" alt-text="Screenshot shows the Icons menu, where you can select personalization.":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off-desktop.png" alt-text="Screenshot shows the Personalize visual slider.":::
+# [Power BI service](#tab/powerbi-service)
 Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
@@ -77,6 +100,8 @@ Select the visual > select **Format** in the **Visualizations** pane > expand **
 Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
+
+---
 
 ## Use Perspectives for a more focused view
 
@@ -135,9 +160,9 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 Currently the feature has a few limitations to be aware of.
 
 - This feature isn't supported for publish to web.
-- Export to PowerPoint and PDF do not capture personalized visuals.
-- User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
-- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+- Export to PowerPoint and PDF don't capture personalized visuals.
+- User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
+- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Next steps
 

@@ -47,7 +47,7 @@ If you have access to the dataset that is being used to create the map visualiza
 
 **1. Categorize geographic fields in Power BI Desktop**
 
-In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Data view, select the desired column. From the ribbon, select the **Modeling** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **County**, **Postal Code**, **State, or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you are live connecting to SQL Server Analysis Services, you will need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
+In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. In Data view, select the desired column. From the ribbon, select the **Modeling** tab and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **County**, **Postal Code**, **State, or **Province**. These data categories help Bing correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you are live connecting to SQL Server Analysis Services, you will need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Use more than one location column.**
 

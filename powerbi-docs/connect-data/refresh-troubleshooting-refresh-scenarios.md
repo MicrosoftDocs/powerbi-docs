@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/06/2021
+ms.date: 01/06/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -67,13 +67,15 @@ Microsoft is investigating a solution that allows the data loading process to re
 
 Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using AAD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
+In addition, if you want to connect to a data source from Power BI service using OAuth2, the data source must be in the same tenant as Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
+
 ## Uncompressed data limits for refresh
 
 The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium are not subject to this limit. If refresh in the Power BI service fails for this reason, please reduce the amount of data being imported to Power BI and try again.
 
 ## Scheduled refresh timeout
 
-Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
+Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
 
 ## Scheduled refresh failures
 
@@ -101,10 +103,11 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the follow error message is logged into the refresh history:
 
-- *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+*The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
  
-If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations. 
+If the error occurs frequently, use the [schedule view](../connect-data/refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the table at the bottom of the [Premium limitations](../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2) section.
 
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations.
 
 ## Next steps
 

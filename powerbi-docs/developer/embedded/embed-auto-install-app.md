@@ -24,7 +24,7 @@ To allow auto install of apps for your users, you need to give your application 
 
 ![Register app creates content](media/embed-auto-install-app/register-app-create-content.png)
 
-Next, you need to provide the app ID in the embed URL. To provide the app ID, the app creator first needs to install the app then use one of the supported [Power BI Rest API](/rest/api/power-bi/) calls - [Get Reports](/rest/api/power-bi/reports/getreports) or [Get Dashboards](/rest/api/power-bi/dashboards/getdashboards). Then the app creator needs to take the embed Url from the REST API response. The app ID appears in the URL if the content is from an app.  After you have the embed URL, you can use it to embed regularly.
+Next, you need to provide the app ID in the embed URL. To provide the app ID, the app creator first needs to install the app then use one of the supported [Power BI REST API](/rest/api/power-bi/) calls - [Get Reports](/rest/api/power-bi/reports/getreports) or [Get Dashboards](/rest/api/power-bi/dashboards/getdashboards). Then the app creator needs to take the embed Url from the REST API response. The app ID appears in the URL if the content is from an app.  After you have the embed URL, you can use it to embed regularly.
 
 ## Secure Embed
 

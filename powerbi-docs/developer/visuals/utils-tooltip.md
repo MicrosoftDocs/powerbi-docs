@@ -13,10 +13,12 @@ ms.date: 02/14/2020
 This article will help you to install, import, and use tooltip utils. This util useful for any tooltip customization in Power BI visuals.
 
 ## Requirements
+
 To use the package, you should have the following things:
-* [node.js](https://nodejs.org) (we recommend the latest LTS version)
+
+* [Node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
-* The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
+* The custom visual created by [`PowerBI-visuals-tools`](https://www.npmjs.com/package/powerbi-visuals-tools)
 
 ## Installation
 
@@ -25,7 +27,8 @@ To install the package, you should run the following command in the directory wi
 ```bash
 npm install powerbi-visuals-utils-tooltiputils --save
 ```
-This command installs the package and adds a package as a dependency to your ```package.json```
+
+This command installs the package and adds a package as a dependency to your `package.json` file.
 
 ## Usage
 
