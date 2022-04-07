@@ -1,6 +1,6 @@
 ---
 title: Data refresh may have slow refresh or failure to cancel - known issue
-description: Starting 2022-01-31, Power BI Premium customers may have intermittently experienced issues with long running refreshes, or refreshes that could not be cancelled
+description: You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
@@ -19,7 +19,7 @@ ms.custom: known-issue-165
 
 ## Description of problem
 
-You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling. In some rare cases, your dataflow fails and you will receive an error message "Your (...) dataflow couldn’t be refreshed because there was a problem with one or more entities, or because dataflow capabilities were unavailable."
+You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling. In some rare cases, your dataflow fails and you'll receive an error message "Your (...) dataflow couldn’t be refreshed because there was a problem with one or more entities, or because dataflow capabilities were unavailable."
 
 ## Symptoms
 
@@ -33,7 +33,7 @@ Refreshing a dataflow will have one of the following symptoms:
 
 The Power BI team is working to continually improve dataflow reliability. To that end, the team is working on several efforts that will be available in the months ahead. </br>
 
-It is also recommended to follow the suggestions within [Best practices for designing and developing complex dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows). You can also review refresh schedules and potentially move refresh times to help avoid contention that leads to these issues. </br>
+It's also recommended to follow the suggestions within [Best practices for designing and developing complex dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows). You can also review refresh schedules and potentially move refresh times to help avoid contention that leads to these issues. </br>
 
 As a last resource, you can try swapping the workspace out of Premium to Pro and wait a few minutes. Then switch the workspace back to Premium. This solution may help to provide relief, but the issue could recur. </br>
 
