@@ -37,4 +37,4 @@ Try uploading the paginated report again, which should successfully trigger the 
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)
