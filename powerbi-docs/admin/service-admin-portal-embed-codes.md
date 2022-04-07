@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Manage embed codes
 
-As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly using the [Publish to web from Power BI](../collaborate-share/service-publish-to-web.md) feature. You can also revoke or delete codes.
+As an administrator, you can view the embed codes that are generated for sharing reports publicly using the [Publish to web from Power BI](../collaborate-share/service-publish-to-web.md) feature. You can also disable or delete embed codes.
 
 :::image type="content" source="media/service-admin-portal-embed-codes/power-bi-settings-embed-codes.png" alt-text="Screenshot that shows the embed codes within the Power BI admin portal.":::
 
