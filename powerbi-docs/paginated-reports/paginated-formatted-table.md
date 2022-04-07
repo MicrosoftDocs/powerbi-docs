@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
 ms.topic: how-to
-ms.date: 04/04/2022
+ms.date: 04/06/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
@@ -81,12 +81,6 @@ This option takes you back to the formatted table editor experience, where you c
 
 > [!NOTE]
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. If you edit this report in Report Builder, you won't be able to edit it in the online formatted table experience anymore.
-
-## Export the table
-
-Now that you've created this table and formatted it the way you want it, you can export it in a variety of formats.
-
-
 
 ## Next steps
 
