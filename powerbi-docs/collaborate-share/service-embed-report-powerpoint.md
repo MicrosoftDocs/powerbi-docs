@@ -92,15 +92,13 @@ Open the report to the page you want to insert, copy the URL from the browser’
 
 When you have the report page URL, paste it into the Power BI report add-in in PowerPoint.
 
-1. Open PowerPoint and navigate to the slide where you want to insert the report.
-
-2. Select the Power BI add-in.
+1. Open PowerPoint and navigate to the slide where you want to insert the report and select the Power BI add-in.
 
     ![Screenshot of selecting the Power B I report add-in.](media/service-embed-report-powerpoint/select-power-bi-report-addin.png)
  
     If you don't see the add-in, see [Get the Power BI report add-in for PowerPoint](TBD).
 
-1. Paste the report page URL into the text box and then click Insert. The report will load into the add-in.
+1. Paste the report page URL into the text box and then click **Insert**. The report will load into the add-in.
 
     :::image type="content" source="media/service-embed-report-powerpoint/insert-report-page-url.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
 
