@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/02/2021
+ms.date: 04/07/2022
 ---
 
 # Row-level security with Power BI Embedded
@@ -304,7 +304,7 @@ If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatet
 }
 ```
 
-The value provided in the identity blob should be a valid access token to Azure SQL Server (with a resource URL of (<https://database.windows.net/>).
+The value provided in the identity blob should be a valid access token to Azure SQL Server.
 
    > [!Note]
    > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on AAD app registration configuration in the Azure portal.
