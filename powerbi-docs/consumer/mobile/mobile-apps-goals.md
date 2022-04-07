@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 08/30/2021
+ms.date: 04/04/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update goals in the Power BI mobile app.
 ---
@@ -101,6 +101,16 @@ Generally, you add note as part of a new check-in, but you can also add a note t
 To delete a check-in, slide the check-in to the left and tap **Delete check-in**.
 
 ![Screenshot of the delete check-in option.](media/mobile-apps-goals/mobile-apps-delete-checkin.png)
+
+## Notifications
+
+Notifications help you stay up to date with information that requires your immediate attention. The Mobile apps support two types of notification that are related to Goals:
+* **Goal assignment notification**: When someone assigns you a goal, you'll receive a goal assignment notification on your mobile device. This way you’ll never miss when you've become a goal owner and are now accountable for that goal.  
+* **Notifications for \@mentions**: Whenever you're @mentioned in a note attached to a new or existing check-in, you'll receive a notification on your mobile device. This way, you won't miss it when someone @mentions you to get your attention.
+
+For both kinds of notification, tapping the notification takes you right to the goals details pane inside the scorecard, where you can see all the necessary information.
+
+![Screenshot of goal-related push notifications in the Power BI mobile app.](media/mobile-apps-goals/power-bi-mobile-goals-notification.png)
 
 ## Next steps
  
