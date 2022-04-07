@@ -11,6 +11,9 @@ ms.date: 03/18/2022
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page. 
 
 ![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -27,7 +30,7 @@ To get started, create a new report page by clicking the **+** button, found alo
 
 ![Create a new report page for the tooltip](media/desktop-tooltips/desktop-tooltips_02.png)
 
-Your tooltip can be any size, but keep in mind that tooltips hover over the report canvas, so you might want to keep them reasonably small. In the **Format** pane in the **Page Size** card, you can see a new page size template called *Tooltip*. This provides a report page canvas size that's ready for your tooltip.
+Your tooltip can be any size, but keep in mind that tooltips hover over the report canvas, so you might want to keep them reasonably small. In the **Format** pane in the **Canvas Settings** card, you can see a new page size template called *Tooltip*. This provides a report page canvas size that's ready for your tooltip.
 
 ![Choose tooltip in page size for a ready-made tooltip](media/desktop-tooltips/desktop-tooltips_03.png)
 
@@ -55,7 +58,7 @@ To begin with, you need to turn the **Tooltip** slider to **On**, in the **Page 
 
 ![Turn on the tooltip slider to indicate the page is a tooltip](media/desktop-tooltips/desktop-tooltips_07.png)
 
-Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *Sales $* field has been dragged into the **Tooltips fields** bucket.
+Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *Total Defect Qty* field has been dragged into the **Tooltips fields** bucket.
 
 ![Add fields to determine where the tooltip will appear](media/desktop-tooltips/desktop-tooltips_08.png)
  
@@ -69,7 +72,7 @@ In addition to creating a tooltip that automatically appears when hovering over 
 
 Any visual that supports report tooltips now has a **Tooltip** card in its **Formatting** pane. 
 
-To set a tooltip manually, select the visual for which you want to specify the manual tooltip, then in the **Visualizations** pane, select the **Format** section and expand the **Tooltip** card.
+To set a tooltip manually, select the visual for which you want to specify the manual tooltip, then in the **Visualizations** pane, select the **Format** section and expand the **Tooltips** card.
 
 ![Tooltip card for an individual visual](media/desktop-tooltips/desktop-tooltips_09.png)
 
@@ -81,7 +84,7 @@ Being able to manually set a tooltip has many uses. You can set a blank page for
 
 ## Reverting to default tooltips
 
-If you create a manual tooltip for a visual but decide you want the default tooltip instead, you can always return to the default tooltip that Power BI provides. To do so, when a visual is selected and the **Tooltip** card is expanded, just select *Auto* from the **Page** dropdown to go back to the default.
+If you create a manual tooltip for a visual but decide you want the default tooltip instead, you can always return to the default tooltip that Power BI provides. To do so, when a visual is selected and the **Tooltips** card is expanded, just select *Auto* from the **Page** dropdown to go back to the default.
 
 ![Back to the default tooltip for a visual](media/desktop-tooltips/desktop-tooltips_11.png)
 
