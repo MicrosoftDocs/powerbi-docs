@@ -1,6 +1,6 @@
 ---
-title: Matrix banded row colors appear incorrectly in Service
-description: When creating a Matrix, if the row subtotal is turned on and the background color is customized, the banded rows will appear crossed after it is published to Power BI Service.
+title: Matrix banded row colors appear incorrectly in Service - known issue
+description: In this scenario, you create a matrix with a row subtotal and a customized background color. Once you publish the report to the Power BI Service, the banded rows appear crossed.
 author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
@@ -9,7 +9,7 @@ ms.date: 04/06/2022
 ms.custom: known-issue-167
 ---
 
-# Matrix banded row colors appear incorrectly in Service
+# Matrix banded row colors appear incorrectly in Service - known issue
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -19,11 +19,11 @@ ms.custom: known-issue-167
 
 ## Description of problem
 
-When creating a Matrix, if the row subtotal is turned on and the background color is customized, the banded rows will appear crossed after it is published to Power BI Service.
+In this scenario, you create a matrix with a row subtotal and a customized background color. Once you publish the report to the Power BI Service, the banded rows appear crossed.
 
 ## Symptoms
 
-You will see that the banded / alternating rows of background color appear correctly in a matrix within Power BI Desktop.  When you publish to Power BI Service, the colors will look crossed between the row header and the row details.
+You'll see that the banded / alternating rows of background color appear correctly in a matrix within Power BI Desktop.  When you publish to Power BI Service, the colors will look crossed between the row header and the row details.
 
 ## Solutions and workarounds
 
@@ -31,4 +31,4 @@ No workarounds at this time.  When the fix is released to Power BI Service, this
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)

@@ -31,4 +31,4 @@ To see the correct selected values in the filter, clear the filter before applyi
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)
