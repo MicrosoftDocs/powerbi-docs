@@ -1,5 +1,5 @@
 ---
-title: Uploading paginated report with same name fails - known issue
+title: Known issue - Uploading paginated report with same name fails
 description: When you try to upload a paginated report with the same name as one existing in the current workspace, you will receive an error and the upload will fail.
 author: mihart
 ms.author: mihart
@@ -9,7 +9,7 @@ ms.date: 04/05/2022
 ms.custom: known-issue-152
 ---
 
-# Uploading paginated report with same name fails - known issue
+# Known issue - Uploading paginated report with same name fails - known issue
 
 **APPLIES TO:** ✔️ Power BI service
 

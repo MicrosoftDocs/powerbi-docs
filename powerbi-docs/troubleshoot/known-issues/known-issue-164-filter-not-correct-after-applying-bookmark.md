@@ -1,5 +1,5 @@
 ---
-title: Filter not correct after applying bookmark - known issue
+title: Known issue - Filter not correct after applying bookmark
 description: In your Power BI Desktop or Power BI Service report, you may see filters not showing correctly after applying a bookmark.
 author: mihart
 ms.author: mihart
@@ -9,7 +9,7 @@ ms.date: 04/05/2022
 ms.custom: known-issue-164
 ---
 
-# Filter not correct after applying bookmark - known issue
+# Known issue - Filter not correct after applying bookmark
 
 **APPLIES TO:** ✔️ Power BI Desktop ✔️ Power BI Service
 
