@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/06/2022
+ms.date: 04/07/2022
 LocalizationGroup: Premium
 ---
 
@@ -15,8 +15,11 @@ LocalizationGroup: Premium
 
 This article lists the workloads for Power BI Premium, and describes their capacities. Use the *Gen2* and *Gen1* tabs to review the differences between workloads for these Premium offerings.
 
->[!NOTE]
+>[!IMPORTANT]
 >Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](service-premium-transition-gen1-to-gen2.md).
+
+>[!NOTE]
+>Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
 
 ## Supported workloads
 
@@ -79,10 +82,6 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
-
-### REST APIs
-
-Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
 
 ## AI (Preview)
 
