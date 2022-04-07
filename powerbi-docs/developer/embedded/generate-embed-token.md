@@ -44,7 +44,7 @@ When creating an embed token, different workspaces have different considerations
 
 |                  |*Classic* workspace |*New* workspace|
 |------------------|---------|--------|
-|**Considerations**|<li>The dataset and the item must be in the same workspace</li><li>Service principal cannot be used</li>  |The dataset and the item can be in two different *new* workspaces |
+|**Considerations**|<li>The dataset and the item must be in the same workspace</li><li>Service principal can't be used</li>  |The dataset and the item can be in two different *new* workspaces |
 |**Workspace permissions**|The master user must be an admin of the workspace  |The service principal or master user must be at least a member of both workspaces |
 
 >[!NOTE]
@@ -87,20 +87,20 @@ This parameter is only applicable when generating an embed  token for a report.
 
 ### Row Level Security
 
-With [Row Level Security (RLS)](embedded-row-level-security.md), you can choose to use a different identity than the identity of the service principal or master user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
+With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you're using RLS, you can in some cases leave out the user's identity (the *EffectiveIdentity* parameter). This allows the token to have access to the entire database. This method can be used to grant access to users such as admins and managers, who have the permissions to view the entire dataset. However, you cannot use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
+If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). This allows the token to have access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire dataset. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
 |RLS type  |Can I generate an embed token without specifying the effective user ID?  |Considerations and limitations  |
 |---------|---------|---------|
 |Cloud Row Level Security (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
-|RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
+|RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You can't use a master user to generate an embed token for RDL.         |
 |Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user generating the embed token also needs one of the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
-|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the embed token cannot be overridden. Custom data can be used to implement dynamic RLS or secure filtering.<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
+|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the embed token can't be overridden. Custom data can be used to implement dynamic RLS or secure filtering.<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
 |Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob property in an effective identity object         |
-|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
+|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
 >Service principals must always provide the following:
