@@ -24,7 +24,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
 You can disable the *Publish to web* feature, or allow embed codes to only work in your organization. If you disable *Publish to web*, the existing embed codes are not deleted. When you reenable *Publish to web*, the existing embed codes will become active again.
 
-Disabling the embed codes is described in [Publish to web](service-admin-portal-export-sharing,md#publish-to-web).
+Disabling the embed codes is described in [Publish to web](service-admin-portal-export-sharing.md#publish-to-web).
 
 ## Delete embed codes
 
@@ -36,7 +36,7 @@ To delete embed codes, select the codes you want to delete and then select **Del
 >[Publish to web from Power BI](../collaborate-share/service-publish-to-web.md)
 
 >[!div class="nextstepaction"]
->[Publish to web](service-admin-portal-export-sharing,md#publish-to-web)
+>[Publish to web](service-admin-portal-export-sharing.md#publish-to-web)
 
 >[!div class="nextstepaction"]
 >[About the Admin portal](service-admin-portal.md)
