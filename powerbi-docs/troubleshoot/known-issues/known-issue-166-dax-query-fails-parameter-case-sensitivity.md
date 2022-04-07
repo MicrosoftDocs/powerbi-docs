@@ -33,4 +33,4 @@ You can change the query parameter case to match the report parameter case.
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)
