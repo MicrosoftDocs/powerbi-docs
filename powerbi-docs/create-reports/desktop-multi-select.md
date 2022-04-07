@@ -24,11 +24,11 @@ For Power BI Desktop, select the **Report** icon in the upper left to view and e
 
 # [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, from a workspace that open a report in a workspace.
+In the Power BI service, open a report in a workspace.
 
 ![Screenshot shows a report selected in a workspace in the Power B I service.](media/desktop-multi-select/power-bi-service-report.png)
 
-You can select data elements in any report you can open.
+You can select data elements in any report that you can open.
 
 ---
 
