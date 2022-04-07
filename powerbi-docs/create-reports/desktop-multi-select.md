@@ -63,7 +63,7 @@ First, enable this feature in Power BI Desktop.
 
 1. Select **File** > **Options and settings** > **Options**.
 1. In the **Options** dialog box, select **Preview features**, then select **Data point rectangle select**.
-1. Select **OK**. Power BI Desktop prompts you to re-open the current project for your changes to take effect.
+1. Select **OK**. Power BI Desktop prompts you to reopen the current project for your changes to take effect.
 
 While holding down the *Ctrl* key, click and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using *Ctrl* while selecting, those data points are unselected (toggled off); using the lasso has the same effect and *Ctrl*-clicking each point individually. 
 
