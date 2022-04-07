@@ -1,5 +1,5 @@
 ---
-title: Import Power BI visuals from AppSource 
+title: Import Power BI custom visuals from AppSource 
 description: Learn how you can download a visual from the AppSource, Partner Center, or elsewhere. 
 author: mberdugo
 ms.author: monaberdugo
@@ -7,10 +7,10 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/17/2022
+ms.date: 04/07/2022
 ---
 
-# Import a Power BI visual
+# Import a custom visual into your Power BI workspace
 
 Power BI comes with many out-of-the-box visuals that are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com).
 
