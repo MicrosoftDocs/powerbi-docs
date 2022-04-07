@@ -110,7 +110,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 
 ## Considerations and limitations
 
-The lifetime of an embed token can’t go beyond of the expiration of the Azure AD access token used to create it. Therefore, if you use an Azure AD access token to generate several embed tokens over a period of time, each embed token will return with a shorter lifetime so that it doesn't expire after the access token.
+For security reasons, an embed token can’t expire later than the Azure AD access token that created it. Therefore, if you use an Azure AD access token to generate several embed tokens over a period of time, each embed token will return with a shorter lifetime so that it doesn't expire after the access token.
 
 ## Next steps
 

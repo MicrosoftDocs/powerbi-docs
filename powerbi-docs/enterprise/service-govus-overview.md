@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/28/2022
+ms.date: 04/05/2022
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -44,9 +44,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To buy the Power BI Pro government service, follow the guidance in [Enroll your US government organization](service-govus-signup.md). Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
-> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. 
-> 
-> If you've purchased Power BI Premium, you don't have to assign Pro licenses to allow users to consume content.  Users in the organization can view reports that are shared with them, as long as the reports are published to a Premium capacity. Content creators still need to be assigned a Pro license.
+> Power BI US Government isn't available as a *Free* license. If you've purchased Power BI Premium, you don't have to assign licenses to users to allow them to consume content published to a Premium capacity. For all other access, including publishing content to the Premium capacity, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues.
 > 
 > To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
 >
