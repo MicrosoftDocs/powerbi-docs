@@ -12,6 +12,8 @@ ms.date: 10/19/2021
 ---
 # Create connected goals in Power BI (preview)
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Goals in Power BI let customers curate their metrics and track them against key business objectives. When choosing values for your goals, you have a choice of: 
 
 - Manually entering the current and target values.

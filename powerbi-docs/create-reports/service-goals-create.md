@@ -12,6 +12,8 @@ ms.date: 01/28/2022
 ---
 # Create scorecards and manual goals in Power BI (preview)
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
 - Create your first scorecard.
@@ -72,7 +74,11 @@ You need a Power BI Pro license to author and share goals in standard workspaces
 
 You can also define one or more subgoals for your goal. There are two entry points to create a subgoal. 
 
-1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.  
+1. Open a scorecard and select **Edit**.
+
+   :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
+
+1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Subgoal button.":::
 
