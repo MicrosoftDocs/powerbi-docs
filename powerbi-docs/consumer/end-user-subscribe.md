@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/04/2022
+ms.date: 04/06/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -19,9 +19,6 @@ LocalizationGroup: Common tasks
 Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions that are owned by others.
 
 ## Subscribe to a report or dashboard in the Power BI service 
-
-
-
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
 
@@ -87,11 +84,14 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
 ## Subscribe others 
 
-You can subscribe others to reports or dashboards in a workspace if you have  the Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+To create a subscription for yourself, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
 
-If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
+- A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-:::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+
+- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
+
+    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
@@ -145,9 +145,9 @@ Subscriptions are managed on a workspace level. Subscriptions can be viewed and 
 
 # [Creator](#tab/creator)
 
-### Subscriptions for a workspace
+### Subscriptions in a workspace
 
-To see all subscriptions that you own for a given workspace, select that workspace to make it active and choose **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
+To see all subscriptions that you own for a given workspace, start by selecting that workspace to make it active. Then, from the upper right corner of the Power BI service, select **Settings (...)** > ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
 
 For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
 
