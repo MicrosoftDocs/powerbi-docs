@@ -31,4 +31,4 @@ No workarounds at this time.  When the fix is released to Power BI Service, this
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)
