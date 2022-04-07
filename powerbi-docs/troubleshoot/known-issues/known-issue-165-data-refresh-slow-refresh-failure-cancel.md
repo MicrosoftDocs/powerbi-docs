@@ -39,4 +39,4 @@ As a last resource, you can try swapping the workspace out of Premium to Pro and
 
 ## Next steps
 
-- [About known issues](../../power-bi-known-issues.md)
+- [About known issues](power-bi-known-issues.md)
