@@ -1,6 +1,6 @@
 ---
 title: Multi-select data elements in visuals, or multiple visuals, in Power BI
-description: You can select multiple data points in Power BI Desktop visuals with simple CTRL+Click
+description: You can select multiple data points in visuals in Power BI Desktop and the Power BI service with a simple CTRL+Click.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -52,9 +52,9 @@ You can select multiple data elements in a visual, or multiple visuals in a repo
 
 Select multiple visuals and other report elements by clicking and dragging over the canvas to create a rectangular lasso. All visuals that are entirely encapsulated within the lasso are  selected. If you press the *Ctrl* or *Shift* key (as you multi-select by Ctrl + clicking individual visuals), further lassoing adds visual selections to the current multi-select. 
 
-If a visual is already selected and is lassoed, using *Ctrl* or *Shift* toggles off that selection. The lasso does not select single visuals within groups, but can select groups by encapsulating the entire group.
+If a visual is already selected and is lassoed, using *Ctrl* or *Shift* toggles off that selection. The lasso doesn't select single visuals within groups, but can select groups by encapsulating the entire group.
 
-The canvas does not automatically scroll with the rectangular lasso selection.
+The canvas doesn't automatically scroll with the rectangular lasso selection.
 
 ### Select multiple data points in a visual
 
