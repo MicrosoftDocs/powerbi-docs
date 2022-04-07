@@ -75,6 +75,8 @@ landingContent:
             url: service-analyze-in-excel.md
       - linkListType: how-to-guide
         links:
+          - text: "Embed a report page in PowerPoint"
+            url: service-embed-report-powerpoint.md
           - text: "Embed in SharePoint Online"
             url: service-embed-report-spo.md
 
