@@ -1,36 +1,52 @@
 ---
-title: Embed a report web part in SharePoint Online
-description: With Power BI's report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-author: maggiesMSFT
-ms.author: maggies
+title: Embed a report page into PowerPoint
+description: With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/29/2021
+ms.date: 04/07/2022
 ---
 
-# Embed a report web part in SharePoint Online
+# Embed a report page in PowerPoint
 
-With the Power BI report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
+With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
 
-When using the **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md), so you can easily create secure internal portals.
+Report pages embedded into PowerPoint using the Power BI report add-in for PowerPoint respect all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
 
 ## Requirements
 
-For **Embed in SharePoint Online** reports to work, the following is required:
-
-* A Power BI Pro or Premium Per User (PPU) license or a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) with a Power BI license.
-* The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
-* To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
-
-> [!Note]
-> For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
+To embed a Power BI report page into PowerPoint, the Power BI report add-in must be installed in PowerPoint. If it is not installed, see [Get the Power BI report add-in for PowerPoint](TBD).
 
 ## Embed your report
-To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
+
+To embed a live Power BI report page into PowerPoint, you first need to get the URL to the page you want to embed. You then paste this URL into the Power BI report add-in in PowerPoint.
+
+There are three ways to get the report page URL:
+
+* Through the **Share** option
+* Through the **Export** option
+* From the browser's address bar
+
+These methods differ in whether or not they can preserve the report page's current state, and what permissions people who open the PowerPoint presentation will have for viewing the report. The table below summarizes the differences.
+
+| URL source | Allows inserting current state | Can users who open the presentation view the report? |
+|---------|---------|---------|
+| Share     | Yes        | Yes        |
+| Export     | Yes         |  Depends on the user's Power BI permissions |
+| Address bar     | No        |  Depends on the user's Power BI permissions |
+
+Use the **Share** option if you want to be sure that all users who open the presentation will be able to view the report.
+
+Choose how you want to get the report page URL.
+
+
+
+
 
 ### Get a report URL
 
