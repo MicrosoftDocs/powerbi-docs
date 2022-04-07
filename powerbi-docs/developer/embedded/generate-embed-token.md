@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 04/05/2022
+ms.date: 04/07/2022
 ---
 
 # Generate an embed token
@@ -110,7 +110,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 
 ## Considerations and limitations
 
-For security reasons, an embed token can’t expire later than the Azure AD access token that created it. Therefore, if you use an Azure AD access token to generate several embed tokens over a period of time, each embed token will return with a shorter lifetime so that it doesn't expire after the access token.
+For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. In particular, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
 
 ## Next steps
 
