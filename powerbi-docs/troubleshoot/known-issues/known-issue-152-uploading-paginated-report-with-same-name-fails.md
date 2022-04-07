@@ -13,9 +13,9 @@ ms.custom: known-issue-152
 
 **APPLIES TO:** ✔️ Power BI service
 
-**Status:** Fixed as of April 5, 2022
+**Status:** Fixed: April 5, 2022
 
-**Problem area:** Publish Content
+**Problem area:** Create and Author Data
 
 ## Description of problem
 

@@ -15,20 +15,27 @@ ms.custom: known-issue-165
 
 **Status:** Open
 
-**Problem area**: Refresh Data
+**Problem area:** Refresh Data
 
 ## Description of problem
 
-You may intermittently experience issues with long running refreshes or failure to cancel.
+You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling. In some rare cases your dataflow fails and you will an error message “Your (...) dataflow couldn’t be refreshed because there was a problem with one or more entities, or because dataflow capabilities were unavailable.”
 
 ## Symptoms
 
-The Power BI service will display dataflow refreshes that appear to be running for hours and are unable to be cancelled or retried.
+Refreshing a dataflow will have one of the following symptoms:
+
+- Stuck in canceling
+- Long running dataflow
+- Failed dataflow
 
 ## Solutions and workarounds
 
-This issue is intermittent and may run successfully during the next run. </br>
-Service engineers were able to apply a manual mitigation to affected Premium dataflow refreshes until long term code corrections can be deployed.
+The Power BI team is working to continually improve dataflow reliability. As part of that, the team is working on several efforts that will be available in the months ahead. </br>
+
+It is also recommended to follow the suggestions within [Best practices for designing and developing complex dataflows](https://docs.microsoft.com/en-us/power-query/dataflows/best-practices-developing-complex-dataflows). Reviewing refresh schedules and potentially moving refresh times around could help to avoid contention that leads to these issues. </br>
+
+As a last resource, you can try swapping the workspace out of Premium to Pro and wait a few minutes. Then switch the workspace back to Premium. This may help to provide relief, but the issue could recur. </br>
 
 ## Additional information
 
