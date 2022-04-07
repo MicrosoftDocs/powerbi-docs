@@ -28,17 +28,17 @@ The table below lists the Power BI operations. It provides a short description f
 
 | Operation            | Description  | Workload  | Type |
 |----------------------|--------------|-----------|------|
-| Background query     | Queries for refreshing tiles and creating report snapshots             | Datasets | Background  |
+| Artificial intelligence (AI) | AI function evaluation | AI |Background |
+| Background query     | Queries for refreshing tiles and creating report snapshots | Datasets | Background  |
 | [Dataflow DirectQuery](../transform-model/dataflows/dataflows-directquery.md) | Connect directly to a dataflow without the need to import the data into a dataset | Dataflows | Interactive |
 | [Dataflow refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) | An on demand or scheduled background dataflow refresh, performed by the service or with REST APIs | Dataflows | Background |
 | Dataset on-demand refresh | A background dataset refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Datasets | Background |
 | Dataset Scheduled Refresh | A scheduled background dataset refresh, performed by the service, REST APIs or public XMLA endpoints | Datasets | Background |
 | Interactive query    | User queries for loading models, opening, and interacting with reports | Datasets | Interactive |
-| Paginated report | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
+| RsRdlEngine | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Datasets | Interactive |
-| XMLA write | A background XMLA write operation that changes the model | Datasets | Background    |
-|Row4     |         |         |    |
+| XMLA write | A background XMLA write operation that changes the model | Datasets | Background |
 
 ## Next steps
 
