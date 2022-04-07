@@ -1,6 +1,6 @@
 ---
 title: Manage organizational visuals
-description: Learn how to mange Power BI organizational visuals.
+description: Learn how to manage Power BI organizational visuals.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -14,10 +14,16 @@ LocalizationGroup: Administration
 
 # Manage organizational visuals
 
-Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+The *organizational visuals* admin setting, allows you to manage the list of Power BI visuals available in your organization. For more information and detailed instructions, see [Organizational visuals](organizational-visuals.md#organizational-visuals).
+
+## Additional Power BI visuals admin settings
 
 All the Power BI visuals admin settings, including Power BI visuals tenant settings, are described in [Manage Power BI visuals admin settings](organizational-visuals.md).
 
 ## Next steps
 
-* [About the Admin portal](service-admin-portal.md)
+>[!div class="nextstepaction"]
+>[About the Admin portal](service-admin-portal.md)
+
+>[!div class="nextstepaction"]
+>[Manage Power BI visuals admin settings](organizational-visuals.md)

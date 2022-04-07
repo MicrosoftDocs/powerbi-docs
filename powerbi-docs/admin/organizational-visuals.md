@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/27/2021
+ms.date: 04/07/2022
 ---
 
 # Manage Power BI visuals admin settings
@@ -16,15 +16,7 @@ As a Power BI admin for your organization, you can control which type of Power B
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
-## Access the admin portal
-
-To enable the settings described in the article, you'll need to access the admin portal.
-
-1. In Power BI service, select **Settings**.
-
-2. From the settings drop-down menu, select **Admin portal**.
-
-    ![A screenshot showing the cog settings menu button selected in the Power B I service. The settings menu opens and the admin portal setting is highlighted.](media/organizational-visuals/admin-portal.png)
+[!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
 
 ## Power BI visuals tenant settings
 
@@ -68,7 +60,9 @@ UI changes to tenant settings apply only to Power BI service. To enable users in
 
 ### Certified Power BI visuals
 
-When this setting is enabled, only [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) will render in your organization's reports and dashboards. Power BI visuals from AppSource or files, that are not certified, will return an error message.
+[Certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) are visuals that meet the Microsoft Power BI team [code requirements](../developer/visuals/power-bi-custom-visuals-certified.md#certification-requirements). They're tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
+
+When this setting is enabled, only certified Power BI visuals will render in your organization's reports and dashboards. Power BI visuals from AppSource or files, that are not certified, will return an error message.
 
 1. From the admin portal, select **Add and use certified visuals only**.
 

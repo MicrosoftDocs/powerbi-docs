@@ -410,7 +410,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
-* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported
+* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported.
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
