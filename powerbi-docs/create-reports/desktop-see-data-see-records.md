@@ -1,6 +1,6 @@
 ---
 title: Visual table and records in Power BI Desktop visuals
-description: Use the Visual table and Data point table features of Power BI Desktop to drill into details
+description: Use the Power BI Visual table and Data point table features to drill into the details of a visualization. See a textual representation of the underlying data.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,12 +10,23 @@ ms.topic: how-to
 ms.date: 05/11/2021
 LocalizationGroup: Learn more
 ---
-# Use Visual table and Data point table in Power BI Desktop
-In **Power BI Desktop** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, or *drillthrough to details*.
+# Use Visual table and Data point table in Power BI
 
-You can use **Visual table** to view the data in a visual as a table, or use **Data point table** to view a table of the data used to calculate a single data point. 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-![Visual table and Data point table](media/desktop-see-data-see-records/see-data-record.png)
+In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, or *drillthrough to details*.
+
+You can use **Visual table** to view the data in a visual as a table, or use **Data point table** to view a table of the data used to calculate a single data point. These capabilities are available in Power BI Desktop and in the Power BI service.
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+:::image type="content" source="media/desktop-see-data-see-records/see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in the Data/Drill tab in the Power B I Desktop ribbon.":::
+
+# [Power BI service](#tab/powerbi-service)
+
+:::image type="content" source="media/desktop-see-data-see-records/service-see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in a shortcut menu in the Power B I service.":::
+
+---
 
 >[!IMPORTANT]
 >**Visual table** and **Data point table** support only the following visualization types:
@@ -28,20 +39,30 @@ You can use **Visual table** to view the data in a visual as a table, or use **D
 >  - Pie chart
 >  - Treemap
 
-## Use Visual table in Power BI Desktop
+## Use Visual table in Power BI
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 **Visual table** shows you the data underlying a visualization. **Visual table** appears in the **Data/Drill** tab in the ribbon when a visual is selected.
 
-![Visual table in ribbon](media/desktop-see-data-see-records/visual-table-01.png)
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-01.png" alt-text="Screenshot that shows where to find the Visual table feature in the Data/Drill tab of the Power B I Desktop ribbon.":::
 
 You can also see the data by right-clicking on a visualization, and then selecting **Show as a table** from the menu that appears; or by selecting **More options** (...) in the upper-right corner of a visualization, and then selecting **Show as a table**.
 
 ![Show Data right-click](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![Show Data More Options](media/desktop-see-data-see-records/visual-table-03.png)
 
+# [Power BI service](#tab/powerbi-service)
+
+**Visual table** shows you the data underlying a visualization. You can see the data by right-clicking on a visualization, and then selecting **Show as a table** from the menu that appears; or by selecting **More options** (...) in the upper-right corner of a visualization, and then selecting **Show as a table**.
+
+:::image type="content" source="media/desktop-see-data-see-records/service-shortcut-menu-visual-table-item.png" alt-text="Screenshot that shows where to find the Visual table feature in the Power B I service. The feature is visible in the More options menu and a shortcut menu.":::
+
+---
+
 > [!NOTE]
 > You must be hovering over a data point in the visual for the right-click menu to be available.
 
-When you select **Visual table** or **Data point table**, the Power BI Desktop canvas displays both the visual and the textual representation of the data. In the *horizontal view*, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
+When you select **Visual table** or **Data point table**, the Power BI Desktop canvas displays both the visual and the textual representation of the data. In the *horizontal view*, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half.
 
 ![horizontal view](media/desktop-see-data-see-records/visual-table-04.png)
 
