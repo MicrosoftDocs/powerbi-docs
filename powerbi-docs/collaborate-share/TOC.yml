@@ -88,7 +88,7 @@
       - name: "Feature content on Home"
         href: service-featured-content.md
       - name: "Embed a report page in PowerPoint"
-        href: service-embed-report-spo.md
+        href: service-embed-report-powerpoint.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
