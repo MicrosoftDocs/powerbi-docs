@@ -412,8 +412,6 @@ This section lists most of the limitations in deployment pipelines.
 
 * A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported.
 
-* Datasets with role names that have a comma such as `London,ParisRole`, are not supported.
-
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.

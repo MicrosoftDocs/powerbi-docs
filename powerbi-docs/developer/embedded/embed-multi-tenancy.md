@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2022
+ms.date: 04/07/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -104,7 +104,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](../../consumer/end-user-workspaces.md#permissions-in-the-workspaces) to the workspace
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -123,7 +123,7 @@ Read more about [Power BI workspaces]( ../../consumer/end-user-workspaces.md).
 
 ## Import reports and datasets
 
-Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/groups/imports) to import the content into the created workspace.
+Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/imports) to import the content into the created workspace.
 
 ```rest
 POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/imports?datasetDisplayName=ContosoSales HTTP/1.1
@@ -135,7 +135,7 @@ Fiddler-Encoding: base64
 LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
 ```
 
-Use [dataset parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
+Use [dataset parameters](/rest/api/power-bi/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
 Then, use the *Update parameters* API to define which customers' data the dataset connects to.
 
 ## Set the dataset connection
@@ -151,15 +151,15 @@ In either case, you should end up with single-customer datasets (one dataset per
 
 If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
-* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to match the customer's database details.
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/groups/datasets/updatedatasourcesingroup).
+* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/updatedatasourcesingroup).
 
 ### A single multi-customer database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
-Create a report using [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
+Create a report using [parameters](/rest/api/power-bi/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
 
 ## Embed a report
 
