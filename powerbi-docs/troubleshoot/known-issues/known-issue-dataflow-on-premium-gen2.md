@@ -1,5 +1,5 @@
 ---
-title: Known issue - Long running, failed or stuck Dataflow in Premium Gen2
+title: Known issue - Long running, failed or stuck dataflow in Premium Gen2
 description: A known issue is posted where you may encounter a long running, failed or stuck dataflow on Premium Gen2.
 author: mihart
 ms.author: mihart
@@ -9,7 +9,7 @@ ms.date: 04/07/2022
 ms.custom: known-issue-165
 ---
 
-# Long running, failed or stuck Dataflow in Premium Gen2 - known issue
+# Long running, failed or stuck dataflow in Premium Gen2 - known issue
 
 **APPLIES TO:** ✔️ Power BI Premium Gen2 Service ✔️ Power BI Dataflow
 
