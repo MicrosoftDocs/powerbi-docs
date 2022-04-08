@@ -50,7 +50,7 @@ Now let's look at a different chart - using data that has informal hierarchies. 
 
 
 # [Power BI service](#tab/powerbi-service)
-:::image type="content" source="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in the Power B I service." lightbox="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-expanded":::
+:::image type="content" source="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in the Power B I service." lightbox="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-expanded.png":::
 
 ---
 
