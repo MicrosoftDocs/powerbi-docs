@@ -46,10 +46,11 @@ This is how the built-in *Date* hierarchy, associated with fields that have a *d
 Now let's look at a different chart - using data that has informal hierarchies. In the following visual, we have a bar chart with **Quantity**, using *ProductName* as the axis. In this data, *ProductName* and *ShipCountry* form an informal hierarchy. From here, you can again select *Expand to next level* to drill down into the hierarchy.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
-![Screenshot shows a chart with informal hierarchy in Power B I Desktop.](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
+:::image type="content" source="desktop-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in Power B I Desktop." lightbox="desktop-inline-hierarchy-labels-informal-top-expand-expanded.png":::
+
 
 # [Power BI service](#tab/powerbi-service)
-![Screenshot shows a chart with informal hierarchy in the Power B I service.](media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand.png)
+:::image type="content" source="service-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in the Power B I service." lightbox="service-inline-hierarchy-labels-informal-top-expand-expanded":::
 
 ---
 
