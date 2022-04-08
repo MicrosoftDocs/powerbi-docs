@@ -36,7 +36,7 @@ You must have dataset Owner permissions to enable automatic aggregations. Worksp
 
 ## On-demand train and refresh
 
-The first *scheduled* refresh operation for your chosen frequency includes a training operation. If that training operation does not complete within the 60 minute time limit, the subsequent refresh operation will not load or update aggregations in the cache. The next training operation will not run until the next day or week.
+The first *scheduled* refresh operation for your chosen frequency includes a training operation. If that training operation does not complete within the 60 minute time limit, the subsequent refresh operation will not load or update aggregations in the cache. The next training operation will not run until the first refresh operation of your chosen frequency.
 
 In such cases, you may want to manually run one or more *on-demand* training and refresh operations to fully complete the training and load or refresh aggregations in the cache. For example, when checking the Refresh history, if the first *scheduled* training and refresh operation for the day (frequency) does not complete within the time limit, and you don't want to wait for the next day's scheduled refresh that includes a training operation to run, you can run one or more on-demand train and refresh operations to fully process the data query log (train) and load aggregations to the cache (refresh).
 
