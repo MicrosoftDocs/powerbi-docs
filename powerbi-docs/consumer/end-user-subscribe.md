@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/06/2022
+ms.date: 04/08/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -147,7 +147,7 @@ Subscriptions are managed on a workspace level. Subscriptions can be viewed and 
 
 ### Subscriptions in a workspace
 
-To see all subscriptions that you own for a given workspace, start by selecting that workspace to make it active. Then, from the upper right corner of the Power BI service, select **Settings (...)** > ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
+To see all subscriptions that you own in a given workspace, start by selecting that workspace to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
 
 For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
 
@@ -157,7 +157,7 @@ From here, you will see all subscriptions you have created in the currently sele
 
 ### Subscriptions across all workspaces
 
-To see all of your subscriptions, across all workspaces, open the **Subscriptions** pane. Start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**.
+To see all of your subscriptions, start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**.
 
 :::image type="content" source="media/end-user-subscribe/power-bi-settings.png" alt-text="Screenshot showing cog icon selected.":::
 
@@ -166,7 +166,7 @@ To see all of your subscriptions, across all workspaces, open the **Subscription
 
 From here, you will see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you are subscribing to, and the content type. Select **Edit** to make changes to a subscription’s settings. 
 
-Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane from a dashboard or report, and select **Manage all subscriptions**.   
+Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane from a dashboard or report in **My workspace**, and select **Manage all subscriptions**.   
 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
 
@@ -175,7 +175,7 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
 
-To navigate to this view from within a workspace, select the ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
+To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-view.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
 
