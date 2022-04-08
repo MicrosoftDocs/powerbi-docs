@@ -38,7 +38,13 @@ In the example below:
 
 When creating a visualization, Power BI will aggregate numeric fields (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***", "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***". Power BI refers to some numeric fields as **measures**. It's easy to identify measures in the Power BI report editor -- The **Fields** list shows measures with the ∑ symbol next to them. See [The report editor... take a tour](service-the-report-editor-take-a-tour.md) for more info.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+![Screenshot of Power BI Desktop with the Fields list called out.](media/service-aggregates/power-bi-desktop-aggregate-fields.png)
+
+# [Power BI service](#tab/powerbi-service)
 ![Screenshot of Power BI with the Fields list called out.](media/service-aggregates/power-bi-aggregate-fields.png)
+
+---
 
 ## Why don't aggregates work the way I want them to?
 
@@ -54,7 +60,13 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
 1. Create a **Clustered column chart** that uses a measure and a category. In this example, we're using Units Sold by Product.  By default, Power BI creates a chart that sums the units sold (drag the measure into the **Value** well) for each product (drag the category into the **Axis** well).
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+   ![Screenshot of the chart in Power BI Desktop, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-desktop-aggregate-sum.png)
+
+# [Power BI service](#tab/powerbi-service)
    ![Screenshot of the chart, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-aggregate-sum.png)
+
+---
 
 1. In the **Visualizations** pane, right-click the measure, and select the aggregate type you need. In this case, we're selecting **Average**. If you don't see the aggregation you need, see the [**Considerations and troubleshooting**](#considerations-and-troubleshooting) section.
 
