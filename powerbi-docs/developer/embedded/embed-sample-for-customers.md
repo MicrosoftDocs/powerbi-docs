@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/27/2021
+ms.date: 04/10/2022
 
 ---
 
@@ -200,6 +200,10 @@ Before you embed your content, make sure you have all the values listed below. S
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
+
+Alternatively, you can find the workspace ID in the **Admin portal** settings by selecting **Details** next to the workspace name.
+
+  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings":::
 
 ### Report ID
 
