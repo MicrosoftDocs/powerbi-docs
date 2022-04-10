@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/07/2022
+ms.date: 04/10/2022
 LocalizationGroup: Premium
 ---
 
@@ -35,7 +35,7 @@ The list of workloads below, describes which Premium Gen2 SKUs supports each wor
 
 * **Dataflows** - All SKUs are supported
 
-* **Paginated reports** - Only *P1/A4* and higher SKUs are supported
+* **Paginated reports** - All SKUs are supported
 
 ### [Gen1](#tab/gen1)
 
