@@ -16,7 +16,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 
 ## General limitations
 
-* Feature parity across government environments can be found in the [Power BI feature availability for government](../../admin/service-govus-overview.md#power-bi-feature-availability) article.
+* Feature parity across government environments can be found in the [Power BI feature availability for government](../../enterprise/service-govus-overview.md#power-bi-feature-availability) article.
 * Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **[Lineage View](../../collaborate-share/service-data-lineage.md)**, deleted data sources appear as lineage for a dataflow.
 * Deleted datasources  will still appear in the Setting page in the gateway drop-down.
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
@@ -124,7 +124,7 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 ## ADLS limitations
 
-* ADLS is not available in GCC, GCC High or DOD environments. See [Power BI for US government customers](../../admin/service-govus-overview.md) for more information.
+* ADLS is not available in GCC, GCC High or DOD environments. See [Power BI for US government customers](../../enterprise/service-govus-overview.md) for more information.
 * You must be assigned as an owner of the resource, due to changes in the ADLS Gen 2 APIs.
 * Azure subscription migration is not supported, but there are two alternatives to do so:
     * First approach: after migration, the user can detach workspaces and reattach them. If using the tenant level account, you must detach all workspaces then detach at the tenant level, and reattach. This can be undesirable for customers who don't want to delete all of their dataflows, or have many workspaces. 

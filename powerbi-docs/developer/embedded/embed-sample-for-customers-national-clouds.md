@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 12/07/2021
+ms.date: 02/03/2022
 ---
 
 # Tutorial: Embed Power BI content into your application for national clouds
@@ -19,17 +19,17 @@ Power BI supports the following national clouds:
 
 * U.S. Government Community Cloud (GCC)
 
-* U. S. Government Community Cloud High (GCC High)
+* U.S. Government Community Cloud High (GCC High)
 
-* U. S. Military Contractors (DoDCON)
+* U.S. Military Contractors (DoDCON)
 
-* U. S. Military (DoD)
+* U.S. Military (DoD)
 
 * Power BI for China cloud
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../admin/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../enterprise/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](embed-sample-for-your-organization.md).
@@ -55,7 +55,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
         ```xml
         <add key="authorityUrl" value="https://login.microsoftonline.com/organizations/" />
-        <add key="scope" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="scopeBase" value="https://analysis.usgovcloudapi.net/powerbi/api/.default" />
         <add key="urlPowerBiServiceApiRoot" value="https://api.powerbigov.us/" />
         ```
 
@@ -67,7 +67,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
         ```xml
         <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-        <add key="scope" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="scopeBase" value="https://high.analysis.usgovcloudapi.net/powerbi/api/.default" />
         <add key="urlPowerBiServiceApiRoot" value="https://api.high.powerbigov.us/" />
         ```
 
@@ -79,7 +79,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
         ```xml
         <add key="authorityUrl" value="https://login.microsoftonline.us/organizations/" />
-        <add key="scope" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
+        <add key="scopeBase" value="https://mil.analysis.usgovcloudapi.net/powerbi/api/.default" />
         <add key="urlPowerBiServiceApiRoot" value="https://api.mil.powerbigov.us/" />
         ```
 
@@ -91,7 +91,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
         ```xml
         <add key="authorityUrl" value="https://login.chinacloudapi.cn/organizations/" />
-        <add key="scope" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
+        <add key="scopeBase" value="https://analysis.chinacloudapi.cn/powerbi/api/.default" />
         <add key="urlPowerBiServiceApiRoot" value="https://api.powerbi.cn/" />
         ```
 

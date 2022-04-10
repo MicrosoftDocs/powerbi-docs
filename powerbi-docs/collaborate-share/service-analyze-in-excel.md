@@ -8,12 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/07/2022
+ms.date: 02/14/2022
 LocalizationGroup: Reports
 ---
 # Start in Power BI with Analyze in Excel
 
-With **Analyze in Excel**, you can bring Power BI datasets into Excel, and then view and interact with them using PivotTables, charts, slicers, and other Excel features. Need some background before you get started? See [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md).
+With **Analyze in Excel**, you can bring Power BI datasets into Excel, and then view and interact with them using PivotTables, charts, slicers, and other Excel features. Need some background before you get started? See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
 
 ## Connect to Power BI data with Analyze in Excel
 
@@ -59,7 +59,7 @@ When using Analyze in Excel, any sensitivity label that's applied to a Power BI 
 
 If you manually set sensitivity labels in Excel, they aren’t automatically overwritten by the dataset's sensitivity label. Instead, a policy tip appears with a recommendation to upgrade the label.
 
-For more information, see [how to apply sensitivity labels in Power BI](../admin/service-security-apply-data-sensitivity-labels.md).
+For more information, see [how to apply sensitivity labels in Power BI](../enterprise/service-security-apply-data-sensitivity-labels.md).
 
 
 ## Save and share your new workbook
@@ -79,19 +79,16 @@ Refresh for external connections isn't supported in Excel Online. Since users ne
 
 - Some organizations may have Group Policy rules that prevent installing the required updates to Excel. If you can't install the updates, check with your administrator.
 
-- Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
+- Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../enterprise/service-admin-rls.md).
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
 - Only Power BI datasets that use Import mode will preserve hierarchies in Analyze in Excel workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
-- You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md).
+- You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Guest users can't analyze Power BI data in Excel for datasets sent from (originating from) another tenant. 
 - Analyzing Power BI data in Excel is a Power BI service feature. You can't analyze Power BI data in Excel from Power BI Report Server or Power BI Embedded.
-- - Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
-- There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
-- Only Power BI datasets that use Import mode will preserve hierarchies in Analyze in Excel workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using Analyze in Excel.
-- Analyze in Excel doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
 
-For general [considerations and limitations](service-connect-power-bi-datasets-excel.md#considerations-and-limitations) about connecting to Power BI data in Excel, see the article "Connect Excel to Power BI datasets."
+
+See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements when connecting to Power BI data in Excel.
 
 ## Next steps
 
@@ -101,4 +98,4 @@ You might also be interested in the following articles:
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
 * [Troubleshooting Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md)
 * [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md).
-* [How to apply sensitivity labels in Power BI](../admin/service-security-apply-data-sensitivity-labels.md)
+* [How to apply sensitivity labels in Power BI](../enterprise/service-security-apply-data-sensitivity-labels.md)

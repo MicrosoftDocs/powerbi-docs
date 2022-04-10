@@ -12,7 +12,7 @@ LocalizationGroup: Transform and shape data
 ---
 # User-defined aggregations
 
-Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../admin/aggregations-auto.md) feature in dataset Settings.
+Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../enterprise/aggregations-auto.md) feature in dataset Settings.
 
 ## Creating aggregation tables
 
@@ -41,6 +41,7 @@ The **Manage aggregations** dialog enforces validations:
 - Duplicate aggregations, where two entries use the same **Summarization** function and refer to the same **Detail Table** and **Detail Column**, aren't allowed.
 - The **Detail Table** must use DirectQuery storage mode, not Import.
 - Grouping by a foreign key column used by an inactive relationship, and relying on the USERELATIONSHIP function for aggregation hits, isn't supported.
+- Aggregations based on GroupBy columns can leverage relationships between aggregation tables but authoring relationships between aggregation tables is not supported in Power BI Desktop. If necessary, you can create relationships between aggregation tables by using a third-party tool or a scripting solution through XMLA endpoints.
 
 Most validations are enforced by disabling dropdown values and showing explanatory text in the tooltip.
 
@@ -278,5 +279,5 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 
 ## See also
 
-[Automatic aggregations](../admin/aggregations-auto.md)  
+[Automatic aggregations](../enterprise/aggregations-auto.md)  
 [Composite models](desktop-composite-models.md)  

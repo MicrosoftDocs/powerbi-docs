@@ -30,6 +30,8 @@
     items: 
     - name: "Get samples for Power BI"
       href: sample-datasets.md
+    - name: "Artificial intelligence sample"
+      href: sample-artificial-intelligence.md
     - name: "COVID-19 US sample"
       href: sample-covid-19-us.md
     - name: "Power BI Release Plan report"
@@ -63,6 +65,8 @@
         href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
+      - name: "The new Format pane"
+        href: ../fundamentals/desktop-format-pane.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "About accessibility"
@@ -216,6 +220,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in a table, matrix, or slicer"
         href: power-bi-images-tables.md
+      - name: "Create sparklines in a table or matrix"
+        href: power-bi-sparklines-tables.md
       - name: "Display custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Apply conditional table formatting"
@@ -224,8 +230,6 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort one column by another"
         href: desktop-sort-by-column.md
-      - name: "Optimize reports for the mobile apps"
-        href: desktop-create-phone-report.md
       - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"
@@ -254,6 +258,18 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
+    - name: Mobile-optimized reports
+      items:
+      - name: "About mobile-optimized reports"
+        href: power-bi-create-mobile-optimized-report-about.md
+      - name: "Mobile layout view"
+        href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
+      - name: "Create an initial layout"
+        href: power-bi-create-mobile-optimized-report-initial-layout.md
+      - name: "Optimize visual formatting"
+        href: power-bi-create-mobile-optimized-report-format-visuals.md
+      - name: "Rearrange visual layering"
+        href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
@@ -280,7 +296,7 @@
         href: ../visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a report visualization"
         href: ../visuals/power-bi-visualization-copy-paste.md
-      - name: "Export the data that was used to create a visualization"
+      - name: "Export the data that was used to create a visualization to Excel"
         href: ../visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visual in a report"
         href: ../visuals/power-bi-visualization-move-and-resize.md
@@ -316,20 +332,24 @@
           href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: Azure Maps in Power BI
         items: 
-        - name: "Get started with Azure Maps Power BI visual"
+        - name: "Get started with Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
-        - name: "Layers in the Azure Maps Power BI visual"
+        - name: "Layers in the Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
         - name: "Add a bubble layer"
           href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
         - name: "Add a bar chart layer"
           href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a pie chart layer"
+          href: /azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context
         - name: "Add a heat map layer"
           href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
         - name: "Add a reference layer"
           href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
         - name: "Add a tile layer"
           href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
+        - name: "Geocoding in Azure Maps visual"
+          href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
         - name: "Show real-time traffic"
           href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
         - name: "Manage the Azure Maps visual in your organization"
@@ -456,6 +476,8 @@
         href: service-goals-set-permissions.md
       - name: "Arrange goals and columns in scorecards"
         href: service-goals-move.md
+      - name: "Create custom statuses"
+        href: service-goals-custom-status.md
       - name: "Goals and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"
@@ -492,8 +514,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Dashboard data classification"
-        href: service-data-classification.md
       - name: "Dashboard themes"
         href: service-dashboard-themes.md
     - name: Paginated reports

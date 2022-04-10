@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 1/10/2022
+ms.date: 3/28/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,38 @@ ms.date: 1/10/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## March 2022 QFE 1
+
+*Version: 2.103.881.0, Released: March 28, 2022*
+
+Bug fixes/improvements:
+- Fix for the new format pane of matrix visuals: now the URL icon on rows/columns & horizontal scroll bar will work.
+- Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers will not be available and as a result, users' reports will not be changed. 
+- Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs will not disappear after the model refresh.
+- AS engine fix: now the <language> in the AS config file will always be set to en-us regardless of the PBI Desktop UI language to prevent issues with the AS engine's start.
+- Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
+
+## February 2022 QFE 1
+
+*Version: 2.102.845.0, Released: February 24, 2022*
+
+Bug fixes/improvements:
+- Dynamics 365 (Dataverse) entry in GetData which redirects to Dataverse connector is removed from the GetData list.
+- Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
+- Fix for fields well description: a multiline field's tooltip will not be cut off and will be fully visible.
+- Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
+- Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
+- Fix for perspective selection in the proxy models navigator.
+
+## December 2021 QFE 3
+
+*Version: 2.100.1401.0, Released: January 20, 2022*
+
+Bug fixes/improvements:
+- Fix for creating hybrid incremental refresh policies on DirectQuery over M queries: now users will be able to create a hybrid incremental refresh policy for the import tables that use DirectQuery over M. 
+- Fix for the "Power BI Desktop infrastructure update" preview feature: now when the feature is on, Quick measure dropdown dialog will not gray out and will work as expected.
+- Fix for Proxy models: now when adding new table on the proxy source relationship with IncludeFutureArtifacts = false, the relationship to the original table will be created and proxy model will be refreshed.  
 
 ## December 2021 QFE 2
 

@@ -27,7 +27,7 @@ If you create reports in the new _modern_ workspaces, you have access to improve
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#audit-and-usage-settings).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md).
 
 ## Create & view an improved usage metrics report
 
@@ -156,7 +156,7 @@ Use the following procedure to take over a Usage Metrics Report dataset and upda
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal.md#audit-and-usage-settings) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal-audit-usage.md) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -295,7 +295,7 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
-- If your organization is using [Private Links](../admin/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
+- If your organization is using [Private Links](../enterprise/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
 
 ## Frequently asked questions
 

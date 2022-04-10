@@ -108,11 +108,10 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - From the nav pane using [Favorites](end-user-favorite.md) and [Recent](end-user-recent.md)    
 - Using [View related](end-user-related.md)    
 - In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)    
-- From your [Notification center](end-user-notification-center.md)    
+- From your Notification center
 - From a workspace
 - and more
 
 ## Next steps
 [Open and view a dashboard](end-user-dashboard-open.md)    
 [Report filters](end-user-report-filter.md)
-

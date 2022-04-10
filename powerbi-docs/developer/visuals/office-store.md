@@ -1,5 +1,5 @@
 ---
-title: Publish Power BI visuals to Partner Center
+title: Publish Power BI visuals to the Microsoft commercial marketplace
 description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
 author: mberdugo
 ms.author: monaberdugo
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 09/25/2021
 ---
 
-# Publish Power BI visuals to Partner Center
+# Publish Power BI visuals to the Microsoft commercial marketplace
 
 Once you have created your Power BI visual, you may want to publish it to AppSource for others to discover and use. For a detailed explanation of how to create a Power BI visual offer, see [Plan a Power BI visual offer](/azure/marketplace/marketplace-power-bi-visual).
 
@@ -19,6 +19,10 @@ Once you have created your Power BI visual, you may want to publish it to AppSou
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place to find SaaS apps and add-ins for your Microsoft products and services.
 
 ![Screenshot of Power B I visuals in AppSource.](media/office-store/appsource-01.png)
+
+## Prerequisite
+
+To submit your Power BI visual, you must be enrolled with [Partner Center](/partner-center/overview). If you're not yet enrolled, [Open a developer account in Partner Center](/azure/marketplace/create-account).
 
 ## Preparing to submit your Power BI visual
 
@@ -31,7 +35,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 
 | Item | Required | Description |
 | --- | --- | --- |
-| Pbiviz package |Yes |Pack your Power BI visual into a Pbiviz package. Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version<br> - Description<br> - Support URL<br> - Author name and email |
+| [Pbiviz package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) |Yes |Pack your Power BI visual into a Pbiviz package. Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version<br> - Description<br> - Support URL<br> - Author name and email |
 | Sample .pbix report file |Yes |To help users become familiar with the visual, highlight the value that the visual brings to the user and give examples of usage and formatting. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
 | Logo |Yes |Include the custom visual logo that will appear in the Marketplace listing. It should be in PNG format and exactly 300 x 300 px.<BR>**Important!** Review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the logo. |
 | Screenshots |Yes |Provide at least one screenshot, and up to five, in PNG format. The dimensions must be exactly 1366 px (width) by 768 px (height), and the size not larger than 1024 kb.<br>Add text bubbles to explain the value of key features shown in each screenshot. |
@@ -51,8 +55,6 @@ Before you create the **pbiviz** package, complete the following fields in the *
 * author
 * name
 * email
-
-To submit your Power BI visual, you must be enrolled with Partner Center. If you're not yet enrolled, [Open a developer account in Partner Center](/azure/marketplace/create-account).
 
 >[!NOTE]
 >**Individual publishers** can use one of these methods to submit a Power BI visual:
@@ -85,7 +87,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
     Select **Save draft**.
 
-7. In **Properties**, Check the relevant categories and industries, supply links for your EULA, privacy policy, and support documents.
+7. In **Properties**, check the relevant categories and industries, supply links for your EULA, privacy policy, and support documents.
 
     Select **Save draft**.
 

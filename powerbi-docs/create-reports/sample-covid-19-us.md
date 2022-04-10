@@ -13,6 +13,8 @@ LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. Using Power BI Desktop, they can analyze and visualize COVID-19 data  to keep their communities informed  at the city, county, state, and national levels. Then using Power BI Publish to Web, they can share the report publicly to inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19 sample with US data":::

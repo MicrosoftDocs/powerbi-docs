@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 08/14/2021
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -83,7 +83,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
    :::image type="content" source="media/end-user-alerts/power-bi-alert-manage.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
 
-1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our [Notification center](end-user-notification-center.md). And we'll have Power BI send us an email as well.
+1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our Notification center. We'll have Power BI send us an email as well.
 
    :::image type="content" source="media/end-user-alerts/power-bi-manage-alert-detail.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
 
@@ -147,5 +147,3 @@ Instructions for deleting alerts are explained above. In brief, select the gear 
 
 > [!div class="nextstepaction"]
 > [Set data alerts on your mobile device](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-
-

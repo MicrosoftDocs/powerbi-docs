@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 11/23/2021
+ms.date: 02/16/2022
 ms.custom: intro-overview
 ---
 
@@ -57,6 +57,10 @@ The showcases code is open-sourced, and you can find the code behind all of them
 The Learning center is a collection of Power BI embedded analytics resources. It's where you can dive into our documentation, learn about our APIs, find our developer samples and videos, and learn where to get help.
 
 :::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
+
+## Considerations and limitations
+
+The Power BI embedded playground runs in *user owns data* mode only.
 
 ## Next steps
 
