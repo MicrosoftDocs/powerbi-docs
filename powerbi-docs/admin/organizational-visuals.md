@@ -12,7 +12,7 @@ ms.date: 04/10/2022
 
 # Manage Power BI visuals admin settings
 
-As a Power BI admin for your organization, you can control the type of Power BI visuals users can access across the organization, as well as limit the actions users can perform.
+As a Power BI admin for your organization, you can control the type of Power BI visuals users can access across the organization, and limit the actions users can perform.
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -166,7 +166,7 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
 You can pick visuals from the organizational visuals page to automatically show on the visualization pane of all the users in your organization.
 
-1. In the row of the visual you want to add , select **settings**.
+1. In the row of the visual you want to add, select **settings**.
 
     ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded. The from app source option is selected and a list of app source visuals is displayed. The screenshot also shows a cog settings menu button selected next to one of the visuals.](media/organizational-visuals/organizational-pane.png)
 
@@ -185,7 +185,7 @@ To permanently delete a visual, select the trash bin icon for the visual in the 
 
 You can disable a *.pbiviz* visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
 
-1. In the row of the *.pbiviz* visual you want to disable , select **settings**.
+1. In the row of the *.pbiviz* visual you want to disable, select **settings**.
 
 2. In the **Access** section, disable the setting: *Users in the organization can access, view, share, and interact with this visual*.
 
@@ -202,7 +202,7 @@ AppSource visuals are updated automatically. Once a new version is available fro
 
 To update a *.pbiviz* visual, follow these steps to replace the visual.
 
-1. In the row of the visual you want to add , select **settings**.
+1. In the row of the visual you want to add, select **settings**.
 
 2. Select **Browse**, and select the *.pbiviz* you want to replace the current visual with.
 
