@@ -66,54 +66,54 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Code dependencies**
 
-    # [.NET Core](#tab/net-core)
+### [.NET Core](#tab/net-core)
 
-  * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-  * An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following:
 
-    * [Visual Studio](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
 
-    * [Visual Studio Code](https://code.visualstudio.com/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
 
-    # [.NET Framework](#tab/net-framework)
+### [.NET Framework](#tab/net-framework)
 
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
 
-    * [Visual Studio](https://visualstudio.microsoft.com/)
+* [Visual Studio](https://visualstudio.microsoft.com/)
 
-    # [Java](#tab/java)
+### [Java](#tab/java)
 
-    * [JDK (or JRE)](https://www.oracle.com/java/technologies/)
+* [JDK (or JRE)](https://www.oracle.com/java/technologies/)
 
-    * [Eclipse IDE](https://www.eclipse.org/downloads/packages/) - Verify that you have the *Eclipse for Java EE Developers* (enterprise edition)
+* [Eclipse IDE](https://www.eclipse.org/downloads/packages/) - Verify that you have the *Eclipse for Java EE Developers* (enterprise edition)
 
-    * [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
+* [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
 
-    # [Node JS](#tab/node-js)
+### [Node JS](#tab/node-js)
 
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
 
-    * An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following:
 
-      * [Visual Studio](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
 
-      * [Visual Studio Code](https://code.visualstudio.com/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
 
-    # [Python](#tab/python)
+### [Python](#tab/python)
 
-    * [Python 3](https://www.python.org/downloads/) (or higher)
+* [Python 3](https://www.python.org/downloads/) (or higher)
 
-        >[!NOTE]
-        >
-        >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
-        >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
+    >[!NOTE]
+    >
+    >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
+    >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
 
-    * An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following:
 
-      * [Visual Studio](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
 
-      * [Visual Studio Code](https://code.visualstudio.com/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
 
     ---
 
@@ -306,7 +306,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 5. Open the **Embed for your customers** folder.
 
-# [.NET Core](#tab/net-core)
+### [.NET Core](#tab/net-core)
 
 6. Open the *embed for your customers sample app* using one of these methods:
 
@@ -335,7 +335,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     * If you're using **Visual Studio Code**, select **Run > Start Debugging**.
 
-# [.NET Framework](#tab/net-framework)
+### [.NET Framework](#tab/net-framework)
 
 6. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
@@ -356,7 +356,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 9. Run the project by selecting **IIS Express** (play).
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 6. Open **Eclipse** and follow the instructions described below.
 
@@ -435,7 +435,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     d. Select **Finish**.
 
-# [Node JS](#tab/node-js)
+### [Node JS](#tab/node-js)
 
 6. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
 
@@ -466,7 +466,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     b. Open a new tab in your browser and navigate to `http://localhost:5300`.
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 6. Open **PowerShell** or **Command Prompt**.
 
