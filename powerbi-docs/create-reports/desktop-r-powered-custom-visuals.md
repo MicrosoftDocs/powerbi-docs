@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Use R-powered Power BI visuals in Power BI
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 In **Power BI Desktop** and the **Power BI service**, you can use R-powered Power BI visuals without any knowledge of R and without any R scripting. This enables you to harness the analytic and visual power of R visuals, and R scripts, without learning R or doing any programming yourself.
 
 To use R-powered Power BI visuals, you first select and download the R custom visual you're interested in using from the [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) gallery of **Power BI visuals** for Power BI.
@@ -72,15 +74,15 @@ Following are the steps to browse and select visuals from the online **AppSource
 
     Check the library often, since new visuals are being added all the time.
 
-### Get Power BI visuals from within **Power BI Desktop**
+### Get Power BI visuals from within Power BI
 
-1. You can also get Power BI visuals from within **Power BI Desktop**. In **Power BI Desktop** click the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
+1. You can also get Power BI visuals from within Power BI Desktop or the Power BI service. Select the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
 
    ![Screenshot showing Get more visuals in More options in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/get-more-visuals.png)
 
-2. When you do so, the **Power BI Visuals** dialog appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI Desktop.
+2. When you do so, the **Power BI visuals** dialog box appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI.
 
-   ![Screenshot showing Power BI visuals available when you select Get more visuals.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
+   ![Screenshot showing Power BI visuals available when you select Get more visuals.](media/desktop-r-powered-custom-visuals/power-bi-r-powered-custom-visuals.png)
 
 ## Contribute R-powered Power BI visuals
 
