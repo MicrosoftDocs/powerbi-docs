@@ -204,7 +204,7 @@ Before you embed your content, make sure you have all the values listed below. S
 
 Alternatively, you can find the workspace ID in the **Admin portal** settings by selecting **Details** next to the workspace name.
 
-  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings":::
+  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings.":::
 
 ### Report ID
 
@@ -253,13 +253,13 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
         
 1. In *Power BI service*, select **Settings** > **Settings** > **Admin portal**.
         
-    :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="A screenshot showing the admin settings menu option in the Power B I service settings menu":::
+    :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="A screenshot showing the admin settings menu option in the Power B I service settings menu.":::
         
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
         
 3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
         
-    :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service":::
+    :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
         
 >[!NOTE]
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
@@ -274,7 +274,7 @@ To enable your Azure AD app access objects such as reports, dashboards and datas
 
 2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
-    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
+    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power B I workspace.":::
 
 3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
 
