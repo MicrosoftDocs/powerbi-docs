@@ -72,9 +72,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
   * An integrated development environment (IDE). We recommend using one of the following:
 
-        * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-        * [Visual Studio Code](https://code.visualstudio.com/)
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
 
     # [.NET Framework](#tab/net-framework)
 
