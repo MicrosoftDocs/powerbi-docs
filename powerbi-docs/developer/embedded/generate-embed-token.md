@@ -103,7 +103,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 |SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
->Service principals must always provide the following:
+>Service principals must always provide the following information:
 >
 >* An identity for any item with an RLS dataset.
 >* For an SSO dataset, an effective RLS identity with the username property defined.
