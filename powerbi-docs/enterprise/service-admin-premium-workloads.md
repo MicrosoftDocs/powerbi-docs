@@ -58,7 +58,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 You can enable and disable workloads, and configure settings such as their max memory allocation in your capacity. However, you should only enable workloads if that's needed.
 
->[IMPORTANT]
+>[!IMPORTANT]
 >Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory and other settings only when you have determined default settings are not meeting your capacity resource requirements.
 
 #### To configure workloads in the Power BI admin portal
