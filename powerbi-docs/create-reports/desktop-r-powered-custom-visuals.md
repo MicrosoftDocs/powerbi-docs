@@ -52,14 +52,13 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 4. Once the visual is downloaded (which is like downloading any file from your browser), go to **Power BI Desktop**, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+   # [Power BI Desktop](#tab/powerbi-desktop)
    ![Screenshot showing More options in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visuals.png)
 
-# [Power BI service](#tab/powerbi-service)
+   # [Power BI service](#tab/powerbi-service)
    ![Screenshot showing More options in the Power BI service Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-service-r-powered-custom-visuals.png)
 
----
-
+   ---
 
 5. You're warned about importing a custom visual, as shown in the following image:
 
@@ -69,13 +68,13 @@ Following are the steps to browse and select visuals from the online **AppSource
    ![Screenshot showing selection of a Power BI custom visualization file for import.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
 7. When you return to Power BI Desktop, you can see the new visual type in the **Visualizations** pane.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+   # [Power BI Desktop](#tab/powerbi-desktop)
    ![Screenshot showing the new imported custom visualization in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visual-forecasting.png)
 
-# [Power BI service](#tab/powerbi-service)
+   # [Power BI service](#tab/powerbi-service)
    ![Screenshot showing the new imported custom visualization in the Power BI service Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-service-r-powered-custom-visual-forecasting.png)
 
----
+   ---
 
 8. When you import the new visual (or open a report that contains an R-powered custom visual), **Power BI Desktop** installs the required R packages.
 
@@ -93,13 +92,13 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 1. You can also get Power BI visuals from within Power BI Desktop or the Power BI service. Select the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+   # [Power BI Desktop](#tab/powerbi-desktop)
    ![Screenshot showing Get more visuals in More options in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-get-more-visuals.png)
 
-# [Power BI service](#tab/powerbi-service)
+   # [Power BI service](#tab/powerbi-service)
    ![Screenshot showing Get more visuals in More options in the Power BI service Visualizations pane.](media/desktop-r-powered-custom-visuals/get-more-visuals.png)
 
----
+   ---
 
 2. When you do so, the **Power BI visuals** dialog box appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI.
 
