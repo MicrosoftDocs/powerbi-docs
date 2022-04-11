@@ -67,13 +67,13 @@ You can enable and disable workloads, and configure settings such as their max m
 
 2. From the page header, select **...** > **Settings** > **Admin portal**.
 
-   :::image type="content" source="media/admin-portal-settings/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
+   :::image type="content" source="../includes/media/admin-portal-settings/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 
 3. Go to **Capacity settings** and from the **Power BI Premium** tab, select a capacity.
 
 4. Expand **Workloads**.
 
-5. Enable one or more workloads, and set a value for **Max Memory** and other settings.
+5. Enable one or more workloads, and set the values for each workload according to your specifications.
 
 6. Select **Apply**.
 
