@@ -115,7 +115,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
   * [Visual Studio Code](https://code.visualstudio.com/)
 
-    ---
+---
 
 ## Method
 
