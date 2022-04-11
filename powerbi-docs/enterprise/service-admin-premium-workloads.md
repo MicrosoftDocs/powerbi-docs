@@ -77,7 +77,7 @@ You can enable and disable workloads, and configure settings such as their max m
 
 6. Select **Apply**.
 
-### Monitoring workloads
+### Monitor workloads
 
 ### [Gen2](#tab/gen2)
 
