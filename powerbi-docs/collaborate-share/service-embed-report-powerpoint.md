@@ -112,8 +112,7 @@ You can interact with the report in both edit mode and presentation modes. The m
 
 In addition to the report data and visuals of the report itself, there are a number of controls and features that help you with your work.
 
-![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-embed-report-powerpoint/embedded-report-page-controls.png)
-
+![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-embed-report-powerpoint/embedded-report-page-controls1.png)
 
 ## Next steps
 
