@@ -52,21 +52,30 @@ Query workloads are optimized for and limited by resources determined by your Pr
 | **Dataflows**         | 40% default; 40% minimum  | 24% default; 24% minimum  | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum  | 20% default; 2% minimum   |
 | **Paginated reports** | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
 
+---
+
 ### Configure workloads
 
-Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory and other settings only when you have determined default settings are not meeting your capacity resource requirements.
+You can enable and disable workloads, and configure settings such as their max memory allocation in your capacity. However, you should only enable workloads if that's needed.
+
+>[IMPORTANT]
+>Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory and other settings only when you have determined default settings are not meeting your capacity resource requirements.
 
 #### To configure workloads in the Power BI admin portal
 
-1. In **Capacity settings** > **PREMIUM CAPACITIES**, select a capacity.
+1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
-2. Under **MORE OPTIONS**, expand **Workloads**.
+2. From the page header, select **...** > **Settings** > **Admin portal**.
 
-3. Enable one or more workloads, and set a value for **Max Memory** and other settings.
+   :::image type="content" source="media/admin-portal-settings/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 
-4. Select **Apply**.
+3. Go to **Capacity settings** and from the **Power BI Premium** tab, select a capacity.
 
----
+4. Expand **Workloads**.
+
+5. Enable one or more workloads, and set a value for **Max Memory** and other settings.
+
+6. Select **Apply**.
 
 ### Monitoring workloads
 
