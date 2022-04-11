@@ -100,7 +100,7 @@ When you have the report page URL, paste it into the Power BI report add-in in P
 
 1. Paste the report page URL into the text box and then click **Insert**. The report will load into the add-in.
 
-    :::image type="content" source="media/service-embed-report-powerpoint/insert-report-page-url.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
+    :::image type="content" source="media/service-embed-report-powerpoint/storytelling.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
 
 ## Working with the embedded report page
 
