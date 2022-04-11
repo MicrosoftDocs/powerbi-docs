@@ -26,7 +26,7 @@ To use grouping, select two or more elements on a visual by using Ctrl+click to 
 
 Once it's created, the group is added to the **Legend** bucket for the visual. The group also appears in the **Fields** list.
 
-![Screenshot shows Legend and Fields lists, grouping, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-2.png.png)
+![Screenshot shows Legend and Fields lists, grouping, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-2.png)
 
 Once you have a group, you can easily edit the members of that group. Right-click the field from the **Legend** bucket or from the **Fields** list, and then choose **Edit groups**.
 
