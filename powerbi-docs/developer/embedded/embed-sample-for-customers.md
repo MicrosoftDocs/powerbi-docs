@@ -7,11 +7,11 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/27/2021
+ms.date: 04/10/2022
 
 ---
 
-# Tutorial: Embed Power BI content using a sample *embed for your customers* application
+# Tutorial: Embed Power BI content using a sample *embed for your customers'* application
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
 
@@ -22,7 +22,7 @@ In this tutorial, you'll learn how to:
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
-To use your application, your users will not need to sign in to Power BI or have a Power BI license.
+To use your application, your users won't need to sign in to Power BI or have a Power BI license.
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
@@ -51,15 +51,15 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Power BI dependencies**
 
-    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+  * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
-    * To authenticate your app against Power BI, you'll need one of the following:
+  * To authenticate your app against Power BI, you'll need one of the following:
 
-        * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
+    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
 
-        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
-        * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
@@ -105,6 +105,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     * [Python 3](https://www.python.org/downloads/) (or higher)
     
         >[!NOTE]
+        >
         >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
         >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
     
@@ -131,7 +132,7 @@ To create an *embed for your customers* sample app, follow these steps:
 5. [Get the embedding parameter values](#step-5---get-the-embedding-parameter-values).
 
 6. [Service principal API access](#step-6---service-principal-api-access)
- 
+
 7. [Enable workspace access](#step-7---enable-workspace-access).
 
 8. [Embed your content](#step-8---embed-your-content).
@@ -145,7 +146,7 @@ The table below describes a few key differences between the [service principal](
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
 |Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.        |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
-|Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a service principal,* you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method is not considered as secure as using a *service principal*. This is because you have to be vigilant with the *master user* credentials (username and password). For example, you must not expose them in your embedding application, and you should change the password frequently.         |
+|Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a service principal, you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method isn't as secure as  a *service principal*. You have to be vigilant with the *master user* credentials (username and password). For example, don't expose them in your embedding application, and change the password frequently.         |
 |Azure AD delegated permissions |Not required. |Your *master user* or an administrator has to grant consent for your app to access Power BI REST API [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). For example, *Report.ReadWrite.All*. |
 |Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
 |License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.         |
@@ -173,7 +174,7 @@ Registering your application with Azure AD allows you to:
 
 ## Step 5 - Get the embedding parameter values
 
-To embed your content, you'll need to obtain certain parameter values. The table below shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+To embed your content, you need to obtain certain parameter values. The table below shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
 
 Before you embed your content, make sure you have all the values listed below. Some of the values will differ, depending on the authentication method you're using.
 
@@ -200,6 +201,10 @@ Before you embed your content, make sure you have all the values listed below. S
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
+
+Alternatively, you can find the workspace ID in the **Admin portal** settings by selecting **Details** next to the workspace name.
+
+  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings.":::
 
 ### Report ID
 
@@ -248,13 +253,13 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
         
 1. In *Power BI service*, select **Settings** > **Settings** > **Admin portal**.
         
-    :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="A screenshot showing the admin settings menu option in the Power B I service settings menu":::
+    :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="A screenshot showing the admin settings menu option in the Power B I service settings menu.":::
         
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
         
 3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
         
-    :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service":::
+    :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
         
 >[!NOTE]
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
@@ -263,13 +268,13 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 ## Step 7 - Enable workspace access
 
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
+To enable your Azure AD app access objects such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
 
 1. Sign in to Power BI service.
 
 2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
-    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
+    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power B I workspace.":::
 
 3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
 
@@ -286,7 +291,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 [!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
-4. Depending on the language you want your application to use, open one of these folders:
+4. Depending on the language you want your app to use, open one of these folders:
 
     * .NET Core
     * .NET Framework
@@ -381,7 +386,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. Select **File** and then select **Open Projects from File System**.
 
-    b. In the **Import Projects form File System or Archive** window, select **Directory** and open the **AppOwnsData** folder.
+    b. In the **Import Projects from File System or Archive** window, select **Directory** and open the **AppOwnsData** folder.
 
     c. Select **Finish**.
 
