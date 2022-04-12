@@ -83,7 +83,19 @@ Threshold appears as a marker line on the lift chart and indicates the target qu
 
 ## Disable
 
-When disabling automatic aggregations, existing system-created aggregation tables remain in the dataset. Power BI continues to use them to get query results whenever possible. By disabling automatic aggregations, you are only disabling the self-training and self-optimization processes. If you want to revert a dataset back to its initial state, you must republish the original from the .pbix model.
+You must have dataset Owner permissions to disable automatic aggregations. Workspace admins can take over dataset owner permissions.
+
+1. To disable, click the **Automatic aggregations training** slider to **Off**.
+
+    When you disable training, you are prompted with an option to delete automatic aggregation tables.
+
+    :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-delete-tables.png" alt-text="Delete automatic aggregations tables dialogue":::
+
+    If you choose *not* to delete existing automatic aggregation tables, the tables will remain in the dataset and continue to be refreshed. However, because training has been disabled, no new aggregations will be added to them. Power BI will continue to use the existing tables to get aggregated query results when possible.
+
+    If you choose to delete the tables, the dataset is reverted back to its original state - without any automatic aggregations.
+
+1. Click **Apply**.
 
 ## See also
 
