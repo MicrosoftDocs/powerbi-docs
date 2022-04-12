@@ -12,6 +12,8 @@ ms.date: 08/26/2021
 ---
 # View and update your goals in Power BI (preview)
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. These features are covered in this section. 
 
 ## View goal details 
