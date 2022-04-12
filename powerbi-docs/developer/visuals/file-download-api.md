@@ -12,9 +12,12 @@ ms.date: 04/12/2022
 
 # File download API
 
-The **Download to file API** lets users download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../../guidance/admin-tenant-settings.md#export-data) settings.
+The **file download API** lets users download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../../guidance/admin-tenant-settings.md#export-data) settings.
 
-With the **Download to file API** a custom visual can export to files of the following types:
+>[!NOTE]
+>The **file download API** is available from API version 4.5
+
+With the **file download API** a custom visual can export to files of the following types:
 
 * .txt
 * .csv
@@ -24,41 +27,18 @@ With the **Download to file API** a custom visual can export to files of the fol
 * .pdf
 * .xlsx
 
-API 4.5
+## How to use the file download API
 
-## How to use the download to file API
+The `exportVisualsContent` method has four parameters:
 
-The download to file API consists of the exportVisualsContent(contentXlsx, "myfile.xlsx", "base64","xlsx file")
-
-To call the rendering methods, you have to first import them from the *IVisualEventService*.
-
-1. In your `visual.ts` file, include the line:
-
-    ```typescript
-     import IDownloadService = powerbi.extensibility.IDownloadService;
-    ```
-
-2. In the `IVisual` class include the line:
-
-    ```typescript
-     private new_em: HTMLElement;
-     private static downloadService: IDownloadService;
-    ```
-
-3. In the `constructor` method of the `IVisual` class
-
-    ```typescript
-    this.events = options.host.eventService;
-    ```
-
-You can now call the methods
-`this.events.renderingStarted(options);`,
-`this.events.renderingFinished(options);`, and
-`this.events.renderingFailed(options);` where appropriate in your *update* method.
+* Content
+* Filename
+* fileType - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
+* XXX
 
 ## Example: Download to file API
 
-Here's an example of a simple visual that uses the *render events* API.
+Here's an example of how to downloads the content of a custom visual into an excel file and a text file.
 
 ```typescript
 import IDownloadService = powerbi.extensibility.IDownloadService;
@@ -79,12 +59,11 @@ export class Visual implements IVisual {
 
             let contentTxt: string = ...;
             Visual.downloadService.exportVisualsContent(contentTxt, "mytxt.txt", "txt","txt file");
-
-
     }
-
 }
 ```
+
+## Considerations and limitations
 
 ## Next steps
 
