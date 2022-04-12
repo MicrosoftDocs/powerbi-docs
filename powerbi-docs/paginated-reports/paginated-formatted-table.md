@@ -16,7 +16,7 @@ ms.date: 04/11/2022
 
 In this article, you learn how to export all the data from your Power BI dataset easily, while preserving data and style format. The feature lets you quickly create a paginated report on the web and apply styling. Then you can export it using the rich export functionality of paginated reports.
 
-You can create paginated reports by using the formatted table feature in all workspaces, whether Premium or not.
+You can use the formatted table feature to create paginated reports in any modern workspace, including workspaces that aren't in a Power BI Premium capacity.
 
 ## Get started
 
@@ -62,26 +62,6 @@ The **Build** pane has other customization options for you to create a better lo
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
 
-On the **File** menu, save, download, or print your report.
-
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu.":::
-
-In **Save your report**, give your report a name and select a workspace.
-
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog.png" alt-text="Screenshot of Save menu.":::
-
-After you save the report, you see a success or failure notification in the top right of the editor.
-
-- If it failed, the message gives the reason for the failure. 
-- If a report already exists where you have chosen to save, it asks you if you wish to overwrite the existing report.  
-- If it succeeded, you see a link to the report.  You can either follow this link or continue editing.  
-
-After saving the report you can preview it. Select **Reading Mode** on the top bar in the editor. You leave the editor experience and enter the normal paginated report viewer experience.
-
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-reading-view.png" alt-text="Screenshot of Reading View button.":::
-
-> [!NOTE]
-> If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
 
 ## Edit a formatted table
 
@@ -93,6 +73,37 @@ This option takes you back to the formatted table editor experience, where you c
 
 > [!NOTE]
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. If you edit this report in Report Builder, you won't be able to edit it in the online formatted table experience anymore.
+
+## Export your table
+
+You can export the table before or after you save it. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
+
+:::image type="content" source="media/paginated-formatted-table/formatted-table-export.png" alt-text="Screenshot of list of export formats available.":::
+
+## Save your report
+
+You can save the report to any modern workspace, including workspaces that aren't in a Power BI Premium capacity.
+
+1. On the **File** menu, save, download, or print your report.
+
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-file-menu.png" alt-text="Screenshot of File menu.":::
+
+1. In **Save your report**, give your report a name and select a workspace.
+
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog.png" alt-text="Screenshot of Save menu.":::
+
+After you save the report, you see a success or failure notification in the top right of the editor.
+
+- If a report already exists where you have chosen to save, it asks you if you wish to overwrite the existing report.  
+- If it succeeds, you see a link to the report. You can either follow this link or continue editing.  
+
+After saving the report, you can preview it. Select **Reading Mode** on the top bar in the editor. You leave the editor experience and enter the normal paginated report viewer experience.
+
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-reading-view.png" alt-text="Screenshot of Reading View button.":::
+
+> [!NOTE]
+> If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
+
 
 ## Next steps
 
