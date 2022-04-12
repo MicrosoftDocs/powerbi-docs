@@ -86,7 +86,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
-* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
+* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were affected the most due to overload penalty.
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
@@ -208,7 +208,7 @@ The column height represents the duration of operations subject to overload pena
 
 Use this visual to understand how widespread the impact of overload is. The visual will help you determine whether a single user is impacted by an overload event, or whether the overload event impacts multiple users.
 
-The column height represents the number of distinct users effected when overload occurs.
+The column height represents the number of distinct users affected when overload occurs.
 
 ## Refresh
 
@@ -293,7 +293,7 @@ When the total combined CPU for *interactive* and *background* operations exceed
     >[!NOTE]
     >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
 
-* **Autoscle isn't enabled** - If autoscale is not enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
+* **Autoscale isn't enabled** - If autoscale is not enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
 
 ### Top row visuals
 
