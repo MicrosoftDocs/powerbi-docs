@@ -156,7 +156,7 @@ The outline settings for matrix and tables are now consolidated to enabling be s
 
 |Old behavior  |New behavior  |
 |---------|---------|
-|:::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old-large.png" alt-text="Screenshot of old outline format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of new outline format experience.":::       |
+|:::image type="content" source="media/desktop-format-pane/format-pane-outline-old-large.png" alt-text="Screenshot of old outline format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of new outline format experience.":::       |
 
 
 ## Split for column grand and row totals for matrix
