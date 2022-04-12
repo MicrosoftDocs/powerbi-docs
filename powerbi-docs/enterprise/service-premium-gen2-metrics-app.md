@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/10/2022
+ms.date: 04/12/2022
 LocalizationGroup: Premium 
 ---
 
@@ -261,7 +261,7 @@ Each column represents the number of seconds it took to compete a single operati
 
 A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.
 
-Scheduled and manual refresh workflows can trigger multiple internal operations in the backend service. These operations might be recorded in the app using different activity IDs. In addition, refreshes sometimes perform automatic retries on your behalf, for example if a short lasting error occurred. These retries are also performed using a unique activity ID. Each activity ID is represented as a row in the table. When reviewing the table, take into consideration that several rows may indicate an operation of a single activity.
+Scheduled and manual refresh workflows can trigger multiple internal operations in the backend service. These operations might be recorded in the app using different activity IDs. For example, refreshes sometimes perform automatic retries on your behalf if a temporary error occurred. Each activity ID is represented as a row in the table. When reviewing the table, take into consideration that several rows may indicate an operation of a single activity.
 
 The table has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
 
