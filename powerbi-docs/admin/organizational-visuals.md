@@ -85,6 +85,17 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 
 When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../guidance/admin-tenant-settings.md#export-data) settings.
 
+>[!NOTE]
+>When this setting is enabled, a custom visual can export to files of the following types:
+>
+>* .txt
+>* .csv
+>* .json
+>* .tmplt
+>* .xml
+>* .pdf
+>* .xlsx
+
 1. Expand the **Allow downloads from custom visuals** settings.
 
 2. Select **Enabled**.
