@@ -20,13 +20,21 @@ You can create paginated reports by using the formatted table feature in all wor
 
 ## Get started
 
-In Dataset hub view, select **More options (...)** next to a dataset > **Create formatted table**.
+1. Go to list view for any workspace, including My Workspace. 
+1. There are three different ways you can create a formatted table from the Power BI service:
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-context-menu.png" alt-text="Screenshot of Dataset hub context menu.":::
+    **In list view** select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
 
-Select **As formatted table**.
+    :::image type="content" source="media/paginated-formatted-table/formatted-table-list-view.png" alt-text="Screenshot of Create a a formatted table in the Power BI service.":::
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of Dataset hub Create report.":::
+    **From the navigation pane** select **More options (...)** for a dataset, then select **As formatted table**.
+
+    ::::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of Create as formatted table.":::
+
+
+    **In Dataset hub view** select **More options (...)** next to a dataset > **Create formatted table**.
+
+    :::image type="content" source="media/paginated-formatted-table/formatted-table-data-hub.png" alt-text="Screenshot of Create formatted table in the Data hub.":::
 
 The new paginated report online editing experience opens. It's called formatted table.  There are a few panes here to take a look at.
 
@@ -47,6 +55,8 @@ If columns are in the wrong order in the **Build** pane, don't worry.  You can e
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-build-pane-selected-fields.png" alt-text="Screenshot of dragging items.":::
 
 When you select a field, we use the default aggregate set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
+
+:::image type="content" source="media/paginated-formatted-table/formatted-table-aggregations.png" alt-text="Screenshot of possible aggregations.":::
 
 The **Build** pane has other customization options for you to create a better looking table.  To access these options, select the **Format** tab at the top of the **Build** pane.
 
