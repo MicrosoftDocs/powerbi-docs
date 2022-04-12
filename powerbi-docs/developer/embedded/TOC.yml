@@ -94,7 +94,7 @@
       href: embedded-row-level-security.md
     - name: "Embed a report with cloud-based RLS"
       href: cloud-rls.md
-    - name: "Paginated reports Row-level security"
+    - name: "RLS in embedded paginated reports"
       href: paginated-reports-row-level-security.md
   - name: Reference
     items:
