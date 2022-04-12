@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/03/2021
+ms.date: 04/12/2022
 ---
 
 # Export paginated report to file
@@ -329,8 +329,6 @@ private async Task<ExportedFile> ExportPaginatedReport(
 * Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
-
-* The number of paginated report exports is limited to 50 reports per minute per capacity.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
