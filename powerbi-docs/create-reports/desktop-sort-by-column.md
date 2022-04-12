@@ -1,6 +1,6 @@
 ---
 title: Sort one column by another column in Power BI
-description: In Power BI, you can change how a visual looks by sorting it by different data fields.
+description: hange the look of a Power BI visual by sorting it by different data fields. Use one column to define the sort order of another column.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'sunaraya'
@@ -12,6 +12,8 @@ ms.date: 06/28/2021
 LocalizationGroup: Create reports
 ---
 # Sort one column by another column in Power BI
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -40,9 +42,9 @@ Here's a common example. You have a Month Name column, and when you add it to a 
 
 ## Set the column to use for sorting
 
-To set a different column to sort by, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
-
 # [Power BI Desktop](#tab/powerbi-desktop)
+
+To set a different column to sort by, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
 
 1. Select the column that you want to sort, in our case, **Month**. Note that the months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
 
@@ -54,15 +56,41 @@ To set a different column to sort by, both columns need to be at the same level 
 
 1. The visual automatically sorts in the order we want: chronologically by the order of months in a year.
 
-    ![Sort by Column menu, visual sorted chronologically](media/desktop-sort-by-column/power-bi-chronological-sort.png)
    :::image type="content" source="media/desktop-sort-by-column/power-bi-chronological-sort.png" alt-text="Screenshot of a line chart in Power B I Desktop with the months sorted chronologically.":::
 
 # [Power BI service](#tab/powerbi-service)
 
+To set a different column to sort by, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
+
+1. On the canvas, select the visual. Then locate the **Month Number** field in the **Fields** pane.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-month-number-field.png" alt-text="Screenshot of the Visualizations and Fields panes in the Power B I service. In the Fields pane, the Month Number field is called out.":::
+
+1. In the **Visualizations** pane, in the **Fields** section, locate the **Tooltip** fields bucket.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power B I service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is called out.":::
+
+1. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields buck in the **Visualization** pane.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-drag-month-number.png" alt-text="Screenshot of the Power B I service. In the Visualizations pane, the Tooltips fields bucket contains the Month Number field and is called out.":::
+
+1. In the upper-right corner of the visual, select **More options**. Select **Sort axis**, and then select **Month Number**.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-sort-month-number-ascending.png" alt-text="Screenshot of the Power B I service. The More options menu is visible, with Sort axis and Month Number called out.":::
+
+   Power BI sorts the visual chronologically by the order of months in a year.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-line-chart-month-number-sort.png" alt-text="Screenshot of a line chart in the Power B I service with the months sorted chronologically.":::
+
+1. The **Month Number** is now visible in the visual's default tooltip.
+
+   :::image type="content" source="media/desktop-sort-by-column/service-line-chart-default-tooltip.png" alt-text="Screenshot of a line chart in the Power B I service. A tooltip is visible. The tooltip contains a Month Number label and value.":::
+
+   If you don't want the tooltip to contain the **Month Number**, use a custom tooltip that doesn't include that value. To learn how to create a custom tooltip, see [Create tooltips based on report pages in Power BI Desktop](desktop-tooltips.md).
+
+   :::image type="content" source="media/desktop-sort-by-column/service-line-chart-custom-tooltip.png" alt-text="Screenshot of a line chart in the Power B I service. A custom tooltip is visible that contains a month and sales value, but no month number value.":::
+
 ---
-
-
-
 
 <!---
 This functionality is no longer active.
