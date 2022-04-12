@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2022
+ms.date: 04/11/2022
 ---
 
 # Manage Power BI visuals admin settings
@@ -80,35 +80,6 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 |---------|---------|---------|
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
 |
-
-### Export data to file
-
-When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../guidance/admin-tenant-settings.md#export-data) settings.
-
-1. Expand the **Allow downloads from custom visuals** settings.
-
-2. Select **Enabled**.
-
-3. Choose who can download files:
-
-   * Select **The entire organization** option to allow everyone in your organization to download data from a visual into a file.
-   * Select the **Specific security groups** option to limit downloading files to specific security groups. Enter the security groups you want in the *Enter security groups* text bar. The security groups you specified are included by default. If you want to exclude these security groups and include everyone else in the organization, select the **Except specific security groups** option.
-
-4. Select **Apply**.
-
-   :::image type="content" source="/media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I allow downloads from custom visuals settings.":::
-
-UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
-
-|Key  |Value name  |Value  |
-|---------|---------|---------|
-|Software\Policies\Microsoft\Power BI Desktop\    |AllowCVToExportDataToFile    |0 - Disable </br>1 - Enable (default)         |
-|
-
-When `AllowCVToExportDataToFile` is set to `1` the custom visual can export data to a file only if:
-
-* The feature switch in the admin portal is enabled.
-* The user is logged on.
 
 ## Organizational visuals
 
