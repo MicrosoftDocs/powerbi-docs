@@ -56,10 +56,19 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 ### Configure workloads
 
-You can enable and disable workloads, and configure settings such as their max memory allocation in your capacity. However, you should only enable workloads if that's needed.
+You can tune the behavior of the workloads, by configuring workload settings for your capacity.
+
+### [Gen2](#tab/gen2)
 
 >[!IMPORTANT]
->Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory and other settings only when you have determined default settings are not meeting your capacity resource requirements.
+>All workloads are always enabled and cannot be disabled. Your capacity resources are managed by Power BI according to your capacity usage.
+
+### [Gen1](#tab/gen1)
+
+>[!IMPORTANT]
+>You can maximize your capacity's available resources by disabling workloads if they will not be used.
+
+---
 
 #### To configure workloads in the Power BI admin portal
 
@@ -73,7 +82,7 @@ You can enable and disable workloads, and configure settings such as their max m
 
 4. Expand **Workloads**.
 
-5. Enable one or more workloads, and set the values for each workload according to your specifications.
+5. Set the values for each workload according to your specifications.
 
 6. Select **Apply**.
 
