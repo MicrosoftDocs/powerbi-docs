@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of finished Power BI report."::: 
@@ -170,7 +172,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value. Change **Date** from **Date Hierarchy** to **Date**.
+1. In the **Fields** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
@@ -210,7 +212,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Screenshot of a clustered column chart.":::
+    :::image type="content" source="media/article-folder-name/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/article-folder-name/power-bi-clustered-column-chart-expanded.png":::
 
     Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
