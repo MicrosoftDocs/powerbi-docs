@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 03/20/2022
+ms.date: 04/13/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -63,6 +63,9 @@ Now you have a profile and a workspace for each customer. If you created new wor
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
 * If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by migrating it to [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
+* After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
+  * If you rely on Dynamic RLS, the name of profile will be returned in the DAX function `UserName()`.
+  * If you use static RLS and override roles when generating the embed token, you can continue doing this.
 
 Once the objects are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
 
@@ -74,12 +77,12 @@ Make the following code changes:
 
 * **Authorization code change**
 
-  * If you're using a *master user* in the SaaS application, change the acquire token code. Read [embed service principal](embed-service-principal.md) to learn about creating an app-only [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) token.
+  * If you're using a *master user* in the [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) app, change the acquire token code. Read [embed with service principal](embed-service-principal.md) to learn about creating an app-only Azure AD token.
   * If you're using a *service principal* and you created a new one for profiles, adjust the code to use the correct service principal ID and secrets.
 
 * **Management code change**
 
-  Some apps have management code that automates onboarding a new customer upon registration. Often, the management code calls on Power BI REST APIs to create workspaces and import content. Most of this code should remain the same, but you may need to adapt the following details:
+  Some apps have management code that automates onboarding a new customer upon registration. Often, the management code uses Power BI REST APIs to create workspaces and import content. Most of this code should remain the same, but you may need to adapt the following details:
 
   * The API caller should now be a profile. The app should use a specific profile to onboard a customer.
   * If you decide to reorganize your Power BI content, the code should change to reflect the changes.
@@ -99,7 +102,7 @@ Reports may load even if there are bugs in the SaaS application code because you
 
 Now that you finished the migration and validated the results, you can remove the stuff you don't need anymore.
 
-* Clean up code: You might want to delete the older code and leave only the profiles code.
+* Clean up code: You might want to disable old code paths to ensure that you're only running new code that relies on profiles.
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.
 If you reused the same workspaces, you may want to delete the older permissions (such as *master user* permissions) on the workspace.
 
