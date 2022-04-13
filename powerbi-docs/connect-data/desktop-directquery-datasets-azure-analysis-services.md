@@ -19,6 +19,22 @@ With **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**, yo
 
 Since the functionality is currently in preview, you must first enable it. To do so, in Power BI Desktop go to **File > Options and settings > Options**, and in the **Preview features** section, select the **DirectQuery for Power BI datasets and Analysis Services** checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
 
+## Managing this feature
+
+Tenant administrators can enable or disable DirectQuery connections to Power BI datasets in the admin portal. While this is enabled by default, disabling it will effectively stop users from publishing new composite models on Power BI datasets to the service.
+
+:::image type="content" source="media/ddirectquery-connections-datasets-admin-setting" alt-text="Admin setting to enable or disable DirectQuery connections to Power BI datasets.":::
+
+Existing reports that leverage a composite model on a Power BI dataset will continue to work and users can still create the composite model in using Desktop but will not be able to publish to the service. Instead, when you create a DirectQuery connection to the Power BI dataset by selecting **Make changes to this model** you will see the following warning message:
+
+![Warning message informing the user that publication of a composite model that uses a Power BI dataset is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-directquery-datasets-azure-analysis-services/directquery-connection-disabled-warning.png)
+
+This way you can still explore the dataset in your local Power BI Desktop environment and create the composite model. However, you will not be able to publish the report to the Service. When you publish the report and model you will see the following error message and publication will be blocked:
+
+![Error message that blocks publication of a composite model that uses a Power BI dataset because DirectQuery connections are not allowed by the admin.](media/desktop-directquery-datasets-azure-analysis-services/directquery-connection-disabled-publish-error.png)
+
+Note that live connections to Power BI datasets are not influenced by the switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of if the switch has been turned off. Also, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the switch has been turned off after they were published.
+
 ## Using DirectQuery for live connections
 
 Using DirectQuery for Power BI datasets and Azure Analysis Services requires your report to have a local model. You can start from a live connection and add or upgrade to a local model, or start with a DirectQuery connection or imported data, which automatically creates a local model in your report.
@@ -223,8 +239,7 @@ This dialog will not be shown for live connections.
 >[!NOTE]
 >This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
 
-[!div class="mx-imgBorder"]
-![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.":::
 
 ## Next steps
 
