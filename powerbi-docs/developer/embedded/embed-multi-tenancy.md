@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 04/13/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -24,6 +24,10 @@ The ISV application [service principal](pbi-glossary.md#service-principal) creat
 Using service principal profiles enables the ISV application to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
  :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multi-tenancy.":::
+
+>[!NOTE]
+>This article is aimed at organizations that want to set up a multi-customer app using service principal profiles.
+>If your organization already has an app that supports multiple customers from a single Power BI tenant, and you want to migrate to the service principal profile model, see [Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -312,3 +316,6 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 >[!div class="nextstepaction"]
 >[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+
+>[!div class="nextstepaction"]
+>[Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md)
