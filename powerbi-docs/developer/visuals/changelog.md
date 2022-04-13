@@ -23,18 +23,38 @@ ETA - May 8, 2022
 
 * New flags in [expand/collapse](dataview-mappings.md#visual-requirements)
 
+## API v3.8.0
+
+* Supports Desktop 2021 May and later.
+
+## API v3.7.0
+
+* Supports Desktop 2021 April and later.
+
+## API v3.6.0
+
+* Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value. 
+* Supports Desktop 2021 February and later. 
+* Supports Desktop RS May 2021 and later.
+
 ## API v3.4.0
 
 * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
+* Supports Desktop 2020 November and later.
+* Supports Desktop RS January 2021 and later.
 
 ## API v3.2.0
 
 * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+* Supports Desktop 2019 September and later.
+* Supports Desktop RS January 2020 and later.
 
 ## API v2.6.0
 
 * Adds **isInFocus** to update option and **switchFocusModeState** method to visual host
-  * Supports **subtotals** customization
+* Supports **subtotals** customization
+* Supports Desktop 2019 June and later.
+* Supports Desktop RS May 2019 and later.
 
 ## API v2.5.0
 
@@ -47,12 +67,13 @@ ETA - May 8, 2022
 * **[Landing Page API](./landing-page.md)**
 * **[Local Storage API](./local-storage.md)**
 * **[Tuple filter API (multi-column filter)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
-  * **[Rendering Events API](./event-service.md#render-events-in-power-bi-visuals)**
+* **[Rendering Events API](./event-service.md)**
 
 ## API v2.2.0
 
 * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
 * **[ContextMenu API](./context-menu.md)**
+* Supports **[Drillthrough](../../create-reports/desktop-drillthrough.md)** feature
 
 ## API v2.1.0
 
@@ -89,12 +110,12 @@ ETA - May 8, 2022
 
 * Supports Themes
 * Supports **[fetchMoreData](./fetch-more-data.md)**, note the **Fetch More Data API** overcomes the hard limit of 30K data points
-* **[Canvas Tooltips API](./add-tooltips.md#add-report-page-tooltips)**
+* **[Canvas Tooltips API](./add-tooltips.md#add-tooltips-support-to-the-report-page)**
 
 ## API v1.11.0
 
 * **[FilterManager API](./filter-api.md)**
-* Supports **[Bookmarks](./bookmarks-support.md)**
+* Supports **[Bookmarks](./bookmarks-support.md)** 
 
 ## API v1.10.0
 
@@ -112,12 +133,12 @@ ETA - May 8, 2022
 
 ## API v1.7.0
 
-* Supports **[RESJSON](./localization.md#resource-file)**
+* Supports **[RESJSON](./localization.md#step-5---add-a-resources-file-for-each-language)**
 
 ## API v1.6.2
 
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode
-* Supports **[Interactive (html) R Power BI visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
+* Supports **[Interactive (html) R Power BI visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
 
 ## API v1.5.0
 
@@ -135,7 +156,7 @@ ETA - May 8, 2022
 
 * Adds **colorPalette** to manage the colors used on your visual.
 * Supports **Multiple selection** - selectionManager can accept an array of `SelectionId`.
-* Supports **[R visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
+* Supports **[R visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
 
 ## API v1.1.0
 
