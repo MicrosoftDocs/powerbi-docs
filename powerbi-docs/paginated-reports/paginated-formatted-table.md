@@ -7,20 +7,20 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
 ms.topic: how-to
-ms.date: 04/11/2022
+ms.date: 04/12/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-paginated](../includes/no-paginated.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
-In this article, you learn how to export all the data from your Power BI dataset easily, while preserving data and style format. The feature lets you quickly create a paginated report on the web and apply styling. Then you can export it using the rich export functionality of paginated reports.
+In this article, you learn how to export all the data from your Power BI dataset easily, while preserving data and style formats. The feature lets you quickly create a paginated report on the web, and apply styling. Then you can export it using the rich export functionality of paginated reports.
 
 You can use the formatted table feature to create paginated reports in any modern workspace, including workspaces that aren't in a Power BI Premium capacity.
 
 ## Get started
 
-1. Go to list view for any workspace, including My Workspace. 
+1. Go to list view for any workspace, including My Workspace.
 1. There are three different ways you can create a formatted table from the Power BI service:
 
     **In list view** select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
