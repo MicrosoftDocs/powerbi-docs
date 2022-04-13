@@ -50,7 +50,7 @@ This section describes frequent errors you may see, when testing single sign-on,
     | --- | --- |
     | User does not exist in AAD | Check if the user is present in AAD |
     | User is not mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
 
 * **Error: Invalid connection credentials.**
 The gateway cannot connect to the data source, because the provided User Principal Name does not have access to the data source.

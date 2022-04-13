@@ -1,21 +1,21 @@
 ---
-title: Main sources for acquiring Power BI visuals
-description: This article describes the main ways of getting Power BI visuals.
+title: Main sources for acquiring Power BI custom visuals
+description: This article describes the main ways of getting Power BI custom visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
+manager:
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 02/16/2022
+ms.date: 04/07/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
 
-# What are Power BI custom visuals and where can I get them?
+# What are custom visuals in Power BI and where can I get them?
 
-Power BI visuals come from three main sources:
+[Power BI visuals](../../visuals/power-bi-report-visualizations.md) come from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
 * You can [download or import](#appsource-power-bi-visuals) visuals from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
@@ -46,9 +46,9 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 ### What is AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before.
 
-Today, both transactability and license management of existing licensed visuals take place outside of AppSource. Each publisher defines their own business and licensing model for their visual. For example, pricing, per-user license vs site license.
+Today, both transactability and license management of existing licensed visuals take place outside of AppSource. Each publisher defines their own business and licensing model for their visual. For example, pricing, per-user license vs site license. Once you select the visual, you’ll see a **Plans + Pricing** tab (if it costs money) and a **Details + support** tab for the license information.
 
 ### Certified Power BI visuals
 
@@ -80,10 +80,10 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual from a file, see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
-If you're a web developer and want to create your own visual and add it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you're a web developer and want to create your own visual and add it to AppSource, you can learn how to [develop a Power BI visual](develop-circle-card.md) and [publish a custom visual to AppSource](office-store.md).
 
 > [!WARNING]
-> A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
+> A Power BI custom visual could contain code with security or privacy risks. Make sure you trust the author and source before importing it to your report.
 
 ## Next steps
 

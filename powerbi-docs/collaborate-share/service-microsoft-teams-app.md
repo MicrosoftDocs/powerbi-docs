@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/04/2022
+ms.date: 03/31/2022
 ---
 
 # Add the Power BI app to Microsoft Teams
 
-This article describes how you can install, pin, and interact with Power BI right inside Microsoft Teams. The Power BI personal app brings the entire basic Power BI service experience to Microsoft Teams.
+This article describes how you can install, pin, and interact with Power BI directly inside Microsoft Teams. The Power BI personal app brings the entire basic Power BI service experience to Microsoft Teams.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-teams.png" alt-text="Screenshot of Power BI app in Microsoft Teams.":::
 
@@ -28,12 +28,20 @@ And there's a feature in the Power BI app in Teams that you don't see when you v
 
 There are a few features that you can only access in the Power BI service in a browser. See the [Known issues and limitations](#known-issues-and-limitations) section of this article for details.
 
+> [!NOTE]
+> When you install the Power BI app in Microsoft Teams, if you are in Microsoft 365 Targeted Release or Office Insiders Beta Channel, then the public preview of the Power BI app in Microsoft Outlook and Microsoft Office is also installed. Learn more about the [public preview in Outlook and Office](service-collaborate-microsoft-teams.md#OutlookOffice).
+
 ## Requirements
 
 In general, ensure these elements so you can install the Power BI app in Microsoft Teams:
 
-- You have a Power BI Pro or Premium Per User (PPU) license.
-- You have signed in to the Power BI service to activate your Power BI license.
+- Ensure the Power BI app is enabled in the Teams Admin center apps list. 
+- Your users with a Power BI (Free) license can access personal analytics including using the built-in Teams analytics report and create reports in their My workspace.
+- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
+- Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
+- Users will need to sign-in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
+- Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
+
 
 ## Install the Power BI app
 

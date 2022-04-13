@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 02/24/2022
+ms.date: 03/16/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -116,7 +116,7 @@ Downstream inheritance is a critical link in Power BI's end-to-end information p
 
 ## Data loss prevention (DLP) policies (preview)
 
-Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. DLP policies for Power BI currently support detection of sensitivity labels on datasets, and can trigger automatic risk remediation actions such as alerts to security admins in the Microsoft 365 compliance portal and policy tips for end users. See [Data loss prevention policies for Power BI (preview)](service-security-dlp-policies-for-power-bi.md) for detail.
+Power BI leverages Microsoft 365 data loss prevention to enable central security teams to use data loss prevention policies to enforce their organization's DLP policies in Power BI. See [Data loss prevention policies for Power BI (preview)](service-security-dlp-policies-for-power-bi.md) for detail.
 
 ## Default label policy
 
@@ -249,7 +249,9 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI Desktop for Power BI Report Server doesn’t support information protection. If you try to open a protected .pbix file, the file won’t open and you’ll receive an error message. Sensitivity-labeled .pbix files that aren’t encrypted can be opened as normal.
 
-* Protected .pbix files can be only opened by a user who has [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* To open a protected .pbix file, a user must have [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner). In addition, the label must be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If it isn't, the open action will fail.
+
+    The user that set the label also has Full control and can never be locked out.
 
 * "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
@@ -259,9 +261,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
 
-* Very large .pbix files (over 2 GB) can’t be saved with a sensitivity label. To work around this limitation, save the file without the label, publish it to the Power BI service, and then apply the label to the published dataset and report.
-
-    In general, when you protect a file with a sensitivity label that applies encryption, it’s good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
+* In general, when you protect a file with a sensitivity label that applies encryption, it’s good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 
 * Temp files aren’t encrypted.
 

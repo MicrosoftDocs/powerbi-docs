@@ -11,7 +11,7 @@
       href: "power-bi-embedded-generation-2.md"
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
-  - name: Tutorials
+  - name: Getting started
     expanded: true
     items: 
     - name: "Embed content for customers"
@@ -38,16 +38,12 @@
       href: generate-embed-token.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
-    - name: "Row-level security"
-      href: embedded-row-level-security.md
-    - name: "Paginated reports Row-level security"
-      href: paginated-reports-row-level-security.md
-    - name: "Multi-tenancy solutions"
+    - name: "Service principal profiles for multi-customer solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
-      href: ./monitor-power-bi-embedded.md
+      href: monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
       href: embedded-faq.yml
   - name: How to
@@ -57,7 +53,9 @@
     - name: "Embed using service principal and a certificate"
       href: embed-service-principal-certificate.md
     - name: "Embed a paginated report"
-      href: embed-paginated-reports.md        
+      href: embed-paginated-reports.md   
+    - name: "Use the Power BI SDK with service principal profiles"
+      href: service-principal-profile-sdk.md   
     - name: "Move an embedded app to production"
       href: move-to-production.md          
     - name: "Export report to file"
@@ -90,6 +88,14 @@
         href: azure-pbie-scale-capacity.md
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
+  - name: RLS
+    items:
+    - name: "Row-level security"
+      href: embedded-row-level-security.md
+    - name: "Embed a report with cloud-based RLS"
+      href: cloud-rls.md
+    - name: "RLS in embedded paginated reports"
+      href: paginated-reports-row-level-security.md
   - name: Reference
     items:
     - name: APIs

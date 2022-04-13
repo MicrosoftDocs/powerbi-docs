@@ -7,15 +7,25 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Matrix banded row colors appear incorrectly in service 
+      href: known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md                
+    - name: DAX query fails due to parameter case sensitivity 
+      href: known-issues/known-issue-166-dax-query-fails-parameter-case-sensitivity.md   
+    - name: Long running, failed or stuck dataflow in Premium Gen2 
+      href: known-issues/known-issue-dataflow-on-premium-gen2.md   
+    - name: Filter not correct after applying bookmark
+      href: known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md   
+    - name: Uploading paginated report with same name fails 
+      href: known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md   
     - name: Unable to open protected Desktop files 
-      href: known-issues/known-issue-unable-open-protected-desktop-file.md                
+      href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
     expanded: false
     items:
     - name: Track Power BI service health in Microsoft 365
       href: ../admin/service-admin-health.md       
     - name: Service interruption notifications
-      href: ../service-interruption-notifications.md
+      href: /power-bi/admin/service-interruption-notifications
     - name: Troubleshoot deployment pipelines
       href: ../create-reports/deployment-pipelines-troubleshooting.yml  
     - name: Troubleshoot relationships in Power BI models
@@ -61,7 +71,7 @@
       - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop
         href: ../connect-data/desktop-access-database-errors.md
       - name: Troubleshoot XMLA endpoint connectivity
-        href: ../admin/troubleshoot-xmla-endpoint.md    
+        href: /power-bi/enterprise/troubleshoot-xmla-endpoint
       - name: Troubleshoot nested values returned as text in the Power BI service
         href: ../connect-data/service-troubleshooting-nested-values.md
     - name: Signing in
@@ -83,7 +93,7 @@
       - name: Troubleshoot sharing dashboards and reports
         href: ../collaborate-share/service-troubleshoot-sharing.md
       - name: Troubleshoot subscriptions
-        href: ../consumer/service-troubleshoot-subscribe.md 
+        href: ../consumer/service-troubleshoot-subscribe.yml 
     - name: Visuals
       expanded: false
       items:
@@ -105,7 +115,7 @@
       href: ../admin/power-bi-cannot-sign-in.md
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
-    - name: Move your tenant between regions
+    - name: Request a region move via a support request
       href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
       href: ../fundamentals/service-tips-for-finding-help.md

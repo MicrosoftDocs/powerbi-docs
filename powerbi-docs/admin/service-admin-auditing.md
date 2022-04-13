@@ -353,7 +353,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataflow    | DeleteDataflow       | Not currently used     |
 | Deleted Power BI dataset     | DeleteDataset         |         |
 | Deleted Power BI dataset from external app | DeleteDatasetFromExternalApplication | |
-| Deleted Power BI dataset rows | DeleteDatasetRows |   |
+| Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
 | Deleted Power BI goal | DeleteGoal | |
@@ -485,7 +485,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI tenant keys | GetTenantKeysAsAdmin | |
 | Retrieved Power BI workspaces | GetWorkspaces | |
 | Retrieved scan result in Power BI tenant | GetWorkspacesInfoResult | |
-| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset |
+| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset such as when a user visits the data hub |
 | Retrieved status of Power BI gateway cluster | | |
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |

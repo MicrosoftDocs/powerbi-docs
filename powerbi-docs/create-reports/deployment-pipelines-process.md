@@ -410,7 +410,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
-* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported
+* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported.
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
@@ -419,8 +419,6 @@ This section lists most of the limitations in deployment pipelines.
 * For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ### Dataflow limitations
-
-* When deploying a dataflow with linked entities that reside on the same workspace, the deployment will fail.
 
 * When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
 

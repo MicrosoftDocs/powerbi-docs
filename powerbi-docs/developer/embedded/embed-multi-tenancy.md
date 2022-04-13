@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/15/2022
+ms.date: 04/07/2022
 ---
 
 # Service principal profiles in Power BI Embedded
 
-This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the [ISV](pbi-glossary.md#independent-software-vendor-isv) to build a scalable application that enables better customer data isolation and establishes [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
+This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
 > [!NOTE]
 > For the sake of simplicity, all ISVs and Power BI Embedded Enterprise application owners will be referred to as ISVs in this article.
@@ -104,7 +104,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](../../consumer/end-user-workspaces.md#permissions-in-the-workspaces) to the workspace
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -123,7 +123,7 @@ Read more about [Power BI workspaces]( ../../consumer/end-user-workspaces.md).
 
 ## Import reports and datasets
 
-Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/groups/imports) to import the content into the created workspace.
+Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/imports) to import the content into the created workspace.
 
 ```rest
 POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/imports?datasetDisplayName=ContosoSales HTTP/1.1
@@ -135,7 +135,7 @@ Fiddler-Encoding: base64
 LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
 ```
 
-Use [dataset parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
+Use [dataset parameters](/rest/api/power-bi/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
 Then, use the *Update parameters* API to define which customers' data the dataset connects to.
 
 ## Set the dataset connection
@@ -151,15 +151,15 @@ In either case, you should end up with single-customer datasets (one dataset per
 
 If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
-* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to match the customer's database details.
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/groups/datasets/updatedatasourcesingroup).
+* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/updatedatasourcesingroup).
 
 ### A single multi-customer database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
-Create a report using [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
+Create a report using [parameters](/rest/api/power-bi/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
 
 ## Embed a report
 
@@ -201,7 +201,7 @@ Before setting up a profile-based multi-customer solution, you should be aware o
 
 ### Scalability
 
-By separating the data into separate datasets for each customer, you minimize the need for [large datasets](../../admin/service-premium-large-models.md). When the capacity gets overloaded, it can evict unused datasets to free memory for active datasets. This optimization is impossible for a [single large dataset](#row-level-security). By using multiple datasets, you can also separate tenants into multiple Power BI capacities if necessary.
+By separating the data into separate datasets for each customer, you minimize the need for [large datasets](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused datasets to free memory for active datasets. This optimization is impossible for a [single large dataset](#row-level-security). By using multiple datasets, you can also separate tenants into multiple Power BI capacities if necessary.
 
 Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
@@ -250,19 +250,23 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-### Power BI capacity considerationsembed-multi-tenancy
+Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md). For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
-* To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](../../admin/service-premium-large-models.md) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).
+### Power BI capacity limitations
+
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
+* To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
 * Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
-### Change a service principal
+### Manage service principals
+
+#### Change a service principal
 
 In Power BI, a profile belongs to the service principal that created it. That means, a profile can't be shared with other principals. With this limitation, if you want to change the service principal for any reason, you'll need to recreate all the profiles and provide the new profiles access to the relevant workspaces.
 Often, the ISV application needs to save a mapping between a profile ID and a customer ID in order to pick the right profile when needed. If you change the service principal and recreate the profiles, the IDs will also change, and you may need to update the mapping in the ISV application database.
 
-### Delete a service principal
+#### Delete a service principal
 
 > [!WARNING]
 > Be very careful when deleting a service principal. You don't want to accidentally lose data from all its associated profiles.
@@ -287,7 +291,7 @@ Generally, you have one report and one dataset per customer. If you have hundred
 
 #### Customizing and authoring content
 
-When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
+When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
 #### System-Managed identity
 
@@ -307,4 +311,4 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 >[Learn more about service principals](embed-service-principal.md)
 
 >[!div class="nextstepaction"]
->[Security white paper](/power-bi/guidance/whitepaper-powerbi-security)
+>[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)

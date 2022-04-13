@@ -1,13 +1,13 @@
 ---
 title: Roles in the new workspaces in Power BI
-description: Learn about the different roles in the new workspaces, and what people in each role can do.
+description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 04/05/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -41,7 +41,7 @@ Everyone in a user group gets the role you've assigned. If someone is in several
 | Feature apps on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
 | Manage dataset permissions.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |  |
 | Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |
-| Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
+| Create, edit, and delete content, such as reports, in the workspace.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
 | Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
 | Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
 | Copy a report.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |

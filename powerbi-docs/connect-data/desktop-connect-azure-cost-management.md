@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/03/2022
+ms.date: 03/30/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -101,7 +101,7 @@ Once you successfully authenticate, a **Navigator** window appears with the foll
 
 | **Table** | **Description** |
 | --- | --- |
-| **Balance summary** | Summary of the balance for Enterprise Agreements (EA). |
+| **Balance summary** | Summary of the balance for the current billing month for Enterprise Agreements (EA). |
 | **Billing events** | Event log of new invoices, credit purchases, etc. Microsoft Customer Agreement only. |
 | **Budgets** | Budget details to view actual costs or usage against existing budget targets. |
 | **Charges** | A month-level summary of Azure usage, Marketplace charges, and charges billed separately. Microsoft Customer Agreement only. |

@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/23/2022
+ms.date: 03/23/2022
 ---
 
 # Datasets permissions
@@ -42,24 +42,24 @@ The table below lists the four types of folder roles. It shows each role's level
 
 #### Get and add workspace permissions with APIs
 
-To get and add workspace permissions programmatically, you can use these APIs:
+To get and add workspace permissions programmatically, use these APIs:
 
 * [Groups - Add Group User](/rest/api/power-bi/groups/add-group-user) - A POST API for adding workspace permissions
 
 * [Groups - Update Group User](/rest/api/power-bi/groups/update-group-user) - A PUT API for changing workspace permissions
 
-*  [Groups - Get Group Users](/rest/api/power-bi/groups/get-group-users) - A GET API for getting workspace permissions
+* [Groups - Get Group Users](/rest/api/power-bi/groups/get-group-users) - A GET API for getting workspace permissions
 
 ### Item permissions
 
-Power BI items, such as reports, datasets, and dashboards have their own permissions. Item permissions cannot override workspace permissions, and can only be granted by someone who has at least the same permission level.
+Power BI items, such as reports, datasets, and dashboards have their own permissions. Item permissions can't override workspace permissions, and can only be granted by someone who has at least the same level of permission.
 
 ## Dataset permissions and REST APIs
 
-Dataset permissions are part of the [item permissions](#item-permissions). The table below lists  the Power BI dataset permissions and their representation in the [Power BI REST APIs](/rest/api/power-bi/).
+Dataset permissions are part of the [item permissions](#item-permissions). The table below lists the Power BI dataset permissions and their representation in the [Power BI REST APIs](/rest/api/power-bi/).
 
 >[!TIP]
->Although the API permissions are identical to the Power BI service permissions, [build](#build-permissions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
+>Although the API permissions are identical to the Power BI service permissions, [`build`](#build-permissions-and-rest-apis) permissions are referred to as *explore* permissions in the APIs.
 
 |Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
@@ -70,15 +70,15 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 |**Read**               |✔️       |❌      |❌       |
 
 >[!NOTE]
->To allow a user to perform write operations on a dataset, you need to change the [workspace permissions](#workspace-permissions).
+>To allow a user to perform write operations on a dataset, first change the [workspace permissions](#workspace-permissions).
 
 ### Build permissions and REST APIs
 
-In the [Power BI REST APIs](/rest/api/power-bi/), the build permission is returned as *explore*. For example, a string with the *read*, *reshare* and *build* permissions, will look like this: `ReadReshareExplore`.
+In the [Power BI REST APIs](/rest/api/power-bi/), the `build` permission is returned as *explore*. For example, a string with the *read*, *reshare* and *build* permissions, will look like this: `ReadReshareExplore`.
 
-When you give a user the build permission, the user can build new content on your dataset. Examples for such content are reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery.
+When you give a user `build` permission, they can build new content on your dataset. Examples of content they can build are reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery.
 
-Users also need build permissions to work with data outside Power BI:
+Users also need `build` permissions to work with data outside Power BI:
 
 * To export the underlying data.
 
@@ -88,31 +88,28 @@ Users also need build permissions to work with data outside Power BI:
 
 ### Row-level security
 
-When you add or change permissions on a dataset that uses row-level security (RLS), any permissions higher than build will enable the user to view all the data in the dataset. Build, and permissions lower than build, will let the dataset user have access only to the data they're allowed to see as configured in your RLS settings.
+For a dataset that uses row-level security (RLS), any permissions *higher* than `build` will enable the user to view all the data in the dataset. `Build`, and permissions lower than `build`, will only give the dataset user access to the data they're allowed to see as configured in your RLS settings.
 
-### Dataset APIs for changing permissions
+### Get and update dataset permissions with APIs
 
-To add permissions for using datasets, use the POST APIs listed below. Using these APIs, you can add dataset permissions to users that don't have any permissions for the specified dataset, or to users that have a lower permissions level. For example, you can add the *Reshare* permission to a user that has the *Read* permission. However, you cannot remove the *Reshare* permission from a user that has both *Read* and *Reshare* permissions, by attempting to add the *Read* permission.
+* POST APIs let you add new permissions to a dataset. You can use these APIs to add permissions for users but not to remove permissions. For example, you can add the `Reshare` permission to a user that has the `Read` permission. However, you can't remove the `Reshare` permission from a user that has both `Read` and `Reshare` permissions, by attempting to add the `Read` permission.
 
-* [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user)
+  * [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user)
+  * [Datasets - Post Dataset User In Group](/rest/api/power-bi/datasets/post-dataset-user-in-group)
 
-* [Datasets - Post Dataset User In Group](/rest/api/power-bi/datasets/post-dataset-user-in-group)
+* PUT APIs update the user’s permissions to a given dataset. The PUT API can't be used for changing write permissions or any folder level inherited permissions. This API also supports removing all permissions for a dataset for a given target.
 
-### Limitations
+  * [Datasets - Put Dataset User](/rest/api/power-bi/datasets/put-dataset-user)
+  * [Datasets - Put Dataset User In Group](/rest/api/power-bi/datasets/put-dataset-user-in-group)
 
-These limitations are relevant for the [Datasets - Post Dataset User](/rest/api/power-bi/datasets/post-dataset-user) and [Datasets - Post Dataset User In Group](/rest/api/power-bi/datasets/post-dataset-user-in-group) APIs.
+* GET APIs return a list of principals that have access to the specified dataset.
 
-* The API caller must have at least `ReadReshare` permissions on the dataset.
+  * [Datasets - Get Dataset Users](/rest/api/power-bi/datasets/get-dataset-users)
+  * [Datasets - Get Dataset Users In Group](/rest/api/power-bi/datasets/get-dataset-users-in-group)
 
-* The API caller cannot grant permissions that are higher than his permissions for the dataset.
+## Considerations and limitations
 
-* Write permissions cannot be granted.
-
-* These APIs only support datasets that were created in the [new workspace experience](/power-bi/collaborate-share/service-new-workspaces). Datasets that reside on the classic workspace are not supported.
-
-* These APIs only support users and groups. Service principals are not supported.
-
-* You cannot use these APIs to remove dataset permissions.
+Each of the above APIs comes with certain limitations regarding who can use them and how. To see the limitations of each API, select the link for that API.
 
 ## Next steps
 
