@@ -95,8 +95,7 @@ The following video describes each of these updates. You can also watch this vid
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-
-> [!VIDEO https://www.youtube.com/embed/RDy9B0MIbs4]
+[!VIDEO https://www.youtube.com/embed/RDy9B0MIbs4]
 
 
 ## More videos
