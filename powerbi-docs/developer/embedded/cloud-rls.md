@@ -7,7 +7,7 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/03/2022
+ms.date: 04/13/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
@@ -88,13 +88,20 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
     {
         PowerBIClient pbiClient = this.GetPowerBIClient();
 
-        // Create a request for getting an embed token
+       // Defines the user identity and roles.
+        var rlsIdentity = new EffectiveIdentity(
+            username: "France",
+            roles: new List<string>{ "CountryDynamic" },
+            datasets: new List<string>{ datasetId.ToString()}
+        );
+       
+        // Create a request for getting an embed token for the rls identity defined above
         // This method works only with new Power BI V2 workspace experience
         var tokenRequest = new GenerateTokenRequestV2(
             reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
             datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
             targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
-            identities: new List<EffectiveIdentity> { rls }
+            identities: new List<EffectiveIdentity> { rlsIdentity }
         );
 
         // Generate an embed token
