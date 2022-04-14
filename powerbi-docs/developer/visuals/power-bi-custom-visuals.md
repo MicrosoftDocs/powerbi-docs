@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 03/31/2022
+ms.date: 04/14/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -35,18 +35,16 @@ To restore the default Power BI visuals in the visualization pane, select the el
 
 ## AppSource Power BI visuals
 
-Many more Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or through Power BI. These visuals are created by Microsoft and Microsoft partners. They're tested and validated by the AppSource validation team.
+You can find many Power BI custom visuals available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). AppSource is the place for apps, add-ins, and extensions for your Microsoft software. It connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before.
 
-Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
+Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the AppSource. Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
 >[!NOTE]
 >
 > * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
 > * Once Power BI visuals from AppSource are imported, they may be updated automatically without any additional notice.
 
-### What is AppSource?
-
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before. You can find many Power BI custom visuals available in AppSource.
+### Download from AppSource
 
 Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with additional functionality available for purchase. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plans. Pricing information is also shown on the left pane.
 
@@ -58,39 +56,8 @@ After you *purchase* the licenses for the visual in AppSource with a credit card
 
 :::image type="content" source="media/power-bi-custom-visuals/assign-license.png" alt-text="Screenshot showing a link to the Admin center after purchasing a visual.":::
 
-For more information on how to assign licenses go to XXX.
-
-WHERE DOES UX THIS GO?
-
-License enforcement:
-
-If you try to render an unlicensed visual or a visual that you only have a partial license for, you may see one of the following icons:
-
-* If you have an unlicensed visual in your report during the free trial period, the visual will render with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
-
-  :::image type="content" source="media/power-bi-custom-visuals/unlicensed-icon.png" alt-text="Screenshot showing an unlicensed custom visual with the unlicensed user icon in the corner.":::
-
-* If you have a free version of the visual, when you are in edit mode, a banner will appear offering a link to upgrade your license. This banner will disappear after a while.
-
-  :::image type="content" source="media/power-bi-custom-visuals/upgrade-visual-banner.png" alt-text="Screenshot showing a banner offering to upgrade the visual license.":::
-
-* If you have a free version of the visual and try using a feature that is only available in the paid version, a banner will appear offering a link to upgrade your license.
-
-  :::image type="content" source="media/power-bi-custom-visuals/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the license.":::
-
-* If you have an unlicensed visual in your report, the visual will not render and a button will appear enabling you to get a license or contact the owner of the report.
-
-  :::image type="content" source="media/power-bi-custom-visuals/get-a-license.png" alt-text="Screenshot showing a button for getting a license or contacting owner.":::
-
-* If your report has a custom visual in it that is not supported in your environment, it won't render and a notification will appear.
-
-  :::image type="content" source="media/power-bi-custom-visuals/unsupported-environment.png" alt-text="Screenshot showing notification of an unsupported environment.":::
-
-Selecting the icon will take you to the AppSource page where you can buy the license or upgrade to the paid version.
-
-After you purchase and assign the license, you might have to refresh the visual or restart the Desktop, before the icon disappears.
-
-END OF UX
+For more information on how to assign licenses go to [XXX].
+To see how licenses are enforced, see [custom visual licenses](custom-visual-licenses.md)
 
 ### Certified Power BI visuals
 
@@ -98,7 +65,7 @@ Certified Power BI visuals are visuals in [AppSource](https://appsource.microsof
 
 To view the list of certified Power BI visuals, or to submit your own, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
 
-### Samples for Power BI visuals
+### Sample reports for Power BI visuals
 
 Each Power BI visual on AppSource has a sample report you can download that illustrates how the visual works. To download the sample report, in the [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) select a Power BI visual and select the **Download Sample** link.
 
