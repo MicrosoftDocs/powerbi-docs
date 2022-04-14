@@ -61,7 +61,7 @@ Users who are actively using the workspace are asked to refresh their browser. U
 ## Upgrade considerations and limitations
 
 - After upgrade, the content of the classic workspace appears in the new workspace. It's also listed in **Shared with me**.
-- The URLs and IDs of your workspace, the content it contains, and the app published from the workspace don't change. Content from content packs installed in your workspace is handled separately. See [Content packs during upgrade](#content-packs-during-upgrade) in this article for details.
+- The URLs and IDs of your workspace, the content it contains, and the apps published from the workspace don't change. Content from content packs installed in your workspace is handled separately. See [Content packs during upgrade](#content-packs-during-upgrade) in this article for details.
 - Content packs aren't supported in the new workspace experience. Read the sections about [published content packs](#published-content-packs) or [installed content packs](#installed-content-packs) to learn about how they're handled during upgrade. We recommend deleting content packs installed or published in your workspace before you upgrade.
 - The Microsoft 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Microsoft 365 aren't changed. They remain intact after you upgrade your Power BI workspace. The Microsoft 365 group continues to exist as before. Once upgraded, the workspaces are not directly associated with a Microsoft 365 group and can be deleted if needed.
 - There are changes to how your workspace is secured after the upgrade. See the [workspace permissions after upgrade](#permissions-after-upgrade) section for details.
@@ -215,8 +215,8 @@ To reduce the impact of maintaining empty classic workspaces that were automatic
 
 Additional notes on deletion of empty workspaces:
 
-1. Only empty v1 workspaces will be deleted during upgrade. Empty v2 workspaces will not be deleted. Deletion of empty workspaces can be prevented by using the tenant setting described previously in this article.
-2.	Office 365 groups associated with empty v1 workspaces will not be deleted.
+- Only empty v1 workspaces will be deleted during upgrade. Empty v2 workspaces will not be deleted. Deletion of empty workspaces can be prevented by using the tenant setting described previously in this article.
+- Office 365 groups associated with empty v1 workspaces will not be deleted.
 
    
 ## Known issues
