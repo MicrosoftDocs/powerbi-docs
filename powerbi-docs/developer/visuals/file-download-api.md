@@ -19,7 +19,7 @@ The **file download API** lets users download data from a custom visual into a f
 >[!NOTE]
 >The **file download API** is available from API version 4.5
 
-With the **file download API** a custom visual can export to files of the following types:
+The **file download API** can export to files of the following types:
 
 * .txt
 * .csv
@@ -44,7 +44,7 @@ The `exportVisualsContent` method has four parameters:
 
 ## Example: file download API
 
-Here's an example of how to downloads the content of a custom visual into an excel file and a text file.
+Here's an example of how to download the content of a custom visual into an excel file and a text file.
 
 ```typescript
 import IDownloadService = powerbi.extensibility.IDownloadService;
@@ -71,7 +71,7 @@ export class Visual implements IVisual {
 
 ## Considerations and limitations
 
-The size limit for a downloaded file size is 10MB.
+The size limit for a downloaded file size is 10 MB.
 
 ## Next steps
 
