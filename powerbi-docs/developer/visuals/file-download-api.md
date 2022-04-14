@@ -51,16 +51,16 @@ import IDownloadService = powerbi.extensibility.IDownloadService;
 ...
 
 export class Visual implements IVisual {
-       ...
-       private new_em: HTMLElement;
-       private static downloadService: IDownloadService;
-       ...
+    ...
+    private new_em: HTMLElement;
+    private static downloadService: IDownloadService;
+    ...
 
     constructor(options: VisualConstructorOptions) {
-        Visual.downloadService = options.host.downloadService;
-        ...
-        this.new_em.onclick = () => {
-                let contentXlsx: string = ...;//content in base64
+         Visual.downloadService = options.host.downloadService;
+         ...
+         this.new_em.onclick = () => {
+            let contentXlsx: string = ...;//content in base64
             Visual.downloadService.exportVisualsContent(contentXlsx, "myfile.xlsx", "base64","xlsx file");
 
             let contentTxt: string = ...;
