@@ -85,8 +85,6 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
-- Users need 'Build' permissions on all datasets in the chain to access a report that leverages this feature.
-
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Azure Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
@@ -94,7 +92,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
-- All connections to remote Power BI Datasets models are made using single sign-on.
+- All connections to remote Power BI Datasets models are made using single sign-on. Authenticating with [a service principal](../developer/embedded/embed-service-principal.md) is not currently supported.
 
 - For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 

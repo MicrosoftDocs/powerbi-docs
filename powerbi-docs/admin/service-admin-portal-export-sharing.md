@@ -157,9 +157,13 @@ Users in the organization can create email subscriptions. Learn more about [subs
 
 ## Featured content
 
-By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. New users will see that content in the the Featured section at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites & frequents**, and **Recents**. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for more information.
+By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for details.
 
-You can turn off the ability to feature content, and manage it in the Admin portal. See [Manage featured content](service-admin-portal-featured-content.md) in this article to read about controlling featured content in your domain.
+This setting enables you enable/disable the ability of users in your organization to promote their published content to the **Featured** section of the Power BI Home page.
+
+![Screenshot of featured content tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-featured-content-setting.png)
+
+Featured content can be managed on the **Featured content** page in the Admin portal. See [Manage featured content](service-admin-portal-featured-content.md).
 
 ## Allow connections to featured tables
 
