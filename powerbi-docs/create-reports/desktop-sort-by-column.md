@@ -1,6 +1,6 @@
 ---
 title: Sort one column by another column in Power BI
-description: hange the look of a Power BI visual by sorting it by different data fields. Use one column to define the sort order of another column.
+description: Change the look of a Power BI visual by sorting it by different data fields. Use one column to define the sort order of another column.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'sunaraya'
