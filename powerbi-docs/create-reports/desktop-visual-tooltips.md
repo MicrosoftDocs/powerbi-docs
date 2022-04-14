@@ -13,6 +13,8 @@ LocalizationGroup: Create reports
 
 # Create modern visual tooltips (preview)
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Example of a modern visual tooltip.":::
@@ -93,13 +95,19 @@ Here’s an example with the **Frontier** theme:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Example of a modern visual tooltip with the Frontier theme.":::
 
-To customize the styling further, you can update the **Tooltip** theme in the **Customize theme** dialog:
+To customize the styling further in Power BI Desktop, you can update the **Tooltip** theme in the **Customize theme** dialog:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-customize-theme.png" alt-text="Customize the tooltip theme in the Customize theme dialog.":::
 
 Additionally, you can format tooltips per visual by customizing the settings in the **Format** pane:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-format-pane.png" alt-text="Customize the tooltip in the Format pane.":::
+# [Power BI Desktop](#tab/powerbi-desktop)
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-visual-tooltip-format.png" alt-text="Customize the tooltip in the Format pane in Power B I Desktop.":::
+
+# [Power BI service](#tab/powerbi-service)
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-format-pane.png" alt-text="Customize the tooltip in the Format pane in the Power B I service.":::
+
+---
 
 ## Considerations and limitations
 
