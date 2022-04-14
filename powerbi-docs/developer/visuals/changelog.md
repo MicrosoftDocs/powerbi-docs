@@ -14,15 +14,6 @@ ms.date: 04/13/2022
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
-## API v4.5
-
-* [File downloads API]
-ETA - May 8, 2022
-
-## API v4.2
-
-* New flags in [expand/collapse](dataview-mappings.md#visual-requirements)
-
 ## API v3.8.0
 
 * Supports Desktop 2021 May and later.

@@ -3,11 +3,11 @@ title: Create modern visual tooltips (preview)
 description: Modern visual tooltips in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 04/05/2022
 LocalizationGroup: Create reports
 ---
 
@@ -107,10 +107,6 @@ Currently, drill actions aren't available in the tooltip for the following scena
 
 - Report page tooltips
 - AppSource visuals (custom visuals)
-- Matrix visuals
-- Line charts
-- Area charts
-- Stacked area charts
 - Decomposition trees
 
 We currently don't have visual-level control to turn on or off the drill actions for the tooltips. You can enable or disable this capability for a whole report.
