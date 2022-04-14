@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Power BI lets you visualize all sorts of data from various sources. When creating a visual, Power BI only shows relevant data to properly manage how data is presented and displayed. Power BI determines which data is relevant based on the configuration of the visual, and the underlying data model. This article describes how Power BI behaves when determining relevant data. We've also included some examples that show how determinations are made.
 
 ![How to enable the Show items with no data feature](media/desktop-show-items-no-data/show-items-no-data_02.png)
