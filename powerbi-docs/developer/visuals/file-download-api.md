@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/14/2022
 ---
 
 # File download API
@@ -28,6 +28,10 @@ With the **file download API** a custom visual can export to files of the follow
 * .xml
 * .pdf
 * .xlsx
+
+Before the download begins, a window will pop up asking to confirm that the visual is from a trusted source.
+
+:::image type="content" source="/media/file-download-api/custom-visual-download-confirm.png" alt-text="Screenshot asking to confirm download only if it is from a trusted source.":::
 
 ## How to use the file download API
 
@@ -66,6 +70,8 @@ export class Visual implements IVisual {
 ```
 
 ## Considerations and limitations
+
+The size limit for a downloaded file size is 10MB.
 
 ## Next steps
 
