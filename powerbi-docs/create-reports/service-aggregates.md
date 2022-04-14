@@ -60,13 +60,13 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
 1. Create a **Clustered column chart** that uses a measure and a category. In this example, we're using Units Sold by Product.  By default, Power BI creates a chart that sums the units sold (drag the measure into the **Value** well) for each product (drag the category into the **Axis** well).
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-   ![Screenshot of the chart in Power BI Desktop, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-desktop-aggregate-sum.png)
+    # [Power BI Desktop](#tab/powerbi-desktop)
+    ![Screenshot of the chart in Power BI Desktop, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-desktop-aggregate-sum.png)
 
-# [Power BI service](#tab/powerbi-service)
-   ![Screenshot of the chart, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-aggregate-sum.png)
+    # [Power BI service](#tab/powerbi-service)
+    ![Screenshot of the chart, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-aggregate-sum.png)
 
----
+    ---
 
 1. In the **Visualizations** pane, right-click the measure, and select the aggregate type you need. In this case, we're selecting **Average**. If you don't see the aggregation you need, see the [**Considerations and troubleshooting**](#considerations-and-troubleshooting) section.
 
