@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## April 2022 Update (2.103.661.0)
+## April 2022 Update (2.104.702.0)
 
 The Power BI team is showering us with features, updates, and a collection of growing capabilities this month that customers and users are sure to enjoy.
 
