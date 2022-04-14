@@ -75,7 +75,7 @@ Select the text and add a new name.
 
 ### Change the expand/collapse icon
 
-Hierarchy slicers have some other formatting options. You can change the expand/collapse icon from the default arrow to a plus/minus signs, or a caret.
+Hierarchy slicers have some other formatting options. You can change the expand/collapse icon from the default arrow to plus and minus signs, or a caret.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 1. Select the slicer, then select **Format**.
