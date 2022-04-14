@@ -3,8 +3,7 @@ title: Main sources for acquiring Power BI visuals
 description: This article describes the main ways of getting Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
-ms.reviewer: ""
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
