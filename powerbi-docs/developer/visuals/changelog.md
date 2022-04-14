@@ -17,7 +17,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v4.5
 
 * File downloads API
-ETA - May 8, 2022
+  ETA - May 8, 2022
 
 ## API v4.2
 
