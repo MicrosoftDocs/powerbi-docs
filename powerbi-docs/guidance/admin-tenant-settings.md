@@ -103,7 +103,7 @@ We also recommend you review [publish to web embed codes](https://app.powerbi.co
 
 You can restrict users from exporting data from dashboard tiles or report visuals.
 
-The **Export data** setting is enabled by default for the entire organization. It's found in the **Export and sharing settings** group.
+The **Export data** setting is enabled by default for the entire organization. It's found in the **Export and sharing settings** group. This setting doesn't affect custom visuals. Downloading from custom visuals is handled by the _Allow downloads from custom visuals_ setting.
 
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 

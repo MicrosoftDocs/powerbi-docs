@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/23/2022
+ms.date: 04/11/2022
 ---
 
 # Add a landing page to your Power BI visual
@@ -65,7 +65,7 @@ export class BarChart implements IVisual {
     }
 
     private HandleLandingPage(options: VisualUpdateOptions) {
-        if(!options.dataViews || !options.dataViews.length) {
+        if(!options.dataViews || !options.dataViews[0]?.metadata?.columns?.length){
             if(!this.isLandingPageOn) {
                 this.isLandingPageOn = true;
                 const SampleLandingPage: Element = this.createSampleLandingPage(); //create a landing page

@@ -40,6 +40,8 @@
       href: embedded-performance-best-practices.md
     - name: "Service principal profiles for multi-customer solutions"
       href: embed-multi-tenancy.md
+    - name: "Migrate to service principal profiles"
+      href: migration-to-sp-profiles.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
@@ -94,7 +96,7 @@
       href: embedded-row-level-security.md
     - name: "Embed a report with cloud-based RLS"
       href: cloud-rls.md
-    - name: "Paginated reports Row-level security"
+    - name: "RLS in embedded paginated reports"
       href: paginated-reports-row-level-security.md
   - name: Reference
     items:
