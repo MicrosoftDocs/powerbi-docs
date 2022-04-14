@@ -72,6 +72,8 @@ Each Power BI visual on AppSource has a sample report you can download that illu
 
 Power BI admins can approve and deploy Power BI custom visuals for their organization. Report authors can easily discover, update, and use these Power BI visuals. Admins can easily manage these visuals with actions such as updating versions, disabling and enabling Power BI visuals.
 
+:::image type="content" source="media/power-bi-custom-visuals/download-sample-report.png" alt-text="Screenshot of the AppSource download sample report button.":::
+
 To access the organizational store, in the *Visualization* pane select the ellipsis, then select **Get more visuals**.
 
 :::image type="content" source="media/power-bi-custom-visuals/get-more.png" alt-text="Screenshot of the Power B I visualization pane get more visuals option.":::
