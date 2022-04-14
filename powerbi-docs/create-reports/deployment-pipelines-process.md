@@ -136,6 +136,8 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 * Dataflows
 
+* Datamarts (sensitivity labels are not supported for datamarts)
+
 * Dashboards
 
 * Paginated reports

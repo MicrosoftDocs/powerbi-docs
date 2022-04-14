@@ -310,6 +310,18 @@ sections:
         answer: |
           After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
 
+  - name: Datamarts
+    questions:
+      - question: |
+          Where is my datamart's dataset?
+        answer: |
+          Deployment pipelines doesn't display datasets that belong to datamarts in the pipeline stages. When deploying a datamart, its dataset is also deployed. You can view your datamart's dataset in the workspace of the stage it's in. 
+
+      - question: |
+          Why can't I deploy a datamart in the pipeline?
+        answer: |
+          To deploy a datamat you must be the owner of the datamart.
+
   - name: Permissions
     questions:
       - question: |
