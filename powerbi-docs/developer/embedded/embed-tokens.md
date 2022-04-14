@@ -41,7 +41,7 @@ For more information, see [Considerations when generating an embed token](genera
 
 ## Authentication flows
 
-This section describes the different authentication flows for the [*embed for your customers*](#embed-for-your-customers) and [*embed for your organization*](#embed-for-your-organization) embedding solutions.
+This section describes the different authentication flows for the *embed for your customers* and *embed for your organization* embedding solutions.
 
 ### [Embed for your customers](#tab/embed-for-customers)
 
