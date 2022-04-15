@@ -27,7 +27,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 1. On the dashboard, select the **Ask a question about your data** Q&A question box.   Notice that Q&A is already being helpful by displaying some suggested questions.
 2. To create a featured question, in the top-right corner of Power BI, select the **More options** ellipsis, point to **Settings**, and select **Settings**.  
 
-   ![Power BI gear icon.](media/service-q-and-a-create-featured-questions/gear-icon.png)
+   ![Power B I gear icon.](media/service-q-and-a-create-featured-questions/gear-icon.png)
 3. Select **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A questions**.  
 4. Select **Add a question**.
    
@@ -38,7 +38,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
    
 6. Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&A question box.
 
-   ![Q&A question box in Power BI dashboard.](media/service-q-and-a-create-featured-questions/ask-question.png)
+   ![Q&A question box in Power B I dashboard.](media/service-q-and-a-create-featured-questions/ask-question.png)
    
 7. The Q&A screen appears, with the new featured question, **show last year sales by territory as filled map** showing. Select the featured question.
 
