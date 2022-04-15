@@ -35,10 +35,10 @@ After you've enabled the feature, you can drag and drop the date or time field t
 2. Select the **Slicer** visualization type.
 
    # [Power BI Desktop](#tab/powerbi-desktop)
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in Power B I Desktop.":::
 
    # [Power BI service](#tab/powerbi-service)
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in the Power B I service.":::
 
    ---
 
