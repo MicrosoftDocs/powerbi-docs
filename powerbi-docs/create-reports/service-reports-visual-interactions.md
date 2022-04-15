@@ -51,11 +51,11 @@ If you have edit permissions to a report, you can turn on the visual interaction
 
    ---
 
-3. To display the visualization interaction controls, select **Edit interactions**.
+3. Power BI adds filter and highlight icons to all of the other visualizations on the report page. 
 
    ![report with Visual interactions turned on](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
-   Power BI adds filter and highlight icons to all of the other visualizations on the report page. We can see that the tree map is cross-filtering the line chart and the map, and is cross-highlighting the column chart. You can now change how the selected visualization interacts with the other visualizations on the report page.
+   We can see that the tree map is cross-filtering the line chart and the map, and is cross-highlighting the column chart. You can now change how the selected visualization interacts with the other visualizations on the report page.
 
 ## Change the interaction behavior
 Get familiar with how your visualizations interact by selecting each visualization on your report page, one at a time.  Select a data point or a bar or a shape and watch the impact on the other visualizations. If the behavior you see is not what you'd prefer, you can change the interactions. These changes are saved with the report, so you and your report consumers will have the same visual interaction experience.
