@@ -18,7 +18,8 @@ In this article, you learn about publishing a paginated report to the Power BI s
 
 ## Requirements
 
-- A [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- Either a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license and write access to a workspace in a Power BI Premium capacity.
+- Or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
 - If your report data source is on premises, you need to install a gateway. Read more about [on-premises gateways](../connect-data/service-gateway-onprem.md). After you upload the report, you connect to the on-premises data source by using the gateway.
 
 ## Add a workspace to a Premium capacity
