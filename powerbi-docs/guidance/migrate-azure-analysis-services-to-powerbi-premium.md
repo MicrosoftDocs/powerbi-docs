@@ -69,7 +69,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 |Scale limits per data model instead of per server|No|Yes|
 |CPU smoothing for refresh resiliency|No|Yes|
 |[Autoscale](../enterprise/service-premium-auto-scale.md), which automatically adds compute capacity to avoid slowdowns under heavy use|No|Yes|
-|[Business continuity and disaster recovery (BCDR)](../admin/service-admin-failover.md) with Azure regions and availability zones|No|Yes|
+|[Business continuity and disaster recovery (BCDR)](../enterprise/service-admin-failover.md) with Azure regions and availability zones|No|Yes|
 |***Interactive analysis over big data***|||
 |[Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression)|Yes|Yes|
 |Hybrid tables, which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables|No|Yes <sup>1</sup>|
@@ -80,7 +80,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 |[BYOK](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud|No|Yes|
 |[VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in a company's VNet|No|Yes <sup>1</sup>|
 |[Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI|No|Yes|
-|[Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources#single-sign-on-sso-for-directquery-sources.md), which allows connecting to data sources by using the report user's identity|No|Yes|
+|[Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity|No|Yes|
 |[Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts data access for specific users|Yes|Yes|
 |[Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to tables and columns for specific users|Yes|Yes|
 |[Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges|Yes|No <sup>3</sup> |
@@ -101,7 +101,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 |[Backup and restore](../enterprise/service-premium-backup-restore-dataset.md)|Yes|Yes|
 |[Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads|No|Yes|
 |[Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties|Yes|No <sup>2</sup>|
-|[Alias server names](https://docs.microsoft.com/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias|Yes|No|
+|[Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias|Yes|No|
 |XMLA endpoint enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps.|Yes|Yes|
 |[XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity by using management tools, including SQL Server Management Studio (SSMS), SQL Server Data Tools (SSDT), and community tools such as Tabular Editor, DAX Studio, and ALM Toolkit|Yes|Yes|
 |***Connectivity***|||
@@ -113,7 +113,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 |[Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies|No|Yes|
 |***Monitoring and diagnostic logging***|||
 |[Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities|No|Yes|
-|[Power BI audit log](../admin/service-admin-auditing#use-the-audit-log.md), which tracks user activities across Power BI and Microsoft 365|No|Yes|
+|[Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365|No|Yes|
 |[Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection to their Power BI subscription|Yes|Yes <sup>1</sup>|
 |XMLA endpoint, which allows diagnostic logging tool connections, including SQL Server Profiler|Yes|Yes|
 |[SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues|Yes|No|
@@ -262,7 +262,7 @@ Some [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-mo
 
 You can use the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) AAS cmdlets to automate dataset management tasks, including refresh operations. For more information, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference).
 
-However, the [Az.AnalysisServices module](https://www.powershellgallery.com/packages/Az.AnalysisServices/) AAS cmdlets aren't supported for Power BI datasets. Instead, use the [Microsoft Power BI Cmdlets for Windows PowerShell and PowerShell Core](/powershell/power-bi/overview?view=powerbi-ps).
+However, the [Az.AnalysisServices module](https://www.powershellgallery.com/packages/Az.AnalysisServices/) AAS cmdlets aren't supported for Power BI datasets. Instead, use the [Microsoft Power BI Cmdlets for Windows PowerShell and PowerShell Core](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true).
 
 ### Diagnostic logging
 
