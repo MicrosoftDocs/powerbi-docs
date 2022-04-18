@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 When Power BI Desktop creates visuals, it aggregates your data into chunks (or groups) based on values found in the underlying data. Often that's fine, but there may be times when you want to refine how those chunks are presented. For example, you might want to place three categories of products in one larger category (one *group*). Or, you might want to see sales figures put into bin-sizes of 1,000,000 dollars, instead of chunks of 923,983-dollar sizes.
 
-In Power BI Desktop, you can *group* data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualized data in ways that are meaningful. This action is often called *binning*.
+In Power BI Desktop, you can *group* data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualize data in ways that are meaningful. This action is often called *binning*.
 
 ## Using grouping
 To use grouping, select two or more elements on a visual by using Ctrl+click to select multiple elements. Then right-click one of the multiple selection elements and choose **Group data** from the context menu.
