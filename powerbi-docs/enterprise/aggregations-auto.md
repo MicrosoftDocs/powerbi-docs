@@ -18,7 +18,7 @@ With automatic aggregations:
 
 - Report visualizations are faster - An optimal percentage of report queries are returned by an automatically maintained in-memory aggregations cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source using DirectQuery.
 - Balanced architecture - When compared to pure DirectQuery mode, most query results are returned by the Power BI query engine and in-memory aggregations cache. Query processing load on data source systems at peak reporting times can be significantly reduced, which means increased scalability in the data source backend.
-- Easy setup - Dataset owners can enable automatic aggregations and schedule one or more refreshes for the dataset. With the first refresh, automatic aggregations take over and begin creating an aggregations framework and optimal aggregations. The system automatically tunes itself over time.
+- Easy setup - Dataset owners can enable automatic aggregations training and schedule one or more refreshes for the dataset. With the first training and refresh, automatic aggregations begins creating an aggregations framework and optimal aggregations. The system automatically tunes itself over time.
 - Fine-tuning – With a simple and intuitive user interface in the dataset settings, you can estimate the performance gains for a different percentage of queries returned from the in-memory aggregations cache and make adjustments for even greater gains. A single slide bar control helps you easily fine-tune for your environment.
 
 > [!IMPORTANT]
@@ -92,7 +92,7 @@ Regularly scheduled refreshes throughout the day (or week) ensure aggregations d
 
 #### Training on demand
 
-As mentioned earlier, a training cycle may not complete within the time limits of a single data refresh cycle. If you don’t want to wait until the next scheduled refresh cycle that includes training, you can also trigger automatic aggregations training on demand by clicking on *Train and Refresh Now* in dataset Settings. Note that *Train and Refresh Now* triggers both a training operation and a refresh operation. Check the dataset Refresh history to see if the current cycles is finsihed before launching additional training (and refresh) operations if necessary.
+As mentioned earlier, a training cycle may not complete within the time limits of a single data refresh cycle. If you don’t want to wait until the next scheduled refresh cycle that includes training, you can also trigger automatic aggregations training on-demand by clicking on **Train and Refresh Now** in dataset Settings. Using **Train and Refresh Now** triggers both a training operation and a refresh operation. Check the dataset Refresh history to see if the current operation is finished before running an additional on-demand training and refresh operation, if necessary.
 
 #### Refresh history
 

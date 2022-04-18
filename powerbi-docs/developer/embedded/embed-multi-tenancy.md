@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 04/13/2022
 ---
 
 # Service principal profiles in Power BI Embedded
@@ -24,6 +24,10 @@ The ISV application [service principal](pbi-glossary.md#service-principal) creat
 Using service principal profiles enables the ISV application to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
  :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multi-tenancy.":::
+
+>[!NOTE]
+>This article is aimed at organizations that want to set up a multi-customer app using service principal profiles.
+>If your organization already has an app that supports multiple customers from a single Power BI tenant, and you want to migrate to the service principal profile model, see [Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -104,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](../../consumer/end-user-workspaces.md#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -119,7 +123,7 @@ Each profile needs to:
   }
   ```
 
-Read more about [Power BI workspaces]( ../../consumer/end-user-workspaces.md).
+Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
 
 ## Import reports and datasets
 
@@ -135,7 +139,7 @@ Fiddler-Encoding: base64
 LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
 ```
 
-Use [dataset parameters](/rest/api/power-bi/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
+Use [dataset parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to create a dataset that can connect to different customers' data sources.
 Then, use the *Update parameters* API to define which customers' data the dataset connects to.
 
 ## Set the dataset connection
@@ -151,15 +155,15 @@ In either case, you should end up with single-customer datasets (one dataset per
 
 If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
-* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to match the customer's database details.
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/updatedatasourcesingroup).
+* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
 
 ### A single multi-customer database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
-Create a report using [parameters](/rest/api/power-bi/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
+Create a report using [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to retrieve the relevant customer's data only.
 
 ## Embed a report
 
@@ -312,3 +316,6 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 >[!div class="nextstepaction"]
 >[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+
+>[!div class="nextstepaction"]
+>[Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md)
