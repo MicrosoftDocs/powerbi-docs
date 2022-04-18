@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 04/18/2022
 ---
 
-# Embed a report page in PowerPoint
+# Install the Power BI PowerPoint add-in
 
 With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
 
