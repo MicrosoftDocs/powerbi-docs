@@ -71,6 +71,14 @@
         href: service-teams-analytics.md
       - name: "Get notifications in Teams"
         href: service-teams-notifications.md
+    - name: Power BI in PowerPoint
+      items: 
+      - name: "About the Power BI PowerPoint add-in"
+        href: service-power-bi-powerpoint-add-in-about.md
+      - name: "Install the Power BI PowerPoint add-in"
+        href: service-power-bi-powerpoint-add-in-install.md
+      - name: "Add a Power BI report page in PowerPoint"
+        href: service-power-bi-powerpoint-add-in-add-report.md
     - name: Publish and share your work
       items: 
       - name: "Share reports and dashboards"
@@ -87,8 +95,6 @@
         href: service-endorse-content.md
       - name: "Feature content on Home"
         href: service-featured-content.md
-      - name: "Embed a report page in PowerPoint"
-        href: service-embed-report-powerpoint.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
