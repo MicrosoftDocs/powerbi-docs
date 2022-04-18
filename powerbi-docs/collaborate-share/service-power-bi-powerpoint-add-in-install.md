@@ -1,6 +1,6 @@
 ---
-title: Embed a report page into PowerPoint
-description: With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
+title: Install the Power BI add-in in PowerPoint
+description: Learn how to install the Power BI PowerPoint add-in in a PowerPoint slide.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/07/2022
+ms.date: 04/18/2022
 ---
 
 # Embed a report page in PowerPoint
