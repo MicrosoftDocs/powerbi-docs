@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 04/18/2022
 ---
 
-# About the Power BI PowerPoint add-in
+# About the Power BI addPowerPoint add-in
 
 With the Power BI add-in for PowerPoint, you can easily add live, interactive data from Power BI to your PowerPoint presentations. Now you can present and use live, interactive data as an integral part of your presentation, without having to switch contexts. With live interactive data being part of your slides, your data will be up to date, and you'll be able to filter and drill down on data in real time in response to questions and feedback from your audience. You can also easily share your presentation with other team members in your meeting, enabling you to drive a true data-driven conversation.
 
