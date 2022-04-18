@@ -9,7 +9,7 @@ ms.date: 04/07/2022
 ms.custom: known-issue-165
 ---
 
-# Long running, failed or stuck dataflow in Premium Gen2 - known issue
+# Known issue - Long running, failed or stuck dataflow in Premium Gen2
 
 **APPLIES TO:** ✔️ Power BI Premium Gen2 Service ✔️ Power BI Dataflow
 
