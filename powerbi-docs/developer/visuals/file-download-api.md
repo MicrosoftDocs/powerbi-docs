@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ---
 
 # File download API
@@ -37,10 +37,10 @@ Before the download begins, a window will pop up asking to confirm that the visu
 
 The `exportVisualsContent` method has four parameters:
 
-* Content
-* Filename
-* fileType - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
-* XXX
+* content: string
+* filename: string
+* fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
+* fileDescription: string
 
 ## Example: file download API
 
