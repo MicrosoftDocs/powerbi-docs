@@ -14,13 +14,15 @@ ms.date: 04/18/2022
 
 # About the Power BI PowerPoint add-in
 
-With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
+With the Power BI add-in for PowerPoint, you can easily add live, interactive data from Power BI to your PowerPoint presentations. Now you can present and use live, interactive data as an integral part of your presentation, without having to switch contexts. With live interactive data being part of your slides, your data will be up to date, and you'll be able to filter and drill down on data in real time in response to questions and feedback from your audience. You can also easily share your presentation with other team members in your meeting, enabling you to drive a true data-driven conversation.
+
+[image that shows data being sliced and diced as part of a PowerPoint presentation]
 
 Report pages embedded into PowerPoint using the Power BI report add-in for PowerPoint respect all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
 
 ## Requirements
 
-To embed a Power BI report page into PowerPoint, the Power BI report add-in must be installed in PowerPoint. If it is not installed, see [Get the Power BI report add-in for PowerPoint](TBD).
+To use the Power BI add-in for PowerPoint, you must have access to the add-in store, or the add-in must have been made available for you by your administrator. add-in must be installed in PowerPoint. If it is not installed, see [Get the Power BI report add-in for PowerPoint](TBD).
 
 ## Embed your report page
 
