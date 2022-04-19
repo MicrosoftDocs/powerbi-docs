@@ -151,11 +151,13 @@ Use this setting to prevent report creators from publishing a large dataset that
 
 If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it. The dataset can also fail to load if it's larger than the Max Memory configured for the datasets workload.
 
-To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling doesn't apply to Power BI datasets that are optimized for large data sizes. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
+This setting is applicable for models in both small dataset storage format (ABF format) and large dataset storage format (PremiumFiles), although the offline size of the same model might differ when stored in one format vs another. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
 
-|                                               | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |
-|-----------------------------------------------|----------|----------|----------|---------|---------|---------|
-| **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied (see table below), regardless of the configured value. The additional SKU-specific hard ceiling in the below table does not apply to Power BI datasets stored in large dataset storage format.
+
+|                                               | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5  | P3/A6   | P4/A7  | P5/A8 |
+|-----------------------------------------------|----------|----------|----------|---------|--------|---------|--------|-------|
+| **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB  | 10 GB   | 10 GB  | 10 GB |
 
 ### Max Result Row Set Count
 
@@ -175,7 +177,7 @@ Data refresh operations may also execute DAX queries as part of refreshing the d
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
-|                                  | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 | P4/A7 | P5/A8 |
+|                                  | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5   | P3/A6   | P4/A7   | P5/A8   |
 |----------------------------------|----------|----------|----------|---------|---------|---------|---------|---------|
 | **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   | 10 GB   | 10 GB   |
 
