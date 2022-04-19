@@ -3,6 +3,7 @@ title: Known issue - Long running, failed or stuck dataflow in Premium Gen2
 description: A known issue is posted where you may encounter a long running, failed or stuck dataflow on Premium Gen2.
 author: mihart
 ms.author: mihart
+ms. reviewer: jeluitwi
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.date: 04/07/2022

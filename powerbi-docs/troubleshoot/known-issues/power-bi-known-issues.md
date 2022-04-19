@@ -30,6 +30,7 @@ Select the **Title** to view more information about that specific known issue.
 |  152      |  Publish Content                   |  [Uploading paginated report with same name fails](known-issue-152-uploading-paginated-report-with-same-name-fails.md)     |  April 4, 2022        |  Fixed: April 5, 2022 |
 |  151      |  Create and Author Data            |  [Unable to open protected Desktop file](known-issue-unable-open-protected-desktop-file.md)     |  March 13, 2022        |  Open |
 
+
 \* Fixed issues are removed after 46 days.
 
 ## Next steps
