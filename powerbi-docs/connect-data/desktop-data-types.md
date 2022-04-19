@@ -7,17 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/27/2021
+ms.date: 04/19/2022
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
-This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). 
+
+This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX).
 
 When you load data into Power BI Desktop, it will attempt to convert the data type of the source column into a data type that better supports more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop will convert the entire column of data to a Whole Number data type, which is better suited for storing integers.
 
 This concept is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
 
 ## Determine and specify a column’s data type
+
 In Power BI Desktop, you can determine and specify a column’s data type in the Power Query Editor, or in Data View or Report View:
 
 **Data types in Power Query Editor**
@@ -33,25 +35,30 @@ The Data Type drop down in Power Query Editor has two data types not currently p
 The **Binary** data type is not currently supported outside of the Power Query Editor. Inside the Power Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
 
 ### Number types
+
 Power BI Desktop supports three number types:
 
 **Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest precision that can be represented in a Decimal Number type is 15 digits long. The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers.
 
-> [!NOTE]
->  In certain situations, performing equality related comparisons (=, \< \>, \>= and \<=) between values with the *Decimal Number* data type may return unexpected results, and is most apparent when using the [RANKX function](/dax/rankx-function-dax): in some cases the results returned by RANKX are incorrect. Such incorrect results occur because values with data type *Decimal Number* are stored as IEEE Standard 754 floating point numbers and have inherent limitations in their precision. To avoid unexpected results, change the data type to *Fixed Decimal Number* (described in the following paragraph) or do a forced rounding using [ROUND](/dax/round-function-dax).
-> 
->
-
-**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative).  The Fixed Decimal Number type is useful in cases where rounding might introduce errors.  When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off.  Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors.   If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot. 
+**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative). The Fixed Decimal Number type is useful in cases where rounding might introduce errors. When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off. Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors. If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot.
 
 **Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,807 (-2^63+1) and 9,223,372,036,854,775,806 (2^63-2). It can represent the largest possible precision of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
 
 > [!NOTE]
->  The Power BI Desktop data model supports 64 bit integer values, but the largest number the visuals can safely express is 9,007,199,254,740,991 (2^53-1) due to JavaScript limitations. If you work with numbers in your data model above this, you can reduce the size through calculations before adding them to a visual 
+>  The Power BI Desktop data model supports 64 bit integer values, but the largest number the visuals can safely express is 9,007,199,254,740,991 (2^53-1) due to JavaScript limitations. If you work with numbers in your data model above this, you can reduce the size through calculations before adding them to a visual.
 > 
 >
 
+#### Ensuring accuracy of number type calculations
+
+Column values of **Decimal Number** data type are stored as *approximate* data types according to the IEEE 754 Standard for floating point numbers. Approximate data types have inherent limitations in their *precision* because instead of storing the exact value of a number, they may be stored as an extremely close, or rounded, approximation of it. This means that it's possible for precision loss, or *imprecision*, to occur if the number of floating point digits cannot be reliably quantified in the floating-point value. The potential for imprecision can appear as unexpected or inaccurate calculation results in some reporting scenarios.
+
+Calculations performing equality related comparisons (=, \< \>, \>= and \<=) between values of Decimal Number data type can potentially return unexpected results. This is most apparent when using the [RANKX function](/dax/rankx-function-dax) in a DAX expression where the result is calculated twice, resulting in slightly different numbers. The difference between the two numbers is not noticeable by the report user but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal Number** to either **Fixed Decimal Number** or **Whole Number**, or do a forced rounding using [ROUND](/dax/round-function-dax). The Fixed Decimal Number data type has greater precision because the decimal separator always has four digits to its right.
+
+While rare, calculations that sum the values of a column of Decimal Number data type can potentially return unexpected results. This is most likely with columns that have both a large amount of positive numbers and a large amount of negative numbers. The result of the sum is affected by the distribution of values across rows in the column. If the calculation required to return a query result sums most of the positive numbers before summing most of the negative numbers, the partial sum at the beginning can potentially lose precision as it can be skewed by the large positive partial sum. On the other hand, if a query happens to add balanced positive and negative numbers, the sum will retain more precision and therefore more accurate results are returned. To avoid unexpected results, you can change the column data type from **Decimal Number** to **Fixed Decimal Number** or **Whole Number**.
+
 ### Date/time types
+
 Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Time/Timezone and Duration are converted during load into the model. The Power BI Desktop data model only supports date/time, but they can be formatted as dates or times independently. 
 
 **Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  Dates between years 1900 and 9999 are supported.
