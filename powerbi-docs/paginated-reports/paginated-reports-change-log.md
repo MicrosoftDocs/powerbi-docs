@@ -24,7 +24,7 @@ Version 15.7.1797.84, released April 13, 2022
 
 ### Features
 
-- All supposed languages are now included in the installer. Language is selected based on current Windows locale setting.
+- All supported languages are now included in the installer. Language is selected based on current Windows locale setting.
  
 ### Bug fixes 
 
