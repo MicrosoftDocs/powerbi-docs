@@ -10,7 +10,7 @@ ms.date: 04/07/2022
 ms.custom: known-issue-165
 ---
 
-# Long running, failed or stuck dataflow in Premium Gen2 - known issue
+# Known issue - Long running, failed or stuck dataflow in Premium Gen2
 
 **APPLIES TO:** ✔️ Power BI Premium Gen2 Service ✔️ Power BI Dataflow
 
@@ -34,7 +34,7 @@ Refreshing a dataflow will have either one of the following symptoms:
 
 The Power BI team is working to continually improve dataflow reliability. As part of that, the team is working on several efforts that will be available in the months ahead.
 
-It's also recommended to follow the suggestions within [Best practices for designing and developing complex dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows). You can also review refresh schedules and potentially move refresh times around to help avoid contention that leads to these issues.
+It's also recommended to follow the suggestions within  [Best practices for designing and developing complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows). You can also review refresh schedules and potentially move refresh times around to help avoid contention that leads to these issues.
 
 As a last resource, you can try swapping the workspace out of Premium to Pro and wait a few minutes. Then switch the workspace back to Premium. This solution may help to provide relief, but the issue could reoccur.
 
