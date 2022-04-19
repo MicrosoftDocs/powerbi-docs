@@ -70,7 +70,7 @@ The four options, together with their shorthand notations, are described in the 
 
 When you create a relationship in Power BI Desktop, the designer automatically detects and sets the cardinality type. Power BI Desktop queries the model to know which columns contain unique values. For import models, it uses internal storage statistics; for DirectQuery models it sends profiling queries to the data source. Sometimes, however, Power BI Desktop can get it wrong. It can get it wrong when tables are yet to be loaded with data, or because columns that you expect to contain duplicate values currently contain unique values. In either case, you can update the cardinality type as long as any "one" side columns contain unique values (or the table is yet to be loaded with rows of data).
 
-#### One-to-many and many-to-many cardinality
+#### One-to-many (and many-to-one) cardinality
 
 The **one-to-many** and **many-to-one** cardinality options are essentially the same, and they're also the most common cardinality types.
 
