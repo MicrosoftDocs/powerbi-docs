@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 01/16/2022
+ms.date: 04/20/2022
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -100,7 +100,6 @@ The second column represents a *business user*.  A business user:
 |  Q&A: use on dashboard  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 |Q&A: add featured and saved questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Q&A: review asked questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |  
-|Performance inspector |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Pin tiles from Q&A or reports | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
 |Print |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 |Refresh | ![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) | 

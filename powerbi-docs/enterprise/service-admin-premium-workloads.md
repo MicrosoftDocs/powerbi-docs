@@ -153,7 +153,7 @@ If you have an existing dataset that is larger than the size you specify for thi
 
 This setting is applicable for models in both small dataset storage format (ABF format) and large dataset storage format (PremiumFiles), although the offline size of the same model might differ when stored in one format vs another. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
 
-To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied (see table below), regardless of the configured value. The additional SKU-specific hard ceiling in the below table does not apply to Power BI datasets stored in large dataset storage format.
+To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. The additional SKU-specific hard ceiling in the below table does not apply to Power BI datasets stored in large dataset storage format.
 
 |                                               | EM1/A1   | EM2/A2   | EM3/A3   | P1/A4   | P2/A5  | P3/A6   | P4/A7  | P5/A8 |
 |-----------------------------------------------|----------|----------|----------|---------|--------|---------|--------|-------|
