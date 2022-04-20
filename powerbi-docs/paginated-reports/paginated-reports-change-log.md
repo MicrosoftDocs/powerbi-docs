@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/13/2021
+ms.date: 04/18/2021
 ---
 
 # Power BI Report Builder change log
@@ -22,9 +22,13 @@ Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com
 
 Version 15.7.1797.84, released April 13, 2022
 
+### Features
+
+- All supported languages are now included in the installer. Language is selected based on current Windows locale setting.
+ 
 ### Bug fixes 
 
-- Accessiblity fixes mostly focused on better Microsoft Narrator support.
+- Accessibility fixes mostly focused on better Microsoft Narrator support.
 - Minor telemetry changes.
 
 ## December 2021 
