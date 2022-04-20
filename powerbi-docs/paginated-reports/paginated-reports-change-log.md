@@ -28,7 +28,7 @@ Version 15.7.1797.84, released April 13, 2022
  
 ### Bug fixes 
 
-- Accessiblity fixes mostly focused on better Microsoft Narrator support.
+- Accessibility fixes mostly focused on better Microsoft Narrator support.
 - Minor telemetry changes.
 
 ## December 2021 
