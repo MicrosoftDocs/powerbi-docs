@@ -14,15 +14,14 @@ ms.date: 04/20/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or debug data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (dataset) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
+This usage scenario focuses on *advanced data model management*, which is when a Power BI content creator relies on a third-party tool to develop, manage, or optimize data models. Some third-party tools are *[external tools](../transform-model/desktop-external-tools.md)*, which Power BI Desktop supports directly. You can also manage a published a data model (dataset) by communicating directly with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) in the Power BI service.
 
-> [!NOTE]
-> Data models are hosted in either the Power BI service, Azure Analysis Services (AAS), or SQL Server Analysis Services (SSAS). This usage scenario focuses on using the XMLA endpoint in the Power BI service.
+Data models are hosted in either the Power BI service, Azure Analysis Services (AAS), or SQL Server Analysis Services (SSAS). This usage scenario focuses on using the XMLA endpoint in the Power BI service.
 
 > [!TIP]
 > Many people refer to third-party tools as *external tools*. However, there are distinctions in how different tools may be used. Connecting to a local data model in Power BI Desktop is the most literal interpretation of the term *external tool*. This advanced data model management usage scenario also focuses on connecting to a remote data model (a dataset hosted in the Power BI service) by using the XMLA endpoint. More details on the different ways to use third-party tools are described [later in this article](#third-party-applications-and-tools).
 
-You can achieve connectivity to a data model by using the *[XML for Analysis (XMLA)]([XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference))* protocol. The XMLA protocol is an industry standard protocol that's supported by more than 25 vendors, including Microsoft. All tools, including [third-party tools](../admin/service-premium-connect-tools.md#client-applications-and-tools), that are compliant with the XMLA protocol use Microsoft [client libraries](../admin/service-premium-connect-tools.md#client-libraries) to read and/or write data to a data model. Connectivity is achieved with an XMLA endpoint, which is an API exposed by a data model that broadens the development and management capabilities available to dataset creators.
+You can achieve connectivity to a data model by using the *[XML for Analysis (XMLA)](/analysis-services/xmla/xml-for-analysis-xmla-reference)* protocol. The XMLA protocol is an industry standard protocol that's supported by more than 25 vendors, including Microsoft. All tools, including [third-party tools](../admin/service-premium-connect-tools.md#client-applications-and-tools), that are compliant with the XMLA protocol use Microsoft [client libraries](../admin/service-premium-connect-tools.md#client-libraries) to read and/or write data to a data model. Connectivity is achieved with an XMLA endpoint, which is an API exposed by a data model that broadens the development and management capabilities available to dataset creators.
 
 > [!NOTE]
 > This advanced data model management usage scenario is one of the [content management and deployment](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios) scenarios. For a complete list of the self-service usage scenarios, see [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md).
@@ -39,9 +38,9 @@ The focus of this advanced data model management usage scenario is on using [Tab
 > [!NOTE]
 > Sometimes the terms *dataset* and *data model* are used interchangeably. Generally, from a Power BI service perspective, it's referred to as *dataset*. From a development perspective, it's referred to as a *data model* (or *model* for short). In this article, both terms have the same meaning. Similarly, a dataset creator and a data modeler have the same meaning.
 
-The following diagram depicts a high-level overview of the most common user actions and tools required to support advanced data model management.
+The following diagram depicts a high-level overview of the most common user actions and tools that can help you develop, manage, or optimize data models.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Image shows a diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 

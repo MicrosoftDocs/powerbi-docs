@@ -50,7 +50,7 @@ The focus of this advanced data preparation scenario is on:
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support the advanced data preparation scenario.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.png" alt-text="Image shows a diagram of advanced data preparation, which is about improving the reach and reusability of dataflows." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.png" alt-text="Diagram of advanced data preparation, which is about improving the reach and reusability of dataflows." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -147,7 +147,7 @@ The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-fea
 
 - Split out the staging and transformation dataflows.
 - Use the same workspace to store the staging and transformation dataflows.
-- Apply complex operations that can [query fold](/power-query/power-query-folding) early in the query steps. This approach will help to achieve the best refresh performance.
+- Apply complex operations that can [query fold](/power-query/power-query-folding) early in the query steps. Prioritizing foldable operations can help to achieve the best refresh performance.
 - Use [incremental refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) to reduce refresh durations and resource consumption.
 - Perform testing early and frequently during the development phase.
 
