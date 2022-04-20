@@ -38,7 +38,11 @@ The focus of this advanced data model management scenario is on use of [Tabular 
 > [!NOTE]
 > Sometimes the terms datasets and data models are used interchangeably. Generally, from a Power BI service perspective it's referred to as a dataset, and from a development perspective it's referred to as a model. In the context of our documentation, they mean much the same thing. Similarly, a dataset creator and a data modeler mean the same thing.
 
-The scenario diagram depicts a high-level overview of the most common user actions and tools involved to support advanced data model management.
+The following diagram depicts a high-level overview of the most common user actions and tools involved to support advanced data model management.
+
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Image shows a diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
+
+The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
@@ -46,7 +50,7 @@ The scenario diagram depicts a high-level overview of the most common user actio
 | ![Item 2.](media/common/icon-02-red-30x30.png) | The data model connects to data from one or more data sources. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Tabular Editor. Editing of Power Query (M) scripts is also supported. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creators publish the data model from Tabular Editor to the Power BI service by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) of the target workspace. |
-|! ![Item 5.](media/common/icon-05-red-30x30.png) | The model is published to a workspace dedicated to storing and securing shared datasets. Access to the workspace via the XMLA endpoint is only possible when the workspace [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Premium per user**, **Premium per capacity**, or **Embedded**. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | The model is published to a workspace dedicated to storing and securing shared datasets. Access to the workspace via the XMLA endpoint is only possible when the workspace [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Premium per user**, **Premium per capacity**, or **Embedded**. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Report creators create new reports using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to the shared dataset. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators develop reports in Power BI Desktop. Other than purposefully [separating reports from datasets](report-separate-from-model.md), content creators follow their typical report creation process. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | When ready, report creators publish their Power BI Desktop file to the Power BI service. |
