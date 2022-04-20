@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 04/20/2022
 ---
 
 # Power BI usage scenarios: Self-service content publishing
@@ -33,7 +33,7 @@ Using methodical and disciplined lifecycle management processes reduces errors, 
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support self-service content publishing. The focus is on use of a Power BI deployment pipeline for promoting content through development, test, and production workspaces.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Image shows a diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -56,6 +56,9 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 15.](media/common/icon-15-red-30x30.png) | Content viewers access the content using the production workspace or a Power BI app. |
 | ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required. |
 | ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces may be subject to stricter governance requirements than less critical content. |
+
+> [!TIP]
+> We recommend that you reviewing the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario as too. It builds upon concepts introduced in this scenario.
 
 ## Key points
 
@@ -145,4 +148,4 @@ The [activity log](../admin/service-admin-auditing.md) records user activities t
 
 ## Next steps
 
-For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
+In the next article in the series, learn about the [advanced data modeling](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
