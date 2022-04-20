@@ -50,7 +50,7 @@ The focus of this advanced data preparation scenario is on:
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support the advanced data preparation scenario.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.png" alt-text="Diagram of advanced data preparation, which is about improving the reach and reusability of dataflows." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.png" alt-text="Diagram of advanced data preparation, which is about improving the reach and reusability of dataflows. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 

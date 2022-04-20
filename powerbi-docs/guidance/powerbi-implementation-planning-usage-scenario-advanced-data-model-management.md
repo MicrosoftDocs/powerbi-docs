@@ -40,7 +40,7 @@ The focus of this advanced data model management usage scenario is on using [Tab
 
 The following diagram depicts a high-level overview of the most common user actions and tools that can help you develop, manage, or optimize data models.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
