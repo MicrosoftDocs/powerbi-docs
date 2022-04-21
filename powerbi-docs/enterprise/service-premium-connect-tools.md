@@ -109,7 +109,7 @@ B2B users must specify their organization UPN in tenant name. For example:
 > To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 > [!NOTE]
-> Because **My Workspace** is not assigned to a Premium capacity, you cannot connect to My Workspace through the XMLA endpoint.
+> Because [**My Workspace**](../consumer/end-user-workspaces.md#types-of-workspaces) workspaces are not assigned to a Premium capacity, connecting to a My Workspace or a My Workspace dataset by using the XMLA endpoint is not supported.
 
 ### To get the workspace connection URL
 
