@@ -57,7 +57,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 **ALM Toolkit** - An open-source schema compare tool for Power BI datasets, most often used for application lifecycle management (ALM) scenarios. Perform deployment across environments and retain incremental refresh historical data. Diff and merge metadata files, branches, and repos. Reuse common definitions between datasets. Read-only is required for query operations. Read-write is required for metadata operations. To learn more, see [alm-toolkit.com](http://alm-toolkit.com/).
 
-**Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Premium workspaces. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD. Read-only or read-write XMLA Endpoint is dependent on the operations.
+**Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Premium workspaces. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD. Read-only or read-write XMLA endpoint is dependent on the operations.
 
 ### Client libraries
 
@@ -71,7 +71,7 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA read-write
 
-By default, Premium capacity or Premium Per User dataset workloads have the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write.
+By default, Premium capacity or Premium Per User dataset workloads have the XMLA endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write.
 
 ### To enable read-write for a Premium capacity
 
@@ -79,7 +79,7 @@ By default, Premium capacity or Premium Per User dataset workloads have the XMLA
 1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > capacity name.
 1. Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**. The XMLA Endpoint setting applies to *all workspaces and datasets* assigned to the capacity.
 
-    ![Enable XMLA endpoint](media/service-premium-connect-tools/xmla-endpoint-enable.png)
+    ![Enable XMLA Endpoint](media/service-premium-connect-tools/xmla-endpoint-enable.png)
 
 ### To enable read-write for Premium Per User
 
@@ -109,7 +109,7 @@ B2B users must specify their organization UPN in tenant name. For example:
 > To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 > [!NOTE]
-> Because **My Workspace** is not assigned to a Premium capacity, you cannot connect to My Workspace through the XMLA Endpoint.
+> Because **My Workspace** is not assigned to a Premium capacity, you cannot connect to My Workspace through the XMLA endpoint.
 
 ### To get the workspace connection URL
 
@@ -145,7 +145,7 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 ### Unsupported datasets
 
-The following datasets aren't accessible by the XMLA endpoint. These datasets won't appear under the workspace in SSMS or in other tools:
+The following datasets aren't accessible by using the XMLA endpoint. These datasets won't appear under the workspace in SSMS or in other tools:
 
 - Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
@@ -159,7 +159,7 @@ Server name aliases, supported in Azure Analysis Services are not supported for 
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
 
