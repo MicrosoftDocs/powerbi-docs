@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/31/2022
+ms.date: 04/21/2022
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -108,6 +108,9 @@ B2B users must specify their organization UPN in tenant name. For example:
 > [!NOTE]
 > To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
+> [!NOTE]
+> Because **My Workspace** is not assigned to a Premium capacity, you cannot connect to My Workspace through the XMLA Endpoint.
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
@@ -147,6 +150,7 @@ The following datasets aren't accessible by the XMLA endpoint. These datasets wo
 - Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
+- Datasets in My Workspace.
 - Excel workbook datasets.
 
 ### Server/workspace alias
