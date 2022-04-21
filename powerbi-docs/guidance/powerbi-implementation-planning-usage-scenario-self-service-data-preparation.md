@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 04/20/2022
 ---
 
 # Power BI usage scenarios: Self-service data preparation
@@ -27,7 +27,7 @@ Dataflows are created by using [Power Query Online](https://powerquery.microsoft
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support self-service data preparation. The primary focus is on creating a dataflow in Power Query Online that becomes a source of data for multiple datasets. The goal is for many datasets to leverage the data preparation that's done once by the dataflow.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-inline.png" alt-text="Image shows a diagram of self-service data preparation, which is about dataflows for centralizing data cleansing and transformation work. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-inline.png" alt-text="Diagram of self-service data preparation, which is about dataflows for centralizing data cleansing and transformation work. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-data-preparation/usage-scenario-self-service-data-preparation-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -51,16 +51,19 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
 | ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
 
+> [!TIP]
+> We recommend that you review the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario too. It builds upon concepts introduced in this scenario.
+
 ## Key points
 
 The following are some key points to emphasize about the self-service data preparation scenario.
 
-### Power BI dataflows
+### Dataflows
 
-A [Power BI dataflow](../transform-model/dataflows/dataflows-create.md) comprises a collection of tables (previously called *entities*). All work to create a dataflow is done in [Power Query Online](https://powerquery.microsoft.com/) and is saved to a [workspace](../collaborate-share/service-new-workspaces.md).
+A [dataflow](../transform-model/dataflows/dataflows-create.md) comprises a collection of tables (also known as *entities*). All work to create a dataflow is done in [Power Query Online](https://powerquery.microsoft.com/). You can create dataflows in [multiple products](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365#dataflows-can-be-created-in-multiple-microsoft-products), including Power Apps, Dynamics 365 Customer Insights, and Power BI.
 
 > [!NOTE]
-> Dataflows cannot be created in personal workspaces.
+> You cannot create dataflows in a personal workspace in the Power BI service.
 
 ### Support dataset creators
 
@@ -90,10 +93,12 @@ When a dataset creator [connects to a dataflow](../transform-model/desktop-conne
 
 ### Dataflow advanced features
 
-Dataflows with Power BI Premium (via [capacity licensing or Premium Per User licensing](../transform-model/dataflows/dataflows-develop-solutions.md#solution)) can use [advanced features](../transform-model/dataflows/dataflows-premium-features.md). These features are extremely helpful for managing data in the enterprise (not depicted in the scenario diagram). There are many techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) for dataflow design that can take dataflows from self-service to enterprise-ready.
+There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user** or **Premium per capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
 
 > [!NOTE]
 > One of the [advanced features](../transform-model/dataflows/dataflows-premium-features.md) is incremental refresh for dataflows. Although incremental refresh for *datasets* is a Power BI Pro feature, incremental refresh for dataflows is a Premium feature.
+>
+> To learn more about dataflow advanced features, see the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
 
 ### Dataflow and dataset refresh
 
@@ -113,7 +118,7 @@ Here are some advantages of using the organization's data lake account:
 
 ### Tenant-level storage
 
-The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, a [workspace is set to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, you may [set workspaces to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 > [!IMPORTANT]
 > Setting [Azure connections](../admin/service-admin-portal-azure-connections.md) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
@@ -136,7 +141,9 @@ The data in an ADLS Gen2 account is stored in the *[Common Data Model (CDM) stru
 There are several advantages to publishing a dataflow to a [workspace](../collaborate-share/service-new-workspaces.md) that's separate from where the dependent datasets are stored. One advantage is clarity on who's responsible for managing which types of content (if you have different people handling different responsibilities). Another advantage is that specific workspace permissions can be assigned for each type of content.
 
 > [!NOTE]
-> Dataflows cannot be created in personal workspaces.
+> You cannot create dataflows in a personal workspace in the Power BI service.
+>
+> The [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario describes how to set up multiple workspaces to provide better flexibility when supporting enterprise-level self-service creators.
 
 ### Gateway setup
 
@@ -151,4 +158,4 @@ The [activity log](../admin/service-admin-auditing.md) records user activities t
 
 ## Next steps
 
-For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
+In the next article in the series, learn about the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.

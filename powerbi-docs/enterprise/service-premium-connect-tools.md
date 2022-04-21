@@ -307,4 +307,8 @@ To learn more, see [Auditing Power BI](../admin/service-admin-auditing.md).
 
 ## See also
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+For more information related to this article, check out the following resources:
+
+- [Power BI usage scenarios: Advanced data model management](../guidance/powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

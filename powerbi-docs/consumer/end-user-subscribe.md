@@ -1,6 +1,6 @@
 ---
-title: Subscribe to reports and dashboards
-description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
+title: Email subscriptions for Power BI reports and dashboards
+description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
 ms.reviewer: mibruhje
@@ -8,23 +8,27 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/02/2022
+ms.date: 04/08/2022
 LocalizationGroup: Common tasks
 ---
 
-# Subscribe to a report or dashboard in the Power BI service 
+# Email subscriptions for Power BI reports and dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+Subscribe yourself and others to Power BI reports, dashboards, and paginated reports. You'll receive an email on a schedule you set. The email will contain a snapshot and link to the report or dashboard. If you're a workspace administrator, learn how to manage subscriptions in your workspace, including how to take over subscriptions that are owned by others.
+
+## Subscribe to a report or dashboard in the Power BI service 
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-email-sent.png" alt-text="Email for subscription to a report.":::
 
+
 ## Requirements
 To create a subscription for yourself, you'll need either:
 
-- A Power BI Pro or Premium Per User (PPU) [license](end-user-license.md) or
+- A Power BI Pro or [Premium Per User (PPU) license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#email-subscriptions).
@@ -56,7 +60,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
     > To receive a subscription email only on certain days, select Weekly and then select the checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
-    - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after that.  
+    - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after the Scheduled Time.  
 
 1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
@@ -67,9 +71,9 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. 
 
-1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now**. This sends the email to you right away. It does NOT trigger a data refresh of the underlying dataset. 
+1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
-1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to After data refresh will only send an email after the first scheduled refresh on that day.  
+1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
     
     > [!NOTE]
@@ -78,29 +82,16 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscriptions-email.png)
    
-## Manage subscriptions
-Only you can manage the subscriptions you create. 
-Open the report and select **Subscribe** from the top menu again. In the lower-left corner of the subscriptions pane, select **Manage all subscriptions**. 
-
-Alternatively, select the gear icon from the header bar, then choose **Settings** and then select the **Subscriptions** tab.  
-
-All the subscriptions for the current workspace are displayed. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
-
-:::image type="content" source="./media/end-user-subscribe/power-bi-manage-subscriptions.png" alt-text="see all subscriptions in My Workspace":::
-
-To see all your subscriptions across all workspaces, navigate to **My workspace** and the select the gear icon, **Settings** and then the **Subscriptions** tab. 
-
 ## Subscribe others 
 
-To subscribe others to a report or dashboard, you’ll need:     
+To create a subscription for yourself, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
 
-- a Power BI Pro or [Premium Per User (PPU) license](../enterprise/service-premium-per-user-faq.yml)  
+- A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- the Contributor, Member or Admin role in the report's or dashboard’s workspace.   You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can subscribe other people, but they must also have a Power BI Pro or Premium Per User (PPU) license. 
+- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
-:::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
+    :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
@@ -108,11 +99,11 @@ When creating a subscription, you can add other email addresses in the same doma
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and do not support subscribing group aliases.  
 
-## Subscribe external users 
+### Subscribe external users 
 
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity.  
 
-- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
+- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
 - Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 
@@ -144,22 +135,71 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 
-- You may include a preview image of the report in the email body. This is optional, and may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
+- Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
 
 
-## Subscription controls and tracking for administrators 
+## Manage subscriptions
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. 
 
-Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal: 
+# [Creator](#tab/creator)
+
+### Subscriptions in a workspace
+
+To see all subscriptions that you own in a given workspace, start by selecting that workspace to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. This example shows all of your subscriptions for the workspace named **AdventureWorks Demo**.
+
+For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
+
+:::image type="content" source="media/end-user-subscribe/power-bi-non-admin-user.png" alt-text="Screenshot showing workspace with Subscriptions selected from the top.":::
+
+From here, you will see all subscriptions you have created in the currently selected workspace. For each subscription, Power BI displays the name you gave to the subscription, the name of the content you are subscribing to, and the content type. Search for subscriptions by keyword or filter by any of these fields. Select **Edit** to make changes to a subscription’s settings.   
+
+### Subscriptions across all workspaces
+
+To see all of your subscriptions, start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**.
+
+:::image type="content" source="media/end-user-subscribe/power-bi-settings.png" alt-text="Screenshot showing cog icon selected.":::
+
+
+:::image type="content" source="media/end-user-subscribe/power-bi-my-workspace.png" alt-text="Screenshot showing all subscriptions for a user.":::
+
+From here, you will see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the associated workspace, the name of the content you are subscribing to, and the content type. Select **Edit** to make changes to a subscription’s settings. 
+
+Alternately, another way to see all of your subscriptions across all workspaces is to open the **Subscriptions** pane from a dashboard or report in **My workspace**, and select **Manage all subscriptions**.   
+
+:::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
+
+
+# [Workspace admin](#tab/admin)
+
+Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+
+To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-view.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
+
+Users with the Admin role can also make edits or take over ownership of subscriptions that are not their own.  
+
+If, for example, the owner of a subscription is on vacation and a new recipient needs to be added to their subscription, an admin can do this by selecting **Edit** and making the necessary updates to the subscription. The owner of this subscription will receive an email notification that their workspace admin has made an edit.  
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-edit.png" alt-text="Screenshot showing a list of subscriptions with the pencil icon selected.":::
+
+Admins can also take over ownership of subscriptions in workspaces they manage. This is essential when the original owner leaves a team or an organization. When the admin completes the take over, the original owner receives an email and will no longer see this subscription in their list of subscriptions.
+
+:::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
+
+### Subscription controls and tracking for administrators 
+
+Power BI administrators have levers of control over subscriptions. 
 
 - [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
-- Enable all members of the organization or just specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
+- Enable all members of the organization, or just specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
 
 ### View subscription audit and activity logs 
 
-Power BI administrators can use the Power BI audit and activity logs to view details around subscriptions. These details include: 
+Power BI administrators can use the Power BI audit and activity logs to view details about subscriptions. These details include: 
 
 - Created by 
 - Creation date 
@@ -171,6 +211,8 @@ Power BI administrators can use the Power BI audit and activity logs to view det
 
 See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details. 
 
+
+---
 ## Considerations and limitations 
 
 For help with troubleshooting for the subscriptions feature, see [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).  
@@ -202,15 +244,5 @@ Email subscriptions do not support:
 
 ## Next steps
 
+[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml)   
 [Search for and sort content](end-user-search-sort.md)
-
-
-
-
-
- 
-
-
-
- 
-

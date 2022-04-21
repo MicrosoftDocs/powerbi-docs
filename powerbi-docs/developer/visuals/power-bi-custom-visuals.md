@@ -8,14 +8,14 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 03/28/2022
+ms.date: 04/07/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
 
 # What are custom visuals in Power BI and where can I get them?
 
-Power BI visuals come from three main sources:
+[Power BI visuals](../../visuals/power-bi-report-visualizations.md) come from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
 * You can [download or import](#appsource-power-bi-visuals) visuals from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
