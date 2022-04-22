@@ -111,8 +111,8 @@ A final dataflow represents the prepared output. Some additional transformations
 
 Computed tables are visible to data modelers that are granted the workspace **viewer** role. This table type is described in the [types of dataflow tables](#types-of-dataflow-tables) topic below.
 
-> [!TIP]
-> Data lakes  often have *zones*, like bronze, silver, and gold. The three types of dataflows represent a similar design pattern. To make the best possible data architecture decisions, give thought to who will maintain the data, the expected use of the data, and the skill level required by people accessing the data.
+> [!NOTE]
+> Data lakes often have *zones*, like bronze, silver, and gold. The three types of dataflows represent a similar design pattern. To make the best possible data architecture decisions, give thought to who will maintain the data, the expected use of the data, and the skill level required by people accessing the data.
 
 ### Workspaces for dataflows
 
@@ -120,8 +120,8 @@ If you were to create all dataflows in a single workspace, it would significantl
 
 The two types of workspaces shown in the scenario diagram include:
 
-- **Workspace 1:** It stores [centrally manage dataflows](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) (sometimes referred to as a *backend workspace*). It contains both the staging and transformation dataflows because they're managed by the same people. Dataflow creators are often from a centralized team, such as IT, BI, or the Center of Excellence. They should be assigned to either the workspace **admin**, **member**, or **contributor** role.
-- **Workspace 2:** Stores and delivers [the final dataflow output](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) to consumers of the data (sometimes referred to as a *user workspace*). Dataset creators are often self-service analysts, power users, or citizen data engineers. They should be assigned to the workspace **viewer** role because they only need to [consume the output](/power-query/dataflows/best-practices-reusing-dataflows#set-the-correct-access-levels-on-workspaces) of the final dataflow. To support dataset creators from various areas of the organization, you can create numerous workspaces like this one, based on use case and security needs.
+- **Workspace 1:** It stores [centrally managed dataflows](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) (sometimes referred to as a *backend workspace*). It contains both the staging and transformation dataflows because they're managed by the same people. Dataflow creators are often from a centralized team, such as IT, BI, or the Center of Excellence. They should be assigned to either the workspace **admin**, **member**, or **contributor** role.
+- **Workspace 2:** It stores and delivers [the final dataflow output](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) to consumers of the data (sometimes referred to as a *user workspace*). Dataset creators are often self-service analysts, power users, or citizen data engineers. They should be assigned to the workspace **viewer** role because they only need to [consume the output](/power-query/dataflows/best-practices-reusing-dataflows#set-the-correct-access-levels-on-workspaces) of the final dataflow. To support dataset creators from various areas of the organization, you can create numerous workspaces like this one, based on use case and security needs.
 
 > [!TIP]
 > We recommend reviewing ways to [support dataset creators](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md#support-dataset-creators) as described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario. It's important to understand that dataset creators can still use the full capabilities of Power Query within Power BI Desktop. They can choose to add query steps to further transform the dataflow data or merge the dataflow output with other sources.
@@ -130,11 +130,11 @@ The two types of workspaces shown in the scenario diagram include:
 
 Three types of dataflow tables (also known as *entities*) are depicted in the scenario diagram.
 
-- **Standard tables:** Queries an external data source, such as a database. In the scenario diagram, standard tables are depicted in the staging dataflow.
-- **[Linked tables](/power-query/dataflows/linked-entities):** Reference a table from another dataflow. A linked table doesn't duplicate the data. Rather, it allows the reuse of a standard table multiple times for multiple purposes. Linked tables aren't visible to workspace viewers since they inherit permissions from the original dataflow. In the scenario diagram, linked tables are depicted twice:
+- **Standard table:** Queries an external data source, such as a database. In the scenario diagram, standard tables are depicted in the staging dataflow.
+- **[Linked table](/power-query/dataflows/linked-entities):** References a table from another dataflow. A linked table doesn't duplicate the data. Rather, it allows the reuse of a standard table multiple times for multiple purposes. Linked tables aren't visible to workspace viewers since they inherit permissions from the original dataflow. In the scenario diagram, linked tables are depicted twice:
   - In the transformation dataflow for accessing the data in the staging dataflow.
   - In the final dataflow for accessing the data in the transformation dataflow.
-- **[Computed tables](/power-query/dataflows/computed-entities):** Perform additional computations by using a different dataflow as its source. Computed tables allow customizing the output as needed for individual use cases. In the scenario diagram, computed tables are depicted twice:
+- **[Computed table](/power-query/dataflows/computed-entities):** Performs additional computations by using a different dataflow as its source. Computed tables allow customizing the output as needed for individual use cases. In the scenario diagram, computed tables are depicted twice:
   - In the transformation dataflow for performing [common transformations](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#use-a-computed-entity-as-often-as-possible).
   - In the final dataflow for delivering output to dataset creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
 
@@ -197,4 +197,4 @@ The [activity log](../admin/service-admin-auditing.md) records user activities t
 
 ## Next steps
 
-For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](/powerbi-implementation-planning-usage-scenario-overview.md) article.
+For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
