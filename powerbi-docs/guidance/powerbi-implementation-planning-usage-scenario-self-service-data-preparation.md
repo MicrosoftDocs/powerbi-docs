@@ -63,14 +63,14 @@ The following are some key points to emphasize about the self-service data prepa
 A [dataflow](../transform-model/dataflows/dataflows-create.md) comprises a collection of tables (also known as *entities*). All work to create a dataflow is done in [Power Query Online](https://powerquery.microsoft.com/). You can create dataflows in [multiple products](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365#dataflows-can-be-created-in-multiple-microsoft-products), including Power Apps, Dynamics 365 Customer Insights, and Power BI.
 
 > [!NOTE]
-> You cannot create dataflows in a personal workspace in the Power BI service.
+> You can't create dataflows in a personal workspace in the Power BI service.
 
 ### Support dataset creators
 
 The scenario diagram depicts using a Power BI dataflow to provide prepared data to other self-service dataset creators.
 
 > [!NOTE]
-> Datasets use the dataflow as a data source. A report cannot connect directly to a dataflow.
+> Datasets use the dataflow as a data source. A report can't connect directly to a dataflow.
 
 Here are some advantages of using Power BI dataflows:
 
@@ -105,7 +105,7 @@ There are many design techniques, patterns, and best practices for dataflows tha
 As previously mentioned, a dataflow is a source of data for datasets. In most cases, multiple data refresh schedules are involved: one for the dataflow and one for each dataset. Alternatively, it's possible to use [DirectQuery from the dataset to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which is a Premium feature (not depicted in the scenario diagram).
 
 > [!NOTE]
-> There's a different type of dataflow called a [streaming dataflow](../transform-model/dataflows/dataflows-streaming.md) (not depicted in the scenario diagram). A streaming dataflow is one technique to achieve near real-time analytics in Power BI.
+> There's another type of dataflow called a [streaming dataflow](../transform-model/dataflows/dataflows-streaming.md) (not depicted in the scenario diagram). A streaming dataflow is a Power BI artifact to achieve real-time analytics. Streaming dataflows aren't included in the self-service data preparation scenario because they're not relevant.
 
 ### Azure Data Lake Storage Gen2
 
@@ -141,16 +141,21 @@ The data in an ADLS Gen2 account is stored in the *[Common Data Model (CDM) stru
 There are several advantages to publishing a dataflow to a [workspace](../collaborate-share/service-new-workspaces.md) that's separate from where the dependent datasets are stored. One advantage is clarity on who's responsible for managing which types of content (if you have different people handling different responsibilities). Another advantage is that specific workspace permissions can be assigned for each type of content.
 
 > [!NOTE]
-> You cannot create dataflows in a personal workspace in the Power BI service.
+> You can't create dataflows in a personal workspace in the Power BI service.
 >
 > The [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario describes how to set up multiple workspaces to provide better flexibility when supporting enterprise-level self-service creators.
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
+Typically, an [On-premises data gateway](/power-query/dataflows/using-dataflows-with-on-premises-data) is required for connecting to data sources that reside within a private organizational network or a virtual network.
 
-> [!NOTE]
-> For team, departmental, and enterprise BI scenarios, a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+A data gateway is required when:
+
+- Authoring a dataflow in Power Query Online that connects to private organizational data.
+- Refreshing a dataflow that connects to private organizational data.
+
+> [!TIP]
+> Dataflows require a centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode*. A gateway in *[personal mode](../connect-data/service-gateway-personal-mode.md)* isn't supported when working with dataflows.
 
 ### System oversight
 
