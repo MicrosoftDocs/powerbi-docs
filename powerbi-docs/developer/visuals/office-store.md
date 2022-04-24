@@ -24,7 +24,7 @@ Once you have created your Power BI visual, you may want to publish it to AppSou
 
 To submit your Power BI visual, you must be enrolled with [Partner Center](/partner-center/overview). If you're not yet enrolled, [Open a developer account in Partner Center](/azure/marketplace/create-account).
 
-## Preparing to submit your Power BI visual
+## Prepare to submit your Power BI visual
 
 Before submitting a Power BI visual to AppSource, ensure that it complies with the [Power BI visuals guidelines](guidelines-powerbi-visuals.md).
 
@@ -100,7 +100,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 10. In **Technical configuration**, upload your Power BI visual **PBIVIZ** file and the **PBIX** file.
     Select **Review and Publish** to publish your offer.
 
-## Tracking submission status and usage
+## Track submission status and usage
 
 You can review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
