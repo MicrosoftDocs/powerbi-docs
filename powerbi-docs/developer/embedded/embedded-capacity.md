@@ -12,20 +12,20 @@ ms.date: 03/26/2022
 
 # Capacity and SKUs in Power BI embedded analytics
 
-When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order to publish embedded Power BI content.
 
-Capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
+A capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
+>You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
 
 ## What is embedded analytics?
 
-Power BI embedded analytics includes two solutions:
+Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* *Power BI Embedded*  - Azure offering
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications.
 
-* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
+* Embedding Power BI is part of Microsoft Office's [*Power BI Premium*](#power-bi-premium). It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 ### Power BI Embedded
 
