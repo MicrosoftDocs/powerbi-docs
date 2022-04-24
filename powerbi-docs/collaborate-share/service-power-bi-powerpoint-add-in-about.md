@@ -25,7 +25,7 @@ Power BI data embedded into PowerPoint using the Power BI add-in for PowerPoint 
 * To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 * PowerPoint users must have a Power BI account to be able to view Power BI report pages that have been included in a presentation via the add-in.
 
-## Enable Open in PowerPoint options in Power BI
+## Open in PowerPoint options in Power BI
 
 No special Power BI configuration is required in order to load a Power BI report page into the Power BI add-in for PowerPoint. All you need is the report page URL. However, a Power BI administrator can enable **Open in PowerPoint** options in Power BI UI with the **Enable Power BI add-in for PowerPoint** tenant setting. See XXX for detail.  
 
