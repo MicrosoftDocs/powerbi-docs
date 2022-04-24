@@ -108,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](../../consumer/end-user-workspaces.md#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -123,7 +123,7 @@ Each profile needs to:
   }
   ```
 
-Read more about [Power BI workspaces]( ../../consumer/end-user-workspaces.md).
+Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
 
 ## Import reports and datasets
 
@@ -139,7 +139,7 @@ Fiddler-Encoding: base64
 LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
 ```
 
-Use [dataset parameters](/rest/api/power-bi/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
+Use [dataset parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to create a dataset that can connect to different customers' data sources.
 Then, use the *Update parameters* API to define which customers' data the dataset connects to.
 
 ## Set the dataset connection
@@ -155,15 +155,15 @@ In either case, you should end up with single-customer datasets (one dataset per
 
 If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
-* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to match the customer's database details.
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/updatedatasourcesingroup).
+* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
 
 ### A single multi-customer database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
-Create a report using [parameters](/rest/api/power-bi/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
+Create a report using [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to retrieve the relevant customer's data only.
 
 ## Embed a report
 

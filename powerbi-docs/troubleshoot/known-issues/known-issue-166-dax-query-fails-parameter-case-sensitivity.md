@@ -9,7 +9,7 @@ ms.date: 04/06/2022
 ms.custom: known-issue-166
 ---
 
-# Known issue - DAX query fails due to parameter case sensitivity - known issue
+# Known issue - DAX query fails due to parameter case sensitivity
 
 **APPLIES TO:** ✔️ Power BI Report Builder
 
