@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 02/14/2022
+ms.date: 04/24/2022
 ---
 
 # Understand the deployment process
@@ -136,7 +136,7 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 * Dataflows
 
-* Datamarts (sensitivity labels are not supported for datamarts)
+* Datamarts
 
 * Dashboards
 
@@ -404,6 +404,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * Downloading a PBIX file after deployment isn't supported.
 
+* When deploying a Power BI item for the first time, if another item in the target stage is similar in type (for example, if both files are reports) and has the same name, the deployment will fail.
+
 * For a list of workspace limitations, see the [workspace assignment limitations](deployment-pipelines-assign.md#limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
@@ -433,6 +435,12 @@ This section lists most of the limitations in deployment pipelines.
 * If a dataflow is being refreshed during deployment, the deployment will fail.
 
 * When comparing stages during dataflow refresh, the results are unpredictable.
+
+### Datamart limitations
+
+* Sensitivity labels are not supported for datamarts
+
+* To deploy a datamart, you need to be the datamart owner.
 
 ## Next steps
 

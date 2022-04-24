@@ -7,7 +7,7 @@ metadata:
   ms.topic: faq
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 11/09/2021
+  ms.date: 04/24/2022
 title: Deployment pipelines troubleshooting
 summary: Use this article to troubleshoot issues in deployment pipelines.
 
@@ -320,7 +320,7 @@ sections:
       - question: |
           Why can't I deploy a datamart in the pipeline?
         answer: |
-          To deploy a datamat you must be the owner of the datamart.
+          To deploy a datamart you must be the owner of the datamart.
 
   - name: Permissions
     questions:
