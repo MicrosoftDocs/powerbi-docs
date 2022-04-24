@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/29/2022
+ms.date: 04/21/2022
 ---
 
 # Export Power BI report to file
@@ -185,7 +185,6 @@ Only five pages of a report are processed concurrently. For example, if you're e
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* The number of Power BI exports is limited to 50 report pages per minute per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
