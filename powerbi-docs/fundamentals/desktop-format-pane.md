@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
@@ -142,12 +142,6 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
-
-## Matrix and table search improvements 
-
-To help adjust to new naming conventions in the Format pane, an alias for the renamed *conditional formatting* has been added, and is now called *cell elements* when using search.
-
-:::image type="content" source="media/desktop-format-pane/format-pane-cell-elements-alias.png" alt-text="Screenshot of alias for cell elements to help with search":::
 
 
 ## Consolidated outline settings for matrix and table
