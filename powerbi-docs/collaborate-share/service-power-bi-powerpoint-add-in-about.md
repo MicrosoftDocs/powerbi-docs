@@ -14,144 +14,37 @@ ms.date: 04/24/2022
 
 # About the Power BI add-in for PowerPoint
 
-The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means that the data shown in your presentation will always be up to date, and you'll be able to filter and drill down on data in real time in response to questions and feedback from your audience without having to switch contexts. You can also easily share your presentation with other team members in your meeting, enabling you to drive true data-driven conversations.
+The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means that the data shown in your presentation will always be up to date, and you'll be able to filter and drill down on data in real time in response to questions and feedback from your audience without having to switch contexts. You'll also be able to easily share your presentation with other team members in the meeting, enabling you to drive true data-driven conversations.
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/storytelling.gif)
+
+You can add report pages to PowerPoint presentations starting from either PowerPower or Power BI.  For Power BI to be used as the starting point, the Power BI add-in for PowerPoint functionality must be enabled in your organization. See XXX for detail.
 
 ## Requirements
 
 * To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
-* PowerPoint users must have a Power BI account to be able to view Power BI report pages that have been included in a presentation via the add-in.
+* To be able to view Power BI reports in PowerPoint, PowerPoint users must have a Power BI account and at least Viewer access to the report.
 
 ## Security
 
-Power BI data embedded into PowerPoint using the Power BI add-in for PowerPoint respects all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
+The Power BI data that you see in PowerPoint using the Power BI add-in remains in Power BI. No data is actually exported from Power BI. As such, the data respects all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
 
-## Enabling the add-in in Power BI
+## Power BI administrator considerations
 
-In PowerPoint, it is always possible to add a Power BI report page to a slide if you have the report page URL and access to the add-in.
+* By default, Power BI users can insert the add-in into a new PowerPoint presentation directly from Power BI. Power BI admins can disable this functionality by turning off the Enable Power BI add-in for PowerPoint tenant setting. See XXX for detail.
 
-By default, it is also possible to insert the add-in into PowerPoint directly from Power BI. Power BI admins can enable/disable this functionality. See XXX for detail.
+    >[!NOTE]
+    > Disabling this functionality in Power BI does not prevent people from adding Power BI report pages to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
+
+* Power BI entry points not available in sovereign and government. See Office documentation for documentations.
+
+* Automatic licensing - ref back auto licensing feature. 
 
 ## Next Steps
 
 * Add a Power BI report page to a PowerPoint slide
 * Use the Power BI add-in for PowerPoint
 
-## Embed your report page
-
-To embed a live Power BI report page into PowerPoint, you first need to [get the URL](#get-the-report-page-url) to the page URL. You then [paste the URL](#paste-the-report-page-url-into-the-powerpoint-add-in) into the Power BI report add-in in PowerPoint.
-
-### Get the report page URL
-
-There are three ways to get the report page URL:
-
-* Through the **Share** option
-* Through the **Export** option
-* From the browser's address bar
-
-These methods differ in whether or not they can preserve the report page's current state, and what permissions people who open the PowerPoint presentation will have for viewing the report. The table below summarizes the differences.
-
-| URL source | Supports inserting current state | Can users who open the presentation view the report? |
-|---------|---------|---------|
-| Share     | Yes        | Yes        |
-| Export     | Yes         |  Depends on the user's Power BI permissions |
-| Address bar     | No        |  Depends on the user's Power BI permissions |
-
-Use the **Share** option if you want to be sure that all users who open the presentation will be able to view the report.
-
-Choose how you want to get the report page URL.
-
-# [Share option](#tab/share)
-
-1. Open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
-
-1. Choose **Share**.
-
-    ![Screenshot of Power B I report Share option.](media/service-power-bi-powerpoint-add-in-about/share-report-option.png)
-
-1. Choose the permissions you want to grant and who you want to grant them to, as described in the [sharing reports documentation](service-share-dashboards#share-a-report-via-link). Click **Apply**.
-
-    ![Screenshot of Power B I report send link dialog.](media/service-power-bi-powerpoint-add-in-about/send-link-dialog.png)
-
-1. Check the **Include my changes** box if you want to share the report pages current state, and then select **PowerPoint**.
-
-    ![Screenshot of Power B I report include my changes checkbox.](media/service-power-bi-powerpoint-add-in-about/include-my-changes-checkbox.png)
-
-1. Copy the URL to paste into the Power BI PowerPoint add-in. Alternatively choose **Open in PowerPoint** to insert the report page directly into a new, blank PowerPoint presentation.
-
-    ![Screenshot of Power B I report copy link dialog.](media/service-power-bi-powerpoint-add-in-about/copy-link-dialog.png)
-
-Typically, the link generated by this method provides viewing access to the report.
-
-# [Export option](#tab/export)
-
-1. Open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
-
-1. Choose **Export > PowerPoint > Embed live data**.
-
-    ![Screenshot of Power B I report embed live data option.](media/service-power-bi-powerpoint-add-in-about/embed-live-data-option.png)
-
-1. Check the **Include page's current data and filter selections** box if you want to export the current state, and then copy the URL to paste into the Power BI PowerPoint add-in. Alternatively choose **Open in PowerPoint** to insert the report page directly into a new, blank PowerPoint presentation.
-
-    ![Screenshot of Power B I report embed live data dialog.](media/service-power-bi-powerpoint-add-in-about/embed-live-data-dialog.png)
-
-# [Browser address bar](#tab/addressbar)
-
-Open the report to the page you want to insert, copy the URL from the browser’s address bar, and then copy the URL to paste into the Power BI PowerPoint add-in.
-
-![Screenshot of Power B I report URL in browser address bar.](media/service-power-bi-powerpoint-add-in-about/report-page-url-address-bar.png)
-
----
-
-### Paste the report page URL into the PowerPoint add-in
-
-When you have the report page URL, paste it into the Power BI report add-in in PowerPoint.
-
-1. Open PowerPoint and navigate to the slide where you want to insert the report and select the Power BI add-in.
-
-    ![Screenshot of selecting the Power B I report add-in.](media/service-power-bi-powerpoint-add-in-about/select-power-bi-report-addin.png)
- 
-    If you don't see the add-in, see [Get the Power BI report add-in for PowerPoint](TBD).
-
-1. Paste the report page URL into the text box and then click **Insert**. The report will load into the add-in.
-
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-about/Animation.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
-
-## Working with the embedded report page
-
-When you first insert a report page into PowerPoint, the initial view is determined by the URL you used. This initial state is called the default view. As you work with the report, you can always restore the default view if you want to go back to it.
-
-You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
-
-You can interact with the report in both edit mode and presentation modes. The main difference between the two modes is that changes you make to a view in edit mode are persistent, whereas changes you make while in presentation mode are not persistent. This behavior is useful for preparing presentations, which will be discussed later. 
-
-In addition to the report data and visuals of the report itself, there are a number of controls and features that help you with your work.
-
-![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-about/embedded-report-page-controls1.png)
-
-### Common actions
-
-Common things you might want to do when viewing a report page in the add-in are described below. For more details and additional options, see the detailed descriptions of the menus and buttons.
-* **Interact with the report**: You can apply filters and slicers, select data points, and drill down on data just like you can in the Power BI service. See XXX for details about interacting with reports in Power BI.
-* **Refresh report page**: Choose Report actions menu > Refresh. Brings over the latest data from the Power BI service. Note: Does not initiate data update from the data source.
-* **Restore the original report view**: Choose Report actions menu > Reset. Returns the report page’s state to what it was when the page was originally inserted.
-* **Display report page as a static image**: Choose Add-in side menu > Display as static image. Turns the current state of the live report into a static image. Select again to restore the live view.
-* **Expand/collapse the filter pane**: Choose Report actions menu > Filter, or click the Show/hide filter pane.
-* **Reload the report page**: Choose Add-in site menu > Reload. Causes the report to reload. Use this option if you need to bring over non-data related changes to the report itself, such as the addition/deletion of visuals, etc. 
-* **Expand/collapse toolbar**: Choose Expand/collapse the toolbar button. Hiding the toolbar create more space for the report. This can be especially useful in presentation mode.
-
-### Preparing a presentation
-
-One of the main differences between edit mode and presentation mode is that in edit mode the current state of the report page is persistent, while it is not in presentation mode. This makes it possible to set up your desired view in edit mode and then start presenting (the presentation will start with the state you set up), While you are presenting you can interact with the report just as you would in the Power BI service. When you leave presentation mode, the report view returns to the state it was in when you entered presentation mode. This makes it easy to repeat the presentation multiple times without having to reconfigure the report view each time.
-
-### Report options
-
-| Option | Description |
-|---|---|
-|Filter|Shows or hides the filters pane, where you can filter your report, just like in the service. This option is present only if the page has filters defined.|
-|Refresh|Refreshes the report page with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources. It just gets the latest data from the Power BI service.|
-|Reset|Restores the state of the report page to the state it was in when first inserted into the PowerPoint presentation.|
 
 ## Next steps
 
