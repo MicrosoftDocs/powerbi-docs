@@ -60,7 +60,7 @@ Error messages within the Azure portal or the Power BI app registration page wil
 
 At least one user must be signed up for Power BI. If you don't see **Power BI Service** listed within the API list, no user is signed up for Power BI.
 
-### What is the difference between application object ID and principal object ID?
+### What's the difference between an application object ID and a principal object ID?
 
 When you register an Azure AD app, there are a two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
 
@@ -93,44 +93,6 @@ When you register an Azure AD app, there are a two parameters called *object ID*
 
     :::column-end:::
 :::row-end:::
-
-## REST API
-
-### API call returning 401
-
-A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
-
-### API call returning 403
-
-A 403 error can occur for any of the following reasons. A fiddler capture may be required to investigate further.
-
-* The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](/azure/power-bi-embedded/create-capacity).
-* The Azure AD auth token expired.
-* The authenticated user isn't a member of the group (workspace).
-* The authenticated user isn't an admin of the group (workspace).
-* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
-* The authorization header may not be listed correctly. Make sure there are no typos.
-
-The backend of the application may need to refresh the auth token before calling GenerateToken. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
-
-```console
-GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-Host: wabi-us-north-central-redirect.analysis.windows.net
-...
-Authorization: Bearer eyJ0eXAiOi...
-...
-
-HTTP/1.1 403 Forbidden
-...
-
-{"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
-
-### How to fix timeout exceptions when using import and export APIs?
-
-When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In that case, redirecting the request may fail due to a timeout.
-
-To fix the timeout exception, you can resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
 
 ## Authentication
 
@@ -375,6 +337,7 @@ For further assistance, [contact support](https://powerbi.microsoft.com/support/
 
 ## Next steps
 
-For more information, see [FAQs](embedded-faq.yml).
+> [!div class="nextstepaction"]
+>[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
