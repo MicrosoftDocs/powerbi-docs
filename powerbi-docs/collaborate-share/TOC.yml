@@ -75,9 +75,9 @@
       items: 
       - name: "About the Power BI PowerPoint add-in"
         href: service-power-bi-powerpoint-add-in-about.md
-      - name: "Install the Power BI PowerPoint add-in"
-        href: service-power-bi-powerpoint-add-in-install.md
       - name: "Add a Power BI report page in PowerPoint"
+        href: service-power-bi-powerpoint-add-in-install.md
+      - name: "Using the Power BI add0-in for PowerPoint"
         href: service-power-bi-powerpoint-add-in-add-report.md
     - name: Publish and share your work
       items: 
