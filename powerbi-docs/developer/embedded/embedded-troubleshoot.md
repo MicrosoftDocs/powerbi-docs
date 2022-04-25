@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting your Power BI embedded analytics application
+title: Troubleshoot Power BI embedded analytics application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
 author: mberdugo
 ms.author: monaberdugo
@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 12/07/2021
+ms.date: 4/07/2022
 ---
 
 # Troubleshoot your embedded application
 
-This article discusses some common issues you may get when embedding content from Power BI.
+This article discusses some common issues that can come up when embedding content from Power BI.
 
-## Tools to troubleshoot
+## Troubleshooting tools
 
 ### Fiddler Trace
 
-[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
 ![Fiddler trace](media/embedded-troubleshoot/fiddler.png)
 
 ### F12 in Browser for front-end debugging
 
-F12 launches the developer window within your browser. This tool provides the ability to look at network traffic and other information.
+The F12 key launches the developer window within your browser. This tool lets you look at network traffic and see other valuable information.
 
 ![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
@@ -54,7 +54,7 @@ Provide the Request ID when approaching Microsoft support.
 
 ### App registration failure
 
-Error messages within the Azure portal or the Power BI app registration page mention insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page will notify you if you don't have sufficient privileges to register your app. To register an application, you must be an admin in the Azure AD tenant, or application registrations must be enabled for non-admin users.
 
 ### Power BI Service doesn't appear in the Azure portal when registering a new App
 
@@ -65,11 +65,12 @@ At least one user must be signed up for Power BI. If you don't see **Power BI Se
 When you register an Azure AD app, there are a two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
 
 :::row:::
+
     :::column span="":::
 
         #### Application object ID
 
-        The [application object](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID, also know simply as *object ID*, is the unique ID of your Azure AD application object.
+        The [application object](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID, also known simply as *object ID*, is the unique ID of your Azure AD application object.
 
         To get the application object ID, navigate to your Azure AD app, and copy it from the *Overview*.
 
@@ -101,7 +102,7 @@ A fiddler capture may be required to investigate further. The required permissio
 
 ### API call returning 403
 
-A fiddler capture may be required to investigate further. There could be several reasons for a 403 error.
+A 403 error can occur for any of the following reasons. A fiddler capture may be required to investigate further.
 
 * The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
@@ -127,7 +128,7 @@ HTTP/1.1 403 Forbidden
 
 ### How to fix timeout exceptions when using import and export APIs?
 
-When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In such cases, redirecting the request may fail due to a timeout.
+When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In that case, redirecting the request may fail due to a timeout.
 
 To fix the timeout exception, you can resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
 
@@ -135,15 +136,15 @@ To fix the timeout exception, you can resend the request with the `preferClientR
 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
-**_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
+***(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)***
 
-If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use.
+If you're using Power BI Embedded and Azure AD Direct authentication, you may receive a message like the one above when you try to log in, because direct authentication is no longer in use.
 
-There's a way to turn this back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+You can turn direct authentication back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-We recommend you enable this policy only as a per-app basis.
+We recommend you enable this policy only on a per-app basis.
 
-To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
+To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
 1. Install the [Azure AD Preview PowerShell Module](/powershell/azure/active-directory/install-adv2).
 
@@ -169,7 +170,7 @@ After assigning the policy, wait approximately 15-20 seconds for propagation bef
 
 ### Generate token fails when providing effective identity
 
-GenerateToken can fail, with effective identity supplied, for a few different reasons.
+`GenerateToken` can fail, with effective identity supplied, for a few different reasons.
 
 * Dataset doesn't support effective identity
 * Username wasn't provided
@@ -177,7 +178,7 @@ GenerateToken can fail, with effective identity supplied, for a few different re
 * DatasetId wasn't provided
 * User doesn't have the correct permissions
 
-To verify which it is, try the steps below.
+To determine the problem, try the following steps:
 
 * Execute [get dataset](/rest/api/power-bi/datasets). Is the property IsEffectiveIdentityRequired true?
 * Username is mandatory for any EffectiveIdentity.
@@ -187,7 +188,7 @@ To verify which it is, try the steps below.
 
 ### AADSTS90094: The grant requires admin permission
 
-**_Symptoms:_**<br>
+***Symptoms:***<br>
 When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
@@ -197,19 +198,19 @@ When a non-admin user tries to sign in to an application for the first time whil
 
 An admin user can sign in and grant consent successfully.
 
-**_Root cause:_**<br>
+***Root cause:***<br>
 User consent is disabled for the tenant.
 
-**_Several fixes are possible:_**
+***Several fixes are possible:***
 
-*Enable user consent for the entire tenant (all users, all applications)*
+* Enable user consent for the entire tenant (all users, all applications)
 
 1. In the Azure portal, navigate to "Azure Active Directory" => "Users and groups" => "User settings"
 2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
 
     ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
 
-*Grant permissions* to the application by an admin - either for the entire tenant or a specific user.
+* An admin can grant permissions to the application - either for the entire tenant or a specific user.
 
 ### CS1061 error
 
@@ -275,7 +276,7 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ### Manage which portion of the data your users can see
 
-Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
+Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You can't control viewing permissions to raw and aggregated data separately in the same dataset.
 
 To manage which portion of the data your users can view, use one of these methods:
 
@@ -315,7 +316,7 @@ Verify that you have all the proper prerequisites before using the Embedding set
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
+* You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
 ### Common Issues
@@ -326,51 +327,51 @@ Some common issues you might encounter while testing with the Embed setup tool a
 
 If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
 
-When selecting **Grant permissions** (the Grant permissions step), you get the following error:
+* When selecting **Grant permissions** (the Grant permissions step), you get the following error:
 
-```output
-AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
-```
+ ```output
+ AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+ ```
 
-The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it's available to external APIs.
+ The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it's available to external APIs.
 
-The following error message appears when running the sample app:
+* The following error message appears when running the sample app:
 
-```output
-Password is empty. Please fill password of Power BI username in web.config.
-```
+ ```output
+ Password is empty. Please fill password of Power BI username in web.config.
+ ```
 
-This error occurs because the only value that isn't being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
+ This error occurs because the only value that isn't being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
 
-If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+* If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
 
-Need to use an AAD account that doesn't have MFA enabled.
+ You need to use an Azure AD account that doesn't have MFA enabled.
 
 #### Using the Embed for your organization sample application
 
 If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
 
-When you run the **Embed for your organization** sample app, you get the following error:
+* When you run the **Embed for your organization** sample app, you get the following error:
 
-```output
-AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
-```
+ ```output
+ AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+ ```
 
-This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `https://localhost:13526/` as the redirect URL.
+ This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, use `https://localhost:13526/` as the redirect URL.
 
-If you'd like to edit the registered application, then learn how to [update the Azure AD-registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
+ If you want to edit the registered application, [update the Azure AD-registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
 
-If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](../../fundamentals/service-basic-concepts.md).
+ If you want to edit your Power BI user profile or data, learn how to edit your [Power BI data](../../fundamentals/service-basic-concepts.md).
 
-If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+* If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
 
-Need to use an AAD account that doesn't have MFA enabled.
+ You need to use an Azure AD account that doesn't have MFA enabled.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
-If you require further assistance, then [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
+For further assistance, [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
 ## Next steps
 
