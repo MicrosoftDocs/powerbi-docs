@@ -438,7 +438,7 @@ This section lists most of the limitations in deployment pipelines.
 
 ### Datamart limitations
 
-* Sensitivity labels are not supported for datamarts
+* You cannot deploy a datamart with sensitivity labels.
 
 * To deploy a datamart, you need to be the datamart owner.
 
