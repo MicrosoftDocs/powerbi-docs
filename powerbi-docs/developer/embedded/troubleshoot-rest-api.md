@@ -42,7 +42,7 @@ HTTP/1.1 403 Forbidden
 {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
-## Fix timeout exceptions when using import and export APIs?
+## Fix timeout exceptions when using import and export APIs
 
 When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In that case, redirecting the request may fail due to a timeout.
 
