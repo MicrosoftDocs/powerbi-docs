@@ -12,21 +12,11 @@ LocalizationGroup: Share your work
 ms.date: 04/18/2022
 ---
 
-# Install the Power BI PowerPoint add-in
+# Add a live Power BI report page in PowerPoint
 
-With the Power BI report add-in for PowerPoint, you can easily embed interactive Power BI report pages in PowerPoint slides.
+To add a live Power BI report page to a PowerPoint slide, you first need to [get the URL](#get-the-report-page-url) to the page URL. You then [paste the URL](#paste-the-report-page-url-into-the-powerpoint-add-in) into the Power BI report add-in in PowerPoint.
 
-Report pages embedded into PowerPoint using the Power BI report add-in for PowerPoint respect all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
-
-## Requirements
-
-To embed a Power BI report page into PowerPoint, the Power BI report add-in must be installed in PowerPoint. If it is not installed, see [Get the Power BI report add-in for PowerPoint](TBD).
-
-## Embed your report page
-
-To embed a live Power BI report page into PowerPoint, you first need to [get the URL](#get-the-report-page-url) to the page URL. You then [paste the URL](#paste-the-report-page-url-into-the-powerpoint-add-in) into the Power BI report add-in in PowerPoint.
-
-### Get the report page URL
+## Get the report page URL
 
 There are three ways to get the report page URL:
 
@@ -88,7 +78,7 @@ Open the report to the page you want to insert, copy the URL from the browser’
 
 ---
 
-### Paste the report page URL into the PowerPoint add-in
+## Paste the report page URL into the PowerPoint add-in
 
 When you have the report page URL, paste it into the Power BI report add-in in PowerPoint.
 
