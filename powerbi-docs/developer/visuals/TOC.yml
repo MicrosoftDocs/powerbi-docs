@@ -126,6 +126,8 @@
       href: local-storage.md
     - name: "'Rendering' events API" 
       href: event-service.md
+    - name: "File download API"
+      href: file-download-api.md
     - name: "Sorting"
       href: sort-options.md
     - name: "Localization"
