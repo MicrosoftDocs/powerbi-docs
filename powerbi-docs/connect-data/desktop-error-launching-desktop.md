@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/13/2022
+ms.date: 04/25/2022
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
@@ -182,6 +182,14 @@ Please follow these steps to install the required tools:
 
 11. Provide all information collected to our support team when requested.
 
+
+## Resolve data connection time-out
+
+In this situation, when you attempt to create a new connection or connect to an existing Power BI dataset, Power BI Desktop times out without establishing the connection. You may see the connection spinner continue to turn, but never complete the connection.
+
+This situation can occur if your machine has a security product installed, such as Digital Guardian or other security products. In some cases, the installed security product can interfere with outgoing connection request calls (network connection attempts), thereby causing the connection attempt to time out or fail. 
+
+To troubleshoot, try disabling the security product and then attempt the connection again. If it succeeds after disabling the security product, you know that it was the cause of the connection failure. 
 
 ## Get help with other launch issues
 
