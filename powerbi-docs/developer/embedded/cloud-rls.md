@@ -20,11 +20,11 @@ This article explains how to embed Power BI content that uses RLS into a standar
 
 ## Prerequisites
 
-For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](../../admin/service-admin-rls.md).
+For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls).
 
 For best results, your tables should be modeled as a [star schema](../../guidance/star-schema.md) with a [snowflake dimensions](../../guidance/star-schema.md#snowflake-dimensions) design. This way, when a filter is applied to a table, all the related tables get filtered accordingly.
 
-When you [define your RLS roles](../../admin/service-admin-rls.md#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
+When you [define your RLS roles](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
 
 ## Static and dynamic security
 
