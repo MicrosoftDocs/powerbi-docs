@@ -27,40 +27,45 @@ In the [previous article](end-user-license.md), you learned that what you can do
 This article lists which features in the Power BI service are available to *business users* like you. By definition, *business users* have a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have content stored in Premium capacity.
 
 ## Quick review of terminology
+
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
 ### Workspaces and roles
-There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro or Premium Per User (PPU) licenses, to use an app workspace. 
 
-Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Business users* are often assigned the **Viewer** role. 
+There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro or Premium Per User (PPU) licenses, to use an app workspace.
+
+Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Business users* are often assigned the **Viewer** role.
 
 ### Premium capacity
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro or Premium Per User (PPU) licenses. Within those workspaces, free users have elevated permissions (see list, below). 
 
-### Licenses 
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro or Premium Per User (PPU) licenses. Within those workspaces, free users have elevated permissions (see list, below).
 
-Each Power BI service user has a free license, a Power BI Pro license, or a Premium Per user license. *Business users* in an organization are typically assigned free licenses. Anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) will start with a free license. For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your colleagues use Premium capacity workspaces to share content, free users can view and collaborate with that content.  In this way, the free user gains the ability to consume content created by others. 
+### Licenses
+
+Each Power BI service user has a free license, a Power BI Pro license, or a Premium Per user license. *Business users* in an organization are typically assigned free licenses. Anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) will start with a free license. For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your colleagues use Premium capacity workspaces to share content, free users can view and collaborate with that content.  In this way, the free user gains the ability to consume content created by others.
 
 To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is shared to a Premium workspace. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/end-user-features/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
 
 ## Power BI feature list for *business users* and free users
-The following chart identifies which tasks can be performed by a *business user* interacting with content in Premium capacity.    
 
-The first column represents a free user working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**. 
+The following chart identifies which tasks can be performed by a *business user* interacting with content in Premium capacity.
+
+The first column represents a free user working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**.
 
 The second column represents a *business user*.  A business user:
 
 - has a free user license
 - is part of an organization that has a Premium capacity subscription
 - gets content (apps, dashboards, reports) from Pro or PPU users who share that content using app workspaces in Premium capacity.
-- is assigned the **Viewer** role to those app workspaces. 
+- is assigned the **Viewer** role to those app workspaces.
 
 > [!NOTE]
 > Users with PPU subscriptions cannot share content with users who have a Pro or free license.
 
 ### Legend
+
 ![green dot](media/end-user-license/power-bi-green-dot.png)  feature is available in the current scenario    
 ![orange x](media/end-user-features/orange-x.png)  feature is not available in the current scenario    
  **![green mw](media/end-user-features/green-mwo.png)** feature availability is limited to **My workspace**. Content in **My workspace** is for the owner's personal use and cannot be shared or viewed by anyone else in Power BI.    
