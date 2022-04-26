@@ -24,6 +24,7 @@ For related "What's New" information, see:
 
 ### Check your activity feed for goal updates
 Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your goal directly from the activity feed itself!
+
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
 ### New minimum OS requirement for the Windows app
