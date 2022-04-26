@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/08/2022
+ms.date: 04/26/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -174,6 +174,9 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 # [Workspace admin](#tab/admin)
 
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+
+> [!NOTE]
+> Subscriptions created for reports and dashboards and apps hosted in **My workspace** can only be managed by the user who created the subscriptions.
 
 To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
