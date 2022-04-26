@@ -40,32 +40,17 @@ The goals hub shows you your relevant goals and lists all the scorecards you've 
 
 The activity feed helps you keep track of what's happening with your Power BI content. It shows you all your latest notifications, alerts, comments, and @mentions.
 
-![Activity feed](./media/mobile-apps-home-page/power-bi-mobile-app-activity.png)
-
 The updates in the feed include:
-* **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
-* **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
-* **Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).
-* **App updates**: when an app creator publishes an update to an app you are using.
-* **Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. 
 
-
-|Column1  |Column2  |
+|Activity feed entry |Description  |
 |---------|---------|
 |![Screenshot of refresh activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-refresh-entry.png)     |**Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.         |
-|Row2     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
+|![Screenshot of comment activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-comment-entry.png)     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
 |![Screenshot of alert activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-alert-entry.png)     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
-|Row4     |**App updates**: when an app creator publishes an update to an app you are using.         |
+|![Screenshot of app activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-app-entry.png)     |**App updates**: when an app creator publishes an update to an app you are using.         |
 |![Screenshot of goals activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-goals-entry.png)     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in.         |
 
-
-* **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
-* **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
-* **Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).
-* **App updates**: when an app creator publishes an update to an app you are using.
-* **Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. 
-
- Tap on an activity item to jump to the relevant place in order to explore further.
+Tap on an activity item to jump to the relevant place in order to explore further.
 
 Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the ![expand arrow](./media/mobile-apps-home-page/power-bi-mobile-app-expand-arrow.png) arrow to expand and see the aggregated items. The most recent item will always be at the top of the list.
 
