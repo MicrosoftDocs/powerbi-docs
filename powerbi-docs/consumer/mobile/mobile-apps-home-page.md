@@ -54,7 +54,7 @@ The updates in the feed include:
 |---------|---------|
 |![Screenshot of refresh activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-refresh-entry.png)     |**Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.         |
 |Row2     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
-|Row3     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
+|![Screenshot of alert activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-alert-entry.png)     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
 |Row4     |**App updates**: when an app creator publishes an update to an app you are using.         |
 |![Screenshot of goals activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-goals-entry.png)     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in.         |
 
