@@ -90,7 +90,9 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
-    To calculate the *performance delta* Power BI calculates an hourly average for all the fast operations which take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The *performance delta* value is negative when there are only a few operations that are considered fast, an occurrence that is indicated by the reduction in size of the green area in the [performance profile](#performance-profile) visual.
+    To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
+
+    The *performance delta* value is negative when there are only a few operations that are considered fast, an occurrence that is indicated by the reduction in size of the green area in the [performance profile](#performance-profile) visual.
 
     Sorting the matrix by this column helps identify datasets that have had the biggest change in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. Small datasets with little CPU activity can easily show large positive or negative values.
 
