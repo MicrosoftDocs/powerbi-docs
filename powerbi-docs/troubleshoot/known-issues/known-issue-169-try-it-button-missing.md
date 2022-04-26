@@ -34,4 +34,3 @@ The Power BI team is aware of the issue and is working on a fix.  In the meantim
 ## Next steps
 
 - [About known issues](power-bi-known-issues.md)
-- 
