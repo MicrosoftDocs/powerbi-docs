@@ -28,7 +28,7 @@ Changes and updates to goals related to you now show up in your activity feed, a
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
 ### New minimum OS requirement for the Windows app
-The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the previous version.
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-goals.md#notifications)
