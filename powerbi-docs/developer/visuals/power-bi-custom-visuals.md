@@ -16,15 +16,15 @@ ms.custom: intro-overview
 
 [Power BI visuals](../../visuals/power-bi-report-visualizations.md) come from three main sources:
 
-* [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
+* [Core](#core-power-bi-visuals) visuals are readily available on the visualization pane.
 * You can [download or import](#appsource-power-bi-visuals) visuals from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
 * You can create your own [custom visuals](#custom-visual-files).
 
-## Default Power BI visuals
+## Core Power BI visuals
 
 Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
-:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of default the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
 
 To remove a Power BI visual from the visualization pane, right-click it and select **unpin**.
 
@@ -34,9 +34,9 @@ To restore the default Power BI visuals in the visualization pane, select the el
 
 ## AppSource Power BI visuals
 
-You can find many Power BI custom visuals available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). AppSource is the place for apps, add-ins, and extensions for your Microsoft software. It connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and with more insight than before.
+You can find many more Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). AppSource is the place for apps, add-ins, and extensions for your Microsoft software. It connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help work more efficiently and with more insight than before.
 
-Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the AppSource. Microsoft has tested and approved these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
+Microsoft and community members develop Power BI visuals for public benefit, and publish them to the AppSource. Microsoft tests and approves these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
 >[!NOTE]
 >
@@ -84,9 +84,9 @@ When the *Power BI visuals* window appears, select the **My organization** tab.
 
 ## Custom visual files
 
-You can also develop your own Power BI visual, to be used by you, your organization, or the entire Power BI community.
+You can also develop your own custom Power BI visual, to be used by you, your organization, or the entire Power BI community.
 
-Power BI visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single **.pbiviz** file, that can then be imported into a Power BI report.
+Power BI visuals come in **.pbiviz** file packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a **.pbiviz** file that can then be imported into a Power BI report.
 
 To import a Power BI visual from a file, see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
