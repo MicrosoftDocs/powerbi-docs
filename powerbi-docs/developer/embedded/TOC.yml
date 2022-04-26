@@ -73,7 +73,7 @@
       href: "power-bi-embedded-generation-2.md"
     - name: "Plan your transition to Power BI Embedded Gen2"
       href: embedded-transition-gen1-to-gen2.md
-  - name: Capacities in SKUs
+  - name: Capacities and SKUs
     items:
     - name: "Capacity and SKUs in Power BI embedded analytics"
       href: embedded-capacity.md
