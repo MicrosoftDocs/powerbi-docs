@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.date: 04/18/2022
+ms.date: 04/26/2022
 ms.custom: known-issue-169
 ---
 
@@ -19,7 +19,7 @@ ms.custom: known-issue-169
 
 ## Description of problem
 
-In the past, you were able to try Power BI REST APIs on each operations page linked from the [Admin Overview page](/rest/api/power-bi/admin).   Under **Examples**, you would see **Sample Request** code sections with a "Try it" button on the header to test the API.
+In the past, you were able to try Power BI REST APIs on each operations referenced in the [Power BI REST API reference](/rest/api/power-bi).   Under **Examples**, you would see **Sample Request** code sections with a "Try it" button on the header to test the API.
 
 The "Try it" button is currently missing on all REST API pages.
 
@@ -34,3 +34,4 @@ The Power BI team is aware of the issue and is working on a fix.  In the meantim
 ## Next steps
 
 - [About known issues](power-bi-known-issues.md)
+- 
