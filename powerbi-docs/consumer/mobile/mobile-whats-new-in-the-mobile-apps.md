@@ -20,7 +20,7 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-## May 2022
+## April 2022
 
 ### Check your activity feed for goal updates
 Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them.
@@ -29,8 +29,6 @@ Changes and updates to goals related to you now show up in your activity feed, a
 
 ### New minimum OS requirement for the Windows app
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the previous version.
-
-## April 2022
 
 ### Goals now supports push notifications
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-goals.md#notifications)
