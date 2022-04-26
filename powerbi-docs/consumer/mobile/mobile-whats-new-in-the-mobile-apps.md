@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/04/2022
+ms.date: 04/27/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -23,8 +23,7 @@ For related "What's New" information, see:
 ## April 2022
 
 ### Check your activity feed for goal updates
-Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them.
-
+Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your goal directly from the activity feed itself!
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
 ### New minimum OS requirement for the Windows app
