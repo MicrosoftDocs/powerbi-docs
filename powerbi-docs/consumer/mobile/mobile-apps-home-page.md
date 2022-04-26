@@ -48,7 +48,7 @@ The updates in the feed include:
 |![Screenshot of comment activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-comment-entry.png)     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
 |![Screenshot of alert activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-alert-entry.png)     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
 |![Screenshot of app activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-app-entry.png)     |**App updates**: when an app creator publishes an update to an app you are using.         |
-|![Screenshot of goals activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-goals-entry.png)     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in.         |
+|![Screenshot of goals activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-goals-entry.png)     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. You can get to the goal's details pane inside the scorecard by tapping on the goal. You can also update your goals directly from the activity feed itself via the **Quick check-in** button.         |
 
 Tap on an activity item to jump to the relevant place in order to explore further.
 
