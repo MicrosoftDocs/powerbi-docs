@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 11/02/2021
+ms.date: 04/27/2022
 ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -47,6 +47,23 @@ The updates in the feed include:
 * **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
 * **Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).
 * **App updates**: when an app creator publishes an update to an app you are using.
+* **Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. 
+
+
+|Column1  |Column2  |
+|---------|---------|
+|Row1     |**Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.         |
+|Row2     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
+|Row3     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
+|Row4     |**App updates**: when an app creator publishes an update to an app you are using.         |
+|Row5     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in.         |
+
+
+* **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
+* **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
+* **Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).
+* **App updates**: when an app creator publishes an update to an app you are using.
+* **Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. 
 
  Tap on an activity item to jump to the relevant place in order to explore further.
 
