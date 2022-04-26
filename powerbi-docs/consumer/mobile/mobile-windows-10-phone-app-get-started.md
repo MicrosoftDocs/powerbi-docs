@@ -15,7 +15,7 @@ ms.custom: intro-get-started
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-The Power BI app for Windows brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows 10.
+The Power BI app for Windows brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows.
 
 The Power BI app for Windows has a new design and home page to simplify the way you find and open content. To see the new design and home page, just turn on the **New look** toggle at the top of your app's screen.
 
@@ -33,7 +33,7 @@ The Power BI app for Windows has a new design and home page to simplify the way 
 * Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
-If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
+If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows device to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
@@ -92,7 +92,7 @@ Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile
 ![Screenshot of new look for Power BI windows app.](./media/mobile-windows-10-phone-app-get-started/windows-10-new-look-home-page.png)
 
 ## First things first
-* [**Get the Power BI app for Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
+* [**Get the Power BI app for Windows**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
   
   Your device must run Windows 10 version 16299 or higher. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
@@ -101,7 +101,7 @@ Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile
 * Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
-If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
+If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows device to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
@@ -158,7 +158,7 @@ Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile
 ---
 
 ## Other tasks
-Here are some other things you can do in the Power BI app for Windows 10 devices with reports, dashboards, and apps in Power BI, and with Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+Here are some other things you can do in the Power BI app for Windows devices with reports, dashboards, and apps in Power BI, and with Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI content
 * View [your apps](../../collaborate-share/service-create-distribute-apps.md).
