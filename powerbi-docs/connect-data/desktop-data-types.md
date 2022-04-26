@@ -93,8 +93,8 @@ The *Addressee* for the fourth row is compared against the names in the dictiona
 >
 
 #### Trailing spaces
-When working with data that contains leading or trailing spaces, it is a good idea to use the [Text.Trim](../../powerquery-m/text-trim) function to remove the spaces at the beginning or end of the text to avoid confusion as the Power BI engine will automatically trim of any trailing spaces, but not leading spaces. As a result, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
-As a simple example, we loaded data about customers: an *Name* column which contains the name of the customer and a *Index* column that is unique for each entry. Notice that the customer name is repeated four times, but each time with different combinations of leading and trailing spaces:
+When working with data that contains leading or trailing spaces, you should use the [Text.Trim](../../powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion, since the Power BI engine automatically trims any trailing spaces but not leading spaces. Without removing leading or trailing spaces, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
+As a simple example, we loaded data about customers: a *Name* column which contains the name of the customer and an *Index* column that is unique for each entry. Notice the customer name is repeated four times, but each time with different combinations of leading and trailing spaces:
 
 |Row|Leading space|Trailing space|Name (within quotes for clarity)|Index|Text length|
 |---|---|---|---|---|---|
@@ -103,7 +103,7 @@ As a simple example, we loaded data about customers: an *Name* column which cont
 |3|Yes|No|" Dylan Williams"|20|15|
 |4|Yes|Yes|" Dylan Williams "|40|16|
 
-These variations might for example happen because of manual data entry over time. In Power Query this data is shown as follows:
+These variations can occur with with manual data entry over time. In Power Query, the resulting data is shown as follows:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Textual data with various leading and trailing spaces in Power Query":::
 
@@ -115,9 +115,9 @@ However, a visual based on this data returns just two rows:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="A table visual based on the same data returns just two lines of data - the first row has a total index of 60 and the second row has a total index of 11.":::
 
-As is visible in the image above, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row (with total *Index* value of '11' represents the first two rows). The reason for this is that the engine will automatically remove (trim) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
+As the first image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The reason for the differences it because the engine automatically removes (trim) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
 
-Not only you can experience this behavior when working with visuals, you might also see error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to:
+This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-08.png" alt-text="An error message showing: Column 'Name' in Table 'Customers' contains a duplicate value 'Dylan Williams' and this is not allowed for columns on the one side of a many-to-one relationship or for columns that are used as the primary key of a table.":::
 
@@ -125,7 +125,7 @@ In other situations, you might be unable to create a many-to-one or one-to-one r
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
 
-These errors can in most cases be traced back to the handling of leading or trailing spaces and can be resolved by leveraging the [Text.Trim](../../powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
+These errors are traced back to leading or trailing spaces and can be resolved by using the [Text.Trim](../../powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
