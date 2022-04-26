@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 3/28/2022
+ms.date: 4/26/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,17 @@ ms.date: 3/28/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## April 2022 QFE 1
+
+*Version: 2.104.941.0, Released: April 26, 2022*
+
+Bug fixes/improvements:
+- Fix for DAX expressions: now the DAX parsing process in the formula bar will run faster and the application will not hang.
+- Fix for DirectQuery connections in Shared: now it will be possible to add a DirectQuery connection to the existing report. 
+- Fix for the format pane of bar charts: now X-axis and Y-axis field well names will be mapped correctly and only their names will be displayed. 
+- Fix for stacked column charts with logarithmic scale: now users will be able to apply Y axis log scale even if the legend field is present.
+- Fix for the condition used to test disabled date bounds in calendar: now users will be able to select last date in the calendar popup. 
 
 ## March 2022 QFE 1
 
