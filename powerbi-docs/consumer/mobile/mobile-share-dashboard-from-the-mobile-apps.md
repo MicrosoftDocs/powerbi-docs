@@ -99,7 +99,7 @@ You can only unshare if you're the owner.
 
 1. In the **Invite a colleague** pane that opens, type email addresses and a message to accompany your invitation. If you don't provide a message, Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to share with others in your organization, either through the browser or the mobile apps.
     
-    If you're the owner of the dashboard, you’ll also see the list of colleagues with whom you've shared thedashboard or report.
+    If you're the owner of the dashboard, you’ll also see the list of colleagues with whom you've shared the dashboard or report.
 
     ![Screenshot of Invite a colleague pane.](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
    
