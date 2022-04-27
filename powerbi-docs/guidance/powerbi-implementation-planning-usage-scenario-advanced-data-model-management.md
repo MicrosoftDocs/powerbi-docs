@@ -78,7 +78,7 @@ There are several ways to use third-party applications:
 
 ### Tabular Editor
 
-[Tabular Editor](https://tabulareditor.com/) is depicted in the scenario diagram. It's an open-source tool that's achieved widespread adoption by the Power BI community. Some advantages of managing tabular data models with Tabular Editor include:
+[Tabular Editor](https://tabulareditor.com/) is depicted in the scenario diagram. It's a third-party tool that's achieved widespread adoption by the Power BI community. Some advantages of managing tabular data models with Tabular Editor include:
 
 - **Setting up data model capabilities not supported in Power BI Desktop:** Tabular Editor provides an interface to set up object-level security (OLS), calculation groups, perspectives, translations, and partitions.
 - **Support for concurrent model development:** Microsoft data model development tools, such as SSDT, store the entire data model definition in a *Model.bim* file. This single file can make it difficult for a team of developers to work together on a single data model. Tabular Editor has a feature called *Folder serialization*. Folder serialization deconstructs the Model.bim file into separate object-specific files within an organized folder structure. Different data modelers can then work on different files with less risk of overwriting each other's efforts.
