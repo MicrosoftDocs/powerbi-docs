@@ -180,7 +180,7 @@ sections:
       - question: |
           Can I run custom code in my report?
         answer: |
-          Yes, we support the ability to run code in your reports using code blocks and [Azure Functions](https://github.com/chmitch/ssrs-assembly-alternatives). Referencing custom DLLs within a report is not supported.
+          Yes, we support the ability to run code in your reports using code blocks or [Azure Functions](https://github.com/chmitch/ssrs-assembly-alternatives). Referencing custom code DLL files within a report is not supported.
 
       - question: |
           Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
