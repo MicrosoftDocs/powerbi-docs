@@ -152,9 +152,9 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ## Investigate anomalies in time series data
 
-[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
+[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according to their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
 
-When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
+When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
 
 ![Screenshot of line chart that has anomaly indications.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
 
