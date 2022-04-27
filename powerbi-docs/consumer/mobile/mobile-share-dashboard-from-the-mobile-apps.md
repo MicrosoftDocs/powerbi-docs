@@ -12,9 +12,9 @@ ms.date: 04/06/2021
 # Share a dashboard or report from the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
+| iPhones |iPads |Android phones |Android tablets |Windows devices |
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
@@ -74,7 +74,7 @@ You can only unshare if you're the owner.
 2. Towards the bottom of the **Add people** page that opens, you see the list of colleagues with whom you've shared this dashboard or report. Tap the name of the colleague you want to unshare with.
 3. On the **Who has access** page that appears, tap the **Remove** icon ![Remove icon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png) and choose whether to remove access just to the shared dashboard or to any underlying content it uses as well.
 
-## Share from your Windows 10 device
+## Share from your Windows device
 
 # [Classic look](#tab/classic-look)
 
@@ -99,7 +99,7 @@ You can only unshare if you're the owner.
 
 1. In the **Invite a colleague** pane that opens, type email addresses and a message to accompany your invitation. If you don't provide a message, Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to share with others in your organization, either through the browser or the mobile apps.
     
-    If you're the owner of the dashboard, you’ll also see the list of colleagues with whom you've shared thedashboard or report.
+    If you're the owner of the dashboard, you’ll also see the list of colleagues with whom you've shared the dashboard or report.
 
     ![Screenshot of Invite a colleague pane.](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
    
