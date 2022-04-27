@@ -93,7 +93,7 @@ The *Addressee* for the fourth row is compared against the names in the dictiona
 >
 
 #### Trailing spaces
-When working with data that contains leading or trailing spaces, you should use the [Text.Trim](../../powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion, since the Power BI engine automatically trims any trailing spaces but not leading spaces. Without removing leading or trailing spaces, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
+When working with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion, since the Power BI engine automatically trims any trailing spaces but not leading spaces. Without removing leading or trailing spaces, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
 As a simple example, we loaded data about customers: a *Name* column which contains the name of the customer and an *Index* column that is unique for each entry. Notice the customer name is repeated four times, but each time with different combinations of leading and trailing spaces:
 
 |Row|Leading space|Trailing space|Name (within quotes for clarity)|Index|Text length|
@@ -127,7 +127,7 @@ In other situations, you might be unable to create a many-to-one or one-to-one r
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
 
-These errors are traced back to leading or trailing spaces and can be resolved by using the [Text.Trim](../../powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
+These errors are traced back to leading or trailing spaces and can be resolved by using the [Text.Trim](/powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
