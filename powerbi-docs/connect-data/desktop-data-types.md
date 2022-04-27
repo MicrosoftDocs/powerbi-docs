@@ -103,25 +103,25 @@ As a simple example, we loaded data about customers: a *Name* column which conta
 |3|Yes|No|" Dylan Williams"|20|15|
 |4|Yes|Yes|" Dylan Williams "|40|16|
 
-These variations can occur with with manual data entry over time. In Power Query, the resulting data is shown as follows:
+These variations can occur with with manual data entry over time. In Power Query, the resulting data is shown as follows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Textual data with various leading and trailing spaces in Power Query":::
 
-When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following:
+When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following image.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-05.png" alt-text="The same textual data after loading into Power BI returns the same number of rows as before.":::
 
-However, a visual based on this data returns just two rows:
+However, a visual based on this data returns just two rows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="A table visual based on the same data returns just two lines of data - the first row has a total index of 60 and the second row has a total index of 11.":::
 
 As the first image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The reason for the differences it because the engine automatically removes (trim) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
 
-This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following:
+This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-08.png" alt-text="An error message showing: Column 'Name' in Table 'Customers' contains a duplicate value 'Dylan Williams' and this is not allowed for columns on the one side of a many-to-one relationship or for columns that are used as the primary key of a table.":::
 
-In other situations, you might be unable to create a many-to-one or one-to-one relationship because duplicate values are detected:
+In other situations, you might be unable to create a many-to-one or one-to-one relationship because duplicate values are detected.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
 
