@@ -72,7 +72,7 @@ In the following simple example, we loaded data about orders: an *OrderNo* colum
 
 Notice there are multiple orders with the same name as addressee, although entered into the system slightly differently.
 
-When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following:
+When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following table.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="The same textual data after loading into Power BI has changed capitalization":::
 
@@ -106,6 +106,8 @@ As a simple example, we loaded data about customers: a *Name* column which conta
 These variations can occur with with manual data entry over time. In Power Query, the resulting data is shown as follows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Textual data with various leading and trailing spaces in Power Query":::
+
+
 
 When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following image.
 
