@@ -35,7 +35,7 @@ Bug fixes/improvements:
 - Fix for the new format pane of matrix visuals: now the URL icon on rows/columns & horizontal scroll bar will work.
 - Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers will not be available and as a result, users' reports will not be changed. 
 - Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs will not disappear after the model refresh.
-- AS engine fix: now the <language> in the AS config file will always be set to en-us regardless of the PBI Desktop UI language to prevent issues with the AS engine's start.
+- AS engine fix: now the `language` in the AS config file will always be set to en-us regardless of the PBI Desktop UI language to prevent issues with the AS engine's start.
 - Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
 
 ## February 2022 QFE 1
