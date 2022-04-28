@@ -623,7 +623,7 @@ An enumeration, most commonly used for drop-down formatting options, means it ca
             "The visual will adapt to size changes"
           ]
         },
-        "legend": {
+     "legend": {
         "show": {
           "type": [
             "bool"
