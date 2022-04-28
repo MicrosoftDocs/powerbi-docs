@@ -141,7 +141,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. 
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. Power BI administrators can view logs and turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
