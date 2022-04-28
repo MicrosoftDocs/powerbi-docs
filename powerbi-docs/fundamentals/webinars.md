@@ -22,13 +22,13 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
-**Power BI: Security and Governance for Your Organization**
-by Anton Fritz and Rick Xu
-[Watch now](https://info.microsoft.com/ww-ondemand-security-and-governance-for-your-organization.html)
+**Power BI: Security and Governance for Your Organization**  
+by Anton Fritz and Rick Xu  
+[Watch now](https://info.microsoft.com/ww-ondemand-security-and-governance-for-your-organization.html)  
 
-**Power BI Apps: Distribute Content to Your Organization**
-by Anshul Rampal
-[Watch now](https://info.microsoft.com/ww-landing-powerbidistributecontent.html)
+**Power BI Apps: Distribute Content to Your Organization**  
+by Anshul Rampal  
+[Watch now](https://info.microsoft.com/ww-landing-powerbidistributecontent.html)  
 
 **Power BI 101: Create Reports Quickly and Effectively**  
 by Amanda Rivera  
