@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 11/02/2021
+ms.date: 04/27/2022
 ms.custom: mode-portal, intro-quickstart
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -30,7 +30,7 @@ The quick access tab shows you your Frequent, Recent, and Recommended reports, d
 
 ## Goals hub
 
-The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can can monitor progress on your goals, and even make check-ins to update progress, add notes, or get to connected reports.
+The goals hub shows you your relevant goals and lists all the scorecards you've got access to. On the goals hub you can monitor progress on your goals, and even make check-ins to update progress, add notes, or get to connected reports.
 
 ![Screenshot of goals hub in the Power BI mobile app.](media/mobile-apps-home-page/power-bi-mobile-app-hub-checkin.png)
 
@@ -40,15 +40,17 @@ The goals hub shows you your relevant goals and lists all the scorecards you've 
 
 The activity feed helps you keep track of what's happening with your Power BI content. It shows you all your latest notifications, alerts, comments, and @mentions.
 
-![Activity feed](./media/mobile-apps-home-page/power-bi-mobile-app-activity.png)
-
 The updates in the feed include:
-* **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
-* **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
-* **Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).
-* **App updates**: when an app creator publishes an update to an app you are using.
 
- Tap on an activity item to jump to the relevant place in order to explore further.
+|Activity feed entry |Description  |
+|---------|---------|
+|![Screenshot of refresh activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-refresh-entry.png)     |**Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.         |
+|![Screenshot of comment activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-comment-entry.png)     |**New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.         |
+|![Screenshot of alert activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-alert-entry.png)     |**Data alerts**: when data reaches a threshold you previously set in a [data alert](mobile-set-data-alerts-in-the-mobile-apps.md).         |
+|![Screenshot of app activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-app-entry.png)     |**App updates**: when an app creator publishes an update to an app you are using.         |
+|![Screenshot of goals activity feed entry.](./media/mobile-apps-home-page/power-bi-mobile-app-activity-feed-goals-entry.png)     |**Goal updates**: when someone assigns you a goal or @mentions you in a note attached to a new or existing check-in. You can get to the goal's details pane inside the scorecard by tapping on the goal. You can also update your goals directly from the activity feed itself via the **Quick check-in** button.         |
+
+Tap on an activity item to jump to the relevant place in order to explore further.
 
 Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the ![expand arrow](./media/mobile-apps-home-page/power-bi-mobile-app-expand-arrow.png) arrow to expand and see the aggregated items. The most recent item will always be at the top of the list.
 
