@@ -22,6 +22,18 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
+**Starter Guide for Power BI Consumers**  
+by Will Thompson  
+[Watch now](https://info.microsoft.com/ww-ondemand-Starter-Guide-for-Power-BI-Consumers.html)  
+
+**Drive Productivity and Effective Decision-Making with Excel and Power BI**  
+by Ikechukwu Edeagu  
+[Watch now](https://info.microsoft.com/ww-ondemand-Drive-Productivity-And-Effective-Decision-Making-With-Excel-And-Power-BI.html)  
+
+**Quickly transform your Organization with a Data-Driven culture through Power BI**  
+by Lukasz Pawlowski  
+[Watch now](https://info.microsoft.com/ww-ondemand-quickly-transform-your-organization-with-a-data-driven-culture-through-power-bi.html)  
+
 **Power BI: Security and Governance for Your Organization**  
 by Anton Fritz and Rick Xu  
 [Watch now](https://info.microsoft.com/ww-ondemand-security-and-governance-for-your-organization.html)  
