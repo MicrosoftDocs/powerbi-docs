@@ -17,11 +17,11 @@ ms.custom: intro-overview
 
 [Power BI visuals](../../visuals/power-bi-report-visualizations.md) come from three main sources:
 
-* [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
+* [Core](#core-power-bi-visuals) visuals are readily available on the visualization pane.
 * You can [download or import](#appsource-power-bi-visuals) visuals from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
 * You can create your own [custom visuals](#custom-visual-files).
 
-## Default Power BI visuals
+## Core Power BI visuals
 
 Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
