@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 04/28/2022
+ms.date: 05/01/2022
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -48,7 +48,7 @@ Each Power BI service user has a Free license, a Power BI Pro license, or a Prem
 
 To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is hosted in a Premium workspace. Select **View account** to see more details about your account.
 
-   :::image type="content" source="media/end-user-features/power-bi-license.png" alt-text="Screen capture showing license type displayed with account profile.":::
+   :::image type="content" source="media/end-user-features/power-bi-licenses.png" alt-text="Screenshot showing license type displayed with account profile.":::
 
 ## Power BI feature list for users with a Free license
 
