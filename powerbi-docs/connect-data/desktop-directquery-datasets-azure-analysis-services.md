@@ -225,7 +225,6 @@ This dialog won't be shown for live connections.
 >[!NOTE]
 >This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
 
-[!div class="mx-imgBorder"]
 ![Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png)
 
 ## Next steps
