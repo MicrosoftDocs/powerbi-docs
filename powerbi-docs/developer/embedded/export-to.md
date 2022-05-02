@@ -202,6 +202,8 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 # [Premium Gen1](#tab/gen1)
 
+* **As of the end of April 2022, the *export Power BI report to file API* will not be available with Power BI Premium or Embedded Gen1 capacities**. We suggest upgrading to a Power BI Premium or Embedded Gen2 capacity. Please refer to [Power BI embedded Gen2](power-bi-embedded-generation-2.md) for more information.
+* The report you're exporting must reside on a Premium or Embedded capacity.
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
 * The number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
