@@ -120,17 +120,17 @@
         href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
-      - name: "Migration overview"
+      - name: "Migration overview"
         href: powerbi-migration-overview.md
       - name: "Prepare to migrate"
         href: powerbi-migration-pre-migration-steps.md
       - name: "Gather requirements"
         href: powerbi-migration-requirements.md
-      - name: "Plan deployment"
+      - name: "Plan deployment"
         href: powerbi-migration-planning.md
-      - name: "Conduct proof of concept"
+      - name: "Conduct proof of concept"
         href: powerbi-migration-proof-of-concept.md
-      - name: "Create content"
+      - name: "Create content"
         href: powerbi-migration-create-validate-content.md
       - name: "Deploy to Power BI"
         href: powerbi-migration-deploy-support-monitor.md
@@ -186,17 +186,21 @@
           href: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
         - name: "Self-service data preparation"
           href: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
+        - name: "Advanced data preparation"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md
         - name: "Prototyping and sharing"
           href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
         - name: "Self-service content publishing"
           href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+        - name: "Advanced data model management"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
-  - name: Center of Excellence (COE)
+  - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
         href: center-of-excellence-microsoft-business-intelligence-transformation.md
-      - name: "Establish a COE"
+      - name: "How Microsoft established a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md

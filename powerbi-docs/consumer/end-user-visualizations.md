@@ -57,7 +57,7 @@ For many of these options, your administrator or the *designer* can disable your
 |[Show the data used to create the visual](end-user-show-data.md).     |  no       |   yes      | no  |
 | [Change the way the visual is sorted](end-user-change-sort.md). | no  | yes  | can change sort by rewording the question  |
 | [Add a spotlight to a visual](end-user-spotlight.md). | no  | yes  |  no |
-| [Export to Excel.](end-user-export.md) | yes | yes | no|
+| [Export to Excel.](/power-bi/visuals/power-bi-visualization-export-data) | yes | yes | no|
 | [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | na |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |

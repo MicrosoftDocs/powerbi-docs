@@ -55,9 +55,9 @@ Paginated reports have their own design tool, Power BI Report Builder. It's a ne
 
 ## Apply sensitivity labels to paginated reports
 
-Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../admin/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../enterprise/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
 
-Read more about [sensitivity label support for pagination reports](../admin/service-security-sensitivity-label-paginated-reports.md).
+Read more about [sensitivity label support for pagination reports](../enterprise/service-security-sensitivity-label-paginated-reports.md).
 
 ## Report from a variety of data sources
 
@@ -99,7 +99,7 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/paginated-reports-subscriptions.md). 
+For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/end-user-subscribe.md). 
 
 ## Use deployment pipelines with paginated reports
 

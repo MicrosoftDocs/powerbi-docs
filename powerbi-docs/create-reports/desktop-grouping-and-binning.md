@@ -12,9 +12,12 @@ ms.date: 04/19/2021
 LocalizationGroup: Create reports
 ---
 # Use grouping and binning in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 When Power BI Desktop creates visuals, it aggregates your data into chunks (or groups) based on values found in the underlying data. Often that's fine, but there may be times when you want to refine how those chunks are presented. For example, you might want to place three categories of products in one larger category (one *group*). Or, you might want to see sales figures put into bin-sizes of 1,000,000 dollars, instead of chunks of 923,983-dollar sizes.
 
-In Power BI Desktop, you can *group* data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualized data in ways that are meaningful. This action is often called *binning*.
+In Power BI Desktop, you can *group* data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualize data in ways that are meaningful. This action is often called *binning*.
 
 ## Using grouping
 To use grouping, select two or more elements on a visual by using Ctrl+click to select multiple elements. Then right-click one of the multiple selection elements and choose **Group data** from the context menu.
@@ -23,11 +26,11 @@ To use grouping, select two or more elements on a visual by using Ctrl+click to 
 
 Once it's created, the group is added to the **Legend** bucket for the visual. The group also appears in the **Fields** list.
 
-![Legend and Fields lists, grouping, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_2.png)
+![Screenshot shows Legend and Fields lists, grouping, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-2.png)
 
 Once you have a group, you can easily edit the members of that group. Right-click the field from the **Legend** bucket or from the **Fields** list, and then choose **Edit groups**.
 
-![Edit groups command, Legend and Fields lists, Power BI Desktop.](media/desktop-grouping-and-binning/grouping-binning_3.png)
+![Screenshot shows Edit groups command, Legend and Fields lists, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-3.png)
 
 In the **Groups** dialog box, you can create new groups or modify existing groups. You can also *rename* any group. Just double-click the group title in the **Groups and members** box, and then enter a new name.
 
@@ -45,15 +48,15 @@ You can set the bin size for numerical and time fields in **Power BI Desktop.** 
 
 To apply a bin size, right-click a **Field** and choose **New group**.
 
-![New group command, Fields list, Power BI Desktop.](media/desktop-grouping-and-binning/grouping-binning_5.png)
+![Screenshot shows New group command, Fields list, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-5.png)
 
 From the **Groups** dialog box, set the **Bin size** to the size you want.
 
-![Bin size, Groups dialog box, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_6.png)
+![Screenshot shows Bin size, Groups dialog box, Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-6.png)
 
 When you select **OK**, you'll notice that a new field appears in the **Fields** pane with **(bins)** appended. You can then drag that field onto the canvas to use the bin size in a visual.
 
-![Drag bins field onto canvas, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_7.png)
+![Screenshot shows how to drag bins field onto canvas in Power B I Desktop.](media/desktop-grouping-and-binning/grouping-binning-7.png)
 
 To see *binning* in action, take a look at this [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 

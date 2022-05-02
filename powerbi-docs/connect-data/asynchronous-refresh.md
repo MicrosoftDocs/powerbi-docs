@@ -102,7 +102,7 @@ Specifying parameters is not required. If not specified, the default is applied.
 202 Accepted
 ```
 
-The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `refreshId`, which is required for some asynchronous refresh operations. For example, in the following response, `refreshId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `requestId`, which is required for some asynchronous refresh operations. For example, in the following response, `requestId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
 
 ```json
 x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
@@ -166,9 +166,9 @@ The Power BI REST API supports limiting the requested number of entries in the r
 GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
-## GET /refreshes/\<refreshId\>
+## GET /refreshes/\<requestId\>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **refreshId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the **requestId**. Here's an example of the response body. If the operation is in progress, `inProgress` is returned in status.
 
 ```json
 {
@@ -193,9 +193,9 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 
 ```
 
-## DELETE /refreshes/\<refreshId\>
+## DELETE /refreshes/\<requestId\>
 
-To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `refreshId`.
+To cancel an in-progress refresh operation, use the DELETE verb on the refresh object by specifying the `requestId`.
 
 For example,
 
@@ -207,9 +207,9 @@ DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a
 
 #### Non-asynchronous refresh operations
 
-Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<refreshId>`.
+Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<requestId>`.
 
-Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<refreshId>`.
+Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<requestId>`.
 
 Get Details and Cancel are new operations for asynchronous refresh only. They are not supported for non-asynchronous refresh operations.
 
@@ -238,7 +238,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If during a
 
 #### Solution: Run the asynchronous refresh operation again
 
-To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../admin/service-premium-what-is.md#how-capacities-function).
+To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../enterprise/service-premium-what-is.md#how-capacities-function).
 
 ## Code sample
 

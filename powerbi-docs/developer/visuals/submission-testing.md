@@ -1,18 +1,18 @@
 ---
-title: Testing submissions of Power BI visuals
-description: This article describes test cases that your visual must pass before publishing to AppSource. There are also optional test cases.
+title: Testing submissions of Power BI custom visuals
+description: This article describes test cases that your Power BI custom visual must pass before publishing it on AppSource. There are also optional test cases.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2021
+ms.date: 04/04/2022
 ---
 
-# Test a Power BI visual before submitting it
+# Test a Power BI custom visual before submitting it for publication
 
-Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. It is important to test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
+Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. It's important to test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
 For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
@@ -20,7 +20,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-When testing or updating a visual that is already published, make sure you're using the correct version of the visual **without changing the GUID**. You can override the AppSource version with a local file version by enabling Developer mode in either Power BI Desktop, or Power BI service.
+When testing or updating a visual that is already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop, or Power BI service.
 
 >[!IMPORTANT]
 >When testing or debugging a new version of a visual that is available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
@@ -66,7 +66,7 @@ Verify that your visual passes the general test cases.
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
 | Set the report size to the minimum. | There are no display errors. |
-| Ensure scroll bars work correctly. | Scroll bars should exist, if required. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
+| Ensure scroll bars work correctly. | Scroll bars should exist, if necessary. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
 | Pin your visual to a **Dashboard**. | The visual should be displayed properly. |
 | Add multiple versions of your visual to a single report page. | All versions of the visual be displayed and operate properly. |
 | Add multiple versions of your visual to multiple report pages. | All versions of the visual be displayed and operate properly. |
@@ -110,7 +110,7 @@ Optionally, test your visual in the following browsers.
 
 ## Desktop testing
 
-Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
+Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
 | Test case | Expected results
 | --------- | ----------------

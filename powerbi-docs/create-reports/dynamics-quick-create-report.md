@@ -33,6 +33,10 @@ Watch this video showing how to create visuals from data stored within Dataverse
     :::image type="content" source="media/service-quick-create-report/visualize-view-button.png" alt-text="Screenshot of the visualize this view button."::: 
 
     A dialog opens with an automatically generated report with a few fields selected for you in the **Your data** pane on the right. The visuals within the report will use some or all of your selected fields and potentially other fields from the table that work well with chosen fields.
+    
+    > [!NOTE]  
+    > Power BI is connecting to Dynamics on behalf of the user that clicked the **Visualize this view** button, so any security rules that have been set up with        Dataverse will apply. Users should see the same data they see within the app itself.
+    
 2.	Changing the data you see in the report is easy. In the **Your data** pane, add or remove fields that you’re interested in visualizing. The selected fields are then used as ‘hints’ to the algorithm generating the visuals. Power BI automatically adds or removes charts to show new visuals. 
 
     :::image type="content" source="media/service-quick-create-report/changing-the-report.png" alt-text="Screenshot of an updated report after selecting a field."::: 

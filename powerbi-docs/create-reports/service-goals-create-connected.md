@@ -12,6 +12,8 @@ ms.date: 10/19/2021
 ---
 # Create connected goals in Power BI (preview)
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Goals in Power BI let customers curate their metrics and track them against key business objectives. When choosing values for your goals, you have a choice of: 
 
 - Manually entering the current and target values.
@@ -95,6 +97,7 @@ Currently there are limitations on the values you can choose in a visual.
 
 - In a 100% stacked bar or column chart, Power BI will pull in the measure value rather than the percentage.
 - In a multi-row card, Power BI will pull in the first measure in the card.
+- Multi-Geo is currently not supported.
 - In gauges and KPI tiles, Power BI will pull in the value, but not the target, or the min or max value in the gauge.
 - In a table with more than one column of measures, Power BI selects the first measure in the row.
 

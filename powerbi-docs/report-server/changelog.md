@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 03/04/2022
 ---
 
 # Change log for Power BI Report Server
@@ -19,6 +19,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2022
 - **Power BI Report Server**
+    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: Feburary 23, 2022*
+    	- Bug fixes
+    	   - Fixed issue with V3 reports with SAP HANA datasource and Kerberos single sign-on.
+    	   - Several minor UI fixes in new portal experience.
     - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
         - Features
             - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
@@ -70,6 +74,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## May 2021
 - **Power BI Report Server**
+    - *Version: 1.11.8091.10468 (Build 15.0.1106.457), Released: March 4, 2022*
+        - Security updates
     - *Version: 1.11.7815.26414 (Build 15.0.1106.169), Released: May 27, 2021*
         - Features
             - Added enhancements for PBIX reports containing "models with enhanced metadata".

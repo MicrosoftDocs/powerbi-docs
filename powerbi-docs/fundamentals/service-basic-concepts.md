@@ -45,7 +45,7 @@ We'll dig into these features later, but first let's review some Power BI concep
 The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
 
 ## Capacities
-Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../admin/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../enterprise/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md) article.
 
 By default, workspaces are created on a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -99,7 +99,7 @@ Now, let's move on to the next topic—reports.
 ### Dig deeper
 * [Datasets in the Power BI service](../connect-data/service-datasets-understand.md)
 * [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md)
-* [What is Power BI Premium?](../admin/service-premium-what-is.md)
+* [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 * [Get data for Power BI](../connect-data/service-get-data.md)
 * [Sample datasets for Power BI](../create-reports/sample-datasets.md)
 
@@ -226,7 +226,7 @@ The icons in the upper right corner are your resource for settings, notification
 ### 5. **Dashboard title**
 It's not always easy to figure out which workspace and dashboard are active, so Power BI shows you the workspace and the dashboard title. In this example, we see the workspace (My workspace) and the dashboard title (Store Sales Overview). If we opened a report, the name of the report would be displayed.
 
-![Screenshot of Power B I service showing the Data classification icon.](media/service-basic-concepts/power-bi-title.png)
+![Screenshot of Power B I service showing the dashboard title.](media/service-basic-concepts/power-bi-title.png)
 
 ### 6. **Microsoft 365 app launcher**
 With the app launcher, all your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.

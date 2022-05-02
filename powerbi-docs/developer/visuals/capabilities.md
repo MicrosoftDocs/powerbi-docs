@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 05/02/2022
 ---
 
-# Capabilities and properties of Power BI visuals 
+# Capabilities and properties of Power BI visuals
 
 Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. **All properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
 
@@ -44,6 +44,7 @@ The following additional root objects can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
+* [expandCollapse](dataview-mappings.md#expanding-and-collapsing-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)

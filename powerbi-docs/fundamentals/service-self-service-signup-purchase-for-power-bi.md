@@ -38,15 +38,15 @@ There are many different ways to get a per-user license for the Power BI service
 For step-by-step instructions on using self-service sign-up and self-service purchase, see [How to sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md)
 
 ### Power BI license types
-Before you sign-up or purchase, determine which [license type](../admin/service-admin-licensing-organization.md) you need. Power BI offers several per-user licenses: free, Pro, and Premium Per User. Power BI also offers a free trial upgrade for Premium Per User. When an individual signs-up or purchases Power BI, they're assigned a Power BI license automatically.  Not sure what type of license you need?  
+Before you sign-up or purchase, determine which [license type](../enterprise/service-admin-licensing-organization.md) you need. Power BI offers several per-user licenses: free, Pro, and Premium Per User. Power BI also offers a free trial upgrade for Premium Per User. When an individual signs-up or purchases Power BI, they're assigned a Power BI license automatically.  Not sure what type of license you need?  
 * With a free license, you can explore Power BI for personal data analysis and visualization using My Workspace, but you can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content. 
 * With a Pro license, you can collaborate with Premium per-user and Pro users by creating and sharing content. If that content is in Premium capacity, a Pro user can collaborate with free, Premium per user, and Pro users by creating and sharing content.	
 * With a Premium Per User license, you can access Premium features for yourself and other users who also have a Premium Per User license.  A Power BI Premium subscription unlocks access to a variety of features, capabilities, and types of content that are only available through Premium. Power BI Premium is available as an add-on to Power BI Pro.
- For information about Premium subscriptions, see [What is Power BI Premium?](../admin/service-premium-what-is.md).
+ For information about Premium subscriptions, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md).
 
 > [!NOTE]
 > Direct purchase of or upgrade to Pro or Premium Per User isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
-For more information about licenses and subscriptions, see [Licensing in Power BI](../admin/service-admin-licensing-organization.md).
+For more information about licenses and subscriptions, see [Licensing in Power BI](../enterprise/service-admin-licensing-organization.md).
 
 ### Look up your current license
 You may already have access to Power BI. Perhaps your organization has already added you to a Power BI subscription. Also, some versions of product licenses, such as Office 365 E5, include a Power BI Pro license, so no separate sign-up for Power BI is needed. 
@@ -91,7 +91,7 @@ If you are unable to use self-service to get your own Power BI license it may be
 
 •	To learn more about the concepts of self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up)    
 
-•	If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).    
+•	If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md).    
 
-•	If you are a global administrator or billing administrator and don't want users in your organization to use self-service sign-up, see [Enable or disable self-service](../admin/service-admin-disable-self-service.md) to learn how to turn it off.    
+•	If you are a global administrator or billing administrator and don't want users in your organization to use self-service sign-up, see [Enable or disable self-service](../enterprise/service-admin-disable-self-service.md) to learn how to turn it off.    
 

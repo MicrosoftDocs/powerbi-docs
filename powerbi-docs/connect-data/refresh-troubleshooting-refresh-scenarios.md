@@ -103,10 +103,11 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the follow error message is logged into the refresh history:
 
-- *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+*The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
  
-If the error occurs frequently, modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations. 
+If the error occurs frequently, use the [schedule view](../connect-data/refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the table at the bottom of the [Premium limitations](../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2) section.
 
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations.
 
 ## Next steps
 

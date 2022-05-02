@@ -13,7 +13,7 @@ LocalizationGroup:
 
 # Advanced incremental refresh and real-time data with the XMLA endpoint
 
-Datasets in a Premium capacity with the [XMLA endpoint](../admin/service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh time limit](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+Datasets in a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh time limit](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 ## Partitions
 
@@ -83,7 +83,7 @@ With each refresh operation, the Power BI service may send initialization querie
 
 - The table you configure incremental refresh for should get data from a single data source. If the table gets data from more than one data source, the number of queries sent by the service for each refresh operation is multiplied by the number of data sources, potentially reducing refresh performance. Ensure the query for the incremental refresh table is for a single data source.
 - For solutions with both incremental refresh of import partitions and real-time data with Direct Query, *all partitions* must query data from a single data source.
-- If your security requirements allow, set the Data source privacy level setting to Organizational or Public. By default, the privacy level is Private, however this level can prevent data from being exchanged with other cloud sources. Set privacy level in **Dataset Settings** > **Data source credentials** > **Edit credentials** > **Privacy level setting for this data source**. If Privacy level is set in the Power BI Desktop model before publishing to the service, it is not transferred to the service when you publish. You must still set it in dataset settings in the service. To learn more, see [Privacy levels](../admin/desktop-privacy-levels.md).
+- If your security requirements allow, set the Data source privacy level setting to Organizational or Public. By default, the privacy level is Private, however this level can prevent data from being exchanged with other cloud sources. Set privacy level in **Dataset Settings** > **Data source credentials** > **Edit credentials** > **Privacy level setting for this data source**. If Privacy level is set in the Power BI Desktop model before publishing to the service, it is not transferred to the service when you publish. You must still set it in dataset settings in the service. To learn more, see [Privacy levels](../enterprise/desktop-privacy-levels.md).
 - If using an On-premises Data Gateway, be sure you’re using version 3000.77.3 or higher.
 
 ## Prevent timeouts on initial full refresh

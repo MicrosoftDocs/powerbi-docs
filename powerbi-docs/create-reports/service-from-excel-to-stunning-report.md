@@ -11,6 +11,9 @@ ms.date: 09/13/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in files on your laptop. In the past, it’s taken hours to create a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!

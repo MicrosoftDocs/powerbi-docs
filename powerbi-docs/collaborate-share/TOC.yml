@@ -48,14 +48,14 @@
       - name: "Data source impact analysis"
         href: service-data-source-impact-analysis.md
       - name: "Apply data sensitivity labels"
-        href: ../admin/service-security-apply-data-sensitivity-labels.md
+        href: ../enterprise/service-security-apply-data-sensitivity-labels.md
       - name: "Collaborate in a classic workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Microsoft 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: Power BI in Teams
       items: 
-      - name: Collaborate in Teams
+      - name: Collaborate in Teams, Outlook, & Office
         href: service-collaborate-microsoft-teams.md
       - name: Add the Power BI app to Teams
         href: service-microsoft-teams-app.md
@@ -83,8 +83,6 @@
         href: service-troubleshoot-sharing.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
-      - name: "Subscribe yourself and others"
-        href: service-report-subscribe.md
       - name: "Endorse your content"
         href: service-endorse-content.md
       - name: "Feature content on Home"
