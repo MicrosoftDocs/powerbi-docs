@@ -7,17 +7,18 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 05/02/2022
 ---
 
 # Capabilities and properties of Power BI visuals 
 
-Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the *capabilities.json* file are **optional**.
+Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. **All properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
 
-The *capabilities.json* file has the following format:
+The *capabilities.json* file lists the root objects in the following format:
 
 ```json
 {
+    "privileges": [ ... ],
     "dataRoles": [ ... ],
     "dataViewMappings": [ ... ],
     "objects":  { ... },
@@ -30,6 +31,7 @@ The *capabilities.json* file has the following format:
 
 When you create a new visual, the default *capabilities.json* file includes the following root objects:
 
+* [privileges](#privileges-define-the-special-permissions-that-your-visual-requires)
 * [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
@@ -51,6 +53,73 @@ The following additional root objects can be added as needed:
 * [subtotals](total-subtotal-api.md)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+
+## privileges: define the special permissions that your visual requires
+
+Privileges are special operations your visual requires to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
+
+### General privilege definition
+
+A JSON privilege definition contains these components:
+
+- `name` - (string) The name of the privilege.
+- `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege is not mandatory.
+- `parameters` - (string array) Arguments. `parameters` is optional, and if missing, it's considered an empty array.
+
+### Access external resources
+
+A visual that accesses any external resource must add a `WebAccess` privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+
+#### Example to access external resources
+
+```json
+{
+    "name": "WebAccess",
+    "essential": true,
+    "parameters": [ "https://*.microsoft.com", "http://example.com" ]
+}
+```
+
+The preceding definition means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual's normal work.
+
+### Access browser local storage
+
+If the visual accesses the browser local storage via the [Local Storage API](./local-storage.md), you must add a `LocalStorage` privilege in the capabilities section.
+
+#### Example to access browser local storage
+
+```json
+{
+    "name": "LocalStorage",
+    "essential": false
+}
+```
+
+The preceding definition means that the visual might need to access browser local storage, and that if it is not permitted access, it will continue to work anyway.
+
+### Common example of a privileges definition
+
+```json
+"privileges": [
+    {
+        "name": "WebAccess",
+        "essential": true,
+        "parameters": [ "https://*.virtualearth.net" ]
+    },
+    {
+        "name": "LocalStorage",
+        "essential": false
+    }
+]
+```
+
+### No privileges
+
+If the visual does not requires any special permissions, the `privileges` array should be empty:
+
+```json
+  "privileges": []
+```
 
 ## dataroles: define the data fields that your visual expects
 
