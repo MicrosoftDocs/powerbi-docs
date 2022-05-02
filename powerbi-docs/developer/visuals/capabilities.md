@@ -56,19 +56,19 @@ You can find all these objects and their parameters in the [*capabilities.json* 
 
 ## privileges: define the special permissions that your visual requires
 
-Privileges are special operations your visual requires to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
+Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
 ### General privilege definition
 
 A JSON privilege definition contains these components:
 
-- `name` - (string) The name of the privilege.
-- `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege is not mandatory.
-- `parameters` - (string array) Arguments. `parameters` is optional, and if missing, it's considered an empty array.
+* `name` - (string) The name of the privilege.
+* `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege isn't mandatory.
+* `parameters` - (string array)(optional) Arguments. If `parameters` is missing, it's considered an empty array.
 
 ### Access external resources
 
-A visual that accesses any external resource must add a `WebAccess` privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+A visual that accesses external resources must add that information as a privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
 #### Example to access external resources
 
@@ -80,11 +80,11 @@ A visual that accesses any external resource must add a `WebAccess` privilege in
 }
 ```
 
-The preceding definition means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual's normal work.
+The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
 
 ### Access browser local storage
 
-If the visual accesses the browser local storage via the [Local Storage API](./local-storage.md), you must add a `LocalStorage` privilege in the capabilities section.
+If the visual accesses the browser's local storage via the [Local Storage API](./local-storage.md), you must add a `LocalStorage` privilege in the capabilities section.
 
 #### Example to access browser local storage
 
@@ -95,9 +95,9 @@ If the visual accesses the browser local storage via the [Local Storage API](./l
 }
 ```
 
-The preceding definition means that the visual might need to access browser local storage, and that if it is not permitted access, it will continue to work anyway.
+The preceding definition means that the visual might need to access browser local storage, but if it's not permitted access, it will continue to work anyway.
 
-### Common example of a privileges definition
+### Example of a privileges definition
 
 ```json
 "privileges": [
@@ -113,9 +113,9 @@ The preceding definition means that the visual might need to access browser loca
 ]
 ```
 
-### No privileges
+### No privileges needed
 
-If the visual does not requires any special permissions, the `privileges` array should be empty:
+If the visual doesn't requires any special permissions, the `privileges` array should be empty:
 
 ```json
   "privileges": []
