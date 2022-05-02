@@ -7,6 +7,10 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Unable to load Power BI dataset list in Excel
+      href: known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md    
+    - name: Try it button missing on REST API pages
+      href: known-issues/known-issue-169-try-it-button-missing.md
     - name: Matrix banded row colors appear incorrectly in service 
       href: known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md                
     - name: DAX query fails due to parameter case sensitivity 
