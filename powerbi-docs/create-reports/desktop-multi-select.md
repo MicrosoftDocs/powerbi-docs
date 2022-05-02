@@ -61,7 +61,7 @@ The canvas doesn't automatically scroll with the rectangular lasso selection.
 You can select multiple data points within a visual using the same rectangular lasso steps in both Power BI Desktop and the Power BI service.
 This feature is in preview, so you need to enable it in Power BI Desktop before you can use it there or in the service.
 
-1. Select **File** > **Options and settings** > **Options**.
+1. In Power BI Desktop, select **File** > **Options and settings** > **Options**.
 1. In the **Options** dialog box, select **Preview features**, then select **Data point rectangle select**.
 1. Select **OK**. Power BI Desktop prompts you to reopen the current project for your changes to take effect.
 
