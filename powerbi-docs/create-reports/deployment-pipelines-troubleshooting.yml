@@ -9,7 +9,9 @@ metadata:
   ms.subservice: pbi-deployment-pipeline
   ms.date: 11/09/2021
 title: Deployment pipelines troubleshooting
-summary: Use this article to troubleshoot issues in deployment pipelines.
+summary: [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]]
+
+ Use this article to troubleshoot issues in deployment pipelines.
 
 
 sections:
