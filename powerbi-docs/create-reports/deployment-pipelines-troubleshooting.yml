@@ -9,7 +9,7 @@ metadata:
   ms.subservice: pbi-deployment-pipeline
   ms.date: 11/09/2021
 title: Deployment pipelines troubleshooting
-summary: [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]]
+summary: **APPLIES TO:** ❌&nbsp;Power&nbsp;BI&nbsp;Desktop ✔️&nbsp;Power&nbsp;BI&nbsp;service
 
  Use this article to troubleshoot issues in deployment pipelines.
 
