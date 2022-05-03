@@ -176,10 +176,12 @@ During deployment, the following item properties are copied and overwrite the it
 
 * Item relationships
 
-[Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
-* A new item is deployed.
+[Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels *will not* be copied during deployment.
 
-* An item is deployed to an empty stage.
+* A new item is deployed, or an existing item is deployed to an empty stage.
+
+    >[!NOTE]
+    > In cases where default labeling is enabled on the tenant, and the default label is valid, if the item being deployed is a dataset or dataflow, the label will be copied from the source item **only** if the label has protection. If the label is not protected, the default label will be applied to the newly created target dataset or dataflow.
 
 * The source item has a label with protection and the target item doesn't. In such cases, a pop-up window asking for consent to override the target sensitivity label appears.
 
