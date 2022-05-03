@@ -106,7 +106,7 @@ When using a Power BI dataset that has Row Level Security (RLS) defined as a dat
 
 To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
 
-Here'ss an example for supplying an effective user name for RLS.
+Here's an example of supplying an effective user name for RLS.
 
 ```json
 {
@@ -130,7 +130,7 @@ Getting the correct access token for the resource that you want to access can so
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
-Here's an example for supplying an effective user name with an access token.
+Here's an example for supplying an effective identity (user name) with an access token.
 
 ```json
 {
