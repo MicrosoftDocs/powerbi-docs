@@ -177,6 +177,7 @@ During deployment, the following item properties are copied and overwrite the it
 * Item relationships
 
 [Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
+
 * A new item is deployed.
 
 * An item is deployed to an empty stage.
