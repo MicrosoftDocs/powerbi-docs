@@ -412,7 +412,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 
 ## Rendering the visual
 
-Once the data is defined, we render the visual with the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
+Once the data is defined, we render the visual using the BarChart class that implements the`IVisual` interface. The `IVisual` interface is described on the [Visual API](visual-api.md) page. It contains a `constructor` method that creates the visual and an `update` method that is called each time the visual reloads.
 Before rendering the visual, we have to declare the members of the class:
 
 ```typescript
