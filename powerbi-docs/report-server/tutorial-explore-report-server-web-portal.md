@@ -32,7 +32,7 @@ For this tutorial, you need an Azure subscription. If you don’t have one, crea
 
 Luckily, the Power BI team has created a VM that comes with Power BI Report Server already installed.
 
-1. In the Azure Marketplace, select Power BI Report Server. This link opens it directly: [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. In the Azure Marketplace, select Power BI Report Server. This link opens it directly: [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftpowerbi.pbirs).  
 
 2. Select **Get it now**.
 3. To agree to the provider's terms of use and privacy policy, select **Continue**.
