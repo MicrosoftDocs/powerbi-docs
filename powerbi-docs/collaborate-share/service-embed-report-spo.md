@@ -106,10 +106,10 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you didn't sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI does not yet support multi-factor authentication with Azure Active Directory 2.0 - users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't yet support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 
@@ -124,9 +124,9 @@ Below are the settings you can adjust for the Power BI web part for SharePoint O
 | Show Nav Pane |Shows or hides the page nav pane. |
 | Show Filter Pane |Shows or hides the filter pane. |
 
-## Reports that do not load
+## Reports that don't load
 
-If your report does not load within the Power BI web part, you may see the following message:
+If your report doesn't load within the Power BI web part, you may see the following message:
 
 ![This content isn't available message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
@@ -143,7 +143,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
 ## Known issues and limitations
 
-* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
+* Error: "An error occurred, try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
   If you receive this error, try one of the troubleshooting steps below.
   
