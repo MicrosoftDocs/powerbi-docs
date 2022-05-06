@@ -113,7 +113,7 @@ Let’s create a simple formula. This task will help you further understand form
     
 10. Select the checkmark ![Checkmark icon](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the Sales table.
 
-You did it! You just created a complex measure by using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure in a Clustered column chart, then add Year as a slicer and select 2011, and then add QuarterOfYear as another Slicer and select 4, we get a chart like this:
+You did it! You just created a complex measure by using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure from the Sales table into a Clustered column chart, then from the Calendar table add Year as a slicer and select 2011, and then add QuarterOfYear as another Slicer and select 4, we get a chart like this:
 
 ![Previous Quarter Sales and SalesAmount chart](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
 
