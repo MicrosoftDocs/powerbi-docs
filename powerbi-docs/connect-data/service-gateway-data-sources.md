@@ -28,21 +28,21 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
     ![Manage gateways](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Select a gateway and then select **Add data source**. You can select the header text **ADD DATA SOURCE** or hover your cursor next to the gateway entry to reveal the more options menu.
+2. 2.	Select **New** at the top of the ribbon to add a new data source.
 
-    ![Add data source](media/service-gateway-data-sources/add-data-source.png)
+    ![Add data source](media/service-gateway-data-sources/new-datasource.png)
 
-3. Assign a name to your data source, then select the **Data Source Type**. In this example, we'll choose SQL Server.
+3. 3.	Choose the gateway you want to create the connection on, by providing the **Gateway cluster name**, then select the **Data Source Type.** In this example, we'll choose SQL Server.
 
-    ![Select SQL Server](media/service-gateway-data-sources/select-sql-server.png)
+    ![Select SQL Server](media/service-gateway-data-sources/data-source-type.png)
 
 4. Enter information about the data source. For SQL Server, provide the **Server** and **Database**.
 
-    ![Data source settings](media/service-gateway-data-sources/data-source-settings.png)
+    ![Data source settings](media/service-gateway-data-sources/server-database.png)
 
 5. Select an **Authentication Method** to use when connecting to the data source. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
 
-   :::image type="content" source="media/service-gateway-data-sources/basic-auth.png" alt-text="Basic authentication settings.":::
+   :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Basic authentication settings.":::
 
     > [!NOTE]
     > If the selected authentication method is OAuth:
@@ -53,7 +53,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
-    ![Screenshot of advanced settings. ](media/service-gateway-data-sources/advanced-settings-02.png)
+    ![Screenshot of advanced settings. ](media/service-gateway-data-sources/single-sign-on.png)
 
     You can either configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries** for DirectQuery-based reports and **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
@@ -74,13 +74,13 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
     >[!NOTE]
     > SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
 
-7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
+7. Optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
-    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Privacy level selections.":::
+    :::image type="content" source="media/service-gateway-data-sources/privacy-level-setting.png" alt-text="Privacy level selections.":::
 
-8. Select **Add**. You see *Connection Successful* if the process succeeds.
+8. Select **Create**. You see *CreatedbNew data source* if the process succeeds.
 
-    ![Connection successful](media/service-gateway-data-sources/connection-successful.png)
+    ![Connection successful](media/service-gateway-data-sources/data-source-succesful.png)
 
 You can now use this data source to include data from SQL Server in your Power BI dashboards and reports.
 
@@ -88,9 +88,9 @@ You can now use this data source to include data from SQL Server in your Power B
 
 You can remove a data source if you no longer use it. Removing a data source breaks any dashboards and reports that rely on that data source.
 
-To remove a data source, go to the data source and then select **Remove** from the more options menu. The more options menu appears when you hover your cursor next to the data source name.
+To remove a data source, select the data source and then select **Remove** from top ribbon. 
 
-![Remove a data source](media/service-gateway-data-sources/remove-data-source.png)
+![Remove a data source](media/service-gateway-data-sources/data-source-remove.png)
 
 ## Use the data source for scheduled refresh or DirectQuery
 
@@ -123,21 +123,20 @@ You can also give users and security groups administrative access to the gateway
 
 ### Add users to a data source
 
-1. From the page header in the Power BI service, select  **Settings** ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) > **Manage gateways**.
+1.	From the page header in the Power BI service, select **Settings > Manage gateways.**
+2.	Select the data source where you want to add users.
+3.	Select **Manage Users** from the top ribbon
+4.	Enter the users and mail-enabled security groups from your organization who will access the selected data source and assign the user role. Select **Share**, and the added member's name is added to the list of people who can publish reports that use this data source.
 
-2. Select the data source where you want to add users.
 
-3. Select **Users**, and enter the users and mail-enabled security groups from your organization who will access the selected data source. Select **Add**, and the added member's name is added to the list of people who can publish reports that use this data source.
-
-    ![Add user](media/service-gateway-data-sources/add-user.png)
+    ![Add user](media/service-gateway-data-sources/manage-users.png)
 
 Remember that you need to add users to each data source that you want to grant access to. Each data source has a separate list of users. Add users to each data source separately.
 
 ### Remove users from a data source
 
-On the **Users** tab for the data source, you can remove users and security groups that use this data source.
+On the **Manage Users** tab for the data source, you can remove users and security groups that use this data source.
 
-![Remove user](media/service-gateway-data-sources/remove-user.png)
 
 ## Store encrypted credentials in the cloud
 
