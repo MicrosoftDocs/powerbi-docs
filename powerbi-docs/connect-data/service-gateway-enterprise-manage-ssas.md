@@ -88,12 +88,12 @@ To get to the UPN mapping screen, follow these steps.
 3.	You see a box with **Map user names**.
 
 
-    ![UPN mapping screen](media/service-gateway-enterprise-manage-ssas/map-user-names.png)
+![UPN mapping screen](media/service-gateway-enterprise-manage-ssas/map-user-names.png)
 
 To see options to add rules and test for a given user, select **Add new rule**.
 
 
-    ![UPN mapping screen new rule](media/service-gateway-enterprise-manage-ssas/add-new-rules.png)
+![UPN mapping screen new rule](media/service-gateway-enterprise-manage-ssas/add-new-rules.png)
 
 > [!NOTE]
 > You might change a user that you didn't intend to change. For example, if **Replace (original value)** is contoso.com and **With (New name)** is @contoso.local, all users with a sign-in that contains @contoso.com are then replaced with @contoso.local. Also, if **Replace (Original name)** is dave@contoso.com and **With (New name)** is dave@contoso.local, a user with the sign-in of v-dave@contoso.com is sent as v-dave@contoso.local.
