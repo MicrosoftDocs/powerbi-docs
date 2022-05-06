@@ -29,7 +29,7 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 
 For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select **Analysis Services** for **Data Source Type** if you're connecting to either a multidimensional or tabular server.
 
-![Add the Analysis Services data source](media/service-gateway-enterprise-manage-ssas/new-data-source.png)
+:::image type="content" source="media/service-gateway-data-sources/new-data-source.png" alt-text=" Screenshot of Add the Analysis Services data source." :::
 
 Fill in the information for the data source, which includes **Server** and **Database**. The information that you enter for **Username** and **Password** is used by the gateway to connect to the Analysis Services instance.
 
@@ -38,6 +38,8 @@ Fill in the information for the data source, which includes **Server** and **Dat
 
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/data-source-credentials.png)
+:::image type="content" source="media/service-gateway-data-sources/new-data-source.png" alt-text=" Screenshot of Filling in the data source settings." :::
+
 
 After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or live connections against an Analysis Services instance that's on-premises. 
 
@@ -45,7 +47,7 @@ After you fill in everything, select **Create**. You can now use this data sourc
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-![Setting the privacy level](media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png)
+:::image type="content" source="media/service-gateway-data-sources/privacy-level-setting.png" alt-text=" Screenshot of Setting the privacy level." :::
 
 ## User names with Analysis Services
 
@@ -87,13 +89,11 @@ To get to the UPN mapping screen, follow these steps.
 2.	Select the data source, and then select the **Settings** button from the top ribbon.
 3.	You see a box with **Map user names**.
 
-
-![UPN mapping screen](media/service-gateway-enterprise-manage-ssas/map-user-names.png)
+:::image type="content" source="media/service-gateway-data-sources/map-user-names.png" alt-text=" Screenshot of UPN mapping screen." :::
 
 To see options to add rules and test for a given user, select **Add new rule**.
 
-
-![UPN mapping screen new rule](media/service-gateway-enterprise-manage-ssas/add-new-rules.png)
+:::image type="content" source="media/service-gateway-data-sources/add-new-rules.png" alt-text=" Screenshot of UPN mapping screen new rule." :::
 
 > [!NOTE]
 > You might change a user that you didn't intend to change. For example, if **Replace (original value)** is contoso.com and **With (New name)** is @contoso.local, all users with a sign-in that contains @contoso.com are then replaced with @contoso.local. Also, if **Replace (Original name)** is dave@contoso.com and **With (New name)** is dave@contoso.local, a user with the sign-in of v-dave@contoso.com is sent as v-dave@contoso.local.
@@ -127,7 +127,7 @@ To configure your gateway to perform the Active Directory lookup:
 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your Active Directory users. The following configuration values are examples. Specify the values based on your Active Directory configuration. These configurations are case sensitive, so make sure they match the values in Active Directory.
 
-    ![Azure AD settings](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+    :::image type="content" source="media/service-gateway-data-sources/gateway-enterprise-map-user-names_03.png" alt-text=" Screenshot of Azure AD settings." :::
 
     If no value is provided for the ADServerPath configuration, the gateway uses the default global catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon, as shown in the following example:
 
@@ -164,7 +164,7 @@ To create a mapping rule, enter a value for **Original name** and **New name** a
 | Replace (Original name) |The email address that you used to sign in to Power BI. |
 | With (New name) |The value you want to replace it with. The result of the replacement is what is passed to the EffectiveUserName property for the Analysis Services connection. |
 
-![Creating a mapping rule](media/service-gateway-enterprise-manage-ssas/replace-with-rule.png)
+:::image type="content" source="media/service-gateway-data-sources/replace-with-rule.png" alt-text=" Screenshot of Creating a mapping rule." :::
 
 When you select an item in the list, you can choose to reorder it by drag and drop. Or, you can delete the entry.
 
@@ -177,7 +177,7 @@ You can use a wildcard (*) for your **Replace (Original name)** string. It can o
 
 To validate what an original name is replaced with, enter a value for **Original name**. Select **Test rule**.
 
-![Testing a mapping rule](media/service-gateway-enterprise-manage-ssas/test-rule.png)
+:::image type="content" source="media/service-gateway-data-sources/test-rule.png" alt-text=" Screenshot of Testing a mapping rule." :::
 
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
@@ -269,7 +269,7 @@ After you publish, either from Power BI Desktop or **Get Data**, your reports sh
 
 If you're listed in the **Users** tab of the data source configured within the gateway and the server and database name match, you see the gateway as an option to use with scheduled refresh.
 
-![Displaying the users](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
+:::image type="content" source="media/service-gateway-data-sources/powerbi-gateway-enterprise-schedule-refresh.png" alt-text=" Screenshot of Displaying the users." :::
 
 ### Limitations of Analysis Services live connections
 
