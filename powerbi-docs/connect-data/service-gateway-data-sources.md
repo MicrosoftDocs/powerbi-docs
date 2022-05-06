@@ -29,21 +29,17 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
     :::image type="content" source="media/service-gateway-data-sources/manage-gateways.png" alt-text="Screenshot of Manage gateways.":::
 
 
-2. 2.	Select **New** at the top of the ribbon to add a new data source.
+2.	Select **New** at the top of the ribbon to add a new data source.
 
-    :::image type="content" source="media/service-gateway-data-sources/new-datasource.png" alt-text="Screenshot of Add data source.":::
-
-3. 3.	Choose the gateway you want to create the connection on, by providing the **Gateway cluster name**, then select the **Data Source Type.** In this example, we'll choose SQL Server.
-
-    :::image type="content" source="media/service-gateway-data-sources/data-source-type.png" alt-text="Screenshot of Select SQL Server.":::
+3.	Choose the gateway you want to create the connection on, by providing the **Gateway cluster name**, then select the **Data Source Type.** In this example, we'll choose SQL Server.
 
 4. Enter information about the data source. For SQL Server, provide the **Server** and **Database**.
 
-    :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of Data source settings.":::
+    :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of how to fill in data source settings.":::
 
 5. Select an **Authentication Method** to use when connecting to the data source. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
 
-   :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Basic authentication settings.":::
+   :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Screenshot of how to fill out authentication settings.":::
 
     > [!NOTE]
     > If the selected authentication method is OAuth:
@@ -54,7 +50,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
-    :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of advanced settings.":::
+    :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of advanced settings for data sources.":::
 
     You can either configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries** for DirectQuery-based reports and **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
@@ -77,12 +73,12 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 7. Optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
-    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Privacy level selections.":::
+    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Screenshot of the Privacy level selections for data sources.":::
 
 
 8. Select **Create**. You see *CreatedbNew data source* if the process succeeds.
 
-    :::image type="content" source="media/service-gateway-data-sources/data-source-succesful.png" alt-text="Screenshot of Connection successful.":::
+    :::image type="content" source="media/service-gateway-data-sources/data-source-succesful.png" alt-text="Screenshot of when the creation on connection is successful.":::
 
 You can now use this data source to include data from SQL Server in your Power BI dashboards and reports.
 
@@ -92,7 +88,7 @@ You can remove a data source if you no longer use it. Removing a data source bre
 
 To remove a data source, select the data source and then select **Remove** from top ribbon. 
 
-:::image type="content" source="media/service-gateway-data-sources/data-source-remove.png" alt-text="Screenshot of Remove a data source.":::
+:::image type="content" source="media/service-gateway-data-sources/data-source-remove.png" alt-text="Screenshot of how to remove a data source.":::
 
 ## Use the data source for scheduled refresh or DirectQuery
 
@@ -105,7 +101,7 @@ The link between your dataset and the data source in the gateway is based on you
 
 If you're listed in the **Users** tab of the data source configured in the gateway, and the server and database name match, you see the gateway as an option to use with scheduled refresh.
 
-:::image type="content" source="media/service-gateway-data-sources/gateway-connection.png" alt-text="Screenshot of Gateway connection.":::
+:::image type="content" source="media/service-gateway-data-sources/gateway-connection.png" alt-text="Screenshot of how to create gateway connection.":::
 
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added in the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
