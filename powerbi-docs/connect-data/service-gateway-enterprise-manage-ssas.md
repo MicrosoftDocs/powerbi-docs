@@ -202,9 +202,9 @@ Models provide security based on user roles. Roles are defined for a particular 
 
 Row-level security is specific to Analysis Services row-level security. Models can provide dynamic, row-level security. Unlike having at least one role that users belong to, dynamic security isn't required for any tabular model. At a high level, dynamic security defines a user’s read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows user name.
 
-A user’s ability to query and view model data is determined by:
+A user’s ability to query and viewmodel data is determined by:
 
-- The roles that their Windows user account belong to as a member.
+- The roles that their Windows user account belongs to as a member.
 - Dynamic row-level security, if it's configured.
 
 Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
