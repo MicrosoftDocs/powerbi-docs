@@ -29,7 +29,7 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 
 For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select **Analysis Services** for **Data Source Type** if you're connecting to either a multidimensional or tabular server.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-ssass/new-data-source.png" alt-text=" Screenshot of Add the Analysis Services data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/new-data-source.png" alt-text=" Screenshot of Add the Analysis Services data source." :::
 
 Fill in the information for the data source, which includes **Server** and **Database**. The information that you enter for **Username** and **Password** is used by the gateway to connect to the Analysis Services instance.
 
@@ -127,7 +127,7 @@ To configure your gateway to perform the Active Directory lookup:
 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your Active Directory users. The following configuration values are examples. Specify the values based on your Active Directory configuration. These configurations are case sensitive, so make sure they match the values in Active Directory.
 
-    :::image type="content" source="media/service-gateway-enterprise-manage-ssass/gateway-enterprise-map-user-names_03.png" alt-text=" Screenshot of Azure AD settings." :::
+    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png" alt-text=" Screenshot of Azure AD settings." :::
 
     If no value is provided for the ADServerPath configuration, the gateway uses the default global catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon, as shown in the following example:
 
