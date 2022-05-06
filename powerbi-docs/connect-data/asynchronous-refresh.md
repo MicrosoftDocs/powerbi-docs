@@ -84,10 +84,11 @@ Only one refresh operation at a time is accepted for a dataset. If there's a cur
 
 ### Parameters
 
-Specifying parameters is not required. If not specified, the default is applied.
+To perform an asynchronous refresh operation, in addition to the required `notifyOption` parameter, you must specify at least one additional parameter. Additional parameters can specify the default or an optional value. When specified, all other parameters are applied to the operation using the default value. If no additional parameter other than `notifyOption` is specified, a regular non-asynchronous refresh operation is performed.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
+|`notifyOption`| String |  |(Required) Mail notification options: `MailOnCompletion`, `MailOnFailure`, or `NoNotification`. |
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. <br>`Add` type is not supported.      |
 |`commitMode`    |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads on which to run processing commands in parallel. This value aligned with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
