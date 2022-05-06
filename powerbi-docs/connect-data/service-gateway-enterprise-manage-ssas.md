@@ -47,7 +47,7 @@ After you fill in everything, select **Create**. You can now use this data sourc
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-:::image type="content" source="media/service-gateway-data-sources/privacy-level-setting.png" alt-text=" Screenshot of Setting the privacy level." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png" alt-text=" Screenshot of Setting the privacy level." :::
 
 ## User names with Analysis Services
 
