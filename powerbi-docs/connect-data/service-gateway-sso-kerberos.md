@@ -297,7 +297,9 @@ For SAP HANA, SAP BW, and Teradata data sources, additional configuration is req
 
 After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries** is checked for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** is checked for Import based Reports.
 
-![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
+
+:::image type="content" source="media/service-gateway-sso-kerberos/single-sign-on-settings.png" alt-text=" Screenshot of adding settings for single-sign on." :::
+
 
 The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries** give a different behavior for DirectQuery based reports and Import based reports.
 
