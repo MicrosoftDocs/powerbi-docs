@@ -44,7 +44,7 @@ Choose how you want to get the report page URL.
 
     ![Screenshot of Power B I report Share option.](media/service-power-bi-powerpoint-add-in-install/share-report-option.png)
 
-1. Choose the permissions you want to grant and who you want to grant them to, as described in the [sharing reports documentation](service-share-dashboards#share-a-report-via-link). Click **Apply**.
+1. Choose the permissions you want to grant and who you want to grant them to, as described in the [sharing reports documentation](service-share-dashboards.md#share-a-report-via-link). Click **Apply**.
 
     ![Screenshot of Power B I report send link dialog.](media/service-power-bi-powerpoint-add-in-install/send-link-dialog.png)
 
