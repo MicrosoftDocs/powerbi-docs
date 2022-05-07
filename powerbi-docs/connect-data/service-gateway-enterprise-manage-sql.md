@@ -37,7 +37,7 @@ Under **Authentication Method**, choose either **Windows** or **Basic**. Choose 
 
 After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against a SQL Server that's on-premises. You see *Created New data source* if it succeeded.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sql/succesful-data-source-sql.png" alt-text=" Screenshot of succesful creation of SQL data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-sql/succesful-data-source-sql.png" alt-text=" Screenshot of successful creation of SQL data source." :::
 
 ### Advanced settings
 
