@@ -18,7 +18,7 @@ The Power BI add-in for PowerPoint enables you to add live, interactive data fro
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/storytelling.gif)
 
-You can add report pages to PowerPoint presentations starting from either PowerPower or Power BI.  For Power BI to be used as the starting point, the Power BI add-in for PowerPoint functionality must be enabled in your organization. See XXX for detail.
+You can add report pages to PowerPoint presentations starting from either PowerPower or Power BI.  For Power BI to be used as the starting point, the Power BI add-in for PowerPoint functionality must be enabled in your organization. See [Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint) for detail.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ The Power BI data that you see in PowerPoint using the Power BI add-in remains i
 
 ## Power BI administrator considerations
 
-* By default, Power BI users can insert the add-in into a new PowerPoint presentation directly from Power BI. Power BI admins can disable this functionality by turning off the Enable Power BI add-in for PowerPoint tenant setting. See XXX for detail.
+* By default, Power BI users can insert the add-in into a new PowerPoint presentation directly from Power BI. Power BI admins can disable this functionality by turning off the Enable Power BI add-in for PowerPoint tenant setting. See [Enable Power BI add-in for PowerPoint](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint) for detail.
 
     >[!NOTE]
     > Disabling this functionality in Power BI does not prevent people from adding Power BI report pages to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
