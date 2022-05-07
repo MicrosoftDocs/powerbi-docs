@@ -205,6 +205,10 @@ When auto-install occurs, users see the following notification in the Power BI s
 
 Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
+## Enable Power BI add-in for PowerPoint
+
+![Screenshot Power BI add-in for PowerPoint tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-enable-powerpoint-add-in-setting.png)
+
 ## Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 

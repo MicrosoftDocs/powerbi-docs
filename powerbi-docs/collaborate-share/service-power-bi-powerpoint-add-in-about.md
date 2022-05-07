@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/24/2022
+ms.date: 05/07/2022
 ---
 
 # About the Power BI add-in for PowerPoint
 
-The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means that the data shown in your presentation will always be up to date, and you'll be able to filter and drill down on data in real time in response to questions and feedback from your audience without having to switch contexts. You'll also be able to easily share your presentation with other team members in the meeting, enabling you to drive true data-driven conversations.
+The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means not only that the data shown in your presentation will always be up to date, but also that while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback without having to switch contexts. You'll also be able to easily share your presentation with other team members in the meeting, enabling you to drive true data-driven conversations.
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/storytelling.gif)
 
@@ -36,15 +36,18 @@ The Power BI data that you see in PowerPoint using the Power BI add-in remains i
     >[!NOTE]
     > Disabling this functionality in Power BI does not prevent people from adding Power BI report pages to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
 
-* Power BI entry points not available in sovereign and government. See Office documentation for documentations.
+* Power BI entry points for the add-in are not available in sovereign, government, and air-gapped clouds. For the availability of the add-in itself in these clouds, see the Office documentation.
 
-* Automatic licensing - ref back auto licensing feature. 
+* If auto-licensing for Power BI is enabled, users who don't have a Power BI account will be automatically signed up when they open a presentation that has a live Power BI report page added to it. This may impact the number of licenses that are available in your organization. See [Power BI license assignment](../enterprise/service-admin-disable-self-service) for more information.
+
+    If auto-licensing is not enabled, users who do not have Power BI accounts will be requested to sign up.
+
+* If your organization's Office subscription type is SubscriptionCommercial or SubscriptionCommericalPro, a button for the add-in will appear in the PowerPoint ribbon. The button is a direct link to the add-in offering in the Office add-in store (the button won't work if the user does not have access to the store).
 
 ## Next Steps
 
 * Add a Power BI report page to a PowerPoint slide
 * Use the Power BI add-in for PowerPoint
-
 
 ## Next steps
 
