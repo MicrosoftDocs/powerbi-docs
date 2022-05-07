@@ -38,7 +38,7 @@ The Power BI data that you see in PowerPoint using the Power BI add-in remains i
 
 * Power BI entry points for the add-in are not available in sovereign, government, and air-gapped clouds. For the availability of the add-in itself in these clouds, see the Office documentation.
 
-* If auto-licensing for Power BI is enabled, users who don't have a Power BI account will be automatically signed up when they open a presentation that has a live Power BI report page added to it. This may impact the number of licenses that are available in your organization. See [Power BI license assignment](../enterprise/service-admin-disable-self-service) for more information.
+* If auto-licensing for Power BI is enabled, users who don't have a Power BI account will be automatically signed up when they open a presentation that has a live Power BI report page added to it. This may impact the number of licenses that are available in your organization. See [Power BI license assignment](../enterprise/service-admin-disable-self-service.md) for more information.
 
     If auto-licensing is not enabled, users who do not have Power BI accounts will be requested to sign up.
 
