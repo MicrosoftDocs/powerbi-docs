@@ -207,6 +207,13 @@ Read more about the [Power BI app for Microsoft Teams](../collaborate-share/serv
 
 ## Enable Power BI add-in for PowerPoint
 
+The Power BI add-in for PowerPoint makes it possible for users to add live, interactive data from Power BI to a PowerPoint presentation. See XXX for more detail.
+
+When this setting is enabled, entry points for opening a new PowerPoint presentation with the add-in already loaded are available in Power BI. When this setting is disabled, the entry points in Power BI are unavailable.
+
+   >[!NOTE]
+    > Disabling this setting does not prevent people from using the add-in starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the add-in must be disabled in both Power BI and PowerPoint.
+
 ![Screenshot Power BI add-in for PowerPoint tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-enable-powerpoint-add-in-setting.png)
 
 ## Allow shareable links to grant access to everyone in your organization
