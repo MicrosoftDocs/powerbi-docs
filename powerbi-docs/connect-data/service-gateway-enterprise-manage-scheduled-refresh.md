@@ -36,7 +36,7 @@ For a list of data source types that can be used with scheduled refresh, see [Li
 
 After you fill in everything, select **Create**. You can now use this data source for scheduled refresh with your on-premises data. You see *Create New data source* if it succeeded.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/succesful-data-source-sql.png" alt-text=" Screenshot of credentials for SQL data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/succesful-data-source-sql.png" alt-text=" Screenshot of succesful creation for SQL data source." :::
 
 ### Advanced settings
 
