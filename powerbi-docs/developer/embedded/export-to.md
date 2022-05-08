@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/21/2022
+ms.date: 05/08/2022
 ---
 
 # Export Power BI report to file
@@ -178,8 +178,6 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 ---
 
-<<<<<<< HEAD
-=======
 ## Considerations and limitations
 
 # [Premium Gen2](#tab/gen2)
@@ -226,7 +224,6 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 ---
 
->>>>>>> a86b08f4097e7c042460b3942eb486890351667d
 ## Code examples
 
 When you create an export job, there are three steps to follow:
@@ -368,7 +365,7 @@ This is an end-to-end example for exporting a report. This example includes the 
 
 ```csharp
 private async Task<ExportedFile> ExportPowerBIReport(
-    Guid reportId,
+	Guid reportId,
 	Guid groupId,
 	FileFormat format,
 	int pollingtimeOutInMinutes,
@@ -437,25 +434,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
     }
 }
 ```
-
-## Considerations and limitations
-
-* The report you're exporting must reside on a Premium or Embedded capacity.
-* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
-    >[!NOTE]
-    >This limitation isn't applicable for Premium and Embedded Gen2 capacities. Instead, in Gen2, the number of Power BI exports is limited to 50 report pages per minute per capacity.
-* Exported reports cannot exceed a file size of 250 MB.
-* When exporting to .png, sensitivity labels are not supported.
-* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
-* The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
-  * Uncertified Power BI visuals
-  * R visuals
-  * PowerApps
-  * Python visuals
-  * Power Automate
-  * Visio
 
 ## Next steps
 

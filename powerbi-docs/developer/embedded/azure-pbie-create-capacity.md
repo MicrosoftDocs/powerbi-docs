@@ -17,11 +17,7 @@ ms.date: 05/08/2022
 This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
  >[!Important]
-<<<<<<< HEAD
- >From January 2022 all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../admin/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
-=======
- >From January 2022 all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../enterprise/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
->>>>>>> a86b08f4097e7c042460b3942eb486890351667d
+ >Within the next few months, all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../enterprise/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
 
 ## Before you begin
 
@@ -228,7 +224,7 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.m
 Use this template to create a classic Power BI Embedded resource.
 
 >[!NOTE]
-> Gen1 resources will be deprecated sometime during 2022
+> Gen1 resources will be deprecated in the beginning of 2021
 
 ```json
 {
@@ -367,50 +363,6 @@ To upgrade a Gen1 capacity to Gen2 in the Azure UI:
 3. Select **Yes** to confirm.
 
     :::image type="content" source="media/azure-pbie-create-capacity/confirm-upgrade.png" alt-text="Screenshot of a Power BI confirm upgrade in the Azure portal.":::
-
-The capacity will update automatically in a few seconds.
-
-### [ARM API](#tab/arm)
-
-Here's an example of a template for upgrading a capacity to Gen2:
-
-#### Request
-
-```http
-PATCH https://management.azure.com/subscriptions/613192d7-503f-477a-9cfe-4efc3ee2bd60/resourceGroups/TestRG/providers/Microsoft.PowerBIDedicated/capacities/azsdktest?api-version=2021-01-01
-```
-
-#### Request body
-
-```json
-{
-  "sku": {
-    "name": "A1",
-    "tier": "PBIE_Azure"
-  },
-  "tags": {
-    "testKey": "testValue"
-  },
-  "properties": {
-    "mode": "Gen2"
-  }
-}
-```
-
----
-
-## Upgrade a capacity to Gen2
-
-You can upgrade a Gen1 capacity to Gen2 in either the Azure UI portal, or the ARM API.
-
-### [Azure UI](#tab/ui)
-
-To upgrade a Gen1 capacity to Gen2 in the Azure UI:
-
-1. Select the capacity.
-2. From the overview section select **Update to Gen 2**.
-
-![Screenshot of a Power BI upgrade capacity option in the Azure portal.](media/azure-pbie-create-capacity/upgrade-to-gen-2.png)
 
 The capacity will update automatically in a few seconds.
 
