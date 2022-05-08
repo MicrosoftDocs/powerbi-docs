@@ -22,7 +22,7 @@ To manage Power BI visuals, you must be a Global Admin in Office 365, or have be
 
 To manage the tenant settings for Power BI visuals from the Admin Portal, go to **Tenant settings** and scroll down to **Power BI visuals**.
 
-:::image type="content" source="/media/organizational-visuals/powerbi-visuals-tenant-settings.png" alt-text="Screenshot of the Power B I visuals tenant settings location.":::
+:::image type="content" source="./media/organizational-visuals/powerbi-visuals-tenant-settings.png" alt-text="Screenshot of the Power B I visuals tenant settings location.":::
 
 The UI tenant settings only affect Power BI service. If you want these settings to take effect in Power BI Desktop, use group policies. A table at the end of each section provides details for enabling the setting in Power BI Desktop.
 
