@@ -14,7 +14,7 @@ ms.date: 05/08/2022
 
 # Add a live Power BI report page in PowerPoint
 
-To add a live Power BI report page to a PowerPoint slide, you first need to [get the URL](#get-the-report-page-url) to the page URL. You then [paste the URL](#paste-the-report-page-url-into-the-powerpoint-add-in) into the Power BI report add-in in PowerPoint.
+To add a live Power BI report page to a PowerPoint slide, you first need to [get the URL](#get-the-report-page-url) to the page URL. You then [paste the URL](#paste-the-report-page-url-into-the-add-in) into the Power BI report add-in in PowerPoint.
 
 ## Get the report page URL
 
@@ -81,7 +81,7 @@ Open the report to the page you want to insert, copy the URL from the browser's 
 
 ## Paste the report page URL into the add-in
 
-When you have the report page URL, paste it into the Power BI report add-in in PowerPoint.
+When you have the report page URL, paste it into the Power BI report add-in in PowerPoint. This step doesn't apply if you chose **Open in PowerPoint** while in Power BI.
 
 1. Open PowerPoint and navigate to the slide where you want to add the report.
 
@@ -94,13 +94,11 @@ When you have the report page URL, paste it into the Power BI report add-in in P
 
 1. The add-in will be added to the slide. Paste the report page URL into the text box and then click **Insert**. The report will load into the slide.
 
-    Once the report has loaded, you can configure it as desired. Any changes you make will be saved. The next time you open the presentation, the data will be refreshed, and the report it will appear in the state you left it in.  
-   
     The image below illustrates inserting the add-in into a slide and using the report URL.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/Animation.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
 
-    Once the report has loaded, you can configure it as desired. Any changes you make will be saved. The next time you open the presentation, the data will refresh, and the report will appear in the state you left it in.  
+    Once the report has loaded, you can configure it as desired. Any changes you make will be saved. The next time you open the presentation, the data will refresh, and the report will appear in the state you last left it in.  
 
 ## Next steps
 
