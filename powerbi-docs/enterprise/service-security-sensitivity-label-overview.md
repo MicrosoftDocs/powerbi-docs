@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 03/16/2022
+ms.date: 05/08/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -257,7 +257,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If the label applied to a .pbix file hasn't been published to the user in the Microsoft 365 compliance center, the user won’t be able to save the file in Desktop.
 
-* Publishing or importing a .pbix file that has a protected sensitivity label to the service via APIs running under a service principal isn't supported and will fail. To mitigate, users can remove the label and then publish using service principals.
+* Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 
 * Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
 
