@@ -138,10 +138,9 @@ Capacity admins, along with Power BI admins and global administrators, can bulk 
 
    | Selection | Description |
    | --- | --- |
-   | **Workspaces by users** | When you assign workspaces by user, or group, all the workspaces that the user or group is admin of become part of the Premium capacity, including the user's personal workspace. Said users automatically get workspace assignment permissions.<br>This includes workspaces already assigned to a different capacity. |
+   | **Workspaces by users** | When you assign workspaces by user, or group, all the workspaces that the user or group is admin of become part of the Premium capacity, including the user's personal workspace. The users automatically get workspace assignment permissions.<br>This includes workspaces already assigned to a different capacity. |
    | **Specific workspaces** | Enter the name of a specific workspace to assign to the selected capacity. |
    | **The entire organization's workspaces** | Assigning the entire organization's workspaces to Premium capacity assigns all workspaces and My Workspaces, in your organization, to this Premium capacity. In addition, all current and future users will have the permission to reassign individual workspaces to this capacity. |
-   | | |
 
 1. Select **Apply**.
 
