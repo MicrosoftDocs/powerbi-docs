@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/18/2022
+ms.date: 05/08/2022
 ---
 
 # Add a live Power BI report page in PowerPoint
