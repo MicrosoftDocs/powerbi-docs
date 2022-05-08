@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/22/2021
+ms.date: 4/26/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,104 @@ ms.date: 10/22/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## April 2022 QFE 1
+
+*Version: 2.104.941.0, Released: April 26, 2022*
+
+Bug fixes/improvements:
+- Fix for DAX expressions: the DAX parsing process in the formula bar now runs faster and the application does not hang.
+- Fix for DirectQuery connections in Shared: it's now possible to add a DirectQuery connection to an existing report. 
+- Fix for the format pane of bar charts: X-axis and Y-axis field well names are now mapped correctly and only their names are displayed. 
+- Fix for stacked column charts with logarithmic scale: users can now apply Y axis log scale even if the legend field is present.
+- Fix for the condition used to test disabled date bounds in calendar: users can now select last date in the calendar popup. 
+
+## March 2022 QFE 1
+
+*Version: 2.103.881.0, Released: March 28, 2022*
+
+Bug fixes/improvements:
+- Fix for the new format pane of matrix visuals: now the URL icon on rows/columns & horizontal scroll bar will work.
+- Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers will not be available and as a result, users' reports will not be changed. 
+- Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs will not disappear after the model refresh.
+- AS engine fix: now the `language` in the AS config file will always be set to en-us regardless of the Power BI Desktop UI language to prevent issues with the AS engine's start.
+- Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
+
+## February 2022 QFE 1
+
+*Version: 2.102.845.0, Released: February 24, 2022*
+
+Bug fixes/improvements:
+- Dynamics 365 (Dataverse) entry in GetData which redirects to Dataverse connector is removed from the GetData list.
+- Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
+- Fix for fields well description: a multiline field's tooltip will not be cut off and will be fully visible.
+- Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
+- Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
+- Fix for perspective selection in the proxy models navigator.
+
+## December 2021 QFE 3
+
+*Version: 2.100.1401.0, Released: January 20, 2022*
+
+Bug fixes/improvements:
+- Fix for creating hybrid incremental refresh policies on DirectQuery over M queries: now users will be able to create a hybrid incremental refresh policy for the import tables that use DirectQuery over M. 
+- Fix for the "Power BI Desktop infrastructure update" preview feature: now when the feature is on, Quick measure dropdown dialog will not gray out and will work as expected.
+- Fix for Proxy models: now when adding new table on the proxy source relationship with IncludeFutureArtifacts = false, the relationship to the original table will be created and proxy model will be refreshed.  
+
+## December 2021 QFE 2
+
+*Version: 2.100.1182.0, Released: January 10, 2022*
+
+Bug fixes/improvements:
+- Fix for the drop action: now no exception/error message will appear when dragging and dropping into a drill-through bucket.
+- AS engine start telemetry fix: Power BI application and the corresponding AS engine process should start successfully after locking/unlocking the screen.
+ 
+## December 2021 QFE 1
+
+*Version: 2.100.785.0, Released: December 21, 2021*
+
+Bug fixes/improvements:
+- Fix for calculation groups: duplicated measures will not be shown in the field list for PBIX files with calculation groups.
+- Accessibility fixes for hierarchical slicer. 
+ 
+## November 2021 QFE 2
+
+*Version: 2.99.862.0, Released: November 30, 2021*
+
+Bug fixes/improvements:
+- Fix for ArcGIS Maps visual sign-in issue: now the sign-in window for the visual will pop-up (when "Power BI Desktop infrastructure update" preview feature is off).
+
+## November 2021 QFE 1
+
+*Version: 2.99.782.0, Released: November 23, 2021*
+
+Bug fixes/improvements:
+- Fix for Custom Visuals Store: now if a user isn't connected to the internet, they can still close the marketplace window.
+- Fix for Print to PDF: now works for users that have the WebView2 feature turned off and don't have the new version of WebView2 installed.
+
+
+## October 2021 QFE 3
+
+*Version: 2.98.1025.0, Released: November 3, 2021*
+
+Bug fixes/improvements:
+- Formula bar Intellisense fix: now it's possible to save DAX expressions in localized format and use localized DAX separators. 
+
+## October 2021 QFE 2
+
+*Version: 2.98.1004.0, Released: October 28, 2021*
+
+Bug fixes/improvements:
+- Fix for the progress dialog: now Import/Refresh progress bar will be shown as expected.
+- Formula bar fixes: 
+   - "best" available list will be shown as the suggestion list;
+   - the parameter hints intellisense widget will cover function contents for multi-line measures; 
+   - DAX intellisense service is updated to set the right UI culture and respect localized DAX separate options; 
+   - the parameter hints will be shown when a suggestion is accepted;
+   - error won't be thrown for table names that start with "'";
+   - few icons are added to the suggestions list to make the suggestion clear and avoid confusion;
+   - missing function parameter information is added for some DAX functions and now intellisense works for them;
+   - the latest icon files will be shown for variable and enum formula bar icons.
 
 ## October 2021 QFE 1
 

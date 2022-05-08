@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 03/05/2020
+  ms.date: 11/15/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -41,6 +41,8 @@ landingContent:
         links:
           - text: What's new in Power BI?
             url: desktop-latest-update.md
+          - text: The new Format pane in Power BI Desktop
+            url: desktop-format-pane.md
 
   # Card (optional)
   - title: Get started with Learn
@@ -68,7 +70,5 @@ landingContent:
         links:
           - text: "Power BI videos"
             url: videos.md 
-          - text: "Power BI Desktop videos"
-            url: desktop-videos.md 
           - text: "Webinars"
             url: webinars.md

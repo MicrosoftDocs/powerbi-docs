@@ -2,8 +2,8 @@
 title: Power BI adoption roadmap conclusion
 description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -35,19 +35,19 @@ The rest of this article includes extra adoption-related resources that you migh
 
 ## Power BI adoption framework
 
-The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of _how_ to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
+The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of *how* to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
 
-The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the _why_ and _what_ of adopting Power BI, more so than the _how_.
+The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the *why* and *what* of adopting Power BI, more so than the *how*.
 
 ## Enterprise deployment whitepaper
 
 The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors. The whitepaper is updated every 12-24 months.
 
-The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
+The whitepaper goes deeper into the *what* and *how* of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
 
 ## Microsoft's BI transformation
 
-Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
+Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: *discipline at the core* and *flexibility at the edge*. It also shares Microsoft's views and experience about the importance of establishing a COE.
 
 ## Power Platform adoption
 
@@ -71,8 +71,8 @@ You may also find useful adoption-related guidance published by other Microsoft 
 
 A wide variety of other adoption guides for individual technologies can be found online. A few examples include:
 
-- [Microsoft Teams adoption guide](https://teamworktools.azurewebsites.net/tft/#p=1).
-- [Microsoft Security and Compliance adoption guide](https://teamworktools.azurewebsites.net/sec/).
+- [Microsoft Teams adoption guide](https://adoption.microsoft.com/files/tft/#p=1).
+- [Microsoft Security and Compliance adoption guide](https://adoption.microsoft.com/files/sec/).
 - [SharePoint Adoption Resources](https://resources.techcommunity.microsoft.com/resources/sharepoint-adoption/).
 
 ## Industry guidance

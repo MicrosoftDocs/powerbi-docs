@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 04/03/2021
+ms.date: 11/03/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
 ms.custom: intro-overview
@@ -45,7 +45,10 @@ You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop", and this 
 
 And because you'll working with *shared* content, you'll need one of the following:
 - a Power BI Pro or Premium Per User (PPU) license
-- for your organization to have a Power BI Premium subscription, and for the content to be shared with you from Premium capacity. 
+- for your organization to have a Power BI Premium subscription, and for the content to be shared with you from Premium capacity.
+
+> [!NOTE]
+> Users with PPU capacity subscriptions cannot share content with users who have a Pro or free license.
 
 For more information about licenses and subscriptions, see [Which license do I have?](end-user-license.md)
 

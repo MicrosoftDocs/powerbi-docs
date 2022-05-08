@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 11/03/2021
 LocalizationGroup: Dashboards
 ms.custom: intro-overview
 ---

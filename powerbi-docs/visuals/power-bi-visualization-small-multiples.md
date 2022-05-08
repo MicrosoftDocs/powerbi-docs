@@ -7,24 +7,25 @@ ms.reviewer: mihart, rienhu
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/12/2021
 LocalizationGroup: Visualizations
 ---
 # Create small multiples in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. The versions are presented side by side, with data divided across these versions by a chosen dimension. For example, a small multiple could split a “sales by category” column chart across product lines or regions.
+Small multiples, or trellising, splits a visual into multiple versions of itself. The versions are presented side by side, with data divided across these versions by a chosen dimension. For example, a small multiple could split a “sales by product” column chart across countries or customer segments.
 
-:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region.":::
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot showing a stacked column chart for sales by product split into small multiples by country.":::
 
 ## Create small multiples
 
-For live connected data models, this feature requires a version of AS which supports the second generation of DAX queries, aka SuperDAX: for tabular models, AS 2016 or newer; and for multidimensional models, AS 2019 or newer.
+For live connected data models, this feature requires a version of AS which supports the second generation of DAX queries, also known as SuperDAX: for tabular models, AS 2016 or newer; and for multidimensional models, AS 2019 or newer.
 
-Currently, you can create small multiples on bar, column, line, and area charts. 
+Currently, you can create small multiples on bar, column, line, and area charts.
 
-To get started, create one of the above visuals and choose a field along which you'd like to partition its data. Drag that field into the **Small multiples** well in the Fields section of the Visualizations pane. 
+To get started, create one of the above visuals and choose a field along which you'd like to partition its data. Drag that field into the **Small multiples** well in the Fields section of the Visualizations pane.
+
 Your chart splits into a 2×2 grid, with the data divided along your chosen dimension. The grid fills with the small multiples charts. They're sorted by your chosen sort order, from left to right, then top to bottom.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-two-by-two-grid.png" alt-text="Small multiples in a two-by-two grid.":::
@@ -43,8 +44,7 @@ You can change the dimensions of the grid in the Grid layout card:
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-grid-layout-card.png" alt-text="Small multiple grid layout card.":::
 
-The default is a 2×2 grid of small multiples, but you can adjust the number of rows and columns to up to 6×6. Any multiples that don't fit in that grid load as you scroll down.
-
+The default is a 2×2 grid of small multiples, but you can adjust the number of rows and columns up to 6×6. Any multiples that don't fit in that grid, load as you scroll down.
 
 ### Adjust the small multiples titles
 

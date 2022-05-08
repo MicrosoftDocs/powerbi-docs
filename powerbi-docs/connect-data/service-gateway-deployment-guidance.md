@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/04/2021
+ms.date: 11/17/2021
 LocalizationGroup: Gateways
 ---
 
@@ -56,6 +56,22 @@ The location of the gateway installation can have significant impact on your que
 ![Determine your Power BI tenant location](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
 If you intend to use the Power BI gateway with Azure Analysis Services, be sure that the data regions in both match. For more information about how to set data regions for multiple services, watch [this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+
+### Optimizing performance
+
+By default, the gateway will spool data before returning it to the dataset, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
+    
+1. In C:\Program Files\On-Premises data gateway\\**Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config** file, set the **StreamBeforeRequestCompletes** property to **True**, and then save. 
+
+    ```json
+    <setting name="StreamBeforeRequestCompletes" serializeAs="String">
+       <value>True</value>
+    </setting>
+    ```
+    
+1. In **On-premises data gateway** > **Service Settings**, restart the gateway.
+
+If installing the gateway on an Azure Virtual Machine (VM), ensure optimal networking performance by configuring Accelerated networking. To learn more, see [Create a Windows VM with accelerated networking](/azure/virtual-network/create-vm-accelerated-networking-powershell).
 
 ## Next steps
 

@@ -36,6 +36,9 @@ When you do, tables that are related to the original table are displayed in the 
 
 ![Showing related tables](media/desktop-modeling-view/modeling-view_05.png)
 
+>[!NOTE]
+>You can also find the 'Add related tables' option in the context menu on the background of the model view. When clicked, any table that has any relationship to any table already included in the layout will be added to the layout.
+
 ## Setting common properties
 
 You can select multiple objects at once in Modeling view by holding down the **Ctrl** key and clicking multiple tables. When you select multiple tables they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.
@@ -49,7 +52,7 @@ For example, you could change the [storage mode](desktop-storage-mode.md) for mu
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 
-* [Aggregations in Power BI Desktop (Preview)](../admin/aggregations-auto.md)
+* [Aggregations in Power BI Desktop (Preview)](../enterprise/aggregations-auto.md)
 * [Composite models in Power BI Desktop](desktop-composite-models.md)
 * [Storage Mode in Power BI Desktop (Preview)](desktop-storage-mode.md)
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)

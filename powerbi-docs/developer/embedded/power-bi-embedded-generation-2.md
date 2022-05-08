@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 01/02/2022
 ms.custom: intro-overview
 ---
 
@@ -21,7 +21,14 @@ All of the Power BI Embedded Gen1 capabilities such as pausing and resuming the 
 * **Greater scale** - Including the following enhancements:
 * *No limits on refresh concurrency* - You no longer need to track schedules for datasets being refreshed on your capacity
 
+<<<<<<< HEAD
   * *Fewer memory restrictions*
+=======
+  * *No limits on refresh concurrency* - You no longer need to track schedules for datasets being refreshed on your capacity
+
+  * *Fewer memory restrictions*
+
+>>>>>>> a86b08f4097e7c042460b3942eb486890351667d
   * *Complete separation between report interaction and scheduled refreshes*
 
 * **Lower entry level for paginated reports and AI workloads** – Start with an *A1* SKU and grow as you need.
@@ -42,13 +49,14 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 ## Understanding Embedded Gen2
 
-Embedded Gen 2 has the same [architecture improvements](../../admin/service-premium-architecture.md), [capacity load evaluation](../../admin/service-premium-concepts.md) and [background operation scheduling](../../admin/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
+Embedded Gen 2 has the same [architecture improvements](../../enterprise/service-premium-architecture.md), [capacity load evaluation](../../enterprise/service-premium-concepts.md) and [background operation scheduling](../../enterprise/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
 
 ## Autoscaling in Embedded Gen2
 
 Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, customers can configure autoscale using these options:
 
 * [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
+<<<<<<< HEAD
 * Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU* and *Overload*.
 * [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
 
@@ -58,10 +66,26 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 ## Considerations and limitations
 
 * Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [updates for Premium Gen2](../../admin/service-premium-gen2-what-is.md#updates-for-premium-gen2).
+=======
+
+* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
+
+* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
+## Considerations and limitations
+
+>>>>>>> a86b08f4097e7c042460b3942eb486890351667d
 * Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements)
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
+<<<<<<< HEAD
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
 * For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+=======
+
+* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+
+* For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+>>>>>>> a86b08f4097e7c042460b3942eb486890351667d
 
 ## Next steps
 
@@ -72,10 +96,7 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+> [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+>[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)

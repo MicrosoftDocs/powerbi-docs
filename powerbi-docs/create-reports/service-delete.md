@@ -11,6 +11,9 @@ ms.date: 09/12/2021
 LocalizationGroup: Common tasks
 ---
 # Delete almost anything in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 This article shows you how to delete a dashboard, report, workbook, dataset, app, visualization, or a workspace in the Power BI service. You can delete almost anything in the Power BI service, with some exceptions. 
 
 ## Delete a dashboard, report, dataset, or workbook
@@ -31,7 +34,7 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 
    ![Screenshot of select apps.](media/service-delete/power-bi-delete-app.png)
 
-   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your [Notifications center](../consumer/end-user-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
+   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your Notifications center to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
 
 ## Remove or delete a workspace
 

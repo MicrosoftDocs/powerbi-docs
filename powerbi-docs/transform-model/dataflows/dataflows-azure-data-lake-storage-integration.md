@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/27/2021
+ms.date: 3/02/2022
 LocalizationGroup: Data from files
 ---
 # Configuring dataflow storage to use Azure Data Lake Gen 2 
@@ -22,15 +22,19 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 ## Prerequisites
 
-- To bring your own ADLS Gen 2 account, you must have owner permissions at the storage account layer. Permissions at the resource group or subscription level will *not* work. If you are an administrator, you still must assign yourself owner permission.  **Currently not supporting ADLS Gen2 Storage Accounts behind a firewall**.
+- To bring your own ADLS Gen 2 account, you must have [Owner](/azure/role-based-access-control/built-in-roles#owner) permission at the storage account layer. Permissions at the resource group or subscription level will *not* work. If you are an administrator, you still must assign yourself [Owner](/azure/role-based-access-control/built-in-roles#owner) permission.  **Currently not supporting ADLS Gen2 Storage Accounts behind a firewall**.
 
 - The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled.
 
 - The storage account must be created in the same Azure Active Directory tenant as the Power BI tenant.
 
+- The user must have Azure Blob Data Contributor role, and a Owner role at the storage account level.
+
+- The Power BI workspace tenant region should be the same as the storage account region.
+
 - TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 
-- Attaching a dataflow with ADLS Gen 2 behind multi-factor authentication (MFA) is not supported.
+- Attaching a dataflow with ADLS Gen 2 behind multifactor authentication (MFA) is not supported.
 
 - Finally, you can connect to any ADLS Gen 2 from the admin portal, but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 

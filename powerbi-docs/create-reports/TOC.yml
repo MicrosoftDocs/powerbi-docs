@@ -30,8 +30,12 @@
     items: 
     - name: "Get samples for Power BI"
       href: sample-datasets.md
+    - name: "Artificial intelligence sample"
+      href: sample-artificial-intelligence.md
     - name: "COVID-19 US sample"
       href: sample-covid-19-us.md
+    - name: "Power BI Release Plan report"
+      href: ../connect-data/service-connect-to-power-bi-release-plan.md
     - name: "Customer Profitability sample"
       href: sample-customer-profitability.md
     - name: "IT Spend Analysis sample"
@@ -61,6 +65,8 @@
         href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
+      - name: "The new Format pane"
+        href: ../fundamentals/desktop-format-pane.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "About accessibility"
@@ -95,7 +101,7 @@
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
         href: ../paginated-reports/report-builder-planning-report.md
-      - name: Report Builder data
+      - name: Understanding paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
@@ -138,6 +144,8 @@
         href: service-report-create-new.md
       - name: "Create a report quickly from a SharePoint list"
         href: service-quick-create-sharepoint-list.md
+      - name: "Visualize data quickly from Power Apps and Dynamics 365 apps"
+        href: dynamics-quick-create-report.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -149,9 +157,7 @@
       - name: "Create modern visual tooltips"
         href: desktop-visual-tooltips.md        
       - name: "Power Automate button visual"
-        href: power-bi-automate-visual.md
-      - name: "Export reports to PDF files"
-        href: desktop-export-to-pdf.md             
+        href: power-bi-automate-visual.md            
       - name: Filters and slicers in reports
         items: 
         - name: "Add a filter to a report"
@@ -172,22 +178,24 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
-      - name: "Apply insights to explain fluctuations in visuals"
-        href: desktop-insights.md
-      - name: "Use insights to discover how distributions vary"
-        href: desktop-insights-find-where-different.md
-      - name: "Create buttons"
-        href: desktop-buttons.md
-      - name: "Customize buttons"
-        href: power-bi-customize-button.md
+        - name: "Multi-select data elements, points, visuals"
+          href: desktop-multi-select.md
+      - name: Bookmarks and buttons
+        items: 
+         - name: "Create buttons"
+           href: desktop-buttons.md
+         - name: "Customize buttons"
+           href: power-bi-customize-button.md
+         - name: "Create bookmarks to save and share insights"
+           href: desktop-bookmarks.md
+         - name: "Create page and button navigators"
+           href: button-navigators.md
       - name: "Create drillthrough buttons"
         href: desktop-drill-through-buttons.md
       - name: "Use the drillthrough feature"
         href: desktop-drillthrough.md      
       - name: "Use the cross-report drillthrough feature"
         href: desktop-cross-report-drill-through.md              
-      - name: "Create bookmarks to save and share insights"
-        href: desktop-bookmarks.md
       - name: "Work with report themes"
         href: desktop-report-themes.md
       - name: "Apply grouping and binning"
@@ -214,6 +222,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in a table, matrix, or slicer"
         href: power-bi-images-tables.md
+      - name: "Create sparklines in a table or matrix"
+        href: power-bi-sparklines-tables.md
       - name: "Display custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Apply conditional table formatting"
@@ -222,8 +232,6 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort one column by another"
         href: desktop-sort-by-column.md
-      - name: "Optimize reports for the mobile apps"
-        href: desktop-create-phone-report.md
       - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"
@@ -252,6 +260,18 @@
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
         href: desktop-upload-desktop-files.md
+    - name: Mobile-optimized reports
+      items:
+      - name: "About mobile-optimized reports"
+        href: power-bi-create-mobile-optimized-report-about.md
+      - name: "Mobile layout view"
+        href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
+      - name: "Create an initial layout"
+        href: power-bi-create-mobile-optimized-report-initial-layout.md
+      - name: "Optimize visual formatting"
+        href: power-bi-create-mobile-optimized-report-format-visuals.md
+      - name: "Rearrange visual layering"
+        href: power-bi-create-mobile-optimized-report-order-layers.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
@@ -278,7 +298,7 @@
         href: ../visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a report visualization"
         href: ../visuals/power-bi-visualization-copy-paste.md
-      - name: "Export the data that was used to create a visualization"
+      - name: "Export the data that was used to create a visualization to Excel"
         href: ../visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visual in a report"
         href: ../visuals/power-bi-visualization-move-and-resize.md
@@ -300,11 +320,13 @@
         href: ../visuals/power-bi-visualization-kpi.md
       - name: "Paginated report visuals"
         href: ../visuals/paginated-report-visual.md
+      - name: "Scorecard visuals"
+        href: ../visuals/power-bi-visualization-scorecard-visual.md
       - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
           href: ../visuals/desktop-shape-map.md
-        - name: "Filled maps (choropleths)"
+        - name: "Filled maps (choropleth maps)"
           href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
         - name: "ArcGIS maps"
           href: ../visuals/power-bi-visualizations-arcgis.md
@@ -312,20 +334,24 @@
           href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: Azure Maps in Power BI
         items: 
-        - name: "Get started with Azure Maps Power BI visual"
+        - name: "Get started with Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
-        - name: "Layers in the Azure Maps Power BI visual"
+        - name: "Layers in the Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
         - name: "Add a bubble layer"
           href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
         - name: "Add a bar chart layer"
           href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a pie chart layer"
+          href: /azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context
         - name: "Add a heat map layer"
           href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
         - name: "Add a reference layer"
           href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
         - name: "Add a tile layer"
           href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
+        - name: "Geocoding in Azure Maps visual"
+          href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
         - name: "Show real-time traffic"
           href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
         - name: "Manage the Azure Maps visual in your organization"
@@ -364,6 +390,10 @@
       items: 
       - name: "Insights(preview)"
         href: insights.md
+      - name: "Apply insights to explain fluctuations in visuals"
+        href: desktop-insights.md
+      - name: "Use insights to discover how distributions vary"
+        href: desktop-insights-find-where-different.md
       - name: "Transform your data with AI"
         items:
         - name: "Use AI Insights in Desktop"
@@ -444,6 +474,16 @@
         href: service-goals-create-connected.md
       - name: "Stay on top of your goals"
         href: service-goals-check-in.md        
+      - name: "Set goal-level permissions"
+        href: service-goals-set-permissions.md
+      - name: "Arrange goals and columns in scorecards"
+        href: service-goals-move.md
+      - name: "Create custom statuses"
+        href: service-goals-custom-status.md
+      - name: "Goals and Power Automate"
+        href: service-goals-power-automate.md
+      - name: "Create and add Scorecards in reports"
+        href: ../visuals/power-bi-visualization-scorecard-visual.md   
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
@@ -476,8 +516,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Dashboard data classification"
-        href: service-data-classification.md
       - name: "Dashboard themes"
         href: service-dashboard-themes.md
     - name: Paginated reports
@@ -486,6 +524,8 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Edit a paginated report from the Power BI service
         href: ../paginated-reports/paginated-reports-edit-service.md
+      - name: Create exportable formatted data tables
+        href: ../paginated-reports/paginated-formatted-table.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
@@ -514,6 +554,8 @@
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
+      - name: "Assign a workspace"
+        href: deployment-pipelines-assign.md        
       - name: "Troubleshooting"
         href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility

@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 02/03/2022
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -95,6 +95,7 @@ There are a few considerations and limitations to keep in mind when you work wit
    - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
    - The [ESRI ArcGIS visual](../visuals/power-bi-visualizations-arcgis.md) is not supported
    - R and Python visuals are not supported.
+   - Visuals in a drill down state will be exported in their default state. 
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
 * Some reports cannot be exported. These include:
@@ -106,6 +107,7 @@ There are a few considerations and limitations to keep in mind when you work wit
     - Report pages that take longer than 6 minutes to load. 
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
+* The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 

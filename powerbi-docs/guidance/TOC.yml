@@ -120,17 +120,17 @@
         href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
-      - name: "Migration overview"
+      - name: "Migration overview"
         href: powerbi-migration-overview.md
       - name: "Prepare to migrate"
         href: powerbi-migration-pre-migration-steps.md
       - name: "Gather requirements"
         href: powerbi-migration-requirements.md
-      - name: "Plan deployment"
+      - name: "Plan deployment"
         href: powerbi-migration-planning.md
-      - name: "Conduct proof of concept"
+      - name: "Conduct proof of concept"
         href: powerbi-migration-proof-of-concept.md
-      - name: "Create content"
+      - name: "Create content"
         href: powerbi-migration-create-validate-content.md
       - name: "Deploy to Power BI"
         href: powerbi-migration-deploy-support-monitor.md
@@ -164,11 +164,43 @@
         href: powerbi-adoption-roadmap-system-oversight.md
       - name: "Conclusion"
         href: powerbi-adoption-roadmap-conclusion.md
-  - name: Center of Excellence (COE)
+  - name: Implementation planning
+    items: 
+      - name: "Introduction"
+        href: powerbi-implementation-planning-introduction.md
+      - name: Usage scenarios
+        items:
+        - name: "Usage scenarios overview"
+          href: powerbi-implementation-planning-usage-scenario-overview.md
+        - name: "Personal BI"
+          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
+        - name: "Team BI"
+          href: powerbi-implementation-planning-usage-scenario-team-bi.md
+        - name: "Departmental BI"
+          href: powerbi-implementation-planning-usage-scenario-departmental-bi.md
+        - name: "Enterprise BI"
+          href: powerbi-implementation-planning-usage-scenario-enterprise-bi.md
+        - name: "Managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md
+        - name: "Customizable managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
+        - name: "Self-service data preparation"
+          href: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
+        - name: "Advanced data preparation"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md
+        - name: "Prototyping and sharing"
+          href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
+        - name: "Self-service content publishing"
+          href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+        - name: "Advanced data model management"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
+        - name: "On-premises reporting"
+          href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+  - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
         href: center-of-excellence-microsoft-business-intelligence-transformation.md
-      - name: "Establish a COE"
+      - name: "How Microsoft established a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md

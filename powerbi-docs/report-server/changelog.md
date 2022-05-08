@@ -7,32 +7,75 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2021
+ms.date: 03/04/2022
 ---
 
 # Change log for Power BI Report Server
 
-This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
+This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
-See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
+
+## January 2022
+- **Power BI Report Server**
+    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: Feburary 23, 2022*
+    	- Bug fixes
+    	   - Fixed issue with V3 reports with SAP HANA datasource and Kerberos single sign-on.
+    	   - Several minor UI fixes in new portal experience.
+    - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
+        - Features
+            - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
+            -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](/sql/reporting-services/branding-the-web-portal#colorsjson-example). 
+        - Bug fixes
+            -  Fixed various accessibility issues in new portal
+            -  Various small UI tweaks in new portal
+            -  Fixed issue with setting datetimes in subscriptions
+            -  Fixed issue with managing reports with multiple data sources
+            -  Fixed issue with username and password passed in via URL
+            -  Fixed issue related to KPIs with certain characters in name
+            -  Fixed issue blocking opening breadcrumb link in new tab
+            -  Fixed issue with saving changes when editing cache refresh plan
+            -  Fixed issue on parameter tab for reports with many parameters
+            -  Fixed issue in config tool connecting to SQL server to create ReportServer database
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.100.1381.0 (January 2022), Released: January 24, 2022*
+        - Support for January 2022 Power BI Report Server   
+       
 ## September 2021
 - **Power BI Report Server**
+    - *Version: 1.12.7981.11681 (build 15.0.1107.166), Released: December 6, 2021*
+    	- Version number update only, no functional changes.
+    - *Version: 1.12.7977.29537 (Build 15.0.1107.165), Released: November 9, 2021*
+        - Bug fixes
+            - Fixed issue blocking upload of CSV, XLS, and XLSB files.
+            - Fixed security issue related to certain PBIX files.
+            - Fixed issue where usernames with commas displayed oddly in new portal.
+            - Fixed issue with data parameters not displaying correctly.
+            - Fixed issue with download button not visible when viewing Excel workbooks.
+            - Fixed issue where PBIX data sources couldn't be edited if more than one existed.
+            - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
     - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
         - Features
-            - Updated support for Power BI Reports including those with small multiples.
+            - Updated support for Power BI reports including those with small multiples.
             - Updated Power BI Report Server portal experience as default experience.
         - Bug fixes
         - Deprecated support for Internet Explorer.
-
+        
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.97.2222.0 (September 2021), Released: December 6, 2021*
+        - Bug fix for the progress dialog: now import/refresh progress will be shown after import/refresh.
+        - Bug fix for table tooltips: now last refreshed time information will be available from table tooltips outside of the model view.
     - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
         - Contains changes required for connection with Power BI Report Server (September 2021).
         - Updated gallery view for custom visuals.
-        - Bug fixes
+        - Bug fixes.
 
 ## May 2021
 - **Power BI Report Server**
+    - *Version: 1.11.8091.10468 (Build 15.0.1106.457), Released: March 4, 2022*
+        - Security updates
     - *Version: 1.11.7815.26414 (Build 15.0.1106.169), Released: May 27, 2021*
         - Features
             - Added enhancements for PBIX reports containing "models with enhanced metadata".
@@ -63,7 +106,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue with URL filters causing PBIX reports to not load.
     - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
         - Features
-            - New Icons releate to Power BI and Power BI reports.
+            - New Icons relate to Power BI and Power BI reports.
             - Custom Visual API shipped with release - version 3.5.0
             - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
         - Bug fixes
@@ -112,7 +155,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - **Power BI Desktop (optimized for Power BI Report Server)**
    - *Version: 2.86.3481.0 (October 2020), Released: March 31, 2021*
         - Bug fixes
-   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2021*
+   - *Version: 2.86.2841.0 (October 2020), Released: February 5, 2021*
         - Bug fixes
    - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
         - Bug fixes

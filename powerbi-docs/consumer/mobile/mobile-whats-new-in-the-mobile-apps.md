@@ -7,10 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/12/2021
+ms.date: 04/27/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
+
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
@@ -18,6 +19,90 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## April 2022
+
+### Check your activity feed for goal updates (Android and iOS)
+Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your goals directly from the activity feed itself!
+
+![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
+
+### New minimum OS requirement for the Windows app
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
+
+### Goals now supports push notifications (Android and iOS)
+Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-goals.md#notifications)
+
+![Screenshot of goals notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
+
+## March 2022
+
+### Custom goal statuses in scorecards (Android and iOS)
+The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards. [Learn more about custom statuses](../../create-reports/service-goals-custom-status.md).
+
+## February 2022
+
+### You can now style and format your visuals especially for mobile layout (preview)
+New mobile layout formatting capabilities in Power BI Desktop enable you to style and format visuals specifically for mobile-optimized layout without affecting their formatting in desktop layout! [Read all about it in our blog!](https://aka.ms/mobileformattingblog)
+
+![Screenshot of the visualizations pane in Power B I mobile layout view.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
+
+
+## January 2022
+
+### New look and home page for the Power BI Windows app (general availability)
+
+The Power BI Windows app now opens directly in the new look. You land on the new home page, where you can easily find and access your most frequently and recently viewed items. The old look is no longer available.
+
+:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-new-look-ga.png" alt-text="Screenshot of the new look in the Windows app.":::
+
+### Request access to reports and dashboards from your Power BI Windows app
+
+Have a link to a report you don't have access to? Now you can request access directly from your Power BI Windows app!
+
+:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
+
+## December 2021
+
+### Non-mobile-optimized report pages now open directly in any orientation
+
+Non-mobile-optimized report pages now open no matter which way you're holding your phone. You no longer have to tip it on its side in order to view non-mobile-optimized pages. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small, regular view of the page instead. You can still tilt your phone if you want a larger view of  the data, or you can just use pinch and zoom on the smaller image.
+
+![Screenshots of non-optimized report pages.](media/mobile-whats-new-in-the-mobile-apps/power-bi-phone-report-page-not-optimized.png)
+
+### Dark mode now available in the Power BI app for Windows
+Try out the new dark mode in the Power BI app for Windows. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between light and dark themes in the app’s appearance settings. [Learn more](mobile-apps-dark-mode.md)!
+
+![Screenshot of dark mode in Windows app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-dark-mode-windows-app.png)
+
+### Recommended content hints now supported on Android devices
+Recommended content hints are supported on Android devices, just as they are for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
+
+## November 2021
+### Recommended content supports hints (iOS)
+We've added hints to the items recommended for you by Power BI to help you understand why they were picked for you as recommended content. Being able to see who opened, certified, or published an item can help you decide whether the item might be relevant for your work.
+
+![Screenshot of hints on recommened items in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-hints.png)
+
+### Updated report filters (iOS and Android phones)
+Our redesigned report filter pane makes it easier to understand the filters applied to reports and their visuals. The new filter pane also supports filter customizations done by the report creator. [Learn more](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone)!
+
+![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
+
+### Goals-related updates (iOS and Android)
+Goal-level permissions in Power BI enable goal and scorecard authors to grant different levels of access to different users for specific goals. For instance, some users may be permitted to add notes to a goal and/or to update the goal's status and current value, while other users may only be allowed to view specific goals within a scorecard. The mobile apps for iOS and Android support Power BI's goal-level permission model. [Learn more about goal-level permissions in Power BI](../../create-reports/service-goals-set-permissions.md).
+
+Scorecard creators can configure which attributes a goal has. For example, they can decide to show or hide columns. Customizing goal attributes can impact what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customized check-ins.
+
+## October 2021
+### Use QR codes with URL parameters (Android and iOS)
+Now when you scan a QR code that includes a URL to a report with query parameters, the app will open the report and filter it by these parameters. [Learn more about filtering Power BI reports with URL query parameters](../../collaborate-share/service-url-filters.md).
+
+### Pinch and zoom enabled for Report Server (Android and iOS)
+We've now enabled pinch and zoom also for reports hosted in Report Server, making it easier for you to zoom into your on-premises report content.
+
+### Windows 11 support
+We've made a number of changes to improve our support for Windows 11.
 
 ## September 2021
 ### Find content that’s relevant to you  (Android and iOS)
@@ -265,7 +350,7 @@ This month we've added support for cross-report drillthrough. You can now tap on
 
 #### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../admin/service-security-data-protection-overview.md).
+You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
 
 #### Support for custom app navigation (Windows)
 
@@ -280,7 +365,7 @@ Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing
 
 ### August 2019
 
-#### Introducting Power BI Mobile new look (preview) (iOS and Android)
+#### Introducing Power BI Mobile new look (preview) (iOS and Android)
 
 We've refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it's now quicker and easier to find what you need, when you need it.
 Since the new look is in preview, you will need to turn it on to enjoy it.
@@ -307,7 +392,7 @@ Report page tooltips are now supported when viewing reports in your mobile app. 
 ### June 2019
 
 #### Barcode scanning is now available in Android
-Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### Supporting PBIX reports hosted in PBI-RS over ADFS configuration (iOS, Android)
 
@@ -636,7 +721,7 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 
 #### All devices
 **Background color for phone reports**
-When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/desktop-create-phone-report.md).
+When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
 **Develop mobile-friendly Power BI visual**
 Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
@@ -703,7 +788,7 @@ Read the [January 2017 mobile apps blog feature summary](https://powerbi.microso
 Now, if you have a large table or matrix on your dashboard or report, we show as much data as possible in the tile. Then in focus mode, you can scroll down to load additional rows.
 
 **Phone report - general availability**
-Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../create-reports/desktop-create-phone-report.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
+Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../create-reports/power-bi-create-mobile-optimized-report-about.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
 
 #### iOS
 **SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
@@ -806,8 +891,7 @@ This custom visualization is now available on the Surface Hub
 **Favorites** 
 View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
-**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](../../create-reports/service-data-classification.md).
-
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards.
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
 
@@ -825,7 +909,7 @@ Manually refresh your tiles by opening the dashboard in the Power BI mobile app 
 **Support for Intune MAM**
 Added support for Microsoft Intune mobile application management (MAM) capabilities.
 
-Read more about [Microsoft Intune on Power BI mobile apps](../../admin/service-admin-mobile-intune.md).
+Read more about [Microsoft Intune on Power BI mobile apps](../../enterprise/service-admin-mobile-intune.md).
 
 #### Windows 10 devices
 **Full-screen and presentation modes**
@@ -888,7 +972,7 @@ More about [connecting to data in the real world](mobile-apps-data-in-real-world
 #### Filter data with barcodes (iPhone)
 Now you can scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. 
 
-More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+More about [filtering your data with barcodes](mobile-apps-scan-barcode.md).
 
 #### SQL Server 2016 Reporting Services mobile reports
 Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.
@@ -1011,7 +1095,7 @@ Read the [November 2015 Power BI mobile blog post](https://powerbi.microsoft.com
 * Improved chart data capacity.
 
 #### iOS and Android mobile apps
-* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../admin/service-admin-mobile-intune.md) to manage devices and applications.
+* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.

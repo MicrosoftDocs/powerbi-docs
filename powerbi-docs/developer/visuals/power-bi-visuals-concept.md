@@ -1,6 +1,6 @@
 ---
-title: Power BI visual interactions
-description: The article describes the interaction between the Power BI user, visual, and host.
+title: Power BI visual system integration
+description: This article describes the interaction between the Power BI user, visual, and host.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 02/05/2022
 ---
 
 # Power BI visuals system integration
@@ -19,9 +19,9 @@ The [`update` method](visual-api.md#update) is called whenever the visual's size
 
 Actions and subsequent updates in Power BI can be initiated by the user or by the visual itself. They usually occur in one of the following three patterns:
 
-1. [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
-2. [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
-3. [Visual interacts with Power BI](#visual-interacts-with-power-bi).
+* [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
+* [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
+* [Visual interacts with Power BI](#visual-interacts-with-power-bi).
 
 The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
@@ -63,10 +63,10 @@ The user can interact with Power BI to update a visual in the following ways:
 
 * A user selects a bookmark in the bookmarks panel of the report.
 
-    When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
+  When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
 
-    * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
-    * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
+  * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
+  * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
 
     In either case, the visual must change its state according to the received selections or `filter` object.
 
@@ -84,7 +84,7 @@ The user can also interact directly with the visual to update it as follows:
 
 * A user changes visual properties (For example, by expanding a tree) and the visual saves the new state in the visual properties.
 
-    A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
+    A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `persistProperties` method.
 
 * A user selects a URL.
 

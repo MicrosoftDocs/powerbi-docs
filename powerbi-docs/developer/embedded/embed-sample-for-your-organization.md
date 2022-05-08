@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 12/17/2020
+ms.date: 12/05/2021
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -19,12 +19,16 @@ Power BI embedded analytics allows you to embed Power BI content such as reports
 In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
+>
 >* Set up your embedded environment.
 >* Configure an *embed for your organization* (also known as *user owns data*) sample application.
 
 To use your application, your users will need to sign in to Power BI.
 
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
+
+> [!IMPORTANT]
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -53,9 +57,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     * One of the following licenses:
 
-        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)
+        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-        * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml)
+        * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need one of the following configurations:

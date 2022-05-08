@@ -19,8 +19,9 @@ The `DataViewUtils` is a set of functions and classes to simplify parsing of the
 
 To install the package, you should run the following command in the directory with your current custom visual:
 
-npm install powerbi-visuals-utils-dataviewutils --save
-This command installs the package and adds a package as a dependency to your package.json
+`npm install powerbi-visuals-utils-dataviewutils --save`
+
+This command installs the package and adds a package as a dependency to your `package.json` file.
 
 ## DataViewWildcard
 
@@ -30,7 +31,7 @@ This command installs the package and adds a package as a dependency to your pac
 
 Example:
 
- ```typescript
+```typescript
 import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 
 let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
