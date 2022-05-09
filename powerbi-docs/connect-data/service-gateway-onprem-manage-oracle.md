@@ -47,11 +47,11 @@ Under **Authentication Method**, you can choose either **Windows** or **Basic**.
 > [!NOTE]
 > All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-:::image type="content" source="media/service-gateway-onprem-manage-oracle/authentification-oracle.png" alt-text=" Screenshot of filling credentials for oracle data source." :::
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/authentication-oracle.png" alt-text=" Screenshot of filling credentials for oracle data source." :::
 
 After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an Oracle server that's on-premises. You see *Created New data source* if it succeeded.
 
-:::image type="content" source="media/service-gateway-onprem-manage-oracle/succesful-data-source-oracle.png" alt-text=" Screenshot of succesful creation for oracle data source." :::
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/successful-data-source-oracle.png" alt-text=" Screenshot of successful creation for oracle data source." :::
 
 ### Advanced settings
 
