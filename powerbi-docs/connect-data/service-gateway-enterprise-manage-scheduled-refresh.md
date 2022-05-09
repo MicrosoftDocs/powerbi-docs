@@ -23,7 +23,7 @@ For more information about how to add a data source, see [Add a data source](ser
 
 All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery/live connections.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/add-data-source-sql.png" alt-text=" Screenshot of adding SQL data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/add-data-source-sql.png" alt-text=" Screenshot of adding SQL data source to the gateway." :::
 
 Then fill in the information for the data source, which includes the source information and credentials that are used to access the data source.
 
