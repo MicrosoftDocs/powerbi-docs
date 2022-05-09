@@ -443,6 +443,7 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 - AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
 - AzureML models are not supported for Guest users.
+- There are some known issues with using Gateway with AutoML and Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models and AI functions.
 
 ## Next steps
 
