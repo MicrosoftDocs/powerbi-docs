@@ -69,6 +69,8 @@ To pass a Boolean value, use 0 for false and 1 for true. To pass a Float value, 
 > If your report contains a report parameter that has a default value, and the value of the **Prompt** property is **false** (that is, the **Prompt User** property isn't selected in Report Manager), then you can't pass a value for that report parameter within a URL. This provides administrators the option of preventing end users from adding or modifying the values of certain report parameters.
 > 
 > Power BI doesn't support a query string of more than 2,000 characters.  You may inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values.  To properly load the report, reduce the number of characters to under 2,000.
+>
+>  The limit in the query string is evaluated after you are logged in Power BI, if you open the report before login the limit is reduced.
 
 ## Additional examples 
 
