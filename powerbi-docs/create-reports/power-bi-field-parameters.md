@@ -1,5 +1,5 @@
 ---
-title: Let report readers dynamically change visuals using field parameters (preview)
+title: Let report readers use field parameters to change visuals (preview)
 description: Let report readers dynamically change the visuals in a report using field parameters.  
 author: Sujata994
 ms.author: sunaraya
@@ -10,20 +10,23 @@ ms.topic: how-to
 ms.date: 05/05/2022
 LocalizationGroup: Reports
 ---
-# Let report readers dynamically change visuals using field parameters (preview)
-Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they are interested in. 
+# Let report readers use field parameters to change visuals (preview)
+Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they're interested in. 
 
 In this example, the bar chart and table are dynamically updated. They measure COGS and analyze by Product based on the user’s selection within the slicers.
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Example field parameters that dynamically update visuals based on the report reader selection":::
  
-## Create a field parameter
-To get started you first need to enable the preview feature called **Field parameters**.
+## Enable the field parameter preview
+
+To get started you first need to enable the **Field parameters** preview feature.
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Preview features**.
 1. Select the **Field parameters** checkbox.
 
     :::image type="content" source="media/power-bi-field-parameters/preview-toggle.png" alt-text="Screenshot of Preview toggle for field parameters.":::
+
+## Create a field parameter
 
 1. To create a new field parameter, on the **Modeling** tab, select **New parameter** > **Fields**.
 
