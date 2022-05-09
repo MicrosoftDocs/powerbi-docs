@@ -70,7 +70,7 @@ To pass a Boolean value, use 0 for false and 1 for true. To pass a Float value, 
 > 
 > Power BI doesn't support a query string of more than 2,000 characters.  You may inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values.  To properly load the report, reduce the number of characters to under 2,000.
 >
->  The limit in the query string is evaluated after you're signed in Power BI. If you open the report before signing in, the limit is reduced.
+>  The limit in the query string is evaluated after you're signed in to Power BI. If you open the report before signing in, the limit is reduced.
 
 ## Additional examples 
 
