@@ -38,7 +38,7 @@ After the client is installed and ODAC is configured properly, we recommend usin
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **Oracle**.
 
-:::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text=" Screenshot of add oracle data source." :::
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text=" Screenshot of adding a oracle data source to the gateway." :::
 
 After you select the Oracle data source type, fill in the information for the data source, which includes **Server** and **Database**. 
 
