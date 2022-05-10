@@ -140,7 +140,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service and open the tile in focus mode. In the example below the dashboard and tile IDs are highlighted.
 
-    ```https```://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+    https\://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
 
     To open to this tile directly then, the link would be:
 
@@ -158,7 +158,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character report object id, navigate to the specific report in the Power BI service. The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-    ```https```://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
 
     If the report is not in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example, in this case the deep link would be:
 
@@ -174,7 +174,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-    ```https```://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
+    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
 
 * **Open in full-screen mode (for Windows devices only)**
 
