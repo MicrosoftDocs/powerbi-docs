@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 04/27/2022
 ---
 # Single Sign-On in the Power BI mobile Windows app
 
@@ -30,5 +30,5 @@ If you don't want to use your current Windows active session credentials to sign
  
 ## Next steps
 
-- [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)
+- [Get started with the Power BI mobile app for Windows](mobile-windows-10-phone-app-get-started.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

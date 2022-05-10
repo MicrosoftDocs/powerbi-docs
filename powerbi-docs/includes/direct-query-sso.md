@@ -6,7 +6,7 @@ author: davidiseminger
  
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/28/2020
+ms.date: 09/08/2021
 ms.author: davidi
 ---
 
@@ -21,4 +21,7 @@ To enable SSO, go to settings for the dataset, open the **Data Sources** tab, an
 When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the Azure SQL database or data warehouse. This option enables Power BI to respect the security settings that are configured at the data source level.
 
 The SSO option takes affect across all datasets that use this data source. It does not affect the authentication method used for import scenarios.
+
+> [!NOTE]
+> For SSO to work properly, the dataset must be on the same tenant as the Azure SQL resource.
 

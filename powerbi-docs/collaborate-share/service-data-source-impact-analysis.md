@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/20/2020
+ms.date: 10/19/2021
 LocalizationGroup: 
 ---
 # Data source impact analysis
@@ -53,7 +53,7 @@ If you've made a change to a data source or are thinking about making a change, 
 In the impact analysis side pane, you only see real names for workspaces, datasets, and dataflows that you have access to. Items that you don't have access to are listed as Limited access. This is because some item names may contain personal information.
 The impact summary counts include all impacted dataflows and datasets, even those that reside in workspaces you don't have access to.
 
-## Limitations
+## Considerations and limitations
 
 Data source impact analysis is not yet supported for paginated reports, so you will not see if the data source has any direct impact on these kinds of reports in the tenant.
 

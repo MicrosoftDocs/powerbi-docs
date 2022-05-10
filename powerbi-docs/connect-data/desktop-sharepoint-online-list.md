@@ -17,6 +17,9 @@ Many teams and organizations use Lists in SharePoint Online to store data becaus
 
 Watch this five-minute tutorial video, or scroll down for step-by-step instructions.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 <iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
 
 In the Power BI service, you can also [create a report quickly from data in a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md).
@@ -33,6 +36,10 @@ In the Power BI service, you can also [create a report quickly from data in a Sh
 4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get the site address by selecting **Home** in the navigation pane, or the icon for the site at the top, then copying the address from your web browser's address bar.
 
    Watch a video of this step:
+
+   > [!NOTE]  
+   > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90" frameborder="0" allowfullscreen></iframe>
 
 5. In Power BI Desktop, paste the address into the **Site URL** field in the open dialog box.
@@ -60,12 +67,20 @@ In the Power BI service, you can also [create a report quickly from data in a Sh
 2. Make sure your list columns with numbers show the Sum, or Sigma, icon in the **Fields pane** on the right.  For any that don't, select the column header in the table view, select the **Modeling** tab, then change the **Data type** to **Decimal Number** or **Whole Number**, depending on the data.  If prompted to confirm your change, select **Yes**.  If your number is a special format, like currency, you can also choose that by setting the **Format**.
 
    Watch a video of this step:
+
+   > [!NOTE]  
+   > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>
 
 3. On the left side, select the **Report** icon.
 4. Select columns you want to visualize by selecting the checkbox beside them in the **Fields** pane on the right.
 
    Watch a video of this step:
+   
+   > [!NOTE]  
+   > This video might use earlier versions of Power BI Desktop or the Power BI service.
+
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=215&end=252" frameborder="0" allowfullscreen></iframe>
 
 5. Change the visual type if you need to.

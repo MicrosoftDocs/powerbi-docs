@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to PDF files in Power BI Desktop
@@ -34,7 +34,7 @@ You can specify the **Start page** and **End Page** as optional parameters for y
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
-## Limitations and considerations
+## Considerations and limitations
 
 When working with the PDF connector on datasets in a Premium capacity, the PDF connector does not properly make the connection. To enable the PDF connector to work on a dataset in a Premium capacity, configure that dataset to use a gateway, and confirm the connection to that dataset goes through the gateway.  
 

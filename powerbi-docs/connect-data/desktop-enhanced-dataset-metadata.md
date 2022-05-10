@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/16/2021
+ms.date: 12/02/2021
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata
@@ -25,7 +25,10 @@ The **enhanced dataset metadata** feature is strategic and foundational. Future 
 ## Upgrade
 Your reports will be automatically upgraded to the enhanced metadata format when you open them in the latest version of Power BI Desktop. If the report was saved with unapplied query changes, or there was an error during the auto-upgrade, then you will see a warning on the report canvas indicating that you still need to upgrade. Clicking "Upgrade report" will apply any pending changes and upgrade the data model to the new format. 
 
-## Limitations
+## Exclude table from report refresh
+Once a data model has been upgraded to the enhanced metadata format some metadata that was previously only used in Power BI Desktop will now be respected in the Power BI Service as well - this includes the "Include in Report Refresh" option. For upgraded models, if the "Include in Report Refresh" option is deselected in the Power Query Editor, then that table will not be refreshed when the report/dataset is refreshed in Power BI Desktop or the Power BI Service. Reports already published in the Power BI Service that are not yet upgraded to the new enhanced metadata formal will need to be upgraded in Power BI Desktop before this new behavior will take effect. 
+
+## Considerations and limitations
 Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the data model. This query is used by Power BI Service data models. With enhanced metadata support, the Power BI service data model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations won't work without reading underlying data. You may see some errors in reports that previously worked. For example, the error will say: 
 
 “Unable to convert an M query in table 'Dimension City' into a native source query. Try again later or contact support. If you contact support, provide these details." 
@@ -38,6 +41,8 @@ You can fix your queries in three different places in Power BI Desktop:
     :::image type="content" source="media/desktop-enhanced-dataset-metadata/enhanced-metadata-apply-query-changes.png" alt-text="Screenshot of Apply query changes message: We couldn't fold the expression to the data source.":::
 
 - When you run evaluations when you open a report to check if you have unsupported queries. Running these evaluations can result in performance implications.
+- Certain character combinations in M expressions that would be unsupported in the Tabular Object Model (TOM) will also be unsupported in the enhanced dataset metadata environment.
+
 
 
 ## Next steps

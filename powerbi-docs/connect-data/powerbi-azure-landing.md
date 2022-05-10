@@ -10,6 +10,7 @@ ms.date: 12/12/2019
 layout: LandingPage
 LocalizationGroup: Get started
 # Customer intent: As an Azure user, wanting to get started with Power BI, I want a link to all the pages.
+ms.custom: intro-landing-hub
 ---
 
 # Power BI for Microsoft Azure users 

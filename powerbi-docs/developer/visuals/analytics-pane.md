@@ -1,14 +1,14 @@
 ---
 title: The Analytics pane in Power BI visuals
 description: This article describes how to create dynamic reference lines in Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/05/2021
+ms.date: 10/19/2021
 ---
 
 # The Analytics pane in Power BI visuals
@@ -69,7 +69,7 @@ You can define other properties in the same way that you do for **Format** objec
 > * Use the **Analytics** pane only for objects that add new information or shed new light on the presented information (for example, dynamic reference lines that illustrate important trends).
 > * Any options that control the look and feel of the visual (that is, formatting) should be limited to the **Formatting** pane.
 
-## Known limitations and issues of the Analytics pane
+## Considerations and limitations
 
 * The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selector) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have user-defined multiple instances of a card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.

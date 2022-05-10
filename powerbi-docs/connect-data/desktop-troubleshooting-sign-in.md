@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 05/14/2021
+ms.date: 10/19/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop
@@ -90,7 +90,7 @@ Once the registry entry is created (a reboot may be necessary) the proxy setting
 
 As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they have configured the Internet Explorer proxies correctly before enabling this feature.         
 
-### Limitations and considerations for using default system credentials
+### Considerations and limitations
 
 There are a collection of security implications that administrators should consider before enabling this capability. 
 
@@ -99,6 +99,6 @@ The following recommendations should be followed whenever enabling this feature 
 * Only use **Negotiation** as the authentication scheme on the for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client. 
 * Do not use **NTLM fallback** on clients that use this feature.
 * If users are not on a network with a proxy when this feature is enabled and configured as recommended in this section, the process of attempting to contact the proxy server and using default system credentials is not used.
-
+* Power BI Desktop is not proxy-aware, and thus proxy mechanisms including **Azure Application Proxy** and other proxy services, will not work properly with Power BI Desktop
 
 [Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)

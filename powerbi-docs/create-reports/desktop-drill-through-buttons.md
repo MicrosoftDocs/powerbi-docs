@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 10/19/2021
 LocalizationGroup: Create reports
 ---
 # Create a drillthrough button in Power BI
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 You can create a *drillthrough* button in Power BI, a button that drills through to a page with details that are filtered to a specific context.
 
@@ -90,7 +92,7 @@ These formatting options include:
      :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-outline.png" alt-text="Disabled button outline":::
 
 ## Set formatting for button text conditionally
-You can use conditional formatting to change the button text based on the selected value of a field. To do this, you need to create a measure that outputs the desired string based on the DAX function SELECTEDVALUE.
+You can use conditional formatting to change the button text based on the selected value of a field. To do this, you need to create a measure in Power BI Desktop that outputs the desired string based on the DAX function SELECTEDVALUE.
 
 Here's an example measure that outputs "See product details" if a single Product value is NOT selected; otherwise, it outputs "See details for [the selected Product]":
 
@@ -155,7 +157,7 @@ Here are some scenarios where you might want the button drillthrough destination
 
 ### Disable the button until multiple conditions are met
 
-Let's look at the first case, where you want to keep the button disabled until additional conditions are met. You need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drillthrough destination page.
+Let's look at the first case, where you want to keep the button disabled until additional conditions are met. You need to create a basic DAX measure in Power BI Desktop that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drillthrough destination page.
 
 Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to Store details page:
 
@@ -209,7 +211,7 @@ Now you see that the drillthrough button is only enabled when you've selected a 
  
 ### Hybrid of the two scenarios
 
-If you're interested in a hybrid of the two scenarios, you can create and reference a DAX measure to add additional logic for the destination selection.
+If you're interested in a hybrid of the two scenarios, you can create and reference a DAX measure in Power BI Desktop to add additional logic for the destination selection.
 
 Here’s an example DAX measure that requires the user to select a Store before they can drill through on a Product to any of drillthrough pages:
 
@@ -222,7 +224,7 @@ In this example, the user would need to select a Product, a Store, *and* a desti
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-product-store-destination.png" alt-text="Select product, store, and destination":::
 
-## Limitations
+## Considerations and limitations
 
 - This button doesn't allow for multiple destinations using a single button.
 - This button only supports drillthroughs within the same report; in other words, it doesn't support cross-report drillthrough.

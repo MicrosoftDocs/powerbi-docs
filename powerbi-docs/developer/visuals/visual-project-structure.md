@@ -1,8 +1,8 @@
 ---
 title: Power BI visual project structure
 description: This article describes the folder and file structure of a Power BI visual project.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

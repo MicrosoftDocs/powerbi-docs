@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/17/2021
+ms.date: 12/02/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analytics pane in Power BI Desktop
@@ -84,7 +84,9 @@ If you have time data in your data source, you can use the *forecasting* feature
 > [!NOTE]
 > The forecasting feature is only available for line chart visuals.
 
-## Limitations
+For an example of how forecasting can be applied, see the (somewhat dated, but still relevant) article about [forecasting capabilities](https://powerbi.microsoft.com/blog/introducing-new-forecasting-capabilities-in-power-view-for-office-365/). 
+
+## Considerations and limitations
 
 The ability to use dynamic reference lines is based on the type of visual being used. The following lists describe these limitations more specifically.
 

@@ -2,11 +2,11 @@
 title: "Power BI adoption roadmap: Data culture"
 description: Encourage a data culture to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi
-ms.topic: reference
+ms.subservice: powerbi-resource
+ms.topic: conceptual
 ms.date: 06/30/2021
 ---
 
@@ -14,7 +14,7 @@ ms.date: 06/30/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-Building a data culture is closely related to adopting Power BI, and it's often a key aspect of an organization's digital transformation. The term _data culture_ can be defined in different ways by different organizations. In this series of articles, data culture means a set of behaviors and norms in the organization. It encourages a culture that regularly employs informed data decision-making:
+Building a data culture is closely related to adopting Power BI, and it's often a key aspect of an organization's digital transformation. The term *data culture* can be defined in different ways by different organizations. In this series of articles, data culture means a set of behaviors and norms in the organization. It encourages a culture that regularly employs informed data decision-making:
 
 - By more stakeholders throughout more areas of the organization.
 - Based on analytics, not opinion.
@@ -26,7 +26,7 @@ Building a data culture is closely related to adopting Power BI, and it's often 
 > [!IMPORTANT]
 > Think of data culture as what you do, not what you say. Your data culture is not a set of rules (that's governance). So, data culture is a somewhat abstract concept. It's the behaviors and norms that are allowed, rewarded, and encouraged—or those that are disallowed and discouraged. Bear in mind that a healthy data culture motivates employees at all levels of the organization to generate and distribute actionable knowledge.
 
-Within an organization, certain business units or teams are likely to have their own behaviors and norms for getting things done. It means that the specific ways that data culture objectives are achieved can vary across organizational boundaries. What's important is that they should all align with the organizational data culture objectives. This can be thought of as _aligned autonomy_.
+Within an organization, certain business units or teams are likely to have their own behaviors and norms for getting things done. It means that the specific ways that data culture objectives are achieved can vary across organizational boundaries. What's important is that they should all align with the organizational data culture objectives. This can be thought of as *aligned autonomy*.
 
 The following diagram conveys the inter-related aspects that influence your data culture:
 
@@ -90,7 +90,7 @@ In Power BI, the [datasets hub](../connect-data/service-datasets-hub.md) and [us
 Data democratization refers to putting data into the hands of more users who are responsible for solving business problems. It's about enabling them to make decisions with the data.
 
 > [!NOTE]
-> The concept of data democratization does not imply a lack of security, nor does it imply a lack of justification based on job role. As part of a healthy data culture, data democratization helps reduce _shadow IT_ by providing data artifacts that are secured, governed, well-managed, and that meet business needs in cost effective and timely ways.
+> The concept of data democratization does not imply a lack of security, nor does it imply a lack of justification based on job role. As part of a healthy data culture, data democratization helps reduce *shadow IT* by providing data artifacts that are secured, governed, well-managed, and that meet business needs in cost effective and timely ways.
 
 Your organization's position on data democratization will have a wide-reaching impact on adoption and governance-related efforts. Here are some examples of Power BI governance decisions that can impact on data democratization:
 

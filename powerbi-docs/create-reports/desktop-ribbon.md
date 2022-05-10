@@ -9,7 +9,6 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/11/2021
 LocalizationGroup: Connect to data
-ms.custom: video-RWyUE
 ---
 # Use the ribbon in Power BI Desktop
 

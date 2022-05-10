@@ -12,14 +12,14 @@ ms.date: 04/22/2021
 
 # Edit a paginated report in Power BI Report Builder from the service 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 In this article, you learn how to quickly edit a paginated report in Power BI Report Builder directly from a workspace in the Power BI service. 
 
 ## Prerequisites
 
 - Make sure you [install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center before getting started.
-- You need access to a workspace in an a [Premium capacity](../admin/service-premium-what-is.md).
+- You need access to a workspace in an a [Premium capacity](../enterprise/service-premium-what-is.md).
 
 ## Edit a paginated report from the Power BI service
 

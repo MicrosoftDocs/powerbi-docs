@@ -8,33 +8,40 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/29/2019
+ms.date: 07/30/2021
 ms.custom: video-5tg-OXzxe2g
 LocalizationGroup: Reports
 ---
 # Apply page display settings in a Power BI report
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 We understand it's critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes. 
 
 The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
 
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
-
 
 ## Where to find Page view settings in the Power BI service and Power BI Desktop
 Page view settings are available in both the Power BI service and Power BI Desktop, but the interface is a little different. The following sections explain where you can find View settings in each Power BI tool.
 
-### In Power BI Desktop
+# [Power BI Desktop](#tab/powerbi-desktop)
 In Report view, select the **View** tab to open Page view settings as well as phone layout settings.
 
   ![Desktop page view settings](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 
-### In the Power BI service (app.powerbi.com)
-In the Power BI service, open a report and select **View** from the upper left menubar.
+# [Power BI service](#tab/powerbi-service)
+
+In the [Power BI service](https://app.powerbi.com), open a report and select **View** from the upper left menubar.
 
 ![service page view settings](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
 Page view settings are available in both [Reading view and Editing view](../consumer/end-user-reading-view.md). In Editing view, a report owner can assign page view settings to individual report pages, and those settings are saved with the report. When colleagues open that report in Reading view, they see the report pages display using the owner's settings. In Reading view, colleagues can change *some* of the **Page view** settings, but the changes are not saved when they exit the report.
+
+---
 
 ## Page view settings
 The first set of Page view settings controls the display of your report page relative to the browser window. Choose between:

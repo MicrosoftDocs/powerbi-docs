@@ -30,16 +30,14 @@ landingContent:
             url: desktop-ribbon.md
           - text: "Accessibility overview"
             url: desktop-accessibility-overview.md
-          - text: "Get sample data"
-            url: sample-datasets.md
       - linkListType: tutorial
         links:
           - text: From Excel to report in Power BI Desktop
             url: desktop-excel-stunning-report.md
-          - text: "Import & open sample packs"
-            url: sample-tutorial-connect-to-the-samples.md
       - linkListType: sample
         links:
+          - text: "Get sample data"
+            url: sample-datasets.md
           - text: "COVID-19 sample: US data"
             url: sample-covid-19-us.md
 
@@ -61,8 +59,6 @@ landingContent:
             url: ../visuals/power-bi-visualization-export-data.md
           - text: Power Automate visual for Power BI (preview)
             url: power-bi-automate-visual.md
-          - text: "Smart narratives"
-            url: ../visuals/power-bi-visualization-smart-narrative.md
           - text: Slicers
             url: ../visuals/power-bi-visualization-slicers.md
 
@@ -75,7 +71,6 @@ landingContent:
             url: desktop-report-themes.md
           - text: "Text boxes and shapes"
             url: power-bi-reports-add-text-and-shapes.md
-
       - linkListType: how-to-guide
         links:
           - text: "Conditional table formatting"
@@ -84,6 +79,40 @@ landingContent:
             url: desktop-grouping-and-binning.md
           - text: "Add bookmarks to a report"
             url: desktop-bookmarks.md
+
+  # Card (optional)
+  - title: Artificial intelligence in Power BI
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Anomaly detection"
+            url: ../visuals/power-bi-visualization-anomaly-detection.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Generate data insights automatically"
+            url: service-insights.md
+          - text: "Decomposition tree visuals"
+            url: ../visuals/power-bi-visualization-decomposition-tree.md
+          - text: "Smart narrative visuals"
+            url: ../visuals/power-bi-visualization-smart-narrative.md
+          - text: "Key influencers visuals"
+            url: ../visuals/power-bi-visualization-influencers.md
+
+  # Card (optional)
+  - title: Goals and scorecards (preview)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Get started with goals"
+            url: service-goals-introduction.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create scorecards and manual goals"
+            url: service-goals-create.md
+          - text: "Create connected goals"
+            url: service-goals-create-connected.md
+          - text: "Stay on top of your goals"
+            url: service-goals-check-in.md
 
   # Card (optional)
   - title: Design report interactions
@@ -104,20 +133,20 @@ landingContent:
             url: power-bi-report-filter.md
 
   # Card (optional)
-  - title: Goals and scorecards (preview)
+  - title: Natural language Q&A
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: "Get started with goals"
-            url: service-goals-introduction.md
+          - text: Intro to Power BI Q&A
+            url: ../natural-language/q-and-a-intro.md
+      - linkListType: tutorial
+        links:
+          - text: Use Q&A to explore data and create visuals
+            url: power-bi-tutorial-q-and-a.md
       - linkListType: how-to-guide
         links:
-          - text: "Create scorecards and manual goals"
-            url: service-goals-create.md
-          - text: "Create connected goals"
-            url: service-goals-create-connected.md
-          - text: "Stay on top of your goals"
-            url: service-goals-check-in.md
+          - text: Create a Q&A visual
+            url: ../visuals/power-bi-visualization-q-and-a.md
 
   # Card (optional)
   - title: Power BI paginated reports
@@ -132,18 +161,10 @@ landingContent:
         links:
           - text: "Online course: Paginated reports in a day"
             url: ../learning-catalog/paginated-reports-online-course.md
-      - linkListType: concept
-        links:
-          - text: "Expression examples"
-            url: ../paginated-reports/report-builder-expression-examples.md
-          - text: "Tables, matrixes, and lists"
-            url: ../paginated-reports/report-builder-tables-matrices-lists.md
       - linkListType: how-to-guide
         links:
           - text: "Create a report on a shared dataset"
             url: ../paginated-reports/report-builder-shared-datasets.md
-          - text: "Create parameters"
-            url: ../paginated-reports/paginated-reports-parameters.md
 
   # Card (optional)
   - title: Dashboards

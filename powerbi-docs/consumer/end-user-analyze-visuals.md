@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 05/13/2021
+ms.date: 11/01/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analyze feature to explain fluctuations in report visuals
@@ -118,6 +118,7 @@ The following list is the collection of currently unsupported scenarios for **An
 * Use of "Show value as"
 * Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of the visuals created by the insights feature
 * Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
+* RLS or OLS enabled data models
 
 
 ## Next steps

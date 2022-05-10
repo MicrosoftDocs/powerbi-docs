@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/31/2021
-ms.custom: content-perf-fy21q3
+ms.custom: contperf-fy21q3
 LocalizationGroup: Share your work
 ---
 # Give users access to the new workspaces in Power BI
@@ -17,6 +17,8 @@ After you [create one of the new workspaces](service-create-the-new-workspaces.m
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign users the Viewer Role.
+> 
+> After you add or remove a user or a group for workspace access, the permission change will only take effect the next time the user logs into Power BI.
 
 ## Give access to your workspace
 

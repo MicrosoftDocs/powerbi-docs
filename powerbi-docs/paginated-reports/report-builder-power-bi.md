@@ -3,16 +3,15 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/11/2021
+ms.date: 09/23/2021
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: video-78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 ---
 # Power BI Report Builder
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder. Then publish your report to the Power BI service.
  
@@ -22,7 +21,11 @@ Prefer learning from videos? Check out the [Video-based course: Power BI Paginat
 
 The following paginated report is a sample of an invoice. You can download it and other samples, such as letters, transcripts, and labels. Read more about [sample Power BI paginated reports](paginated-reports-samples.md). 
 
-![Paginated report in the Power BI service](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
+![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
+
+## Prerequisites
+
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
 ## Start with the Table, Matrix, or Chart wizard
 

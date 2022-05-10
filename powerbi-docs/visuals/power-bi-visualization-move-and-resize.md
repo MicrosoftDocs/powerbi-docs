@@ -12,9 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Move and resize a visualization in a report
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com) you'll need to open the report in [Editing view](../create-reports/service-interact-with-a-report-in-editing-view.md). 
 

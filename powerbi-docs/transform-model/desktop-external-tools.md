@@ -82,7 +82,7 @@ All Tabular Object Model (TOM) metadata can be accessed for read-only. Write ope
 
 ## Registering external tools
 
-External tools are *registered* with Power BI Desktop when the tool includes a \*.pbitool.json registration file in the `Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools` folder. When a tool is registered, and includes an icon, the tool appears in the External Tools ribbon. Some tools, like ALM Toolkit and DAX Studio create the registration file automatically when you install the tool. However, many tools, like SQL Profiler typically do not because the installer they do have does not include creating a registration file for Power BI Desktop. Tools that don't automatically register with Power BI Desktop can be registered manually by creating a \*.pbitool.json registration file.
+External tools are *registered* with Power BI Desktop when the tool includes a \*.pbitool.json registration file in the `C:\Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools` folder. When a tool is registered, and includes an icon, the tool appears in the External Tools ribbon. Some tools, like ALM Toolkit and DAX Studio create the registration file automatically when you install the tool. However, many tools, like SQL Profiler typically do not because the installer they do have does not include creating a registration file for Power BI Desktop. Tools that don't automatically register with Power BI Desktop can be registered manually by creating a \*.pbitool.json registration file.
 
 To learn more, including json examples, see [Register an external tool](desktop-external-tools-register.md).
 

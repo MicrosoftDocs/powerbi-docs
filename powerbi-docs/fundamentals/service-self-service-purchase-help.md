@@ -16,7 +16,7 @@ You've tried to purchase Power BI Pro and received a message that your organizat
 ![screenshot showing error message after selection of Let's set up your account](media/service-self-service-purchase-help/power-bi-error.png)
 
 ## Solution
-To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license](../admin/service-admin-manage-licenses.md).
+To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license](../enterprise/service-admin-manage-licenses.md).
 
 ## Next steps
 [Power BI features by license type](service-features-license-type.md)

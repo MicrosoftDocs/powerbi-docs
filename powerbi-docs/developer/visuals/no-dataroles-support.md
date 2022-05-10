@@ -3,7 +3,7 @@ title: Render visual without the need to bind any data
 description: Learn how to render visual without the need to bind any data.
 author: Demonkratiy
 ms.author: v-asemenov
-ms.reviewer: kesharab
+ms.reviewer: monaberdugo
 manager: mgolan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

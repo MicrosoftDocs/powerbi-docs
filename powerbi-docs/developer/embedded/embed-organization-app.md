@@ -1,8 +1,8 @@
 ---
 title: Embed Power BI report in a Power BI embedded analytics application for your organization
 description: Learn how to embed a Power BI report in a Power BI embedded analytics application for your organization 
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
+* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license.
 
     >[!NOTE]
     >The *embed for your organization* solution, is not supported on [capacities](embedded-capacity.md) based on *A* SKUs. An *A* SKU can only be used for the *embed for your customers* solution.

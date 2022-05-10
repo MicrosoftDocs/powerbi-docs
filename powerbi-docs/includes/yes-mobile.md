@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-✔️&nbsp;Power BI Mobile
+✔️&nbsp;Power&nbsp;BI&nbsp;Mobile

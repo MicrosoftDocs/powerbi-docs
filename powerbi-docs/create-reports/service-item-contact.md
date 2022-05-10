@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 10/19/2021
 LocalizationGroup: Common tasks
 ---
 # Set contact information for reports and dashboards in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 This article shows how to set contact information for a dashboard or report in the Power BI service. You can set contact information for items in a classic or new workspace, but not for items in your My Workspace. The contact information is in the card you see when you select the name of a report or dashboard in the black header bar.
 
@@ -20,7 +22,7 @@ You can add multiple users or groups to the contact for an item. They can be:
 * An email enabled security group
 * A distribution list
 
-However, we recommend adding just one person or group. See the [Limitations and considerations](#limitations-and-considerations) section in the article for details. 
+However, we recommend adding just one person or group. See the [Considerations and limitations](#considerations-and-limitations) section in the article for details. 
 
 The contact list information is also used in other places. For example, it is shown in some error scenarios in the error dialog box. Automated email messages related to the item, like access requests, are sent to the contact list. 
 
@@ -47,7 +49,7 @@ By default the person who creates a report or dashboard is the contact for it. I
 
      ![Add a report contact name.](media/service-item-contact/service-report-contact-setting.png)
 
-## Limitations and considerations
+## Considerations and limitations
 
 * You can set any user or group in the contact list, but they're not automatically granted permission to the item. Use sharing or give users who need it access to the workspace through a role. 
 * The report or dashboard contact information doesn’t get pushed into apps when you [publish an app](../collaborate-share/service-create-distribute-apps.md). By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.

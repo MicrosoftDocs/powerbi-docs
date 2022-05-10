@@ -2,11 +2,11 @@
 title: "Power BI adoption roadmap: User support"
 description: Support users to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi
-ms.topic: reference
+ms.subservice: powerbi-resource
+ms.topic: conceptual
 ms.date: 06/30/2021
 ---
 
@@ -43,7 +43,7 @@ Each of the four types of internal user support introduced above are described i
 
 ## Intra-team support
 
-_Intra-team support_ refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
+*Intra-team support* refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
 
 > [!NOTE]
 > Intra-team support does not work well for individuals who are the only data analyst within a department. It's also not effective for those who don't have very many connections yet in their organization. When there aren't any close colleagues to depend on, other types of support, as described in this article, become more important.
@@ -83,7 +83,7 @@ The help desk is usually operated as a shared service, operated by the IT depart
 
 There are also certain technical issues which cannot be fully resolved without IT involvement, like software installation and upgrade requests when machines are IT-managed.
 
-Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../admin/service-premium-what-is.md).
+Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../enterprise/service-premium-what-is.md).
 
 > [!IMPORTANT]
 > Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](admin-tenant-settings.md#create-workspaces), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly, usually within 1-4 hours if possible. Consider that automation with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests.
@@ -105,7 +105,7 @@ In addition to the internal user support approaches discussed in this article, t
 
 ### Microsoft documentation
 
-Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-priority issues that broadly affect all customers. Global Microsoft 365 (M365) administrators have access to additional support issue details within the M365 portal.
+Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-priority issues that broadly affect all customers. Global Microsoft 365 administrators have access to additional support issue details within the Microsoft 365 portal.
 
 Monitor the [Microsoft 365 Twitter account](https://twitter.com/MSFT365Status). Microsoft posts timely information and updates about outages for all Microsoft 365 services.
 
@@ -122,7 +122,7 @@ Users with a Power BI Pro or Premium Per User license are eligible to [log a sup
 
 There are several support options available for [global and Power BI administrators](../admin/service-support-options.md#get-started-with-support-for-admins).
 
-For customers who have a [Microsoft Unified Support](https://www.microsoft.com/msservices/unified-support-solutions) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be setup to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
+For customers who have a [Microsoft Unified Support](https://www.microsoft.com/en-us/msservices/unified-support-solutions) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be setup to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
 
 ## Worldwide community support
 
@@ -134,7 +134,7 @@ There are several [public Power BI community forums](https://community.powerbi.c
 
 ### Publicly available discussion areas
 
-It's very common to see people posting Power BI technical questions on platforms like Twitter. A quick look at the [#PowerBI hashtag](https://twitter.com/search?q=%23PowerBI&amp;f=live) reveals a vibrant global community of Power BI enthusiasts. You will find discussions, post announcements, and users helping each other. The [#PowerBIHelp hashtag](https://twitter.com/search?q=%23PowerBIHelp&amp;f=live) is sometimes used, though less frequently.
+It's very common to see people posting Power BI technical questions on platforms like Twitter. A quick look at the [`#PowerBI` hashtag](https://twitter.com/search?q=%23PowerBI&amp;f=live) reveals a vibrant global community of Power BI enthusiasts. You will find discussions, post announcements, and users helping each other. The [`#PowerBIHelp` hashtag](https://twitter.com/search?q=%23PowerBIHelp&amp;f=live) is sometimes used, though less frequently.
 
 ### Community documentation
 
@@ -169,7 +169,7 @@ Considerations and key actions you can take to improve your internal help desk s
 - Ensure a good issue tracking system is in place. It's often a ticketing system that can manage priority levels.
 - Decide if anyone will be on-call for any issues related to Power BI. If appropriate, ensure the expectations for 24/7 support are clear.
 - Determine what SLAs will exist, and that expectations for response and resolution are clearly communicated.
-- Be prepared to address specific common issues extremely quickly. For example, a request to add a new [gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source) should be handled very quickly (to avoid user frustration, and to minimize use of personal gateways as an workaround). Slow support response may result in users finding workarounds.
+- Be prepared to address specific common issues extremely quickly. For example, a request to add a new [gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source) should be handled very quickly (to avoid user frustration, and to minimize use of personal gateways as a workaround). Slow support response may result in users finding workarounds.
 
 Considerations and key actions you can take to improve your internal COE extended support:
 

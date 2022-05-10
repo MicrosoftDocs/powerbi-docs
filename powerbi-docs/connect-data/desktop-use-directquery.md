@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 11/30/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -39,7 +39,7 @@ There are a few benefits to using DirectQuery:
 - Underlying data changes can require a refresh of data. For some reports, the need to display current data can require large data transfers, making reimporting data unfeasible. By contrast, DirectQuery reports always use current data.
 - The 1-GB dataset limitation *doesn't* apply to DirectQuery.
 
-## Limitations of DirectQuery
+## Considerations and limitations
 There are currently a few limitations to using DirectQuery:
 
 - If the **Power Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Power Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Power Query Editor**.
@@ -48,11 +48,28 @@ There are currently a few limitations to using DirectQuery:
 
 - Auto date/time is unavailable in DirectQuery. For example, special treatment of date columns (drill down by using year, quarter, month, or day) isn't supported in DirectQuery mode.
 
-- There's a one-million-row limit for cloud sources, with on-premises sources limited to a defined payload of about 4 MB per row (depending on proprietary compression algorithm) or 16MB data size for the entire visual. Certain limits may be raised when using Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
+- There's a one-million-row limit for cloud sources (which is any data source that is not on-premises), with on-premises sources limited to a defined payload of about 4 MB per row (depending on proprietary compression algorithm) or 16MB data size for the entire visual. Certain limits may be raised when using Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
     For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
 - There's a 125 column limit in a table or matrix for results that have more than 500 rows for DirectQuery sources. When displaying a result that contains more than 500 rows in a table or matrix, you will see a scrollbar that enables you to fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures using MIN, MAX, FIRST or LAST as they do not count against this maximum.
+
+- A known issue exists in DirectQuery when filtering a date column that contains December 31, 9999, which is often used as a special date placeholder when the actual date information was not captured. While it's common to filter the December 31, 9999 date from your analysis, using an *is* or *is not* filter does not correctly filter out that special date. To avoid incorrect filtering when that date is present, use *is on or after* or *is on or before* to filter for that special date. The following example provides more information to understand potential filtering issues and the best way to avoid them. 
+
+    In this example we use a simple dataset that contains just two rows of data with two dates. The dates are formatted in formats common in the United States: the month followed by the day followed by the year. The first row contains a date of March 5th, 2022 and the second row contains December 31st, 9999:
+    
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-example-data.png" alt-text="Example data to explain filter issue with special date of December 31st, 9999. The data contains two rows: first row contains March 5th, 2022 and the second row contains December 31st, 9999":::
+
+    If you want to isolate or remove the rows that contain December 31st, 9999 you likely create a filter on the column that contains the dates and set it to show items when the value is or is not equal to December 31st, 9999, as shown in the following image. Notice, however, that the results returned are not what is expected, as the visual returns no data, rather than returning one row, as is expected:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-is-filter-incorrect-result.png" alt-text="Setting a filter to show items when the value is or is not equal to December 31st, 9999 will filter all data and thus return incorrect results.":::
+    
+    However, setting the filter to show items when the value *is on or before* or *is on or after* December 31st, 9999 returns the expected results:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-before.png" alt-text="Setting a filter to is on or before December 31st, 9999 returns the correct results: the rows that contain December 31st, 9999 are removed.":::
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-after.png" alt-text="Setting a filter to is on or after December 31st, 9999 returns the correct results: only the rows that contain December 31st, 9999 are returned.":::
+
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
@@ -71,7 +88,7 @@ The following three points should be taken into consideration when using DirectQ
 
 - **Security**: By default, all users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This process is the same for data that's imported: all users see the same data, regardless of any security rules defined in the backend source.
 
-    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](../admin/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
+    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](../enterprise/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
 
 - **Supported features**: Some features in Power BI Desktop are unsupported in DirectQuery mode, or they have limitations. Also, some capabilities in the Power BI service (such as *Quick Insights*) aren't available for datasets using DirectQuery. When determining whether to use DirectQuery, you should consider these feature limitations.
 

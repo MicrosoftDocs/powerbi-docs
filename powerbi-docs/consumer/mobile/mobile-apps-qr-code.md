@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/02/2019
+ms.date: 11/02/2021
 ---
 # Scan a Power BI QR code from your mobile device
 Applies to:
@@ -16,60 +16,37 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-QR codes in Power BI can connect any item in the real world directly to related BI information &#151; no navigation or search needed.
+QR codes can be used to connect items in the real world directly to relevant BI information. When you scan a QR code that has been created for a Power BI report or dashboard tile, that report or tile will open directly - you won't have to navigate to it or search for it.
 
-Say a colleague has [created a QR code in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
+Say someone in your organization has created a QR code for a report that contains information about the conference rooms in your workplace and has posted it outside the conference rooms. Using the camera in the Power BI app, you can scan the QR code to open the report. If you don't have permissions to view the report, you'll be able to request access directly from the app.
 
-You can scan the QR code for immediate access to the relevant tile or report, right from your phone, using either the scanner in the Power BI app, or any other scanner installed on your phone. 
-
-If your colleague hasn't shared the dashboard or report with you, you can request access directly from the mobile app. 
+The Power BI mobile app supports QR codes with [URL query parameters](../../collaborate-share/service-url-filters.md). If the QR code for a report includes such parameters, the report will open filtered according to those parameters.
 
 > [!NOTE]
 > You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
-## Scan a Power BI QR code on your iPhone with the Power BI scanner
+## Scan a Power BI QR code on your mobile device with the Power BI scanner
 
-1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
+1. On the app header, tap the camera icon.
 
-    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Screenshot of the Power BI camera icon in the app header.](media/mobile-apps-qr-code/power-bi-camera.png)
 
-2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+2. If your camera is not enabled, you'll need to allow the Power BI app to use the camera. This is a one-time operation.
  
-3. Point the scanner at the Power BI QR code. 
+3. When the scanner opens, point it at the Power BI QR code.
    
     ![Screenshot of a news print, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
-4. The tile or report appears to hover over the background in augmented reality.
+4. The report or tile will open directly. If you have an iOS device and are scanning a QR code for a tile, the tile won't open directly, but rather will appear to float over the background in augmented reality. Tap the floating tile to open it in focus mode.
    
     ![Screenshot of a report, showing it hovering over the news print.](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
 
-5. Tap the report or the tile to open it in focus mode, or go back to the scanner.
-
-### Scan a QR code from an external scanner on your iPhone
-1. From any scanner installed on your phone, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
-2. If you don't have the Power BI app installed, you are redirected to the [Apple App Store to download it](https://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone.
-
-## Scan a Power BI QR code on your Android device with the Power BI scanner
-
-1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
-
-    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
-
-2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
-
-3. Point the scanner at the Power BI QR code. 
-   
-    ![Screenshot of the Q R Scanner, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
-4. The tile or report opens automatically in Power BI.
-   
-    ![Screenshot of the Opportunity Count report, showing a column chart by month and sales stage.](media/mobile-apps-qr-code/power-bi-android-tile.png)
-
-### Scan a QR code from an external scanner on your Android device
-1. From any scanner installed on your Android device, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
-2. If you don't have the Power BI app installed, you are redirected to [Google Play to download it](https://go.microsoft.com/fwlink/?LinkID=544867). 
+### Scan a QR code from an external scanner on your mobile device
+1. From any scanner installed on your mobile device, point the scanner at the relevant Power BI QR code to immediately open the associated report or tile.
+2. If the Power BI app isn't installed on your device, you'll be redirected to the [Apple App Store (iOS)](https://go.microsoft.com/fwlink/?LinkId=522062) or to [Google Play (Android)](https://go.microsoft.com/fwlink/?LinkID=544867) to download and install the app on your mobile device.
 
 ## Next steps
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
-* [Create a QR code for a tile in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md)
 * [Create a QR code for a report in the Power BI service](../../create-reports/service-create-qr-code-for-report.md)
+* [Create a QR code for a tile in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md)
 * You can also [scan a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

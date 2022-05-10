@@ -7,20 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/08/2021
+ms.date: 01/03/2022
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
 
-With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports to a variety of formats and scenarios. In this article, you create your own flow from scratch. You use the Export to File for Power BI Reports action to automatically distribute a Power BI report via email.
+With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports to a variety of formats and scenarios. In this article, you create your own flow from scratch. You use the Export to File for Power BI Reports action to automatically distribute a Power BI report via email. 
 
 :::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Power Automate steps to export and email a report.":::
+
+Power Automate is a no-code way to interact with the Export To File API in the user interface. See the [connector reference article for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
 
 ## Prerequisites  
 
 To follow along, make sure you have:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../admin/service-premium-what-is.md).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../enterprise/service-premium-what-is.md).
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Create a flow from scratch 
@@ -52,13 +54,13 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Select export format in Power Automate.":::
 
-11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. Note the page name parameter is different from the display page name. Find the page name by navigating to the page in the Power BI service, and copying the last portion of the URL.
+11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. Note, the page name parameter is different from the display page name. You can find the page name by navigating to the page in the Power BI service, and copying the last portion of the URL, as shown in the example below. 
  
-     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-copy-url-11.png" alt-text="Select the pane name in the U R L.":::
+    Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
 
-12. Optionally, indicate a specific bookmark to display in the **Pages Bookmark Name** field. As with the page name parameter, you find the bookmark name parameter in the report URL. You can specify additional parameters for the Power BI report. Find detailed descriptions of these parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports).
+12. Optionally, indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as shown in the example below. Note, only *report* bookmarks are supported, not *personal* bookmarks. You can specify additional parameters for the Power BI report. Find detailed descriptions of these parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-bookmark-url-12.png" alt-text="Select the bookmark name in the U R L.":::
+    Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
 
 13. Select **New Step**.
 14. In **Choose an operation**, search for **Outlook** and select **Send an email (V2)**.

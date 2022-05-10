@@ -35,6 +35,10 @@ Here are a few things to know about the **In Teams** list:
 - Select the value in the **Location** column to navigate to the tab in the team channel and keep collaborating with your colleagues.
 - The In Teams pivot is only available in the Power BI app for Teams. You don’t see it in the Power BI service when using app.powerbi.com in a web browser.
 
+## Known issues and limitations
+
+- See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
+
 ## Next steps
 
 - [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md)

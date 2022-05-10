@@ -7,14 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2021
+ms.date: 09/09/2021
 LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 In **Power BI Desktop** you can find out how each of your report elements, such as visuals and DAX formulas, are performing. Using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them, and which aspects of their performance are most (or least) resource intensive.
 
-![Performance analyzer](media/desktop-performance-analyzer/performance-analyzer-01.png)
+:::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-01-inline.png" alt-text="Screenshot shows Performance analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-01-expanded.png":::
 
 Performance Analyzer inspects and displays the duration necessary for updating or refreshing all visuals that user interactions initiate, and presents the information so you can view, drill down, or export the results. Performance Analyzer can help you identify visuals that are impacting the performance of your reports, and identify the reason for the impact.
 
@@ -22,7 +24,7 @@ Performance Analyzer inspects and displays the duration necessary for updating o
 
 In **Power BI Desktop** select the **View** ribbon, and then select **Performance Analyzer** to display the Performance Analyzer pane.
 
-![Select Performance analyzer in the View ribbon](media/desktop-performance-analyzer/performance-analyzer-02.png)
+:::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-02-inline.png" alt-text="Screenshot shows how to select Performance analyzer in the View ribbon." lightbox="media/desktop-performance-analyzer/performance-analyzer-02-expanded.png":::
 
 Once selected, the Performance Analyzer is displayed in its own pane, to the right of the report canvas.
 
@@ -60,6 +62,9 @@ The **Duration (ms)** values indicate the difference between a *start* and *end*
 After you've interacted with elements of the report you want to measure with Performance Analyzer, you can select the **Stop** button. The performance information remains in the pane after you select **Stop** for you to analyze.
 
 To clear out the information in the Performance Analyzer pane, select **Clear**. All information is erased and is not saved when you select **Clear**. See the next section to learn how to save information in logs. 
+
+> [!TIP]
+> When Power BI processes queries and their associated metadata, the processing of the query can be impacted by the complexity of the schema, the number of tables in the database(s), the complexity of the relationships between them, and the number of foreign key constraints on the tables. Such complexity can result in initial delays in returning or rendering a report.
 
 ## Refreshing visuals
 

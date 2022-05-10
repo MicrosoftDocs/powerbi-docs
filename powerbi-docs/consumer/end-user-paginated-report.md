@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 You've learned about [Power BI reports](end-user-reports.md), and those are the types of report you're most likely to encounter. Power BI reports are optimized for exploration and interactivity. A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
-However, there is another type of report called a *paginated report*. Receiving and viewing paginated reports requires a Power BI Pro license of for the report to be saved in Premium capacity.  [Learn about licenses](end-user-license.md).  
+However, there is another type of report called a *paginated report*. Receiving and viewing paginated reports requires a Power BI Pro license for the report to be saved in Premium capacity.  [Learn about licenses](end-user-license.md).  
 
 ## Identify a paginated report
 

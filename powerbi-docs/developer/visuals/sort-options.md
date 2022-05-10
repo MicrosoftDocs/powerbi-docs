@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 05/10/2022
+
 ---
 
 # Sorting options for Power BI visuals

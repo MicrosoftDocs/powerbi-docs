@@ -1,8 +1,8 @@
 ---
 title: Highlighting in Power BI
 description: Data points selections highlighting in Power BI Visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -11,6 +11,8 @@ ms.date: 06/21/2021
 ---
 
 # Highlight data points in Power BI Visuals
+
+This article describes how to highlight data on Power BI visuals.
 
 By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
 

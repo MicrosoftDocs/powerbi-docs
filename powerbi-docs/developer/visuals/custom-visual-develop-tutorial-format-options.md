@@ -1,8 +1,8 @@
 ---
 title: Adding formatting options to a Power BI custom visual
 description: A tutorial on how to develop Power BI custom visual format options.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -283,8 +283,8 @@ The package contains everything required to import the custom visual into either
 
 ## Importing the custom visual
 
-Now you are ready to import the Circle Card custom visual so you can use it in your reports.
-Follow the directions in [import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** report.
+Now you are ready to import your Circle Card visual so you can use it in your Power BI reports.
+Follow the directions in [import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** visualization pane.
 
 ## Debugging
 

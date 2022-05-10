@@ -52,6 +52,8 @@
         href: mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile-apps-geographic-filtering.md
+      - name: "Dark mode"
+        href: mobile-apps-dark-mode.md
       - name: "Using OAuth to connect to Reporting Services"
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
@@ -60,22 +62,24 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Work with goals"
+        href: mobile-apps-goals.md
       - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
         href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
-      - name: "Scan a Power BI QR code from your phone"
+      - name: "Scan QR codes to open reports and tiles"
         href: mobile-apps-qr-code.md
+      - name: "Scan barcodes to open filtered reports"
+        href: mobile-apps-scan-barcode.md
       - name: "Annotate and share in the mobile apps"
         href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
       - name: "Scan a barcode from the Power BI mobile app"
-        href: mobile-apps-scan-barcode-iphone.md
+        href: mobile-apps-scan-barcode.md
       - name: "Configure interaction settings"
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"
         href: mobile-apps-split-screen.md
-      - name: "Dark mode"
-        href: mobile-apps-dark-mode.md
       - name: "Configure using mobile device management"
         href: mobile-app-configuration.md        
     - name: iOS

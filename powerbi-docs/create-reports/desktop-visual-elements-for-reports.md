@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Use visual elements to enhance Power BI reports
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 With **Power BI Desktop** you can use visual elements, such as wallpaper and improved visual headers for visualizations, to enhance the appearance of your reports.
 
 ![Add wallpaper and small visual headers to enhance reports](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
@@ -54,7 +56,7 @@ When you set your page background to greater than 50% transparency, a dotted bor
 It's important to note that the dotted boundary *only* shows up when editing your report, and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
 > [!NOTE]
-> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. See [export to PDF](desktop-export-to-pdf.md) for more information on **Export to PDF**.
+> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. See [export to PDF](../consumer/end-user-pdf.md) for more information on **Export to PDF**.
 
 
 ## Using improved visual headers in Power BI reports
@@ -73,9 +75,9 @@ If your visual is positioned all the way to the top of your report, the visual h
 
 ![Visual headers snap to the bottom when bordering the top of the report](media/desktop-visual-elements-for-reports/visual-elements-for-reports_08.png)
 
-Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. In that card you can adjust all sorts of characteristics of the visual header
+Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. You can adjust all sorts of characteristics of the visual header
 
-![Each visual has a Visual header card in the Formatting pane](media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png)
+![Screenshot shows formatting options for the Visual header.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png)
 
 > [!NOTE]
 > The visibility of toggles do not affect your report when you are authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.

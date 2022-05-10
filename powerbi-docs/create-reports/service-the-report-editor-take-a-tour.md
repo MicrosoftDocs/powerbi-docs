@@ -19,9 +19,8 @@ After you create your dashboards and reports, you distribute them to your report
 
 This video shows the report editor in Power BI Desktop. This article also shows the report editor in Power BI Desktop. 
 
-> [!NOTE]
-> This video uses an older version of Power BI Desktop. 
->
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

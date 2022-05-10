@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 06/21/2021
-ms.custom: licensing support
+ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
@@ -151,4 +151,3 @@ From time to time, app designers may release new versions of their apps. How you
 * [Back to the apps overview](end-user-apps.md)
 * [View a Power BI report](end-user-report-open.md)
 * [Other ways content is shared with you](end-user-shared-with-me.md)
-

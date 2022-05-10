@@ -7,16 +7,73 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 04/18/2021
 ---
 
 # Power BI Report Builder change log
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## April 2022
+
+Version 15.7.1797.84, released April 13, 2022
+
+### Features
+
+- All supported languages are now included in the installer. Language is selected based on current Windows locale setting.
+ 
+### Bug fixes 
+
+- Accessibility fixes mostly focused on better Microsoft Narrator support.
+- Minor telemetry changes.
+
+## December 2021 
+
+Version 15.7.01796.0001, released December 13, 2021 
+
+### Features
+
+- Updated authentication library used to communicate with Power BI service.
+
+### Bug fixes 
+
+- Fixed accessibility issues in various parts of Power BI Report Builder.
+
+## October 2021 
+
+Version 15.7.01740.0001, released October 7, 2021 
+
+### Features
+
+- ODBC is no longer in preview. Strings have been updated to reflect this.
+
+
+## September 2021 
+
+Version 15.7.01704.0001, released September 1, 2021 
+
+### Bug fixes 
+
+- Fixed connectivity issue to Power BI service for some users.
+- Fixed issue when maximizing Report Builder on different resolution screens.
+- Fixed issue previewing reports in some cases.
+ 
+## August 2021 
+
+Version 15.7.01678.0001, released August 6, 2021 
+
+### Bug fixes 
+
+- Various accessibility fixes related to keyboard shortcuts and screen reading tools.
+
+### Features
+
+- Moved to 64 bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Enhanced support for DAX DateTime parameters.
 
 ## June 2021 
 

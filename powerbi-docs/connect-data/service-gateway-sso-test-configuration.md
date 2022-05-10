@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 10/19/2021
 LocalizationGroup: Gateways
 ---
 
@@ -36,7 +36,7 @@ The **test single sign-on** feature works for both Kerberos and SAML based singl
 
     :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-02.png" alt-text="Screenshot of successful test for S S O.":::
 
-## Troubleshooting Single Sign-On (SSO)
+## Troubleshooting
 
 This section describes frequent errors you may see, when testing single sign-on, and actions you can take to fix them:
 
@@ -50,7 +50,7 @@ This section describes frequent errors you may see, when testing single sign-on,
     | --- | --- |
     | User does not exist in AAD | Check if the user is present in AAD |
     | User is not mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
 
 * **Error: Invalid connection credentials.**
 The gateway cannot connect to the data source, because the provided User Principal Name does not have access to the data source.

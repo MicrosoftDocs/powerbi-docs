@@ -7,31 +7,31 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 10/04/2021
 ---
 
-# Power BI gateway and Report Builder support for ODBC data sources (preview)
+# Power BI gateway and Report Builder support for ODBC data sources
 
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 This article spells out how to configure ODBC data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 
 Data Source Name (DSN) and driver connection strings are both supported. 
 
 >[!NOTE]
->For Power BI Report Builder you need to install the 32-bit version of an ODBC driver. The Power BI Gateway requires the 64-bit version.
+>Power BI Report Builder is now 64-bit, and will no longer work with 32-bit drivers. Both Power BI Report Builder and The Power BI Gateway require the 64-bit version.
 
 ## Before you install the Power BI gateway
 
-You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. Some providers don't support 32-bit and 64-bit drivers to be installed side by side on the same machine, check your provider documentation.
+You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. 
 
 ## Install, configure Power BI Report Builder for ODBC data source
 
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
-1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
-2.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
+1.	Install the latest version of [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+2.	Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
 
 ## Install Power BI gateway, configure ODBC data sources
 
@@ -88,10 +88,17 @@ Here are some of the known limitations:
 - For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
 
     Example query:  
-    ```SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)```
+    `SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)`
 
     >[!NOTE]
     >Some data sources might require specific formatting. You can use an expression to format the parameter in the example above. For example, `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
+
+- For some ODBC drivers, there is a behavior difference between the Gateway and Power BI Report Builder. This may apply to all, some, or just one driver. One known example is that the Simba-BigQuery query requires casting of the parameter if it is not a string type. 
+
+   Example error string: "A data source used by this report returned an error. An exception encountered while accessing the target data source ERROR [42000] [Simba][BigQuery] (70) Invalid query: No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:7]"
+
+   Example query with proper cast for an INT64 column:  
+   `SELECT * FROM 'teamplz.Sample.SampleTable' WHERE DataID=CAST(? as INT64)`
 
 - Any special data types exposed by a given ODBC driver or backend that aren't simply mapped to an <span>ADO.Net</span> data type aren't supported. One example is the Snowflake Array data type.
 - Scenarios where ODBC drivers use stored procedures without parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.

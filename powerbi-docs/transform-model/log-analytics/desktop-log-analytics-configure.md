@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 03/21/2022
 LocalizationGroup: Transform and shape data
 ---
 # Configuring Azure Log Analytics for Power BI (Preview)
@@ -20,7 +20,7 @@ There are two elements to getting Azure Log Analytics working for Power BI: conf
 
 ## Pre-requisites
 
-Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
+Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
 * Register the 'microsoft.insights' resource provider in the Azure subscription where you will collect Power BI log data
 * The user who will set up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if Owner cannot be given.
@@ -53,9 +53,9 @@ Once you've completed those steps, the Azure Log Analytics configuration portion
 
 A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This will allow Power BI Premium workspace administrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met. 
 
-1. In the **Power BI Admin portal** navigate to **Tenant Settings > Azure connections** and expand the **Workspace-level Log Analytics permissions (preview)**. To allow workspace admins to enable Log Analytics, select the checkbox as shown in the following image.
+1. In the **Power BI Admin portal** navigate to **Tenant Settings > Audit and usage settings** and expand **Azure Log Analytics connections for workspace administrators**. To allow workspace admins to enable Log Analytics, switch the slider to **Enabled** and specify the needed security groups under **Apply to**, as shown in the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-12.png" alt-text="Screenshot of allowing Log Analytics for Premium workspaces.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-19.png" alt-text="Screenshot of allowing Log Analytics for Premium workspaces.":::
 
 ## Configure Logging in a Premium Workspace
 
@@ -111,7 +111,7 @@ The following table provides a collection of common errors, the events or config
 ## Events and schema
 
 
-Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events).
 
 
 * AggregateTableRewriteQuery
@@ -212,5 +212,5 @@ The following articles can help you learn more about Power BI, and about its int
 
 * [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * [The new workspace experience in Power BI](../../collaborate-share/service-new-workspaces.md)

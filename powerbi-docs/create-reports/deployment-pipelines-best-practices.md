@@ -1,12 +1,13 @@
 ---
-title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool 
+title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 description: Learn what are the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.date: 06/14/2021
+ms.custom: intro-deployment
 ---
 
 # Deployment pipelines best practices
@@ -148,7 +149,7 @@ You can also use this approach if you don't want to overload your capacity.
 
 When you simulate a production stage, [check the report load and the interactions](../guidance/monitor-report-performance.md), and find out if the changes you made impact them.
 
-You also need to [monitor the load on the capacity](../admin/service-admin-premium-monitor-capacity.md), so that you can catch extreme loads before they reach production.  
+You also need to [monitor the load on the capacity](../enterprise/service-admin-premium-monitor-capacity.md), so that you can catch extreme loads before they reach production.  
 
 >[!NOTE]
 >It's recommended to monitor capacity loads again, after deploying updates to the production stage.
@@ -201,10 +202,13 @@ In case there are bugs in production that require a quick fix, don't be tempted 
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
