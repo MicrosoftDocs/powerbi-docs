@@ -39,7 +39,7 @@ The link format described in this section uses redirection to make sure the link
 
 The link must start with a special prefix, followed by query parameters:
 
-```https```://app.powerbi.com/Redirect?**[QUERYPARAMETERS]**</code>
+http:\//app.powerbi.com/Redirect?**[QUERYPARAMETERS]**</code>
 
 > [!IMPORTANT]
 > If your content is hosted in special datacenter such as Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.
@@ -68,15 +68,15 @@ In the following examples, placeholders for the parameter values are highlighted
 
 * **Open an app**
 
-    ```https```://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+    https\://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
    
 * **Open a dashboard that is part of an app**
 
-    ```https```://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+    https\://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
 
 * **Open a report that is part of a workspace other than My Workspace**
 
-    ```https```://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
+    https\://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
 
 ### How to get the correct link format
 
@@ -94,15 +94,15 @@ The examples below show where you can find the IDs you need in the URLs of the i
 
 * To find a 36-character dashboard object ID, navigate to the specific dashboard you want to link to in the Power BI service and find the dashboard object ID and any other required IDs in the places indicated below:
 
-    ```https```://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
+    https\://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
 
 * To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example contains a reference to a specific report page and a specific bookmark.
 
-    ```https```://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;bookmark-id&gt;**
+    https\://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;bookmark-id&gt;**
 
 * To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows a report from a workspace other than My Workspace.
 
-    ```https```://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
+    https\://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
 
 ### Create a link that opens only on a device that has the Power BI mobile app installed
 
@@ -124,7 +124,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To get the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service and extract it from the URL. For example, the dashboard object id is highlighted in the following URL from the Power BI service:
 
-    ```https```://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
+    https\://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
 
     If the dashboard is not in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID. The deep link shown below has the group object id parameter added after the dashboard object id:
 
