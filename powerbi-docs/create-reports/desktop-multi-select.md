@@ -48,11 +48,11 @@ The canvas doesn't automatically scroll with the rectangular lasso selection.
 
 You can select multiple data points within a visual using the same rectangular lasso steps in both Power BI Desktop and the Power BI service.
 
-**Multi-select with the Ctrl key**
+#### Rectangular multi-select with the Ctrl key
 
 While holding down the *Ctrl* key, click and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using *Ctrl* while selecting, those data points are unselected (toggled off); using the lasso has the same effect as *Ctrl* + clicking each point individually.
 
-**Multi-select with the Shift key**
+#### Rectangular multi-select with the Shift key
 
 When you hold down the *Shift* key while making a lasso selection, previous selections are preserved and already-selected data points remain selected. So using *Shift* while performing a lasso-select only adds data points to your selection, rather than toggling data points in the selected area.
 
@@ -60,7 +60,7 @@ When you hold down the *Shift* key while making a lasso selection, previous sele
 
 You can clear your current selection by clicking an empty space on the plot area without pressing a keyboard key.
 
-**Multi-select using the keyboard**
+#### Rectangular multi-select using the keyboard
 
 You can use keyboard controls to access data point rectangle select without a mouse.
 
