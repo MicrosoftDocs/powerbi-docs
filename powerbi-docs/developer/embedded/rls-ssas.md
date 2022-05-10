@@ -28,11 +28,11 @@ To embed a report that uses RLS with an SSAS model, you need to do the following
 
 ## Prerequisite
 
-Before you start, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set this up, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+Before you start, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set up dynamic security, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
 
 ## Set up the environment
 
-To set up the RLS environment, you need to perform the *first four tasks* of [Implement row-level security in an on-premises Analysis Services tabular model](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md). Keep in mind that this document is a tutorial that goes uses specific tables and roles as an example. You'll replace them with the tables and roles that you need.
+To set up the RLS environment, you need to perform the *first four tasks* of [Implement row-level security in an on-premises Analysis Services tabular model](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md). Keep in mind that this document is a tutorial that uses specific tables and roles as an example. You'll replace them with the tables and roles that you need.
 
 1. [Set up the security table and define data relationships](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-1-create-the-user-security-table-and-define-data-relationship)
 2. [Define roles and permissions on-prem](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-2-create-the-tabular-model-with-facts-and-dimension-tables)
