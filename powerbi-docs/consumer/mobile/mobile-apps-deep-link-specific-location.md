@@ -39,7 +39,7 @@ The link format described in this section uses redirection to make sure the link
 
 The link must start with a special prefix, followed by query parameters:
 
-http:\//app.powerbi.com/Redirect?**[QUERYPARAMETERS]**</code>
+http:\//app.powerbi.com/Redirect?**[QUERYPARAMETERS]**
 
 > [!IMPORTANT]
 > If your content is hosted in special datacenter such as Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.
@@ -174,7 +174,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
+    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**
 
 * **Open in full-screen mode (for Windows devices only)**
 
