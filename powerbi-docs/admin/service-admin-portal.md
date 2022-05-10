@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 05/09/2022
 LocalizationGroup: Administration
 ---
 
@@ -51,4 +51,5 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+>[!div class="nextstepaction"]
+>[About tenant settings](service-admin-portal-about-tenant-settings.md)

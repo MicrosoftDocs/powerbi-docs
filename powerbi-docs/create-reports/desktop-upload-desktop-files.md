@@ -11,6 +11,9 @@ ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 When you publish a Power BI Desktop file to the Power BI service, you publish the data in the model to your Power BI workspace. The same is true for any reports you created in **Report** view. You’ll see a new dataset with the same name, and any reports in your Workspace navigator.
 
 Publishing from Power BI Desktop has the same effect as using **Get Data** in Power BI to connect to and upload a Power BI Desktop file.
@@ -19,7 +22,7 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 > Any changes you make to the report in Power BI won't be saved back to the original Power BI Desktop file. This includes when you add, delete, or change visualizations in reports.
 
 ## To publish a Power BI Desktop dataset and reports
-1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the ribbon.  
+1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the **Home** ribbon.  
 
    ![Publish button](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 

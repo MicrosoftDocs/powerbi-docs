@@ -8,10 +8,12 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/02/2021
+ms.date: 04/28/2022
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions apply, which are described later in this article.
 
@@ -621,7 +623,7 @@ An enumeration, most commonly used for drop-down formatting options, means it ca
             "The visual will adapt to size changes"
           ]
         },
-        "legend": {
+     "legend": {
         "show": {
           "type": [
             "bool"

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 05/09/2022
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
@@ -100,7 +100,7 @@ We see this page of the report has four page-level filters. By selecting the col
 You can explore the relationships between the visuals in your report without using filters or slicers. Select a value or axis label in one visual to *cross-filter* or *cross-highlight* the related values in other visuals on the page. They don't all behave the same. 
 
 - **Cross-highlighting** Selecting a value in one visual highlights the related data in visuals such as column and bar charts. Cross-highlighting doesn't remove the unrelated data from those visuals. The unrelated data is still visible but dimmed. 
-- **Cross-filtering** Selecting a value in one visual acts more like a filter in other visuals, such as line charts and scatter charts. In those visuals, only the related data remains visible. The unrelated data isn't visible, just as you'd see with a filter. 
+- **Cross-filtering** Selecting a value in one visual acts more like a filter in other visuals, such as line charts, scatter charts, and maps. In those visuals, only the related data remains visible. The unrelated data isn't visible, just as you'd see with a filter. 
 
 To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) section of "How visuals cross-filter each other in a Power BI report."
 

@@ -28,6 +28,7 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Every action such as selecting a column or adding a filter will send a query back to the database.
 * Tiles are refreshed every hour (refresh does not need to be scheduled). You can adjust how often to refresh in the Advanced settings when you connect.
 * Schema changes are not picked up automatically.
+* Changing the data source connection string alias from xxxx.database.windows.net to xxxx.domain.com indicates to the Power BI service that it is an on-premises datasource and always requires a gateway connection to be established.
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.
 

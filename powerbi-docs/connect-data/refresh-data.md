@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/18/2022
+ms.date: 04/14/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -152,6 +152,8 @@ Following a data refresh, however, previously cached query results are no longer
 This refresh process is less important because it is only relevant for live connections to Analysis Services. For these connections, Power BI caches the last state of the report visuals so that when you view the report again, Power BI does not have to query the Analysis Services tabular model. When you interact with the report, such as by changing a report filter, Power BI queries the tabular model and updates the report visuals automatically. If you suspect that a report is showing stale data, you can also select the Refresh button of the report to trigger a refresh of all report visuals, as the following screenshot illustrates.
 
 ![Refresh report visuals](media/refresh-data/refresh-report-visuals.png)
+
+Only pinned visuals are refreshed, not pinned live pages. To refresh a pinned live page, you can use the browser's Refresh button.
 
 ## Review data infrastructure dependencies
 
