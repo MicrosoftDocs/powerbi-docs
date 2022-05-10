@@ -18,7 +18,7 @@ When you first add a live Power BI report page into PowerPoint using the Power B
 
 You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
-[Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
+![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
 
 You can interact with the report both in normal viewing modes and in **Slide Show** mode.
 * In the normal viewing modes, changes you make to the report state (via filtering, selection, slicing, etc.) are saved.
