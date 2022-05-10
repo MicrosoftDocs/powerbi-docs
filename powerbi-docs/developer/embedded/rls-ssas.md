@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 05/10/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report with row-level security on an on-premises SQL Server Analysis Services (SSAS)
@@ -18,22 +18,17 @@ This article explains how to embed Power BI content that uses [**RLS** (row-leve
 > [!NOTE]
 > This article is only relevant for app owns data customers.
 
-In this scenario, the RLS database is configured on the SSAS (on-prem) engine, and shares information with the Power BI engine via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways) to create a report.
+In this scenario, the RLS is configured on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles and permissions are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
 
-The important things to remember here are:
-
-* Security roles and permissions are defined on-prem, and not in the Power BI desktop.
-* The usernames on the SSAS engine might not be the same usernames that the Power BI engine recognizes. Therefore, you have to create a user-mapping table to tell the on-prem engine to override the effective identity with a different (cloud) user name.
-
-To embed a report that uses RLS with an on-prem engine, you need to do the following actions:
+To embed a report that uses RLS with an SSAS model, you need to do the following actions:
 
 1. [Set up the environment](#set-up-the-environment)
-1. [Create the report](#create-the-report)
-1. [Generate an embed token](#generate-an-embed-token)
+2. [Create the report](#create-the-report)
+3. [Generate an embed token](#generate-an-embed-token)
 
 ## Prerequisite
 
-Before you start, make sure your on-prem database is set up to handle row level dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set this up, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+Before you start, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set this up, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
 
 ## Set up the environment
 
@@ -41,14 +36,8 @@ To set up the RLS environment, you need to perform the *first four tasks* of [Im
 
 1. [Set up the security table and define data relationships](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-1-create-the-user-security-table-and-define-data-relationship)
 2. [Define roles and permissions on-prem](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-2-create-the-tabular-model-with-facts-and-dimension-tables)
-3. [Create a gateway](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-3-add-data-sources-within-your-on-premises-data-gateway) 
-4. Create a user mapping table, if needed.
-
-   If the usernames on the cloud directory and the on-prem active directory are different, the gateway admin can create a user-mapping table to tell the on-prem engine to override the effective identity with the cloud user name.
-
-   ![Set gateway user mapping.](media/rls-ssas/gateway-map-users.png)
-
-   With this procedure complete, the gateway is configured and ready to interact with your on-prem Analysis Services data source.
+3. [Create a data source on the gateway](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-3-add-data-sources-within-your-on-premises-data-gateway)
+4. Add the service principal or master user as a gateway admin, or add them as a [Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright).
 
 5. Complete the first four steps only, of [connect to the AS engine](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop)
 
@@ -89,7 +78,7 @@ You can embed your report in your app, and your report will filter data accordin
 ## Considerations and limitations
 
 * On-premises row-level security with Power BI is only available with live connection.
-* The user or service principal that generates the embed token needs to be either a gateway admin or have a `DatasourceAccessRight` of `Impersonate`.
+* The user or service principal that generates the embed token needs to be either a gateway admin or have a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of `ReadOverrideEffectiveIdentity`.
 
 ## Next steps
 
