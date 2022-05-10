@@ -35,7 +35,7 @@ Before you start, make sure that you have:
 
 ## Generate an SQL token
 
-A service principal can't pass any credentials to the data source. A master user can pass its own credentials, but not different credentials for each user. For the data source to know which data to return, create a token for the SQL database with the specific user's credentials. When this SQL token is passed to the data source, the data source returns only the data that user can access.
+A service principal can't pass any credentials to the data source. A master user can pass its own credentials, but not different credentials for each user. For the data source to know which data to return, create an [access token](/azure/databricks/dev-tools/api/latest/aad/) for the SQL database with the specific user's credentials. When this token is passed to the data source, the data source returns only the data that user can access.
 
 ## Generate an embed token
 
