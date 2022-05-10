@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/05/2022
+ms.date: 05/10/2022
 LocalizationGroup: Premium
 ---
 # Interactive and background operations
