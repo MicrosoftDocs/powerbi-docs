@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/23/2021
+ms.date: 05/09/2022
 LocalizationGroup: Reports
 ---
 # Change how visuals interact in a Power BI report
@@ -23,7 +23,7 @@ See [About filtering and highlighting](power-bi-reports-filters-and-highlighting
 
 This article shows you how to use **visual interactions** in Power BI Desktop. The process is the same in the Power BI service [Editing view](service-interact-with-a-report-in-editing-view.md). If you only have Reading view access, or the report has been shared with you, you will not be able to change the visual interactions settings.
 
-The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to *filter* and *highlight* visualizations.  
+The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to *filter* visualizations.  
 
 > [!NOTE]
 > This video uses older versions of Power BI Desktop and the Power BI service. 
@@ -65,7 +65,7 @@ Start by selecting a visualization to make it active.  Notice that all the other
 
 If the selected visualization should:
    
-   * cross-filter one of the other visualizations on the page, select the **filter** icon in the upper right corner of that visualization ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * cross-filter one of the other visualizations on the page, select the **filter** icon in the upper right corner of that visualization ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png). You can only cross-filter line charts, scatter charts, and maps. You can't cross-highlight them.
    * cross-highlight one of the other visualizations on the page, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
    * have no impact on one of the other visualizations on the page, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
