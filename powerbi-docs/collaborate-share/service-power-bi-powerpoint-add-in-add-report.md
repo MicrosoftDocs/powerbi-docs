@@ -1,5 +1,5 @@
 ---
-title: Add a live Power BI report page to PowerPoint
+title: Using the Power BI add-in for PowerPoint
 description: Learn how to add a live Power BI report page to a PowerPoint slide using the Power BI PowerPoint add-in, and how to work with the report page in PowerPoint.
 author: paulinbar
 ms.author: painbar
@@ -26,7 +26,7 @@ You can interact with the report both in normal viewing modes and in **Slide Sho
 
 This behavior is useful for preparing slide shows. You set up your presentation in normal mode, and then you can present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
-Note about Save as Static Image
+[Note about Show as Saved Image]
 
 In addition to the interactive features of the report itself (filters, selection, slicers, etc.) the add-in has menus that provide other controls and features to help you with your work.
 
@@ -69,7 +69,7 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 
     If all you want to do is refresh the data, use the **Refresh** option in the Report options menu instead.
 
-* **Show as Saved Image**: Converts the current state as a saved, static image. You can’t interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select Show as Saved Image again to restore the live current view. The report will reload.
+* **Show as Saved Image**: Converts the current state as a saved, static image. You can’t interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
 ## Show/hide filters pane
 

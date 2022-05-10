@@ -44,15 +44,12 @@ The Power BI data that you see in PowerPoint using the Power BI add-in remains i
 
 * If your organization has a **SubscriptionCommercial** or **SubscriptionCommericalPro** Office subscription, a button for the add-in will appear in the PowerPoint ribbon.
 
-[Image]
+    [Image]
 
-The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user does not have access to the store, the button won't work.
+    The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user does not have access to the store, the button won't work.
 
 ## Next Steps
 
-* Add a Power BI report page to a PowerPoint slide
-* Use the Power BI add-in for PowerPoint
-
-## Next steps
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Add a live Power BI report page in PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Using the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-add-report.md)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
