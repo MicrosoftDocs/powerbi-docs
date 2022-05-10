@@ -428,6 +428,8 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
 * The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
 
+* [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
+
 ## Next steps
 
 > [!div class="nextstepaction"]
