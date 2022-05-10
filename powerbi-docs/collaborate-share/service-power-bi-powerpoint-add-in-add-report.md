@@ -14,15 +14,21 @@ ms.date: 05/10/2022
 
 # Using the Power BI add-in for PowerPoint
 
-When you first add a live Power BI report page into PowerPoint using the Power BI add-in for Powerpoint, the initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. This initial state is called the default view. As you work with the report, you can always restore the default view if you want to go back to it.
+When you first add a live Power BI report page into PowerPoint using the Power BI add-in for Powerpoint, the initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. This initial state is called the default view. As you work with the report, you can always [restore](#report-options) the default view if you want to go back to it.
 
-You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data. You can interact with the report in both edit mode and presentation modes.
-* In edit mode, changes you make to the report state (via filtering, selection, slicing, etc.) are saved.
-* In presentation mode, such changes aren't saved. When you leave presentation mode, the report goes back to the state it was in when you left edit mode.
+You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
-This behavior is useful for preparing presentations. You set up your presentation in edit mode, and then you can present it in presentation mode multiple times without having to set it up again each time.
+[Animated gif that shows interacting with the report]
 
-In addition to interactive features of the report itself (filters, selection, slicers, etc.) the add-in has several menus that provide other controls and features that help you with your work.
+You can interact with the report both in normal viewing modes and in **Slide Show** mode.
+* In the normal viewing modes, changes you make to the report state (via filtering, selection, slicing, etc.) are saved.
+* In **Slide Show** mode, such changes aren't saved. When you exit the slide show, the report goes back to the state it was in when you left the normal viewing mode.
+
+This behavior is useful for preparing slide shows. You set up your presentation in normal mode, and then you can present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
+
+Note about Save as Static Image
+
+In addition to the interactive features of the report itself (filters, selection, slicers, etc.) the add-in has menus that provide other controls and features to help you with your work.
 
 ![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
 
