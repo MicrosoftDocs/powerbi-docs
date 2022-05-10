@@ -41,12 +41,12 @@ A service principal can't pass any credentials to the data source. A master user
 
 To generate an embed token:
 
-* If the dataset doesn't have RLS, just pass the SQL token that was created for the user.
+* For a dataset that doesn't have RLS, just pass the SQL token that was created for the user.
 
   The report rendered will have the `username` as the user that the SQL token was created for and the `effective identity` as the object ID of the service principal or master user that created the SQL token.
 
-* If dataset has RLS:
-  Use the following information to create the embed token:
+* For a dataset with RLS:
+  Use the following credentials to create the embed token:
 
   * SQL token that was created for the user (object ID of the service principal)
   * Username: The role member
