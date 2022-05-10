@@ -61,7 +61,7 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 ## Configure role mappings
 
-Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](../admin/service-admin-rls.md#manage-security-on-your-model).
+Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](../enterprise/service-admin-rls.md#manage-security-on-your-model).
 
 Members can be user accounts or security groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Azure Active Directory. Possibly, it delegates the task to your network administrators.
 
@@ -125,7 +125,7 @@ SUMMARIZECOLUMNS(
 ```
 
 > [!NOTE]
-> An [aggregation table](../admin/aggregations-auto.md) could achieve the same design requirement.
+> An [aggregation table](../enterprise/aggregations-auto.md) could achieve the same design requirement.
 
 The following RLS rule is applied to the **Salesperson** table:
 
@@ -181,7 +181,7 @@ If RLS produces unexpected results, check for the following issues:
 - Tables contain no data.
 - Incorrect values are loaded into tables.
 - The user is mapped to multiple roles.
-- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../admin/aggregations-auto.md#custom-alm-solutions).
+- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../enterprise/aggregations-auto.md#custom-alm-solutions).
 
 When a specific user can't see any data, it could be because their UPN isn't stored or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
 
@@ -197,7 +197,7 @@ When a specific user can see all data, it's possible they're accessing reports d
 
 For more information related to this article, check out the following resources:
 
-- [Row-level security (RLS) with Power BI](../admin/service-admin-rls.md)
+- [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md)
 - [Restrict data access with row-level security (RLS) for Power BI Desktop](../create-reports/desktop-rls.md)
 - [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

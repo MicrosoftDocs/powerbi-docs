@@ -8,20 +8,39 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 04/18/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-We’re introducing a redesigned Format pane in Power BI Desktop. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.  
+Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
 
-We know it's a big change so we're rolling it out slowly, to get your early feedback and make any needed adjustments. It's currently in preview starting with the Power BI Desktop November 2021 release. Give it a try!
+The first time you open the February 2022 (or later) release of Power BI Desktop, you see a notification about the updated Format pane.
 
-## Turn on the preview
+:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
 
-- Go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
+
+## Latest updates
+
+Improvements added in February 2022 include:
+
+- Ability to toggle axis title independent of axis has been re-added.
+- Ability to add shade area to combo charts has been re-added.
+- Ability to customize marker shape by series for scatter charts has been re-added.
+- Outline settings for matrix and table have been re-added.
+- Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
+
+Improvements added in April 2022 are the following:
+
+- Shape map custom color has been reintroduced
+- Scatter chart *show blank values* toggle has been reintroduced
+- Slicers with slider type (between, before, after) responsive toggle has been reintroduced
+- Button icon size setting has been reintroduced
+- Issue causing delay in cursor position for text input boxes is resolved
+
 
 ## New pivot icons 
 
@@ -88,7 +107,7 @@ Previously, you only saw some cards when you added certain fields in the build t
 
 ## Merged font settings
 
-Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and better to align with Office.
+Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and to better align with Office.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -123,6 +142,44 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+
+
+## Consolidated outline settings for matrix and table
+
+The outline settings for matrix and tables are now consolidated to enabling be set from the **Grid** card. Previously users had to use the Grid card to set the color and width, then navigate to each section of the matrix to adjust the border location. With this update, you can adjust the borders for the whole matrix and refine each section from the same place within the **Grid** card.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of old outline format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of new outline format experience.":::       |
+
+
+## Split for column grand and row totals for matrix
+
+In the previous Format pane settings, changing grand totals would affect both row and columns. With the April 2022 updates you can format each separately.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-totals-old.png" alt-text="Screenshot of old totals format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-totals-new.png" alt-text="Screenshot of new totals format experience.":::       |
+
+
+## Legend locations options
+
+More location options for legend locations are provided beginning with the April 2022 update.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-legend-options-old.png" alt-text="Screenshot of old legend location options.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-legend-options-new.png" alt-text="Screenshot of new legend location options.":::       |
+
+
+
+## Turn off the preview
+
+- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+
+    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+
+    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
+
 
 ## Considerations and limitations
 

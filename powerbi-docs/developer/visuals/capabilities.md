@@ -3,16 +3,18 @@ title: Capabilities and properties of Power BI visuals
 description: This article describes the capabilities and properties of Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 05/02/2022
+ms.date: 05/10/2022
 ---
 
-# Capabilities and properties of Power BI visuals 
+# Capabilities and properties of Power BI visuals
 
-Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. **All properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
+Every visual has a *capabilities.json* file that is created automatically when you run the `pbiviz new <visual project name>` command to create a new visual. The *capabilities.json* file describes the visual to the host.
+
+The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. **All properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
 
 The *capabilities.json* file lists the root objects in the following format:
 
@@ -33,6 +35,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 * [privileges](#privileges-define-the-special-permissions-that-your-visual-requires)
 * [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
+ 6cf41a5ebc3f9487c3433112c2a6bfe128ac2bd1
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 
@@ -44,6 +47,7 @@ The following additional root objects can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
+* [expandCollapse](dataview-mappings.md#expanding-and-collapsing-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)

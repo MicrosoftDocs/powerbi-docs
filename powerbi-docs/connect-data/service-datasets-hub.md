@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 11/18/2021
+ms.date: 03/17/2022
 LocalizationGroup: Share your work
 ---
 # Datasets discovery using the datasets hub
@@ -22,7 +22,7 @@ By making it easy to find quality datasets and their related reports, the datase
 
 This article explains what you see on the datasets hub and describes how to use it. For dataset owners, it also includes a number of tips about how to [enhance the discoverability and useability of their datasets](#make-your-dataset-discoverable).
 
-**What datasets do I see in the datasets hub?**
+#### What datasets do I see in the datasets hub?
 
 * Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
 * Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
@@ -31,6 +31,9 @@ This article explains what you see on the datasets hub and describes how to use 
 For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
 
 If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing datasets and using the capabilities available on the datasets hub.
+
+>[!NOTE]
+> To be fully functional, the datasets hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access datasets you see listed in the datasets hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
 
 ## Find the dataset you need
 
@@ -42,14 +45,12 @@ The image below shows the datasets hub in the Power BI service.
 
 ![Screenshot of datasets hub page](media/service-datasets-hub/datasets-hub-main-page.png)
 
-The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
-
-1. Click to view details page and to explore related reports.
-1. Click to view options.
-1. Click to view a summary of details.
-1. A grayed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Click to view details page.
+1. Click to display options menu.
+1. Click to view details summary.
+1. A greyed-out icon indicates that you don't have permissions to access that dataset's details page. Datasets with greyed-out icons only show up for you in the list if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
-1. Click to see dataset description.
+1. Hover to view dataset description.
 
 The sections below describe these sections and the actions you can perform.
 
@@ -59,21 +60,22 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear grayed out.
+The dataset list shows you datasets in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
 
 The list has three tabs to filter the list of datasets.
-* **All datasets**: Shows all the datasets in your organization that you have permission to find. 
-* **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the related dataset shows up in the Recent column.
-* **My datasets**: Shows the datasets you own. 
+* **All datasets**: Shows all the datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+* **My datasets**: Shows all the datasets that you are the owner of.
+* **Trusted in your org**: Shows all the endorsed datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub). Certified datasets are listed first, followed by promoted datasets.
 
 Use the search box to further filter down the items on the current tab.
 
 The columns of the list are described below. Click on a column header to sort by that column. 
-* **Name**: The dataset name. Click the dataset name to explore reports that are built using this dataset.
+* **Name**: The dataset name. Click the dataset name to open the dataset details page.
 * **Endorsement**: Endorsement status.
-* **Owner**: Dataset owner.
+* **Owner**: Dataset owner (All and Trusted in your org tabs only).
 * **Workspace**: The workspace the dataset is located in.
 * **Refreshed**: Last refresh time (rounded to hour, day, month, and year. See the dataset info on the dataset detail page for exact time of last refresh).
+* **Next refresh**: The time of the next scheduled refresh (My datasets tab only).
 * **Sensitivity**: Sensitivity, if set. Click on the info icon to view the sensitivity label description.
 
 ### Create new reports or pull data into Excel via Analyze in Excel
@@ -149,7 +151,7 @@ The dataset details section shows the name of the workspace where the dataset is
 The Explore related reports section shows you all the reports that are built on the selected dataset. You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
 The columns in the list of related reports are:
-* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template.
+* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
 * **Endorsement**: Endorsement status.
 * **Workspace**: The name of the workspace where the report is located.
 

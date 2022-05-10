@@ -160,6 +160,21 @@ This tutorial is designed to help you get started creating visuals with Python i
 - [Python visualizations in Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 - [Using Python Visuals in Power BI ](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 
+## Licensing
+Python visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../enterprise/service-admin-purchasing-power-bi-pro.md)
+
+Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) for more information.
+
+The following table describes Python visuals capabilities based on licensing.
+
+
+|  |Author Python visuals in Power BI Desktop  | Create PBI service reports with Python visuals |View Python visuals in reports  |  
+|---------|---------|---------|---------|
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  |  
+|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
+**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
+
 ## Known limitations
 
 Python visuals in Power BI Desktop have a few limitations:

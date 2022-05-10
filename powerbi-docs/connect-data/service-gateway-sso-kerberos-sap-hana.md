@@ -46,7 +46,7 @@ We also recommend following these extra steps, which can yield a small performan
     </setting>
     ```
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report).
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration).
 
 ## Troubleshoot
 
@@ -92,7 +92,7 @@ The important element in this log entry is the information that's displayed afte
 
 **Resolution**
 
-You can set up ImpersonationLevel properly by following the instructions in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
+You can set up ImpersonationLevel properly by following the instructions in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 After you've changed the configuration file, restart the gateway service for the change to take effect.
 
@@ -139,7 +139,7 @@ Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azur
 
 **Resolution**
 
-To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
+To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-5-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
 
 
 **Validation**
@@ -159,7 +159,7 @@ In HANA authentication traces, you might see entries similar to the following:
 
 **Resolution**
 
-Follow the instructions described in the "Set user-mapping configuration parameters on the gateway machine (if necessary)" section of [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine-if-necessary), even if you've already configured the **Azure AD Connect** service.
+Follow the instructions described in the "Set user-mapping configuration parameters on the gateway machine (if necessary)" section of [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Azure AD Connect** service.
 
 **Validation**
 

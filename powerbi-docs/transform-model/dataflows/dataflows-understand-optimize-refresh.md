@@ -102,7 +102,7 @@ For example, if you have a dataflow with three tables, no individual table can t
 
 If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](/power-query/power-query-folding) on your source systems.
 
-Separately, consider upgrading to Premium Per User, which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
+Separately, consider upgrading to Premium Per User, which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../enterprise/service-premium-per-user-faq.yml).
 
 ### Long durations
 
@@ -156,6 +156,9 @@ Not all data sources can perform query folding, and even when query folding is p
 While Power Query has design-time visibility into query folding, the Compute Engine column provides details about whether the internal engine itself is used. The Compute Engine is helpful when you have a complex dataflow and you're performing transformations in memory. This is where the enhanced refresh statistics can be helpful, since the Compute Engine column provides details about whether or not the engine itself was used.
 
 The following sections provide guidance about using the Compute Engine, and its statistics.
+
+> [!WARNING]
+> During design time the folding indicator in the editor may show that the query does not fold when consuming data from another dataflow. Check the source dataflow if enhanced compute is enabled to ensure folding on the source dataflow is enabled.
 
 #### Guidance on Compute Engine Statuses
 
