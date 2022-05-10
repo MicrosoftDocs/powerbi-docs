@@ -35,7 +35,6 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 * [privileges](#privileges-define-the-special-permissions-that-your-visual-requires)
 * [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
- 6cf41a5ebc3f9487c3433112c2a6bfe128ac2bd1
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 
