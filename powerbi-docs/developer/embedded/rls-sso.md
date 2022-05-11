@@ -62,4 +62,12 @@ Roles: CountryDynamic
 
 ## Considerations and limitations
 
+A service principal must provide an effective RLS identity with the username property defined.
+
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [RLS guidance](../../guidance/rls-guidance.md)
+
+> [!div class="nextstepaction"]
+> [Generate an embed token](generate-embed-token.md#row-level-security)
