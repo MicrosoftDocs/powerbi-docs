@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/10/2022
+ms.date: 05/11/2022
 ---
 
 # Using the Power BI add-in for PowerPoint
