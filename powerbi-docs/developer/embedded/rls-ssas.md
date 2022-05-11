@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/10/2022
+ms.date: 05/11/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report with row-level security on an on-premises SQL Server Analysis Services (SSAS)
@@ -65,7 +65,9 @@ You can embed your report in your app, and your report will filter data accordin
 ## Considerations and limitations
 
 * On-premises row-level security with Power BI is only available with live connection.
-* The user or service principal that generates the embed token needs to be either a gateway admin or have a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of `ReadOverrideEffectiveIdentity`.
+* The user or service principal generating the embed token also needs one of the following permissions:
+  * Gateway admin permissions
+  * [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of `ReadOverrideEffectiveIdentity`.
 
 ## Next steps
 
