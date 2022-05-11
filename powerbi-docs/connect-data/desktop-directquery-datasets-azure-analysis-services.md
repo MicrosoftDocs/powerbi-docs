@@ -23,7 +23,7 @@ Since the functionality is currently in preview, you must first enable it. To do
 
 Tenant administrators can enable or disable DirectQuery connections to Power BI datasets in the admin portal. While this is enabled by default, disabling it will effectively stop users from publishing new composite models on Power BI datasets to the service.
 
-:::image type="content" source="media/directquery-connections-datasets-admin-setting.png" alt-text="Admin setting to enable or disable DirectQuery connections to Power BI datasets.":::
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-connections-datasets-admin-setting.png" alt-text="Admin setting to enable or disable DirectQuery connections to Power BI datasets.":::
 
 Existing reports that leverage a composite model on a Power BI dataset will continue to work and users can still create the composite model in using Desktop but will not be able to publish to the service. Instead, when you create a DirectQuery connection to the Power BI dataset by selecting **Make changes to this model** you will see the following warning message:
 
