@@ -26,7 +26,7 @@ You can interact with the report both in normal viewing modes and in **Slide Sho
 
 This behavior is useful for preparing slide shows. You set up your presentation in normal mode, and then you can present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
-[Note about Show as Saved Image]
+If for some reason you want to capture a certain state, there is a **[Show as Saved Image](#add-in-side-pane)** option that turns the current state into a static, non-interactive image. If you select the option again, the live report page reloads in the state it was last in.
 
 In addition to the interactive features of the report itself (filters, selection, slicers, etc.) the add-in has menus that provide other controls and features to help you with your work.
 
