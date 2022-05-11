@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/19/2022
+ms.date: 04/21/2022
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -38,16 +38,18 @@ The **Binary** data type is not currently supported outside of the Power Query E
 
 Power BI Desktop supports three number types:
 
-**Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest precision that can be represented in a Decimal Number type is 15 digits long. The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers.
+**Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest precision that can be represented in a Decimal Number type is 15 digits long. The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers. The Decimal Number data type is specified in the Tabular Object Model (TOM) as DataType.Double Enum type <sup>[1](#enum)</sup>.
 
-**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative). The Fixed Decimal Number type is useful in cases where rounding might introduce errors. When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off. Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors. If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot.
+**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative). The Fixed Decimal Number type is useful in cases where rounding might introduce errors. When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off. Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors. If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency data type in Analysis Services and Power Pivot in Excel. The Fixed Decimal Number data type is specified in TOM as DataType.Decimal Enum type <sup>[1](#enum)</sup>.
 
-**Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,807 (-2^63+1) and 9,223,372,036,854,775,806 (2^63-2). It can represent the largest possible precision of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
+**Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,807 (-2^63+1) and 9,223,372,036,854,775,806 (2^63-2). It can represent the largest possible precision of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. The Whole Number data type is specified in TOM as DataType.Int64 Enum type <sup>[1](#enum)</sup>.
 
 > [!NOTE]
 >  The Power BI Desktop data model supports 64 bit integer values, but the largest number the visuals can safely express is 9,007,199,254,740,991 (2^53-1) due to JavaScript limitations. If you work with numbers in your data model above this, you can reduce the size through calculations before adding them to a visual.
 > 
 >
+
+<a name="enum">1</a> - <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums are specified in the tabular Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> *property*. To learn more about programmatically modifying objects in Power BI, see [Programming Power BI datasets with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
 
 #### Ensuring accuracy of number type calculations
 
@@ -76,14 +78,15 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear to change slightly between querying data using Power Query, and then, after the data has been loaded.
 
+#### Case (in-)sensitivity
 The engine that stores and queries data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
-In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and a *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
+In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and an *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Textual data with various capitalizations in Power Query":::
 
 Notice there are multiple orders with the same name as addressee, although entered into the system slightly differently.
 
-When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following:
+When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following table.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="The same textual data after loading into Power BI has changed capitalization":::
 
@@ -102,6 +105,43 @@ The *Addressee* for the fourth row is compared against the names in the dictiona
 >  Since the engine that stores and queries data in Power BI is case-*in*sensitive, special care must be taken when working in DirectQuery mode with a source that *is* case-sensitive. Power BI assumes that the source has eliminated duplicate rows; since Power BI is case-insensitive, two values that differ by case only are treated as duplicate, whereas the source might not treated as such. In such cases the final result is undefined and should be avoided. If you are using DirectQuery mode and your data source is case-sensitive, you must normalize casing in the source query or in Power Query.
 > 
 >
+
+#### Trailing spaces
+When working with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion, since the Power BI engine automatically trims any trailing spaces but not leading spaces. Without removing leading or trailing spaces, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
+As a simple example, we loaded data about customers: a *Name* column which contains the name of the customer and an *Index* column that is unique for each entry. Notice the customer name is repeated four times, but each time with different combinations of leading and trailing spaces:
+
+|Row|Leading space|Trailing space|Name (within quotes for clarity)|Index|Text length|
+|---|---|---|---|---|---|
+|1|No|No|"Dylan Williams"|1|14|
+|2|No|Yes|"Dylan Williams "|10|15|
+|3|Yes|No|" Dylan Williams"|20|15|
+|4|Yes|Yes|" Dylan Williams "|40|16|
+
+These variations can occur with manual data entry over time. In Power Query, the resulting data is shown as follows.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Screenshot of textual data with various leading and trailing spaces in Power Query":::
+
+
+
+When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following image.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-05.png" alt-text="Screenshot of the same textual data after loading into Power BI returns the same number of rows as before.":::
+
+However, a visual based on this data returns just two rows.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="Screenshot of a table visual based on the same data returns just two lines of data - the first row has a total index of 60 and the second row has a total index of 11.":::
+
+As the first image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The reason for the differences it because the engine automatically removes (trim) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
+
+This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-08.png" alt-text="Screenshot of an error message showing: Column 'Name' in Table 'Customers' contains a duplicate value 'Dylan Williams' and this is not allowed for columns on the one side of a many-to-one relationship or for columns that are used as the primary key of a table.":::
+
+In other situations, you might be unable to create a many-to-one or one-to-one relationship because duplicate values are detected.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Screenshot of the relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
+
+These errors are traced back to leading or trailing spaces and can be resolved by using the [Text.Trim](/powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.

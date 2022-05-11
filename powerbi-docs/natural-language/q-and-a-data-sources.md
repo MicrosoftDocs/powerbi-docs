@@ -38,7 +38,7 @@ When you enable Q&A, an index is built to quickly provide real-time feedback to 
 
 ## How often is the index refreshed and cached?
 
-In Power BI Desktop, the index is created at the time you use Q&A. A small icon will appear letting you know the index is being built. During this time, the Q&A visual, including suggestions, may take some time to load.
+In Power BI Desktop, the index is created at the time you use Q&A. A small icon will appear letting you know the index is being built. During this time, the Q&A visual, including suggestions, may take some time to load. The index must be updated if your model changes or the index becomes out-of-date. Since the index can take time to rebuild, the update will only occur when you're using Q&A or have used Q&A in the same session as the model change(s). 
 
 In Power BI Service, the index is recreated on publish/republish and refresh. The Q&A index isn't always created automatically and will sometimes be based upon an on-demand basis to optimize the dataset refreshes. For Direct Query, we'll index the data at most once per day to reduce the impact on the Direct Query source.
 
