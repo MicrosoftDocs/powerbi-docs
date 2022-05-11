@@ -15,7 +15,7 @@ Field parameters allow users to dynamically change the measures or dimensions be
 
 In this example, the bar chart and table are dynamically updated. They measure COGS and analyze by Product based on the user’s selection within the slicers.
 
-:::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Example field parameters that dynamically update visuals based on the report reader selection":::
+:::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of example field parameters that dynamically update visuals based on the report reader selection.":::
  
 ## Enable the field parameter preview
 
@@ -51,7 +51,7 @@ From the context menu, you can also choose if the field parameter shows the valu
 
 - In the **Values** box, select the down arrow next to the parameter name and select **Show selected field**.
 
-    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot, for non-slicer visuals, customize if the visual displays the values or the display names of the selected field(s).":::
+    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot for non-slicer visuals, customize if the visual displays the values or the display names of the selected fields.":::
 
 ## Edit a field parameter
 
@@ -68,10 +68,10 @@ Parameter = {
 }
 ```
 
-:::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of Example editing a field parameter in DAX.":::
+:::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of Example of editing a field parameter in DAX.":::
 
 ## Limitations
 
 - AI visuals and Q&A aren't supported with the feature.
-- There's no way for end users to select "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
+- There's no way for your report users to select "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
 - You can't use implicit measures for now, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. Read more about [implicit vs. explicit measures](../guidance/star-schema.md#measures).
