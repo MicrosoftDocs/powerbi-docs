@@ -44,7 +44,7 @@ The Power BI data that you see in PowerPoint using the Power BI add-in remains i
 
 * If your organization has a **SubscriptionCommercial** or **SubscriptionCommericalPro** Office subscription, a button for the add-in will appear in the PowerPoint ribbon.
 
-    [Image]
+    ![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-about/power-bi-addin-powerpoint-button.png)
 
     The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user does not have access to the store, the button won't work.
 
