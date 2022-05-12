@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 05/22/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -56,7 +56,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 
 6.	Enter the number of months and select **OK**.
 
-    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-05.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+
+    Alternatively, if you want to download less than a month's worth of data you can set *Number of months* to zero, then specify a date range using *Start Date* and *End Date* values that equate to less than 31 days.
 
 7.	When prompted, sign in with your Azure user account and password. You must have access to the Billing account scope to successfully access the billing data.
 
