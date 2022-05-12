@@ -155,7 +155,7 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 ## Code examples
 
-When you create an export job, there are three steps to follow:
+When you create an export job, there are four steps to follow:
 
 1. [Sending an export request](#step-1---sending-an-export-request).
 2. [Polling](#step-2---polling).
