@@ -207,3 +207,9 @@ The following articles provide more information about dataflows and Power BI:
 
 > [!div class="nextstepaction"]
 > [Dataflows considerations and limitations](dataflows-features-limitations.md)
+
+> [!div class="nextstepaction"]
+> [Power BI usage scenarios: Self-service data preparation](../../guidance/powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md)
+
+> [!div class="nextstepaction"]
+> [Power BI usage scenarios: Advanced data preparation](../../guidance/powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md)

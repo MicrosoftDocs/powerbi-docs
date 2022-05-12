@@ -7,7 +7,7 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/03/2022
+ms.date: 04/13/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
@@ -20,11 +20,11 @@ This article explains how to embed Power BI content that uses RLS into a standar
 
 ## Prerequisites
 
-For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](../../admin/service-admin-rls.md).
+For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls).
 
 For best results, your tables should be modeled as a [star schema](../../guidance/star-schema.md) with a [snowflake dimensions](../../guidance/star-schema.md#snowflake-dimensions) design. This way, when a filter is applied to a table, all the related tables get filtered accordingly.
 
-When you [define your RLS roles](../../admin/service-admin-rls.md#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
+When you [define your RLS roles](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
 
 ## Static and dynamic security
 
@@ -88,13 +88,20 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
     {
         PowerBIClient pbiClient = this.GetPowerBIClient();
 
-        // Create a request for getting an embed token
+       // Defines the user identity and roles.
+        var rlsIdentity = new EffectiveIdentity(
+            username: "France",
+            roles: new List<string>{ "CountryDynamic" },
+            datasets: new List<string>{ datasetId.ToString()}
+        );
+       
+        // Create a request for getting an embed token for the rls identity defined above
         // This method works only with new Power BI V2 workspace experience
         var tokenRequest = new GenerateTokenRequestV2(
             reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
             datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
             targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
-            identities: new List<EffectiveIdentity> { rls }
+            identities: new List<EffectiveIdentity> { rlsIdentity }
         );
 
         // Generate an embed token

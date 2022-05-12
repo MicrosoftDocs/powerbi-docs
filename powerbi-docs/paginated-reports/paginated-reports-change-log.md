@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/13/2021
+ms.date: 04/18/2021
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,19 @@ ms.date: 12/13/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## April 2022
+
+Version 15.7.1797.84, released April 13, 2022
+
+### Features
+
+- All supported languages are now included in the installer. Language is selected based on current Windows locale setting.
+ 
+### Bug fixes 
+
+- Accessibility fixes mostly focused on better Microsoft Narrator support.
+- Minor telemetry changes.
 
 ## December 2021 
 

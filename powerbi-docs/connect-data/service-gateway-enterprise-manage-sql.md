@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 05/06/2022
 LocalizationGroup: Gateways
 ---
 # Manage your data source - SQL Server
@@ -20,7 +20,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **SQL Server**.
 
-![Select the SQL Server data source](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-sql/add-data-source-sql.png" alt-text=" Screenshot of selecting the SQL Server data source." :::
 
 > [!NOTE]
 > When you use DirectQuery, the gateway supports only **SQL Server 2012 SP1** and subsequent versions.
@@ -32,17 +32,18 @@ Under **Authentication Method**, choose either **Windows** or **Basic**. Choose 
 > [!NOTE]
 > All queries to the data source will run using these credentials, unless Kerberos single sign-on (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execute the queries using SSO. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud). Or, see the article that describes how to [use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md).
 
-![Filling in the data source settings](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
-After you fill in everything, select **Add**. You can now use this data source for scheduled refresh or DirectQuery against a SQL Server that's on-premises. You see *Connection Successful* if it succeeded.
+:::image type="content" source="media/service-gateway-enterprise-manage-sql/authentification-sql.png" alt-text=" Screenshot of filling in the data source settings." :::
 
-![Displaying the connection status](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
+After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against a SQL Server that's on-premises. You see *Created New data source* if it succeeded.
+
+:::image type="content" source="media/service-gateway-enterprise-manage-sql/succesful-data-source-sql.png" alt-text=" Screenshot of successful creation of SQL data source." :::
 
 ### Advanced settings
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-![Setting the privacy level](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-sql/privacy-level-sql.png" alt-text=" Screenshot of the setting the privacy level for SQL data source" :::
 
 ## Use the data source
 
@@ -66,6 +67,7 @@ After you publish, either from Power BI Desktop or **Get Data**, your reports sh
 If you're listed in the **Users** tab of the data source configured within the gateway and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Displaying the users](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
+
 
 ## Next steps
 

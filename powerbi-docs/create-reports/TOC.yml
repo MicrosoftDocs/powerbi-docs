@@ -178,6 +178,8 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
+        - name: "Multi-select data elements, points, visuals"
+          href: desktop-multi-select.md
       - name: Bookmarks and buttons
         items: 
          - name: "Create buttons"
@@ -522,6 +524,8 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Edit a paginated report from the Power BI service
         href: ../paginated-reports/paginated-reports-edit-service.md
+      - name: Create exportable formatted data tables
+        href: ../paginated-reports/paginated-formatted-table.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset

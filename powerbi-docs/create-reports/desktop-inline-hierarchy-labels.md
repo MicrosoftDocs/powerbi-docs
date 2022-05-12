@@ -1,6 +1,6 @@
 ---
-title: Use inline hierarchy labels in Power BI Desktop
-description: Use inline hierarchy labels in Power BI Desktop
+title: Use inline hierarchy labels in Power BI
+description: Use inline hierarchy labels in Power BI Desktop and the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,8 +10,11 @@ ms.topic: how-to
 ms.date: 04/20/2021
 LocalizationGroup: Create reports
 ---
-# Use inline hierarchy labels in Power BI Desktop
-**Power BI Desktop** supports the use of **inline hierarchy labels**, which is the first of two features intended to enhance hierarchical drilling. The second feature, which is currently in development, is the ability to use nested hierarchy labels (stay tuned for that - our updates happen frequently).   
+# Use inline hierarchy labels in Power BI
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+Power BI supports the use of *inline hierarchy labels*, which is the first of two features intended to enhance hierarchical drilling. The second feature, which is currently in development, is the ability to use nested hierarchy labels (stay tuned for that - our updates happen frequently).   
 
 ## How inline hierarchy labels work
 With inline hierarchy labels, you can see hierarchy labels as you expand visuals using the **Expand All** feature. One great benefit to seeing these hierarchy labels is that you can also choose to **sort** by these different hierarchy labels as you expand your hierarchical data.
@@ -42,7 +45,14 @@ This is how the built-in *Date* hierarchy, associated with fields that have a *d
 ### Using inline hierarchy labels
 Now let's look at a different chart - using data that has informal hierarchies. In the following visual, we have a bar chart with **Quantity**, using *ProductName* as the axis. In this data, *ProductName* and *ShipCountry* form an informal hierarchy. From here, you can again select *Expand to next level* to drill down into the hierarchy.
 
-![Chart with informal hierarchy](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
+# [Power BI Desktop](#tab/powerbi-desktop)
+:::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in Power B I Desktop." lightbox="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-expanded.png":::
+
+
+# [Power BI service](#tab/powerbi-service)
+:::image type="content" source="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot shows a chart with informal hierarchy in the Power B I service." lightbox="media/desktop-inline-hierarchy-labels/service-inline-hierarchy-labels-informal-top-expand-expanded.png":::
+
+---
 
 Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting the ellipsis in the upper right corner (the **...**), then selecting **Sort by ProductName ShipCountry** as shown in the following image.
 
