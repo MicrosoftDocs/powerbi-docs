@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/10/2022
+ms.date: 05/12/2022
 LocalizationGroup: Premium
 ---
 # Interactive and background operations
@@ -20,7 +20,7 @@ Shorter running operations such as dataset queries are classified as *interactiv
 
 ## Background operations
 
-Longer running operations such as dataset or dataflow refreshes are classified as *background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
+Longer running operations such as dataset or dataflow refreshes are classified as *background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users aren't expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
 
 ## Operation list
 
