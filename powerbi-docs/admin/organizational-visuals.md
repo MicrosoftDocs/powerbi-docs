@@ -81,6 +81,12 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
 |
 
+### Allow access to remote resources
+
+When this setting in enabled, all visuals created with an API earlier than v4.6.0 will be able to access remote resources. Visuals created with API v4.6.0 and above will be able to access remote resources only if the visual's privileges setting allows it. If the visual's privileges setting doesn't allow access to remote resources that visual won't be allowed access even if this admin setting is enabled.
+
+   :::image type="content" source="media/organizational-visuals/allow-access-to-remote-resources.png" alt-text="Screenshot of the Power B I setting that allows visuals to access remote resources.":::
+
 ### Export data to file
 
 When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../guidance/admin-tenant-settings.md#export-data) settings.
@@ -107,7 +113,7 @@ When this setting is enabled, users can download data from a custom visual into 
 
 4. Select **Apply**.
 
-   :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I allow downloads from custom visuals settings.":::
+   :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I setting that allows downloads from custom visuals.":::
 
 UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
