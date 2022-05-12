@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/21/2022
+ms.date: 05/08/2022
 ---
 
 # Export Power BI report to file

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 05/06/2022
 LocalizationGroup: Gateways
 ---
 
@@ -38,7 +38,7 @@ After the client is installed and ODAC is configured properly, we recommend usin
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **Oracle**.
 
-![Add the Oracle data source](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text=" Screenshot of adding a oracle data source to the gateway." :::
 
 After you select the Oracle data source type, fill in the information for the data source, which includes **Server** and **Database**. 
 
@@ -47,17 +47,17 @@ Under **Authentication Method**, you can choose either **Windows** or **Basic**.
 > [!NOTE]
 > All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-![Filling in the data source settings](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/authentication-oracle.png" alt-text=" Screenshot of filling credentials for oracle data source." :::
 
-After you fill in everything, select **Add**. You can now use this data source for scheduled refresh or DirectQuery against an Oracle server that's on-premises. You see *Connection Successful* if it succeeded.
+After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an Oracle server that's on-premises. You see *Created New data source* if it succeeded.
 
-![Displaying the connection status](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/successful-data-source-oracle.png" alt-text=" Screenshot of successful creation for oracle data source." :::
 
 ### Advanced settings
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-![Setting the privacy level](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/privacy-level-oracle.png" alt-text=" Screenshot of privacy level settings for oracle data source." :::
 
 ## Use the data source
 
