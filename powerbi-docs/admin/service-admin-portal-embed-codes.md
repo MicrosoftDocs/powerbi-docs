@@ -22,7 +22,7 @@ As an administrator, you can view the embed codes that are generated for sharing
 
 ## Disable embed codes
 
-You can disable the *Publish to web* feature, or allow embed codes to work only in your organization. If you disable *Publish to web*, the existing embed codes are not deleted. When you reenable *Publish to web*, the existing embed codes will become active again.
+You can disable the *Publish to web* feature, or allow embed codes to work only in your organization. If you disable *Publish to web*, the existing embed codes aren't deleted. When you reenable *Publish to web*, the existing embed codes will become active again.
 
 Disabling the embed codes is described in [Publish to web](service-admin-portal-export-sharing.md#publish-to-web).
 
