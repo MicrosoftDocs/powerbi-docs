@@ -56,7 +56,7 @@ https://powerbi.microsoft.com/en-us/blog/19361/preview/#post-19361-_Toc103022211
 
 ### Data connectivity
 * Many new data connectors [[video]](https://youtu.be/LTdpe2ENW4M?t=926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022211=7)
-* Azure databricks (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022220)
+* Azure Databricks (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022220)
 * Denodo (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022221)
 * Google Sheets (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022222)
 * Autodesk Construction Cloud (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022223)

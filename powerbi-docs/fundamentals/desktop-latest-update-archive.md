@@ -437,7 +437,7 @@ Select the following links to download this earlier version:
 
 ## November 2021 Update (2.99.563.0)
 
-We were all thankful for the great things that Power BI served for our extended business intelligence family in November this year. Even better, there was enough features to feast on the next day, so invite your friends and even folks you don't know, sit down around this article, and share what you like best about what's on the menu.
+We were all thankful for the great things that Power BI served for our extended business intelligence family in November this year. Even better, there were enough features to feast on the next day, so invite your friends and even folks you don't know, sit down around this article, and share what you like best about what's on the menu.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
