@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.reviewer: "cfinlan"
 ms.custom: ""
 ms.date: 05/11/2022
+
 ---
 
 # Pass a report parameter in a URL for a paginated report in Power BI 
