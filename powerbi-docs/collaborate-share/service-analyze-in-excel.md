@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 05/12/2022
 LocalizationGroup: Reports
 ---
 # Start in Power BI with Analyze in Excel
@@ -34,21 +34,24 @@ In the Power BI service, to the workspace that contains the dataset or report yo
     >[!NOTE]
     >Remember that if you select Analyze in Excel for a report, it is the report's underlying dataset that is brought into Excel.
 
-For any of these options, the Analyze in Excel feature should install automatically. Select **Download**.
+The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and automatically saves this Excel workbook to your OneDrive for Business. You can now open the Excel workbook by clicking **Open in Excel for the web** and Excel for the web opens in a new browser tab.
 
-:::image type="content" source="media/service-analyze-in-excel/install-analyze-excel-first-updates.png" alt-text="Install Analyze in Excel updates.":::
+<<image for Excel for the web dialog>>
+    
+    >[!NOTE]
+    >If you do not have OneDrive for Business in your environment, clicking **Analyze in Excel** will download the Excel workbook to your computer's local Downloads folder.
+    
+The workbook file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Sales Analysis*, then the file name would be **Sales Analysis.xlsx**.
+    
+When you open the workbook in Excel for the web, you may have to enable the Power BI query by clicking **Yes** so you can start building your PivotTable reports.
+    
+<<image of warning dialog in Excel for the web>>
+    
+You can also open the workbook file in Excel Desktop by clicking **Open in Desktop App** in the Excel for the web ribbon.
 
-If it doesn't install automatically, see [Install Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md#install-analyze-in-excel) in the article "Troubleshoot Analyze in Excel."
-
-The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and downloads this workbook to your computer. 
-
-![Downloading the Excel file](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
-
-The workbook file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Sales Analysis*, then the downloaded file would be **Sales Analysis.xlsx**.
-
-Open the new Excel file.
-
-The first time you open the file, you may have to **Enable Editing**, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb).
+<<image for Open in Desktop app>>
+    
+The first time you open the file in Excel Desktop **Enable Editing**, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb).
 ![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
 
 You may also have to **Enable Content**, depending on your [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
