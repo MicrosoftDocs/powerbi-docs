@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 05/12/2022
 ---
 
 # Power BI usage scenarios: Advanced data preparation
@@ -154,9 +154,6 @@ The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-fea
 ### Dataflow and dataset refresh
 
 A dataflow is a source of data for datasets. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each dataset. Alternatively, it's possible to use [DirectQuery from the dataset to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
-
-> [!NOTE]
-> There's another type of dataflow called a [streaming dataflow](../transform-model/dataflows/dataflows-streaming.md) (not depicted in the scenario diagram). A streaming dataflow is a Power BI artifact to achieve real-time analytics. Streaming dataflows aren't included in the advanced data preparation scenario because they're not relevant.
 
 ### Azure Data Lake Storage Gen2
 
