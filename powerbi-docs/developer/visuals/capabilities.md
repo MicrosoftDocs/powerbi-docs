@@ -76,7 +76,7 @@ There are two types of privileges that must be defined:
 
 ### Allow access to external resources
 
-A visual that accesses external resources must add that information as a privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual to accesses an external resource, you must add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
 #### Example to access external resources
 
