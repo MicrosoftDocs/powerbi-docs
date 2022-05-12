@@ -3,16 +3,17 @@ title: Sorting options for Power BI visuals
 description: This article discusses default sorting behavior for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 06/18/2021
+ms.topic: reference
+ms.date: 05/10/2022
+
 ---
 
 # Sorting options for Power BI visuals
 
-This article describes how *sorting* options specify the the way a visual sorts items in Power BI.
+This article describes how *sorting* options are defined in the [*capabilities.json* file](capabilities.md) to specify the the way a visual sorts items in Power BI.
 
 By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
