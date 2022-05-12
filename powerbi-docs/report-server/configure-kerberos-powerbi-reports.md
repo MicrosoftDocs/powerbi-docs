@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-vCH8Fa3OpQ0
-ms.date: 11/01/2017
+ms.date: 05/12/2022
 ---
 # Configure Kerberos to use Power BI reports
 
