@@ -7,14 +7,14 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 05/10/2022
+ms.date: 05/12/2022
 ---
 
 # Capabilities and properties of Power BI visuals
 
 Every visual has a *capabilities.json* file that is created automatically when you run the `pbiviz new <visual project name>` command to [create a new visual](develop-circle-card.md). The *capabilities.json* file describes the visual to the host.
 
-The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. **All properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
+The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
 
 The *capabilities.json* file lists the root objects in the following format:
 
@@ -61,7 +61,7 @@ You can find all these objects and their parameters in the [*capabilities.json* 
 
 Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
-### General privilege definition
+### Define privileges
 
 A JSON privilege definition contains these components:
 
@@ -69,7 +69,12 @@ A JSON privilege definition contains these components:
 * `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege isn't mandatory.
 * `parameters` - (string array)(optional) Arguments. If `parameters` is missing, it's considered an empty array.
 
-### Access external resources
+There are two types of privileges that must be defined:
+
+* Access External resources
+* Download to file
+
+### Allow access to external resources
 
 A visual that accesses external resources must add that information as a privilege in the capabilities section. The privilege definition can contain an optional list of URLs the visual needs to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
@@ -85,20 +90,7 @@ A visual that accesses external resources must add that information as a privile
 
 The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
 
-### Access browser local storage
-
-If the visual accesses the browser's local storage via the [Local Storage API](./local-storage.md), you must add a `LocalStorage` privilege in the capabilities section.
-
-#### Example to access browser local storage
-
-```json
-{
-    "name": "LocalStorage",
-    "essential": false
-}
-```
-
-The preceding definition means that the visual might need to access browser local storage, but if it's not permitted access, it will continue to work anyway.
+### Download to file
 
 ### Example of a privileges definition
 
