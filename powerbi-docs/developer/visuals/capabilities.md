@@ -61,6 +61,9 @@ You can find all these objects and their parameters in the [*capabilities.json* 
 
 Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
+> [!NOTE]
+> From API v4.6.0, privileges **must** be specified in the *capabilities.json* file. To find out which version you’re using, run the `pbiviz -V` command. In earlier versions, remote access is automatically granted and downloading to files isn't possible.
+
 ### Define privileges
 
 A JSON privilege definition contains these components:
