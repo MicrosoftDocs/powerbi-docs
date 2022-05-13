@@ -1,13 +1,13 @@
 ---
 title: Multi-select data elements, data points, and visuals
-description: You can select multiple data points in visuals in Power BI Desktop and the Power BI service with a simple CTRL+Click.
+description: You can select multiple data points in visuals in Power BI Desktop and the Power BI service with a simple Ctrl + click.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/09/2022
+ms.date: 05/12/2022
 LocalizationGroup: Create reports
 ---
 # Multi-select data elements, data points, and visuals in Power BI
@@ -38,9 +38,9 @@ You can select multiple data elements in a visual, or multiple visuals in a repo
 
 ### Select multiple visuals on the canvas
 
-Select multiple visuals and other report elements by clicking and dragging over the canvas to create a rectangular lasso. All visuals that are entirely encapsulated within the lasso are  selected. If you press the *Ctrl* or *Shift* key (as you multi-select by Ctrl + clicking individual visuals), further lassoing adds visual selections to the current multi-select. 
+Select multiple visuals and other report elements by clicking and dragging over the canvas to create a rectangular lasso. All visuals that are entirely encapsulated within the lasso are  selected. If you press the Ctrl or Shift key (as you multi-select by Ctrl + clicking individual visuals), further lassoing adds visual selections to the current multi-select. 
 
-If a visual is already selected and is lassoed, using *Ctrl* or *Shift* toggles off that selection. The lasso doesn't select single visuals within groups, but can select groups by encapsulating the entire group.
+If a visual is already selected and is lassoed, using Ctrl or Shift toggles off that selection. The lasso doesn't select single visuals within groups, but can select groups by encapsulating the entire group.
 
 The canvas doesn't automatically scroll with the rectangular lasso selection.
 
@@ -50,11 +50,11 @@ You can select multiple data points within a visual using the same rectangular l
 
 #### Rectangular multi-select with the Ctrl key
 
-While holding down the *Ctrl* key, click and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using *Ctrl* while selecting, those data points are unselected (toggled off); using the lasso has the same effect as *Ctrl* + clicking each point individually.
+While holding down the Ctrl key, click and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using Ctrl while selecting, those data points are deselected (toggled off); using the lasso has the same effect as Ctrl + clicking each point individually.
 
 #### Rectangular multi-select with the Shift key
 
-When you hold down the *Shift* key while making a lasso selection, previous selections are preserved and already-selected data points remain selected. So using *Shift* while performing a lasso-select only adds data points to your selection, rather than toggling data points in the selected area.
+When you hold down the Shift key while making a lasso selection, previous selections are preserved and already-selected data points remain selected. So using Shift while performing a lasso-select only adds data points to your selection, rather than toggling data points in the selected area.
 
 ![Screenshot shows a line chart with several ranges selected over a bar chart, which reflects the same selections.](media/desktop-multi-select/power-bi-rectangle-select.png)
 
@@ -64,14 +64,15 @@ You can clear your current selection by clicking an empty space on the plot area
 
 You can use keyboard controls to access data point rectangle select without a mouse.
 
-1. Select a plot area or a data point, and press the **S** key to enter rectangle select mode, displaying a crosshair on the visual.
+1. Select a visual, then press the Ctrl and right arrow key to select a plot area or data point.  2. Press the **S** key to enter rectangle select mode, displaying a crosshair on the visual.
 
     :::image type="content" source="media/desktop-multi-select/multi-select-keyboard-crosshair.png" alt-text="Screenshot of crosshair on a visual, ready to use rectangle select.":::
 
-1. Use the arrow keys to move the crosshair to your starting position. You can speed up that movement by holding down the Shift key.
-1. When you’re ready to start drawing the rectangle from the crosshair's position, hold down the Space key and use the same crosshair movement controls to create the selection rectangle. Selection is complete when you let go of the Space key.  
-
-You can also now clear selections by pressing Ctrl+Shift+C.  
+1. Use the arrow keys to move the crosshair to your starting position.
+1. When you’re ready to start drawing the rectangle from the crosshair's position, hold down the Spacebar and use the same crosshair movement controls to create the selection rectangle.
+1. To keep previous selections preserved and add more, hold down the Shift key plus the arrow keys and Spacebar. Already-selected data points remain selected. 
+1. To deselect previous selections and select new ones, hold down the Ctrl key plus the arrow keys and Spacebar. Already-selected data points are no longer selected. 
+1. Selection is complete when you let go of the Spacebar.
 
 ## Considerations and limitations
 
