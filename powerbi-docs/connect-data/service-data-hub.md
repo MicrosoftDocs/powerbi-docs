@@ -11,63 +11,68 @@ LocalizationGroup: Share your work
 ---
 # Data hub
 
-The datasets hub makes it easy to find, explore, and use the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
+The data hub makes it easy to find, explore, and use the data in your organization. It provides information about the data resources such as datasets and datamarts, as well as entry points for creating reports on top of those data resources, or for using those data resources with Analyze in Excel.
 
-The datasets hub can be useful in many scenarios:
-* Dataset owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their datasets.
-* Report creators can use the hub to find suitable datasets to build their reports on and use links to easily create reports based on the dataset, either from scratch or from templates.
-* Report consumers can use this page to find reports based on trustworthy datasets.
+The data hub can be useful in many scenarios:
+* Data resource owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their resources.
+* Report creators can use the hub to find suitable data resource to build their reports on, and use links to easily create reports based on those resources, either from scratch or from templates.
+* Report consumers can use this page to find reports based on trustworthy data resources.
 
-By making it easy to find quality datasets and their related reports, the datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports.
+By making it easy to find quality data resources and their related reports, the data hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports.
 
-This article explains what you see on the datasets hub and describes how to use it. For dataset owners, it also includes a number of tips about how to [enhance the discoverability and useability of their datasets](#make-your-dataset-discoverable).
+This article explains what you see on the data hub and describes how to use it. For data resource owners, it also includes a number of tips about how to [enhance the discoverability and useability of their data resources](#make-your-dataset-discoverable).
 
-#### What data do I see in the data hub?
+#### What data resources do I see in the data hub?
 
 * Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
 * Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
 * Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
 
-For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+|           | At least Build permission | Read-only permission | Discoverable |
+|-----------|---------------------------|----------------------|--------------|
+| Datasets  | ✔️                       | ✔️                   | ✔️          |
+| Datamarts | ✔️                       | ❌                   | ❌          |
 
-If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing datasets and using the capabilities available on the datasets hub.
+For a data resource to show up in the data hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+
+If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing data resources and using the capabilities available on the data hub.
 
 >[!NOTE]
-> To be fully functional, the datasets hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access datasets you see listed in the datasets hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
+> To be fully functional, the data hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access the data resources you see listed in the data hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
 
 ## Find the data you need
 
-The dataset discovery experience starts on the datasets hub page. To get to the datasets hub page:
-* In the Power BI service: Select **Datasets** in the navigation pane.
-* In the Power BI app in Teams: Select either the **Datasets** tab or **Datasets** in the navigation pane.
+The dataset discovery experience starts on the data hub. To get to the data hub:
+* In the Power BI service: Select **Data hub** in the navigation pane.
+* In the Power BI app in Teams: Select either the **Data hub** tab or **Data hub** in the navigation pane.
 
-The image below shows the datasets hub in the Power BI service.
+The image below shows the data hub in the Power BI service.
 
-![Screenshot of datasets hub page](media/service-datasets-hub/datasets-hub-main-page.png)
+![Screenshot of data hub.](media/service-datasets-hub/datasets-hub-main-page.png)
 
-1. Click to view details page.
+1. Click to view the data resource's details page.
 1. Click to display options menu.
 1. Click to view details summary.
-1. A greyed-out icon indicates that you don't have permissions to access that dataset's details page. Datasets with greyed-out icons only show up for you in the list if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
-1. Hover to view dataset description.
+1. Hover to view data resource description.
 
 The sections below describe these sections and the actions you can perform.
 
 ### Recommended data
 
-Recommended datasets are endorsed datasets (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
+Recommended data resources are endorsed data resources (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
 
-### Data list
+### Data resource list
 
-The dataset list shows you datasets in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+The data resource list shows you data resources in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
 
-The list has three tabs to filter the list of datasets.
-* **All datasets**: Shows all the datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
-* **My datasets**: Shows all the datasets that you are the owner of.
-* **Trusted in your org**: Shows all the endorsed datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub). Certified datasets are listed first, followed by promoted datasets.
+The list has three tabs to filter the list of data resources.
+* **All**: Shows all the data resources that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+* **My data**: Shows all the data resources that you are the owner of.
+* **Trusted in your org**: Shows all the endorsed data resources in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub). Certified data resources are listed first, followed by promoted data resources.
 
-Use the search box to further filter down the items on the current tab.
+Use the search box and filters to narrow down the lis of items. You can use type into the Filter by Keyword box to search for a particular string, or you can use the filters to display only the selected data resource types.
 
 The columns of the list are described below. Click on a column header to sort by that column. 
 * **Name**: The dataset name. Click the dataset name to open the dataset details page.
