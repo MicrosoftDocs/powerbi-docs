@@ -1,0 +1,126 @@
+---
+title: Data hub
+description: Learn about the Data hub, a centralized place for finding data.
+author: paulinbar
+ms.author: painbar
+ms.service: powerbi
+ms.subservice: powerbi-eim
+ms.topic: conceptual
+ms.date: 03/17/2022
+LocalizationGroup: Share your work
+---
+# Data hub
+
+The datasets hub makes it easy to find, explore, and use the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
+
+The datasets hub can be useful in many scenarios:
+* Dataset owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their datasets.
+* Report creators can use the hub to find suitable datasets to build their reports on and use links to easily create reports based on the dataset, either from scratch or from templates.
+* Report consumers can use this page to find reports based on trustworthy datasets.
+
+By making it easy to find quality datasets and their related reports, the datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports.
+
+This article explains what you see on the datasets hub and describes how to use it. For dataset owners, it also includes a number of tips about how to [enhance the discoverability and useability of their datasets](#make-your-dataset-discoverable).
+
+#### What data do I see in the data hub?
+
+* Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
+* Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
+* Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
+
+For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+
+If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing datasets and using the capabilities available on the datasets hub.
+
+>[!NOTE]
+> To be fully functional, the datasets hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access datasets you see listed in the datasets hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
+
+## Find the data you need
+
+The dataset discovery experience starts on the datasets hub page. To get to the datasets hub page:
+* In the Power BI service: Select **Datasets** in the navigation pane.
+* In the Power BI app in Teams: Select either the **Datasets** tab or **Datasets** in the navigation pane.
+
+The image below shows the datasets hub in the Power BI service.
+
+![Screenshot of datasets hub page](media/service-datasets-hub/datasets-hub-main-page.png)
+
+1. Click to view details page.
+1. Click to display options menu.
+1. Click to view details summary.
+1. A greyed-out icon indicates that you don't have permissions to access that dataset's details page. Datasets with greyed-out icons only show up for you in the list if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Click to request access.
+1. Hover to view dataset description.
+
+The sections below describe these sections and the actions you can perform.
+
+### Recommended data
+
+Recommended datasets are endorsed datasets (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
+
+### Data list
+
+The dataset list shows you datasets in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+
+The list has three tabs to filter the list of datasets.
+* **All datasets**: Shows all the datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+* **My datasets**: Shows all the datasets that you are the owner of.
+* **Trusted in your org**: Shows all the endorsed datasets in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub). Certified datasets are listed first, followed by promoted datasets.
+
+Use the search box to further filter down the items on the current tab.
+
+The columns of the list are described below. Click on a column header to sort by that column. 
+* **Name**: The dataset name. Click the dataset name to open the dataset details page.
+* **Endorsement**: Endorsement status.
+* **Owner**: Dataset owner (All and Trusted in your org tabs only).
+* **Workspace**: The workspace the dataset is located in.
+* **Refreshed**: Last refresh time (rounded to hour, day, month, and year. See the dataset info on the dataset detail page for exact time of last refresh).
+* **Next refresh**: The time of the next scheduled refresh (My datasets tab only).
+* **Sensitivity**: Sensitivity, if set. Click on the info icon to view the sensitivity label description.
+
+### Create new reports or pull data into Excel via Analyze in Excel
+
+To create a new report based on dataset, or to pull the data into Excel with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the dataset.
+
+When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
+
+### Read-only permission for datasets
+
+You get read-only permission on a dataset when someone shares a report or dataset with you but doesn’t grant you build permission on the dataset.
+
+With read-only access, you can view some information about the dataset on the dataset hub and on the dataset's info page, as well as perform a limited number of actions on the dataset, but you can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, you must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
+
+To request build permission on a dataset, do one of the following:
+
+* From the datasets hub: Find the dataset in the datasets list, hover over it with the mouse, and click the **Request access** icon that appears
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
+
+* From the dataset info page, click the **Request access** button at the top right corner of the dataset info page.
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+
+### Users with free licenses
+
+Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most datasets hub capabilities will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
+
+For datasets in other workspaces, free users can see all the datasets that have been shared with them and that they have sufficient permissions to access, but they won’t be able to use most of the dataset hub’s capabilities on those datasets unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
+
+See the [free users feature list](../consumer/end-user-features.md#feature-list) for a detailed list of the actions free users can perform on datasets in the datasets hub and on the dataset details page.
+
+To be able to perform all available dataset actions, a free user needs an upgraded license, in addition to any necessary access permissions. When a free user tries to perform an action that is not available under the terms of the free user license, a pop-up message gives them the opportunity to upgrade their license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
+
+### Discoverable datasets
+
+Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's info page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
+
+To request access, on the datasets hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
+
+:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
+
+  
+## Next steps
+* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+* [Endorse your dataset](../collaborate-share/service-endorse-content.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
