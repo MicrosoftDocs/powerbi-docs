@@ -64,7 +64,8 @@ You can clear your current selection by clicking an empty space on the plot area
 
 You can use keyboard controls to access data point rectangle select without a mouse.
 
-1. Select a visual, then press the Ctrl and right arrow key to select a plot area or data point.  2. Press the **S** key to enter rectangle select mode, displaying a crosshair on the visual.
+1. Select a visual, then press the Ctrl and right arrow key to select a plot area or data point.  
+1. Press the **S** key to enter rectangle select mode, displaying a crosshair on the visual.
 
     :::image type="content" source="media/desktop-multi-select/multi-select-keyboard-crosshair.png" alt-text="Screenshot of crosshair on a visual, ready to use rectangle select.":::
 
