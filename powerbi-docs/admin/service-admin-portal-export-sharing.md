@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 05/08/2022
 LocalizationGroup: Administration
 ---
 
@@ -218,6 +218,17 @@ As with other tenant settings, you can enable sharing links to **People in your 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
 ![Screenshot showing share option disabled.](media/service-admin-portal-export-sharing/admin-share-option-disabled.png)
+
+## Allow DirectQuery connections to Power BI datasets
+
+When this setting is enabled (default), users can use DirectQuery to connect to Azure Analysis Services or Power BI datasets. See [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) for more detail.
+
+![Screenshot of the allow DirectQuery connections to Power BI datasets tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-allow-directquery-connections.png)
+
+Disabling this switch effectively stops users from publishing new composite models on Power BI datasets to the service. Existing reports that leverage a composite model on a Power BI dataset will continue to work, and users will still be able to create composite models using Desktop, but they will not be able to publish to the service.
+
+>[!NOTE]
+> Live connections to Power BI datasets are not affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of whether the setting is enabled or disabled. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been disabled after they were published.
 
 ## Next steps
 
