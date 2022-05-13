@@ -11,6 +11,10 @@
       href: service-gateway-onprem.md
     - name: "Datasets discovery in the Power BI service"
       href: service-datasets-hub.md
+    - name: "Data hub"
+      href: service-data-hub.md
+    - name: "Data details"
+      href: service-data-details-page.md
   - name: Quickstarts
     expanded: true
     items: 
