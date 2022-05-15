@@ -11,16 +11,9 @@ LocalizationGroup: Share your work
 ---
 # Data hub
 
-The data hub makes it easy to find, explore, and use the data in your organization. It provides information about the data resources such as datasets and datamarts, as well as entry points for creating reports on top of those data resources, or for using those data resources with Analyze in Excel.
+The data hub makes it easy to find, explore, and use the data in your organization. It provides information about data resources such as datasets and datamarts, as well as entry points for creating reports on top of those data resources, or for using those data resources with Analyze in Excel.
 
-The data hub can be useful in many scenarios:
-* Data resource owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their resources.
-* Report creators can use the hub to find suitable data resource to build their reports on, and use links to easily create reports based on those resources, either from scratch or from templates.
-* Report consumers can use this page to find reports based on trustworthy data resources.
-
-By making it easy to find quality data resources and their related reports, the data hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports.
-
-This article explains what you see on the data hub and describes how to use it. For data resource owners, it also includes a number of tips about how to [enhance the discoverability and useability of their data resources](#make-your-dataset-discoverable).
+This article explains what you see on the data hub and describes how to use it.
 
 #### What data resources do I see in the data hub?
 
