@@ -17,14 +17,18 @@ This article explains what you see on the data hub and describes how to use it.
 
 #### What data resources do I see in the data hub?
 
+# [Datasets](#tab/datasets)
+
 * Datasets that you have at least [build permission](service-datasets-build-permissions.md) for.
 * Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
 * Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
 
-|           | At least Build permission | Read-only permission | Discoverable |
-|-----------|---------------------------|----------------------|--------------|
-| Datasets  | ✔️                       | ✔️                   | ✔️          |
-| Datamarts | ✔️                       | ❌                   | ❌          |
+# [Datamarts](#tab/datamarts)
+
+* Datamarts that you have at least [build permission](service-datasets-build-permissions.md) for.
+* Datamarts that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datamarts appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access datamart details and capabilities.
+
+---
 
 For a data resource to show up in the data hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
 
