@@ -13,20 +13,20 @@ ms.custom: intro-migration
 
 # Migrate from Azure Analysis Services to Power BI Premium
 
-This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides you with guidance to help you migrate your AAS databases to Power BI Premium.
+This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance to help migrate their AAS databases to Power BI Premium.
 
 ## Background
 
-Power BI has evolved into the leading platform for both self-service and IT-managed enterprise business intelligence (BI). With exponential growth in data volumes and complexity, Power BI customers demand enterprise BI solutions that scale to petabytes, are secure, easy to manage, and accessible to all users across the largest organizations.
+Power BI has evolved into the leading platform for both self-service and IT-managed enterprise business intelligence (BI). With exponential growth in data volumes and complexity, Power BI customers demand enterprise BI solutions that scale to petabytes, are secure, easy to manage, and accessible to all users across the largest of organizations.
 
-For over two decades, Microsoft continues to make deep investments in enterprise BI. AAS and SQL Server Analysis Services (SSAS) are based on mature BI data modeling technology used by countless enterprises. The same technology is also at the heart of Power BI data models.
+For over two decades, Microsoft continues to make deep investments in enterprise BI. AAS and SQL Server Analysis Services (SSAS) are based on mature BI data modeling technology used by countless enterprises. Today, that same technology is also at the heart of Power BI data models.
 
 > [!NOTE]
 > In this article, the terms data model, semantic model, BI model, tabular model, database, and dataset have the same meaning. For consistency, this article commonly uses the term *data model*.
 
 In recent years, Microsoft has taken great strides to deliver AAS capabilities to [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/). To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI Premium workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
 
-We observe high usage of Power BI for reports that use [live connections](../connect-data/desktop-report-lifecycle-datasets.md) to AAS. Naturally, these customers are asking whether there's an opportunity to consolidate by hosting data models in Power BI Premium. We often receive questions like:
+Many customers have Power BI reports that [live connect](../connect-data/desktop-report-lifecycle-datasets.md) to AAS. Naturally, these customers are asking whether there's an opportunity to consolidate by hosting their data models alongside their reports in Power BI Premium. They often ask questions like:
 
 - Does all the AAS functionality we depend on work in Power BI?
 - Is Power BI backwards compatible with AAS tools and processes?
@@ -37,129 +37,128 @@ We observe high usage of Power BI for reports that use [live connections](../con
 - Is AAS marked for deprecation?
 - What's Microsoft's roadmap for enterprise datasets?
 
-Answers to these questions are addressed in this article.
+Answers to many of these questions are described in this article.
 
-The decision to migrate to Power BI Premium depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We foresee organic migration to Power BI Premium over time, and our intention is that it happens on terms that our customers are comfortable with. To be clear, currently there aren't any plans to deprecate AAS. However, we'll continue to focus investment on Power BI Premium for enterprise data modeling. The additional value provided by Power BI Premium will increase over time. So, customers who choose Power BI Premium will benefit from alignment with the Microsoft BI product roadmap.
+> [!NOTE]
+> The decision to migrate to Power BI Premium depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We expect to see organic migration to Power BI Premium over time, and our intention is that it happens on terms that the customer is comfortable with. To be clear, currently there aren't any plans to deprecate AAS. There is a priority to focus investment on Power BI Premium for enterprise data modeling, and so the additional value provided by Power BI Premium will increase over time. Customers who choose Power BI Premium can expect to benefit from alignment with the Microsoft BI product roadmap.
 
 ### Convergence of self-service and enterprise BI
 
-Consolidation of artifacts in Power BI can result in simplified discovery and management due to co-location. That means there's no need to bridge the gap between AAS and Power BI. Central IT teams can more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data, alignment with corporate standards, and lineage transparency. Simplifying this workflow by sharing a common platform will promote better collaboration between the business and IT.
+Consolidation of artifacts in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
 ### Power BI Premium Gen2
 
-Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, this new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, you can achieve increased performance and throughput.
+Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
 
 ## Feature comparison
 
-AAS provides the Analysis Services database engine for hosting data models, which is a core component of any enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table shows features supported in AAS and Premium Gen2. The list focuses on, but isn't limited to, Power BI dataset related capabilities.
+AAS provides the Analysis Services database engine for hosting data models, which is a core component of any enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table shows features supported in AAS and Premium Gen2. The list focuses on, but isn't limited to, Power BI dataset-related capabilities.
 
-|**Feature**|**AAS**|**Premium Gen2**|
+| **Feature** | **AAS** | **Premium Gen2** |
 |:-|:-:|:-:|
-|***Premium workloads***|||
-|[Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages|No|Yes|
-|[Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI dataset|No|Yes|
-|[AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning Integration|No|Yes|
-|[Goals](../create-reports/service-goals-introduction.md), which curate metrics and allow tracking them against key business objectives|No|Yes <sup>1</sup>|
-|***Business enablement***|||
-|Unlimited report distribution to anyone (even outside the organization)|No|Yes|
-|Business-driven interactive reports, workspaces, and apps|No|Yes|
-|***Platform scalability and resiliency***|||
-|[Premium Gen2](../enterprise/service-premium-gen2-what-is.md) architecture, which supports increased scale and performance|No|Yes|
-|Optimized dataset memory management|No|Yes|
-|Scale limits per data model instead of per server|No|Yes|
-|CPU smoothing for refresh resiliency|No|Yes|
-|[Autoscale](../enterprise/service-premium-auto-scale.md), which automatically adds compute capacity to avoid slowdowns under heavy use|No|Yes|
-|[Business continuity and disaster recovery (BCDR)](../enterprise/service-admin-failover.yml) with Azure regions and availability zones|No|Yes|
-|***Interactive analysis over big data***|||
-|[Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression)|Yes|Yes|
-|Hybrid tables, which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables|No|Yes <sup>1</sup>|
-|[Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance|No|Yes <sup>1</sup>|
-|[User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables|No|Yes|
-|[Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers|Yes|No <sup>2</sup>|
-|***Security***|||
-|[BYOK](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud|No|Yes|
-|[VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in a company's VNet|No|Yes <sup>1</sup>|
-|[Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI|No|Yes|
-|[Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity|No|Yes|
-|[Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts data access for specific users|Yes|Yes|
-|[Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to tables and columns for specific users|Yes|Yes|
-|[Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges|Yes|No <sup>3</sup> |
-|***Governance***|||
-|[Azure Purview integration](/azure/purview/overview), which helps manage and govern Power BI artifacts|No|Yes|
-|Microsoft Information Protection (MIP) [sensitivity labels](../admin/service-security-sensitivity-label-overview.md) and integration with [Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) for data loss prevention|No|Yes|
-|Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality content Power BI artifacts|No|Yes|
-|***Semantic modeling***|||
-|Compatibility with Power BI Desktop|No|Yes|
-|[Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)|No|Yes <sup>1</sup>|
-|[Translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for multi-language model versions observed by the Power BI service|No|Yes|
-|Analysis Service engine semantic modeling|Yes|Yes|
-|***Model management***|||
-|[Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting|No|Yes|
-|[Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content|No|Yes|
-|[Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current|No|Yes|
-|[Asynchronous refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes using a REST API call|Yes|Yes <sup>1</sup>|
-|[Backup and restore](../enterprise/service-premium-backup-restore-dataset.md)|Yes|Yes|
-|[Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads|No|Yes|
-|[Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties|Yes|No <sup>2</sup>|
-|[Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias|Yes|No|
-|XMLA endpoint enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps.|Yes|Yes|
-|[XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity by using management tools, including SQL Server Management Studio (SSMS), SQL Server Data Tools (SSDT), and community tools such as Tabular Editor, DAX Studio, and ALM Toolkit|Yes|Yes|
-|***Connectivity***|||
-|Support for all [Power BI data sources](../connect-data/power-bi-data-sources.md)|No|Yes|
-|XMLA endpoint, which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools.|Yes|Yes|
-|[Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements|Yes|No <sup>2</sup>|
-|***Discoverability***|||
-|[Datasets hub](../connect-data/service-datasets-hub.md) integration, which helps users find, explore, and use Power BI datasets|No|Yes|
-|[Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies|No|Yes|
-|***Monitoring and diagnostic logging***|||
-|[Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities|No|Yes|
-|[Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365|No|Yes|
-|[Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection to their Power BI subscription|Yes|Yes <sup>1</sup>|
-|XMLA endpoint, which allows diagnostic logging tool connections, including SQL Server Profiler|Yes|Yes|
-|[SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues|Yes|No|
+| **Premium workloads** |||
+| [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
+| [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI dataset | No | Yes |
+| [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
+| [Goals](../create-reports/service-goals-introduction.md), which curate metrics and allow tracking them against key business objectives | No | Yes <sup>1</sup> |
+| **Business enablement** |||
+| Unlimited report distribution to anyone (even outside the organization) | No | Yes |
+| Business-driven interactive reports, workspaces, and apps | No | Yes |
+| **Platform scalability and resiliency** |||
+| [Premium Gen2](../enterprise/service-premium-gen2-what-is.md) architecture, which supports increased scale and performance | No | Yes |
+| Optimized dataset memory management | No | Yes |
+| Scale limits per data model instead of per server | No | Yes |
+| CPU smoothing for refresh resiliency | No | Yes |
+| [Autoscale](../enterprise/service-premium-auto-scale.md), which automatically adds compute capacity to avoid slowdowns under heavy use | No | Yes |
+| [Business continuity and disaster recovery (BCDR)](../enterprise/service-admin-failover.yml) with Azure regions and availability zones | No | Yes |
+| **Interactive analysis over big data** |||
+| [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
+| Hybrid tables, which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables | No | Yes <sup>1</sup> |
+| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes <sup>1</sup> |
+| [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
+| [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
+| **Security** |||
+| [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
+| [VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in an organization's VNet | No | Yes <sup>1</sup> |
+| [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
+| [Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity | No | Yes |
+| [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
+| [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |
+| [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>3</sup> |
+| **Governance** |||
+| [Azure Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI artifacts | No | Yes |
+| Microsoft Information Protection (MIP) [sensitivity labels](../admin/service-security-sensitivity-label-overview.md) and integration with [Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) for data loss prevention | No | Yes |
+| Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI artifacts | No | Yes |
+| **Semantic modeling** |||
+| Compatibility with Power BI Desktop | No | Yes |
+| [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes <sup>1</sup> |
+| [Translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for multi-language model versions observed by the Power BI service | No | Yes |
+| Analysis Service engine semantic modeling | Yes | Yes |
+| **Model management** |||
+| [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
+| [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
+| [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
+| [Asynchronous refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes <sup>1</sup> |
+| [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
+| [Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
+| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
+| [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
+| XMLA endpoint enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
+| [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity by using management tools, including SQL Server Management Studio (SSMS), SQL Server Data Tools (SSDT), and community tools such as Tabular Editor, DAX Studio, and ALM Toolkit | Yes | Yes |
+| **Connectivity** |||
+| Support for all [Power BI data sources](../connect-data/power-bi-data-sources.md) | No | Yes |
+| XMLA endpoint, which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools | Yes | Yes |
+| [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | No <sup>2</sup> |
+| **Discoverability** |||
+| [Datasets hub](../connect-data/service-datasets-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
+| [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
+| **Monitoring and diagnostic logging** |||
+| [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
+| [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
+| [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection to their Power BI subscription | Yes | Yes <sup>1</sup> |
+| XMLA endpoint, which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
+| [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
 <sup>1</sup> In public preview</br>
 <sup>2</sup> Planned</br>
 <sup>3</sup> Use VNet connectivity and Azure Private Link instead
 
-## Cost comparison
+## Cost benefits
 
-When comparing Power BI Premium to AAS costs, take into consideration factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with many [features](#feature-comparison) that are only available to Power BI data models.
+When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](#feature-comparison) that are only available to Power BI data models.
 
-You should calculate costs based on their existing profile combining AAS and Power BI compared to the proposed profile on Power BI Premium. To determine the target profile, inputs may include the following considerations:
+Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following:
 
-- Region requirements
-- The largest AAS data model size in each region
-- The number of users in each region
-- The number of users required to develop and manage content
-- The points described below, including consolidation opportunity, licensing, and development and test environments.
+- Region requirements.
+- The largest AAS data model size in each region.
+- The number of users in each region.
+- The number of users required to develop and manage content.
 
-### Example scenarios
-
-TODO: Integrate **Migration scenarios deck.pptx**
+> [!TIP]
+> To help determine the right type and number of licenses for your business requirements and circumstances, see [this article](migrate-azure-analysis-services-to-powerbi-premium-determine-licensing.md).
 
 ### Consolidation opportunity
 
 Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI artifacts in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
-
-### Frontend vs. backend v-cores and Pro licenses
-
-Power BI Premium provides unlimited distribution of Power BI content to end users without requiring Power BI Pro (Pro) licenses.
-
-The cost of Power BI Premium is split equally between *frontend and backend v-cores*. Frontend v-cores are mostly responsible for the web service, reporting, and user experiences. Power BI datasets consume resources from backend v-cores. To get the best value from Power BI Premium, customers should strive to strike a balance between frontend and backend usage. For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
-
-A Pro license is required to publish and manage Power BI content. Pro licenses are typically assigned to developers and administrators, not end users.
 
 ### PPU licenses
 
 The Premium Per User (PPU) license is a per-user license that provides a lower-cost price point for Premium Gen2. PPU licenses are typically purchased by small and medium-sized companies. They support all the Premium capabilities for data modeling listed earlier.
 
 > [!TIP]
-> It's possible to incrementally upgrade Pro licenses to PPU licenses.
+> It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
+
+### Frontend vs. backend v-cores and Pro licenses
+
+Power BI Premium provides unlimited distribution of Power BI content to end users without requiring Power BI Pro licenses.
+
+The cost of Power BI Premium is split equally between *frontend and backend v-cores*. Frontend v-cores are mostly responsible for the web service, reporting, and user experiences. Power BI datasets consume resources from backend v-cores. To get the best value from Power BI Premium, customers should strive to strike a balance between frontend and backend usage. For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
+
+A Pro (or PPU) license is required to publish and manage Power BI content. Pro licenses are typically assigned to developers and administrators, not end users.
 
 ### Development and test environments
 
-AAS offers the D and B SKUs at lower cost with reduced service-level agreements and/or fewer features than the S SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers.
+AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agreements and/or fewer features than the **S** SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers.
 
 For more information, see:
 
@@ -174,11 +173,11 @@ Power BI Premium provides additional features that enable fast interactive analy
 
 Premium Gen2 limits memory per dataset, and not per capacity or server. On the other hand, AAS requires all data models fit in memory on a single server. That can require customers with large data models to purchase larger SKU sizes.
 
-Thanks to the distributed nature of the Premium Gen2 architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to hitting the memory limits on the server.
+Thanks to the distributed nature of the Premium Gen2 architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
 
 In Premium Gen2, CPU consumption during refresh is spread across 24-hour periods. Premium Gen2 [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium Gen2 customers should decide on the optimal SKU size for their overall CPU consumption requirements.
 
-Premium Gen2 uses dynamic memory management of dataset caches. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. It means queries to AAS can rely on the data model being available, but – especially for capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
+Premium Gen2 uses dynamic memory management of dataset caches. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory at all times. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
 
 Lastly, Premium Gen2 is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
 
@@ -188,9 +187,9 @@ There are considerations and limitations to factor into your planning before mig
 
 ### Permissions
 
-AAS and SSAS use [roles](/analysis-services/tabular-models/roles-ssas-tabular) to manage data model access. There are two types of roles: the *server role*, and *database roles*. The server role is a fixed role that grants administrator access to the Analysis Services server instance. Database roles, which are set by data modelers and administrators, control access to the database and data for non-administrator users.
+AAS and SSAS use [roles](/analysis-services/tabular-models/roles-ssas-tabular) to manage data model access. There are two types of roles: the *server role* and *database roles*. The server role is a fixed role that grants administrator access to the Analysis Services server instance. Database roles, which are set by data modelers and administrators, control access to the database and data for non-administrator users.
 
-Unlike AAS, in Power BI, you only use roles only to enforce RLS. Use the Power BI security model (workspace roles and dataset permissions) to grant permissions beyond RLS. For more information, see [Dataset permissions](../connect-data/service-datasets-permissions.md).
+Unlike AAS, in Power BI, you only use roles only to enforce RLS or OLS. To grant permissions beyond RLS and OLS, use the Power BI security model (workspace roles and dataset permissions). For more information, see [Dataset permissions](../connect-data/service-datasets-permissions.md).
 
 For more information about Power BI model roles, see [Dataset connectivity with the XMLA endpoint (Model roles)](../enterprise/service-premium-connect-tools.md#model-roles).
 
@@ -213,14 +212,14 @@ Like for AAS, you can use a service principal as an automation account for Power
 
 Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embedded-row-level-security.md#using-the-customdata-feature) feature.
 
-However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by using the workspace **admin** or **member** role.
+However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 
 > [!NOTE]
 > You can't use the CustomData feature to query Premium per User (PPU) datasets because it would be in violation of the [license terms and conditions](../enterprise/service-premium-connect-tools.md#terms-of-use).
 
 ### Impersonation for testing
 
-Impersonation techniques, including the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) and [Roles](/analysis-services/instances/connection-string-properties-analysis-services#roles) connection string properties, are supported by AAS and Power BI Premium. You typically use them when testing security roles.
+Impersonation techniques, including the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) and the [Roles](/analysis-services/instances/connection-string-properties-analysis-services#roles) connection string properties, are supported by AAS and Power BI Premium. You typically use them when testing security roles.
 
 ### Network security
 
@@ -230,13 +229,13 @@ Power BI doesn't have a firewall feature. Instead, Power BI offers a superior ne
 
 ### Data sources and credentials
 
-AAS defines data source credentials for each data source declared in the [TOM tabular metadata](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo). However, Power BI doesn't work that way. Because Power BI can share data sources credentials across multiple datasets, credentials are set in the Power BI service.
+AAS defines credentials for each data source declared in the [TOM tabular metadata](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo). However, Power BI doesn't work that way. Because Power BI can share data sources credentials across multiple datasets, credentials are set in the Power BI service.
 
-Any XMLA-based process that sets data source credentials will need to be replaced. For more information, see [Dataset connectivity with the XMLA endpoint (Deploy model projects from Visual Studio)](../admin/service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt).
+Any XMLA-based process that sets data source credentials must be replaced. For more information, see [Dataset connectivity with the XMLA endpoint (Deploy model projects from Visual Studio)](../admin/service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt).
 
 ### Backup and restore
 
-Backup and restore in AAS it requires Azure Blob storage, while in Power BI Premium requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the storage account type difference, backup and restore works the same way in both products.
+Backup and restore in AAS requires Azure Blob storage, while in Power BI Premium it requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the storage account type difference, backup and restore works the same way in both products.
 
 For more information, see [Backup and restore datasets with Power BI Premium](../enterprise/service-premium-backup-restore-dataset.md).
 
@@ -270,7 +269,7 @@ AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-servi
 
 Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS will likely not work in Power BI.
 
-Instead, Power BI offers a different a different diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Gen2 metrics app](../admin/service-premium-gen2-metrics-app.md).
+Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Gen2 metrics app](../admin/service-premium-gen2-metrics-app.md).
 
 SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 
