@@ -31,12 +31,12 @@ The table below describes the four levels of permission that control access to d
 
 A user's role in a workspace implicitly grants them permissions on the datasets in the workspace, as described in the following table.
 
-|                                   |Admin  |Member  |Contributor  |Viewer |
-|-----------------------------------|-------|--------|-------------|-------|
-|Read                               |✔️     |✔️     |✔️           |✔️    |
-|Build                              |✔️     |✔️     |✔️           |❌    |
-|Reshare                            |✔️     |✔️     |❌           |❌    |
-|Write                              |✔️     |✔️     |✔️           |❌    |
+|                                       |Admin  |Member  |Contributor  |Viewer |
+|---------------------------------------|-------|--------|-------------|-------|
+|**Read**                               |✔️     |✔️     |✔️           |✔️    |
+|**Build**                              |✔️     |✔️     |✔️           |❌    |
+|**Reshare**                            |✔️     |✔️     |❌           |❌    |
+|**Write**                              |✔️     |✔️     |✔️           |❌    |
 
 >[!NOTE]
 >Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicitly using the [manage permissions page](service-datasets-manage-access-permissions.md).
