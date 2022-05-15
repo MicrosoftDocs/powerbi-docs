@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/30/2022
+ms.date: 05/23/2022
 ms.custom: intro-migration
 ---
 
@@ -286,8 +286,8 @@ Both AAS and Power BI support [Azure AD B2B collaboration](/azure/active-directo
 
 For more information about this article, check out the following resources:
 
-- TODO
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Migrate from Azure Analysis Services to Power BI Premium: Determine licensing](migrate-azure-analysis-services-to-powerbi-premium-determine-licensing.md)
+- Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
 
 Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
