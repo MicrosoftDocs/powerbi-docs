@@ -54,7 +54,7 @@ Here are their current Power BI licenses:
 
 Once migrated to Power BI Premium:
 
-- The three existing production AAS models can consolidate to run in a Premium P3 capacity.
+- The three existing production AAS models can be consolidated to run in a Premium P3 capacity.
 - The 20 developers will need Premium Per User (PPU) licenses to access test models above 1 GB in size.
 
 Here are the proposed Power BI licenses:
@@ -90,7 +90,7 @@ Here are their current Power BI licenses:
 
 Once migrated to Power BI Premium:
 
-- Because the three existing production AAS models run in different regions, the customer needs a Premium capacity in each of the three regions. The capacity size is based on largest model.
+- The customer needs a Premium capacity in each of the three regions (because the three existing production AAS models run in different regions). Each capacity size is based on the largest model.
 - The 20 developers will need PPU licenses to access test models above 1 GB in size.
 
 Here are the proposed Power BI licenses:
@@ -124,8 +124,8 @@ Here are their current Power BI licenses:
 
 Once migrated to Power BI Premium:
 
-- The two existing production AAS models can consolidate to run in a Premium P2 capacity.
-- The 15 developers will need PPU licenses to access test models above 1 GB in size. An add-on is available to step up from Pro to PPU.
+- The two existing production AAS models can be consolidated to run in a Premium P2 capacity.
+- The 15 developers will need PPU licenses to access test models above 1 GB in size. (An add-on is available to step up from Pro to PPU.)
 
 Here are the proposed Power BI licenses:
 
@@ -157,7 +157,7 @@ Here are their current Power BI licenses:
 Once migrated to Power BI Premium:
 
 - The two existing production AAS models can run in PPU workspaces.
-- All end users and development must have PPU licenses.
+- All end users and developers will need PPU licenses.
 
 Here are the proposed Power BI licenses:
 
@@ -191,7 +191,7 @@ Here are their current Power BI licenses:
 
 Once migrated to Power BI Premium:
 
-- The three existing production AAS models can consolidate to run in a Premium P5 capacity.
+- The three existing production AAS models can be consolidated to run in a Premium P5 capacity.
 - The 20 developers will need PPU licenses to access test models above 1 GB in size.
 
 Here are the proposed Power BI licenses:

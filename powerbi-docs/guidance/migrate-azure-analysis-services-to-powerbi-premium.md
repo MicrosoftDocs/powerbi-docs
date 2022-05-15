@@ -13,7 +13,7 @@ ms.custom: intro-migration
 
 # Migrate from Azure Analysis Services to Power BI Premium
 
-This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance to help migrate their AAS databases to Power BI Premium.
+This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium.
 
 ## Background
 
@@ -22,11 +22,11 @@ Power BI has evolved into the leading platform for both self-service and IT-mana
 For over two decades, Microsoft continues to make deep investments in enterprise BI. AAS and SQL Server Analysis Services (SSAS) are based on mature BI data modeling technology used by countless enterprises. Today, that same technology is also at the heart of Power BI data models.
 
 > [!NOTE]
-> In this article, the terms data model, semantic model, BI model, tabular model, database, and dataset have the same meaning. For consistency, this article commonly uses the term *data model*.
+> In this article, the terms data model, semantic model, BI model, tabular model, database, and Power BI dataset have the same meaning. For consistency, this article commonly uses the term *data model*.
 
 In recent years, Microsoft has taken great strides to deliver AAS capabilities to [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/). To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI Premium workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
 
-Many customers have Power BI reports that [live connect](../connect-data/desktop-report-lifecycle-datasets.md) to AAS. Naturally, these customers are asking whether there's an opportunity to consolidate by hosting their data models alongside their reports in Power BI Premium. They often ask questions like:
+Many customers have Power BI reports that [live connect](../connect-data/desktop-report-lifecycle-datasets.md) to AAS. Naturally, these customers are asking whether there's an opportunity to consolidate by hosting their data models alongside their reports in Power BI. They often ask questions like:
 
 - Does all the AAS functionality we depend on work in Power BI?
 - Is Power BI backwards compatible with AAS tools and processes?
@@ -35,24 +35,28 @@ Many customers have Power BI reports that [live connect](../connect-data/desktop
 - Why is Microsoft converging enterprise and self-service BI?
 - How do we migrate from AAS to Power BI Premium?
 - Is AAS marked for deprecation?
-- What's Microsoft's roadmap for enterprise datasets?
+- What's Microsoft's roadmap for enterprise data models?
 
 Answers to many of these questions are described in this article.
 
 > [!NOTE]
-> The decision to migrate to Power BI Premium depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We expect to see organic migration to Power BI Premium over time, and our intention is that it happens on terms that the customer is comfortable with. To be clear, currently there aren't any plans to deprecate AAS. There is a priority to focus investment on Power BI Premium for enterprise data modeling, and so the additional value provided by Power BI Premium will increase over time. Customers who choose Power BI Premium can expect to benefit from alignment with the Microsoft BI product roadmap.
+> The decision to migrate to Power BI Premium depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We expect to see organic migration to Power BI Premium over time, and our intention is that it happens on terms that the customer is comfortable with.
+>
+> To be clear, currently there aren't any plans to deprecate AAS. There is a priority to focus investment on Power BI Premium for enterprise data modeling, and so the additional value provided by Power BI Premium will increase over time. Customers who choose Power BI Premium can expect to benefit from alignment with the Microsoft BI product roadmap.
 
 ### Convergence of self-service and enterprise BI
 
-Consolidation of artifacts in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
+Consolidation of artifacts in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
 ### Power BI Premium Gen2
 
 Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
 
+Scalability benefits associated with Premium Gen2 are described [later in this article](#scalability-benefits).
+
 ## Feature comparison
 
-AAS provides the Analysis Services database engine for hosting data models, which is a core component of any enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table shows features supported in AAS and Premium Gen2. The list focuses on, but isn't limited to, Power BI dataset-related capabilities.
+AAS provides the Analysis Services database engine for hosting data models, which is a core component of any enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Premium Gen2. The table focuses on, but isn't limited to, Power BI dataset-related capabilities.
 
 | **Feature** | **AAS** | **Premium Gen2** |
 |:-|:-:|:-:|
@@ -135,7 +139,7 @@ Also, calculate costs based on the existing profile that *combines* AAS and Powe
 - The number of users required to develop and manage content.
 
 > [!TIP]
-> To help determine the right type and number of licenses for your business requirements and circumstances, see [this article](migrate-azure-analysis-services-to-powerbi-premium-determine-licensing.md).
+> To help determine the right type and number of licenses for your business requirements and circumstances, see [this related article](migrate-azure-analysis-services-to-powerbi-premium-determine-licensing.md).
 
 ### Consolidation opportunity
 
@@ -171,7 +175,7 @@ For more information, see:
 
 Power BI Premium provides other features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
-Premium Gen2 limits memory per dataset, and not per capacity or server. On the other hand, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
+Premium Gen2 limits memory per dataset, and not per capacity or server. Conversely, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
 
 Thanks to the distributed nature of the Premium Gen2 architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
 
@@ -183,13 +187,13 @@ Lastly, Premium Gen2 is able to better utilize next-generation hardware rollouts
 
 ## Considerations and limitations
 
-There are considerations and limitations to factor into your planning before migrating to Power BI.
+There are considerations and limitations to factor into your planning before migrating to Power BI Premium.
 
 ### Permissions
 
 AAS and SSAS use [roles](/analysis-services/tabular-models/roles-ssas-tabular) to manage data model access. There are two types of roles: the *server role* and *database roles*. The server role is a fixed role that grants administrator access to the Analysis Services server instance. Database roles, which are set by data modelers and administrators, control access to the database and data for non-administrator users.
 
-Unlike AAS, in Power BI, you only use roles only to enforce RLS or OLS. To grant permissions beyond RLS and OLS, use the Power BI security model (workspace roles and dataset permissions). For more information, see [Dataset permissions](../connect-data/service-datasets-permissions.md).
+Unlike AAS, in Power BI, you only use roles to enforce RLS or OLS. To grant permissions beyond RLS and OLS, use the Power BI security model (workspace roles and dataset permissions). For more information, see [Dataset permissions](../connect-data/service-datasets-permissions.md).
 
 For more information about Power BI model roles, see [Dataset connectivity with the XMLA endpoint (Model roles)](../enterprise/service-premium-connect-tools.md#model-roles).
 
@@ -200,11 +204,11 @@ When you migrate a data model from AAS to Power BI Premium, you must take the fo
 
 ### Refresh automation
 
-Power BI Premium supports XMLA endpoint-enabled APIs for scripting, such as [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference), [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and the PowerShell [SqlServer module](https://www.powershellgallery.com/packages/SqlServer/). The APIs have almost symmetric interfaces to AAS. For more information, see [Dataset connectivity with the XMLA endpoint (Client applications and tools)](../enterprise/service-premium-connect-tools.md#client-applications-and-tools).
+Power BI Premium supports XMLA endpoint-enabled APIs for scripting, such as [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference), [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and the PowerShell [SqlServer module](https://www.powershellgallery.com/packages/SqlServer/). These APIs have almost symmetric interfaces to AAS. For more information, see [Dataset connectivity with the XMLA endpoint (Client applications and tools)](../enterprise/service-premium-connect-tools.md#client-applications-and-tools).
 
 Compatibility with services for automation, including [Azure Functions](/azure/azure-functions/functions-overview), [Azure Automation](/azure/automation/overview), and [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), is enabled in the same way.
 
-Generally, scripts and processes that automate [partition management and processing](https://github.com/microsoft/Analysis-Services/tree/master/AsPartitionProcessing) in AAS will work in Power BI Premium. Bear in mind that Power BI Premium datasets support the [incremental refresh](../connect-data/incremental-refresh-overview.md) feature, which provides automated partition management for tables that frequently load new and updated data.
+Generally, scripts and processes that automate [partition management and processing](https://github.com/microsoft/Analysis-Services/tree/master/AsPartitionProcessing) in AAS will work in Power BI Premium. Bear in mind that Power BI Premium datasets support the [incremental refresh feature](../connect-data/incremental-refresh-overview.md), which provides automated partition management for tables that frequently load new and updated data.
 
 Like for AAS, you can use a service principal as an automation account for Power BI dataset management operations, such as refreshes. For more information, see [Dataset connectivity with the XMLA endpoint (Service principals)](../enterprise/service-premium-connect-tools.md#service-principals).
 
@@ -215,7 +219,7 @@ Like for AAS, applications can use a service principal to query a Power BI Premi
 However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 
 > [!NOTE]
-> You can't use the CustomData feature to query Premium per User (PPU) datasets because it would be in violation of the [license terms and conditions](../enterprise/service-premium-connect-tools.md#terms-of-use).
+> You can't use the CustomData feature to query Premium Per User (PPU) datasets because it would be in violation of the [license terms and conditions](../enterprise/service-premium-connect-tools.md#terms-of-use).
 
 ### Impersonation for testing
 
@@ -235,7 +239,7 @@ Any XMLA-based process that sets data source credentials must be replaced. For m
 
 ### Backup and restore
 
-Backup and restore in AAS requires Azure Blob storage, while in Power BI Premium it requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the type of storage account difference, backup and restore work the same way in both products.
+Backup and restore in AAS requires Azure Blob storage, while in Power BI Premium it requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the storage account difference, backup and restore work the same way in both products.
 
 For more information, see [Backup and restore datasets with Power BI Premium](../enterprise/service-premium-backup-restore-dataset.md).
 
@@ -253,9 +257,9 @@ Unlike AAS, Power BI Premium doesn't support [server properties](/analysis-servi
 
 Unlike AAS, Power BI Premium doesn't support [alias server names](/azure/analysis-services/analysis-services-server-alias).
 
-### Dynamic Management Views (DMVs)
+### Dynamic management views (DMVs)
 
-Some [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) that work in AAS aren't accessible in Power BI Premium because they require Analysis Services server-admin permissions. Power BI has workspace roles, but there isn't a workspace role that relates to Analysis Services server-admin permissions.
+Some [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) that work in AAS aren't accessible in Power BI Premium because they require Analysis Services server-admin permissions. Power BI has workspace roles, but there isn't a workspace role that grants the equivalent of Analysis Services server-admin permissions.
 
 ### PowerShell
 
@@ -267,13 +271,13 @@ However, the [Az.AnalysisServices module](https://www.powershellgallery.com/pack
 
 AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-services/analysis-services-logging). The most common target for AAS logs is to Log Analytics workspaces.
 
-Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS will likely not work in Power BI.
+Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
 
 Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Gen2 metrics app](../admin/service-premium-gen2-metrics-app.md).
 
 SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 
-### Business-to-Business (B2B)
+### Business-to-business (B2B)
 
 Both AAS and Power BI support [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b), which enables and governs sharing with external users. Notably, the User Principal Name (UPN) format required by AAS is different to Power BI.
 
