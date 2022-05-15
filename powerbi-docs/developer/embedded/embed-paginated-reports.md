@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 05/06/2022
+ms.date: 05/15/2022
 
 ---
 
@@ -182,7 +182,7 @@ Follow the instructions in the [embed content for your customers](embed-sample-f
 Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 > [!NOTE]
-> To embed a paginated report with a Power BI dataset as a data source, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
+> To embed a paginated report with a Power BI dataset as a data source, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity) .
 
 ### [Embed for your organization](#tab/organization)
 
@@ -198,7 +198,6 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 * You must use a **service principal**. Master user isn't supported.
 * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) isn't supported.
-* **Support for Single Sign-on (SSO)** - Power BI datasets are supported as a report data source, but only if the Power BI dataset does not contain any SSO-enabled data sources. All other report data sources using SSO are not yet supported.
 * When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
