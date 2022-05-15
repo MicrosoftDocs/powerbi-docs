@@ -24,7 +24,7 @@ Capacity is a dedicated set of resources reserved for exclusive use. Premium and
 
 * Changing the size of the capacity
 
-[!INCLUDE[Get the client ID](../includes/admin-portal-settings.md)]
+[!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## Power BI Premium
 
