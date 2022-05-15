@@ -23,7 +23,7 @@ This article compares five scenarios when migrating from Azure Analysis Services
 
 When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](migrate-azure-analysis-services-to-powerbi-premium.md#feature-comparison) that are only available to Power BI data models.
 
-Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following:
+Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
 
 - Region requirements.
 - The largest AAS data model size in each region.
@@ -136,7 +136,7 @@ Here are the proposed Power BI licenses:
 
 ## Migration scenario 4
 
-In this migration scenario, the customer has Power BI Pro licenses for all users, and they use AAS for the backend. There are 5 developers who are each responsible for the development and test environments, and for deployment to production.
+In this migration scenario, the customer has Power BI Pro licenses for all users, and they use AAS for the backend. There are five developers who are each responsible for the development and test environments, and for deployment to production.
 
 Here are their current AAS licenses:
 

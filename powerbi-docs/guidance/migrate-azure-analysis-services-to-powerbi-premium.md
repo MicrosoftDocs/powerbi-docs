@@ -30,7 +30,7 @@ Many customers have Power BI reports that [live connect](../connect-data/desktop
 
 - Does all the AAS functionality we depend on work in Power BI?
 - Is Power BI backwards compatible with AAS tools and processes?
-- What additional capabilities are available only in Power BI?
+- What other capabilities are available only in Power BI?
 - How do we compare costs between AAS and Power BI?
 - Why is Microsoft converging enterprise and self-service BI?
 - How do we migrate from AAS to Power BI Premium?
@@ -127,7 +127,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 
 When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](#feature-comparison) that are only available to Power BI data models.
 
-Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following:
+Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
 
 - Region requirements.
 - The largest AAS data model size in each region.
@@ -169,15 +169,15 @@ For more information, see:
 
 [Premium Gen2](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
-Power BI Premium provides additional features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
+Power BI Premium provides other features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
-Premium Gen2 limits memory per dataset, and not per capacity or server. On the other hand, AAS requires all data models fit in memory on a single server. That can require customers with large data models to purchase larger SKU sizes.
+Premium Gen2 limits memory per dataset, and not per capacity or server. On the other hand, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
 
 Thanks to the distributed nature of the Premium Gen2 architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
 
 In Premium Gen2, CPU consumption during refresh is spread across 24-hour periods. Premium Gen2 [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium Gen2 customers should decide on the optimal SKU size for their overall CPU consumption requirements.
 
-Premium Gen2 uses dynamic memory management of dataset caches. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory at all times. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
+Premium Gen2 uses dynamic memory management of dataset caches. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
 
 Lastly, Premium Gen2 is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
 
@@ -235,7 +235,7 @@ Any XMLA-based process that sets data source credentials must be replaced. For m
 
 ### Backup and restore
 
-Backup and restore in AAS requires Azure Blob storage, while in Power BI Premium it requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the storage account type difference, backup and restore works the same way in both products.
+Backup and restore in AAS requires Azure Blob storage, while in Power BI Premium it requires an Azure Data Lake Storage Gen2 (ADLS Gen2) account. Apart from the type of storage account difference, backup and restore work the same way in both products.
 
 For more information, see [Backup and restore datasets with Power BI Premium](../enterprise/service-premium-backup-restore-dataset.md).
 
