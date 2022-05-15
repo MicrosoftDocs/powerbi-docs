@@ -15,7 +15,14 @@ The data hub makes it easy to find, explore, and use the data in your organizati
 
 This article explains what you see on the data hub and describes how to use it.
 
-##What data resources do I see in the data hub?
+## Find the data you need
+
+The dataset discovery experience starts on the data hub. To get to the data hub:
+* In the Power BI service: Select **Data hub** in the navigation pane.
+* In the Power BI app in Teams: Select either the **Data hub** tab or **Data hub** in the navigation pane.
+* In Power BI Desktop: Select the **Data hub** button on the XXX ribbon.
+
+## What data resources do I see in the data hub?
 
 # [Datasets](#tab/datasets)
 
@@ -37,7 +44,7 @@ If you're a free user, see [Users with free licenses](#users-with-free-licenses)
 >[!NOTE]
 > To be fully functional, the data hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access the data resources you see listed in the data hub unless you have an Admin, Member, or Contributor role in the workspace where the dataset is located.
 
-## Find the data you need
+## The data hub page
 
 The dataset discovery experience starts on the data hub. To get to the data hub:
 * In the Power BI service: Select **Data hub** in the navigation pane.
