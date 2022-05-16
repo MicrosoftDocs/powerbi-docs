@@ -23,7 +23,7 @@ For related "What's New" information, see:
 ## May 2022
 
 ### \@mention someone in goal notes
-Want to get someone's attention regarding a goal's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest possible matches to save you work!
+Want to get someone's attention regarding a goal's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
 
 ![Screenshot of at-mention in a goal note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
 
