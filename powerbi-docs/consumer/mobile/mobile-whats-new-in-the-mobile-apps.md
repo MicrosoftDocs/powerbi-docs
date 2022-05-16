@@ -25,6 +25,8 @@ For related "What's New" information, see:
 ### \@mention someone in goal notes
 Want to get someone's attention regarding a goal's data? \@mention them in the note you add to the check-in!
 
+![Screenshot of at-mention in a goal note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+
 ## April 2022
 
 ### Check your activity feed for goal updates (Android and iOS)
