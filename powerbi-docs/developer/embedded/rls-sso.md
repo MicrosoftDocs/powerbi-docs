@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/11/2022
+ms.date: 05/17/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report with row-level security on a single sign-on system (SSO)
@@ -57,7 +57,9 @@ To generate an embed token:
 In the following example, `France` is a member of the role `CountryDynamic`. The effective identity in the rendered report would be France, while the username would be the user that the SQL token was created for.
 
 SQL token: XXXXXXXXX
+
 Username: France
+
 Roles: CountryDynamic
 
 ## Considerations and limitations
