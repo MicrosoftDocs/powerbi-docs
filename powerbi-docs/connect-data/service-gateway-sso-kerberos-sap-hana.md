@@ -78,7 +78,7 @@ This issue has multiple symptoms.
 
 To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving SSL error window by disabeling the certificate." :::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving SSL error window by disabling the certificate." :::
 
 After you've disabled this setting, the error message will no longer appear.
 
