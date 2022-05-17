@@ -13,7 +13,7 @@ ms.date: 05/17/2022
 ---
 # Embed a report with row-level security on an on-premises SQL Server Analysis Services (SSAS)
 
-This article explains how to embed Power BI content that uses [**RLS** (row-level security)](embedded-row-level-security.md) from an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* into a standard Power BI app owns data application.
+This article explains how to embed Power BI content from an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* into a standard Power BI app owns data application.
 
 > [!NOTE]
 > This article is only relevant for *app owns data* customers.
