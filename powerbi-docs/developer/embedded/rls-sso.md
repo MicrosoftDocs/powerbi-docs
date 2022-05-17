@@ -15,6 +15,9 @@ ms.date: 05/17/2022
 
 This article explains how to implement [**RLS** (row-level security)](embedded-row-level-security.md) with an [single sign-on (SSO)](pbi-glossary.md#single-sign-on-sso) dataset, and embed it in a Power BI report.
 
+> [!NOTE]
+> This article is only relevant for app owns data customers.
+
 In this scenario, the Power BI SSO (single sign-on) enabled dataset connects to an [on-prem](pbi-glossary.md#on-premises-on-prem) data source. The dataset then filters the data according to the RLS credentials of the user, and uses the filtered data in the report.
 
 The ISV app needs to connect to the data source using the user's credentials.
