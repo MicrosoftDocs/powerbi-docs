@@ -38,14 +38,12 @@ To set up the RLS environment, you need to perform the *first four tasks* of [Im
 
 1. [Set up the security table and define data relationships](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-1-create-the-user-security-table-and-define-data-relationship)
 2. [Define roles and permissions on-prem](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-2-create-the-tabular-model-with-facts-and-dimension-tables)
-3. [Create a data source on the gateway](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-3-add-data-sources-within-your-on-premises-data-gateway)
+3. [Add a data source connection to the on-prem gateway](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-3-add-data-sources-within-your-on-premises-data-gateway)
 4. Add the service principal or master user as a gateway admin, or add them as a [Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright).
-
-5. Complete the first four steps only, of [connect to the AS engine](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop)
 
 ## Create the report
 
-Once the environment is set up, create a *live connection* between Power BI Desktop and the SQL server and create your report.
+Once the environment is set up, you can create a *live connection* between Power BI Desktop and the SQL server and create your report.
 
 Complete the first four steps only, of [connect to the AS engine](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop) and then create the report that you want to embed.
 
