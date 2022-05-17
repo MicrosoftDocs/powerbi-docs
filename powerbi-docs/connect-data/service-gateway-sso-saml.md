@@ -219,7 +219,6 @@ Now you can use the **Manage Gateway** page in Power BI to configure the SAP HAN
 > SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
 
 ## Troubleshoot using SAML for single sign-on to SAP HANA
-of 
 This section provides extensive steps to troubleshoot using SAML for single sign-on to SAP HANA. Using these steps can help you self-diagnose and correct any issues you might face.
 
 ### Rejected credentials
@@ -277,7 +276,7 @@ When you investigate the Mashup[date]*.log, you'll see the following error messa
 
 To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-saml/validate-server-certificate.png" alt-text=" Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane." :::
+:::image type="content" source="media/service-gateway-sso-saml/validate-server-certificate.png" alt-text="Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane.":::
 
 After you've selected this setting, the error message will no longer appear.
 
