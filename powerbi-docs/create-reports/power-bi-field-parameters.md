@@ -74,4 +74,5 @@ Parameter = {
 
 - AI visuals and Q&A aren't supported with the feature.
 - There's no way for your report users to select "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
+- Currently you cannot create parameters in live connection data sources.
 - You can't use implicit measures for now, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. Read more about [implicit vs. explicit measures](../guidance/star-schema.md#measures).
