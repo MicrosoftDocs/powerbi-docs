@@ -213,8 +213,7 @@ Finally, add the certificate thumbprint to the gateway configuration:
 
 Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. By doing so, you can publish reports and datasets binding to that data source.
 
-   ![Screenshot of the "Advanced settings" section in Power BI.](media/service-gateway-sso-saml/enable-ss-saml.png)
-   :::image type="content" source="media/service-gateway-sso-saml/new-datasource.png" alt-text=" Screenshot of advanced settings with single sign-on for SAML." :::
+   :::image type="content" source="media/service-gateway-sso-saml/enable-ss-saml.png" alt-text=" Screenshot of advanced settings with single sign-on for SAML." :::
 
 > [!NOTE]
 > SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
