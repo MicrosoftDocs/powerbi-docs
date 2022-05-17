@@ -52,19 +52,19 @@ This section describes frequent errors you may see, when testing single sign-on,
 
     | Possible cause | Action |
     | --- | --- |
-    | User does not exist in AAD | Check if the user is present in AAD |
-    | User is not mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+    | User doesn't exist in AAD | Check if the user is present in AAD |
+    | User isn't mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
+    | Gateway doesn't have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
 
 * **Error: Invalid connection credentials.**
-The gateway cannot connect to the data source, because the provided User Principal Name does not have access to the data source.
+The gateway can't connect to the data source, because the provided User Principal Name does not have access to the data source.
 
     :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source.":::
 
 
     | Possible cause | Action |
     | --- | --- |
-    | User does not have credentials to the data source | Check if the user has access to the data source and add the user to the data source: [Add or remove a gateway data source](service-gateway-data-sources.md#manage-users)  |
+    | User doesn't have credentials to the data source | Check if the user has access to the data source and add the user to the data source: [Add or remove a gateway data source](service-gateway-data-sources.md#manage-users)  |
     
 ## Next steps
 
