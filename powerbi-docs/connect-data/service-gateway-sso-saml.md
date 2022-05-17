@@ -276,7 +276,7 @@ When you investigate the Mashup[date]*.log, you'll see the following error messa
 
 To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-saml/validate-server-certificate.png" alt-text="Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane.":::
+:::image type="content" source="media/service-gateway-sso-saml/validate-server-certificate.png" alt-text="Screenshot showing the S S L error being resolved on the 'Data Source Settings' pane.":::
 
 After you've selected this setting, the error message will no longer appear.
 
