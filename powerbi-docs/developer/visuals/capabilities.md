@@ -77,11 +77,14 @@ There are two types of privileges that must be defined:
 * Access External resources
 * Download to file
 
+>[!NOTE]
+>Even with these privileges granted in the visual, the admin has to enable the switch in the admin settings to allow people in their organization to benefit from these settings.
+
 ### Allow access to external resources
 
-To allow a visual to accesses an external resource, you must add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual to accesses an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
-#### Example to access external resources
+#### Example of privileges setting allowing access to external resources
 
 ```json
 {
@@ -94,6 +97,22 @@ To allow a visual to accesses an external resource, you must add that informatio
 The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
 
 ### Download to file
+
+To allow the user to export data from a visual into a file, set the ???? to true.
+
+This privileges setting enables the visual to export data to files in the following formats:
+
+* .txt
+* .csv
+* .json
+* .tmplt
+* .xml
+* .pdf
+* .xlsx
+
+This setting is separate from and not affected by download restrictions applied in the organization’s [Export and sharing](/power-bi/guidance/admin-tenant-settings#export-data) settings.
+
+#### Example of privileges setting allowing downloading to a file
 
 ### Example of a privileges definition
 
