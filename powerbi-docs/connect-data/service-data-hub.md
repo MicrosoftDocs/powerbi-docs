@@ -66,8 +66,6 @@ Recommended data items are endorsed data items (promoted or certified) that are 
 1. Click to show details summary.
 1. Click to show actions menu.
 1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
-1. Click to request access.
-1. Hover to view data resource description.
 
 ## Data resource list
 
@@ -77,10 +75,10 @@ The data resource list shows you data resources in the organization that you are
 
 1. Click to open the data resource's details page.
 1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
-1. Click to refresh data item.
-1. Click to show actions menu.
 1. Click to request access.
-1. Hover to view data resource description.
+1. Click to show actions menu.
+1. Click to refresh data item.
+1. Hover to view dataset description. 
 
 The list has three tabs to filter the list of data resources.
 * **All**: Shows all the data resources that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
