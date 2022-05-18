@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/04/2022
+ms.date: 04/27/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,16 +20,31 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## May 2022
+
+### \@mention someone in goal notes (Android and iOS)
+Want to get someone's attention regarding a goal's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
+
+![Screenshot of at-mention in a goal note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+
 ## April 2022
 
-### Goals now supports push notifications
+### Check your activity feed for goal updates (Android and iOS)
+Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your goals directly from the activity feed itself!
+
+![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
+
+### New minimum OS requirement for the Windows app
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
+
+### Goals now supports push notifications (Android and iOS)
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-goals.md#notifications)
 
 ![Screenshot of goals notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
 
 ## March 2022
 
-### Custom goal statuses in scorecards
+### Custom goal statuses in scorecards (Android and iOS)
 The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards. [Learn more about custom statuses](../../create-reports/service-goals-custom-status.md).
 
 ## February 2022

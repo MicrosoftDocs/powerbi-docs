@@ -54,7 +54,7 @@ It's a good idea to save a mapping of each data customer ID with its correspondi
 
 Maintaining one workspace per customer is the easiest way to manage your data. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
 
-If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/postgroups) to create a new workspace for each customer.
+If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/create-group) to create a new workspace for each customer.
 
 ### Organize artifacts in workspaces
 

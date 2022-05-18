@@ -9,7 +9,7 @@ ms.date: 04/05/2022
 ms.custom: known-issue-152
 ---
 
-# Known issue - Uploading paginated report with same name fails - known issue
+# Known issue - Uploading paginated report with same name fails
 
 **APPLIES TO:** ✔️ Power BI service
 

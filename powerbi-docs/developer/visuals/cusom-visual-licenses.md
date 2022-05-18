@@ -1,6 +1,6 @@
 ---
-title: License enforcement for Power BI custom visuals
-description: This tutorial explains how the licenses for Power BI custom visuals are enforced.
+title: License enforcement for Power BI AppSource visuals
+description: This article explains how the licenses for Power BI visuals purchased on AppSource are enforced.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -13,6 +13,8 @@ ms.date: 04/14/2022
 # Custom visual license enforcement
 
 When you buy a custom visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), there are several business and licensing models (pricing, free trial period etc.) available. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with extra functionality available for purchase.
+
+## No license or partial license
 
 If you try to render an unlicensed visual or a visual that you only have a partial license for, you may see one of the following icons:
 
@@ -32,10 +34,16 @@ If you try to render an unlicensed visual or a visual that you only have a parti
 
   :::image type="content" source="media/custom-visual-licenses/get-a-license.png" alt-text="Screenshot showing a button for getting a license or contacting owner.":::
 
-* If your report contains a custom visual that isn't supported in your environment, it won't render and a notification will appear.
+## Unsupported environment
+
+If your report contains a visual that isn't supported in your environment, the visual won't render and a notification will appear.
 
   :::image type="content" source="media/custom-visual-licenses/unsupported-environment.png" alt-text="Screenshot showing notification of an unsupported environment.":::
 
-Selecting the icon will take you to the AppSource page where you can buy the license or upgrade to the paid version.
+## Solution
+
+Select the icon to go to the AppSource page where you can buy the license or upgrade to the paid version.
 
 After you purchase and assign the license, you might have to refresh the visual or restart the Desktop, before the icon disappears.
+
+## Next steps
