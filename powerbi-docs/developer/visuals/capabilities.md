@@ -98,9 +98,9 @@ The preceding `WebAccess` privilege means that the visual needs to access any su
 
 ### Download to file
 
-To allow the user to export data from a visual into a file, set the ???? to true.
+To allow the user to export data from a visual into a file, set `ExportContent` to `true`.
 
-This privileges setting enables the visual to export data to files in the following formats:
+This `ExportContent` setting enables the visual to export data to files in the following formats:
 
 * .txt
 * .csv
@@ -114,6 +114,15 @@ This setting is separate from and not affected by download restrictions applied 
 
 #### Example of privileges setting allowing downloading to a file
 
+```json
+"privileges": [
+    {
+        "name": "ExportContent",
+        "essential": true
+    }
+]
+```
+
 ### Example of a privileges definition
 
 ```json
@@ -124,7 +133,7 @@ This setting is separate from and not affected by download restrictions applied 
         "parameters": [ "https://*.virtualearth.net" ]
     },
     {
-        "name": "LocalStorage",
+        "name": "ExportContent",
         "essential": false
     }
 ]
