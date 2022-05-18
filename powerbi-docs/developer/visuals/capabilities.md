@@ -80,7 +80,7 @@ There are two types of privileges that must be defined:
 >[!NOTE]
 >Even with these privileges granted in the visual, the admin has to enable the switch in the admin settings to allow people in their organization to benefit from these settings.
 
-### Allow access to external resources
+### Allow web access
 
 To allow a visual to accesses an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
