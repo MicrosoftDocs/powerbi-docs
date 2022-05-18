@@ -14,6 +14,23 @@ ms.date: 04/13/2022
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+## API v4.6.0
+
+ETA: June 5, 2022
+
+* Adding new capabilities property: [privileges](capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires) and two privileges:
+  * web access
+  * download file from custom visual
+* Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409).
+
+## API v4.5.0
+
+* New API to allow [downloading visual to file](./file-download-api.md)
+
+## API v4.2.0
+
+* New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
+
 ## API v3.8.0
 
 * Supports Desktop 2021 May and later.
