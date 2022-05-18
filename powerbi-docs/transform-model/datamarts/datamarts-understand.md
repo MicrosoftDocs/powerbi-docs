@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-datamarts
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 05/24/2022
 LocalizationGroup: Data from files
@@ -28,13 +28,13 @@ During preview, auto-generated dataset connectivity is available using [DirectQu
 
 Auto-generated datasets are different from traditional Power BI datasets in the following ways.  
 
-The XMLA endpoint supports read-only operations and users cannot edit the dataset directly. 
-The auto-generated datasets do not have data source settings and users do not need to enter credentials. Rather, they use automatic Single Sign-On (SSO) for queries. For refresh operations, datasets use the dataset author credentials to connect to the managed datamart’s SQL endpoint.
+The XMLA endpoint supports read-only operations and users can't edit the dataset directly. 
+The auto-generated datasets don't have data source settings and users don't need to enter credentials. Rather, they use automatic Single Sign-On (SSO) for queries. For refresh operations, datasets use the dataset author credentials to connect to the managed datamart’s SQL endpoint.
 
 With Power BI Desktop users can build composite models, enabling you to connect to the datamart’s dataset and do the following:
 
 * Select specific tables to analyze
-* Add additional data sources
+* Add more data sources
 
 Finally, if you don't want to use the auto-generated dataset directly, you can connect to the datamart’s SQL endpoint. See [create reports using datamarts](datamarts-create-reports.md) for more information.
 
@@ -66,7 +66,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Access control in datamarts](datamarts-access-control.md)
 * [Datamart administration](datamarts-administration.md)
 
-For more information about dataflows and transforming data, consult the following articles:
+For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
 

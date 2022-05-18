@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-datamarts
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 05/24/2022
 LocalizationGroup: Data from files
@@ -22,7 +22,7 @@ The **Datamart editor** provides an easy visual interface to analyze your datama
 
 ### Visual query
 
-Once you've loaded data into your datamart you can use the **Datamart editor** to create queries to analyze your data. You can use the Visual Query editor for a no-code experience to create your queries.
+Once you've loaded data into your datamart, you can use the **Datamart editor** to create queries to analyze your data. You can use the Visual Query editor for a no-code experience to create your queries.
 
 There are two ways to get to the Visual query editor:
 
@@ -43,12 +43,12 @@ Once you drag one or more tables onto the canvas, you can use the visual experie
 
 The following image shows a sample query created using the no-code Visual Query editor to retrieve the *Top customers by Orders*.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04.png" alt-text="Screen shot of dragging a table onto the canvas of the datamart editor.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04.png" alt-text="Screen shot of sample query results in the datamart editor.":::
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
 * Only a subset of Power Query operations that support [Query folding](/power-query/power-query-folding) are currently supported
-* You cannot currently save a query or open the visual query in Excel
+* You can't currently save a query or open the visual query in Excel
 
 
 ### SQL Query Editor
@@ -64,12 +64,12 @@ You can write your SQL query in the query editor window, which includes intellis
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
-* Saving queries is not currently supported
+* Saving queries isn't currently supported
 
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The log in process is the same as the log in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign in process for Power BI.
 
 ### When to Use In-Built Querying vs External SQL Tooling
 
@@ -86,7 +86,7 @@ You can use SSMS for:
 * Live query statistics or client statistics
 
 Use ADS for:
-* MacOS and Linux users
+* macOS and Linux users
 * Mostly editing or executing queries
 * Quick charting and visualizing set results
 
@@ -124,11 +124,11 @@ The following image shows the results of such a query.
 
 To see the columns within a table, expand the table within **Object explorer**. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-13.png" alt-text="Screen shot of the context menu query results.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-13.png" alt-text="Screen shot of the object explorer information.":::
 
 When you connect to datamart using SSMS or other client tools, you can see views created in Model schema of the datamart. The default schema configuration on a datamart is set to Model.
 
-A datamart shows two additional roles as *admin* and *public* under security when connected using SSMS. Users added to a workspace in any of the the *Admin* or *Member* or *Contributor* roles get added to the *admin* role on the datamart. Users added to the *Viewer* role in the workspace get added to *public* role in the datamart.
+A datamart shows two other roles as *admin* and *public* under security when connected using SSMS. Users added to a workspace in any of the *Admin* or *Member* or *Contributor* roles get added to the *admin* role on the datamart. Users added to the *Viewer* role in the workspace get added to *public* role in the datamart.
 
 
 
@@ -145,7 +145,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Datamart administration](datamarts-administration.md)
 
 
-For more information about dataflows and transforming data, consult the following articles:
+For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
 

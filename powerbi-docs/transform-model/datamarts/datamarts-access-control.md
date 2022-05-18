@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-datamarts
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 05/24/2022
 LocalizationGroup: Data from files
@@ -18,11 +18,11 @@ This article describes access control to datamarts, including row level security
 
 ## How datamarts become unavailable
 
-A datamart can get marked as an unavailable datamart when one of the situations occur.
+A datamart can get marked as an unavailable datamart when one of the following situations occurs.
 
 **Situation 1:** When a Premium workspace is changed from Premium to non-premium, all datamarts in that workspace become unavailable. The **Datamart editor** becomes unavailable and downstream usage of the datamart and auto-generated datasets is blocked. Users or administrators must upgrade the workspace to its original Premium capacity to restore datamarts.
 
-**Situation 2:** When dataflow updates a datamart and associated dataset, but due to a system lock the datamart or dataset update is pending, the datamart becomes unavailable. The **Datamart editor** is not accessible when a datamart goes into unavailable state. The **try again** action, shown in the following image, enables users to trigger synchrinozation between dataflow, datamart and dataset. It may take a few minutes to complete the requested action but downstream consumption can be continued.
+**Situation 2:** When dataflow updates a datamart and associated dataset, but due to a system lock the datamart or dataset update is pending, the datamart becomes unavailable. The **Datamart editor** isn't accessible when a datamart goes into unavailable state. The **try again** action, shown in the following image, enables users to trigger synchronization between dataflow, datamart and dataset. It may take a few minutes to complete the requested action but downstream consumption can be continued.
 
 :::image type="content" source="media/datamarts-access-control/datamarts-access-control-01.png" alt-text="Screenshot of the request access setting.":::
 
@@ -36,7 +36,7 @@ You can configure RLS for datamarts in the **Datamart editor**. The configured R
 
 ### Define roles and rules in Power BI Desktop
 
-To define security roles take the following steps:
+To define security roles, take the following steps:
 
 1.	Open your datamart and select **Manage Roles** from the ribbon.
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-02.png" alt-text="Screenshot of the manage roles ribbon button.":::
@@ -76,7 +76,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Datamart administration](datamarts-administration.md)
 
 
-For more information about dataflows and transforming data, consult the following articles:
+For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
 

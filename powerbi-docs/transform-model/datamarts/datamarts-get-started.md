@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-datamarts
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 05/24/2022
 LocalizationGroup: Data from files
@@ -17,7 +17,7 @@ This article describes how to get started using datamarts, including various sam
 
 ## Sample data
 
-You can use the following various types of sample data to explore datamarts. All of the follwoing resources contain free sample data:
+You can use the following various types of sample data to explore datamarts. All of the following resources contain free sample data:
 
 * [Eight Departmental Samples in Excel workbook format](/power-bi/create-reports/sample-datasets), which are Excel versions of the Power BI built-in samples containing the datasets from numerous use cases:
     * Customer profitability
@@ -33,7 +33,7 @@ You can use the following various types of sample data to explore datamarts. All
 * [COVID 19 world data](https://github.com/CSSEGISandData/COVID-19) is based on data from Johns Hopkins University. Before publishing this data, we recommend reviewing the [disclaimers article](/power-bi/create-reports/sample-covid-19-us).
 * [Northwind Traders OData feed](https://services.odata.org/Northwind/Northwind.svc), data from a fictitious organization that manages orders, products, customers, suppliers, and many other aspects of a small business.
 
-You can also start using datamarts from any dataflow you currently have as well. Starting from an existing dataflow will copy data into your datamart, at which point you can apply additional transformations or just use it as a data source to explore datamarts.
+You can also start using datamarts from any dataflow you currently have as well. Starting from an existing dataflow will copy data into your datamart, at which point you can apply other transformations or just use it as a data source to explore datamarts.
 
 
 ## Create a datamart
@@ -59,7 +59,7 @@ Select the datamart name to load the datamart.
 
 ## Manage datamart refresh
 
-You can refresh a datamarts in two ways: 
+You can refresh a datamart in two ways: 
 
 1.	From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
 
@@ -77,7 +77,7 @@ To set up incremental refresh for a datamart, select the table for which you wan
 
 There are two ways to rename a datamart:
 
-First, from within the the **Datamart editor**, click the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Click on the ribbon outside of the rename window to save the new name.
+First, from within the **Datamart editor**, select the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Click on the ribbon outside of the rename window to save the new name.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-07.png" alt-text="Screenshot of renaming a datamart.":::
 
@@ -108,7 +108,7 @@ To load data into your datamart, open your datamart (or create a new datamart) a
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-11.png" alt-text="Screenshot of connecting to data for a datamart.":::
 
-If you choose to get data from a another source, a data source selection window appears where you can select from a multitude of data sources. 
+If you choose to get data from another source, a data source selection window appears where you can select from a multitude of data sources. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-12.png" alt-text="Screenshot of different data sources for a datamart.":::
 
@@ -117,7 +117,7 @@ You can also drag and drop files from your computer to load data into your datam
 
 Once connected, select the tables you want to load into your datamart. You can apply transformations to your selected data and load the data into the datamart. Once the data is loaded, the tables are imported into your datamart. You can monitor the  progress in the status bar.
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-13.png" alt-text="Screenshot of different data sources for a datamart.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-13.png" alt-text="Screenshot of loading data for a datamart.":::
 
 For each table you select, a corresponding view is created in the datamart that appears in the **Object explorer** in **Data View**.
 
@@ -162,11 +162,11 @@ You can also hide the entire table and individual columns by using the **Model v
 
 To access auto-generated datasets, go to the Premium Gen 2 workspace and find the dataset that matches the name of the datamart. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a dataset.":::
 
 To load the dataset, click the name of the dataset. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a dataset.":::
 
 
 ## Next steps
@@ -181,7 +181,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Access control in datamarts](datamarts-access-control.md)
 * [Datamart administration](datamarts-administration.md)
 
-For more information about dataflows and transforming data, consult the following articles:
+For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
 

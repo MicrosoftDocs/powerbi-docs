@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-datamarts
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 05/24/2022
 LocalizationGroup: Data from files
@@ -55,38 +55,34 @@ To get audit logs, complete the following steps:
 ### Using REST APIs for activity events
 
 Administrators can export activity events on datamarts by using existing supported REST APIs. The following articles provide information about the APIs:
-•	[Admin - Get Activity Events - REST API (Power BI Power BI REST APIs)](/rest/api/power-bi/admin/get-activity-events)
-•	[Track user activities in Power BI](/power-bi/admin/service-admin-auditing)
+* [Admin - Get Activity Events - REST API (Power BI Power BI REST APIs)](/rest/api/power-bi/admin/get-activity-events)
+* [Track user activities in Power BI](/power-bi/admin/service-admin-auditing)
 
 ## Capacity utilization and reporting 
 
-Datamarts CPU usage is free during preview. The free components include datamart and queries on SQL endpoint of datamart. Auto-generated dataset usage would be reported for throttling and auto-scaling. To avoid any cost during private preview, we suggest using PPU trial workspace. 
-
-### Create a Premium workspace for datamarts
-( if this is a rehash of existing content, remove the section and add a link)
-
-( yes it's redundant, bad images too )
+Datamart CPU usage is free during preview, including datamarts and queries on SQL endpoints of a datamart. Auto-generated dataset usage will be reported for throttling and auto-scaling. To avoid incurring costs during the preview period, consider using a Premium Per User (PPU) trial workspace. 
 
 
 ## Considerations and limitations
 
 The following limitations should be considered when using datamarts: 
 
-•	Datamarts are only offered as a Premium Gen 2 offering (PPC/PPU)
-•	Datamarts currently officially support data volumes of up to 100 GB- this is not an enforced system limit, however.
-•	Currently datamarts don’t support currency data type- they will be converted to float.
-•	Data sources behind a VNET cannot currently be used with datamarts.
-•	Datamart won’t be available (until further notice) in the following azure regions:
-•	Sweden Central and South (Until June)
-•	West India (No future availability date yet)
-•	UAE Central 
-•	Japan West 
-•	Southeast Asia 
-In all other Azure regions, datamarts are supported
+* Datamarts are only offered as a Premium Gen 2 offering
+* Datamarts currently officially support data volumes of up to 100 GB.
+* Currently datamarts don’t support the currency data type, and such data types will be converted to float.
+* Data sources behind a VNET can't currently be used with datamarts.
+* Datamarts aren't currently available in the following Azure regions:
+    * Sweden Central and South
+    * West India
+    * UAE Central 
+    * Japan West 
+    * Southeast Asia 
+
+Datamarts are supported in all other Azure regions.
 
 
 ## Next steps
-This article provided information about adminisration of datamarts. 
+This article provided information about administration of datamarts. 
 
 The following articles provide more information about datamarts and Power BI:
 
@@ -97,7 +93,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Create reports with datamarts](datamarts-create-reports.md)
 * [Access control in datamarts](datamarts-access-control.md)
 
-For more information about dataflows and transforming data, consult the following articles:
+For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
 
