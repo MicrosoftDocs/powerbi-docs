@@ -123,14 +123,14 @@ For a list of the tables used by Azure Monitor Logs and queryable by Log Analyti
 > [!IMPORTANT]
 > When you select **Logs** from the Power BI Embedded menu, Log Analytics is opened with the query scope set to the current Power BI Embedded resource. This means that log queries will only include data from that resource. If you want to run a query that includes data from other Power BI Embedded resource or data from other Azure services, select **Logs** from the **Azure Monitor** menu. See [Log query scope and time range in Azure Monitor Log Analytics](/azure/azure-monitor/log-query/scope/) for details.
 
-This is an example of a query that is completed in less than five minutes (300,000 milliseconds).
+Here is an example of a query that is completed in less than five minutes (300,000 milliseconds).
 
-    ```kusto
-         search *
-        | where Type == "AzureDiagnostics"
-        | where ( OperationName == "QueryEnd" )
-        | where toint(Duration_s) < 300000   
-    ```
+```kusto
+    search *
+    | where Type == "AzureDiagnostics"
+    | where ( OperationName == "QueryEnd" )
+    | where toint(Duration_s) < 300000   
+```
 
 ## Alerts
 
