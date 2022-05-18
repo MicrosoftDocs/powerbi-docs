@@ -11,13 +11,12 @@ LocalizationGroup: Share your work
 ---
 # Data hub
 
-The data hub makes it easy to find, explore, and use the data in your organization. It provides information about data resources such as datasets and datamarts, as well as entry points for creating reports on top of those data resources, or for using those data resources with Analyze in Excel.
+Data discovery in Power BI starts on the data hub. The data hub is a centralized place where you can find your organization's data resources. It provides access to each item's details page, as well as action menus that help you work with the items.
 
 This article explains what you see on the data hub and describes how to use it.
 
-## Find the data you need
+## Get to the data hub
 
-The dataset discovery experience starts on the data hub. To get to the data hub:
 * In the Power BI service: Select **Data hub** in the navigation pane.
 * In the Power BI app in Teams: Select either the **Data hub** tab or **Data hub** in the navigation pane.
 
@@ -51,24 +50,37 @@ The dataset discovery experience starts on the data hub. To get to the data hub:
 
 The image below shows the data hub in the Power BI service.
 
-![Screenshot of data hub.](media/service-datasets-hub/datasets-hub-main-page.png)
+![Screenshot of data hub.](media/service-data-hub/data-hub-main-page.png)
 
-1. Click to view the data resource's details page.
-1. Click to display options menu.
-1. Click to view details summary.
+The data hub has two sections:
+* Recommended data items
+* A filterable list of data items
+
+## Recommended data items
+
+Recommended data items are endorsed data items (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
+
+![Screenshot of recommended items on the data hub.](media/service-data-hub/recommended-data-items.png)
+
+1. Click to open the data resource's details page.
+1. Click to show details summary.
+1. Click to show actions menu.
 1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 1. Click to request access.
 1. Hover to view data resource description.
 
-The sections below describe these sections and the actions you can perform.
-
-## Recommended data
-
-Recommended data resources are endorsed data resources (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
-
 ## Data resource list
 
 The data resource list shows you data resources in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+
+![Screenshot of the data resources list on the data hub.](media/service-data-hub/data-items-list.png)
+
+1. Click to open the data resource's details page.
+1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Click to refresh data item.
+1. Click to show actions menu.
+1. Click to request access.
+1. Hover to view data resource description.
 
 The list has three tabs to filter the list of data resources.
 * **All**: Shows all the data resources that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
