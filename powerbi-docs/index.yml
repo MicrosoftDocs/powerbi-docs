@@ -31,9 +31,9 @@ highlightedContent:
       itemType: tutorial
       url: fundamentals/service-get-started.md
     # Card
-    - title: Embed a Power BI report in an application
-      itemType: tutorial
-      url: developer/embedded/embed-customer-app.md
+    - title: Datamarts (preview)
+      itemType: concept
+      url: transform-model/datamarts/datamarts-overview.md
     # Card
     - title: Export Power BI embedded analytics reports API
       itemType: concept
@@ -156,17 +156,17 @@ conceptualContent:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform and shape data
+    - title: Datamarts (preview)
       links:
-        - url: transform-model/desktop-query-overview.md
+        - url: transform-model/datamarts/datamarts-overview.md
           itemType: overview
-          text: Query Editor overview
-        - url: transform-model/desktop-common-query-tasks.md
+          text: Datamarts overview (preview)
+        - url: transform-model/datamarts/datamarts-understand.md
           itemType: concept
-          text: Common query tasks
-        - url: connect-data/desktop-shape-and-combine-data.md
+          text: Understand datamarts (preview)
+        - url: transform-model/datamarts/datamarts-get-started.md
           itemType: tutorial
-          text: Shape and combine data
+          text: Get started with datamarts
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
