@@ -20,7 +20,7 @@ This article explains what you see on the data hub and describes how to use it.
 * In the Power BI service: Select **Data hub** in the navigation pane.
 * In the Power BI app in Teams: Select either the **Data hub** tab or **Data hub** in the navigation pane.
 
-## What data resources do I see in the data hub?
+## What data resources do I see?
 
 # [Datasets](#tab/datasets)
 
@@ -44,48 +44,43 @@ If you're a free user, see [Users with free licenses](#users-with-free-licenses)
 
 ## The data hub page
 
-The dataset discovery experience starts on the data hub. To get to the data hub:
-* In the Power BI service: Select **Data hub** in the navigation pane.
-* In the Power BI app in Teams: Select either the **Data hub** tab or **Data hub** in the navigation pane.
-
-The image below shows the data hub in the Power BI service.
-
-![Screenshot of data hub.](media/service-data-hub/data-hub-main-page.png)
-
 The data hub has two sections:
 * Recommended data items
 * A filterable list of data items
 
+![Screenshot of data hub.](media/service-data-hub/data-hub-main-page.png)
+
 ## Recommended data items
 
-Recommended data items are endorsed data items (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
+Recommended data items are endorsed data items (promoted or certified), presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
 
 ![Screenshot of recommended items on the data hub.](media/service-data-hub/recommended-data-items.png)
 
-1. Click to open the data resource's details page.
-1. Click to show details summary.
-1. Click to show actions menu.
-1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Open the data item's details page.
+1. Show a summary of the data item's details.
+1. Open the actions menu.
+
+A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
 
 ## Data resource list
 
-The data resource list shows you data resources in the organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+The data resource list shows you data resources in the organization that you are [allowed to find](#what-data-resources-do-i-see).
 
 ![Screenshot of the data resources list on the data hub.](media/service-data-hub/data-items-list.png)
 
-1. Click to open the data resource's details page.
+1. Open the data resource's details page.
 1. A greyed-out icon indicates that you don't have permissions to access that data resource's details page. Data resources with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
-1. Click to request access.
-1. Click to show actions menu.
-1. Click to refresh data item.
-1. Hover to view dataset description. 
+1. Request access.
+1. Open the actions menu.
+1. Refresh the data item.
+1. Hover to view the data item's description. 
 
 The list has three tabs to filter the list of data resources.
-* **All**: Shows all the data resources that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub).
+* **All**: Shows all the data resources that you are [allowed to find](#what-datasets-do-i-see).
 * **My data**: Shows all the data resources that you are the owner of.
-* **Trusted in your org**: Shows all the endorsed data resources in your organization that you are [allowed to find](#what-datasets-do-i-see-in-the-datasets-hub). Certified data resources are listed first, followed by promoted data resources.
+* **Trusted in your org**: Shows all the endorsed data resources in your organization that you are [allowed to find](#what-datasets-do-i-see). Certified data resources are listed first, followed by promoted data resources.
 
-Use the search box and filters to narrow down the lis of items. You can use type into the Filter by Keyword box to search for a particular string, or you can use the filters to display only the selected data resource types.
+Use the search box and filters to narrow down the lis of items. You can type into the **Filter by Keyword** box to search for a particular string, or you can use the filters to display only the selected data resource types.
 
 The columns of the list are described below. Click on a column header to sort by that column. 
 * **Name**: The dataset name. Click the dataset name to open the dataset details page.
