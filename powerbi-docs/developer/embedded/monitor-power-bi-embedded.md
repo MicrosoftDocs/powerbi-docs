@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: subject-monitoring
 ms.topic: how-to
-ms.date: 10/27/2021
+ms.date: 05/17/2022
 ---
 
 # Monitor Power BI Embedded
