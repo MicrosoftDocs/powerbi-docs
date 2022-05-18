@@ -59,7 +59,7 @@ You can find all these objects and their parameters in the [*capabilities.json* 
 
 ## privileges: define the special permissions that your visual requires
 
-Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
+Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
 > [!NOTE]
 > From API v4.6.0, privileges **must** be specified in the *capabilities.json* file.  In earlier versions, remote access is automatically granted and downloading to files isn't possible. To find out which version you’re using, run the `pbiviz -V` command.
@@ -82,7 +82,7 @@ There are two types of privileges that must be defined:
 
 ### Allow web access
 
-To allow a visual to accesses an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual accesses to an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
 #### Example of privileges setting allowing access to external resources
 
