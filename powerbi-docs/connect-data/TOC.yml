@@ -9,8 +9,6 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "Datasets discovery in the Power BI service"
-      href: service-datasets-hub.md
     - name: "Data hub"
       href: service-data-hub.md
     - name: "Data details"
