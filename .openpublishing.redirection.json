@@ -837,7 +837,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-featured.md",
-            "redirect_url": "/power-bi/consumer/end-user-featured",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-featured.md",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
             "redirect_document_id": true
         },
         {
