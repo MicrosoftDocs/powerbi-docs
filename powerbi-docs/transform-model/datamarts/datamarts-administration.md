@@ -67,10 +67,15 @@ Datamart CPU usage is free during preview, including datamarts and queries on SQ
 
 The following limitations should be considered when using datamarts: 
 
-* Datamarts are only offered as a Premium Gen 2 offering
+* Datamarts are only available in Premium Gen 2 workspaces
+* Datamarts are not currently supported in Power BI embedded
+* Datamart extract, transform and load (ETL) operations can currently only run for up to 24 hours
 * Datamarts currently officially support data volumes of up to 100 GB.
 * Currently datamarts don’t support the currency data type, and such data types will be converted to float.
-* Data sources behind a VNET can't currently be used with datamarts.
+* Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway
+* Datamarts currently support the following SQL clients:
+    * SSMS
+    * Azure Data Studio
 * Datamarts aren't currently available in the following Azure regions:
     * Sweden Central and South
     * West India

@@ -24,7 +24,9 @@ The **auto-generated** Power BI dataset created from a datamart eliminates the n
 * No need to refresh, synchronize data or understand connection details
 * Build solutions on the web without needing Power BI Desktop
 
-During preview, auto-generated dataset connectivity is available using [DirectQuery](../../connect-data/desktop-directquery-about.md) only.
+During preview, auto-generated dataset connectivity is available using [DirectQuery](../../connect-data/desktop-directquery-about.md) only. The following image shows how datamarts fit into the process continuum starting with connecting to data, all the way through creating reports.
+
+:::image type="content" source="media/datamarts-overview/datamarts-overview-02.png" alt-text="Diagram that shows how datamarts fit into the data connection and analysis continuum.":::
 
 Auto-generated datasets are different from traditional Power BI datasets in the following ways.  
 

@@ -12,7 +12,10 @@ LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
 
-Datamarts are self-service analytics solutions, enabling users to store and explore data that is loaded in a fully managed database. Datamarts provide a simple and optionally no-code experience to ingest data from different data sources, extract transform and load (ETL) the data using Power Query, then load it into an Azure SQL database that's fully managed and requires no tuning or optimization. 
+
+Business users rely heavily on centrally governed data sources built by information technology teams (IT), but it can take months for an IT department to deliver a change in a given data source. In response, users often resort to building their own data marts with Access databases, local files, SharePoint sites and spreadsheets, resulting in a lack of governance and proper oversight to ensure such data sources are supported and have reasonable performance. 
+
+Datamarts help bridge the gap between business users and IT. Datamarts are self-service analytics solutions, enabling users to store and explore data that is loaded in a fully managed database. Datamarts provide a simple and optionally no-code experience to ingest data from different data sources, extract transform and load (ETL) the data using Power Query, then load it into an Azure SQL database that's fully managed and requires no tuning or optimization. 
 
 Once data is loaded into a datamart, you can additionally define relationships and policies for business intelligence and analysis. Datamarts automatically generate a dataset or semantic model, which can be used to create Power BI reports and dashboards. You can also query a datamart using a T-SQL endpoint or using a visual experience.
 
@@ -27,28 +30,41 @@ Datamarts offer the following benefits:
 Datamart features:
 
 * 100% web-based, no other software required
-* Native integration with Power BI (datasets, paginated reports), Office (Excel, Teams) and the rest of the Microsoft analytics offerings
+* A no-code experience resulting in a fully managed datamart
 * Automated performance tuning
-* Easy low-code and no-code experiences for any user
+* Built-in visual and SQL Query editor for ad-hoc analysis
 * Support for SQL and other popular client tools
-* Provide visual experiences for querying data and ad-hoc analysis
+* Native integration with Power BI, Microsoft Office and other Microsoft analytics offerings
 * Included with Power BI Premium capacities and Premium Per User
 
 ## When to use datamarts
 
-Datamarts are targeted towards high concurrency, interactive data workloads for self-service scenarios. For example, if you're working in accounting or finance, you can build your own data models and collections, which you can then use to self-serve business questions and answers through T-SQL and visual query experiences. In addition, you can still use those data collections for more traditional Power BI reporting experiences. Datamarts are recommended for customers who need domain oriented, decentralized data ownership and architecture, such as users who need data as a product or a self-service data platform.
+Datamarts are targeted toward interactive data workloads for self-service scenarios. For example, if you're working in accounting or finance, you can build your own data models and collections, which you can then use to self-serve business questions and answers through T-SQL and visual query experiences. In addition, you can still use those data collections for more traditional Power BI reporting experiences. Datamarts are recommended for customers who need domain oriented, decentralized data ownership and architecture, such as users who need data as a product or a self-service data platform.
 
 Datamarts are designed to support the following scenarios:
 
-* **Centralize data:** Centralize small to moderate data volume (approximately 100 GB) in a self-service fully managed SQL database. Datamarts enable you to designate a single store for self-service departmental downstream reporting needs (such as Excel, Power BI reports, others), thereby reducing the infrastructure in self-service solutions.
+* **Departmental self-service data:** Centralize small to moderate data volume (approximately 100 GB) in a self-service fully managed SQL database. Datamarts enable you to designate a single store for self-service departmental downstream reporting needs (such as Excel, Power BI reports, others), thereby reducing the infrastructure in self-service solutions.
 
 * **Relational database analytics with Power BI:** Access a datamart’s data using external SQL clients. Azure Synapse and other services/tools that use T-SQL can also use datamarts in Power BI.
 
-* **End-to-end semantic models and report creation:** Enable Power BI creators to build end-to-end solutions without dependencies on other tooling or IT teams. Datamarts gets rid of managing orchestration between dataflows and datasets through auto-generated datasets, while providing visual experiences for querying data and ad-hoc analysis, all backed by Azure SQL DB.
+* **End-to-end semantic models:** Enable Power BI creators to build end-to-end solutions without dependencies on other tooling or IT teams. Datamarts gets rid of managing orchestration between dataflows and datasets through auto-generated datasets, while providing visual experiences for querying data and ad-hoc analysis, all backed by Azure SQL DB.
 
-## Comparing datamarts to dataflows and data sets
 
-This section describes the differences between datamarts, dataflows and data sets. 
+
+The following table describes these offerings and the best uses for each, including their role with datamarts.
+
+| Item | Recommended Use Case | Complementing role with datamarts |
+| --- | --- | --- |
+| Datamarts | User-based data warehousing and SQL access to your data | Datamarts can be used as sources for other datamarts or items, using the SQL endpoint:<ul> <li>External sharing<li>Sharing across departmental or organizational boundaries with security enabled</ul> |
+| Dataflows | Reusable data prep (ETL) for datasets or marts | Datamarts use a single, built-in dataflow for ETL. Dataflows can accentuate this, enabling:<ul> <li>Loading data to datamarts with different refresh schedules<li>Separating ETL and data prep steps from storage, so it can be reused by datasets</ul> |
+| Datasets | Metrics and semantic layer for BI reporting | Datamarts provide an auto-generated dataset for reporting, enabling:<ul> <li>Combining data from multiple sources<li>Selective sharing of the datamart tables for fine-grained reporting<li>Composite models - a dataset with data from the datamart and other data sources outside of the datamart<li>Proxy models - a dataset that uses DirectQuery for the auto-generated model, using a single source of truth</ul> |
+
+
+
+
+## Comparing dataflows to datamarts
+
+This section describes the differences between dataflows and datamarts. 
 
 **[Dataflows](../dataflows/dataflows-introduction-self-service.md)** provide reusable extract, transform and load (ETL). Tables can't be browsed, queried, or explored without a dataset, but can be defined for reuse. The data is exposed in Power BI or [CDM format](/common-data-model/) if you bring your own [data lake](../dataflows/dataflows-azure-data-lake-storage-integration.md). Dataflows are used by Power BI to ingest data into your datamarts. You should use dataflows whenever you want to reuse your ETL logic.
 
@@ -63,28 +79,6 @@ Use **datamarts** when you need to:
 * For outputs that are results, sets, tables, and filtered tables of data
 * Provide accessible data through a SQL endpoint
 * Enable users who don’t have access to Power BI Desktop
-
-**[Datasets](../../connect-data/service-datasets-understand.md)** are semantic models with business semantics and measures that enable business intelligence reporting. Datasets always serve a purpose and can accentuate the value a datamart. 
-For example, datasets can provide composite models, Analyze in Excel functionality, dataset hub, reports in the web, downloaded pbix files, and so on.
-
-Use **datasets** when you need to:
-* Define complex business logic and calculations
-* Work with aggregate data and build reports on top of it
-* Use traditional Power BI reporting and dashboards
-
-The following table describes these offerings and the best uses for each, including their role with datamarts.
-
-| Item | Recommended Use Case | Complementing role with datamarts |
-| --- | --- | --- |
-| Dataflows | Reusable data prep (ETL) for datasets or marts | Datamarts use a single, built-in dataflow for ETL. Dataflows can accentuate this, enabling:<ul> <li>Loading data to datamarts with different refresh schedules<li>Separating ETL and data prep steps from storage, so it can be reused by datasets</ul> |
-| Datasets | Metrics and semantic layer for BI reporting | Datamarts provide an auto-generated dataset for reporting, enabling:<ul> <li>Creating subsets of the datamart tables for fine grained reporting<li>Composite models - a dataset with data from the datamart and other data sources outside of the datamart<li>Proxy models - a dataset that uses DirectQuery for the auto-generated model, using a single source of truth</ul> |
-| Datamarts | User-based data warehousing and SQL access to your data | Datamarts can be used as sources for other datamarts or items, using the SQL endpoint:<ul> <li>External sharing<li>Sharing across departmental or organizational boundaries with security enabled</ul> |
-| Paginated Reports | Pixel-perfect static tables, matrices, and charts | Creating formatted tables, matrices, or static charts from SQL |
-
-
-The following image illustrates which solutions are best suited for specific tasks in Power BI.
-
-:::image type="content" source="media/datamarts-overview/datamarts-overview-02.png" alt-text="Diagram showing flowchart for choosing when to use datamarts.":::
 
 
 ## Next steps
