@@ -123,8 +123,10 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
 | [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
-<sup>1</sup> In public preview</br>
-<sup>2</sup> Planned</br>
+<sup>1</sup> In public preview
+
+<sup>2</sup> Planned
+
 <sup>3</sup> Use VNet connectivity and Azure Private Link instead
 
 ## Cost comparison
