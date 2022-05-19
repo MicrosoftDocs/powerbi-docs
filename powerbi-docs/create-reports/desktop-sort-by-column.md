@@ -8,34 +8,18 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: contperf-fy21q4
-ms.date: 06/28/2021
+ms.date: 04/20/2022
 LocalizationGroup: Create reports
 ---
 # Sort one column by another column in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+When you're editing a report in Power BI, you can choose a column to define the sort order of another column.
 
-When you're editing a report in Power BI Desktop, you can choose a column to define the sort order of another column by setting the **Sort by column**.
-
-# [Power BI service](#tab/powerbi-service)
-
-When you're editing a report in the Power BI service, you can use a column to define the sort order of another column.
-
----
-
-Here's a common example. You have a Month Name column, and when you add it to a visual, the months are being sorted alphabetically: April, August, December, February, and so on. Not ideal. You want them to be sorted chronologically. This article shows how to set the sort order of one column by a different column.
-
-# [Power BI Desktop](#tab/powerbi-desktop)
+Here's a common example. You have a Month Name column, and when you add it to a visual, the months are being sorted alphabetically: April, August, December, February, and so on. Not ideal. You want them to be sorted chronologically. This article shows how to set the sort order of one column by a different column, in Power BI Desktop or in the Power BI service.
 
 :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort-chart.png" alt-text="Screenshot of a line chart in Power B I Desktop with the months sorted alphabetically.":::
-
-# [Power BI service](#tab/powerbi-service)
-
-:::image type="content" source="media/desktop-sort-by-column/service-line-chart-alphabetical-month-sort.png" alt-text="Screenshot of a line chart in the Power B I service with the months sorted alphabetically.":::
-
----
 
 > [!NOTE]
 > When you're reading a report, you can also change how the values in a visual are sorted. See [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md) for details.
@@ -44,7 +28,7 @@ Here's a common example. You have a Month Name column, and when you add it to a 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To set a different column to sort by, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
+To set a different column to sort by in Power BI Desktop, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
 
 1. Select the column that you want to sort, in our case, **Month**. Note that the months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
 
@@ -60,7 +44,7 @@ To set a different column to sort by, both columns need to be at the same level 
 
 # [Power BI service](#tab/powerbi-service)
 
-To set a different column to sort by, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
+To set a different column to sort by in the Power BI service, both columns need to be at the same level of granularity. For example, to sort a column of month *names*, you need a column that contains a *number* for each month. In the following example, the months are being sorted alphabetically, but we want them to be sorted chronologically.
 
 1. On the canvas, select the visual. Then locate the **Month Number** field in the **Fields** pane.
 

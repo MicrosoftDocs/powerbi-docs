@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 04/28/2022
 LocalizationGroup: Premium 
 ---
 
@@ -90,7 +90,11 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
-    Sorting the matrix by this column helps identify datasets that have had the biggest change  in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. Small datasets with little CPU activity can easily show large positive or negative values.
+    To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
+
+    You can use the *performance delta* value to assess whether the average performance of your Power BI items improved or worsened over the past week. The higher the value is, the better the performance is likely to be. A value close to zero indicates that not much has changed, and a negative value suggests that the average performance of your Power BI items got worse over the past week.
+
+    Sorting the matrix by the *performance delta* column helps identify datasets that have had the biggest change in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. The *performance delta* value is a good indicator when it comes to Power BI items that have a high CPU utilization because they're heavily used or run many operations. However, small datasets with little CPU activity may not reflect a true picture, as they can easily show large positive or negative values.
 
 ### Performance
 
@@ -107,7 +111,7 @@ Displays the CPU usage of the selected capacity over time. Filters applied to th
 * *Filters are applied* -  The visuals displays every 30 second timepoint.
 
 >[!NOTE]
->Peak is calculated as the highest number of seconds from both [*interactive* and *background*](service-premium-gen2-faq.yml#what-s-the-difference-between-interactive-and-background-operations--) operations.
+>Peak is calculated as the highest number of seconds from both [*interactive* and *background*](service-premium-interactive-background-operations.md) operations.
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
@@ -117,11 +121,11 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    [*Interactive*](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
+    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
-    [*Background*](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
+    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
 
 * **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
 
@@ -275,7 +279,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 ## Timepoint
 
-This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-gen2-faq.yml#what-s-the-difference-between-interactive-and-background-operations--) operations contributed the most to CPU usage.
+This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
@@ -324,7 +328,7 @@ This section describes the operations of the visuals in the top row of the timep
 
 ### Interactive Operations
 
-A table showing every [interactive operation](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
+A table showing every [interactive operation](service-premium-interactive-background-operations.md) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
 
 * **Artifact** - The name of the Power BI item, its type, and its workspace details.
@@ -423,6 +427,8 @@ Use these visuals to review CPU consumption, operation duration and number of us
 * The app only supports monitoring datasets that use [import mode](../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
 
 * The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
+
+* [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
 
 ## Next steps
 

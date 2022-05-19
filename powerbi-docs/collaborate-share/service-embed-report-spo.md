@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/29/2021
+ms.date: 05/05/2022
 ---
 
 # Embed a report web part in SharePoint Online
@@ -22,12 +22,12 @@ When using the **Embed in SharePoint Online** option, the embedded reports respe
 
 For **Embed in SharePoint Online** reports to work, the following is required:
 
-* A Power BI Pro or Premium Per User (PPU) license or a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
+* Users need a Power BI Pro or Premium Per User (PPU) license, unless the report is hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md). In that case, users only need a free Power BI license to view reports embedded in Sharepoint Online. 
 
-> [!Note]
-> For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
+    > [!Note]
+    > For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Embed your report
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
@@ -106,10 +106,10 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you didn't sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI does not yet support multi-factor authentication with Azure Active Directory 2.0 - users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't yet support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 
@@ -124,9 +124,9 @@ Below are the settings you can adjust for the Power BI web part for SharePoint O
 | Show Nav Pane |Shows or hides the page nav pane. |
 | Show Filter Pane |Shows or hides the filter pane. |
 
-## Reports that do not load
+## Reports that don't load
 
-If your report does not load within the Power BI web part, you may see the following message:
+If your report doesn't load within the Power BI web part, you may see the following message:
 
 ![This content isn't available message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
@@ -143,7 +143,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
 ## Known issues and limitations
 
-* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
+* Error: "An error occurred, try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
   If you receive this error, try one of the troubleshooting steps below.
   

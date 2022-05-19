@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/08/2022
+ms.date: 04/28/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -141,7 +141,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. 
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. Power BI administrators can view logs and turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
@@ -171,9 +171,13 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
 
 
-# [Workspace admin](#tab/admin)
+# [Administrator](#tab/admin)
 
+## Workspace administrators
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+
+> [!NOTE]
+> Subscriptions created for reports and dashboards in an app or those hosted in your **My workspace** can only be managed by the user who created the subscriptions. 
 
 To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
@@ -188,6 +192,8 @@ If, for example, the owner of a subscription is on vacation and a new recipient 
 Admins can also take over ownership of subscriptions in workspaces they manage. This is essential when the original owner leaves a team or an organization. When the admin completes the take over, the original owner receives an email and will no longer see this subscription in their list of subscriptions.
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
+
+## Power BI administrators
 
 ### Subscription controls and tracking for administrators 
 
@@ -232,6 +238,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Apps** 
 
 - For [Power BI apps](end-user-apps.md) you have installed, you can only create subscriptions for others if you are the owner of the app. 
+- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). 
 
 **Unsupported features**    
 Email subscriptions do not support:
