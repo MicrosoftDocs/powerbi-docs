@@ -166,7 +166,7 @@ conceptualContent:
           text: Understand datamarts (preview)
         - url: transform-model/datamarts/datamarts-get-started.md
           itemType: tutorial
-          text: Get started with datamarts
+          text: Get started with datamarts (preview)
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
