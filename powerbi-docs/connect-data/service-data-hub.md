@@ -32,6 +32,42 @@ This article explains what you see on the data hub and describes how to use it.
 * Datasets that you have [read-only permission](#read-only-permission-for-datasets) for. With read-only permission you have limited access to dataset info and capabilities. You can [request build permission](#read-only-permission-for-datasets) for more complete access to the dataset. 
 * Datasets that have been made [discoverable](../collaborate-share/service-discovery.md) for you. Discoverable datasets appear grayed out. While you can find them, you need to [request access](#discoverable-datasets) in order to be able to access dataset info and capabilities.
 
+### Read-only permission for datasets
+
+You get read-only permission on a dataset when someone shares a report or dataset with you but doesn’t grant you build permission on the dataset.
+
+With read-only access, you can view some information about the dataset on the data hub and on the dataset's details page, as well as perform a limited number of actions on the dataset, but you can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, you must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
+
+To request build permission on a dataset, do one of the following:
+
+* From the data hub: Find the dataset in the data items list, hover over it with the mouse, and click the **Request access** icon that appears
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
+
+* From the dataset's details page, click the **Request access** button at the top right corner of the the page.
+
+    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+
+### Users with free licenses
+
+Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most data hub capabilities will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
+
+For datasets in other workspaces, free users can see all the datasets that have been shared with them and that they have sufficient permissions to access, but they won’t be able to use most of the dataset hub’s capabilities on those datasets unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
+
+See the [free users feature list](../consumer/end-user-features.md#feature-list) for a detailed list of the actions free users can perform on datasets in the datasets hub and on the dataset's details page.
+
+To be able to perform all available dataset actions, a free user needs an upgraded license, in addition to any necessary access permissions. When a free user tries to perform an action that is not available under the terms of the free user license, a pop-up message gives them the opportunity to upgrade their license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
+
+Free users cannot use datamarts on the data hub.
+
+### Discoverable datasets
+
+Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's details page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
+
+To request access, on the data hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
+
+:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
+
 # [Datamarts](#tab/datamarts)
 
 * Datamarts that you have at least [build permission](service-datasets-build-permissions.md) for. This means datamarts that have been shared with you or that are located in workspaces where you have an Admin, Member, or Contributor role.
@@ -97,42 +133,6 @@ The columns of the list are described below. Click on a column header to sort by
 To create a new report based on a data item , or to pull the data into Excel with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), select **More options (...)**, either at the bottom right corner of a recommended tile or on a data item's line in the list of data items. Other actions may be appear on the drop-down menu, depending on the permissions you have on the item.
 
 When you create a new report based on a data item, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the data item if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the data item resides in a Premium-capacity workspace, the new report will be saved in your *My workspace*.
-
-## Read-only permission for datasets
-
-You get read-only permission on a dataset when someone shares a report or dataset with you but doesn’t grant you build permission on the dataset.
-
-With read-only access, you can view some information about the dataset on the data hub and on the dataset's details page, as well as perform a limited number of actions on the dataset, but you can’t build new content based on the dataset. To be able to create content based on the dataset, or to perform other actions, you must have at least [build permissions](service-datasets-build-permissions.md) on the dataset.
-
-To request build permission on a dataset, do one of the following:
-
-* From the data hub: Find the dataset in the data items list, hover over it with the mouse, and click the **Request access** icon that appears
-
-    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
-
-* From the dataset's details page, click the **Request access** button at the top right corner of the the page.
-
-    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
-
-## Users with free licenses
-
-Users with free licenses are known as free users. Free users can see all the datasets in their "My workspace", and most data hub capabilities will be available to them on those datasets, with the exception of **Share**, **Save a copy**, **Manage permissions**, and **Create from template**.
-
-For datasets in other workspaces, free users can see all the datasets that have been shared with them and that they have sufficient permissions to access, but they won’t be able to use most of the dataset hub’s capabilities on those datasets unless the dataset they're working on is hosted in a Premium capacity. In that case more capabilities will be available.
-
-See the [free users feature list](../consumer/end-user-features.md#feature-list) for a detailed list of the actions free users can perform on datasets in the datasets hub and on the dataset's details page.
-
-To be able to perform all available dataset actions, a free user needs an upgraded license, in addition to any necessary access permissions. When a free user tries to perform an action that is not available under the terms of the free user license, a pop-up message gives them the opportunity to upgrade their license. If a Power BI administrator has approved automatic upgrade, the upgrade happens automatically.
-
-Free users cannot use datamarts on the data hub.
-
-## Discoverable datasets
-
-Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's details page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
-
-To request access, on the data hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
-
-:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
 
 ## View data item details and explore related reports
 
