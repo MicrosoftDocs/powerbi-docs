@@ -166,7 +166,7 @@ To access auto-generated datasets, go to the Premium Gen 2 workspace and find th
 
 To load the dataset, click the name of the dataset. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a dataset.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a dataset." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
 
 
 ## Next steps

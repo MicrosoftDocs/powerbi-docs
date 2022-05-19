@@ -28,22 +28,22 @@ There are two ways to get to the Visual query editor:
 
 In the **Data grid** view, create a new query using the **+ New Query** button on the ribbon, as shown in the following image.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-01.png" alt-text="Screen shot of the new query button on the data grid ribbon.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-01.png" alt-text="Screenshot of the new query button on the data grid ribbon.":::
 
 Alternatively you can use the **Design view** icon found along the bottom of the Datamart editor window, shown in the following image. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-02.png" alt-text="Screen shot of the design view icon in the datamart editor.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-02.png" alt-text="Screenshot of the design view icon in the datamart editor.":::
 
 To create a query, drag and drop tables from the Object explorer on the left on to the canvas. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03.png" alt-text="Screen shot of dragging a table onto the canvas of the datamart editor.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-03.png" alt-text="Screenshot of dragging a table onto the canvas of the datamart editor.":::
 
 Once you drag one or more tables onto the canvas, you can use the visual experience to design your queries. The datamart editor uses the similar Power Query diagram view experience to enable you to easily query and analyze your data. Learn more about [Power Query diagram view](/power-query/diagram-view).
 
 
 The following image shows a sample query created using the no-code Visual Query editor to retrieve the *Top customers by Orders*.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04.png" alt-text="Screen shot of sample query results in the datamart editor.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-04.png" alt-text="Screenshot of sample query results in the datamart editor.":::
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
@@ -55,11 +55,11 @@ There are a few things to keep in mind about the Visual Query editor:
 
 The **SQL Query Editor** provides a text editor to write queries using T-SQL. To access the built-in SQL query editor, select the **SQL query editor view** icon located at the bottom of the datamart editor window. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-05.png" alt-text="Screen shot of the S Q L query editor view icon.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-05.png" alt-text="Screenshot of the S Q L query editor view icon.":::
 
 You can write your SQL query in the query editor window, which includes intellisense support. Once complete, select the **Run** button to execute the query. Query results appear in the results section. You can open the results in Excel for further analysis by selecting the **Open in Excel** button.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screen shot of the S Q L query editor query results.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
 
 
 There are a few things to keep in mind about the Visual Query editor:
@@ -69,7 +69,7 @@ There are a few things to keep in mind about the Visual Query editor:
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign-in process for Power BI.
 
 ### When to Use In-Built Querying vs External SQL Tooling
 
@@ -90,41 +90,41 @@ Use ADS for:
 * Mostly editing or executing queries
 * Quick charting and visualizing set results
 
-### Get the T-SQL Connection String
+### Get the T-SQL connection string
 
 For developers and analysts with SQL experience, using SQL Server Management Studio or Azure Data Studio as an extension to Power BI datamarts can provide a more thorough querying environment.
 
 To connect to a datamart’s SQL endpoint with client tooling, navigate to the dataset settings page. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07.png" alt-text="Screen shot of the server settings connection string.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-07.png" alt-text="Screenshot of the server settings connection string.":::
 
 
 
-### Get Started with SSMS
+### Get started with SSMS
 
 To use SQL Server Management Studio (SSMS), you must be using SSMS Version 18.0 or above. When you open SQL Server Management Studio, the **Connect to Server** window appears. You can open it manually by selecting **Object Explorer > Connect > Database Engine**.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screen shot of the database engine option in S S M S.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screenshot of the database engine option in S S M S.":::
 
 Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Azure Active Directory - MFA authentication is supported.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-09.png" alt-text="Screen shot of the S Q L server connect to server window.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-09.png" alt-text="Screenshot of the S Q L server connect to server window.":::
 
 When the connection has become established, the object explorer displays the connected SQL DB from your datamarts and its respective tables and views, all of which are ready to be queried.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-10.png" alt-text="Screen shot of the object explorer showing datamart tables and views.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-10.png" alt-text="Screenshot of the object explorer showing datamart tables and views.":::
 
 To easily preview the data within a table, right-click on a table and select **Select Top 1000 Rows** from the context menu that appears. An autogenerated query returns a collection of results displaying the top 1,000 rows based on the primary key of the table. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-11.png" alt-text="Screen shot of the context menu in object explorer.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-11.png" alt-text="Screenshot of the context menu in object explorer.":::
 
 The following image shows the results of such a query.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-12.png" alt-text="Screen shot of the context menu query results.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-12.png" alt-text="Screenshot of the context menu query results.":::
 
 To see the columns within a table, expand the table within **Object explorer**. 
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-13.png" alt-text="Screen shot of the object explorer information.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-13.png" alt-text="Screenshot of the object explorer information.":::
 
 When you connect to datamart using SSMS or other client tools, you can see views created in Model schema of the datamart. The default schema configuration on a datamart is set to Model.
 
