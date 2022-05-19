@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 10/18/2021
+  ms.date: 04/27/2022
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
@@ -180,7 +180,7 @@ sections:
       - question: |
           Can I run custom code in my report?
         answer: |
-          Yes, we support the ability to run code in your reports as you can in SSRS.
+          Yes, we support the ability to run code in your reports using code blocks or [Azure Functions](https://github.com/chmitch/ssrs-assembly-alternatives). Referencing custom code DLL files within a report is not supported.
 
       - question: |
           Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
