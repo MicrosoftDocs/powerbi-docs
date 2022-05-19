@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 05/16/2022
+ms.date: 05/19/2022
 
 ---
 
@@ -185,7 +185,7 @@ Follow the instructions in the [embed content for your customers](embed-sample-f
   * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
 * To use a **Single Sign-on (SSO)** enabled data source:
-  SSO-enabled data sources are supported if they are either directly connected to the paginated report, or connected to a Power BI dataset which is the data source of the paginated report. When embedding a paginated report with SSO-enabled data sources, the identity blob for the data source must be provided in the `DatasourceIdentities` when you generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token).
+  SSO-enabled data sources are supported if they are either directly connected to the paginated report, or connected to a Power BI dataset which is the data source of the paginated report. When embedding a paginated report with SSO-enabled data sources, the identity blob for the data source must be provided in the [`DatasourceIdentities`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) when you generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token).
 
 ### [Embed for your organization](#tab/organization)
 
