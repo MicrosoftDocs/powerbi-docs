@@ -56,7 +56,7 @@ Scalability benefits associated with Premium Gen2 are described [later in this a
 
 ## Feature comparison
 
-AAS provides the Analysis Services database engine for hosting data models, which is a core component of a Microsoft enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Premium Gen2. The table focuses on, but isn't limited to, Power BI dataset-related capabilities.
+AAS provides the Analysis Services database engine for hosting data models, which is a core component of a Microsoft enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Premium Gen2. The table focuses on - but isn't limited to - Power BI dataset-related capabilities.
 
 | **Feature** | **AAS** | **Premium Gen2** |
 |:-|:-:|:-:|
@@ -185,7 +185,7 @@ Thanks to the distributed nature of the Premium Gen2 architecture, more datasets
 
 In Premium Gen2, CPU consumption during refresh is spread across 24-hour periods. Premium Gen2 [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium Gen2 customers should decide on the optimal SKU size for their overall CPU consumption requirements.
 
-An additional advantage of Premium Gen2 is that it's able to dynamically balance the datasets depending on the load of the system. This automatic behavior ensures busy/active datasets get the necessary memory and CPU resources, while more idle datasets can be evicted or migrated to other nodes. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
+Another advantage of Premium Gen2 is that it's able to dynamically balance the datasets depending on the load of the system. This automatic behavior ensures busy/active datasets get the necessary memory and CPU resources, while more idle datasets can be evicted or migrated to other nodes. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
 
 Lastly, Premium Gen2 is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
 
