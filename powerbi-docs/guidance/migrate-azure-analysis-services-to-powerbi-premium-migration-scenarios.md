@@ -172,7 +172,7 @@ Here are the proposed Power BI licenses:
 
 ## Migration scenario 5
 
-In this first migration scenario, the customer uses Power BI Premium for the frontend and AAS for the backend. There are 25 developers who are each responsible for the development and test environments, and for deployment to production.
+In this migration scenario, the customer uses Power BI Premium for the frontend and AAS for the backend. There are 25 developers who are each responsible for the development and test environments, and for deployment to production.
 
 Here are their current AAS licenses:
 
