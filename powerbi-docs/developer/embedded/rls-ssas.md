@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 05/19/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
@@ -30,7 +30,7 @@ To embed a report that uses RLS with an SSAS model, you need to do the following
 
 ## Prerequisite
 
-Before you start, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set up dynamic security, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+This information in this article applies to all live connection AS models whether or not they implement RLS. To implement RLS, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set up dynamic security, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
 
 ## Set up the environment
 
@@ -81,6 +81,7 @@ You can embed your report in your app, and your report will filter data accordin
 ## Considerations and limitations
 
 * On-premises row-level security with Power BI is only available with live connection.
+* All live connections to AS engines need an effective identity even if there is no RLS implemented.
 * The user or service principal generating the embed token also needs one of the following permissions:
   * Gateway admin permissions
   * [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of `ReadOverrideEffectiveIdentity`.
