@@ -1,6 +1,6 @@
----
-title: Microsoft Information Protection sensitivity labels in Power BI
-description: Learn how Microsoft Information Protection sensitivity labels work in Power BI
+﻿---
+title: Microsoft Purview Information Protection sensitivity labels in Power BI
+description: Learn how Microsoft Purview Information Protection sensitivity labels work in Power BI
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
 
-This article describes the functionality of Microsoft Information Protection sensitivity labels in Power BI.
+This article describes the functionality of Microsoft Purview Information Protection sensitivity labels in Power BI.
 
 For information about enabling sensitivity labels on your tenant, including licensing requirements and prerequisites, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
@@ -21,11 +21,11 @@ For information about how to apply sensitivity labels on your Power BI content a
 
 #### Give us your feedback
 
-The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
 
 ## Introduction
 
-Microsoft Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
+Microsoft Purview Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
 
 In the Power BI service, sensitivity labels can be applied to datasets, reports, dashboards, and dataflows. When labeled data leaves Power BI, either via export to Excel, PowerPoint, PDF, or .pbix files, or via other supported export scenarios such as Analyze in Excel or live connection PivotTables in Excel, Power BI automatically applies the label to the exported file and protects it according to the label's file encryption settings. This way your sensitive data can remain protected, even when it leaves Power BI.
 
@@ -37,7 +37,7 @@ A [protection metrics report](service-security-data-protection-metrics-report.md
 
 ## Important considerations
 
-In the Power BI service, sensitivity labeling **does not** affect access to content. Access to content in the service is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) aren’t applied. They’re applied only to data that leaves the service via a supported export path, such as export to Excel, PowerPoint, or PDF, and download to .pbix.
+In the Power BI service, sensitivity labeling **does not** affect access to content. Access to content in the service is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/)) aren’t applied. They’re applied only to data that leaves the service via a supported export path, such as export to Excel, PowerPoint, or PDF, and download to .pbix.
 
 In Power BI Desktop, sensitivity labels with encryption settings **do** affect access to content. If a user doesn’t have sufficient [permissions](#power-bi-desktop) according to the encryption settings of the sensitivity label on the .pbix file, they will not be able to open the file. In addition, in Desktop, when you save your work, any sensitivity label you've added and its associated encryption settings will be applied to the saved .pbix file.
 
@@ -191,7 +191,7 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 
 ## Label change enforcement
 
-Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
+Power BI restricts permission to change or remove Microsoft Purview Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
 
 ## Supported clouds
 
@@ -208,7 +208,7 @@ See [Licensing and requirements](service-security-enable-data-sensitivity-labels
 
 ## Sensitivity label creation and management
 
-Sensitivity labels are created and managed in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+Sensitivity labels are created and managed in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/).
 
 To access sensitivity labels in either of these centers, navigate to **Classification > Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Office 365 services.
 
@@ -233,7 +233,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you will not be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label.
 
-* Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+* Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/).
 
 * Getting data from encrypted Excel (.xlsx) files isn’t supported. This includes "Get data" and refresh scenarios.
 
@@ -255,7 +255,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
-* If the label applied to a .pbix file hasn't been published to the user in the Microsoft 365 compliance center, the user won’t be able to save the file in Desktop.
+* If the label applied to a .pbix file hasn't been published to the user in the Microsoft Purview Compliance Portal, the user won’t be able to save the file in Desktop.
 
 * Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 

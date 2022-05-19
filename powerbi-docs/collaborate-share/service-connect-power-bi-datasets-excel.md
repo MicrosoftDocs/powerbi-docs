@@ -1,4 +1,4 @@
----
+﻿---
 title: Connect Excel to Power BI datasets 
 description: Power BI makes it easy for you to discover and connect to centralized and secure data from wherever you work, including Microsoft Excel and Microsoft Teams.
 author: maggiesMSFT
@@ -22,7 +22,7 @@ You can discover and connect to centralized, secure data in Power BI from wherev
 
 ## Access Power BI datasets in Excel 
 
-When you access Power BI datasets in Excel, the datasets inherit properties such as endorsement labels and Microsoft Information Protection labels, so the data stays secure. Datasets tagged with the labels Certified or Promoted are likely to be of better quality and more authoritative than datasets without a label.
+When you access Power BI datasets in Excel, the datasets inherit properties such as endorsement labels and Microsoft Purview Information Protection labels, so the data stays secure. Datasets tagged with the labels Certified or Promoted are likely to be of better quality and more authoritative than datasets without a label.
 
 You can connect to Power BI datasets in Excel by starting in the Power BI service or in Excel for the web or the Excel desktop app.  
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Sensitivity label change enforcement 
 description: Learn how Power BI controls who can change or remove sensitivity labels on Power BI content.
 author: paulinbar
@@ -13,11 +13,11 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity label change enforcement
 
-Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. 
+Power BI restricts permission to change or remove Microsoft Purview Information Protection sensitivity labels that have file encryption settings to authorized users only. 
 
 Authorized users are:
 * The user who applied the sensitivity label. 
-* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/)):
+* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft Purview Compliance Portal](https://compliance.microsoft.com/)):
     * OWNER
     * EXPORT
     * EDIT and EDITRIGHTSDATA

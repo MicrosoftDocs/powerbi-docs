@@ -38,7 +38,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Data is protected when it's exported out of Power BI
 
-Report owners can classify and label reports using Microsoft Information Protection [sensitivity labels](../enterprise/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
+Report owners can classify and label reports using Microsoft Purview Information Protection [sensitivity labels](../enterprise/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when exporting report data to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
 
 Security and Power BI administrators can use [Microsoft Defender for Cloud Apps](../enterprise/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Defender for Cloud Apps to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 

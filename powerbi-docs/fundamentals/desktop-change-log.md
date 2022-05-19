@@ -191,7 +191,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-- Improvements in Microsoft Information Protection SDK detection of the machine stopping to respond and stop throwing "Unknown hard error" dialog.
+- Improvements in Microsoft Purview Information Protection SDK detection of the machine stopping to respond and stop throwing "Unknown hard error" dialog.
 - Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
 
 ## March 2021 QFE 1
@@ -200,14 +200,14 @@ Bug fixes/improvements:
 
 Bug fixes:
 
-- Fix where the Microsoft Information Protection SDK stops responding during evaluation shutdown.
+- Fix where the Microsoft Purview Information Protection SDK stops responding during evaluation shutdown.
 - Amazon Redshift driver update to fix the issue with non-nullable primary key columns being treated as empty strings after merge queries.
 - Fix for slicers to contain unique (non-duplicated) values when using aggregations.
 - Fix for formula bar: prevent UI interactions when empty measures, calculated columns, calculated tables are deleted from the model.
 - Fix for PBI.FormatAnnotationStats telemetry event.
 - Fix for customized fields display folders: now the folders won't disappear after data refresh or **Choose Columns** changes in Power Query.
 - ODBC drivers update to newer versions.
-- Fix for Microsoft Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
+- Fix for Microsoft Purview Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
 
 ## February 2021 QFE 1
 
