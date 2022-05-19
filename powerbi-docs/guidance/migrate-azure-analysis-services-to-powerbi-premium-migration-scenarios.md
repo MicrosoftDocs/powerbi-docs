@@ -1,5 +1,5 @@
 ---
-title: "Migrate from Azure Analysis Services to Power BI Premium: Determine licensing"
+title: "Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios"
 description: Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services.
 author: peter-myers
 ms.author: v-petermyers
@@ -11,24 +11,28 @@ ms.date: 05/23/2022
 ms.custom: intro-migration
 ---
 
-# Migrate from Azure Analysis Services to Power BI Premium: Determine licensing
+# Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios
 
-This article compares five scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
+This article compares five hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
 
 > [!NOTE]
-> Based on pricing as at May 2022 (West US region), the Power BI Premium proposals of all migration scenarios result in cost savings. While this article doesn't include pricing details, you can find current pricing here:
+> An attempt has been made to ensure these scenarios are representative of real customer migrations, however individual customer scenarios will of course differ. Also, this article doesn't include pricing details. You can find current pricing here:
 >
 > - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 > - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 
 When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](migrate-azure-analysis-services-to-powerbi-premium.md#feature-comparison) that are only available to Power BI data models.
 
-Also, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
+Also, assuming you already use Power BI in your organization, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
 
 - Region requirements.
 - The largest AAS data model size in each region.
 - The number of users in each region.
 - The number of users required to develop and manage content.
+- CPU consumption across AAS and Power BI Premium.
+
+> [!IMPORTANT]
+> CPU consumption across AAS and Power BI Premium may vary significantly due to numerous factors. Factors can include the use of other workloads on the same capacities, refresh patterns, and query patterns. We recommended that you perform in-depth analysis to quantify comparative CPU consumption across AAS and Power BI Premium for migrated models.
 
 ## Migration scenario 1
 
@@ -120,7 +124,7 @@ Here are their current Power BI licenses:
 | **Environment** | **Power BI license** | **Users** |
 |:-|:-|-:|
 | Production | Pro (as part of E5) | 4,000 |
-| Production/test/development | Pro (as part of E5) | 20 |
+| Production/test/development | Pro (as part of E5) | 15 |
 
 Once migrated to Power BI Premium:
 
