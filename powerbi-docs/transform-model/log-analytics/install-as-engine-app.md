@@ -32,7 +32,7 @@ To install the AS Engine app, follow these steps:
 
 1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
-    ![Install AS Engine - Connect your own data](media/install-as-engine-app/InstallASEngine.png)
+    :::image type="content" source="media/install-as-engine-app/InstallASEngine.png" alt-text="Install AS Engine - Connect your own data":::
 
 1. In the first window, fill in the following fields:
 
