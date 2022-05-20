@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity label change enforcement
 
-Power BI restricts permission to change or remove Microsoft Purview Information Protection sensitivity labels that have file encryption settings to authorized users only. 
+Power BI restricts permission to change or remove sensitivity labels from Microsoft Purview Information Protection that have file encryption settings to authorized users only. 
 
 Authorized users are:
 * The user who applied the sensitivity label. 

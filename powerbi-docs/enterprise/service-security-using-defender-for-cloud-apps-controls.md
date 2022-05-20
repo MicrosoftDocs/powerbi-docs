@@ -54,7 +54,7 @@ You can define anomaly Power BI detection policies that can be independently sco
 
 Defender for Cloud Apps also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-defender-for-cloud-apps-detections-for-power-bi).
 
-### Use Microsoft Purview Information Protection sensitivity labels (recommended)
+### Use sensitivity labels from Microsoft Purview Information Protection (recommended)
 
 Sensitivity labels enable you to classify and help protect sensitive content, so that people in your organization can collaborate with partners outside your organization, yet still be careful and aware of sensitive content and data.
 

@@ -1,6 +1,6 @@
 ﻿---
-title: Microsoft Purview Information Protection sensitivity labels in Power BI
-description: Learn how Microsoft Purview Information Protection sensitivity labels work in Power BI
+title: sensitivity labels from Microsoft Purview Information Protection in Power BI
+description: Learn how sensitivity labels from Microsoft Purview Information Protection work in Power BI
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
 
-This article describes the functionality of Microsoft Purview Information Protection sensitivity labels in Power BI.
+This article describes the functionality of sensitivity labels from Microsoft Purview Information Protection in Power BI.
 
 For information about enabling sensitivity labels on your tenant, including licensing requirements and prerequisites, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
@@ -21,11 +21,11 @@ For information about how to apply sensitivity labels on your Power BI content a
 
 #### Give us your feedback
 
-The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with sensitivity labels from Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
 ## Introduction
 
-Microsoft Purview Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
+sensitivity labels from Microsoft Purview Information Protection provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
 
 In the Power BI service, sensitivity labels can be applied to datasets, reports, dashboards, and dataflows. When labeled data leaves Power BI, either via export to Excel, PowerPoint, PDF, or .pbix files, or via other supported export scenarios such as Analyze in Excel or live connection PivotTables in Excel, Power BI automatically applies the label to the exported file and protects it according to the label's file encryption settings. This way your sensitive data can remain protected, even when it leaves Power BI.
 
@@ -191,7 +191,7 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 
 ## Label change enforcement
 
-Power BI restricts permission to change or remove Microsoft Purview Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
+Power BI restricts permission to change or remove sensitivity labels from Microsoft Purview Information Protection that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
 
 ## Supported clouds
 
