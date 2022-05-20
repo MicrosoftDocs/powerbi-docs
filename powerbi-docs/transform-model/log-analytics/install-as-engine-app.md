@@ -1,13 +1,13 @@
 ---
 title: Installing the Log Analytics for Power BI Datasets Template App (preview)
 description: Installation guide for the Template App that visualizes Dataset activity from Analysis Services
-author: Bhavik-MSFT
-ms.author: bhavikmaneck
-ms.reviewer: ''
+author: bstar92
+ms.author: v-bblaga
+ms.reviewer: bstar92
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/10/2021
+ms.date: 05/20/2022
 LocalizationGroup: Transform and shape data
 ---
 # Installing the Log Analytics for Power BI Datasets Template App (preview)
@@ -16,7 +16,6 @@ The Power BI Log Analytics for Analysis Services Engine app is designed to analy
 
 >[!NOTE]
 >The app is updated regularly with new features and functionalities. If you see there's a pending update in the notifications center, we recommend that you update the app.
-
 ## Prerequisites
 
 Before you install the AS Engine app, review these requirements:
@@ -64,6 +63,15 @@ To install the AS Engine app, follow these steps:
 
 
 6. Select **Sign in and continue**.
+
+## Considerations and limitations
+
+1. Template app doesn't work when private links are enabled on the Log Analytics workspace.
+    * Refresh and ingestion of data in the template app is currently not supported in Power BI when private links are enabled for the Azure Log Analytics workspace and  Network Isolation settings are switched off. To allow the template app to function, be sure that the settings shown below are switched **on**.
+
+        :::image type="content" source="media/install-as-engine-app/NetworkIsolationLA.png" alt-text="Network Isolation Log Analytics Workspace":::
+
+        :::image type="content" source="media/install-as-engine-app/VirtualNetworkAccessConfiguration.png" alt-text="Virtual Network Access Configuration":::
 
 ## Next steps
 
