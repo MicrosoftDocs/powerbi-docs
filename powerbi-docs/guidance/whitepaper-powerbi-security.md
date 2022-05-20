@@ -361,7 +361,7 @@ See [Automate Premium workspace and dataset tasks with service principals](../en
 
 ### Microsoft 365 sensitivity labels
 
-Power BI has a deep integration with Microsoft Purview Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
+Power BI has a deep integration with Microsoft Purview Information Protection sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
 When sensitivity labels are enabled in Power BI:
 
