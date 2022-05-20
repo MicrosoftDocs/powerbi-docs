@@ -32,7 +32,7 @@ To install the AS Engine app, follow these steps:
 
 1. Open the app and when you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
-    :::image type="content" source="media/install-as-engine-app/InstallASEngine.png" alt-text="Install AS Engine - Connect your own data":::
+    :::image type="content" source="media/install-as-engine-app/install-as-engine.png" alt-text="Install AS Engine - Connect your own data":::
 
 1. In the first window, fill in the following fields:
 
@@ -69,9 +69,9 @@ To install the AS Engine app, follow these steps:
 1. Template app doesn't work when private links are enabled on the Log Analytics workspace.
     * Refresh and ingestion of data in the template app is currently not supported in Power BI when private links are enabled for the Azure Log Analytics workspace and  Network Isolation settings are switched off. To allow the template app to function, be sure that the settings shown below are switched **on**.
 
-        :::image type="content" source="media/install-as-engine-app/NetworkIsolationLA.png" alt-text="Network Isolation Log Analytics Workspace":::
+        :::image type="content" source="media/install-as-engine-app/network-isolation-log-analytics.png" alt-text="Network Isolation Log Analytics Workspace":::
 
-        :::image type="content" source="media/install-as-engine-app/VirtualNetworkAccessConfiguration.png" alt-text="Virtual Network Access Configuration":::
+        :::image type="content" source="media/install-as-engine-app/virtual-network-access-configuration.png" alt-text="Virtual Network Access Configuration":::
 
 ## Next steps
 
