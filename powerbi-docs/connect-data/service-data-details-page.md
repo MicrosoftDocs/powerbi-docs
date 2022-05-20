@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
 
-[ ![Screenshot of datasets hub explore related reports page.](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png)](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of datasets hub explore related reports page.](media/service-data-details-page/datasets-hub-details-page-inline-and-expanded.png)](media/service-data-datails-page/datasets-hub-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
