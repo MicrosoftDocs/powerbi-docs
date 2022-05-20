@@ -17,7 +17,7 @@ Power BI restricts permission to change or remove Microsoft Purview Information 
 
 Authorized users are:
 * The user who applied the sensitivity label. 
-* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft Purview Compliance Portal](https://compliance.microsoft.com/)):
+* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft Purview compliance portal](https://compliance.microsoft.com/)):
     * OWNER
     * EXPORT
     * EDIT and EDITRIGHTSDATA

@@ -29,7 +29,7 @@ When opening a Power BI Desktop (.pbix) file, you'll receive the error message:
 
 ## Solutions and workarounds
 
-The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the Microsoft Purview Compliance Portal.
+The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the Microsoft Purview compliance portal.
 
 ## Next steps
 

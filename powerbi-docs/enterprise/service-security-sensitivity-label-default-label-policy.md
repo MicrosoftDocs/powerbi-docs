@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 
 To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content.
 
-This article describes how to enable a default label policy, both in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/informationprotection) and by using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
+This article describes how to enable a default label policy, both in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection) and by using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
 
 >[!NOTE]
 > The default label policy settings for Power BI are independent of the default label policy settings for files and email.
@@ -27,7 +27,7 @@ This article describes how to enable a default label policy, both in the [Micros
 
 ## Enabling a default label policy for Power BI
 
-A Microsoft 365 administrator can enable a default label policy for Power BI by selecting the desired label in the **Apply this label by default to Power BI** drop-down menu in the policy settings for Power BI in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+A Microsoft 365 administrator can enable a default label policy for Power BI by selecting the desired label in the **Apply this label by default to Power BI** drop-down menu in the policy settings for Power BI in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
 :::image type="" source="media/service-security-sensitivity-label-default-label-policy/default-labels-config-in-compliance-center.png" alt-text="Screenshot of default label setting in the Microsoft compliance center.":::
 
@@ -46,7 +46,7 @@ Where:
 **Requirements for using PowerShell**
  
 * You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
-* A connection to the Microsoft Purview Compliance Portal is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
+* A connection to the Microsoft Purview compliance portal is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
 
 ### Documentation
 
