@@ -19,11 +19,12 @@ The data details page provides detail about the data item, shows you reports tha
 
 # [Datasets](#tab/datasets)
 
-To see more information about a data item, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+The dataset details page
+* Shows you information about the dataset
+* Lists the reports and scorecards that are built on top of the dataset
+* Provides entry points for creating new reports built on the dataset, pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), and creating formatted tables.
 
-The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
-
-[ ![Screenshot of datasets hub explore related reports page.](media/service-data-details-page/datasets-hub-details-page-inline-and-expanded.png)](media/service-data-datails-page/datasets-hub-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of dataset details page.](media/service-data-details-page/datasets-details-page-inline-and-expanded.png)](media/service-data-datails-page/datasets-hub-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
