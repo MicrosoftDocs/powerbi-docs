@@ -1,6 +1,6 @@
 ---
-title: Using DirectQuery for datasets and Azure Analysis Services (preview)
-description: Understand using DirectQuery with Power BI datasets and Azure Analysis Services
+title: Using DirectQuery for datasets and Analysis Services (preview)
+description: Understand using DirectQuery with Power BI datasets and Analysis Services
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,10 +10,9 @@ ms.topic: conceptual
 ms.date: 05/02/2022
 LocalizationGroup: Connect to data
 ---
-# Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
+# Using DirectQuery for Power BI datasets and Analysis Services (preview)
 
-
-With **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**, you can use DirectQuery to connect to AAS or Power BI datasets and if you want, combine it with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this feature especially useful.
+With DirectQuery for Power BI datasets and Analysis Services, you can use DirectQuery to connect to Power BI datasets, Azure Analysis Services (AAS), and SQL Server 2022 (CTP) Analysis Services. And you can even combine with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this feature especially useful.
 
 ## Enable the preview feature
 
