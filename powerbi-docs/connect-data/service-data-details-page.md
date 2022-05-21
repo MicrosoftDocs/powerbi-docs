@@ -113,7 +113,12 @@ The dataset details section shows:
 
 
 
-The See what already exists section shows you reports that are built on top of the datamart's auto-generated dataset. Reports build on top of other datasets created from the datamart **aren't** shown in this section. This section also shows you usage metrics for the related items.
+The **See what already exists section** shows you reports that are built on top of the datamart's auto-generated dataset.
+
+>[!NOTE]
+> Reports build on top of other datasets created from the datamart **aren't** shown in this section. 
+
+This section also shows you usage metrics for the related items.
 
 You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
@@ -127,7 +132,9 @@ The columns in the list of related reports are:
 
 ### Visualize this data
 
-In the Create a report section, click the **Create** button. If there is a report template for the dataset, a drop-down menu will offer two options:
+:::image type="content" source="media/service-data-details-page/datamart-details-page-visualize-data-section.png" alt-text="Screenshot of datamart visualize this data section on data details page.":::
+
+In the **Visualize this data** section, click the **Create from scratch** button. If there is a report template for the dataset, a drop-down menu will offer two options:
 * **From template**: Creates a copy of the template in *My workspace*.
 * **From scratch**: Opens the report editing canvas to a new report built on the dataset. When you save your new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on the workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
 
@@ -139,6 +146,8 @@ If there are no report templates, clicking **Create** will open the report editi
 ### Share this data
 
 You can share the datamart with other users in your organization. Sharing grants [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) that allows the people you are sharing with to creat new content on top of the datamart.
+
+:::image type="content" source="media/service-data-details-page/datamart-details-page-share-datamart-section.png" alt-text="Screenshot of datamart share this data section on data details page.":::
 
 The **Share datamart** button opens the **Share datamart** dialog.
 
