@@ -132,7 +132,9 @@ If there are no report templates, clicking **Create** will open the report editi
 
 ### Share this data
 
-In the Analyze in Excel section, select **Analyze** to pull the dataset into Excel via Analyze in Excel.
+You can share the datamart with other users in your organization. Sharing grants [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) that allows the people you are sharing with to creat new content on top of the datamart.
+
+The **Share datamart** button opens the **Share datamart** dialog.
 
 ---
   
