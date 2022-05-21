@@ -87,30 +87,39 @@ The Action bar at the top of the page contains a number of actions that you can 
 
 |Action  |Description  |
 |---------|---------|
-|**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
-|**Refresh**     | Refresh this dataset.        |
-|**Share**     | Share this dataset.        |
-|**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
-|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
-|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
-|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
-|**Show tables**     | Open a side panel showing the dataset's tables.        |
+|**File**     | Manage permissions for this datamart, or go to [datamart settings](../transform-model/datamarts/datamarts-create-reports.md#datamart-settings).       |
+|**Refresh**     | Refresh this datamart, set up scheduled refresh, or view refresh history.        |
+|**Share**     | Share this datamart. Sharing a datamart confers [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) on the datamart.        |
+|**Create a report**     | Create a report based on this datamart.        |
+|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this datamart.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this datamart.        |
+|**Edit**     | Opens the datamart in the Datamart editor.        |
 
+### Datamart details
 
-### Dataset details
+The dataset details section shows:
+* Name of the workspace where the datamart is located.
+* Endorsement status and certifier (if certified).
+* Exact time of last refresh.
+* Sensitivity.
+* SQL connection string.
+* Description. You can create or edit the datamart description from here.
 
-The dataset details section shows the name of the workspace where the dataset is located, the exact time of the last refresh, sensitivity (if set), the dataset description (if any), and certifier name (if certified). You can also open the dataset lineage from here.
+### See what already exists
 
-### Related reports
+The See what already exists section shows you reports that are built on top of the datamart's auto-generated dataset. Reports build on top of other datasets created from the datamart **aren't** shown in this section. This section also shows you usage metrics for the related items.
 
-The Explore related reports section shows you all the reports that are built on the selected dataset. You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
+You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
+* **Type**: Item type, for example, report or scorecard.
 * **Endorsement**: Endorsement status.
-* **Workspace**: The name of the workspace where the report is located.
+* **Workspace**: The name of the workspace where the related item is located.
+* **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
+* **Views**: TShows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
-### Create a report built on the dataset
+### Visualize this data
 
 In the Create a report section, click the **Create** button. If there is a report template for the dataset, a drop-down menu will offer two options:
 * **From template**: Creates a copy of the template in *My workspace*.
@@ -121,7 +130,7 @@ If there are no report templates, clicking **Create** will open the report editi
 >[!NOTE]
 > Only one template will be shown in the Create report drop-down, even if more than one report template exists for this dataset. 
 
-### Pull the dataset into Excel via Analyze in Excel
+### Share this data
 
 In the Analyze in Excel section, select **Analyze** to pull the dataset into Excel via Analyze in Excel.
 
