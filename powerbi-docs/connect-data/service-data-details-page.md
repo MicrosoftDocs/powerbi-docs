@@ -30,27 +30,31 @@ The page header displays the dataset name, endorsement, if any, and dataset owne
 
 ### Action bar
 
-The Action bar at the top of the page contains a number of actions that you can launch.
+The Action bar at the top of the page contains a number of actions that you can launch. The actions available vary from user to user depending on their permissions on the dataset.
 
 |Action  |Description  |
 |---------|---------|
 |**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
-|**Refresh**     | Refresh this dataset.        |
+|**Refresh**     | Refresh this dataset or set a scheduled refresh.        |
 |**Share**     | Share this dataset.        |
-|**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
+|**Create a report**     | Create a report based on this dataset, either auto-generated, from scratch, from a template (if one exists), or as a formatted table.        |
 |**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
-|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset.        |
 |**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
-|**Show tables**     | Open a side panel showing the dataset's tables.        |
-
+|**Show tables**     | Open a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns.       |
 
 ### Dataset details
 
-The dataset details section shows the name of the workspace where the dataset is located, the exact time of the last refresh, sensitivity (if set), the dataset description (if any), and certifier name (if certified). You can also open the dataset lineage from here.
+The dataset details section shows
+* The name of the workspace where the dataset is located.
+* The exact time of the last refresh.
+* Sensitivity (if set).
+* The dataset description (if any). You can create or edit the dataset description from here.
+* Certifier name (if certified).
 
-### Related reports
+### Explore related reports
 
-The Explore related reports section shows you all the reports that are built on the selected dataset. You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
+The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of a report or scorecard by selecting the line the item is on and clicking the **Save a copy** icon that appears.
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
@@ -59,11 +63,11 @@ The columns in the list of related reports are:
 
 ### Create a report built on the dataset
 
-In the Create a report section, click the **Create** button. If there is a report template for the dataset, a drop-down menu will offer two options:
+In the Create a report section, click the **Create** button. Choose the desired option:
+* **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
 * **From scratch**: Opens the report editing canvas to a new report built on the dataset. When you save your new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on the workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
-
-If there are no report templates, clicking **Create** will open the report editing canvas directly.
+* **As formatted table**: Opens the formatted table editing canvas.
 
 >[!NOTE]
 > Only one template will be shown in the Create report drop-down, even if more than one report template exists for this dataset. 
