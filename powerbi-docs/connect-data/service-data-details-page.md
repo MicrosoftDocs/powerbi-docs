@@ -97,6 +97,8 @@ The Action bar at the top of the page contains a number of actions that you can 
 
 ### Datamart details
 
+:::image type="content" source="media/service-data-details-page/datamart-details-page-details-section.png" alt-text="Screenshot of datamart details section on data details page.":::
+
 The dataset details section shows:
 * Name of the workspace where the datamart is located.
 * Endorsement status and certifier (if certified).
@@ -106,6 +108,10 @@ The dataset details section shows:
 * Description. You can create or edit the datamart description from here.
 
 ### See what already exists
+
+:::image type="content" source="media/service-data-details-page/datamart-details-page-related-section.png" alt-text="Screenshot of datamart related section on data details page.":::
+
+
 
 The See what already exists section shows you reports that are built on top of the datamart's auto-generated dataset. Reports build on top of other datasets created from the datamart **aren't** shown in this section. This section also shows you usage metrics for the related items.
 
