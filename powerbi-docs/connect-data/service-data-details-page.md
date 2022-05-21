@@ -117,7 +117,7 @@ The columns in the list of related reports are:
 * **Endorsement**: Endorsement status.
 * **Workspace**: The name of the workspace where the related item is located.
 * **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
-* **Views**: TShows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
+* **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
 ### Visualize this data
 
