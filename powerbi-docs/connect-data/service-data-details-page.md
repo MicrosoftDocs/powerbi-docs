@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
 
-[ ![Screenshot of dataset detailspage.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-datails-page/dataset-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
 
 
@@ -24,7 +24,7 @@ The dataset details page
 * Lists the reports and scorecards that are built on top of the dataset
 * Provides entry points for creating new reports built on the dataset, pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), and creating formatted tables.
 
-[ ![Screenshot of dataset detailspage.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-datails-page/dataset-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of dataset detail spage.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-datails-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
