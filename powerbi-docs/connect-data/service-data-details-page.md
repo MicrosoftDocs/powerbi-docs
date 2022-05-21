@@ -13,10 +13,6 @@ LocalizationGroup: Share your work
 
 The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
 
-[ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
-
-
-
 # [Datasets](#tab/datasets)
 
 The dataset details page
@@ -78,9 +74,16 @@ In the Analyze in Excel section, select **Analyze** to pull the dataset into Exc
 
 # [Datamarts](#tab/datamarts)
 
+The datamart details page
+* Shows you information about the dataset
+* Lists the reports and scorecards that are built on top of the dataset
+* Provides entry points for creating new reports built on the dataset, pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), and creating formatted tables.
+
+[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
+
 ### Action bar
 
-The Action bar at the top of the page contains a number of actions that you can launch.
+The Action bar at the top of the page contains a number of actions that you can launch. The actions available vary from user to user depending on their permissions on the datamart.
 
 |Action  |Description  |
 |---------|---------|
