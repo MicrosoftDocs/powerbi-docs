@@ -77,9 +77,11 @@ The dataset details page
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
-### Action bar
+## Action bar
 
-The Action bar at the top of the page contains a number of actions that you can launch. The actions available vary from user to user depending on their permissions on the dataset.
+The Action bar at the top of the page contains a number of actions that you can launch. The actions available vary from user to user depending on their permissions on the data item.
+
+# [Datasets](#tab/datasets)
 
 |Action  |Description  |
 |---------|---------|
@@ -92,9 +94,38 @@ The Action bar at the top of the page contains a number of actions that you can 
 |**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
 |**Show tables**     | Open a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns.       |
 
-### Dataset details
+# [Datamarts](#tab/datamarts)
 
-The details section shows
+|Action  |Description  |
+|---------|---------|
+|**File**     | Manage permissions for this datamart, or go to [datamart settings](../transform-model/datamarts/datamarts-create-reports.md#datamart-settings).       |
+|**Refresh**     | Refresh this datamart, set up scheduled refresh, or view refresh history.        |
+|**Share**     | Share this datamart. Sharing a datamart confers [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) on the datamart.        |
+|**Create a report**     | Create a report based on this datamart.        |
+|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this datamart.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this datamart.        |
+|**Edit**     | Opens the datamart in the Datamart editor.        |
+
+---
+
+## Data details
+
+# [Datasets](#tab/datasets)
+
+image
+
+The dataset details section shows
+* The name of the workspace where the item is located.
+* Endorsement status and certifier (if certified).
+* The exact time of the last refresh.
+* Sensitivity (if set).
+* Description (if any). You can create or edit the description from here.
+
+# [Datamarts](#tab/datamarts)
+
+image
+
+The datamart details section shows
 * The name of the workspace where the item is located.
 * Endorsement status and certifier (if certified).
 * The exact time of the last refresh.
@@ -102,12 +133,7 @@ The details section shows
 * SQL connection string (Datamarts).
 * Description (if any). You can create or edit the description from here.
 
-
-The dataset details section shows:
-*
-* Sensitivity.
-* SQL connection string.
-* Description. You can create or edit the datamart description from here.
+---
 
 ### Explore related reports
 
