@@ -11,11 +11,20 @@ LocalizationGroup: Share your work
 ---
 # Data details
 
-The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
+The data details page helps you explore, monitor, and leverage the data items such as datasets and datamarts in your organization. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens. The details page shows you:
+* Metadata about the data item, including description, endorsement, and sensitivity label.
+* Actions such as share, refresh, create new, Analyze in Excel, and more.
+* Related reports (related reports are reports that were built on top of the dataset/datamart).
 
+The main sections and many of the actions available on the data details page are common to most data items. This article describes these sections and actions, and notes differences between data items when they occur.
 
+For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in this article will be available for all users.  
+
+Image
 
 ## View metadata
+
+Image
 
 The details section shows
 * The name of the workspace where the item is located.
@@ -25,8 +34,13 @@ The details section shows
 * SQL connection string (Datamarts).
 * Description (if any). You can create or edit the description from here.
 
-## Download .pbix fiile
-## Mange permissions and settings
+## Download .pbix file
+
+If you have sufficient permissions, you can download a dataset as *.pbix* file. On the Action bar, choose **File > Download this file**.
+
+## Manage permissions and settings
+
+To manage item permissions or to configure item settings, choose **File** on the Action bar and choose either **Manage permissions** or **Settings**, as appropriate.
 ## Refresh data
 ## Share
 ## Launch Analyze in Excel
