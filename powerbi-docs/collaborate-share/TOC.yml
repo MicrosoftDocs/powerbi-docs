@@ -73,7 +73,7 @@
         href: service-teams-notifications.md
     - name: Power BI in PowerPoint
       items: 
-      - name: "About the Power BI PowerPoint add-in"
+      - name: "About Power BI in PowerPoint"
         href: service-power-bi-powerpoint-add-in-about.md
       - name: "Add a Power BI report page in PowerPoint"
         href: service-power-bi-powerpoint-add-in-install.md
