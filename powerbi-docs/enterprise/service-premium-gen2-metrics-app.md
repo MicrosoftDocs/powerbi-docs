@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/28/2022
+ms.date: 05/22/2022
 LocalizationGroup: Premium 
 ---
 
@@ -430,7 +430,7 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
     * *Operations triggered by users* - [Interactive operations](service-premium-interactive-background-operations.md#interactive-operations) that include opening a report or clicking a slicer.
 
-    * *Operations triggered by Power BI* - [Background operation](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles not long ago. The benefit of this background operation, is faster performance for the user that opens the dashboard.
+    * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries result in a much faster performance for users, when they next view the dashboard.
 
 * [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
 
