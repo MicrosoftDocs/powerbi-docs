@@ -36,19 +36,32 @@ The details section shows
 
 ## Download .pbix file
 
-If you have sufficient permissions, you can download a dataset as *.pbix* file. On the Action bar, choose **File > Download this file**.
+For datasets, if you have sufficient permissions, you can download the dataset as a *.pbix* file. On the Action bar, choose **File > Download this file**.
 
-This option isn't available for datamarts and their corresponding auto-generated datasets.
+This option isn't available for auto-generated datasets.
 
 ## Manage permissions and settings
 
-To manage item permissions or to configure item settings, choose **File** on the Action bar and choose either **Manage permissions** or **Settings**, as appropriate.
+To manage item permissions or to configure item settings, choose **File** on the Action bar and choose either **Manage permissions** or **Settings**.
 
-These options aren't available for auto-generated datasets. Got to the corresponding datamart to access settings and permissions management. 
+These options aren't available for auto-generated datasets. Got to the corresponding datamart to access settings and permissions management.
 ## Refresh data
+
+To refresh your data, configure scheduled refresh, or view refresh history (datamarts), select **Refresh** on the Action bar and select the desired option.
+
+The refresh option is not available for auto-generated datasets. Refresh for auto-generated datasets is managed through the corresponding datamart.
+
 ## Share
+
+To share the data item with other users in your organization, choose **Share** on the Action bar, or click the **Share button** in the Share this data section.
+
 ## Launch Analyze in Excel
+
+To pull your data into Analyze with Excel, select **Analyze with Excel** in the Action bar.
+
 ## View lineage and impact analysis
+
+
 ## Create reports and formatted tables
 ## Edit
 
