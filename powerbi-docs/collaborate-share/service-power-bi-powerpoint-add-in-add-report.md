@@ -20,7 +20,7 @@ In addition to the Power BI data, the add-in provides other controls that help y
 
 ![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
 
-These controls are described in the [Add-in controls](#add-in-controls) section below.
+These controls are described in detail in the [Add-in controls](#add-in-controls) section.
 
 ## Interact with data
 
