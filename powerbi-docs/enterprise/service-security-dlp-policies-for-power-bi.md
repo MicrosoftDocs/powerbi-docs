@@ -86,7 +86,7 @@ When a DLP policy detects an issue with a dataset:
 
 ## Configure a DLP policy for Power BI
 
-1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
+1. Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 
 1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
@@ -212,7 +212,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
  
 ## Monitor and manage policy alerts
 
-Log into the Microsoft 365 compliance portal and navigate to **Data loss prevention > Alerts**.
+Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) and navigate to **Data loss prevention > Alerts**.
 
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
