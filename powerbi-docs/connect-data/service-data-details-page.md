@@ -36,7 +36,15 @@ The details section shows
 
 ## Download .pbix file
 
+# [Datasets](#tab/datasets)
+
 If you have sufficient permissions, you can download a dataset as *.pbix* file. On the Action bar, choose **File > Download this file**.
+
+This option isn't avaiable for auto-generated datasets.
+
+# [Datamarts](#tab/datamarts)
+
+This option isn't available for auto-generated datasets.
 
 ## Manage permissions and settings
 
