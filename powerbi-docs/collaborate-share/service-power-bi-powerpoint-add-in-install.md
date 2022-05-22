@@ -26,7 +26,7 @@ There are three ways to get the report page URL:
 
 These methods differ in whether or not they can preserve the report page's current state, and what permissions people who open the PowerPoint presentation will have for viewing the report. The table below summarizes the differences.
 
-| URL source | Supports inserting current state | Can users who open the presentation view the report? |
+| URL source | URL can preserve current state | Can users who open the presentation view the report? |
 |---------|---------|---------|
 | Share     | Yes        | Yes, if you grant read permissions when generating the shareable link.        |
 | Export     | Yes         |  Depends on the user's Power BI permissions |
@@ -73,7 +73,7 @@ Choose how you want to get the report page URL.
 
 # [Browser address bar](#tab/addressbar)
 
-Open the report to the page you want to insert, copy the URL from the browser's address bar, and then copy the URL to paste into the Power BI PowerPoint add-in.
+Open the report to the page you want to insert, copy the URL from the browser's address bar, and then copy the URL to paste into the Power BI add-in in PowerPoint.
 
 ![Screenshot of Power B I report URL in browser address bar.](media/service-power-bi-powerpoint-add-in-install/report-page-url-address-bar.png)
 
@@ -81,7 +81,7 @@ Open the report to the page you want to insert, copy the URL from the browser's 
 
 ## Paste the report page URL into the add-in
 
-When you have the report page URL, paste it into the Power BI report add-in in PowerPoint. This step doesn't apply if you chose **Open in PowerPoint** while in Power BI.
+When you have the report page URL, paste it into the Power BI add-in in PowerPoint. This step doesn't apply if you chose **Open in PowerPoint** while in Power BI.
 
 1. Open PowerPoint and navigate to the slide where you want to add the report.
 
