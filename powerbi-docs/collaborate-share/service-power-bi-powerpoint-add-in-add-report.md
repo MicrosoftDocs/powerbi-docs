@@ -32,13 +32,13 @@ This behavior is useful for preparing slide shows. You set up your presentation 
 
 ## Freeze the current view
 
-If for some reason you want to capture a certain state, there is a **[Show as Saved Image](#add-in-side-pane)** option that turns the current state into a static, non-interactive image. If you select the option again, the live report page reloads in the state it was last in.
+Sometimes you might want your data view to remain static. For this you can use the **[Show as Saved Image](#add-in-side-pane)** option. This option turns the current live view into a static, non-interactive image. To restore the interactive view, select the option again. The live report page will reload in the state it was last in.
 
 ## Share your presentation
 
 When you share the presentation with others, they'll need an active Power BI account and access to the report to view the data in the presentation, unless you've frozen the view as an image.
 
-To make sure people in your org can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md#?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
+To make sure people in your org can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
 
 Users who don't have permission to view the report can request access directly from the presentation, and will be able to view the data once they've received access.
 
