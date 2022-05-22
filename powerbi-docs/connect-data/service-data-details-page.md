@@ -36,19 +36,15 @@ The details section shows
 
 ## Download .pbix file
 
-# [Datasets](#tab/datasets)
-
 If you have sufficient permissions, you can download a dataset as *.pbix* file. On the Action bar, choose **File > Download this file**.
 
-This option isn't avaiable for auto-generated datasets.
-
-# [Datamarts](#tab/datamarts)
-
-This option isn't available for auto-generated datasets.
+This option isn't available for datamarts and their corresponding auto-generated datasets.
 
 ## Manage permissions and settings
 
 To manage item permissions or to configure item settings, choose **File** on the Action bar and choose either **Manage permissions** or **Settings**, as appropriate.
+
+These options aren't available for auto-generated datasets. Got to the corresponding datamart to access settings and permissions management. 
 ## Refresh data
 ## Share
 ## Launch Analyze in Excel
