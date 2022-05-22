@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 05/20/2022
 LocalizationGroup: Admin
 ---
 # Automatic aggregations (Preview)
@@ -45,7 +45,7 @@ Automatic aggregations are supported for DirectQuery mode datasets. Composite mo
 
 ### Permissions
 
-To enable and configure automatic aggregations, you must be the **Dataset owner**. Workspace admins can take over a dataset as owner to configure automatic aggregations settings.
+To enable and configure automatic aggregations, you must be the **Dataset owner**. Workspace admins can take over a dataset as owner to configure automatic aggregations settings. 
 
 ## Configuring automatic aggregations
 
@@ -236,7 +236,7 @@ When using automatic aggregations, keep the following in mind:
 - Power BI does not support downloading datasets with automatic aggregations enabled. If you uploaded or published a Power BI Desktop (.pbix) file to Power BI and then enabled automatic aggregations, you can no longer download the PBIX file. Make sure you keep a copy of the PBIX file locally.
 - The preview release does not yet support automatic aggregations with external tables in Azure Synapse Analytics. You can enumerate external tables in Synapse by using the following SQL query: SELECT SCHEMA_NAME(schema_id) AS schema_name, name AS table_name FROM sys.external_tables.
 - Automatic aggregations are only available for datasets using enhanced metadata. If you want to enable automatic aggregations for an older dataset, upgrade the dataset to enhanced metadata first. To learn more, see [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md).
-- Do not enable automatic aggregations if the DirectQuery data source is configured for single sign-on and uses dynamic data views or security controls to limit the data a user is allowed to access. Automatic aggregations are not aware of these data source-level controls, which makes it impossible to ensure correct data is provided on a per user basis. Training will log a warning in the refresh history that it detected a data source configured for single sign-on and skipped the tables that use this data source.
+- Do not enable automatic aggregations if the DirectQuery data source is configured for single sign-on and uses dynamic data views or security controls to limit the data a user is allowed to access. Automatic aggregations are not aware of these data source-level controls, which makes it impossible to ensure correct data is provided on a per user basis. Training will log a warning in the refresh history that it detected a data source configured for single sign-on and skipped the tables that use this data source. If possible, disable SSO for these data sources to take full advantage of the optimized query performance Automatic aggregations can provide.
 - Do not enable automatic aggregations if the dataset contains only hybrid tables to avoid unnecessary processing overhead. A hybrid table uses both import partitions and a DirectQuery partition. A common scenario is incremental refresh with real-time data in which a DirectQuery partition fetches transactions from the data source that occurred after the last data refresh. However, Power BI imports aggregations during refresh. Automatic aggregations can therefore not include transactions that occurred after the last data refresh. Training will log a warning in the refresh history that it detected and skipped hybrid tables.
 - Calculated columns are not considered for automatic aggregations. If you use a calculated column in DirectQuery mode, such as by using the COMBINEVALUES DAX function to create a relationship based on multiple columns from two DirectQuery tables, the corresponding report queries will not hit the in-memory aggregations cache.
 - Automatic aggregations are only available in the Power BI service. Power BI Desktop does not create system-generated aggregations tables.

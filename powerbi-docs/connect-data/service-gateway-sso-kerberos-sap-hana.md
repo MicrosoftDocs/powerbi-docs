@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 05/11/2022
 LocalizationGroup: Gateways
 ---
 
@@ -76,11 +76,11 @@ This issue has multiple symptoms.
 
 **Resolution**
 
-To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
+To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="Resolving SSL error window":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving S S L error window by disabling the certificate." :::
 
-After you've selected this setting, the error message will no longer appear.
+After you've disabled this setting, the error message will no longer appear.
 
 #### Impersonation
 

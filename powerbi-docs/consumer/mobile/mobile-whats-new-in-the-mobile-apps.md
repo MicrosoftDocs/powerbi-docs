@@ -20,6 +20,13 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## May 2022
+
+### \@mention someone in goal notes (Android and iOS)
+Want to get someone's attention regarding a goal's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
+
+![Screenshot of at-mention in a goal note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+
 ## April 2022
 
 ### Check your activity feed for goal updates (Android and iOS)
