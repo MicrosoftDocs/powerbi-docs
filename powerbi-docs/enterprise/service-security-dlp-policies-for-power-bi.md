@@ -8,17 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 04/03/2022
+ms.date: 05/22/2022
 LocalizationGroup: Data from files
 ---
 
 # Data loss prevention policies for Power BI (preview)
 
-To help organizations detect and protect their sensitive data, Power BI supports [Microsoft 365 data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
 ## Considerations and limitations
 
-* DLP policies for Power BI are defined in the Microsoft 365 compliance portal.
+* DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 * DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
 * DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
 * Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities.
@@ -26,6 +26,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
 * DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
 * DLP policies for Power BI are not supported in sovereign clouds.
+* Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
 
 ## Licensing and permissions
 
@@ -148,6 +149,9 @@ In the condition section, you define the conditions under which the policy will 
 1. Choose **Add**, and then chose either **Sensitive info types** or **Sensitivity labels**.
     
     ![Screenshot of D L P add conditions section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-add-conditions.png)
+
+    >[!NOTE]
+    > Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
  
     When you choose either **Sensitive info types** or **Sensitivity labels**, you will be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
