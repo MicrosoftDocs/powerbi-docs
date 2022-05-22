@@ -28,7 +28,7 @@ You interact with the report just as you would in the Power BI service. You can 
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
 
-As you work with the report, you can always [restore](#report-options) the initial view if you want to go back to it.
+As you work with the report, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
 
 ## Prepare a slide show
 
