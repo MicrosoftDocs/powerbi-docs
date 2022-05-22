@@ -14,11 +14,15 @@ ms.date: 05/11/2022
 
 # Using the Power BI add-in for PowerPoint
 
-When you first add a live Power BI report page into PowerPoint using the Power BI add-in for Powerpoint, the initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. This initial state is called the default view. As you work with the report, you can always [restore](#report-options) the default view if you want to go back to it.
+When you first add a live Power BI report page into PowerPoint using the Power BI add-in, the initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. As you work with the report, you can always [restore](#report-options) the initial view if you want to go back to it.
+
+## Interact with data
 
 You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
+
+## Prepare a slide show
 
 You can interact with the report both in normal viewing modes and in **Slide Show** mode.
 * In the normal viewing modes, changes you make to the report state (via filtering, selection, slicing, etc.) are saved.
@@ -26,13 +30,17 @@ You can interact with the report both in normal viewing modes and in **Slide Sho
 
 This behavior is useful for preparing slide shows. You set up your presentation in normal mode, and then you can present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
+## Freeze the current view
+
 If for some reason you want to capture a certain state, there is a **[Show as Saved Image](#add-in-side-pane)** option that turns the current state into a static, non-interactive image. If you select the option again, the live report page reloads in the state it was last in.
+
+## Add-in controls
 
 In addition to the interactive features of the report itself (filters, selection, slicers, etc.) the add-in has menus that provide other controls and features to help you with your work.
 
 ![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
 
-## Report info
+### Report info
 
 ![Screenshot of Power BI add-in for PowerPoint report info.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-report-info.png)
 
@@ -40,7 +48,7 @@ In addition to the interactive features of the report itself (filters, selection
 * **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this is not the sensitivity label (if any) applied to the PowerPoint file itself.
 * **Last update from source**: Shows the time and date of the last data update from the data sources.
 
-## Report options
+### Report options
 
 ![Screenshot of Power BI add-in for PowerPoint report options menu.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-report-options.png)
 
@@ -48,20 +56,20 @@ In addition to the interactive features of the report itself (filters, selection
 * **Refresh**: Refreshes the report page with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources.
 * **Reset**: Restores the state of the report page to the state it was in when it was first added to the PowerPoint presentation.
 
-## Add-in options
+### Add-in options
 
 ![Screenshot of Power BI add-in for PowerPoint add-in options menu.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-addin-options.png)
 
 * **Clear**: Removes the report page from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in a new report page URL.
 * **Learn**: Opens a carousal of help pages.
 
-## Expand/collapse toolbar
+### Expand/collapse toolbar
 
 ![Screenshot of Power BI add-in for PowerPoint expand/collapse toolbar control.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-expand-collapse-toolbar.png)
 
 Expands or collapses the toolbar across the bottom of the report. This feature is particulary useful in Slide Show mode, when you need more space and want a cleaner display.
 
-## Add-in side pane
+### Add-in side pane
 
 ![Screenshot of Power BI add-in for PowerPoint add-in side pane.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-addin-sidebar.png)
 * **Delete**: Removes the add-in from the PowerPoint slide.
@@ -71,7 +79,7 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 
 * **Show as Saved Image**: Converts the current state as a saved, static image. You can’t interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
-## Show/hide filters pane
+### Show/hide filters pane
 
 ![Screenshot of Power BI add-in for PowerPoint show/hide filter pane control.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-show-hide-filter-pane.png)
 
