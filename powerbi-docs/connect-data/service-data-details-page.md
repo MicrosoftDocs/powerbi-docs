@@ -13,6 +13,28 @@ LocalizationGroup: Share your work
 
 The data details page provides detail about the data item, shows you reports that are based on the data item, and provides entry points for creating new reports based on the data item or for using it with Analyze with Excel.
 
+
+
+## View metadata
+
+The details section shows
+* The name of the workspace where the item is located.
+* Endorsement status and certifier (if certified).
+* The exact time of the last refresh.
+* Sensitivity (if set).
+* SQL connection string (Datamarts).
+* Description (if any). You can create or edit the description from here.
+
+## Download .pbix fiile
+## Mange permissions and settings
+## Refresh data
+## Share
+## Launch Analyze in Excel
+## View lineage and impact analysis
+## Create reports and formatted tables
+## Edit
+
+
 # [Datasets](#tab/datasets)
 
 The dataset details page
@@ -41,12 +63,20 @@ The Action bar at the top of the page contains a number of actions that you can 
 
 ### Dataset details
 
-The dataset details section shows
-* The name of the workspace where the dataset is located.
+The details section shows
+* The name of the workspace where the item is located.
+* Endorsement status and certifier (if certified).
 * The exact time of the last refresh.
 * Sensitivity (if set).
-* The dataset description (if any). You can create or edit the dataset description from here.
-* Certifier name (if certified).
+* SQL connection string (Datamarts).
+* Description (if any). You can create or edit the description from here.
+
+
+The dataset details section shows:
+*
+* Sensitivity.
+* SQL connection string.
+* Description. You can create or edit the datamart description from here.
 
 ### Explore related reports
 
