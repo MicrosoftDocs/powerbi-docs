@@ -69,8 +69,8 @@ Recommended data items are data items that have been certified or promoted by so
 
 ![Screenshot of the data items list on the data hub.](media/service-data-hub/data-items-list.png)
 
-1. Open the data items's details page.
-1. A greyed-out icon indicates that you don't have permissions to access that data items's details page. Data items with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you.
+1. Open the data item's details page.
+1. A grayed-out icon indicates that you don't have permissions to access that data item's details page. Data items with grayed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you.
 1. Request access.
 1. Open the actions menu.
 1. Refresh the data item.
@@ -94,7 +94,7 @@ The columns of the list are described below. Click on a column header to sort by
 
 ## Create new reports or pull data into Excel via Analyze in Excel
 
-To create a new report based on a data item , or to pull the data into Excel with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), select **More options (...)**, either at the bottom right corner of a recommended tile or on a data item's line in the list of data items. Other actions may be appear on the drop-down menu, depending on the permissions you have on the item.
+To create a new report based on a data item, or to pull the data into Excel with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), select **More options (...)**, either at the bottom right corner of a recommended tile or on a data item's line in the list of data items. Other actions may appear on the drop-down menu, depending on the permissions you have on the item.
 
 When you create a new report based on a data item, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the data item if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the data item resides in a Premium-capacity workspace, the new report will be saved in your *My workspace*.
 
@@ -114,7 +114,7 @@ To request build permission on a dataset, do one of the following:
 
     :::image type="content" source="media/service-data-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
 
-* From the dataset's details page, click the **Request access** button at the top right corner of the the page.
+* From the dataset's details page, click the **Request access** button at the top right corner of the page.
 
     :::image type="content" source="media/service-data-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
 
@@ -132,7 +132,7 @@ Free users cannot use datamarts on the data hub.
 
 ## Discoverable datasets
 
-Dataset owners can make it possible for you to find a their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's details page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
+Dataset owners can make it possible for you to find their dataset without actually granting you access to it by making it [discoverable](../collaborate-share/service-discovery.md). Discoverable datasets appear grayed out in the list of datasets, and you don't have access to the dataset's details page or capabilities. To see dataset info and to be able to use the dataset, you can request access.
 
 To request access, on the data hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
 
