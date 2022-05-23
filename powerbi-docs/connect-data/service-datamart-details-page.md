@@ -1,109 +1,64 @@
 ---
-title: Data details page
-description: Learn about the data details shown to you on the data details page.
+title: Datamart details page
+description: Learn about the information and actions available to you on the datamart details page.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 05/20/2022
+ms.date: 05/23/2022
 LocalizationGroup: Share your work
 ---
-# Data details
+# Datamart details
 
-The data details pages help you explore, monitor, and leverage the data items in your organization such as datasets and datamarts. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens.
+The datamart details page helps you explore, monitor, and leverage datamarts. When you click on a datamart in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that datamart opens.
 
-For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in the sections below will be available for all users.
-
-Select a tab to view the detail and actions relevant for your data item.
-
-# [Datasets](#tab/datasets)
-
-[ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
-
-The dataset details page
-* Shows you metadata about the dataset, including description, endorsement, and sensitivity.
-* Provides actions such as share, refresh, create new, Analyze in Excel, and more.
-* Lists the reports and scorecards that are built on top of the dataset.
-
-The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
-
-# [Datamarts](#tab/datamarts)
-
-[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of datamart details page.](media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png)](media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
 
 The datamart details page
-* Shows you metadata about the dataset, including description, endorsement, sensitivity, and connection string.
-* Provides actions such as share, refresh, create new, Analyze in Excel, and more.
+* Shows you metadata about the datamart, including description, endorsement, and sensitivity, and connection string.
+* Provides actions that you can perform on the datamart, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports that are built on top of the datamart.
 
----
+## Supported actions
 
-## Action bar
+The datamart details page enables you to perform a number of actions. The actions available vary from user to user depending on their permissions on the datamart, and thus not all actions are available for all users.
 
-The Action bar at the top of the page contains a number of actions that you can launch. The actions available vary from user to user depending on their permissions on the data item.
+| Action | Description | On Action bar, choose: |
+|--|--|
+| **Manage permissions** | Opens the manage datamart permissions page. | **File > Manage permissions** |
+| **Settings** | Opens the datamart settings page. | **File > Settings** |
+| **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now** |
+| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
+| **Refresh history** | Opens Refresh history window where you see the time, duration, and status of each refresh.
 
-# [Datasets](#tab/datasets)
+![Screenshot of the datamart refresh history window.](media/service-datamart-details-page/datamart-details-page-refresh-history-window.png)| **Refresh > Refresh history** |
+| **Share** | Opens the **Share dataset** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
+| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
+| **Create a report from template** | Creates a copy of the template in *My Workspace*. This action is only available if a related report template exists.| **Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). |
+| **Create a report as formatted table** | Opens the formatted table editing canvas. | **Create a report > As formatted table**, or use the [Visualize this data tile](#visualize-this-data).|
+| **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. | **Analyze in Excel** |
+| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. | **Lineage > Open lineage view** |
+| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. | **Lineage > Impact analysis** |
+| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. | **Chat in Teams** |
+| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. | **Show tables** |
 
-|Action  |Description  |
-|---------|---------|
-|**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
-|**Refresh**     | Refresh this dataset or set a scheduled refresh.        |
-|**Share**     | Share this dataset.        |
-|**Create a report**     | Create a report based on this dataset, either auto-generated, from scratch, from a template (if one exists), or as a formatted table.        |
-|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
-|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset.        |
-|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
-|**Show tables**     | Open a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns.       |
+## View dataset metadata
 
-# [Datamarts](#tab/datamarts)
-
-|Action  |Description  |
-|---------|---------|
-|**File**     | Manage permissions for this datamart, or go to [datamart settings](../transform-model/datamarts/datamarts-create-reports.md#datamart-settings).       |
-|**Refresh**     | Refresh this datamart, set up scheduled refresh, or view refresh history.        |
-|**Share**     | Share this datamart. Sharing a datamart confers [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) on the datamart.        |
-|**Create a report**     | Create a report based on this datamart.        |
-|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this datamart.        |
-|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this datamart.        |
-|**Edit**     | Opens the datamart in the Datamart editor.        |
-
----
-
-## Data details
-
-# [Datasets](#tab/datasets)
-
-:::image type="content" source="media/service-data-details-page/dataset-details-page-details-section.png" alt-text="Screenshot of dataset details section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-dataset-details.png" alt-text="Screenshot of dataset details section on data details page.":::
 
 The dataset details section shows
 * The name of the workspace where the item is located.
-* Endorsement status and certifier (if certified).
 * The exact time of the last refresh.
+* Endorsement status and certifier (if certified).
 * Sensitivity (if set).
 * Description (if any). You can create or edit the description from here.
-
-# [Datamarts](#tab/datamarts)
-
-:::image type="content" source="media/service-data-details-page/datamart-details-page-details-section.png" alt-text="Screenshot of datamart details section on data details page.":::
-
-The datamart details section shows
-* The name of the workspace where the item is located.
-* Endorsement status and certifier (if certified).
-* The exact time of the last refresh.
-* Sensitivity (if set).
-* SQL connection string (Datamarts).
-* Description (if any). You can create or edit the description from here.
-
----
 
 ## Explore related reports
 
-# [Datasets](#tab/datasets)
-
 The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
-:::image type="content" source="media/service-data-details-page/dataset-details-page-related-section.png" alt-text="Screenshot of dataset related section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of dataset related section on data details page.":::
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
@@ -113,30 +68,11 @@ The columns in the list of related reports are:
 * **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
 * **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
-# [Datamarts](#tab/datamarts)
+## Visualize this data
 
-The **See what already exists section** shows you reports that are built on top of the datamart's auto-generated dataset. You can create a copy of a report by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
+To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
 
-:::image type="content" source="media/service-data-details-page/datamart-details-page-related-section.png" alt-text="Screenshot of datamart related section on data details page.":::
-
->[!NOTE]
-> Reports build on top of other datasets created from the datamart **aren't** shown in this section. 
-
-The columns in the list of related reports are:
-* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
-* **Type**: Item type, for example, report or scorecard.
-* **Endorsement**: Endorsement status.
-* **Workspace**: The name of the workspace where the related item is located.
-* **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
-* **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
-
----
-
-### Visualize this data
-
-In the Create a report section, click the **Create** button. Choose the desired option:
-
-# [Datasets](#tab/datasets)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of dataset related section on data details page.":::
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
@@ -146,38 +82,11 @@ In the Create a report section, click the **Create** button. Choose the desired 
 >[!NOTE]
 > Only one template will be shown in the Create report drop-down, even if more than one report template exists for this dataset.
 
-# [Datamarts](#tab/datamarts)
-
-:::image type="content" source="media/service-data-details-page/datamart-details-page-visualize-data-section.png" alt-text="Screenshot of datamart visualize this data section on data details page.":::
-
-In the **Visualize this data** section, click the **Create from scratch** button. If there is a report template for the dataset, a drop-down menu will offer two options:
-* **From template**: Creates a copy of the template in *My workspace*.
-* **From scratch**: Opens the report editing canvas to a new report built on the dataset. When you save your new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on the workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
-
-If there are no report templates, clicking **Create** will open the report editing canvas directly.
-
->[!NOTE]
-> Only one template will be shown in the Create report drop-down, even if more than one report template exists for this dataset. 
-
----
-
 ## Share this data
 
-# [Datasets](#tab/datasets)
+You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
-You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the **Share dataset** dialog, where you can choose which permissions to grant on the dataset.
-
-:::image type="content" source="media/service-data-details-page/datamart-details-page-share-datamart-section.png" alt-text="Screenshot of datamart share this data section on data details page.":::
-
-# [Datamarts](#tab/datamarts)
-
-You can share the datamart with other users in your organization. Sharing grants [Build permission](./service-datasets-permissions.md#what-are-the-dataset-permissions) that allows the people you are sharing with to creat new content on top of the datamart.
-
-:::image type="content" source="media/service-data-details-page/datamart-details-page-share-datamart-section.png" alt-text="Screenshot of datamart share this data section on data details page.":::
-
-The **Share datamart** button opens the **Share datamart** dialog.
-
----
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
   
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
