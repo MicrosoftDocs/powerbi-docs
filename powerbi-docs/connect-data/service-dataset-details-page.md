@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 The dataset details page helps you explore, monitor, and leverage datasets. When you click on a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
 
-[ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
+[ ![Screenshot of dataset details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
 The dataset details page
 * Shows you metadata about the dataset, including description, endorsement, and sensitivity.
