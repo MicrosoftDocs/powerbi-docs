@@ -15,7 +15,7 @@ The dataset details page helps you explore, monitor, and leverage datasets. When
 
 [ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
-The dataset details page has
+The dataset details page
 * Shows you metadata about the dataset, including description, endorsement, and sensitivity.
 * Provides actions that you can perform on the dataset, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the dataset.
