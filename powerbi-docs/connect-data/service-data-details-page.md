@@ -11,11 +11,9 @@ LocalizationGroup: Share your work
 ---
 # Data details
 
-The data details page helps you explore, monitor, and leverage the data items such as datasets and datamarts in your organization. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens. The details pages for the different data item types are similiar. Click the tabs to view the information relevant for your data item.
+The data details page helps you explore, monitor, and leverage the data items such as datasets and datamarts in your organization. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens. The details pages for the different data item types are similiar. For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in this article will be available for all users.
 
-[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
-
-For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in this article will be available for all users. 
+Click the tabs to view the information relevant for your data item.
 
 # [Datasets](#tab/datasets)
 
