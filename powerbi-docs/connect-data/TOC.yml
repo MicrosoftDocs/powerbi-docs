@@ -11,8 +11,12 @@
       href: service-gateway-onprem.md
     - name: "Data hub"
       href: service-data-hub.md
-    - name: "Data details"
+    - name: "Data details: General"
       href: service-data-details-page.md
+    - name: "Dataset details"
+      href: service-dataset-details-page.md
+    - name: "Datamart details"
+      href: service-datamart-details-page.md
   - name: Quickstarts
     expanded: true
     items: 
