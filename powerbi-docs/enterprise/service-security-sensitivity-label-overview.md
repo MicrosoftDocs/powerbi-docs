@@ -251,7 +251,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * To open a protected .pbix file, a user must have [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner). In addition, the label must be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If it isn't, the open action will fail.
 
-    The user that set the label also has Full control and can never be locked out.
+    The user that set the label also has Full control and can never be locked out unless connectivity fails and authentication can't take place.
 
 * "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
