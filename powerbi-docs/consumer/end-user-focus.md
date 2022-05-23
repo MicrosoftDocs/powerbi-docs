@@ -28,7 +28,7 @@ Canvas zoom (number 4 above) is applied to the Power BI report canvas, regardles
 
 For report readers, canvas zoom is especially important for improving readability. For report creators, canvas zoom magnifies the canvas to make pixel perfect tweaks. The zoom level is not saved with the report.
 
-:::image type="content" source="media/end-user-focus/power-bi-slider-zoom.png" alt-text="Screenshot showing same visual in full screen, focus, and zoom.":::
+:::image type="content" source="media/end-user-focus/power-bi-slider-zoom.png" alt-text="Screenshot showing canvas  zoom.":::
 
 You will find the zoom controls in the lower right corner of the Power BI report canvas. Drag the slider to set the zoom level or select the zoom % to enter a custom input. And, when you're ready to return to the default view, select the **Fit to page** icon ![Small screenshot of the Fit to page icon.](media/end-user-focus/power-bi-fit-icon.png).
 
