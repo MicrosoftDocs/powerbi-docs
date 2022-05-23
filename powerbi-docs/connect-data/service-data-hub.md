@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 05/22/2022
+ms.date: 05/23/2022
 LocalizationGroup: Share your work
 ---
 # Data discovery using the data hub
@@ -112,11 +112,11 @@ To request build permission on a dataset, do one of the following:
 
 * From the data hub: Find the dataset in the data items list, hover over it with the mouse, and click the **Request access** icon that appears
 
-    :::image type="content" source="media/service-datasets-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
+    :::image type="content" source="media/service-data-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
 
 * From the dataset's details page, click the **Request access** button at the top right corner of the the page.
 
-    :::image type="content" source="media/service-datasets-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+    :::image type="content" source="media/service-data-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
 
 ## Users with free licenses
 
@@ -136,7 +136,7 @@ Dataset owners can make it possible for you to find a their dataset without actu
 
 To request access, on the data hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
 
-:::image type="content" source="media/service-datasets-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
+:::image type="content" source="media/service-data-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
   
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)

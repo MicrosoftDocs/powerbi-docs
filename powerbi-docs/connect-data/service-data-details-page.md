@@ -5,7 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: index
+ms.topic: conceptual
 ms.date: 05/23/2022
 LocalizationGroup: Share your work
 ---
