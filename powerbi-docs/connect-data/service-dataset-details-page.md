@@ -1,6 +1,6 @@
 ---
 title: Dataset details page
-description: Learn about the dataset details shown to you on the dataset details page.
+description: Learn about the information and actions available to you on the dataset details page.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -11,46 +11,46 @@ LocalizationGroup: Share your work
 ---
 # Dataset details
 
-The data details pages help you explore, monitor, and leverage the data items in your organization such as datasets and datamarts. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens.
+The dataset details page helps you explore, monitor, and leverage datasets. When you click on a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
 
 [ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
-The dataset details page
+The dataset details page has
 * Shows you metadata about the dataset, including description, endorsement, and sensitivity.
-* Provides actions such as share, refresh, create new, Analyze in Excel, and more.
+* Provides actions that you can perform on the dataset, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the dataset.
 
-The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
+The page header displays the dataset name, endorsement (if any), and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
 ## Supported actions
 
 The dataset details page enables you to perform a number of actions. The actions available vary from user to user depending on their permissions on the data item, and thus not all actions are available for all users.
 
-| Action | Description | Action bar select |
+| Action | Description | On Action bar, choose: |
 |--|--|
-| **Download this file** | Downloads the .pbix file for this dataset. | **File > Download this file**. |
-| **Manage permissions** | Opens the manage dataset permissions page. | **File > Manage permissions**. |
-| **Settings** | Opens the dataset settings page. | **File > Settings**. |
-| **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now**. |
-| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh**. |
+| **Download this file** | Downloads the .pbix file for this dataset. | **File > Download this file** |
+| **Manage permissions** | Opens the manage dataset permissions page. | **File > Manage permissions** |
+| **Settings** | Opens the dataset settings page. | **File > Settings** |
+| **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now** |
+| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
 | **Share** | Opens the **Share dataset** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
 | **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
-| **Create a report from template** | Creates a copy of the template in *My Workspace*. | **Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). This action appears only if a related report template exists. |
+| **Create a report from template** | Creates a copy of the template in *My Workspace*. This action is only available if a related report template exists.| **Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). |
 | **Create a report as formatted table** | Opens the formatted table editing canvas. | **Create a report > As formatted table**, or use the [Visualize this data tile](#visualize-this-data).|
-| **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. | **Analyze in Excel**. |
-| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. | **Lineage > Open lineage view**. |
-| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. | **Lineage > Impact analysis**. |
-| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. | **Chat in Teams**. |
-| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. | **Show tables**. |
+| **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. | **Analyze in Excel** |
+| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. | **Lineage > Open lineage view** |
+| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. | **Lineage > Impact analysis** |
+| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. | **Chat in Teams** |
+| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. | **Show tables** |
 
 ## View dataset metadata
 
-:::image type="content" source="media/service-data-details-page/dataset-details-page-details-section.png" alt-text="Screenshot of dataset details section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-dataset-details.png" alt-text="Screenshot of dataset details section on data details page.":::
 
 The dataset details section shows
 * The name of the workspace where the item is located.
-* Endorsement status and certifier (if certified).
 * The exact time of the last refresh.
+* Endorsement status and certifier (if certified).
 * Sensitivity (if set).
 * Description (if any). You can create or edit the description from here.
 
@@ -58,7 +58,7 @@ The dataset details section shows
 
 The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
-:::image type="content" source="media/service-data-details-page/dataset-details-page-related-section.png" alt-text="Screenshot of dataset related section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of dataset related section on data details page.":::
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
@@ -70,7 +70,9 @@ The columns in the list of related reports are:
 
 ## Visualize this data
 
-To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option:
+To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
+
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of dataset related section on data details page.":::
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
@@ -82,9 +84,9 @@ To create a report based on the dataset, click the **Create report** button on t
 
 ## Share this data
 
-You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the **Share dataset** dialog, where you can choose which permissions to grant on the dataset.
+You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
-:::image type="content" source="media/service-data-details-page/datamart-details-page-share-datamart-section.png" alt-text="Screenshot of datamart share this data section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
   
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
