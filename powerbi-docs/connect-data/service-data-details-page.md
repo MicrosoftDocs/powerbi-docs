@@ -11,34 +11,29 @@ LocalizationGroup: Share your work
 ---
 # Data details
 
-The data details page helps you explore, monitor, and leverage the data items such as datasets and datamarts in your organization. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens. The details page shows you:
-* Metadata about the data item, including description, endorsement, and sensitivity label.
-* Actions such as share, refresh, create new, Analyze in Excel, and more.
-* Related reports (related reports are reports that were built on top of the dataset/datamart).
+The data details page helps you explore, monitor, and leverage the data items such as datasets and datamarts in your organization. When you click on a data item in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that item opens. The details pages for the different data item types are similiar. Click the tabs to view the information relevant for your data item.
 
-The main sections and many of the actions available on the data details page are common to most data items. This article describes these sections and actions, and notes differences between data items when they occur.
+[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
 
-For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in this article will be available for all users.  
+For any particular data item, the options and actions available may differ from user to user, depending on permissions. Thus not all of the options and actions described in this article will be available for all users. 
 
-Image
-
-# [Datamsets](#tab/datasets)
-
-The dataset details page
-* Shows you information about the dataset
-* Lists the reports and scorecards that are built on top of the dataset
-* Provides entry points for creating new reports built on the dataset, pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), and creating formatted tables.
+# [Datasets](#tab/datasets)
 
 [ ![Screenshot of dataset details page.](media/service-data-details-page/dataset-details-page-inline-and-expanded.png)](media/service-data-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
+
+The dataset details page
+* Shows you metadata about the dataset, including description, endorsement, and sensitivity.
+* Provides actions such as share, refresh, create new, Analyze in Excel, and more.
+* Lists the reports and scorecards that are built on top of the dataset.
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
 # [Datamarts](#tab/datamarts)
 
 The datamart details page
-* Shows you information about the dataset
-* Lists the reports and scorecards that are built on top of the dataset
-* Provides entry points for creating new reports built on the dataset, pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), and creating formatted tables.
+* * Shows you metadata about the dataset, including description, endorsement, sensitivity, and connection string.
+* Provides actions such as share, refresh, create new, Analyze in Excel, and more.
+* Lists the reports that are built on top of the datamart.
 
 [ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
 
