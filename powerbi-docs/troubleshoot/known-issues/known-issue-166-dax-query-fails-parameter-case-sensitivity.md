@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
+ms.subservice: troubleshooting
 ms.date: 04/06/2022
 ms.custom: known-issue-166
 ---

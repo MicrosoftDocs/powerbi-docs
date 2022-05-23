@@ -5,6 +5,7 @@ author: jessicamo
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
+ms.subservice: troubleshooting
 ms.date: 05/10/2022
 ms.custom: known-issue-151
 ---
