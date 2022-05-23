@@ -26,22 +26,22 @@ The page header displays the dataset name, endorsement, if any, and dataset owne
 
 The dataset details page enables you to perform a number of actions. The actions available vary from user to user depending on their permissions on the data item, and thus not all actions are available for all users.
 
-| Action | Description |
+| Action | Description | Action bar select |
 |--|--|
-| **Download this file** | Downloads the .pbix file for this dataset. Select **File > Download this file**. |
-| **Manage permissions** | Opens the manage dataset permissions page. Select **Action bar > File > Manage permissions**. |
-| **Settings** | Opens the dataset settings page. Select **Action bar > File > Settings**. |
-| **Refresh now** | Launches a refresh of the dataset. Select **Action bar > Refresh > Refresh now**. |
-| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. Select **Action bar > Refresh > Schedule refresh**. |
-| **Share** | Opens the **Share dataset** dialog. Select **Action bar > Share**, or use the [Share this data tile](#share-this-data). |
-| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. Select **Action bar > Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
-| **Create a report from template** | Creates a copy of the template in *My Workspace*. Select **Action bar > Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). This action appears only if a related report template exists. |
-| **Create a report as formatted table** | Opens the formatted table editing canvas. Select **Action bar > Create a report > As formatted table**, or use the [Visualize this data tile](#visualize-this-data).|
-| **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. Select **Action bar > Analyze in Excel**. |
-| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. Select **Action bar > Lineage > Open lineage view**. |
-| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. Select **Action bar > Lineage > Impact analysis**. |
-| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. Select **Action bar > Chat in Teams**. |
-| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. **Action bar > Show tables**. |
+| **Download this file** | Downloads the .pbix file for this dataset. | **File > Download this file**. |
+| **Manage permissions** | Opens the manage dataset permissions page. | **File > Manage permissions**. |
+| **Settings** | Opens the dataset settings page. | **File > Settings**. |
+| **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now**. |
+| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh**. |
+| **Share** | Opens the **Share dataset** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
+| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
+| **Create a report from template** | Creates a copy of the template in *My Workspace*. | **Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). This action appears only if a related report template exists. |
+| **Create a report as formatted table** | Opens the formatted table editing canvas. | **Create a report > As formatted table**, or use the [Visualize this data tile](#visualize-this-data).|
+| **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. | **Analyze in Excel**. |
+| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. | **Lineage > Open lineage view**. |
+| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. | **Lineage > Impact analysis**. |
+| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. | **Chat in Teams**. |
+| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. | **Show tables**. |
 
 ## View dataset metadata
 
