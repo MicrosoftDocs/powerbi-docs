@@ -11,7 +11,7 @@ LocalizationGroup: Share your work
 ---
 # Datamart details
 
-The datamart details page helps you explore, monitor, and leverage datamarts. When you click on a datamart in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that datamart opens.
+The datamart details page helps you explore, monitor, and leverage datamarts. When you click on a datamart in the [data hub](./service-data-hub.md), the details page for that datamart opens.
 
 [ ![Screenshot of datamart details page.](media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png)](media/service-datamart-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
 
@@ -47,7 +47,7 @@ The datamart details section shows
 * Endorsement status and certifier (if certified).
 * The exact time of the last refresh.
 * Sensitivity (if set).
-* SQL connection string (Datamarts).
+* T-SQL connection string.
 * Description (if any). You can create or edit the description from here.
 
 ## Explore related reports
