@@ -55,7 +55,6 @@ When considering your tenant ID for use with Power BI, the key decisions and act
 | **Key decisions and actions** |
 | --- |
 | **Include your CTID in relevant user documentation:** Include the tenant ID (CTID) in any user documentation related to distributing content to external guest users. |
-| --- |
 | **Set up custom branding in Power BI:** In the admin portal, update the custom branding if you intend to use Power BI with external guest users. |
 
 ## Azure AD administrators
@@ -75,7 +74,6 @@ When considering how to work with your Azure AD administrators, the key decision
 | **Key decisions and actions** |
 | --- |
 | **Identify your Azure AD administrators:** Make sure you know who administers Azure AD for your organization. Be prepared to work with them as needed. |
-| --- |
 | **Involve your Azure AD administrators:** As you undergo the Power BI planning and implementation process, invite an Azure AD administrator to pertinent meetings and involve them in relevant decision-making. |
 
 ## Location for storage of data
