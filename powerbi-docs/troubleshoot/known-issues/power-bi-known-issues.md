@@ -22,7 +22,7 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title           |  Issue publish date |  Status*  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
-|  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multirole-rls-composite-model-fail.md)   |  May 18, 2022        |  Open |
+|  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  May 18, 2022        |  Open |
 |  175      |  Consume and View                  |  [Unable to load Power BI dataset list in Excel](known-issue-175-unable-to-load-dataset-list-in-excel.md)   |  April 20, 2022        |  Open |
 |  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  Open |
 |  167      |  Consume and View                  |  [Matrix banded row colors appear incorrectly in Service](known-issue-167-matrix-banded-row-colors-incorrect-service.md)   |  April 7, 2022        |  Fixed: May 10, 2022 |
