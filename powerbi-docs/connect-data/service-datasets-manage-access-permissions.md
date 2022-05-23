@@ -29,7 +29,7 @@ To open the dataset manage permissions page:
 
     ![Screenshot of dataset manage permissions page entry points on the datasets hub.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png)
 
-* From the [dataset details page](service-dataset-details-page#supported-actions): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
+* From the [dataset details page](service-dataset-details-page.md#supported-actions): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
 
     ![Screenshot of dataset manage permissions page entry points on the dataset info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
 
