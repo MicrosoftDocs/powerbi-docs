@@ -45,7 +45,7 @@ If you're a free user, see [Users with free licenses](#users-with-free-licenses)
 >[!NOTE]
 > To be fully functional, the data hub requires that the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) admin setting be enabled. If this setting is not enabled, you won't be able to access the data items you see listed in the data hub unless the item is in your *My Workspace* or you have an Admin, Member, or Contributor role in the workspace where the item is located.
 
-## Find the dataset you need
+## Find the data you need
 
 The dataset discovery experience starts on the data hub. To get to the data hub:
 * In the Power BI service: Select **Data hub** in the navigation pane.

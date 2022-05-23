@@ -26,10 +26,10 @@ The image below shows the datasets hub in the Power BI service.
 
 ![Screenshot of datasets hub page](media/end-user-datasets-hub/power-bi-datasets-hub.png)
 
-The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
+The data hub presents you with a selection of recommended data items and a list of all the data items in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
 
-[Continue learning about the datasets hub](../connect-data/service-datasets-hub.md) and explore additional information, including how to select a dataset, how to explore reports built using a dataset, and how to create a new report yourself. 
+[Continue learning about the data hub](../connect-data/service-data-hub.md) and explore additional information, including how to select a dataset, how to explore reports built using a dataset, and how to create a new report yourself. 
   
 ## Next steps
-[Continue learning about the datasets hub](../connect-data/service-datasets-hub.md)    
+[Continue learning about the data hub](../connect-data/service-data-hub.md)    
 [Power BI Home](end-user-home.md)
