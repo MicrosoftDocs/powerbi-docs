@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/09/2019
+ms.date: 10/19/2021
 ---
 
 # View Power BI content shared with you from an external organization
@@ -38,7 +38,7 @@ Even though you need to have a Power BI artifact link to connect to an external 
 
 ![Power BI app menu as guest external user](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
-## Limitations
+## Considerations and limitations
 
 - Users must have an active Power BI account and Home tenant.
 - Users must be signed in to their Power BI home tenant, before they can access the content shared with them from an external tenant.

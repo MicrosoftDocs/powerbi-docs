@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 10/19/2020
 LocalizationGroup: Create reports
 ---
 
 # Use a relative time slicer and filter in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour. 
 
@@ -34,7 +34,13 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 2. Select the **Slicer** visualization type.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer.":::
+   # [Power BI Desktop](#tab/powerbi-desktop)
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in Power B I Desktop.":::
+
+   # [Power BI service](#tab/powerbi-service)
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in the Power B I service.":::
+
+   ---
 
 ### Create a filter
  
@@ -80,11 +86,11 @@ When a filter is applied to the page or report level, all visuals on that page o
 - Relative time filtering using the Q&A visual isn't relative to this anchor time, until you convert the Q&A visual to a standard visual. However, the other AI visuals, such as key influencers and the decomposition tree, are synchronized with the anchor time. 
 - Additionally, relative date filters or slicers aren't relative to the anchor time, unless in the presence of relative time filters. If a relative date and a relative time filter are on the same page, the relative date filter respects the anchor time.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations currently apply to the relative time slicer and filter.
+The following considerations and limitations currently apply to the relative time slicer and filter.
 
-- **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the UTC time zone, you both must account for the time offset you’ll experience. Use the Query Editor to convert data captured in a local time zone to UTC.
+- **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the same UTC time zone, you both must account for the time offset you’ll experience. Use the Query Editor to convert data captured in a local time zone to UTC.
 - This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.
 
 - **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.

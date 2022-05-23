@@ -56,7 +56,7 @@ landingContent:
           - text: Show the data used to create a visual
             url: end-user-show-data.md
           - text: Export data to Excel
-            url: end-user-export.md
+            url: /power-bi/visuals/power-bi-visualization-export-data
 
   # Card
   - title: Interact and analyze
@@ -112,4 +112,4 @@ landingContent:
           - text: Types of Insights
             url: end-user-insight-types.md
           - text: Types of visuals
-            url: end-user-visual-type.md
+            url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md

@@ -5,9 +5,9 @@ author: otarb
 ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/18/2018
+ms.date: 05/14/2021
 LocalizationGroup: Connect to data
 ---
 # Use an external Python IDE with Power BI
@@ -36,7 +36,7 @@ If you have multiple Python IDEs installed, you can specify which will be launch
 
 By default, **Power BI Desktop** will launch **Visual Studio Code** as the external Python IDE if it's installed on your local computer; if **Visual Studio Code** is not installed and you have **Visual Studio**, that will be launched instead. If neither of those Python IDEs is installed, the application associated with **.PY** files is launched.
 
-And if no **.PY** file association exists, it's possible to specify a path to a custom IDE in the *Browse to your preferred Python IDE* section of the **Options** dialog. You can also launch a different Python IDE by selecting the **Settings** gear icon beside the **Launch Python IDE** arrow icon, in **Power BI Desktop**.
+And if no **.PY** file association exists, it's possible to specify a path to a custom IDE in the *Browse to the Python IDE you want:* section of the **Options** dialog. You can also launch a different Python IDE by selecting the **Settings** gear icon beside the **Launch Python IDE** arrow icon, in **Power BI Desktop**.
 
 ## Launch a Python IDE from Power BI Desktop
 To launch a Python IDE from **Power BI Desktop**, take the following steps:

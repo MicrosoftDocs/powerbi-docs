@@ -21,7 +21,7 @@ You can easily embed interactive Power BI reports in Microsoft Teams channels an
 To use the **Power BI** tab in Microsoft Teams, ensure these elements:
 
 - Microsoft Teams has the **Power BI** tab.
-- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-roles-new-workspaces.md).
 - To see the report in the **Power BI** tab in Microsoft Teams, users must have permission to view the report.
 - Users must be Microsoft Teams users with access to channels and chats.
 

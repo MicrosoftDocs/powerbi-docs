@@ -1,16 +1,16 @@
 ---
-title: View presentation mode on Surface Hub and Windows 10 - Power BI
-description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in presentation mode on Windows 10 devices.
+title: View presentation mode on Surface Hub and Windows - Power BI
+description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in presentation mode on Windows devices.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 04/27/2022
 ---
-# View reports and dashboards in presentation mode on Surface Hub and Windows 10 devices
-You can use presentation mode to display reports and dashboards in full-screen on Windows 10 devices and Surface Hub. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
+# View reports and dashboards in presentation mode on Surface Hub and Windows devices
+You can use presentation mode to display reports and dashboards in full-screen on Windows devices and Surface Hub. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
 
 ![Screenshot of a report in presentation mode.](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
@@ -61,7 +61,6 @@ When you select the **Play** button on the action toolbar, the slideshow begins.
 
 By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change the default behavior in the [Slideshow settings](#slideshow-settings).
 
-
 ### Auto play a slideshow on startup
 
 You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
@@ -72,7 +71,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 1. Select the settings icon.
 
-1. Open the options tab.
+1. Open the options page.
 
 1. If desired, change the default settings for what the slideshow will cycle over (pages, bookmarks, or both) and how frequently the slides will transition.
 

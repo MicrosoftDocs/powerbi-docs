@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 03/14/2021
+ms.custom: intro-installation
 ---
 
 # Install Power BI Report Server

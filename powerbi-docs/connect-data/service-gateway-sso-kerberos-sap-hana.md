@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 05/11/2022
 LocalizationGroup: Gateways
 ---
 
@@ -46,7 +46,7 @@ We also recommend following these extra steps, which can yield a small performan
     </setting>
     ```
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report).
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration).
 
 ## Troubleshoot
 
@@ -60,27 +60,31 @@ To follow the steps in this section, you need to [collect gateway logs](/data-in
 
 **Error symptoms**
 
-This issue has multiple symptoms. When you try to add a new data source, you might see an error message like the following:
+This issue has multiple symptoms.
 
-```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
+- When you try to add a new data source, you might see an error message like the following:
 
-When you try to create or refresh a report, you might see the following error message:
+   ```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting SSL error window.":::
+- When you try to create or refresh a report, you might see the following error message:
 
-When you investigate the Mashup[date]*.log, you'll see the following error message:
+   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting SSL error window.":::
 
-```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
+- When you investigate the Mashup[date]\*.log, you'll see the following error message:
+
+   ```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
 
 **Resolution**
 
-To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
+To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="Resolving SSL error window":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving S S L error window by disabling the certificate." :::
 
-After you've selected this setting, the error message will no longer appear.
+After you've disabled this setting, the error message will no longer appear.
 
 #### Impersonation
+
+**Symptom**
 
 Log entries for impersonation contain entries similar to the following: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation).``` 
 
@@ -88,7 +92,7 @@ The important element in this log entry is the information that's displayed afte
 
 **Resolution**
 
-You can set up ImpersonationLevel properly by following the instructions in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
+You can set up ImpersonationLevel properly by following the instructions in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 After you've changed the configuration file, restart the gateway service for the change to take effect.
 
@@ -98,13 +102,16 @@ Refresh or create the report, and then collect the gateway logs. Open the most r
 
 
 #### Delegation
+
+**Symptom**
+
 Delegation issues usually appear in the Power BI service as generic errors. To make sure that the issue is not a delegation issue, collect Wireshark traces and use *Kerberos* as a filter. To learn more about Wireshark, and for information about Kerberos errors, see the blog post about [Kerberos errors in network captures](/archive/blogs/askds/kerberos-errors-in-network-captures).
 
 The following symptoms and troubleshooting steps can help remedy some common issues.
 
 **SPN issues**
 
-If you experience service principal name (SPN) issues when you're investigating the Mashup[date]*.log, you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
+If you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:``` while investigating the Mashup[date]\*.log, then you are experiencing service principal name (SPN) issues.
 
 When you investigate further by using Wireshark traces, you reveal the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the SPN was not found or does not exist. The following image shows an example:
 
@@ -132,7 +139,7 @@ Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azur
 
 **Resolution**
 
-To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
+To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-5-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
 
 
 **Validation**
@@ -152,7 +159,7 @@ In HANA authentication traces, you might see entries similar to the following:
 
 **Resolution**
 
-Follow the instructions described in the "Set user-mapping configuration parameters on the gateway machine (if necessary)" section of [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine-if-necessary), even if you've already configured the **Azure AD Connect** service.
+Follow the instructions described in the "Set user-mapping configuration parameters on the gateway machine (if necessary)" section of [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Azure AD Connect** service.
 
 **Validation**
 

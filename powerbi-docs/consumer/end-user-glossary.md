@@ -7,8 +7,8 @@ services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
-ms.date: 11/21/2020
+ms.topic: conceptual
+ms.date: 09/09/2021
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -69,7 +69,7 @@ A mathematical determination of the size or number of something.
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
-A Power BI [visual type](end-user-visual-type.md).
+A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 **card** (Power BI Home)    
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
@@ -77,11 +77,11 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 **certified custom visual**    
 A Power BI custom visual that has met requirements and passed strict security testing.
 
-**classification**    
-Also called data classification. This option can be turned on by Power BI admins to raise awareness of the level of security required for a dashboard. The classification types can be customized by an organization.
-
 **connect live**    
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
+
+**connector**    
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
 
 **container**    
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
@@ -93,7 +93,7 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 The content index for an app.
 
 **content pack**    
- A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
+ Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view**
 
@@ -117,9 +117,6 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 
 **dashboard**    
 In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts.md).
-
-**data classification**    
-See classification
 
 **data connector**    
 See connectors
@@ -237,6 +234,7 @@ This has been replaced with **nav pane** but may still appear in some documentat
 The controls along the left edge of Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **license**    
@@ -272,6 +270,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **notification**    
@@ -347,6 +346,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
+
 See *account*.
 
 **publish**    

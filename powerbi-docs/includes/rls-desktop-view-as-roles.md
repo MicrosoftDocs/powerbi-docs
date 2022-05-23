@@ -25,3 +25,6 @@ After you've created your roles, test the results of the roles within Power BI D
 1. Select **OK**.
 
    The report renders based on what that user can see.
+   
+   > [!NOTE]
+   > The View as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.

@@ -7,15 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/19/2021
 ms.custom: references_regions
 LocalizationGroup: Data from files
 ---
 # Configure Power BI Premium dataflow workloads
 
 You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include datasets, paginated reports, dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
-
-![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
 The following sections describe how to enable dataflows in your organization, how to refine their settings in your Premium capacity, and guidance for common usage.
 
@@ -55,8 +53,8 @@ The following table provides a basic description of the dataflows settings.
 |---------|---------|---------|
 | **Capacity Size** | **Change Size** | The current selected capacity is listed, with options to change the capacity. Changing this setting allows for scale up or scale down of the capacity. |
 | **Workload** | **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. |
-| **Workload** | **Enhanced Dataflows Compute Engine** | Enable this option for up to 20x faster calculation of computed entities when working with large-scale data volumes.  **You must restart the capacity to activate the new engine.**  For more information, see [Enhanced dataflows compute engine](../../admin/service-admin-premium-workloads.md#enhanced-dataflows-compute-engine). |
-| **Workload** | **Container Size** | The maximum size of the container that dataflows use for each table in the dataflow. The default value is 700 MB. For more information, see [Container size](../../admin/service-admin-premium-workloads.md#container-size). |
+| **Workload** | **Enhanced Dataflows Compute Engine** | Enable this option for up to 20x faster calculation of computed entities when working with large-scale data volumes.  **You must restart the capacity to activate the new engine.**  For more information, see [Enhanced dataflows compute engine](../../enterprise/service-admin-premium-workloads.md#enhanced-dataflows-compute-engine). |
+| **Workload** | **Container Size** | The maximum size of the container that dataflows use for each table in the dataflow. The default value is 700 MB. For more information, see [Container size](../../enterprise/service-admin-premium-workloads.md#container-size). |
 | **Workload** | **Compute engine memory (%)** | The maximum percentage of memory allocated to the compute engine. The default value is 30%. |
 
 In the following sections, we go into detail about each of the settings and how they affect your dataflow workload.
@@ -69,7 +67,7 @@ We'll use this restaurant analogy as we explain and provide guidance on each of 
 
 #### Premium capacity SKUs - scale up the hardware
 
-Power BI Premium workloads use a combination of front-end and backend cores to serve fast queries across the various workload types. The [capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes). 
+Power BI Premium workloads use a combination of front-end and backend cores to serve fast queries across the various workload types. The [capacity nodes](../../enterprise/service-premium-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../enterprise/service-premium-what-is.md#capacity-nodes). 
 
 In our restaurant analogy, choosing a capacity is like choosing a higher-quality restaurant. Though a higher cost, you can expect a higher level of performance due to the increase in front-end cores, backend cores, and more memory. When you go to a bigger restaurant, you get a bigger kitchen, and better chefs, which are akin to upgrading to a higher SKU in Power BI Premium, giving you the benefit of increasing CPU speed, increasing memory per operation, and adding more parallelism.
 
@@ -83,7 +81,7 @@ Next let's discuss the **Container Size (Mb)** setting. Internally, dataflows us
 
 Going back to our analogy, having fewer but more focused cooks in the kitchen enables you to cook a meal much faster, depending on the types of orders that are placed and the complexity of the meal. The tradeoff here is having fewer chefs, but more focused time for preparation. Similarly, increasing the container size measure to 1200-1500 MB can mean that a smaller number of more complex ETL jobs – activities such as aggregations, joins, pivots, row or column manipulations - can see a performance increase as we provide more memory for each container, but in doing so, reduce the number of containers. Just as the analogy implies, too many orders can actually slow down the kitchen output, which is how you can think about container size – use this when you need complex table operations to complete, and you're willing to trade parallelism for performance, since increasing this resource divides the memory allocated to fewer containers.
 
-To summarize, you want to optimize your container size based on the queries being used. For example, simply loading data from a source into an table does not need to pull in data and perform any operations and just loads the data to storage. You want as much parallelism as possible for this situation, as you want to increase the speed of the load and refresh operations. Conversely, when you add more transformation operations – complex filters, joins, aggregations, the memory may be much higher as we may need to process some of these transformation operations in memory. Be aware that if you have other dataflow operations running on the capacity, it can slow those operations and force them to queue up to have an execution slot. To this end, monitoring and management of dataflows, refresh performance, and the entire capacity is aided by the **Power BI Premium Capacity Metrics** app. You can use the [Power BI Premium Capacity Metrics](../../admin/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) app to filter by capacity, and review performance metrics for workspace content. It's possible to review the performance metrics and resource usage by hour, for the past seven days, for all content stored within a Premium capacity – so for investigating dataflow performance, it's recommended to start with the app.
+To summarize, you want to optimize your container size based on the queries being used. For example, simply loading data from a source into an table does not need to pull in data and perform any operations and just loads the data to storage. You want as much parallelism as possible for this situation, as you want to increase the speed of the load and refresh operations. Conversely, when you add more transformation operations – complex filters, joins, aggregations, the memory may be much higher as we may need to process some of these transformation operations in memory. Be aware that if you have other dataflow operations running on the capacity, it can slow those operations and force them to queue up to have an execution slot. To this end, monitoring and management of dataflows, refresh performance, and the entire capacity is aided by the **Power BI Premium Capacity Metrics** app. You can use the [Power BI Premium Capacity Metrics](../../enterprise/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) app to filter by capacity, and review performance metrics for workspace content. It's possible to review the performance metrics and resource usage by hour, for the past seven days, for all content stored within a Premium capacity – so for investigating dataflow performance, it's recommended to start with the app.
 
 #### Enhanced compute engine - an opportunity to improve performance
 
@@ -100,7 +98,7 @@ This section provides guidance for common scenarios when using dataflow workload
 
 Slow refresh times are usually a parallelism issue. You should review the following options, in order:
 
-1. A key concept for slow refresh times is the nature of your data preparation. In our restaurant analogy explained earlier in this article, imagine having prepared food already, waiting to be used. In this scenario, the food can be cooked much faster due to minimal prep time. Similarly, whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do s. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you cannot use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
+1. A key concept for slow refresh times is the nature of your data preparation. In our restaurant analogy explained earlier in this article, imagine having prepared food already, waiting to be used. In this scenario, the food can be cooked much faster due to minimal prep time. Similarly, whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do so. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you cannot use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
 
 2. Evaluate spreading out refresh times on the same capacity. Refresh operations are a process that requires significant compute. Using our restaurant analogy, spreading out refresh times is akin to limiting the number of guests in your restaurant. Just as restaurants will schedule guests and plan for capacity, you also want to consider refresh operations during times when usage is not at its full peak. This can go a long way toward alleviating strain on the capacity.
 
@@ -110,11 +108,11 @@ Slow refresh times are usually a parallelism issue. You should review the follow
 
 5. Do both of the previous steps, allowing for an even higher degree of parallelism, because you get more cooks and a bigger kitchen.
     
-6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow steps the previous steps in this section again.
+6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow the previous steps in this sequence again.
 
 ### Out of memory exceptions
 
-When you experience **out of memory exceptions**, you need to increase performance of the containers and memory. Take the following steps.
+When you experience **out of memory exceptions**, you need to increase performance of the containers and memory. Take the following steps:
 
 1. Increase memory on the container. This is similar to having one star chef versus many chefs, as described in the previous section.
 
@@ -155,4 +153,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)

@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/21/2021
+ms.date: 05/14/2021
 ---
 
 # Troubleshoot developing DirectQuery models in Power BI Desktop
@@ -21,6 +21,13 @@ It's strongly recommended that any diagnosis of performance issues starts in Pow
 Similarly, it is recommended to first try to isolate any issues to an individual visual, rather than many visuals on a page.
 
 Let's say those steps (in the previous paragraphs of this topic) have been taken—we now have a single visual on a page in Power BI Desktop that is still sluggish. To determine what queries are being sent to the underlying source by Power BI Desktop, you can use the Performance Analyzer. It's also possible to view traces/diagnostic information that might be emitted by the underlying data source. Such traces might also contain useful information about the details of how the query was executed, and how it can be improved.
+
+> [!NOTE]
+>  When working with DirectQuery SQL-based sources, the Performance Analyzer only shows queries for the following data sources: 
+> - SQL Server
+> - Oracle
+> - Teradata
+> 
 
 Further, even in the absence of such traces from the source, it's possible to view the queries sent by Power BI, along with their execution times, as described next.
 

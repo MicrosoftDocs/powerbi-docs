@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 02/21/2022
 LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces
@@ -20,10 +20,11 @@ Learn how to manage data storage in your individual or workspace so you can keep
 Workspace storage limits, whether for My Workspace or an app workspace, depend on whether the workspace is in [shared or Premium capacity](../fundamentals/service-basic-concepts.md#capacities).
 
 ### Shared capacity limits
-For workspaces in shared capacity: 
+For workspaces in shared capacity:
 
 - There is a per-workspace storage limit of 10 GB.
-- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro or Premium Per User (PPU) licenses in the tenant.
+- Premium Per User (PPU) tenants have a 100 TB storage limit.
+- When using a Pro license, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
 
 ### Premium capacity limits
 For workspaces in Premium capacity:
@@ -52,7 +53,7 @@ See how much data storage you’re using in your Power BI account, and manage yo
 
 1. To manage your own storage, go to **My Workspace** on the navigation pane.
    
-    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-myworkspace.png)
 
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage personal storage**.
    
@@ -72,7 +73,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 ## Manage your workspace
 1. Select the arrow next to **Workspaces** select the name of the workspace.
    
-    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-group-workspaces.png)
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
@@ -93,7 +94,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
    Any member in a workspace with the admin, member, or contributor role has permissions to delete datasets and reports from the workspace.
 
 ## Dataset limits
-There is a 1 GB limit per dataset that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
+There is a 1 GB limit per dataset that is imported into Power BI, unless the workspace is in a Power BI Premium capacity. See the [Large datasets](../enterprise/service-premium-what-is.md#large-datasets) section of _What is Power BI Premium?_ for details. However, if you choose to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
 
 ## What happens when you reach a limit
 When you reach the data capacity limit of what you can do, you see prompts within the service. 

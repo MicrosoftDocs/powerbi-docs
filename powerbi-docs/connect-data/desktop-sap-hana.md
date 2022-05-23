@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/15/2020
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA databases in Power BI
 
 With Power BI Desktop, you can now access *SAP HANA* databases. To use SAP HANA, you must have the SAP HANA ODBC driver installed on the local client computer for the Power BI Desktop's SAP HANA data connection to work properly. You can download the SAP HANA Client tools from [SAP Development Tools](https://tools.hana.ondemand.com/#hanatools), which contains the necessary ODBC driver. Or you can get it from the [SAP Software Download Center](https://support.sap.com/en/my-support/software-downloads.html). In the Software portal, search for the *SAP HANA CLIENT* for Windows computers. Since the SAP Software Download Center changes its structure frequently, more specific guidance for navigating that site isn't available.
 
-To connect to a SAP HANA database, select **Get Data**, choose **Database** > **SAP HANA Database**, and then select **Connect**:
+To connect to a SAP HANA database, select **Get data**, choose **Database** > **SAP HANA Database**, and then select **Connect**:
 
 ![SAP HANA Database, Get Data dialog box, Power BI Desktop](media/desktop-sap-hana/sap-hana-1.png)
 
@@ -47,7 +47,7 @@ This release has many capabilities for SAP HANA, as shown in the following list:
   
     First, it isn't possible to apply a HANA variable to a shared column of an HDI-container-based Calculation View. To fix this limitation, upgrade to HANA 2 version 37.02 and onwards or to HANA 2 version 42 and onwards. Second, multi-entry default values for variables and parameters currently don't show up in the Power BI UI. An error in SAP HANA causes this limitation, but SAP hasn't announced a fix yet.
 
-## Limitations and troubleshooting of SAP HANA
+## Considerations and limitations
 
 When using SAP HANA with Visual Studio, ensure that you've installed compatible versions.  For example, when working with Visual Studio 32 bit, make sure you have HANA client 32 bit installed as well.
 

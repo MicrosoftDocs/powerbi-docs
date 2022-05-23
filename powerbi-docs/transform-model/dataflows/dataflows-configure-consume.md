@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 01/10/2021
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
@@ -30,7 +30,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 * **Data Source Credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
 
-* **Sensitivity Label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [how to apply sensitivity labels in Power BI](../../admin/service-security-apply-data-sensitivity-labels.md).
+* **Sensitivity Label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [how to apply sensitivity labels in Power BI](../../enterprise/service-security-apply-data-sensitivity-labels.md).
 
 * **Scheduled Refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a dataset.
 
@@ -84,7 +84,7 @@ To consume a dataflow, run Power BI Desktop and select the **Power BI dataflows 
 
 ![dataflow connector](media/dataflows-configure-consume/dataflow-connector.png)
 
-Select which dataflow and which tables to which you want to connect. 
+Select the dataflow and tables to which you want to connect. 
 
 > [!NOTE]
 > You can connect to any dataflow or table regardless of which workspace it resides in, and whether or not it was defined in a Premium or non-Premium workspace.
@@ -95,7 +95,7 @@ If DirectQuery is available, you're prompted to choose whether you want to conne
 
 In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you cannot perform any additional transformations. 
 
-Using Import bring the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
+Using Import brings the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
@@ -105,5 +105,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

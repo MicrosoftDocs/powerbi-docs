@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 08/10/2021
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The tables in this article describe the shortcuts available in a Power BI report. 
 
@@ -55,6 +57,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
 | Resize a visual* | **Arrow keys**  |
 | Maintain aspect ratio*  | **Shift** + drag the resize handles |
+| Group Visuals*  | Select visuals + **Ctrl + G** |
 
 
 \* Must be in editing mode
@@ -64,6 +67,8 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Move focus up / down one cell (across all cells in all areas)  | **Up arrow key** / **Down arrow key** |
 | Move focus left / right one cell (across all cells in all areas)  | **Left arrow key** / **Right arrow key** |
+| Expand matrix | **Shift + Left arrow key** |
+| Collapse matrix | **Shift + Right arrow key** |
 
 ## Pane navigation
 | To do this action           | Press                |
@@ -78,7 +83,12 @@ In our continued effort to improve accessibility, the previous list of experienc
 ## Slicer
 | To do this action         | Press                |
 | :------------------- | :------------------- |
-| Interact with a slicer | **Ctrl + Right arrow key** |
+| Interact with a slicer | **Enter** |
+| Move focus between menu items | **Up arrow key / Down arrow key** |
+| Move focus to first menu item	| **Home** |
+| Move focus to last menu item | **End** |
+| Select multiple contiguous items | **Shift + Up arrow key / Down arrow key** |
+| Open context menu | **Shift + F10** |
 
 ## Selection pane
 | To do this action           | Press                |

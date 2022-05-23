@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 10/26/2020
+ms.date: 06/24/2021
 LocalizationGroup: Share your work
 ---
 # Enable content certification

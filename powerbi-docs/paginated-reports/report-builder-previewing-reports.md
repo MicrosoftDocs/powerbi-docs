@@ -11,7 +11,7 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 ---
 # Previewing reports in Power BI Report Builder
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
   

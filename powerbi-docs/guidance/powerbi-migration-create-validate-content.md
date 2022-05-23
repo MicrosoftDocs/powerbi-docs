@@ -2,10 +2,10 @@
 title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
 author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
 ---
@@ -46,9 +46,9 @@ The essential activities related to development of an Import dataset include:
 - Create the [dataset model](../transform-model/desktop-modeling-view.md), including [date tables](../transform-model/desktop-date-tables.md).
 - Create and verify [model relationships](../transform-model/desktop-create-and-manage-relationships.md).
 - Define [measures](../transform-model/desktop-measures.md).
-- Set up [row-level security](../admin/service-admin-rls.md), if necessary.
+- Set up [row-level security](../enterprise/service-admin-rls.md), if necessary.
 - Configure synonyms and [optimize Q&A](../natural-language/q-and-a-best-practices.md).
-- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../transform-model/desktop-aggregations.md).
+- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
 
 > [!TIP]
 > If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. It will make deployment, described in [Stage 5](powerbi-migration-deploy-support-monitor.md), significantly easier.
@@ -60,7 +60,7 @@ The essential activities related to development of a Power BI report or dashboar
 - Decide on using a Live Connection to an existing data model, or creating a new data model
 - When creating a new data model, decide on the [data storage mode](../transform-model/desktop-storage-mode.md) for model tables (Import, DirectQuery, or Composite).
 - Decide on the best data visualization tool to meet requirements: Power BI Desktop, Paginated Report Builder, or Excel.
-- Decide on the [best visuals](../consumer/end-user-visual-type.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
+- Decide on the [best visuals](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
 - Ensure all visuals present clear, concise, and business-friendly terminology.
 - Address interactivity requirements.
 - When using Live Connection, add [report-level measures](../transform-model/desktop-tutorial-create-measures.md).
@@ -91,11 +91,11 @@ When validating security, there are two primary aspects to consider:
 - Data permissions
 - Access to datasets, reports, and dashboards
 
-In an Import dataset, data permissions are applied by defining [row-level security](../admin/service-admin-rls.md) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
+In an Import dataset, data permissions are applied by defining [row-level security](../enterprise/service-admin-rls.md) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
 
 The main ways to grant access to Power BI content are:
 
-- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) (for content editors and viewers).
+- [Workspace roles](../collaborate-share/service-roles-new-workspaces.md) (for content editors and viewers).
 - [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) applied to a packaged set of workspace content (for viewers).
 - [Sharing](../collaborate-share/service-share-dashboards.md) an individual report or dashboard (for viewers).
 
@@ -128,7 +128,7 @@ Documentation can be stored wherever it's most easily accessed by the target aud
 - **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
 
 > [!TIP]
-> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](../admin/service-admin-portal.md#publish-get-help-information) with its URL location.
+> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](../admin/service-admin-portal-help-support.md#publish-get-help-information) with its URL location.
 
 ### Create dataset documentation
 

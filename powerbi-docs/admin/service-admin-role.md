@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/8/2021
+ms.date: 10/19/2021
 LocalizationGroup: Administration
 ---
 
@@ -20,7 +20,7 @@ Users in Power BI admin and Power Platform admin roles have full control over or
 > [!NOTE]
 > In Power BI documentation, "Power BI admin" refers to users in either the Power BI admin or Power Platform admin roles. The documentation makes it clear when the Microsoft 365 global admin role is required for a task.
 
-## Limitations and considerations
+## Considerations and limitations
 
 The Power BI admin and Power Platform admin roles don't provide the following capabilities:
 

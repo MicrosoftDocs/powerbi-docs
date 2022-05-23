@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/7/2020
+ms.date: 06/16/2021
 LocalizationGroup: Visualizations
 ---
 # Interact with visuals in reports, dashboards, and apps
@@ -57,7 +57,7 @@ For many of these options, your administrator or the *designer* can disable your
 |[Show the data used to create the visual](end-user-show-data.md).     |  no       |   yes      | no  |
 | [Change the way the visual is sorted](end-user-change-sort.md). | no  | yes  | can change sort by rewording the question  |
 | [Add a spotlight to a visual](end-user-spotlight.md). | no  | yes  |  no |
-| [Export to Excel.](end-user-export.md) | yes | yes | no|
+| [Export to Excel.](/power-bi/visuals/power-bi-visualization-export-data) | yes | yes | no|
 | [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | na |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |
@@ -65,4 +65,4 @@ For many of these options, your administrator or the *designer* can disable your
 ## Next steps
 Back to [Basic concepts for business users](end-user-basic-concepts.md)    
 [Select a visual to open a report](end-user-report-open.md)    
-[Types of visuals available in Power BI](end-user-visual-type.md)
+[Types of visuals available in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

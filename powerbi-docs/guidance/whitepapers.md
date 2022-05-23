@@ -5,9 +5,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 08/02/2021
 ---
 # White papers for Power BI
 
@@ -17,10 +17,9 @@ White papers allow you to explore Power BI topics at a deeper level. Here you ca
 | --- | --- | --- |
 | [Planning a Power BI Enterprise Deployment](https://aka.ms/PBIEnterpriseDeploymentWP) |This updated technical white paper outlines considerations and best practices for a well-performing and secure organizational Power BI deployment. | June 2020 |
 | [Power BI and Dataflows](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| This white paper describes dataflows in technical detail, and describes the capabilities and initiatives behind dataflow features and functionality. | November 2018 |
-| [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Describes Power BI Premium, both as it exists when launched and also how it will evolve. | October 2017 |
 | [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| The content of this white paper has been incorporated into general guidance. See the link for guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2019 |
 | [Capacity planning guidance for Power BI Report Server](../report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. | March 2018 |
-| [Security](../admin/service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | March 2019 |
+| [Security](../enterprise/service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | March 2019 |
 | [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md)|This paper outlines how to distribute content to users outside the organization using the integration of Azure Active Directory Business-to-business (AAD B2B).| March 2019 |
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. | February 2017 |
 | [Bidirectional filtering](../transform-model/desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the white paper also covers SQL Server Analysis Services 2016, both have the same behavior). | July 2018 |

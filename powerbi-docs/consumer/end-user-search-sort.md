@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2020
+ms.date: 06/12/2021
 LocalizationGroup: Get started
 ---
 # Navigation for Power BI business users: global search
@@ -32,7 +32,7 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 
 ## Sorting content lists
 
-If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 70 items. 
+If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 29 items. 
 
 ![shared with me content list](./media/end-user-search-sort/power-bi-a-to-z.png)
 

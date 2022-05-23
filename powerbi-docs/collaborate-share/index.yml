@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Collaborate, share, and integrate across products with Power BI - documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information about collaborating and sharing, and ways to integrate Power BI into other products.
 
 metadata:
   title: Collaborate, share, and integrate across products with Power BI - documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information about collaborating and sharing, and ways to integrate Power BI into other products.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-collaborate-share
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/15/2020
+  ms.date: 07/01/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -29,7 +29,7 @@ landingContent:
             url: service-how-to-collaborate-distribute-dashboards-reports.md
       - linkListType: how-to-guide
         links:
-          - text: "Organize work in new workspaces"
+          - text: "The new workspaces"
             url: service-new-workspaces.md
 
   # Card (optional)
@@ -43,8 +43,8 @@ landingContent:
         links:
           - text: Add the Power BI app to Microsoft Teams
             url: service-microsoft-teams-app.md
-          - text: Chat in Microsoft Teams directly 
-            url: service-share-report-teams.md
+          - text: Get notifications in Teams about Power BI activity
+            url: service-teams-notifications.md
 
   # Card (optional)
   - title: Share your work

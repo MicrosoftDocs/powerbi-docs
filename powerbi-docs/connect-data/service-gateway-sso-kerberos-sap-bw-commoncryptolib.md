@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/10/2021
+ms.date: 03/29/2022
 LocalizationGroup: Gateways
 ---
 
@@ -17,6 +17,9 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 > [!NOTE]
 > Before you attempt to refresh a SAP BW-based report that uses Kerberos SSO, complete both the steps in this article and the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md). Using CommonCryptoLib as your SNC library enables SSO connections to both SAP BW Application Servers and SAP BW Message Servers.
+
+> [!NOTE]
+> Configuring both libraries(sapcrypto and gx64krb5) on the same gateway server is an unsupported scenario. It's not recommended to configure both libraries on the same gateway server as it'll lead to a mix of libraries. If you want to use both libraries, please fully separate the gateway server. For example, configure gx64krb5 for server A then sapcrypto for server B. Please remember that any failure on server A which uses gx64krb5 is not supported, as gx64krb5 is no longer supported by SAP and Microsoft.
 
 ## Configure SAP BW to enable SSO using CommonCryptoLib
 
@@ -39,7 +42,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
    SLC isn't supported for use on Windows Server machines. For more information, see [SAP Note 2780475](https://launchpad.support.sap.com/#/notes/2780475) (s-user required).
 
-   ![SAP Secure Login Client](media/service-gateway-sso-kerberos/sap-secure-login-client.png)
+   ![SAP Secure Login Client](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sap-secure-login-client.png)
 
 1. If you uninstall SLC or select **Log Out** and **Exit**, open a cmd window and enter `klist purge` to clear any cached Kerberos tickets before you attempt an SSO connection through the gateway.
 
@@ -56,7 +59,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
     Both the gateway service user and the Active Directory (AD) user that the service user impersonates need read and execute permissions for both files. We recommend granting permissions on both the .ini and .dll files to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway service user and the Active Directory user you use for testing. In the following screenshot we've granted the Authenticated Users group **Read &amp; execute** permissions for sapcrypto.dll:
 
-    ![Authenticated users](media/service-gateway-sso-kerberos/authenticated-users.png)
+    ![Authenticated users](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/authenticated-users.png)
 
 1. If you don't already have an SAP BW data source associated with the gateway you want the SSO connection to flow through, add one on the **Manage gateways** page in the Power BI service. If you already have such a data source, edit it: 
     - Choose **SAP Business Warehouse** as the **Data Source Type** if you want to create an SSO connection to a BW Application Server. 
@@ -72,15 +75,15 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 1. Create a **CCL\_PROFILE** system environment variable and set its value to the path to sapcrypto.ini.
 
-    ![CCL\_PROFILE system environment variable](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
+    ![CCL\_PROFILE system environment variable](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/ccl-profile-variable.png)
 
     The sapcrypto .dll and .ini files must exist in the same location. In the above example, sapcrypto.ini and sapcrypto.dll are both located on the desktop.
 
 1. Restart the gateway service.
 
-    ![Restart gateway service](media/service-gateway-sso-kerberos/restart-gateway-service.png)
+    ![Restart gateway service](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png)
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration)
 
 ## Troubleshooting
 
@@ -105,50 +108,50 @@ If you're unable to refresh the report in the Power BI service, you can use gate
    ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
- 
-	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	```
-	[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
-	Error 5 = "Access is denied." [dlnt.c       255]
-	```
+    CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
-	If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
+    ```output
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
 
-	If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
+    If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
 
-	```
-	A handle to an object was requested.
+    If you're still unable to load the .dll, try turning on [auditing for the file](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer might help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user. For example, for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
 
-	Subject:
-		Security ID:		MYDOMAIN\mytestuser
-		Account Name:		mytestuser
-		Account Domain:		MYDOMAIN
-		Logon ID:		0xCF23A8
+    ```output
+    A handle to an object was requested.
 
-	Object:
-		Object Server:		Security
-		Object Type:		File
-		Object Name:		<path information>\sapcrypto.dll
-		Handle ID:		0x0
-		Resource Attributes:	-
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:           0xCF23A8
 
-	Process Information:
-		Process ID:		0x2b4c
-		Process Name:		C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:          0x0
+        Resource Attributes:    -
 
-	Access Request Information:
-		Transaction ID:		{00000000-0000-0000-0000-000000000000}
-		Accesses:		ReadAttributes
-				
-	Access Reasons:		ReadAttributes:	Not granted
-				
-	Access Mask:		0x80
-	Privileges Used for Access Check:	-
-	Restricted SID Count:	0
-	```
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:   C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
 
-### CommonCryptoLib tracing 
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:           ReadAttributes
+
+    Access Reasons:     ReadAttributes: Not granted
+
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
+
+### CommonCryptoLib tracing
 
 1. Turn on CommonCryptoLib tracing by adding these lines to the sapcrypto.ini file you created earlier:
 
@@ -179,7 +182,7 @@ This section describes troubleshooting symptoms and resolution steps for imperso
 
 **Symptom**: When looking at the *GatewayInfo[date].log* you find an entry similar to the following: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)**. If the value for **ImpersonationLevel** is different from **Impersonation**, impersonation is not happening properly.
 
-**Resolution**: Follow the steps found in [grant the gateway service account local policy rights on the gateway machine](/power-bi/connect-data/service-gateway-sso-kerberos) article. Restart the gateway service after changing the configuration.
+**Resolution**: Follow the steps found in [grant the gateway service account local policy rights on the gateway machine](./service-gateway-sso-kerberos.md) article. Restart the gateway service after changing the configuration.
 
 **Validation**: Refresh or create the report and collect the *GatewayInfo[date].log*. Open the latest GatewayInfo log file and check again the following string: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)** to ensure that the value for **ImpersonationLevel** matches **Impersonation**.
 
@@ -234,7 +237,7 @@ The error becomes clearer in the sectraces from the Gateway machine *sec-Microso
 [2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 3: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
 ```
 
-When looking at WireShark traces, the issue can also be seen.
+You can also see the issue if you look at WireShark traces.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
 
@@ -248,7 +251,7 @@ You may run into a similar, but not identical error that manifests in WireShark 
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
 
-This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](/power-bi/connect-data/service-gateway-sso-kerberos). 
+This error indicates the **SPN SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
 
 **Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
 
@@ -265,7 +268,7 @@ There are different resolutions, based on the symptoms you see in the data sourc
 [2020.05.26 14:21:28.668325][4][disp+work ][SAPCRYPTOLIB][435584] { gss_display_name [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] gss_display_name output buffer (41 bytes) [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] CN=DAVID@XS.CONTOSO.COM@CONTOSO.COM
 ```
 
-**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](/power-bi/connect-data/service-gateway-sso-kerberos). You'll need to complete those steps even if you already have the Azure AD Connect configured.
+**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](./service-gateway-sso-kerberos.md). You'll need to complete those steps even if you already have the Azure AD Connect configured.
 
 **Validation**: You'll be able to successfully load the report in the Power BI service. If not successful, see the steps in symptom 2.
 

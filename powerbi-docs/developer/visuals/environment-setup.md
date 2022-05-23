@@ -1,13 +1,13 @@
 ---
 title: Setting up an environment for developing a Power BI visual
 description: This article explains how to set up your environment so that you can develop a Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/02/2021
+ms.date: 01/19/2022
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -19,11 +19,11 @@ Before you start development, you'll need to install **node.js** and the **pbivi
 In this article, you'll learn how to:
 > [!div class="checklist"]
 >
-> * Install *nodes.js*.
-> * Install *pbiviz*.
-> * Create and install a certificate.
-> * Set up Power BI service for developing a visual.
-> * Install additional libraries (required for developing a visual).
+> * [Install *nodes.js*](#install-nodejs).
+> * [Install *pbiviz*](#install-pbiviz).
+> * [Create and install a certificate](#create-and-install-a-certificate).
+> * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
+> * [Install additional libraries](#install-development-libraries) (required for developing a visual).
 
 ## Install node.js
 
@@ -154,7 +154,7 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
     >[!div class="mx-imgBorder"]
     >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
 
-3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable custom visual debugging using the developer visual** check box, and select **Apply**.
+3. From the **General** tab, select **Developer**. In the **Developer** setting, select the **Enable  developer mode** check box, and then select **Apply**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
@@ -219,27 +219,27 @@ npm i powerbi-visuals-api --save-dev
 2. In VS Code, open the **File** menu and select **Open Folder**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the VS studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
+    >![Screenshot of the VS  studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
 
 3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and select **Select Folder**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of selecting the Power BI visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
+    >![Screenshot of selecting the Power B I visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
 
 4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library is installed.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the 3d folder in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
+    >![Screenshot of the 3d folder in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
 
 5. In the **Explorer** pane, expand **node_modules > @types  > d3** and verify that the file **index.t.ds** is installed.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the index.t.ds file in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
+    >![Screenshot of the index.t.ds file in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
 
 ## Next steps
 
-> [!div class="nextstepaction]
->[Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
+> [!div class="nextstepaction"]
+> [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
 
 > [!div class="nextstepaction"]
 > [Create a Power BI circle card visual](develop-circle-card.md)

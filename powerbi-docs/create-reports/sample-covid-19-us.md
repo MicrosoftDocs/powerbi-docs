@@ -8,10 +8,12 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/28/2020
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. Using Power BI Desktop, they can analyze and visualize COVID-19 data  to keep their communities informed  at the city, county, state, and national levels. Then using Power BI Publish to Web, they can share the report publicly to inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
@@ -116,7 +118,7 @@ If you make changes to the report in Power BI Desktop, you can publish and repla
 
 You can also mash up the data in this report with data from another source. The following example is based on data from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19). Before publishing this data, we recommend reviewing the [disclaimers](#disclaimers) in this article.
 
-1. Select **Get Data** > **Web**.
+1. In Power BI Desktop, select **Get data** > **Web**.
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-get-data.png" alt-text="Get data button":::
 

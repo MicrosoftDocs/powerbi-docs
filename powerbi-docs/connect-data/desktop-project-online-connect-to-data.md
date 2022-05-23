@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/01/2020
+ms.date: 05/14/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Project Online data through Power BI Desktop
@@ -19,8 +19,8 @@ You can connect to data in Project Online through Power BI Desktop.
 
 ## Step 2: Connect to Project Online with OData
 1. Open **Power BI Desktop**.
-2. On the *Welcome* screen, select **Get Data**.
-3. Choose **OData feed** and select **Connect**.
+2. On the *Welcome* screen, select **Get data**.
+3. Choose **OData Feed** and select **Connect**.
 4. Enter the address for your OData feed in the URL box, and then click OK.
    
    If the address for your Project Web App site resembles *https://\<tenantname\>.sharepoint.com/sites/pwa*, then the address you’ll enter for your OData Feed is *https://\<tenantname\>.sharepoint.com/sites/pwa/\_api/Projectdata*.

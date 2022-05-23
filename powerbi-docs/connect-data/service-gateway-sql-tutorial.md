@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 07/15/2019
+ms.date: 06/09/2021
 LocalizationGroup: Gateways
 ---
 
@@ -34,12 +34,13 @@ In this tutorial, you complete the following steps:
 
 > [!NOTE]
 > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
+> If you're planning to use a stored procedure, you should use Import Data connectivity mode.
 
 ## Create and publish a Power BI Desktop file
 
 Use the following procedure to create a basic Power BI report using the AdventureWorksDW sample database. Publish the report to the Power BI service, so that you get a dataset in Power BI, which you can then configure and refresh in subsequent steps.
 
-1. In Power BI Desktop, on the **Home** tab, select **Get Data** \> **SQL Server**.
+1. In Power BI Desktop, on the **Home** tab, select **Get data** \> **SQL Server**.
 
 2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import**, and then select **OK**.
 

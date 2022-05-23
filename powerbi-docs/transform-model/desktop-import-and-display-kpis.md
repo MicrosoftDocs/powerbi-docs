@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 08/25/2021
 LocalizationGroup: Model your data
 ---
 
@@ -16,7 +16,7 @@ With **Power BI Desktop**, you can import and display KPIs in tables, matrices, 
 
 Follow these steps to import and display KPIs.
 
-1. Start with an Excel workbook that has a Power Pivot model and KPIs. This exercise uses a workbook named *KPIs*.
+1. Start with an Excel workbook that has a Power Pivot model and KPIs.
 
 1. Import the Excel workbook into Power BI, using **File -> Import -> Excel workbook contents**. You can also [learn how to import workbooks](../connect-data/desktop-import-excel-workbooks.md). 
 

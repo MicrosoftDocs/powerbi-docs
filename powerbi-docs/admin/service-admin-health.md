@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/09/2019
+ms.date: 5/25/2021
 LocalizationGroup: Administration
 ---
 
@@ -25,18 +25,18 @@ For more info about roles, see [Administrator roles related to Power BI](service
 
 1. From the nav pane, select **Show all** > **Health** > **Service health**. The Service health page appears:
 
-    ![Screenshot of the Microsoft 365 admin center with the Health and Service health options called out.](media/service-admin-health/service-health-tile.png)
+    :::image type="content" source="media/service-admin-health/service-health-2021.png" alt-text="Screenshot of the Microsoft 365 admin center with the Health and Service health options called out.":::
 
-1. From the **All services** list, select **Advisories** or **Incidents** and review the results. In the screenshot below, you see one of three active advisories.
+1. Select **Advisories** or **Incidents**, and then review the results.
 
-    ![Screenshot of the Service health page with the three advisories for Power BI and Show details option called out.](media/service-admin-health/active-advisories.png)
+    :::image type="content" source="media/service-admin-health/service-health-advisories-2021.png" alt-text="Screenshot of the Service health page with the three advisories for Power BI and Show details option called out.":::
 
-1. To see more information, select **Show details** for an item. In the screenshot below, you see additional details, including recent status updates.
+1. To see more information, select an item.
 
-    ![Screenshot of the Advisory details, showing additional information.](media/service-admin-health/advisory-details.png)
+    :::image type="content" source="media/service-admin-health/advisory-details-2021.png" alt-text="Screenshot of the Advisory details, showing additional information.":::
 
     Scroll down to see more info, then close the pane when you're finished.
 
-1. To see historical information across all services, in the upper-right corner of the **Service health** page, select **View history**. Then select **Last 7 days** or **Last 30 days**. 
+1. To see historical information across all services, select  **History**, and then select **Past 7 days** or **Past 30 days**.
 
-1. To return to current service health, select **View current status**.
+1. To return to current service health, select **All services**.

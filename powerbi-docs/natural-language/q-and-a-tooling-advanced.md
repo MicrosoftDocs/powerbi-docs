@@ -4,9 +4,9 @@ description: How to use Power BI Desktop to edit the linguistic schema used by P
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 10/18/2019
+ms.date: 10/28/2021
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. But for even better Q&A interactions, you can improve the answers. One way is by editing the linguistic schema. 

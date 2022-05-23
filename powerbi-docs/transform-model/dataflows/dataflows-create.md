@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/03/2021
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -16,7 +16,7 @@ A **dataflow** is a collection of tables that are created and managed in workspa
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 ![start a dataflow](media/dataflows-create/create-options.png)
 
-There are a multiple of ways to create or build on top of a new dataflow:
+There are multiple ways to create or build on top of a new dataflow:
 
 * [Create a dataflow using define new tables](#create-a-dataflow-using-define-new-tables)
 * [Create a dataflow using linked tables](#create-a-dataflow-using-linked-tables)
@@ -45,7 +45,7 @@ Once you select the data for use in the table, you can use dataflow editor to sh
 
 Creating a dataflow using linked tables enables you to reference an existing table, defined in another dataflow, in a read-only fashion. The following list describes some of the reasons you may choose this approach:
 
-* If you want to reuse an table across multiple dataflows, such as a date table or a static lookup table, you should create an table once and then reference it across the other dataflows.
+* If you want to reuse a table across multiple dataflows, such as a date table or a static lookup table, you should create a table once and then reference it across the other dataflows.
 
 * If you want to avoid creating multiple refreshes to a data source, it's better to use linked tables to store the data and act as a cache. Doing so allows every subsequent consumer to leverage that table, reducing the load to the underlying data source.
 
@@ -99,7 +99,7 @@ And that's it - the transformation is performed on the data in the dataflow that
 
 Creating a dataflow from a CDM folder allows you to reference an table that has been written by another application in the Common Data Model (CDM) format. You are prompted to provide the complete path to the CDM format file stored in ADLS Gen 2.
 
- ![create computed table step 6](media/dataflows-create/attach-cdm.jpg)
+ ![create computed table step 6](media/dataflows-create/attach-cdm.png)
 
 There are a few requirements for creating dataflows from CDM folders, as the following list describes:
 
@@ -115,7 +115,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 Creating a dataflow using import/export lets you import a dataflow from a file. This is useful if you want to save a dataflow copy offline, or move a dataflow from one workspace to another. 
 
-To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
+To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **Export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
 
 ![create computed table step 7](media/dataflows-create/export-dataflow.png)
 
@@ -130,5 +130,5 @@ Once you create a dataflow, you can use Power BI Desktop and the Power BI servic
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

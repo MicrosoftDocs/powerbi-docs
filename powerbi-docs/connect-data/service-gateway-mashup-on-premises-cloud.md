@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 05/10/2022
 LocalizationGroup: Gateways
 ---
 
@@ -32,11 +32,12 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
     ![Manage gateways](media/service-gateway-mashup-on-premises-cloud/manage-gateways.png)
 
-2. Select the gateway you want to configure.
+2. Select the gateway you want to configure, and select **Settings** from the top ribbon
 
 3. Under **Gateway Cluster Settings**, select **Allow user's cloud data sources to refresh through this gateway cluster** > **Apply**.
 
-    ![Refresh through this gateway cluster](media/service-gateway-mashup-on-premises-cloud/refresh-gateway-cluster.png)
+    :::image type="content" source="media/service-gateway-mashup-on-premises-cloud/open-settings-gateway.png" alt-text=" Screenshot of opening the setting page for gateways." :::
+
 
 4. Under this gateway cluster, add any [on-premises data sources](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source) used in your queries. You don't need to add the cloud data sources here.
 
@@ -49,7 +50,7 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
     Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
 
-     ![Dataset settings](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
+     :::image type="content" source="media/service-gateway-mashup-on-premises-cloud/refresh-gateway-cluster.png" alt-text=" Screenshot of enabeling the setting for refreshing cloud data sources over the gateway." :::
 
 7. With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 

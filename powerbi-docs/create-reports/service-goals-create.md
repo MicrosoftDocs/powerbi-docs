@@ -8,9 +8,11 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 01/28/2022
 ---
 # Create scorecards and manual goals in Power BI (preview)
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
@@ -25,14 +27,9 @@ You can also connect goals to an existing report visual in Power BI. See [Create
 
 ## Prerequisites
 
-Creating goals is a Power BI Premium feature, so you need either:
+You need a Power BI Pro license to author and share goals in standard workspaces. You also need:
 
-- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity
-- A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
-
-You also need:
-
-- Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
 
 ## Step 1: Create a scorecard 
@@ -43,15 +40,15 @@ You also need:
     :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Select Goals in the left nav.":::
 
 1. In the Goals hub, select **New scorecard**. The scorecard creation pane opens. 
-1. Name your scorecard, provide a description, and select a Power BI Premium workspace where you want to store the scorecard. 
+1. Name your scorecard, provide a description, and select the Power BI workspace where you want to store the scorecard. 
 
-    If you don’t have a Premium workspace, you can't create a scorecard. You can create a Premium workspace using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
+    If you don’t have a workspace, you can create one using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Complete the Create Scorecard pane.":::
 
 1. Select **Create**. Power BI creates the scorecard and opens it. 
 
-    Power BI creates these items in the Premium workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the goals data. 
+    Power BI creates these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the goals data. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="The new scorecard and dataset that Power BI created.":::
 
@@ -77,7 +74,11 @@ You also need:
 
 You can also define one or more subgoals for your goal. There are two entry points to create a subgoal. 
 
-1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.  
+1. Open a scorecard and select **Edit**.
+
+   :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
+
+1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Subgoal button.":::
 
@@ -108,13 +109,13 @@ All new goals created within scorecards have a default daily tracking cycle, whi
 
 Sharing is the easiest way to give people access to your scorecard in the Power BI service. You can share with people inside or outside your organization.  
 
-When you share a scorecard, the people you share it with can view and interact with it. They can also edit it if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). Users that have access to the scorecard see the same data you see in the scorecard. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the scorecard, but can't share it.
+When you share a scorecard, the people you share it with can view and interact with it. They can also edit it if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-roles-new-workspaces.md). Users that have access to the scorecard see the same data you see in the scorecard. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the scorecard, but can't share it.
 
 - To share, select the **Share** button in the scorecard action bar and follow the steps outlined in the experience. It's the same as sharing a dashboard.
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-share-link.png" alt-text="Share a link to a scorecard.":::
 
-    When you share scorecards, whether inside or outside your organization, your recipients need [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) (PPU) licenses, unless the content is in a [Power BI Premium](../admin/service-premium-what-is.md) capacity.
+    When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
 
 ## Next steps
 

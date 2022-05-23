@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 04/02/2021
+ms.date: 06/21/2021
 Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -34,7 +34,9 @@ In this tutorial, you complete the following steps:
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, [sign up for a free Power BI Pro trial or Premium Per User](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license, open the Power BI service (app.powerbi.com), select the **Me** icon and choose either **Buy Pro now** or **Try paid features for free**.
+
+ :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot of choosing Buy or Try.":::
 
 ## Step 1: Get data
 
@@ -44,7 +46,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
 1. To begin, open the Power BI service (app.powerbi.com) in your browser. 
 
-    Don’t have an account? No worries, you can [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web)
+    Don’t have an account? No worries, you can [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web)
 
 1. Select **My workspace** in the navigation pane.
 
@@ -52,7 +54,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     The **Get Data** page opens.   
 
-3. Under the **Create new content** section, make sure **Files** is selected, then select the location where you saved the Excel file.
+3. Under the **Create new content** section, select **Files** > **Local File**, then select the location where you saved the Excel file.
    
     :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Screenshot of Create new content > Files.":::
 
@@ -67,7 +69,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     The report canvas is blank. We see the **Filters**, **Visualizations**, and **Fields** panes on the right.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Screenshot of blank report canvas.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-reports.png" alt-text="Screenshot of blank report canvas.":::
 
     > [!TIP]
     > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
@@ -150,11 +152,6 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
 
-    > [!NOTE]
-    > If you don't see the suggestions, turn on **New Q&A experience**.
-
-    :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="Screenshot of turning on new Q&A experience.":::
-
 4. Some suggestions return a single value. For example, select **what is the average cog**.
 
     Q&A searches for an answer and presents it in the form of a *card* visualization.
@@ -181,9 +178,9 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 12. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
 
-   You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
+    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
 ## Step 4: Reposition tiles
 
@@ -224,7 +221,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-[Quickly create a report by pasting data into the Power BI service](https://powerbi.microsoft.com/en-us/blog/quickly-create-reports-power-bi-service/)
+[Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
 
 Explore these collections of Microsoft Learn content for Power BI:
 

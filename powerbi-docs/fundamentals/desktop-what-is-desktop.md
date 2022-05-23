@@ -10,6 +10,7 @@ ms.topic: overview
 ms.date: 03/10/2021
 LocalizationGroup: Get started
 #Customer intent: As a data analyst or report creator, I want to know what Power BI Desktop is, so that I can decide whether it has the features and services I need to create reports.
+ms.custom: intro-overview
 ---
 # What is Power BI Desktop?
 

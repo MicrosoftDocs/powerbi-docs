@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/19/2021
+ms.date: 07/01/2021
 LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
@@ -52,13 +54,13 @@ In this tutorial, you'll learn to:
 
 ## Prepare your data 
 
-In the Navigator pane, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. In this tutorial, we're going to transform the data before loading.
+In the Navigator pane, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. In this tutorial, we're going to transform the data before loading.
 
-Select all tables, and choose **Transform Data**. Make sure not to select the sheets (labeled *_data*). 
+Select all tables, and choose **Transform Data**. Make sure not to select the sheets (labeled *_data*). 
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Load tables in Navigator.":::
 
-Check that the data types of the columns match those in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the table.
+Check that the data types of the columns match those in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the list.
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Check the data types of the columns.":::
 
@@ -91,7 +93,7 @@ Check that the data types of the columns match those in the following table. To 
 | SalesTerritory  | SalesTerritoryKey | Whole Number  | 
 |  SalesOrder   |  SalesOrderLineKey | Whole Number  | 
 
-Back on the **Home** tab, select **Close & Apply**. 
+Back on the **Home** tab, select **Close & Apply**. 
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-close-and-apply.png" alt-text="Power Query Close and Apply button.":::
 
@@ -194,8 +196,8 @@ Here are the hierarchies you need to create.
 |Customer     | Geography   | Country-Region  |
 |     | | State-Province  |
 |     |         | City |
-|Row4     |         | Postal Code |
-|Row5     |         | Customer   |
+|     |         | Postal Code |
+|     |         | Customer   |
 |Date     | Fiscal  | Year (Fiscal Year)  |
 |     |         | Quarter (Fiscal Quarter) |
 |     |         | Month |
@@ -238,7 +240,7 @@ Now your final data model is ready.
 
 Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to [learn about DAX in the Power BI documentation](/dax/). For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. This measure uses the [USERELATIONSHIP function](/dax/userelationship-function-dax) to activate the relationship between Sales and Date on DueDate for the context of the measure. It then uses [CALCULATE](/dax/calculate-function-dax) to sum the Sales Amount in that context.
 
-1. Select Data View on the left. 
+1. Select Data View on the left. 
 
     :::image type="content" source="media/desktop-dimensional-model-report/desktop-open-data-view.png" alt-text="Select Data view on the left.":::
 
@@ -246,7 +248,7 @@ Writing *measures* in the DAX formula language is super powerful for data modeli
 
     :::image type="content" source="media/desktop-dimensional-model-report/desktop-select-sales-table.png" alt-text="Select the Sales table in the Fields list.":::
 
-1. On the **Home** ribbon, select **New Measure**. 
+1. On the **Home** ribbon, select **New Measure**. 
 
 1. Select or type this measure to calculate the total sales amount by due date on the sales order instead of the default order date:
 
@@ -370,55 +372,55 @@ If you want to do some light formatting on this report to add more polish, here 
 
 ### Theme 
 
-- On the **View** ribbon, select **Themes**, and change the theme to **Executive**. 
+- On the **View** ribbon, select **Themes**, and change the theme to **Executive**. 
 
     :::image type="content" source="media/desktop-dimensional-model-report/formatting-report-change-theme.png" alt-text="Choose the Executive theme.":::
 
 ### Spruce up the visuals 
 
-Make the following changes on the **Format** tab in the Visualizations pane. 
+Make the following changes on the **Format** tab in the Visualizations pane. 
 
 :::image type="content" source="media/desktop-dimensional-model-report/formatting-report-formatting-pane.png" alt-text="Screenshot of the Format tab in the Visualizations pane.":::
 
 **Visual 2, Sales Amount by Date**
 
 1. Select Visual 2, Sales Amount by Date. 
-1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date". 
+1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date". 
 
     If you did add the DAX measure, change **Title text** to "Sales Amount by Order Date / Due Date". 
 
-1. Set **Text** size to **16 pt**. 
-1. Toggle **Shadow** to **On**. 
+1. Set **Text** size to **16 pt**. 
+1. Toggle **Shadow** to **On**. 
 
 **Visual 3, Order Quantity by Reseller Country**
 
 1. Select Visual 3, Order Quantity by Reseller Country. 
-1. In the **Map styles** section, change **Theme** to **Grayscale**. 
-1. In the **Title** section, change **Title text** to "Order Quantity by Reseller Country".
-1. Set **Text size** to **16 pt**. 
-1. Toggle **Shadow** to **On**.  
+1. In the **Map styles** section, change **Theme** to **Grayscale**. 
+1. In the **Title** section, change **Title text** to "Order Quantity by Reseller Country".
+1. Set **Text size** to **16 pt**. 
+1. Toggle **Shadow** to **On**.  
 
 **Visual 4, Sales Amount by Product Category and Reseller Business Type**
 
 1. Select Visual 4, Sales Amount by Product Category and Reseller Business Type. 
-1. In the **Title** section, change **Title text** to "Sales Amount by Product Category and Reseller Business Type".
-1. Set **Text size** to **16 pt**. 
-1. Toggle **Shadow** to **On**. 
+1. In the **Title** section, change **Title text** to "Sales Amount by Product Category and Reseller Business Type".
+1. Set **Text size** to **16 pt**. 
+1. Toggle **Shadow** to **On**. 
 
 **Visual 5, Fiscal calendar slicer**
 
 1. Select Visual 5, Fiscal calendar slicer.
-1. In the **Selection controls** section, toggle **Show "Select all"** option to **On**. 
-1. In the **Slicer header** section, set **Text size** to **16 pt**. 
+1. In the **Selection controls** section, toggle **Show "Select all"** option to **On**. 
+1. In the **Slicer header** section, set **Text size** to **16 pt**. 
 
 ### Add a background shape for the title 
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. 
 1. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
-1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9 (blue)**. 
-1. On the **Format** tab, select **Send backward** > **Send to back**. 
-1. Select the text in Visual 1, the title, and change **Font color** to **White**. 
+1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9 (blue)**. 
+1. On the **Format** tab, select **Send backward** > **Send to back**. 
+1. Select the text in Visual 1, the title, and change **Font color** to **White**. 
 
 ## Finished report 
 
@@ -439,21 +441,21 @@ In summary, this report answers your manager’s top questions:
 
 ## Save your report 
 
-- On the **File** menu, select **Save**. 
+- On the **File** menu, select **Save**. 
 
 
 ## Publish to the Power BI service to share 
 
 To share your report with your manager and colleagues, publish it to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes.
 
-1. In Power BI Desktop, on the **Home** ribbon select **Publish**. 
-1. You may need to sign in to the Power BI service. If you don't have an account yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web). 
+1. In Power BI Desktop, on the **Home** ribbon select **Publish**. 
+1. You may need to sign in to the Power BI service. If you don't have an account yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web). 
 
-1. Select a destination such as My workspace in the Power BI service > **Select**. 
+1. Select a destination such as My workspace in the Power BI service > **Select**. 
 
-1. Select **Open 'your-file-name' in Power BI**. Your completed report opens in the browser. 
+1. Select **Open 'your-file-name' in Power BI**. Your completed report opens in the browser. 
 
-1. Select **Share** at the top of the report to share your report with others.
+1. Select **Share** at the top of the report to share your report with others.
 
 ## Next steps 
 

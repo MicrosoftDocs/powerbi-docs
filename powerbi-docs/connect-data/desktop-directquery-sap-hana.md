@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2021
+ms.date: 10/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI
@@ -112,7 +112,7 @@ Because of this behavior, we recommend the items selected in **Get Data** or **P
 
 For both approaches to connecting to SAP HANA, recommendations for using DirectQuery also apply to SAP HANA, particularly those related to ensuring good performance. These recommendations are described in detail in the article [using DirectQuery in Power BI](desktop-directquery-about.md).
    
-## Limitations
+## Considerations and limitations
 
 The following list describes all SAP HANA features that are not fully supported, or features that behave differently when using Power BI. 
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 11/08/2019
+ms.date: 08/25/2021
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create your own measures in Power BI Desktop
@@ -15,9 +15,9 @@ By using measures, you can create some of the most powerful data analysis soluti
 
 ## Prerequisites
 
-- This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, work with multiple related tables, and add fields to the report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
+- This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Power Query Editor to import data, work with multiple related tables, and add fields to the report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
   
-- This tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company, Contoso. Because this data is imported from a database, you can't connect to the datasource or view it in Query Editor. Download and extract the file on your computer.
+- This tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company, Contoso. Because this data is imported from a database, you can't connect to the datasource or view it in Power Query Editor. Download and extract the file on your computer.
 
 ## Automatic measures
 
@@ -37,7 +37,7 @@ To change the chart aggregation, follow these steps:
 
 1. Select the **SalesAmount** visualization in the report canvas.  
 
-1. In the **Value** area of the **Visualizations** pane, select the down arrow to the right of **SalesAmount**. 
+1. In the **Values** area of the **Visualizations** pane, select the down arrow to the right of **SalesAmount**. 
 
 1. From the menu that appears, select **Average**. 
 

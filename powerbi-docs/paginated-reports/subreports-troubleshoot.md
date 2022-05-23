@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 04/29/2020
+ms.date: 10/19/2021
 ---
 
 # Troubleshoot subreports in Power BI paginated reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Sometimes when using subreports in paginated reports, you may get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. See [Subreports in Power BI paginated reports](subreports.md) for more background.
 
@@ -30,7 +30,7 @@ Sometimes when using subreports in paginated reports, you may get an unexpected 
 - The user doesn't have access to the subreport.
 - The number of subreports in the main report has reached the subreport limit (50 subreports).
 
-### Troubleshooting steps
+### Troubleshooting
 
 **In a workspace**
 
@@ -51,7 +51,7 @@ Sometimes when using subreports in paginated reports, you may get an unexpected 
 
 Power BI allows users to have multiple reports with the same name in the same workspace
 
-### Troubleshooting steps (for report authors)
+### Troubleshooting
 
 1. Open the main report in Power BI Report Builder and determine the name of the subreport.
 2. Look for reports with the same name in the workspace.
@@ -67,7 +67,7 @@ Power BI allows users to have multiple reports with the same name in the same wo
 
 "Data retrieval failed for the subreport, 'Subreport1', located at: 'InvoiceDetails'. Check the log files for more information."
 
-### Troubleshooting steps
+### Troubleshooting
 
 Same as the general troubleshooting steps for reports with data access issues.
 
@@ -78,7 +78,7 @@ Same as the general troubleshooting steps for reports with data access issues.
 ### Message 
 "One or more parameters were not specified for the subreport, 'Subreport1', located at: 'SubreportAWithDS'."
 
-### Troubleshooting steps (for the report author)
+### Troubleshooting
 
 1. Open the main report in Power BI Report Builder.
 2. Open the subreport in Power BI Report Builder.
@@ -94,7 +94,7 @@ Same as the general troubleshooting steps for reports with data access issues.
 
 "The report or subreport has a recursive subreport, 'Subreport1', that exceeded the maximum recursion limit allowed."
 
-### Troubleshooting steps (for report authors)
+### Troubleshooting
 
 - Reduce nesting.
 - Redesign the report structure.
@@ -112,7 +112,7 @@ Same as the general troubleshooting steps for reports with data access issues.
 - Multiple errors during subreport rendering, for example, parameter mismatch with data retrieval issues.
 - Unexpected errors.
 
-### Troubleshooting steps (for report authors)
+### Troubleshooting
 
 1. Verify that the subreport can render directly.
 2. If the subreport can render, check the parameters in both the subreport and main report.

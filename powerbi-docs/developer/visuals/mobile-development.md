@@ -1,8 +1,8 @@
 ---
 title:  Mobile development in Power BI
 description:  How to create mobile-friendly Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -24,7 +24,7 @@ The following requirements are essential for developing mobile-friendly visuals:
 
 * **Rendering**
 
-  A Power BI visual has to render on all [supported mobile devices](https://docs.microsoft.com/power-platform/admin/supported-web-browsers-and-mobile-devices), including browsers and applications. There should be no errors in reports, dashboards, or when running in **Focus** mode.
+  A Power BI visual has to render on all [supported mobile devices](/power-platform/admin/supported-web-browsers-and-mobile-devices), including browsers and applications. There should be no errors in reports, dashboards, or when running in **Focus** mode.
 
 * **Interactivity**
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/23/2021
+ms.date: 10/29/2021
 LocalizationGroup: Model your data
 ---
 # Work with Model view in Power BI Desktop
@@ -23,13 +23,9 @@ In the image, the *Connections* table has a *Seat ID* column that’s related to
 You can double-click a relationship to open it in the **Edit Relationship** dialog box. To learn more about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
 
 
-## New Model View (Preview)
+## Updated Model View
 
-Current releases of Power BI Desktop have a preview version of the new **Model view**, which you can enable. Once you switch to the new Model view, the change is permanent.
-
-:::image type="content" source="media/desktop-relationship-view/model-view-01.png" alt-text="Model view before update":::
-
-Once you update, you can see that the tables and connections are updated.
+Current releases of Power BI Desktop have the updated **Model view** enabled.
 
 :::image type="content" source="media/desktop-relationship-view/model-view-02.png" alt-text="Model view after update":::
 

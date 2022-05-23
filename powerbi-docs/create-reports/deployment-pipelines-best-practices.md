@@ -1,12 +1,13 @@
 ---
-title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool 
+title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 description: Learn what are the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: pbi-deployment
-ms.date: 03/04/2021
+ms.subservice: pbi-deployment-pipeline
+ms.date: 06/14/2021
+ms.custom: intro-deployment
 ---
 
 # Deployment pipelines best practices
@@ -78,7 +79,7 @@ As you can't edit datasets data sources in Power BI service, we recommend using 
 
 In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
 
-If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 Parameters have additional uses, such as making changes to queries, filters, and the text displayed in the report.
 
@@ -148,7 +149,7 @@ You can also use this approach if you don't want to overload your capacity.
 
 When you simulate a production stage, [check the report load and the interactions](../guidance/monitor-report-performance.md), and find out if the changes you made impact them.
 
-You also need to [monitor the load on the capacity](../admin/service-admin-premium-monitor-capacity.md), so that you can catch extreme loads before they reach production.  
+You also need to [monitor the load on the capacity](../enterprise/service-admin-premium-monitor-capacity.md), so that you can catch extreme loads before they reach production.  
 
 >[!NOTE]
 >It's recommended to monitor capacity loads again, after deploying updates to the production stage.
@@ -201,7 +202,13 @@ In case there are bugs in production that require a quick fix, don't be tempted 
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)

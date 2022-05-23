@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/05/2021
+ms.date: 09/08/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -41,7 +41,7 @@ To enable the **SAP edit variables** feature, in Power BI Desktop connect to an 
 
 ## Use SAP edit variables in Power BI Desktop
 
-When using SAP edit variables in Power BI Desktop, you can edit the variables by selecting the Edit variables link from **Edit Queries** menu in the ribbon. From there, the following dialog appears. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report using the following dialog.
+When using SAP edit variables in Power BI Desktop, you can edit the variables by selecting the Edit variables link from **Transform data** menu in the ribbon. From there, the following dialog appears. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report using the following dialog.
 
 ![Add items](media/service-edit-sap-variables/sap-variables-add-items.png)
 
@@ -65,6 +65,13 @@ You can do so by:
     ![Reset to default](media/service-edit-sap-variables/reset-to-default.png)
 
 When working on a published report in the Power BI service that uses SAP HANA or SAP BW with the **Edit variables** feature enabled, the report owner can change those defaults. The owner of the report can change the variables in edit mode, and save the report to enable those settings to become the *new default settings* for that report. Any other users who access the report after such changes are made by the report owner will see those new settings as the defaults.
+
+If you encounter errors that the Power BI service couldn't load data for the visual, couldn't retrieve data for the visual, or receive a dialog box error that the data source connection failed, take the following steps to resolve:
+
+* **Use *Edit variables* in the service** - set default values to variable in the service, by editing the report and saving it.
+
+* **Use *Edit variables* in Power BI Desktop** - if you don't want to use *Edit variables*, you can open the report in Power BI Desktop and uncheck the option at the report level.
+
 
 ## Next steps
 

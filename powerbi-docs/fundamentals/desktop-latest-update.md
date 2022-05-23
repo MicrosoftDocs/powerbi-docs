@@ -5,17 +5,17 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.custom: video-r88EE4IzZlE
+ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/12/2021
+ms.date: 05/12/2022
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## May 2021 Update (2.93.384.0)
+## May 2022 Update (2.105.664.0)
 
-We have an entire bouquet of blooming updates for Power BI this month. 
+This month has a spring in its step, with blossoming updates and sunshine-filled features that are sure to warm up your reports and models.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -37,73 +37,69 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 > You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
 
 > [!IMPORTANT]
-> Power BI Desktop is no longer be supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
+https://powerbi.microsoft.com/en-us/blog/19361/preview/#post-19361-_Toc103022211
+
 ### Reporting
-* Modern visual tooltips (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941229)  [[article]](/power-bi/create-reports/desktop-visual-tooltips)
-* Small multiples: now on by default, and updated roadmap (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=17)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941226)  [[article]](/power-bi/visuals/power-bi-visualization-small-multiples)  [[article 2]](/power-bi/visuals/power-bi-visualization-anomaly-detection)
-* New field list now generally available  [[video]](https://youtu.be/WosoIBDuU-I?t=46)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941227)  [[article]](/power-bi/transform-model/desktop-field-list)
-* Support for removing the sensitivity label in Power BI Desktop   [[video]](https://youtu.be/WosoIBDuU-I?t=243)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941230)  [[article]](/power-bi/admin/service-security-apply-data-sensitivity-labels)
+* New Format pane updates (preview)  [[video]](https://youtu.be/LTdpe2ENW4M?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022210)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* Canvas zoom now generally available  [[video]](https://youtu.be/LTdpe2ENW4M?t=118)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022211)  
+* Field parameters  [[video]](https://youtu.be/LTdpe2ENW4M?t=177)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022212)  [[article]](/power-bi/create-reports/power-bi-field-parameters)
+* Managing composite models on Power BI datasets [[video]](https://youtu.be/LTdpe2ENW4M?t=674)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022213)  
+* Data point rectangle select now generally available [[video]](https://youtu.be/LTdpe2ENW4M?t=743)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022214)   
+* Error bars for column and line combination charts (preview) [[video]](https://youtu.be/LTdpe2ENW4M?t=847)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022215) 
+* ArcGIS for Power BI visual updates [[video]](https://youtu.be/LTdpe2ENW4M?t=876)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022216) 
 
-### Analytics
-* Smart Narratives and anomaly detection (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=271)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941232)  [[article]](/power-bi/visuals/power-bi-visualization-smart-narrative)
-* Q&A now supports DirectQuery for Power BI datasets and Azure Analysis Services  [[video]](https://youtu.be/WosoIBDuU-I?t=309)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941228) 
-
-### Modeling
-* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=343)   [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md))  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941234)
-* Model view updates  [[video]](https://youtu.be/WosoIBDuU-I?t=428)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941235)  [[article]](/power-bi/transform-model/desktop-relationship-view)
 
 
 ### Data connectivity
-* New connector - EQuIS [[video]](https://youtu.be/WosoIBDuU-I?t=479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941237)
-* Updates to many connectors [[video]](https://youtu.be/WosoIBDuU-I?t=509)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941238) 
-* Connector deprecation - Microsoft Graph Security [[video]](https://youtu.be/WosoIBDuU-I?t=568)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941243) 
-
-
-
-### Visuals
-* New visuals from various providers [[video]](https://youtu.be/WosoIBDuU-I?t=994)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941254)
-
-### Template apps
-* Dataflows Snapshot Analysis [[video]](https://youtu.be/WosoIBDuU-I?t=1099)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941265)
-
-
-### Developers
-* Dialog boxes support for Power BI custom visuals [[video]](https://youtu.be/WosoIBDuU-I?t=1176)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941267)
-* Displaying a warning icon for a custom visual [[video]](https://youtu.be/WosoIBDuU-I?t=1217)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941268)
-
-### Other
-* Share and collaborate in Excel for the web connected to Power BI [[video]](https://youtu.be/WosoIBDuU-I?t=1238)  [[article]](desktop-diagnostics.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#excel_share_collaborate)
+* Many new data connectors [[video]](https://youtu.be/LTdpe2ENW4M?t=926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022211=7)
+* Azure Databricks (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022220)
+* Denodo (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022221)
+* Google Sheets (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022222)
+* Autodesk Construction Cloud (update) [[video]](https://youtu.be/LTdpe2ENW4M?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022223)
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+### Visuals
+* New visuals in AppSource [[video]](https://youtu.be/LTdpe2ENW4M?t=1310)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022236)
+* Many new visuals and updates [[video]](https://youtu.be/LTdpe2ENW4M?t=1335)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022238)
+* Charticulator now generally available [[video]](https://youtu.be/LTdpe2ENW4M?t=1345)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022240)
+
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Quickly create reports from SharePoint lists (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=594)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941245)
-* Reports, apps and dataflows endorsement is generally available [[video]](https://youtu.be/WosoIBDuU-I?t=788)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941246)
-* Datasets hub improvements [[video]](https://youtu.be/WosoIBDuU-I?t=842)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941247)
-* Quick edit Paginated Reports from the Power BI service [[video]](https://youtu.be/WosoIBDuU-I?t=883)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941248)
-* Single sign-on enabled for new on-premises data sources for Paginated Reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941249)
-* Downstream inheritance for sensitivity labels (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=917)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941250)
-
+* Managing Power BI subscriptions gets easier   [[video]](https://youtu.be/LTdpe2ENW4M?t=1017)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022225)  
+* Dataset hub improvements   [[video]](https://youtu.be/LTdpe2ENW4M?t=1073)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022226)  [
+* Deprecation of a Featured Dashboard as your default landing page   [[video]](https://youtu.be/LTdpe2ENW4M?t=1135)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022227)  
+* Deprecation of the Dashboard Performance Inspector   [[video]](https://youtu.be/LTdpe2ENW4M?t=1164)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022228) 
 
 ---
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/).
+### Others
+* Power BI Desktop infrastructure update (WebView2) [[video]](https://youtu.be/LTdpe2ENW4M?t=1369)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022242)
+
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/).
 
 
 ### Power BI monthly update video
-The following video describes each of these updates. You can also watch this video from the blog post:
+The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/WosoIBDuU-I]
+> [!VIDEO https://www.youtube.com/embed/LTdpe2ENW4M]
+
+> [!NOTE]  
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
 
 ## More videos
 
