@@ -31,17 +31,17 @@ The dataset details page enables you to perform a number of actions. The actions
 | **Download this file** | Downloads the .pbix file for this dataset. Select **File > Download this file**. |
 | **Manage permissions** | Opens the manage dataset permissions page. Select **Action bar > File > Manage permissions**. |
 | **Settings** | Opens the dataset settings page. Select **Action bar > File > Settings**. |
-| **Refresh now** | Launches a refresh of the dataset. Select **Action bar > File > Refresh now**. |
-| **Schedule refresh** | Opes the dataset settings page where you can set scheduled refresh. Select Action bar > File > Schedule refresh. |
-| **Share** | Opens the **Share dataset** dialog. Select **Action bar > File > Share**, or choose **Share dataset** on the **Share this data** tile. |
-| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. Select **Action bar > Create a report > From scratch**, or choose **Create a report** on the **Visualize this data** tile and choose **From scratch**. |
-| **Create a report from template** | Create a report based on this dataset, either auto-generated, from scratch, from a template (if one exists), or as a formatted table. |
-| **Create a report as formatted table** | Create a report based on this dataset, either auto-generated, from scratch, from a template (if one exists), or as a formatted table. |
-| **Analyze in Excel** | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. |
-| **Open lineage view** | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. |
-| **Impact analysis** | Open the [lineage view](../collaborate-share/service-data-lineage.md) or the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. |
-| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. |
-| **Show tables** | Open a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. |
+| **Refresh now** | Launches a refresh of the dataset. Select **Action bar > Refresh > Refresh now**. |
+| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. Select **Action bar > Refresh > Schedule refresh**. |
+| **Share** | Opens the **Share dataset** dialog. Select **Action bar > Share**, or choose **Share dataset** on the [Share this data tile](#share-this-data). |
+| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. Select **Action bar > Create a report > From scratch**, or choose **Create a report** on the [Visualize this data tile](#visualize-this-data) and choose **From scratch**. |
+| **Create a report from template** | Creates a copy of the template in *My Workspace*. Select **Action bar > Create a report > From template**, or choose **Create a report** on the [Visualize this data tile](#visualize-this-data) and choose **From template**. This action appears only if a related report template exists. |
+| **Create a report as formatted table** | Opens the formatted table editing canvas. Select **Action bar > Create a report > As formatted table**, or choose **Create a report** on the [Visualize this data tile](#visualize-this-data) and choose **As formatted table**.|
+| **Analyze in Excel** | Launchs [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. Select **Action bar > Analyze in Excel**. |
+| **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. Select **Action bar > Lineage > Open lineage view**. |
+| **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. Select **Action bar > Lineage > Impact analysis**. |
+| **Chat in Teams** | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams. Select **Action bar > Chat in Teams**. |
+| **Show tables** | Opens a side panel showing the dataset's tables. In the tables view you can create table previews by selecting desired columns. **Action bar > Show tables**. |
 
 ## View dataset metadata
 
@@ -68,9 +68,9 @@ The columns in the list of related reports are:
 * **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
 * **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
-### Visualize this data
+## Visualize this data
 
-In the Create a report section, click the **Create** button. Choose the desired option:
+To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option:
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
