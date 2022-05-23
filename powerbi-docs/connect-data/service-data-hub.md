@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 The data hub makes it easy to find, explore, and use the data items in your organization, such as datasets and datamarts. It provides information about the items as well as entry points for working with them, such as creating reports on top of them, using them with Analyze in Excel, accessing settings, managing permissions, and more.
 
-:::image type="content" source="./media/service-data-hub/data-hub-main-page.png" alt-text="{alt-text}":::
+:::image type="content" source="./media/service-data-hub/data-hub-main-page.png" alt-text="Screenshot of data hub main page.":::
 
 The data hub can be useful in many scenarios:
 * Data item owners can see usage metrics, refresh status, related reports, and lineage to help monitor and manage their data items.
@@ -112,11 +112,11 @@ To request build permission on a dataset, do one of the following:
 
 * From the data hub: Find the dataset in the data items list, hover over it with the mouse, and click the **Request access** icon that appears
 
-    :::image type="content" source="media/service-data-hub/datasets-request-access-icon.png" alt-text="Request access icon on the datasets hub.":::
+    :::image type="content" source="media/service-data-hub/datasets-request-access-icon.png" alt-text="Screenshot of the request access icon on the data hub.":::
 
 * From the dataset's details page, click the **Request access** button at the top right corner of the page.
 
-    :::image type="content" source="media/service-data-hub/datasets-request-access-button.png" alt-text="Request access icon on the datasets info page.":::
+    :::image type="content" source="media/service-data-hub/datasets-request-access-button.png" alt-text="Screenshot of the request access icon on the dataset details page.":::
 
 ## Users with free licenses
 
@@ -136,7 +136,7 @@ Dataset owners can make it possible for you to find their dataset without actual
 
 To request access, on the data hub, hover the mouse over the desired "discoverable" dataset and then click the **Request access** icon that appears
 
-:::image type="content" source="media/service-data-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
+:::image type="content" source="media/service-data-hub/datasets-request-access-icon-discoverable.png" alt-text="Screenshot of the request access icon for discoverable datasets.":::
   
 ## Next steps
 * [Data details pages](./service-data-details-page.md)
