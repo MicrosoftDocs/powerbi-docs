@@ -57,7 +57,7 @@ The data hub has two sections:
 
 ## Recommended items
 
-Recommended data items are endorsed data items (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and how recently you've visited reports and/or dashboards that are related to them.
+Recommended data items are data items that have been certified or promoted by someone in your organization or have recently been refreshed or accessed.
 
 ![Screenshot of recommended items on the data hub.](media/service-data-hub/recommended-data-items.png)
 
@@ -70,7 +70,7 @@ Recommended data items are endorsed data items (promoted or certified) that are 
 ![Screenshot of the data items list on the data hub.](media/service-data-hub/data-items-list.png)
 
 1. Open the data items's details page.
-1. A greyed-out icon indicates that you don't have permissions to access that data items's details page. Data items with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. A greyed-out icon indicates that you don't have permissions to access that data items's details page. Data items with greyed-out icons only show up for you in the list if [data discoverability](../collaborate-share/service-discovery.md) is enabled for you.
 1. Request access.
 1. Open the actions menu.
 1. Refresh the data item.

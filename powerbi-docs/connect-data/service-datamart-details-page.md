@@ -31,7 +31,7 @@ The datamart details page enables you to perform a number of actions. The action
 | **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now** |
 | **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
 | **Refresh history** | Opens Refresh history window where you see the time, duration, and status of each refresh. You can download the history as a *.csv* file. | **Refresh > Refresh history** |
-| **Share** | Opens the **Share datamart** dialog. People you share the datamart with get Build permission on the datamart. | **Share**, or use the [Share this data tile](#share-this-data). |
+| **Share** | Opens the **Share datamart** dialog. Sharing a datamart allows recipients to build content based on the underlying dataset and query the corresponding SQL endpoint. | **Share**, or use the [Share this data tile](#share-this-data). |
 | **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the datamart. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
 | **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this datamart. | **Analyze in Excel** |
 | **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the datamart. | **Lineage > Open lineage view** |
@@ -77,7 +77,7 @@ To create a report based on the dataset, click the **Create report** button on t
 
 ## Share this data
 
-You can share the datamart with other users in your organization. Clicking the **Share datamart** button opens the [Share datamart dialog](service-datasets-share.md). People you share the datamart with get Build permission on the datamart.
+You can share the datamart with other users in your organization. Clicking the **Share datamart** button opens the [Share datamart dialog](service-datasets-share.md). People you share the datamart with will be able to build content based on the underlying dataset and query the corresponding SQL endpoint.
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-share-datamart.png" alt-text="Screenshot of datamart share this data section on datamart details page.":::
   
