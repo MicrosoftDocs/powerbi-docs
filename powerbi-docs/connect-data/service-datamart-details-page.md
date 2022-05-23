@@ -30,13 +30,9 @@ The datamart details page enables you to perform a number of actions. The action
 | **Settings** | Opens the datamart settings page. | **File > Settings** |
 | **Refresh now** | Launches a refresh of the dataset. | **Refresh > Refresh now** |
 | **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
-| **Refresh history** | Opens Refresh history window where you see the time, duration, and status of each refresh.
-
-![Screenshot of the datamart refresh history window.](media/service-datamart-details-page/datamart-details-page-refresh-history-window.png)| **Refresh > Refresh history** |
-| **Share** | Opens the **Share dataset** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
-| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the dataset. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
-| **Create a report from template** | Creates a copy of the template in *My Workspace*. This action is only available if a related report template exists.| **Create a report > From template**, or use the [Visualize this data tile](#visualize-this-data). |
-| **Create a report as formatted table** | Opens the formatted table editing canvas. | **Create a report > As formatted table**, or use the [Visualize this data tile](#visualize-this-data).|
+| **Refresh history** | Opens Refresh history window where you see the time, duration, and status of each refresh. ![Screenshot of the datamart refresh history window.](media/service-datamart-details-page/datamart-details-page-refresh-history-window.png) | **Refresh > Refresh history** |
+| **Share** | Opens the **Share datamart** dialog. People you share the datamart with get Build permission on the datamart. | **Share**, or use the [Share this data tile](#share-this-data). |
+| **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the datamart. | **Create a report > From scratch**, or use the [Visualize this data tile](#visualize-this-data). |
 | **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset. | **Analyze in Excel** |
 | **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the dataset. | **Lineage > Open lineage view** |
 | **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this dataset. | **Lineage > Impact analysis** |
