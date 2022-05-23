@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 The data hub makes it easy to find, explore, and use the data items in your organization, such as datasets and datamarts. It provides information about the items as well as entry points for working with them, such as creating reports on top of them, using them with Analyze in Excel, accessing settings, managing permissions, and more.
 
-![Screenshot of the data hub in the Power BI service](./media/service-data-hub/datasets-hub-main-page.png)
+:::image type="content" source="./media/service-data-hub/datasets-hub-main-page.png" alt-text="{alt-text}":::
 
 The data hub can be useful in many scenarios:
 * Data item owners can see usage metrics, refresh status, related reports, and lineage to help monitor and manage their data items.
