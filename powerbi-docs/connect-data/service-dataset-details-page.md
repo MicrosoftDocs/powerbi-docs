@@ -58,7 +58,7 @@ The dataset details section shows
 
 The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
-:::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of dataset related section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of explore related reports section on dataset details page.":::
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
@@ -72,7 +72,7 @@ The columns in the list of related reports are:
 
 To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
 
-:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of dataset related section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of visualize this data section on data details page.":::
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
