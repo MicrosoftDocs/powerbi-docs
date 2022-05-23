@@ -139,6 +139,7 @@ To request access, on the data hub, hover the mouse over the desired "discoverab
 :::image type="content" source="media/service-data-hub/datasets-request-access-icon-discoverable.png" alt-text="Request access icon for discoverable datasets.":::
   
 ## Next steps
+* [Data details pages](./service-data-details-page.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
 * [Endorse your dataset](../collaborate-share/service-endorse-content.md)
