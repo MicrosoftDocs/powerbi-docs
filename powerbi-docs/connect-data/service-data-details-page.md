@@ -28,12 +28,12 @@ The page header displays the dataset name, endorsement, if any, and dataset owne
 
 # [Datamarts](#tab/datamarts)
 
+[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
+
 The datamart details page
-* * Shows you metadata about the dataset, including description, endorsement, sensitivity, and connection string.
+* Shows you metadata about the dataset, including description, endorsement, sensitivity, and connection string.
 * Provides actions such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports that are built on top of the datamart.
-
-[ ![Screenshot of datamart details page.](media/service-data-details-page/datamart-details-page-inline-and-expanded.png)](media/service-data-details-page/datamart-details-page-inline-and-expanded.png#lightbox)
 
 ---
 
@@ -72,7 +72,7 @@ The Action bar at the top of the page contains a number of actions that you can 
 
 # [Datasets](#tab/datasets)
 
-image
+:::image type="content" source="media/service-data-details-page/dataset-details-page-details-section.png" alt-text="Screenshot of dataset details section on data details page.":::
 
 The dataset details section shows
 * The name of the workspace where the item is located.
@@ -99,22 +99,26 @@ The datamart details section shows
 
 # [Datasets](#tab/datasets)
 
-image
+The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
-The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of a report or scorecard by selecting the line the item is on and clicking the **Save a copy** icon that appears.
+:::image type="content" source="media/service-data-details-page/dataset-details-page-related-section.png" alt-text="Screenshot of dataset related section on data details page.":::
+
+The columns in the list of related reports are:
+* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
+* **Type**: Item type, for example, report or scorecard.
+* **Endorsement**: Endorsement status.
+* **Workspace**: The name of the workspace where the related item is located.
+* **Unique viewers**: Shows the total number of unique users who viewed the item at least once in the last 30 days, excluding the current day's views.
+* **Views**: Shows the total number of times an item was viewed in the last 30 days, excluding the current day's views.
 
 # [Datamarts](#tab/datamarts)
 
-The **See what already exists section** shows you reports that are built on top of the datamart's auto-generated dataset.
+The **See what already exists section** shows you reports that are built on top of the datamart's auto-generated dataset. You can create a copy of a report by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
 :::image type="content" source="media/service-data-details-page/datamart-details-page-related-section.png" alt-text="Screenshot of datamart related section on data details page.":::
 
 >[!NOTE]
 > Reports build on top of other datasets created from the datamart **aren't** shown in this section. 
-
-This section also shows you usage metrics for the related items.
-
-You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
 The columns in the list of related reports are:
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
