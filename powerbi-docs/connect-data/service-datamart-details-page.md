@@ -71,7 +71,7 @@ The columns in the list of related reports are:
 
 To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
 
-:::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of dataset related section on data details page.":::
+:::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of datamart related section on datamart details page.":::
 
 * **From scratch**: Opens the report editing canvas to a new report built on the dataset. When you save your new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on the workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in *My workspace*.
 
@@ -79,7 +79,7 @@ To create a report based on the dataset, click the **Create report** button on t
 
 You can share the datamart with other users in your organization. Clicking the **Share datamart** button opens the [Share datamart dialog](service-datasets-share.md). People you share the datamart with get Build permission on the datamart.
 
-:::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of datamart share this data section on datamart details page.":::
+:::image type="content" source="media/service-datamart-details-page/datamart-details-page-share-datamart.png" alt-text="Screenshot of datamart share this data section on datamart details page.":::
   
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
