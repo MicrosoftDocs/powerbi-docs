@@ -8,7 +8,7 @@
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
     - name: Multi-role row-level security for composite models may fail
-      href: known-issues/known-issue-178-multirole-rls-composite-model-fail.md
+      href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Unable to load Power BI dataset list in Excel
       href: known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md    
     - name: Try it button missing on REST API pages
