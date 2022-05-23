@@ -176,6 +176,8 @@ landingContent:
             url: powerbi-migration-deploy-support-monitor.md
           - text: Learn from customer Power BI migrations
             url: powerbi-migration-learn-from-customers.md
+          - text: Migrate AAS models to Power BI Premium
+            url: migrate-azure-analysis-services-to-powerbi-premium.md
 
   # Card (optional)
   - title: Adoption roadmap
