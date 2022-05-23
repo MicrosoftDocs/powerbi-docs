@@ -47,7 +47,11 @@
       - name: "Composite model guidance"
         href: composite-model-guidance.md   
       - name: "Row-level security (RLS) guidance"
-        href: rls-guidance.md 
+        href: rls-guidance.md
+      - name: "Migrate AAS models to Power BI Premium"
+        href: migrate-azure-analysis-services-to-powerbi-premium.md
+      - name: "Migrate AAS models to Power BI Premium scenarios"
+        href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
     - name: DAX
       items:
       - name: "Appropriate use of error functions"
