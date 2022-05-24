@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/12/2022
+ms.date: 05/18/2022
 LocalizationGroup: Reports
 ---
 # Start in Power BI with Analyze in Excel
@@ -88,6 +88,7 @@ Refresh for external connections isn't supported in Excel Online. Since users ne
 - You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Guest users can't analyze Power BI data in Excel for datasets sent from a tenant different from the one hosting the datasets. 
 - Analyzing Power BI data in Excel is a Power BI service feature. You can't analyze Power BI data in Excel from Power BI Report Server or Power BI Embedded.
+- Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
 
 
 See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements when connecting to Power BI data in Excel.
