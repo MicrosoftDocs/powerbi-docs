@@ -18,7 +18,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ETA: June 5, 2022
 
-* Adding new capabilities property: [privileges](capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires) and two privileges:
+* Adding new capabilities property: [privileges](capabilities.md) and two privileges:
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
