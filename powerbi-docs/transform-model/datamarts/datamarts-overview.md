@@ -80,6 +80,9 @@ Use **datamarts** when you need to:
 * Provide accessible data through a SQL endpoint
 * Enable users who don’t have access to Power BI Desktop
 
+## Datamarts and deployment pipelines
+
+Datamarts are supported in [deployment pipelines](../../create-reports/deployment-pipelines-overview.md). Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use [rules](../../create-reports/deployment-pipelines-get-started.md#step-4---create-deployment-rules) to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](../../create-reports/deployment-pipelines-get-started.md).
 
 ## Next steps
 This article provided an overview of datamarts and the many ways you can use them. 
