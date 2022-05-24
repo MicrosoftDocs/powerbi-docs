@@ -24,7 +24,7 @@ The data discovery experience starts on the data hub. To get to the data hub:
 
 The image below shows the datasets hub in the Power BI service.
 
-:::image type="content" source="media/end-user-datasets-hub/power-bi-data-hub-main-page.png" alt-text="Screenshot of data hub page.":::
+:::image type="content" source="media/end-user-data-hub/power-bi-data-hub-main-page.png" alt-text="Screenshot of data hub page.":::
 
 The data hub presents you with a selection of recommended data items and a list of all the data items in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
 
