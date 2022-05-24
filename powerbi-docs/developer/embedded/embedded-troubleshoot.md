@@ -234,7 +234,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: *visual title* | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
-### Get report fails - error 401
+### Get report fails - error 401 - resolve themselves
 
 Sometimes users in the *user owns data* scenario will get a 401 error that resolves itself after they access the Power BI portal. When this happens, the ISV should add the [RefreshUser Permissions](/rest/api/power-bi/users/refresh-user-permissions) call in their app as explained in [Update user permissions](embed-sample-for-your-organization.md#update-user-permissions).
 
