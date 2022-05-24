@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 05/23/2022
 LocalizationGroup: Reports
 ---
 # Let report readers use field parameters to change visuals (preview)
@@ -74,5 +74,5 @@ Parameter = {
 
 - AI visuals and Q&A aren't supported with the feature.
 - There's no way for your report users to select "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
-- Currently you can't create parameters in live connection data sources.
+- Currently you can't create parameters in live connection data sources, without a local model. However, using DirectQuery for Power BI datasets and AS (preview), you can add a local model to create field parameters. Read more about [DirectQuery for Power BI datasets and AS (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md#using-directquery-for-live-connections).
 - You can't use implicit measures for now, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. Read more about [implicit vs. explicit measures](../guidance/star-schema.md#measures).
