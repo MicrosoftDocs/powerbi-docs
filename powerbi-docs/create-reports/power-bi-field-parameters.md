@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 # Let report readers use field parameters to change visuals (preview)
 Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they're interested in. 
 
-In this example, the report reader can dynamically update the bar chart and table by selecting a value in the horizontal slicers above the visuals. Currently the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
+In this example, the report reader can dynamically update the bar chart and table by selecting a field in the horizontal slicers above the visuals. Currently the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of example field parameters that dynamically update visuals based on the report reader selection.":::
  
