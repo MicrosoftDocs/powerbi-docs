@@ -148,9 +148,9 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/service-datasets-hub.md
+        - url: connect-data/service-data-hub.md
           itemType: concept
-          text: Discover data on the datasets hub
+          text: Discover data on the data hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
@@ -342,6 +342,9 @@ additionalContent:
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
           url: /power-automate/
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
           url: /power-virtual-agents/
