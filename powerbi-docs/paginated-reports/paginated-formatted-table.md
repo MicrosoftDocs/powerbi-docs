@@ -20,7 +20,7 @@ You can use the formatted table feature to create paginated reports in any moder
 
 ## Get started
 
-There are three different ways you can create a formatted table from the Power BI service.
+To create a formatted table from the Power BI service, you can start in three different places.
 
 ### In list view
 
@@ -41,7 +41,7 @@ There are three different ways you can create a formatted table from the Power B
 
     :::image type="content" source="media/paginated-formatted-table/formatted-table-data-hub.png" alt-text="Screenshot of Create formatted table in the Data hub.":::
 
-No matter which route you take, the new paginated report online editing experience opens. It's called formatted table.
+No matter where you start, the new paginated report online editing experience opens. It's called a *formatted table*.
 
 ## Create a table
 
