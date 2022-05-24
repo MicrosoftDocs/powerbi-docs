@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/04/2022
+ms.date: 05/25/2022
 ---
 
 # Change log for Power BI Report Server
@@ -25,6 +25,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     	   - Several minor UI fixes in new portal experience.
     - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
         - Features
+            - Custom Visual API shipped with release - version v4.0.0
             - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
             -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](/sql/reporting-services/branding-the-web-portal#colorsjson-example). 
         - Bug fixes
@@ -58,6 +59,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
     - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
         - Features
+            - Custom Visual API shipped with release - version v3.8.0 
             - Updated support for Power BI reports including those with small multiples.
             - Updated Power BI Report Server portal experience as default experience.
         - Bug fixes
