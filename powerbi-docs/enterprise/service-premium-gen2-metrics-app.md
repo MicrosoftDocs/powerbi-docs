@@ -282,7 +282,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!NOTE]
->All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 10,000 impactful activities in the capacity.
+>All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity.
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
