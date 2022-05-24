@@ -3,7 +3,7 @@ title: "Create exportable formatted data tables in the Power BI service"
 description: In this article, you learn how to create a paginated report using the interactive formatted table editor in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer:ebendinsky
+ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
