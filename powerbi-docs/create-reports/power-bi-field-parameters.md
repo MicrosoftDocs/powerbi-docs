@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 # Let report readers use field parameters to change visuals (preview)
 Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they're interested in. 
 
-In this example, the bar chart and table are dynamically updated. They measure COGS and analyze by Product based on the user’s selection within the slicers.
+In this example, the report reader can dynamically update the bar chart and table by selecting a value in the horizontal slicers above the visuals. Currently the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of example field parameters that dynamically update visuals based on the report reader selection.":::
  
@@ -57,7 +57,7 @@ From the context menu, you can also choose if the field parameter shows the valu
 
 If you need to edit an existing field parameter, you modify the DAX directly. 
 
-For example, if you want to add a new field to an existing parameter, press Shift + Enter to start a new entry. Add a comma between each entry, and match the format shown in this example:
+For example, if you want to add a new field to an existing parameter, press Shift + Enter to start a new entry. Add a comma between each entry, and match the format shown in this example. The number after the comma indicates the order of the fields:
 
 ```dax
 Parameter = {
