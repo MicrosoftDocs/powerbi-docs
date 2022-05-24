@@ -22,10 +22,15 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title           |  Issue publish date |  Status*  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+<<<<<<< HEAD
 |  187      |  Create and Author Data            |  [Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop](known-issue-187-show-bar-only-data-bars-doesnt-work.md)   |  May 23, 2022        |  Open |
 |  185      |  Share and Collaborate             |  [Duplicate or erroneous email may be received during classic workspace upgrade](known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md)   |  May 23, 2022        |  Open |
 |  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multirole-rls-composite-model-fail.md)   |  May 18, 2022        |  Open |
 |  175      |  Consume and View                  |  [Unable to load Power BI dataset list in Excel](known-issue-175-unable-to-load-dataset-list-in-excel.md)   |  April 20, 2022        |  Fixed: May 19, 2022 |
+=======
+|  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  May 18, 2022        |  Open |
+|  175      |  Consume and View                  |  [Unable to load Power BI dataset list in Excel](known-issue-175-unable-to-load-dataset-list-in-excel.md)   |  April 20, 2022        |  Open |
+>>>>>>> d1b0fb743f38265255f55e8e337fb6009b42e147
 |  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  Open |
 |  167      |  Consume and View                  |  [Matrix banded row colors appear incorrectly in Service](known-issue-167-matrix-banded-row-colors-incorrect-service.md)   |  April 7, 2022        |  Fixed: May 10, 2022 |
 |  166      |  Create and Author Data            |  [DAX query fails due to parameter case sensitivity](known-issue-166-dax-query-fails-parameter-case-sensitivity.md)   |  April 7, 2022        |  Fixed: May 19, 2022 |
