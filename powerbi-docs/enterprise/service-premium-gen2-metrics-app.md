@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/28/2022
+ms.date: 05/22/2022
 LocalizationGroup: Premium 
 ---
 
@@ -426,7 +426,11 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
 * The app only supports monitoring datasets that use [import mode](../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
 
-* The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
+* The *Users* column in the visuals displays the number of distinct users that performed operations against the dataset. These operations may be performed by the users themselves, or by Power BI on behalf of the users. When reviewing the visuals in the app, take into consideration that background operations performed by Power BI, may inflate the count of unique users.
+
+    * *Operations triggered by users* - [Interactive operations](service-premium-interactive-background-operations.md#interactive-operations) that include opening a report or clicking a slicer.
+
+    * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries provide a much faster performance for users, when they next view the dashboard.
 
 * [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
 

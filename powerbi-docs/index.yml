@@ -342,6 +342,9 @@ additionalContent:
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
           url: /power-automate/
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
           url: /power-virtual-agents/
