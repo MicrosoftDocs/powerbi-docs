@@ -32,11 +32,11 @@ Let's take a look at how datamarts can be used with each, in turn.
 
 Selecting the **More** opens the report editing canvas to a new report that is built on the dataset. When you save your new report, it's saved in the workspace that contains the dataset as long as you have write permissions on that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
 
-**Scenario 2:** Using the auto-generated dataset and dataset information page. In the Power BI workspace list, navigate to the auto-generated dataset to get to the Dataset information page, where you can find details about the dataset and see related reports. You can also create a report directly from this page. To learn more about creating a report in this fashion, see [discovering datasets in the Power BI service](/power-bi/connect-data/service-datasets-hub).
+**Scenario 2:** Using the auto-generated dataset and dataset details page. In the Power BI workspace list, click the auto-generated dataset's name to get to the Dataset details page, where you can find details about the dataset and see related reports. You can also create a report directly from this page. To learn more about creating a report in this fashion, see [Dataset details](../../connect-data/service-dataset-details-page.md).
 
-In the data hub, you'll see datamarts and their associated auto-generated datasets. Select the datamart to navigate to the information page where you can see datamart’s metadata, supported actions, lineage and impact analysis, along with related reports created from that datamart. Auto-generated datasets derived from datamarts behave the same as any dataset.
+In the data hub, you'll see datamarts and their associated auto-generated datasets. Select the datamart to navigate to the datamart's details page where you can see the datamart’s metadata, supported actions, lineage and impact analysis, along with related reports created from that datamart. Auto-generated datasets derived from datamarts behave the same as any dataset.
 
-To find the datamart you, begin with the datasets hub page. The following image below shows the datasets hub in the Power BI service, with the following numbered information: 
+To find the datamart, you begin with the data hub. The image below shows the data hub in the Power BI service, with the following numbered information: 
 
 1.	Select a datamart to view its datamart details page
 2.	Select the **More** menu (...) to display the options menu
