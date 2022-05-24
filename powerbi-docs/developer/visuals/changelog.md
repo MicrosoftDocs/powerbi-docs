@@ -21,15 +21,18 @@ ETA: June 5, 2022
 * Adding new capabilities property: [privileges](capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires) and two privileges:
   * web access
   * download file from custom visual
-* Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409).
+* Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
+* Supports Desktop S06
 
 ## API v4.5.0
 
 * New API to allow [downloading visual to file](./file-download-api.md)
+* Supports Desktop S05
 
 ## API v4.2.0
 
 * New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
+* Supports Desktop S02
 
 ## API v3.8.0
 
