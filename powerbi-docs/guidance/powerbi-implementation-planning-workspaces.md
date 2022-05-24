@@ -139,7 +139,7 @@ The following table includes some of the most common requirements when a workspa
 | --- | --- |
 | Ownership and support | Ownership is assigned, with clear responsibilities for technical content owner and/or subject matter expert.<br />User support team/person is assigned, and users are clear how to request help or submit issues.<br />A mechanism is in place for user feedback, questions, and enhancement requests.<br />A communication plan exists to announce changes. |
 | Workspace setup | The workspace is well-organized with a well-defined purpose.<br />A specific naming contention is used. |
-| Accuracy | All content is certified.<br />- Data quality and validations are automated. |
+| Accuracy | All content is certified.<br />Data quality and validations are automated. |
 | Distribution | A Power BI app is used for content distribution. |
 | Security and data protection | Azure AD groups are used (instead of individuals) for all security roles and permissions.<br />Sensitivity labels are used for information protection.<br />Only sanctioned (or approved) data sources are permitted.<br />All source files reside in a secure location that's backed up. |
 | Change management | Separate development, test, and production workspaces are used.<br />Versioning or source control is used for all original files (development files and data source files).<br />Change management processes, including deployment pipelines and/or DevOps processes are followed.<br /> |

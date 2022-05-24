@@ -36,9 +36,8 @@ There's a process for a system administrator to [take over the unmanaged tenant]
 
 When considering your Azure AD tenant for use with Power BI, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Confirm the Azure tenant is managed:** Verify your Azure AD tenant is actively being managed by the system administrators. If it's not, initiate the process to take over the unmanaged tenant. |
+> [!div class="checklist"]
+> - **Confirm the Azure tenant is managed:** Verify your Azure AD tenant is actively being managed by the system administrators. If it's not, initiate the process to take over the unmanaged tenant.
 
 ### Tenant ID for external users
 
@@ -52,10 +51,9 @@ If you intend to use Power BI with external users, [custom branding](../admin/se
 
 When considering your tenant ID for use with Power BI, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Include your CTID in relevant user documentation:** Include the tenant ID (CTID) in any user documentation related to distributing content to external guest users. |
-| **Set up custom branding in Power BI:** In the admin portal, update the custom branding if you intend to use Power BI with external guest users. |
+> [!div class="checklist"]
+> - **Include your CTID in relevant user documentation:** Include the tenant ID (CTID) in any user documentation related to distributing content to external guest users.
+> - **Set up custom branding in Power BI:** In the admin portal, update the custom branding if you intend to use Power BI with external guest users.
 
 ## Azure AD administrators
 
@@ -71,10 +69,9 @@ The following are a few of the most common reasons for collaboration between the
 
 When considering how to work with your Azure AD administrators, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Identify your Azure AD administrators:** Make sure you know who administers Azure AD for your organization. Be prepared to work with them as needed. |
-| **Involve your Azure AD administrators:** As you undergo the Power BI planning and implementation process, invite an Azure AD administrator to pertinent meetings and involve them in relevant decision-making. |
+> [!div class="checklist"]
+> - **Identify your Azure AD administrators:** Make sure you know who administers Azure AD for your organization. Be prepared to work with them as needed.
+> - **Involve your Azure AD administrators:** As you undergo the Power BI planning and implementation process, invite an Azure AD administrator to pertinent meetings and involve them in relevant decision-making.
 
 ## Location for storage of data
 
@@ -100,9 +97,8 @@ You may discover that your Power BI tenant currently resides in a location that 
 
 When considering the default data region for your Power BI tenant, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Identify your default data region:** Verify what the default data region is for your Power BI tenant. If it's an unacceptable geographic region, investigate the process to move your Power BI tenant. |
+> [!div class="checklist"]
+> - **Identify your default data region:** Verify what the default data region is for your Power BI tenant. If it's an unacceptable geographic region, investigate the process to move your Power BI tenant.
 
 ### Other specific data regions
 
@@ -116,9 +112,8 @@ For situations when data needs to be stored elsewhere from the default data regi
 
 When considering other specific data regions for your Power BI tenant, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Identify other data residency requirements:** For specific situations where data should be stored elsewhere from the default data region, investigate the use of Premium multi-geo. |
+> [!div class="checklist"]
+> - **Identify other data residency requirements:** For specific situations where data should be stored elsewhere from the default data region, investigate the use of Premium multi-geo.
 
 ## Next steps
 
