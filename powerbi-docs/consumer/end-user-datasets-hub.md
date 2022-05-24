@@ -18,7 +18,7 @@ This article explains what you see on the data hub and describes how to use it. 
 
 ## Find the data you need
 
-The dataset discovery experience starts on the data hub. To get to the data hub:
+The data discovery experience starts on the data hub. To get to the data hub:
 * In the Power BI service left navigation pane, select **Data hub**.
 * In the Power BI app in Teams, select either the **Data hub** tab or **Data hub** in the navigation pane.
 
