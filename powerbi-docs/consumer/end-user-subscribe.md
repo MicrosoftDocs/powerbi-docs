@@ -127,6 +127,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
 
+
 - You can set up an unlimited number of subscriptions per paginated report. 
 
 - The maximum attachment size is 25 MB.
