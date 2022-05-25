@@ -16,7 +16,7 @@ By using any programming language that supports REST calls, you can perform data
 
 Optimizing refresh for large and complex partitioned datasets, however, have traditionally been invoked with programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). These methods can require often unreliable, long-running HTTP connections.
 
-The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset) enables dataset-refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard, app services refresh operations, ***Enhanced refresh*** with the Power BI REST API provides additional features beneficial for large models, such as:
+The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset) enables dataset-refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard, app services refresh operations, ***Enhanced refresh*** with the Refresh Dataset REST API provides additional customization options and features beneficial for large models:
 
 - Batched commits
 - Partition-level refresh
@@ -25,7 +25,7 @@ The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-data
 - Cancel refresh operations
 
 > [!NOTE]
-> During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh REST API by its inherent nature also runs asynchronously.
+> During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
 
 ## Base URL
 
