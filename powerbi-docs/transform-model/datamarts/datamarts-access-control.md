@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 
 # Control access to datamarts
 
-This article describes access control to datamarts, including row level security, rules in Power BI Desktop, and how datamarts might become in accessible or unavailable.
+This article describes access control to datamarts, including row level security, rules in Power BI Desktop, and how datamarts might become inaccessible or unavailable.
 
 ## How datamarts become unavailable
 
