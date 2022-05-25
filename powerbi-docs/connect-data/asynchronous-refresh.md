@@ -1,25 +1,31 @@
 ---
-title: Asynchronous refresh with the Power BI REST API 
-description: Describes asynchronous refresh by using the Power BI REST API
+title: Enhanced refresh with the Power BI REST API 
+description: Describes enhanced refresh by using the Power BI REST API
 author: minewiskan
 ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/26/2022
+ms.date: 05/25/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
-# Asynchronous refresh with the Power BI REST API (Preview)
+# Enhanced refresh with the Power BI REST API
 
-By using any programming language that supports REST calls, you can perform asynchronous data-refresh operations on your Power BI datasets.
+By using any programming language that supports REST calls, you can perform dataset refresh operations by using the Power BI REST API.
 
-Dataset refresh operations can take some time depending on a number of factors including data volume, level of optimization using partitions, etc. Traditionally, optimizing refresh for large and complex datasets have been invoked with existing programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). These methods can, however, require often unreliable, long-running HTTP connections.
+Optimizing refresh for large and complex partitioned datasets, however, have traditionally been invoked with programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). These methods can require often unreliable, long-running HTTP connections.
 
-The Power BI REST API enables dataset-refresh operations to be carried out asynchronously. By using the REST API, long-running HTTP connections from client applications aren't necessary. Asynchronous refresh also includes additional reliability features such as auto retries and batched commits.
+The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset) enables dataset-refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard, app services refresh operations, ***Enhanced refresh*** with the Power BI REST API provides additional features beneficial for large models, such as:
 
-> [!IMPORTANT]
-> This feature is in **Preview**. When in preview, functionality and documentation are likely to change.
+- Batched commits
+- Partition-level refresh
+- Apply incremental refresh policies
+- Get refresh operation details
+- Cancel refresh operations
+
+> [!NOTE]
+> During preview, this feature was known as Asynchronous refresh. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
 
 ## Base URL
 
@@ -84,11 +90,10 @@ Only one refresh operation at a time is accepted for a dataset. If there's a cur
 
 ### Parameters
 
-To perform an asynchronous refresh operation, in addition to the required `notifyOption` parameter, you must specify at least one additional parameter. Additional parameters can specify the default or an optional value. When specified, all other parameters are applied to the operation using the default value. If no additional parameter other than `notifyOption` is specified, a regular non-asynchronous refresh operation is performed.
+To perform an ***enhanced*** refresh operation, **you must specify one or more parameters** in the Request Body. Additional parameters can specify the default or an optional value. When specified, all other parameters are applied to the operation using the default value. If no additional parameters are specified, other parameters will not be applied and a standard refresh operation is performed.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
-|`notifyOption`| String |  |(Required) Mail notification options: `MailOnCompletion`, `MailOnFailure`, or `NoNotification`. |
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. <br>`Add` type is not supported.      |
 |`commitMode`    |   Enum       |    `transactional`     |     Determines if objects will be committed in batches or only when complete. Modes include: `transactional`, `partialBatch`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads on which to run processing commands in parallel. This value aligned with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
@@ -103,7 +108,7 @@ To perform an asynchronous refresh operation, in addition to the required `notif
 202 Accepted
 ```
 
-The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `requestId`, which is required for some asynchronous refresh operations. For example, in the following response, `requestId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
+The response also includes a location response-header field to point the caller to the refresh operation that was just created/accepted. Location is that of the new resource which was created by the request, which includes the `requestId`, which is required for some enhanced refresh operations. For example, in the following response, `requestId` is the last identifier identifier in the response, `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
 
 ```json
 x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
@@ -151,7 +156,7 @@ Here's an example of the response body:
 |Name  |Type  |Description  |
 |---------|---------|---------|
 |`requestId`     |    Guid     |    The identifier of the refresh request. `requestId` is required to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
-|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call. <br>`ReliableProcessing` indicates an Asynchronous refresh triggered by an API call.   |
+|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call. <br>`ReliableProcessing` indicates an enhanced refresh triggered by an API call.   |
 |`startTime`     |    string     |    DateTime of start.     |
 |`endTime`     |   string      |    DateTime of end.     |
 |`status`     |  string       |   `completed`\*  indicates the refresh operation completed successfully. <br>`failed` indicates the refresh operation failed - serviceExceptionJson will contain the error. <br>`unknown` indicates a completion state that cannot be determined. `endTime` will be empty with this status.   <br>`disabled` indicates refresh was disabled by selective refresh.  |
@@ -206,23 +211,23 @@ DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a
 
 ## Limitations
 
-#### Non-asynchronous refresh operations
+#### Non-enhanced refresh operations
 
 Scheduled and on-demand (manual) dataset refreshes cannot be cancelled by using `DELETE /refreshes/<requestId>`.
 
 Scheduled and on-demand (manual) dataset refreshes do not support getting refresh operation details by using `GET /refreshes/<requestId>`.
 
-Get Details and Cancel are new operations for asynchronous refresh only. They are not supported for non-asynchronous refresh operations.
+Get Details and Cancel are new operations for enhanced refresh only. They are not supported for non-enhanced refresh operations.
 
 #### Power BI Embedded
 
-If a capacity is paused manually in the Portal or by using PowerShell, or a system outage occurs, if there is an on-going asynchronous refresh operation the status of the refresh will stay in `In-Progress` for the maximum of six hours. If the capacity is resumed within six hours, the asynchronous refresh operation will resume automatically. If the capacity is resumed after more than six hours, the asynchronous refresh operation may return a time out error. The asynchronous refresh operation must then be run again.
+If a capacity is paused manually in the Portal or by using PowerShell, or a system outage occurs, if there is an on-going enhanced refresh operation the status of the refresh will stay in `In-Progress` for the maximum of six hours. If the capacity is resumed within six hours, the refresh operation will resume automatically. If the capacity is resumed after more than six hours, the refresh operation may return a time out error. The refresh operation must then be run again.
 
 ## Troubleshooting
 
 #### Problem - Dataset eviction
 
-Power BI uses dynamic memory management to optimize capacity memory. If during an asynchronous refresh operation the dataset is evicted from memory, the following error may be returned:
+Power BI uses dynamic memory management to optimize capacity memory. If during an refresh operation the dataset is evicted from memory, the following error may be returned:
 
 ```json
 {
@@ -237,7 +242,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If during a
 
 ```
 
-#### Solution: Run the asynchronous refresh operation again
+#### Solution: Run the refresh operation again
 
 To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../enterprise/service-premium-what-is.md#how-capacities-function).
 
