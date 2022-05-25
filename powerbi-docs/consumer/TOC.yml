@@ -34,8 +34,6 @@
         href: end-user-dashboards.md
       - name: "View a dashboard"
         href: end-user-dashboard-open.md
-      - name: "Featured dashboards"
-        href: end-user-featured.md
       - name: "Dashboard tiles"
         href: end-user-tiles.md
       - name: "Add a comment or start a conversation"
@@ -138,8 +136,8 @@
         href: end-user-apps.md
       - name: "Install and use apps"
         href: end-user-app-view.md
-      - name: "Datasets hub"
-        href: end-user-datasets-hub.md
+      - name: "Data hub"
+        href: end-user-data-hub.md
       - name: "Connect to services"
         href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"

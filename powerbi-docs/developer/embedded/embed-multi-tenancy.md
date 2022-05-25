@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/13/2022
+ms.date: 05/11/2022
 ---
 
-# Service principal profiles in Power BI Embedded
+# Service principal profiles for multi-customer apps in Power BI Embedded
 
 This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
@@ -19,7 +19,7 @@ This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-i
 
 A *service principal profile* is a profile created by a service principal. The ISV application calls the Power BI APIs using a service principal profile, as explained in this article.
 
-The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer. When a customer visits the ISV application, the application uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
+The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer. When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
 
 Using service principal profiles enables the ISV application to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
@@ -91,7 +91,7 @@ ISV applications call Power BI REST APIs by providing the service principal Azur
 
 ## Create a workspace
 
-Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI [artifacts](pbi-glossary.md#artifacts) such as reports and datasets.
+Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI items such as reports and datasets.
 
 Each profile needs to:
 

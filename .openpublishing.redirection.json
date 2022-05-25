@@ -837,7 +837,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-featured.md",
-            "redirect_url": "/power-bi/consumer/end-user-featured",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-featured.md",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
             "redirect_document_id": true
         },
         {
@@ -4530,6 +4535,16 @@
             "source_path": "powerbi-docs/developer/template-apps/template-apps-auto-install-tutorial.md",
             "redirect_url": "/power-bi/connect-data/template-apps-auto-install-tutorial",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                                                                                                                                                                                                            
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-datasets-hub.md",
+            "redirect_url": "/power-bi/connect-data/service-data-hub",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
+            "redirect_url": "/power-bi/consumer/end-user-data-hub",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     ]           
 }

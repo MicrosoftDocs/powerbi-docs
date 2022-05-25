@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2022
+ms.date: 05/12/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -90,6 +90,25 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | LiveConnect | Not applicable | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | Yes |
 | Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
 | | | | | | |
+
+Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
+
+<br> | Refresh of report visuals | Data refresh | Schema refresh
+---------|----------|---------|--------- 
+ What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables the visual will only query data already imported to the dataset on the last data refresh. | **Data is refreshed from the data source.** <br><br>Does not apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals . <br><br> For imported tables the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to both imported and DirectQuery tables.
+ 
+ In **Power BI Desktop** refresh of report visuals, data refresh, and schema refresh all happen together using
+ - **Home** ribbon > **Refresh** button
+ - **Home** ribbon > **Transform data** > **Close & Apply** button
+ - The context menu (right-click or click on ellipsis) on any table then choosing **Refresh data**
+
+ These refresh types can not always be applied independently, and where you can apply them is different in Power BI Desktop and the Power BI service. For a quick reference, refer to the following table.
+ 
+|  | Refresh of report visuals | Data refresh | Schema refresh
+|---------|----------|---------|--------- 
+ | In **Power BI Desktop**| <ul> <li>**View** ribbon > **Performance Analyzer** button > **Refresh visuals** <li> Creating and changing visuals causing a DAX query to run <li>When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) <li> Opening the PBIX file </ul> | Not available independently from other refresh types | Not available independently from other refresh types
+ | In the **Power BI service** | <ul><li>When the browser loads or reloads the report	<li> Clicking the **Refresh Visuals** top right menu bar button <li> Clicking the **Refresh** button in edit mode <li> When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) | <ul> <li> Scheduled refresh <li>	Refresh now <li> Refresh a Power BI dataset from Power Automate <li> Processing the table from SQL Server Management Studio (Premium) </ul> | Not available
+ | Keep in mind | For example, if you open a report in the browser, then the scheduled refresh performs a data refresh of the imported tables, the report visuals in the open browser will not update until a refresh of report visuals is initiated. | Data refresh on the Power BI service will fail when the source column or table is renamed or removed. It fails because the Power BI service does not also include a schema refresh. To correct this error, a schema refresh needs to happen in Power BI Desktop and the dataset republished to the service. | A renamed or removed column or table at the data source will be updated with a schema refresh in Power BI Desktop, but it can break visuals and DAX expressions (measures, calculated columns, row level security, etc.), as well as remove relationships, that are dependent on those columns or tables.
 
 #### Data refresh
 

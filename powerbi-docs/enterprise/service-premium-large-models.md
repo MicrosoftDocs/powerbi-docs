@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/02/2022
+ms.date: 05/08/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -152,7 +152,7 @@ Keep in mind the following restrictions when using large datasets:
 
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
-- **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
+- **Supported regions**: Large datasets are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
 
 - **Setting maximum dataset size**: Maximum dataset size can be set by administrators. For more information see *Max Memory* in [Datasets](service-admin-premium-workloads.md#datasets).
 
@@ -164,7 +164,7 @@ Keep in mind the following restrictions when using large datasets:
 
 ## Region availability
 
-Large datasets in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
+Large datasets in Power BI are only available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
 The following list provides regions where large datasets in Power BI are available. Regions not in the following list are not supported for large models.
 
