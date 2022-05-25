@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/23/2022
+ms.date: 05/25/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
@@ -20,7 +20,7 @@ You can use the formatted table feature to create paginated reports in any moder
 
 ## Get started
 
-To create a formatted table from the Power BI service, you can start in three different places.
+To create a formatted table from the Power BI service, you can start in two different places.
 
 ### In list view
 
@@ -29,13 +29,9 @@ To create a formatted table from the Power BI service, you can start in three di
 
     :::image type="content" source="media/paginated-formatted-table/formatted-table-list-view.png" alt-text="Screenshot of Create a formatted table in the Power BI service.":::
 
-### From the navigation pane
-
-1. Select **More options (...)** for a dataset, then select **As formatted table**.
-
-    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of Create as formatted table.":::
-
 ### In Dataset hub view
+
+1. Go to Datasets hub view in the Power BI service.
 
 1. Select **More options (...)** next to a dataset > **Create formatted table**.
 
@@ -114,6 +110,11 @@ After saving the report, you can preview it. Select **Reading Mode** on the top 
 > [!NOTE]
 > If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
 
+## Considerations and limitations
+
+- You can't create a formatted table from Power BI datasets based on a live connection.
+- The feature isn't available in the North Europe region.
+- You can't create a formatted table in "classic" Power BI workspaces.
 
 ## Next steps
 
