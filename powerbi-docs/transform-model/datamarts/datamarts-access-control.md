@@ -15,7 +15,6 @@ LocalizationGroup: Data from files
 
 This article describes access control to datamarts, including row level security, rules in Power BI Desktop, and how datamarts might become in accessible or unavailable.
 
-
 ## How datamarts become unavailable
 
 A datamart can get marked as an unavailable datamart when one of the following situations occurs.
