@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 05/23/2022
+ms.date: 05/25/2022
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -313,7 +313,7 @@ After configuring and running the *embed for your customers* sample application,
 
 ## Update user permissions
 
-For anyone to access the report, they need permission to access the Power BI folder the report is in. When you grant someone permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions). This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
+For anyone to access the report, they need permission to access the Power BI folder the report is in. When you grant someone permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
 ## Next steps
 
