@@ -37,7 +37,7 @@
     - name: Troubleshoot relationships in Power BI models
       href: ../guidance/relationships-troubleshoot.md
     - name: Troubleshoot Power BI REST APIs
-      href: ../developer/embedded/embedded-troubleshoot-rest-apis.md 
+      href: ../developer/embedded/embedded-troubleshoot-rest-apis.md
     - name: Troubleshoot report performance in Power BI
       href: ../guidance/report-performance-troubleshoot.md  
     - name: Develop in Power BI
