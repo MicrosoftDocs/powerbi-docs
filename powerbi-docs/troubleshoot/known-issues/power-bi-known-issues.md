@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
-ms.date: 04/21/2022  
+ms.date: 05/19/2022  
 ms.custom:  
 ---
 
@@ -22,9 +22,10 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title           |  Issue publish date |  Status*  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+|  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  May 18, 2022        |  Open |
 |  175      |  Consume and View                  |  [Unable to load Power BI dataset list in Excel](known-issue-175-unable-to-load-dataset-list-in-excel.md)   |  April 20, 2022        |  Open |
 |  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  Open |
-|  167      |  Consume and View                  |  [Matrix banded row colors appear incorrectly in Service](known-issue-167-matrix-banded-row-colors-incorrect-service.md)   |  April 7, 2022        |  Open |
+|  167      |  Consume and View                  |  [Matrix banded row colors appear incorrectly in Service](known-issue-167-matrix-banded-row-colors-incorrect-service.md)   |  April 7, 2022        |  Fixed: May 10, 2022 |
 |  166      |  Create and Author Data            |  [DAX query fails due to parameter case sensitivity](known-issue-166-dax-query-fails-parameter-case-sensitivity.md)   |  April 7, 2022        |  Open |
 |  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 | Open |
 |  164      |  Create and Author Data            |  [Filter not correct after applying bookmark](known-issue-164-filter-not-correct-after-applying-bookmark.md)   |  April 5, 2022        |  Open |

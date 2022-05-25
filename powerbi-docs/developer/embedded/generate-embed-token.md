@@ -3,12 +3,12 @@ title: Generate an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: ""
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 04/07/2022
+ms.date: 05/24/2022
 ---
 
 # Generate an embed token
@@ -54,9 +54,9 @@ When creating an embed token, different workspaces have different considerations
 
 ## Securing your data
 
-When creating your solution, consider these two approaches for securing your data: *Workspace-based isolation* and *Row-level security-based isolation*. You can find a detailed comparison between them in [Multi-tenancy solutions with Power BI embedded analytics](embed-multi-tenancy.md).
+If you are handling data from multiple customers, consider these two approaches for securing your data: [*Workspace-based isolation*](embed-multi-tenancy.md) and [*Row-level security-based isolation*](./embedded-row-level-security.md). You can find a detailed comparison between them in [service principal profiles and row level security](embed-multi-tenancy.md#row-level-security).
 
-If you're going to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
+We recommend using workspace-based isolation with profiles, but if you want to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
 
 ## Token permissions
 
