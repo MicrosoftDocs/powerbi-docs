@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 05/23/2022
+ms.date: 05/25/2022
 ---
 
 # Troubleshoot your embedded application
@@ -236,7 +236,7 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ### Get report fails - error 401 - resolve themselves
 
-Sometimes users in the *user owns data* scenario will get a 401 error that resolves itself after they access the Power BI portal. When this happens, the ISV should add the [RefreshUser Permissions](/rest/api/power-bi/users/refresh-user-permissions) call in their app as explained in [Update user permissions](embed-sample-for-your-organization.md#update-user-permissions).
+Sometimes users in the *user owns data* scenario will get a 401 error that resolves itself after they access the Power BI portal. When this happens, add the [RefreshUser Permissions](/rest/api/power-bi/users/refresh-user-permissions) call in the app as explained in [Update user permissions](embed-sample-for-your-organization.md#update-user-permissions).
 
 ## Datasets
 
