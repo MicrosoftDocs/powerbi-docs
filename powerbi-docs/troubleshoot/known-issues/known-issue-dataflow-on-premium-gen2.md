@@ -6,7 +6,6 @@ ms.author: mihart
 ms. reviewer: jeluitwi
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
 ms.date: 04/07/2022
 ms.custom: known-issue-165
 ---
