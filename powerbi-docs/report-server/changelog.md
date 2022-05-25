@@ -28,9 +28,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed issue where help button tooltip wasn't localized in some locales.
             -  Fixed issue with SVG formatted image used as report background.
             -  Fixed custom visual loading with EnableCDNVisual disabled.
-            -  Fixed issue with datetimeoffset field  being incorrect after a schedule refresh.
+            -  Fixed issue with datetimeoffset field being incorrect after a schedule refresh.
             -  Fixed issue with cropping of custom branding.
             -  Fixed issue with subscriptions using Leave Blank option.
+            -  Improved performance regression seen in some types of Power BI reports.
             -  Fixed issue with url encoding.
         
 - **Power BI Desktop (optimized for Power BI Report Server)**
