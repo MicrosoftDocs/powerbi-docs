@@ -35,12 +35,11 @@ The [**Create workspaces**](../admin/service-admin-portal-workspace.md#create-th
 
 When considering permissions for who can create workspaces, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Determine and validate user needs:** Schedule collaborative discussions with relevant stakeholders and interested people to learn how users currently work. The goal is to ensure there's a clear understanding of user needs. |
-| **Decide who is allowed to create workspaces:** Determine if all users, only a centralized team, or certain centralized and decentralized personnel will be permitted to create a new workspace. Ensure this decision is purposefully aligned with your data culture goals. Verify approval with your executive sponsor. |
-| **Create a security group for who is permitted to create workspaces:** If a subset of users will be permitted to create workspaces, a security group will be needed. Name the group clearly, such as **Power BI workspace creators**. Add members to this security group who are permitted to create workspaces. |
-| **Update the tenant setting:** Include the new security group in the **Create workspaces** tenant setting in the admin portal. In addition to the **Power BI workspace creators** group, other groups that might also be allowed for this tenant setting are the Power BI COE, Power BI support, and Power BI administrators. |
+> [!div class="checklist"]
+> - **Determine and validate user needs:** Schedule collaborative discussions with relevant stakeholders and interested people to learn how users currently work. The goal is to ensure there's a clear understanding of user needs.
+> -**Decide who is allowed to create workspaces:** Determine if all users, only a centralized team, or certain centralized and decentralized personnel will be permitted to create a new workspace. Ensure this decision is purposefully aligned with your data culture goals. Verify approval with your executive sponsor.
+> - **Create a security group for who is permitted to create workspaces:** If a subset of users will be permitted to create workspaces, a security group will be needed. Name the group clearly, such as **Power BI workspace creators**. Add members to this security group who are permitted to create workspaces.
+> - **Update the tenant setting:** Include the new security group in the **Create workspaces** tenant setting in the admin portal. In addition to the **Power BI workspace creators** group, other groups that might also be allowed for this tenant setting are the Power BI COE, Power BI support, and Power BI administrators.
 
 ### Workspace naming conventions
 
@@ -74,11 +73,10 @@ Additional considerations related to workspace naming include:
 
 When considering creating workspace naming conventions, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Determine requirements or preferences for workspace names:** Consider how you want workspaces to be named. Decide if you need firm naming convention requirements versus suggestions and examples. |
-| **Review existing workspace names:** Update existing workspace names as appropriate. Be aware that existing workspace names that users see will often become a de facto standard going forward. |
-| **Create documentation for workspace naming conventions:** Provide useful reference documentation about workspace naming conventions requirements and preferences. Include a set of good examples, including use of acronyms, suffixes, and prefixes. |
+> [!div class="checklist"]
+> - **Determine requirements or preferences for workspace names:** Consider how you want workspaces to be named. Decide if you need firm naming convention requirements versus suggestions and examples.
+> - **Review existing workspace names:** Update existing workspace names as appropriate. Be aware that existing workspace names that users see will often become a de facto standard going forward.
+> - **Create documentation for workspace naming conventions:** Provide useful reference documentation about workspace naming conventions requirements and preferences. Include a set of good examples, including use of acronyms, suffixes, and prefixes.
 
 ### Workspace creation process
 
@@ -112,13 +110,12 @@ There are a lot of technology options for creating a form to capture the informa
 
 When considering the process to request a new workspace, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Establish a process for requesting a new workspace:** Decide what the specific process is for requesting a new workspace. Consider the information you'll need, how to capture the information, and who will process the request. |
-| **Create a standard form for requesting a new workspace:** Decide what information will be included on the form for a new workspace. Consider using a Power App or similar technology for capturing the information from the user. Make links to the form readily available in your centralized portal. |
-| **Decide who will respond to submitted requests, and how quickly:** Determine who will process the request. Consider what the expected response time is for handling a request for a new workspace. Verify you can handle requests quickly so that self-service users don't have a major delay. |
-| **Conduct a knowledge transfer session:** If another team will be supporting the workspace request process, conduct a knowledge transfer session with them so they have all the information they need. |
-| **Create documentation for how to request a workspace:** Create useful documentation about how to request a new workspace (targeted to users who can't create their own). Include what information will be required, and expectations for response. |
+> [!div class="checklist"]
+> - **Establish a process for requesting a new workspace:** Decide what the specific process is for requesting a new workspace. Consider the information you'll need, how to capture the information, and who will process the request.
+> - **Create a standard form for requesting a new workspace:** Decide what information will be included on the form for a new workspace. Consider using a Power App or similar technology for capturing the information from the user. Make links to the form readily available in your centralized portal.
+> - **Decide who will respond to submitted requests, and how quickly:** Determine who will process the request. Consider what the expected response time is for handling a request for a new workspace. Verify you can handle requests quickly so that self-service users don't have a major delay.
+> - **Conduct a knowledge transfer session:** If another team will be supporting the workspace request process, conduct a knowledge transfer session with them so they have all the information they need.
+> - **Create documentation for how to request a workspace:** Create useful documentation about how to request a new workspace (targeted to users who can't create their own). Include what information will be required, and expectations for response.
 
 ### Workspace governance level
 
@@ -152,13 +149,12 @@ The following table includes some of the most common requirements when a workspa
 
 When considering the workspace governance level, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Decide on the governance levels:** Determine on the levels of governance that you'll need. Keep it as simple as possible. |
-| **Decide what the governance requirements are:** For each governance level, determine what the specific requirements will be. |
-| **Decide how to classify the workspace governance level:** Find the simplest way to be able to identify the governance level for a workspace. This could be part of its naming convention, part of its description, or stored elsewhere (for instance, a SharePoint list that contains additional metadata for all workspaces). |
-| **Create documentation for workspace governance requirements:** Create useful documentation, targeted to content creators, that includes what their responsibilities are for managing content in a governed workspace. |
-| **Create auditing processes:** For workspaces that are considered governed, create an auditing process to identify areas of noncompliance with the most important requirements. Ensure that someone is responsible for contacting the content owner to rectify the situation. |
+> [!div class="checklist"]
+> - **Decide on the governance levels:** Determine on the levels of governance that you'll need. Keep it as simple as possible.
+> - **Decide what the governance requirements are:** For each governance level, determine what the specific requirements will be.
+> - **Decide how to classify the workspace governance level:** Find the simplest way to be able to identify the governance level for a workspace. This could be part of its naming convention, part of its description, or stored elsewhere (for instance, a SharePoint list that contains additional metadata for all workspaces).
+> - **Create documentation for workspace governance requirements:** Create useful documentation, targeted to content creators, that includes what their responsibilities are for managing content in a governed workspace.
+> - **Create auditing processes:** For workspaces that are considered governed, create an auditing process to identify areas of noncompliance with the most important requirements. Ensure that someone is responsible for contacting the content owner to rectify the situation.
 
 ## Workspace-level planning
 
@@ -192,10 +188,9 @@ One of the key areas of the Power BI adoption roadmap is [content ownership and 
 
 When considering your intentions for collaboration in a workspace, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Consider expectations for collaboration:** Determine how workspace collaboration needs to occur and who is involved within a single team, or across organizational boundaries. |
-| **Consider expectations for content ownership and management:** Consider how the different content ownership and management approaches (business-led self-service BI, managed self-service BI, and enterprise BI) will influence how you design and use workspaces. |
+> [!div class="checklist"]
+> - **Consider expectations for collaboration:** Determine how workspace collaboration needs to occur and who is involved within a single team, or across organizational boundaries.
+> - **Consider expectations for content ownership and management:** Consider how the different content ownership and management approaches (business-led self-service BI, managed self-service BI, and enterprise BI) will influence how you design and use workspaces.
 
 > [!TIP]
 > Be prepared to be flexible and use a different collaboration strategy for different workspaces, based on the situation as well as the team members that are involved. Also, expect to use different [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) approaches for different workspaces.
@@ -221,12 +216,11 @@ One of the key areas of the Power BI adoption roadmap is [content delivery scope
 
 When considering your expectations for how content viewing in a workspace, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Consider expectations for viewing content:** Determine how you expect consumers to view content that's been published to a workspace. Consider if viewing will happen directly in the workspace directly or via another method. |
-| **Determine who the content will be delivered to:** Consider who the target audience is. This information will be useful when you begin workspace role planning, including workspace license type (if you expect for there to be a significant number of content viewers). |
-| **Evaluate needs for a Power BI app:** Consider what the workspace purpose is as it relates to what the content distribution needs are. If a Power BI app is required, that can influence decisions about creating a workspace. |
-| **Consider expectations for content delivery scope:** Consider how the different content delivery scopes (personal BI, team BI, departmental BI, and enterprise BI) will influence how you design and use workspaces. |
+> [!div class="checklist"]
+> - **Consider expectations for viewing content:** Determine how you expect consumers to view content that's been published to a workspace. Consider if viewing will happen directly in the workspace directly or via another method.
+> - **Determine who the content will be delivered to:** Consider who the target audience is. This information will be useful when you begin workspace role planning, including workspace license type (if you expect for there to be a significant number of content viewers).
+> - **Evaluate needs for a Power BI app:** Consider what the workspace purpose is as it relates to what the content distribution needs are. If a Power BI app is required, that can influence decisions about creating a workspace.
+> - **Consider expectations for content delivery scope:** Consider how the different content delivery scopes (personal BI, team BI, departmental BI, and enterprise BI) will influence how you design and use workspaces.
 
 > [!TIP]
 > Be prepared to be flexible and use a different content viewing strategy for different workspaces, based on the situation as well as the team members that are involved. Also, expect to use different [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) approaches for different workspaces.
@@ -244,12 +238,11 @@ Also, a personal workspace is limited in its options to share content with other
 
 When considering your expectations for how personal workspaces should be used, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Understand current use of personal workspaces:** Have conversations with your users and review the activity log to ensure you have clarity on what users are currently doing with personal workspaces. |
-| **Decide how personal workspaces should be used:** Decide how personal workspaces should (and should not) be used in your organization. Focus on balancing risk and ease of use with needs for content collaboration and viewing. |
-| **Relocate content out of personal workspaces when appropriate:** For critical content, move content from personal workspaces to standard workspaces when appropriate. |
-| **Create and publish documentation about personal workspaces:** Create useful documentation or FAQs for your users about how to effectively use personal workspaces. Make this information available in training materials and your centralized portal. |
+> [!div class="checklist"]
+> - **Understand current use of personal workspaces:** Have conversations with your users and review the activity log to ensure you have clarity on what users are currently doing with personal workspaces.
+> - **Decide how personal workspaces should be used:** Decide how personal workspaces should (and should not) be used in your organization. Focus on balancing risk and ease of use with needs for content collaboration and viewing.
+> - **Relocate content out of personal workspaces when appropriate:** For critical content, move content from personal workspaces to standard workspaces when appropriate.
+> - **Create and publish documentation about personal workspaces:** Create useful documentation or FAQs for your users about how to effectively use personal workspaces. Make this information available in training materials and your centralized portal.
 
 > [!NOTE]
 > More information about activities such as creating a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal), [training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training), and [documentation](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#documentation) can be found in the Power BI adoption roadmap.
@@ -267,12 +260,11 @@ When the intent for collaboration involves multiple teams beyond a single busine
 
 When considering workspace ownership responsibilities, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Define and document roles and responsibilities:** Ensure you have clear roles and responsibilities defined, and documented, for people who collaborate in workspaces. Make this information available in onboarding activities, training materials, and your centralized portal. |
-| **Create a responsibility matrix:** Map out who is expected to handle what when creating, maintaining, publishing, securing, and supporting content. Have this information ready when you start planning for workspace access roles. |
-| **Consider co-ownership or multi-team ownership situations:** Identify when a situation exists where it would be helpful to separate out workspaces so that responsibilities are clear. |
-| **Create workspace management documentation:** Educate the workspace admins and members about how to manage workspace settings and access. Include responsibilities for workspace admins, members, and contributors. |
+> [!div class="checklist"]
+> - **Define and document roles and responsibilities:** Ensure you have clear roles and responsibilities defined, and documented, for people who collaborate in workspaces. Make this information available in onboarding activities, training materials, and your centralized portal.
+> - **Create a responsibility matrix:** Map out who is expected to handle what when creating, maintaining, publishing, securing, and supporting content. Have this information ready when you start planning for workspace access roles.
+> - **Consider co-ownership or multi-team ownership situations:** Identify when a situation exists where it would be helpful to separate out workspaces so that responsibilities are clear.
+> - **Create workspace management documentation:** Educate the workspace admins and members about how to manage workspace settings and access. Include responsibilities for workspace admins, members, and contributors.
 
 ### Workspace organization
 
@@ -349,12 +341,11 @@ Cons:
 
 When considering the subject area and scope of workspace content, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Assess how workspaces are currently set up:** Review how workspaces are being used currently. Identify what works well, what doesn't work well. Plan for potential changes and user education opportunities. |
-| **Consider the best workspace scope:** Identify how you want workspaces to be used based on purpose, subject area, scope, and who is responsible for managing the content. |
-| **Identify where highly sensitive content resides:** Consider when creating a specific workspace for highly sensitive content will be justified. |
-| **Create and publish documentation about using workspaces:** Create useful documentation or FAQs for your users about how workspaces can be organized and used. Make this information available in training materials and your centralized portal. |
+> [!div class="checklist"]
+> - **Assess how workspaces are currently set up:** Review how workspaces are being used currently. Identify what works well, what doesn't work well. Plan for potential changes and user education opportunities.
+> - **Consider the best workspace scope:** Identify how you want workspaces to be used based on purpose, subject area, scope, and who is responsible for managing the content.
+> - **Identify where highly sensitive content resides:** Consider when creating a specific workspace for highly sensitive content will be justified.
+> - **Create and publish documentation about using workspaces:** Create useful documentation or FAQs for your users about how workspaces can be organized and used. Make this information available in training materials and your centralized portal.
 
 #### Workspace artifact types
 
@@ -383,10 +374,9 @@ Separating [scorecards](../create-reports/service-goals-create.md) into their ow
 
 When considering the types of artifacts to store in a workspace, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Determine your objectives for data reuse:** Decide how to achieve dataset and dataflow reuse as part of a managed self-service BI strategy. |
-| **Update the tenant setting for who may use datasets across workspaces:** Determine if this capability can be open to all users. If you decide to limit who can use datasets across workspaces, consider using a group such as *Power BI approved report creators*. |
+> [!div class="checklist"]
+> - **Determine your objectives for data reuse:** Decide how to achieve dataset and dataflow reuse as part of a managed self-service BI strategy.
+> - **Update the tenant setting for who may use datasets across workspaces:** Determine if this capability can be open to all users. If you decide to limit who can use datasets across workspaces, consider using a group such as *Power BI approved report creators*.
 
 ### Workspace access
 
@@ -440,15 +430,14 @@ The above examples showed one workspace (Quarterly Financials) but oftentimes it
 
 When considering workspace access, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Refer to roles and responsibilities:** Use the roles and responsibilities information prepared earlier to plan for workspace roles. |
-| **Identify who will own and manage the content:** Verify that all the artifacts you expect to store in a single workspace aligns with the people who will take responsibility for owning and managing the content. If there are mismatches, reconsider how the workspaces are organized. |
-| **Identify who will view content in the workspace:** Determine if there will be any content viewing occurring directly from the workspace. |
-| **Plan for the workspace roles:** Determine which people are suited to the admin, member, contributor, and viewer roles for each workspace. |
-| **Decide on group or individual role assignments:** Determine if you intend to manage workspace role assignments by individual person, or with groups. Check if there are existing groups that can be used for workspace role assignments. |
-| **Determine if new groups need to be created:** Consider if you need to create a new group per workspace role. Carefully evaluate this, as it can result in many groups to be created and maintained. Determine what the process is when a new workspace is created, and related groups also need to be created. |
-| **Configure and test the workspace role assignments:** Verify that the different types of users have the functionality they need. |
+> [!div class="checklist"]
+> - **Refer to roles and responsibilities:** Use the roles and responsibilities information prepared earlier to plan for workspace roles.
+> - **Identify who will own and manage the content:** Verify that all the artifacts you expect to store in a single workspace aligns with the people who will take responsibility for owning and managing the content. If there are mismatches, reconsider how the workspaces are organized.
+> - **Identify who will view content in the workspace:** Determine if there will be any content viewing occurring directly from the workspace.
+> - **Plan for the workspace roles:** Determine which people are suited to the admin, member, contributor, and viewer roles for each workspace.
+> - **Decide on group or individual role assignments:** Determine if you intend to manage workspace role assignments by individual person, or with groups. Check if there are existing groups that can be used for workspace role assignments.
+> - **Determine if new groups need to be created:** Consider if you need to create a new group per workspace role. Carefully evaluate this, as it can result in many groups to be created and maintained. Determine what the process is when a new workspace is created, and related groups also need to be created.
+> - **Configure and test the workspace role assignments:** Verify that the different types of users have the functionality they need.
 
 ### Workspace settings
 
@@ -466,13 +455,12 @@ Each workspace has a [license type](../collaborate-share/service-create-the-new-
 
 When considering the workspace license type, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Consider which Premium features are required for each workspace:** Analyze each workspace, including which features require use or Power BI Premium or PPU. Set each workspace license type accordingly. |
+> [!div class="checklist"]
+> - **Consider which Premium features are required for each workspace:** Analyze each workspace, including which features require use or Power BI Premium or PPU. Set each workspace license type accordingly.
 
-#### Workspace settings DUPLICATE
+#### Workspace properties
 
-There are a few types of metadata for a workspace. Here are a few suggestions for how to use the settings to improve your users' experience:
+There are a several workspace properties to set up. Here are a few suggestions for how to set the properties to improve your users' experience:
 
 - **Workspace description:** A great workspace description includes a brief, yet specific, explanation of what type of content can be found in the workspace. It's an excellent place to include things like:
   - Purpose for the workspace.
@@ -490,11 +478,10 @@ There are a few types of metadata for a workspace. Here are a few suggestions fo
 
 When considering the workspace settings, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Specify the workspace description:** Ensure there's a helpful and thorough description included in the workspace description. |
-| **Use a helpful image for the workspace:** Set a consistent image for the workspace that'll visually help users understand its subject area, who owns and manages content in the workspace, and/or the type of content in the workspace. |
-| **Identify contacts for the workspace:** Verify if the workspace admins should be set in the contact list, or if specific users and groups should be specified. |
+> [!div class="checklist"]
+> - **Specify the workspace description:** Ensure there's a helpful and thorough description included in the workspace description.
+> - **Use a helpful image for the workspace:** Set a consistent image for the workspace that'll visually help users understand its subject area, who owns and manages content in the workspace, and/or the type of content in the workspace.
+> - **Identify contacts for the workspace:** Verify if the workspace admins should be set in the contact list, or if specific users and groups should be specified.
 
 #### Workspace integration with ADLS Gen2
 
@@ -514,15 +501,14 @@ It's possible to connect a Power BI workspace to an Azure Data Lake Storage Gen2
 
 When considering the workspace integration with Azure Data Lake Storage Gen2, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Decide if a specific Azure storage account is useful:** Consider if a bring-your-own-data-lake scenario would be useful for the storage of dataflow and/or if you have requirements to use the dataset backup and restore functionality. |
-| **Determine which Azure storage account will be used:** Select an Azure Storage account that has the hierarchical namespace enabled (ADLS Gen2) to be used for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure storage account information readily available. |
-| **Configure the tenant-level storage account:** In the Power BI service admin portal, set the tenant-level ADLS Gen2 storage account. |
-| **Decide if workspace admins may connect a storage account:** Have discussions to understand the needs of decentralized teams, and if individual teams are currently maintaining their own Azure Storage accounts. Decide if this capability may be enabled. |
-| **Configure the admin setting for workspace-level storage:** In the Power BI service admin portal, enable the option for workspace admins to connect their own storage account. |
-| **Set the workspace-level Azure Storage connections:** Specify the Azure Storage account for each individual workspace. This needs to be done prior to creating any dataflows in the workspace. If you intend to use dataset backups, ensure the workspace type is set to Premium capacity or PPU. |
-| **Include in your workspace management documentation:** Ensure that your workspace management documentation includes information about how to assign ADLS Gen2 storage accounts correctly. |
+> [!div class="checklist"]
+> - **Decide if a specific Azure storage account is useful:** Consider if a bring-your-own-data-lake scenario would be useful for the storage of dataflow and/or if you have requirements to use the dataset backup and restore functionality.
+> - **Determine which Azure storage account will be used:** Select an Azure Storage account that has the hierarchical namespace enabled (ADLS Gen2) to be used for tenant-level (centralized) storage of dataflows data or dataset backups. Ensure you have the Azure storage account information readily available.
+> - **Configure the tenant-level storage account:** In the Power BI service admin portal, set the tenant-level ADLS Gen2 storage account.
+> - **Decide if workspace admins may connect a storage account:** Have discussions to understand the needs of decentralized teams, and if individual teams are currently maintaining their own Azure Storage accounts. Decide if this capability may be enabled.
+> - **Configure the admin setting for workspace-level storage:** In the Power BI service admin portal, enable the option for workspace admins to connect their own storage account.
+> - **Set the workspace-level Azure Storage connections:** Specify the Azure Storage account for each individual workspace. This needs to be done prior to creating any dataflows in the workspace. If you intend to use dataset backups, ensure the workspace type is set to Premium capacity or PPU.
+> - **Include in your workspace management documentation:** Ensure that your workspace management documentation includes information about how to assign ADLS Gen2 storage accounts correctly.
 
 #### Workspace integration with Azure Log Analytics
 
@@ -538,12 +524,11 @@ Refer to [this article](../transform-model/log-analytics/desktop-log-analytics-c
 
 When considering the workspace integration with Azure Log Analytics, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Decide if workspace administrators may connect to Log Analytics:** Determine if all, or some, workspace admins will be permitted to use Azure Log Analytics for analyzing workspace-level logs. If restricted to only certain people, decide which group to use. |
-| **Configure the tenant setting for Log Analytics connections:** Set the tenant setting in the admin portal according to the decision for which workspace admins may use this capability. |
-| **Set the Log Analytics workspace for each Power BI workspace:** Specify the Azure Log Analytics information for each individual workspace in the Power BI service. Ensure the workspace type is set to Premium capacity or PPU to be able to capture workspace-level logs. |
-| **Include in your workspace management documentation:** Ensure that your workspace management documentation includes information about assign a workspace to Azure Log Analytics. |
+> [!div class="checklist"]
+> - **Decide if workspace administrators may connect to Log Analytics:** Determine if all, or some, workspace admins will be permitted to use Azure Log Analytics for analyzing workspace-level logs. If restricted to only certain people, decide which group to use.
+> - **Configure the tenant setting for Log Analytics connections:** Set the tenant setting in the admin portal according to the decision for which workspace admins may use this capability.
+> - **Set the Log Analytics workspace for each Power BI workspace:** Specify the Azure Log Analytics information for each individual workspace in the Power BI service. Ensure the workspace type is set to Premium capacity or PPU to be able to capture workspace-level logs.
+> - **Include in your workspace management documentation:** Ensure that your workspace management documentation includes information about assign a workspace to Azure Log Analytics.
 
 #### Other technical factors
 
@@ -555,9 +540,8 @@ There are also various technical factors that influence your decisions about wor
 
 When considering other technical factors, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Pay attention to technical factors:** As you go through the planning process, determine if there's a technical reason (such as per-workspace storage limits) that influence your decision-making process or causes you to create separate workspaces. |
+> [!div class="checklist"]
+> - **Pay attention to technical factors:** As you go through the planning process, determine if there's a technical reason (such as per-workspace storage limits) that influence your decision-making process or causes you to create separate workspaces.
 
 ## Workspace auditing
 
@@ -608,10 +592,9 @@ Storing critical content in a personal workspace represents risk to the organiza
 
 When considering workspace auditing, the key decisions and actions include:
 
-| **Key decisions and actions** |
-| --- |
-| **Decide what's most important to audit for workspaces:** Consider which workspace auditing processes are most important from an auditing perspective. Prioritize areas of risk, major inefficiencies, or noncompliance with the most important workspace governance requirements. When a situation comes up that could be improved, educate users on a better way to do things. |
-| **Ensure auditing processes are implemented:** Verify that sufficient processes are put in place to extract, integrate, model, and create reports so that workspace auditing can be done. |
+> [!div class="checklist"]
+> - **Decide what's most important to audit for workspaces:** Consider which workspace auditing processes are most important from an auditing perspective. Prioritize areas of risk, major inefficiencies, or noncompliance with the most important workspace governance requirements. When a situation comes up that could be improved, educate users on a better way to do things.
+> - **Ensure auditing processes are implemented:** Verify that sufficient processes are put in place to extract, integrate, model, and create reports so that workspace auditing can be done.
 
 ## Workspace documentation
 
