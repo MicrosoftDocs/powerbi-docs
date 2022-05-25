@@ -1,5 +1,5 @@
 ---
-title: Enhanced refresh with the Power BI REST API 
+title: Enhanced refresh with Power BI REST API 
 description: Describes enhanced refresh by using the Power BI REST API
 author: minewiskan
 ms.author: owend
@@ -10,7 +10,7 @@ ms.date: 05/25/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
-# Enhanced refresh with the Power BI REST API
+# Enhanced refresh with Power BI REST API
 
 By using any programming language that supports REST calls, you can perform dataset refresh operations by using the Power BI REST API.
 
