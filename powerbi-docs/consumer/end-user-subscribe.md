@@ -203,6 +203,8 @@ Power BI administrators have levers of control over subscriptions.
 
 - Enable all members of the organization, or just specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
 
+- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML). 
+
 ### View subscription audit and activity logs 
 
 Power BI administrators can use the Power BI audit and activity logs to view details about subscriptions. These details include: 
