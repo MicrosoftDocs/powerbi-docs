@@ -25,7 +25,7 @@ The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-data
 - Cancel refresh operations
 
 > [!NOTE]
-> During preview, this feature was known as Asynchronous refresh. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
+> During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh REST API by its inherent nature also runs asynchronously.
 
 ## Base URL
 
