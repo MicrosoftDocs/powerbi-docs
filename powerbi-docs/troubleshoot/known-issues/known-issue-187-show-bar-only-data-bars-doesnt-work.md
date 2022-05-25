@@ -25,8 +25,8 @@ Applying **Show bar only** for a visual (such as a table or matrix) that uses da
 
 If **Show bar only** is applied, you'll see one of two errors:
 
-1. In the Service, the visual won't refresh and show an endless spinning wheel.
-1. In the Desktop, an error is thrown.
+* In the Service, the visual won't refresh and show an endless spinning wheel.
+* In the Desktop, an error is thrown.
 
 ## Solutions and workarounds
 
