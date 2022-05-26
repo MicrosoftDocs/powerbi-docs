@@ -79,9 +79,9 @@ This section lists the limitations of downloading a .pbix file. This section is 
 - Limitations when [downloading a .pbix file from a report](#limitations-downloading-a-pbix-from-a-report).
 - Limitations when [downloading a .pbix file from a dataset](#limitations-downloading-a-pbix-from-a-dataset).
 
-### Limitations downloading a .pbix from a report
+### Limitations when downloading a .pbix from a report
 
-* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace.
+* You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace the report is on. If the report is based on a dataset in another workspace, you need to be at least Contributor to that workspace as well.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before they can be downloaded.
 * Reports created in the Power BI service must be saved before they can be downloaded.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
@@ -92,7 +92,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 
-### Limitations downloading a .pbix from a dataset
+### Limitations when downloading a .pbix from a dataset
 
 * To download the .pbix file, you must be at least a Contributor to the workspace.
 * Datasets with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
