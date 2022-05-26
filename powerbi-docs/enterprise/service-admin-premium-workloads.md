@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 05/26/2022
 LocalizationGroup: Premium
 ---
 
@@ -253,6 +253,20 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
+
+### Outbound connectivity
+
+Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images. A global admin or a Power BI service admin can disable this setting. To disable outbound connectivity for paginated reports, follow these steps:
+
+1. In Power BI service, navigate to the [admin portal](./../admin/service-admin-portal#how-to-get-to-the-admin-portal).
+
+2. From the **Power BI Premium** tab, select the capacity you want to disable the paginated reports outbound requests for.
+
+3. Expand **Workloads** and in the *paginated reports* section, turn on **Outbound Connectivity Disable**.
+
+4. Select **Apply**.
+
+    :::image type="content" source="media/service-admin-premium-workloads/outbound-connectivity.png" alt-text="A screenshot of the paginated reports outbound connectivity setting.":::
 
 ### [Gen2](#tab/gen2)
 
