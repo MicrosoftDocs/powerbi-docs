@@ -258,7 +258,7 @@ Paginated reports offer the same capabilities that SQL Server Reporting Services
 
 Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images. A global admin or a Power BI service admin can disable this setting. To disable outbound connectivity for paginated reports, follow these steps:
 
-1. In Power BI service, navigate to the [admin portal](./../admin/service-admin-portal#how-to-get-to-the-admin-portal).
+1. In Power BI service, navigate to the [admin portal](./../admin/service-admin-portal.md#how-to-get-to-the-admin-portal).
 
 2. From the **Power BI Premium** tab, select the capacity you want to disable the paginated reports outbound requests for.
 
