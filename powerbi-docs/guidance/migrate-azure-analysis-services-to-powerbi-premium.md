@@ -174,7 +174,7 @@ For more information, see:
 
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- [Purchase A SKU for testing and other scenarios](https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-premium-testing?WT.mc_id=DP-MVP-5003435#purchase-a-skus-for-testing-and-other-scenarios)
+- [Purchase A SKU for testing and other scenarios](https://docs.microsoft.com/power-bi/enterprise/service-admin-premium-testing?WT.mc_id=DP-MVP-5003435#purchase-a-skus-for-testing-and-other-scenarios)
 
 ## Scalability benefits
 
