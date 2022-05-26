@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/25/2022
+ms.date: 05/26/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -14,7 +14,7 @@ LocalizationGroup:
 
 By using any programming language that supports REST calls, you can perform dataset refresh operations by using the Power BI REST API.
 
-Optimizing refresh for large and complex partitioned datasets, however, have traditionally been invoked with programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). These methods can require often unreliable, long-running HTTP connections.
+Optimizing refresh for large and complex partitioned datasets have traditionally been invoked with programming methods using TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). However, these methods can require often unreliable, long-running HTTP connections.
 
 The [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset) enables dataset-refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard, app services refresh operations, ***Enhanced refresh*** with the Refresh Dataset REST API provides more customization options and features beneficial for large models:
 
@@ -40,6 +40,8 @@ By using the base URL, resources and operations can be appended based on paramet
 :::image type="content" source="media/asynchronous-refresh/pbi-async-refresh-flow.png" border="false" alt-text="Asynchronous refresh flow":::
 
 ## Requirements
+
+- Datasets in Power BI Premium, Premium per user, and Power BI Embedded.
 
 - GroupId and DatasetId are required.
 
