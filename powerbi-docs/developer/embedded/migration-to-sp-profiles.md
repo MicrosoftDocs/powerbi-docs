@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 05/26/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -52,13 +52,13 @@ It's a good idea to save a mapping of each data customer ID with its correspondi
 
 ### Organize your workspaces
 
-Maintaining one workspace per customer is the easiest way to manage your data. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
+The easiest way to manage your data is by maintaining one workspace per customer. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
 
 If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/create-group) to create a new workspace for each customer.
 
 ### Organize artifacts in workspaces
 
-Now you have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import objects (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
+You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import objects (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
 
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
@@ -91,16 +91,14 @@ Make the following code changes:
 
   Replace the API caller. Make sure a profile calls the [GenerateToken API](/rest/api/power-bi/embed-token/generate-token) because in the profiles model, only the specific profile has access to the customer's content.
 
-Again, if you change the way you organize your Power BI content, you need to modify the code to reflect the changes.
-
 ## Validate
 
 It's best practice to test your app thoroughly before moving it to the profiles model.
-Reports may load even if there are bugs in the SaaS application code because you didn't delete the older permissions on the workspaces. Make sure the code is using the correct profile with the correct content in the correct place.
+Reports may load even if there are bugs in the SaaS application code because you didn't delete the older permissions on the workspaces.
 
 ## Clean up after migration
 
-Now that you finished the migration and validated the results, you can remove the stuff you don't need anymore.
+Now that you finished the migration and validated the results, you can remove what you don't need anymore.
 
 * Clean up code: You might want to disable old code paths to ensure that you're only running new code that relies on profiles.
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.
