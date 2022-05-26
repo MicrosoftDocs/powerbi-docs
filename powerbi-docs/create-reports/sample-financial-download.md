@@ -11,6 +11,7 @@ ms.date: 05/26/2022
 LocalizationGroup: Samples
 ---
 # Download the Financial Sample Excel workbook for Power BI
+
 Need some data to try with the Power BI service? We have a simple Excel workbook of sample financial data. This workbook has a table of sales and profit data sorted by market segment and country. 
 
 ## Download it directly
