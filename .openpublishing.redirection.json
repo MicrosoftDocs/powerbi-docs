@@ -4545,6 +4545,41 @@
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
             "redirect_url": "/power-bi/consumer/end-user-data-hub",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-design-tips-axes.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-chart-gridlines.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-labels.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-legends.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-shapes-images-icons.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-sort-distribute-data-plots.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-visual-colors.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        }
     ]           
 }
