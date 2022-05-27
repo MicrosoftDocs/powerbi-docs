@@ -113,7 +113,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools | Yes | Yes |
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
-| [Datasets hub](../connect-data/service-datasets-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
+| [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |

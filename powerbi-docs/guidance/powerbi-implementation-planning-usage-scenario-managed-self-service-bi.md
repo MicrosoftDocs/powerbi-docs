@@ -38,8 +38,8 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it will be used as a data source by many self-service report creators. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creators publish their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between artifacts, including reports connected to the dataset. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | [Dataset discovery in the datasets hub](../connect-data/service-datasets-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the datasets hub by other Power BI content creators who are looking for data. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators use the datasets hub in the Power BI service to search for discoverable datasets. |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | [Dataset discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the data hub by other Power BI content creators who are looking for data. |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators use the data hub in the Power BI service to search for discoverable datasets. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | If report creators don't have permission, they can request [Build permission](../connect-data/service-datasets-build-permissions.md) on the dataset. This starts a workflow to request Build permission from an authorized approver. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Report creators create new reports using Power BI Desktop. Reports use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to a shared dataset. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Report creators develop reports in Power BI Desktop. |
@@ -77,14 +77,14 @@ Because shared datasets are intended for reuse, it's helpful to [endorse](../col
 
 ### Dataset discovery
 
-The [datasets hub](../connect-data/service-datasets-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../connect-data/service-datasets-hub.md#make-your-dataset-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the datasets hub for report creators who are searching for data.
+The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../connect-data/service-datasets-hub.md#make-your-dataset-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a dataset isn't configured to be discoverable, only Power BI users with Build permission can find it.
 
 ### Request dataset access
 
-A report creator may find a dataset in the [datasets hub](../connect-data/service-datasets-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
+A report creator may find a dataset in the [data hub](../connect-data/service-data-hub.md) that they want to use. If they don't have Build permission for the dataset, they can request access. Depending on the [request access setting](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) for the dataset, an email will be submitted to the dataset owner or custom instructions will be presented to the person who is requesting access.
 
 ### Live connection to the shared dataset
 
