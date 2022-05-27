@@ -2,8 +2,8 @@
 title: Optimize use of labels in Power BI reports
 description: Four tips to optimize the use of labels in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.custom: video-ywx5xUN5VQM
 ms.service: powerbi
 ms.subservice: powerbi-resource

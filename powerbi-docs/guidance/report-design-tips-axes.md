@@ -2,7 +2,7 @@
 title: Tips to manage axes in Power BI reports
 description: Eight tips to effectively manage axes in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
-ms.author: kfollis
+ms.author: v-petermyers
 ms.reviewer: asaxton
 ms.custom: video-3t9W7Xvpzo0
 ms.service: powerbi
