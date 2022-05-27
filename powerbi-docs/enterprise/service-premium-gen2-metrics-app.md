@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/22/2022
+ms.date: 05/25/2022
 LocalizationGroup: Premium 
 ---
 
@@ -279,7 +279,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 ## Timepoint
 
-This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
+All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
