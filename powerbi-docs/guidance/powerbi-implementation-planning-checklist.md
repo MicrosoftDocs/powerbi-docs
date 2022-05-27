@@ -47,14 +47,13 @@ Tenant setup involves a few considerations for Power BI administrators and Azure
 
 Topics to consider for [tenant setup](http://todo-link-to-the-supporting-article/) include:
 
-> [!div class="checklist"]
-> - Azure AD tenant
->   - Unmanaged tenant
->   - Tenant ID for external guest users
-> - Azure AD administrators
-> - Location for storage of data
->   - Default data region
->   - Other specific data regions
+- Azure AD tenant
+  - Unmanaged tenant
+  - Tenant ID for external guest users
+- Azure AD administrators
+- Location for storage of data
+  - Default data region
+  - Other specific data regions
 
 ## Subscriptions, licenses, and trials
 
@@ -78,11 +77,10 @@ There are a few strategic planning considerations at the tenant-level. We recomm
 
 Topics to consider for [tenant-level workspace planning](http://todo-link-to-the-focus-area-in-supporting-article/) include:
 
-> [!div class="checklist"]
-> - Workspace creation permissions
-> - Workspace naming conventions
-> - Workspace creation process
-> - Workspace governance level
+- Workspace creation permissions
+- Workspace naming conventions
+- Workspace creation process
+- Workspace governance level
 
 ### Workspace-level planning
 
@@ -90,22 +88,21 @@ There are quite a few tactical decisions to be made at the individual workspace 
 
 Topics to consider for [workspace-level planning](http://todo-link-to-the-focus-area-in-supporting-article/) include:
 
-> [!div class="checklist"]
-> - Workspace purpose
->   - Intent for collaboration
->   - Intent for content viewing
->   - Appropriate use of personal workspaces
-> - Workspace ownership
-> - Workspace organization
->   - Workspace subject and scope
->   - Workspace artifact types
-> - Workspace access
-> - Workspace settings
->   - Workspace license type
->   - Workspace settings
->   - Workspace integration with ADLS Gen2
->   - Workspace integration with Azure Log Analytics
-> - Workspace auditing
+- Workspace purpose
+  - Intent for collaboration
+  - Intent for content viewing
+  - Appropriate use of personal workspaces
+- Workspace ownership
+- Workspace organization
+  - Workspace subject and scope
+  - Workspace artifact types
+- Workspace access
+- Workspace settings
+  - Workspace license type
+  - Workspace settings
+  - Workspace integration with ADLS Gen2
+  - Workspace integration with Azure Log Analytics
+- Workspace auditing
 
 ## Datasets, dataflows, and data refresh
 
