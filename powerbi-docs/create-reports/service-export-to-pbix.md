@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/29/2022
+ms.date: 05/26/2022
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -19,8 +19,8 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 :::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power B I service, with the 'Download a P B I X file' option highlighted.":::
 
 There are two ways to download a .pbix file, each with different results and considerations:
-- Downloading a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a dataset.
-- Downloading a [.pbix file from a dataset](#download-a-pbix-file-from-a-dataset).
+- Download a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a dataset.
+- Download a [.pbix file from a dataset](#download-a-pbix-file-from-a-dataset).
 
 ## Prerequisites
 
@@ -36,8 +36,6 @@ To download a report as a .pbix file, follow these steps:
     >You can download the report in Reading view or Editing view. The image in this procedure is in Editing view.
 
 2. From the top menu bar, select **File** > **Download this file**.
-
-   :::image type="content" source="media/service-export-to-pbix/power-bi-file-export-editing.png" alt-text="A screenshot of the File menu in the Power B I service, with the Download report option highlighted.":::
 
     If this option isn't shown or is disabled, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
@@ -83,9 +81,9 @@ This section lists the limitations of downloading a .pbix file. This section is 
 
 * You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before they can be downloaded.
-* Reports created in the Power BI service must be saved before they can be downloaded.
+* If you create a report in the Power BI service, you have to save it before you can download it.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-* You can't download reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
+* You can't download the [eight original built-in samples](sample-datasets.md#eight-original-samples) available in the Power BI service.
 * Usage metric reports can't be downloaded to a .pbix file.
 * You can only download the original report. You can't download a copy of a report.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
