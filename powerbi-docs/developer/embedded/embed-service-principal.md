@@ -169,13 +169,13 @@ Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-po
 
 * Enable the **Allow service principals to use Power BI APIs** switch either for the entire organization or for the specific security group you created in Azure AD.
 
+  >[!div class="mx-imgBorder"]
+  >:::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
+
   >[!IMPORTANT]
   >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
   >
   >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
-
-  >[!div class="mx-imgBorder"]
-  >:::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
 
 ## Step 4 - Add the service principal to your workspace
 
