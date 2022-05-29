@@ -1,4 +1,4 @@
----05
+---
 title: 'A quick look at the Mobile app home page'
 description: This article introduces you to the main features of the Mobile app home page.
 author: paulinbar
