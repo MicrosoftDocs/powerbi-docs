@@ -165,7 +165,7 @@ Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-po
 
 * Enable to the **Embed content in apps** switch either for the entire organization or for the specific security group you created in Azure AD.
 
-  :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot showing the developer settings in the admin options embedding content i apps.":::
+  :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot showing the developer settings in the admin options embedding content in apps.":::
 
 * Enable the **Allow service principals to use Power BI APIs** switch either for the entire organization or for the specific security group you created in Azure AD.
 
