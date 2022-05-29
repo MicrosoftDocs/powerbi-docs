@@ -163,11 +163,11 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-portal.md), and scroll down to **Developer settings**.
 
-* Enable to embed content in apps.
+* Enable to the **Embed content in apps** switch either for the entire organization or for the specific security group you created in Azure AD.
 
   :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot showing the developer settings in the admin options embedding content i apps.":::
 
-* Enable the **Allow service principals to use Power BI APIs** switch, and add select either the entire organization or the specific security group you created in Azure AD.
+* Enable the **Allow service principals to use Power BI APIs** switch either for the entire organization or for the specific security group you created in Azure AD.
 
   >[!IMPORTANT]
   >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
