@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 05/29/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -22,8 +22,8 @@ For related "What's New" information, see:
 
 ## May 2022
 
-### Goals is now Metrics
-Goals have a new name: metrics. Use metrics to track and achieve your key business targets.
+### Goals has become Metrics
+Goals has a new name: Metrics. Use metrics to track and achieve your key business targets.
 
 ### \@mention someone in goal notes (Android and iOS)
 Want to get someone's attention regarding a goal's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
