@@ -167,7 +167,7 @@ Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-po
 
   :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot showing the developer settings in the admin options embedding content i apps.":::
 
-* Enable the **Allow service principals to use Power BI APIs** switch, and add the security group you created in Azure AD to the specific security group section in the.
+* Enable the **Allow service principals to use Power BI APIs** switch, and add select either the entire organization or the specific security group you created in Azure AD.
 
   >[!IMPORTANT]
   >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
