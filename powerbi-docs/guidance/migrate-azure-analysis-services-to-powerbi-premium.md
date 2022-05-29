@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/24/2022
+ms.date: 05/26/2022
 ms.custom: intro-migration
 ---
 
@@ -113,7 +113,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools | Yes | Yes |
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
-| [Datasets hub](../connect-data/service-datasets-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
+| [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
@@ -168,12 +168,13 @@ A Pro (or PPU) license is required to publish and manage Power BI content. Pro l
 
 ### Development and test environments
 
-AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agreements and/or fewer features than the **S** SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers.
+AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agreements and/or fewer features than the **S** SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers. Alternatively, consider using an **A** SKU in Azure for testing Premium capacity functionality.
 
 For more information, see:
 
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
+- [Purchase A SKUs for testing and other scenarios](../enterprise/service-admin-premium-testing.md#purchase-a-skus-for-testing-and-other-scenarios)
 
 ## Scalability benefits
 

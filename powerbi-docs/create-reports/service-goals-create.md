@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/28/2022
+ms.date: 05/26/2022
 ---
 # Create scorecards and manual goals in Power BI (preview)
 
@@ -100,8 +100,7 @@ All new goals created within scorecards have a default daily tracking cycle, whi
 
 1. Select the name of any goal or subgoal. Power BI opens the **Details** pane.  
 1. Select the **Settings** tab. 
-1. Set the **tracking cycle** for your goal. 
-1. Choose a start date and select **Track**. 
+1. Set the **tracking cycle** frequency for your goal, and select **Track**. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your goal.":::
  
