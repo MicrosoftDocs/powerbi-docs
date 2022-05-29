@@ -72,13 +72,13 @@ The card for a metric shows
 * An indication of whether there are any notes attached to the metric
 * An expandable menu to display submetrics, if any
 
-Tap anywhere else on the card to open the metric’s [details pane](#metrics-detail-pane).
+Tap anywhere else on the card to open the metric’s [details pane](#metric-detail-pane).
 
 You can also tap and hold on the sparkline on a metric to see the the high-low value range and cycle (if any) of check-in values.
 
 ![Screenshot of seeing the value range on a sparkline.](media/mobile-apps-goals/power-bi-mobile-app-sparkline.png)
 
-## Metrics detail pane
+## Metric detail pane
 
 A metric’s detail pane has a chart of the metric’s progress and lists all the activity on the metric – all the check-ins and notes.
 
