@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 05/26/2022
+ms.date: 05/29/2022
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -175,7 +175,7 @@ Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-po
   >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
   >[!div class="mx-imgBorder"]
-  >:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
+  >:::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
 
 ## Step 4 - Add the service principal to your workspace
 
