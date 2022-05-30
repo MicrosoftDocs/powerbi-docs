@@ -112,7 +112,7 @@ Notifications help you stay up to date with information that requires your immed
 
 For both kinds of notification, tapping the notification takes you right to the metrics details pane inside the scorecard, where you can see all the necessary information.
 
-![Screenshot of metric-related push notifications in the Power BI mobile app.](media/mobile-apps-metrics/power-bi-mobile-goals-notification.png)
+![Screenshot of metric-related push notifications in the Power BI mobile app.](media/mobile-apps-metrics/power-bi-mobile-metrics-notification.png)
 
 ## Next steps
  
