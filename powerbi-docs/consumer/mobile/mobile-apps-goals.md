@@ -15,7 +15,7 @@ ms.custom: mode-portal
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-goals/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-goals/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-goals/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-goals/android-logo-40-px.png) |
+| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
@@ -30,7 +30,7 @@ The metrics hub is a centralized place where you can see and update your importa
 
 Tap the **Metrics** tab on the app’s home page to display the metrics hub.
 
-![Screenshot of the metrics hub on the Power BI mobile app.](media/mobile-apps-goals/mobile-apps-goal.png)
+![Screenshot of the metrics hub on the Power BI mobile app.](media/mobile-apps-metrics/mobile-apps-goal.png)
   
 The top section of the metrics hub, **My Metrics**, displays all the metrics that matter most to you. Tap a metric to open the scorecard that the metric belongs to.
 
@@ -40,7 +40,7 @@ The My Metrics section is followed by a list of the scorecards you have access t
 
 You can easily update a metric by tapping the ellipsis at the upper right corner of a metric’s tile.
 
-![Screenshot of check-in from the metrics hub.](media/mobile-apps-goals/power-bi-mobile-app-goals-hub-update.png)
+![Screenshot of check-in from the metrics hub.](media/mobile-apps-metrics/power-bi-mobile-app-goals-hub-update.png)
 
 You'll get a number of options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
@@ -54,13 +54,13 @@ Metrics are created in scorecards. A scorecard is where colleagues can can keep 
 
 A scorecard has a summary that shows the number of metrics in the scorecard and the number of metrics in each status followed by a list of all the metrics.
 
-![Screenshot of a scorecard.](media/mobile-apps-goals/power-bi-mobile-app-scorecard-status-filters.png)
+![Screenshot of a scorecard.](media/mobile-apps-metrics/power-bi-mobile-app-scorecard-status-filters.png)
  
 Tap the status buttons in the summary to filter for the metrics with the selected status. You can select multiple filters. Tap the **Metrics** button to clear the filters. The image above shows the scorecard filtered by Completed and Behind status.
 
 In the scorecard, metrics are represented by cards.
 
-![Screenshot of a metric tile in a scorecard.](media/mobile-apps-goals/power-bi-mobile-app-goals-tile.png)
+![Screenshot of a metric tile in a scorecard.](media/mobile-apps-metrics/power-bi-mobile-app-goals-tile.png)
  
 The card for a metric shows
 * The name of the metric
@@ -76,13 +76,13 @@ Tap anywhere else on the card to open the metric’s [details pane](#metric-deta
 
 You can also tap and hold on the sparkline on a metric to see the the high-low value range and cycle (if any) of check-in values.
 
-![Screenshot of seeing the value range on a sparkline.](media/mobile-apps-goals/power-bi-mobile-app-sparkline.png)
+![Screenshot of seeing the value range on a sparkline.](media/mobile-apps-metrics/power-bi-mobile-app-sparkline.png)
 
 ## Metric detail pane
 
 A metric’s detail pane has a chart of the metric’s progress and lists all the activity on the metric – all the check-ins and notes.
 
-![Screenshot of a metric detail pane.](media/mobile-apps-goals/power-bi-mobile-app-goal-details-pane.png)
+![Screenshot of a metric detail pane.](media/mobile-apps-metrics/power-bi-mobile-app-goal-details-pane.png)
  
 Tap the ellipsis to see update metric or to open a connected report, if any.
  
@@ -95,14 +95,14 @@ You will have several options:
 
 Generally, you add note as part of a new check-in, but you can also add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
 
-![Screenshot of the add note option.](media/mobile-apps-goals/mobile-apps-add-note.png)
+![Screenshot of the add note option.](media/mobile-apps-metrics/mobile-apps-add-note.png)
 
 As mentioned, in a note you can @mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 
 ### Delete a check-in
 To delete a check-in, slide the check-in to the left and tap **Delete check-in**.
 
-![Screenshot of the delete check-in option.](media/mobile-apps-goals/mobile-apps-delete-checkin.png)
+![Screenshot of the delete check-in option.](media/mobile-apps-metrics/mobile-apps-delete-checkin.png)
 
 ## Notifications
 
@@ -112,7 +112,7 @@ Notifications help you stay up to date with information that requires your immed
 
 For both kinds of notification, tapping the notification takes you right to the metrics details pane inside the scorecard, where you can see all the necessary information.
 
-![Screenshot of metric-related push notifications in the Power BI mobile app.](media/mobile-apps-goals/power-bi-mobile-goals-notification.png)
+![Screenshot of metric-related push notifications in the Power BI mobile app.](media/mobile-apps-metrics/power-bi-mobile-goals-notification.png)
 
 ## Next steps
  

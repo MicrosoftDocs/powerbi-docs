@@ -34,7 +34,7 @@ The metrics hub shows you your relevant metrics and lists all the scorecards you
 
 ![Screenshot of metrics hub in the Power BI mobile app.](media/mobile-apps-home-page/power-bi-mobile-app-hub-checkin.png)
 
-[Learn more about working with metrics in the Power BI mobile app](mobile-apps-goals.md).
+[Learn more about working with metrics in the Power BI mobile app](mobile-apps-metrics.md).
 
 ## Activity feed
 
