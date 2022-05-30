@@ -30,7 +30,7 @@ The metrics hub is a centralized place where you can see and update your importa
 
 Tap the **Metrics** tab on the app’s home page to display the metrics hub.
 
-![Screenshot of the metrics hub on the Power BI mobile app.](media/mobile-apps-metrics/mobile-apps-goal.png)
+![Screenshot of the metrics hub on the Power BI mobile app.](media/mobile-apps-metrics/mobile-apps-metric.png)
   
 The top section of the metrics hub, **My Metrics**, displays all the metrics that matter most to you. Tap a metric to open the scorecard that the metric belongs to.
 
