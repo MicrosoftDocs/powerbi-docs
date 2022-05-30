@@ -40,7 +40,7 @@ The My Metrics section is followed by a list of the scorecards you have access t
 
 You can easily update a metric by tapping the ellipsis at the upper right corner of a metric’s tile.
 
-![Screenshot of check-in from the metrics hub.](media/mobile-apps-metrics/power-bi-mobile-app-goals-hub-update.png)
+![Screenshot of check-in from the metrics hub.](media/mobile-apps-metrics/power-bi-mobile-app-metrics-hub-update.png)
 
 You'll get a number of options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
@@ -60,7 +60,7 @@ Tap the status buttons in the summary to filter for the metrics with the selecte
 
 In the scorecard, metrics are represented by cards.
 
-![Screenshot of a metric tile in a scorecard.](media/mobile-apps-metrics/power-bi-mobile-app-goals-tile.png)
+![Screenshot of a metric tile in a scorecard.](media/mobile-apps-metrics/power-bi-mobile-app-metrics-tile.png)
  
 The card for a metric shows
 * The name of the metric
@@ -82,7 +82,7 @@ You can also tap and hold on the sparkline on a metric to see the the high-low v
 
 A metric’s detail pane has a chart of the metric’s progress and lists all the activity on the metric – all the check-ins and notes.
 
-![Screenshot of a metric detail pane.](media/mobile-apps-metrics/power-bi-mobile-app-goal-details-pane.png)
+![Screenshot of a metric detail pane.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane.png)
  
 Tap the ellipsis to see update metric or to open a connected report, if any.
  
