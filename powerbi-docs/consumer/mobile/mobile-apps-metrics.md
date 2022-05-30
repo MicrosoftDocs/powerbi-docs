@@ -50,7 +50,7 @@ You'll get a number of options:
 
 ## Scorecards
 
-Metrics are created in scorecards. A scorecard is where colleagues can can keep track of a set of metrics. Metrics and scorecards are [created in the Power BI service](../../create-reports/service-goals-create.md), but you can monitor and stay on top of them in the mobile app.
+Metrics are created in scorecards. A scorecard is where colleagues can keep track of a set of metrics. Metrics and scorecards are [created in the Power BI service](../../create-reports/service-goals-create.md), but you can monitor and stay on top of them in the mobile app.
 
 A scorecard has a summary that shows the number of metrics in the scorecard and the number of metrics in each status followed by a list of all the metrics.
 
@@ -74,7 +74,7 @@ The card for a metric shows
 
 Tap anywhere else on the card to open the metric’s [details pane](#metric-detail-pane).
 
-You can also tap and hold on the sparkline on a metric to see the the high-low value range and cycle (if any) of check-in values.
+You can also tap and hold on the sparkline on a metric to see the high-low value range and cycle (if any) of check-in values.
 
 ![Screenshot of seeing the value range on a sparkline.](media/mobile-apps-metrics/power-bi-mobile-app-sparkline.png)
 
