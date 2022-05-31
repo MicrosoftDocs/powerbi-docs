@@ -5,10 +5,13 @@
   - name: Enterprise
     expanded: false
     items:  
-    - name: Automatic aggregations overview
-      href: aggregations-auto.md
-    - name: Configure automatic aggregations
-      href: aggregations-auto-configure.md
+    - name: Automatic aggregations
+      expanded: false
+      items:
+      - name: Automatic aggregations overview
+        href: aggregations-auto.md
+      - name: Configure automatic aggregations
+        href: aggregations-auto-configure.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
     - name: Bring your own encryption keys
