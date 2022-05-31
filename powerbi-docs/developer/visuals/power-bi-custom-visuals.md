@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 05/31/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -45,7 +45,13 @@ Microsoft and community members develop Power BI visuals for public benefit, and
 
 ### Download from AppSource
 
-Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model (pricing, free trial period etc.) for their visual. Some visuals have a free trial period before you have to purchase it. Others have a basic version available for free with additional functionality available for purchase. Once you select the visual, you’ll see a **Plans + Pricing** tab that describes the different available plans. Pricing information is also shown on the left pane.
+Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model for their visual. There are three basic types of payment and licensing plans:
+
+* Free visuals that you can download and use with additional costs
+* Visuals that you can download for free and get basic functionality, but you can get additional features for a price. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it.
+* Some visuals have the *additional purchase may be required* label but the transactability and licensing management are managed through the visual provider on their terms.
+
+Once you select the visual, select the **Plans + Pricing** tab to see the plan for that visual. Pricing information is also shown on the left pane.
 
 :::image type="content" source="media/power-bi-custom-visuals/app-purchase-plans.png" alt-text="Screenshot showing a custom visual available for download with pricing information.":::
 
