@@ -4580,6 +4580,11 @@
             "source_path": "powerbi-docs/guidance/report-tips-visual-colors.md",
             "redirect_url": "/learn/paths/power-bi-effective/",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-goals.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-metrics",
+            "redirect_document_id": false
         }
     ]           
 }
