@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 04/14/2022
+ms.date: 05/31/2022
 ---
 
 # Custom visual license enforcement
