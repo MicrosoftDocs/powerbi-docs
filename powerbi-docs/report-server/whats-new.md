@@ -25,8 +25,8 @@ The May 2022 update of Power BI Report Server brings many new enhancements, incl
 
 #### Reporting
 
-- [Dynamic format strings now supported for all chart elements](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296)
-- [Multi-row card selection])(https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299297)
+- [Dynamic format strings](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296) now supported for all chart elements
+- [Multi-row card selection](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299297)
 - [Bookmark navigator](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299298) now shows the last selected bookmark per group
 - [Canvas Zoom](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299299)
 - [Data point rectangle select](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299300)
