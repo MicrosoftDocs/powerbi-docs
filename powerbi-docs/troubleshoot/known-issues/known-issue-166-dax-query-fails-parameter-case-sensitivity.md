@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.date: 04/06/2022
+ms.date: 04/23/2022
 ms.custom: known-issue-166
 ---
 
@@ -13,7 +13,7 @@ ms.custom: known-issue-166
 
 **APPLIES TO:** ✔️ Power BI Report Builder
 
-**Status:** Open
+**Status:** Fixed: May 19, 2022
 
 **Problem area:** Create and Author Data
 

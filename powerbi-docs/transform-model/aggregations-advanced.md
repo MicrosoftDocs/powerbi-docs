@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/10/2021
+ms.date: 05/20/2022
 LocalizationGroup: Transform and shape data
 ---
 # User-defined aggregations
@@ -268,7 +268,11 @@ The following JSON snippet shows an example of the output of the event when an a
 
 ## Keep caches in sync
 
-Aggregations that combine DirectQuery, Import, and/or Dual storage modes may return different data unless the in-memory cache is kept in sync with the source data. For example, query execution won't attempt to mask data issues by filtering DirectQuery results to match cached values. There are established techniques to handle such issues at the source, if necessary. Performance optimizations should be used only in ways that don't compromise your ability to meet business requirements. It's your responsibility to know your data flows and design accordingly. 
+Aggregations that combine DirectQuery, Import, and/or Dual storage modes may return different data unless the in-memory cache is kept in sync with the source data. For example, query execution won't attempt to mask data issues by filtering DirectQuery results to match cached values. There are established techniques to handle such issues at the source, if necessary. Performance optimizations should be used only in ways that don't compromise your ability to meet business requirements. It's your responsibility to know your data flows and design accordingly.
+
+## Considerations and limitations
+
+Beginning July 2022, due to changes in functionality, Power BI can no longer calculate aggregations for tables with an SSO-enabled data source because security controls cannot be enforced. To ensure optimal query performance with aggregations, it’s recommended you deactivate SSO for these data sources.  
 
 ## Community
 

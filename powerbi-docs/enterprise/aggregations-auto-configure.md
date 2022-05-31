@@ -6,15 +6,12 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/06/2022
+ms.date: 05/20/2022
 LocalizationGroup: Admin
 ---
-# Configure automatic aggregations (Preview)
+# Configure automatic aggregations
 
 Configuring automatic aggregations includes enabling training for a supported DirectQuery dataset and configuring one or more scheduled refreshes. After several iterations of the training and refresh operations have run, you can return to dataset settings to fine-tune the percentage of report queries that use the in-memory aggregations cache. Before completing these steps, be sure you fully understand the functionality and limitations described in [Automatic aggregations](aggregations-auto.md).
-
-> [!IMPORTANT]
-> Automatic aggregations is in **Preview**. When in preview, functionality and documentation are likely to change.
 
 ## Enable
 
