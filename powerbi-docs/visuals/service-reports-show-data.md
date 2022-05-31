@@ -49,7 +49,7 @@ You can also export the data that is being used to create the visualization as a
 
 ## Using Show records
 
-You can also focus on one data record in a visualization, and drill into the details behind it. For more information, see [Use Visual table and Data point table in Power BI Desktop](../create-reports/desktop-see-data-see-records.md).
+You can also focus on one data record in a visualization, and drill into the details behind it. For more information, see [Use Visual table and Data point table in Power BI](../create-reports/desktop-see-data-see-records.md).
 
 ## Considerations and troubleshooting
 

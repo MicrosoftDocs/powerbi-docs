@@ -8,9 +8,11 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/28/2022
+ms.date: 05/26/2022
 ---
 # Create scorecards and manual goals in Power BI (preview)
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
@@ -72,7 +74,11 @@ You need a Power BI Pro license to author and share goals in standard workspaces
 
 You can also define one or more subgoals for your goal. There are two entry points to create a subgoal. 
 
-1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.  
+1. Open a scorecard and select **Edit**.
+
+   :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
+
+1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Subgoal button.":::
 
@@ -94,8 +100,7 @@ All new goals created within scorecards have a default daily tracking cycle, whi
 
 1. Select the name of any goal or subgoal. Power BI opens the **Details** pane.  
 1. Select the **Settings** tab. 
-1. Set the **tracking cycle** for your goal. 
-1. Choose a start date and select **Track**. 
+1. Set the **tracking cycle** frequency for your goal, and select **Track**. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your goal.":::
  

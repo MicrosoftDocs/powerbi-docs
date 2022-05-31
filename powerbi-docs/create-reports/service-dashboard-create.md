@@ -12,6 +12,9 @@ ms.custom: video-lJKgWnvl6bQ
 ms.date: 04/12/2021
 ---
 # Create a Power BI dashboard from a report
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.  
 
 We start by creating a quick and easy dashboard that pins visualizations from a report that's already been built. 

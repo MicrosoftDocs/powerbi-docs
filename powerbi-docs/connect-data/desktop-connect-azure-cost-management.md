@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 05/22/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -18,7 +18,7 @@ You can use the Azure Cost Management connector for Power BI Desktop to make pow
 
 The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management | Microsoft Docs](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
-The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles?view=o365-worldwide) at the billing account or billing profile levels for Microsoft Customer Agreements. 
+The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles&preserve-view=true) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
@@ -56,7 +56,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 
 6.	Enter the number of months and select **OK**.
 
-    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-05.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+
+    Alternatively, if you want to download less than a month's worth of data you can set *Number of months* to zero, then specify a date range using *Start Date* and *End Date* values that equate to less than 31 days.
 
 7.	When prompted, sign in with your Azure user account and password. You must have access to the Billing account scope to successfully access the billing data.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/14/2022
+ms.date: 05/25/2022
 LocalizationGroup: Premium 
 ---
 
@@ -86,11 +86,15 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
-* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were effected the most due to overload penalty.
+* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were affected the most due to overload penalty.
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
-    Sorting the matrix by this column helps identify datasets that have had the biggest change  in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. Small datasets with little CPU activity can easily show large positive or negative values.
+    To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
+
+    You can use the *performance delta* value to assess whether the average performance of your Power BI items improved or worsened over the past week. The higher the value is, the better the performance is likely to be. A value close to zero indicates that not much has changed, and a negative value suggests that the average performance of your Power BI items got worse over the past week.
+
+    Sorting the matrix by the *performance delta* column helps identify datasets that have had the biggest change in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. The *performance delta* value is a good indicator when it comes to Power BI items that have a high CPU utilization because they're heavily used or run many operations. However, small datasets with little CPU activity may not reflect a true picture, as they can easily show large positive or negative values.
 
 ### Performance
 
@@ -107,7 +111,7 @@ Displays the CPU usage of the selected capacity over time. Filters applied to th
 * *Filters are applied* -  The visuals displays every 30 second timepoint.
 
 >[!NOTE]
->Peak is calculated as the highest number of seconds from both [*interactive* and *background*](service-premium-gen2-faq.yml#what-s-the-difference-between-interactive-and-background-operations--) operations.
+>Peak is calculated as the highest number of seconds from both [*interactive* and *background*](service-premium-interactive-background-operations.md) operations.
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
@@ -117,11 +121,11 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    [*Interactive*](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
+    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
-    [*Background*](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
+    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
 
 * **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
 
@@ -208,7 +212,7 @@ The column height represents the duration of operations subject to overload pena
 
 Use this visual to understand how widespread the impact of overload is. The visual will help you determine whether a single user is impacted by an overload event, or whether the overload event impacts multiple users.
 
-The column height represents the number of distinct users effected when overload occurs.
+The column height represents the number of distinct users affected when overload occurs.
 
 ## Refresh
 
@@ -259,7 +263,9 @@ Each column represents the number of seconds it took to compete a single operati
 
 ### Refresh detail
 
-A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.  
+A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.
+
+Scheduled and manual refresh workflows can trigger multiple internal operations in the backend service. For example, refreshes sometimes perform automatic retries if a temporary error occurred. These operations might be recorded in the app using different activity IDs. Each activity ID is represented as a row in the table. When reviewing the table, take into consideration that several rows may indicate an operation of a single activity.
 
 The table has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
 
@@ -273,7 +279,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 ## Timepoint
 
-This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-gen2-faq.yml#what-s-the-difference-between-interactive-and-background-operations--) operations contributed the most to CPU usage.
+All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
@@ -291,7 +297,7 @@ When the total combined CPU for *interactive* and *background* operations exceed
     >[!NOTE]
     >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
 
-* **Autoscle isn't enabled** - If autoscale is not enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
+* **Autoscale isn't enabled** - If autoscale isn't enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
 
 ### Top row visuals
 
@@ -322,7 +328,7 @@ This section describes the operations of the visuals in the top row of the timep
 
 ### Interactive Operations
 
-A table showing every [interactive operation](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
+A table showing every [interactive operation](service-premium-interactive-background-operations.md) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
 
 * **Artifact** - The name of the Power BI item, its type, and its workspace details.
@@ -354,7 +360,7 @@ A table showing every [interactive operation](service-premium-gen2-faq.yml#which
 
 A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
 
-All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations tables doesn't have a *users* column.
+All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations table doesn't have a *users* column.
 
 ## Artifact Detail
 
@@ -366,7 +372,7 @@ This page provides useful information about a specific Power BI item.
 >[!NOTE]
 >Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
 
-You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`. 
+You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Gen2 metrics app.":::
 
@@ -406,9 +412,9 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Gen2 metrics app.":::
 
-* **CPU** - Each column displays the amount of CPU seconds used to complete each operation per hour.
+* **CPU** - Each column displays the number of CPU seconds used to complete each operation per hour.
 
-* **Duration** - Each column displays the amount of seconds used to complete each operation per hour.
+* **Duration** - Each column displays the number of seconds used to complete each operation per hour.
 
 * **Users** - Each column displays the number of active users per hour.
 
@@ -420,7 +426,13 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
 * The app only supports monitoring datasets that use [import mode](../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
 
-* The *Users* column in the visuals displays how many distinct users have been using a Power BI item (such as a report or dashboard). When you expand the measure to display user breakdown for different types of operations for this item, counting can become faulty.
+* The *Users* column in the visuals displays the number of distinct users that performed operations against the dataset. These operations may be performed by the users themselves, or by Power BI on behalf of the users. When reviewing the visuals in the app, take into consideration that background operations performed by Power BI, may inflate the count of unique users.
+
+    * *Operations triggered by users* - [Interactive operations](service-premium-interactive-background-operations.md#interactive-operations) that include opening a report or clicking a slicer.
+
+    * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries provide a much faster performance for users, when they next view the dashboard.
+
+* [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
 
 ## Next steps
 

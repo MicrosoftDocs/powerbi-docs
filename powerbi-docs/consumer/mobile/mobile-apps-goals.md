@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 04/04/2022
+ms.date: 05/16/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update goals in the Power BI mobile app.
 ---
@@ -44,7 +44,7 @@ You can easily update a goal by tapping the ellipsis at the upper right corner o
 
 You'll get a number of options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
-* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
+* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 * **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. You'll only see this option if the goal's current value is connected to a report.
 * **Connected report (target)**: Opens the report that is connected to the goal’s “target” value. You'll only see this option if the goal's target value is connected to a report.
 
@@ -88,7 +88,7 @@ Tap the ellipsis to see update goal or to open a connected report, if any.
  
 You will have several options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update goal status. Quick check-in is not available for goals with connected reports.
-* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. 
+* **New check-in**: Allows you to check in a value for a date you choose, update goal status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 * **Connected report (current)**: Opens the report that is connected to the goal’s “current” value. The goal’s “target” value may be connected to a different report. This option is only available if the goal is connected to a report.
 
 ### Add a note to an existing check-in
@@ -96,6 +96,8 @@ You will have several options:
 Generally, you add note as part of a new check-in, but you can also add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
 
 ![Screenshot of the add note option.](media/mobile-apps-goals/mobile-apps-add-note.png)
+
+As mentioned, in a note you can @mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 
 ### Delete a check-in
 To delete a check-in, slide the check-in to the left and tap **Delete check-in**.

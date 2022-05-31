@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/29/2022
+ms.date: 05/09/2022
 LocalizationGroup: Administration
 ---
 
 # Manage Azure connections
 
-The Azure connections admin settings connects Azure services to Power BI. Using these settings, you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You review the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
+The Azure connections admin settings connects Azure services to Power BI. Using these settings, you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You can review the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
 
 The Azure connections admin settings has the following options:
 
@@ -22,7 +22,7 @@ The Azure connections admin settings has the following options:
 
 * [Workspace-level storage permissions](#workspace-level-storage-permissions) - Use to store dataflows in specific ADLS Gen 2 accounts, organized per workspace.
 
-[!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
+[!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## Tenant-level storage
 
