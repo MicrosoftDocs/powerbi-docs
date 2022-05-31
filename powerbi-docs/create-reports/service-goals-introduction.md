@@ -24,7 +24,7 @@ This article covers the basics of using Goals in the Power BI service. See the o
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in the Power BI service](service-goals-check-in.md)
-- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-goals.md)
+- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-metrics.md)
 - [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
 - [Arrange goals and columns in scorecards](service-goals-move.md)
 - [Customize statuses in scorecards](service-goals-custom-status.md)
