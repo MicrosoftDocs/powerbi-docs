@@ -76,8 +76,8 @@ To download a dataset as a .pbix file, follow these steps:
 ## Limitations
 
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
-- Limitations when [downloading a .pbix file from a report](#limitations-downloading-a-pbix-from-a-report).
-- Limitations when [downloading a .pbix file from a dataset](#limitations-downloading-a-pbix-from-a-dataset).
+- Limitations when [downloading a .pbix file from a report](#limitations-when-downloading-a-pbix-from-a-report).
+- Limitations when [downloading a .pbix file from a dataset](#limitations-when-downloading-a-pbix-from-a-dataset).
 
 ### Limitations when downloading a .pbix from a report
 
