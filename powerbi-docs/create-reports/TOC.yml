@@ -466,7 +466,7 @@
         href: service-q-and-a-create-featured-questions.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
-    - name: Goals
+    - name: Metrics
       items: 
       - name: "Get started with goals"
         href: service-goals-introduction.md
@@ -478,11 +478,11 @@
         href: service-goals-check-in.md        
       - name: "Set goal-level permissions"
         href: service-goals-set-permissions.md
-      - name: "Arrange goals and columns in scorecards"
+      - name: "Arrange metrics and columns in scorecards"
         href: service-goals-move.md
       - name: "Create custom statuses"
         href: service-goals-custom-status.md
-      - name: "Goals and Power Automate"
+      - name: "Metrics and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"
         href: ../visuals/power-bi-visualization-scorecard-visual.md   

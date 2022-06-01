@@ -1,5 +1,5 @@
 ---
-title: Create connected goals in Power BI (preview)
+title: Create connected metrics in Power BI (preview)
 description: Learn how to create connected goals.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,11 +10,11 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/19/2021
 ---
-# Create connected goals in Power BI (preview)
+# Create connected metrics in Power BI (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Goals in Power BI let customers curate their metrics and track them against key business objectives. When choosing values for your goals, you have a choice of: 
+Metrics in Power BI let customers curate their metrics and track them against key business objectives. When choosing values for your metrics, you have a choice of: 
 
 - Manually entering the current and target values.
 - Connecting either the current or target value to data in an existing Power BI report.
@@ -51,16 +51,16 @@ You can connect either the current or the target value, or both, to a value in a
 
     :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected goal.":::
 
-### Choose measures for connected goals 
+### Choose measures for connected metrics 
 
-The **Connect to data** experience makes it easy for scorecard authors to automate goals. You can select and calculate measures at the following levels:
+The **Connect to data** experience makes it easy for scorecard authors to automate metrics. You can select and calculate measures at the following levels:
 
 - Visual
 - Legend
 - Data point
 - Axis value
 
-To break this down further, there are two main types of cases for connecting to data in goals and subgoals:
+To break this down further, there are two main types of cases for connecting to data in metrics and submetrics:
 
 - Categorical data
 - Time-series data 
@@ -104,8 +104,8 @@ Currently there are limitations on the values you can choose in a visual.
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Get started with metrics in Power BI](service-goals-introduction.md)
+- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
+- [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

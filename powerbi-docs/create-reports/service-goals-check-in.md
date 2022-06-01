@@ -1,6 +1,6 @@
 ---
-title: View and update your goals in Power BI (preview)
-description: In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events.
+title: View and update your metrics in Power BI (preview)
+description: In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/26/2021
 ---
-# View and update your goals in Power BI (preview)
+# View and update your metrics in Power BI (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. These features are covered in this section. 
+Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events. These features are covered in this section. 
 
 ## View goal details 
 
-The goals Details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. 
+The metrics Details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. 
 
 - To access the details pane, open a scorecard and select the goal name. Power BI automatically shows the details pane.
 
@@ -27,11 +27,11 @@ The goals Details pane provides the entire history for the goal from the start d
     
 ## Filtering and keyword search 
 
-Scorecards can be filtered to goals labeled as a particular status by clicking on the summary cards at the top of the scorecard, making it easy to see what is on track or at risk. 
+Scorecards can be filtered to metrics labeled as a particular status by clicking on the summary cards at the top of the scorecard, making it easy to see what is on track or at risk. 
 
-   :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Goals filtered to status at risk via summary card.":::
+   :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Metrics filtered to status at risk via summary card.":::
     
-   :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Goals filtered to status behind via summary card.":::
+   :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Metrics filtered to status behind via summary card.":::
 
 There is also a keyword search that filters the scorecard down to goal with the keyword match.  Select the filter icon above the first goal, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child goal relationships, making it easy to quickly find a particular goal and see how it's doing.
 
@@ -77,7 +77,7 @@ There is also a keyword search that filters the scorecard down to goal with the 
 
 ## Create automated status rules 
 
-You can automate status updates based on rules that govern that goal or subgoal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  For connected goals, these status rules are refreshed every time the data in your scorecard is refreshed. For manual goals, they're refreshed every time you perform a check-in.
+You can automate status updates based on rules that govern that goal or subgoal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  For connected metrics, these status rules are refreshed every time the data in your scorecard is refreshed. For manual metrics, they're refreshed every time you perform a check-in.
 
    :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="Showing the different types of status rules including value based, % of target based, and date based.":::
 
@@ -118,8 +118,8 @@ You can automate status updates based on rules that govern that goal or subgoal.
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
+- [Get started with metrics in Power BI](service-goals-introduction.md)
+- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
+- [Create connected metrics in Power BI](service-goals-create-connected.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

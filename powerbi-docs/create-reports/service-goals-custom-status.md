@@ -14,7 +14,7 @@ ms.date: 03/14/2022
 
 Statuses are an integral part of goal tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
 
-:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="A view of goals showing customized statuses in the status column.":::
+:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="A view of metrics showing customized statuses in the status column.":::
 
 ## Start customizing
 
@@ -44,7 +44,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-4.png" alt-text="A screenshot of a status being re-ordered in the edit status pane.":::
 
-    By reordering the statuses, you are specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the goals in order of status priority.
+    By reordering the statuses, you are specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the metrics in order of status priority.
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="A view of how you can sort the status column by ascending or descending priority.":::
 
@@ -58,13 +58,13 @@ If a goal uses a status that is then deleted, we preserve the goal’s deleted s
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="A view of the edit status pane open.":::
 
-You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for goals to work seamlessly for your organization.
+You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for metrics to work seamlessly for your organization.
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Get started with metrics in Power BI](service-goals-introduction.md)
+- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
+- [Create connected metrics in Power BI](service-goals-create-connected.md)
+- [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

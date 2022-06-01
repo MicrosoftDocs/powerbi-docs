@@ -439,7 +439,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
 | Retrieved data sources from Power BI dataset | GetDatasetDatasourcesAsAdmin | |
 | Retrieved data sources from Power BI dataflow | GetDataflowDatasourcesAsAdmin | |
-| Retrieved goals of Power BI scorecard | GetGoal | |
+| Retrieved metrics of Power BI scorecard | GetGoal | |
 | Retrieved links between datasets and dataflows |GetDatasetToDataflowsLinksAsAdmin | |
 | Retrieved list of datasource users for Power BI gateway cluster | | |
 | Retrieved list of modified workspaces in Power BI tenant | GetModifiedWorkspacesAPI | |

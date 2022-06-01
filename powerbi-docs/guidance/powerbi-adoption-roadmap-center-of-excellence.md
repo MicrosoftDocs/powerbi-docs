@@ -160,7 +160,7 @@ Decentralized COEs are independently managed by business units.
 - Inconsistent policies are created and applied across business units.
 - It's difficult to scale a decentralized model.
 - There's potential rework to bring one or more decentralized COEs in alignment with organizational-wide policies.
-- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization goals from an organizational-wide perspective.
+- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization metrics from an organizational-wide perspective.
 
 > [!IMPORTANT]
 > A highly centralized COE tends to be more *authoritarian*, while highly decentralized COEs tend to be more *siloed*. Each organization will need to weigh the pros and cons that apply to them to determine the best choice. For most organizations, the most effective approach tends to be the unified or federated, which bridges organizational boundaries.

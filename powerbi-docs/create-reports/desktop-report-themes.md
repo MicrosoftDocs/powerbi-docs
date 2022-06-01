@@ -554,7 +554,7 @@ The following table defines **cardName** values. The first value in each cell is
 | fillPoint: Fill point |
 | forecast: Forecast |
 | general: General |
-| goals: Goals |
+| metrics: Metrics |
 | grid: Grid |
 | header: Header |
 | imageScaling: Scaling |

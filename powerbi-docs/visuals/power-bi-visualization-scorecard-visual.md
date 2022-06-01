@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Integrating goals and scorecards deeply into reporting solutions is a great way to drive alignment and progress on a team. With the new scorecard visual in Power BI Desktop, you have the flexibility from an authoring perspective to add an existing scorecard to a report, or create a new scorecard. You can seamlessly integrate existing scorecards into reports, and even make updates to a scorecard directly from Power BI Desktop. 
+Integrating metrics and scorecards deeply into reporting solutions is a great way to drive alignment and progress on a team. With the new scorecard visual in Power BI Desktop, you have the flexibility from an authoring perspective to add an existing scorecard to a report, or create a new scorecard. You can seamlessly integrate existing scorecards into reports, and even make updates to a scorecard directly from Power BI Desktop. 
 
 :::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual.gif" alt-text="Screenshot showing a scorecard visual in a report.":::
 ## Prerequisites
@@ -41,7 +41,7 @@ This feature is in preview, so you first need to turn the feature on. Go to **Fi
 
     :::image type="content" source="media/power-bi-visualization-scorecard-visual/create-scorecard.png" alt-text="Screenshot showing create scorecard experience.":::
 
-    Check out [Create scorecards and manual goals in Power BI](../create-reports/service-goals-create.md) to learn more.
+    Check out [Create scorecards and manual metrics in Power BI](../create-reports/service-goals-create.md) to learn more.
 
     Selecting **Connect to an existing scorecard** lets you select and embed an existing scorecard from the list of ones that you have access to.
 
@@ -53,8 +53,8 @@ When you hover over the visual, you can access the Scorecard toolbar.
 
 The toolbar provides the following options:
 
- - **Create a flow**: Launch Power Automate and define automated business processes from events in your scorecard. Check out [Use Power Automate to update goals automatically](../create-reports/service-goals-power-automate.md) to learn more.
- - **Edit**: Edit the scorecard just like in the Power BI service. Create or update goals and subgoals, add notes and check-ins, create automated status rules, and so on. These changes made to the scorecard will be synced to the original scorecard. 
+ - **Create a flow**: Launch Power Automate and define automated business processes from events in your scorecard. Check out [Use Power Automate to update metrics automatically](../create-reports/service-goals-power-automate.md) to learn more.
+ - **Edit**: Edit the scorecard just like in the Power BI service. Create or update metrics and submetrics, add notes and check-ins, create automated status rules, and so on. These changes made to the scorecard will be synced to the original scorecard. 
  - **Replace scorecard**: Replace the scorecard with another existing or new scorecard.
  - **Open in service**:  Select this link to open this scorecard in the Power BI service.
 
@@ -62,7 +62,7 @@ The toolbar provides the following options:
 
  The visual supports various formatting options for scorecards, such as font style, colors, and backgrounds, so you can customize the scorecard to fit the look and feel of the rest of your report. You can also turn off the Scorecard header or status overview cards.
 
-| Format the scorecard | Format the goals |
+| Format the scorecard | Format the metrics |
 |-----|------|
 | :::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard.png" alt-text="Screenshot showing scorecard formatting options.":::  | :::image type="content" source="media/power-bi-visualization-scorecard-visual/format-scorecard-2.png" alt-text="Screenshot showing other scorecard formatting options."::: |
 
@@ -72,8 +72,8 @@ When you connect to an existing scorecard in the Power BI service from Power BI 
 
 - Since the visual requires you to be signed in, it isn't supported in PaaS or anonymous report embed.
 - Visual doesn't support cross-filtering or highlighting.
-- You can't connect goals to the current report until you publish the report to the Power BI service.
+- You can't connect metrics to the current report until you publish the report to the Power BI service.
 
 ## Next steps
 
-[Create scorecards and manual goals in Power BI](../create-reports/service-goals-create.md)
+[Create scorecards and manual metrics in Power BI](../create-reports/service-goals-create.md)

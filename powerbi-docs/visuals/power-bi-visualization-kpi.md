@@ -84,7 +84,7 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual.  
 
-    * **Goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
+    * **Metrics** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
 
     * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **High is good** and, optionally, change the color settings.
 
