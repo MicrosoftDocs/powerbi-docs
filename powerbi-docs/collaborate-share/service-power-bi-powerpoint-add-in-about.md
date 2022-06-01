@@ -18,15 +18,15 @@ The Power BI add-in for PowerPoint enables you to add live, interactive data fro
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/storytelling.gif)
 
-Currently, the add-in supports adding individual report pages to PowerPoint slides. When you add a report page to a PowerPoint slide, other pages in the report (if any) will not be accessible from the add-in.
+Currently, the add-in supports adding individual report pages to PowerPoint slides, without the left side page navigation pane. Page navigation visuals such as buttons work normally, however, and you can navigate between pages using them if they are available.
 
-You can add report pages to PowerPoint presentations starting from either PowerPoint or Power BI.  For Power BI to be used as the starting point, the Power BI add-in for PowerPoint functionality must be [enabled in your organization](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint).
+You can add report pages to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint).
 
 ## Requirements
 
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-To be able to view live Power BI data in PowerPoint, you must be signed into a Power BI account and have a Power BI Pro license as well as access to the data. If the Power BI report is located in a Premium capacity, a Free license is sufficient.
+To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, as well as access to the data. To view Power BI reports that are not located in a Premium capacity, a Power BI Pro license is needed.
 
 ## Security
 
