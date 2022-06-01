@@ -1,5 +1,5 @@
 ---
-title: Using the Power BI add-in for PowerPoint
+title: View and present live Power BI report pages in PowerPoint
 description: Learn how to work with a live Power BI report page in PowerPoint.
 author: paulinbar
 ms.author: painbar
@@ -9,12 +9,14 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/01/2022
+ms.date: 06/01/2022
 ---
 
-# Viewing live Power BI report pages in PowerPoint
+# View and present live Power BI report pages in PowerPoint
 
 As soon as you add a live Power BI report page to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
+
+Live Power BI data added to PowerPoint is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode are not saved - when you exit the show, the report goes back to the state it was in when you left edit mode.
 
 In addition to the Power BI data, other controls help you work with the data and set up your presentations.
 
@@ -32,15 +34,9 @@ As you work with the report, you can always restore the initial view if you want
 
 ## Prepare a slide show
 
-WHen using slide shows, it is convenient to be able to set up the show once and then to be able to give it multiple times without having to set it up again.
+If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to it's beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
-Live Power BI data added to PowerPoint is interactive in both edit and slide-show modes.
-* When editing/building your slides, changes you make to the report state (via filtering, selection, slicing, etc.) are saved.
-* In slide show mode, such changes aren't saved. When you exit the slide show, the report goes back to the state it was in when you left the normal viewing mode.
-
-This behavior is useful for preparing slide shows. You can set up your presentation in advance in edit mode, then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
-
-To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom using the [Expand/Collapse Toolbar](#expandcollapse-toolbar) control.
+To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page using the [Expand/Collapse Toolbar](#expandcollapse-toolbar) control.
 
 ## Freeze the current view
 
