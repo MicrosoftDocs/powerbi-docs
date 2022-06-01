@@ -19,7 +19,7 @@ Optimizing refresh for large and complex partitioned datasets have traditionally
 The Power BI Refresh Dataset REST API enables dataset-refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, ***Enhanced refresh*** with the Refresh Dataset REST API provides more customization options and features beneficial for large models:
 
 - Batched commits
-- Table and Partition-level refresh
+- Table and partition-level refresh
 - Apply incremental refresh policies
 - Get refresh operation details
 - Cancel refresh operations
