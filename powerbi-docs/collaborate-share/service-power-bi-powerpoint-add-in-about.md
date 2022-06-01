@@ -26,7 +26,7 @@ You can add report pages to PowerPoint presentations starting from either PowerP
 
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-To be able to view live Power BI data in PowerPoint, you must be signed into a Power BI account and have a Power BI Pro license as well as access to the data. If the data is located in a Premium capacity, a Free license is sufficient.
+To be able to view live Power BI data in PowerPoint, you must be signed into a Power BI account and have a Power BI Pro license as well as access to the data. If the Power BI report is located in a Premium capacity, a Free license is sufficient.
 
 ## Security
 
