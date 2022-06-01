@@ -79,7 +79,7 @@
         href: service-power-bi-powerpoint-add-in-install.md
       - name: "View and present live report pages in PowerPoint"
         href: service-power-bi-powerpoint-add-in-add-report.md
-      - name: "Administering the Power BI add-in"
+      - name: "Information for the Power BI admin"
         href: service-power-bi-powerpoint-add-in-admin.md
     - name: Publish and share your work
       items: 

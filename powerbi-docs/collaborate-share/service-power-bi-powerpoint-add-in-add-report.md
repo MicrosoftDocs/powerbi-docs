@@ -44,7 +44,7 @@ Sometimes you might want your data view to remain static. For this you can use t
 
 ## Share your presentation
 
-When you share the presentation with others, they'll need an active Power BI account and access to the report to be able to view the data in the presentation, unless you've frozen the view as an image.
+When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account, a Pro license (or a Free license, if the report is hosted on a Premium capacity), and access to the report. This does not apply if you've frozen the view as a static image.
 
 To make sure people in your org can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
 
