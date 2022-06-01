@@ -102,6 +102,7 @@ When you have the report page URL, paste it into the Power BI add-in in PowerPoi
 
 ## Next steps
 
-* [Using the Power BI add-in for PowerPoint](service-power-bi-powerpoint-add-in-add-report.md)
-* [About the Power BI add-in for PowerPoint](service-power-bi-powerpoint-add-in-about.md)
+* [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-add-report.md)
+* [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

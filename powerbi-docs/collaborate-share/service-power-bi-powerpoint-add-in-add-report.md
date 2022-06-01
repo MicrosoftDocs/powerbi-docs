@@ -100,5 +100,6 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 ## Next steps
 
 * [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
-* [Add a live Power BI report page in PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
