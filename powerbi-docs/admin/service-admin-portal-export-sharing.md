@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 05/08/2022
+ms.date: 06/01/2022
 LocalizationGroup: Administration
 ---
 
@@ -229,6 +229,12 @@ Disabling this switch effectively stops users from publishing new composite mode
 
 >[!NOTE]
 > Live connections to Power BI datasets are not affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of whether the setting is enabled or disabled. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been disabled after they were published.
+
+## External sharing
+
+This setting is no longer operative. It has no effect, either enabled or disabled, and can be disregarded completely.
+
+![Screenshot of the allow DirectQuery connections to Power BI datasets tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
 
 ## Next steps
 
