@@ -234,7 +234,7 @@ Disabling this switch effectively stops users from publishing new composite mode
 
 This setting is no longer operative. It has no effect, either enabled or disabled, and can be disregarded completely.
 
-![Screenshot of the allow DirectQuery connections to Power BI datasets tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
+![Screenshot of the no-longer-functional external sharing tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
 
 ## Next steps
 
