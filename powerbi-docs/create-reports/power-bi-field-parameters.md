@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 05/23/2022
 LocalizationGroup: Reports
 ---
 # Let report readers use field parameters to change visuals (preview)
 Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they're interested in. 
 
-In this example, the bar chart and table are dynamically updated. They measure COGS and analyze by Product based on the user’s selection within the slicers.
+In this example, the report reader can dynamically update the bar chart and table by selecting a field in the horizontal slicers above the visuals. Currently the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of example field parameters that dynamically update visuals based on the report reader selection.":::
  
@@ -57,7 +57,7 @@ From the context menu, you can also choose if the field parameter shows the valu
 
 If you need to edit an existing field parameter, you modify the DAX directly. 
 
-For example, if you want to add a new field to an existing parameter, press Shift + Enter to start a new entry. Add a comma between each entry, and match the format shown in this example:
+For example, if you want to add a new field to an existing parameter, press Shift + Enter to start a new entry. Add a comma between each entry, and match the format shown in this example. The number after the comma indicates the order of the fields:
 
 ```dax
 Parameter = {
@@ -74,5 +74,6 @@ Parameter = {
 
 - AI visuals and Q&A aren't supported with the feature.
 - There's no way for your report users to select "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
-- Currently you can't create parameters in live connection data sources.
+- Currently you can't create parameters in live connection data sources, without a local model. However, using DirectQuery for Power BI datasets and AS (preview), you can add a local model to create field parameters. Read more about [DirectQuery for Power BI datasets and AS (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md#using-directquery-for-live-connections).
 - You can't use implicit measures for now, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. Read more about [implicit vs. explicit measures](../guidance/star-schema.md#measures).
+- Currently you can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes "Customer" and "Product" fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.
