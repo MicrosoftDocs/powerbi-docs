@@ -18,7 +18,7 @@ The Power BI add-in for PowerPoint enables you to add live, interactive data fro
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/storytelling.gif)
 
-Currently, the add-in supports adding individual report pages to PowerPoint slides, without the left side page navigation pane. Page navigation visuals such as buttons work normally, however, and you can navigate between pages using them if they are available.
+Currently, the add-in supports adding report pages to PowerPoint slides individually. The left-hand page navigation pane is not brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 
 You can add report pages to PowerPoint presentations starting from either PowerPoint or Power BI. For Power BI to be used as the starting point, Power BI storytelling functionality must be [enabled in your organization](../admin/service-admin-portal-export-sharing.md#enable-power-bi-add-in-for-powerpoint).
 
@@ -26,7 +26,7 @@ You can add report pages to PowerPoint presentations starting from either PowerP
 
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, as well as access to the data. To view Power BI reports that are not located in a Premium capacity, a Power BI Pro license is needed.
+To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report is not located in a Premium capacity, a Power BI Pro license is needed.
 
 ## Security
 
