@@ -912,7 +912,7 @@
         },
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
-            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
             "redirect_document_id": true
         },
         {
