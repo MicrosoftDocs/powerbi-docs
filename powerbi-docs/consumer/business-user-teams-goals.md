@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 Teams benefit from having clear and measurable objectives. Tracking metrics in Microsoft Teams with your team helps the team stay on track, promoting accountability, alignment, and visibility. By tracking progress towards key objectives together, the team can engage in creative and agile decision-making that helps achieve objectives faster. 
 
-It takes just a minute to create a goal in Power BI. Each goal has a name, owner, the current value, the target, and a status. You can even add start and end dates for the goal. Sub-metrics help you track key objectives that are needed to support a bigger goal.
+It takes just a minute to create a metric in Power BI. Each metric has a name, owner, the current value, the target, and a status. You can even add start and end dates for the metric. Sub-metrics help you track key objectives that are needed to support a bigger metric.
 
 ## Add the Power BI personal app to Teams
 
@@ -28,7 +28,7 @@ It takes just a minute to create a goal in Power BI. Each goal has a name, owner
 
     Now Power BI opens right inside Microsoft Teams.
 
-## Create your first goal in a scorecard
+## Create your first metric in a scorecard
 
 It's simple to start tracking metrics by creating a scorecard.
 
@@ -42,13 +42,13 @@ It's simple to start tracking metrics by creating a scorecard.
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-app-goals-new-scorecard.png" alt-text="Select New scorecard.":::
 
 1. Give the scorecard a name and description.
-1. Create a goal in the scorecard, with a **Goal name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**. You can type in numbers, or you select **connect to data** to get values from your reports.
+1. Create a metric in the scorecard, with a **Metric name**, **Current** and **Target** values, **Status**, and **Start** and **Due dates**. You can type in numbers, or you select **connect to data** to get values from your reports.
 
-    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal-percent.png" alt-text="Create a goal by completing the needed values.":::
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal-percent.png" alt-text="Create a metric by completing the needed values.":::
 
 1. Select **Save**.
 
-    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal.png" alt-text="Save your new goal.":::
+    :::image type="content" source="media/business-user-teams-goals/teams-power-bi-new-goal.png" alt-text="Save your new metric.":::
 
 After you’ve saved your scorecard with its metrics, you can share with your team by adding it to a Teams meeting, channel, or chat as a tab or as a link in the meeting chat. Read more about [creating scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md).
 
@@ -82,8 +82,8 @@ To keep your metrics top of mind for your team, add your scorecards as tabs to y
 Make keeping your metrics up to date easier with just a little more work. Here are a few capabilities to explore:
 
 - Use check-ins for metrics to share context about metrics. By encouraging and reviewing check-ins on metrics, your team can share the *why* behind the numbers so they’re visible to everyone.
-- Automatically update your goals' current values. By connecting your goal to a report, whenever the data in the report refreshes, the goal’s current value is automatically kept up to date. 
-- Set the goal status automatically.  By creating automated rules to set the status of metrics, the goal’s status always reflects the data correctly.
+- Automatically update your goals' current values. By connecting your metric to a report, whenever the data in the report refreshes, the goal’s current value is automatically kept up to date. 
+- Set the metric status automatically.  By creating automated rules to set the status of metrics, the goal’s status always reflects the data correctly.
 
 These capabilities help your team save time by eliminating manual updates, and helps keep scorecards fully updated.
 

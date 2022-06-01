@@ -28,7 +28,7 @@ This article covers the basics of using Metrics in the Power BI service. See the
 - [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
 - [Arrange metrics and columns in scorecards](service-goals-move.md)
 - [Customize statuses in scorecards](service-goals-custom-status.md)
-- [Get notifications in Teams about changes to goals](../collaborate-share/service-teams-notifications.md#goals-notifications)
+- [Get notifications in Teams about changes to goals](../collaborate-share/service-teams-notifications.md#metrics-notifications)
 
 ## License requirements 
 
@@ -54,7 +54,7 @@ The top section contains all the metrics that matter the most to you, and the sc
 
 :::image type="content" source="media/service-goals-introduction/scorecard-samples-recommended.png" alt-text="Top section contains all the metrics that matter the most to you.":::
 
-A goal must have at least two values, **Current** and **Target**, to show up in this section. 
+A metric must have at least two values, **Current** and **Target**, to show up in this section. 
 
 ### Recent, Favorites, Shared with me, and All Scorecards 
 
@@ -74,24 +74,24 @@ The next section is a tabbed list.
 ## Frequently asked questions (FAQ)
 
 
-**Why don’t I see history for my goal when I connect to a Power BI data point?**
+**Why don’t I see history for my metric when I connect to a Power BI data point?**
 
-You don’t see a history for a single data point because we only pull history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect. 
+You don’t see a history for a single data point because we only pull history for time series data. To see the history of your metric when you connect to time series data, select **Track all data in this time series** when you connect. 
 
 
-**I'm connecting to time series data and still don’t see the history of the goal. Why not?**
+**I'm connecting to time series data and still don’t see the history of the metric. Why not?**
 
 We don't pull in the history of time series if we only have a partial date (day of the week, month, etc.) We can only pull in the history of a time series when we have a full date to track (day, month, and year).  
 
 **Why aren't my metrics getting updated over time in my scorecard?**
 
-There are a few reasons why your goal may not be getting updated:
+There are a few reasons why your metric may not be getting updated:
 
 - It’s a manual goal: Manual metrics aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
-- You don't have scheduled refresh for the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- You don't have scheduled refresh for the dataset: Metric values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 - Metrics don’t get updated if they're created from a push dataset. 
 
-**I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
+**I'm trying to create a metric but I can’t connect to a report. Why do I see a yellow warning icon?**
 
 To connect your current value or target to data, you need build permissions for that report. Learn about [build permissions](../connect-data/service-datasets-build-permissions.md). 
 
@@ -101,15 +101,15 @@ Currently, users need to have edit permissions for the scorecard to add check-in
 
 **Why can’t I update the value as part of my check-in?**
 
-You can only update values in manual metrics.  If a goal value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the dataset refreshes.
+You can only update values in manual metrics.  If a metric value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the dataset refreshes.
 
 **How often do metrics update in the scorecard?**
 
 Metrics only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the metrics data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of. 
 
-**I changed the tracking cycle of my goal. Why does the data still look the same?**
+**I changed the tracking cycle of my metric. Why does the data still look the same?**
 
-Changing the tracking cycle only changes the trend that you see below your value/target area.  Changing this setting doesn't impact refreshes on the data or when your data is updated in the goals.
+Changing the tracking cycle only changes the trend that you see below your value/target area.  Changing this setting doesn't impact refreshes on the data or when your data is updated in the metrics.
 
 **Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
 
@@ -121,7 +121,7 @@ Scorecards do have goal-level permissions roles. While workspace permissions giv
   
 - Metrics don't yet support bring your own key (BYOK). 
 - Metrics don't yet support row-level security (RLS). 
-- For now, the maximum number of subgoal levels is four.
+- For now, the maximum number of submetric levels is four.
 - Metrics don't support publish-to-web or app-owns-data scenarios for embedded.
 - Business-to-business sharing (sharing across tenants) isn't supported.
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 

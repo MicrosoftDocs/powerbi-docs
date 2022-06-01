@@ -16,13 +16,13 @@ ms.date: 08/26/2021
 
 Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events. These features are covered in this section. 
 
-## View goal details 
+## View metric details 
 
-The metrics Details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. 
+The metrics Details pane provides the entire history for the metric from the start date, including check-ins, status changes, and relevant notes. 
 
-- To access the details pane, open a scorecard and select the goal name. Power BI automatically shows the details pane.
+- To access the details pane, open a scorecard and select the metric name. Power BI automatically shows the details pane.
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="The Details pane for a goal.":::
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="The Details pane for a metric.":::
     
     
 ## Filtering and keyword search 
@@ -33,7 +33,7 @@ Scorecards can be filtered to metrics labeled as a particular status by clicking
     
    :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Metrics filtered to status behind via summary card.":::
 
-There is also a keyword search that filters the scorecard down to goal with the keyword match.  Select the filter icon above the first goal, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child goal relationships, making it easy to quickly find a particular goal and see how it's doing.
+There is also a keyword search that filters the scorecard down to metric with the keyword match.  Select the filter icon above the first goal, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
 
    :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Indicating location of keyword search on scorecard.":::
     
@@ -41,7 +41,7 @@ There is also a keyword search that filters the scorecard down to goal with the 
 
 ## Add or update manual values
 
-1. In a scorecard, select the goal name.
+1. In a scorecard, select the metric name.
 1. In the Details pane, select **New check-in**. 
 1. Complete the following actions in any order: 
 
@@ -57,11 +57,11 @@ There is also a keyword search that filters the scorecard down to goal with the 
 
 1. Select **Save**. 
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Check-in is posted to goal.":::
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Check-in is posted to metric.":::
 
 ## Add or update connected values 
 
-1. In a scorecard, select the goal name.
+1. In a scorecard, select the metric name.
 1. In the Details pane, select **New check-in**. 
 1. Complete the following actions in any order: 
 
@@ -71,20 +71,20 @@ There is also a keyword search that filters the scorecard down to goal with the 
 
     Optionally, include a **note**. 
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Check-in for a connected goal.":::
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Check-in for a connected metric.":::
 
 1. Select **Save**. 
 
 ## Create automated status rules 
 
-You can automate status updates based on rules that govern that goal or subgoal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  For connected metrics, these status rules are refreshed every time the data in your scorecard is refreshed. For manual metrics, they're refreshed every time you perform a check-in.
+You can automate status updates based on rules that govern that metric or submetric. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.  For connected metrics, these status rules are refreshed every time the data in your scorecard is refreshed. For manual metrics, they're refreshed every time you perform a check-in.
 
    :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="Showing the different types of status rules including value based, % of target based, and date based.":::
 
 
 ### Get started creating automated rules
 
-1. In edit mode, select the goal for which you want to create status rules.
+1. In edit mode, select the metric for which you want to create status rules.
 1. In the details pane, select the tab **Status rules** > **New rule**.
 
     :::image type="content" source="media/service-goals-check-in/new-status-rule.png" alt-text="Showing location of new status rules in details pane.":::

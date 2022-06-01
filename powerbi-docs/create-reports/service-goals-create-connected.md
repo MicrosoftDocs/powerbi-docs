@@ -1,6 +1,6 @@
 ---
 title: Create connected metrics in Power BI (preview)
-description: Learn how to create connected goals.
+description: Learn how to create connected metrics.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -26,7 +26,7 @@ This article is about connecting the values to data in an existing Power BI repo
 
 You can connect either the current or the target value, or both, to a value in a report.
 
-1. [Create a goal or edit an existing goal](service-goals-create.md) in a scorecard.
+1. [Create a metric or edit an existing goal](service-goals-create.md) in a scorecard.
 
 1. In the **Current** or **Target** field, select **Connect to data**.
 
@@ -49,7 +49,7 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. Select **Save**.
 
-    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected goal.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected metric.":::
 
 ### Choose measures for connected metrics 
 
@@ -67,7 +67,7 @@ To break this down further, there are two main types of cases for connecting to 
 
 ### Categorical data 
 
-Categorical data refers to cases where you are connecting a goal or subgoal to data other than time-series data. For example, connecting to the total sales of the **Outdoor** product category:
+Categorical data refers to cases where you are connecting a metric or submetric to data other than time-series data. For example, connecting to the total sales of the **Outdoor** product category:
 
 :::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-pie-chart.png" alt-text="Select the Outdoor product category.":::
 

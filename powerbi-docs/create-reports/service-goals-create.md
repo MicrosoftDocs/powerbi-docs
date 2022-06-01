@@ -17,13 +17,13 @@ ms.date: 05/26/2022
 Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
 - Create your first scorecard.
-- Create a manual goal.
-- Edit a goal.
+- Create a manual metric.
+- Edit a metric.
 - Share the scorecard with others.
 
 You can also connect metrics to an existing report visual in Power BI. See [Create connected goals](service-goals-create-connected.md) for details. 
 
-:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Northwind scorecard with metrics and subgoals.":::
+:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Northwind scorecard with metrics and submetrics.":::
 
 ## Prerequisites
 
@@ -52,10 +52,10 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="The new scorecard and dataset that Power BI created.":::
 
-## Step 2: Create a manual goal 
+## Step 2: Create a manual metric 
 
-1. In the scorecard, select **New Goal**. 
-2. Decide on a **Goal name** and an **Owner**. 
+1. In the scorecard, select **New Metric**. 
+2. Decide on a **Metric name** and an **Owner**. 
 
     Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
 
@@ -68,41 +68,41 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 1. Select **Save**. 
 
-    **Goal name** is the only required field for your goal. You can leave the remaining fields blank and come back to edit it after defining all your goals.
+    **Metric name** is the only required field for your metric. You can leave the remaining fields blank and come back to edit it after defining all your metrics.
 
 ## Step 3 (Optional): Create submetrics 
 
-You can also define one or more submetrics for your goal. There are two entry points to create a subgoal. 
+You can also define one or more submetrics for your metric. There are two entry points to create a submetric. 
 
 1. Open a scorecard and select **Edit**.
 
    :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
 
-1. Select the goal you want to create a subgoal for, and select **Add subgoal** on top of the scorecard.
+1. Select the metric you want to create a submetric for, and select **Add subgoal** on top of the scorecard.
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Subgoal button.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Submetric button.":::
 
-    Or Hover over the goal you want to create a subgoal for, select **More options (...)** > **New subgoal**.  
+    Or Hover over the metric you want to create a submetric for, select **More options (...)** > **New subgoal**.  
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-more-options.png" alt-text="Select more options, then add subgoal.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-more-options.png" alt-text="Select more options, then add submetric.":::
 
-1. Repeat the first step as needed to create more subgoals.
+1. Repeat the first step as needed to create more submetrics.
 
-    Make sure you have the goal selected so you can create subgoals.
+    Make sure you have the metric selected so you can create submetrics.
 
-## Step 4 (Optional): Update the goal tracking cycle 
+## Step 4 (Optional): Update the metric tracking cycle 
 
-All new metrics created within scorecards have a default daily tracking cycle, which means that the data and progress are calculated on a day-to-day basis. However, many metrics and metrics demand to be tracked on a different cadence. In those cases, you can change the default tracking cycle on the goal through goal settings. The tracking cycle doesn't impact data refresh.
+All new metrics created within scorecards have a default daily tracking cycle, which means that the data and progress are calculated on a day-to-day basis. However, many metrics and metrics demand to be tracked on a different cadence. In those cases, you can change the default tracking cycle on the metric through metric settings. The tracking cycle doesn't impact data refresh.
 
 1. Open a scorecard and select **Edit**.
 
    :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
 
-1. Select the name of any goal or subgoal. Power BI opens the **Details** pane.  
+1. Select the name of any metric or submetric. Power BI opens the **Details** pane.  
 1. Select the **Settings** tab. 
 1. Set the **tracking cycle** frequency for your goal, and select **Track**. 
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your goal.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your metric.":::
  
 ## Step 5 (Optional): Share your scorecard 
 

@@ -14,7 +14,7 @@ LocalizationGroup:
 
 Data source impact analysis helps you see where your data source is being used throughout your organization. This can be useful when the data source is temporarily or permanently taken offline, and you want to get an idea about who is impacted. It shows you how many workspaces, dataflows, and datasets use the data source, and provides easy navigation to the workspaces where the affected dataflows and datasets are located so that you can investigate further.
 
-Data source impact analysis can also help you spot data duplication in the tenant, such as when a number of different users build similar models on top of the same data source. By helping you discover such redundant datasets and dataflows, data source impact analysis supports the goal of having "a single source of truth".
+Data source impact analysis can also help you spot data duplication in the tenant, such as when a number of different users build similar models on top of the same data source. By helping you discover such redundant datasets and dataflows, data source impact analysis supports the metric of having "a single source of truth".
 
 ## Perform data source impact analysis
 

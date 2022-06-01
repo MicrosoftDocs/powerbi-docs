@@ -36,21 +36,21 @@ On the **Triggers** tab, browse the list of triggers.
 
 ### Actions
 
--	Create a goal.
+-	Create a metric.
 -	Create a check-in.
 -	Add a note to a check-in.
 -	Create a scorecard.
 -	Update a check-in.
--	Update a goal.
+-	Update a metric.
 -	Get goal(s).
--	Get goal check-in(s).
+-	Get metric check-in(s).
 
 ### Triggers
 
--	When a goal changes, for example, status, owner, and so on. 
+-	When a metric changes, for example, status, owner, and so on. 
 -	When someone adds or edits a check-in.
--	When an owner is assigned to a goal.
--	When a data refresh for a goal fails. 
+-	When an owner is assigned to a metric.
+-	When a data refresh for a metric fails. 
 
 From here, you can create and customize your flows to help automate business processes related to your scorecards. Using Power Automate with your Power BI metrics helps your teams and organization respond more quickly to changing conditions, and use data to take better actions. 
 
@@ -70,9 +70,9 @@ Templates will allow you to choose a flow that matches your complex business sce
   
 - Triggering a teams notification when a status changes to *behind* or *at risk*.  
 - Sending reminders to team members at specific intervals with links to scorecards or metrics to review.
-- Notifying a specific team member when they're assigned to a new goal and should perform a check-in. 
-- Sending a Forms survey that gets added as a check-in note on a goal at a specified interval.
-- Sending a congratulations email when a team completes a goal. 
+- Notifying a specific team member when they're assigned to a new metric and should perform a check-in. 
+- Sending a Forms survey that gets added as a check-in note on a metric at a specified interval.
+- Sending a congratulations email when a team completes a metric. 
 
 ## Next steps
 

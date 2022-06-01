@@ -318,8 +318,8 @@ The following operations are available in both the audit and activity logs.
 | Connected to Power BI dataset from external app | ConnectFromExternalApplication | |
 | Copied Power BI dashboard | CopyDashboard | |
 | Copied Power BI report | CopyReport  |  |
-| Created a Power BI scorecard goal | CreateGoal | |
-| Created a Power BI goal value | CreateGoalValue | |
+| Created a Power BI scorecard metric | CreateGoal | |
+| Created a Power BI metric value | CreateGoalValue | |
 | Created a Power BI scorecard | CreateScorecard | |
 | Created an organizational custom visual     | InsertOrganizationalGalleryItem   |    |
 | Created deployment pipeline      | CreateAlmPipeline       |  |
@@ -344,7 +344,7 @@ The following operations are available in both the audit and activity logs.
 | Dataflow permissions removed      | DataflowPermissionsRemoved                  | Not currently used       |
 | Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem               |        |
 | Deleted deployment pipeline      | DeleteAlmPipeline     |   |
-| Deleted current value connection of Power BI goal | | |
+| Deleted current value connection of Power BI metric | | |
 | Deleted link to external resource | DeleteExternalResourceLink | |
 | Deleted member of Power BI gateway cluster | | |
 | Deleted organizational Power BI content pack   | DeleteOrgApp     |       |
@@ -356,12 +356,12 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI dataset rows | DeleteDatasetRows |Indicates that the [Push Datasets - Datasets DeleteRows](/rest/api/power-bi/push-datasets/datasets-delete-rows) API was called   |
 | Deleted Power BI email subscription   | DeleteEmailSubscription   |          |
 | Deleted Power BI folder   | DeleteFolder   |   |
-| Deleted Power BI goal | DeleteGoal | |
+| Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
 | Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
 | Deleted Power BI gateway cluster datasource | | |
-| Deleted Power BI goal | DeleteGoal | |
+| Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI group      | DeleteGroup          |            |
 | Deleted Power BI note | DeleteNote | |
 | Deleted Power BI scorecard | DeleteScorecard | |
@@ -397,8 +397,8 @@ The following operations are available in both the audit and activity logs.
 | Get Power BI group users | GetGroupUsers | |
 | Imported file to Power BI   | Import   |           |
 | Initiated Power BI gateway cluster authentication process | | |
-| Inserted or updated current value connection of Power BI goal | UpsertGoalCurrentValueConnection | |
-| Inserted or updated target value connection of Power BI goal | | |
+| Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
+| Inserted or updated target value connection of Power BI metric | | |
 | Inserted Power BI note | InsertNote | |
 | Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their dataset |
 | Installed Power BI app    | InstallApp     |       |
@@ -406,8 +406,8 @@ The following operations are available in both the audit and activity logs.
 | Mapped user principal names for tenant | | |
 | Migrated dataflow storage location | MigratedDataflowStorageLocation | |
 | Migrated workspace to a capacity    | MigrateWorkspaceIntoCapacity   |   |
-| Patched Power BI goal | PatchGoal | |
-| Patched Power BI goal value | PatchGoalValue | |
+| Patched Power BI metric | PatchGoal | |
+| Patched Power BI metric value | PatchGoalValue | |
 | Patched Power BI note | PatchNote | |
 | Patched Power BI scorecard |PatchScorecard | |
 | Posted Power BI comment     | PostComment  | |
@@ -418,8 +418,8 @@ The following operations are available in both the audit and activity logs.
 | Ran Power BI email subscription | RunEmailSubscription | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault    |    |
 | Reencrypted credentials using Power gateway cluster | | |
-| Refreshed current value of Power BI goal | | |
-| Refreshed target value of Power BI goal | | |
+| Refreshed current value of Power BI metric | | |
+| Refreshed target value of Power BI metric | | |
 | Removed a workspace from a deployment pipeline  | UnassignWorkspaceFromPipeline  |  |
 | Removed data source from Power BI gateway    | RemoveDatasourceFromGateway  |     |
 | Removed Power BI group members     | DeleteGroupMembers          |       |
@@ -446,7 +446,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved list of Power BI gateway installer principals | | |
 | Retrieved member status of Power BI gateway cluster | | |
 | Retrieved multiple Power BI gateway clusters | | |
-| Retrieved multiple Power BI goal values | GetGoalValues | |
+| Retrieved multiple Power BI metric values | GetGoalValues | |
 | Retrieved multiple Power BI scorecards | GetScorecards | |
 | Retrieved Power BI app users | GetAppUsersAsAdmin | |
 | Retrieved Power BI apps | GetAppsAsAdmin | |
@@ -469,8 +469,8 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI gateway tenant policy | | |
 | Retrieved Power BI gateway users | GetGatewayUsersAsAdmin |  |
 | Retrieved Power BI gateways for user | GetUserGatewaysAsAdmin | |
-| Retrieved Power BI goal | GetGoal | |
-| Retrieved Power BI goal value | GetGoalValue | |
+| Retrieved Power BI metric | GetGoal | |
+| Retrieved Power BI metric value | GetGoalValue | |
 | Retrieved Power BI group users | GetGroupUsersAsAdmin | |
 | Retrieved Power BI groups for user | GetUserGroupsAsAdmin | |
 | Retrieved Power BI imports | GetImportsAsAdmin | |

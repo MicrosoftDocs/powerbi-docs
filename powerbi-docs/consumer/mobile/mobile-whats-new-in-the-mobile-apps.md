@@ -32,7 +32,7 @@ Want to get someone's attention regarding a metric's data? **\@mention** them in
 
 ## April 2022
 
-### Check your activity feed for goal updates (Android and iOS)
+### Check your activity feed for metric updates (Android and iOS)
 Changes and updates to metrics related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your metrics directly from the activity feed itself!
 
 ![Screenshot of metrics update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
@@ -41,14 +41,14 @@ Changes and updates to metrics related to you now show up in your activity feed,
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications (Android and iOS)
-Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](./mobile-apps-metrics.md#notifications)
+Now you can get notified when someone assigns you a metric or mentions you, so you won't miss out. [Learn more!](./mobile-apps-metrics.md#notifications)
 
 ![Screenshot of metrics notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
 
 ## March 2022
 
-### Custom goal statuses in scorecards (Android and iOS)
-The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards. [Learn more about custom statuses](../../create-reports/service-goals-custom-status.md).
+### Custom metric statuses in scorecards (Android and iOS)
+The Mobile apps now support metric statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards. [Learn more about custom statuses](../../create-reports/service-goals-custom-status.md).
 
 ## February 2022
 
@@ -100,9 +100,9 @@ Our redesigned report filter pane makes it easier to understand the filters appl
 ![Screenshot of report filter pane in the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-customized-filters-pane.png)
 
 ### Goals-related updates (iOS and Android)
-Goal-level permissions in Power BI enable goal and scorecard authors to grant different levels of access to different users for specific metrics. For instance, some users may be permitted to add notes to a goal and/or to update the goal's status and current value, while other users may only be allowed to view specific metrics within a scorecard. The mobile apps for iOS and Android support Power BI's goal-level permission model. [Learn more about goal-level permissions in Power BI](../../create-reports/service-goals-set-permissions.md).
+Goal-level permissions in Power BI enable metric and scorecard authors to grant different levels of access to different users for specific metrics. For instance, some users may be permitted to add notes to a metric and/or to update the goal's status and current value, while other users may only be allowed to view specific metrics within a scorecard. The mobile apps for iOS and Android support Power BI's goal-level permission model. [Learn more about goal-level permissions in Power BI](../../create-reports/service-goals-set-permissions.md).
 
-Scorecard creators can configure which attributes a goal has. For example, they can decide to show or hide columns. Customizing goal attributes can impact what information a user has to provide when doing a check-in on a goal. The Power BI mobile apps support such customized check-ins.
+Scorecard creators can configure which attributes a metric has. For example, they can decide to show or hide columns. Customizing metric attributes can impact what information a user has to provide when doing a check-in on a metric. The Power BI mobile apps support such customized check-ins.
 
 ## October 2021
 ### Use QR codes with URL parameters (Android and iOS)

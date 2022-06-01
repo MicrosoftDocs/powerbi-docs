@@ -12,7 +12,7 @@ ms.date: 03/14/2022
 ---
 # Customize statuses on your Power BI scorecard
 
-Statuses are an integral part of goal tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
+Statuses are an integral part of metric tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="A view of metrics showing customized statuses in the status column.":::
 
@@ -25,12 +25,12 @@ When you open a scorecard in edit mode, there are two entry points to start cust
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-2.png" alt-text="A view of the edit status pane open, customizing statuses.":::
 
-You can also get to this area by editing a goal inline.
+You can also get to this area by editing a metric inline.
 
-1. In scorecard edit mode, select the pencil icon to edit a goal.
+1. In scorecard edit mode, select the pencil icon to edit a metric.
 1. In the **Status** section, select the **Manage statuses** option at the end of the list.
 
-    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-3.png" alt-text="A view of the entry point when editing a goal in-line, at the bottom of the status dropdown.":::
+    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-3.png" alt-text="A view of the entry point when editing a metric in-line, at the bottom of the status dropdown.":::
 
 ## Modify statuses
 
@@ -54,7 +54,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
 When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your dataset and check-in history for up to 12 deleted statuses.
 
-If a goal uses a status that is then deleted, we preserve the goal’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the goal statuses that use that status.
+If a metric uses a status that is then deleted, we preserve the goal’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the metric statuses that use that status.
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="A view of the edit status pane open.":::
 

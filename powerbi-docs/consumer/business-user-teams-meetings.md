@@ -135,7 +135,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 
 It’s useful to share a summary of the most important data points discussed and the actions the team will take to help achieve outcomes. If you captured visuals during the meeting in chat, you can pull those into a meeting summary post in chat or a follow-up message.
 
-Consider using key data points to create metrics and track them in a scorecard. Consistently tracking progress against with a goal through a series of meetings is a great way to keep your team or project on track. 
+Consider using key data points to create metrics and track them in a scorecard. Consistently tracking progress against with a metric through a series of meetings is a great way to keep your team or project on track. 
 
 ## Next steps
 
