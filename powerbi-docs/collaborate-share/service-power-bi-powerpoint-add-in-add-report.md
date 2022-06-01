@@ -18,11 +18,23 @@ As soon as you add a live Power BI report page to PowerPoint, you can start inte
 
 Live Power BI data added to PowerPoint is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode are not saved - when you exit the show, the report goes back to the state it was in when you left edit mode.
 
+[Describe the sections of the add-in report body, controls]
+
 In addition to the Power BI data, other controls help you work with the data and set up your presentations.
 
 ![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
 
 These controls are described in detail in the [Controls](#controls) section.
+
+
+
+
+
+## Understanding what you see
+
+Report page - where you interact with data
+Report info, where you see.....
+Toolbar, where you ... hide ...
 
 ## Interact with data
 
