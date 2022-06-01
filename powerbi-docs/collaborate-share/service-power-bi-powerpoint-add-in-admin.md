@@ -1,6 +1,6 @@
 ---
 title: Power BI add-in for PowerPoint - Admin info
-description: Learn about the Power BI add-in for PowerPoint that enables you to add live Power BI data to your PowerPoint presentations.
+description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -22,7 +22,7 @@ To use the Power BI add-in for PowerPoint, users must either have access to the 
 
 ## Licensing
 
-To be able to view live Power BI data in PowerPoint, PowerPoint users must have a Power BI account and at least a XXX license.
+To be able to view live Power BI data in PowerPoint, PowerPoint users must have a Power BI account and a Pro license (or a Free license for report pages located in Premium capacities).
 
 If auto-licensing for Power BI is enabled, users without a Power BI account will be signed up automatically when they open a presentation containing a live Power BI report page. **This may impact the assignment and availability of licenses in your organization**. See [Power BI license assignment](../enterprise/service-admin-disable-self-service.md) for more information.
 

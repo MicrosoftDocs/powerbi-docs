@@ -34,7 +34,7 @@ As you work with the report, you can always restore the initial view if you want
 
 ## Prepare a slide show
 
-If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to it's beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
+If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page using the [Expand/Collapse Toolbar](#expandcollapse-toolbar) control.
 
