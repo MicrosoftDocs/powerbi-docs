@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/01/2022
+ms.date: 06/02/2022
 ---
 
 # Add a live Power BI report page to PowerPoint
@@ -96,7 +96,7 @@ When you have the report page URL, paste it into the Power BI add-in in PowerPoi
 
     The image below illustrates inserting the add-in into a slide and using the report URL.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/Animation.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::
 
     Once the report has loaded, it is live and you can select the data as desired. Any changes you make while editing the presentation will be saved. The next time you open the presentation, the report will appear in the state you last left it in.  
 
