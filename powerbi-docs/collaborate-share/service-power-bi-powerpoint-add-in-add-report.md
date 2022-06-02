@@ -22,9 +22,9 @@ As soon as you add a live Power BI report page to PowerPoint, you can start inte
 
 In the add-in, you see
 
-* The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been frozen as a static image. The left-hand page navigation pane that you see in the Power BI service is not included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
-* A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. By clicking the report name you open the report in Power BI. See the [Controls](#controls) section for more details.
-* An Show/Hide arrow at the upper right side that opens the add-in side pane. The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been frozen as a static image. The left-hand page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
+* A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. By clicking the report name, you open the report in Power BI. See the [Controls](#controls) section for more detail.
+* An Show/Hide arrow at the upper right side that opens the add-in side pane. The add-in side pane contains other controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
 To get a cleaner view and more space for the report page, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
@@ -34,7 +34,7 @@ You interact with the report just as you would in the Power BI service. You can 
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
 
-The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode are not saved - when you exit the show, the report goes back to the state it was in when you left edit mode.
+The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode aren't saved. When you exit the show, the report goes back to the state it was in when you left edit mode.
 
 As you work with the report in edit mode, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
 
@@ -50,7 +50,7 @@ Sometimes you might want your data view to remain static. For this you can use t
 
 ## Share your presentation
 
-When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. This does not apply if you've frozen the view as a static image. If the Power BI report is not located in a Premium capacity, they'll need a Power BI Pro license.
+When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. This doesn't apply if you've frozen the view as a static image. If the Power BI report isn't located in a Premium capacity, they'll need a Power BI Pro license.
 
 To make sure people in your organization can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
 
@@ -64,8 +64,8 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ![Screenshot of Power B I add-in for PowerPoint report info.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-report-info.png)
 
-* **Hyperlinked title**: Report name and page name. Click on the title to open Power BI to that report page.
-* **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this is not the sensitivity label (if any) applied to the PowerPoint file itself.
+* **Hyperlinked title**: Report name and page name. Select on the title to open Power BI to that report page.
+* **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this isn't the sensitivity label (if any) applied to the PowerPoint file itself.
 * **Last update from source**: Shows the time and date of the last data update from the data sources.
 
 ### Report options
