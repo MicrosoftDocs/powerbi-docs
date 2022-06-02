@@ -22,14 +22,14 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 #### Give us your feedback
 
-The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with sensitivity labels from Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
 ## Licensing and requirements
 
-* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Microsoft Purview Information Protection in Power BI. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail.
+* An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view sensitivity labels from Purview Information Protection in Power BI. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail.
 
     > [!NOTE]
-    > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Microsoft Purview Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
+    > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Purview Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 * To be able to apply labels to Power BI content and files, a user must have a Power BI Pro or Premium Per User (PPU) license in addition to one of the Azure Information Protection licenses mentioned above.
 
@@ -70,11 +70,11 @@ In the **Information Protection** section, perform the following steps:
 
 ## Troubleshooting
 
-Power BI uses sensitivity labels from Microsoft Purview Information Protection. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
+Power BI uses sensitivity labels from Purview Information Protection. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
 
 * You do not have an Azure Information Protection [license](#licensing-and-requirements).
 * Sensitivity labels have not been [migrated](#enable-sensitivity-labels) to the Microsoft Purview Information Protection version supported by Power BI.
-* No sensitivity labels from Microsoft Purview Information Protection have been [defined in the organization](#enable-sensitivity-labels).
+* No sensitivity labels from Purview Information Protection have been [defined in the organization](#enable-sensitivity-labels).
 
 ## Considerations and limitations
 
