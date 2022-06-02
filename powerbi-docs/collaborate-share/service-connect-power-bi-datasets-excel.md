@@ -22,7 +22,7 @@ You can discover and connect to centralized, secure data in Power BI from wherev
 
 ## Access Power BI datasets in Excel 
 
-When you access Power BI datasets in Excel, the datasets inherit properties such as endorsement labels and labels from Microsoft Purview Information Protection, so the data stays secure. Datasets tagged with the labels Certified or Promoted are likely to be of better quality and more authoritative than datasets without a label.
+When you access Power BI datasets in Excel, the datasets inherit properties such as endorsement labels and sensitivity labels from Microsoft Purview Information Protection, so the data stays secure. Datasets tagged with the labels Certified or Promoted are likely to be of better quality and more authoritative than datasets without a label.
 
 You can connect to Power BI datasets in Excel by starting in the Power BI service or in Excel for the web or the Excel desktop app.  
 
