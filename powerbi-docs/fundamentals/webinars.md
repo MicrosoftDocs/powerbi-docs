@@ -30,6 +30,9 @@ by Will Thompson
 by Ikechukwu Edeagu  
 [Watch now](https://info.microsoft.com/ww-ondemand-Drive-Productivity-And-Effective-Decision-Making-With-Excel-And-Power-BI.html)  
 
+**Unleash Your Dynamics 365 Data with Azure Synapse Analytics and Power BI**  
+[Watch now](https://info.microsoft.com/ww-ondemand-unleash-your-data-with-azure-synapse-analytics-and-power-bi.html)  
+
 **Quickly transform your Organization with a Data-Driven culture through Power BI**  
 by Lukasz Pawlowski  
 [Watch now](https://info.microsoft.com/ww-ondemand-quickly-transform-your-organization-with-a-data-driven-culture-through-power-bi.html)  
@@ -63,7 +66,11 @@ by Jeroen ter Heerdt and Marc Lelijveld
 **Webinar Series: Mastering Data Modeling with Power BI  
 Episode 3 - Data Modeling for Experts with Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now]( https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
+[Watch now](https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
+
+**Webinar Series: Data Modeling with Power BI**  
+**Episode 4 - Calculation Groups and Composite Models**  
+[Watch now](https://info.microsoft.com/ww-ondemand-calculation-groups-and-composite-models.html)
 
 **Behind the Scenes with the Power BI Team**  
 by Jeroen ter Heerdt and Miguel Martinez  
@@ -92,16 +99,6 @@ by Peter Myers and Chris Webb
 **Securing your data in motion and at rest with Power BI**  
 by Anton Fritz and Yitzhak Kesselman  
 [Watch now](https://info.microsoft.com/ww-Landing-SecuringyourdatainmotionandatrestwithPowerBI.html?LCID=EN-US)
-
-**Webinar Series: Mastering Data Modeling with Power BI  
-Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
-
-**Webinar Series: Mastering Data Modeling with Power BI  
-Episode 2 - Learn Advanced Data Modeling with Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
 
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  
