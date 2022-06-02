@@ -7,7 +7,7 @@ metadata:
   ms.topic: faq
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 05/29/2022
+  ms.date: 06/01/2022
 title: Deployment pipelines troubleshooting
 summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -340,7 +340,7 @@ sections:
           
           * **Deploying to a stage with content** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, who's a member or admin of both workspaces in the source and target deployment stages.
           
-          * **Overriding a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
+          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
           
       - question: |
           Which permissions do I need to configure deployment rules?
