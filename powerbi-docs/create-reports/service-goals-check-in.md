@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/26/2021
+ms.date: 06/01/2022
 ---
 # View and update your metrics in Power BI (preview)
 

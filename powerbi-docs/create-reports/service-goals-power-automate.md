@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/01/2021
+ms.date: 06/01/2022
 ---
 # Use Power Automate to update metrics automatically (preview)
 

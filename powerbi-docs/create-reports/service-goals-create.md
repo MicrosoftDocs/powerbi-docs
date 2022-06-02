@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 06/01/2022
 ---
 # Create scorecards and manual metrics in Power BI (preview)
 
