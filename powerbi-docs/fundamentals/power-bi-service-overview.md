@@ -9,7 +9,7 @@ ms.custom: video-B2vd4MQrz4M, intro-overview
 ms.topic: overview
 ms.date: 09/05/2019
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/metrics.
+# Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ---
 
 # What is the Power BI service?

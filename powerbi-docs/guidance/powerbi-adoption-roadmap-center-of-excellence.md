@@ -160,7 +160,7 @@ Decentralized COEs are independently managed by business units.
 - Inconsistent policies are created and applied across business units.
 - It's difficult to scale a decentralized model.
 - There's potential rework to bring one or more decentralized COEs in alignment with organizational-wide policies.
-- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization metrics from an organizational-wide perspective.
+- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization goals from an organizational-wide perspective.
 
 > [!IMPORTANT]
 > A highly centralized COE tends to be more *authoritarian*, while highly decentralized COEs tend to be more *siloed*. Each organization will need to weigh the pros and cons that apply to them to determine the best choice. For most organizations, the most effective approach tends to be the unified or federated, which bridges organizational boundaries.
@@ -182,7 +182,7 @@ Funding is important because it impacts the way the COE communicates and engages
 > [!TIP]
 > The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the types of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
-Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
+Some organizations cover the COE operating costs with chargebacks to business units based on the usage goals of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
 
 ## Considerations and key actions
 
