@@ -9,32 +9,24 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/01/2022
+ms.date: 06/02/2022
 ---
 
 # View and present live Power BI report pages in PowerPoint
 
 As soon as you add a live Power BI report page to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
 
-Live Power BI data added to PowerPoint is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode are not saved - when you exit the show, the report goes back to the state it was in when you left edit mode.
-
-[Describe the sections of the add-in report body, controls]
-
-In addition to the Power BI data, other controls help you work with the data and set up your presentations.
-
 ![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
-
-These controls are described in detail in the [Controls](#controls) section.
-
-
-
-
 
 ## Understanding what you see
 
-Report page - where you interact with data
-Report info, where you see.....
-Toolbar, where you ... hide ...
+In the add-in, you see
+
+* The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been frozen as a static image. The left-hand page navigation pane that you see in the Power BI service is not included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
+* A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. By clicking the report name you open the report in Power BI. See the [Controls](#controls) section for more details.
+* An Show/Hide arrow at the upper right side that opens the add-in side pane. The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+
+To get a cleaner view and more space for the report page, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
 ## Interact with data
 
@@ -42,13 +34,15 @@ You interact with the report just as you would in the Power BI service. You can 
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
 
-As you work with the report, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
+The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode are not saved - when you exit the show, the report goes back to the state it was in when you left edit mode.
+
+As you work with the report in edit mode, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
 
 ## Prepare a slide show
 
 If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
-To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page using the [Expand/Collapse Toolbar](#expandcollapse-toolbar) control.
+To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page using the [Expand/Collapse the toolbar](#expandcollapse-toolbar) control.
 
 ## Freeze the current view
 
@@ -56,15 +50,11 @@ Sometimes you might want your data view to remain static. For this you can use t
 
 ## Share your presentation
 
-When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account, a Pro license (or a Free license, if the report is hosted on a Premium capacity), and access to the report. This does not apply if you've frozen the view as a static image.
+When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. This does not apply if you've frozen the view as a static image. If the Power BI report is not located in a Premium capacity, they'll need a Power BI Pro license.
 
-To make sure people in your org can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
+To make sure people in your organization can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
 
 Users who don't have permission to view the report can request access directly from the presentation, and will be able to view the data once they've received access.
-
-## Restore the initial view
-
-When you first add a live Power BI report page into PowerPoint, the initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used. As you interact with your data and change the view, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
 
 ## Controls
 
