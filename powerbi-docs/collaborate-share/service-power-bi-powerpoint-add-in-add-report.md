@@ -48,6 +48,8 @@ To get more space and a cleaner display for your slide show, you can collapse th
 
 Sometimes you might want your data view to remain static. For this you can use the [Show as Saved Image](#add-in-side-pane) option. Show as Saved Image turns the current live view into a static, non-interactive image. To restore the interactive view, select the option again. The live report page will reload in the state it was last in, but with the latest data from Power BI.
 
+![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-powerpoint-addin-show-saved-image.png)
+
 ## Share your presentation
 
 When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. This doesn't apply if you've frozen the view as a static image. If the Power BI report isn't located in a Premium capacity, they'll need a Power BI Pro license.
