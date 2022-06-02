@@ -48,7 +48,7 @@ Where:
 **Requirements for using PowerShell**
  
 * You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
-* A connection to the Microsoft Purview compliance portal is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
+* A connection to the Purview compliance portal is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
 
 ### Documentation
 
