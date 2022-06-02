@@ -6,6 +6,7 @@ ms.author: sunaraya
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
+ms.custom: video-RE4Y8Jv
 ms.topic: how-to
 ms.date: 06/01/2022
 LocalizationGroup: Reports
