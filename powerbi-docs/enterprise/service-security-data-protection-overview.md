@@ -24,9 +24,9 @@ Data protection capabilities in Power BI build on Microsoft's strengths in secur
 
 The pillars of Power BI's data protection capabilities and how they help you protect your organization's sensitive data are listed below:
 
-* **sensitivity labels from Microsoft Purview Information Protection**
+* **Sensitivity labels from Microsoft Purview Information Protection**
     
-    * **Classify and label sensitive Power BI data** using sensitivity labels from Microsoft Purview Information Protection used in Office and other Microsoft products.
+    * **Classify and label sensitive Power BI data** using the same sensitivity labels from Microsoft Purview Information Protection that are used in Office and other Microsoft products.
     * **Enforce governance policies even when Power BI content is exported** to Excel, PowerPoint, PDF, and other supported export formats to help ensure data is protected even when it leaves Power BI.
 * **Microsoft Defender for Cloud Apps**
     * **Monitor and protect user activity on sensitive data in real time** with alerts, session monitoring, and risk remediation using Defender for Cloud Apps.
@@ -38,7 +38,7 @@ Read more about [sensitivity labels from Microsoft Purview Information Protectio
 
 #### Give us your feedback
 
-The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with sensitivity labels from Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
 ## Next steps
 
