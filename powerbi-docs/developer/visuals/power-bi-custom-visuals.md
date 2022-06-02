@@ -24,7 +24,7 @@ ms.custom: intro-overview
 
 Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
-:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of default the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of default the Power B I visualization pane as it appears in Power BI Desktop and Power B I service.":::
 
 To remove a Power BI visual from the visualization pane, right-click it and select **unpin**.
 
@@ -34,7 +34,7 @@ To restore the default Power BI visuals in the visualization pane, select the el
 
 ## AppSource Power BI visuals
 
-You can find many more Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). AppSource is the place for apps, add-ins, and extensions for your Microsoft software. It connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help work more efficiently and with more insight than before.
+You can find many more Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). AppSource is the place to find apps, add-ins, and extensions for your Microsoft software. It connects millions of people who use products such as Microsoft 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them work more efficiently and with more insight than before.
 
 Microsoft and community members develop Power BI visuals for public benefit, and publish them to the AppSource. Microsoft tests and approves these Power BI visuals for functionality and quality. You can download these visuals and add them to your Power BI reports.
 
@@ -47,9 +47,9 @@ Microsoft and community members develop Power BI visuals for public benefit, and
 
 Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model for their visual. There are three basic types of payment and licensing plans:
 
-* Free visuals that you can download and use with additional costs
-* Visuals that you can download for free and get basic functionality, but you can get additional features for a price. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it.
-* Some visuals have the *additional purchase may be required* label but the transactability and licensing management are managed through the visual provider on their terms.
+* Free visuals that you can download and use with additional costs. These visuals are labeled as *Free*.
+* Visuals that you can download and get basic functionality for free, but you can pay for additional features. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it. Transactability and license management for these visuals happen outside of Microsoft platforms.
+* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in AppSource.com by clicking on the *Buy now* button. Licenses are managed from the Microsoft 365 Admin center.
 
 Once you select the visual, select the **Plans + Pricing** tab to see the plan for that visual. Pricing information is also shown on the left pane.
 
