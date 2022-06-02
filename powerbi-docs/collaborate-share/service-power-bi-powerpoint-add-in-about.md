@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/01/2022
+ms.date: 06/02/2022
 ---
 
 # About Power BI in PowerPoint
