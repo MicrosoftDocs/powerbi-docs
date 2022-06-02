@@ -40,21 +40,25 @@ As you work with the report in edit mode, you can always restore the initial vie
 
 ## Prepare a slide show
 
-If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
-
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page using the [Expand/Collapse the toolbar](#expandcollapse-toolbar) control.
+
+If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page goes back to the state it was in at the beginning of the slide show.
 
 ## Freeze the current view
 
-Sometimes you might want your data view to remain static. For this you can use the [Show as Saved Image](#add-in-side-pane) option. Show as Saved Image turns the current live view into a static, non-interactive image. To restore the interactive view, select the option again. The live report page will reload in the state it was last in, but with the latest data from Power BI.
+Every time you open your presentation, the report page reloads into the add-in, bringing fresh data from the Power BI service. There may be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [Show as Saved Image](#add-in-side-pane) option. Show as Saved Image turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
+To restore the interactive view, select the Show as Saved Image option again. The live report page will reload in the state it was last in, but with the latest data from Power BI.
+
 ## Share your presentation
 
-When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. This doesn't apply if you've frozen the view as a static image. If the Power BI report isn't located in a Premium capacity, they'll need a Power BI Pro license.
+When you share the presentation with others, to be able to view the data in the presentation they'll need an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report isn't located in a Premium capacity, they'll need a Power BI Pro license. None of this applies if you've frozen the view as a static image.
 
-To make sure people in your organization can access the report and take advantage of the live data experience, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). Any person you share the presentation with via this link will get access to the report.
+To make sure people in your organization can access the report and take advantage of the live data experience, when you add a live report page to a presentation, be sure to use the link generated in Power BI by the [Share > PowerPoint option](./service-power-bi-powerpoint-add-in-install.md?tabs=share#get-the-report-page-url). This ensures that the people in your org who you shared the presentation with will be able to see the live data when they open the presentation.
+
+![Animated gif showing how to use the Share option in Power BI to get a link for sharing.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-share-option.gif)
 
 Users who don't have permission to view the report can request access directly from the presentation, and will be able to view the data once they've received access.
 
