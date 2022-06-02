@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/01/2022
+ms.date: 06/02/2022
 ---
 
 # Power BI add-in for PowerPoint - Admin info
@@ -41,7 +41,7 @@ Power BI entry points for the add-in are not available in sovereign, government,
 
 If your organization has a Microsoft 365 Office subscription, a button for the add-in will appear in the PowerPoint ribbon.
 
-![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-about/power-bi-addin-powerpoint-button.png)
+![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-admin/power-bi-addin-powerpoint-button.png)
 
 The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user does not have access to the store, the button won't work.
 
