@@ -51,5 +51,5 @@ The rollout of the Power BI add-in for PowerPoint depends on the update cadence 
 
 * [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
-* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-add-report.md)
+* [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
