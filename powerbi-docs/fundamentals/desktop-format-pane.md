@@ -4,7 +4,7 @@ description: Get to know the redesigned Format pane in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: 
+ms.custom: video-RE4Yb4T
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
