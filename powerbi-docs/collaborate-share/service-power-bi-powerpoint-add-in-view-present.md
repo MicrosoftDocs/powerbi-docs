@@ -20,7 +20,7 @@ As soon as you add a live Power BI report page to PowerPoint, you can start inte
 
 ## Understanding what you see
 
-In the add-in, you see
+In the add-in, you see:
 
 * The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
 * A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
