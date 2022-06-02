@@ -23,7 +23,7 @@ The first time you open the latest release of Power BI Desktop, you see a notifi
 
 In this video, Roseanne demonstrates the latest updates to the Format pane.
 
-> [!VIDEO [https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
 
 ## Recent updates
 
