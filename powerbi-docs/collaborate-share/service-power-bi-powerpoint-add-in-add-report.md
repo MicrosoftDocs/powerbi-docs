@@ -16,7 +16,7 @@ ms.date: 06/02/2022
 
 As soon as you add a live Power BI report page to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
 
-![Screenshot of embedded Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/embedded-report-page-controls.png)
+![Screenshot of Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-add-report/power-bi-add-in-report-page-controls.png)
 
 ## Understanding what you see
 
@@ -32,7 +32,7 @@ To get a cleaner view and more space for the report page, you can collapse the b
 
 You interact with the report just as you would in the Power BI service. You can apply filters and slicers, select data points, and drill down on data.
 
-![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/Animation2.gif)
+![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-add-report/power-bi-add-in-interact-report.gif)
 
 The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode aren't saved. When you exit the show, the report goes back to the state it was in when you left edit mode.
 
