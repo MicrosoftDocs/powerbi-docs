@@ -28,7 +28,7 @@ This article covers the basics of using Metrics in the Power BI service. See the
 - [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
 - [Arrange metrics and columns in scorecards](service-goals-move.md)
 - [Customize statuses in scorecards](service-goals-custom-status.md)
-- [Get notifications in Teams about changes to goals](../collaborate-share/service-teams-notifications.md#metrics-notifications)
+- [Get notifications in Teams about changes to metrics](../collaborate-share/service-teams-notifications.md#metrics-notifications)
 
 ## License requirements 
 
@@ -87,7 +87,7 @@ We don't pull in the history of time series if we only have a partial date (day 
 
 There are a few reasons why your metric may not be getting updated:
 
-- It’s a manual goal: Manual metrics aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
+- It’s a manual metric: Manual metrics aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual metric, do regular check-ins.
 - You don't have scheduled refresh for the dataset: Metric values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 - Metrics don’t get updated if they're created from a push dataset. 
 
@@ -97,7 +97,7 @@ To connect your current value or target to data, you need build permissions for 
 
 **I shared a scorecard but my users can’t do check-ins and add notes. Why not?**
 
-Currently, users need to have edit permissions for the scorecard to add check-ins. Updated scorecard and goal-level permissions are in the works. They'll allow check-in permissions without edit permissions for the scorecard.  
+Currently, users need to have edit permissions for the scorecard to add check-ins. Updated scorecard and metric-level permissions are in the works. They'll allow check-in permissions without edit permissions for the scorecard.  
 
 **Why can’t I update the value as part of my check-in?**
 
@@ -115,7 +115,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-Scorecards do have goal-level permissions roles. While workspace permissions give view or build access to the workspace, goal-level permissions restrict access so that certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [goal-level permissions in scorecards](service-goals-set-permissions.md).
+Scorecards do have metric-level permissions roles. While workspace permissions give view or build access to the workspace, metric-level permissions restrict access so that certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [metric-level permissions in scorecards](service-goals-set-permissions.md).
 
 ## Issues and limitations 
   
@@ -132,7 +132,7 @@ Scorecards do have goal-level permissions roles. While workspace permissions giv
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
 - [Stay on top of your metrics in Power BI](service-goals-check-in.md)
-- [Protect your scorecard with goal-level permissions](service-goals-set-permissions.md)
+- [Protect your scorecard with metric-level permissions](service-goals-set-permissions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

@@ -33,7 +33,7 @@ Scorecards can be filtered to metrics labeled as a particular status by clicking
     
    :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Metrics filtered to status behind via summary card.":::
 
-There is also a keyword search that filters the scorecard down to metric with the keyword match.  Select the filter icon above the first goal, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
+There is also a keyword search that filters the scorecard down to metric with the keyword match.  Select the filter icon above the first metric, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
 
    :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Indicating location of keyword search on scorecard.":::
     

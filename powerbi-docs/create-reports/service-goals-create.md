@@ -21,7 +21,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 - Edit a metric.
 - Share the scorecard with others.
 
-You can also connect metrics to an existing report visual in Power BI. See [Create connected goals](service-goals-create-connected.md) for details. 
+You can also connect metrics to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 
 :::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Northwind scorecard with metrics and submetrics.":::
 
@@ -59,10 +59,10 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
 
-1. Set **Current** and **Target** values for your metrics. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected goals](service-goals-create-connected.md) for details. 
+1. Set **Current** and **Target** values for your metrics. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 1. Set the format for your values, and choose a **Status**, **Start date**, and **End date**. 
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-new-number-format.png" alt-text="In the New goal, select a number format.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-new-number-format.png" alt-text="In the New metric, select a number format.":::
 
     Power BI automatically represents values in numeric notation. For example, *2044* is represented as *2 K*. 
 
@@ -78,11 +78,11 @@ You can also define one or more submetrics for your metric. There are two entry 
 
    :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
 
-1. Select the metric you want to create a submetric for, and select **Add subgoal** on top of the scorecard.
+1. Select the metric you want to create a submetric for, and select **Add submetric** on top of the scorecard.
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Select the Add Submetric button.":::
 
-    Or Hover over the metric you want to create a submetric for, select **More options (...)** > **New subgoal**.  
+    Or Hover over the metric you want to create a submetric for, select **More options (...)** > **New submetric**.  
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-more-options.png" alt-text="Select more options, then add submetric.":::
 
@@ -100,7 +100,7 @@ All new metrics created within scorecards have a default daily tracking cycle, w
 
 1. Select the name of any metric or submetric. Power BI opens the **Details** pane.  
 1. Select the **Settings** tab. 
-1. Set the **tracking cycle** frequency for your goal, and select **Track**. 
+1. Set the **tracking cycle** frequency for your metric, and select **Track**. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your metric.":::
  

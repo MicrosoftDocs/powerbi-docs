@@ -42,7 +42,7 @@ On the **Triggers** tab, browse the list of triggers.
 -	Create a scorecard.
 -	Update a check-in.
 -	Update a metric.
--	Get goal(s).
+-	Get metric(s).
 -	Get metric check-in(s).
 
 ### Triggers
@@ -60,7 +60,7 @@ For more information on what each action and trigger does, see the documentation
 
 :::image type="content" source="media/service-goals-create/more-info-goals.png" alt-text="Information icon highlighted next to each action and trigger.":::
 
-You can also see all the documentation by going to the "Create a goal" section of the [Power BI connectors](/connectors/powerbi/#create-a-goal-(preview)) article.
+You can also see all the documentation by going to the "Create a metric" section of the [Power BI connectors](/connectors/powerbi/#create-a-goal-(preview)) article.
 
 :::image type="content" source="media/service-goals-create/docs-for-goals.png" alt-text="A snapshot of the documentation screen for each action and trigger.":::
 

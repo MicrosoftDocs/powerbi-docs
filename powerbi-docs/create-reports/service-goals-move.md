@@ -22,9 +22,9 @@ It's easy to reorder metrics on the scorecard, or make them submetrics.
 
 - Select a metric and drag it up or down. Indent it slightly to make it a submetric of another metric. 
 
-    When you make it a subgoal, it takes the color of the metric it's under.
+    When you make it a submetric, it takes the color of the metric it's under.
 
-    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Animation of moving a goal, and making it a submetric.":::
+    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Animation of moving a metric, and making it a submetric.":::
 
 ## Hide or move a column
 

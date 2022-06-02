@@ -20,13 +20,13 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 - Connecting either the current or target value to data in an existing Power BI report.
 - Connecting both values to data in an existing Power BI report.
 
-This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual goal](service-goals-create.md#step-2-create-a-manual-goal) in the article **Create scorecards and manual goals**. 
+This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual metric](service-goals-create.md#step-2-create-a-manual-metric) in the article **Create scorecards and manual metrics**. 
 
 ## Connect values to data
 
 You can connect either the current or the target value, or both, to a value in a report.
 
-1. [Create a metric or edit an existing goal](service-goals-create.md) in a scorecard.
+1. [Create a metric or edit an existing metric](service-goals-create.md) in a scorecard.
 
 1. In the **Current** or **Target** field, select **Connect to data**.
 
