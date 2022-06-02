@@ -16,7 +16,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v4.6.0
 
-ETA: June 5, 2022
+ETA: June 13, 2022
 
 * Adding new capabilities property: [privileges](capabilities.md) and two privileges:
   * web access
