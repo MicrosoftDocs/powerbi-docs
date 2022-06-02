@@ -22,11 +22,11 @@ ETA: June 5, 2022
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
+* New API to allow [downloading visual to file](./file-download-api.md)
 * Supports Desktop S06
 
 ## API v4.5.0
 
-* New API to allow [downloading visual to file](./file-download-api.md)
 * Supports Desktop S05
 
 ## API v4.2.0
