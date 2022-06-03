@@ -181,7 +181,7 @@ Follow the instructions in the [embed content for your customers](embed-sample-f
 
 * To use a **Power BI dataset** as a data source:
 
-  * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
+  * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/power-bi/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
   * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
 * To use a **Single Sign-on (SSO)** enabled data source:
