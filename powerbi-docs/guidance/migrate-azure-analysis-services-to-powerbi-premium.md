@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 06/03/2022
 ms.custom: intro-migration
 ---
 
@@ -64,7 +64,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
 | [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI dataset | No | Yes |
 | [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
-| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes <sup>1</sup> |
+| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes |
 | **Business enablement** |||
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |
 | Business-driven interactive reports, workspaces, and apps | No | Yes |
@@ -78,12 +78,12 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Interactive analysis over big data** |||
 | [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
 | [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables | No | Yes <sup>1</sup> |
-| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes <sup>1</sup> |
+| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
-| [VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in an organization's VNet | No | Yes <sup>1</sup> |
+| [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
 | [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
 | [Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity | No | Yes |
 | [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
@@ -102,7 +102,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
 | [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
-| [Asynchronous refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes <sup>1</sup> |
+| [Enhanced refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
 | [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
