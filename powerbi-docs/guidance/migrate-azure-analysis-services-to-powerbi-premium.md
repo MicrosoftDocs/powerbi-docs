@@ -102,7 +102,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
 | [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
-| [Enhanced refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
+| [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
 | [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
@@ -119,7 +119,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
-| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-metric-overview), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
+| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
 | [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
