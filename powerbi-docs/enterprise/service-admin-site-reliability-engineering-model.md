@@ -163,7 +163,9 @@ Finally, a foundational element of Power BI service resiliency is ensuring that 
 
 ## Next steps
 
-For more information and resources on the Power BI service, take a look at the following articles.
+For more information related to this article, check out the following resources:
 
-* [Governance and deployment approaches](service-admin-governance.md)
+* [Power BI adoption roadmap: Governance](../guidance/powerbi-adoption-roadmap-governance.md)
 * [White papers for Power BI](../guidance/whitepapers.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
