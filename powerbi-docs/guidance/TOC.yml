@@ -200,6 +200,10 @@
           href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+      - name: "Overview"
+        href: powerbi-implementation-planning-overview.md
+      - name: "Tenant setup"
+        href: powerbi-implementation-planning-tenant-setup.md
       - name: Workspaces
         items:
         - name: "Workspaces overview"

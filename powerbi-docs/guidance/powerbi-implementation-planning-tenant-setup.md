@@ -37,7 +37,8 @@ There's a process for a system administrator to [take over the unmanaged tenant]
 When considering your Azure AD tenant for use with Power BI, the key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Confirm the Azure tenant is managed:** Verify your Azure AD tenant is actively being managed by the system administrators. If it's not, initiate the process to take over the unmanaged tenant.
+> - **Confirm the Azure tenant is managed:** Verify your Azure AD tenant is actively being managed by the system administrators.
+> - **Take over tenant:** If applicable, initiate the process to take over the unmanaged tenant.
 
 ### Tenant ID for external users
 
@@ -99,10 +100,13 @@ When considering the default data region for your Power BI tenant, the key decis
 
 > [!div class="checklist"]
 > - **Identify your default data region:** Verify what the default data region is for your Power BI tenant. If it's an unacceptable geographic region, investigate the process to move your Power BI tenant.
+> - **Initiate process to move tenant:** If you discover that your Power BI tenant is an unacceptable geographic region, investigate the process to move your Power BI tenant.
 
 ### Other specific data regions
 
-For situations when data needs to be stored elsewhere from the default data region, a Premium capacity may be assigned to a different data region. Note that individual workspaces must be assigned to the correct Premium capacity to ensure the data is truly stored in the desired geographic location. [Multi-geo](../admin/service-admin-premium-multi-geo.md) support enables organizations to:
+Some organizations have data residency requirements, which typically include regulatory or industry requirements for storing data in a specific geographic region. Data sovereignty requirements are similar, but more stringent because the data is subject to the laws of the country in which the data is stored. Sometimes there are also data localization requirements which dictates that data created within certain borders needs to remain within those borders.
+
+Various types of regulatory, industry, or legal requirements can result in the need to store certain data in Power BI elsewhere from the default data region (discussed in the previous section). For these types of situations, a Premium capacity may be assigned to a specific data region. Note that individual workspaces must be assigned to the correct Premium capacity to ensure the data is truly stored in the desired geographic location. [Multi-geo](../admin/service-admin-premium-multi-geo.md) support enables organizations to:
 
 - Meet data residency requirements for data at rest.
 - Improve the ability to locate data near the user base.
@@ -113,8 +117,9 @@ For situations when data needs to be stored elsewhere from the default data regi
 When considering other specific data regions for your Power BI tenant, the key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Identify other data residency requirements:** For specific situations where data should be stored elsewhere from the default data region, investigate the use of Premium multi-geo.
+> - **Identify other data residency requirements:** Determine what your requirements are for data residency. Identify which regions are applicable, and what users might be involved.
+> - **Investigate use of Premium capacity multi-geo:** For specific situations where data should be stored elsewhere from the default data region, investigate the use of Premium multi-geo.
 
 ## Next steps
 
-For additional considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see the [Power BI implementation planning checklist](powerbi-implementation-planning-checklist.md).
+For additional considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see the [Power BI implementation planning overview](powerbi-implementation-planning-overview.md).
