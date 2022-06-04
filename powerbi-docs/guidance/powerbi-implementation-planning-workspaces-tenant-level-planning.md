@@ -47,7 +47,7 @@ The workspace name can indicate several things, such as:
 - **Ownership and responsibility:** A workspace name might include an indication of who is responsible for managing the content. For example, use of an 'SLS' prefix or suffix might indicate that the Sales team owns and manages the content.
 
 > [!TIP]
-> To keep workspace names short, additional metadata can be included in the workspace description instead. The most relevant information should be included in the workspace name (particularly if you anticipate the need to use search). It's also useful to use the workspace image to augment the workspace name. These items are discussed further in the [workspace settings](#workspace-settings) section later in this article.
+> To keep workspace names short, additional metadata can be included in the workspace description instead. The most relevant information should be included in the workspace name (particularly if you anticipate the need to use search). It's also useful to use the workspace image to augment the workspace name. These items are discussed further in the [workspace settings](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-settings) section later in the next article.
 
 Having consistency in how workspaces are named helps everyone. The user experience is improved because users can find content more easily. Administrators can oversee the content more easily as well.
 
@@ -94,7 +94,7 @@ The type of information to be collected in the request for a new workspace inclu
 | Workspace administrators | PowerBIContentAdmins-Topic@Org.com | Is this (preferably) a group? Or at least 2 administrators? |
 | Person submitting the request | Name@Org.com | |
 
-The above includes the minimum amount of information required to set up a workspace initially. However, it doesn't include all configuration items. In most cases, the primary workspace administrator will take responsibility for the remaining setup once the workspace has been created. These [workspace settings](#workspace-settings) are discussed later in this article.
+The above includes the minimum amount of information required to set up a workspace initially. However, it doesn't include all configuration items. In most cases, the primary workspace administrator will take responsibility for the remaining setup once the workspace has been created. These [workspace settings](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-settings) are described in the next article.
 
 There are a lot of technology options for creating a form to capture the information needed from a user. [Microsoft Power Apps](/power-apps/powerapps-overview) is another tool within [Microsoft Power Platform](https://powerplatform.microsoft.com/) suite of products. It's a low-code software option that's ideal for building simple web-based forms and applications. The technology you choose to use for creating a web-based form depends upon who will be responsible for creating and maintaining the form.
 
