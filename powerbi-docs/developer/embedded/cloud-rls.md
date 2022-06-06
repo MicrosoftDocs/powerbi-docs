@@ -7,7 +7,7 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 06/06/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
@@ -79,7 +79,7 @@ To generate a token using the Embed Token API, pass the following information to
 
 * **username** (mandatory) – If the roles are dynamic, the *username* string is used as the filter. For static roles, the *username* doesn't affect the RLS and can be any string at all. Only a single username can be listed.
 * **roles** (mandatory) – The role(s) used when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
-* **dataset** (mandatory) – The dataset that is applicable for the artifact you're embedding.
+* **dataset** (mandatory) – The dataset that is applicable for the item you're embedding.
 
 You can now embed your report into your app. The report will filter data according to the RLS applied.
 
