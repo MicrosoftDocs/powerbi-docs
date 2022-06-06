@@ -167,9 +167,9 @@ Create a report using [parameters](/rest/api/power-bi/datasets/update-parameters
 
 ## Embed a report
 
-After the setup is complete, you can embed customer reports and other [artifacts](pbi-glossary.md#artifacts) into your application using an embed token.
+After the setup is complete, you can embed customer reports and other items into your application using an embed token.
 
-When a customer visits your application, use the corresponding profile to call the [GenerateToken API](/rest/api/power-bi/embed-token). Use the generated embed token to embed a report or other artifact in the customer's browser.
+When a customer visits your application, use the corresponding profile to call the [GenerateToken API](/rest/api/power-bi/embed-token). Use the generated embed token to embed a report or other items in the customer's browser.
 
 To generate an embed token:
 
@@ -211,7 +211,7 @@ Without profiles, a service principal is limited to 1,000 [workspaces](pbi-gloss
 
 Once a service principal profile has access to a workspace, its parent service principal’s access to the workspace can be removed to avoid scalability problems.
 
-Even with these advantages, you should consider the potential scale of your application. For example, the number of workspace [artifacts](pbi-glossary.md#artifacts) a profile can access is limited. Today, a profile has the same limits as a regular user. If the ISV application allows end users to save [a personalized copy](#customizing-and-authoring-content) of their embedded reports, a customer's profile will have access to all the created reports of all its users. This model can eventually exceed the limit.
+Even with these advantages, you should consider the potential scale of your application. For example, the number of workspace items a profile can access is limited. Today, a profile has the same limits as a regular user. If the ISV application allows end users to save [a personalized copy](#customizing-and-authoring-content) of their embedded reports, a customer's profile will have access to all the created reports of all its users. This model can eventually exceed the limit.
 
 ### Automation and operational complexity
 
@@ -227,7 +227,7 @@ For example, creating a profile and a workspace for a new customer is a common t
 
 ### Multi-Geo needs  
 
-Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the customer profile should duplicate all artifacts into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
+Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the customer profile should duplicate all items into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
 
 For compliance reasons, you may still want to create multiple Power BI tenants in different regions. Read more about [multi-geo](../../admin/service-admin-premium-multi-geo.md).
 
