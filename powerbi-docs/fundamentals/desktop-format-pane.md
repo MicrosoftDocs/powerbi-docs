@@ -99,13 +99,17 @@ On a new **More options (...)** menu, you can reset all settings back to default
 
 :::image type="content" source="media/desktop-format-pane/new-revert-all-default.png" alt-text="Screenshot of new Reset all settings to defaults.":::
 
-## Subcategories
+## Expand subcategories
 
-You’ll notice that within the cards we've broken up the settings further into subcategories. Breaking them up improves readability and allows you to focus on specific parts of a card at a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right-click in a card to expand all the subcategories at once, or collapse them all for quick scanning and scrolling. 
+You’ll notice that within the cards we've broken up the settings further into subcategories. Breaking them up improves readability and allows you to focus on specific parts of a card at a time. We’ve also added a new context menu for navigating these new subcategories. You can right-click a card to expand all the subcategories at once, or collapse them all for quick scanning and scrolling.
 
-|Old Format pane  |New Format pane  |
-|---------|---------|
-|:::image type="content" source="media/desktop-format-pane/old-no-categories.png" alt-text="Screenshot of old subcategories.":::     | Select **More options**. <br><br>:::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories." <br><br>Select **Expand all subcategories by default when you open a category**.<br><br>:::image type="content" source="media/desktop-format-pane/format-pane-options-expand.png" alt-text="Screenshot of Options dialog box with Format pane, Expand all subcategories.":::        |
+1. In the Format pane, select **More options**.
+
+    <br><br>:::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories."
+
+2. Select **Expand all subcategories by default when you open a category**.
+
+    <br><br>:::image type="content" source="media/desktop-format-pane/format-pane-options-expand.png" alt-text="Screenshot of Options dialog box with Format pane, Expand all subcategories.":::
 
 ## All cards exposed
 
