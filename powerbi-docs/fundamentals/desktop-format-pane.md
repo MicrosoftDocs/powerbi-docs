@@ -95,7 +95,7 @@ We've split the long list of formatting cards into two categories: visual specif
 
 ## New global reset to default
 
-On a new **More options (...)** menu, you can reset all settings back to default. Previously this process was painstaking, opening each card and selecting **Reset to default**. This option is especially helpful when you want your visuals to reflect your theme styling.  
+On the **More options (...)** menu, you can return all settings back to default. This option is especially helpful when you want your visuals to reflect your theme styling.  
 
 :::image type="content" source="media/desktop-format-pane/new-revert-all-default.png" alt-text="Screenshot of new Reset all settings to defaults.":::
 
