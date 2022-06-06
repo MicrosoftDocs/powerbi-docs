@@ -179,7 +179,7 @@ Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-po
 
 ## Step 4 - Add the service principal to your workspace
 
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity, or the security group that includes your service principal, as a member or admin to your workspace.
+To enable your Azure AD app to access items such as reports, dashboards and datasets in the Power BI service, add the service principal entity, or the security group that includes your service principal, as a member or admin to your workspace.
 
 >[!NOTE]
 >This section provides UI instructions. You can also add a service principal or a security group to a workspace, using the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser).
