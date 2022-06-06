@@ -40,10 +40,10 @@ Improvements this month:
 Here are the improvements we added in May 2022:
 
 - We added a user preference setting to expand all subcategories when you open a category card. Go to **Options** > **Report settings**, and under **Format pane**, select **Expand all subcategories by default when you open a category**.
-- We re-added Analytics pane support for custom visuals.
-- We re-added **No fill** for Title background, Tooltips background, and Header icons Help tooltip background color pickers.
+- We readded Analytics pane support for custom visuals.
+- We readded **No fill** for Title background, Tooltips background, and Header icons Help tooltip background color pickers.
 - We added **color** back  to all color swatches for easier searching.
-- We re-added the **Conditional formatting** card for the decomposition tree visual.
+- We readded the **Conditional formatting** card for the decomposition tree visual.
 - To help with adjusting to the new naming conventions, we added an alias for the renamed **Conditional formatting** card, which is now called **Cell elements**. When you search for “conditional formatting” for a matrix or table, we display the **Cell elements**.
 
 ### April 2022
@@ -60,10 +60,10 @@ Here are the improvements we added in April 2022:
 
 Here are the improvements we added in February 2022:
 
-- Ability to toggle axis title independent of axis has been re-added.
-- Ability to add shade area to combo charts has been re-added.
-- Ability to customize marker shape by series for scatter charts has been re-added.
-- Outline settings for matrix and table have been re-added.
+- Ability to toggle axis title independent of axis has been readded.
+- Ability to add shade area to combo charts has been readded.
+- Ability to customize marker shape by series for scatter charts has been readded.
+- Outline settings for matrix and table have been readded.
 - Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 
 ## New pivot icons 
@@ -86,7 +86,7 @@ To address the limited vertical space on the Format pane, we’ve moved the Visu
 
 ## Splitting specific vs. general settings
 
-We've split the long list of formatting cards into two categories: visual specific vs. general settings. The general settings contain cards that affect the visual container and are consistent across all visual types. The visual specific settings contain cards that pertain only to the visual type you’re currently working with. This change allows for easier adjustment of general settings when clicking across visuals, better scannability and discovery of visual specific cards, and helps new users learn where to find what. 
+We've split the long list of formatting cards into two categories: visual specific vs. general settings. The general settings contain cards that affect the visual container and are consistent across all visual types. The visual specific settings contain cards that pertain only to the visual type you’re currently working with. This change allows for easier adjustment of general settings when you click across visuals, better scannability and discovery of visual specific cards, and helps new users learn where to find what. 
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -105,11 +105,11 @@ You’ll notice that within the cards we've broken up the settings further into 
 
 1. In the Format pane, select **More options**.
 
-    <br><br>:::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories."
+    :::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories."
 
 2. Select **Expand all subcategories by default when you open a category**.
 
-    <br><br>:::image type="content" source="media/desktop-format-pane/format-pane-options-expand.png" alt-text="Screenshot of Options dialog box with Format pane, Expand all subcategories.":::
+    :::image type="content" source="media/desktop-format-pane/format-pane-options-expand.png" alt-text="Screenshot of Options dialog box with Format pane, Expand all subcategories.":::
 
 ## All cards exposed
 
@@ -174,7 +174,7 @@ In the previous Format pane settings, changing grand totals for a matrix would a
 
 ## Legend location options
 
-WIth the new Format pane, you can be more precise about legend location.
+With the new Format pane, you can be more precise about legend location.
 
 |Old behavior  |New behavior  |
 |---------|---------|
