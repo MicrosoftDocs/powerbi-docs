@@ -33,7 +33,7 @@ In Power BI Desktop, to explicitly turn natural language capabilities on or off 
 
 For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 
-<a name="#how-does-indexing-work-with-qa"></a>
+<a name="how-does-indexing-work-with-qa"></a>
 ## Q&A indexing
 
 Enabling Q&A builds an index, to quickly provide real-time feedback to the user and help interpret their questions. The index can take some time to build. The index has the following characteristics:
