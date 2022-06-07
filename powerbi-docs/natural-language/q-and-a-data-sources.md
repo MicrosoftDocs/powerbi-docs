@@ -1,6 +1,6 @@
 ---
 title: Data sources for natural language Q&A
-description: Learn about import, live connect, and DirectQuery data sources for Power BI natural language Q&A. We'll also look inside the concepts of indexing and caching.
+description: Learn about import, live connect, and DirectQuery data sources for Power BI natural language Q&A. Understand Q&A indexing and caching.
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
@@ -24,9 +24,12 @@ The following Power BI configurations support Q&A:
 
 Using a Q&A visual in a report enables natural language Q&A by default. If you're using DirectQuery or live connect, a prompt appears.
 
-In Power BI Desktop, to explicitly turn natural language capabilities on or off for a report, go to **Options**.
+In Power BI Desktop, to explicitly turn natural language capabilities on or off for a report:
 
-![Screenshot showing the Power BI Desktop Q&A options.](media/qna-desktop-options.png)
+1. Go to **File** > **Options and settings** > **Options**.
+1. Under **Current File** > **Data Load**, select or deselect **Turn on Q&A to ask natural language questions about your data**.
+
+:::image type="content" source="media/qna-desktop-options.png" alt-text="Screenshot showing the Power BI Desktop Q&A options.":::
 
 For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 
