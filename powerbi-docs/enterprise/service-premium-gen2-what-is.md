@@ -64,7 +64,7 @@ Capacity administrators automatically have their my workspaces assigned to Premi
 
 ## Capacity nodes for Premium Gen2
 
-With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
+With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single item, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 ## Refresh in Premium Gen2
 
@@ -140,19 +140,19 @@ The following known limitations currently apply to Premium Gen2:
 
 * Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently.
 
-* Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
+* Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all items simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual items (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 
-    * A single artifact cannot exceed the amount of memory the capacity SKU offers. 
+  * A single item cannot exceed the amount of memory the capacity SKU offers.
 
-    * The limitation includes all the operations (interactive and background) being processed for the artifact while in use (for example, while a report is being viewed, interacted with, or refreshed).
+  * The limitation includes all the operations (interactive and background) being processed for the item while in use (for example, while a report is being viewed, interacted with, or refreshed).
 
-    * Dataset operations like queries are also subject to individual memory limits, just as they are in the first version of Premium.
+  * Dataset operations like queries are also subject to individual memory limits, just as they are in the first version of Premium.
 
-    * To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Two separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size: 
+  * To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Two separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size: 
 
-        * The dataset needs to be loaded into memory.
-        * The refresh operation will cause the memory used by the dataset to double, at least, since the original copy of data is still available for active queries, while an additional copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
-        * Report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory and will be subject to the query memory limitation as described.
+      * The dataset needs to be loaded into memory.
+      * The refresh operation will cause the memory used by the dataset to double, at least, since the original copy of data is still available for active queries, while an additional copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+      * Report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory and will be subject to the query memory limitation as described.
 
     The following table summarizes all the limitations that are dependent on the capacity size.
 

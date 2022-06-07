@@ -22,9 +22,9 @@ See [What is Azure Private Link](/azure/private-link/private-link-overview) to l
 
 ## Understanding private endpoints
 
-Private endpoints guarantee that traffic going *into* your organization’s Power BI artifacts (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI artifacts must come from the established private link. You can configure Power BI to deny all requests that don’t come from the configured network path. 
+Private endpoints guarantee that traffic going *into* your organization’s Power BI items (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI items must come from the established private link. You can configure Power BI to deny all requests that don’t come from the configured network path.
 
-Private endpoints *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Configure firewall rules and virtual networks to further secure your data sources. 
+Private endpoints *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Configure firewall rules and virtual networks to further secure your data sources.
 
 ### Power BI and private endpoint integration
 
