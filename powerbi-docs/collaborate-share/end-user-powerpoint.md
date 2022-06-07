@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/06/2022
+ms.date: 06/07/2022
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 [!INCLUDE[consumer-appliesto-yyn](../includes/consumer-appliesto-yyn.md)]
 
 
-Power BI reports can be exported to PowerPoint and can be embedded in PowerPoint. The first option exports your report and creates a PowerPoint slide deck with one page for each report page. The report is static; the pages retain the state of the report at the time of export. This article teaches you how to export your report. 
+Power BI reports can be exported to PowerPoint and live report pages can be embedded in PowerPoint. The first option exports your report and creates a PowerPoint slide deck with one page for each report page. The report is static; the pages retain the state of the report at the time of export. This article teaches you how to export your report. 
 
 Another option is to embed a live version of your report page in PowerPoint. You can interact with your data just as you would in Power BI. For more information about embedding a live report page, visit these articles:
 
@@ -35,8 +35,7 @@ When you export to PowerPoint, the following occurs:
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.
 
 > [!TIP]
-> You can also copy one visual at a time from the Power BI service and paste it into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md).
-
+> You can also copy one visual at a time from the Power BI service and paste it into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md).    
 ![Select the Copy as image icon.](media/end-user-powerpoint/power-bi-copy.png)
 
 ## Export your Power BI report to PowerPoint
@@ -123,6 +122,6 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 ## Next steps
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
-[Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-add-report.md)    
+[Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)    
 [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)    
 [Print a report](../consumer/end-user-print.md)
