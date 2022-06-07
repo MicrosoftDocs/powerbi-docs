@@ -4,43 +4,59 @@ description: Get to know the redesigned Format pane in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: 
+ms.custom: video-RE4Yb4T
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/18/2022
+ms.date: 06/01/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
+This article explains the biggest changes we’ve made to improve usability and consistency across visual and non-visual elements. Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. 
 
-The first time you open the February 2022 (or later) release of Power BI Desktop, you see a notification about the updated Format pane.
+The first time you open the latest release of Power BI Desktop, you see a notification about the updated Format pane. We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
 
-:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
+## Video
 
-We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
+In this video, Roseanne demonstrates the latest updates to the Format pane.
 
-## Latest updates
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
 
-Improvements added in February 2022 include:
+## Recent updates
+
+### May 2022
+
+Here are the improvements we added in May 2022:
+
+- We added a user preference setting to expand all subcategories when you open a category card. Go to **Options** > **Report settings**, and under **Format pane**, select **Expand all subcategories by default when you open a category**.
+- We readded Analytics pane support for custom visuals.
+- We readded **No fill** for Title background, Tooltips background, and Header icons Help tooltip background color pickers.
+- We added **color** back  to all color swatches for easier searching.
+- We readded the **Conditional formatting** card for the decomposition tree visual.
+- To help with adjusting to the new naming conventions, we added an alias for the renamed **Conditional formatting** card, which is now called **Cell elements**. When you search for “conditional formatting” for a matrix or table, we display the **Cell elements**.
+
+### April 2022
+
+Here are the improvements we added in April 2022:
+
+- Shape map custom color has been reintroduced.
+- Scatter chart *show blank values* toggle has been reintroduced.
+- Slicers with slider type (between, before, after) responsive toggle has been reintroduced.
+- Button icon size setting has been reintroduced.
+- Issue causing delay in cursor position for text input boxes is resolved.
+
+### February 2022
+
+Here are the improvements we added in February 2022:
 
 - Ability to toggle axis title independent of axis has been re-added.
 - Ability to add shade area to combo charts has been re-added.
 - Ability to customize marker shape by series for scatter charts has been re-added.
 - Outline settings for matrix and table have been re-added.
 - Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
-
-Improvements added in April 2022 are the following:
-
-- Shape map custom color has been reintroduced
-- Scatter chart *show blank values* toggle has been reintroduced
-- Slicers with slider type (between, before, after) responsive toggle has been reintroduced
-- Button icon size setting has been reintroduced
-- Issue causing delay in cursor position for text input boxes is resolved
-
 
 ## New pivot icons 
 

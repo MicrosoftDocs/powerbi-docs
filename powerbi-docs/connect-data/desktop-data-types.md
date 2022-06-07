@@ -131,7 +131,7 @@ However, a visual based on this data returns just two rows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="Screenshot of a table visual based on the same data returns just two lines of data - the first row has a total index of 60 and the second row has a total index of 11.":::
 
-As the first image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The reason for the differences it because the engine automatically removes (trim) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
+As the above image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The difference between the number of rows between the visual and the data table is caused by the engine automatically removing (trimming) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
 
 This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image.
 

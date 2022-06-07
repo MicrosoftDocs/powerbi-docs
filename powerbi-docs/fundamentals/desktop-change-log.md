@@ -216,7 +216,7 @@ Bug fixes:
 - Fix for PBI.FormatAnnotationStats telemetry event.
 - Fix for customized fields display folders: now the folders won't disappear after data refresh or **Choose Columns** changes in Power Query.
 - ODBC drivers update to newer versions.
-- Fix for Microsoft Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
+- Fix for Microsoft Purview Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
 
 ## February 2021 QFE 1
 
