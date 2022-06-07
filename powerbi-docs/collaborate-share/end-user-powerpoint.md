@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 06/06/2022
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -21,7 +21,7 @@ Power BI reports can be exported to PowerPoint and can be embedded in PowerPoint
 Another option is to embed a live version of your report page in PowerPoint. You can interact with your data just as you would in Power BI. For more information about embedding a live report page, visit these articles:
 
 - [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)
-- [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-add-report.md)
+- [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)
 - [Administer the Power BI add-in for PowerPoint](service-power-bi-powerpoint-add-in-admin.md)
 
 ## Export a report to PowerPoint
@@ -109,7 +109,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * Some reports cannot be exported. These include:
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details.
+    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details.
     - Reports larger than 500 MB when exported. 
     - Reports being exported to older versions of PowerPoint.
     - Reports that take longer than an hour to process. 
@@ -125,4 +125,4 @@ There are a few considerations and limitations to keep in mind when you work wit
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
 [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-add-report.md)    
 [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)    
-[Print a report](end-user-print.md)
+[Print a report](../consumer/end-user-print.md)
