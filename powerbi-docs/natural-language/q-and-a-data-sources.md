@@ -33,6 +33,7 @@ In Power BI Desktop, to explicitly turn natural language capabilities on or off 
 
 For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 
+<a name="#how-does-indexing-work-with-qa"></a>
 ## Q&A indexing
 
 Enabling Q&A builds an index, to quickly provide real-time feedback to the user and help interpret their questions. The index can take some time to build. The index has the following characteristics:
@@ -44,7 +45,9 @@ Enabling Q&A builds an index, to quickly provide real-time feedback to the user 
 
 ## Index refresh and caching
 
-Power BI Desktop creates the index when you use Q&A. A small icon appears when the index is building. While the index is building, the Q&A visual and suggestions might take some time to load. If your model changes or the index becomes outdated, the index must update. Because the index can take time to rebuild, the index updates only if you use Q&A in the same session as when the changes happen.
+Power BI Desktop creates the index when you use Q&A. A small icon appears when the index is building. While the index is building, the Q&A visual and suggestions might take some time to load.
+
+If your model changes or the index becomes outdated, the index must update. Because the index can take time to rebuild, the index updates only if you use Q&A in the same session as when the changes happen.
 
 In the Power BI service, the index recreates on publish, republish, and refresh. Q&A index creation isn't always automatic, and can happen on demand to optimize the dataset refreshes. For DirectQuery, Q&A data indexes at most once per day, to reduce the impact on the DirectQuery source.
 
@@ -52,5 +55,5 @@ In the Power BI service, the index recreates on publish, republish, and refresh.
 
 For more information on integrating natural language in your reports, see:
 
-* [Q&A visual](../visuals/power-bi-visualization-q-and-a.md)
-* [Q&A best practices](q-and-a-best-practices.md)
+* [Create a Q&A visual in a report in Power BI](../visuals/power-bi-visualization-q-and-a.md)
+* [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md)
