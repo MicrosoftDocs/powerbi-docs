@@ -60,8 +60,6 @@
         href: end-user-slicer.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
-      - name: "Export a report to PowerPoint"
-        href: end-user-powerpoint.md
       - name: "How to identify and use buttons"
         href: end-user-buttons.md     
       - name: "Add a bookmark to a report"

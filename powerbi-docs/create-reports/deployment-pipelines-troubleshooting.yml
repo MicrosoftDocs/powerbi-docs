@@ -126,7 +126,7 @@ sections:
           |You're using [selective deployment](deployment-pipelines-get-started.md#selective-deployment) and aren't selecting all the linked items.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset or dataflow. Your unselected content (such as datasets, reports or dashboards) won't be copied to the next stage. </br></br>Select the dataset or the dataflow that's linked to the selected items. Your selected items will be copied to the next stage.         |
           
       - question: |
-          I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which artifacts aren't supported?
+          I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which items aren't supported?
         answer: |
           For a comprehensive list of items and artifacts that aren't supported in deployment pipelines, see the following sections:
           
