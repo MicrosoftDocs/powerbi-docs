@@ -106,7 +106,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >Service principals must always provide the following:
 >
 >* An identity for any item with an RLS dataset.
->* For an SSO dataset, an effective RLS identity with the username property defined.
+>* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
 
 ## Considerations and limitations
 

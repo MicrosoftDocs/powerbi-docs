@@ -34,7 +34,7 @@ To use RLS for your paginated reports:
 
 To apply row-level security to a Power BI paginated report, use the built-in field **UserID** to assign a [parameter](../../paginated-reports/report-builder-parameters.md). This parameter will be used to [filter or query your data](#use-userid-as-a-filter-at-report-or-query-level).
 
-Then, pass the **UserID** to the [Reports GenerateTokenInGroup](/rest/api/power-bi/embed-token/generate-token) API to [get the embed token](#generate-an-embed-token).
+Then, pass the **UserID** to the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API to [get the embed token](#generate-an-embed-token).
 
 ## Use UserID as a filter at report or query level
 
@@ -86,23 +86,25 @@ You can use **UserId** as a *filter* or in a *query* to the data source.
 
 When you embed a paginated report for your customers, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embed-token/generate-token) API to get the embed token. This token can also be used to filter some data out of the paginated report.
 
-You can only generate a token using a **service principal**. You can't generate a token using a master user. The service principal has to be at least a member (or higher) of the workspace in the Power BI service. (If the service principal is a contributor or viewer it won't be able to generate a token).
+You can only generate a token using a **service principal**. You can't generate a token as a master user. The service principal has to have at least member permissions to the workspace in the Power BI service. (If the service principal is a contributor or viewer it won't be able to generate a token).
 
-To generate a token, assign the `username` field with the information you want to display. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to just the data that has *green* as its value in the color column.
+To [generate a token](generate-embed-token.md#row-level-security), assign the `username` field with the information you want to display. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to just the data that has *green* as its value in the color column.
 
 ```JSON
 {
-    "accessLevel": "View",
-    "reportId": "cfafbeb1-8037-4d0c-896e-a46fb27ff229",
-    "identities": [
-        {
-            // Use the paginated report parameter as the "username" value
-            "username":     "green",
-            "reports: [
-                "cfafbeb1-8037-4d0c-896e-a46fb27ff229"
-            ]
-        }
-    ]
+ "reports": [
+ {
+  "id": "8d57615e-cfed-4d60-bd21-7dc05727193c"
+ }
+ ],
+ "identities": [
+ {
+  "username": "green",
+  "reports": [
+  "8d57615e-cfed-4d60-bd21-7dc05727193c"
+  ]
+ }
+ ]
 }
 ```
 
