@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/12/2022
+ms.date: 06/08/2022
 #Customer intent: As an ISV, I want embed paginated reports for my customers using RLS to maintain privacy and security.
 ---
 
