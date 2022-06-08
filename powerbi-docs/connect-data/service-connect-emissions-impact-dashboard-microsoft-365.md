@@ -46,7 +46,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 in Power BI and conn
 
 1. When prompted, click **Install**.
 
-1. When the app finishes installing, it will appear on your Power BI Apps page. Click on the app and open it. 
+1. When the app finishes installing, it will appear on your Power BI Apps page. Click on the app and open it.
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-apps-page.png" alt-text="Screenshot of app installed on app page.":::
 
@@ -54,7 +54,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 in Power BI and conn
 
      :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-connect-data.png" alt-text="Screenshot of connect data.":::
 
-1. In the **Connect to Emissions Impact Dashboard for Microsoft 365** dialog, enter your Microsoft 365 tenant ID.
+1. In the **Connect to Emissions Impact Dashboard for Microsoft 365** dialog, enter your Microsoft 365 tenant ID. For help finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-tenant-id.png" alt-text="Screenshot of tenant ID input."::: 
 
@@ -121,7 +121,7 @@ Follow the steps on [this page](/onedrive/find-your-office-365-tenant-id) to fin
 
 **I'm receiving an error at the time of connecting my data with the dashboard. What can I do?**
 
-First, check in the Microsoft 365 Admin Center that you have one of the roles listed in the [prerequisites](#prerequisites) section above. If you don't, request this access from your administrator. Next, ensure you're using the correct Microsoft 365 tenant ID. 
+First, check in the Microsoft 365 Admin Center that you have one of the roles listed in the [prerequisites](#prerequisites) section above. If you don't, request this access from your administrator. Next, ensure you're using the correct [Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id). 
 
 **I entered my tenant ID, but my company data isn't loading. What's the issue?** 
 

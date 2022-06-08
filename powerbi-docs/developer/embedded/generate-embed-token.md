@@ -106,7 +106,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >Service principals must always provide the following:
 >
 >* An identity for any item with an RLS dataset.
->* For an SSO dataset, an effective RLS identity with the username property defined.
+>* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
 
 ## Considerations and limitations
 
@@ -114,17 +114,8 @@ For security reasons, the lifetime of the embed token is set to the remaining li
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Register an app](register-app.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-
->[!div class="nextstepaction"]
->[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
->[!div class="nextstepaction"]
->[Embed Power BI content with service principal](embed-service-principal.md)
+* [Register an app](register-app.md)
+* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+* [Embed Power BI content with service principal](embed-service-principal.md)

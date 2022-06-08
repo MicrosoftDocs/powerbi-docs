@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/07/2022
+ms.date: 06/08/2022
 LocalizationGroup: Premium
 ---
 
@@ -45,7 +45,7 @@ You also need to use the following [client libraries](service-premium-connect-to
 
 ## Self-migration to Premium Generation 2
 
-If you want to perform your own migration to the latest platform before March 2022, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service. The change typically completes within a minute and won't take more than 10 minutes.
+If you want to perform your own migration to the latest platform, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service and doesn't involve any additional costs. The change typically completes within a minute and won't take more than 10 minutes.
 
 Ready for the next generation? Follow these steps:
 

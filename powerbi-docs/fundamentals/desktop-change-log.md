@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 5/23/2022
+ms.date: 6/3/2022
 ---
 
 # Change log for Power BI Desktop
@@ -16,6 +16,13 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## May 2022 QFE 2
+
+*Version: 2.105.1143.0, Released: June 3, 2022*
+
+Bug fixes/improvements:
+- Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+- Assert failure fix for column names longer than 30 characters: now users will be able to connect to tables with columns names longer than 30 characters and refresh them. 
 
 ## May 2022 QFE 1
 
