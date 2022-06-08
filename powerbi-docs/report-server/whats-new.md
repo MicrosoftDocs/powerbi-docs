@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/30/2022
+ms.date: 6/08/2022
 ms.custom: intro-whats-new
 ---
 
@@ -26,11 +26,8 @@ The May 2022 update of Power BI Report Server brings many new enhancements, incl
 #### Reporting
 
 - [Dynamic format strings](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296) now supported for all chart elements
-- [Multi-row card selection](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299297)
 - [Bookmark navigator](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299298) now shows the last selected bookmark per group
-- [Canvas Zoom](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299299)
 - [Data point rectangle select](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299300)
-- [Mandatory label policy](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299301)
 - [Updated slicer defaults](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299302) for accessibility improvements
 
 #### Other
