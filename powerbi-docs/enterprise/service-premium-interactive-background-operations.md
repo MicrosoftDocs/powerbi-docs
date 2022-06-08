@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 06/08/2022
 LocalizationGroup: Premium
 ---
 # Interactive and background operations
@@ -33,8 +33,8 @@ The table below lists the Power BI operations. It provides a short description f
 | [Dataflow DirectQuery](../transform-model/dataflows/dataflows-directquery.md) | Connect directly to a dataflow without the need to import the data into a dataset | Dataflows | Interactive |
 | [Dataflow refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) | An on demand or scheduled background dataflow refresh, performed by the service or with REST APIs | Dataflows | Background |
 | Dataset on-demand refresh | A background dataset refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Datasets | Background |
-| Dataset Scheduled Refresh | A scheduled background dataset refresh, performed by the service, REST APIs or public XMLA endpoints | Datasets | Background |
-| Interactive query    | Queries initiated by an on-demand data request from a user, either fetching a model when opening a report or from a report interaction | Datasets | Interactive |
+| Dataset scheduled refresh | A scheduled background dataset refresh, performed by the service, REST APIs or public XMLA endpoints | Datasets | Background |
+| Interactive query    | Queries initiated by an on-demand data request from a user. For example, loading a model when opening a report, or user interaction with a report | Datasets | Interactive |
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
 | Render | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
 | Render | A Power BI paginated report viewed in Power BI service | Paginated report | Interactive |
