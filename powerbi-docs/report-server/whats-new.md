@@ -19,7 +19,7 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 ## May 2022
 
-The May 2022 update of Power BI Report Server brings many new enhancements, including dynamic format strings support, multi-row card selection, canvas zoom, and updated slicer defaults. Here’s a list of new and updated features with links to each. Or read the whole [Power BI Report Server blog post for May 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/).
+The May 2022 update of Power BI Report Server brings many new enhancements, including dynamic format strings support, bookmark navigators, and updated slicer defaults. Here’s a list of new and updated features with links to each. Or read the whole [Power BI Report Server blog post for May 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/).
 
 ### Power BI Desktop for Power BI Report Server
 
