@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 06/08/2022
 LocalizationGroup: Dashboards
 ---
 
@@ -295,7 +295,7 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
-- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail so usage metrics report will not show any data.
+- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report won't show any data.
 
 ## Frequently asked questions
 
