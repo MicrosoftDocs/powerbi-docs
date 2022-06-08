@@ -44,7 +44,7 @@ For example, you can define the role of *Eastern US* as `[Region] = "East"`
 Let's say john@contoso.com is a user of your app. You want to give John access to data from the *Eastern US* role. To embed a report for john@contoso.com, generate an embed token using the *Eastern US* role. The resulting data will be filtered for `[Region] = "East"`.
 
 > [!NOTE]
-> When you generate the embed token, you need to supply a username, but the username can be any string. Static roles have a fixed value that isn't dependant on a username, so once the ISV determines the user's role and passes it to the embed token, the data is filtered according to that role regardless of what username was passed.
+> When you generate the embed token, you need to supply a username, but the username can be any string. Static roles have a fixed value that isn't dependent on a username, so once the ISV determines the user's role and passes it to the embed token, the data is filtered according to that role regardless of what username was passed.
 
 ### Dynamic security
 
