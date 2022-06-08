@@ -118,5 +118,4 @@ To [generate a token](generate-embed-token.md#row-level-security), assign the `u
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Generate an embed token](generate-embed-token.md#row-level-security)
+[Generate an embed token](generate-embed-token.md#row-level-security)
