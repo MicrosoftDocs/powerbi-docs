@@ -190,7 +190,7 @@ There are many considerations related to exporting to Excel. This is one of thos
 If you find that you can't use this feature, reach out to the report owner and your administrator to understand why you can't export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
 [Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
-- When exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwith.
+- When you're exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
 
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
@@ -216,9 +216,9 @@ If you find that you can't use this feature, reach out to the report owner and y
 
   - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
 
-  - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work-around this issue, use the **Expand | All** command from the visual's context menu.
+  - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work around this issue, use the **Expand | All** command from the visual's context menu.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
+- When you're using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 
   - There are too many columns. Try reducing the number of columns and exporting again.
 
@@ -242,7 +242,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
   1. Go to the local folder where the file is stored and select the *.csv*.
 
-- When exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
+- When you're exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
 
   - The column is defined as type "text" in the data model, _**and**_
   - The first character of the text is one of the following: **=, @, +, -**
