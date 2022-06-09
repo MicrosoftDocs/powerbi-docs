@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 06/09/2022
 LocalizationGroup: Premium
 ---
 
@@ -21,13 +21,10 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 *Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md#embedding-with-power-bi) offerings. It is a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
 
-> [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
-
-
-
-> [!NOTE]
-> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+>[!NOTE]
+>* [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) simplifies the management of Premium capacities, and reduces management overhead.
+>
+>* You can get [Premium Per User (PPU)](service-premium-per-user-faq.yml) licenses for individuals, which provide many of the features and capabilities of a Premium capacity, and incorporate all functionality included with a Power BI Pro license.
 
 ## Manage capacity
 
@@ -48,7 +45,7 @@ Each capacity has a certain amount of v-cores allocated to it. When the v-cores 
 >[!NOTE]
 >If your capacity expired you may see this note in the Power BI admin portal:
 >
->**One or more of your premium capacity v-cores have expired. Please contact your tenant administrator or Microsoft account representative to learn whether these v-cores will be renewed**.
+>*One or more of your premium capacity v-cores have expired. Please contact your tenant administrator or Microsoft account representative to learn whether these v-cores will be renewed*.
 
 ### Setting up a new capacity (Power BI Premium)
 
