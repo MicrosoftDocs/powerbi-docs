@@ -22,18 +22,19 @@ To see the data that's used to create a visual, [you can display that data in Po
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-introduction.png" alt-text="Power BI service showing dropdown for More actions (...).":::
 
 > [!IMPORTANT]
-> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. If you are a designer or admin, select the tab below for [Admin and designer controls for exporting](#admin-and-designer-controls-for-exporting).
+> Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. If you're a designer or admin, select the tab below for [Admin and designer controls for exporting](#admin-and-designer-controls-for-exporting).
 
 ## Who can export data
 
 If you do have permissions to the data, you can see and export the data that Power BI uses to create a visualization.
 
-If you don't have permissions to the data, you won't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you are working in the Power BI service, you can contact your Power BI administrator or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
+If you don't have permissions to the data, you won't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
+
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
 
 ## Viewing and exporting data
 
-Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Will export the data from one of the visualizations in a report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -186,17 +187,16 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 
 There are many considerations related to exporting to Excel. This is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They do this to ensure that private data isn't exposed to the wrong audience.
 
-If you find that you are unable to use this feature, reach out to the report owner and your administrator to understand why you are unable to export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
+If you find that you can't use this feature, reach out to the report owner and your administrator to understand why you can't export data from a particular visual or from all visuals. It may be that this feature has been purposely disabled and perhaps they can  enable it for you.  Other times, there may be particular reasons an export does not work.  It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
 [Admin tenant settings](../guidance/admin-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - When exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwith.
-
 
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
 - The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number may be lower than 150,000 depending on query limits and visual types.
 
-  - For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has 1 *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has 3 *data intersections* per row, the maximum row count will be 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" will be added at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
+    For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. For a table visual, each row has 1 *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has 3 *data intersections* per row, the maximum row count will be 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" will be added at the footer of the Excel file when the limit is hit. Consider limiting the dimensions or filter the data to avoid this scenario.
 
 - Export using *Underlying data* won't work if:
 
