@@ -43,7 +43,7 @@ If no workspaces have been assigned to the capacity, you will see a message abou
 Each capacity has a certain amount of v-cores allocated to it. When the v-cores expire, your capacity stops working. To renew your capacity, visit the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 >[!NOTE]
->If your capacity expired you may see this note in the Power BI admin portal:
+>If your v-cores expire, you may see this error in the Power BI admin portal:
 >
 >*One or more of your premium capacity v-cores have expired. Please contact your tenant administrator or Microsoft account representative to learn whether these v-cores will be renewed*.
 
