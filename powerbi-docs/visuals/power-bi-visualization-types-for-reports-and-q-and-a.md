@@ -10,7 +10,10 @@ ms.topic: conceptual
 ms.date: 10/26/2021
 LocalizationGroup: Visualizations
 ---
+
 # Visualization types in Power BI
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 This article lists visualizations available in Power BI. We'll be adding new visualizations, stay tuned!
 
