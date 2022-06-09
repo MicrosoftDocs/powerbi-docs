@@ -41,6 +41,15 @@ You manage a capacity by selecting the name of the capacity. This takes you to t
 
 If no workspaces have been assigned to the capacity, you will see a message about [assigning a workspace to the capacity](#assign-a-workspace-to-a-capacity).
 
+### Renew your capacity
+
+Each capacity has a certain amount of v-cores allocated to it. When the v-cores expire, your capacity stops working. To renew your capacity, visit the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+
+>[!NOTE]
+>If your capacity expired you may see this note in the Power BI admin portal:
+>
+>**One or more of your premium capacity v-cores have expired. Please contact your tenant administrator or Microsoft account representative to learn whether these v-cores will be renewed**.
+
 ### Setting up a new capacity (Power BI Premium)
 
 The admin portal shows the number of *virtual cores* (v-cores) that you have used and that you still have available. The total number of v-cores is based on the Premium SKUs that you have purchased. For example, purchasing a P3 and a P2 results in 48 available cores – 32 from the P3 and 16 from the P2.
