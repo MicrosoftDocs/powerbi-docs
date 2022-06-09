@@ -381,8 +381,9 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
     ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 
     > [!NOTE]
-   > This **Try it** button does not apply to GCC customers since their API endpoint is different.
+    > This **Try it** button does not apply to GCC customers since their API endpoint is different.
 
+1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the dataset. Let the the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
 1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**. 
 
     ![Try the REST API](media/service-modern-usage-metrics/power-bi-rest-api-try-it.png)
