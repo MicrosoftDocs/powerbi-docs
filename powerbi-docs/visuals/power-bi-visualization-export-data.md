@@ -8,12 +8,14 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/01/2022
-ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
+ms.date: 06/09/2022
+ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
 
 # Export the data that was used to create a visualization
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 To see the data that's used to create a visual, [you can display that data in Power BI](../consumer/end-user-show-data.md), or export it to Excel. This article shows you how to **export to Excel**. Data can be exported to Excel from a Power BI dashboard tile and from a report visual.
 
@@ -46,7 +48,7 @@ Security and Power BI administrators can use [Microsoft Defender for Cloud Apps]
 
 ## Export data from a Power BI dashboard
 
-1. Open a dashboard in the Power BI service and select a tile with a visual.
+1. Open a [dashboard](../create-reports/service-dashboards) in the Power BI service and select a tile with a visual.
 
 1. From the upper right corner of the tile, open the **More options (...)** dropdown and select **Export to .csv**.
 
@@ -68,15 +70,15 @@ Security and Power BI administrators can use [Microsoft Defender for Cloud Apps]
 
 To illustrate the different options for exporting data from a report visual, we've created a stacked column chart that includes:
 
-- a [hierarchy](../consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
+1. A [hierarchy](../consumer/end-user-drill.md) made up of **Country/Region** and **City**. With that hierarchy, we can drill down from **Country/Region** to **City**, and back up again.
 
-- a filter for **City**
+2. A filter for **City**.
 
-- an aggregate for **Discount percent** (count was changed to average).
+3. An aggregate for **Discount percent** (count was changed to average).
 
   :::image type="content" source="media/power-bi-visualization-export-data/power-bi-numbered.png" alt-text="Chart with numbered labels.":::
 
-Now we're ready to try out two different options for exporting data. Start by selecting **More options (...)** in the upper-right corner of the visual and choosing **Export data**.
+Now we're ready to try out two different options for exporting data. Select **More options (...)** in the upper-right corner of the visual, then choose **Export data**.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-export-visual.png" alt-text="Visual dropdown showing option for selecting Export data.":::
 
@@ -142,9 +144,10 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 > [!IMPORTANT]
 > Export underlying data will not include datetime / variations columns or include numeric columns if there is an aggregation.
+
 # [Admin and designer controls for exporting](#tab/admin)
 
-### Set the export options
+## Set the export options
 
 Power BI report designers control the types of data export options that are available for their consumers. The choices are:
 
