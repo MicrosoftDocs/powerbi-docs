@@ -47,7 +47,7 @@ Security and Power BI administrators can use [Microsoft Defender for Cloud Apps]
 
 ## Export data from a Power BI dashboard
 
-1. Open a [dashboard](../create-reports/service-dashboards) in the Power BI service and select a tile with a visual.
+1. Open a [dashboard](../create-reports/service-dashboards.md) in the Power BI service and select a tile with a visual.
 
 1. From the upper right corner of the tile, open the **More options (...)** dropdown and select **Export to .csv**.
 
