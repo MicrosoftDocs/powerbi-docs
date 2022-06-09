@@ -32,7 +32,7 @@ If you don't have permissions to the data, you won't be able to export or open i
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
 
-## Viewing and exporting data
+## Video: View and export data
 
 Watch Will export the data from one of the visualizations in a report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
