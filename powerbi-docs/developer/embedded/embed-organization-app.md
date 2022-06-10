@@ -117,7 +117,7 @@ Add the NuGet packages listed below to your app:
 
 * In **VS Code**, open a terminal and type in the code below.
 
-* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Consol* and type in the code below.
+* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Console* and type in the code below.
 
 ```powershell
 dotnet add package Microsoft.Identity.Web -v 0.3.0-preview
