@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 06/12/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -84,8 +84,8 @@ Make the following code changes:
 
   Some apps have management code that automates onboarding a new customer upon registration. Often, the management code uses Power BI REST APIs to create workspaces and import content. Most of this code should remain the same, but you may need to adapt the following details:
 
-  * The API caller should now be a profile. The app should use a specific profile to onboard a customer.
-  * If you decide to reorganize your Power BI content, the code should change to reflect the changes.
+  * Each time you create a new customer tenant, create a new service profile to be the creator and administrator of the workspace for that tenant.
+  * If you decide to reorganize your Power BI content, edit the code to reflect the changes.
 
 * **Embed token code change**
 
