@@ -56,7 +56,7 @@ The easiest way to manage your data is by maintaining one workspace per customer
 
 If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/create-group) to create a new workspace for each customer.
 
-### Organize artifacts in workspaces
+### Organize items in workspaces
 
 You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import objects (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
 

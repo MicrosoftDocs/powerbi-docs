@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/24/2022
+ms.date: 06/03/2022
 ms.custom: intro-migration
 ---
 
@@ -64,7 +64,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
 | [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI dataset | No | Yes |
 | [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
-| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes <sup>1</sup> |
+| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes |
 | **Business enablement** |||
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |
 | Business-driven interactive reports, workspaces, and apps | No | Yes |
@@ -78,12 +78,12 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Interactive analysis over big data** |||
 | [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
 | [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables | No | Yes <sup>1</sup> |
-| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes <sup>1</sup> |
+| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
-| [VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in an organization's VNet | No | Yes <sup>1</sup> |
+| [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
 | [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
 | [Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity | No | Yes |
 | [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
@@ -102,7 +102,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
 | [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
-| [Asynchronous refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes <sup>1</sup> |
+| [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
 | [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
@@ -113,13 +113,13 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows open-platform connectivity for data model consumption and visualization tools, including third-party tools | Yes | Yes |
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
-| [Datasets hub](../connect-data/service-datasets-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
+| [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
-| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-metric-overview), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
+| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
 | [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
@@ -168,12 +168,13 @@ A Pro (or PPU) license is required to publish and manage Power BI content. Pro l
 
 ### Development and test environments
 
-AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agreements and/or fewer features than the **S** SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers.
+AAS offers the **D** and **B** SKUs at lower cost with reduced service-level agreements and/or fewer features than the **S** SKUs. Some AAS customers use these SKUs for development and test environments. While there's no direct equivalent in Power BI, it might make sense to use PPU licenses for development and test environments. Such environments typically don't have large numbers of users because they're limited to developers and testers. Alternatively, consider using an **A** SKU in Azure for testing Premium capacity functionality.
 
 For more information, see:
 
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
+- [Purchase A SKUs for testing and other scenarios](../enterprise/service-admin-premium-testing.md#purchase-a-skus-for-testing-and-other-scenarios)
 
 ## Scalability benefits
 

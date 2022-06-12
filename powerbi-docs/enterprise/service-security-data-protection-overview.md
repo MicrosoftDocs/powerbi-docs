@@ -1,4 +1,4 @@
----
+﻿---
 title: Data protection in Power BI
 description: Learn about data protection in Power BI
 author: paulinbar
@@ -24,9 +24,9 @@ Data protection capabilities in Power BI build on Microsoft's strengths in secur
 
 The pillars of Power BI's data protection capabilities and how they help you protect your organization's sensitive data are listed below:
 
-* **Microsoft Information Protection sensitivity labels**
+* **Sensitivity labels from Microsoft Purview Information Protection**
     
-    * **Classify and label sensitive Power BI data** using Microsoft Information Protection sensitivity labels used in Office and other Microsoft products.
+    * **Classify and label sensitive Power BI data** using the same sensitivity labels from Microsoft Purview Information Protection that are used in Office and other Microsoft products.
     * **Enforce governance policies even when Power BI content is exported** to Excel, PowerPoint, PDF, and other supported export formats to help ensure data is protected even when it leaves Power BI.
 * **Microsoft Defender for Cloud Apps**
     * **Monitor and protect user activity on sensitive data in real time** with alerts, session monitoring, and risk remediation using Defender for Cloud Apps.
@@ -34,15 +34,15 @@ The pillars of Power BI's data protection capabilities and how they help you pro
 * **Microsoft 365 data loss prevention**
     * **Data loss prevention policies for Power BI** enable central security teams to use Microsoft 365 data loss prevention policies to enforce the organization’s DLP policies on Power BI. DLP policies for Power BI currently support detection of sensitive info types and sensitivity labels on datasets, and can trigger automatic risk remediation actions such as alerts to security admins in Microsoft 365 compliance portal and policy tips for end users.
 
-Read more about [Microsoft Information Protection sensitivity labels](/microsoft-365/compliance/sensitivity-labels), [Microsoft Defender for Cloud Apps](https://www.microsoft.com/en-us/security/business/cloud-apps-defender), and [Microsoft 365 data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
+Read more about [sensitivity labels from Microsoft Purview Information Protection](/microsoft-365/compliance/sensitivity-labels), [Microsoft Defender for Cloud Apps](https://www.microsoft.com/en-us/security/business/cloud-apps-defender), and [Microsoft 365 data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
 
 #### Give us your feedback
 
-The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Information Protection sensitivity labels. Help us meet your information protection needs! Thanks!
+The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
 ## Next steps
 
 * [Learn about sensitivity labels in Power BI and how to use them](service-security-sensitivity-label-overview.md)
 * [Set up and use Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Microsoft Business Applications Summit video session - Power BI and Microsoft Information Protection - The game changer for secure BI](https://mymbas.microsoft.com/sessions/f30c8368-6590-4be3-80d4-2bc677f596a4?source=sessions)
+* [Microsoft Business Applications Summit video session - Power BI and Microsoft Purview Information Protection - The game changer for secure BI](https://mymbas.microsoft.com/sessions/f30c8368-6590-4be3-80d4-2bc677f596a4?source=sessions)
