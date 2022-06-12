@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 05/09/2022
 LocalizationGroup: Administration
 ---
 
@@ -28,7 +28,7 @@ There are a number of controls in the Admin portal. They are listed in the table
 | [Usage metrics](service-admin-portal-usage-metrics.md) | View metrics about Power BI usage in your organization. |
 | [Users](service-admin-portal-users.md) | Manage users in the Microsoft 365 admin center. |
 | [Premium Per User](service-admin-portal-premium-per-user.md) | Configure auto refresh and dataset workload settings. |
-| [Audit logs](service-admin-portal-audit-logs.md) | Audit Power BI activities in the Microsoft 365 compliance center. |
+| [Audit logs](service-admin-portal-audit-logs.md) | Audit Power BI activities in the Microsoft Purview compliance portal. |
 | [Capacity settings](service-admin-portal-capacity-settings.md) | Manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization |
 | [Refresh summary](service-admin-portal-refresh-summary.md) | Schedule refresh on a capacity and also view the details of refreshes that have occurred. |
 | [Embed codes](service-admin-portal-embed-codes.md) | View and manage the embed codes that have been generated for your organization to share reports publicly. |
@@ -51,4 +51,5 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+>[!div class="nextstepaction"]
+>[About tenant settings](service-admin-portal-about-tenant-settings.md)

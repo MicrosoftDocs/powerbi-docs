@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 02/10/2022
+  ms.date: 05/16/2022
   LocalizationGroup: Premium
 title: Power BI Premium Per User
 summary: |
@@ -107,7 +107,7 @@ sections:
         answer: |
           The following considerations should be kept in mind when working with Premium Per User licenses.
 
-          * Premium Per User is the lowest entry-point for Power BI Premium features. As such, it is built upon the Premium platform which has built-in mechanisms assuring PPU users can leverage the platform’s ability to scale. Premium Per user is designed to support enterprise workloads, against Power BI artifact with size limits that are equivalent to that of a P3 (for datasets, this is a 100Gb limit as documented in this [summary table](service-premium-gen2-what-is.md#limitations-in-premium-gen2)).
+          * Premium Per User is the lowest entry-point for Power BI Premium features. As such, it is built upon the Premium platform which has built-in mechanisms assuring PPU users can leverage the platform’s ability to scale. Premium Per user is designed to support enterprise workloads, against Power BI items with size limits that are equivalent to that of a P3 (for datasets, this is a 100Gb limit as documented in this [summary table](service-premium-gen2-what-is.md#limitations-in-premium-gen2)).
 
           * Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity.
 
@@ -138,7 +138,7 @@ additionalContent: |
  >[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 
  >[!div class="nextstepaction"]
- >[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+ >[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 
  >[!div class="nextstepaction"]
  >[Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
