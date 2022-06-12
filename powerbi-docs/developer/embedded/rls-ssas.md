@@ -1,6 +1,6 @@
 ---
-title: Dynamic row-level security embedding with SSAS
-description: Dynamic RLS embedding with on-premises Analysis services 
+title: Embed a report on an on-premises SQL Server Analysis Services (SSAS)
+description: Embed a report with an on-prem dataset model, with or without RLS, using a live connection
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: mberdugo
@@ -13,39 +13,65 @@ ms.date: 06/12/2022
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 
-This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application.
+This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application. This article applies to **all** live connection AS models whether or not they implement RLS.
 
-> [!NOTE]
->
-> * This article is only relevant for *app owns data* customers.
-> * This information in this article applies to all live connection AS models whether or not they implement RLS.
+In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
 
-In this scenario, the RLS is configured on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles and permissions are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
+## ISV setup
+
+**Any workspace in Power BI can be used as an AS server.**
+On-prem row level security is only available with a live connection, but this article describes how to create a live connection to any database whether or not it implements RLS. This includes:
+
+* Databases with no RLS roles set up
+* Database with single or multiple roles set up
+* Database with static of dynamic security roles
 
 To embed a report that uses RLS with an SSAS model, you need to do the following actions:
 
-1. [Set up the environment](#set-up-the-environment)
-2. [Create the report](#create-the-report)
+1. [Set up the gateway](#set-up-the-gateway)
+2. [Create a live connection](#create-a-live-connection)
 3. [Generate an embed token](#generate-an-embed-token)
 
-## Prerequisite
+## Set up the gateway
 
-This information in this article applies to all live connection AS models whether or not they implement RLS. To implement RLS, make sure your on-prem database is set up to handle row level static or dynamic security using the *SQL Server Analysis Services (SSAS) tabular* model. For a detailed explanation on how to set up dynamic security, refer to [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+1. [Add a data source connection to the on-prem gateway](../../connect-data/service-gateway-data-sources.md#add-a-data-source)
 
-## Set up the environment
+Enter the Datasource name, datasource type, Server, database, a username and password that the active directory recognizes.
 
-To set up the RLS environment, you need to perform the *first four tasks* of [Implement row-level security in an on-premises Analysis Services tabular model](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md). Keep in mind that this document is a tutorial that uses specific tables and roles as an example. You'll replace them with the tables and roles that you need.
+:::image type="content" source="./media/rls-ssas/create-gateway.png" alt-text="Screenshot showing how to create a new gateway.":::
 
-1. [Set up the security table and define data relationships](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-1-create-the-user-security-table-and-define-data-relationship)
-2. [Define roles and permissions on-prem](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-2-create-the-tabular-model-with-facts-and-dimension-tables)
-3. [Add a data source connection to the on-prem gateway](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-3-add-data-sources-within-your-on-premises-data-gateway)
-4. Add the service principal or master user as a gateway admin, or add them as a [Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright).
+For more information on creating and managing a gateway see [Add or remove a gateway data source](../../connect-data/service-gateway-data-sources.md) and [Add or remove a gateway data source](../../connect-data/service-gateway-enterprise-manage-ssas.md).
 
-## Create the report
+### Add the service principal or master user as a gateway admin
+
+or add them as a [Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright). (49 min)
+
+### User mapping
+
+Since the usernames on the on-prem directory and the Azure AD directory are different, you need to create a user mapping table that provides each user or role in the on-prem directory with an effective identity to be passed to Power BI.
+
+Create a user map of all the . If the database has RLS, map each role to a username.
+
+:::image type="content" source="./media/rls-ssas/gateway-map-users.png" alt-text="Screenshot showing how to map user names to effective identities.":::
+
+For more information see [Map user names for Analysis Services data sources](../../connect-data/service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
+
+## Create a live connection
 
 Once the environment is set up, create a *live connection* between Power BI Desktop and the SQL server and create your report.
 
-Complete the first four steps only, of [connect to the AS engine](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop) and then create the report that you want to embed.
+1. Start Power BI Desktop and select **Get data** > **Database**.
+
+1. From the data sources list, select the **SQL Server Analysis Services Database** and select **Connect**.
+
+   ![Connect to SQL Server Analysis Services Database](media/rls-ssas/get-data.png)
+
+1. Fill in your Analysis Services tabular instance details and select **Connect live**. Then select **OK**.
+
+  :::image type="content" source="./media/rls-ssas/get-data-connect-live.png" alt-text="Screenshot of Analysis Services details.":::
+
+(Whenever you communicate with the AD (on prem) model, you need to pass an efID
+If you don't pass rode, it looks for user in all roles)
 
 ## Generate an embed token
 
