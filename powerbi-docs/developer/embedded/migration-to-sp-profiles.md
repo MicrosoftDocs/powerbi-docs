@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 06/12/2022
+ms.date: 05/26/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
