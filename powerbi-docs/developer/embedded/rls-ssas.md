@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 06/12/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
@@ -43,13 +43,13 @@ To set up the RLS environment, you need to perform the *first four tasks* of [Im
 
 ## Create the report
 
-Once the environment is set up, you can create a *live connection* between Power BI Desktop and the SQL server and create your report.
+Once the environment is set up, create a *live connection* between Power BI Desktop and the SQL server and create your report.
 
 Complete the first four steps only, of [connect to the AS engine](../../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md#task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop) and then create the report that you want to embed.
 
 ## Generate an embed token
 
-To embed your report in the *embed for your customers* scenario, generate an embed token that passes the effective identity to Power BI.
+To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md) that passes the effective identity to Power BI.
 
 The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the AS engine use RLS.
 
@@ -75,16 +75,25 @@ To generate the embed token, provide the following information:
 * **Username** (required) - A valid username recognized by the SSAS that will be used as the effective identity.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
 
+## [Service principal profile](#tab/service-principal-profile)
+
+The service principal profile must either have gateway admin privileges or have a `DatasourceAccessRight` of `Impersonate` (read/override permissions). Users with override permission have a key icon next to their name.
+
+  :::image type="content" source="media/rls-ssas/impersonate-override-permission.png" alt-text="Screenshot of a gateway member with a key icon next to their name.":::
+
+To generate the embed token, provide the following information:
+
+* **Username** (required) - A valid username recognized by the SSAS that will be used as the effective identity.
+* **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
+
 ---
-You can embed your report in your app, and your report will filter data according to the permissions of the user accessing the report.
+Now you can embed your report in your app, and your report will filter data according to the permissions of the user accessing the report.
 
 ## Considerations and limitations
 
 * On-premises row-level security with Power BI is only available with live connection.
 * All live connections to AS engines need an effective identity even if there is no RLS implemented.
-* The user or service principal generating the embed token also needs one of the following permissions:
-  * Gateway admin permissions
-  * [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of `ReadOverrideEffectiveIdentity`.
+* CustomData isn't supported.
 
 ## Next steps
 
