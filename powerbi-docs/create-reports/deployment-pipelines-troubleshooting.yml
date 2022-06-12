@@ -215,9 +215,9 @@ sections:
 
           :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the can't start the deployment error message in deployment pipelines":::
   
-          If you made changes to your dataset intentionally, you can bypass this error by using one of the following workarounds:
+          If you made changes to your dataset intentionally, you can use one of the following workarounds:
 
-          * **Using PBIX** - Publish your changes directly to the target dataset. All partitions and data will be loss so you'll need to refresh thw dataset to regain data.
+          * **Using PBIX** - Publish your changes directly to the target dataset. All partitions and data will be lost, so you'll need to refresh the dataset.
 
           * **Using XMLA tools** - Make your changes directly on the dataset in the target stage.
 
