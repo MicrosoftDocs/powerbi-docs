@@ -81,6 +81,8 @@
         href: service-power-bi-powerpoint-add-in-view-present.md
       - name: "Information for the Power BI admin"
         href: service-power-bi-powerpoint-add-in-admin.md
+      - name: "Troubleshoot the Power BI add-in"
+        href: service-power-bi-powerpoint-add-in-troubleshoot.md
     - name: Publish and share your work
       items: 
       - name: "Share reports and dashboards"
