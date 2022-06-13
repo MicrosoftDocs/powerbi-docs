@@ -1,4 +1,4 @@
----
+﻿---
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
@@ -71,11 +71,11 @@ During the deployment process, you may need to work with your Power BI administr
 
 - **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway may be required.
 - **Gateway drivers and connectors:** A new proprietary data source may require installation of a new driver or custom connector on each server in the gateway cluster.
-- **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../admin/service-premium-capacity-manage.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
+- **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../enterprise/service-premium-capacity-manage.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
 - **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
 - **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
-- **Set up sensitivity labels:** All [sensitivity labels](../admin/service-security-data-protection-overview.md) are integrated with Microsoft Information Protection.
+- **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
 
 ### Deploy to production workspace
 
@@ -96,7 +96,7 @@ Key activities during a deployment to the production workspace typically include
 - **Report and dashboard settings:** Update and verify settings for each report and dashboard. The most important settings include:
   - Description
   - Contact person or group
-  - [Sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md)
+  - [Sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md)
   - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Subscriptions:** Set up report subscriptions, if necessary.
 

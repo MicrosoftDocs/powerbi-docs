@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/03/2021
+ms.date: 04/12/2022
 ---
 
 # Export paginated report to file
@@ -20,9 +20,13 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image**
-  * When exporting to an image, set the image format via the `OutputFormat` format setting
-  * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
+* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are: 
+  * *.tiff* (default)
+  * *.bmp*
+  * *.emf*
+  * *.gif*
+  * *.jpeg*
+  * *.png*
 
 ## Usage examples
 
@@ -106,7 +110,7 @@ When using a Power BI dataset that has Row Level Security (RLS) defined as a dat
 
 To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
 
-Here'ss an example for supplying an effective user name for RLS.
+Here's an example of supplying an effective user name for RLS.
 
 ```json
 {
@@ -130,7 +134,7 @@ Getting the correct access token for the resource that you want to access can so
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
-Here's an example for supplying an effective user name with an access token.
+Here's an example for supplying an effective identity (user name) with an access token.
 
 ```json
 {
@@ -156,7 +160,7 @@ Here's an example for supplying an effective user name with an access token.
 
 ## PPU concurrent requests
 
-The `exportToFile` API allows one request in a five-minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five-minute window will result in a *Too Many Requests* (429) error.
+The `exportToFile` API allows one request in a five-minute window when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five-minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -329,8 +333,6 @@ private async Task<ExportedFile> ExportPaginatedReport(
 * Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
-
-* The number of paginated report exports is limited to 50 reports per minute per capacity.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 

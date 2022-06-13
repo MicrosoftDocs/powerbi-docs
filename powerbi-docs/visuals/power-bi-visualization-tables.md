@@ -147,11 +147,9 @@ To copy the value of a single cell:
 
 1. Right-click inside the cell.
 
-1. Select **Copy** > **Copy value**.
+1. Select **Copy** > **Copy value**.  This will copy the _unformatted_ cell value to your clipboard.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-value.png" alt-text="Screenshot shows Copy selected with the Copy value option selected.":::
-
-    With the unformatted cell value on your clipboard, you can paste it into another application.
 
 To copy more than a single cell:
 
@@ -159,7 +157,7 @@ To copy more than a single cell:
 
 1. Right-click inside one of the cells you selected.
 
-1. Select **Copy** > **Copy selection**.
+1. Select **Copy** > **Copy selection**.  This will copy the _formatted_ cell values to your clipboard.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-selection.png" alt-text="Screenshot shows Copy selected with the Copy selection option selected.":::
 

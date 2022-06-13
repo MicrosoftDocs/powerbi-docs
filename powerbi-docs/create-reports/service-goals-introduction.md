@@ -8,10 +8,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/28/2022
+ms.date: 05/23/2022
 ms.custom: intro-get-started
 ---
 # Get started with goals in Power BI (preview)
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
@@ -22,7 +24,11 @@ This article covers the basics of using Goals in the Power BI service. See the o
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in the Power BI service](service-goals-check-in.md)
-- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-goals.md)
+- [Keep on top of your goals on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-metrics.md)
+- [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
+- [Arrange goals and columns in scorecards](service-goals-move.md)
+- [Customize statuses in scorecards](service-goals-custom-status.md)
+- [Get notifications in Teams about changes to goals](../collaborate-share/service-teams-notifications.md#goals-notifications)
 
 ## License requirements 
 
@@ -30,9 +36,9 @@ Goals is a Pro feature. Users can access various aspects of the experience depen
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring scorecards, goals, and performing check-ins | Power BI Pro license |
-|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
-|Viewing scorecard samples   |  Free user |
+|Author and share scorecards and goals, and perform check-ins | Power BI Pro license |
+|View scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
+|View scorecard samples and author scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
 

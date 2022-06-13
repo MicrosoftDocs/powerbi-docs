@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 02/02/2022
+ms.date: 05/18/2022
 ---
 
 # Create and use the paginated report visual
@@ -16,12 +16,14 @@ ms.date: 02/02/2022
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
-This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.  
+This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.
+
+The paginated report visual is designed to integrate a paginated report with other visuals in a Power BI report. It enables large data exports, detail drills, and generating documents. If you are migrating paginated report content from on premises, or find that the paginated report visual is the only element on a page, consider using the paginated report directly. 
 
 ## Prerequisites
 
-- To access a paginated report to include in your Power BI report with a paginated report visual, you need access to a workspace in a [Power BI Premium capacity](../admin/service-premium-what-is.md).
-- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To access a paginated report to include in your Power BI report with a paginated report visual, you need access to a workspace in a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
+- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Create a paginated report visual
 
@@ -93,8 +95,10 @@ You can decide whether report filters are automatically applied to the paginated
 
 ## Considerations and limitations
 
+- When connecting fields to a paginated report parameter, double-check whether the field values are used as is, in other words, **Don't summarize**, or as aggregates (for example, Sum, Average, and so on). You can use the **Show as a table** option from the context menu of the paginated report visual to see the actual values being passed to paginated reports during runtime. 
 - You can map an aggregate field in Power BI such as Sum, Average, Minimum, or Maximum to a paginated report parameter. If you do, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used. If mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
 - When embedding a Power BI report that contains a paginated report visual, using the *embed for your customers* method, you need a service principal and a multi-resource embed token as explained in [How to embed a Power BI report that contains a paginated report visual](../developer/embedded/embedded-faq.yml#how-can-i-embed-a-power-bi-report-that-contains-a-paginated-report-visual-).
+- The paginated report visual isn't supported for subscription or export. You can open the underlying paginated report itself and create a subscription to it, as explained in [Subscribe to paginated reports](../consumer/end-user-subscribe.md?#subscribe-to-paginated-reports).
 
 ### Using a Power BI dataset with a date parameter
 

@@ -3,19 +3,19 @@ title: Move your Power BI embedded analytics application to production
 description: Learn what are the needed steps to move your Power BI application to production.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer: 
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/23/2022
+ms.date: 05/08/2022
 #Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 
 # Move your embedded app to production
 
 >[!IMPORTANT]
->This article only applies to [*embed for your customers*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. If you're using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario, you don't need to purchase a capacity.
+>This article only applies to [*embed for your customers*](embedded-analytics-power-bi.md#embed-for-your-customers) applications. If you're using the [*embed for your organization*](embedded-analytics-power-bi.md#embed-for-your-organization) scenario, you need to use either a Pro or Premium license.
 
 After you've completed developing your application, to move to production you'll need to back your workspace with a capacity.
 Note that **all workspaces** (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
@@ -24,7 +24,7 @@ Note that **all workspaces** (the ones containing the reports or dashboards, and
 
 By creating a capacity, you can take advantage of having a resource for your customers. There are two types of capacities you can choose from:
 
-* **Power BI Premium** - A tenant-level Microsoft 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* **Power BI Premium** - A tenant-level Microsoft 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 

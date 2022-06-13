@@ -178,6 +178,10 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
+        - name: "Create field parameters"
+          href: power-bi-field-parameters.md
+        - name: "Multi-select data elements, points, visuals"
+          href: desktop-multi-select.md
       - name: Bookmarks and buttons
         items: 
          - name: "Create buttons"
@@ -296,7 +300,7 @@
         href: ../visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a report visualization"
         href: ../visuals/power-bi-visualization-copy-paste.md
-      - name: "Export the data that was used to create a visualization"
+      - name: "Export the data that was used to create a visualization to Excel"
         href: ../visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visual in a report"
         href: ../visuals/power-bi-visualization-move-and-resize.md
@@ -332,20 +336,24 @@
           href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: Azure Maps in Power BI
         items: 
-        - name: "Get started with Azure Maps Power BI visual"
+        - name: "Get started with Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
-        - name: "Layers in the Azure Maps Power BI visual"
+        - name: "Layers in the Azure Maps visual"
           href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
         - name: "Add a bubble layer"
           href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
         - name: "Add a bar chart layer"
           href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a pie chart layer"
+          href: /azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context
         - name: "Add a heat map layer"
           href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
         - name: "Add a reference layer"
           href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
         - name: "Add a tile layer"
           href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
+        - name: "Geocoding in Azure Maps visual"
+          href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
         - name: "Show real-time traffic"
           href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
         - name: "Manage the Azure Maps visual in your organization"
@@ -472,6 +480,8 @@
         href: service-goals-set-permissions.md
       - name: "Arrange goals and columns in scorecards"
         href: service-goals-move.md
+      - name: "Create custom statuses"
+        href: service-goals-custom-status.md
       - name: "Goals and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"
@@ -516,6 +526,8 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Edit a paginated report from the Power BI service
         href: ../paginated-reports/paginated-reports-edit-service.md
+      - name: Create exportable formatted data tables
+        href: ../paginated-reports/paginated-formatted-table.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset

@@ -1,6 +1,6 @@
 ---
 title: Edit a dashboard tile  
-description: This tutorial takes your from creating a tile and pinning it to a dashboard, to learning how to edit that dashboard tile -- resize, move, rename, pin, delete, add hyperlink.
+description: This tutorial takes you from creating a tile and pinning it to a dashboard, to learning how to edit that dashboard tile -- resize, move, rename, pin, delete, add hyperlink.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -12,6 +12,8 @@ ms.date: 09/10/2021
 LocalizationGroup: Dashboards
 ---
 # Edit or remove a dashboard tile
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 ## Dashboard *owners* versus dashboard *consumers*
 When you create or own a dashboard, you have many options for changing the look and default behavior of the tiles on that dashboard. Use the settings and strategies below to design the dashboard *consuming* experience for your colleagues.  Will selecting a tile open the underlying report, a custom URL, or a different dashboard? Maybe you'll [add a tile that displays a video or streaming data](service-dashboard-add-widget.md)? And you might even want to [create a tile that has interactive slicers](service-dashboard-pin-live-tile-from-report.md). As a *creator* you have many options. 
@@ -106,7 +108,7 @@ At the top of the "Tile details" window, change **Title** to **Amount spent**.
 ### Change the default hyperlink
 By default, selecting a tile usually takes you to the report where the tile was created or to Q&A (if the tile was created in Q&A). To link to a webpage, another dashboard or report (in the same workspace), an SSRS report, or other online content - add a custom link.
 
-1. Under the Functionality heading, select **Set custom link**.
+1. Under the Functionality heading on the "Tile details" window, select **Set custom link**.
 
 2. Select **Link to a dashboard or report in the current workspace** and then select from the dropdown.  In this example I've selected the Human Resources sample dashboard. If you don't have this sample already in your workspace, you can add it and come back to this step, or you can select a different dashboard. 
 

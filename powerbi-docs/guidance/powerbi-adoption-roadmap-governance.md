@@ -301,12 +301,12 @@ The following list includes items that you may choose to prioritize when introdu
 
 - Recommendations and requirements for [content ownership and ownership](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md).
-- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../admin/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
+- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
 - Allowed activities with regulated data and highly sensitive data.
 - Allowed use of unverified data sources that are unknown to IT and/or recommendations for manually maintained data sources.
 - How to manage [workspaces](../collaborate-share/service-create-the-new-workspaces.md) effectively.
 - Who is allowed to be a [Power BI administrator](powerbi-adoption-roadmap-system-oversight.md).
-- [Security](../admin/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for data artifacts assigned to each [sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md).
+- [Security](../enterprise/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for data artifacts assigned to each [sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md).
 - Allowed or encouraged use of [personal gateways](../connect-data/service-gateway-personal-mode.md).
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
 - Requirements for who may [certify](../collaborate-share/service-endorse-content.md) data artifacts, as well as requirements which must be met.

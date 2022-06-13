@@ -4,28 +4,53 @@ description: Get to know the redesigned Format pane in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: 
+ms.custom: video-RE4Yb4T
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 06/01/2022
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI Desktop (preview)
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
+This article explains the biggest changes we’ve made to improve usability and consistency across visual and non-visual elements. Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. 
 
-The first time you open the February release of Power BI Desktop, you see a notification about the updated Format pane.
+The first time you open the latest release of Power BI Desktop, you see a notification about the updated Format pane. We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
 
-:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
+## Video
 
-We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
+In this video, Roseanne demonstrates the latest updates to the Format pane.
 
-## Latest updates
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
 
-Improvements added in February 2022 include:
+## Recent updates
+
+### May 2022
+
+Here are the improvements we added in May 2022:
+
+- We added a user preference setting to expand all subcategories when you open a category card. Go to **Options** > **Report settings**, and under **Format pane**, select **Expand all subcategories by default when you open a category**.
+- We readded Analytics pane support for custom visuals.
+- We readded **No fill** for Title background, Tooltips background, and Header icons Help tooltip background color pickers.
+- We added **color** back  to all color swatches for easier searching.
+- We readded the **Conditional formatting** card for the decomposition tree visual.
+- To help with adjusting to the new naming conventions, we added an alias for the renamed **Conditional formatting** card, which is now called **Cell elements**. When you search for “conditional formatting” for a matrix or table, we display the **Cell elements**.
+
+### April 2022
+
+Here are the improvements we added in April 2022:
+
+- Shape map custom color has been reintroduced.
+- Scatter chart *show blank values* toggle has been reintroduced.
+- Slicers with slider type (between, before, after) responsive toggle has been reintroduced.
+- Button icon size setting has been reintroduced.
+- Issue causing delay in cursor position for text input boxes is resolved.
+
+### February 2022
+
+Here are the improvements we added in February 2022:
 
 - Ability to toggle axis title independent of axis has been re-added.
 - Ability to add shade area to combo charts has been re-added.
@@ -98,7 +123,7 @@ Previously, you only saw some cards when you added certain fields in the build t
 
 ## Merged font settings
 
-Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and better to align with Office.
+Across the Format pane, we’ve merged font family and font size onto a single line. Again, we want to reduce vertical space and to better align with Office.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -133,6 +158,35 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 ## Order, naming, and hierarchy
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
+
+
+## Consolidated outline settings for matrix and table
+
+The outline settings for matrix and tables are now consolidated to enabling be set from the **Grid** card. Previously users had to use the Grid card to set the color and width, then navigate to each section of the matrix to adjust the border location. With this update, you can adjust the borders for the whole matrix and refine each section from the same place within the **Grid** card.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of old outline format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of new outline format experience.":::       |
+
+
+## Split for column grand and row totals for matrix
+
+In the previous Format pane settings, changing grand totals would affect both row and columns. With the April 2022 updates you can format each separately.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-totals-old.png" alt-text="Screenshot of old totals format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-totals-new.png" alt-text="Screenshot of new totals format experience.":::       |
+
+
+## Legend locations options
+
+More location options for legend locations are provided beginning with the April 2022 update.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-legend-options-old.png" alt-text="Screenshot of old legend location options.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-legend-options-new.png" alt-text="Screenshot of new legend location options.":::       |
+
+
 
 ## Turn off the preview
 

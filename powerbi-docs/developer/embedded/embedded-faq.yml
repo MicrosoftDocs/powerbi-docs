@@ -139,9 +139,9 @@ sections:
       - question: |
           How can I monitor Power BI Embedded capacity consumption?
         answer: |
-          * Using the [Power BI Admin portal](../../admin/service-admin-portal.md#power-bi-embedded).
+          * Using the [Power BI Admin portal](../../admin/service-admin-portal-capacity-settings.md#power-bi-embedded).
           
-          * Downloading the [metric app](../../admin/service-admin-premium-monitor-capacity.md) in Power BI.
+          * Downloading the [metric app](../../enterprise/service-admin-premium-monitor-capacity.md) in Power BI.
           
           * Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
           
@@ -161,10 +161,10 @@ sections:
           With the [Multi-geo](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
           
       - question: |
-          Why can't I see a workspace although I have permissions?
+          Why can't I see a workspace that I have permission to see?
         answer: |
-          When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
-          The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
+          When a user is granted permissions to a workspace, app, or item, it might not be immediately available through API calls.
+          The result can either be a missing item in a 'GET' API response, or an error when trying to use the item.
           The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
           
           

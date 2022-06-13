@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 02/13/2022
+ms.date: 06/07/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -59,7 +59,7 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 
 ### Artifacts
 
-A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+See [item](#item)
 
 ### Auto Insights
 
@@ -198,6 +198,10 @@ Drill to details commonly means to show the underlying records.
 
 The mode in which report *designers* can explore, design, build, and share a report.
 
+### Effective identity
+
+The identity used by the generate token API to generate a token for an individual user, depending on that user's credentials in the app. It could be a master user or service principal.
+
 ### Ellipsis
 
 Three dots - ...
@@ -282,6 +286,11 @@ A third-party software developer. An ISV can be an individual or an organization
 ### Insights
 
 See [**quick insights**](#quick-insights).
+
+### Item
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+Formerly known as artifacts.
 
 ## J
 
@@ -569,10 +578,6 @@ See *real-time streaming*.
 ### Subscriptions, Subscribe
 
 You can subscribe to report pages, apps, and dashboards and receive emails containing a snapshot. Requires a Power BI Pro license.
-
-### Subtenant
-
-Some Power BI tenants can have multiple Power BI applications. These applications can have multiple subtenants dedicated to particular customers or projects that require isolation.
 
 ### Summarization
 
