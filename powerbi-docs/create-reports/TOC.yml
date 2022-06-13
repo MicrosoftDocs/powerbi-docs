@@ -468,16 +468,16 @@
         href: service-q-and-a-direct-query.md
     - name: Metrics
       items: 
-      - name: "Get started with goals"
+      - name: "Get started with metrics"
         href: service-goals-introduction.md
-      - name: "Create scorecards and manual goals"
+      - name: "Create scorecards and manual metrics"
         href: service-goals-create.md
-      - name: "Create connected goals"
+      - name: "Create connected metrics"
         href: service-goals-create-connected.md
-      - name: "Stay on top of your goals"
+      - name: "Stay on top of your metrics"
         href: service-goals-check-in.md        
-      - name: "Set goal-level permissions"
-        href: service-goals-set-permissions.md
+      - name: "Set metric-level permissions"
+        href: service-metrics-set-permissions.md
       - name: "Arrange metrics and columns in scorecards"
         href: service-goals-move.md
       - name: "Create custom statuses"
