@@ -71,6 +71,18 @@
         href: service-teams-analytics.md
       - name: "Get notifications in Teams"
         href: service-teams-notifications.md
+    - name: Power BI in PowerPoint
+      items: 
+      - name: "Export a Power BI report to PowerPoint"
+        href: end-user-powerpoint.md
+      - name: "About Power BI in PowerPoint"
+        href: service-power-bi-powerpoint-add-in-about.md
+      - name: "Add a live report page to PowerPoint"
+        href: service-power-bi-powerpoint-add-in-install.md
+      - name: "View and present live report pages in PowerPoint"
+        href: service-power-bi-powerpoint-add-in-view-present.md
+      - name: "Information for the Power BI admin"
+        href: service-power-bi-powerpoint-add-in-admin.md
     - name: Publish and share your work
       items: 
       - name: "Share reports and dashboards"

@@ -25,7 +25,7 @@
     items:
     - name: "Embedded analytics application tokens"
       href: embed-tokens.md      
-    - name: "Considerations for generating an embed token"
+    - name: "Generating an embed token"
       href: generate-embed-token.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md

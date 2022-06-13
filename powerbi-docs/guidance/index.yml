@@ -104,20 +104,6 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
-          - text: Tips to manage axes
-            url: report-design-tips-axes.md
-          - text: Tips to control chart gridlines
-            url: report-tips-chart-gridlines.md
-          - text: Tips to optimize the use of labels
-            url: report-tips-labels.md
-          - text: Tips to format and implement legends 
-            url: report-tips-legends.md
-          - text: Tips to optimize visual colors 
-            url: report-tips-visual-colors.md
-          - text: Tips to sort and distribute data plots
-            url: report-tips-sort-distribute-data-plots.md
-          - text: Tips to work with shapes, images, and icons
-            url: report-tips-shapes-images-icons.md
 
   # Card (optional)
   - title: Power BI paginated reports
@@ -176,6 +162,8 @@ landingContent:
             url: powerbi-migration-deploy-support-monitor.md
           - text: Learn from customer Power BI migrations
             url: powerbi-migration-learn-from-customers.md
+          - text: Migrate AAS models to Power BI Premium
+            url: migrate-azure-analysis-services-to-powerbi-premium.md
 
   # Card (optional)
   - title: Adoption roadmap

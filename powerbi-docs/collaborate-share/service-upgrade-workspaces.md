@@ -7,7 +7,7 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/14/2022
+ms.date: 05/13/2022
 LocalizationGroup: Share your work
 ---
 
@@ -209,7 +209,7 @@ By default, workspace admins receive an email notification when their workspaces
 
 ### Empty workspaces
 
-To reduce the impact of maintaining empty classic workspaces that were automatically created, empty classic workspaces are deleted by default as part of the upgrade process. However, admins can prevent deleting empty workspaces by enabling the following setting in the Admin portal.
+To reduce the impact of maintaining empty classic workspaces that were automatically created, empty classic workspaces are deleted by default as part of the upgrade process. However, admins can prevent deleting empty workspaces by disabling the following setting in the Admin portal.
 
 :::image type="content" source="media/service-upgrade-workspaces/block-upgrade-empty-workspaces.png" alt-text="Screenshot of using admin portal to allow upgrade of empty workspaces.":::
 

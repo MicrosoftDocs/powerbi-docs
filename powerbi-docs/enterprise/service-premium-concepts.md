@@ -23,7 +23,7 @@ The following image illustrates how Premium Gen2 evaluates and completes queries
 
 :::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries. "lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
 
-Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*. 
+Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*.
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
@@ -33,13 +33,14 @@ The aggregation is complex. It uses specialized algorithms for different workloa
 
 ## Premium Gen2 background operation scheduling
 
-Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process. 
+Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process.
 
-While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no artifact can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
+While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no item can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
 
 ## How capacity size limits are enforced when viewing reports
 
 Premium Gen2 evaluates utilization by aggregating utilization records every 30 seconds. Each evaluation consists of 2 different aggregations:
+
 * Interactive utilization
 * Background utilization
 
@@ -65,7 +66,7 @@ Autoscale always ensures that no single interactive operation can account for al
 
 ## Using Premium Gen2 without autoscale
 
-If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution. 
+If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution.
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 
