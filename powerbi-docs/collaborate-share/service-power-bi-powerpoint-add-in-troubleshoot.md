@@ -78,6 +78,9 @@ The key's value should be set to:
 
 ```dword:00000001```
 
+### Additional resources
+
+* [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
 
 ## Next Steps
