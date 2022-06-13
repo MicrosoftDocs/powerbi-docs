@@ -8,15 +8,15 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/07/2022
+ms.date: 06/12/2022
 LocalizationGroup: Share your work
 ---
-# Export reports to PowerPoint
+# Export a report to PowerPoint
 
 [!INCLUDE[consumer-appliesto-yyn](../includes/consumer-appliesto-yyn.md)]
 
 
-Power BI reports can be exported to PowerPoint and live report pages can be embedded in PowerPoint. The first option exports your report and creates a PowerPoint slide deck with one page for each report page. The report is static; the pages retain the state of the report at the time of export. This article teaches you how to export your report. 
+There are several different ways that Power BI and PowerPoint work together. In this article, you'll learn how to export a Power BI report and create a PowerPoint slide deck with one slide for each report page.  The report is static; the slides retain the state of the report at the time of export.
 
 Another option is to embed a live version of your report page in PowerPoint. You can interact with your data just as you would in Power BI. For more information about embedding a live report page, visit these articles:
 

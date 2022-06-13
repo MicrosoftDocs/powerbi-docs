@@ -916,6 +916,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-powerpoint.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
             "redirect_url": "/power-bi/consumer/end-user-q-and-a-tips",
             "redirect_document_id": true
