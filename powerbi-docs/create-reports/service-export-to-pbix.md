@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 06/13/2022
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -79,7 +79,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a dataset in another workspace, you need to be at least a Contributor to that workspace as well.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
-* Reports based on datasets that are imported from Onedrive for Business can't be downloaded.
+* You can't download reports based on datasets that are imported from Onedrive for Business.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
 * Usage metric reports can't be downloaded to a .pbix file.
@@ -95,7 +95,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Datasets enabled for [large models](../enterprise/service-premium-large-models.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md#considerations-and-limitations).
 * Datasets modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
-* Datasets that based on data imported from Onedrive for Business can't be downloaded.
+* You can't download datasets based on data imported from Onedrive for Business.
 * Downloading a .pbix file that is larger than 1 GB isn't supported.
 
 ## Parity between Power BI Desktop and the service
