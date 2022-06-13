@@ -46,7 +46,7 @@ Answers to many of these questions are described in this article.
 
 ### Convergence of self-service and enterprise BI
 
-Consolidation of artifacts in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
+Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more dopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
 ### Power BI Premium Gen2
 
@@ -90,9 +90,9 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |
 | [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>3</sup> |
 | **Governance** |||
-| [Microsoft Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI artifacts | No | Yes |
+| [Microsoft Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI items | No | Yes |
 | Microsoft Information Protection (MIP) [sensitivity labels](../admin/service-security-sensitivity-label-overview.md) and integration with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) for data loss prevention | No | Yes |
-| Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI artifacts | No | Yes |
+| Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI items | No | Yes |
 | **Semantic modeling** |||
 | Compatibility with Power BI Desktop | No | Yes |
 | [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes <sup>1</sup> |
@@ -114,7 +114,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
 | [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
-| [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
+| [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
@@ -149,7 +149,7 @@ Also, assuming you already use Power BI in your organization, calculate costs ba
 
 ### Consolidation opportunity
 
-Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI artifacts in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
+Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
 
 ### PPU licenses
 
