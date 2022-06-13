@@ -1,8 +1,8 @@
 ---
 title: Feature availability for users with Free licenses in the Power BI service
 description: Explanation and chart showing features available to consumers and Free users.
-author: mihart
-ms.author: mihart
+author: haydnr
+ms.author: haydnr
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
