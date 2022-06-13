@@ -16,7 +16,7 @@ ms.date: 06/13/2022
 
 This article describes what to do if you get the following error when trying to use the Microsoft Power BI add-in.
 
-![](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-error.png)
+![Screenshot of Cannot run Power B I add in error message.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-error.png)
 
 ## Why am I getting this error?
 
@@ -43,7 +43,7 @@ First, check to make sure WebView2 is indeed installed. Open the add-in side men
 
 ![Screenshot of the add-in Security Info window that shows whether WebView2 is installed.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-security-info-window.png)
 
-If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is installed. Procede to check your Office build and Windows edition.
+If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is installed. Proceed to check your Office build and Windows edition.
 
 ## Check your Office build and subscription type
 
