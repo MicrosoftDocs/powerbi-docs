@@ -16,7 +16,7 @@ ms.date: 06/13/2022
 
 This article describes what to do if you get the following error when trying to use the Microsoft Power BI add-in.
 
-![](./media/service-power-bi-powerpoint-add-in-troubleshoot/)
+![](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-error.png)
 
 ## Why am I getting this error?
 
@@ -52,10 +52,33 @@ In PowerPoint, chose **File > Account**, and then press **About PowerPoint**. Th
 ![Screenshot of the about PowerPoint info pane.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-about-powerpoint.png)
 
 * If you have a Microsoft 365 Office subscription:
-    * If the build number is 16.0.14326.xxxxx or later, your Office build meets minimum requirements. If your system meets minimum requirements and WebView2 is installed, but you still can't use the add-in, try [updating your Windows edition]().
-    * If the build number is 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, your Office build meets minimum requirements but someone with admin permissions on your device must add a registry key.
+    * If the build number is 16.0.14326.xxxxx or later, your Office build meets minimum requirements. If your system meets minimum requirements and WebView2 is installed, but you still can't use the add-in, try [updating your Windows edition](#check-your-windows-version).
+    * If the build number is 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, your Office build meets minimum requirements but someone with admin permissions on your device must [add a registry key](#adding-a-registry-key).
     * If the build number is earlier than 16.0.13530.20424, the Office build must be upgraded before you'll be able to use the add-in. See [Install Office updates](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
 * If you have a non-subscription version of Office, the Office version should be Office 2021 or later. If it is earlier, the Office build must be upgraded before you will be able to use the add-in. See [Install Office updates](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
+## Check your Windows version
+
+Open **File Explorer**, right-click **This PC**, and choose **Properties**. In the Windows specifications section, note the Windows edition.
+
+![Screenshot of Windows specifications window.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-windows-specification-window.png)
+ 
+If you have a Microsoft 365 Office subscription, the Windows edition should be Windows 8.1, Windows 10, or Windows 11.
+
+If you have a non-subscription version of Office, the Windows edition should be Windows 10 or Windows 11.
+
+If the Windows edition on your device does not meet these requirements, you must [update Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) on your device to one of those editions.
+
+## Adding a registry key
+
+If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can create the following registry key to enable you to use the add-in.
+
+```HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\WEF\Win32WebView2```
+
+The key's value should be set to:
+
+```dword:00000001```
+
+
 
 ## Next Steps
 
