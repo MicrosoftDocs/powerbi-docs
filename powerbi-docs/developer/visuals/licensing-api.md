@@ -154,7 +154,7 @@ When applying a specific visual's functionality requires licenses that were foun
 > The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response. 
 
 > [!NOTE]
-> To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](.) to retrieve the Power BI locale language.
+> To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
 
 Once triggered, the banner will be displayed for 10 seconds
 or
