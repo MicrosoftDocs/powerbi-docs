@@ -7,7 +7,7 @@ ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/28/2022
+ms.date: 06/13/2022
 ---
 
 
@@ -60,7 +60,7 @@ Currently, the following Power BI environments don't support license management 
   * Embedded - Publish To Web, PaaS embed (TBD: GA)
   * National clouds (Dependency on general support for translatability in national clouds)
   * RS (No planned support)
-  * Exporting (PDF\PPT) using [REST API](https://docs.microsoft.com/rest/api/power-bi/reports/export-to-file) (TBD: GA)
+  * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file) (TBD: GA)
   * Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.
@@ -154,7 +154,7 @@ When applying a specific visual's functionality requires licenses that were foun
 > The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response. 
 
 > [!NOTE]
-> To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
+> To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](.) to retrieve the Power BI locale language.
 
 Once triggered, the banner will be displayed for 10 seconds
 or
