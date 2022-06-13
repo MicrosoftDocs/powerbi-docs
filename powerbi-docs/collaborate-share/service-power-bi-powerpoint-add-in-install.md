@@ -94,6 +94,9 @@ When you have the report page URL, paste it into the Power BI add-in in PowerPoi
 
 1. Paste the report page URL into the text box and then click **Insert**. The report will load into the slide.
 
+    >[!NOTE]
+    > If you get a **Cannot run Power BI error message**, it is most likely because you need to install WebView2, a component necessary for running Power BI in PowerPoint. WebView2 is very simple and quick to install. See [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.
+
     The image below illustrates inserting the add-in into a slide and using the report URL.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power B I report page into the add-in.":::

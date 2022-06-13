@@ -20,7 +20,7 @@ This article describes what to do if you get the following error when trying to 
 
 ## Why am I getting this error?
 
-The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the Power BI storytelling add-in.
+The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the add-in.
 
 ## What is WebView2?
 
