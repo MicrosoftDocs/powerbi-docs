@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/02/2022
+ms.date: 06/13/2022
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Analysis Services (preview)
@@ -163,7 +163,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 
-- Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Analysis Services model isn't currently supported.
+- Using Power BI Embedded with datasets that include a DirectQuery connection to an Analysis Services model isn't currently supported.
 
 - Publishing a report to web using the [publish to web feature](../collaborate-share/service-publish-to-web.md) isn't supported.
 
