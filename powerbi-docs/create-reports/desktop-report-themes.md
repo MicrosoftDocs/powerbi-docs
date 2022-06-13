@@ -230,10 +230,6 @@ This report theme is easier to read for the visually impaired. [Download Colorbl
 
   ![ColorblindSafe-Longer.json theme](media/desktop-report-themes/report-themes_11.png).
 
-- Power View themes, featuring Apothecary.json. [Download Power View themes in a zip file](https://go.microsoft.com/fwlink/?linkid=843925).
-
-  ![Apothecary.json theme](media/desktop-report-themes/report-themes_12.png)
-
 - Valentine's Day theme.
 
   ![Valentine's Day theme](media/desktop-report-themes/report-themes_13.png)

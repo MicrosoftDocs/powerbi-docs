@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 06/08/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library
@@ -84,6 +84,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
 - Within SharePoint libraries, this option will only show on the root of the document library.
+- The reports and datasets created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
 
 ## Troubleshooting
 
