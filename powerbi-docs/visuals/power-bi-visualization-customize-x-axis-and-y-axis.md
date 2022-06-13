@@ -4,13 +4,14 @@ description: 'Customize X-axis and Y-axis properties'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-9DeAKM4SNJM
+ms.custom: 
+   - video-9DeAKM4SNJM
+   - retail-analysis-sample-PBIX
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 06/10/2022
+ms.date: 06/13/2022
 LocalizationGroup: Visualizations
-ms.custom: retail-analysis-sample-PBIX
 ---
 
 # Customize x-axis and y-axis properties
