@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/12/2021
+ms.date: 06/10/2022
+ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
@@ -43,27 +44,51 @@ Power BI slicers don't support:
 
 ## Create a slicer
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 This slicer filters data by district manager. If you want to follow along with this procedure, download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
 
-1. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
+2. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
 
-1. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+3. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
 
-1. On the **Overview** page, with nothing selected on the report canvas, select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: in the **Visualizations** pane to create a new slicer.
+4. On the **Overview** page, with nothing selected on the report canvas, select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: in the **Visualizations** pane to create a new slicer.
 
-1. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
+5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
 
    The new slicer is now populated with a list of district manager names and their selection boxes.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer.png" alt-text="Screenshot of Slicer populated with district manager names.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names in the desktop version.":::
 
-1. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
+# [Power BI service](#tab/powerbi-service)
 
-1. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
+This slicer filters data by district manager. If you want to follow along with this procedure, use the built-in Retail Analysis Sample.
 
-1. Alternately, select **Format** (paint roller icon) in the **Visualizations** pane to format your slicer.
+1. Open the Power BI service, then click on **Get data** in the bottom left corner.
+
+2. On the Get Data page that appears, select **Samples**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+
+3. Select the **Retail Analysis Sample**, and choose **Connect**.
+
+4. Click **Edit** on the menu bar to display the **Visualizations** pane, then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
+
+5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **District Manager** to populate the slicer.
+
+   The new slicer is now populated with a list of district manager names and their selection boxes.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-service.png" alt-text="Screenshot of Slicer populated with district manager names in the service version.":::
+
+---
+
+6. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
+
+7. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
+
+8. Alternately, select **Format** (paint brush icon) in the **Visualizations** pane to format your slicer.
 
    There are too many options to describe them all here; experiment and create a slicer that works for you. In the following image, the first slicer has a horizontal orientation and colored backgrounds for the items. The second slicer has a vertical orientation and colored text for a more standard look.
 
@@ -78,13 +103,31 @@ By default, slicers on report pages affect all the other visualizations on that 
 
 Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 1. Go to the **Overview** page of the report, and then select the **DM** slicer you previously created.
 
-1. On the Power BI Desktop menu, select the **Format** menu under **Visual Tools**, and then select **Edit interactions**.
+2. Select **Format** from the menu, and then select **Edit interactions**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit Interactions button on desktop version.":::
 
    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
-1. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
+3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
+
+# [Power BI service](#tab/powerbi-service)
+
+1. Go to the **Overview** page of the report, and then select the **District Manager** slicer you previously created.
+
+2. Select **Visual interactions** from the menu, and then switch on **Edit interactions**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
+
+   Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear next to the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+
+3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **District Manager** slicer from filtering it. 
+
+---
 
 For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
