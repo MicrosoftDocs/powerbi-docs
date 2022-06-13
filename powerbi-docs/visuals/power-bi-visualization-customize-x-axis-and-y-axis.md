@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: 'mihart'
 ms.custom: 
    - video-9DeAKM4SNJM
-   - retail-analysis-sample-PBIX
+   - sample-retail-analysis-sample-PBIX
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
