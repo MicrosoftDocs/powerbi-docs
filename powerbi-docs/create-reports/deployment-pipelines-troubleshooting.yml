@@ -213,7 +213,7 @@ sections:
         answer: |
           When using [incremental refresh](deployment-pipelines-process.md#incremental-refresh), only certain [changes to the dataset](deployment-pipelines-process.md#considerations-and-limitations) you're deploying are allowed. If you made dataset changes that aren't allowed, your deployment will fail and you'll receive this message:
 
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the can't start the deployment error message in deployment pipelines":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the can't start the deployment error message in deployment pipelines.":::
   
           If you made changes to your dataset intentionally, you can use one of the following workarounds:
 
