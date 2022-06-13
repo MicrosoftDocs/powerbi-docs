@@ -103,12 +103,10 @@ When you have the report page URL, paste it into the Power BI add-in in PowerPoi
 
     Once the report has loaded, it is live and you can select the data as desired. Any changes you make while editing the presentation will be saved. The next time you open the presentation, the report will appear in the state you last left it in.
 
->[!NOTE]
-> If you get a **Cannot run Power BI error message**, it is most likely because you need to install WebView2, a component necessary for running Power BI in PowerPoint. Recent versions of Windows include WebView2, but it may be missing on older versions. WebView2 is very simple and quick to install. See the [troubleshooting guide](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.   
-
 ## Next steps
 
 * [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
+* [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
