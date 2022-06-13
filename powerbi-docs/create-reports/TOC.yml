@@ -477,7 +477,7 @@
       - name: "Stay on top of your metrics"
         href: service-goals-check-in.md        
       - name: "Set metric-level permissions"
-        href: service-metrics-set-permissions.md
+        href: service-goals-set-permissions.md
       - name: "Arrange metrics and columns in scorecards"
         href: service-goals-move.md
       - name: "Create custom statuses"
