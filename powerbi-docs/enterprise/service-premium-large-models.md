@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/08/2022
+ms.date: 06/13/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -106,11 +106,12 @@ You can check the status of dataset conversions to and from Premium Files by usi
 
 Power BI uses dynamic memory management to evict inactive datasets from memory. Power BI evicts datasets so it can load other datasets to address user queries. Dynamic memory management allows the sum of dataset sizes to be significantly greater than the memory available on the capacity, but a single dataset must fit into memory. For more info on dynamic memory management, see [How capacities function](service-premium-what-is.md#how-capacities-function).
 
-You should consider the impact of eviction on large models. Despite relatively fast dataset load times, there could still be a noticeable delay for users if they have to wait for large evicted datasets to be reloaded. For this reason, in its current form, the large models feature is recommended primarily for capacities dedicated to enterprise BI requirements rather than capacities mixed with self-service BI requirements. Capacities dedicated to enterprise BI requirements are less likely to frequently trigger eviction and need to reload datasets. Capacities for self-service BI on the other hand can have many small datasets that are more frequently loaded in and out of memory.
+>[!NOTE]
+>If you have to wait for an evicted dataset to be reloaded, you might experience a noticeable delay.
 
 ## On-demand load
 
-On-demand load is enabled by default for large datasets, and can provide significantly improved report performance. With on-demand load, you get the following benefits during subsequent queries and refreshes:
+On-demand load is enabled by default for large datasets, and can provide significantly improved load time of evicted datasets. With on-demand load, you get the following benefits during subsequent queries and refreshes:
 
 * Relevant data pages are loaded on-demand (paged in to memory).
 
