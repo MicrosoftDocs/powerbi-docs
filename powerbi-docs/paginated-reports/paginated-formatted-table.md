@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 06/13/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
@@ -128,7 +128,6 @@ After saving the report, you can preview it. Select **Reading Mode** on the top 
 - You can create a formatted table in any "new" workspace. It doesn't need to be in a Premium workspace. Read about [new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 - You can't create a formatted table in "classic" Power BI workspaces.
 - You can't create a formatted table from Power BI datasets based on a live connection.
-- The feature isn't available in the North Europe region.
 
 ## Next steps
 
