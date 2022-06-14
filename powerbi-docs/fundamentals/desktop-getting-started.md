@@ -293,11 +293,9 @@ You can show different visualizations on different report pages. To add a new pa
 
 You can add text boxes, images, and buttons to your report pages from the **Insert** group of the **Home** tab. To set formatting options for visualizations, select a visualization and then select the **Format** icon in the **Visualizations** pane. To configure page sizes, backgrounds, and other page information, select the **Format** icon with no visualization selected.
 
-When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
-
 ![Screenshot of Power B I Desktop showing the finished report page.](media/desktop-getting-started/new-finished-report.png)
 
-For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
+When you finish creating your pages and visualizations, select **File** > **Save** and save your report. For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
 ## Share your work
 Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
