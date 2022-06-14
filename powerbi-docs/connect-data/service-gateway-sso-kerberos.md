@@ -68,16 +68,7 @@ In a standard installation, the gateway runs as the machine-local service accoun
 
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
-#### Option B: Configure computer for Azure AD Connect
-If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
-
-`S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
-
-To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
-
-`SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
-
-### Step 4: Configure an SPN for the gateway service account
+##### Configure an SPN for the gateway service account
 
 First, determine whether an SPN was already created for the domain account used as the gateway service account:
 
@@ -97,7 +88,16 @@ First, determine whether an SPN was already created for the domain account used 
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
-### Step 5: Configure Kerberos constrained delegation
+#### Option B: Configure computer for Azure AD Connect
+If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
+
+`S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
+
+To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
+
+`SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
+
+### Step 4: Configure Kerberos constrained delegation
 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
