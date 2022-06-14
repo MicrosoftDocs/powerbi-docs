@@ -70,7 +70,7 @@ If you are using keyboard navigation, press Ctrl + F6 to move focus to that sect
 
 **Report** view is the default view. 
 
-![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer-gsg-blankreport.png)
+![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer-gsg-blank-report.png)
 
 Power BI Desktop also includes the **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
 
@@ -247,7 +247,7 @@ Look at that! Power BI Desktop recognized that the **State** field contained geo
 
 The **Visualizations** pane shows information about the visualization and lets you modify it. 
 
-![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer-gsg-visualizationtypes.png)
+![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer-gsg-visualization-types.png)
 
 1. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane.
 1. The **Format** option lets you apply formatting and other controls to visualizations.
@@ -265,7 +265,7 @@ You now see only the top 10 weather states in the map visualization.
 
 You can retitle your visualization. Select the **Format** icon in the **Visualization** pane, and type *title* in the **Search** box. In the **Title** card, type *Top 10 weather states* under **Text**. 
 
-![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer-gsg-report1.png)
+![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer-gsg-report-1.png)
 
 To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Clustered column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
 
