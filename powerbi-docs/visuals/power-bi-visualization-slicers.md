@@ -135,37 +135,43 @@ For more information about editing interactions, see [Change how visuals interac
 
 You can sync a slicer and use it on any or all pages in a report.
 
-In the current report, the **District Monthly Sales** page has a **District Manager** slicer, but what if we also wanted that slicer on the **New Stores** page? The **New Stores** page has a slicer, but it provides only **Store Name** information. With the **Sync slicers** pane, you can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
+In the current report, the **District Monthly Sales** page has a **District Manager (or DM)** slicer, but what if we also wanted that slicer on the **New Stores** page? The **New Stores** page has a slicer, but it provides only **Store Name** information. With the **Sync slicers** pane, you can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 1. In Power BI Desktop on the **View** ribbon, select **Sync slicers**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in Power BI Desktop.":::
 
-   Or in the Power BI service, on the **View** menu, set the **Sync slicers pane** to **On**.
+# [Power BI service](#tab/powerbi-service)
+
+1. In the Power BI service, on the **View** menu, set the **Sync slicers pane** to **On**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power BI service.":::
+
+---
 
    The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png" alt-text="Screenshot of Sync slicers pane.":::
 
-1. On the **District Monthly Sales** page of the report, select the **District Manager** slicer. 
+2. On the **District Monthly Sales** page of the report, select the **District Manager** slicer. 
 
-   Because you've already created a **District Manager** (**DM**) slicer on the **Overview** page, the **Sync slicers** pane appears as follows:
+   Because you've already created a **District Manager** slicer on the **Overview** page, the **Sync slicers** pane appears as follows:
 
    :::image type="content" source="media/power-bi-visualization-slicers/9-sync-slicers.png" alt-text="Screenshot of Sync District Monthly Sales slicer.":::
 
-1. In the **Sync** column of the **Sync slicers** pane, select the **Overview**, **District Monthly Sales**, and **New Stores** pages. 
+3. In the **Sync** column of the **Sync slicers** pane, select the **Overview**, **District Monthly Sales**, and **New Stores** pages. 
 
    This selection causes the **District Monthly Sales** slicer to sync across these three pages. 
 
-1. In the **Visible** column of the **Sync slicers** pane, select the **New Stores** page. 
+4. In the **Visible** column of the **Sync slicers** pane, select the **New Stores** page. 
 
    This selection causes the **District Monthly Sales** slicer to be visible in these three pages. The **Sync slicers** pane now appears as follows:
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png" alt-text="Screenshot of Select pages in Sync slicers.":::
 
-1. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, notice that the **District Manager** slicer now shows the same selections as on the **Overview** page. On the **New Stores** page, the **District Manager** slicer is now visible and it selections affect the selections that are visible in the **Store Name** slicer.
+5. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, notice that the **District Manager** slicer now shows the same selections as on the **Overview** page. On the **New Stores** page, the **District Manager** slicer is now visible and it selections affect the selections that are visible in the **Store Name** slicer.
 
     >[!TIP]
     >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move, resize, and format synced slicers on the various pages independently.
@@ -204,7 +210,7 @@ For more information on visual-level filters, see [Filter types](../create-repor
 
 Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
-1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls.
+1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) to display the formatting controls.
 
    :::image type="content" source="media/power-bi-visualization-slicers/3-format.png" alt-text="Screenshot of Format selection.":::
 
@@ -212,13 +218,9 @@ Different formatting options are available, depending on the slicer type. By usi
 
 ### General options
 
-1. Under **Format**, select **General**, select a red color under **Outline color**, and then change **Outline weight** to *2*. 
+1. Under **Format**, select **Visual**. For **Orientation**, **Vertical** is selected by default. Select **Horizontal** to produce a slicer with horizontally arranged tiles or buttons, and scroll arrows to access items that don't fit in the slicer.
 
-   This setting changes the color and thickness of the header and item outlines and underlines.
-
-1. For **Orientation**, **Vertical** is selected by default. Select **Horizontal** to produce a slicer with horizontally arranged tiles or buttons, and scroll arrows to access items that don't fit in the slicer.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/4-horizontal.png" alt-text="Screenshot of General selections.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/4-horizontal.png" alt-text="Screenshot of orientation options.":::
 
 1. Turn **On** the **Responsive** layout to change the size and arrangement of slicer items according to the view screen and slicer size. 
 
@@ -239,7 +241,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 ### Selection controls options (list slicers only)
 
-1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer.
+1. Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer.
 
     **Show "Select all" option** is **Off** by default. When enabled, this option, when toggled, selects or deselects all items. If you select all items, selecting an item deselects it, allowing an *is-not* type of filter.
 
@@ -259,17 +261,9 @@ For more information about horizontal orientations and responsive layouts, see [
   - **Alignment**: **Center**
   - **Font family**: **Arial Black**
 
-### Items options
+### Effects options
 
-Items options are only available for list slicers.
-
-1. For this article, format the **Items** options as follows:
-   - **Font color**: black
-   - **Background**: light red
-   - **Text size**: **10 pt**
-   - **Font family**: **Arial**
-
-1. For **Outline**, choose **Frame** to draw a border around each item with the size and color you set under the **General** options.
+1. Select an orange color under **Background**, and then change the **Visual border** to red.
 
    :::image type="content" source="media/power-bi-visualization-slicers/8-formatted.png" alt-text="Screenshot of Frame outline options.":::
 
@@ -277,13 +271,6 @@ Items options are only available for list slicers.
    >
    >  - With **General** > **Orientation** > **Horizontal** selected, deselected items show the chosen text and background colors. Selected items use the system default, usually a black background with white text.
    >  - With **General** > **Orientation > Vertical** selected, items always show the selected colors, and check boxes are always black when selected. 
-
-### Date/numeric inputs and slider options
-
-Date/numeric inputs and slider options are only available for range slider slicers.
-
-- For list slicers, date/numeric input options are the same as **Items** options except that there's no outline or underline options.
-- **Slider** options allow you to set the color of the range slider, or turn the slider to **Off**, leaving only the numeric inputs.
 
 ### Other formatting options
 
