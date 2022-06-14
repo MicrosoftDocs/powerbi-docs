@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 06/14/2022
 ---
 # Customize statuses on your Power BI scorecard
 
 Statuses are an integral part of metric tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
 
-:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="A view of metrics showing customized statuses in the status column.":::
+:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="Screenshot of A view of metrics showing customized statuses in the status column.":::
 
 ## Start customizing
 
@@ -23,14 +23,14 @@ When you open a scorecard in edit mode, there are two entry points to start cust
 * Select the **Settings** gear icon, or
 * Select the **Statuses** section of the **Edit scorecard settings** pane.
 
-    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-2.png" alt-text="A view of the edit status pane open, customizing statuses.":::
+    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-2.png" alt-text="Screenshot of A view of the edit status pane open, customizing statuses.":::
 
 You can also get to this area by editing a metric inline.
 
 1. In scorecard edit mode, select the pencil icon to edit a metric.
 1. In the **Status** section, select the **Manage statuses** option at the end of the list.
 
-    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-3.png" alt-text="A view of the entry point when editing a metric in-line, at the bottom of the status dropdown.":::
+    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-3.png" alt-text="Screenshot of A view of the entry point when editing a metric in-line, at the bottom of the status dropdown.":::
 
 ## Modify statuses
 
@@ -46,7 +46,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
     By reordering the statuses, you are specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the metrics in order of status priority.
 
-    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="A view of how you can sort the status column by ascending or descending priority.":::
+    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="Screenshot of A view of how you can sort the status column by ascending or descending priority.":::
 
 - To reset all statuses to the default settings (the original scorecard statuses) select **Reset statuses** at the top.
 
@@ -56,7 +56,7 @@ When you delete a status, it's no longer available in your status list. You don'
 
 If a metric uses a status that is then deleted, we preserve the metric’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the metric statuses that use that status.
 
-:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="A view of the edit status pane open.":::
+:::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-deleted.png" alt-text="Screenshot of A view of the edit status pane open.":::
 
 You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for metrics to work seamlessly for your organization.
 

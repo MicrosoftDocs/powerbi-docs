@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 06/14/2022
 ---
 # Create connected metrics in Power BI (preview)
 
@@ -32,14 +32,14 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. In the dialog, search for the report with the data that you want to track, select it > **Next**.
 
-    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-report.png" alt-text="Select the report that contains the data value you want to connect to.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-report.png" alt-text="Screenshot of Screenshot of Screenshot of Screenshot of Select the report that contains the data value you want to connect to.":::
 
     This list contains all the reports that you have access to, across all workspaces, in Power BI.  
 
 1. In the report that you selected, navigate to the visual that contains the data you want to track. 
 1. Select the data point or visual. Power BI displays the measure card, summarizing all the filters applied to the selection.
 
-    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Select the data point you want to use as your Current or Target.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Screenshot of Screenshot of Screenshot of Screenshot of Select the data point you want to use as your Current or Target.":::
 
     Currently there are some limitations on the values you can select. See the [Considerations and limitations](#considerations-and-limitations) section in this article for details.
 
@@ -49,7 +49,7 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. Select **Save**.
 
-    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected metric.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Screenshot of Screenshot of Screenshot of Screenshot of Select Save for the data-connected metric.":::
 
 ### Choose measures for connected metrics 
 
@@ -69,11 +69,11 @@ To break this down further, there are two main types of cases for connecting to 
 
 Categorical data refers to cases where you are connecting a metric or submetric to data other than time-series data. For example, connecting to the total sales of the **Outdoor** product category:
 
-:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-pie-chart.png" alt-text="Select the Outdoor product category.":::
+:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-pie-chart.png" alt-text="Screenshot of Screenshot of Screenshot of Screenshot of Select the Outdoor product category.":::
 
 Or connecting to the total number of results in the **Family** customer segment: 
 
-:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text="Select the Family customer segment.":::
+:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text="Screenshot of Screenshot of Screenshot of Screenshot of Select the Family customer segment.":::
 
 In these cases, depending on what you select, Power BI calculates the measures as follows: 
 

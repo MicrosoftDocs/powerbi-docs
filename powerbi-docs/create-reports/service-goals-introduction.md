@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 06/14/2022
 ms.custom: intro-get-started
 ---
 # Get started with metrics in Power BI (preview)
@@ -17,7 +17,7 @@ ms.custom: intro-get-started
 
 Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
-:::image type="content" source="media/service-goals-introduction/power-bi-metrics-hub.png" alt-text="Metrics page with metrics, scorecards, and samples":::
+:::image type="content" source="media/service-goals-introduction/power-bi-metrics-hub.png" alt-text="Screenshot of Metrics page with metrics, scorecards, and samples.":::
 
 This article covers the basics of using Metrics in the Power BI service. See the other articles about metrics for more detail:
 
@@ -46,13 +46,13 @@ If you don’t meet the minimum requirements for any of these, contact your Powe
 
 After you sign in to the Power BI service, select Metrics from the navigation pane. Power BI displays your Metrics hub page. The layout and content in the Metrics page is different for every user. As a new user, your Metrics page will be empty, as shown the following image.
 
-:::image type="content" source="media/service-goals-introduction/power-bi-metrics-new-home.png" alt-text="The new, empty Metrics home page.":::
+:::image type="content" source="media/service-goals-introduction/power-bi-metrics-new-home.png" alt-text="Screenshot of The new, empty Metrics home page.":::
 
 ### Recommended
 
 The top section contains all the metrics that matter the most to you, and the scorecard samples. Power BI curates these metrics automatically, based on metrics that you're assigned to, you've edited, or you've performed a recent check-in. If you don't have any scorecards yet, you see the samples there.
 
-:::image type="content" source="media/service-goals-introduction/scorecard-samples-recommended.png" alt-text="Top section contains all the metrics that matter the most to you.":::
+:::image type="content" source="media/service-goals-introduction/scorecard-samples-recommended.png" alt-text="Screenshot of Top section contains all the metrics that matter the most to you.":::
 
 A metric must have at least two values, **Current** and **Target**, to show up in this section. 
 
@@ -60,12 +60,12 @@ A metric must have at least two values, **Current** and **Target**, to show up i
 
 The next section is a tabbed list. 
 
-:::image type="content" source="media/service-goals-introduction/power-bi-metrics-recent.png" alt-text="Recent metrics on the Metrics tab.":::
+:::image type="content" source="media/service-goals-introduction/power-bi-metrics-recent.png" alt-text="Screenshot of Recent metrics on the Metrics tab.":::
 
 - **Recent** are the scorecards you've visited most recently. Each item has a timestamp. 
 - **Favorites** are the scorecards you've starred.
 
-    :::image type="content" source="media/service-goals-introduction/power-bi-metrics-favorites.png" alt-text="Star your favorite scorecards.":::
+    :::image type="content" source="media/service-goals-introduction/power-bi-metrics-favorites.png" alt-text="Screenshot of Star your favorite scorecards.":::
 
 - **Shared with me** contains scorecards that your colleagues have shared with you. 
 - **All scorecards** lists all the scorecards you have access to. 

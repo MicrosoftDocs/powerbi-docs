@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/11/2021
+ms.date: 06/14/2022
 LocalizationGroup: Visualizations
 ---
 # Create a scorecard visual in Power BI (preview)

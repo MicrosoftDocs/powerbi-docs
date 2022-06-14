@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 06/14/2022
 ---
 # Arrange columns and metrics in Power BI scorecards (preview)
 
@@ -24,7 +24,7 @@ It's easy to reorder metrics on the scorecard, or make them submetrics.
 
     When you make it a submetric, it takes the color of the metric it's under.
 
-    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Animation of moving a metric, and making it a submetric.":::
+    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Screenshot of Animation of moving a metric, and making it a submetric.":::
 
 ## Hide or move a column
 
