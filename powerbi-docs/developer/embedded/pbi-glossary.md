@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/07/2022
+ms.date: 06/14/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -273,7 +273,7 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [artifacts](#artifacts) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -485,7 +485,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were accessed last.
+The container in the nav pane that holds all the individual [items](#item) (reports, dashboards, etc.) that were accessed last.
 
 ### Related content
 
@@ -548,12 +548,12 @@ The location for Power BI users to manage their own general settings, such as wh
 
 ### Share, sharing
 
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
 
 ### Single sign-on, SSO
 
