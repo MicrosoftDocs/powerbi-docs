@@ -8,10 +8,13 @@ ms.custom: contperf-fy21q1, intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 10/29/2021
+ms.date: 06/13/2022
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Welcome to the getting started guide for Power BI Desktop. This tour shows you how Power BI Desktop works, what it can do, and how to build robust data models and amazing reports to amplify your business intelligence.
 
 For a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
@@ -27,7 +30,9 @@ You can also watch the [Getting Started with the Power BI Desktop](https://www.y
 
 
 ## How Power BI Desktop works
+
 With Power BI Desktop, you can:
+
 1. Connect to data, including multiple data sources.
 1. Shape the data with queries that build insightful, compelling data models.
 1. Use the data models to create visualizations and reports. 
@@ -65,7 +70,7 @@ If you are using keyboard navigation, press Ctrl + F6 to move focus to that sect
 
 **Report** view is the default view. 
 
-![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer_gsg_blankreport.png)
+![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer-gsg-blankreport.png)
 
 Power BI Desktop also includes the **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
 
@@ -220,14 +225,15 @@ You can make more changes to a table after it is loaded into Power BI Desktop, a
 ## Build reports
 In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
 
-![Screenshot of Power B I Desktop showing the Report view.](media/desktop-getting-started/designer_gsg_reportview.png)
+![Screenshot of Power B I Desktop showing the Report view.](media/desktop-getting-started/designer-gsg-report-view.png)
 
 1. The ribbon at the top, which displays common tasks associated with reports and visualizations.
-2. The canvas area in the middle, where visualizations are created and arranged.
+2. The canvas area in the middle, where you create and arrange visualizations.
 3. The pages tab area at the bottom, which lets you select or add report pages.
 4. The **Filters** pane, where you can filter data visualizations.
 5. The **Visualizations** pane, where you can add, change, or customize visualizations, and apply drillthrough.
-6. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
+1. The **Format** pane, where you design the report and visualizations.
+1. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
 
 You can expand and collapse the **Filters**, **Visualizations**, and **Fields** panes by selecting the arrows at the tops of the panes. Collapsing the panes provides more space on the canvas to build cool visualizations. 
 
@@ -241,11 +247,11 @@ Look at that! Power BI Desktop recognized that the **State** field contained geo
 
 The **Visualizations** pane shows information about the visualization and lets you modify it. 
 
-![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer-gsg-visualizationtypes.png)
 
-1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected. 
-2. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane. 
-3. The **Format** option lets you apply formatting and other controls to visualizations. 
+1. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane.
+1. The **Format** option lets you apply formatting and other controls to visualizations.
+1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected.
 
 The options available in the **Fields** and **Format** areas depend on the type of visualization and data you have.
 
@@ -253,29 +259,29 @@ You want your map visualization to show only the top 10 weather states. To show 
 
 Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**.
 
-![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/gsg_share5.png)
+![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/top-n-filter-weather.png)
 
 You now see only the top 10 weather states in the map visualization. 
 
-Retitle your visualization by selecting the **Format** icon in the **Visualization** pane, selecting **Title**, and typing *Top 10 weather states* under **Title text**. 
+You can retitle your visualization. Select the **Format** icon in the **Visualization** pane, and type *title* in the **Search** box. In the **Title** card, type *Top 10 weather states* under **Text**. 
 
-![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer_gsg_report1.png)
+![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer-gsg-report1.png)
 
-To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
+To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Clustered column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
 
-![Screenshot of Power B I Desktop showing the Column chart visualization.](media/desktop-getting-started/gsg_share7.png)
+![Screenshot of Power B I Desktop showing the Column chart visualization.](media/desktop-getting-started/weather-by-state-column-chart.png)
 
 To switch the order of the ranking so that number 1 appears first, select the **More options** ellipsis at the upper right of the visualization, and select **Sort ascending** from the menu. 
 
-![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/shapecombine_mergequeries.png)
+![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/weather-by-state-sort-ascending.png)
 
 To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization.
 
-Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Turn the **Zoom slider** to **On** and turn **Data labels** to **On**. Finally, adjust the zoom slider along the Y axis until the stacked columns fill the chart.
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Search for **Zoom slider** and set it to **On**, and turn **Data labels** to **On**.
 
 Now, the top 10 weather states appear in ranked order along with their numerical rankings.
 
-![Screenshot of Power B I Desktop showing the finished column chart.](media/desktop-getting-started/shapecombine_changetype.png)
+![Screenshot of Power B I Desktop showing the finished column chart.](media/desktop-getting-started/top-ten-weather-column-chart.png)
 
 You can make similar or other visualizations for the **Affordability** and **Overall ranking** fields, or combine several fields into one visualization. There are all sorts of interesting reports and visualizations you can create. These **Table** and **Line and clustered column chart** visualizations shows the top 10 weather states along with their affordability and overall rankings:
 
