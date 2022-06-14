@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 06/08/2022
 ---
 
 # Change log for Power BI Report Server
@@ -35,8 +35,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed issue with url encoding.
         
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.105.1143.0 (May 2022), Released: June 7, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
    - *Version: 2.105.961.0 (May 2022), Released: May 26, 2022*
-        - Support for May 2022 Power BI Report Server   
+        - Support for May 2022 Power BI Report Server
         - Bug fixes
 
 ## January 2022
@@ -63,6 +65,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed issue in config tool connecting to SQL server to create ReportServer database
         
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.100.4082.0 (January 2022), Released: June 8, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
    - *Version: 2.100.1381.0 (January 2022), Released: January 24, 2022*
         - Support for January 2022 Power BI Report Server   
        

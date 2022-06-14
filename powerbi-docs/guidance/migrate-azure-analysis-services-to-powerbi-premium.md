@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 06/03/2022
 ms.custom: intro-migration
 ---
 
@@ -46,7 +46,7 @@ Answers to many of these questions are described in this article.
 
 ### Convergence of self-service and enterprise BI
 
-Consolidation of artifacts in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service artifacts that have become popular yet are resulting in a management burden for the business. IT can take over such artifacts. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
+Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more dopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
 ### Power BI Premium Gen2
 
@@ -64,7 +64,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
 | [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), which store fragments of data intended for use in a Power BI dataset | No | Yes |
 | [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md), which use artificial intelligence (AI) with Cognitive Services, Automated Machine Learning, and Azure Machine Learning (AML) integration | No | Yes |
-| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes <sup>1</sup> |
+| [Metrics](../create-reports/service-goals-introduction.md), which curate key business measures and allow tracking them against objectives | No | Yes |
 | **Business enablement** |||
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |
 | Business-driven interactive reports, workspaces, and apps | No | Yes |
@@ -78,21 +78,21 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Interactive analysis over big data** |||
 | [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
 | [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables | No | Yes <sup>1</sup> |
-| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes <sup>1</sup> |
+| [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
-| [VNet connectivity](/power-platform-release-plan/2020wave2/cdm-data-integration/vnet-connectivity-power-platform), which allows Power BI to work seamlessly in an organization's VNet | No | Yes <sup>1</sup> |
+| [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
 | [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
 | [Single sign-on (SSO) for DirectQuery sources](../connect-data/power-bi-data-sources.md#single-sign-on-sso-for-directquery-sources), which allows connecting to data sources by using the report user's identity | No | Yes |
 | [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
 | [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |
 | [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>3</sup> |
 | **Governance** |||
-| [Microsoft Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI artifacts | No | Yes |
+| [Microsoft Purview integration](/azure/purview/overview), which helps customers manage and govern Power BI items | No | Yes |
 | Microsoft Information Protection (MIP) [sensitivity labels](../admin/service-security-sensitivity-label-overview.md) and integration with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) for data loss prevention | No | Yes |
-| Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI artifacts | No | Yes |
+| Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI items | No | Yes |
 | **Semantic modeling** |||
 | Compatibility with Power BI Desktop | No | Yes |
 | [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI datasets and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes <sup>1</sup> |
@@ -102,7 +102,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
 | [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
-| [Asynchronous refresh](/connect-data/asynchronous-refresh.md), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes <sup>1</sup> |
+| [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](../admin/service-admin-premium-workloads.md#datasets), which control Premium capacity workloads | No | Yes |
 | [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
@@ -114,12 +114,12 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Multi-Geo feature](../admin/service-admin-premium-multi-geo.md), which helps multinational customers address regional, industry-specific, or organizational data residency requirements | Yes | Yes |
 | **Discoverability** |||
 | [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
-| [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI artifact dependencies | No | Yes |
+| [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
-| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-metric-overview), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
+| [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |
 | [SQL Server Extended Events (xEvents)](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events), which is a light-weight tracing and performance monitoring system useful for diagnosing issues | Yes | No |
 
@@ -149,7 +149,7 @@ Also, assuming you already use Power BI in your organization, calculate costs ba
 
 ### Consolidation opportunity
 
-Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI artifacts in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
+Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
 
 ### PPU licenses
 

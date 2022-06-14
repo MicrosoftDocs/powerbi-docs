@@ -118,9 +118,7 @@
           href: service-premium-faq.yml
   - name: Governance and compliance
     expanded: false
-    items:
-    - name: Power BI governance and deployment approaches
-      href: service-admin-governance.md                     
+    items:                   
     - name: Metadata scanning
       href: service-admin-metadata-scanning.md
   - name: Information protection

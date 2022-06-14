@@ -912,8 +912,13 @@
         },
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
-            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-powerpoint.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
@@ -4584,6 +4589,11 @@
         {
             "source_path": "powerbi-docs/consumer/mobile/mobile-apps-goals.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
+            "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
             "redirect_document_id": false
         }
     ]           

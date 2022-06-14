@@ -1,4 +1,4 @@
----
+﻿---
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
@@ -75,7 +75,7 @@ During the deployment process, you may need to work with your Power BI administr
 - **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
 - **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
-- **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Information Protection.
+- **Set up sensitivity labels:** All [sensitivity labels](../enterprise/service-security-data-protection-overview.md) are integrated with Microsoft Purview Information Protection.
 
 ### Deploy to production workspace
 
