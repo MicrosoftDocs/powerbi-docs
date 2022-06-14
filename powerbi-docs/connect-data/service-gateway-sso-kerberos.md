@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 05/06/2022
+ms.date: 06/14/2022
 LocalizationGroup: Gateways
 ---
 
@@ -52,11 +52,15 @@ The steps required for configuring gateway single sign-on are outlined below.
 
 The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
-### Step 2: Configure the Gateway service account
+### Step 2: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
+
+To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
+
+### Step 3: Configure the Gateway service account
 
 Option A below is the recommended configuration unless you have Azure AD Connect configured and user accounts are synchronized. In that case option B is recommended.
 
-#### Option A: Run the gateway Windows service as a domain account
+#### Option A: Run the gateway Windows service as a domain account with SPN
 
 In a standard installation, the gateway runs as the machine-local service account, **NT Service\PBIEgwService**.
 
@@ -72,10 +76,6 @@ If Azure AD Connect is configured and user accounts are synchronized, the gatewa
 To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
 
 `SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
-
-### Step 3: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
-
-To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
 ### Step 4: Configure an SPN for the gateway service account
 
