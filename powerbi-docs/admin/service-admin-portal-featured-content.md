@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 If the *featured content* feature is enabled in your organization, users can feature content in the **Featured** section of the Power BI Home page. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for details.
 
-As a Power BI admin, you can monitor this featured content and remove it from the **Featured** section if necessary. You can also disable the featured content feature entirely, in which case users will not longer be able to feature content. See [Enable/disable featured content](#enabledisable-featured-content) below.
+As a Power BI admin, you can monitor this featured content and remove it from the **Featured** section if necessary. You can also disable the featured content feature entirely, in which case users will no longer be able to feature content. See [Enable/disable featured content](#enabledisable-featured-content) below.
 
 ## Monitor and manage featured content
 
