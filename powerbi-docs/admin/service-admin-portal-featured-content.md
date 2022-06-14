@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 04/04/2022
+ms.date: 06/14/2022
 LocalizationGroup: Administration
 ---
 
@@ -16,7 +16,9 @@ LocalizationGroup: Administration
 
 If the *featured content* feature is enabled in your organization, users can feature content in the **Featured** section of the Power BI Home page. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for details.
 
-As a Power BI admin, you can monitor this featured content and remove it from the **Featured** section if necessary.
+As a Power BI admin, you can monitor this featured content and remove it from the **Featured** section if necessary. You can also disable the featured content feature entirely, in which case users will no longer be able to feature content. See [Enable/disable featured content](#enabledisable-featured-content) below.
+
+## Monitor and manage featured content
 
 In the [Admin portal](service-admin-portal.md), select **Featured content**.
 
@@ -26,7 +28,9 @@ Here you see a list of all featured items along with their relevant metadata. If
 
 To delete an item, mouseover and select the item, and then click the trash can that appears in the top ribbon, or choose **More options (...) > Delete**. It is possible to select multiple items and then delete.
 
-See [Featured content](service-admin-portal-export-sharing.md#featured-content) for information about enabling/disabling featured content.
+## Enable/disable featured content
+
+The featured content feature is enabled, disabled, and configured (for example, specifying who can feature content) via an admin setting. See [Featured content](service-admin-portal-export-sharing.md#featured-content) for detail.
 
 ## Next steps
 
