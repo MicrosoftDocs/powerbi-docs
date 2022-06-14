@@ -128,7 +128,7 @@ sections:
       - question: |
           I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which items aren't supported?
         answer: |
-          For a comprehensive list of items and artifacts that aren't supported in deployment pipelines, see the following sections:
+          For a comprehensive list of Power BI items that aren't supported in deployment pipelines, see the following sections:
           
           * [Unsupported items](deployment-pipelines-process.md#unsupported-items)
           
