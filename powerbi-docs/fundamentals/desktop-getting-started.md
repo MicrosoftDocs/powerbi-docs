@@ -271,7 +271,7 @@ To add a visualization that shows the names of the top 10 weather states and the
 
 ![Screenshot of Power B I Desktop showing the Column chart visualization.](media/desktop-getting-started/weather-by-state-column-chart.png)
 
-To switch the order of the ranking so that number 1 appears first, select the **More options** ellipsis at the upper right of the visualization, and select **Sort ascending** from the menu. 
+To switch the order of the ranking so that number 1 appears first, select **More options (...)** at the upper right of the visualization, and select **Sort ascending** from the menu. 
 
 ![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/weather-by-state-sort-ascending.png)
 
@@ -285,7 +285,7 @@ Now, the top 10 weather states appear in ranked order along with their numerical
 
 You can make similar or other visualizations for the **Affordability** and **Overall ranking** fields, or combine several fields into one visualization. There are all sorts of interesting reports and visualizations you can create. These **Table** and **Line and clustered column chart** visualizations shows the top 10 weather states along with their affordability and overall rankings:
 
-![Screenshot of Power B I Desktop showing the Table as well as Line and Clustered Column visualizations.](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+![Screenshot of Power B I Desktop showing the Table as well as Line and Clustered Column visualizations.](media/desktop-getting-started/table-line-clustered-visual.png)
 
 You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar, or select **Insert** > **New Page** in the **Home** tab of the ribbon. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
 
@@ -295,7 +295,7 @@ You can add text boxes, images, and buttons to your report pages from the **Inse
 
 When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
 
-![Screenshot of Power B I Desktop showing the finished report page.](media/desktop-getting-started/finished-report.png)
+![Screenshot of Power B I Desktop showing the finished report page.](media/desktop-getting-started/new-finished-report.png)
 
 For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
