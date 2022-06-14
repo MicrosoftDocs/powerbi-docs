@@ -73,7 +73,7 @@ Categorical data refers to cases where you are connecting a metric or submetric 
 
 Or connecting to the total number of results in the **Family** customer segment: 
 
-:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text=Screenshot of Select the Family customer segment.":::
+:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text="Screenshot of Select the Family customer segment.":::
 
 In these cases, depending on what you select, Power BI calculates the measures as follows: 
 
