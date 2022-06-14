@@ -88,7 +88,7 @@ This slicer filters data by district manager. If you want to follow along with t
 
 7. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
 
-8. Alternately, select **Format** (paint brush icon) in the **Visualizations** pane to format your slicer.
+8. Alternately, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) in the **Visualizations** pane to format your slicer.
 
    There are too many options to describe them all here; experiment and create a slicer that works for you. In the following image, the first slicer has a horizontal orientation and colored backgrounds for the items. The second slicer has a vertical orientation and colored text for a more standard look.
 
@@ -208,7 +208,7 @@ For more information on visual-level filters, see [Filter types](../create-repor
 
 ## Format slicers
 
-Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
+Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Effects** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
 1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) to display the formatting controls.
 
@@ -216,13 +216,15 @@ Different formatting options are available, depending on the slicer type. By usi
 
 1. Select the drop-down arrows next to each category to display and edit the options.
 
-### General options
+### Visual options
 
-1. Under **Format**, select **Visual**. For **Orientation**, **Vertical** is selected by default. Select **Horizontal** to produce a slicer with horizontally arranged tiles or buttons, and scroll arrows to access items that don't fit in the slicer.
+- For **Orientation**, **Vertical** is selected by default. Select **Horizontal** to produce a slicer with horizontally arranged tiles or buttons, and scroll arrows to access items that don't fit in the slicer.
 
    :::image type="content" source="media/power-bi-visualization-slicers/4-horizontal.png" alt-text="Screenshot of orientation options.":::
 
-1. Turn **On** the **Responsive** layout to change the size and arrangement of slicer items according to the view screen and slicer size. 
+### General options
+
+- Turn **On** the **Responsive** layout to change the size and arrangement of slicer items according to the view screen and slicer size. 
 
    For list slicers, responsive layout prevents items from being cut off on small screens. It's available only in horizontal orientations. For range slider slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Both types of slicers become filter icons at small sizes.
 
@@ -231,7 +233,7 @@ Different formatting options are available, depending on the slicer type. By usi
     >[!NOTE]
     >Responsive layout changes can override specific heading and item formatting that you set.
 
-1. Under **X Position**, **Y Position**, **Width**, and **Height**, set the slicer position and size with numeric precision, or move and resize the slicer directly on the canvas. 
+- Under **Position** and **Size**, set the slicer position and size with numeric precision, or move and resize the slicer directly on the canvas. 
 
    Experiment with different item sizes and arrangements, and note how the responsive formatting changes accordingly. These options are available only when you select horizontal orientations. 
 
@@ -241,13 +243,13 @@ For more information about horizontal orientations and responsive layouts, see [
 
 ### Selection controls options (list slicers only)
 
-1. Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer.
+- Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer.
 
     **Show "Select all" option** is **Off** by default. When enabled, this option, when toggled, selects or deselects all items. If you select all items, selecting an item deselects it, allowing an *is-not* type of filter.
 
     :::image type="content" source="media/power-bi-visualization-slicers/7-select-all.png" alt-text="Screenshot of Selection controls.":::
 
-1. Turn **Single select** to **Off** to allow you to select multiple items without needing to hold down the **Ctrl** key. 
+- Turn **Single select** to **Off** to allow you to select multiple items without needing to hold down the **Ctrl** key. 
 
     **Single select** is **On** by default. Selecting an item selects it, and holding down the **Ctrl** key selects multiple items. Selecting an item again deselects it.
 
@@ -263,7 +265,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 ### Effects options
 
-1. Select an orange color under **Background**, and then change the **Visual border** to red.
+- Select an orange color under **Background**, and then change the **Visual border** to red.
 
    :::image type="content" source="media/power-bi-visualization-slicers/8-formatted.png" alt-text="Screenshot of Frame outline options.":::
 
