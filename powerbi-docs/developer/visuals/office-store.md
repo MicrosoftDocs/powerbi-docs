@@ -83,7 +83,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
     >[!NOTE]
     >If you're creating an offer for testing purposes, add the text *-ISVPILOT* to the end of your offer alias. This will indicate to the App Source Certification team that the offer is for testing purposes and should be approved faster. Microsoft will delete offers with *-ISVPILOT* periodically so please don't use this tag for reasons other than testing transactability and license management capability.  
 
-6. In **Offer setup**, check the appropriate boxes if your product requires additional purchase, and if you want to [certify](power-bi-custom-visuals-certified.md) your visual.
+6. In **Offer setup**, check the appropriate boxes. If your product may require additional purchase, if you want Microsoft to manage the license, or if you want to [certify](power-bi-custom-visuals-certified.md) your visual, this is the place to say so.
 
     :::image type="content" source="media/office-store/setup-details.png" alt-text="Screenshot of setup details.":::
 
