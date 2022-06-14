@@ -158,7 +158,7 @@ Deployment pipelines doesn't support the following items:
 
 * Workbooks
 
-* Goals
+* Metrics
 
 ## Item properties copied during deployment
 

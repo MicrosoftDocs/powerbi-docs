@@ -98,7 +98,7 @@
       href: service-admin-portal-discovery.md
     - name: Export and sharing settings
       href: service-admin-portal-export-sharing.md
-    - name: Goals settings (preview)
+    - name: Metrics settings (preview)
       href: service-admin-portal-goals-settings.md
     - name: Help and support settings
       href: service-admin-portal-help-support.md
