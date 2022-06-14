@@ -64,7 +64,7 @@ The sections of the tenant settings page are listed in the table below.
 * [Developer settings](service-admin-portal-developer.md)
 * [Discovery settings](service-admin-portal-discovery.md)
 * [Export and sharing settings](service-admin-portal-export-sharing.md)
-* [Goals settings (preview)](service-admin-portal-goals-settings.md)
+* [Metrics settings (preview)](service-admin-portal-goals-settings.md)
 * [Help and support settings](service-admin-portal-help-support.md)
 * [Information protection settings](service-admin-portal-information-protection.md)
 * [Insights settings](service-admin-portal-insights.md)
