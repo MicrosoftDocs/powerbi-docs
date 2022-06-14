@@ -45,7 +45,7 @@ The following updates are new to Power BI Desktop this month:
 ### Reporting
 * New format pane (generally available)  [[video]](https://youtu.be/gu_5Q3z-qpc?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516657)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
 * Updates to error bars  [[video]](https://youtu.be/gu_5Q3z-qpc?t=93)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516658)  
-* Information protection updates  [[video]](https://youtu.be/gu_5Q3z-qpc?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516659)  [[article]](/power-bi/create-reports/power-bi-field-parameters)
+* Information protection updates  [[video]](https://youtu.be/gu_5Q3z-qpc?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516659)  
 * Table navigation improvements [[video]](https://youtu.be/gu_5Q3z-qpc?t=156)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516660)  
 * Canvas Zoom in Teams and quick create [[video]](https://youtu.be/gu_5Q3z-qpc?t=200)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516661)   
 
