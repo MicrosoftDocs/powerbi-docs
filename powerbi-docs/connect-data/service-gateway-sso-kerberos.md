@@ -78,7 +78,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 3. In the search result, right-click the gateway service account and select **Properties**.
 
-4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Configure Kerberos constrained delegation](#step-5-configure-kerberos-constrained-delegation).
+4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Configure Kerberos constrained delegation](#step-4-configure-kerberos-constrained-delegation).
 
 5. If there isn't a **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows (you need domain admin rights to create the SPN).
 
