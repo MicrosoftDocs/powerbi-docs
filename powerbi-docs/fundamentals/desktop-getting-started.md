@@ -23,11 +23,8 @@ For a quick overview of how Power BI Desktop works and how to use it, you can sc
 
 You can also watch the [Getting Started with the Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) video, and download the [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) Excel workbook to follow along with the video.
 
-
 > [!IMPORTANT]
-> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
 > You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
-
 
 ## How Power BI Desktop works
 
@@ -42,9 +39,6 @@ Power BI Desktop integrates proven Microsoft query engine, data modeling, and vi
 
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
 Ready to give it a try? Let's get started.
-
-> [!NOTE]
-> For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
 To download Power BI Desktop, go to the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
@@ -63,7 +57,7 @@ From the **Welcome** screen, you can **Get data**, see **Recent sources**, open 
 
 Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Model**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
 
-If you are using keyboard navigation, press Ctrl + F6 to move focus to that section of buttons in the window.  To learn more about accessibility and Power BI, visit our [accessibility articles](../create-reports/desktop-accessibility-creating-tools.md).
+If you're using keyboard navigation, press Ctrl + F6 to move focus to that section of buttons in the window.  To learn more about accessibility and Power BI, visit our [accessibility articles](../create-reports/desktop-accessibility-creating-tools.md).
 
 ![Screenshot of Power B I Desktop showing the icons for Report, Data, and Model.](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
@@ -128,7 +122,7 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Screenshot of Power B I Desktop showing Sorted Rows appearing in Applied Steps.](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Remove Bottom Rows dialog box.](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
@@ -212,7 +206,7 @@ To expand the merged table and select which columns to include, select the **Exp
 
 For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
-You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for lots of additional, interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
+You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for more interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor with shaped and combined queries.](media/desktop-getting-started/mergedcolumn.png)
 
@@ -220,7 +214,7 @@ For now, you have enough data to create an interesting report in Power BI Deskto
 
 ![Screenshot of Power B I Desktop showing the Close and Apply Changes option.](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Transform Data** on the **Home** tab of the Power BI Desktop ribbon. 
+You can make more changes to a table after it's loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Transform Data** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
 In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
@@ -345,10 +339,15 @@ Complete the **Share report** or **Share dashboard** screen to send an email or 
 
 ![Screenshot of Power B I Desktop showing the Share Report screen.](media/desktop-getting-started/gsg_share6.png)
 
-There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service. 
+There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service.
+
+## Considerations and limitations
+
+- Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported. If you contact support for Power BI Desktop, you'll be asked to upgrade to the most recent version.
+- For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called [Power BI Desktop for Power BI Report Server](../report-server/install-powerbi-desktop.md), which updates three times a year. This article describes standard Power BI Desktop.
 
 ## Next steps
-Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When using the diagnostics port, *making any changes to the model is not supported. Changes to the model may lead to corruption and data loss.*
+Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When you're using the diagnostics port, *making any changes to the model isn't supported. Changes to the model may lead to corruption and data loss.*
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:
 
