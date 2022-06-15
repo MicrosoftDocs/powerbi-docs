@@ -332,6 +332,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Change the clustered column chart to a matrix.":::
 
+1. Drag the **Business Type** field from **Columns**, and put it under **Category** in **Rows**.
 1. With the matrix still selected, in the Filters pane, under **Business Type**, **Select all**, then clear the **[Not Applicable]** box. 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-filter-not-applicable.png" alt-text="Filter out Not Applicable business type.":::
@@ -340,9 +341,9 @@ Next we create a column chart to investigate which products are sold by what typ
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Widen the matrix to fill the report.":::
 
-1. In the Formatting pane for the matrix, open the **Conditional formatting** section and turn on **Data bars**. Select **Advanced controls** and set a lighter color for the positive bar. Select **OK**. 
+1. In the Formatting pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
 
-1. Increase the width of the Sales Amount column so it covers the whole area by dragging the matrix.
+1. Increase the width of the Sales Amount column so it fills the whole area by dragging the matrix.
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Matrix with data bars for Sales Amount.":::
 
