@@ -16,8 +16,6 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v4.6.0
 
-ETA: June 13, 2022
-
 * Adding new capabilities property: [privileges](capabilities.md) and two privileges:
   * web access
   * download file from custom visual
@@ -28,7 +26,7 @@ ETA: June 13, 2022
 ## API v4.2.0
 
 * New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
-* Supports Desktop S02
+* Supports Desktop February 2022
 
 ## API v3.8.0
 
