@@ -270,13 +270,13 @@ Let’s build the final report, one visual at a time.
 
 ### Visual 1: Add a title 
 
-1. On the **Insert** ribbon, select **Text Box**. Type "Executive Summary – Sales Report". 
+1. On the **Insert** ribbon, select **Text Box**. Type *Executive Summary – Sales Report*. 
 
 1. Select the text you typed. Set the font size to **20** and **Bold**. 
 
     :::image type="content" source="media/desktop-dimensional-model-report/executive-summary-text-box.png" alt-text="Format the Executive Summary text.":::
 
-1. In the Visualizations pane, toggle the **Background** to **Off**. 
+1. In the **Format text box** pane, under **Effects**, toggle the **Background** to **Off**. 
 
 1. Resize the box to fit on one line. 
 
@@ -290,7 +290,7 @@ Next you create a line chart to see which month and year had the highest sales a
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year.png" alt-text="Create a column chart with a column for each year.":::
 
-1. In the **Fields** section of the Visualizations pane, remove the **Year** and **Quarter** fields: 
+1. In the **Fields** section of the Visualizations pane, in the X-axis box, remove the **Fiscal Year** and **Fiscal Quarter** fields: 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-remove-year-and-quarter.png" alt-text="In the Fields section of the Visualizations pane, remove the Year and Quarter fields.":::
 
@@ -298,8 +298,8 @@ Next you create a line chart to see which month and year had the highest sales a
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-change-to-area.png" alt-text="Change the column chart to an area chart.":::
 
-1. If you added the DAX measure in the extra credit above, add it to **Values** as well. 
-1. Open the Format pane, open Data colors and change the color of **Sales Amount by Due Date** to a more contrasting color, such as red.
+1. If you added the DAX measure in the extra credit above, add it to **Y-axis** as well. 
+1. Open the Format pane, expand the **Lines** section, and in **Colors**, change **Sales Amount by Due Date** to a more contrasting color, such as red.
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-year-add-DAX-measure.png" alt-text="Sales Amount by Due Date as area chart.":::
 
@@ -313,7 +313,7 @@ Now we'll create a map to see in which Country the Resellers have the highest Or
 
 1. From the Fields pane, drag the **Country-Region** field from the **Reseller** table to a blank area on your report canvas. Power BI creates a map. 
 
-1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Size** well. 
+1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Bubble size** well. 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-order-quantity-by-reseller-country.png" alt-text="Map of order quantity by country/region.":::
 
