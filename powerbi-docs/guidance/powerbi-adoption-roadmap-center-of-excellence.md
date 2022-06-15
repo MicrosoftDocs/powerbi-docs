@@ -182,7 +182,7 @@ Funding is important because it impacts the way the COE communicates and engages
 > [!TIP]
 > The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the types of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
-Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
+Some organizations cover the COE operating costs with chargebacks to business units based on the usage goals of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
 
 ## Considerations and key actions
 

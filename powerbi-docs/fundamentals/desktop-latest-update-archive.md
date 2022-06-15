@@ -774,7 +774,7 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-[Get started with goals in Power BI (preview)](../create-reports/service-goals-introduction.md)
+[Get started with metrics in Power BI (preview)](../create-reports/service-goals-introduction.md)
 
 * Power BI Goals: automated status rules (preview)  [[video]](https://youtu.be/IagiPEZ_eIY?t=777)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908321)  [[article]](../create-reports/service-goals-introduction.md)
 * Power BI Goals: improved filtering  (preview)  [[video]](https://youtu.be/IagiPEZ_eIY?t=823)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908322)  [[article]](../create-reports/service-goals-introduction.md)
