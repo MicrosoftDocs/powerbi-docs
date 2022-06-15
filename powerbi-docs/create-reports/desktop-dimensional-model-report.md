@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
 ms.date: 06/15/2022
+ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
