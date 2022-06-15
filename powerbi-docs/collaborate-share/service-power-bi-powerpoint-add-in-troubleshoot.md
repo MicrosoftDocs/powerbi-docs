@@ -33,20 +33,34 @@ See [Microsoft Edge WebView2](/deployoffice/webview2-install) and Microsoft 365 
 ## How to install WebView2?
 It takes just a minute to install WebView2. You can get and install it from [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/).
 
->[!NOTE]
-> After installing WebView2, you might need to close and re-open all Office applications.
-
-## I installed WebView2, but the Power BI storytelling add-in still doesn't run
-
-If installing WebView2 didn't enable you to use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The following sections show you how to check your device's Office build and Windows edition. If you have sufficient privileges, and feel comfortable doing so, you can perform these updates yourself, if necessary. Otherwise contact your organization's system administrator.
-
-First, check to make sure WebView2 is indeed installed. Open the add-in side menu, select **Security Info**. The Security Info window will appear.
+When the installation is done, check to make sure WebView2 is installed. Open the add-in side menu, select **Security Info**. The Security Info window will appear.
 
 ![Screenshot of the add-in Security Info add-in side pane menu option.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-security-info-menu-item.png)
 
 ![Screenshot of the add-in Security Info window that shows whether WebView2 is installed.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-security-info-window.png)
 
-If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is installed. Proceed to check your Office build and Windows edition.
+If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is installed.
+
+>[!NOTE]
+> After installing WebView2, you might need to close and re-open all Office applications.
+
+## I installed WebView2, but the Power BI storytelling add-in still doesn't run
+
+If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The minimum system requirements are as follows:
+
+* **Office version**
+    * If you have a Microsoft 365 Office subscription: Build number 16.0.13530.20424 or later.
+    * If you have a non-subscription version of Office: Office 2021 or later.
+* **Windows version**
+    * If you have a Microsoft 365 Office subscription: Windows 8.1, Windows 10, or Windows 11.
+    * If you have a non-subscription version of Office: Windows 10 and above.
+
+If your system doesn't meet the above requirements, you need to upgrade your [Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) and/or [Office](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) versions before you will be able to run the Storytelling add-in.
+
+>[!Note]
+>For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below. 
+
+The following sections show you how to check your device's Office build and Windows edition.
 
 ## Check your Office build and subscription type
 
@@ -54,22 +68,11 @@ In PowerPoint, choose **File > Account**, and then press **About PowerPoint**. T
 
 ![Screenshot of the about PowerPoint info pane.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-about-powerpoint.png)
 
-* If you have a Microsoft 365 Office subscription:
-    * If the build number is 16.0.14326.xxxxx or later, your Office build meets minimum requirements. If your system meets minimum requirements and WebView2 is installed, but you still can't use the add-in, try [updating your Windows edition](#check-your-windows-version).
-    * If the build number is 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, your Office build meets minimum requirements but someone with admin permissions on your device must [add a registry key](#adding-a-registry-key).
-    * If the build number is earlier than 16.0.13530.20424, the Office build must be upgraded before you'll be able to use the add-in. See [Install Office updates](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
-* If you have a non-subscription version of Office, the Office version should be Office 2021 or later. If it's earlier, the Office build must be upgraded before you'll be able to use the add-in. See [Install Office updates](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
 ## Check your Windows version
 
 Open **File Explorer**, right-click **This PC**, and choose **Properties**. In the Windows specifications section, note the Windows edition.
 
 ![Screenshot of Windows specifications window.](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-windows-specification-window.png)
- 
-If you have a Microsoft 365 Office subscription, the Windows edition should be Windows 8.1, Windows 10, or Windows 11.
-
-If you have a non-subscription version of Office, the Windows edition should be Windows 10 or Windows 11.
-
-If the Windows edition on your device doesn't meet these requirements, you must [update Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) on your device to one of those editions.
 
 ## Adding a registry key
 
