@@ -77,7 +77,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Business continuity and disaster recovery (BCDR)](../enterprise/service-admin-failover.yml) with Azure regions and availability zones | No | Yes |
 | **Interactive analysis over big data** |||
 | [Large model sizes](../enterprise/service-premium-large-models.md) (up to 400 GB with compression) | Yes | Yes |
-| [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near-real time results over large tables | No | Yes <sup>1</sup> |
+| [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near real-time results over large tables | No | Yes <sup>1</sup> |
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
@@ -99,7 +99,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for multi-language model versions observed by the Power BI service | No | Yes |
 | Analysis Service engine semantic modeling | Yes | Yes |
 | **Model management** |||
-| [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near efficient, real-time reporting | No | Yes |
+| [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near real-time reporting (see hybrid tables) | No | Yes |
 | [Deployment pipelines](../create-reports/deployment-pipelines-overview.md), which manage the lifecycle of Power BI content | No | Yes |
 | [Scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which keeps cached dataset data current | No | Yes |
 | [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
