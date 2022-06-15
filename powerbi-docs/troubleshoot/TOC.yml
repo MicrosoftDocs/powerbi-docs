@@ -41,7 +41,9 @@
     - name: Troubleshoot relationships in Power BI models
       href: ../guidance/relationships-troubleshoot.md
     - name: Troubleshoot report performance in Power BI
-      href: ../guidance/report-performance-troubleshoot.md  
+      href: ../guidance/report-performance-troubleshoot.md
+    - name: Troubleshoot the Power BI add-in for PowerPoint
+      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md    
     - name: Develop in Power BI
       expanded: false
       items:
