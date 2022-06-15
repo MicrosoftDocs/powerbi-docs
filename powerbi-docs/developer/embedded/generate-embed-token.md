@@ -108,7 +108,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >* An identity for any item with an RLS dataset.
 >* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
 
-## DirectQuery for Power BI datasets
+### DirectQuery for Power BI datasets
 
 To embed Power BI report that has a dataset with a Direct Query connection to another Power BI dataset, do the following:
 
