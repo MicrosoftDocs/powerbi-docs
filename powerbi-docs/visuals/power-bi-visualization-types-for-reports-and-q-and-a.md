@@ -129,7 +129,7 @@ A Key Performance Indicator (KPI) is a visual cue that communicates the amount o
 KPIs are a great choice:
 
 - To measure progress (what am I ahead or behind on?).
-- To measure distance to a goal (how far ahead or behind am I?).
+- To measure distance to a metric (how far ahead or behind am I?).
 
 For more information, see [KPIs in Power BI](power-bi-visualization-kpi.md).
 
