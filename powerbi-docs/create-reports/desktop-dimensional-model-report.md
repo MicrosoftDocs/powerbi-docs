@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
-You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
+You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which day had the most sales in February 2019? 
 - Which country is the company seeing the most success in? 
@@ -61,7 +61,7 @@ Select all tables, and choose **Transform Data**. Make sure not to select the sh
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Screenshot of Load tables in Navigator.":::
 
-Check that the data types of the columns match those in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the list.
+Check that the data types of the columns match the data types in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the list.
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Screenshot of Check the data types of the columns.":::
 
@@ -115,7 +115,7 @@ Your data model should look like the following image, with each table in a box.
 This model is a typical *star schema* that you might see from data warehouses: It resembles a star. The center of the star is a Fact table. The surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
 
 - What Product was sold... 
-- to which Customer.. 
+- to which Customer... 
 - by which Reseller... 
 - in which Sales Territory.  
 
