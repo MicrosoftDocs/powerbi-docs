@@ -46,7 +46,7 @@ Answers to many of these questions are described in this article.
 
 ### Convergence of self-service and enterprise BI
 
-Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more dopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
+Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
 ### Power BI Premium Gen2
 
