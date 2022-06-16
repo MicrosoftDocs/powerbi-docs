@@ -39,13 +39,13 @@ By default, **Power BI Desktop** fits your report canvas to the available space 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To do that, select the **View** tab from the ribbon. From there, select **Page View > Actual Size**, as shown in the following image.
+To see the actual size of the tooltip, select the **View** tab from the ribbon. From there, select **Page View > Actual Size**, as shown in the following image.
 
 ![Screenshot of page view drop down to show actual size for easier tooltip creation.](media/desktop-tooltips/desktop-tooltips-04.png)
 
 # [Power BI service](#tab/powerbi-service)
 
-To do that, select the **View** tab from the ribbon. From there, select **Actual Size**, as shown in the following image.
+To see the actual size of the tooltip, select the **View** tab from the ribbon. From there, select **Actual Size**, as shown in the following image.
 
 ![Screenshot of page view drop down to show actual size for easier tooltip creation.](media/desktop-tooltips/service-tooltips-04.png)
 
