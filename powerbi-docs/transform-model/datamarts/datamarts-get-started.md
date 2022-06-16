@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 06/16/2022
 LocalizationGroup: Data from files
 ---
 
@@ -42,63 +42,8 @@ To create a datamart, navigate to your existing Power BI Premium Gen 2, Premium 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
 
-It usually takes approximately 20 seconds to provision a new datamart. Once initialized, you can load data into your datamart. For more information about getting data into a datamart, see the [get and transform data](#get-and-transform-data) section in this article.
+It usually takes approximately 10 seconds to provision a new datamart. Once initialized, you can load data into your datamart. For more information about getting data into a datamart, see the [get and transform data](#get-and-transform-data) section in this article.
 
-
-## Access or load an existing datamart
-
-To access an existing datamart, navigate to your Power BI Premium Gen 2 workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-02.png" alt-text="Screenshot of finding an existing datamart from all items.":::
-
-You can also select the **Datamarts (Preview)** tab in your Premium Gen 2 workspace, and see a list of available datamarts.
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
-
-Select the datamart name to load the datamart.
-
-## Manage datamart refresh
-
-You can refresh a datamart in two ways: 
-
-1.	From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
-
-    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-04.png" alt-text="Screenshot of datamart context menu for refresh.":::
-
-2.	From the datamart settings page, select **Scheduled refresh**
-
-    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
-
-To set up incremental refresh for a datamart, select the table for which you want to set up incremental refresh for in the datamart editor. In the **Table tools** ribbon, select the **Incremental refresh** icon, and a right pane appears enabling you to configure incremental refresh for the selected table.
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
-
-## Rename a datamart
-
-There are two ways to rename a datamart:
-
-First, from within the **Datamart editor**, select the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Click on the ribbon outside of the rename window to save the new name.
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07.png" alt-text="Screenshot of renaming a datamart.":::
-
-Alternatively, you can change the datamart name from the workspace list view. Select the more menu (...) next to the datamart name in the workspace view. 
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-08.png" alt-text="Screenshot of selecting the context menu from a datamart in the workspace.":::
-
-From the menu that appears, select *Rename*.
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-09.png" alt-text="Screenshot of renaming a datamart from the workspace.":::
-
-When you rename a datamart, the auto-generated dataset based on that datamart is also automatically renamed.
-
-
-## Delete a datamart
-
-To delete a datamart, navigate to the workspace and find the datamart you want to delete. Select the more menu (...) and select *Delete* from the menu that appears.
-
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-10.png" alt-text="Screenshot of deleting a datamart from the workspace.":::
-
-Datamart deletion is *not* immediate, and requires a few days to complete.
 
 ## Get and transform data
 
@@ -157,7 +102,6 @@ You can also hide the entire table and individual columns by using the **Model v
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-18.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
 
 
-
 ### Access auto-generated datasets
 
 To access auto-generated datasets, go to the Premium Gen 2 workspace and find the dataset that matches the name of the datamart. 
@@ -167,6 +111,118 @@ To access auto-generated datasets, go to the Premium Gen 2 workspace and find th
 To load the dataset, click the name of the dataset. 
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a dataset." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
+
+
+
+## Manage datamart refresh
+
+You can refresh a datamart in two ways: 
+
+1.	From the datamart context menu, select **Refresh now** or select **Scheduled refresh**.
+
+    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-04.png" alt-text="Screenshot of datamart context menu for refresh.":::
+
+2.	From the datamart settings page, select **Scheduled refresh**
+
+    :::image type="content" source="media/datamarts-get-started/datamarts-get-started-05.png" alt-text="Screenshot of scheduled refresh for a datamart in the settings page.":::
+
+To set up incremental refresh for a datamart, select the table for which you want to set up incremental refresh for in the datamart editor. In the **Table tools** ribbon, select the **Incremental refresh** icon, and a right pane appears enabling you to configure incremental refresh for the selected table.
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
+
+## Datamarts and deployment pipelines
+Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipeline](../../create-reports/deployment-pipelines-get-started.md)s.
+
+
+
+## Access or load an existing datamart
+
+To access an existing datamart, navigate to your Power BI Premium Gen 2 workspace and find your datamart from the overall list of data items in your workspace, as shown in the following image. 
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-02.png" alt-text="Screenshot of finding an existing datamart from all items.":::
+
+You can also select the **Datamarts (Preview)** tab in your Premium Gen 2 workspace, and see a list of available datamarts.
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-03.png" alt-text="Screenshot of select datamart from list of datamarts.":::
+
+Select the datamart name to load the datamart.
+
+
+## Rename a datamart
+
+There are two ways to rename a datamart:
+
+First, from within the **Datamart editor**, select the datamart name from the top of the editor and edit the datamart name in the window that appears, as shown in the following image. Click on the ribbon outside of the rename window to save the new name.
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-07.png" alt-text="Screenshot of renaming a datamart.":::
+
+Alternatively, you can change the datamart name from the workspace list view. Select the more menu (...) next to the datamart name in the workspace view. 
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-08.png" alt-text="Screenshot of selecting the context menu from a datamart in the workspace.":::
+
+From the menu that appears, select *Rename*.
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-09.png" alt-text="Screenshot of renaming a datamart from the workspace.":::
+
+When you rename a datamart, the auto-generated dataset based on that datamart is also automatically renamed.
+
+
+## Delete a datamart
+
+To delete a datamart, navigate to the workspace and find the datamart you want to delete. Select the more menu (...) and select *Delete* from the menu that appears.
+
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-10.png" alt-text="Screenshot of deleting a datamart from the workspace.":::
+
+Datamart deletion is *not* immediate, and requires a few days to complete.
+
+
+
+## Datamart context menus
+
+Datamarts offer a familiar experience to create reports and access supported actions using its context menus. 
+
+:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-02.png" alt-text="Screenshot of the datamart context menu.":::
+
+The following table describes the datamart context menu options:
+
+| Menu Option | Option Description |
+| --- | --- |
+| Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated dataset. Learn more about [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) |
+| Create report | Build a Power BI report in DirectQuery mode. Learn more about [get started creating in the Power BI service](/power-bi/fundamentals/service-get-started#step-1-get-data) |
+| Delete | Delete dataset from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items will be deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
+| Manage permissions | Enables users to add other recipients with specified permissions, similar to allowing the sharing of an underlying dataset or allowing to build content with the data associated with the underlying dataset.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-04.png" alt-text="Screenshot of the datamart grant people access menu."::: |
+| Refresh history | Provides the history of refresh activity with the duration of activity and status.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-05.png" alt-text="Screenshot of the datamart refresh history window."::: |
+| Rename | Updates the datamart and auto-generated dataset with the new name.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-06.png" alt-text="Screenshot of the datamart rename window."::: |
+| Settings | Learn more about [datamart settings](#datamart-settings) |
+| Share | Lets users share the datamart to build content based on the underlying auto-generated dataset and query the corresponding SQL endpoint. Shares the datamart access (SQL- read only, and autogenerated dataset) with other users in your organization. Users receive an email with links to access the detail page where they can find the SQL Server URL and can access the auto-generated dataset to create reports based on it.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-07.png" alt-text="Screenshot of the datamart share menu."::: |
+| View lineage | This shows the end-to-end lineage of datamarts from the data sources to the datamart, the auto-generated dataset, and other datasets (if any) that were built on top of the datamarts, all the way to deports, dashboards and apps.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-08.png" alt-text="Screenshot of the datamart view lineage window." lightbox="media/datamarts-create-reports/datamarts-create-reports-08.png"::: |
+
+
+## Datamart settings
+
+Datamart settings are accessible from the context menu for datamarts. This section describes and explains the datamart settings options and their description. The following image shows the datamart settings menu.
+
+:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-09.png" alt-text="Screenshot of the datamart context menu with settings selected.":::
+
+The following is a list of settings available for each datamart.
+
+| Setting | Detail |
+| --- | --- |
+| Datamart description | Lets users add metadata details to provide descriptive information about a datamart.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-10.png" alt-text="Screenshot of the datamart description menu."::: |
+| Server settings | The SQL endpoint connection string for a datamart. You can use the connection string to create a connection to the datamart using various tools, such as SSMS.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-11.png" alt-text="Screenshot of the datamart connection string."::: |
+| Data source credentials | Lets you get data source information and edit credentials.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-12.png" alt-text="Screenshot of the datamart source credentials menu."::: |
+| Schedule refresh | Data refresh information for the datamart, based on the schedule defined by the user.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-13.png" alt-text="Screenshot of the datamart scheduled refresh menu."::: |
+| Sensitivity label | Sensitivity label applied on datamart, which also gets propagated on the downstream auto-generated dataset, reports, and so on.<br> :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-14.png" alt-text="Screenshot of the datamart sensitivity label settings."::: <br><br>The sensitivity labels propagation to downstream dataset, reports won't happen in the following scenarios:<ul><li>Sensitivity label downgrade<li>Specific items when the sensitivity label was manually set</ul> |
+
+The following table shows settings for auto-generated datasets. When these settings are applied on an auto-generated dataset, they're also applied to datamart as well.
+
+| Setting | Details |
+| --- | --- |
+| Endorsement and discovery | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-15.png" alt-text="Screenshot of the endorsement and discovery setting."::: |
+| Request access | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-16.png" alt-text="Screenshot of the request access setting."::: |
+| Q&amp;A | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-17.png" alt-text="Screenshot of the Q and A setting."::: |
+| Query caching | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-18.png" alt-text="Screenshot of the query caching setting."::: |
+
 
 
 ## Next steps
