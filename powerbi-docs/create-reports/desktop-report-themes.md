@@ -182,17 +182,17 @@ For more information about the format of the JSON file, see [Report theme JSON f
 
 ## How report theme colors stick with your reports
 
-When you publish your report to the Power BI service, your report theme colors stay with it. The **Data colors** section of the **Format** panel reflects your report theme.
+When you publish your report to the Power BI service, your report theme colors stay with it. The **Colors** section of the **Format** pane reflects your report theme.
 
 To view the available colors in a report theme:
 
-1. Select a visual.
+1. Select the report canvas, or one of the visuals on the canvas.
 
-2. From the **Format** section of the **Visualization** pane, select **Data colors**.
+2. From the **Format** section of the **Visualization** pane, select **Color**.
 
-3. Select the drop-down of an item to view the **Theme colors** information of the report theme.
+    The **Theme colors** palette of the report theme opens.
 
-   ![Theme colors](media/desktop-report-themes/report-themes-09.png)
+   ![Theme colors](media/desktop-report-themes/report-themes-color-palette.png)
 
 In our example, after you apply the multitude of green and brown colors from the St. Patrick's Day report theme, view the theme colors. See all that green? That's because those colors were part of the report theme that we imported and applied.
 
@@ -211,9 +211,9 @@ To allow the theme to apply to those explicitly selected colors, use **Revert to
 
 Suppose you apply a custom color set (or individual color) to a particular data point in a visual by using the **Custom color** option in the color picker. When you apply a report theme, it does *not* override that customized data point color.
 
-Or, suppose you want to manually set the color of a data point color by using the **Theme colors** section. When you apply a new report theme, those colors are *not* updated. To get your default colors back, so they'll update when you apply a new report theme, select **Revert to default**, or select a color from the **Theme colors** palette in the color picker.
+Or, suppose you want to manually set the color of a data point color by using the **Theme colors** section. When you apply a new report theme, those colors are *not* updated. To get your default colors back, so they'll update when you apply a new report theme, select **Reset to default**, or select a color from the **Theme colors** palette in the color picker.
 
-![Revert to default](media/desktop-report-themes/report-themes-10.png)
+![Reset to default](media/desktop-report-themes/report-themes-reset-default.png)
 
 Many Power BI visuals won't apply to report themes.
 
