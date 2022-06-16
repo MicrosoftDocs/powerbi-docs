@@ -161,7 +161,7 @@ Keep in mind the following restrictions when using large datasets:
 
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
-- **Pro isn't supported** - Large datasets are not supported in Pro workspaces. If a workspace with the *large dataset storage format* setting is migrated from Premium to Pro, its datasets will fail to load.
+- **Pro isn't supported** - Large datasets are not supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any datasets with the *large dataset storage format* setting, will fail to load.
 
 - You cannot enable large datasets using the REST APIs.
 
