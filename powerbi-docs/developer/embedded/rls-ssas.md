@@ -8,25 +8,24 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/12/2022
+ms.date: 06/16/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 
 This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application. This article applies to **all** live connection AS models whether or not they implement RLS.
 
-In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
+In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions, if there are any, are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
 
 ## ISV setup
 
-**Any workspace in Power BI can be used as an AS server.**
-On-prem row level security is only available with a live connection, but this article describes how to create a live connection to any database whether or not it implements RLS. This includes:
+On-prem row level security is only available with a live connection, but you can create a live connection to any database whether or not it implements RLS. This includes:
 
 * Databases with no RLS roles set up
 * Database with single or multiple roles set up
 * Database with static of dynamic security roles
 
-To embed a report that uses RLS with an SSAS model, you need to do the following actions:
+To embed a report from an SSAS model, you need to do the following actions:
 
 1. [Set up the gateway](#set-up-the-gateway)
 2. [Create a live connection](#create-a-live-connection)
@@ -44,13 +43,18 @@ For more information on creating and managing a gateway see [Add or remove a gat
 
 ### Add the service principal or master user as a gateway admin
 
-or add them as a [Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright). (49 min)
+The user generating the embed token also needs one of the following permissions:
+
+* Gateway admin permissions
+* Datasource impersonate permission (ReadOverrideEffectiveIdentity)
+
+Add the service principal or master user as an admin or as a[Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright).
 
 ### User mapping
 
 Since the usernames on the on-prem directory and the Azure AD directory are different, you need to create a user mapping table that provides each user or role in the on-prem directory with an effective identity to be passed to Power BI.
 
-Create a user map of all the . If the database has RLS, map each role to a username.
+If the database has RLS, map each role to a username to be used as the effective identity.
 
 :::image type="content" source="./media/rls-ssas/gateway-map-users.png" alt-text="Screenshot showing how to map user names to effective identities.":::
 
@@ -70,14 +74,11 @@ Once the environment is set up, create a *live connection* between Power BI Desk
 
   :::image type="content" source="./media/rls-ssas/get-data-connect-live.png" alt-text="Screenshot of Analysis Services details.":::
 
-(Whenever you communicate with the AD (on prem) model, you need to pass an efID
-If you don't pass rode, it looks for user in all roles)
-
 ## Generate an embed token
 
-To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md) that passes the effective identity to Power BI.
+To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md#row-level-security) that passes the effective identity to Power BI.
 
-The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the AS engine use RLS.
+The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the AS engine uses RLS.
 
 ## [Master user](#tab/master-user)
 
