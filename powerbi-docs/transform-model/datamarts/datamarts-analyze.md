@@ -61,7 +61,7 @@ You can write your SQL query in the query editor window, which includes intellis
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
 
-The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** botton opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
+The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
@@ -174,7 +174,7 @@ Notice there are *relationships* and *relationshipColumns* named views under met
 | RelyOnReferentialIntegrity | Bit | A boolean value that indicates whether the relationship can rely on referential integrity or not.  |
 | CrossFilteringBehavior | Tinyint | Indicates how relationships influence filtering of data. The possible values are:  1 – OneDirection 2 – BothDirections 3 – Automatic
  |
-| CreatedAt | Dateyime | Date the relationship was created.  |
+| CreatedAt | Datetime | Date the relationship was created.  |
 | UpdatedAt | datetime | Date the relationship was modified.  |
 | DatamartObjectId | Navrchar(32) | Unique identifier for datamart |
 
