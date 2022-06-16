@@ -77,7 +77,7 @@ Because shared datasets are intended for reuse, it's helpful to [endorse](../col
 
 ### Dataset discovery
 
-The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../connect-data/service-datasets-hub.md#make-your-dataset-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
+The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](/power-bi/connect-data/service-data-hub#make-your-dataset-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a dataset isn't configured to be discoverable, only Power BI users with Build permission can find it.
