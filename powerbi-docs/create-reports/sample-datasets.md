@@ -40,7 +40,7 @@ The scenario for this report is a company that sells Microsoft-themed skateboard
 
 You can explore it these ways:
 
-- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
+- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. This link opens the [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Select **Download** to download the Sales & Returns sample .pbix file to your computer.
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
 
 ## Eight original samples
