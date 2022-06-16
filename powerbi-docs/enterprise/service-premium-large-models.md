@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/13/2022
+ms.date: 06/16/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -161,7 +161,9 @@ Keep in mind the following restrictions when using large datasets:
 
 - **Push datasets**: Push datasets do not support the large dataset storage format.
 
-- You cannot enable large datasets using the REST API.
+- **Pro isn't supported** - Large datasets are not supported in Pro workspaces. If a workspace with the *large dataset storage format* setting is migrated from Premium to Pro, its datasets will fail to load.
+
+- You cannot enable large datasets using the REST APIs.
 
 ## Region availability
 
