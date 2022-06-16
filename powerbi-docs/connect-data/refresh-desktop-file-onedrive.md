@@ -17,6 +17,9 @@ Importing files from OneDrive or SharePoint Online into the Power BI service is 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
 When you store a Power BI Desktop file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the dataset. Any reports you’ve created from the file are loaded into **Reports** in the Power BI service. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, Power BI service syncs with those changes too, usually within about an hour.
 
+>[!NOTE]
+> Protected PBIX files (PBIX files that have sensitivity labels with encryption settings) stored on SharePoint Online or OneDrive for Business can't be uploaded to the service. Likewise, refresh or synchronization with such files will fail. To upload a protected PBIX file, you can either upload it from a local device, or first remove the file's sensitivity label in Power BI Desktop and then upload it from the online service.
+
 You can do a one-time, manual refresh right in Power BI Desktop by selecting **Refresh** on the **Home** ribbon. When you select **Refresh**, you refresh the file’s model with updated data from the original data source. This kind of refresh happens entirely from within the Power BI Desktop application itself. It's different from a manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
 ![Screenshot of the Home ribbon in Power B I Desktop, showing the Refresh selection.](media/refresh-desktop-file-onedrive/pbix-refresh.png)
