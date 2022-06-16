@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/08/2022
+ms.date: 06/16/2022
 LocalizationGroup: Premium
 ---
 
@@ -77,6 +77,9 @@ Following the general availability of gen2, we’ll begin to notify affected cus
 ## National cloud supportability
 
 The following table describes Gen2 national cloud supportability. If a certain cloud environment has unsupported Gen2 features, they're also listed in the table.
+
+>[!IMPORTANT]
+>China north isn't supported for any Gen2 features.
 
 |Environment |Supported |Unsupported features |
 |------------|----------|---------------------|
