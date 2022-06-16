@@ -29,12 +29,12 @@ Just like in portal and SSAS
 
 * [Generate an embed token](#generate-an-embed-token)
 
-## Prerequisites
+## Setup and supported datasources
 
 Before you start, make sure that you have:
 
 * An Azure SQL DirectQuery dataset with [SSO enabled](/connect-data/service-azure-sql-database-with-direct-connect#single-sign-on).
-* A dataset [configured with RLS](/power-bi/admin/service-admin-rls).
+* A datasource [configured with RLS](/power-bi/admin/service-admin-rls).
 
 ## Generate an SQL token
 
@@ -42,13 +42,23 @@ A service principal can't pass any credentials to the data source. A master user
 
 ## Generate an embed token
 
+# [Embed token new way](#mb3d-new)
+
+To generate and embed token for gen2:
+
+* For a dataset *without* RLS
+* For a dataset *with* RLS
+
+# [Embed token old way](#embed-old)
+
 To generate an embed token:
 
-* For a dataset that doesn't have RLS, just pass the SQL token that was created for the user.
+* For a dataset *without* RLS:
+  Pass the SQL token that was created for the user.
 
   The report rendered will have the `username` as the user that the SQL token was created for and the `effective identity` as the object ID of the service principal or master user that created the SQL token.
 
-* For a dataset with RLS:
+* For a dataset *with* RLS:
   Use the following credentials to create the embed token:
 
   * SQL token that was created for the user (object ID of the service principal)
@@ -64,6 +74,8 @@ SQL token: XXXXXXXXX
 Username: France
 
 Roles: CountryDynamic
+
+---
 
 ## Considerations and limitations
 
