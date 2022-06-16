@@ -163,7 +163,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 
-- Using Power BI Embedded with datasets that include a DirectQuery connection to an Analysis Services model isn't currently supported.
+- Using Power BI Embedded with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
 
 - Publishing a report to web using the [publish to web feature](../collaborate-share/service-publish-to-web.md) isn't supported.
 
