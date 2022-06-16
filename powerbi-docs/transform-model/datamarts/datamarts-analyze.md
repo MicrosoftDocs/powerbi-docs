@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 06/16/2022
 LocalizationGroup: Data from files
 ---
 
@@ -61,6 +61,7 @@ You can write your SQL query in the query editor window, which includes intellis
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
 
+The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
@@ -70,6 +71,8 @@ There are a few things to keep in mind about the Visual Query editor:
 ## Analyze outside the editor
 
 Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign-in process for Power BI.
+
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with S Q L and Azure data studio.":::
 
 ### When to Use In-Built Querying vs External SQL Tooling
 
@@ -130,6 +133,80 @@ When you connect to datamart using SSMS or other client tools, you can see views
 
 A datamart shows two other roles as *admin* and *public* under security when connected using SSMS. Users added to a workspace in any of the *Admin* or *Member* or *Contributor* roles get added to the *admin* role on the datamart. Users added to the *Viewer* role in the workspace get added to *public* role in the datamart.
 
+
+## Relationships metadata
+
+The extended property *isSaaSMetadata* added in the datamart lets you know that this metadata is getting used for SaaS experience. You can query this extended property as below:
+
+
+```sql
+SELECT [name], [value] 
+FROM sys.extended_properties 
+WHERE [name] = N'isSaaSMetadata'
+```
+
+
+The clients (such as the SQL connector) could read the relationships by querying the table-valued function like the following: 
+
+
+```sql
+SELECT * 
+FROM [metadata].[fn_relationships]();
+```
+
+
+Notice there are *relationships* and *relationshipColumns* named views under metadata schema to maintain relationships in the datamart. The following tables provide a description of each of them, in turn: 
+
+[metadata].[relationships]
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| RelationshipId  | Bigint | Unique identifier for a relationship  |
+| Name  | Nvarchar(128) | Relationship's name  |
+| FromSchemaName  | Nvarchar(128) | Schema name of source table "From" which relationship is defined.  |
+| FromObjectName  | Nvarchar(128) | Table/View name "From" which relationship is defined  |
+| ToSchemaName  | Nvarchar(128) | Schema name of sink table "To"which relationship is defined  |
+| ToObjectName  | Nvarchar(128) | Table/View name "To"which relationship is defined  |
+| TypeOfRelationship  | Tinyint | Relationship cardinality, the possible values are:   0 – None 1 – OneToOne 2 – OneToMany 3 – ManyToOne 4 – ManyToMany  |
+| SecurityFilteringBehavior | Tinyint | Indicates how relationships influence filtering of data when evaluating row-level security expressions. The possible values are  1 – OneDirection 2 – BothDirections 3 – None
+ |
+| IsActive | Bit | A boolean value that indicates whether the relationship is marked as Active or Inactive.  |
+| RelyOnReferentialIntegrity | Bit | A boolean value that indicates whether the relationship can rely on referential integrity or not.  |
+| CrossFilteringBehavior | Tinyint | Indicates how relationships influence filtering of data. The possible values are:  1 – OneDirection 2 – BothDirections 3 – Automatic
+ |
+| CreatedAt | Datetime | Date the relationship was created.  |
+| UpdatedAt | datetime | Date the relationship was modified.  |
+| DatamartObjectId | Navrchar(32) | Unique identifier for datamart |
+
+[metadata].[relationshipColumns]
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| RelationshipColumnId | bigint | Unique identifier for a relationship's column.  |
+| RelationshipId | bigint | Foreign key, reference the RelationshipId key in the Relationships Table.  |
+| FromColumnName | Navrchar(128) | Name of the "From" column  |
+| ToColumnName | Nvarchar(128) | Name of the "To" column  |
+| CreatedAt | datetime | ate the relationship was created.  |
+| DatamartObjectId | Navrchar(32) | Unique identifier for datamart |
+
+
+You can join these two views to get relationships added in the datamart. The following query will join these views:
+
+
+```sql
+SELECT
+ R.RelationshipId
+,R.[Name]
+,R.[FromSchemaName]
+,R.[FromObjectName]
+,C.[FromColumnName]
+,R.[ToSchemaName]
+,R.[ToObjectName]
+,C.[ToColumnName]
+FROM [METADATA].[relationships] AS R
+JOIN [metadata].[relationshipColumns] AS C
+ON R.RelationshipId=C.RelationshipId
+```
 
 
 ## Next steps

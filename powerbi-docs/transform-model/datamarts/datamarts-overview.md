@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 06/16/2022
 LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
@@ -60,6 +60,19 @@ The following table describes these offerings and the best uses for each, includ
 | Datasets | Metrics and semantic layer for BI reporting | Datamarts provide an auto-generated dataset for reporting, enabling:<ul> <li>Combining data from multiple sources<li>Selective sharing of the datamart tables for fine-grained reporting<li>Composite models - a dataset with data from the datamart and other data sources outside of the datamart<li>Proxy models - a dataset that uses DirectQuery for the auto-generated model, using a single source of truth</ul> |
 
 
+## Datamarts and dataflows integration
+
+In some cases it can be useful to incorporate both dataflows and datamarts in the same solution. The following situations could find incorporating both dataflows and datamarts advantageous:
+
+* For solutions with existing dataflows:
+    * Easily consume the data with datamarts to apply any additional transformations or enable ad-hoc analysis and querying using SQL queries
+    * Easily integrate a no-code data warehousing solution with no management of datasets
+
+* For solutions with existing datamarts:
+    * Perform reusable extract, transform and load (ETL) at scale for large data volumes
+    * Bring your own data lake and use dataflows as a pipeline for datamarts
+
+:::image type="content" source="media/datamarts-overview/datamarts-overview-03.png" alt-text="Diagram that shows datamarts and dataflows and power B I relationships.":::
 
 
 ## Comparing dataflows to datamarts
@@ -80,9 +93,6 @@ Use **datamarts** when you need to:
 * Provide accessible data through a SQL endpoint
 * Enable users who don’t have access to Power BI Desktop
 
-## Datamarts and deployment pipelines
-
-Datamarts are supported in [deployment pipelines](../../create-reports/deployment-pipelines-overview.md). Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use [rules](../../create-reports/deployment-pipelines-get-started.md#step-4---create-deployment-rules) to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](../../create-reports/deployment-pipelines-get-started.md).
 
 ## Next steps
 This article provided an overview of datamarts and the many ways you can use them. 
