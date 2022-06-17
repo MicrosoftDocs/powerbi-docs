@@ -1,6 +1,6 @@
 ---
 title: Slicers in Power BI
-description: A Power BI slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report you design.
+description: A Power BI slicer is an alternate way of filtering. It narrows the portion of the dataset shown in the other visualizations in a report you design.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'mihart'
@@ -56,12 +56,6 @@ This slicer filters data by district manager. If you want to follow along with t
 
 4. On the **Overview** page, with nothing selected on the report canvas, select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: in the **Visualizations** pane to create a new slicer.
 
-5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
-
-   The new slicer is now populated with a list of district manager names and their selection boxes.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names in the desktop version.":::
-
 # [Power BI service](#tab/powerbi-service)
 
 This slicer filters data by district manager. If you want to follow along with this procedure, use the built-in Retail Analysis Sample.
@@ -76,13 +70,12 @@ This slicer filters data by district manager. If you want to follow along with t
 
 4. Click **Edit** on the menu bar to display the **Visualizations** pane, then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
 
-5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **District Manager** to populate the slicer.
+---
+5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
 
    The new slicer is now populated with a list of district manager names and their selection boxes.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-service.png" alt-text="Screenshot of Slicer populated with district manager names in the service version.":::
-
----
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names in the desktop version.":::
 
 6. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
 
@@ -111,10 +104,6 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit Interactions button on desktop version.":::
 
-   Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
-
-3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
-
 # [Power BI service](#tab/powerbi-service)
 
 1. Go to the **Overview** page of the report, and then select the **District Manager** slicer you previously created.
@@ -123,11 +112,11 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
 
-   Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear next to the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
-
-3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **District Manager** slicer from filtering it. 
-
 ---
+
+Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+
+3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
 
 For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
@@ -181,7 +170,7 @@ In the current report, the **District Monthly Sales** page has a **District Mana
 
 ### Sync separate slicers
 
-You can also sync two or more separate slicers. This is particularly useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you mark them as being part of a group.
+You can also sync two or more separate slicers. Syncing slicers is useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you mark them as being part of a group.
 
 1. Make sure the **Sync slicers** pane is visible by selecting it from the **View** menu.
 
@@ -202,7 +191,7 @@ You can also sync two or more separate slicers. This is particularly useful when
 
 ## Filtering slicers
 
-You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer, you'll see the other visuals update. Clearing the slicer would show all the dates again.
+You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you filter the slicer, it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer, you'll see the other visuals update. Clearing the slicer would show all the dates again.
 
 For more information on visual-level filters, see [Filter types](../create-reports/power-bi-report-filter-types.md).
 
