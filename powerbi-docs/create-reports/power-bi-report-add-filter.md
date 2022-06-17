@@ -25,14 +25,6 @@ This article explains how to add a visualization filter, page filter, or report 
 - After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to look and act the way you want.
 - You interact with reports in two different views: Reading view and Editing view. This article describes how to create filters in report **Editing view**. Read about [interacting with filters in report Reading view](../consumer/end-user-report-filter.md).
 
-## Reset to default
-
-Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menu bar.
-
-:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
-
-Keep in mind that as the report creator, whatever filters you save with the report become the *default filter state* for all your report readers. When they select **Reset to default**, that's what they return to.
-
 ## Levels of filters in the Filters pane
 
 Whether you're using Power BI Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
@@ -139,6 +131,14 @@ You can also add a page-level filter to filter an entire page.
     The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading view, selecting or clearing values.
 
 1. Select the back arrow to return to the previous report page.
+
+## Reset to default
+
+Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menu bar.
+
+:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
+
+Keep in mind that as the report creator, whatever filters you save with the report become the *default filter state* for all your report readers. When they select **Reset to default**, that's what they return to.
 
 ## Considerations and troubleshooting
 
