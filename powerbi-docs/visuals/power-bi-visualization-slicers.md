@@ -104,6 +104,8 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit Interactions button on desktop version.":::
 
+    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+
 # [Power BI service](#tab/powerbi-service)
 
 1. Go to the **Overview** page of the report, and then select the **District Manager** slicer you previously created.
@@ -112,10 +114,9 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
 
----
-
     Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
+---
 3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
 
 For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
