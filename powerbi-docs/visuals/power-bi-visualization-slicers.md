@@ -131,7 +131,11 @@ In the current report, the **District Monthly Sales** page has a **District Mana
 
 1. In Power BI Desktop on the **View** ribbon, select **Sync slicers**.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in Power BI Desktop.":::
+    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in Power BI Desktop.":::
+
+    The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
+
+    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png" alt-text="Screenshot of Sync slicers pane.":::
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -139,11 +143,11 @@ In the current report, the **District Monthly Sales** page has a **District Mana
 
    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-slicer-view-sync.png" alt-text="Screenshot of Sync slicers selection in the Power BI service.":::
 
+    The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
+
+    :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png" alt-text="Screenshot of Sync slicers pane.":::
+
 ---
-
-   The **Sync slicers** pane appears between the **Filters** and **Visualizations** panes.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png" alt-text="Screenshot of Sync slicers pane.":::
 
 2. On the **District Monthly Sales** page of the report, select the **District Manager** slicer. 
 
