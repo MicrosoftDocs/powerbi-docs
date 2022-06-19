@@ -19,7 +19,7 @@ Read more about the Power BI drill-down feature [here](./../../consumer/end-user
 
 ## Enable drill-down support in the visual
 
-To support drill-down actions in your visual, add a new field to `capabilities.json` named "drill-down", which has as its one property the name of the dataRole you want to enable drill-down actions on.
+To support drill-down actions in your visual, add a new field to `capabilities.json` named `drill-down`. This field has one  property called `roles` which contains the name of the dataRole you want to enable drill-down actions on.
 
 ```json
     "drilldown": {
@@ -35,7 +35,7 @@ To support drill-down actions in your visual, add a new field to `capabilities.j
 
 Once you add the role to the drill-down field, users can drag multiple fields into the data role.
 
-example:
+For example:
 
 ```json
 {
