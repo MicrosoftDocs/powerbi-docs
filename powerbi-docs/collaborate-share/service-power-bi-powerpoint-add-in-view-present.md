@@ -34,10 +34,6 @@ You interact with the report just as you would in the Power BI service. You can 
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
 
-To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
-* To exit a layer or visual: use **Ctrl + [** instead of **Esc**
-* To move focus between sections: use **Ctrl + ]** instead of **Ctrl + F6** 
-
 The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode aren't saved. When you exit the show, the report goes back to the state it was in when you left edit mode.
 
 As you work with the report in edit mode, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
@@ -108,6 +104,12 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
     If all you want to do is refresh the data, use the **Refresh** option in the [Report options](#report-options) menu instead.
 
 * **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
+
+## Keyboard Shortcuts
+
+To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
+* To exit a layer or visual: use **Ctrl + [** instead of **Esc**
+* To move focus between sections: use **Ctrl + ]** instead of **Ctrl + F6** 
 
 ## Next steps
 
