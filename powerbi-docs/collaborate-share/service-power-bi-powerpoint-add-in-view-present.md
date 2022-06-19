@@ -34,15 +34,11 @@ You interact with the report just as you would in the Power BI service. You can 
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
 
-To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts), with the following exceptions:
+To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 * To exit a layer or visual: use **Ctrl + [** instead of **Esc**
 * To move focus between sections: use **Ctrl + ]** instead of **Ctrl  +F6** 
 
 The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode aren't saved. When you exit the show, the report goes back to the state it was in when you left edit mode.
-
-When you're viewing the report in PowerPoint, you can use the usual [Power BI keyboard shortcuts](../collaborate-share/desktop-accessibility-keyboard-shortcuts.md), with the following two exceptions:
-* To exit a layer or visual: use **Ctrl + [** instead of **Esc**
-* To move focus between sections: use **Ctrl + ]** instead of **Ctrl  +F6** 
 
 As you work with the report in edit mode, you can always restore the initial view if you want to go back to it. Use the **Reset** option in the [Report options](#report-options) menu.
 
