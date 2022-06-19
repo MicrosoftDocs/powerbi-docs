@@ -20,11 +20,10 @@ Large datasets can be enabled for all Premium P SKUs, Embedded A SKUs, and with 
 
 While required for datasets to grow beyond 10 GB, enabling the Large dataset storage format setting has other benefits. If you're planning to use XMLA endpoint-based tools for dataset write operations, be sure to enable the  setting, even for datasets that you wouldn't necessarily characterize as a *large* dataset. When enabled, the large dataset storage format can improve XMLA write operations performance.
 
-Large datasets in the service do not affect the Power BI Desktop model upload size, which is still limited to 10 GB. Instead, datasets can grow beyond that limit in the service on refresh.
+Large datasets in the service don't affect the Power BI Desktop model upload size, which is still limited to 10 GB. Instead, datasets can grow beyond that limit in the service on refresh.
 
 > [!IMPORTANT]
-> Power BI Premium does support large datasets. Enable the **Large dataset storage format** option to use datasets in Power BI Premium that are larger than the default limit. 
-
+> Power BI Premium does support large datasets. Enable the **Large dataset storage format** option to use datasets in Power BI Premium that are larger than the default limit.
 
 ## Enable large datasets
 
@@ -32,21 +31,21 @@ Steps here describe enabling large datasets for a new model published to the ser
 
 1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 
-1. Publish the model as a dataset to the service.
+2. Publish the model as a dataset to the service.
 
-1. In the service > dataset > **Settings**, expand **Large dataset storage format**, click the slider to **On**, and then click **Apply**.
+3. In the service > dataset > **Settings**, expand **Large dataset storage format**, set the slider to **On**, and then select **Apply**.
 
     :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="Enable large dataset slider":::
 
-1. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster, depending on your incremental refresh policy.
+4. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster, depending on your incremental refresh policy.
 
 ## Set default storage format
 
 All new datasets created in a workspace assigned to Premium capacity can have the large dataset storage format enabled by default.
 
-1. In the workspace, click **Settings** > **Premium**.
+1. In the workspace, select **Settings** > **Premium**.
 
-1. In **Default storage format**, select **Large dataset storage format**, and then click **Save**.
+2. In **Default storage format**, select **Large dataset storage format**, and then select **Save**.
 
     :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Enable default storage format":::
 
@@ -58,13 +57,13 @@ You can also enable large dataset storage format by using PowerShell. You must h
 
     ![Dataset GUID](media/service-premium-large-models/dataset-guid.png)
 
-1. From a PowerShell admin prompt, install the [MicrosoftPowerBIMgmt](/powershell/module/microsoftpowerbimgmt.data/) module.
+2. From a PowerShell admin prompt, install the [MicrosoftPowerBIMgmt](/powershell/module/microsoftpowerbimgmt.data/) module.
 
     ```powershell
     Install-Module -Name MicrosoftPowerBIMgmt
     ```
 
-1. Run the following cmdlets to sign in and check the dataset storage mode.
+3. Run the following cmdlets to sign in and check the dataset storage mode.
 
     ```powershell
     Login-PowerBIServiceAccount
@@ -82,7 +81,7 @@ You can also enable large dataset storage format by using PowerShell. You must h
     <Dataset ID>         Abf
     ```
 
-1. Run the following cmdlets to set the storage mode. It can take a few seconds to convert to Premium Files.
+4. Run the following cmdlets to set the storage mode. It can take a few seconds to convert to Premium Files.
 
     ```powershell
     Set-PowerBIDataset -Id <Dataset ID> -TargetStorageMode PremiumFiles
@@ -149,27 +148,27 @@ For datasets using the large dataset storage format, Power BI automatically sets
 
 Keep in mind the following restrictions when using large datasets:
 
-- **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
+* **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
-- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
+* **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
-- **Supported regions**: Large datasets are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
+* **Supported regions**: Large datasets are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
 
-- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. For more information see *Max Memory* in [Datasets](service-admin-premium-workloads.md#datasets).
+* **Setting maximum dataset size**: Maximum dataset size can be set by administrators. For more information, see *Max Memory* in [Datasets](service-admin-premium-workloads.md#datasets).
 
-- **Refreshing large datasets**: Datasets that are close to half the size of the capacity size (for example, a 12 GB dataset on a 25 GB capacity size) may exceed the available memory during refreshes. Using an [XMLA endpoint](service-premium-connect-tools.md) you can configure fine grained data refreshes, so that the memory needed by the refresh can be minimized to fit within your capacity's size.
+* **Refreshing large datasets**: Datasets that are close to half the size of the capacity size (for example, a 12-GB dataset on a 25-GB capacity size) may exceed the available memory during refreshes. Using the [enhanced refresh REST API](../connect-data/asynchronous-refresh.md) or the [XMLA endpoint](service-premium-connect-tools.md), you can perform fine grained data refreshes, so that the memory needed by the refresh can be minimized to fit within your capacity's size.
 
-- **Push datasets**: Push datasets do not support the large dataset storage format.
+* **Push datasets**: Push datasets don't support the large dataset storage format.
 
-- **Pro isn't supported** - Large datasets are not supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any datasets with the *large dataset storage format* setting, will fail to load.
+* **Pro isn't supported** - Large datasets aren't supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any datasets with the *large dataset storage format* setting, will fail to load.
 
-- You cannot enable large datasets using the REST APIs.
+* You can't use REST APIs to change the settings of a workspace, to allow new datasets to use the large dataset storage format by default.
 
 ## Region availability
 
 Large datasets in Power BI are only available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
-The following list provides regions where large datasets in Power BI are available. Regions not in the following list are not supported for large models.
+The following list provides regions where large datasets in Power BI are available. Regions not in the following list aren't supported for large models.
 
 >[!NOTE]
 >Once a large dataset is created in a workspace, it must stay in that region. You cannot reassign a workspace with a large dataset to a Premium capacity in another region.
