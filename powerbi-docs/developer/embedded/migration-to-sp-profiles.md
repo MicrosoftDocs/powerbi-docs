@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 06/19/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -40,9 +40,9 @@ Migrating to service principal profiles involves the following steps:
 
 1. [Create profiles](#create-profiles-required), one profile per customer.
 2. [Organize your workspaces](#organize-your-workspaces).
-3. [Change the application code to use the profiles](#change-the-application-codes-to-use-profiles).
+3. [Change the application code to use profiles](#change-the-application-codes-to-use-profiles).
 4. [Test your application with the profiles model](#validate).
-5. [Clean up the redundant permissions](#clean-up-after-migration).
+5. [Clean up redundant permissions](#clean-up-after-migration).
 
 ### Create Profiles (Required)
 
