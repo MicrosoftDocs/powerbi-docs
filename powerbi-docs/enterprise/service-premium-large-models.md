@@ -162,7 +162,7 @@ Keep in mind the following restrictions when using large datasets:
 
 * **Pro isn't supported** - Large datasets aren't supported in Pro workspaces. If a workspace is migrated from Premium to Pro, any datasets with the *large dataset storage format* setting, will fail to load.
 
-* You can't use REST APIs to change the settings of a workspace, to allow new datasets to use the large dataset storage format by default.
+* You can't use REST APIs to change the settings of a workspace to allow new datasets to use the large dataset storage format by default.
 
 ## Region availability
 
