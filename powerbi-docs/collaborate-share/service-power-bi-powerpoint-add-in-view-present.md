@@ -36,7 +36,7 @@ You interact with the report just as you would in the Power BI service. You can 
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 * To exit a layer or visual: use **Ctrl + [** instead of **Esc**
-* To move focus between sections: use **Ctrl + ]** instead of **Ctrl  +F6** 
+* To move focus between sections: use **Ctrl + ]** instead of **Ctrl + F6** 
 
 The live report page is interactive in both edit and slide-show modes. Changes you make to the report state (via filtering, selection, slicing, etc.) in edit mode while setting up your slides are saved. By contrast, changes you make to the report state in slide show mode aren't saved. When you exit the show, the report goes back to the state it was in when you left edit mode.
 
