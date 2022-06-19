@@ -8,21 +8,25 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 06/19/2022
 ---
 
 # Add drill-down support
 
-Power BI visuals can use the Power BI drill-down feature.
+Power BI custom visuals can use the drill-down feature for a more detailed look at the data.
 
 Read more about the Power BI drill-down feature [here](./../../consumer/end-user-drill.md)
 
 ## Enable drill-down support in the visual
 
-To support drill-down actions in your visual, add a new field to `capabilities.json` named "drill-down", which has one property:
+To support drill-down actions in your visual, add a new field to `capabilities.json` named "drill-down", which has as its one property the name of the dataRole you want to enable drill-down actions on.
 
 ```json
-*roles - the name of the dataRole you want to enable drill-down actions on.
+    "drilldown": {
+        "roles": [
+            "category"
+        ]
+    }
 ```
 
 > [!NOTE]
