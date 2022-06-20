@@ -1,6 +1,6 @@
 ---
 title: Set up row-level security in Power BI paginated reports
-description: Learn about the steps needed to embed Power BI paginated reports with RLS within your Power BI embedded analytics application.
+description: Learn how to set up row-level security (RLS) for paginated reports in Power BI.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cookiemccray
@@ -13,23 +13,19 @@ ms.date: 06/20/2022
 
 # Set up row-level security in Power BI paginated reports
 
-This article explains how to set up row-level security (RLS) for paginated reports in Power BI.
+This article explains how to set up row-level security (RLS) for paginated reports in Power BI. To use RLS for your paginated reports, you first [create parameters](#create-a-parameter-using-userid). Then you take advantage of the built-in field **UserID**:
 
-To use RLS for your paginated reports, you take advantage of the built-in field **UserID**:
-
-1. First [set up the environment](#set-up-the-environment) to filter the report.
-2. Use UserID in a filter or in a query.
+- Use [UserID in a filter](#use-userid-in-a-filter).
+- Use [UserID in a query](#use-userid-in-a-query).
 
 ## Prerequisites
 
 - For [row-level security (RLS)](../enterprise/service-admin-rls.md) to work in Power BI Report Builder, You need at least a Viewer role in the dataset workspace, and Build permission for the dataset. Read about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - You create paginated reports using the SQL Server Reporting Services engine, and not the Power BI (Analysis Services) engine, so you set up RLS filtering in [Power BI Report Builder](report-builder-power-bi.md).
 
-## Set up the environment
+## Create a parameter using UserID
 
-To apply row-level security to a Power BI paginated report, use the built-in field **UserID** to assign a [parameter](report-builder-parameters.md). You use this parameter to [filter or query your data](#use-userid-as-a-filter-at-report-or-query-level).
-
-Now you can use **UserId** as a *filter* or in a *query* to the data source.
+To apply row-level security to a Power BI paginated report, the first step is to create a [parameter](report-builder-parameters.md) and assign the built-in field **UserID**. You use this parameter with **UserId** in a [*filter*](#use-userid-in-a-filter) or in a [*query*](#use-userid-in-a-query) to the data source.
 
 ## Use UserID in a filter
 
@@ -37,29 +33,31 @@ Now you can use **UserId** as a *filter* or in a *query* to the data source.
 
     ![Screenshot of the Power BI Report Builder filter.](media/paginated-rls/filter.png)
 
-2. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
+1. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
 
      ![Screenshot shows the value Color selected from the Expression menu.](media/paginated-rls/expression.png)
 
-3. Select the **Value** function button.
+1. Select the **Value** function button.
 
     ![Screenshot shows Power BI Report Builder value.](media/paginated-rls/function.png)
 
-4. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
+1. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
 
     ![Screenshot shows the Expression window with Built-in Fields selected as Category and ExecutionTime selected as Item.](media/paginated-rls/built-in-fields.png)
 
-5. From the **Item** list, select **UserID** > **OK**.
+1. From the **Item** list, select **UserID** > **OK**.
 
     ![Screenshot shows Power BI Report Builder UserID.](media/paginated-rls/userid.png)
 
-6. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID* > **OK**.
+1. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID*.
 
     ![Screenshot shows Power BI Report Builder dataset properties.](media/paginated-rls/verify.png)
 
+1. Select **OK**.
+
 ## Use UserID in a query
 
-1. In the **Dataset Properties** window, from the left navigation pane, select **Parameters** > **Add**.
+1. In the **Dataset Properties** window, from the left navigation pane, select **Parameters**, then select **Add**.
 
     ![Screenshot shows Power BI Report Builder parameters.](media/paginated-rls/parameters.png)
 
@@ -67,9 +65,9 @@ Now you can use **UserId** as a *filter* or in a *query* to the data source.
 
     ![Screenshot shows Power BI Report Builder parameter name.](media/paginated-rls/parameter-name.png)
 
-1. From the left pane, select  **Query**, in the Query add the **UserID** parameter as part of your query.
+1. From the left pane, select  **Query**. In **Query**, add the **UserID** parameter as part of your query.
 
-    In this screenshot, the color parameter is used as an example (WHERE FinalTable.Color = @UserID). If needed, you can create a more complex query.
+    This screenshot uses the color parameter as an example (WHERE FinalTable.Color = @UserID). If needed, you can create a more complex query.
 
     ![Screenshot shows Power BI Report Builder queries edit.](media/paginated-rls/query-edit.png)
 
@@ -77,3 +75,4 @@ Now you can use **UserId** as a *filter* or in a *query* to the data source.
 
 ## Next steps
 
+[Power BI Report Builder](report-builder-power-bi.md)

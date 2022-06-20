@@ -538,6 +538,8 @@
         href: ../paginated-reports/paginated-reports-download-rdl.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Set up row-level security
+        href: ../paginated-reports/paginated-reports-rls.md
       - name: Set report views
         href: ../paginated-reports/page-view.md
       - name: Subreports
