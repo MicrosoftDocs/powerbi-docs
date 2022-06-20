@@ -30,8 +30,8 @@ Because of its ease of configuration, rapid deployment, and widespread adoption,
 There are three primary methods to create a Power BI model that connects to Dataverse:
 
 - **Import Dataverse data:** This method caches (stores) Dataverse data in the Power BI model. This method delivers extremely fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, it's the default mode when creating a new Power BI Desktop solution.
-- **Import Dataverse data by using Azure Synapse Link:** This method also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage Gen2 (ADLS Gen2).
 - **Create a DirectQuery connection:** This method is an alternative to importing data. A Power BI DirectQuery model consists only of metadata defining the model structure. When reports query the model, native queries are sent to Dataverse to retrieve data. Consider creating a DirectQuery model when data volumes are too large to cache (or refresh durations take too long), when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
+- **Import Dataverse data by using Azure Synapse Link:** This method is a variation on the import method, because it also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage Gen2 (ADLS Gen2).
 
 To determine the right method for your Power BI model, consider:
 
@@ -40,7 +40,7 @@ To determine the right method for your Power BI model, consider:
 - Query performance.
 - The need to enforce Dataverse role-based security.
 
-#### Performance tolerance
+### Performance tolerance
 
 Users will have different experiences interacting with a report based on imported data versus one built on DirectQuery. – The Imported data approach will result in a report that is dramatically faster to load and begin interacting with since the data is pre-cached and calculated. In contrast, the DirectQuery report is re-querying the data each time the report is opened, or new filters are applied.
 
