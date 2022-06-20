@@ -1,12 +1,12 @@
 ---
-title: Migrate multi-tenancy applications to the service principal profiles model
+title: Migrate multi-customer apps to the service principal profiles model
 description: Get better scalability by migrating Power BI embedded analytics multi-tenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 06/19/2022
+ms.date: 06/20/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
