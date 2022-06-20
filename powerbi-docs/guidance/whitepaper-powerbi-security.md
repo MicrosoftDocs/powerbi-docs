@@ -1,4 +1,4 @@
----
+﻿---
 title: Power BI security white paper
 description: A white paper that discusses and describes security architecture and implementation for Power BI
 author: paulinbar
@@ -359,13 +359,13 @@ See [Automate Premium workspace and dataset tasks with service principals](../en
 
 ## Data loss prevention (DLP)
 
-### Microsoft 365 sensitivity labels
+### Sensitivity labels from Microsoft Purview Information Protection
 
-Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
+Power BI has a deep integration with sensitivity labels from Purview Information Protection, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
 When sensitivity labels are enabled in Power BI:
 
-* Sensitive data, both in the Power BI service and in Power BI Desktop, can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview.
+* Sensitive data, both in the Power BI service and in Power BI Desktop, can be classified and labeled using the same familiar sensitivity labels from Purview Information Protection that are used in Office and in Azure Purview.
 * Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or *.pbix* files, to help ensure data is protected even when it leaves Power BI.
 * *.pbix* files can be encrypted according to MIP label policies when a MIP label is applied on the *.pbix* file in Desktop, ensuring that only authorized users can edit this file.
 * It's easy to classify and protect *.pbix* files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
@@ -380,7 +380,7 @@ When sensitivity labels are enabled in Power BI:
   * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (preview).
   * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
 
-See the [Microsoft Information Protection sensitivity label documentation in Power BI](../enterprise/service-security-sensitivity-label-overview.md) for additional details.
+See the [sensitivity label documentation in Power BI](../enterprise/service-security-sensitivity-label-overview.md) for additional details.
 
 ### Microsoft Defender for Cloud Apps for Power BI
 

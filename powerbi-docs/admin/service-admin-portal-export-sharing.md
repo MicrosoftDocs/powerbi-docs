@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 06/01/2022
 LocalizationGroup: Administration
 ---
 
@@ -205,6 +205,17 @@ When auto-install occurs, users see the following notification in the Power BI s
 
 Read more about the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
+## Enable Power BI add-in for PowerPoint
+
+The Power BI add-in for PowerPoint makes it possible for users to add live, interactive data from Power BI to a PowerPoint presentation. See [About the Power BI add-in for PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md) for more detail.
+
+When this setting is enabled (default), entry points for opening a new PowerPoint presentation with the add-in already loaded are available in Power BI. When this setting is disabled, the entry points in Power BI are unavailable.
+
+>[!NOTE]
+> Disabling this setting does not prevent people from using the add-in starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the add-in must be disabled in both Power BI and PowerPoint.
+
+![Screenshot Power BI add-in for PowerPoint tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-enable-powerpoint-add-in-setting.png)
+
 ## Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
@@ -218,6 +229,23 @@ As with other tenant settings, you can enable sharing links to **People in your 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
 ![Screenshot showing share option disabled.](media/service-admin-portal-export-sharing/admin-share-option-disabled.png)
+
+## Allow DirectQuery connections to Power BI datasets
+
+When this setting is enabled (default), users can use DirectQuery to connect to Azure Analysis Services or Power BI datasets. See [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) for more detail.
+
+![Screenshot of the allow DirectQuery connections to Power BI datasets tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-allow-directquery-connections.png)
+
+Disabling this switch effectively stops users from publishing new composite models on Power BI datasets to the service. Existing reports that leverage a composite model on a Power BI dataset will continue to work, and users will still be able to create composite models using Desktop, but they will not be able to publish to the service.
+
+>[!NOTE]
+> Live connections to Power BI datasets are not affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of whether the setting is enabled or disabled. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been disabled after they were published.
+
+## External sharing
+
+This setting is no longer operative. It has no effect, either enabled or disabled, and can be disregarded completely.
+
+![Screenshot of the no-longer-functional external sharing tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
 
 ## Next steps
 

@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 06/03/2022
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
@@ -56,7 +56,7 @@ Alternatively, you can download the Human Resources sample as a [.pbix file](htt
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an Excel workbook. The workbook contains Power View sheets that become Power BI report pages when you upload the file to the Power BI service. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the zip file with the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
 ## New hires
 Let's explore new hires first.

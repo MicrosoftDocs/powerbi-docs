@@ -22,7 +22,7 @@ The Azure connections admin settings has the following options:
 
 * [Workspace-level storage permissions](#workspace-level-storage-permissions) - Use to store dataflows in specific ADLS Gen 2 accounts, organized per workspace.
 
-[!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
+[!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## Tenant-level storage
 

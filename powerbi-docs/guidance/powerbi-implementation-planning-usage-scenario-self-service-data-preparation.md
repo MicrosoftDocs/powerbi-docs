@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 05/12/2022
 ---
 
 # Power BI usage scenarios: Self-service data preparation
@@ -16,7 +16,7 @@ ms.date: 04/20/2022
 
 Data preparation (sometimes referred to as ETL, which is an acronym for *Extract, Transform, and Load*) often involves a significant amount of work depending on the quality and structure of source data. The *self-service data preparation* usage scenario focuses on the reusability of data preparation activities by business analysts. It achieves this goal of reusability by relocating the data preparation work from Power Query (within individual Power BI Desktop files) to Power Query Online (using a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md)). The centralization of the logic helps achieve a *single source of the truth* and reduces the level of effort required by other content creators.
 
-Dataflows are created by using [Power Query Online](https://powerquery.microsoft.com/) in one of several tools: the Power BI service, Power Apps, or Dynamics 365 Customer Insights. A dataflow created in Power BI is referred to as an *analytical* dataflow. Dataflows created in Power Apps can either be one of [two types](/power-query/dataflows/understanding-differences-between-analytical-standard-dataflows): *standard* or *analytical*. This scenario only covers using a Power BI dataflow that's created and managed within the Power BI service. Streaming dataflows, which enable near real-time reporting, aren't covered in this scenario.
+Dataflows are created by using [Power Query Online](https://powerquery.microsoft.com/) in one of several tools: the Power BI service, Power Apps, or Dynamics 365 Customer Insights. A dataflow created in Power BI is referred to as an *analytical* dataflow. Dataflows created in Power Apps can either be one of [two types](/power-query/dataflows/understanding-differences-between-analytical-standard-dataflows): *standard* or *analytical*. This scenario only covers using a Power BI dataflow that's created and managed within the Power BI service.
 
 > [!NOTE]
 > The self-service data preparation scenario is one of the self-service BI scenarios. For a complete list of the self-service scenarios, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
@@ -103,9 +103,6 @@ There are many design techniques, patterns, and best practices for dataflows tha
 ### Dataflow and dataset refresh
 
 As previously mentioned, a dataflow is a source of data for datasets. In most cases, multiple data refresh schedules are involved: one for the dataflow and one for each dataset. Alternatively, it's possible to use [DirectQuery from the dataset to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which is a Premium feature (not depicted in the scenario diagram).
-
-> [!NOTE]
-> There's another type of dataflow called a [streaming dataflow](../transform-model/dataflows/dataflows-streaming.md) (not depicted in the scenario diagram). A streaming dataflow is a Power BI artifact to achieve real-time analytics. Streaming dataflows aren't included in the self-service data preparation scenario because they're not relevant.
 
 ### Azure Data Lake Storage Gen2
 

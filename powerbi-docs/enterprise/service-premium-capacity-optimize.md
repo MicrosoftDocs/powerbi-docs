@@ -31,8 +31,7 @@ Finally, testing approaches and Premium capacity sizing conclude this article.
 > [!NOTE]
 > You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
-
-The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
+The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI items, are optimized.
 
 ## Best practices
 
