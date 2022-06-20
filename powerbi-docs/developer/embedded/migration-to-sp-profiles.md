@@ -34,7 +34,7 @@ You also need to do the following steps:
 
  :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
-## Migration to service principal profiles
+## Migrate to service principal profiles
 
 Migrating to service principal profiles involves the following steps:
 
