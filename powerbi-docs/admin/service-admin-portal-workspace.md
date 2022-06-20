@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 05/13/2022
 LocalizationGroup: Administration
 ---
 
@@ -20,7 +20,7 @@ In **Tenant settings**, the admin portal has three sections for controlling work
 
 - [Create the new workspace experiences](service-admin-portal-workspace.md#create-the-new-workspaces).
 - [Use datasets across workspaces](service-admin-portal-workspace.md#use-datasets-across-workspaces).
-- [Block classic workspace creation](service-admin-portal-workspace.md#block-classic-workspace-creation).
+- [Block upgrading empty classic workspaces](service-admin-portal-workspace.md#empty-classic-workspaces).
 
 ## Create the new workspaces
 
@@ -49,13 +49,16 @@ Admins can control which users in the organization can use datasets across works
 
 For more information, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 
-## Block classic workspace creation
+## Empty classic workspaces
 
-Admins can control whether the organization can create classic workspaces. When this setting is enabled, users who create a workspace can only create new workspace experience workspaces. 
+To reduce the impact of maintaining empty classic workspaces that were automatically created, empty classic workspaces are deleted by default as part of the upgrade process. However, admins can prevent deleting empty workspaces by disabling the following setting in the Admin portal.
 
-![Block classic workspace creation](media/service-admin-portal-workspace/power-bi-admin-block-classic-workspaces.png)
+:::image type="content" source="../collaborate-share/media/service-upgrade-workspaces/block-upgrade-empty-workspaces.png" alt-text="Screenshot of using admin portal to allow or prevent upgrade of empty workspaces.":::
 
-When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspaces continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list. Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
+Additional notes on deletion of empty workspaces:
+
+- Only empty v1 workspaces will be deleted during upgrade. Empty v2 workspaces will not be deleted. Deletion of empty workspaces can be prevented by using the tenant setting described previously in this article.
+- Office 365 groups associated with empty v1 workspaces will not be deleted.Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
 
 ## Next steps
 

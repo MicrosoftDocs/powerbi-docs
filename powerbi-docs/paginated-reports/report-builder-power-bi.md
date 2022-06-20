@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 09/23/2021
+ms.date: 06/17/2022
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -67,6 +67,10 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Production
 
 Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+## Considerations and limitations
+
+You might not be able to configure Parameters as both "Multi-value" and "Allow null". "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
 
 ## Next steps
 

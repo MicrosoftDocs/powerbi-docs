@@ -16,7 +16,7 @@ As a Power BI admin for your organization, you can control the type of Power BI 
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
-[!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
+[!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## Power BI visuals tenant settings
 

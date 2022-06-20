@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/27/2022
+ms.date: 05/29/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,16 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## May 2022
+
+### Goals has become Metrics
+Goals has a new name: Metrics. Use metrics to track and achieve your key business targets.
+
+### \@mention someone in metric notes (Android and iOS)
+Want to get someone's attention regarding a metric's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
+
+![Screenshot of at-mention in a metric note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
 
 ## April 2022
 
@@ -708,7 +718,7 @@ You can already make a dashboard a favorite. Recently, [Power BI added apps](../
 Go to Shared with me in the mobile app menu to see all the content that's been shared with you.
 
 **New menu: Apps**
-An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
+An app is a collection of dashboards and reports built by your organization to deliver key goals for faster and easier data-driven decisions.
 
 Read more about [how your Power BI content is organized](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -1031,7 +1041,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
-**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) as live tiles, so you can see all of your critical metrics at a glance.
+**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) as live tiles, so you can see all of your critical goals at a glance.
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
