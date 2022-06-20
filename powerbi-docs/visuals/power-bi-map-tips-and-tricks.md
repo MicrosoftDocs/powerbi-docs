@@ -76,14 +76,14 @@ While we encourage you to use geo-hierarchies in your maps, if you must use a si
 
 In Power BI, if the dataset you are using has fields for longitude and latitude--use them!  Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
-![Screenshot of latitude and longitude](./media/power-bi-map-tips-and-tricks/power-bi-latitude.png) 
+![Screenshot of latitude and longitude.](./media/power-bi-map-tips-and-tricks/power-bi-latitude.png) 
 
 ## Use geo-hierarchies so you can drill down to different "levels" of location
 When your dataset already has different levels of location data, you and your colleagues can use Power BI to create *geo-hierarchies*. To do this, drag more than one field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy.
 
   :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png" alt-text="Screenshot of location field.":::
 
-  ![Screenshot of create geo-hierarchy for maps](./media/power-bi-map-tips-and-tricks/power-bi-geo.gif)
+  ![Screenshot of create geo-hierarchy for maps.](./media/power-bi-map-tips-and-tricks/power-bi-geo.gif)
 
 When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
 
