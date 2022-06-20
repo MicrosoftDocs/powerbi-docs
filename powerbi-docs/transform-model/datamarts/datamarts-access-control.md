@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 06/16/2022
 LocalizationGroup: Data from files
 ---
 

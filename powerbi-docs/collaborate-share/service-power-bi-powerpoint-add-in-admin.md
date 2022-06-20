@@ -53,4 +53,5 @@ The button is a shortcut to the add-in offering in the Office add-in store. The 
 * [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 * [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
+* [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

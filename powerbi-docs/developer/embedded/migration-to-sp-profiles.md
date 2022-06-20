@@ -1,24 +1,24 @@
 ---
-title: Migrate multi-tenancy applications to the service principal profiles model
+title: Migrate multi-customer apps to the service principal profiles model
 description: Get better scalability by migrating Power BI embedded analytics multi-tenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 06/12/2022
+ms.date: 06/20/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
 
-This article describes how to get better scalability by migrating your Power BI embedded analytics multi-customer applications to the service principal profiles model.
+This article describes how you can get better scalability by migrating your Power BI embedded analytics multi-customer applications to the service principal profiles model.
 
-[Service principal profiles](embed-multi-tenancy.md) can make it easier to manage organizational content in Power BI and use your capacities more efficiently.
+[Service principal profiles](embed-multi-tenancy.md) make it easier to manage organizational content in Power BI and use your capacities more efficiently.
 
 > [!NOTE]
 > This article is aimed at organizations that already have an app that supports multiple customers from a single Power BI tenant.
 >
-> Not all applications benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps don't need to migrate:
+> Not all apps benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps shouldn't migrate:
 >
 > * Small apps that maintain one service principal with a small number of objects.
 > * Apps that use one multiple service principal per customer
@@ -27,7 +27,7 @@ This article describes how to get better scalability by migrating your Power BI 
 
 It's important to read about [service principal profiles](embed-multi-tenancy.md) before you start the migration.
 
-You'll also need to do the following steps:
+You also need to do the following steps:
 
 * Set up the service principal by following **the first three steps** of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
 * From a Power BI tenant admin account, [enable creating profiles in the tenant](embed-multi-tenancy.md#prerequisites).
@@ -40,9 +40,9 @@ Migrating to service principal profiles involves the following steps:
 
 1. [Create profiles](#create-profiles-required), one profile per customer.
 2. [Organize your workspaces](#organize-your-workspaces).
-3. [Change the application code to use the profiles](#change-the-application-codes-to-use-profiles).
+3. [Change the application code to use profiles](#change-the-application-codes-to-use-profiles).
 4. [Test your application with the profiles model](#validate).
-5. [Clean up the redundant permissions](#clean-up-after-migration).
+5. [Clean up redundant permissions](#clean-up-after-migration).
 
 ### Create Profiles (Required)
 
@@ -58,16 +58,16 @@ If you don't have one workspace per customer, use the corresponding profile to c
 
 ### Organize items in workspaces
 
-You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import objects (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
+You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
 
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
 * If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by migrating it to [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 * After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
-  * If you rely on Dynamic RLS, the name of profile will be returned in the DAX function `UserName()`.
+  * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
 
-Once the objects are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
+Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
 
 ## Change the application codes to use profiles
 
@@ -98,7 +98,7 @@ Reports may load even if there are bugs in the SaaS application code because you
 
 ## Clean up after migration
 
-Now that you finished the migration and validated the results, you can remove what you don't need anymore.
+Now that you finished the migration and validated the results, remove what you don't need anymore.
 
 * Clean up code: You might want to disable old code paths to ensure that you're only running new code that relies on profiles.
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.

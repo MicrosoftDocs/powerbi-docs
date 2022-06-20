@@ -89,6 +89,6 @@ When you view the details for a specific team, you can get more detailed usage d
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
-- [Use Power BI goals to improve results in Microsoft Teams](business-user-teams-goals.md)
+- [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
 - [Create reports from data in Microsoft Teams](business-user-teams-create-reports.md)

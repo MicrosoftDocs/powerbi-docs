@@ -299,7 +299,7 @@ As you explore your goals and objectives and pursue more tactical data governanc
 
 The following list includes items that you may choose to prioritize when introducing governance for Power BI:
 
-- Recommendations and requirements for [content ownership and ownership](powerbi-adoption-roadmap-content-ownership-and-management.md).
+- Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md).
 - Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
 - Allowed activities with regulated data and highly sensitive data.
