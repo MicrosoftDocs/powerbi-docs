@@ -44,7 +44,7 @@ To manage security on your data model, open the workspace where you saved your r
 
    ![Select security from more options menu](media/service-admin-rls/dataset-more-options-menu.png)
 
-Security will take you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Only the owners of the dataset will see **Security**. If the dataset is in a Group, only administrators of the group will see the security option.
+Security will take you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
 
 You can only create or modify roles within Power BI Desktop.
 
