@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 06/21/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
@@ -22,8 +22,8 @@ In this scenario, the database is on the SSAS (on-prem) model, and the Power BI 
 On-prem row level security is only available with a live connection, but you can create a live connection to any database whether or not it implements RLS. This includes:
 
 * Databases with no RLS roles set up
-* Database with single or multiple roles set up
-* Database with static of dynamic security roles
+* Databases with single or multiple roles set up
+* Databases with static or dynamic security roles
 
 To embed a report from an SSAS model, you need to do the following actions:
 
@@ -76,7 +76,7 @@ Once the environment is set up, create a *live connection* between Power BI Desk
 
 ## Generate an embed token
 
-To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md#row-level-security) that passes the effective identity to Power BI.
+To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md#row-level-security) that passes the effective identity to Power BI. All live connections to AS engines need an effective identity even if there's no RLS implemented.
 
 The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the AS engine uses RLS.
 
@@ -118,11 +118,8 @@ Now you can embed your report in your app, and your report will filter data acco
 
 ## Considerations and limitations
 
-* On-premises row-level security with Power BI is only available with live connection.
-* All live connections to AS engines need an effective identity even if there is no RLS implemented.
-* CustomData isn't supported.
+CustomData isn't supported.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Generate an embed token](generate-embed-token.md#row-level-security)
+[Generate an embed token](generate-embed-token.md#row-level-security)
