@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 06/15/2022
+ms.date: 06/21/2022
 ---
 
 # Generate an embed token
@@ -112,7 +112,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 
 To embed Power BI report that has a dataset with a Direct Query connection to another Power BI dataset, do the following:
 
-* In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](../../enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
+* In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](../../enterprise/service-premium-connect-tools.md#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
 * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token)
   * Specify all dataset IDs in the request.
   * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each dataset in the request.
