@@ -118,7 +118,7 @@ Deleting a workspace is different from leaving a workspace. You have to be a wor
 
 This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete.  
 
-- [Remove your Featured dashboard](../consumer/end-user-featured.md)
+- [Remove your Featured dashboard](/power-bi/consumer/end-user-dashboards)
 - [Remove (unfavorite) a dashboard](../consumer/end-user-favorite.md)
 - [Delete a dashboard tile](service-dashboard-edit-tile.md)
 
