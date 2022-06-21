@@ -12,4 +12,34 @@ ms.date: 06/19/2022
 
 # Drilldown API
 
-The new API is available with 4.7 API release.  The new API will enable the visual to show next level, expand to next or drill up based on the parameters passed to the API. For more details and examples see the article [Drill down support](drill-down-support.md)
+The **Drilldown API** allows you to create a visual that can trigger a drill operation on its own, without user interaction.  
+
+The API enables the visual to show next level, expand to next level, or drill up based on the parameters passed to the API. For more details and examples see the article [Drill down support](drill-down-support.md)
+
+> [!NOTE]
+> The **drilldown API** is available from API version 4.7
+
+## How to use the drilldown API
+
+Add the following to the *capabilities.json* file:
+
+```json
+    "drilldown": {
+        "roles": ["Rows", "Columns"]
+    }
+```
+
+## Example: Drilldown API
+
+The following example shows how the visual call a drilldown operation.
+
+```typescript
+public update(options: VisualUpdateOptions) {
+        if ((options.dataViews[0].metadata.dataRoles.drillableRoles['Columns']).indexOf(powerbi.DrillType.Down) >= 0) {
+            let args: powerbi.DrillDownArgs = {
+                roleName: "Columns",
+                drillType: powerbi.DrillType.Down
+            };
+            this.host.drill(args);
+        }
+```
