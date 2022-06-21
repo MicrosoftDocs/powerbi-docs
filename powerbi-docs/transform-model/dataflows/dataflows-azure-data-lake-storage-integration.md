@@ -28,7 +28,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The storage account must be created in the same Azure Active Directory tenant as the Power BI tenant.
 
-- The user must have Azure Blob Data Contributor role, and a Owner role at the storage account level.
+- The user must have Storage Blob Data Contributor role, and a Owner role at the storage account level.
 
 - The Power BI workspace tenant region should be the same as the storage account region.
 

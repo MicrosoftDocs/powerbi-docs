@@ -272,6 +272,8 @@ Aggregations that combine DirectQuery, Import, and/or Dual storage modes may ret
 
 ## Considerations and limitations
 
+Aggregations do not support [Dynamic M Query Parameters](../connect-data/desktop-dynamic-m-query-parameters.md).
+
 Beginning July 2022, due to changes in functionality, Power BI can no longer calculate aggregations for tables with an SSO-enabled data source because security controls cannot be enforced. To ensure optimal query performance with aggregations, it’s recommended you deactivate SSO for these data sources.  
 
 ## Community

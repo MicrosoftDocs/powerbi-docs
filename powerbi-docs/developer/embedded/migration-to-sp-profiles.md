@@ -11,7 +11,7 @@ ms.date: 06/20/2022
 
 # Migrate multi-customer applications to the service principal profiles model
 
-This article describes how you can get better scalability by migrating your Power BI embedded analytics multi-customer applications to the service principal profiles model.
+This article describes how you can get better scalability by migrating your Power BI embedded analytics multi-customer apps to the service principal profiles model.
 
 [Service principal profiles](embed-multi-tenancy.md) make it easier to manage organizational content in Power BI and use your capacities more efficiently.
 
@@ -34,7 +34,7 @@ You also need to do the following steps:
 
  :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
-## Migration to service principal profiles
+## Migrate to service principal profiles
 
 Migrating to service principal profiles involves the following steps:
 
@@ -62,7 +62,7 @@ You should now have a profile and a workspace for each customer. If you created 
 
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
-* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by migrating it to [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
+* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 * After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
   * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
