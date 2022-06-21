@@ -85,7 +85,7 @@ Use **dataflows** when you need to:
 * Build reusable and shareable data prep for items in Power BI.
 
 
-**Datamarts** are a fully managed database that enables you to store and explore your data in a relational and fully managed Azure SQL DB. Datamarts provide SQL support, a no-code visual query designer, Role Level Security (RLS), and auto-generation of a dataset for each datamart. You can perform ad-hoc analysis and create reports, all on the web.
+**Datamarts** are a fully managed database that enables you to store and explore your data in a relational and fully managed Azure SQL DB. Datamarts provide SQL support, a no-code visual query designer, Row Level Security (RLS), and auto-generation of a dataset for each datamart. You can perform ad-hoc analysis and create reports, all on the web.
 
 Use **datamarts** when you need to:
 * Sort, filter, do simple aggregation visually or through expressions defined in SQL
