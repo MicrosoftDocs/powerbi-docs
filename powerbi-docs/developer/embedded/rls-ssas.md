@@ -17,7 +17,7 @@ This article explains how to embed Power BI content with an [on-premises](pbi-gl
 
 In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions, if there are any, are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
 
-## When to embed an SSAS report
+## Who this article is for
 
 This article is mostly relevant for ISVs who already have an on-prem database setup (with or without RLS) and want to embed content directly from there.
 
