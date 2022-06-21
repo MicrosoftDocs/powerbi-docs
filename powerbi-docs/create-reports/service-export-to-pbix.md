@@ -98,6 +98,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Datasets modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * You can't download datasets based on data imported from Onedrive for Business.
 * Downloading a .pbix file that is larger than 1 GB isn't supported.
+* Datasets with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the dataset settings and delete the aggregations tables by selecting the checkbox Delete automatic aggregations tables.
 
 ## Parity between Power BI Desktop and the service
 
