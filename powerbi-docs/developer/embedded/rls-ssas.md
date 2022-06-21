@@ -17,12 +17,16 @@ This article explains how to embed Power BI content with an [on-premises](pbi-gl
 
 In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions, if there are any, are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
 
+## When to embed an SSAS report
+
+This article is mostly relevant for ISVs who already have an on-prem database setup (with or without RLS) and want to embed content directly from there.
+
 ## ISV setup
 
 On-prem row level security is only available with a live connection, but you can create a live connection to any database whether or not it implements RLS. This includes:
 
 * Databases with no RLS roles set up
-* Databases with single or multiple roles set up
+* Databases with members who belong to one or more roles
 * Databases with static or dynamic security roles
 
 To embed a report from an SSAS model, you need to do the following actions:
@@ -50,11 +54,11 @@ The user generating the embed token also needs one of the following permissions:
 
 Add the service principal or master user as an admin or as a[Datasource User](/rest/api/power-bi/gateways/add-datasource-user) with a [DatasourceAccessRight](/rest/api/power-bi/gateways/add-datasource-user#request-body) of [`ReadOverrideEffectiveIdentity`](/rest/api/power-bi/gateways/add-datasource-user#datasourceuseraccessright).
 
-### User mapping
+### Map User names
 
-Since the usernames on the on-prem directory and the Azure AD directory are different, you need to create a user mapping table that provides each user or role in the on-prem directory with an effective identity to be passed to Power BI.
+If the usernames on the on-prem directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that provides each user or role in the on-prem directory with an effective identity to be passed to Power BI.
 
-If the database has RLS, map each role to a username to be used as the effective identity.
+If the database has RLS, map each role to a Microsoft username to be used as the effective identity.
 
 :::image type="content" source="./media/rls-ssas/gateway-map-users.png" alt-text="Screenshot showing how to map user names to effective identities.":::
 
@@ -66,17 +70,19 @@ Once the environment is set up, create a *live connection* between Power BI Desk
 
 1. Start Power BI Desktop and select **Get data** > **Database**.
 
-1. From the data sources list, select the **SQL Server Analysis Services Database** and select **Connect**.
+2. From the data sources list, select the **SQL Server Analysis Services Database** and select **Connect**.
 
    ![Connect to SQL Server Analysis Services Database](media/rls-ssas/get-data.png)
 
-1. Fill in your Analysis Services tabular instance details and select **Connect live**. Then select **OK**.
+3. Fill in your Analysis Services tabular instance details and select **Connect live**. Then select **OK**.
 
   :::image type="content" source="./media/rls-ssas/get-data-connect-live.png" alt-text="Screenshot of Analysis Services details.":::
 
 ## Generate an embed token
 
 To embed your report in the *embed for your customers* scenario, [generate an embed token](./generate-embed-token.md#row-level-security) that passes the effective identity to Power BI. All live connections to AS engines need an effective identity even if there's no RLS implemented.
+
+If there's no RLS set up, the only the Admin has access to the database so you want to use the Admin as the effective identity.
 
 The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the AS engine uses RLS.
 
