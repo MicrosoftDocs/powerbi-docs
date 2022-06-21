@@ -32,5 +32,5 @@ To avoid this issue, remove the double quote (") mark from the string filter.
 
 ## Next steps
 
-- [Control access to datamarts](power-bi/transform-model/datamarts/datamarts-access-control)
+- [Control access to datamarts](/power-bi/transform-model/datamarts/datamarts-access-control)
 - [About known issues](power-bi-known-issues.md)
