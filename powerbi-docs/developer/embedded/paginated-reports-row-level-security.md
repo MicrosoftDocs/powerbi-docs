@@ -28,7 +28,7 @@ To use RLS for your paginated reports:
 
 * This article assumes that you know how to [embed a Power BI paginated report](embed-paginated-reports.md). It explains how to generate the embed token so that the report only shows what the user has permission to access.
 
-* Paginated reports are created using the reporting service engine, and not the Power BI (AS) engine, so the RLS filtering is set up in [Power BI Report Builder](../../paginated-reports/report-builder-power-bi.md).
+* Paginated reports are created using the SQL Server Reporting Services engine, and not the Power BI (Analysis Services) engine, so the RLS filtering is set up in [Power BI Report Builder](../../paginated-reports/report-builder-power-bi.md).
 
 ## Set up the environment
 
