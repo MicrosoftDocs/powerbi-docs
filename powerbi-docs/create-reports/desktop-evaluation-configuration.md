@@ -26,11 +26,10 @@ Consider the following examples:
 |-|-|
 |Data import is taking too long.|Increase maximum number of simultaneous evaluations and/or available memory per evaluation.
 |DirectQuery queries are slow to execute, not caused by limitations on the source system.|Increase maximum number of simultaneous evaluations and/or available memory per evaluation.|
-|Power BI Desktop is taking too much of the machine's resources when importing data or executing DirectQuery queries.|Decrease maximum number of simultaneous and/or available memory per evaluation.|
+|Power BI is taking too much of the machine's resources when importing data or executing DirectQuery queries.|Decrease maximum number of simultaneous and/or available memory per evaluation.|
 |DirectQuery queries are slow to execute, caused by limitations on the source system.|Decrease the maximum number of simultaneous evaluations and / or decrease the maximum number of active connections per source.|
-|Power BI Desktop is responding to slowly when interaction with visuals|Increase the maximum number of concurrent jobs.|
-|Power BI Desktop is taking too much of the machine's resources after data import or refresh has finished|Decrease the maximum number of concurrent jobs.|
-
+|Power BI is responding to slowly when interaction with visuals|Increase the maximum number of concurrent jobs.|
+|Power BI is taking too much of the machine's resources after data import or refresh has finished|Decrease the maximum number of concurrent jobs.|
 
 ## Optimizing PowerQuery query execution
 This group of settings allow you to optimize the PowerQuery query execution performance. Power BI offers the following settings in this group:
@@ -38,13 +37,16 @@ This group of settings allow you to optimize the PowerQuery query execution perf
 - Maximum number of simultaneous evaluations. This configures the level of parallelization for query execution in PowerQuery.
 - Maximum memory used per simultaneous evaluation. This configures the available memory per evaluation.
 
+> [!NOTE]
+> These settings only influence the PowerQuery query execution on your machine, not in the Power BI service.
+
 ### Maximum number of simultaneous evaluations
 
 You can control the number of simultaneous evaluations and thereby influence the level of parallelization for query execution in PowerQuery. By default, the maximum number of simultaneous evaluations is equal to the number of logical CPU cores on the machine.
 The minimum value is 1 and the maximum value is equivalent to the number of logical CPU cores on the machine.
 
 > [!NOTE]
-> this setting also impacts the [maximum number of concurrent jobs](#maximum-number-of-concurrent-jobs) executed by the Power BI engine. [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
+> This setting also impacts the [maximum number of concurrent jobs](#maximum-number-of-concurrent-jobs) executed by the Power BI engine. [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
 
 ### Maximum memory used per simultaneous evaluation
 
@@ -91,7 +93,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
 This group of settings allow you to optimize the Power BI engine responsible for handling queries after the Data Transformation step has finished. Power BI offers the following settings in this group:
 
 - Maximum number of active connections per source. This configures the number of parallel queries going to a DirectQuery source.
-- Maximum number of concurrent jobs. This configures the level of parallelization when handling visual interactions.
+- Maximum number of concurrent jobs. This configures the level of parallelization when handling visual interactions and other evaluations after the Data Transformation step is completed.
+
+> [!NOTE]
+> These settings influence the Power BI engine performance on your machine as well as in the Power BI service after the report has been published.
 
 ### Maximum number of active connections per source
 
@@ -105,7 +110,7 @@ You can control the maximum number of concurrent jobs executed by the Power BI e
 The minimum value for this setting is 1, which would effectively disable parallel loading of tables. The default value for this setting is 6.
 
 > [!NOTE]
-> this setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
+> This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
 
 ### Changing maximum number of concurrent jobs settings in Power BI Desktop
 
