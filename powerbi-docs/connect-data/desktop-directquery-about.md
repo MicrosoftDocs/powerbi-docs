@@ -322,7 +322,7 @@ In addition to the previous suggestions, each of the following reporting capabil
 
 You can set the maximum number of connections DirectQuery opens for each underlying data source, which controls the number of queries concurrently sent to each data source.
 
-DirectQuery opens a default maximum number of 10 concurrent connections. You can change the maximum number for the current file in Power BI Desktop. Go to **File** > **Options and Settings** > **Options**. In the **Current File** section in the left pane, select **Published dataset settings**.
+DirectQuery opens a default maximum number of 10 concurrent connections. You can change the maximum number for the current file in Power BI Desktop. Go to **File** > **Options and Settings** > **Options**. In the **Current File** section in the left pane, select **DirectQuery**.
 
 ![Setting maximum DirectQuery connections](media/desktop-directquery-about/directquery-about_05b.png)
 
