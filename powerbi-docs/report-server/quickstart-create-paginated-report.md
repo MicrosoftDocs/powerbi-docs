@@ -99,7 +99,7 @@ However, you can't start in Power BI Report Builder and save it. Use the [upload
 1. On the **File** menu in Microsoft Report Builder, select **Save As**.
 1. Select **Recent Sites and Servers**, select the server, and select **Save**.
 
-    :::image type="content" source="media/quickstart-create-paginated-report/microsoft-report-builder-recent-sites-servers.png" alt-text="Save as to Recent Sites and Servers.":::
+    :::image type="content" source="media/quickstart-create-paginated-report/microsoft-report-builder-recent-sites-servers.png" alt-text="Screenshot of Save as to Recent Sites and Servers.":::
 
     Whether you upload it or save it, now you can view it in the browser.
    
