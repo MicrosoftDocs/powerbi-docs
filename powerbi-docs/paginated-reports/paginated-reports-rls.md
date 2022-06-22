@@ -7,13 +7,15 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/20/2022
+ms.date: 06/21/2022
 #Customer intent: As a paginated report creator, I want to set up row-level security to maintain privacy and security.
 ---
 
 # Set up row-level security in Power BI paginated reports
 
-This article explains how to set up row-level security (RLS) for paginated reports in Power BI. To use RLS for your paginated reports, you first [create parameters](#create-a-parameter-using-userid). Then you take advantage of the built-in field **UserID**:
+This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI dataset, the article [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) provides a solid background.
+
+To use RLS in a paginated report, you first [create parameters](#create-a-parameter-using-userid) in that report. Then you take advantage of the built-in field **UserID**:
 
 - Use [UserID in a filter](#use-userid-in-a-filter).
 - Use [UserID in a query](#use-userid-in-a-query).
