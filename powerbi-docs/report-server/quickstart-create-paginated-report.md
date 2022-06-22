@@ -81,9 +81,12 @@ And you can add all sorts of other visualizations: gauges, tables, matrixes, tab
 ![Report Builder Design view](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
 ## Step 4: Save your report to the report server
-When your report is ready, save it to Power BI Report Server.
 
-### Upload from the report server
+When your report is ready, save it to Power BI Report Server. You can [start in the report server](#upload-to-the-report-server) and upload it, or you can [start in Microsoft Report Builder](#save-as-from-microsoft-report-builder), and save it.
+
+However, you can't start in Power BI Report Builder and save it. Use the [upload to the report server](#upload-to-the-report-server) option instead.
+
+### Upload to the report server
 
 1. In the report server, select **Upload**.
 
