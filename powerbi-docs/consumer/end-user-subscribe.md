@@ -84,7 +84,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
 ## Subscribe others 
 
-To create a subscription for yourself, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
+To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 

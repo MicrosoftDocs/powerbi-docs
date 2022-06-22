@@ -246,8 +246,6 @@
         href: power-bi-report-settings.md
       - name: "Feature reports on others' Home pages"
         href: ../collaborate-share/service-featured-content.md
-      - name: "Let consumers customize visuals"
-        href: power-bi-personalize-visuals.md
       - name: "Interact with a report in Editing view"
         href: service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
@@ -466,23 +464,23 @@
         href: service-q-and-a-create-featured-questions.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
-    - name: Goals
+    - name: Metrics
       items: 
-      - name: "Get started with goals"
+      - name: "Get started with metrics"
         href: service-goals-introduction.md
-      - name: "Create scorecards and manual goals"
+      - name: "Create scorecards and manual metrics"
         href: service-goals-create.md
-      - name: "Create connected goals"
+      - name: "Create connected metrics"
         href: service-goals-create-connected.md
-      - name: "Stay on top of your goals"
+      - name: "Stay on top of your metrics"
         href: service-goals-check-in.md        
-      - name: "Set goal-level permissions"
+      - name: "Set metric-level permissions"
         href: service-goals-set-permissions.md
-      - name: "Arrange goals and columns in scorecards"
+      - name: "Arrange metrics and columns in scorecards"
         href: service-goals-move.md
       - name: "Create custom statuses"
         href: service-goals-custom-status.md
-      - name: "Goals and Power Automate"
+      - name: "Metrics and Power Automate"
         href: service-goals-power-automate.md
       - name: "Create and add Scorecards in reports"
         href: ../visuals/power-bi-visualization-scorecard-visual.md   
