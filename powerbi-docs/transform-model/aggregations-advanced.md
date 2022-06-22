@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/20/2022
+ms.date: 06/22/2022
 LocalizationGroup: Transform and shape data
 ---
 # User-defined aggregations
@@ -272,9 +272,9 @@ Aggregations that combine DirectQuery, Import, and/or Dual storage modes may ret
 
 ## Considerations and limitations
 
-Aggregations do not support [Dynamic M Query Parameters](../connect-data/desktop-dynamic-m-query-parameters.md).
+- Aggregations do not support [Dynamic M Query Parameters](../connect-data/desktop-dynamic-m-query-parameters.md).
 
-Beginning July 2022, due to changes in functionality, Power BI can no longer calculate aggregations for tables with an SSO-enabled data source because security controls cannot be enforced. To ensure optimal query performance with aggregations, it’s recommended you deactivate SSO for these data sources.  
+- Beginning August 2022, due to changes in functionality, Power BI will ignore import mode aggregation tables with SSO-enabled data sources because of potential security risks. To ensure optimal query performance with aggregations, it’s recommended you disable SSO for these data sources.
 
 ## Community
 
