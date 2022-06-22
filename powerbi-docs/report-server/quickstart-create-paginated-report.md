@@ -90,7 +90,7 @@ However, you can't start in Power BI Report Builder and save it. Use the [upload
 
 1. In the report server, select **Upload**.
 
-    :::image type="content" source="media/quickstart-create-paginated-report/report-server-upload.png" alt-text="Select Upload in Power BI Report Server.":::
+    :::image type="content" source="media/quickstart-create-paginated-report/report-server-upload.png" alt-text="Screenshot of Select Upload in Power BI Report Server.":::
 
 1. Browse to the paginated report and select **Open**.
 
