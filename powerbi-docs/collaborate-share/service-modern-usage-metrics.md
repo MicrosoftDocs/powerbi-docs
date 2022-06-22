@@ -363,12 +363,12 @@ Power Automate can perform a refresh that can force the Report Usage model to re
     
 1. Use the trigger **Scheduled Cloud flow**.
 
-    ![Screenshot showing the trigger Scheduled Cloud flow.](media/service-modern-usage-metrics/power-bi-excel-updates.png)
+    ![Screenshot showing the trigger Scheduled Cloud flow.](media/service-modern-usage-metrics/power-automate-scheduled-cloud-flow.png)
 
 1. Select a **Starting time** and **Run every hour**.
 1. Add a new step, **Refresh a dataset**.
 
-    ![Screenshot showing a new step, Refresh a dataset.](media/service-modern-usage-metrics/power-bi-excel-updates.png)
+    ![Screenshot showing a new step, Refresh a dataset.](media/service-modern-usage-metrics/power-automate-refresh-dataset.png)
 
 1. Let the the flow run once, then switch off the flow.
 
