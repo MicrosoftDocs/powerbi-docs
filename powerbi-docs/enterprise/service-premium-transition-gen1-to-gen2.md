@@ -79,7 +79,7 @@ Following the general availability of gen2, we’ll begin to notify affected cus
 The following table describes Gen2 national cloud supportability. If a certain cloud environment has unsupported Gen2 features, they're also listed in the table.
 
 >[!IMPORTANT]
->China north isn't supported for any Gen2 features.
+>China North isn't supported for any Gen2 features.
 
 |Environment |Supported |Unsupported features |
 |------------|----------|---------------------|
