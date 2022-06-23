@@ -240,8 +240,9 @@ Bi-directional relationships can introduce multiple, and therefore ambiguous, fi
 3. Any other path, including paths that contains many-to-many relationships.
 
 The following example shows three possible paths that can be taken between a filter source and target. Path 1 will be given the highest priority,  followed by Path 2 and finally Path 3. Notice that the filter flows from left to right, from source to target.
+Click on the image to enlarge it.
 
-:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A diagram showing multiple filter paths and their precedence following the rules above.":::
+[:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A diagram showing multiple filter paths and their precedence following the rules above.":::](media/desktop-relationships-understand/relationship-precedence-rules.png)
 
 ### Performance preference
 
