@@ -105,7 +105,7 @@ For more information on this setting, see [Maximum number of connections option 
 
 ### Maximum number of concurrent jobs
 
-You can control the maximum number of concurrent jobs executed by the Power BI engine. This settings allows you to optimize Power BI performance after the Data Transformation step has been completed.
+You can control the maximum number of concurrent jobs executed by the Power BI engine. This setting allows you to optimize Power BI performance after the Data Transformation step has been completed.
 
 The minimum value for this setting is 1, which would effectively disable parallel loading of tables. The default value for this setting is 6.
 
