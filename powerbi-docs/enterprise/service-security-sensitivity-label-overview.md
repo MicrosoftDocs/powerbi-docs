@@ -267,6 +267,8 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * **Get data** can upload protected files only if they’re local. Protected files from online services such as SharePoint Online or OneDrive for Business can’t be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
+    In the case of an unprotected *.pbix* file that has been uploaded successfully from SharePoint Online or OneDrive for Business, if the file subsequently becomes protected as the result of having a protected label applied, refresh will fail.
+
 * **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
