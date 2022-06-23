@@ -235,20 +235,13 @@ There are other restrictions related to limited relationships:
 ### Precedence rules
 
 Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity and choosing the filter propagation path to use, Power BI uses the following precedence rules:
-1. A path consisting of one-to-many or one-to-one relationships from filter to target. The filter must flow from the one side of a relationship to the other side for all relationships along the path.
-2. A path consisting of one-to-many relationships from filter to an intermediate table followed by many-to-one relationships from intermediate table to target. The filter must flow from the one side of a relationship to the many side for all one-to-many relationships and from the many side of a relationships to the one side of the relationship for many-to-one relationships in the path.
+1. A path consisting of one-to-many or one-to-one relationships from filter to target. The filter must flow from the "one" side of a relationship to the other side for all relationships along the path.
+2. A path consisting of one-to-many relationships from filter to an intermediate table followed by many-to-one relationships from intermediate table to target. The filter must flow from the "one" side of a relationship to the "many" side for all one-to-many relationships and from the "many" side of a relationships to the "one" side of the relationship for many-to-one relationships in the path.
 3. Any other path, including paths that contains many-to-many relationships.
 
-The following example shows what priority paths that can be taken between a filter source and target will be given following the above precedence rules:
+The following example shows three possible paths that can be taken between a filter source and target. Path 1 will be given the highest priority,  followed by Path 2 and finally Path 3. Notice that the filter flows from left to right, from source to target.
 
-:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A diagram showing multiple filter paths and show their precedence.":::
-
-PREVIOUS INFO BELOW (to be deleted):
-The following list presents precedence rules that Power BI uses for ambiguity detection and path resolution:
-
-1. Many-to-one and one-to-one relationships, including limited relationships
-2. Many-to-many relationships
-3. Bi-directional relationships, in the reverse direction (that is, from the "many" side)
+:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A diagram showing multiple filter paths and their precedence following the rules above.":::
 
 ### Performance preference
 
