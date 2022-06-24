@@ -8,14 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/29/2021
+ms.date: 06/24/2022
+ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
 
 # Create key performance indicator (KPI) visualizations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](https://support.office.com/article/Key-Performance-Indicators-KPIs-in-Power-Pivot-E653EDEF-8A21-40E4-9ECE-83A6C8C306AA).
 
@@ -57,7 +58,7 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
 1. Add **Time > FiscalMonth**.  This value will represent the trend.
 
-1. In the upper-right corner of the visual, select the ellipsis and select **Sort by > FiscalMonth**, then select the ellipsis again and choose **Sort ascending**.
+1. In the upper-right corner of the visual, select the ellipsis and select **Sort axis > FiscalMonth**, then select the ellipsis again and choose **Sort axis > Sort ascending**.
 
 1. Check that Power BI has sorted the columns in ascending order by **FiscalMonth**.
 
@@ -74,19 +75,19 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-template.png" alt-text="Screenshot of the Visualizations pane with the KPI icon called out.":::
 
-1. To add a goal, drag **Total Units Last Year** to the **Target goals** field.
+1. To add a goal, drag **Total Units Last Year** to the **Trend** field.
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-done.png" alt-text="Screenshot of the finished KPI visual and the Fields pane with the values depicted.":::
 
-1. Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
+1. Optionally, format the KPI by selecting the paint brush icon to open the **Format visual** pane.
 
-    * **Indicator** - controls the indicator’s display units and decimal places.
+    * **Callout value** - controls the indicator’s display units, decimal places, and text formatting.
 
-    * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual.  
+    * **Icons** - when set to **On**, the visual shows small icons next to the value, a green checkmark for a increasing value, and a red exclamation point for a decreasing value. The value's direction is set by **Trend axis**.
 
-    * **Metrics** - when set to **On**, the visual shows the metric and the distance from the metric as a percentage.
+    * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual. People consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. For this report, select **Direction > High is good**. Optionally, change the color settings.
 
-    * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **High is good** and, optionally, change the color settings.
+    * **Target label** - when set to **On**, the visual shows the value's label. **Distance to goal** sets the style and direction of the  distance from the goal.
 
 KPIs are also available in the Power BI service and on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 
