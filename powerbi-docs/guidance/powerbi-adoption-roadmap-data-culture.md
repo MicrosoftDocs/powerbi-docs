@@ -18,7 +18,7 @@ Building a data culture is closely related to adopting Power BI, and it's often 
 
 - By more stakeholders throughout more areas of the organization.
 - Based on analytics, not opinion.
-- In an effective, efficient way that is based on best practices endorsed by the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md).
+- In an effective, efficient way that's based on best practices endorsed by the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md).
 - Based on trusted data.
 - That reduces reliance on undocumented tribal knowledge.
 - That reduces reliance on hunches and gut decisions.
@@ -26,7 +26,7 @@ Building a data culture is closely related to adopting Power BI, and it's often 
 > [!IMPORTANT]
 > Think of data culture as what you do, not what you say. Your data culture is not a set of rules (that's governance). So, data culture is a somewhat abstract concept. It's the behaviors and norms that are allowed, rewarded, and encouraged—or those that are disallowed and discouraged. Bear in mind that a healthy data culture motivates employees at all levels of the organization to generate and distribute actionable knowledge.
 
-Within an organization, certain business units or teams are likely to have their own behaviors and norms for getting things done. The specific ways that data culture objectives are achieved can vary across organizational boundaries. What's important is that they should all align with the organizational data culture objectives. You can think of this structure as *aligned autonomy*.
+Within an organization, certain business units or teams are likely to have their own behaviors and norms for getting things done. The specific ways to achieve data culture objectives can vary across organizational boundaries. What's important is that they should all align with the organizational data culture objectives. You can think of this structure as *aligned autonomy*.
 
 The following circular diagram conveys the interrelated aspects that influence your data culture:
 
@@ -34,7 +34,7 @@ The following circular diagram conveys the interrelated aspects that influence y
 
 The diagram represents the somewhat ambiguous relationships among the following items:
 
-- Data culture is the outer circle. All topics contained within it contribute to the state of the data culture.
+- Data culture is the outer circle. All topics within it contribute to the state of the data culture.
 - Organizational adoption (including the implementation aspects of mentoring and user enablement, user support, community of practice, governance, and system oversight) is the inner circle. All topics are major contributors to the data culture.
 - Executive support and the Center of Excellence are drivers for the success of organizational adoption.
 - Data literacy, data democratization, and data discovery are data culture aspects that are heavily influenced by organizational adoption.
@@ -120,20 +120,22 @@ How you go about improving data literacy in your organization depends on many fa
 - Interpreting charts and graphs
 - Assessing the validity of data
 - Performing root cause analysis
-- Discerning correlation and causation
+- Discerning correlation from causation
 - Understanding how context and outliers affect how results are presented
 - Using storytelling to help consumers quickly understand and act
 
 > [!TIP]
-> If you're struggling to get data culture or governance efforts approved, focusing on tangible benefits that you can achieve with data discovery ("find the data"), data democratization ("use the data"), or data literacy ("understand the data") can help. It can also be helpful to focus on specific problems that you can solve or mitigate through data culture advancements. Getting the right stakeholders to agree on the problem is usually the first step. Then, it's a matter of getting the stakeholders to agree on the strategic approach to a solution, along with the solution details.
+> If you're struggling to get data culture or governance efforts approved, focusing on tangible benefits that you can achieve with data discovery ("find the data"), data democratization ("use the data"), or data literacy ("understand the data") can help. It can also be helpful to focus on specific problems that you can solve or mitigate through data culture advancements. 
+>
+> Getting the right stakeholders to agree on the problem is usually the first step. Then, it's a matter of getting the stakeholders to agree on the strategic approach to a solution, along with the solution details.
 
 ## Considerations and key actions
 
 Here are some considerations and key actions that you can take to strengthen your data culture:
 
 - Give serious consideration to the type of data culture that you want to cultivate. Ideally, it's more from a position of user empowerment than a position of command and control.
-- Talk to stakeholders in different business units to understand what analytics practices are currently working well and what practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
-- Talk to stakeholders in IT, BI, and the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand what [governance](powerbi-adoption-roadmap-governance.md) constraints need consideration. These talks can present an opportunity to educate teams on topics like security and infrastructure. Another key topic is what Power BI actually is (and how it's significantly more powerful than a query tool).
+- Talk to stakeholders in different business units to understand which analytics practices are currently working well and which practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
+- Talk to stakeholders in IT, BI, and the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand which [governance](powerbi-adoption-roadmap-governance.md) constraints need consideration. These talks can present an opportunity to educate teams on topics like security and infrastructure. Another key topic is what Power BI actually is (and how it's significantly more powerful than a query tool).
 - Verify the level of [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) and support that you have in place to advance data culture goals.
 - Make purposeful decisions about your BI strategy. Decide what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the key business units in the organization (discussed in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article). Also consider how the strategy relates to the extent of published content for personal BI, team BI, departmental BI, and enterprise BI (discussed in the [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
 - Begin creating an action plan for immediate, short-term, and long-term action items. Identify business groups and problems that represent a "quick win" and can make a visible difference.
