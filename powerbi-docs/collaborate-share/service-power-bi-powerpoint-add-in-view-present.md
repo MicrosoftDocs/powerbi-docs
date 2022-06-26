@@ -108,8 +108,14 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 ## Keyboard Shortcuts
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
-* To exit a layer or visual: use **Ctrl + [** instead of **Esc**
-* To move focus between sections: use **Ctrl + ]** instead of **Ctrl + F6** 
+
+|Keyboard shortcut   | Action                        |
+|--------------------|-------------------------------|
+|**Ctrl**            |Show or hide Power BI tooltips |
+|**Ctrl + Enter**    |Focus in                       |
+|**Ctrl + [**        |Focus out                      |
+|**Ctrl + ]**        |Move forward over open panels  |
+|**Ctrl + Shift + ]**|Move backward over open panels |
 
 ## Next steps
 
