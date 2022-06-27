@@ -25,7 +25,7 @@ For related "What's New" information, see:
 ### Manage metrics with multiple milestones and targets (Android and iOS)
 Now you can track and update metrics that feature multiple targets. Open a metric's details pane to view and track the milestones toward your metric's final target.
 
-![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metric-details-pane.png)
 
 
 ## May 2022
