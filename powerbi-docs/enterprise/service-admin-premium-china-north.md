@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/23/2022
+ms.date: 06/27/2022
 LocalizationGroup: Premium
 ---
 
@@ -26,7 +26,11 @@ This section lists the China North unsupported Gen1 features.
 
 * [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
-* Screenshot workload features 
+* Export Power BI reports to [PDF](../consumer/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
+
+* [Email subscriptions](../consumer/end-user-subscribe.md)
+
+* [Copy paste visuals](../visuals/power-bi-visualization-copy-paste.md) in Power BI reports
 
 ## Next steps
 
