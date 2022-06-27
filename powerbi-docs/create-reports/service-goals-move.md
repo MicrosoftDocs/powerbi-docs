@@ -1,5 +1,5 @@
 ---
-title: Arrange columns and metrics in Power BI scorecards (preview)
+title: Arrange columns and metrics in Power BI scorecards
 description: Learn how to customize your Power BI scorecards to meet your teams' needs.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/14/2022
 ---
-# Arrange columns and metrics in Power BI scorecards (preview)
+# Arrange columns and metrics in Power BI scorecards
 
 In some scenarios, you may want to reorder the metrics in a scorecard, or make one metric a submetric of another. You may also want to hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving metrics and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
