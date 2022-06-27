@@ -34,7 +34,7 @@
       href: power-bi-custom-visuals-organization.md
     - name: "Performance tips"
       href: performance-tips.md
-    - name: "Using capabilities"
+    - name: "Defining capabilities"
       href: capabilities.md
     - name: "Data view mappings"
       href: dataview-mappings.md
