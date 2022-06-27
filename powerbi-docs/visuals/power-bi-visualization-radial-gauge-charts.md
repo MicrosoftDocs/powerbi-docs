@@ -127,9 +127,9 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
 
-1. Select the paint roller icon to open the **Format** pane.
+1. Select the paint brush icon to open the **Format** pane.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png" alt-text="Screenshot of the gauge chart and the Format pane with the paint roller icon called out.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png" alt-text="Screenshot of the gauge chart and the Format pane with the paint brush icon called out.":::
 
 1. Expand **Gauge axis** and enter values for **Min** and **Max**.
 
