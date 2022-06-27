@@ -10,6 +10,7 @@ ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 09/22/2021
 LocalizationGroup: Visualizations
+ms.custom: sample-financialsample
 ---
 # Radial gauge charts in Power BI
 
@@ -40,19 +41,33 @@ Radial gauges are a great choice to:
 
 This tutorial uses the [Financial sample Excel file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. From the upper left section of the menubar, select **Get Data** > **Excel workbook**
+# [Power BI Desktop](#tab/powerbi-desktop)
+1. From the upper left section of the menubar, select **Get data** > **Excel workbook**.
 
-1. Find your copy of the **Financial sample Excel file**
+1. Find your copy of the **Financial sample** Excel file.
+
+1. Select **financials** and **Sheet1**, and select **Load**.
 
 1. Open the **Financial sample Excel file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
-1. Select **financials** and **Sheet1**
+1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
-1. Click **Load**
+# [Power BI service](#tab/powerbi-service)
+1. In the lower left corner, select **Get data**.
+
+1. Under **Files**, select **Get**.
+
+1. Select **Local File** or a OneDrive option.
+
+1. In the **Open** dialog, select the sample file and select **Open**.
+
+1. Select **Import**.
+
+1. Select **Go to dashboard**, then select the sample.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
-
+---
 
 ## Create a basic radial gauge
 
