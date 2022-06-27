@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 04/07/2022
+ms.date: 06/27/2022
 ---
 
 # Generate an embed token
@@ -28,7 +28,7 @@ You can use APIs to generate a token for the following items:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
+* [Generate an embed token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
@@ -114,17 +114,8 @@ For security reasons, the lifetime of the embed token is set to the remaining li
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Register an app](register-app.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-
->[!div class="nextstepaction"]
->[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
->[!div class="nextstepaction"]
->[Embed Power BI content with service principal](embed-service-principal.md)
+* [Register an app](register-app.md)
+* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+* [Embed Power BI content with service principal](embed-service-principal.md)
