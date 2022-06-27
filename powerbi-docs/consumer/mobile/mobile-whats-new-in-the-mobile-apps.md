@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/29/2022
+ms.date: 06/27/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,14 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## June 2022
+
+### Manage metrics with multiple milestones and targets (Android and iOS)
+Now you can track and update metrics that feature multiple targets. Open a metric's details pane to view and track the milestones toward your metric's final target.
+
+![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+
 
 ## May 2022
 
