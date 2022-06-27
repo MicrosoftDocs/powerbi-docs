@@ -11,6 +11,9 @@ ms.date: 09/12/2021
 LocalizationGroup: Common tasks
 ---
 # Delete almost anything in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 This article shows you how to delete a dashboard, report, workbook, dataset, app, visualization, or a workspace in the Power BI service. You can delete almost anything in the Power BI service, with some exceptions. 
 
 ## Delete a dashboard, report, dataset, or workbook
@@ -115,7 +118,7 @@ Deleting a workspace is different from leaving a workspace. You have to be a wor
 
 This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete.  
 
-- [Remove your Featured dashboard](../consumer/end-user-featured.md)
+- [Remove your Featured dashboard](/power-bi/consumer/end-user-dashboards)
 - [Remove (unfavorite) a dashboard](../consumer/end-user-favorite.md)
 - [Delete a dashboard tile](service-dashboard-edit-tile.md)
 

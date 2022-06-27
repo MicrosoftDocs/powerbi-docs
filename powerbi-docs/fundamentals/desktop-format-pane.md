@@ -1,36 +1,69 @@
 ---
-title: The new Format pane in Power BI Desktop (preview)
-description: Get to know the redesigned Format pane in Power BI Desktop.
+title: The new Format pane in Power BI
+description: Get to know the redesigned Format pane in Power BI.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: 
+ms.custom: video-RE4Yb4T
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 06/06/2022
 LocalizationGroup: Get started
 ---
-# The new Format pane in Power BI Desktop (preview)
+# The new Format pane in Power BI
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Starting with the February 2022 release of Power BI Desktop, the redesigned Format pane is on by default. This article explains the biggest changes we’ve made to improve usability and consistency across visuals and non-visual elements.
+The redesigned Format pane is now generally available and on by default in both Power BI Desktop and the Power BI service. This article explains the biggest changes we’ve made, to improve usability and consistency across visual and non-visual elements.
 
-The first time you open the February release of Power BI Desktop, you see a notification about the updated Format pane.
+Thank you for providing feedback throughout the preview. We’re still interested in your comments. Submit feedback on the [Power BI Ideas](https://ideas.powerbi.com/ideas/) site.
 
-:::image type="content" source="media/desktop-format-pane/format-pane-announcement-dialog.png" alt-text="Screenshot of the new Format pane notification.":::
+## Video
 
-We know it's a big change so we're rolling it out slowly, to get your feedback and make adjustments. It's been in preview since the Power BI Desktop November 2021 release, with improvements every month. Give it a try!
+In this video, Roseanne demonstrates the latest updates to the Format pane.
 
-## Latest updates
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
 
-Improvements added in February 2022 include:
+## Recent updates
 
-- Ability to toggle axis title independent of axis has been re-added.
-- Ability to add shade area to combo charts has been re-added.
-- Ability to customize marker shape by series for scatter charts has been re-added.
-- Outline settings for matrix and table have been re-added.
+### June 2022
+
+Improvements this month:
+
+- When you change **Canvas settings** > **Type** to **Tooltip**, we automatically set **Allow use as tooltip** to **On** to save you a step.
+- Fixed a blocking bug to ensure that the Analytics pane works for custom visuals, where applicable.
+- Fixed a bug that removed log scale applied to the horizontal axis. This affected line, area, stacked area, combo, or scatter charts set prior to April 2022 reports. The issue has now been resolved.  
+
+### May 2022
+
+Here are the improvements we added in May 2022:
+
+- We added a user preference setting to expand all subcategories when you open a category card. Go to **Options** > **Report settings**, and under **Format pane**, select **Expand all subcategories by default when you open a category**.
+- We readded Analytics pane support for custom visuals.
+- We readded **No fill** for Title background, Tooltips background, and Header icons Help tooltip background color pickers.
+- We added **color** back  to all color swatches for easier searching.
+- We readded the **Conditional formatting** card for the decomposition tree visual.
+- To help with adjusting to the new naming conventions, we added an alias for the renamed **Conditional formatting** card, which is now called **Cell elements**. When you search for “conditional formatting” for a matrix or table, we display the **Cell elements**.
+
+### April 2022
+
+Here are the improvements we added in April 2022:
+
+- Shape map custom color has been reintroduced.
+- Scatter chart *show blank values* toggle has been reintroduced.
+- Slicers with slider type (between, before, after) responsive toggle has been reintroduced.
+- Button icon size setting has been reintroduced.
+- Issue causing delay in cursor position for text input boxes is resolved.
+
+### February 2022
+
+Here are the improvements we added in February 2022:
+
+- Ability to toggle axis title independent of axis has been readded.
+- Ability to add shade area to combo charts has been readded.
+- Ability to customize marker shape by series for scatter charts has been readded.
+- Outline settings for matrix and table have been readded.
 - Minor reordering of the field wells within the Build pane to match the order of the new Format pane cards for pie chart, donut chart, and scatter chart.
 
 ## New pivot icons 
@@ -51,50 +84,36 @@ To address the limited vertical space on the Format pane, we’ve moved the Visu
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-visualizations-pane.png" alt-text="Screenshot of old Visualizations pane.":::    | :::image type="content" source="media/desktop-format-pane/new-visualizations-pane.png" alt-text="Screenshot of location of new Visualizations pane.":::        |
 
-
-## Redesigned compact toggle
-
-We condensed the toggle design to reduce truncation and improve readability of the settings.
-
-|Old Format pane  |New Format pane  |
-|---------|---------|
-|:::image type="content" source="media/desktop-format-pane/old-toggle-format.png" alt-text="Screenshot of old format for toggles.":::     | :::image type="content" source="media/desktop-format-pane/new-toggle-format.png" alt-text="Screenshot of new format for toggles.":::       |
-
-
 ## Splitting specific vs. general settings
 
-We've split the long list of formatting cards into two categories: visual specific vs. general settings. The general settings contain cards that affect the visual container and are consistent across all visual types. The visual specific settings contain cards that pertain only to the visual type you’re currently working with. This change allows for easier adjustment of general settings when clicking across visuals, better scannability and discovery of visual specific cards, and helps new users learn where to find what. 
+We've split the long list of formatting cards into two categories: visual specific vs. general settings. The general settings contain cards that affect the visual container and are consistent across all visual types. The visual specific settings contain cards that pertain only to the visual type you’re currently working with. This change allows for easier adjustment of general settings when you click across visuals, better scannability and discovery of visual specific cards, and helps new users learn where to find what. 
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
 |:::image type="content" source="media/desktop-format-pane/old-list-formatting-cards.png" alt-text="Screenshot of old list of formatting cards.":::    | :::image type="content" source="media/desktop-format-pane/new-format-visual-general.png" alt-text="Screenshot of new Visuals and General groupings of cards.":::        |
 
 
-## New global revert to default
+## New global reset to default
 
-On a new **More options (...)** menu, you can revert all settings back to default. Previously this process was painstaking, opening each card and selecting **Revert to default**. This option is especially helpful when you want your visuals to reflect your theme styling.  
+On the **More options (...)** menu, you can return all settings back to default. This option is especially helpful when you want your visuals to reflect your theme styling.  
 
-:::image type="content" source="media/desktop-format-pane/new-revert-all-default.png" alt-text="Screenshot of new Revert all settings to defaults.":::
+:::image type="content" source="media/desktop-format-pane/new-revert-all-default.png" alt-text="Screenshot of new Reset all settings to defaults.":::
 
-## Subcategories
+## Expand subcategories
 
-You’ll notice that within the cards we've broken up the settings further into subcategories. Breaking them up improves readability and allows you to focus on specific parts of a card at a time. We’ve also added a new context menu for navigating these new subcategories. Now you can right-click in a card to expand all the subcategories at once, or collapse them all for quick scanning and scrolling. 
+You’ll notice that within the cards we've broken up the settings further into subcategories. Breaking them up improves readability and allows you to focus on specific parts of a card at a time. We’ve also added a new context menu for navigating these new subcategories. You can right-click a card to expand all the subcategories at once, or collapse them all for quick scanning and scrolling.
 
-|Old Format pane  |New Format pane  |
-|---------|---------|
-|:::image type="content" source="media/desktop-format-pane/old-no-categories.png" alt-text="Screenshot of old subcategories.":::     | :::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories.":::        |
+1. In the Format pane, select **More options**.
 
-## No more double scrollbars
+    :::image type="content" source="media/desktop-format-pane/new-expand-collapse-categories.png" alt-text="Screenshot of new expand and collapse subcategories."
 
-Previously, when scrolling within a long card, the Format pane would have two scrollbars. Now when you expand cards and subcategories, you have one scrollbar that adapts to the length of the contents.
+2. Select **Expand all subcategories by default when you open a category**.
 
-|Old Format pane  |New Format pane  |
-|---------|---------|
-|:::image type="content" source="media/desktop-format-pane/old-double-scrollbars.png" alt-text="Screenshot of old double scrollbars.":::     | :::image type="content" source="media/desktop-format-pane/new-single-scrollbar.png" alt-text="Screenshot of new single scrollbar.":::        |
+    :::image type="content" source="media/desktop-format-pane/format-pane-options-expand.png" alt-text="Screenshot of Options dialog box with Format pane, Expand all subcategories.":::
 
-## Hidden dynamic cards exposed
+## All cards exposed
 
-Previously, you only saw some cards when you added certain fields in the build tab. For new users, it can be hard to understand when and why some cards are available or unavailable. With our newly added vertical space, we can expose these hidden dynamic cards with helpful tooltips on what actions to take to enable the cards.  
+We expose all cards for visuals, whether you can set them or not. They have helpful tooltips on what actions to take to enable the cards.  
 
 ## Merged font settings
 
@@ -107,7 +126,7 @@ Across the Format pane, we’ve merged font family and font size onto a single l
 
 ## Customize series mechanism
 
-Previously, the old Format pane repeated the same list of settings after toggling **Customize series** to **On**. We've consolidated this list into an **Apply settings to** dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll.
+The old Format pane repeated the same list of settings after toggling **Customize series** to **On**. We've consolidated this list into an **Apply settings to** dropdown that lets you easily switch between updating the settings for all series or a particular series without having to scroll.
 
 |Old Format pane  |New Format pane  |
 |---------|---------|
@@ -134,13 +153,32 @@ In a small but mighty change, we’ve added the same yellow highlight you see in
 
 Through the years, the Format pane has received many new additions but they haven't always been added consistently. It’s hard, especially for new users, to learn where things are when cards and settings constantly jump around. Or the name of a setting in one visual is called something entirely different in another. We’ve rearranged, renamed, added missing units, and consolidated cards/settings to behave consistently across visuals.  
 
-## Turn off the preview
 
-- If you need to turn off the preview, go to **File** > **Options and settings** > **Options** > **Preview features** > **New Format pane**.
+## Consolidated outline settings for matrix and table
 
-    We encourage you to give us feedback about why you're turning it off. Select **Share feedback** link next to the **New format pane** checkbox, and let us know.
+We consolidated the outline settings for matrix and tables, so you can set them from the **Grid** card. Previously users had to use the Grid card to set the color and width, then navigate to each section of the matrix to adjust the border location. With this update, you can adjust the borders for the whole matrix and refine each section from the same place within the **Grid** card.
 
-    :::image type="content" source="media/desktop-format-pane/format-pane-preview-switch-feedback.png" alt-text="Screenshot of switching off the New Format pane.":::
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-old.png" alt-text="Screenshot of old outline format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-matrix-border-new.png" alt-text="Screenshot of new outline format experience.":::       |
+
+
+## Split column and row grand totals
+
+In the previous Format pane settings, changing grand totals for a matrix would affect both rows and columns. In the new Format pane, you can format each separately.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-totals-old.png" alt-text="Screenshot of old totals format experience.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-totals-new.png" alt-text="Screenshot of new totals format experience.":::       |
+
+
+## Legend location options
+
+With the new Format pane, you can be more precise about legend location.
+
+|Old behavior  |New behavior  |
+|---------|---------|
+|:::image type="content" source="media/desktop-format-pane/format-pane-legend-options-old.png" alt-text="Screenshot of old legend location options.":::     | :::image type="content" source="media/desktop-format-pane/format-pane-legend-options-new.png" alt-text="Screenshot of new legend location options.":::       |
 
 
 ## Considerations and limitations

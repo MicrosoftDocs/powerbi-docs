@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 05/30/2022
 ms.custom:
 LocalizationGroup: Premium
 ---
@@ -56,7 +56,6 @@ Power BI service administrators and Global Administrators can modify Premium cap
 * Change the capacity size to scale-up or scale-down resources.
 * Add or remove Capacity Admins.
 * Add or remove users that have assignment permissions.
-* Change regions.
 
 >[!NOTE]
 >Service and global administrators do not have access to capacity metrics unless explicitly added as capacity admins.
@@ -117,10 +116,8 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 >[!div class="nextstepaction"]
 >[Using autoscale with Premium Gen2](service-premium-auto-scale.md)
 
-> [Install the Gen2 metrics app](service-premium-install-gen2-app.md)
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
+>[Install the Gen2 metrics app](service-premium-install-gen2-app.md)
 
-> [Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
-> [!div class="nextstepaction"]
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)

@@ -5,10 +5,13 @@
   - name: Enterprise
     expanded: false
     items:  
-    - name: Automatic aggregations overview
-      href: aggregations-auto.md
-    - name: Configure automatic aggregations
-      href: aggregations-auto-configure.md
+    - name: Automatic aggregations
+      expanded: false
+      items:
+      - name: Automatic aggregations overview
+        href: aggregations-auto.md
+      - name: Configure automatic aggregations
+        href: aggregations-auto-configure.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
     - name: Bring your own encryption keys
@@ -65,7 +68,9 @@
         - name: Plan your transition to Power BI Premium Gen2
           href: service-premium-transition-gen1-to-gen2.md           
         - name: Managing Premium Gen2 capacities
-          href: service-premium-capacity-manage-gen2.md                       
+          href: service-premium-capacity-manage-gen2.md
+        - name: Configure and manage capacities
+          href: service-admin-premium-manage.md                                   
         - name: Premium Gen2 capacity load evaluation
           href: service-premium-concepts.md
         - name: Install the Gen2 metrics app
@@ -86,6 +91,8 @@
           href: service-premium-service-principal.md
         - name: Dataset connectivity with the XMLA endpoint
           href: service-premium-connect-tools.md
+        - name: Interactive and background operations
+          href: service-premium-interactive-background-operations.md         
         - name: Troubleshoot XMLA endpoint connectivity
           href: troubleshoot-xmla-endpoint.md
         - name: Power BI Premium Gen2 FAQ
@@ -98,9 +105,7 @@
         - name: Optimizing Premium capacities
           href: service-premium-capacity-optimize.md
         - name: Premium capacity scenarios
-          href: service-premium-capacity-scenarios.md
-        - name: Configure and manage capacities
-          href: service-admin-premium-manage.md             
+          href: service-premium-capacity-scenarios.md           
         - name: Monitoring Power BI capacities
           href: service-premium-capacity-manage.md
         - name: Monitor capacities with the app
@@ -113,9 +118,7 @@
           href: service-premium-faq.yml
   - name: Governance and compliance
     expanded: false
-    items:
-    - name: Power BI governance and deployment approaches
-      href: service-admin-governance.md                     
+    items:                   
     - name: Metadata scanning
       href: service-admin-metadata-scanning.md
   - name: Information protection

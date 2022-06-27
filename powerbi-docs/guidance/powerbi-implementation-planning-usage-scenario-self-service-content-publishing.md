@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 04/20/2022
 ---
 
 # Power BI usage scenarios: Self-service content publishing
@@ -33,7 +33,7 @@ Using methodical and disciplined lifecycle management processes reduces errors, 
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support self-service content publishing. The focus is on use of a Power BI deployment pipeline for promoting content through development, test, and production workspaces.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Image shows a diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -46,16 +46,19 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 5.](media/common/icon-05-red-30x30.png) | The development (or test) workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Content creators and owners collaborate in the development workspace to ensure all requirements are met. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | A deployment pipeline administrator configures the Power BI [deployment pipeline](../create-reports/deployment-pipelines-overview.md) with three stages: development, test, and production. Each stage aligns to a separate workspace in the Power BI service. Deployment settings and access are configured for the deployment pipeline. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | When the development content is ready, the deployment pipeline compares the content between the development and test stages. Some, or all, artifacts are deployed to a workspace that's dedicated to **testing**. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | When the development content is ready, the deployment pipeline compares the content between the development and test stages. Some, or all, Power BI items are deployed to a workspace that's dedicated to **testing**. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | The test (or development) workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Once the deployment pipeline has completed its deployment, the content creator manually performs post-deployment activities for the test workspace. Activities can include configuring scheduled data refresh or publishing a Power BI app for the test workspace. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | Quality assurance, data validations, and user acceptance testing occur by reviewers of the test workspace. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | When the test content is fully validated, the deployment pipeline compares the content between the test and production stages. Some, or all, artifacts are deployed to a workspace that's dedicated to **production**. |
+| ![Item 12.](media/common/icon-12-red-30x30.png) | When the test content is fully validated, the deployment pipeline compares the content between the test and production stages. Some, or all, Power BI items are deployed to a workspace that's dedicated to **production**. |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | The production workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). For a production workspace, **Premium per capacity** license mode is often more appropriate when there's a large number of read-only consumers. |
 | ![Item 14.](media/common/icon-14-red-30x30.png) | Once the deployment pipeline completes deployment, content creators can manually perform post-deployment activities. Activities can include configuring scheduled data refresh or publishing a Power BI app for the production workspace. |
 | ![Item 15.](media/common/icon-15-red-30x30.png) | Content viewers access the content using the production workspace or a Power BI app. |
 | ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required. |
 | ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces may be subject to stricter governance requirements than less critical content. |
+
+> [!TIP]
+> We recommend that you reviewing the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario as too. It builds upon concepts introduced in this scenario.
 
 ## Key points
 
@@ -63,14 +66,14 @@ The following are some key points to emphasize about the self-service content pu
 
 ### Deployment pipeline
 
-A deployment pipeline consists of three stages: development, test, and production. A single workspace is assigned to each stage in the deployment pipeline. Artifacts that are [supported by deployment pipelines](../create-reports/deployment-pipelines-process.md#deployed-items) are published (or cloned) from one workspace to another when a deployment occurs. Once testing and validations are complete, the deployment pipeline can be reused many times to promote content quickly. The deployment pipeline interface is easy to implement for content creators who don't have the skills or desire to use code-based deployments (use of the Power BI REST APIs are described in the [enterprise content publishing](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios) scenario).
+A deployment pipeline consists of three stages: development, test, and production. A single workspace is assigned to each stage in the deployment pipeline. Power BI items that are [supported by deployment pipelines](../create-reports/deployment-pipelines-process.md#deployed-items) are published (or cloned) from one workspace to another when a deployment occurs. Once testing and validations are complete, the deployment pipeline can be reused many times to promote content quickly. The deployment pipeline interface is easy to implement for content creators who don't have the skills or desire to use code-based deployments (use of the Power BI REST APIs are described in the [enterprise content publishing](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios) scenario).
 
 > [!NOTE]
 > Publishing content using a deployment pipeline is known as a *metadata-only deployment*. In this case, data isn't overwritten or copied to the target workspace. A data refresh is usually required once the deployment completes—see the [post-deployment activities](#post-deployment-activities) topic below.
 
 ### Deployment process
 
-It's a best practice to consider the entire workspace content as an *analytical package* that can be deployed together as a unit. Therefore, it's important to have clarity on the purpose and expectations of each workspace. Although a selective deployment of specific artifacts is possible, it's more efficient and less risky when a deployment represents a logical unit of content.
+It's a best practice to consider the entire workspace content as an *analytical package* that can be deployed together as a unit. Therefore, it's important to have clarity on the purpose and expectations of each workspace. Although a selective deployment of specific Power BI items is possible, it's more efficient and less risky when a deployment represents a logical unit of content.
 
 > [!TIP]
 > Plan for how urgent issues will be handled, in addition to planned deployments. If an immediate fix is required, still follow the [standard practice](../create-reports/deployment-pipelines-best-practices.md#quick-fixes-to-content) of propagating all changes from development through to test and production using the deployment pipeline.
@@ -113,8 +116,8 @@ Purposefully, [certain properties aren't copied](../create-reports/deployment-pi
 - **Apps:** Power BI apps aren't published automatically by deployment pipelines.
 - **Access roles, sharing permissions, and app permissions:** Permissions aren't overwritten during a deployment.
 - **Workspace properties:** Properties, such as contacts and the workspace description, aren't overwritten during a deployment.
-- **Artifact properties:** Certain artifact properties, such as sensitivity labels, may be overwritten during a deployment in [certain circumstances](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment).
-- **Unsupported artifacts:** Additional manual steps may need to be taken for [artifacts that aren't supported](../create-reports/deployment-pipelines-process.md#deployed-items) by the deployment pipeline.
+- **Power BI item properties:** Certain Power BI item properties, such as sensitivity labels, may be overwritten during a deployment in [certain circumstances](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment).
+- **Unsupported Power BI items:** Additional manual steps may need to be taken for [Power BI items that aren't supported](../create-reports/deployment-pipelines-process.md#deployed-items) by the deployment pipeline.
 
 > [!CAUTION]
 > There isn't a rollback process once a deployment has occurred with a deployment pipeline. Consider carefully what change management processes and approvals are required in order to deploy to the production workspace.
@@ -145,4 +148,4 @@ The [activity log](../admin/service-admin-auditing.md) records user activities t
 
 ## Next steps
 
-For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
+In the next article in the series, learn about the [advanced data modeling](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.

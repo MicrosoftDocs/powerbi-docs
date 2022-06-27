@@ -1,5 +1,5 @@
 ---
-title: Dynamic M query parameters in Power BI Desktop (preview)
+title: Dynamic M query parameters in Power BI Desktop
 description: Create dynamic M query parameters in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -11,9 +11,9 @@ ms.topic: how-to
 ms.date: 03/14/2022
 LocalizationGroup: Connect to data
 ---
-# Dynamic M query parameters in Power BI Desktop (preview)
+# Dynamic M query parameters in Power BI Desktop
 
-With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
+With **Dynamic M Query Parameters**, model authors can let **report viewers** use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
 
 When model authors understand the intended semantics of their filters, they often know how to write efficient queries against their data source, and can thus ensure filter selections get incorporated into source queries at the right point to achieve their intended results with improved performance.
 
@@ -24,11 +24,7 @@ Watch Sujata explain and use Dynamic M Query Parameters, and then try it out you
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QLsb]
 
-## Enabling Dynamic M query parameters
-
-**Dynamic M Query Parameters** are currently in preview, and must be enabled to be used. On the **File** ribbon, select **Options and settings** > **Options** and then select **Preview features** from the left pane. From there, make sure the **Dynamic M Query Parameters** checkbox is selected. You may need to restart Power BI Desktop for the change to be enabled.
-
-![Enable the preview feature](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
+## Creating Dynamic M query parameters
 
 As a prerequisite for this feature, you must have a valid [M Query Parameter](/power-query/power-query-query-parameters) created and referred in one or more Direct Query tables. 
 

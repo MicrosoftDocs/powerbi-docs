@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/18/2022
+ms.date: 05/12/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -91,6 +91,25 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
 | | | | | | |
 
+Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
+
+<br> | Refresh of report visuals | Data refresh | Schema refresh
+---------|----------|---------|--------- 
+ What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables the visual will only query data already imported to the dataset on the last data refresh. | **Data is refreshed from the data source.** <br><br>Does not apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals . <br><br> For imported tables the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to both imported and DirectQuery tables.
+ 
+ In **Power BI Desktop** refresh of report visuals, data refresh, and schema refresh all happen together using
+ - **Home** ribbon > **Refresh** button
+ - **Home** ribbon > **Transform data** > **Close & Apply** button
+ - The context menu (right-click or click on ellipsis) on any table then choosing **Refresh data**
+
+ These refresh types can not always be applied independently, and where you can apply them is different in Power BI Desktop and the Power BI service. For a quick reference, refer to the following table.
+ 
+|  | Refresh of report visuals | Data refresh | Schema refresh
+|---------|----------|---------|--------- 
+ | In **Power BI Desktop**| <ul> <li>**View** ribbon > **Performance Analyzer** button > **Refresh visuals** <li> Creating and changing visuals causing a DAX query to run <li>When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) <li> Opening the PBIX file </ul> | Not available independently from other refresh types | Not available independently from other refresh types
+ | In the **Power BI service** | <ul><li>When the browser loads or reloads the report	<li> Clicking the **Refresh Visuals** top right menu bar button <li> Clicking the **Refresh** button in edit mode <li> When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) | <ul> <li> Scheduled refresh <li>	Refresh now <li> Refresh a Power BI dataset from Power Automate <li> Processing the table from SQL Server Management Studio (Premium) </ul> | Not available
+ | Keep in mind | For example, if you open a report in the browser, then the scheduled refresh performs a data refresh of the imported tables, the report visuals in the open browser will not update until a refresh of report visuals is initiated. | Data refresh on the Power BI service will fail when the source column or table is renamed or removed. It fails because the Power BI service does not also include a schema refresh. To correct this error, a schema refresh needs to happen in Power BI Desktop and the dataset republished to the service. | A renamed or removed column or table at the data source will be updated with a schema refresh in Power BI Desktop, but it can break visuals and DAX expressions (measures, calculated columns, row level security, etc.), as well as remove relationships, that are dependent on those columns or tables.
+
 #### Data refresh
 
 For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time. 
@@ -152,6 +171,8 @@ Following a data refresh, however, previously cached query results are no longer
 This refresh process is less important because it is only relevant for live connections to Analysis Services. For these connections, Power BI caches the last state of the report visuals so that when you view the report again, Power BI does not have to query the Analysis Services tabular model. When you interact with the report, such as by changing a report filter, Power BI queries the tabular model and updates the report visuals automatically. If you suspect that a report is showing stale data, you can also select the Refresh button of the report to trigger a refresh of all report visuals, as the following screenshot illustrates.
 
 ![Refresh report visuals](media/refresh-data/refresh-report-visuals.png)
+
+Only pinned visuals are refreshed, not pinned live pages. To refresh a pinned live page, you can use the browser's Refresh button.
 
 ## Review data infrastructure dependencies
 

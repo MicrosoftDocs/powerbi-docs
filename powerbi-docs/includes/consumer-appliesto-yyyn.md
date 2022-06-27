@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-<Token>**APPLIES TO:** ![Applies to.](media/yes.png)Power BI service for ***business users*** ![Applies to.](media/yes.png)Power BI service for designers & developers ![Applies to.](media/yes.png)Power BI Desktop ![Does not apply to.](media/no.png)Requires Pro or Premium license </Token>
+**APPLIES TO:** ![Applies to.](media/yes.png)Power BI service for ***business users*** ![Applies to.](media/yes.png)Power BI service for designers & developers ![Applies to.](media/yes.png)Power BI Desktop ![Does not apply to.](media/no.png)Requires Pro or Premium license

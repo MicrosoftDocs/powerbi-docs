@@ -1,13 +1,13 @@
 ---
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
-author: mihart
+author: msftrien
 ms.author: mihart
 ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/11/2022
+ms.date: 04/26/2022
 LocalizationGroup: Transform and shape data
 ---
 
@@ -71,7 +71,7 @@ Take the following steps to create a **Shape map**:
 
 You can use custom maps with **Shape map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
-To use a **TopoJSON** map file, add a Shape map visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Format** section, expand **Shape**, and select **+ Add map**.
+To use a **TopoJSON** map file, add a Shape map visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Format** section, expand **Shape**, and select **+ Add map** and then select **Custom map** from the dropdown.
 
 :::image type="content" source="media/desktop-shape-map/power-bi-add-custom.png" alt-text="Open Formatting pane and select Add Map.":::
 

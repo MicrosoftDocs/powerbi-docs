@@ -1,13 +1,13 @@
 ---
 title: Roles in the new workspaces in Power BI
-description: Learn about the different roles in the new workspaces, and what people in each role can do.
+description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 05/13/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -30,26 +30,26 @@ Everyone in a user group gets the role you've assigned. If someone is in several
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
-| Update and delete the workspace.  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   | 
-| Add/remove people, including other admins.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   |
-| Allow Contributors to update the app for the workspace  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   |
-| Add members or others with lower permissions.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Publish, unpublish, and change permissions for an app |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Update an app. |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |  If allowed <sup>1</sup>  |   |
-| Share an item or share an app.<sup>2</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Allow others to reshare items.<sup>2</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Feature apps on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Manage dataset permissions.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |  |
-| Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |
-| Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Copy a report.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Create goals based on a dataset in the workspace.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Modify gateway connection settings.<sup>4</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| View and interact with an item.<sup>5</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |
-| Read data stored in workspace dataflows | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |
+| Update and delete the workspace.  | ✔️ |   |   |   | 
+| Add/remove people, including other admins.  |  ✔️ |   |   |   |
+| Allow Contributors to update the app for the workspace  |  ✔️ |   |   |   |
+| Add members or others with lower permissions.  |  ✔️ | ✔️  |   |   |
+| Publish, unpublish, and change permissions for an app |  ✔️ | ✔️  |   |   |
+| Update an app. |  ✔️ | ✔️  |  If allowed <sup>1</sup>  |   |
+| Share an item or share an app.<sup>2</sup> |  ✔️ | ✔️  |   |   |
+| Allow others to reshare items.<sup>2</sup> |  ✔️ | ✔️  |   |   |
+| Feature apps on colleagues' Home |  ✔️ | ✔️  |   |   |
+| Manage dataset permissions.<sup>3</sup> | ✔️ | ✔️ |  |  |
+| Feature dashboards and reports on colleagues' Home |  ✔️ | ✔️  | ✔️ |   |
+| Create, edit, and delete content, such as reports, in the workspace.  |  ✔️ | ✔️  | ✔️  |   |
+| Publish reports to the workspace, delete content.  |  ✔️ | ✔️  | ✔️  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ✔️ | ✔️  | ✔️  |   |
+| Copy a report.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
+| Create metrics based on a dataset in the workspace.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
+| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
+| Modify gateway connection settings.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
+| View and interact with an item.<sup>5</sup> |  ✔️ | ✔️  | ✔️  | ✔️  |
+| Read data stored in workspace dataflows | ✔️ | ✔️ | ✔️ | ✔️ |
 
 <sup>1</sup> Contributors can [update the app associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to it.
 

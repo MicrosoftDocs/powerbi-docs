@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2022
+ms.date: 05/11/2022
 ---
 
-# Service principal profiles in Power BI Embedded
+# Service principal profiles for multi-customer apps in Power BI Embedded
 
 This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
@@ -19,11 +19,15 @@ This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-i
 
 A *service principal profile* is a profile created by a service principal. The ISV application calls the Power BI APIs using a service principal profile, as explained in this article.
 
-The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer. When a customer visits the ISV application, the application uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
+The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer. When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
 
 Using service principal profiles enables the ISV application to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
  :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multi-tenancy.":::
+
+>[!NOTE]
+>This article is aimed at organizations that want to set up a multi-customer app using service principal profiles.
+>If your organization already has an app that supports multiple customers from a single Power BI tenant, and you want to migrate to the service principal profile model, see [Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -87,7 +91,7 @@ ISV applications call Power BI REST APIs by providing the service principal Azur
 
 ## Create a workspace
 
-Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI [artifacts](pbi-glossary.md#artifacts) such as reports and datasets.
+Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI items such as reports and datasets.
 
 Each profile needs to:
 
@@ -104,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -119,11 +123,11 @@ Each profile needs to:
   }
   ```
 
-Read more about [Power BI workspaces]( ../../consumer/end-user-workspaces.md).
+Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
 
 ## Import reports and datasets
 
-Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/groups/imports) to import the content into the created workspace.
+Use [Power BI Desktop](../../transform-model/desktop-query-overview.md) to prepare reports that are connected to the customer's data or sample data. Then, you can use the [Import API](/rest/api/power-bi/imports) to import the content into the created workspace.
 
 ```rest
 POST https://api.powerbi.com/v1.0/myorg/groups/f313e682-c86b-422c-a3e2-b1a05426c4a3/imports?datasetDisplayName=ContosoSales HTTP/1.1
@@ -135,7 +139,7 @@ Fiddler-Encoding: base64
 LS04YjA3MTg5NS1iMzgwLTQ3...Tg2ZDcxN2VkNy0tDQo=
 ```
 
-Use [dataset parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to create a dataset that can connect to different customers' data sources.
+Use [dataset parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to create a dataset that can connect to different customers' data sources.
 Then, use the *Update parameters* API to define which customers' data the dataset connects to.
 
 ## Set the dataset connection
@@ -151,21 +155,21 @@ In either case, you should end up with single-customer datasets (one dataset per
 
 If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
-* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to match the customer's database details.
+* **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/groups/datasets/updatedatasourcesingroup).
+* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
 
 ### A single multi-customer database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
-Create a report using [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/groups/datasets/updateparametersingroup) to retrieve the relevant customer's data only.
+Create a report using [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) that only retrieve the relevant customer's data. Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to retrieve the relevant customer's data only.
 
 ## Embed a report
 
-After the setup is complete, you can embed customer reports and other [artifacts](pbi-glossary.md#artifacts) into your application using an embed token.
+After the setup is complete, you can embed customer reports and other items into your application using an embed token.
 
-When a customer visits your application, use the corresponding profile to call the [GenerateToken API](/rest/api/power-bi/embed-token). Use the generated embed token to embed a report or other artifact in the customer's browser.
+When a customer visits your application, use the corresponding profile to call the [GenerateToken API](/rest/api/power-bi/embed-token). Use the generated embed token to embed a report or other items in the customer's browser.
 
 To generate an embed token:
 
@@ -207,7 +211,7 @@ Without profiles, a service principal is limited to 1,000 [workspaces](pbi-gloss
 
 Once a service principal profile has access to a workspace, its parent service principal’s access to the workspace can be removed to avoid scalability problems.
 
-Even with these advantages, you should consider the potential scale of your application. For example, the number of workspace [artifacts](pbi-glossary.md#artifacts) a profile can access is limited. Today, a profile has the same limits as a regular user. If the ISV application allows end users to save [a personalized copy](#customizing-and-authoring-content) of their embedded reports, a customer's profile will have access to all the created reports of all its users. This model can eventually exceed the limit.
+Even with these advantages, you should consider the potential scale of your application. For example, the number of workspace items a profile can access is limited. Today, a profile has the same limits as a regular user. If the ISV application allows end users to save [a personalized copy](#customizing-and-authoring-content) of their embedded reports, a customer's profile will have access to all the created reports of all its users. This model can eventually exceed the limit.
 
 ### Automation and operational complexity
 
@@ -223,7 +227,7 @@ For example, creating a profile and a workspace for a new customer is a common t
 
 ### Multi-Geo needs  
 
-Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the customer profile should duplicate all artifacts into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
+Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the customer profile should duplicate all items into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
 
 For compliance reasons, you may still want to create multiple Power BI tenants in different regions. Read more about [multi-geo](../../admin/service-admin-premium-multi-geo.md).
 
@@ -312,3 +316,6 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 >[!div class="nextstepaction"]
 >[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+
+>[!div class="nextstepaction"]
+>[Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md)

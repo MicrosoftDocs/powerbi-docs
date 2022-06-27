@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 05/11/2022
 LocalizationGroup: Gateways
 ---
 
@@ -76,11 +76,11 @@ This issue has multiple symptoms.
 
 **Resolution**
 
-To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
+To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="Resolving SSL error window":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving S S L error window by disabling the certificate." :::
 
-After you've selected this setting, the error message will no longer appear.
+After you've disabled this setting, the error message will no longer appear.
 
 #### Impersonation
 
@@ -139,7 +139,7 @@ Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azur
 
 **Resolution**
 
-To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-5-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
+To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-4-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
 
 
 **Validation**

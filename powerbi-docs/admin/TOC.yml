@@ -21,13 +21,13 @@
     expanded: false
     items:
     - name: Manage Power BI Desktop sign-in form
-      href: desktop-admin-sign-in-form.md      
+      href: desktop-admin-sign-in-form.md   
+    - name: Manage Power BI visuals admin settings
+      href: organizational-visuals.md           
     - name: Service URL reference
-      href: power-bi-allow-list-urls.md
-    - name: Add custom branding
-      href: service-admin-custom-branding.md       
+      href: power-bi-allow-list-urls.md     
     - name: Service interruption notifications
-      href: service-interruption-notifications.md
+      href: service-interruption-notifications.md    
     - name: Capture diagnostic information from the Power BI service
       href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: Power BI support options
@@ -98,7 +98,7 @@
       href: service-admin-portal-discovery.md
     - name: Export and sharing settings
       href: service-admin-portal-export-sharing.md
-    - name: Goals settings (preview)
+    - name: Metrics settings (preview)
       href: service-admin-portal-goals-settings.md
     - name: Help and support settings
       href: service-admin-portal-help-support.md
