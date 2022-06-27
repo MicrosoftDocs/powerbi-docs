@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/22/2021
+ms.date: 06/27/2022
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample
 ---
