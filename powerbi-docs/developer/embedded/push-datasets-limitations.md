@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/26/2022
+ms.date: 06/27/2022
 ---
 
 # Push datasets limitations
@@ -44,4 +44,4 @@ Review the following list of limitations before using the *push datasets* APIs.
 ## Next steps
 
 * [Power BI REST APIs](/rest/api/power-bi/).
-* Push datasets](/rest/api/power-bi/push-datasets).
+* [Push datasets](/rest/api/power-bi/push-datasets).
