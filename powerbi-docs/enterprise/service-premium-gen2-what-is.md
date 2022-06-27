@@ -15,15 +15,24 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium Gen2?
 
-Power BI Premium released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
+**Power BI Premium Generation 2**, referred to as **Premium Gen2**, is the second generation of Power BI Premium.
 
-:::image type="content" source="media/service-premium-auto-scale/premium-auto-scale-10.png" alt-text="Screenshot of using auto scale in Power B I Premium.":::
+The following table lists some of the Premium Gen2 enhancements.
 
-Premium Gen2 provides the following updates or improved experiences:
+|enhancement  |Details  |
+|---------|---------|
+|**Premium Per User**     |See [Power BI Premium Per User](service-premium-per-user-faq.md)         |
+|**Performance**     |         |
+|**Greater scale**     |         |
+|Row4     |         |
+|Row5     |         |
+|Row6     |         |
+|Row7     |         |
+|Row8     |         |
+|Row9     |         |
+|Row10     |         |
+|Row11     |         |
 
-* Ability to license **Premium Per User** in addition to by capacity.
-
-* Enhanced **performance** on any capacity size, anytime: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
 * **Greater scale**:
     * *Higher limits* on refresh concurrency, alleviating the need to track schedules for datasets being refreshed on your capacity
