@@ -128,6 +128,8 @@
       href: event-service.md
     - name: "File download API"
       href: file-download-api.md
+    - name: "Permissions API"
+      href: permissions-api.md
     - name: "Sorting"
       href: sort-options.md
     - name: "Localization"
