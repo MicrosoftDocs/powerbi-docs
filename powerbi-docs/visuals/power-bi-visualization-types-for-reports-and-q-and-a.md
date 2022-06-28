@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Visualization types in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 This article lists visualizations available in Power BI. We'll be adding new visualizations, stay tuned!
 
