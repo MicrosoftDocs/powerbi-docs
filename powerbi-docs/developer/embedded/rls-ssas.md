@@ -95,7 +95,7 @@ Once the environment is set up, create a *live connection* between Power BI Desk
 
 3. Fill in your Analysis Services tabular instance details and select **Connect live**. Then select **OK**.
 
-  :::image type="content" source="./media/rls-ssas/get-data-connect-live.png" alt-text="Screenshot of Analysis Services details.":::
+   :::image type="content" source="./media/rls-ssas/get-data-connect-live.png" alt-text="Screenshot of Analysis Services details.":::
 
 ## Generate an embed token
 
