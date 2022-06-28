@@ -240,7 +240,7 @@ Bi-directional relationships can introduce multiple, and therefore ambiguous, fi
 3.	Any other path, including paths that contain many-to-many relationships.
 
 The following diagram shows three possible paths that Power BI can take when a filter is applied to the **Source** table and should propagate to the **Target** table.
-Path 1 will be given the highest priority, followed by Path 2, and finally Path 3. Notice that filters flow from left to right , from the **Source** table to the **Target** table. You can select the image to enlarge it.
+Path 1 will be given the highest priority, followed by Path 2, and finally Path 3. Notice that filters flow from top to bottom, from the **Source** table to the **Target** table. You can select the image to enlarge it.
 
 [:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A diagram showing multiple filter paths and their precedence following the rules above.":::](media/desktop-relationships-understand/relationship-precedence-rules.png)
 
