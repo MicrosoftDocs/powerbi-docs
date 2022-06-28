@@ -1,5 +1,5 @@
 ---
-title: Create scorecards and manual metrics (preview)
+title: Create scorecards and manual metrics
 description: Create scorecards and manual metrics in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/14/2022
 ---
-# Create scorecards and manual metrics in Power BI (preview)
+# Create scorecards and manual metrics in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
