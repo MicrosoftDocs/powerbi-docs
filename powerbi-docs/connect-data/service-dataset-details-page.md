@@ -90,7 +90,7 @@ You can share the dataset with other users in your organization. Clicking the **
 
 ## Data Preview
 
-To preview data from the dataset details page, you can select data from the dataset's tables on the **Tables** side panel. If you don't see the side panel, select **Show tables** on the action bar.
+To preview a datasets's data from the dataset details page, you can select data its tables on the **Tables** side panel. If you don't see the side panel, select **Show tables** on the action bar.
 
 ### Prerequisites
 * The dataset need to be inside a "new" workspace, including workspaces that aren't in a Power BI Premium capacity. Read about new and classic workspaces.
