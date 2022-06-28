@@ -177,7 +177,7 @@ The following list provides regions where large datasets in Power BI are availab
 |---------------------|---------------------------|
 | Australia East      | australiaeast             |
 | Australia Southeast | australiasoutheast        |
-| Brazil South        | brazilsouth                |
+| Brazil South        | brazilsouth               |
 | Canada East         | canadaeast                |
 | Canada Central      | canadacentral             |
 | Central India       | centralindia              |
