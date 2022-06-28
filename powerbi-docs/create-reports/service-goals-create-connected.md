@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 06/28/2022
+ms.custom: sample-salesandmarketing
 ---
 # Create connected metrics in Power BI
 
