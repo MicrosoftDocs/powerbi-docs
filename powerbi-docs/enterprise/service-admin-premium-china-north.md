@@ -13,16 +13,19 @@ LocalizationGroup: Premium
 
 # Premium support for China North
 
-This article describes the Power BI Premium support for China North.
+*China North* is only supported when using [Premium Gen1](service-premium-what-is.md).
 
->[!IMPORTANT]
->China North is only supported when using [Premium Gen1](service-premium-what-is.md).
->
->China North isn't supported in [Premium Gen2](service-premium-gen2-what-is.md).
+[Premium Gen2](service-premium-gen2-what-is.md) and Gen2 features are not supported when using *China North*.
+
+If you require support for Gen2 or for any of the features listed in this article, use one of the other China regions, *China East*, *China East 2* or *China North 2*.
 
 ## Unsupported features
 
-This section lists the China North unsupported Gen1 features.
+This section lists the Power BI features that aren't supported for *China North*.
+
+* [Premium Gen2](service-premium-gen2-what-is.md)
+
+* Any Gen2 features
 
 * [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
