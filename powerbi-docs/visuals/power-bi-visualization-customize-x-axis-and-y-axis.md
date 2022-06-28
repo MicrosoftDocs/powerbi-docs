@@ -83,7 +83,7 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
 
    - **Font family**: Select **Arial Black**
    
-   - - **Columns**: Open **Spacing**
+   - **Columns**: Open **Spacing**
 
    - **Inner padding**: Enter *40%*
 
