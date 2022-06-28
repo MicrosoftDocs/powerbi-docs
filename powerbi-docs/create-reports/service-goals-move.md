@@ -1,5 +1,5 @@
 ---
-title: Arrange columns and goals in Power BI scorecards (preview)
+title: Arrange columns and metrics in Power BI scorecards
 description: Learn how to customize your Power BI scorecards to meet your teams' needs.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,23 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/14/2022
+ms.date: 06/14/2022
 ---
-# Arrange columns and goals in Power BI scorecards (preview)
+# Arrange columns and metrics in Power BI scorecards
 
-In some scenarios, you may want to reorder the goals in a scorecard, or make one goal a subgoal of another. You may also want to hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving goals and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
+In some scenarios, you may want to reorder the metrics in a scorecard, or make one metric a submetric of another. You may also want to hide a column, or put the columns in a different order. As a scorecard author, you can make these changes, moving metrics and deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
-## Reorder the goals in a scorecard
+## Reorder the metrics in a scorecard
 
-It's easy to reorder goals on the scorecard, or make them subgoals.
+It's easy to reorder metrics on the scorecard, or make them submetrics.
 
-- Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal. 
+- Select a metric and drag it up or down. Indent it slightly to make it a submetric of another metric. 
 
-    When you make it a subgoal, it takes the color of the goal it's under.
+    When you make it a submetric, it takes the color of the metric it's under.
 
-    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Animation of moving a goal, and making it a subgoal.":::
+    :::image type="content" source="media/service-goals-move/power-bi-move-goals.gif" alt-text="Screenshot of Animation of moving a metric, and making it a submetric.":::
 
 ## Hide or move a column
 
@@ -46,9 +46,9 @@ It's easy to reorder goals on the scorecard, or make them subgoals.
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
-- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+- [Get started with metrics in Power BI](service-goals-introduction.md)
+- [Create scorecards and manual metrics in Power BI](service-goals-create.md)
+- [Create connected metrics in Power BI](service-goals-create-connected.md)
+- [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

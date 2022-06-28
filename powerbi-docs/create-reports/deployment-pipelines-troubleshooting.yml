@@ -7,7 +7,7 @@ metadata:
   ms.topic: faq
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 06/01/2022
+  ms.date: 06/12/2022
 title: Deployment pipelines troubleshooting
 summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -128,7 +128,7 @@ sections:
       - question: |
           I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which items aren't supported?
         answer: |
-          For a comprehensive list of items and artifacts that aren't supported in deployment pipelines, see the following sections:
+          For a comprehensive list of Power BI items that aren't supported in deployment pipelines, see the following sections:
           
           * [Unsupported items](deployment-pipelines-process.md#unsupported-items)
           
@@ -207,6 +207,19 @@ sections:
           If the changes weren't intentional, close the message window, upload a fixed PBIX file to the source workspace and redeploy.
           
           After a deployment fails due to schema changes, the target stage displays the *Deployment failed* message, followed by the *Show details* link. The link opens the same *continue the deployment* message that was displayed during the failed deployment.
+
+      - question: |
+          Why am I getting the message 'can't start the deployment'?
+        answer: |
+          When using [incremental refresh](deployment-pipelines-process.md#incremental-refresh), only certain [changes to the dataset](deployment-pipelines-process.md#considerations-and-limitations) you're deploying are allowed. If you made dataset changes that aren't allowed, your deployment will fail and you'll receive this message:
+
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the can't start the deployment error message in deployment pipelines.":::
+  
+          If you made changes to your dataset intentionally, you can use one of the following workarounds:
+
+          * **Using PBIX** - Publish your changes directly to the target dataset. All partitions and data will be lost, so you'll need to refresh the dataset.
+
+          * **Using XMLA tools** - Make your changes directly on the dataset in the target stage.
 
       - question: |
           Why is my visual broken after deploying a dataset or a dataflow?
