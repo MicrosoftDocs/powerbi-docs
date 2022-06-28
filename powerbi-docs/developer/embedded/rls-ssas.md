@@ -37,7 +37,7 @@ To embed a report from an SSAS model, you need to do the following actions:
 
 ## Set up the gateway
 
-1. [Add a data source connection to the on-prem gateway](../../connect-data/service-gateway-data-sources.md#add-a-data-source)
+[Add a data source connection to the on-prem gateway](../../connect-data/service-gateway-data-sources.md#add-a-data-source)
 
 Enter the Datasource name, datasource type, Server, database, a username and password that the active directory recognizes.
 
@@ -50,9 +50,11 @@ The user generating the embed token also needs **one** of the following permissi
 * Gateway admin permissions
 * Datasource impersonate permission (ReadOverrideEffectiveIdentity)
 
-Users with override permission have a key icon next to their name.
+  Users with impersonate (override) permission have a key icon next to their name.
 
   :::image type="content" source="media/rls-ssas/impersonate-override-permission.png" alt-text="Screenshot of a gateway member with a key icon next to their name.":::
+
+Follow these instructions to grant gateway permissions to your master user, service principal, or service principal profile.
 
 ## [Master user](#tab/master-user)
 
