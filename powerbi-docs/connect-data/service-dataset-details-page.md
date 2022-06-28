@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 05/23/2022
+ms.date: 06/28/2022
 LocalizationGroup: Share your work
 ---
 # Dataset details
@@ -87,6 +87,38 @@ To create a report based on the dataset, click the **Create report** button on t
 You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
+
+## Data Preview
+
+To preview data from the dataset details page, you can select data from the dataset's tables on the **Tables** side panel. If you don't see the side panel, select **Show tables** on the action bar.
+
+### Prerequisites
+* The dataset need to be inside a "new" workspace, including workspaces that aren't in a Power BI Premium capacity. Read about new and classic workspaces.
+* You need Build permission for the dataset.
+
+The parent checkbox on the dataset's table indicates whether all the tables and columns have been selected, or only a subset.
+
+All selected:
+
+
+Partially selected:
+		
+When you select tables or columns, they will be displayed on the Table preview page that opens.
+
+[]
+
+Previews may not show all data you selected. To see more, you can export or customize this table.
+
+* Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
+		
+>[!NOTE]
+> The underlying data columns includes raw data. Therefore, the ∑ column indicates the column type as a measure. However, aggregates are not applied to the export.
+	
+* Selecting Customize opens it in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace.
+
+Click on "Customize" button: Opened with same selected data in formatted table:
+	
+To return to the dataset details page, you can select the **Back** button on the action bar, it will clear all your selections and bring you back to dataset details page.
   
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
