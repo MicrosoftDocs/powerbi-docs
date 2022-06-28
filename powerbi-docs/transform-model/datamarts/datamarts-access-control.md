@@ -33,7 +33,9 @@ Row-level security (RLS) can be used to restrict data access for specified users
 You can configure RLS for datamarts in the **Datamart editor**. The configured RLS on datamarts automatically gets applied to downstream items, including the auto-generated datasets and reports. 
 
 
+
 ### Define Row Level Security (RLS) roles and rules for Datamarts
+
 
 To define RLS roles, take the following steps:
 

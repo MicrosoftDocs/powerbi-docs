@@ -1,6 +1,6 @@
 ---
 title: Scorecard visual tutorial
-description: 'Create a scorecard visual and add it to a report in Power BI (preview)'
+description: 'Create a scorecard visual and add it to a report in Power BI'
 author: aphilip94
 ms.author: anphil
 ms.reviewer: maggies
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/14/2022
 LocalizationGroup: Visualizations
 ---
-# Create a scorecard visual in Power BI (preview)
+# Create a scorecard visual in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -20,12 +20,6 @@ Integrating metrics and scorecards deeply into reporting solutions is a great wa
 ## Prerequisites
 
 - You must be signed in to Power BI Desktop and have a Power BI Pro license.
-
-## Get started
-
-This feature is in preview, so you first need to turn the feature on. Go to **File** > **Options and Settings** > **Options** > **Preview features**, and make sure **Scorecard visual** is turned on.
-
-:::image type="content" source="media/power-bi-visualization-scorecard-visual/preview-feature.png" alt-text="Screenshot showing preview features.":::
 
 ## Add the scorecard visual
 

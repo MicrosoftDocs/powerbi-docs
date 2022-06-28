@@ -7,6 +7,26 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Excel Desktop crashes when opening data model that was refreshed by Power BI Service
+      href: known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md
+    - name: Visual context menus are cut off when using Power BI Embedded
+      href: known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md
+    - name: GetVisuals() API for custom visuals may return a blank title
+      href: known-issues/known-issue-211-getvisuals-api-return-blank-title.md
+    - name: The scorecard visual's display name is blank in the visualizations pane
+      href: known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md
+    - name: Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
+      href: known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md
+    - name: A scorecard in an app won't load until the user visits workspace first
+      href: known-issues/known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md
+    - name: Dremio connector is missing
+      href: known-issues/known-issue-204-dremio-connector-missing.md
+    - name: Decomposition tree shows the title of a collapsed level
+      href: known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md
+    - name: Using a link in a paginated report subscription doesn't apply the report parameters
+      href: known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md
+    - name: Decomposition tree visual first level is incorrectly expanded
+      href: known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md
     - name: Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop
       href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
     - name: Duplicate or erroneous email may be received during classic workspace upgrade

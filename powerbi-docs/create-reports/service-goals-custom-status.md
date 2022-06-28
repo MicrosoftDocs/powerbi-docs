@@ -1,5 +1,5 @@
 ---
-title: Customize statuses on your scorecard (preview)
+title: Customize statuses on your scorecard
 description: Learn how to customize the statuses in your Power BI scorecards to meet your teams' needs.
 author: maggiesMSFT
 ms.author: maggies
