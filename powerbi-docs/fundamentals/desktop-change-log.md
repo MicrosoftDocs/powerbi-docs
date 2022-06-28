@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 6/3/2022
+ms.date: 6/28/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,16 @@ ms.date: 6/3/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## June 2022 QFE 1
+
+*Version: 2.106.883.0, Released: June 28, 2022*
+
+Bug fixes/improvements:
+- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into 2 separate steps (users attempt to sign-in using cashed credentials in the background as the 1st step, and then if needed they are returned back to the UI thread for the 2nd step, that previously caused the ThreadStateException, and sign in with platform credentials).
+- Fix for the legend color: now it will be the same for PBI Desktop and PBI Service.
+- Fix for broken export 'data to file' content from custom visuals. 
+- Fix for custom visuals using API above 4.4: definition for 4.5 and 4.6 custom visual API versions was added, and these custom visuals now run as expected. 
 
 ## May 2022 QFE 2
 
