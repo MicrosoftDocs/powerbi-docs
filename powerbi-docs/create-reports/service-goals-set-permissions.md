@@ -1,5 +1,5 @@
 ---
-title: Protect your scorecards with metric-level permissions (preview)
+title: Protect your scorecards with metric-level permissions
 description: Set up metric-level permissions.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/14/2022
 ---
-# Protect your scorecards with metric-level permissions (preview)
+# Protect your scorecards with metric-level permissions
 
 In many organizations, different roles should have access to view and update different metrics. For example, maybe only managers should see metrics related to human resources and finances, while all employees can view metrics related to operations.  
  
