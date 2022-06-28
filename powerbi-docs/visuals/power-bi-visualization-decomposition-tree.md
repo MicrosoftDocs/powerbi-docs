@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 06/28/2022
+ms.custom: sample-supply-chain
 LocalizationGroup: Visualizations
 ---
 
@@ -24,8 +25,8 @@ This tutorial uses two examples:
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
-You can find the pbix used in the supply chain scenario here: [Supply Chain Sample.pbix](
-https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+For Power BI Desktop, You can find the pbix used in the supply chain scenario here: [Supply Chain Sample](
+https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, you can follow along using a different dataset of your choosing. The decomposition tree visual works the same in both.
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
@@ -57,24 +58,24 @@ Selecting a node from the last level cross-filters the data. Selecting a node fr
 
 ![Animation shows selecting a node from an earlier level and how it changes the display to show its children nodes.](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
 
-
-
-
-
 Interacting with other visuals cross-filters the decomposition tree. The order of the nodes within levels could change as a result.
-In the example below, we've cross-filtered the tree by Ubisoft. The path updates and Xbox sales move from first to second place, surpassed by PlayStation. 
+
+To show a different scenario, the example below looks at video game sales by publisher. 
+
+![Animation shows selecting cross filters which affect which nodes are displayed.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
+
+When we cross-filter the tree by Ubisoft, the path updates to show Xbox sales moving from first to second place, surpassed by PlayStation. 
 
 If we then cross-filter the tree by Nintendo, Xbox sales are blank as there are no Nintendo games developed for Xbox. Xbox, along with its subsequent path, gets filtered out of the view.
 
 Despite the path disappearing, the existing levels (in this case Game Genre) remain pinned on the tree. Selecting the Nintendo node therefore automatically expands the tree to Game Genre.
 
-![Animation shows selecting cross filters which affect which nodes are displayed.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
 ## AI splits
 
 You can use “AI Splits” to figure out where you should look next in the data. These splits appear at the top of the list and are marked with a light bulb. The splits are there to help you find high and low values in the data, automatically.
 
-The analysis can work in two ways depending on your preferences. The default behavior is as follows:
+The analysis can work in two ways depending on your preferences. Using the supply chain sample again, the default behavior is as follows:
 
  - **High Value**: Considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.  
  - **Low Value**: Considers all available fields and determines which one to drill into to get the lowest value of the measure being analyzed.  
@@ -89,12 +90,7 @@ Hover over the light bulb to see a tooltip. In this example, the tooltip is “%
 
 You can configure the visual to find **Relative** AI splits as opposed to **Absolute** ones. 
 
-Relative mode looks for high values that stand out (compared to the rest of the data in the column). Let’s take a look at an example:
-
-
-
-
-
+Relative mode looks for high values that stand out (compared to the rest of the data in the column). Let’s look at video game sales again as an example:
 
 :::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png" alt-text="Decomposition tree absolute split.":::
 
@@ -126,11 +122,11 @@ If you prefer not to use any AI splits in the tree, you also have the option of 
 
 ## Tree interactions with AI splits
 
-You can have multiple subsequent AI levels. You can also mix up different kinds of AI levels (go from High Value to Low Value and back to High Value):
+You can have multiple subsequent AI levels. You can also mix up different kinds of AI levels (go from high value to low value and back to high value):
 
 :::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png" alt-text="Decomposition tree multiple AI paths.":::
 
-If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct High and Low Values.
+If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct high and low values.
 
 :::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png" alt-text="Decomposition tree AI interactions.":::
 
