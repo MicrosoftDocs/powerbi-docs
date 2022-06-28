@@ -59,14 +59,14 @@ Users with override permission have a key icon next to their name.
 Do **one** of the following:
 
 * [Give the master user gateway admin permissions through the UI - recommended](/power-platform/admin/onpremises-data-gateway-management#manage-users)
-* [Give the master user gateway admin permissions using the API](/powershell/module/datagateway/add-datagatewayclusteruser?view=datagateway-ps)
+* [Give the master user gateway admin permissions using the API](/powershell/module/datagateway/add-datagatewayclusteruser)
 * [Give the master user impersonate permissions](/rest/api/power-bi/gateways/add-datasource-user)
 
 ## [Service principal](#tab/service-principal)
 
 Give your service principal *admin* **or** *impersonate* permissions with one of the following APIs:
 
-* [API to make the service principal an admin](/powershell/module/datagateway/add-datagatewayclusteruser?view=datagateway-ps)
+* [API to make the service principal an admin](/powershell/module/datagateway/add-datagatewayclusteruser)
 * [API to give the service principal impersonate permissions](/rest/api/power-bi/gateways/add-datasource-user#assign-the-readoverrideeffectiveidentity-user-access-right-to-a-service-principal-example)
 
 ## [Service principal profile](#tab/service-principal-profile)
