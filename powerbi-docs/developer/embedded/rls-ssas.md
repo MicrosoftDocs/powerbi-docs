@@ -110,14 +110,7 @@ To generate the embed token, provide the following information:
 * **Username** (Optional if no RLS. Required for RLS) - A valid username recognized by the SSAS that will be used as the effective identity. If the database doesn't use RLS and no username is provided, the master user's credentials are used.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
 
-## [Service principal](#tab/service-principal)
-
-To generate the embed token, provide the following information:
-
-* **Username** (required) - A valid username recognized by the SSAS that will be used as the effective identity.
-* **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
-
-## [Service principal profile](#tab/service-principal-profile)
+## [Service principal or service principal profile](#tab/service-principal)
 
 To generate the embed token, provide the following information:
 
