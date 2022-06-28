@@ -55,7 +55,7 @@ The default permissions apply to anyone accessing the scorecard who is not a mem
 
 - Select **More options (...)** in the role card and select **Set as default**.
 
-    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role in the More options menu.":::
+    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu.":::
 
 Metric-level permissions roles apply to the underlying scorecard dataset we generate, with the exception of the default role. For example, say you create a role and assign the sales team view access to five metrics on the scorecard. Those five metrics are the ones they'll see in the underlying dataset as well. 
 
