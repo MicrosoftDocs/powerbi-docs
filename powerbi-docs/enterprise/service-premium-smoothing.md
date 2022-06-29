@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 Power BI Premium Gen2 uses performance smoothing when it reports your CPU usage in the [Gen2 app](service-premium-gen2-metrics-app.md). Power BI uses the calculations behind the app's reports, to evaluate your CPU usage. CPU usage is the most important measure when it comes to your capacity, because it determines how much of your capacity is in use. By flattening your CPU usage over time, smoothing helps you avoid being penalized due to bursts of intensive CPU usage. When your CPU usage is flatter, you can enjoy the full compute power of your Power BI capacity.
 
-The figures below show the way CPU usage is currently reported in the [CPU over time](https://docs.microsoft.com/en-us/power-bi/enterprise/service-premium-gen2-metrics-app#cpu-over-time) chart, as apposed to the way it used to be reported.  
+The figures below show the way CPU usage is currently reported in the [CPU over time](service-premium-gen2-metrics-app.md#cpu-over-time) chart, as apposed to the way it used to be reported.  
 
 :::row:::
    :::column span="":::
@@ -45,7 +45,7 @@ CPU smoothing refers to the way that CPU usage is reported over a 24 hour period
 
 ## How is CPU usage calculated?
 
-To calculate CPU usage, Power BI separates operations into two categories, [*interactive* and *background* operations](service-premium-gen2-faq.yml#what-s-the-difference-between-interactive-and-background-operations--). Interactive operations are shorter running operations, usually triggered by user interactions with the UI, and background operations are operations that run for a long period of time. Power BI handles these [operations](service-premium-gen2-faq.yml#which-operations-contribute-to-interactive-utilization--and-which-to-background-utilization-) in a different way, depending on their type.
+To calculate CPU usage, Power BI separates operations into two categories, [*interactive* and *background* operations](service-premium-interactive-background-operations.md). *Interactive* operations are shorter running operations, usually triggered by user interactions with the UI. *Background* operations are operations that run for a long period of time. Power BI handles these operations in a different way, depending on their type.
 
 * **Interactive operations** - Each operation is divided into short intervals that are used to calculate CPU usage per timepoint. The number of intervals changes depending on the amount of CPU usage needed by the operation, and can reach a maximum of 64 minutes per operation. The maximum CPU usage an interval can contain, is about half the total of the CPU usage for that operation.
 
@@ -57,7 +57,7 @@ During each timepoint, Power BI adds up the average CPU usage from both the inte
 
 ## How to detect overload?
 
-You can see if your capacity is overloading, by reviewing the [CPU over time](https://docs.microsoft.com/en-us/power-bi/enterprise/service-premium-gen2-metrics-app#cpu-over-time) chart in the Gen2 app. A spike that goes over the yellow line, indicates an overload. To further investigate the overload, drill through to the [timepoint](service-premium-gen2-metrics-app.md#timepoint) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
+You can see if your capacity is overloading, by reviewing the [CPU over time](service-premium-gen2-metrics-app.md#cpu-over-time) chart in the Gen2 app. A spike that goes over the yellow line, indicates an overload. To further investigate the overload, drill through to the [timepoint](service-premium-gen2-metrics-app.md#timepoint) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
 
 ## How to resolve overload?
 
