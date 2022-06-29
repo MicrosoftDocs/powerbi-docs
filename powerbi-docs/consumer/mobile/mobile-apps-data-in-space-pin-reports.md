@@ -62,7 +62,44 @@ You must be a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer
 
     When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to pin the card to the location. 
 
-Once the pinning has been saved, press **Exit** to return to the report. 
+Once the pinning has been saved, press **Exit** to return to the report.
+
+## Change card positioning and size 
+
+1. Scan the area to find the pinned card you wish to edit, as described in [Find and access pinned reports](./mobile-apps-data-in-space-find-pinned-reports.md).
+
+1. Once the pinned cards show up on your screen, tap the pencil icon and choose **Position**.
+
+    ![Screenshot of the Position option for repositioning pinned reports.](./media/mobile-apps-data-in-space-pin-reports/reposition-pinned-report.png)
+ 
+1. The edges of all visible cards will turn yellow.
+
+    ![Screenshot showing yellow borders indicating that the cards can be edited.](./media/mobile-apps-data-in-space-pin-reports/pinned-reports-with-yellow-borders.png)
+ 
+1. Tap a card to start editing it.
+
+    ![Screenshot showing a card that has been selected for editing.](./media/mobile-apps-data-in-space-pin-reports/editing-pinned-report-location.png)
+ 
+    * Tap and drag to reposition.
+    * Pinch in and out to resize.
+    * Place two fingers on the screen and rotate them clockwise or counter-clockwise to rotate the card from side to side.  
+
+1. When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to save the changes.
+
+## Delete pinned cards
+
+1. Scan the area to find the pinned card you wish to delete, as described in [Find and access pinned reports](./mobile-apps-data-in-space-find-pinned-reports.md).
+
+1. Once the pinned cards show up on your screen, tap the pencil icon and choose **Delete**.
+
+    ![Screenshot of the Delete option for unpinning pinned reports.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report.png)
+ 
+1. The edges of all visible cards will turn yellow. Tap a card to delete it, or tap **Delete all visuals** to delete all the pinned items that have been found.
+
+    ![Screenshot showing delete visual or delete all visuals options.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report-options.png)
+
+    >[!NOTE]
+    >Deleting a cards unpins the report for everyone. It doesn’t delete the report in the Power BI service.
 
 ## How do I know if I'm a Data in space Writer?
 
