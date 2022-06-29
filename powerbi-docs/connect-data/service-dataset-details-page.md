@@ -109,12 +109,18 @@ When you select tables or columns, they will be displayed on the Table preview p
 
 Previews may not show all data you selected. To see more, you can export or customize this table.
 
-* Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
-		
+* Export: Exports the data to one of the supported file formats.
+
+
+* Selecting Customize opens the table in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity to the way you formatted the report. The exported report is saved to your default Downloads folder.
+
 >[!NOTE]
-> The underlying data columns includes raw data. Therefore, the ∑ column indicates the column type as a measure. However, aggregates are not applied to the export.
+> Table view is intended to quickly show the detail level data of tables within your dataset. When selecting measures, they are not summarized by default. You can use the "Customize" table editor to switch between summarized and non- summarized views.
+>
+> Table view shows only distinct rows of the selected columns. For example, if you  two cities within one state and select only the state column, only one detail row will be shown. If you then select cities column, all of the rows will be displayed. You can also change this view by selecting the "Customize" table editor.
+
 	
-* Selecting Customize opens it in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace.
+* Selecting Customize opens it in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace.* Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
 
 Click on "Customize" button: Opened with same selected data in formatted table:
 	
