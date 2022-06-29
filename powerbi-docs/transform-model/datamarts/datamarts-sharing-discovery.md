@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 
 # Sharing and discovering data using datamarts (preview)
 
-You can share your datamarts, discover through the data hub and create reusable and auto-generated datasets to create reports in various ways in Power BI. This article describes the various ways you can share and discover datamarts.
+You can share your datamarts, discover through the data hub, and create reusable and auto-generated datasets to create reports in various ways in Power BI. This article describes the various ways you can share and discover datamarts.
 
 
 ## Sharing datamarts for consumption
