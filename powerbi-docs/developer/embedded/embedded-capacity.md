@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -122,7 +122,7 @@ The table below describes the resources and limits of each SKU.
 
 #### [Premium Gen1](#tab/gen1)
 
-| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
+| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
