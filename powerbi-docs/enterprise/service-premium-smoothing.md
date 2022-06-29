@@ -45,13 +45,13 @@ CPU smoothing refers to the way that CPU usage is reported over a 24 hour period
 
 ## How is CPU usage calculated?
 
-To calculate CPU usage, Power BI separates operations into two categories, [*interactive* and *background* operations](service-premium-interactive-background-operations.md). *Interactive* operations are shorter running operations, usually triggered by user interactions with the UI. *Background* operations are operations that run for a long period of time. Power BI handles these operations in a different way, depending on their type.
+To calculate CPU usage, Power BI separates operations into two categories, [*interactive* and *background* operations](service-premium-interactive-background-operations.md). *Interactive operations* are shorter running operations, usually triggered by user interactions with the UI. *Background operations* are operations that run for a long period of time. Power BI handles these operations in a different way, depending on their type.
 
 * **Interactive operations** - Each operation is divided into short intervals that are used to calculate CPU usage per timepoint. The number of intervals changes depending on the amount of CPU usage needed by the operation, and can reach a maximum of 64 minutes per operation. The maximum CPU usage an interval can contain, is about half the total of the CPU usage for that operation.
 
-* **Background operations** - Each operation is evenly split into 144 ten-minute intervals that form a 24 hour period. To calculate the amount of CPU usage per timepoint, Power BI takes the ten-minute interval and divides so that it fits the timepoint duration.
+* **Background operations** - Each operation is evenly split into 144 ten-minute intervals that form a 24 hour period. To calculate the amount of CPU usage per timepoint, Power BI takes the ten-minute interval and divides it so that it fits the timepoint duration.
 
-*Interactive operations* average your capacity usage over a short time frame, such as ten-minute intervals. *Background operations* on the other hand, average your capacity usage over a much larger 24 hours time frame. The benefit of this method is that operations that require many resources, such as refreshed, get smoothed because they're averaged over a long period of time.
+*Interactive operations* average your capacity usage over a short time frame, such as ten-minute intervals. *Background operations* on the other hand, average your capacity usage over a much larger 24 hours time frame. The benefit of this method is that operations that require many resources, such as refreshes, get smoothed because they're averaged over a long period of time.
 
 During each timepoint, Power BI adds up the average CPU usage from both the interactive and background operations. If the CPU usage for a specific timepoint exceeds the SKU limit for that timepoint, [autoscale](service-premium-auto-scale.md) kicks in if enabled. If autoscale isn't enabled, or if the CPU usage is higher than what autoscale can handle, throttling is applied.
 
