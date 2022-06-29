@@ -25,7 +25,7 @@ This tutorial uses two examples:
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
-For Power BI Desktop, You can find the pbix used in the supply chain scenario here: [Supply Chain Sample](
+For Power BI Desktop, you can download the [supply chain scenario dataset](
 https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, you can follow along using a different dataset of your choosing.
 
 > [!NOTE]
@@ -80,11 +80,11 @@ The analysis can work in two ways depending on your preferences. Using the suppl
  - **High Value**: Considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.  
  - **Low Value**: Considers all available fields and determines which one to drill into to get the lowest value of the measure being analyzed.  
 
-Select the plus sign next to **Intermittent** and choose **High Value**. A new column marked **Product Type** appears.
+Select **High Value** using the plus sign next to **Intermittent**. A new column marked **Product Type** appears.
 
 :::image type="content" source="media/power-bi-visualization-decomposition-tree/tree-ai-split.png" alt-text="Decomposition tree AI split.":::
 
-There's a light bulb next to **Product Type** indicating this column was an ‘AI split’. The tree also provides a dotted line recommending the **Patient Monitoring** node, indicating the highest value of backorders (9.2%). 
+A light bulb appears next to **Product Type** indicating this column was an ‘AI split’. The tree also provides a dotted line recommending the **Patient Monitoring** node, indicating the highest value of backorders (9.2%). 
 
 Hover over the light bulb to see a tooltip. In this example, the tooltip is “% on backorder is highest when Product Type is Patient Monitoring”.
 

@@ -7,8 +7,8 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/11/2021
-ms.custom: video-01UrT-z37sw
+ms.date: 06/29/2022
+ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries
