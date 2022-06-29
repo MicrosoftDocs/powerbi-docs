@@ -104,7 +104,7 @@ If there's no RLS set up, only the Admin has access to the database so you want 
 
 The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the database has RLS.
 
-## [Master user](#tab/master-user)
+## [Master user embed token](#tab/master-user-token)
 
 To generate the embed token, provide the following information:
 
@@ -160,7 +160,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 }
 ```
 
-## [Service principal or service principal profile](#tab/service-principal)
+## [Service principal or service principal profile](#tab/service-principal-token)
 
 To generate the embed token, provide the following information:
 
