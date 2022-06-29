@@ -21,7 +21,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 *Version: 2.106.883.0, Released: June 28, 2022*
 
 Bug fixes/improvements:
-- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into 2 separate steps (users attempt to sign-in using cashed credentials in the background as the 1st step, and then if needed they are returned back to the UI thread for the 2nd step, that previously caused the ThreadStateException, and sign in with platform credentials).
+- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into two separate steps (users attempt to sign-in using cached credentials in the background as the first step, and then if needed they are returned back to the UI thread for the second step, that previously caused the ThreadStateException, and sign in with platform credentials).
 - Fix for the legend color: now it will be the same for PBI Desktop and PBI Service.
 - Fix for broken export 'data to file' content from custom visuals. 
 - Fix for custom visuals using API above 4.4: definition for 4.5 and 4.6 custom visual API versions was added, and these custom visuals now run as expected. 
