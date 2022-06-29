@@ -26,7 +26,7 @@ This tutorial uses two examples:
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
 For Power BI Desktop, you can download the [supply chain scenario dataset](
-https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, you can follow along using a different dataset of your choosing.
+https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix). If you'd like to use the Power BI service, download Supply Chain Sample.pbix, and then upload it to a workspace in the Power BI service.
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
