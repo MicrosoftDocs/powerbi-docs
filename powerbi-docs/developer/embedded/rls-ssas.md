@@ -160,7 +160,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 }
 ```
 
-## [Service principal or service principal profile](#tab/service-principal-token)
+## [Service principal or service principal profile embed token](#tab/service-principal-token)
 
 To generate the embed token, provide the following information:
 
