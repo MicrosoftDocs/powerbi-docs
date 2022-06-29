@@ -11,7 +11,7 @@ ms.date: 06/27/2022
 ms.custom: mode-portal
 #customer intent: I want to learn about the Power BI mobile app's Data in space feature.
 ---
-# Pin Power BI reports to locations in the real world
+# Data in space overview
 
 Applies to:
 
