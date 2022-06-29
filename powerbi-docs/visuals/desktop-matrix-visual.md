@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 11/03/2021
+ms.date: 06/30/2022
 ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
@@ -70,7 +70,7 @@ In the following image, the **Rows** section contains *Sales stage* and *Opportu
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-rows-matrix.png" alt-text="Filters card showing which rows are chosen.":::
 
-When the visual has grouping created in the **Rows** section, the visual itself displays the *drill* and *expand* icons in the top-left corner of the visual.
+When the visual has a grouping created in the **Rows** section, the visual itself displays the *drill* and *expand* icons in a top corner of the visual.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-drilldown.png" alt-text="Matrix with drill controls outlined.":::
 
@@ -92,11 +92,11 @@ Select the **Drill up** icon to get back to the previous top-level view. If you 
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-next-level-matrix.png" alt-text="Matrix using Show next level.":::
 
-Select the **Drill up** icon in the upper-left corner to have the matrix show all top-level categories, then select **Proposal** > **Expand to next level**, to see all the values for both levels of the hierarchy - *Sales stage* and *Opportunity size*.
+Select the **Drill up** icon in the upper corner to have the matrix show all top-level categories, then select **Proposal** > **Expand to next level**, to see all the values for both levels of the hierarchy - *Sales stage* and *Opportunity size*.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-expand-next.png" alt-text="Matrix using Expand next level.":::
 
-You can also use the **Expand** menu item to control the display further.  For example, select  **Proposal** > **Expand** > **Selection**. Power BI displays one total row for each *Sales stage* and all the *Opportunity size* options for *Proposal*.
+You can also use the **Expand** menu item to control the display further.  For example, select the **Drill up** icon. Then select **Proposal** > **Expand** > **Selection**. Power BI displays one total row for each *Sales stage* and all the *Opportunity size* options for *Proposal*.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-expand.png" alt-text="Matrix after Expand applied to Proposal.":::
 
@@ -131,7 +131,7 @@ In the following image, you see a matrix visual, with stepped layout in action. 
 
 :::image type="content" source="media/desktop-matrix-visual/matrix-visual_13.png" alt-text="Current way that matrix formats data.":::
 
-You can easily adjust the stepped layout settings. With the matrix visual selected, in the **Format** section (the paint roller icon) of the **Visualizations** pane, expand the row headers section. You have two options: the **Stepped layout** toggle (which turns it on or off), and the **Stepped layout indentation** (which specifies the indentation amount, in pixels).
+You can easily adjust the stepped layout settings. With the matrix visual selected, in the **Format** section (the paintbrush icon) of the **Visualizations** pane, expand the row headers section. You have two options: the **Stepped layout** toggle (which turns it on or off), and the **Stepped layout indentation** (which specifies the indentation amount, in pixels).
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-stepped-matrix.png" alt-text="Row headers card displaying Stepped layout control.":::
 
@@ -143,11 +143,11 @@ You can turn subtotals on or off in matrix visuals, for both rows and columns. I
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-subtotals.png" alt-text="Matrix showing totals and subtotals.":::
 
-When you turn on **Subtotals** and add a label, Power BI also adds a row, and the same label, for the grand total value. To format your grand total, select the format option for **Grand total**. 
+When you turn on **Row subtotals** and add a label, Power BI also adds a row, and the same label, for the grand total value. To format your grand total, select the format option for **Row grand total**.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-grand-total.png" alt-text="Matrix showing Grand total card.":::
 
-If you want to turn subtotals and grand total off, in the format section of the visualizations pane, expand the **Subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+If you want to turn subtotals and the grand total off, in the format section of the visualizations pane, expand the **Row subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-no-subtotals.png" alt-text="Matrix with subtotals turned off.":::
 
@@ -157,7 +157,7 @@ The same process applies for column subtotals.
 
 Add visual cues to your table or matrix with *conditional icons*. 
 
-In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
+In the format section of the Visualizations pane, expand the **Cell elements** card. Turn the **Icons** slider to **On** and select the definitions icon.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-icons.png" alt-text="Matrix with Icons screen displayed.":::
 
