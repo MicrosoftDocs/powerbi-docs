@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/24/2021
+ms.date: 06/30/2022
+ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 
@@ -103,13 +104,13 @@ You'll create a report and add a basic treemap.
 
 Highlighting a **Category** or **Detail** in a treemap cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to this report page or copy the treemap to one of the other pages in this report. The below image the treemap was copied over to the **Overview** page. 
 
-1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$16,352,432** with **Fashions Direct** accounting for **$2,174,185** of those sales.
+1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/treemaphiliting.png" alt-text="Screenshot of the Store Sales Overview report showing cross-highlighting.":::
 
 1. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.
 
-   ![GIF demonstration of the cross-filtering feature.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
+   ![Screenshot demonstrates the cross-filtering feature with the pie chart selected.](media/power-bi-visualization-treemaps/treemap-pie-chart-selected.png)
 
 1. To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
