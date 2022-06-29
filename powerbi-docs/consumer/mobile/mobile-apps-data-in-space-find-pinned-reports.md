@@ -15,5 +15,6 @@ ms.custom: mode-portal
 
 ## Next steps
 
-* [Pin]()
-* [Find]()
+* [Data in space overview](mobile-apps-data-in-space-overview.md)
+* [Pin Power BI reports to locations in the real world](mobile-apps-data-in-space-pin-reports.md)
+* [Admin: Set up Data in space in your organization](mobile-apps-data-in-space-set-up.md)

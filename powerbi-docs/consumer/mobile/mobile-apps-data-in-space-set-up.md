@@ -67,5 +67,6 @@ After the Azure Spatial Anchors resource has been created, you need to assign us
 
 ## Next steps
 
+* [Data in space overview](mobile-apps-data-in-space-overview.md)
 * [Pin Power BI reports to locations in the real world](mobile-apps-data-in-space-pin-reports.md)
 * [Find and access Power BI reports pinned to locations in the real world](mobile-apps-data-in-space-find-pinned-reports.md)

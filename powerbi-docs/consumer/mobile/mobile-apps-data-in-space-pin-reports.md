@@ -23,5 +23,6 @@ Applies to:
 
 ## Next steps
 
-* [Pin]()
-* [Find]()
+* [Data in space overview](mobile-apps-data-in-space-overview.md)
+* [Find and access Power BI reports pinned to locations in the real world](mobile-apps-data-in-space-find-pinned-reports.md)
+* [Admin: Set up Data in space in your organization](mobile-apps-data-in-space-set-up.md)
