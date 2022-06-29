@@ -5,12 +5,11 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: removed
-ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started
+ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/29/2022
-ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 
