@@ -3,8 +3,7 @@ title: Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 description: Embed a report with an on-prem dataset model, with or without RLS, using a live connection
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: mberdugo
-editor: mberdugo
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
@@ -79,7 +78,7 @@ A service principal profile can't be an admin. If you're using a service princip
 
 ### Map User names
 
-If the usernames on the on-prem directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Azure AD to users from the on-prem database. For instructions on mapping user names go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
+If the usernames on the on-prem directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Azure AD to users from the on-prem database. For instructions on mapping user names, go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
 
 For more information see [Map user names for Analysis Services data sources](../../connect-data/service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -109,7 +108,7 @@ The information needed to generate an embed token depends on if you're connected
 
 To generate the embed token, provide the following information:
 
-* **Username** (Optional if no RLS. Required for RLS) - A valid username recognized by the SSAS that will be used as the effective identity. If the database doesn't use RLS and no username is provided, the master user's credentials are used.
+* **Username** (Optional if no RLS. Required for RLS) - A valid username recognized by the SSAS that will be used as the effective identity. If the database doesn't use RLS, and no username is provided, the master user's credentials are used.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
 
 Example:  
@@ -159,7 +158,6 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
     return embedToken;
 }
-
 ```
 
 ## [Service principal or service principal profile](#tab/service-principal)
@@ -219,6 +217,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 ```
 
 ---
+
 Now you can embed your report in your app, and your report will filter data according to the permissions of the user accessing the report.
 
 ## Considerations and limitations
