@@ -1,6 +1,6 @@
 ---
-title: 'Pin Power BI reports to locations in the real world'
-description: This article how pin Power BI reports in augmented reality at real world locations.
+title: 'Data in space overview'
+description: This article provides an overview of the Power BI mobile app's Data in space feature.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/27/2022
 ms.custom: mode-portal
-#customer intent: I want to learn how to pin Power BI reports in augmented reality at real world locations.
+#customer intent: I want to learn about the Power BI mobile app's Data in space feature.
 ---
 # Pin Power BI reports to locations in the real world
 

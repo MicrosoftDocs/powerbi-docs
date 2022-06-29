@@ -1,6 +1,6 @@
 ---
-title: 'Set up Data in space'
-description: This article explains for admins how set up the Power BI mobile app's Data in space feature in their organization.
+title: 'Find and access pinned reports'
+description: This article explains how find and access Power BI reports that have been pinned at real world locations in augmented reality.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -9,9 +9,9 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/27/2022
 ms.custom: mode-portal
-#customer intent: I want to understand how to set up the Data in space feature in my organization.
+#customer intent: I want to learn how to find and access Power BI reports that have been pinned at real world locations in augmented reality.
 ---
-# Find
+# Find and access pinned reports
 
 ## Next steps
 

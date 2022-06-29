@@ -82,16 +82,16 @@
         href: mobile-apps-split-screen.md
       - name: "Configure using mobile device management"
         href: mobile-app-configuration.md
-    - name: Data in space
-      items:
-      - name: "Data in space overview"
-        href: mobile-apps-data-in-space-overview.md        
-      - name: "Pin reports in space at real world locations"
-        href: mobile-apps-data-in-space-pin-reports.md        
-      - name: "Find and access pinned reports"
-        href: mobile-apps-data-in-space-find-pinned-reports.md        
-      - name: "Set up Data in space"
-        href: mobile-apps-data-in-space-set-up.md        
+      - name: Data in space
+        items:
+        - name: "Data in space overview"
+          href: mobile-apps-data-in-space-overview.md        
+        - name: "Pin reports in space at real world locations"
+          href: mobile-apps-data-in-space-pin-reports.md        
+        - name: "Find and access pinned reports"
+          href: mobile-apps-data-in-space-find-pinned-reports.md        
+        - name: "Set up Data in space"
+          href: mobile-apps-data-in-space-set-up.md        
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
