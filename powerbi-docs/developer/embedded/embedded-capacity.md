@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/26/2022
+ms.date: 06/29/2022
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -101,7 +101,7 @@ The table below describes the resources and limits of each SKU.
 
 #### [Premium Gen2](#tab/gen2)
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
@@ -116,13 +116,13 @@ The table below describes the resources and limits of each SKU.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
-<sup>3</sup> The RAM column represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 #### [Premium Gen1](#tab/gen1)
 
-| Capacity SKU | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism<sup>1</sup> |
+| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
