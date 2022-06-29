@@ -111,11 +111,11 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 |Keyboard shortcut   | Action                        |
 |--------------------|-------------------------------|
-|**Ctrl**            |Show or hide Power BI tooltips |
 |**Ctrl + Enter**    |Focus in                       |
 |**Ctrl + [**        |Focus out                      |
 |**Ctrl + ]**        |Move forward over open panels  |
 |**Ctrl + Shift + ]**|Move backward over open panels |
+|**Ctrl**            |Hide Power BI tooltips         |
 
 ## Next steps
 
