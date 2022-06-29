@@ -94,7 +94,7 @@ Data preview enables you to view selected tables and columns from the dataset, a
 
 To use data preview:
 
-* The dataset needs to reside in a "new" workspace. This is true both for workspaces that are in a Power BI Premium capacity and for those that aren't. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+* The dataset must reside in a new workspace experience. Classic workspaces aren't supported. The workspace can be in either a Premium or non-Premium capacity. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 * You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
 
 To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
