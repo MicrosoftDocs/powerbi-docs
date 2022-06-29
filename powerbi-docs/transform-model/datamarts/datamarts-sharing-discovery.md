@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 LocalizationGroup: Data from files
 ---
 
@@ -64,7 +64,7 @@ You can also choose to send recipients a message to provide more context, by typ
 
 The following image shows the **Share datamart** window.
 
-:::image type="content" source="media/datamarts-sharing-discovery/datamarts-create-reports-07.png" alt-text="Screenshot of sharing a datamart from the information panel in the data hub.":::
+:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-07.png" alt-text="Screenshot of sharing a datamart from the information panel in the data hub.":::
 
 Once you grant access, recipients receive an email stating they've been granted access to the datamart. The email includes a button titled **Open this datamart** that opens  the datamart's information page.
 
