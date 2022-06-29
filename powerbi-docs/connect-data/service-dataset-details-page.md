@@ -94,12 +94,7 @@ To preview a datasets's data from the dataset details page, you can select its t
 
 ![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel.png)
 
-
-
-
-
 If you don't see the side panel, select **Show tables** on the action bar.
-
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
@@ -109,34 +104,35 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 The parent checkbox on the dataset's table indicates whether all the tables and columns have been selected, or only a subset.
 
-All selected:
+* All selected
 
+    ![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-all-selected.png)
 
-Partially selected:
+* Partially selected
+
+    ![Screenshot showing subset of columns selected.](./media/service-dataset-details-page/dataset-details-page-partially-selected.png)
 		
-When you select tables or columns, they will be displayed on the Table preview page that opens.
+When you select tables or columns, they will be displayed on the **Table preview** page that opens.
 
-[]
+   ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page.png)
 
-Previews may not show all data you selected. To see more, you can export or customize this table.
+To return to the dataset details page, you can select the **Back** button on the action bar. Selecting the Back button will clear all your selections and bring you back to dataset details page.
 
-* Export: Exports the data to one of the supported file formats.
+Previews may not show all data you selected. To see more, you can export or customize the table.
 
+* **Export**: Exports the data to one of the supported file formats.
 
-* Selecting Customize opens the table in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity to the way you formatted the report. The exported report is saved to your default Downloads folder.
+   ![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
+
+* **Customize**: Customize opens the table in the [formatted table editor](../paginated-reports/paginated-formatted-table.md), maintaining your current selections. In the formatted table editor you can apply table styles, change aggregates, etc. You can then either export the formatted table to any of the supported file formats (the file will be saved to your default downloads folder), you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. The paginated report fully preserves the way you formatted the report.
+
+   ![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
 
 >[!NOTE]
 > Table view is intended to quickly show the detail level data of tables within your dataset. When selecting measures, they are not summarized by default. You can use the "Customize" table editor to switch between summarized and non- summarized views.
 >
 > Table view shows only distinct rows of the selected columns. For example, if you  two cities within one state and select only the state column, only one detail row will be shown. If you then select cities column, all of the rows will be displayed. You can also change this view by selecting the "Customize" table editor.
 
-	
-* Selecting Customize opens it in the formatted table experience, maintaining your current selections. In the formatted table experience you can apply table styles, change aggregates, or save it as a paginated report to a workspace.* Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
-
-Click on "Customize" button: Opened with same selected data in formatted table:
-	
-To return to the dataset details page, you can select the **Back** button on the action bar, it will clear all your selections and bring you back to dataset details page.
-  
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
