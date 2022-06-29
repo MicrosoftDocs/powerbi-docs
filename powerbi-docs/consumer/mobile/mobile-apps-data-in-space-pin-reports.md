@@ -103,15 +103,13 @@ Once the pinning has been saved, press **Exit** to return to the report.
 
 ## How do I know if I'm a Data in space Writer?
 
-If you see Data in space (preview) in your options menu, it means you are a Data in space Writer. If you don't see that option, it means that you don't have the Writer role, or that Data in space is not being used in your organization.
+If you see **Data in space (preview)** in a report's options menu, it means you are a Data in space Writer. If you don't see that option, it means that you don't have the Writer role, or that Data in space is not being used in your organization.
 
 ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
 
-You can also check your role by tapping your profile picture, choosing Settings, and scrolling down to Data in space (preview). Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
+You can also check your role by tapping your profile picture, choosing **Settings**, and scrolling down to **Data in space (preview)**. Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
 
 ![Screenshot of the Data in space (preview) section in the Power BI mobile app's settings.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-settings.png)
-
-You can also check your role by tapping your profile picture, choosing Settings, and scrolling down to Data in space (preview). Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
 
 ## Next steps
 
