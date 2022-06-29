@@ -32,7 +32,7 @@ Integrating metrics and scorecards deeply into reporting solutions is a great wa
 
      :::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual-empty-state.png" alt-text="Screenshot showing scorecard visual empty state.":::
 
-    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. The new scorecard and the associated dataset gets created in the workspace that you select.
+    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. The new scorecard and the associated dataset get created in the workspace that you select.
 
     :::image type="content" source="media/power-bi-visualization-scorecard-visual/create-scorecard.png" alt-text="Screenshot showing create scorecard experience.":::
 

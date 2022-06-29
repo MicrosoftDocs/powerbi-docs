@@ -182,7 +182,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
 1. Expand the **Selection** pane. The **Layer order** should look like this:
 
-   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer-order.png" alt-text="Screenshot showing the Layer order tab in the Selection pane..":::
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer-order.png" alt-text="Screenshot showing the Layer order tab in the Selection pane.":::
 
 1. Save the report changes and switch to **Reading view**.
 
