@@ -48,6 +48,22 @@ You must be a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer
 
 1. Make sure **Pin data view with current filters** is checked if you want to pin the report with the currently applied filters. This filter will be applied when other users, discovering the report, view the card and open the report. Tap **Open camera**.
 
+1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app learn the space and map it, in order to be able to create and save a spatial anchor, which the report will be  data providing a durable representation of a 3D point and orientation in a space.
+
+    ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report.png)
+
+1. At some point the report's card will appear on the screen, seemingly floating in space. Continue to scan the space until the Pin button lights up. You can then reposition the card, resize it, or rotate it.
+
+    ![Screenshot of Power BI report ready for pinning in scanned location.](./media/mobile-apps-data-in-space-pin-reports/pin-report-to-location.png)
+
+    * Tap and drag to reposition.
+    * Pinch in and out to resize
+    * Place two fingers on the screen and rotate them clockwise or counter-clockwise to rotate from side to side.  
+
+    When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to pin the card to the location. 
+
+Once the pinning has been saved, press **Exit** to return to the report. 
+
 ## How do I know if I'm a Data in space Writer?
 
 If you see Data in space (preview) in your options menu, it means you are a Data in space Writer. If you don't see that option, it means that you don't have the Writer role, or that Data in space is not being used in your organization.
