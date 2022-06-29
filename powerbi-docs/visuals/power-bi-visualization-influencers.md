@@ -46,7 +46,7 @@ The key influencers visual is a great choice if you want to:
 
 ## Analyze a metric that is categorical
  
-Watch this video to learn how to create a key influencers visual with a categorical metric. Then follow these steps to create one. 
+Watch this video to learn how to create a key influencers visual with a categorical metric. Then follow the steps to create one. 
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
