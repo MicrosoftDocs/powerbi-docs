@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
@@ -112,12 +112,111 @@ To generate the embed token, provide the following information:
 * **Username** (Optional if no RLS. Required for RLS) - A valid username recognized by the SSAS that will be used as the effective identity. If the database doesn't use RLS and no username is provided, the master user's credentials are used.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
 
+Example:  
+
+```csharp
+// Example of user identity with no RLS:
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "Domain\\Username", // can also be username@contoso.com
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+
+// Example of user identity and role with RLS
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "username@contoso.com",
+            "roles": [ "MyRole"],
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+
+public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
+{
+    PowerBIClient pbiClient = this.GetPowerBIClient();
+
+    // Defines the user identity and roles.
+    var rlsIdentity = identity
+    
+    // Create a request for getting an embed token for the rls identity defined above
+    // This method works only with new Power BI V2 workspace experience
+    var tokenRequest = new GenerateTokenRequestV2(
+        reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
+        datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
+        targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
+        identities: new List<EffectiveIdentity> { rlsIdentity }
+    );
+
+    // Generate an embed token
+    var embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest);
+
+    return embedToken;
+}
+
+```
+
 ## [Service principal or service principal profile](#tab/service-principal)
 
 To generate the embed token, provide the following information:
 
 * **Username** (required) - A valid username recognized by the SSAS that will be used as the effective identity.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
+
+Example:
+
+```csharp
+// Example of user identity with no RLS:
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "Domain\\Username", // can also be username@contoso.com
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+
+// Example of user identity and role with RLS
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "username@contoso.com",
+            "roles": [ "MyRole"],
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+
+public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
+{
+    PowerBIClient pbiClient = this.GetPowerBIClient();
+
+    // Defines the user identity and roles.
+    var rlsIdentity = identity
+    
+    // Create a request for getting an embed token for the rls identity defined above
+    // This method works only with new Power BI V2 workspace experience
+    var tokenRequest = new GenerateTokenRequestV2(
+        reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
+        datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
+        targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
+        identities: new List<EffectiveIdentity> { rlsIdentity }
+    );
+
+    // Generate an embed token
+    var embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest);
+
+    return embedToken;
+}
+```
 
 ---
 Now you can embed your report in your app, and your report will filter data according to the permissions of the user accessing the report.
