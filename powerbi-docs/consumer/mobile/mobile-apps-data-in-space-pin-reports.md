@@ -19,7 +19,46 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
+With the Power BI app’s Data in space feature, you can pin reports in augmented reality to real-world locations where those who need them can find and access them - in context, on location.
 
+When you pin a report to a location, a spatial anchor is created. The spatial anchor is a representation of the point you selected and its orientation in a space. Thus, when you pin a report, you need to use your mobile app's camera to scan the space to capture as much information about it as possible, so that the anchor will have enough data.
+
+This article is for [Data in space writers](#how-do-i-know-if-im-a-data-in-space-writer), and describes how to
+
+* Pin data to locations in the real world
+* Change the position, size, and orientation of pinned data
+* Unpin data from a location
+
+## Pin a report to a real-world location
+
+You must be a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer) to perfom this task.
+
+1. Go to the location where you want to pin a report.
+1. Open the report. You can pin the report with currently applied filters, so apply any filters, if desired.
+1. Tap **More options (…)** and choose **Data in space (preview)**.
+
+    ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
+    
+    >[!NOTE]
+    > If you don't see the Data in space (preview) option, it means either that you don't have the required Data in space role or that your organization is not using the Data in space feature.
+    
+    The **Data in space** page opens. It shows you the card that viewers will see floating in space when they scan an area looking for reports. The card shows the state of the report with the current filters. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
+
+    ![Screenshot of the Open camera page, showing a preview of a card.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-card-preview.png)
+
+1. Make sure **Pin data view with current filters** is checked if you want to pin the report with the currently applied filters. This filter will be applied when other users, discovering the report, view the card and open the report. Tap **Open camera**.
+
+## How do I know if I'm a Data in space Writer?
+
+If you see Data in space (preview) in your options menu, it means you are a Data in space Writer. If you don't see that option, it means that you don't have the Writer role, or that Data in space is not being used in your organization.
+
+![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
+
+You can also check your role by tapping your profile picture, choosing Settings, and scrolling down to Data in space (preview). Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
+
+![Screenshot of the Data in space (preview) section in the Power BI mobile app's settings.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-settings.png)
+
+You can also check your role by tapping your profile picture, choosing Settings, and scrolling down to Data in space (preview). Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
 
 ## Next steps
 
