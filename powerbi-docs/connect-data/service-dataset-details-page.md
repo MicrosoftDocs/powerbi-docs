@@ -105,7 +105,7 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
-The parent checkbox on the dataset's table indicates whether all the tables and columns have been selected, or only a subset.
+The parent checkbox on a dataset's table indicates whether all the tables and columns have been selected, or only a subset.
 
 * All selected
 
@@ -122,7 +122,7 @@ When you select tables or columns, they will be displayed on the **Table preview
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table view is intended to quickly show the detail level data of tables within your dataset. Se;ected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
+> Table view is intended to quickly show the detail level data of tables within your dataset. Selected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
 >
 > Table view shows only distinct rows of the selected columns. For example, if you have two cities from the same state and you select only the state column, only one detail row will be shown. If you then select the cities column, all of the rows will be displayed. You can also change this view by selecting **Customize** (see below) and using the formatted table editor.
 
