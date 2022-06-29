@@ -8,12 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/17/2022
+ms.date: 06/29/2022
+ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI
 
-[!INCLUDE[consumer-appliesto-yyyy](../includes/consumer-appliesto-nyyy.md)]    
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 > [!NOTE]
 > These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.

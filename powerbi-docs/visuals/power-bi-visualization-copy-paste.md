@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 ms.custom: sample-salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
