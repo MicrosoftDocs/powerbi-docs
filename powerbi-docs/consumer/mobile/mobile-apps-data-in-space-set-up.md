@@ -22,8 +22,9 @@ This article explains how to set up Data in space in your organization. Data in 
 Setting up Data in space for your organization involves three steps:
 1. Creating an Azure Spatial Anchors resource.
 1. After creating the resource, the following need to be done, in any order:
-* Connecting Power BI to the Azure Spatial Anchors resource.
-* Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps.
+
+    * Connecting Power BI to the Azure Spatial Anchors resource.
+    * Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps.
 
 ## Create an Azure Spatial Anchors resource
 This step requires that you have a role that gives you `Microsoft.Authorization/roleAssignments/write` permissions, such as **User Access Administrator** or **Owner**. See [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current) for more information.
@@ -46,7 +47,7 @@ This step requires that you have both of the following:
 
 Go to **Admin portal > Azure Connections > Data in space (preview)** and add the connection details.
 
-![Screenshot of the Power BI Data in space admin setting where you connect to the Azure Spatial Anchors resource.]()
+:::image type="content" source="./media/mobile-apps-data-in-space-set-up/power-bi-mobile-app-data-in-space-azure-connection.png" alt-text="Screenshot of the Power BI Data in space admin setting where you connect to the Azure Spatial Anchors resource.":::
 
 >[!NOTE]
 > You can connect Power BI to only one Azure Spatial Anchors service.
