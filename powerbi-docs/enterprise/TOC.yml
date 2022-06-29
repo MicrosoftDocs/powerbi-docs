@@ -77,7 +77,7 @@
           href: service-premium-install-gen2-app.md
         - name: Using the Premium Gen2 metrics app
           href: service-premium-gen2-metrics-app.md 
-        - name: Smoothing performance
+        - name: Performance smoothing
           href: service-premium-smoothing.md                    
         - name: Backup and restore Power BI Premium datasets
           href: service-premium-backup-restore-dataset.md
