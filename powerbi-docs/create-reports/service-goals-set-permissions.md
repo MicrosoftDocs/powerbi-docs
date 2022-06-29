@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 ---
 # Protect your scorecards with metric-level permissions
 
@@ -53,7 +53,7 @@ Another aspect of metric-level permissions is enabling a *default* permission mo
 
 The default permissions apply to anyone accessing the scorecard who is not a member of another role already.  If someone is a member of another role, they assume those permissions over the default permissions. 
 
-- Select **More options (...)** in the role card and select **Set as default**.
+- Select **More options** in the role card and then select **Set as default**.
 
     :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu.":::
 
