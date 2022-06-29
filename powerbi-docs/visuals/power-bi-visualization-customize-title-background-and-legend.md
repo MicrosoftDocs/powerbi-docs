@@ -121,6 +121,9 @@ Depending on the visual and its size, data labels may not display.  If your data
 
 In the following video, watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
 
+[!NOTE]
+This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
@@ -148,6 +151,9 @@ Change the layering order of visuals and shapes in your reports. Layer order det
 Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Service.
 
 In this video, watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
+
+[!NOTE]
+This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
 
