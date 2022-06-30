@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 07/01/2022
+ms.custom: sample-salesandreturns
 ---
 # Customize statuses on your Power BI scorecard
 
