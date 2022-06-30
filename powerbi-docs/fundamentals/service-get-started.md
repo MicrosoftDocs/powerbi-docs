@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 06/21/2021
+ms.date: 06/29/2022
 Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
 
 # Tutorial: Get started creating in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
@@ -120,11 +122,11 @@ Now that you've connected to data, start exploring. When you've found something 
   
     A success message (near the top-right corner) lets you know the visualization was added as a tile to your dashboard.
 
+7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile.
+
     :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Screenshot of Pinned to dashboard dialog.":::
 
     Now that you've pinned this visualization, it's stored on your dashboard. The data stays up-to-date so you can track the latest value at a glance. However, if you change the visualization type in the report, the visualization on the dashboard doesn't change.
-
-7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile.
 
    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Screenshot of dashboard with visualization pinned.":::
 
@@ -152,7 +154,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
 
-4. Some suggestions return a single value. For example, select **what is the average cog**.
+4. Some suggestions return a single value. For example, select **what is the average sale**.
 
     Q&A searches for an answer and presents it in the form of a *card* visualization.
 
@@ -160,9 +162,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Screenshot of pinning the visual.":::
 
-6. Go back to Q&A and select **Show all suggestions**.
-
-7. Select **total profit by country**. 
+6. Go back to Q&A and type *total profit by country*. 
 
     :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Screenshot of total profit by country.":::
 
@@ -178,25 +178,25 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 12. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
-
     You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
+
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
 
 ## Step 4: Reposition tiles
 
 We can rearrange the tiles to make better use of the dashboard space.
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, then release it.
+1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the *Average of Sales* tile, then release it.
 
     :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Screenshot of resizing the tile.":::
 
     Now the two tiles are the same height.
 
-2. Select **More options (...)** for the Average of COGS tile > **Edit details**. 
+2. Select **More options (...)** for the Average of Sales tile > **Edit details**. 
 
     :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Screenshot of More options menu for a tile.":::
 
-3. In the **Title** box, type *Average Cost of Goods Sold* > **Apply**.
+3. In the **Title** box, type *Sales Average* > **Apply**.
 
     :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Screenshot of Edit details dialog box.":::
 

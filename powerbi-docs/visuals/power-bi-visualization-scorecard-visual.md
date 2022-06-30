@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 06/30/2022
 LocalizationGroup: Visualizations
 ---
 # Create a scorecard visual in Power BI
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 Integrating metrics and scorecards deeply into reporting solutions is a great way to drive alignment and progress on a team. With the new scorecard visual in Power BI Desktop, you have the flexibility from an authoring perspective to add an existing scorecard to a report, or create a new scorecard. You can seamlessly integrate existing scorecards into reports, and even make updates to a scorecard directly from Power BI Desktop. 
 
-:::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual.gif" alt-text="Screenshot showing a scorecard visual in a report.":::
+:::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual.png" alt-text="Screenshot showing a scorecard visual in a report.":::
 ## Prerequisites
 
 - You must be signed in to Power BI Desktop and have a Power BI Pro license.
@@ -31,7 +31,7 @@ Integrating metrics and scorecards deeply into reporting solutions is a great wa
 
      :::image type="content" source="media/power-bi-visualization-scorecard-visual/scorecard-visual-empty-state.png" alt-text="Screenshot showing scorecard visual empty state.":::
 
-    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. The new scorecard and the associated dataset gets created in the workspace that you select.
+    Selecting **Create new scorecard** lets you author scorecards in Power BI Desktop, just like you can in the Power BI service. The new scorecard and the associated dataset get created in the workspace that you select.
 
     :::image type="content" source="media/power-bi-visualization-scorecard-visual/create-scorecard.png" alt-text="Screenshot showing create scorecard experience.":::
 
