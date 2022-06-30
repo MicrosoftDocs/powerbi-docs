@@ -3,8 +3,7 @@ title: Dynamic row-level security embedding with SSO
 description: Dynamic RLS embedding with single sign-on services 
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: mberdugo
-editor: mberdugo
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
