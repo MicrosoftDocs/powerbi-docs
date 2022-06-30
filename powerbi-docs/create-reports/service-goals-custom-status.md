@@ -49,7 +49,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
     :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-5.png" alt-text="Screenshot of A view of how you can sort the status column by ascending or descending priority.":::
 
-- To reset all statuses to the default settings, (the original scorecard statuses) select **Reset statuses** at the top.
+- To reset all statuses to the default settings (the original scorecard statuses), select **Reset statuses** at the top.
 
 ## Delete statuses
 
