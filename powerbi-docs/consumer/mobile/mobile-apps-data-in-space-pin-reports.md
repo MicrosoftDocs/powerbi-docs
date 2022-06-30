@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/27/2022
+ms.date: 06/30/2022
 ms.custom: mode-portal
 #customer intent: I want to learn how to pin Power BI reports in augmented reality at real world locations.
 ---
