@@ -100,10 +100,11 @@ Once the pinning has been saved, press **Exit** to return to the report.
  
 1. The edges of all visible cards will turn yellow. Tap a card to delete it, or tap **Delete all visuals** to delete all the pinned items that have been found.
 
+    >[!NOTE]
+    >Deleting a card unpins the report for everyone. It doesn’t delete the report in the Power BI service.
+
     ![Screenshot showing delete visual or delete all visuals options.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report-options.png)
 
-    >[!NOTE]
-    >Deleting a cards unpins the report for everyone. It doesn’t delete the report in the Power BI service.
 
 ## How do I know if I'm a Data in space Writer?
 
