@@ -15,18 +15,20 @@ ms.custom: mode-portal
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
+| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) |
+|:--- |:--- |
+|iPhones |iPads |
 
 With the Power BI app’s Data in space feature, you can pin reports in augmented reality to real-world locations where those who need them can find and access them - in context, on location.
+
+![Screenshot of reports using the Data in space feature.](./media/mobile-apps-data-in-space-pin-reports/power-bi-mobile-app-data-in-space-final-result.png)
 
 When you pin a report to a location, a spatial anchor is created. The spatial anchor is a representation of the point you selected and its orientation in a space. Thus, when you pin a report, you need to use your mobile app's camera to scan the space to capture as much information about it as possible, so that the anchor will have enough data.
 
 This article is for [Data in space writers](#how-do-i-know-if-im-a-data-in-space-writer), and describes how to
 
 * Pin data to locations in the real world
-* Change the position, size, and orientation of pinned data
+* Change the position, size, and rotation of pinned data
 * Unpin data from a location
 
 ## Pin a report to a real-world location
@@ -42,11 +44,13 @@ You must be a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer
     >[!NOTE]
     > If you don't see the Data in space (preview) option, it means either that you don't have the required Data in space role or that your organization is not using the Data in space feature.
     
-    The **Data in space** page opens. It shows you the card that viewers will see floating in space when they scan an area looking for reports. The card shows the state of the report with the current filters. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
+    The **Data in space** page opens. It shows you the card that viewers will see in 3D pinned to locations when they scan an area looking for reports. The card shows the state of the report with the current filters applied. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
 
     ![Screenshot of the Open camera page, showing a preview of a card.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-card-preview.png)
 
-1. Make sure **Pin data view with current filters** is checked if you want to pin the report with the currently applied filters. This filter will be applied when other users, discovering the report, view the card and open the report. Tap **Open camera**.
+1. Tap **Open camera**.
+
+    If you want to pin the report with the currently applied filters, make sure the **Pin data view with current filters** checkbox is selected before opening the camera. When the box is checked, the current filter will be applied when other users, discovering the report, view the card and open the report.
 
 1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app learn the space and map it, in order to be able to create and save a spatial anchor, which the report will be  data providing a durable representation of a 3D point and orientation in a space.
 
