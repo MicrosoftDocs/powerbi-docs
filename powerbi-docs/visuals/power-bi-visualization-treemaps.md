@@ -104,7 +104,7 @@ You'll create a report and add a basic treemap.
 
 Highlighting a **Category** or **Detail** in a treemap cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to this report page or copy the treemap to one of the other pages in this report. The below image the treemap was copied over to the **Overview** page. 
 
-1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
+1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That action cross-highlights the other visualizations on the page. When you select **050-Shoes**, for example, the visualization shows that last year's sales for shoes was **$15,658,108** with **Fashions Direct** accounting for **$2,193,016** of those sales.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/treemaphiliting.png" alt-text="Screenshot of the Store Sales Overview report showing cross-highlighting.":::
 
