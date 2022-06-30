@@ -13,6 +13,8 @@ ms.custom: sample-salesandreturns
 ---
 # Customize statuses on your Power BI scorecard
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Statuses are an integral part of metric tracking. In some scenarios the statuses that come with a scorecard aren't right for your organization’s needs. You may want to customize the statuses to reflect your organization’s terminology.
 
 :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-1.png" alt-text="Screenshot of A view of metrics showing customized statuses in the status column.":::
