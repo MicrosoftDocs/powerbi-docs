@@ -50,7 +50,7 @@ Funnel charts:
 
 ## Prerequisite
 
-# [Power BI Desktop](#tab/powerbi-desktop
+# [Power BI Desktop](#tab/powerbi-desktop)
 This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
 ).
 
