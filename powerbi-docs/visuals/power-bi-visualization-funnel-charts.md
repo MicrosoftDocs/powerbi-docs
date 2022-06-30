@@ -4,11 +4,11 @@ description: 'Funnel charts in Power BI'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-qKRZPBnaUXM
+ms.custom: video-qKRZPBnaUXM, sample-opportunityanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/29/2021
+ms.date: 06/30/2022
 LocalizationGroup: Visualizations
 ---
 # Create and use funnel charts
@@ -102,7 +102,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
 
-   ![short video showing visual interactions](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
+   ![Screenshot shows two bars selected in the funnel visual with visual interactions,](media/power-bi-visualization-funnel-charts/funnel-chart-cross-filter.png)
 
 1. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../create-reports/service-reports-visual-interactions.md)
 
@@ -111,6 +111,3 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 [Gauges in Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-
-
