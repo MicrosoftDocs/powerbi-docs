@@ -7,14 +7,14 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 10/22/2021
+ms.date: 06/30/2022
 LocalizationGroup: Get started
 
 ---
 
 # Use Power BI metrics to improve results in Microsoft Teams
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Teams benefit from having clear and measurable objectives. Tracking metrics in Microsoft Teams with your team helps the team stay on track, promoting accountability, alignment, and visibility. By tracking progress towards key objectives together, the team can engage in creative and agile decision-making that helps achieve objectives faster. 
 
