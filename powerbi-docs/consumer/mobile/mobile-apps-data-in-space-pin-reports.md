@@ -52,15 +52,15 @@ You must be a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer
 
     ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report.png)
 
-1. At some point the report's card will appear on the screen, seemingly floating in space. Continue to scan the space until the Pin button lights up. You can then reposition the card, resize it, or rotate it.
+1. At some point the report's card will appear in 3D on the screen. Continue to scan the space until the **Pin** button lights up. At any point after the card appears you can start repositioning, resizing, and rotating it as desired.
 
-    ![Screenshot of Power BI report ready for pinning in scanned location.](./media/mobile-apps-data-in-space-pin-reports/pin-report-to-location.png)
-
-    * Tap and drag to reposition.
+    * Tap and drag the card to reposition
     * Pinch in and out to resize
     * Place two fingers on the screen and rotate them clockwise or counter-clockwise to rotate from side to side.  
 
-    When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to pin the card to the location. 
+    ![Screenshot of Power BI report ready for pinning in scanned location.](./media/mobile-apps-data-in-space-pin-reports/pin-report-to-location.png)
+
+    When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to pin the card to the location.
 
 Once the pinning has been saved, press **Exit** to return to the report.
 
