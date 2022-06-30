@@ -92,10 +92,12 @@ You can share the dataset with other users in your organization. Clicking the **
 
 Data preview enables you to view selected tables and columns from the dataset, and provides entry points for exporting the data to supported file formats, customizing it as a [formatted table](../paginated-reports/paginated-formatted-table.md), and saving it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
-To use data preview:
+### Prerequisites
 
-* The dataset must reside in a new workspace experience. Classic workspaces aren't supported. The workspace can be in either a Premium or non-Premium capacity. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+* The dataset can be inside Non-Premium or Premium workspaces. Classic workspaces are not supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 * You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
+
+### Select data to preview
 
 To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
 
@@ -105,36 +107,36 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
-The parent checkbox on a dataset's table indicates whether all the tables and columns have been selected, or only a subset.
+An entirely filled parent checkbox on the dataset's table indicates that all it's sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
 
-* All selected
+![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection.png)
 
-    ![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-all-selected.png)
-
-* Partially selected
-
-    ![Screenshot showing subset of columns selected.](./media/service-dataset-details-page/dataset-details-page-partially-selected.png)
-		
 When you select tables or columns, they will be displayed on the **Table preview** page that opens.
 
    ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page.png)
 
+Table preview may not show all of the data you've selected. To see more, you can export or customize the newly created table (see below).
+
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table view is intended to quickly show the detail level data of tables within your dataset. Selected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
+> Table preview is intended to quickly show the detail level data of tables within your dataset. Selected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
 >
-> Table view shows only distinct rows of the selected columns. For example, if you have two cities from the same state and you select only the state column, only one detail row will be shown. If you then select the cities column, all of the rows will be displayed. You can also change this view by selecting **Customize** (see below) and using the formatted table editor.
+> Table preview shows only distinct rows of the selected columns. For example, if you have two cities from the same state and you select only the state column, only one detail row will be shown. If you then select the cities column, all of the rows will be displayed.
 
-Previews may not show all data you selected. To see more, you can export or customize the table.
+### Exporting data
 
-* **Export**: Exports the data to one of the supported file formats.
+Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
 
-   ![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
+![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
 
-* **Customize**: Customize opens the table in the [formatted table editor](../paginated-reports/paginated-formatted-table.md), maintaining your current selections. In the formatted table editor you can apply table styles, change aggregates, etc. You can then either export the formatted table to any of the supported file formats (the file will be saved to your default downloads folder), you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. The paginated report fully preserves your report formatting.
+### Customizing the data
 
-   ![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
+Selecting the **Customize** button opens the table in the [formatted table editor](../paginated-reports/paginated-formatted-table.md), maintaining your current selections.
+
+In the formatted table editor you can apply table styles, change aggregates, etc. You can then either export the formatted table to any of the supported file formats (the file will be saved to your default downloads folder), you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. Paginated reports fully preserve your report formatting.
+
+![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
 
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
