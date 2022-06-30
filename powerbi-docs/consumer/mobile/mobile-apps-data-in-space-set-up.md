@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/27/2022
+ms.date: 06/30/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to set up the Data in space feature in my organization.
 ---
@@ -15,18 +15,23 @@ ms.custom: mode-portal
 
 Data in space is a feature of the Power BI mobile apps that enables Power BI reports to be pinned in augmented reality to locations in the real world, where they can be found by the people who need to access those reports on location.
 
+![Screenshot of reports using the Data in space feature.](./media/mobile-apps-data-in-space-set-up/power-bi-mobile-app-data-in-space-final-result.png)
+
 When Data in space is set up, specified people in the organization can pin reports to locations. Using the Power BI mobile app's camera, they scan and map a location and pin a report there. Afterwards, the people who need to access the report can scan the area with their mobile app's camera and find the pinned reports floating in augmented reality at the place they were pinned. They can then tap the report to open it.
 
 This article explains how to set up Data in space in your organization. Data in space uses Azure Spatial Anchors for storing location-mapping data, so the article includes references and notes concerning creating and configuring the required Azure Spatial Anchors resource.
 
 Setting up Data in space for your organization involves three steps:
+
 1. Creating an Azure Spatial Anchors resource.
-1. After creating the resource, the following need to be done, in any order:
+
+1. After the resource has been created, doing the following, in any order:
 
     * Connecting Power BI to the Azure Spatial Anchors resource.
     * Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps.
 
 ## Create an Azure Spatial Anchors resource
+
 This step requires that you have a role that gives you `Microsoft.Authorization/roleAssignments/write` permissions, such as **User Access Administrator** or **Owner**. See [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current) for more information.
 
 In the Azure portal, create an Azure Spatial Anchor resource for Power BI. See [Create an Azure Spatial Anchors account](/azure/spatial-anchors/how-tos/create-asa-account?tabs=azure-portal) for detail.
@@ -58,12 +63,12 @@ This step requires that you have a role in the resource that gives you `Microsof
 
 After the Azure Spatial Anchors resource has been created, you need to assign users to Spatial Anchors Account roles in the Azure Spatial Anchors resource, based on what role you want them to have in the mobile app. The Power BI mobile app will enable Data in Space functionality for a user based on the user's role in Spatial anchors account:
 
-* Users that are assigned to the **Spatial Anchors Account Owner** role, will be allowed to create, edit, scan and delete anchors in Power BI mobile app, and will be assigned to a **Data in Space Writer** role.
+* Users who are assigned to the **Spatial Anchors Account Owner** role will be allowed to create, edit, scan and delete anchors in Power BI mobile app, and will given the **Data in Space Writer** role in the mobile app.
 
-* Users that are assigned to the **Spatial Anchors Account Reader** role, will be allowed to scan/search for anchors created by others, and will be assigned to a **Data in Space Reader** role.
+* Users who are assigned to the **Spatial Anchors Account Reader** role will be allowed to scan/search for anchors created by others, and will be given the **Data in Space Reader** role in the mobile app.
 
 >[!NOTE]
-> Only role-assignable groups can be assigned to Spatial Anchors Account roles. See [Create a role-assignable group in Azure Active Directory](/azure/active-directory/roles/groups-create-eligible) for more information about role-assignable groups. See [Azure role-based access control](/azure/spatial-anchors/concepts/authentication?tabs=csharp#azure-role-based-access-control) for detail.
+> Only role-assignable groups can be assigned to Spatial Anchors Account roles. See [Create a role-assignable group in Azure Active Directory](/azure/active-directory/roles/groups-create-eligible) for more information about role-assignable groups.
 
 ## Next steps
 
