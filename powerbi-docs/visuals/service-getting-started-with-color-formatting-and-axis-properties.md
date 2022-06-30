@@ -21,7 +21,7 @@ To get started, open a report in Power BI Desktop or the Power BI service. Both 
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png" alt-text="Menu bar showing Edit option.":::
 
-When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint brush), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
+When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane, there are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint brush), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png" alt-text="Visualization pane with Fields icon selected.":::
 
@@ -58,7 +58,7 @@ and more.
 
 Also note that if you don’t have any visualization selected, **Filters** appears in place of the icons, which lets you apply filters  to all visualizations on the page.
 
-The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
+The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible number of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
 1. Change colors used in the visual
 1. Apply a style
@@ -94,11 +94,11 @@ Here are a few useful tips for working with colors. The numbers in the following
 
    :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png" alt-text="Data color section with color palette open.":::
 
-Not crazy about the change you just made? Use **CTRL+Z** to undo , just like you’re used to doing.
+Not crazy about the change you just made? Use **CTRL+Z** to undo, just like you’re used to doing.
 
 ## Applying a style to a table
 
-Some Power BI visualizations have a **Style** option. With one click, a full set of formatting options are applied to your visualization, all at once. 
+Some Power BI visualizations have a **Style** option. One click applies a full set of formatting options to your visualization, all at once. 
 
 1. Select a table or matrix to make it active.   
 1. Open the Formatting tab and select **Style presets**.
