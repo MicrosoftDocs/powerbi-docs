@@ -7,12 +7,13 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/26/2021
+ms.date: 06/30/2022
+ms.custom: sample-opportunity-analysis
 LocalizationGroup: Visualizations
 ---
 # Display a visualization's underlying data
 
-[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 ## Show data as a table
 
@@ -21,11 +22,11 @@ A Power BI visualization is constructed using data from your datasets. If you're
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Show as a table* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../create-reports/desktop-see-data-see-records.md).
+> *Show as a table* and *Export Data* are both available in Power BI Desktop and the Power BI service. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../create-reports/desktop-see-data-see-records.md).
 
 ## Using *Show as a table*
 
-1. In Power BI Desktop, select a visualization to make it active.
+1. Select a visualization to make it active.
 
 1. Select **More actions** (...) and choose **Show as a table**.
 
@@ -45,7 +46,7 @@ You can also export the data that is being used to create the visualization as a
 
    For more information on exporting the data to Excel, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
-1. Select **Back to report** to return to the Desktop report canvas.
+1. Select **Back to report** to return to the canvas.
 
 ## Using Show records
 
@@ -53,7 +54,7 @@ You can also focus on one data record in a visualization, and drill into the det
 
 ## Considerations and troubleshooting
 
-- If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support it.
+- If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization doesn't support it.
 
 ## Next steps
 
