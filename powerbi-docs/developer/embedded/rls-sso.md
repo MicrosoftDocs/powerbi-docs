@@ -66,13 +66,13 @@ To generate an embed token:
 
   The report rendered will have the username as the user that the SQL token was created for and the effective identity as the role member (username).
 
-In the following example, `France` is a member of the role `CountryDynamic`. The effective identity in the rendered report would be France, while the username would be the user that the SQL token was created for.
+In the following example, `France` is a member of the role `Country`. The effective identity in the rendered report would be France, while the username would be the user that the SQL token was created for.
 
 SQL token: XXXXXXXXX
 
 Username: France
 
-Roles: CountryDynamic
+Roles: Country
 
 ---
 
