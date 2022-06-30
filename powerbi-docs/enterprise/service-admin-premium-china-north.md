@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 LocalizationGroup: Premium
 ms.custom: references_regions
 ---
@@ -19,6 +19,8 @@ ms.custom: references_regions
 [Premium Gen2](service-premium-gen2-what-is.md) and Gen2 features are not supported when using *China North*.
 
 If you require support for Gen2 or for any of the features listed in this article, use one of the other China regions, *China East*, *China East 2* or *China North 2*.
+
+To learn how to migrate your tenant to another region, see [Move between regions](../admin/service-admin-region-move.md).
 
 ## Unsupported features
 
