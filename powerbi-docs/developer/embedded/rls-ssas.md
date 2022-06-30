@@ -113,7 +113,7 @@ To generate the embed token, provide the following information:
 
 Example:  
 
-```csharp
+```json
 // Example of user identity with no RLS:
 {
     "accessLevel": "View",
@@ -136,13 +136,15 @@ Example:
         }
     ]
 }
+```
 
+```csharp
 public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
 {
     PowerBIClient pbiClient = this.GetPowerBIClient();
 
     // Defines the user identity and roles.
-    var rlsIdentity = identity
+    var rlsIdentity = identity;
     
     // Create a request for getting an embed token for the rls identity defined above
     // This method works only with new Power BI V2 workspace experience
@@ -169,7 +171,7 @@ To generate the embed token, provide the following information:
 
 Example:
 
-```csharp
+```json
 // Example of user identity with no RLS:
 {
     "accessLevel": "View",
@@ -192,13 +194,15 @@ Example:
         }
     ]
 }
+```
 
+```csharp
 public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
 {
     PowerBIClient pbiClient = this.GetPowerBIClient();
 
     // Defines the user identity and roles.
-    var rlsIdentity = identity
+    var rlsIdentity = identity;
     
     // Create a request for getting an embed token for the rls identity defined above
     // This method works only with new Power BI V2 workspace experience
