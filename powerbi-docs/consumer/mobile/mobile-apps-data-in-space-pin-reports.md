@@ -46,7 +46,7 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
     ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
     
     >[!NOTE]
-    > If you don't see the Data in space (preview) option, it means either that you don't have the required Data in space role or that your organization is not using the Data in space feature.
+    > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer) or that your organization is not using the Data in space feature.
     
     The **Data in space** page opens. It shows you the card that viewers will see in 3D pinned to locations when they scan an area looking for reports. The card shows the state of the report with the current filters applied. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
 
@@ -111,6 +111,8 @@ Once the pinning has been saved, press **Exit** to return to the report.
 
 
 ## How do I know if I'm a Data in space Writer?
+
+Data in space Writers can pin reports, change the position, size, or rotation of pinned reports, and unpin reports. They can also scan to find pinned reports at real world locations.
 
 Your can check your Data in space role by tapping your profile picture, choosing **Settings**, and scrolling down to **Data in space (preview)**. Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
 
