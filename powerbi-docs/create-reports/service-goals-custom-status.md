@@ -45,7 +45,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 - To delete a status, select the trash icon.
 - To reorder the statuses within the list, use the arrow buttons to move an item up, down, or select and drag the status to its new location.
 
-    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-4.png" alt-text="A screenshot of a status being reordered in the edit status pane.":::
+    :::image type="content" source="media/service-goals-custom-status/power-bi-custom-statuses-4.png" alt-text="Screenshot of a status being reordered in the edit status pane.":::
 
     By reordering the statuses, you're specifying the order of priority.  Priority order comes in handy back on the scorecard. You have the option to sort the metrics in order of status priority.
 
