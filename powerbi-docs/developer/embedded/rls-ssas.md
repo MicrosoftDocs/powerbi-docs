@@ -113,38 +113,23 @@ To generate the embed token, provide the following information:
 
 Example:  
 
-```json
-// Example of user identity with no RLS:
-{
-    "accessLevel": "View",
-    "identities": [
-        {
-            "username": "Domain\\Username", // can also be username@contoso.com
-            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
-        }
-    ]
-}
-
-// Example of user identity and role with RLS
-{
-    "accessLevel": "View",
-    "identities": [
-        {
-            "username": "username@contoso.com",
-            "roles": [ "MyRole"],
-            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
-        }
-    ]
-}
-```
-
 ```csharp
 public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
 {
     PowerBIClient pbiClient = this.GetPowerBIClient();
 
-    // Defines the user identity and roles.
-    var rlsIdentity = identity;
+    // Define the user identity and roles. Use one of the following:
+
+    EffectiveIdentity identity = new EffectiveIdentity(  //If no RLS
+       username: "Domain\\Username", // can also be username@contoso.com
+       datasets: new List<string>{ datasetId.ToString()}
+    )
+
+    EffectiveIdentity identity = new EffectiveIdentity(  // If RLS
+       username: "username@contoso.com",
+       roles: new List<string>{ "MyRole" },
+       datasets: new List<string>{ datasetId.ToString()}
+    )
     
     // Create a request for getting an embed token for the rls identity defined above
     // This method works only with new Power BI V2 workspace experience
@@ -171,38 +156,22 @@ To generate the embed token, provide the following information:
 
 Example:
 
-```json
-// Example of user identity with no RLS:
-{
-    "accessLevel": "View",
-    "identities": [
-        {
-            "username": "Domain\\Username", // can also be username@contoso.com
-            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
-        }
-    ]
-}
-
-// Example of user identity and role with RLS
-{
-    "accessLevel": "View",
-    "identities": [
-        {
-            "username": "username@contoso.com",
-            "roles": [ "MyRole"],
-            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
-        }
-    ]
-}
-```
-
 ```csharp
 public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
 {
     PowerBIClient pbiClient = this.GetPowerBIClient();
 
-    // Defines the user identity and roles.
-    var rlsIdentity = identity;
+    // Define the user identity and roles. Use one of the following:
+    var rlsidentity = new EffectiveIdentity(   // If no RLS
+       username: "Domain\\Username", // can also be username@contoso.com
+       datasets: new List<string>{ datasetId.ToString()}
+    );
+
+    var rlsidentity = new EffectiveIdentity(  // If RLS
+       username: "username@contoso.com",
+       roles: new List<string>{ "MyRole" },
+       datasets: new List<string>{ datasetId.ToString()}
+    );
     
     // Create a request for getting an embed token for the rls identity defined above
     // This method works only with new Power BI V2 workspace experience
