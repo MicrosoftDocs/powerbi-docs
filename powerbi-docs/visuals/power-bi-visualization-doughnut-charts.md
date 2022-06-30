@@ -26,9 +26,9 @@ A doughnut chart is similar to a pie chart in that it shows the relationship of 
 
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 

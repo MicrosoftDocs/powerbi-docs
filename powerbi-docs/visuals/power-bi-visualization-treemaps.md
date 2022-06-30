@@ -53,15 +53,31 @@ Treemaps are a great choice:
 
 ## Prerequisite
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis sample PBIX file**
+1. Find your copy of the **Retail Analysis sample PBIX file**.
 
 1. Open the **Retail Analysis sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Retail Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Retail Analysis Sample**. Select **Connect**.
+
+1. In your workspace, select the Retail Analysis Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    

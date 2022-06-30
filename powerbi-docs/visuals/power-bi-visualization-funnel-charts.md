@@ -50,17 +50,32 @@ Funnel charts:
 
 ## Prerequisite
 
+# [Power BI Desktop](#tab/powerbi-desktop
 This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
 ).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Opportunity Analysis Sample PBIX file**
+1. Find your copy of the **Opportunity Analysis Sample PBIX file**.
 
 1. Open the **Opportunity Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Opportunity Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Opportunity Analysis Sample**. Select **Connect**.
+
+1. In your workspace, select the Opportunity Analysis Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 ## Create a basic funnel chart
 
