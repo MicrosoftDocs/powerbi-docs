@@ -34,7 +34,7 @@ This article describes how to
 
 To be able to perform these tasks, you must be a [Data in space writer](#how-do-i-know-if-im-a-data-in-space-writer). In addition
 
-* To be able to pin reports or to change a pin's position, size, or rotation, you must have at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
+* To be able to pin reports or to change a pin's position, size, or rotation, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
 * To be able to unpin data from a location, you must be either the one who pinned the report or the report owner.
 
 ## Pin a report to a real-world location
