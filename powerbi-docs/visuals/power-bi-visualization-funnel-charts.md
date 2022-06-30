@@ -117,7 +117,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
 
-   ![Screenshot shows two bars selected in the funnel visual with visual interactions,](media/power-bi-visualization-funnel-charts/funnel-chart-cross-filter.png)
+   ![Screenshot shows two bars selected in the funnel visual with visual interactions.](media/power-bi-visualization-funnel-charts/funnel-chart-cross-filter.png)
 
 1. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../create-reports/service-reports-visual-interactions.md)
 
