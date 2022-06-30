@@ -8,7 +8,7 @@ editor: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 06/30/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report with row-level security on a single sign-on system (SSO)
@@ -24,7 +24,7 @@ The ISV app needs to connect to the data source using the user's credentials.
 
 To implement RLS with an SSO enabled dataset, do the following steps:
 
-* [Generate an SQL token](#generate-an-sql-token)
+* [Generate an SQL token](#generate-an-sql-access-token)
 Just like in portal and SSAS
 
 * [Generate an embed token](#generate-an-embed-token)
@@ -36,20 +36,20 @@ Before you start, make sure that you have:
 * An Azure SQL DirectQuery dataset with [SSO enabled](/connect-data/service-azure-sql-database-with-direct-connect#single-sign-on).
 * A datasource [configured with RLS](/power-bi/admin/service-admin-rls).
 
-## Generate an SQL token
+## Generate an SQL access token
 
 A service principal can't pass any credentials to the data source. A master user can pass its own credentials, but not different credentials for each user. For the data source to know which data to return, create an [access token](/azure/databricks/dev-tools/api/latest/aad/) for the SQL database with the specific user's credentials. When this token is passed to the data source, the data source returns only the data that user can access.
 
 ## Generate an embed token
 
-# [Embed token new way](#mb3d-new)
+### [Embed token new way](#tab/embed-new)
 
 To generate and embed token for gen2:
 
 * For a dataset *without* RLS
 * For a dataset *with* RLS
 
-# [Embed token old way](#embed-old)
+### [Embed token old way](#tab/embed-old)
 
 To generate an embed token:
 
