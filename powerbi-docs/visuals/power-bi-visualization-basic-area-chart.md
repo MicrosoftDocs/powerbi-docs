@@ -33,34 +33,29 @@ Basic area charts are a great choice:
 
 ### Prerequisites
 
-This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+To follow this tutorial in Power BI Desktop, download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). If you'd like to use the Power BI service, download the Retail Analysis PBIX file, and then upload it to a workspace in the Power BI service.
 
-1. From the upper left section of the menubar, select **File** > **Open report**.
+## Create a basic area chart
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**.
+These steps will help you create an area chart that displays this year's sales and last year's sales by month.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
-
-## Create a basic area chart
-
-1. These steps will help you create an area chart that displays this year's sales and last year's sales by month.
-
-   a. From the Fields pane, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
+1. From the Fields pane, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
 
    :::image type="content" source="media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png" alt-text="Screenshot of data values in an area chart.":::
 
-   b.  Convert the chart to a basic area chart by selecting the Area chart icon from the Visualizations pane.
+1. Convert the chart to a basic area chart by selecting the Area chart icon from the Visualizations pane.
 
    :::image type="content" source="media/power-bi-visualization-basic-area-chart/convert-chart.png" alt-text="Screenshot of the area chart icon in the Visualizations pane.":::
 
-   c.  Select **Time \> FiscalMonth** to add it to the **Axis** well.
+1. Select **Time \> FiscalMonth** to add it to the **Axis** well.
 
-   :::image type="content" source="media/power-bi-visualization-basic-area-chart/power-bi-area-chart-new.png" alt-text="Screenshot of axis values in an area chart.":::
+    :::image type="content" source="media/power-bi-visualization-basic-area-chart/power-bi-area-chart-new.png" alt-text="Screenshot of axis values in an area chart.":::
 
-   d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by \> FiscalMonth**. To change the sort order, select the ellipses again and select either **Sort ascending** or **Sort descending**.
+1. To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by \> FiscalMonth**. To change the sort order, select the ellipses again and select either **Sort ascending** or **Sort descending**.
 
 ## Highlighting and cross-filtering
 

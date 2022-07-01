@@ -26,6 +26,8 @@ You can also export the data that is being used to create the visualization as a
 
 ## Using *Show as a table*
 
+To follow this tutorial in Power BI Desktop, download the [Opportunity Analysis Sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix). If you'd like to use the Power BI service, download the Opportunity Analysis PBIX file, and then upload it to a workspace in the Power BI service.
+
 1. Select a visualization to make it active.
 
 1. Select **More actions** (...) and choose **Show as a table**.
