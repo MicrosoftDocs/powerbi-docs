@@ -39,7 +39,14 @@ To follow this tutorial in Power BI Desktop, download the [Retail Analysis Sampl
 
 These steps will help you create an area chart that displays this year's sales and last year's sales by month.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+
+# [Power BI service](#tab/powerbi-service)
+
+1. Open the **Retail Analysis Sample PBIX file** in the Power BI service, and select **Edit**.
+---
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
