@@ -27,14 +27,14 @@ In this tutorial, we'll dig into our Retail Analysis dataset and create a few ke
 # [Power BI Desktop](#tab/powerbi-desktop)
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open report**
+1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
-1. 
+
 # [Power BI service](#tab/powerbi-service)
 This tutorial uses the Retail Analysis Sample in the Power BI service.
 
