@@ -103,7 +103,7 @@ Some Power BI visualizations have a **Style** option. One click applies a full s
 1. Select a table or matrix to make it active.   
 1. Open the Formatting tab and select **Style presets**.
 
-   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png" alt-text="Select Style presets from Formatting tab.":::
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png" alt-text="Screenshot shows how to select Style presets from Formatting tab.":::
 
 1. Select a style from the dropdown.
 
