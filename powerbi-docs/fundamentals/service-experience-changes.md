@@ -1,5 +1,5 @@
 ---
-title: "Updates to your Power BI experience"
+title: "Updates to the experience in the Power BI service"
 description: Read about changes coming to the Power BI online service (app.powerbi.com).
 author: maggiesMSFT
 ms.author: maggies
@@ -7,12 +7,12 @@ ms.reviewer: 'kdholakia'
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 06/30/2022
+ms.date: 07/01/2022
 Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
 LocalizationGroup: Get started
 ---
 
-# Updates to your experience in the Power BI service
+# Updates to the experience in the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -35,21 +35,29 @@ Here’s an overview of the changes:
 
 Introducing the **Browse** page: 
  
-image
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-browse.png" alt-text="Screenshot of the new Browse page in the Power BI service.":::
 
-**Browse** simplifies the left navigation. It includes as a sub-navigation all the lists that were previously available individually: **Recent**, **Favorites**, and **Shared with me**. It’s easier than ever to find content in these lists with a new experience for filtering by keyword and improved filtering by content type, time, and endorsement.
+**Browse** simplifies the left navigation. It includes as a sub-navigation all the lists that were previously available individually: **Recent**, **Favorites**, and **Shared with me**. 
 
-image
+### Improved filtering
+
+It’s easier to find content in these lists with a new experience for filtering by keyword and improved filtering by content type, time, and endorsement.
+
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-filter.png" alt-text="Screenshot showing the expanded filtering experience.":::
 
 Any browser bookmarks you made for the **Recent**, **Favorites**, and **Shared with me** pages will now take you to the new **Browse** view for each.
 
-The Browse page will also be available in the Power BI personal app for Microsoft Teams. Don’t have the Power BI app for Teams yet? Get the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
+The Browse page will also be available in the Power BI personal app for Microsoft Teams. 
+
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-browse-teams.png" alt-text="Screenshot showing the new Browse experience also in the Power BI personal app in Teams.":::
+
+Don’t have the Power BI app for Teams yet? Get the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
 ## Navigation pane changes
 
 The left navigation pane will feature tooltips to explain what the icons represent. You see the tooltips by hovering over the icon in the nav pane.  With the new update, the left nav no longer expands. Instead, you hover over any icon and a tooltip appears.
 
-image
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-tooltips.png" alt-text="Screenshot showing the navigation pane with tooltips.":::
 
 We're also updating the way item navigation occurs. Previously, you could navigate between items through the expanded left nav pane workspace dropdown. Because the updated left nav pane is permanently collapsed, this flow goes away. You can still navigate between items by selecting the workspace icon, then selecting the relevant item from your workspace page.
 
@@ -57,17 +65,21 @@ We're also updating the way item navigation occurs. Previously, you could naviga
 
 In the previous workspace flyout, **My Workspace** was above the **Search** box.
  
-image 
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-my-workspace.png" alt-text="Screenshot showing the old placement of My Workspace."::: 
 
 It's shifting to below the **Search** box in the new workspace flyout.
+
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-my-workspace.png" alt-text="Screenshot showing the new placement of My Workspace.":::
  
 ## Get Data changes
 
 **Get data** is moving from the left navigation pane to the **Create** tab. Previously, to access **Get data**, you selected the icon at the bottom of the nav pane.
 
-image
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-get-data.png" alt-text="Screenshot showing the old location of Get Data.":::
 
 Now the Get data experience is moving to the **Create** experience. You access it by selecting **Create** > **Report** > **these options**, and then you're on the **Get Data** page. 
+
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-get-data.png" alt-text="Screenshot showing the new location of the Get Data experience.":::
 
 ## Next steps
 
