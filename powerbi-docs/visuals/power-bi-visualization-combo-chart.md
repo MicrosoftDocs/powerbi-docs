@@ -107,7 +107,7 @@ In this task, we'll compare gross margin and sales.
 1. Select the paintbrush icon :::image type="icon" source="media/power-bi-visualization-combo-chart/power-bi-paintbrush.png"::: to open the Formatting pane.
 1. Set **Y-axis** to **On**, then select the down arrow to expand the **Y-axis** options.
 1. Set **Y-axis** \> **Values** > **Display units** to **Millions**.
-1. Set **Y-axis** \> **Title** to **On**, then set **Style** to  **Show title only**
+1. Set **Y-axis** \> **Title** to **On**, then set **Style** to **Show title only**
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-open-y.png" alt-text="Combo chart open y example.":::
 
