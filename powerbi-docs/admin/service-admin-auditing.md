@@ -298,8 +298,8 @@ The following operations are available in both the audit and activity logs.
 | Added link to external resource | AddExternalResourceLink | |
 | Added Power BI folder access  | AddFolderAccess     | Not currently used      |
 | Added Power BI group members       | AddGroupMembers     |    |
-| Added user to Power BI gateway cluster | | |
-| Added user to Power BI gateway cluster datasource | | |
+| Added user to Power BI gateway cluster | AddUsersToGatewayCluster | |
+| Added user to Power BI gateway cluster datasource | AddUsersToGatewayClusterDatasource | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
 | Analyzed Power BI dataset  | AnalyzedByExternalApplication   | Generated when users interact with the service      |
 | Analyzed Power BI report    | AnalyzeInExcel   | Generated when a user selects **Analyze in Excel** on a report or dataset in the service and successfully generates an Excel workbook |
@@ -332,7 +332,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI email subscription   | CreateEmailSubscription       |            |
 | Created Power BI folder   | CreateFolder           |              |
 | Created Power BI gateway        | CreateGateway     |              |
-| Created Power BI gateway cluster datasource | | |
+| Created Power BI gateway cluster datasource | CreateGatewayClusterDatasource | |
 | Created Power BI group      | CreateGroup            |       |
 | Created Power BI report       | CreateReport <sup>1</sup>      |          |
 | Created Power BI template app | CreateTemplateApp |  |
