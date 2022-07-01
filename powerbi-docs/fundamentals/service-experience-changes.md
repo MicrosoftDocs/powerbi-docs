@@ -25,7 +25,7 @@ Here’s an overview of the changes:
 
 **Browse changes** The left navigation links for **Recent**, **Favorites**, and **Shared with me** full page lists are being combined in a new **Browse** tab. You can still search and filter these lists, and now you can even filter by keyword.
 
-**Left navigation changes** A major change coming to the left navigation pane is tooltips. Before, to see what an icon represented in the left navigation pane, you had to expand the entire menu. With the new update, the left nav no longers expands. Instead, you hover over any icon and a tooltip appears.
+**Left navigation changes** A major change coming to the left navigation pane is tooltips. Before, to see what an icon represented in the left navigation pane, you had to expand the entire menu.
 
 **Workspace flyout menu changes** The **My Workspace** link moves below the **Search** box in the workspace flyout menu.
 
@@ -37,23 +37,21 @@ Introducing the **Browse** page:
  
 image
 
-**Browse** simplifies the left navigation. It includes all the lists that were previously available as a sub-navigation: **Recent**, **Favorites**, and **Shared with me**. It’s easier than ever to find content in these lists with a new experience for filtering by keyword and improved filtering by content type, time, and endorsement.
+**Browse** simplifies the left navigation. It includes as a sub-navigation all the lists that were previously available individually: **Recent**, **Favorites**, and **Shared with me**. It’s easier than ever to find content in these lists with a new experience for filtering by keyword and improved filtering by content type, time, and endorsement.
 
 image
 
 Any browser bookmarks you made for the **Recent**, **Favorites**, and **Shared with me** pages will now take you to the new **Browse** view for each.
 
-The Browse page will also be available in the Power BI personal app for Microsoft Teams.
- 
-Don’t have the Power BI app for Teams yet? Get the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
+The Browse page will also be available in the Power BI personal app for Microsoft Teams. Don’t have the Power BI app for Teams yet? Get the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
 
 ## Navigation pane changes
 
-The left navigation pane will feature tooltips to explain what the icons represent. You see the tooltips by hovering over the icon in the nav pane. 
+The left navigation pane will feature tooltips to explain what the icons represent. You see the tooltips by hovering over the icon in the nav pane.  With the new update, the left nav no longer expands. Instead, you hover over any icon and a tooltip appears.
 
 image
 
-We're also updating the way item navigation occurs. Previously, you could navigate between items through the expanded left navigation pane workspace dropdown. This flow goes away because the updated left navigation pane is permanently collapsed. You can still navigate between items by selecting the workspace icon, then selecting the relevant item from your workspace page.
+We're also updating the way item navigation occurs. Previously, you could navigate between items through the expanded left nav pane workspace dropdown. Because the updated left nav pane is permanently collapsed, this flow goes away. You can still navigate between items by selecting the workspace icon, then selecting the relevant item from your workspace page.
 
 ## Workspace menu flyout changes
 
@@ -65,7 +63,7 @@ It's shifting to below the **Search** box in the new workspace flyout.
  
 ## Get Data changes
 
-Get data is moving from the left navigation pane to the **Create** tab. Previously, to access **Get data**, you selected the icon at the bottom of the nav pane.
+**Get data** is moving from the left navigation pane to the **Create** tab. Previously, to access **Get data**, you selected the icon at the bottom of the nav pane.
 
 image
 
