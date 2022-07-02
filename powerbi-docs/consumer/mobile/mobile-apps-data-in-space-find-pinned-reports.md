@@ -25,18 +25,18 @@ To perform these actions, you must be a Data in space **Viewer** or **Writer** [
 
 1. To discover reports pinned around you, tap the mobile app’s camera icon to open the scanner.
 
-![Screenshot showing the icon to open the mobile app's scanner.](./media/mobile-apps-data-in-space-find-pinned-reports/power-bi-mobile-app-camera-icon.png)
+    ![Screenshot showing the icon to open the mobile app's scanner.](./media/mobile-apps-data-in-space-find-pinned-reports/power-bi-mobile-app-camera-icon.png)
 
 2. Choose **AR scanner** and tap **Start scanning**.
+
+    ![Screenshot of Start scanning button in Data in space.](./media/mobile-apps-data-in-space-find-pinned-reports/start-scanning-button.png)
 
     >[!NOTE]
     > If you don't see the AR scanner option, it means either that you're not allowed to find pinned reports, or that your organization isn't using the Data in space functionality.
 
-    ![]()
+1. Scan the area around you by moving your camera slowly from side to side. It may take a few moments for the scanner to find the pinned reports. When the scanner detects pinned reports, they'll show up as cards suspended in three dimensional space at the locations they've been pinned at. The cards show an up-to-date, current view of the report. The data you see depends on your Power BI permissions.
 
-1. Scan the area where you expect to find reports around you by moving your camera slowly from side to side. It may take a few moments for the scanner to find the pinned reports. When the scanner detects pinned reports, they'll show up as cards floating in the air where they've been pinned. The cards show an up-to-date, current view of the report.
-
-    ![]()
+    ![Screenshot show a pinned report found during scanning.](./media/mobile-apps-data-in-space-find-pinned-reports/power-bi-mobile-app-data-in-space-final-result.png)
 
     At the bottom of your view, there is the report locator. The dotseach dot there on the concentric circles at the bottom of the scanner screen shows the reportir approximate position in relation to the direction you're facing. Notice that there might be reports located behind you.
 
