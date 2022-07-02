@@ -27,9 +27,20 @@ For example, let's say an elevator maintenance company wants the data for each e
 
 Data in Space is powered by Azure Spatial Anchors service and requires that Power BI admin will connect Power BI with that service. For more information, see [Set up Data in space for your organization](./mobile-apps-data-in-space-set-up.md).
 
-As a Power BI Mobile user, in order to use the Data in space feature, you need to have, in addition to a Power BI subscription, an assigned role in the Azure Spatial Anchors service. This role determines your Data in space role in the Power BI mobile app,  and what operations you'll be able to do in Power BI Data in space. To see what Data in space role you have, tap your profile picture, choose **Settings**, and scroll down to **Data in space (preview)**.
+As a Power BI Mobile user, in order to use the Data in space feature, you need to have, in addition to you Power BI subscription, an assigned role in the Azure Spatial Anchors service. This role determines your Data in space role in the Power BI mobile app, and what operations you'll be able to do in Power BI Data in space.
+
+There are two Data in space roles:
+
+* **Writer**: Data in space Writers can pin reports, change the position, size, and rotation of pinned reports, and delete pins.
+* **Viewer**: Data in space Viewers can find pinned reports, open reports they have access to, and request access to reports they don't have access to.
+
+To see what Data in space role you have, tap your profile picture, choose **Settings**, and scroll down to **Data in space (preview)**.
 
 ![Screenshot of data in space settings.](./media/mobile-apps-data-in-space-overview/data-in-space-settings.png)
+
+IF you see **None**, this means that your administrator has not given you a Data in space role, and you won't be able to pin reports or access pinned reports. Contact your administrator to request a Data in space role.
+
+If you do not see a Data in space section in your settings, it means that Data in space has not be set-up in your organization.
 
 ## Next steps
 

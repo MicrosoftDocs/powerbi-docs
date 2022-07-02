@@ -118,10 +118,6 @@ Your can check your Data in space role by tapping your profile picture, choosing
 
 ![Screenshot of the Data in space (preview) section in the Power BI mobile app's settings.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-settings.png)
 
-Alternatively, if you see **Data in space (preview)** in a report's options menu, it means you are a Data in space Writer. If you don't see that option, it means either that you don't have the Writer role, or that Data in space is not being used in your organization.
-
-![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
-
 ## Next steps
 
 * [Data in space overview](mobile-apps-data-in-space-overview.md)
