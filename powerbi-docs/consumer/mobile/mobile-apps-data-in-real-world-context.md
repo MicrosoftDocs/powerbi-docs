@@ -12,6 +12,17 @@ ms.date: 11/02/2021
 # Get data from the real world with the Power BI mobile apps
 The Power BI mobile apps can connect the real world directly to related BI information. The features described below make this possible. 
 
+## Data in space
+
+TBD
+
+For more information, see:
+
+* [Data in space overview](mobile-apps-data-in-space-overview.md)
+* [Pin Power BI reports to locations in the real world](mobile-apps-data-in-space-pin-reports.md)
+* [Find and access Power BI reports pinned to locations in the real world](mobile-apps-data-in-space-find-pinned-reports.md)
+* [Admin: Set up Data in space in your organization](mobile-apps-data-in-space-set-up.md)
+
 ## Barcode scanning
 
 Power BI data can be tagged with barcodes in Power BI Desktop. These barcodes can then be attached to objects in the real world, such as machines on a shop floor or items on the shelf in a store. When you scan such a barcode using the Power BI app’s camera, the reports that contain barcode data can be opened, filtered to the specific barcoded data.
