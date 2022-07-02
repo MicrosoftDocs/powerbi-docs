@@ -30,6 +30,8 @@
       href: mobile-apps-offline-data.md
     - name: "Power BI for HoloLens 2"
       href: mobile-hololens2-app.md
+    - name: "Data in space"
+      href: mobile-apps-data-in-space-overview.md
   - name: How to
     items: 
     - name: All mobile apps
@@ -84,8 +86,6 @@
         href: mobile-app-configuration.md
       - name: Data in space
         items:
-        - name: "Data in space overview"
-          href: mobile-apps-data-in-space-overview.md        
         - name: "Pin reports in space at real world locations"
           href: mobile-apps-data-in-space-pin-reports.md        
         - name: "Find and access pinned reports"

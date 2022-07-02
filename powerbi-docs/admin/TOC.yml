@@ -41,7 +41,10 @@
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
-      href: service-admin-auditing.md  
+      href: service-admin-auditing.md
+    - name: Set up Data in space
+      href: ../consumer/mobile/mobile-apps-data-in-space-set-up.md        
+
   - name: Monitor and manage Power BI
     expanded: false
     items:
