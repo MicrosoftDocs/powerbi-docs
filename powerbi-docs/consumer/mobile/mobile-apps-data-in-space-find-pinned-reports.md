@@ -50,7 +50,7 @@ This article describes how to find and access Power Bi data that has been pinned
 
     Since the report image on the thumbnail shows an up-to-date view of the report, double-tapping is convenient if all you need is a qucik glance at the report, to check KPIs, for example - there's no need to actually open the report itself. If you decide you do want to open the report, just tap the card.
 
-    Double tap the card again to send it back to its anchor.
+    Double tap the card again to send it back to its original location.
 
 ## Next steps
 

@@ -15,9 +15,9 @@ ms.custom: mode-portal
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
+| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) |
+|:--- |:--- |
+|iPhones |iPads |
 
 With Data in Space you can  connect your digital business data to your real-world places in facility management, manufacturing, retail, and many more use cases. You can put real-time data at the fingertips of employees where they need it, enabling them to make better, faster, and more informed decisions.
 
