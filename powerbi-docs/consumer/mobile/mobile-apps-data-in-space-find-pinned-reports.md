@@ -34,23 +34,21 @@ To perform these actions, you must be a Data in space **Viewer** or **Writer** [
     >[!NOTE]
     > If you don't see the AR scanner option, it means either that you're not allowed to find pinned reports, or that your organization isn't using the Data in space functionality.
 
-1. Scan the area around you by moving your camera slowly from side to side. It may take a few moments for the scanner to find the pinned reports. When the scanner detects pinned reports, they'll show up as cards suspended in three dimensional space at the locations they've been pinned at. The cards show an up-to-date, current view of the report. The data you see depends on your Power BI permissions.
+1. Scan the area around you by moving your camera slowly from side to side. It may take a few moments for the scanner to find the pinned reports. When the scanner detects pinned reports, they'll show up as cards suspended in three dimensional space at the locations they've been pinned to.The cards show an up-to-date, current view of the report. The data you see depends on your Power BI permissions.
 
     ![Screenshot show a pinned report found during scanning.](./media/mobile-apps-data-in-space-find-pinned-reports/power-bi-mobile-app-data-in-space-final-result.png)
 
-    At the bottom of your view, there is the report locator. The dotseach dot there on the concentric circles at the bottom of the scanner screen shows the reportir approximate position in relation to the direction you're facing. Notice that there might be reports located behind you.
+    At the bottom of your view, there is the report locator. Each dot there shows the reports approximate position in relation to the direction you're facing. Note that there might be reports located behind you!
 
-    Reports that you don't have access to will appear in the camera view, but instead of as thumbnails bearing the Power BI logo with data you will see a message explaining that you do not have access.
-
-    [Image of card with Power BI logo]
-
-    Tap the card to request access.
+    Reports that you don't have access to will appear in the camera view, but instead thumbnails with data, you'll see a message explaining that you don't have access. You can tap such cards to request access.
     
-1. Tap a card to open the report.
+1. Tap a card to open the report, or double tap it bring it to the center of the screen for a better look at the thumbnail.
 
-    The report image on the thumbnail shows an up-to-date view of the report, so if all you need to do is glance at the report, for example, to check KPIs, you can zoom in on the card by double-tapping it – there's no need to actually open the report itself.
+    ![Screenshot of zooming in on pinned report.](./media/mobile-apps-data-in-space-find-pinned-reports/data-space-card-zoom.gif)
 
-1. Double tap to bring the card to the center of the screen and have a better look of the thumbnail. Double tap to send it back to its anchor.
+    Since the report image on the thumbnail shows an up-to-date view of the report, dou doubled-tapping is convenient if all you need to do is a qucik glance at the report, for example, to check KPIs – there's no need to actually open the report itself. If you decide you do want to open the report, just tap the card.
+
+    Double tap the card again to send it back to its anchor.
 
 ## Next steps
 
