@@ -46,7 +46,7 @@ This article describes how to find and access Power Bi data that has been pinned
     
 1. Tap a card to open the report, or double tap it bring it to the center of the screen for a better look at the thumbnail.
 
-    ![Screenshot of zooming in on pinned report.](./media/mobile-apps-data-in-space-find-pinned-reports/data-space-card-zoom-anna.gif)
+    ![Screenshot of zooming in on pinned report.](./media/mobile-apps-data-in-space-find-pinned-reports/data-space-card-zoom.gif)
 
     Since the report image on the thumbnail shows an up-to-date view of the report, double-tapping is convenient if all you need is a qucik glance at the report, to check KPIs, for example - there's no need to actually open the report itself. If you decide you do want to open the report, just tap the card.
 
