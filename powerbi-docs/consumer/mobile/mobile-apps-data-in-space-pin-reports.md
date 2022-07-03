@@ -44,6 +44,8 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
 1. Tap **More options (…)** and choose **Data in space (preview)**.
 
     ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
+
+    ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option-anna.png)
     
     >[!NOTE]
     > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer) or that your organization is not using the Data in space feature.
