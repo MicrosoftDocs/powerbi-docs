@@ -58,7 +58,7 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
 
 1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app learn the space and map it in order to be able to create and save a spatial anchor. The spatial anchor provides a fixed location and orientation for your report in the mapped three dimensional space.
 
-    ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report.png)
+    ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report-anna.png)
 
 1. At some point the report's card will appear in 3D on the screen. Continue to scan the space until the **Pin** button lights up. At any point after the card appears you can start repositioning, resizing, and rotating it as desired.
 
