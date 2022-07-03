@@ -90,8 +90,6 @@
       href: drill-down-support.md
     - name: "Add colors to your visual" 
       href: add-colors-power-bi-visual.md
-    - name: "Add conditional formatting" 
-      href: conditional-format.md
     - name: "Highlight data in visuals"
       href: highlight.md
     - name: "Enable selection across multiple visuals"

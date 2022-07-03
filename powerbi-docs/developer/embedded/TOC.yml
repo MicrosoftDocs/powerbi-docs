@@ -48,7 +48,9 @@
     - name: "Use the Power BI SDK with service principal profiles"
       href: service-principal-profile-sdk.md   
     - name: "Move an embedded app to production"
-      href: move-to-production.md          
+      href: move-to-production.md   
+    - name: "Add conditional formatting to a report" 
+      href: conditional-format.md       
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
