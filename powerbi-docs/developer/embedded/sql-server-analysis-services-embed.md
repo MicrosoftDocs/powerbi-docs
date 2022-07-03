@@ -1,28 +1,28 @@
 ---
 title: Embed a report on an on-premises SQL Server Analysis Services (SSAS)
-description: Embed a report with an on-prem dataset model, with or without RLS, using a live connection
+description: Embed a report with an on-premises dataset model, with or without RLS, using a live connection
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/29/2022
-#Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
+ms.date: 07/03/2022
+#Customer intent: As an ISV with an on-premises dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 
 This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises-on-prem) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application. This article applies to **all** live connection SSAS models whether or not they implement RLS.
 
-In this scenario, the database is on the SSAS (on-prem) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions, if there are any, are defined in the SSAS (on-prem) model, and *not* in Power BI Desktop.
+In this scenario, the database is on the SSAS (on-premises) model, and the Power BI engine connects to it via a [gateway](pbi-glossary.md#gateways-or-on-premises-data-gateways). The security roles (RLS) and permissions, if there are any, are defined in the SSAS model, and *not* in Power BI Desktop.
 
 ## Who this article is for
 
-This article is mostly relevant for ISVs who already have an on-prem database setup (with or without RLS) and want to embed content directly from there.
+This article is mostly relevant for ISVs who already have an on-premises (SSAS) database setup (with or without RLS) and want to embed content directly from there.
 
 ## ISV setup
 
-On-prem row level security is only available with a live connection, but you can create a live connection to any database whether or not it implements RLS. This includes:
+On-premises row level security is only available with a live connection, but you can create a live connection to any database whether or not it implements RLS. This includes:
 
 * Databases with no RLS roles set up
 * Databases with members who belong to one or more roles
@@ -36,7 +36,7 @@ To embed a report from an SSAS model, you need to do the following actions:
 
 ## Set up the gateway
 
-[Add a data source connection to the on-prem gateway](../../connect-data/service-gateway-data-sources.md#add-a-data-source)
+[Add a data source connection to the SSAS gateway](../../connect-data/service-gateway-data-sources.md#add-a-data-source)
 
 Enter the Datasource name, datasource type, Server, database, a username and password that the active directory recognizes.
 
@@ -78,7 +78,7 @@ A service principal profile can't be an admin. If you're using a service princip
 
 ### Map User names
 
-If the usernames on the on-prem directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Azure AD to users from the on-prem database. For instructions on mapping user names, go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
+If the usernames on the on-premises directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Azure AD to users from the on-premises database. For instructions on mapping user names, go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
 
 For more information see [Map user names for Analysis Services data sources](../../connect-data/service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
