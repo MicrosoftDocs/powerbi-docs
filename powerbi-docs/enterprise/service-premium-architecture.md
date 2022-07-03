@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/16/2021
+ms.date: 07/03/2022
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 architecture
