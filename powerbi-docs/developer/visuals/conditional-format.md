@@ -1,6 +1,6 @@
 ---
 title: Conditional formatting in Power BI embedded analytics
-description: Learn how to apply conditional formatting to your Power BI report.
+description: Learn how to apply conditional formatting to your Power BI custom visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
