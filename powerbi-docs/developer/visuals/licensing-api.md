@@ -48,7 +48,7 @@ export interface LicenseInfoResult {
   A ServicePlan contains the service identifier (spIdentifier) and its state (ServicePlanState).  
   
   * spIdentifier: the string value of the Service ID generated when you configure your offer’s plans in Partner Center (see the following example)
-      :::image type="content" source="media/licensing-api/service-id-string.png" alt-text="Screenshot showing an example of a Service I D string.":::
+      :::image type="content" source="media/licensing-api/service-id-example.png" alt-text="Screenshot showing an example of a Service I D string.":::
 
   * state – enum (ServicePlanState) that represents the state of the plans assigned.  
      Supported service plan states:
@@ -128,7 +128,7 @@ Example of the visual display containing the "licenses are required" general ico
 >![visual display containing the "licenses are required" general icon.](media/licensing-api/general-icon.png)
 
 >[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" expanded icon.](media/licensing-api/general-icon-expand.png)
+>![visual display containing the "licenses are required" expanded icon.](media/licensing-api/general-icon-expanded.png)
 
 ### Overlay the visual's display with a notification on missing licenses
 
@@ -170,7 +170,7 @@ until `clearLicenseNotification` is called (whatever comes first).
 
 Example of the visual display containing the "feature blocked" banner notification:
 >[!div class="mx-imgBorder"]
->![visual display containing the "feature blocked" banner notification.](media/licensing-api/feature-banner.png)
+>![visual display containing the "feature blocked" banner notification.](media/licensing-api/feature-banner-upgrade.png)
 
 ## Considerations and limitations
 
