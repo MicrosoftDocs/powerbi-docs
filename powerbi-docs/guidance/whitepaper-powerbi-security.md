@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/26/2021
+ms.date: 07/04/2022
 LocalizationGroup: Conceptual
 ---
 
@@ -396,9 +396,8 @@ When DLP policies for Power BI are set up:
 * Automatic risk mitigations, such as alerts to the security admin, can be invoked.
 
 For more information, see [Data loss prevention policies for Power BI](../enterprise/service-security-dlp-policies-for-power-bi.md).
-## Data loss prevention (DLP)
 
-### Microsoft Defender for Cloud Apps for Power BI
+## Microsoft Defender for Cloud Apps for Power BI
 
 Microsoft Defender for Cloud Apps is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for the cloud access security broker (CASB) market. Defender for Cloud Apps is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
 
