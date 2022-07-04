@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/12/2022
+ms.date: 07/04/2022
 ---
 
 # Export paginated report to file
@@ -20,7 +20,8 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are: 
+* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+
   * *.tiff* (default)
   * *.bmp*
   * *.emf*
@@ -330,7 +331,17 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
+* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in following cases:
+
+  * The caller is a service principal profile.
+  * The caller is a service principal and all the dataset's data sources are configured with SSO disabled.
+  * One of the dataset's data sources is configured with SSO enabled and an effective identity was provided.
+  * One of the dataset's data sources is an Azure Analysis Services or other Power BI dataset, and an effective identity was provided.
+
+* Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, is only supported when the master user issues the request without providing an effective username. It isn't supported in the following cases:
+
+  * Service principals and service principal profiles.
+  * Master users with effective username provided.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
