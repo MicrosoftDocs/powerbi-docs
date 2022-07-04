@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/02/2022
+ms.date: 07/04/2022
 ms.custom: mode-portal
 #customer intent: I want to learn how to find and access Power BI reports that have been pinned at real world locations in augmented reality.
 ---
@@ -21,7 +21,6 @@ Applies to:
 
 This article describes how to find and access Power Bi data that has been pinned to locations in the real world using [Data in space](./mobile-apps-data-in-space-overview.md). To perform these actions, you must be a Data in space **Viewer** or **Writer** For more information, see the [Data in space overview](./mobile-apps-data-in-space-overview.md).
 
-![Screenshot of reports using the Data in space feature.](./media/mobile-apps-data-in-space-pin-reports/power-bi-mobile-app-data-in-space-final-result.png)
 
 ## Find and access pinned reports
 
@@ -48,7 +47,7 @@ This article describes how to find and access Power Bi data that has been pinned
 
     ![Screenshot of zooming in on pinned report.](./media/mobile-apps-data-in-space-find-pinned-reports/data-space-card-zoom.gif)
 
-    Since the report image on the thumbnail shows an up-to-date view of the report, double-tapping is convenient if all you need is a qucik glance at the report, to check KPIs, for example - there's no need to actually open the report itself. If you decide you do want to open the report, just tap the card.
+    Since the report image on the thumbnail shows an up-to-date view of the report, double-tapping is convenient if all you need is a quick glance at the report, to check KPIs, for example - there's no need to actually open the report itself. If you decide you do want to open the report, just tap the card.
 
     Double tap the card again to send it back to its original location.
 
