@@ -18,7 +18,7 @@ The Power BI mobile apps can connect the real world directly to related BI infor
 
 Data in space uses augmented reality technology to enable you to create spatial anchors in the real world and attach Power BI data to them, so that data can be connected to the physical environment it is relevant to.
 
-![Screenshot of a bank of elevators with Power BI reports in augmented reality in front of each elevator.](./media/mobile-data-in-real-world-context/power-bi-mobile-app-data-in-space-final-result.png)
+![Screenshot of a bank of elevators with Power BI reports in augmented reality in front of each elevator.](./media/mobile-apps-data-in-real-world-context/power-bi-mobile-app-data-in-space-final-result.png)
 
 For more information, see:
 
