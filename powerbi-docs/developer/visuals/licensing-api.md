@@ -135,7 +135,7 @@ Example of the visual display containing the "licenses are required" general ico
 Use `notifyLicenseRequired` call with `LicenseNotificationType.VisualIsBlocked` to overlay the visual's display with a notification that visual is blocked since required licenses were found missing.  
 Once triggered, this notification will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
-Example of the visual display containing the *visual blocked* notification. Power BI Desktop will only display the *Get license* option:
+Example of the visual display containing the *visual blocked* notification. Power BI Desktop will only display the *Get a license* option:
 
 :::image type="content" source="media/licensing-api/blocked-visual.png" alt-text="Visual display containing the *visual blocked* notification.":::
 
