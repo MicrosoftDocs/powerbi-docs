@@ -50,7 +50,7 @@ export interface LicenseInfoResult {
   * spIdentifier: the string value of the Service ID generated when you configure your offer’s plans in Partner Center (see the following example)
       :::image type="content" source="media/licensing-api/service-id-string.png" alt-text="Screenshot showing an example of a Service I D string.":::
 
-  * state – enum (ServicePlanState) that represents the state of the plans assigned
+  * state – enum (ServicePlanState) that represents the state of the plans assigned.  
      Supported service plan states:
 
      | State | Description |
@@ -68,7 +68,7 @@ Currently, the following Power BI environments don't support license management 
   * Embedded - Publish To Web, PaaS embed
   * National clouds (Dependency on general support for transactability in national clouds)
   * RS Server (No planned support)
-  * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file) (TBD: GA)
+  * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.
 Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
