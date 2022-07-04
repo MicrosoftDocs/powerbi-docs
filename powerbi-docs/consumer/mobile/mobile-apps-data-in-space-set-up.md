@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/30/2022
+ms.date: 07/04/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to set up the Data in space feature in my organization.
 ---
@@ -15,9 +15,7 @@ ms.custom: mode-portal
 
 Data in space is a feature of the Power BI mobile apps that enables Power BI reports to be pinned in augmented reality to real-world locations, where the people who need to access those reports on location can find them.
 
-![Screenshot of reports using the Data in space feature.](./media/mobile-apps-data-in-space-set-up/power-bi-mobile-app-data-in-space-final-result.png)
-
-When Data in space is set up, specified people in the organization can pin reports to locations in the real world. Using the Power BI mobile app's camera, they scan and map a location and pin a report there. Afterwards, the people who need to access the report can scan the area with their mobile app's camera and find the pinned reports in augmented reality at the place they were pinned. They can then tap the report to open it.
+When Data in space is set up, specified people in the organization can pin reports to locations in the real world. Using the Power BI mobile app's camera, they scan and map a location and pin a report there. Afterwards, the people who need to access the report can scan the area with their mobile app's camera and find the pinned reports in augmented reality at the place they were pinned. They can then tap the report to open it. For more information about Data in space, see the [Data in space overview](./mobile-apps-data-in-space-overview.md).
 
 This article explains how to set up Data in space in your organization. Data in space uses Azure Spatial Anchors for storing location-mapping data, so the article includes references and notes concerning creating and configuring the required Azure Spatial Anchors resource.
 
