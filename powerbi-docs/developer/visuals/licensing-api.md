@@ -7,7 +7,7 @@ ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/13/2022
+ms.date: 07/04/2022
 ---
 
 
@@ -16,10 +16,10 @@ ms.date: 06/13/2022
 The **Licensing API** allows Power BI visual developers to enforce Power BI visual's licenses. The API supports retrieving the information on Power BI visual's licenses that are assigned to the Power BI user.
 The API also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user of the need to purchase the missing licenses.
 The visual should not display its own licensing UX, instead use one of Power BI predefined supported notifications as detailed below.  
-Learn more on Power BI Licensing and Translatability support [here](https://go.microsoft.com/fwlink/?linkid=2186097).
+Learn more on Power BI Licensing and Transactability support [here](https://go.microsoft.com/fwlink/?linkid=2197483).
 
 >[!NOTE]
->The `licensing` API is available from version 4.4. To find out which version you’re using, run the `pbiviz -V` command.
+>The `licensing` API is available from version 4.7. To find out which version you’re using, run the `pbiviz -V` command.
 
 ## Retrieve visual's service plans that are assigned to the active user
 
@@ -44,34 +44,41 @@ export interface LicenseInfoResult {
     }
 ```
 
-* `plans` - an array of Service Plans purchased by the active user for this visual. A ServicePlan contains the service identifier and its state (ServicePlanState).  
-   Supported service plan states:
+* `plans` - an array of Service Plans purchased by the active user for *this* visual. (Licenses purchased for any other visuals are not included in the response.)  
+  A ServicePlan contains the service identifier (spIdentifier) and its state (ServicePlanState).  
+  
+  * spIdentifier: the string value of the Service ID generated when you configure your offer’s plans in Partner Center (see the following example)
+      :::image type="content" source="media/licensing-api/service-id-string.png" alt-text="Screenshot showing an example of a Service I D string.":::
 
-| State | Description |
-| - | - |
-| Inactive | Indicates that the license is not active and shouldn't be used for provisioning benefits. |
-| Active | Indicates that the license is active and can be used for provisioning benefits. |
-| Warning | Indicates that the license is in grace period likely due to payment violation. |
-| Suspended | Indicates that the license is suspended likely due to payment violation. |
-| Unknown | Sentinel value. |
+  * state – enum (ServicePlanState) that represents the state of the plans assigned
+     Supported service plan states:
+
+     | State | Description |
+     | - | - |
+     | Inactive | Indicates that the license is not active and shouldn't be used for provisioning benefits. |
+     | Active | Indicates that the license is active and can be used for provisioning benefits. |
+     | Warning | Indicates that the license is in grace period likely due to payment violation. |
+     | Suspended | Indicates that the license is suspended likely due to payment violation. |
+     | Unknown | Sentinel value. |
+
+     **Only the *active* and *warning* states represent a usable license. All other states should be treated as not resulting in a usable license.**
 
 * `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement.
 Currently, the following Power BI environments don't support license management or license enforcement:
-  * Embedded - Publish To Web, PaaS embed (TBD: GA)
+  * Embedded - Publish To Web, PaaS embed
   * National clouds (Dependency on general support for translatability in national clouds)
-  * RS (No planned support)
+  * RS Server (No planned support)
   * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file) (TBD: GA)
-  * Private Preview licensing feature isn't lighted (Private Preview only limitation)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.
 Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
-Example of calling `getAvailableServicePlans`:  
+Example of calling `getAvailableServicePlans` (using the service ID from the image above):  
 
 ```typescript
 this.licenseManager.getAvailableServicePlans().then((result: LicenseInfoResult) => {
             this.notificationType = result.isLicenseUnsupportedEnv ?  powerbi.LicenseNotificationType.UnsupportedEnv : powerbi.LicenseNotificationType.General;
-            this.hasServicePlans = !!(result.plans && result.plans.length && result.plans[0].spIdentifier == "myServiceId" && 
+            this.hasServicePlans = !!(result.plans && result.plans.length && result.plans[0].spIdentifier == "test_isvconnect1599092224747.powerbivisualtransact.plan1" && 
                 ( result.plans[0].state == powerbi.ServicePlanState.Active ||  result.plans[0].state == powerbi.ServicePlanState.Warning));
             
             // display notification if the user doesn't have licenses
@@ -128,10 +135,9 @@ Example of the visual display containing the "licenses are required" general ico
 Use `notifyLicenseRequired` call with `LicenseNotificationType.VisualIsBlocked` to overlay the visual's display with a notification that visual is blocked since required licenses were found missing.  
 Once triggered, this notification will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
-Example of the visual display containing the "visual blocked" notification:
+Example of the visual display containing the *visual blocked* notification. The *Get a license* option is only available for Power BI Desktop:
 
->[!div class="mx-imgBorder"]
->![visual display containing the "visual blocked" notification.](media/licensing-api/blocked-visual.png)
+:::image type="content" source="media/licensing-api/blocked-visual.png" alt-text="Visual display containing the *visual blocked* notification.":::
 
 ### Overlay the visual's display with a notification on licenses unsupported environment
 
