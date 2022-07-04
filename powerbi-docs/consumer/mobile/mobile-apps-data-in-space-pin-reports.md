@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/30/2022
+ms.date: 07/04/2022
 ms.custom: mode-portal
 #customer intent: I want to learn how to pin Power BI reports in augmented reality at real world locations.
 ---
@@ -20,8 +20,6 @@ Applies to:
 |iPhones |iPads |
 
 With the Power BI app’s Data in space feature, you can pin reports in augmented reality to real-world locations where those who need them can find and access them - in context, on location.
-
-![Screenshot of reports using the Data in space feature.](./media/mobile-apps-data-in-space-pin-reports/power-bi-mobile-app-data-in-space-final-result.png)
 
 When you pin a report to a location, a spatial anchor is created. The spatial anchor is a representation of the point you selected and its orientation in a space. Thus, when you pin a report, you need to use your mobile app's camera to scan the space to capture as much information about it as possible, so that the anchor will have enough data.
 
@@ -44,8 +42,6 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
 1. Tap **More options (…)** and choose **Data in space (preview)**.
 
     ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
-
-    ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option-anna.png)
     
     >[!NOTE]
     > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer) or that your organization is not using the Data in space feature.
@@ -110,15 +106,6 @@ Once the pinning has been saved, press **Exit** to return to the report.
     >Deleting a card unpins the report for everyone. It doesn’t delete the report in the Power BI service.
 
     ![Screenshot showing delete visual or delete all visuals options.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report-options.png)
-
-
-## How do I know if I'm a Data in space Writer?
-
-Data in space Writers can pin reports, change the position, size, or rotation of pinned reports, and unpin reports. They can also scan to find pinned reports at real world locations.
-
-Your can check your Data in space role by tapping your profile picture, choosing **Settings**, and scrolling down to **Data in space (preview)**. Your Data in space role is listed there. If there is no Data in space (preview) section, it means that the Data in space feature in not being used in your organization.
-
-![Screenshot of the Data in space (preview) section in the Power BI mobile app's settings.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-settings.png)
 
 ## Next steps
 
