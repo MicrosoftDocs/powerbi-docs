@@ -30,7 +30,7 @@ This article describes how to
 * Change the position, size, and rotation of pinned data
 * Unpin data from a location
 
-To be able to perform these tasks, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition
+To be able to perform these tasks, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition:
 
 * To be able to pin reports, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
 * To be able to change a pin's position, size, or rotation, or to unpin data from a location, you must be either the one who pinned the report or the report owner.
@@ -46,7 +46,7 @@ To be able to perform these tasks, you must be a [Data in space writer](./mobile
     >[!NOTE]
     > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have) or that your organization is not using the Data in space feature.
     
-    The **Data in space** page opens. It shows you the card that viewers will see in 3D pinned to locations when they scan an area looking for reports. The card shows the state of the report with the current filters applied. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
+    The **Data in space** page opens. It shows you the card that viewers will see when they scan an area looking for reports. The card shows the state of the report with the current filters applied. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
 
     ![Screenshot of the Open camera page, showing a preview of a card.](./media/mobile-apps-data-in-space-pin-reports/data-in-space-card-preview.png)
 
@@ -54,15 +54,15 @@ To be able to perform these tasks, you must be a [Data in space writer](./mobile
 
     If you want to pin the report with the currently applied filters, make sure the **Pin data view with current filters** checkbox is selected before opening the camera. When the box is checked, the current filter will be applied when other users, discovering the report, view the card and open the report.
 
-1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app learn the space and map it in order to be able to create and save a spatial anchor. The spatial anchor provides a fixed location and orientation for your report in the mapped three dimensional space.
+1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app to learn the space and map it in order to be able to create and save a spatial anchor. The spatial anchor provides a fixed location and orientation for your report in the mapped three dimensional space.
 
     ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report-anna.png)
 
-1. At some point the report's card will appear in 3D on the screen. When the card appears you can position it, size it, and rotate it as desired.
+1. At some point the report's card will appear in augmented reality on the screen. When the card appears you can position it, size it, and rotate it as desired.
 
-    * To position: Either tap the screen where you want to pin the report, or tap the card and drag it to the desired position.
-    * To size: Pinch in and out on the card to adjust its size.
-    * To rotate: Place two fingers on the card and rotate them clockwise or counter-clockwise to rotate the card from side to side. 
+    * To position the card: Either tap the screen where you want to pin the report, or tap the card and drag it to the desired position.
+    * To adjust the size of the card: Pinch in and out on the card to adjust its size.
+    * To rotate the card: Place two fingers on the card and rotate them clockwise or counter-clockwise to rotate the card from side to side.
 
     Continue to scan the space until the **Pin** button lights up.
 
@@ -80,7 +80,7 @@ Once the pinning has been saved, press **Exit** to return to the report.
 
     ![Screenshot of the Position option for repositioning pinned reports.](./media/mobile-apps-data-in-space-pin-reports/reposition-pinned-report.png)
  
-1. The edges of all visible cards will turn yellow.
+1. The edges of all visible cards will turn yellow. Cards that you can't modify will appear slightly transparent.
 
     ![Screenshot showing yellow borders indicating that the cards can be edited.](./media/mobile-apps-data-in-space-pin-reports/pinned-reports-with-yellow-borders.png)
  
@@ -88,9 +88,10 @@ Once the pinning has been saved, press **Exit** to return to the report.
 
     ![Screenshot showing a card that has been selected for editing.](./media/mobile-apps-data-in-space-pin-reports/editing-pinned-report-location.png)
  
-    * Tap and drag to reposition.
-    * Pinch in and out to resize.
-    * Place two fingers on the screen and rotate them clockwise or counter-clockwise to rotate the card from side to side.  
+    * To reposition the card: Either tap the screen where you want to pin the report, or tap the card and drag it to the desired position.
+    * To adjust the size of the card: Pinch in and out on the card to adjust its size.
+    * To rotate the card: Place two fingers on the card and rotate them clockwise or counter-clockwise to rotate the card from side to side.
+  
 
 1. When the location has been successfully mapped and you’re done positioning the card, tap **Pin** to save the changes.
 
@@ -102,10 +103,10 @@ Once the pinning has been saved, press **Exit** to return to the report.
 
     ![Screenshot of the Delete option for unpinning pinned reports.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report.png)
  
-1. The edges of all visible cards will turn yellow. Tap a card to delete it, or tap **Delete all visuals** to delete all the pinned items that have been found.
+1. The edges of all visible cards will turn yellow. Cards that you can't delete will appear slightly transparent. Tap a card to delete it, or tap **Delete all visuals** to delete all the pinned items that have been found.
 
     >[!NOTE]
-    >Deleting a card unpins the report for everyone. It doesn’t delete the report in the Power BI service.
+    >Deleting a card unpins the report for everyone. It doesn't delete the report in the Power BI service.
 
     ![Screenshot showing delete visual or delete all visuals options.](./media/mobile-apps-data-in-space-pin-reports/unpin-pinned-report-options.png)
 
