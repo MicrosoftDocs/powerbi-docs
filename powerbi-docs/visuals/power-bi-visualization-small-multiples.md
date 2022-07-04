@@ -7,7 +7,7 @@ ms.reviewer: mihart, rienhu
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/12/2021
+ms.date: 06/30/2022
 LocalizationGroup: Visualizations
 ---
 # Create small multiples in Power BI
@@ -40,7 +40,7 @@ Some options in the formatting pane let you control the look and feel of the gri
 
 ### Change the grid dimensions
 
-You can change the dimensions of the grid in the Grid layout card:
+You can change the dimensions of the grid in the Small multiples card:
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-grid-layout-card.png" alt-text="Small multiple grid layout card.":::
 
