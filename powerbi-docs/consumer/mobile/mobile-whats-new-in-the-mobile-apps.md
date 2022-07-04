@@ -22,9 +22,9 @@ For related "What's New" information, see:
 
 ## July 2022
 
-### Data in space - your data, everywhere
+### Data in space - your data, everywhere (iOS)
 
-Introducing **Data in space**. Pin and view Power BI reports in the physical world using just your mobile device. (iOS)
+Now you can connect your digital business data to real-world places in augmented reality, putting real-time data at the fingertips of employees where they need it, enabling them to make better, faster, more informed data-driven decisions. [Learn more!](./mobile-apps-data-in-space-overview.md)
 
 ![Screenshot of showing Power BI reports pinned to real-world locations in augmented reality using the data in space feature.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-data-in-space-final-result.png)
 
