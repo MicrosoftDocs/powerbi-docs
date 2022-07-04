@@ -30,10 +30,10 @@ This article describes how to
 * Change the position, size, and rotation of pinned data
 * Unpin data from a location
 
-To be able to perform these tasks, you must be a [Data in space writer](#how-do-i-know-if-im-a-data-in-space-writer). In addition
+To be able to perform these tasks, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition
 
-* To be able to pin reports or to change a pin's position, size, or rotation, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
-* To be able to unpin data from a location, you must be either the one who pinned the report or the report owner.
+* To be able to pin reports, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
+* To be able to change a pin's position, size, or rotation, or to unpin data from a location, you must be either the one who pinned the report or the report owner.
 
 ## Pin a report to a real-world location
 
@@ -44,7 +44,7 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
     ![Screenshot of the Data in space (preview) option in the Power BI mobile app's options menu](./media/mobile-apps-data-in-space-pin-reports/data-in-space-option.png)
     
     >[!NOTE]
-    > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](#how-do-i-know-if-im-a-data-in-space-writer) or that your organization is not using the Data in space feature.
+    > If you don't see the Data in space (preview) option, it means either that you are not a [Data in space Writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have) or that your organization is not using the Data in space feature.
     
     The **Data in space** page opens. It shows you the card that viewers will see in 3D pinned to locations when they scan an area looking for reports. The card shows the state of the report with the current filters applied. This can be useful for people who just need to check things such as KPIs and don’t really need to see the whole report. The card always shows the report in regular web layout, even if the report has a mobile-optimized view.
 
@@ -58,11 +58,13 @@ To be able to perform these tasks, you must be a [Data in space writer](#how-do-
 
     ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report-anna.png)
 
-1. At some point the report's card will appear in 3D on the screen. Continue to scan the space until the **Pin** button lights up. At any point after the card appears you can start repositioning, resizing, and rotating it as desired.
+1. At some point the report's card will appear in 3D on the screen. When the card appears you can position it, size it, and rotate it as desired.
 
-    * Tap and drag the card to reposition
-    * Pinch in and out to resize
-    * Place two fingers on the screen and rotate them clockwise or counter-clockwise to rotate from side to side.  
+    * To position: Either tap the screen where you want to pin the report, or tap the card and drag it to the desired position.
+    * To size: Pinch in and out on the card to adjust its size.
+    * To rotate: Place two fingers on the card and rotate them clockwise or counter-clockwise to rotate the card from side to side. 
+
+    Continue to scan the space until the **Pin** button lights up.
 
     ![Screenshot of Power BI report ready for pinning in scanned location.](./media/mobile-apps-data-in-space-pin-reports/pin-report-to-location.png)
 
