@@ -366,8 +366,8 @@ Power BI is deeply integrated with Microsoft Perview Information Protection (pre
 When information protection is enabled in Power BI:
 
 * Sensitive data, both in the Power BI service and in Power BI Desktop, can be classified and labeled using the same sensitivity labels used in Office and in Azure.
-* Governance policies can be enforced, when Power BI content is exported to Excel, PowerPoint, PDF, Word or *.pbix* files, to help ensure that data is protected even when it leaves Power BI.
-* It's easy to classify and protect *.pbix* files in Power BI desktop, just like it's done in Excel, Word, and PowerPoint applications. Files can be easily tagged according to their level of sensitivity. Even further, they can be encrypted if they contain business-confidential data, ensuring that only authorized users can edit these files.
+* Governance policies can be enforced when Power BI content is exported to Excel, PowerPoint, PDF, Word or *.pbix* files, to help ensure that data is protected even when it leaves Power BI.
+* It's easy to classify and protect *.pbix* files in Power BI Desktop, just like it's done in Excel, Word, and PowerPoint applications. Files can be easily tagged according to their level of sensitivity. Even further, they can be encrypted if they contain business-confidential data, ensuring that only authorized users can edit these files.
 * Excel workbooks automatically inherit sensitivity labels when they connect to Power BI (preview), making it possible to maintain end-to-end classification and apply protection when Power BI datasets are analyzed in Excel.
 * Sensitivity labels applied to Power BI reports and dashboards are visible in the Power BI iOS and Android mobile apps.
 * Sensitivity labels persist when a Power BI report is embedded in Teams, SharePoint, or a secure website. This helps organizations maintain classification and protection upon export when embedding Power BI content.
