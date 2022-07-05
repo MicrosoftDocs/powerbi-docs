@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/10/2022
+ms.date: 06/28/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -18,7 +18,7 @@ You can use the Azure Cost Management connector for Power BI Desktop to make pow
 
 The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management | Microsoft Docs](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
-The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles&preserve-view=true) at the billing account or billing profile levels for Microsoft Customer Agreements. 
+The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
@@ -194,6 +194,24 @@ You might run into a situation where tags aren't working in the usage details or
     ```= "{"& [Tags] & "}"
 6. Completing the previous steps creates a new column of *tags* in the json format
 7. You can now transfer and expand the column as you need to.
+
+
+**Authentication issues encountered with Azure Active Directory guest accounts:** You may have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following: 
+
+* *Access to the resource is forbidden* 
+* *We couldn’t authenticate with the credentials provided. Please try again.*
+
+These errors could be the result of having a user account in a different Azure Active Directory domain that has been added as a guest user. 
+
+For guest accounts: Use the following settings or options as you are prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
+
+1.	Select **Sign-in**
+2.	Select the **Use another account** (bottom of the dialog)
+3.	Select **Sign-in options** (bottom of the dialog box)
+4.	Select **Sign into an organization**
+5.	For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Azure Active Directory domain into which you've been added as a guest.
+6.	Then, for **Pick an account** select the user account that you’ve previously authenticated.  
+
 
 
 ## Next steps

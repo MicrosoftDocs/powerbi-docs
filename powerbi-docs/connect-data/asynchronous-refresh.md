@@ -127,24 +127,27 @@ Here's an example of the response body:
 [
     {
         "requestId": "1344a272-7893-4afa-a4b3-3fb87222fdac",
-        "refreshType": "ViaApi",
+        "refreshType": "ViaEnhancedApi",
         "startTime": "2020-12-07T02:06:57.1838734Z",
         "endTime": "2020-12-07T02:07:00.4929675Z",
-        "status": "succeeded"
+        "status": "Completed",
+        "extendedStatus": "Completed"
     },
     {
         "requestId": "474fc5a0-3d69-4c5d-adb4-8a846fa5580b",
         "startTime": "2020-12-07T01:05:54.157324Z",
-        "refreshType": "ViaApi",
+        "refreshType": "ViaEnhancedApi",
         "endTime": "2020-12-07T01:05:57.353371Z",
-        "status": "inProgress"
+        "status": "Unknown",
+        "extendedStatus": "InProgress"
     }
     {
         "requestId": "85a82498-2209-428c-b273-f87b3a1eb905",
-        "refreshType": "ViaApi",
+        "refreshType": "ViaEnhancedApi",
         "startTime": "2020-12-07T01:05:54.157324Z",
         "endTime": "2020-12-07T01:05:57.353371Z",
-        "status": "notStarted"
+        "status": "Unknown",
+        "extendedStatus": "NotStarted"
     }
 ]
 
@@ -158,10 +161,10 @@ Here's an example of the response body:
 |Name  |Type  |Description  |
 |---------|---------|---------|
 |`requestId`     |    Guid     |    The identifier of the refresh request. `requestId` is required to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
-|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call. <br>`ReliableProcessing` indicates an enhanced refresh triggered by an API call.   |
+|`refreshType`   |   RefreshType      |    `OnDemand` indicates refresh was triggered interactively through the Power BI portal. <br>`Scheduled` indicates refresh was triggered by the dataset refresh schedule setting. <br>`ViaApi` indicates refresh was triggered by an API call. <br>`ViaEnhancedApi` indicates an enhanced refresh triggered by an API call.   |
 |`startTime`     |    string     |    DateTime of start.     |
 |`endTime`     |   string      |    DateTime of end.     |
-|`status`     |  string       |   `completed`\*  indicates the refresh operation completed successfully. <br>`failed` indicates the refresh operation failed - serviceExceptionJson will contain the error. <br>`unknown` indicates a completion state that can't be determined. `endTime` will be empty with this status.   <br>`disabled` indicates refresh was disabled by selective refresh.  |
+|`status`     |  string       |   `Completed`\*  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates a completion state that can't be determined. `endTime` will be empty with this status.   <br>`Disabled` indicates refresh was disabled by selective refresh. <br>`Cancelled` indicates refresh was cancelled successfully. |
 |`extendedStatus`     |    string     |   Augments the status property to provide additional information.     |
 
 \* In Azure Analysis Services, this status result is 'succeeded'. If migrating an Azure Analysis Services solution to Power BI, you may have to modify your solutions.
@@ -182,19 +185,19 @@ To check the status of a refresh operation, use the GET verb on the refresh obje
 {
     "startTime": "2020-12-07T02:06:57.1838734Z",
     "endTime": "2020-12-07T02:07:00.4929675Z",
-    "type": "full",
-    "status": "inProgress",
-    "currentRefreshType": "full",
+    "type": "Full",
+    "status": "InProgress",
+    "currentRefreshType": "Full",
     "objects": [
         {
             "table": "DimCustomer",
             "partition": "DimCustomer",
-            "status": "inProgress"
+            "status": "InProgress"
         },
         {
             "table": "DimDate",
             "partition": "DimDate",
-            "status": "inProgress"
+            "status": "InProgress"
         }
     ]
 }

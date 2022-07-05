@@ -17,6 +17,8 @@
       href: service-dataset-details-page.md
     - name: "Datamart details page"
       href: service-datamart-details-page.md
+    - name: "Power BI for Azure users"
+      href: powerbi-azure-landing.md
   - name: Quickstarts
     expanded: true
     items: 
