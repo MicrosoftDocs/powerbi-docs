@@ -16,7 +16,7 @@ This page lists known issues for Power BI features. Before submitting a Support 
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
-## Currently active known issues
+## Currently active known issues 
 
 Select the **Title** to view more information about that specific known issue.
 
