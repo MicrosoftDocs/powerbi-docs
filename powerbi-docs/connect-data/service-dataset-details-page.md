@@ -107,7 +107,7 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
-An entirely filled parent checkbox on the dataset's table indicates that all it's sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
+An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
 
 ![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection.png)
 
