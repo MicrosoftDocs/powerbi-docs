@@ -57,7 +57,7 @@ To be able to perform the tasks described in this article, you must be a [Data i
 
 1. Scan all of the space around you by slowly moving the camera from side to side, as illustrated in the on-screen instructions. This allows the app to learn the space and map it in order to be able to create and save a spatial anchor. The spatial anchor provides a fixed location and orientation for your report in the mapped three dimensional space.
 
-    ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report-anna.png)
+    ![Screenshot of scanning location in order to pin a Power BI report.](./media/mobile-apps-data-in-space-pin-reports/scan-location-for-pinning-report.png)
 
 1. At some point the report's card will appear in augmented reality on the screen. When the card appears you can position it, size it, and rotate it as desired.
 
