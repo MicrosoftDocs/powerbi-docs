@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/04/2022
+ms.date: 07/05/2022
 ms.custom: mode-portal
 #customer intent: I want to learn how to pin Power BI reports in augmented reality at real world locations.
 ---
-# Pin Power BI reports to locations in the real world
+# Pin Power BI reports to locations in the real world (preview)
 
 Applies to:
 
@@ -23,14 +23,15 @@ With the Power BI app’s Data in space feature, you can pin reports in augmente
 
 When you pin a report to a location, a spatial anchor is created. The spatial anchor is a representation of the point you selected and its orientation in a space. Thus, when you pin a report, you need to use your mobile app's camera to scan the space to capture as much information about it as possible, so that the anchor will have enough data.
 
-
-This article describes how to
+This article describes how to:
 
 * Pin data to locations in the real world
 * Change the position, size, and rotation of pinned data
 * Unpin data from a location
 
-To be able to perform these tasks, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition:
+See [Next steps](#next-steps) if you're looking for an overview of the Data in space feature, or for information about finding and accessing pinned reports or setting up Data in space in an organization (administrators).
+
+To be able to perform the tasks described in this article, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition:
 
 * To be able to pin reports, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
 * To be able to change a pin's position, size, or rotation, or to unpin data from a location, you must be either the one who pinned the report or the report owner.
