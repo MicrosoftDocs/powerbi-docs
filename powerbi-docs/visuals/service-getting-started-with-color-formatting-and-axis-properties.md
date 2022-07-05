@@ -7,13 +7,13 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.custom: pbibetadocbug, intro-get-started
-ms.date: 10/15/2021
+ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
+ms.date: 06/30/2022
 LocalizationGroup: Visualizations
 ---
 # Getting started with the formatting pane
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 If you have edit permissions for a report, there are numerous formatting options available. In Power BI reports, you can change the color of data series, data points, and even the background of visualizations. You can change how the x-axis and y-axis are presented. You can even format the font properties of visualizations, shapes, and titles. Power BI provides you with full control over how your reports appear.
 
@@ -21,7 +21,7 @@ To get started, open a report in Power BI Desktop or the Power BI service. Both 
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png" alt-text="Menu bar showing Edit option.":::
 
-When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint roller), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
+When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane, there are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint brush), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png" alt-text="Visualization pane with Fields icon selected.":::
 
@@ -58,7 +58,7 @@ and more.
 
 Also note that if you don’t have any visualization selected, **Filters** appears in place of the icons, which lets you apply filters  to all visualizations on the page.
 
-The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
+The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible number of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
 1. Change colors used in the visual
 1. Apply a style
@@ -72,11 +72,11 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 
 1. Select a visualization to make it active.
 
-1. Select the paint roller icon to open the Formatting tab. The Formatting tab displays all the formatting elements available for the selected visual.
+1. Select the paint brush icon to open the Formatting tab. The Formatting tab displays all the formatting elements available for the selected visual.
 
     :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png" alt-text="Chart with Formatting pane tab selected.":::
 
-1. Select **Data Colors** to expand its available customizations.  
+1. Select **Colors** to expand its available customizations.  
 
     :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png" alt-text="Chart with Formatting pane open and Data colors expanded.":::
 
@@ -88,22 +88,22 @@ Here are a few useful tips for working with colors. The numbers in the following
 
 1. Don’t like the color? No problem, just select the down-arrow to open the color palette and select a new one.
 
-1. Don't like any of the color changes? Select **Revert to default** from the bottom of the **Data color** section, and your colors revert to the default settings.
+1. Don't like any of the color changes? Select **Reset to default** from the bottom of the **Data color** section, and your colors revert to the default settings.
 
 1. Want a color you don’t see in the palette? Just select **More colors...**, and choose from the spectrum.  
 
    :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png" alt-text="Data color section with color palette open.":::
 
-Not crazy about the change you just made? Use **CTRL+Z** to undo , just like you’re used to doing.
+Not crazy about the change you just made? Use **CTRL+Z** to undo, just like you’re used to doing.
 
 ## Applying a style to a table
 
-Some Power BI visualizations have a **Style** option. With one click, a full set of formatting options are applied to your visualization, all at once. 
+Some Power BI visualizations have a **Style** option. One click applies a full set of formatting options to your visualization, all at once. 
 
 1. Select a table or matrix to make it active.   
-1. Open the Formatting tab and select **Style**.
+1. Open the Formatting tab and select **Style presets**.
 
-   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png" alt-text="Select Style from Formatting tab.":::
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png" alt-text="Screenshot shows how to select Style presets from Formatting tab.":::
 
 1. Select a style from the dropdown.
 
