@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/04/2022
+ms.date: 07/05/2022
 ms.custom: mode-portal
 #customer intent: I want to learn about the Power BI mobile app's Data in space feature.
 ---
-# Data in space overview
+# Data in space overview (preview)
 
 Applies to:
 
@@ -20,6 +20,13 @@ Applies to:
 |iPhones |iPads |
 
 **Data in space** is a new Power BI Mobile feature that uses augmented reality technology to create spatial anchors in the real world and attach Power BI data to them, so that data can be connected to the physical environment it is relevant to.
+
+Data in space is currently supported on iPhones and iPads.
+
+This article provides a general overview of the Data in space feature. See [Next steps](#next-steps) for specific information about pinning and accessing Power BI data in space, or about setting up Data in space in your organization (administrators).
+
+
+## How can Data in space benefit me?
 
 With Data in Space you can connect your digital business data to your real-world places in facility management, manufacturing, retail, and many other use cases. You can put real-time data at the fingertips of employees where they need it, enabling them to make better, faster, and more informed decisions.
 
