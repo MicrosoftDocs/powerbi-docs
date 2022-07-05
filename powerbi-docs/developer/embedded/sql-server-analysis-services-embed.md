@@ -120,12 +120,12 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
     // Define the user identity and roles. Use one of the following:
 
-    EffectiveIdentity identity = new EffectiveIdentity(  //If no RLS
+    var rlsidentity = new EffectiveIdentity(  //If no RLS
        username: "Domain\\Username", // can also be username@contoso.com
        datasets: new List<string>{ datasetId.ToString()}
     )
 
-    EffectiveIdentity identity = new EffectiveIdentity(  // If RLS
+    var rlsidentity = new EffectiveIdentity(  // If RLS
        username: "username@contoso.com",
        roles: new List<string>{ "MyRole" },
        datasets: new List<string>{ datasetId.ToString()}
