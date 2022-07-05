@@ -33,7 +33,7 @@ See [Next steps](#next-steps) if you're looking for an overview of the Data in s
 
 To be able to perform the tasks described in this article, you must be a [Data in space writer](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have). In addition:
 
-* To be able to pin reports, you must have at least a [contributor role](../../collaborate-share/service-roles-new-workspaces.md) in the workspace where the report is located.
+* To be able to pin reports, you must have at least read permissions on the report.
 * To be able to change a pin's position, size, or rotation, or to unpin data from a location, you must be either the one who pinned the report or the report owner.
 
 ## Pin a report to a real-world location
