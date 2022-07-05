@@ -20,8 +20,8 @@ For service level outages or degradation notifications, check [https://support.p
 
 Select the **Title** to view more information about that specific known issue.
 
-|  Issue ID |  Area                              |  Title           |  Issue publish date |  
-|-----------|------------------------------------|------------------|---------------------|
+|  Issue ID |  Area   |  Title  |  Issue publish date |  
+|-----------|----------------|----|---------------------|
 |  214      |  Consume and View                  |  [Excel Desktop crashes when opening data model that was refreshed by Power BI Service](known-issue-214-excel-desktop-crashes-opening-data-model.md)   |  June 21, 2022        |  
 |  213      |  Embedded, REST API or PowerShell  |  [Visual context menus are cut off when using Power BI Embedded](known-issue-213-visual-context-menus-cut-off-embedded.md)   |  June 21, 2022        |  
 |  211      |  Embedded, REST API or PowerShell  |  [GetVisuals() API for custom visuals may return a blank title](known-issue-211-getvisuals-api-return-blank-title.md)   |  June 21, 2022        |  
@@ -35,10 +35,9 @@ Select the **Title** to view more information about that specific known issue.
 |  187      |  Create and Author Data            |  [Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop](known-issue-187-show-bar-only-data-bars-doesnt-work.md)   |  May 23, 2022        |  
 |  185      |  Share and Collaborate             |  [Duplicate or erroneous email may be received during classic workspace upgrade](known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md)   |  May 23, 2022        |  
 |  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  
-|  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 | Open |
+|  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 |
 |  164      |  Create and Author Data            |  [Filter not correct after applying bookmark](known-issue-164-filter-not-correct-after-applying-bookmark.md)   |  April 5, 2022        |  Fixed: May 23, 2022 |
 |  151      |  Create and Author Data            |  [Unable to open protected Desktop file](known-issue-unable-open-protected-desktop-file.md)     |  March 13, 2022        |  
-
 
 
 ## Recently closed known issues
