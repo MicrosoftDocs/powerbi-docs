@@ -52,7 +52,7 @@ Data in space must be set up and enabled by Power BI administrators. They need t
 
 Users in the organization who need to pin reports to real-world locations or access pinned reports need to be assigned to one of the two Data in space roles. Users are assigned to these roles by administrators as part of the Data in space setup. The role that a user is assigned to determines what the user can do and see in the data in space experience.
 
-* **Data in space writer**: Data in space writers can pin reports, change the position, size, and rotation of pinned reports, and delete pins. To pin a report, a writer must have a least read permissions on the report. To be able to edit or delete a pin, a writer needs to be either the person who created the pin or the report owner.
+* **Data in space writer**: Data in space writers can pin reports, change the position, size, and rotation of pinned reports, and delete pins. To pin a report, a writer must have at least read permissions on the report. To be able to edit or delete a pin, a writer needs to be either the person who created the pin or the report owner.
 
 * **Data in space viewer**: Data in space viewers can find and access pinned reports. To be able to access a report, a viewer must have at least read permissions on the report. If they don't have access to a report, they can request access right there in the data in space experience.
 
