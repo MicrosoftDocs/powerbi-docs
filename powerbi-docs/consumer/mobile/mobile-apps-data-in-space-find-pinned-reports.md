@@ -1,6 +1,6 @@
 ---
 title: 'Find and access pinned reports'
-description: This article explains how find and access Power BI reports that have been pinned at real world locations in augmented reality.
+description: This article explains how to find and access Power BI reports that have been pinned at real world locations in augmented reality.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -19,7 +19,7 @@ Applies to:
 |:--- |:--- |
 |iPhones |iPads |
 
-This article describes how to find and access Power Bi data that has been pinned to locations in the real world using the Power BI mobile app's Data in space feature. See [Next steps](#next-steps) if you're looking for a general overview of the Data in space feature or for information about pinning reports in space or setting up Data in space in an organization (administrators).
+This article describes how to find and access Power BI data that has been pinned to locations in the real world using the Power BI mobile app's Data in space feature. See [Next steps](#next-steps) if you're looking for a general overview of the Data in space feature or for information about pinning reports in space or setting up Data in space in an organization (administrators).
 
 To perform the actions described in this article, you need be a [Data in space **Viewer** or **Writer**](./mobile-apps-data-in-space-overview.md#what-data-in-space-role-do-i-have).
 

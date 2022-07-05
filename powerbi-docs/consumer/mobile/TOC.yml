@@ -73,6 +73,7 @@
       - name: "Pin reports in space at real world locations (preview)"
         href: mobile-apps-data-in-space-pin-reports.md        
       - name: "Find and access reports pinned in space (preview)"
+        href: mobile-apps-data-in-space-find-pinned-reports.md   
       - name: "Scan QR codes to open reports and tiles"
         href: mobile-apps-qr-code.md
       - name: "Scan barcodes to open filtered reports"
