@@ -40,7 +40,7 @@ Data in space is powered by an integration of the Azure Spatial Anchors service 
 
 Data in space is set up in an organization by administrators (see below). As part of setup, administrators assign users in the organization to one of two Data in space roles: **writer** and **viewer**. Data in space writers can pin reports to locations as well as edit and delete pins. Viewers can scan to find and access pinned reports in a space.
 
-Here's how it works:
+**Here's how it works:**
 
 A data in space writer goes to the location where it would be useful to have reports available in context on location. They open the report they want to pin in their mobile app, apply filters and slicers to configure the view they want the report to open to, and then they scan the space with their mobile app's camera in order to map the space and pin the report to the desired location. When they pin the report, a spatial anchor is created and saved so that the report can later be found by others. They can do this multiple times in the same space, pinning different reports, or even different views of the same report.
 
@@ -52,9 +52,9 @@ Data in space must be set up and enabled by Power BI administrators. They need t
 
 Users in the organization who need to pin reports to real-world locations or access pinned reports need to be assigned to one of the two Data in space roles. Users are assigned to these roles by administrators as part of the Data in space setup. The role that a user is assigned to determines what the user can do and see in the data in space experience.
 
-* **Data in space writer**: Data in space writers can pin reports, change the position, size, and rotation of pinned reports, and delete pins. To pin a report, a writer must have a least a Contributor role in the workspace where the report is located. To be able to edit or delete a pin, a writer needs either to be the person who created the pin or the report owner.
+* **Data in space writer**: Data in space writers can pin reports, change the position, size, and rotation of pinned reports, and delete pins. To pin a report, a writer must have a least read permissions on the report. To be able to edit or delete a pin, a writer needs to be either the person who created the pin or the report owner.
 
-* **Data in space viewer**: Data in space viewers can find and access pinned reports. To be able to access a report, a viewer must have at least read permissions on the the report. If they don't have access to a report, they can request access right there in the data in space experience.
+* **Data in space viewer**: Data in space viewers can find and access pinned reports. To be able to access a report, a viewer must have at least read permissions on the report. If they don't have access to a report, they can request access right there in the data in space experience.
 
 ## What Data in space role do I have?
 
