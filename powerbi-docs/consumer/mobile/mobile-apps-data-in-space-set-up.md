@@ -19,6 +19,14 @@ When Data in space is set up, specified people in the organization can pin repor
 
 This article explains how to set up Data in space in your organization. Data in space uses Azure Spatial Anchors for storing location-mapping data, so the article includes references and notes concerning creating and configuring the required Azure Spatial Anchors resource.
 
+See [Next steps](#next-steps) for a general overview of the Data in space feature, or for information about pinning, finding, and accessing data in space.
+
+## Operating system support
+
+Data in space is currently supported for iOS.
+
+## Setup overview
+
 Setting up Data in space for your organization involves three steps:
 
 1. Creating an Azure Spatial Anchors resource.
