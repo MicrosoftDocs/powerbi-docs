@@ -11,7 +11,7 @@ ms.date: 07/04/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to set up the Data in space feature in my organization.
 ---
-# Set up Data in space for your organization
+# Set up Data in space for your organization (preview)
 
 Data in space is a feature of the Power BI mobile apps that enables Power BI reports to be pinned in augmented reality to real-world locations, where the people who need to access those reports on location can find them.
 
@@ -21,21 +21,19 @@ This article explains how to set up Data in space in your organization. Data in 
 
 See [Next steps](#next-steps) for a general overview of the Data in space feature, or for information about pinning, finding, and accessing data in space.
 
-## Operating system support
-
-Data in space is currently supported for iOS.
-
 ## Setup overview
 
 Setting up Data in space for your organization involves three steps:
 
-1. Creating an Azure Spatial Anchors resource.
-1. Connecting Power BI to the Azure Spatial Anchors resource.
-1. Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps.
+1. [Creating an Azure Spatial Anchors resource](#create-an-azure-spatial-anchors-resource).
+1. [Connecting Power BI to the Azure Spatial Anchors resource](#connect-power-bi-to-the-azure-spatial-anchors-resource).
+1. [Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps](#assign-users-to-spatial-anchors-account-roles-in-the-azure-spatial-anchors-resource).
 
 Step 1 must be performed first. Steps 2 and 3 can be performed in any order.
 
-Data in space is currently supported for iPhones and iPads.
+## Supported operating systems
+
+Data in space is currently supported for iOS.
 
 ## Create an Azure Spatial Anchors resource
 
