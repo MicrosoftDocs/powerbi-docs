@@ -3,12 +3,12 @@ title: Move your Power BI embedded analytics application to production
 description: Learn what are the needed steps to move your Power BI application to production.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer: 
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 06/02/2020
+ms.date: 06/02/2022
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -90,11 +90,6 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
->[!div class="nextstepaction"]
->[Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
-
->[!div class="nextstepaction"]
->[Considerations when generating an embed token](generate-embed-token.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
+* [Considerations when generating an embed token](generate-embed-token.md)
