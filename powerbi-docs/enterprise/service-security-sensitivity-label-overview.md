@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 05/08/2022
+ms.date: 07/06/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -265,9 +265,12 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Temp files aren’t encrypted.
 
-* **Get data** can upload protected files only if they’re local. Protected files from online services such as SharePoint Online or OneDrive for Business can’t be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
+* On demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is not supported in the following scenarios, and will fail.
 
-    In the case of an unprotected *.pbix* file that has been uploaded successfully from SharePoint Online or OneDrive for Business, if the file subsequently becomes protected as the result of having a protected label applied, refresh will fail.
+    * Protected live-connected *.pbix* files.
+    * Protected Azure Analysis Services *.pbix* files.
+    * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to.
+    * If the dataset owner's access token for OneDrive/SharePoint has expired.
 
 * **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
