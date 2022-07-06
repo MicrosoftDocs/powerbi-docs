@@ -61,7 +61,7 @@ Each workspace that contains a Power BI item related to the embedded content (in
 
 ### Assign a workspace to a capacity using a service principal
 
-To assign a workspace to a capacity using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a workspace to a capacity using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md). The service principal should have administrator permissions on the workspace and capacity assignment permissions to the capacity.
 
 ### Assign a workspace to a capacity using a master user
 
