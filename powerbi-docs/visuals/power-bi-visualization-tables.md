@@ -60,7 +60,7 @@ You'll create the table pictured at the beginning of the article to display sale
 
 1. Select **Sales > Average Unit Price** and **Sales > Last Year Sales**
 
-1. Then select **Sales > This Year Sales** and select all three options: **Value**, **Goal**, and **Status**.
+1. Then select **Sales > This Year Sales** and select all three options: **Value**, **Metric**, and **Status**.
 
 1. In the **Visualizations** pane, locate the **Values** well and select the values until the order of your chart columns matches the first image on this page. Drag the values in the well if needed. Your **Values** well will look like this:
 

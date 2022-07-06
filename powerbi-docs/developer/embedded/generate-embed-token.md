@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 05/24/2022
+ms.date: 06/27/2022
 ---
 
 # Generate an embed token
@@ -28,7 +28,7 @@ You can use APIs to generate a token for the following items:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
+* [Generate an embed token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
@@ -73,7 +73,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 
@@ -107,6 +107,16 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >
 >* An identity for any item with an RLS dataset.
 >* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
+
+### DirectQuery for Power BI datasets
+
+To embed Power BI report that has a dataset with a Direct Query connection to another Power BI dataset, do the following:
+
+* In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](../../enterprise/service-premium-connect-tools.md#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
+* Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token)
+  * Specify all dataset IDs in the request.
+  * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each dataset in the request.
+  * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
 
 ## Considerations and limitations
 

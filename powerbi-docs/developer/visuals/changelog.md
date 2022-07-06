@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/13/2022
+ms.date: 06/14/2022
 ---
 
 # Power BI visuals API changelog
@@ -16,23 +16,17 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v4.6.0
 
-ETA: June 13, 2022
-
 * Adding new capabilities property: [privileges](capabilities.md) and two privileges:
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
 * New API to allow [downloading visual to file](./file-download-api.md)
-* Supports Desktop S06
-
-## API v4.5.0
-
-* Supports Desktop S05
+* Supports Desktop June 2021
 
 ## API v4.2.0
 
 * New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
-* Supports Desktop S02
+* Supports Desktop February 2022
 
 ## API v3.8.0
 

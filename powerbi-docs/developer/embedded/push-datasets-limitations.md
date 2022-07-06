@@ -9,12 +9,13 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 12/22/2021
+ms.date: 06/27/2022
 ---
 
 # Push datasets limitations
 
-This article lists the Power BI REST APIs [push datasets](/rest/api/power-bi/push-datasets) limitations.
+[Push datasets](/rest/api/power-bi/push-datasets) are **very limited** in their functionality. They're designed *only* for a near real-time streaming scenario to be consumed by a streaming tile in a dashboard, and not by a Power BI report.  
+This article lists limitations of the Power BI REST APIs [push datasets](/rest/api/power-bi/push-datasets).
 
 ## Limitations
 
@@ -42,8 +43,5 @@ Review the following list of limitations before using the *push datasets* APIs.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Power BI REST APIs](/rest/api/power-bi/).
-
->[!div class="nextstepaction"]
->[Push datasets](/rest/api/power-bi/push-datasets).
+* [Power BI REST APIs](/rest/api/power-bi/).
+* [Push datasets](/rest/api/power-bi/push-datasets).
