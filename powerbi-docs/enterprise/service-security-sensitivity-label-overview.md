@@ -265,12 +265,14 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Temp files aren’t encrypted.
 
-* On demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is not supported in the following scenarios, and will fail.
+* On demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
 
     * Protected live-connected *.pbix* files.
     * Protected Azure Analysis Services *.pbix* files.
     * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to.
     * If the dataset owner's access token for OneDrive/SharePoint has expired.
+
+    In these cases, refresh will fail.
 
 * **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
