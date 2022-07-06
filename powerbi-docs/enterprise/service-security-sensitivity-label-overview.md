@@ -265,7 +265,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Temp files aren’t encrypted.
 
-* On demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
+* On-demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
 
     * Protected live-connected *.pbix* files.
     * Protected Azure Analysis Services *.pbix* files.
