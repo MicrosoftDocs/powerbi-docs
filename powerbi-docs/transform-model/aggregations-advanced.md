@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/10/2021
+ms.date: 06/22/2022
 LocalizationGroup: Transform and shape data
 ---
 # User-defined aggregations
 
-Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../admin/aggregations-auto.md) feature in dataset Settings.
+Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../enterprise/aggregations-auto.md) feature in dataset Settings.
 
 ## Creating aggregation tables
 
@@ -41,6 +41,7 @@ The **Manage aggregations** dialog enforces validations:
 - Duplicate aggregations, where two entries use the same **Summarization** function and refer to the same **Detail Table** and **Detail Column**, aren't allowed.
 - The **Detail Table** must use DirectQuery storage mode, not Import.
 - Grouping by a foreign key column used by an inactive relationship, and relying on the USERELATIONSHIP function for aggregation hits, isn't supported.
+- Aggregations based on GroupBy columns can leverage relationships between aggregation tables but authoring relationships between aggregation tables is not supported in Power BI Desktop. If necessary, you can create relationships between aggregation tables by using a third-party tool or a scripting solution through XMLA endpoints.
 
 Most validations are enforced by disabling dropdown values and showing explanatory text in the tooltip.
 
@@ -267,7 +268,13 @@ The following JSON snippet shows an example of the output of the event when an a
 
 ## Keep caches in sync
 
-Aggregations that combine DirectQuery, Import, and/or Dual storage modes may return different data unless the in-memory cache is kept in sync with the source data. For example, query execution won't attempt to mask data issues by filtering DirectQuery results to match cached values. There are established techniques to handle such issues at the source, if necessary. Performance optimizations should be used only in ways that don't compromise your ability to meet business requirements. It's your responsibility to know your data flows and design accordingly. 
+Aggregations that combine DirectQuery, Import, and/or Dual storage modes may return different data unless the in-memory cache is kept in sync with the source data. For example, query execution won't attempt to mask data issues by filtering DirectQuery results to match cached values. There are established techniques to handle such issues at the source, if necessary. Performance optimizations should be used only in ways that don't compromise your ability to meet business requirements. It's your responsibility to know your data flows and design accordingly.
+
+## Considerations and limitations
+
+- Aggregations do not support [Dynamic M Query Parameters](../connect-data/desktop-dynamic-m-query-parameters.md).
+
+- Beginning August 2022, due to changes in functionality, Power BI will ignore import mode aggregation tables with SSO-enabled data sources because of potential security risks. To ensure optimal query performance with aggregations, it’s recommended you disable SSO for these data sources.
 
 ## Community
 
@@ -278,5 +285,5 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 
 ## See also
 
-[Automatic aggregations](../admin/aggregations-auto.md)  
+[Automatic aggregations](../enterprise/aggregations-auto.md)  
 [Composite models](desktop-composite-models.md)  

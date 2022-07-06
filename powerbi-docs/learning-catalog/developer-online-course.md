@@ -54,28 +54,28 @@ The [course of 21 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN0YdI
   - Video 05: [Power BI Overview - Part 3](https://www.youtube.com/watch?v=rI4e24gIQe8&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=5)
   - Video 06: [Power BI Overview - Part 4](https://www.youtube.com/watch?v=rNq1G9HkVdg&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=6)
 - **Module 02: Power BI Embedded Analytics**
-  - Video 07: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 08: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 07: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/watch?v=COEXWSrR3JQ&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=7)
+  - Video 08: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/watch?v=jFgbI2KnmHY&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=8)
 - **Module 03: Configure Permissions**
-  - Video 09: [Configure Permissions - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 10: [Configure Permissions - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 09: [Configure Permissions - Part 1](https://www.youtube.com/watch?v=xOz-UFCUXQc&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=9)
+  - Video 10: [Configure Permissions - Part 2](https://www.youtube.com/watch?v=xSr2y7BpbIA&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=10)
 - **Module 04: Embed Power BI Content**
-  - Video 11: [Embed Power BI Content - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 12: [Embed Power BI Content - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 11: [Embed Power BI Content - Part 1](https://www.youtube.com/watch?v=6OYk8iUj0yo&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=11)
+  - Video 12: [Embed Power BI Content - Part 2](https://www.youtube.com/watch?v=BxxjpCk5z-s&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=12)
 - **Module 05: Integrate Content with the Power BI Client APIs**
-  - Video 13: [Integrate Content with the Power BI Client APIs - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 14: [Integrate Content with the Power BI Client APIs - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 13: [Integrate Content with the Power BI Client APIs - Part 1](https://www.youtube.com/watch?v=cFnI-1s2LIM&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=13)
+  - Video 14: [Integrate Content with the Power BI Client APIs - Part 2](https://www.youtube.com/watch?v=yF0zA2-jTl8&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=14)
 - **Module 06: Configure Data Permissions**
-  - Video 15: [Configure Data Permissions - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 16: [Configure Data Permissions - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 17: [Configure Data Permissions - Part 3](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 15: [Configure Data Permissions - Part 1](https://www.youtube.com/watch?v=NQymN6flkKk&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=15)
+  - Video 16: [Configure Data Permissions - Part 2](https://www.youtube.com/watch?v=YdYLQt5FkX4&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=16)
+  - Video 17: [Configure Data Permissions - Part 3](https://www.youtube.com/watch?v=hWOIuoAz7h0&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=17)
 - **Module 07: Automate Solution Management**
-  - Video 18: [Automate Solution Management - Part 1](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
-  - Video 19: [Automate Solution Management - Part 2](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 18: [Automate Solution Management - Part 1](https://www.youtube.com/watch?v=hkVHOHZ_jm4&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=18)
+  - Video 19: [Automate Solution Management - Part 2](https://www.youtube.com/watch?v=-LGOWDpC3x4&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=19)
 - **Module 08: Power BI Embedded Analytics Licensing**
-  - Video 20: [Power BI Embedded Analytics Licensing](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 20: [Power BI Embedded Analytics Licensing](https://www.youtube.com/watch?v=y6zp04btvVw&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=20)
 - **Bonus Content**
-  - Video 21: [Power BI Embedded Analytics Playground](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 21: [Power BI Embedded Analytics Playground](https://www.youtube.com/watch?v=DLYlDDF3mNw&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D&index=21)
 
 ## Self-study kit
 

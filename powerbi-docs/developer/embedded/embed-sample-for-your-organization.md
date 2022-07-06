@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your organization
-description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+title: Embed content in your Power BI embedded analytics application for your organization
+description: Learn how to integrate Power BI into your application, enabling better embedded BI insightsfor your organization, using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 12/17/2020
+ms.date: 05/25/2022
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -19,12 +19,16 @@ Power BI embedded analytics allows you to embed Power BI content such as reports
 In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
+>
 >* Set up your embedded environment.
 >* Configure an *embed for your organization* (also known as *user owns data*) sample application.
 
 To use your application, your users will need to sign in to Power BI.
 
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
+
+> [!IMPORTANT]
+> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -53,9 +57,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     * One of the following licenses:
 
-        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)
+        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-        * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml)
+        * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
@@ -303,9 +307,13 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 ---
 
-## Developing your application
+## Develop your application
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
+
+## Update user permissions
+
+For anyone to access the report, they need permission to access the Power BI folder the report is in. When you grant someone permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
 ## Next steps
 

@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/12/2021
+ms.date: 12/02/2021
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 With Power BI Desktop, you can use *R* to visualize your data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) is a language and environment for statistical computing and graphics.
 
 ## Install R
@@ -23,9 +26,12 @@ After you've installed R, Power BI Desktop enables it automatically. To verify t
 
 2. On the left side of the **Options** page, under **Global**, select **R scripting**. 
 
-3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.5.3\\**.
+3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.4.4\\**.
    
    ![R script options page](media/desktop-r-visuals/r-visuals-2.png)
+
+> [!IMPORTANT]
+> The most current version of R supported on both Power BI Desktop and the Power BI service is version 3.4.4.
 
 After you've verified your R installation, you’re ready to begin creating R visuals.
 

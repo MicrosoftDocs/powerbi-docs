@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 12/02/2021
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata
@@ -41,6 +41,8 @@ You can fix your queries in three different places in Power BI Desktop:
     :::image type="content" source="media/desktop-enhanced-dataset-metadata/enhanced-metadata-apply-query-changes.png" alt-text="Screenshot of Apply query changes message: We couldn't fold the expression to the data source.":::
 
 - When you run evaluations when you open a report to check if you have unsupported queries. Running these evaluations can result in performance implications.
+- Certain character combinations in M expressions that would be unsupported in the Tabular Object Model (TOM) will also be unsupported in the enhanced dataset metadata environment.
+
 
 
 ## Next steps

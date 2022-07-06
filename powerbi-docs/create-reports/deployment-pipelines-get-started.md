@@ -7,10 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 07/01/2021
+ms.date: 02/14/2022
 ---
 
 # Get started with deployment pipelines
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
@@ -22,9 +24,9 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 * You have one of the following Premium licenses:
 
-    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
+    * You're a Power BI [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
+    * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
 
 * You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -59,7 +61,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
 
 >[!NOTE]
->If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace
 
@@ -72,7 +74,7 @@ Follow the instructions in the link to [assign a workspace to a pipeline](deploy
 
 ## Step 3 - Deploy to an empty stage
 
-Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
+Any [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
 You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines) to programmatically perform deployments. For more information, see [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
 
@@ -117,12 +119,13 @@ When working in a deployment pipeline, different stages may have different confi
 
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
-You can configure rules fo data source rules and parameter rules. The following table lists the type of Power BI items you can configure rules for, and the type of rule you can configure for each one.
+You can configure data source rules and parameter rules. The following table lists the type of Power BI items you can configure rules for, and the type of rule you can configure for each one.
 
 ||Data source rule  |Parameter rule  |Details  |
 |---------|---------|---------|---------|
 |**Dataflow**         |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataflow. |
 |**Dataset**          |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataset.         |
+|**Datamart**          |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific datamart.         |
 |**Paginated report** |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report. |
 
 >[!NOTE]
@@ -136,9 +139,9 @@ To create a deployment rule, follow the steps in this section. After you create 
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings.":::
 
-2. You can set rules to **dataflows**, **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
+2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets and paginated reports.":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets, datamarts and paginated reports.":::
 
 3. Select the dataflow, dataset or paginated report you want to create a rule for.
 
@@ -159,6 +162,7 @@ To create a deployment rule, follow the steps in this section. After you create 
         >[!NOTE]
         >* *Data source rules* will be grayed out if you're not the owner of the Power BI item you're creating a rule for, or if your Power BI item doesn't contain any data sources.
         >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the source pipeline stage.
+        >* You can’t use the same data source in more than one rule.
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
@@ -172,6 +176,8 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
+
 * Rules for dataflows that have other dataflows as sources, are not supported.
 
 * Data source rules for common data model (CDM) folders in a dataflow, are not supported.
@@ -181,6 +187,8 @@ This section lists the limitations for the deployment rules.
 * If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
 * If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+
+* After deploying a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
 
 >[!NOTE]
 >Parameter rules are not supported for paginated reports.

@@ -7,7 +7,7 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 06/14/2022
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page
@@ -22,7 +22,7 @@ You can feature dashboards, reports, and apps so they appear in the Featured sec
 
 To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in the new workspaces](service-roles-new-workspaces.md) for details. You do need to have a Power BI Pro license. 
 
-Your Power BI admin can turn off the ability to feature content on your tenant, and choose who can feature content. See the [admin portal](../admin/service-admin-portal.md#featured-content) article for details.
+Power BI admins can monitor and manage featured content, or even turn off the feature entirely. See [Manage featured content](../admin/service-admin-portal-featured-content.md) for details.
 
 ## Who sees featured content
 
@@ -30,7 +30,7 @@ When you feature a dashboard or report from a workspace, people with at least a 
 
 ## Feature a dashboard or report
 
-The procedure for featuring either a dashboard or report is similar.
+To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. The procedure for featuring either a dashboard or report is similar.
 
 1. In the **All** or **Content** list for a workspace, select **More options (...)** > **Settings**.
 
@@ -48,18 +48,21 @@ The procedure for featuring either a dashboard or report is similar.
 
 ## Feature an app
 
-- To feature an app, open the workspace for the app, select the **Options** menu (**...**) > **Feature this app on Home**.
+To feature app, you need to have the Admin or Member role in a workspace. 
+
+- Open the *workspace* for the app, not the app itself, and select the **Options** menu (**...**) > **Feature this app on Home**.
 
     :::image type="content" source="media/service-featured-content/power-bi-feature-app-home.png" alt-text="Screenshot of Feature this app on Home.":::
 
-Now everyone who has access to this app will also see it in the **Featured** section on **Home**.
+Now everyone who has access to this app also sees it in the **Featured** section on **Home**.
 
 ## Considerations
 
-Endorsing an app or a report by promoting it automatically checks the **Feature on Home** checkbox. You can uncheck **Feature on Home** anytime. If you do, changing endorsement doesn't recheck **Feature on Home**. Read more about [promoting your content](service-endorse-content.md#promote-content). 
+Endorsing an app or a report by promoting it automatically checks the **Feature on Home** checkbox. You can uncheck **Feature on Home** anytime. If you do, changing endorsement doesn't recheck **Feature on Home**. Read more about [promoting your content](service-endorse-content.md#promote-content).
 
 ## Next steps
 
 * [How should I collaborate on and share dashboards and reports?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Manage featured content in the Admin portal](../admin/service-admin-portal.md#manage-featured-content)
+* Admins: [Manage featured content in the Admin portal](../admin/service-admin-portal-featured-content.md)
+* Admins: [Enable/disable featured content in your organization](../admin/service-admin-portal-export-sharing.md#featured-content)
 * Questions? [Try the Power BI Community](https://community.powerbi.com/)

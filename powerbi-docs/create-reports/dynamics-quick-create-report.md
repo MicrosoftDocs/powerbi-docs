@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/12/2021
+ms.custom: video-RWRVzC
+ms.date: 01/21/2022
 LocalizationGroup: Reports
 ---
 # Visualize your data quickly from Power Apps and Dynamics 365 apps (preview) 
@@ -16,12 +17,26 @@ There's a new way to visualize your model-driven Power Apps and Dynamics 365 dat
 
 :::image type="content" source="media/service-quick-create-report/quick-summary-report.png" alt-text="Screenshot of the automatically generated report.":::
 
+## Video
+
+Watch this video showing how to create visuals from data stored within Dataverse, and then try it yourself.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRVzC]
+
+
 ## Visualize a view
 1.	In your model-driven Power App or Dynamics 365 app, select the **Visualize this view** button in the app bar of any grid view. 
 
     :::image type="content" source="media/service-quick-create-report/visualize-view-button.png" alt-text="Screenshot of the visualize this view button."::: 
 
     A dialog opens with an automatically generated report with a few fields selected for you in the **Your data** pane on the right. The visuals within the report will use some or all of your selected fields and potentially other fields from the table that work well with chosen fields.
+    
+    > [!NOTE]  
+    > Power BI is connecting to Dynamics on behalf of the user that clicked the **Visualize this view** button, so any security rules that have been set up with        Dataverse will apply. Users should see the same data they see within the app itself.
+    
 2.	Changing the data you see in the report is easy. In the **Your data** pane, add or remove fields that you’re interested in visualizing. The selected fields are then used as ‘hints’ to the algorithm generating the visuals. Power BI automatically adds or removes charts to show new visuals. 
 
     :::image type="content" source="media/service-quick-create-report/changing-the-report.png" alt-text="Screenshot of an updated report after selecting a field."::: 

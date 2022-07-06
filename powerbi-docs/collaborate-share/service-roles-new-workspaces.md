@@ -1,13 +1,13 @@
 ---
 title: Roles in the new workspaces in Power BI
-description: Learn about the different roles in the new workspaces, and what people in each role can do.
+description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 05/13/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -30,26 +30,26 @@ Everyone in a user group gets the role you've assigned. If someone is in several
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
-| Update and delete the workspace.  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   | 
-| Add/remove people, including other admins.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   |
-| Allow Contributors to update the app for the workspace  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |   |   |
-| Add members or others with lower permissions.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Publish, unpublish, and change permissions for an app |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Update an app. |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |  If allowed <sup>1</sup>  |   |
-| Share an item or share an app.<sup>2</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Allow others to reshare items.<sup>2</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Feature apps on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |   |
-| Manage dataset permissions.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |  |
-| Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |   |
-| Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |   |
-| Copy a report.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Create goals based on a dataset in the workspace.<sup>3</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| Modify gateway connection settings.<sup>4</sup> | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |  |
-| View and interact with an item.<sup>5</sup> |  ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png)  |
-| Read data stored in workspace dataflows | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-roles-new-workspaces/green-checkmark.png) |
+| Update and delete the workspace.  | ✔️ |   |   |   | 
+| Add/remove people, including other admins.  |  ✔️ |   |   |   |
+| Allow Contributors to update the app for the workspace  |  ✔️ |   |   |   |
+| Add members or others with lower permissions.  |  ✔️ | ✔️  |   |   |
+| Publish, unpublish, and change permissions for an app |  ✔️ | ✔️  |   |   |
+| Update an app. |  ✔️ | ✔️  |  If allowed <sup>1</sup>  |   |
+| Share an item or share an app.<sup>2</sup> |  ✔️ | ✔️  |   |   |
+| Allow others to reshare items.<sup>2</sup> |  ✔️ | ✔️  |   |   |
+| Feature apps on colleagues' Home |  ✔️ | ✔️  |   |   |
+| Manage dataset permissions.<sup>3</sup> | ✔️ | ✔️ |  |  |
+| Feature dashboards and reports on colleagues' Home |  ✔️ | ✔️  | ✔️ |   |
+| Create, edit, and delete content, such as reports, in the workspace.  |  ✔️ | ✔️  | ✔️  |   |
+| Publish reports to the workspace, delete content.  |  ✔️ | ✔️  | ✔️  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ✔️ | ✔️  | ✔️  |   |
+| Copy a report.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
+| Create metrics based on a dataset in the workspace.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
+| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
+| Modify gateway connection settings.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
+| View and interact with an item.<sup>5</sup> |  ✔️ | ✔️  | ✔️  | ✔️  |
+| Read data stored in workspace dataflows | ✔️ | ✔️ | ✔️ | ✔️ |
 
 <sup>1</sup> Contributors can [update the app associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to it.
 
@@ -63,7 +63,7 @@ Everyone in a user group gets the role you've assigned. If someone is in several
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) in this article for details.
-> - To enforce [row-level security (RLS)](../admin/service-admin-rls.md) for users browsing content in a workspace, use the Viewer role. You can also enforce RLS without giving access to the new workspace. [Publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md) to them.
+> - To enforce [row-level security (RLS)](../enterprise/service-admin-rls.md) for users browsing content in a workspace, use the Viewer role. You can also enforce RLS without giving access to the new workspace. [Publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md) to them.
 
 ## Licenses
 If one of the new workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro or Premium Per User (PPU) license. These users can all collaborate on the dashboards and reports in the new workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
@@ -73,11 +73,11 @@ When the new workspace is in a Power BI Premium capacity, users with the Viewer 
 Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro or Premium Per User (PPU) license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
 
 > [!NOTE]
-> Power BI US Government isn't available as a Free license. For licensing details, see [Power BI for US government customers](../admin/service-govus-overview.md).
+> Power BI US Government isn't available as a Free license. For licensing details, see [Power BI for US government customers](../enterprise/service-govus-overview.md).
 
 ### Guest users
 
-By default, [Azure AD B2B Guest users](../admin/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
+By default, [Azure AD B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](../enterprise/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
 
 ## Considerations and limitations
 

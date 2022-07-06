@@ -39,8 +39,8 @@ Here are the prerequisites for creating the paginated report:
 
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
-- You need a [Power BI Pro license](../admin/service-admin-licensing-organization.md) or Premium Per User (PPU) license.
-- You need a workspace on the service in a [Power BI Premium capacity](../admin/service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- You need a [Power BI Pro license](../enterprise/service-admin-licensing-organization.md) or Premium Per User (PPU) license.
+- You need a workspace on the service in a [Power BI Premium capacity](../enterprise/service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
 
 ## Create the matrix with a wizard
   

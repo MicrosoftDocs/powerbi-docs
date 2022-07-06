@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/19/2021
-LocalizationGroup: Transform and shape data
+ms.date: 11/07/2021
+Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
 
@@ -20,7 +20,7 @@ The composite models capability in Power BI Desktop consists of three related fe
 
 * **Many-to-many relationships**: With composite models, you can establish *many-to-many relationships* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
-* **Storage mode**: You can now specify which visuals query back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries to back-end sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
+* **Storage mode**: You can now specify which visuals query back-end data sources. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries to back-end sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 ## Use composite models
 
@@ -164,15 +164,14 @@ This release of composite models presents a few limitations:
 
 Currently, [incremental refresh](../connect-data/incremental-refresh-overview.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
-The following Live Connect multi-dimensional sources can't be used with composite models:
+The following Live Connect tabular sources can't be used with composite models:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI datasets
+* [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
 * Azure Analysis Services
-
-When you connect to these multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with import data.
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 

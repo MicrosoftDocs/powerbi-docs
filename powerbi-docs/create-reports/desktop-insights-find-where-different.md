@@ -11,15 +11,17 @@ ms.topic: how-to
 ms.date: 04/23/2021
 LocalizationGroup: Create reports
 ---
-# Apply insights in Power BI Desktop to discover where distributions vary
+# Apply insights in Power BI to discover where distributions vary
 
-Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI Desktop** you can find out with just a few clicks.
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI** you can find out with just a few clicks.
 
 Consider the following visual, which shows *Total Sales* by *Country*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
 
 ![Chart with big distribution](media/desktop-insights-find-where-different/find-where-different_01.png)
 
-You can tell **Power BI Desktop** to find where a distribution is different, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze** > **Find where this distribution is different**, and insight is delivered to you in an easy-to-use window.
+You can tell **Power BI** to find where a distribution is different, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze** > **Find where this distribution is different**, and insight is delivered to you in an easy-to-use window.
 
 ![Insights for where distribution is different](media/desktop-insights-find-where-different/find-where-different_02.png)
 
@@ -30,7 +32,7 @@ To use insights to find where distributions seen on charts are different, just r
 
 ![Right-click to get insights](media/desktop-insights-find-where-different/find-where-different_03.png)
 
-**Power BI Desktop** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories (columns), and which values of those columns, result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image. 
+**Power BI** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories (columns), and which values of those columns, result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image. 
 
 ![Column chart](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -44,7 +46,7 @@ The descriptive text also gives some indication of the level of importance that 
 
 The *thumbs up* and *thumbs down* icons at the top of the page are provided so you can provide feedback about the visual and the feature. Doing so provides feedback, but it does not currently train the algorithm to influence the results returned next time you use the feature.
 
-And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI Desktop**.
+And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI**.
 
 You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports.
 
@@ -131,7 +133,7 @@ In addition, the following model types and data sources are currently not suppor
 * Embedding
 
 ## Next steps
-For more information about **Power BI Desktop**, and how to get started, check out the following articles.
+For more information about **Power BI**, and how to get started, check out the following articles.
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

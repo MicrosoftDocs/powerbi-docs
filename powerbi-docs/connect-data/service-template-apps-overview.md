@@ -40,7 +40,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
 :::row-end:::
 
  > [!NOTE] 
- > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../admin/service-govus-overview.md) for more detail.
+ > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../enterprise/service-govus-overview.md) for more detail.
 
 
 ## Process
@@ -85,7 +85,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings) for details.
+To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](../admin/service-admin-portal-template-app.md) for details.
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
  > [!NOTE] 
@@ -99,7 +99,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
 - Enable data customization; for example, support custom connection and parameters configuration by the installer.
-- If you are an ISV and are distributing your app through your web service, consider automating parameter configuration during installation to make things easier for your customers and to increase the likelihood of a successful installation. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+- If you are an ISV and are distributing your app through your web service, consider automating parameter configuration during installation to make things easier for your customers and to increase the likelihood of a successful installation. See [Automated configuration of a template app installation](template-apps-auto-install.md) for details.
 
 See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
 

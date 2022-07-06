@@ -70,6 +70,35 @@ On the **Datasets + dataflows** tab, you have several options for exploring your
 
 Let's add a decomposition tree, or decomp tree, to our report for ad hoc analysis.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
+
+1. Select the **Report** icon to open the Reports view. In the **Visualizations** pane, select the **Decomposition tree** icon.
+
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot of the Visualizations pane, Decomposition tree.":::
+
+1. Drag the edge so it fills most of the page. Decomposition trees can get wide.
+
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png" alt-text="Screeshot shows the resized decomposition tree in Power B I Desktop.":::
+
+1. Decomp trees analyze one value by many categories, or *dimensions*. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
+
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png" alt-text="Screenshot shows Analyze Sales Value in the decomp tree in Power B I Desktop.":::
+
+1. Next, select dimension fields and add them to the **Explain by** box. Add as many as you want, in any order. You can use them or not, in any order, in the decomp tree. We added:
+
+    - District Manager
+    - Category
+    - FamilyName
+    - Segment
+    - Chain
+    - PostalCode
+    - Store Type
+    - Territory
+
+     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-explain-desktop.png" alt-text="Explain sales by these categories.":::
+
+# [Power BI service](#tab/powerbi-service)
 1. In the **Visualizations** pane, select the **Decomposition tree** icon.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot of the Visualizations pane, Decomposition tree.":::
@@ -95,32 +124,47 @@ Let's add a decomposition tree, or decomp tree, to our report for ad hoc analysi
 
      :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-explain-by.png" alt-text="Explain sales by these categories.":::
 
+---
+
 ## Analyze in the decomp tree
 
 Now comes the ad hoc analysis part. 
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means Power BI will use artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value.png" alt-text="Let Power BI select the highest value.":::
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value-desktop.png" alt-text="Screenshot shows selecting the highest value for analysis.":::
 
-    Power BI selects **Store type**.
+   Power BI selects **Store type**.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
 
-1. Keep selecting **High value** until you have a decomp tree that looks like this one.
+# [Power BI service](#tab/powerbi-service)
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Power BI selected all the highest values.":::
+1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means Power BI will use artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
 
-    Or select other values yourself, and see what you end up with.
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value.png" alt-text="Let Power BI select the highest value.":::
 
-1. You can delete levels by selecting the **X** in the heading.
+   Power BI selects **Store type**.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Delete a dimension from the decomp tree.":::
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Power BI selects Store Type.":::
 
-1. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
+---
+
+2. Keep selecting **High value** until you have a decomp tree that looks like this one.
+
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Power BI selected all the highest values.":::
+
+   Or select other values yourself, and see what you end up with.
+
+3. You can delete levels by selecting the **X** in the heading.
+
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Delete a dimension from the decomp tree.":::
+
+4. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-reading-view.png" alt-text="The decomp tree in Reading view.":::
-
 
 Learn about everything else you can do with decomp trees in [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 

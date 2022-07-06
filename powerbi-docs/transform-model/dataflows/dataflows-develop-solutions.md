@@ -1,4 +1,4 @@
----
+﻿---
 title: Develop solutions with dataflows
 description: Overview of how to develop solutions with dataflows
 author: davidiseminger
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 08/24/2021
+ms.date: 11/30/2021
 LocalizationGroup: Data from files
 ---
 
 
 # Develop solutions with dataflows
 
-Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents come common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
+Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
 
 ## Get access to Premium features of dataflows
 
@@ -171,7 +171,7 @@ For more information about refresh, see [Understanding and optimizing dataflows 
 
 ## Ensure you protect data assets downstream
 
-You can use sensitivity labels to apply a data classification and any rules you configured on downstream artifacts that connect to your dataflows. To learn more about sensitivity labels, see [Microsoft Information Protection sensitivity labels in Power BI](../../admin/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../admin/service-security-sensitivity-label-downstream-inheritance.md).
+You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../enterprise/service-security-sensitivity-label-downstream-inheritance.md).
 
 ## Multi-geo support
 

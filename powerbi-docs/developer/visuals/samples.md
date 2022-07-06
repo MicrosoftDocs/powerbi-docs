@@ -12,7 +12,7 @@ ms.date: 04/15/2021
 
 # Samples of Power BI visuals
 
-You can download, use, and modify these Power BI visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
+You can download, use, and modify these Power BI custom visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
 
 ## Slicers
 
@@ -30,7 +30,7 @@ Be inspired with our gallery, including bar charts, pie charts, Word Cloud, and 
 
 | <img src="media/samples/aster-plot.png" alt="Screenshot shows Aster Plot." width="200">  | <img src="media/samples/bullet-chart.png" alt="Screenshot shows Bullet chart." width="200"> | 
 | ------------- | ------------- |
-| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart that uses a second value to drive sweep angle | [Bullet chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking goals | 
+| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart that uses a second value to drive sweep angle | [Bullet chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking metrics | 
 |<img src="media/samples/Chord.png" alt="Screenshot shows Chord." width="200">| <img src="media/samples/dot-plot.png" alt="Screenshot shows Dot plot." width="200">|
 |[Chord](https://github.com/Microsoft/powerbi-visuals-chord/) </br>A graphical method that displays the relationships between data in a matrix | [Dot plot](https://github.com/Microsoft/powerbi-visuals-dotplot/) </br>Shows the distribution of frequencies in a great looking way| 
 | <img src="media/samples/dual-kpi.png" alt="Screenshot shows Dual K P I." width="200">| <img src="media/samples/enhanced-scatter.png" alt="Screenshot shows Enhanced Scatter." width="200"> |
@@ -80,4 +80,5 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 
 ## Next steps
 
-To try out creating Power BI visuals, see [Developing a Power BI circle card visual](develop-circle-card.md).
+> [!div class="nextstepaction"]
+> [Developing a Power BI circle card visual](develop-circle-card.md)

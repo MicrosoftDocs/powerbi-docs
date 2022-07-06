@@ -2,8 +2,8 @@
 title: "Power BI adoption roadmap: Governance"
 description: Effectively enforce governance to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -18,7 +18,7 @@ Data governance is a broad and complex topic. This article introduces key concep
 
 As defined by the [Data Governance Institute](https://datagovernance.com/the-data-governance-basics/definitions-of-data-governance/), data governance is "a system of decision rights and accountabilities for information-related processes, executed according to agreed-upon models which describe who can take what actions, with what information, and when, under what circumstances, using what methods."
 
-Although it is called _data governance_ it's really a misnomer. The primary focus for governance isn't on the data itself, but on governing _what people do with the data_. Put another way: the true focus is on governing people's behavior to ensure organizational data is well-managed.
+Although it is called *data governance* it's really a misnomer. The primary focus for governance isn't on the data itself, but on governing *what people do with the data*. Put another way: the true focus is on governing people's behavior to ensure organizational data is well-managed.
 
 When focused on self-service business intelligence, the primary goals of governance are to:
 
@@ -118,12 +118,12 @@ Method 2 prioritizes control and stability. It lies at the opposite end of the s
 
 ### Method 3: Iterative governance with rollouts
 
-Method 3 seeks a balance between agility and governance. It's an ideal scenario that does _just enough_ governance planning upfront. Frequent and continual governance improvements iteratively occur over time alongside Power BI development projects that deliver value.
+Method 3 seeks a balance between agility and governance. It's an ideal scenario that does *just enough* governance planning upfront. Frequent and continual governance improvements iteratively occur over time alongside Power BI development projects that deliver value.
 
 **Pros:**
 
 - Puts equal priority on governance and user productivity.
-- Emphasizes a _learning as you go_ mentality.
+- Emphasizes a *learning as you go* mentality.
 - Encourages rolling out to groups in stages.
 
 **Cons:**
@@ -191,7 +191,7 @@ For organizations that have implemented Power BI without a governance approach o
 If a formal governance body doesn't currently exist in your organization, then the focus of your governance planning and implementation efforts will be broader. If, however, there is an existing data governance board in the organization, then your focus is primarily to integrate with existing practices and customize them to accommodate the objectives for self-service BI and enterprise BI.
 
 > [!IMPORTANT]
-> Governance is a big undertaking, and it's never completely _done_. Relentlessly prioritizing and iterating on improvements will make the scope more manageable. If you track your progress and accomplishments each week and each month, you'll be amazed at the impact over time. The [maturity levels](#maturity-levels) at the end of each article in this series can help with your assessment.
+> Governance is a big undertaking, and it's never completely *done*. Relentlessly prioritizing and iterating on improvements will make the scope more manageable. If you track your progress and accomplishments each week and each month, you'll be amazed at the impact over time. The [maturity levels](#maturity-levels) at the end of each article in this series can help with your assessment.
 
 Some potential governance planning activities and outputs that you may find valuable are described next.
 
@@ -288,7 +288,7 @@ How we go about making governance decisions depends on:
 - **Who owns and manages the BI content?** The [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article introduced three types of strategies: business-led self-service BI, managed self-service BI, and enterprise BI. Who owns and manages the content has a significant impact on governance requirements.
 - **What is the scope for delivery of the BI content?** The [Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article introduced four scopes for delivery of content: personal BI, team BI, departmental BI, and enterprise BI. The scope of delivery has a considerable impact on governance requirements.
 - **What is the data subject area?** The data itself, including its sensitivity level, is an important factor. Some data domains inherently require tighter controls. For instance, personally identifiable information (PII), or data subject to regulations, should be subject to stricter governance requirements than less sensitive data.
-- **Is the data, and/or the BI solution, considered critical?** If you can't make an informed decision easily without this data, you're dealing with critical data elements. Certain reports and apps may be deemed critical because they meet a set of predefined criteria. For instance, the content is delivered to executives. Predefined criteria for what's considered _critical_ helps everyone have clear expectations. Critical data is usually subject to stricter governance requirements.
+- **Is the data, and/or the BI solution, considered critical?** If you can't make an informed decision easily without this data, you're dealing with critical data elements. Certain reports and apps may be deemed critical because they meet a set of predefined criteria. For instance, the content is delivered to executives. Predefined criteria for what's considered *critical* helps everyone have clear expectations. Critical data is usually subject to stricter governance requirements.
 
 > [!TIP]
 > Different combinations of the above four criteria will result in different governance requirements for Power BI content.
@@ -299,17 +299,17 @@ As you explore your goals and objectives and pursue more tactical data governanc
 
 The following list includes items that you may choose to prioritize when introducing governance for Power BI:
 
-- Recommendations and requirements for [content ownership and ownership](powerbi-adoption-roadmap-content-ownership-and-management.md).
+- Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md).
-- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../admin/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
+- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
 - Allowed activities with regulated data and highly sensitive data.
 - Allowed use of unverified data sources that are unknown to IT and/or recommendations for manually maintained data sources.
 - How to manage [workspaces](../collaborate-share/service-create-the-new-workspaces.md) effectively.
 - Who is allowed to be a [Power BI administrator](powerbi-adoption-roadmap-system-oversight.md).
-- [Security](../admin/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for data artifacts assigned to each [sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md).
+- [Security](../enterprise/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for datasets assigned to each [sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md).
 - Allowed or encouraged use of [personal gateways](../connect-data/service-gateway-personal-mode.md).
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
-- Requirements for who may [certify](../collaborate-share/service-endorse-content.md) data artifacts, as well as requirements which must be met.
+- Requirements for who may [certify](../collaborate-share/service-endorse-content.md) datasets, as well as requirements which must be met.
 - Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](../create-reports/deployment-pipelines-overview.md).
 - Additional requirements applicable to critical content, such as data quality verifications and documentation.
 - Requirements to use standardized master data and common data to ensure consistency.
@@ -342,9 +342,9 @@ Here are three common data policy examples you may choose to prioritize:
 
 | **Policy** | **Description** |
 | --- | --- |
-| Data ownership policy | Specifies when an owner is required for a data artifact, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
-| Data certification (endorsement) policy | Specifies the process that is followed to certify a data artifact. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
-| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should align with data protection policies that are discussed in the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article. It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the data artifact. Sometimes, it is also called a _data handling policy_ or a _data usage policy_. |
+| Data ownership policy | Specifies when an owner is required for a dataset, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
+| Data certification (endorsement) policy | Specifies the process that is followed to certify a dataset. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
+| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should align with data protection policies that are discussed in the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article. It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the dataset. Sometimes, it is also called a *data handling policy* or a *data usage policy*. |
 
 > [!CAUTION]
 > Having a lot of documentation can lead to a false sense that everything is under control, which can lead to complacency. The level of engagement that the [COE](powerbi-adoption-roadmap-center-of-excellence.md) has with the user community is one way to ensure that governance guidelines and policies are followed. Auditing and monitoring activities are also important. For information about these activities, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
@@ -403,7 +403,7 @@ The levels in the above diagram include:
 | ![Level 4.](media/common/icon-04-red-30x30.png) | **Strategic - Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have people with sufficient authority to be able to make decisions when necessary. |
 
 > [!IMPORTANT]
-> Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well-managed as an organizational asset. Sometimes this is cited as _everyone is a data steward_. To make this a reality, start with the people in the business units (level 1 described above) as the foundation.
+> Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well-managed as an organizational asset. Sometimes this is cited as *everyone is a data steward*. To make this a reality, start with the people in the business units (level 1 described above) as the foundation.
 
 ## Roles and responsibilities
 
@@ -414,7 +414,7 @@ Governance team structure, roles (including terminology), and responsibilities v
 | **Role** | **Description** |
 | --- | --- |
 | Chief Data Officer or Chief Analytics Officer | Defines the strategy for use of data as an enterprise asset. Oversees enterprise-wide governance guidelines and policies. |
-| Data governance board | Steering committee with members from each business unit who, as domain owners, are empowered to make enterprise governance decisions. They make decisions on behalf of the business unit _and_ in the best interest of the organization. Provides approvals, decisions, priorities, and direction to the enterprise data governance team and working committees. |
+| Data governance board | Steering committee with members from each business unit who, as domain owners, are empowered to make enterprise governance decisions. They make decisions on behalf of the business unit *and* in the best interest of the organization. Provides approvals, decisions, priorities, and direction to the enterprise data governance team and working committees. |
 | Data governance team | Creates governance policies, standards, and processes. Provides enterprise-wide oversight and optimization of data integrity, trustworthiness, privacy, and usability. Collaborates with the COE to provide governance education, support, and mentoring to data owners and content creators. |
 | Data governance working committees | Temporary or permanent teams that focus on individual governance topics, such as security or data quality. |
 | Change management board | Coordinates the requirements, processes, approvals, and scheduling for release management processes with the objective of reducing risk and minimizing the impact of changes to critical applications. |

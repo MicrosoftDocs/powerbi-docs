@@ -8,15 +8,17 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/03/2021
+ms.date: 04/21/2022
 LocalizationGroup: Dashboards
 ---
 
 # Data alerts in the Power BI service
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Set alerts to notify you when data in your dashboards changes beyond limits you set.
 
-You can set alerts on tiles in your My Workspace. You can also set alerts if someone shares a dashboard that's in a [Premium capacity](../admin/service-premium-what-is.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
+You can set alerts on tiles in your My Workspace. You can also set alerts if someone shares a dashboard that's in a [Premium capacity](../enterprise/service-premium-what-is.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 Only you can see the alerts you set, even if you share your dashboard. Even the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Power Automate. You can try it yourself in this [Power Automate and Power BI](../collaborate-share/service-flow-integration.md) article.
 
@@ -122,6 +124,7 @@ There are many ways to manage your alerts:
 * Alerts aren't supported for card tiles with date/time measures.
 * Alerts only work with numeric data types.
 * Alerts only work on refreshed data. They don't work on static data.
+* Since alerts are only sent if your data changes, you won't receive duplicate alerts for an unchanged value.
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
 * You can create up to 250 alerts across all your models.
 

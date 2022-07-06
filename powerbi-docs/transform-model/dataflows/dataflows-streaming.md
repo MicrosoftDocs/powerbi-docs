@@ -19,7 +19,7 @@ Analysts usually need technical help to deal with streaming data sources, data p
 
 *Streaming dataflows* allow authors to connect to, ingest, mash up, model, and build reports based on streaming, near real-time data directly in the Power BI service. The service enables drag-and-drop, no-code experiences.  
 
-Users can mix and match streaming data with batch data if they need to. This is done through a UI that includes a *diagram view* for easy data mashup. The final artifact produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
+Users can mix and match streaming data with batch data if they need to. This is done through a UI that includes a *diagram view* for easy data mashup. The final item produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
 
 ![Screenshot that shows where to find streaming dataflows.](media/dataflows-streaming/dataflows-streaming-01.png)
 
@@ -455,13 +455,13 @@ As we mentioned before, streaming dataflows save data in the following two locat
 
 ### Connect to streaming dataflows from Power BI Desktop
 
-With the July 2021 release of Power BI Desktop, a new connector called **Power Platform dataflows (Beta)** is available for you to use. As part of this new connector, for streaming dataflows, you'll see two tables that match the data storage previously described.
+With the July 2021 release of Power BI Desktop, a new connector called **Dataflows** is available for you to use. As part of this new connector, for streaming dataflows, you'll see two tables that match the data storage previously described.
 
 To connect to your data for streaming dataflows: 
 
-1. Go to **Get Data**, search for **power platform**, and then select the **Power Platform dataflows (Beta)** connector.
+1. Go to **Get Data**, search for **power platform**, and then select the **Dataflows** connector.
 
-   ![Screenshot that shows where to find the Power Platform dataflows (Beta) connector in Power B I Desktop.](media/dataflows-streaming/dataflows-streaming-34.png)
+   ![Screenshot that shows where to find the Power Platform dataflows (Beta) connector in Power B I Desktop.](media/dataflows-streaming/dataflows-streaming-40.png)
 
 2. Sign in with your Power BI credentials.
 3. Select workspaces. Look for the one that contains your streaming dataflow and select that dataflow. (In this example, the streaming dataflow is called **Toll**.)

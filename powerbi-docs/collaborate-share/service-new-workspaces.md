@@ -70,9 +70,9 @@ Roles let you manage who can do what in the new workspaces, so teams can collabo
 
 ## Administering and auditing new workspaces
 
-Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the "Admin portal" article. 
+Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-the-new-workspaces) in the "Admin portal" article. 
 
-Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal.md#workspaces) in the "Admin portal" article.
+Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal-workspaces.md) in the "Admin portal" article.
 
 ### Auditing
 
