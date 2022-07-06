@@ -17,7 +17,7 @@ The **fetchMoreData API** supports loading data chunks as a way of enabling Powe
 This approach allows more flexibility in the way additional data chunks are loaded to the visual. To improve performance, you can configure the chunk size to accommodate your use case.
 
 >[!NOTE]
->The `fetchMoreData` API is available from version 3.4. To find out which version you’re using, run the `pbiviz -V` command.
+>The `fetchMoreData` API is available from version 3.4. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Enable a segmented fetch of large datasets
 

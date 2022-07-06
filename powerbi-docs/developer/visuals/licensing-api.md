@@ -19,7 +19,7 @@ The visual should not display its own licensing UX, instead use one of Power BI 
 Learn more on Power BI Licensing and Transactability support [here](https://go.microsoft.com/fwlink/?linkid=2197483).
 
 >[!NOTE]
->The `licensing` API is available from version 4.7. To find out which version you’re using, run the `pbiviz -V` command.
+>The **Licensing API** is available from version 4.7. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Retrieve visual's service plans that are assigned to the active user
 
