@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 05/08/2022
+ms.date: 06/02/2022
 #Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 
@@ -63,7 +63,7 @@ Each workspace that contains a Power BI item related to the embedded content (in
 
 ### Assign a workspace to a capacity using a service principal
 
-To assign a workspace to a capacity using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a workspace to a capacity using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md). The service principal should have administrator permissions on the workspace and capacity assignment permissions to the capacity.
 
 ### Assign a workspace to a capacity using a master user
 
@@ -92,11 +92,6 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
->[!div class="nextstepaction"]
->[Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
-
->[!div class="nextstepaction"]
->[Considerations when generating an embed token](generate-embed-token.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
+* [Considerations when generating an embed token](generate-embed-token.md)
