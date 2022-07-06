@@ -257,14 +257,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If the label applied to a .pbix file hasn't been published to the user in the Purview compliance portal, the user won’t be able to save the file in Desktop.
 
-* Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
-
-* Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
-
-* In general, when you protect a file with a sensitivity label that applies encryption, it’s good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
-
-* Temp files aren’t encrypted.
-
 * On-demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
 
     * Protected live-connected *.pbix* files.
@@ -273,6 +265,14 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
     * If the dataset owner's access token for OneDrive/SharePoint has expired.
 
     In these cases, refresh will fail.
+
+* Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
+
+* Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it’s recommended to go back online and try saving again.
+
+* In general, when you protect a file with a sensitivity label that applies encryption, it’s good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
+
+* Temp files aren’t encrypted.
 
 * **Export to PDF in Desktop** doesn’t support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won’t receive the label and no protection will be applied.
 
