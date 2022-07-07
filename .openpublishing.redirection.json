@@ -2651,7 +2651,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/connect-data/service-template-apps-samples",
+            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
