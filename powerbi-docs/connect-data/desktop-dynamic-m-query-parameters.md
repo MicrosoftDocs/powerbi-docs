@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop
 
-With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
+With **Dynamic M Query Parameters**, model authors can let **report viewers** use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
 
 When model authors understand the intended semantics of their filters, they often know how to write efficient queries against their data source, and can thus ensure filter selections get incorporated into source queries at the right point to achieve their intended results with improved performance.
 

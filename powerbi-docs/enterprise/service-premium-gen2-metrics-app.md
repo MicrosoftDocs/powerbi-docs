@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/25/2022
+ms.date: 06/14/2022
 LocalizationGroup: Premium 
 ---
 
@@ -386,7 +386,7 @@ The overloading visual has the following columns:
 
 * **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
 
-* **Overload time %** - The number of overloaded seconds divided by the duration of interactive operations that took place.
+* **Overload time %** - The proportion of the total operation run time spent in a throttled state. The smaller this value, the better.
 
 ### Performance
 
