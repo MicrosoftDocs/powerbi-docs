@@ -33,14 +33,16 @@ Row-level security (RLS) can be used to restrict data access for specified users
 You can configure RLS for datamarts in the **Datamart editor**. The configured RLS on datamarts automatically gets applied to downstream items, including the auto-generated datasets and reports. 
 
 
-### Define roles and rules in Power BI Datamarts
 
-To define security roles, take the following steps:
+### Define Row Level Security (RLS) roles and rules for Datamarts
+
+
+To define RLS roles, take the following steps:
 
 1.	Open your datamart and select **Manage Roles** from the ribbon.
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-02.png" alt-text="Screenshot of the manage roles ribbon button.":::
 
-2.	Create new roles in the **Row security settings** window. You can define a combination of filters on tables and select **Save** to save the role.
+2.	Create new RLS roles using the **Row security settings** window. You can define a combination of filters on tables and select **Save** to save the role.
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-03.png" alt-text="Screenshot of the row security settings window.":::
 
 3.	Once the role is saved, select **Assign** to add users to the role. Once assigned, select **Save** to save the role assignments and close the RLS settings modal.

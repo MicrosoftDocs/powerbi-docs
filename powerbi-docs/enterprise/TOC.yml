@@ -113,7 +113,9 @@
         - name: Monitor Premium workload metrics
           href: service-premium-metrics-app.md
         - name: Restart a Premium capacity
-          href: service-admin-premium-restart.md          
+          href: service-admin-premium-restart.md
+        - name: Premium support for China North
+          href: service-admin-premium-china-north.md                    
         - name: Power BI Premium FAQ
           href: service-premium-faq.yml
   - name: Governance and compliance
