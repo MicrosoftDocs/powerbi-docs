@@ -510,7 +510,7 @@ After configuring and running the *embed for your customers* sample application,
 [!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 > [!IMPORTANT]
-> In development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 ## Next steps
 

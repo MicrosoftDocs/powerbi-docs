@@ -533,7 +533,7 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
 After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
 
 > [!IMPORTANT]
-> In development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 
