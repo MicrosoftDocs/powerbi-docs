@@ -14,6 +14,9 @@ ms.date: 06/16/2022
 
 When you buy a custom visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), there are several business and licensing models (pricing, free trials etc.) available. Some visuals have free trial versions, while others have a basic version available for free with extra functionality available for purchase.
 
+>[!NOTE]
+>Licensed visuals are supported from the July 2022 desktop.
+
 ## No license or partial license
 
 If you try to render an unlicensed visual or a visual that you only have a partial license for, you may see one of the following icons:
@@ -42,8 +45,17 @@ If your report or dashboard contains a visual that isn't supported in your envir
 
 ## Solution
 
-Select the icon to go to the AppSource page where you can buy the license or upgrade to the paid version.
+Click **Upgrade visual** to go to the AppSource page where you can buy the license or upgrade to the paid version.
 
 After you purchase and assign the license, it can take up to an hour for the license to be recognized. Wait one hour and then refresh the your Power BI session (restart Desktop or refresh your web browser).
+
+## Considerations and limitations
+
+Currently, the following Power BI environments don't support license management or license enforcement:
+
+* Embedded - Publish To Web, PaaS embed
+* National clouds (Dependency on general support for transactability in national clouds)
+* RS Server (No planned support)
+* Exporting (PDF\PPT) using REST AP
 
 ## Next steps
