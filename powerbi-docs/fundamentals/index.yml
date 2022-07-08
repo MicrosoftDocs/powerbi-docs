@@ -41,6 +41,8 @@ landingContent:
         links:
           - text: What's new in Power BI?
             url: desktop-latest-update.md
+          - text: The new experience in the Power BI service
+            url: service-experience-changes.md
           - text: The new Format pane in Power BI Desktop
             url: desktop-format-pane.md
 
