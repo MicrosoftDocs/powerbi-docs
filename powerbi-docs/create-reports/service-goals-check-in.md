@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 07/08/2022
 ---
-# View and update your metrics in Power BI
+# Stay on top of your metrics
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events. These features are covered in this section. 
+Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events and follow metrics. These features are covered in this section. 
 
 ## View metric details 
 
@@ -114,7 +114,25 @@ You can automate status updates based on rules that govern that metric or submet
 - For the mobile experience, automatic refresh on status rules is not supported at this time. 
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Screenshot of Adding a condition to a rule.":::
+    
+### Follow metrics
 
+You can use the ‘Follow’ functionality to quickly access metrics you’re interested in and stay up to date on the activity on these metrics. You can follow metrics as you’re browsing through different scorecards and later access all your followed metrics in one place. This makes it easy to get a quick overview of the metrics you care about without having to navigate to different scorecards often.
+
+To follow, hover over the metric in the scorecard to select the **Follow metric** icon.
+
+:::image type="content" source="media/service-goals-check-in/follow-metric.png" alt-text="Screenshot of following a metric.":::
+    
+To see all your followed metrics, go to Metrics hub and select "Following".
+    
+:::image type="content" source="media/service-goals-check-in/following-metrics.png" alt-text="Screenshot of followed metrics in Metrics hub.":::
+    
+Once you follow a metric, you will get Teams notifications whenever the metric definition is updated, a check-in is added or when an automated status rule changes the status of the metric. Read more about [notifications](../collaborate-share/service-teams-notifications.md).
+
+To unfollow and stop getting the Teams notifications, select the **Unfollow metric** icon while hovering over the metric.
+    
+:::image type="content" source="media/service-goals-check-in/unfollow-metric.png" alt-text="Screenshot of unfollowing a metric.":::
+    
 
 ## Next steps
 
