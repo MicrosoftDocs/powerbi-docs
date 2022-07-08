@@ -54,19 +54,19 @@ Many organizations have 'template' scorecards that different departments or busi
 
 1. Go to File menu and select **Move scorecard** or **Copy scorecard** option
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-scorecard.png" alt-text="Screenshot of move and copy scorecard options in File menu.":::
+:::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-scorecard.png" alt-text="Screenshot of move and copy scorecard options in File menu.":::
     
 2. You will be provided with a dropdown of a list of workspaces you have access to. Select the workspace you’d like to move or copy the scorecard to and hit **Continue**.
 
-     :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
+ :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
      
  Copy scorecard has the option to include/exclude check-in history. This makes it easy to reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do this all over again. 
      
-     :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy scorecard dialog.":::
+ :::image type="content" source="media/service-goals-move/power-bi-goals-copy-scorecard.png" alt-text="Screenshot of copy scorecard dialog.":::
        
  3. You’ll get a toast when the move/copy operation is completed. This can take a few seconds. Click on **Open Scorecard** to open the scorecard in the selected workspace.
  
-     :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of toast on completion of move and copy scorecard.":::
+ :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of toast on completion of move and copy scorecard.":::
      
      
 ## Next steps
