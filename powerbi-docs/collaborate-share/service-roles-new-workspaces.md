@@ -45,7 +45,7 @@ Everyone in a user group gets the role you've assigned. If someone is in several
 | Publish reports to the workspace, delete content.  |  ✔️ | ✔️  | ✔️  |   |
 | Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ✔️ | ✔️  | ✔️  |   |
 | Copy a report.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
-| Create goals based on a dataset in the workspace.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
+| Create metrics based on a dataset in the workspace.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
 | Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
 | Modify gateway connection settings.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
 | View and interact with an item.<sup>5</sup> |  ✔️ | ✔️  | ✔️  | ✔️  |

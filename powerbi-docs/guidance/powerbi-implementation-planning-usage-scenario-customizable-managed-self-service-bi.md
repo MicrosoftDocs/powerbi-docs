@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 05/26/2022
 ---
 
 # Power BI usage scenarios: Customizable managed self-service BI
@@ -37,9 +37,9 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it may be used as a data source by many self-service report creators. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, dataset creator A publishes their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between artifacts. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | [Data discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the datasets hub by other Power BI content creators who are looking for data. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Dataset creator B uses the datasets hub in the Power BI service to search for discoverable datasets. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | The dataset is published to a workspace dedicated to storing and securing shared datasets. Since the dataset is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The dataset is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between Power BI items. |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | [Data discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the dataset is marked as discoverable. Discoverability allows the existence of a dataset to be visible in the data hub by other Power BI content creators who are looking for data. |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | Dataset creator B uses the data hub in the Power BI service to search for discoverable datasets. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | If dataset creator B doesn't have permission, they can request [Build permission](../connect-data/service-datasets-build-permissions.md) on the dataset. This starts a workflow to request Build permission from an authorized approver. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | In Power BI Desktop, dataset creator B creates a live connection to the original shared dataset that's located in the Power BI service. Since the intention is to extend and customize the original dataset, the [live connection](../connect-data/desktop-report-lifecycle-datasets.md) is [converted to a DirectQuery model](../connect-data/desktop-directquery-datasets-azure-analysis-services.md#using-directquery-for-live-connections). This action results in a local model in the Power BI Desktop file. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Power BI Desktop connects to data from additional data sources. The goal is to augment the shared dataset so that additional analytical requirements are met by the new specialized dataset. |
@@ -81,7 +81,7 @@ Because shared datasets are intended for reuse, it's helpful to [endorse](../col
 
 ### Dataset discovery
 
-The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../collaborate-share/service-discovery.md#how-to-mark-a-dataset-as-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the datasets hub for report creators who are searching for data.
+The [data hub](../connect-data/service-data-hub.md) helps report creators find, explore, and use datasets across the organization. In addition to dataset endorsement, [enabling dataset discovery](../collaborate-share/service-discovery.md#how-to-mark-a-dataset-as-discoverable) is critical for promoting its reuse. A discoverable dataset is visible in the data hub for report creators who are searching for data.
 
 > [!NOTE]
 > If a dataset isn't configured to be discoverable, only Power BI users with Build permission can find it.

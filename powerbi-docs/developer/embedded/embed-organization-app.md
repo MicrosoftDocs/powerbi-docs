@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/04/2021
+ms.date: 06/23/2022
 ---
 
 # Tutorial: Embed a Power BI report in an application for your organization
@@ -117,7 +117,7 @@ Add the NuGet packages listed below to your app:
 
 * In **VS Code**, open a terminal and type in the code below.
 
-* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Consol* and type in the code below.
+* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Console* and type in the code below.
 
 ```powershell
 dotnet add package Microsoft.Identity.Web -v 0.3.0-preview
@@ -388,7 +388,7 @@ Create the **Embed.cshtml** file, which has a `div` element used as a container 
         <!-- powerbi.min.js is the JavaScript file that loads the client-side Power BI JavaScript API library.
         Make sure that you're working with the latest library version.
         You can check the latest library available in https://cdnjs.com/libraries/powerbi-client -->
-        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.18.0/dist/powerbi.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.21.0/dist/powerbi.min.js"></script>
     
         <!-- This script creates a JavaScript object named viewModel which is accessible to the JavaScript code in embed.js. -->
         <script> 

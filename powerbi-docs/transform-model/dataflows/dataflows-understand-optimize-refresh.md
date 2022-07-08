@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Understanding and optimizing dataflows refresh
 
-Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the artifacts themselves. 
+Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the items themselves. 
 
 To understand run times, performance, and whether you're getting the most out of your dataflow, you can download the refresh history after a dataflow has been refreshed.
 

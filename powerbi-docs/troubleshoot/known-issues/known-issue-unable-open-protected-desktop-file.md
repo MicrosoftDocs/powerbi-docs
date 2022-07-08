@@ -1,10 +1,11 @@
----
+﻿---
 title: Known issue - Unable to open protected Power BI Desktop file
 description: A known issue is posted where you may be unable to open a protected Power BI Desktop file.
 author: jessicamo
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
+ms.subservice: pbi-troubleshooting
 ms.date: 05/10/2022
 ms.custom: known-issue-151
 ---
@@ -29,7 +30,7 @@ When opening a Power BI Desktop (.pbix) file, you'll receive the error message:
 
 ## Solutions and workarounds
 
-The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the Microsoft 365 Compliance center.
+The recommended workaround to ask your organization's security team to publish the impacted Desktop file's label to the user in the Microsoft Purview compliance portal.
 
 ## Next steps
 

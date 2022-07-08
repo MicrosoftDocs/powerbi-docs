@@ -81,8 +81,6 @@ landingContent:
         links:
           - text: Shared with me
             url: end-user-shared-with-me.md
-          - text: Publish a report to PowerPoint
-            url: end-user-powerpoint.md
           - text: Export a report to PDF
             url: end-user-pdf.md
           - text: Subscribe to content
