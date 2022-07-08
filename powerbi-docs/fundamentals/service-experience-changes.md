@@ -7,7 +7,7 @@ ms.reviewer: 'kdholakia'
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/01/2022
+ms.date: 07/08/2022
 Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
 LocalizationGroup: Get started
 ---
@@ -19,7 +19,7 @@ LocalizationGroup: Get started
 This article spells out the changes that are coming to the Power BI service, and maps the old experience to the new experience.
 
 > [!NOTE]
-> These features are currently under experimentation. We'd love to hear your feedback at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+> These features are currently under experimentation. Some customers may not see them yet. We'd love to hear your feedback at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
 
 Here’s an overview of the changes:
 
