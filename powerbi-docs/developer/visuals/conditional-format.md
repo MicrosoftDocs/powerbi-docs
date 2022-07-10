@@ -1,5 +1,5 @@
 ---
-title: Conditional formatting in Power BI embedded analytics
+title: Conditional formatting of Power BI custom visuals
 description: Learn how to apply conditional formatting to your Power BI custom visual.
 author: mberdugo
 ms.author: monaberdugo
