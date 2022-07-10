@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/21/2022
+ms.date: 07/10/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -41,7 +41,7 @@ Steps here describe enabling large datasets for a new model published to the ser
 
 ## Set default storage format
 
-All new datasets created in a workspace assigned to Premium capacity can have the large dataset storage format enabled by default.
+In supported regions, all new datasets created in a workspace assigned to a Premium capacity can have the large dataset storage format enabled by default. If the region doesn't support large datasets, the *large dataset storage format* option described below is disabled. You can see which regions are supported in the [region availability](#region-availability) section.
 
 1. In the workspace, select **Settings** > **Premium**.
 
@@ -177,6 +177,7 @@ The following list provides regions where large datasets in Power BI are availab
 |---------------------|---------------------------|
 | Australia East      | australiaeast             |
 | Australia Southeast | australiasoutheast        |
+| Brazil South        | brazilsouth               |
 | Canada East         | canadaeast                |
 | Canada Central      | canadacentral             |
 | Central India       | centralindia              |
@@ -186,6 +187,8 @@ The following list provides regions where large datasets in Power BI are availab
 | East US 2           | eastus2                   |
 | France Central      | francecentral             |
 | France South        | francesouth               |
+| Germany North       | germanynorth              |
+| Germany West Central| germanywestcentral        |
 | Japan East          | japaneast                 |
 | Japan West          | japanwest                 |
 | Korea Central       | koreacentral              |
@@ -196,6 +199,8 @@ The following list provides regions where large datasets in Power BI are availab
 | Southeast Asia      | southeastasia             |
 | Switzerland North   | switzerlandnorth          |
 | Switzerland West    | switzerlandwest           |
+| UAE Central         | uaecentral                |
+| UAE North           | uaenorth                  |
 | UK South            | uksouth                   |
 | UK West             | ukwest                    |
 | West Europe         | westeurope                |

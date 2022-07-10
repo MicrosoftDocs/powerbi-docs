@@ -1,5 +1,5 @@
 ---
-title: Create connected metrics in Power BI (preview)
+title: Create connected metrics in Power BI
 description: Learn how to create connected metrics.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,9 +8,10 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 06/28/2022
+ms.custom: sample-salesandmarketing
 ---
-# Create connected metrics in Power BI (preview)
+# Create connected metrics in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 

@@ -18,7 +18,7 @@ These settings are configured in the tenant settings section of the Admin portal
 
 ## Help Power BI optimize your experience
 
-When this feature is enabled, users in the organization will get minor user experience variations, including content, layout, and design, that the Power BI team is experimenting with before they go live for all users.
+When this feature is enabled, individual users in the same organization might get minor variations in the user experience, including content, layout, and design. This means different users in the same tenant might have slightly different experiences before they go live for all users. Enabling this feature allows the Power BI team to gather early feedback and to make data-driven decisions as to which in-product experience is received more positively by users. 
 
 ![Screenshot of the Help Power B I optimize your experience tenant setting.](media/service-admin-portal-user-experience-experiments/user-experience-experiments-tenant-setting.png)
 
