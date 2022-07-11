@@ -47,7 +47,7 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
 
 ## Find your content in the Power BI mobile apps
 
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. You can get to them from the left-hand navigation bar, or from the home page, which shows you some of your frequent content, and also provides tabs that get you to lists of your recents, favorites, apps, shared with me, and workspaces. Read more about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). In addition, you can use the search to find anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. You can get to them from the left-hand navigation bar, or from the home page, which shows you your recommended content, and also provides tabs that get you to lists of your recents, favorites, apps, shared with me, and workspaces. Read more about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). In addition, you can use the search to find anything you have in the Power BI mobile apps. 
 
 ![Power BI nav pane](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
