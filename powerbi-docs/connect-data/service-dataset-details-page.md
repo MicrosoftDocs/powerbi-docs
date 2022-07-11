@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 05/23/2022
+ms.date: 07/05/2022
 LocalizationGroup: Share your work
 ---
 # Dataset details
@@ -87,7 +87,57 @@ To create a report based on the dataset, click the **Create report** button on t
 You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
-  
+
+## Data preview
+
+Data preview enables you to view selected tables and columns from the dataset, and provides entry points for exporting the data to supported file formats, customizing it as a [formatted table](../paginated-reports/paginated-formatted-table.md), and saving it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+
+### Prerequisites
+
+* The dataset can be inside Non-Premium or Premium workspaces. Classic workspaces are not supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+* You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
+
+### Select data to preview
+
+To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
+
+![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel.png)
+
+If you don't see the side panel, select **Show tables** on the action bar.
+
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
+
+An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
+
+![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection.png)
+
+When you select tables or columns, they will be displayed on the **Table preview** page that opens.
+
+   ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page.png)
+
+Table preview may not show all of the data you've selected. To see more, you can export or customize the newly created table (see below).
+
+At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
+
+>[!NOTE]
+> Table preview is intended to quickly show the detail level data of tables within your dataset. Selected measures are not summarized by default. You can use the formatted table editor that opens when you choose **Customize** (see below) to switch between summarized and non-summarized views.
+>
+> Table preview shows only distinct rows of the selected columns. For example, if you have two cities from the same state and you select only the state column, only one detail row will be shown. If you then select the cities column, all of the rows will be displayed.
+
+### Exporting data
+
+Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
+
+![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
+
+### Customizing the data
+
+Selecting the **Customize** button opens the table in the [formatted table editor](../paginated-reports/paginated-formatted-table.md), maintaining your current selections.
+
+In the formatted table editor you can apply table styles, change aggregates, etc. You can then either export the formatted table to any of the supported file formats (the file will be saved to your default downloads folder), you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. Paginated reports fully preserve your report formatting.
+
+![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
+
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)

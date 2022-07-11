@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/05/2022
+ms.date: 05/30/2022
 ms.custom:
 LocalizationGroup: Premium
 ---
@@ -56,7 +56,6 @@ Power BI service administrators and Global Administrators can modify Premium cap
 * Change the capacity size to scale-up or scale-down resources.
 * Add or remove Capacity Admins.
 * Add or remove users that have assignment permissions.
-* Change regions.
 
 >[!NOTE]
 >Service and global administrators do not have access to capacity metrics unless explicitly added as capacity admins.

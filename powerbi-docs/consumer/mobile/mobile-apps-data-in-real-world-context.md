@@ -7,10 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 07/05/2022
 ---
 # Get data from the real world with the Power BI mobile apps
 The Power BI mobile apps can connect the real world directly to related BI information. The features described below make this possible. 
+
+## Data in space (preview)
+
+**Data in space** is a feature that enables you to connect your digital business data to real-world places, putting real-time data at the fingertips of employees where they need it and enabling them to make better, faster, and more informed decisions.
+
+Data in space uses augmented reality technology to enable you to create spatial anchors in the real world and attach Power BI data to them, so that data can be connected to the physical environment it is relevant to.
+
+![Screenshot of a bank of elevators with Power BI reports in augmented reality in front of each elevator.](./media/mobile-apps-data-in-real-world-context/power-bi-mobile-app-data-in-space-final-result.png)
+
+Data in space is currently supported for iPhones and iPads.
+
+For more information, see:
+
+* [Data in space overview](mobile-apps-data-in-space-overview.md)
+* [Pin Power BI reports to locations in the real world](mobile-apps-data-in-space-pin-reports.md)
+* [Find and access Power BI reports pinned to locations in the real world](mobile-apps-data-in-space-find-pinned-reports.md)
+* [Admin: Set up Data in space in your organization](mobile-apps-data-in-space-set-up.md)
 
 ## Barcode scanning
 

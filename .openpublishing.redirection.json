@@ -176,6 +176,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/report-server/tutorial-explore-report-server-web-portal.md",
+            "redirect_url": "/power-bi/report-server/install-report-server",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/quickstart-install-report-server.md",
             "redirect_url": "/power-bi/report-server/install-report-server",
             "redirect_document_id": false
@@ -912,8 +917,13 @@
         },
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
-            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-powerpoint.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
@@ -2637,6 +2647,11 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
@@ -4545,6 +4560,51 @@
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
             "redirect_url": "/power-bi/consumer/end-user-data-hub",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-design-tips-axes.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-chart-gridlines.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-labels.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-legends.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-shapes-images-icons.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-sort-distribute-data-plots.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-visual-colors.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-goals.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
+            "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
+            "redirect_document_id": false
+        }
     ]           
 }
