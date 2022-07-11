@@ -21,7 +21,7 @@ The following table lists some of the Premium Gen2 enhancements.
 
 |Enhancement           |Details  |
 |----------------------|---------|
-|Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.md). |
+|Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.yml). |
 |Better performance    |Power BI operations will run at up to 16 times faster than previously, always perform at top speed, and won't slow down when the load on the capacity approaches the capacity limit. Premium Gen2 also provides complete separation between report interaction and scheduled refreshes. |
 |Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-gen2-metrics-app.md) app. |
 |Autoscale             |An optional feature that prevents slowdowns caused by throttling on overloaded capacities. When enabled, if the load on the capacity exceeds the capacity limits, [autoscale](service-premium-auto-scale.md) automatically adds one v-core at a time for 24-hour periods. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. |

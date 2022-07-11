@@ -66,9 +66,9 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 
-* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. For more information see [Considerations and limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
-* For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+* For a list of Embedded Gen2 memory restrictions, see [Memory allocation](../../enterprise/service-premium-gen2-what-is.md#memory-allocation).
 
 ## Next steps
 

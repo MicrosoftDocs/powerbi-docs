@@ -84,7 +84,7 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
-    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports and Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2).
+    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports](../../enterprise/service-premium-gen2-what-is.md#paginated-reports).
 
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
