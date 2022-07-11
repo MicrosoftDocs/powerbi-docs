@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/07/2022
+ms.date: 07/10/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -41,7 +41,7 @@ Steps here describe enabling large datasets for a new model published to the ser
 
 ## Set default storage format
 
-All new datasets created in a workspace assigned to Premium capacity can have the large dataset storage format enabled by default.
+In supported regions, all new datasets created in a workspace assigned to a Premium capacity can have the large dataset storage format enabled by default. If the region doesn't support large datasets, the *large dataset storage format* option described below is disabled. You can see which regions are supported in the [region availability](#region-availability) section.
 
 1. In the workspace, select **Settings** > **Premium**.
 
