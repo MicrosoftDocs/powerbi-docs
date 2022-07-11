@@ -52,13 +52,7 @@ When you connect successfully, you're prompted to select which data from your Li
 
 ![Select data with Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png)
 
-You can create whatever reports you like with your LinkedIn Sales Navigator data. To make things easier, there is also a LinkedIn Sales Navigator .PBIX file that you can download, that has sample data already provided, so you can get familiar with the data and the reports, without having to start from scratch.
-
-You can download the PBIX file from the following location:
-* [PBIX for LinkedIn Sales Navigator](service-template-apps-samples.md)
-
-In addition to the PBIX file, the LinkedIn Sales Navigator also has a template app that you can download and use, too. The next section describes the template app in detail.
-
+You can create whatever reports you like with your LinkedIn Sales Navigator data.
 
 ## Using the LinkedIn Sales Navigator template app
 

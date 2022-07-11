@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 02/16/2022
+ms.date: 06/16/2022
 ms.custom: intro-overview
 ---
 
@@ -55,7 +55,12 @@ The following table provides a comparison between the two Power BI embedded anal
 
 ## What are Power BI capacities?
 
-Capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
+A capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
+
+For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
+
+> [!IMPORTANT]
+> Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 There are two types of Power BI embedded analytics offerings, each requiring a different [capacity](./embedded-capacity.md):
 

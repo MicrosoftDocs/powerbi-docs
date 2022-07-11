@@ -7,9 +7,9 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.devlang: csharp, javascript
 ms.topic: how-to
-ms.reviewer: zakharb
+ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 05/08/2022
+ms.date: 07/10/2022
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -155,8 +155,6 @@ The templates used in this quickstart are from [Azure Quickstart Templates](http
 
 Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - create a Power BI Embedded capacity.
 
-#### Embedded Gen2
-
 Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
 
 ```json
@@ -213,74 +211,6 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.m
                         "[parameters('admin')]"
                     ]
                 }
-            }
-        }
-    ]
-}
-```
-
-#### Embedded Gen1
-
-Use this template to create a classic Power BI Embedded resource.
-
->[!NOTE]
-> Gen1 resources will be deprecated in the beginning of 2021
-
-```json
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "name": {
-            "type": "string",
-            "metadata": {
-                "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
-            }
-        },
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-                "description": "The location where Power BI is hosted for your tenant"
-            }
-        },
-        "sku": {
-            "type": "string",
-            "allowedValues": [
-                "A1",
-                "A2",
-                "A3",
-                "A4",
-                "A5",
-                "A6"
-            ],
-            "metadata": {
-                "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
-            }
-        },
-        "admin": {
-            "type": "string",
-            "metadata": {
-                "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
-            }
-        }
-    },
-    "resources": [
-        {
-            "type": "Microsoft.PowerBIDedicated/capacities",
-            "apiVersion": "2021-01-01",
-            "name": "[parameters('name')]",
-            "location": "[parameters('location')]",
-            "sku": {
-                "name": "[parameters('sku')]"
-            },
-            "properties": {
-                "administration": {
-                    "members": [
-                        "[parameters('admin')]"
-                    ]
-                },
-                "mode": "Gen1"
             }
         }
     ]

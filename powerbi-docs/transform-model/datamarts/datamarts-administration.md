@@ -75,6 +75,7 @@ The following limitations should be considered when using datamarts:
 * Currently datamarts don’t support the currency data type, and such data types will be converted to float.
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
 * Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
+* Datamarts are currently not supported in Microsoft Teams.
 
 * Datamarts currently support the following SQL clients:
     * SSMS

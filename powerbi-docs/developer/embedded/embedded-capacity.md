@@ -85,6 +85,11 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 ### Capacity considerations
 
+For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
+
+> [!IMPORTANT]
+> Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+
 The table below lists payment and usage considerations per capacity.
 
 | **Payment and usage** | **Power BI Embedded** | **Power BI Premium** | **Power BI Premium** |
