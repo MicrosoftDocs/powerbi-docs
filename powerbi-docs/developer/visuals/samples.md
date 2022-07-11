@@ -30,7 +30,7 @@ Be inspired with our gallery, including bar charts, pie charts, Word Cloud, and 
 
 | <img src="media/samples/aster-plot.png" alt="Screenshot shows Aster Plot." width="200">  | <img src="media/samples/bullet-chart.png" alt="Screenshot shows Bullet chart." width="200"> | 
 | ------------- | ------------- |
-| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart that uses a second value to drive sweep angle | [Bullet chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking goals | 
+| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart that uses a second value to drive sweep angle | [Bullet chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking metrics | 
 |<img src="media/samples/Chord.png" alt="Screenshot shows Chord." width="200">| <img src="media/samples/dot-plot.png" alt="Screenshot shows Dot plot." width="200">|
 |[Chord](https://github.com/Microsoft/powerbi-visuals-chord/) </br>A graphical method that displays the relationships between data in a matrix | [Dot plot](https://github.com/Microsoft/powerbi-visuals-dotplot/) </br>Shows the distribution of frequencies in a great looking way| 
 | <img src="media/samples/dual-kpi.png" alt="Screenshot shows Dual K P I." width="200">| <img src="media/samples/enhanced-scatter.png" alt="Screenshot shows Enhanced Scatter." width="200"> |

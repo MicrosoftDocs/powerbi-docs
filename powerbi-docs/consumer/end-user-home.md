@@ -52,7 +52,7 @@ The **Expanded** layout includes a different set of information. The images belo
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
 - The Home canvas displays and organizes your favorite, frequent, recent, and recommended, along with apps and workspaces.  If you're new to the Power BI service, you'll also have Getting started content. Select a card, or an item in a list, to open it.
-- Along the left side, is a navigation pane, referred to as the nav pane. Select ![Icon to expand nav pane.](media/end-user-home/power-bi-expand.png) to expand the nav pane. On the nav pane, your same content is organized a little differently, by favorites, recent, apps, goals, datasets, and Shared with me. From the nav pane, you can view lists of content and select the one to open.
+- Along the left side, is a navigation pane, referred to as the nav pane. Select ![Icon to expand nav pane.](media/end-user-home/power-bi-expand.png) to expand the nav pane. On the nav pane, your same content is organized a little differently, by favorites, recent, apps, metrics, datasets, and Shared with me. From the nav pane, you can view lists of content and select the one to open.
 - In the upper right corner, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
@@ -113,7 +113,7 @@ The nav pane classifies your content in ways that help you find what you need, q
 
 Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting the Hide icon ![Icon for hiding the nav pane](media/end-user-home/power-bi-hide.png) .
   
-The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Goals, Shared with me, and workspaces. Some containers have flyouts that offer you the option of viewing just the most-recent content in a container. Otherwise, select a container to see all content.
+The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. Some containers have flyouts that offer you the option of viewing just the most-recent content in a container. Otherwise, select a container to see all content.
  
 - To open one of these content sections and display a list of all items, select the heading.
 - To see the most recent in either the **Favorites** or **Recent** container, select the flyout (**>**).

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/22/2022
+ms.date: 06/14/2022
 LocalizationGroup: Premium 
 ---
 
@@ -279,7 +279,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 ## Timepoint
 
-This page provides a detailed view of every operation that resulted in CPU activity in a given timepoint. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
+All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
@@ -386,7 +386,7 @@ The overloading visual has the following columns:
 
 * **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
 
-* **Overload time %** - The number of overloaded seconds divided by the duration of interactive operations that took place.
+* **Overload time %** - The proportion of the total operation run time spent in a throttled state. The smaller this value, the better.
 
 ### Performance
 

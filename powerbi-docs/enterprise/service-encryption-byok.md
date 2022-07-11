@@ -29,7 +29,7 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Power BI goals](../create-reports/service-goals-introduction.md) do not currently support bring your own key (BYOK).
 
-BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
+BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which items are stored in your workspaces, use the following PowerShell command:
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
