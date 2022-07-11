@@ -220,7 +220,7 @@ Within the Power BI mobile app, you want to connect to your Reporting Services i
 
 ![Type the server address](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
-When you select **Connect**, you be directed to your ADFS sign-in page. Enter valid credentials for your domain.
+When you select **Connect**, you'll be directed to your ADFS sign-in page. Enter valid credentials for your domain.
 
 ![Sign-in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
@@ -236,7 +236,7 @@ You can enable multi-factor authentication to enable additional security for you
 
 !["Failed to login to SSRS Server" error](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
+You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to set up the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
 If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. 
 
