@@ -93,6 +93,9 @@ Connections between items are only established when you assign a workspace to a 
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Deployment pipelines history](deployment-pipelines-history.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]

@@ -275,6 +275,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
+>[Deployment pipelines history](deployment-pipelines-history.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
