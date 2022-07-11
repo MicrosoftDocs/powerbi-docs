@@ -17,7 +17,7 @@ ms.custom: intro-get-started
 
 The Power BI app for Windows brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows.
 
-![Screenshot of new look for Power BI windows app.](./media/mobile-windows-10-phone-app-get-started/power-bi-mobile-app-windows-app-home-screen.png)
+[![Screenshot of new look for Power BI windows app.](./media/mobile-windows-10-phone-app-get-started/power-bi-mobile-app-windows-app-home-screen.png)](./media/mobile-windows-10-phone-app-get-started/power-bi-mobile-app-windows-app-home-screen.png#lightbox)
 
 ## First things first
 * [**Get the Power BI app for Windows**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.

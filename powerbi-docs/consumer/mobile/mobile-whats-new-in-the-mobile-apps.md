@@ -30,7 +30,7 @@ Now you can connect your digital business data to real-world places in augmented
 
 ### Work with categorical metrics (iOS and Android)
 
-Update and manage targets that aren't based on a number. Choose from a list of existing values to keep your scorecards up to date.
+Now you can update and manage metrics that have non-numerical targets, right from your mobile app. Choose from a list of existing values to keep your scorecards up to date.
 
 ### Find content that's relevant to you (Windows)
 
