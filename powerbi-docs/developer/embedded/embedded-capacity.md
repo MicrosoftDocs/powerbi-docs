@@ -14,7 +14,7 @@ ms.date: 06/29/2022
 
 When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
 
-[!INCLUDE [what is capacity](./../includes/what-is-capacity.md)]
+[!INCLUDE [what is capacity](../../includes/what-is-capacity.md)]
 
 >[!NOTE]
 >For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
@@ -44,7 +44,7 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 ## Capacity and SKUs
 
-[!INCLUDE [capacity and SKUs](./../includes/capacity-and-skus.md)]
+[!INCLUDE [capacity and SKUs](../../includes/capacity-and-skus.md)]
 
 To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../enterprise/service-admin-premium-workloads.md) article.
 
