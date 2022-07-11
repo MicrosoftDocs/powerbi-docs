@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/08/2022
----
+
 # Stay on top of your metrics
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -89,11 +89,11 @@ You can automate status updates based on rules that govern that metric or submet
 
     :::image type="content" source="media/service-goals-check-in/new-status-rule.png" alt-text="Screenshot Showing location of new status rules in details pane.":::
 
-1. From the first dropdown, select whether you want to base your rule on **Value** or **Date**.
+1. In the first field, you can select the dropdown caret and choose to base your rule on **Date** instead of **Value**.
 
     :::image type="content" source="media/service-goals-check-in/first-dropdown.png" alt-text="Screenshot of First dropdown in rule UI showing date or value.":::
 
-1. From the second dropdown, select your qualifier.
+1. In the second field, you can select the dropdown caret and choose a different qualifier.
 
     :::image type="content" source="media/service-goals-check-in/select-qualifier-second-dropdown.png" alt-text="Screenshot of Second dropdown showing qualifiers such as greater than or equal to.":::
 
@@ -110,7 +110,7 @@ You can automate status updates based on rules that govern that metric or submet
 
 ### More aspects of status rules
 
-- With automated status rules, you can create create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
+- With automated status rules, you can create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
 - For the mobile experience, automatic refresh on status rules is not supported at this time. 
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Screenshot of Adding a condition to a rule.":::
