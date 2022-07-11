@@ -251,47 +251,50 @@ Finally, it's not so much a performance issue, but an easily overlooked setting 
 
 TODO: Image
 
-## Enterprise Scale using Azure Synapse Link
+## Enterprise scale with Azure Synapse Link
 
-Built into Dataverse is the ability to synchronize tables to an Azure Data Lake and then connect to that data through an Azure Synapse Workspace. With only a few clicks an organization can populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
+Dataverse includes the ability to synchronize tables to Azure Data Lake Storage and then connect to that data through an Azure Synapse Workspace. With only a few clicks, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
 
-Azure Synapse Link enables a continuous replication of the data and metadata from Dataverse into the data lake and provides a Serverless SQL as a convenient data source for the Power BI queries.
+Azure Synapse Link enables a continuous replication of the data and metadata from Dataverse into the data lake, and it provides a Serverless SQL pool as a convenient data source for Power BI queries.
 
-The strengths of this approach are significant. Customers gain the ability to run analytics, business intelligence, and machine learning across Dataverse data using a variety of advanced tooling available such as Apache Spark, Power BI, Azure Data Factory, Azure Databricks, and Azure Machine Learning.
+The strengths of this approach are significant. Customers gain the ability to run analytics, business intelligence, and machine learning workloads across Dataverse data by using a variety of advanced tooling, such as Apache Spark, Power BI, Azure Data Factory, Azure Databricks, and Azure Machine Learning.
 
-### Creating the environment
+### Create an Azure Synapse Link for Dataverse
 
-You will need:
+To create an Azure Synapse Link for Dataverse, you'll need the following prerequisites in place.
 
-- System Administrator access to the Dataverse environment.
-- **Azure Data Lake Storage Gen2:** You must have an Azure Data Lake Storage Gen2 account and Owner and Storage Blob Data Contributor role access. Your storage account must enable Hierarchical namespace, and it is recommended that replication is set to read-access geo-redundant storage (RA-GRS).
-- **Synapse workspace:** You must have a Synapse workspace and the Synapse Administrator role access within the Synapse Studio. The Synapse workspace must be in the same region as your Azure Data Lake Storage Gen2 account. The storage account must be added as a linked service within the Synapse Studio.
+- System administrator access to the Dataverse environment.
+- Azure Data Lake Storage:
+  - You must have a storage account to use with Azure Data Lake Storage (ADLS) Gen2.
+  - You must be assigned **Storage Blob Data Owner** and **Storage Blob Data Contributor** access to storage account. For more information, see [Role-based access control (Azure RBAC)](/azure/storage/blobs/data-lake-storage-access-control-model).
+  - The storage account must enable [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace).
+  - It's recommended that the storage account use [read-access geo-redundant storage (RA-GRS)](/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region).
+- Synapse workspace:
+  - You must have access to a Synapse workspace and be assigned **Synapse Administrator** access. For more information, see [Built-in Synapse RBAC roles and scopes](/azure/synapse-analytics/security/synapse-workspace-synapse-rbac-roles#built-in-synapse-rbac-roles-and-scopes).
+  - The workspace must be in the same region as the ADLS Gen2 storage account.
 
-For additional information and an expansion of the requirements for the environment, see the complete documentation here: [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace - Power Apps | Microsoft Docs](/powerapps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
+Set up involves signing in to Power Apps and connecting Dataverse to the Synapse workspace. A wizard-like experience allows you to create a new link by selecting the storage account and the tables to export. Azure Synapse Link copies data to the ADLS Gen2 storage and automatically creates views in an Azure Synapse serverless SQL pool. You can connect to those views to create a Power BI data model.
 
-### Initial set up
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics.":::
 
-Completing the setup wizard will provide an environment that can serve as a source for Power BI. - The Synapse link syncs data to the Azure Data Lake storage and configures views in a Serverless SQL in Synapse. Power BI can connect to those views, and the data model can be built for reporting.
+> [!TIP]
+> For complete documentation about creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
 
-TODO: Image
+### Address challenges
 
-### Initial challenges
+This approach is straightforward, however it can place an additional burden on the user who creates the Power BI model. They will need to use Power Query to sort through the source schema and filter out inactive records, remove irrelevant columns, and provide text values for *choice* values.
 
-The above model is straightforward but puts an additional burden on the user building the model in Power BI to sort through the source schema and filter out inactive records, remove irrelevant fields, and add in the text values for 'choice' values.
+For example, consider that a default **Account** table view contains more than 200 columns. The view also returns both active and inactive records. Depending on the customer use case, much of this data is irrelevant and should be excluded by the view.
 
-For example, the un-customized Account table view contains more than 200 columns. The view also shows both active and inactive records. Depending on the customer use case, much of this is irrelevant and would need to be excluded in the query in Power BI.
+Additionally, fields of type **Status**, **Status Reason**, and **Choice** are included in the default views and they return numeric values. The corresponding text label is available from metadata delivered in a JSON file. This works in principle but it's unwieldy in practice when writing a query from Power BI to these views.
 
-Additionally, fields of type Status, Status Reason, and Choice are represented in the default views with only their numeric values. The corresponding text label is available via the metadata delivered in a JSON file. This works in principle but is unwieldy in practice when writing a query from Power BI to these views.
+### Use a second serverless SQL pool
 
-### Use a Second Serverless SQL instance for improved Ease of Use
+You can create a second serverless SQL pool and use it to add custom report views. This way, you can present a simplified set of data to the Power BI creator that allows them to build a data model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
 
-An alternative approach is to add customized views tailored to the business. This allows you to present a simplified set of data to the end-user, thus allowing them to begin building the data model based on generally relevant data.
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views.":::
 
-This new serverless SQL database now becomes the report builder's primary source connection and a friendly front-end to the data coming from the Data Lake.
-
-TODO: Image
-
-With this approach, the data exported from Dataverse can be focused, enriched, and filtered before presenting to the Power BI Data Model developer.
+This approach delivers data to Power BI that's focused, enriched, and filtered.
 
 #### Creating the Serverless SQL Instance to hold custom views
 
