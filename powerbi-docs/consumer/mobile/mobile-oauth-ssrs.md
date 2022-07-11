@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/06/2021
+ms.date: 07/11/2022
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
