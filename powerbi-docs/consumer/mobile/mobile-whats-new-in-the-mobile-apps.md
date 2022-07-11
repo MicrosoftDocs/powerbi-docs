@@ -28,15 +28,15 @@ Now you can connect your digital business data to real-world places in augmented
 
 ![Screenshot of showing Power BI reports pinned to real-world locations in augmented reality using the data in space feature.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-data-in-space-final-result.png)
 
-### Work with categorical metrics (iOS and Android)
-
-Now you can update and manage metrics that have non-numerical targets, right from your mobile app. Choose from a list of existing values to keep your scorecards up to date.
-
 ### Find content that's relevant to you (Windows)
 
 Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you on the home page in the new **Recommended** strip.
 
 ![Screenshot of Windows app home screen showing recommended content.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-home-screen-recommended.png)
+
+### Work with categorical metrics (iOS and Android)
+
+Now you can update and manage metrics that have non-numerical targets, right from your mobile app. Choose from a list of existing values to keep your scorecards up to date.
 
 ## June 2022
 
