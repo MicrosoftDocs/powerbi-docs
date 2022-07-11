@@ -34,7 +34,7 @@ Update and manage targets that aren't based on a number. Choose from a list of e
 
 ### Find content that's relevant to you (Windows)
 
-Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you in the home page
+Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you on the home page in the new **Recommended** strip.
 
 ![Screenshot of Windows app home screen showing recommended content.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-home-screen-recommended.png)
 
