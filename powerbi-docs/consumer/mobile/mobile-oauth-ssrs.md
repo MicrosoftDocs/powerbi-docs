@@ -228,7 +228,7 @@ After you select **Sign in**, you see the elements from your Reporting Services 
 
 ## Multi-factor authentication
 
-You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 ## Troubleshooting
 
