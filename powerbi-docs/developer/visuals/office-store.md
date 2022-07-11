@@ -65,7 +65,7 @@ Before you create the **.pbiviz** package, complete the following fields in the 
 > [!IMPORTANT]
 > Before you submit your visual, make sure it passes all the [requirements](submission-testing.md). A visual that doesn't pass the requirements will be rejected.
 
-When you're ready to create or update your offer, follow the instructions in [Create a Power BI app offer](/azure/marketplace/power-bi-app-offer-setup).
+When you're ready to create or update your offer, follow the instructions in [Create a Power BI app offer](/azure/marketplace/power-bi-visual-offer-setup).
 
 ## Track submission status and usage
 
