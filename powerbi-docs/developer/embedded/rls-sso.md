@@ -10,22 +10,20 @@ ms.topic: how-to
 ms.date: 06/30/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
-# Embed a report with row-level security on a single sign-on system (SSO)
+# Embed a report on a single sign-on system (SSO)
 
-This article explains how to implement [**RLS** (row-level security)](embedded-row-level-security.md) with an [single sign-on (SSO)](pbi-glossary.md#single-sign-on-sso) dataset, and embed it in a Power BI report.
+This article explains how to implement a [single sign-on (SSO)](pbi-glossary.md#single-sign-on-sso) dataset, with or without [**RLS** (row-level security)](embedded-row-level-security.md), and embed it in a Power BI report.
 
 > [!NOTE]
 > This article is only relevant for app owns data customers.
 
-In this scenario, the Power BI SSO (single sign-on) enabled dataset connects to an [on-prem](pbi-glossary.md#on-premises-on-prem) data source. The dataset then filters the data according to the RLS credentials of the user, and uses the filtered data in the report.
+In this scenario, the Power BI SSO (single sign-on) enabled dataset connects to an [on-premises](pbi-glossary.md#on-premises-on-prem) data source. The dataset then filters the data according to the RLS credentials of the user, and uses the filtered data in the report.
 
 The ISV app needs to connect to the data source using the user's credentials.
 
 To implement RLS with an SSO enabled dataset, do the following steps:
 
 * [Generate an SQL token](#generate-an-sql-access-token)
-Just like in portal and SSAS
-
 * [Generate an embed token](#generate-an-embed-token)
 
 ## Setup and supported datasources
@@ -39,9 +37,12 @@ Before you start, make sure that you have:
 
 A service principal can't pass any credentials to the data source. A master user can pass its own credentials, but not different credentials for each user. For the data source to know which data to return, create an [access token](/azure/databricks/dev-tools/api/latest/aad/) for the SQL database with the specific user's credentials. When this token is passed to the data source, the data source returns only the data that user can access.
 
+/azure/databricks/dev-tools/api/latest/aad/app-aad-token
+/azure/databricks/dev-tools/api/latest/aad/app-aad-token#get-an-azure-ad-access-token
+
 ## Generate an embed token
 
-### [Embed token new way](#tab/embed-new)
+### [Embed a multi-resource token](#tab/embed-new)
 
 To generate and embed token for gen2:
 
