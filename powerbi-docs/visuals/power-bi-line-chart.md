@@ -20,10 +20,7 @@ A line chart is a series of data points that are represented by dots and connect
 
 :::image type="content" source="media/power-bi-line-charts/power-bi-line.png" alt-text="Simple line chart.":::
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
-
-## Create a line chart
+## Prerequisites
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -36,6 +33,8 @@ This tutorial uses the Sales and Marketing Sample to create a line chart that di
 3. Browse to the **Sales and Marketing Sample PBIX** file, then select **Open**.
 
 4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+ 
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -51,19 +50,24 @@ This tutorial uses the built-in Sales and Marketing Sample in the Power BI servi
 
 4. Select **Edit** on the menu bar to display the **Visualizations** pane.
 
----
-
 5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
-6. From the Fields pane, select **SalesFact** \> **Total units**, and select **Date** > **Month**.  Power BI creates a column chart on your report canvas.
+---
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+
+## Create a line chart
+
+1. From the Fields pane, select **SalesFact** \> **Total units**, and select **Date** > **Month**.  Power BI creates a column chart on your report canvas.
 
     :::image type="content" source="media/power-bi-line-charts/power-bi-step-1.png" alt-text="Screenshot of the Fields pane with data fields selected.":::
 
-7. Convert to a line chart by selecting the line chart template from the Visualizations pane.
+2. Convert to a line chart by selecting the line chart template from the Visualizations pane.
 
     :::image type="content" source="media/power-bi-line-charts/power-bi-convert-to-line.png" alt-text="Screenshot of the Visualizations pane with Line chart icon selected.":::
 
-8. Filter your line chart to show data for the years 2012-2014. If your Filters pane is collapsed, expand it now. From the Fields pane, select **Date** \> **Year** and drag it onto the Filters pane. Drop it under the heading **Filters on this visual**. 
+3. Filter your line chart to show data for the years 2012-2014. If your Filters pane is collapsed, expand it now. From the Fields pane, select **Date** \> **Year** and drag it onto the Filters pane. Drop it under the heading **Filters on this visual**. 
 
     :::image type="content" source="media/power-bi-line-charts/power-bi-year-filter.png" alt-text="Screenshot of Filters pane with filters added.":::
 
@@ -71,7 +75,7 @@ This tutorial uses the built-in Sales and Marketing Sample in the Power BI servi
 
     :::image type="content" source="media/power-bi-line-charts/power-bi-filter-year.png" alt-text="Screenshot of Advanced filtering dropdown to select year limits.":::
 
-9. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
+4. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
 
     :::image type="content" source="media/power-bi-line-charts/power-bi-line-3years.png" alt-text="Screenshot of line chart with font size and y axis font changed.":::
 

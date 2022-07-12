@@ -77,6 +77,8 @@ This tutorial uses the Retail Analysis Sample.
 
 4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
 
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
 # [Power BI service](#tab/powerbi-service)
 
 This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
@@ -90,9 +92,10 @@ This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
 3. Select the **Retail Analysis Sample**, and choose **Connect**.
 
 4. Select **Edit** on the menu bar to display the **Visualizations** pane.
----
 
 5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
