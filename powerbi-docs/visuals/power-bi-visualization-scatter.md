@@ -158,7 +158,7 @@ Now let's add a third dimension.
 
         :::image type="content" source="media/power-bi-visualization-scatter/power-bi-format-symmetry.png" alt-text="Screenshot of the Details with Gross Margin Last Year percent selected.":::
 
-        b. From the Analytics pane, add **Symmetry shading**. The shading shows that the blue square in the pink shaded area is the only category that favors gross margin rather than its sales per store square footage. 
+        b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the blue square in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
 
         :::image type="content" source="media/power-bi-visualization-scatter/power-bi-symmetry.png" alt-text="Screenshot of the bubble chart with symmetry shading added.":::
 
