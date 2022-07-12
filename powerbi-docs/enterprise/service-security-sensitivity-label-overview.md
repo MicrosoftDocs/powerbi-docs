@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 07/06/2022
+ms.date: 07/12/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -257,7 +257,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If the label applied to a .pbix file hasn't been published to the user in the Purview compliance portal, the user won’t be able to save the file in Desktop.
 
-* On-demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
+* Import of *.pbix* files stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
 
     * Protected live-connected *.pbix* files.
     * Protected Azure Analysis Services *.pbix* files.
