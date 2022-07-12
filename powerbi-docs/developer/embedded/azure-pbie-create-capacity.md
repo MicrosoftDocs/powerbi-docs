@@ -325,6 +325,10 @@ PATCH https://management.azure.com/subscriptions/613192d7-503f-477a-9cfe-4efc3ee
 
 ---
 
+## Considerations and limitations
+
+Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
+
 ## Next steps
 
 >[!div class="nextstepaction"]
