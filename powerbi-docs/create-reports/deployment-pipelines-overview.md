@@ -47,7 +47,7 @@ The tool is designed as a pipeline with three stages:
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines history](deployment-pipelines-history.md)
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

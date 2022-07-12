@@ -456,7 +456,7 @@ This section lists most of the limitations in deployment pipelines.
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines history](deployment-pipelines-history.md)
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)

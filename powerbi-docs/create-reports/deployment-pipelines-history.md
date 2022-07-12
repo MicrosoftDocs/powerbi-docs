@@ -10,19 +10,19 @@ ms.custom: contperf-fy21q1
 ms.date: 07/11/2022
 ---
 
-# Deployment pipelines history (private preview)
+# Deployment history
 
-Deployment pipelines history is a feature that enables reviewing the past deployments in your pipeline. The feature is designed as a log of all the past activities in the pipeline.
+Deployment history is a deployment pipelines feature that enables reviewing the past deployments in your pipeline. The feature is designed as a log that lists all the past deployments in the pipeline.
 
-You can use the deployment pipelines history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
+You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
 
 When you perform a deployment, you can use the built in option to [leave notes](), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
 <---Screenshot--->
 
-## Available information
+## Deployment information
 
-The deployment pipelines history log is formatted as a table. Each row represents a single deployment, and the columns list the following information per deployment:
+The deployment history log is formatted as a table. Each row represents a single deployment, and the columns list the following information per deployment:
 
 * **Deployed to** - The target stage of the deployment.
 
@@ -30,7 +30,7 @@ The deployment pipelines history log is formatted as a table. Each row represent
 
 * **Deployed by** - The person who performed the deployment.
 
-* **Items** - After you deploy your content, the *items* column indicates the differences between the Power BI items in the source and target stage. The labels refer to the items in the target stage. Each label shows the number of items from that category that were deployed. If a label isn't showing, no deployed items fit that category.
+* **Items** - After you deploy your content, the *items* column indicates the differences between the Power BI items in the source and target stage. The labels refer to the items in the target stage. Each label shows the number of items from that category that were deployed. You can click on the label to view a list of all the items in that category. If a label isn't showing, no deployed items fit that category.
 
     | Label   | Name          | Description |
     |---------|---------------|-------------|
@@ -51,7 +51,13 @@ The deployment pipelines history log is formatted as a table. Each row represent
 
 ## Considerations and limitations
 
-We started collecting partial data for the deployment pipelines history feature during April 2022. The deployment pipelines history log will not display information related to deployments that occurred before April 2022. In addition, we can't guarantee that the early data is complete. A comprehensive account of all your deployment history, is only available from July <---date--->, the date deployment history became available as a private preview feature. For example, the ability to include deployment notes was only released with the deployment history feature, so prior to <---date---> this information wasn't captured.
+The following section lists the deployment history limitations.
+
+* Partial data is displayed from April 2022 to <---date--->
+
+* Notes are only displayed from <---date--->
+
+* Renamed/removed items <---Chen to provide info--->
 
 ## Next steps
 
