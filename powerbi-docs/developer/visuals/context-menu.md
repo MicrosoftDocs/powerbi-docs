@@ -3,19 +3,18 @@ title: Add context menu to Power BI custom visual
 description: Learn how to add a context menu to a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
-manager: rkarlin
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/01/2022
+ms.date: 05/23/2022
 ---
 
 # Add a context menu to your Power BI Visual
 
 Every Power BI visual can display a context menu. The context menu allows you to perform various operations on the visual, such as analyzing, summarizing, or copying it.
 When you right-click anywhere inside a visual's viewport (or long-press for touch devices) the context menu displays.
-Each visual has two modes of its context menu. The mode that displays depends on where you click inside the visual:
+There are two modes of context menus for each visual. The mode that displays depends on where you click inside the visual:
 
 * Calling the context menu on **empty space** gives you the basic context menu for the visual.
 * Calling the context menu on a specific **data point** gives you added options that can be applied to that data point. In this case, the context menu also contains the options *Show data point as a table*, *Include*, and *Exclude* which will apply the corresponding filter to that data point.
@@ -44,19 +43,18 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part to the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
 
 ```typescript
-    public update(options: VisualUpdateOptions) {
-        //...
-        //handle context menu
-        this.svg.on('contextmenu', () => {
-            const mouseEvent: MouseEvent = d3.event as MouseEvent;
-            const eventTarget: EventTarget = mouseEvent.target;
-            let dataPoint = d3.select(eventTarget).datum();
-            this.selectionManager.showContextMenu(dataPoint? dataPoint.selectionId : {}, {
-                x: mouseEvent.clientX,
-                y: mouseEvent.clientY
-            });
-            mouseEvent.preventDefault();
+public update(options: VisualUpdateOptions) {
+    //...
+    //handle context menu
+    this.svg.on('contextmenu', (event) => {
+        let dataPoint: any = d3Select(event.target).datum();
+        this.selectionManager.showContextMenu((dataPoint && dataPoint.data && dataPoint.data.identity) ? dataPoint.data.identity : {}, {
+            x: event.clientX,
+            y: event.clientY
         });
+        event.preventDefault();
+    });
+}
 ```
 
 ## Next steps

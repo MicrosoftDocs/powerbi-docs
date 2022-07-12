@@ -63,7 +63,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ## Select locations
 
- There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply to the active layer. A maximum of 250 data points can be selected at a time. To learn more, see [selection tools](https://doc.arcgis.com/power-bi/use/select-features-on-the-map.htm). 
+ There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply to the active layer. A maximum of 250 data points can be selected at a time. To learn more, see [selection tools](https://doc.arcgis.com/en/power-bi/use/select-features-on-the-map.htm). 
 
 
 ![All five selection tools.](media/end-user-arcgis/power-bi-arcgis-selection-tools.png)
@@ -80,7 +80,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ![Selection tool for reference layers.](media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png) Select by reference layer is visible only if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [reference layers](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
 
-![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://doc.arcgis.com/power-bi/design/find-nearby-locations.htm).
+![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm).
 
 ![Selection tool for erasing a selection.](media/end-user-arcgis/power-bi-arcgis-clear-selection.png) The eraser tool clears all selections.  It is only active after selections have been made on the map. 
 
@@ -145,7 +145,7 @@ To change the basemap, follow these steps:
     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot showing Dark Gray Canvas selected and applied to basemap.":::
    
     The map updates to the new basemap.
-For more information about changing the basemap, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/power-bi/use/change-the-basemap.htm). 
+For more information about changing the basemap, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/en/power-bi/use/change-the-basemap.htm). 
 
 
 ## Get help
@@ -197,7 +197,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 |Power BI Desktop     |   Yes      |
 |Power BI service (app.powerbi.com)     |    Yes     |
 |Power BI mobile applications*     |    Yes     |
-|Power BI publish to web     |    Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/power-bi/use/sign-in-to-arcgis.htm).     |
+|Power BI publish to web     |    Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm).     |
 |Power BI Embedded     |   Yes, for designers signed in to a [valid licensed ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm)      |
 |Power BI service embedding (powerbi.com)     |    No     |
 | Power BI Report Server  |  Yes, when signed in to a valid ArcGIS Enterprise account through Report Server (online environment only). Not supported in a disconnected environment or with ArcGIS Online. Accessing Report Server with ArcGIS for Power BI consumes ArcGIS credits. For more information about credits, visit [Understand credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)  |
@@ -214,13 +214,13 @@ ArcGIS Map for Power BI is provided by Esri (www.esri.com). When you provide you
 
 **What is an ArcGIS account?**    
 
-Esri offers an Esri [ArcGIS account](https://www.esri.com/arcgis/products/arcgis-for-power-bi/buy) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geo enrichment. 
+Esri offers an Esri [ArcGIS account](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/buy) through ArcGIS for Power BI. Adding an ArcGIS account to Power BI can greatly enhance your mapping visualization capabilities by adding an extensive library of data reference layers and geo enrichment. 
 
 :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-sign-up.png" alt-text="Screenshot showing the sign-up screen.":::
 
-Power BI does not send personal information about you to Esri; this is a separate relationship with a third-party vendor. Once you add ArcGIS account content to your ArcGIS for Power BI visualization, you will have access to all the Esri content and data associated with your account, role, and organization. Any other Power BI user with whom you share that data—whether within your organization or the public—may also need an ArcGIS account to view shared, potentially licensed content. For details about account types and data limitations, [visit the ArcGIS for Power BI online help](https://doc.arcgis.com/maps-for-powerbi/get-started/account-types.htm). 
+Power BI does not send personal information about you to Esri; this is a separate relationship with a third-party vendor. Once you add ArcGIS account content to your ArcGIS for Power BI visualization, you will have access to all the Esri content and data associated with your account, role, and organization. Any other Power BI user with whom you share that data—whether within your organization or the public—may also need an ArcGIS account to view shared, potentially licensed content. For details about account types and data limitations, [visit the ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm). 
 
-For technical or detailed questions about ArcGIS for Power BI, see [Esri’s ArcGIS for Power BI online help](https://doc.arcgis.com/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/en-us/contact#c=us&t=5). 
+For technical or detailed questions about ArcGIS for Power BI, see [Esri’s ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/en-us/contact#c=us&t=5). 
 
 The following table compares the standard features available to all Power BI users to those features available to users signed in to a valid, licensed ArcGIS account.
 
@@ -242,7 +242,7 @@ When geocoding latitude/longitude on the map, up to 30,000 data points are displ
 
 **Is there any charge for using ArcGIS Map for Power BI?**
 
-The ArcGIS Map for Power BI is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.  If you sign up for an [Esri ArcGIS account](https://doc.arcgis.com/power-bi/use/sign-in-to-arcgis.htm), there are [costs associated](https://doc.arcgis.com/maps-for-powerbi/get-started/account-types.htm).
+The ArcGIS Map for Power BI is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.  If you sign up for an [Esri ArcGIS account](https://doc.arcgis.com/en/power-bi/use/sign-in-to-arcgis.htm), there are [costs associated](https://doc.arcgis.com/en/power-bi/get-started/account-types.htm).
 
 **I'm getting an error message about my cache being full**
 

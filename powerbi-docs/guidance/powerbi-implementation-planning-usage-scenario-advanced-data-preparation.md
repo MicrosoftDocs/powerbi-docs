@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 07/02/2022
 ---
 
 # Power BI usage scenarios: Advanced data preparation
@@ -59,8 +59,8 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 1.](media/common/icon-01-red-30x30.png) | The dataflow creator develops a collection of tables within a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). For a dataflow that's intended for reuse, it's common (but not required) that the creator belongs to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | The dataflow connects to data from one or more data sources. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Dataflow creators develop dataflows by using Power Query Online, which is a [web-based version of Power Query](/power-query/power-query-what-is-power-query#where-can-you-use-power-query). |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | A *[staging dataflow](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows)* is created in a workspace that's dedicated to the centralized management of dataflows. A staging dataflow copies the raw data as-is from the source. Few, if any, transformations are applied. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | A *[transformation dataflow](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows)* (also known as a *cleansed dataflow*) is created in the same workspace. It sources data by using [linked table(s)](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-linked-tables) to the staging dataflow. [Computed table(s) ](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-a-computed-table) include transformation steps that prepare, cleanse, and reshape the data. |
+| ![Item 4.](media/common/icon-04-red-30x30.png) | A *[staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows)* is created in a workspace that's dedicated to the centralized management of dataflows. A staging dataflow copies the raw data as-is from the source. Few, if any, transformations are applied. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | A *[transformation dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#transformation-dataflows)* (also known as a *cleansed dataflow*) is created in the same workspace. It sources data by using [linked table(s)](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-linked-tables) to the staging dataflow. [Computed table(s) ](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-a-computed-table) include transformation steps that prepare, cleanse, and reshape the data. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Dataflow creators have access to manage content in the workspace that's dedicated to the centralized management of dataflows. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | One or more other workspaces exist that are intended to provide access to the final dataflow, which delivers production-ready data to data models. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | The *final dataflow* is created in a workspace available to data modelers. It sources data by using linked table(s) to the transformation dataflow. Computed table(s) represent the prepared output that's visible to data modelers who are granted the workspace **viewer** role. |
@@ -92,7 +92,7 @@ Three types of dataflows are shown in the scenario diagram: *staging dataflow*, 
 
 #### Staging dataflow
 
-A [staging dataflow](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) (sometimes called a *data extraction dataflow*) copies raw data as-is from the source. Having the raw data extracted with minimal transformation means that downstream transformation dataflows (described next) can use the staging dataflow as their source. This modularity is useful when:
+A [staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows) (sometimes called a *data extraction dataflow*) copies raw data as-is from the source. Having the raw data extracted with minimal transformation means that downstream transformation dataflows (described next) can use the staging dataflow as their source. This modularity is useful when:
 
 - Access to a data source is restricted to narrow time windows and/or to a few users.
 - Temporal consistency is desired to ensure that all downstream dataflows (and related datasets) deliver data that was extracted from the data source at the same time.
@@ -101,13 +101,13 @@ A [staging dataflow](/power-query/dataflows/best-practices-for-data-warehouse-us
 
 #### Transformation dataflow
 
-A [transformation dataflow](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows) (sometimes called a *cleansed dataflow*) sources its data from linked tables that connect to the staging dataflow. It's a [best practice](/power-query/dataflows/best-practices-reusing-dataflows#separate-data-transformation-dataflows-from-stagingextraction-dataflows) to separate out transformations from the data extraction process.
+A [transformation dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#transformation-dataflows) (sometimes called a *cleansed dataflow*) sources its data from linked tables that connect to the staging dataflow. It's a [best practice](/power-query/dataflows/best-practices-reusing-dataflows#separate-data-transformation-dataflows-from-stagingextraction-dataflows) to separate out transformations from the data extraction process.
 
 A transformation dataflow includes all the transformation steps required to prepare and restructure the data. However, there's still a focus on reusability at this layer to ensure the dataflow is suitable for multiple use cases and purposes.
 
 #### Final dataflow
 
-A final dataflow represents the prepared output. Some additional transformations may occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
+A final dataflow represents the prepared output. Some additional transformations may occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
 
 Computed tables are visible to data modelers that are granted the workspace **viewer** role. This table type is described in the [types of dataflow tables](#types-of-dataflow-tables) topic below.
 
@@ -135,7 +135,7 @@ Three types of dataflow tables (also known as *entities*) are depicted in the sc
   - In the transformation dataflow for accessing the data in the staging dataflow.
   - In the final dataflow for accessing the data in the transformation dataflow.
 - **[Computed table](/power-query/dataflows/computed-entities):** Performs additional computations by using a different dataflow as its source. Computed tables allow customizing the output as needed for individual use cases. In the scenario diagram, computed tables are depicted twice:
-  - In the transformation dataflow for performing [common transformations](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#use-a-computed-entity-as-often-as-possible).
+  - In the transformation dataflow for performing [common transformations](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#use-a-computed-entity-as-much-as-possible).
   - In the final dataflow for delivering output to dataset creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
 
 > [!NOTE]
@@ -154,9 +154,6 @@ The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-fea
 ### Dataflow and dataset refresh
 
 A dataflow is a source of data for datasets. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each dataset. Alternatively, it's possible to use [DirectQuery from the dataset to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
-
-> [!NOTE]
-> There's another type of dataflow called a [streaming dataflow](../transform-model/dataflows/dataflows-streaming.md) (not depicted in the scenario diagram). A streaming dataflow is a Power BI artifact to achieve real-time analytics. Streaming dataflows aren't included in the advanced data preparation scenario because they're not relevant.
 
 ### Azure Data Lake Storage Gen2
 

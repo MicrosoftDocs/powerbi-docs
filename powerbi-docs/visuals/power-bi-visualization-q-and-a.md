@@ -7,7 +7,8 @@ ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/12/2021
+ms.date: 06/30/2022
+ms.custom: sample-salesandmarketingsample
 ---
 # Create a Q&A visual in a report in Power BI
 
@@ -27,7 +28,7 @@ The Q&A visual consists of four core components:
 - Icon to open Q&A tooling, which allows designers to configure the underlying natural language engine.
 
 ## Prerequisites
-
+# [Power BI Desktop](#tab/powerbi-desktop)
 1. Download the [Sales and Marketing Sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to follow along.
 
 1. In the upper left section of the Power BI Desktop, select **File** > **Open report**.
@@ -37,6 +38,21 @@ The Q&A visual consists of four core components:
 1. Open the file in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
 1. Select the plus sign :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Sales and Marketing Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Sales and Marketing Sample**. Select **Connect**.
+
+1. In your workspace, select the Sales and Marketing Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 If you see an error when creating a Q&A visual, be sure to check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article to see if the data source configuration is supported.  
 

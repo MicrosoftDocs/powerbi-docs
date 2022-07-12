@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/08/2022
+ms.date: 06/22/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -84,7 +84,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
 ## Subscribe others 
 
-To create a subscription for yourself, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
+To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
@@ -125,8 +125,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 ### Considerations unique to paginated report subscriptions
 
--  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions. 
-
+-  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
 
 
 - You can set up an unlimited number of subscriptions per paginated report. 
@@ -141,7 +140,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. 
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. Power BI administrators can view logs and turn certain subscription features on and off.
 
 # [Creator](#tab/creator)
 
@@ -171,9 +170,13 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage.png" alt-text="Screenshot showing Subscription pane with Manage all subscriptions outlined in red.":::
 
 
-# [Workspace admin](#tab/admin)
+# [Administrator](#tab/admin)
 
+## Workspace administrators
 Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+
+> [!NOTE]
+> Subscriptions created for reports and dashboards in an app or those hosted in your **My workspace** can only be managed by the user who created the subscriptions. 
 
 To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
@@ -189,6 +192,8 @@ Admins can also take over ownership of subscriptions in workspaces they manage. 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-admin-take-over.png" alt-text="Screenshot showing a list of subscriptions with the take over icon selected.":::
 
+## Power BI administrators
+
 ### Subscription controls and tracking for administrators 
 
 Power BI administrators have levers of control over subscriptions. 
@@ -196,6 +201,8 @@ Power BI administrators have levers of control over subscriptions.
 - [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
 - Enable all members of the organization, or just specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
+
+- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML). 
 
 ### View subscription audit and activity logs 
 
@@ -232,6 +239,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Apps** 
 
 - For [Power BI apps](end-user-apps.md) you have installed, you can only create subscriptions for others if you are the owner of the app. 
+- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). 
 
 **Unsupported features**    
 Email subscriptions do not support:

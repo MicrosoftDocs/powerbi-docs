@@ -34,8 +34,6 @@
         href: end-user-dashboards.md
       - name: "View a dashboard"
         href: end-user-dashboard-open.md
-      - name: "Featured dashboards"
-        href: end-user-featured.md
       - name: "Dashboard tiles"
         href: end-user-tiles.md
       - name: "Add a comment or start a conversation"
@@ -62,8 +60,6 @@
         href: end-user-slicer.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
-      - name: "Export a report to PowerPoint"
-        href: end-user-powerpoint.md
       - name: "How to identify and use buttons"
         href: end-user-buttons.md     
       - name: "Add a bookmark to a report"
@@ -98,7 +94,7 @@
       items: 
       - name: "Use data for productive meetings"
         href: business-user-teams-meetings.md
-      - name: "Use goals to drive results"
+      - name: "Use metrics to drive results"
         href: business-user-teams-goals.md
       - name: "Lead data-driven discussions"
         href: business-user-teams-share-data.md
@@ -138,8 +134,8 @@
         href: end-user-apps.md
       - name: "Install and use apps"
         href: end-user-app-view.md
-      - name: "Datasets hub"
-        href: end-user-datasets-hub.md
+      - name: "Data hub"
+        href: end-user-data-hub.md
       - name: "Connect to services"
         href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"

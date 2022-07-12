@@ -12,9 +12,15 @@ ms.date: 04/24/2022
 
 # Capacity planning in Power BI embedded analytics
 
+<<<<<<< HEAD
 Calculating the type of capacity you need for a Power BI embedded analytics deployment, can be complicated. The capacity you need depends on several parameters, some of them hard to predict.
 
 Some of the things to consider when planning your capacity are:
+=======
+Calculating the type of capacity needed for a Power BI embedded analytics deployment can be complicated since the calculation is based on multiple parameters, some of them hard to predict.
+
+Some things you should take into consideration when planning your capacity are:
+>>>>>>> 6d932c9dbfec4b54b24269ad0fee5bd872934215
 
 * The data models you're using
 * The number and complexity of required queries
@@ -22,7 +28,11 @@ Some of the things to consider when planning your capacity are:
 * Data refresh rates
 * More usage patterns that are hard to predict
 
+<<<<<<< HEAD
 This article explains how to simplify capacity planning for Power BI embedded analytics by using the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
+=======
+This article is designed to make capacity planning for Power BI embedded analytics easier by introducing the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
+>>>>>>> 6d932c9dbfec4b54b24269ad0fee5bd872934215
 
 ## Planning tool
 
@@ -44,12 +54,21 @@ Here are some examples of how you can use the planning tool.
 
 ### Reviewing the test results
 
+<<<<<<< HEAD
 To see the effects of the load test in the metrics app after the test runs, follow the instructions below. Expect up to a 15-minute lag from the time the test starts generating load, until the load is visible in the metrics.
 
 1. Expand the **Datasets** tab of your [metrics app](../../enterprise/service-admin-premium-monitor-capacity.md) landing page.
 2. Initiate an on-demand refresh by clicking **refresh now**.
+=======
+**The following section explains how to review the load test results of a Gen 1 capacity:**
 
-    ![Power BI premium capacity metrics](media/embedded-capacity-planning/embedded-capacity-planning.png)
+To see the effects of the load assessment test in the metrics app after the test runs, follow the instructions below. Expect up to a 15 minute lag from the time the test starts generating load, until the load is visible in the metrics.
+
+1. Expand the **Datasets** tab of your [metrics app](../../enterprise/service-admin-premium-monitor-capacity.md) landing page.
+2. Initiate an on-demand refresh by clicking **refresh now**. 
+>>>>>>> 6d932c9dbfec4b54b24269ad0fee5bd872934215
+
+    ![Power BI premium capacity metrics.](media/embedded-capacity-planning/embedded-capacity-planning.png)
 
 ## Power BI capacity tools GitHub repository
 
@@ -59,8 +78,5 @@ The repository is open source and users are encouraged to contribute, add more t
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded performance best practices](embedded-performance-best-practices.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Power BI Embedded performance best practices](embedded-performance-best-practices.md)
