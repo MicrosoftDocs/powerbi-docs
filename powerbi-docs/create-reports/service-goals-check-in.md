@@ -15,7 +15,7 @@ ms.date: 07/12/2022
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events, and follow metrics. These features are covered in this section. 
+Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events, and follow metrics. These features are covered in this article. 
 
 ## View metric details 
 
@@ -38,7 +38,7 @@ This metric is _behind_.
 
 :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of Metrics filtered to status behind via summary card.":::
 
-There is also a keyword search that filters the scorecard down to metrics that match the keyword.  Select the **Filter** icon above the first metric and type the keywords you're looking for.  The scorecard filters to show those results, without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
+There's also a keyword search that filters the scorecard down to metrics that match the keyword.  Select the **Filter** icon above the first metric and type the keywords you're looking for.  The scorecard filters to show those results, without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
 
 The scorecard before filtering.
 
@@ -66,7 +66,7 @@ The scorecard filtered to _Premium_.
 
 1. Select **Save**. 
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to metric.":::
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to the metric.":::
 
 ## Add or update connected values 
 
@@ -120,7 +120,7 @@ You can automate status updates based on rules that govern that metric or submet
 ### More aspects of status rules
 
 - With automated status rules, you can create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
-- For the mobile experience, automatic refresh on status rules is not supported at this time. 
+- For the mobile experience, automatic refresh on status rules isn't supported at this time. 
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Screenshot of Adding a condition to a rule.":::
     
