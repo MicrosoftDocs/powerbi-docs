@@ -40,7 +40,7 @@ This tutorial covers the following.
 
 ## Who can set alerts
 
-Alerts can be created in the Power BI service by customers with any licence type. Set alerts on dashboard tiles:
+Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
 - that you have created and saved in **My workspace**
 - that have been shared with you in a [Premium reserved capacity](end-user-license.md). 
 - in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
