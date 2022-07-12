@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/04/2022
+ms.date: 07/12/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -27,6 +27,12 @@ For related "What's New" information, see:
 Now you can connect your digital business data to real-world places in augmented reality, putting real-time data at the fingertips of employees where they need it, enabling them to make better, faster, more informed data-driven decisions. [Learn more!](./mobile-apps-data-in-space-overview.md)
 
 ![Screenshot of showing Power BI reports pinned to real-world locations in augmented reality using the data in space feature.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-data-in-space-final-result.png)
+
+### Find content that's relevant to you (Windows)
+
+Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you on the home page in the new **Recommended** strip.
+
+![Screenshot of Windows app home screen showing recommended content.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-home-screen-recommended.png)
 
 ## June 2022
 
