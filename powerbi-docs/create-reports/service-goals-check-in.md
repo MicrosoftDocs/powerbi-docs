@@ -1,5 +1,5 @@
 ---
-title: View and update your metrics in Power BI
+title: Stay on top of your metrics in Power BI
 description: In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events.
 author: maggiesMSFT
 ms.author: maggies
