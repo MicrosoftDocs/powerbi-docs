@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 01/07/2022
+ms.date: 05/12/2022
 LocalizationGroup: Troubleshooting
 ---
 
@@ -33,9 +33,6 @@ Troubleshooting Power BI data in Excel, in general:
 
 Troubleshoot starting in Power BI with Analyze in Excel, specifically:
 
-* [Install Analyze in Excel](#install-analyze-in-excel)
-* [Update Excel libraries for the OLE DB provider](#update-excel-libraries-for-the-ole-db-provider)
-* [Determine whether you need to update your Excel libraries](#determine-whether-you-need-to-update-your-excel-libraries)
 * [Connection cannot be made](#connection-cannot-be-made-error) error
 * [No data models](#no-data-models)
 * [Token expired](#token-expired-error) error
@@ -61,56 +58,6 @@ To address this issue, you have a few options:
 3. If you imported data from an Excel workbook that had only tables (and no data model), then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42), then follow the steps in option 2, directly above, to create measures in your data model.
 
 Once your measures are defined in the model in the Power BI service, you'll be able to use them in the **Values** area in Excel PivotTables.
-
-## Install Analyze in Excel
-
-To use Analyze in Excel, you must first download the feature from Power BI and install it from links provided after you [sign in to the Power BI service](https://app.powerbi.com). Usually, it installs automatically when you [select Analyze in Excel](service-analyze-in-excel.md) in the Power BI service. If not, follow these steps to install. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit).
-
-1. In the Power BI service in your browser, select **More options (...)** in the upper-right corner, then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel.
-
-    ![Download Analyze in Excel from Power BI Home.](media/service-analyze-in-excel/install-analyze-excel-download-updates.png)
-
-    Power BI detects whether you have installed Analyze in Excel. If not, Power BI prompts you to download.
-
-    ![Download Analyze in Excel updates.](media/service-analyze-in-excel/install-analyze-excel-download.png)
-
-When you select **Download**, Power BI detects the version of Excel you have installed and downloads the appropriate version of the Analyze in Excel installer. You see a download status in the bottom of your browser, or wherever your browser displays download progress. 
-
-![Updates downloading](media/service-analyze-in-excel/analyze-excel-04.png)
-
-When the download completes, run the installer (.msi) to install Analyze in Excel. The name of the installation process is different from Analyze in Excel; the name will be **Microsoft Analysis Services OLE DB Provider** as shown in the following image, or something similar.
-
-![Updates installing Analysis Services OLE DB provider](media/service-analyze-in-excel/analyze-excel-05.png)
-
-Once it completes, you're ready to select a report in the Power BI service (or other Power BI data element, like a dataset), and then analyze it in Excel.
-
-If you need to uninstall the Analyze in Excel feature, use the **Add or remove programs** system setting on your computer.
-
-## Update Excel libraries for the OLE DB provider
-To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This article [Analysis Services client libraries](/analysis-services/client-libraries#download-the-latest) is a good place to verify your installation of the OLE DB provider, or to download a recent version.
-
-The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
-
-To download the latest Excel libraries, visit Power BI and select the **down arrow** in the upper right corner of the Power BI service, then select **Analyze in Excel updates**.
-
-![Screenshot of down arrow menu option in the upper right corner, to select Analyze in Excel updates.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
-
-In the dialog that appears, select **Download**.
-
-![Screenshot of Analyze in Excel updates dialog to select Download or preview button.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
-
-## Determine whether you need to update your Excel libraries
-You can download the most recent version of the Excel OLE DB provider libraries from the links in the previous section. Once you download the appropriate OLD DB provider library and begin installation, checks are performed against your current installed version.
-
-If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
-
-![Screenshot of dialog asking to update if a newer version of Excel O L E D B provider client library is available.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
-
-![Screenshot of dialog to confirm an upgrade during installation of Excel O L E D B provider client libraries.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
-
-If you see the dialog prompting you to upgrade, you should continue with the installation to get the most recent version of the OLE DB provider installed in your computer.
 
 ## Connection cannot be made error
 The primary cause for a *connection cannot be made* error is that your computer's OLE DB provider client libraries are not current. For information about how to determine the correct update, and for download links, see **Update Excel libraries for the OLE DB provider** earlier in this article.

@@ -28,7 +28,7 @@ You have three options to resolve the issue associated with the On-premises data
 
 ### Resolution 1: Install the latest version of Power BI On-premises data gateway
 
-The latest version of the Power BI On-premises data gateway doesn't place named pipe restrictions on the local machine, and allows Power BI Desktop to open properly. If you need to continue using Power BI On-premises data gateway, the recommended resolution is to update it. You can download the [latest version of Power BI On-premises data gateway](https://go.microsoft.com/fwlink/?LinkId=698863). The link is a direct download link to the installation executable.
+The latest version of the Power BI On-premises data gateway doesn't place named pipe restrictions on the local machine, and allows Power BI Desktop to open properly. If you need to continue using Power BI On-premises data gateway, the recommended resolution is to update it. You can download the [latest version of Power BI On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127). The link is a direct download link to the installation executable.
 
 ### Resolution 2: Uninstall or stop the Power BI On-premises data gateway Microsoft service
 

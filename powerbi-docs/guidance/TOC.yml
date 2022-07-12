@@ -47,7 +47,11 @@
       - name: "Composite model guidance"
         href: composite-model-guidance.md   
       - name: "Row-level security (RLS) guidance"
-        href: rls-guidance.md 
+        href: rls-guidance.md
+      - name: "Migrate AAS models to Power BI Premium"
+        href: migrate-azure-analysis-services-to-powerbi-premium.md
+      - name: "Migrate AAS models to Power BI Premium scenarios"
+        href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
     - name: DAX
       items:
       - name: "Appropriate use of error functions"
@@ -75,21 +79,7 @@
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
-        href: report-drillthrough.md  
-      - name: "Tips to manage axes"
-        href: report-design-tips-axes.md  
-      - name: "Tips to control chart gridlines"
-        href: report-tips-chart-gridlines.md  
-      - name: "Tips to optimize the use of labels"
-        href: report-tips-labels.md
-      - name: "Tips to format and implement legends"
-        href: report-tips-legends.md
-      - name: "Tips to optimize visual colors"
-        href: report-tips-visual-colors.md
-      - name: "Tips to sort and distribute data plots"
-        href: report-tips-sort-distribute-data-plots.md
-      - name: "Tips to work with shapes, images, and icons"
-        href: report-tips-shapes-images-icons.md
+        href: report-drillthrough.md
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"

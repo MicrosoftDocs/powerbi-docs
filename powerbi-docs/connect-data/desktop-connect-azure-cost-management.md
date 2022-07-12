@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 06/28/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -18,7 +18,7 @@ You can use the Azure Cost Management connector for Power BI Desktop to make pow
 
 The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management | Microsoft Docs](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
-The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles?view=o365-worldwide) at the billing account or billing profile levels for Microsoft Customer Agreements. 
+The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
@@ -56,7 +56,9 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 
 6.	Enter the number of months and select **OK**.
 
-    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-05.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+
+    Alternatively, if you want to download less than a month's worth of data you can set *Number of months* to zero, then specify a date range using *Start Date* and *End Date* values that equate to less than 31 days.
 
 7.	When prompted, sign in with your Azure user account and password. You must have access to the Billing account scope to successfully access the billing data.
 
@@ -128,10 +130,10 @@ When the data you selected is loaded, the data tables and fields are shown in th
 
 The following considerations and limitations apply to the Azure Cost Management data connector:
 
-* Data row requests exceeding one million rows is not supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
-* The Azure Cost Management data connector does not work with Office 365 GCC customer accounts.
+* Data row requests exceeding one million rows isn't supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
+* The Azure Cost Management data connector doesn't work with Office 365 GCC customer accounts.
 * **Data refresh:** The cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day. 
-* **Data source reuse:** If you have multiple reports that are pulling the same data, and do not need additional report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
+* **Data source reuse:** If you have multiple reports that are pulling the same data, and don't need additional report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
 
     For more information on reusing data sources, see the following:
 
@@ -178,6 +180,38 @@ You might receive a *400 bad request* from the **RI usage details** when you try
     
     ```
 4.	Once you've updated the code with the appropriate update from the previous step, select **Done** and then select **Close & Apply**. 
+
+You might run into a situation where tags aren't working in the usage details or the tags column can't be transformed to json. This issue stems from the current UCDD api returning the tags column by trimming the start and end brackets, which results in Power BI being unable to transform the column because it returns it as a string. To mitigate this situation, take the following steps. 
+
+
+1. Navigate to **Query Editor**.
+2. Select the *Usage Details* table.
+3. In the right pane, the **Properties** pane shows the **Applied Steps**. You need to add a custom column to the steps, after the **Navigation** step. 
+4. From the menu, select **Add column** > **Add custom column**
+5. Name the column, for example you could name the column *TagsInJson* or whatever you prefer, and then enter the following text in the query: 
+    ```dax
+    
+    ```= "{"& [Tags] & "}"
+6. Completing the previous steps creates a new column of *tags* in the json format
+7. You can now transfer and expand the column as you need to.
+
+
+**Authentication issues encountered with Azure Active Directory guest accounts:** You may have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following: 
+
+* *Access to the resource is forbidden* 
+* *We couldn’t authenticate with the credentials provided. Please try again.*
+
+These errors could be the result of having a user account in a different Azure Active Directory domain that has been added as a guest user. 
+
+For guest accounts: Use the following settings or options as you are prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
+
+1.	Select **Sign-in**
+2.	Select the **Use another account** (bottom of the dialog)
+3.	Select **Sign-in options** (bottom of the dialog box)
+4.	Select **Sign into an organization**
+5.	For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Azure Active Directory domain into which you've been added as a guest.
+6.	Then, for **Pick an account** select the user account that you’ve previously authenticated.  
+
 
 
 ## Next steps

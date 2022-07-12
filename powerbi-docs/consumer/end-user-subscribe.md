@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/28/2022
+ms.date: 06/22/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -84,7 +84,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
    
 ## Subscribe others 
 
-To create a subscription for yourself, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
+To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you'll also need:
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you have the option to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
@@ -125,8 +125,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 ### Considerations unique to paginated report subscriptions
 
--  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions. 
-
+-  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
 
 
 - You can set up an unlimited number of subscriptions per paginated report. 
@@ -202,6 +201,8 @@ Power BI administrators have levers of control over subscriptions.
 - [Enable email subscriptions](../admin/service-admin-portal-export-sharing.md) for all members of the organization. 
 
 - Enable all members of the organization, or just specific users, to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md). 
+
+- [Enable specific attachment formats](../admin/service-admin-portal-export-sharing.md) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML). 
 
 ### View subscription audit and activity logs 
 
