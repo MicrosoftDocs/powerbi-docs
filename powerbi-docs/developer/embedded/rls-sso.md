@@ -10,9 +10,10 @@ ms.topic: how-to
 ms.date: 06/30/2022
 #Customer intent: As an ISV with an on-prem dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
+
 # Embed a report on a single sign-on system (SSO)
 
-This article explains how to implement a [single sign-on (SSO)](pbi-glossary.md#single-sign-on-sso) dataset, with or without [**RLS** (row-level security)](embedded-row-level-security.md), and embed it in a Power BI report.
+This article explains how to configure a [single sign-on (SSO)](pbi-glossary.md#single-sign-on-sso) dataset, with or without [**RLS** (row-level security)](embedded-row-level-security.md), and embed it in a Power BI report.
 
 > [!NOTE]
 > This article is only relevant for app owns data customers.
