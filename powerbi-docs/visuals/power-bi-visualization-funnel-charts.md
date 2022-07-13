@@ -4,18 +4,18 @@ description: 'Funnel charts in Power BI'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-qKRZPBnaUXM
+ms.custom: video-qKRZPBnaUXM, sample-opportunityanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/29/2021
+ms.date: 06/30/2022
 LocalizationGroup: Visualizations
 ---
 # Create and use funnel charts
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+A funnel chart helps you visualize a linear process that has sequential, connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
 Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
 
@@ -50,17 +50,32 @@ Funnel charts:
 
 ## Prerequisite
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
 ).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Opportunity Analysis Sample PBIX file**
+1. Find your copy of the **Opportunity Analysis Sample PBIX file**.
 
 1. Open the **Opportunity Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Opportunity Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Opportunity Analysis Sample**. Select **Connect**.
+
+1. In your workspace, select the Opportunity Analysis Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 ## Create a basic funnel chart
 
@@ -102,7 +117,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
 
-   ![short video showing visual interactions](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
+   ![Screenshot shows two bars selected in the funnel visual with visual interactions.](media/power-bi-visualization-funnel-charts/funnel-chart-cross-filter.png)
 
 1. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../create-reports/service-reports-visual-interactions.md)
 
@@ -111,6 +126,3 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 [Gauges in Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-
-

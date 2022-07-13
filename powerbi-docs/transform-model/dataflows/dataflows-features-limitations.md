@@ -26,7 +26,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * A Power BI Premium subscription is required in order to refresh more than 10 dataflows cross workspace
 * PowerQuery limitations are found in the PowerQuery Online usage limits article.
 * Power BI dataflows don't support use of global variables in a URL argument.
-* Multi-Geo is currently not supported.
+* Multi-Geo is currently not supported unless configuring storage to use your own Azure Data Lake Gen2 storage account.
 * Vnet support is achieved by using a gateway.
 * When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
