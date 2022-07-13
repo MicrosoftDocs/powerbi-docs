@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/17/2022
+ms.date: 07/06/2022
 ms.custom: known-issue-203
 ---
 
@@ -14,7 +14,7 @@ ms.custom: known-issue-203
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: July 6, 2022
 
 **Problem area:** Consume and View
 

@@ -259,8 +259,6 @@
         href: service-template-update-delete-extract.md
       - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
-      - name: "Template apps samples"
-        href: service-template-apps-samples.md  
       - name: "Automated template app configuration"
         href: template-apps-auto-install.md              
     - name: Connect to services
