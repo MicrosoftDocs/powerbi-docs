@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/26/2022
+ms.date: 07/13/2022
 LocalizationGroup: Connect to services
 ---
 
@@ -147,7 +147,7 @@ This likely indicates that your tenant's emissions volumes are very small. The c
 
 **Why can't I see emissions data for the previous month?**
 
-Emissions data for a given month is typically available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
+Emissions data for a given month will be available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
 
 **My emissions data for previous months appears to have changed since I last looked at it. What happened?**
 
