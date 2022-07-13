@@ -7,21 +7,41 @@ ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/04/2022
+ms.date: 07/13/2022
 ---
 
 
-# Licensing API
+# Licensing and transactability enforcement (Public preview)
 
-The **Licensing API** allows Power BI visual developers to enforce Power BI visual's licenses. The API supports retrieving the information on Power BI visual's licenses that are assigned to the Power BI user.
-The API also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user of the need to purchase the missing licenses.
-The visual should not display its own licensing UX, instead use one of Power BI predefined supported notifications as detailed below.  
-Learn more on Power BI Licensing and Transactability support [here](https://go.microsoft.com/fwlink/?linkid=2197483).
+When you create Power BI visuals for download on AppSource, you can now manage and enforce the licenses for their visuals using systems provided by Microsoft. With the licensing API you can assign and unassign licenses using familiar tools like Microsoft 365 admin center. You can also enforce licenses to ensure that only licensed users can access your visuals.
+
+## Work flow for license enforcement
+
+The following table illustrates the steps involved in managing your apps through Microsoft:
+
+|   Step                                                                    | Details                                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| [Create an offer] in [Partner Center].               | Choose to transact through the Microsoft commerce system. Enable Microsoft to manage licenses. Set pricing and availability. |
+| Add license enforcement to your Power BI visual package. | Create or reconfigure your package to use the Power BI runtime license, which will enforce licensing according to each user’s access.                                                                                     |
+| Customers discover your offer in AppSource and purchase a subscription.                   | When customers purchase your offer in [AppSource](https://appsource.microsoft.com), they also get licenses for the Power BI Visual.                                                |
+| Customers manage their subscriptions and assign/unassign user licenses.                                   | Customers can manage the subscriptions of these Visuals and offers in admin.microsoft.com, just like they normally do for any of their other subscriptions like Office or Power BI.                                                                    |
+| **Customers assign licenses**                                         | Customers can assign licenses of these addons in license pages under billing node in admin.microsoft.com. Customers can assign licenses to users or groups. Doing so will enable these users to launch the ISV visual.                                 |
+| **ISV enforces runtime checks**                                       | ISV implements enforcement of the license based on PBI runtime license check. And use out-of-the box APIs to provide a unified experience for unlicensed users.                                                                                        |
+| **ISV can view reports**                                              | ISVs can view revenue details and payout information.    ISVs can view information on orders purchased / renewed / cancelled over time and by geography.    ISVs can also view information on assigned licenses over time and by geography.            |
+| ****                                                                  |                                                                                                                                                                                                                                                        |
+
+Customers discover your offer in AppSource and purchase a subscription. When customers purchase your offer in our online storefront, AppSource, they also get licenses for the Power BI Visual.
+
+## Licensing API
+
+The **Licensing API** allows Power BI visual developers to enforce Power BI visual licenses. The API supports retrieving the information on Power BI visual licenses that are assigned to the Power BI user. It also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user that they need to purchase the missing licenses.
+The visual should not display its own licensing UX, instead use one of Power BI supported predefined notifications as detailed below.  
+[Learn more about Power BI Licensing and Transactability support](custom-visual-licenses.md).
 
 >[!NOTE]
 >The **Licensing API** is available from version 4.7. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-## Retrieve visual's service plans that are assigned to the active user
+### Retrieve visual's service plans that are assigned to the active user
 
 To get service plans assigned, add a call to `getAvailableServicePlans` (available via `IVisualLicenseManager`).
 From performance perspective, attempt to fetch the licenses once, preferably in the `constructor` or the `init` calls, and save the result.  
@@ -97,7 +117,7 @@ this.licenseManager.getAvailableServicePlans().then((result: LicenseInfoResult) 
         });
 ```
 
-## Notify the user that the required licenses are missing
+### Notify the user that the required licenses are missing
 
 Power BI platform provides several out of the box experiences that can be used to notify:
 
@@ -114,7 +134,7 @@ export interface IVisualLicenseManager {
     }
 ```
 
-### General icon to indicate that the required licenses are missing
+#### General icon indicating a required license is missing
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to display an icon as part of the visual's container.  
 Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
@@ -130,7 +150,7 @@ Example of the visual display containing the "licenses are required" general ico
 >[!div class="mx-imgBorder"]
 >![visual display containing the "licenses are required" expanded icon.](media/licensing-api/general-icon-expanded.png)
 
-### Overlay the visual's display with a notification on missing licenses
+#### Overlay the visual's display with a *missing license* notification
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.VisualIsBlocked` to overlay the visual's display with a notification that visual is blocked since required licenses were found missing.  
 Once triggered, this notification will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
@@ -139,7 +159,7 @@ Example of the visual display containing the *visual blocked* notification. Powe
 
 :::image type="content" source="media/licensing-api/blocked-visual.png" alt-text="Visual display containing the *visual blocked* notification.":::
 
-### Overlay the visual's display with a notification on licenses unsupported environment
+### Overlay the visual's display with an *unsupported environment* notification
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` to overlay the visual's display with a notification that visual is blocked since the Power BI in use doesn't support licenses management\enforcement.  
 Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
@@ -152,7 +172,7 @@ Example of the visual display containing the "Unsupported Environment" notificat
 >[!div class="mx-imgBorder"]
 >![visual display containing the "Unsupported Environment" notification](media/licensing-api/unsupported-environment.png)
 
-### Display a banner notifying that a specific visual's functionality couldn't be applied
+#### Display a banner notifying that a specific visual's functionality couldn't be applied
 
 When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that can be set by you and used to provide additional information on the feature that triggered the notification.
 
@@ -179,7 +199,6 @@ Example of the visual display containing the "feature blocked" banner notificati
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Publish a Power BI custom visual](../visuals/office-store.md)
+[Publish a Power BI custom visual](../visuals/office-store.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
