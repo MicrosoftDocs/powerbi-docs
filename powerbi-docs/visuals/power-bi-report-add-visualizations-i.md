@@ -76,7 +76,7 @@ This tutorial uses the built-in Sales and Marketing Sample in the Power BI servi
 
 Create a visualization and then change its type.
 
-1. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Column** well.
+1. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Columns** well.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-create-visual.png" alt-text="Screenshot of the Fields pane with the Values well called out.":::
 
