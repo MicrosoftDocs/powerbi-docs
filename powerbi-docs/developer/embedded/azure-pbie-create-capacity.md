@@ -9,7 +9,7 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 07/10/2022
+ms.date: 07/13/2022
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -19,9 +19,9 @@ This article walks you through how to create a [Power BI Embedded](embedded-anal
  >[!Important]
  >Within the next few months, all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../enterprise/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
 
-## Before you begin
+## Prerequisites
 
-To create a capacity, you need the following:
+Before you can create a capacity, you need the following:
 
 1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
