@@ -6,28 +6,27 @@ ms.author: jennyfel
 ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 07/13/2022
 ---
 
 
 # Licensing and transactability enforcement (Public preview)
 
-When you create Power BI visuals for download on AppSource, you can now manage and enforce the licenses for their visuals using systems provided by Microsoft. With the licensing API you can assign and unassign licenses using familiar tools like Microsoft 365 admin center. You can also enforce licenses to ensure that only licensed users can access your visuals.
+When you create Power BI visuals for download on AppSource, you can now manage and enforce the licenses for the visuals using systems provided by Microsoft. With the [licensing API](#licensing-api) you can assign and unassign licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/). You can also enforce licenses to ensure that only licensed users can access your visuals.
 
 ## Work flow for license enforcement
 
-The following table illustrates the steps involved in managing your apps through Microsoft:
+The following table illustrates the steps involved in managing your visual licenses through Microsoft:
 
 |   Step                                                                    | Details                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **[Create an offer](/azure/marketplace/marketplace-power-bi-visual) in [Partner Center](https://partner.microsoft.com)**               | Choose to transact through the Microsoft commerce system. Enable Microsoft to manage licenses. Set pricing and availability. |
-| **Add license enforcement to your Power BI visual package** | Create or reconfigure your package to use the Power BI runtime license, which will enforce licensing according to each user’s access.                                                                                     |
+| **Add license enforcement to your Power BI visual package** | Create or reconfigure your package to use the Power BI runtime license, which enforces licensing according to each user’s access.                                                                                     |
 | **Customers discover your offer in AppSource and purchase a subscription**                   | When customers purchase your offer in [AppSource](https://appsource.microsoft.com), they also get licenses for the Power BI Visual.                                                |
 | **Customers manage their subscriptions and assign/unassign user license**s                                   | Customers manage subscriptions and assign licenses for these Visuals and offers in the [Microsoft 365 admin center](https://admin.microsoft.com/), just like they do for any of their other subscriptions like Office or Power BI.                                                                    |
 | **Enforce runtime checks**                                       | Give your customers a uniform experience by using our out-of-the-box APIs to enforce runtime license checks.                                                                 |
-| **[View reports](/azure/marketplace/summary-dashboard) to fuel growth**                                              |  Gain insight into revenue, payout information, and order and license details. View information about licenses and orders purchased, renewed, and cancelled over time and by geography.            |
-|
+| **[View reports](/azure/marketplace/summary-dashboard) to fuel growth**                                              |  Gain insight into revenue, payout information, and order and license details. View information about licenses and orders purchased, renewed, and cancelled over time and by geography.
 
 ## Licensing API
 
