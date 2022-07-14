@@ -10,7 +10,6 @@ ms.topic: conceptual
 ms.date: 07/13/2022
 ---
 
-
 # Licensing and transactability enforcement (Public preview)
 
 When you create Power BI visuals for download on AppSource, you can now manage and enforce the licenses for the visuals using systems provided by Microsoft. With the [licensing API](#licensing-api) you can assign and unassign licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/). You can also enforce licenses to ensure that only licensed users can access your visuals.
