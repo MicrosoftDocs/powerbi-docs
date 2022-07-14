@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
+If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
 
 ![Screenshot showing New Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -82,12 +82,12 @@ The improved usage metrics report includes the following report pages:
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of 1 would mean the report has the most views of all reports in the organization.   |
-| Report usage | Report views per day | Total number of Report Views per day. Counted at report level, does not consider Report Page Views. |
+| Report usage | Report views per day | Total number of Report Views per day. Usage is counted at the report level and doesn't consider Report Page Views. |
 | Report usage | Report viewers per day | Total number of different users who viewed the report (based on the AAD user account). |
 | Report usage | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
-| Report usage | Pages | If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
+| Report usage | Pages | If the report has more than one page, slice the report by the page(s) that was viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
 | Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages are not included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
@@ -173,7 +173,7 @@ If user information is excluded, the usage report refers to users as 'Unnamed Us
 
     ![Screenshot showing Disable per-user metrics.](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
-When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When admins disable usage metrics for their entire organization, they can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and configure the Per-user data in usage metrics for content creators setting.
@@ -302,7 +302,7 @@ In addition to the above differences between previous and improved usage metrics
 In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators:
 
 **Q:** Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same? 
-**A:** Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the users device. Report Page Views rely on usage information from the users device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
+**A:** Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
 
 **Q:** I can't run usage metrics on a report.
 **A:** You can only see usage metrics for reports you own or have permissions to edit.
@@ -370,7 +370,7 @@ Power Automate can perform a refresh that can force the Report Usage model to re
 
     ![Screenshot showing a new step, Refresh a dataset.](media/service-modern-usage-metrics/power-automate-refresh-dataset.png)
 
-1. Let the the flow run once, then switch off the flow.
+1. Let the flow run once, then switch off the flow.
 
 ### Delete the dataset
 
@@ -395,7 +395,7 @@ Power Automate can perform a refresh that can force the Report Usage model to re
     > [!NOTE]
     > This **Try it** button does not apply to GCC customers since their API endpoint is different.
 
-1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the dataset. Let the the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
+1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the dataset. Let the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
 1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**. 
 
     ![Screenshot showing Try the REST API.](media/service-modern-usage-metrics/power-bi-rest-api-try-it.png)
