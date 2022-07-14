@@ -66,7 +66,7 @@ There are two types of Power BI embedded analytics offerings, each requiring a d
 
 * [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that requires P or EM SKUs.
 
-For more information about the differences between the Embedded and Premium SKUs see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
+For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
 ## Next steps
 
