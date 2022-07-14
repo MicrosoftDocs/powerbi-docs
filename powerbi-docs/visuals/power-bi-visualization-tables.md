@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for **Category**.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-grid3.png" alt-text="Screenshot of a table that displays five different measures for Category.":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridlines.png" alt-text="Screenshot of a table that displays five different measures for Category.":::
 
 Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells and cross-highlight. You can also copy and paste individual cells and multiple cell selections into other applications.
 
