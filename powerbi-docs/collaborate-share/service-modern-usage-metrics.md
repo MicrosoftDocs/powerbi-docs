@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/22/2022
+ms.date: 07/14/2022
 LocalizationGroup: Dashboards
 ---
 
