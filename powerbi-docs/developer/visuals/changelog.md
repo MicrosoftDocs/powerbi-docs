@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/19/2022
+ms.date: 07/14/2022
 ---
 
 # Power BI visuals API changelog
@@ -16,7 +16,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v4.7.0
 
-* [Drilldown API]()
+* **[Licensing API](licensing-api.md)** - Sell, manage, and enforce licenses directly through the commercial marketplace.
 
 ## API v4.6.0
 
