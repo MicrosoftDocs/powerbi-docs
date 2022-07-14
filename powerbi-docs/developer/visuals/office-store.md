@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/24/2022
+ms.date: 07/11/2022
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -46,9 +46,9 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 
 ## Submit your custom visual to AppSource
 
-To submit a Power BI visual to AppSource, upload a **pbiviz** package and **pbix** file to Partner Center.
+To submit a Power BI visual to AppSource, upload a **.pbiviz** package and **.pbix** file to Partner Center.
 
-Before you create the **pbiviz** package, complete the following fields in the **pbiviz.json** file:
+Before you create the **.pbiviz** package, complete the following fields in the **pbiviz.json** file:
 
 * description
 * supportUrl
@@ -65,6 +65,7 @@ Before you create the **pbiviz** package, complete the following fields in the *
 > [!IMPORTANT]
 > Before you submit your visual, make sure it passes all the [requirements](submission-testing.md). A visual that doesn't pass the requirements will be rejected.
 
+<<<<<<< HEAD
 Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see the [Azure Marketplace listing guidelines](/azure/marketplace/marketplace-criteria-content-validation).
 
 1. Log into **Partner Center**.
@@ -105,6 +106,9 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 10. In **Technical configuration**, upload your Power BI visual **PBIVIZ** file and the **PBIX** file.
     Select **Review and Publish** to publish your offer.
+=======
+When you're ready to create or update your offer, follow the instructions in [Create a Power BI app offer](/azure/marketplace/marketplace-power-bi-visual).
+>>>>>>> 932f01b6d3593105453d3c50b8d7e6bf65f57177
 
 ## Track submission status and usage
 
@@ -118,20 +122,13 @@ You can review the [validation policies](/legal/marketplace/certification-polici
 
 Certified Power BI visuals are visuals in the Marketplace that meet certain specified code [requirements](power-bi-custom-visuals-certified.md#certification-requirements) that the Microsoft Power BI team has tested and approved. To request certification, select the Request Power BI certification check box.
 We recommend that you submit and publish your Power BI visual before you request certification, because the certification process can take time. When you request certification, be sure to provide all required certification information in the Notes for certification box on the Review and publish page.
-All certified visuals must passes all the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
+All certified visuals must pass all the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Learn how to create a Power BI visual](develop-circle-card.md)
-
->[!div class="nextstepaction"]
->[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
-
->[!div class="nextstepaction"]
->[Test your Power BI visual before submitting for certification](submission-testing.md)  
-
->[!div class="nextstepaction"]
->[Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Learn how to create a Power BI visual](develop-circle-card.md)
+* [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
+* [Test your Power BI visual before submitting for certification](submission-testing.md)  
+* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
 **More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)

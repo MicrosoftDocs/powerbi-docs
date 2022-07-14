@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/16/2022
+ms.date: 07/14/2022
 ---
 
 # Custom visual license enforcement
@@ -43,6 +43,8 @@ If your report or dashboard contains a visual that isn't supported in your envir
 
   :::image type="content" source="media/custom-visual-licenses/unsupported-environment.png" alt-text="Screenshot showing notification of an unsupported environment.":::
 
+For a list of unsupported environments see [limitations](#considerations-and-limitations).
+
 ## Solution
 
 Click **Upgrade visual** to go to the AppSource page where you can buy the license or upgrade to the paid version.
@@ -56,6 +58,6 @@ Currently, the following Power BI environments don't support license management 
 * Embedded - Publish To Web, PaaS embed
 * National clouds (Depends on general support for transactability in national clouds)
 * RS Server (No planned support)
-* Exporting (PDF\PPT) using REST AP
+* Exporting (PDF\PPT) using REST API
 
 ## Next steps
