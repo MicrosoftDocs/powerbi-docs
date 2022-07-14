@@ -83,7 +83,7 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of 1 would mean the report has the most views of all reports in the organization.   |
 | Report usage | Report views per day | Total number of Report Views per day. Usage is counted at the report level and doesn't consider Report Page Views. |
-| Report usage | Report viewers per day | Total number of different users who viewed the report (based on the AAD user account). |
+| Report usage | Report viewers per day | Total number of different users who viewed the report (based on the Azure AD user account). |
 | Report usage | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
