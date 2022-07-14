@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
+ms.subservice: pbi-troubleshooting
 ms.date: 05/25/2022
 ms.custom: known-issue-187
 ---
@@ -13,7 +14,7 @@ ms.custom: known-issue-187
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Power BI Desktop
 
-**Status:** Open
+**Status:** Fixed: June 6, 2022
 
 **Problem area:** Create and Author Data
 
