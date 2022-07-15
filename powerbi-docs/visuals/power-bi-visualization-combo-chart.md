@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the two charts into one lets you make a quicker comparison of the data.
 
@@ -35,6 +35,8 @@ Combo charts are a great choice:
 
 ### Prerequisites
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open report**
@@ -44,6 +46,34 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+
+This tutorial uses the Retail Analysis sample.
+
+1. From the **Home** page, select **+ New Report**.
+
+1. Under **Add data to get started**, select **these options**.
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-try-these-options.png" alt-text="Screenshot of 'these options' link.":::
+
+1. Select **Discover content**, then select **Samples**.
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of 'Discover content' link to 'Samples'.":::
+
+1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-connect.png" alt-text="Screenshot of Retail Analysis Sample image and Connect button.":::
+
+1. Select the **Retail Analysis Sample** report, rather than the dataset. 
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
+
+1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
+
+1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-icon.png":::.
+
+---
 
 ## Create a basic single-axis combo chart
 
@@ -62,7 +92,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
    b.  Drag **Sales** \> **Gross Margin This Year** to the **Y-axis** well.
 
-   c. Select **Time** \> **FiscalMonth** to add it to the **x-axis** well.
+   c. Select **Time** \> **FiscalMonth** to add it to the **X-axis** well.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/combotutorial1new.png" alt-text="Combo tutorial example.":::
 
