@@ -25,7 +25,7 @@ Each DLP policy issue is shown on a card. The card shows the policy tip, indicat
 >[!WARNING]
 > Overriding a policy violation on a dataset means that:
 > * **Any restrictions imposed by the policy, such as blocking access user access, will not be applied to the data in this dataset**
-> * The dataset will no longer be evaluated by this policy in future content scans.
+> * The dataset will not be evaluated by this policy in future content scans.
 
 ![Screenshot of D L P policies sidepane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
 
