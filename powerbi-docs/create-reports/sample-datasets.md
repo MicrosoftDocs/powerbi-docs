@@ -25,7 +25,7 @@ Power BI offers different kinds of samples for different purposes, including bui
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model. You can explore the data model in the Power Pivot add-in for Excel or use the Excel workbook as a data source for a Power BI report.
 - A **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
 - An Excel workbook version of the **[AdventureWorks dimensional model](desktop-dimensional-model-report.md)**, in a tutorial to walk you through creating a Power BI report with the data.
-- If you'd rather work with data in **SQL Server databases**, the [SQL samples](/sql/samples/sql-samples-where-are) article features links to downloadable AdventureWorks and WorldWideImporters SQL Server databases in a GitHub repository. The article also has links to other Azure samples.
+- If you'd rather work with data in SQL databases, the **[SQL samples](/sql/samples/sql-samples-where-are)** article features links to downloadable AdventureWorks and WorldWideImporters SQL databases in a GitHub repository. The article also has links to other Azure samples.
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 
