@@ -13,7 +13,9 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. To preview your report, select **Run**. 
+While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. 
+
+To preview your report, select **Run**. 
 
 :::image type="content" source="media/report-builder-previewing/paginated-run-button-preview.png" alt-text="Screenshot showing the Run button in Report Builder.":::
 
