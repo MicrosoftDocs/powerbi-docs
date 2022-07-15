@@ -61,7 +61,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. Select **Discover content**, then select **Samples**.
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of 'Discover content' link to 'Samples'.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
 1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
 
@@ -69,7 +69,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. Select the **Retail Analysis Sample** report, rather than the dataset. 
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
@@ -103,13 +103,15 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-chart.png" alt-text="Screenshot of the visual sorted correctly.":::
 
-1. Convert the visual to a KPI by selecting the **KPI** icon from the **Visualization** pane.
-
 # [Power BI Desktop](#tab/powerbi-desktop)
+
+1. Convert the visual to a KPI by selecting the **KPI** icon from the **Visualization** pane.
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-desktop-kpi-template.png" alt-text="Screenshot of the Visualizations pane with the KPI icon called out.":::
 
 # [Power BI service](#tab/powerbi-service)
+
+1. Convert the visual to a KPI by selecting the **KPI** icon from the **Visualization** pane.
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-service-kpi-template.png" alt-text="Screenshot of the Visualizations pane with the KPI icon called out.":::
 

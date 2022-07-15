@@ -59,7 +59,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. Select **Discover content**, then select **Samples**.
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of 'Discover content' link to 'Samples'.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
 1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
 
@@ -67,7 +67,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. Select the **Retail Analysis Sample** report, rather than the dataset. 
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
@@ -114,7 +114,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
 In this task, we'll compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. Select the ellipsis to sort it by **FiscalMonth** and then **Sort ascending**.
+1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
   
    In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
