@@ -156,9 +156,14 @@
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md  
       - name: Protection metrics report
-        href: service-security-data-protection-metrics-report.md               
-    - name: DLP policies for Power BI (preview)
-      href: service-security-dlp-policies-for-power-bi.md
+        href: service-security-data-protection-metrics-report.md
+    - name: Data loss prevention
+      expanded: false
+      items:              
+      - name: DLP policies for Power BI (preview)
+        href: service-security-dlp-policies-for-power-bi.md
+      - name: Overriding DLP policies (preview)
+        href: service-security-dlp-policies-for-power-bi-override.md
     - name: Microsoft Defender for Cloud Apps with Power BI
       href: service-security-using-defender-for-cloud-apps-controls.md
   - name: Security
