@@ -17,7 +17,7 @@ LocalizationGroup: Samples
 
 Are you new to Power BI and you want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
-Power BI offers different kinds of samples, for different purposes, including built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL Server databases. Here's a collection of different samples: 
+Power BI offers different kinds of samples for different purposes, including built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL Server databases. Here's a collection of different samples: 
 - The **[Sales & Returns sample](#sales--returns-sample-pbix-file)** Power BI report (.pbix file). You can view it in the Data Stories Gallery, open and explore it in Power BI Desktop, or upload it to the Power BI service.
 - The **[Artificial Intelligence sample](sample-artificial-intelligence.md)** Power BI report. In the report, you explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Download a copy from the **Learn** page in the Power BI service navigation pane.
 - A **[sample template app](sample-sales-marketing-template-app.md)**. You download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
