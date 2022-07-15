@@ -1,5 +1,5 @@
 ---
-title: View and update your metrics in Power BI
+title: Stay on top of your metrics in Power BI
 description: In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,13 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/01/2022
+ms.date: 07/12/2022
 ---
-# View and update your metrics in Power BI
+
+# Stay on top of your metrics
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, and make notes on important events. These features are covered in this section. 
+Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events, and follow metrics. These features are covered in this article. 
 
 ## View metric details 
 
@@ -27,17 +28,25 @@ The metrics Details pane provides the entire history for the metric from the sta
     
 ## Filtering and keyword search 
 
-Scorecards can be filtered to metrics labeled as a particular status by clicking on the summary cards at the top of the scorecard, making it easy to see what is on track or at risk. 
+You can filter scorecards to metrics labeled as a particular status. Selecting the summary cards at the top of the scorecard makes it easy to see what is on track or at risk. 
 
-   :::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Screenshot of Metrics filtered to status at risk via summary card.":::
-    
-   :::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of Metrics filtered to status behind via summary card.":::
+This metric is _at risk_.
 
-There is also a keyword search that filters the scorecard down to metric with the keyword match.  Select the filter icon above the first metric, and type the keywords you're looking for.  The scorecard filters to show those results without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
+:::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Screenshot of Metrics filtered to status at risk via summary card.":::
 
-   :::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard.":::
-    
-   :::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for premium product sku.":::
+This metric is _behind_.
+
+:::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of Metrics filtered to status behind via summary card.":::
+
+There's also a keyword search that filters the scorecard down to metrics that match the keyword.  Select the **Filter** icon above the first metric and type the keywords you're looking for.  The scorecard filters to show those results, without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
+
+The scorecard before filtering.
+
+:::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard.":::
+
+The scorecard filtered to _Premium_.
+
+:::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for premium product SKU.":::
 
 ## Add or update manual values
 
@@ -57,7 +66,7 @@ There is also a keyword search that filters the scorecard down to metric with th
 
 1. Select **Save**. 
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to metric.":::
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to the metric.":::
 
 ## Add or update connected values 
 
@@ -111,10 +120,28 @@ You can automate status updates based on rules that govern that metric or submet
 ### More aspects of status rules
 
 - With automated status rules, you can create multiple conditions to ensure your rules represent your unique business needs. You can also drag the rules to reorder the priority.  
-- For the mobile experience, automatic refresh on status rules is not supported at this time. 
+- For the mobile experience, automatic refresh on status rules isn't supported at this time. 
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Screenshot of Adding a condition to a rule.":::
+    
+### Follow metrics
 
+Use the _Follow_ functionality to quickly access metrics you’re interested in and stay up to date on the activity on these metrics. You can follow metrics as you’re browsing through different scorecards and later access all your followed metrics in one place. This makes it easy to get a quick overview of the metrics you care about, without having to navigate to different scorecards often.
+
+To follow, hover over the metric in the scorecard to select the **Follow metric** icon.
+
+:::image type="content" source="media/service-goals-check-in/follow-metric.png" alt-text="Screenshot of following a metric.":::
+    
+To see all your followed metrics, go to the Metrics hub and select **Following**.
+    
+:::image type="content" source="media/service-goals-check-in/following-metrics.png" alt-text="Screenshot of followed metrics in Metrics hub.":::
+    
+Once you follow a metric, you'll get Teams notifications whenever the metric definition is updated, a check-in is added, or an automated status rule changes the status of the metric. Read more about [notifications in Teams](../collaborate-share/service-teams-notifications.md).
+
+To unfollow and stop getting Teams notifications, select the **Unfollow metric** icon while hovering over the metric.
+    
+:::image type="content" source="media/service-goals-check-in/unfollow-metric.png" alt-text="Screenshot of unfollowing a metric.":::
+    
 
 ## Next steps
 
