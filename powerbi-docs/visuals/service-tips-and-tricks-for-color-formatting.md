@@ -81,9 +81,9 @@ Set **Extreme** to orange.
 
 Once selected, the **Extreme** data point is a nice shade of orange, and certainly stands out.
 
-If you expect to add new columns to the chart, and want to maintain the same color scheme, be sure to set the **Default color** to grey.
+If you expect to add new columns to the chart, and want to maintain the same color scheme, be sure to set the **Default color** to blue.
 
-:::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-color.png" alt-text="Screenshot of the Colors card with default color set to grey.":::
+:::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-color.png" alt-text="Screenshot of the Colors card with default color set to blue.":::
 
 Even if you change visualization types, then return, Power BI remembers your selection and keeps **Extreme** orange.
 
