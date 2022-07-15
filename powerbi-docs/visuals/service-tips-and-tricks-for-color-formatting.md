@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 07/14/2022
-ms.custom: pbibetadocbug
+ms.custom: pbibetadocbug, sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for formatting in reports
@@ -122,11 +122,11 @@ In the **Default color** dialog box, use the dropdowns to identify the fields to
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png" alt-text="Screenshot of column chart with default colors applied.":::
 
-You can also format the color of the visual using a field that isn't part of the visual. In the following image, **%Market Share SPLY YTD** is being used. 
+You can also format the color of the visual using a field that isn't part of the visual. In the following image, **% Units Market Share SPLY** is being used. 
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png" alt-text="Screenshot of Column chart with multiple shades of blue.":::
 
-As you can see, although we've sold more units of both **Productivity** and **Extreme** (their columns are higher), **Moderation** has a larger **%Market Share SPLY YTD** (its column has more color saturation).
+As you can see, although we've sold more units of **Productivity**, **Convenience**, and **Extreme** (their columns are higher), **Moderation** has a larger **% Units Market Share SPLY** (its column has more color saturation).
 
 ### Customize the colors used in the color scale
 
