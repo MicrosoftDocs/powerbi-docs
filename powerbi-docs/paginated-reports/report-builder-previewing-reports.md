@@ -18,8 +18,10 @@ While you're creating a Report Builder paginated report, it's helpful to preview
 :::image type="content" source="media/report-builder-previewing/paginated-run-button-preview.png" alt-text="Screenshot showing the Run button in Report Builder.":::
 
 The report renders in preview mode.
- 
-Report Builder improves the preview experience by using edit sessions. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session isn't a feature that you interact with directly. But understanding when the cached dataset is refreshed helps you improve performance when you preview a report, and understand why the report renders faster or slower.  
+
+:::image type="content" source="media/report-builder-previewing/paginated-report-preview.png" alt-text="Screenshot showing preview of paginated report in Report Builder.":::
+
+Report Builder improves the preview experience by using _edit sessions_. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session isn't a feature that you interact with directly. But understanding when the cached dataset is refreshed helps you improve performance when you preview a report, and understand why the report renders faster or slower.  
 
 > [!NOTE]  
 > There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser.
