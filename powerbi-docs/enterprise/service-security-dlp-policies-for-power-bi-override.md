@@ -18,6 +18,8 @@ The data loss prevention side pane lists DLP policy issues detected by a content
 
 Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe that the data detected was falsely identified. The option or combination of options you see may vary depending on the policy configuration.
 
+![Screenshot of D L P policies sidepane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
+
 * **Report an issue**: Report the issue as a false positive. 
 * **Report and override**: Report the issue as a false positive and override the policy.
 * **Override**: Override the policy.
