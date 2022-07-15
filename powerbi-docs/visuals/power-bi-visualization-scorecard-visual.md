@@ -36,7 +36,7 @@ Integrating metrics and scorecards deeply into reporting solutions is a great wa
     
 1. Choose either **Add a single metric as a visual** to add a single metric or **Add multiple metrics as a list** to add a scorecard.
 
-  :::image type="content" source="media/power-bi-visualization-scorecard-visual/metrics-visual-options.png" alt-text="Screenshot showing options for the Metrics visual.":::
+    :::image type="content" source="media/power-bi-visualization-scorecard-visual/metrics-visual-options.png" alt-text="Screenshot showing options for the Metrics visual.":::
     
 1. Choose either **Create new** or **Browse metrics**. 
 
