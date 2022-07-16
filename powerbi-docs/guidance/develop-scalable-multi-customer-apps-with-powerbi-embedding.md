@@ -1,5 +1,5 @@
 ---
-title: "Develop scalable multi-customer apps with Power BI embedding"
+title: "Develop scalable multi-customer applications with Power BI embedding"
 description: "Learn how to embed Power BI content for multi-customer applications and achieve the highest levels of scalability, performance, and security."
 author: peter-myers
 ms.author: v-petermyers
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 07/16/2022
 ---
 
-# Develop scalable multi-customer apps with Power BI embedding
+# Develop scalable multi-customer applications with Power BI embedding
 
 This article describes how to develop a multi-customer application that embeds Power BI content while achieving the highest levels of scalability, performance, and security. By designing and implementing an application with *service principal profiles*, you can create and manage a multi-customer solution comprising tens of thousands of customer tenants that can deliver reports to audiences of over 100,000 users.
 
