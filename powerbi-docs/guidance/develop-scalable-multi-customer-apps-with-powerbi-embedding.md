@@ -312,7 +312,7 @@ Group workspace = pbiClient.Groups.CreateGroup(request);
 
 After you've used a specific service principal profile to create and configure a workspace, you should continue to use that same profile to create and set up the workspace content. There's no need to invoke the `SetCallingContext` method to complete the setup.
 
-## Getting started with a developer sample
+## Developer sample
 
 We encourage you to download a sample application named [**AppOwnsDataMultiTenant**](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant).
 
