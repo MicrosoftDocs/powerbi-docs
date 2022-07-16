@@ -27,7 +27,7 @@ Each DLP policy issue is shown on a card. The card shows the policy tip, indicat
     > * **Any restrictions imposed by thie policy on this dataset, such as blocking user access, will be removed**.
     > * This dataset will not be evaluated by this policy in future content scans.
 
-![Screenshot of D L P policies sidepane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
+![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
 
 ## Next steps
 
