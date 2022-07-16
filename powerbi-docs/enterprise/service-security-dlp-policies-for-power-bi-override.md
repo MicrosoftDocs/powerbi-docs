@@ -22,10 +22,10 @@ Each DLP policy issue is shown on a card. The card shows the policy tip, indicat
 * **Report and override**: Report the issue as a false positive and override the policy. Explicit justification is never required because the reason is assumed to be that it is a false positive. (what kind of audit log entry is created?)
 * **Override**: Override the policy. A justification may be required, depending on the policy configuration. The override is reported in the audit log as `DLPRuleUndo = override and "report and override"`.
 
->[!WARNING]
-> Overriding a policy violation on a dataset means that:
-> * **Any restrictions imposed by the policy, such as blocking access user access, will not be applied to the data in this dataset**
-> * The dataset will not be evaluated by this policy in future content scans.
+    >[!WARNING]
+    > Overriding a policy violation on a dataset means that:
+    > * **Any restrictions imposed by the policy, such as blocking access user access, will not be applied to the data in this dataset**
+    > * The dataset will not be evaluated by this policy in future content scans.
 
 ![Screenshot of D L P policies sidepane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
 
