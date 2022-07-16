@@ -21,14 +21,14 @@ This article describes how to develop a multi-customer application that embeds P
 
 You can achieve Power BI embedding by using two different embedding scenarios: *For your organization* and *For your customer*.
 
-The **For your organization** scenario applies when the app audience comprises *internal* users. Internal users have organizational accounts and must authenticate with Microsoft Azure Active Directory (Azure AD). In this scenario, Power BI is software-as-a-service (SaaS). It's sometimes referred to as *User owns data*.
+The **For your organization** scenario applies when the application audience comprises *internal* users. Internal users have organizational accounts and must authenticate with Microsoft Azure Active Directory (Azure AD). In this scenario, Power BI is software-as-a-service (SaaS). It's sometimes referred to as *User owns data*.
 
-The **For your customer** scenario applies when the app audience comprises *external* users. The app is responsible for authenticating users. To access Power BI content, the app relies on an embedding identity (Azure AD service principal or master user account) to authenticate with Azure AD. In this scenario, Power BI is platform-as-a-service (PaaS). It's sometimes referred to as *App owns data*.
+The **For your customer** scenario applies when the application audience comprises *external* users. The application is responsible for authenticating users. To access Power BI content, the application relies on an embedding identity (Azure AD service principal or master user account) to authenticate with Azure AD. In this scenario, Power BI is platform-as-a-service (PaaS). It's sometimes referred to as *App owns data*.
 
 > [!NOTE]
 > It's important to understand that the service principal profiles feature was designed for use in *For your customer* scenario embedding. That's because this scenario offers ISVs and enterprise organizations the ability to embed with greater scale to a large number of users and to a large number of customer tenants.
 
-## Multi-customer app development
+## Multi-customer application development
 
 If you're familiar with Azure AD, the word *tenant* might lead you think of an Azure AD tenant. However, the concept of a tenant is different in the context of building a multi-customer solution that embeds Power BI content. In this context, a *customer tenant* is created on behalf of each customer for which the application embeds Power BI content by using the *For your customer* scenario. You typically provision each customer tenant by creating a single Power BI workspace.
 
@@ -113,7 +113,7 @@ The **one service principal per workspace** design strategy involves creating a 
 
 In less common scenarios where a custom application has been granted proper permissions, it can use the [Microsoft Graph API](/graph/overview) to create Azure AD app registrations on demand. However, the custom application is often complex to develop and deploy because it must somehow track authentication credentials for each Azure AD app registration. It must also gain access to those credentials whenever it needs to authenticate and acquire access tokens for individual service principals.
 
-## Introduction to service principal profiles
+## Service principal profiles
 
 The service principal profiles feature was designed to make it easier for you to manage organizational content in Power BI and use your capacities more efficiently. They help address three specific challenges that involve the lowest amount of developer effort and overhead. These challenges include:
 
@@ -148,7 +148,7 @@ While service principal profiles aren't known to Azure AD, Power BI recognizes t
 
 ### Execute REST API calls as a service principal profile
 
-Your app can execute REST API calls by using the identity of a service principal profile. That means it can execute a sequence of REST API calls to provision and set up a new customer tenant.
+Your application can execute REST API calls by using the identity of a service principal profile. That means it can execute a sequence of REST API calls to provision and set up a new customer tenant.
 
 1. When a service principal profile creates a new workspace, Power BI automatically adds that profile as a workspace admin.
 1. When a service principal profile imports a Power BI Desktop file to create a dataset, Power BI sets that profile as the dataset owner.
@@ -172,7 +172,7 @@ It's important to understand that access to the workspace and its content must b
 > [!TIP]
 > Remember: When making REST API calls, use the service principal to create and manage service principal profiles, and use the service principal profile to create, set up, and access Power BI content.
 
-### Use the Profiles operations to create and manage service principal profiles
+### Use the Profiles REST API operations 
 
 The [**Profiles**](/rest/api/power-bi/profiles) REST API operation group comprises operations that create and manage service principal profiles:
 
@@ -316,7 +316,7 @@ After you've used a specific service principal profile to create and configure a
 
 We encourage you to download a sample application named [**AppOwnsDataMultiTenant**](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant).
 
-This sample application was developed by using .NET 6 and ASP.NET, and it demonstrates how to apply the guidance and recommendations described in this article. You can review the code to learn how to develop a multi-customer app that implements *For your customer* scenario embedding by using service principal profiles.
+This sample application was developed by using .NET 6 and ASP.NET, and it demonstrates how to apply the guidance and recommendations described in this article. You can review the code to learn how to develop a multi-customer application that implements *For your customer* scenario embedding by using service principal profiles.
 
 ## Next steps
 
