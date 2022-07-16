@@ -18,13 +18,13 @@ The data loss prevention side pane lists DLP policy issues detected by a content
 
 Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe that the data detected was falsely identified. The action or combination of actions you see may vary depending on the policy configuration.
 
-* **Report an issue**: Report the issue as a false positive (that is, that the policy has mistakenly identified non-sensitive data as sensitive). The issue will be reported in the audit log as `DLPInfo = report false positive`.
-* **Report and override**: Report the issue as a false positive and override the policy. (what kind of audit log entry is created?)
-* **Override**: Override the policy. Depending on the policy configuration, you may be required to provide a justification for overriding the policy. The override is reported in the audit log as `DLPRuleUndo = override and "report and override"`.
+* **Report an issue**: Report the issue as a false positive, that is, that the policy has mistakenly identified non-sensitive data as sensitive.
+* **Report and override**: Report the issue as a false positive and override the policy.
+* **Override**: Override the policy. Depending on the policy configuration, you may be required to provide a justification for overriding the policy.
 
     >[!WARNING]
     > Overriding a policy violation on a dataset means that:
-    > * **Any restrictions imposed by the policy on this dataset, such as blocking user access, will be removed**
+    > * **Any restrictions imposed by thie policy on this dataset, such as blocking user access, will be removed**.
     > * This dataset will not be evaluated by this policy in future content scans.
 
 ![Screenshot of D L P policies sidepane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
