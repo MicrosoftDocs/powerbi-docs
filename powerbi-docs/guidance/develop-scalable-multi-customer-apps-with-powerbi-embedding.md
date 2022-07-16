@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi-resource
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 07/16/2022
 ---
