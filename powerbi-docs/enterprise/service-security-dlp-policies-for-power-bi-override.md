@@ -14,18 +14,18 @@ LocalizationGroup: Data from files
 
 # Overriding data loss prevention policies (preview)
 
-The data loss prevention side pane lists DLP policy issues detected by a content scan of the dataset.
+The data loss prevention side pane lists all the DLP policy issues detected by a content scan of the dataset.
 
-Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe that the data detected was falsely identified. The action or combination of actions you see may vary depending on the policy configuration.
+Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe that the data detected was falsely identified. The action or combination of actions you see may vary depending on the policy configuration. The possible actions are described below.
 
-* **Report an issue**: Report the issue as a false positive, that is, that the policy has mistakenly identified non-sensitive data as sensitive.
+* **Report an issue**: Report the issue as a false positive (that is, report that the policy has mistakenly identified non-sensitive data as sensitive).
 * **Report and override**: Report the issue as a false positive and override the policy.
-* **Override**: Override the policy. Depending on the policy configuration, you may be required to provide a justification for overriding the policy.
+* **Override**: Override the policy. Depending on the policy configuration, you may be required to provide a justification.
 
-    >[!WARNING]
-    > Overriding a policy violation on a dataset means that:
-    > * **Any restrictions imposed by thie policy on this dataset, such as blocking user access, will be removed**.
-    > * This dataset will not be evaluated by this policy in future content scans.
+>[!WARNING]
+> Overriding a policy violation on a dataset means that:
+> * **Any restrictions imposed by the policy on this dataset, such as blocking user access, will be removed**.
+> * This dataset will not be evaluated by this policy in future content scans.
 
 ![Screenshot of D L P policies side pane](./media/service-security-dlp-policies-for-power-b-override/power-bi-dlp-override-pane.png)
 
