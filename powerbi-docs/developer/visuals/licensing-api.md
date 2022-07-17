@@ -12,9 +12,9 @@ ms.date: 07/17/2022
 
 # Licensing and transactability enforcement (Public preview)
 
-When you create Power BI visuals for download on AppSource, you can now manage and enforce their licenses using systems provided by Microsoft. With the [licensing API](#licensing-api) you can assign and unassign licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/). You can also enforce licenses to ensure that only licensed users can access your visuals.
+When you create Power BI visuals for download on AppSource, you can now manage and enforce their licenses using Microsoft systems. The [licensing API](#licensing-api) enables you to assign and unassign licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/). You can also enforce licenses to make sure that only licensed users can access your visuals.
 
-## Work flow for license enforcement
+## License enforcement process
 
 The following table illustrates the steps involved in managing your visual licenses through Microsoft:
 
@@ -25,12 +25,12 @@ The following table illustrates the steps involved in managing your visual licen
 | **Customers discover your offer in AppSource and purchase a subscription** | When customers purchase your offer in [AppSource](https://appsource.microsoft.com), they also get licenses for the Power BI Visual. |
 | **Customers manage their subscriptions and assign/unassign user license**s | Customers manage subscriptions and assign licenses for these Visuals and offers in the [Microsoft 365 admin center](https://admin.microsoft.com/), just like they do for any of their other subscriptions like Office or Power BI. |
 | **Enforce runtime checks** | Give your customers a uniform experience by using our out-of-the-box APIs to enforce runtime license checks. |
-| **[View reports](/azure/marketplace/summary-dashboard) to fuel growth** | Gain insight into revenue, payout information, and order and license details. View information about licenses and orders purchased, renewed, and cancelled over time and by geography. |
+| **[View reports](/azure/marketplace/summary-dashboard) to fuel growth** | Gain insight into revenue, payout information, and order and license details. View information about licenses and orders purchased, renewed, and canceled over time and by geography. |
 
 ## Licensing API
 
 The **Licensing API** allows Power BI visual developers to enforce Power BI visual licenses. The API supports retrieving the information on Power BI visual licenses that are assigned to the Power BI user. It also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user that they need to purchase the missing licenses.
-The visual should not display its own licensing UX, instead use one of Power BI supported predefined notifications as detailed below.  
+The visual shouldn't display its own licensing UX, instead use one of Power BI supported predefined notifications as detailed below.  
 [Learn more about Power BI Licensing and Transactability support](custom-visual-licenses.md).
 
 >[!NOTE]
@@ -40,7 +40,7 @@ The visual should not display its own licensing UX, instead use one of Power BI 
 
 To get service plans assigned, add a call to `getAvailableServicePlans` (available via `IVisualLicenseManager`).
 From performance perspective, attempt to fetch the licenses once, preferably in the `constructor` or the `init` calls, and save the result.  
-Once licenses are retrieved, they will be cached on Power BI host side during the Power BI session and any further calls to the same will return the cached data.
+Once licenses are retrieved, they'll be cached on Power BI host side during the Power BI session and any further calls to the same will return the cached data.
 
 ```typescript
 export interface IVisualLicenseManager {
@@ -59,18 +59,18 @@ export interface LicenseInfoResult {
     }
 ```
 
-* `plans` - an array of Service Plans purchased by the active user for *this* visual. (Licenses purchased for any other visuals are not included in the response.)  
+* `plans` - an array of Service Plans purchased by the active user for *this* visual. (Licenses purchased for any other visuals aren't included in the response.)  
   A ServicePlan contains the service identifier (spIdentifier) and its state (ServicePlanState).  
   
   * spIdentifier: the string value of the Service ID generated when you configure your offer’s plans in Partner Center (see the following example)
-      :::image type="content" source="media/licensing-api/service-id-example.png" alt-text="Screenshot showing an example of a Service I D string.":::
+      :::image type="content" source="media/licensing-api/service-id-example.png" alt-text="Screenshot showing an example of a Service ID string.":::
 
   * state – enum (ServicePlanState) that represents the state of the plans assigned.  
      Supported service plan states:
 
      | State | Description |
      | - | - |
-     | Inactive | Indicates that the license is not active and shouldn't be used for provisioning benefits. |
+     | Inactive | Indicates that the license isn't active and shouldn't be used for provisioning benefits. |
      | Active | Indicates that the license is active and can be used for provisioning benefits. |
      | Warning | Indicates that the license is in grace period likely due to payment violation. |
      | Suspended | Indicates that the license is suspended likely due to payment violation. |
@@ -86,7 +86,7 @@ Currently, the following Power BI environments don't support license management 
   * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file)
 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.
-Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or is not connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
+Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or isn't connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
 Example of calling `getAvailableServicePlans` (using the service ID from the image above):  
 
@@ -132,7 +132,7 @@ export interface IVisualLicenseManager {
 #### General icon indicating a required license is missing
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to display an icon as part of the visual's container.  
-Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
+Once triggered, the icon will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
 > [!NOTE]
 > The `LicenseNotificationType.General` notification is only enforced when both applies: supported for licensing environment and Power BI Edit scenarios. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will not apply the icon and will return `false` in the call's response.
@@ -157,7 +157,7 @@ Example of the visual display containing the *visual blocked* notification. Powe
 ### Overlay the visual's display with an *unsupported environment* notification
 
 Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` to overlay the visual's display with a notification that visual is blocked since the Power BI in use doesn't support licenses management\enforcement.  
-Once triggered, the icon will be preserved throughout the visual's lifetime until until `clearLicenseNotification` or `notifyLicenseRequired` are called..
+Once triggered, the icon will be preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
 > [!NOTE]
 > The `LicenseNotificationType.UnsupportedEnv` notification is only enforced when called in context of unsupported for licensing environment. Calling this in any other environment will not apply the notification and will return `false` in the call's response.
@@ -169,7 +169,7 @@ Example of the visual display containing the "Unsupported Environment" notificat
 
 #### Display a banner notifying that a specific visual's functionality couldn't be applied
 
-When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop-up a banner as part of the visual's container. The banner also supports a custom tooltip that can be set by you and used to provide additional information on the feature that triggered the notification.
+When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that will pop up a banner as part of the visual's container. The banner also supports a custom tooltip that can be set by you and used to provide additional information on the feature that triggered the notification.
 
 > [!NOTE]
 > The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response.
@@ -177,9 +177,9 @@ When applying a specific visual's functionality requires licenses that were foun
 > [!NOTE]
 > To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
 
-Once triggered, the banner will be displayed for 10 seconds
+Once triggered, the banner will be displayed for 10 seconds,
 or
-until other "feature blocked" banner is triggered
+until other "feature blocked" banner is triggered,
 or
 until `clearLicenseNotification` is called (whatever comes first).
 
