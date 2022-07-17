@@ -160,12 +160,12 @@ We recommend that you execute REST API calls as the parent service principal whe
 
 Consider an example where you need to set up a customer tenant for a customer named *Contoso*. The first step makes a REST API call to create a service principal profile with its display name set to *Contoso*. This call is made by using the identity of the service principal. All remaining set up steps use the service principal profile to complete the following tasks:
 
-1. Create a workspace
-1. Associate the workspace with a capacity
-1. Import a Power BI Desktop file
-1. Set dataset parameters
-1. Set data source credentials
-1. Set up scheduled data refresh
+1. Create a workspace.
+1. Associate the workspace with a capacity.
+1. Import a Power BI Desktop file.
+1. Set dataset parameters.
+1. Set data source credentials.
+1. Set up scheduled data refresh.
 
 It's important to understand that access to the workspace and its content must be done by using the identity of the service principal profile that was used to create the customer tenant. It's also important to understand that the parent service principal doesn't need access to the workspace or its content.
 
