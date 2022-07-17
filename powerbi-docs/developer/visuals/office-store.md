@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/11/2022
+ms.date: 07/17/2022
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -65,50 +65,7 @@ Before you create the **.pbiviz** package, complete the following fields in the 
 > [!IMPORTANT]
 > Before you submit your visual, make sure it passes all the [requirements](submission-testing.md). A visual that doesn't pass the requirements will be rejected.
 
-<<<<<<< HEAD
-Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see the [Azure Marketplace listing guidelines](/azure/marketplace/marketplace-criteria-content-validation).
-
-1. Log into **Partner Center**.
-
-2. On the left pane, select **Commercial Marketplace**.
-
-3. Select **Overview**.
-
-4. Select **New Offer** and from the drop-down menu, select **Power BI visual**.
-
-    ![Screenshot of creating a new Power B I visual in the office store tab in Partner Center.](media/office-store/power-bi-visual.png)
-
-5. In the **Create a new Power BI visual** window, enter an *offer ID* and *offer alias* for your Power BI visual and select **Create**.
-
-    :::image type="content" source="media/office-store/offer-id-visual.png" alt-text="Screenshot of pop up window for Power B I visual name.":::
-    >[!NOTE]
-    >If you're creating an offer for testing purposes, add the text *-ISVPILOT* to the end of your offer alias. This will indicate to the App Source Certification team that the offer is for testing purposes and should be approved faster. Microsoft will delete offers with *-ISVPILOT* periodically so please don't use this tag for reasons other than testing transactability and license management capability.  
-
-6. In **Offer setup**, check the appropriate boxes. If your product may require additional purchase, if you want Microsoft to manage the license, or if you want to [certify](power-bi-custom-visuals-certified.md) your visual, this is the place to say so.
-
-    :::image type="content" source="media/office-store/setup-details.png" alt-text="Screenshot of setup details.":::
-
-   Provide details for [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).
-    >[!TIP]
-    >The Power BI certification process takes time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
-
-    Select **Save draft**.
-
-7. In **Properties**, check the relevant categories and industries, supply links for your EULA, privacy policy, and support documents.
-
-    Select **Save draft**.
-
-8. In **Offer listing**, select the languages you want the offer to be available in, and provide all the [marketplace details](/azure/marketplace/gtm-offer-listing-best-practices#online-store-offer-details) and media information in each language. When you select a name for the offer, you can also select *Reserve more names* to reserve other names for future use. For tips on making your offer listing as effective as possible, see [best practices for marketplace offer listings](/azure/marketplace/gtm-offer-listing-best-practices).
-    Select **Save draft**.
-
-9. In **Markets**, select the markets where you want the offer to be available.
-    Select **Save draft**.
-
-10. In **Technical configuration**, upload your Power BI visual **PBIVIZ** file and the **PBIX** file.
-    Select **Review and Publish** to publish your offer.
-=======
 When you're ready to create or update your offer, follow the instructions in [Create a Power BI app offer](/azure/marketplace/marketplace-power-bi-visual).
->>>>>>> 932f01b6d3593105453d3c50b8d7e6bf65f57177
 
 ## Track submission status and usage
 
