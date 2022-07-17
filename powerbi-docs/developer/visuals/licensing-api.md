@@ -194,6 +194,6 @@ Example of the visual display containing the "feature blocked" banner notificati
 
 ## Next steps
 
-[Publish a Power BI custom visual](../visuals/office-store.md)
+[Publish a Power BI custom visual](office-store.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
