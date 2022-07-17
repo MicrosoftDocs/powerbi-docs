@@ -19,8 +19,10 @@ The data loss prevention side pane lists all the DLP policy issues detected by a
 Each DLP policy issue is shown on a card. The card shows the policy tip, indicates what kind of sensitive data was detected, and offers actions you can take if you believe that the data detected was falsely identified. The action or combination of actions you see may vary depending on the policy configuration. The possible actions are described below.
 
 * **Report an issue**: Report the issue as a false positive (that is, report that the policy has mistakenly identified non-sensitive data as sensitive).
+* **Override**: Override the policy. Overriding a policy means that the policy will no longer check this dataset for sensitive data, and any restrictions already imposed on the dataset by this policy will be rolled back. Depending on the policy's configuration, you may be required to provide a justification for the override.
 * **Report and override**: Report the issue as a false positive and override the policy.
-* **Override**: Override the policy. Depending on the policy configuration, you may be required to provide a justification.
+
+any of these actions will be audited or logged by the Security Admin
 
 >[!WARNING]
 > Overriding a policy violation on a dataset means that:
