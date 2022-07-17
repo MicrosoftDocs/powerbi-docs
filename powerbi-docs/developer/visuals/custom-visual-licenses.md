@@ -62,4 +62,4 @@ Currently, the following Power BI environments don't support license management 
 
 ## Next steps
 
-[Import a visual](import-visual.md)
+[Import a Power BI visual](import-visual.md)
