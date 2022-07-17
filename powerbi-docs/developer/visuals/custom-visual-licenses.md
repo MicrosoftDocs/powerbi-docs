@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/14/2022
+ms.date: 07/17/2022
 ---
 
 # Custom visual license enforcement
@@ -61,3 +61,5 @@ Currently, the following Power BI environments don't support license management 
 * Exporting (PDF\PPT) using REST API
 
 ## Next steps
+
+[Import a visual](import-visual.md)
