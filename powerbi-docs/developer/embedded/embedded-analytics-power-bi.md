@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 07/12/2022
+ms.date: 07/14/2022
 ms.custom: intro-overview
 ---
 
@@ -55,18 +55,19 @@ The following table provides a comparison between the two Power BI embedded anal
 
 ## What are Power BI capacities?
 
-A capacity is a set of resources s reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.  
+A capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.  
 For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
 
 > [!IMPORTANT]
 > Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
-There are two types of Power BI embedded analytics offerings, each requiring a different [capacity](./embedded-capacity.md):
 
-* [*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
+There are two types of Power BI embedded analytics offerings. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
 
-* [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that requires P or EM SKUs.
+* [*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
-For more information about the differences between the Embedded and Premium SKUs see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
+* [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that includes P or EM SKUs.
+
+For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
 ## Next steps
 
