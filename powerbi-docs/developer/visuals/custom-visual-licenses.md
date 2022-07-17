@@ -33,7 +33,7 @@ If you try to render an unlicensed visual or a visual that you only have a parti
 
   :::image type="content" source="media/custom-visual-licenses/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the license.":::
 
-* If you have an unlicensed visual in your report, the visual won't render and a button will appear enabling you to get a license or contact the report owner.
+* If you have an unlicensed visual in your report, the visual won't render, and a button will appear enabling you to get a license or contact the report owner.
 
   :::image type="content" source="media/custom-visual-licenses/get-a-license.png" alt-text="Screenshot showing a button for getting a license or contacting owner.":::
 
@@ -47,9 +47,9 @@ For a list of unsupported environments see [limitations](#considerations-and-lim
 
 ## Solution
 
-Click **Upgrade visual** to go to the AppSource page where you can buy the license or upgrade to the paid version.
+Select **Upgrade visual** to go to the AppSource page where you can buy the license or upgrade to the paid version.
 
-After you purchase and assign the license, it can take up to an hour for the license to be recognized. Wait one hour and then refresh the your Power BI session (restart Desktop or refresh your web browser).
+After you purchase and assign the license, it can take up to an hour for the license to be recognized. Wait one hour and then refresh your Power BI session (restart Desktop or refresh your web browser).
 
 ## Considerations and limitations
 

@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 05/31/2022
+ms.date: 07/17/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -49,7 +49,7 @@ Downloading visuals from AppSource is free, but each publisher defines their own
 
 * Free visuals that you can download and use with additional costs. These visuals are labeled as *Free*.
 * Visuals that you can download and get basic functionality for free, but you can pay for additional features. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it. Transactability and license management for these visuals happen outside of Microsoft platforms.
-* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in AppSource.com by clicking on the *Buy now* button. Licenses are managed from the Microsoft 365 Admin center.
+* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in AppSource.com by clicking on the *Buy now* button. Licenses are managed from the  Microsoft 365 admin center.
 
 Once you select the visual, select the **Plans + Pricing** tab to see the plan for that visual. Pricing information is also shown on the left pane.
 
@@ -57,11 +57,10 @@ Once you select the visual, select the **Plans + Pricing** tab to see the plan f
 
 Select **Add** to download the visual. If a free trial period is offered, it will start when you download the visual.
 
-After you *purchase* the licenses for the visual in AppSource with a credit card, you need to *assign* them to yourself or others in the [M365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
+After you *purchase* the licenses for the visual in AppSource with a credit card, you need to *assign* them to yourself or others in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 :::image type="content" source="media/power-bi-custom-visuals/assign-license.png" alt-text="Screenshot showing a link to the Admin center after purchasing a visual.":::
 
-For more information on how to assign licenses go to [XXX].
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
 ### Certified Power BI visuals
@@ -103,7 +102,7 @@ If you're a web developer and want to create your own visual and add it to AppSo
 
 ## Considerations and limitations
 
-Licensed visuals aren't supported in the following environments. This means that Power BI can't tell the ISV if the user is licensed, nor will it block the visual.
+Licensed visuals aren't supported in the following environments. Therefore, if licensed visuals are used in these environments, Power BI can't tell the ISV if the user is licensed, nor will it block the visual.
 
 * RS (report server) - no Azure AD
 * Sovereign or government clouds
@@ -112,17 +111,8 @@ Licensed visuals aren't supported in the following environments. This means that
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Develop a Power BI circle card visual](develop-circle-card.md)
-
->[!div class="nextstepaction"]
->[Power BI visuals project structure](visual-project-structure.md)
-
->[!div class="nextstepaction"]
->[Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
-
->[!div class="nextstepaction"]
->[Frequently asked questions](power-bi-custom-visuals-faq.yml)
-
->[!div class="nextstepaction"]
->[Power BI Community](https://community.powerbi.com/)
+* [Develop a Power BI circle card visual](develop-circle-card.md)
+* [Power BI visuals project structure](visual-project-structure.md)
+* [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
+* [Frequently asked questions](power-bi-custom-visuals-faq.yml)
+* [Power BI Community](https://community.powerbi.com/)
