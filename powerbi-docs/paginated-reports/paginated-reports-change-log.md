@@ -28,7 +28,7 @@ Version 15.7.1798.91, released July 18, 2022
 - Fixed issue related to 407 proxy authentication.
 - Fixed issue related to parameter formulas when validating query.
 - Fixed issue where Report Builder would close saving a report.
-- Fixed issue where a there is a extra border around Report Builder in some versions of Windows.
+- Fixed issue where there is an extra border around Report Builder in some versions of Windows.
 
 ## April 2022
 
@@ -84,7 +84,7 @@ Version 15.7.01678.0001, released August 6, 2021
 
 ### Features
 
-- Moved to 64 bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Moved to 64-bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
 - Enhanced support for DAX DateTime parameters.
 
 ## June 2021 
