@@ -46,7 +46,7 @@ You can control the number of simultaneous evaluations and thereby influence the
 The minimum value is 1 and the maximum value is equivalent to the number of logical CPU cores on the machine.
 
 > [!NOTE]
-> This setting also impacts the [maximum number of concurrent jobs](#maximum-number-of-concurrent-jobs) executed by the Power BI engine. [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
+> This setting also impacts the [maximum number of concurrent jobs](#maximum-number-of-concurrent-jobs) executed by the Power BI engine. [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-concurrent-jobs). 
 
 ### Maximum memory used per simultaneous evaluation
 
@@ -110,7 +110,7 @@ You can control the maximum number of concurrent jobs executed by the Power BI e
 The minimum value for this setting is 1, which would effectively disable parallel loading of tables. The default value for this setting is 6.
 
 > [!NOTE]
-> This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-parallel-jobs). 
+> This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-concurrent-jobs). 
 
 ### Changing maximum number of concurrent jobs settings in Power BI Desktop
 
