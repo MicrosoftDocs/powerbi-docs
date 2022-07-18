@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 06/15/2022
+ms.date: 07/14/2022
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
@@ -28,6 +28,9 @@ Using our [AdventureWorks Sales sample Excel workbook](https://github.com/micros
 :::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Screenshot of Finished AdventureWorks report.":::
 
 Want to see the finished product? You can also download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
+
+>[!NOTE]
+>If you'd rather work with data in SQL databases, the **[AdventureWorks sample databases](/sql/samples/adventureworks-install-configure)** article features links to downloadable AdventureWorks SQL sample databases in a GitHub repository. If you do go with a SQL database, you'll have to modify various steps in this tutorial.
 
 Let’s get started! 
 
