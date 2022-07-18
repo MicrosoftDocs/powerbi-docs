@@ -50,7 +50,8 @@ To configure the embed token, you'll need to know the following information:
 ## Object level security
 
 Object-level security (OLS) enables model authors to secure specific tables or columns from report viewers. From a viewer standpoint, the table or column simply does not exist. Like RLS, OLS is also defined within model roles.  With object-level security, you can not only restrict access to data, but also sensitive object names. This prevents users from discovering sensitive information like employee or financial records.
-To learn more about OLS see [Object-level security](/analysis-services/tabular-models/object-level-security)
+To learn more about OLS see [Object-level security](/analysis-services/tabular-models/object-level-security).
+The process of generating embed tokens for items that use OLS is the [same as for RLS](./generate-embed-token.md).
 
 ## Considerations and limitations
 
