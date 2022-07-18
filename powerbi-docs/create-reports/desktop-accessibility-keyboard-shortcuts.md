@@ -113,7 +113,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Jump to the end of a line of code | **Ctrl + End** |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
-| Select current line | **Ctrl + I** |
+| Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
 | Select next occurrences of current selection | **Ctrl + D** |
