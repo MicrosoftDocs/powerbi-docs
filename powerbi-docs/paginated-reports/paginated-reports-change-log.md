@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/18/2021
+ms.date: 07/18/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,18 @@ ms.date: 04/18/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## July 2022
+	
+Version 15.7.1798.91, released July 18, 2022
+	
+### Bug fixes 
+	
+- Fixed several localization issues with strings only displaying in English.
+- Fixed issue related to 407 proxy authentication.
+- Fixed issue related to parameter formulas when validating query.
+- Fixed issue where Report Builder would close saving a report.
+- Fixed issue where a there is a extra border around Report Builder in some versions of Windows.
 
 ## April 2022
 
