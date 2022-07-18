@@ -249,19 +249,19 @@ Notice that filters flow from top to bottom, from the **Source** table to the **
   - The **Path 1 Table 1** table is related to the **Path 1 Table K** table by a one-to-many relationship.
   - The **Path 1 Table K** table is related to the **Path 1 Table N** table by a one-to-many relationship.
   - The **Path 1 Table N** table is related to the **Target** table by a one-to-many relationship.
-  - To summarize, each relationship along the path from the **Source** table to the **Target** table is a one-to-many relationship.
+  - To emphasize what’s important, each relationship along the path from the **Source** table to the **Target** table is a one-to-many relationship.
 - Path 2
   - The **Source** table is related to the **Path 2 Table 1** table by a one-to-many relationship.
   - The **Path 2 Table 1** table is related to the **Path 2 Table K** table by a one-to-many relationship.
   - The **Path 2 Table K** table is related to the **Path 2 Table N** table by a many-to-one relationship that filters in both directions.
   - The **Path 2 Table N** table is related to the **Target** table by a many-to-one relationship that filters in both directions.
-  - To summarize, the first two relationships along the path from the **Source** table to the **Target** table are one-to-many relationships. The remaining two relationships are many-to-one relationships that filter in both directions.
+  - To emphasize what’s important, the last two relationships along the path from the **Source** table to the **Target** table are many-to-one relationships that filter in both directions.
 - Path 3
   - The **Source** table is related to the **Path 3 Table 1** table by a one-to-many relationship.
   - The **Path 3 Table 1** table is related to the **Path 3 Table K** table by a many-to-many relationship that filters in one direction only, from the **Path 3 Table 1** table to the Path 3 Table K table.
   - The **Path 3 Table K** table is related to the **Path 3 Table N** table by a many-to-one relationship that filters in both directions.
   - The **Path 3 Table N** table is related to the **Target** table by a one-to-many relationship.
-  - To summarize, the first relationship along the path from the **Source** table to **Target** table is a one-to-many relationship. The second relationship is a many-to-many relationship that propagates filters onwards. The third relationship is a many-to-one relationship that filter in both directions. The fourth relationship is a one-to-many relationship.
+  - To emphasize what’s important, the second relationship along the path from the **Source** table to the **Target** table is a many-to-many relationship and the third relationship along the path is a many-to-one relationship that filter in both directions.
   
 In terms of precedence, Path 1 will be given the highest priority, followed by Path 2, and finally Path 3.
 
