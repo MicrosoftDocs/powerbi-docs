@@ -107,7 +107,7 @@ For more information on this setting, see [Maximum number of connections option 
 
 You can control the maximum number of concurrent jobs executed by the Power BI engine. This setting allows you to optimize Power BI performance after the Data Transformation step has been completed.
 
-The minimum value for this setting is 1, which would effectively disable parallel loading of tables. The default value for this setting is 6.
+The minimum value for this setting is 1, which would effectively disable parallel loading of tables. The default value for this setting is automatically determined.
 
 > [!NOTE]
 > This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-concurrent-jobs). 
