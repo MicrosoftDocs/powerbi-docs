@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/04/2022
+ms.date: 07/19/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to set up the Data in space feature in my organization.
 ---
