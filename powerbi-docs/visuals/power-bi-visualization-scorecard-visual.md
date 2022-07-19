@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 07/18/2022
 LocalizationGroup: Visualizations
 ---
-# Create a Metrics visual in Power BI (Preview)
+# Create a metrics visual in Power BI (Preview)
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
