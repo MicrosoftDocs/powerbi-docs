@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 10/15/2021
-ms.custom: pbibetadocbug
+ms.custom: 
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for formatting in reports
