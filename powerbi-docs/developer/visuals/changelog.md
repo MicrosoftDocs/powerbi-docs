@@ -24,7 +24,7 @@ This page contains a quick summary of the API versions. Versions listed here are
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
-* New API to allow [downloading visual to file](./file-download-api.md)
+* [Download API](./file-download-api.md) to allow downloading visual to file
 * Supports Desktop June 2021
 
 ## API v4.2.0
