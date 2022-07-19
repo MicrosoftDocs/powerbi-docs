@@ -17,7 +17,7 @@ The **Drilldown API** allows you to create a visual that can trigger a drill ope
 The API enables the visual to show next level, expand to next level, or drill up based on the parameters passed to the API. For more details and examples see the article [Drill down support](drill-down-support.md)
 
 > [!NOTE]
-> The **drilldown API** is available from API version 4.7
+> The **Drilldown API** is available from API version 4.7
 
 ## How to use the drilldown API
 
