@@ -128,6 +128,8 @@
       href: local-storage.md
     - name: "'Rendering' events API" 
       href: event-service.md
+    - name: Drilldown API
+      href: drilldown-api.md
     - name: "File download API"
       href: file-download-api.md
     - name: "Permissions API"
