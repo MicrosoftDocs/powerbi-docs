@@ -22,4 +22,5 @@ These settings are configured in the tenant settings section of the Admin portal
 
 ## Next steps
 
+
 * [About tenant settings](service-admin-portal-about-tenant-settings.md)
