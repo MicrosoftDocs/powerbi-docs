@@ -59,6 +59,8 @@ Select **Add** to download the visual. If a free trial period is offered, it wil
 
 After you *purchase* the licenses for the visual in AppSource with a credit card, you need to *assign* them to yourself or others in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
+For more information on how to assign licenses see [Licensing and transactability enforcement](licensing-api.md).
+
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
 ### Certified Power BI visuals
