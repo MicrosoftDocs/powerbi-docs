@@ -24,29 +24,6 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a funnel plot from R script to R visual"
       href: funnel-plot-from-r.md
-<<<<<<< HEAD
-=======
-  - name: Concepts
-    items:
-    - name: "Power BI visuals project structure"
-      href: visual-project-structure.md
-    - name: "Power BI visuals system integration"
-      href: power-bi-visuals-concept.md
-    - name: "Visuals for organizations in Power BI"
-      href: power-bi-custom-visuals-organization.md
-    - name: "Performance tips"
-      href: performance-tips.md
-    - name: "Defining capabilities"
-      href: capabilities.md
-    - name: "Data view mappings"
-      href: dataview-mappings.md
-    - name: "Objects and properties"
-      href: objects-properties.md
-    - name: "Advanced edit mode"
-      href: advanced-edit-mode.md
-    - name: License enforcement for Power BI AppSource visuals
-      href: custom-visual-licenses.md
->>>>>>> 2de28a20f7151974202bfd5ec41856d7ba808dde
   - name: Import Power BI custom visuals
     items: 
     - name: "Import a custom visual"
@@ -135,6 +112,12 @@
       href: advanced-edit-mode.md
     - name: "Troubleshoot  environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
+  - name: Licensing
+    items:
+    - name: "License enforcement API"
+      href: licensing-api.md
+    - name: License enforcement for Power BI AppSource visuals
+      href: custom-visual-licenses.md
   - name: Reference
     items: 
     - name: "Changelog"
@@ -153,8 +136,6 @@
       href: file-download-api.md
     - name: "Permissions API"
       href: permissions-api.md
-    - name: "Licensing API"
-      href: licensing-api.md
     - name: "Sorting"
       href: sort-options.md
     - name: "Localization"
