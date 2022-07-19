@@ -1,5 +1,5 @@
 ---
-title: Metrics visual tutorial
+title: Create a metrics visual in a Power BI report
 description: 'Create a scorecard visual and add it to a report in Power BI'
 author: aphilip94
 ms.author: anphil
@@ -7,10 +7,10 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/18/2022
+ms.date: 07/19/2022
 LocalizationGroup: Visualizations
 ---
-# Create a metrics visual in Power BI (Preview)
+# Create a metrics visual in a Power BI report (Preview)
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
