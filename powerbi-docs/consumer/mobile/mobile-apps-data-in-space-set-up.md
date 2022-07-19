@@ -72,6 +72,8 @@ After the Azure Spatial Anchors resource has been created, you need to assign us
 
 * Users who are assigned to the **Spatial Anchors Account Reader** role will be allowed to scan/search for anchors created by others, and will be given the **Data in Space Reader** role in the mobile app.
 
+![Screenshot of Azure Spatial Anchors roles in Azure portal.](./media/mobile-apps-data-in-space-set-up/power-bi-mobile-app-data-in-space-spatial-anchors-roles.png)
+
 >[!NOTE]
 > Only role-assignable groups can be assigned to Spatial Anchors Account roles. For more information about role-assignable groups, see [Create a role-assignable group in Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 
