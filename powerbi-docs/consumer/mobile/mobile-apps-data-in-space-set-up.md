@@ -43,11 +43,11 @@ In the Azure portal, create an Azure Spatial Anchor resource for Power BI. See [
 
 When configuring the resource:
 
-* Be sure that the Power BI admin who is going to connect Power BI to the Azure Spatial Anchors resource in the Power BI admin portal is assigned the **Owner** role in the Azure Spatial Anchors resource.
+* Be sure to assign the **Owner** role to the Power BI admin who, in [step 2](#connect-power-bi-to-the-azure-spatial-anchors-resource), is going to connect Power BI to the Azure Spatial Anchors resource you're creating.
 
     ![Screenshot of the Owner role in the Azure Spatial Anchors resource.](./media/mobile-apps-data-in-space-set-up/power-bi-mobile-app-data-in-space-resource-owner-role.png)
 
-* Be sure that the person who is going to assign users to the Spatial Anchors Account roles in step 3 has a role in the Azure Spatial Anchors resource that gives them `Microsoft.Authorization/roleAssignments/write` permissions, such as **User Access Administrator** or **Owner**. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current).
+* Be sure that the person who is going to assign users roles in [step 3](#assign-users-to-spatial-anchors-account-roles-in-the-azure-spatial-anchors-resource) has a role in the Azure Spatial Anchors resource that gives them `Microsoft.Authorization/roleAssignments/write` permissions, such as **User Access Administrator** or **Owner**. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current).
 
 ## Connect Power BI to the Azure Spatial Anchors resource
 
