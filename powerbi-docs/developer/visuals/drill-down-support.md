@@ -8,12 +8,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 06/18/2022
 ---
 
 # Add drill-down support
 
-Power BI visuals can use the Power BI drill-down feature.
+When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal additional details.
 
 Read more about the Power BI drill-down feature [here](./../../consumer/end-user-drill.md)
 
