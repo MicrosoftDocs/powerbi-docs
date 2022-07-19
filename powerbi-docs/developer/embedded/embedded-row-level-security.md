@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 04/07/2022
 ---
 
-# What is row level security (RLS)
+# Row-level security with Power BI Embedded
 
 **Row-Level Security (RLS)** enables you to control access to rows in a database table through group memberships. You can restrict user access to data within dashboards, tiles, reports, and datasets. With RLS, different users can work with the same items all while seeing different data.
 
 If you're embedding for other Power BI users (*user owns data*), within your organization (for example, to restrict access to data based on an employee's business division or role in the company), RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your application. For information on setting up a data model that supports RLS see [RLS guidance in Power BI Desktop](/guidance/rls-guidance). For more information, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
 
-If you're embedding for non-Power BI users (*app owns data*), which is typically an [ISV](pbi-glossary.md#independent-software-vendor-isv) scenario, then this article is for you!
+If you're embedding for non-Power BI users (*app owns data*), which is typically an [ISV](pbi-glossary.md#independent-software-vendor-isv) scenario, then this article is for you! Since your users aren't Power BI users and don't have permission to access the data, you need to generate an [embed token](./generate-embed-token.md) with an effective identity that can be used to access data. Depending how your data is set up, you might need to take some other steps as well. 
 
 ## Who should use RLS
 
