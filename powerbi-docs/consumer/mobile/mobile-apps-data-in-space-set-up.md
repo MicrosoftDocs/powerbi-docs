@@ -27,7 +27,7 @@ Setting up Data in space for your organization involves three steps:
 
 1. [Creating an Azure Spatial Anchors resource](#create-an-azure-spatial-anchors-resource).
 1. [Connecting Power BI to the Azure Spatial Anchors resource](#connect-power-bi-to-the-azure-spatial-anchors-resource).
-1. [Assigning users to Spatial Anchors Account roles in the Azure Spatial Anchors resource so that they get the correct roles in the Power BI mobile apps](#assign-users-to-spatial-anchors-account-roles-in-the-azure-spatial-anchors-resource).
+1. [Assigning users in the organization to roles so that they can use the Data in space feature](#assign-users-to-spatial-anchors-account-roles-in-the-azure-spatial-anchors-resource).
 
 Step 1 must be performed first. Steps 2 and 3 can be performed in any order.
 
