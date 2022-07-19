@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/10/2022
+ms.date: 06/28/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -194,6 +194,24 @@ You might run into a situation where tags aren't working in the usage details or
     ```= "{"& [Tags] & "}"
 6. Completing the previous steps creates a new column of *tags* in the json format
 7. You can now transfer and expand the column as you need to.
+
+
+**Authentication issues encountered with Azure Active Directory guest accounts:** You may have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following: 
+
+* *Access to the resource is forbidden* 
+* *We couldn’t authenticate with the credentials provided. Please try again.*
+
+These errors could be the result of having a user account in a different Azure Active Directory domain that has been added as a guest user. 
+
+For guest accounts: Use the following settings or options as you are prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
+
+1.	Select **Sign-in**
+2.	Select the **Use another account** (bottom of the dialog)
+3.	Select **Sign-in options** (bottom of the dialog box)
+4.	Select **Sign into an organization**
+5.	For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Azure Active Directory domain into which you've been added as a guest.
+6.	Then, for **Pick an account** select the user account that you’ve previously authenticated.  
+
 
 
 ## Next steps

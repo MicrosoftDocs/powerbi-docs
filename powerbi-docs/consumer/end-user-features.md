@@ -7,7 +7,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 05/01/2022
+ms.date: 06/28/2022
 ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a Power BI service customer with a Free license, you explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. Pro and PPU users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
+As a Power BI service customer with a Free license, you explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. Designers need to share content to a workspace backed by a Premium capacity, to benefit from [unlimited content sharing](../enterprise/service-premium-what-is.md#unlimited-content-sharing) as part of Premium. If designers with a Pro or PPU license shares content in a regular workspace, you need the same license as the *designers* have. Pro and PPU users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
 
 There are many different ways designers can share content. But this article is for Power BI users with a Free license, and therefore only describes how Free users receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -98,7 +98,7 @@ The second column represents a Free user working with content that is saved in P
 | Save a copy | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
 |Copy visual as an image? |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
-|Export tile to Excel |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)|
+|Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Feature |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |

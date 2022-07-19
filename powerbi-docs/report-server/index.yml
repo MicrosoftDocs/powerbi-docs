@@ -37,10 +37,6 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Explore Power BI Report Server in a VM
-            url: tutorial-explore-report-server-web-portal.md
       - linkListType: concept
         links:
           - text: "Administrator overview"
