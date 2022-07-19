@@ -75,7 +75,7 @@ After the Azure Spatial Anchors resource has been created, assign users to Spati
 * If you want a user to be able to create, edit, scan and delete anchors in Power BI mobile app, assign them the **Spatial Anchors Account Owner** role. Users with this role will get the "Data in Space Writer" role in the mobile app.
 
     >[!CAUTION]
-    > Do not confuse the **Spatial Anchors Account Owner** that you assign users to in this step with the **Owner** role in the Azure Spatial Anchors resource that can give the write permissions you need to perform this step.
+    > Do not confuse the **Spatial Anchors Account Owner** that you assign users to in this step with the **Owner** role in the Azure Spatial Anchors resource that gives you the write permissions you need to perform this step.
 
 * If you want a user only to be able to scan/search for anchors created by others. assign them the **Spatial Anchors Account Reader** role. Users with this role will get the "Data in Space Reader" role in the mobile app.
 
