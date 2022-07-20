@@ -136,7 +136,7 @@ In this first image, notice how the bars in the chart reflect the gradient shown
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-4.png" alt-text="Screenshot of Column chart showing gradient of colors ranging from green to red.":::
 
-Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes. Select **Custom** from the drop-down boxes for both **Minimum** and **Maximum**, and set **Minimum** to 3,500, and set **Maximum** to 6,000.
+Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes. Select **Custom** from the drop-down boxes for both **Minimum** and **Maximum**, and set **Minimum** to 250, and set **Maximum** to 600.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png" alt-text="Screenshot of Default color options with maximum and minimum values.":::
 
@@ -152,7 +152,7 @@ To use diverging color scales, select the checkbox for  **Add a middle color**. 
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png" alt-text="Screenshot fo Default color dialog with Color scale selected.":::
 
-When **Add a middle color** is selected, you can set the colors for **Minimum**, **Maximum**, and **Center** separately. In the following image, **Center** is set to a value of 0.2 for **% Market Share SPLY YTD**, so bars with values above 0.2 are a gradient shade of green, and bars below that value are shades of red.
+When **Add a middle color** is selected, you can set the colors for **Minimum**, **Maximum**, and **Center** separately. In the following image, bars with values near the center of the range are now colored yellow.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png" alt-text="Screenshot of Column chart with divergent colors.":::
 
