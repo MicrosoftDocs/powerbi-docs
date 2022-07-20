@@ -180,7 +180,7 @@ There are two types of relationships in a composite model:
 - **Intra source group relationships.** These relationships relate items within a source group together. These relationships are always regular relationships unless they are many-to-many, in which case they are limited.
 - **Cross source group relationships.** These relationships start in one source group and end in a different source group. These relationships are always limited relationships.
 
-[Read more about the distinction between regular and limited relationships and their impact.](desktop-relationships-understand.md)
+[Read more about the distinction between regular and limited relationships and their impact.](desktop-relationships-understand.md#relationship-evaluation)
 
 For example, below we have added three cross source group relationships, relating tables across the various source groups together:
 
@@ -236,3 +236,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)
 * [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* [Model relationships in Power BI Desktop](desktop-relationships-understand.md)
