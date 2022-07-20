@@ -192,11 +192,11 @@ Any item that is in the “Import” source group is considered local.
 For example, if you define the following measure in a composite model that uses a DirectQuery connection to the Inventory source, the measure is considered local:
 
 ```dax
-Average Inventory Count = Average(Inventory[Inventory Count])
+[Average Inventory Count] = Average(Inventory[Inventory Count])
 ```
 
 ### Calculation groups, query and measure evaluation
-[Calculation groups](../../analysis-services/tabular-models/calculation-groups?view=sql-analysis-services-2022) provide a way to reduce the number of redundant measures as well as grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to provide the ability to switch from actuals to month-to-date, quarter-to-date or year-to-date calculations.
+[Calculation groups](../../analysis-services/tabular-models/calculation-groups) provide a way to reduce the number of redundant measures as well as grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to provide the ability to switch from actuals to month-to-date, quarter-to-date or year-to-date calculations.
 When working with composite models, it is important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group will be applied, regardless of if the measure was defined in the remote model or in the local model.
 However, if a measure does not refer to items from a single remote source group exclusively but refers to items from a remote source group on which a remote calculation group is applied, the results of the measure might still be impacted by the remote calculation group. As an example, consider the following:
 - Reseller Sales is a measure defined in the remote model.
