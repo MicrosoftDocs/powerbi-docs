@@ -25,7 +25,7 @@ This page contains a quick summary of the API versions. Versions listed here are
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
-* [Download API](./file-download-api.md) to allow downloading visual to file
+* **[Download API](./file-download-api.md)** to allow downloading visual to file
 * Supports Desktop June 2021
 
 ## API v4.2.0
@@ -43,7 +43,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v3.6.0
 
-* Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value.
+* Visual can receive updates from Power BI [without the need to bind any data](no-dataroles-support.md).
 * Supports Desktop 2021 February and later.
 * Supports Desktop RS May 2021 and later.
 
@@ -113,7 +113,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.13.0
 
 * Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](../../visuals/power-bi-visualization-slicers.md).
-* Accessibility: [High-contrast support](./high-contrast-support.md) 
+* Accessibility: **[High-contrast support](./high-contrast-support.md)**
 * Accessibility: Allow Keyboard Focus flag
 
 ## API v1.12.0

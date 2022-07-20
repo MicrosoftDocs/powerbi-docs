@@ -5,7 +5,7 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "What are custom visuals in Power BI"
+    - name: "What are Power BI custom visuals"
       href: power-bi-custom-visuals.md
     - name: "Develop your own Power BI custom visual"
       href: develop-power-bi-visuals.md
@@ -15,7 +15,7 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
-    - name: "Tutorial: Build a bar chart"
+    - name: "Tutorial: Build a bar chart visual"
       href: create-bar-chart.md
     - name: "Tutorial: Use React to create a Power BI visual"
       href: create-react-visual.md
