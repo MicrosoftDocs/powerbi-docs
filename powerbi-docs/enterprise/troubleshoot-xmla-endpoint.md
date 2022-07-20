@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 04/21/2022
+ms.date: 07/20/2022
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -129,6 +129,10 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 ### Overrides in Refresh TMSL command
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
+
+## Email subscriptions
+
+Datasets that are refreshed using an XMLA endpoint don't trigger an email subscription. For more information, see [Email subscriptions for Power BI reports and dashboards](./../consumer/end-user-subscribe.md).
 
 ## Errors on Premium Gen 2 capacity
 
