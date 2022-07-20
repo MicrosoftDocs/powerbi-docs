@@ -17,6 +17,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v4.7.0
 
 * **[Licensing API](licensing-api.md)** - Sell, manage, and enforce licenses directly through the commercial marketplace.
+* **[Drilldown API](drilldown-api.md)** - Create a visual that can trigger a drilldown operation on its own, without user interaction.  
 
 ## API v4.6.0
 
@@ -34,11 +35,11 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v3.8.0
 
-* Supports Desktop 2021 May and later.
+* Supports Desktop May 2021 and later.
 
 ## API v3.7.0
 
-* Supports Desktop 2021 April and later.
+* Supports Desktop April 2021 and later.
 
 ## API v3.6.0
 
