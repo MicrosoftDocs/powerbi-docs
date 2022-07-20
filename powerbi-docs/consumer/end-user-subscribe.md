@@ -126,17 +126,12 @@ Paginated reports allow you to specify the view of the report people will receiv
 ### Considerations unique to paginated report subscriptions
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
-
-
 - You can set up an unlimited number of subscriptions per paginated report. 
-
 - The maximum attachment size is 25 MB.
-
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
-
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
-
-- There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
+- There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
+- You can't create data-driven subscriptions for paginated reports.
 
 
 ## Manage subscriptions
