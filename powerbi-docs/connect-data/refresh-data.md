@@ -63,7 +63,7 @@ For more information about large datasets in Premium capacities, see [large data
 Power BI does not import data over connections that operate in DirectQuery mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
 
 > [!NOTE]
->Live connection reports do not consume query processing resources such as DirectQuery datasets. Instead, live connection reports submit queries to the capacity or Analysis Services instance that hosts the dataset or the model. When using external Analysis Services such as SQL Server Analysis Services (SSAS) or Azure Analysis Services (AAS), resources are consumed outside of Power BI.
+>Live connection reports do not consume query processing resources such as DirectQuery datasets. Instead, live connection reports submit queries to the capacity or Analysis Services instance that hosts the dataset or the model. When using external analysis services such as SQL Server Analysis Services (SSAS) or Azure Analysis Services (AAS), resources are consumed outside of Power BI.
 
 Because Power BI does not import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the dataset settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh now** option.
 
