@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).
+A filled, or *choropleth*, map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent/lower) to dark (more frequent/more).
 
 :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/large-map.png" alt-text="Screenshot of map of the United States.":::
 
