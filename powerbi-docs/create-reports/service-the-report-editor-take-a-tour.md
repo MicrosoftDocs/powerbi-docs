@@ -8,7 +8,7 @@ ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/22/2021
+ms.date: 01/13/2022
 LocalizationGroup: Reports
 ---
 # Tour the report editor in Power BI
@@ -37,10 +37,12 @@ The Power BI report editor is divided into several main sections:
 1. Fields pane
 
 ## 1. The ribbon
+
 The actions available from the ribbon are numerous, with new actions being added all the time. For information about a particular action, use the Power BI documentation table of contents, or Search box.
 
 
 ## 2. The report canvas
+
 The report canvas is where your work displays. When you use the Fields, Filters, and Visualizations panes to create visuals, they are built and displayed on your report canvas. Each tab at the bottom of the canvas represents a page in the report. Select a tab to open that page. 
 
 ## The report editor panes
@@ -68,6 +70,7 @@ For example, when you select an individual visual such as this column chart:
 Read on for details about each pane.
 
 ## 3. The Filters pane
+
 Use the Filters pane to view, set, and modify persistent filters to your reports at the page, report, drillthrough, and visual-level. Yes, you can do ad-hoc filtering on report pages and visuals by selecting elements of the visuals or by using tools like slicers. Filtering in the Filters pane has the advantage that the state of the filters is saved with the report. 
 
 The Filters pane has another powerful feature: you can filter using a field *that isn't already in one of the visuals in your report*. Let me explain. When you create a visualization, Power BI automatically adds all the fields in the visualization to the visual-level filters area of the Filters pane. If you want to set a visual, page, drillthrough, or report filter using a field that isn't currently used in the visualization, you just drag it to one of the Filters buckets.
@@ -99,6 +102,7 @@ For more information, see [Add visualizations to a Power BI report](../visuals/p
 This part of the pane also has options to control [drillthrough](desktop-drillthrough.md) and filter behavior.
 
 ### Format your visuals
+
 Select the paint roller icon to display the Format pane. The options available depend on the type of visualization selected.
 
 ![Formatting pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-format.png)
@@ -117,6 +121,7 @@ Select the magnifying glass icon to display the Analytics pane. The options avai
 With the Analytics pane in the Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see  [Analytics pane in Power BI Desktop](../transform-model/desktop-analytics-pane.md).
 
 ## 5. The Fields pane
+
 The Fields pane displays the tables, folders, and fields in your data that are available for you to use to create visualizations.
 
 :::row:::
@@ -135,6 +140,7 @@ In Power BI Desktop, you also have options to show/hide fields, add calculations
 Power BI uses a number of different icons to indicate the types of fields in a report. When you can recognize them, you understand better how they act in different visuals. See the [Field list icons section of Using the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes) for a complete list.
 
 ## Next steps
+
 [Create a report](service-report-create-new.md)
 
 More about reports in the [Power BI service](service-report-create-new.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile apps](../consumer/mobile/mobile-apps-view-phone-report.md).

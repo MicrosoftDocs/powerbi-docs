@@ -42,6 +42,8 @@
       href: objects-properties.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
+    - name: License enforcement for Power BI AppSource visuals
+      href: custom-visual-licenses.md
   - name: Import Power BI custom visuals
     items: 
     - name: "Import a custom visual"
@@ -126,6 +128,8 @@
       href: local-storage.md
     - name: "'Rendering' events API" 
       href: event-service.md
+    - name: Drilldown API
+      href: drilldown-api.md
     - name: "File download API"
       href: file-download-api.md
     - name: "Permissions API"
