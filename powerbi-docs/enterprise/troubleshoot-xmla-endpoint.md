@@ -132,7 +132,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## Email subscriptions
 
-Datasets that are refreshed using an XMLA endpoint don't trigger an email subscription. For more information, see [Email subscriptions for Power BI reports and dashboards](./../consumer/end-user-subscribe.md).
+Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](./../consumer/end-user-subscribe.md).
 
 ## Errors on Premium Gen 2 capacity
 
