@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/22/2022
+ms.date: 07/20/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -246,8 +246,8 @@ Email subscriptions do not support:
  
 * R-powered Power BI visuals  
 * bookmarks
-* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md). 
-
+* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+* Dataset refresh operations using an XMLA endpoint.
 
 
 ## Next steps
