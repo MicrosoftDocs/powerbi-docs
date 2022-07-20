@@ -49,7 +49,7 @@ Downloading visuals from AppSource is free, but each publisher defines their own
 
 * Free visuals that you can download and use without additional costs. These visuals are labeled as *Free*.
 * Visuals that you can download and get basic functionality for free, but you can pay for additional features. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it. Transactability and license management for these visuals happen outside of Microsoft platforms.
-* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in AppSource.com by clicking on the *Buy now* button. Licenses are managed from the  Microsoft 365 admin center.
+* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) by clicking on the *Buy now* button. Licenses are managed from the  [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 Once you select the visual, select the **Plans + Pricing** tab to see the plan for that visual. Pricing information is also shown on the left pane.
 
