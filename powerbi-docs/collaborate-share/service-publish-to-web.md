@@ -39,7 +39,7 @@ Follow these steps to use **Publish to web**. Review the **Warning** earlier in 
 
    ![Contact your Power BI admin](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   For help finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article.
+   For help with finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article.
 
 3. Review the dialog content and select **Create embed code**.
 
