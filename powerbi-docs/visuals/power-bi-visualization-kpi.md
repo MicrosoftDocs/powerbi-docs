@@ -47,7 +47,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
-1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-icon.png":::.
+1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png":::.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -73,7 +73,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
-1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-icon.png":::.
+1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png":::.
 
 ---
 
@@ -84,11 +84,13 @@ This tutorial uses the Retail Analysis sample.
 
 In this example, you'll create a KPI that measures the progress you've made toward a sales goal.
 
-1. From the **Fields** pane, select **Sales** \> **This Year Sales** \> **Total Units This Year**.  This value will be the indicator.
+1. From the **Fields** pane, select **Sales** \> **Total Units This Year**.  This value will be the indicator.
 
 1. Add **Time** \> **FiscalMonth**.  This value will represent the trend.
 
-1. In the upper-right corner of the visual, select the ellipsis and select **Sort axis** \> **FiscalMonth**.
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-initial-visualization-values.png" alt-text="Screenshot of the X and Y axis wells.":::
+
+1. In the upper-right corner of the visual, select the **More options** ellipsis (...) and select **Sort axis** \> **FiscalMonth**.
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot of the ellipsis menu expanded with Sort axis and FiscalMonth.":::
 
@@ -97,11 +99,11 @@ In this example, you'll create a KPI that measures the progress you've made towa
 1. Check that Power BI has sorted the columns in ascending order by **FiscalMonth**.
 
     > [!IMPORTANT]
-    > Once you convert the visualization to a KPI, there's **no** option to sort. You must sort it correctly now.
+    > Once you convert the visualization to a KPI, there's **no** option to sort. You must sort the visualization now, if desired.
 
     Once sorted correctly, your visual will look like this:
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-chart.png" alt-text="Screenshot of the visual sorted correctly.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-chart.png" alt-text="Screenshot of the visualization sorted correctly.":::
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -117,17 +119,27 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
 ---
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+1. To add a goal, drag **Total Units Last Year** to the **Trend** field.
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-desktop-value-trend-axis-trend.png" alt-text="Screenshot of the Visualizations pane with the Value, Trend axis, and Trend fields filled in.":::
+
+# [Power BI service](#tab/powerbi-service)
+
 1. To add a goal, drag **Total Units Last Year** to the **Target** field.
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-done.png" alt-text="Screenshot of the finished KPI visual and the Fields pane with the values depicted.":::
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-service-value-trend-axis-target.png" alt-text="Screenshot of the Visualizations pane with the Value, Trend axis, and Target fields filled in.":::
+
+---
 
 1. Optionally, format the KPI by selecting the paint brush icon to open the **Format visual** pane.
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-format-visual.png" alt-text="Screenshot of the Format visual pane.":::
 
-    * **Callout value** - controls the indicator’s display units, decimal places, and text formatting.
+    * **Callout value** - controls the indicator's display units, decimal places, and text formatting.
 
-    * **Icons** - when set to **On**, the visual shows small icons next to the value, a green checkmark for a increasing value, and a red exclamation point for a decreasing value. The value's direction is set by **Trend axis**.
+    * **Icons** - when set to **On**, the visual shows small icons next to the value, a green checkmark for an increasing value, and a red exclamation point for a decreasing value. The value's direction is set by **Trend axis**.
 
     * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual. People consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. For this report, select **Direction** \> **High is good**. Optionally, change the color settings.
 

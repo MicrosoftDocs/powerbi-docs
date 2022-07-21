@@ -71,7 +71,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
-1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-icon.png":::.
+1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png":::.
 
 ---
 
@@ -88,15 +88,19 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
 1. Start on a blank report page and create a column chart that displays this year's sales and gross margin by month.
 
-   a.  From the Fields pane, select **Sales** \> **This Year Sales** > **TotalSales**.
+   a. From the Fields pane, select **Sales** \> **This Year Sales** > **Value**.
 
-   b.  Drag **Sales** \> **Gross Margin This Year** to the **Y-axis** well.
+   b. Drag **Sales** \> **Gross Margin This Year** to the **Y-axis** well.
 
    c. Select **Time** \> **FiscalMonth** to add it to the **X-axis** well.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/combotutorial1new.png" alt-text="Combo tutorial example.":::
 
-1. Select **More options** (...) in the upper-right corner of the visualization, and select **Sort axis** \> **FiscalMonth**. To change the sort order, select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
+1. In the upper-right corner of the visual, select the **More options** ellipsis (...) and select **Sort axis** \> **FiscalMonth**.
+
+    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-sort-by-fiscal-month.png" alt-text="Screenshot of the More options (ellipsis) menu expanded with Sort axis and FiscalMonth.":::
+
+1. Select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
 
 1. Convert the column chart to a combo chart. There are two combo charts available: **Line and stacked column** and **Line and clustered column**. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
@@ -114,13 +118,15 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
 In this task, we'll compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
+1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. 
+
+1. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
   
    In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/combo1-new.png" alt-text="Combo chart example sales.":::
 
-1. Add **This Year Sales > TotalSales** and **This Year Sales > TotalSalesLY** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.
+1. Add **This Year Sales** \> **TotalSales** and **This Year Sales** \> ** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/flatline-new.png" alt-text="Combo chart flatline example.":::
 
@@ -161,7 +167,7 @@ From here you might want to:
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page, and vice versa. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this default behavior.
 
 ## Considerations and limitations
 
