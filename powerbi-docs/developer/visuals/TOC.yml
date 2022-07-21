@@ -25,7 +25,7 @@
       href: funnel-plot-from-r.md
   - name: Import Power BI custom visuals
     items: 
-    - name: "Import a custom visual"
+    - name: "Import a Power BI visual"
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
