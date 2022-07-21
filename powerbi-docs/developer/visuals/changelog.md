@@ -18,6 +18,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 * **[Licensing API](licensing-api.md)** - Sell, manage, and enforce licenses directly through the commercial marketplace.
 * **[Drilldown API](drilldown-api.md)** - Create a visual that can trigger a drilldown operation on its own, without user interaction.  
+* Supports Desktop July 2022
 
 ## API v4.6.0
 
