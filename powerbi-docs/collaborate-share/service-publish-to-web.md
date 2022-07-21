@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/02/2022
+ms.date: 07/20/2022
 LocalizationGroup: Share your work
 ---
 
@@ -21,11 +21,15 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 >[!Note]
 >You can embed your content securely in an internal portal or website. Use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. These options ensure that all permissions and data security are enforced when your users view your internal data.
 
+## Prerequisites
+
+You need a Microsoft Power BI Pro license to use **Publish to web**. Your report viewers don't need to be Power BI users.
+
+**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where **Publish to web** isn't supported. 
+
 ## Create embed codes with Publish to web
 
-**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
-
-The following steps describe how to use **Publish to web**.
+Follow these steps to use **Publish to web**. Review the **Warning** earlier in this article before using **Publish to web**.
 
 1. Open a report in a workspace that you can edit, and select **File**  > **Embed report** > **Publish to web (public)**.
 
@@ -151,10 +155,6 @@ To report a concern related to **Publish to web** content embedded in a website 
 ![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
 You're asked to send an email to Microsoft explaining your concern. Microsoft evaluates the content based on the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service) and takes appropriate action.
-
-## Licensing
-
-You need to be a Microsoft Power BI user to use **Publish to web**. Your report viewers don't need to be Power BI users.
 
 <a name="howitworks"></a>
 ## How it works (technical details)
