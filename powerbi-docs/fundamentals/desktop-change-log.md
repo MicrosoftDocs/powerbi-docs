@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 6/28/2022
+ms.date: 7/21/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,15 @@ ms.date: 6/28/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## July 2022 QFE 1
+
+*Version: 2.107.841.0, Released: July 21, 2022*
+
+Bug fixes/improvements:
+- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc) even if the data exceeds the page size.
+- Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
+
 
 ## June 2022 QFE 1
 
