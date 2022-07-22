@@ -132,7 +132,7 @@ In this task, we'll compare gross margin and sales.
 
 1. Add **This Year Sales** \> **Value** and **Last Year Sales** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-chart-scales.png" alt-text="Line chart showing different scales for Values, Sales, and Gross Margin percentage.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-chart-scales.png" alt-text="Line chart showing Values, Sales, and Gross Margin percentage at the same scale.":::
 
 1. To make the visual easier to read and interpret, convert the line chart to a **Line and stacked column chart**.
 
@@ -156,11 +156,11 @@ In this task, we'll compare gross margin and sales.
 
 1. Set **Y-axis** \> **Title** to **On**, then set **Style** to **Show title only**
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-open-y.png" alt-text="Combo chart open y-axis example.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-open-y.png" alt-text="Combo chart with Y-axis on.":::
 
 1. Set **Secondary y-axis** to **On** to display options for formatting the line chart portion of the combo chart.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-secondary-y-axis.png" alt-text="Image of Secondary y-axis control.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-secondary-y-axis.png" alt-text="Combo chart with Secondary y-axis on.":::
 
 1. Under **Secondary y-axis**, set **Title** to **On**.
 
