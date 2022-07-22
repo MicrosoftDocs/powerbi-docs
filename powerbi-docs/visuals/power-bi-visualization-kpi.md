@@ -149,6 +149,8 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     :::image type="content" source="media/power-bi-visualization-kpi/power-bi-format-distance-to-goal.png" alt-text="Screenshot of the Format distance to go pane.":::
 
+    * **Date** - when set to **On**, the visual shows the date. Optionally, change the font, and its style and color.
+
 KPIs are also available in the Power BI service and on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 
 ## Considerations and troubleshooting
