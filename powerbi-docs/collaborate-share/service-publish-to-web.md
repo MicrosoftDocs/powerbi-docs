@@ -33,7 +33,7 @@ See the [**Considerations and limitations**](#considerations-and-limitations) se
 
 ## Create embed codes with Publish to web
 
-Follow these steps to use **Publish to web**. Review the **Warning** earlier in this article before using **Publish to web**.
+Follow these steps to use **Publish to web**. Review the **Warning** earlier in this article before publishing to web.
 
 1. Open a report in a workspace that you can edit, and select **File**  > **Embed report** > **Publish to web (public)**.
 
