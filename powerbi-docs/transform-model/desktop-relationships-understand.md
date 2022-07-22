@@ -234,11 +234,36 @@ There are other restrictions related to limited relationships:
 
 ### Precedence rules
 
-Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. The following list presents precedence rules that Power BI uses for ambiguity detection and path resolution:
+Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to the following precedence rules. The first rule match determines the path it will follow.
+1.	A path consisting of one-to-many or one-to-one relationships from filter to target. The filter must flow from the "one" side of a relationship to the other side for all relationships along the path.
+2.	A path consisting of one-to-many relationships from filter to an intermediate table followed by many-to-one relationships from intermediate table to target. The filter must flow from the "one" side of a relationship to the "many" side for all one-to-many relationships, and from the "many" side of a relationship to the "one" side of the relationship for many-to-one relationships in the path.
+3.	Any other path, including paths that contain many-to-many relationships.
 
-1. Many-to-one and one-to-one relationships, including limited relationships
-2. Many-to-many relationships
-3. Bi-directional relationships, in the reverse direction (that is, from the "many" side)
+The following diagram shows three possible paths that Power BI can take when a filter is applied to the **Source** table and should propagate to the **Target** table.
+Notice that filters flow from top to bottom, from the **Source** table to the **Target** table. You can select the image to enlarge it.
+
+:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A screenshot showing a model diagram with multiple filter paths and relationships. The following bulleted list describes the diagram." lightbox="media/desktop-relationships-understand/relationship-precedence-rules-expanded.png" border="false":::
+
+- Path 1
+  - The **Source** table is related to the **Path 1 Table 1** table by a one-to-many relationship.
+  - The **Path 1 Table 1** table is related to the **Path 1 Table K** table by a one-to-many relationship.
+  - The **Path 1 Table K** table is related to the **Path 1 Table N** table by a one-to-many relationship.
+  - The **Path 1 Table N** table is related to the **Target** table by a one-to-many relationship.
+  - To emphasize what’s important, each relationship along the path from the **Source** table to the **Target** table is a one-to-many relationship.
+- Path 2
+  - The **Source** table is related to the **Path 2 Table 1** table by a one-to-many relationship.
+  - The **Path 2 Table 1** table is related to the **Path 2 Table K** table by a one-to-many relationship.
+  - The **Path 2 Table K** table is related to the **Path 2 Table N** table by a many-to-one relationship that filters in both directions.
+  - The **Path 2 Table N** table is related to the **Target** table by a many-to-one relationship that filters in both directions.
+  - To emphasize what’s important, the last two relationships along the path from the **Source** table to the **Target** table are many-to-one relationships that filter in both directions.
+- Path 3
+  - The **Source** table is related to the **Path 3 Table 1** table by a one-to-many relationship.
+  - The **Path 3 Table 1** table is related to the **Path 3 Table K** table by a many-to-many relationship that filters in one direction only, from the **Path 3 Table 1** table to the Path 3 Table K table.
+  - The **Path 3 Table K** table is related to the **Path 3 Table N** table by a many-to-one relationship that filters in both directions.
+  - The **Path 3 Table N** table is related to the **Target** table by a one-to-many relationship.
+  - To emphasize what’s important, the second relationship along the path from the **Source** table to the **Target** table is a many-to-many relationship and the third relationship along the path is a many-to-one relationship that filter in both directions.
+  
+In terms of precedence, Path 1 will be given the highest priority, followed by Path 2, and finally Path 3.
 
 ### Performance preference
 

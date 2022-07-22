@@ -6,6 +6,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
             "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
             "redirect_document_id": false
@@ -173,6 +183,11 @@
         {
             "source_path": "powerbi-docs/service-connect-to-bing.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/report-server/tutorial-explore-report-server-web-portal.md",
+            "redirect_url": "/power-bi/report-server/install-report-server",
             "redirect_document_id": false
         },
         {
@@ -912,8 +927,13 @@
         },
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
-            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-powerpoint.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
@@ -2637,6 +2657,11 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
@@ -4579,6 +4604,16 @@
         {
             "source_path": "powerbi-docs/guidance/report-tips-visual-colors.md",
             "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-goals.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
+            "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
             "redirect_document_id": false
         }
     ]           

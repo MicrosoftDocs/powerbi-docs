@@ -16,7 +16,7 @@ This article will cover techniques on how a developer can achieve high performan
 No one wants a visual to take its time when rendering. Getting the visual to render as quickly as possible becomes critical when writing the code.
 
 > [!NOTE]
-> As we continue to improve and enhance the platform, new versions of the API are constantly being released. In order to get the most out of the Power BI visuals' platform and feature set, we recommend that you keep up-to-date with the most recent version. To see which version you’re using, run the `pbiviz -V` command.
+> As we continue to improve and enhance the platform, new versions of the API are constantly being released. In order to get the most out of the Power BI visuals' platform and feature set, we recommend that you keep up-to-date with the most recent version. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 Here are some recommendations for achieving optimal performance for your custom visual.
 

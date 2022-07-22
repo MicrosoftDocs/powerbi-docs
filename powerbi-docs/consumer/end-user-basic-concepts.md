@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/08/2022
+ms.date: 07/08/2022
 LocalizationGroup: Get started
 ---
 
@@ -106,7 +106,7 @@ A Power BI report is one or more pages of visualizations, graphics, and text. Al
 
 One report...
 
-- Can be created using data from only one dataset.  
+- Can be created using data from only one dataset. Power BI Desktop can combine more than one data source into a single dataset in a report, and that report can be imported into Power BI. 
 
 - Can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).
 

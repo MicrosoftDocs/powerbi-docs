@@ -193,7 +193,8 @@ You need to [find one of these people](/microsoft-365/business-video/admin-cente
 - Single sign-on data query models, including [composite models on Power BI datasets or Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
-- Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the **Publish to Web** option is grayed out for your tenant in the Power BI admin portal. 
+- Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the **Publish to Web** option is grayed out for your tenant in the Power BI admin portal.
+- License enforcement for custom visuals.
 
 ## Next steps
 

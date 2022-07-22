@@ -8,16 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 06/14/2022
 LocalizationGroup: Administration
 ---
 
 # View information protection metrics
 
-Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
+After you enable information protection for Power BI, data protection metrics can be displayed in the admin portal. The report shows how sensitivity labels help protect your content.
 
-After you enable information protection for Power BI, data protection metrics are displayed in the admin portal. The report shows how sensitivity labels help protect your content.
+## Opening the protection metrics report
+
+You must have a Power BI administrator role to open and view the report. To view the report, go to **Settings > Admin portal**, and choose **Protection metrics**.
+
+See [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md) for details about the report.
 
 ## Next steps
 
+* [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
+* [Sensitivity labels in Power BI](../enterprise/service-security-sensitivity-label-overview.md)
 * [About the Admin portal](service-admin-portal.md)

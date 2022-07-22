@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 07/18/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library
@@ -74,7 +74,7 @@ The data in the report will update regularly to stay in sync with the list or li
 
 ## Licenses
 
-Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data, but to enter the full edit experience, publish reports, access reports that others have published, or delete reports, you need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
+Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data. You need a Power BI Pro license to enter the full edit experience, publish reports, access reports that others have published, or delete reports. Your report readers also need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
 
 ## Considerations and limitations
 
@@ -84,6 +84,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
 - Within SharePoint libraries, this option will only show on the root of the document library.
+- The reports and datasets created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
 
 ## Troubleshooting
 
