@@ -128,11 +128,11 @@ In this task, we'll compare gross margin and sales.
   
 1. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/combo1-new.png" alt-text="Combo chart example sales.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-gross-margin-line-chart.png" alt-text="Line chart showing last year's gross margin percentage.":::
 
 1. Add **This Year Sales** \> **Value** and **Last Year Sales** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/flatline-new.png" alt-text="Combo chart flatline example.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-chart-scales.png" alt-text="Line chart showing different scales for Values, Sales, and Gross Margin percentage.":::
 
 1. To make the visual easier to read and interpret, convert the line chart to a **Line and stacked column chart**.
 
@@ -166,7 +166,7 @@ In this task, we'll compare gross margin and sales.
 
    Your combo chart now displays dual axes, both with titles.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-2-titles.png" alt-text="Combo chart with dual axes and titles.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-two-titles.png" alt-text="Combo chart with dual axes and titles.":::
 
 1. Optionally, modify the text font, size, and color and set other formatting options to improve the display and readability of the chart.
 
