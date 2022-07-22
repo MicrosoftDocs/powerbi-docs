@@ -46,7 +46,7 @@ Dataflows act as building blocks on top of one another. Suppose you have a dataf
 
 * A linked table will be triggered by a refresh only if it exists in the same workspace
 
-* A linked table will be locked for editing if a source table is being refreshed. If any of the dataflows in a reference chain fail to refresh, all the dataflows will roll back to the old data (dataflow refreshes are transactional within a workspace).
+* A linked table will be locked for editing if a source table is being refreshed or the refresh of the source table is being canceled. If any of the dataflows in a reference chain fail to refresh, all the dataflows will roll back to the old data (dataflow refreshes are transactional within a workspace).
 
 * Only referenced tables are refreshed when triggered by a source refresh completion. To schedule all the tables, you should set a schedule refresh on the linked table as well. Avoid setting a refresh schedule on linked dataflows to avoid double refresh.
 
