@@ -18,19 +18,20 @@ In this tutorial, you explore how to refresh a Power BI dataset from a relationa
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
+>
 > * Create and publish a Power BI Desktop (.pbix) file that imports data from an on-premises SQL Server database.
 > * Configure data source and dataset settings in Power BI for SQL Server connectivity through a data gateway.
 > * Configure a refresh schedule to ensure your Power BI dataset has recent data.
 > * Perform an on-demand refresh of your dataset.
 > * Review the refresh history to analyze the outcomes of past refresh cycles.
-> * Clean up resources by deleting the artifacts created in this tutorial.
+> * Clean up resources by deleting the items created in this tutorial.
 
 ## Prerequisites
 
-- If you don't already have one, sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-- [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
-- [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
-- [Install an on-premises data gateway](service-gateway-onprem.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
+* If you don't already have one, sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
+* [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
+* [Install an on-premises data gateway](service-gateway-onprem.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
 
 > [!NOTE]
 > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
@@ -55,21 +56,21 @@ Use the following procedure to create a basic Power BI report using the Adventur
     > [!NOTE]
     > If you're unable to authenticate, make sure you select the correct authentication method and use an account with database access. In test environments, you might use Database authentication with an explicit username and password. In production environments, you typically use Windows authentication. Refer to [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md) and contact your database administrator for additional assistance.
 
-1. If an **Encryption Support** dialog box appears, select **OK**.
+4. If an **Encryption Support** dialog box appears, select **OK**.
 
-2. In the **Navigator** dialog box, select the **DimProduct** table, then select **Load**.
+5. In the **Navigator** dialog box, select the **DimProduct** table, then select **Load**.
 
     ![Data source navigator](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-3. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
+6. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
 
     ![Stacked column chart](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-4. With the column chart selected in the report canvas, in the **Fields** pane select the **EnglishProductName** and **ListPrice** fields.
+7. With the column chart selected in the report canvas, in the **Fields** pane select the **EnglishProductName** and **ListPrice** fields.
 
     ![Fields pane](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Drag the **EndDate** onto **Filters on this page**, and under **Basic filtering** select only the checkbox for **(Blank)**.
+8. Drag the **EndDate** onto **Filters on this page**, and under **Basic filtering** select only the checkbox for **(Blank)**.
 
     ![Report level filters](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -79,11 +80,11 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
     Notice that the five **Road-250** products are listed with the highest list price. This will change when you update the data and refresh the report later in this tutorial.
 
-6. Save the report with the name "AdventureWorksProducts.pbix".
+9. Save the report with the name "AdventureWorksProducts.pbix".
 
-7. On the **Home** tab select **Publish** \> **My Workspace** \> **Select**. Sign in to the Power BI service if you're asked to do so.
+10. On the **Home** tab select **Publish** \> **My Workspace** \> **Select**. Sign in to the Power BI service if you're asked to do so.
 
-8. On the **Success** screen, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
+11. On the **Success** screen, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
 
     [Publish to Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
@@ -201,6 +202,6 @@ If you don't want to use the sample data anymore, drop the database in SQL Serve
 
 In this tutorial, you've explored how to import data from an on-premises SQL Server database into a Power BI dataset and how to refresh this dataset on a scheduled and on-demand basis to keep the reports and dashboards that use this dataset updated in Power BI. Now you can learn more about managing data gateways and data sources in Power BI. It might also be a good idea to review the conceptual article Data Refresh in Power BI.
 
-- [Manage an on-premises data gateway](/data-integration/gateway/service-gateway-manage)
-- [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
-- [Data refresh in Power BI](refresh-data.md)
+* [Manage an on-premises data gateway](/data-integration/gateway/service-gateway-manage)
+* [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Data refresh in Power BI](refresh-data.md)

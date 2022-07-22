@@ -4,11 +4,13 @@ description: 'Customize X-axis and Y-axis properties'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-9DeAKM4SNJM
+ms.custom: 
+   - video-9DeAKM4SNJM
+   - sample-retail-analysis-sample-PBIX
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 10/20/2021
+ms.date: 06/13/2022
 LocalizationGroup: Visualizations
 ---
 
@@ -61,7 +63,7 @@ There are many features that are customizable for the X-axis. You can add and mo
 
 The X-axis labels display below the columns in the chart. Right now, they're light grey, small, and difficult to read. Let's change that.
 
-1. In the **Visualizations** pane, select **Format** (the paint roller icon :::image type="icon" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png":::) to reveal the customization options.
+1. In the **Visualizations** pane, select **Format** (the paint brush icon :::image type="icon" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png":::) to reveal the customization options.
 
 1. Expand the X-axis options.
 
@@ -80,6 +82,8 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
    - **Text size**: Enter *14*
 
    - **Font family**: Select **Arial Black**
+   
+   - **Columns**: Open **Spacing**
 
    - **Inner padding**: Enter *40%*
 
@@ -158,9 +162,11 @@ When the Y-axis title is **On**, the Y-axis title displays next to the Y-axis la
 
 Let's make the gridlines stand out by changing the color and increasing the stroke:
 
+- **Expand The Gridlines Tab**: Select Horizontal
+
 - **Color**: Select orange
 
-- **Stroke**: Enter *2*
+- **Width**: Enter *2*
 
 After all these customizations, your column chart should look something like this:
 
@@ -191,11 +197,11 @@ Some visualizations can benefit from having two Y axes. Combo charts are a good 
 
 Because we started with a visualization with one formatted Y-axis, Power BI created the second Y-axis using the same settings. But we can change that. 
 
-1. In the **Visualizations** pane, select the paint roller icon to display the format options.
+1. In the **Visualizations** pane, select the paint brush icon to display the format options.
 
-1. Expand the Y-Axis options.
+1. Expand the secondary Y-Axis options.
 
-1. Scroll down until you find the **Show secondary** option. Verify that it is **On**. Our secondary Y axis represents the line chart.
+1. Verify that it is **On**. Our secondary Y axis represents the line chart.
 
    :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png" alt-text="Screenshot of the Show secondary option.":::
 
@@ -228,7 +234,7 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
 
 For line, bar, column, area, and combo charts, you can invert the y-axis, putting positive values going down and negative values going up.
 
-- Select the visual. In the **Format** pane, expand the **Y axis** section. Slide **Invert axis** to **On**.
+- Select the visual. In the **Format** pane, expand the **Y axis** section, expand **Range** section. Slide **Invert range** to **On**.
 
   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
 

@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/20/2021
+ms.date: 06/30/2022
+ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 # Add visuals to a Power BI report (part 2)
@@ -23,15 +24,31 @@ In this tutorial, we'll dig into our Retail Analysis dataset and create a few ke
 
 ## Prerequisites
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open report**
+1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Retail Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Retail Analysis Sample**. Select **Connect**.
+
+1. In your workspace, select the Retail Analysis Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 ## Add visualizations to the report
 
@@ -43,7 +60,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-start.png" alt-text="Screenshot showing column chart.":::
 
-1. From the **Time** table, drag **FiscalMonth** into the **Axis** area.  
+1. From the **Time** table, drag **FiscalMonth** into the **X-axis** area.  
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-fiscalmonth.png" alt-text="Screenshot showing column chart with FiscalMonth as axis.":::
 
@@ -61,7 +78,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
 ### Add a map visualization that looks at sales by location
 
-1. From the **Store** table, select **Territory**. Power BI recognizes that **Territory** is a location, and creates a map visualization. Drag **Total Stores** into the **Size** area.
+1. From the **Store** table, select **Territory**. Power BI recognizes that **Territory** is a location, and creates a map visualization. Drag **Total Stores** into the **Bubble size** area.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/power-bi-map1.png" alt-text="Screenshot showing an area chart.":::
 

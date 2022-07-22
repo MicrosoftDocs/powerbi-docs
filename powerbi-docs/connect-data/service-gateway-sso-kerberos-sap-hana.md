@@ -139,7 +139,7 @@ Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azur
 
 **Resolution**
 
-To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-5-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
+To resolve the *No credentials* issue, follow the steps described in the "Configure the gateway service account for standard Kerberos constrained delegation" section of [Configure Kerberos-based SSO from the Power BI service to on-premises data sources](service-gateway-sso-kerberos.md#step-4-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the HDB (HansaWorld Database file) and FQDN (fully qualified domain name) in the list of **Services to which this account can present delegated credentials**.
 
 
 **Validation**
