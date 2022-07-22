@@ -10,7 +10,7 @@ ms.date: 06/20/2022
 ms.custom: known-issue-208
 ---
 
-# Known issue - Known issue - Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
+# Known issue - Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Datamarts
 
@@ -20,7 +20,7 @@ ms.custom: known-issue-208
 
 ## Description of problem
 
-When using the Datamart editor, you can create rules for row-level security (RLS) to specify security roles thar will restrict the data shown.  In **Manage Roles** > **Row security settings** > **Create** > **Add filters**, you create a rule that uses a string filter.  If you include a double quote in the string filter, you can't save the filter.
+When using the Datamart editor, you can create rules for row-level security (RLS) to specify security roles that will restrict the data shown.  In **Manage Roles** > **Row security settings** > **Create** > **Add filters**, you create a rule that uses a string filter.  If you include a double quote in the string filter, you can't save the filter.
 
 ## Symptoms
 

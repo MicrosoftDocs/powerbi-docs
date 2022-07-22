@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 06/21/2022
+ms.date: 06/27/2022
 ---
 
 # Generate an embed token
@@ -28,7 +28,7 @@ You can use APIs to generate a token for the following items:
 
 * [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token)
+* [Generate an embed token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token)
 
 * [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
@@ -73,7 +73,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 

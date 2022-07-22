@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/26/2022
+ms.date: 06/29/2022
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
 
-When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order to publish embedded Power BI content.
 
-Capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
+A capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
+>You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
 
 ## What is embedded analytics?
 
-Power BI embedded analytics includes two solutions:
+Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* *Power BI Embedded*  - Azure offering
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications.
 
-* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
+* Embedding Power BI is part of Microsoft Office's [*Power BI Premium*](#power-bi-premium). It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 ### Power BI Embedded
 
@@ -85,6 +85,11 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 ### Capacity considerations
 
+For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
+
+> [!IMPORTANT]
+> Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
+
 The table below lists payment and usage considerations per capacity.
 
 | **Payment and usage** | **Power BI Embedded** | **Power BI Premium** | **Power BI Premium** |
@@ -101,7 +106,7 @@ The table below describes the resources and limits of each SKU.
 
 #### [Premium Gen2](#tab/gen2)
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query [GB]<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
@@ -116,13 +121,13 @@ The table below describes the resources and limits of each SKU.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
-<sup>3</sup> The RAM column represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 #### [Premium Gen1](#tab/gen1)
 
-| Capacity SKU | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism<sup>1</sup> |
+| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
 | ------ | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
