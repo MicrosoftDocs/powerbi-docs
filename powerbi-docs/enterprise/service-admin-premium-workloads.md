@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 07/22/2022
 LocalizationGroup: Premium
 ---
 
@@ -221,7 +221,7 @@ Queries created by automatic page refresh go directly to the data source, so it'
 
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
