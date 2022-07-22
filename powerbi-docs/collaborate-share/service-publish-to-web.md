@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 07/20/2022
+ms.date: 07/21/2022
 LocalizationGroup: Share your work
 ---
 
@@ -23,9 +23,13 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 
 ## Prerequisites
 
-You need a Microsoft Power BI Pro license to use **Publish to web**. Your report viewers don't need to be Power BI users.
+- You need a Microsoft Power BI license to publish to web from My Workspace. 
+- You need a Microsoft Power BI Pro license to publish to web from group workspaces. 
+- Your report viewers don't need to be Power BI users.
+- Publish to web is available for reports you can edit in your personal and group workspaces.  
+- It isn't available for reports shared with you, or ones relying on row-level security to secure data. 
 
-**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where **Publish to web** isn't supported. 
+See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where **Publish to web** isn't supported. 
 
 ## Create embed codes with Publish to web
 
