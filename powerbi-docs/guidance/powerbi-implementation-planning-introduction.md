@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 07/23/2022
 ---
 
 # Power BI implementation planning
@@ -17,21 +17,51 @@ In this video, watch Matthew introduce you to the Power BI implementation planni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWUWA9]
 
-Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series of articles is intended to help you accomplish your Power BI implementation. The articles include key considerations, actions, decision-making criteria, recommendations, and describe implementation patterns for important common usage scenarios.
+Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The Power BI implementation planning series is intended to help you accomplish your Power BI implementation. The articles include key considerations, actions, decision-making criteria, recommendations, and they describe implementation patterns for important common usage scenarios.
 
-The series is a work in progress. The plan is to gradually release new and updated content over time. When completed, the series will:
+## Subject areas
+
+When implementing Power BI, there are many subject areas to consider. The following subject areas are important for most organizations:
+
+- BI strategy (article not currently available)
+- User needs and opportunities (article not currently available)
+- Authoring tools and user machines (article not currently available)
+- [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
+- Subscriptions, licenses, and trials (article not currently available)
+- Roles and responsibilities (article not currently available)
+- Power BI service oversight (article not currently available)
+- [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
+- Data management (article not currently available)
+- Content distribution and sharing (article not currently available)
+- Change management and deployment (article not currently available)
+- Security (article not currently available)
+- Data protection (article not currently available)
+- Power BI Premium (article not currently available)
+- Gateways (article not currently available)
+- Integration with other services (article not currently available)
+- Auditing and monitoring (article not currently available)
+- Adoption tracking (article not currently available)
+- Scaling and growing (article not currently available)
+
+> [!NOTE]
+> The series is a work in progress. We will gradually release new and updated content over time.
+
+## Purpose
+
+When completed, the series will:
 
 - Complement the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), which describes considerations for successful Power BI adoption and a healthy data culture. Power BI implementation planning guidance that correlates with the adoption roadmap goals will be added to this series.
-- Replace the [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) white paper, which was designed to describe a variety of technical factors when deploying Power BI. Relevant white paper content will be merged into this series, in a new format that's more discoverable and actionable.
+- Replace the [Planning a Power BI enterprise deployment white paper](https://aka.ms/PBIEnterpriseDeploymentWP), which was designed to describe various technical factors when deploying Power BI. Relevant white paper content will be merged into this series, in a new format that's more discoverable and actionable.
 - Replace the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) (together with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)), which is a lightweight set of resources (videos and presentation slides) that were designed to help Microsoft partners deploy Power BI solutions for their customers. Relevant adoption framework action items will be merged into this series.
 
 ## Recommendations
 
-To set yourself up for success, it's recommended that you work through the following steps:
+To set yourself up for success, we recommend that you work through the following steps:
 
-1. Read the complete [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), familiarizing yourself with each roadmap subject area. Assess your current state of Power BI adoption, and gain clarity on the data culture objectives for your organization.
-2. Explore Power BI implementation planning articles that are relevant to you. It's recommended that you start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how Power BI can be used in diverse ways. Be sure to understand which usage scenarios are used in your organization, and by whom. Also, consider how these usage scenarios may influence the implementation strategies you decide on.
-3. When necessary, refer to additional [Power BI documentation](../index.yml) for details on specific topics.
+1. Read the complete [Power BI adoption roadmap](/power-bi/guidance/powerbi-adoption-roadmap-overview), familiarizing yourself with each roadmap subject area. Assess your current state of Power BI adoption, and gain clarity on the data culture objectives for your organization.
+1. Explore Power BI implementation planning articles that are relevant to you. Start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how Power BI can be used in diverse ways. Be sure to understand which usage scenarios are used in your organization, and by whom. Also, consider how these usage scenarios may influence the implementation strategies you decide on.
+1. Read the articles for each of the subject areas that are listed above. You might choose to initially do a broad review of the contents from top to bottom. Or you may choose to start with subject areas that are your highest priority. Carefully review the key decisions and actions that are included for each topic (at the end of each section). Use them as a starting point for creating and customizing your plan.
+1. When necessary, refer to [Power BI documentation](/power-bi/) for details on specific topics.
 
 ## Target audience
 
@@ -48,7 +78,7 @@ This series of articles is certain to be helpful for organizations that are in t
 - Power BI is deployed with some meaningful scale, but there are many unrealized opportunities for improvement.
 
 > [!TIP]
-> Some knowledge of Power BI and general business intelligence concepts is assumed. To get the most from this content, it's recommended that you become familiar with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) first.
+> Some knowledge of Power BI and general business intelligence concepts is assumed. To get the most from this content, we recommend you become familiar with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) first.
 
 ## Acknowledgments
 
