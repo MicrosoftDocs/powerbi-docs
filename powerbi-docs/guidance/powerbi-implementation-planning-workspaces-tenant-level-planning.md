@@ -100,13 +100,13 @@ The following table lists the information to collect in the request for a new wo
 
 | **Information needed** | **Example** | **Validation required** |
 | --- | --- | --- |
-| Workspace name | SLS-Field Sales Analytics | Does the name follow naming conventions? Does another workspace with the same name exist? |
-| Stages needed | \[Dev\]SLS-Field Sales Analytics, \[Test\]SLS-Field Sales Analytics, and SLS-Field Sales Analytics | Are multiple workspaces necessary to properly support the content? If so, should a [deployment pipeline](/power-bi/create-reports/deployment-pipelines-overview) be created too? |
+| Workspace name | SLS-Field Sales Analytics | Does the adhere to naming conventions? </br></br>Does another workspace with the same name exist? |
+| Stages needed | \[Dev\]SLS-Field Sales Analytics, \[Test\]SLS-Field Sales Analytics, and SLS-Field Sales Analytics | Are multiple workspaces necessary to properly support the content </br></br>If so, should a [deployment pipeline](/power-bi/create-reports/deployment-pipelines-overview) be created too? |
 | Description | Customer sales and order history for monthly, quarterly, and yearly analysis | Is there an expectation that sensitive data, or regulated data, will be stored? If so, will that affect how the workspace is governed? |
-| Target audience | Global field sales organization | How broad is the content delivery scope? How will that affect how the workspace is governed? |
+| Target audience | Global field sales organization | How broad is the content delivery scope? </br></br>How will that affect how the workspace is governed? |
 | License mode assigned to the workspace | Premium capacity for the sales team is needed because a large number of the salespeople are viewers only and they have a free license | Is a Premium capacity or Premium Per User (PPU) required? |
-| Data storage requirements | Data residency in Canada | Are there data residency needs that will require Multi-Geo? What are the expected data volumes? |
-| Workspace administrators | PowerBIContentAdmins-FieldSalesAnalytics | Is this (preferably) a group? Or at least two administrators? |
+| Data storage requirements | Data residency in Canada | Are there data residency needs that will require Multi-Geo? </br></br>What are the expected data volumes? |
+| Workspace administrators | PowerBIContentAdmins-FieldSalesAnalytics | Is this (preferably) a group? Or are there at least two administrators? |
 | Person submitting the request | Requestor@contoso.com | Does the person submitting the request work in a role or line of business related to the information provided? |
 
 The above table includes the minimum amount of information required to set up a workspace. However, it doesn't include all possible configurations. In most cases, a workspace administrator will take responsibility for completing the setup once the workspace has been created. For more information, see the [Workspace-level settings](powerbi-implementation-planning-workspaces-workspace-level-planning.md) article.
