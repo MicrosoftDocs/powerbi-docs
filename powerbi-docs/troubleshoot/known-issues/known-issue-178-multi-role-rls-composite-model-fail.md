@@ -14,7 +14,7 @@ ms.custom: known-issue-178
 
 **APPLIES TO:** ✔️ Row-level security (RLS)
 
-**Status:** Fixed: June 6, 2022
+**Status:** Open
 
 **Problem area:** Consume and View
 
