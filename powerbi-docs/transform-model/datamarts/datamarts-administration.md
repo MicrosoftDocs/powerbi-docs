@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 07/25/2022
 LocalizationGroup: Data from files
 ---
 
@@ -85,7 +85,6 @@ The following limitations should be considered when using datamarts:
     * West India
     * UAE Central 
     * Japan West 
-    * Southeast Asia 
 
 Datamarts are supported in all other Azure regions.
 
