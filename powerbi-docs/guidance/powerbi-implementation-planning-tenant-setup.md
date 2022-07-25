@@ -1,25 +1,25 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
-description: "This article focuses on important aspects to know about setting up your Power BI tenant."
+description: "This article introduces important aspects to know about setting up your Power BI tenant."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/23/2022
+ms.date: 07/25/2022
 ---
 
 # Power BI implementation planning: Tenant setup
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This tenant setup article focuses on important aspects to know about setting up your Power BI tenant. It's targeted at multiple audiences:
+This tenant setup article introduces important aspects to know about setting up your Power BI tenant. It's targeted at multiple audiences:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
 - **Azure Active Directory administrators:** The team who is responsible for overseeing and managing [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
-Power BI is part of a larger Microsoft ecosystem. If your organization is already using other cloud subscription services, such as Azure, Microsoft 365, or Dynamics 365, then Power BI will operate within the same Azure AD *tenant*. Your organizational domain (for example, contoso.com) is associated with Azure AD. Like all Microsoft cloud services, Power BI relies on your organization's Azure AD for identity and access management.
+Power BI is part of a larger Microsoft ecosystem. If your organization is already using other cloud subscription services, such as Azure, Microsoft 365, or Dynamics 365, then Power BI will operate within the same Azure AD *tenant*. Your organizational domain (for example, *contoso.com*) is associated with Azure AD. Like all Microsoft cloud services, Power BI relies on your organization's Azure AD for identity and access management.
 
 > [!TIP]
 > Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Azure AD in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Azure AD for cloud-based services like Power BI to work. Having a hybrid identity solution will work for Power BI. We recommend talking to your Azure AD administrators about the best solution for your organization.
@@ -35,7 +35,7 @@ Usually, Azure AD is set up before a Power BI implementation begins. However, so
 
 ### Unmanaged tenant
 
-A *managed tenant* has a global administrator assigned in Azure AD. If an Azure AD tenant doesn't exist for a domain (for example, contoso.com), when the first user from that domain signs up for a Power BI account - Free, Power BI Pro or Premium Per User (PPU) - an *unmanaged tenant* is created in Azure AD. An unmanaged tenant is also known as a shadow tenant, or a self-service created tenant. It has a basic configuration, allowing the cloud service to work without a global administrator assigned.
+A *managed tenant* has a global administrator assigned in Azure AD. If an Azure AD tenant doesn't exist for a domain (for example, *contoso.com*), when the first user from that domain signs up for a Power BI account - Free, Power BI Pro or Premium Per User (PPU) - an *unmanaged tenant* is created in Azure AD. An unmanaged tenant is also known as a shadow tenant, or a self-service created tenant. It has a basic configuration, allowing the cloud service to work without assigning a global administrator.
 
 To properly manage, configure, and support Power BI, a managed tenant is required. There's a process that a system administrator can follow to [take over an unmanaged tenant](/azure/active-directory/enterprise-users/domains-admin-takeover) so that they can manage it properly on behalf of the organization.
 
@@ -54,7 +54,7 @@ To properly manage, configure, and support Power BI, a managed tenant is require
 
 You must consider how users will access your tenant when you have external Power BI users (such as customers, partners, or vendors) or when internal users must access another Power BI tenant. To access the tenant, they'll need to use a modified URL.
 
-Every Azure AD tenant has a globally unique identifier (GUID) known as the *tenant ID*. In Power BI, it's known as the *customer tenant ID (CTID)*. You can find the CTID in the Power BI service by opening the About Power BI dialog box. It's available from the Help & Support (?) dropdown menu located at the top-right corner of the Power BI service. The CTID is appended to the end of the Tenant URL.
+Every Azure AD tenant has a globally unique identifier (GUID) known as the *tenant ID*. In Power BI, it's known as the *customer tenant ID (CTID)*. You can find the CTID in the Power BI service by opening the **About Power BI** dialog window. It's available from the **Help & Support (?)** menu located at the top-right of the Power BI service. The CTID is appended to the end of the tenant URL.
 
 :::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Image shows how to determine the customer tenant I D, as described in the previous paragraph." border="false":::
 
@@ -107,7 +107,7 @@ You can [determine the default data region](/power-bi/admin/service-admin-where-
 
 :::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-default-data-region.png" alt-text="Image shows how to determine the default data region, as described in the previous paragraph." border="false":::
 
-If you discover that your Power BI tenant resides in a region that isn't ideal, you can move it. To [move your Power BI tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator can open a support request.
+If you discover that your Power BI tenant resides in a region that isn't ideal, you can move it. To [move your Power BI tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator should open a support request.
 
 The relocation of a Power BI tenant to another region isn't a fully automated process, and some downtime is involved. Be sure to take into consideration the [prerequisites and actions](/power-bi/admin/service-admin-region-move) that are required before and after the move.
 
@@ -120,13 +120,13 @@ The relocation of a Power BI tenant to another region isn't a fully automated pr
 
 > [!div class="checklist"]
 > - **Identify your default data region:** Determine the default data region for your Power BI tenant.
-> - **Initiate process to move tenant:** If you discover that your Power BI tenant is located in an unsuitable geographic region, research the process to move your Power BI tenant.
+> - **Initiate the process to move your tenant:** If you discover that your Power BI tenant is located in an unsuitable geographic region, research the process to move your Power BI tenant.
 
 ### Other specific data regions
 
 Some organizations have *data residency* requirements. Data residency requirements typically include regulatory or industry requirements for storing data in a specific geographic region. *Data sovereignty* requirements are similar, but more stringent because the data is subject to the laws of the country in which the data is stored. Some organizations also have *data localization* requirements, which dictate that data created within certain borders needs to remain within those borders.
 
-Regulatory, industry, or legal requirements can require you to store certain data in Power BI elsewhere from the default data region (described earlier). In these situations, you can benefit from the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region. In this case, you must assign workspaces to the correct capacity to ensure that the workspace data is in fact stored in the desired geographic location.
+Regulatory, industry, or legal requirements can require you to store certain data in Power BI elsewhere from the default data region (described earlier). In these situations, you can benefit from the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region. In this case, you must assign workspaces to the correct capacity to ensure that the workspace data is stored in the desired geographic location.
 
 Multi-Geo support enables organizations to:
 
@@ -142,8 +142,8 @@ Multi-Geo support enables organizations to:
 
 > [!div class="checklist"]
 > - **Identify data residency requirements:** Determine what your requirements are for data residency. Identify which regions are appropriate, and which users might be involved.
-> - **Investigate use of Multi-Geo capacity:** For specific situations where data should be stored elsewhere from the default data region, investigate enabling Multi-Geo.
+> - **Investigate use of the Multi-Geo feature:** For specific situations where data should be stored elsewhere from the default data region, investigate enabling Multi-Geo.
 
 ## Next steps
 
-For additional considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
+For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
