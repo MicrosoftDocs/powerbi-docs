@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
-ms.date: 07/21/2022
+ms.date: 07/25/2022
 LocalizationGroup: Premium 
 ---
 
@@ -23,12 +23,12 @@ The figures below show the way CPU usage is currently reported in the [CPU over 
    :::column span="":::
       **Currently**
 
-        :::image type="content" source="media/service-premium-smoothing/CPU-usage-with-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, with the smoothing affect.":::
+        :::image type="content" source="media/service-premium-smoothing/cpu-usage-with-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, with the smoothing affect." lightbox="media/service-premium-smoothing/cpu-usage-with-smoothing.png":::
    :::column-end:::
    :::column span="":::
       **Prior to May 2022**
 
-        :::image type="content" source="media/service-premium-smoothing/CPU-usage-no-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, before smoothing was introduced.":::
+        :::image type="content" source="media/service-premium-smoothing/cpu-usage-no-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, before smoothing was introduced." lightbox="media/service-premium-smoothing/cpu-usage-no-smoothing.png":::
    :::column-end:::
 :::row-end:::
 
