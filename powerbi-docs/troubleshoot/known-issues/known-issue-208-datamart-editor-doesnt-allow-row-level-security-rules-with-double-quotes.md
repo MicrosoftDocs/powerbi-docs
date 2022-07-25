@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/20/2022
+ms.date: 07/25/2022
 ms.custom: known-issue-208
 ---
 
@@ -14,7 +14,7 @@ ms.custom: known-issue-208
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Datamarts
 
-**Status:** Open
+**Status:** Fixed: July 25, 2022
 
 **Problem area:** Create and Author Data
 
