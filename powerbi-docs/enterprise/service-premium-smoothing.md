@@ -23,12 +23,12 @@ The figures below show the way CPU usage is currently reported in the [CPU over 
    :::column span="":::
       **Currently**
 
-        :::image type="content" source="media/service-premium-smoothing/cpu-usage-with-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, with the smoothing affect." lightbox="media/service-premium-smoothing/cpu-usage-with-smoothing.png":::
+        :::image type="content" source="media/service-premium-smoothing/cpu-usage-with-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, with the smoothing affect.":::
    :::column-end:::
    :::column span="":::
       **Prior to May 2022**
 
-        :::image type="content" source="media/service-premium-smoothing/cpu-usage-no-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, before smoothing was introduced." lightbox="media/service-premium-smoothing/cpu-usage-no-smoothing.png":::
+        :::image type="content" source="media/service-premium-smoothing/cpu-usage-no-smoothing.png" alt-text="A screenshot showing the C P U over time chart in the Power B I Premium utilization and metrics app, before smoothing was introduced.":::
    :::column-end:::
 :::row-end:::
 
