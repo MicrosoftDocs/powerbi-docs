@@ -76,4 +76,5 @@ In scenarios where the dataset owner might have left the organization and one ne
 ## Next steps
 
 - [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
