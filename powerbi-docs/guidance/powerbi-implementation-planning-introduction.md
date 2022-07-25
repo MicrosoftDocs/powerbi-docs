@@ -21,30 +21,30 @@ Successfully implementing Power BI throughout the organization requires delibera
 
 ## Subject areas
 
-When you implement Power BI, there are many subject areas to consider. The following subject areas are important for most organizations:
+When you implement Power BI, there are many subject areas to consider. The following subject areas form part of the Power BI implementation planning series:
 
-- BI strategy (article not currently available)
-- User needs and opportunities (article not currently available)
-- Authoring tools and user machines (article not currently available)
+- BI strategy
+- User needs and opportunities
+- Authoring tools and user machines
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
-- Subscriptions, licenses, and trials (article not currently available)
-- Roles and responsibilities (article not currently available)
-- Power BI service oversight (article not currently available)
+- Subscriptions, licenses, and trials
+- Roles and responsibilities
+- Power BI service oversight
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
-- Data management (article not currently available)
-- Content distribution and sharing (article not currently available)
-- Change management and deployment (article not currently available)
-- Security (article not currently available)
-- Data protection (article not currently available)
-- Power BI Premium (article not currently available)
-- Gateways (article not currently available)
-- Integration with other services (article not currently available)
-- Auditing and monitoring (article not currently available)
-- Adoption tracking (article not currently available)
-- Scaling and growing (article not currently available)
+- Data management
+- Content distribution and sharing
+- Change management and deployment
+- Security
+- Data protection
+- Power BI Premium
+- Gateways
+- Integration with other services
+- Auditing and monitoring
+- Adoption tracking
+- Scaling and growing
 
 > [!NOTE]
-> The series is a work in progress. We will gradually release new and updated content over time.
+> The series is a work in progress. We will gradually release new and updated articles over time.
 
 ## Purpose
 
