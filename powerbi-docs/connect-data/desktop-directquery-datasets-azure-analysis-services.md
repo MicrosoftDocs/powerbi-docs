@@ -100,6 +100,8 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
+- You cannot edit, delete or create new relationships in the same Power BI dataset or Analysis Services source. If you have edit access to these sources, you can make the changes directly in the data source instead.
+
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
