@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 07/26/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -48,7 +48,9 @@ After you install the matching Oracle client driver, you can connect to an Oracl
 
 ### 64-bit and 32-bit drivers for Power BI Desktop
 
-Power BI Desktop uses **Unmanaged ODP.NET** for authoring Power BI reports. You only need the following steps when using Oracle ODAC drivers 12.2 and later. Otherwise, they install by default to a non-machine-wide configuration for a new Oracle home installation. These steps assume you've installed the ODAC 18.x files to the c:\oracle64 folder for 64-bit Power BI Desktop or the c:\oracle32 folder for 32-bit Power BI Desktop. Follow these steps to register Unmanaged ODP.NET:
+Power BI Desktop uses **Unmanaged ODP.NET** for authoring Power BI reports. You only need to take the following steps when using drivers later than Oracle ODAC 12.2. For ODAC 12.2 and previous drivers, when you install ODAC you have an option to include the configuration of **Unmanaged ODP.NET** at a machine-wide level automatically. 
+
+The steps in the following two sections assume you've installed the ODAC 18.x files to the c:\oracle64 folder for 64-bit versions of Power BI Desktop, or to the c:\oracle32 folder for the 32-bit versions of Power BI Desktop. Follow these steps to register **Unmanaged ODP.NET**:
 
 #### 64-bit Power BI Desktop
 
