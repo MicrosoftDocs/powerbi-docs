@@ -165,11 +165,11 @@ A source group is a collection of items (tables, relationships, etc.) from a Dir
   - The first source group contains the tables from the **Targets** Excel sheet, as well as the **Regions** CSV file.
   - The second source group contains the items from the **Sales** Power BI Dataset.
 
-:::image type="content" source="media/desktop-composite-models/composite-models-source-groups.png" alt-text="Diagram showing an 'Import' and 'Sales' source group. The 'Import' source group contains the 'Targets' and 'Regions' tables from an Excel and CSV file respectively. The 'Sales' source group contains all tables from the 'Sales' DirectQuery source.":::
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups.png" alt-text="Diagram showing the Import and Sales source groups containing the tables from the respective sources.":::
 
 If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source will be added as another source group:
 
-:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing an 'Import', 'Sales' and 'Inventory' source group. The 'Import' source group contains the 'Targets' and 'Regions' tables from an Excel and CSV file respectively. The 'Sales' source group contains all tables from the 'Sales' DirectQuery source. The 'Inventory' source group contains all tables from the 'Inventory' DirectQuery source.":::
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources.":::
 
 > [!NOTE]
 > Importing data from another source will **not** add another source group, as all items from all imported sources are in one source group.
@@ -184,10 +184,10 @@ There are two types of relationships in a composite model:
 
 For example, below we have added three cross source group relationships, relating tables across the various source groups together:
 
-:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing an 'Import', 'Sales' and 'Inventory' source group. The 'Import' source group contains the 'Targets' and 'Regions' tables from an Excel and CSV file respectively. The 'Sales' source group contains all tables from the 'Sales' DirectQuery source. The 'Inventory' source group contains all tables from the 'Inventory' DirectQuery source. There are cross source group relations between the 'Regions' table in the 'Import' source group to the 'Inventory' source group, between the 'Inventory' and 'Sales' source group and between the 'Sales' source group and the 'Targets' table in the 'Import' source group.":::
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources and relationships between the source groups as described above.":::
 
 ### Local and remote
-Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and is not part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belong to the “Import” source group and are considered **local**.
+Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and is not part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the “Import” source group and is considered **local**.
 Any item that is in the “Import” source group is considered local.
 For example, if you define the following measure in a composite model that uses a DirectQuery connection to the Inventory source, the measure is considered local:
 
