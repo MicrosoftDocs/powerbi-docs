@@ -251,4 +251,6 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - If a dynamic format string is applied to a measure, the exported data won't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
+- In some specific cases the data exported is not the same as what is shown in Power BI. Most often, this is due to how filters are applied in Power BI when measures are present on the visual. If there is a measure on the visual you are exporting data from, filters from other tables will be applied to the visual. However, if you [export underlying data](#export-underlying-data), the measure will be removed and as a result filters from other tables will not be applied to the exported data. Hence the exported dataset might be different from what is shown in Power BI. To make sure the exported dataset is the same as what is shown in Power BI, either [export summarized data](#export-summarized-data), add the columns that supply the filters to the visual or add the columns that are filtered by the filters from other tables to the visual.
+
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
