@@ -13,9 +13,7 @@ LocalizationGroup: Premium
 
 # How to purchase Power BI Premium
 
-This article describes how to purchase Power BI Premium capacity for your organization. The article covers the following scenario:
-
-- Using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly.
+This article describes how to purchase a Power BI Premium capacity for your organization. The article covers using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly.
 
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 
