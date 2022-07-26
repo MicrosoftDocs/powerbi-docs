@@ -80,6 +80,12 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Expand all tables | **Alt + Shift + 9** |
 | Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 
+## Canvas zoom
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
+| Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
+
 ## Slicer
 | To do this action         | Press                |
 | :------------------- | :------------------- |
