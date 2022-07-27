@@ -42,7 +42,7 @@ To properly manage, configure, and support Power BI, a managed tenant is require
 > [!TIP]
 > The administration of Azure AD is a broad and deep topic. We recommend that you assign specific people in your IT department as system administrators to [securely manage Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for your organization.
 
-:::image type="content" source="media/common/checklist.png" alt-text="The checklist for key decisions and action items is below." border="false":::
+:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
 
 **Checklist** - When reviewing your Azure AD tenant for use with Power BI, key decisions and actions include:
 
@@ -56,13 +56,13 @@ You must consider how users will access your tenant when you have external Power
 
 Every Azure AD tenant has a globally unique identifier (GUID) known as the *tenant ID*. In Power BI, it's known as the *customer tenant ID (CTID)*. You can find the CTID in the Power BI service by opening the **About Power BI** dialog window. It's available from the **Help & Support (?)** menu located at the top-right of the Power BI service. The CTID is appended to the end of the tenant URL.
 
-:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Image shows how to determine the customer tenant I D, as described in the previous paragraph." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Screenshot of the About Power B I dialog window with the tenant U R L highlighted." border="false":::
 
 Knowing your CTID is important for [Azure AD B2B scenarios](/power-bi/enterprise/service-admin-azure-ad-b2b). URLs that you provide to external Power BI users (for example, to view a report) must append the CTID parameter in order to access the correct tenant.
 
 If you intend to use Power BI with external users, we recommend setting up [custom branding](/power-bi/admin/service-admin-custom-branding). It helps users identify which organizational tenant they're accessing. Custom branding elements include a logo, cover image, and theme color.
 
-:::image type="content" source="media/common/checklist.png" alt-text="The checklist for key decisions and action items is below." border="false":::
+:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
 
 **Checklist** - When granting external users permission to view your Power BI content, or when you have multiple tenants, key decisions and actions include:
 
@@ -82,7 +82,7 @@ The following list includes some common reasons for collaboration between Power 
 - **External users:** You'll need to understand how the settings for [external (guest) users](/azure/active-directory/external-identities/external-identities-overview) are set up in Azure AD. There are several Power BI [tenant settings](/power-bi/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-power-bi) related to external users, and they rely on how Azure AD is set up. Also, certain functionality in Power BI only works when using the [planned invitation](/power-bi/enterprise/service-admin-azure-ad-b2b#planned-invites) approach for external users in Azure AD.
 - **Real-time policies:** You may choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Azure AD and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label.
 
-:::image type="content" source="media/common/checklist.png" alt-text="The checklist for key decisions and action items is below." border="false":::
+:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
 
 **Checklist** - When considering how to work with your Azure AD administrators, key decisions and actions include:
 
@@ -105,7 +105,7 @@ The default data region for the organization's Power BI tenant is based on the l
 
 You can [determine the default data region](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization) for your Power BI tenant by opening the **About Power BI** dialog window in the Power BI service. The region is displayed next to the **Your data is stored in** label.
 
-:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-default-data-region.png" alt-text="Image shows how to determine the default data region, as described in the previous paragraph." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-default-data-region.png" alt-text="Screenshot of the About Power B I dialog window with the default data region highlighted." border="false":::
 
 If you discover that your Power BI tenant resides in a region that isn't ideal, you can move it. To [move your Power BI tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator should open a support request.
 
@@ -114,7 +114,7 @@ The relocation of a Power BI tenant to another region isn't a fully automated pr
 > [!TIP]
 > Because a lot of effort is involved, when you determine that a move is necessary, we recommend that you do it sooner rather than later.
 
-:::image type="content" source="media/common/checklist.png" alt-text="The checklist for key decisions and action items is below." border="false":::
+:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
 
 **Checklist** - When considering the default data region for your Power BI tenant, key decisions and actions include:
 
@@ -136,7 +136,7 @@ Multi-Geo support enables organizations to:
 > [!NOTE]
 > The Multi-Geo feature is available with Premium or Microsoft Power BI Embedded. It's not available with Premium Per User (PPU) because data stored in workspaces assigned to PPU is always stored in the default data region.
 
-:::image type="content" source="media/common/checklist.png" alt-text="The checklist for key decisions and action items is below." border="false":::
+:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
 
 **Checklist** - When considering other specific data regions for your Power BI tenant, key decisions and actions include:
 
