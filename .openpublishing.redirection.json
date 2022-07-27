@@ -12,7 +12,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
-            "redirect_url": "powerbi/troubleshoot/service-planned-maintenance",
+            "redirect_url": "power-bi/troubleshoot/service-planned-maintenance",
             "redirect_document_id": true
         },
         {
