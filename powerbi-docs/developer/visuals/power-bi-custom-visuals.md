@@ -47,9 +47,9 @@ Microsoft and community members develop Power BI visuals for public benefit, and
 
 Downloading visuals from AppSource is free, but each publisher defines their own business and licensing model for their visual. There are three basic types of payment and licensing plans:
 
-* Free visuals that you can download and use with additional costs. These visuals are labeled as *Free*.
+* Free visuals that you can download and use without additional costs. These visuals are labeled as *Free*.
 * Visuals that you can download and get basic functionality for free, but you can pay for additional features. These visuals have the *additional purchase may be required* label. You can often get a free trial period to test out the full functionality of the visual before paying for it. Transactability and license management for these visuals happen outside of Microsoft platforms.
-* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in AppSource.com by clicking on the *Buy now* button. Licenses are managed from the  Microsoft 365 admin center.
+* Licensed visuals are also available in a limited capacity for free with the option to purchase more features, but transactability happens in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) by clicking on the *Buy now* button. Licenses are managed from the  [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 Once you select the visual, select the **Plans + Pricing** tab to see the plan for that visual. Pricing information is also shown on the left pane.
 
@@ -58,6 +58,8 @@ Once you select the visual, select the **Plans + Pricing** tab to see the plan f
 Select **Add** to download the visual. If a free trial period is offered, it will start when you download the visual.
 
 After you *purchase* the licenses for the visual in AppSource with a credit card, you need to *assign* them to yourself or others in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
+
+For more information on how to assign licenses see [Licensing and transactability enforcement](licensing-api.md).
 
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
