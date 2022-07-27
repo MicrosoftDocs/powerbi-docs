@@ -56,7 +56,7 @@ You must consider how users will access your tenant when you have external Power
 
 Every Azure AD tenant has a globally unique identifier (GUID) known as the *tenant ID*. In Power BI, it's known as the *customer tenant ID (CTID)*. You can find the CTID in the Power BI service by opening the **About Power BI** dialog window. It's available from the **Help & Support (?)** menu located at the top-right of the Power BI service. The CTID is appended to the end of the tenant URL.
 
-:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Screenshot of the About Power B I dialog window with the tenant U R L highlighted." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Screenshot of the About Power B I dialog window with the customer tenant I D highlighted." border="false":::
 
 Knowing your CTID is important for [Azure AD B2B scenarios](/power-bi/enterprise/service-admin-azure-ad-b2b). URLs that you provide to external Power BI users (for example, to view a report) must append the CTID parameter in order to access the correct tenant.
 
