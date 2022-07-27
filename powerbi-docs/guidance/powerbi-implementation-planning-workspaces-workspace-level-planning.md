@@ -48,7 +48,7 @@ One of the key areas of the Power BI adoption roadmap is [content ownership and 
 - **Managed self-service BI:** Data is owned and managed by a centralized team, whereas various content creators from business units take responsibility for reports and dashboards. In this scenario, it's highly likely that multiple workspaces will be needed to securely facilitate collaboration by multiple teams of people.
 - **Enterprise BI:** Content is owned and managed by a centralized team, such as IT, enterprise BI, or the Center of Excellence (COE). In this scenario, collaboration efforts in the workspace are occurring among users in the centralized team.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering your intentions for collaboration in a workspace, key decisions and actions include:
 
@@ -78,7 +78,7 @@ Another key area of the Power BI adoption roadmap is content delivery scope. The
 > [!TIP]
 > When you plan your workspaces, consider the needs of the audience when determining the workspace [license type](/power-bi/fundamentals/service-features-license-type). The type of license that's assigned to the workspace will impact the features that are available, including who can view or manage workspace content.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering your expectations for how workspace content will be viewed, key decisions and actions include:
 
@@ -102,7 +102,7 @@ Using a personal workspace for anything other than [personal BI](powerbi-adoptio
 
 Also, a personal workspace is limited in its options to share content with others. You can't publish an app from a personal workspace (and Power BI apps are an important mechanism for distributing content to the organization). Sharing (links or direct access) is the only way to share personal workspace content with others. While sharing is possible, extensive use of sharing involves more effort and increases the risk of error.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering your expectations for how personal workspaces should be used, key decisions and actions include:
 
@@ -126,7 +126,7 @@ When the intent for collaboration involves multiple teams beyond a single busine
 > [!TIP]
 > Your decisions related to accountability and responsibility should correlate directly with your actions related to defining [workspace access](#workspace-access), which is described later in this article.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering workspace ownership responsibilities, key decisions and actions include:
 
@@ -209,7 +209,7 @@ Disadvantages of option 3 include:
 > [!TIP]
 > Creating a workspace with a narrow scope, such as an individual report, should be done for specific reasons only. It should be the exception rather than the rule.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering the subject area and scope of workspace content, key decisions and actions include:
 
@@ -242,7 +242,7 @@ The disadvantages for separating data workspaces from reporting workspaces inclu
 
 Separating [scorecards](/power-bi/create-reports/service-goals-create) into their own workspace is also a useful technique. Using a separate workspace is also helpful when a scorecard presents goals that span multiple subject areas. It's also helpful to set up specific permissions for managing and viewing the scorecard.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering the item types to store in a workspace, key decisions and actions include:
 
@@ -305,7 +305,7 @@ Lastly, the examples show one workspace - *Quarterly Financials* - but often it'
 > [!NOTE]
 > You'll often plan security more broadly, taking into consideration dataset [read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) requirements, and row-level security (RLS) requirements. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering workspace access, key decisions and actions include:
 
@@ -332,7 +332,7 @@ Each workspace has a [license type](/power-bi/collaborate-share/service-create-t
   - If you expect to deliver content to content viewers who have a free Power BI license, you'll need a Premium per capacity workspace.
 - **Data storage location:** When you need to store data in a specific geographic region, that's only possible with a Premium per capacity workspace (and the capacity is created in that region). For more information about data storage location, see the [Tenant setup](powerbi-implementation-planning-workspaces-tenant-level-planning.md) article.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering the workspace license type, key decisions and actions include:
 
@@ -360,7 +360,7 @@ Here are some suggestions for how to set them to improve the experience for your
   - Whether it's a reporting workspace (one that's devoted to storing reports and dashboards)
 - **Workspace contacts:** The workspace contact list includes the workspace administrators by default. If you have technical content owners that aren't the subject matter experts, you might find it helpful to specify other contacts. Other contacts could be a separate list of groups or individuals who can answer questions about the workspace content.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering the workspace properties, the key decisions and actions include:
 
@@ -385,7 +385,7 @@ It's possible to connect a Power BI workspace to an Azure Data Lake Storage Gen2
 > [!IMPORTANT]
 > Setting [Azure connections](/power-bi/admin/service-admin-portal-azure-connections) in the Power BI admin portal doesn't mean that all dataflows for the entire Power BI tenant are stored by default to an ADLS Gen2 account. To use an explicit storage account (instead of internal Power BI storage), each workspace must be explicitly connected. It's critical that you set the workspace Azure connections *prior to creating any dataflows* in the workspace.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering workspace integration with ADLS Gen2, key decisions and actions include:
 
@@ -407,7 +407,7 @@ It's possible to connect a Power BI workspace to an Azure Data Lake Storage Gen2
 
 For more information about how to configure Azure Log Analytics for use with Power BI, see [Configuring Azure Log Analytics for Power BI](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure). Be sure to understand the prerequisites you must have in place to make the integration work.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering workspace integration with Azure Log Analytics, key decisions and actions include:
 
@@ -425,7 +425,7 @@ There are other technical factors that may influence your workspace setup.
 - There are [per-workspace storage limits](/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#shared-capacity-limits) that apply to the amount of data you can store in a Pro workspace. If using Power BI Premium or PPU isn't an option, consider how to work within the storage limits during the workspace planning process.
 - When you install a [template app](/power-bi/connect-data/service-template-apps-install-distribute) from AppSource, it will create a new workspace that will have a narrow subject and scope.
 
-:::image type="content" source="media/common/checklist.png" alt-text="Diagram that shows a checklist for key decisions and action items." border="false":::
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
 **Checklist** - When considering other technical factors, key decisions and actions include:
 
