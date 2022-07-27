@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/19/2022
+ms.date: 07/25/2022
 ms.custom: known-issue-178
 ---
 
@@ -14,7 +14,7 @@ ms.custom: known-issue-178
 
 **APPLIES TO:** ✔️ Row-level security (RLS)
 
-**Status:** Open
+**Status:** Reactivated: July 25, 2022
 
 **Problem area:** Consume and View
 
@@ -29,7 +29,7 @@ If you face this issue, you will see an error similar to:
 
 ## Solutions and workarounds
 
-In some cases, you may be able to combine RLS roles to circumvent this error. But in most cases, there is no workaround at this time.
+In some cases, you may be able to combine RLS roles to circumvent this error. But in most cases, there is no workaround at this time. When the fix is released, this article will be updated.
 
 ## Next steps
 
