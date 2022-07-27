@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 02/14/2022
+ms.date: 07/27/2022
 ---
 
 # Get started with deployment pipelines
@@ -127,13 +127,11 @@ Deploying to a previous stage works only if the previous stage is empty. When de
 
 ### Review your deployment and leave a note
 
-After selecting which content to deploy, a popup window lists all the items you're about to deploy. You can review the list and add add note to the deployment. Adding a note is optional, but it is highly recommended as the notes are added to the [deployment history](deployment-pipelines-history.md). With a note for each deployment, reviewing the history of your pipelines becomes more meaningful.
+After selecting which content to deploy, a pop-up window lists all the items you're about to deploy. You can review the list and add a note to the deployment. Adding a note is optional, but it is highly recommended as the notes are added to the [deployment history](deployment-pipelines-history.md). With a note for each deployment, reviewing the history of your pipelines becomes more meaningful.
 
-To leave a note, expand the **Add a note** option and write your note in the text box.
+To leave a note, expand the **Add a note** option and write your note in the text box. When you're ready to deploy, select **Deploy**.
 
-<--- screenshot --->
-
-When you're ready to deploy, select **Deploy**.
+:::image type="content" source="media/deployment-pipelines-get-started/add-note.png" alt-text="A screenshot showing the deployment pop-up window, with the add a note option expanded.":::
 
 ## Step 4 - Create deployment rules
 

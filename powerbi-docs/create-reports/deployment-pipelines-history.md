@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 07/11/2022
+ms.date: 07/27/2022
 ---
 
 # Deployment history
@@ -16,7 +16,7 @@ Deployment history is a deployment pipelines feature that enables reviewing the 
 
 You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
 
-When you perform a deployment, you can use the built in option to [leave notes](), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
+When you perform a deployment, you can use the built in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
 <---Screenshot--->
 
@@ -53,7 +53,7 @@ The deployment history log is formatted as a table. Each row represents a single
 
 The following section lists the deployment history limitations.
 
-* Partial data is displayed from April 2022 to <---date--->
+* Partial information is displayed from April 2022 to <---date--->
 
 * Notes are only displayed from <---date--->
 
