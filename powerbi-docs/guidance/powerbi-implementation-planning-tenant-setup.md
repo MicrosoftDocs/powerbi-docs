@@ -56,7 +56,7 @@ You must consider how users will access your tenant when you have external Power
 
 Every Azure AD tenant has a globally unique identifier (GUID) known as the *tenant ID*. In Power BI, it's known as the *customer tenant ID (CTID)*. You can find the CTID in the Power BI service by opening the **About Power BI** dialog window. It's available from the **Help & Support (?)** menu located at the top-right of the Power BI service. The CTID is appended to the end of the tenant URL.
 
-:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Screenshot of the About Power B I dialog window with the customer tenant I D highlighted." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-customer-tenant-id.png" alt-text="Screenshot of the About Power BI dialog window with the customer tenant ID highlighted." border="false":::
 
 Knowing your CTID is important for [Azure AD B2B scenarios](/power-bi/enterprise/service-admin-azure-ad-b2b). URLs that you provide to external Power BI users (for example, to view a report) must append the CTID parameter in order to access the correct tenant.
 
@@ -105,7 +105,7 @@ The default data region for the organization's Power BI tenant is based on the l
 
 You can [determine the default data region](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization) for your Power BI tenant by opening the **About Power BI** dialog window in the Power BI service. The region is displayed next to the **Your data is stored in** label.
 
-:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-default-data-region.png" alt-text="Screenshot of the About Power B I dialog window with the default data region highlighted." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-tenant-setup/determine-default-data-region.png" alt-text="Screenshot of the About Power BI dialog window with the default data region highlighted." border="false":::
 
 If you discover that your Power BI tenant resides in a region that isn't ideal, you can move it. To [move your Power BI tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator should open a support request.
 
