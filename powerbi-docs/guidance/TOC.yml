@@ -186,6 +186,16 @@
           href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+      - name: "Tenant setup"
+        href: powerbi-implementation-planning-tenant-setup.md
+      - name: Workspaces
+        items:
+        - name: "Workspaces overview"
+          href: powerbi-implementation-planning-workspaces-overview.md
+        - name: "Tenant-level planning"
+          href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
+        - name: "Workspace-level planning"
+          href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
