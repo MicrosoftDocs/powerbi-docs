@@ -14,7 +14,7 @@ ms.custom: known-issue-214
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Excel Integration
 
-**Status:** Open
+**Status:** Fixed: July 25, 2022
 
 **Problem area:** Consume and View
 
