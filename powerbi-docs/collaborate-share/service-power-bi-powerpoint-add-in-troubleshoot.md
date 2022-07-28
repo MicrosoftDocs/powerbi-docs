@@ -90,7 +90,7 @@ The key's value should be set to:
 
 [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as enterprise data protection (EDP), helps to protect against potential data leakage. For presentation files on your PC, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if WIP is enabled. For presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection) and the briefcase icon in the address bar will appear if WIP is enabled. 
 
-![Briefcase address bar indicator for sites marked as "work"](https://user-images.githubusercontent.com/44505977/181423508-80794fbd-b43d-4f5b-9537-359dde3e8aff.png)
+![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
 
 The Power BI storytelling add-in is not supported in presentations where WIP is enabled.
 
