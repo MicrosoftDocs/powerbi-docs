@@ -457,9 +457,9 @@ sections:
           Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.  
 
       - question: |
-          Can I configure a rule for a dataset with a function that's connected to a datasource? 
+          Can I configure a rule for a dataset with a function that's connected to a data source? 
         answer: |
-          No, rules are not supported for a dataset with a function that's connected to a datasource.    
+          No, rules are not supported for a dataset with a function that's connected to a data source.    
 
       - question: |
           Can I set a parameter rule for a data source? 
