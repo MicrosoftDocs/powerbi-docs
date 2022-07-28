@@ -7,7 +7,7 @@ metadata:
   ms.topic: faq
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 06/12/2022
+  ms.date: 07/28/2022
 title: Deployment pipelines troubleshooting
 summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -15,6 +15,41 @@ summary: |
   Use this article to troubleshoot issues in deployment pipelines.
 
 sections:
+  - name: Considerations and limitations
+    answer: Use the following links to view the deployment pipelines considerations and limitations.
+
+      * [General considerations and limitations](deployment-pipelines-process.md#considerations-and-limitations-1)
+
+      * [Assigning workspaces](deployment-pipelines-assign.md#limitations)
+
+      * [Permissions](deployment-pipelines-process.md#permissions)      
+
+      * **Power BI items**
+
+        * [Deployed items](deployment-pipelines-process.md#deployed-items)
+
+        * [Unsupported items](deployment-pipelines-process.md#unsupported-items)
+
+        * [Item properties copied during deployment](deployment-pipelines-process.md#item-properties-copied-during-deployment)
+
+        * [Item properties that are not copied](deployment-pipelines-process.md#item-properties-that-are-not-copied)
+
+        * [Dataset limitations](deployment-pipelines-process.md#dataset-limitations)
+
+        * [Dataflow limitations](deployment-pipelines-process.md#dataflow-limitations)
+
+        * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
+
+      * **Deployment rules**
+
+        * [Deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations)
+
+        * [Supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules)
+
+      * [Incremental refresh](deployment-pipelines-process.md#considerations-and-limitations)
+
+      * [Automation](deployment-pipelines-automation.md#considerations-and-limitations)
+
   - name: General
     questions:
       - question: |
@@ -308,6 +343,16 @@ sections:
           
           * **Server** - The server that hosts your database. Keep the existing server as is.
 
+      - question: |
+          Why can't I deploy multiple paginated reports with rules?
+        answer: |
+          A deployment of multiple paginated reports with rules might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
+
+      - question: |
+          After deployment, can I download a PBIX file of a paginated report with a rule?
+        answer: |
+          Your paginated report rule may change what's displayed in your paginated report. After a deployment, if you download the PBIX of the paginated report, it might not match the displayed report.
+
   - name: Dataflows
     questions:
       - question: |
@@ -412,7 +457,17 @@ sections:
       - question: |
           Target dataset can only be changed by its owner
         answer: |
-          Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.                                                               
+          Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.  
+
+      - question: |
+          Can I configure a rule for a dataset with a function that's connected to a datasource? 
+        answer: |
+          No, rules are not supported for a dataset with a function that's connected to a datasource.    
+
+      - question: |
+          Can I set a parameter rule for a data source? 
+        answer: |
+          No, you can only use data source rules for data sources.                                                                              
 
 additionalContent: |
 
