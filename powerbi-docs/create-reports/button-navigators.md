@@ -105,11 +105,11 @@ By default, **All** bookmarks are shown in the bookmark navigator; however, you 
 
 :::image type="content" source="media/desktop-buttons/selecting-all-bookmarks-or-bookmark-group.png" alt-text="Screenshot of Selecting all bookmarks or a bookmark group.":::
 
-You also have the option to **Allow deselection**, meaning users can unselect all the buttons in the bookmark navigator. This option is great for building a toggle-like experience or allowing for an unselected default state. To set up either of these types of experiences, first create a bookmark with the desired unselected state. Here’s an example of an unselected state: 
+You also have the option to **Allow deselection**, meaning users can deselect all the buttons in the bookmark navigator. This option is great for building a toggle-like experience or allowing for a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here’s an example of a deselected state: 
 
-:::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of Example bookmark navigator in the unselected state.":::
+:::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of Example bookmark navigator in the deselected state.":::
 
-Once you have bookmarked the unselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
+Once you have bookmarked the deselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
 
 If the bookmark that you’re using for deselection is within the bookmark navigator already, you can choose to **Hide the deselection bookmark** within the navigator if you don’t want to show it:
 
