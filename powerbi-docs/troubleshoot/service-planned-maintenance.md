@@ -32,7 +32,7 @@ If your organization is affected, we'll provide you with advance notice. Microso
 * Links to Power BI embedded in content might fail to connect when maintenance is done. For example, an embedded link in SharePoint or Teams may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. For more information about embedded links, see [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md) and [Collaborate in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
 * Some of the usage data collected before maintenance isn't available after maintenance completes. This usage data includes:
 
-  * [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log). Users should download activity logs before maintenance. You can also use the [Office 365 audit log data](service-admin-auditing.md#access-your-audit-logs) to get equivalent activity details.
+  * [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log). Users should download activity logs before maintenance. You can also use the [Office 365 audit log data](../admin/service-admin-auditing.md#access-your-audit-logs) to get equivalent activity details.
   * View count in [lineage view](../collaborate-share/service-data-lineage.md#explore-lineage-view)
   * [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
   * [Usage metrics (Preview)](../collaborate-share/service-modern-usage-metrics.md)

@@ -13,7 +13,7 @@
         {
             "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
             "redirect_url": "power-bi/troubleshoot/service-planned-maintenance",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md",
