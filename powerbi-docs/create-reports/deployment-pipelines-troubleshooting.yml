@@ -20,7 +20,7 @@ summary: |
 
   * [Permissions](deployment-pipelines-process.md#permissions)      
 
-  * **Power BI items**
+  * Power BI items:
 
     * [Deployed items](deployment-pipelines-process.md#deployed-items)
 
@@ -36,7 +36,7 @@ summary: |
 
     * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
 
-  * **Deployment rules**
+  * Deployment rules:
 
     * [Deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations)
 
