@@ -27,7 +27,7 @@ Usually, there are many more report creators than dataset creators. These report
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support managed self-service BI. The primary objective is for many report creators to reuse centralized shared datasets. To accomplish that, this scenario focuses on decoupling the model development process from the report creation process.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-inline.png" alt-text="Image shows a diagram of managed self-service B I, which is about reuse of centralized shared datasets by other report creators. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-inline.png" alt-text="Image shows a diagram of managed self-service BI, which is about reuse of centralized shared datasets by other report creators. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
