@@ -36,7 +36,7 @@ In this video, watch Amanda demo creating a report from a SharePoint list in the
 
     A new browser tab opens with an automatically generated report showing interesting insights based on your data.
 
-2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations. Currently you can add a maximum of three measures and four categories. 
+2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and deselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations. Currently you can add a maximum of three measures and four categories. 
 
     :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-add-charts.png" alt-text="Screenshot of Add more charts and make other changes.":::
 
