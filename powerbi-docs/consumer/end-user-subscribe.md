@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/21/2022
+ms.date: 07/29/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -69,7 +69,7 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
     - **Access to this report/dashboard**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com).
     - **Link to report/dashboard in Power BI**: Include a “Go to report” button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
-    - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. 
+    - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a [Premium Gen2 capacity](../enterprise/service-premium-gen2-what-is.md) or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 50 pages and less than 25 MB. 
 
 1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
@@ -240,9 +240,9 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 Email subscriptions do not support:
  
 * R-powered Power BI visuals  
-* bookmarks
-* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
-* Dataset refresh operations using an XMLA endpoint.
+* Bookmarks
+* Most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+* Dataset refresh operations using an XMLA endpoint
 
 
 ## Next steps
