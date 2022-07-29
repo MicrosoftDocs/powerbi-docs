@@ -174,10 +174,6 @@ There are some limitations to the B2B experience that you should be aware of:
   * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list)
   * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
-* You can share content from a government cloud, like GCC, to an external commercial cloud user. However, the guest user can't use their own license. The content has to be in capacity assigned to Premium to enable access. Or, you can assign a Power BI Pro license to the guest account.
-
-* Sharing outside your organization isn't supported for national clouds, like the China cloud instance. Instead, create user accounts in your organization that external users can use to access the content.
-
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.  
 
 ## Next steps
