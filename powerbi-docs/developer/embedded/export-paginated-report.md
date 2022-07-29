@@ -348,6 +348,8 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online. 
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
