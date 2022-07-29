@@ -122,7 +122,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 ## Cross-cloud B2B
 
-You can use Power BI's B2B capabilities across Microsoft Azure clouds by configuring Microsoft cloud settings for B2B collaboration. Read [Microsoft cloud settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/cross-tenant-access-overview#microsoft-cloud-settings) to learn how to establish mutual B2B collaboration between the following clouds:
+You can use Power BI's B2B capabilities across Microsoft Azure clouds by configuring Microsoft cloud settings for B2B collaboration. Read [Microsoft cloud settings](/azure/active-directory/external-identities/cross-tenant-access-overview#microsoft-cloud-settings) to learn how to establish mutual B2B collaboration between the following clouds:
 
 * Microsoft Azure global cloud and  Microsoft Azure Government
 * Microsoft Azure global cloud and Microsoft Azure China 21Vianet

@@ -111,7 +111,7 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 ## Cross-Cloud B2B
 
-You can use Power BI's B2B capabilities across Microsoft Azure clouds by configuring Microsoft cloud settings for B2B collaboration. Read [Microsoft cloud settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/cross-tenant-access-overview#microsoft-cloud-settings) to learn how to establish mutual B2B collaboration between the Microsoft Azure global cloud and  Microsoft Azure Government.
+You can use Power BI's B2B capabilities across Microsoft Azure clouds by configuring Microsoft cloud settings for B2B collaboration. Read [Microsoft cloud settings](/azure/active-directory/external-identities/cross-tenant-access-overview#microsoft-cloud-settings) to learn how to establish mutual B2B collaboration between the Microsoft Azure global cloud and  Microsoft Azure Government.
 
 There are some limitations to the B2B experience that you should be aware of:
 
