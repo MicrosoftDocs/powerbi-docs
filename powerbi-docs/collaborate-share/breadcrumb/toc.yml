@@ -1,0 +1,16 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      items:
+      - name: Collaborate, share, and integrate across products
+        tocHref: /power-bi/consumer/
+        topicHref: /power-bi/collaborate-share/index

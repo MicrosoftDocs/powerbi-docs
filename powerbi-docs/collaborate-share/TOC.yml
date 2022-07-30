@@ -7,7 +7,7 @@
     items: 
       - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
-  - name: Publish, share, & endorse your work
+  - name: Share, publish, & endorse your work
     items: 
     - name: "Content endorsement"
       href: service-endorsement-overview.md
@@ -79,6 +79,8 @@
       href: service-microsoft-teams-app.md
     - name: Embed reports in Teams tabs
       href: service-embed-report-microsoft-teams.md
+    - name: Use data for productive meetings  
+      href: consumer/business-user-teams-meetings.md?toc=/collaborate-share/toc.json&bc=/collaborate-share/breadcrumb/toc.json
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
     - name: "Get a link preview in Teams"
