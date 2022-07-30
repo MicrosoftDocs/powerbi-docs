@@ -80,7 +80,7 @@
     - name: Embed reports in Teams tabs
       href: service-embed-report-microsoft-teams.md
     - name: Use data for productive meetings  
-      href: ../consumer/business-user-teams-meetings.md?toc=/collaborate-share/toc.json&bc=/collaborate-share/breadcrumb/toc.json
+      href: ../consumer/business-user-teams-meetings.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
     - name: "Get a link preview in Teams"
