@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/28/2022
+ms.date: 07/19/2022
 ---
 
 # Power BI data sources
@@ -27,7 +27,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Adobe Analytics | Yes | Yes | No | No | No | No |
 | Amazon Athena | Yes | Yes | Yes | Yes | Yes | Yes |
 | Amazon Redshift | Yes | Yes | Yes | Yes | No | Yes |
-| Anaplan | Yes | Yes | No | Yes | No | No |
+| Anaplan | Yes | Yes | No | Yes | No | Yes |
 | appFigures | Yes | Yes | No | No | No | No |
 | AssembleViews | Yes | Yes | No | Yes | No | No |
 | AtScale cubes | Yes | Yes | Yes | Yes | No | No |
@@ -39,7 +39,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Data Explorer (Kusto) | Yes | Yes | Yes | Yes | No | Yes |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No | Yes |
-| Azure Databricks | Yes | Yes | Yes | Yes | No | No |
+| Azure Databricks | Yes | Yes | Yes | Yes | No | Yes |
 | Azure DevOps | Yes | Yes | No | No | No | No |
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes | No |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
@@ -62,10 +62,10 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
 | Microsoft Dataverse | Yes | Yes | Yes | Yes | No | Yes |
 | Delta Sharing | Yes | Yes | No | Yes | No | No |
-| Denodo | Yes | Yes | Yes | Yes | Yes | No |
-| Dremio | Yes | Yes | Yes | Yes | Yes | No |
+| Denodo | Yes | Yes | Yes | Yes | Yes | Yes |
+| Dremio | Yes | Yes | Yes | Yes | Yes | Yes |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
-| Dynamics 365 Business Central | Yes | Yes | No | No | No | No |
+| Dynamics 365 Business Central | Yes | Yes | No | No | No | Yes |
 | Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Customer Insights | Yes | Yes | No | No | No | No |
 | Dynamics NAV | Yes | Yes | No | No | No | No |
@@ -86,7 +86,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
-| Google Sheets | Yes | Yes | No | Yes | No | No |
+| Google Sheets | Yes | Yes | No | Yes | No | Yes |
 
 
 
@@ -115,7 +115,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
 | MailChimp (deprecated) | Yes | Yes | No | No | No | No |
-| MariaDB | Yes | Yes | Yes | Yes | Yes | No |
+| MariaDB | Yes | Yes | Yes | Yes | Yes | Yes |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
@@ -137,7 +137,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
-| Planview Projectplace | Yes | Yes | No | No | No | No |
+| Planview Projectplace | Yes | Yes | No | No | No | Yes |
 | PostgreSQL | Yes | Yes | Yes | Yes | No | Yes |
 | Power BI dataflows | Yes | Yes | No | No | No | Yes |
 | Power BI datasets | Yes | Yes | Yes | No | No | No |
@@ -169,10 +169,10 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
 | SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
 | SISCC-SDMX | Yes | Yes | No | Yes | No | No |
-| Starburst Enterprise | Yes | Yes | Yes | Yes | No | No |
+| Starburst Enterprise | Yes | Yes | Yes | Yes | No | Yes |
 | Stripe | Yes | Yes | No | No | No | No |
 | SumTotal | Yes | Yes | No | Yes | No | No |
-| SurveyMonkey | Yes | Yes | No | Yes | No | No |
+| SurveyMonkey | Yes | Yes | No | Yes | No | Yes |
 | SweetIQ | Yes | Yes | No | No | No | No |
 | Sybase | Yes | Yes | No | Yes | Yes | Yes |
 

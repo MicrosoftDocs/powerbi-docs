@@ -1,6 +1,6 @@
 ---
 title: Intro to dashboard tiles for Power BI designers
-description: This article describes dashboard tiles in Power BI, which includes tiles that are created from SQL Server Reporting Services (SSRS) reports.
+description: This article describes dashboard tiles in Power BI, which includes tiles that are created from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/12/2021
+ms.date: 07/18/2022
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
+A tile is a snapshot of your data, pinned to the dashboard. You can create tiles from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Visualize your data quickly from Power Apps and Dynamics 365 apps (preview)
+title: Visualize your data quickly from Power Apps and Dynamics 365 apps
 description: There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored within Dataverse. With just a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data.  
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRVzC
-ms.date: 01/21/2022
+ms.date: 07/18/2022
 LocalizationGroup: Reports
 ---
-# Visualize your data quickly from Power Apps and Dynamics 365 apps (preview) 
+# Visualize your data quickly from Power Apps and Dynamics 365 apps
 
 There's a new way to visualize your model-driven Power Apps and Dynamics 365 data stored within Dataverse. With a single click, Power BI will automatically generate a set of visuals for you to explore and find insights within your data. 
 
@@ -30,7 +30,7 @@ Watch this video showing how to create visuals from data stored within Dataverse
 ## Visualize a view
 1.	In your model-driven Power App or Dynamics 365 app, select the **Visualize this view** button in the app bar of any grid view. 
 
-    :::image type="content" source="media/service-quick-create-report/visualize-view-button.png" alt-text="Screenshot of the visualize this view button."::: 
+    :::image type="content" source="media/service-quick-create-report/visualize-view-button.png" alt-text="Screenshot of the Visualize this view button."::: 
 
     A dialog opens with an automatically generated report with a few fields selected for you in the **Your data** pane on the right. The visuals within the report will use some or all of your selected fields and potentially other fields from the table that work well with chosen fields.
     
@@ -45,7 +45,7 @@ Watch this video showing how to create visuals from data stored within Dataverse
     :::image type="content" source="media/service-quick-create-report/changing-aggregations.png" alt-text="Screenshot of the menu to change aggregations of a field."::: 
 4. If you want to personalize a specific visual further, especially if you just want to tweak it slightly, use the **Personalize this visual** option found on the top right when hovering over a visual. Read [what report users can change](power-bi-personalize-visuals.md#what-report-users-can-change), to see the full list of customization available through this experience. 
 
-    :::image type="content" source="media/service-quick-create-report/personalize-visual.png" alt-text="Screenshot of the personalize this visual feature."::: 
+    :::image type="content" source="media/service-quick-create-report/personalize-visual.png" alt-text="Screenshot of the Personalize this visual feature."::: 
 5. If you want to see all the rows of data Power BI is visualizing, select the **Show data table** button on the top left.  
 
     :::image type="content" source="media/service-quick-create-report/show-data-table.png" alt-text="Screenshot of the show table button in the app bar.":::  
@@ -61,18 +61,28 @@ The data being visualized within the report is always based on the data currentl
 
 This makes it very easy to iteratively explore your data, jumping back and forth between filtering in the grid and visualizing with Power BI, until you find the insights you’re looking for. 
 
+## Save the report and dataset
+
+Once you’ve finished your exploration and are ready to save, just select the **Save** button in the app bar, give it a name, and pick a workspace. If your organization has enabled sensitivity label, set a label. You can save to any workspace that you have a Contributor, Member, or Admin role assigned. As a free user, you can save to your personal My Workspace.
+
+Once you've saved the report, we give you a link to access it in the Power BI service. Selecting the link opens the report in a new tab. Once you save this report, it becomes a normal Power BI report. You can share it, package it in an app, subscribe to email updates, or even download the .pbix to make further modifications. 
+
+The dataset that gets saved through this flow is automatically configured as DirectQuery with single sign-on (SSO) enabled. Thus, it will always be up to date and respect Dataverse security settings. Of course, once you’ve saved the report and dataset, you can go into the dataset’s settings and change it later. 
+
+If you already have credentials in Power BI configured for the specific Dataverse environment you’re connecting to, and it isn’t set to SSO, we don’t automatically override this. Instead, we ask you to decide how you want to handle your credentials. You can choose to either keep what’s already stored in Power BI or override it to use SSO. If you decide to keep what’s already in Power BI, your report may show different data when you view it in the Power BI service. If you decide to override, this also updates your existing datasets connected to the same source. 
+
+Once the report is in the Power BI service, that is where you’ll access it going forward. However, if you’d like to make it a standardized report included in your app, you can always choose to [embed it back into the app](/powerapps/maker/model-driven-apps/embedpowerbi-report-in-system-form).
+
 ## Enable this feature for your app
 
-This feature is currently in preview, so for the Visualize the list feature to show in your apps, it needs to be enabled by admins in the Power Apps Maker portal. Admins will find the option in the **Settings** dialog under **Features**. Read about [configuring app properties](/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
+For the *Visualize the list* feature to show in your apps, admins need to enable it in the Power Apps Maker portal. Admins will find the option in the **Settings** dialog under **Features**. Read about [configuring app properties](/powerapps/maker/model-driven-apps/create-model-driven-app#configure-app-properties) within the Power Apps Maker portal to learn more.      
 
 :::image type="content" source="media/service-quick-create-report/power-apps-setting.png" alt-text="Screenshot of the setting to enable this feature in the Power Apps maker portal.":::
 
 ## Known issues and limitations
 
-- Currently, the visuals generated from this flow can only be used for personal exploration. You can't share or save them.
-- Column display names aren't used within the report. You’ll see the system names in the resulting visuals.
 - You may notice more columns within the report than you see in the original view. These fields could include foreign keys for the columns or hierarchy, or URL fields that are being used within the original view for purposes other than columns. 
-- The report created through this feature is temporary, so the experience times out after a set amount of time. At that point you need to close and reopen the report to continue exploring your data. For now, the timeout occurs at one hour. 
+- The report created through this feature is temporary. Unless you decide to save it, the experience times out after a set amount of time. At that point you need to close and reopen the report to continue exploring your data. For now, the timeout occurs at one hour. 
 
 ## Next steps
 

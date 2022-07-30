@@ -36,17 +36,13 @@
     - name: Unable to load Power BI dataset list in Excel
       href: known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md    
     - name: Try it button missing on REST API pages
-      href: known-issues/known-issue-169-try-it-button-missing.md
-    - name: Matrix banded row colors appear incorrectly in service 
-      href: known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md                
+      href: known-issues/known-issue-169-try-it-button-missing.md            
     - name: DAX query fails due to parameter case sensitivity 
       href: known-issues/known-issue-166-dax-query-fails-parameter-case-sensitivity.md   
     - name: Long running, failed or stuck dataflow in Premium Gen2 
       href: known-issues/known-issue-dataflow-on-premium-gen2.md   
     - name: Filter not correct after applying bookmark
-      href: known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md   
-    - name: Uploading paginated report with same name fails 
-      href: known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md   
+      href: known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md    
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
@@ -147,9 +143,11 @@
       href: ../admin/service-support-options.md
     - name: Options for contacting support for sign-in issues
       href: ../admin/power-bi-cannot-sign-in.md
+    - name: About planned maintenance for the Power BI service
+      href: service-planned-maintenance.md     
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
     - name: Request a region move via a support request
       href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
-      href: ../fundamentals/service-tips-for-finding-help.md
+      href: ../fundamentals/service-tips-for-finding-help.md 
