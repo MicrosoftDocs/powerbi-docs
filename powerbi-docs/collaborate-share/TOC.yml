@@ -83,6 +83,8 @@
       href: ../consumer/business-user-teams-meetings.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
     - name: Use metrics to improve results  
       href: ../consumer/business-user-teams-goals.md?context=/power-bi/collaborate-share/context/context
+    - name: Lead data-driven discussions  
+      href: ../consumer/business-user-teams-share-data.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
     - name: "Get a link preview in Teams"
