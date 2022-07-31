@@ -528,16 +528,16 @@
     items:
     - name: "Introduction to deployment pipelines"
       href: deployment-pipelines-overview.md
+    - name: "Get started"
+      href: deployment-pipelines-get-started.md   
+    - name: "Assign a workspace"
+      href: deployment-pipelines-assign.md              
     - name: "Understand the deployment process"
       href: deployment-pipelines-process.md
+    - name: "Automate deployment pipelines"
+      href: deployment-pipelines-automation.md         
     - name: "Best practices"
       href: deployment-pipelines-best-practices.md
-    - name: "Automate deployment pipelines"
-      href: deployment-pipelines-automation.md     
-    - name: "Get started"
-      href: deployment-pipelines-get-started.md
-    - name: "Assign a workspace"
-      href: deployment-pipelines-assign.md        
     - name: "Troubleshooting"
       href: deployment-pipelines-troubleshooting.yml      
   - name: Accessibility
