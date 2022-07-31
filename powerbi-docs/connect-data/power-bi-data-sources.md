@@ -65,8 +65,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Denodo | Yes | Yes | Yes | Yes | Yes | Yes |
 | Dremio | Yes | Yes | Yes | Yes | Yes | Yes |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
-| Dynamics 365 Business Central | Yes | Yes | No | No | No | No |
-| Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | Yes |
+| Dynamics 365 Business Central | Yes | Yes | No | No | No | Yes |
+| Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Customer Insights | Yes | Yes | No | No | No | No |
 | Dynamics NAV | Yes | Yes | No | No | No | No |
 

@@ -6,7 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: pbi-collaborate-share
+ms.subservice: pbi-troubleshooting
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 06/13/2022
