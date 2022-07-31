@@ -12,7 +12,7 @@ ms.date: 07/31/2022
 
 # Debug Power BI custom visuals
 
-This article describes some basic debugging procedures you can use when developing your visual. After reading this article you should be able use the following methods to debug your visual:
+This article describes some basic debugging procedures you can use when developing your visual. After reading this article, you should be able use the following methods to debug your visual:
 
 * [Insert breakpoints](#insert-breakpoints)
 * [Catch exceptions](#catch-exceptions)
@@ -67,13 +67,13 @@ public update(options: VisualUpdateOptions) {
 
 ## Break on exceptions
 
-You can also set the browser to break on caught exceptions. This stops code execution wherever an error happens, and allows you to debug from there.
+You can also set the browser to break on caught exceptions. Breaking stops code execution wherever an error happens, and allows you to debug from there.
 
-### [Edge](#tab/Edge)
+### [Microsoft Edge](#tab/Edge)
 
 1. Open **developer tools** (F12).
 2. Go to the **Sources** tab.
-3. Click the **Pause on exceptions** icon (stop sign with a *pause* symbol).
+3. Select the **Pause on exceptions** icon (stop sign with a *pause* symbol).
 4. Select **Pause on caught exceptions**.
 
     ![Screenshot shows the Debugger tab with Break on all exceptions selected.](media/visuals-how-to-debug/how-to-debug-edge-2.png)
@@ -82,7 +82,7 @@ You can also set the browser to break on caught exceptions. This stops code exec
 
 1. Open **developer tools** (F12).
 2. Go to the  **Sources** tab.
-3. Click the **Pause on exceptions** icon (stop sign with a pause symbol).
+3. Select the **Pause on exceptions** icon (stop sign with a pause symbol).
 4. Select the **Pause On Caught Exceptions** check box.
 
     ![Screenshot shows Sources tab with Pause On Caught Exceptions selected.](media/visuals-how-to-debug/how-to-debug-chrome.png)
