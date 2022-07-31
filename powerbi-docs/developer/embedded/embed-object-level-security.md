@@ -7,11 +7,74 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/21/2022
+ms.date: 07/31/2022
 ---
 
 # Object level security
 
-object-level security (OLS) enables model authors to secure sensitive tables or columns from report viewers– sensitive data, for example includes personally identifiable information (PII). From the standpoint of the user without proper access, the secured table or column does not exist. In addition, object names and metadata are also secured to prevent a malicious user from discovering that such an object even exists. This added layer of security prevents users without the appropriate access levels from discovering business critical or sensitive personal information. Authoring OLS rules in the Power BI dataset can be performed with tools that utilize the XMLA endpoint. Be sure to check out the public preview object level security announcement for more details and how to enable this feature!
+Object-level security (OLS) enables model authors to secure specific tables or columns from report viewers. For example, a column that includes personally identifiable information (PII) can be restricted so that only certain viewers can see and interact with it. In addition, you can also restrict object names and metadata. This added layer of security prevents users without the appropriate access levels from discovering business critical or sensitive personal information like employee or financial records. For viewers that don’t have the requisite permission, it's as if the secured tables or columns don't exist.  
 
-https://powerbi.microsoft.com/en-us/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/
+Authoring OLS rules in the Power BI dataset can be performed with tools that utilize the XMLA endpoint. 
+
+https://powerbi.microsoft.com/en-us/blog/object-level-security-ols-now-available-for-public-preview-in-power-bi-premium/
+
+## Create a report that uses OLS
+
+Like RLS, OLS is also defined within model roles. Currently OLS definitions are not created natively in Power BI Desktop. You can use external tools such as [Tabular Editor](https://tabulareditor.github.io/) to set OLS rules on Power BI Desktop datasets. You can also can set rules in the service through the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) using [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) or [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+
+### Configure object level security using tabular editor
+
+1. In Power BI Desktop, create the roles that will define your OLS rules. Select on the **Manage Roles** button in the Modeling tab on the ribbon.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+2. On the External Tools ribbon, select **Tabular Editor**. If you don’t see the Tabular Editor button, install the [program](https://tabulareditor.github.io). When open, Tabular Editor will automatically connect to your model.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+3. In the model view, select the drop-down under Roles. The roles created in the previous step will appear.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+4. Select the role you want to enable an OLS definition and edit the rule to *None* or *Read*.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+5. After you’ve defined object-level security for the roles, save your changes.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+6. In Power BI Desktop, publish your dataset to the Power BI service. In the Power BI service, navigate to the **Security** page by selecting the **more options** menu on the dataset. Then assign the members or groups to their appropriate roles, and click **Save**.
+
+  :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+The object level security rules are now defined. Users who don't have the requisite permission will receive a message that the field doesn't exist for all report visuals using the field.
+
+### OLS with the XMLA endpoint
+
+To query the dataset directly or set up OLS rules with TOM or TMSL, first enable the XMLA endpoint, so you can use tools like SQL Server Management Studio (SSMS).
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+When querying directly, if the current user doesn’t have access to OLS secured objects, the error message returned will not disclose the existence of OLS secured objects. It will be the same error message as if the objects did't exist.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+## Embed a report that use object level security
+
+The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for RLS. To learn more about OLS see Object-level security.
+
+## Considerations and limitations
+
+* Datasets with OLS configured for one or more table or column objects are not supported with these Power BI features:
+
+  * Q&A visualizations
+  * Quick insights visualizations
+  * Smart narrative visualizations
+  * Excel Data Types gallery
+
+* Row-level security and object-level security cannot be combined from different roles because it could introduce unintended access to secured data. An error is generated at query time for users who are members of such a combination of roles.
+
+* Dynamic calculations (measures, KPIs, DetailRows) are automatically restricted if they reference a secured table or column. While you can't explicitly secure a measure, you can implicitly secure a measure by updating the expression to refer to a secured table or column.
+
+* Relationships that reference a secured column work provided the table the column is in is not secured.
