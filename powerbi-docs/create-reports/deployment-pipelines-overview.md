@@ -16,7 +16,7 @@ In today’s world, analytics is a vital part of decision making in almost every
 
 The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, datasets and dataflows.
 
-## How to use deployment pipelines?
+## Learn to use deployment pipelines
 
 You can learn how to use the deployment pipelines tool by following these links.
 
@@ -24,7 +24,7 @@ You can learn how to use the deployment pipelines tool by following these links.
 
 * [Get started with deployment pipelines](deployment-pipelines-get-started.md) - A Power BI article that explains how to create a pipeline, as well as key functions such as backward deployment and deployment rules.
 
-## How does the pipeline look?
+## Pipeline structure
 
 Deployment pipelines is designed as a pipeline with three stages:
 
