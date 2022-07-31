@@ -1,24 +1,24 @@
 ---
-title: How to debug Power BI visuals
-description: This article describes how to debug Power BI visuals.
+title: How to debug Power BI custom visuals
+description: This article describes procedures the developer can use to debug Power BI custom visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/14/2021
+ms.date: 07/31/2022
 ---
 
-# Debugging Power BI visuals
+# Debug Power BI custom visuals
 
 This article describes some basic debugging procedures you can use when developing your visual. After reading this article you should be able use the following methods to debug your visual:
 
-* [Insert breakpoints](#using-breakpoints)
+* [Insert breakpoints](#insert-breakpoints)
 * [Catch exceptions](#catch-exceptions)
 * [Log exceptions](#log-exceptions-with-a-decorator)
 
-## Using breakpoints
+## Insert breakpoints
 
 The visual's entire JavaScript is reloaded every time the visual is updated Therefore, any breakpoints you add will be lost when the debug visual is refreshed. As a workaround, use `debugger` statements in your code. It's recommended to turn off auto reload while using `debugger` in your code.
 Here's an example of how to use a `debugger` statement in your *update* method.
