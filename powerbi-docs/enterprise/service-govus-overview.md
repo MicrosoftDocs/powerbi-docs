@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/05/2022
+ms.date: 07/29/2022
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -108,6 +108,18 @@ To get the US government cloud IP ranges, download the [Azure IP Ranges and Serv
 For more information about Microsoft Azure Government cloud services, see [Azure Government documentation](/azure/azure-government/).
 
 To set up firewalls for SQL databases, see [Create and manage IP firewall rules](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+
+## Cross-Cloud B2B
+
+You can use Power BI's B2B capabilities across Microsoft Azure clouds by configuring Microsoft cloud settings for B2B collaboration. Read [Microsoft cloud settings](/azure/active-directory/external-identities/cross-tenant-access-overview#microsoft-cloud-settings) to learn how to establish mutual B2B collaboration between the Microsoft Azure global cloud and  Microsoft Azure Government.
+
+There are some limitations to the B2B experience that you should be aware of:
+
+* Guest users may already have a Power BI license that was assigned to them through their own organization. But “Bring your own license” doesn’t work across different Microsoft Azure clouds. A new license has to be assigned to these guest users by the provider tenant. 
+
+* New external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences.
+
+* On the Home page, the “From external orgs” tab won't list content shared from other clouds.
 
 ## Power BI feature availability
 

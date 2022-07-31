@@ -29,7 +29,7 @@ Sometimes when working with close colleagues, collaboration for small teams can 
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support team BI. The primary focus is small team collaboration.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.png" alt-text="Image shows a diagram of team B I, which is about small team collaboration. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.png" alt-text="Image shows a diagram of team BI, which is about small team collaboration. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 

@@ -1,5 +1,5 @@
 ---
-title: Email subscriptions for Power BI reports and dashboards
+title: Email subscriptions for reports and dashboards in the Power BI service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
@@ -8,11 +8,11 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/20/2022
+ms.date: 07/21/2022
 LocalizationGroup: Common tasks
 ---
 
-# Email subscriptions for Power BI reports and dashboards
+# Email subscriptions for reports and dashboards in the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -39,7 +39,7 @@ Whether you're subscribing to a dashboard or to a report page, the process is si
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscriber.png" alt-text="select the Subscribe icon":::
 
-Subscribing to a paginated report is slightly different, as outlined below [Subscribe to paginated reports](#subscribe-to-paginated-reports).
+Subscribing to a paginated report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
@@ -131,7 +131,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
-- You can't create data-driven subscriptions for paginated reports.
+- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services.
 
 
 ## Manage subscriptions
