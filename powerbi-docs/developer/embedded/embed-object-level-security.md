@@ -49,11 +49,16 @@ If a user does a direct query but doesn’t have access to OLS secured objects, 
 
 :::image type="content" source="./media/embed-object-level-security/error-message.png" alt-text="Screenshot showing error message that column can't be found or may not be used.":::
 
-### Embed paginated reports with OLS
-
 ## Embed a report that use object level security
 
-The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for RLS. To learn more about OLS, see Object-level security.
+The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for RLS.
+
+If the report you want to embed is using one of the following scenarios, you might need to take the following extra steps:
+
+* [Paginated reports](embed-paginated-reports.md)
+* [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md)
+* Azure AD
+* Single sign-on
 
 ## Considerations and limitations
 
