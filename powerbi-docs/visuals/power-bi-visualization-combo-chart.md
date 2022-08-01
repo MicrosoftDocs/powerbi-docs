@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/30/2022
-# ms.custom: sample-Retail-Analysis
+ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI

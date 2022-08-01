@@ -133,14 +133,13 @@ KPIs are also available in the Power BI service and on your mobile devices. It g
 
 :::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-result.png" alt-text="Screenshot of the KPI visualization.":::
 
-
 ## Considerations and troubleshooting
 
 If your KPI doesn't look like the one above, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. You'll need to start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.
 
 ## Next steps
 
-* [Tips and Tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
+* [Tips and tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
