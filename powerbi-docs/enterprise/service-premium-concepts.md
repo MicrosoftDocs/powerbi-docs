@@ -7,13 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 08/01/2022
 LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
 
 >[!TIP]
->This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch the [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo) video, which illustrates some of the Gen2 features described in this article.
+>This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch these videos which illustrate some of the Gen2 features described in this article.
+>* [Gen2 fundamentals and capacity analytics deep dive](https://go.microsoft.com/fwlink/?linkid=2202475)
+>* [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo)
 
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis.
 
