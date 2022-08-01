@@ -12,7 +12,7 @@ ms.date: 07/17/2022
 
 # Licensing and transactability enforcement (Public preview)
 
-When you create Power BI visuals for download on AppSource, you can now manage and enforce their licenses using Microsoft systems. The [licensing API](#licensing-api) enables you to assign and unassign licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/). You can also enforce licenses to make sure that only licensed users can access your visuals.
+When you create Power BI visuals for download on AppSource, you can now manage and enforce their licenses using Microsoft systems. The end-user assigns and manages licenses using familiar tools like [Microsoft 365 admin center](https://admin.microsoft.com/), and the [licensing API](#licensing-api) lets you enforce these licenses and ensure that only licensed users can render the visuals.
 
 ## License enforcement process
 
@@ -30,7 +30,9 @@ The following table illustrates the steps involved in managing your visual licen
 ## Licensing API
 
 The **Licensing API** allows Power BI visual developers to enforce Power BI visual licenses. The API supports retrieving the information on Power BI visual licenses that are assigned to the Power BI user. It also enables triggering the licensing related notifications that will appear on the Power BI visual and inform the user that they need to purchase the missing licenses.
-The visual shouldn't display its own licensing UX, instead use one of Power BI supported predefined notifications as detailed below.  
+The visual shouldn't display its own licensing UX, instead use one of Power BI supported predefined notifications as detailed below.
+
+Learn more about Power BI licensing see [license enforcement](custom-visual-licenses.md).
 
 >[!NOTE]
 >The **Licensing API** is available from version 4.7. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
