@@ -43,6 +43,8 @@
       href: datamarts/datamarts-get-started.md   
     - name: "Analyzing datamarts (preview)"
       href: datamarts/datamarts-analyze.md         
+    - name: "Sharing and discovery with datamarts (preview)"
+      href: datamarts/datamarts-sharing-discovery.md           
     - name: "Create reports with datamarts (preview)"
       href: datamarts/datamarts-create-reports.md         
     - name: "Access control in datamarts (preview)"

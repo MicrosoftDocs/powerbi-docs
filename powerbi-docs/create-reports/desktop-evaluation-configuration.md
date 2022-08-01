@@ -28,7 +28,7 @@ Power BI offers two settings which impact the situations outlined above:
 ## Maximum number of simultaneous evaluations
 
 You can control the number of simultaneous evaluations and thereby influence the level of parallelization for query execution in PowerQuery. By default, the maximum number of simultaneous evaluations is equal to the number of logical CPU cores on the machine.
-The minimum value is 1 and the maximum value is equivalent to the number of logical CPU cores on the machine.
+The minimum value is 2 and the maximum value is equivalent to the number of logical CPU cores on the machine or 30, whichever is largest.
 
 ## Maximum memory used per simultaneous evaluation
 

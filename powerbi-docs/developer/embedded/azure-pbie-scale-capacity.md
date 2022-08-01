@@ -9,19 +9,19 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/01/2021
+ms.date: 06/27/2022
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
 
 This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure. Scaling allows you to increase or decrease the size of your capacity.
 
-This assumes you created a Power BI Embedded capacity. If you haven't, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
-
-For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedded Gen 2](power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2).
+This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven't, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
 
 > [!NOTE]
-> With Gen1, a scaling operation can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) you can scale your Power BI Embedded resource without experiencing any downtime.
+>
+> * With Gen1 capacities, a scaling operation can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
+> * To autoscale a gen2 capacity see [Autoscaling](#autoscaling).
 
 ## Scale a capacity
 
@@ -59,12 +59,19 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
     > [!div class="mx-imgBorder"]
     > ![Screenshot current tier information.](media/azure-pbie-scale-capacity/azure-portal-confirm-tier.png)
 
+## Autoscaling
+
+Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
+
+* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
+
+* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
+
+* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
-
-> [!div class="nextstepaction"]
-> [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+* [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
+* [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

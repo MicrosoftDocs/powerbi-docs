@@ -305,7 +305,7 @@ There are a few considerations to keep in mind while working with private endpoi
 
 * Any uses of external images or themes aren't available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
-* Usage metrics do *not* work when private endpoints are enabled.
+* If your organization is using **Azure Private Link** in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over Private Links. If your organization is using **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report will not show any data.
 * The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
 * Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link** in Power BI.
@@ -315,6 +315,7 @@ There are a few considerations to keep in mind while working with private endpoi
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
 * Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. A potential workaround is to turn off Private Links, config the gateway, and then reenable the Private Links. 
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
+* Private Links resource REST APIs don't support tags.
 
 ## Next steps
 

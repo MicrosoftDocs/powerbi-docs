@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/08/2022
+ms.date: 07/18/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library
@@ -36,7 +36,7 @@ In this video, watch Amanda demo creating a report from a SharePoint list in the
 
     A new browser tab opens with an automatically generated report showing interesting insights based on your data.
 
-2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations. Currently you can add a maximum of three measures and four categories. 
+2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and deselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations. Currently you can add a maximum of three measures and four categories. 
 
     :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-add-charts.png" alt-text="Screenshot of Add more charts and make other changes.":::
 
@@ -74,7 +74,7 @@ The data in the report will update regularly to stay in sync with the list or li
 
 ## Licenses
 
-Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data, but to enter the full edit experience, publish reports, access reports that others have published, or delete reports, you need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
+Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data. You need a Power BI Pro license to enter the full edit experience, publish reports, access reports that others have published, or delete reports. Your report readers also need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
 
 ## Considerations and limitations
 

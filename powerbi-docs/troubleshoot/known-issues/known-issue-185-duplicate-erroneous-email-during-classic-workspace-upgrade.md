@@ -5,7 +5,8 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.date: 05/25/2022
+ms.subservice: pbi-troubleshooting
+ms.date: 07/27/2022
 ms.custom: known-issue-185
 ---
 
@@ -13,7 +14,7 @@ ms.custom: known-issue-185
 
 **APPLIES TO:** ✔️ Classic Workspaces
 
-**Status:** Open
+**Status:** Fixed: July 6, 2022
 
 **Problem area:** Share and Collaborate
 

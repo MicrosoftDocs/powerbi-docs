@@ -6,6 +6,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
+            "redirect_url": "power-bi/troubleshoot/service-planned-maintenance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
             "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
             "redirect_document_id": false
@@ -2647,6 +2662,11 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },

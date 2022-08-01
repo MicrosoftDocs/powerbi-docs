@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/29/2022
+ms.date: 07/12/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,28 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## July 2022
+
+### Data in space - your data, everywhere (iOS)
+
+Now you can connect your digital business data to real-world places in augmented reality, putting real-time data at the fingertips of employees where they need it, enabling them to make better, faster, more informed data-driven decisions. [Learn more!](./mobile-apps-data-in-space-overview.md)
+
+![Screenshot of showing Power BI reports pinned to real-world locations in augmented reality using the data in space feature.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-data-in-space-final-result.png)
+
+### Find content that's relevant to you (Windows)
+
+Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you on the home page in the new **Recommended** strip.
+
+![Screenshot of Windows app home screen showing recommended content.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-home-screen-recommended.png)
+
+## June 2022
+
+### Manage metrics with multiple milestones and targets (Android and iOS)
+Now you can track and update metrics that feature multiple targets. Open a metric's details pane to see the milestones, as well as the final target, visualized alongside your current progress. It’s now easier than ever to get a snapshot of how you’re performing against your metrics!
+
+![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metric-details-pane.png)
+
 
 ## May 2022
 
@@ -217,12 +239,12 @@ We've added support for notch displays on iPhone and iPads, giving you more scre
 ### September 2020
 #### Power BI app (preview) for HoloLens 2 is out in the stores!
 
-The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the tool belt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
 
 
 ### August 2020
 #### We've improved how you navigate to your content (iOS and Android)
-Now you can get around your content quickly and easily with a **new navigation tree**, available from the header drop down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages. It's never been so easy to get from one page to another! Check it out! 
+Now you can get around your content quickly and easily with a **new navigation tree**, available from the header drop-down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages. It's never been so easy to get from one page to another! Check it out! 
 
 ![Screenshot of Power B I mobile app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
 
@@ -550,9 +572,9 @@ Currently available for iOS and Android devices. Windows support coming soon.
 
 Read the Power BI [blog post about dashboard comments](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
 
-#### Single Sign-On (Windows)
+#### Single sign-on (Windows)
 
-Single Sign-On (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
+Single sign-on (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
 Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. Read more about [SSO and the Windows mobile apps](mobile-windows-10-app-single-sign-on-sso.md).
 
 ### July 2018
@@ -1143,7 +1165,7 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 #### iOS (iPhone and iPad)
 * New & improved navigation: New drawer navigation maximizes screen real estate and improves navigation throughout the app. 
 * Group workspaces: Collaborate with colleagues in group workspaces. 
-* Authentication process upgrade Quality, performance, and functionality improvements enhance the app authentication process, including support for SSO (Single Sign-On). 
+* Authentication process upgrade Quality, performance, and functionality improvements enhance the app authentication process, including support for SSO (single sign-on). 
 * Improved data representation of line chart tiles to better compress the x-axis.
 * Improved user experience when using with role-based security.
 * Touch-optimized improvements for matrix chart tiles: Now you can easily scroll through your matrix data and view all its data easily and intuitively.

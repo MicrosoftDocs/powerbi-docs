@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/09/2022
+ms.date: 06/29/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -82,7 +82,7 @@ Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM (GB) | DirectQuery/Live connection (per second) | Max memory per query [GB] | Model refresh parallelism<sup>1</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | --- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
@@ -98,7 +98,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 <sup>2</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 >[!NOTE]
->Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
+>Using a single larger SKU (for instance one P2 SKU) can be preferable to combining smaller SKUs (for instace two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
 ### Capacity workloads
 

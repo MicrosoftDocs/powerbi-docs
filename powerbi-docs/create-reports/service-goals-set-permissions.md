@@ -1,5 +1,5 @@
 ---
-title: Protect your scorecards with metric-level permissions (preview)
+title: Protect your scorecards with metric-level permissions
 description: Set up metric-level permissions.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,9 +8,11 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 06/29/2022
 ---
-# Protect your scorecards with metric-level permissions (preview)
+# Protect your scorecards with metric-level permissions
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 In many organizations, different roles should have access to view and update different metrics. For example, maybe only managers should see metrics related to human resources and finances, while all employees can view metrics related to operations.  
  
@@ -28,7 +30,7 @@ Follow these steps to get started setting up your permissions.
 4.	Select the new **Permissions** tab. 
 5.	Select **Add role** or select **More options (...)** for an existing role to open the  **Role settings** page.
 
-    :::image type="content" source="media/service-goals-create/goals-permissions-settings-pane.png" alt-text="Screenshot of Open metric-level permissions by accessing the scorecard settings and selecting permissions.":::
+    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-settings-pane.png" alt-text="Screenshot of opening metric-level permissions by accessing the scorecard settings and selecting permissions.":::
 
 On the **Role settings** page, you  can create roles with different permission sets and assign those roles to specific user groups. We support different types of permissions at the metric level:
 
@@ -39,7 +41,7 @@ On the **Role settings** page, you  can create roles with different permission s
     - **Status**: Grants access to update status in a check-in.
     - **Current**: Grants access to update the current value in a check-in.
 
-:::image type="content" source="media/service-goals-create/goals-permissions-create-role.png" alt-text="Screenshot of A snapshot of the metric-level permission settings open and editable.":::
+:::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-role.png" alt-text="Screenshot of the metric-level permission settings open and editable.":::
 
 ### Inheritance 
 
@@ -51,9 +53,9 @@ Another aspect of metric-level permissions is enabling a *default* permission mo
 
 The default permissions apply to anyone accessing the scorecard who is not a member of another role already.  If someone is a member of another role, they assume those permissions over the default permissions. 
 
-- Select **More options (...)** in the role card and select **Set as default**.
+- Select **More options (...)** in the role card and then select **Set as default**.
 
-    :::image type="content" source="media/service-goals-create/goals-permissions-create-default.png" alt-text="Screenshot of Set a role to become the default role by choosing it from the overflow menu.":::
+    :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu.":::
 
 Metric-level permissions roles apply to the underlying scorecard dataset we generate, with the exception of the default role. For example, say you create a role and assign the sales team view access to five metrics on the scorecard. Those five metrics are the ones they'll see in the underlying dataset as well. 
 

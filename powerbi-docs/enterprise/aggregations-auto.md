@@ -35,6 +35,8 @@ Automatic aggregations are supported for the following data sources:
 - Azure Synapse Dedicated SQL pool
 - Google BigQuery
 - Snowflake
+- Databricks
+- Amazon Redshift
 
 ### Supported modes
 

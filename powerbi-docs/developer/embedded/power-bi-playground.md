@@ -25,9 +25,6 @@ The playground has the following main experiences:
 * [Showcases](#showcases)
 * [Learning center](#learning-center)
 
->[!TIP]
->For a demonstration of how to best use the playground, watch this [video](https://microsofteur-my.sharepoint.com/personal/alonba_microsoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground%2FPower%20BI%20Embedded%20Playground%2Emp4&parent=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground)
-
 ## Developer sandbox
 
 Go to the developer sandbox for hands-on experience using our client APIs. You can use the APIs with our sample report or with your own report.

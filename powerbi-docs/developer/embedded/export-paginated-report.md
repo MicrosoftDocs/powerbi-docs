@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/12/2022
+ms.date: 07/04/2022
 ---
 
 # Export paginated report to file
@@ -20,7 +20,8 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are: 
+* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+
   * *.tiff* (default)
   * *.bmp*
   * *.emf*
@@ -330,13 +331,24 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
+* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+
+  * The caller is a service principal or service principal profile.
+  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+
+* Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
+
+  * The caller is a service principal or service principal profile.
+  * The caller is a master user and an effective identity was provided.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
 * If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
+
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online. 
 
 ## Next steps
 
