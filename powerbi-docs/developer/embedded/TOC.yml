@@ -97,16 +97,20 @@
       href: service-principal-profile-sdk.md
     - name: "Migrate to the service principal profiles model"
       href: migration-to-sp-profiles.md
-  - name: RLS
+  - name: Security
     items:
-    - name: "Row-level security"
-      href: embedded-row-level-security.md
-    - name: "Embed a report with cloud-based RLS"
-      href: cloud-rls.md
-    - name: "RLS in embedded paginated reports"
-      href: paginated-reports-row-level-security.md
+    - name: RLS
+      items:
+      - name: "Row-level security"
+        href: embedded-row-level-security.md
+      - name: "Embed a report with cloud-based RLS"
+        href: cloud-rls.md
+      - name: "RLS in embedded paginated reports"
+        href: paginated-reports-row-level-security.md
     - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
+    - name: "Object level security (OLS)"
+      href: embed-object-level-security.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"

@@ -53,7 +53,7 @@ If a user does a direct query but doesn’t have access to OLS secured objects, 
 
 The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for RLS.
 
-If the report you want to embed is using one of the following scenarios, you might need to take the following extra steps:
+If the report you want to embed is using one of the following scenarios, you might need to take some extra steps:
 
 * [Paginated reports](embed-paginated-reports.md)
 * [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md)
