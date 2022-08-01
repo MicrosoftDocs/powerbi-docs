@@ -39,9 +39,9 @@ Combo charts are a great choice:
 
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
 
@@ -49,17 +49,13 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the Retail Analysis sample.
+This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis).
 
-1. From the **Home** page, select **+ New Report**.
+1. Open the Power BI service, then select **Get data** in the bottom left corner :::image type="icon" source="media/power-bi-visualization-combo-chart/get-data-arrow.png":::.
 
-1. Under **Add data to get started**, select **these options**.
+1. On the Get Data page that appears, select **Samples**.
 
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-try-these-options.png" alt-text="Screenshot of 'these options' link.":::
-
-1. Select **Discover content**, then select **Samples**.
-
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-discover-content-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
+    :::image type="content" source="media/power-bi-visualization-combo-chart/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
 1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
 
@@ -71,7 +67,7 @@ This tutorial uses the Retail Analysis sample.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
-1. Select **+** to add a new page :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png":::.
+1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 ---
 
@@ -90,9 +86,9 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
    a. From the Fields pane, select **Sales** \> **This Year Sales** > **Value**.
 
-   b. Select **Sales** \> **Gross Margin This Year** to add it to the **Y-axis** well.
+   b. Select **Sales** \> **Gross Margin This Year** and drag it to the **Y-axis** well.
 
-   c. Select **Time** \> **FiscalMonth** to add it to the **X-axis** well.
+   c. Select **Time** \> **FiscalMonth** and drag it to the **X-axis** well.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-column-chart-values.png" alt-text="Screenshot of the initial column chart values.":::
 
