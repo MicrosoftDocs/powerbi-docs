@@ -16,7 +16,10 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 ## Create a report that uses OLS
 
-Like RLS, OLS is also defined within model roles. Currently OLS definitions aren't created natively in Power BI Desktop. You can use external tools such as [Tabular Editor](https://tabulareditor.github.io/) to set OLS rules on Power BI Desktop datasets. You can also set rules in the service through the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) using [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) or [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+Like RLS, OLS is also defined within model roles. Currently, you can't create OLS definitions natively in Power BI Desktop.
+
+* To create rules on **Power BI Desktop** datasets, use external tools such as [Tabular Editor](https://tabulareditor.github.io/).  
+* To create rules in **Power BI Service**, set the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) using [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) or [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 ### Configure object level security using tabular editor
 
@@ -39,7 +42,7 @@ Like RLS, OLS is also defined within model roles. Currently OLS definitions aren
 
 The OLS rules are now defined. Users who don't have the requisite permission will receive a message that the field doesn't exist for all report visuals using the field.
 
-### OLS with the XMLA endpoint
+### Create rules for OLS using XMLA endpoints
 
 To query the dataset directly or set up OLS rules with TOM or TMSL, first enable the XMLA endpoint, so you can use tools like SQL Server Management Studio (SSMS).
 
