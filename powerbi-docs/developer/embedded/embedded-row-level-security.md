@@ -30,9 +30,9 @@ RLS can be used as a security tool in many situations. Some common cases where R
 
 * Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset.
 
-## How to use RLS with Power BI embedded analytics
+## How to embed a report that uses RLS
 
-To use RLS with Power BI embedded analytics, you'll need to [configure the embed token](generate-embed-token.md) to account for the user and role.
+To embed a report that uses RLS, you'll need to [configure the embed token](generate-embed-token.md) to account for the user and role.
 
 To configure the embed token, you'll need to provide the following information:
 
@@ -58,7 +58,7 @@ To learn more about OLS, see [Object-level security](/analysis-services/tabular-
 ## Considerations and limitations
 
 * Assignment of users to roles within the Power BI service doesn't affect RLS when using an embed token.
-* While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it applies to the data.
+* Although RLS setting don't apply to admins or members with edit permissions, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done only using CustomData.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others items, the list contains a single identity.
 
