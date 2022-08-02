@@ -48,21 +48,13 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
+This tutorial uses the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
-1. Open the Power BI service, then select **Get data** in the bottom left corner :::image type="icon" source="media/power-bi-visualization-combo-chart/get-data-arrow.png":::.
-
-1. On the Get Data page that appears, select **Samples**.
+1. On the Home page of the Power BI service, scroll down to **Getting started with Power BI** and select **Sample reports**.
 
     :::image type="content" source="media/power-bi-visualization-combo-chart/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
-1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
-
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-connect.png" alt-text="Screenshot of Retail Analysis Sample image and Connect button.":::
-
-1. Select the **Retail Analysis Sample** report, rather than the dataset. 
-
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
+1. Choose **Retail Analysis Sample**. Power BI loads the sample dataset.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 

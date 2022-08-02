@@ -35,11 +35,9 @@ A designer bases a KPI visual on a specific measure. The intention of the KPI is
 
 A KPI dataset needs to contain goal values for a KPI. If your dataset doesn't contain goal values, you can create them by adding an Excel sheet with goals to your data model or PBIX file.
 
-## Prerequisites
-
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+To follow along, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** \> **Open report**.
 
@@ -51,21 +49,13 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
+To follow along, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
-1. Open the Power BI service, then select **Get data** in the bottom left corner :::image type="icon" source="media/power-bi-visualization-combo-chart/get-data-arrow.png":::.
+1. On the Home page of the Power BI service, scroll down to **Getting started with Power BI** and select **Sample reports**.
 
-1. On the Get Data page that appears, select **Samples**.
+    :::image type="content" source="media/power-bi-visualization-kpi/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
-    :::image type="content" source="media/power-bi-visualization-combo-chart/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
-
-1. Select **Retail Analysis Sample**, and then **Connect**. Power BI loads the sample dataset.
-
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-connect.png" alt-text="Screenshot of Retail Analysis Sample image and Connect button.":::
-
-1. Select the **Retail Analysis Sample** report, rather than the dataset. 
-
-    :::image type="content" source="media/power-bi-visualization-kpi/power-bi-retail-analysis-sample-report.png" alt-text="Screenshot of the Retail Analysis Sample report.":::
+1. Choose **Retail Analysis Sample**. Power BI loads the sample dataset.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
@@ -129,9 +119,7 @@ In this example, you'll create a KPI that measures the progress you've made towa
 
     * **Date** - when set to **On**, the visual shows the date. Optionally, change the font, and its style and color.
 
-KPIs are also available in the Power BI service and on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
-
-:::image type="content" source="media/power-bi-visualization-kpi/power-bi-kpi-result.png" alt-text="Screenshot of the KPI visualization.":::
+KPIs are also available on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 
 ## Considerations and troubleshooting
 
