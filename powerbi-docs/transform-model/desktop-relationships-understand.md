@@ -160,7 +160,7 @@ There are several DAX functions that are relevant to model relationships. Each f
 
 - [RELATED](/dax/related-function-dax): Retrieves the value from "one" side of a relationship. It's useful when involving calculations from different tables that are evaluated in [row context](/dax/dax-overview#row-context).
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Retrieve a table of rows from "many" side of a relationship.
-- [USERELATIONSHIP](/dax/userelationship-function-dax): Forces the use of a specific inactive model relationship. It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table.
+- [USERELATIONSHIP](/dax/userelationship-function-dax): Changes the weight a specific inactive model relationship. It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. It can also be used to [resolve ambiguity in filter paths](#resolving-relationship-path-ambiguity).
 - [CROSSFILTER](/dax/crossfilter-function): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joins two or more text strings into one text string. The purpose of this function is to support multi-column relationships in DirectQuery models when tables belong to the same source group.
 - [TREATAS](/dax/treatas-function): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
@@ -246,14 +246,16 @@ The first rule match determines the path it will follow. Each description below 
 5. A path consisting of one-to-many or many-to-many relationships from source to an intermediate table followed by many-to-one or many-to-many relationships from the intermediate table to target.
 6. Any other path.
 
+If a relationship is include in all available paths, it is removed from consideration on all paths.
+
 #### Weight
-Each path is assigned a weight, which is the maximum weight of all relationships along the path. Each relationship starts out with the same default weight. The path's weight is used to choose between multiple paths in the same priority tier. The Power BI engine will not choose a path with lower priority but with higher weight. The number of relationships in the path does not affect the weight. The weight of a relationship can be set using the [USERELATIONSHIP](../../dax/userelationship-function-dax.md) function. The weight value is determined by the nesting level of the call to USERELATIONSHIP and the innermost level receives the highest value. For example, in the following statement the highest weight value is assigned to the relationship between **Sales[ProductID]** and **Product[ProductID]**, followed by the relationship between **Inventory[ProductID]** and **Product[ProductID]**:
+Each path is assigned a weight, which is the maximum weight of all relationships along the path. Each relationship starts out with the same default weight. The path's weight is used to choose between multiple paths in the same priority tier. The Power BI engine will not choose a path with lower priority but with higher weight. The number of relationships in the path does not affect the weight. The weight of a relationship can be set using the [USERELATIONSHIP](/dax/userelationship-function-dax) function. The weight value is determined by the nesting level of the call to USERELATIONSHIP and the innermost level receives the highest value. For example, in the following statement the highest weight value is assigned to the relationship between **Sales[ProductID]** and **Product[ProductID]**, followed by the relationship between **Inventory[ProductID]** and **Product[ProductID]**:
 ```dax
 CALCULATE(CALCULATE(SUM(Sales[SalesAmount]), USERELATIONSHIP(Sales[ProductID], Product[ProductID])), USERELATIONSHIP(Inventory[ProductID], Product[ProductID]))
 ```
 
 > [!NOTE]
-> If at any point in evaluating the priority tiers above more than one path have the same priority and the same weight, Power BI will return an ambiguous path error and you will have to resolve the ambiguity yourself by influencing the weight using [USERELATIONSHIP](../../dax/userelationship-function-dax.md) or by removing or modifying relationships.
+> If at any point in evaluating the priority tiers above more than one path have the same priority and the same weight, Power BI will return an ambiguous path error and you will have to resolve the ambiguity yourself by influencing the weight using [USERELATIONSHIP](/dax/userelationship-function-dax) or by removing or modifying relationships.
 
 ### Performance preference
 
