@@ -4,12 +4,11 @@ description: This tutorial about combo charts explains when to use them and how 
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-ms.custom: video-lnv66cTZ5ho pbibetadocbug
+ms.custom: video-lnv66cTZ5ho, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/30/2022
-ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI
@@ -49,7 +48,7 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis).
+This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
 1. Open the Power BI service, then select **Get data** in the bottom left corner :::image type="icon" source="media/power-bi-visualization-combo-chart/get-data-arrow.png":::.
 

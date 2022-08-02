@@ -51,7 +51,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis).
+This tutorial uses the built-in [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
 1. Open the Power BI service, then select **Get data** in the bottom left corner :::image type="icon" source="media/power-bi-visualization-combo-chart/get-data-arrow.png":::.
 
