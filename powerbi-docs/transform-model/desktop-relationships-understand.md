@@ -114,7 +114,7 @@ When the cross filter direction is set to **Both**, another property becomes ava
 
 You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
 
-Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Precedence rules that affect ambiguity detection and path resolution are described in the [Precedence rules](#precedence-rules) topic later in this article.
+Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Priority tiers that affect ambiguity detection and path resolution are described in the [Priority tiers](#priority-tiers) topic later in this article.
 
 We recommend using bi-directional filtering only as needed. For more information, see [Bi-directional relationship guidance](../guidance/relationships-bidirectional-filtering.md).
 
