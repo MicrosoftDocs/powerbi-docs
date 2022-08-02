@@ -232,41 +232,28 @@ There are other restrictions related to limited relationships:
 > [!NOTE]
 > In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A many-to-many relationship will always be limited, as will be a one-to-many relationship when it's a cross source group relationship. To determine whether it's a cross source group relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
 
-### Precedence rules
+### Resolving relationship path ambiguity
 
-Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to the following precedence rules. The first rule match determines the path it will follow.
-1.	A path consisting of one-to-many or one-to-one relationships from filter to target. The filter must flow from the "one" side of a relationship to the other side for all relationships along the path.
-2.	A path consisting of one-to-many relationships from filter to an intermediate table followed by many-to-one relationships from intermediate table to target. The filter must flow from the "one" side of a relationship to the "many" side for all one-to-many relationships, and from the "many" side of a relationship to the "one" side of the relationship for many-to-one relationships in the path.
-3.	Any other path, including paths that contain many-to-many relationships. If at this point there are multiple paths still available, Power BI will return an error and you will have to resolve the ambiguity yourself.
+Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to the path's [priority tier](#priority-tiers) and [weight](#weight).
+
+#### Priority tiers
+The first rule match determines the path it will follow. Each description below describes the filter flowing from source to target.
+
+1. A path consisting of one-to-many relationships.
+2. A path consisting of one-to-many or many-to-many relationships.
+3. A path consisting of many-to-one relationships.
+4. A path consisting of one-to-many relationships from source to an intermediate table followed by many-to-one relationships from the intermediate table to target.
+5. A path consisting of one-to-many or many-to-many relationships from source to an intermediate table followed by many-to-one or many-to-many relationships from the intermediate table to target.
+6. Any other path.
+
+#### Weight
+Each path is assigned a weight, which is the maximum weight of all relationships along the path. Each relationship starts out with the same default weight. The path's weight is used to choose between multiple paths in the same priority tier. The Power BI engine will not choose a path with lower priority but with higher weight. The number of relationships in the path does not affect the weight. The weight of a relationship can be set using the [USERELATIONSHIP](../../dax/userelationship-function-dax.md) function. The weight value is determined by the nesting level of the call to USERELATIONSHIP and the innermost level receives the highest value. For example, in the following statement the highest weight value is assigned to the relationship between **Sales[ProductID]** and **Product[ProductID]**, followed by the relationship between **Inventory[ProductID]** and **Product[ProductID]**:
+```dax
+CALCULATE(CALCULATE(SUM(Sales[SalesAmount]), USERELATIONSHIP(Sales[ProductID], Product[ProductID])), USERELATIONSHIP(Inventory[ProductID], Product[ProductID]))
+```
 
 > [!NOTE]
-> The rules above are used only when evaluating ambiguous paths. If there is just one path between the **Source** and **Target** tables, that path is used.
-
-The following diagram shows three possible paths that Power BI can take when a filter is applied to the **Source** table and should propagate to the **Target** table.
-Notice that filters flow from top to bottom, from the **Source** table to the **Target** table. You can select the image to enlarge it.
-
-:::image type="content" source="media/desktop-relationships-understand/relationship-precedence-rules.png" alt-text="A screenshot showing a model diagram with multiple filter paths and relationships. The following bulleted list describes the diagram." lightbox="media/desktop-relationships-understand/relationship-precedence-rules-expanded.png" border="false":::
-
-- Path 1
-  - The **Source** table is related to the **Path 1 Table 1** table by a one-to-many relationship.
-  - The **Path 1 Table 1** table is related to the **Path 1 Table K** table by a one-to-many relationship.
-  - The **Path 1 Table K** table is related to the **Path 1 Table N** table by a one-to-many relationship.
-  - The **Path 1 Table N** table is related to the **Target** table by a one-to-many relationship.
-  - To emphasize what’s important, each relationship along the path from the **Source** table to the **Target** table is a one-to-many relationship.
-- Path 2
-  - The **Source** table is related to the **Path 2 Table 1** table by a one-to-many relationship.
-  - The **Path 2 Table 1** table is related to the **Path 2 Table K** table by a one-to-many relationship.
-  - The **Path 2 Table K** table is related to the **Path 2 Table N** table by a many-to-one relationship that filters in both directions.
-  - The **Path 2 Table N** table is related to the **Target** table by a many-to-one relationship that filters in both directions.
-  - To emphasize what’s important, the last two relationships along the path from the **Source** table to the **Target** table are many-to-one relationships that filter in both directions.
-- Path 3
-  - The **Source** table is related to the **Path 3 Table 1** table by a one-to-many relationship.
-  - The **Path 3 Table 1** table is related to the **Path 3 Table K** table by a many-to-many relationship that filters in one direction only, from the **Path 3 Table 1** table to the Path 3 Table K table.
-  - The **Path 3 Table K** table is related to the **Path 3 Table N** table by a many-to-one relationship that filters in both directions.
-  - The **Path 3 Table N** table is related to the **Target** table by a one-to-many relationship.
-  - To emphasize what’s important, the second relationship along the path from the **Source** table to the **Target** table is a many-to-many relationship and the third relationship along the path is a many-to-one relationship that filter in both directions.
-  
-In terms of precedence, Path 1 will be given the highest priority, followed by Path 2, and finally Path 3.
+> If at any point in evaluating the priority tiers above more than one path have the same priority and the same weight, Power BI will return an ambiguous path error and you will have to resolve the ambiguity yourself by influencing the weight using [USERELATIONSHIP](../../dax/userelationship-function-dax.md) or by removing or modifying relationships.
 
 ### Performance preference
 
