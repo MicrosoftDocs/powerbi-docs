@@ -5,8 +5,8 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
-ms.topic: conceptual
+ms.subservice: powerbi-resource
+ms.topic: troubleshooting
 ms.date: 03/02/2020
 ---
 
