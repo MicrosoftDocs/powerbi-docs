@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/09/2022
+ms.date: 08/02/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -227,6 +227,8 @@ If you find that you can't use this feature, reach out to the report owner and y
   - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
 
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
+
+- The **Data with current layout** and **Summarized data** export options are identical and the only difference is the structure of the data when exported to Excel
 
 - Power BI custom visuals and R visuals aren't currently supported.
 
