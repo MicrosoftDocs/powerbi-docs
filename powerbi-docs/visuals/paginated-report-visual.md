@@ -24,10 +24,10 @@ The paginated report visual is designed to integrate a paginated report with oth
 
 For reports with paginated report visuals, this table spells out the licenses needed for the workspace, the report creator, and the report viewer.
 
-|Workspace capacity license type | License type to _create_ reports with paginated report visuals  |License type to _view_ reports with paginated report visuals  |
+|Workspace capacity license type | License type to _create_ these reports  |License type to _view_ these reports |
 |---------|---------|---------|
 |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license | Only users with PPU licenses  |
-|[Power BI Premium capacity](../enterprise/service-premium-what-is.md) | A PPU or Power BI Pro license, and write access to the workspace  | Users with free, Pro, and PPU licenses  |
+|[Power BI Premium capacity](../enterprise/service-premium-what-is.md) | A PPU license, or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md) and write access to the Premium workspace  | Users with free, Pro, and PPU licenses  |
 
 ## Create a paginated report visual
 
