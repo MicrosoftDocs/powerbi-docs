@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/18/2022
+ms.date: 08/01/2022
 ---
 
 # Create and use the paginated report visual
@@ -22,8 +22,12 @@ The paginated report visual is designed to integrate a paginated report with oth
 
 ## Prerequisites
 
-- To access a paginated report to include in your Power BI report with a paginated report visual, you need access to a workspace in a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
-- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+For reports with paginated report visuals, this table spells out the licenses needed for the workspace, the report creator, and the report viewer.
+
+|Workspace capacity license type | License type to _create_ reports with paginated report visuals  |License type to _view_ reports with paginated report visuals  |
+|---------|---------|---------|
+|[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license | Only users with PPU licenses  |
+|[Power BI Premium capacity](../enterprise/service-premium-what-is.md) | A PPU or Power BI Pro license, and write access to the workspace  | Users with free, Pro, and PPU licenses  |
 
 ## Create a paginated report visual
 
