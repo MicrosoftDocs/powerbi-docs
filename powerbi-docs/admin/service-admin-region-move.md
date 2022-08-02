@@ -4,7 +4,7 @@ description: If the default region for your organization's Power BI data isn't o
 author: kfollis
 ms.author: kfollis
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: pbi-troubleshooting
 ms.topic: how-to 
 ms.date: 02/10/2022
 ms.custom: template-how-to; subject-moving-resources

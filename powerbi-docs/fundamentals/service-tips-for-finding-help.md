@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-fundamentals
+ms.subservice: pbi-troubleshooting
 ms.topic: conceptual
 ms.date: 09/13/2021
 LocalizationGroup: Get started
