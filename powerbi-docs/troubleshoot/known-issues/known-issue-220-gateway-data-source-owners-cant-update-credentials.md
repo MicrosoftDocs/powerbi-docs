@@ -18,8 +18,6 @@ ms.custom: known-issue-220
 
 **Problem area:** Gateway
 
-## Description of problem
-
 If you have owner permission but no gateway level permission on a data source, you may not be able to update the credentials for that data source.  The page will just show as loading and the credentials won't update.
 
 ## Symptoms
