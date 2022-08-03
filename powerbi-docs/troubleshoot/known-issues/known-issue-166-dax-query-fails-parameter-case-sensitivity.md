@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 04/23/2022
 ms.custom: known-issue-166
 ---
-# Description of problem
+# Description of known issue #166
 
 Your Power BI Report Builder report's dataset may fail if it uses DAX to connect to Analysis Services and a query parameter does not use the same case sensitivity as the report parameter.
 

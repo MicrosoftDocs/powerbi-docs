@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-214
 ---
-# Description of problem
+# Description of known issue #214
 
 You can create an Excel workbook that contains a PowerPivot data model and store it in either OneDrive Business or SharePoint.  You can then schedule and run a successful refresh through the Power BI Service.  If you then try to open the Excel workbook in Excel Desktop, the workbook won't open, resulting in either a crash or error message.
 

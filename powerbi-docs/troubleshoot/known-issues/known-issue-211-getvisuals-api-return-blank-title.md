@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-211
 ---
-# Description of problem
+# Description of known issue #211
 
 The GetVisuals() client side API doesn't return the visual title correctly when called before the report renders.
 

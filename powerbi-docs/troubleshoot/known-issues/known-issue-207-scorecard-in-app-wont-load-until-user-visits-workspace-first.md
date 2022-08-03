@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-207
 ---
-# Description of problem
+# Description of known issue #207
 
 Within a workspace app, a report author can create and include a scorecard.  Once they share the app with you, you can visit the app and view the scorecard data.  If you try to directly view the scorecard in the app and haven't visited the associated workspace before, you can't see the scorecard data.
 

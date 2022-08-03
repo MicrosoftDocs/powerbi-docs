@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-203
 ---
-# Description of problem
+# Description of known issue #203
 
 You can create a report with a decomposition tree visual that allows the report reader to expand or collapse each level. In some cases, you may see the title of a level that is collapsed as though it were expanded.
 
