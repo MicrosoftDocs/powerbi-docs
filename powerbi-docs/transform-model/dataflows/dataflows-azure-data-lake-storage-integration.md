@@ -36,7 +36,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - Attaching a dataflow with ADLS Gen 2 behind multifactor authentication (MFA) is not supported.
 
-- Finally, you can connect to any ADLS Gen 2 from the admin portal, but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
+- Finally, you can connect to any ADLS Gen 2 [from the admin portal](/power-bi/admin/service-admin-portal-azure-connections#workspace-level-storage-permissions), but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
 
 The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
 
