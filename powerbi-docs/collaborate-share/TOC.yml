@@ -80,9 +80,9 @@
     - name: Embed reports in Teams tabs
       href: service-embed-report-microsoft-teams.md
     - name: Use data for productive meetings  
-      href: ../consumer/business-user-teams-meetings.md?context=context/context
+      href: ../consumer/business-user-teams-meetings.md?context=context/context.json
     - name: Use metrics to improve results  
-      href: ../consumer/business-user-teams-goals.md?context=context/context
+      href: ../consumer/business-user-teams-goals.md?context=context/context.yml
     - name: Lead data-driven discussions  
       href: ../consumer/business-user-teams-share-data.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
     - name: Create reports from your Teams data  
