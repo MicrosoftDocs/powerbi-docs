@@ -7,13 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 08/01/2022
 LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
 
 >[!TIP]
->This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch the [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo) video, which illustrates some of the Gen2 features described in this article.
+>This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch these videos which illustrate some of the Gen2 features described in this article.
+>* [Gen2 fundamentals and capacity analytics deep dive](https://go.microsoft.com/fwlink/?linkid=2202475)
+>* [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo)
 
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis.
 
@@ -48,7 +50,7 @@ Premium Gen2 evaluates utilization by aggregating utilization records every 30 s
 
 **Background utilization** is evaluated by considering all the background operations that completed during the past 24 hours. Each background operation contributes only 1/2880 of its total CPU cost (2880 is the number of evaluation cycles in a 24-hour period).
 
-Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflect the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
+Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflects the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
 
 If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds (4 x 30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
 

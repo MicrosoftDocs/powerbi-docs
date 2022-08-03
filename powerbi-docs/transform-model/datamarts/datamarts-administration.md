@@ -74,6 +74,7 @@ The following limitations should be considered when using datamarts:
 * Datamarts currently officially support data volumes of up to 100 GB.
 * Currently datamarts don’t support the currency data type, and such data types will be converted to float.
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
+* Datamarts use port 1948 for connectivity to the SQL endpoint. Port 1433 needs to be open for datamarts to work.
 * Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
 * Datamarts are currently not supported in Microsoft Teams.
 

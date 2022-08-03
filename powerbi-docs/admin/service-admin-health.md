@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 5/25/2021
 LocalizationGroup: Administration
 ---

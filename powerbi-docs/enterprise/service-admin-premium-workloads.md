@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2022
+ms.date: 08/01/2022
 LocalizationGroup: Premium
 ---
 
@@ -116,21 +116,22 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 
 ## Datasets
 
-Use the settings in the table below to control workload behavior. There's additional usage information below the table for some of the settings.
+Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
 
 >[!NOTE]
->In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
+>* Power BI Premium Gen2 supports additional Azure Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
+>* In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)**<sup>1</sup> | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
-| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit may need to be further constrained based on what the datasource supports. |
-| **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
-| **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
-| **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
-| **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
-| **Automatic page refresh** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
+| **[Max Intermediate Row Set Count](#max-intermediate-row-set-count)** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. The upper limit may need to be further constrained based on what the datasource supports. |
+| **[Max Offline Dataset Size (GB)](#max-offline-dataset-size)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
+| **[Max Result Row Set Count](#max-result-row-set-count)** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
+| **[Query Memory Limit (%)](#query-memory-limit)** | The maximum percentage of available memory in the workload that can be used for executing an MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
+| **[Query Timeout (seconds)](#query-timeout)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't time out. |
+| **[Automatic page refresh](#automatic-page-refresh)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
 | **Change detection measure** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on change detection. |
 | **Minimum execution interval** | If change detection measure is on, the minimum execution interval allowed to poll for data changes. The default value is five seconds, and the minimum allowed is one second. |
