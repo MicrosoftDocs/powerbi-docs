@@ -220,7 +220,7 @@ Here are their estimated AAS licenses:
 | Test | 8 GB | B1 |
 | Development | 1 GB | D1 |
 
-Here are their proposed Power BI licenses:
+Here are their current Power BI licenses:
 
 | **Users** | **Power BI license** | **Users** |
 |:-|:-:|:-:|
@@ -241,6 +241,7 @@ Here are their proposed Power BI licenses:
 | Production | Premium P1 / Power BI Embedded A4 | Not applicable | 25 GB |
 | Test/development | Premium EM3 / Power BI Embedded A3 | Not applicable | 10 GB |
 | Developers | Pro | 20 | Not applicable |
+| Production/test/development | PPU | 50 | Not applicable |
 
 ## Premium migration benefits
 
