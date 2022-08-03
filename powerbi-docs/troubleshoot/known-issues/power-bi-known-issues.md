@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/27/2022  
+ms.date: 08/03/2022  
 ms.custom:  
 ---
 
@@ -21,10 +21,11 @@ For service level outages or degradation notifications, check [https://support.p
 
 Select the **Title** to view more information about that specific known issue.
 
-|  Issue ID |  Area   |  Title  |  Issue publish date |  
-|-----------|----------------|----|---------------------|
+|  Issue ID |  Area                              |  Title  |  Issue publish date |  
+|-----------|------------------------------------|---------|---------------------|
+|  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
+|  220      |  Gateway                           |  [Gateway data source owners cannot update data source credentials](known-issue-220-gateway-data-source-owners-cant-update-credentials.md)   |  August 3, 2022  |
 |  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  Reactivated: July 25, 2022        |
-|  213      |  Embedded, REST API or PowerShell  |  [Visual context menus are cut off when using Power BI Embedded](known-issue-213-visual-context-menus-cut-off-embedded.md)   |  June 21, 2022        |  
 |  195      |  Share and Collaborate             |  [Using a link in a paginated report subscription doesn't apply the report parameters](known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md)   |  June 21, 2022        |  
 |  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  
 |  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 |
@@ -34,8 +35,9 @@ Select the **Title** to view more information about that specific known issue.
 
 Select the **Title** to view more information about that specific known issue. Fixed issues are removed after 46 days.
 
-|  Issue ID |  Area                              |  Title           |  Issue publish date |  Status*  |
+|  Issue ID |  Area                              |  Title           |  Issue publish date |  Status  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+|  213      |  Embedded, REST API or PowerShell  |  [Visual context menus are cut off when using Power BI Embedded](known-issue-213-visual-context-menus-cut-off-embedded.md)   |  June 21, 2022        |  Fixed: August 3, 2022 |
 |  214      |  Consume and View                  |  [Excel Desktop crashes when opening data model that was refreshed by Power BI Service](known-issue-214-excel-desktop-crashes-opening-data-model.md)   |  June 21, 2022        |  Fixed: July 25, 2022 |
 |  211      |  Embedded, REST API or PowerShell  |  [GetVisuals() API for custom visuals may return a blank title](known-issue-211-getvisuals-api-return-blank-title.md)   |  June 21, 2022        |  Fixed: July 25, 2022 |
 |  210      |  Create and Author Data            |  [The scorecard visual's display name is blank in the visualizations pane](known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md)   |  June 21, 2022        |  Fixed: July 25, 2022 |

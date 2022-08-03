@@ -4,10 +4,11 @@ metadata:
   description: Find answers to your deployment pipelines, the Power BI Application lifecycle management (ALM) tool, troubleshooting questions
   author: KesemSharabi
   ms.author: kesharab
-  ms.topic: faq
+  ms.topic: troubleshooting
   ms.service: powerbi
-  ms.subservice: pbi-troubleshooting
+  ms.subservice: pbi-deployment-pipeline
   ms.date: 06/12/2022
+  
 title: Deployment pipelines troubleshooting
 summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
@@ -66,7 +67,7 @@ sections:
         answer: |
           All workspaces in a deployment pipeline must reside within a capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
           
-          For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user. You can also use a PPU for each user in the development and test stages.
+          For development and testing, you can use an A or EM capacity alongside a Pro Power BI account for each user. You can also use a PPU for each user in the development and test stages.
           
           For production workspaces, you need a P capacity. If you're an ISV distributing content through embedded applications, you can also use A or EM capacities for production. PPUs can also be used for production workspaces.
           

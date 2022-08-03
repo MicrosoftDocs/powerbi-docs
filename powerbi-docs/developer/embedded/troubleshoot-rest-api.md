@@ -5,7 +5,7 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
+ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 4/07/2022
 ---

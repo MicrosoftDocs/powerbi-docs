@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.date: 07/25/2022
-ms.custom: known-issue211
+ms.custom: known-issue-211
 ---
 
 # Known issue - GetVisuals() API for custom visuals may return a blank title
