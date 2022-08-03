@@ -84,82 +84,96 @@ Connections to Dataverse - whether they be direct or import mode - are relativel
 
 The Synapse option requires system administrator access to Dataverse and an Azure subscription. Configuration is not complex, but experience with Azure Storage and SQL is beneficial. This may limit which organizations can take advantage of this enterprise-oriented feature.
 
-## Best Practices for Developing Power BI Reports for Dataverse
+## Best practices
 
-A few design patterns and anti-patterns are considered when developing a Power BI report over Dataverse data. – Only a few of these are unique to Dataverse, but they tend to be common challenges for Dataverse makers when they tackle building Power BI reports.
+This sections describes design patterns and anti-patterns you should consider when developing a Power BI report over Dataverse data. Only a few of these patterns are unique to Dataverse, but they tend to be common challenges for Dataverse makers when they go about building Power BI reports.
 
-### Focus on the specific use case at hand - rather than trying to solve 'everything'
+### Focus on a specific use case
 
-It's probably the most common and easily the most challenging anti-pattern to avoid - attempting to build a single data model to enable all self-service reporting needs with the hope that this master model will allow anyone to find any answers they need everyone will live happily ever after.
+Rather than trying to solve *everything*, focus on the specific use case.
 
-The reality is that successful data models are built to answer questions around a central set of facts over a single core topic. While that might initially seem to limit the model, it's pretty empowering as the model can be tuned and optimized for answering questions within that topic.
+This best practice is probably the most common and easily the most challenging anti-pattern to avoid. The attempt to build a single data model that enables all self-service reporting needs is challenging. The reality is that successful data models are built to answer questions around a central set of facts over a single core topic. While that might initially seem to limit the model, it's actually empowering because you can tune and optimize the model for answering questions within that topic.
 
-Before developing a report model, consider questions such as these to help ensure you and your team have a crisp understanding of the objective.
+To help ensure that you and your team have a clear understanding of the model's purpose, ask yourself the following questions:
 
-- What topic area is this report supporting?
-- Who is the audience of this report?
+- What topic area will this model support?
+- Who is the audience of the reports?
 - What question is the report trying to answer?
-- What's the MVD - Minimum Viable Dataset?
+- What's MVD, or *minimum viable dataset*?
 
-Be hesitant to combine topic areas into a single data model "only" because the end customer asks for questions from multiple topic areas to be answered on a single dashboard. – Separating the portions of the reports derived from different core sources ("fact tables") into their models will ultimately result in much more efficient and scalable (and manageable) models.
+Resist combining multiple topic areas into a single data model just because the end customer has questions across multiple topic areas that they want addressed by a single report. Breaking that report into multiple reports, each with a focus on a different topic (or [fact table](/power-bi/guidance/star-schema)), can result in much more efficient, scalable, and manageable models.
 
-### Embrace a Star Schema rather than replicating the Dataverse Schema in Power BI
+### Embrace a star schema design
 
-For Dataverse developers and administrators comfortable with the Dataverse schema, there is an immediate assumption that the model from Dataverse should be just copied or rebuilt within Power BI. This anti-pattern is probably the toughest to overcome since it just 'feels right' to maintain consistency between the two schemas.
+Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome since it just *feels right* to maintain consistency.
 
-Dataverse, as a relational model, is well suited for its purpose. It is not designed as an analytics model. The most prevalent pattern for modeling analytics data is a 'Star' Schema.  At the center of the star is your 'fact table', representing what you want to count, sum, measure, etc.  Surrounding the fact table are the ‘dimensions' (the points on the star.) The dimension tables hold the descriptive elements that the report will use to slice, filter, and categorize the facts.
+Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model. The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
-The topic surrounding how and why of the ‘Star' schema approach is beyond this document, but to find more, please review the guidance here: https://docs.microsoft.com/en-us/power-bi/guidance/star-schema.
+For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema).
 
-TODO: Image
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/star-schema.png" alt-text="Diagram of a star schema comprising a single fact table and five dimension tables." border="false":::
 
-### Minimize the number of columns in the query rather than starting with 'all'
+### Minimize the number of query columns
 
-By default, when you select a Dataverse table in Power BI, it retrieves all rows and all columns.  In the case of the system user table, this could be more than 1,000 columns. (The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.)
+By default, when you use Power Query to load a Dataverse table, it retrieves all rows and all columns. In the case of the system user table, it could contain more than 1,000 columns. (The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.)
 
-Attempting to extract all columns is an anti-pattern that creates performance bottlenecks in refreshes and can cause the Dataverse connector to fail when the size of the data being retrieved exceeds 80MB.
+Attempting to retrieve data from all columns is an anti-pattern. It often results in performance bottlenecks during data refresh, and it can cause the Dataverse connector to fail when the data volume exceeds 80 MB.
 
-The recommended pattern is to only retrieve the columns from the source that are immediately needed for the report – and to be careful to re-evaluate and refactor the source query later as the report development progresses, often rendering previously required fields no longer necessary.
+We recommended that you only retrieve columns that are required by reports. It's often a good idea to re-evaluate and refactor queries when report development is complete, allowing you to identify and remove other unused columns. For more information, see [Data reduction techniques for Import modeling (Remove unnecessary columns)](/power-bi/guidance/import-modeling-data-reduction#remove-unnecessary-columns).
 
-Additionally, ensuring that the 'remove columns' step is early enough in the query to ensure that it folds back to the source will avoid taking the time to extract data from the source into Power BI - only to later discard it in a later (unfolded) step.
+Additionally, ensure that the Power Query *Remove columns* step is introduced early so that it [folds](/power-query/power-query-folding) back to the source. That way, Power Query can avoid the unnecessary work of extracting source data only to discard it later (in an unfolded step).
 
-An approach that has worked in cases where the table is too large to start with the interactive query builder step is to start with a Blank query, and in the 'Advanced Editor' window, paste in a minimal query as your starting point.
+When you have a table that contains many columns, it might be impractical to use the Power Query interactive query builder. In this case, you can start by creating a blank query. You can then use the [Advanced Editor](/power-bi/transform-model/desktop-query-overview#advanced-editor) to paste in a minimal query that creates a starting point.
 
-TODO: Image
+Consider the following query that retrieves data from just two columns of the **account** table.
 
-A simple query like this example will get you started and allow you to build up the query quickly:
-
-```powerquery
-Let
+```powerquery-m
+let
     Source = CommonDataService.Database("demo.crm.dynamics.com"),
-    dataverse_entity = Source{[Schema="dbo",Item="account"]}[Data],
-    #"Removed Other Columns" = Table.SelectColumns(dataverse_entity,{"accountid", "name"})
+    dbo_account = Source{[Schema="dbo", Item="account"]}[Data],
+    #"Removed Other Columns" = Table.SelectColumns(dbo_account, {"accountid", "name"})
 in
     #"Removed Other Columns"
 ```
 
-### Optimize Power Query to improve the ETL from Dataverse into Power BI
+### Optimize Power Query queries
 
-A Power Query script is a step-by-step set of instructions for getting data out of the source and into the destination – each step builds on the result of the previous step. As a result, the types of transformations and even the sequence of steps can have a surprisingly high impact on the performance of the query.
+A Power Query query is a set of steps that extracts, transforms, and loads source data into a model table. Each step builds on the result of the previous step. As a result, the types of transformations - and even the sequence of steps - can impact on query performance.
 
-"Query Folding" describes the process of Power Query sending as much of the transformation back to the source for it to be completed before any results are brought over into Power BI. A query that is properly 'folding' takes advantage of the power of the source server to handle as much of the effort as possible. This is optimum, but not all queries fold by default.  Often some editing of the query can unblock the folding and allow this optimization to occur, greatly improving the performance. More details about determining whether a query is folding or not – and possible steps to unblock folding can be found in the document: [Query folding - Power Query | Microsoft Docs](/power-query/power-query-folding)
+The Power Query mashup engine, which evaluates and runs queries, strives to achieve *query folding* whenever possible for reasons of efficiency. Query folding is the ability for a Power Query query to generate a single query statement to retrieve and transform source data.
 
-Optimizing Power Query is a broad topic with many opportunities to ensure you're getting the best performance. [Query Diagnostics - Power Query | Microsoft Docs](/power-query/querydiagnostics) in the Microsoft Docs can shed light on performance and help you fine-tune the query or diagnose when a query isn't functioning as efficiently as possible.
+A query that achieves folding delegates query processing to the source system. But not all queries fold by default. For more information about, see [Power Query query folding](/power-query/power-query-folding).
 
-### Complex Query / Filtering can be accomplished using SQL queries
+Optimizing Power Query is a broad topic. To achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop, see [Query diagnostics](/power-query/querydiagnostics).
 
-If a table requires additional joins or 'interesting' relationships, it may be beneficial to write the query in SQL. The Dataverse TDS endpoint can accept a SQL statement to request a specific portion of the data. In my experience, I've found it useful for reducing the size of a dimension table's size by filtering to only records that have a corresponding record in the fact table. (e.g. select only the accounts/contacts with an opportunity or support case.)  Additional details can be found here: [Use SQL to query data (Microsoft Dataverse) - Power Apps | Microsoft Docs](/power-apps/developer/data-platform/dataverse-sql-query)  There's documentation on which SQL features are available the TDS endpoint: [How Dataverse SQL Differs from Transact-SQL - Power Apps | Microsoft Docs](/power-apps/developer/data-platform/how-dataverse-sql-differs-from-transact-sql?tabs=supported)
+### Write native queries
 
-### When using SQL Queries against Dataverse, use the '\[EnableFolding=true\]' option
+When you have specific transformation requirements, you might achieve better performance by using a native query written in SQL. You can write a statement to:
 
-When using SQL Queries against Dataverse in a Value.NativeQuery statement, add the `EnableFolding=true` option in Power Query to ensure queries are 'folding' back to the Dataverse service to gain dramatically improved performance in many Power BI queries. (Up to 97% faster in some cases!)
+- Reduce the number of rows (use a `WHERE` clause).
+- Use supported SQL functions.
+- Aggregate data (use the `GROUP BY` and `HAVING` clauses).
+- Join tables in a specific way (use the `JOIN` or `APPLY` syntax).
 
-``` powerquery
+For more information, see:
+
+- [Use SQL to query data](/power-apps/developer/data-platform/dataverse-sql-query)
+- [How Dataverse SQL differs from Transact-SQL](/power-apps/developer/data-platform/how-dataverse-sql-differs-from-transact-sql?tabs=supported)
+
+### Execute native queries with the EnableFolding option
+
+Power Query executes a native query by using the `Value.NativeQuery` function.
+
+It's important to add the `EnableFolding=true` option to ensure queries are folder back to the Dataverse service. It can result in significant performance improvements, up to 97 percent faster in some cases. A native query won't fold unless this option is added.
+
+Consider the following query that uses a native query to source selected columns from the **account** table. The native query will fold because the `EnableFolding` option is set.
+
+``` powerquery-m
 let
-    Source = CommonDataService.Database("dataverseadl.crm.dynamics.com"),
+    Source = CommonDataService.Database("demo.crm.dynamics.com"),
     dbo_account = Value.NativeQuery(
         Source,
-        "SELECT A.accountid, A.name FROM Account A"
+        "SELECT A.accountid, A.name FROM account A"
         ,null
         ,[EnableFolding=true]
     )
@@ -167,65 +181,54 @@ in
      dbo_account
 ```
 
-A PowerQuery is said to be "Folding" when subsequent filters are merged into the original query and sent to the source for processing. Folding is an optimization that can in many cases dramatically reduce the time it takes to load the data into the dataset/report.
+You can expect to achieve the greatest performance improvements when retrieving a subset of data from a large data volume.
 
-By default, SQL queries against Dataverse's TDS endpoint do not fold, unless the 'EndableFolding' option is added.
+**THE FOLLOWING TEXT RELATES TO DIRECTQUERY?** Performance improvement can also depend on how Power BI executes some measures or queries. - I found that one of my measures ("COUNTDISTINCT") showed almost no improvement with or without the folding hint.  I changed the measure to count the distinct rows with an iterator (using SUMX.) That change allowed the measure to begin folding and resulted in a 97% improvement over the same query without the hint.
 
-The ‘Value.NativeQuery' Power Query M function allows you to pass an option to the source. For the Dataverse (née “CommonDataService”) source, enabling ‘Folding' allows in many cases additional parameters from the power query and from the report to be passed back up to the Dataverse server and evaluated there. – This can result in a measurable performance improvement when a large dataset can be filtered to a small result in the Dataverse service (as opposed to downloading the entire dataset first, only to filter it after it has been loaded into Power BI.)
+For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). The `EnableFolding` option isn't documented because it's specific to the Dataverse data source.
 
-In practice, the greatest performance impact will be seen on queries against large datasets where only a limited subset of the data is needed for the result.
+### Speed up the evaluation stage
 
-The performance improvement will also vary based on the way Power BI executes some measures or queries. - I found that one of my measures ("COUNTDISTINCT") showed almost no improvement with or without the folding hint.  I changed the measure to count the distinct rows with an iterator (using SUMX.) That change allowed the measure to begin folding and resulted in a 97% improvement over the same query without the hint.
+If you're using the [Dataverse connector](/connectors/commondataserviceforapps/) (formerly known as the Common Data Service), you can add the `CreateNavigationProperties=false` option to speed up the evaluation stage of a data import.
 
-The syntax is documented here [Value.NativeQuery - PowerQuery M | Microsoft Docs](/powerquery-m/value-nativequery#syntax) – (the `EnableFolding` option is not listed since it is native to the source.)
-
-### Speed up the 'Evaluating' stage during a dataset refresh by ignoring relationships
-
-If you're using the Dataverse connector (née "CommonDataService") in PowerQuery/Power BI, try adding the [CreateNavigationProperties=false] as a hint to dramatically speed up the "Evaluation" stage of a data import / refresh. (Note: This only is appropriate as long as you're not "expanding" any of the relationship columns - which, by the way, is a terrible hit on performance and should be avoided.)
-
-TODO: Image
-
-The "Evaluating" step of a Power BI "Refresh" iterates through the metadata of its source to evaluate all the relationships to the table being queried. - That metadata can be, especially in Dataverse, extensive. - Adding a hint to the query to let Power Query know that you're not using those relationships will allow Power BI to skip that part of the refresh and get on with the business of retrieving your data.
-
-TODO: Image
-
-In this example from the account table, once the hint is applied, the TerritoryID and TerritoryID name will remain - but the 'relationship columns' (The ones with "Value" in the field) will be excluded. (BTW - this has nothing to do with the relationships you create inside Power BI - those are entirely different.)
-
-How To: When using the current Dataverse connector, (still named 'CommonDataService' in PowerQuery), add the hint "\[CreateNavigationProperties=false\]" after the Dataverse service name. This tells Power Query to ignore the table's relationship metadata from Dataverse and just pull fields from the entity itself.
-
-TODO: Image
-
-The impact will be felt more when you're interacting with tables that naturally have lots of relationships with other tables in Dataverse. For example, because it's connected to every other table in the system in multiple ways the SystemUser table is a particularly 'heavy' table to evaluate.
+The evaluation stage of a data import iterates through the metadata of its source to determine all possible relationships. That metadata can be extensive, especially for Dataverse. By adding this option to the query, you're letting Power Query know that you're not using those relationships. The option will allow Power BI to skip that stage of the refresh and move on to retrieving the data.
 
 > [!NOTE]
-> This doesn't speed up the interactive cross-filtering in Direct Query, as those interactions do not require refreshed metadata. - It does speed up any import or refresh of Dual Mode datasets - and speeds up the process of 'applying changes' from Power Query Editor over to Power BI.
+> Don't use this option if the query expands any relationship columns.
 
-### Helpful Hint – If labels are BLANK, Dataverse-customizations may need to be Published
+Consider an example that retrieves data from the **account** table. It contains three columns related to territory: **territory**, **territoryid**, and **territoryidname**.
 
-I recently worked with two talented report builders wrestling with a challenge using Dataverse with Power BI. They had developed and tested their reports in DEV – and everything looked fine, however after the report was migrated to PROD, all the choice labels were BLANK!
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/power-query-editor-territory-table.png" alt-text="Screenshot shows a preview of data for the three territory columns account table." border="false":::
 
-The fix is to open the Dataverse Maker Portal (make.powerapps.com) Go to the "Solutions" area, and then click the 'Publish all customizations' button.
-Publishing will update the TDS endpoint with the latest metadata and make those option labels available in the report, like magic!
+When you set the `CreateNavigationProperties=false` option, the **territoryid** and **territoryidname** columns will remain, but the **territory** column, which is a relationship column (it shows *Value* links), will be excluded. Note that relationship columns in Power Query aren't related to model relationships between tables.
 
-### Replicate the "My […]" filter from Dataverse Views in Power Query
+Consider the following query that uses the `CreateNavigationProperties=false` option to speed up the evaluation stage of a data import.
 
-Dynamics 365 CE, and Model Driven Power Apps built on Dataverse can create views to be filtered to only show records where a username field on that record, such as 'owner' equals the current user. (e.g. “My Open Opportunities”, “My Active Cases”, “My Sharona” etc.)
+``` powerquery-m
+let
+    Source = CommonDataService.Database("demo.crm.dynamics.com"
+        ,[CreateNavigationProperties=false]),
+    dbo_account = Source{[Schema="dbo", Item="account"]}[Data],
+    #"Removed Other Columns" = Table.SelectColumns(dbo_account, {"accountid", "name", "address1_stateorprovince", "address1_country", "industrycodename", "territoryidname"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns", {{"name", "Account Name"}, {"address1_country", "Country"}, {"address1_stateorprovince", "State or Province"}, {"territoryidname", "Territory"}, {"industrycodename", "Industry"}})
+in
+    #"Renamed Columns"
+```
 
-Here's an example of how a Dynamics 365 "My Active Accounts" view has been filtered based on "Owner Equals current user"
+You're likely to experience significant performance improvement when a Dataverse table has lots of relationships with other tables. For example, because the **SystemUser** table is related to every other table in the database, refresh performance of this table would benefit by setting the `CreateNavigationProperties=false` option.
 
-TODO: Image
+> [!NOTE]
+> This option doesn't improve the performance of interactive cross-filtering of DirectQuery storage tables. It can improve the performance of data refresh of import or dual storage tables, including the process of applying Power Query Editor window changes..
 
-TODO: Image
+### Helpful hint: When labels are blank
 
-You can replicate the same functionality for Power BI / Power Query against the Dataverse TDS End Point by using a NativeQuery with a "CURRENT_USER" keyword.
+If you discover that choice labels are blank in Power BI, you may need to apply a fix.
 
-Here's an example query where the result delivered back into Power BI will be filtered to only the records where the accounts' ownerid field is the same as the currently authenticated user. Line 15 is where the magic happens.
+In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**.
 
-TODO: Image
+The publication process will update the TDS endpoint with the latest metadata making those option labels available to Power BI.
 
-Note this pulls the data in using this filter for the current user, so it's a natural for Direct Query to limit the scope of the data to a manageable size and scope. - When published to the service, be sure to 'check' the “Use Report Viewer Identity” checkmark when setting up the authentication.
-
-## Extra Considerations for DirectQuery
+## Considerations for DirectQuery models
 
 DirectQuery is a feature that allows the report to send a query back to the source data at the moment the report is opened. The query can pull effectively real-time results using the current report user's permissions. There are lots of use cases where DirectQuery solves important requirements. However, those features come at a performance cost.
 
@@ -233,23 +236,58 @@ A report built using DirectQuery will never be as fast a report as one built ove
 
 That said, the above best practices are doubly important to ensure they are being followed with DirectQuery reports - along with these reminders.
 
-### Consider Dual-Mode Dimension tables
+### Use dual mode dimension tables
 
-When working with DirectQuery, some tables serve as dimension (i.e. 'lookup') tables for labels or slicers. – By setting the storage mode to "Dual,” these tables can act as either cached or not cached, depending on the context of the query submitted to the Power BI dataset. In some cases, you fulfill queries from cached data. In other instances, you fulfill queries by executing an on-demand query to the data source.
+A dual storage mode table is set to use both import and DirectQuery storage modes. At query time, Power BI determines the most efficient mode to use. Whenever possible, Power BI attempts to satisfy queries by using imported data.
 
-This ability to act as a 'cached' table dramatically improves the speed and responsiveness of the data model.
+Slicer visuals and filter card lists, which are often based on dimension table columns, render more quickly because they're queried from cached data.
 
-Note that if the dimension table needs to inherit the security model of Dataverse, Dual Mode is not appropriate. Setting the dimension tables to 'Dual' mode is reversible to DirectQuery mode if needed. (A change to 'Import' mode is not reversible.)
+> [!IMPORTANT]
+> When a dimension table needs to inherit the Dataverse security model, it isn't appropriate to use dual storage mode.
 
-TODO: Image
+Consider the following data model design. Three dimension tables, **Owner**, **Account**, and **Campaign** have a striped upper border, which means they'a're set to dual storage mode.
 
-For a deeper explanation of the advantages and implications of 'Dual' mode, see [Use storage mode in Power BI Desktop - Power BI | Microsoft Docs](/power-bi/transform-model/desktop-storage-mode.md).
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/model-diagram-dual-mode-tables.png" alt-text="Screenshot shows a model diagram with three dual storage mode tables as described in the previous paragraph." border="false":::
 
-### Don't forget the "Use Report Viewer Identity" checkmark when publishing DirectQuery
+For more information on table storage modes including dual storage, see [Manage storage mode in Power BI Desktop](/power-bi/transform-model/desktop-storage-mode).
 
-Finally, it's not so much a performance issue, but an easily overlooked setting when a new DirectQuery report is published. If the report needs to inherit the security from the source, the connection setting "Report Viewers can only access this data source with their own Power BI identities using DirectQuery" needs to be checked to ensure that the connection is set to render the report with the security settings of the viewer.
+### Enable single-sign on
 
-TODO: Image
+When you publish a DirectQuery model, you can enable single sign-on (SSO) using Azure Active Directory (Azure AD) OAuth2 for your end users. You should enable this option when Dataverse queries must execute in the context of the end user.
+
+When the SSO option is enabled, Power BI sends their authenticated Azure AD credentials in the queries to Dataverse. This option enables Power BI to respect the security settings that are configured at the data source level. Enabling this setting is highly relevant when model tables need to inherit the Dataverse security model.
+
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the dataset credentials window with the SSO option enabled." border="false":::
+
+For more information, see [Single sign-on (SSO) for DirectQuery sources](/power-bi/connect-data/service-azure-sql-database-with-direct-connect#single-sign-on).
+
+### Replicate "My" filters in Power Query
+
+When using Dynamics 365 Customer Engagement (CE) and model-driven Power Apps built on Dataverse, you can create views that show only records where a username field, like **Owner**, equals the current user. For example, you might create "My open opportunities", "My active cases", and more.
+
+Consider an example of how the Dynamics 365 *My Active Accounts* view includes a filter where *Owner equals current user*.
+
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/my-active-accounts-filters.png" alt-text="Screenshot shows a preview of data for the three territory columns account table." border="false":::
+
+You can reproduce this result in Power Query by using a native query that embeds the `CURRENT_USER` token.
+
+Consider the following example that shows a native query that returns only accounts for the current user.
+
+```powerquery-m
+let
+    Source = CommonDataService.Database("demo.crm.dynamics.com", [CreateNavigationProperties=false],
+    dbo_account = Value.NativeQuery(Source, "
+        SELECT
+            accountid, accountnumber, ownerid, address1_city, address1_stateorprovince, address1_country
+        FROM account
+        WHERE statecode = 0
+            AND ownerid = CURRENT_USER
+    ", null, [EnableFolding]=true])
+in
+    dbo_account
+```
+
+This query will retrieve data by filtering the **ownerid** field by the current user. When you publish the model to the service, you must enable single sign-on (SSO) so that Power BI send the user's authenticated Azure AD credentials to Dataverse.
 
 ## Enterprise scale with Azure Synapse Link
 
@@ -374,10 +412,6 @@ Then paste the "Workspace SQL endpoint" from the synapse studio into the 'Server
 TODO: Image
 
 From this point, you can choose the database, tables, and specific fields you want to include in the data model.
-
-## Conclusion
-
-Power BI is amazing as a tool for exposing the value of data stored in Dataverse to Business Decision Makers. Getting the data out of Dataverse and into Power BI is the first step on a rewarding journey of discovery. Have fun and I hope this document has been helpful in getting you started.
 
 ## Next steps
 
