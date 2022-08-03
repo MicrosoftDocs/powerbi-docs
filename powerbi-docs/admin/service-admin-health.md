@@ -5,8 +5,8 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
-ms.topic: how-to
+ms.subservice: powerbi-admin
+ms.topic: troubleshooting
 ms.date: 5/25/2021
 LocalizationGroup: Administration
 ---
