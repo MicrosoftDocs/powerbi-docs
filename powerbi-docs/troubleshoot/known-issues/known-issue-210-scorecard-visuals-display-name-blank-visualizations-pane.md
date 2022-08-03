@@ -9,6 +9,9 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-210
 ---
+# Description of problem
+
+When selecting the **Format visual** tab of the visualizations pane for scorecard visuals, you won't see the metrics card's display name.
 
 **APPLIES TO:** ✔️ Power BI metrics
 
@@ -16,9 +19,6 @@ ms.custom: known-issue-210
 
 **Problem area:** Create and Author Data
 
-# Description of problem
-
-When selecting the **Format visual** tab of the visualizations pane for scorecard visuals, you won't see the metrics card's display name.
 
 ## Symptoms
 
