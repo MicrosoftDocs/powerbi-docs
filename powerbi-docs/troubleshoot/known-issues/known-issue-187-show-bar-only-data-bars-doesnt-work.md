@@ -6,11 +6,10 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/25/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-187
 ---
 
-# Known issue - Applying **Show bar only** for data bars doesn't work in Power BI Service or Power BI Desktop
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Power BI Desktop
 
@@ -18,7 +17,7 @@ ms.custom: known-issue-187
 
 **Problem area:** Create and Author Data
 
-## Description of problem
+# Description of problem
 
 Applying **Show bar only** for a visual (such as a table or matrix) that uses data bars conditional formatting doesn't work.  The failure occurs in both Power BI Service and Power BI Desktop.  Once the report has been uploaded to Power BI Service, you won't be able to modify the data bar settings to restore its working nature.
 

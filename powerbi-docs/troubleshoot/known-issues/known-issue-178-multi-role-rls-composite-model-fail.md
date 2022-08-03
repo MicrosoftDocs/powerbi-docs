@@ -6,11 +6,10 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/25/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-178
 ---
 
-# Known issue - Multi-role row-level security for composite models may fail
 
 **APPLIES TO:** ✔️ Row-level security (RLS)
 
@@ -18,7 +17,7 @@ ms.custom: known-issue-178
 
 **Problem area:** Consume and View
 
-## Description of problem
+# Description of problem
 
 In some cases, multi-role row-level security (RLS) for composite models may fail and result in an error.  The error occurs because an incorrect response is given when trying to view the data from the composite model.
 

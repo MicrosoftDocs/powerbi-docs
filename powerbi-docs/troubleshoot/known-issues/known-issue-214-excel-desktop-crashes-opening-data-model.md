@@ -6,11 +6,9 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/21/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-214
 ---
-
-# Known issue - Excel Desktop crashes when opening data model that was refreshed by Power BI Service
 
 **APPLIES TO:** ✔️ Power BI Service ✔️ Excel Integration
 
@@ -18,7 +16,7 @@ ms.custom: known-issue-214
 
 **Problem area:** Consume and View
 
-## Description of problem
+# Description of problem
 
 You can create an Excel workbook that contains a PowerPivot data model and store it in either OneDrive Business or SharePoint.  You can then schedule and run a successful refresh through the Power BI Service.  If you then try to open the Excel workbook in Excel Desktop, the workbook won't open, resulting in either a crash or error message.
 
