@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
+ms.subservice: powerbi-resource
 ms.topic: troubleshooting
 ms.date: 03/17/2022
 ---
