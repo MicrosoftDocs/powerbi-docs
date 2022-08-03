@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/02/2022
+ms.date: 08/03/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -228,7 +228,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
-- The **Data with current layout** and **Summarized data** export options are identical and the only difference is the structure of the data when exported to Excel
+- The granularity of data exported to Excel using the **Data with current layout** and **Summarized data** options are identical and the only difference between the options is the shape of the data in Excel. For example, in a matrix visual, the **Data with current layout** preserves the shape of the visual as shown in Power BI when data is exported to Excel while the **Summarized data** option exports the same data but as a flat table of rows and columns.
 
 - Power BI custom visuals and R visuals aren't currently supported.
 
