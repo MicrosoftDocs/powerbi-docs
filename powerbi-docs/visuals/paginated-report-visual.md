@@ -24,7 +24,7 @@ The paginated report visual is designed to integrate a paginated report with oth
 
 For content with paginated report visuals, this table spells out the licenses and workspace permissions needed to publish, manage, and view the content.
 
-|Type of capacity workspace is hosted in | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
+|Type of capacity that hosts the workspace | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
 |---------|---------|---------|
 |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses  |
 |[Power BI Premium capacity](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses |
