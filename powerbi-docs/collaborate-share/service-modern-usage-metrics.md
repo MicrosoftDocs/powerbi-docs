@@ -60,7 +60,7 @@ When you display this improved usage metrics report, Power BI generates a pre-bu
 
 ### Usage metrics report dataset
 
-When you first launch the improved usage metrics report, Power BI automatically creates a Usage Metrics Report dataset. The improved usage metrics report relies on that dataset. Power BI then refreshes this dataset daily. While you can't change the refresh schedule, you can update the credentials that Power BI uses to refresh the usage metrics data.
+When you first launch the usage metrics report, Power BI automatically creates a Usage Metrics Report dataset. The usage metrics report relies on that dataset. Power BI then refreshes this dataset daily. Although you can't change the refresh schedule, you can update the credentials that Power BI uses to refresh the usage metrics data.
 
 You may need to resume scheduled refresh if one of the following occurs:
 
@@ -89,8 +89,8 @@ The improved usage metrics report includes the following report pages:
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of one would mean the report has the most views of all reports in the organization.   |
-| Report usage | Report views per day | Total number of Report Views per day. Counted at report level, does not consider Report Page Views. |
-| Report usage | Report viewers per day | Total number of different users who viewed the report (based on the AAD user account). |
+| Report usage | Report views per day | Usage is counted at the report level and doesn't consider Report Page Views. |
+| Report usage | Report viewers per day | Total number of different users who viewed the report (based on the Azure AD user account). |
 | Report usage | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
@@ -173,7 +173,7 @@ Usage metrics reports are a feature that the Power BI or global administrator ca
 By default, per-user data is enabled for usage metrics. This means content consumer account information such as user name and email address is included in the usage metrics report. Admins can limit exposure of identifying user information in the Power BI admin portal tenant settings. They can enable per-user data for the entire organization or specified security groups.
 
 > [!NOTE]
-> If user information is excluded and your report is using an Embed Scenario, this is currently not supported, and in such cases, usage metrics dataset refresh will fail.
+> An embed scenario with excluded user information isn't supported. In such cases, usage metrics dataset refresh will fail.
 
 If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures.
 
@@ -217,8 +217,9 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
     ![Screenshot of the new report on the Reports tab.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
     
 > [!NOTE]
-> When you save a copy of the usage metrics report it's treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
-> When you save a copy of the usage metrics report it's built on the original dataset. If there are any changes from Power BI, this may break your copy of the report.
+> When you save a copy of the usage metrics report:
+> - The report is treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
+> - The report is built on the original dataset. If there are any changes from Power BI, this may break your copy of the report.
 
 ### Create a new usage report in Power BI Desktop
 
@@ -304,7 +305,7 @@ In addition to the above differences between previous and improved usage metrics
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
 - User masking isn't working as expected when using nested groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
-- If you are using user masking with an Embed Scenario in your report, the usage metrics dataset refresh will fail.
+- If you're using user masking in an embed scenario in your report, the usage metrics dataset refresh will fail.
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the [Troubleshooting section](#troubleshoot-refresh-issues) below to resolve this or any general refresh issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
