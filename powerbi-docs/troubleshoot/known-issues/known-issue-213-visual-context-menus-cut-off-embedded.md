@@ -12,7 +12,7 @@ ms.custom: known-issue-213
 
 **APPLIES TO:** ✔️ Power BI Embedded
 
-**Status:** Open
+**Status:** Fixed: August 3, 2022
 
 **Problem area:** Embedded, REST API or PowerShell
 
