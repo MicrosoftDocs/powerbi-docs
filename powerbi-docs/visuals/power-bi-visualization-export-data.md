@@ -131,11 +131,11 @@ When you select  **Export**, your browser prompts you to save the file. Once sav
 
 - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we hadn't yet drilled down to the city level, but our export includes both city and country/region data.
 
-- Since we applied filters to the visual, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**.
+- Since we applied filters to the visual, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. Notice that in some specific cases the first row might display a filter that is not being applied in the data that follows. See the next section for details.
 
 ### Export underlying data details
 
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator-icon.png":::. Measures can be created in Power BI Desktop.
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* shows in the **Fields** list with a calculator icon :::image type="icon" source="../transform-model/media/desktop-field-list/field-list-09b.png":::. Measures can be created in Power BI Desktop.
 
 | Visual contains | What you'll see in export  |
 |---------------- | ---------------------------|
@@ -251,6 +251,5 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - If a dynamic format string is applied to a measure, the exported data won't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
-- In some specific cases the data exported is not the same as what is shown in Power BI. Most often, this is due to how filters are applied in Power BI when measures are present on the visual. If there is a measure on the visual you are exporting data from, filters from other tables will be applied to the visual. However, if you [export underlying data](#export-underlying-data), the measure will be removed and as a result filters from other tables will not be applied to the exported data. Hence the exported dataset might be different from what is shown in Power BI. To make sure the exported dataset is the same as what is shown in Power BI, either [export summarized data](#export-summarized-data), add the columns that supply the filters to the visual or add the columns that are filtered by the filters from other tables to the visual.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
