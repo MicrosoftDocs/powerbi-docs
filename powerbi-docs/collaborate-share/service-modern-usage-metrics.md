@@ -16,7 +16,8 @@ LocalizationGroup: Dashboards
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
+If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
+
 
 ![Screenshot of the New Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -85,7 +86,8 @@ The improved usage metrics report includes the following report pages:
 | --- | --- | --- |
 | Report usage | Report views/Report opens | A Report View is recorded each time someone opens a report and represents unique landings on the report. It answers the question, "How often is the report accessed?" This definition of a Report View differs from previous usage metrics reports. Changing report pages is no longer considered an additional Report View. Instead, changing report pages counts for the next metric, Report Page Views. Activities such as sharing and pinning are no longer considered in usage metrics. |
 | Report usage | Report Page views | A Report Page View is recorded every time someone views a report page. It represents total views across any pages. It answers the question, "How often are report pages accessed?" So changing report pages counts for Report Page Views. See [Considerations and Limitations](#considerations-and-limitations) for important details. |
-| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the AAD user account). |
+| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Azure AD user account). |
+
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of one would mean the report has the most views of all reports in the organization.   |
@@ -318,7 +320,8 @@ In addition to the above differences between previous and improved usage metrics
 In addition to the above considerations and limitations, the following questions and answers about usage metrics might be helpful for users and administrators:
 
 #### **Why do I see fewer Report Page Views than Report Views, shouldn't they be at least the same?** 
-Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the users device. Report Page Views rely on usage information from the users device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
+Report Views rely on server telemetry that is generated when the report is first opened. Once a report is open, its page definitions are already loaded onto the user's device. Report Page Views rely on usage information from the user's device reaching Power BI. This can sometimes be blocked, as described in [Considerations and Limitations](#considerations-and-limitations).
+
 
 #### **I can't run usage metrics on a report.**
 You can only see usage metrics for reports you own or have permissions to edit.
