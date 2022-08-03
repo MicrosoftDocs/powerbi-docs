@@ -10,7 +10,9 @@ ms.date: 08/03/2022
 ms.custom: known-issue-222
 ---
 
-# Known issue - Search strings that include Japanese symbols don't return matches
+# Description of known issue #222
+
+In the Power BI service, you may see unexpected results when the search string contains Japanese symbols. Search strings that include Japanese symbols won't return matching content in the search results.
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -18,7 +20,6 @@ ms.custom: known-issue-222
 
 **Problem area:** Consume and View
 
-In the Power BI service, you may see unexpected results when the search string contains Japanese symbols. Search strings that include Japanese symbols won't return matching content in the search results.
 
 ## Symptoms
 
