@@ -29,14 +29,23 @@ Combo charts are a great choice:
 * to check whether one measure meets the target defined by another measure
 * to conserve canvas space.
 
+## Create a basic single-axis combo chart
+
+Watch Will create a combo chart using the Sales and Marketing sample.
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
+
+<a name="create"></a>
+
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
-### Prerequisites
-
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+To follow along, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open report**.
 
@@ -48,7 +57,7 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
+To follow along, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
 1. On the Home page of the Power BI service, scroll down to **Getting started with Power BI** and select **Sample reports**.
 
@@ -61,17 +70,6 @@ This tutorial uses the [Retail Analysis sample](../create-reports/sample-retail-
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 ---
-
-## Create a basic single-axis combo chart
-
-Watch Will create a combo chart using the Sales and Marketing sample.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
-
-<a name="create"></a>
 
 1. Start on a blank report page and create a column chart that displays this year's sales and gross margin by month.
 
