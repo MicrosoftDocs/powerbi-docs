@@ -17,13 +17,15 @@ The *Insights* feature helps you easily explore and find insights such as anomal
  
  [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
 
-**Did you know?** Power BI also has an insights feature for individual visuals. It uses artificial intelligence to analyze and [explain fluctuations in visuals](desktop-insights.md).
+**Did you know?** Power BI also has other insights features:
+
+- [Insights for individual visuals](desktop-insights.md) uses artificial intelligence to analyze and explain fluctuations in visuals.
+- [Quick Insights](service-insights.md) generates data insights on a dataset automatically in the Power BI service.
 
 ## License requirements
 
- Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.md) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
+ Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
 
- 
 ## Notifications
 
 Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces. Please note that the tenant and report setting for receiving notifications should be turned on for this to work.
