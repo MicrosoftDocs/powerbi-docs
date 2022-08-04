@@ -11,15 +11,15 @@ ms.date: 08/03/2022
 ms.custom: known-issue-165
 ---
 
-# Known issue - Long running, failed or stuck dataflow in Premium Gen2
+# Description of known issue #165
+
+You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling. In some rare cases,- your dataflow fails and you'll receive an error message: “Your(…) dataflow couldn’t be refreshed because there was a problem with one or more entities, or because dataflow capabilities were unavailable.”
 
 **APPLIES TO:** ✔️ Power BI Premium Gen2 Service ✔️ Power BI Dataflow
 
 **Status:** Open
 
 **Problem area:** Refresh Data
-
-You will encounter either a long running dataflow refresh or a dataflow refresh that is stuck in canceling. In some rare cases, your dataflow fails and you'll receive an error message: “Your(…) dataflow couldn’t be refreshed because there was a problem with one or more entities, or because dataflow capabilities were unavailable.”
 
 ## Symptoms
 
