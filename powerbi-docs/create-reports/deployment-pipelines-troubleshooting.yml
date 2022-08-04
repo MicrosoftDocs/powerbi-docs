@@ -290,7 +290,7 @@ sections:
           During deployment, if deployment pipelines discovers that the connectivity mode of a data source in the target stage isn't the same as the data source in the source stage, it attempts to convert the connectivity mode of the data source in the target stage. If you're using a data source with the [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) or [real time](./../connect-data/service-real-time-streaming.md) connectivity modes, deployment pipelines can't convert the target's data source connectivity mode. In such cases, you can either use an [XMLA read-write endpoint](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop to change the connection mode of the data source in the source stage, or delete the data source in the target stage so that the deployment overwrites it.
 
       - question: |
-          Why are some tiles in my dashboard not displaying information After deployment? 
+          Why are some tiles in my dashboard not displaying information after deployment? 
         answer: |
           When you pin a tile to a dashboard, if the tile relies on an [unsupported Power BI item](deployment-pipelines-process.md#unsupported-items), or on an item that you don't have permissions to deploy, after deploying the dashboard the tile will not render. For example, if you create a tile from a report that relies on a dataset you're not an admin on, when deploying the report you'll get an error warning. However, when deploying the dashboard with the tile, you'll not receive an error message, the deployment will succeed, but the tile will not display any information.   
 
