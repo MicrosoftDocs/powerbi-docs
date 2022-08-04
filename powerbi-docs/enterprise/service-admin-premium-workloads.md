@@ -120,7 +120,7 @@ This section describes the following datasets workload settings:
 
 * [Power BI settings](#power-bi-settings)
 
-* [Azure Analysis Services server properties](@azure-analysis-services-server-properties)
+* [Azure Analysis Services server properties](#azure-analysis-services-server-properties)
 
 ### Power BI settings
 
