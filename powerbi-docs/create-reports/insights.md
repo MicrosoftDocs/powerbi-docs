@@ -1,6 +1,6 @@
 ---
-title: Insights
-description: 'How to get insights in reports'
+title: Find Insights in your reports
+description: 'The Insights feature helps you easily explore and find insights such as anomalies and trends in your data as you interact and consume your reports.'
 author: aphilip94
 ms.author: anphil
 ms.reviewer: 
@@ -8,18 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 09/21/2021
+ms.date: 08/04/2022
 LocalizationGroup: 
 ---
-# Insights (preview)
+# Find Insights in your reports (preview)
 
- The Insights feature helps users easily explore and find insights such as anomalies, trends in their data as they interact and consume their reports. It  notifies a user if there are interesting insights in the reports and also provides explanations for the insights. It works out of the box on any report so the consumers can automatically start getting insights from their reports without any setup.
+The *Insights* feature helps you easily explore and find insights such as anomalies and trends in your data as you interact and consume your reports. It notifies you if there are interesting insights in the reports, and also provides explanations for the insights. It works out of the box on any report so you can automatically start getting insights from your reports without any setup.
  
  [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
- 
+
+**Did you know?** Power BI also has an insights feature for individual visuals. It uses artificial intelligence to analyze and [explain fluctuations in visuals](desktop-insights.md).
+
 ## License requirements
 
- Insights is supported for reports in Premium and Premium Per User (PPU) workspaces. You can also use the feature in non-premium workspaces if you have a PPU license, but  notifications won't be supported. 
+ Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.md) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
 
  
 ## Notifications
