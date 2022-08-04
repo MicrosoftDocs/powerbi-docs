@@ -14,37 +14,21 @@ summary: |
   [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
   Use this article to troubleshoot issues in deployment pipelines. Review the following links to understand the considerations and limitations.
-
   * [General considerations and limitations](deployment-pipelines-process.md#considerations-and-limitations-1)
-
   * [Assigning workspaces](deployment-pipelines-assign.md#limitations)
-
   * [Permissions](deployment-pipelines-process.md#permissions)      
-
   * Power BI items:
-
     * [Deployed items](deployment-pipelines-process.md#deployed-items)
-
     * [Unsupported items](deployment-pipelines-process.md#unsupported-items)
-
     * [Item properties copied during deployment](deployment-pipelines-process.md#item-properties-copied-during-deployment)
-
     * [Item properties that are not copied](deployment-pipelines-process.md#item-properties-that-are-not-copied)
-
     * [Dataset limitations](deployment-pipelines-process.md#dataset-limitations)
-
     * [Dataflow limitations](deployment-pipelines-process.md#dataflow-limitations)
-
     * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
-
   * Deployment rules:
-
     * [Deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations)
-
     * [Supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules)
-
   * [Incremental refresh](deployment-pipelines-process.md#considerations-and-limitations)
-
   * [Automation](deployment-pipelines-automation.md#considerations-and-limitations)
 
 sections:
