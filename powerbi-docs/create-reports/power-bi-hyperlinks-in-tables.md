@@ -94,7 +94,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 ---
 
-1. With the table selected, select the **Format** icon to open the Formatting tab.
+2. With the table selected, select the **Format** icon to open the Formatting tab.
 
 1. Under **Visual**, expand **Cell elements**. For **Apply settings to**, make sure the name in the box is the column you want as link text. Locate **Web URL**, and set it to **On**.
 
