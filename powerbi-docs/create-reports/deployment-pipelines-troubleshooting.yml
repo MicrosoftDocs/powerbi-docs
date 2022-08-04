@@ -11,7 +11,7 @@ metadata:
   
 title: Deployment pipelines troubleshooting
 summary: |
-  [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+  [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)] 
 
   Use this article to troubleshoot issues in deployment pipelines. Review the following links to understand the considerations and limitations.
   * [General considerations and limitations](deployment-pipelines-process.md#considerations-and-limitations-1)
