@@ -29,7 +29,7 @@ Combo charts are a great choice:
 * to check whether one measure meets the target defined by another measure
 * to conserve canvas space.
 
-## Create a basic single-axis combo chart
+## How to create a combo chart
 
 Watch Will create a combo chart using the Sales and Marketing sample.
 
@@ -45,7 +45,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To follow along, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+To follow along below, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open report**.
 
@@ -57,7 +57,7 @@ To follow along, use the [Retail Analysis sample PBIX file](https://download.mic
 
 # [Power BI service](#tab/powerbi-service)
 
-To follow along, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
+To follow along below, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
 1. On the Home page of the Power BI service, scroll down to **Getting started with Power BI** and select **Sample reports**.
 
@@ -70,6 +70,8 @@ To follow along, use the [Retail Analysis sample](../create-reports/sample-retai
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 ---
+
+## Create a basic single-axis combo chart
 
 1. Start on a blank report page and create a column chart that displays this year's sales and gross margin by month.
 
