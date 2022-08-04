@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/26/2022
+ms.date: 08/04/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database with Power BI Desktop
