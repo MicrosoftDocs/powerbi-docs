@@ -352,9 +352,9 @@ sections:
           A deployment of a large number of paginated reports with rules, might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
 
       - question: |
-          After deployment, can I download a PBIX file of a paginated report?
+          After deployment, can I download the RDL file of the paginated report?
         answer: |
-          After a deployment, if you download the PBIX of the paginated report, it might not be updated with the latest version which you can see in Power BI service.
+          After a deployment, if you download the RDL of the paginated report, it might not be updated with the latest version which you can see in Power BI service.
 
   - name: Dataflows
     questions:
@@ -465,7 +465,7 @@ sections:
       - question: |
           Why saving a data source rule for a dataset fails? 
         answer: |
-          Data source rules may fail due to one of these reasons:
+          Saving data source rules may fail due to one of these reasons:
 
           * Your dataset contains a function connected to a data source. In such cases, data source rules aren't supported.
           
