@@ -17,10 +17,11 @@ The *Insights* feature helps you easily explore and find insights such as anomal
  
  [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
 
-**Did you know?** Power BI also has other insights features:
+**Did you know?** Power BI has other insights features that use artificial intelligence (AI):
 
-- [Insights for individual visuals](desktop-insights.md) uses artificial intelligence to analyze and explain fluctuations in visuals.
-- [Quick Insights](service-insights.md) generates data insights on a dataset automatically in the Power BI service.
+- [Insights for *individual visuals*](desktop-insights.md) analyzes and explains the fluctuations of data points in visuals.
+- [Insights for *dashboard tiles*](../consumer/end-user-insights.md) looks at the data being used to render that tile. If there are interesting facts or trends in that data, Power BI presents them in interactive visuals.
+- [Quick Insights](service-insights.md) generates data insights on a *dataset* automatically in the Power BI service.
 
 ## License requirements
 
