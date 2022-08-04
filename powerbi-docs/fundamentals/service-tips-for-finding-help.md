@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 09/13/2021
 LocalizationGroup: Get started
 ---
