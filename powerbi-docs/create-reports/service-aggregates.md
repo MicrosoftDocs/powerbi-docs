@@ -36,7 +36,7 @@ In the example below:
 
    ![Screenshot of a sample dataset.](media/service-aggregates/power-bi-aggregate-chart.png)
 
-When creating a visualization, Power BI will aggregate numeric fields (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***", "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***". Power BI refers to some numeric fields as **measures**. It's easy to identify measures in the Power BI report editor -- The **Fields** list shows measures with the ∑ symbol next to them. See [The report editor... take a tour](service-the-report-editor-take-a-tour.md) for more info.
+When you create a visualization, Power BI aggregates numeric fields (the default is *sum*) over some categorical field.  For example, "Units Sold *by Product*", "Units Sold *by Month*" and "Manufacturing Price *by Segment*". Power BI refers to some numeric fields as **measures**. It's easy to identify measures in the Power BI report editor -- The **Fields** list shows measures with the ∑ symbol next to them. See [The report editor... take a tour](service-the-report-editor-take-a-tour.md) for more info.
 
 ![Screenshot of Power BI Desktop with the Fields list called out.](media/service-aggregates/power-bi-desktop-aggregate-fields.png)
 
@@ -109,7 +109,7 @@ Would give the following results:
 
 ## Create an aggregate using a category (text) field
 
-You can also aggregate a non-numeric field. For example, if you have a product name field, you can add it as a value and then set it to **Count**, **Distinct count**, **First**, or **Last**.
+You can also aggregate a non-numeric field. For example, if you have a Category name field, you can add it as a value and then set it to **Count**, **Distinct count**, **First**, or **Last**.
 
 1. Drag the **Category** field onto the report canvas. The **Values** well is typically used for numeric fields. Power BI recognizes that this field is a text field, so it creates a table with a single column.
 
@@ -123,7 +123,7 @@ You can also aggregate a non-numeric field. For example, if you have a product n
 
    ![Screenshot of the count of categories.](media/service-aggregates/power-bi-aggregate-count.png)
 
-1. By dragging the same field (in this case **Category**) into the **Columns** well again, and keeping the default aggregation **Don't summarize**, Power BI breaks down the count by category.
+1. Drag the same field (in this case **Category**) into the **Columns** well again. Keep the default aggregation **Don't summarize**. Power BI breaks down the count by Category.
 
    ![Screenshot of the category and the count of categories.](media/service-aggregates/power-bi-aggregate-final.png)
 
@@ -137,7 +137,7 @@ Q:  My field **is** numeric, why are my only choices **Count** and **Distinct co
 
 A1:  The likely explanation is that the dataset owner has *not* classified the field as a number. For example, if a dataset has a **year** field, the dataset owner may categorize the value as text. It's more likely that Power BI will count the **year** field (for example, number of people born in 1974). It's less likely that Power BI will sum or average it. If you're the owner, you can open the dataset in Power BI Desktop and use the **Modeling** tab to change the data type.
 
-A2: If the field has a calculator icon, that means it's a *measure*. Each measure has its own formula that only the dataset owner can change. The calculation Power BI uses may be a simple aggregation like an average or sum. It may also be something more complicated like a "percent of contribution to parent category" or "running total since start of the year". Power BI isn't going to sum or average the results. Instead, it will just recalculate (using the hard-coded formula) for each data point.
+A2: If the field has a calculator icon, then it's a *measure*. Each measure has its own formula that only the dataset owner can change. The calculation Power BI uses may be a simple aggregation like an average or sum. It may also be something more complicated like a "percent of contribution to parent category" or "running total since start of the year". Power BI isn't going to sum or average the results. Instead, it will just recalculate (using the hard-coded formula) for each data point.
 
 A3:  Another possibility is that you've dropped the field into a *bucket* that only allows categorical values.  In that case, your only options will be count and distinct count.
 
