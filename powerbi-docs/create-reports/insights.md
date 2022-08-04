@@ -114,7 +114,7 @@ If the insight mentions multiple anomalies, or trends, selecting the insight car
 ## Considerations and limitations
 
 **Insights** is currently not available in apps and embedded for reports in Premium workspaces. Users with PPU license can still use Insights.
-If no insights found are found, you see this message: “We didn’t find any insights”. Here are some possibe reasons:
+If no insights found are found, you see this message: “We didn’t find any insights”. Here are some possible reasons:
 
 - The data or visuals aren't supported:
     -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as line charts; area charts; stacked area, bar, and column charts; clustered bar and column charts; and KPIs. KPI analysis insight is supported on KPIs, gauges, cards, and bar and column charts.
