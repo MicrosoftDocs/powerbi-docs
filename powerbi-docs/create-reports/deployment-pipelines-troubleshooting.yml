@@ -354,7 +354,7 @@ sections:
       - question: |
           After deployment, can I download a PBIX file of a paginated report?
         answer: |
-          After a deployment, if you download the PBIX of the paginated report, it might not be updated with the latest version as the one in Power BI service.
+          After a deployment, if you download the PBIX of the paginated report, it might not be updated with the latest version which you can see in Power BI service.
 
   - name: Dataflows
     questions:
@@ -467,9 +467,9 @@ sections:
         answer: |
           Data source rules may fail due to one of these reasons:
 
-          * If your dataset contains a function connected to a data source, data source rules aren't supported.
+          * Your dataset contains a function connected to a data source. In such cases, data source rules aren't supported.
           
-          * If your data source is using parameters, you can't create a data source rule for it. Create a parameter rules instead.                                                                             
+          * Your data source is using parameters. You can't create a data source rule for a dataset that uses parameters. Create a parameter rule instead.                                                                             
 
 additionalContent: |
 
