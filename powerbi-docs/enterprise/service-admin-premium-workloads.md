@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 08/01/2022
+ms.date: 08/04/2022
 LocalizationGroup: Premium
 ---
 
@@ -127,7 +127,7 @@ This section describes the following datasets workload settings:
 Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
 
 >[!NOTE]
-In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
+>In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
