@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 08/04/2022
 ---
 
 # Service principal profiles for multi-customer apps in Power BI Embedded
 
 This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
+
+The word *tenant* in Power BI sometimes refers to an Azure AD tenant. In this article, however, the word *tenant* refers to a multi-tenancy solution that embeds Power BI content. A separate tenant is created for each customer. Each tenant typically has a single Power BI workspace where you create content to embed.
 
 > [!NOTE]
 > For the sake of simplicity, all ISVs and Power BI Embedded Enterprise application owners will be referred to as ISVs in this article.
