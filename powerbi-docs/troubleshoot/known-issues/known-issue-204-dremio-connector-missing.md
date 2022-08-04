@@ -6,11 +6,12 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/25/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-204
 ---
+# Description of known issue #204
 
-# Known issue - Dremio connector is missing
+We recently enabled Cloud based refresh for Dremio, removing its gateway requirement.  However, there has been a recent update that has put the Dremio connector back into the "gateway only" category.
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -18,9 +19,6 @@ ms.custom: known-issue-204
 
 **Problem area:** Create and Author Data
 
-## Description of problem
-
-We recently enabled Cloud based refresh for Dremio, removing its gateway requirement.  However, there has been a recent update that has put the Dremio connector back into the "gateway only" category.
 
 ## Symptoms
 
