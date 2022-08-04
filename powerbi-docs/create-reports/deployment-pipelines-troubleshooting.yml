@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 08/03/2022
+  ms.date: 08/04/2022
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -347,14 +347,14 @@ sections:
           * **Server** - The server that hosts your database. Keep the existing server as is.
 
       - question: |
-          Why can't I deploy multiple paginated reports with rules?
+          Why deploying a large number of paginated reports fails?
         answer: |
-          A deployment of multiple paginated reports with rules might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
+          A deployment of a large number of paginated reports with rules, might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
 
       - question: |
-          After deployment, can I download a PBIX file of a paginated report with a rule?
+          After deployment, can I download a PBIX file of a paginated report?
         answer: |
-          Your paginated report rule may change what's displayed in your paginated report. After a deployment, if you download the PBIX of the paginated report, it might not match the displayed report.
+          After a deployment, if you download the PBIX of the paginated report, it might not be updated with the latest version as the one in Power BI service.
 
   - name: Dataflows
     questions:
@@ -463,14 +463,13 @@ sections:
           Your rule will overwrite some datasets in the destination workspace. You must be the owner of any datasets that will be overwritten.  
 
       - question: |
-          Can I configure a rule for a dataset with a function that's connected to a data source? 
+          Why saving a data source rule for a dataset fails? 
         answer: |
-          No, rules are not supported for a dataset with a function that's connected to a data source.    
+          Data source rules may fail due to one of these reasons:
 
-      - question: |
-          Can I set a parameter rule for a data source? 
-        answer: |
-          No, you can only use data source rules for data sources.                                                                              
+          * If your dataset contains a function connected to a data source, data source rules aren't supported.
+          
+          * If your data source is using parameters, you can't create a data source rule for it. Create a parameter rules instead.                                                                             
 
 additionalContent: |
 
