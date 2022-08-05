@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 08/04/2022
+ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
 # Create buttons in Power BI reports
@@ -16,7 +17,7 @@ LocalizationGroup: Create reports
 
 With *buttons* in Power BI, you can create reports that behave similar to apps, and create an environment where users can hover, click, and further interact with Power BI content. This article explains how to add buttons to reports in Power BI Desktop and in the Power BI service. When you share your reports in the Power BI service, buttons provide an app-like experience. The article [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md) describes how report readers experience buttons in your reports.
 
-![Screenshot showing Buttons in Power BI.](media/desktop-buttons/power-bi-buttons.png)
+![Screenshot showing a Q&A button in Power BI.](media/desktop-buttons/power-bi-qna-button.png)
 
 ## Create buttons in reports
 
@@ -89,29 +90,29 @@ You can try or test the buttons you create for your report by selecting *Ctrl* a
 
 ## Create page navigation
 
-With the **Action** type **Page navigation**, you can build an entire navigation experience without having to save or manage any bookmarks at all.
+With the **Action** type **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark. However, if you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
 
-To set up a page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
+To set up a single page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
 ![Screenshot showing Page navigation action.](media/desktop-buttons/power-bi-page-navigation.png)
 
-You can build a custom navigation pane, and add the navigation buttons to it. You avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
-
-![Screenshot showing Create a navigation page.](media/desktop-buttons/power-bi-build-navigation-pane.png)
-
 Additionally, you can conditionally format the tooltip as you can do with other button types.
+
+Remember, if you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead.
 
 ## Set the navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
+This navigation you have to create in Power BI Desktop, because you have to create a table. You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
  
-To create the example shown above, start by creating a single-column table with the names of the navigation destinations:
+To create the example shown above, start by creating a single-column table with the names of the navigation destinations.
+
+On the **Home** tab, select **Enter data**. The **Create Table** dialog box opens:
 
 :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot showing Create a table.":::
 
-Power BI uses exact string match to set the drillthrough destination, so double-check that the entered values exactly align with your drillthrough page names.
+Type the names of your pages in the column. Power BI uses exact string match to set the drillthrough destination, so double-check that the values you entered exactly match your drillthrough page names.
 
 After you've created the table, add it to the page as a single-select slicer:
 
@@ -121,7 +122,7 @@ Then create a page navigation button and select the conditional formatting optio
 
 :::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Screenshot showing Page navigation button.":::
  
-Select the name of the column you created, in this case, **Select a destination**:
+Select the name of the column you created, in this case, **Select a page**:
 
 :::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Screenshot showing Select a destination.":::
 
@@ -153,6 +154,7 @@ Set **Fill** to **On**, then create images for the different states.
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
+- [Create page and bookmark navigators](button-navigators.md)
 - [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
 - [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
