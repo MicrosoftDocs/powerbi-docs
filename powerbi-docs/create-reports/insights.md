@@ -22,6 +22,7 @@ This *Insights* feature helps you easily explore and find insights such as anoma
 - [Insights for *individual visuals*](desktop-insights.md) analyzes and explains the fluctuations of data points in visuals.
 - [Insights for *dashboard tiles*](../consumer/end-user-insights.md) looks at the data being used to render that tile, and presents them in interactive visuals.
 - [Quick Insights for *datasets*](service-insights.md) automatically generates data insights on a dataset in the Power BI service.
+- [AI Insights for *data models*](../transform-model/desktop-ai-insights.md) in Power Query provide access to pre-trained machine learning models from Azure Cognitive Services.
 
 ## License requirements
 
