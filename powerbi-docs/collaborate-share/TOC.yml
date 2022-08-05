@@ -86,9 +86,9 @@
     - name: Lead data-driven discussions  
       href: ../consumer/business-user-teams-share-data.md?context=/power-bi/collaborate-share/context/context
     - name: Create reports from your Teams data  
-      href: ../consumer/business-user-teams-create-reports.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
+      href: ../consumer/business-user-teams-create-reports.md?context=/power-bi/collaborate-share/context/context
     - name: Analyze your collaboration data  
-      href: ../consumer/business-user-teams-collaboration-data.md?toc=/power-bi/collaborate-share/toc.json&bc=/power-bi/collaborate-share/breadcrumb/toc.json
+      href: ../consumer/business-user-teams-collaboration-data.md?context=/power-bi/collaborate-share/context/context
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
     - name: "Get a link preview in Teams"
