@@ -160,6 +160,7 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The visual will only display flows within your default environment. We plan to add support for an environment selector by the general availability release.
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual isn't supported in sovereign clouds.
+- The visual will not work in the Publish to Web (public) scenarios since unauthenticated scenarios are not supported by Power Automate.
 - The visual is not certified while in preview. We plan to have complete certification by the general availability release.
 
 ## Next steps
