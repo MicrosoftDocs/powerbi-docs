@@ -29,7 +29,7 @@ Now you can follow any metric in a tap. You'll see all the metrics you're follow
 
 Now you can follow metrics directly from the mobile app and keep up to date with the activity on those metrics. To start following a metric, just tap More options (…) on a metric's card in the Metrics hub or in the metric's details pane and choose **Follow metric**.
 
-![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png) 
+![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics1.png) 
 
 
 ## July 2022
