@@ -368,7 +368,8 @@ Consider creating custom views that wrap serverless SQL pool queries. These view
 Consider the following view that retrieves campaign data.
 
 ```sql
-CREATE VIEW [VW_Campaign] AS
+CREATE VIEW [VW_Campaign]
+AS
     SELECT
         [base].[campaignid] AS [CampaignID]
         [base].[name] AS [Campaign],
