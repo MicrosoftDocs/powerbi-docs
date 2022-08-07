@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 08/04/2022
+ms.date: 08/07/2022
 LocalizationGroup: Premium
 ---
 
@@ -120,7 +120,7 @@ This section describes the following datasets workload settings:
 
 * [Power BI settings](#power-bi-settings)
 
-* [Azure Analysis Services server properties](#azure-analysis-services-server-properties)
+* [Analysis Services server properties](#analysis-services-server-properties)
 
 ### Power BI settings
 
@@ -227,21 +227,26 @@ To find the automatic page refresh setting:
 
 Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization.
 
-### Azure Analysis Services server properties
+### Analysis Services server properties
 
-Power BI Premium Gen2 supports additional Azure Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
+Power BI Premium Gen2 supports additional Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
 
-Azure Analysis Services server properties are enabled by default. To disable this setting, follow these steps:
+#### Admin portal switch
+
+Analysis Services server properties are enabled by default. To disable the Analysis Services server properties setting, follow the steps below.
+
+>[!TIP]
+>We recommend that you leave the Analysis Services server properties setting turned on.
 
 1. Go to your [capacity settings](./../admin/service-admin-portal-capacity-settings.md).
 
-2. Select the capacity you want to disable the *Azure Analysis Services server properties* in.
+2. Select the capacity you want to disable the *Analysis Services server properties* in.
 
 3. Expand **Workloads**.
 
 4. Under *datasets*, turn off the **Observe XMLA-based workspace settings (which may override capacity settings)** switch.
 
-    :::image type="content" source="media/service-admin-premium-workloads/disable-xmla.png" alt-text="Screenshot that shows the admin setting for disabling the Azure Analysis Services server properties.":::
+    :::image type="content" source="media/service-admin-premium-workloads/disable-xmla.png" alt-text="Screenshot that shows the admin setting for disabling the analysis services server properties.":::
 
 ## Dataflows
 
