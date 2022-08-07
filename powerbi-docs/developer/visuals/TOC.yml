@@ -29,20 +29,6 @@
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
-  - name: Publish your Power BI custom visuals
-    items:
-    - name: "Package a Power BI visual"
-      href: package-visual.md
-    - name: "Test your Power BI custom visual"  
-      href: submission-testing.md
-    - name: "Publish your Power BI custom visuals to AppSource"
-      href: office-store.md
-    - name: "Get a Power BI custom visual certified"
-      href: power-bi-custom-visuals-certified.md
-    - name: "Guidelines for publishing Power BI visuals" 
-      href: guidelines-powerbi-visuals.md
-    - name: "Visuals for an organization in Power BI"
-      href: power-bi-custom-visuals-organization.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -115,6 +101,20 @@
       href: unit-tests-introduction.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
+  - name: Publish your Power BI custom visuals
+    items:
+    - name: "Package a Power BI visual"
+      href: package-visual.md
+    - name: "Test your Power BI custom visual"  
+      href: submission-testing.md
+    - name: "Publish your Power BI custom visuals to AppSource"
+      href: office-store.md
+    - name: "Get a Power BI custom visual certified"
+      href: power-bi-custom-visuals-certified.md
+    - name: "Guidelines for publishing Power BI visuals" 
+      href: guidelines-powerbi-visuals.md
+    - name: "Visuals for an organization in Power BI"
+      href: power-bi-custom-visuals-organization.md
   - name: Licenses
     items:
     - name: Licensing models for AppSource visuals
@@ -141,7 +141,6 @@
       href: file-download-api.md
     - name: "Permissions API"
       href: permissions-api.md
-
     - name: "Power BI Visual utilities"
       items:    
       - name: "Adding external libraries"
