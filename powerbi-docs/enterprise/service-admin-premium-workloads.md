@@ -233,7 +233,7 @@ Power BI Premium Gen2 supports additional Analysis Services server properties. T
 
 #### Admin portal switch
 
-Analysis Services server properties are enabled by default. To disable the Analysis Services server properties setting, follow the steps below.
+Analysis Services server properties are enabled by default. To toggle the Analysis Services server properties setting, follow the steps below.
 
 >[!TIP]
 >We recommend that you leave the Analysis Services server properties setting turned on.
@@ -244,7 +244,7 @@ Analysis Services server properties are enabled by default. To disable the Analy
 
 3. Expand **Workloads**.
 
-4. Under *datasets*, turn off the **Observe XMLA-based workspace settings (which may override capacity settings)** switch.
+4. Under *datasets*, select the setting you want for the **Observe XMLA-based workspace settings (which may override capacity settings)** switch.
 
     :::image type="content" source="media/service-admin-premium-workloads/disable-xmla.png" alt-text="Screenshot that shows the admin setting for disabling the analysis services server properties.":::
 
