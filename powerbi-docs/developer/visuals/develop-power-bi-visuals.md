@@ -1,5 +1,5 @@
 ---
-title: Create custom visuals in Power BI
+title: Develop custom visuals in Power BI
 description: This article describes how to create Power BI visuals .pbiviz files.
 author: mberdugo
 ms.author: monaberdugo

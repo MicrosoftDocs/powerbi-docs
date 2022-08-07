@@ -7,7 +7,7 @@
     items: 
     - name: "What are Power BI custom visuals"
       href: power-bi-custom-visuals.md
-    - name: "Develop your own Power BI custom visual"
+    - name: "Develop a BI custom visual"
       href: develop-power-bi-visuals.md
   - name: Tutorials
     items:
