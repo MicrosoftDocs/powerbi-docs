@@ -12,7 +12,7 @@ ms.date: 06/10/2022
 
 # Power BI modeling guidance for Power Platform
 
-[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) is the standard data platform for many Microsoft business application products, including [Dynamics 365 Customer Engagement](/dynamics365/customerengagement/on-premises/basics/basics-guide?view=op-9-1) and [Power Apps canvas apps](/power-apps/maker/canvas-apps/getting-started), and also [Dynamics 365 Customer Voice](/dynamics365/customer-voice/about) (formerly Microsoft Forms Pro), [Power Automate approvals](/power-automate/get-started-approvals), [Power Apps portals](/power-apps/maker/portals/overview), and others.
+[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) is the standard data platform for many Microsoft business application products, including [Dynamics 365 Customer Engagement](/dynamics365/customerengagement/on-premises/basics/basics-guide?view=op-9-1&preserve-view=true) and [Power Apps canvas apps](/power-apps/maker/canvas-apps/getting-started), and also [Dynamics 365 Customer Voice](/dynamics365/customer-voice/about) (formerly Microsoft Forms Pro), [Power Automate approvals](/power-automate/get-started-approvals), [Power Apps portals](/power-apps/maker/portals/overview), and others.
 
 This article provides guidance on how to create a Power BI model that connects to Dataverse. It describes differences between a Dataverse schema and an optimized Power BI schema, and it provides best practices for expanding the visibility of your business application data in Power BI.
 
@@ -99,19 +99,29 @@ To help ensure that you and your team have a clear understanding of the model's 
 - What topic area will this model support?
 - Who is the audience of the reports?
 - What question is the report trying to answer?
-- What's MVD, or *minimum viable dataset*?
+- What is the MVD, or *minimum viable dataset*?
 
-Resist combining multiple topic areas into a single data model just because the end customer has questions across multiple topic areas that they want addressed by a single report. Breaking that report into multiple reports, each with a focus on a different topic (or [fact table](/power-bi/guidance/star-schema)), can result in much more efficient, scalable, and manageable models.
+Resist combining multiple topic areas into a single data model just because the end user has questions across multiple topic areas that they want addressed by a single report. Breaking that report into multiple reports, each with a focus on a different topic (or [fact table](star-schema.md)), can result in much more efficient, scalable, and manageable models.
 
-### Embrace a star schema design
+### Design a star schema
 
-Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome since it just *feels right* to maintain consistency.
+Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome since it just *feels right* to maintain consistency.
 
-Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model. The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
-
-For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema).
+Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/star-schema.png" alt-text="Diagram of a star schema comprising a single fact table and five dimension tables." border="false":::
+
+For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
+
+### Optimize Power Query queries
+
+A Power Query query is a set of steps that extracts, transforms, and loads source data into a model table. Each step builds on the result of the previous step. As a result, the types of transformations - and even the sequence of steps - can impact on query performance.
+
+The Power Query mashup engine, which evaluates and runs queries, strives to achieve *query folding* whenever possible for reasons of efficiency. Query folding is the ability for a Power Query query to generate a single query statement to retrieve and transform source data.
+
+A query that achieves folding delegates query processing to the source system. But not all queries fold by default. For more information about, see [Power Query query folding](/power-query/power-query-folding).
+
+Optimizing Power Query is a broad topic. To achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop, see [Query diagnostics](/power-query/querydiagnostics).
 
 ### Minimize the number of query columns
 
@@ -119,7 +129,7 @@ By default, when you use Power Query to load a Dataverse table, it retrieves all
 
 Attempting to retrieve data from all columns is an anti-pattern. It often results in performance bottlenecks during data refresh, and it can cause the Dataverse connector to fail when the data volume exceeds 80 MB.
 
-We recommended that you only retrieve columns that are required by reports. It's often a good idea to re-evaluate and refactor queries when report development is complete, allowing you to identify and remove other unused columns. For more information, see [Data reduction techniques for Import modeling (Remove unnecessary columns)](/power-bi/guidance/import-modeling-data-reduction#remove-unnecessary-columns).
+We recommended that you only retrieve columns that are required by reports. It's often a good idea to re-evaluate and refactor queries when report development is complete, allowing you to identify and remove other unused columns. For more information, see [Data reduction techniques for Import modeling (Remove unnecessary columns)](import-modeling-data-reduction.md#remove-unnecessary-columns).
 
 Additionally, ensure that the Power Query *Remove columns* step is introduced early so that it [folds](/power-query/power-query-folding) back to the source. That way, Power Query can avoid the unnecessary work of extracting source data only to discard it later (in an unfolded step).
 
@@ -136,24 +146,14 @@ in
     #"Removed Other Columns"
 ```
 
-### Optimize Power Query queries
-
-A Power Query query is a set of steps that extracts, transforms, and loads source data into a model table. Each step builds on the result of the previous step. As a result, the types of transformations - and even the sequence of steps - can impact on query performance.
-
-The Power Query mashup engine, which evaluates and runs queries, strives to achieve *query folding* whenever possible for reasons of efficiency. Query folding is the ability for a Power Query query to generate a single query statement to retrieve and transform source data.
-
-A query that achieves folding delegates query processing to the source system. But not all queries fold by default. For more information about, see [Power Query query folding](/power-query/power-query-folding).
-
-Optimizing Power Query is a broad topic. To achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop, see [Query diagnostics](/power-query/querydiagnostics).
-
 ### Write native queries
 
-When you have specific transformation requirements, you might achieve better performance by using a native query written in SQL. You can write a statement to:
+When you have specific transformation requirements, you might achieve better performance by using a native query written in Dataverse SQL, which is a subset of Transact-SQL. You can write a native query to:
 
-- Reduce the number of rows (use a `WHERE` clause).
+- Reduce the number of rows (by using a `WHERE` clause).
+- Aggregate data (by using the `GROUP BY` and `HAVING` clauses).
+- Join tables in a specific way (by using the `JOIN` or `APPLY` syntax).
 - Use supported SQL functions.
-- Aggregate data (use the `GROUP BY` and `HAVING` clauses).
-- Join tables in a specific way (use the `JOIN` or `APPLY` syntax).
 
 For more information, see:
 
@@ -164,9 +164,9 @@ For more information, see:
 
 Power Query executes a native query by using the `Value.NativeQuery` function.
 
-It's important to add the `EnableFolding=true` option to ensure queries are folder back to the Dataverse service. It can result in significant performance improvements, up to 97 percent faster in some cases. A native query won't fold unless this option is added.
+It's important to add the `EnableFolding=true` option to ensure queries are folded back to the Dataverse service. A native query won't fold unless this option is added. Enabling this option can result in significant performance improvements - up to 97 percent faster in some cases.
 
-Consider the following query that uses a native query to source selected columns from the **account** table. The native query will fold because the `EnableFolding` option is set.
+Consider the following query that uses a native query to source selected columns from the **account** table. The native query will fold because the `EnableFolding=true` option is set.
 
 ``` powerquery-m
 let
@@ -191,7 +191,7 @@ For more information, see [Value.NativeQuery](/powerquery-m/value-nativequery). 
 
 If you're using the [Dataverse connector](/connectors/commondataserviceforapps/) (formerly known as the Common Data Service), you can add the `CreateNavigationProperties=false` option to speed up the evaluation stage of a data import.
 
-The evaluation stage of a data import iterates through the metadata of its source to determine all possible relationships. That metadata can be extensive, especially for Dataverse. By adding this option to the query, you're letting Power Query know that you're not using those relationships. The option will allow Power BI to skip that stage of the refresh and move on to retrieving the data.
+The evaluation stage of a data import iterates through the metadata of its source to determine all possible [table relationships](/power-apps/maker/data-platform/create-edit-entity-relationships). That metadata can be extensive, especially for Dataverse. By adding this option to the query, you're letting Power Query know that you're not using those relationships. The option will allow Power BI Desktop to skip that stage of the refresh and move on to retrieving the data.
 
 > [!NOTE]
 > Don't use this option if the query expands any relationship columns.
@@ -200,9 +200,9 @@ Consider an example that retrieves data from the **account** table. It contains 
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/power-query-editor-territory-table.png" alt-text="Screenshot shows a preview of data for the three territory columns account table." border="false":::
 
-When you set the `CreateNavigationProperties=false` option, the **territoryid** and **territoryidname** columns will remain, but the **territory** column, which is a relationship column (it shows *Value* links), will be excluded. Note that relationship columns in Power Query aren't related to model relationships between tables.
+When you set the `CreateNavigationProperties=false` option, the **territoryid** and **territoryidname** columns will remain, but the **territory** column, which is a relationship column (it shows *Value* links), will be excluded. Note that relationship columns in Power Query are a different concept to *model relationships*, which propagate filters between model tables.
 
-Consider the following query that uses the `CreateNavigationProperties=false` option to speed up the evaluation stage of a data import.
+Consider the following query that uses the `CreateNavigationProperties=false` option (in the **Source** step) to speed up the evaluation stage of a data import.
 
 ``` powerquery-m
 let
@@ -218,34 +218,46 @@ in
 You're likely to experience significant performance improvement when a Dataverse table has lots of relationships with other tables. For example, because the **SystemUser** table is related to every other table in the database, refresh performance of this table would benefit by setting the `CreateNavigationProperties=false` option.
 
 > [!NOTE]
-> This option doesn't improve the performance of interactive cross-filtering of DirectQuery storage tables. It can improve the performance of data refresh of import or dual storage tables, including the process of applying Power Query Editor window changes..
+> This option can improve the performance of data refresh of import or dual storage tables, including the process of applying Power Query Editor window changes. It doesn't improve the performance of interactive cross-filtering of DirectQuery storage tables.
 
-### Helpful hint: When labels are blank
+### Helpful hint: When Dataverse choice labels are blank
 
-If you discover that choice labels are blank in Power BI, you may need to apply a fix.
+If you discover that Dataverse choice labels are blank in Power BI, you may need to apply a fix.
 
-In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**.
+In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**. The publication process will update the TDS endpoint with the latest metadata making those option labels available to Power BI.
 
-The publication process will update the TDS endpoint with the latest metadata making those option labels available to Power BI.
+For more information about Dataverse choice labels, see [Access Dataverse choices with Power BI](/power-apps/maker/data-platform/azure-synapse-link-choices-powerbi).
 
 ## Considerations for DirectQuery models
 
-DirectQuery is a feature that allows the report to send a query back to the source data at the moment the report is opened. The query can pull effectively real-time results using the current report user's permissions. There are lots of use cases where DirectQuery solves important requirements. However, those features come at a performance cost.
+When model tables have their storage mode set to DirectQuery, queries made to that table are passed through to the data source. Only certain data sources, including Dataverse, support this storage mode.
 
-A report built using DirectQuery will never be as fast a report as one built over an 'imported' data model - and data volume needs to be carefully managed to avoid unnecessary slowdowns. Managing both scope and expectations is important.
+Generally, you should import data to Power BI wherever possible. However, there are several benefits to using DirectQuery storage mode. Consider using this storage mode when:
 
-That said, the above best practices are doubly important to ensure they are being followed with DirectQuery reports - along with these reminders.
+- You need to model large volumes of data, and importing large data volumes could be impractical or data refreshes could take a long time to complete.
+- The source data is fast-changing and report users need to see up-to-date data.
+- You want Dataverse to enforce user-specific permissions.
+
+For more information about determining when to develop a DirectQuery model, see [Choose a Power BI model framework](/learn/modules/choose-power-bi-model-framework/).
+
+Bear in mind that there are many limitations related to DirectQuery storage mode:
+
+- Power Query (M) queries can't be overly complex because these queries must translate to native queries that are supported by Dataverse. So, for example, it's not possible to use pivot or unpivot transformations.
+- Analytic query performance can be slow, especially if Dataverse isn't optimized (with indexes or materialized views), or there are insufficient resources for the analytic workload.
+- Analytic queries can impact on the performance of Dataverse. It could result in a slower experience for other workloads, including write operations.
+
+The topics in this section provide you with additional considerations when working with DirectQuery storage mode.
 
 ### Use dual mode dimension tables
 
 A dual storage mode table is set to use both import and DirectQuery storage modes. At query time, Power BI determines the most efficient mode to use. Whenever possible, Power BI attempts to satisfy queries by using imported data.
 
-Slicer visuals and filter card lists, which are often based on dimension table columns, render more quickly because they're queried from cached data.
+You should consider setting dimension tables to dual storage mode. That way, slicer visuals and filter card lists, which are often based on dimension table columns, will render more quickly because they'll be queried from imported data.
 
 > [!IMPORTANT]
 > When a dimension table needs to inherit the Dataverse security model, it isn't appropriate to use dual storage mode.
 
-Consider the following data model design. Three dimension tables, **Owner**, **Account**, and **Campaign** have a striped upper border, which means they'a're set to dual storage mode.
+Consider the following data model design. Three dimension tables, **Owner**, **Account**, and **Campaign** have a striped upper border, which means they're set to dual storage mode.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/model-diagram-dual-mode-tables.png" alt-text="Screenshot shows a model diagram with three dual storage mode tables as described in the previous paragraph." border="false":::
 
@@ -263,11 +275,11 @@ For more information, see [Single sign-on (SSO) for DirectQuery sources](/power-
 
 ### Replicate "My" filters in Power Query
 
-When using Dynamics 365 Customer Engagement (CE) and model-driven Power Apps built on Dataverse, you can create views that show only records where a username field, like **Owner**, equals the current user. For example, you might create "My open opportunities", "My active cases", and more.
+When using Dynamics 365 Customer Engagement (CE) and model-driven Power Apps built on Dataverse, you can create views that show only records where a username field, like **Owner**, equals the current user. For example, you might create views named "My open opportunities", "My active cases", and more.
 
 Consider an example of how the Dynamics 365 *My Active Accounts* view includes a filter where *Owner equals current user*.
 
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/my-active-accounts-filters.png" alt-text="Screenshot shows a preview of data for the three territory columns account table." border="false":::
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/my-active-accounts-filters.png" alt-text="Screenshot shows the filters set up for the My Active Accounts view. The filter condition is owner equals current user." border="false":::
 
 You can reproduce this result in Power Query by using a native query that embeds the `CURRENT_USER` token.
 
@@ -287,11 +299,11 @@ in
     dbo_account
 ```
 
-This query will retrieve data by filtering the **ownerid** field by the current user. When you publish the model to the service, you must enable single sign-on (SSO) so that Power BI send the user's authenticated Azure AD credentials to Dataverse.
+This query will retrieve data by filtering the **ownerid** column by the current user. When you publish the model to the service, you must enable single sign-on (SSO) so that Power BI send the user's authenticated Azure AD credentials to Dataverse.
 
 ## Enterprise scale with Azure Synapse Link
 
-Dataverse includes the ability to synchronize tables to Azure Data Lake Storage and then connect to that data through an Azure Synapse Workspace. With only a few clicks, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
+Dataverse includes the ability to synchronize tables to Azure Data Lake Storage (ADLS) and then connect to that data through an Azure Synapse Workspace. With only a few clicks, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
 
 Azure Synapse Link enables a continuous replication of the data and metadata from Dataverse into the data lake, and it provides a Serverless SQL pool as a convenient data source for Power BI queries.
 
@@ -303,7 +315,7 @@ To create an Azure Synapse Link for Dataverse, you'll need the following prerequ
 
 - System administrator access to the Dataverse environment.
 - Azure Data Lake Storage:
-  - You must have a storage account to use with Azure Data Lake Storage (ADLS) Gen2.
+  - You must have a storage account to use with ADLS Gen2.
   - You must be assigned **Storage Blob Data Owner** and **Storage Blob Data Contributor** access to storage account. For more information, see [Role-based access control (Azure RBAC)](/azure/storage/blobs/data-lake-storage-access-control-model).
   - The storage account must enable [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace).
   - It's recommended that the storage account use [read-access geo-redundant storage (RA-GRS)](/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region).
@@ -311,108 +323,97 @@ To create an Azure Synapse Link for Dataverse, you'll need the following prerequ
   - You must have access to a Synapse workspace and be assigned **Synapse Administrator** access. For more information, see [Built-in Synapse RBAC roles and scopes](/azure/synapse-analytics/security/synapse-workspace-synapse-rbac-roles#built-in-synapse-rbac-roles-and-scopes).
   - The workspace must be in the same region as the ADLS Gen2 storage account.
 
-Set up involves signing in to Power Apps and connecting Dataverse to the Synapse workspace. A wizard-like experience allows you to create a new link by selecting the storage account and the tables to export. Azure Synapse Link copies data to the ADLS Gen2 storage and automatically creates views in an Azure Synapse serverless SQL pool. You can connect to those views to create a Power BI data model.
+Set up involves signing in to Power Apps and connecting Dataverse to the Synapse workspace. A wizard-like experience allows you to create a new link by selecting the storage account and the tables to export. Azure Synapse Link copies data to the ADLS Gen2 storage and automatically creates views in an Azure Synapse serverless SQL pool. You can then connect to those views to create a Power BI data model.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics.":::
 
 > [!TIP]
 > For complete documentation about creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
 
-### Address challenges
-
-This approach is straightforward, however it can place an additional burden on the user who creates the Power BI model. They will need to use Power Query to sort through the source schema and filter out inactive records, remove irrelevant columns, and provide text values for *choice* values.
+Setting up Azure Synapse Link for Dataverse is straightforward, however it can place an additional work for the user who creates the Power BI model. They will need to use Power Query to sort through the source schema and filter out inactive records, remove irrelevant columns, and provide text values for choice values.
 
 For example, consider that a default **Account** table view contains more than 200 columns. The view also returns both active and inactive records. Depending on the customer use case, much of this data is irrelevant and should be excluded by the view.
 
-Additionally, fields of type **Status**, **Status Reason**, and **Choice** are included in the default views and they return numeric values. The corresponding text label is available from metadata delivered in a JSON file. This works in principle but it's unwieldy in practice when writing a query from Power BI to these views.
+Additionally, fields of type **Status**, **Status Reason**, and **Choice** are included in the default views and they return numeric values. The corresponding text label is available from metadata delivered in a JSON file. This works in principle but it's unwieldy in practice when creating Power Query queries that connect to these views.
 
 ### Use a second serverless SQL pool
 
-You can create a second serverless SQL pool and use it to add custom report views. This way, you can present a simplified set of data to the Power BI creator that allows them to build a data model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
+Alternatively, you can create a second serverless SQL pool and use it to add custom report views. This way, you can present a simplified set of data to the Power BI creator that allows them to build a data model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views.":::
 
 This approach delivers data to Power BI that's focused, enriched, and filtered.
 
-#### Creating the Serverless SQL Instance to hold custom views
+You can create a serverless SQL pool the Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the database.
 
-Begin by creating a Serverless SQL database in the same Synapse Workspace. (Serverless SQL pool - Azure Synapse Analytics | Microsoft Docs) –  Select "Serverless" as the Pool Type and give it a name. (Your users will use this database name in their connections, so making it 'friendly' has benefits.)
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/create-serverless-sql-pool.png" alt-text="Screenshot of the Create SQL database process in Synapse Studio.":::
 
-TODO: Image
+### Choose appropriate table type
 
-#### Join existing Choice values with their Labels for a friendlier view
+Dataverse data is continually synchronized with the data in the data lake. In the case of high-usage activity, simultaneous writes and reads can create a lock causing reads to fail. To ensure reliability when retrieving data, two versions of the table data is synchronized in Synapse Analytics:
 
-[Access Dataverse choice labels directly from Azure Synapse Link for Dataverse - Power Apps | Microsoft Docs](/power-apps/maker/data-platform/azure-synapse-link-choice-labels)
+- **Near real-time data:** Provides a copy of data synchronized from Dataverse via Synapse Link in an efficient manner by detecting what data has changed since it was initially extracted or last synchronized.
+- **Snapshot data:** Provides a read-only copy of near real-time data that's updated at regular intervals (in this case every hour). Snapshot data table names have *_partitioned* appended to their name.
 
-TODO: Image (expand with examples?)
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/near-realtime-snapshot-data.png" alt-text="Screenshot of tables showing an account table and an account_partitioned table.":::
 
-#### Using the Metadata views in a query
+If you anticipate that a high volume of read and write operations will be executed simultaneously, query the snapshot table to avoid read failures.
 
-In any query, you can now join the Metadata views to the table views in a custom Serverless SQL database.
+For more information, see [Access near real-time data and read-only snapshot data](/power-apps/maker/data-platform/azure-synapse-link-synapse#access-near-real-time-data-and-read-only-snapshot-data-preview).
 
-Here's an example query that pulls the base campaign table together with the  optionset and the statuscode metadata in order to return the campaign typecode and statuscode labels.
+### Create custom views
 
-TODO: Image
+In the architecture model, consider adding custom views that wrap serverless SQL pool queries. The views will serve as straightforward, clean sources of data that Power BI connects to. The views should:
 
-### Use custom views for data modeling ease
+- Include the labels associated with choice fields.
+- Reduce complexity by including only the columns required for data modeling.
+- Filter out unnecessary rows, such as inactive records.
 
-In the architecture model, we're adding views to the database I've labeled ‘custom report views.' – The views will serve as a more straightforward, cleaner source for Power BI report models to consume.
-
-TODO: Image
-
-The objectives for the views are:
-
-- Provide the needed labels associated with Choice fields to make it much easier to add to queries in Power BI without additional complexity.
-- Make it simple – present (only) the needed tables and columns to the report modeler. Dataverse tables often contain a few dozen to several hundred columns that are created and added automatically by the system. Many of these columns are empty or would generally be unneeded in analytics reporting.
-- Remove unnecessary rows such as inactive records – or filter out unnecessary rows such as leads or accounts without cases or opportunities. – The specifics will be dependent on the customer's use case.
-
-#### Creating the views for your organization
-
-The specifics of your views are, of course, unique to your organization. Here's an example of a product view. Notice how only a few columns from the product table are included, the stringmap view is referenced to retrieve the productstructure label value, and the view is filtered to include only the rows where statecode = 0 (where Status is "Active")
+Consider the following view that retrieves campaigns.
 
 ```sql
-CREATE VIEW <Custom_SQL_Database>.[dbo].[Product]
-AS
-SELECT P.[productid],
-       P.[productnumber],
-       P.[name],
-       productstructure.LocalizedLabel productstructurename,
-       P.[parentproductid],
-       P.[parentproductidname],
-       P.[subjectidname]
-FROM <Synapse_SQL_LakeDatabase>.[dbo].[product_partitioned] P
-    JOIN <Custom_SQL_Database>.dbo.stringmap productstructure
-        ON P.productstructure = productstructure.[option]
-           AND productstructure.LocalizedLabelLanguageCode = 1033
-           AND productstructure.EntityName = 'product'
-           AND productstructure.OptionSetName = 'productstructure'
-WHERE P.statecode = 0;
+CREATE VIEW [VW_Campaign] AS
+    SELECT
+        [Base].[campaignid] AS [CampaignID]
+        [Base].[name] AS [Campaign],
+        [campaign_Status].[LocalizedLabel] AS [Status],
+        [campaign_typecode].[LocalizedLabel] AS [Type Code]
+    FROM
+        [dataverse_adl].[dbo].[campaign_partitioned] AS [Base]
+        LEFT OUTER JOIN [dataverse_adl].[dbo].[OptionsetMetadata] AS [campaign_typecode]
+            ON [Base].[typecode] = [campaign_typecode].[option]
+               AND [campaign_typecode].[LocalizedLabelLanguageCode] = 1033
+               AND [campaign_typecode].[EntityName] = 'campaign'
+               AND [campaign_typecode].[OptionSetName] = 'typecode'
+        LEFT OUTER JOIN [dataverse_adl].[dbo].[StatusMetadata] AS [campaign_Status]
+            ON [Base].[statuscode] = [campaign_Status].[status]
+               AND [campaign_Status].[LocalizedLabelLanguageCode] = 1033
+               AND [campaign_Status].[EntityName] = 'campaign'
+    WHERE
+        [Base].[statecode] = 0;
 ```
 
-Continue creating the views needed for your reports. There's a balance between creating these views with only a specific use case in mind – versus creating a sprawling unmanaged view that misses the value of the focused and tailored approach. You're encouraged to implement a documentation and governance process to ensure that new changes won't break existing reports.
+Notice that the view includes only four columns, each aliased with friendly names. There's also a `WHERE` clause to return only necessary rows, in this case active campaigns. Also, the view queries the campaign snapshot table that's joined to the **OptionsetMetadata** and **StatusMetadata** tables in order to retrieve choice labels.
 
-#### Connecting Power BI to the Synapse Serverless SQL Views
+> [!TIP]
+> For more information on how to retrieve metadata, see [Access choice labels directly from Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-choice-labels).
 
-The query to connect to the Serverless SQL pool is the same as other SQL connections.
+### Connect to Synapse Analytics
 
-To find the address of your SQL server in Synapse Studio:
+To query the serverless SQL pool, you will need the workspace SQL endpoint. You can retrieve the endpoint from Synapse Studio in the serverless SQL pool properties.
 
-1. Open the **Manage** blade.
-1. Click on the Built-in SQL Pool.
-1. Copy the Workspace SQL endpoint.
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/retrieve-workspace-sql-endpoint.png" alt-text="Screenshot of the Synapse Studio SQL pool properties. The workspace SQL endpoint is highlighted.":::
 
-TODO: Image
+In Power BI Desktop, you can connect to Azure Synapse by using the [Azure Synapse Analytics SQL connector](/power-query/connectors/azuresqldatawarehouse). When prompted for the server, enter the workspace SQL endpoint.
 
-Choose "Get Data" in Power BI and select the "Azure Synapse Analytics SQL" connector.
-
-TODO: Image
-
-Then paste the "Workspace SQL endpoint" from the synapse studio into the 'Server' field.
-
-TODO: Image
-
-From this point, you can choose the database, tables, and specific fields you want to include in the data model.
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot of tables showing an account table and an account_partitioned table.":::
 
 ## Next steps
 
-TODO
+For more information related to this article, check out the following resources:
+
+- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake)
+- [Understand star schema and the importance for Power BI](star-schema.md)
+- [Data reduction techniques for Import modeling](import-modeling-data-reduction.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
