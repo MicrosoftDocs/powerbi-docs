@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 07/25/2022
 LocalizationGroup: Data from files
 ---
 
@@ -131,7 +131,7 @@ To see the columns within a table, expand the table within **Object explorer**.
 
 When you connect to datamart using SSMS or other client tools, you can see views created in Model schema of the datamart. The default schema configuration on a datamart is set to Model.
 
-A datamart shows two other roles as *admin* and *public* under security when connected using SSMS. Users added to a workspace in any of the *Admin* or *Member* or *Contributor* roles get added to the *admin* role on the datamart. Users added to the *Viewer* role in the workspace get added to *public* role in the datamart.
+A datamart shows two other roles as *admin* and *viewer* under security when connected using SSMS. Users added to a workspace in any of the *Admin* or *Member* or *Contributor* roles get added to the *admin* role on the datamart. Users added to the *Viewer* role in the workspace get added to *viewer* role in the datamart.
 
 
 ## Relationships metadata

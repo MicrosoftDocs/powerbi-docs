@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
+ms.topic: troubleshooting
 LocalizationGroup: Share your work
 ms.date: 06/13/2022
 ---

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 08/04/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -17,7 +17,7 @@ Supported Oracle versions:
 - Oracle Server 9 and later
 - Oracle Data Access Client (ODAC) software 11.2 or greater
 
-Before you can connect to an Oracle database using Power BI, you need to install the Oracle Data Access Client (ODAC) software 11.2 or greater on your computer. To install the 32-bit ODAC software, go to [32-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) or choose a version you prefer. To install the 64-bit ODAC software, go to [64-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) or choose a version you prefer.  You must choose a windows installer version since xcopy version does not work with Power BI Desktop. 
+Before you can connect to an Oracle database using Power BI, you need to install the Oracle Data Access Client (ODAC) software 11.2 or greater on your computer. To install the 32-bit ODAC software, go to [32-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) or choose a version you prefer. To install the 64-bit ODAC software, go to [64-bit Oracle Data Access Components (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) or choose a version you prefer.  You must choose a Windows Installer version since x-copy version doesn't work with Power BI Desktop. 
 
 From the Oracle readme file:
 
@@ -48,7 +48,9 @@ After you install the matching Oracle client driver, you can connect to an Oracl
 
 ### 64-bit and 32-bit drivers for Power BI Desktop
 
-Power BI Desktop uses **Unmanaged ODP.NET** for authoring Power BI reports. You only need the following steps when using Oracle ODAC drivers 12.2 and later. Otherwise, they install by default to a non-machine-wide configuration for a new Oracle home installation. These steps assume you've installed the ODAC 18.x files to the c:\oracle64 folder for 64-bit Power BI Desktop or the c:\oracle32 folder for 32-bit Power BI Desktop. Follow these steps to register Unmanaged ODP.NET:
+Power BI Desktop uses **Unmanaged ODP.NET** for authoring Power BI reports. You only need to take the following steps when using drivers later than Oracle ODAC 12.2. For ODAC 12.2 and previous drivers, when you install ODAC you have an option to include the configuration of **Unmanaged ODP.NET** at a machine-wide level automatically. 
+
+The steps in the following two sections assume you've installed the ODAC 18.x files to the c:\oracle64 folder for 64-bit versions of Power BI Desktop, or to the c:\oracle32 folder for the 32-bit versions of Power BI Desktop. Follow these steps to register **Unmanaged ODP.NET**:
 
 #### 64-bit Power BI Desktop
 
@@ -92,7 +94,7 @@ To make the connection, take the following steps:
 2. From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**.
    
    ![Oracle database connect](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-3. In the **Oracle database** dialog that appears, provide the name of the **Server**, and select **OK**. If a SID is required, specify it by using the format: *ServerName/SID*, where *SID* is the unique name of the database. If the *ServerName/SID* format doesn't work, use *ServerName/ServiceName*, where *ServiceName* is the alias you use to connect. For additional connection string properties, please refer [here](https://docs.oracle.com/en/database/oracle/oracle-database/19/odpnt/featConnecting.html)
+3. In the **Oracle database** dialog that appears, provide the name of the **Server**, and select **OK**. If a SID is required, specify it by using the format: *ServerName/SID*, where *SID* is the unique name of the database. If the *ServerName/SID* format doesn't work, use *ServerName/ServiceName*, where *ServiceName* is the alias you use to connect. For more connection string properties, please refer [here](https://docs.oracle.com/en/database/oracle/oracle-database/19/odpnt/featConnecting.html)
 
 
    ![Enter Oracle server name](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
@@ -103,7 +105,7 @@ To make the connection, take the following steps:
 4. Select either the **Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](./desktop-use-directquery.md).
 
 
-5. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
+5. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop doesn't support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block doesn't return any result set.  
    
    ![Expand Advanced options](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
@@ -117,14 +119,14 @@ To make the connection, take the following steps:
 You might encounter any of several errors from Oracle when the naming syntax is either incorrect or not configured properly:
 
 * ORA-12154: TNS:could not resolve the connect identifier specified.
-* ORA-12514: TNS:listener does not currently know of service requested in connect descriptor.
+* ORA-12514: TNS:listener doesn't currently know of service requested in connect descriptor.
 * ORA-12541: TNS:no listener.
 * ORA-12170: TNS:connect timeout occurred.
-* ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.
+* ORA-12504: TNS:listener wasn't given the SERVICE_NAME in CONNECT_DATA.
 
 These errors might occur if the Oracle client either isn't installed or isn't configured properly. If it's installed, verify that the tnsnames.ora file is properly configured and you're using the proper net_service_name. You also need to make sure that the net_service_name is the same between the machine that uses Power BI Desktop and the machine that runs the gateway. For more information, see [Install the Oracle client](#install-the-oracle-client).
 
-You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
+You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x doesn't support Oracle Server version 9.
 
 If you downloaded Power BI Desktop from the Microsoft Store, you might be unable to connect to Oracle databases because of an Oracle driver issue. If you encounter this issue, the error message returned is: *Object reference not set*. This is an issue with how Oracle driver works in Windows UWP Apps. To address the issue, you have to do the following:
 
@@ -134,6 +136,6 @@ If you see the error message, *Object reference not set*, in the Power BI Gatewa
 
 If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article.
 
-When connecting to an Oracle database, the Oracle client might need to have [National Language Support](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/nlspg/setting-up-globalization-support-environment.html#GUID-86A29834-AE29-4BA5-8A78-E19C168B690A) correctly configured if any underlying views or queries use functions with locale-specific behavior (such as `TO_DATE` or `TO_CHAR`). On Windows, the `NLS_LANG` parameter can be configured under the registry path `HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\<KEY_HOME_NAME>`. For more information, refer to the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/win.112/e10845/registry.htm#NTQRF415). If you are using Power BI Gateway to connect to Oracle, the `NLS_LANG` setting in the registry will need to be updated on the machine where both gateway and the Oracle client are installed.
+When connecting to an Oracle database, the Oracle client might need to have [National Language Support](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/nlspg/setting-up-globalization-support-environment.html#GUID-86A29834-AE29-4BA5-8A78-E19C168B690A) correctly configured if any underlying views or queries use functions with locale-specific behavior (such as `TO_DATE` or `TO_CHAR`). On Windows, the `NLS_LANG` parameter can be configured under the registry path `HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\<KEY_HOME_NAME>`. For more information, see the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/win.112/e10845/registry.htm#NTQRF415). If you're using Power BI Gateway to connect to Oracle, the `NLS_LANG` setting in the registry will need to be updated on the machine where both gateway and the Oracle client are installed.
 
 

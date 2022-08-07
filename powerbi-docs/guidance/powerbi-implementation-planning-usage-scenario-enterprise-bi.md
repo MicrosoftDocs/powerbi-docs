@@ -29,7 +29,7 @@ Large enterprise BI implementations often employ a centralized approach. Enterpr
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support enterprise BI. The primary focus is on organization-wide content distribution at scale including the use of Power BI Premium capacity. This scenario also depicts developing [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-inline.png" alt-text="Image shows a diagram of enterprise B I, which is organization-wide content distribution at scale. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-inline.png" alt-text="Image shows a diagram of enterprise BI, which is organization-wide content distribution at scale. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 

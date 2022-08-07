@@ -7,12 +7,18 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/14/2022
+ms.date: 07/14/2022
 ---
 
 # Power BI visuals API changelog
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+
+## API v4.7.0
+
+* **[Licensing API](licensing-api.md)** - Sell, manage, and enforce licenses directly through the commercial marketplace.
+* **[Drilldown API](drilldown-api.md)** - Create a visual that can trigger a drilldown operation on its own, without user interaction.  
+* Supports Desktop July 2022
 
 ## API v4.6.0
 
@@ -20,7 +26,7 @@ This page contains a quick summary of the API versions. Versions listed here are
   * web access
   * download file from custom visual
 * Adding two corresponding [tenant admin switches](https://go.microsoft.com/fwlink/?linkid=2195700&clcid=0x409)
-* New API to allow [downloading visual to file](./file-download-api.md)
+* **[Download API](./file-download-api.md)** to allow downloading visual to file
 * Supports Desktop June 2021
 
 ## API v4.2.0
@@ -30,16 +36,16 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v3.8.0
 
-* Supports Desktop 2021 May and later.
+* Supports Desktop May 2021 and later.
 
 ## API v3.7.0
 
-* Supports Desktop 2021 April and later.
+* Supports Desktop April 2021 and later.
 
 ## API v3.6.0
 
-* Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value. 
-* Supports Desktop 2021 February and later. 
+* Visual can receive updates from Power BI [without the need to bind any data](no-dataroles-support.md).
+* Supports Desktop 2021 February and later.
 * Supports Desktop RS May 2021 and later.
 
 ## API v3.4.0
@@ -108,7 +114,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.13.0
 
 * Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](../../visuals/power-bi-visualization-slicers.md).
-* Accessibility: [High-contrast support](./high-contrast-support.md) 
+* Accessibility: **[High-contrast support](./high-contrast-support.md)**
 * Accessibility: Allow Keyboard Focus flag
 
 ## API v1.12.0

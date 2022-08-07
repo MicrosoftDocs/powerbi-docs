@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/11/2022
+ms.date: 07/17/2022
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -16,7 +16,7 @@ Once you have created your Power BI visual, you may want to publish it to AppSou
 
 ## What is AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place to find SaaS apps and add-ins for your Microsoft products and services.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place to find SaaS apps and add-ins for your Microsoft products and services. You can find many Power BI visuals here.
 
 ![Screenshot of Power B I visuals in AppSource.](media/office-store/appsource-01.png)
 

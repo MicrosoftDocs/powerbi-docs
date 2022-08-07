@@ -1,38 +1,38 @@
 ---
 title: Use Shape maps in Power BI Desktop (Preview)
-description: Create relative comparisons to regions using Shape maps in Power BI Desktop
+description: Create relative comparisons to regions using Shape maps in Power BI Desktop.
 author: msftrien
 ms.author: mihart
 ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/26/2022
+ms.date: 07/13/2022
 LocalizationGroup: Transform and shape data
 ---
 
 # Create Shape Map visualizations in Power BI Desktop (preview)
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 Create a **Shape map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape map** doesn't show precise geographical locations of data points on a map. Instead, its main purpose is to compare regions on a map by coloring them differently.
 
-:::image type="content" source="media/desktop-shape-map/power-bi-shape-map.png" alt-text="Example of a shape map.":::
+:::image type="content" source="media/desktop-shape-map/power-bi-shape-map.png" alt-text="Screenshot of a shape map example.":::
 
 The **Shape map** visual is only available in Power BI Desktop and not in Power BI service or mobile. Since it is in preview, it must be enabled before you can use it. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
-![enable the Shape map preview feature](media/desktop-shape-map/power-bi-preview-features.png)
+:::image type="content" source="media/desktop-shape-map/power-bi-preview-features.png" alt-text="Screenshot of preview features in the Options pane.":::
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI paid licenses or that the report is saved in Premium capacity.
 
-## Creating Shape Maps
+## Create a Shape map
 
-You can test the **Shape map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
+You can test the **Shape map** control with the maps that ship with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use custom maps**. **Shape map** visuals are based on maps that you can find on the Internet, create yourself, or convert to the TopoJSON format. See the section below to learn more. Examples of custom maps are: geographical, seating arrangements, floor plans, and others.
 
 In Power BI Desktop, after **Shape map visual** is enabled, select the **Shape map** icon from the **Visualizations** pane.
 
-:::image type="content" source="media/desktop-shape-map/power-bi-shape-map-template2.png" alt-text="Select the template for shape map.":::
+:::image type="content" source="media/desktop-shape-map/power-bi-shape-map-template-2.png" alt-text="Select the template for shape map.":::
 
 Power BI Desktop creates an empty **Shape map** visual design canvas.
 
@@ -40,23 +40,20 @@ Power BI Desktop creates an empty **Shape map** visual design canvas.
 
 Take the following steps to create a **Shape map**:
 
+> [!NOTE]
+> In the **Region keys** section at the end of this article, there are tables of map region keys you can use to follow these steps.
+
 1. In the **Fields** pane, drag a data field that has geography names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket.
 
-   > [!NOTE]
-   > To get sample map data you can use to test the **Shape Map** visual, see the section titled **Getting Map Data** below.
+   :::image type="content" source="media/desktop-shape-map/power-bi-shape-map-selections.png" alt-text="Screenshot of data fields selected to build a shape map.":::
 
-   :::image type="content" source="media/desktop-shape-map/power-bi-shape-map-selections.png" alt-text="Build your shape map.":::
+1. In the **Format** pane, expand **Map settings**, and change the **Map type**. In this example, we've selected Italy, and the rendering appears, as shown in the following image.
 
-1. In the **Format** settings pane, expand **Shape**, and change the default **Map**. In this example, we've selected Italy, and the rendering appears, as shown in the following image.
-
-   :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Open the Formatting pane and select Shape and then Italy.":::  
-
-   > [!NOTE]
-   > In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+   :::image type="content" source="media/desktop-shape-map/power-bi-italy-map.png" alt-text="Screenshot of a shape map of Italy.":::  
 
 1. To display the map keys of the currently selected map, select **View map type key**. In this example, we're using a map of Mexico and the Map keys displays the values being used to build the map.
 
-   :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Select View map keys to display keys.":::
+   :::image type="content" source="media/desktop-shape-map/power-bi-map-keys.png" alt-text="Screenshot of map key values used to build the shape map.":::
 
 1. Choose which way to display a three-dimensional object (the earth) as a two-dimensional map using the **Projection** dropdown.
     - **Equirectangular**: cylindrical projection that converts the globe into a grid with each rectangular cell having the same size, shape, and area.
@@ -71,9 +68,9 @@ Take the following steps to create a **Shape map**:
 
 You can use custom maps with **Shape map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
-To use a **TopoJSON** map file, add a Shape map visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Format** section, expand **Shape**, and select **+ Add map** and then select **Custom map** from the dropdown.
+To use a **TopoJSON** map file, add a Shape map visual to your report. Under **Map settings** in the **Format** pane, select **Custom map** from the dropdown, then choose **Add a map type**.
 
-:::image type="content" source="media/desktop-shape-map/power-bi-add-custom.png" alt-text="Open Formatting pane and select Add Map.":::
+:::image type="content" source="media/desktop-shape-map/power-bi-add-custom.png" alt-text="Screenshot of Format pane to select Add map.":::
 
 ### Sample custom map
 
@@ -87,23 +84,23 @@ If you'd like to experiment with custom maps, download this PBIX file and follow
 
 2. Since states can be divided into multiple districts, we have to use a custom shape map for districts.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below uses a custom map named *2000_districts_extra_simplified_CONUS.json* file.
 
-    :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Select the custom map for districts.":::
+    :::image type="content" source="media/desktop-shape-map/power-bi-custom-maps.png" alt-text="Screenshot of custom map dropdown to choose districts.":::
 
-:::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Custom shape map.":::
+    :::image type="content" source="media/desktop-shape-map/shape-map-7a.png" alt-text="Screenshot of custom shape map with Texas highlighted.":::
 
 You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains.
 
-:::image type="content" source="media/desktop-shape-map/shape-map-7b.png" alt-text="Texas shape map.":::
+:::image type="content" source="media/desktop-shape-map/shape-map-7b.png" alt-text="Screenshot of Texas shape map.":::
 
 ## Getting map data
 
 To quickly get data into a model to test **Shape map**, you can copy one of the tables at the end of this article, then select **Enter data** from the **Home** ribbon.
 
-:::image type="content" source="media/desktop-shape-map/shape-map-4-new.png" alt-text="In Desktop, select Enter Data.":::
+:::image type="content" source="media/desktop-shape-map/shape-map-4-new.png" alt-text="Screenshot of button on menu bar to enter data.":::
 
 In this example, we've selected the data for Mexico and pasted it into Desktop using **Enter data**. The top row is automatically identified as a header.
 
-:::image type="content" source="media/desktop-shape-map/power-bi-create-table.png" alt-text="Create table using copy and paste. ":::
+:::image type="content" source="media/desktop-shape-map/power-bi-create-table.png" alt-text="Screenshot of data entered using copy and paste. ":::
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 
@@ -118,10 +115,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 
 - The **Shape map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape map visual** checkbox.
 - Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
-
 - The **Shape map** visual will plot up to a maximum of 1,500 data points.
-
-- The reports for the United States districts used in these examples can be found at [https://www.justice.gov/usao/resources/annual-statistical-reports](https://www.justice.gov/usao/resources/annual-statistical-reports).
 
 ## Region keys
 

@@ -6,21 +6,19 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/20/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-210
 ---
+# Description of known issue #210
 
-# Known issue - The scorecard visual's display name is blank in the visualizations pane
+When selecting the **Format visual** tab of the visualizations pane for scorecard visuals, you won't see the metrics card's display name.
 
 **APPLIES TO:** ✔️ Power BI metrics
 
-**Status:** Open
+**Status:** Fixed: July 25, 2022
 
 **Problem area:** Create and Author Data
 
-## Description of problem
-
-When selecting the **Format visual** tab of the visualizations pane for scorecard visuals, you won't see the metrics card's display name.
 
 ## Symptoms
 

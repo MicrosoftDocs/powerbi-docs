@@ -6,11 +6,12 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/06/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-207
 ---
+# Description of known issue #207
 
-# Known issue - A scorecard in an app won't load until the user visits workspace first
+Within a workspace app, a report author can create and include a scorecard.  Once they share the app with you, you can visit the app and view the scorecard data.  If you try to directly view the scorecard in the app and haven't visited the associated workspace before, you can't see the scorecard data.
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -18,9 +19,6 @@ ms.custom: known-issue-207
 
 **Problem area:** Consume and View
 
-## Description of problem
-
-Within a workspace app, a report author can create and include a scorecard.  Once they share the app with you, you can visit the app and view the scorecard data.  If you try to directly view the scorecard in the app and haven't visited the associated workspace before, you can't see the scorecard data.
 
 ## Symptoms
 

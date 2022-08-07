@@ -36,7 +36,7 @@ These URLs will become available as links in the Power BI help menu.
 > [!NOTE]
 > Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 
-![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
+![Screenshot of Power BI Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
 
 For more information, see [Help and support settings](../admin/service-admin-portal-help-support.md).
 
@@ -50,7 +50,7 @@ When in this setting is enabled, you'll be notified by email if your tenant is i
 
 We recommend you enable the **Receive email notification service outages or incidents** setting. It's found in the **Help and support settings** group. Assign one or more _mail-enabled_ security groups.
 
-![Screenshot of Power B I Desktop showing the "Receive email notifications for service outages or incidents" setting.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Screenshot of Power BI Desktop showing the "Receive email notifications for service outages or incidents" setting.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### Information protection
 
@@ -73,7 +73,7 @@ We recommend you assign one or more security groups. These groups can be granted
 
 Be sure to include instructions in your documentation letting users (who don't have workspace creation rights) know how they can request a new workspace.
 
-![Screenshot of Power B I Desktop showing the "Create workspaces" setting.](media/admin-tenant-settings/create-workspaces.png)
+![Screenshot of Power BI Desktop showing the "Create workspaces" setting.](media/admin-tenant-settings/create-workspaces.png)
 
 ### Share content with external users
 
@@ -83,7 +83,7 @@ The **Share content with external users** setting is enabled by default for the 
 
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to share content with external users.
 
-![Screenshot of Power B I Desktop showing the "Share content with external users" setting.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Screenshot of Power BI Desktop showing the "Share content with external users" setting.](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### Publish to web
 
@@ -95,7 +95,7 @@ If enabled, we recommend you assign one or more security groups. These groups ca
 
 Further, there's an option to choose how your embed codes work. By default, it's set to **Only allow existing codes**. It means users will be asked to contact a Power BI admin to create an embed code.
 
-![Screenshot of Power B I Desktop showing the "Publish to web" setting.](media/admin-tenant-settings/publish-to-web.png)
+![Screenshot of Power BI Desktop showing the "Publish to web" setting.](media/admin-tenant-settings/publish-to-web.png)
 
 We also recommend you review [publish to web embed codes](https://app.powerbi.com/admin-portal/embedCodes) regularly. Remove codes if they result in the publication of private or confidential information.
 
@@ -110,7 +110,7 @@ We recommend you assign one or more security groups. These groups can be granted
 > [!IMPORTANT]
 > Disabling this setting also restricts the use of the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and Power BI service [live connection](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
 
-![Screenshot of Power B I Desktop showing the "Export data" setting.](media/admin-tenant-settings/export-data.png)
+![Screenshot of Power BI Desktop showing the "Export data" setting.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > If users allow users to export data, you can add a layer of protection by enforcing [data protection](../enterprise/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.

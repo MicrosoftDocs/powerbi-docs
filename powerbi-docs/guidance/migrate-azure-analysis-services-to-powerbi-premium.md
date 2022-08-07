@@ -1,19 +1,19 @@
 ---
-title: Migrate from Azure Analysis Services to Power BI Premium
-description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium.
+title: Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded
+description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded.
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 08/03/2022
 ms.custom: intro-migration
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium
 
-This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium.
+This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium or Power BI Embedded.
 
 ## Background
 
@@ -22,7 +22,8 @@ Power BI has evolved into the leading platform for both self-service and IT-mana
 For over two decades, Microsoft has continued to make deep investments in enterprise BI. AAS and SQL Server Analysis Services (SSAS) are based on mature BI data modeling technology used by countless enterprises. Today, that same technology is also at the heart of Power BI datasets.
 
 > [!NOTE]
-> In this article, the terms data model, semantic model, BI model, tabular model, database, and Power BI dataset have the same meaning. This article commonly uses the terms *data model* for AAS model and *dataset* for Power BI model.
+> In this article, the terms data model, semantic model, BI model, tabular model, database, and Power BI dataset have the same meaning. This article commonly uses the terms *data model* for AAS model and *dataset* for Power BI model. 
+> This article describes the process of migrating to Power BI Premium but this also applies to Power BI Embedded. 
 
 In recent years, Microsoft has taken great strides to deliver AAS capabilities to [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/). To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI Premium workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
 
@@ -105,7 +106,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](/power-bi/enterprise/service-admin-premium-workloads#datasets), which control Premium capacity workloads | No | Yes |
-| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
+| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes <sup>1</sup> |
 | [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
 | **Connectivity** |||
