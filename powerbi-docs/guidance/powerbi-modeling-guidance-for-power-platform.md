@@ -370,23 +370,23 @@ Consider the following view that retrieves campaign data.
 ```sql
 CREATE VIEW [VW_Campaign] AS
     SELECT
-        [Base].[campaignid] AS [CampaignID]
-        [Base].[name] AS [Campaign],
-        [campaign_Status].[LocalizedLabel] AS [Status],
+        [base].[campaignid] AS [CampaignID]
+        [base].[name] AS [Campaign],
+        [campaign_status].[LocalizedLabel] AS [Status],
         [campaign_typecode].[LocalizedLabel] AS [Type Code]
     FROM
-        [dataverse_adl].[dbo].[campaign] AS [Base]
+        [dataverse_adl].[dbo].[campaign] AS [base]
         LEFT OUTER JOIN [dataverse_adl].[dbo].[OptionsetMetadata] AS [campaign_typecode]
-            ON [Base].[typecode] = [campaign_typecode].[option]
+            ON [base].[typecode] = [campaign_typecode].[option]
                AND [campaign_typecode].[LocalizedLabelLanguageCode] = 1033
                AND [campaign_typecode].[EntityName] = 'campaign'
                AND [campaign_typecode].[OptionSetName] = 'typecode'
-        LEFT OUTER JOIN [dataverse_adl].[dbo].[StatusMetadata] AS [campaign_Status]
-            ON [Base].[statuscode] = [campaign_Status].[status]
-               AND [campaign_Status].[LocalizedLabelLanguageCode] = 1033
-               AND [campaign_Status].[EntityName] = 'campaign'
+        LEFT OUTER JOIN [dataverse_adl].[dbo].[StatusMetadata] AS [campaign_status]
+            ON [base].[statuscode] = [campaign_Status].[status]
+               AND [campaign_status].[LocalizedLabelLanguageCode] = 1033
+               AND [campaign_status].[EntityName] = 'campaign'
     WHERE
-        [Base].[statecode] = 0;
+        [base].[statecode] = 0;
 ```
 
 Notice that the view includes only four columns, each aliased with a friendly name. There's also a `WHERE` clause to return only necessary rows, in this case active campaigns. Also, the view queries the campaign table that's joined to the **OptionsetMetadata** and **StatusMetadata** tables in order to retrieve choice labels.
