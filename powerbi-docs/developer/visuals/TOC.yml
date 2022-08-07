@@ -102,7 +102,7 @@
       href: unit-tests-introduction.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
-  - name: Publish your Power BI custom visuals
+  - name: Publish your Power BI custom visual
     items:
     - name: "Package a Power BI visual"
       href: package-visual.md
