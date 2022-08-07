@@ -20,6 +20,17 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## August 2022
+
+### Keep tabs on key metrics
+### Follow metrics from your mobile app
+Now you can follow any metric in a tap. You'll see all the metrics you're following from the metrics tab on your Home screen.
+
+Now you can follow metrics directly from the mobile app and keep up to date with the activity on those metrics. To start following a metric, just tap More options (…) on a metric's card in the Metrics hub or in the metric's details pane and choose **Follow metric**.
+
+![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png) 
+
+
 ## July 2022
 
 ### Data in space - your data, everywhere (iOS)
