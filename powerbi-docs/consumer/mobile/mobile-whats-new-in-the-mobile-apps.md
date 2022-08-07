@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 08/07/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -23,6 +23,7 @@ For related "What's New" information, see:
 ## August 2022
 
 ### Keep tabs on key metrics
+
 ### Follow metrics from your mobile app
 Now you can follow any metric in a tap. You'll see all the metrics you're following from the metrics tab on your Home screen.
 
