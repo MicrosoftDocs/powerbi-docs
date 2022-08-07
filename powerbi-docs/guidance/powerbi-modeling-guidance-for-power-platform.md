@@ -411,7 +411,7 @@ To query the serverless SQL pool, you'll need the workspace SQL endpoint. You ca
 
 In Power BI Desktop, you can connect to Azure Synapse by using the [Azure Synapse Analytics SQL connector](/power-query/connectors/azuresqldatawarehouse). When prompted for the server, enter the workspace SQL endpoint.
 
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot of tables showing an account table and an account_partitioned table." border="false":::
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot of the SQL Server Database window used to set the server value." border="false":::
 
 ## Next steps
 
