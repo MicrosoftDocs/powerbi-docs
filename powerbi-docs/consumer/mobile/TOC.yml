@@ -124,6 +124,8 @@
         href: mobile-windows-10-app-presentation-mode.md
       - name: "Single Sign-On in the Windows app"
         href: mobile-windows-10-app-single-sign-on-sso.md
+      - name: "Install WebView2"
+        href: mobile-windows-10-app-webview2-installation.md
   - name: Resources
     items: 
     - name: "Supported languages in the mobile apps"
