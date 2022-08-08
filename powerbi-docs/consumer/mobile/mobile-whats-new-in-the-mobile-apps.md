@@ -22,14 +22,11 @@ For related "What's New" information, see:
 
 ## August 2022
 
-### Keep tabs on key metrics
-
-### Follow metrics from your mobile app
+### Keep tabs on key metrics from your mobile app
 
 Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen.
 
-![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png) 
-
+![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 
 ## July 2022
 
