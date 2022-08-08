@@ -28,6 +28,10 @@ Now you can follow any metric with just a tap. And you can see all the metrics y
 
 ![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 
+## Minimum OS requirement for the Windows app
+
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763, to support using WebView2. App upgrades will not be available for Windows devices running on earlier versions.
+
 ## July 2022
 
 ### Data in space - your data, everywhere (iOS)
