@@ -25,7 +25,8 @@ The default display view is **Fit to page** and the default display size is **16
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
-## Where to find Page view settings in the Power BI service and Power BI Desktop
+## Where to find Page view settings
+
 Page view settings are available in both the Power BI service and Power BI Desktop, but the interface is a little different. The following sections explain where you can find View settings in each Power BI tool.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
@@ -35,7 +36,7 @@ In Report view, select the **View** tab to open Page view settings as well as ph
 
 # [Power BI service](#tab/powerbi-service)
 
-In the [Power BI service](https://app.powerbi.com), open a report, select **Edit**, then select **View** from the upper left menu bar.
+In the Power BI service (app.powerbi.com), open a report, select **Edit**, then select **View** from the upper left menu bar.
 
 ![Screenshot showing service page view settings.](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
@@ -61,7 +62,7 @@ The second set of Page view settings controls the positioning of objects on the 
 
 ![Screenshot showing change canvas settings.](media/power-bi-report-display-settings/power-bi-canvas-settings.png)
 
-**Canvas** settings, formerly called *page size settings* are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
+**Canvas** settings, formerly called *page size* settings are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
 
 * 4:3 ratio
 * 16:9 ratio (default)
