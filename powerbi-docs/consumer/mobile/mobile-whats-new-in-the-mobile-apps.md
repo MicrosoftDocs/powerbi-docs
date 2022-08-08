@@ -28,6 +28,10 @@ Now you can follow any metric with just a tap. And you can see all the metrics y
 
 ![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 
+## Mobile formatting now supports text box visuals
+
+Mobile formatting in Power BI Desktop now supports text box visuals. Now when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+
 ## Minimum OS requirement for the Windows app
 
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763, to support using WebView2. App upgrades will not be available for Windows devices running on earlier versions.
