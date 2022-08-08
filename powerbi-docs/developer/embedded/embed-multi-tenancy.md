@@ -147,7 +147,7 @@ Then, use the *Update parameters* API to define which customers' data the datase
 ISVs usually store their customers' data in one of two ways:
 
 * [A separate database for each customer](#a-separate-database-for-each-customer)
-* [A single multi-tenant database](#a-single-multi-customer-database)
+* [A single multi-tenant database](#a-single-multi-tenant-database)
 
 In either case, you should end up with single-tenant datasets (one dataset per customer) in Power BI.  
 
