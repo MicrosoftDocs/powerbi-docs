@@ -22,7 +22,7 @@ For related "What's New" information, see:
 
 ## August 2022
 
-### Keep tabs on key metrics from your mobile app
+### Follow metrics from your mobile app
 
 Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen.
 
