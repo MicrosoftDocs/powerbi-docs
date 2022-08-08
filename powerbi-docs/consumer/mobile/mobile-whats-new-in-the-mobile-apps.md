@@ -28,11 +28,19 @@ Now you can follow any metric with just a tap. And you can see all the metrics y
 
 ![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 
+## Find Power BI content in your Teams mobile app! (iOS and Android)
+
+Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power BI content right there in the Teams mobile app. When you tap the content you want to see, you'll be automatically redirected to the Power BI mobile app for the best viewing experience. [Learn more](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-is-available-in-microsoft-teams-mobile/) 
+
 ## Mobile formatting now supports text box visuals
 
-Mobile formatting in Power BI Desktop now supports text box visuals. Now when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+Mobile formatting in Power BI Desktop now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
 
-## Minimum OS requirement for the Windows app
+## Upgraded browsing with WebView2 (Windows)
+
+The Power BI app for Windows has been upgraded to use Microsoft Edge WebView2. Enjoy faster performance, bug fixes, and an all-round better experience.
+
+## New minimum OS requirement for the Windows app
 
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763, to support using WebView2. App upgrades will not be available for Windows devices running on earlier versions.
 
@@ -57,7 +65,6 @@ Now you can track and update metrics that feature multiple targets. Open a metri
 
 ![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metric-details-pane.png)
 
-
 ## May 2022
 
 ### Goals has become Metrics
@@ -75,7 +82,7 @@ Changes and updates to goals related to you now show up in your activity feed, a
 
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
-### New minimum OS requirement for the Windows app
+### Minimum OS requirement for the Windows app
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications (Android and iOS)
