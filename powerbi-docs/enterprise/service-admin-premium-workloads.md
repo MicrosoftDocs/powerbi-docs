@@ -233,10 +233,7 @@ Power BI Premium Gen2 supports additional Analysis Services server properties. T
 
 #### Admin portal switch
 
-Analysis Services server properties are enabled by default. To toggle the Analysis Services server properties setting, follow the steps below.
-
->[!TIP]
->We recommend that you leave the Analysis Services server properties setting turned on.
+The Analysis Services XMLA-based server properties setting is enabled by default. When enabled, workspace admins can modify behaviors for an individual workspace. Modified properties apply only to that workspace. To toggle the Analysis Services server properties setting, follow the steps below.
 
 1. Go to your [capacity settings](./../admin/service-admin-portal-capacity-settings.md).
 
