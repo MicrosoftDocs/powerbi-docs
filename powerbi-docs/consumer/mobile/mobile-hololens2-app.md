@@ -64,7 +64,7 @@ Reports and dashboards update while you’re using the app, so if data changes i
 
 ## Considerations and limitations
 
-The following items are currently not supported:
+The Power BI app for HoloLens 2 does not currently support the following items:
 * All interactions with reports (filters, slicers, bookmarks, etc.)
 * Power Apps visuals
 * Zebra visuals
