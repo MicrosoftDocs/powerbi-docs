@@ -237,7 +237,7 @@ There are other restrictions related to limited relationships:
 Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to the its [priority](#priority) and [weight](#weight).
 
 #### Priority
-Priority tiers define a sequence of rules that Power BI uses to resolve relationship path ambiguity. The first rule match determines the path Power BI will follow. Each description rule below describes the how filters flowing from a source table to a target table.
+Priority tiers define a sequence of rules that Power BI uses to resolve relationship path ambiguity. The first rule match determines the path Power BI will follow. Each  rule below describes how filters flow from a source table to a target table.
 
 1. A path consisting of one-to-many relationships.
 2. A path consisting of one-to-many or many-to-many relationships.
@@ -249,9 +249,9 @@ Priority tiers define a sequence of rules that Power BI uses to resolve relation
 When a relationship is included in all available paths, it’s removed from consideration from all paths.
 
 #### Weight
-Each relationship in a path has a weight. By default, each relationship weight is equal unless the [USRELATIONSHIP](/dax/userelationship-function-dax) function is used. The *path weight* is the maximum of all relationship weights along the path. Power BI uses path's weights to resolve ambiguity between multiple paths in the same priority tier. It won't choose a path with a lower priority but it will choose the path with the higher weight. The number of relationships in the path does not affect the weight.
+Each relationship in a path has a weight. By default, each relationship weight is equal unless the [USRELATIONSHIP](/dax/userelationship-function-dax) function is used. The *path weight* is the maximum of all relationship weights along the path. Power BI uses the path weights to resolve ambiguity between multiple paths in the same priority tier. It won't choose a path with a lower priority but it will choose the path with the higher weight. The number of relationships in the path doesn't affect the weight.
 
-You can influence the weight of a relationship by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function. The weight is determined by the nesting level of the call to this funciton, where the innermost call receives the highest weight.
+You can influence the weight of a relationship by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function. The weight is determined by the nesting level of the call to this function, where the innermost call receives the highest weight.
 
 Consider the following example. The **Product Sales** measure assigns a higher weight to the relationship between **Sales[ProductID]** and **Product[ProductID]**, followed by the relationship between **Inventory[ProductID]** and **Product[ProductID]**.
 ```dax
@@ -259,14 +259,14 @@ Product Sales =
 CALCULATE(
     CALCULATE(
         SUM(Sales[SalesAmount]), 
-        SERELATIONSHIP(Sales[ProductID], Product[ProductID])
+        USERELATIONSHIP(Sales[ProductID], Product[ProductID])
     ),
     USERELATIONSHIP(Inventory[ProductID], Product[ProductID])
 )
 ```
 
 > [!NOTE]
-> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you will need to resolve the ambiguity by influencing the weight by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function or by removing or modifying model relationships.
+> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
 
 ### Performance preference
 
