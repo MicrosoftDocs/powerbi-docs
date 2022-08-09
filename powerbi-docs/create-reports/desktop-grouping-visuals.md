@@ -30,7 +30,7 @@ Groups are displayed in the **Selection** pane. You can have as many groups of v
 
 ![Screenshot showing nesting groups.](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
-Within the **Selection** pane, you can also drag and drop individual visuals to include them in a group, remove them from a group, nest a group, or remove a group or individual visual from a nest. Simply drag the visual you want to adjust, and place it where you want. Layering of visuals, if there is overlap, is determined by their order in the *Layer order* list.
+Within the **Selection** pane, you can also drag and drop individual visuals to include them in a group, remove them from a group, nest a group, or remove a group or individual visual from a nest. Simply drag the visual you want to adjust, and place it where you want. Layering of visuals, if there's overlap, is determined by their order in the *Layer order* list.
 
 ![Screenshot showing drag and drop groups.](media/desktop-grouping-visuals/grouping-visuals-04.png)
 
@@ -46,13 +46,13 @@ You can easily hide or show groups using the **Selection** pane. To hide a group
 
 ![Screenshot showing hide and display groups.](media/desktop-grouping-visuals/grouping-visuals-05.png)
 
-When you hide a group, all visuals within that group are hidden, indicated by their eye button being grayed out (unavailable to toggle on or off, because the entire group is hidden). To hide only certain visuals within a group, simply toggle the eye button beside that visual, and only that visual in the group is hidden.
+When you hide a group, all visuals within that group are hidden, indicated by their eye button being grayed out (unavailable to toggle on or off, because the entire group is hidden). To hide only certain visuals within a group, toggle the eye button beside that visual, and only that visual in the group is hidden.
 
 ## Selecting visuals within a group
 
 There are a few ways to navigate and select items within a group of visuals. The following list describes the behavior:
 
-* Clicking on empty space within a group (such as white space between visuals) does not select anything
+* Clicking on empty space within a group (such as white space between visuals) doesn't select anything
 * Clicking a visual within a group selects the entire group, a second click selects the individual visual
 * Selecting a group, and then another object on the report canvas, then selecting **Group** from the right-click menu creates a nested group
 * Selecting two groups, then right-clicking displays an option to merge the selected groups, rather than nesting them
@@ -63,7 +63,7 @@ You can also apply a background color to a group using the **Formatting** sectio
 
 ![Screenshot showing background color for groups.](media/desktop-grouping-visuals/grouping-visuals-background-color.png)
 
-Once you apply a background color, clicking on the space between visuals in the group selects the group (compare this to clicking on the white space between visuals in a group, which does not select the group). 
+Once you apply a background color, clicking on the space between visuals in the group selects the group (compare this to clicking on the white space between visuals in a group, which doesn't select the group). 
 
 
 ## Next steps
