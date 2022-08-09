@@ -120,9 +120,11 @@ You can follow metrics directly from the mobile app to keep up to date with the 
 
 ![Screenshot showing how to mark a metric for following in the Power B I mobile app.](media/mobile-apps-metrics/power-bi-mobile-app-follow-metric.png)
 
-To view all the metrics you're following, select **Following** in the Metrics display list accessible from the Metrics hub. It makes no difference whether the metric was marked for following in the Power BI service or in the mobile app - you'll see them all. Likewise, in the Power BI service you'll also be able to see all your followed metrics - including those that you started following from the mobile app.
+To see all the metrics you're following, tap the metrics display dropdown in the Metrics hub and select **Following (preview)**.
 
 ![Screenshot showing how to display followed metrics in the Power B I mobile app's Metrics tab.](media/mobile-apps-metrics/power-bi-mobile-app-show-followed-metrics.png)
+
+It makes no difference whether the metric was marked for following in the Power BI service or in the mobile app - you'll see them all. Likewise, in the Power BI service you'll also be able to see all your followed metrics - including those that you started following from the mobile app.
 
 ## Next steps
  
