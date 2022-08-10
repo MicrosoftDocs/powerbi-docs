@@ -24,7 +24,7 @@ For related "What's New" information, see:
 
 ### Follow metrics from your mobile app (iOS and Android) (preview)
 
-Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen. [Learn more!](./mobile-apps-metrics.md#follow-metrics)
+Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen. [Learn more!](./mobile-apps-metrics.md#follow-metrics-preview)
 
 ![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 

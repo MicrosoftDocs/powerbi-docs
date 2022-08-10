@@ -114,7 +114,7 @@ For both kinds of notification, tapping the notification takes you right to the 
 
 ![Screenshot of metric-related push notifications in the Power B I mobile app.](media/mobile-apps-metrics/power-bi-mobile-metrics-notification.png)
 
-## Follow metrics
+## Follow metrics (preview)
 
 You can follow metrics directly from the mobile app to keep up to date with the activity on those metrics. To start following a metric, just tap **More options (…)** on a metric’s card in the Metrics hub and choose **Follow metric**, or tap the **Follow metric** icon in the metric’s details pane.
 
