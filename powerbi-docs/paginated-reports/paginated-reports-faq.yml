@@ -113,6 +113,7 @@ sections:
           What licenses and workspace permissions do I need to publish, manage, and view the content?
         answer: |
           For paginated reports, this table spells out the licenses and workspace permissions needed to publish, manage, and view the content.
+
           |Type of capacity that hosts the workspace | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
           |---------|---------|---------|
           |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses  |
