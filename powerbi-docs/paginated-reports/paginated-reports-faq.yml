@@ -110,7 +110,7 @@ sections:
           For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
           
       - question: |
-          What licenses and workspace permissions do I need to publish, manage, and view the content?
+          What licenses and workspace permissions do I need to publish, manage, and view paginated reports?
         answer: |
           For paginated reports, this table spells out the licenses and workspace permissions needed to publish, manage, and view the content.
 
