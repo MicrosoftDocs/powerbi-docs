@@ -140,9 +140,9 @@ Every JSON file defines a single [supported locale language](#supported-language
     {
         ...
         "Role_Legend": "מקרא",
-        "Role_task": "Task",
-        "Role_StartDate": "Start date",
-        "Role_Duration": "Duration"
+        "Role_task": "משימה",
+        "Role_StartDate": "תאריך התחלה",
+        "Role_Duration": "משך זמן"
         ...
     }
     ```
