@@ -163,7 +163,7 @@ Boundaries are typically standard geographic areas, such as countries, provinces
 
 To modify your data's location type, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Layers.":::.
+1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Layers button.":::.
 2. On your data layer, click the **more options** button and choose **Location type** from the drop-down menu.
 
     ![Layers options Location type selected](https://user-images.githubusercontent.com/67922552/182974282-dd561bc1-a949-4b04-8244-7a5606d4b4c5.png "Layers options Location type selected")
@@ -182,7 +182,7 @@ You can choose a different style theme and customize the symbols and colors you 
 
 To change a layer's symbology, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Layers.":::.
+1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="click Layers button.":::.
 
 2. On your data layer, click the **more options** button and choose **Symbology** from the drop-down menu.
 
@@ -329,11 +329,11 @@ To add an ArcGIS reference layer, follow these steps:
 
     The gallery populates with several possible results.
 
-3. Locate the **USA 117th Congressional Districts (all territories)** layer and click **Add** ![add](https://user-images.githubusercontent.com/67922552/182980852-dc9ee434-0d2b-4416-8d6a-e884d06a9343.png "add button").
+3. Locate the **USA 117th Congressional Districts (all territories)** layer and click **Add** ![add button](https://user-images.githubusercontent.com/67922552/182980852-dc9ee434-0d2b-4416-8d6a-e884d06a9343.png "add button").
 
    The map updates to include this ArcGIS public reference layer.
     
-    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png" alt-text="Reference layer.":::
+    :::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-15.png" alt-text="Public reference layer.":::
     
 ArcGIS reference layers are interactive; click an area to view a [tooltip](https://doc.arcgis.com/en/power-bi/design/view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
@@ -495,9 +495,9 @@ The following table compares the standard features available to all Power BI use
 
 ## Next steps
 
-- [Interact with an ArcGIS map that has been shared with you](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-arcgis)
+- [Interact with an ArcGIS map that has been shared with you](https://docs.microsoft.com/power-bi/consumer/end-user-arcgis)
 - [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  
 - More questions? Try asking the [Esri ArcGIS for Power BI Community](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947)
-- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/en-us/arcgis/products/arcgis-for-power-bi/overview)
+- [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/arcgis/products/arcgis-for-power-bi/)
 - [Esri's ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 - [Esri's Community site for Power BI](https://geonet.esri.com/groups/powerbi)
