@@ -28,13 +28,13 @@ Now you can follow any metric with just a tap. And you can see all the metrics y
 
 ![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
 
-## Find Power BI content in your Teams mobile app! (iOS and Android)
+### Find Power BI content in your Teams mobile app! (iOS and Android)
 
 Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power BI content right there in the Teams mobile app. When you tap the content you want to see, you'll be automatically redirected to the Power BI mobile app for the best viewing experience. [Learn more](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-is-available-in-microsoft-teams-mobile/) 
 
-## Mobile formatting now supports text box visuals
+### Mobile formatting now supports text box visuals
 
-Mobile formatting in Power BI Desktop now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+[Mobile formatting in Power BI Desktop](../../create-reports/power-bi-create-mobile-optimized-report-about.md) now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
 
 ## July 2022
 
