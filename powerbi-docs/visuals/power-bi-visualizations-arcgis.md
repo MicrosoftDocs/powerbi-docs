@@ -25,7 +25,7 @@ With ArcGIS for Power BI’s robust mapping capabilities, you can use smart-map 
 
 Combining authoritative data layers on a map with spatial analysis helps you explore the complexities behind your Power BI data. For example, you can use ArcGIS for Power BI to provide regional insight into sales figures. The example below shows regional sales by size on a per-City basis against a demographic layer of U.S. Census average household income (dark blue=higher income) in the selected area.
 
-![image](https://user-images.githubusercontent.com/67922552/182947611-f413770a-dd4e-41d2-a88f-b99a410b1955.png "Regional sales by size compared to U.S. Census data")
+![Regional sales by size compared to U.S. Census data](https://user-images.githubusercontent.com/67922552/182947611-f413770a-dd4e-41d2-a88f-b99a410b1955.png "Regional sales by size compared to U.S. Census data")
 
 This demographic data layer provides insight, for example, into how household income and store locations might affect current sales and influence future purchasing, advertising, or store site selection decisions.
 
@@ -47,8 +47,8 @@ This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](https:
 
 1. From the upper left section of the Power BI Desktop menu bar, select  **File** > **Open report**.
 2. Find the  **Retail Analysis sample PBIX file**  saved on your local machine.
-3. Open the  **Retail Analysis Sample**  in report view :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png":::.
-4. Select :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png"::: to add a new page to the report.
+3. Open the  **Retail Analysis Sample**  in report view :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png" alt-text="Open report.":::.
+4. Select :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png" alt-text="Add new."::: to add a new page to the report.
 
 ### Add a map to the report
 
@@ -71,13 +71,13 @@ To add a map to a report, follow these steps:
     > [!NOTE]
     > ArcGIS for Power BI automatically detects whether the fields you've selected are best viewed as a shape or a point on a map. You can adjust these settings. See [format an ArcGIS for Power BI visualization](#format-an-arcgis-for-power-bi-visualization).
 
-    ![image](https://user-images.githubusercontent.com/67922552/182992125-4fa659c4-d327-4840-9fef-44a4054d80eb.png "Visualizations pane with City data in the Locations field well")
+    ![Visualizations pane with City data in the Locations field well](https://user-images.githubusercontent.com/67922552/182992125-4fa659c4-d327-4840-9fef-44a4054d80eb.png "Visualizations pane with City data in the Locations field well")
 
 4. Drag the **Sales > Last Year Sales** measure from the **Fields** pane to the **Size** field well on the **Visualizations** pane to adjust how the data is shown.
 
    The map now shows Last Year Sales for U.S. Cities using Counts and Amounts (size) symbols, as shown in the image below. You can zoom in to view this data visalization and pan around the map.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182951648-b4f3aeaa-c3cf-4c04-8ce3-175d5efd9679.png "Last Year Sales for U.S. Cities with Counts and Amounts symbols")
+    ![Last Year Sales for U.S. Cities with Counts and Amounts symbols](https://user-images.githubusercontent.com/67922552/182951648-b4f3aeaa-c3cf-4c04-8ce3-175d5efd9679.png "Last Year Sales for U.S. Cities with Counts and Amounts symbols")
 
 You've just created your first ArcGIS for Power BI visualization; next you'll learn how to refine and format the visualization using basemaps, location types, themes, and more.
 
@@ -87,21 +87,21 @@ To access **ArcGIS for Power BI** formatting features, do the following:
 
 1. In the Visualizations pane, click the **Format** tab to view the formatting options.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182972850-662d6d53-8299-4a80-8781-114867767d9b.png "Visualizations pane Format tab")
+    ![Visualizations pane Format tab](https://user-images.githubusercontent.com/67922552/182972850-662d6d53-8299-4a80-8781-114867767d9b.png "Visualizations pane Format tab")
 
  ArcGIS for Power BI formatting options include:
 
-  * **Layers:** Change the Title of the **Layers** list, specify if the **Layers** list (Show layers) button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png"::: is visible in the expanded Map tools, define the position of the **Layers** list, and anchor the list over the map. The **Layers** list is visible by default.
-  * **Map tools:** Specify if the **Zoom** tools (navigation buttons) are visible on the map, specify if the [Basemaps](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png"::: is visible in the expanded Map tools, lock the map extent in its current position, and define the position of the infographics cards on the map. **Zoom** tools and the **Basemaps** button are not visible by default.
+  * **Layers:** Change the Title of the **Layers** list, specify if the **Layers** list (Show layers) button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Show layers."::: is visible in the expanded Map tools, define the position of the **Layers** list, and anchor the list over the map. The **Layers** list is visible by default.
+  * **Map tools:** Specify if the **Zoom** tools (navigation buttons) are visible on the map, specify if the [Basemaps](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png" alt-text="Basemaps."::: is visible in the expanded Map tools, lock the map extent in its current position, and define the position of the infographics cards on the map. **Zoom** tools and the **Basemaps** button are not visible by default.
   * **Location type:** Specify the country in which your data is located to improve the accuracy of locations on your map. If your data is in a single country, choose that country from the drop-down list; if your data is global, choose **World**.
-  * **Search:** Specify if the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png"::: is visible in the expanded Map tools. **Search** is visible by default.
+  * **Search:** Specify if the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png" alt-text="Search."::: is visible in the expanded Map tools. **Search** is visible by default.
     
  > [!NOTE]
  > **Reset to default** returns all formatting options to their original configuration.
 
 ## Edit an ArcGIS for Power BI map
 
-After you add data to the map visualization, the Map tools button becomes available. ![image](https://user-images.githubusercontent.com/67922552/182958308-8769520a-e2ab-4bde-8022-028bc2700fd5.png "Map tools button")
+After you add data to the map visualization, the Map tools button becomes available. ![Map tools button](https://user-images.githubusercontent.com/67922552/182958308-8769520a-e2ab-4bde-8022-028bc2700fd5.png "Map tools button")
 
 
 > [!NOTE]
@@ -111,7 +111,7 @@ To expand the map tools:
 
 1. Click the Map tools button to expand the tools.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182959051-8dc29199-4402-4aec-96b4-7b9f9b4f9a6c.png "Map tools expanded")
+    ![Map tools expanded](https://user-images.githubusercontent.com/67922552/182959051-8dc29199-4402-4aec-96b4-7b9f9b4f9a6c.png "Map tools expanded")
 
     The map tools expand to show the available features. Each feature, when selected, opens a task pane that provides detailed options.
 
@@ -124,14 +124,14 @@ A basemap provides a background, or visual context, for the data in a map. For e
 
 To change the basemap, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and then click the **Basemap** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png"::: to display the gallery of available basemaps.
+1. Click to expand the Map tools, if necessary, and then click the **Basemap** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-05.png" alt-text="Basemaps."::: to display the gallery of available basemaps.
 
 > [!TIP]
 > You must have Basemaps set to **On** in the [Visualizations pane on the Format tab](#format-an-arcgis-for-power-bi-visualization).
 
 2. Select the **Dark Gray Canvas** basemap.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182970657-b6755fe8-b8c2-4f36-8a42-8e61746c3eb1.png "Basemap options with Dark Gray Canvas selected")
+    ![Basemap options with Dark Gray Canvas selected](https://user-images.githubusercontent.com/67922552/182970657-b6755fe8-b8c2-4f36-8a42-8e61746c3eb1.png "Basemap options with Dark Gray Canvas selected")
 
     The map updates to the new basemap.
 
@@ -141,13 +141,13 @@ For more information about changing the basemap, visit the [ArcGIS for Power BI 
 
 In ArcGIS for Power BI, you work with geographic data through layers. Layers contain logical collections of geographic data that are used to create maps; they are also the basis for geographic analysis.
 
-To display the **Layers** list, click to expand the Map tools, if necessary, and click the the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-06.png":::.
+To display the **Layers** list, click to expand the Map tools, if necessary, and click the the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-06.png" alt-text="Layers.":::.
 
 The **Layers** list displays your data as a layer added to the basemap. You can configure the layer’s dynamic options to customize how the data in your layer is displayed. 
 
 Different options appear in the menu depending on the type of data in your selected layer. For example, you can change the **Symbology** and **Location type** settings for a layer created using Power BI data—like the **City** layer you created for this tutorial—but those options aren't available for reference or drive-time layers.
 
-![image](https://user-images.githubusercontent.com/67922552/182973149-ece0679e-055f-48f9-9162-47a423cff163.png "Layers list with more options menu")
+![Layers list with more options menu](https://user-images.githubusercontent.com/67922552/182973149-ece0679e-055f-48f9-9162-47a423cff163.png "Layers list with more options menu")
 
 For more information about working with layers, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/work-with-layers.htm).
 
@@ -159,18 +159,18 @@ You can improve how accurately different locations are rendered on the map by es
 
 Boundaries are typically standard geographic areas, such as countries, provinces, and ZIP codes. When you establish boundaries and a specific country for your data locations, you can then choose from a subset of related, standard boundaries, such as census tracts, districts, or municipalities. Various location types are available for each country.
 
-![image](https://user-images.githubusercontent.com/67922552/182973735-37e721c1-f148-489f-ba06-a6928e50b3d3.png "Available location types by region")
+![Available location types by region](https://user-images.githubusercontent.com/67922552/182973735-37e721c1-f148-489f-ba06-a6928e50b3d3.png "Available location types by region")
 
 To modify your data's location type, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png":::.
+1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Layers.":::.
 2. On your data layer, click the **more options** button and choose **Location type** from the drop-down menu.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182974282-dd561bc1-a949-4b04-8244-7a5606d4b4c5.png "Layers options Location type selected")
+    ![Layers options Location type selected](https://user-images.githubusercontent.com/67922552/182974282-dd561bc1-a949-4b04-8244-7a5606d4b4c5.png "Layers options Location type selected")
 
     Accept the default values to render the locations as points on the map and specify **One country** and **United States**.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182974299-37c5edf7-23be-491d-87ea-137476c49c6e.png "Set location values as One country and United States")
+    ![Set location values as One country and United States](https://user-images.githubusercontent.com/67922552/182974299-37c5edf7-23be-491d-87ea-137476c49c6e.png "Set location values as One country and United States")
 
 For more information about specifying the location type, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/design/specify-location-type.htm).
 
@@ -182,7 +182,7 @@ You can choose a different style theme and customize the symbols and colors you 
 
 To change a layer's symbology, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png":::.
+1. Click to expand the Map tools, if necessary, and click the **Layers** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png" alt-text="Layers.":::.
 
 2. On your data layer, click the **more options** button and choose **Symbology** from the drop-down menu.
 
@@ -196,7 +196,7 @@ To change the theme, follow these steps:
 
 1. Choose some of the other map themes to see how your map changes.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182976610-ee24605c-96b5-42e8-9b2f-48a672d7ea84.png "Menu of style options")
+    ![Menu of style options](https://user-images.githubusercontent.com/67922552/182976610-ee24605c-96b5-42e8-9b2f-48a672d7ea84.png "Menu of style options")
 
 > [!NOTE]
 > Not all themes appear in the style pane if your selected data values do not match the options for that style.
@@ -213,7 +213,7 @@ To change the symbol style, follow these steps:
 
 1. In the **Symbology** pane, hover over the **Counts and Amounts (size)** panel to expand the **Style options** link.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182977067-a149eff7-5331-44e1-8585-77502efb5d47.png "Hover over the pane to display the Style options link")
+    ![Hover over the pane to display the Style options link](https://user-images.githubusercontent.com/67922552/182977067-a149eff7-5331-44e1-8585-77502efb5d47.png "Hover over the pane to display the Style options link")
     
     The Symbology library is dynamic and responds to the nature of your data and selected theme. From Symbology, you can generally change the shape, fill color, and transparency of symbols and outlines and set a color ramp. Classification settings, such as area of influence, method, classes, the ability to exclude specific null values, size range, and other settings may also be visible on this tab, depending on your data and theme.
     
@@ -227,7 +227,7 @@ To change the symbol style, follow these steps:
 
     The example below shows the theme set to **Counts and Amounts (size)** with a green symbol set to 30 percent transparency.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182977460-5bbde80f-8aaa-4bbc-88d2-ec1b10cfc4e1.png "Map with updated symbol color, style, and transparency")
+    ![Map with updated symbol color, style, and transparency](https://user-images.githubusercontent.com/67922552/182977460-5bbde80f-8aaa-4bbc-88d2-ec1b10cfc4e1.png "Map with updated symbol color, style, and transparency")
 
 5. Close the **Symbol style** pane.
 
@@ -251,12 +251,12 @@ From the map tools, click the **Selection tools** button :::image type="icon" so
     
   | **Tool** | **Description** |
   | --- | --- |
-  | **Single select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png"::: |  <ul><li>Click to select a single location (default tool).</li><li>Press **Ctrl** and click to add or remove locations one at a time.</li></ul> |
-  | **Rectangle select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png"::: |  <ul><li>Draw a rectangle on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
-  | **Circle select** ![image](https://user-images.githubusercontent.com/67922552/182978664-adb1a6af-e39a-433e-b377-d644f669dccb.png "circle select") |  <ul><li>Draw a circle on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
-  | **Polygon select** ![image](https://user-images.githubusercontent.com/67922552/182978809-cfa03908-3056-475c-b26d-434b9b224916.png "polygon select") |  <ul><li>Click to draw points on the map. Double-click to stop drawing and complete the polygon, selecting all locations within that shape.</li><li>A minimum of three vertices are required to draw a polygon.</li><li>Press **Ctrl** while drawing to enable snapping.</li><li>Press **Esc** to cancel drawing.</li></ul> |
-  | **Freehand polygon select** ![image](https://user-images.githubusercontent.com/67922552/182978956-4213b0a8-ed83-4651-914a-53bd57d90d1f.png "freehand polygon select") |  <ul><li>Draw a shape on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
-  | **Clear selection** ![image](https://user-images.githubusercontent.com/67922552/182979079-e891f649-97d3-4efe-9837-e4856f30e1e3.png "clear selection") |  This tool clears all selections. |
+  | **Single select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png" alt-text="Single select."::: |  <ul><li>Click to select a single location (default tool).</li><li>Press **Ctrl** and click to add or remove locations one at a time.</li></ul> |
+  | **Rectangle select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png" alt-text="Rectangle select."::: |  <ul><li>Draw a rectangle on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
+  | **Circle select** ![circle select](https://user-images.githubusercontent.com/67922552/182978664-adb1a6af-e39a-433e-b377-d644f669dccb.png "circle select") |  <ul><li>Draw a circle on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
+  | **Polygon select** ![polygon select](https://user-images.githubusercontent.com/67922552/182978809-cfa03908-3056-475c-b26d-434b9b224916.png "polygon select") |  <ul><li>Click to draw points on the map. Double-click to stop drawing and complete the polygon, selecting all locations within that shape.</li><li>A minimum of three vertices are required to draw a polygon.</li><li>Press **Ctrl** while drawing to enable snapping.</li><li>Press **Esc** to cancel drawing.</li></ul> |
+  | **Freehand polygon select** ![freehand polygon select](https://user-images.githubusercontent.com/67922552/182978956-4213b0a8-ed83-4651-914a-53bd57d90d1f.png "freehand polygon select") |  <ul><li>Draw a shape on the map to select all locations within that shape.</li><li>Press **Ctrl** and drag to add or remove locations from your selection.</li></ul> |
+  | **Clear selection** ![clear selection](https://user-images.githubusercontent.com/67922552/182979079-e891f649-97d3-4efe-9837-e4856f30e1e3.png "clear selection") |  This tool clears all selections. |
     
 Use these tools to select one or more locations on the map. You can select a maximum of 250 data points at a time.
 
@@ -268,7 +268,7 @@ Pin a specific address, place, or point of interest on the map. For this tutoria
 
 To pin a location, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png"::: to open the Search pane.
+1. Click to expand the Map tools, if necessary, and click the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png" alt-text="Search."::: to open the Search pane.
 
 2. Type the keywords **Pittsburgh international** in the search field.
 
@@ -297,21 +297,21 @@ The Standard ArcGIS for Power BI account includes a curated selection of U.S. Ce
 
 To add a demographic layer, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
+1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png" alt-text="Analysis."::: to expand the toolset.
 
-2. Click the **Reference layer** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-13.png":::.
+2. Click the **Reference layer** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-13.png" alt-text="Reference layer.":::.
 
     The **Reference layer** pane appears, displaying the **Demographics** tab and its selection of layers.
     
-    You can view these as a list ![image](https://user-images.githubusercontent.com/67922552/182980275-783481a0-edfb-4431-8081-a66b7dd0b85d.png "layer list") or a detailed view![image](https://user-images.githubusercontent.com/67922552/182980308-098dce42-4beb-4916-af71-bcd43b5fb12a.png "layer details").
+    You can view these as a list ![layer list](https://user-images.githubusercontent.com/67922552/182980275-783481a0-edfb-4431-8081-a66b7dd0b85d.png "layer list") or a detailed view ![layer details](https://user-images.githubusercontent.com/67922552/182980308-098dce42-4beb-4916-af71-bcd43b5fb12a.png "layer details").
 
-3. Scroll through the gallery and click **Add** ![image](https://user-images.githubusercontent.com/67922552/182980346-2b4f9b80-b906-4ef2-a7ed-3b808860d09d.png "add button") on the thumbnail of the layer you want to add to your map.
+3. Scroll through the gallery and click **Add** ![add](https://user-images.githubusercontent.com/67922552/182980346-2b4f9b80-b906-4ef2-a7ed-3b808860d09d.png "add button") on the thumbnail of the layer you want to add to your map.
 
     For this tutorial, find the **(Year) USA Average Household Income** layer and select **Add**.
     
     The map updates to include the reference layer.
     
-    ![image](https://user-images.githubusercontent.com/67922552/182980432-44eeae84-1169-4f8d-a777-dea5f2d97a58.png "Map with added Average Household Income reference layer")
+    ![Map with added Average Household Income reference layer](https://user-images.githubusercontent.com/67922552/182980432-44eeae84-1169-4f8d-a777-dea5f2d97a58.png "Map with added Average Household Income reference layer")
     
 Demographic reference layers are interactive; click an area to view a [tooltip](https://doc.arcgis.com/en/power-bi/design/view-tooltips.htm) containing more information about that area. You can also [select areas on the map](#select-locations) that fall within an area on the reference layer.
 
@@ -329,7 +329,7 @@ To add an ArcGIS reference layer, follow these steps:
 
     The gallery populates with several possible results.
 
-3. Locate the **USA 117th Congressional Districts (all territories)** layer and click **Add** ![image](https://user-images.githubusercontent.com/67922552/182980852-dc9ee434-0d2b-4416-8d6a-e884d06a9343.png "add button").
+3. Locate the **USA 117th Congressional Districts (all territories)** layer and click **Add** ![add](https://user-images.githubusercontent.com/67922552/182980852-dc9ee434-0d2b-4416-8d6a-e884d06a9343.png "add button").
 
    The map updates to include this ArcGIS public reference layer.
     
@@ -345,9 +345,9 @@ In this tutorial, you'll use the **Pittsburgh International Airport** you pinned
 
 To find locations within a specific distance (ring buffer) from the point of origin, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
+1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png" alt-text="Analysis."::: to expand the toolset.
 
-2. Click the **Drive-time** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png":::.
+2. Click the **Drive-time** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png" alt-text="Drive time.":::.
 
     The **Drive time** pane appears.
 
@@ -357,7 +357,7 @@ To find locations within a specific distance (ring buffer) from the point of ori
    
 4. Choose **Click to add a point** and, on the map, select the **Pittsburgh International Airport** location you pinned earlier.
 
-   ![image](https://user-images.githubusercontent.com/67922552/182982581-1a974a5e-b090-424f-8f63-ccda3054a1c9.png "Click to add a point selected on the Drive time pane")
+   ![Click to add a point selected on the Drive time pane](https://user-images.githubusercontent.com/67922552/182982581-1a974a5e-b090-424f-8f63-ccda3054a1c9.png "Click to add a point selected on the Drive time pane")
    
   > [!TIP]
   > If your map is styled using Clustering, you won't be able to select the clustered locations on the map; choose a different theme and try again.
@@ -371,9 +371,9 @@ To find locations within a specific distance (ring buffer) from the point of ori
  
     The map shows a circle surrounding the pinned airport location.
  
-    ![image](https://user-images.githubusercontent.com/67922552/182983189-59293ab1-53c4-4742-ba9d-c5cd8a1b0aa3.png "Ring buffer for pinned location")
+    ![Ring buffer for pinned location](https://user-images.githubusercontent.com/67922552/182983189-59293ab1-53c4-4742-ba9d-c5cd8a1b0aa3.png "Ring buffer for pinned location")
 
-    The ring buffer area also appears as a layer in the **Layers** list; you can rename the layer, show or hide it ![image](https://user-images.githubusercontent.com/67922552/182983325-ab5fbd07-1039-423f-8e93-50e15b377b08.png "hide button"), change the sequence in which it is shown (to bring Last Year Sales to the top) by dragging items in the list of layers, or remove it from the map, as you can with each layer.
+    The ring buffer area also appears as a layer in the **Layers** list; you can rename the layer, show or hide it ![hide](https://user-images.githubusercontent.com/67922552/182983325-ab5fbd07-1039-423f-8e93-50e15b377b08.png "hide button"), change the sequence in which it is shown (to bring Last Year Sales to the top) by dragging items in the list of layers, or remove it from the map, as you can with each layer.
  
  > [!NOTE]
  > A map can contain only one search area at a time. If a search area already exists, you must delete it before you can create a new one.
@@ -390,11 +390,11 @@ Infographics cards are interactive; their content updates depending on the layer
 
 To add an infographics card to a map, follow these steps:
 
-1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
+1. Click to expand the Map tools, if necessary, and click the **Analysis tools** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png" alt-text="Analysis."::: to expand the toolset.
 
-2. Click **Infographics** ![image](https://user-images.githubusercontent.com/67922552/182984183-bcb8fd53-7c59-43f6-b13c-d09036d17d10.png "infographics button"). The Infographics pane appears.
+2. Click **Infographics** ![infographics](https://user-images.githubusercontent.com/67922552/182984183-bcb8fd53-7c59-43f6-b13c-d09036d17d10.png "infographics button"). The Infographics pane appears.
 
-    ![image](https://user-images.githubusercontent.com/67922552/182984353-8d5410ae-c587-4d5d-9d89-a617f581211d.png "Infographics panel")
+    ![infographics panel](https://user-images.githubusercontent.com/67922552/182984353-8d5410ae-c587-4d5d-9d89-a617f581211d.png "Infographics panel")
 
     The ArcGIS for Power BI visualization built into Power BI includes a limited number of demographics for the United States only. When you sign in to ArcGIS for Power BI using a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm), you can choose from thousands of United States and global demographic variables.
 
@@ -404,7 +404,7 @@ To add an infographics card to a map, follow these steps:
 
     An infographic appears on the map displaying the regional Median Age for the current extent of the map.
   
-    ![image](https://user-images.githubusercontent.com/67922552/182984639-e5cf0902-5562-475a-a7c5-a14d593a70f5.png "Map with regional median age demographics")
+    ![Map with regional median age demographics](https://user-images.githubusercontent.com/67922552/182984639-e5cf0902-5562-475a-a7c5-a14d593a70f5.png "Map with regional median age demographics")
   
   > [!TIP]
   > You can also search for a demographic by name in the **Infographics** pane search field.
@@ -417,9 +417,9 @@ Esri provides comprehensive online documentation for ArcGIS for Power BI.
 
 To access the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) from the visualization, follow these steps:
 
-1. Expand the Map tools, if necessary, and click the **Settings** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png":::.
+1. Expand the Map tools, if necessary, and click the **Settings** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png" alt-text="Settings.":::.
 
-![image](https://user-images.githubusercontent.com/67922552/182987351-6c0caa33-8a36-4b83-84f4-d33f817ade34.png "ArcGIS for Power BI Settings pane")
+![ArcGIS for Power BI Settings pane](https://user-images.githubusercontent.com/67922552/182987351-6c0caa33-8a36-4b83-84f4-d33f817ade34.png "ArcGIS for Power BI Settings pane")
 
 2. In the **Settings** pane, click the **Help** button.
 1. Click **OK** on the confirmation window that appears.
@@ -460,9 +460,9 @@ Power BI Desktop supports using **Group Policy** to disable ArcGIS for Power BI 
 | Key | Software\Policies\Microsoft\Power BI Desktop |
 | valueName | EnableArcGISMaps |
 
-A value of 1 (decimal) enables ArcGIS for Power BI.
+ - A value of 1 (decimal) enables ArcGIS for Power BI.
 
-A value of 0 (decimal) disables ArcGIS for Power BI.
+ - A value of 0 (decimal) disables ArcGIS for Power BI.
 
 ## Considerations and limitations
 
@@ -482,11 +482,11 @@ ArcGIS for Power BI is available in the following services and applications:
 
 In services or applications where ArcGIS for Power BI is not available, the visualization will show as an empty visual with the Power BI logo.
 
-##ArcGIS for Power BI features
+## ArcGIS for Power BI features
 
 The following table compares the standard features available to all Power BI users to those available to users signed in to a valid, licensed [ArcGIS account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm):
 
-| Feature | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-17.png"::: Standard (included with Power BI) | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-18.png"::: :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-19.png"::: With your ArcGIS account |
+| Feature | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-17.png" alt-text="Standard Microsoft user."::: Standard (included with Power BI) | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-18.png" alt-text="Sign in to ArcGIS Online."::: :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-19.png" alt-text="Sign in to ArcGIS Enterprise."::: With your ArcGIS account |
 | --- | --- | --- |
 | Basemaps | 4 basic basemaps | All Esri basemaps plus access to your organization's basemaps, including custom basemaps |
 | Geocoding | <ul><li>3,500 locations per map</li><li>10,000 locations per month</li></ul> | <ul><li>10,000 locations per map</li><li>No monthly limit</li></ul> |
