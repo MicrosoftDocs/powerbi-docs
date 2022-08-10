@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/18/2021
+ms.date: 08/10/2022
 ---
 
 # Add the locale Power BI language to your Power BI visual
@@ -20,12 +20,13 @@ Below is an example of a *sample bar chart* visual displaying content in differe
 ![Localization in Sample Bar Chart visual](media/localization/locale-in-samplebarchart.png)
 
 > [!NOTE]
+>
 > * The localization manager in the visual's code is supported from API 1.10.0 and higher.
 > * Localization  is not supported for debugging the development visual.
 
 ## How to add the local Power BI language to your visual
 
-To add the local Power BI language to your visual, you'll need to do follow these steps:
+To add the local Power BI language to your visual, follow these steps:
 
 1. [Set up your environment to display a language that isn't English](#step-1---set-up-your-environment-to-display-a-language-that-isnt-english).
 
@@ -111,7 +112,7 @@ To create localized visuals, your project needs to have a language folder. In yo
 
 ### Step 5 - Add a resources file for each language
 
-For each language you want your visual to support, you'll need to add a **resources.resjson** JSON file in the appropriate **stringResources** sub folder. These files contain the locale language information, and the localized string values for every `displayNameKey` you want to replace.
+For each language you want your visual to support, add a **resources.resjson** JSON file in the appropriate **stringResources** sub folder. These files contain the locale language information, and the localized string values for every `displayNameKey` you want to replace.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot from V S code showing a visual project folder structure, with the string resources folder, and two resources resjson files, one in the Arabic sub folder, and one in the Hebrew sub folder.](media/localization/new-resjson.png)
@@ -138,10 +139,10 @@ Every JSON file defines a single [supported locale language](#supported-language
     ```json
     {
         ...
-        "Role_Legend": "Legend",
-        "Role_task": "Task",
-        "Role_StartDate": "Start date",
-        "Role_Duration": "Duration"
+        "Role_Legend": "מקרא",
+        "Role_task": "משימה",
+        "Role_StartDate": "תאריך התחלה",
+        "Role_Duration": "משך זמן"
         ...
     }
     ```
