@@ -118,7 +118,7 @@ sections:
           |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses  |
           |[Power BI Premium](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses |
  
-     - question: |
+      - question: |
           The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
         answer: |
           Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren't yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) available later in this FAQ.  
