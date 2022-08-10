@@ -36,7 +36,7 @@ A key governance decision is who to assign as a Power BI administrator. It's a c
 The Power BI administrator role is considered a high privilege role because:
 
 - Settings that are managed by a Power BI administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
-- Power BI administrators can update access permissions for any workspace (excluding personal workspaces and [classic workspaces](https://powerbi.microsoft.com/blog/updated-timeline-for-upgrading-classic-workspaces/)). The result is that an administrator can allow permission to view or download datasets as they see fit (described in the [Tenant settings](#tenant-settings) section below).
+- Power BI administrators can update access permissions for any workspace (excluding personal workspaces. The result is that an administrator can allow permission to view or download datasets as they see fit (described in the [Tenant settings](#tenant-settings) section below).
 - Power BI administrators can view all tenant metadata, including all user activities that occur in the Power BI service (described in the [auditing and monitoring](#auditing-and-monitoring) section below).
 
 > [!IMPORTANT]

@@ -52,7 +52,7 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 You can embed the following types of reports on the **Power BI** tab:
 
 - Interactive and paginated reports.
-- Reports in **My workspace**, new workspace experiences, and classic workspaces.
+- Reports in any workspace.
 - Reports in Power BI apps.
 
 ## Start a conversation

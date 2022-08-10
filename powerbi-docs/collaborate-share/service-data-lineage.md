@@ -27,7 +27,7 @@ In lineage view, you see the lineage relationships between all the artifacts in 
 
 ## Explore lineage view
 
-Every workspace, whether new or classic, automatically has a lineage view. You need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details.
+Every workspace automatically has a lineage view. You need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details.
 
 * To access lineage view, go to the workspace list view. Tap the arrow next to **List view** and select **Lineage view**.
 

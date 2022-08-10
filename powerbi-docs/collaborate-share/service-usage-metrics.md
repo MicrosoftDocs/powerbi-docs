@@ -1,6 +1,6 @@
 ---
-title: Monitor usage metrics in classic workspaces
-description: How to view, save, and use usage metrics for Power BI dashboards and reports in classic workspaces. 
+title: Monitor usage metrics in My workspace
+description: How to view, save, and use usage metrics for Power BI dashboards and reports in My workspace. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 08/10/2022
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics in classic workspaces
+# Monitor usage metrics in My workspace
 
-Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). Your My Workspace is based on the classic workspace technology, so it has the same usage metrics reports as other classic workspaces. 
+Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for My Workspace.
 
 If your reports are in one of the new _modern_ workspaces, see the article [Monitor usage metrics in the new modern workspaces](service-modern-usage-metrics.md).
 
@@ -164,11 +164,11 @@ It's important to understand that differences can occur when comparing usage met
 
 ### Discrepancies between REST APIs and usage metrics
 
-The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The classic usage metrics report has 90 days of data, and the "total count" there represents unique reports viewed over 90 days. If reports are deleted after they are viewed, they are not counted by the admin APIs but will be counted in the historical data feeding the usage report.
+The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The My Workspace usage metrics report has 90 days of data, and the "total count" there represents unique reports viewed over 90 days. If reports are deleted after they are viewed, they are not counted by the admin APIs but will be counted in the historical data feeding the usage report.
 
-### Classic Usage Metrics are not supported with Private Links 
+### My Workspace Usage Metrics are not supported with Private Links 
 
-If your organization is using [Private Links](../enterprise/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
+If your organization is using [Private Links](../enterprise/service-security-private-links.md), My Workspace usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 

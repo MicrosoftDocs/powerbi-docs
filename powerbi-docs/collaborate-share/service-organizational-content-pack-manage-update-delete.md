@@ -13,8 +13,7 @@ LocalizationGroup: Share your work
 # Delete organizational content packs
 
 > [!NOTE]
-> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
-> 
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet.
 
 You can no longer create, manage, or update organizational content packs. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best alternative for your situation.
 

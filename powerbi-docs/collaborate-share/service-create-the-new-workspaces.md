@@ -17,8 +17,6 @@ This article explains how to create one of the *new workspaces* instead of a *cl
 
 :::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of one of the new workspaces in Power B I.":::
 
-Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
-
 ## Create one of the new workspaces
 
 1. Select **Workspaces** > **Create workspace**.
@@ -152,6 +150,5 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 
 ## Next steps
 * Read about [the new workspace experience in Power BI](service-new-workspaces.md)
-* [Create classic workspaces](service-create-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

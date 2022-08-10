@@ -47,7 +47,6 @@ Select the **Title** to view more information about that specific known issue. F
 |  207      |  Consume and View                  |  [A scorecard in an app won't load until the user visits workspace first](known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md)   |  June 21, 2022        |  Fixed: July 6, 2022 |
 |  203      |  Consume and View                  |  [Decomposition tree shows the title of a collapsed level](known-issue-203-decomposition-tree-shows-title-collapsed-level.md)   |  June 21, 2022        |    Fixed: July 6, 2022 |
 |  193      |  Consume and View                  |  [Decomposition tree visual first level is incorrectly expanded](known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md)   |  June 21, 2022        |  Fixed: July 6, 2022 |
-|  185      |  Share and Collaborate             |  [Duplicate or erroneous email may be received during classic workspace upgrade](known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md)   |  May 23, 2022        |  Fixed: July 6, 2022 |
 
 ## Next steps
 

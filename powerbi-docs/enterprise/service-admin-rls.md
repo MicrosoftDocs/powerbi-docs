@@ -104,11 +104,6 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 If you publish your Power BI Desktop report to a [new workspace experience](../collaborate-share/service-new-workspaces.md) in the Power BI service, the RLS roles are applied to members who are assigned to the **Viewer** role in the workspace. Even if  **Viewers** are given Build permissions to the dataset, RLS still applies. For example, if Viewers with Build permissions use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), their view of the data will be protected by RLS. Workspace members assigned **Admin**, **Member**, or **Contributor** have edit permission for the dataset and, therefore, RLS doesn’t apply to them. If you want RLS to apply to people in a workspace, you can only assign them the **Viewer** role. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
-> [!WARNING]
-> If you have configured a *classic* workspace so that members have edit permissions, the RLS roles won't be applied to them. Users can see all of the data. Read more about [classic workspaces](../collaborate-share/service-create-workspaces.md).
->
->![Group settings](media/service-admin-rls/rls-group-settings.png)
-
 [!INCLUDE [include-short-name](../includes/rls-limitations.md)]
 
 [!INCLUDE [include-short-name](../includes/rls-faq.md)]

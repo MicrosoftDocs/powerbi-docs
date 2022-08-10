@@ -499,7 +499,6 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 - Direct publishing from Power BI desktop to the Power BI service
 - Guest users cannot use Power BI desktop to connect to service datasets in the Power BI service
-- Classic workspaces tied to Microsoft 365 Groups: Guest user cannot create or be Admins of these workspaces. They can be members.
 - Sending ad-hoc invites is not supported for workspace access lists
 - Power BI Publisher for Excel is not supported for guest users
 - Guest users cannot install a Power BI Gateway and connect it to your organization

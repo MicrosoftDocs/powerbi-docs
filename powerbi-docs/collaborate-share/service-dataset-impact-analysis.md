@@ -58,9 +58,6 @@ If you've made a change to a dataset or are thinking about making a change, you 
 1. In the text box, provide some detail about the change.
 1. When the message is ready, click **Send**.
 
-> [!NOTE]
-> Notify contacts is not available if the dataset you are performing impact analysis on is located in a classic workspace.
-
 ## Privacy
 
 In order to perform impact analysis on a dataset, you must have write permissions to it. In the impact analysis side pane, you only see real names for workspaces, reports, and dashboards that you have access to. Items that you don't have access to are listed as **Limited access**. This is because some item names may contain personal information.
@@ -80,7 +77,7 @@ When you make a change to a dataset in Power BI Desktop and then republish it to
 
 ## Considerations and limitations
 
-* Usage metrics are currently not supported for classic and personal workspaces.
+* Usage metrics are currently not supported for personal workspaces.
 
 ## Next steps
 

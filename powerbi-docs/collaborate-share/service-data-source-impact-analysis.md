@@ -39,7 +39,7 @@ The impact analysis side panel opens.
 
 ## Notify contacts
 
-If you've made a change to a data source or are thinking about making a change, you might want to contact the relevant users to tell them about it. When you notify contacts, an email is sent to the [contact lists](service-create-the-new-workspaces.md#create-a-contact-list) of all the impacted workspaces (in case of classic workspaces, the email is sent to the workspace administrators). Your name appears on the email so the contacts can find you and reply back in a new email thread. 
+If you've made a change to a data source or are thinking about making a change, you might want to contact the relevant users to tell them about it. When you notify contacts, an email is sent to the [contact lists](service-create-the-new-workspaces.md#create-a-contact-list) of all the impacted workspaces. Your name appears on the email so the contacts can find you and reply back in a new email thread. 
 
 1. Click **Notify contacts** in the impact analysis side pane. The notify contacts dialog will appear.
 

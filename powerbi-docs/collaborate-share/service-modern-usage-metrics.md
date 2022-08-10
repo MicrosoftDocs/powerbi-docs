@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics in classic workspaces](service-usage-metrics.md). Your My Workspace is based on the classic workspace technology, so it has the usage metrics reports for classic workspaces.
+If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern workspace experience replace the usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
 
 
 ![Screenshot of the New Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)

@@ -33,8 +33,6 @@
       href: known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md
     - name: Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop
       href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
-    - name: Duplicate or erroneous email may be received during classic workspace upgrade
-      href: known-issues/known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md
     - name: Multi-role row-level security for composite models may fail
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Unable to load Power BI dataset list in Excel
