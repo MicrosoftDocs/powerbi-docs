@@ -186,7 +186,7 @@ We've introduced a new design and home page to simplify the way you find and ope
 
 ### Paginated Report visuals (preview) now supported (iOS, Android, Windows)
 Paginated Report visuals (preview) enable you to render any paginated report uploaded to the service inside a Power BI report.
-Just like any other Power BI visual, Paginated Report visuals are fully-interactive, and are also supported in the Power BI Mobile apps.
+Just like any other Power BI visual, Paginated Report visuals are fully interactive, and are also supported in the Power BI Mobile apps.
 
 ### Support for passing URL parameters to paginated reports (Android)
 Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
