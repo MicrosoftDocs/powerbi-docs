@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/08/2022
+ms.date: 08/10/2022
 LocalizationGroup: Create reports
 ---
 

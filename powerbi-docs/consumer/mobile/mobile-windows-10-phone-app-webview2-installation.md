@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/08/2022
+ms.date: 08/10/2022
 ---
 # Install WebView2
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-This article describes what to do if you get the following message when you try to view Power BI content in the Power BI app for Windows.
+The Power BI app for Windows requires that WebView2 be installed on your computer to correctly display Power BI content. If your Windows operating system version is at least the [minimum required version](./mobile-windows-10-phone-app-get-started.md#first-things-first), the chances are that WebView2 is installed and Power BI content will display correctly. If however you get one of the following messages when you try to view Power BI content, there may be a problem with the WebView2 installation. This article describes what to do in such cases.
 
 ![Screenshot of install WebView2 message in the Power BI app for Windows.](./media/mobile-windows-10-phone-app-webview2-installation/power-bi-windows-10-webview2-message.png)
 

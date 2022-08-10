@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/07/2022
+ms.date: 08/10/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -35,14 +35,6 @@ Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power
 ## Mobile formatting now supports text box visuals
 
 Mobile formatting in Power BI Desktop now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
-
-## Upgraded browsing with WebView2 (Windows)
-
-The Power BI app for Windows has been upgraded to use Microsoft Edge WebView2. Enjoy faster performance, bug fixes, and an all-round better experience.
-
-## New minimum OS requirement for the Windows app
-
-The minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763, to support using WebView2. App upgrades will not be available for Windows devices running on earlier versions.
 
 ## July 2022
 
