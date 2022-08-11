@@ -85,9 +85,9 @@
       href: azure-pbie-scale-capacity.md
     - name: Pause and start a capacity in Azure
       href: azure-pbie-pause-start.md
-  - name: Service principal profiles
+  - name: Multi-tenancy and service principal profiles
     items:
-    - name: "Service principal profiles for multi-customer apps"
+    - name: "Service principal profiles for multi-tenancy apps"
       href: embed-multi-tenancy.md      
     - name: "Power BI SDK and service principal profiles"
       href: service-principal-profile-sdk.md

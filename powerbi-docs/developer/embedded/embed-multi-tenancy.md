@@ -1,13 +1,13 @@
 ---
-title: Manage customer data for multi-customer applications with service principal profiles
-description: Create, import, update, and assign multi-customer workspaces in embedded analytics using service principal profiles.
+title: Use service principal profiles to manage customer data in multi-tenant apps
+description: Create, import, update, and assign multi-tenant workspaces in embedded analytics using service principal profiles.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/08/2022
+ms.date: 08/11/2022
 ---
 
 # Service principal profiles for multi-tenancy apps in Power BI Embedded
@@ -27,7 +27,7 @@ Using service principal profiles enables the ISV app to host multiple customers 
 
 >[!NOTE]
 >This article is aimed at organizations that want to set up a multi-tenant app using service principal profiles.
->If your organization already has an app that supports multi-tenancy, and you want to migrate to the service principal profile model, see [Migrate multi-tenant app to the service principal profiles model](migration-to-sp-profiles.md).
+>If your organization already has an app that supports multi-tenancy, and you want to migrate to the service principal profile model, see [Migrate to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -311,11 +311,6 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Learn more about service principals](embed-service-principal.md)
-
->[!div class="nextstepaction"]
->[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
-
->[!div class="nextstepaction"]
->[Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md)
+* [Learn more about service principals](embed-service-principal.md)
+* [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+* [Migrate multi-tenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
