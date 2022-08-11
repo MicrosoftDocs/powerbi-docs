@@ -14,7 +14,7 @@ ms.date: 08/11/2022
 
 Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom app that calls [Power BI REST APIs](/rest/api/power-bi/).
 
-in Azure Active Directory, a tenant represents an organization. A tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+In Azure Active Directory, each tenant represents an organization. A tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 
 Once you have an Azure AD tenant, you can define an application and assign it permissions so it can call [Power BI REST APIs](/rest/api/power-bi/).
 
@@ -30,18 +30,16 @@ Follow the directions in [Quickstart: Create a new tenant in Azure Active Direct
 
 Provide the relevant **Organization name**, **Initial domain name** and **Country/Region**.
 
-    ![Org and domain](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
-
    > [!NOTE]
    > Your initial domain is part of onmicrosoft.com. You can add other domain names later. A tenant directory can have multiple domains assigned to it.
 
-6. After directory creation is complete, select the information box to manage your new directory.
-
-Next, you're going to add tenant users.
+Next, add tenant users.
 
 ## Create Azure Active Directory tenant users
 
-Now that you have a directory, let's create at least two users. One is a tenant Global Admin and another is a master user for embedding. You can think of the latter as a service account.
+When you create a new Azure AD tenant, you become the first user of that tenant. As the first user, you're automatically assigned the [Global Admin](/azure/active-directory/roles/permissions-reference#global-administrator) role. Add new users by navigating to the [Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) page.
+
+You can think of the master user account as a service account.
 
 1. In the Azure portal, make sure you are on the Azure Active Directory fly out.
 
@@ -57,7 +55,7 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
 3. Select **All users** and then select **+ New user**.
 
-4. Provide a **Name** and **User name** for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
+4. Provide a **Display Name** and **User name** for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
 
     ![Azure AD global admin](media/create-an-azure-active-directory-tenant/global-admin.png)
 
@@ -65,7 +63,7 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![Azure AD user](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
-6. Sign up for Power BI with the user account that you created in step 5. Go to [powerbi.com](https://powerbi.microsoft.com/get-started/) and select **Try free** under **Power BI - Cloud collaboration and sharing**.
+6. Sign up for Power BI with the user account that you created in step 5. Go to [powerbi.com](https://powerbi.microsoft.com/getting-started-with-power-bi/) and select **Try Power BI for free**.
 
     ![create tenant](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
