@@ -65,7 +65,7 @@ sections:
           
           Also, the audit logs provide the following events for paginated reports:
           
-          - Binded Power BI dataset to gateway
+          - Bound Power BI dataset to gateway
           - Discover Power BI Datasource
           - TakeOverDatasource
           
