@@ -254,7 +254,7 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
+Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
 
 ### Power BI capacity limitations
 
@@ -276,26 +276,26 @@ Often, the ISV application needs to save a mapping between a profile ID and a cu
 > Be very careful when deleting a service principal. You don't want to accidentally lose data from all its associated profiles.
 
 If you delete the service principal in the active directory, all its profiles in Power BI will be deleted. However, Power BI won't delete the content immediately, so the tenant admin can still access the workspaces. Be careful when deleting a service principal used in a production system, especially when you created profiles using this service principal in Power BI.
-If you do delete a service principal that has created profiles, be aware that you will need to recreate all the profiles, provide the new profiles access to the relevant workspaces, and update the profile IDs in the ISV application database.
+If you do delete a service principal that has created profiles, be aware that you'll need to recreate all the profiles, provide the new profiles access to the relevant workspaces, and update the profile IDs in the ISV application database.
 
 ### Data separation
 
 When data is separated by service principal profiles, a simple mapping between a profile and customer prevents one customer from seeing another customer's content. Using a single *service principal* requires that the service principal has access to all the different workspaces in all the profiles.
 
-To add extra separation, you can assign a separate service principal to each tenant, instead of having a single service principal access multiple workspaces using different profiles. This has several advantages, including:
+To add extra separation, assign a separate service principal to each tenant, instead of having a single service principal access multiple workspaces using different profiles. Assigning separate service principals has several advantages, including:
 
-* Human error or a credential leak won't cause multiple tenants' data to be exposed.
+* Human error or a credential leaks won't cause multiple tenants' data to be exposed.
 * Certificate rotation can be done separately for each tenant.
 
 However, using multiple service principals comes with a high management cost. Select this path only if you need the extra separation. Keep in mind that the configuration of which data to show an end user is defined when you [generate the embed token](/rest/api/power-bi/embedtoken), a backend-only process that end users can't see or change. Requesting an embed token using a tenant-specific profile will generate an embed token for that specific profile, which will give you customer separation in consumption.
 
 #### One report, multiple datasets
 
-Generally, you have one report and one dataset per tenant. If you have hundreds of reports, you'll have hundreds of datasets. Sometimes, you might have one report format, with different datasets (for example, different parameters or connection details). Each time you have a new version of the report, you'll need to update all the reports for all tenants. Although you can automate this, it's easier to manage if you have just one copy of the report. This can be achieved by creating a workspace that contains the report to embed. During a session runtime, you can bind the report to the tenant-specific dataset. Read [dynamic bindings](embed-dynamic-binding.md) for more details.
+Generally, you have one report and one dataset per tenant. If you have hundreds of reports, you'll have hundreds of datasets. Sometimes, you might have one report format, with different datasets (for example, different parameters or connection details). Each time you have a new version of the report, you'll need to update all the reports for all tenants. Although you can automate this, it's easier to manage if you have just one copy of the report. Create a workspace that contains the report to embed. During a session runtime, bind the report to the tenant-specific dataset. Read [dynamic bindings](embed-dynamic-binding.md) for more details.
 
 #### Customizing and authoring content
 
-When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
+When you create content, carefully consider who has permission to edit it. If you allow multiple users in each tenant to edit, it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend that you monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
 #### System-Managed identity
 
