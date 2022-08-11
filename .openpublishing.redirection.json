@@ -1972,7 +1972,12 @@
         },
         {
             "source_path": "powerbi-docs/service-collaborate-power-bi-workspace.md",
-            "redirect_url": "/power-bi/collaborate-share/service-collaborate-power-bi-workspace",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-collaborate-power-bi-workspace.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": true
         },
         {
@@ -1987,7 +1992,12 @@
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
-            "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-create-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
             "redirect_document_id": false
         },
         {
@@ -2042,7 +2052,12 @@
         },
         {
             "source_path": "powerbi-docs/service-manage-app-workspace-in-power-bi-and-office-365.md",
-            "redirect_url": "/power-bi/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": true
         },
         {
@@ -2077,8 +2092,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-disconnect.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-disconnect",
+            "redirect_url": "/power-bi/collaborate-share/service-template-update-delete-extract",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-disconnect.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
@@ -2092,8 +2112,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-manage-update-delete.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-manage-update-delete",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-manage-update-delete.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-power-bi-get-started-third-party-apps.md",
@@ -2187,7 +2212,12 @@
         },
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
-            "redirect_url": "/power-bi/collaborate-share/service-upgrade-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-upgrade-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": true
         },
         {

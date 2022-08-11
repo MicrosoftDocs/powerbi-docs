@@ -77,7 +77,13 @@ Embedding a report in SharePoint Online doesn't automatically give users permiss
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide report access in Power BI. The first way, if you're using a Microsoft 365 Group to build your SharePoint Online team site, is to list the user as a member of the **workspace within the Power BI service** and the **SharePoint page**. For more information, see how to [manage a workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
+There are two ways to provide report access in Power BI. 
+
+### In a Microsoft 365 Group
+
+The first way, if you're using a Microsoft 365 Group to build your SharePoint Online team site, is to list the user as a member of the **workspace within the Power BI service** and the **SharePoint page**. 
+
+### Share directly with users
 
 The second way is to embed a report within an app and share it directly with users:  
 
