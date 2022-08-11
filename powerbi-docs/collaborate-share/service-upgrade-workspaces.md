@@ -230,7 +230,6 @@ There are several known issues that you may encounter after upgrading:
 ## Next steps
 
 * [Organize work in the new workspace experiences](service-new-workspaces.md)
-* [Create the new workspaces](service-create-the-new-workspaces.md)
-* [Create the classic workspaces](service-create-workspaces.md)
+* [Create workspaces](service-create-the-new-workspaces.md)
 * [Start a Power BI admin initiated workspace upgrade](../admin/service-admin-portal-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

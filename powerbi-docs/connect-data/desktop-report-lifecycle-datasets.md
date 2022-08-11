@@ -42,7 +42,6 @@ In the following image, you see how Anna creates one Power BI Desktop report, an
 
 ![Multiple reports based on the same dataset](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
-
 ## Step by step for using the Power BI service live connection
 
 Now that we know how useful the Power BI service live connection is, and how you can use it as a best practice approach to report lifecycle management, let's walk through the steps that get us from Anna's great report and dataset to a shared dataset that her Power BI teammates can use.
@@ -57,7 +56,7 @@ If Anna isn't signed in to the Power BI service account, Power BI prompts Anna t
 
 ![Sign in to Power BI Desktop](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-From there, Anna can choose the workspace destination to which the report and dataset will be published. Remember, if Anna saves it to a new experience workspace, then anyone with Build permission can have access to that dataset. Build permission is set in the Power BI service, after publishing.
+From there, Anna can choose the workspace destination to which the report and dataset will be published. Remember, if Anna saves it to a new experience workspace, then anyone with Build permission can have access to that dataset. Build permission is set in the Power BI service, after publishing. If work is saved to a classic workspace only members who have access to the workspace where a report is published can access its dataset using a Power BI service live connection.
 
 ![Publish to the Power BI service](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 

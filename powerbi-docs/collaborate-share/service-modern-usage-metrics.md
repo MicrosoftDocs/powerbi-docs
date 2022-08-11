@@ -1,6 +1,6 @@
 ---
-title: Monitor usage metrics in the new modern workspaces (preview)
-description: How to view, save, and use usage metrics in the new modern workspace for Power BI dashboards and reports. 
+title: Monitor usage metrics in workspaces (preview)
+description: How to view, save, and use usage metrics for Power BI dashboards and reports in workspaces. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -12,14 +12,13 @@ ms.date: 06/08/2022
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics in the new modern workspaces (preview)
+# Monitor usage metrics in the workspaces (preview)
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in the new _modern_ workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern workspace experience replace the usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
+If you create reports in the workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in workspaces replace the previous usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
 
-
-![Screenshot of the New Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
+![Screenshot of the Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
 
 > [!NOTE]
@@ -28,12 +27,12 @@ If you create reports in the new _modern_ workspaces, you have access to improve
 ## Prerequisites
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
-- To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
+- To access usage metrics for a report, you must have edit access to the report.
 - Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal-audit-usage.md).
 
-## Create & view an improved usage metrics report
+## Create and view a usage metrics report
 
-Only users with admin, member, or contributor permissions can view the improved usage metrics report. Viewer permissions aren't sufficient. If you are at least a contributor on a modern workspace in which your report resides, you can use the following procedure to display the improved usage metrics:
+Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't sufficient. If you are at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
 
 1. Open the workspace that contains the report for which you want to analyze the usage metrics.
 2. From either the workspace content list, open the context menu of the report and select **View usage metrics report**. Alternatively, open the report, then open the context menu on the command bar, and then select **Usage metrics**.
@@ -47,14 +46,11 @@ Only users with admin, member, or contributor permissions can view the improved 
 1. To see the results, select **View usage metrics**.
 2. If this is the first time you do this, Power BI might open the old usage metrics report. To display the improved usage metrics report, in the upper right corner, toggle the New usage report off switch to **On**.
 
-    ![Screenshot of switching to the modern Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-on.png)
+    ![Screenshot of switching to the Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-on.png)
 
-    > [!NOTE]
-    > You can only see the New usage report switch if your report resides in a modern workspace. Legacy workspaces do not offer improved usage metrics reports.
+## About the usage metrics report
 
-## About the improved usage metrics report
-
-When you display this improved usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on. As your reports evolve, so too will the usage metrics report. It updates every day with new data.
+When you display the usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on. As your reports evolve, so too will the usage metrics report. It updates every day with new data.
 
 > [!NOTE]
 > Usage metrics reports don't show up in Recent, Workspaces, Favorites, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
@@ -201,7 +197,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 When you create a copy of the read-only, pre-built usage report, Power BI creates an editable instance of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. In the new usage metrics report, select the **File** dropdown, then select **Save a copy**.
+1. In the usage metrics report, select the **File** dropdown, then select **Save a copy**.
 
     ![Screenshot of saving a copy of the report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-save.png)
 
@@ -222,9 +218,9 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 > - The report is treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
 > - The report is built on the original dataset. If there are any changes from Power BI, this may break your copy of the report.
 
-### Create a new usage report in Power BI Desktop
+### Create a usage report in Power BI Desktop
 
-You can create a new usage report in Power BI Desktop, based on the Usage Metrics Report dataset. To establish a connection to the Usage Metrics Report dataset and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
+You can create a usage report in Power BI Desktop, based on the Usage Metrics Report dataset. To establish a connection to the Usage Metrics Report dataset and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
 
 1. Open Power BI Desktop.
 
@@ -249,7 +245,7 @@ You can create a new usage report in Power BI Desktop, based on the Usage Metric
 1. Now you can create and share custom usage reports, all from the same *Usage Metrics Report* dataset.
 
 > [!NOTE]
-> When you create a new usage metrics report, it's built on the original dataset. If there are any changes from Power BI, this may break your copy of the report.
+> When you create a usage metrics report, it's built on the original dataset. If there are any changes from Power BI, this may break your copy of the report.
 
 ### Analyze usage data in Excel
 
@@ -257,7 +253,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 1. First, if you haven't done so already, [create a copy of the usage metrics report](#create-a-copy-of-the-usage-report). 
 
-2. Open the new usage metrics report, select **Export** > **Analyze in Excel**.
+2. Open the usage metrics report, select **Export** > **Analyze in Excel**.
 
     ![Screenshot of analyzing in Excel.](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
@@ -282,7 +278,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Modern usage metrics are currently available in following national clouds: 
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Usage metrics are currently available in following national clouds:
 
 - US Government Community Cloud
 - US Government Community Cloud High
@@ -301,7 +297,6 @@ It's important to understand that differences can occur when comparing the impro
 In addition to the above differences between previous and improved usage metrics reports, note the following limitations for the preview release:
 
 - Dashboard usage metrics still rely on the previous version of the usage metrics reports and are not yet available in modern usage metrics.
-- Improved usage metrics reports are only available for reports in modern workspaces. Reports in legacy workspaces only support the previous version of the usage metrics reports.
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
@@ -324,9 +319,6 @@ Report Views rely on server telemetry that is generated when the report is first
 
 #### **I can't run usage metrics on a report.**
 You can only see usage metrics for reports you own or have permissions to edit.
-
-#### **Why can't I see the New usage report on toggle in the upper right corner of my existing usage metrics report?**
-The improved usage metrics report is only available for reports in modern workspaces.
 
 #### **What time period is covered by the report?**
 The usage report is based on activity data for the last 30 days, excluding activities of the current day. You can narrow the time period by using the Date slicer on the Report usage page, such as to analyze only last week's data.

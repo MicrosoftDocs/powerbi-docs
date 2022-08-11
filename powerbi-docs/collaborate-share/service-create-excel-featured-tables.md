@@ -61,7 +61,7 @@ Here are the current limitations:
     - Datasets with a live connection.
 
 - Excel shows only data in columns, calculated columns, and measures defined in the featured table. The following aren't provided:
-   
+
     - Measures defined on related tables.
     - Implicit measures calculated from relationships.
 

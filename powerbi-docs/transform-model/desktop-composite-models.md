@@ -222,7 +222,7 @@ The following Live Connect tabular sources can't be used with composite models:
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI datasets
-* [Usage Metrics for My workspace](../collaborate-share/service-usage-metrics.md) 
+* [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 * Azure Analysis Services
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.

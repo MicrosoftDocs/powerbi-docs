@@ -1,5 +1,5 @@
 ---
-title: The new workspace experience in Power BI
+title: Workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 ms.author: maggies
@@ -12,15 +12,13 @@ ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
-# The new workspace experience in Power BI
+# Workspaces in Power BI
 
 *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. 
 
 Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI new workspace experience":::
-
-New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Microsoft 365 groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 ## New and classic workspace differences
 
@@ -111,8 +109,7 @@ Yes. Since we support both types of workspaces side by side, we continue to list
 
 ## Next steps
 
-* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
-* [Create the classic workspaces](service-create-workspaces.md)
+* [Create workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

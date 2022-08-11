@@ -158,7 +158,7 @@ There are also a few **limitations** you need to keep in mind:
   - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
   - Import Excel / CSV files
-  - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
+  - [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 

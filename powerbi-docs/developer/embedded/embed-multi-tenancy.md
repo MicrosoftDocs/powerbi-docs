@@ -95,7 +95,7 @@ Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI items
 
 Each profile needs to:
 
-* Create at least one [Power BI workspace](../../collaborate-share/service-create-workspaces.md)
+* Create at least one [Power BI workspace](../../collaborate-share/service-create-the-new-workspaces.md)
 
   ```rest
   POST https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1

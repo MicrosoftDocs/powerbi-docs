@@ -36,9 +36,9 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 
    If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your Notifications center to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
 
-### Remove members from a new workspace
+## Remove members from a workspace
 
-Only workspace admins can remove people from a new workspace. If you're an admin, you can remove yourself or anyone else. However, if you're the only admin for a workspace, Power BI won't let you remove yourself.
+Only workspace admins can remove people from a workspace. If you're an admin, you can remove yourself or anyone else. However, if you're the only admin for a workspace, Power BI won't let you remove yourself.
 
 1. In the workspace list view, select **Access** in the upper-right corner.
 
@@ -48,11 +48,11 @@ Only workspace admins can remove people from a new workspace. If you're an admin
 
     :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="Screenshot of In the Access pane, select Remove.":::
 
-### Delete a new workspace
+## Delete a workspace
 
-When you create one of the *new workspaces*, you don't create an associated Microsoft 365 group. If you're a workspace admin, you can delete a new workspace with no effect on any Microsoft 365 groups. Read more about [new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+If you're a workspace admin, you can delete a workspace with no effect on any Microsoft 365 groups.
 
-As admin for a workspace, you can delete it, or remove others from it. When you delete it, the associated app is also deleted for all group members, and the app is removed from AppSource. 
+As admin for a workspace, you can delete it, or remove others from it. When you delete it, the associated app is also deleted for all group members, and the app is removed from AppSource.
 
 1. From the nav pane, select **Workspaces**
 

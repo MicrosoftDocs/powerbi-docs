@@ -94,7 +94,7 @@ Data preview enables you to view selected tables and columns from the dataset, a
 
 ### Prerequisites
 
-* The dataset can be inside non-Premium or Premium workspaces.
+* The dataset can be inside Non-Premium or Premium workspaces. Classic workspaces are not supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 * You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
 
 ### Select data to preview

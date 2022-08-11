@@ -37,15 +37,17 @@
       href: service-share-dashboard-that-links-to-excel-onedrive.md
   - name: Collaborate in workspaces
     items: 
-    - name: "The new workspace experience"
+    - name: "Workspaces in Power BI"
       href: service-new-workspaces.md
-    - name: "Create the new workspaces"
+    - name: "Create workspaces"
       href: service-create-the-new-workspaces.md
-    - name: "Roles in new workspaces"
+    - name: "Roles in workspaces"
       href: service-roles-new-workspaces.md
-    - name: "Monitor usage in new workspaces"
+    - name: "Monitor usage in workspaces"
       href: service-modern-usage-metrics.md
-    - name: "Give access to new workspaces"
+    - name: "Monitor usage in My workspace"
+      href: service-usage-metrics.md
+    - name: "Give access to workspaces"
       href: service-give-access-new-workspaces.md
     - name: "Publish apps from workspaces"
       href: service-create-distribute-apps.md
@@ -61,8 +63,6 @@
       href: service-data-source-impact-analysis.md
     - name: "Apply data sensitivity labels"
       href: ../enterprise/service-security-apply-data-sensitivity-labels.md
-    - name: "Manage your group in Power BI and Microsoft 365"
-      href: service-manage-app-workspace-in-power-bi-and-office-365.md
   - name: Power BI in Teams
     items: 
     - name: Collaborate in Teams, Outlook, & Office

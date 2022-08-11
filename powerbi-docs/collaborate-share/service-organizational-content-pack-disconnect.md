@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 # Remove your connection to a Power BI organizational content pack
 
 > [!NOTE]
-> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet.
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 > 
 
 A coworker created a content pack. You discovered it in AppSource and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?

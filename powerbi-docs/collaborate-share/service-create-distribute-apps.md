@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 08/10/2022
+ms.date: 02/26/2022
 
 LocalizationGroup: Share your work
 ---
@@ -234,7 +234,8 @@ Things to keep in mind about publishing apps:
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
-* [Create a workspace](service-create-workspaces.md)
+
+* [Create apps in *workspaces*](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)
