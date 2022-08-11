@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 06/27/2022
+ms.date: 08/11/2022
 ---
 
 # Generate an embed token
