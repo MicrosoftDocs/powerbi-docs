@@ -50,7 +50,7 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | Drilling down in visuals | Only if you [pin an entire report page](service-dashboard-pin-live-tile-from-report.md) to a dashboard. | Yes |
 | Available in Power BI Desktop |No | Yes. Can build and view reports in Power BI Desktop. |
 | Filtering |No. Can't filter or slice a dashboard. *Can* filter a [dashboard tile in focus mode](../consumer/end-user-focus.md#working-in-focus-mode), but can't save the filter. |Yes. Many different ways to filter, highlight, and slice. |
-| [Feature content on colleagues' Home page](../collaborate-share/service-featured-content.md#feature-a-dashboard-or-report)  |Yes |Yes |
+| [Feature content on colleagues' Home page](../collaborate-share/service-featured-content.md#recommend-a-dashboard-or-report)  |Yes |Yes |
 | Favorite | Yes. Can set multiple dashboards as *favorites*. | Yes. Can set multiple reports as *favorites*. |
 | Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset. |
 | Set alerts |Yes. Available for dashboard tiles in certain circumstances. |No |
