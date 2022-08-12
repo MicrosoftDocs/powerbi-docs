@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/07/2022
+  ms.date: 08/11/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -270,15 +270,15 @@ conceptualContent:
     # Card
     - title: Best practices guidance
       links:
-        - url: guidance/overview.md
-          itemType: overview
-          text: Guidance overview
-        - url: guidance/star-schema.md
+        - url: guidance/powerbi-adoption-roadmap-overview.md
           itemType: concept
-          text: Star schemas
-        - url: guidance/import-modeling-data-reduction.md
+          text: Power BI adoption roadmap
+        - url: guidance/powerbi-implementation-planning-introduction.md
           itemType: concept
-          text: Reduce data model size
+          text: Power BI implementation planning
+        - url: guidance/power-bi-optimization.md
+          itemType: concept
+          text: Optimization guide for Power BI
       # footerLink (optional)
       footerLink:
         url: guidance/index.yml
