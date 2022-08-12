@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 08/10/2022
+  ms.date: 08/12/2022
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
@@ -108,6 +108,15 @@ sections:
           Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
           
           For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
+ 
+      - question: |
+          Why is my report rendering differently than I expected? 
+        answer: |
+          If your report renders different than expected, check if you are using preview features. 
+          
+          - On the **File** menu, look for a button labelled **Disable preview features**. If that button is there, select it, and allow the page to refresh. 
+          
+          If the report now renders as expected, leave preview features disabled for now. Otherwise, you can reenable preview features by select the **Enable preview features** button on the **File** menu. After 30 days, preview features are automatically reenabled, but you can disable them again through the same steps.   
           
       - question: |
           What licenses and workspace permissions do I need to publish, manage, and view paginated reports?
