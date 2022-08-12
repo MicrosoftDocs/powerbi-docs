@@ -1,6 +1,6 @@
 ---
 title: Workspaces in Power BI
-description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
+description: Learn about workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
@@ -16,9 +16,9 @@ LocalizationGroup: Share your work
 
 *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. 
 
-Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
+Ready to create a workspace? Read [Create a workspace](service-create-the-new-workspaces.md).
 
-:::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI new workspace experience":::
+:::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI workspace.":::
 
 ## New and classic workspace differences
 

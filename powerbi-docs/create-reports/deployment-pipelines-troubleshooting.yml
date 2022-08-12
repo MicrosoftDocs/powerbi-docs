@@ -55,7 +55,7 @@ sections:
           
               * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
           
-          * You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+          * You're an admin of a [workspace](../collaborate-share/service-create-the-new-workspaces.md).
           
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
@@ -113,8 +113,6 @@ sections:
           Why can't I see all my workspaces when I try to assign a workspace to a pipeline?
         answer: |
           To assign a workspace to a pipeline, the following conditions must be met:
-          
-          * The workspace is a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md)
           
           * You're an admin of the workspace
           

@@ -125,7 +125,7 @@ The content index for an app.
 
 ### Content pack
 
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
+ Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [** template apps**](#app-apps). Learn [about template apps](../../connect-data/service-template-apps-overview.md).
 
 ### Content view
 

@@ -132,7 +132,7 @@ And if you select that one workspace, you'll find it empty.
 
 ![Screenshot of empty My workspace.](./media/end-user-home/power-bi-empty-workspace.png)
 
-If someone in your organization adds you to a workspace, you'll see it in your list of workspaces. Over time, you'll have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you'll get the combination of an app and a new workspace. You can also create workspaces, if you have a Power BI Pro or Premium Per User license. To open a *workspace*, select it from the nav pane. 
+If someone in your organization adds you to a workspace, you'll see it in your list of workspaces. Over time, you'll have more than one workspace. For example, your coworkers can add you to a workspace by giving you a role, such as Member, Contributor, or Viewer. If you [download a template app](end-user-app-marketing.md) from outside your organization, you'll get the combination of an app and a workspace. You can also create workspaces, if you have a Power BI Pro or Premium Per User license. To open a *workspace*, select it from the nav pane. 
 
 ![Screenshot of Workspaces in navigation pane.](./media/end-user-home/power-bi-workspace-list.png)
 

@@ -30,7 +30,7 @@ The following short walkthrough shows how to use the scanner APIs to retrieve me
 
 ### Step 1: Perform a full scan
 
-Call [workspaces/modified](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces) without the **modifiedSince** parameter to get the complete list of workspace IDs in the tenant. This retrieves all the workspaces in the tenant, including personal workspaces and new workspaces. If you wish to exclude personal workspaces from the scan, use the workspaces/modified **excludePersonalWorkspaces** parameter.
+Call [workspaces/modified](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces) without the **modifiedSince** parameter to get the complete list of workspace IDs in the tenant. This retrieves all the workspaces in the tenant, including personal workspaces and shared workspaces. If you wish to exclude personal workspaces from the scan, use the workspaces/modified **excludePersonalWorkspaces** parameter.
 
 Divide the list into chunks of 100 workspaces at most.
 

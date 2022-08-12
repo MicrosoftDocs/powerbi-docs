@@ -64,5 +64,5 @@ If you're interested in creating template apps to distribute yourself, see [Crea
 
 ## Next steps
 * [Distribute apps to your colleagues](../collaborate-share/service-create-distribute-apps.md)
-* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

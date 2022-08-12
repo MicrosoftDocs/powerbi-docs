@@ -211,7 +211,7 @@ conceptualContent:
           text: Share dashboards and reports
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
-          text: Create the new workspaces
+          text: Create workspaces
         - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
           text: Add the Power BI app to Microsoft Teams

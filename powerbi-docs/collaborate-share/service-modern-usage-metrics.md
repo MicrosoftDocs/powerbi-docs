@@ -190,7 +190,7 @@ When disabling usage metrics for their entire organization, admins can use the D
 To dig into the report data, or to build your own reports against the underlying dataset, you have several options:
 
 - **[Make a copy of the report](#create-a-copy-of-the-usage-report) in the Power BI service.**   Use **Save a copy** to create a separate instance of the usage metrics report, which you can customize to meet your specific needs.
-- **[Connect to the dataset](#create-a-new-usage-report-in-power-bi-desktop) with a new report.**   For every workspace, the dataset has the name "Usage Metrics Report," as explained earlier in the section [Usage metrics report dataset](#usage-metrics-report-dataset). You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset.
+- **[Connect to the dataset](#create-a-usage-report-in-power-bi-desktop) with a new report.**   For every workspace, the dataset has the name "Usage Metrics Report," as explained earlier in the section [Usage metrics report dataset](#usage-metrics-report-dataset). You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset.
 - **[Use Analyze in Excel](#analyze-usage-data-in-excel).**   You can also analyze the Power BI usage data in PivotTables, charts, and slicer features in Microsoft Excel. Read more about the [Analyze in Excel](service-analyze-in-excel.md) feature.
 
 ### Create a copy of the usage report
@@ -397,7 +397,7 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
 2. If you still see the Usage Metrics report in the Reports list, refresh your browser.
 
-3. [Create a fresh usage metrics report](#create--view-an-improved-usage-metrics-report).
+3. Start over and [create a fresh usage metrics report](#create-and-view-an-improved-usage-metrics-report).
 
 ## Next steps
 

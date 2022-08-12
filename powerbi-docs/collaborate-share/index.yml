@@ -27,9 +27,9 @@ landingContent:
         links:
           - text: Ways to share your work
             url: service-how-to-collaborate-distribute-dashboards-reports.md
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
-          - text: "The new workspaces"
+          - text: "Workspaces"
             url: service-new-workspaces.md
 
   # Card (optional)

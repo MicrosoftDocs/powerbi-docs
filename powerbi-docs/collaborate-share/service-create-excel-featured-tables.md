@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 In the Data Types Gallery in Excel, your users can find data from *featured tables* in your Power BI datasets. In this article, you learn how to set tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
 
 1. You identify featured tables in your datasets in Power BI Desktop (this article)
-1. You save those datasets with featured tables to one of the new workspaces. Report creators can create reports with those featured tables. 
+1. You save those datasets with featured tables to a shared workspace. Report creators can create reports with those featured tables.
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel](service-excel-featured-tables.md) describes consuming these featured tables in Excel.
 
 > [!NOTE]

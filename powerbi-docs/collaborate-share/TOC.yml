@@ -51,8 +51,6 @@
       href: service-give-access-new-workspaces.md
     - name: "Publish apps from workspaces"
       href: service-create-distribute-apps.md
-    - name: "Store files in OneDrive for a workspace"
-      href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
     - name: "Manage data storage in workspaces"
       href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
     - name: "Data lineage"
