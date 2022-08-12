@@ -112,11 +112,11 @@ sections:
       - question: |
           Why is my report rendering differently than I expected? 
         answer: |
-          If your report renders different than expected, check if you are using preview features. 
+          If your report renders differently than you expected, check if you're using preview features. 
           
-          - On the **File** menu, look for a button labelled **Disable preview features**. If that button is there, select it, and allow the page to refresh. 
+          - On the **File** menu, look for a button labeled **Disable preview features**. If that button is there, select it, and allow the page to refresh. 
           
-          If the report now renders as expected, leave preview features disabled for now. Otherwise, you can reenable preview features by select the **Enable preview features** button on the **File** menu. After 30 days, preview features are automatically reenabled, but you can disable them again through the same steps.   
+          If the report now renders as expected, leave preview features disabled for now. Otherwise, you can reenable preview features by selecting the **Enable preview features** button on the **File** menu. After 30 days, preview features are automatically reenabled, but you can disable them again through the same steps.   
           
       - question: |
           What licenses and workspace permissions do I need to publish, manage, and view paginated reports?
