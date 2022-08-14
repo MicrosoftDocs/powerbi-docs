@@ -174,7 +174,7 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 
 A collection of data used to create visualizations and reports.
 
-### DAX
+### DAX expression
 
 **Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
