@@ -37,31 +37,25 @@ Provide the relevant **Organization name**, **Initial domain name** and **Countr
 
 When you create a new Azure AD tenant, you become the first user of that tenant. As the first user, you're automatically assigned the [Global Admin](/azure/active-directory/roles/permissions-reference#global-administrator) role. Add new users by navigating to the [Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) page.
 
-Create a master user You can think of the master user account as a service account.
+Create a master user to use as your master embedding account. You can think of the master user account as a service account.
 
-1. In the Azure portal, make sure you are on the Azure Active Directory fly out.
+1. In the home page of the Azure portal, select the Azure Active Directory tab.
 
-    ![Azure AD fly out](media/create-an-azure-active-directory-tenant/aad-flyout.png)
-
-    If not, select the Azure Active Directory icon from the left services navigation.
-
-    ![Azure AD icon](media/create-an-azure-active-directory-tenant/aad-service.png)
+    ![Azure AD tab](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
 2. Under **Manage**, select **Users**.
 
     ![Azure AD users and groups](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 
-3. Select **All users** and then select **+ New user**.
+3. Under **+ New user** select **+ Create new user**.
 
-4. Provide a **Display Name** and **User name** for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
+    ![Azure AD create new user](media/create-an-azure-active-directory-tenant/create-new-user.png)
 
-    ![Azure AD global admin](media/create-an-azure-active-directory-tenant/global-admin.png)
+4. Provide a **Display Name** and **User name** for your tenant Global Admin. Leave **Directory role** as **user**. Note the password, then select **Create**.
 
-5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leave it as **User**. Note the password, then select **Create**.
+    ![Azure AD master user](media/create-an-azure-active-directory-tenant/master-user.png)
 
-    ![Azure AD user](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
-
-6. Sign up for Power BI with the user account that you created in step 5. Go to [powerbi.com](https://powerbi.microsoft.com/getting-started-with-power-bi/) and select **Try Power BI for free**.
+5. Sign up for Power BI with the user account that you created in step 4. Go to [powerbi.com](https://powerbi.microsoft.com/getting-started-with-power-bi/) and select **Try Power BI for free**.
 
     ![create tenant](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
