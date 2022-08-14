@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/14/2022
+ms.date: 08/14/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -173,6 +173,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 ### Dataset
 
 A collection of data used to create visualizations and reports.
+
+### DAX
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
 ### **Desktop** or **Power BI Desktop**
 
