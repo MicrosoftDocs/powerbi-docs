@@ -12,9 +12,9 @@ ms.date: 08/11/2022
 
 # Create an Azure Active Directory tenant to use with Power BI
 
-Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom app that calls [Power BI REST APIs](/rest/api/power-bi/).
+This article shows you how to create a new Azure Active Directory (Azure AD) tenant to use when creating a custom app that calls [Power BI REST APIs](/rest/api/power-bi/).
 
-In Azure Active Directory, each tenant represents an organization. A tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+An Azure AD tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365. Each tenant represents an organization, and is distinct and separate from other Azure AD tenants.
 
 Once you have an Azure AD tenant, you can define an application and assign it permissions so it can call [Power BI REST APIs](/rest/api/power-bi/).
 
@@ -22,7 +22,7 @@ Your organization may already have an Azure AD tenant that you can use for your 
 
 ## Create an Azure Active Directory tenant
 
-To integrate Power BI into your custom app, you need to define an app in Azure AD, which requires an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant, [you need to set up a dev environment](/azure/active-directory/develop/active-directory-howto-tenant). You also need to create one if you don't want your app mixing with your organization's tenant, allowing you to keep things isolated. Or, you may just want to create a tenant for testing purposes.
+To integrate Power BI into your custom app, you need an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant, [you need create one as part of your dev environment](/azure/active-directory/develop/active-directory-howto-tenant). You also need to create a tenant if you don't want your app mixing with your organization's tenant, allowing you to keep things isolated. Or, you may just want to create a tenant for testing purposes.
 
 To create a new Azure AD tenant:
 
@@ -33,13 +33,11 @@ Provide the relevant **Organization name**, **Initial domain name** and **Countr
    > [!NOTE]
    > Your initial domain is part of onmicrosoft.com. You can add other domain names later. A tenant directory can have multiple domains assigned to it.
 
-Next, add tenant users.
-
 ## Create Azure Active Directory tenant users
 
 When you create a new Azure AD tenant, you become the first user of that tenant. As the first user, you're automatically assigned the [Global Admin](/azure/active-directory/roles/permissions-reference#global-administrator) role. Add new users by navigating to the [Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) page.
 
-You can think of the master user account as a service account.
+Create a master user You can think of the master user account as a service account.
 
 1. In the Azure portal, make sure you are on the Azure Active Directory fly out.
 
