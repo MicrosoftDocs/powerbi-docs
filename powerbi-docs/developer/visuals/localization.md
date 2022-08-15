@@ -19,15 +19,15 @@ The following tabs show examples of the same *sample bar chart* visual displayin
 
 ## [English bar chart](#tab/English)
 
-![Sample Bar Chart visual displaying in English](media/localization/locale-in-samplebarchart-english.png)
+![Sample Bar Chart visual displaying in English.](media/localization/locale-in-sample-bar-chart-english.png)
 
 ## [Basque bar chart](#tab/basque)
 
-![Sample Bar Chart visual displaying in Basque](media/localization/locale-in-samplebarchart-basque.png)
+![Sample Bar Chart visual displaying in Basque.](media/localization/locale-in-sample-bar-chart-basque.png)
 
 ## [Hindi bar chart](#tab/hindi)
 
-![Sample Bar Chart visual displaying in hindi](media/localization/locale-in-samplebarchart-hindi.png)
+![Sample Bar Chart visual displaying in Hindi.](media/localization/locale-in-sample-bar-chart-hindi.png)
 
 ---
 
@@ -120,14 +120,14 @@ The property pane display fields are defined in the  **capabilities.json** file.
 To create localized visuals, your project needs to have a language folder. In your project, create a folder called **stringResources**. The folder will contain one sub folder for each local language you want your visual to support. For example, to support Arabic and Hebrew, add two folders in the following way:
 
 >[!div class="mx-imgBorder"]
->![A screenshot from VS code showing a visual project folder structure, with the string resources folder, and two sub folders, one for Arabic and one for Hebrew.](media/localization/stringresources-files.png)
+>![A VS code screenshot of a visual project folder.The string resources folder has two sub folders, one for Arabic and one for Hebrew.](media/localization/stringresources-files.png)
 
 ### Step 5 - Add a resources file for each language
 
 For each language you want your visual to support, add a **resources.resjson** JSON file in the appropriate **stringResources** sub folder. These files contain the locale language information, and the localized string values for every `displayNameKey` you want to replace.
 
 >[!div class="mx-imgBorder"]
->![A screenshot from VS code showing a visual project folder structure, with the string resources folder, and two resources resjson files, one in the Arabic sub folder, and one in the Hebrew sub folder.](media/localization/new-resjson.png)
+>![A VS code screenshot of a visual project folder. Each sub-folder in the string resources folder has a resources dot resjson file.](media/localization/new-resjson.png)
 
 Every JSON file defines a single [supported locale language](#supported-languages). Add all the localization strings you're going to use into each **resources.resjson** file.
 
