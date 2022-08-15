@@ -72,7 +72,7 @@ The next few topics take a closer look at each section of Home. Your Home landin
 ### Favorites and frequents
 This section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that these cards have black stars; they've been tagged as favorites. 
 
-![Favorites flyout.](./media/end-user-home/power-bi-home-favorites.png)
+![Favorites flyout](./media/end-user-home/power-bi-home-favorites.png)
 
 
 
@@ -80,7 +80,7 @@ This section contains links to the content that you visit most often or that you
 The **Featured** section contains content that your administrator or colleagues have *promoted* to your Home. Typically, this is content that is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.  Unless it has been disabled by your administrator, any user with Admin, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md)
 
 
-![featured content, promoted by admin.](./media/end-user-home/power-bi-home-featured.png)
+![Screenshot of featured content, promoted by admin.](./media/end-user-home/power-bi-home-featured.png)
 
 ### Recents and My apps
 The next section is two (or more) tabbed lists. 
@@ -105,7 +105,7 @@ The nav pane classifies your content in ways that help you find what you need, q
 ![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-pane.png)
 
 
-Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting the Hide icon ![Icon for hiding the nav pane](media/end-user-home/power-bi-hide.png) .
+Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting the Hide icon ![Icon for hiding the nav pane.](media/end-user-home/power-bi-hide.png) .
   
 The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. Some containers have flyouts that offer you the option of viewing just the most-recent content in a container. Otherwise, select a container to see all content.
  
