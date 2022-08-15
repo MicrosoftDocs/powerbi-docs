@@ -52,7 +52,7 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
 
 1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. For more details about full report attachments, see step 7 below. 
+1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
 
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
