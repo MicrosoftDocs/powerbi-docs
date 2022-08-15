@@ -43,7 +43,7 @@ The screenshots below show a **Simplified** layout for a new user and then for a
 
 The **Expanded** layout includes a different set of information. The images below are using the *Expanded* view. Once you've selected the **Expanded** toggle, the expanded layout will become your default Home layout. 
 
-:::image type="content" source="media/end-user-home/power-bi-user-home.png" alt-text="Screenshot of Expanded view for a new user":::
+:::image type="content" source="media/end-user-home/power-bi-user-home.png" alt-text="Screenshot of Expanded view for a new user.":::
 
 :::image type="content" source="media/end-user-home/power-bi-expanded-user.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
 
