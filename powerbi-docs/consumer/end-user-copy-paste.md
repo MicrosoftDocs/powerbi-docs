@@ -82,10 +82,10 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
-Q: Why is my visual not pasting correctly?
-A: There are limitations for custom visuals and animated visuals. 
+Q: Why is my visual not pasting correctly?  
+A: There are limitations for custom visuals and animated visuals.
 
-Q: Can I to copy a visual from my embedded Power BI report?
+Q: Can I to copy a visual from my embedded Power BI report?  
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
 
 ## Next steps
@@ -95,4 +95,3 @@ More about [Visualizations in Power BI reports](../visuals/power-bi-visualizatio
 If you have edit permissions to a report, you can [copy and paste visuals within the same report](../visuals/power-bi-visualization-copy-paste.md). 
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
