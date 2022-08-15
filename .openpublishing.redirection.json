@@ -2053,7 +2053,7 @@
         {
             "source_path": "powerbi-docs/service-manage-app-workspace-in-power-bi-and-office-365.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md",
@@ -2648,7 +2648,7 @@
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
             "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
