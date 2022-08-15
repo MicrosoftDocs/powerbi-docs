@@ -25,7 +25,7 @@ Ready to create a workspace? Read [Create a workspace](service-create-the-new-wo
 Here are some features of workspaces.
 
 - **Creating a workspace doesn't create a Microsoft 365 group**. All workspace administration is in Power BI. You can manage user access to content through Microsoft 365 groups, if you want. You just add a Microsoft 365 group in the workspace access list. You can also store Power BI content in OneDrive for Business. Read more about using [Microsoft 365 and OneDrive](#microsoft-365-and-onedrive) with workspaces.
-- **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer.  Read more about [workspace roles](#workspace-roles) in this article.
+- **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer.  Read more about [workspace roles](#roles-and-licenses) in this article.
 - **Contact list**: Specify who receives notification about workspace activity. Read more about [workspace contact lists](#workspace-contact-list) in this article.
 - **Create template apps**: You can create *template apps* in workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read the article about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share datasets**: You can share dataset between workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
