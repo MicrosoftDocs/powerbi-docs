@@ -22,7 +22,7 @@ Your organization may already have an Azure AD tenant that you can use for your 
 
 ## Create an Azure Active Directory tenant
 
-To integrate Power BI into your custom app, you need an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant, [you need create one as part of your dev environment](/azure/active-directory/develop/active-directory-howto-tenant). You also need to create a tenant if you don't want your app mixing with your organization's tenant, allowing you to keep things isolated. Or, you may just want to create a tenant for testing purposes.
+To integrate Power BI into your custom app, you need an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant, [you need create one as part of your dev environment](/azure/active-directory/develop/active-directory-howto-tenant). You should also create a tenant if you want to keep things isolated and don't want your app mixing with your organization's tenant. Or, you may just want to create a tenant for testing purposes.
 
 To create a new Azure AD tenant:
 
