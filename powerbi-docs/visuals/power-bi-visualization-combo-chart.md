@@ -95,7 +95,7 @@ To follow along below, use the [Retail Analysis sample](../create-reports/sample
 
 1. Convert the column chart to a combo chart. There are two combo charts available: **Line and stacked column** and **Line and clustered column**. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-clustered-column-chart-icon.png" alt-text="Line and clustered column chart icon in the Visualizations pane.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-clustered-column-chart-icon.png" alt-text="Screenshot of the line and clustered column chart icon in the Visualizations pane.":::
 
 1. From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line y-axis** bucket.
 
@@ -103,7 +103,7 @@ To follow along below, use the [Retail Analysis sample](../create-reports/sample
 
    Your combo chart should look something like this:
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-combo-chart-visualization.png" alt-text="Completed single-axis combo chart visualization.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-combo-chart-visualization.png" alt-text="Screenshot of the completed single-axis combo chart visualization.":::
 
 ## Create a combo chart with two axes
 
@@ -143,17 +143,17 @@ In this task, we'll compare gross margin and sales.
 
 1. Set **Y-axis** \> **Title** to **On**, then set **Style** to **Show title only**
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-open-y.png" alt-text="Combo chart with Y-axis on.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-open-y.png" alt-text="Screenshot of the combo chart with Y-axis on.":::
 
 1. Set **Secondary y-axis** to **On** to display options for formatting the line chart portion of the combo chart.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-secondary-y-axis.png" alt-text="Combo chart with Secondary y-axis on.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-secondary-y-axis.png" alt-text="Screenshot of the combo chart with Secondary y-axis on.":::
 
 1. Under **Secondary y-axis**, set **Title** to **On**.
 
    Your combo chart now displays dual axes, both with titles.
 
-   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-two-titles.png" alt-text="Combo chart with dual axes and titles.":::
+   :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-two-titles.png" alt-text="Screenshot of the combo chart with dual axes and titles.":::
 
 1. Optionally, modify the text font, size, and color and set other formatting options to improve the display and readability of the chart.
 
