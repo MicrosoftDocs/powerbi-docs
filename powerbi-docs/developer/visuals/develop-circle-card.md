@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/03/2021
+ms.date: 08/07/2022
 ---
 
 # Tutorial: Develop a Power BI circle card visual
@@ -61,7 +61,7 @@ In this section you'll create a project for the circle card visual.
 
 ## View the visual in Power BI service
 
-[!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
+[!INCLUDE[View the Power BI visual in Power BI service](../../includes/visual-tutorial-view.md)]
 
 ## Add visual elements and text
 

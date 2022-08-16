@@ -250,7 +250,7 @@
       href: ../visuals/power-bi-visualization-kpi.md
     - name: "Paginated report visuals"
       href: ../visuals/paginated-report-visual.md
-    - name: "Scorecard visuals"
+    - name: "Metrics visuals"
       href: ../visuals/power-bi-visualization-scorecard-visual.md
     - name: Maps
       items: 
@@ -318,7 +318,7 @@
       href: ../visuals/power-bi-visualization-waterfall-charts.md
   - name: Artificial intelligence
     items: 
-    - name: "Insights(preview)"
+    - name: "Insights (preview)"
       href: insights.md
     - name: "Apply insights to explain fluctuations in visuals"
       href: desktop-insights.md

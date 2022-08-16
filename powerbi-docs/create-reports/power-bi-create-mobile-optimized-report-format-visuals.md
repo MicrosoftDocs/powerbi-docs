@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 08/10/2022
 LocalizationGroup: Create reports
 ---
 
@@ -40,7 +40,6 @@ The visualizations pane in mobile layout view is quite similar to the visualizat
 
 ### Mobile formatting considerations and limitations
 * Size and positions settings are not inherited from desktop layout - hence you will never see a change indication on size and position settings.
-* Currently, in mobile layout view you can't change the formatting settings of the text box visual. When you need resizable text, use a shape visual instead.
 
 ## Mobile formatting examples
 
