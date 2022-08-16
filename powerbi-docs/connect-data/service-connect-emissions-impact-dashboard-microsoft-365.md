@@ -31,7 +31,7 @@ In the summer of 2022 we released a new version of the app that includes the fol
 * Expansion from 6 to 12 months of emissions history
 * Addition of emissions associated with usage of Word, Excel, and PowerPoint
 
-Microsoft 365 administrators can learn more by visiting the [Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide).
+Microsoft 365 administrators can learn more by visiting the [Message center](/microsoft-365/admin/manage/message-center).
 
 ## Prerequisites 
 
