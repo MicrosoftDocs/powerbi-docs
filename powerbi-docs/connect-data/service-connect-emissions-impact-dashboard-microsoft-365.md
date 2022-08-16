@@ -80,7 +80,7 @@ To install the Emissions Impact Dashboard for Microsoft 365 in Power BI and conn
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-sign-in-connect.png" alt-text="Screenshot of authentication and sign in."::: 
 
-1. Select the user account. Make sure to sign in with the credentials which have appropriate admin access to your Microsoft 365 tenant (see [list of approved roles above](#prerequisites)). 
+1. Select the user account. Make sure to sign in with the credentials that have appropriate admin access to your Microsoft 365 tenant (see [list of approved roles above](#prerequisites)). 
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
@@ -96,7 +96,7 @@ Choose **Update the workspace and the app**, then click **Install**. This will i
 
 ### Issues 
 
-If there are any issues with the dataset refresh/app update during the updating process, please validate the following steps and refresh the dataset. 
+If there are any issues with the dataset refresh/app update during the updating process, validate the following steps and refresh the dataset. 
 
 Follow the steps below to make sure your dataset configurations are set correctly: 
 
