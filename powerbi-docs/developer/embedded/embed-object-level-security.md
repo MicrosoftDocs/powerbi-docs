@@ -45,7 +45,7 @@ If the report you want to embed is using one of the following scenarios, you mig
 
 * Dynamic calculations (measures, KPIs, DetailRows) are automatically restricted if they reference a secured table or column. While you can't explicitly secure a measure, you can implicitly secure a measure by updating the expression to refer to a secured table or column.
 
-* Relationships that reference a secured column work, as long as the column's table the column isn't secured.
+* Relationships that reference a secured column work, as long as the table the column is in isn't secured.
 
 ## Next steps
 
