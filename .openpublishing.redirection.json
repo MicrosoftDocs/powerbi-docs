@@ -2068,7 +2068,7 @@
         {
             "source_path": "powerbi-docs/service-new-workspaces.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
