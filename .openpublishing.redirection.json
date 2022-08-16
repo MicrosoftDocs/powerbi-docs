@@ -2058,7 +2058,7 @@
         {
             "source_path": "powerbi-docs/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-modern-usage-metrics.md",
@@ -2213,7 +2213,7 @@
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-upgrade-workspaces.md",
