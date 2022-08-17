@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/11/2022
+ms.date: 08/17/2022
 ---
 
 # Service principal profiles for multi-tenancy apps in Power BI Embedded
@@ -81,7 +81,7 @@ The following points are important to understand when using profiles:
 * A profile owner can't be changed after creation.
 * A profile isn't a standalone identity. It needs the service principal [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
 
-ISV applications call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
+ISV apps call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
 
 ```rest
   GET https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
@@ -108,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace. The service principal profile must have *Admin* access to the workspace.
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
