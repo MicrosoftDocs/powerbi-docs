@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 08/17/2022
 ms.custom: intro-get-started
 ---
 # Get started with the Power BI app for Windows
