@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/24/2022
+ms.date: 08/16/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
@@ -43,7 +43,7 @@ A user's role in a workspace implicitly grants them permissions on the datasets 
 
 ### Permissions granted explicitly via the manage dataset permissions page
 
-A user with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
+A user with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md).
 
 ### Permissions acquired via a link
 

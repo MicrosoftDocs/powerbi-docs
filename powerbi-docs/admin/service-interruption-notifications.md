@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 09/25/2020
 ---
 

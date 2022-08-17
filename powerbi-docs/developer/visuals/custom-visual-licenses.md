@@ -1,5 +1,5 @@
 ---
-title: License enforcement for Power BI AppSource visuals
+title: License models for Power BI AppSource visuals
 description: This article explains how the licenses for Power BI visuals purchased on AppSource are enforced.
 author: mberdugo
 ms.author: monaberdugo
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 07/17/2022
 ---
 
-# Custom visual license enforcement
+# Power BI AppSource visual license models
 
 When you buy a custom visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), there are several business and licensing models (pricing, free trials etc.) available. Some visuals have free trial versions, while others have a basic version available for free with extra functionality available for purchase.
 

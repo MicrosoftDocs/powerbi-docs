@@ -7,6 +7,10 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Search strings that include Japanese symbols don't return matches
+      href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
+    - name: Gateway data source owners cannot update data source credentials
+      href: known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md
     - name: Excel Desktop crashes when opening data model that was refreshed by Power BI Service
       href: known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md
     - name: Visual context menus are cut off when using Power BI Embedded
@@ -143,9 +147,11 @@
       href: ../admin/service-support-options.md
     - name: Options for contacting support for sign-in issues
       href: ../admin/power-bi-cannot-sign-in.md
+    - name: About planned maintenance for the Power BI service
+      href: service-planned-maintenance.md     
     - name: Capture diagnostic information before contacting support
       href: ../admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
     - name: Request a region move via a support request
       href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
-      href: ../fundamentals/service-tips-for-finding-help.md
+      href: ../fundamentals/service-tips-for-finding-help.md 
