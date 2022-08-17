@@ -7,20 +7,20 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/11/2022
+ms.date: 08/17/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
 # Workspaces in Power BI
 
-*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. This article describes workspaces, you can manage access to them, and how to use them to create and distribute apps.
+*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. This article describes workspaces, how to manage access to them, and how to use them to create and distribute apps.
 
 Ready to get started? Read [Create a workspace](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Screenshot showing a Power BI workspace.":::
 
-## Workspace features
+## Working with workspaces
 
 Here are some useful tips about working with workspaces.
 
@@ -28,7 +28,6 @@ Here are some useful tips about working with workspaces.
 - **Contact list**: Specify who receives notification about workspace activity. Read more about [workspace contact lists](#workspace-contact-list) in this article.
 - **Create template apps**: You can create *template apps* in workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read the article about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share datasets**: You can share dataset between workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
-- **Creating a workspace doesn't create a Microsoft 365 group**. All workspace administration is in Power BI. You can manage user access to content through Microsoft 365 groups, if you want. You just add a Microsoft 365 group in the workspace access list. You can also store Power BI content in OneDrive for Business. Read more about using [Microsoft 365 and OneDrive](#microsoft-365-and-onedrive) with workspaces.
 
 This article explains these features in more detail.
 
@@ -43,15 +42,19 @@ Read about [how to create the workspace contact list](service-create-the-new-wor
 
 ## Microsoft 365 and OneDrive
 
-Power BI doesn't create a Microsoft 365 group behind the scenes when you create a workspace. Still, you might find it useful to have a OneDrive associated with the workspace. With the Workspace OneDrive feature in workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
- 
-Power BI doesn't synchronize between Microsoft 365 group membership and permissions for users or groups with access to the workspace. You can synchronize them: Manage workspace access through the same Microsoft 365 group whose file storage you configure in this setting.
+Power BI doesn't create a Microsoft 365 group behind the scenes when you create a workspace. All workspace administration is in Power BI. Still, you might find it useful to have a OneDrive associated with the workspace. 
 
-Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
+- You can **manage user access** to content through Microsoft 365 groups, if you want. You add a Microsoft 365 group in the workspace access list.
+
+    Power BI doesn't synchronize between Microsoft 365 group membership and permissions for users or groups with access to the workspace. You can synchronize them: Manage workspace access through the same Microsoft 365 group whose file storage you configure in this setting.
+
+- You can also **store Power BI content in OneDrive for Business**. With the Workspace OneDrive feature in workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
+ 
+    Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
 
 ## Roles and licenses
 
-Roles let you manage who can do what in workspaces, so teams can collaborate. To grant access to a workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer.
+Roles let you manage who can do what in workspaces, so team members can collaborate. To grant access to a workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer.
 
 - **Licensing enforcement**: Publishing reports to a workspace enforces existing licensing rules. Users collaborating in workspaces or sharing content to others in the Power BI service need a Power BI Pro or Premium Per User (PPU) license. Users without a Pro or PPU license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 - **Read-only workspaces**: The Viewer role in workspaces gives users read-only access to the content in a workspace.
