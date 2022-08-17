@@ -23,8 +23,7 @@ In Power BI, dataset creators can control who has access to their data by using 
 Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [workspace](../collaborate-share/service-create-the-new-workspaces.md):
 
 - In the service, when you open the dataset catalog from a workspace, the dataset catalog shows datasets that are in your My Workspace and in other workspaces. 
-- In Power BI Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
-- When copying reports across workspaces, the target workspace needs to be a new experience workspace.
+- In Power BI Desktop, you can publish Live Connect reports to different workspaces.
 
 ## Discover datasets
 

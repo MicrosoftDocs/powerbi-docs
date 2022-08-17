@@ -27,12 +27,9 @@ Here are some useful tips about working with workspaces.
 - **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer.  Read more about [workspace roles](#roles-and-licenses) in this article.
 - **Contact list**: Specify who receives notification about workspace activity. Read more about [workspace contact lists](#workspace-contact-list) in this article.
 - **Create template apps**: You can create *template apps* in workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read the article about [template apps](../connect-data/service-template-apps-overview.md).
-- **Share datasets**: You can share dataset between workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
+- **Share datasets**: You can share datasets between workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
 
 This article explains these features in more detail.
-
-> [!NOTE]
-> Power BI continues to list all Microsoft 365 groups that you're a member of. This avoids changing existing workflows.
 
 ## Workspace contact list
 
@@ -51,6 +48,9 @@ Power BI doesn't create a Microsoft 365 group behind the scenes when you create 
 - You can also **store Power BI content in OneDrive for Business**. With the Workspace OneDrive feature in workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
  
     Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
+
+> [!NOTE]
+> Power BI lists all Microsoft 365 groups that you're a member of in the workspaces list.
 
 ## Roles and licenses
 
@@ -91,11 +91,6 @@ Limitations to be aware of:
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 
-## Frequently asked questions
-
-**Are workspaces still automatically created for Microsoft 365 groups?**
-
-Yes. Since we support both types of workspaces side by side, we continue to list all Microsoft 365 groups you have access to in the workspaces list.
 
 ## Next steps
 

@@ -50,9 +50,7 @@ Only workspace admins can remove people from a workspace. If you're an admin, yo
 
 ## Delete a workspace
 
-If you're a workspace admin, you can delete a workspace with no effect on any Microsoft 365 groups.
-
-As admin for a workspace, you can delete it, or remove others from it. When you delete it, the associated app is also deleted for all group members, and the app is removed from AppSource.
+If you're a workspace admin, you can delete a workspace with no effect on any Microsoft 365 groups. As admin for a workspace, you can delete it, or remove others from it. When you delete it, the associated app is also deleted for all group members, and the app is removed from AppSource.
 
 1. From the nav pane, select **Workspaces**
 

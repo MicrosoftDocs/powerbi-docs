@@ -32,11 +32,11 @@ Everyone loves Anna's report and dataset. That's where the trouble would begin. 
 
 ### Connect to a Power BI service dataset using a live connection
 
-Anna creates a report and creates the dataset it's based upon. Anna then publishes it to the Power BI service. The report shows up in the team's workspace in the Power BI service. If Anna saves it to a *new experience workspace*. Anna can set *Build permission* to make it available to everyone in and out of their workspace to see and use.
+Anna creates a report and creates the dataset it's based upon. Anna then publishes it to the Power BI service. The report shows up in the team's workspace in the Power BI service. Anna can set *Build permission* to make it available to everyone in and out of their workspace to see and use.
 
-To learn more about the new experience workspaces, see [workspaces](../collaborate-share/service-new-workspaces.md).
+Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
 
-Other members in and out of Anna's workspace can now establish a live connection to Anna's shared data model using the Power BI service live connection feature. They can create their own unique reports, from *their original dataset*, in *their own new experience workspaces*.
+Other members in and out of Anna's workspace can now establish a live connection to Anna's shared data model using the Power BI service live connection feature. They can create their own unique reports, from *their original dataset*, in *their own workspaces*.
 
 In the following image, you see how Anna creates one Power BI Desktop report, and publishes it, which includes its data model, to the Power BI service. Then others can connect to Anna's data model using the Power BI service live connection, and create their own unique reports in their own workspaces, based on Anna's dataset.
 
@@ -56,7 +56,7 @@ If Anna isn't signed in to the Power BI service account, Power BI prompts Anna t
 
 ![Sign in to Power BI Desktop](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-From there, Anna can choose the workspace destination to which the report and dataset will be published. Remember, if Anna saves it to a new experience workspace, then anyone with Build permission can have access to that dataset. Build permission is set in the Power BI service, after publishing. If work is saved to a classic workspace only members who have access to the workspace where a report is published can access its dataset using a Power BI service live connection.
+From there, Anna can choose the workspace destination to which the report and dataset will be published. Remember, then anyone with Build permission can have access to that dataset. Build permission is set in the Power BI service, after publishing. If work is saved to a classic workspace only members who have access to the workspace where a report is published can access its dataset using a Power BI service live connection.
 
 ![Publish to the Power BI service](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
