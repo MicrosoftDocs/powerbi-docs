@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in the workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports in workspaces replace the previous usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
+If you create reports in workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and how they're using them. You can also identify high-level performance issues. The improved usage reports for shared workspaces replace the usage metrics reports documented in [Monitor usage metrics in My workspace](service-usage-metrics.md).
 
 ![Screenshot of the Usage Metrics report.](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -32,7 +32,7 @@ If you create reports in the workspaces, you have access to improved usage metri
 
 ## Create and view a usage metrics report
 
-Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't sufficient. If you are at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
+Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't enough. If you are at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
 
 1. Open the workspace that contains the report for which you want to analyze the usage metrics.
 2. From either the workspace content list, open the context menu of the report and select **View usage metrics report**. Alternatively, open the report, then open the context menu on the command bar, and then select **Usage metrics**.

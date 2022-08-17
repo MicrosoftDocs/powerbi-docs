@@ -7,30 +7,30 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/11/2022
+ms.date: 08/16/2022
 LocalizationGroup: Share your work
 ---
 # Feature recommended content on colleagues' Power BI Home page
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
-You can feature dashboards, reports, and apps so they appear in the **Recommended** section of your colleagues' Power BI Home page. Recommending, or *featuring*, content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help them find what they need. The content has to be in a workspace that they have access to.
+You can feature dashboards, reports, and apps so they appear in the **Recommended** section of your colleagues' Power BI [Home page in Simplified view](../consumer/end-user-home.md), and in the **Featured** section in *Expanded* view. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help them find what they need. The content has to be in a workspace that they have access to.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Power BI Featured content on Home":::
 
-## Who can recommend content
+## Who can feature content
 
 To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for details. You do need to have a Power BI Pro license. 
 
-Power BI admins can monitor and manage recommended content, also called *featured* content, or even turn off the feature entirely. See [Manage featured content](../admin/service-admin-portal-featured-content.md) for details.
+Power BI admins can monitor and manage featured content, or even turn off the feature entirely. See [Manage featured content](../admin/service-admin-portal-featured-content.md) for details.
 
-## Who sees recommended content
+## Who sees featured content
 
-When you recommend a dashboard or report from a workspace, people with at least a Viewer role in that workspace see it recommended. You can also recommend a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it recommended.
+When you feature a dashboard or report from a workspace, people with at least a Viewer role in that workspace see it recommended. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it recommended.
 
-## Recommend a dashboard or report
+## Feature a dashboard or report
 
-To recommend dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. The procedure for recommending either a dashboard or report is similar.
+To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. The procedure for featuring either a dashboard or report is similar.
 
 1. In the **All** or **Content** list for a workspace, select **More options (...)** > **Settings**.
 
@@ -44,11 +44,11 @@ To recommend dashboards and reports, you need to have the Admin, Member, or Cont
 
 4. Select **Save**.
 
-    Now all users who have access to this dashboard or report will see it in the **Recommended** section on **Home**.
+    Now all users who have access to this dashboard or report will see it in the **Recommended** or **Featured** section on **Home**.
 
-## Recommend an app
+## Feature an app
 
-To recommend an app, you need to have the Admin or Member role in a workspace. 
+To feature an app, you need to have the Admin or Member role in a workspace. 
 
 - Open the *workspace* for the app, not the app itself, and select the **Options** menu (**...**) > **Feature this app on Home**.
 
