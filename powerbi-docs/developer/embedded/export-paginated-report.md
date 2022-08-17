@@ -337,6 +337,8 @@ private async Task<ExportedFile> ExportPaginatedReport(
   * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
   * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
 
+* The service principal (not profile) can export a paginated report that has a Power BI dataset as its data source **only** where ALL downstream data sources are configured with SSO-disabled.
+
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
   * The caller is a service principal or service principal profile.
