@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/16/2022
+ms.date: 08/17/2022
 ---
 
 # Object level security (OLS)
