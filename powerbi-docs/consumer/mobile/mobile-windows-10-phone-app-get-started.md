@@ -22,7 +22,7 @@ The Power BI app for Windows brings Power BI to your Windows device. You get up-
 ## First things first
 * [**Get the Power BI app for Windows**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
   
-  Your device must run Windows 10 version 17763 or higher and have [WebView2 installed](./mobile-windows-10-phone-app-webview2-installation.md). The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
+  Your device must run Windows 10 version 17763 or higher and have [WebView2 installed](./mobile-windows-10-phone-app-webview2-installation.md) (this doesn't apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.). The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
     The app is designed for a minimum resolution of 460x500.
    
