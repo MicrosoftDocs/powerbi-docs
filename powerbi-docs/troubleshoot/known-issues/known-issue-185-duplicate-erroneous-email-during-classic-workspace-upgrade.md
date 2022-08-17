@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-185
 ---
-# Description of known issue #185
+# Known issue #185 - Duplicate or erroneous email may be received during classic workspace upgrade
 
 During the global classic (v1) workspace upgrade, workspace admins will receive an email when their workspace has been upgraded.  If you're a workspace admin, you may receive duplicate or erroneous emails. The sent emails happen primarily when a tenant remap occurred before the tenant migration or a tenant’s data exists on more than one cluster.
 

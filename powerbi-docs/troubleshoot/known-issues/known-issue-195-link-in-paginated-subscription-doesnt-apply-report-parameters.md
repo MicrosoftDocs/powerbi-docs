@@ -9,7 +9,7 @@ ms.subservice: pbi-troubleshooting
 ms.date: 08/03/2022
 ms.custom: known-issue-195
 ---
-# Description of known issue #195
+# Known issue #195 - Using a link in a paginated report subscription doesn't apply the report parameters
 
 When you create a paginated report subscription to be delivered through email, you have the ability to select the "Go to Report" link to take you to the report within Power BI.  If you've created the report subscription to use a certain set of parameter values, the report opens without those parameters applied.
 
