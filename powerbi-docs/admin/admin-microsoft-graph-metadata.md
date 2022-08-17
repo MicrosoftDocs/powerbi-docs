@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'jadelynray'
 ms.service: powerbi
-ms.subservice: pbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/17/2022
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
@@ -26,19 +26,19 @@ The Microsoft Graph in Power BI experience can be turned on or off by the xxx ad
 |ArtifactID     |    PBI Store     |  Identifier for the Content Item (report, app, dashboard, scorecard etc.)       |   762049eb-7a69-4c39-bf19-75a5b7fcce1d      | OII  |  CD  |
 |ACL          |  PBI Store       |   Access Control List with permissions and Azure Active Directory User, Security Group and Distribution List Identifiers      |{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }   |OII  | CD  |
 |DisplayName     |   PBI Store      |  Display name for the report, dashboard, etc.       |  Retail Analysis Sample       | Customer content  |  CD  |
-|Location     |  PBI Store       |  Workspace name as per https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-create-the-new-workspaces       |  Retail workspace       | Customer content  |  CD  |
-|ContainerURL     |  PBI Store       |  Workspace URL       |    https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17     |
+|Location     |  PBI Store       |  Workspace name as per [Create a workspace](../collaborate-share/service-create-the-new-workspaces.md)       |  Retail workspace       | Customer content  |  CD  |
+|ContainerURL     |  PBI Store       |  Workspace URL       |    `https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17`     |
 |WorkspaceID     |  PBI Store       |   Workspace identifier      |    8b5ac04e-89c1-4fc6-a364-e8411dfd8d17     | OII  |  CD  |
-|URL     |  PBI Store       |   Content Item URL for report, app, dashboard, scorecard etc.      |     https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17/reports/762049eb-7a69-4c39-bf19-75a5b7fcce1d/ReportSection2    | OII  |  CD  |
-|SharingLinksURL     |  PBI Store       |  Sharing Link as per https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards#share-a-report-via-link       |   OII      |CD|
-|IconURL     |   Config      |    ?     |   cdn.com/report.png      | System metadata  |  CD  |
-|Description     |  PBI Store       |  Content description as per https://docs.microsoft.com/en-us/power-bi/create-reports/power-bi-report-settings?tabs=powerbi-desktop       |   Sample containing retail sales data      | Customer content  |  CD  |
-|CreatedUser     |  PBI Store       |  Azure Active Directory User Principal Name of the User that Created the Content as per https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname       |    user1@griffin1.org     | EUII  |  CD  |
+|URL     |  PBI Store       |   Content Item URL for report, app, dashboard, scorecard etc.      |     `https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17/reports/762049eb-7a69-4c39-bf19-75a5b7fcce1d/ReportSection2`    | OII  |  CD  |
+|SharingLinksURL     |  PBI Store       |  Sharing Link as per [Share a report using a link](../collaborate-share/service-share-dashboards#share-a-report-via-link.md)      |   OII      |CD|
+|IconURL     |   Config      |    ?     |   `cdn.com/report.png`      | System metadata  |  CD  |
+|Description     |  PBI Store       |  Content description as per [Report settings](../create-reports/power-bi-report-settings?tabs=powerbi-desktop.md)      |   Sample containing retail sales data      | Customer content  |  CD  |
+|CreatedUser     |  PBI Store       |  Azure Active Directory User Principal Name of the User that Created the Content as per [AAD user principal name](../../azure/active-directory/hybrid/plan-connect-userprincipalname.md)       |    `user1@griffin1.org`     | EUII  |  CD  |
 |CreatedDate     | PBI Store        |  Date the content was created       |   2011-06-30T23:32:46Z      | System metadata  |  CD  |
 |LastModifiedDate     |   PBI Store      |  Last modified date for the content       |    2011-06-30T23:32:46Z     | System metadata  |  CD  |
-|LastModifiedUser     |  PBI Store       |   Azure Active Directory User Principal Name for the last person who modified the content      |   user1@griffin1.org      |EUII  |  CD  |
+|LastModifiedUser     |  PBI Store       |   Azure Active Directory User Principal Name for the last person who modified the content      |   `user1@griffin1.org`      |EUII  |  CD  |
 |LastRefreshDate     |  PBI Store   | Last refresh date for the content    |  2011-06-30T23:32:46Z   | System metadata |  SIGS  |
-|UserID     |   Audit Events  | Azure Active Directory User Principal Name for the user who acted on the content    | user1@griffin1.org    | EUII  | SIGS  |
+|UserID     |   Audit Events  | Azure Active Directory User Principal Name for the user who acted on the content    | `user1@griffin1.org`    | EUII  | SIGS  |
 |Signal Type      |  Audit Events   |  The type of action the user took on the content (Viewed, Modified)   |  Viewed   |System metadata |  SIGS  |
 |ActorID     |  Audit Events   |  Users Azure Active Delivery(AAD) ID   |  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee   |EUII  | SIGS  |
 |StartTimeEndTime     |  Audit Events   | Date/Time the user performed the action on the content    |  2011-06-30T23:32:46Z   |System metadata |  SIGS  |
