@@ -35,7 +35,6 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Dynamic M Query Parameters | No | Yes | |
 | Gateway required | No | Yes for on-premises data sources |  |
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
-| Organizational content packs | No | Yes | Organizational content packs are being deprecated, and replaced by template apps. |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports/paginated-reports-report-builder-power-bi.md) in a Premium capacity |

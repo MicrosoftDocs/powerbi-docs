@@ -62,7 +62,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Paste the previously-copied report URL into the **Power BI report link** field. The report loads automatically.
+4. Paste the previously copied report URL into the **Power BI report link** field. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -101,7 +101,7 @@ The second way is to embed a report within an app and share it directly with use
 
 6. Create a new team site in SharePoint Online.
 
-7. Add the previously-copied report URL to the Power BI web part.
+7. Add the previously copied report URL to the Power BI web part.
 
 8. Add all end users and/or groups who are going to consume the data on the SharePoint Online page and in the Power BI app you created.
 

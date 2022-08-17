@@ -114,7 +114,7 @@ You can also refresh individual cells. Right-click the cell and select **Data Ty
 
 ## Licensing
 
-The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.. 
+The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.
 
 ## Security
 

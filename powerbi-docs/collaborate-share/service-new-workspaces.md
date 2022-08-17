@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Workspaces in Power BI
 
-*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. This article describes workspaces,you can manage access to them, and how to use them to create and distribute apps.
+*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. This article describes workspaces, you can manage access to them, and how to use them to create and distribute apps.
 
 Ready to get started? Read [Create a workspace](service-create-the-new-workspaces.md).
 

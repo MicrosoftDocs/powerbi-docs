@@ -92,9 +92,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 **content list**    
 The content index for an app.
 
-**content pack**    
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**. Learn [about installing and using apps](end-user-app-view.md). 
-
 **content view**
 
 **Continuous variable**     
