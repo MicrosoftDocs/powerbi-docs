@@ -78,7 +78,8 @@ The shared report links tab lists [links that have been created to shared report
 
 ## Next steps
 
-* [Share access to a dataset](service-datasets-share.md)
-* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Dataset permissions](./service-datasets-permissions.md)
+* [Share access to a dataset](./service-datasets-share.md)
+* [Use datasets across workspaces](./service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
