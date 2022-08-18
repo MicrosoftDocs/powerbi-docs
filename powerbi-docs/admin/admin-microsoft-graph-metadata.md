@@ -16,7 +16,7 @@ LocalizationGroup: Admin
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-The Microsoft Graph in Power BI experience can be turned on or off by the xxx administrator. Before turning the experience on, learn what data will be shared with Microsoft 365.
+The Microsoft Graph in Power BI experience can be turned on or off by the xxx administrator. Before turning on the experience, learn what data will be shared with Microsoft 365.
 
 ## Data that is shared with Microsoft 365
 
