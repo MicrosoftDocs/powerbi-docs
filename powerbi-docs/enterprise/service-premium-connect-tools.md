@@ -127,7 +127,7 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 ### Duplicate workspace names
 
-[New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
+[Workspaces](../collaborate-share/service-new-workspaces.md) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
 **Cannot connect to `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.**
 

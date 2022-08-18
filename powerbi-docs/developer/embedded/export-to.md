@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 05/08/2022
+ms.date: 08/18/2022
 ---
 
 # Export Power BI report to file
@@ -116,8 +116,7 @@ With [Row Level Security (RLS)](embedded-row-level-security.md), you can export 
 To export using RLS, you must have the following permissions:
 
 * Write and reshare permissions for the dataset the report is connected to
-* If the report resides on a v1 workspace, you need to be the workspace admin
-* If the report resides on a v2 workspace, you need to be a workspace member or admin
+* Workspace member or admin of the workspace where the report resides
 
 ### Data protection
 

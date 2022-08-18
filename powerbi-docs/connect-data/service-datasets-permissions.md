@@ -67,5 +67,6 @@ Row-level security may affect the ability of users with read or build permission
     * Users with write permission on the dataset will be able to read data from the dataset regardless of whether or not they belong to any of its RLS roles.
 
 ## Next steps
+* [Share access to a dataset](./service-datasets-share.md)
 * [Manage dataset permissions](service-datasets-manage-access-permissions.md)
 * [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)
