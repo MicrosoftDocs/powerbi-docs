@@ -42,7 +42,7 @@ Follow these steps to create a new role and add the `customData` function to the
 
 4. In the *Row filters* settings, set your DAX query using the `CUSTOMDATA()` function.
 
-    :::image type="content" source="media/embed-azure-analysis-services/azure-analysis-services-database-create-role-row-filters.png" alt-text="A screenshot of adding the function customdata to the DAX query in a new role in Analysis Services server.":::
+    :::image type="content" source="media/embed-azure-analysis-services/azure-analysis-services-database-create-role-row-filters.png" alt-text="A screenshot showing how to add the function customData to the DAX query in a new role in Analysis Services server.":::
 
 ## Service principal
 
@@ -61,7 +61,7 @@ You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-anal
 
 Use the [Generate Token](/rest/api/power-bi/embed-token/generate-token) API to generate an embed token that overrides the [effective identity](/rest/api/power-bi/embed-token/tiles-generate-token-in-group#effectiveidentity).
 
-The information needed to generate an embed token depends on if you're connected to Power BI using a service principal or as a master user, and also if the database has RLS.
+The information needed to generate an embed token depends on how you're connected to Power BI (*service principal* or *master user*), and also if the database has RLS.
 
 ## [Master user embed token](#tab/master-user-token)
 
@@ -74,7 +74,7 @@ Example:
 
 Define the user identity and roles for one of the following three scenarios:
 
-* If RLS is not implemented:
+* If RLS isn't implemented:
 
   ```csharp
       var rlsidentity = new EffectiveIdentity(  //If no RLS
@@ -134,7 +134,7 @@ To generate the embed token, provide the following information:
 Example:  
 Define the user identity and roles for one of the following scenarios:
 
-* If RLS is not implemented:
+* If RLS isn't implemented:
 
   ```csharp
       var rlsidentity = new EffectiveIdentity(   // If no RLS
